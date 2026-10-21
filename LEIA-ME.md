@@ -57,6 +57,7 @@ videos_canal/
 | Seguridade Social | `canais/seguridade_social/010_estrutura_rgps` | 010: a estrutura do RGPS — segurados, dependentes e prestações (M07) · abre a temporada 2 · PDF no CTA | claro verde-petróleo |
 | Seguridade Social | `canais/seguridade_social/011_empregado_domestico_avulso` | 011: empregado, empregado doméstico e avulso — art. 11, I, II e VI (M08) | claro verde-petróleo |
 | Seguridade Social | `canais/seguridade_social/012_contribuinte_individual` | 012: contribuinte individual — art. 11, V (M09, parte 1) | claro verde-petróleo |
+| Seguridade Social | `canais/seguridade_social/013_segurado_especial` | 013: segurado especial — art. 11, VII e §§ + CF 195, §8º (M09, parte 2) | claro verde-petróleo |
 | Tecnologia | `canais/tecnologia/001_rea_engenharia_reversa` | 001: REA — engenharia reversa com agentes de IA (github.com/morluto/rea) | **futurista escuro** (`import tech`) |
 | Tecnologia | `canais/tecnologia/008_bastidores_videos_com_ia` | 008: bastidores — como os vídeos dos canais são feitos com IA | futurista escuro |
 
