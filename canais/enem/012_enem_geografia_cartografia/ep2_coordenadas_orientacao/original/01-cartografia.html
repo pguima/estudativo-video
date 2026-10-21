@@ -1,0 +1,1325 @@
+<title>Cartografia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Ciências Humanas. As cores semânticas das caixas
+   permanecem idênticas às demais páginas; só o cabeçalho muda. */
+:root{ --area:#9C3D1F }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#EE9773 } }
+:root[data-theme="dark"]{ --area:#EE9773 }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+.q .graf{ margin:14px 0 4px; max-width:460px }
+.q .graf svg{ width:100%; height:auto; display:block }
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Geografia</b> › Física e Ambiental › Assunto 1 de 21</p>
+        <h1>Cartografia: escalas, projeções, coordenadas e curvas de nível</h1>
+        <p class="deck">Todo mapa é uma escolha: reduzir a Terra a uma folha exige escala, achatar uma esfera exige distorção, e localizar um ponto exige uma rede de linhas imaginárias. O ENEM quer saber se você lê essas escolhas — e se percebe quando um mapa “mente” sobre tamanhos, distâncias ou relevo.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Globo terrestre com a rede de paralelos e meridianos: o Equador ao centro, os trópicos de Câncer e de Capricórnio, os círculos polares Ártico e Antártico e o meridiano de Greenwich ligando os polos">
+  <circle cx="84" cy="106" r="76" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <ellipse cx="84" cy="106" rx="38" ry="76" style="fill:none;stroke:var(--rule-2);stroke-width:1"/>
+  <ellipse cx="84" cy="106" rx="65.8" ry="76" style="fill:none;stroke:var(--rule-2);stroke-width:1"/>
+  <line x1="30.3" y1="159.7" x2="137.7" y2="159.7" style="stroke:var(--rule-2);stroke-width:1"/>
+  <line x1="30.3" y1="52.3" x2="137.7" y2="52.3" style="stroke:var(--rule-2);stroke-width:1"/>
+  <line x1="53.8" y1="36.3" x2="114.2" y2="36.3" style="stroke:var(--c1);stroke-width:1.8;stroke-dasharray:4 3"/>
+  <line x1="117.2" y1="36.3" x2="164" y2="36.3" style="stroke:var(--ink-3);stroke-width:0.8;stroke-dasharray:2 2"/>
+  <text x="168" y="40.3" class="svg-lbl" style="fill:var(--c1);font-size:10px">Círculo Polar Ártico</text>
+  <line x1="14.3" y1="75.8" x2="153.7" y2="75.8" style="stroke:var(--c2);stroke-width:1.8;stroke-dasharray:5 3"/>
+  <line x1="156.7" y1="75.8" x2="164" y2="75.8" style="stroke:var(--ink-3);stroke-width:0.8;stroke-dasharray:2 2"/>
+  <text x="168" y="79.8" class="svg-lbl" style="fill:var(--c2);font-size:10px">Trópico de Câncer</text>
+  <line x1="8" y1="106" x2="160" y2="106" style="stroke:var(--c4);stroke-width:2.2"/>
+  <line x1="163" y1="106" x2="164" y2="106" style="stroke:var(--ink-3);stroke-width:0.8;stroke-dasharray:2 2"/>
+  <text x="168" y="110" class="svg-lbl" style="fill:var(--c4);font-size:10px">Equador</text>
+  <line x1="14.3" y1="136.2" x2="153.7" y2="136.2" style="stroke:var(--c2);stroke-width:1.8;stroke-dasharray:5 3"/>
+  <line x1="156.7" y1="136.2" x2="164" y2="136.2" style="stroke:var(--ink-3);stroke-width:0.8;stroke-dasharray:2 2"/>
+  <text x="168" y="140.2" class="svg-lbl" style="fill:var(--c2);font-size:10px">Tróp. de Capricórnio</text>
+  <line x1="53.8" y1="175.7" x2="114.2" y2="175.7" style="stroke:var(--c1);stroke-width:1.8;stroke-dasharray:4 3"/>
+  <line x1="117.2" y1="175.7" x2="164" y2="175.7" style="stroke:var(--ink-3);stroke-width:0.8;stroke-dasharray:2 2"/>
+  <text x="168" y="179.7" class="svg-lbl" style="fill:var(--c1);font-size:10px">Círc. Polar Antártico</text>
+  <line x1="84" y1="30" x2="84" y2="182" style="stroke:var(--c3);stroke-width:2.2"/>
+  <circle cx="84" cy="30" r="3" style="fill:var(--ink)"/>
+  <circle cx="84" cy="182" r="3" style="fill:var(--ink)"/>
+  <text x="84" y="22" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">Polo Norte</text>
+  <text x="84" y="197" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">Polo Sul</text>
+  <text x="168" y="204" class="svg-lbl" style="fill:var(--c3);font-size:10px">verde: Greenwich (0°)</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Razão e proporção · Escalas, plantas e mapas (Matemática)</dd></div>
+      <div><dt>Destrava</dt><dd>Fusos horários, sensoriamento remoto, formas de relevo</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Cartografia é a porta de entrada de Geografia no ENEM e aparece de dois jeitos: como <strong>conta</strong> (escala, distância, declividade) e como <strong>leitura crítica</strong> (por que este mapa mostra a Groenlândia tão grande? quem decidiu que o norte fica em cima?). As duas exigem os mesmos poucos conceitos.</p>
+<p>Os formatos que a prova usa:</p>
+<ul>
+  <li><strong>Cálculo de escala</strong>: distância real a partir do mapa, ou a escala a partir de duas medidas — muitas vezes num contexto de planejamento urbano ou rota.</li>
+  <li><strong>Escala grande × pequena</strong>: qual mapa serve para planejar um bairro e qual serve para ver um país.</li>
+  <li><strong>Coordenadas geográficas</strong>: hemisférios, posição relativa entre lugares, distância aproximada ao longo de um meridiano.</li>
+  <li><strong>Projeções</strong>: Mercator, Peters e a crítica à visão eurocêntrica; o que cada projeção preserva e o que sacrifica.</li>
+  <li><strong>Curvas de nível e perfil topográfico</strong>: onde o terreno é mais íngreme, por onde passa um rio, qual perfil corresponde ao mapa.</li>
+  <li><strong>Anamorfoses</strong>: mapas em que o tamanho dos países representa um dado (população, PIB, emissões), não a área.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três ideias. <strong>Escala grande = denominador pequeno = mais detalhe</strong> (seção 03). <strong>Nenhuma projeção é neutra</strong>: conforme preserva formas, equivalente preserva áreas, e nenhuma faz as duas coisas (seções 06 e 07). <strong>Curvas de nível próximas = declive acentuado</strong> (seção 08).</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Escala: numérica e gráfica</h2>
+<div class="box def">
+  <span class="tag">Escala</span>
+  <p>A razão entre uma distância no mapa e a distância correspondente no terreno. A conta em si é de proporção e foi trabalhada em <strong>Escalas, plantas e mapas</strong> (Matemática); aqui o foco é o que a escala diz sobre o mapa.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Como aparece</th><th>Como ler</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Numérica</strong></td><td class="m">1 : 100 000</td><td>1 cm no mapa = 100 000 cm = <strong>1 km</strong> no terreno</td></tr>
+    <tr><td><strong>Gráfica</strong></td><td>barra dividida em trechos: <span class="m">0 — 5 — 10 km</span></td><td>meça a barra com a régua e compare com o comprimento no mapa</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">O atalho dos zeros</span>
+  <p>Para ler 1 cm do mapa em quilômetros, <strong>corte cinco zeros</strong> do denominador (1 km = 100 000 cm). Em 1 : 250 000, 1 cm = 2,5 km; em 1 : 50 000, 1 cm = 0,5 km = 500 m.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Distância real a partir do mapa</span>
+  <p class="m"><span class="v">D</span> = <span class="v">d</span> × <span class="v">E</span></p>
+  <p>Em um mapa 1 : 250 000, duas cidades estão a 8 cm: <span class="m">8 × 250 000 = 2 000 000 cm = <strong>20 km</strong></span>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Ampliou ou reduziu o mapa? Só a escala gráfica sobrevive</span>
+  <p>Ao fotocopiar um mapa em 200% ou ao dar zoom numa tela, a barra da escala gráfica <strong>cresce junto</strong> com o desenho e continua correta. Já o número impresso fica errado: um mapa 1 : 1 000 000 ampliado ao dobro passa a ser <strong>1 : 500 000</strong> — denominador dividido pelo fator de ampliação. Por isso mapas digitais usam escala gráfica.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Escala grande × escala pequena</h2>
+<div class="box def">
+  <span class="tag">A regra que parece invertida</span>
+  <p>Escala é uma fração: <span class="m">1/5 000</span> é um número <strong>maior</strong> que <span class="m">1/5 000 000</span>. Então:</p>
+  <p><strong>Denominador pequeno → escala grande</strong> → área pequena com muito detalhe (ruas, quadras, casas).<br><strong>Denominador grande → escala pequena</strong> → área grande com pouco detalhe (países, continentes).</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Escala</th><th>Classificação</th><th>Uso típico</th></tr></thead>
+  <tbody>
+    <tr><td class="m">1 : 500 a 1 : 5 000</td><td>muito grande</td><td>planta de imóvel, loteamento, cadastro urbano</td></tr>
+    <tr><td class="m">1 : 25 000 a 1 : 100 000</td><td>grande a média</td><td>carta topográfica de um município, planejamento rural</td></tr>
+    <tr><td class="m">1 : 1 000 000</td><td>pequena</td><td>mapa de um estado ou região</td></tr>
+    <tr><td class="m">1 : 50 000 000 ou menor</td><td>muito pequena</td><td>mapa-múndi, mapa de continente</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">“Mapa grande” não é “escala grande”</span>
+  <p>Um mapa-múndi impresso num painel de 2 metros continua sendo de <strong>escala pequena</strong>: ele mostra o planeta inteiro, logo cada centímetro representa centenas de quilômetros. Escala grande descreve o <strong>detalhamento</strong>, não o tamanho do papel nem o tamanho da área representada — na verdade, é o contrário: escala grande, área pequena.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A pergunta que resolve</span>
+  <p>“Quanto do mundo cabe em 1 cm?” Se cabe uma quadra, a escala é grande. Se cabe um estado, a escala é pequena. Para planejar uma ciclovia, uma obra de drenagem ou a evacuação de um bairro, o ENEM espera a resposta <strong>escala grande</strong>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Coordenadas geográficas</h2>
+<p>Para localizar qualquer ponto da Terra, usa-se uma rede de linhas imaginárias. As <strong>horizontais</strong> são os paralelos; as que vão de polo a polo são os meridianos.</p>
+
+<div class="box def">
+  <span class="tag">Paralelos e latitude</span>
+  <p><strong>Paralelos</strong> são círculos paralelos ao Equador. A <strong>latitude</strong> é a distância angular de um ponto até o <strong>Equador</strong>, medida de <strong>0° a 90°</strong>, para o <strong>Norte (N)</strong> ou para o <strong>Sul (S)</strong>.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Meridianos e longitude</span>
+  <p><strong>Meridianos</strong> são semicircunferências que ligam os polos. A <strong>longitude</strong> é a distância angular de um ponto até o meridiano de <strong>Greenwich</strong> (0°, que passa por Londres), medida de <strong>0° a 180°</strong>, para <strong>Leste (L ou E)</strong> ou <strong>Oeste (O ou W)</strong>.</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 230" role="img" aria-label="Dois esquemas. À esquerda, um corte da Terra visto de lado: a latitude do ponto P é o ângulo de 40 graus entre o plano do Equador e o raio que vai até P, no hemisfério norte. À direita, a Terra vista de cima do Polo Norte: a longitude do ponto Q é o ângulo de 45 graus entre o meridiano de Greenwich e o meridiano de Q, para oeste">
+  <text x="20" y="18" class="svg-ttl" style="fill:var(--c4)">LATITUDE</text>
+  <text x="20" y="32" class="svg-lbl" style="fill:var(--ink-3)">ângulo a partir do Equador</text>
+  <circle cx="112" cy="130" r="70" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <line x1="34" y1="130" x2="190" y2="130" style="stroke:var(--c4);stroke-width:2"/>
+  <line x1="112" y1="60" x2="112" y2="200" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="112" y1="130" x2="165.6" y2="85" style="stroke:var(--ink);stroke-width:1.6"/>
+  <path d="M142 130 A30 30 0 0 0 135 110.7" style="fill:none;stroke:var(--c4);stroke-width:1.8"/>
+  <text x="120" y="147" class="svg-num" style="fill:var(--c4);font-weight:700">φ = 40°</text>
+  <line x1="58.4" y1="85" x2="165.6" y2="85" style="stroke:var(--c4);stroke-width:1.2;stroke-dasharray:4 3"/>
+  <circle cx="165.6" cy="85" r="4.5" style="fill:var(--c4)"/>
+  <text x="173.6" y="79" class="svg-num" style="fill:var(--ink);font-weight:700">P · φ = 40° N</text>
+  <text x="112" y="52" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">PN · 90° N</text>
+  <text x="112" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">PS · 90° S</text>
+  <text x="46" y="124" class="svg-lbl" style="fill:var(--c4)">Equador 0°</text>
+  <text x="94" y="79" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">paralelo</text>
+  <text x="250" y="18" class="svg-ttl" style="fill:var(--c3)">LONGITUDE</text>
+  <text x="250" y="32" class="svg-lbl" style="fill:var(--ink-3)">ângulo a partir de Greenwich</text>
+  <circle cx="342" cy="130" r="70" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <line x1="342" y1="130" x2="412" y2="130" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="402.6" y2="95" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="377" y2="69.4" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="342" y2="60" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="307" y2="69.4" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="281.4" y2="95" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="272" y2="130" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="281.4" y2="165" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="307" y2="190.6" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="342" y2="200" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="377" y2="190.6" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="402.6" y2="165" style="stroke:var(--rule-2);stroke-width:0.8"/>
+  <line x1="342" y1="130" x2="342" y2="200" style="stroke:var(--c3);stroke-width:2.4"/>
+  <line x1="342" y1="130" x2="292.5" y2="179.5" style="stroke:var(--ink);stroke-width:1.6"/>
+  <path d="M318 154 A34 34 0 0 0 342 164" style="fill:none;stroke:var(--c3);stroke-width:1.8"/>
+  <text x="336" y="188" text-anchor="end" class="svg-num" style="fill:var(--c3);font-weight:700">45°</text>
+  <circle cx="292.5" cy="179.5" r="4.5" style="fill:var(--c3)"/>
+  <text x="286.5" y="195.5" text-anchor="end" class="svg-num" style="fill:var(--ink);font-weight:700">Q · λ = 45° O</text>
+  <circle cx="342" cy="130" r="3.5" style="fill:var(--ink)"/>
+  <text x="348" y="124" class="svg-lbl" style="fill:var(--ink-2)">PN</text>
+  <text x="342" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">Greenwich 0°</text>
+  <text x="342" y="52" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">180°</text>
+  <text x="418" y="134" class="svg-lbl" style="fill:var(--ink-2)">90° L</text>
+  <text x="266" y="134" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">90° O</text>
+</svg>
+<figcaption><b>Latitude e longitude são ângulos, não distâncias em quilômetros.</b> A latitude se mede no plano “de pé” da Terra, a partir do Equador; a longitude, no plano do Equador, a partir de Greenwich. Por isso a latitude vai só até 90° (o polo) e a longitude até 180° (o lado oposto a Greenwich). Esquemas fora de escala.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Linha</th><th>Latitude aproximada</th><th>O que marca</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Equador</strong></td><td class="m">0°</td><td>divide os hemisférios Norte e Sul; maior paralelo</td></tr>
+    <tr><td><strong>Trópico de Câncer</strong></td><td class="m">23° 27′ N</td><td>limite norte onde o Sol pode passar a pino ao meio-dia</td></tr>
+    <tr><td><strong>Trópico de Capricórnio</strong></td><td class="m">23° 27′ S</td><td>limite sul onde o Sol pode passar a pino; corta o Brasil em MS, PR e SP</td></tr>
+    <tr><td><strong>Círculo Polar Ártico</strong></td><td class="m">66° 33′ N</td><td>a partir dele há ao menos um dia de 24 h de luz ou de escuridão por ano</td></tr>
+    <tr><td><strong>Círculo Polar Antártico</strong></td><td class="m">66° 33′ S</td><td>o mesmo, no hemisfério Sul</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Distância ao longo de um meridiano</span>
+  <p>A circunferência da Terra tem cerca de 40 000 km; dividindo por 360°, <strong>1° de latitude ≈ 111 km</strong>. Dois lugares no mesmo meridiano, em 2° S e 22° S, estão a cerca de <span class="m">20 × 111 ≈ 2 220 km</span>. Se estiverem em hemisférios diferentes (5° N e 15° S), <strong>some</strong> as latitudes: 20°.</p>
+  <p>Isso <strong>não</strong> vale para a longitude: os meridianos se aproximam rumo aos polos, e 1° de longitude encolhe até zero.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O Brasil nas coordenadas</span>
+  <p>O Brasil é cortado pelo <strong>Equador</strong> (no Amapá, Roraima, Amazonas e Pará) e pelo <strong>Trópico de Capricórnio</strong>. Tem a <strong>maior parte</strong> do território no hemisfério Sul e na zona intertropical, e está <strong>inteiro no hemisfério Ocidental</strong> — todas as suas longitudes são Oeste.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Orientação: rosa dos ventos e posição relativa</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Grupo</th><th>Direções</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Cardeais</strong></td><td>Norte (N), Sul (S), Leste (L ou E), Oeste (O ou W)</td></tr>
+    <tr><td><strong>Colaterais</strong></td><td>Nordeste (NE), Sudeste (SE), Sudoeste (SO ou SW), Noroeste (NO ou NW) — entre dois cardeais</td></tr>
+    <tr><td><strong>Subcolaterais</strong></td><td>entre um cardeal e um colateral: NNE, ENE, ESE, SSE, SSO, OSO, ONO, NNO</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">Direção a partir de coordenadas</span>
+  <p>Compare as duas coordenadas separadamente. <strong>Latitude</strong>: quem tem latitude Sul maior está mais ao <strong>sul</strong>. <strong>Longitude</strong>: no hemisfério Ocidental, quem tem longitude Oeste <strong>menor</strong> está mais a <strong>leste</strong> (mais perto de Greenwich).</p>
+  <p>De A (10° S, 50° O) para B (20° S, 40° O): B está mais ao sul <strong>e</strong> mais a leste → B fica a <strong>sudeste</strong> de A.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O Sol não nasce exatamente no leste o ano todo</span>
+  <p>O Sol nasce <strong>exatamente</strong> no leste só nos equinócios; no resto do ano, nasce deslocado para nordeste ou sudeste, conforme a estação. A regra “braço direito para o nascente, à frente o norte” serve como orientação <strong>aproximada</strong>.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Norte geográfico × norte magnético</span>
+  <p>A bússola aponta para o <strong>polo magnético</strong>, que não coincide com o polo geográfico (o eixo de rotação). O ângulo entre os dois nortes, num lugar, é a <strong>declinação magnética</strong>, e ela muda com o tempo. Cartas topográficas trazem esse dado para corrigir a leitura da bússola.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Projeções: cilíndrica, cônica e azimutal</h2>
+<p>Uma esfera não pode ser aberta sobre um plano sem rasgar ou esticar — tente achatar uma casca de laranja. Toda <strong>projeção cartográfica</strong> é um método matemático de transferir a rede de paralelos e meridianos para o plano, e <strong>toda projeção distorce algo</strong>.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 212" role="img" aria-label="Três superfícies de projeção envolvendo o globo: o cilindro toca a Terra no Equador, o cone toca ao longo de um paralelo de latitude média e o plano toca em um único ponto, como o polo. Em cada caso, a distorção é menor junto à linha ou ao ponto de contato, destacados em vermelho">
+  <rect x="38" y="46" width="80" height="116" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <ellipse cx="78" cy="46" rx="40" ry="7" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <ellipse cx="78" cy="162" rx="40" ry="7" style="fill:none;stroke:var(--c1);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <circle cx="78" cy="104" r="40" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <ellipse cx="78" cy="104" rx="40" ry="6" style="fill:none;stroke:var(--c4);stroke-width:2.4"/>
+  <text x="78" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">CILÍNDRICA</text>
+  <text x="78" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">contato: Equador</text>
+  <text x="78" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">boa no Equador</text>
+  <polygon points="230,69.1 298.9,138 161.1,138" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <ellipse cx="230" cy="138" rx="68.9" ry="9" style="fill:none;stroke:var(--c2);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <circle cx="230" cy="120" r="36" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <ellipse cx="230" cy="94.5" rx="25.5" ry="4.5" style="fill:none;stroke:var(--c4);stroke-width:2.4"/>
+  <text x="230" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">CÔNICA</text>
+  <text x="230" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">contato: um paralelo</text>
+  <text x="230" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">boa em lat. médias</text>
+  <polygon points="330,68 446,68 434,84 318,84" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.2"/>
+  <circle cx="382" cy="116" r="40" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.4"/>
+  <ellipse cx="382" cy="116" rx="40" ry="6" style="fill:none;stroke:var(--rule-2);stroke-width:1"/>
+  <circle cx="382" cy="76" r="4" style="fill:var(--c4)"/>
+  <text x="382" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">AZIMUTAL</text>
+  <text x="382" y="40" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">(plana)</text>
+  <text x="382" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">contato: um ponto</text>
+  <text x="382" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">boa perto do ponto</text>
+</svg>
+<figcaption><b>A distorção é mínima onde a superfície toca o globo e cresce à medida que se afasta dele.</b> O cilindro toca no Equador e serve bem para a faixa tropical; o cone toca num paralelo médio e serve para países de latitude média; o plano toca num ponto e é ideal para regiões polares. Esquema fora de escala.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Superfície</th><th>Como ficam paralelos e meridianos</th><th>Melhor para</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Cilíndrica</strong></td><td>retas que se cruzam em ângulo reto</td><td>mapa-múndi, faixa equatorial, navegação (Mercator)</td></tr>
+    <tr><td><strong>Cônica</strong></td><td>paralelos em arcos concêntricos; meridianos em retas que convergem</td><td>latitudes médias: Europa, Estados Unidos, China</td></tr>
+    <tr><td><strong>Azimutal (plana)</strong></td><td>paralelos em círculos concêntricos; meridianos em raios</td><td>polos, rotas aéreas a partir de um ponto, bandeira da ONU</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Conformes, equivalentes, equidistantes — e a política dos mapas</h2>
+<p>Além da superfície, a projeção se classifica pelo que ela <strong>conserva</strong>. É impossível conservar formas e áreas ao mesmo tempo.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Propriedade</th><th>Conserva</th><th>Sacrifica</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Conforme</strong></td><td>os ângulos e as formas de pequenas áreas</td><td>as áreas, que crescem rumo aos polos</td><td>Mercator</td></tr>
+    <tr><td><strong>Equivalente</strong></td><td>a proporção entre as áreas</td><td>as formas, que ficam alongadas ou achatadas</td><td>Peters (Gall-Peters)</td></tr>
+    <tr><td><strong>Equidistante</strong></td><td>as distâncias a partir de um ponto ou ao longo de certas linhas</td><td>áreas e formas fora delas</td><td>azimutal equidistante (bandeira da ONU)</td></tr>
+    <tr><td><strong>Afilática</strong></td><td>nada com exatidão</td><td>um pouco de tudo, para reduzir o erro total</td><td>Robinson, comum em atlas</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Mercator e a Groenlândia</h3>
+<div class="box def">
+  <span class="tag">Projeção de Mercator (1569)</span>
+  <p>Cilíndrica e <strong>conforme</strong>, criada para a navegação: uma rota de rumo constante na bússola vira uma <strong>linha reta</strong> no mapa. O preço é o exagero das áreas em altas latitudes.</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 260" role="img" aria-label="Quadrados que têm a mesma área real desenhados na projeção de Mercator: no Equador o quadrado fica do tamanho original; a 30 graus a área aparece cerca de 1,3 vez maior; a 45 graus, 2 vezes; a 60 graus, 4 vezes; a 70 graus, cerca de 8,5 vezes. Abaixo, barras com as áreas reais: África com cerca de 30 milhões de quilômetros quadrados e Groenlândia com cerca de 2,2 milhões, cerca de 14 vezes menor">
+  <text x="20" y="22" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">MESMA ÁREA REAL, DESENHADA NA PROJEÇÃO DE MERCATOR</text>
+  <rect x="30" y="126" width="24" height="24" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="42" y="118" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">0°</text>
+  <text x="42" y="168" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:700">× 1</text>
+  <rect x="72" y="122.3" width="27.7" height="27.7" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="85.9" y="114.3" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">30°</text>
+  <text x="85.9" y="168" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:700">× 1,3</text>
+  <rect x="117.7" y="116.1" width="33.9" height="33.9" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="134.7" y="108.1" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">45°</text>
+  <text x="134.7" y="168" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:700">× 2</text>
+  <rect x="169.7" y="102" width="48" height="48" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="193.7" y="94" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">60°</text>
+  <text x="193.7" y="168" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:700">× 4</text>
+  <rect x="235.7" y="79.8" width="70.2" height="70.2" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4"/>
+  <text x="270.7" y="71.8" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">70°</text>
+  <text x="270.7" y="168" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-weight:700">× 8,5</text>
+  <text x="313.8" y="120" class="svg-lbl" style="fill:var(--ink-3)">latitude</text>
+  <text x="313.8" y="134" class="svg-lbl" style="fill:var(--ink-3)">→ mais ao polo,</text>
+  <text x="313.8" y="148" class="svg-lbl" style="fill:var(--ink-3)">  mais inflado</text>
+  <text x="313.8" y="168" class="svg-lbl" style="fill:var(--ink-3)">área no mapa</text>
+  <text x="20" y="200" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">ÁREA REAL (milhões de km², valores aproximados)</text>
+  <rect x="120" y="212" width="290" height="14" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="112" y="223" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">África</text>
+  <text x="416" y="223" class="svg-num" style="fill:var(--c2);font-weight:700">≈ 30</text>
+  <rect x="120" y="234" width="21.3" height="14" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.2"/>
+  <text x="112" y="245" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">Groenlândia</text>
+  <text x="147.3" y="245" class="svg-num" style="fill:var(--c4);font-weight:700">≈ 2,2 · cerca de 14 vezes menor</text>
+</svg>
+<figcaption><b>Na Mercator, quanto mais longe do Equador, mais inflada fica a área.</b> Para manter os ângulos, a projeção estica cada região na mesma proporção na horizontal e na vertical; a 60° essa ampliação já é o dobro em cada direção — quatro vezes em área. Por isso a Groenlândia, em altas latitudes, parece comparável à África, que é cerca de 14 vezes maior. Quadrados esquemáticos.</figcaption>
+</figure>
+
+<h3>Peters e a crítica eurocêntrica</h3>
+<div class="box def">
+  <span class="tag">Projeção de Peters</span>
+  <p>Cilíndrica e <strong>equivalente</strong>, divulgada pelo historiador Arno Peters na década de 1970 (é muito próxima de uma projeção de James Gall do século XIX). Os continentes do Sul aparecem com suas áreas reais — maiores e “esticados” na vertical —, e a Europa encolhe para o tamanho que tem. Foi apresentada como uma <strong>crítica política</strong>: a Mercator, centrada na Europa e com o Norte em cima, reforçaria uma visão de mundo <strong>eurocêntrica</strong>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Nenhuma é “o mapa certo”</span>
+  <p>A Mercator não foi feita para comparar áreas, e sim para navegar; a Peters acerta as áreas, mas deforma as formas. O ENEM cobra a ideia de que <strong>o mapa é uma representação com intenção</strong>: a escolha da projeção, do centro do mapa e de qual polo fica em cima é convenção, não fato da natureza. Mapas com o Sul em cima ou centrados no Pacífico são tão corretos quanto o tradicional.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Curvas de nível e perfil topográfico</h2>
+<div class="box def">
+  <span class="tag">Curva de nível (isoípsa)</span>
+  <p>Linha que une pontos de <strong>mesma altitude</strong>. A diferença de altitude entre duas curvas vizinhas é a <strong>equidistância</strong>, constante em todo o mapa (por exemplo, 20 m ou 100 m).</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 328" role="img" aria-label="Acima, mapa com curvas de nível de 100 a 500 metros em torno de um morro, cortado pela linha de A a B: do lado oeste as curvas estão espaçadas; do lado leste, muito próximas. Abaixo, o perfil topográfico construído ao longo de A–B: cada cruzamento de curva vira um ponto com sua altitude, e o resultado mostra uma encosta oeste suave e uma encosta leste íngreme">
+  <text x="20" y="20" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">MAPA · curvas de nível</text>
+  <text x="440" y="20" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">equidistância: 100 m</text>
+  <path d="M60 102 A240 59.4 0 0 1 300 42.6 A84 59.4 0 0 1 384 102 A84 59.4 0 0 1 300 161.4 A240 59.4 0 0 1 60 102 Z" style="fill:none;stroke:var(--c2);stroke-width:1.5"/>
+  <path d="M130 102 A170 47 0 0 1 300 55 A66 47 0 0 1 366 102 A66 47 0 0 1 300 149 A170 47 0 0 1 130 102 Z" style="fill:none;stroke:var(--c2);stroke-width:1.5"/>
+  <path d="M188 102 A112 36.7 0 0 1 300 65.3 A50 36.7 0 0 1 350 102 A50 36.7 0 0 1 300 138.7 A112 36.7 0 0 1 188 102 Z" style="fill:none;stroke:var(--c2);stroke-width:1.5"/>
+  <path d="M238 102 A62 27.4 0 0 1 300 74.6 A34 27.4 0 0 1 334 102 A34 27.4 0 0 1 300 129.4 A62 27.4 0 0 1 238 102 Z" style="fill:none;stroke:var(--c2);stroke-width:1.5"/>
+  <path d="M278 102 A22 19.6 0 0 1 300 82.4 A18 19.6 0 0 1 318 102 A18 19.6 0 0 1 300 121.6 A22 19.6 0 0 1 278 102 Z" style="fill:none;stroke:var(--c4);stroke-width:1.5"/>
+  <line x1="40" y1="102" x2="412" y2="102" style="stroke:var(--ink);stroke-width:1.2;stroke-dasharray:5 3"/>
+  <circle cx="40" cy="102" r="3.5" style="fill:var(--ink)"/>
+  <circle cx="412" cy="102" r="3.5" style="fill:var(--ink)"/>
+  <text x="32" y="106" text-anchor="end" class="svg-num" style="fill:var(--ink);font-weight:700">A</text>
+  <text x="420" y="106" class="svg-num" style="fill:var(--ink);font-weight:700">B</text>
+  <text x="300" y="106" text-anchor="middle" class="svg-num" style="fill:var(--c4)">▲</text>
+  <text x="64" y="96" class="svg-lbl" style="fill:var(--c2);font-size:10px">100</text>
+  <text x="134" y="96" class="svg-lbl" style="fill:var(--c2);font-size:10px">200</text>
+  <text x="192" y="96" class="svg-lbl" style="fill:var(--c2);font-size:10px">300</text>
+  <text x="242" y="96" class="svg-lbl" style="fill:var(--c2);font-size:10px">400</text>
+  <text x="20" y="320" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">PERFIL TOPOGRÁFICO de A a B</text>
+  <polygon points="40,300 60,281 130,262 188,243 238,224 278,205 300,197.4 318,205 334,224 350,243 366,262 384,281 412,300 412,300 40,300" style="fill:var(--c2-soft);stroke:none"/>
+  <polyline points="40,300 60,281 130,262 188,243 238,224 278,205 300,197.4 318,205 334,224 350,243 366,262 384,281 412,300" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linejoin:round"/>
+  <line x1="40" y1="300" x2="412" y2="300" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="36" y1="300" x2="40" y2="300" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="304" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">0</text>
+  <line x1="36" y1="281" x2="40" y2="281" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="285" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">100</text>
+  <line x1="36" y1="262" x2="40" y2="262" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="266" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">200</text>
+  <line x1="36" y1="243" x2="40" y2="243" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="247" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">300</text>
+  <line x1="36" y1="224" x2="40" y2="224" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="228" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">400</text>
+  <line x1="36" y1="205" x2="40" y2="205" style="stroke:var(--ink-3);stroke-width:1"/>
+  <text x="32" y="209" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">500</text>
+  <line x1="60" y1="104" x2="60" y2="281" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="60" cy="281" r="2.6" style="fill:var(--c2)"/>
+  <line x1="384" y1="104" x2="384" y2="281" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="384" cy="281" r="2.6" style="fill:var(--c2)"/>
+  <line x1="130" y1="104" x2="130" y2="262" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="130" cy="262" r="2.6" style="fill:var(--c2)"/>
+  <line x1="366" y1="104" x2="366" y2="262" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="366" cy="262" r="2.6" style="fill:var(--c2)"/>
+  <line x1="188" y1="104" x2="188" y2="243" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="188" cy="243" r="2.6" style="fill:var(--c2)"/>
+  <line x1="350" y1="104" x2="350" y2="243" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="350" cy="243" r="2.6" style="fill:var(--c2)"/>
+  <line x1="238" y1="104" x2="238" y2="224" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="238" cy="224" r="2.6" style="fill:var(--c2)"/>
+  <line x1="334" y1="104" x2="334" y2="224" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="334" cy="224" r="2.6" style="fill:var(--c2)"/>
+  <line x1="278" y1="104" x2="278" y2="205" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="278" cy="205" r="2.6" style="fill:var(--c2)"/>
+  <line x1="318" y1="104" x2="318" y2="205" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="318" cy="205" r="2.6" style="fill:var(--c2)"/>
+  <rect x="60" y="170" width="180" height="16" style="fill:var(--surface);stroke:none"/>
+  <text x="150" y="182" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">espaçadas → declive suave</text>
+  <rect x="272.2" y="170" width="159.6" height="16" style="fill:var(--surface);stroke:none"/>
+  <text x="352" y="182" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:700">juntas → declive forte</text>
+</svg>
+<figcaption><b>O espaçamento das curvas é a inclinação do terreno.</b> Entre duas curvas vizinhas a subida é sempre a mesma (a equidistância); se elas estão próximas, essa subida acontece numa distância horizontal curta — declive forte. O perfil se constrói projetando cada cruzamento da linha A–B com uma curva até a altura correspondente. Esquema fora de escala.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>No mapa</th><th>No terreno</th></tr></thead>
+  <tbody>
+    <tr><td>curvas <strong>próximas</strong></td><td>declive <strong>acentuado</strong> (encosta íngreme, escarpa)</td></tr>
+    <tr><td>curvas <strong>espaçadas</strong></td><td>declive <strong>suave</strong> (planícies, topos aplainados)</td></tr>
+    <tr><td>curvas fechadas com valores <strong>crescendo</strong> para dentro</td><td>morro, elevação</td></tr>
+    <tr><td>curvas fechadas com valores <strong>diminuindo</strong> para dentro</td><td>depressão</td></tr>
+    <tr><td>curvas em <strong>“V”</strong> com o vértice apontando para as cotas maiores</td><td>vale — o rio corre ao longo do “V”, de montante para jusante</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Curvas de nível não se cruzam</span>
+  <p>Um mesmo ponto não pode ter duas altitudes. Em paredões verticais as curvas podem se <strong>encostar</strong>, mas não se cruzar.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Declividade: desnível sobre distância horizontal</span>
+  <p class="m">declividade = <span class="frac"><i>desnível</i><i>distância horizontal</i></span> × 100%</p>
+  <p>Num mapa 1 : 50 000, dois pontos nas curvas de 200 m e 600 m estão a 4 cm: distância real <span class="m">4 × 50 000 = 200 000 cm = 2 000 m</span>; desnível 400 m; declividade <span class="m">400/2 000 = <strong>20%</strong></span>. As duas medidas precisam estar na <strong>mesma unidade</strong>.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Por que isso importa fora da prova</span>
+  <p>Declividade decide onde se pode construir, por onde passa uma estrada e onde há risco de deslizamento. Encostas muito íngremes ocupadas por moradias são áreas de risco típicas nas cidades brasileiras — e a Lei de Parcelamento do Solo Urbano (Lei 6.766/1979) proíbe, salvo exigências específicas, lotear terrenos com declividade igual ou superior a 30%.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Mapas temáticos e anamorfoses</h2>
+<div class="box def">
+  <span class="tag">Mapa temático</span>
+  <p>Representa um fenômeno sobre a base cartográfica: clima, densidade populacional, desmatamento, voto. A <strong>legenda</strong> é parte do mapa: cores em gradação (do claro ao escuro) para quantidades ordenadas, cores diferentes para categorias sem ordem, símbolos proporcionais para totais.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Anamorfose (cartograma)</span>
+  <p>Mapa em que o <strong>tamanho de cada país ou região é proporcional a um dado</strong> — população, PIB, emissões de CO₂ — e não à sua área territorial. A posição relativa é mantida, mas as formas se deformam de propósito. Numa anamorfose de população, Índia e China incham; Canadá, Rússia e Austrália encolhem.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Anamorfose não é projeção</span>
+  <p>Projeção resolve o problema de passar a esfera para o plano mantendo a área, a forma ou a distância <strong>reais</strong>. A anamorfose abandona a área real de propósito para fazer o leitor <strong>enxergar uma desigualdade</strong>. Se a questão diz que a área “corresponde ao PIB”, é anamorfose.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Roteiro de leitura de qualquer mapa no ENEM</span>
+  <ol>
+    <li><strong>Título e fonte</strong>: o que o mapa quer mostrar, e de quando.</li>
+    <li><strong>Legenda</strong>: o que cada cor ou símbolo significa — a resposta costuma estar aqui.</li>
+    <li><strong>Escala</strong>: grande ou pequena; o que dá e o que não dá para concluir com esse detalhamento.</li>
+    <li><strong>Orientação e projeção</strong>: onde está o norte; se as áreas são comparáveis.</li>
+  </ol>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Conexão</th></tr></thead>
+  <tbody>
+    <tr><td>Matemática</td><td><strong>Escalas, plantas e mapas</strong>: as contas de escala linear, de área (fator ao quadrado) e de maquetes</td></tr>
+    <tr><td>Matemática</td><td>Geometria: latitude e longitude são ângulos; a distância ao longo do meridiano é comprimento de arco</td></tr>
+    <tr><td>Geografia</td><td><strong>Fusos horários</strong> (próximo assunto): cada fuso tem 15° de longitude</td></tr>
+    <tr><td>Geografia</td><td><strong>Sensoriamento remoto e geotecnologias</strong>: GPS dá coordenadas; o SIG sobrepõe mapas temáticos</td></tr>
+    <tr><td>Geografia</td><td><strong>Formas de relevo</strong> e <strong>erosão</strong>: curvas de nível e declividade explicam onde a água escoa e onde o solo é arrastado</td></tr>
+    <tr><td>História</td><td>Grandes navegações (a Mercator nasce para elas) e o debate sobre eurocentrismo</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Achar que 1 : 5 000 000 é escala grande</span> &nbsp;→&nbsp; <span class="c">denominador grande = escala pequena</span></span><small>Escala grande mostra pouca área com muito detalhe.</small></li>
+  <li><span><span class="x">Confiar na escala numérica de um mapa ampliado</span> &nbsp;→&nbsp; <span class="c">só a gráfica acompanha a ampliação</span></span><small>Ampliar 2× transforma 1 : 1 000 000 em 1 : 500 000.</small></li>
+  <li><span><span class="x">Esquecer de converter cm em km</span> &nbsp;→&nbsp; <span class="c">corte cinco zeros: 100 000 cm = 1 km</span></span><small>8 cm em 1 : 250 000 = 20 km, não 2 nem 200.</small></li>
+  <li><span><span class="x">Medir latitude a partir de Greenwich</span> &nbsp;→&nbsp; <span class="c">latitude: do Equador; longitude: de Greenwich</span></span><small>Latitude vai até 90°; longitude, até 180°.</small></li>
+  <li><span><span class="x">Subtrair latitudes de hemisférios diferentes</span> &nbsp;→&nbsp; <span class="c">de lados opostos do Equador, some</span></span><small>5° N a 15° S são 20°, cerca de 2 220 km.</small></li>
+  <li><span><span class="x">Achar que a Mercator mostra as áreas reais</span> &nbsp;→&nbsp; <span class="c">ela é conforme: exagera as altas latitudes</span></span><small>A Groenlândia é cerca de 14 vezes menor que a África.</small></li>
+  <li><span><span class="x">Dizer que a Peters preserva as formas</span> &nbsp;→&nbsp; <span class="c">Peters preserva áreas e deforma as formas</span></span><small>Conforme e equivalente ao mesmo tempo é impossível.</small></li>
+  <li><span><span class="x">Ler curvas próximas como terreno plano</span> &nbsp;→&nbsp; <span class="c">curvas próximas = declive acentuado</span></span><small>O mesmo desnível vencido em distância curta.</small></li>
+  <li><span><span class="x">Confundir anamorfose com projeção equivalente</span> &nbsp;→&nbsp; <span class="c">anamorfose distorce a área de propósito</span></span><small>O tamanho representa um dado, não o território.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Mapas e situações são hipotéticos, criados para o exercício.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Distância real a partir da escala</span>
+    <p class="enun">Uma equipe da defesa civil usa um mapa na escala 1 : 250 000 para planejar a rota de abastecimento entre dois municípios. No mapa, a distância em linha reta entre as sedes municipais é de 8 cm. Na realidade, essa distância é de</p>
+    <ol class="alt">
+      <li>2 km.</li>
+      <li>20 km.</li>
+      <li>31,25 km.</li>
+      <li>200 km.</li>
+      <li>2 000 km.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada centímetro do mapa representa 250 000 cm = 2,5 km (corte cinco zeros).</p>
+      <p class="m">8 × 2,5 = <strong>20 km</strong></p>
+      <p>As alternativas A, D e E são o mesmo cálculo com a conversão de unidades errada por um fator de 10 (A e D) ou de 100 (E). A C divide o denominador pela medida (250 000 ÷ 8), em vez de multiplicar.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Escala grande e escala pequena</span>
+    <p class="enun">A prefeitura de uma cidade média vai planejar a instalação de bocas de lobo rua a rua num bairro sujeito a alagamentos. A equipe dispõe de dois mapas da mesma folha de papel: um na escala 1 : 2 000 e outro na escala 1 : 2 000 000. Para esse planejamento, o mapa mais adequado é o de</p>
+    <ol class="alt">
+      <li>1 : 2 000 000, por ser de escala maior e, portanto, mais detalhado.</li>
+      <li>1 : 2 000 000, porque representa uma área maior com o mesmo nível de detalhe.</li>
+      <li>1 : 2 000, por ser de escala pequena, adequada a áreas pequenas.</li>
+      <li>1 : 2 000, por ser de escala maior, que representa uma área menor com mais detalhes.</li>
+      <li>qualquer um dos dois, pois a escala altera o tamanho do desenho, mas não o nível de detalhe.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Como fração, <span class="m">1/2 000</span> é mil vezes maior que <span class="m">1/2 000 000</span>: é a escala <strong>grande</strong>. Em 1 : 2 000, 1 cm = 20 m, e cada rua e cada quadra aparecem; em 1 : 2 000 000, 1 cm = 20 km, e o bairro inteiro vira um ponto.</p>
+      <p>A alternativa A é a confusão clássica — trata o denominador maior como escala maior. A C escolhe o mapa certo, mas o classifica errado (1 : 2 000 é escala grande). A B e a E negam a relação entre escala e detalhamento: numa folha de mesmo tamanho, mostrar mais área obriga a mostrar menos detalhe.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Mapa ampliado</span>
+    <p class="enun">Um professor fotocopiou um mapa que traz, na legenda, a escala numérica 1 : 1 000 000 e uma escala gráfica. Para facilitar a leitura, a cópia foi ampliada para 200% (o dobro do comprimento original). Sobre as escalas da cópia, é correto afirmar que</p>
+    <ol class="alt">
+      <li>a escala gráfica continua válida, pois foi ampliada junto com o mapa, e a escala numérica correta da cópia passa a ser 1 : 500 000.</li>
+      <li>a escala numérica impressa continua válida, pois a razão entre o mapa e o terreno não se altera com a ampliação.</li>
+      <li>a escala da cópia passa a ser 1 : 2 000 000, porque o mapa ficou duas vezes maior.</li>
+      <li>nenhuma das duas escalas continua válida, e a cópia não pode mais ser usada para medir distâncias.</li>
+      <li>a escala numérica da cópia passa a ser 1 : 250 000, porque a área do mapa quadruplicou.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Na cópia, os 1 000 000 cm do terreno que antes cabiam em 1 cm agora ocupam 2 cm: <span class="m">2 : 1 000 000 = 1 : 500 000</span>. A barra da escala gráfica dobrou junto com tudo, então continua medindo corretamente.</p>
+      <p>A B ignora que a distância no mapa mudou. A C inverte o efeito: ampliar o desenho torna a escala <strong>maior</strong> (denominador menor). A E usa o fator de área (4) num cálculo de escala linear — o fator correto é o de comprimento (2).</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Distância ao longo de um meridiano</span>
+    <p class="enun">Dois povoados, A e B, situam-se sobre o mesmo meridiano, de longitude 50° O. A está na latitude 2° S e B na latitude 22° S. Considerando que 1° de latitude corresponde a cerca de 111 km, a distância aproximada entre os povoados é de</p>
+    <ol class="alt">
+      <li>222 km.</li>
+      <li>1 110 km.</li>
+      <li>2 220 km.</li>
+      <li>2 664 km.</li>
+      <li>5 550 km.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os dois pontos estão no <strong>mesmo hemisfério</strong> (Sul), então a diferença de latitude é <span class="m">22° − 2° = 20°</span>.</p>
+      <p class="m">20 × 111 ≈ <strong>2 220 km</strong></p>
+      <p>A D soma as latitudes (24°), o que só se faz quando os pontos estão em lados opostos do Equador. A E usa a longitude (50°), que é a mesma para os dois e não entra na conta. A A usa só a latitude de A.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · A Groenlândia da Mercator</span>
+    <p class="enun">Em muitos mapas-múndi escolares, a Groenlândia aparece com tamanho semelhante ao da África, embora a área africana seja cerca de 14 vezes maior. Essa distorção ocorre porque esses mapas usam uma projeção</p>
+    <ol class="alt">
+      <li>equivalente, que preserva as formas dos continentes e, para isso, reduz as áreas próximas ao Equador.</li>
+      <li>azimutal centrada no Polo Norte, que amplia as áreas próximas ao ponto de contato com o plano.</li>
+      <li>cilíndrica que exagera as áreas das regiões equatoriais, onde o cilindro toca o globo.</li>
+      <li>cônica, que é fiel nas latitudes médias e por isso representa corretamente a África.</li>
+      <li>cilíndrica conforme, que preserva os ângulos e as formas locais, mas amplia cada vez mais as áreas em direção aos polos.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A projeção de Mercator é <strong>cilíndrica e conforme</strong>: mantém os ângulos (útil para navegar) à custa de esticar as regiões de alta latitude — a 70°, a área aparece cerca de 8,5 vezes maior. A Groenlândia, em altas latitudes, infla; a África, cortada pelo Equador, quase não se altera.</p>
+      <p>A A troca as propriedades: projeção equivalente preserva <strong>áreas</strong>, não formas. A B erra o mecanismo — perto do ponto de contato a distorção é mínima, não máxima. A C inverte o lugar da distorção: o Equador é justamente a linha de contato, onde ela é menor.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Mapa em que o tamanho é um dado</span>
+    <p class="enun">Em um mapa-múndi, a área de cada país foi desenhada proporcionalmente ao seu número de habitantes. Nele, a Índia e a China aparecem enormes, enquanto o Canadá, a Rússia e a Austrália ficam reduzidos a faixas estreitas, embora todos mantenham sua posição relativa. Esse tipo de representação é</p>
+    <ol class="alt">
+      <li>uma anamorfose, em que a área de cada unidade expressa o valor de uma variável, e não a extensão territorial.</li>
+      <li>uma projeção equivalente, que mantém a proporção entre as áreas reais dos países.</li>
+      <li>uma projeção conforme, que preserva as formas e distorce as áreas em altas latitudes.</li>
+      <li>um mapa de escala grande, que mostra com mais detalhe os países mais populosos.</li>
+      <li>uma projeção azimutal equidistante, que conserva as distâncias a partir de um ponto central.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Quando o tamanho representa um <strong>dado</strong> (aqui, população), o mapa é uma <strong>anamorfose</strong> ou cartograma. Ela sacrifica a área real de propósito para tornar visível a distribuição do fenômeno.</p>
+      <p>A B é o oposto: a projeção equivalente existe justamente para manter as áreas <strong>reais</strong> — nela o Canadá e a Rússia seriam enormes. A C não explicaria por que países de baixa latitude, como a Índia, cresceram. A D confunde escala com tamanho do desenho: o mapa-múndi inteiro está numa única escala, e pequena.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Duas trilhas até o cume</span>
+    <p class="enun">O esquema mostra as curvas de nível de um morro e duas trilhas que partem da curva de 100 m e terminam no cume.</p>
+    <div class="graf"><svg viewBox="0 0 460 200" role="img" aria-label="Mapa de curvas de nível de 100 a 500 metros em torno de um cume. A trilha 1 parte da curva de 100 metros a oeste e sobe até o cume cruzando curvas muito próximas; a trilha 2 parte da curva de 100 metros a leste e sobe até o cume cruzando curvas bem espaçadas, num percurso horizontal muito mais longo">
+  <path d="M120 100 A70 66.4 0 0 1 190 33.6 A202 66.4 0 0 1 392 100 A202 66.4 0 0 1 190 166.4 A70 66.4 0 0 1 120 100 Z" style="fill:none;stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M134 100 A56 53.6 0 0 1 190 46.4 A152 53.6 0 0 1 342 100 A152 53.6 0 0 1 190 153.6 A56 53.6 0 0 1 134 100 Z" style="fill:none;stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M148 100 A42 41.6 0 0 1 190 58.4 A106 41.6 0 0 1 296 100 A106 41.6 0 0 1 190 141.6 A42 41.6 0 0 1 148 100 Z" style="fill:none;stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M162 100 A28 30 0 0 1 190 70 A62 30 0 0 1 252 100 A62 30 0 0 1 190 130 A28 30 0 0 1 162 100 Z" style="fill:none;stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M175 100 A15 19.4 0 0 1 190 80.6 A22 19.4 0 0 1 212 100 A22 19.4 0 0 1 190 119.4 A15 19.4 0 0 1 175 100 Z" style="fill:none;stroke:var(--c4);stroke-width:1.4"/>
+  <text x="190" y="104" text-anchor="middle" class="svg-num" style="fill:var(--c4)">▲</text>
+  <polyline points="120,100 184,100" style="fill:none;stroke:var(--c1);stroke-width:2.6;stroke-linejoin:round"/>
+  <polyline points="392,100 198,100" style="fill:none;stroke:var(--c5);stroke-width:2.6;stroke-linejoin:round;stroke-dasharray:5 4"/>
+  <circle cx="120" cy="100" r="4" style="fill:var(--c1)"/>
+  <circle cx="392" cy="100" r="4" style="fill:var(--c5)"/>
+  <text x="112" y="104" text-anchor="end" class="svg-lbl" style="fill:var(--c1);font-weight:700">início 1</text>
+  <text x="400" y="104" class="svg-lbl" style="fill:var(--c5);font-weight:700">início 2</text>
+  <text x="388" y="94" text-anchor="end" class="svg-lbl" style="fill:var(--c2);font-size:10px">100</text>
+  <text x="338" y="94" text-anchor="end" class="svg-lbl" style="fill:var(--c2);font-size:10px">200</text>
+  <text x="292" y="94" text-anchor="end" class="svg-lbl" style="fill:var(--c2);font-size:10px">300</text>
+  <text x="248" y="94" text-anchor="end" class="svg-lbl" style="fill:var(--c2);font-size:10px">400</text>
+  <text x="20" y="22" class="svg-lbl" style="fill:var(--ink-2)">trilha 1 (contínua) · trilha 2 (tracejada)</text>
+  <text x="440" y="22" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">equidistância: 100 m</text>
+  <text x="440" y="190" text-anchor="end" class="svg-num" style="fill:var(--ink-2)">N ↑</text>
+  <text x="20" y="190" class="svg-lbl" style="fill:var(--c4)">▲ cume</text>
+</svg></div>
+    <p class="enun">A partir do esquema, conclui-se que</p>
+    <ol class="alt">
+      <li>a trilha 2 é a mais íngreme, pois cruza curvas de nível mais largas.</li>
+      <li>as duas trilhas têm a mesma inclinação, pois vencem o mesmo desnível.</li>
+      <li>a trilha 2 vence um desnível maior, pois seu percurso horizontal é mais longo.</li>
+      <li>a vertente oeste é a mais suave, pois nela as curvas de nível estão mais próximas umas das outras.</li>
+      <li>a trilha 1 é a mais íngreme, pois vence o mesmo desnível numa distância horizontal bem menor.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>As duas trilhas saem da curva de 100 m e chegam ao cume: o <strong>desnível é o mesmo</strong>. O que muda é a distância horizontal. A trilha 1, a oeste, atravessa curvas muito juntas — sobe o mesmo tanto num percurso curto, logo é mais íngreme.</p>
+      <p>A B esquece que inclinação é desnível <strong>dividido pela distância horizontal</strong>. A C confunde comprimento do percurso com desnível — o desnível só depende das cotas inicial e final. A D inverte a regra: curvas próximas indicam declive <strong>acentuado</strong>. A A também inverte: curvas largas e espaçadas são sinal de terreno suave.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Declividade de uma encosta</span>
+    <p class="enun">Num estudo de risco de deslizamento, um técnico analisa uma carta topográfica na escala 1 : 50 000. Dois pontos de uma encosta, situados sobre as curvas de nível de 200 m e de 600 m, estão separados por 4 cm na carta. A declividade média da encosta entre esses pontos é de</p>
+    <ol class="alt">
+      <li>0,2%.</li>
+      <li>2%.</li>
+      <li>20%.</li>
+      <li>30%.</li>
+      <li>200%.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Distância horizontal:</strong> <span class="m">4 × 50 000 = 200 000 cm = 2 000 m</span>. <strong>Desnível:</strong> <span class="m">600 − 200 = 400 m</span>.</p>
+      <p class="m">declividade = <span class="frac"><i>400</i><i>2 000</i></span> × 100% = <strong>20%</strong></p>
+      <p>A A divide 400 m por 200 000 <strong>cm</strong> — unidades diferentes. A B usa 20 km de distância, erro de conversão. A D usa a altitude do ponto mais alto (600 m) em vez do desnível. A E toma a distância como 200 m.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Direção a partir das coordenadas</span>
+    <p class="enun">Um avião agrícola decola de uma fazenda localizada em 10° S e 50° O e voa em linha reta até outra propriedade, situada em 20° S e 40° O. Em relação ao ponto de partida, o destino localiza-se a</p>
+    <ol class="alt">
+      <li>nordeste.</li>
+      <li>noroeste.</li>
+      <li>sudoeste.</li>
+      <li>sudeste.</li>
+      <li>leste.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Latitude:</strong> de 10° S para 20° S, o avião se afasta do Equador rumo ao sul. <strong>Longitude:</strong> de 50° O para 40° O, se aproxima de Greenwich — vai para leste. Sul + leste = <strong>sudeste</strong>.</p>
+      <p>A C é o erro mais comum: achar que 40° O está mais a oeste que 50° O. No hemisfério Ocidental, longitude Oeste <strong>maior</strong> significa mais a oeste. A A erra o sentido da latitude, tratando 20° S como mais ao norte. A E ignora a mudança de latitude.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo distância real e distância no mapa com a escala numérica</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico por que só a escala gráfica continua válida num mapa ampliado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico escalas em grandes e pequenas e digo para que serve cada uma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Defino latitude e longitude como ângulos e sei os limites de cada uma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Localizo Equador, Greenwich, trópicos e círculos polares e o Brasil nessa rede</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo distância aproximada ao longo de um meridiano (1° ≈ 111 km)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Descubro a direção entre dois lugares pelas coordenadas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Diferencio projeções cilíndrica, cônica e azimutal e onde cada uma distorce menos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo conforme, equivalente, equidistante e afilática</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico a Groenlândia da Mercator e a crítica da projeção de Peters</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio curvas de nível: declive, morro, depressão e vale</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Construo um perfil topográfico e calculo declividade em porcentagem</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço uma anamorfose e a diferencio de uma projeção</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de <strong>escala</strong> (cálculo e grande × pequena) e as de <strong>projeções</strong>, os dois formatos mais frequentes; inclua ao menos três com curvas de nível.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>Fusos horários e hora legal</strong>, usa diretamente a longitude: cada 15° correspondem a uma hora. Se a seção 04 está firme, ele sai rápido.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>60 cartões</strong> deste assunto no arquivo <code>ENEM-Geografia-01-cartografia.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. Este é o primeiro assunto de Geografia, então a importação cria o deck novo <code>ENEM::Geografia::Física e Ambiental</code>; os próximos assuntos do bloco se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-geo-01";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

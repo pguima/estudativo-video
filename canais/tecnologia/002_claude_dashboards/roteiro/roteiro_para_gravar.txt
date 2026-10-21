@@ -1,0 +1,37 @@
+Quantas pessoas se cadastraram esta semana, comparado com o mês passado? Numa empresa normal, essa pergunta vira um pedido para a equipe de dados, uma fila, e uma resposta que chega dias depois. E se você pudesse só perguntar, e receber um painel pronto, que ainda se atualiza sozinho?
+
+Esse é o Claude Dashboards, o novo recurso da Anthropic. Ele foi lançado em oito de outubro de dois mil e vinte e seis, em versão beta, junto com o Claude Motion, que transforma conteúdo em animações curtas.
+
+Neste vídeo: o que é o Dashboards, como ele funciona por baixo, de onde vêm os dados, como criar o seu primeiro painel, como compartilhar, e os limites que você precisa conhecer.
+
+Primeiro, o que ele é. O Dashboards é um modelo de artifact, e fica na aba Artifacts, ao lado do Docs, do Slides e do Design. Você conecta o Claude aos seus dados, faz uma pergunta em linguagem natural, e ele monta um painel com gráficos, que continua atualizado quando os dados mudam.
+
+E isso é diferente de pedir um gráfico no chat. Um gráfico comum é uma foto: mostra os números daquele momento. O painel é uma janela: ele está ligado à fonte de dados, e quando você volta amanhã, os números são os de amanhã.
+
+Por baixo, o fluxo tem três passos. Um: você conecta um banco de dados ou um aplicativo. Dois: você faz a pergunta. Três: para cada gráfico, o Claude escreve uma consulta SQL e roda essa consulta direto na sua fonte de dados. Não é chute. É o número de verdade, calculado no seu banco.
+
+E aqui está o ponto mais importante do recurso: a transparência. Cada gráfico mostra a consulta que gerou o número, e o horário da última atualização. Clicou num número e ficou em dúvida? Você abre a consulta, ou pede para o Claude explicar o que exatamente está sendo contado. Você não precisa confiar às cegas.
+
+E de onde vêm os dados? Dos principais data warehouses do mercado: Amazon Redshift, BigQuery, ClickHouse, Databricks e Snowflake. E também dos aplicativos que você já conectou ao Claude, como o Salesforce.
+
+E quando a análise precisa ir mais fundo, o painel pode ser levado para ferramentas de análise, como Grafana, Mixpanel, Amplitude, PostHog e outras. Looker, Tableau e monday.com aparecem como em breve.
+
+Agora, na prática. O primeiro exemplo é o da própria Anthropic: compare os cadastros desta semana com os do mês anterior. O Claude escreve a consulta, monta o gráfico, e mostra a variação logo de cara. Aquela pergunta que virava um pedido na fila vira uma conversa.
+
+O segundo: um painel das oportunidades de venda no Salesforce. Por exemplo: funil por etapa, valor em negociação, os maiores negócios abertos. E daí você continua a conversa: adicione um filtro por região, mostre só o último trimestre. O painel muda na sua frente.
+
+Quer criar o seu? Existem três caminhos. Pedir um painel em qualquer conversa. Clicar em Output na caixa de mensagem e escolher Dashboards. Ou abrir um modelo de Dashboards na aba Artifacts.
+
+E a dica de ouro, que vem da própria Anthropic: diga a pergunta, não o tipo de gráfico. Em vez de pedir um gráfico de barras com tal coluna, pergunte: quais produtos mais cresceram este mês? Deixe o Claude escolher a melhor forma de mostrar.
+
+Quem pode usar? O Dashboards está em beta nos planos pagos. No plano Enterprise, ele vem desligado: o administrador precisa ativar nas configurações da organização, na seção Artifacts.
+
+E dá para compartilhar o painel com a equipe, que pode inclusive editar junto com o Claude. Mas repare num detalhe de segurança: quem abre o painel usa as próprias conexões. Se a pessoa não tem acesso àquela fonte de dados, o gráfico não aparece para ela. O painel não vaza dado para quem não tem permissão.
+
+E agora, os limites. Primeiro: é beta. A experiência ainda pode mudar. Segundo: não existe uma camada semântica. Cada gráfico define a métrica na sua própria consulta. Então cliente ativo pode ter uma definição num painel e outra no painel do colega. Confira a consulta antes de levar o número para a reunião.
+
+Terceiro: o uso conta no limite do seu plano, e o processamento no data warehouse é cobrado pelo provedor, à parte. E se você trabalha com dados de saúde, atenção: o recurso não está coberto pelo acordo de conformidade de saúde da Anthropic. Deixe esses dados de fora.
+
+Resumindo: o Claude Dashboards transforma uma pergunta em um painel ao vivo. Cada gráfico é uma consulta SQL rodando direto na sua fonte, com a consulta à mostra e a hora da última atualização. Conecta aos grandes data warehouses e ao Salesforce, e respeita a permissão de cada pessoa. Só lembre: é beta, e confira a consulta.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual pergunta você faria primeiro para os seus dados? Até o próximo vídeo.

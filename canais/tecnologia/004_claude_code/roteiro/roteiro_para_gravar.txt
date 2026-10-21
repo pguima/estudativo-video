@@ -1,0 +1,39 @@
+Imagine digitar no terminal: escreva os testes do módulo de login, rode, e corrija o que falhar. E ele simplesmente faz. Lê o código, escreve os testes, roda, vê o erro e corrige. Sozinho.
+
+Esse é o Claude Code, o agente de programação da Anthropic. Ele lê o seu projeto, edita arquivos, roda comandos e se conecta às suas ferramentas de desenvolvimento.
+
+Neste vídeo: o que muda em relação ao chat, onde ele roda, como instalar, o que pedir, como ele pede permissão, e como deixar ele com a cara do seu projeto.
+
+Primeiro, a diferença. No chat, você copia o código, cola, pega a resposta e cola de volta. Você é a ponte. No Claude Code, ele trabalha dentro do projeto. Ele mesmo abre os arquivos que precisa. Você não precisa colar contexto nenhum.
+
+E ele trabalha em ciclo. Você descreve o que quer. Ele planeja o caminho. Escreve o código, em quantos arquivos forem precisos. E verifica se funciona, rodando os testes. Deu erro? Ele lê o erro e volta ao começo do ciclo.
+
+E um bastidor: os vídeos deste canal são montados com o Claude Code. O roteiro, o código de cada animação, e a renderização que junta tudo no vídeo que você está vendo agora.
+
+E onde ele roda? No terminal. No VS Code e no Cursor. Nas IDEs da JetBrains. No aplicativo para computador. No navegador. E até no celular. Todos usam o mesmo motor. Então as suas configurações funcionam em qualquer um deles.
+
+Para instalar no terminal, no Mac, no Linux ou no WSL, é um comando só. No Windows, tem a versão para o PowerShell. Depois, é entrar na pasta do projeto e digitar claude. Na primeira vez, ele pede o seu login.
+
+E precisa de conta? Precisa. Funciona com os planos Pro, Max, Team e Enterprise do Claude, ou com uma conta do Console, pagando pelo uso da API.
+
+E o que pedir primeiro? A própria documentação sugere começar perguntando. O que esse projeto faz? Onde está o ponto de entrada? Explique a estrutura de pastas. É o jeito mais rápido de entender um projeto que você nunca viu.
+
+Depois, você passa tarefas. Cole uma mensagem de erro, e ele rastreia a causa e corrige. Peça uma funcionalidade nova. Peça testes para o código que não tem. E até o Git vira conversa: faça o commit das minhas mudanças, com uma mensagem descritiva. Ele cria a branch e abre o pull request.
+
+Mas calma: ele não sai mexendo em tudo. No modo manual, ele para e pergunta antes de editar um arquivo, rodar um comando ou acessar a rede. E com Shift Tab, você troca de modo a qualquer momento.
+
+Os modos mais úteis são três. O modo plano: ele só lê e te apresenta um plano, sem mexer em nada até você aprovar. O modo que aceita edições, para quando você está revisando junto. E o modo automático, em que um segundo modelo revisa cada ação no seu lugar. Já pular todas as permissões, só dentro de um ambiente isolado.
+
+E agora, o segredo para ele trabalhar do seu jeito: o arquivo CLAUDE.md. Ele fica na raiz do projeto, e o Claude lê esse arquivo no começo de toda sessão. Ali você escreve os padrões de código, as decisões de arquitetura e as bibliotecas preferidas. E ele ainda guarda uma memória automática do que aprende trabalhando.
+
+E dá para ir além. Skills são fluxos que você empacota e reutiliza, como um comando de revisar pull request. Hooks rodam comandos antes ou depois das ações dele, como formatar o código a cada edição. E o MCP conecta ferramentas externas: Google Drive, Jira, Slack. O mesmo protocolo do REA, que você viu no primeiro vídeo do canal.
+
+E para quem quer automatizar: ele roda vários agentes em paralelo, cada um numa parte da tarefa. Roda em scripts e na integração contínua, recebendo, por exemplo, um log para analisar. E roda rotinas agendadas na nuvem, mesmo com o seu computador desligado.
+
+Três dicas oficiais para pedir bem. Seja específico. Em vez de corrigir o bug, corrija o bug em que o usuário vê uma tela em branco depois de errar a senha. Divida as tarefas grandes em passos. E deixe ele explorar primeiro, antes de mexer no código.
+
+E os cuidados. Revise o que ele muda, como revisaria o código de um colega. Trabalhe com o Git: com commits frequentes, voltar atrás é fácil. Em código sensível, prefira o modo manual. E lembre que o uso conta no limite do seu plano.
+
+Resumindo: o Claude Code é um agente que trabalha dentro do seu projeto. Ele lê, planeja, edita e verifica. Roda no terminal, nas IDEs, no aplicativo e no navegador. Pede permissão, e você escolhe o modo. E com o CLAUDE.md, ele aprende o seu jeito de programar.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual tarefa chata você entregaria primeiro para o Claude Code? Até o próximo vídeo.

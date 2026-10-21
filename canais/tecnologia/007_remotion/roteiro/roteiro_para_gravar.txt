@@ -1,0 +1,33 @@
+Imagine que você precisa de mil vídeos. Um para cada cliente, com o nome dele, e os números dele. No editor de vídeo, isso são semanas de trabalho. Agora imagine que o vídeo é código: você troca um dado, e sai um vídeo novo.
+
+Essa é a ideia do Remotion. O lema dele é: faça vídeos programando, com React. O projeto está no GitHub, com mais de sessenta e quatro mil estrelas, mais de trezentos contribuidores, e mais de cinco milhões de instalações por mês.
+
+Neste vídeo: a ideia por trás, como se anima com código, como começar e renderizar, vídeos a partir de dados, o Remotion com agentes de IA, e a licença, que tem um detalhe importante.
+
+A ideia é simples. Um vídeo é uma sequência de quadros. O Remotion te entrega o número do quadro e uma tela em branco. E você desenha essa tela com React, do mesmo jeito que monta uma página na web. Mudou o número do quadro, o desenho muda. E isso, em sequência, é a animação.
+
+Todo vídeo começa com uma composição. Ela diz a largura e a altura, por exemplo, mil novecentos e vinte por mil e oitenta. Quantos quadros por segundo: trinta. E quantos quadros no total: cento e cinquenta. Cento e cinquenta quadros, a trinta por segundo, dão cinco segundos de vídeo.
+
+E como se anima? Dentro do componente, você pega o quadro atual com o use current frame. Depois, o interpolate transforma esse número em outro: por exemplo, do quadro zero ao trinta, a opacidade vai de zero a um. Pronto: o título aparece suavemente no primeiro segundo.
+
+E tem mais ferramentas. O spring cria um movimento de mola, mais natural. A Sequence coloca cada cena no seu lugar da linha do tempo. E existem componentes prontos para texto, imagem, vídeo e áudio.
+
+Para começar, você precisa do Node ponto js instalado. Aí é um comando só: npx create video arroba latest. Ele cria o projeto a partir de um modelo. E o Remotion Studio abre no navegador, com a prévia do vídeo e a linha do tempo.
+
+E para gerar o arquivo final? No Studio, é um botão: Render. No terminal, npx remotion render. E em escala, dá para renderizar num servidor, na AWS Lambda, ou no GitHub Actions. Além de vídeo, ele exporta áudio, imagem, e até GIF.
+
+E aqui está o poder de verdade. Como o vídeo é código, ele pode ler dados. Uma planilha, uma API, um banco de dados. Lembra dos mil clientes? É um modelo só, e mil renderizações, cada uma com o nome e os números de cada cliente. Relatórios em vídeo, retrospectivas do ano, legendas automáticas: tudo isso sai assim.
+
+E agora, a parte que está bombando: agentes de IA. O Remotion mantém um pacote de Agent Skills, com as boas práticas para trabalhar em projetos Remotion. Você instala com npx skills add remotion dev barra skills. E elas servem para o Claude Code, o Codex, o Cursor e outros.
+
+O fluxo fica assim: você descreve o vídeo em português. O agente escreve o código React. Você confere no Studio, pede ajustes, e no fim, renderiza o MP4. A dica dos próprios guias: vá uma cena por vez, em vez de pedir o vídeo inteiro de uma vez.
+
+E agora, o detalhe importante: a licença. O código está aberto no GitHub, mas o Remotion não é open source tradicional. Ele é gratuito para pessoas, organizações sem fins lucrativos, e empresas de até três pessoas, inclusive com uso comercial. A partir de quatro pessoas, a empresa precisa de uma licença paga.
+
+E quanto custa? No site, o plano para criadores sai a vinte e cinco dólares por mês, por pessoa. Para automação, um centavo de dólar por renderização, com mínimo de cem dólares por mês. E uma regra que vale para todos: você não pode revender o código do Remotion como se fosse um produto seu.
+
+Antes de começar, três cuidados. Você precisa de uma noção de JavaScript e React, ou de um agente fazendo isso com você. Revise o código que a IA escreve, antes de renderizar em lote. E se for usar numa empresa, confira a licença primeiro.
+
+Resumindo: no Remotion, o vídeo é um componente React. Cada quadro é um número, e a animação é código. Com dados, um modelo vira mil vídeos. Com agentes de IA, você descreve e eles programam. E é grátis para pessoas e equipes de até três.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: que vídeo você criaria com código? Até o próximo vídeo.

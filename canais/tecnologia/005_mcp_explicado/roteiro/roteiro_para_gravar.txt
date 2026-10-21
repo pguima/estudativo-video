@@ -1,0 +1,37 @@
+Você tem três aplicativos de IA. E quer conectar cada um deles a quatro ferramentas: seus arquivos, o banco de dados, a agenda e o GitHub. Sem um padrão, são doze integrações diferentes, cada uma do seu jeito. Com um padrão, são só sete peças, e todas falam a mesma língua.
+
+Esse padrão é o MCP, o Model Context Protocol. Um padrão aberto para conectar aplicativos de IA a sistemas externos. Ele foi criado e aberto pela Anthropic em novembro de dois mil e vinte e quatro.
+
+Neste vídeo: a ideia por trás do MCP, as três peças da arquitetura, o que um servidor oferece, como a conversa acontece por dentro, como usar na prática, e os cuidados de segurança.
+
+A própria documentação usa uma comparação. Pense no MCP como uma porta USB-C para aplicativos de IA. O USB-C padronizou como os aparelhos se conectam. O MCP padroniza como a IA se conecta a dados, a ferramentas e a fluxos de trabalho.
+
+E é por isso que a conta muda. Sem padrão, cada aplicativo precisa de uma integração para cada ferramenta: multiplica. Com o MCP, cada ferramenta vira um servidor, e cada aplicativo aprende a falar MCP uma vez só: soma. Construa uma vez, integre em todo lugar.
+
+E o que isso permite? A documentação dá exemplos. Um assistente que acessa a sua agenda do Google e o seu Notion. O Claude Code criando um aplicativo web inteiro a partir de um design do Figma. Um chat da empresa ligado a vários bancos de dados. E até uma IA criando um modelo no Blender e mandando para a impressora 3D.
+
+Agora, a arquitetura. São três peças. O host é o aplicativo de IA: o Claude Code, o Claude Desktop, o VS Code. O servidor é o programa que oferece as ferramentas e os dados. E o cliente é a ponte: o host cria um cliente para cada servidor, cada um com a sua conexão dedicada.
+
+E o servidor pode estar em dois lugares. Local, na sua máquina, conversando direto com o aplicativo, pelo transporte chamado stdio. Ou remoto, na internet, pelo transporte HTTP, com autenticação, de preferência pelo OAuth, aquele login que abre no navegador.
+
+E o que um servidor oferece? Três coisas, que o MCP chama de primitivos. Tools, ferramentas: funções que a IA pode executar, como consultar um banco ou chamar uma API. Resources, recursos: dados para dar contexto, como o conteúdo de um arquivo. E prompts: modelos prontos para estruturar a conversa.
+
+Um exemplo da documentação: um servidor de banco de dados. Ele oferece tools para fazer consultas, um resource com o esquema das tabelas, e um prompt com exemplos de como usar as ferramentas.
+
+E como a conversa acontece por dentro? As mensagens seguem o formato JSON-RPC. Primeiro, o cliente pergunta: quais ferramentas você tem? É o tools list. O servidor responde com a lista, o nome, a descrição e os parâmetros de cada uma. Depois, o cliente chama uma delas: por exemplo, o clima em São Francisco. E recebe o resultado.
+
+E onde entra a IA nisso? O aplicativo junta as ferramentas de todos os servidores e mostra para o modelo. Quando o modelo decide usar uma, o aplicativo encaminha o pedido para o servidor certo, e devolve o resultado para o modelo continuar a resposta.
+
+E tem mais dois detalhes. O servidor pode avisar quando a lista de ferramentas muda, sem o cliente precisar ficar perguntando. E o servidor também pode pedir uma informação ou uma confirmação ao usuário, antes de agir.
+
+E quem fala MCP? O Claude. O ChatGPT. O VS Code. O Cursor. E muitos outros. Por isso, quem cria um servidor alcança todos esses aplicativos de uma vez.
+
+Na prática, no Claude Code, adicionar um servidor remoto é um comando. Por exemplo, o do Notion. Depois, o comando barra MCP faz o login e mostra o status de cada servidor. E você escolhe o alcance: só você neste projeto, a equipe toda do projeto, ou você em todos os projetos.
+
+E você já viu o MCP neste canal. O REA, do primeiro vídeo, é um servidor MCP de engenharia reversa. E o Claude Code, do quarto vídeo, é um host. Liga um no outro, e o agente ganha um poder novo.
+
+E agora, o cuidado mais importante. Um servidor MCP age em seu nome. Então, só conecte servidores em que você confia. E atenção aos que buscam conteúdo externo, como páginas da web: um texto malicioso pode tentar dar ordens à IA. Isso se chama injeção de prompt. Por isso o Claude Code pede a sua aprovação antes de usar os servidores de um projeto.
+
+Resumindo: o MCP é o USB-C da IA: um padrão aberto para conectar aplicativos a dados e ferramentas. Host, cliente e servidor. Tools, resources e prompts. Construa uma vez, integre em todo lugar. E só conecte o que você confia.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual ferramenta você conectaria primeiro à sua IA? Até o próximo vídeo.

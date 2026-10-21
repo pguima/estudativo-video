@@ -1,0 +1,1227 @@
+<title>Compreensão Global e Tese</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Linguagens. As cores semânticas das caixas
+   permanecem idênticas às demais páginas; só o cabeçalho muda. */
+:root{ --area:#7A2E6E }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#E39AD6 } }
+:root[data-theme="dark"]{ --area:#E39AD6 }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+.tb{ margin:12px 0; padding:10px 14px; border-left:3px solid var(--area); background:var(--surface); font-size:.95rem }
+.tb .fonte{ display:block; margin-top:6px; font-size:.8rem; color:var(--ink-3) }
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Linguagens</b> › Interpretação e Análise de Texto › Assunto 1 de 16</p>
+        <h1>Compreensão global e identificação da tese</h1>
+        <p class="deck">Quase toda questão de Linguagens começa com um texto e termina perguntando, de um jeito ou de outro, o que ele diz como um todo. Quem separa assunto de tese e reconhece as alternativas que dizem “quase isso” resolve boa parte da prova — e leva a mesma habilidade para Humanas, Natureza e a Redação.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Funil de três níveis que se estreitam: no topo, o tema, educação e tecnologia; abaixo, o assunto, celular na sala de aula; depois, a tese, o que se afirma sobre o assunto. Na base, um exemplo de tese em uma frase: proibir o celular não ensina a usá-lo">
+  <rect x="10" y="8" width="280" height="38" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="150" y="24" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">TEMA</text>
+  <text x="150" y="38" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">educação e tecnologia</text>
+  <line x1="150" y1="48" x2="150" y2="54" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="150,60 146.5,53 153.5,53" style="fill:var(--ink-3)"/>
+  <rect x="40" y="62" width="220" height="38" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="150" y="78" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">ASSUNTO</text>
+  <text x="150" y="92" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">celular na sala de aula</text>
+  <line x1="150" y1="102" x2="150" y2="108" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="150,114 146.5,107 153.5,107" style="fill:var(--ink-3)"/>
+  <rect x="60" y="116" width="180" height="38" rx="4" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4"/>
+  <text x="150" y="132" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:700">TESE</text>
+  <text x="150" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">a afirmação sobre ele</text>
+  <line x1="150" y1="156" x2="150" y2="162" style="stroke:var(--c4);stroke-width:1.6"/><polygon points="150,168 146.5,161 153.5,161" style="fill:var(--c4)"/>
+  <rect x="8" y="170" width="284" height="30" rx="4" style="fill:var(--surface);stroke:var(--c4);stroke-width:1.6"/>
+  <text x="150" y="189" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:700">“Proibir o celular não ensina a usá-lo.”</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Nenhum — é o ponto de partida do bloco</dd></div>
+      <div><dt>Destrava</dt><dd>Informações explícitas e implícitas · Estrutura argumentativa · Redação</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Em Linguagens, a maior parte das questões traz um texto — artigo, crônica, anúncio, trecho de livro, post — e uma pergunta sobre ele. Antes de cobrar gramática ou literatura, a prova mede se você entende <strong>o que o texto, como um todo, está dizendo</strong> e se não se deixa levar por alternativas que dizem quase isso.</p>
+<p>Os formatos que a prova usa:</p>
+<ul>
+  <li><strong>Comando direto</strong>: “a tese defendida é”, “a ideia central do texto é”, “o autor argumenta que”.</li>
+  <li><strong>Resumo</strong>: “o texto pode ser sintetizado como” — escolher a frase que cobre o todo.</li>
+  <li><strong>Título</strong>: a relação entre o título e o conteúdo.</li>
+  <li><strong>Organização</strong>: a função de um parágrafo, onde está a conclusão, como o texto chega à tese.</li>
+  <li><strong>Tese implícita</strong>: crônicas, textos irônicos e charges, em que ninguém escreve “eu defendo que”.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três hábitos. Distinguir <strong>assunto</strong> (sobre o que o texto fala) de <strong>tese</strong> (o que ele afirma sobre isso) — seção 02. Formular a tese <strong>com suas palavras antes de ler as alternativas</strong> — seção 09. E reconhecer os <strong>distratores clássicos</strong>: redução, extrapolação, contradição e tema certo com tese errada — seção 08.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Tema, assunto e tese</h2>
+<div class="box def">
+  <span class="tag">Os três níveis</span>
+  <p><strong>Tema</strong> — o campo amplo em que o texto se insere: educação, cidade, consumo, trabalho.</p>
+  <p><strong>Assunto</strong> — o recorte específico de que o texto trata: o uso do celular em sala de aula, as feiras livres, as roupas muito baratas.</p>
+  <p><strong>Tese</strong> — o que o texto <strong>afirma</strong> sobre o assunto. É uma frase com verbo e com posição: alguém poderia discordar dela.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Tema</th><th>Assunto</th><th>Tese</th></tr></thead>
+  <tbody>
+    <tr><td>educação</td><td>celular na sala de aula</td><td>“A escola deve ensinar a usar o celular, não só proibi-lo.”</td></tr>
+    <tr><td>cidade</td><td>feiras livres</td><td>“A feira deve continuar na rua, porque é espaço de encontro e de venda direta.”</td></tr>
+    <tr><td>consumo</td><td>roupas muito baratas</td><td>“O preço baixo esconde custos pagos por quem não estava na loja.”</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">O teste da discordância</span>
+  <p>Assunto cabe na etiqueta de uma pasta: “celular na escola”. Tese precisa de verbo e de posição: “o celular deve ser ensinado, não só proibido”. <strong>Se a sua resposta não admite discordância, você encontrou o assunto, não a tese.</strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Mesmo assunto, teses opostas</span>
+  <p>Dois artigos sobre celular na escola podem defender coisas contrárias: um, a proibição total; outro, o uso orientado. É por isso que a prova consegue montar uma alternativa errada usando todas as palavras-chave do texto — ela acerta o assunto e erra a tese (seção 08).</p>
+</div>
+
+<div class="box def">
+  <span class="tag">A nomenclatura varia — a adotada aqui</span>
+  <p>Muitos livros, e a própria proposta da Redação do ENEM, chamam de <strong>tema</strong> o recorte específico (“os desafios para…”), sem separar tema e assunto. Nesta série usamos os três níveis do quadro acima. O que importa na prova é não confundir <strong>sobre o que</strong> o texto fala com <strong>o que</strong> ele diz.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Ideia central e ideias secundárias</h2>
+<p>Um texto bem construído tem <strong>hierarquia</strong>: uma ideia organiza as demais, e as outras a sustentam, explicam ou ilustram. Num texto argumentativo, a ideia central é a <strong>tese</strong>. Num texto expositivo, como um verbete ou uma notícia, é a <strong>informação principal</strong>. Numa narrativa, é o <strong>sentido</strong> que o conjunto dos fatos constrói.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 246" role="img" aria-label="Mapa hierárquico de um texto argumentativo. No alto, a tese: a escola deve ensinar a usar o celular, não só proibi-lo. Dela saem três argumentos: o celular faz parte da vida dos estudantes; proibir não gera autocontrole; o aparelho pode servir como ferramenta de aula. Abaixo de cada argumento, um exemplo: fora da escola ninguém proíbe; o aluno usa às escondidas; aula de checagem de notícias falsas. Nota: apagar um exemplo não derruba a tese; apagar a tese deixa tudo solto">
+  <text x="12" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">MAPA DE UM TEXTO ARGUMENTATIVO</text>
+  <rect x="12" y="24" width="436" height="34" rx="4" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4"/>
+  <text x="230" y="45" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">A escola deve ensinar a usar o celular, não só proibi-lo.</text>
+  <text x="18" y="70" class="svg-lbl" style="fill:var(--c4);font-weight:700">tese</text>
+  <line x1="230" y1="58" x2="80" y2="86" style="stroke:var(--c4);stroke-width:1.4"/>
+  <rect x="12" y="86" width="136" height="54" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="80" y="103" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">ARGUMENTO 1</text>
+  <text x="80" y="117" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">faz parte da vida</text>
+  <text x="80" y="131" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">dos estudantes</text>
+  <line x1="80" y1="140" x2="80" y2="162" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <rect x="12" y="162" width="136" height="54" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <text x="80" y="179" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">EXEMPLO</text>
+  <text x="80" y="193" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">fora da escola,</text>
+  <text x="80" y="207" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">ninguém proíbe</text>
+  <line x1="230" y1="58" x2="230" y2="86" style="stroke:var(--c4);stroke-width:1.4"/>
+  <rect x="162" y="86" width="136" height="54" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="230" y="103" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">ARGUMENTO 2</text>
+  <text x="230" y="117" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">proibir não gera</text>
+  <text x="230" y="131" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">autocontrole</text>
+  <line x1="230" y1="140" x2="230" y2="162" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <rect x="162" y="162" width="136" height="54" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <text x="230" y="179" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">EXEMPLO</text>
+  <text x="230" y="193" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">o aluno usa</text>
+  <text x="230" y="207" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">às escondidas</text>
+  <line x1="230" y1="58" x2="380" y2="86" style="stroke:var(--c4);stroke-width:1.4"/>
+  <rect x="312" y="86" width="136" height="54" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="380" y="103" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">ARGUMENTO 3</text>
+  <text x="380" y="117" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">pode servir como</text>
+  <text x="380" y="131" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">ferramenta de aula</text>
+  <line x1="380" y1="140" x2="380" y2="162" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <rect x="312" y="162" width="136" height="54" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <text x="380" y="179" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">EXEMPLO</text>
+  <text x="380" y="193" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">aula de checagem</text>
+  <text x="380" y="207" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">de notícias falsas</text>
+  <text x="230" y="238" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">sem um exemplo, a tese se mantém · sem a tese, tudo fica solto</text>
+</svg>
+<figcaption><b>A tese fica no alto; argumentos e exemplos estão abaixo dela, a seu serviço.</b> Cada argumento responde “por que acreditar na tese?”, e cada exemplo responde “onde isso se vê?”. Se um exemplo for apagado, o texto fica mais fraco, mas continua de pé; se a tese for apagada, argumentos e exemplos perdem a direção. Esse é o critério para separar o central do secundário.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">Ideias secundárias</span>
+  <p>Argumentos, exemplos, dados, comparações, citações, relatos e concessões (“é verdade que…, mas…”). Estão no texto <strong>para sustentar</strong> a ideia central, não para substituí-la.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O teste do apagamento</span>
+  <p>Apague mentalmente uma frase. Se o texto <strong>perde o rumo</strong>, ela é central; se perde só um <strong>apoio</strong>, é secundária. Funciona também com parágrafos inteiros.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">A frase mais marcante nem sempre é a central</span>
+  <p>Um dado impressionante, uma história comovente, uma frase de efeito chamam atenção — e por isso a prova gosta de oferecê-los como se fossem a ideia central. Quase sempre são <strong>apoio</strong>. Escolhê-los é cair na <strong>redução</strong>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Onde a tese costuma estar</h2>
+<p>Não há lugar obrigatório, mas há padrões — e conhecê-los economiza tempo de leitura.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 234" role="img" aria-label="Três textos esquemáticos de quatro parágrafos, desenhados como barras. No texto dedutivo, a primeira linha do primeiro parágrafo está destacada como tese e a do último parágrafo, tracejada, como retomada; é comum em artigo de opinião, editorial e redação. No indutivo, os três primeiros parágrafos trazem casos e o último parágrafo inteiro está destacado como tese; é comum em crônica argumentativa. No de tese implícita nenhuma linha está destacada, e uma chave abrange o texto inteiro: a tese é o todo; é comum em crônica irônica, charge e poema">
+  <text x="14" y="18" class="svg-ttl" style="fill:var(--c4)">DEDUTIVO</text>
+  <text x="14" y="32" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">tese no início</text>
+  <rect x="14" y="45" width="90" height="7" rx="1" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4"/>
+  <rect x="14" y="56" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="66" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="85" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="95" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="105" width="72" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="124" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="134" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="144" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="162" width="90" height="7" rx="1" style="fill:none;stroke:var(--c4);stroke-width:1.4;stroke-dasharray:3 2"/>
+  <rect x="14" y="173" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="14" y="183" width="72" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <text x="109" y="52" class="svg-lbl" style="fill:var(--c4);font-weight:700">tese</text>
+  <text x="109" y="169" class="svg-lbl" style="fill:var(--c4);font-size:10px">retoma</text>
+  <text x="172" y="18" class="svg-ttl" style="fill:var(--c3)">INDUTIVO</text>
+  <text x="172" y="32" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">casos → conclusão</text>
+  <rect x="172" y="46" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="56" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="66" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="85" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="95" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="105" width="72" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="124" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="134" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="144" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="172" y="162" width="90" height="7" rx="1" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="172" y="172" width="90" height="7" rx="1" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="172" y="182" width="72" height="7" rx="1" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="267" y="179" class="svg-lbl" style="fill:var(--c3);font-weight:700">tese</text>
+  <text x="320" y="18" class="svg-ttl" style="fill:var(--c5)">IMPLÍCITA</text>
+  <text x="320" y="32" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">nenhuma frase a diz</text>
+  <rect x="320" y="46" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="56" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="66" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="85" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="95" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="105" width="72" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="124" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="134" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="144" width="58" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="163" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="173" width="90" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <rect x="320" y="183" width="72" height="5" style="fill:var(--rule-2);stroke:none"/>
+  <path d="M412 46 L418 46 L418 188" style="fill:none;stroke:var(--c5);stroke-width:1.6"/>
+  <path d="M418 188 L412 188" style="fill:none;stroke:var(--c5);stroke-width:1.6"/>
+  <line x1="418" y1="117" x2="426" y2="117" style="stroke:var(--c5);stroke-width:1.6"/>
+  <text x="429" y="114" class="svg-lbl" style="fill:var(--c5);font-weight:700">tese</text>
+  <text x="429" y="127" class="svg-lbl" style="fill:var(--c5);font-size:10px">= o</text>
+  <text x="429" y="138" class="svg-lbl" style="fill:var(--c5);font-size:10px">todo</text>
+  <text x="14" y="214" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">artigo de opinião,</text>
+  <text x="14" y="226" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">editorial, redação</text>
+  <text x="172" y="214" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">crônica argumentativa,</text>
+  <text x="172" y="226" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">texto que conduz</text>
+  <text x="320" y="214" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">crônica irônica,</text>
+  <text x="320" y="226" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">charge, poema</text>
+  <line x1="158" y1="10" x2="158" y2="230" style="stroke:var(--rule-2);stroke-width:1"/>
+  <line x1="306" y1="10" x2="306" y2="230" style="stroke:var(--rule-2);stroke-width:1"/>
+</svg>
+<figcaption><b>A posição da tese depende do caminho que o texto escolhe.</b> No dedutivo, a tese vem primeiro e o resto a sustenta; a conclusão costuma retomá-la com outras palavras. No indutivo, o texto apresenta casos e só no fim tira deles a conclusão geral. No de tese implícita, nenhuma frase isolada a enuncia: ela é o sentido construído pelo conjunto — pela seleção dos fatos, pelo tom, pelo contraste.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Organização</th><th>Onde está a tese</th><th>Onde é comum</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Dedutiva</strong></td><td>no início, em geral no 1º parágrafo, e retomada na conclusão</td><td>artigo de opinião, editorial, redação do ENEM</td></tr>
+    <tr><td><strong>Indutiva</strong></td><td>no fim, depois de casos e exemplos</td><td>crônica argumentativa, carta, texto que “constrói” a conclusão</td></tr>
+    <tr><td><strong>Implícita</strong></td><td>em nenhuma frase isolada; o leitor a reconstrói</td><td>crônica irônica, charge, tirinha, poema, muitos anúncios</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">A primeira frase pode ser a opinião que o autor vai derrubar</span>
+  <p>Muitos textos abrem com a voz de outros — “Há quem diga que…”, “Muita gente acredita que…”, “Diz-se que…” — para depois refutá-la. Quem marca essa frase como tese cai numa <strong>contradição</strong>. Leia até o primeiro <strong>mas</strong>, <strong>porém</strong>, <strong>engano</strong>, <strong>não é bem assim</strong>.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Tese explícita e tese implícita</span>
+  <p><strong>Explícita</strong>: está escrita, em uma ou duas frases identificáveis. <strong>Implícita</strong>: não está escrita e precisa ser inferida do conjunto. Implícita não quer dizer livre: a tese reconstruída tem de ser <strong>autorizada pelo texto</strong> — o limite entre inferir e extrapolar é o assunto dos dois próximos tópicos.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Pistas: título, paragrafação e marcadores</h2>
+<h3>O título</h3>
+<p>O título pode anunciar só o <strong>assunto</strong> (“Feiras livres”) ou já <strong>antecipar a tese</strong> (“O barato que sai caro”). No segundo caso, ele é a melhor pista que você tem antes de ler.</p>
+<div class="box warn">
+  <span class="tag">Título de efeito engana</span>
+  <p>Títulos irônicos, perguntas (“O fim do livro?”) e trocadilhos podem dizer o contrário do que o texto defende. Use o título como hipótese e <strong>confirme no corpo do texto</strong>.</p>
+</div>
+
+<h3>A paragrafação</h3>
+<p>Cada parágrafo costuma desenvolver <strong>um tópico</strong>, muitas vezes anunciado na primeira frase — o <strong>tópico frasal</strong>. Num texto argumentativo típico, o primeiro parágrafo apresenta assunto e tese, os do meio desenvolvem argumentos e o último retoma a tese ou propõe algo. Perguntar “para que serve este parágrafo?” é o caminho para as questões de organização do texto.</p>
+
+<h3>As marcas linguísticas</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Função</th><th>Marcas que costumam acompanhar a tese</th></tr></thead>
+  <tbody>
+    <tr><td>conclusão</td><td>portanto, assim, logo, por isso, em suma, afinal</td></tr>
+    <tr><td>virada para a posição do autor</td><td>mas, porém, no entanto, engano, ao contrário do que se pensa</td></tr>
+    <tr><td>avaliação e necessidade</td><td>é preciso, deveria, é fundamental, é um erro, é inaceitável</td></tr>
+    <tr><td>posição pessoal</td><td>defendo, acredito, parece-me, sem dúvida</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">A palavra que volta</span>
+  <p>A palavra — ou a família de palavras — que reaparece em quase todos os parágrafos costuma indicar o <strong>assunto</strong>. O que o texto afirma sobre ela com mais força, geralmente perto de uma das marcas acima, indica a <strong>tese</strong>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Quando a tese está implícita</h2>
+<p>Crônicas, textos irônicos, charges, poemas e anúncios raramente dizem “eu defendo que”. O ponto de vista aparece na <strong>seleção</strong> do que é mostrado, no <strong>contraste</strong> entre elementos e no <strong>tom</strong>.</p>
+
+<div class="eq">
+  <span class="lbl">Um exemplo sem nenhuma frase de opinião</span>
+  <div class="tb">Na sala de espera do posto de saúde, a televisão anunciava um aplicativo para marcar consultas “em segundos”. Dona Lurdes, que chegara às cinco da manhã para pegar senha, assistiu ao anúncio inteiro. Às onze, foi chamada.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+  <p>Nenhuma frase opina. Mas o texto põe lado a lado a promessa de “segundos” e as seis horas de espera real. A tese implícita é algo como: <strong>a modernização anunciada está longe da experiência de quem de fato usa o serviço</strong>. Ir além disso — “o texto defende o fim dos aplicativos”, “o posto é mal administrado” — já seria extrapolar.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Três perguntas para reconstruir a tese implícita</span>
+  <ol>
+    <li>O que o texto <strong>escolheu mostrar</strong> — e o que deixou de fora?</li>
+    <li>Há <strong>contraste</strong> ou <strong>exagero</strong>? Entre o quê e o quê?</li>
+    <li>Quem ou o que sai <strong>criticado</strong> ou <strong>valorizado</strong> no fim?</li>
+  </ol>
+</div>
+
+<div class="box warn">
+  <span class="tag">Ironia lida ao pé da letra vira contradição</span>
+  <p>O texto irônico diz uma coisa para significar outra — em geral, elogia para criticar. Alternativas que repetem o <strong>sentido literal</strong> de um texto irônico são armadilha frequente. Ironia e humor são aprofundados no assunto 15.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> O resumo em uma frase</h2>
+<p>Se você consegue dizer o texto em uma frase, entendeu o todo. É o melhor treino para as questões de ideia central — e o que você deve fazer, de cabeça, antes de olhar as alternativas.</p>
+
+<div class="box def">
+  <span class="tag">A fórmula</span>
+  <p class="m" style="font-size:1.02rem"><strong>assunto + o que o texto afirma sobre ele + o principal porquê (ou a proposta)</strong></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Três resumos para o mesmo parágrafo</span>
+  <div class="tb">Hortas em terrenos baldios costumam ser lembradas pela alface que produzem, mas o que elas cultivam de mais valioso é outra coisa. O terreno que juntava entulho passa a ter dono coletivo; vizinhos que não se cumprimentavam dividem ferramentas e turnos de rega; crianças aprendem de onde vem a comida. A colheita é o pretexto — o fruto é a vizinhança.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Resumo proposto</th><th>Diagnóstico</th></tr></thead>
+    <tbody>
+      <tr><td>“Hortas comunitárias produzem alface.”</td><td><strong>redução</strong> — fica justamente com o aspecto que o texto diz ser secundário</td></tr>
+      <tr><td>“Todo terreno baldio deveria virar horta por lei.”</td><td><strong>extrapolação</strong> — o texto não fala em lei nem em “todo”</td></tr>
+      <tr><td>“Hortas comunitárias valem menos pelo alimento que produzem do que pelos laços de convivência que criam.”</td><td><strong>fiel</strong> — assunto, afirmação e porquê</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="box tip">
+  <span class="tag">Resumo não é cópia</span>
+  <p>Evite colar a frase mais bonita do texto. Reescreva. Se o resumo só sai copiando, talvez você ainda não tenha encontrado o eixo — e, nas alternativas, a cópia literal de um trecho é muitas vezes a <strong>redução</strong>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Resumo não opina</span>
+  <p>O resumo diz o que o <strong>texto</strong> defende, não o que você pensa dele. “O autor tem razão ao…” já é outra tarefa — e outra pergunta.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Os distratores clássicos do ENEM</h2>
+<p>As alternativas erradas de interpretação não são aleatórias: quase todas seguem poucos moldes. Reconhecer o molde é mais rápido do que discutir cada frase.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 206" role="img" aria-label="Esquema dos distratores. Uma faixa larga representa o assunto do texto; dentro dela, uma faixa central tracejada representa o que o texto afirma, a tese e suas ideias. A alternativa correta cobre exatamente a faixa central. A redução ocupa só um pedaço dela. A extrapolação começa dentro e passa da borda. A contradição está no lugar certo, mas diz o oposto. A de tema certo e tese errada fica no mesmo assunto, mas fora do que o texto afirma">
+  <rect x="140" y="40" width="310" height="156" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1"/>
+  <rect x="222" y="40" width="146" height="156" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4;stroke-dasharray:5 3"/>
+  <text x="144" y="32" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">mesmo assunto</text>
+  <text x="295" y="18" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">O QUE O TEXTO AFIRMA</text>
+  <text x="295" y="32" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">(tese + ideias)</text>
+  <text x="10" y="66" class="svg-lbl" style="fill:var(--c3);font-weight:700">correta</text>
+  <rect x="226" y="54" width="138" height="16" rx="3" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="295" y="66" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700;font-size:10px">cobre o todo</text>
+  <text x="10" y="96" class="svg-lbl" style="fill:var(--c2);font-weight:700">redução</text>
+  <rect x="232" y="84" width="52" height="16" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="10" y="126" class="svg-lbl" style="fill:var(--c5);font-weight:700">extrapolação</text>
+  <rect x="298" y="114" width="146" height="16" rx="3" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="10" y="156" class="svg-lbl" style="fill:var(--c4);font-weight:700">contradição</text>
+  <rect x="232" y="144" width="126" height="16" rx="3" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <text x="295" y="156" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:700;font-size:10px">diz o oposto</text>
+  <text x="10" y="180" class="svg-lbl" style="fill:var(--c1);font-weight:700">tema certo,</text>
+  <text x="10" y="192" class="svg-lbl" style="fill:var(--c1);font-weight:700">tese errada</text>
+  <rect x="148" y="174" width="64" height="16" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+</svg>
+<figcaption><b>A resposta certa cobre o que o texto afirma — nem menos, nem mais, nem o contrário.</b> A redução fica dentro, mas pega só um pedaço; a extrapolação começa no texto e passa da borda; a contradição está no lugar certo, com o sinal trocado; e a de tema certo com tese errada usa o mesmo assunto para afirmar outra coisa. Tudo o que está fora da faixa central, por mais verdadeiro que seja no mundo, não é resposta.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Distrator</th><th>O que faz</th><th>Como reconhecer</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Redução</strong></td><td>toma uma parte — um exemplo, um dado, um argumento — pelo todo</td><td>é verdadeira, mas corresponde a um só trecho</td></tr>
+    <tr><td><strong>Extrapolação</strong></td><td>vai além do que o texto autoriza: generaliza, acrescenta causa, proposta ou consequência</td><td>“sempre”, “todos”, “principalmente”, “deve-se” sem apoio no texto</td></tr>
+    <tr><td><strong>Contradição</strong></td><td>afirma o oposto do texto — às vezes, a opinião que o autor refuta</td><td>confronte com as frases de “mas”, “porém”, “engano”</td></tr>
+    <tr><td><strong>Tema certo, tese errada</strong></td><td>fala do mesmo assunto, mas defende outra posição</td><td>as palavras-chave do texto com outro verbo</td></tr>
+    <tr><td><strong>Verdade do mundo</strong></td><td>traz informação correta fora da prova, mas ausente no texto</td><td>pergunte: “em que linha isso está?”</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Três perguntas que eliminam</span>
+  <p>Para cada alternativa: <strong>o texto diz isso?</strong> (contradição, verdade do mundo) — <strong>diz só isso?</strong> (redução) — <strong>diz isso tudo?</strong> (extrapolação).</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Uma palavra estraga a alternativa</span>
+  <p>A alternativa mais longa e completa pode trazer um acréscimo indevido no final — “…e, por isso, deve ser proibido”, “…principalmente por causa de…”. Leia a alternativa até o fim: basta um trecho sem apoio no texto para ela estar errada.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">Seis passos para questões de compreensão global</span>
+  <ol>
+    <li><strong>Leia o comando primeiro.</strong> Ele pede tese, assunto, resumo, função de um trecho? Isso diz o que procurar.</li>
+    <li><strong>Olhe título, fonte e data.</strong> O gênero e o veículo indicam se há tese a defender ou informação a transmitir.</li>
+    <li><strong>Leia o texto inteiro</strong>, marcando as viradas (mas, porém) e as conclusões (portanto, assim).</li>
+    <li><strong>Formule a tese com suas palavras antes de ler as alternativas.</strong> Uma frase, pela fórmula da seção 07.</li>
+    <li><strong>Elimine pelo tipo de erro</strong>: contradições primeiro (as mais fáceis), depois extrapolações, depois reduções.</li>
+    <li><strong>Entre as duas finalistas</strong>, volte ao texto e procure a palavra que decide.</li>
+  </ol>
+</div>
+
+<div class="box warn">
+  <span class="tag">Não responda com a sua opinião</span>
+  <p>A pergunta é o que o texto defende. Uma alternativa com a qual você concorda — ou que é verdadeira no mundo — pode estar errada só porque o texto não a diz. O inverso também vale: a resposta certa pode ser uma tese da qual você discorda.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Ler o comando com precisão</span>
+  <p>“De acordo com o texto” pede o que está escrito ou claramente autorizado. “Infere-se” pede uma conclusão que o texto permite tirar. “O autor defende” pede a tese. “O texto tem como objetivo” pede a finalidade — assunto 04. Comandos diferentes, respostas diferentes para o mesmo texto.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="box def">
+  <span class="tag">A mesma habilidade em toda a prova</span>
+  <p><strong>Ciências Humanas</strong>: trechos de historiadores, geógrafos, sociólogos e filósofos, com comandos como “segundo o autor” ou “o texto critica”. A tese está lá; o conteúdo da disciplina só ajuda a reconhecê-la.</p>
+  <p><strong>Ciências da Natureza</strong>: textos de divulgação científica, em que a ideia central é a informação principal. O distrator preferido é a extrapolação — o texto fala de uma relação observada; a alternativa afirma que uma coisa <strong>causa</strong> a outra.</p>
+  <p><strong>Redação</strong>: o texto dissertativo-argumentativo exige tese explícita, sustentada por argumentos. O que você aprende a encontrar aqui é o que vai precisar escrever — a estrutura completa está no assunto 13, <strong>Estrutura argumentativa</strong>.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Treino com o material desta série</span>
+  <p>As páginas de Geografia e de Física são textos expositivos. Escolha uma seção qualquer e tente resumi-la em uma frase pela fórmula da seção 07; depois compare com a caixa “O que rende mais aqui” daquela página.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Responder com o assunto quando se pede a tese</span> &nbsp;→&nbsp; <span class="c">tese tem verbo e posição</span></span><small>“Celular na escola” é assunto; “deve ser ensinado, não só proibido” é tese.</small></li>
+  <li><span><span class="x">Escolher o exemplo mais marcante</span> &nbsp;→&nbsp; <span class="c">exemplo é apoio, não ideia central</span></span><small>É o distrator de redução.</small></li>
+  <li><span><span class="x">Tomar a primeira frase como tese</span> &nbsp;→&nbsp; <span class="c">ela pode ser a opinião que o autor refuta</span></span><small>Leia até o primeiro “mas”.</small></li>
+  <li><span><span class="x">Aceitar alternativa com “sempre”, “todos”, “deve-se”</span> &nbsp;→&nbsp; <span class="c">confira se o texto vai tão longe</span></span><small>É o distrator de extrapolação.</small></li>
+  <li><span><span class="x">Ficar com a alternativa que tem as palavras do texto</span> &nbsp;→&nbsp; <span class="c">confira o que se afirma com elas</span></span><small>Tema certo, tese errada.</small></li>
+  <li><span><span class="x">Marcar o que é verdade no mundo</span> &nbsp;→&nbsp; <span class="c">só vale o que o texto diz ou autoriza</span></span><small>“Em que linha isso está?”</small></li>
+  <li><span><span class="x">Ler a ironia ao pé da letra</span> &nbsp;→&nbsp; <span class="c">o elogio irônico é crítica</span></span><small>O sentido literal vira contradição.</small></li>
+  <li><span><span class="x">Concluir que texto sem frase de opinião não tem tese</span> &nbsp;→&nbsp; <span class="c">a tese pode ser implícita</span></span><small>Seleção, contraste e tom constroem o ponto de vista.</small></li>
+  <li><span><span class="x">Ler as alternativas antes de ter a sua tese</span> &nbsp;→&nbsp; <span class="c">formule primeiro, compare depois</span></span><small>Sem hipótese própria, todas parecem plausíveis.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Todos os textos-base foram elaborados para esta página.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · A tese de um artigo</span>
+    <div class="tb">Bibliotecas de bairro não são depósitos de livros velhos. Num tempo em que quase tudo se lê na tela, elas continuam sendo um dos poucos lugares públicos onde se pode passar a tarde sem pagar nada e sem que ninguém pergunte o que você vai consumir. Quem estuda para concurso encontra ali silêncio; quem não tem internet em casa, conexão; o aposentado, jornal e conversa. Fechar uma biblioteca para economizar parece racional na planilha, mas apaga um espaço de convivência que nenhum aplicativo substitui. Antes de cortar, as prefeituras deveriam contar quantas pessoas entram por aquela porta.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">A tese defendida no texto é a de que</p>
+    <ol class="alt">
+      <li>as bibliotecas de bairro deveriam ser substituídas por aplicativos de leitura, mais baratos.</li>
+      <li>a leitura em tela reduziu o interesse da população pelos livros impressos.</li>
+      <li>as bibliotecas de bairro têm valor como espaço público de convivência, e por isso fechá-las para economizar é um erro.</li>
+      <li>estudantes que se preparam para concursos precisam de silêncio para estudar.</li>
+      <li>as prefeituras gastam demais com cultura e deveriam rever seus orçamentos.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A frase-eixo é a do “mas”: fechar a biblioteca “parece racional na planilha, <strong>mas</strong> apaga um espaço de convivência que nenhum aplicativo substitui”. Os exemplos — o concurseiro, quem não tem internet, o aposentado — sustentam essa tese.</p>
+      <p>A A <strong>contradiz</strong> o texto, que diz que nenhum aplicativo substitui a biblioteca. A B <strong>extrapola</strong>: o texto menciona que “quase tudo se lê na tela”, mas não afirma queda de interesse pelos impressos. A D é <strong>redução</strong>: um dos exemplos tomado pelo todo. A E tem o <strong>assunto certo e a tese errada</strong>: o texto pede às prefeituras que contem os usuários antes de cortar, não que cortem.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Assunto e tese</span>
+    <div class="tb">Há quem veja a feira livre como resquício de um tempo sem supermercado. Engano. A feira é onde o pequeno produtor vende sem intermediário, onde o preço se negocia olhando no olho e onde a cidade ainda se encontra na rua num domingo de manhã. Quando uma prefeitura transfere a feira para um galpão afastado, alegando problemas de trânsito, não está organizando o espaço: está empurrando para longe um dos últimos mercados em que quem planta conversa com quem come.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">O assunto e a tese do texto são, respectivamente:</p>
+    <ol class="alt">
+      <li>a feira livre; a feira é um resquício de um tempo em que não havia supermercados.</li>
+      <li>o comércio de alimentos; os supermercados oferecem preços mais baixos que as feiras.</li>
+      <li>o trânsito urbano; as prefeituras devem organizar o uso das ruas.</li>
+      <li>a feira livre; a feira tem valor econômico e social que justifica mantê-la no espaço da rua.</li>
+      <li>a agricultura familiar; o pequeno produtor precisa de mais crédito rural.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O assunto é a feira livre. A tese aparece depois da palavra “<strong>Engano</strong>”: a feira tem valor — venda sem intermediário, negociação direta, encontro na rua — e retirá-la da rua é empurrá-la para longe.</p>
+      <p>A A é a armadilha mais típica: acerta o assunto, mas apresenta como tese a opinião que o autor <strong>refuta</strong> na primeira frase — é contradição. A B troca o assunto por outro mais amplo e afirma algo sobre preços que o texto não diz. A C toma o argumento da prefeitura (“alegando problemas de trânsito”), que o texto rejeita. A E <strong>extrapola</strong>: o texto não fala em crédito.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Do caso à conclusão</span>
+    <div class="tb">Na rua de cima, o portão quebrado ficou um ano sem conserto; logo vieram as pichações, depois o lixo acumulado na calçada. Na praça, o banco arrancado nunca foi reposto, e as famílias deixaram de ir. No posto de saúde, a lâmpada queimada da entrada transformou o fim de tarde em hora de medo. Nenhum desses problemas, isolado, parecia urgente. Juntos, ensinam uma lição que os orçamentos públicos costumam esquecer: a manutenção miúda e constante custa menos do que a reforma tardia, e é ela que mantém um espaço vivo.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">Quanto à construção do sentido global, o texto</p>
+    <ol class="alt">
+      <li>defende, desde a primeira frase, que pichações devem ser punidas com rigor.</li>
+      <li>relata casos particulares e só no final explicita a tese de que a manutenção constante é preferível à reforma tardia.</li>
+      <li>apresenta a tese no primeiro período e a retoma, com outras palavras, no último.</li>
+      <li>tem como ideia central a insegurança na entrada do posto de saúde.</li>
+      <li>não apresenta tese, limitando-se a descrever problemas de um bairro.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O texto é <strong>indutivo</strong>: três casos (portão, banco, lâmpada), uma frase de transição (“Nenhum desses problemas, isolado, parecia urgente”) e, no fim, a generalização marcada por “ensinam uma lição”: <strong>manutenção miúda e constante custa menos e mantém o espaço vivo</strong>.</p>
+      <p>A C descreve a organização dedutiva, que não é a deste texto: o primeiro período narra um caso. A E ignora a última frase, que é justamente a tese. A D é <strong>redução</strong>: um dos três exemplos. A A <strong>extrapola</strong>: as pichações aparecem como consequência do abandono, e o texto não fala em punição.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Tese implícita e ironia</span>
+    <div class="tb">Admiro profundamente o motorista que para na vaga de idoso “só por um minutinho”. É um homem de fé: acredita que o tempo dele vale mais que o joelho alheio. Admiro também quem fura a fila do pão com um sorriso, convicto de que a pressa é um documento. Gente assim nos ensina, todos os dias, que a regra é ótima — para os outros.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">O texto, construído em tom irônico, tem como ideia central</p>
+    <ol class="alt">
+      <li>o elogio a pessoas que sabem aproveitar bem o próprio tempo.</li>
+      <li>a defesa de que o número de vagas para idosos seja ampliado.</li>
+      <li>a constatação de que as filas das padarias são desorganizadas.</li>
+      <li>a ideia de que a fé leva as pessoas a agir com pressa.</li>
+      <li>a crítica a quem desrespeita regras de convivência por se julgar uma exceção a elas.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O “admiro” é irônico: o texto elogia para criticar. A frase final revela a tese implícita — essas pessoas acham que “a regra é ótima — <strong>para os outros</strong>”, isto é, julgam-se exceção às normas que valem para todos.</p>
+      <p>A A é a <strong>leitura literal</strong> da ironia, que inverte o sentido. A D também lê ao pé da letra a expressão “homem de fé”, usada ironicamente. A B <strong>extrapola</strong>: o texto não propõe mais vagas. A C é <strong>redução</strong> e ainda desloca o foco: o problema não é a fila, é quem a fura.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · O título como pista</span>
+    <div class="tb"><strong>O barato que sai caro</strong><br>Uma camiseta pelo preço de um lanche parece vitória do consumidor. Mas alguém pagou a diferença: o costureiro que recebe por peça, o rio que recebe o corante, o aterro que recebe a roupa descartada depois de três lavagens. O preço da etiqueta é só a parte da conta que chega ao caixa; o resto é dividido entre quem não estava na loja.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">Em relação ao texto, o título</p>
+    <ol class="alt">
+      <li>antecipa a tese de que o preço baixo esconde custos sociais e ambientais pagos por outros.</li>
+      <li>contradiz o texto, que defende a compra de roupas baratas como vitória do consumidor.</li>
+      <li>indica que o texto tratará do aumento recente no preço das roupas.</li>
+      <li>refere-se apenas à baixa durabilidade das camisetas, descartadas após poucas lavagens.</li>
+      <li>sugere que o consumidor foi enganado pelo vendedor no momento da compra.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O ditado do título resume a tese desenvolvida no texto: o que é barato no caixa sai caro para alguém — o trabalhador, o rio, o aterro. O título <strong>antecipa a tese</strong>.</p>
+      <p>A B toma como posição do autor a ideia que ele introduz para contestar (“parece vitória… <strong>Mas</strong>…”) — contradição. A D é <strong>redução</strong>: a durabilidade é um detalhe de um dos três exemplos. A C troca o assunto: o texto não fala em aumento de preço. A E <strong>extrapola</strong>: não há menção a engano por parte do vendedor; os custos são pagos por terceiros, não escondidos pelo vendedor.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · O resumo fiel</span>
+    <div class="tb">Na adolescência, o relógio biológico costuma se atrasar: o sono chega mais tarde e, com ele, a tendência de acordar mais tarde. A escola, porém, continua começando cedo. O resultado é uma privação de sono que muitos adultos interpretam como preguiça. Por isso, algumas redes de ensino em outros países testaram adiar o início das aulas, e pesquisadores acompanham os efeitos dessa mudança sobre a atenção e a frequência dos alunos.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">A alternativa que melhor resume o texto é:</p>
+    <ol class="alt">
+      <li>Adolescentes que dormem tarde precisam de mais disciplina para acordar cedo.</li>
+      <li>O horário das escolas brasileiras deve ser adiado imediatamente.</li>
+      <li>Em outros países, pesquisadores acompanham redes de ensino.</li>
+      <li>O descompasso entre o relógio biológico do adolescente e o horário escolar provoca privação de sono, o que levou a testes de adiamento das aulas.</li>
+      <li>A atenção dos alunos depende exclusivamente do horário em que as aulas começam.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Pela fórmula: assunto (sono do adolescente e horário escolar) + o que o texto afirma (o descompasso gera privação de sono) + a consequência apresentada (testes de adiamento). Só a D reúne os três.</p>
+      <p>A A adota a leitura que o texto <strong>desautoriza</strong> ao dizer que a privação de sono é interpretada “como preguiça” — o texto atribui o problema ao relógio biológico, não à falta de disciplina. A B <strong>extrapola</strong>: o texto relata testes em outros países, não recomenda mudança no Brasil. A C é <strong>redução</strong>: um detalhe da última frase. A E <strong>extrapola</strong> com “exclusivamente”: o texto diz apenas que os efeitos sobre a atenção estão sendo acompanhados.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · A função de um parágrafo</span>
+    <div class="tb">Consertar um aparelho deveria ser mais simples do que comprar outro. Hoje, porém, o caminho costuma ser o inverso.<br><br>Peças coladas em vez de parafusadas, baterias que não se removem, manuais técnicos que o fabricante não divulga: cada um desses detalhes de projeto encarece o reparo até o ponto em que ele deixa de compensar.<br><br>Leis que obriguem a oferta de peças e de informações técnicas por um prazo mínimo não resolvem tudo, mas devolvem ao consumidor uma escolha que hoje lhe é tirada antes mesmo da compra.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">Na organização do texto, o segundo parágrafo</p>
+    <ol class="alt">
+      <li>apresenta a tese, que é retomada no terceiro parágrafo.</li>
+      <li>fundamenta a afirmação do primeiro parágrafo com exemplos de como o projeto dos aparelhos dificulta o conserto.</li>
+      <li>introduz uma opinião contrária à do autor, que é refutada no terceiro parágrafo.</li>
+      <li>propõe a solução defendida pelo autor para o problema apresentado.</li>
+      <li>abandona o assunto inicial para tratar do preço dos aparelhos novos.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O primeiro parágrafo afirma o problema (consertar costuma ser mais difícil do que trocar); o segundo explica <strong>por quê</strong>, com três exemplos de projeto; o terceiro propõe uma saída. O segundo parágrafo é <strong>argumentativo</strong>: sustenta a afirmação inicial.</p>
+      <p>A D descreve o terceiro parágrafo, não o segundo. A A erra a função: a posição do autor está no primeiro e no terceiro. A C inventa uma voz contrária que não aparece. A E erra o assunto: o parágrafo trata do custo do <strong>reparo</strong>, não do preço de aparelhos novos.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Mesmo assunto, outra tese</span>
+    <div class="tb">Barulho costuma ser tratado como incômodo menor, assunto de reclamação entre vizinhos. É um erro de escala. O ruído constante do trânsito e das obras atravessa paredes, interrompe o sono e eleva o estresse de quem não tem como se mudar para uma rua mais calma — em geral, quem mora perto das grandes avenidas porque ali o aluguel é mais barato. Tratar o barulho como questão de saúde pública, com medição, fiscalização e planejamento urbano, é reconhecer que o silêncio também está mal distribuído.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">A tese do texto está expressa em:</p>
+    <ol class="alt">
+      <li>O ruído urbano é um problema de saúde pública que atinge a população de forma desigual e exige ação do poder público.</li>
+      <li>Conflitos entre vizinhos causados por barulho devem ser resolvidos com diálogo.</li>
+      <li>Quem mora perto das grandes avenidas deveria se mudar para ruas mais calmas.</li>
+      <li>O ruído do trânsito interrompe o sono dos moradores.</li>
+      <li>O barulho das cidades é causado principalmente pelas obras da construção civil.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O texto rejeita a visão do barulho como “incômodo menor” (“É um erro de escala”) e conclui que ele deve ser tratado como <strong>questão de saúde pública</strong>, pois “o silêncio também está mal distribuído” — ou seja, atinge mais quem mora onde o aluguel é mais barato.</p>
+      <p>A B tem o <strong>assunto certo e a tese errada</strong>: reduz o tema à briga entre vizinhos, justamente o enquadramento que o texto critica. A C <strong>contradiz</strong> o texto, que fala de quem “não tem como se mudar”. A D é <strong>redução</strong>: um dos efeitos citados. A E <strong>extrapola</strong> com “principalmente”: o texto cita trânsito e obras lado a lado, sem hierarquizá-los.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Verdadeiro, mas não está no texto</span>
+    <div class="tb">A cisterna ao lado da casa mudou menos a paisagem do semiárido do que a rotina de quem vive nele. A água da chuva, guardada no período chuvoso, passa a estar a poucos passos da cozinha nos meses secos, e a longa caminhada até o açude — tarefa que costumava recair sobre mulheres e crianças — deixa de ser diária. A tecnologia é simples; o que ela devolve é tempo: para a escola, para o trabalho, para o descanso.<span class="fonte">Texto elaborado para fins didáticos.</span></div>
+    <p class="enun">De acordo com o texto, a principal contribuição das cisternas é</p>
+    <ol class="alt">
+      <li>reduzir as doenças ligadas ao consumo de água contaminada.</li>
+      <li>transformar a paisagem do semiárido.</li>
+      <li>liberar tempo, sobretudo de mulheres e crianças, antes gasto na busca de água.</li>
+      <li>substituir os açudes como fonte de água da região.</li>
+      <li>acabar com os efeitos da seca no semiárido.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A frase final responde à pergunta: “o que ela devolve é <strong>tempo</strong>”. O texto explica de onde vem esse tempo — a caminhada até o açude, que recaía sobre mulheres e crianças, deixa de ser diária.</p>
+      <p>A A é o distrator da <strong>verdade do mundo</strong>: pode ser um efeito real de cisternas bem mantidas, mas o texto não fala em saúde. A B <strong>contradiz</strong> a primeira frase (“mudou <strong>menos</strong> a paisagem”). A D e a E <strong>extrapolam</strong>: o texto diz que a caminhada “deixa de ser diária”, não que o açude perde a função, nem que a seca acaba.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Diferencio tema, assunto e tese com um exemplo próprio</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o teste da discordância para saber se encontrei a tese</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Separo ideia central de ideias secundárias pelo teste do apagamento</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço a organização dedutiva e a indutiva e sei onde a tese costuma estar em cada uma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Percebo quando a primeira frase é uma opinião que o autor vai refutar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconstruo uma tese implícita a partir da seleção, do contraste e do tom</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso título, tópico frasal e marcas linguísticas como pistas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico a função de um parágrafo dentro do texto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resumo um texto em uma frase: assunto, afirmação e porquê</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço redução, extrapolação, contradição e tema certo com tese errada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Descarto alternativas verdadeiras no mundo mas ausentes no texto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Formulo a tese com minhas palavras antes de ler as alternativas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo comandos: “de acordo com o texto”, “infere-se”, “o autor defende”</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 25 questões de interpretação e acerte pelo menos 18 (70%). Em cada erro, classifique o distrator que você marcou — redução, extrapolação, contradição, tema certo com tese errada ou verdade do mundo. O padrão dos seus erros diz o que treinar.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>Informações explícitas e implícitas</strong>, desce do texto inteiro para a frase: o que está escrito, o que está sugerido e onde termina o direito do leitor de concluir.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Linguagens-01-compreensao-global-tese.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. Este é o primeiro assunto de Linguagens: a importação cria o deck novo <code>ENEM::Linguagens::Interpretação de Texto</code>, ao qual os cartões dos próximos assuntos do bloco vão se somar.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-lin-01";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

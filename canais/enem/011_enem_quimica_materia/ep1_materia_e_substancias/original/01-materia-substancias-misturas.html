@@ -1,0 +1,1174 @@
+<title>Matéria, Substâncias e Misturas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Ciências da Natureza (mesmo verde do gabarito de estudos).
+   As cores semânticas das caixas permanecem idênticas às das outras páginas;
+   só o cabeçalho sinaliza a mudança de área. */
+:root{ --area:#1F6248 }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#68C79A } }
+:root[data-theme="dark"]{ --area:#68C79A }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Química</b> › Química Geral e Inorgânica › Assunto 1 de 17</p>
+        <h1>Matéria, substâncias puras e misturas</h1>
+        <p class="deck">A porta de entrada da Química: aprender a olhar para um material e dizer o que ele é. Toda a classificação da matéria cabe em três perguntas encadeadas, e a curva de aquecimento resolve o caso mais cobrado da prova.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Árvore de classificação da matéria: divide-se em substância pura, que pode ser simples ou composta, e em mistura, que pode ser homogênea ou heterogênea">
+  <rect x="100" y="10" width="100" height="28" rx="8" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.8"/>
+  <text x="150" y="29" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">MATÉRIA</text>
+  <path d="M150 38 L150 50 L74 50 L74 60" style="fill:none;stroke:var(--ink-3);stroke-width:1.4"/>
+  <path d="M150 38 L150 50 L226 50 L226 60" style="fill:none;stroke:var(--ink-3);stroke-width:1.4"/>
+  <rect x="8" y="60" width="132" height="32" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="74" y="74" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">SUBSTÂNCIA PURA</text>
+  <text x="74" y="86" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">um só constituinte</text>
+  <rect x="160" y="60" width="132" height="32" rx="8" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="226" y="74" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">MISTURA</text>
+  <text x="226" y="86" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">duas ou mais substâncias</text>
+  <path d="M74 92 L74 102 L39 102 L39 112" style="fill:none;stroke:var(--c1);stroke-width:1.2"/>
+  <path d="M74 92 L74 102 L109 102 L109 112" style="fill:none;stroke:var(--c1);stroke-width:1.2"/>
+  <path d="M226 92 L226 102 L191 102 L191 112" style="fill:none;stroke:var(--c2);stroke-width:1.2"/>
+  <path d="M226 92 L226 102 L261 102 L261 112" style="fill:none;stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="8" y="112" width="62" height="28" rx="6" style="fill:var(--surface);stroke:var(--c1);stroke-width:1.3"/>
+  <text x="39" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:600">simples</text>
+  <rect x="78" y="112" width="62" height="28" rx="6" style="fill:var(--surface);stroke:var(--c1);stroke-width:1.3"/>
+  <text x="109" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:600">composta</text>
+  <rect x="160" y="112" width="62" height="28" rx="6" style="fill:var(--surface);stroke:var(--c2);stroke-width:1.3"/>
+  <text x="191" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:600">homogênea</text>
+  <rect x="230" y="112" width="62" height="28" rx="6" style="fill:var(--surface);stroke:var(--c2);stroke-width:1.3"/>
+  <text x="261" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:600">heterogênea</text>
+  <text x="39" y="156" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">O₂ · Fe</text>
+  <text x="109" y="156" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">H₂O · NaCl</text>
+  <text x="191" y="156" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">ar · aço</text>
+  <text x="261" y="156" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">granito</text>
+  <text x="39" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1 elemento</text>
+  <text x="109" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2 ou mais</text>
+  <text x="191" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1 fase</text>
+  <text x="261" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2 ou mais</text>
+  <rect x="8" y="182" width="284" height="24" rx="7" style="fill:var(--c5-soft);stroke:var(--c5-line);stroke-width:1"/>
+  <text x="150" y="198" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-weight:600">conte substâncias, depois elementos ou fases</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Nenhum</dd></div>
+      <div><dt>Destrava</dt><dd>Separação de misturas, soluções, estados físicos</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este é o primeiro assunto de Química e tem função dupla: ensina a <strong>classificar materiais</strong> e monta o vocabulário que todo o resto da matéria vai usar.</p>
+<p>Os formatos que aparecem na prova:</p>
+<ul>
+  <li><strong>Curva de aquecimento.</strong> Um gráfico de temperatura por tempo, e a pergunta é se o material é puro ou mistura. É o item mais cobrado do assunto.</li>
+  <li><strong>Contagem de fases e componentes</strong> num sistema descrito no enunciado.</li>
+  <li><strong>Classificação de materiais do cotidiano</strong> — ar, água mineral, aço, granito, leite.</li>
+  <li><strong>Alotropia</strong>, sobretudo as formas do carbono, em contextos de nanotecnologia e materiais.</li>
+  <li><strong>Propriedades específicas</strong> usadas para identificar substâncias, com tabelas de ponto de fusão e ebulição.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas coisas. A <strong>leitura da curva de aquecimento</strong> (seção 06), que resolve sozinha várias questões. E a distinção entre <strong>fase e componente</strong> (seção 05), que é a pegadinha preferida do assunto — os dois números são independentes e quase sempre diferentes.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Matéria e suas propriedades</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p><strong>Matéria</strong> é tudo o que tem <strong>massa</strong> e <strong>ocupa lugar no espaço</strong>.</p>
+</div>
+
+<p>As propriedades da matéria se dividem em dois grupos, e só um deles interessa à prova.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Quais são</th><th>Servem para identificar?</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Gerais</strong></td><td>Massa, volume, inércia, impenetrabilidade, divisibilidade, compressibilidade</td><td><strong>Não</strong> — valem para toda e qualquer matéria</td></tr>
+    <tr><td><strong>Específicas</strong></td><td>Ponto de fusão, ponto de ebulição, densidade, solubilidade, condutividade, dureza</td><td><strong>Sim</strong> — são a impressão digital da substância</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Como as propriedades específicas identificam o estado físico</span>
+  <p>Conhecendo o ponto de fusão e o de ebulição, a temperatura decide o estado:</p>
+  <p><strong>Abaixo do PF</strong> → sólido &nbsp;·&nbsp; <strong>entre PF e PE</strong> → líquido &nbsp;·&nbsp; <strong>acima do PE</strong> → gasoso</p>
+  <p>É por isso que o mercúrio, com <span class="m">PF = −39 °C</span> e <span class="m">PE = 357 °C</span>, é o único metal líquido à temperatura ambiente.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Substância pura: simples e composta</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p><strong>Substância pura</strong> é o material formado por <strong>um único tipo de constituinte</strong> — um só tipo de molécula, de átomo ou de aglomerado iônico.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Critério</th><th>Exemplos</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Simples</strong></td><td>Formada por <strong>um único elemento</strong> químico</td><td class="m">O₂ · O₃ · N₂ · Fe · S₈ · P₄ · He</td></tr>
+    <tr><td><strong>Composta</strong></td><td>Formada por <strong>dois ou mais elementos</strong></td><td class="m">H₂O · CO₂ · NaCl · C₆H₁₂O₆</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Substância simples não é átomo isolado</span>
+  <p>O gás oxigênio <span class="m">O₂</span> tem <strong>dois átomos</strong> e ainda assim é substância simples, porque há um único <em>elemento</em>. O enxofre <span class="m">S₈</span> tem oito átomos e continua simples.</p>
+  <p>O critério é o número de <strong>elementos diferentes</strong>, nunca o número de átomos.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Como separar cada tipo</span>
+  <p>Misturas se separam por <strong>processos físicos</strong> — filtração, destilação, decantação. Substâncias compostas só se separam por <strong>processos químicos</strong>, como a eletrólise da água. E substâncias simples não se separam em nada mais simples.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Misturas: homogêneas e heterogêneas</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p><strong>Homogênea</strong> — aspecto uniforme, uma <strong>única fase</strong>. Também chamada de <strong>solução</strong>.</p>
+  <p><strong>Heterogênea</strong> — <strong>duas ou mais fases</strong> distinguíveis.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Material</th><th>Classificação</th><th>Observação</th></tr></thead>
+  <tbody>
+    <tr><td>Ar atmosférico</td><td>Homogênea</td><td>78% N₂, 21% O₂, 1% outros</td></tr>
+    <tr><td>Água e sal dissolvido</td><td>Homogênea</td><td>Solução aquosa</td></tr>
+    <tr><td>Aço, bronze, latão</td><td>Homogênea</td><td>Ligas metálicas são soluções sólidas</td></tr>
+    <tr><td>Água e óleo</td><td>Heterogênea</td><td>Dois líquidos imiscíveis</td></tr>
+    <tr><td>Granito</td><td>Heterogênea</td><td>Quartzo, feldspato e mica</td></tr>
+    <tr><td>Leite e sangue</td><td><strong>Heterogênea</strong></td><td>Parecem uniformes, mas revelam fases ao microscópio</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Toda mistura de gases é homogênea</span>
+  <p>Gases se misturam em qualquer proporção e nunca formam duas camadas. Por isso o ar, mesmo com muitos componentes, tem sempre <strong>uma única fase</strong>.</p>
+  <p>Fumaça e neblina fogem à regra porque não são misturas de gases: são sólido e líquido <em>dispersos</em> em gás — e portanto heterogêneas.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Dois enganos frequentes do cotidiano</span>
+  <p>O <strong>ar</strong> não é substância pura: é mistura de gases.</p>
+  <p>A <strong>água mineral</strong> também não: contém sais dissolvidos. Só a água destilada se aproxima de uma substância pura.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Fases e componentes</h2>
+<p>São dois números diferentes, contados por critérios diferentes — e a prova adora perguntar os dois na mesma questão.</p>
+
+<div class="box def">
+  <span class="tag">As duas contagens</span>
+  <p><strong>Fase</strong> — cada porção do sistema com <strong>aspecto visual uniforme</strong>.</p>
+  <p><strong>Componente</strong> — cada <strong>substância</strong> presente no sistema.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Sistema</th><th>Fases</th><th>Componentes</th></tr></thead>
+  <tbody>
+    <tr><td>Água líquida e gelo</td><td class="m">2</td><td class="m">1</td></tr>
+    <tr><td>Água e álcool</td><td class="m">1</td><td class="m">2</td></tr>
+    <tr><td>Ar atmosférico</td><td class="m">1</td><td class="m">vários</td></tr>
+    <tr><td>Bronze (liga de Cu e Sn)</td><td class="m">1</td><td class="m">2</td></tr>
+    <tr><td>Granito</td><td class="m">3</td><td class="m">3</td></tr>
+    <tr><td>Água, óleo, areia e gelo</td><td class="m">4</td><td class="m">3</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Vários pedaços, uma só fase</span>
+  <p>Três cubos de gelo num copo de água formam <strong>duas fases</strong>, não quatro. Porções da <em>mesma substância</em> no <em>mesmo estado</em> contam como uma única fase, por mais separadas que estejam.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O caso que mostra a independência dos dois números</span>
+  <p>O bronze é uma liga de cobre e estanho: <strong>um componente? Não — dois</strong>, porque há duas substâncias. Mas é <strong>uma única fase</strong>, porque a liga é homogênea.</p>
+  <p>Num recipiente com bronze, água e areia há <strong>3 fases</strong> e <strong>4 componentes</strong>. Contar as duas coisas ao mesmo tempo é o que a questão pede.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> A curva de aquecimento</h2>
+<p>Esta é a ferramenta diagnóstica do assunto: um gráfico de temperatura por tempo revela se o material é puro sem nenhuma análise química.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 230" role="img" aria-label="Duas curvas de aquecimento: a da substância pura tem dois patamares horizontais na fusão e na ebulição; a da mistura comum sobe continuamente, sem patamares">
+  <text x="122" y="18" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">SUBSTÂNCIA PURA</text>
+  <line x1="34" y1="190" x2="215" y2="190" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="34" y1="190" x2="34" y2="36" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <text x="24" y="40" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">T</text>
+  <text x="215" y="206" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">tempo</text>
+  <polyline points="34,182 68,146 110,146 140,92 182,92 210,58" style="fill:none;stroke:var(--c1);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round"/>
+  <line x1="34" y1="146" x2="68" y2="146" style="stroke:var(--c1);stroke-width:.9;stroke-dasharray:3 3"/>
+  <line x1="34" y1="92" x2="140" y2="92" style="stroke:var(--c1);stroke-width:.9;stroke-dasharray:3 3"/>
+  <text x="30" y="150" text-anchor="end" class="svg-num" style="fill:var(--c1)">PF</text>
+  <text x="30" y="96" text-anchor="end" class="svg-num" style="fill:var(--c1)">PE</text>
+  <text x="89" y="139" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">fusão</text>
+  <text x="161" y="85" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">ebulição</text>
+  <text x="122" y="220" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">dois patamares · temperatura constante</text>
+
+  <text x="340" y="18" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">MISTURA COMUM</text>
+  <line x1="252" y1="190" x2="433" y2="190" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="252" y1="190" x2="252" y2="36" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <text x="242" y="40" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">T</text>
+  <text x="433" y="206" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">tempo</text>
+  <polyline points="252,182 286,150 328,132 358,94 400,72 428,44" style="fill:none;stroke:var(--c2);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round"/>
+  <line x1="252" y1="150" x2="286" y2="150" style="stroke:var(--c2);stroke-width:.9;stroke-dasharray:3 3"/>
+  <line x1="252" y1="132" x2="328" y2="132" style="stroke:var(--c2);stroke-width:.9;stroke-dasharray:3 3"/>
+  <text x="307" y="122" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">faixa de fusão</text>
+  <text x="379" y="62" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">faixa de ebulição</text>
+  <text x="340" y="220" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">nenhum patamar · temperatura varia</text>
+</svg>
+<figcaption><b>O patamar é a assinatura da pureza.</b> Enquanto uma substância pura muda de estado, toda a energia recebida é usada na mudança e a temperatura não sobe — daí o trecho horizontal. Numa mistura comum, os componentes mudam de estado em temperaturas diferentes, e o gráfico sobe sem parar. Repare que a curva não distingue substância simples de composta: ela só separa <b>puro</b> de <b>mistura</b>.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">Como ler o gráfico</span>
+  <p><strong>Dois patamares</strong> → substância pura. O primeiro é o ponto de fusão; o segundo, o de ebulição.</p>
+  <p><strong>Nenhum patamar</strong> → mistura comum.</p>
+  <p><strong>Um patamar só</strong> → mistura especial, tratada na seção seguinte.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> As misturas que enganam o gráfico</h2>
+<p>Duas classes de mistura se comportam como substância pura em <em>uma</em> das mudanças de estado. São elas que impedem a conclusão apressada de que “temperatura constante significa material puro”.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Fusão</th><th>Ebulição</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Substância pura</strong></td><td>Constante</td><td>Constante</td><td class="m">H₂O destilada</td></tr>
+    <tr><td><strong>Eutética</strong></td><td><strong>Constante</strong></td><td>Em faixa</td><td>Solda: 63% Sn e 37% Pb, funde a 183 °C</td></tr>
+    <tr><td><strong>Azeotrópica</strong></td><td>Em faixa</td><td><strong>Constante</strong></td><td>Álcool 96%, ferve a cerca de 78 °C</td></tr>
+    <tr><td><strong>Mistura comum</strong></td><td>Em faixa</td><td>Em faixa</td><td>Água e sal</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Como não confundir os dois nomes</span>
+  <p><strong>Eutética</strong> lembra <em>fundir</em> — é a que tem patamar na <strong>fusão</strong>.<br><strong>Azeotrópica</strong> lembra <em>ferver</em> — é a que tem patamar na <strong>ebulição</strong>.</p>
+  <p>E o teste definitivo: só a substância <strong>pura</strong> tem os <strong>dois</strong> patamares.</p>
+</div>
+
+<p>A mistura azeotrópica tem uma consequência prática cobrada em questões de separação: o álcool comercial não passa de 96% por destilação simples, justamente porque a mistura ferve como se fosse pura — o vapor tem a mesma composição do líquido.</p>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Alotropia</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p><strong>Alotropia</strong> é o fenômeno em que um <strong>mesmo elemento químico</strong> forma <strong>substâncias simples diferentes</strong>.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Elemento</th><th>Alótropos</th><th>O que os diferencia</th></tr></thead>
+  <tbody>
+    <tr><td>Oxigênio</td><td class="m">O₂ e O₃ (ozônio)</td><td><strong>Atomicidade</strong> — número de átomos na molécula</td></tr>
+    <tr><td>Carbono</td><td>Grafite, diamante, fulereno, grafeno, nanotubos</td><td><strong>Arranjo</strong> dos átomos no retículo</td></tr>
+    <tr><td>Fósforo</td><td class="m">P₄ (branco) e Pₙ (vermelho)</td><td>Atomicidade e arranjo</td></tr>
+    <tr><td>Enxofre</td><td>Rômbico e monoclínico</td><td>Forma do cristal</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Por que grafite e diamante são tão diferentes</span>
+  <p>Os dois são carbono puro. No <strong>diamante</strong>, cada átomo se liga a outros quatro numa rede tridimensional rígida — daí a dureza extrema. No <strong>grafite</strong>, os átomos formam folhas hexagonais que deslizam umas sobre as outras — daí ele ser macio e servir para escrever.</p>
+  <p>Mesmo elemento, mesma pureza, propriedades opostas. É o melhor exemplo de que a <em>estrutura</em> determina a propriedade.</p>
+</div>
+
+<p>O carbono é o alótropo mais cobrado, geralmente em contextos de nanotecnologia: o <strong>grafeno</strong> é uma folha de um átomo de espessura, e os <strong>nanotubos</strong> são folhas enroladas em cilindro. Ambos aparecem em questões sobre materiais avançados e condutividade.</p>
+
+<div class="box warn">
+  <span class="tag">Alótropos são substâncias diferentes</span>
+  <p><span class="m">O₂</span> e <span class="m">O₃</span> <strong>não</strong> são a mesma substância. Um é o gás que respiramos; o outro forma a camada protetora da atmosfera e é tóxico ao nível do solo. Mesmo elemento, substâncias distintas.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Materiais do cotidiano</h2>
+<p>A prova gosta de contextos concretos. Vale ter a classificação destes materiais decidida de antemão.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Material</th><th>Classificação</th><th>Composição</th></tr></thead>
+  <tbody>
+    <tr><td>Aço</td><td>Mistura homogênea</td><td>Ferro e carbono</td></tr>
+    <tr><td>Aço inoxidável</td><td>Mistura homogênea</td><td>Ferro, carbono, cromo e níquel</td></tr>
+    <tr><td>Bronze</td><td>Mistura homogênea</td><td>Cobre e estanho</td></tr>
+    <tr><td>Latão</td><td>Mistura homogênea</td><td>Cobre e zinco</td></tr>
+    <tr><td>Ouro 18 quilates</td><td>Mistura homogênea</td><td>75% de ouro, o restante cobre e prata</td></tr>
+    <tr><td>Água destilada</td><td><strong>Substância pura</strong></td><td class="m">H₂O</td></tr>
+    <tr><td>Gás oxigênio</td><td><strong>Substância pura simples</strong></td><td class="m">O₂</td></tr>
+    <tr><td>Soro fisiológico</td><td>Mistura homogênea</td><td>Água e cloreto de sódio a 0,9%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">O que “quilate” significa</span>
+  <p>É a fração de ouro em vinte e quatro avos. Ouro <strong>24 k</strong> é ouro puro; <strong>18 k</strong> tem <span class="m"><span class="frac"><i>18</i><i>24</i></span> = 75%</span> de ouro. O restante são outros metais que dão resistência à peça — e é por isso que a joia é uma <em>mistura</em>, não uma substância pura.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box def">
+  <span class="tag">O roteiro de três perguntas</span>
+  <ol style="margin:6px 0 0">
+    <li><strong>Há uma ou mais substâncias?</strong> → substância pura ou mistura</li>
+    <li>Se for <strong>pura</strong>: um ou mais elementos? → simples ou composta</li>
+    <li>Se for <strong>mistura</strong>: quantas fases? → homogênea ou heterogênea</li>
+  </ol>
+  <p style="margin-top:10px">Esse encadeamento classifica qualquer material que a prova apresente.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Diante de um gráfico, conte os patamares</span>
+  <p>Dois patamares, substância pura. Nenhum, mistura comum. Um só, mistura eutética ou azeotrópica — e a posição do patamar diz qual das duas.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Diante de um sistema, conte duas vezes</span>
+  <p>Primeiro as <strong>fases</strong>, olhando o que se distingue visualmente. Depois os <strong>componentes</strong>, listando as substâncias. Os dois números costumam ser diferentes, e a questão frequentemente pede ambos.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">O₂ é substância composta, pois tem 2 átomos</span> &nbsp;→&nbsp; <span class="c">é simples</span></span><small>O critério é o número de elementos, não de átomos. S₈ também é simples.</small></li>
+  <li><span><span class="x">Três cubos de gelo na água dão 4 fases</span> &nbsp;→&nbsp; <span class="c">dão 2</span></span><small>Porções da mesma substância no mesmo estado contam como uma única fase.</small></li>
+  <li><span><span class="x">Fases e componentes são o mesmo número</span> &nbsp;→&nbsp; <span class="c">são independentes</span></span><small>Bronze tem 2 componentes e 1 fase; água e gelo, 1 componente e 2 fases.</small></li>
+  <li><span><span class="x">Temperatura constante prova que é puro</span> &nbsp;→&nbsp; <span class="c">só se houver os dois patamares</span></span><small>Eutéticas e azeotrópicas também têm um patamar.</small></li>
+  <li><span><span class="x">O ar é substância pura</span> &nbsp;→&nbsp; <span class="c">é mistura homogênea</span></span><small>78% N₂, 21% O₂ e cerca de 1% de outros gases.</small></li>
+  <li><span><span class="x">Água mineral é substância pura</span> &nbsp;→&nbsp; <span class="c">contém sais dissolvidos</span></span><small>Só a água destilada se aproxima de substância pura.</small></li>
+  <li><span><span class="x">O₂ e O₃ são a mesma substância</span> &nbsp;→&nbsp; <span class="c">são alótropos distintos</span></span><small>Mesmo elemento, substâncias simples diferentes, com propriedades opostas.</small></li>
+  <li><span><span class="x">Leite e sangue são homogêneos</span> &nbsp;→&nbsp; <span class="c">são heterogêneos</span></span><small>Parecem uniformes a olho nu, mas revelam fases ao microscópio.</small></li>
+  <li><span><span class="x">A curva de aquecimento diz se é simples ou composta</span> &nbsp;→&nbsp; <span class="c">só diz se é pura ou mistura</span></span><small>Distinguir simples de composta exige conhecer a fórmula, não o gráfico.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Nas de contagem, conte fases e componentes separadamente antes de olhar as alternativas.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Fases e componentes</span>
+    <p class="enun">Um copo contém água líquida e três cubos de gelo. Esse sistema apresenta</p>
+    <ol class="alt">
+      <li>1 componente e 1 fase</li>
+      <li>1 componente e 2 fases</li>
+      <li>1 componente e 4 fases</li>
+      <li>2 componentes e 2 fases</li>
+      <li>4 componentes e 4 fases</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Componentes:</strong> a água líquida e o gelo são a mesma substância, <span class="m">H₂O</span>. Há <strong>1 componente</strong>.</p>
+      <p><strong>Fases:</strong> o líquido é uma porção uniforme; o gelo é outra. Há <strong>2 fases</strong>.</p>
+      <p>A alternativa C é a armadilha central: os três cubos <em>não</em> formam três fases. Porções da mesma substância no mesmo estado físico contam como <strong>uma única fase</strong>, mesmo separadas fisicamente.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Curva de aquecimento</span>
+    <p class="enun">Uma amostra foi aquecida de forma contínua e sua temperatura, registrada ao longo do tempo. Verificou-se que a temperatura permaneceu constante em 80 °C durante toda a fusão e novamente constante em 218 °C durante toda a ebulição. Conclui-se que a amostra é</p>
+    <ol class="alt">
+      <li>uma substância pura</li>
+      <li>uma mistura comum</li>
+      <li>uma mistura eutética</li>
+      <li>uma mistura azeotrópica</li>
+      <li>uma substância simples</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Houve patamar na fusão <strong>e</strong> na ebulição. Dois patamares caracterizam <strong>substância pura</strong>.</p>
+      <p>Vale conferir por que as demais estão erradas:</p>
+      <ul>
+        <li><strong>C</strong> — a eutética tem patamar só na fusão; ferveria em faixa.</li>
+        <li><strong>D</strong> — a azeotrópica tem patamar só na ebulição; fundiria em faixa.</li>
+        <li><strong>E</strong> — a curva não distingue simples de composta. Ela informa apenas que o material é puro; poderia ser tanto <span class="m">O₂</span> quanto <span class="m">H₂O</span>.</li>
+      </ul>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Substâncias simples</span>
+    <p class="enun">Considere as seguintes espécies químicas: <span class="m">O₂</span>, <span class="m">O₃</span>, <span class="m">H₂O</span>, <span class="m">NaCl</span>, <span class="m">N₂</span>, <span class="m">CO₂</span> e <span class="m">Fe</span>. O número de substâncias simples nessa lista é</p>
+    <ol class="alt"><li>2</li><li>3</li><li>4</li><li>5</li><li>7</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Substância simples tem <strong>um único elemento</strong>:</p>
+      <ul>
+        <li><span class="m">O₂</span> — só oxigênio → <strong>simples</strong></li>
+        <li><span class="m">O₃</span> — só oxigênio → <strong>simples</strong></li>
+        <li><span class="m">H₂O</span> — hidrogênio e oxigênio → composta</li>
+        <li><span class="m">NaCl</span> — sódio e cloro → composta</li>
+        <li><span class="m">N₂</span> — só nitrogênio → <strong>simples</strong></li>
+        <li><span class="m">CO₂</span> — carbono e oxigênio → composta</li>
+        <li><span class="m">Fe</span> — só ferro → <strong>simples</strong></li>
+      </ul>
+      <p>São <strong>quatro</strong>. Quem eliminou <span class="m">O₂</span> e <span class="m">N₂</span> por terem dois átomos chegou a 2, a alternativa A — o erro de contar átomos em vez de elementos.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Contagem de fases</span>
+    <p class="enun">Em um recipiente foram colocados água líquida, óleo de cozinha, areia e um cubo de gelo. Após alguns instantes, o número de fases observado nesse sistema é</p>
+    <ol class="alt"><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Identifique cada porção visualmente distinta, de cima para baixo:</p>
+      <ul>
+        <li><strong>Gelo</strong> — sólido flutuando (densidade 0,92)</li>
+        <li><strong>Óleo</strong> — líquido sobre a água (densidade 0,8)</li>
+        <li><strong>Água</strong> — líquido</li>
+        <li><strong>Areia</strong> — sólido depositado no fundo</li>
+      </ul>
+      <p>São <strong>4 fases</strong>.</p>
+      <p><strong>Cuidado com a contagem de componentes, que é diferente:</strong> o gelo e a água são a mesma substância, então há apenas <strong>3 componentes</strong> — água, óleo e areia. Se a questão pedisse componentes, a resposta seria outra.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Alotropia</span>
+    <p class="enun">O grafite e o diamante são constituídos exclusivamente por átomos de carbono, mas apresentam propriedades muito distintas: o diamante é o material natural mais duro conhecido, enquanto o grafite é macio e usado em lápis. Essa diferença é explicada</p>
+    <ol class="alt">
+      <li>pela presença de impurezas diferentes em cada um</li>
+      <li>pelo arranjo diferente dos átomos de carbono no retículo</li>
+      <li>pelo fato de o diamante ser substância composta</li>
+      <li>pela diferença de massa atômica entre os carbonos</li>
+      <li>por serem misturas de elementos diferentes</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os dois são <strong>alótropos</strong> do carbono: mesmo elemento, substâncias simples diferentes.</p>
+      <p>No <strong>diamante</strong>, cada átomo se liga a outros quatro numa rede tridimensional rígida — daí a dureza extrema. No <strong>grafite</strong>, os átomos formam folhas hexagonais ligadas fracamente entre si, que deslizam com facilidade — daí ele marcar o papel.</p>
+      <p>As demais alternativas erram na natureza do fenômeno: não há impurezas envolvidas, ambos são substâncias simples e puras, e os átomos de carbono são idênticos nos dois casos.</p>
+      <p>O mesmo raciocínio explica o grafeno e os nanotubos, que são arranjos ainda diferentes do mesmo carbono.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Mistura eutética</span>
+    <p class="enun">Uma liga metálica usada em soldagem funde a uma temperatura constante de 183 °C, mas entra em ebulição ao longo de uma faixa de temperatura. Essa liga é classificada como</p>
+    <ol class="alt">
+      <li>substância pura simples</li>
+      <li>substância pura composta</li>
+      <li>mistura eutética</li>
+      <li>mistura azeotrópica</li>
+      <li>mistura comum</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O material tem patamar apenas na <strong>fusão</strong>. Isso caracteriza a <strong>mistura eutética</strong>.</p>
+      <p>Se tivesse os dois patamares, seria substância pura. Se o patamar estivesse na ebulição, seria azeotrópica. Sem patamar nenhum, seria mistura comum.</p>
+      <p>Esse é justamente o caso da solda de estanho e chumbo, cuja composição eutética funde a 183 °C — abaixo do ponto de fusão de qualquer um dos dois metais isolados, o que é exatamente a utilidade da liga.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Classificação de materiais</span>
+    <p class="enun">Considere os materiais: água mineral, ouro 18 quilates, gás oxigênio, ar filtrado e granito. Entre eles, é substância pura</p>
+    <ol class="alt">
+      <li>apenas a água mineral</li>
+      <li>apenas o ouro 18 quilates</li>
+      <li>apenas o gás oxigênio</li>
+      <li>a água mineral e o gás oxigênio</li>
+      <li>o ouro 18 quilates e o granito</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <ul>
+        <li><strong>Água mineral</strong> — água com sais dissolvidos → mistura homogênea</li>
+        <li><strong>Ouro 18 k</strong> — 75% de ouro e 25% de outros metais → mistura homogênea</li>
+        <li><strong>Gás oxigênio</strong> — apenas <span class="m">O₂</span> → <strong>substância pura simples</strong></li>
+        <li><strong>Ar filtrado</strong> — mistura de gases; filtrar remove partículas, não separa os gases → mistura homogênea</li>
+        <li><strong>Granito</strong> — quartzo, feldspato e mica → mistura heterogênea</li>
+      </ul>
+      <p>Apenas o gás oxigênio é substância pura. A alternativa D é a armadilha de quem trata água mineral como água pura.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Propriedades específicas</span>
+    <p class="enun">A tabela apresenta os pontos de fusão e de ebulição de quatro substâncias, sob pressão de 1 atm. Considerando a temperatura ambiente de 25 °C, o número de substâncias que se encontram no estado líquido é</p>
+    <div class="tw"><table>
+      <thead><tr><th>Substância</th><th>PF (°C)</th><th>PE (°C)</th></tr></thead>
+      <tbody>
+        <tr><td>Etanol</td><td class="m">−114</td><td class="m">78</td></tr>
+        <tr><td>Cloreto de sódio</td><td class="m">801</td><td class="m">1 413</td></tr>
+        <tr><td>Oxigênio</td><td class="m">−219</td><td class="m">−183</td></tr>
+        <tr><td>Mercúrio</td><td class="m">−39</td><td class="m">357</td></tr>
+      </tbody>
+    </table></div>
+    <ol class="alt"><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A substância está líquida quando a temperatura fica <strong>entre</strong> o PF e o PE:</p>
+      <ul>
+        <li><strong>Etanol</strong> — <span class="m">−114 &lt; 25 &lt; 78</span> → <strong>líquido</strong></li>
+        <li><strong>Cloreto de sódio</strong> — <span class="m">25 &lt; 801</span>, abaixo do PF → sólido</li>
+        <li><strong>Oxigênio</strong> — <span class="m">25 &gt; −183</span>, acima do PE → gasoso</li>
+        <li><strong>Mercúrio</strong> — <span class="m">−39 &lt; 25 &lt; 357</span> → <strong>líquido</strong></li>
+      </ul>
+      <p>São <strong>duas</strong>. O mercúrio é o caso notável: o único metal líquido à temperatura ambiente.</p>
+      <p>Questões desse tipo pedem apenas a comparação de três números, mas exigem atenção ao <strong>sinal</strong> das temperaturas negativas.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Fases e componentes numa liga</span>
+    <p class="enun">Em um béquer foram colocados um pedaço de bronze — liga homogênea de cobre e estanho —, água líquida e areia. Os números de fases e de componentes desse sistema são, respectivamente,</p>
+    <ol class="alt">
+      <li>3 e 3</li>
+      <li>3 e 4</li>
+      <li>4 e 3</li>
+      <li>4 e 4</li>
+      <li>2 e 4</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Fases</strong> — porções visualmente distintas:</p>
+      <p class="m">bronze (sólido) · água (líquido) · areia (sólido) = 3 fases</p>
+      <p>O bronze é uma liga <strong>homogênea</strong>, então conta como uma única fase, apesar de conter dois metais.</p>
+      <p><strong>Componentes</strong> — substâncias presentes:</p>
+      <p class="m">cobre · estanho · água · areia = 4 componentes</p>
+      <p>Esta questão existe para separar quem entendeu que os dois números são <strong>independentes</strong>. A alternativa A é de quem contou o bronze como um só componente; a D é de quem contou os dois metais como duas fases.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo propriedades gerais de específicas e sei por que só as específicas identificam</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso PF e PE para determinar o estado físico a uma dada temperatura</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Separo substância simples de composta pelo número de <strong>elementos</strong>, não de átomos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico misturas em homogêneas e heterogêneas pelo número de fases</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que toda mistura de gases é homogênea</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conto fases e componentes separadamente, sabendo que são independentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que vários pedaços da mesma substância formam uma única fase</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio a curva de aquecimento e conto os patamares</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo mistura eutética de azeotrópica pela posição do patamar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que só a substância pura tem os dois patamares</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico alotropia e cito os alótropos do oxigênio e do carbono</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico ar, água mineral, ligas metálicas e granito sem hesitar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico o roteiro de três perguntas a qualquer material</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de <strong>curva de aquecimento</strong> e de <strong>contagem de fases</strong> — juntas, elas respondem pela maior parte das questões deste assunto. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>métodos de separação de misturas</strong>, é a continuação direta: tudo o que foi classificado aqui como mistura, lá se aprende a separar.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Quimica-01-materia-substancias-misturas.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. Este assunto abre o deck <code>ENEM::Química::Química Geral</code>, separado do de Matemática — assim você pode estudar as duas frentes em ritmos diferentes.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-qui-01";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

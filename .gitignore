@@ -1,0 +1,38 @@
+# Mídia pesada (fica no disco/backup, não no git)
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.zip
+
+# Intermediários de render, transcrições e vozes
+**/trabalho/
+**/analise/
+**/audio/nova_voz/
+**/audio/*.wav
+**/__pycache__/
+*.pyc
+
+# Fontes: só os TTF da Inter usados pelo motor.py (+ licença)
+_ferramentas/fontes/*
+!_ferramentas/fontes/inter/
+_ferramentas/fontes/inter/*
+!_ferramentas/fontes/inter/LICENSE.txt
+!_ferramentas/fontes/inter/extras/
+_ferramentas/fontes/inter/extras/*
+!_ferramentas/fontes/inter/extras/ttf/
+
+# Segredos e lixo do sistema
+.env
+.env.*
+*.env
+*.key
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Apostilas/material em PDF (distribuídos à parte)
+*.pdf

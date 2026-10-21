@@ -1,0 +1,41 @@
+Este vídeo não teve câmera. Nem microfone. Nem editor de vídeo. A voz, as animações, as legendas: tudo saiu de código e de IA. E ele não está sozinho: já são cinquenta e três vídeos, quase sete horas, em quatro canais. Hoje eu abro os bastidores.
+
+O caminho tem cinco etapas. O roteiro. A voz. A transcrição. A animação. E a renderização. E no fim, eu conto o que deu errado pelo caminho. Porque deu!
+
+Tudo começa no material de estudo: apostilas que eu já tinha, em HTML e markdown. Eu peço ao Claude Code, e ele lê o material e escreve o roteiro num arquivo Python, o cenas ponto py. Cada cena é um item de uma lista, com o texto que vai ser falado.
+
+Mas o texto tem umas marcações espertas. Uma letra entre chaves é um gatilho: nessa palavra, uma animação começa. O asterisco destaca a palavra na legenda. E o p igual a zero vírgula quatro é uma pausa. O roteiro já nasce sabendo onde cada coisa acontece.
+
+E tem uma regra de ouro: a IA não inventa conteúdo. Toda citação, toda lei, todo número, tem que estar no material. E um script confere, palavra por palavra, se as citações do roteiro batem com o original.
+
+Agora, a voz. Ela vem do Gemini TTS, o modelo de voz do Google, por um app que roda aqui no meu computador. Um script manda o roteiro em duas partes, com a voz Neno, umas etiquetas de emoção, alegre, curiosa, e uma instrução de estilo: fale como um professor apaixonado. É exatamente a voz que você está ouvindo agora.
+
+Só que a voz de IA apronta. Às vezes ela lê um trecho duas vezes. Às vezes inventa uma frase que não estava no roteiro. E às vezes o servidor troca para um modelo reserva, com outra voz. Nesse caso, o script percebe e pede de novo, sozinho.
+
+E como eu descubro esses erros? Transcrevendo a voz de volta. Com o faster-whisper, modelo small, rodando no processador. Ele devolve cada palavra com o segundo exato em que ela foi dita.
+
+Aí um script compara: o roteiro contra a transcrição. Palavra sobrando? Foi repetição ou invenção. Eu corto. E o contrário também acontece: numa aula, o Whisper pulou sete segundos de fala. A voz estava certa! Retranscrevi só aquele pedaço.
+
+Com a transcrição limpa, vem o pulo do gato. Outro script casa cada palavra do roteiro com o tempo em que ela foi falada. E aí cada gatilho entre chaves vira um instante exato do áudio. É por isso que a animação acontece bem na palavra.
+
+Agora, a parte que eu mais gosto: a animação. Não existe linha do tempo, nem arrastar caixinha. Existe uma função: ela recebe o tempo, em segundos, e desenha o quadro daquele instante com a Skia, a biblioteca de desenho 2D do Chrome. Mudou o tempo, muda o desenho. Isso é a animação.
+
+E cada canal tem o seu estilo. As aulas do ENEM, claras, com folha de rascunho e letra de mão. As aulas de Seguridade Social, em verde-petróleo. E este canal, escuro e futurista. As peças repetidas, como cartões, legendas e a tela de inscrição, ficam em bibliotecas compartilhadas.
+
+E a legenda? Ela também vem dos tempos: cada palavra aparece na hora em que é dita, e as palavras com asterisco brilham. Como estas.
+
+Falta transformar tudo em vídeo. São trinta quadros por segundo. Um vídeo de dez minutos tem dezoito mil quadros. Então o vídeo é cortado em pedaços de vinte segundos, vários processos desenham ao mesmo tempo, e o ffmpeg transforma os quadros em vídeo e junta com a narração.
+
+E aqui entra a vida real. Meu computador tem oito gigas de memória. Uma vez eu coloquei sete processos em paralelo, e o render estourou a memória. Hoje são três de cada vez. E se algum falhar, o script refaz só os pedaços que faltaram.
+
+Antes de renderizar tudo, uma revisão. O script tira um quadro de cada cena e monta tudo numa folha só. Assim dá para ver, de uma vez, um texto que saiu do cartão, uma seta no lugar errado, e corrigir antes de gastar o render inteiro.
+
+E o vídeo sai pronto para publicar. Um script desenha três capas para eu testar. E outro arquivo traz títulos, descrição, tags e os capítulos, calculados direto dos tempos da narração.
+
+Então a IA faz tudo? Não! Eu escolho o tema, defino o estilo de cada canal, e aprovo cada etapa. A IA faz o trabalho pesado. O critério continua sendo meu.
+
+E três cuidados, se você quiser fazer algo parecido. Use uma fonte confiável, e não deixe a IA inventar. Confira a voz, sempre. E seja transparente: no YouTube, eu declaro que a narração é sintética.
+
+Resumindo: o Claude Code escreve o roteiro. O Gemini dá a voz. O Whisper confere e marca o tempo de cada palavra. A Skia desenha. E o ffmpeg monta. Cinco ferramentas, e uma pasta por vídeo.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual etapa você quer ver em detalhe num próximo vídeo? Até o próximo vídeo.

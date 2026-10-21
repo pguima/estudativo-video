@@ -1,0 +1,376 @@
+Divisibilidade, Primos, MMC e MDC
+        Matemática › Matemática Básica e Proporcionalidade › Assunto 2 de 12
+    Divisibilidade, primos, MMC e MDC
+    Aqui mora uma das questões mais previsíveis da prova inteira: a dos eventos que voltam a coincidir. Se você souber decidir entre MMC e MDC em dez segundos, esse ponto é seu todo ano.
+  3602
+  1802
+  902
+  453
+  153
+  55
+  1
+  360 = 2³ · 3² · 5
+      Semana1 · Fase Fundamentos
+      IncidênciaAlta
+      Tempo previsto45 min de teoria
+      Pré-requisitoOperações e conjuntos numéricos
+      DestravaFrações, razão e proporção, probabilidade
+    Neste assunto
+01 O que o ENEM cobra aqui
+Este assunto é diferente do anterior: ele rende questão própria, com enunciado inteiro dedicado a ele, quase todo ano. E o formato é sempre um dos dois:
+  Coisas que se repetem e voltam a coincidir. Ônibus que partem a cada tantos minutos, lâmpadas que piscam, engrenagens que giram, atletas dando voltas na pista, remédios tomados em intervalos diferentes. Isso é MMC, sempre.
+  Repartir em pedaços iguais, do maior tamanho possível. Cortar tábuas, formar grupos de alunos, ladrilhar um piso, distribuir doces em sacolas, colocar estacas numa cerca. Isso é MDC, sempre.
+Além desses dois, aparecem com menor frequência: critérios de divisibilidade dentro de questões de código e senha, contagem de divisores, e fatoração usada como ferramenta em questões de outra matéria.
+  O que vale mais neste assunto
+  Não é decorar o algoritmo — é reconhecer qual dos dois o enunciado está pedindo. Quem erra essa questão quase nunca erra a conta; erra a escolha. Por isso a seção 09 é a mais importante da página.
+02 Múltiplos e divisores
+Duas ideias que são a mesma coisa vista de lados opostos.
+  Definição
+  b é divisor de a quando a divisão a ÷ b é exata, sem resto. Nesse mesmo caso, a é múltiplo de b.
+  Ex.: 12 ÷ 3 = 4 sem resto. Então 3 é divisor de 12 e 12 é múltiplo de 3. É a mesma frase dita de dois jeitos.
+  A diferença que importa na prova
+  Divisores são finitos. D(12) = {1, 2, 3, 4, 6, 12} — acabam.
+  Múltiplos são infinitos. M(3) = {0, 3, 6, 9, 12, 15, …} — não acabam.
+Regras que sempre valem:
+  1 é divisor de todo número.
+  Todo número é divisor de si mesmo.
+  0 é múltiplo de todo número, mas não é divisor de nenhum — divisão por zero não existe.
+  Se um número divide outros dois, ele divide a soma e a diferença deles.
+Como listar todos os divisores sem esquecer nenhum
+Vá de 1 para cima procurando pares que multiplicados dão o número, e pare quando os dois lados se encontrarem:
+  36 = 1·36 = 2·18 = 3·12 = 4·9 = 6·6
+  D(36) = {1, 2, 3, 4, 6, 9, 12, 18, 36} → nove divisores
+03 Critérios de divisibilidade
+São atalhos: dizem se a divisão é exata sem fazer a divisão. Numa prova sem calculadora, isso economiza minutos.
+  Divisor
+Critério
+Exemplo
+    2
+Termina em algarismo par: 0, 2, 4, 6 ou 8
+374 ✓
+    3
+A soma dos algarismos é divisível por 3
+522 → 5+2+2 = 9 ✓
+    4
+Os dois últimos algarismos formam número divisível por 4
+1 316 → 16 ✓
+    5
+Termina em 0 ou 5
+895 ✓
+    6
+Passa no critério do 2 e no do 3 ao mesmo tempo
+534 → par ✓ e 5+3+4=12 ✓
+    7
+Separe o último algarismo, dobre e subtraia do que sobrou. Repita.
+1 729 → 172−18 = 154 → 15−8 = 7 ✓
+    8
+Os três últimos algarismos formam número divisível por 8
+5 120 → 120 ✓
+    9
+A soma dos algarismos é divisível por 9
+6 813 → 6+8+1+3 = 18 ✓
+    10
+Termina em 0
+2 470 ✓
+    11
+Soma alternada dos algarismos dá 0 ou múltiplo de 11
+2 079 → (9+0)−(7+2) = 0 ✓
+  Os quatro que você usa de verdade
+  2, 3, 5 e 9 resolvem quase tudo na prova, e são os mais fáceis. O do 7 é o único trabalhoso — se aparecer, muitas vezes sai mais rápido dividindo mesmo.
+Combinando critérios você cobre qualquer divisor composto: para 12, teste 3 e 4; para 15, teste 3 e 5; para 45, teste 5 e 9. A regra é usar dois divisores que sejam primos entre si — para 12 não adianta testar 2 e 6.
+04 Números primos e compostos
+  Definição
+  Primo: tem exatamente dois divisores — o 1 e ele mesmo.
+  Composto: tem mais de dois divisores.
+  Os dois casos que derrubam gente
+  O 1 não é primo. Ele tem um único divisor, e a definição exige dois. Também não é composto — o 1 é uma categoria à parte.
+  O 2 é primo, e é o único primo par. Qualquer outro número par tem o 2 como divisor extra, então é composto.
+Os 25 primos até 100
+  2 · 3 · 5 · 7 · 11 · 13 · 17 · 19 · 23 · 29 · 31 · 37 · 41 · 43 · 47
+53 · 59 · 61 · 67 · 71 · 73 · 79 · 83 · 89 · 97
+Vale decorar. Nenhum termina em 0, 2, 4, 5, 6 ou 8, com a única exceção do próprio 2 e do 5.
+Como testar se um número é primo
+  O método rápido
+  Teste a divisão pelos primos até a raiz quadrada do número. Se nenhum dividir, ele é primo. Passar da raiz é desperdício de tempo — os pares de divisores já teriam aparecido.
+Testando 181: como 181 ≈ 13,4, basta testar 2, 3, 5, 7, 11 e 13. Nenhum divide — logo 181 é primo.
+  Primos entre si
+  Dois números são primos entre si quando o único divisor comum é o 1, ou seja, quando MDC = 1. Eles não precisam ser primos: 8 e 9 são compostos, mas são primos entre si.
+05 Fatoração em números primos
+É a operação central do assunto — MMC, MDC e contagem de divisores saem todos daqui.
+  Teorema fundamental da aritmética
+  Todo número maior que 1 se escreve como produto de primos de uma única maneira, a menos da ordem dos fatores. Não existem duas fatorações diferentes para o mesmo número.
+Como fatorar
+Divida sempre pelo menor primo possível, repetindo até chegar a 1:
+  Fatorando 360
+  360 ÷ 2 = 180
+180 ÷ 2 = 90
+90 ÷ 2 = 45
+45 ÷ 3 = 15
+15 ÷ 3 = 5
+5 ÷ 5 = 1
+  360 = 23 · 32 · 5
+Mais dois para referência: 72 = 23 · 32 e 120 = 23 · 3 · 5.
+06 Quantos divisores tem um número
+Cai de vez em quando e é resolvida em quinze segundos com uma fórmula.
+  A fórmula
+  Fatore o número. Some 1 a cada expoente e multiplique os resultados.
+  Se n = ax · by · cz, então no de divisores = (x+1)(y+1)(z+1)
+  360 = 23 · 32 · 51
+  divisores = (3+1)(2+1)(1+1) = 4 · 3 · 2 = 24
+O +1 existe porque cada expoente pode ser usado de 0 até seu valor: o 2 pode entrar como 20, 21, 22 ou 23 — quatro escolhas, não três. Esquecer isso é o erro mais comum aqui.
+07 MDC — máximo divisor comum
+  O que é
+  O maior número que divide todos os dados ao mesmo tempo, sem deixar resto.
+Pela fatoração
+  Regra: fatores comuns, com o menor expoente
+  72 = 23 · 32     120 = 23 · 3 · 5
+  Comuns: 2 e 3. Menores expoentes: 23 e 31
+  MDC(72, 120) = 23 · 3 = 24
+O 5 ficou de fora porque não aparece nos dois. No MDC, fator que falta em algum dos números está automaticamente eliminado.
+Pelo algoritmo de Euclides — quando os números são grandes
+Divida o maior pelo menor, depois o divisor pelo resto, e assim por diante. O último resto diferente de zero é o MDC.
+  120 = 1 · 72 + 48
+  72 = 1 · 48 + 24
+  48 = 2 · 24 + 0  ← parou
+  MDC = 24
+  Como reconhecer no enunciado
+  “o maior tamanho possível” · “dividir em partes iguais sem sobra” · “o maior número de grupos” · “a maior medida que cabe exatamente”.
+  E a checagem de sanidade: o MDC nunca é maior que o menor dos números dados. Se sua resposta passou disso, está errada.
+08 MMC — mínimo múltiplo comum
+  O que é
+  O menor número, diferente de zero, que é múltiplo de todos os dados ao mesmo tempo.
+Pela fatoração
+  Regra: todos os fatores, com o maior expoente
+  72 = 23 · 32     120 = 23 · 3 · 5
+  Todos os fatores: 2, 3 e 5. Maiores expoentes: 23, 32 e 51
+  MMC(72, 120) = 23 · 32 · 5 = 360
+Pela decomposição simultânea — o método mais rápido com três números
+Escreva os números lado a lado e vá dividindo pelos primos, mantendo quem não for divisível:
+  MMC(12, 18, 30)
+  12, 18, 30 │ 2  →  6, 9, 15
+  6, 9, 15 │ 3  →  2, 3, 5
+  2, 3, 5 │ 2  →  1, 3, 5
+  1, 3, 5 │ 3  →  1, 1, 5
+  1, 1, 5 │ 5  →  1, 1, 1
+  MMC = 2 · 3 · 2 · 3 · 5 = 180
+  Como reconhecer no enunciado
+  “voltarão a coincidir” · “ao mesmo tempo novamente” · “juntos de novo” · “o menor número que é múltiplo de” · “de quanto em quanto tempo se encontram”.
+  Checagem de sanidade: o MMC nunca é menor que o maior dos números dados.
+09 Como decidir entre MMC e MDC
+Esta é a seção que vale a questão. Quem erra aqui não erra a conta — erra a escolha, e resolve perfeitamente o problema errado.
+  Pergunte-se
+MMC
+MDC
+    O que acontece no problema?
+Coisas se repetem em ciclos
+Algo é repartido em pedaços
+    O que se procura?
+Quando voltam a coincidir
+Que tamanho cada parte terá
+    Palavra-chave
+“juntos”, “ao mesmo tempo”, “novamente”
+“iguais”, “sem sobra”, “o maior possível”
+    A resposta é…
+Maior que todos os dados
+Menor ou igual ao menor dado
+    Exemplo típico
+Ônibus, lâmpadas, engrenagens, remédios
+Tábuas, grupos, ladrilhos, estacas
+  MDC
+  24
+  menor dado
+  72
+  maior dado
+  120
+  MMC
+  360
+  o MDC nunca passa daqui
+  o MMC começa aqui
+  MDC ≤ menor dado ≤ maior dado ≤ MMC
+A conferência que denuncia o método errado. Com os números 72 e 120, qualquer resposta de MDC maior que 72 ou de MMC menor que 120 está errada — e o erro quase sempre é ter escolhido o método trocado, não ter errado a conta.
+  A régua que confere a resposta
+  MDC ≤ menor dado ≤ maior dado ≤ MMC
+  Depois de calcular, encaixe o resultado nessa régua. Se ele não couber onde deveria, você escolheu o método errado — e ainda dá tempo de trocar.
+  A pegadinha do “quantas vezes”
+  Uma coisa é quando coincidem de novo (calcule o MMC). Outra é quantas vezes coincidem num intervalo (calcule o MMC e depois divida o intervalo por ele). Muita gente acha o MMC certo e para antes da última divisão.
+10 A relação entre MDC e MMC
+  Só para dois números
+  MDC(a, b) · MMC(a, b) = a · b
+Conferindo com os números da página: MDC(72,120) = 24 e MMC(72,120) = 360. Então 24 · 360 = 8 640, e 72 · 120 = 8 640 ✓
+Serve para dois usos:
+  Conferir se você calculou os dois corretamente.
+  Achar o que falta quando o enunciado dá três dos quatro valores — formato que já apareceu em prova.
+  Limite da fórmula
+  Ela vale apenas para dois números. Com três, MDC · MMC ≠ a · b · c — a igualdade simplesmente quebra. Não tente estender.
+11 Os erros que mais custam pontos
+  1 é primo  →  não éPrimo tem exatamente dois divisores. O 1 tem só um.
+  2 não é primo porque é par  →  é primo, e o único parSeus divisores são 1 e 2, exatamente dois.
+  No MDC, pegar o maior expoente  →  é o menorDivisor comum precisa caber nos dois; quem manda é o expoente que falta menos.
+  No MMC, usar só os fatores comuns  →  use todos os fatoresMúltiplo comum precisa conter cada número inteiro, então nenhum fator pode faltar.
+  Achar o MMC e parar  →  leia se pediram “quantas vezes”Se pediram a quantidade num intervalo, ainda falta dividir o intervalo pelo MMC.
+  Divisores de 2³·3²·5 = 3·2·1  →  (3+1)(2+1)(1+1) = 24Cada expoente pode valer zero também — por isso soma-se 1.
+  MDC·MMC = a·b·c para três números  →  só vale para doisCom três números a igualdade não se sustenta.
+  0 é divisor de todo número  →  é múltiplo, nunca divisorDivisão por zero não existe. Mas 0 é múltiplo de qualquer número.
+  Cerca de 24 m × 60 m → perímetro 84 m  →  2·(24+60) = 168 mEm questão de estacas, esquecer de dobrar o perímetro derruba a resposta inteira.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de abrir a resolução, decida em voz alta: “isso é MMC ou MDC?”. Acertar essa pergunta é metade do trabalho.
+    Questão 1 · MMC clássico
+    Três linhas de ônibus partem do mesmo terminal. A linha A parte a cada 12 minutos, a linha B a cada 18 minutos e a linha C a cada 30 minutos. Se as três partiram juntas às 6h, a que horas voltarão a partir juntas pela primeira vez?
+    7h
+8h
+9h
+10h
+12h
+    Ver resolução
+      Eventos que se repetem e voltam a coincidir → MMC.
+      12 = 22 · 3    18 = 2 · 32    30 = 2 · 3 · 5
+      Todos os fatores, com o maior expoente de cada:
+      MMC = 22 · 32 · 5 = 4 · 9 · 5 = 180 minutos
+      180 minutos são 3 horas. Partindo de 6h, voltam a coincidir às 9h.
+      Régua de conferência: 180 > 30, o maior dado ✓
+      Alternativa C
+    Questão 2 · MDC em cortes
+    Um marceneiro tem três tábuas medindo 120 cm, 180 cm e 300 cm. Ele quer cortá-las em pedaços de mesmo comprimento, o maior possível, sem que sobre nenhum pedaço menor. Quantos pedaços obterá ao todo?
+    6
+10
+12
+15
+20
+    Ver resolução
+      Repartir em pedaços iguais, o maior possível, sem sobra → MDC.
+      120 = 23·3·5    180 = 22·32·5    300 = 22·3·52
+      Fatores comuns, com o menor expoente:
+      MDC = 22 · 3 · 5 = 60 cm
+      Agora a segunda parte, que é onde se perde ponto — a pergunta é quantos pedaços, não o tamanho:
+      (120 + 180 + 300) ÷ 60 = 600 ÷ 60 = 10 pedaços
+      Alternativa B
+    Questão 3 · Critérios de divisibilidade
+    Um código de validação tem cinco algarismos na forma 4 3 7 x 0, em que x é um algarismo desconhecido. O código só é válido se o número for divisível por 6. Quantos valores de x tornam o código válido?
+    1
+2
+3
+4
+5
+    Ver resolução
+      Divisível por 6 = divisível por 2 e por 3.
+      Por 2: o número termina em 0, que é par. Já está satisfeito, para qualquer x.
+      Por 3: a soma dos algarismos precisa ser múltiplo de 3.
+      4 + 3 + 7 + x + 0 = 14 + x
+      Testando x de 0 a 9, precisamos que 14 + x seja múltiplo de 3:
+      x = 1 → 15 ✓    x = 4 → 18 ✓    x = 7 → 21 ✓
+      São 3 valores. Repare no padrão: as soluções ficam de 3 em 3.
+      Alternativa C
+    Questão 4 · Contagem de divisores
+    Quantos divisores positivos tem o número 360?
+    12
+18
+20
+24
+36
+    Ver resolução
+      Fatorando:
+      360 = 23 · 32 · 51
+      Soma-se 1 a cada expoente e multiplica:
+      (3+1) · (2+1) · (1+1) = 4 · 3 · 2 = 24
+      A alternativa A é a armadilha de quem multiplica os expoentes sem somar 1: 3·2·1 = 6, ou de quem soma errado.
+      Alternativa D
+    Questão 5 · MMC e a pegadinha do “quantas vezes”
+    Três lâmpadas de um painel piscam em intervalos regulares: a primeira a cada 4 segundos, a segunda a cada 6 segundos e a terceira a cada 10 segundos. Num certo instante as três piscam juntas. Nos 10 minutos seguintes, quantas vezes elas voltam a piscar simultaneamente?
+    6
+10
+12
+15
+60
+    Ver resolução
+      Primeiro o MMC, que dá o intervalo entre duas coincidências:
+      4 = 22    6 = 2·3    10 = 2·5
+      MMC = 22 · 3 · 5 = 60 segundos
+      Aqui está o passo que muita gente pula. A pergunta é quantas vezes, então falta dividir o intervalo total pelo MMC:
+      10 minutos = 600 segundos → 600 ÷ 60 = 10 vezes
+      Elas coincidem aos 60 s, 120 s, 180 s… até 600 s. São 10 coincidências. Quem parou no MMC marcaria 60 — a alternativa E.
+      Alternativa B
+    Questão 6 · MDC formando grupos
+    Uma escola vai organizar 48 meninos e 36 meninas em grupos de trabalho. Todos os grupos devem ter o mesmo número de meninos e o mesmo número de meninas, sem que sobre nenhum aluno. Formando o maior número possível de grupos, quantos alunos haverá em cada grupo?
+    4
+7
+12
+14
+21
+    Ver resolução
+      Repartir sem sobra, maior número de grupos → MDC.
+      48 = 24 · 3    36 = 22 · 32
+      MDC = 22 · 3 = 12 grupos
+      Agora a pergunta real, que é sobre o tamanho do grupo:
+      48 ÷ 12 = 4 meninos  ·  36 ÷ 12 = 3 meninas
+      4 + 3 = 7 alunos por grupo
+      A alternativa C é a armadilha de quem responde o MDC em vez do que foi perguntado.
+      Alternativa B
+    Questão 7 · Números primos
+    Quantos números primos existem entre 20 e 40?
+    2
+3
+4
+5
+6
+    Ver resolução
+      Elimine de saída todos os pares e todos os terminados em 5 — sobram poucos candidatos: 21, 23, 27, 29, 31, 33, 37, 39.
+        21 = 3·7 → composto
+        23 → primo
+        27 = 33 → composto
+        29 → primo
+        31 → primo
+        33 = 3·11 → composto
+        37 → primo
+        39 = 3·13 → composto
+      São quatro: 23, 29, 31, 37.
+      Alternativa C
+    Questão 8 · A relação MDC × MMC
+    O máximo divisor comum de dois números naturais é 6 e o mínimo múltiplo comum deles é 180. Sabendo que um dos números é 36, qual é o outro?
+    24
+30
+42
+60
+90
+    Ver resolução
+      Como são dois números, vale a relação:
+      MDC · MMC = a · b
+      6 · 180 = 36 · b
+      1 080 = 36 · b  →  b = 30
+      Conferindo: 36 = 22·32 e 30 = 2·3·5. O MDC é 2·3 = 6 ✓ e o MMC é 22·32·5 = 180 ✓
+      Alternativa B
+    Questão 9 · Decidir o método
+    Um terreno retangular mede 24 m por 60 m e será cercado com estacas igualmente espaçadas, obrigatoriamente com uma estaca em cada um dos quatro cantos. Adotando a maior distância possível entre estacas consecutivas, quantas estacas serão usadas?
+    7
+12
+14
+16
+28
+    Ver resolução
+      Repartir os lados em partes iguais, a maior possível, com encaixe exato nos cantos → MDC.
+      24 = 23·3    60 = 22·3·5
+      MDC = 22 · 3 = 12 m entre estacas
+      Agora o perímetro — e é aqui que a questão derruba:
+      P = 2 · (24 + 60) = 2 · 84 = 168 m
+      168 ÷ 12 = 14 estacas
+      Numa figura fechada, o número de estacas é igual ao número de espaços — não se soma 1 no final, porque a última estaca coincide com a primeira. A alternativa D é para quem somou.
+      Alternativa C
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+  Sei a diferença entre múltiplo e divisor e que divisores são finitos, múltiplos não
+  Uso de cabeça os critérios de divisibilidade por 2, 3, 4, 5, 6, 9 e 10
+  Sei que o 1 não é primo e que o 2 é o único primo par
+  Reconheço os 25 primos até 100
+  Testo se um número é primo dividindo só pelos primos até sua raiz quadrada
+  Fatoro qualquer número em primos rapidamente
+  Conto os divisores de um número somando 1 a cada expoente e multiplicando
+  Calculo o MDC por fatoração (fatores comuns, menor expoente) e por Euclides
+  Calculo o MMC por fatoração e por decomposição simultânea
+  Decido entre MMC e MDC lendo o enunciado, sem hesitar
+  Confiro a resposta pela régua MDC ≤ menor dado ≤ maior dado ≤ MMC
+  Lembro de dar o último passo quando perguntam “quantos” ou “quantas vezes”
+  Sei que MDC·MMC = a·b vale apenas para dois números
+  Antes de marcar “Dominado” no cronograma
+  Resolva 30 questões deste assunto e acerte pelo menos 21 (70%). Priorize as de MMC e MDC contextualizadas — são as que caem. Depois volte à planilha e atualize a linha correspondente na aba Cronograma.
+    Flashcards para o Anki
+    Foram gerados 48 cartões deste assunto no arquivo ENEM-Matematica-02-divisibilidade-primos-mmc-mdc.txt.
+    Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é criado sozinho, com o tipo de nota Básico e as tags já preenchidas.

@@ -1,0 +1,1167 @@
+<title>Leitura da Proposta</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Redação. As cores semânticas das caixas
+   permanecem idênticas às demais páginas; só o cabeçalho muda. */
+:root{ --area:#1F5A7A }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#7CC3E6 } }
+:root[data-theme="dark"]{ --area:#7CC3E6 }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+.tb{ margin:12px 0; padding:10px 14px; border-left:3px solid var(--area); background:var(--surface); font-size:.95rem }
+.tb .fonte{ display:block; margin-top:6px; font-size:.8rem; color:var(--ink-3) }
+.tb mark.erro{ background:var(--c4-soft); color:inherit; padding:0 2px; border-radius:2px }
+.tb mark.ok{ background:var(--c3-soft); color:inherit; padding:0 2px; border-radius:2px }
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Redação</b> › Estrutura e Técnica › Assunto 1 de 12</p>
+        <h1>Leitura da proposta e delimitação do tema</h1>
+        <p class="deck">Toda redação começa antes da primeira linha: na leitura da proposta. É ali que você descobre o recorte exato que precisa discutir, o que os textos motivadores oferecem e o que eles não podem fazer por você. Errar essa leitura custa caro — o texto pode ficar preso a 40 pontos em três competências ou até ser zerado.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Folha com o título Proposta de redação, três caixas de texto motivador, duas linhas de comando e a frase temática dividida em três blocos coloridos: comando, núcleo e lugar. Uma lupa destaca o núcleo. Legenda: ler antes de escrever">
+  <rect x="30" y="12" width="240" height="176" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="150" y="32" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">PROPOSTA DE REDAÇÃO</text>
+  <rect x="45" y="44" width="66" height="38" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="78" y="67" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">texto I</text>
+  <rect x="117" y="44" width="66" height="38" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="150" y="67" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">texto II</text>
+  <rect x="189" y="44" width="66" height="38" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="222" y="67" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">texto III</text>
+  <line x1="46" y1="98" x2="254" y2="98" style="stroke:var(--rule-2);stroke-width:3"/>
+  <line x1="46" y1="108" x2="210" y2="108" style="stroke:var(--rule-2);stroke-width:3"/>
+  <rect x="46" y="122" width="62" height="14" rx="2" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <line x1="46" y1="142" x2="108" y2="142" style="stroke:var(--c2);stroke-width:2.4"/>
+  <text x="77" y="164" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700;font-size:10px">comando</text>
+  <rect x="114" y="122" width="70" height="14" rx="2" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <line x1="114" y1="142" x2="184" y2="142" style="stroke:var(--c1);stroke-width:2.4"/>
+  <text x="149" y="164" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">núcleo</text>
+  <rect x="190" y="122" width="64" height="14" rx="2" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <line x1="190" y1="142" x2="254" y2="142" style="stroke:var(--c3);stroke-width:2.4"/>
+  <text x="222" y="164" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700;font-size:10px">lugar</text>
+  <text x="150" y="181" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">frase temática</text>
+  <circle cx="149" cy="129" r="21" style="fill:none;stroke:var(--c1);stroke-width:2.6"/>
+  <line x1="164" y1="114" x2="180" y2="98" style="stroke:var(--c1);stroke-width:4"/>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">ler antes de escrever</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Compreensão global e identificação da tese · Estrutura argumentativa: tese, argumentos e contra-argumentos</dd></div>
+      <div><dt>Destrava</dt><dd>Introdução: contextualização e apresentação da tese · Competência 2 — compreender a proposta e aplicar repertório de várias áreas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A prova de redação não pede “um texto sobre um assunto”: pede um texto dissertativo-argumentativo sobre um <strong>tema delimitado</strong>, expresso numa frase — a <strong>frase temática</strong>. Ler a proposta é transformar essa frase num plano: o que precisa ser discutido, o que fica de fora e como usar os textos motivadores sem copiá-los. Este bloco, <strong>Estrutura e Técnica</strong>, ensina como fazer cada parte da redação; o bloco <strong>Competências da Correção</strong> (assuntos 13 a 19) mostra como o corretor avalia.</p>
+<p>Os formatos que a prova usa — e que este assunto prepara:</p>
+<ul>
+  <li><strong>Frase temática</strong> com núcleo e delimitadores — “Desafios para…”, “Caminhos para combater…”, “Perspectivas acerca de…”, quase sempre com recorte de lugar (“no Brasil”).</li>
+  <li><strong>Textos motivadores</strong> verbais e não verbais (notícias, dados, infográficos, imagens, trechos literários) que situam o problema.</li>
+  <li><strong>Comando</strong> fixo: texto dissertativo-argumentativo, na modalidade escrita formal, com proposta de intervenção que respeite os direitos humanos.</li>
+  <li><strong>Avaliação do recorte</strong> na Competência 2: abordagem completa, tangenciamento ou fuga ao tema.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três hábitos. <strong>Decomponha a frase temática</strong> em blocos e anote o que cada um obriga o texto a discutir (seção 04). <strong>Use os textos motivadores para entender, não para preencher</strong>: linhas copiadas não contam e a cópia baixa a nota (seções 06 e 07). E <strong>teste a tese contra a frase temática</strong> antes de escrever: se algum bloco ficou de fora, o texto corre o risco de tangenciar (seção 08).</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A anatomia da proposta de redação</h2>
+<p>Segundo a Cartilha do Participante do Inep, a proposta reúne três tipos de informação. Cada um pede uma leitura diferente.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 256" role="img" aria-label="Três camadas da proposta de redação à esquerda, cada uma com uma seta para o que extrair à direita. 1, instruções: limite de linhas, rascunho e critérios de anulação; extrair as regras práticas da prova. 2, textos motivadores, verbais e não verbais, que situam o tema; extrair a situação-problema e os pontos de vista, sem copiar. 3, comando e tema: tipo, modalidade, frase temática e proposta; extrair o recorte inteiro, o tipo e a intervenção que respeite os direitos humanos">
+  <text x="110" y="18" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">A PROPOSTA</text>
+  <text x="350" y="18" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">O QUE TIRAR DELA</text>
+  <rect x="10" y="30" width="200" height="62" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="110" y="49" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">1 · INSTRUÇÕES</text>
+  <text x="110" y="66" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">limite de linhas, rascunho,</text>
+  <text x="110" y="79" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">critérios de anulação</text>
+  <line x1="216" y1="61" x2="239" y2="61" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="246,61 238,65 238,57" style="fill:var(--ink-3)"/>
+  <rect x="250" y="30" width="200" height="62" rx="4" style="fill:var(--surface);stroke:var(--rule-2);stroke-width:1.2"/>
+  <text x="350" y="58" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">as regras práticas</text>
+  <text x="350" y="72" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">da prova</text>
+  <rect x="10" y="104" width="200" height="62" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="110" y="123" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">2 · TEXTOS MOTIVADORES</text>
+  <text x="110" y="140" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">verbais e não verbais</text>
+  <text x="110" y="153" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">que situam o tema</text>
+  <line x1="216" y1="135" x2="239" y2="135" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="246,135 238,139 238,131" style="fill:var(--ink-3)"/>
+  <rect x="250" y="104" width="200" height="62" rx="4" style="fill:var(--surface);stroke:var(--rule-2);stroke-width:1.2"/>
+  <text x="350" y="132" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">situação-problema e</text>
+  <text x="350" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">pontos de vista: sem copiar</text>
+  <rect x="10" y="178" width="200" height="62" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="110" y="197" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">3 · COMANDO + TEMA</text>
+  <text x="110" y="214" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">tipo, modalidade,</text>
+  <text x="110" y="227" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">frase temática, proposta</text>
+  <line x1="216" y1="209" x2="239" y2="209" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="246,209 238,213 238,205" style="fill:var(--ink-3)"/>
+  <rect x="250" y="178" width="200" height="62" rx="4" style="fill:var(--surface);stroke:var(--rule-2);stroke-width:1.2"/>
+  <text x="350" y="206" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">o recorte inteiro, o tipo</text>
+  <text x="350" y="220" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">e a intervenção (DH)</text>
+</svg>
+<figcaption><b>Três partes, três leituras.</b> As instruções trazem as regras práticas (limite de linhas, rascunho, resumo dos critérios de anulação). Os textos motivadores apresentam a situação-problema e pontos de vista sobre ela. O comando fixa o tipo de texto, a modalidade, a frase temática e a exigência de uma proposta de intervenção que respeite os direitos humanos. Quem lê só a frase temática perde as regras; quem lê só os motivadores corre o risco de copiar.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">O comando, nas palavras da Cartilha</span>
+  <p>A Cartilha do Participante reproduz o início do comando: “A partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua formação, redija texto dissertativo-argumentativo em modalidade escrita formal da língua portuguesa sobre o tema…”. Cada trecho é uma exigência: <strong>ler</strong> os motivadores, <strong>ir além deles</strong> com conhecimentos próprios (o repertório sociocultural), respeitar o <strong>tipo</strong> e a <strong>modalidade</strong> e discutir <strong>o tema</strong> — não outro.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Trecho do comando</th><th>O que ele exige</th><th>Competência ligada</th></tr></thead>
+  <tbody>
+    <tr><td>“a partir da leitura dos textos motivadores”</td><td>entender a situação-problema que eles apresentam</td><td>C2 (tema)</td></tr>
+    <tr><td>“com base nos conhecimentos construídos ao longo de sua formação”</td><td>trazer informações que extrapolem a prova</td><td>C2 (repertório) e C3</td></tr>
+    <tr><td>“texto dissertativo-argumentativo”</td><td>defender um ponto de vista com argumentos, em prosa</td><td>C2 (tipo)</td></tr>
+    <tr><td>“modalidade escrita formal”</td><td>norma-padrão, sem marcas de oralidade</td><td>C1</td></tr>
+    <tr><td>“sobre o tema…”</td><td>discutir o recorte da frase temática por inteiro</td><td>C2, com reflexo em C3 e C5</td></tr>
+    <tr><td>proposta de intervenção que respeite os direitos humanos</td><td>propor ação concreta para o problema discutido</td><td>C5</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Tema × assunto (e tema × tese)</h2>
+<div class="box def">
+  <span class="tag">A definição oficial</span>
+  <p>Para a Cartilha do Participante, o tema é o núcleo das ideias sobre as quais o ponto de vista se organiza e se caracteriza por ser uma <strong>delimitação de um assunto mais abrangente</strong>. O assunto é a área ampla (“envelhecimento”, “cinema”); o tema é o recorte que a frase temática faz dentro dela.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Ano</th><th>Assunto amplo</th><th>Tema (frase temática)</th></tr></thead>
+  <tbody>
+    <tr><td class="m">2016</td><td>intolerância religiosa</td><td>Caminhos para combater a intolerância religiosa no Brasil</td></tr>
+    <tr><td class="m">2017</td><td>educação de pessoas surdas</td><td>Desafios para a formação educacional de surdos no Brasil</td></tr>
+    <tr><td class="m">2020</td><td>saúde mental</td><td>O estigma associado às doenças mentais na sociedade brasileira</td></tr>
+    <tr><td class="m">2022</td><td>povos e comunidades tradicionais</td><td>Desafios para a valorização de comunidades e povos tradicionais no Brasil</td></tr>
+    <tr><td class="m">2025</td><td>envelhecimento</td><td>Perspectivas acerca do envelhecimento na sociedade brasileira</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Há ainda uma terceira noção que não se confunde com as outras duas: a <strong>tese</strong>, a posição que <em>você</em> vai defender sobre o tema. O tema é dado pela prova e é igual para todos os participantes; a tese é sua. Em <strong>Estrutura argumentativa: tese, argumentos e contra-argumentos</strong> (Linguagens), o teste é simples: a tese é uma frase completa que alguém poderia contestar; o tema, não.</p>
+<div class="eq">
+  <span class="lbl">Três perguntas, três respostas</span>
+  <p><strong>Assunto:</strong> de que área a prova fala? → saúde mental.<br><strong>Tema:</strong> que recorte dessa área ela pede? → o estigma associado às doenças mentais na sociedade brasileira.<br><strong>Tese:</strong> o que eu defendo sobre esse recorte? → que o estigma afasta as pessoas do tratamento e precisa ser combatido na escola e na mídia.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Repetir o tema não é ter tese</span>
+  <p>Frases como “o estigma associado às doenças mentais é um tema muito importante” apenas reescrevem a frase temática. Elas não tomam posição e não indicam o que o texto vai argumentar. O assunto <strong>Introdução: contextualização e apresentação da tese</strong> mostra como transformar o recorte numa tese.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> A frase temática, bloco a bloco</h2>
+<p>A frase temática é o elemento mais importante da proposta. Ao comentar o tema de 2025, a Cartilha lembra que a redação deveria abordar <strong>todos os elementos</strong> dessa frase. O jeito prático de garantir isso é dividi-la em blocos e perguntar de cada um: <strong>o que este bloco obriga o texto a discutir?</strong></p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 242" role="img" aria-label="A frase temática do Enem 2023 dividida em cinco blocos, cada um com seu papel: desafios para o enfrentamento, a orientação da discussão, obstáculos e saídas; da invisibilidade, o problema, o que não é visto; do trabalho de cuidado, o núcleo, o assunto; realizado pela mulher, recorte de quem se fala; no Brasil, recorte de lugar. Nota: cada bloco precisa aparecer na tese e no desenvolvimento">
+  <text x="10" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">TEMA DO ENEM 2023, BLOCO A BLOCO</text>
+  <rect x="10" y="28" width="206" height="30" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="113" y="47" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">Desafios para o enfrentamento</text>
+  <line x1="222" y1="43" x2="240" y2="43" style="stroke:var(--ink-3);stroke-width:1.4"/><polygon points="246,43 239,46.5 239,39.5" style="fill:var(--ink-3)"/>
+  <text x="252" y="47" class="svg-lbl" style="fill:var(--c2);font-size:10px">orientação: obstáculos e saídas</text>
+  <rect x="10" y="66" width="206" height="30" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="113" y="85" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">da invisibilidade</text>
+  <line x1="222" y1="81" x2="240" y2="81" style="stroke:var(--ink-3);stroke-width:1.4"/><polygon points="246,81 239,84.5 239,77.5" style="fill:var(--ink-3)"/>
+  <text x="252" y="85" class="svg-lbl" style="fill:var(--c3);font-size:10px">problema: o que não é visto</text>
+  <rect x="10" y="104" width="206" height="30" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="113" y="123" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">do trabalho de cuidado</text>
+  <line x1="222" y1="119" x2="240" y2="119" style="stroke:var(--ink-3);stroke-width:1.4"/><polygon points="246,119 239,122.5 239,115.5" style="fill:var(--ink-3)"/>
+  <text x="252" y="123" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">núcleo: o assunto</text>
+  <rect x="10" y="142" width="206" height="30" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="113" y="161" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">realizado pela mulher</text>
+  <line x1="222" y1="157" x2="240" y2="157" style="stroke:var(--ink-3);stroke-width:1.4"/><polygon points="246,157 239,160.5 239,153.5" style="fill:var(--ink-3)"/>
+  <text x="252" y="161" class="svg-lbl" style="fill:var(--c3);font-size:10px">recorte: de quem se fala</text>
+  <rect x="10" y="180" width="206" height="30" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="113" y="199" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">no Brasil</text>
+  <line x1="222" y1="195" x2="240" y2="195" style="stroke:var(--ink-3);stroke-width:1.4"/><polygon points="246,195 239,198.5 239,191.5" style="fill:var(--ink-3)"/>
+  <text x="252" y="199" class="svg-lbl" style="fill:var(--c3);font-size:10px">recorte: lugar</text>
+  <text x="230" y="234" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">cada bloco precisa aparecer na tese e no desenvolvimento</text>
+</svg>
+<figcaption><b>Cada bloco é uma exigência.</b> No tema de 2023, “trabalho de cuidado” é o núcleo — o assunto. “Desafios para o enfrentamento” pede que o texto discuta obstáculos e caminhos para superá-los; “da invisibilidade” define o problema (um trabalho que não é reconhecido); “realizado pela mulher” fixa de quem se fala; “no Brasil”, onde. Um texto sobre trabalho de cuidado em geral, sem a invisibilidade, a mulher ou o Brasil, deixaria peças do recorte de fora.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">Palavras-chave: núcleo e delimitadores</span>
+  <p>Chame de <strong>núcleo</strong> a palavra ou expressão que nomeia o assunto (“envelhecimento”, “cinema”, “registro civil”) e de <strong>delimitadores</strong> tudo o que restringe esse núcleo: o aspecto (“acesso”, “estigma”, “invisibilidade”), o grupo (“surdos”, “mulher”, “povos tradicionais”), o lugar (“no Brasil”) e a orientação da discussão (“desafios para”, “caminhos para”). Esses nomes são um método de estudo, não termos da Cartilha.</p>
+</div>
+
+<p>As expressões que abrem muitas frases temáticas indicam o tipo de discussão esperado. A tabela é uma leitura de estudo — não há regra oficial que obrigue um formato para cada uma —, mas ajuda a não esquecer metade do recorte.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Expressão</th><th>Exemplo de prova</th><th>O que a discussão costuma precisar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Desafios para…</strong></td><td>2017, 2022, 2023, 2024</td><td>apontar obstáculos concretos e discutir como superá-los</td></tr>
+    <tr><td><strong>Caminhos para combater…</strong></td><td>2016</td><td>reconhecer o problema e discutir formas de enfrentá-lo</td></tr>
+    <tr><td><strong>Perspectivas acerca de…</strong></td><td>2025</td><td>discutir modos de ver e de lidar com o fenômeno</td></tr>
+    <tr><td><strong>A persistência de…</strong></td><td>2015</td><td>explicar por que o problema continua existindo</td></tr>
+    <tr><td><strong>Democratização do acesso a…</strong></td><td>2019</td><td>discutir quem tem e quem não tem acesso, e por quê</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Sublinhe com cores diferentes</span>
+  <p>No caderno de questões, marque o núcleo de um jeito e cada delimitador de outro. Na hora de reler a tese e o desenvolvimento, você só precisa conferir se todas as marcas aparecem no seu texto — com as mesmas palavras ou com sinônimos precisos.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Do tema ao recorte do seu texto</h2>
+<p>O tema é obrigatório e igual para todos. Dentro dele, porém, cada participante escolhe o <strong>foco</strong> da discussão: as causas, as consequências ou os aspectos que vai desenvolver. A Cartilha recomenda justamente isso: refletir sobre o tema para decidir como abordá-lo, qual ponto de vista adotar e como defendê-lo.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 246" role="img" aria-label="Funil em quatro níveis, do mais largo ao mais estreito: assunto, amplo; tema, obrigatório; foco, você escolhe; tese. Exemplo do Enem 2020 à direita: assunto saúde mental, e ficar só nele é tangenciamento; tema, o estigma das doenças mentais no Brasil; foco, dois eixos, o estigma afasta do tratamento e a mídia o reforça; tese, a posição que reúne os eixos. Nota: a prova dá os dois primeiros níveis e você constrói os dois últimos">
+  <text x="268" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">EXEMPLO: ENEM 2020</text>
+  <polygon points="4,26 260,26 238,70 26,70" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="132" y="53" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">ASSUNTO · amplo</text>
+  <line x1="264" y1="48" x2="262" y2="48" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="268" y="45" class="svg-lbl" style="fill:var(--ink);font-size:10px">saúde mental</text>
+  <text x="268" y="59" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">só ele: tangenciamento</text>
+  <polygon points="26,76 238,76 216,120 48,120" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="132" y="103" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">TEMA · obrigatório</text>
+  <line x1="242" y1="98" x2="262" y2="98" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="268" y="95" class="svg-lbl" style="fill:var(--ink);font-size:10px">o estigma das doenças</text>
+  <text x="268" y="109" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">mentais no Brasil</text>
+  <polygon points="48,126 216,126 194,170 70,170" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="132" y="153" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">FOCO · você escolhe</text>
+  <line x1="220" y1="148" x2="262" y2="148" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="268" y="145" class="svg-lbl" style="fill:var(--ink);font-size:10px">eixos: afasta do tratamento;</text>
+  <text x="268" y="159" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">a mídia o reforça</text>
+  <polygon points="70,176 194,176 174,220 90,220" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="132" y="203" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-weight:700">TESE</text>
+  <line x1="198" y1="198" x2="262" y2="198" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="268" y="195" class="svg-lbl" style="fill:var(--ink);font-size:10px">a posição que reúne</text>
+  <text x="268" y="209" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">os eixos</text>
+  <text x="230" y="238" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:9.5px">a prova dá os dois primeiros; você constrói os dois últimos</text>
+</svg>
+<figcaption><b>O funil vai do que a prova dá ao que você escolhe.</b> O assunto (saúde mental) e o tema (o estigma associado às doenças mentais na sociedade brasileira) vêm da prova. O foco — por exemplo, dois eixos: o estigma afasta as pessoas do tratamento, e a mídia reforça estereótipos — é escolha sua, desde que fique dentro do tema. A tese é a posição que reúne esses eixos. Escolher um foco não é tangenciar; ficar só no assunto amplo é.</figcaption>
+</figure>
+
+<div class="box warn">
+  <span class="tag">Foco não é corte do tema</span>
+  <p>Você pode escolher dois eixos entre muitos possíveis, mas não pode retirar um bloco da frase temática. Discutir só duas causas do estigma das doenças mentais é um foco legítimo; discutir saúde mental sem falar de estigma é ficar no assunto amplo.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">A pergunta-problema</span>
+  <p>Uma forma prática de fixar o recorte é reescrever a frase temática como pergunta: <strong>“Por que o estigma associado às doenças mentais persiste na sociedade brasileira, e como enfrentá-lo?”</strong> A tese será a resposta a essa pergunta; os parágrafos de desenvolvimento, as razões dessa resposta; a conclusão, a proposta.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Como ler os textos motivadores</h2>
+<p>A Cartilha do Participante descreve os textos motivadores como textos, em geral verbais e não verbais, que remetem ao tema “a fim de orientar sua reflexão”. Na proposta de 2025, por exemplo, havia dados do Censo 2022 divulgados pelo IBGE, pictogramas usados para representar pessoas idosas, um artigo de opinião, um infográfico, um trecho de conto e a resenha de um documentário — gêneros diferentes iluminando o mesmo tema.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Passo (segundo a Cartilha)</th><th>Como fazer na prática</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1.</strong> Observar as palavras ou fragmentos que indicam o posicionamento dos autores e a situação-problema central</td><td>sublinhe, em cada texto, a frase que resume o problema</td></tr>
+    <tr><td><strong>2.</strong> Identificar, em cada texto, o ponto de vista e os argumentos dos autores, se houver</td><td>anote na margem, em poucas palavras, o que cada texto defende ou mostra</td></tr>
+    <tr><td><strong>3.</strong> Refletir sobre esses posicionamentos, definir com clareza o seu e elencar outras informações do seu conhecimento de mundo</td><td>liste o que você sabe que os textos <em>não</em> dizem: leis, fatos, obras, conceitos</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Os motivadores são ponto de partida</span>
+  <p>A Cartilha permite que você se aproprie das ideias dos textos motivadores para construir a argumentação, mas pede que não fique preso a elas: a redação precisa trazer informações que extrapolem a prova. Na Competência 3, o descritor do nível 120 fala em informações “limitadas aos argumentos dos textos motivadores” — quem só repete a coletânea, ainda que com outras palavras, tende a ficar nos níveis médios.</p>
+</div>
+<div class="box def">
+  <span class="tag">Não verbal também é texto</span>
+  <p>Gráficos, infográficos, charges e imagens trazem o problema de forma condensada. Leia-os como em <strong>Texto e imagem</strong> (Linguagens): o que o dado mostra, qual é a comparação, que crítica a imagem faz. Uma informação de gráfico também não deve ser simplesmente transcrita; interprete-a.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> O risco da cópia</h2>
+<div class="box def">
+  <span class="tag">O que dizem o edital e a Cartilha</span>
+  <p>Os trechos copiados da Prova de Redação ou do Caderno de Questões são <strong>desconsiderados</strong> na contagem das linhas escritas: contam só as linhas produzidas pelo participante. Linha com cópia é a linha composta, <strong>integral ou parcialmente</strong>, por trechos copiados. A recorrência de cópia é avaliada negativamente e pode baixar a nota ou levar à anulação como cópia; na Competência 2, desenvolver o tema “recorrendo à cópia de trechos dos textos motivadores” aparece no descritor do nível 80.</p>
+</div>
+<p>Compare duas formas de usar a mesma informação. Imagine um texto motivador hipotético que diga: “Em muitas cidades brasileiras, centros culturais fecharam as portas por falta de público e de verba.”</p>
+<div class="tb">
+  <p><strong>Cópia.</strong> <mark class="erro">Em muitas cidades brasileiras, centros culturais fecharam as portas por falta de público e de verba.</mark> Isso é um problema muito grave para o país.</p>
+  <p><strong>Uso autônomo.</strong> <mark class="ok">O fechamento de espaços culturais por escassez de recursos</mark>, apontado na própria discussão sobre o tema, não é causa isolada: ele resulta de políticas que concentram investimentos nas capitais e deixam o interior sem programação regular.</p>
+  <span class="fonte">Texto motivador hipotético e trechos elaborados para fins didáticos.</span>
+</div>
+<p>No primeiro trecho, a linha copiada não conta e nada é acrescentado. No segundo, a ideia é <strong>retomada por paráfrase</strong>, em poucas palavras, e serve de ponto de partida para uma <strong>interpretação própria</strong> — a causa que o texto vai defender.</p>
+<div class="box warn">
+  <span class="tag">Cópia pode levar ao texto insuficiente</span>
+  <p>Como as linhas copiadas não entram na contagem, um texto curto e apoiado em cópia pode ficar com <strong>7 linhas próprias ou menos</strong> — e texto com até 7 linhas é classificado como insuficiente, com nota zero. Essa consequência é detalhada em <strong>Situações que zeram</strong>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Como retomar sem copiar</span>
+  <p>Troque a estrutura da frase, não só uma ou outra palavra; resuma em vez de reproduzir; e, logo depois, acrescente algo seu — uma causa, um exemplo, uma comparação. Se você precisar de um dado da coletânea, cite-o de forma breve e interprete-o.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Abordagem completa, tangenciamento e fuga</h2>
+<p>As definições abaixo são as mesmas usadas em <strong>Competência 2 — compreender a proposta e aplicar repertório de várias áreas</strong> e em <strong>Situações que zeram</strong>, ambas no bloco Competências da Correção.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Definição (Cartilha do Participante)</th><th>Consequência</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Abordagem completa</strong></td><td>o texto discute o recorte da frase temática</td><td>avaliação normal nas cinco competências</td></tr>
+    <tr><td><strong>Tangenciamento</strong></td><td>abordagem parcial, baseada <strong>somente no assunto mais amplo</strong> a que o tema está vinculado</td><td>C2, C3 e C5 não passam de <strong>40 pontos</strong>; C1 e C4 não são limitadas por essa regra</td></tr>
+    <tr><td><strong>Fuga ao tema</strong></td><td>nem o tema específico nem o assunto mais geral são abordados</td><td>nota <strong>zero</strong>; o texto não é avaliado em nenhuma competência</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Veja três teses para o tema do Enem 2025, “Perspectivas acerca do envelhecimento na sociedade brasileira”:</p>
+<div class="tb">
+  <p><strong>Tese 1.</strong> <mark class="erro">O envelhecimento é um processo biológico universal, marcado pela perda gradual de funções das células.</mark></p>
+  <p><strong>Tese 2.</strong> <mark class="erro">O uso excessivo de celulares prejudica a concentração dos estudantes.</mark></p>
+  <p><strong>Tese 3.</strong> <mark class="ok">No Brasil, a velhice ainda é vista sobretudo como perda, visão que alimenta o etarismo e atrasa a adaptação das cidades e dos serviços a uma população que envelhece.</mark></p>
+  <span class="fonte">Teses elaboradas para fins didáticos.</span>
+</div>
+<p>A tese 1 fica no assunto amplo: a Cartilha cita justamente o envelhecimento tratado só como processo biológico universal como exemplo de tangenciamento. A tese 2 trata de outro assunto: um texto inteiro desenvolvido a partir dela fugiria ao tema. A tese 3 cobre os blocos — <strong>perspectivas</strong> (como a velhice é vista), <strong>envelhecimento</strong> e <strong>sociedade brasileira</strong> — e ainda anuncia dois eixos para o desenvolvimento.</p>
+<div class="box warn">
+  <span class="tag">Tangenciar é silencioso</span>
+  <p>Quem foge ao tema geralmente percebe; quem tangencia, quase nunca. O texto pode ter boa norma, bons conectivos e um repertório interessante — só que sobre o assunto, e não sobre o recorte. Por isso a conferência tem de ser feita na tese, antes do desenvolvimento, e de novo no fim do rascunho.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova: a leitura em seis passos</h2>
+<p>O roteiro abaixo é uma sugestão de método. A divisão do tempo entre leitura, rascunho e passagem a limpo é tratada em <strong>Planejamento do rascunho e gestão do tempo</strong>.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Passo</th><th>O que fazer</th><th>Pergunta de controle</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1. Frase temática</strong></td><td>ler primeiro e copiar no rascunho</td><td>sei dizer o tema com as palavras da prova?</td></tr>
+    <tr><td><strong>2. Blocos</strong></td><td>separar núcleo e delimitadores</td><td>o que cada bloco obriga a discutir?</td></tr>
+    <tr><td><strong>3. Motivadores</strong></td><td>ler com os três passos da Cartilha, anotando na margem</td><td>qual é a situação-problema?</td></tr>
+    <tr><td><strong>4. Pergunta-problema</strong></td><td>reescrever o tema como pergunta</td><td>a pergunta contém todos os blocos?</td></tr>
+    <tr><td><strong>5. Tese provisória</strong></td><td>responder à pergunta com uma posição e dois eixos</td><td>alguém poderia discordar dela?</td></tr>
+    <tr><td><strong>6. Conferência</strong></td><td>pôr a tese ao lado da frase temática</td><td>algum bloco ficou de fora?</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Tema difícil? Os motivadores ajudam</span>
+  <p>A Cartilha observa que os textos motivadores podem ser de grande ajuda quando o tema é pouco familiar. Use-os para descobrir <strong>qual é o problema</strong> e quais aspectos dele estão em jogo; depois, procure no que você já estudou (História, Geografia, Sociologia, Literatura, notícias) algo que se ligue a esses aspectos.</p>
+</div>
+<div class="box def">
+  <span class="tag">Onde isso conversa com outros assuntos</span>
+  <p>Em Linguagens, <strong>Compreensão global e identificação da tese</strong> treina o mesmo olhar sobre os textos motivadores, e <strong>Gêneros textuais: notícia, reportagem, artigo de opinião, crônica, resenha</strong> ajuda a reconhecer o que cada texto da coletânea está fazendo. Na Redação, o próximo assunto, <strong>Introdução: contextualização e apresentação da tese</strong>, começa exatamente onde este termina: na tese que cobre o recorte.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Treino guiado com um tema real</h2>
+<p>Tema do Enem 2021: <strong>“Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil”</strong>. Acompanhe a leitura completa.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Bloco</th><th>Tipo</th><th>O que obriga a discutir</th></tr></thead>
+  <tbody>
+    <tr><td>registro civil</td><td>núcleo</td><td>a certidão de nascimento e a documentação básica</td></tr>
+    <tr><td>invisibilidade</td><td>delimitador (problema)</td><td>pessoas que, sem registro, não existem para o Estado</td></tr>
+    <tr><td>garantia de acesso à cidadania</td><td>delimitador (relação)</td><td>o registro como porta de entrada para direitos: escola, saúde, benefícios, voto</td></tr>
+    <tr><td>no Brasil</td><td>delimitador (lugar)</td><td>a realidade brasileira, e não a de outros países</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="eq">
+  <span class="lbl">Pergunta-problema e tese provisória</span>
+  <p><strong>Pergunta:</strong> por que parte da população brasileira ainda vive sem registro civil, e o que isso significa para o acesso à cidadania?<br><strong>Tese:</strong> a falta de registro civil torna milhares de brasileiros invisíveis para o Estado, o que os afasta de direitos básicos; esse quadro persiste pela distância entre os cartórios e as populações mais isoladas e pela desinformação sobre a gratuidade do registro.</p>
+</div>
+<p>Repare que a tese cita os quatro blocos e anuncia dois eixos (distância e desinformação). Um repertório possível para o segundo eixo é a <strong>Lei nº 9.534/1997</strong>, que tornou gratuitos o registro civil de nascimento e a primeira certidão — informação de fora da prova, ligada diretamente ao recorte.</p>
+<div class="tb">
+  <p><strong>Leitura que tangencia.</strong> <mark class="erro">A cidadania é um conceito antigo, que surgiu na Grécia e se transformou ao longo da história até chegar às democracias modernas.</mark></p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>Esse começo fica no assunto amplo (cidadania em geral) e abandona o registro civil, a invisibilidade e o Brasil. Se o texto inteiro seguir por esse caminho, o risco de tangenciamento é real.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Ler só os textos motivadores e “deduzir” o tema</span> &nbsp;→&nbsp; <span class="c">a frase temática é a referência</span></span><small>Os motivadores orientam; o recorte está na frase.</small></li>
+  <li><span><span class="x">Escrever sobre o assunto amplo</span> &nbsp;→&nbsp; <span class="c">discuta cada bloco da frase temática</span></span><small>É o tangenciamento: C2, C3 e C5 limitadas a 40.</small></li>
+  <li><span><span class="x">Esquecer o recorte de lugar</span> &nbsp;→&nbsp; <span class="c">“no Brasil” é exigência, não enfeite</span></span><small>Tratar só de outro país foi exemplo oficial de tangenciamento em 2025.</small></li>
+  <li><span><span class="x">Confundir foco com corte do tema</span> &nbsp;→&nbsp; <span class="c">escolha eixos, mas mantenha todos os blocos</span></span><small>Selecionar causas é legítimo; retirar um delimitador, não.</small></li>
+  <li><span><span class="x">Repetir a frase temática como se fosse tese</span> &nbsp;→&nbsp; <span class="c">tome posição sobre o recorte</span></span><small>“É um tema importante” não é ponto de vista.</small></li>
+  <li><span><span class="x">Copiar trechos dos motivadores</span> &nbsp;→&nbsp; <span class="c">parafraseie e acrescente algo seu</span></span><small>Linhas copiadas, mesmo em parte, não contam.</small></li>
+  <li><span><span class="x">Ficar preso às ideias da coletânea</span> &nbsp;→&nbsp; <span class="c">traga conhecimento de fora da prova</span></span><small>Argumentos limitados aos motivadores ficam nos níveis médios da C3.</small></li>
+  <li><span><span class="x">Ignorar os textos não verbais</span> &nbsp;→&nbsp; <span class="c">gráficos e imagens também mostram o problema</span></span><small>Interprete-os em vez de transcrevê-los.</small></li>
+  <li><span><span class="x">Achar que tangenciar zera a redação</span> &nbsp;→&nbsp; <span class="c">zera a fuga; o tangenciamento limita três competências</span></span><small>C1 e C4 continuam avaliadas normalmente.</small></li>
+  <li><span><span class="x">Conferir o tema só no fim</span> &nbsp;→&nbsp; <span class="c">confira na tese, antes de desenvolver</span></span><small>Corrigir o recorte no rascunho custa minutos; na folha definitiva, a nota.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove situações de leitura da proposta. Os temas citados são de edições reais do Enem; teses, trechos e planejamentos foram elaborados para fins didáticos.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Assunto e tema</span>
+    <p class="enun">O tema da redação do Enem 2017 foi “Desafios para a formação educacional de surdos no Brasil”. A alternativa que identifica corretamente o assunto amplo e o tema dessa proposta, nessa ordem, é:</p>
+    <ol class="alt">
+      <li>assunto: desafios para a formação educacional de surdos no Brasil; tema: educação.</li>
+      <li>assunto: educação de pessoas surdas; tema: os desafios para a formação educacional de surdos no Brasil.</li>
+      <li>assunto e tema coincidem: ambos correspondem à palavra “surdos”.</li>
+      <li>assunto: a Língua Brasileira de Sinais; tema: a surdez como condição biológica.</li>
+      <li>assunto: educação de pessoas surdas; tema: a educação de surdos nos diferentes países do mundo.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Para a Cartilha, o tema é a <strong>delimitação de um assunto mais abrangente</strong>. O assunto é a área geral (educação de pessoas surdas); o tema é o recorte da frase temática inteira, com “desafios”, “formação educacional” e “no Brasil”.</p>
+      <p>A A inverte as noções. A C reduz o tema ao núcleo e apaga a diferença entre os dois. A D troca o recorte por outro (a surdez como condição biológica não é o tema). A E retira o recorte de lugar, que faz parte do tema.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · O bloco esquecido</span>
+    <p class="enun">Para o tema do Enem 2025, “Perspectivas acerca do envelhecimento na sociedade brasileira”, um participante dedicou todos os parágrafos a mostrar como o Japão se adaptou ao envelhecimento da população, sem relacionar essa experiência à realidade brasileira. Segundo a Cartilha do Participante, essa redação</p>
+    <ol class="alt">
+      <li>fugiu ao tema e recebe nota zero, pois tratou de outro país.</li>
+      <li>abordou o tema de forma completa, pois o envelhecimento é o núcleo da frase temática.</li>
+      <li>tangenciou o tema e fica limitada a 40 pontos nas cinco competências.</li>
+      <li>tangenciou o tema, pois tratou o envelhecimento só fora do contexto brasileiro; C2, C3 e C5 não passam de 40 pontos.</li>
+      <li>será penalizada apenas na Competência 1, por não usar exemplos nacionais.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A Cartilha de 2026 cita como exemplo de tangenciamento, no tema de 2025, tratar o envelhecimento <strong>só fora do contexto brasileiro</strong>. O texto discute o assunto amplo, mas deixa de fora o bloco “sociedade brasileira”. O tangenciamento limita C2, C3 e C5 a <strong>40 pontos</strong>.</p>
+      <p>A A confunde com fuga: o texto trata do assunto (envelhecimento). A B ignora o recorte de lugar. A C estende o limite a C1 e C4, que não são limitadas por essa regra. A E erra a competência: a abordagem do tema é avaliada na C2.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · O papel dos motivadores</span>
+    <p class="enun">Entre as estratégias abaixo, a que corresponde às recomendações da Cartilha do Participante para o uso dos textos motivadores é:</p>
+    <ol class="alt">
+      <li>apropriar-se das ideias dos textos motivadores para entender o problema, retomá-las por paráfrase quando necessário e acrescentar informações de fora da prova.</li>
+      <li>reproduzir o primeiro parágrafo de um dos textos motivadores na introdução, já que ele apresenta o tema com precisão.</li>
+      <li>construir toda a argumentação com os dados dos textos motivadores, pois são fontes legítimas e dispensam outro repertório.</li>
+      <li>deixar de ler os textos motivadores, pois a frase temática já contém todas as informações necessárias.</li>
+      <li>copiar trechos dos textos motivadores, desde que ocupem, ao todo, menos de sete linhas.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A Cartilha recomenda ler com atenção a proposta e os textos motivadores, permite que o participante se aproprie das ideias deles, mas pede que <strong>não copie</strong> e que use informações que <strong>extrapolem a prova</strong>.</p>
+      <p>A B é cópia: as linhas copiadas são desconsideradas e a cópia é avaliada negativamente. A C contraria a exigência de ir além da coletânea (a C3, no nível 120, fala em argumentos “limitados aos textos motivadores”). A D contraria a recomendação de ler os motivadores com atenção. A E inventa um limite que não existe: toda linha com cópia deixa de contar.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Linhas com cópia</span>
+    <p class="enun">Uma redação tem 20 linhas escritas. Quatro delas contêm, cada uma, um trecho copiado de um dos textos motivadores; o restante de cada uma dessas quatro linhas foi escrito pelo participante. De acordo com o edital e a Cartilha do Enem 2026,</p>
+    <ol class="alt">
+      <li>como as quatro linhas são apenas parcialmente copiadas, todas as 20 linhas entram na contagem e a cópia não interfere na avaliação.</li>
+      <li>a redação recebe nota zero por fuga ao tema, já que reproduziu a coletânea.</li>
+      <li>as quatro linhas contam pela metade, totalizando 18 linhas válidas.</li>
+      <li>a redação é classificada como texto insuficiente, pois apresenta cópia.</li>
+      <li>as quatro linhas são desconsideradas na contagem, restando 16 linhas próprias; o texto não é insuficiente, mas a cópia é avaliada negativamente.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Linha com cópia é a linha composta, <strong>integral ou parcialmente</strong>, por trechos copiados, e essas linhas são <strong>desconsideradas</strong>. Restam 16 linhas próprias, bem acima do limite de texto insuficiente (até 7 linhas). Mesmo assim, a cópia pesa: a recorrência é avaliada negativamente, e a C2 tem a cópia no descritor do nível 80.</p>
+      <p>A A esquece que a cópia parcial também tira a linha da contagem. A B confunde cópia com fuga: o trecho copiado é sobre o tema. A C inventa uma regra de “meia linha”. A D aplica o texto insuficiente sem fazer a conta: 16 linhas próprias superam 7.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · O planejamento que atende ao recorte</span>
+    <p class="enun">O tema do Enem 2016 foi “Caminhos para combater a intolerância religiosa no Brasil”. O planejamento que atende ao recorte completo desse tema é:</p>
+    <ol class="alt">
+      <li>introdução sobre a origem das grandes religiões; desenvolvimento descrevendo as crenças de cada uma; conclusão sobre a importância da fé.</li>
+      <li>introdução sobre a intolerância em geral; desenvolvimento sobre preconceito racial e polarização política; conclusão pedindo mais respeito entre as pessoas.</li>
+      <li>introdução com a garantia constitucional da liberdade de crença; desenvolvimento sobre a desinformação acerca das religiões de matriz africana e a impunidade dos ataques a templos no país; conclusão com ações de educação e de responsabilização.</li>
+      <li>introdução sobre as guerras religiosas na Europa; desenvolvimento sobre conflitos religiosos no Oriente Médio; conclusão sobre a paz mundial.</li>
+      <li>relato, do início ao fim, da história de uma família vítima de intolerância, sem defesa de ponto de vista.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A C cobre os blocos: <strong>intolerância religiosa</strong> (núcleo), <strong>no Brasil</strong> (os eixos tratam da realidade do país) e <strong>caminhos para combater</strong> (a conclusão propõe ações de educação e responsabilização). Os dois eixos são um foco legítimo dentro do tema.</p>
+      <p>A A fala de religiões, sem discutir a intolerância nem como combatê-la. A B amplia para a intolerância em geral, deixando de lado a religiosa. A D tira o recorte de lugar. A E é predominantemente narrativa e não defende ponto de vista: não atende ao tipo dissertativo-argumentativo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Três redações, três destinos</span>
+    <p class="enun">Para o tema do Enem 2019, “Democratização do acesso ao cinema no Brasil”, considere três redações:<br>I. Discute apenas a história do cinema mundial e as escolas cinematográficas, sem tratar de acesso.<br>II. Discute a importância da leitura de livros na formação dos jovens, sem mencionar cinema.<br>III. Discute a concentração das salas de exibição nas capitais e o preço dos ingressos como barreiras de acesso no país.<br>Segundo a Cartilha do Participante, essas redações configuram, respectivamente,</p>
+    <ol class="alt">
+      <li>tangenciamento, fuga ao tema e abordagem completa.</li>
+      <li>fuga ao tema, tangenciamento e abordagem completa.</li>
+      <li>abordagem completa, fuga ao tema e tangenciamento.</li>
+      <li>tangenciamento, tangenciamento e abordagem completa.</li>
+      <li>fuga ao tema, fuga ao tema e tangenciamento.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A redação I trata do <strong>assunto amplo</strong> (cinema) sem o recorte (acesso, democratização, Brasil): tangencia. A II não aborda nem o tema nem o assunto mais geral — é outro assunto: <strong>fuga</strong>. A III discute o recorte: <strong>abordagem completa</strong>.</p>
+      <p>A B inverte I e II. A C considera completa uma redação que ignora o acesso e trata como tangente a única que cobre o recorte. A D não percebe que II abandona até o assunto. A E trata I como fuga, embora ela fale de cinema.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Foco ou tangenciamento?</span>
+    <p class="enun">Para o tema do Enem 2023, “Desafios para o enfrentamento da invisibilidade do trabalho de cuidado realizado pela mulher no Brasil”, uma estudante planejou discutir só dois aspectos: a herança de uma divisão de tarefas que atribui o cuidado às mulheres e a falta de políticas públicas, como creches e serviços de apoio a idosos, que dividam esse trabalho. Sua tese menciona o trabalho de cuidado, a mulher, a invisibilidade e o Brasil. Sobre esse planejamento, é correto afirmar que</p>
+    <ol class="alt">
+      <li>tangencia o tema, pois deixa de fora outros aspectos possíveis do trabalho de cuidado.</li>
+      <li>foge ao tema, pois creches e serviços de apoio a idosos são assuntos de outra área.</li>
+      <li>só atenderia ao tema se comentasse, um a um, todos os textos motivadores da proposta.</li>
+      <li>tangencia o tema, pois a frase temática fala em “desafios”, e não em políticas públicas.</li>
+      <li>é legítimo: escolher eixos dentro do recorte define o foco do texto, sem retirar nenhum bloco da frase temática.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Escolher eixos é definir o <strong>foco</strong>, o que a Cartilha recomenda ao pedir que o participante decida como abordar o tema. O planejamento mantém todos os blocos: trabalho de cuidado, mulher, invisibilidade, Brasil — e discute obstáculos (desafios) e o que falta para enfrentá-los.</p>
+      <p>A A confunde foco com corte do tema: tangenciar é ficar só no assunto amplo, não deixar de tratar todos os aspectos possíveis. A B ignora que creches e apoio a idosos são justamente formas de dividir o trabalho de cuidado. A C inventa uma exigência: os motivadores orientam, não precisam ser comentados um a um. A D trata como incompatíveis os desafios e as políticas cuja falta é um desses desafios.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · A tese que cobre o recorte</span>
+    <p class="enun">O tema do Enem 2020 foi “O estigma associado às doenças mentais na sociedade brasileira”. A tese que atende ao recorte completo desse tema é:</p>
+    <ol class="alt">
+      <li>As doenças mentais afetam milhões de pessoas no mundo e exigem mais pesquisas científicas.</li>
+      <li>O Sistema Único de Saúde precisa ampliar a oferta de medicamentos para todas as doenças crônicas.</li>
+      <li>No Brasil, a associação entre transtorno mental e fraqueza ou perigo afasta as pessoas do tratamento, preconceito que é reforçado pela desinformação e por representações estereotipadas na mídia.</li>
+      <li>O estigma associado às doenças mentais na sociedade brasileira é um tema muito importante que deve ser discutido por todos.</li>
+      <li>Os transtornos mentais têm causas genéticas e ambientais, estudadas pela psiquiatria desde o século XIX.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A C cobre <strong>estigma</strong> (a associação a fraqueza ou perigo), <strong>doenças mentais</strong> e <strong>sociedade brasileira</strong>, toma posição e anuncia dois eixos (desinformação e mídia).</p>
+      <p>A A fala de doenças mentais sem o estigma e fora do Brasil: assunto amplo. A B amplia para todas as doenças crônicas e troca o estigma por oferta de remédios. A D apenas repete a frase temática: não há posição nem eixos. A E fica no assunto amplo, sob o ângulo científico, sem estigma nem Brasil.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Da frase temática à tese</span>
+    <p class="enun">Para o tema do Enem 2021, “Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil”, a frase que deixa de apenas repetir o tema e apresenta uma tese é:</p>
+    <ol class="alt">
+      <li>A invisibilidade e o registro civil são questões relacionadas à garantia de acesso à cidadania no Brasil.</li>
+      <li>Sem certidão de nascimento, parte dos brasileiros fica invisível para o Estado e perde acesso a direitos básicos, situação mantida pela distância dos cartórios e pela desinformação sobre a gratuidade do registro.</li>
+      <li>O registro civil é um assunto que merece a atenção de toda a sociedade brasileira.</li>
+      <li>Muitas pessoas falam sobre invisibilidade e registro civil, e é preciso refletir sobre o tema.</li>
+      <li>Este texto vai discutir a invisibilidade e o registro civil como garantia de acesso à cidadania no Brasil.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A B toma uma <strong>posição contestável</strong> sobre o recorte (a falta de registro torna pessoas invisíveis e as afasta de direitos) e aponta <strong>causas</strong> que o desenvolvimento pode sustentar. É uma tese.</p>
+      <p>A A reescreve a frase temática sem afirmar nada discutível. A C declara importância, não posição. A D é genérica e adia a reflexão. A E anuncia o tema de forma metalinguística, mas não diz o que o texto defende.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Nomeio as três partes da proposta e o que extrair de cada uma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico cada exigência do comando da proposta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Diferencio assunto, tema e tese com um exemplo de prova real</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decomponho uma frase temática em núcleo e delimitadores</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei o que “desafios para”, “caminhos para” e “perspectivas acerca de” pedem da discussão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo o foco que escolho do tema que a prova impõe</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Transformo uma frase temática em pergunta-problema</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico os três passos da Cartilha na leitura dos textos motivadores</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei o que acontece com linhas copiadas, inteiras ou em parte</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Retomo uma ideia da coletânea por paráfrase e acrescento algo meu</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo abordagem completa, tangenciamento e fuga, com as consequências</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo uma tese provisória que cobre todos os blocos do tema</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro a tese contra a frase temática antes de desenvolver</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Pegue cinco temas de anos anteriores (a tabela da seção 03 tem cinco). Para cada um, em no máximo cinco minutos: divida a frase temática em blocos, escreva a pergunta-problema e uma tese provisória com dois eixos. Depois, ponha cada tese ao lado da frase temática e marque os blocos que ela cobre. Se faltar algum, reescreva.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>Introdução: contextualização e apresentação da tese</strong>, transforma essa tese provisória no primeiro parágrafo da redação.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>52 cartões</strong> deste assunto no arquivo <code>ENEM-Redacao-01-leitura-da-proposta.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. Este é o primeiro assunto de Estrutura e Técnica: a importação cria o deck novo <code>ENEM::Redação::Estrutura e Técnica</code>, ao qual os cartões dos próximos assuntos do bloco vão se somar.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-red-01";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

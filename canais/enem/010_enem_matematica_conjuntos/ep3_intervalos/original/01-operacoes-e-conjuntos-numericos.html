@@ -1,0 +1,1141 @@
+<title>Operações e Conjuntos Numéricos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 1 de 12</p>
+    <h1>Operações e conjuntos numéricos</h1>
+    <p class="deck">O primeiro assunto do cronograma, e não é por acaso: quase toda questão de Matemática do ENEM passa por aqui em algum momento. Não é o conteúdo mais cobrado sozinho — é o que sustenta todos os outros.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Conjuntos numéricos encaixados: naturais dentro dos inteiros, dentro dos racionais; os irracionais ficam ao lado, e ambos dentro dos reais">
+  <rect x="5" y="22" width="290" height="184" rx="16" style="fill:none;stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:5 4"/>
+  <text x="12" y="15" class="svg-ttl" style="fill:var(--ink-2)">ℝ · reais</text>
+  <rect x="190" y="42" width="96" height="150" rx="11" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.5"/>
+  <text x="238" y="64" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">𝕀</text>
+  <text x="238" y="80" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">irracionais</text>
+  <text x="238" y="112" text-anchor="middle" class="svg-num" style="fill:var(--c5)">√2</text>
+  <text x="238" y="136" text-anchor="middle" class="svg-num" style="fill:var(--c5)">π</text>
+  <text x="238" y="160" text-anchor="middle" class="svg-num" style="fill:var(--c5)">√10</text>
+  <rect x="14" y="42" width="164" height="150" rx="11" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="24" y="60" class="svg-ttl" style="fill:var(--c1)">ℚ</text>
+  <text x="168" y="60" text-anchor="end" class="svg-num" style="fill:var(--c1)">½ · 0,75</text>
+  <rect x="26" y="72" width="140" height="110" rx="9" style="fill:var(--surface);stroke:var(--c3);stroke-width:1.5"/>
+  <text x="36" y="90" class="svg-ttl" style="fill:var(--c3)">ℤ</text>
+  <text x="156" y="90" text-anchor="end" class="svg-num" style="fill:var(--c3)">−2 · −1</text>
+  <rect x="38" y="102" width="116" height="70" rx="7" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="48" y="122" class="svg-ttl" style="fill:var(--c2)">ℕ</text>
+  <text x="48" y="146" class="svg-num" style="fill:var(--c2)">0 1 2 3 …</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Nenhum</dd></div>
+      <div><dt>Destrava</dt><dd>Porcentagem, razão, funções, estatística</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Vale começar honesto: o ENEM <strong>não</strong> pergunta “defina conjunto dos racionais”. Ele nunca fez isso e não vai fazer. O que ele cobra deste assunto aparece de três formas.</p>
+<ol>
+  <li><strong>Diagramas de Venn com pessoas.</strong> Uma pesquisa entrevista <span class="m">500</span> pessoas, tantas preferem A, tantas preferem B, quantas preferem os dois? Essa é a questão mais previsível de todo o conteúdo — cai quase todo ano e vale ponto garantido.</li>
+  <li><strong>Operações dentro de outra questão.</strong> A questão é de porcentagem, de função ou de estatística, mas você precisa somar frações, comparar decimais ou lidar com sinais para chegar ao fim. É aqui que se perde ponto sem perceber: o aluno sabe o conteúdo principal e erra na conta.</li>
+  <li><strong>Classificação e ordenação de números.</strong> Colocar valores em ordem crescente quando eles vêm misturados — fração, decimal, raiz, porcentagem — ou identificar qual é racional e qual é irracional.</li>
+</ol>
+<p>Ou seja: este assunto rende poucas questões <em>só dele</em>, mas contamina todas as outras. Dominar aqui é o que impede que você perca pontos em questões que você sabia resolver.</p>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Os conjuntos numéricos</h2>
+<p>Os números foram sendo inventados conforme apareciam problemas que os anteriores não resolviam. Entender essa ordem é entender o assunto inteiro.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Conjunto</th><th>Símbolo</th><th>O que são</th><th>Nasceu para resolver</th></tr></thead>
+  <tbody>
+    <tr><td>Naturais</td><td class="m">ℕ</td><td class="m">{0, 1, 2, 3, 4, …}</td><td>Contar objetos</td></tr>
+    <tr><td>Inteiros</td><td class="m">ℤ</td><td class="m">{…, −2, −1, 0, 1, 2, …}</td><td>Subtrair um número maior de um menor</td></tr>
+    <tr><td>Racionais</td><td class="m">ℚ</td><td>Todo número que vira uma fração <span class="m"><span class="frac"><i>a</i><i>b</i></span></span> com <span class="m"><span class="v">a</span>, <span class="v">b</span> inteiros e <span class="v">b</span> ≠ 0</span></td><td>Dividir em partes</td></tr>
+    <tr><td>Irracionais</td><td class="m">𝕀</td><td>Decimais infinitos e <strong>não</strong> periódicos</td><td>Medir a diagonal de um quadrado</td></tr>
+    <tr><td>Reais</td><td class="m">ℝ</td><td class="m">ℚ ∪ 𝕀</td><td>Preencher toda a reta numérica</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">A cadeia de inclusão</span>
+  <p class="m" style="font-size:1.1rem">ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</p>
+  <p>Todo natural é inteiro; todo inteiro é racional; todo racional é real. O caminho de volta não vale: <span class="m">−5</span> é inteiro mas não é natural, <span class="m"><span class="frac"><i>1</i><i>2</i></span></span> é racional mas não é inteiro.</p>
+</div>
+
+<p>Os irracionais ficam de fora dessa cadeia: eles são reais, mas <strong>não</strong> são racionais. Por isso o desenho correto é <span class="m">ℝ</span> dividido em duas metades que não se tocam — <span class="m">ℚ</span> e <span class="m">𝕀</span>.</p>
+
+<h3>As notações com símbolo</h3>
+<p>Aparecem em enunciados e você precisa ler sem travar:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Notação</th><th>Significa</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="m">ℕ*</td><td>Sem o zero</td><td class="m">{1, 2, 3, …}</td></tr>
+    <tr><td class="m">ℤ<sub>+</sub></td><td>Só os não negativos</td><td class="m">{0, 1, 2, …}</td></tr>
+    <tr><td class="m">ℤ<sub>−</sub></td><td>Só os não positivos</td><td class="m">{…, −2, −1, 0}</td></tr>
+    <tr><td class="m">ℤ*<sub>+</sub></td><td>Positivos, sem o zero</td><td class="m">{1, 2, 3, …}</td></tr>
+    <tr><td class="m">ℝ*</td><td>Reais sem o zero</td><td>—</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Atenção</span>
+  <p>No Brasil, <strong>o zero é natural</strong>. Em livros de outros países ele às vezes fica de fora. Siga a convenção brasileira: <span class="m">ℕ = {0, 1, 2, …}</span>.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Racional ou irracional: como decidir</h2>
+<p>Esta é a única pergunta “teórica” que o ENEM realmente faz. E existe um critério mecânico que resolve sempre.</p>
+
+<div class="box def">
+  <span class="tag">O critério da forma decimal</span>
+  <p>Escreva o número em decimal e olhe as casas depois da vírgula:</p>
+  <ul style="margin-bottom:0">
+    <li><strong>Acaba</strong> (decimal exato) → <strong>racional</strong>. Ex.: <span class="m">0,75</span></li>
+    <li><strong>Não acaba mas repete</strong> (dízima periódica) → <strong>racional</strong>. Ex.: <span class="m">0,3333…</span></li>
+    <li><strong>Não acaba e não repete</strong> → <strong>irracional</strong>. Ex.: <span class="m">1,4142135…</span></li>
+  </ul>
+</div>
+
+<p>Os irracionais que aparecem na prova são sempre destes três tipos:</p>
+<ul>
+  <li><strong>Raízes não exatas:</strong> <span class="m"><span class="rad"><i>2</i></span></span>, <span class="m"><span class="rad"><i>3</i></span></span>, <span class="m"><span class="rad"><i>5</i></span></span>, <span class="m"><span class="rad"><i>10</i></span></span></li>
+  <li><strong>Constantes:</strong> <span class="m">π ≈ 3,14159…</span> e <span class="m">e ≈ 2,71828…</span></li>
+  <li><strong>Número de ouro:</strong> <span class="m">φ = <span class="frac"><i>1 + <span class="rad"><i>5</i></span></i><i>2</i></span> ≈ 1,618…</span> — aparece em questões sobre arte, arquitetura e natureza</li>
+</ul>
+
+<div class="box warn">
+  <span class="tag">A pegadinha clássica</span>
+  <p>Ter raiz <em>não</em> significa ser irracional. <span class="m"><span class="rad"><i>9</i></span> = 3</span> é racional. <span class="m"><span class="rad"><i>0,25</i></span> = 0,5</span> é racional. <span class="m"><span class="rad"><i><span class="frac"><i>16</i><i>25</i></span></i></span> = <span class="frac"><i>4</i><i>5</i></span></span> é racional.</p>
+  <p>A regra: <strong>a raiz quadrada de um quadrado perfeito é racional</strong>. Decore os quadrados perfeitos até 400 — <span class="m">1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400</span> — e você resolve na hora.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Truque de prova</span>
+  <p>Quando a questão misturar frações, decimais e raízes e pedir ordem crescente, <strong>converta tudo para decimal</strong> com duas ou três casas. É mais rápido e mais seguro do que procurar denominador comum. Guarde de cor: <span class="m"><span class="rad"><i>2</i></span> ≈ 1,41</span> · <span class="m"><span class="rad"><i>3</i></span> ≈ 1,73</span> · <span class="m"><span class="rad"><i>5</i></span> ≈ 2,24</span> · <span class="m">π ≈ 3,14</span>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Fração geratriz das dízimas</h2>
+<p>Toda dízima periódica é racional — então existe uma fração que a gera. Saber achá-la é rápido e cai em questão de classificação.</p>
+
+<h3>Dízima simples: o período começa logo após a vírgula</h3>
+<div class="eq">
+  <span class="lbl">Regra</span>
+  <p>Numerador = o período. Denominador = um <span class="m">9</span> para cada algarismo do período.</p>
+  <p class="m">0,777… = <span class="frac"><i>7</i><i>9</i></span> &nbsp;·&nbsp; 0,2323… = <span class="frac"><i>23</i><i>99</i></span> &nbsp;·&nbsp; 0,123123… = <span class="frac"><i>123</i><i>999</i></span></p>
+</div>
+
+<h3>Dízima composta: existe uma parte que não repete</h3>
+<div class="eq">
+  <span class="lbl">Regra</span>
+  <p class="m"><span class="frac"><i>(número inteiro sem vírgula) − (parte que não repete)</i><i>um 9 por algarismo do período, seguido de um 0 por algarismo não periódico</i></span></p>
+</div>
+<p>Aplicando em <span class="m">0,8333…</span> — a parte não periódica é <span class="m">8</span>, o período é <span class="m">3</span>:</p>
+<div class="eq">
+  <p class="m">0,8333… = <span class="frac"><i>83 − 8</i><i>90</i></span> = <span class="frac"><i>75</i><i>90</i></span> = <span class="frac"><i>5</i><i>6</i></span></p>
+</div>
+<p>E em <span class="m">2,34545…</span> — parte não periódica <span class="m">23</span>, período <span class="m">45</span>:</p>
+<div class="eq">
+  <p class="m">2,34545… = <span class="frac"><i>2345 − 23</i><i>990</i></span> = <span class="frac"><i>2322</i><i>990</i></span> = <span class="frac"><i>129</i><i>55</i></span></p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Ordem das operações e regra de sinais</h2>
+<p>Parece básico, mas é onde mais se perde ponto em questão longa. A ordem é rígida:</p>
+
+<div class="eq">
+  <span class="lbl">A ordem, sempre nesta sequência</span>
+  <p><strong>1.</strong> Parênteses, colchetes e chaves — de dentro para fora<br>
+  <strong>2.</strong> Potências e raízes<br>
+  <strong>3.</strong> Multiplicação e divisão — da esquerda para a direita<br>
+  <strong>4.</strong> Adição e subtração — da esquerda para a direita</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O erro que mais custa caro em toda a prova</span>
+  <p class="m" style="font-size:1.1rem">−3<sup>2</sup> = −9 &nbsp;&nbsp;mas&nbsp;&nbsp; (−3)<sup>2</sup> = 9</p>
+  <p>Sem parênteses, a potência age <strong>só no 3</strong> e o sinal de menos fica de fora. Com parênteses, o menos entra na conta. Essa diferença já decidiu questão de função quadrática, de física e de estatística.</p>
+</div>
+
+<h3>Regra de sinais</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Operação</th><th>Regra</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Multiplicar ou dividir</td><td>Sinais <strong>iguais</strong> → resultado positivo</td><td class="m">(−4)·(−3) = 12</td></tr>
+    <tr><td>Multiplicar ou dividir</td><td>Sinais <strong>diferentes</strong> → resultado negativo</td><td class="m">(−4)·(3) = −12</td></tr>
+    <tr><td>Somar, sinais iguais</td><td>Soma e mantém o sinal</td><td class="m">−7 − 3 = −10</td></tr>
+    <tr><td>Somar, sinais diferentes</td><td>Subtrai e fica com o sinal do maior</td><td class="m">−7 + 3 = −4</td></tr>
+    <tr><td>Menos antes de parêntese</td><td>Inverte todos os sinais de dentro</td><td class="m">−(5 − 8) = −5 + 8 = 3</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Potência com expoente par ou ímpar</h3>
+<p>Base negativa com <strong>expoente par</strong> dá positivo; com <strong>expoente ímpar</strong> dá negativo.</p>
+<div class="eq">
+  <p class="m">(−2)<sup>4</sup> = 16 &nbsp;&nbsp;·&nbsp;&nbsp; (−2)<sup>3</sup> = −8</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Frações nas quatro operações</h2>
+<p>A prova é sem calculadora. Fração mal resolvida é ponto perdido em qualquer área.</p>
+
+<div class="eq">
+  <span class="lbl">Somar e subtrair — precisa de denominador comum</span>
+  <p class="m"><span class="frac"><i>a</i><i>b</i></span> + <span class="frac"><i>c</i><i>d</i></span> = <span class="frac"><i>a·d + b·c</i><i>b·d</i></span></p>
+  <p class="m" style="margin-top:10px">Ex.: <span class="frac"><i>2</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span> = <span class="frac"><i>8 + 3</i><i>12</i></span> = <span class="frac"><i>11</i><i>12</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Multiplicar — direto, sem preparo</span>
+  <p class="m"><span class="frac"><i>a</i><i>b</i></span> · <span class="frac"><i>c</i><i>d</i></span> = <span class="frac"><i>a·c</i><i>b·d</i></span> &nbsp;&nbsp; Ex.: <span class="frac"><i>2</i><i>3</i></span> · <span class="frac"><i>5</i><i>7</i></span> = <span class="frac"><i>10</i><i>21</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Dividir — conserva a primeira e multiplica pelo inverso da segunda</span>
+  <p class="m"><span class="frac"><i>a</i><i>b</i></span> ÷ <span class="frac"><i>c</i><i>d</i></span> = <span class="frac"><i>a</i><i>b</i></span> · <span class="frac"><i>d</i><i>c</i></span> &nbsp;&nbsp; Ex.: <span class="frac"><i>3</i><i>4</i></span> ÷ <span class="frac"><i>2</i><i>5</i></span> = <span class="frac"><i>3</i><i>4</i></span> · <span class="frac"><i>5</i><i>2</i></span> = <span class="frac"><i>15</i><i>8</i></span></p>
+</div>
+
+<h3>Comparar frações</h3>
+<p>Três caminhos, do mais rápido ao mais seguro:</p>
+<ol>
+  <li><strong>Multiplicação cruzada</strong> (só para duas frações): <span class="m"><span class="frac"><i>3</i><i>5</i></span></span> vs <span class="m"><span class="frac"><i>5</i><i>8</i></span></span> → <span class="m">3·8 = 24</span> e <span class="m">5·5 = 25</span>. Como <span class="m">25 &gt; 24</span>, então <span class="m"><span class="frac"><i>5</i><i>8</i></span> &gt; <span class="frac"><i>3</i><i>5</i></span></span>.</li>
+  <li><strong>Converter em decimal</strong> — o mais confiável quando há três ou mais valores.</li>
+  <li><strong>Mesmo denominador</strong> — mais trabalhoso, use só se os números forem amigáveis.</li>
+</ol>
+
+<div class="box tip">
+  <span class="tag">Frações que valem decorar</span>
+  <p class="m"><span class="frac"><i>1</i><i>2</i></span>=0,5 · <span class="frac"><i>1</i><i>3</i></span>≈0,333 · <span class="frac"><i>1</i><i>4</i></span>=0,25 · <span class="frac"><i>1</i><i>5</i></span>=0,2 · <span class="frac"><i>1</i><i>6</i></span>≈0,167 · <span class="frac"><i>1</i><i>8</i></span>=0,125 · <span class="frac"><i>2</i><i>3</i></span>≈0,667 · <span class="frac"><i>3</i><i>4</i></span>=0,75 · <span class="frac"><i>3</i><i>5</i></span>=0,6 · <span class="frac"><i>5</i><i>8</i></span>=0,625</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Decimais e notação científica</h2>
+<p>O ENEM adora números muito grandes ou muito pequenos: população, distância astronômica, tamanho de vírus, verba pública.</p>
+
+<div class="box def">
+  <span class="tag">Notação científica</span>
+  <p class="m" style="font-size:1.08rem"><span class="v">a</span> · 10<sup><span class="v">n</span></sup> &nbsp;&nbsp; com &nbsp; 1 ≤ |<span class="v">a</span>| &lt; 10 &nbsp; e &nbsp; <span class="v">n</span> inteiro</p>
+  <p>O <span class="m"><span class="v">a</span></span> tem <strong>exatamente um algarismo antes da vírgula</strong>, e ele não pode ser zero.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Número</th><th>Notação científica</th><th>Leitura</th></tr></thead>
+  <tbody>
+    <tr><td class="m">215 000 000</td><td class="m">2,15 · 10<sup>8</sup></td><td>Vírgula andou 8 casas para a esquerda</td></tr>
+    <tr><td class="m">0,00042</td><td class="m">4,2 · 10<sup>−4</sup></td><td>Vírgula andou 4 casas para a direita</td></tr>
+    <tr><td class="m">7 300</td><td class="m">7,3 · 10<sup>3</sup></td><td>—</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>A regra do sinal do expoente:</strong> número grande <span class="m">→</span> expoente positivo. Número menor que 1 <span class="m">→</span> expoente negativo.</p>
+
+<div class="eq">
+  <span class="lbl">Operar em notação científica</span>
+  <p class="m">(<span class="v">a</span>·10<sup><span class="v">m</span></sup>) · (<span class="v">b</span>·10<sup><span class="v">n</span></sup>) = (<span class="v">a</span>·<span class="v">b</span>) · 10<sup><span class="v">m</span>+<span class="v">n</span></sup></p>
+  <p class="m">(<span class="v">a</span>·10<sup><span class="v">m</span></sup>) ÷ (<span class="v">b</span>·10<sup><span class="v">n</span></sup>) = (<span class="v">a</span> ÷ <span class="v">b</span>) · 10<sup><span class="v">m</span>−<span class="v">n</span></sup></p>
+</div>
+
+<h3>Prefixos que aparecem em enunciado</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Prefixo</th><th>Potência</th><th>Onde aparece</th></tr></thead>
+  <tbody>
+    <tr><td>nano (n)</td><td class="m">10<sup>−9</sup></td><td>nanômetro, escala de vírus</td></tr>
+    <tr><td>micro (μ)</td><td class="m">10<sup>−6</sup></td><td>micrograma, poluentes</td></tr>
+    <tr><td>mili (m)</td><td class="m">10<sup>−3</sup></td><td>miligrama, mililitro</td></tr>
+    <tr><td>quilo (k)</td><td class="m">10<sup>3</sup></td><td>quilômetro, quilowatt</td></tr>
+    <tr><td>mega (M)</td><td class="m">10<sup>6</sup></td><td>megawatt, habitantes</td></tr>
+    <tr><td>giga (G)</td><td class="m">10<sup>9</sup></td><td>gigabyte, PIB</td></tr>
+    <tr><td>tera (T)</td><td class="m">10<sup>12</sup></td><td>terabyte</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Potências e raízes</h2>
+
+<div class="eq">
+  <span class="lbl">Propriedades da potenciação — as sete que resolvem tudo</span>
+  <p class="m"><span class="v">a</span><sup><span class="v">m</span></sup> · <span class="v">a</span><sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">m</span>+<span class="v">n</span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="frac"><i><span class="v">a</span><sup><span class="v">m</span></sup></i><i><span class="v">a</span><sup><span class="v">n</span></sup></i></span> = <span class="v">a</span><sup><span class="v">m</span>−<span class="v">n</span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; (<span class="v">a</span><sup><span class="v">m</span></sup>)<sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">m</span>·<span class="v">n</span></sup></p>
+  <p class="m">(<span class="v">a</span>·<span class="v">b</span>)<sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">n</span></sup>·<span class="v">b</span><sup><span class="v">n</span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="v">a</span><sup>0</sup> = 1 &nbsp;&nbsp;·&nbsp;&nbsp; <span class="v">a</span><sup>−<span class="v">n</span></sup> = <span class="frac"><i>1</i><i><span class="v">a</span><sup><span class="v">n</span></sup></i></span> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="v">a</span><sup><span class="frac"><i><span class="v">m</span></i><i><span class="v">n</span></i></span></sup> = <span class="rad"><i><span class="v">a</span><sup><span class="v">m</span></sup></i></span><sup class="v" style="font-size:.62em">n</sup></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Três somas que não existem</span>
+  <p class="m"><span class="v">a</span><sup><span class="v">m</span></sup> + <span class="v">a</span><sup><span class="v">n</span></sup> ≠ <span class="v">a</span><sup><span class="v">m</span>+<span class="v">n</span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="rad"><i><span class="v">a</span> + <span class="v">b</span></i></span> ≠ <span class="rad"><i><span class="v">a</span></i></span> + <span class="rad"><i><span class="v">b</span></i></span> &nbsp;&nbsp;·&nbsp;&nbsp; (<span class="v">a</span> + <span class="v">b</span>)<sup>2</sup> ≠ <span class="v">a</span><sup>2</sup> + <span class="v">b</span><sup>2</sup></p>
+  <p>Teste com números: <span class="m"><span class="rad"><i>9 + 16</i></span> = <span class="rad"><i>25</i></span> = 5</span>, mas <span class="m"><span class="rad"><i>9</i></span> + <span class="rad"><i>16</i></span> = 3 + 4 = 7</span>. Sempre que duvidar de uma propriedade, teste com número pequeno — leva cinco segundos.</p>
+</div>
+
+<h3>Propriedades da radiciação</h3>
+<div class="eq">
+  <p class="m"><span class="rad"><i><span class="v">a</span>·<span class="v">b</span></i></span> = <span class="rad"><i><span class="v">a</span></i></span> · <span class="rad"><i><span class="v">b</span></i></span> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="rad"><i><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span></i></span> = <span class="frac"><i><span class="rad"><i><span class="v">a</span></i></span></i><i><span class="rad"><i><span class="v">b</span></i></span></i></span> &nbsp;&nbsp;·&nbsp;&nbsp; (<span class="rad"><i><span class="v">a</span></i></span>)<sup>2</sup> = <span class="v">a</span></p>
+</div>
+<p>Isso permite simplificar: <span class="m"><span class="rad"><i>50</i></span> = <span class="rad"><i>25·2</i></span> = 5<span class="rad"><i>2</i></span></span>.</p>
+
+<h3>Racionalização</h3>
+<p>Tirar a raiz do denominador. Dois casos:</p>
+<div class="eq">
+  <p class="m"><span class="frac"><i>1</i><i><span class="rad"><i>2</i></span></i></span> = <span class="frac"><i>1</i><i><span class="rad"><i>2</i></span></i></span> · <span class="frac"><i><span class="rad"><i>2</i></span></i><i><span class="rad"><i>2</i></span></i></span> = <span class="frac"><i><span class="rad"><i>2</i></span></i><i>2</i></span></p>
+  <p class="m" style="margin-top:10px"><span class="frac"><i>2</i><i><span class="rad"><i>3</i></span> − 1</i></span> = <span class="frac"><i>2</i><i><span class="rad"><i>3</i></span> − 1</i></span> · <span class="frac"><i><span class="rad"><i>3</i></span> + 1</i><i><span class="rad"><i>3</i></span> + 1</i></span> = <span class="frac"><i>2(<span class="rad"><i>3</i></span> + 1)</i><i>3 − 1</i></span> = <span class="rad"><i>3</i></span> + 1</p>
+</div>
+<p>No segundo caso, multiplica-se pelo <strong>conjugado</strong> — o mesmo binômio com o sinal do meio trocado.</p>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Intervalos reais</h2>
+<p>Aparecem em questões de função, de inequação e de leitura de gráfico. O que muda é se a ponta entra ou não.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Notação</th><th>Significa</th><th>Na reta</th></tr></thead>
+  <tbody>
+    <tr><td class="m">[a, b]</td><td class="m">a ≤ x ≤ b</td><td>Fechado — as duas pontas entram</td></tr>
+    <tr><td class="m">]a, b[ ou (a, b)</td><td class="m">a &lt; x &lt; b</td><td>Aberto — nenhuma ponta entra</td></tr>
+    <tr><td class="m">[a, b[</td><td class="m">a ≤ x &lt; b</td><td>Só o a entra</td></tr>
+    <tr><td class="m">]a, b]</td><td class="m">a &lt; x ≤ b</td><td>Só o b entra</td></tr>
+    <tr><td class="m">[a, +∞[</td><td class="m">x ≥ a</td><td>Infinito é sempre aberto</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Regra sem exceção</span>
+  <p>O lado do infinito é <strong>sempre</strong> aberto: <span class="m">]−∞, 5]</span> está certo, <span class="m">[−∞, 5]</span> está errado. Infinito não é um número, então não pode ser incluído.</p>
+</div>
+
+<p>Em gráficos, a mesma ideia vira <strong>bolinha cheia</strong> (ponto incluído) e <strong>bolinha vazia</strong> (ponto excluído). Ler isso errado troca a alternativa.</p>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Operações com conjuntos e o diagrama de Venn</h2>
+<p>Aqui está a questão mais previsível do assunto. Vale ponto quase garantido se você tiver o método.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Operação</th><th>Símbolo</th><th>Significa</th></tr></thead>
+  <tbody>
+    <tr><td>União</td><td class="m">A ∪ B</td><td>Está em A, <strong>ou</strong> em B, ou nos dois</td></tr>
+    <tr><td>Interseção</td><td class="m">A ∩ B</td><td>Está em A <strong>e</strong> em B ao mesmo tempo</td></tr>
+    <tr><td>Diferença</td><td class="m">A − B</td><td>Está em A e <strong>não</strong> está em B</td></tr>
+    <tr><td>Complementar</td><td class="m">A<sup>c</sup></td><td>Tudo que está fora de A</td></tr>
+  </tbody>
+</table>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 220" role="img" aria-label="Dois círculos que se cruzam: somar os totais de A e de B conta a região comum duas vezes, por isso ela é subtraída uma vez">
+  <circle cx="180" cy="110" r="82" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.8"/>
+  <circle cx="280" cy="110" r="82" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.8;fill-opacity:.75"/>
+  <text x="128" y="40" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">A</text>
+  <text x="332" y="40" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">B</text>
+  <text x="140" y="116" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-weight:600">só A</text>
+  <text x="320" y="116" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">só B</text>
+  <text x="230" y="104" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-weight:600">A ∩ B</text>
+  <text x="230" y="124" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">contado 2×</text>
+  <line x1="230" y1="132" x2="230" y2="176" style="stroke:var(--c4);stroke-width:1.5;stroke-dasharray:4 3"/>
+  <rect x="120" y="182" width="220" height="30" rx="8" style="fill:var(--c4-soft);stroke:var(--c4-line);stroke-width:1"/>
+  <text x="230" y="202" text-anchor="middle" class="svg-ttl" style="fill:var(--c4)">− n(A ∩ B)</text>
+  <text x="16" y="196" class="svg-lbl" style="fill:var(--ink-2)">n(A) + n(B)</text>
+  <text x="16" y="180" class="svg-lbl" style="fill:var(--ink-3)">somar os dois</text>
+</svg>
+<figcaption><b>Por que se subtrai a interseção.</b> Ao somar <span class="m">n(A) + n(B)</span>, quem está nos dois conjuntos entra na conta duas vezes — uma por A e outra por B. Subtrair <span class="m">n(A ∩ B)</span> uma vez devolve cada pessoa a uma única contagem.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">A fórmula que resolve dois conjuntos</span>
+  <p class="m" style="font-size:1.1rem">n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</p>
+  <p>O <span class="m">−n(A ∩ B)</span> existe porque quem está nos dois conjuntos foi contado duas vezes ao somar <span class="m">n(A) + n(B)</span>. Desconta-se uma.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">E a de três conjuntos</span>
+  <p class="m">n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A∩B) − n(A∩C) − n(B∩C) + n(A∩B∩C)</p>
+  <p>Alterna: soma sozinhos, subtrai os pares, soma o trio.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O método que não falha</span>
+  <p>Em vez de decorar a fórmula de três conjuntos, <strong>desenhe o Venn e preencha de dentro para fora</strong>:</p>
+  <ol style="margin:8px 0 0">
+    <li>Comece pelo <strong>miolo</strong> — quem está nos três.</li>
+    <li>Preencha as interseções de dois, <strong>descontando</strong> o miolo.</li>
+    <li>Preencha as regiões sozinhas, descontando tudo que já foi posto.</li>
+    <li>Some as sete regiões e compare com o total para achar quem ficou de fora.</li>
+  </ol>
+  <p style="margin-top:8px">Preenchendo de fora para dentro você conta gente duas vezes. De dentro para fora, nunca.</p>
+</div>
+
+<p>Uma armadilha frequente no enunciado: <strong>“apenas A”</strong> não é o mesmo que <strong>“A”</strong>. Quando a questão diz “somente o produto A”, ela quer a região sozinha, já sem as interseções. Quando diz “o produto A”, quer o círculo inteiro. Sublinhe a palavra <em>apenas</em> sempre que ela aparecer.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">−3² = 9</span> &nbsp;→&nbsp; <span class="c">−3² = −9</span></span><small>Sem parênteses o expoente não pega o sinal. Só <span class="m">(−3)² = 9</span>.</small></li>
+  <li><span><span class="x">√(a+b) = √a + √b</span> &nbsp;→&nbsp; <span class="c">não existe essa propriedade</span></span><small>Raiz não distribui sobre soma. Só sobre produto e quociente.</small></li>
+  <li><span><span class="x"><span class="m"><span class="frac"><i>1</i><i>2</i></span> + <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>5</i></span></span></span> &nbsp;→&nbsp; <span class="c"><span class="m"><span class="frac"><i>5</i><i>6</i></span></span></span></span><small>Somar numerador com numerador só vale na multiplicação, não na soma.</small></li>
+  <li><span><span class="x">a⁰ = 0</span> &nbsp;→&nbsp; <span class="c">a⁰ = 1</span></span><small>Qualquer base diferente de zero elevada a zero dá 1.</small></li>
+  <li><span><span class="x">dízima periódica é irracional</span> &nbsp;→&nbsp; <span class="c">é racional</span></span><small>Se repete com padrão, existe fração geratriz. Irracional é o que <em>não</em> repete.</small></li>
+  <li><span><span class="x">todo número com raiz é irracional</span> &nbsp;→&nbsp; <span class="c">√9 = 3 é racional</span></span><small>Quadrado perfeito dentro da raiz devolve número racional.</small></li>
+  <li><span><span class="x">n(A∪B) = n(A) + n(B)</span> &nbsp;→&nbsp; <span class="c">falta subtrair n(A∩B)</span></span><small>Só vale somar direto quando os conjuntos são disjuntos, sem interseção.</small></li>
+  <li><span><span class="x">[−∞, 5]</span> &nbsp;→&nbsp; <span class="c">]−∞, 5]</span></span><small>O lado do infinito é sempre aberto.</small></li>
+  <li><span><span class="x">“apenas A” = círculo A inteiro</span> &nbsp;→&nbsp; <span class="c">é só a região sozinha</span></span><small>A palavra <em>apenas</em> exclui todas as interseções.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Resolva antes de abrir a resolução — ler solução pronta cria a ilusão de que você sabia.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Venn de dois conjuntos</span>
+    <p class="enun">Uma operadora entrevistou 500 assinantes sobre dois serviços de streaming. O levantamento mostrou que 320 assinam o serviço A, 250 assinam o serviço B e 90 não assinam nenhum dos dois. Quantos assinantes têm os dois serviços?</p>
+    <ol class="alt"><li>70</li><li>90</li><li>160</li><li>180</li><li>230</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Se 90 não assinam nenhum, quem assina pelo menos um é o resto:</p>
+      <p class="m">n(A ∪ B) = 500 − 90 = 410</p>
+      <p>Agora a fórmula da união:</p>
+      <p class="m">410 = 320 + 250 − n(A ∩ B)</p>
+      <p class="m">n(A ∩ B) = 570 − 410 = 160</p>
+      <p>Repare que <span class="m">320 + 250 = 570</span> é maior que 500 — impossível se não houvesse sobreposição. Esse excesso <em>é</em> a interseção.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Venn de três conjuntos</span>
+    <p class="enun">Numa escola com 100 alunos, uma pesquisa sobre modalidades esportivas apontou: 60 praticam futebol, 50 praticam vôlei, 40 praticam natação, 30 praticam futebol e vôlei, 20 praticam futebol e natação, 15 praticam vôlei e natação, e 10 praticam as três. Quantos alunos não praticam nenhuma das três modalidades?</p>
+    <ol class="alt"><li>0</li><li>5</li><li>10</li><li>15</li><li>20</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Aplicando a fórmula dos três conjuntos:</p>
+      <p class="m">n(F ∪ V ∪ N) = 60 + 50 + 40 − 30 − 20 − 15 + 10</p>
+      <p class="m">= 150 − 65 + 10 = 95</p>
+      <p>Se 95 praticam pelo menos uma, sobram <span class="m">100 − 95 = 5</span> alunos.</p>
+      <p><strong>Conferindo pelo Venn:</strong> miolo 10; só futebol e vôlei <span class="m">30−10=20</span>; só futebol e natação <span class="m">20−10=10</span>; só vôlei e natação <span class="m">15−10=5</span>; só futebol <span class="m">60−20−10−10=20</span>; só vôlei <span class="m">50−20−5−10=15</span>; só natação <span class="m">40−10−5−10=15</span>. Soma: <span class="m">10+20+10+5+20+15+15 = 95</span>. ✓</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Ordem das operações e sinais</span>
+    <p class="enun">O saldo de uma conta é atualizado pela expressão <span class="m">12 − 4 · (−3) + (−2)<sup>3</sup> ÷ 4</span>, em reais. Qual é o saldo?</p>
+    <ol class="alt"><li>R$ 2,00</li><li>R$ 10,00</li><li>R$ 18,00</li><li>R$ 22,00</li><li>R$ 26,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Potência primeiro: <span class="m">(−2)<sup>3</sup> = −8</span> (base negativa, expoente ímpar → negativo).</p>
+      <p class="m">12 − 4·(−3) + (−8) ÷ 4</p>
+      <p>Multiplicação e divisão, da esquerda para a direita:</p>
+      <p class="m">12 − (−12) + (−2)</p>
+      <p>Agora soma e subtração. Cuidado com <span class="m">−(−12)</span>, que vira <span class="m">+12</span>:</p>
+      <p class="m">12 + 12 − 2 = 22</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Comparação de frações</span>
+    <p class="enun">Três marcas de tinta informam o rendimento por lata em relação a uma parede padrão: a marca X cobre <span class="m"><span class="frac"><i>3</i><i>5</i></span></span> da parede, a marca Y cobre <span class="m"><span class="frac"><i>5</i><i>8</i></span></span> e a marca Z cobre <span class="m"><span class="frac"><i>7</i><i>11</i></span></span>. Qual é a ordem decrescente de rendimento?</p>
+    <ol class="alt"><li>X, Y, Z</li><li>Y, X, Z</li><li>Z, Y, X</li><li>Z, X, Y</li><li>Y, Z, X</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com três frações, converter em decimal é o caminho mais seguro:</p>
+      <p class="m"><span class="frac"><i>3</i><i>5</i></span> = 0,600 &nbsp;·&nbsp; <span class="frac"><i>5</i><i>8</i></span> = 0,625 &nbsp;·&nbsp; <span class="frac"><i>7</i><i>11</i></span> ≈ 0,636</p>
+      <p>Do maior para o menor: <span class="m">0,636 &gt; 0,625 &gt; 0,600</span>, ou seja <strong>Z, Y, X</strong>.</p>
+      <p>Note que as três são próximas de <span class="m">0,6</span> — por isso comparar “no olho” não funciona aqui. Divida de fato.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Notação científica</span>
+    <p class="enun">Uma bactéria tem massa aproximada de <span class="m">2 · 10<sup>−12</sup></span> g. Uma colônia contém cerca de <span class="m">3 · 10<sup>8</sup></span> bactérias. A massa total da colônia, em gramas, é de aproximadamente</p>
+    <ol class="alt"><li><span class="m">6 · 10<sup>−20</sup></span></li><li><span class="m">6 · 10<sup>−4</sup></span></li><li><span class="m">5 · 10<sup>−4</sup></span></li><li><span class="m">6 · 10<sup>4</sup></span></li><li><span class="m">6 · 10<sup>96</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplica-se a parte numérica e somam-se os expoentes:</p>
+      <p class="m">(2 · 10<sup>−12</sup>) · (3 · 10<sup>8</sup>) = (2·3) · 10<sup>−12+8</sup> = 6 · 10<sup>−4</sup></p>
+      <p>Ou seja, <span class="m">0,0006</span> g. A alternativa A é a armadilha de quem multiplica os expoentes em vez de somar.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Classificação de números</span>
+    <p class="enun">Considere os números: <span class="m"><span class="rad"><i>9</i></span></span>, <span class="m"><span class="rad"><i>10</i></span></span>, <span class="m">1,232323…</span>, <span class="m">π</span>, <span class="m"><span class="frac"><i>22</i><i>7</i></span></span> e <span class="m"><span class="rad"><i><span class="frac"><i>16</i><i>25</i></span></i></span></span>. Quantos deles são irracionais?</p>
+    <ol class="alt"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Um a um:</p>
+      <ul>
+        <li><span class="m"><span class="rad"><i>9</i></span> = 3</span> → racional (quadrado perfeito)</li>
+        <li><span class="m"><span class="rad"><i>10</i></span> ≈ 3,1622…</span> → <strong>irracional</strong> (10 não é quadrado perfeito)</li>
+        <li><span class="m">1,232323…</span> → racional (dízima periódica, geratriz <span class="m"><span class="frac"><i>122</i><i>99</i></span></span>)</li>
+        <li><span class="m">π</span> → <strong>irracional</strong></li>
+        <li><span class="m"><span class="frac"><i>22</i><i>7</i></span></span> → racional. É <em>aproximação</em> de π, mas é fração de inteiros, logo racional</li>
+        <li><span class="m"><span class="rad"><i><span class="frac"><i>16</i><i>25</i></span></i></span> = <span class="frac"><i>4</i><i>5</i></span></span> → racional</li>
+      </ul>
+      <p>Dois irracionais: <span class="m"><span class="rad"><i>10</i></span></span> e <span class="m">π</span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Fração geratriz</span>
+    <p class="enun">Um sensor registra uma medida de <span class="m">0,8333…</span> metro, com o algarismo 3 repetindo indefinidamente. Essa medida corresponde exatamente à fração</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>5</i><i>6</i></span></span></li><li><span class="m"><span class="frac"><i>83</i><i>100</i></span></span></li><li><span class="m"><span class="frac"><i>833</i><i>999</i></span></span></li><li><span class="m"><span class="frac"><i>25</i><i>3</i></span></span></li><li><span class="m"><span class="frac"><i>4</i><i>5</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>É dízima <strong>composta</strong>: o 8 não repete, o 3 repete. Aplicando a regra — numerador é o número inteiro sem vírgula menos a parte não periódica; denominador tem um 9 por algarismo do período e um 0 por algarismo não periódico:</p>
+      <p class="m">0,8333… = <span class="frac"><i>83 − 8</i><i>90</i></span> = <span class="frac"><i>75</i><i>90</i></span> = <span class="frac"><i>5</i><i>6</i></span></p>
+      <p><strong>Conferindo:</strong> <span class="m">5 ÷ 6 = 0,8333…</span> ✓</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Potências</span>
+    <p class="enun">Simplificando a expressão <span class="m"><span class="frac"><i>2<sup>3</sup> · 4<sup>2</sup></i><i>8</i></span></span>, obtém-se</p>
+    <ol class="alt"><li>2</li><li>4</li><li>8</li><li>16</li><li>32</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O passo que resolve: <strong>colocar tudo na mesma base</strong>. Como <span class="m">4 = 2<sup>2</sup></span> e <span class="m">8 = 2<sup>3</sup></span>:</p>
+      <p class="m">4<sup>2</sup> = (2<sup>2</sup>)<sup>2</sup> = 2<sup>4</sup></p>
+      <p class="m"><span class="frac"><i>2<sup>3</sup> · 2<sup>4</sup></i><i>2<sup>3</sup></i></span> = <span class="frac"><i>2<sup>7</sup></i><i>2<sup>3</sup></i></span> = 2<sup>4</sup> = 16</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · A armadilha do “apenas”</span>
+    <p class="enun">Uma pesquisa com 200 consumidores mostrou que 120 compram o produto P, 90 compram o produto Q e 40 compram os dois. Quantos consumidores compram <strong>apenas</strong> o produto P?</p>
+    <ol class="alt"><li>40</li><li>50</li><li>80</li><li>120</li><li>170</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Dos 120 que compram P, 40 também compram Q. Quem compra <strong>apenas</strong> P é o que sobra depois de tirar a interseção:</p>
+      <p class="m">120 − 40 = 80</p>
+      <p>A alternativa D é a pegadinha: 120 é o círculo P <em>inteiro</em>, incluindo quem compra os dois. A palavra <em>apenas</em> muda a resposta.</p>
+      <p>De quebra, o Venn completo fica: apenas P = 80, apenas Q = <span class="m">90 − 40 = 50</span>, ambos = 40, nenhum = <span class="m">200 − 170 = 30</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei a cadeia <span class="m">ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</span> e sei dizer por que os irracionais ficam fora dela</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico qualquer número como racional ou irracional pelo comportamento decimal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei os quadrados perfeitos até 400 e reconheço raiz exata na hora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho a fração geratriz de dízima simples e de dízima composta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a ordem das operações sem hesitar e sei que <span class="m">−3<sup>2</sup> ≠ (−3)<sup>2</sup></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo, subtraio, multiplico e divido frações sem calculadora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Comparo três frações rapidamente convertendo em decimal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo qualquer número em notação científica e opero com ela</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso as sete propriedades de potência e sei que raiz não distribui sobre soma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Racionalizo denominador com raiz simples e com conjugado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio notação de intervalo e lembro que o infinito é sempre aberto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo Venn de dois e de três conjuntos preenchendo de dentro para fora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Percebo a diferença entre “A” e “apenas A” no enunciado</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões deste assunto e acerte pelo menos 21 (70%). Teoria lida não é conteúdo dominado — só a questão prova isso. Depois volte à planilha e atualize a linha correspondente na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>47 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-01-operacoes-e-conjuntos-numericos.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é criado sozinho, com o tipo de nota Básico e as tags já preenchidas. Revise os cartões todo dia — são eles que sustentam a revisão espaçada da aba <strong>Revisão</strong> da planilha.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-01";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

@@ -1,0 +1,83 @@
+Esta é a questão mais previsível de Matemática do ENEM. Cai quase todo ano, só precisa de soma e subtração, e muita gente erra por uma palavra: apenas.
+
+Até o fim desta aula, você vai resolver qualquer questão de Venn com dois ou três grupos, sem decorar fórmula.
+
+O pré-requisito de hoje é o mais tranquilo da série: soma e subtração. Aqui você não precisa de nenhuma conta difícil. O que você precisa é de um desenho.
+
+Imagine um casamento. A noiva fez uma lista com trinta amigos. O noivo, uma lista com vinte e cinco. Mas cinco pessoas são amigas dos dois. Quantos convites imprimir?
+
+Cada lista é um conjunto: um grupo com algo em comum. Cada pessoa da lista é um elemento do conjunto. E para enxergar os dois grupos juntos, a gente desenha um diagrama de Venn.
+
+Um círculo para os amigos da noiva. Outro para os do noivo. E os dois círculos se sobrepõem no meio. Esse pedaço do meio é quem está nos dois grupos: os cinco amigos do casal.
+
+E esses pedaços têm nomes. Quem vai receber convite? Quem está na lista da noiva, ou na do noivo, ou nas duas. Isso é a união: tudo o que está pintado. O símbolo parece um U.
+
+E quem está nas duas listas ao mesmo tempo? Isso é a interseção: só o pedaço do meio. O símbolo é o U de cabeça para baixo.
+
+E quem é amigo só da noiva? Isso é a diferença: noiva menos noivo. É o círculo da noiva sem o pedaço do meio.
+
+E quem não é amigo da noiva? O retângulo em volta é todo mundo que está sendo contado. Tudo o que fica fora do círculo da noiva é o complementar da noiva.
+
+Agora, os convites. Antes, um símbolo: n de A quer dizer o número de elementos do grupo A. Quantas pessoas tem ali.
+
+Muita gente faz: trinta mais vinte e cinco, cinquenta e cinco. Mas olhe os cinco do meio. Eles foram contados duas vezes: uma na lista da noiva e outra na do noivo. Por isso a gente desconta uma vez. Cinquenta e cinco menos cinco: cinquenta convites.
+
+E isso vira a fórmula: o número da união é o número de A, mais o número de B, menos o número da interseção. Só dá para somar direto quando os grupos não têm ninguém em comum. Esses grupos se chamam disjuntos.
+
+E quem não está em nenhum círculo? Imagine que a cidade tem oitenta pessoas. Cinquenta foram convidadas. As outras trinta ficam fora dos dois círculos, mas dentro do retângulo. Muita questão pede justamente esses: os nenhum.
+
+E com três grupos? O desenho ganha um terceiro círculo, e sete pedaços. No centro, o miolo: quem está nos três. Em volta, quem está em exatamente dois. E nas pontas, quem está em um só.
+
+E aqui está o segredo: preencha de dentro para fora. Por quê? Porque o miolo aparece em todos os dados do enunciado. Se você começa pelas pontas, acaba contando o miolo duas, três vezes.
+
+O método tem quatro passos. Um: o miolo, quem está nos três. Dois: os pedaços de dois grupos, descontando o miolo. Três: os pedaços sozinhos, descontando tudo o que já foi posto. Quatro: some os sete pedaços e compare com o total.
+
+Existe uma fórmula para três grupos, mas use só para conferir. Soma os três grupos, subtrai os pares, soma o trio.
+
+E a palavra que mais derruba gente: apenas. Os amigos da noiva são o círculo inteiro: trinta. Os amigos apenas da noiva são só o pedaço que não toca em ninguém: trinta menos cinco, vinte e cinco. Sempre que ler apenas, sublinhe.
+
+Vamos juntar tudo em três frases. Um: quem está nos dois foi contado duas vezes: desconte uma. Dois: preencha de dentro para fora. Três: apenas A é só o pedaço de A que não toca em ninguém.
+
+Agora, os quatro erros que mais derrubam gente. Primeiro: somar os dois grupos e esquecer de subtrair a interseção. Parece certo, porque juntar é somar. Mas quem está no meio entrou duas vezes. Desconte uma.
+
+Segundo: preencher de fora para dentro. Parece certo, porque o enunciado dá primeiro os grupos inteiros. Mas o miolo está escondido dentro de todos eles. Comece pelo miolo.
+
+Terceiro: responder o círculo inteiro quando a questão diz apenas. Parece certo, porque o número do círculo está ali, prontinho no enunciado. Mas apenas é sem as interseções.
+
+Quarto: esquecer quem não está em nenhum grupo. Parece certo, porque eles não aparecem nos círculos. Mas eles estão no total. Fora dos círculos, dentro do retângulo.
+
+Hora de treinar, no estilo do ENEM. Uma operadora entrevistou quinhentos assinantes sobre dois serviços de streaming. Trezentos e vinte assinam o serviço A, duzentos e cinquenta assinam o B, e noventa não assinam nenhum dos dois. Quantos assinantes têm os dois serviços?
+
+As alternativas: A, setenta. B, noventa. C, cento e sessenta. D, cento e oitenta. E, duzentos e trinta. Pause o vídeo e tente.
+
+Primeiro, a pista. Trezentos e vinte mais duzentos e cinquenta dá quinhentos e setenta. Mais gente do que os quinhentos entrevistados! Impossível, a não ser que alguém tenha sido contado duas vezes. Esse excesso é a interseção.
+
+Agora, o desenho. Os noventa que não assinam nada ficam fora dos círculos. Então quem está nos círculos é quinhentos menos noventa: quatrocentos e dez. Quinhentos e setenta menos quatrocentos e dez: cento e sessenta no meio. Letra C.
+
+Conferindo o desenho: só A, trezentos e vinte menos cento e sessenta, cento e sessenta. Só B, noventa. Somando tudo com os noventa de fora: quinhentos. Bateu.
+
+E as erradas? Setenta é quinhentos e setenta menos quinhentos: esqueceu os noventa que estão fora. Noventa é o número de quem não assina nada, copiado do enunciado. Cento e oitenta é quem não assina o A: o complementar, a pergunta errada. E duzentos e trinta tira os noventa do círculo A, uma conta sem desenho.
+
+Segunda questão. Uma pesquisa com duzentos consumidores mostrou que cento e vinte compram o produto P, noventa compram o Q, e quarenta compram os dois. Quantos compram apenas o produto P? A, quarenta. B, cinquenta. C, oitenta. D, cento e vinte. E, cento e setenta. Pause o vídeo e tente.
+
+Viu o apenas? Sublinhe. De dentro para fora: o meio, quarenta. Só P: cento e vinte menos quarenta, oitenta. Letra C. E de quebra: só Q, cinquenta; nenhum, trinta. Oitenta, mais quarenta, mais cinquenta, mais trinta: duzentos.
+
+As erradas: cento e vinte é a pegadinha: o círculo P inteiro, ignorando o apenas. Quarenta é o meio. Cinquenta é apenas Q. E cento e setenta é a união inteira.
+
+Agora, três grupos. Numa escola com cem alunos: sessenta jogam futebol, cinquenta jogam vôlei, quarenta fazem natação. Trinta jogam futebol e vôlei, vinte, futebol e natação, quinze, vôlei e natação, e dez fazem os três. Quantos não praticam nenhum dos três?
+
+As alternativas: A, zero. B, cinco. C, dez. D, quinze. E, vinte. Pause o vídeo e tente.
+
+De dentro para fora. Passo um, o miolo: dez fazem os três. Passo dois, os pares. Futebol e vôlei: trinta menos os dez do miolo, vinte. Futebol e natação: vinte menos dez, dez. Vôlei e natação: quinze menos dez, cinco.
+
+Passo três, os sozinhos. Só futebol: sessenta menos vinte, menos dez, menos dez: vinte. Só vôlei: cinquenta menos vinte, menos cinco, menos dez: quinze. Só natação: quarenta menos dez, menos cinco, menos dez: quinze.
+
+Passo quatro: some os sete pedaços. Dez, vinte, dez, cinco, vinte, quinze, quinze: noventa e cinco. De cem alunos, sobram cinco fora dos círculos. Letra B. E a fórmula confere: cento e cinquenta, menos sessenta e cinco, mais dez: noventa e cinco.
+
+E as erradas? Zero: somou os três grupos, deu cento e cinquenta, passou de cem, e achou que não sobra ninguém. Quinze: subtraiu os pares e esqueceu de somar o trio de volta. Dez é o miolo, a pergunta errada. E vinte é só futebol: outra região do desenho.
+
+Para fechar, as mesmas três frases. Um: quem está nos dois foi contado duas vezes: desconte uma. Dois: preencha de dentro para fora. Três: apenas A é só o pedaço de A que não toca em ninguém.
+
+No último episódio deste assunto, juntamos tudo: sinais, conjuntos numéricos, intervalos e Venn, com as pegadinhas e questões novas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no canal e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha caído na pegadinha do apenas? Bons estudos, e até a próxima aula.

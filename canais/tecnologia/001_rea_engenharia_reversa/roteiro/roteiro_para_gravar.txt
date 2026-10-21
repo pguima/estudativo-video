@@ -1,0 +1,37 @@
+Você já viu um recurso num aplicativo e pensou: como isso funciona por dentro? O problema é que você não tem o código-fonte. Só tem o programa compilado. E se um agente de IA pudesse abrir esse programa, achar a lógica e ainda reconstruir o recurso para você?
+
+Esse é o REA, de Reverse Engineer Anything: engenharia reversa de qualquer coisa. Um projeto de código aberto, com licença MIT, que passou da marca de duzentas e cinquenta mil estrelas no GitHub.
+
+Neste vídeo: o que é engenharia reversa, como o REA conversa com o seu agente, o que ele consegue analisar, três exemplos reais, como instalar, e os cuidados legais.
+
+Primeiro, o conceito. Quando um programa é compilado, o código que o desenvolvedor escreveu vira instruções de máquina. Os nomes somem. Os comentários somem. Engenharia reversa é o caminho de volta: partir do binário e descobrir a lógica.
+
+Tradicionalmente, isso exige ferramentas pesadas, como o Ghidra, o IDA e o Hopper, e muitas horas lendo assembly. O REA não substitui essas ferramentas. Ele é uma ponte.
+
+O REA é um servidor MCP. MCP é o Model Context Protocol, o padrão que permite que agentes de IA usem ferramentas externas. Assim, o Claude Code, o Codex, o Cursor ou o Gemini CLI ganham as mãos que faltavam para inspecionar um programa.
+
+O fluxo tem três passos. Um: você pergunta sobre um recurso e aponta o programa. Dois: o agente chama o REA, que inspeciona o alvo e rastreia o código relevante. Três: o REA devolve as descobertas com as evidências, e o agente explica o comportamento, ou escreve e testa uma implementação.
+
+E aqui está o ponto mais importante do projeto. Cada conclusão vem com a evidência e com as limitações. O REA separa o que ele encontrou no programa, como código, instruções e chamadas, da interpretação que o agente faz. Você não precisa confiar no palpite da IA. Você vê a prova.
+
+E o que dá para analisar? Muita coisa. Binários nativos, executáveis e DLLs. Programas em Go e Rust. Aplicativos JavaScript e Electron. Assemblies .NET. Aplicativos Android. Sites, pelo navegador. E até WebAssembly, contratos da Ethereum, bancos SQLite, firmware e capturas de rede.
+
+E tudo roda localmente, na sua máquina. A análise estática de JavaScript e de .NET só lê os arquivos, sem executar o aplicativo. Só a captura em tempo de execução roda o programa, e com as suas permissões.
+
+Agora, os exemplos. O primeiro é a calculadora do Windows. A pergunta: como funciona o botão de porcentagem? O REA leu as instruções do binário e achou duas regras. Depois do mais, a porcentagem é calculada sobre o primeiro número: duzentos mais dez por cento dá duzentos e vinte. Mas depois do vezes, dez por cento vira zero vírgula um: duzentos vezes dez por cento dá vinte. A mesma tecla, dois comportamentos.
+
+O segundo é o jogo do dinossauro do navegador. Por que ele vai ficando mais rápido? A regra recuperada: a velocidade começa em seis, soma um milésimo a cada atualização, e trava em treze. Com isso, o agente construiu um minijogo, com um controle para ajustar a velocidade.
+
+O terceiro é o mais impressionante: DX-Ball, um jogo de Windows de mil novecentos e noventa e seis. O REA rastreou como a posição da bola define se o som sai na esquerda ou na direita. A função foi reconstruída em C, passou em três mil, duzentos e cinco casos comparados com o original, e reproduziu os sessenta e três bytes da função compilada.
+
+Quer testar? Você precisa do Node.js, versão vinte e dois ou mais nova, e de um agente de código. No terminal, rode: npx rea-agents setup. O instalador pergunta quais agentes configurar, mostra as mudanças antes de aplicar e faz backup da configuração. Depois, é só reiniciar o agente.
+
+E aí você pede em linguagem natural. Por exemplo: entenda como funciona a busca do aplicativo de notas, me mostre as evidências e construa um recurso parecido. Também dá para usar direto pelo terminal, com o comando rea.
+
+Um detalhe: para a análise profunda de binários nativos, o REA usa o Ghidra, que é gratuito, ou o IDA e o Hopper, que são comerciais. E o REA não dá licença de nenhum deles. Você precisa ter a sua.
+
+E agora, o cuidado mais sério. O REA é feito para pesquisa legal, educação, interoperabilidade, preservação de software e análise de programas que são seus, ou que você tem autorização para examinar. Nada de copiar software protegido, nem burlar licença. Engenharia reversa é uma ferramenta poderosa, e responsabilidade vem junto.
+
+Resumindo: o REA é um servidor MCP de código aberto que dá ao seu agente de IA o poder da engenharia reversa. Ele analisa de binários nativos a sites, roda localmente, e entrega cada conclusão com evidência. Serve para entender, aprender e reconstruir, sempre com autorização.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual aplicativo você gostaria de abrir por dentro? Até o próximo vídeo.
