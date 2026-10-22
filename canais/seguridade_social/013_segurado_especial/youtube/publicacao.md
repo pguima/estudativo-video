@@ -1,8 +1,8 @@
 # Publicação no YouTube — Seguridade Social · Aula 13 (vídeo 013)
 
-**Arquivo do vídeo:** `final/seguridade_013_segurado_especial.mp4` (duração: preencher após o render; ~6:30 estimado, 1920x1080, tema claro verde-petróleo)
+**Arquivo do vídeo:** `final/seguridade_013_segurado_especial.mp4` (7:02, 1920x1080, tema claro verde-petróleo)
 **Canal:** Estudativo · Seguridade Social (concurso INSS)
-**Narração:** Gemini TTS Studio local (voz Neno, sotaque neutro, tags alegre + curiosa + amigável, instrução de estilo "professor apaixonado, muito expressivo")
+**Narração:** Gemini TTS Studio (arquivo único) (voz Neno, sotaque neutro, tags alegre + curiosa + amigável, instrução de estilo "professor apaixonado, muito expressivo")
 **Fonte:** Módulo M09, parte 2 — Segurado especial (Lei 8.213/1991, art. 11, VII e §§ 1º, 7º, 8º, 9º e 10; art. 39; CF, art. 195, §8º). O contribuinte individual (parte 1 do M09) foi a Aula 12.
 **PDF oferecido:** `canais/seguridade_social/material/Seguridade-Social-Apostila-Completa-INSS.pdf` — troque `[LINK DO PDF]` pelo link público
 
@@ -46,24 +46,24 @@ Aula 13 da preparação completa de Seguridade Social para o concurso do INSS. O
 
 ⏱️ Capítulos
 00:00 O caso do João: ele ainda é segurado especial?
-00:20 Art. 11, VII e a base na Constituição
-00:42 Os 4 elementos do conceito
-01:00 Quem pode ser segurado especial
-01:24 Individualmente OU em família
-01:39 Regime de economia familiar
-02:00 Módulo fiscal não é hectare
-02:16 Os números: 4 · 16 · 3 × 120 · 50%
-02:49 A conta da safra
-03:14 O que não descaracteriza
-03:36 Outras rendas: vereador sim, prefeito não
-04:00 Quando perde: mês do fato × mês seguinte
-04:30 Como ele contribui
-04:50 Comprovação de atividade rural
-05:08 Pegadinhas
-05:34 Questão certo ou errado
-05:56 O caso do João, item por item
-06:32 Resumo
-06:55 PDF completo e próxima aula
+00:18 Art. 11, VII e a base na Constituição
+00:39 Os 4 elementos do conceito
+00:57 Quem pode ser segurado especial
+01:21 Individualmente OU em família
+01:37 Regime de economia familiar
+01:58 Módulo fiscal não é hectare
+02:13 Os números: 4 · 16 · 3 × 120 · 50%
+02:41 A conta da safra
+03:01 O que não descaracteriza
+03:22 Outras rendas: vereador sim, prefeito não
+03:44 Quando perde: mês do fato × mês seguinte
+04:07 Como ele contribui
+04:25 Comprovação de atividade rural
+04:43 Pegadinhas
+05:12 Questão certo ou errado
+05:30 O caso do João, item por item
+06:04 Resumo
+06:26 PDF completo e próxima aula
 
 📋 Resumo rápido:
 • Art. 11, VII, com base própria na CF (art. 195, §8º)
@@ -79,8 +79,6 @@ Aula 13 da preparação completa de Seguridade Social para o concurso do INSS. O
 #INSS #SeguridadeSocial #ConcursoINSS
 ```
 
-> ⚠️ Os capítulos acima vêm dos **tempos provisórios** (sem voz). Depois de sincronizar a voz real, refaça com os
-> `start` de cada cena em `audio/tempos.json` (a voz real costuma sair ~10–15% mais curta).
 
 ---
 
@@ -125,15 +123,15 @@ inss, concurso inss, técnico do seguro social, seguridade social, segurado espe
 ## Playlist
 **"Seguridade Social para o INSS — Temporada 2: RGPS — quem são os segurados"** e **"Curso Completo"**.
 
-## Tela final (últimos 20 s)
+## Tela final (últimos 20 s, a partir de 06:42)
 - **Inscrever-se** à esquerda
 - **Vídeo**: Aula 12 (contribuinte individual), até a Aula 14 sair; depois, troque pela Aula 14
 
 ## Cards
-- 00:20 (art. 11): card para a **Aula 10** (estrutura do RGPS)
-- 01:39 (sem empregados permanentes): card para a **Aula 12** (a fronteira com o contribuinte individual)
+- 00:18 (art. 11): card para a **Aula 10** (estrutura do RGPS)
+- 01:37 (sem empregados permanentes): card para a **Aula 12** (a fronteira com o contribuinte individual)
 
 ## Ideias de Shorts
-- 02:49–03:14 · "A conta da safra que a banca adora"
-- 03:36–04:00 · "Vereador pode, prefeito não: por quê?"
-- 00:00–00:20 + 05:56–06:32 · "O caso do João: ele perdeu a condição?"
+- 02:41–03:01 · "A conta da safra que a banca adora"
+- 03:22–03:44 · "Vereador pode, prefeito não: por quê?"
+- 00:00–00:18 + 05:30–06:04 · "O caso do João: ele perdeu a condição?"
