@@ -1,6 +1,7 @@
 """Gera o registro de TODOS os vídeos criados (todos os canais), para consultar depois do backup.
 
 Uso: python _ferramentas/registrar_videos.py
+Vídeos que já foram para o backup (mp4 fora do disco) continuam no registro: as linhas do CSV anterior são mantidas.
 Saída: REGISTRO_DE_VIDEOS.md (legível, por canal) e registro_videos.csv (planilha), na raiz de videos_canal/.
 Lê de cada projeto: final/*.mp4, shorts/*.mp4, roteiro/cenas.py (TITULO e fonte), youtube/publicacao.md (título recomendado)
 e youtube/capa_*.jpg. Pode rodar de novo a qualquer momento: sobrescreve os dois arquivos.
@@ -68,7 +69,18 @@ for mp4 in sorted(ROOT.glob("canais/**/*.mp4")):
                      data=datetime.datetime.fromtimestamp(mp4.stat().st_mtime).strftime("%Y-%m-%d"),
                      titulo_youtube=tp, titulo_roteiro=tr, fonte=base, capas=capas))
 
-with open(ROOT / "registro_videos.csv", "w", newline="", encoding="utf-8-sig") as f:
+# vídeos que já foram para o backup (mp4 fora do disco) continuam no registro: junta com o CSV anterior
+csv_path = ROOT / "registro_videos.csv"
+if csv_path.exists():
+    no_disco = {(r["projeto"], r["arquivo"]) for r in rows}
+    with open(csv_path, encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f, delimiter=";"):
+            if (r["projeto"], r["arquivo"]) not in no_disco:
+                r["segundos"] = float(r["segundos"] or 0)
+                rows.append(r)
+    rows.sort(key=lambda r: (r["projeto"], r["tipo"], r["arquivo"]))
+
+with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0].keys()), delimiter=";")
     w.writeheader(); w.writerows(rows)
 

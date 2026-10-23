@@ -11,7 +11,9 @@ import skia
 W, H = 1920, 1080
 FPS = 30
 FONTES = Path(__file__).parent / "fontes" / "inter" / "extras" / "ttf"
-ICONES = "C:/Windows/Fonts/SegoeIcons.ttf"
+# Segoe Icons só existe no Windows; fora dele os ícones do CTA saem como vetor (ver ICONES_VETOR)
+ICONES = next((p for p in ("C:/Windows/Fonts/SegoeIcons.ttf", str(Path(__file__).parent / "fontes" / "SegoeIcons.ttf"))
+               if Path(p).exists()), None)
 
 
 def hexc(h, a=1.0):
@@ -169,11 +171,82 @@ def text_mid(c, s, x, cy, size, peso="regular", color=None, a=1.0, align="center
     return text(c, s, x, cy + size * 0.36, size, peso, color, a, align, tracking)
 
 
-def icon(c, glyph, cx, cy, size, color=None, a=1.0):
+# Contornos (grade 24x24) que imitam os glifos da Segoe Fluent Icons usados no CTA
+ICONES_VETOR = {
+    "\ue8e1": ["M9 20.5C7.2 20.5 5.9 19.4 5.6 17.6L5.2 15C5 13.6 5.6 12.5 6.7 11.7L10.6 7.6L11.6 4.3"
+               "C11.9 3.3 12.9 2.8 13.8 3.3C14.6 3.8 14.9 4.8 14.7 5.8L13.9 10H16.9C18.3 10 19.2 11.3 18.9 12.7"
+               "L17.8 18.4C17.5 19.7 16.5 20.5 15.3 20.5Z"],                                         # curtir
+    "\uea8f": ["M12 3.2A5.8 5.8 0 0 0 6.2 9V13.4L4.6 15.7A0.9 0.9 0 0 0 5.4 17.1H18.6A0.9 0.9 0 0 0 19.4 15.7"
+               "L17.8 13.4V9A5.8 5.8 0 0 0 12 3.2Z", "M9.6 17.1a2.4 2.4 0 0 0 4.8 0"],            # sininho
+    "\ue90a": ["M5.2 4.5H18.8A1.7 1.7 0 0 1 20.5 6.2V15.3A1.7 1.7 0 0 1 18.8 17H11L7.3 20.4V17H5.2"
+               "A1.7 1.7 0 0 1 3.5 15.3V6.2A1.7 1.7 0 0 1 5.2 4.5Z"],                               # comentário
+}
+
+
+def _svg_path(d):
+    """caminho SVG (M L H V C A Z, absolutos e relativos) -> skia.Path"""
+    import re
+    tk = re.findall(r"[MLHVCAZmlhvcaz]|-?(?:\d+\.?\d*|\.\d+)", d)
+    p, i, cmd, x, y, sx, sy = skia.Path(), 0, None, 0.0, 0.0, 0.0, 0.0
+    while i < len(tk):
+        if tk[i].isalpha():
+            cmd = tk[i]; i += 1
+            if cmd in "Zz":
+                p.close(); x, y = sx, sy
+                continue
+        rel, up = cmd.islower(), cmd.upper()
+        n = {"M": 2, "L": 2, "H": 1, "V": 1, "C": 6, "A": 7}[up]
+        v = [float(s) for s in tk[i:i + n]]; i += n
+        ox, oy = (x, y) if rel else (0.0, 0.0)
+        if up == "M":
+            x, y = ox + v[0], oy + v[1]; p.moveTo(x, y); sx, sy = x, y
+            cmd = "l" if rel else "L"
+        elif up == "L":
+            x, y = ox + v[0], oy + v[1]; p.lineTo(x, y)
+        elif up == "H":
+            x = ox + v[0]; p.lineTo(x, y)
+        elif up == "V":
+            y = oy + v[0]; p.lineTo(x, y)
+        elif up == "C":
+            p.cubicTo(ox + v[0], oy + v[1], ox + v[2], oy + v[3], ox + v[4], oy + v[5]); x, y = ox + v[4], oy + v[5]
+        else:
+            x, y = ox + v[5], oy + v[6]
+            p.arcTo(v[0], v[1], v[2], skia.Path.ArcSize.kLarge_ArcSize if v[3] else skia.Path.ArcSize.kSmall_ArcSize,
+                    skia.PathDirection.kCW if v[4] else skia.PathDirection.kCCW, x, y)
+    return p
+
+
+@lru_cache(None)
+def icon_path(glyph):
+    if glyph not in ICONES_VETOR:
+        return None
+    p = skia.Path()
+    for d in ICONES_VETOR[glyph]:
+        p.addPath(_svg_path(d))
+    return p
+
+
+def icon(c, glyph, cx, cy, size, color=None, a=1.0, p=None):
+    """desenha um glifo da Segoe Icons centrado em (cx, cy); sem a fonte, usa o contorno vetorial. p = Paint opcional"""
     color = INK if color is None else color
-    f = font("icons", size)
-    w = f.measureText(glyph)
-    c.drawString(glyph, cx - w / 2, cy + size / 2, f, paint(color, a))
+    p = paint(color, a) if p is None else p
+    if ICONES:
+        f = font("icons", size)
+        w = f.measureText(glyph)
+        c.drawString(glyph, cx - w / 2, cy + size / 2, f, p)
+        return
+    path = icon_path(glyph)
+    if path is None:
+        raise ValueError(f"ícone U+{ord(glyph[0]):04X} sem a fonte Segoe Icons e sem contorno em ICONES_VETOR")
+    # mesma área e centro que o glifo da fonte ocuparia: lado maior = 95% do tamanho, traço fino como o da Segoe
+    bb = path.computeTightBounds()
+    k = size * 0.95 / max(bb.width(), bb.height())
+    c.save(); c.translate(cx - bb.centerX() * k, cy - bb.centerY() * k); c.scale(k, k)
+    q = skia.Paint(p)
+    q.setStyle(skia.Paint.kStroke_Style); q.setStrokeWidth(size * 0.048 / k)
+    q.setStrokeCap(skia.Paint.kRound_Cap); q.setStrokeJoin(skia.Paint.kRound_Join)
+    c.drawPath(path, q)
+    c.restore()
 
 
 # ---------------- primitivas ----------------

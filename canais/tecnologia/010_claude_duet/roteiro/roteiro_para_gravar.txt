@@ -1,0 +1,51 @@
+Claude Duet: o agente da Anthropic que trabalha ANTES de você pedir
+
+Voz: Neno (Gemini TTS local) · parte 1 = cenas 01–07 · parte 2 = cenas 08–16 (corte: gerar_voz_local.py <proj> 08)
+
+[CENA 01 · gancho]
+Quantos aplicativos você abre antes de começar a trabalhar de verdade? E-mail, agenda, mensagens, planilha, fatura atrasada... Agora imagine o contrário: uma IA que olha tudo isso por você e só te chama quando alguma coisa precisa de você. Foi isso que a Anthropic anunciou ontem, vinte e um de outubro: o Claude Duet.
+
+[CENA 02 · oque]
+O Claude Duet é um aplicativo novo, separado do app principal do Claude, onde o Claude trabalha como um agente proativo. Nas palavras da Anthropic, ele vem até você com o que precisa da sua atenção, completa as tarefas que você pede, continua trabalhando quando você se afasta, e pergunta antes de agir em seu nome. O foco é trabalho: profissionais e donos de pequenas empresas. E por baixo está o modelo Claude Opus cinco ponto cinco.
+
+[CENA 03 · fluxo]
+Como funciona? Você conecta os seus aplicativos. O Duet herda da sua conta do Claude a memória, as skills e os apps que você já conectou. Ele lê, organiza e te manda um resumo ou um alerta. Se for preciso agir, ele mostra exatamente o que vai fazer e espera a sua aprovação. Só então vem a ação. E tudo acontece numa conversa só, por texto ou por voz.
+
+[CENA 04 · ciclo]
+Todo dia de manhã, ele manda um brief curto com o que mais importa nos seus apps. Durante o dia, o Duet confere as suas contas a cada poucas horas. Não é o tempo todo, e a Anthropic explica o motivo: checar sem parar gastaria o limite do seu plano muito mais rápido. Você também pode dizer sobre o que quer ser avisado e com que frequência.
+
+[CENA 05 · nuvem]
+E aqui está a parte mais interessante: o Duet tem uma máquina virtual na nuvem, com um navegador próprio. Ou seja: o seu notebook e o seu celular podem ficar desligados. Você descreve a tarefa numa mensagem curta, ele decide quais apps usar e quais passos seguir, e te notifica quando termina ou quando precisa da sua revisão.
+
+[CENA 06 · tarefas]
+E que tipo de tarefa? Desde coisas simples, como marcar reuniões, até trabalhos maiores: dashboards com dezenas de ferramentas, previsões financeiras e de vendas, protótipos e até aplicações web. Para isso, ele usa os mais de seis mil conectores e plugins do Claude Marketplace.
+
+[CENA 07 · conectores]
+A própria Anthropic dá exemplos. Achar as mensagens do Gmail e do Slack que você deixou passar e ajudar a responder. Procurar faturas em aberto no QuickBooks ou no Stripe e redigir os lembretes. Preparar a folha de pagamento no Gusto. Escrever uma vaga e, depois que você edita e aprova, publicar no LinkedIn. E até comprar coisas para o seu negócio, com um cartão virtual, para o número do seu cartão de verdade não ser compartilhado.
+
+[CENA 08 · casos]
+E como isso fica na prática? A Anthropic contou casos de quem já testou. Uma corretora de imóveis recebeu um alerta sem ter pedido nada: uma visita estava marcada na agenda no dia errado. O dono de uma rede de restaurantes, com cerca de cento e dez funcionários, usou o Duet para revisar faturas loja por loja. Ele resumiu assim: não preciso abrir cem abas. E uma estrategista de marca tinha uma call com um possível cliente. O Duet preparou um resumo e percebeu que a call era logo antes do voo dela. Então ofereceu remarcar.
+
+[CENA 09 · acesso]
+E como usar? Por enquanto, é uma prévia de pesquisa, com lista de espera. Começou pelos assinantes dos planos Pro e Max, e só nos Estados Unidos. O app existe para iOS, Android e na web, em claude ponto ai. Não tem preço separado: durante a prévia, ele está incluído no plano, mas usa os mesmos limites do resto do Claude. E as checagens em segundo plano também contam nesse limite.
+
+[CENA 10 · aprovacao]
+Agora, a parte que mais importa num agente assim: segurança. Antes de enviar uma mensagem, fazer um pagamento, assinar um documento ou apagar qualquer coisa, o Duet mostra o que vai fazer e espera você aprovar. E algumas coisas são proibidas mesmo com a sua aprovação: negociar valores mobiliários e transferir dinheiro entre contas.
+
+[CENA 11 · sensivel]
+Segundo a Anthropic, o Duet nunca vê diretamente as suas senhas nem os tokens de login. Um classificador novo confere cada mensagem e bloqueia o envio de dados como número de cartão de crédito e documento de identidade. Saúde e finanças pessoais só saem quando você mandar explicitamente. E você pode desconectar qualquer app quando quiser.
+
+[CENA 12 · limites]
+E a própria empresa admite os limites. Ele ainda pode entender mal uma conversa ou errar o que é urgente. Tarefas pessoais, como comprar ingressos, ainda são mais fracas. Ele ainda não mostra o navegador trabalhando. E, segundo o desenvolvedor Flavio Copes, citando a central de ajuda, o Microsoft trezentos e sessenta e cinco ainda não funciona no Duet.
+
+[CENA 13 · rivais]
+E o Duet não chega sozinho. Segundo a CNBC, ele vai disputar espaço com o Muse, da Meta, e com o Dots, da OpenAI. A Meta mira mais o consumidor; o produto da OpenAI fica entre empresas e consumidores. Já a aposta da Anthropic é clara: trabalho.
+
+[CENA 14 · resumo]
+Resumindo. O Claude Duet é um agente proativo, num app próprio. Manda um brief de manhã e confere os seus apps a cada poucas horas. Trabalha na nuvem, mesmo com tudo desligado. Pede aprovação antes de enviar, pagar, assinar ou apagar. E, por enquanto, é prévia com lista de espera, para Pro e Max nos Estados Unidos.
+
+[CENA 15 · cta]
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: você deixaria uma IA cuidar da sua caixa de entrada? Até o próximo vídeo.
+
+[CENA 16 · fontes]
+As fontes deste vídeo estão na tela e na descrição.
