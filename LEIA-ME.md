@@ -16,6 +16,7 @@ videos_canal/
 │   ├── narracao.py             narração TTS provisória (edge-tts)
 │   ├── transcrever_palavras.py transcreve a sua voz com o tempo de cada palavra (Whisper)
 │   ├── voz_externa.py          sincroniza a sua voz (vozgen/Gemini) com o roteiro
+│   ├── som_tech.py             som padrão do canal Tecnologia (trilha eletrônica + efeitos HUD), automático no --final
 │   ├── transcrever.py · musica.py · prever.sh
 │   ├── fontes/                 fonte Inter
 │   └── amostras_voz/           amostras de vozes testadas

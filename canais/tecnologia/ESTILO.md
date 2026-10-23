@@ -47,6 +47,21 @@ Texto: branco `#EAF2FF`, secundário `#A9B8D0`, apagado `#62708A`. Fontes: **Int
 
 **Glifos:** Consolas e Inter **não têm** ✓ ✗ ★ ◉ ○ ➤ ⌕ ↳ ⏱ ⇆ (saem quadradinhos). Use `check_icon()` desenhado, `→`, `+`, `[x]`.
 
+## Som (padrão desde 2026-10-23)
+- **Todo vídeo do canal tem trilha eletrônica + efeitos sonoros** de `_ferramentas/som_tech.py` (sintetizados, sem direitos).
+  O `render.py --final` aplica sozinho quando o `visual.py` usa `import tech` (gera `som/trilha.wav`, `som/sfx.wav` e mixa).
+  Para refazer só o som: `python3 _ferramentas/som_tech.py <proj>`.
+- **Trilha:** ~112 BPM, ré menor (Dm Bb F C), arpejo pluck com eco, baixo pulsando, pad, bumbo 4/4, palmas, chimbal.
+  1ª cena = intro (sem bateria); do 2º bloco ao CTA = batida completa; CTA e fontes = sem bumbo, fade-out.
+  Fica ~10 dB abaixo da voz e abaixa mais quando a voz entra (ducking). Final ≈ -17 LUFS.
+- **Efeitos:** whoosh digital em cada troca de cena, "lock" no título HUD, "pop" de interface em cada `{cue}`,
+  clique/sininho/brilho no CTA. Nos elementos especiais, ajuste no `visual.py`:
+  `SOM = dict(sfx={"05.c": ["typing@+0.2", "pop@+1.4"], "10.f": "deny", "03.b": None})` (modelo: `010_claude_duet`).
+  Efeitos: pop, click, whoosh, lock, typing, notif, data, glitch, impact, confirm, alert, deny, bell, shimmer.
+  Use typing em texto digitado, notif em notificações, lock/alert/deny em cuidados e proibições, confirm no resumo, impact na revelação do nome.
+- Vídeo jornalístico/minidoc (ex.: `009_tse`): trilha "plantão de notícias" do `009/som/gerar_som.py` no lugar da eletrônica.
+  `SOM = None` desliga o som (só narração).
+
 ## Roteiro
 - Estrutura: **gancho (uma dor/curiosidade) → o que é → como funciona → o que faz → exemplos reais → como usar → cuidados/limites → resumo → CTA.**
 - Nomes de ferramentas e comandos aparecem **na tela exatamente como se digitam** (`npx rea-agents setup`).

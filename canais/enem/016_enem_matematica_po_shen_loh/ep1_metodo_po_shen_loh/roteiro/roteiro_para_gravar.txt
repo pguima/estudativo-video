@@ -1,0 +1,61 @@
+Dois números somam oito e, multiplicados, dão doze. Quais são? Dois e seis. Fácil, né? Pois essa pergunta é uma equação do segundo grau. E hoje você vai resolver qualquer uma delas com essa mesma ideia, sem decorar a fórmula de Bhaskara.
+
+Ao final desta aula, você vai achar as raízes de uma equação do segundo grau em três passos curtos, e vai entender de onde vem cada passo.
+
+Antes, duas lembranças rápidas. Equação do segundo grau é a que tem x ao quadrado, e nenhuma potência maior. Por exemplo: x ao quadrado, menos oito x, mais doze, igual a zero. Raiz é o número que, no lugar do x, zera a conta. Teste o dois: dois ao quadrado é quatro; oito vezes dois, dezesseis. Quatro menos dezesseis mais doze: zero. O dois é raiz!
+
+Segunda lembrança. Esse tipo de equação aparece assim: x ao quadrado, mais b x, mais c, igual a zero. O b é o número que acompanha o x, com o sinal. O c é o número sozinho. No nosso exemplo, b é menos oito e c é doze. E cuidado: raiz quadrada é outra coisa. É o número que, ao quadrado, dá o valor. Raiz quadrada de quatro é dois, porque dois ao quadrado é quatro.
+
+Agora, uma pergunta curiosa: por que dois números que somam oito e multiplicam doze resolvem essa equação? Olhe para esta conta: x menos dois, vezes x menos seis, igual a zero. Se x for dois, o primeiro parêntese vira zero. Se x for seis, o segundo vira zero. E zero vezes qualquer coisa é zero. Então dois e seis são as raízes.
+
+Agora, multiplique tudo. x vezes x: x ao quadrado. Os dois do meio: menos seis x e menos dois x, que juntos dão menos oito x. E menos dois vezes menos seis: mais doze. Voltou a nossa equação! Repare: o oito é a soma das raízes, e o doze é o produto.
+
+E isso vale sempre. Na equação x ao quadrado, mais b x, mais c, a soma das raízes é menos b, o b com o sinal trocado. E o produto das raízes é o c. No exemplo: b é menos oito, então a soma é oito. E o produto é doze.
+
+Agora, a ideia genial. Pense numa gangorra. Para ela ficar equilibrada, as duas crianças sentam à mesma distância do meio. Com as raízes é igual. Dois números que somam oito: três e cinco, dois e seis, um e sete. Todos ficam equilibrados em volta do quatro, o meio da gangorra.
+
+Esse meio tem nome: é a média. A média é a soma dividida por dois. Oito dividido por dois: quatro. Como a soma é menos b, a média é menos b sobre dois. E a distância de cada raiz até o meio, a gente chama de u. Então as raízes são a média menos u e a média mais u.
+
+Falta descobrir o u. E quem conta é o produto. As raízes são quatro menos u e quatro mais u. Multiplicadas, dão doze. Fazendo a multiplicação, os termos do meio, mais quatro u e menos quatro u, se cancelam. Sobra dezesseis, menos o u ao quadrado, igual a doze. Então o u ao quadrado é quatro, e o u é dois. Raízes: quatro menos dois, dois; quatro mais dois, seis.
+
+Esse caminho ficou famoso com Po-Shen Loh, professor de matemática da universidade Carnegie Mellon, nos Estados Unidos. Ele foi técnico da seleção americana na Olimpíada Internacional de Matemática, e divulgou o método em dois mil e dezenove. Mas a ideia tem raízes antigas: os babilônios já usavam algo parecido, há milhares de anos.
+
+Então, a receita em três passos. Antes de tudo: o x ao quadrado precisa estar sozinho, sem número na frente. Passo um: a média. Menos b sobre dois. Passo dois: o u ao quadrado é a média ao quadrado, menos c. Depois, tire a raiz quadrada. Passo três: as raízes são a média menos u e a média mais u.
+
+Vamos testar com uma média quebrada. x ao quadrado, menos cinco x, mais seis, igual a zero. Aqui, b é menos cinco e c é seis. Passo um: menos b sobre dois é cinco sobre dois, dois vírgula cinco. Passo dois: dois vírgula cinco ao quadrado é seis vírgula vinte e cinco. Menos seis: zero vírgula vinte e cinco. A raiz quadrada disso é zero vírgula cinco, porque meio vezes meio é um quarto. Passo três: dois vírgula cinco menos zero vírgula cinco, dois. Mais zero vírgula cinco, três.
+
+E se tiver número na frente do x ao quadrado? Dois x ao quadrado, mais quatro x, menos seis, igual a zero. Passo zero: divida tudo por dois. Fica x ao quadrado, mais dois x, menos três, igual a zero. Agora, b é mais dois. Menos b sobre dois: menos um. Atenção ao sinal! O u ao quadrado: menos um ao quadrado é um. Um, menos o menos três, é um mais três: quatro. O u é dois. Raízes: menos um menos dois, menos três; menos um mais dois, um.
+
+Vamos guardar em três frases. Um: a média é menos b sobre dois. Dois: o u ao quadrado é a média ao quadrado, menos c. Três: as raízes são a média menos u e a média mais u.
+
+E quando o u ao quadrado não é um quadrado perfeito? x ao quadrado, menos seis x, mais sete, igual a zero. Média: menos b sobre dois, três. O u ao quadrado: três ao quadrado é nove; nove menos sete, dois. Nenhum número inteiro ao quadrado dá dois. Sem problema: o u é a raiz quadrada de dois. Raízes: três menos raiz de dois e três mais raiz de dois.
+
+E se o u der zero? x ao quadrado, menos dez x, mais vinte e cinco, igual a zero. Média: cinco. O u ao quadrado: vinte e cinco menos vinte e cinco, zero. Na gangorra, as duas crianças sentam bem no meio, juntas. As duas raízes são iguais a cinco. É a raiz dupla.
+
+E se o u ao quadrado der negativo? x ao quadrado, menos dois x, mais cinco, igual a zero. Média: um. O u ao quadrado: um menos cinco, menos quatro. Mas qualquer número ao quadrado dá zero ou positivo. Dois ao quadrado é quatro; menos dois ao quadrado também é quatro. Então não existe esse u. Na gangorra, não tem onde as crianças sentarem. A resposta é: a equação não tem raiz real. Não é erro de conta.
+
+E a fórmula de Bhaskara? Ela dá a mesma resposta. Na primeira equação, o delta é b ao quadrado menos quatro vezes c: sessenta e quatro menos quarenta e oito, dezesseis. x é oito, mais ou menos quatro, tudo sobre dois: seis ou dois. Agora repare: oito sobre dois é quatro, a média. Quatro sobre dois é dois, o u. Bhaskara é a média mais ou menos u, disfarçada. É a mesma conta, só que sem precisar decorar.
+
+Na prova, o atalho fica assim. Um: tem número na frente do x ao quadrado? Divida tudo por ele primeiro. Dois: a média é a metade do b, com o sinal trocado. Três: no fim, confira: as raízes somam menos b e multiplicam c.
+
+Agora, os erros clássicos. Primeiro: esquecer de dividir pelo número da frente. Em dois x ao quadrado, mais quatro x, menos seis, a pessoa usa b igual a quatro e acha média menos dois. Parece certo, porque o quatro está ali, à vista. Mas a soma é menos b só quando o x ao quadrado está sozinho. Divida primeiro.
+
+Segundo: errar o sinal da média. Em x ao quadrado, menos oito x, mais doze, a pessoa escreve média menos quatro. Parece certo, porque tem um menos na frente do oito. Mas a média é menos b sobre dois: o menos da regra troca o sinal do b. Menos com menos: mais quatro.
+
+Terceiro: esquecer o mais ou menos e responder uma raiz só. Parece certo, porque a primeira conta já deu um número que funciona. Mas a gangorra tem duas crianças: média menos u e média mais u. Com uma só, a gangorra tomba.
+
+Quarto: achar que u ao quadrado negativo é erro de conta e ficar refazendo. Parece certo, porque a gente se acostuma a sempre achar uma resposta. Mas u ao quadrado negativo é a resposta: a equação não tem raiz real. Confira uma vez e siga em frente.
+
+Agora, uma questão no estilo do ENEM. Um terreno retangular tem perímetro de quarenta metros e área de noventa e seis metros quadrados. Quais são as medidas dos lados do terreno, em metros? A: quatro e vinte e quatro. B: seis e catorze. C: seis e dezesseis. D: oito e doze. E: dez e dez. Pause o vídeo e tente!
+
+Vamos lá. Perímetro é a volta inteira no terreno: os quatro lados somados. Se a volta é quarenta, um comprimento mais uma largura dá vinte. Área do retângulo: comprimento vezes largura, noventa e seis. Dois números que somam vinte e multiplicam noventa e seis. É a equação x ao quadrado, menos vinte x, mais noventa e seis, igual a zero. E o atalho: a soma e o produto já estão no enunciado. Dá para ir direto ao método!
+
+Média: vinte dividido por dois, dez. O u ao quadrado: dez ao quadrado é cem; cem menos noventa e seis, quatro. O u é dois. Lados: dez menos dois, oito; dez mais dois, doze. Conferindo: oito mais doze é vinte, oito vezes doze, noventa e seis. Letra D!
+
+E as outras? Dez e dez é de quem parou na média e esqueceu o u: a área daria cem. Seis e catorze é de quem usou u igual a quatro, esquecendo a raiz quadrada: área oitenta e quatro. E quatro e vinte e quatro, seis e dezesseis, têm a área certa, mas a volta passa de quarenta. Olharam só o produto.
+
+Para fechar, as mesmas três frases. Um: a média é menos b sobre dois. Dois: o u ao quadrado é a média ao quadrado, menos c. Três: as raízes são a média menos u e a média mais u.
+
+Agora é com você: pegue três equações do seu caderno e resolva pela média e pelo u. Depois, confira com Bhaskara: vai dar a mesma resposta.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já conhecia esse jeito de resolver sem Bhaskara? Bons estudos, e até a próxima aula aqui no Estudativo.

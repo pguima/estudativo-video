@@ -385,10 +385,8 @@ def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Até o próximo v�
             if gl == BELL:
                 ring = prog(t, t0 + 0.4, 1.4)
                 c.translate(cx, cy - 50); c.rotate(18 * math.sin(ring * math.pi * 6) * (1 - ring)); c.translate(-cx, -(cy - 50))
-            f = motor.font("icons", 120)
-            gw = f.measureText(gl)
-            c.drawString(gl, cx - gw / 2, cy + 60, f, blur_paint(col, 0.6 * on * a, 14))
-            c.drawString(gl, cx - gw / 2, cy + 60, f, paint(mix(INK2, col, on), a))
+            motor.icon(c, gl, cx, cy, 120, p=blur_paint(col, 0.6 * on * a, 14))
+            motor.icon(c, gl, cx, cy, 120, p=paint(mix(INK2, col, on), a))
             c.restore()
         else:
             press = math.sin(math.pi * prog(t, t0 + 1.1, 0.35))
@@ -401,8 +399,7 @@ def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Até o próximo v�
         w = max(1100, text_w(pergunta, "bold", 38) + 240)
         yy = 650 + (1 - a) * 20
         panel(c, W / 2 - w / 2, yy, w, 130, a, VIOLET)
-        f = motor.font("icons", 56)
-        c.drawString(CHAT, W / 2 - w / 2 + 62, yy + 65 + 28, f, paint(VIOLET, a))
+        motor.icon(c, CHAT, W / 2 - w / 2 + 90, yy + 65, 56, p=paint(VIOLET, a))
         text_mid(c, pergunta, W / 2 + 40, yy + 65, 38, "bold", INK, a)
     ab = ep(t, bye, 0.6)
     if ab > 0:

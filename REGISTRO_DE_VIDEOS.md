@@ -1,4 +1,4 @@
-# Registro de vídeos criados — atualizado em 21/10/2026
+# Registro de vídeos criados — atualizado em 23/10/2026
 
 Gerado por `_ferramentas/registrar_videos.py` a partir das pastas de cada projeto (pode rodar de novo a qualquer momento).
 Planilha com os mesmos dados: `registro_videos.csv` (separador `;`, abre no Excel).
@@ -18,28 +18,28 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 
 | Canal | Vídeos | Shorts | Duração total |
 |---|---|---|---|
-| ENEM (Estudativo) | 37 | 9 | 6 h 14 min |
-| Seguridade Social / INSS (Estudativo) | 12 | 0 | 1 h 13 min |
-| Tecnologia | 8 | 3 | 0 h 41 min |
+| ENEM (Estudativo) | 39 | 9 | 6 h 35 min |
+| Seguridade Social / INSS (Estudativo) | 17 | 0 | 1 h 48 min |
+| Tecnologia | 10 | 3 | 0 h 50 min |
 | Trading | 2 | 0 | 0 h 17 min |
-| **Total** | **59** | **12** | **8 h 26 min** |
+| **Total** | **68** | **12** | **9 h 31 min** |
 
 ## ENEM (Estudativo)
 
 | # | Projeto | Título (YouTube recomendado / roteiro) | Duração | Data | Arquivo |
 |---|---|---|---|---|---|
-| 1 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero · Matemática Ep. 1 | 11:34 | 2026-10-12 | `enem_matematica_conjuntos_ep1_ordem_e_sinais.mp4` |
-| 2 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:41 | 2026-10-17 | `short1_14_ou_20.mp4` |
-| 3 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:39 | 2026-10-17 | `short2_menos_com_menos.mp4` |
-| 4 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:42 | 2026-10-17 | `short3_menos_tres_ao_quadrado.mp4` |
-| 5 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | O Número Que Nunca Termina: Racional ou Irracional? · Matemática Ep. 2 | 11:44 | 2026-10-12 | `enem_matematica_conjuntos_ep2_conjuntos_numericos.mp4` |
-| 6 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:47 | 2026-10-19 | `short1_numero_que_nunca_termina.mp4` |
-| 7 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:46 | 2026-10-19 | `short2_racional_ou_irracional.mp4` |
-| 8 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:36 | 2026-10-19 | `short3_raiz_de_nove.mp4` |
-| 9 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha Cheia ou Vazia? Intervalos Reais do Zero · Matemática Ep. 3 | 6:50 | 2026-10-13 | `enem_matematica_conjuntos_ep3_intervalos.mp4` |
-| 10 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:48 | 2026-10-19 | `short1_colchete_braco.mp4` |
-| 11 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:38 | 2026-10-19 | `short2_infinito_aberto.mp4` |
-| 12 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:21 | 2026-10-19 | `short3_acima_de.mp4` |
+| 1 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:41 | 2026-10-17 | `short1_14_ou_20.mp4` |
+| 2 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:39 | 2026-10-17 | `short2_menos_com_menos.mp4` |
+| 3 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1 *(Short)* | 0:42 | 2026-10-17 | `short3_menos_tres_ao_quadrado.mp4` |
+| 4 | `canais/enem/010_enem_matematica_conjuntos/ep1_ordem_e_sinais` | 2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero · Matemática Ep. 1 | 11:34 | 2026-10-12 | `enem_matematica_conjuntos_ep1_ordem_e_sinais.mp4` |
+| 5 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:47 | 2026-10-19 | `short1_numero_que_nunca_termina.mp4` |
+| 6 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:46 | 2026-10-19 | `short2_racional_ou_irracional.mp4` |
+| 7 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2 *(Short)* | 0:36 | 2026-10-19 | `short3_raiz_de_nove.mp4` |
+| 8 | `canais/enem/010_enem_matematica_conjuntos/ep2_conjuntos_numericos` | O Número Que Nunca Termina: Racional ou Irracional? · Matemática Ep. 2 | 11:44 | 2026-10-12 | `enem_matematica_conjuntos_ep2_conjuntos_numericos.mp4` |
+| 9 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:48 | 2026-10-19 | `short1_colchete_braco.mp4` |
+| 10 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:38 | 2026-10-19 | `short2_infinito_aberto.mp4` |
+| 11 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3 *(Short)* | 0:21 | 2026-10-19 | `short3_acima_de.mp4` |
+| 12 | `canais/enem/010_enem_matematica_conjuntos/ep3_intervalos` | Bolinha Cheia ou Vazia? Intervalos Reais do Zero · Matemática Ep. 3 | 6:50 | 2026-10-13 | `enem_matematica_conjuntos_ep3_intervalos.mp4` |
 | 13 | `canais/enem/010_enem_matematica_conjuntos/ep4_venn` | Diagrama de Venn: a Palavra "Apenas" Muda Tudo · Matemática Ep. 4 | 9:36 | 2026-10-13 | `enem_matematica_conjuntos_ep4_venn.mp4` |
 | 14 | `canais/enem/010_enem_matematica_conjuntos/ep5_revisao` | As 6 Pegadinhas de Matemática Básica do ENEM · Revisão Ep. 5 | 10:53 | 2026-10-13 | `enem_matematica_conjuntos_ep5_revisao.mp4` |
 | 15 | `canais/enem/011_enem_quimica_materia/_antigo_video_unico` | O Gráfico que Diz se é Puro ou Mistura · Química ENEM do Zero *(versão antiga)* | 7:18 | 2026-10-08 | `enem_quimica_materia_substancias_misturas.mp4` |
@@ -76,6 +76,8 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 46 | `canais/enem/015_enem_matematica_divisibilidade/ep5_mdc` | Achou o MDC e Errou a Questão? O Passo Que Falta · Matemática Ep. 5 | 11:41 | 2026-10-21 | `enem_matematica_divisibilidade_ep5_mdc.mp4` |
 | 47 | `canais/enem/015_enem_matematica_divisibilidade/ep6_mmc_ou_mdc` | MMC ou MDC? Repete ou Reparte, a Decisão em 10 s · Matemática Ep. 6 | 12:07 | 2026-10-21 | `enem_matematica_divisibilidade_ep6_mmc_ou_mdc.mp4` |
 | 48 | `canais/enem/015_enem_matematica_divisibilidade/ep7_revisao` | Você Cai Nessas 9 Pegadinhas de MMC e MDC? · Matemática Ep. 7 | 11:04 | 2026-10-21 | `enem_matematica_divisibilidade_ep7_revisao.mp4` |
+| 49 | `canais/enem/016_enem_matematica_po_shen_loh/ep1_metodo_po_shen_loh` | Equação do 2º Grau SEM Bhaskara em 3 Passos · Matemática ENEM | 11:17 | 2026-10-22 | `enem_matematica_po_shen_loh_ep1_metodo.mp4` |
+| 50 | `canais/enem/017_enem_matematica_soma_produto/ep1_soma_e_produto` | Equação do 2º Grau em Segundos, SEM Bhaskara · Matemática ENEM | 9:57 | 2026-10-22 | `enem_matematica_soma_produto_ep1.mp4` |
 
 ## Seguridade Social / INSS (Estudativo)
 
@@ -93,15 +95,20 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 10 | `canais/seguridade_social/010_estrutura_rgps` | Só Existem 2 Tipos de Gente no INSS: a Estrutura do RGPS · Aula 10 | 5:13 | 2026-10-17 | `seguridade_010_estrutura_rgps.mp4` |
 | 11 | `canais/seguridade_social/011_empregado_domestico_avulso` | Diarista ou Doméstica? Empregado, Doméstico e Avulso no INSS · Aula 11 | 7:48 | 2026-10-19 | `seguridade_011_empregado_domestico_avulso.mp4` |
 | 12 | `canais/seguridade_social/012_contribuinte_individual` | O Síndico É Segurado do INSS? Contribuinte Individual · Aula 12 | 6:13 | 2026-10-19 | `seguridade_012_contribuinte_individual.mp4` |
+| 13 | `canais/seguridade_social/013_segurado_especial` | Ele Ainda É Segurado Especial? O Rural Que Mais Cai no INSS · Aula 13 | 7:02 | 2026-10-22 | `seguridade_013_segurado_especial.mp4` |
+| 14 | `canais/seguridade_social/014_facultativo_excluidos` | Ela Ainda É Segurada Facultativa? A Pegadinha da Filiação · INSS Aula 14 | 6:53 | 2026-10-22 | `seguridade_014_facultativo_excluidos.mp4` |
+| 15 | `canais/seguridade_social/015_dependentes` | Quem Recebe a Pensão por Morte? Dependentes do INSS · Aula 15 | 6:30 | 2026-10-22 | `seguridade_015_dependentes.mp4` |
+| 16 | `canais/seguridade_social/016_filiacao_inscricao` | Nunca Pagou o INSS e Está Filiado? Filiação × Inscrição · Aula 16 | 7:25 | 2026-10-22 | `seguridade_016_filiacao_inscricao.mp4` |
+| 17 | `canais/seguridade_social/017_qualidade_periodo_de_graca` | Período de Graça: 12, 24 ou 36 Meses? Qualidade de Segurado · Aula 17 | 6:43 | 2026-10-22 | `seguridade_017_qualidade_periodo_de_graca.mp4` |
 
 ## Tecnologia
 
 | # | Projeto | Título (YouTube recomendado / roteiro) | Duração | Data | Arquivo |
 |---|---|---|---|---|---|
-| 1 | `canais/tecnologia/001_rea_engenharia_reversa` | Essa IA Abre Qualquer Programa por Dentro (REA, Open Source) | 5:34 | 2026-10-15 | `tecnologia_001_rea_engenharia_reversa.mp4` |
-| 2 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:30 | 2026-10-19 | `short1_calculadora.mp4` |
-| 3 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:30 | 2026-10-19 | `short2_dinossauro.mp4` |
-| 4 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:39 | 2026-10-19 | `short3_dxball.mp4` |
+| 1 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:30 | 2026-10-19 | `short1_calculadora.mp4` |
+| 2 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:30 | 2026-10-19 | `short2_dinossauro.mp4` |
+| 3 | `canais/tecnologia/001_rea_engenharia_reversa` | REA: engenharia reversa de qualquer programa com agentes de IA *(Short)* | 0:39 | 2026-10-19 | `short3_dxball.mp4` |
+| 4 | `canais/tecnologia/001_rea_engenharia_reversa` | Essa IA Abre Qualquer Programa por Dentro (REA, Open Source) | 5:34 | 2026-10-15 | `tecnologia_001_rea_engenharia_reversa.mp4` |
 | 5 | `canais/tecnologia/002_claude_dashboards` | Pergunte e o Claude Monta o Dashboard: Conheça o Claude Dashboards | 5:14 | 2026-10-15 | `tecnologia_002_claude_dashboards.mp4` |
 | 6 | `canais/tecnologia/003_claude_motion` | O Claude Agora Faz Animações: Conheça o Claude Motion | 4:38 | 2026-10-15 | `tecnologia_003_claude_motion.mp4` |
 | 7 | `canais/tecnologia/004_claude_code` | Claude Code: a IA que Programa Dentro do Seu Projeto (Guia Completo) | 5:22 | 2026-10-15 | `tecnologia_004_claude_code.mp4` |
@@ -109,6 +116,8 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 9 | `canais/tecnologia/006_claude_docs_slides_design` | Claude Docs, Slides e Design: Tudo Numa Conversa Só (Guia Completo) | 4:41 | 2026-10-16 | `tecnologia_006_claude_docs_slides_design.mp4` |
 | 10 | `canais/tecnologia/007_remotion` | Remotion: Crie Vídeos com Código React (e com Agentes de IA) | 4:43 | 2026-10-17 | `tecnologia_007_remotion.mp4` |
 | 11 | `canais/tecnologia/008_bastidores_videos_com_ia` | Sem Câmera, Sem Microfone: Como Eu Faço Vídeos Só com IA | 5:28 | 2026-10-19 | `tecnologia_008_bastidores_videos_com_ia.mp4` |
+| 12 | `canais/tecnologia/009_tse_congestionamento_divulgacao` | O Que Aconteceu com o Sistema do TSE na Divulgação dos Votos? | 3:18 | 2026-10-22 | `tecnologia_009_tse_congestionamento_divulgacao.mp4` |
+| 13 | `canais/tecnologia/010_claude_duet` | Claude Duet: a IA da Anthropic que Trabalha Antes de Você Pedir | 5:38 | 2026-10-22 | `tecnologia_010_claude_duet.mp4` |
 
 ## Trading
 

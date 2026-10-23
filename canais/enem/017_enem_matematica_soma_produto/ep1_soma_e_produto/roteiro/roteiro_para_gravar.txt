@@ -1,0 +1,56 @@
+Roteiro para gravar — Soma e Produto (Relações de Girard) · Matemática ENEM · voz Neno (Gemini TTS local)
+Parte 1 = cenas 01–11 · Parte 2 = cenas 12–24. Pausa de 10 s depois de "Você tem dez segundos." (inserida na montagem).
+Obs.: a voz foi gerada com duas frases a mais (03 "Uma equação do segundo grau tem no máximo duas." e 11 "Exatamente a soma
+e o produto que usamos!"), recortadas do áudio para o vídeo caber em 10 min. O texto abaixo é o que ficou no vídeo.
+
+[01] Você sabia que é possível resolver uma equação do segundo grau sem utilizar a fórmula de Bhaskara? E melhor: em alguns casos, você consegue descobrir a resposta apenas olhando para os números! Olhe esta equação: x ao quadrado, menos cinco x, mais seis, igual a zero. Em poucos minutos, você vai enxergar as respostas em segundos.
+
+[02] Ao final desta aula, você vai encontrar as raízes de equações como essa usando só duas operações: a soma e a multiplicação. E entendendo por que funciona.
+
+[03] Antes, uma lembrança rápida. Equação do segundo grau é a que tem x ao quadrado, e nenhuma potência maior. E raiz é o número que, colocado no lugar do x, faz a conta dar zero.
+
+[04] Vamos voltar à nossa equação. x ao quadrado, menos cinco x, mais seis, igual a zero. Precisamos encontrar dois números que, quando somados, resultem em cinco e, quando multiplicados, resultem em seis. Repare numa curiosidade: na equação aparece menos cinco, mas a soma que procuramos é cinco positivo. Já, já eu mostro de onde vem essa troca.
+
+[05] Vamos testar pares numa tabela. Uma dica: comece pelo produto, porque existem poucos pares com produto seis. Primeiro par: um e seis. Somando, um mais seis dá sete. Multiplicando, um vezes seis dá seis. O produto bateu, mas a soma deu sete, e não cinco. Não serve. Segundo par: dois e três. Somando, dois mais três dá cinco. Multiplicando, dois vezes três dá seis. As duas condições batem! Os números são dois e três.
+
+[06] Mas por que dois e três são as raízes? Vamos testar o dois na equação. Dois ao quadrado é quatro. Cinco vezes dois é dez. Então fica quatro, menos dez, mais seis. Quatro menos dez é menos seis; menos seis mais seis, zero! Agora o três: três ao quadrado é nove; cinco vezes três, quinze. Nove menos quinze mais seis: zero de novo. Os dois são raízes!
+
+[07] E tem um jeito ainda mais bonito de ver isso. Escreva assim: x menos dois, vezes x menos três, igual a zero. Vamos multiplicar para conferir. x vezes x: x ao quadrado. x vezes menos três: menos três x. Menos dois vezes x: menos dois x. Juntos, menos cinco x. E menos dois vezes menos três: menos com menos dá mais, mais seis. Voltou a nossa equação!
+
+[08] Agora olhe para essa multiplicação. Quando uma multiplicação dá zero, pelo menos um dos fatores é zero. Se x menos dois for zero, x é dois. Se x menos três for zero, x é três. As soluções são x igual a dois e x igual a três. E repare: o cinco da equação é a soma, dois mais três, e o seis é o produto, dois vezes três.
+
+[09] Agora, a regra geral. Toda equação do segundo grau pode ser escrita assim: a x ao quadrado, mais b x, mais c, igual a zero. O a é o número que acompanha o x ao quadrado. O b é o número que acompanha o x, com o sinal. E o c é o número sozinho. Um detalhe importante: o a nunca pode ser zero. Se fosse, o x ao quadrado sumiria, e a equação deixaria de ser do segundo grau.
+
+[10] Vamos identificar as letras na nossa equação. Na frente do x ao quadrado não aparece nada. Quando isso acontece, tem um um escondido: a é um. O b é menos cinco, com o sinal de menos junto. E o c é seis.
+
+[11] Com essas letras, vêm as Relações de Girard, do matemático francês Albert Girard, do século dezessete. A soma das raízes é menos b sobre a. E o produto das raízes é c sobre a. Testando: menos b sobre a é menos, menos cinco, sobre um. Menos com menos dá mais: cinco. E c sobre a é seis sobre um: seis.
+
+
+===== PARTE 2 =====
+
+[12] Mas por que o sinal do b aparece trocado na soma? Vamos descobrir. Chame as duas raízes de r e s. Como vimos na fatoração, a equação pode ser escrita assim: a, vezes x menos r, vezes x menos s, igual a zero. Multiplicando os parênteses: x vezes x, x ao quadrado. Os termos do meio: menos s x e menos r x. Juntos, menos, r mais s, vezes x. E menos r vezes menos s: mais r s. Agora, multiplique tudo pelo a: a x ao quadrado, menos a vezes r mais s, x, mais a r s.
+
+[13] Agora compare com a forma geral, pedaço por pedaço. O número que acompanha o x é o b. Então, b é igual a menos a, vezes r mais s. Para isolar a soma, divida os dois lados por menos a. Fica: r mais s é igual a menos b sobre a. Viu? O sinal de menos já estava lá, escondido no menos r e no menos s dos parênteses. E o número sozinho é o c: c é igual a a r s. Dividindo por a, o produto r s é c sobre a.
+
+[14] Cuidado com a armadilha mais comum. Em x ao quadrado, menos cinco x, mais seis, muita gente diz que a soma é menos cinco. Parece certo, porque o menos cinco está à vista. Mas a regra é menos b sobre a: o sinal troca. A soma é mais cinco.
+
+[15] Hora de praticar. Exemplo um: x ao quadrado, menos sete x, mais doze, igual a zero. Aqui, a é um, b é menos sete e c é doze. Soma: menos b sobre a, menos, menos sete, sobre um: sete. Produto: c sobre a, doze sobre um: doze. Pares que, multiplicados, dão doze: um e doze, que somam treze. Dois e seis, que somam oito. Três e quatro, que somam sete! As raízes são três e quatro.
+
+[16] Exemplo dois: agora com sinais. x ao quadrado, mais cinco x, mais seis, igual a zero. Aqui, b é mais cinco. Soma: menos b sobre a, menos cinco sobre um: menos cinco. Produto: seis sobre um: seis. Dois números com soma negativa e produto positivo. Como descobrir os sinais?
+
+[17] Primeiro, o produto. Se ele é positivo, os dois números têm o mesmo sinal: os dois positivos, ou os dois negativos. Aí, olhe para a soma. Se a soma é negativa, os dois são negativos. Se é positiva, os dois são positivos. E se o produto for negativo, os números têm sinais opostos: um positivo e um negativo. No nosso caso, o produto é positivo e a soma é negativa: os dois são negativos. Menos dois e menos três. Somando: menos dois, menos três, menos cinco. Multiplicando: menos com menos dá mais, mais seis. As raízes são menos dois e menos três.
+
+[18] Exemplo três: quando o a não é um. Dois x ao quadrado, menos dez x, mais doze, igual a zero. Aqui, a é dois, b é menos dez e c é doze. Soma: menos b sobre a, menos, menos dez, sobre dois. Dez sobre dois: cinco. Produto: c sobre a, doze sobre dois: seis. Soma cinco e produto seis: você já conhece esses números! Dois e três. Conferindo o dois: dois ao quadrado é quatro, vezes dois, oito. Dez vezes dois, vinte. Oito, menos vinte, mais doze: zero.
+
+[19] Vamos guardar em três frases. Um: a soma das raízes é menos b sobre a. Dois: o produto das raízes é c sobre a. Três: comece pelo produto, e use a soma para escolher o par.
+
+[20] Agora é sua vez! A equação é: x ao quadrado, menos nove x, mais vinte, igual a zero. Quais são os dois números cuja soma é nove e cujo produto é vinte? Você tem dez segundos. Tempo!
+
+[21] Vamos conferir. A soma é menos, menos nove, sobre um: nove. O produto, vinte sobre um: vinte. Pares que, multiplicados, dão vinte: um e vinte, que somam vinte e um. Dois e dez, que somam doze. Quatro e cinco, que somam nove! Quatro mais cinco é nove; quatro vezes cinco é vinte. Logo, x um é quatro e x dois é cinco. Acertou? Então você resolveu uma equação do segundo grau de cabeça!
+
+[22] Vamos recapitular o método em cinco passos. Um: identifique a, b e c, com os sinais. Dois: a soma das raízes é menos b sobre a. Três: o produto das raízes é c sobre a. Quatro: procure dois números que satisfaçam as duas condições. Comece pelo produto. Cinco: confira, substituindo na equação original. A conta tem que dar zero.
+
+[23] Nem toda equação terá raízes fáceis de encontrar mentalmente. Mas, quando você entende a lógica da soma e do produto, começa a enxergar a matemática de uma maneira completamente diferente. O segredo não é decorar fórmulas, mas compreender como os números se relacionam! E, quando as raízes não forem fáceis de achar de cabeça, veja a aula do método de Po-Shen Loh, aqui no canal.
+
+[24] Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: quanto tempo você levou para resolver o desafio? Bons estudos, e até a próxima aula aqui no Estudativo.
+
