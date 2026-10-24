@@ -1,0 +1,1115 @@
+<title>Frações, Decimais e Dízimas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 3 de 12</p>
+    <h1>Frações, decimais e dízimas periódicas</h1>
+    <p class="deck">Fecha a primeira semana e é o assunto que mais aparece disfarçado: raramente há uma questão “de frações”, mas há dezenas em que a fração é o passo que separa quem chega ao gabarito de quem para no meio.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Barra do salário: um terço vai para moradia; um quarto do restante, que equivale a um sexto do total, vai para transporte; sobra metade">
+  <text x="150" y="20" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2)">1 salário</text>
+  <path d="M107 44 L107 36 L280 36 L280 44" style="fill:none;stroke:var(--c1);stroke-width:1.5"/>
+  <text x="193" y="30" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">restante = 2/3</text>
+  <rect x="20" y="54" width="86.7" height="46" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <rect x="106.7" y="54" width="43.3" height="46" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.5"/>
+  <rect x="150" y="54" width="130" height="46" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <text x="63" y="82" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">1/3</text>
+  <text x="128" y="82" text-anchor="middle" class="svg-num" style="fill:var(--c5);font-weight:600">1/6</text>
+  <text x="215" y="82" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">1/2</text>
+  <text x="63" y="122" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">moradia</text>
+  <text x="128" y="140" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">transporte</text>
+  <line x1="128" y1="104" x2="128" y2="130" style="stroke:var(--c5);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="215" y="122" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">sobra</text>
+  <rect x="20" y="160" width="260" height="40" rx="8" style="fill:var(--c2-soft);stroke:var(--c2-line);stroke-width:1"/>
+  <text x="150" y="177" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:600">1/4 DO RESTANTE ≠ 1/4 DO TOTAL</text>
+  <text x="150" y="192" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">1/4 · 2/3 = 1/6</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Conjuntos numéricos · MMC e MDC</dd></div>
+      <div><dt>Destrava</dt><dd>Porcentagem, razão, probabilidade, estatística</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este é o assunto mais mal avaliado por quem estuda. Como a prova quase nunca traz uma questão intitulada “frações”, é fácil concluir que ele cai pouco — e é o contrário.</p>
+<p>A fração entra como <strong>ferramenta</strong> dentro de outras questões:</p>
+<ul>
+  <li>Em <strong>probabilidade</strong>, o resultado é sempre uma fração.</li>
+  <li>Em <strong>porcentagem</strong>, a conversão fração ↔ decimal ↔ porcentagem é o caminho mais rápido.</li>
+  <li>Em <strong>estatística</strong>, a média ponderada e a leitura de gráficos de setores são frações.</li>
+  <li>Em <strong>razão e proporção</strong>, escala e velocidade são frações.</li>
+  <li>Em <strong>Física e Química</strong>, quase toda fórmula é uma fração.</li>
+</ul>
+<p>O formato mais frequente de questão própria é o <strong>problema em duas etapas</strong>: gasta-se uma fração de algo, depois uma fração <em>do que sobrou</em>. É simples e derruba muita gente, porque a segunda fração não incide sobre o total.</p>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas coisas, nesta ordem: <strong>a tabela de conversão da seção 10</strong>, que você deve saber de cor, e <strong>o cuidado com “do restante”</strong>, na seção 06. Juntas, elas valem mais que toda a teoria de dízimas.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Os quatro significados de uma fração</h2>
+<p>A mesma fração <span class="m"><span class="frac"><i>3</i><i>4</i></span></span> quer dizer quatro coisas diferentes conforme o enunciado. Reconhecer qual está em jogo evita montar a conta errada.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Significado</th><th>Como aparece</th><th>O que fazer</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Parte-todo</strong></td><td>“comeu <span class="m"><span class="frac"><i>3</i><i>4</i></span></span> da pizza”</td><td>O todo foi dividido em 4; tomaram-se 3</td></tr>
+    <tr><td><strong>Quociente</strong></td><td>“dividir 3 barras entre 4 pessoas”</td><td><span class="m">3 ÷ 4 = 0,75</span> por pessoa</td></tr>
+    <tr><td><strong>Razão</strong></td><td>“3 meninos para cada 4 meninas”</td><td>Comparação entre duas quantidades</td></tr>
+    <tr><td><strong>Operador</strong></td><td>“<span class="m"><span class="frac"><i>3</i><i>4</i></span></span> de 200 reais”</td><td><strong>Multiplique</strong>: <span class="m"><span class="frac"><i>3</i><i>4</i></span> · 200 = 150</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">A palavra que resolve metade dos problemas</span>
+  <p>Sempre que o enunciado disser “<strong>de</strong>” entre uma fração e uma quantidade — “<span class="m"><span class="frac"><i>2</i><i>5</i></span></span> <em>de</em> 300 alunos” — isso significa <strong>multiplicar</strong>. A palavra “de” é sinal de multiplicação.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Frações equivalentes e simplificação</h2>
+<p>Frações equivalentes representam a mesma quantidade escrita de outro jeito.</p>
+
+<div class="eq">
+  <span class="lbl">Multiplicando ou dividindo os dois termos pelo mesmo número, o valor não muda</span>
+  <p class="m"><span class="frac"><i>1</i><i>2</i></span> = <span class="frac"><i>2</i><i>4</i></span> = <span class="frac"><i>3</i><i>6</i></span> = <span class="frac"><i>50</i><i>100</i></span> = 0,5</p>
+</div>
+
+<h3>Como verificar se duas frações são equivalentes</h3>
+<p>Produto cruzado: se der o mesmo, são equivalentes.</p>
+<div class="eq">
+  <p class="m"><span class="frac"><i>6</i><i>9</i></span> e <span class="frac"><i>10</i><i>15</i></span> → 6 · 15 = 90 e 9 · 10 = 90 ✓ equivalentes</p>
+</div>
+
+<h3>Fração irredutível</h3>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>É a fração já simplificada ao máximo — aquela em que numerador e denominador são <strong>primos entre si</strong> (<span class="m">MDC = 1</span>).</p>
+  <p>Para chegar nela de uma vez, divida os dois termos pelo <strong>MDC</strong>:</p>
+</div>
+<div class="eq">
+  <p class="m"><span class="frac"><i>84</i><i>120</i></span> &nbsp;&nbsp; MDC(84, 120) = 12 &nbsp;&nbsp; → <span class="frac"><i>84 ÷ 12</i><i>120 ÷ 12</i></span> = <span class="frac"><i>7</i><i>10</i></span></p>
+</div>
+<p>Simplificar aos poucos também funciona, mas dá mais voltas. É aqui que o MDC do assunto anterior começa a pagar.</p>
+
+<div class="box tip">
+  <span class="tag">Simplifique sempre antes de contar</span>
+  <p>Na hora da prova, simplificar antes de multiplicar reduz o tamanho dos números e o risco de erro. Deixe a simplificação para o começo, nunca para o fim.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Tipos de fração e números mistos</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Quando</th><th>Exemplo</th><th>Vale</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Própria</strong></td><td>Numerador menor que o denominador</td><td class="m"><span class="frac"><i>3</i><i>4</i></span></td><td>menos que 1</td></tr>
+    <tr><td><strong>Imprópria</strong></td><td>Numerador maior que o denominador</td><td class="m"><span class="frac"><i>7</i><i>4</i></span></td><td>mais que 1</td></tr>
+    <tr><td><strong>Aparente</strong></td><td>Numerador é múltiplo do denominador</td><td class="m"><span class="frac"><i>8</i><i>4</i></span></td><td>um inteiro (2)</td></tr>
+    <tr><td><strong>Mista</strong></td><td>Parte inteira + parte fracionária</td><td class="m">2 <span class="frac"><i>3</i><i>4</i></span></td><td>o mesmo que <span class="m"><span class="frac"><i>11</i><i>4</i></span></span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 150" role="img" aria-label="Régua tripla de zero a um, alinhando frações, decimais e porcentagens nas mesmas posições">
+  <line x1="30" y1="60" x2="430" y2="60" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="30" y1="52" x2="30" y2="68" style="stroke:var(--ink-2);stroke-width:2"/>
+  <text x="30" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink)">0</text>
+  <text x="30" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0</text>
+  <text x="30" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">0%</text>
+  <line x1="130" y1="52" x2="130" y2="68" style="stroke:var(--ink-2);stroke-width:2"/>
+  <text x="130" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1/4</text>
+  <text x="130" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0,25</text>
+  <text x="130" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">25%</text>
+  <line x1="180" y1="54" x2="180" y2="66" style="stroke:var(--ink-3);stroke-width:1.4"/>
+  <text x="180" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">1/3</text>
+  <text x="180" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0,33</text>
+  <text x="180" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">33,3%</text>
+  <line x1="230" y1="52" x2="230" y2="68" style="stroke:var(--ink-2);stroke-width:2"/>
+  <text x="230" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1/2</text>
+  <text x="230" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0,5</text>
+  <text x="230" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">50%</text>
+  <line x1="280" y1="54" x2="280" y2="66" style="stroke:var(--ink-3);stroke-width:1.4"/>
+  <text x="280" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">5/8</text>
+  <text x="280" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0,625</text>
+  <text x="280" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">62,5%</text>
+  <line x1="330" y1="52" x2="330" y2="68" style="stroke:var(--ink-2);stroke-width:2"/>
+  <text x="330" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3/4</text>
+  <text x="330" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">0,75</text>
+  <text x="330" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">75%</text>
+  <line x1="430" y1="52" x2="430" y2="68" style="stroke:var(--ink-2);stroke-width:2"/>
+  <text x="430" y="42" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1</text>
+  <text x="430" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c1)">1,0</text>
+  <text x="430" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3)">100%</text>
+  <text x="30" y="136" class="svg-lbl" style="fill:var(--ink-3)">a mesma posição, três linguagens</text>
+</svg>
+<figcaption><b>Fração, decimal e porcentagem são o mesmo ponto da reta.</b> A prova alterna entre as três linguagens dentro de um mesmo enunciado; transitar entre elas de cabeça é o que economiza tempo em porcentagem, probabilidade e estatística.</figcaption>
+</figure>
+
+<h3>Converter mista em imprópria — e vice-versa</h3>
+<div class="eq">
+  <span class="lbl">Mista → imprópria: multiplica o inteiro pelo denominador e soma o numerador</span>
+  <p class="m">2 <span class="frac"><i>3</i><i>4</i></span> = <span class="frac"><i>2 · 4 + 3</i><i>4</i></span> = <span class="frac"><i>11</i><i>4</i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Imprópria → mista: divide e usa o quociente como inteiro, o resto como numerador</span>
+  <p class="m"><span class="frac"><i>11</i><i>4</i></span> → 11 ÷ 4 = 2, resto 3 &nbsp;→&nbsp; 2 <span class="frac"><i>3</i><i>4</i></span></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Antes de qualquer conta</span>
+  <p>Nunca opere com número misto direto. <strong>Converta para imprópria primeiro</strong>, faça a conta, e só converta de volta se a resposta pedir. Somar “os inteiros de um lado e as frações do outro” funciona na soma, mas quebra feio na multiplicação e na divisão.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Comparar e ordenar frações</h2>
+<p>Cai como “ordem crescente”, “quem rendeu mais”, “qual é a maior parcela”. Quatro caminhos, cada um com sua hora:</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Método</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Mesmo denominador</td><td>Maior numerador vence</td><td class="m"><span class="frac"><i>5</i><i>7</i></span> &gt; <span class="frac"><i>3</i><i>7</i></span></td></tr>
+    <tr><td>Mesmo numerador</td><td><strong>Menor</strong> denominador vence</td><td class="m"><span class="frac"><i>3</i><i>5</i></span> &gt; <span class="frac"><i>3</i><i>7</i></span></td></tr>
+    <tr><td>Só duas frações</td><td>Produto cruzado</td><td class="m"><span class="frac"><i>3</i><i>5</i></span> vs <span class="frac"><i>5</i><i>8</i></span> → 24 vs 25</td></tr>
+    <tr><td>Três ou mais</td><td>Converter em decimal</td><td>o mais seguro</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">A regra do denominador invertido</span>
+  <p>Com o mesmo numerador, quem tem <strong>denominador menor é maior</strong>. Parece contraintuitivo, mas é óbvio no concreto: dividir uma pizza em 5 pedaços dá pedaços maiores do que dividir em 7. Três pedaços de <span class="m"><span class="frac"><i>1</i><i>5</i></span></span> são mais comida que três de <span class="m"><span class="frac"><i>1</i><i>7</i></span></span>.</p>
+</div>
+
+<h3>O truque da referência</h3>
+<p>Compare tudo com <span class="m"><span class="frac"><i>1</i><i>2</i></span></span>: se o numerador é mais que a metade do denominador, a fração passa de <span class="m">0,5</span>. Isso costuma eliminar duas ou três alternativas de imediato.</p>
+<div class="eq">
+  <p class="m"><span class="frac"><i>7</i><i>16</i></span> &lt; <span class="frac"><i>1</i><i>2</i></span> &nbsp; (7 é menos que metade de 16) &nbsp;&nbsp;·&nbsp;&nbsp; <span class="frac"><i>9</i><i>16</i></span> &gt; <span class="frac"><i>1</i><i>2</i></span></p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> As quatro operações com frações</h2>
+
+<div class="eq">
+  <span class="lbl">Soma e subtração — igualar denominadores pelo MMC</span>
+  <p class="m"><span class="frac"><i>1</i><i>6</i></span> + <span class="frac"><i>1</i><i>4</i></span> + <span class="frac"><i>1</i><i>3</i></span> &nbsp;&nbsp; MMC(6,4,3) = 12</p>
+  <p class="m">= <span class="frac"><i>2</i><i>12</i></span> + <span class="frac"><i>3</i><i>12</i></span> + <span class="frac"><i>4</i><i>12</i></span> = <span class="frac"><i>9</i><i>12</i></span> = <span class="frac"><i>3</i><i>4</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Multiplicação — simplifique em cruz antes de multiplicar</span>
+  <p class="m"><span class="frac"><i>4</i><i>9</i></span> · <span class="frac"><i>3</i><i>8</i></span> &nbsp;→&nbsp; corta 4 com 8 (vira 1 e 2) e 3 com 9 (vira 1 e 3)</p>
+  <p class="m">= <span class="frac"><i>1</i><i>3</i></span> · <span class="frac"><i>1</i><i>2</i></span> = <span class="frac"><i>1</i><i>6</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Divisão — conserva a primeira, inverte a segunda, multiplica</span>
+  <p class="m"><span class="frac"><i>3</i><i>4</i></span> ÷ <span class="frac"><i>2</i><i>5</i></span> = <span class="frac"><i>3</i><i>4</i></span> · <span class="frac"><i>5</i><i>2</i></span> = <span class="frac"><i>15</i><i>8</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Potência — o expoente vai nos dois termos</span>
+  <p class="m">(<span class="frac"><i>2</i><i>3</i></span>)<sup>3</sup> = <span class="frac"><i>2<sup>3</sup></i><i>3<sup>3</sup></i></span> = <span class="frac"><i>8</i><i>27</i></span> &nbsp;&nbsp;·&nbsp;&nbsp; (<span class="frac"><i>2</i><i>3</i></span>)<sup>−2</sup> = (<span class="frac"><i>3</i><i>2</i></span>)<sup>2</sup> = <span class="frac"><i>9</i><i>4</i></span></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">A armadilha do “do restante”</span>
+  <p>Este é o erro que mais custa ponto neste assunto. Quando o enunciado diz que se gastou <span class="m"><span class="frac"><i>1</i><i>3</i></span></span> e depois <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> <strong>do restante</strong>, a segunda fração <strong>não</strong> incide sobre o total.</p>
+  <p>Restante após a primeira: <span class="m">1 − <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>3</i></span></span>. A segunda parcela é <span class="m"><span class="frac"><i>1</i><i>4</i></span> · <span class="frac"><i>2</i><i>3</i></span> = <span class="frac"><i>1</i><i>6</i></span></span> do total — <strong>não</strong> <span class="m"><span class="frac"><i>1</i><i>4</i></span></span>.</p>
+  <p>Somar <span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span></span> direto é a resposta errada que sempre está entre as alternativas.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Operações com decimais</h2>
+<p>Sem calculadora, cada regra aqui vale segundos preciosos.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Operação</th><th>Regra</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Somar e subtrair</td><td><strong>Alinhe as vírgulas</strong>, uma embaixo da outra. Complete com zeros se precisar.</td><td class="m">2,5 + 0,75 = 2,50 + 0,75 = 3,25</td></tr>
+    <tr><td>Multiplicar</td><td>Multiplique como se fossem inteiros. O resultado tem tantas casas decimais quanto a <strong>soma</strong> das casas dos fatores.</td><td class="m">0,3 · 0,04 = 0,012 &nbsp;(1+2 = 3 casas)</td></tr>
+    <tr><td>Dividir</td><td>Iguale as casas decimais dos dois e <strong>elimine as vírgulas</strong>. A divisão fica inteira.</td><td class="m">4,8 ÷ 0,12 = 480 ÷ 12 = 40</td></tr>
+    <tr><td>Multiplicar por 10, 100…</td><td>Vírgula anda para a <strong>direita</strong></td><td class="m">3,47 · 100 = 347</td></tr>
+    <tr><td>Dividir por 10, 100…</td><td>Vírgula anda para a <strong>esquerda</strong></td><td class="m">3,47 ÷ 100 = 0,0347</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">O resultado que assusta e está certo</span>
+  <p>Dividir por um número <strong>menor que 1</strong> faz o resultado <em>crescer</em>: <span class="m">4,8 ÷ 0,12 = 40</span>. Não é erro. Multiplicar por número menor que 1 faz o resultado encolher. Se a resposta parecer estranha, cheque se o divisor era menor que 1 antes de refazer tudo.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> De fração para decimal: exato ou dízima?</h2>
+<p>Existe um critério que diz de antemão se a divisão vai acabar ou virar dízima. Cai em questão de classificação e economiza tentativa e erro.</p>
+
+<div class="box def">
+  <span class="tag">O critério</span>
+  <p>Com a fração <strong>já simplificada</strong>, olhe a fatoração do <strong>denominador</strong>:</p>
+  <ul style="margin-bottom:0">
+    <li>Só fatores <span class="m">2</span> e/ou <span class="m">5</span> → <strong>decimal exato</strong></li>
+    <li>Qualquer outro fator primo → <strong>dízima periódica</strong></li>
+  </ul>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Fração</th><th>Denominador fatorado</th><th>Resultado</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="frac"><i>3</i><i>8</i></span></td><td class="m">8 = 2<sup>3</sup></td><td>Exato: <span class="m">0,375</span></td></tr>
+    <tr><td class="m"><span class="frac"><i>7</i><i>20</i></span></td><td class="m">20 = 2<sup>2</sup> · 5</td><td>Exato: <span class="m">0,35</span></td></tr>
+    <tr><td class="m"><span class="frac"><i>9</i><i>40</i></span></td><td class="m">40 = 2<sup>3</sup> · 5</td><td>Exato: <span class="m">0,225</span></td></tr>
+    <tr><td class="m"><span class="frac"><i>5</i><i>12</i></span></td><td class="m">12 = 2<sup>2</sup> · <strong>3</strong></td><td>Dízima: <span class="m">0,41666…</span></td></tr>
+    <tr><td class="m"><span class="frac"><i>2</i><i>7</i></span></td><td class="m"><strong>7</strong></td><td>Dízima: <span class="m">0,285714…</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Simplifique antes de aplicar o critério</span>
+  <p><span class="m"><span class="frac"><i>6</i><i>12</i></span></span> parece cair no caso da dízima, porque 12 tem o fator 3. Mas simplificada ela é <span class="m"><span class="frac"><i>1</i><i>2</i></span> = 0,5</span>, decimal exato. O critério só funciona na fração irredutível.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Dízimas periódicas e fração geratriz</h2>
+<p>Toda dízima periódica é um número <strong>racional</strong> — existe uma fração exata que a produz. Achar essa fração é a “geratriz”.</p>
+
+<h3>Anatomia de uma dízima</h3>
+<div class="eq">
+  <p class="m">2,3<u>45</u>45<u>45</u>…</p>
+  <p><strong>Parte inteira:</strong> 2 &nbsp;·&nbsp; <strong>Parte não periódica:</strong> 3 &nbsp;·&nbsp; <strong>Período:</strong> 45</p>
+  <p>Se não houver parte não periódica, a dízima é <strong>simples</strong>; se houver, é <strong>composta</strong>.</p>
+</div>
+
+<h3>O método algébrico — o que explica a regra</h3>
+<p>Vale entender uma vez, porque assim a regra nunca mais é decorada errado. A ideia é multiplicar por potências de 10 até que as duas versões tenham a <em>mesma cauda infinita</em>, e então subtrair — a cauda some.</p>
+<div class="eq">
+  <span class="lbl">Dízima simples: x = 0,777…</span>
+  <p class="m">10x = 7,777…<br>10x − x = 7,777… − 0,777…<br>9x = 7 &nbsp;→&nbsp; x = <span class="frac"><i>7</i><i>9</i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Dízima composta: x = 0,8333…</span>
+  <p class="m">10x = 8,333… &nbsp;(joga o 8 para antes da vírgula)<br>100x = 83,333…<br>100x − 10x = 75<br>90x = 75 &nbsp;→&nbsp; x = <span class="frac"><i>75</i><i>90</i></span> = <span class="frac"><i>5</i><i>6</i></span></p>
+</div>
+
+<h3>A regra prática</h3>
+<div class="box def">
+  <span class="tag">Geratriz em um passo</span>
+  <p><strong>Numerador:</strong> o número inteiro sem vírgula, menos a parte que não repete.</p>
+  <p><strong>Denominador:</strong> um <span class="m">9</span> para cada algarismo do período, seguido de um <span class="m">0</span> para cada algarismo não periódico.</p>
+</div>
+<div class="eq">
+  <p class="m">0,777… = <span class="frac"><i>7</i><i>9</i></span> &nbsp;·&nbsp; 0,2323… = <span class="frac"><i>23</i><i>99</i></span> &nbsp;·&nbsp; 0,8333… = <span class="frac"><i>83 − 8</i><i>90</i></span> = <span class="frac"><i>5</i><i>6</i></span></p>
+  <p class="m" style="margin-top:10px">1,2454545… = <span class="frac"><i>1245 − 12</i><i>990</i></span> = <span class="frac"><i>1233</i><i>990</i></span> = <span class="frac"><i>137</i><i>110</i></span></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A curiosidade que é verdade: 0,999… = 1</span>
+  <p>Aplique o método: <span class="m">x = 0,999…</span>, logo <span class="m">10x = 9,999…</span>, e <span class="m">10x − x = 9</span>, ou seja <span class="m">9x = 9</span> e <span class="m">x = 1</span>.</p>
+  <p>Não é aproximação nem arredondamento: <span class="m">0,999…</span> e <span class="m">1</span> são <strong>o mesmo número</strong>, escrito de duas formas. Pela regra da geratriz, <span class="m"><span class="frac"><i>9</i><i>9</i></span> = 1</span> — o resultado bate.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Fração, decimal e porcentagem</h2>
+<p>Se você decorar uma única tabela deste assunto, que seja esta. Ela transita entre três linguagens que a prova usa de forma intercambiável.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Fração</th><th>Decimal</th><th>Porcentagem</th><th>Fração</th><th>Decimal</th><th>Porcentagem</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="frac"><i>1</i><i>2</i></span></td><td class="m">0,5</td><td class="m">50%</td><td class="m"><span class="frac"><i>1</i><i>8</i></span></td><td class="m">0,125</td><td class="m">12,5%</td></tr>
+    <tr><td class="m"><span class="frac"><i>1</i><i>3</i></span></td><td class="m">0,333…</td><td class="m">33,3%</td><td class="m"><span class="frac"><i>3</i><i>8</i></span></td><td class="m">0,375</td><td class="m">37,5%</td></tr>
+    <tr><td class="m"><span class="frac"><i>2</i><i>3</i></span></td><td class="m">0,666…</td><td class="m">66,7%</td><td class="m"><span class="frac"><i>5</i><i>8</i></span></td><td class="m">0,625</td><td class="m">62,5%</td></tr>
+    <tr><td class="m"><span class="frac"><i>1</i><i>4</i></span></td><td class="m">0,25</td><td class="m">25%</td><td class="m"><span class="frac"><i>7</i><i>8</i></span></td><td class="m">0,875</td><td class="m">87,5%</td></tr>
+    <tr><td class="m"><span class="frac"><i>3</i><i>4</i></span></td><td class="m">0,75</td><td class="m">75%</td><td class="m"><span class="frac"><i>1</i><i>6</i></span></td><td class="m">0,1666…</td><td class="m">16,7%</td></tr>
+    <tr><td class="m"><span class="frac"><i>1</i><i>5</i></span></td><td class="m">0,2</td><td class="m">20%</td><td class="m"><span class="frac"><i>1</i><i>10</i></span></td><td class="m">0,1</td><td class="m">10%</td></tr>
+    <tr><td class="m"><span class="frac"><i>2</i><i>5</i></span></td><td class="m">0,4</td><td class="m">40%</td><td class="m"><span class="frac"><i>1</i><i>20</i></span></td><td class="m">0,05</td><td class="m">5%</td></tr>
+    <tr><td class="m"><span class="frac"><i>3</i><i>5</i></span></td><td class="m">0,6</td><td class="m">60%</td><td class="m"><span class="frac"><i>1</i><i>100</i></span></td><td class="m">0,01</td><td class="m">1%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="eq">
+  <span class="lbl">As conversões, quando o valor não estiver na tabela</span>
+  <p><strong>Fração → decimal:</strong> divida o numerador pelo denominador.</p>
+  <p><strong>Decimal → porcentagem:</strong> multiplique por 100 (vírgula duas casas à direita).</p>
+  <p><strong>Porcentagem → fração:</strong> ponha sobre 100 e simplifique. <span class="m">37,5% = <span class="frac"><i>37,5</i><i>100</i></span> = <span class="frac"><i>375</i><i>1000</i></span> = <span class="frac"><i>3</i><i>8</i></span></span></p>
+  <p><strong>Decimal exato → fração:</strong> o número sem vírgula sobre <span class="m">10</span>, <span class="m">100</span> ou <span class="m">1000</span>, conforme as casas, e simplifique. <span class="m">0,24 = <span class="frac"><i>24</i><i>100</i></span> = <span class="frac"><i>6</i><i>25</i></span></span></p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x"><span class="m"><span class="frac"><i>1</i><i>3</i></span></span> e depois <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> do restante = <span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span></span></span> &nbsp;→&nbsp; <span class="c"><span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>6</i></span></span></span></span><small>“Do restante” incide sobre o que sobrou, não sobre o total. É o erro mais caro deste assunto.</small></li>
+  <li><span><span class="x"><span class="m"><span class="frac"><i>1</i><i>2</i></span> + <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>5</i></span></span></span> &nbsp;→&nbsp; <span class="c"><span class="m"><span class="frac"><i>5</i><i>6</i></span></span></span></span><small>Somar termo a termo só vale na multiplicação. Na soma, iguale os denominadores.</small></li>
+  <li><span><span class="x">Multiplicar números mistos direto</span> &nbsp;→&nbsp; <span class="c">converta para imprópria antes</span></span><small><span class="m">2<span class="frac"><i>1</i><i>2</i></span> · 3</span> não é <span class="m">6<span class="frac"><i>1</i><i>2</i></span></span>, é <span class="m"><span class="frac"><i>5</i><i>2</i></span>·3 = <span class="frac"><i>15</i><i>2</i></span> = 7<span class="frac"><i>1</i><i>2</i></span></span>.</small></li>
+  <li><span><span class="x"><span class="m"><span class="frac"><i>3</i><i>7</i></span> &gt; <span class="frac"><i>3</i><i>5</i></span></span> porque 7 &gt; 5</span> &nbsp;→&nbsp; <span class="c"><span class="m"><span class="frac"><i>3</i><i>5</i></span> &gt; <span class="frac"><i>3</i><i>7</i></span></span></span></span><small>Mesmo numerador: denominador menor dá pedaços maiores.</small></li>
+  <li><span><span class="x">0,3 · 0,04 = 0,12</span> &nbsp;→&nbsp; <span class="c">0,012</span></span><small>Some as casas decimais dos fatores: 1 + 2 = 3 casas no resultado.</small></li>
+  <li><span><span class="x">4,8 ÷ 0,12 dá menos que 4,8</span> &nbsp;→&nbsp; <span class="c">dá 40</span></span><small>Dividir por número menor que 1 aumenta o resultado. É contraintuitivo, mas está certo.</small></li>
+  <li><span><span class="x">Dízima periódica é irracional</span> &nbsp;→&nbsp; <span class="c">é racional</span></span><small>Se repete com padrão, tem geratriz. Irracional é o que não repete.</small></li>
+  <li><span><span class="x">Aplicar o critério do decimal exato sem simplificar</span> &nbsp;→&nbsp; <span class="c">simplifique primeiro</span></span><small><span class="m"><span class="frac"><i>6</i><i>12</i></span></span> vira <span class="m"><span class="frac"><i>1</i><i>2</i></span></span>, e aí sim é exato.</small></li>
+  <li><span><span class="x">0,999… é quase 1</span> &nbsp;→&nbsp; <span class="c">é exatamente 1</span></span><small>Duas escritas do mesmo número, não uma aproximação.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. As de número 1, 7 e 9 são do tipo “duas etapas” — leia com atenção sobre <em>o que</em> cada fração incide.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Fração do restante</span>
+    <p class="enun">Um reservatório está com <span class="m"><span class="frac"><i>3</i><i>5</i></span></span> de sua capacidade total. Para a limpeza, retira-se <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> do volume que havia no reservatório. Após a retirada, que fração da capacidade total permanece com água?</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>7</i><i>20</i></span></span></li><li><span class="m"><span class="frac"><i>2</i><i>5</i></span></span></li><li><span class="m"><span class="frac"><i>9</i><i>20</i></span></span></li><li><span class="m"><span class="frac"><i>1</i><i>2</i></span></span></li><li><span class="m"><span class="frac"><i>3</i><i>4</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A retirada é de <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> <strong>do que havia</strong>, não da capacidade total. Então sobra <span class="m"><span class="frac"><i>3</i><i>4</i></span></span> do que havia:</p>
+      <p class="m"><span class="frac"><i>3</i><i>4</i></span> · <span class="frac"><i>3</i><i>5</i></span> = <span class="frac"><i>9</i><i>20</i></span></p>
+      <p>Quem calculou <span class="m"><span class="frac"><i>3</i><i>5</i></span> − <span class="frac"><i>1</i><i>4</i></span> = <span class="frac"><i>7</i><i>20</i></span></span> caiu na alternativa A — subtraiu um quarto <em>do total</em> em vez de um quarto <em>do que havia</em>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Ordenação</span>
+    <p class="enun">Quatro candidatos acertaram as seguintes frações de uma prova: Ana <span class="m"><span class="frac"><i>5</i><i>8</i></span></span>, Bruno <span class="m"><span class="frac"><i>3</i><i>5</i></span></span>, Carla <span class="m"><span class="frac"><i>7</i><i>10</i></span></span> e Diego <span class="m"><span class="frac"><i>2</i><i>3</i></span></span>. Qual é a ordem decrescente de acertos?</p>
+    <ol class="alt"><li>Carla, Diego, Ana, Bruno</li><li>Carla, Ana, Diego, Bruno</li><li>Diego, Carla, Ana, Bruno</li><li>Bruno, Ana, Diego, Carla</li><li>Ana, Carla, Diego, Bruno</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com quatro frações, converter em decimal é o caminho seguro:</p>
+      <p class="m"><span class="frac"><i>5</i><i>8</i></span> = 0,625 &nbsp;·&nbsp; <span class="frac"><i>3</i><i>5</i></span> = 0,600 &nbsp;·&nbsp; <span class="frac"><i>7</i><i>10</i></span> = 0,700 &nbsp;·&nbsp; <span class="frac"><i>2</i><i>3</i></span> ≈ 0,667</p>
+      <p>Ordenando: <span class="m">0,700 &gt; 0,667 &gt; 0,625 &gt; 0,600</span></p>
+      <p>Ou seja, <strong>Carla, Diego, Ana, Bruno</strong>. As quatro estão entre 0,6 e 0,7 — comparar “no olho” não funcionaria.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Decimal exato ou dízima</span>
+    <p class="enun">Considere as frações <span class="m"><span class="frac"><i>3</i><i>8</i></span></span>, <span class="m"><span class="frac"><i>5</i><i>12</i></span></span>, <span class="m"><span class="frac"><i>7</i><i>20</i></span></span>, <span class="m"><span class="frac"><i>2</i><i>7</i></span></span> e <span class="m"><span class="frac"><i>9</i><i>40</i></span></span>. Quantas delas resultam em decimal exato?</p>
+    <ol class="alt"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Todas já estão irredutíveis. Basta fatorar cada denominador e ver se só há 2 e 5:</p>
+      <ul>
+        <li><span class="m">8 = 2<sup>3</sup></span> → <strong>exato</strong> (0,375)</li>
+        <li><span class="m">12 = 2<sup>2</sup>·3</span> → tem o 3 → dízima</li>
+        <li><span class="m">20 = 2<sup>2</sup>·5</span> → <strong>exato</strong> (0,35)</li>
+        <li><span class="m">7</span> → dízima</li>
+        <li><span class="m">40 = 2<sup>3</sup>·5</span> → <strong>exato</strong> (0,225)</li>
+      </ul>
+      <p>São <strong>3</strong> decimais exatos.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Fração geratriz composta</span>
+    <p class="enun">Um equipamento registra a medida <span class="m">1,2454545…</span>, em que o bloco 45 se repete indefinidamente. A fração irredutível correspondente a essa medida é</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>1233</i><i>990</i></span></span></li><li><span class="m"><span class="frac"><i>137</i><i>110</i></span></span></li><li><span class="m"><span class="frac"><i>1245</i><i>999</i></span></span></li><li><span class="m"><span class="frac"><i>249</i><i>200</i></span></span></li><li><span class="m"><span class="frac"><i>45</i><i>99</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Dízima composta: parte não periódica <span class="m">2</span>, período <span class="m">45</span>.</p>
+      <p><strong>Numerador:</strong> tudo sem vírgula menos a parte que não repete → <span class="m">1245 − 12 = 1233</span></p>
+      <p><strong>Denominador:</strong> dois algarismos no período → <span class="m">99</span>; um algarismo não periódico → acrescenta um <span class="m">0</span> → <span class="m">990</span></p>
+      <p class="m"><span class="frac"><i>1233</i><i>990</i></span></p>
+      <p>Mas a questão pede a <strong>irredutível</strong>. Dividindo por 3 duas vezes:</p>
+      <p class="m"><span class="frac"><i>1233</i><i>990</i></span> = <span class="frac"><i>411</i><i>330</i></span> = <span class="frac"><i>137</i><i>110</i></span></p>
+      <p>A alternativa A é a armadilha de quem para antes de simplificar.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Divisão de decimais</span>
+    <p class="enun">Uma fita de 4,8 metros será cortada em pedaços de 0,12 metro cada. Quantos pedaços serão obtidos?</p>
+    <ol class="alt"><li>4</li><li>40</li><li>57</li><li>400</li><li>576</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Iguale as casas decimais e elimine as vírgulas:</p>
+      <p class="m">4,8 ÷ 0,12 = 4,80 ÷ 0,12 = 480 ÷ 12 = 40</p>
+      <p>O resultado ser <em>maior</em> que 4,8 assusta, mas está certo: o divisor é menor que 1. Confira multiplicando de volta: <span class="m">40 · 0,12 = 4,8</span> ✓</p>
+      <p>A alternativa E é de quem multiplicou em vez de dividir.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Número misto</span>
+    <p class="enun">Uma receita de bolo leva <span class="m">2<span class="frac"><i>3</i><i>4</i></span></span> xícaras de farinha. Para preparar três receitas iguais, quantas xícaras de farinha serão necessárias?</p>
+    <ol class="alt"><li><span class="m">6<span class="frac"><i>3</i><i>4</i></span></span></li><li><span class="m">7<span class="frac"><i>1</i><i>2</i></span></span></li><li><span class="m">8<span class="frac"><i>1</i><i>4</i></span></span></li><li><span class="m">8<span class="frac"><i>3</i><i>4</i></span></span></li><li><span class="m">9</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Converta a mista em imprópria <strong>antes</strong> de multiplicar:</p>
+      <p class="m">2<span class="frac"><i>3</i><i>4</i></span> = <span class="frac"><i>2·4 + 3</i><i>4</i></span> = <span class="frac"><i>11</i><i>4</i></span></p>
+      <p class="m"><span class="frac"><i>11</i><i>4</i></span> · 3 = <span class="frac"><i>33</i><i>4</i></span></p>
+      <p>Voltando para mista: <span class="m">33 ÷ 4 = 8</span>, resto <span class="m">1</span> → <span class="m">8<span class="frac"><i>1</i><i>4</i></span></span></p>
+      <p>A alternativa A é de quem multiplicou só o inteiro por 3 e repetiu a fração — o erro clássico com números mistos.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Duas etapas encadeadas</span>
+    <p class="enun">Um trabalhador gasta <span class="m"><span class="frac"><i>1</i><i>3</i></span></span> do salário com moradia e, do que resta, gasta <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> com transporte. Que fração do salário sobra depois desses dois gastos?</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>5</i><i>12</i></span></span></li><li><span class="m"><span class="frac"><i>1</i><i>2</i></span></span></li><li><span class="m"><span class="frac"><i>7</i><i>12</i></span></span></li><li><span class="m"><span class="frac"><i>2</i><i>3</i></span></span></li><li><span class="m"><span class="frac"><i>3</i><i>4</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Depois da moradia sobra <span class="m">1 − <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>3</i></span></span> do salário.</p>
+      <p>O transporte é <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> <strong>desse resto</strong>:</p>
+      <p class="m"><span class="frac"><i>1</i><i>4</i></span> · <span class="frac"><i>2</i><i>3</i></span> = <span class="frac"><i>2</i><i>12</i></span> = <span class="frac"><i>1</i><i>6</i></span> do salário</p>
+      <p>Sobra:</p>
+      <p class="m"><span class="frac"><i>2</i><i>3</i></span> − <span class="frac"><i>1</i><i>6</i></span> = <span class="frac"><i>4</i><i>6</i></span> − <span class="frac"><i>1</i><i>6</i></span> = <span class="frac"><i>3</i><i>6</i></span> = <span class="frac"><i>1</i><i>2</i></span></p>
+      <p><strong>Atalho:</strong> sobra <span class="m"><span class="frac"><i>3</i><i>4</i></span></span> de <span class="m"><span class="frac"><i>2</i><i>3</i></span></span>, isto é <span class="m"><span class="frac"><i>3</i><i>4</i></span>·<span class="frac"><i>2</i><i>3</i></span> = <span class="frac"><i>1</i><i>2</i></span></span> — mesmo resultado em um passo.</p>
+      <p>A alternativa A é de quem somou <span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span> = <span class="frac"><i>7</i><i>12</i></span></span> e subtraiu de 1.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Fração para porcentagem</span>
+    <p class="enun">Numa pesquisa de opinião, <span class="m"><span class="frac"><i>3</i><i>8</i></span></span> dos entrevistados escolheram a opção A. Esse valor corresponde a que porcentagem do total de entrevistados?</p>
+    <ol class="alt"><li>3,8%</li><li>24%</li><li>37,5%</li><li>38%</li><li>62,5%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Divida e multiplique por 100:</p>
+      <p class="m"><span class="frac"><i>3</i><i>8</i></span> = 3 ÷ 8 = 0,375 &nbsp;→&nbsp; 37,5%</p>
+      <p>Vale ter esta linha decorada: os oitavos dão sempre <span class="m">12,5%</span> cada. Então <span class="m"><span class="frac"><i>3</i><i>8</i></span> = 3 · 12,5% = 37,5%</span>, sem dividir nada.</p>
+      <p>A alternativa E é o complemento — a porcentagem de quem <em>não</em> escolheu A.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Soma de frações em contexto</span>
+    <p class="enun">Três turmas participaram de uma campanha de arrecadação. A turma A arrecadou <span class="m"><span class="frac"><i>1</i><i>6</i></span></span> da meta, a turma B arrecadou <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> e a turma C, <span class="m"><span class="frac"><i>1</i><i>3</i></span></span>. Que fração da meta ainda falta arrecadar?</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>1</i><i>6</i></span></span></li><li><span class="m"><span class="frac"><i>1</i><i>4</i></span></span></li><li><span class="m"><span class="frac"><i>1</i><i>3</i></span></span></li><li><span class="m"><span class="frac"><i>3</i><i>4</i></span></span></li><li><span class="m"><span class="frac"><i>1</i><i>13</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Some as três, igualando os denominadores pelo MMC:</p>
+      <p class="m">MMC(6, 4, 3) = 12</p>
+      <p class="m"><span class="frac"><i>1</i><i>6</i></span> + <span class="frac"><i>1</i><i>4</i></span> + <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>12</i></span> + <span class="frac"><i>3</i><i>12</i></span> + <span class="frac"><i>4</i><i>12</i></span> = <span class="frac"><i>9</i><i>12</i></span> = <span class="frac"><i>3</i><i>4</i></span></p>
+      <p>Foi arrecadado <span class="m"><span class="frac"><i>3</i><i>4</i></span></span> da meta, logo falta:</p>
+      <p class="m">1 − <span class="frac"><i>3</i><i>4</i></span> = <span class="frac"><i>1</i><i>4</i></span></p>
+      <p>A alternativa E é de quem somou numeradores com numeradores e denominadores com denominadores.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço os quatro significados de uma fração e sei que “de” significa multiplicar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Simplifico qualquer fração de uma vez, dividindo pelo MDC</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Verifico equivalência por produto cruzado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto número misto em imprópria antes de operar, e volto no fim</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que, com o mesmo numerador, denominador menor significa fração maior</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Ordeno três ou mais frações convertendo em decimal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo, subtraio, multiplico, divido e elevo frações a potências sem calculadora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Simplifico em cruz antes de multiplicar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Trato corretamente “uma fração do restante”, sem somar as duas frações</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Multiplico e divido decimais contando as casas e eliminando as vírgulas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei prever se uma fração dará decimal exato olhando o denominador irredutível</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho a geratriz de dízima simples e composta, e sei explicar por que a regra funciona</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei de cor a tabela fração ↔ decimal ↔ porcentagem</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de duas etapas, com “do restante” — são as que separam. Depois volte à planilha e atualize a linha na aba <strong>Cronograma</strong>. Com este assunto, a semana 1 está fechada.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>50 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-03-fracoes-decimais-dizimas.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-03";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

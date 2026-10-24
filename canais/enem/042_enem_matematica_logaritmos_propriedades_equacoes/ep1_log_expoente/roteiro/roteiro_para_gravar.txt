@@ -1,0 +1,57 @@
+Quantos algarismos tem dois elevado a cem? Ninguém faz essa conta na mão. Mas com um único número, log de dois, aproximadamente zero vírgula trezentos e um, você responde em dez segundos. Ao final desta aula, você também.
+
+Este é o primeiro episódio da série de Logaritmos. Ao final, você vai ler qualquer logaritmo como uma pergunta, saber quando ele existe e usar o log para contar algarismos.
+
+Quatro lembretes rápidos, da série de Potenciação. Dois elevado a cinco é trinta e dois. Três elevado a menos dois inverte: um nono. Expoente um meio é raiz quadrada: nove elevado a um meio é três. E qualquer base elevada a zero dá um.
+
+E, da série de Notação científica: dez elevado a n é um seguido de n zeros. E dez elevado a menos n tem n casas decimais: dez elevado a menos dois é zero vírgula zero um.
+
+Na série de Função exponencial, ficou uma pergunta no ar: dois elevado a quanto dá dez? Dois ao cubo é oito. Pouco. Dois à quarta é dezesseis. Passou. A resposta está entre três e quatro. Não é um número inteiro. Mas esse número existe, e tem nome: logaritmo.
+
+Então, o que é um logaritmo? Logaritmo é o expoente que falta. Log de a na base b igual a x quer dizer: b elevado a x dá a. O b é a base: o número que vai ser elevado. O a é o logaritmando: o número que você quer alcançar. E o x é o logaritmo: o expoente que leva até lá.
+
+O jeito de nunca errar: leia todo log como uma pergunta. Log de trinta e dois na base dois pergunta: dois elevado a quanto dá trinta e dois? Vamos multiplicar: dois, quatro, oito, dezesseis, trinta e dois. Foram cinco dois. O log vale cinco. Ida e volta: log é cinco porque dois elevado a cinco dá trinta e dois. O logaritmo é só um expoente com nome próprio.
+
+E quando a resposta é negativa ou fração? Log de um nono na base três: três elevado a quanto dá um nono? Um nono é uma base invertida: menos dois. Log de três na base nove: nove elevado a quanto dá três? Três é a raiz de nove: um meio.
+
+E quando a base nem aparece? Log sem base escrita é o logaritmo decimal: base dez. É o mais usado na prova. Log de mil: dez elevado a quanto dá mil? Três. Log de zero vírgula zero um: dez elevado a quanto dá um centésimo? Menos dois. Você ainda vai ver o ln, o logaritmo natural, de base e, um número perto de dois vírgula setecentos e dezoito. Por enquanto, só o nome.
+
+Atalho: o log decimal conta zeros. Um seguido de cinco zeros? Log cinco. Número com três casas decimais, terminando no um? Log menos três. Na régua: cada passo para a direita multiplica por dez e soma um no log.
+
+Todo logaritmo existe? Não. A condição de existência é a regra que diz quando o log existe. Primeira: o logaritmando é positivo. Por quê? Base positiva elevada a qualquer expoente dá positivo. Não existe dez elevado a x igual a zero, nem igual a menos cinco. Então log de zero e log de menos cinco não existem.
+
+E a base? Precisa ser positiva e diferente de um. Com base um, um elevado a qualquer coisa dá um: a pergunta não tem resposta. Agora, atenção: o logaritmo, a resposta, pode ser negativo. Log de zero vírgula zero um é menos dois. Positivo é o número de dentro.
+
+Da definição saem cinco consequências. Log de um, em qualquer base, é zero: toda base elevada a zero dá um. Log da própria base é um: log de dez é um. E log de uma potência da base é o expoente: log de dez elevado a menos sete é menos sete.
+
+As outras duas. Dez elevado a log de sete é sete: você eleva a base ao expoente que dá sete. E se log de x é igual a log de cinco, então x é cinco: expoentes iguais, potências iguais.
+
+Atalho: o número já é potência da base? Então o log é o expoente. Sem conta. Log de dois elevado a nove, na base dois: nove. Log de cem, que é dez ao quadrado: dois.
+
+E como o log conta algarismos? Algarismo é cada símbolo de zero a nove usado para escrever um número. Dez tem log um, e dois algarismos. Cem tem log dois, e três. Mil tem log três, e quatro. O número de algarismos é sempre um a mais que o log.
+
+E um número entre duas potências de dez? Vinte e cinco milhões fica entre dez elevado a sete e dez elevado a oito. O log dele fica entre sete e oito: sete vírgula alguma coisa. A parte inteira é o número antes da vírgula: sete. Sete mais um: oito algarismos.
+
+Atalho para contar algarismos. Ache o log. Pegue a parte inteira. Some um. Quatro mil e quinhentos: log entre três e quatro, três vírgula alguma coisa. Três mais um: quatro algarismos. Confira: quatro, cinco, zero, zero.
+
+Sua vez. Quanto vale log de cento e vinte e cinco na base cinco? E log de zero vírgula zero zero zero um? Leia como pergunta. Pause e tente.
+
+Vamos juntos. Cinco elevado a quanto dá cento e vinte e cinco? Cinco, vinte e cinco, cento e vinte e cinco: três cincos. Log três. Dez elevado a quanto dá zero vírgula zero zero zero um? São quatro casas decimais: log menos quatro.
+
+Vamos guardar em três frases. Um: logaritmo é expoente: log de a na base b pergunta: b elevado a quanto dá a? Dois: o logaritmando é sempre positivo; o logaritmo pode ser negativo. Três: algarismos: parte inteira do log, mais um.
+
+Agora, os dois erros clássicos. Primeiro: dizer que log de zero é zero. Parece certo, porque com o zero quase tudo dá zero: zero vezes cinco, raiz de zero. Mas dez elevado a quanto dá zero? Nenhum expoente. Log de zero não existe. Quem vale zero é log de um.
+
+Segundo: dois elevado a trinta tem log de trinta vezes zero vírgula trezentos e um, nove vírgula zero três. E alguém responde: nove algarismos. Parece certo, porque o nove está ali, na frente da vírgula. Mas faltou somar um. Dois elevado a trinta é um bilhão e setenta e três milhões e pouco: dez algarismos.
+
+Agora, uma questão no estilo do ENEM. Esta, a gente resolve junto. Um professor desafiou a turma a descobrir quantos algarismos tem o número dois elevado a cem, escrito no sistema decimal, sem calculá-lo. Dado que log de dois é aproximadamente zero vírgula trezentos e um, a resposta correta é: A: trinta. B: trinta e um. C: cem. D: cento e um. E: duzentos. Pause o vídeo e tente.
+
+Vamos juntos. Primeiro, o caso pequeno: dez ao cubo, mil, tem log três e quatro algarismos. Agora, o log de dois elevado a cem. O expoente desce multiplicando: cem vezes zero vírgula trezentos e um, trinta vírgula um. Isso é do próximo episódio: confie por enquanto. Então dois elevado a cem fica entre dez elevado a trinta e dez elevado a trinta e um. Parte inteira, trinta. Mais um: trinta e um algarismos. Letra B!
+
+E as armadilhas? A A pega a parte inteira e esquece de somar um. A C confunde o número de algarismos com o expoente, cem. A D soma um a esse expoente. E a E multiplica a base pelo expoente: dois vezes cem.
+
+Para fechar, as mesmas três frases. Um: logaritmo é expoente: log de a na base b pergunta: b elevado a quanto dá a? Dois: o logaritmando é sempre positivo; o logaritmo pode ser negativo. Três: algarismos: parte inteira do log, mais um.
+
+Se log de dois é aproximadamente zero vírgula trinta e log de três, zero vírgula quarenta e oito, quanto vale log de seis? E log de setenta e dois? Sem calculadora. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual foi o log que você leu como pergunta pela primeira vez? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

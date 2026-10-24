@@ -1,0 +1,268 @@
+Juros Simples
+Matemática › Matemática Financeira › Assunto 1 de 6
+Juros simples
+O primeiro modelo de crescimento do dinheiro: os juros incidem sempre sobre o mesmo capital, então o montante sobe em degraus iguais. É uma função afim disfarçada de problema de banco, e a prova cobra menos a fórmula do que a disciplina com unidades de taxa e de tempo.
+Semana
+25 · Fase Ampliação
+Incidência
+Média
+Tempo previsto
+36 min de teoria
+Pré-requisito
+Porcentagem · Razão e proporção
+Destrava
+Juros compostos e montante
+Neste assunto
+01 O que o ENEM cobra aqui
+Matemática Financeira aparece no ENEM em contexto: boleto atrasado, compra parcelada, empréstimo entre parentes, aplicação de curto prazo. Juros simples é a porta de entrada, porque é o modelo mais fácil de calcular e também o que a prova usa para testar se você sabe a diferença entre simples e compostos.
+O que costuma ser cobrado:
+Calcular juros ou montante com taxa e tempo dados, quase sempre com uma conversão de unidade no meio (taxa anual, prazo em meses ou em dias).
+Descobrir a taxa, o capital ou o prazo a partir dos outros dados.
+Multa e juros de mora em contas pagas com atraso, cobrados proporcionalmente aos dias.
+Ler um gráfico ou uma tabela de montante e reconhecer o crescimento linear.
+Descobrir a taxa embutida numa compra com entrada e pagamento posterior.
+O que rende mais aqui
+Duas coisas. Primeiro, taxa e tempo na mesma unidade antes de qualquer conta (seção 04): é onde a maior parte das questões é perdida. Segundo, reconhecer que o montante é uma reta (seção 05): isso transforma gráfico, tabela e “em quanto tempo dobra” em contas de uma linha.
+02 O vocabulário do dinheiro
+Cinco palavras aparecem em toda questão. Saber exatamente o que cada uma significa evita metade dos erros.
+ | Termo | Símbolo | O que é | Exemplo
+ | Capital | C | O valor inicial: o que foi emprestado, aplicado ou financiado | R$ 1.500,00 aplicados
+ | Taxa de juros | i | A porcentagem cobrada por período, sempre com a unidade de tempo | 2% ao mês (a.m.)
+ | Tempo | t | Quantos períodos o dinheiro fica aplicado ou emprestado | 6 meses
+ | Juros | J | O acréscimo: o “aluguel” do dinheiro pelo tempo | R$ 180,00
+ | Montante | M | O total no fim: capital mais juros | R$ 1.680,00
+Juros não é montante
+Quando o enunciado pergunta “quanto rendeu” ou “qual o valor dos juros”, a resposta é J. Quando pergunta “quanto terá” ou “quanto pagará no total”, é M. O ENEM coloca as duas respostas entre as alternativas, sempre.
+As siglas de taxa que aparecem nos enunciados: a.d. (ao dia), a.m. (ao mês), a.b. (ao bimestre), a.t. (ao trimestre), a.s. (ao semestre) e a.a. (ao ano).
+03 A fórmula: juros sobre o capital, sempre
+Definição
+No regime de juros simples, os juros de cada período são calculados sempre sobre o capital inicial. Os juros de um mês não rendem juros no mês seguinte.
+Se cada período gera C · i de juros, em t períodos o total é t vezes isso:
+Juros simples
+J = C · i · t
+Montante
+M = C + J = C · (1 + i · t)
+Na fórmula, a taxa entra na forma decimal: 2% vira 0,02; 1,5% vira 0,015; 18% vira 0,18.
+Exemplo — R$ 1.500,00 a 2% ao mês, durante 6 meses
+J = 1.500 · 0,02 · 6 = 180 → M = 1.500 + 180 = R$ 1.680,00
+Pelo fator: 1 + 0,02 · 6 = 1,12, e 1.500 · 1,12 = 1.680. É a mesma ideia do fator de multiplicação de Porcentagem: os juros simples de 6 meses a 2% são um aumento único de 12%.
+Conta de cabeça
+Calcule primeiro os juros de um período e multiplique pelo número de períodos. 2% de 1.500 é 30; seis meses dão 180. É mais rápido e menos sujeito a erro de vírgula do que multiplicar três números de uma vez.
+04 Taxa e tempo na mesma unidade
+Esta é a regra que mais derruba candidatos. A fórmula J = C · i · t só funciona se i e t estiverem na mesma unidade de tempo. Taxa mensal com tempo em meses; taxa anual com tempo em anos.
+Taxas proporcionais (só em juros simples)
+Em juros simples, converter taxa é uma regra de três: a taxa é proporcional ao tempo.
+24% a.a. = (24%/12) a.m. = 2% a.m.
+2% a.m. = 6% a.t. = 12% a.s. = 24% a.a.
+Dividir por 12 só vale aqui
+Taxas proporcionais (dividir ou multiplicar pelo número de períodos) são exclusivas dos juros simples. Em juros compostos, 2% ao mês não é 24% ao ano: a conversão usa potência e é tema de Taxas equivalentes e inflação.
+Prazos em dias: o ano comercial
+Salvo aviso em contrário, o mercado e as questões usam o ano comercial: mês de 30 dias e ano de 360 dias. Se o enunciado disser “ano civil” ou “365 dias”, use 365.
+Exemplo — R$ 3.000,00 a 24% ao ano, durante 45 dias
+Tempo em anos: (45/360) → J = 3.000 · 0,24 · (45/360) = R$ 90,00
+Ou em meses: 24% a.a. = 2% a.m. e 45 dias = 1,5 mês → 3.000 · 0,02 · 1,5 = 90
+Os dois caminhos dão o mesmo resultado. Escolha o que deixar a conta mais limpa.
+Converta o que for mais fácil
+Você pode levar a taxa até a unidade do tempo ou o tempo até a unidade da taxa. Prefira o caminho que evita dízimas: 8 meses com taxa anual de 18% fica melhor como 1,5% a.m. · 8 do que como 18% · (8/12). Só não converta os dois ao mesmo tempo.
+05 O montante é uma reta
+Escreva o montante como função do tempo:
+Montante em função do tempo
+M(t) = C + (C · i) · t
+É exatamente a forma y = b + ax de uma função afim: o coeficiente linear é o capital C (onde a reta corta o eixo vertical) e o coeficiente angular é C · i, os juros de um período.
+R$ 1.000,00 a 5% ao mês, em juros simples. A reta parte do capital e sobe sempre R$ 50,00 por mês, a inclinação C · i. A distância vertical entre a reta e a linha tracejada do capital são os juros acumulados.
+Consequências práticas, todas cobradas:
+Juros iguais em tempos iguais. Em qualquer intervalo de 2 meses o montante sobe R$ 100,00, seja no começo, seja no fim da aplicação.
+Leitura do gráfico. Dois pontos da reta dão os juros por período (a inclinação) e o capital (o ponto em t = 0). A taxa é a inclinação dividida pelo capital, não pelo montante.
+Juros proporcionais ao tempo. O dobro do tempo dá o dobro dos juros. Por isso a regra de três funciona em juros simples, e só neles.
+06 Descobrindo capital, taxa ou tempo
+A fórmula tem quatro letras. Dadas três, a quarta sai isolando:
+ | Procura | Fórmula | Exemplo
+ | Capital | C = (J/i · t) | Juros de R$ 360,00 em 8 meses a 1,5% a.m.: C = (360/0,015 · 8) = 3.000
+ | Taxa | i = (J/C · t) | R$ 1.000,00 rendem R$ 240,00 em 6 meses: i = (240/6.000) = 0,04, ou 4% a.m.
+ | Tempo | t = (J/C · i) | R$ 2.000,00 a 2,5% a.m. para render R$ 400,00: t = (400/50) = 8 meses
+Na taxa, divida pelo capital
+Ao descobrir a taxa, o denominador é o capital, não o montante. Usar o montante dá uma taxa menor que a real, e essa alternativa costuma estar lá.
+Em quanto tempo o capital dobra ou triplica
+Dobrar significa M = 2C, ou seja, juros iguais ao capital: J = C. Triplicar significa J = 2C. O capital se cancela:
+Multiplicar o capital por k
+i · t = k − 1
+A 4% a.m., dobrar exige 0,04 · t = 1, ou seja, 25 meses. Triplicar exige 0,04 · t = 2: 50 meses.
+Triplicar o capital não é ter juros de 3C
+Se o montante triplica, os juros são 2C, porque o capital já está dentro do montante. Fazer J = 3C dá um tempo 50% maior que o correto.
+07 Juros simples como progressão aritmética
+Como o montante cresce o mesmo valor a cada período, os montantes ao fim de cada mês formam uma progressão aritmética de razão C · i.
+R$ 1.000,00 a 3% ao mês
+1.030 · 1.060 · 1.090 · 1.120 · … razão = 1.000 · 0,03 = 30
+Esse é o contraste central com o próximo assunto: em Juros compostos e montante, os montantes formam uma progressão geométrica, porque cada mês multiplica o saldo pelo mesmo fator. Reta e PA de um lado; curva exponencial e PG do outro.
+Onde o mercado usa juros simples
+Na vida real, bancos, financiamentos e cartões usam juros compostos. Os juros simples aparecem em situações de curto prazo e em cobranças proporcionais ao tempo: juros de mora de contas atrasadas, alguns empréstimos informais, aluguéis e taxas cobradas por dia. Na prova, o enunciado sempre diz qual regime usar; se disser “juros simples”, use a reta.
+08 Conta atrasada: multa e juros de mora
+É a aplicação de juros simples que mais aparece em questões contextualizadas. Um boleto pago depois do vencimento costuma ter duas cobranças diferentes, que se calculam separadamente e se somam:
+ | Cobrança | Como funciona | Depende do tempo?
+ | Multa | Porcentagem fixa sobre o valor da conta, cobrada uma única vez (é comum ser 2%) | Não: 1 dia ou 20 dias de atraso, a multa é a mesma
+ | Juros de mora | Taxa mensal cobrada proporcionalmente aos dias de atraso (“pro rata die”), em juros simples | Sim: cresce dia a dia
+Exemplo — conta de R$ 450,00, multa de 2% e juros de 1% a.m., paga com 10 dias de atraso
+Multa: 450 · 0,02 = 9,00
+Juros: 450 · 0,01 · (10/30) = 1,50
+Total: 450 + 9 + 1,50 = R$ 460,50
+Os três descuidos clássicos
+Esquecer uma das duas parcelas (só multa ou só juros). Cobrar o mês inteiro de juros por poucos dias de atraso. E tratar a taxa mensal como diária, o que multiplica os juros por 30.
+09 Estratégia de prova
+1 · Sublinhe as unidades antes de tudo
+Leia o enunciado procurando duas coisas: a unidade da taxa (a.m.? a.a.?) e a unidade do prazo (dias? meses? “1 ano e 3 meses”?). Iguale as duas antes de escrever a fórmula. “1 ano e 3 meses” são 15 meses, não 1,3 ano.
+2 · Pergunte: juros ou montante?
+Circule o que a questão pede. As alternativas quase sempre trazem os dois valores, e a conta certa com a resposta errada é o distrator mais eficiente da prova.
+3 · Use o valor de um período
+Calcule os juros de um único período (C · i) e multiplique pelo tempo. Em gráfico ou tabela, faça o caminho inverso: a variação do montante dividida pelo tempo dá C · i; dividida pelo capital, dá a taxa.
+4 · Confira a ordem de grandeza
+Juros de poucos meses a taxas de 1% ou 2% ficam em poucos por cento do capital. Se a sua resposta diz que R$ 5.000,00 renderam R$ 7.200,00 em 8 meses, alguma unidade ficou sem converter.
+10 Onde isso aparece nas outras áreas
+Função afim (Álgebra e Funções): o montante a juros simples é o exemplo financeiro clássico de função afim, com o capital como coeficiente linear e os juros por período como coeficiente angular.
+Progressão aritmética: os montantes período a período formam uma PA de razão C · i.
+Física: a estrutura é a mesma do movimento uniforme, s = s_0 + vt: posição inicial no papel do capital, velocidade no papel dos juros por período, e o gráfico é uma reta nos dois casos.
+Porcentagem e regra de três: juros simples são porcentagem sobre um valor fixo, e a proporcionalidade entre juros e tempo é o que permite usar regra de três (ver Razão, proporção e regra de três).
+Ciências Humanas: textos sobre endividamento das famílias, crédito e juros de mora aparecem em Sociologia e Geografia; saber o que é taxa ao mês ajuda a ler esses dados.
+11 Os erros que mais custam pontos
+Taxa anual com tempo em meses → iguale as unidades primeiro18% a.a. por 8 meses não é 0,18 · 8; é 0,015 · 8.
+Converter a taxa e também o tempo → converta só um dos doisTaxa mensal com tempo em anos, ou o contrário, dá um resultado 12 vezes menor.
+Responder o montante quando pedem os juros → J é o acréscimo, M é o totalAs duas respostas estão entre as alternativas.
+Usar 2 em vez de 0,02 na fórmula → taxa na forma decimalE cuidado com 1,5% (0,015) e 0,15% (0,0015): uma casa decimal muda tudo.
+Dividir pelo montante ao achar a taxa → juros ÷ (capital × tempo)A taxa incide sobre o capital.
+Triplicar o capital com J = 3C → J = 2CO montante já contém o capital: i · t = k − 1.
+“1 ano e 3 meses” = 1,3 ano → 15 meses, ou 1,25 anoMeses não são décimos de ano.
+Esquecer a multa ou os juros de mora → some as duas cobrançasA multa é fixa; os juros são proporcionais aos dias.
+Dividir 2% a.m. por 12 para ter a taxa anual → multiplique: 24% a.a.Período maior, taxa maior. Confira o sentido da conversão.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de cada conta, escreva ao lado a unidade da taxa e a do tempo.
+Questão 1 · Juros de uma aplicação
+Uma pessoa aplicou R$ 2.400,00 em um investimento que paga juros simples de 1,5% ao mês. Ao final de 8 meses, o valor dos juros recebidos será de
+R$ 28,80.
+R$ 36,00.
+R$ 288,00.
+R$ 2.688,00.
+R$ 2.880,00.
+Ver resolução
+Juros de um mês: 2.400 · 0,015 = 36. Em 8 meses:
+J = 36 · 8 = R$ 288,00
+A alternativa B é o juro de um único mês. A D é o montante (2.400 + 288), mas a pergunta é pelos juros. A E vem de usar 15% (0,15) no lugar de 1,5%, e a A, de usar 0,15% (0,0015): os dois erros de vírgula possíveis na mesma taxa.
+Alternativa C
+Questão 2 · Taxa anual, prazo em meses
+Um capital de R$ 5.000,00 foi emprestado a juros simples, à taxa de 18% ao ano. Os juros devidos após 8 meses são de
+R$ 600,00.
+R$ 900,00.
+R$ 5.600,00.
+R$ 7.200,00.
+R$ 12.200,00.
+Ver resolução
+A taxa é anual e o prazo, mensal. Em juros simples, a taxa é proporcional: 18% ÷ 12 = 1,5% ao mês.
+J = 5.000 · 0,015 · 8 = R$ 600,00
+A D é o erro mais caro: usar 18% com 8, como se fossem 8 anos (5.000 · 0,18 · 8 = 7.200), e a E é o montante dessa conta errada. A B corresponde a um ano inteiro de juros, e a C é o montante correto, quando a pergunta é pelos juros. A ordem de grandeza denuncia D e E: R$ 5.000,00 não rendem mais que o próprio capital em 8 meses a 18% ao ano.
+Alternativa A
+Questão 3 · Descobrir a taxa
+Um capital de R$ 1.200,00, aplicado a juros simples, gerou um montante de R$ 1.500,00 após 10 meses. A taxa anual de juros dessa aplicação foi de
+2%.
+2,5%.
+24%.
+25%.
+30%.
+Ver resolução
+Juros: 1.500 − 1.200 = 300. Taxa mensal, dividindo pelo capital e pelo tempo:
+i = (300/1.200 · 10) = 0,025 = 2,5% a.m.
+A pergunta é a taxa anual: 2,5% · 12 = 30% ao ano.
+A B é a taxa mensal correta, mas a questão pede a anual. A D vem de não dividir pelo tempo (300 ÷ 1.200). A A e a C vêm de dividir os juros pelo montante (300 ÷ 15.000 = 2% ao mês, 24% ao ano), erro que sempre produz uma taxa menor que a real.
+Alternativa E
+Questão 4 · Em quanto tempo triplica
+Um investidor deseja triplicar seu capital em uma aplicação que paga juros simples de 2% ao mês. O tempo mínimo necessário é de
+4 anos e 2 meses.
+8 anos e 3 meses.
+8 anos e 4 meses.
+12 anos e 6 meses.
+100 anos.
+Ver resolução
+Triplicar: M = 3C, logo os juros são J = 2C.
+C · 0,02 · t = 2C → t = 100 meses
+Como 100 = 8 · 12 + 4, são 8 anos e 4 meses.
+A A (50 meses) é o tempo para dobrar. A D (150 meses) vem de fazer J = 3C, esquecendo que o capital já está no montante. A B lê 100 ÷ 12 ≈ 8,33 como “8 anos e 3 meses”, mas 0,33 ano são 4 meses, não 3. A E trata a taxa mensal como anual.
+Alternativa C
+Questão 5 · Boleto pago com atraso
+Uma conta de R$ 300,00 foi paga com 15 dias de atraso. Conforme as regras impressas no boleto, há multa de 2% sobre o valor da conta e juros de mora de 1% ao mês, calculados de forma simples e proporcional aos dias de atraso (mês de 30 dias). O valor pago foi de
+R$ 301,50.
+R$ 303,00.
+R$ 306,00.
+R$ 307,50.
+R$ 351,00.
+Ver resolução
+As duas cobranças, separadas:
+Multa: 300 · 0,02 = 6,00 Juros: 300 · 0,01 · (15/30) = 1,50
+Total: 300 + 6 + 1,50 = R$ 307,50
+A A cobra só os juros e a C só a multa. A B cobra o mês inteiro de juros e esquece a multa. A E trata 1% como taxa diária (300 · 0,01 · 15 = 45), o que multiplica os juros por 30.
+Alternativa D
+Questão 6 · Taxa a partir do gráfico
+O gráfico mostra a evolução do montante de uma aplicação a juros simples, desde o dia em que o capital foi depositado.
+A taxa mensal de juros dessa aplicação é de
+2%.
+2,5%.
+20%.
+25%.
+40%.
+Ver resolução
+No tempo zero o montante é o capital: C = 1.600. Em 10 meses, os juros foram 2.000 − 1.600 = 400, ou seja, R$ 40,00 por mês (a inclinação da reta).
+i = (40/1.600) = 0,025 = 2,5% a.m.
+A D (400 ÷ 1.600) é a variação total, sem dividir pelos 10 meses. A A e a C repetem as duas contas usando o montante final de 2.000 como base. A E confunde os R$ 40,00 por mês com 40%.
+Alternativa B
+Questão 7 · A sequência dos montantes
+Um capital de R$ 5.000,00 é aplicado a juros simples de 2% ao mês. Os montantes ao final de cada mês, a partir do primeiro, formam uma
+progressão geométrica de razão 1,02.
+progressão aritmética de razão 2.
+progressão geométrica de razão 100.
+progressão aritmética de razão 1,02.
+progressão aritmética de razão 100.
+Ver resolução
+Os montantes são 5.100, 5.200, 5.300, …: a cada mês somam-se os mesmos 5.000 · 0,02 = 100 reais. Soma constante é PA, e a razão é C · i = 100.
+A A descreve juros compostos, em que o saldo é multiplicado por 1,02 a cada mês. A B confunde a razão com a taxa (2%). A C e a D misturam os dois tipos de progressão com a razão do outro.
+Alternativa E
+Questão 8 · A taxa embutida na compra a prazo
+Uma loja vende uma geladeira por R$ 1.000,00 à vista ou, a prazo, com entrada de R$ 400,00 e um pagamento de R$ 660,00 dois meses após a compra. Considerando juros simples, a taxa mensal cobrada na compra a prazo é de
+5%.
+6%.
+7,5%.
+10%.
+15%.
+Ver resolução
+A entrada é paga no ato, então não é financiada. O valor realmente emprestado pela loja é o que falta pagar à vista:
+C = 1.000 − 400 = 600 J = 660 − 600 = 60
+i = (60/600 · 2) = 0,05 = 5% a.m.
+A D esquece de dividir pelos 2 meses. A B calcula os juros sobre o preço total de R$ 1.000,00, como se tudo fosse financiado. A C e a E calculam sobre a entrada, que não é dinheiro emprestado (com e sem a divisão pelo tempo).
+Alternativa A
+Questão 9 · Prazo misto
+Um empréstimo de R$ 10.000,00 foi feito a juros simples de 2% ao mês e será quitado em um único pagamento após 1 ano e 3 meses. O valor desse pagamento é
+R$ 3.000,00.
+R$ 10.250,00.
+R$ 12.400,00.
+R$ 13.000,00.
+R$ 13.120,00.
+Ver resolução
+1 ano e 3 meses são 12 + 3 = 15 meses.
+M = 10.000 · (1 + 0,02 · 15) = 10.000 · 1,30 = R$ 13.000,00
+A E lê o prazo como “1,3 ano” (15,6 meses). A C considera só o ano completo. A B trata 2% como taxa anual aplicada a 1,25 ano. A A são só os juros, mas a questão pede o pagamento total.
+Alternativa D
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Distingo capital, taxa, tempo, juros e montante no enunciado
+Aplico J = C · i · t e M = C(1 + it) com a taxa na forma decimal
+Coloco taxa e tempo na mesma unidade antes de calcular
+Converto taxas proporcionais (a.m., a.a., a.d.) e sei que isso só vale em juros simples
+Uso o ano comercial de 360 dias e o mês de 30 dias quando o prazo vem em dias
+Transformo prazos como “1 ano e 3 meses” na unidade certa, sem tratá-los como decimal
+Isolo capital, taxa ou tempo, dividindo a taxa sempre pelo capital
+Calculo o tempo para dobrar ou triplicar com i · t = k − 1
+Reconheço o montante como função afim e leio capital e taxa num gráfico
+Sei que os montantes formam uma PA de razão C · i
+Calculo multa e juros de mora de uma conta atrasada, separadamente
+Encontro a taxa embutida numa compra com entrada, descontando a entrada do capital
+Sigo para Juros compostos e montante sabendo o que muda: juros sobre juros, PG e curva exponencial
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões de juros simples e acerte pelo menos 14 (70%). Dê preferência às que trazem conversão de unidade, boleto atrasado ou gráfico, que são as formas como o ENEM apresenta o assunto. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 44 cartões deste assunto no arquivo ENEM-Matematica-13-juros-simples.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. Este é o primeiro assunto do bloco, então a importação cria o deck ENEM::Matemática::Matemática Financeira; os próximos assuntos do bloco se somam a ele.

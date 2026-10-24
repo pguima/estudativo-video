@@ -1,0 +1,255 @@
+Comparação de Propostas
+Matemática › Matemática Financeira › Assunto 6 de 6
+Comparação de propostas e tomada de decisão
+À vista ou parcelado, plano A ou plano B, aplicação isenta ou tributada, alugar o carro por diária ou por quilômetro. O ENEM adora pôr o candidato no lugar de quem escolhe. A resposta quase nunca é “o mais barato” em absoluto: é o mais barato para aquele uso, comparado na mesma data.
+Semana
+26 · Fase Ampliação
+Incidência
+Média
+Tempo previsto
+36 min de teoria
+Pré-requisito
+Empréstimos, financiamentos e parcelamentos · Taxas equivalentes e inflação
+Destrava
+Revisão e simulado do bloco · Função afim (Álgebra e Funções)
+Neste assunto
+01 O que o ENEM cobra aqui
+Este assunto junta tudo o que o bloco construiu e acrescenta uma camada: a escolha. As situações típicas da prova são:
+Pagar à vista ou parcelar, sabendo quanto o dinheiro renderia aplicado.
+Planos com parte fixa e parte variável (telefonia, locadora, academia, estacionamento): a partir de que consumo um plano passa a valer mais que o outro.
+Aplicações com taxas de períodos diferentes, com imposto, com taxa de administração.
+Custos escondidos: tarifas que tornam um empréstimo mais caro do que a taxa anunciada.
+Ponto de equilíbrio de um negócio: quantas unidades vender para cobrir os custos ou atingir um lucro.
+O que rende mais aqui
+Duas perguntas antes de qualquer conta. Estou comparando valores na mesma data? Se não, leve-os a uma data comum. A melhor opção depende do uso? Se depende, encontre o ponto em que as opções se igualam: de um lado dele vale uma, do outro, a outra.
+02 A regra de ouro: comparar na mesma data
+O assunto Empréstimos, financiamentos e parcelamentos mostrou que dinheiro em datas diferentes não se soma. Também não se compara. Para decidir entre propostas, escolha uma data focal — qualquer uma — e leve todos os valores até ela.
+Mover valores no tempo, à taxa i por período
+para a frente n períodos: × (1 + i)^n para trás n períodos: ÷ (1 + i)^n
+Qual taxa usar
+A taxa que mede quanto o seu dinheiro valeria em outra data para você: o rendimento da aplicação que você faria (se tem o dinheiro), ou o juro do empréstimo que você tomaria (se não tem). É a taxa de oportunidade. O enunciado sempre a informa; sem ela, a comparação não está definida.
+A conclusão não depende da data focal escolhida: se uma proposta vale mais hoje, vale mais em qualquer outra data, porque todos os valores são multiplicados pelo mesmo fator. Escolha a data que deixa as contas mais simples.
+03 À vista ou a prazo?
+Exemplo — televisor: R$ 2.900,00 à vista ou 3 × R$ 1.000,00 (ato, 30 e 60 dias). O dinheiro rende 2% ao mês. Use 1/1,02 ≈ 0,980 e 1/1,02² ≈ 0,961.
+valor hoje do parcelado ≈ 1.000 + 1.000 · 0,980 + 1.000 · 0,961 = 1.000 + 980 + 961 = 2.941
+O parcelado equivale a cerca de R$ 2.941,00 hoje, mais que os R$ 2.900,00 à vista. Compensa pagar à vista.
+Trazer as parcelas para a data da compra. Cada parcela é multiplicada pelo fator de desconto do seu prazo. A soma, cerca de R$ 2.941,00, é o que o parcelado “custa hoje” para quem tem o dinheiro aplicado a 2% ao mês.
+O mesmo resultado pelo caminho da taxa embutida
+Outro jeito de decidir: calcule a taxa de juros embutida no parcelado (seção 04 do assunto anterior) e compare com o rendimento da sua aplicação. Se a loja cobra mais do que a aplicação rende, pague à vista; se cobra menos, parcele e deixe o dinheiro rendendo. No exemplo, se a taxa da aplicação fosse bem maior, o valor hoje do parcelado cairia abaixo de R$ 2.900,00 e a decisão se inverteria.
+“Sem juros” não quer dizer “tanto faz”
+Se o preço à vista e o total parcelado são iguais e o dinheiro rende alguma coisa aplicado, parcelar é melhor: você paga o mesmo valor nominal, mas mais tarde, e o dinheiro rende enquanto isso. Se há desconto à vista, a resposta depende da comparação acima.
+04 Planos com parte fixa e parte variável
+Muitos serviços cobram uma parte fixa mais uma parte proporcional ao uso. O custo é uma função afim do consumo:
+Custo de um plano
+custo = parte fixa + preço por unidade · x
+Exemplo — telefonia: plano A, R$ 50,00 + R$ 0,50 por minuto; plano B, R$ 80,00 + R$ 0,20 por minuto
+empate: 50 + 0,5x = 80 + 0,2x → 0,3x = 30 → x = 100 minutos
+Com 60 minutos: A custa 80 e B custa 92 → A é melhor. Com 150 minutos: A custa 125 e B custa 110 → B é melhor.
+O cruzamento das retas separa as decisões. O plano de fixo menor ganha no consumo baixo; o de preço por minuto menor ganha no consumo alto. No ponto de equilíbrio, 100 minutos, os dois custam R$ 100,00.
+O atalho do ponto de equilíbrio
+ponto de equilíbrio = (diferença das partes fixas/diferença dos preços por unidade) = (80 − 50/0,50 − 0,20) = 100
+Os R$ 30,00 a mais de fixo do plano B são “recuperados” à razão de R$ 0,30 por minuto. A forma da reta e a leitura de seus coeficientes ficam para o assunto Função afim, no bloco de Álgebra e Funções.
+Atenção ao “a partir de”
+No ponto de equilíbrio os planos empatam. “A partir de quantos minutos B é mais barato?” pede valores acima de 100. Quando a variável é inteira (dias, unidades), a resposta é o primeiro inteiro depois do empate; se o empate não é inteiro, arredonde para cima.
+05 Comparando investimentos
+Três ajustes antes de comparar aplicações:
+ | Situação | O que fazer | Exemplo
+ | Taxas de períodos diferentes | Converter todas para o mesmo período, por taxa equivalente | 1% ao mês ≈ 12,68% ao ano, mais que 12,5% ao ano
+ | Imposto sobre o rendimento | Aplicar a alíquota sobre o rendimento, não sobre o total | 12% com 20% de imposto → 12% · 0,8 = 9,6% líquidos
+ | Rendimento nominal × real | Descontar a inflação dividindo fatores | Ver Taxas equivalentes e inflação, seção 08
+Exemplo — aplicação X rende 12% ao ano com 20% de imposto sobre o rendimento; aplicação Y rende 10% ao ano, isenta
+X líquida: 12% · (1 − 0,20) = 9,6% Y líquida: 10% → Y rende mais
+A taxa bruta mais alta perdeu depois do imposto. Compare sempre o que efetivamente entra no bolso.
+Imposto sobre o rendimento, não sobre o saldo
+Com R$ 10.000,00 a 12%, o rendimento é R$ 1.200,00 e o imposto de 20% é R$ 240,00 — não R$ 2.240,00 (20% de tudo). O resgate líquido é R$ 10.960,00.
+06 Custos escondidos e custo efetivo
+A taxa de juros anunciada nem sempre é o custo do empréstimo. Tarifas, seguros e taxas de abertura cobradas no ato reduzem o dinheiro que você recebe sem reduzir o que você paga. O custo efetivo total (CET) incorpora tudo isso; por lei, as instituições financeiras precisam informá-lo.
+Exemplo — empréstimo de R$ 5.000,00 por um mês, a 4%, com tarifa de R$ 100,00 descontada no ato
+recebe: 5.000 − 100 = 4.900 paga: 5.000 · 1,04 = 5.200
+custo efetivo = (5.200 − 4.900/4.900) = (300/4.900) ≈ 6,1% no mês
+A conta do custo efetivo
+Compare o que você efetivamente recebe com o que você efetivamente paga, na mesma lógica da taxa embutida: (pago − recebido) ÷ recebido. A taxa anunciada, sozinha, subestima o custo sempre que existe cobrança no ato.
+07 Ponto de equilíbrio de um negócio
+Um negócio tem custo fixo (aluguel, salários, que não dependem da produção) e custo variável por unidade (matéria-prima). Cada unidade vendida deixa a margem de contribuição: preço − custo variável. Essa margem paga, aos poucos, o custo fixo.
+Ponto de equilíbrio e meta de lucro
+lucro = (preço − custo variável) · q − custo fixo
+equilíbrio (lucro zero): q = (custo fixo/preço − custo variável)
+lucro desejado L: q = (custo fixo + L/preço − custo variável)
+Exemplo — custo fixo R$ 6.000,00 por mês, custo variável R$ 15,00 por unidade, preço de venda R$ 35,00
+margem = 35 − 15 = 20 → equilíbrio = 6.000 ÷ 20 = 300 unidades por mês
+Divida pela margem, não pelo preço
+Dividir o custo fixo pelo preço (6.000 ÷ 35 ≈ 172) esquece que cada unidade também custa R$ 15,00 para ser feita. Só os R$ 20,00 de margem ficam para pagar o fixo.
+08 Decisões que dependem do uso
+Quando a pergunta é “qual opção é melhor?” sem dizer o consumo, a resposta correta costuma ser condicional: “A, até tal ponto; B, a partir dele”. Desconfie de alternativas que dão uma resposta única sem considerar o uso.
+ | Situação | Opção de fixo alto | Opção de fixo baixo | O que decide
+ | Estacionamento | Mensalidade | Diária | Dias de uso no mês
+ | Locadora | Diária com km livre | Diária menor + preço por km | Quilômetros rodados
+ | Transporte | Passe mensal | Tarifa por viagem | Viagens no mês
+ | Energia em casa | Equipamento mais eficiente e mais caro | Equipamento barato que gasta mais | Horas de uso até a economia pagar a diferença
+Em todas, a pergunta-chave é a mesma da seção 04: em que consumo as opções se igualam? Abaixo dele vence a de fixo baixo; acima, a de fixo alto.
+Nem tudo é dinheiro
+Na vida real pesam também risco, prazo de resgate e conveniência. No ENEM, porém, a questão define o critério (“menor custo”, “maior rendimento líquido”). Responda pelo critério do enunciado, não pelo que você preferiria.
+09 Estratégia de prova
+1 · Organize as propostas numa tabela
+Uma linha por proposta, colunas para parte fixa, parte variável, datas e taxas. Enunciados de comparação são longos; a tabela impede de misturar o número de uma proposta com o de outra.
+2 · Iguale antes de comparar
+Para planos, iguale os custos e ache o ponto de equilíbrio. Para fluxos no tempo, leve tudo à mesma data. Para taxas, converta para o mesmo período e para valores líquidos. Só então compare.
+3 · Teste um valor concreto
+Depois de achar o ponto de equilíbrio, calcule o custo de cada opção num valor acima dele. Se a opção que deveria ganhar não ganha, você inverteu algo. A conferência leva vinte segundos e elimina o erro de sentido.
+10 Fechando o bloco de Matemática Financeira
+Este é o último assunto de Matemática Financeira. O bloco seguiu uma linha: primeiro como o dinheiro cresce, depois como se compara dinheiro de datas e condições diferentes.
+ | Etapa | Assuntos | O que se construiu
+ | Crescimento | 13 e 14 | Juros simples (crescimento linear) e juros compostos (crescimento por fator)
+ | Variações | 15 | Descontos, acréscimos, lucro e prejuízo como fatores de multiplicação
+ | Taxas | 16 | Trocar o período de uma taxa, nominal e efetiva, inflação e taxa real
+ | Dívidas | 17 | Valor no tempo, taxa embutida, SAC, Price e cartão de crédito
+ | Decisões | 18 | Comparar propostas na mesma data, pontos de equilíbrio e custos efetivos
+A ideia que atravessa o bloco
+Trabalhe com fatores e respeite as datas. Acréscimo de 20% é × 1,2; desconto de 20% é × 0,8; dois períodos a 10% são × 1,21; tirar a inflação é dividir pelo seu fator; trazer uma parcela ao presente é dividir pelo fator do prazo. Quase todos os distratores do bloco nascem de somar o que deveria ser multiplicado ou de comparar valores de datas diferentes.
+11 Os erros que mais custam pontos
+Comparar valores de datas diferentes → leve tudo à mesma dataCom taxa de 10% ao ano, R$ 10.000 hoje e R$ 12.100 em dois anos se equivalem.
+Escolher pelo maior valor nominal → compare valores equivalentesO maior número pode estar na data mais distante.
+Escolher um plano sem olhar o consumo → ache o ponto de equilíbrioA resposta costuma ser “depende do uso”, com um limite claro.
+Dividir só a diferença dos fixos por um dos preços → pela diferença dos preços(80 − 50) ÷ (0,50 − 0,20) = 100, não 30 ÷ 0,5.
+Arredondar o equilíbrio para baixo → “a partir de” é o inteiro seguinteNo empate os planos custam o mesmo.
+Imposto sobre o valor total → sobre o rendimento12% com 20% de imposto rende 9,6% líquidos.
+Comparar taxas de períodos diferentes direto → converta por equivalência1% ao mês supera 12,5% ao ano.
+Ignorar tarifas cobradas no ato → custo efetivo sobre o valor recebidoA taxa anunciada subestima o custo.
+Equilíbrio de negócio dividindo pelo preço → divida pela margemPreço menos custo variável é o que paga o custo fixo.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, pergunte primeiro: as propostas estão na mesma data e no mesmo uso?
+Questão 1 · Planos de telefonia
+Uma operadora oferece dois planos mensais. No plano A, o cliente paga R$ 50,00 fixos mais R$ 0,50 por minuto de ligação. No plano B, paga R$ 80,00 fixos mais R$ 0,20 por minuto. O plano B passa a ser mais vantajoso que o plano A quando o consumo mensal, em minutos, for superior a
+60
+100
+150
+260
+400
+Ver resolução
+Iguale os custos:
+50 + 0,5x = 80 + 0,2x → 0,3x = 30 → x = 100
+Teste: com 150 minutos, A custa 125 e B custa 110. Acima de 100 minutos, B é mais barato.
+Os distratores: A divide a diferença dos fixos (30) só pelo preço do plano A, 0,50; C, só pelo do plano B, 0,20. D divide a soma dos fixos (130) por 0,50. E divide o fixo de B por seu preço por minuto, sem comparar com A.
+Alternativa B
+Questão 2 · Desconto à vista e aplicação
+Uma loja vende um produto por R$ 1.000,00 em 2 parcelas de R$ 500,00 (uma no ato e outra em 30 dias) ou com 5% de desconto à vista. Um cliente tem o dinheiro aplicado em um investimento que rende 1% ao mês. A decisão mais vantajosa para ele é
+pagar à vista, pois o parcelamento embute juros de cerca de 11,1% ao mês, bem acima do 1% ao mês da aplicação.
+parcelar, pois o anúncio não menciona juros e o dinheiro continua rendendo 1% ao mês.
+parcelar, pois R$ 500,00 aplicados por um mês rendem R$ 5,00, o que compensa o desconto.
+pagar à vista, pois o parcelamento embute juros de 5% ao mês, acima do 1% da aplicação.
+escolher qualquer opção, pois o total pago é de R$ 1.000,00 nos dois casos.
+Ver resolução
+À vista: 1.000 · 0,95 = 950. No parcelado, a primeira parcela é entrada:
+financiado = 950 − 500 = 450 → paga 500 em 30 dias → taxa = (50/450) ≈ 11,1% ao mês
+A loja cobra 11,1% ao mês e a aplicação rende 1%: deixar R$ 450,00 aplicados renderia só R$ 4,50, contra R$ 50,00 de juros pagos. Pagar à vista.
+Os distratores: D chega à decisão certa com a taxa errada — 5% é o desconto sobre o preço cheio, não a taxa sobre o valor financiado. B acredita no “sem juros” anunciado. C compara o rendimento de um mês com o desconto, mas o desconto é de R$ 50,00, bem mais que R$ 5,00. E ignora que o preço à vista é R$ 950,00.
+Alternativa A
+Questão 3 · Rendimento líquido
+Uma pessoa vai aplicar R$ 10.000,00 por um ano e compara três opções: I) rende 12% ao ano, com imposto de 20% sobre o rendimento; II) rende 10% ao ano, isenta de imposto; III) rende 11% ao ano, com imposto de 15% sobre o rendimento. A opção de maior rendimento líquido e o valor desse rendimento são
+I, com R$ 960,00.
+II, com R$ 1.000,00.
+I, com R$ 1.200,00.
+III, com R$ 935,00.
+III, com R$ 1.100,00.
+Ver resolução
+Imposto incide sobre o rendimento:
+I: 1.200 · 0,80 = 960 II: 1.000 III: 1.100 · 0,85 = 935
+A opção II, com a menor taxa bruta, tem o maior rendimento líquido: R$ 1.000,00.
+Os distratores: C e E usam o rendimento bruto, ignorando o imposto. A e D calculam certo o líquido de I e de III, mas são menores que o de II.
+Alternativa B
+Questão 4 · Taxas de períodos diferentes
+Três bancos oferecem aplicações no regime de juros compostos: o banco P paga 1% ao mês; o banco Q, 12,5% ao ano; o banco R, 6% ao semestre. Considere 1,01^(12) ≈ 1,127. Para quem vai aplicar por um ano, a melhor opção é
+o banco Q, pois 12,5% ao ano é maior que os 12% ao ano dos outros dois.
+o banco R, pois seus juros são capitalizados duas vezes no ano.
+qualquer um, pois as três taxas são equivalentes a cerca de 12% ao ano.
+o banco P, pois 1% ao mês equivale a cerca de 12,7% ao ano.
+o banco Q, pois uma taxa anual sempre supera uma taxa mensal no prazo de um ano.
+Ver resolução
+Converta todas para taxas anuais equivalentes:
+P: 1,01^(12) ≈ 1,127 → ≈ 12,7% Q: 12,5% R: 1,06^2 = 1,1236 → 12,36%
+A maior é a do banco P.
+Os distratores: A e C usam taxas proporcionais (12 · 1% e 2 · 6%), válidas só em juros simples. B usa um argumento verdadeiro em parte (R capitaliza no semestre), mas 12,36% ainda fica abaixo dos outros. E faz uma generalização falsa: quem decide é a taxa equivalente, não o período em que ela é anunciada.
+Alternativa D
+Questão 5 · Meta de lucro
+Uma pequena fábrica tem custo fixo mensal de R$ 6.000,00. Cada peça custa R$ 15,00 para ser produzida e é vendida por R$ 35,00. Para obter lucro de R$ 2.000,00 em um mês, a fábrica precisa produzir e vender, no mínimo,
+100 peças.
+229 peças.
+300 peças.
+400 peças.
+534 peças.
+Ver resolução
+Cada peça deixa margem de 35 − 15 = 20 reais, que precisam cobrir o custo fixo e o lucro desejado:
+20q = 6.000 + 2.000 → q = (8.000/20) = 400 peças
+Os distratores: C é o ponto de equilíbrio (lucro zero), que esquece a meta de lucro. A divide só o lucro pela margem, esquecendo o custo fixo. B divide 8.000 pelo preço de venda (ignora o custo da peça); E divide pelo custo de produção. Os dois arredondam para cima.
+Alternativa D
+Questão 6 · Locadora de veículos
+Para uma viagem de 3 dias, uma família compara duas locadoras. A locadora A cobra R$ 120,00 por dia, com quilometragem livre. A locadora B cobra R$ 60,00 por dia mais R$ 0,75 por quilômetro rodado. A locadora A será mais vantajosa se a família rodar mais de
+80 km.
+160 km.
+240 km.
+480 km.
+720 km.
+Ver resolução
+Custos para os 3 dias: A = 3 · 120 = 360; B = 3 · 60 + 0,75x = 180 + 0,75x.
+180 + 0,75x = 360 → 0,75x = 180 → x = 240 km
+Teste: com 300 km, B custa 405 e A custa 360.
+Os distratores: A considera um único dia (60 ÷ 0,75). B divide a diária de A pelo preço por km, ignorando a diária de B. D divide o custo total de A pelo preço por km, também esquecendo a diária de B. E soma as diárias das duas locadoras.
+Alternativa C
+Questão 7 · Custo efetivo de um empréstimo
+Uma pessoa tomou R$ 5.000,00 emprestados por um mês, a juros de 4% ao mês. O banco cobrou uma tarifa de R$ 100,00, descontada no momento da liberação do dinheiro. Ao final do mês, ela pagou o valor emprestado mais os juros. O custo efetivo desse empréstimo no mês foi de, aproximadamente,
+2,0%
+4,0%
+4,1%
+6,0%
+6,1%
+Ver resolução
+Recebeu 5.000 − 100 = 4.900 e pagou 5.000 · 1,04 = 5.200.
+custo efetivo = (5.200 − 4.900/4.900) = (300/4.900) ≈ 6,1%
+Os distratores: B é a taxa anunciada, que ignora a tarifa. A é só a tarifa em relação aos 5.000. D soma juros e tarifa, mas divide pelos 5.000 contratados, e não pelos 4.900 recebidos. C divide pelos 4.900, mas esquece a tarifa no numerador.
+Alternativa E
+Questão 8 · Prêmios em datas diferentes
+O ganhador de um sorteio pode escolher entre três formas de receber o prêmio: R$ 10.000,00 hoje; R$ 11.000,00 daqui a um ano; ou R$ 12.100,00 daqui a dois anos. Ele aplicaria o dinheiro a 10% ao ano, no regime de juros compostos. Do ponto de vista financeiro,
+receber hoje é melhor, pois dinheiro disponível hoje sempre vale mais.
+receber em um ano é melhor, pois evita esperar dois anos e paga R$ 1.000,00 a mais.
+receber em dois anos é melhor, pois é o maior valor.
+receber hoje e receber em dois anos são equivalentes, mas receber em um ano é pior.
+as três opções são equivalentes.
+Ver resolução
+Leve tudo para a data de dois anos, à taxa de 10% ao ano:
+hoje: 10.000 · 1,1^2 = 12.100 em um ano: 11.000 · 1,1 = 12.100 em dois anos: 12.100
+As três valem o mesmo na mesma data: são equivalentes.
+Os distratores: C compara valores nominais de datas diferentes. A usa uma regra geral que só vale quando os valores futuros não compensam o tempo — aqui compensam exatamente. B decide sem fazer conta. D aparece para quem erra a conta de uma das opções (por exemplo, compara R$ 11.000,00 com R$ 12.100,00 sem levar o primeiro à data de dois anos); feitas as três contas na mesma data, todas coincidem.
+Alternativa E
+Questão 9 · Mensalista ou diarista
+Um estacionamento cobra R$ 25,00 por dia de uso ou R$ 300,00 pela mensalidade, que permite usar todos os dias do mês. O número mínimo de dias de uso no mês para que a mensalidade seja mais barata que o pagamento por diárias é
+10
+12
+13
+20
+25
+Ver resolução
+Empate: 25d = 300 → d = 12. Com 12 dias, as duas opções custam R$ 300,00: a mensalidade ainda não é mais barata. Com 13 dias, as diárias custam R$ 325,00.
+A resposta é 13 dias.
+Os distratores: B é o ponto de empate, a armadilha principal — a pergunta pede “mais barata”. A divide a mensalidade por 30 dias, achando o custo diário da mensalidade, e não o empate. D supõe uso em todos os dias úteis, uma informação que o enunciado não dá. E confunde o valor da diária com o número de dias.
+Alternativa C
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Levo valores de datas diferentes a uma data focal antes de compará-los
+Identifico a taxa de oportunidade e explico por que ela define a comparação
+Decido entre à vista e a prazo pelo valor presente das parcelas
+Decido entre à vista e a prazo comparando a taxa embutida com o rendimento da aplicação
+Escrevo o custo de um plano como parte fixa mais parte variável
+Encontro o ponto de equilíbrio entre dois planos e digo qual vale em cada faixa
+Interpreto corretamente “a partir de” e arredondo o equilíbrio na direção certa
+Comparo aplicações convertendo taxas para o mesmo período
+Calculo o rendimento líquido aplicando o imposto sobre o rendimento
+Calculo o custo efetivo de um empréstimo com tarifa cobrada no ato
+Calculo o ponto de equilíbrio de um negócio e a quantidade para uma meta de lucro
+Explico a ideia que atravessa o bloco: fatores multiplicam, datas se respeitam
+Fecho o bloco de Matemática Financeira: revisei os 6 assuntos e fiz o simulado do bloco
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de planos com ponto de equilíbrio e as de à vista ou a prazo, as mais frequentes. Depois atualize a linha na aba Cronograma.
+Com este assunto, o bloco Matemática Financeira está completo: 6 assuntos, duas semanas. Antes de abrir o próximo bloco, faça um simulado de 20 questões misturando todos eles — juros simples e compostos, descontos e acréscimos, taxas equivalentes e inflação, financiamentos e comparação de propostas. É a única forma de descobrir o que ficou apenas reconhecido, e não aprendido.
+Flashcards para o Anki
+Foram gerados 35 cartões deste assunto no arquivo ENEM-Matematica-18-comparacao-propostas-tomada-decisao.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Financeira é o mesmo dos assuntos anteriores: com estes cartões, o baralho de Matemática Financeira fica completo.

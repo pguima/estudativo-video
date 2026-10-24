@@ -1,0 +1,1038 @@
+<title>Comparação de Propostas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Financeira › Assunto 6 de 6</p>
+    <h1>Comparação de propostas e tomada de decisão</h1>
+    <p class="deck">À vista ou parcelado, plano A ou plano B, aplicação isenta ou tributada, alugar o carro por diária ou por quilômetro. O ENEM adora pôr o candidato no lugar de quem escolhe. A resposta quase nunca é “o mais barato” em absoluto: é o mais barato <em>para aquele uso</em>, comparado <em>na mesma data</em>.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 214" role="img" aria-label="Duas retas de custo que se cruzam: a proposta A começa mais barata e cresce mais depressa, a proposta B começa mais cara e cresce devagar; o cruzamento é o ponto de equilíbrio">
+  <defs>
+    <marker id="h18" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="40" y1="170" x2="284" y2="170" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#h18)"/>
+  <line x1="40" y1="170" x2="40" y2="20" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#h18)"/>
+  <line x1="40" y1="131.1" x2="270" y2="53.3" style="stroke:var(--c2);stroke-width:2.5"/>
+  <line x1="40" y1="107.8" x2="270" y2="76.7" style="stroke:var(--c1);stroke-width:2.5"/>
+  <circle cx="155" cy="92.2" r="4.5" style="fill:var(--surface);stroke:var(--ink);stroke-width:2"/>
+  <line x1="155" y1="98.2" x2="155" y2="170" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="268" y="43.3" text-anchor="end" class="svg-ttl" style="fill:var(--c2)">A</text>
+  <text x="268" y="96.7" text-anchor="end" class="svg-ttl" style="fill:var(--c1)">B</text>
+  <text x="155" y="188" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">ponto de equilíbrio</text>
+  <text x="150" y="22" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">qual proposta é melhor?</text>
+  <text x="150" y="206" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">depende de quanto você usa</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>26 · Fase Ampliação</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>36 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Empréstimos, financiamentos e parcelamentos · Taxas equivalentes e inflação</dd></div>
+      <div><dt>Destrava</dt><dd>Revisão e simulado do bloco · Função afim (Álgebra e Funções)</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este assunto junta tudo o que o bloco construiu e acrescenta uma camada: a <strong>escolha</strong>. As situações típicas da prova são:</p>
+<ul>
+  <li><strong>Pagar à vista ou parcelar</strong>, sabendo quanto o dinheiro renderia aplicado.</li>
+  <li><strong>Planos com parte fixa e parte variável</strong> (telefonia, locadora, academia, estacionamento): a partir de que consumo um plano passa a valer mais que o outro.</li>
+  <li><strong>Aplicações com taxas de períodos diferentes</strong>, com imposto, com taxa de administração.</li>
+  <li><strong>Custos escondidos</strong>: tarifas que tornam um empréstimo mais caro do que a taxa anunciada.</li>
+  <li><strong>Ponto de equilíbrio de um negócio</strong>: quantas unidades vender para cobrir os custos ou atingir um lucro.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas perguntas antes de qualquer conta. <strong>Estou comparando valores na mesma data?</strong> Se não, leve-os a uma data comum. <strong>A melhor opção depende do uso?</strong> Se depende, encontre o ponto em que as opções se igualam: de um lado dele vale uma, do outro, a outra.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A regra de ouro: comparar na mesma data</h2>
+<p>O assunto <em>Empréstimos, financiamentos e parcelamentos</em> mostrou que dinheiro em datas diferentes não se soma. Também não se compara. Para decidir entre propostas, escolha uma <strong>data focal</strong> — qualquer uma — e leve todos os valores até ela.</p>
+<div class="eq">
+  <span class="lbl">Mover valores no tempo, à taxa i por período</span>
+  <p class="m">para a frente <span class="v">n</span> períodos: &nbsp;× (1 + <span class="v">i</span>)<sup><span class="v">n</span></sup> &nbsp;&nbsp;&nbsp; para trás <span class="v">n</span> períodos: &nbsp;÷ (1 + <span class="v">i</span>)<sup><span class="v">n</span></sup></p>
+</div>
+<div class="box def">
+  <span class="tag">Qual taxa usar</span>
+  <p>A taxa que mede quanto o seu dinheiro <strong>valeria em outra data</strong> para você: o rendimento da aplicação que você faria (se tem o dinheiro), ou o juro do empréstimo que você tomaria (se não tem). É a <strong>taxa de oportunidade</strong>. O enunciado sempre a informa; sem ela, a comparação não está definida.</p>
+</div>
+<p>A conclusão não depende da data focal escolhida: se uma proposta vale mais hoje, vale mais em qualquer outra data, porque todos os valores são multiplicados pelo mesmo fator. Escolha a data que deixa as contas mais simples.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> À vista ou a prazo?</h2>
+<div class="eq">
+  <span class="lbl">Exemplo — televisor: R$ 2.900,00 à vista ou 3 × R$ 1.000,00 (ato, 30 e 60 dias). O dinheiro rende 2% ao mês. Use 1/1,02 ≈ 0,980 e 1/1,02² ≈ 0,961.</span>
+  <p class="m">valor hoje do parcelado ≈ 1.000 + 1.000 · 0,980 + 1.000 · 0,961 = 1.000 + 980 + 961 = <strong>2.941</strong></p>
+  <p>O parcelado equivale a cerca de R$ 2.941,00 hoje, mais que os R$ 2.900,00 à vista. <strong>Compensa pagar à vista.</strong></p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Linha do tempo com três parcelas de R$ 1.000 em hoje, mês 1 e mês 2, trazidas para hoje à taxa de 2 por cento ao mês: valem 1.000, 980 e 961, somando cerca de R$ 2.941, mais do que os R$ 2.900 do preço à vista">
+  <defs>
+    <marker id="d18" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+    <marker id="d18b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+  </defs>
+  <line x1="30" y1="64" x2="444" y2="64" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#d18)"/>
+  <line x1="80" y1="59" x2="80" y2="69" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="80" y="86" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">hoje</text>
+  <text x="80" y="50" text-anchor="middle" class="svg-num" style="fill:var(--c4)">R$ 1.000</text>
+  <line x1="240" y1="59" x2="240" y2="69" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="240" y="86" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 1</text>
+  <text x="240" y="50" text-anchor="middle" class="svg-num" style="fill:var(--c4)">R$ 1.000</text>
+  <line x1="400" y1="59" x2="400" y2="69" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="400" y="86" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 2</text>
+  <text x="400" y="50" text-anchor="middle" class="svg-num" style="fill:var(--c4)">R$ 1.000</text>
+  <path d="M240 96 Q170 120 104 116" style="fill:none;stroke:var(--c1);stroke-width:1.8" marker-end="url(#d18b)"/>
+  <path d="M400 96 Q250 176 104 140" style="fill:none;stroke:var(--c1);stroke-width:1.8" marker-end="url(#d18b)"/>
+  <text x="186" y="134" text-anchor="middle" class="svg-num" style="fill:var(--c1)">× 0,980</text>
+  <text x="316" y="174" text-anchor="middle" class="svg-num" style="fill:var(--c1)">× 0,961</text>
+  <text x="32" y="104" class="svg-num" style="fill:var(--ink)">1.000</text>
+  <text x="32" y="122" class="svg-num" style="fill:var(--ink);white-space:pre">  980</text>
+  <text x="32" y="144" class="svg-num" style="fill:var(--ink);white-space:pre">  961</text>
+  <line x1="28" y1="152" x2="78" y2="152" style="stroke:var(--ink);stroke-width:1"/>
+  <text x="32" y="168" text-anchor=";font-weight:700" class="svg-num" style="fill:var(--c3)">2.941</text>
+  <text x="32" y="188" class="svg-lbl" style="fill:var(--c3)">> 2.900</text>
+  <text x="32" y="204" class="svg-lbl" style="fill:var(--c3)">à vista</text>
+</svg>
+<figcaption><b>Trazer as parcelas para a data da compra.</b> Cada parcela é multiplicada pelo fator de desconto do seu prazo. A soma, cerca de R$ 2.941,00, é o que o parcelado “custa hoje” para quem tem o dinheiro aplicado a 2% ao mês.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">O mesmo resultado pelo caminho da taxa embutida</span>
+  <p>Outro jeito de decidir: calcule a taxa de juros embutida no parcelado (seção 04 do assunto anterior) e compare com o rendimento da sua aplicação. Se a loja cobra mais do que a aplicação rende, pague à vista; se cobra menos, parcele e deixe o dinheiro rendendo. No exemplo, se a taxa da aplicação fosse bem maior, o valor hoje do parcelado cairia abaixo de R$ 2.900,00 e a decisão se inverteria.</p>
+</div>
+<div class="box warn">
+  <span class="tag">“Sem juros” não quer dizer “tanto faz”</span>
+  <p>Se o preço à vista e o total parcelado são iguais e o dinheiro rende alguma coisa aplicado, <strong>parcelar é melhor</strong>: você paga o mesmo valor nominal, mas mais tarde, e o dinheiro rende enquanto isso. Se há desconto à vista, a resposta depende da comparação acima.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Planos com parte fixa e parte variável</h2>
+<p>Muitos serviços cobram uma <strong>parte fixa</strong> mais uma <strong>parte proporcional ao uso</strong>. O custo é uma função afim do consumo:</p>
+<div class="eq">
+  <span class="lbl">Custo de um plano</span>
+  <p class="m">custo = parte fixa + preço por unidade · <span class="v">x</span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — telefonia: plano A, R$ 50,00 + R$ 0,50 por minuto; plano B, R$ 80,00 + R$ 0,20 por minuto</span>
+  <p class="m">empate: 50 + 0,5<span class="v">x</span> = 80 + 0,2<span class="v">x</span> &nbsp;→&nbsp; 0,3<span class="v">x</span> = 30 &nbsp;→&nbsp; <span class="v">x</span> = <strong>100 minutos</strong></p>
+  <p>Com 60 minutos: A custa 80 e B custa 92 → A é melhor. Com 150 minutos: A custa 125 e B custa 110 → B é melhor.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 240" role="img" aria-label="Gráfico do custo mensal de dois planos em função dos minutos: A custa 50 reais mais 50 centavos por minuto, B custa 80 reais mais 20 centavos por minuto. As retas se cruzam em 100 minutos e 100 reais; antes disso A é mais barato, depois B">
+  <defs>
+    <marker id="ax18" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="62" y1="200" x2="422" y2="200" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax18)"/>
+  <line x1="62" y1="200" x2="62" y2="20" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax18)"/>
+  <line x1="58" y1="200" x2="62" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="54" y="204" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="58" y1="160" x2="62" y2="160" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="54" y="164" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">40</text>
+  <line x1="62" y1="160" x2="402" y2="160" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <line x1="58" y1="120" x2="62" y2="120" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="54" y="124" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">80</text>
+  <line x1="62" y1="120" x2="402" y2="120" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <line x1="58" y1="80" x2="62" y2="80" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="54" y="84" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">120</text>
+  <line x1="62" y1="80" x2="402" y2="80" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <line x1="58" y1="40" x2="62" y2="40" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="54" y="44" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">160</text>
+  <line x1="62" y1="40" x2="402" y2="40" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <line x1="62" y1="200" x2="62" y2="204" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="62" y="217" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="147" y1="200" x2="147" y2="204" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="147" y="217" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">50</text>
+  <line x1="232" y1="200" x2="232" y2="204" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="232" y="217" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">100</text>
+  <line x1="317" y1="200" x2="317" y2="204" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="317" y="217" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">150</text>
+  <line x1="402" y1="200" x2="402" y2="204" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="402" y="217" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">200</text>
+  <text x="422" y="232" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">minutos por mês</text>
+  <text x="70" y="30" class="svg-lbl" style="fill:var(--ink-3)">custo (R$)</text>
+  <line x1="62" y1="150" x2="402" y2="50" style="stroke:var(--c2);stroke-width:2.5"/>
+  <line x1="62" y1="120" x2="402" y2="80" style="stroke:var(--c1);stroke-width:2.5"/>
+  <line x1="232" y1="106" x2="232" y2="200" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <circle cx="232" cy="100" r="4.5" style="fill:var(--surface);stroke:var(--ink);stroke-width:2"/>
+  <text x="242" y="124" class="svg-num" style="fill:var(--ink)">(100; R$ 100)</text>
+  <text x="408" y="54" class="svg-ttl" style="fill:var(--c2)">A</text>
+  <text x="408" y="84" class="svg-ttl" style="fill:var(--c1)">B</text>
+  <text x="72.2" y="172" class="svg-lbl" style="fill:var(--c2)">A = 50 + 0,50x</text>
+  <text x="72.2" y="100" class="svg-lbl" style="fill:var(--c1)">B = 80 + 0,20x</text>
+  <text x="147" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">A mais barato</text>
+  <text x="317" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">B mais barato</text>
+</svg>
+<figcaption><b>O cruzamento das retas separa as decisões.</b> O plano de fixo menor ganha no consumo baixo; o de preço por minuto menor ganha no consumo alto. No ponto de equilíbrio, 100 minutos, os dois custam R$ 100,00.</figcaption>
+</figure>
+<div class="box def">
+  <span class="tag">O atalho do ponto de equilíbrio</span>
+  <p class="m">ponto de equilíbrio = <span class="frac"><i>diferença das partes fixas</i><i>diferença dos preços por unidade</i></span> = <span class="frac"><i>80 − 50</i><i>0,50 − 0,20</i></span> = 100</p>
+  <p>Os R$ 30,00 a mais de fixo do plano B são “recuperados” à razão de R$ 0,30 por minuto. A forma da reta e a leitura de seus coeficientes ficam para o assunto <em>Função afim</em>, no bloco de Álgebra e Funções.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Atenção ao “a partir de”</span>
+  <p>No ponto de equilíbrio os planos <strong>empatam</strong>. “A partir de quantos minutos B é mais barato?” pede valores <strong>acima</strong> de 100. Quando a variável é inteira (dias, unidades), a resposta é o primeiro inteiro depois do empate; se o empate não é inteiro, arredonde <strong>para cima</strong>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Comparando investimentos</h2>
+<p>Três ajustes antes de comparar aplicações:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>O que fazer</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Taxas de períodos diferentes</td><td>Converter todas para o <strong>mesmo período</strong>, por taxa equivalente</td><td>1% ao mês ≈ 12,68% ao ano, mais que 12,5% ao ano</td></tr>
+    <tr><td>Imposto sobre o rendimento</td><td>Aplicar a alíquota <strong>sobre o rendimento</strong>, não sobre o total</td><td>12% com 20% de imposto → 12% · 0,8 = 9,6% líquidos</td></tr>
+    <tr><td>Rendimento nominal × real</td><td>Descontar a inflação dividindo fatores</td><td>Ver <em>Taxas equivalentes e inflação</em>, seção 08</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — aplicação X rende 12% ao ano com 20% de imposto sobre o rendimento; aplicação Y rende 10% ao ano, isenta</span>
+  <p class="m">X líquida: 12% · (1 − 0,20) = 9,6% &nbsp;&nbsp; Y líquida: 10% &nbsp;→&nbsp; <strong>Y rende mais</strong></p>
+  <p>A taxa bruta mais alta perdeu depois do imposto. Compare sempre o que efetivamente entra no bolso.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Imposto sobre o rendimento, não sobre o saldo</span>
+  <p>Com R$ 10.000,00 a 12%, o rendimento é R$ 1.200,00 e o imposto de 20% é R$ 240,00 — não R$ 2.240,00 (20% de tudo). O resgate líquido é R$ 10.960,00.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Custos escondidos e custo efetivo</h2>
+<p>A taxa de juros anunciada nem sempre é o custo do empréstimo. Tarifas, seguros e taxas de abertura cobradas no ato <strong>reduzem o dinheiro que você recebe</strong> sem reduzir o que você paga. O custo efetivo total (CET) incorpora tudo isso; por lei, as instituições financeiras precisam informá-lo.</p>
+<div class="eq">
+  <span class="lbl">Exemplo — empréstimo de R$ 5.000,00 por um mês, a 4%, com tarifa de R$ 100,00 descontada no ato</span>
+  <p class="m">recebe: 5.000 − 100 = 4.900 &nbsp;&nbsp; paga: 5.000 · 1,04 = 5.200</p>
+  <p class="m">custo efetivo = <span class="frac"><i>5.200 − 4.900</i><i>4.900</i></span> = <span class="frac"><i>300</i><i>4.900</i></span> ≈ <strong>6,1% no mês</strong></p>
+</div>
+<div class="box def">
+  <span class="tag">A conta do custo efetivo</span>
+  <p>Compare <strong>o que você efetivamente recebe</strong> com <strong>o que você efetivamente paga</strong>, na mesma lógica da taxa embutida: (pago − recebido) ÷ recebido. A taxa anunciada, sozinha, subestima o custo sempre que existe cobrança no ato.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Ponto de equilíbrio de um negócio</h2>
+<p>Um negócio tem <strong>custo fixo</strong> (aluguel, salários, que não dependem da produção) e <strong>custo variável</strong> por unidade (matéria-prima). Cada unidade vendida deixa a <strong>margem de contribuição</strong>: preço − custo variável. Essa margem paga, aos poucos, o custo fixo.</p>
+<div class="eq">
+  <span class="lbl">Ponto de equilíbrio e meta de lucro</span>
+  <p class="m">lucro = (preço − custo variável) · <span class="v">q</span> − custo fixo</p>
+  <p class="m">equilíbrio (lucro zero): &nbsp;<span class="v">q</span> = <span class="frac"><i>custo fixo</i><i>preço − custo variável</i></span></p>
+  <p class="m">lucro desejado <span class="v">L</span>: &nbsp;<span class="v">q</span> = <span class="frac"><i>custo fixo + <span class="v">L</span></i><i>preço − custo variável</i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — custo fixo R$ 6.000,00 por mês, custo variável R$ 15,00 por unidade, preço de venda R$ 35,00</span>
+  <p class="m">margem = 35 − 15 = 20 &nbsp;→&nbsp; equilíbrio = 6.000 ÷ 20 = <strong>300 unidades por mês</strong></p>
+</div>
+<div class="box warn">
+  <span class="tag">Divida pela margem, não pelo preço</span>
+  <p>Dividir o custo fixo pelo preço (6.000 ÷ 35 ≈ 172) esquece que cada unidade também custa R$ 15,00 para ser feita. Só os R$ 20,00 de margem ficam para pagar o fixo.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Decisões que dependem do uso</h2>
+<p>Quando a pergunta é “qual opção é melhor?” sem dizer o consumo, a resposta correta costuma ser condicional: “A, até tal ponto; B, a partir dele”. Desconfie de alternativas que dão uma resposta única sem considerar o uso.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Opção de fixo alto</th><th>Opção de fixo baixo</th><th>O que decide</th></tr></thead>
+  <tbody>
+    <tr><td>Estacionamento</td><td>Mensalidade</td><td>Diária</td><td>Dias de uso no mês</td></tr>
+    <tr><td>Locadora</td><td>Diária com km livre</td><td>Diária menor + preço por km</td><td>Quilômetros rodados</td></tr>
+    <tr><td>Transporte</td><td>Passe mensal</td><td>Tarifa por viagem</td><td>Viagens no mês</td></tr>
+    <tr><td>Energia em casa</td><td>Equipamento mais eficiente e mais caro</td><td>Equipamento barato que gasta mais</td><td>Horas de uso até a economia pagar a diferença</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em todas, a pergunta-chave é a mesma da seção 04: <strong>em que consumo as opções se igualam?</strong> Abaixo dele vence a de fixo baixo; acima, a de fixo alto.</p>
+<div class="box tip">
+  <span class="tag">Nem tudo é dinheiro</span>
+  <p>Na vida real pesam também risco, prazo de resgate e conveniência. No ENEM, porém, a questão define o critério (“menor custo”, “maior rendimento líquido”). Responda pelo critério do enunciado, não pelo que você preferiria.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Organize as propostas numa tabela</span>
+  <p>Uma linha por proposta, colunas para parte fixa, parte variável, datas e taxas. Enunciados de comparação são longos; a tabela impede de misturar o número de uma proposta com o de outra.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Iguale antes de comparar</span>
+  <p>Para planos, iguale os custos e ache o ponto de equilíbrio. Para fluxos no tempo, leve tudo à mesma data. Para taxas, converta para o mesmo período e para valores líquidos. Só então compare.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Teste um valor concreto</span>
+  <p>Depois de achar o ponto de equilíbrio, calcule o custo de cada opção num valor acima dele. Se a opção que deveria ganhar não ganha, você inverteu algo. A conferência leva vinte segundos e elimina o erro de sentido.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Fechando o bloco de Matemática Financeira</h2>
+<p>Este é o último assunto de <strong>Matemática Financeira</strong>. O bloco seguiu uma linha: primeiro como o dinheiro cresce, depois como se compara dinheiro de datas e condições diferentes.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Etapa</th><th>Assuntos</th><th>O que se construiu</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Crescimento</strong></td><td>13 e 14</td><td>Juros simples (crescimento linear) e juros compostos (crescimento por fator)</td></tr>
+    <tr><td><strong>Variações</strong></td><td>15</td><td>Descontos, acréscimos, lucro e prejuízo como fatores de multiplicação</td></tr>
+    <tr><td><strong>Taxas</strong></td><td>16</td><td>Trocar o período de uma taxa, nominal e efetiva, inflação e taxa real</td></tr>
+    <tr><td><strong>Dívidas</strong></td><td>17</td><td>Valor no tempo, taxa embutida, SAC, Price e cartão de crédito</td></tr>
+    <tr><td><strong>Decisões</strong></td><td>18</td><td>Comparar propostas na mesma data, pontos de equilíbrio e custos efetivos</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">A ideia que atravessa o bloco</span>
+  <p><strong>Trabalhe com fatores e respeite as datas.</strong> Acréscimo de 20% é × 1,2; desconto de 20% é × 0,8; dois períodos a 10% são × 1,21; tirar a inflação é dividir pelo seu fator; trazer uma parcela ao presente é dividir pelo fator do prazo. Quase todos os distratores do bloco nascem de somar o que deveria ser multiplicado ou de comparar valores de datas diferentes.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Comparar valores de datas diferentes</span> &nbsp;→&nbsp; <span class="c">leve tudo à mesma data</span></span><small>Com taxa de 10% ao ano, R$ 10.000 hoje e R$ 12.100 em dois anos se equivalem.</small></li>
+  <li><span><span class="x">Escolher pelo maior valor nominal</span> &nbsp;→&nbsp; <span class="c">compare valores equivalentes</span></span><small>O maior número pode estar na data mais distante.</small></li>
+  <li><span><span class="x">Escolher um plano sem olhar o consumo</span> &nbsp;→&nbsp; <span class="c">ache o ponto de equilíbrio</span></span><small>A resposta costuma ser “depende do uso”, com um limite claro.</small></li>
+  <li><span><span class="x">Dividir só a diferença dos fixos por um dos preços</span> &nbsp;→&nbsp; <span class="c">pela diferença dos preços</span></span><small>(80 − 50) ÷ (0,50 − 0,20) = 100, não 30 ÷ 0,5.</small></li>
+  <li><span><span class="x">Arredondar o equilíbrio para baixo</span> &nbsp;→&nbsp; <span class="c">“a partir de” é o inteiro seguinte</span></span><small>No empate os planos custam o mesmo.</small></li>
+  <li><span><span class="x">Imposto sobre o valor total</span> &nbsp;→&nbsp; <span class="c">sobre o rendimento</span></span><small>12% com 20% de imposto rende 9,6% líquidos.</small></li>
+  <li><span><span class="x">Comparar taxas de períodos diferentes direto</span> &nbsp;→&nbsp; <span class="c">converta por equivalência</span></span><small>1% ao mês supera 12,5% ao ano.</small></li>
+  <li><span><span class="x">Ignorar tarifas cobradas no ato</span> &nbsp;→&nbsp; <span class="c">custo efetivo sobre o valor recebido</span></span><small>A taxa anunciada subestima o custo.</small></li>
+  <li><span><span class="x">Equilíbrio de negócio dividindo pelo preço</span> &nbsp;→&nbsp; <span class="c">divida pela margem</span></span><small>Preço menos custo variável é o que paga o custo fixo.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, pergunte primeiro: as propostas estão na mesma data e no mesmo uso?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Planos de telefonia</span>
+    <p class="enun">Uma operadora oferece dois planos mensais. No plano A, o cliente paga R$ 50,00 fixos mais R$ 0,50 por minuto de ligação. No plano B, paga R$ 80,00 fixos mais R$ 0,20 por minuto. O plano B passa a ser mais vantajoso que o plano A quando o consumo mensal, em minutos, for superior a</p>
+    <ol class="alt"><li>60</li><li>100</li><li>150</li><li>260</li><li>400</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Iguale os custos:</p>
+      <p class="m">50 + 0,5<span class="v">x</span> = 80 + 0,2<span class="v">x</span> &nbsp;→&nbsp; 0,3<span class="v">x</span> = 30 &nbsp;→&nbsp; <span class="v">x</span> = <strong>100</strong></p>
+      <p>Teste: com 150 minutos, A custa 125 e B custa 110. Acima de 100 minutos, B é mais barato.</p>
+      <p><strong>Os distratores:</strong> A divide a diferença dos fixos (30) só pelo preço do plano A, 0,50; C, só pelo do plano B, 0,20. D divide a soma dos fixos (130) por 0,50. E divide o fixo de B por seu preço por minuto, sem comparar com A.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Desconto à vista e aplicação</span>
+    <p class="enun">Uma loja vende um produto por R$ 1.000,00 em 2 parcelas de R$ 500,00 (uma no ato e outra em 30 dias) ou com 5% de desconto à vista. Um cliente tem o dinheiro aplicado em um investimento que rende 1% ao mês. A decisão mais vantajosa para ele é</p>
+    <ol class="alt"><li>pagar à vista, pois o parcelamento embute juros de cerca de 11,1% ao mês, bem acima do 1% ao mês da aplicação.</li><li>parcelar, pois o anúncio não menciona juros e o dinheiro continua rendendo 1% ao mês.</li><li>parcelar, pois R$ 500,00 aplicados por um mês rendem R$ 5,00, o que compensa o desconto.</li><li>pagar à vista, pois o parcelamento embute juros de 5% ao mês, acima do 1% da aplicação.</li><li>escolher qualquer opção, pois o total pago é de R$ 1.000,00 nos dois casos.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>À vista: <span class="m">1.000 · 0,95 = 950</span>. No parcelado, a primeira parcela é entrada:</p>
+      <p class="m">financiado = 950 − 500 = 450 &nbsp;→&nbsp; paga 500 em 30 dias &nbsp;→&nbsp; taxa = <span class="frac"><i>50</i><i>450</i></span> ≈ 11,1% ao mês</p>
+      <p>A loja cobra 11,1% ao mês e a aplicação rende 1%: deixar R$ 450,00 aplicados renderia só R$ 4,50, contra R$ 50,00 de juros pagos. <strong>Pagar à vista.</strong></p>
+      <p><strong>Os distratores:</strong> D chega à decisão certa com a taxa errada — 5% é o desconto sobre o preço cheio, não a taxa sobre o valor financiado. B acredita no “sem juros” anunciado. C compara o rendimento de um mês com o desconto, mas o desconto é de R$ 50,00, bem mais que R$ 5,00. E ignora que o preço à vista é R$ 950,00.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Rendimento líquido</span>
+    <p class="enun">Uma pessoa vai aplicar R$ 10.000,00 por um ano e compara três opções: I) rende 12% ao ano, com imposto de 20% sobre o rendimento; II) rende 10% ao ano, isenta de imposto; III) rende 11% ao ano, com imposto de 15% sobre o rendimento. A opção de maior rendimento líquido e o valor desse rendimento são</p>
+    <ol class="alt"><li>I, com R$ 960,00.</li><li>II, com R$ 1.000,00.</li><li>I, com R$ 1.200,00.</li><li>III, com R$ 935,00.</li><li>III, com R$ 1.100,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Imposto incide sobre o rendimento:</p>
+      <p class="m">I: 1.200 · 0,80 = 960 &nbsp;&nbsp; II: 1.000 &nbsp;&nbsp; III: 1.100 · 0,85 = 935</p>
+      <p>A opção II, com a menor taxa bruta, tem o <strong>maior rendimento líquido: R$ 1.000,00</strong>.</p>
+      <p><strong>Os distratores:</strong> C e E usam o rendimento bruto, ignorando o imposto. A e D calculam certo o líquido de I e de III, mas são menores que o de II.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Taxas de períodos diferentes</span>
+    <p class="enun">Três bancos oferecem aplicações no regime de juros compostos: o banco P paga 1% ao mês; o banco Q, 12,5% ao ano; o banco R, 6% ao semestre. Considere 1,01<sup>12</sup> ≈ 1,127. Para quem vai aplicar por um ano, a melhor opção é</p>
+    <ol class="alt"><li>o banco Q, pois 12,5% ao ano é maior que os 12% ao ano dos outros dois.</li><li>o banco R, pois seus juros são capitalizados duas vezes no ano.</li><li>qualquer um, pois as três taxas são equivalentes a cerca de 12% ao ano.</li><li>o banco P, pois 1% ao mês equivale a cerca de 12,7% ao ano.</li><li>o banco Q, pois uma taxa anual sempre supera uma taxa mensal no prazo de um ano.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Converta todas para taxas anuais equivalentes:</p>
+      <p class="m">P: 1,01<sup>12</sup> ≈ 1,127 → ≈ 12,7% &nbsp;&nbsp; Q: 12,5% &nbsp;&nbsp; R: 1,06<sup>2</sup> = 1,1236 → 12,36%</p>
+      <p>A maior é a do <strong>banco P</strong>.</p>
+      <p><strong>Os distratores:</strong> A e C usam taxas proporcionais (12 · 1% e 2 · 6%), válidas só em juros simples. B usa um argumento verdadeiro em parte (R capitaliza no semestre), mas 12,36% ainda fica abaixo dos outros. E faz uma generalização falsa: quem decide é a taxa equivalente, não o período em que ela é anunciada.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Meta de lucro</span>
+    <p class="enun">Uma pequena fábrica tem custo fixo mensal de R$ 6.000,00. Cada peça custa R$ 15,00 para ser produzida e é vendida por R$ 35,00. Para obter lucro de R$ 2.000,00 em um mês, a fábrica precisa produzir e vender, no mínimo,</p>
+    <ol class="alt"><li>100 peças.</li><li>229 peças.</li><li>300 peças.</li><li>400 peças.</li><li>534 peças.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada peça deixa margem de <span class="m">35 − 15 = 20</span> reais, que precisam cobrir o custo fixo e o lucro desejado:</p>
+      <p class="m">20<span class="v">q</span> = 6.000 + 2.000 &nbsp;→&nbsp; <span class="v">q</span> = <span class="frac"><i>8.000</i><i>20</i></span> = <strong>400 peças</strong></p>
+      <p><strong>Os distratores:</strong> C é o ponto de equilíbrio (lucro zero), que esquece a meta de lucro. A divide só o lucro pela margem, esquecendo o custo fixo. B divide 8.000 pelo preço de venda (ignora o custo da peça); E divide pelo custo de produção. Os dois arredondam para cima.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Locadora de veículos</span>
+    <p class="enun">Para uma viagem de 3 dias, uma família compara duas locadoras. A locadora A cobra R$ 120,00 por dia, com quilometragem livre. A locadora B cobra R$ 60,00 por dia mais R$ 0,75 por quilômetro rodado. A locadora A será mais vantajosa se a família rodar mais de</p>
+    <ol class="alt"><li>80 km.</li><li>160 km.</li><li>240 km.</li><li>480 km.</li><li>720 km.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Custos para os 3 dias: A = 3 · 120 = 360; B = 3 · 60 + 0,75<span class="v">x</span> = 180 + 0,75<span class="v">x</span>.</p>
+      <p class="m">180 + 0,75<span class="v">x</span> = 360 &nbsp;→&nbsp; 0,75<span class="v">x</span> = 180 &nbsp;→&nbsp; <span class="v">x</span> = <strong>240 km</strong></p>
+      <p>Teste: com 300 km, B custa 405 e A custa 360.</p>
+      <p><strong>Os distratores:</strong> A considera um único dia (60 ÷ 0,75). B divide a diária de A pelo preço por km, ignorando a diária de B. D divide o custo total de A pelo preço por km, também esquecendo a diária de B. E soma as diárias das duas locadoras.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Custo efetivo de um empréstimo</span>
+    <p class="enun">Uma pessoa tomou R$ 5.000,00 emprestados por um mês, a juros de 4% ao mês. O banco cobrou uma tarifa de R$ 100,00, descontada no momento da liberação do dinheiro. Ao final do mês, ela pagou o valor emprestado mais os juros. O custo efetivo desse empréstimo no mês foi de, aproximadamente,</p>
+    <ol class="alt"><li>2,0%</li><li>4,0%</li><li>4,1%</li><li>6,0%</li><li>6,1%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Recebeu <span class="m">5.000 − 100 = 4.900</span> e pagou <span class="m">5.000 · 1,04 = 5.200</span>.</p>
+      <p class="m">custo efetivo = <span class="frac"><i>5.200 − 4.900</i><i>4.900</i></span> = <span class="frac"><i>300</i><i>4.900</i></span> ≈ <strong>6,1%</strong></p>
+      <p><strong>Os distratores:</strong> B é a taxa anunciada, que ignora a tarifa. A é só a tarifa em relação aos 5.000. D soma juros e tarifa, mas divide pelos 5.000 contratados, e não pelos 4.900 recebidos. C divide pelos 4.900, mas esquece a tarifa no numerador.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Prêmios em datas diferentes</span>
+    <p class="enun">O ganhador de um sorteio pode escolher entre três formas de receber o prêmio: R$ 10.000,00 hoje; R$ 11.000,00 daqui a um ano; ou R$ 12.100,00 daqui a dois anos. Ele aplicaria o dinheiro a 10% ao ano, no regime de juros compostos. Do ponto de vista financeiro,</p>
+    <ol class="alt"><li>receber hoje é melhor, pois dinheiro disponível hoje sempre vale mais.</li><li>receber em um ano é melhor, pois evita esperar dois anos e paga R$ 1.000,00 a mais.</li><li>receber em dois anos é melhor, pois é o maior valor.</li><li>receber hoje e receber em dois anos são equivalentes, mas receber em um ano é pior.</li><li>as três opções são equivalentes.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Leve tudo para a data de dois anos, à taxa de 10% ao ano:</p>
+      <p class="m">hoje: 10.000 · 1,1<sup>2</sup> = 12.100 &nbsp;&nbsp; em um ano: 11.000 · 1,1 = 12.100 &nbsp;&nbsp; em dois anos: 12.100</p>
+      <p>As três valem o mesmo na mesma data: <strong>são equivalentes</strong>.</p>
+      <p><strong>Os distratores:</strong> C compara valores nominais de datas diferentes. A usa uma regra geral que só vale quando os valores futuros não compensam o tempo — aqui compensam exatamente. B decide sem fazer conta. D aparece para quem erra a conta de uma das opções (por exemplo, compara R$ 11.000,00 com R$ 12.100,00 sem levar o primeiro à data de dois anos); feitas as três contas na mesma data, todas coincidem.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Mensalista ou diarista</span>
+    <p class="enun">Um estacionamento cobra R$ 25,00 por dia de uso ou R$ 300,00 pela mensalidade, que permite usar todos os dias do mês. O número mínimo de dias de uso no mês para que a mensalidade seja mais barata que o pagamento por diárias é</p>
+    <ol class="alt"><li>10</li><li>12</li><li>13</li><li>20</li><li>25</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Empate: <span class="m">25<span class="v">d</span> = 300 → <span class="v">d</span> = 12</span>. Com 12 dias, as duas opções custam R$ 300,00: a mensalidade ainda não é <em>mais barata</em>. Com 13 dias, as diárias custam R$ 325,00.</p>
+      <p>A resposta é <strong>13 dias</strong>.</p>
+      <p><strong>Os distratores:</strong> B é o ponto de empate, a armadilha principal — a pergunta pede “mais barata”. A divide a mensalidade por 30 dias, achando o custo diário da mensalidade, e não o empate. D supõe uso em todos os dias úteis, uma informação que o enunciado não dá. E confunde o valor da diária com o número de dias.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Levo valores de datas diferentes a uma data focal antes de compará-los</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Identifico a taxa de oportunidade e explico por que ela define a comparação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido entre à vista e a prazo pelo valor presente das parcelas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido entre à vista e a prazo comparando a taxa embutida com o rendimento da aplicação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo o custo de um plano como parte fixa mais parte variável</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro o ponto de equilíbrio entre dois planos e digo qual vale em cada faixa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto corretamente “a partir de” e arredondo o equilíbrio na direção certa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Comparo aplicações convertendo taxas para o mesmo período</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o rendimento líquido aplicando o imposto sobre o rendimento</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o custo efetivo de um empréstimo com tarifa cobrada no ato</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o ponto de equilíbrio de um negócio e a quantidade para uma meta de lucro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico a ideia que atravessa o bloco: fatores multiplicam, datas se respeitam</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Fecho o bloco de Matemática Financeira: revisei os 6 assuntos e fiz o simulado do bloco</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de <strong>planos com ponto de equilíbrio</strong> e as de <strong>à vista ou a prazo</strong>, as mais frequentes. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+  <p style="margin-top:10px">Com este assunto, o bloco <strong>Matemática Financeira</strong> está completo: 6 assuntos, duas semanas. Antes de abrir o próximo bloco, faça um <strong>simulado de 20 questões</strong> misturando todos eles — juros simples e compostos, descontos e acréscimos, taxas equivalentes e inflação, financiamentos e comparação de propostas. É a única forma de descobrir o que ficou apenas reconhecido, e não aprendido.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>35 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-18-comparacao-propostas-tomada-decisao.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Financeira</code> é o mesmo dos assuntos anteriores: com estes cartões, o baralho de Matemática Financeira fica completo.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-18";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

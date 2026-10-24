@@ -1,0 +1,1087 @@
+<title>Conceito de Função</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 5 de 18</p>
+    <h1>Conceito de função: domínio, contradomínio e imagem</h1>
+    <p class="deck">Preço que depende da distância, temperatura que depende da hora, área que depende do lado: função é o nome matemático de “uma coisa determina a outra”. Este assunto define a ideia com precisão, ensina a ler domínio e imagem em fórmulas, tabelas e gráficos e prepara o terreno para todas as funções do bloco.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Diagrama de flechas da função f de x igual a x ao quadrado: o domínio A tem 1, 2 e 3; o contradomínio B tem 1, 4, 7 e 9. As flechas levam 1 em 1, 2 em 4 e 3 em 9. A imagem, destacada, é formada por 1, 4 e 9; o 7 não recebe flecha">
+<defs>
+    <marker id="ar23h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <ellipse cx="70" cy="100" rx="38" ry="66" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <ellipse cx="222" cy="100" rx="40" ry="80" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <rect x="200" y="30" width="44" height="98" rx="14" style="fill:none;stroke:var(--c4);stroke-width:1.6;stroke-dasharray:4 3"/>
+  <text x="70" y="63" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">1</text>
+  <text x="70" y="105" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">2</text>
+  <text x="70" y="147" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">3</text>
+  <text x="222" y="51" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">1</text>
+  <text x="222" y="83" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">4</text>
+  <text x="222" y="115" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">9</text>
+  <text x="222" y="155" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">7</text>
+  <line x1="82" y1="57.1" x2="203.1" y2="47.5" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23h)"/>
+  <line x1="81.9" y1="98.3" x2="203.2" y2="80.7" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23h)"/>
+  <line x1="81.7" y1="139.5" x2="203.4" y2="113.9" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23h)"/>
+  <text x="70" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">domínio A</text>
+  <text x="222" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">contradomínio B</text>
+  <text x="268" y="70" class="svg-ttl" style="fill:var(--c4)">Im</text>
+  <text x="146" y="22" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">f(x) = x²</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>7 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Equações e inequações do 1º grau · Sistemas de equações lineares</dd></div>
+      <div><dt>Destrava</dt><dd>Função afim, função quadrática, exponencial e leitura de gráficos em todas as áreas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM quase não pergunta “defina função”. Ele entrega uma <strong>tabela, um gráfico ou uma fórmula</strong> e pede que você leia o que está ali. É a habilidade de Matemática que mais aparece fora da Matemática: gráficos de Física, Química, Biologia e Geografia são todos funções.</p>
+<ul>
+  <li><strong>Calcular valores:</strong> quanto custa a corrida de 8 km, qual a altura no instante 3 s, qual o valor de <span class="m"><span class="v">f</span>(5)</span>.</li>
+  <li><strong>Fazer o caminho de volta:</strong> qual distância custa R$ 30,00, isto é, para que <span class="m"><span class="v">x</span></span> se tem <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 30</span>.</li>
+  <li><strong>Ler um gráfico:</strong> maior e menor valor, intervalos de crescimento, quando a grandeza se anula.</li>
+  <li><strong>Decidir o domínio:</strong> que valores fazem sentido (número de pessoas inteiro, tempo não negativo, medida positiva).</li>
+  <li><strong>Reconhecer funções:</strong> se uma tabela, um diagrama ou uma curva representa ou não uma função.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Separar com clareza <strong>entrada</strong> (o <span class="m"><span class="v">x</span></span>, no eixo horizontal, que forma o domínio) e <strong>saída</strong> (o <span class="m"><span class="v">y</span></span>, no eixo vertical, que forma a imagem). Metade dos erros do assunto é trocar uma pela outra: responder o domínio quando se pede a imagem, calcular <span class="m"><span class="v">f</span>(30)</span> quando se pede o <span class="m"><span class="v">x</span></span> com <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 30</span>.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A ideia de função</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Uma <strong>função</strong> <span class="m"><span class="v">f</span>: <span class="v">A</span> → <span class="v">B</span></span> é uma regra que associa <strong>a cada</strong> elemento <span class="m"><span class="v">x</span></span> de <span class="m"><span class="v">A</span></span> <strong>um único</strong> elemento <span class="m"><span class="v">y</span> = <span class="v">f</span>(<span class="v">x</span>)</span> de <span class="m"><span class="v">B</span></span>.</p>
+</div>
+<p>Pense numa máquina: entra um número, sai um número, e a mesma entrada produz sempre a mesma saída. O <span class="m"><span class="v">x</span></span> é a <strong>variável independente</strong> (você escolhe); o <span class="m"><span class="v">y</span></span> é a <strong>variável dependente</strong> (é calculado a partir de <span class="m"><span class="v">x</span></span>).</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Variável independente (x)</th><th>Variável dependente (y)</th><th>Lei</th></tr></thead>
+  <tbody>
+    <tr><td>táxi: R$ 5,00 mais R$ 2,50 por km</td><td>distância (km)</td><td>preço (R$)</td><td class="m"><span class="v">P</span>(<span class="v">d</span>) = 5 + 2,5<span class="v">d</span></td></tr>
+    <tr><td>área de um quadrado</td><td>lado</td><td>área</td><td class="m"><span class="v">A</span>(ℓ) = ℓ²</td></tr>
+    <tr><td>combustível a R$ 6,00 o litro</td><td>litros</td><td>valor pago</td><td class="m"><span class="v">V</span>(<span class="v">L</span>) = 6<span class="v">L</span></td></tr>
+    <tr><td>bola lançada para cima</td><td>tempo (s)</td><td>altura (m)</td><td class="m"><span class="v">h</span>(<span class="v">t</span>) = 20<span class="v">t</span> − 5<span class="v">t</span>²</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Quem depende de quem</span>
+  <p>Pergunte: “se eu souber <strong>isto</strong>, consigo determinar <strong>aquilo</strong> sem ambiguidade?”. Sabendo o lado, a área fica determinada: a área é função do lado. Sabendo a altura de um aluno, não dá para dizer qual é o aluno, porque pode haver dois com a mesma altura: o aluno não é função da altura.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Quando é e quando não é função</h2>
+<p>Num <strong>diagrama de flechas</strong>, a definição vira duas regras sobre o conjunto de partida <span class="m"><span class="v">A</span></span>:</p>
+<ol>
+  <li><strong>Todo</strong> elemento de <span class="m"><span class="v">A</span></span> tem flecha saindo (ninguém fica sem imagem).</li>
+  <li>De cada elemento de <span class="m"><span class="v">A</span></span> sai <strong>uma só</strong> flecha (ninguém tem duas imagens).</li>
+</ol>
+<p>Em <span class="m"><span class="v">B</span></span> não há exigência: um elemento de <span class="m"><span class="v">B</span></span> pode receber várias flechas, uma ou nenhuma.</p>
+<figure class="fig">
+<svg viewBox="0 0 456 196" role="img" aria-label="Três diagramas de flechas de A igual a 1, 2, 3 em B igual a a, b, c. No primeiro, 1 e 2 vão para a e 3 vai para b: é função. No segundo, o 3 não tem flecha: não é função. No terceiro, do 2 saem duas flechas, para b e para c: não é função">
+<defs>
+    <marker id="ar23d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <ellipse cx="36" cy="92" rx="24" ry="58" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <ellipse cx="116" cy="92" rx="24" ry="58" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="36" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">1</text>
+  <text x="116" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">a</text>
+  <text x="36" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">2</text>
+  <text x="116" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">b</text>
+  <text x="36" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">3</text>
+  <text x="116" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">c</text>
+  <line x1="48" y1="56" x2="97" y2="56" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="46.9" y1="87.1" x2="98.7" y2="63.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="46.9" y1="123.1" x2="98.7" y2="99.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <text x="36" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">A</text>
+  <text x="116" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">B</text>
+  <text x="76" y="178" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:600">é função</text>
+  <ellipse cx="188" cy="92" rx="24" ry="58" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <ellipse cx="268" cy="92" rx="24" ry="58" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="188" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">1</text>
+  <text x="268" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">a</text>
+  <text x="188" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">2</text>
+  <text x="268" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">b</text>
+  <text x="188" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">3</text>
+  <text x="268" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">c</text>
+  <line x1="200" y1="56" x2="249" y2="56" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="200" y1="92" x2="249" y2="92" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <circle cx="188" cy="128" r="11" style="fill:none;stroke:var(--c4);stroke-width:1.8"/>
+  <text x="188" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">A</text>
+  <text x="268" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">B</text>
+  <text x="228" y="178" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:600">não é: 3 sem flecha</text>
+  <ellipse cx="340" cy="92" rx="24" ry="58" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <ellipse cx="420" cy="92" rx="24" ry="58" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="340" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">1</text>
+  <text x="420" y="61" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">a</text>
+  <text x="340" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">2</text>
+  <text x="420" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">b</text>
+  <text x="340" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:13px">3</text>
+  <text x="420" y="133" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:13px">c</text>
+  <line x1="352" y1="56" x2="401" y2="56" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="352" y1="92" x2="401" y2="92" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="350.9" y1="96.9" x2="402.7" y2="120.2" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <line x1="352" y1="128" x2="401" y2="128" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ar23d)"/>
+  <circle cx="340" cy="92" r="11" style="fill:none;stroke:var(--c4);stroke-width:1.8"/>
+  <text x="340" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">A</text>
+  <text x="420" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">B</text>
+  <text x="380" y="178" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:600">não é: 2 com duas</text>
+</svg>
+<figcaption><b>Três relações de A em B.</b> A primeira é função: cada elemento de <span class="m"><span class="v">A</span></span> tem exatamente uma flecha, mesmo que duas cheguem ao mesmo ponto de <span class="m"><span class="v">B</span></span>. A segunda não é, porque o 3 ficou sem flecha. A terceira não é, porque do 2 saem duas flechas.</figcaption>
+</figure>
+<div class="box warn">
+  <span class="tag">Duas flechas chegando é permitido</span>
+  <p>Em <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>²</span>, tanto 2 quanto −2 vão para 4. Isso não viola nada: cada entrada continua com uma única saída. O que é proibido é uma entrada com <strong>duas</strong> saídas.</p>
+</div>
+<p>Numa <strong>tabela</strong>, a regra é a mesma: um mesmo valor de <span class="m"><span class="v">x</span></span> não pode aparecer em duas linhas com valores diferentes de <span class="m"><span class="v">y</span></span>.</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Domínio, contradomínio e imagem</h2>
+<div class="box def">
+  <span class="tag">Os três conjuntos de uma função f: A → B</span>
+  <p><strong>Domínio</strong> <span class="m"><span class="v">D</span>(<span class="v">f</span>) = <span class="v">A</span></span>: todos os valores que podem entrar.</p>
+  <p><strong>Contradomínio</strong> <span class="m"><span class="v">CD</span>(<span class="v">f</span>) = <span class="v">B</span></span>: o conjunto onde as saídas são procuradas.</p>
+  <p><strong>Imagem</strong> <span class="m"><span class="v">Im</span>(<span class="v">f</span>)</span>: os valores que <strong>realmente saem</strong>. É sempre parte do contradomínio: <span class="m"><span class="v">Im</span>(<span class="v">f</span>) ⊂ <span class="v">CD</span>(<span class="v">f</span>)</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · f: A → B com f(x) = x², A = {1, 2, 3} e B = {1, 4, 7, 9}</span>
+  <p class="m"><span class="v">f</span>(1) = 1 &nbsp;&nbsp; <span class="v">f</span>(2) = 4 &nbsp;&nbsp; <span class="v">f</span>(3) = 9</p>
+  <p><span class="m"><span class="v">D</span> = {1, 2, 3}</span>, <span class="m"><span class="v">CD</span> = {1, 4, 7, 9}</span> e <span class="m"><span class="v">Im</span> = {1, 4, 9}</span>. O 7 está no contradomínio, mas não é imagem de ninguém (é o desenho do cabeçalho).</p>
+</div>
+<p>Dizemos que 9 é a <strong>imagem</strong> de 3 e que 3 é a <strong>pré-imagem</strong> (ou o “x correspondente”) de 9. No dia a dia da prova, o domínio e o contradomínio de funções numéricas costumam ser intervalos de <span class="m">ℝ</span>, e o trabalho é descobrir a imagem.</p>
+<div class="box tip">
+  <span class="tag">Domínio no eixo x, imagem no eixo y</span>
+  <p>Em qualquer gráfico, o domínio é a “sombra” da curva projetada no eixo horizontal; a imagem, a sombra projetada no eixo vertical. A seção 07 mostra como ler as duas.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Notação f(x) e valor numérico</h2>
+<p>Em <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span>, o <span class="m"><span class="v">x</span></span> é só um lugar vazio: o que estiver entre parênteses entra no lugar dele, <strong>sempre com parênteses</strong>.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Pedido</th><th>Substituição</th><th>Resultado</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">f</span>(3)</td><td class="m">3² − 1</td><td class="m">8</td></tr>
+    <tr><td class="m"><span class="v">f</span>(−2)</td><td class="m">(−2)² − 1</td><td class="m">3</td></tr>
+    <tr><td class="m"><span class="v">f</span>(2<span class="v">x</span>)</td><td class="m">(2<span class="v">x</span>)² − 1</td><td class="m">4<span class="v">x</span>² − 1</td></tr>
+    <tr><td class="m"><span class="v">f</span>(<span class="v">x</span> + 1)</td><td class="m">(<span class="v">x</span> + 1)² − 1</td><td class="m"><span class="v">x</span>² + 2<span class="v">x</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">f(a + b) não é f(a) + f(b)</span>
+  <p>Com <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span>: <span class="m"><span class="v">f</span>(2 + 3) = <span class="v">f</span>(5) = 24</span>, mas <span class="m"><span class="v">f</span>(2) + <span class="v">f</span>(3) = 3 + 8 = 11</span>. Também <span class="m"><span class="v">f</span>(2<span class="v">x</span>) ≠ 2<span class="v">f</span>(<span class="v">x</span>)</span>. O “f” não é um número que multiplica o parêntese.</p>
+</div>
+<h3>O caminho de volta: f(x) = k</h3>
+<p>Quando o enunciado dá a saída e pede a entrada, monta-se uma <strong>equação</strong>. No táxi <span class="m"><span class="v">P</span>(<span class="v">d</span>) = 5 + 2,5<span class="v">d</span></span>, uma corrida de R$ 30,00 teve <span class="m">5 + 2,5<span class="v">d</span> = 30</span>, ou seja, <span class="m"><span class="v">d</span> = 10</span> km. Calcular <span class="m"><span class="v">P</span>(30) = 80</span> responde outra pergunta.</p>
+<h3>Funções definidas por partes</h3>
+<div class="eq">
+  <span class="lbl">Estacionamento · R$ 10,00 pela 1ª hora e R$ 4,00 por hora adicional ou fração</span>
+  <p>Até 1 h: R$ 10,00. Com 2 h 15 min: a 1ª hora, mais 1 hora adicional completa, mais uma fração que conta como hora: <span class="m">10 + 2 · 4 = 18</span> reais.</p>
+  <p>Contas, tarifas de água e de energia por faixa e impostos por alíquota seguem esse formato: a regra muda conforme o intervalo em que o <span class="m"><span class="v">x</span></span> está.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> O gráfico e o teste da reta vertical</h2>
+<p>O <strong>gráfico</strong> de <span class="m"><span class="v">f</span></span> é o conjunto dos pontos <span class="m">(<span class="v">x</span>, <span class="v">f</span>(<span class="v">x</span>))</span> do plano. Como cada <span class="m"><span class="v">x</span></span> tem uma só imagem, nenhuma reta vertical pode cortar o gráfico de uma função em mais de um ponto.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 224" role="img" aria-label="À esquerda, uma parábola; uma reta vertical tracejada a corta em um único ponto, então a curva é gráfico de função. Uma reta horizontal pontilhada corta a parábola em dois pontos, o que é permitido. À direita, uma circunferência; a reta vertical a corta em dois pontos, então ela não é gráfico de função de x">
+<defs>
+    <marker id="ax23r" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="24" y1="144.3" x2="212" y2="144.3" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23r)"/>
+  <line x1="115" y1="176" x2="115" y2="14" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23r)"/>
+  <polyline points="39.8,35.5 41.7,40.8 43.6,46.1 45.4,51.2 47.3,56.1 49.2,61 51.1,65.7 53,70.2 54.8,74.6 56.7,78.9 58.6,83.1 60.5,87.1 62.4,91 64.2,94.7 66.1,98.3 68,101.8 69.9,105.1 71.8,108.3 73.6,111.4 75.5,114.3 77.4,117.1 79.3,119.7 81.2,122.2 83,124.6 84.9,126.9 86.8,129 88.7,131 90.6,132.8 92.4,134.5 94.3,136.1 96.2,137.5 98.1,138.8 100,139.9 101.8,141 103.7,141.8 105.6,142.6 107.5,143.2 109.4,143.7 111.2,144 113.1,144.2 115,144.3 116.9,144.2 118.8,144 120.6,143.7 122.5,143.2 124.4,142.6 126.3,141.8 128.2,141 130,139.9 131.9,138.8 133.8,137.5 135.7,136.1 137.6,134.5 139.4,132.8 141.3,131 143.2,129 145.1,126.9 147,124.6 148.8,122.2 150.7,119.7 152.6,117.1 154.5,114.3 156.4,111.4 158.2,108.3 160.1,105.1 162,101.8 163.9,98.3 165.8,94.7 167.6,91 169.5,87.1 171.4,83.1 173.3,78.9 175.2,74.6 177,70.2 178.9,65.7 180.8,61 182.7,56.1 184.6,51.2 186.4,46.1 188.3,40.8 190.2,35.5" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <line x1="154.2" y1="164.9" x2="154.2" y2="31.1" style="stroke:var(--c4);stroke-width:1.4;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <circle cx="154.2" cy="114.7" r="4.5" style="fill:var(--c4)"/>
+  <line x1="33.3" y1="82.6" x2="196.7" y2="82.6" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:2 4"/>
+  <text x="115" y="212" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:600">função: 1 ponto por vertical</text>
+  <line x1="254" y1="97" x2="442" y2="97" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23r)"/>
+  <line x1="345" y1="188" x2="345" y2="0" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23r)"/>
+  <polyline points="403.8,97 403.5,90.8 402.6,84.8 401,78.8 398.8,73.1 396,67.6 392.6,62.4 388.7,57.6 384.4,53.3 379.6,49.4 374.4,46 368.9,43.2 363.2,41 357.2,39.4 351.2,38.5 345,38.2 338.8,38.5 332.8,39.4 326.8,41 321.1,43.2 315.6,46 310.4,49.4 305.6,53.3 301.3,57.6 297.4,62.4 294,67.6 291.2,73.1 289,78.8 287.4,84.8 286.5,90.8 286.2,97 286.5,103.2 287.4,109.2 289,115.2 291.2,120.9 294,126.4 297.4,131.6 301.3,136.4 305.6,140.7 310.4,144.6 315.6,148 321.1,150.8 326.8,153 332.8,154.6 338.8,155.5 345,155.8 351.2,155.5 357.2,154.6 363.2,153 368.9,150.8 374.4,148 379.6,144.6 384.4,140.7 388.7,136.4 392.6,131.6 396,126.4 398.8,120.9 401,115.2 402.6,109.2 403.5,103.2 403.8,97" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linejoin:round"/>
+  <line x1="374.4" y1="178.7" x2="374.4" y2="15.3" style="stroke:var(--c4);stroke-width:1.4;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <circle cx="374.4" cy="46" r="4.5" style="fill:var(--c4)"/>
+  <circle cx="374.4" cy="148" r="4.5" style="fill:var(--c4)"/>
+  <text x="345" y="212" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:600">não é: 2 pontos na vertical</text>
+</svg>
+<figcaption><b>Teste da reta vertical.</b> À esquerda, cada reta vertical corta a curva no máximo uma vez: é gráfico de função. À direita, a circunferência é cortada duas vezes pela mesma vertical: para aquele <span class="m"><span class="v">x</span></span> haveria dois valores de <span class="m"><span class="v">y</span></span>, e a curva não é gráfico de função de <span class="m"><span class="v">x</span></span>.</figcaption>
+</figure>
+<div class="box def">
+  <span class="tag">Horizontal pode cortar várias vezes</span>
+  <p>Uma reta <strong>horizontal</strong> cortando a curva em dois pontos significa só que dois valores de <span class="m"><span class="v">x</span></span> têm a mesma imagem, o que é permitido. A parábola da esquerda é cortada duas vezes por horizontais e continua sendo função.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Lendo um gráfico: domínio, imagem e comportamento</h2>
+<figure class="fig">
+<svg viewBox="0 0 460 248" role="img" aria-label="Gráfico formado por dois segmentos: de menos 1, 1 até 2, 4 e de 2, 4 até 6, 2. A projeção no eixo x, destacada, é o domínio, de menos 1 a 6. A projeção no eixo y, destacada, é a imagem, de 1 a 4. O ponto mais alto é 2, 4">
+  <defs>
+    <marker id="ax23p" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="64" y1="181.1" x2="412" y2="181.1" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23p)"/>
+  <line x1="143.3" y1="206" x2="143.3" y2="12" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax23p)"/>
+  <line x1="106.7" y1="178.1" x2="106.7" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="106.7" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="180" y1="178.1" x2="180" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="180" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="216.7" y1="178.1" x2="216.7" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="216.7" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="253.3" y1="178.1" x2="253.3" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="253.3" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="290" y1="178.1" x2="290" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="290" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="326.7" y1="178.1" x2="326.7" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="326.7" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="363.3" y1="178.1" x2="363.3" y2="184.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="363.3" y="197.1" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="140.3" y1="149.7" x2="146.3" y2="149.7" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="136.3" y="153.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="140.3" y1="118.3" x2="146.3" y2="118.3" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="136.3" y="122.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="140.3" y1="86.9" x2="146.3" y2="86.9" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="136.3" y="90.9" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="140.3" y1="55.4" x2="146.3" y2="55.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="136.3" y="59.4" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <text x="410" y="173.1" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">x</text>
+  <text x="151.3" y="22" class="svg-lbl" style="fill:var(--ink-2)">y</text>
+  <line x1="106.7" y1="149.7" x2="216.7" y2="55.4" style="stroke:var(--c1);stroke-width:2.6;stroke-linecap:round"/>
+  <line x1="216.7" y1="55.4" x2="363.3" y2="118.3" style="stroke:var(--c1);stroke-width:2.6;stroke-linecap:round"/>
+  <circle cx="106.7" cy="149.7" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="363.3" cy="118.3" r="4.2" style="fill:var(--c1)"/>
+  <line x1="106.7" y1="181.1" x2="106.7" y2="149.7" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <line x1="363.3" y1="181.1" x2="363.3" y2="118.3" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <line x1="143.3" y1="55.4" x2="216.7" y2="55.4" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <line x1="106.7" y1="181.1" x2="363.3" y2="181.1" style="stroke:var(--c3);stroke-width:7;stroke-linecap:round;opacity:.55"/>
+  <line x1="143.3" y1="149.7" x2="143.3" y2="55.4" style="stroke:var(--c2);stroke-width:7;stroke-linecap:round;opacity:.55"/>
+  <text x="235" y="215.1" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:600">domínio [−1, 6]</text>
+  <text x="113.3" y="106.6" text-anchor="end" class="svg-lbl" style="fill:var(--c2);font-weight:600">imagem [1, 4]</text>
+  <text x="224.7" y="47.4" class="svg-lbl" style="fill:var(--c1)">máximo (2, 4)</text>
+</svg>
+<figcaption><b>Domínio e imagem como sombras da curva.</b> Projetando o gráfico no eixo <span class="m"><span class="v">x</span></span>, obtém-se o domínio <span class="m">[−1, 6]</span>; projetando no eixo <span class="m"><span class="v">y</span></span>, a imagem <span class="m">[1, 4]</span>. A imagem vai do ponto mais baixo ao mais alto do gráfico, que não precisam estar nas pontas.</figcaption>
+</figure>
+<p>Além de domínio e imagem, o ENEM pede que você leia no gráfico:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Pergunta</th><th>Onde olhar</th><th>No gráfico acima</th></tr></thead>
+  <tbody>
+    <tr><td>valor máximo e mínimo</td><td>o ponto mais alto e o mais baixo (o <span class="m"><span class="v">y</span></span>)</td><td>máximo 4, em <span class="m"><span class="v">x</span> = 2</span>; mínimo 1, em <span class="m"><span class="v">x</span> = −1</span></td></tr>
+    <tr><td>crescente / decrescente</td><td>a curva sobe ou desce da esquerda para a direita</td><td>cresce em <span class="m">[−1, 2]</span>, decresce em <span class="m">[2, 6]</span></td></tr>
+    <tr><td>zeros (raízes)</td><td>onde a curva toca o eixo <span class="m"><span class="v">x</span></span></td><td>não há: a curva fica toda acima</td></tr>
+    <tr><td><span class="m"><span class="v">f</span>(<span class="v">a</span>)</span> para um <span class="m"><span class="v">a</span></span> dado</td><td>suba de <span class="m"><span class="v">a</span></span> até a curva e leia a altura</td><td><span class="m"><span class="v">f</span>(4) = 3</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Intervalos de crescimento se dão em x</span>
+  <p>“A função cresce entre 1 e 4” é sobre a <strong>altura</strong> (imagem); a resposta correta fala do <span class="m"><span class="v">x</span></span>: cresce para <span class="m"><span class="v">x</span></span> entre −1 e 2. Alternativas que trocam um pelo outro são distratores frequentes.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Domínio pela fórmula e pelo contexto</h2>
+<p>Quando a função vem só com a fórmula, o domínio é <strong>o maior conjunto de números reais para os quais a conta existe</strong>. Duas restrições resolvem quase tudo:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Função</th><th>Restrição</th><th>Domínio</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="frac"><i>1</i><i><span class="v">x</span> − 3</i></span></td><td>denominador ≠ 0</td><td class="m"><span class="v">x</span> ≠ 3</td></tr>
+    <tr><td class="m"><span class="v">g</span>(<span class="v">x</span>) = <span class="rad"><i><span class="v">x</span> − 2</i></span></td><td>radicando de raiz quadrada ≥ 0</td><td class="m"><span class="v">x</span> ≥ 2</td></tr>
+    <tr><td class="m"><span class="v">h</span>(<span class="v">x</span>) = <span class="frac"><i>5</i><i><span class="rad"><i><span class="v">x</span></i></span></i></span></td><td>as duas: <span class="m"><span class="v">x</span> ≥ 0</span> e <span class="m"><span class="rad"><i><span class="v">x</span></i></span> ≠ 0</span></td><td class="m"><span class="v">x</span> &gt; 0</td></tr>
+    <tr><td class="m"><span class="v">p</span>(<span class="v">x</span>) = 3<span class="v">x</span>² − <span class="v">x</span> + 7</td><td>nenhuma</td><td class="m">ℝ</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em problemas, o <strong>contexto</strong> restringe ainda mais. Algumas restrições típicas:</p>
+<ul>
+  <li><strong>Contagens</strong> (pessoas, peças, ingressos): só números naturais. O gráfico é formado por pontos isolados, não por uma linha contínua.</li>
+  <li><strong>Tempo e distância</strong>: não negativos; às vezes limitados (a bola só está no ar até tocar o chão).</li>
+  <li><strong>Medidas de figuras</strong>: positivas. Uma caixa feita recortando quadrados de lado <span class="m"><span class="v">x</span></span> de uma folha de 30 cm por 20 cm exige <span class="m">20 − 2<span class="v">x</span> &gt; 0</span>, ou seja, <span class="m">0 &lt; <span class="v">x</span> &lt; 10</span>.</li>
+</ul>
+<div class="box warn">
+  <span class="tag">A restrição mais forte é a que vale</span>
+  <p>Na caixa, <span class="m">30 − 2<span class="v">x</span> &gt; 0</span> daria <span class="m"><span class="v">x</span> &lt; 15</span>, mas o lado de 20 cm acaba antes. Quando há várias condições, o domínio é o trecho em que <strong>todas</strong> valem ao mesmo tempo.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Identifique os eixos antes de tudo</span>
+  <p>Leia o que está no eixo horizontal e no vertical, com as unidades. Muitos erros de leitura vêm de achar que o gráfico mostra uma grandeza quando mostra outra (velocidade em vez de posição, variação em vez de total).</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Pergunte: dão o x ou o y?</span>
+  <p>Se o enunciado fornece a entrada, calcule <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span>. Se fornece a saída, resolva <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">k</span></span>. Escrever isso na margem evita metade dos distratores.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Em funções por partes, localize a faixa</span>
+  <p>Antes de aplicar a fórmula, descubra em que intervalo o valor dado está. Tarifas por faixa e “hora ou fração” são regras diferentes para cada trecho.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Para domínio, teste os extremos</span>
+  <p>Substitua os extremos das alternativas na fórmula ou no contexto. Se um valor zera um denominador, deixa uma raiz negativa ou dá uma medida nula, ele não pode estar no domínio.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Função típica</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>posição, velocidade e temperatura em função do tempo</td><td>leia o eixo vertical: um gráfico <span class="m"><span class="v">v</span> × <span class="v">t</span></span> não mostra onde o móvel está</td></tr>
+    <tr><td><strong>Química</strong></td><td>curvas de solubilidade em função da temperatura</td><td>cada temperatura tem uma única solubilidade: é função</td></tr>
+    <tr><td><strong>Biologia</strong></td><td>tamanho de população, atividade enzimática em função do pH</td><td>o ponto máximo do gráfico é o “ótimo”</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>climogramas, pirâmides etárias, séries históricas</td><td>o domínio é o período mostrado; não extrapole para fora dele</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em todas essas leituras valem as mesmas perguntas desta página: qual é a entrada, qual é a saída, onde a curva sobe, onde desce, qual o maior e o menor valor.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Duas flechas chegando a um y: não é função</span> &nbsp;→&nbsp; <span class="c">é função</span></span><small>Proibido é um x com duas saídas.</small></li>
+  <li><span><span class="x">Elemento de A sem flecha: tudo bem</span> &nbsp;→&nbsp; <span class="c">não é função</span></span><small>Todo elemento do domínio precisa de imagem.</small></li>
+  <li><span><span class="x">Imagem = contradomínio</span> &nbsp;→&nbsp; <span class="c">Im ⊂ CD</span></span><small>A imagem é só o que realmente sai.</small></li>
+  <li><span><span class="x">f(2x) = 2f(x)</span> &nbsp;→&nbsp; <span class="c">substituir x por (2x)</span></span><small>Em x² − 1, f(2x) = 4x² − 1.</small></li>
+  <li><span><span class="x">f(a + b) = f(a) + f(b)</span> &nbsp;→&nbsp; <span class="c">calcular f(a + b) direto</span></span><small>f não é um número multiplicando o parêntese.</small></li>
+  <li><span><span class="x">Calcular f(30) quando f(x) = 30</span> &nbsp;→&nbsp; <span class="c">resolver a equação</span></span><small>Dar a saída e pedir a entrada é o caminho de volta.</small></li>
+  <li><span><span class="x">Ler a imagem no eixo x</span> &nbsp;→&nbsp; <span class="c">imagem no eixo y</span></span><small>Domínio: sombra horizontal. Imagem: sombra vertical.</small></li>
+  <li><span><span class="x">Imagem = valores nas pontas do gráfico</span> &nbsp;→&nbsp; <span class="c">do ponto mais baixo ao mais alto</span></span><small>O máximo pode estar no meio.</small></li>
+  <li><span><span class="x">Esquecer o contexto no domínio</span> &nbsp;→&nbsp; <span class="c">medidas positivas, contagens inteiras</span></span><small>A fórmula pode aceitar valores que o problema não aceita.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, identifique o que entra e o que sai antes de calcular.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Reconhecer uma função</span>
+    <p class="enun">A secretaria de uma escola analisou três relações entre conjuntos de seus registros:</p>
+    <p class="enun">I. Cada aluno matriculado associado à sua data de nascimento.<br>II. Cada professor associado às disciplinas que leciona, sabendo que alguns professores lecionam duas disciplinas.<br>III. Cada número da lista de chamada de uma turma associado ao aluno que tem esse número.</p>
+    <p class="enun">Considerando o primeiro conjunto como domínio, são funções</p>
+    <ol class="alt"><li>apenas I.</li><li>apenas II.</li><li>I e III.</li><li>II e III.</li><li>I, II e III.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Em I, cada aluno tem exatamente uma data de nascimento; que vários alunos nasçam no mesmo dia não importa. Em III, cada número de chamada corresponde a exatamente um aluno. As duas são funções.</p>
+      <p>Em II, um professor que leciona duas disciplinas tem <strong>duas</strong> imagens: não é função.</p>
+      <p>A A descarta III sem motivo. A B e a D aceitam II, confundindo “várias flechas chegando” (permitido) com “várias flechas saindo” (proibido). A E ignora o problema dos professores com duas disciplinas.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Função definida por partes</span>
+    <p class="enun">Um estacionamento cobra R$ 10,00 pela primeira hora e R$ 4,00 por hora adicional ou fração de hora. Um cliente deixou o carro estacionado por 3 horas e 20 minutos. Ele pagou</p>
+    <ol class="alt"><li>R$ 18,00.</li><li>R$ 18,80.</li><li>R$ 19,33.</li><li>R$ 22,00.</li><li>R$ 26,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Depois da primeira hora restam 2 h 20 min: duas horas adicionais completas e uma fração, que conta como hora inteira. São 3 horas adicionais:</p>
+      <p class="m">10 + 3 · 4 = 22 reais</p>
+      <p>A A ignora a fração de 20 minutos. A C cobra proporcionalmente ao tempo (<span class="m">10 + 4 · 2,33</span>), o que a regra “ou fração” não permite. A B lê 3 h 20 min como 3,2 h e também cobra proporcionalmente (<span class="m">10 + 4 · 2,2</span>). A E cobra também a primeira hora como adicional (<span class="m">10 + 4 · 4</span>).</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Domínio de uma fórmula</span>
+    <p class="enun">Uma planilha calcula um índice pela fórmula <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="frac"><i><span class="rad"><i><span class="v">x</span> − 2</i></span></i><i><span class="v">x</span> − 5</i></span></span>, e exibe uma mensagem de erro sempre que a conta não pode ser feita com números reais. Os valores de <span class="m"><span class="v">x</span></span> para os quais a planilha <strong>não</strong> exibe erro são os que satisfazem</p>
+    <ol class="alt"><li><span class="m"><span class="v">x</span> ≥ 2</span></li><li><span class="m"><span class="v">x</span> ≠ 5</span></li><li><span class="m"><span class="v">x</span> &gt; 2 e <span class="v">x</span> ≠ 5</span></li><li><span class="m"><span class="v">x</span> ≥ 2 e <span class="v">x</span> ≠ 5</span></li><li><span class="m"><span class="v">x</span> &gt; 5</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Duas condições ao mesmo tempo: radicando não negativo, <span class="m"><span class="v">x</span> − 2 ≥ 0</span>, e denominador não nulo, <span class="m"><span class="v">x</span> ≠ 5</span>. Logo <span class="m"><span class="v">x</span> ≥ 2</span> e <span class="m"><span class="v">x</span> ≠ 5</span>.</p>
+      <p>Com <span class="m"><span class="v">x</span> = 2</span> a conta dá <span class="m"><span class="frac"><i>0</i><i>−3</i></span> = 0</span>, sem erro: por isso o 2 entra. A C exclui o 2 à toa. A A esquece o denominador; a B esquece a raiz. A E exclui o trecho entre 2 e 5, onde a conta funciona (com <span class="m"><span class="v">x</span> = 3</span>: <span class="m"><span class="frac"><i>1</i><i>−2</i></span></span>).</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Imagem num conjunto finito</span>
+    <p class="enun">Considere a função <span class="m"><span class="v">g</span>: <span class="v">A</span> → <span class="v">B</span></span>, com <span class="m"><span class="v">A</span> = {−2, −1, 0, 1, 2}</span>, <span class="m"><span class="v">B</span> = {0, 1, 2, 3, 4, 5}</span> e <span class="m"><span class="v">g</span>(<span class="v">x</span>) = <span class="v">x</span>²</span>. A imagem de <span class="m"><span class="v">g</span></span> é</p>
+    <ol class="alt"><li><span class="m">{0, 1, 2, 3, 4, 5}</span></li><li><span class="m">{0, 1, 4}</span></li><li><span class="m">{−2, −1, 0, 1, 2}</span></li><li><span class="m">{1, 4}</span></li><li><span class="m">{−4, −1, 0, 1, 4}</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">g</span>(−2) = 4, &nbsp;<span class="v">g</span>(−1) = 1, &nbsp;<span class="v">g</span>(0) = 0, &nbsp;<span class="v">g</span>(1) = 1, &nbsp;<span class="v">g</span>(2) = 4</p>
+      <p>Os valores que realmente saem são 0, 1 e 4: <span class="m"><span class="v">Im</span>(<span class="v">g</span>) = {0, 1, 4}</span>. Repetições não se escrevem duas vezes num conjunto.</p>
+      <p>A A é o contradomínio e a C, o domínio. A D esquece <span class="m"><span class="v">g</span>(0) = 0</span>. A E calcula <span class="m">−2²</span> em vez de <span class="m">(−2)²</span>, e o resultado nem está contido em <span class="m"><span class="v">B</span></span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Domínio pelo contexto</span>
+    <p class="enun">De uma folha retangular de 30 cm por 20 cm recortam-se, nos quatro cantos, quadrados de lado <span class="m"><span class="v">x</span></span> centímetros, e dobram-se as abas para formar uma caixa sem tampa. O volume da caixa é <span class="m"><span class="v">V</span>(<span class="v">x</span>) = <span class="v">x</span>(30 − 2<span class="v">x</span>)(20 − 2<span class="v">x</span>)</span>. Para que a caixa possa ser construída, o domínio de <span class="m"><span class="v">V</span></span> deve ser</p>
+    <ol class="alt"><li><span class="m">0 &lt; <span class="v">x</span> &lt; 15</span></li><li><span class="m">0 &lt; <span class="v">x</span> &lt; 10</span></li><li><span class="m"><span class="v">x</span> &gt; 0</span></li><li><span class="m">0 &lt; <span class="v">x</span> &lt; 20</span></li><li><span class="m">10 &lt; <span class="v">x</span> &lt; 15</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>As três medidas da caixa precisam ser positivas ao mesmo tempo: <span class="m"><span class="v">x</span> &gt; 0</span>, <span class="m">30 − 2<span class="v">x</span> &gt; 0</span> (<span class="m"><span class="v">x</span> &lt; 15</span>) e <span class="m">20 − 2<span class="v">x</span> &gt; 0</span> (<span class="m"><span class="v">x</span> &lt; 10</span>). Vale a mais restritiva: <span class="m">0 &lt; <span class="v">x</span> &lt; 10</span>.</p>
+      <p>A A usa só o lado de 30 cm. A D esquece que se recorta <span class="m"><span class="v">x</span></span> dos <strong>dois</strong> lados (<span class="m">20 − <span class="v">x</span> &gt; 0</span>). A C ignora o tamanho da folha. A E é justamente o trecho em que <span class="m">20 − 2<span class="v">x</span></span> é negativo e a fórmula dá volume negativo.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Quando y não é função de x</span>
+    <p class="enun">Em uma turma, há alunos com a mesma altura. Em qual das situações a seguir a grandeza <span class="m"><span class="v">y</span></span> <strong>não</strong> é função da grandeza <span class="m"><span class="v">x</span></span>?</p>
+    <ol class="alt"><li><span class="m"><span class="v">y</span></span> é o aluno da turma cuja altura é <span class="m"><span class="v">x</span></span> cm.</li><li><span class="m"><span class="v">y</span></span> é a área de um quadrado de lado <span class="m"><span class="v">x</span></span> cm.</li><li><span class="m"><span class="v">y</span></span> é o preço pago por <span class="m"><span class="v">x</span></span> quilogramas de arroz.</li><li><span class="m"><span class="v">y</span></span> é a temperatura registrada no instante <span class="m"><span class="v">x</span></span>.</li><li><span class="m"><span class="v">y</span></span> é o perímetro de um quadrado de lado <span class="m"><span class="v">x</span></span> cm.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Se dois alunos têm a mesma altura, aquele valor de <span class="m"><span class="v">x</span></span> corresponde a <strong>dois</strong> valores de <span class="m"><span class="v">y</span></span>. Saber a altura não determina o aluno: não é função.</p>
+      <p>Nas outras, a entrada determina a saída sem ambiguidade: o lado determina a área (<span class="m"><span class="v">x</span>²</span>) e o perímetro (<span class="m">4<span class="v">x</span></span>); a massa determina o preço; o instante determina a temperatura registrada, ainda que a mesma temperatura se repita em instantes diferentes (várias entradas com a mesma saída é permitido).</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Substituir uma expressão</span>
+    <p class="enun">Dada a função <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span>, a expressão de <span class="m"><span class="v">f</span>(2<span class="v">x</span>)</span> é</p>
+    <ol class="alt"><li><span class="m">2<span class="v">x</span>² − 1</span></li><li><span class="m">2<span class="v">x</span>² − 2</span></li><li><span class="m">4<span class="v">x</span>² − 1</span></li><li><span class="m">4<span class="v">x</span>² − 4</span></li><li><span class="m">4<span class="v">x</span>² − 4<span class="v">x</span> + 1</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Troque cada <span class="m"><span class="v">x</span></span> por <span class="m">(2<span class="v">x</span>)</span>, com parênteses:</p>
+      <p class="m"><span class="v">f</span>(2<span class="v">x</span>) = (2<span class="v">x</span>)² − 1 = 4<span class="v">x</span>² − 1</p>
+      <p>A A esquece os parênteses: <span class="m">2<span class="v">x</span>²</span> eleva só o <span class="m"><span class="v">x</span></span>. A B é <span class="m">2 · <span class="v">f</span>(<span class="v">x</span>)</span>, e a D é <span class="m">4 · <span class="v">f</span>(<span class="v">x</span>)</span>. A E é <span class="m">(2<span class="v">x</span> − 1)²</span>, que eleva ao quadrado a expressão inteira. <strong>Conferência</strong> com <span class="m"><span class="v">x</span> = 1</span>: <span class="m"><span class="v">f</span>(2) = 3</span>, e só a C dá 3.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Imagem a partir do gráfico</span>
+    <p class="enun">O gráfico de uma função <span class="m"><span class="v">f</span></span> é formado por dois segmentos de reta: o primeiro liga os pontos <span class="m">(−2, 1)</span> e <span class="m">(1, 4)</span>; o segundo liga <span class="m">(1, 4)</span> e <span class="m">(5, 0)</span>. As extremidades pertencem ao gráfico. A imagem de <span class="m"><span class="v">f</span></span> é o intervalo</p>
+    <ol class="alt"><li><span class="m">[−2, 5]</span></li><li><span class="m">[1, 4]</span></li><li><span class="m">[0, 5]</span></li><li><span class="m">[−2, 4]</span></li><li><span class="m">[0, 4]</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A imagem é a projeção do gráfico no eixo <span class="m"><span class="v">y</span></span>. O ponto mais alto tem <span class="m"><span class="v">y</span> = 4</span>; o mais baixo, <span class="m"><span class="v">y</span> = 0</span>, no ponto <span class="m">(5, 0)</span>. Como os segmentos são contínuos, todos os valores entre eles são atingidos: <span class="m">[0, 4]</span>.</p>
+      <p>A A é o domínio (projeção no eixo <span class="m"><span class="v">x</span></span>). A B considera só o primeiro segmento. A C e a D misturam valores de <span class="m"><span class="v">x</span></span> e de <span class="m"><span class="v">y</span></span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · O caminho de volta</span>
+    <p class="enun">Em uma cidade, o preço de uma corrida de táxi, em reais, é dado por <span class="m"><span class="v">P</span>(<span class="v">d</span>) = 5 + 2,5<span class="v">d</span></span>, em que <span class="m"><span class="v">d</span></span> é a distância percorrida em quilômetros. Um passageiro pagou R$ 30,00 por uma corrida. A distância percorrida foi de</p>
+    <ol class="alt"><li>6 km.</li><li>10 km.</li><li>12 km.</li><li>14 km.</li><li>80 km.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Foi dada a saída; procura-se a entrada:</p>
+      <p class="m">5 + 2,5<span class="v">d</span> = 30 &nbsp;→&nbsp; 2,5<span class="v">d</span> = 25 &nbsp;→&nbsp; <span class="v">d</span> = 10 km</p>
+      <p>A E calcula <span class="m"><span class="v">P</span>(30) = 80</span>, o preço de uma corrida de 30 km. A C divide 30 por 2,5 e esquece a parte fixa. A D soma os 5 reais em vez de subtrair. A A divide 30 pela tarifa fixa.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Enuncio a definição de função: a cada x, um único y</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Identifico variável independente e dependente num texto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido se um diagrama de flechas ou uma tabela representa uma função</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo domínio, contradomínio e imagem e sei que <span class="m"><span class="v">Im</span> ⊂ <span class="v">CD</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo <span class="m"><span class="v">f</span>(<span class="v">a</span>)</span>, inclusive com negativos e expressões como <span class="m"><span class="v">f</span>(2<span class="v">x</span>)</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que <span class="m"><span class="v">f</span>(<span class="v">a</span> + <span class="v">b</span>)</span> em geral é diferente de <span class="m"><span class="v">f</span>(<span class="v">a</span>) + <span class="v">f</span>(<span class="v">b</span>)</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">k</span></span> quando o enunciado dá a saída</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico funções definidas por partes, como “hora ou fração”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o teste da reta vertical para reconhecer gráficos de funções</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio domínio e imagem como projeções do gráfico nos eixos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio máximos, mínimos, zeros e intervalos de crescimento, dando intervalos em <span class="m"><span class="v">x</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro o domínio de fórmulas com denominador e raiz quadrada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Restrinjo o domínio pelo contexto: medidas positivas, contagens inteiras</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez de leitura de gráficos de outras áreas (Física, Química, Geografia). Depois siga para <strong>Função afim: gráfico, coeficientes e aplicações</strong>, a primeira família de funções do bloco.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>33 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-23-conceito-funcao-dominio-imagem.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-23";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

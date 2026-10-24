@@ -1,0 +1,1034 @@
+<title>Logaritmos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 9 de 18</p>
+        <h1>Logaritmos: definição, propriedades e equações</h1>
+        <p class="deck">Logaritmo é só um nome para o expoente. Ele existe para responder à pergunta que a função exponencial deixa aberta: “a que potência devo elevar a base para obter este número?”. Com três propriedades e dois ou três valores dados no enunciado, o ENEM espera que você descubra tempos, contagens e expoentes que não fecham por igualdade de bases.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Equivalência entre potência e logaritmo: 2 elevado a 5 é igual a 32 equivale a logaritmo de 32 na base 2 igual a 5. A base continua base, a potência vira logaritmando e o expoente vira o logaritmo">
+  <defs>
+    <marker id="m27h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-3)"/></marker>
+  </defs>
+  <text x="96" y="58" text-anchor="middle" class="svg-ttl" style="fill:var(--c1);font-size:34px">2</text>
+  <text x="118" y="36" text-anchor="middle" class="svg-ttl" style="fill:var(--c2);font-size:22px">5</text>
+  <text x="152" y="58" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2);font-size:28px">=</text>
+  <text x="204" y="58" text-anchor="middle" class="svg-ttl" style="fill:var(--c3);font-size:34px">32</text>
+  <text x="66" y="150" text-anchor="middle" class="svg-ttl" style="fill:var(--ink);font-size:28px">log</text>
+  <text x="96" y="162" text-anchor="middle" class="svg-ttl" style="fill:var(--c1);font-size:18px">2</text>
+  <text x="140" y="150" text-anchor="middle" class="svg-ttl" style="fill:var(--c3);font-size:30px">32</text>
+  <text x="186" y="150" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2);font-size:28px">=</text>
+  <text x="224" y="150" text-anchor="middle" class="svg-ttl" style="fill:var(--c2);font-size:34px">5</text>
+  <text x="150" y="108" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-3);font-size:22px">⇔</text>
+  <text x="28" y="104" class="svg-lbl" style="fill:var(--c1)">base</text>
+  <text x="272" y="104" text-anchor="end" class="svg-lbl" style="fill:var(--c2)">expoente</text>
+  <text x="150" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">o logaritmo é o expoente</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>8 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Potenciação e radiciação · Função exponencial</dd></div>
+      <div><dt>Destrava</dt><dd>Função logarítmica (pH, Richter, decibéis), juros compostos e meia-vida</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O logaritmo aparece na prova quase sempre como ferramenta, com os valores necessários dados no enunciado (“use log 2 = 0,30”). As formas mais comuns:</p>
+<ul>
+  <li><strong>Descobrir um tempo:</strong> em quantos anos um investimento dobra, em quantas horas uma cultura chega a certo tamanho, quando um material cai a uma fração.</li>
+  <li><strong>Calcular com valores dados:</strong> obter <span class="m">log 72</span> ou <span class="m">log 1,5</span> a partir de <span class="m">log 2</span> e <span class="m">log 3</span>.</li>
+  <li><strong>Resolver equações logarítmicas</strong> simples, respeitando as condições de existência.</li>
+  <li><strong>Interpretar escalas</strong> (pH, Richter, decibéis), que são o assunto seguinte e usam tudo o que está aqui.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Ler <span class="m">log<sub><span class="v">b</span></sub> <span class="v">a</span></span> como uma pergunta: <strong>“<span class="v">b</span> elevado a quanto dá <span class="v">a</span>?”</strong>. Quem faz essa tradução resolve de cabeça <span class="m">log<sub>2</sub> 32 = 5</span>, <span class="m">log 0,001 = −3</span> e <span class="m">log<sub>9</sub> 3 = <span class="frac"><i>1</i><i>2</i></span></span>, e não esquece as propriedades, que são as regras de potência escritas ao contrário.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A definição: o logaritmo é um expoente</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m">log<sub><span class="v">b</span></sub> <span class="v">a</span> = <span class="v">x</span> &nbsp;⇔&nbsp; <span class="v">b</span><sup><span class="v">x</span></sup> = <span class="v">a</span></p>
+  <p><span class="m"><span class="v">b</span></span> é a <strong>base</strong>, <span class="m"><span class="v">a</span></span> é o <strong>logaritmando</strong> e <span class="m"><span class="v">x</span></span> é o <strong>logaritmo</strong>. Condições de existência: <span class="m"><span class="v">a</span> &gt; 0</span>, <span class="m"><span class="v">b</span> &gt; 0</span> e <span class="m"><span class="v">b</span> ≠ 1</span>.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Logaritmo</th><th>Pergunta</th><th>Valor</th></tr></thead>
+  <tbody>
+    <tr><td class="m">log<sub>2</sub> 32</td><td>2 elevado a quanto dá 32?</td><td class="m">5</td></tr>
+    <tr><td class="m">log<sub>3</sub> <span class="frac"><i>1</i><i>9</i></span></td><td>3 elevado a quanto dá <span class="m"><span class="frac"><i>1</i><i>9</i></span></span>?</td><td class="m">−2</td></tr>
+    <tr><td class="m">log<sub>9</sub> 3</td><td>9 elevado a quanto dá 3?</td><td class="m"><span class="frac"><i>1</i><i>2</i></span></td></tr>
+    <tr><td class="m">log 1 000</td><td>10 elevado a quanto dá 1 000?</td><td class="m">3</td></tr>
+    <tr><td class="m">log 0,01</td><td>10 elevado a quanto dá 0,01?</td><td class="m">−2</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Duas notações especiais: sem base escrita, <span class="m">log <span class="v">a</span></span> é o <strong>logaritmo decimal</strong> (base 10), o mais usado na prova. E <span class="m">ln <span class="v">a</span></span> é o <strong>logaritmo natural</strong>, de base <span class="m"><span class="v">e</span> ≈ 2,718</span>, que aparece em modelos de crescimento contínuo.</p>
+<div class="box warn">
+  <span class="tag">Por que o logaritmando tem de ser positivo</span>
+  <p>Base positiva elevada a qualquer expoente dá resultado positivo. Não existe <span class="m"><span class="v">x</span></span> com <span class="m">10<sup><span class="v">x</span></sup> = 0</span> ou <span class="m">10<sup><span class="v">x</span></sup> = −5</span>, logo <span class="m">log 0</span> e <span class="m">log(−5)</span> não existem. O <strong>logaritmo</strong>, porém, pode ser negativo: <span class="m">log 0,01 = −2</span>.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Consequências imediatas da definição</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Igualdade</th><th>Por quê</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="m">log<sub><span class="v">b</span></sub> 1 = 0</td><td class="m"><span class="v">b</span><sup>0</sup> = 1</td><td class="m">log 1 = 0</td></tr>
+    <tr><td class="m">log<sub><span class="v">b</span></sub> <span class="v">b</span> = 1</td><td class="m"><span class="v">b</span><sup>1</sup> = <span class="v">b</span></td><td class="m">log 10 = 1</td></tr>
+    <tr><td class="m">log<sub><span class="v">b</span></sub> <span class="v">b</span><sup><span class="v">n</span></sup> = <span class="v">n</span></td><td>o expoente já está à vista</td><td class="m">log 10<sup>−7</sup> = −7</td></tr>
+    <tr><td class="m"><span class="v">b</span><sup>log<sub><span class="v">b</span></sub> <span class="v">a</span></sup> = <span class="v">a</span></td><td>elevar a base ao expoente que dá <span class="m"><span class="v">a</span></span></td><td class="m">10<sup>log 7</sup> = 7</td></tr>
+    <tr><td class="m">log<sub><span class="v">b</span></sub> <span class="v">a</span> = log<sub><span class="v">b</span></sub> <span class="v">c</span> ⇔ <span class="v">a</span> = <span class="v">c</span></td><td>expoentes iguais, potências iguais</td><td class="m">log <span class="v">x</span> = log 5 ⇒ <span class="v">x</span> = 5</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Um uso imediato no ENEM: o logaritmo decimal conta “zeros”. Um número entre <span class="m">10<sup>30</sup></span> e <span class="m">10<sup>31</sup></span> tem logaritmo entre 30 e 31 e é escrito com <strong>31 algarismos</strong>. Em geral, o número de algarismos de um inteiro positivo <span class="m"><span class="v">N</span></span> é a parte inteira de <span class="m">log <span class="v">N</span></span> mais 1.</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> As três propriedades operatórias</h2>
+<p>Como logaritmos são expoentes, suas propriedades são as regras de potência lidas de trás para frente. Para <span class="m"><span class="v">M</span>, <span class="v">N</span> &gt; 0</span>:</p>
+<div class="eq">
+  <span class="lbl">1 · Produto vira soma</span>
+  <p class="m">log<sub><span class="v">b</span></sub>(<span class="v">M</span> · <span class="v">N</span>) = log<sub><span class="v">b</span></sub> <span class="v">M</span> + log<sub><span class="v">b</span></sub> <span class="v">N</span></p>
+  <p>Vem de <span class="m"><span class="v">b</span><sup><span class="v">x</span></sup> · <span class="v">b</span><sup><span class="v">y</span></sup> = <span class="v">b</span><sup><span class="v">x</span> + <span class="v">y</span></sup></span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">2 · Quociente vira diferença</span>
+  <p class="m">log<sub><span class="v">b</span></sub>(<span class="frac"><i><span class="v">M</span></i><i><span class="v">N</span></i></span>) = log<sub><span class="v">b</span></sub> <span class="v">M</span> − log<sub><span class="v">b</span></sub> <span class="v">N</span></p>
+</div>
+<div class="eq">
+  <span class="lbl">3 · Expoente desce multiplicando</span>
+  <p class="m">log<sub><span class="v">b</span></sub> <span class="v">M</span><sup><span class="v">k</span></sup> = <span class="v">k</span> · log<sub><span class="v">b</span></sub> <span class="v">M</span></p>
+  <p>Vale também para raízes: <span class="m">log <span class="rad"><i>2</i></span> = log 2<sup>1/2</sup> = <span class="frac"><i>1</i><i>2</i></span> log 2</span>.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 176" role="img" aria-label="Régua logarítmica: os números de 1 a 10 marcados a distâncias proporcionais a seus logaritmos. O segmento de 1 a 2 somado ao segmento de 1 a 3 dá o segmento de 1 a 6, porque log 2 mais log 3 é igual a log 6">
+  <line x1="30" y1="112" x2="360" y2="112" style="stroke:var(--ink-2);stroke-width:1.6"/>
+  <line x1="30" y1="105" x2="30" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="30" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1</text>
+  <line x1="129.3" y1="105" x2="129.3" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="129.3" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">2</text>
+  <line x1="187.5" y1="105" x2="187.5" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="187.5" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3</text>
+  <line x1="228.7" y1="105" x2="228.7" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="228.7" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">4</text>
+  <line x1="260.7" y1="105" x2="260.7" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="260.7" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">5</text>
+  <line x1="286.8" y1="105" x2="286.8" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="286.8" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">6</text>
+  <line x1="308.9" y1="105" x2="308.9" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="308.9" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">7</text>
+  <line x1="328" y1="105" x2="328" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="328" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">8</text>
+  <line x1="344.9" y1="105" x2="344.9" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <line x1="360" y1="105" x2="360" y2="119" style="stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="360" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink)">10</text>
+  <rect x="30" y="66" width="99.3" height="12" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="79.7" y="60" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">log 2</text>
+  <rect x="129.3" y="66" width="157.5" height="12" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="208.1" y="60" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">log 3</text>
+  <rect x="30" y="86" width="256.8" height="12" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="294.8" y="96" class="svg-lbl" style="fill:var(--c3)">log 6 = log 2 + log 3</text>
+  <text x="360" y="160" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">distância até n é proporcional a log n</text>
+  <text x="30" y="24" class="svg-lbl" style="fill:var(--ink-2)">multiplicar números = somar comprimentos</text>
+</svg>
+<figcaption><b>A régua logarítmica.</b> Marcando cada número <span class="m"><span class="v">n</span></span> a uma distância proporcional a <span class="m">log <span class="v">n</span></span>, o trecho de 1 a 2 emendado ao trecho de 1 a 3 chega exatamente ao 6. Era assim que as réguas de cálculo multiplicavam antes das calculadoras: somando comprimentos.</figcaption>
+</figure>
+<div class="box warn">
+  <span class="tag">O que as propriedades não dizem</span>
+  <p><span class="m">log(<span class="v">M</span> + <span class="v">N</span>)</span> não tem regra: <strong>não</strong> é <span class="m">log <span class="v">M</span> + log <span class="v">N</span></span>. E <span class="m"><span class="frac"><i>log <span class="v">M</span></i><i>log <span class="v">N</span></i></span></span> não é <span class="m">log <span class="v">M</span> − log <span class="v">N</span></span>. Teste com números: <span class="m">log(10 + 10) = log 20 ≈ 1,30</span>, mas <span class="m">log 10 + log 10 = 2</span>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Mudança de base</h2>
+<p>Calculadoras e tabelas trazem logaritmos decimais. Para qualquer outra base, divida:</p>
+<div class="eq">
+  <span class="lbl">Fórmula de mudança de base</span>
+  <p class="m">log<sub><span class="v">b</span></sub> <span class="v">a</span> = <span class="frac"><i>log <span class="v">a</span></i><i>log <span class="v">b</span></i></span></p>
+  <p>Exemplos: <span class="m">log<sub>2</sub> 10 = <span class="frac"><i>log 10</i><i>log 2</i></span> = <span class="frac"><i>1</i><i>0,301</i></span> ≈ 3,32</span> e <span class="m">log<sub>4</sub> 32 = <span class="frac"><i>log<sub>2</sub> 32</i><i>log<sub>2</sub> 4</i></span> = <span class="frac"><i>5</i><i>2</i></span> = 2,5</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Quem fica em cima</span>
+  <p>O logaritmando vai para o numerador; a base, para o denominador. Uma conferência rápida: <span class="m">log<sub>2</sub> 8</span> tem de dar 3, e <span class="m"><span class="frac"><i>log 8</i><i>log 2</i></span> = <span class="frac"><i>0,903</i><i>0,301</i></span> = 3</span>. Invertida, a fração daria <span class="m"><span class="frac"><i>1</i><i>3</i></span></span>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Calculando com log 2 e log 3</h2>
+<p>Com <span class="m">log 2 ≈ 0,301</span>, <span class="m">log 3 ≈ 0,477</span> e <span class="m">log 10 = 1</span>, sai o logaritmo de todo número que se escreve com fatores 2, 3 e 5 (porque <span class="m">5 = <span class="frac"><i>10</i><i>2</i></span></span>):</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Número</th><th>Decomposição</th><th>Logaritmo</th></tr></thead>
+  <tbody>
+    <tr><td class="m">4</td><td class="m">2²</td><td class="m">2 · 0,301 = 0,602</td></tr>
+    <tr><td class="m">5</td><td class="m">10 ÷ 2</td><td class="m">1 − 0,301 = 0,699</td></tr>
+    <tr><td class="m">6</td><td class="m">2 · 3</td><td class="m">0,301 + 0,477 = 0,778</td></tr>
+    <tr><td class="m">9</td><td class="m">3²</td><td class="m">2 · 0,477 = 0,954</td></tr>
+    <tr><td class="m">12</td><td class="m">2² · 3</td><td class="m">0,602 + 0,477 = 1,079</td></tr>
+    <tr><td class="m">1,5</td><td class="m">3 ÷ 2</td><td class="m">0,477 − 0,301 = 0,176</td></tr>
+    <tr><td class="m">0,9</td><td class="m">9 ÷ 10</td><td class="m">0,954 − 1 = −0,046</td></tr>
+    <tr><td class="m">0,2</td><td class="m">2 ÷ 10</td><td class="m">0,301 − 1 = −0,699</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Números menores que 1 têm log negativo</span>
+  <p>Se o resultado de <span class="m">log 0,9</span> ou <span class="m">log 0,2</span> saiu positivo, houve erro de sinal. Esse detalhe é o que decide as questões de decaimento, em que a conta é uma divisão de dois logaritmos negativos.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Equações exponenciais resolvidas com log</h2>
+<p>Quando as bases não fecham, aplique logaritmo dos dois lados e use a propriedade da potência para trazer a incógnita para baixo:</p>
+<div class="eq">
+  <span class="lbl">Exemplo 1 · Para que expoente 2 dá 10?</span>
+  <p class="m">2<sup><span class="v">x</span></sup> = 10 &nbsp;→&nbsp; <span class="v">x</span> · log 2 = log 10 &nbsp;→&nbsp; <span class="v">x</span> = <span class="frac"><i>1</i><i>0,301</i></span> ≈ 3,32</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 240" role="img" aria-label="Gráfico de y igual a 2 elevado a x. Uma reta horizontal em y igual a 10 corta a curva num ponto cuja abscissa, lida no eixo x, é aproximadamente 3,32, que é o logaritmo de 10 na base 2">
+  <defs>
+    <marker id="m27l" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="56" y1="200" x2="418" y2="200" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m27l)"/>
+  <line x1="102" y1="204" x2="102" y2="16" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m27l)"/>
+  <line x1="172" y1="197" x2="172" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="172" y="215" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="242" y1="197" x2="242" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="242" y="215" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="312" y1="197" x2="312" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="312" y="215" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="382" y1="197" x2="382" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="382" y="215" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="99" y1="179.3" x2="105" y2="179.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95" y="183.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="99" y1="158.6" x2="105" y2="158.6" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95" y="162.6" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="99" y1="117.2" x2="105" y2="117.2" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95" y="121.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="99" y1="96.5" x2="105" y2="96.5" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95" y="100.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">10</text>
+  <line x1="99" y1="34.4" x2="105" y2="34.4" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95" y="38.4" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">16</text>
+  <text x="418" y="192" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="110" y="22" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <polyline points="60,193.2 62.7,193 65.5,192.8 68.2,192.6 70.9,192.4 73.6,192.2 76.4,192 79.1,191.7 81.8,191.5 84.6,191.3 87.3,191 90,190.8 92.8,190.6 95.5,190.3 98.2,190 100.9,189.8 103.7,189.5 106.4,189.2 109.1,188.9 111.9,188.6 114.6,188.3 117.3,187.9 120.1,187.6 122.8,187.3 125.5,186.9 128.2,186.6 131,186.2 133.7,185.8 136.4,185.4 139.2,185 141.9,184.6 144.6,184.2 147.4,183.8 150.1,183.3 152.8,182.9 155.5,182.4 158.3,181.9 161,181.4 163.7,180.9 166.5,180.4 169.2,179.9 171.9,179.3 174.7,178.7 177.4,178.2 180.1,177.6 182.8,176.9 185.6,176.3 188.3,175.7 191,175 193.8,174.3 196.5,173.6 199.2,172.9 202,172.1 204.7,171.4 207.4,170.6 210.2,169.8 212.9,169 215.6,168.1 218.3,167.2 221.1,166.3 223.8,165.4 226.5,164.5 229.3,163.5 232,162.5 234.7,161.5 237.4,160.4 240.2,159.3 242.9,158.2 245.6,157.1 248.4,155.9 251.1,154.7 253.8,153.4 256.6,152.2 259.3,150.9 262,149.5 264.8,148.1 267.5,146.7 270.2,145.2 272.9,143.7 275.7,142.2 278.4,140.6 281.1,139 283.9,137.3 286.6,135.6 289.3,133.8 292,132 294.8,130.2 297.5,128.2 300.2,126.3 303,124.3 305.7,122.2 308.4,120.1 311.2,117.9 313.9,115.6 316.6,113.3 319.3,110.9 322.1,108.5 324.8,106 327.5,103.4 330.3,100.8 333,98 335.7,95.2 338.5,92.4 341.2,89.4 343.9,86.4 346.6,83.3 349.4,80.1 352.1,76.8 354.8,73.4 357.6,69.9 360.3,66.4 363,62.7 365.8,59 368.5,55.1 371.2,51.1 373.9,47 376.7,42.9 379.4,38.5 382.1,34.1 384.9,29.6 387.6,24.9" style="fill:none;stroke:var(--c1);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round"/>
+  <line x1="102" y1="96.5" x2="334.5" y2="96.5" style="stroke:var(--c2);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <line x1="334.5" y1="96.5" x2="334.5" y2="200" style="stroke:var(--c2);stroke-width:1.4;stroke-dasharray:4 3"/>
+  <circle cx="334.5" cy="96.5" r="3.5" style="fill:var(--c4)"/>
+  <text x="334.5" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">x ≈ 3,32</text>
+  <text x="324.5" y="88.5" text-anchor="end" class="svg-lbl" style="fill:var(--c4)">2ˣ = 10</text>
+  <text x="388.5" y="52" class="svg-lbl" style="fill:var(--c1)">y = 2ˣ</text>
+</svg>
+<figcaption><b>O logaritmo lido no gráfico.</b> A reta <span class="m"><span class="v">y</span> = 10</span> encontra a curva <span class="m"><span class="v">y</span> = 2<sup><span class="v">x</span></sup></span> entre <span class="m"><span class="v">x</span> = 3</span> (que dá 8) e <span class="m"><span class="v">x</span> = 4</span> (que dá 16). A abscissa exata desse encontro é <span class="m">log<sub>2</sub> 10 ≈ 3,32</span>.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Exemplo 2 · Em quanto tempo um capital dobra a 5% ao ano?</span>
+  <p class="m">1,05<sup><span class="v">t</span></sup> = 2 &nbsp;→&nbsp; <span class="v">t</span> = <span class="frac"><i>log 2</i><i>log 1,05</i></span> ≈ <span class="frac"><i>0,301</i><i>0,0212</i></span> ≈ 14,2 anos</p>
+  <p>Juros simples dobrariam em 20 anos (100% ÷ 5%). Os compostos dobram antes, porque há juros sobre juros.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Isole a potência primeiro</span>
+  <p>Em <span class="m">1 000 · 3<sup><span class="v">t</span></sup> = 50 000</span>, divida por 1 000 antes de aplicar o log: <span class="m">3<sup><span class="v">t</span></sup> = 50</span>. Aplicar log direto exige lembrar que <span class="m">log(1 000 · 3<sup><span class="v">t</span></sup>) = 3 + <span class="v">t</span> log 3</span>, e não <span class="m">3 · <span class="v">t</span> log 3</span>.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Equações logarítmicas</h2>
+<p>Três situações cobrem quase tudo. Em todas, <strong>confira a condição de existência no fim</strong>: substitua a solução e veja se cada logaritmando (e cada base) fica positivo.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Exemplo</th><th>Resolução</th></tr></thead>
+  <tbody>
+    <tr><td>Pela definição</td><td class="m">log<sub>3</sub>(<span class="v">x</span> − 1) = 2</td><td class="m"><span class="v">x</span> − 1 = 3² ⇒ <span class="v">x</span> = 10</td></tr>
+    <tr><td>Mesma base dos dois lados</td><td class="m">log<sub>2</sub>(3<span class="v">x</span> − 1) = log<sub>2</sub>(<span class="v">x</span> + 5)</td><td class="m">3<span class="v">x</span> − 1 = <span class="v">x</span> + 5 ⇒ <span class="v">x</span> = 3</td></tr>
+    <tr><td>Juntar com as propriedades</td><td class="m">log <span class="v">x</span> + log(<span class="v">x</span> + 3) = 1</td><td class="m"><span class="v">x</span>(<span class="v">x</span> + 3) = 10 ⇒ <span class="v">x</span> = 2</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Na terceira, a equação <span class="m"><span class="v">x</span>² + 3<span class="v">x</span> − 10 = 0</span> tem raízes 2 e −5. A raiz −5 é <strong>descartada</strong>: <span class="m">log(−5)</span> não existe. Esquecer essa verificação é o erro mais caro do assunto, porque a alternativa com as duas raízes sempre está lá.</p>
+<div class="box def">
+  <span class="tag">Roteiro</span>
+  <p>1) Escreva as condições de existência. 2) Junte os logaritmos com as propriedades até ter um só de cada lado (ou um log igual a um número). 3) Elimine o log pela definição ou pela igualdade de logaritmandos. 4) Resolva e descarte o que viola as condições.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Decomponha antes de calcular</span>
+  <p>Se o enunciado dá <span class="m">log 2</span> e <span class="m">log 3</span>, todo número da conta deve ser escrito com 2, 3 e 10. Exemplo: <span class="m">72 = 2³ · 3²</span>, <span class="m">50 = <span class="frac"><i>100</i><i>2</i></span></span>, <span class="m">0,9 = <span class="frac"><i>9</i><i>10</i></span></span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Estime a resposta antes de marcar</span>
+  <p>Para <span class="m">3<sup><span class="v">t</span></sup> = 50</span>, saiba que <span class="m">3³ = 27</span> e <span class="m">3<sup>4</sup> = 81</span>: a resposta fica entre 3 e 4. Essa estimativa elimina as alternativas que vêm de divisões invertidas (como 0,28) ou de subtrações (como 1,22).</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Desconfie da alternativa com duas raízes</span>
+  <p>Em equação logarítmica que vira equação do 2º grau, teste cada raiz nos logaritmandos originais antes de marcar o conjunto completo.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Química</strong></td><td>pH <span class="m">= −log[H<sup>+</sup>]</span></td><td>cada unidade de pH é um fator 10 na concentração</td></tr>
+    <tr><td><strong>Física</strong></td><td>nível sonoro em decibéis</td><td>+10 dB significa intensidade 10 vezes maior</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>magnitude de terremotos</td><td>um grau a mais é amplitude 10 vezes maior</td></tr>
+    <tr><td><strong>Matemática Financeira</strong></td><td>tempo para um montante atingir um valor</td><td><span class="m"><span class="v">t</span> = <span class="frac"><i>log(<span class="v">M</span>/<span class="v">C</span>)</i><i>log(1 + <span class="v">i</span>)</i></span></span></td></tr>
+    <tr><td><strong>Química e Biologia</strong></td><td>meia-vida e crescimento de culturas</td><td>tempo = log da razão ÷ log do fator</td></tr>
+  </tbody>
+</table>
+</div>
+<p>As escalas de pH, Richter e decibéis são o tema de <strong>Função logarítmica e aplicações</strong>, o próximo assunto do bloco.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">log(M + N) = log M + log N</span> &nbsp;→&nbsp; <span class="c">só vale para M · N</span></span><small>Soma dentro do log não tem regra.</small></li>
+  <li><span><span class="x">log M ÷ log N = log M − log N</span> &nbsp;→&nbsp; <span class="c">log(M/N) = log M − log N</span></span><small>A diferença é do log do quociente, não do quociente de logs.</small></li>
+  <li><span><span class="x">log 72 = log 8 · log 9</span> &nbsp;→&nbsp; <span class="c">log 8 + log 9</span></span><small>Log do produto é soma dos logs.</small></li>
+  <li><span><span class="x">log₂ 10 = log 2 / log 10</span> &nbsp;→&nbsp; <span class="c">log 10 / log 2</span></span><small>Na mudança de base, a base vai para baixo.</small></li>
+  <li><span><span class="x">log 0,9 &gt; 0</span> &nbsp;→&nbsp; <span class="c">log 0,9 ≈ −0,046</span></span><small>Números entre 0 e 1 têm logaritmo negativo.</small></li>
+  <li><span><span class="x">log 0 = 0</span> &nbsp;→&nbsp; <span class="c">log 0 não existe</span></span><small>Quem vale zero é log 1.</small></li>
+  <li><span><span class="x">aceitar x = −5 em log x + log(x + 3) = 1</span> &nbsp;→&nbsp; <span class="c">descartar</span></span><small>Verifique cada raiz nos logaritmandos originais.</small></li>
+  <li><span><span class="x">log(1 000 · 3ᵗ) = 3t · log 3</span> &nbsp;→&nbsp; <span class="c">3 + t · log 3</span></span><small>O 1 000 vira parcela, não fator.</small></li>
+  <li><span><span class="x">2¹⁰⁰ tem 30 algarismos</span> &nbsp;→&nbsp; <span class="c">31</span></span><small>Algarismos = parte inteira do log + 1.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de usar os valores dados, decomponha os números e estime a resposta.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Tempo para dobrar um capital</span>
+    <p class="enun">Um investidor aplicou um capital a juros compostos de 8% ao ano. Para estimar em quanto tempo o capital dobra, ele usou as aproximações <span class="m">log 2 = 0,30</span> e <span class="m">log 1,08 = 0,033</span>. O tempo encontrado, em anos, foi aproximadamente</p>
+    <ol class="alt"><li>0,11</li><li>0,27</li><li>9</li><li>12,5</li><li>25</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">1,08<sup><span class="v">t</span></sup> = 2 &nbsp;→&nbsp; <span class="v">t</span> · log 1,08 = log 2 &nbsp;→&nbsp; <span class="v">t</span> = <span class="frac"><i>0,30</i><i>0,033</i></span> ≈ 9,1</p>
+      <p>A A inverte a divisão (<span class="m">0,033 ÷ 0,30</span>). A B subtrai os logaritmos, como se <span class="m"><span class="frac"><i>log 2</i><i>log 1,08</i></span></span> fosse <span class="m">log 2 − log 1,08</span>. A D é o tempo em juros simples (100% ÷ 8%). A E divide 2 pela taxa 0,08, sem logaritmo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Logaritmo por decomposição</span>
+    <p class="enun">Um técnico precisa do valor de <span class="m">log 72</span>, mas dispõe apenas das aproximações <span class="m">log 2 = 0,30</span> e <span class="m">log 3 = 0,48</span>. Usando corretamente as propriedades dos logaritmos, ele obtém para <span class="m">log 72</span> o valor</p>
+    <ol class="alt"><li>0,78</li><li>0,864</li><li>0,96</li><li>1,38</li><li>1,86</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Como <span class="m">72 = 2³ · 3²</span>:</p>
+      <p class="m">log 72 = 3 · 0,30 + 2 · 0,48 = 0,90 + 0,96 = 1,86</p>
+      <p><strong>Conferência:</strong> 72 está entre 10 e 100, então o log está entre 1 e 2.</p>
+      <p>A A é <span class="m">log 2 + log 3 = log 6</span>. A B multiplica <span class="m">log 8 · log 9</span>, em vez de somar. A C é só <span class="m">log 9</span>. A D é <span class="m">log 24</span>: usa <span class="m">3 · log 2</span>, mas esquece o expoente 2 do 3.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Condição de existência</span>
+    <p class="enun">O conjunto solução, nos reais, da equação <span class="m">log<sub>2</sub> <span class="v">x</span> + log<sub>2</sub>(<span class="v">x</span> − 2) = 3</span> é</p>
+    <ol class="alt"><li>{−2}</li><li>{4}</li><li>{−2, 4}</li><li>{5}</li><li>∅</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Condições: <span class="m"><span class="v">x</span> &gt; 0</span> e <span class="m"><span class="v">x</span> &gt; 2</span>. Juntando os logs:</p>
+      <p class="m">log<sub>2</sub>[<span class="v">x</span>(<span class="v">x</span> − 2)] = 3 &nbsp;→&nbsp; <span class="v">x</span>² − 2<span class="v">x</span> = 8 &nbsp;→&nbsp; <span class="v">x</span> = 4 ou <span class="v">x</span> = −2</p>
+      <p>Só 4 satisfaz as condições. <strong>Conferência:</strong> <span class="m">log<sub>2</sub> 4 + log<sub>2</sub> 2 = 2 + 1 = 3</span>.</p>
+      <p>A C esquece de verificar as raízes; a A fica justamente com a raiz proibida. A D soma os logaritmandos, <span class="m">log<sub>2</sub>(2<span class="v">x</span> − 2) = 3</span>, em vez de multiplicá-los. A E descarta também a raiz válida.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Contar algarismos</span>
+    <p class="enun">Um professor desafiou a turma a descobrir quantos algarismos tem o número <span class="m">2<sup>100</sup></span> quando escrito no sistema decimal, sem calculá-lo. Dado que <span class="m">log 2 ≈ 0,301</span>, a resposta correta é</p>
+    <ol class="alt"><li>30</li><li>31</li><li>100</li><li>101</li><li>200</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">log 2<sup>100</sup> = 100 · 0,301 = 30,1 &nbsp;→&nbsp; 10<sup>30</sup> &lt; 2<sup>100</sup> &lt; 10<sup>31</sup></p>
+      <p>Um número entre <span class="m">10<sup>30</sup></span> (que tem 31 algarismos) e <span class="m">10<sup>31</sup></span> tem 31 algarismos.</p>
+      <p>A A toma a parte inteira do log e esquece de somar 1 (<span class="m">10<sup>30</sup></span> já tem 31 algarismos). A C confunde o número de algarismos com o expoente; a D soma 1 a esse expoente. A E multiplica a base pelo expoente.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Mudança de base</span>
+    <p class="enun">A área ocupada por uma colônia de fungos em uma placa de cultura quadruplica a cada semana, segundo o modelo <span class="m"><span class="v">A</span>(<span class="v">t</span>) = <span class="v">A</span><sub>0</sub> · 4<sup><span class="v">t</span></sup></span>, com <span class="m"><span class="v">t</span></span> em semanas. O tempo necessário para que a área fique 32 vezes maior que a inicial, em semanas, é</p>
+    <ol class="alt"><li>0,4</li><li>2</li><li>2,5</li><li>8</li><li>28</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">4<sup><span class="v">t</span></sup> = 32 &nbsp;→&nbsp; <span class="v">t</span> = log<sub>4</sub> 32 = <span class="frac"><i>log<sub>2</sub> 32</i><i>log<sub>2</sub> 4</i></span> = <span class="frac"><i>5</i><i>2</i></span> = 2,5</p>
+      <p>Também sai pela mesma base: <span class="m">2<sup>2<span class="v">t</span></sup> = 2<sup>5</sup></span>. <strong>Conferência:</strong> em 2 semanas a área é 16 vezes maior; em 3, 64 vezes. 32 fica entre as duas.</p>
+      <p>A A inverte a mudança de base (<span class="m"><span class="frac"><i>2</i><i>5</i></span></span>). A B para na última semana inteira antes de 32 (16 vezes). A D divide 32 por 4; a E subtrai 4 de 32.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Tempo de crescimento de uma cultura</span>
+    <p class="enun">Uma cultura de bactérias tem população modelada por <span class="m"><span class="v">N</span>(<span class="v">t</span>) = 1 000 · 3<sup><span class="v">t</span></sup></span>, com <span class="m"><span class="v">t</span></span> em horas. Use <span class="m">log 2 = 0,30</span> e <span class="m">log 3 = 0,48</span>. O tempo, em horas, para que a população atinja 50 000 bactérias é aproximadamente</p>
+    <ol class="alt"><li>0,28</li><li>1,22</li><li>3,54</li><li>16,7</li><li>104</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Isole a potência: <span class="m">3<sup><span class="v">t</span></sup> = 50</span>. Como <span class="m">50 = <span class="frac"><i>100</i><i>2</i></span></span>, <span class="m">log 50 = 2 − 0,30 = 1,70</span>:</p>
+      <p class="m"><span class="v">t</span> = <span class="frac"><i>log 50</i><i>log 3</i></span> = <span class="frac"><i>1,70</i><i>0,48</i></span> ≈ 3,54</p>
+      <p><strong>Conferência:</strong> <span class="m">3³ = 27 &lt; 50 &lt; 81 = 3<sup>4</sup></span>, então <span class="m"><span class="v">t</span></span> fica entre 3 e 4.</p>
+      <p>A A inverte a divisão. A B subtrai os logs (<span class="m">1,70 − 0,48</span>). A D divide 50 por 3, como se o crescimento fosse linear. A E divide 50 por <span class="m">log 3</span>, sem tirar o log de 50.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Propriedades verdadeiras e falsas</span>
+    <p class="enun">Ao revisar para uma prova, um estudante escreveu as igualdades abaixo, em que <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> são números reais positivos e os logaritmos são decimais.</p>
+    <p class="enun">I. <span class="m">log(<span class="v">a</span> + <span class="v">b</span>) = log <span class="v">a</span> + log <span class="v">b</span></span><br>II. <span class="m">log <span class="v">a</span>³ = 3 log <span class="v">a</span></span><br>III. <span class="m">log(<span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span>) = <span class="frac"><i>log <span class="v">a</span></i><i>log <span class="v">b</span></i></span></span><br>IV. <span class="m">log 1 = 0</span></p>
+    <p class="enun">São verdadeiras para todos os valores positivos de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> apenas as igualdades</p>
+    <ol class="alt"><li>I e II.</li><li>II e IV.</li><li>II e III.</li><li>I, II e IV.</li><li>III e IV.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>II é a propriedade da potência e IV vem de <span class="m">10<sup>0</sup> = 1</span>: verdadeiras. I é falsa: com <span class="m"><span class="v">a</span> = <span class="v">b</span> = 10</span>, <span class="m">log 20 ≈ 1,30</span>, mas <span class="m">log 10 + log 10 = 2</span>. III é falsa: o log do quociente é a <strong>diferença</strong> dos logs; com <span class="m"><span class="v">a</span> = 100</span> e <span class="m"><span class="v">b</span> = 10</span>, <span class="m">log 10 = 1</span>, e <span class="m"><span class="frac"><i>2</i><i>1</i></span> = 2</span>.</p>
+      <p>A A, a D e a C aceitam uma igualdade falsa (I ou III). A E aceita III e deixa de fora a II, que é verdadeira.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Tempo de decaimento</span>
+    <p class="enun">Um equipamento perde 10% de seu valor a cada ano, sempre em relação ao valor do ano anterior. Considere <span class="m">log 2 = 0,301</span> e <span class="m">log 3 = 0,477</span>. O tempo necessário para que o equipamento valha a metade do preço de compra é de aproximadamente</p>
+    <ol class="alt"><li>0,15 ano</li><li>0,32 ano</li><li>5 anos</li><li>6,5 anos</li><li>10 anos</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Fator 0,9 por ano: <span class="m">0,9<sup><span class="v">t</span></sup> = 0,5</span>. Com <span class="m">log 0,9 = 2 · 0,477 − 1 = −0,046</span> e <span class="m">log 0,5 = −0,301</span>:</p>
+      <p class="m"><span class="v">t</span> = <span class="frac"><i>log 0,5</i><i>log 0,9</i></span> = <span class="frac"><i>−0,301</i><i>−0,046</i></span> ≈ 6,5 anos</p>
+      <p>A A inverte a divisão. A B usa <span class="m">log 9 = 0,954</span> no lugar de <span class="m">log 0,9</span>, esquecendo de subtrair 1. A C supõe perda linear de 10 pontos percentuais do preço original por ano (50% ÷ 10%). A E confunde valer a metade com perder todo o valor, também supondo perda linear (100% ÷ 10%).</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Expressar um logaritmo em letras</span>
+    <p class="enun">Em uma tabela antiga, os valores de <span class="m">log 2</span> e <span class="m">log 3</span> aparecem indicados por <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span>, respectivamente. Em função de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span>, o valor de <span class="m">log 1,5</span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">b</span> − <span class="v">a</span></span></li><li><span class="m"><span class="v">a</span> − <span class="v">b</span></span></li><li><span class="m"><span class="v">a</span> + <span class="v">b</span></span></li><li><span class="m"><span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></span></li><li><span class="m">1 + <span class="v">b</span> − <span class="v">a</span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">log 1,5 = log <span class="frac"><i>3</i><i>2</i></span> = log 3 − log 2 = <span class="v">b</span> − <span class="v">a</span></p>
+      <p><strong>Conferência:</strong> <span class="m">0,477 − 0,301 = 0,176</span>, positivo e pequeno, como deve ser o log de um número entre 1 e 10 próximo de 1.</p>
+      <p>A B é <span class="m">log <span class="frac"><i>2</i><i>3</i></span></span>, negativo. A C é <span class="m">log 6</span>. A D divide os logs, o que dá <span class="m">log<sub>2</sub> 3</span>, não <span class="m">log 1,5</span>. A E é <span class="m">log 15 = log <span class="frac"><i>30</i><i>2</i></span></span>: confunde 1,5 com 15.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Traduzo <span class="m">log<sub><span class="v">b</span></sub> <span class="v">a</span> = <span class="v">x</span></span> em <span class="m"><span class="v">b</span><sup><span class="v">x</span></sup> = <span class="v">a</span></span> e vice-versa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo as condições de existência e explico por que o logaritmando é positivo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo de cabeça logs como <span class="m">log<sub>2</sub> 32</span>, <span class="m">log 0,001</span> e <span class="m">log<sub>9</sub> 3</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso <span class="m">log<sub><span class="v">b</span></sub> 1 = 0</span>, <span class="m">log<sub><span class="v">b</span></sub> <span class="v">b</span> = 1</span> e <span class="m">log<sub><span class="v">b</span></sub> <span class="v">b</span><sup><span class="v">n</span></sup> = <span class="v">n</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico as propriedades do produto, do quociente e da potência</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço as “propriedades falsas”: log da soma e quociente de logs</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Faço mudança de base com o logaritmando em cima</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Obtenho logs de 4, 5, 6, 9, 12, 1,5 e 0,9 a partir de log 2 e log 3</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conto os algarismos de uma potência grande pelo logaritmo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo equações exponenciais com log, isolando a potência antes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o tempo para dobrar ou cair à metade como razão de logaritmos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo equações logarítmicas pela definição ou igualando logaritmandos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Verifico cada raiz nas condições de existência antes de marcar</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez que dão log 2 e log 3 no enunciado. Depois siga para <strong>Função logarítmica e aplicações (pH, Richter, decibéis)</strong>, onde estas contas viram escalas do mundo real.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>39 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-27-logaritmos-propriedades-equacoes.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-27";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

@@ -1,0 +1,1068 @@
+<title>Matrizes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+.mx{display:inline-grid;column-gap:.8em;row-gap:.1em;vertical-align:middle;position:relative;padding:.14em .6em;margin:0 .2em;text-align:center;line-height:1.3;white-space:nowrap}
+.mx.c1{grid-template-columns:auto}
+.mx.c2{grid-template-columns:repeat(2,auto)}
+.mx.c3{grid-template-columns:repeat(3,auto)}
+.mx.c4{grid-template-columns:repeat(4,auto)}
+.mx.c5{grid-template-columns:repeat(5,auto)}
+.mx > i{font-style:normal}
+.mx::before,.mx::after{content:"";position:absolute;top:0;bottom:0;width:.32em;border:1.3px solid currentColor}
+.mx::before{left:0;border-right:none}
+.mx::after{right:0;border-left:none}
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 15 de 18</p>
+    <h1>Matrizes e operações</h1>
+    <p class="deck">Uma matriz é uma tabela de números com endereço: cada valor mora numa linha e numa coluna. No ENEM ela aparece como quadro de distâncias, tabela de produção ou imagem digital, e a conta que mais cai é a multiplicação, que combina quantidades com preços de uma só vez.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Matriz três por três com a linha 2 e a coluna 3 destacadas; o elemento no cruzamento, 9, é o a dois três: o primeiro índice indica a linha e o segundo, a coluna">
+  <rect x="62" y="91" width="138" height="30" style="fill:var(--c1-soft)"/>
+  <rect x="163" y="48" width="34" height="116" style="fill:var(--c2-soft)"/>
+  <circle cx="180" cy="106" r="14" style="fill:none;stroke:var(--c4);stroke-width:1.8"/>
+  <polyline points="66,48 58,48 58,164 66,164" style="fill:none;stroke:var(--ink-2);stroke-width:1.5"/>
+  <polyline points="194,48 202,48 202,164 194,164" style="fill:none;stroke:var(--ink-2);stroke-width:1.5"/>
+  <text x="84" y="73" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">4</text>
+  <text x="132" y="73" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">0</text>
+  <text x="180" y="73" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">7</text>
+  <text x="84" y="111" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">2</text>
+  <text x="132" y="111" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">5</text>
+  <text x="180" y="111" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:15px;font-weight:700">9</text>
+  <text x="84" y="149" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">1</text>
+  <text x="132" y="149" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">3</text>
+  <text x="180" y="149" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:15px">6</text>
+  <text x="50" y="110" text-anchor="end" class="svg-lbl" style="fill:var(--c1)">linha 2</text>
+  <text x="180" y="36" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">coluna 3</text>
+  <text x="252" y="102" text-anchor="middle" class="svg-ttl" style="fill:var(--c4);font-size:16px">a<tspan dy="5" style="font-size:11px">23</tspan><tspan dy="-5"> = 9</tspan></text>
+  <text x="252" y="128" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">i: linha</text>
+  <text x="252" y="144" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">j: coluna</text>
+  <text x="150" y="198" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">matriz 3 × 3: 3 linhas, 3 colunas</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>9 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Operações e conjuntos numéricos · Sistemas de equações lineares</dd></div>
+      <div><dt>Destrava</dt><dd>Determinantes e sistemas lineares, leitura de tabelas e área por determinante</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM quase nunca escreve “calcule a matriz <span class="m"><span class="v">A</span> · <span class="v">B</span></span>”. A matriz chega disfarçada de <strong>tabela</strong>, e a pergunta é o que fazer com ela. As formas mais comuns:</p>
+<ul>
+  <li><strong>Ler o endereço:</strong> numa tabela de distâncias, de resultados de jogos ou de vendas, saber o que significa o elemento <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span> e o que significam a soma de uma linha e a soma de uma coluna.</li>
+  <li><strong>Multiplicar com sentido:</strong> quantidades vezes preços, porções vezes nutrientes. O produto de matrizes faz todas as contas “linha por coluna” de uma vez, e a pergunta costuma ser qual elemento do produto responde ao problema.</li>
+  <li><strong>Decidir se a conta existe:</strong> o produto só é definido quando o número de colunas da primeira é igual ao de linhas da segunda.</li>
+  <li><strong>Imagens e códigos:</strong> uma foto digital é uma matriz de pixels; um código secreto pode ser uma multiplicação por matriz, desfeita pela inversa.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Dominar a <strong>multiplicação linha por coluna</strong> e saber <strong>o que cada elemento do produto representa</strong>. Se a linha <span class="m"><span class="v">i</span></span> de <span class="m"><span class="v">A</span></span> é “o que a filial <span class="m"><span class="v">i</span></span> compra” e a coluna <span class="m"><span class="v">j</span></span> de <span class="m"><span class="v">B</span></span> é “os preços do fornecedor <span class="m"><span class="v">j</span></span>”, então <span class="m"><span class="v">c</span><sub><span class="v">ij</span></sub></span> é “quanto a filial <span class="m"><span class="v">i</span></span> gasta no fornecedor <span class="m"><span class="v">j</span></span>”.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Matriz é uma tabela com endereço</h2>
+<div class="box def">
+  <span class="tag">Definição e notação</span>
+  <p>Uma matriz <span class="m"><span class="v">m</span> × <span class="v">n</span></span> (lê-se “<span class="v">m</span> por <span class="v">n</span>”) é uma tabela com <span class="m"><span class="v">m</span></span> <strong>linhas</strong> (horizontais) e <span class="m"><span class="v">n</span></span> <strong>colunas</strong> (verticais). O elemento <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span> está na linha <span class="m"><span class="v">i</span></span> e na coluna <span class="m"><span class="v">j</span></span>, sempre nessa ordem: <strong>primeiro a linha, depois a coluna</strong>.</p>
+</div>
+<p>A matriz pode ser dada pelos números ou por uma <strong>lei de formação</strong>. Com <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = 2<span class="v">i</span> − <span class="v">j</span></span> e ordem 2 × 3, cada elemento sai de substituir o endereço:</p>
+<div class="eq">
+  <span class="lbl">Montando pela lei de formação</span>
+  <p class="m"><span class="v">a</span><sub>11</sub> = 2 − 1 = 1, &nbsp;<span class="v">a</span><sub>12</sub> = 2 − 2 = 0, &nbsp;<span class="v">a</span><sub>13</sub> = 2 − 3 = −1</p>
+  <p class="m"><span class="v">a</span><sub>21</sub> = 4 − 1 = 3, &nbsp;<span class="v">a</span><sub>22</sub> = 4 − 2 = 2, &nbsp;<span class="v">a</span><sub>23</sub> = 4 − 3 = 1</p>
+  <p class="m"><span class="v">A</span> = <span class="mx c3"><i>1</i><i>0</i><i>−1</i><i>3</i><i>2</i><i>1</i></span></p>
+</div>
+<p>Numa tabela de contexto, o endereço tem significado. Se <span class="m"><span class="v">d</span><sub><span class="v">ij</span></sub></span> é a distância da cidade <span class="m"><span class="v">i</span></span> até a cidade <span class="m"><span class="v">j</span></span>, então <span class="m"><span class="v">d</span><sub>24</sub></span> é a distância da cidade 2 à cidade 4. Se <span class="m"><span class="v">g</span><sub><span class="v">ij</span></sub></span> são os gols do time <span class="m"><span class="v">i</span></span> contra o time <span class="m"><span class="v">j</span></span>, a <strong>soma da linha</strong> <span class="m"><span class="v">i</span></span> dá os gols marcados pelo time <span class="m"><span class="v">i</span></span> e a <strong>soma da coluna</strong> <span class="m"><span class="v">i</span></span>, os gols que ele sofreu.</p>
+<div class="box warn">
+  <span class="tag">Não inverta o endereço</span>
+  <p><span class="m"><span class="v">a</span><sub>23</sub></span> e <span class="m"><span class="v">a</span><sub>32</sub></span> são elementos diferentes. No cabeçalho, <span class="m"><span class="v">a</span><sub>23</sub> = 9</span> (linha 2, coluna 3), enquanto <span class="m"><span class="v">a</span><sub>32</sub> = 3</span> (linha 3, coluna 2). Em tabelas de jogos, trocar linha por coluna troca “gols feitos” por “gols sofridos”.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Tipos de matrizes que aparecem nos enunciados</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Nome</th><th>O que é</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Linha / coluna</strong></td><td>uma só linha (1 × <span class="v">n</span>) ou uma só coluna (<span class="v">m</span> × 1)</td><td class="m"><span class="mx c3"><i>2</i><i>5</i><i>1</i></span></td></tr>
+    <tr><td><strong>Quadrada</strong></td><td>mesmo número de linhas e colunas; tem diagonal principal (<span class="m"><span class="v">i</span> = <span class="v">j</span></span>) e secundária (<span class="m"><span class="v">i</span> + <span class="v">j</span> = <span class="v">n</span> + 1</span>)</td><td class="m"><span class="mx c2"><i>1</i><i>4</i><i>2</i><i>3</i></span></td></tr>
+    <tr><td><strong>Nula</strong></td><td>todos os elementos iguais a zero</td><td class="m"><span class="mx c2"><i>0</i><i>0</i><i>0</i><i>0</i></span></td></tr>
+    <tr><td><strong>Diagonal</strong></td><td>quadrada, com zeros fora da diagonal principal</td><td class="m"><span class="mx c2"><i>5</i><i>0</i><i>0</i><i>−2</i></span></td></tr>
+    <tr><td><strong>Identidade <span class="v">I</span><sub><span class="v">n</span></sub></strong></td><td>diagonal com todos os elementos da diagonal iguais a 1</td><td class="m"><span class="mx c2"><i>1</i><i>0</i><i>0</i><i>1</i></span></td></tr>
+    <tr><td><strong>Triangular</strong></td><td>quadrada, com zeros de um dos lados da diagonal principal</td><td class="m"><span class="mx c2"><i>3</i><i>7</i><i>0</i><i>2</i></span></td></tr>
+    <tr><td><strong>Transposta <span class="v">A</span><sup>t</sup></strong></td><td>troca linhas por colunas: <span class="m"><span class="v">a</span><sup>t</sup><sub><span class="v">ij</span></sub> = <span class="v">a</span><sub><span class="v">ji</span></sub></span>; uma matriz <span class="m"><span class="v">m</span> × <span class="v">n</span></span> vira <span class="m"><span class="v">n</span> × <span class="v">m</span></span></td><td class="m"><span class="mx c3"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i></span><sup>t</sup> = <span class="mx c2"><i>1</i><i>4</i><i>2</i><i>5</i><i>3</i><i>6</i></span></td></tr>
+    <tr><td><strong>Simétrica</strong></td><td>igual à própria transposta: <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = <span class="v">a</span><sub><span class="v">ji</span></sub></span>, espelhada na diagonal</td><td class="m"><span class="mx c3"><i>0</i><i>8</i><i>5</i><i>8</i><i>0</i><i>3</i><i>5</i><i>3</i><i>0</i></span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Simetria tem significado</span>
+  <p>Uma tabela de distâncias entre cidades por estrada de mão dupla é <strong>simétrica</strong>: de 1 até 3 é o mesmo que de 3 até 1. Por isso a diagonal é zero (de uma cidade até ela mesma) e, se um valor está faltando acima da diagonal, ele pode ser copiado do espelho abaixo dela. Já uma tabela de gols não é simétrica: 3 a 1 não é 1 a 3.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Igualdade, adição e multiplicação por número</h2>
+<p>Essas três operações são feitas <strong>elemento a elemento</strong>, e por isso exigem matrizes de mesma ordem (a multiplicação por número vale para qualquer matriz).</p>
+<div class="eq">
+  <span class="lbl">Igualdade: mesma ordem e elementos correspondentes iguais</span>
+  <p class="m"><span class="mx c2"><i><span class="v">x</span> + <span class="v">y</span></i><i>3</i><i>2</i><i><span class="v">x</span> − <span class="v">y</span></i></span> = <span class="mx c2"><i>7</i><i>3</i><i>2</i><i>1</i></span> &nbsp;⟹&nbsp; <span class="v">x</span> + <span class="v">y</span> = 7 e <span class="v">x</span> − <span class="v">y</span> = 1 &nbsp;⟹&nbsp; <span class="v">x</span> = 4, <span class="v">y</span> = 3</p>
+</div>
+<div class="eq">
+  <span class="lbl">Adição e subtração: posição com posição</span>
+  <p class="m"><span class="mx c2"><i>1</i><i>4</i><i>2</i><i>0</i></span> + <span class="mx c2"><i>3</i><i>−1</i><i>5</i><i>2</i></span> = <span class="mx c2"><i>4</i><i>3</i><i>7</i><i>2</i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Multiplicação por número: todos os elementos</span>
+  <p class="m">3 · <span class="mx c2"><i>1</i><i>4</i><i>2</i><i>0</i></span> = <span class="mx c2"><i>3</i><i>12</i><i>6</i><i>0</i></span></p>
+</div>
+<p>Com isso já se resolvem situações reais. Se <span class="m"><span class="v">A</span></span> tem as notas da prova 1 e <span class="m"><span class="v">B</span></span> as da prova 2 (alunos nas linhas, disciplinas nas colunas), a matriz das médias ponderadas com pesos 0,4 e 0,6 é <span class="m">0,4<span class="v">A</span> + 0,6<span class="v">B</span></span>, calculada posição por posição.</p>
+<div class="box def">
+  <span class="tag">Propriedades que funcionam como nos números</span>
+  <p>A adição é comutativa e associativa, a matriz nula é o elemento neutro e cada matriz tem a sua oposta <span class="m">−<span class="v">A</span></span>. Por isso equações como <span class="m">2<span class="v">X</span> + <span class="v">A</span> = <span class="v">B</span></span> se resolvem como no 1º grau: <span class="m"><span class="v">X</span> = <span class="frac"><i><span class="v">B</span> − <span class="v">A</span></i><i>2</i></span></span>, conta feita elemento a elemento.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Multiplicação de matrizes: linha por coluna</h2>
+<p>Aqui está a operação que faz das matrizes uma ferramenta. O produto <span class="m"><span class="v">C</span> = <span class="v">A</span> · <span class="v">B</span></span> <strong>não</strong> é feito posição com posição. Cada elemento <span class="m"><span class="v">c</span><sub><span class="v">ij</span></sub></span> combina a <strong>linha <span class="v">i</span> de <span class="v">A</span></strong> com a <strong>coluna <span class="v">j</span> de <span class="v">B</span></strong>: multiplica o 1º com o 1º, o 2º com o 2º, e assim por diante, e soma tudo.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 236" role="img" aria-label="Produto de A, de ordem 2 por 3, por B, de ordem 3 por 2. A linha 1 de A, com 1, 2 e 3, e a coluna 2 de B, com 4, 0 e 5, estão destacadas; o elemento c um dois do produto é 1 vezes 4 mais 2 vezes 0 mais 3 vezes 5, igual a 19. O resultado C é 2 por 2">
+  <rect x="30" y="65" width="104" height="26" style="fill:var(--c1-soft)"/>
+  <rect x="236" y="44" width="30" height="104" style="fill:var(--c2-soft)"/>
+  <circle cx="392" cy="78" r="15" style="fill:none;stroke:var(--c4);stroke-width:1.8"/>
+  <polyline points="33,60 26,60 26,126 33,126" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <polyline points="131,60 138,60 138,126 131,126" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="48" y="83" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">1</text>
+  <text x="82" y="83" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">2</text>
+  <text x="116" y="83" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">3</text>
+  <text x="48" y="113" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">0</text>
+  <text x="82" y="113" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">1</text>
+  <text x="116" y="113" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">4</text>
+  <text x="166" y="98" text-anchor="middle" class="svg-num" style="fill:var(--ink-2);font-size:16px">·</text>
+  <polyline points="201,40 194,40 194,152 201,152" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <polyline points="263,40 270,40 270,152 263,152" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="213" y="66" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">2</text>
+  <text x="251" y="66" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">4</text>
+  <text x="213" y="101" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">1</text>
+  <text x="251" y="101" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">0</text>
+  <text x="213" y="136" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">0</text>
+  <text x="251" y="136" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">5</text>
+  <text x="302" y="98" text-anchor="middle" class="svg-num" style="fill:var(--ink-2);font-size:16px">=</text>
+  <polyline points="335,60 328,60 328,126 335,126" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <polyline points="409,60 416,60 416,126 409,126" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <text x="352" y="83" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">4</text>
+  <text x="392" y="83" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:14px;font-weight:700">19</text>
+  <text x="352" y="113" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">1</text>
+  <text x="392" y="113" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">20</text>
+  <text x="82" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">A (2 × 3)</text>
+  <text x="232" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">B (3 × 2)</text>
+  <text x="372" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">C (2 × 2)</text>
+  <text x="82" y="54" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">linha 1</text>
+  <text x="251" y="30" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">coluna 2</text>
+  <text x="230" y="204" text-anchor="middle" class="svg-num" style="fill:var(--c4)">c12 = 1·4 + 2·0 + 3·5 = 19</text>
+  <text x="230" y="226" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">colunas de A = linhas de B = 3</text>
+</svg>
+<figcaption><b>Cada elemento do produto é uma “linha vezes coluna”.</b> O elemento da linha 1, coluna 2 do resultado usa a linha 1 de <span class="m"><span class="v">A</span></span> e a coluna 2 de <span class="m"><span class="v">B</span></span>. Para isso funcionar, a linha de <span class="m"><span class="v">A</span></span> e a coluna de <span class="m"><span class="v">B</span></span> precisam ter o mesmo tamanho.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Condição e ordem do resultado</span>
+  <p class="m"><span class="v">A</span><sub><span class="v">m</span> × <span class="v">n</span></sub> · <span class="v">B</span><sub><span class="v">n</span> × <span class="v">p</span></sub> = <span class="v">C</span><sub><span class="v">m</span> × <span class="v">p</span></sub></p>
+  <p>Os números “de dentro” (<span class="m"><span class="v">n</span></span> e <span class="m"><span class="v">n</span></span>) têm de ser iguais; os “de fora” (<span class="m"><span class="v">m</span></span> e <span class="m"><span class="v">p</span></span>) dão a ordem do produto. Uma 2 × 3 vezes uma 3 × 2 dá 2 × 2; uma 3 × 2 vezes outra 3 × 2 não existe.</p>
+</div>
+<p>As quatro contas do exemplo, para conferir: <span class="m"><span class="v">c</span><sub>11</sub> = 1·2 + 2·1 + 3·0 = 4</span>; <span class="m"><span class="v">c</span><sub>12</sub> = 19</span>; <span class="m"><span class="v">c</span><sub>21</sub> = 0·2 + 1·1 + 4·0 = 1</span>; <span class="m"><span class="v">c</span><sub>22</sub> = 0·4 + 1·0 + 4·5 = 20</span>.</p>
+<div class="box tip">
+  <span class="tag">Por que essa regra estranha faz sentido</span>
+  <p>Pense numa filial que compra 10 kg de arroz, 5 kg de feijão e 4 L de óleo (uma linha) e num fornecedor que cobra R$ 5, R$ 9 e R$ 8 por unidade (uma coluna). O gasto é <span class="m">10·5 + 5·9 + 4·8 = 127</span>: exatamente “linha vezes coluna”. O produto de matrizes faz essa conta para todas as filiais e todos os fornecedores ao mesmo tempo.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> O que muda em relação aos números</h2>
+<p>A multiplicação de matrizes tem propriedades boas (associativa, distributiva) e duas diferenças que caem como pegadinha.</p>
+<div class="eq">
+  <span class="lbl">1 · Em geral, A · B ≠ B · A</span>
+  <p class="m"><span class="mx c2"><i>1</i><i>2</i><i>0</i><i>1</i></span> · <span class="mx c2"><i>1</i><i>0</i><i>3</i><i>1</i></span> = <span class="mx c2"><i>7</i><i>2</i><i>3</i><i>1</i></span> &nbsp;&nbsp;mas&nbsp;&nbsp; <span class="mx c2"><i>1</i><i>0</i><i>3</i><i>1</i></span> · <span class="mx c2"><i>1</i><i>2</i><i>0</i><i>1</i></span> = <span class="mx c2"><i>1</i><i>2</i><i>3</i><i>7</i></span></p>
+  <p>A ordem dos fatores importa. Às vezes um dos produtos nem existe: com <span class="m"><span class="v">A</span></span> 2 × 3 e <span class="m"><span class="v">B</span></span> 3 × 4, existe <span class="m"><span class="v">AB</span></span>, mas não <span class="m"><span class="v">BA</span></span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">2 · O produto pode dar zero sem nenhum fator ser zero</span>
+  <p class="m"><span class="mx c2"><i>1</i><i>1</i><i>1</i><i>1</i></span> · <span class="mx c2"><i>1</i><i>−1</i><i>−1</i><i>1</i></span> = <span class="mx c2"><i>0</i><i>0</i><i>0</i><i>0</i></span></p>
+  <p>Logo, de <span class="m"><span class="v">AB</span> = 0</span> não se conclui que <span class="m"><span class="v">A</span> = 0</span> ou <span class="m"><span class="v">B</span> = 0</span>, e também não se pode “cortar” <span class="m"><span class="v">A</span></span> de <span class="m"><span class="v">AB</span> = <span class="v">AC</span></span>.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Propriedade</th><th>Vale?</th><th>Observação</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">A</span> · <span class="v">I</span> = <span class="v">I</span> · <span class="v">A</span> = <span class="v">A</span></td><td>sim</td><td>a identidade faz o papel do número 1</td></tr>
+    <tr><td class="m">(<span class="v">AB</span>)<span class="v">C</span> = <span class="v">A</span>(<span class="v">BC</span>)</td><td>sim</td><td>associativa</td></tr>
+    <tr><td class="m"><span class="v">A</span>(<span class="v">B</span> + <span class="v">C</span>) = <span class="v">AB</span> + <span class="v">AC</span></td><td>sim</td><td>distributiva, mantendo o lado</td></tr>
+    <tr><td class="m">(<span class="v">AB</span>)<sup>t</sup> = <span class="v">B</span><sup>t</sup><span class="v">A</span><sup>t</sup></td><td>sim</td><td>a ordem se inverte</td></tr>
+    <tr><td class="m"><span class="v">AB</span> = <span class="v">BA</span></td><td>não em geral</td><td>só para pares especiais (como <span class="m"><span class="v">A</span></span> e <span class="m"><span class="v">I</span></span>)</td></tr>
+    <tr><td class="m">(<span class="v">A</span> + <span class="v">B</span>)² = <span class="v">A</span>² + 2<span class="v">AB</span> + <span class="v">B</span>²</td><td>não em geral</td><td>o certo é <span class="m"><span class="v">A</span>² + <span class="v">AB</span> + <span class="v">BA</span> + <span class="v">B</span>²</span></td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Matriz inversa</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>A inversa de uma matriz quadrada <span class="m"><span class="v">A</span></span> é a matriz <span class="m"><span class="v">A</span><sup>−1</sup></span> tal que <span class="m"><span class="v">A</span> · <span class="v">A</span><sup>−1</sup> = <span class="v">A</span><sup>−1</sup> · <span class="v">A</span> = <span class="v">I</span></span>. Ela desfaz o que <span class="m"><span class="v">A</span></span> faz, como dividir desfaz multiplicar. Nem toda matriz tem inversa.</p>
+</div>
+<p>Para matrizes 2 × 3 não há inversa (não são quadradas). Para 2 × 2 existe um atalho, que usa o número <span class="m"><span class="v">ad</span> − <span class="v">bc</span></span>, o <strong>determinante</strong> (tema do próximo assunto):</p>
+<div class="eq">
+  <span class="lbl">Inversa de uma 2 × 2</span>
+  <p class="m"><span class="v">A</span> = <span class="mx c2"><i><span class="v">a</span></i><i><span class="v">b</span></i><i><span class="v">c</span></i><i><span class="v">d</span></i></span> &nbsp;⟹&nbsp; <span class="v">A</span><sup>−1</sup> = <span class="frac"><i>1</i><i><span class="v">ad</span> − <span class="v">bc</span></i></span> · <span class="mx c2"><i><span class="v">d</span></i><i>−<span class="v">b</span></i><i>−<span class="v">c</span></i><i><span class="v">a</span></i></span></p>
+  <p><strong>Troca</strong> os elementos da diagonal principal, <strong>troca o sinal</strong> dos da secundária e <strong>divide</strong> tudo por <span class="m"><span class="v">ad</span> − <span class="v">bc</span></span>. Se <span class="m"><span class="v">ad</span> − <span class="v">bc</span> = 0</span>, a matriz não tem inversa.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo com conferência</span>
+  <p class="m"><span class="v">A</span> = <span class="mx c2"><i>3</i><i>1</i><i>5</i><i>2</i></span>, &nbsp;<span class="v">ad</span> − <span class="v">bc</span> = 6 − 5 = 1 &nbsp;⟹&nbsp; <span class="v">A</span><sup>−1</sup> = <span class="mx c2"><i>2</i><i>−1</i><i>−5</i><i>3</i></span></p>
+  <p class="m"><span class="mx c2"><i>3</i><i>1</i><i>5</i><i>2</i></span> · <span class="mx c2"><i>2</i><i>−1</i><i>−5</i><i>3</i></span> = <span class="mx c2"><i>6 − 5</i><i>−3 + 3</i><i>10 − 10</i><i>−5 + 6</i></span> = <span class="mx c2"><i>1</i><i>0</i><i>0</i><i>1</i></span> ✓</p>
+</div>
+<div class="box tip">
+  <span class="tag">Códigos com matrizes</span>
+  <p>Um jeito clássico de cifrar mensagens: troca-se cada letra por um número, agrupam-se os números em colunas e multiplica-se cada coluna por uma matriz-chave <span class="m"><span class="v">A</span></span>. Quem recebe multiplica por <span class="m"><span class="v">A</span><sup>−1</sup></span> e recupera o original. Por isso a chave precisa ter inversa, e quem erra o sinal na inversa decifra lixo.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Matrizes como tabelas e imagens</h2>
+<p>A leitura de contexto é o que mais cai. Quatro modelos cobrem quase tudo:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>O elemento <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span> é…</th><th>Contas típicas</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Distâncias ou custos entre locais</strong></td><td>a distância de <span class="v">i</span> até <span class="v">j</span></td><td>somar trechos de uma rota; tabela simétrica, diagonal zero</td></tr>
+    <tr><td><strong>Campeonato</strong></td><td>gols (ou pontos) de <span class="v">i</span> contra <span class="v">j</span></td><td>linha = gols feitos; coluna = gols sofridos; saldo = linha − coluna</td></tr>
+    <tr><td><strong>Ligações (voos, estradas, amizades)</strong></td><td>1 se há ligação direta de <span class="v">i</span> para <span class="v">j</span>; 0 se não há</td><td><span class="m"><span class="v">A</span>²</span> conta os caminhos com exatamente uma escala</td></tr>
+    <tr><td><strong>Quantidade × preço</strong></td><td>quantidade do item <span class="v">j</span> no pedido <span class="v">i</span></td><td>produto pela matriz de preços dá o custo de cada pedido</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Uma <strong>imagem digital</strong> também é uma matriz: cada pixel é um elemento, e o número indica a cor ou o tom de cinza. Numa imagem em preto e branco, 1 pode ser “pixel aceso” e 0 “apagado”.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 232" role="img" aria-label="À esquerda, uma grade de cinco por cinco pixels formando a letra F; à direita, a matriz cinco por cinco de zeros e uns correspondente, com 1 nos pixels acesos: primeira linha 1 1 1 1 0, segunda 1 0 0 0 0, terceira 1 1 1 0 0, quarta e quinta 1 0 0 0 0">
+  <g style="stroke:var(--rule-2);stroke-width:1">
+    <rect x="40" y="36" width="26" height="26" style="fill:var(--c1)"/><rect x="66" y="36" width="26" height="26" style="fill:var(--c1)"/><rect x="92" y="36" width="26" height="26" style="fill:var(--c1)"/><rect x="118" y="36" width="26" height="26" style="fill:var(--c1)"/><rect x="144" y="36" width="26" height="26" style="fill:var(--surface)"/>
+    <rect x="40" y="62" width="26" height="26" style="fill:var(--c1)"/><rect x="66" y="62" width="26" height="26" style="fill:var(--surface)"/><rect x="92" y="62" width="26" height="26" style="fill:var(--surface)"/><rect x="118" y="62" width="26" height="26" style="fill:var(--surface)"/><rect x="144" y="62" width="26" height="26" style="fill:var(--surface)"/>
+    <rect x="40" y="88" width="26" height="26" style="fill:var(--c1)"/><rect x="66" y="88" width="26" height="26" style="fill:var(--c1)"/><rect x="92" y="88" width="26" height="26" style="fill:var(--c1)"/><rect x="118" y="88" width="26" height="26" style="fill:var(--surface)"/><rect x="144" y="88" width="26" height="26" style="fill:var(--surface)"/>
+    <rect x="40" y="114" width="26" height="26" style="fill:var(--c1)"/><rect x="66" y="114" width="26" height="26" style="fill:var(--surface)"/><rect x="92" y="114" width="26" height="26" style="fill:var(--surface)"/><rect x="118" y="114" width="26" height="26" style="fill:var(--surface)"/><rect x="144" y="114" width="26" height="26" style="fill:var(--surface)"/>
+    <rect x="40" y="140" width="26" height="26" style="fill:var(--c1)"/><rect x="66" y="140" width="26" height="26" style="fill:var(--surface)"/><rect x="92" y="140" width="26" height="26" style="fill:var(--surface)"/><rect x="118" y="140" width="26" height="26" style="fill:var(--surface)"/><rect x="144" y="140" width="26" height="26" style="fill:var(--surface)"/>
+  </g>
+  <text x="105" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">imagem 5 × 5</text>
+  <text x="222" y="106" text-anchor="middle" class="svg-num" style="fill:var(--ink-2);font-size:18px">↔</text>
+  <polyline points="282,36 274,36 274,166 282,166" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <polyline points="414,36 422,36 422,166 414,166" style="fill:none;stroke:var(--ink-2);stroke-width:1.4"/>
+  <g class="svg-num" style="font-size:14px" text-anchor="middle">
+    <text x="292" y="54" style="fill:var(--c1)">1</text><text x="320" y="54" style="fill:var(--c1)">1</text><text x="348" y="54" style="fill:var(--c1)">1</text><text x="376" y="54" style="fill:var(--c1)">1</text><text x="404" y="54" style="fill:var(--ink-3)">0</text>
+    <text x="292" y="80" style="fill:var(--c1)">1</text><text x="320" y="80" style="fill:var(--ink-3)">0</text><text x="348" y="80" style="fill:var(--ink-3)">0</text><text x="376" y="80" style="fill:var(--ink-3)">0</text><text x="404" y="80" style="fill:var(--ink-3)">0</text>
+    <text x="292" y="106" style="fill:var(--c1)">1</text><text x="320" y="106" style="fill:var(--c1)">1</text><text x="348" y="106" style="fill:var(--c1)">1</text><text x="376" y="106" style="fill:var(--ink-3)">0</text><text x="404" y="106" style="fill:var(--ink-3)">0</text>
+    <text x="292" y="132" style="fill:var(--c1)">1</text><text x="320" y="132" style="fill:var(--ink-3)">0</text><text x="348" y="132" style="fill:var(--ink-3)">0</text><text x="376" y="132" style="fill:var(--ink-3)">0</text><text x="404" y="132" style="fill:var(--ink-3)">0</text>
+    <text x="292" y="158" style="fill:var(--c1)">1</text><text x="320" y="158" style="fill:var(--ink-3)">0</text><text x="348" y="158" style="fill:var(--ink-3)">0</text><text x="376" y="158" style="fill:var(--ink-3)">0</text><text x="404" y="158" style="fill:var(--ink-3)">0</text>
+  </g>
+  <text x="348" y="190" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">matriz 5 × 5</text>
+  <text x="230" y="220" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1 = pixel aceso · 0 = pixel apagado</text>
+</svg>
+<figcaption><b>Uma imagem é uma matriz.</b> O pixel da linha <span class="m"><span class="v">i</span></span>, coluna <span class="m"><span class="v">j</span></span> é o elemento <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span>. Operações com a matriz viram efeitos na imagem: trocar 1 por 0 inverte as cores, e a <strong>transposta</strong> espelha a figura na diagonal principal (a primeira linha vira a primeira coluna).</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Por que A² conta caminhos com uma escala</span>
+  <p>Se <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = 1</span> quando há voo direto de <span class="m"><span class="v">i</span></span> para <span class="m"><span class="v">j</span></span>, o elemento <span class="m">(<span class="v">A</span>²)<sub><span class="v">ij</span></sub> = <span class="v">a</span><sub><span class="v">i</span>1</sub><span class="v">a</span><sub>1<span class="v">j</span></sub> + <span class="v">a</span><sub><span class="v">i</span>2</sub><span class="v">a</span><sub>2<span class="v">j</span></sub> + …</span> soma 1 para cada cidade <span class="m"><span class="v">k</span></span> que tem voo de <span class="m"><span class="v">i</span></span> para <span class="m"><span class="v">k</span></span> <strong>e</strong> de <span class="m"><span class="v">k</span></span> para <span class="m"><span class="v">j</span></span>. Cada parcela 1 é uma rota com escala em <span class="m"><span class="v">k</span></span>.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Antes de calcular, rotule linhas e colunas</span>
+  <p>Escreva ao lado da tabela o que é linha e o que é coluna (“linha = time que marcou”, “coluna = adversário”). Boa parte dos erros em questões de matriz é de leitura, não de conta.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Confira as ordens antes de multiplicar</span>
+  <p>Escreva <span class="m">(2 × 3) · (3 × 2)</span> e verifique os números de dentro. Se não baterem, talvez a tabela precise ser usada transposta, ou a alternativa “não existe” seja a correta.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Calcule só o elemento pedido</span>
+  <p>Se a pergunta é “quanto a filial 2 gasta no fornecedor 1”, basta <span class="m"><span class="v">c</span><sub>21</sub></span>: linha 2 da primeira vezes coluna 1 da segunda. Não perca tempo com a matriz inteira.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Confira a inversa multiplicando</span>
+  <p>Uma inversa calculada se testa em segundos: o produto com a original tem de dar a identidade. Basta conferir um ou dois elementos.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Tecnologia</strong></td><td>imagens digitais, filtros, telas</td><td>cada pixel é um elemento; brilho e contraste são operações com a matriz</td></tr>
+    <tr><td><strong>Economia e gestão</strong></td><td>planilhas de produção, consumo e custo</td><td>quantidade × preço é produto de matrizes</td></tr>
+    <tr><td><strong>Nutrição (Biologia)</strong></td><td>porções de alimentos × nutrientes por porção</td><td>o produto dá o total de cada nutriente em cada refeição</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>tabelas de distância entre cidades, redes de transporte</td><td>tabela simétrica; <span class="m"><span class="v">A</span>²</span> conta conexões com uma escala</td></tr>
+    <tr><td><strong>Sistemas lineares</strong></td><td>forma <span class="m"><span class="v">A</span> · <span class="v">X</span> = <span class="v">B</span></span></td><td>com a inversa, <span class="m"><span class="v">X</span> = <span class="v">A</span><sup>−1</sup><span class="v">B</span></span>; é o próximo assunto</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">a₂₃ = linha 3, coluna 2</span> &nbsp;→&nbsp; <span class="c">linha 2, coluna 3</span></span><small>Primeiro índice é a linha, sempre.</small></li>
+  <li><span><span class="x">Multiplicar posição com posição</span> &nbsp;→&nbsp; <span class="c">linha por coluna</span></span><small>Só a adição é feita elemento a elemento.</small></li>
+  <li><span><span class="x">(2 × 3) · (2 × 3) existe</span> &nbsp;→&nbsp; <span class="c">não existe</span></span><small>Colunas da 1ª têm de ser iguais às linhas da 2ª.</small></li>
+  <li><span><span class="x">AB = BA</span> &nbsp;→&nbsp; <span class="c">em geral, AB ≠ BA</span></span><small>A ordem dos fatores altera o produto.</small></li>
+  <li><span><span class="x">AB = 0 ⟹ A = 0 ou B = 0</span> &nbsp;→&nbsp; <span class="c">não vale para matrizes</span></span><small>Duas matrizes não nulas podem ter produto nulo.</small></li>
+  <li><span><span class="x">Inversa: só trocar a diagonal</span> &nbsp;→&nbsp; <span class="c">trocar, mudar sinais e dividir por ad − bc</span></span><small>Confira multiplicando: tem de dar I.</small></li>
+  <li><span><span class="x">Transposta da 2 × 3 é 2 × 3</span> &nbsp;→&nbsp; <span class="c">é 3 × 2</span></span><small>Linhas viram colunas.</small></li>
+  <li><span><span class="x">Coluna = gols marcados</span> &nbsp;→&nbsp; <span class="c">coluna = gols sofridos</span></span><small>Releia o que o enunciado define como a<sub>ij</sub>.</small></li>
+  <li><span><span class="x">3 · A multiplica só a 1ª linha</span> &nbsp;→&nbsp; <span class="c">multiplica todos os elementos</span></span><small>Número vezes matriz atinge tudo.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: o que é linha, o que é coluna, e qual elemento responde à pergunta?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Ler linhas e colunas</span>
+    <p class="enun">Em um torneio entre quatro times, os gols foram registrados na matriz <span class="m"><span class="v">G</span></span>, em que <span class="m"><span class="v">g</span><sub><span class="v">ij</span></sub></span> é o número de gols que o time <span class="m"><span class="v">i</span></span> marcou contra o time <span class="m"><span class="v">j</span></span> (a diagonal é zero, pois um time não joga contra si mesmo): <span class="m"><span class="v">G</span> = <span class="mx c4"><i>0</i><i>3</i><i>1</i><i>1</i><i>2</i><i>0</i><i>3</i><i>2</i><i>0</i><i>1</i><i>0</i><i>1</i><i>1</i><i>3</i><i>1</i><i>0</i></span></span>. O saldo de gols é a diferença entre gols marcados e gols sofridos. O time com o maior saldo de gols é</p>
+    <ol class="alt"><li>o time 1.</li><li>o time 2.</li><li>o time 3.</li><li>o time 4.</li><li>os times 1 e 4, empatados.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Gols marcados pelo time <span class="m"><span class="v">i</span></span>: soma da <strong>linha</strong> <span class="m"><span class="v">i</span></span>. Gols sofridos: soma da <strong>coluna</strong> <span class="m"><span class="v">i</span></span> (todos os gols feitos contra ele).</p>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Time</th><th>Marcados (linha)</th><th>Sofridos (coluna)</th><th>Saldo</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>0 + 3 + 1 + 1 = 5</td><td>0 + 2 + 0 + 1 = 3</td><td><strong>+2</strong></td></tr>
+          <tr><td>2</td><td>2 + 0 + 3 + 2 = 7</td><td>3 + 0 + 1 + 3 = 7</td><td>0</td></tr>
+          <tr><td>3</td><td>0 + 1 + 0 + 1 = 2</td><td>1 + 3 + 0 + 1 = 5</td><td>−3</td></tr>
+          <tr><td>4</td><td>1 + 3 + 1 + 0 = 5</td><td>1 + 2 + 1 + 0 = 4</td><td>+1</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Conferência: a soma dos saldos é zero (todo gol marcado por um é sofrido por outro). O maior saldo é do time 1.</p>
+      <p>A B escolhe o time que mais marcou, ignorando os gols sofridos. A C troca linha por coluna: calculando “coluna − linha”, o time 3 fica com +3. A E compara só os gols marcados dos times 1 e 4 (5 cada) e esquece que o 4 sofreu um gol a mais; a D erra a coluna 4 (o time 4 sofreu 4 gols, e seu saldo é +1).</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Produto como custo</span>
+    <p class="enun">Duas filiais de um restaurante compram arroz (kg), feijão (kg) e óleo (L). As quantidades estão na matriz <span class="m"><span class="v">Q</span></span> (linha 1: filial 1; linha 2: filial 2), e os preços unitários de dois fornecedores, X e Y, estão nas colunas da matriz <span class="m"><span class="v">P</span></span>, em reais: <span class="m"><span class="v">Q</span> = <span class="mx c3"><i>10</i><i>5</i><i>4</i><i>8</i><i>6</i><i>2</i></span></span> e <span class="m"><span class="v">P</span> = <span class="mx c2"><i>5</i><i>6</i><i>9</i><i>7</i><i>8</i><i>9</i></span></span>. Cada filial faz a compra completa em um único fornecedor e escolhe o que lhe sai mais barato. O gasto total das duas filiais, em reais, é</p>
+    <ol class="alt"><li>215.</li><li>235.</li><li>237.</li><li>239.</li><li>241.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O produto <span class="m"><span class="v">C</span> = <span class="v">Q</span> · <span class="v">P</span></span> (2 × 3 vezes 3 × 2 = 2 × 2) dá em <span class="m"><span class="v">c</span><sub><span class="v">ij</span></sub></span> o gasto da filial <span class="m"><span class="v">i</span></span> no fornecedor <span class="m"><span class="v">j</span></span>:</p>
+      <p class="m"><span class="v">c</span><sub>11</sub> = 50 + 45 + 32 = 127; &nbsp;<span class="v">c</span><sub>12</sub> = 60 + 35 + 36 = 131</p>
+      <p class="m"><span class="v">c</span><sub>21</sub> = 40 + 54 + 16 = 110; &nbsp;<span class="v">c</span><sub>22</sub> = 48 + 42 + 18 = 108</p>
+      <p>A filial 1 escolhe X (127) e a filial 2 escolhe Y (108): total <span class="m">127 + 108 = 235</span>.</p>
+      <p>A A escolhe o preço mais baixo de cada item, misturando fornecedores (117 + 98), o que o enunciado proíbe. A C manda as duas filiais para X (127 + 110); a D, as duas para Y (131 + 108); a E soma as piores opções (131 + 110).</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Quando o produto existe</span>
+    <p class="enun">Um programa de planilhas guarda três tabelas como matrizes: <span class="m"><span class="v">A</span></span>, com 2 linhas e 3 colunas; <span class="m"><span class="v">B</span></span>, com 3 linhas e 4 colunas; e <span class="m"><span class="v">C</span></span>, com 4 linhas e 2 colunas. Um usuário pede o produto <span class="m"><span class="v">A</span> · <span class="v">B</span> · <span class="v">C</span></span>, nessa ordem. O resultado será</p>
+    <ol class="alt"><li>uma matriz 2 × 4.</li><li>uma matriz 3 × 3.</li><li>uma matriz 4 × 4.</li><li>inexistente, pois as ordens não são compatíveis.</li><li>uma matriz 2 × 2.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Passo a passo: <span class="m">(2 × 3) · (3 × 4)</span> existe (3 = 3) e dá 2 × 4. Depois, <span class="m">(2 × 4) · (4 × 2)</span> existe (4 = 4) e dá <strong>2 × 2</strong>.</p>
+      <p>A A para no primeiro produto e esquece o <span class="m"><span class="v">C</span></span>. A B usa os números “de dentro” como ordem do resultado. A C usa os números de <span class="m"><span class="v">B</span></span> e <span class="m"><span class="v">C</span></span> de forma trocada. A D supõe que todas as matrizes precisariam ter a mesma ordem; basta que as dimensões vizinhas coincidam.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · A ordem dos fatores</span>
+    <p class="enun">Considere as matrizes <span class="m"><span class="v">A</span> = <span class="mx c2"><i>1</i><i>2</i><i>0</i><i>1</i></span></span> e <span class="m"><span class="v">B</span> = <span class="mx c2"><i>1</i><i>0</i><i>3</i><i>1</i></span></span>. A matriz <span class="m"><span class="v">A</span> · <span class="v">B</span> − <span class="v">B</span> · <span class="v">A</span></span> é</p>
+    <ol class="alt"><li>a matriz nula, pois <span class="m"><span class="v">A</span> · <span class="v">B</span> = <span class="v">B</span> · <span class="v">A</span></span></li><li><span class="m"><span class="mx c2"><i>6</i><i>0</i><i>0</i><i>−6</i></span></span></li><li><span class="m"><span class="mx c2"><i>−6</i><i>0</i><i>0</i><i>6</i></span></span></li><li><span class="m"><span class="mx c2"><i>0</i><i>2</i><i>−3</i><i>0</i></span></span></li><li><span class="m"><span class="mx c2"><i>1</i><i>0</i><i>0</i><i>1</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">AB</span> = <span class="mx c2"><i>1 + 6</i><i>0 + 2</i><i>0 + 3</i><i>0 + 1</i></span> = <span class="mx c2"><i>7</i><i>2</i><i>3</i><i>1</i></span>, &nbsp;&nbsp;<span class="v">BA</span> = <span class="mx c2"><i>1</i><i>2</i><i>3</i><i>6 + 1</i></span> = <span class="mx c2"><i>1</i><i>2</i><i>3</i><i>7</i></span></p>
+      <p class="m"><span class="v">AB</span> − <span class="v">BA</span> = <span class="mx c2"><i>6</i><i>0</i><i>0</i><i>−6</i></span></p>
+      <p>A A supõe que <span class="m"><span class="v">AB</span> = <span class="v">BA</span></span>, como nos números. A C calcula <span class="m"><span class="v">BA</span> − <span class="v">AB</span></span>. A D é <span class="m"><span class="v">A</span> − <span class="v">B</span></span>: subtrai as matrizes em vez de calcular os produtos. A E é a identidade, sem relação com a conta.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Tabela simétrica de distâncias</span>
+    <p class="enun">Uma transportadora registra as distâncias rodoviárias, em km, entre quatro cidades na matriz <span class="m"><span class="v">D</span></span>, em que <span class="m"><span class="v">d</span><sub><span class="v">ij</span></sub></span> é a distância entre as cidades <span class="m"><span class="v">i</span></span> e <span class="m"><span class="v">j</span></span>. As estradas são de mão dupla, e dois valores foram apagados: <span class="m"><span class="v">D</span> = <span class="mx c4"><i>0</i><i>120</i><i><span class="v">x</span></i><i>200</i><i>120</i><i>0</i><i>90</i><i><span class="v">y</span></i><i>150</i><i>90</i><i>0</i><i>60</i><i>200</i><i>140</i><i>60</i><i>0</i></span></span>. Um caminhão faz o trajeto 1 → 3 → 2 → 4, sem voltar. A distância percorrida, em km, é</p>
+    <ol class="alt"><li>240.</li><li>350.</li><li>380.</li><li>440.</li><li>580.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Estrada de mão dupla: <span class="m"><span class="v">d</span><sub><span class="v">ij</span></sub> = <span class="v">d</span><sub><span class="v">ji</span></sub></span>, a matriz é simétrica. Então <span class="m"><span class="v">x</span> = <span class="v">d</span><sub>13</sub> = <span class="v">d</span><sub>31</sub> = 150</span> e <span class="m"><span class="v">y</span> = <span class="v">d</span><sub>24</sub> = <span class="v">d</span><sub>42</sub> = 140</span>.</p>
+      <p class="m"><span class="v">d</span><sub>13</sub> + <span class="v">d</span><sub>32</sub> + <span class="v">d</span><sub>24</sub> = 150 + 90 + 140 = 380</p>
+      <p>A A completa o <span class="m"><span class="v">x</span></span> pela simetria, mas trata o <span class="m"><span class="v">y</span></span> apagado como zero (150 + 90). A B copia <span class="m"><span class="v">x</span></span> do vizinho da mesma linha (120). A D usa a distância 1–4 (200) no lugar de <span class="m"><span class="v">y</span></span>. A E acrescenta a volta 4 → 1 (200), que o enunciado exclui.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Decifrar com a inversa</span>
+    <p class="enun">Um sistema de mensagens converte cada par de letras em uma matriz coluna <span class="m"><span class="v">M</span></span> com dois números e envia <span class="m"><span class="v">E</span> = <span class="v">A</span> · <span class="v">M</span></span>, em que <span class="m"><span class="v">A</span> = <span class="mx c2"><i>3</i><i>1</i><i>5</i><i>2</i></span></span>. Uma mensagem chegou como <span class="m"><span class="v">E</span> = <span class="mx c1"><i>17</i><i>29</i></span></span>. Os dois números originais, de cima para baixo, eram</p>
+    <ol class="alt"><li>2 e 5.</li><li>−5 e −2.</li><li>63 e 172.</li><li>5 e 2.</li><li>80 e 143.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Para desfazer a multiplicação por <span class="m"><span class="v">A</span></span>, multiplica-se por <span class="m"><span class="v">A</span><sup>−1</sup></span>. Como <span class="m"><span class="v">ad</span> − <span class="v">bc</span> = 6 − 5 = 1</span>:</p>
+      <p class="m"><span class="v">A</span><sup>−1</sup> = <span class="mx c2"><i>2</i><i>−1</i><i>−5</i><i>3</i></span>, &nbsp;&nbsp;<span class="v">M</span> = <span class="v">A</span><sup>−1</sup> · <span class="v">E</span> = <span class="mx c1"><i>34 − 29</i><i>−85 + 87</i></span> = <span class="mx c1"><i>5</i><i>2</i></span></p>
+      <p><strong>Conferência:</strong> <span class="m">3·5 + 1·2 = 17</span> e <span class="m">5·5 + 2·2 = 29</span>.</p>
+      <p>A A inverte a ordem dos números. A B troca os sinais da diagonal principal em vez dos da secundária. A C só troca a diagonal, sem mudar sinal nenhum. A E multiplica de novo por <span class="m"><span class="v">A</span></span>, o que codifica outra vez em vez de decifrar.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Contar rotas com o quadrado da matriz</span>
+    <p class="enun">Uma companhia aérea atende quatro cidades. Na matriz <span class="m"><span class="v">A</span></span>, <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = 1</span> se há voo direto da cidade <span class="m"><span class="v">i</span></span> para a cidade <span class="m"><span class="v">j</span></span> e <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = 0</span> caso contrário: <span class="m"><span class="v">A</span> = <span class="mx c4"><i>0</i><i>1</i><i>1</i><i>0</i><i>0</i><i>0</i><i>1</i><i>1</i><i>1</i><i>0</i><i>0</i><i>1</i><i>1</i><i>1</i><i>0</i><i>0</i></span></span>. O elemento da linha 1 e coluna 4 de <span class="m"><span class="v">A</span>² = <span class="v">A</span> · <span class="v">A</span></span> indica o número de maneiras de ir da cidade 1 à cidade 4 com exatamente uma escala. Esse número é</p>
+    <ol class="alt"><li>0.</li><li>1.</li><li>2.</li><li>3.</li><li>4.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Linha 1 de <span class="m"><span class="v">A</span></span> vezes coluna 4 de <span class="m"><span class="v">A</span></span>:</p>
+      <p class="m">(<span class="v">A</span>²)<sub>14</sub> = 0·0 + 1·1 + 1·1 + 0·0 = 2</p>
+      <p>As duas parcelas iguais a 1 são as rotas 1 → 2 → 4 e 1 → 3 → 4.</p>
+      <p>A A lê <span class="m"><span class="v">a</span><sub>14</sub> = 0</span>, o voo direto, e não o elemento de <span class="m"><span class="v">A</span>²</span>. A B conta só uma das escalas; 1 é, na verdade, o número de rotas com exatamente <strong>duas</strong> escalas (1 → 2 → 3 → 4). A D soma as rotas com uma e com duas escalas. A E soma a linha 1 inteira de <span class="m"><span class="v">A</span>²</span> (todas as rotas com uma escala que saem da cidade 1, para qualquer destino).</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Média ponderada com matrizes</span>
+    <p class="enun">Em uma escola, as notas de três alunos (linhas) em duas disciplinas (colunas) nas provas 1 e 2 estão nas matrizes <span class="m"><span class="v">A</span> = <span class="mx c2"><i>5</i><i>8</i><i>7</i><i>4</i><i>6</i><i>6</i></span></span> e <span class="m"><span class="v">B</span> = <span class="mx c2"><i>7</i><i>5</i><i>5</i><i>8</i><i>6</i><i>5</i></span></span>. A média de cada aluno em cada disciplina é dada por <span class="m"><span class="v">M</span> = 0,4<span class="v">A</span> + 0,6<span class="v">B</span></span>, e a média mínima para aprovação é 6,0. Quantos dos seis elementos de <span class="m"><span class="v">M</span></span> são maiores ou iguais a 6,0?</p>
+    <ol class="alt"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Elemento a elemento:</p>
+      <p class="m"><span class="v">M</span> = <span class="mx c2"><i>2 + 4,2</i><i>3,2 + 3</i><i>2,8 + 3</i><i>1,6 + 4,8</i><i>2,4 + 3,6</i><i>2,4 + 3</i></span> = <span class="mx c2"><i>6,2</i><i>6,2</i><i>5,8</i><i>6,4</i><i>6,0</i><i>5,4</i></span></p>
+      <p>São 4 médias maiores ou iguais a 6,0 (o 6,0 conta, pois o critério é “maior ou igual”).</p>
+      <p>A A conta alunos aprovados nas duas disciplinas (só o aluno 1), não médias. A B conta as médias abaixo de 6. A C troca os pesos (<span class="m">0,6<span class="v">A</span> + 0,4<span class="v">B</span></span>). A E usa a média simples <span class="m"><span class="frac"><i><span class="v">A</span> + <span class="v">B</span></i><i>2</i></span></span>, que deixa só um valor abaixo de 6.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Propriedades que valem e que não valem</span>
+    <p class="enun">Um estudante listou afirmações sobre matrizes quadradas <span class="m"><span class="v">A</span></span> e <span class="m"><span class="v">B</span></span> de mesma ordem, sendo <span class="m"><span class="v">I</span></span> a identidade e <span class="m">0</span> a matriz nula. A única afirmação verdadeira para quaisquer <span class="m"><span class="v">A</span></span> e <span class="m"><span class="v">B</span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">A</span> · <span class="v">I</span> = <span class="v">I</span> · <span class="v">A</span> = <span class="v">A</span></span>.</li><li><span class="m"><span class="v">A</span> · <span class="v">B</span> = <span class="v">B</span> · <span class="v">A</span></span>.</li><li><span class="m">(<span class="v">A</span> + <span class="v">B</span>)² = <span class="v">A</span>² + 2<span class="v">AB</span> + <span class="v">B</span>²</span>.</li><li><span class="m">(<span class="v">A</span> · <span class="v">B</span>)<sup>t</sup> = <span class="v">A</span><sup>t</sup> · <span class="v">B</span><sup>t</sup></span>.</li><li>se <span class="m"><span class="v">A</span> · <span class="v">B</span> = 0</span>, então <span class="m"><span class="v">A</span> = 0</span> ou <span class="m"><span class="v">B</span> = 0</span>.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A identidade é o elemento neutro da multiplicação, dos dois lados: <span class="m"><span class="v">AI</span> = <span class="v">IA</span> = <span class="v">A</span></span> sempre.</p>
+      <p>A B falha porque o produto não é comutativo (veja a questão 4). A C depende disso: <span class="m">(<span class="v">A</span> + <span class="v">B</span>)² = <span class="v">A</span>² + <span class="v">AB</span> + <span class="v">BA</span> + <span class="v">B</span>²</span>, e <span class="m"><span class="v">AB</span> + <span class="v">BA</span></span> só vira <span class="m">2<span class="v">AB</span></span> se elas comutarem. A D tem a ordem errada: o certo é <span class="m"><span class="v">B</span><sup>t</sup><span class="v">A</span><sup>t</sup></span>. A E é falsa: há matrizes não nulas com produto nulo, como na seção 06.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Localizo <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span> sem trocar linha por coluna</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto uma matriz a partir de uma lei de formação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço matriz quadrada, identidade, diagonal, transposta e simétrica</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo matrizes e multiplico por número, elemento a elemento</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo igualdades de matrizes montando as equações elemento a elemento</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido se um produto existe e qual é a ordem do resultado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Multiplico matrizes linha por coluna sem errar a soma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico o que significa cada elemento de um produto num contexto de quantidade × preço</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que <span class="m"><span class="v">AB</span> ≠ <span class="v">BA</span></span> em geral e que <span class="m"><span class="v">AB</span> = 0</span> não obriga um fator nulo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a inversa de uma 2 × 2 e confiro multiplicando</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio tabelas de jogos: linha = gols feitos, coluna = gols sofridos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso a simetria para completar uma tabela de distâncias</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto <span class="m"><span class="v">A</span>²</span> numa matriz de ligações como contagem de rotas com uma escala</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>25 questões</strong> e acerte pelo menos 18, com pelo menos oito de leitura de tabela e cinco de produto em contexto. Depois siga para <strong>Determinantes e sistemas lineares</strong>, onde o número <span class="m"><span class="v">ad</span> − <span class="v">bc</span></span> da inversa ganha nome e passa a decidir se um sistema tem solução.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>34 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-33-matrizes-operacoes.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-33";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

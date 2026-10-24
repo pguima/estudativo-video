@@ -1,0 +1,59 @@
+Na fórmula de Bhaskara, quase todo erro começa antes da fórmula: no sinal do b. Com b igual a menos sete, o b ao quadrado é mais quarenta e nove e o menos b é mais sete. Erre um dos dois e as raízes saem trocadas.
+
+Ao final, você vai aplicar Bhaskara sem errar sinal e saber, só olhando o delta, quantas raízes a equação tem.
+
+Três lembretes rápidos. Do episódio um: a tabelinha a, b, c, com o sinal grudado em cada número. Da série de Operações: menos sete, entre parênteses, ao quadrado é mais quarenta e nove; sem parênteses, menos quarenta e nove. E de Expressões Algébricas: o quadrado da soma, a mais b, ao quadrado.
+
+Olhe esta equação: dois x ao quadrado, menos sete x, mais três, igual a zero. Dá para colocar x em evidência, como no episódio um? Não: o três não tem x. Dá para isolar o x ao quadrado? Também não: o menos sete x atrapalha. Os truques das incompletas travaram. Precisamos de uma ferramenta que abra qualquer equação: uma chave mestra.
+
+Que chave é essa? A fórmula de Bhaskara é a receita que dá as raízes de qualquer equação do segundo grau. Ela tem duas etapas. A primeira é o discriminante, chamado de delta, esse triângulo grego. Delta é igual a b ao quadrado, menos quatro a c. Mas atenção: a chave mestra só abre a equação arrumada, com zero de um lado.
+
+E a segunda etapa? x é igual a menos b, mais ou menos raiz de delta, tudo dividido por dois a. Esse mais ou menos quer dizer duas contas: uma com mais, outra com menos. Por isso costumam sair duas raízes.
+
+Vamos abrir aquela equação. Primeiro, a tabelinha: a igual a dois, b igual a menos sete, c igual a três. Agora o delta: menos sete, entre parênteses, ao quadrado, menos quatro, vezes dois, vezes três. Menos sete ao quadrado: quarenta e nove. Quatro vezes dois vezes três: vinte e quatro. Quarenta e nove menos vinte e quatro: delta igual a vinte e cinco.
+
+Segunda etapa. Menos b: o b é menos sete, então menos b é mais sete. Raiz de vinte e cinco: cinco. Dois a: quatro. x igual a sete, mais ou menos cinco, sobre quatro. Com mais: doze sobre quatro, três. Com menos: dois sobre quatro, um meio.
+
+Atalho: a conferência de dez segundos. Coloque uma raiz de volta na equação. Com x igual a três: dois vezes nove, dezoito, menos vinte e um, mais três: zero. Bateu! Se não desse zero, o erro estaria quase sempre num sinal.
+
+Onde a maioria tropeça? Tropeço um: o b ao quadrado. Com b igual a menos sete, é mais quarenta e nove. Um número ao quadrado nunca fica negativo. Tropeço dois: o menos b. O oposto de menos sete é mais sete. Tropeço três: o dois a divide o numerador inteiro. É sete mais cinco, tudo dividido por quatro, e não sete mais cinco quartos.
+
+E de onde saiu essa fórmula? Em um minuto. Ela é o quadrado da soma usado ao contrário. Pegue a x ao quadrado, mais b x, mais c, igual a zero, e multiplique tudo por quatro a. Depois some b ao quadrado dos dois lados. O lado esquerdo vira um quadrado perfeito: dois a x, mais b, ao quadrado. E o direito vira b ao quadrado menos quatro a c: o próprio delta.
+
+E o mais ou menos? Se um número ao quadrado dá delta, esse número pode ser mais raiz de delta ou menos raiz de delta. Cinco ao quadrado dá vinte e cinco; menos cinco ao quadrado também. Isolando o x, sai a fórmula inteira.
+
+E por que o delta tem esse nome, discriminante? Porque ele é o porteiro: decide quantas raízes passam. Uma raiz real é uma solução que existe entre os números que usamos no dia a dia. Primeira porta: delta positivo. x ao quadrado, menos cinco x, mais quatro: delta igual a nove. Passam duas raízes: um e quatro.
+
+Segunda porta: delta igual a zero. x ao quadrado, menos quatro x, mais quatro: dezesseis menos dezesseis, zero. Mais zero e menos zero dão a mesma coisa. Passa uma raiz só: dois. Ela se chama raiz dupla: as duas contas caem no mesmo número.
+
+Terceira porta: delta negativo. x ao quadrado, mais dois x, mais cinco: quatro menos vinte, menos dezesseis. Raiz de menos dezesseis? Nenhum número real ao quadrado dá negativo. Porta trancada: nenhuma raiz real. Pode parar a conta aqui.
+
+Atalho para o porteiro. Se o a e o c têm sinais opostos, o menos quatro a c vira uma soma. Aí o delta é b ao quadrado mais um número positivo: sempre positivo. Duas raízes garantidas, sem fazer conta.
+
+E onde isso aparece num gráfico? O desenho de y igual a a x ao quadrado, mais b x, mais c é uma curva chamada parábola. As raízes são os pontos em que ela corta o eixo x: duas vezes, uma vez ou nenhuma. É o mesmo porteiro, desenhado. O gráfico tem série própria: Função Quadrática.
+
+E quando a equação tem uma letra no lugar de um número? Essa letra é um parâmetro: um valor que você escolhe e que muda a equação. x ao quadrado, menos oito x, mais k, igual a zero. Para qual k existe uma única raiz? Uma única raiz é a segunda porta: delta igual a zero. Sessenta e quatro, menos quatro k, igual a zero: k igual a dezesseis. Confere: x ao quadrado, menos oito x, mais dezesseis é x menos quatro, ao quadrado.
+
+Sua vez. Resolva três x ao quadrado, menos cinco x, menos dois, igual a zero, por Bhaskara. Pause e tente.
+
+Vamos juntos. a igual a três, b igual a menos cinco, c igual a menos dois. Delta: vinte e cinco, menos quatro vezes três vezes menos dois. Menos com menos: vinte e cinco mais vinte e quatro, quarenta e nove. x igual a cinco, mais ou menos sete, sobre seis: dois ou menos um terço. Conferência com x igual a dois: doze, menos dez, menos dois: zero. Bateu!
+
+Três frases para guardar. Um: primeiro a, b e c com sinal; depois o delta. Dois: delta positivo, duas raízes; zero, uma; negativo, nenhuma real. Três: o dois a divide o numerador inteiro.
+
+Erro número um: calcular o delta com menos sete ao quadrado igual a menos quarenta e nove. Parece certo porque, na calculadora, menos sete ao quadrado sem parênteses dá mesmo menos quarenta e nove. Correção: escreva o b sempre entre parênteses. Senão o delta vira menos setenta e três, e você jura que não tem raiz.
+
+Erro número dois: dividir só a raiz por dois a. Parece certo porque a raiz de delta fica bem em cima do dois a. Sete mais cinco quartos dá oito vírgula vinte e cinco. Correção: o traço da fração cobre o numerador inteiro. Some primeiro, divida depois: três.
+
+Erro número três: aplicar a fórmula sem igualar a zero. Em x ao quadrado, menos cinco x, igual a menos seis, a pessoa usa c igual a menos seis e acha seis e menos um. Parece certo porque os três números estão ali, prontos. Correção: a chave mestra só abre a equação arrumada. Passe o menos seis para o outro lado: mais seis. As raízes são dois e três.
+
+Hora de questão. Um programa de desenho traça a curva y igual a x ao quadrado, menos seis x, mais k, em que k é escolhido pelo usuário. Para uma vinheta, o designer quer que a curva toque o eixo horizontal em exatamente um ponto. O valor de k deve ser: A: três. B: seis. C: nove. D: trinta e seis. E: menos nove.
+
+Eu começo. Tocar o eixo em um único ponto é ter uma única raiz. Segunda porta: delta igual a zero. Tabelinha: a igual a um, b igual a menos seis, c igual a k. Agora você termina. Pause o vídeo. Menos seis, ao quadrado, trinta e seis, menos quatro k, igual a zero. k igual a nove. Confere: x ao quadrado, menos seis x, mais nove é x menos três, ao quadrado, que só zera em três. Letra C!
+
+E as erradas? A A, três, é a própria raiz dupla, não o k. A B copiou o b sem o sinal. A D esqueceu o quatro de quatro a c. E a E, menos nove, errou o sinal ao isolar o k: com ela, o delta seria setenta e dois, e a curva tocaria o eixo em dois pontos.
+
+Para fechar, as mesmas três frases. Um: primeiro a, b e c com sinal; depois o delta. Dois: delta positivo, duas raízes; zero, uma; negativo, nenhuma real. Três: o dois a divide o numerador inteiro.
+
+Em x ao quadrado, menos sete x, mais dez, igual a zero, dá para achar as raízes sem fórmula nenhuma, em três segundos: dois números que somam sete e multiplicam dez. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual dos três tropeços já te pegou? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

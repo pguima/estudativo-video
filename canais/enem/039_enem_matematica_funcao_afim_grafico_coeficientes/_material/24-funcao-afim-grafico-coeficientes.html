@@ -1,0 +1,1034 @@
+<title>Função Afim</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 6 de 18</p>
+    <h1>Função afim: gráfico, coeficientes e aplicações</h1>
+    <p class="deck">Uma parte fixa mais uma parte que cresce sempre no mesmo ritmo: é o modelo de tarifas, salários com comissão, velas que queimam e tanques que esvaziam. A função afim tem gráfico em linha reta, e seus dois coeficientes contam a história inteira: de onde a grandeza parte e quanto ela muda a cada unidade.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Reta y igual a 2x mais 1. Ela corta o eixo y em b igual a 1. Um triângulo mostra que, quando x aumenta 1, y aumenta 2: a taxa de variação a é 2">
+  <defs>
+    <marker id="ax24h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="34" y1="164.3" x2="232" y2="164.3" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax24h)"/>
+  <line x1="67" y1="182" x2="67" y2="4" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax24h)"/>
+  <line x1="112" y1="161.3" x2="112" y2="167.3" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="112" y="180.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="157" y1="161.3" x2="157" y2="167.3" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="157" y="180.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="202" y1="161.3" x2="202" y2="167.3" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="202" y="180.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="64" y1="144.8" x2="70" y2="144.8" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="60" y="148.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="64" y1="105.8" x2="70" y2="105.8" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="60" y="109.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="64" y1="66.7" x2="70" y2="66.7" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="60" y="70.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="64" y1="27.7" x2="70" y2="27.7" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="60" y="31.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">7</text>
+  <text x="246" y="158.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">x</text>
+  <text x="75" y="14" class="svg-lbl" style="fill:var(--ink-2)">y</text>
+  <line x1="44.5" y1="164.3" x2="211" y2="19.9" style="stroke:var(--c1);stroke-width:2.6;stroke-linecap:round"/>
+  <line x1="112" y1="105.8" x2="157" y2="105.8" style="stroke:var(--c3);stroke-width:2;stroke-linecap:round"/>
+  <line x1="157" y1="105.8" x2="157" y2="66.7" style="stroke:var(--c2);stroke-width:2;stroke-linecap:round"/>
+  <text x="134.5" y="121.8" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">Δx = 1</text>
+  <text x="165" y="90.2" class="svg-lbl" style="fill:var(--c2)">Δy = 2</text>
+  <circle cx="67" cy="144.8" r="5" style="fill:var(--c4)"/>
+  <text x="77" y="160.8" class="svg-num" style="fill:var(--c4)">b = 1</text>
+  <text x="150" y="202" text-anchor="middle" class="svg-num" style="fill:var(--ink)">y = 2x + 1 · a = Δy ÷ Δx = 2</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>7 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Conceito de função · Equações e inequações do 1º grau</dd></div>
+      <div><dt>Destrava</dt><dd>Função quadrática, PA, juros simples, equação da reta, movimento uniforme</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A função afim é a função mais cobrada do ENEM. Ela quase sempre vem em contexto, e a pergunta exige que você <strong>monte a lei</strong> a partir de dados, de uma tabela ou de um gráfico, e depois a use. As formas mais comuns:</p>
+<ul>
+  <li><strong>Tarifas e planos:</strong> valor fixo mais valor por unidade (minuto, quilômetro, metro cúbico), e a comparação entre dois planos.</li>
+  <li><strong>Variação constante no tempo:</strong> vela que derrete, reservatório que esvazia, carro que desvaloriza, árvore que cresce.</li>
+  <li><strong>Custo, receita e lucro:</strong> quantas unidades vender para não ter prejuízo.</li>
+  <li><strong>Leitura de gráfico:</strong> descobrir a taxa de variação e o valor inicial a partir de dois pontos de uma reta.</li>
+  <li><strong>Proporcional ou não:</strong> reconhecer que, com parte fixa, dobrar o <span class="m"><span class="v">x</span></span> não dobra o <span class="m"><span class="v">y</span></span>.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Dar nome aos coeficientes em português: <span class="m"><span class="v">a</span></span> é <strong>quanto muda por unidade</strong> (taxa de variação) e <span class="m"><span class="v">b</span></span> é <strong>o valor quando <span class="m"><span class="v">x</span> = 0</span></strong> (valor inicial). Com essas duas frases, quase toda questão vira uma conta de uma linha.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Definição e casos particulares</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Função afim é toda função <span class="m"><span class="v">f</span>: ℝ → ℝ</span> da forma <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">a</span><span class="v">x</span> + <span class="v">b</span></span>, com <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> reais. O <span class="m"><span class="v">a</span></span> é o <strong>coeficiente angular</strong> (ou taxa de variação) e o <span class="m"><span class="v">b</span></span>, o <strong>coeficiente linear</strong> (ou valor inicial). O gráfico é sempre uma <strong>reta</strong>.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Caso</th><th>Forma</th><th>Gráfico</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Afim geral</strong></td><td class="m"><span class="v">a</span><span class="v">x</span> + <span class="v">b</span></td><td>reta inclinada</td><td>táxi: <span class="m">5 + 2,5<span class="v">d</span></span></td></tr>
+    <tr><td><strong>Linear</strong> (<span class="m"><span class="v">b</span> = 0</span>)</td><td class="m"><span class="v">a</span><span class="v">x</span></td><td>reta pela origem</td><td>combustível: <span class="m">6<span class="v">L</span></span></td></tr>
+    <tr><td><strong>Identidade</strong></td><td class="m"><span class="v">x</span></td><td>bissetriz dos quadrantes ímpares</td><td>—</td></tr>
+    <tr><td><strong>Constante</strong> (<span class="m"><span class="v">a</span> = 0</span>)</td><td class="m"><span class="v">b</span></td><td>reta horizontal</td><td>mensalidade fixa: <span class="m">99,90</span></td></tr>
+  </tbody>
+</table>
+</div>
+<p>Alguns livros chamam de “função do 1º grau” só o caso com <span class="m"><span class="v">a</span> ≠ 0</span>. Para a prova, o que importa é reconhecer a estrutura “parte fixa + parte proporcional a <span class="m"><span class="v">x</span></span>”.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Coeficiente angular: a taxa de variação</h2>
+<p>Numa função afim, cada vez que <span class="m"><span class="v">x</span></span> aumenta 1, o <span class="m"><span class="v">y</span></span> muda exatamente <span class="m"><span class="v">a</span></span>. Por isso, com dois pontos quaisquer da reta:</p>
+<div class="eq">
+  <span class="lbl">Taxa de variação</span>
+  <p class="m" style="font-size:1.1rem"><span class="v">a</span> = <span class="frac"><i>Δ<span class="v">y</span></i><i>Δ<span class="v">x</span></i></span> = <span class="frac"><i><span class="v">y</span><sub>2</sub> − <span class="v">y</span><sub>1</sub></i><i><span class="v">x</span><sub>2</sub> − <span class="v">x</span><sub>1</sub></i></span></p>
+  <p>A unidade de <span class="m"><span class="v">a</span></span> é “unidade de <span class="m"><span class="v">y</span></span> por unidade de <span class="m"><span class="v">x</span></span>”: reais por quilômetro, centímetros por minuto, litros por hora.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th class="m"><span class="v">x</span> (horas)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">y</span> (litros)</td><td>500</td><td>440</td><td>380</td><td>320</td><td>260</td></tr>
+    <tr><td>diferença</td><td>—</td><td>−60</td><td>−60</td><td>−60</td><td>−60</td></tr>
+  </tbody>
+</table>
+</div>
+<p>As diferenças são constantes: é função afim, com <span class="m"><span class="v">a</span> = −60</span> L/h e <span class="m"><span class="v">b</span> = 500</span> L. Lei: <span class="m"><span class="v">y</span> = 500 − 60<span class="v">x</span></span>. Numa tabela com <span class="m"><span class="v">x</span></span> espaçado irregularmente, divida cada diferença de <span class="m"><span class="v">y</span></span> pela diferença de <span class="m"><span class="v">x</span></span> correspondente.</p>
+<div class="box warn">
+  <span class="tag">Δy sobre Δx, nessa ordem e com os mesmos pontos</span>
+  <p>Inverter a fração (Δx/Δy) ou subtrair os pontos em ordens diferentes no numerador e no denominador troca o valor ou o sinal da taxa. Escreva os dois pontos, subtraia “segundo menos primeiro” em cima e embaixo.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Coeficiente linear e zero da função</h2>
+<p>Fazendo <span class="m"><span class="v">x</span> = 0</span>: <span class="m"><span class="v">f</span>(0) = <span class="v">b</span></span>. O coeficiente linear é o valor da função no início, e no gráfico é o ponto em que a reta <strong>corta o eixo <span class="m"><span class="v">y</span></span></strong>, <span class="m">(0, <span class="v">b</span>)</span>.</p>
+<p>O <strong>zero</strong> (ou raiz) é o <span class="m"><span class="v">x</span></span> que anula a função, onde a reta <strong>corta o eixo <span class="m"><span class="v">x</span></span></strong>:</p>
+<div class="eq">
+  <span class="lbl">Zero da função afim</span>
+  <p class="m" style="font-size:1.05rem"><span class="v">a</span><span class="v">x</span> + <span class="v">b</span> = 0 &nbsp;→&nbsp; <span class="v">x</span> = −<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></p>
+  <p>Em <span class="m"><span class="v">y</span> = 500 − 60<span class="v">x</span></span>, o tanque esvazia em <span class="m"><span class="v">x</span> = <span class="frac"><i>500</i><i>60</i></span> ≈ 8,3</span> h. Em <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2<span class="v">x</span> − 6</span>, o zero é 3.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Em contexto, o zero tem nome</span>
+  <p>Hora em que a vela acaba, quilometragem em que a dívida zera, temperatura em que algo congela. Quando a pergunta é “quando acaba?” ou “quando chega a zero?”, ela pede o zero da função.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Crescente, decrescente, constante</h2>
+<p>O sinal de <span class="m"><span class="v">a</span></span> decide a inclinação; o tamanho de <span class="m"><span class="v">a</span></span> decide o quanto ela é íngreme.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Três retas. Com a positivo, a reta sobe da esquerda para a direita: função crescente. Com a negativo, desce: decrescente. Com a igual a zero, é horizontal: constante">
+<defs>
+    <marker id="ax24s" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="16" y1="95.6" x2="146" y2="95.6" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="78" y1="156" x2="78" y2="8" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="28.7" y1="134.9" x2="127.3" y2="32.1" style="stroke:var(--c1);stroke-width:2.6;stroke-linecap:round"/>
+  <text x="78" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">a &gt; 0</text>
+  <text x="78" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">crescente</text>
+  <line x1="166" y1="95.6" x2="296" y2="95.6" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="228" y1="156" x2="228" y2="8" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="178.7" y1="32.1" x2="277.3" y2="134.9" style="stroke:var(--c4);stroke-width:2.6;stroke-linecap:round"/>
+  <text x="228" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c4)">a &lt; 0</text>
+  <text x="228" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">decrescente</text>
+  <line x1="316" y1="95.6" x2="446" y2="95.6" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="378" y1="156" x2="378" y2="8" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax24s)"/>
+  <line x1="328.7" y1="59.3" x2="427.3" y2="59.3" style="stroke:var(--c3);stroke-width:2.6;stroke-linecap:round"/>
+  <text x="378" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">a = 0</text>
+  <text x="378" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">constante</text>
+</svg>
+<figcaption><b>O sinal de <span class="m"><span class="v">a</span></span> lido no gráfico.</b> Com <span class="m"><span class="v">a</span> &gt; 0</span>, a reta sobe da esquerda para a direita (função crescente); com <span class="m"><span class="v">a</span> &lt; 0</span>, desce (decrescente); com <span class="m"><span class="v">a</span> = 0</span>, é horizontal (constante). O <span class="m"><span class="v">b</span></span> só desloca a reta para cima ou para baixo.</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th>Coeficiente</th><th>No gráfico</th><th>Em contexto</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">a</span> &gt; 0</td><td>reta sobe</td><td>a grandeza aumenta (conta que cresce com o consumo)</td></tr>
+    <tr><td class="m"><span class="v">a</span> &lt; 0</td><td>reta desce</td><td>a grandeza diminui (vela, reservatório, valor de um carro)</td></tr>
+    <tr><td class="m">|<span class="v">a</span>| maior</td><td>reta mais íngreme</td><td>variação mais rápida (tarifa por km mais cara)</td></tr>
+    <tr><td class="m"><span class="v">b</span> maior</td><td>reta mais alta no eixo <span class="m"><span class="v">y</span></span></td><td>parte fixa maior</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Inclinação depende da escala</span>
+  <p>Comparar a inclinação “a olho” só vale quando as retas estão no <strong>mesmo</strong> par de eixos. Em gráficos com escalas diferentes, calcule <span class="m">Δ<span class="v">y</span>/Δ<span class="v">x</span></span> de cada um.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Obtendo a lei a partir de dois pontos</h2>
+<p>Uma reta fica determinada por dois pontos, então dois dados bastam para escrever a lei. O roteiro:</p>
+<div class="eq">
+  <span class="lbl">Exemplo · a reta passa por (2, 11) e (5, 20)</span>
+  <p class="m">1) <span class="v">a</span> = <span class="frac"><i>20 − 11</i><i>5 − 2</i></span> = <span class="frac"><i>9</i><i>3</i></span> = 3</p>
+  <p class="m">2) substitua um ponto: 11 = 3 · 2 + <span class="v">b</span> &nbsp;→&nbsp; <span class="v">b</span> = 5</p>
+  <p class="m">3) lei: <span class="v">f</span>(<span class="v">x</span>) = 3<span class="v">x</span> + 5 &nbsp;&nbsp; 4) confira com o outro ponto: 3 · 5 + 5 = 20 ✓</p>
+</div>
+<p>Se um dos pontos tem <span class="m"><span class="v">x</span> = 0</span>, o <span class="m"><span class="v">b</span></span> já está dado. Também funciona montar o sistema <span class="m">2<span class="v">a</span> + <span class="v">b</span> = 11</span> e <span class="m">5<span class="v">a</span> + <span class="v">b</span> = 20</span> e subtrair as equações, como em <em>Sistemas de equações lineares</em>.</p>
+<div class="eq">
+  <span class="lbl">Em contexto · escala termométrica</span>
+  <p>Uma escala marca 10 °E no gelo fundente (0 °C) e 60 °E na água fervente (100 °C). Pontos <span class="m">(0, 10)</span> e <span class="m">(100, 60)</span>: <span class="m"><span class="v">a</span> = <span class="frac"><i>50</i><i>100</i></span> = 0,5</span> e <span class="m"><span class="v">b</span> = 10</span>. Lei: <span class="m"><span class="v">E</span> = 0,5<span class="v">C</span> + 10</span>. É o mesmo raciocínio que gera <span class="m"><span class="v">F</span> = 1,8<span class="v">C</span> + 32</span>.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Estudo do sinal</h2>
+<p>Saber onde <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span> é positiva ou negativa é resolver uma inequação do 1º grau. Com o zero e o sinal de <span class="m"><span class="v">a</span></span>, a resposta sai sem conta:</p>
+<div class="tw">
+<table>
+  <thead><tr><th></th><th>antes do zero</th><th>no zero</th><th>depois do zero</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">a</span> &gt; 0 &nbsp;(ex.: 2<span class="v">x</span> − 6, zero 3)</td><td>negativa</td><td>0</td><td>positiva</td></tr>
+    <tr><td class="m"><span class="v">a</span> &lt; 0 &nbsp;(ex.: −<span class="v">x</span> + 4, zero 4)</td><td>positiva</td><td>0</td><td>negativa</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Regra para guardar: <strong>depois do zero, a função tem o sinal de <span class="m"><span class="v">a</span></span></strong>; antes, o sinal contrário.</p>
+<div class="box tip">
+  <span class="tag">Lucro positivo é estudo do sinal</span>
+  <p>“A partir de quantas unidades há lucro?” é perguntar onde <span class="m"><span class="v">L</span>(<span class="v">x</span>) &gt; 0</span>. Ache o zero (o ponto de equilíbrio) e use o sinal de <span class="m"><span class="v">a</span></span>. Se a resposta precisa ser inteira e a desigualdade é estrita, o equilíbrio em si não serve: lucro zero não é lucro.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Aplicações: custo, receita, lucro e proporcionalidade</h2>
+<div class="eq">
+  <span class="lbl">Os três modelos de uma pequena empresa</span>
+  <p class="m"><span class="v">C</span>(<span class="v">x</span>) = <span class="v">C</span><sub>fixo</sub> + <span class="v">c</span> · <span class="v">x</span> &nbsp;&nbsp;&nbsp; <span class="v">R</span>(<span class="v">x</span>) = <span class="v">p</span> · <span class="v">x</span> &nbsp;&nbsp;&nbsp; <span class="v">L</span>(<span class="v">x</span>) = <span class="v">R</span>(<span class="v">x</span>) − <span class="v">C</span>(<span class="v">x</span>)</p>
+  <p>Com custo fixo de R$ 2.000,00, custo de R$ 15,00 por peça e preço de venda de R$ 25,00: <span class="m"><span class="v">L</span>(<span class="v">x</span>) = 25<span class="v">x</span> − (2 000 + 15<span class="v">x</span>) = 10<span class="v">x</span> − 2 000</span>. Equilíbrio em <span class="m"><span class="v">x</span> = 200</span> peças.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 560 256" role="img" aria-label="Gráfico de custo e receita em função do número de peças. A receita, 25x, parte da origem; o custo, 2000 mais 15x, parte de 2000. As retas se cruzam em 200 peças e 5000 reais, o ponto de equilíbrio. Antes dele a região entre as retas é de prejuízo; depois, de lucro">
+  <defs>
+    <marker id="ax24e" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="74" y1="214" x2="422" y2="214" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax24e)"/>
+  <line x1="80" y1="220" x2="80" y2="12" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax24e)"/>
+  <line x1="158.6" y1="211" x2="158.6" y2="217" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="158.6" y="230" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">100</text>
+  <line x1="237.1" y1="211" x2="237.1" y2="217" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="237.1" y="230" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">200</text>
+  <line x1="315.7" y1="211" x2="315.7" y2="217" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="315.7" y="230" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">300</text>
+  <line x1="394.3" y1="211" x2="394.3" y2="217" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="394.3" y="230" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">400</text>
+  <line x1="77" y1="177.8" x2="83" y2="177.8" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="73" y="181.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2.000</text>
+  <line x1="77" y1="123.5" x2="83" y2="123.5" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="73" y="127.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">5.000</text>
+  <line x1="77" y1="69.2" x2="83" y2="69.2" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="73" y="73.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">8.000</text>
+  <line x1="77" y1="33" x2="83" y2="33" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="73" y="37" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">10.000</text>
+  <text x="430" y="246" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">peças</text>
+  <text x="88" y="22" class="svg-lbl" style="fill:var(--ink-2)">R$</text>
+  <polygon points="80,214 237.1,123.5 80,177.8" style="fill:var(--c4-soft);stroke:none"/>
+  <polygon points="237.1,123.5 394.3,33 394.3,69.2" style="fill:var(--c3-soft);stroke:none"/>
+  <line x1="80" y1="177.8" x2="394.3" y2="69.2" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="80" y1="214" x2="394.3" y2="33" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="237.1" y1="214" x2="237.1" y2="123.5" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <circle cx="237.1" cy="123.5" r="4.5" style="fill:var(--ink)"/>
+  <text x="247.1" y="145.5" class="svg-lbl" style="fill:var(--ink)">equilíbrio (200; 5.000)</text>
+  <text x="402.3" y="37" class="svg-lbl" style="fill:var(--c1)">receita 25x</text>
+  <text x="402.3" y="73.2" class="svg-lbl" style="fill:var(--c2)">custo 2.000 + 15x</text>
+  <line x1="127.1" y1="173.3" x2="127.1" y2="143.4" style="stroke:var(--c4);stroke-width:1;stroke-linecap:round"/>
+  <text x="127.1" y="137.6" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:600">prejuízo</text>
+  <line x1="339.3" y1="78.3" x2="339.3" y2="118.1" style="stroke:var(--c3);stroke-width:1;stroke-linecap:round"/>
+  <text x="339.3" y="132.1" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:600">lucro</text>
+</svg>
+<figcaption><b>Ponto de equilíbrio.</b> A receita parte da origem (sem vendas, sem receita); o custo parte do custo fixo. Elas se cruzam em 200 peças, com R$ 5.000,00 de custo e de receita. Antes disso, o custo fica acima: prejuízo. Depois, a receita fica acima: lucro. Cada peça a mais rende <span class="m">25 − 15 = 10</span> reais de lucro.</figcaption>
+</figure>
+<h3>Proporcional só quando b = 0</h3>
+<p>Na função linear <span class="m"><span class="v">y</span> = <span class="v">a</span><span class="v">x</span></span>, <span class="m"><span class="v">y</span></span> é proporcional a <span class="m"><span class="v">x</span></span>: dobrar <span class="m"><span class="v">x</span></span> dobra <span class="m"><span class="v">y</span></span>. Com parte fixa, isso deixa de valer:</p>
+<div class="eq">
+  <span class="lbl">Plano de celular · R$ 40,00 fixos + R$ 0,50 por minuto</span>
+  <p class="m"><span class="v">C</span>(100) = 40 + 50 = 90 &nbsp;&nbsp;&nbsp; <span class="v">C</span>(200) = 40 + 100 = 140 &nbsp;≠&nbsp; 2 · 90</p>
+  <p>Dobrou o consumo, mas a parte fixa não dobra. Regra de três direta entre <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">y</span></span> só vale para funções lineares.</p>
+</div>
+<div class="box warn">
+  <span class="tag">A regra de três que o ENEM quer que você faça</span>
+  <p>Se uma mola de 20 cm passa a 26 cm com 2 kg, com 5 kg ela não terá <span class="m"><span class="frac"><i>26 · 5</i><i>2</i></span> = 65</span> cm. O que é proporcional à massa é o <strong>alongamento</strong> (6 cm para 2 kg, logo 15 cm para 5 kg); o comprimento total é afim: <span class="m">20 + 15 = 35</span> cm.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Ache o b e o a por seus nomes</span>
+  <p>Procure no texto o valor “inicial”, “fixo”, “sem uso”, “no instante zero”: é o <span class="m"><span class="v">b</span></span>. Procure “por quilômetro”, “a cada hora”, “por unidade”: é o <span class="m"><span class="v">a</span></span>. Se não houver, calcule <span class="m"><span class="v">a</span></span> por <span class="m">Δ<span class="v">y</span>/Δ<span class="v">x</span></span> com dois dados.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Desconfie da regra de três</span>
+  <p>Antes de montar uma proporção, pergunte se há parte fixa. Se houver, a proporção está errada, e a alternativa que ela produz está lá esperando por você.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Atenção ao ponto de partida do tempo</span>
+  <p>Se os dados começam em <span class="m"><span class="v">t</span> = 10</span> min, o valor inicial não é o primeiro dado da tabela. Extrapole para <span class="m"><span class="v">t</span> = 0</span> com a taxa, e confira se a pergunta conta o tempo desde o início ou a partir de algum instante.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Confira com um ponto conhecido</span>
+  <p>Com a lei pronta, substitua um dos dados do enunciado. Se não bater, há erro na taxa ou no sinal do <span class="m"><span class="v">b</span></span>.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Lei afim</th><th>Quem é a e quem é b</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física (MU)</strong></td><td class="m"><span class="v">s</span> = <span class="v">s</span><sub>0</sub> + <span class="v">v</span><span class="v">t</span></td><td><span class="m"><span class="v">a</span></span> é a velocidade; <span class="m"><span class="v">b</span></span>, a posição inicial</td></tr>
+    <tr><td><strong>Física (MUV)</strong></td><td class="m"><span class="v">v</span> = <span class="v">v</span><sub>0</sub> + <span class="v">a</span><span class="v">t</span></td><td>a aceleração é a taxa de variação da velocidade</td></tr>
+    <tr><td><strong>Termometria</strong></td><td class="m"><span class="v">F</span> = 1,8<span class="v">C</span> + 32</td><td>cada 1 °C vale 1,8 °F; 0 °C corresponde a 32 °F</td></tr>
+    <tr><td><strong>Matemática Financeira</strong></td><td class="m"><span class="v">M</span> = <span class="v">C</span> + <span class="v">C</span><span class="v">i</span> · <span class="v">t</span></td><td>juros simples: o montante cresce <span class="m"><span class="v">C</span><span class="v">i</span></span> por período</td></tr>
+    <tr><td><strong>Progressões</strong></td><td class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub>1</sub> + (<span class="v">n</span> − 1)<span class="v">r</span></td><td>uma PA é uma função afim definida nos naturais; a razão é a taxa</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em todos esses casos, a pergunta “quanto muda por unidade?” dá o <span class="m"><span class="v">a</span></span>, e “quanto vale no início?” dá o <span class="m"><span class="v">b</span></span>. O gráfico da velocidade no MUV, por exemplo, é uma reta cuja inclinação é a aceleração.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Regra de três com parte fixa</span> &nbsp;→&nbsp; <span class="c">usar a lei y = ax + b</span></span><small>Dobrar x não dobra y quando b ≠ 0.</small></li>
+  <li><span><span class="x">a = Δx/Δy</span> &nbsp;→&nbsp; <span class="c">a = Δy/Δx</span></span><small>Variação da saída sobre variação da entrada.</small></li>
+  <li><span><span class="x">Tomar o primeiro dado como b</span> &nbsp;→&nbsp; <span class="c">b = f(0)</span></span><small>Se a tabela começa em t = 10, extrapole até t = 0.</small></li>
+  <li><span><span class="x">Zero da função = b</span> &nbsp;→&nbsp; <span class="c">zero = −b/a</span></span><small>b é onde corta o eixo y; o zero, onde corta o eixo x.</small></li>
+  <li><span><span class="x">a &lt; 0 em grandeza que diminui escrito com +</span> &nbsp;→&nbsp; <span class="c">y = b − |a|x</span></span><small>Vela, tanque e depreciação têm taxa negativa.</small></li>
+  <li><span><span class="x">Equilíbrio = primeira unidade com lucro</span> &nbsp;→&nbsp; <span class="c">lucro exige L &gt; 0</span></span><small>No equilíbrio o lucro é zero; com unidades inteiras, some 1.</small></li>
+  <li><span><span class="x">Esquecer o tempo já decorrido</span> &nbsp;→&nbsp; <span class="c">tempo desde o início</span></span><small>17 cm aos 10 min: o fim não é 17 ÷ taxa minutos.</small></li>
+  <li><span><span class="x">Trocar a e b ao ler o gráfico</span> &nbsp;→&nbsp; <span class="c">b no eixo y, a na inclinação</span></span><small>Confira a lei com um ponto do gráfico.</small></li>
+  <li><span><span class="x">Comparar inclinações em escalas diferentes</span> &nbsp;→&nbsp; <span class="c">calcular Δy/Δx</span></span><small>A aparência engana quando os eixos mudam.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, identifique primeiro o valor inicial e a taxa de variação.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · A vela que derrete</span>
+    <p class="enun">Uma vela foi acesa e passou a diminuir de altura a uma taxa constante. Dez minutos depois de acesa, ela media 17 cm; trinta minutos depois de acesa, media 13 cm. Mantido esse ritmo, o tempo total, contado a partir do momento em que foi acesa, até a vela se consumir por completo é de</p>
+    <ol class="alt"><li>47,5 min.</li><li>65 min.</li><li>85 min.</li><li>95 min.</li><li>105 min.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Taxa: <span class="m"><span class="v">a</span> = <span class="frac"><i>13 − 17</i><i>30 − 10</i></span> = −0,2</span> cm/min. Altura inicial: <span class="m">17 + 0,2 · 10 = 19</span> cm. Lei: <span class="m"><span class="v">h</span>(<span class="v">t</span>) = 19 − 0,2<span class="v">t</span></span>.</p>
+      <p class="m">19 − 0,2<span class="v">t</span> = 0 &nbsp;→&nbsp; <span class="v">t</span> = 95 min</p>
+      <p>A C divide 17 por 0,2: é o tempo que falta a partir dos 10 min, sem somar esses 10. A B faz o mesmo a partir dos 30 min. A E extrapola errado a altura inicial (21 cm). A A usa a taxa de 0,4 cm/min, dividindo a queda de 4 cm por 10 min em vez de 20.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Dobrar o consumo não dobra a conta</span>
+    <p class="enun">Um plano de celular cobra uma mensalidade fixa mais um valor constante por minuto de ligação. Em um mês com 100 minutos de ligação, a conta foi de R$ 90,00; a mensalidade fixa é de R$ 40,00. Em um mês com 200 minutos, a conta será de</p>
+    <ol class="alt"><li>R$ 100,00.</li><li>R$ 130,00.</li><li>R$ 140,00.</li><li>R$ 180,00.</li><li>R$ 220,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os 100 minutos custaram <span class="m">90 − 40 = 50</span> reais, ou R$ 0,50 por minuto. Lei: <span class="m"><span class="v">C</span>(<span class="v">m</span>) = 40 + 0,5<span class="v">m</span></span>.</p>
+      <p class="m"><span class="v">C</span>(200) = 40 + 100 = 140 reais</p>
+      <p>A D é a regra de três (<span class="m">2 · 90</span>), que dobra também a mensalidade. A E dobra a conta e soma a mensalidade de novo. A A esquece a mensalidade. A B soma à conta antiga a mensalidade em vez dos 100 minutos a mais.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Reservatório com vazamento</span>
+    <p class="enun">Um reservatório tinha 2 000 litros de água quando começou um vazamento de vazão constante. Cinco horas depois, restavam 1 600 litros. Se nada for feito, o reservatório terá 400 litros após</p>
+    <ol class="alt"><li>1,25 h do início do vazamento.</li><li>4 h do início do vazamento.</li><li>15 h do início do vazamento.</li><li>20 h do início do vazamento.</li><li>25 h do início do vazamento.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Taxa: <span class="m"><span class="frac"><i>1 600 − 2 000</i><i>5</i></span> = −80</span> L/h. Lei: <span class="m"><span class="v">V</span>(<span class="v">t</span>) = 2 000 − 80<span class="v">t</span></span>.</p>
+      <p class="m">2 000 − 80<span class="v">t</span> = 400 &nbsp;→&nbsp; 80<span class="v">t</span> = 1 600 &nbsp;→&nbsp; <span class="v">t</span> = 20 h</p>
+      <p>A E é o tempo para esvaziar (<span class="m"><span class="v">V</span> = 0</span>). A C conta a partir da 5ª hora, não do início. A A faz uma proporção entre 400 e 1 600 litros, como se o volume fosse proporcional ao tempo. A B divide 1 600 por 400, misturando volumes com tempo.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Do equilíbrio ao lucro</span>
+    <p class="enun">Uma confecção tem custo fixo mensal de R$ 12.000,00 e gasta R$ 30,00 para produzir cada camiseta, vendida a R$ 50,00. O número mínimo de camisetas que precisam ser produzidas e vendidas em um mês para que a confecção tenha lucro é</p>
+    <ol class="alt"><li>150.</li><li>240.</li><li>400.</li><li>600.</li><li>601.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">L</span>(<span class="v">x</span>) = 50<span class="v">x</span> − (12 000 + 30<span class="v">x</span>) = 20<span class="v">x</span> − 12 000</p>
+      <p>Lucro exige <span class="m"><span class="v">L</span>(<span class="v">x</span>) &gt; 0</span>: <span class="m"><span class="v">x</span> &gt; 600</span>. Com 600 camisetas o lucro é exatamente zero; a primeira quantidade inteira com lucro é <strong>601</strong>.</p>
+      <p>A D é o ponto de equilíbrio, em que não há lucro nem prejuízo. A B divide o custo fixo pelo preço de venda, esquecendo o custo de produção. A C divide pelo custo unitário. A A divide pela soma <span class="m">50 + 30</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Uma escala termométrica nova</span>
+    <p class="enun">Um estudante criou uma escala termométrica E que marca 10 °E no ponto de fusão do gelo (0 °C) e 60 °E no ponto de ebulição da água (100 °C), ao nível do mar. A relação entre as escalas é afim. Uma pessoa com temperatura corporal de 37 °C teria, nessa escala,</p>
+    <ol class="alt"><li>18,5 °E.</li><li>28,5 °E.</li><li>47 °E.</li><li>74 °E.</li><li>84 °E.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Pontos <span class="m">(0, 10)</span> e <span class="m">(100, 60)</span>: <span class="m"><span class="v">a</span> = <span class="frac"><i>50</i><i>100</i></span> = 0,5</span> e <span class="m"><span class="v">b</span> = 10</span>.</p>
+      <p class="m"><span class="v">E</span> = 0,5 · 37 + 10 = 28,5 °E</p>
+      <p>A A esquece o <span class="m"><span class="v">b</span></span>: trata a relação como proporcional. A C soma 10 sem aplicar a taxa. A D inverte a taxa (<span class="m">Δ<span class="v">x</span>/Δ<span class="v">y</span> = 2</span>) e esquece o <span class="m"><span class="v">b</span></span>; a E inverte a taxa e soma o <span class="m"><span class="v">b</span></span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Lei a partir do gráfico</span>
+    <p class="enun">O gráfico de uma função afim <span class="m"><span class="v">f</span></span> é uma reta que corta o eixo vertical no ponto <span class="m">(0, −3)</span> e passa pelo ponto <span class="m">(2, 1)</span>. A lei dessa função é</p>
+    <ol class="alt"><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2<span class="v">x</span> − 3</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = −3<span class="v">x</span> + 2</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 0,5<span class="v">x</span> − 3</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 3</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = −2<span class="v">x</span> − 3</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O ponto no eixo vertical dá <span class="m"><span class="v">b</span> = −3</span>. A taxa: <span class="m"><span class="v">a</span> = <span class="frac"><i>1 − (−3)</i><i>2 − 0</i></span> = <span class="frac"><i>4</i><i>2</i></span> = 2</span>. Lei: <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2<span class="v">x</span> − 3</span>. Conferência: <span class="m"><span class="v">f</span>(2) = 4 − 3 = 1</span>.</p>
+      <p>A B troca os papéis de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span>. A C inverte a fração (<span class="m">Δ<span class="v">x</span>/Δ<span class="v">y</span></span>). A D erra o sinal de <span class="m"><span class="v">b</span></span> e a E, o de <span class="m"><span class="v">a</span></span>: a reta sobe de −3 para 1, então é crescente.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Qual corrida sai mais cara</span>
+    <p class="enun">A empresa de transporte A cobra R$ 6,00 fixos mais R$ 2,40 por quilômetro. Na empresa B, o preço também é uma função afim da distância: uma corrida de 0 km (só a bandeirada) custa R$ 8,00, e uma de 10 km custa R$ 28,00. A empresa A passa a ser mais cara que a B para corridas com mais de</p>
+    <ol class="alt"><li>2 km.</li><li>5 km.</li><li>15 km.</li><li>20 km.</li><li>35 km.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Em B: <span class="m"><span class="v">a</span> = <span class="frac"><i>28 − 8</i><i>10</i></span> = 2</span> e <span class="m"><span class="v">b</span> = 8</span>, ou seja, <span class="m"><span class="v">P</span><sub>B</sub> = 8 + 2<span class="v">x</span></span>.</p>
+      <p class="m">6 + 2,4<span class="v">x</span> &gt; 8 + 2<span class="v">x</span> &nbsp;→&nbsp; 0,4<span class="v">x</span> &gt; 2 &nbsp;→&nbsp; <span class="v">x</span> &gt; 5 km</p>
+      <p>A A é a diferença entre as bandeiradas, que ainda precisa ser dividida pela diferença de preço por km. A E soma as bandeiradas em vez de subtrair (<span class="m">14 ÷ 0,4</span>). A D e a C dividem por 0,4 a bandeirada de uma empresa só (8 e 6).</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Depreciação linear</span>
+    <p class="enun">Um carro comprado por R$ 60.000,00 passou a valer R$ 42.000,00 três anos depois. Suponha que o valor do carro diminua linearmente com o tempo. Sete anos após a compra, ele valerá</p>
+    <ol class="alt"><li>R$ 6.000,00.</li><li>R$ 12.000,00.</li><li>R$ 18.000,00.</li><li>R$ 24.000,00.</li><li>cerca de R$ 26.000,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Taxa: <span class="m"><span class="frac"><i>42 000 − 60 000</i><i>3</i></span> = −6 000</span> reais por ano. Lei: <span class="m"><span class="v">V</span>(<span class="v">t</span>) = 60 000 − 6 000<span class="v">t</span></span>.</p>
+      <p class="m"><span class="v">V</span>(7) = 60 000 − 42 000 = 18 000 reais</p>
+      <p>A A é a perda anual, não o valor. A B desconta 5 anos a partir do valor de R$ 42.000,00, quando faltam só 4. A D desconta duas vezes a perda de 3 anos, como se 7 anos fossem 6. A E aplica a mesma queda <strong>percentual</strong> (30% a cada 3 anos), que é o modelo exponencial, não o linear pedido.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · A mola que alonga</span>
+    <p class="enun">Uma mola tem 20 cm de comprimento sem carga. Pendurando-se nela um objeto de 2 kg, seu comprimento passa a 26 cm. Admitindo que o alongamento seja proporcional à massa pendurada, a massa que deixa a mola com 32 cm de comprimento é</p>
+    <ol class="alt"><li>cerca de 2,5 kg.</li><li>4 kg.</li><li>6 kg.</li><li>cerca de 10,7 kg.</li><li>16 kg.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O alongamento é de 6 cm para 2 kg: 3 cm por kg. O comprimento é afim na massa: <span class="m"><span class="v">L</span>(<span class="v">m</span>) = 20 + 3<span class="v">m</span></span>.</p>
+      <p class="m">20 + 3<span class="v">m</span> = 32 &nbsp;→&nbsp; <span class="v">m</span> = 4 kg</p>
+      <p>A A faz regra de três com o comprimento total (<span class="m"><span class="frac"><i>32 · 2</i><i>26</i></span> ≈ 2,5</span>). A D divide 32 por 3, esquecendo os 20 cm iniciais. A E divide 32 por 2. A C divide o alongamento de 12 cm por 2, usando a massa de referência como se fosse a taxa.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço uma função afim pela estrutura “parte fixa + parte proporcional”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto <span class="m"><span class="v">a</span></span> como taxa de variação, com unidade</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto <span class="m"><span class="v">b</span></span> como valor inicial e ponto de corte no eixo <span class="m"><span class="v">y</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo <span class="m"><span class="v">a</span> = Δ<span class="v">y</span>/Δ<span class="v">x</span></span> a partir de dois pontos ou de uma tabela</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo a lei a partir de dois pontos e a confiro com um terceiro dado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Extrapolo o valor inicial quando os dados não começam em zero</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o zero <span class="m">−<span class="v">b</span>/<span class="v">a</span></span> e o interpreto no contexto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio no gráfico se a função é crescente, decrescente ou constante</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Faço o estudo do sinal com o zero e o sinal de <span class="m"><span class="v">a</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto custo, receita e lucro e encontro o ponto de equilíbrio</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo função linear (proporcional) de função afim com parte fixa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Comparo dois planos e decido a partir de quando um compensa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço leis afins em MU, termometria, juros simples e PA</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez em que a lei precisa ser montada a partir de um gráfico ou de uma tabela. Depois siga para <strong>Função quadrática: vértice, raízes, máximo e mínimo</strong>, em que a taxa de variação deixa de ser constante.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>32 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-24-funcao-afim-grafico-coeficientes.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-24";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

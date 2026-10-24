@@ -1,0 +1,254 @@
+Conceito de Função
+Matemática › Álgebra e Funções › Assunto 5 de 18
+Conceito de função: domínio, contradomínio e imagem
+Preço que depende da distância, temperatura que depende da hora, área que depende do lado: função é o nome matemático de “uma coisa determina a outra”. Este assunto define a ideia com precisão, ensina a ler domínio e imagem em fórmulas, tabelas e gráficos e prepara o terreno para todas as funções do bloco.
+Semana
+7 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Equações e inequações do 1º grau · Sistemas de equações lineares
+Destrava
+Função afim, função quadrática, exponencial e leitura de gráficos em todas as áreas
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM quase não pergunta “defina função”. Ele entrega uma tabela, um gráfico ou uma fórmula e pede que você leia o que está ali. É a habilidade de Matemática que mais aparece fora da Matemática: gráficos de Física, Química, Biologia e Geografia são todos funções.
+Calcular valores: quanto custa a corrida de 8 km, qual a altura no instante 3 s, qual o valor de f(5).
+Fazer o caminho de volta: qual distância custa R$ 30,00, isto é, para que x se tem f(x) = 30.
+Ler um gráfico: maior e menor valor, intervalos de crescimento, quando a grandeza se anula.
+Decidir o domínio: que valores fazem sentido (número de pessoas inteiro, tempo não negativo, medida positiva).
+Reconhecer funções: se uma tabela, um diagrama ou uma curva representa ou não uma função.
+O que rende mais aqui
+Separar com clareza entrada (o x, no eixo horizontal, que forma o domínio) e saída (o y, no eixo vertical, que forma a imagem). Metade dos erros do assunto é trocar uma pela outra: responder o domínio quando se pede a imagem, calcular f(30) quando se pede o x com f(x) = 30.
+02 A ideia de função
+Definição
+Uma função f: A → B é uma regra que associa a cada elemento x de A um único elemento y = f(x) de B.
+Pense numa máquina: entra um número, sai um número, e a mesma entrada produz sempre a mesma saída. O x é a variável independente (você escolhe); o y é a variável dependente (é calculado a partir de x).
+ | Situação | Variável independente (x) | Variável dependente (y) | Lei
+ | táxi: R$ 5,00 mais R$ 2,50 por km | distância (km) | preço (R$) | P(d) = 5 + 2,5d
+ | área de um quadrado | lado | área | A(ℓ) = ℓ²
+ | combustível a R$ 6,00 o litro | litros | valor pago | V(L) = 6L
+ | bola lançada para cima | tempo (s) | altura (m) | h(t) = 20t − 5t²
+Quem depende de quem
+Pergunte: “se eu souber isto, consigo determinar aquilo sem ambiguidade?”. Sabendo o lado, a área fica determinada: a área é função do lado. Sabendo a altura de um aluno, não dá para dizer qual é o aluno, porque pode haver dois com a mesma altura: o aluno não é função da altura.
+03 Quando é e quando não é função
+Num diagrama de flechas, a definição vira duas regras sobre o conjunto de partida A:
+Todo elemento de A tem flecha saindo (ninguém fica sem imagem).
+De cada elemento de A sai uma só flecha (ninguém tem duas imagens).
+Em B não há exigência: um elemento de B pode receber várias flechas, uma ou nenhuma.
+Três relações de A em B. A primeira é função: cada elemento de A tem exatamente uma flecha, mesmo que duas cheguem ao mesmo ponto de B. A segunda não é, porque o 3 ficou sem flecha. A terceira não é, porque do 2 saem duas flechas.
+Duas flechas chegando é permitido
+Em f(x) = x², tanto 2 quanto −2 vão para 4. Isso não viola nada: cada entrada continua com uma única saída. O que é proibido é uma entrada com duas saídas.
+Numa tabela, a regra é a mesma: um mesmo valor de x não pode aparecer em duas linhas com valores diferentes de y.
+04 Domínio, contradomínio e imagem
+Os três conjuntos de uma função f: A → B
+Domínio D(f) = A: todos os valores que podem entrar.
+Contradomínio CD(f) = B: o conjunto onde as saídas são procuradas.
+Imagem Im(f): os valores que realmente saem. É sempre parte do contradomínio: Im(f) ⊂ CD(f).
+Exemplo · f: A → B com f(x) = x², A = {1, 2, 3} e B = {1, 4, 7, 9}
+f(1) = 1 f(2) = 4 f(3) = 9
+D = {1, 2, 3}, CD = {1, 4, 7, 9} e Im = {1, 4, 9}. O 7 está no contradomínio, mas não é imagem de ninguém (é o desenho do cabeçalho).
+Dizemos que 9 é a imagem de 3 e que 3 é a pré-imagem (ou o “x correspondente”) de 9. No dia a dia da prova, o domínio e o contradomínio de funções numéricas costumam ser intervalos de ℝ, e o trabalho é descobrir a imagem.
+Domínio no eixo x, imagem no eixo y
+Em qualquer gráfico, o domínio é a “sombra” da curva projetada no eixo horizontal; a imagem, a sombra projetada no eixo vertical. A seção 07 mostra como ler as duas.
+05 Notação f(x) e valor numérico
+Em f(x) = x² − 1, o x é só um lugar vazio: o que estiver entre parênteses entra no lugar dele, sempre com parênteses.
+ | Pedido | Substituição | Resultado
+ | f(3) | 3² − 1 | 8
+ | f(−2) | (−2)² − 1 | 3
+ | f(2x) | (2x)² − 1 | 4x² − 1
+ | f(x + 1) | (x + 1)² − 1 | x² + 2x
+f(a + b) não é f(a) + f(b)
+Com f(x) = x² − 1: f(2 + 3) = f(5) = 24, mas f(2) + f(3) = 3 + 8 = 11. Também f(2x) ≠ 2f(x). O “f” não é um número que multiplica o parêntese.
+O caminho de volta: f(x) = k
+Quando o enunciado dá a saída e pede a entrada, monta-se uma equação. No táxi P(d) = 5 + 2,5d, uma corrida de R$ 30,00 teve 5 + 2,5d = 30, ou seja, d = 10 km. Calcular P(30) = 80 responde outra pergunta.
+Funções definidas por partes
+Estacionamento · R$ 10,00 pela 1ª hora e R$ 4,00 por hora adicional ou fração
+Até 1 h: R$ 10,00. Com 2 h 15 min: a 1ª hora, mais 1 hora adicional completa, mais uma fração que conta como hora: 10 + 2 · 4 = 18 reais.
+Contas, tarifas de água e de energia por faixa e impostos por alíquota seguem esse formato: a regra muda conforme o intervalo em que o x está.
+06 O gráfico e o teste da reta vertical
+O gráfico de f é o conjunto dos pontos (x, f(x)) do plano. Como cada x tem uma só imagem, nenhuma reta vertical pode cortar o gráfico de uma função em mais de um ponto.
+Teste da reta vertical. À esquerda, cada reta vertical corta a curva no máximo uma vez: é gráfico de função. À direita, a circunferência é cortada duas vezes pela mesma vertical: para aquele x haveria dois valores de y, e a curva não é gráfico de função de x.
+Horizontal pode cortar várias vezes
+Uma reta horizontal cortando a curva em dois pontos significa só que dois valores de x têm a mesma imagem, o que é permitido. A parábola da esquerda é cortada duas vezes por horizontais e continua sendo função.
+07 Lendo um gráfico: domínio, imagem e comportamento
+Domínio e imagem como sombras da curva. Projetando o gráfico no eixo x, obtém-se o domínio [−1, 6]; projetando no eixo y, a imagem [1, 4]. A imagem vai do ponto mais baixo ao mais alto do gráfico, que não precisam estar nas pontas.
+Além de domínio e imagem, o ENEM pede que você leia no gráfico:
+ | Pergunta | Onde olhar | No gráfico acima
+ | valor máximo e mínimo | o ponto mais alto e o mais baixo (o y) | máximo 4, em x = 2; mínimo 1, em x = −1
+ | crescente / decrescente | a curva sobe ou desce da esquerda para a direita | cresce em [−1, 2], decresce em [2, 6]
+ | zeros (raízes) | onde a curva toca o eixo x | não há: a curva fica toda acima
+ | f(a) para um a dado | suba de a até a curva e leia a altura | f(4) = 3
+Intervalos de crescimento se dão em x
+“A função cresce entre 1 e 4” é sobre a altura (imagem); a resposta correta fala do x: cresce para x entre −1 e 2. Alternativas que trocam um pelo outro são distratores frequentes.
+08 Domínio pela fórmula e pelo contexto
+Quando a função vem só com a fórmula, o domínio é o maior conjunto de números reais para os quais a conta existe. Duas restrições resolvem quase tudo:
+ | Função | Restrição | Domínio
+ | f(x) = (1/x − 3) | denominador ≠ 0 | x ≠ 3
+ | g(x) = √(x − 2) | radicando de raiz quadrada ≥ 0 | x ≥ 2
+ | h(x) = (5/√(x)) | as duas: x ≥ 0 e √(x) ≠ 0 | x > 0
+ | p(x) = 3x² − x + 7 | nenhuma | ℝ
+Em problemas, o contexto restringe ainda mais. Algumas restrições típicas:
+Contagens (pessoas, peças, ingressos): só números naturais. O gráfico é formado por pontos isolados, não por uma linha contínua.
+Tempo e distância: não negativos; às vezes limitados (a bola só está no ar até tocar o chão).
+Medidas de figuras: positivas. Uma caixa feita recortando quadrados de lado x de uma folha de 30 cm por 20 cm exige 20 − 2x > 0, ou seja, 0 < x < 10.
+A restrição mais forte é a que vale
+Na caixa, 30 − 2x > 0 daria x < 15, mas o lado de 20 cm acaba antes. Quando há várias condições, o domínio é o trecho em que todas valem ao mesmo tempo.
+09 Estratégia de prova
+1 · Identifique os eixos antes de tudo
+Leia o que está no eixo horizontal e no vertical, com as unidades. Muitos erros de leitura vêm de achar que o gráfico mostra uma grandeza quando mostra outra (velocidade em vez de posição, variação em vez de total).
+2 · Pergunte: dão o x ou o y?
+Se o enunciado fornece a entrada, calcule f(x). Se fornece a saída, resolva f(x) = k. Escrever isso na margem evita metade dos distratores.
+3 · Em funções por partes, localize a faixa
+Antes de aplicar a fórmula, descubra em que intervalo o valor dado está. Tarifas por faixa e “hora ou fração” são regras diferentes para cada trecho.
+4 · Para domínio, teste os extremos
+Substitua os extremos das alternativas na fórmula ou no contexto. Se um valor zera um denominador, deixa uma raiz negativa ou dá uma medida nula, ele não pode estar no domínio.
+10 Onde isso aparece nas outras áreas
+ | Área | Função típica | O que lembrar
+ | Física | posição, velocidade e temperatura em função do tempo | leia o eixo vertical: um gráfico v × t não mostra onde o móvel está
+ | Química | curvas de solubilidade em função da temperatura | cada temperatura tem uma única solubilidade: é função
+ | Biologia | tamanho de população, atividade enzimática em função do pH | o ponto máximo do gráfico é o “ótimo”
+ | Geografia | climogramas, pirâmides etárias, séries históricas | o domínio é o período mostrado; não extrapole para fora dele
+Em todas essas leituras valem as mesmas perguntas desta página: qual é a entrada, qual é a saída, onde a curva sobe, onde desce, qual o maior e o menor valor.
+11 Os erros que mais custam pontos
+Duas flechas chegando a um y: não é função → é funçãoProibido é um x com duas saídas.
+Elemento de A sem flecha: tudo bem → não é funçãoTodo elemento do domínio precisa de imagem.
+Imagem = contradomínio → Im ⊂ CDA imagem é só o que realmente sai.
+f(2x) = 2f(x) → substituir x por (2x)Em x² − 1, f(2x) = 4x² − 1.
+f(a + b) = f(a) + f(b) → calcular f(a + b) diretof não é um número multiplicando o parêntese.
+Calcular f(30) quando f(x) = 30 → resolver a equaçãoDar a saída e pedir a entrada é o caminho de volta.
+Ler a imagem no eixo x → imagem no eixo yDomínio: sombra horizontal. Imagem: sombra vertical.
+Imagem = valores nas pontas do gráfico → do ponto mais baixo ao mais altoO máximo pode estar no meio.
+Esquecer o contexto no domínio → medidas positivas, contagens inteirasA fórmula pode aceitar valores que o problema não aceita.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, identifique o que entra e o que sai antes de calcular.
+Questão 1 · Reconhecer uma função
+A secretaria de uma escola analisou três relações entre conjuntos de seus registros:
+I. Cada aluno matriculado associado à sua data de nascimento.
+II. Cada professor associado às disciplinas que leciona, sabendo que alguns professores lecionam duas disciplinas.
+III. Cada número da lista de chamada de uma turma associado ao aluno que tem esse número.
+Considerando o primeiro conjunto como domínio, são funções
+apenas I.
+apenas II.
+I e III.
+II e III.
+I, II e III.
+Ver resolução
+Em I, cada aluno tem exatamente uma data de nascimento; que vários alunos nasçam no mesmo dia não importa. Em III, cada número de chamada corresponde a exatamente um aluno. As duas são funções.
+Em II, um professor que leciona duas disciplinas tem duas imagens: não é função.
+A A descarta III sem motivo. A B e a D aceitam II, confundindo “várias flechas chegando” (permitido) com “várias flechas saindo” (proibido). A E ignora o problema dos professores com duas disciplinas.
+Alternativa C
+Questão 2 · Função definida por partes
+Um estacionamento cobra R$ 10,00 pela primeira hora e R$ 4,00 por hora adicional ou fração de hora. Um cliente deixou o carro estacionado por 3 horas e 20 minutos. Ele pagou
+R$ 18,00.
+R$ 18,80.
+R$ 19,33.
+R$ 22,00.
+R$ 26,00.
+Ver resolução
+Depois da primeira hora restam 2 h 20 min: duas horas adicionais completas e uma fração, que conta como hora inteira. São 3 horas adicionais:
+10 + 3 · 4 = 22 reais
+A A ignora a fração de 20 minutos. A C cobra proporcionalmente ao tempo (10 + 4 · 2,33), o que a regra “ou fração” não permite. A B lê 3 h 20 min como 3,2 h e também cobra proporcionalmente (10 + 4 · 2,2). A E cobra também a primeira hora como adicional (10 + 4 · 4).
+Alternativa D
+Questão 3 · Domínio de uma fórmula
+Uma planilha calcula um índice pela fórmula f(x) = (√(x − 2)/x − 5), e exibe uma mensagem de erro sempre que a conta não pode ser feita com números reais. Os valores de x para os quais a planilha não exibe erro são os que satisfazem
+x ≥ 2
+x ≠ 5
+x > 2 e x ≠ 5
+x ≥ 2 e x ≠ 5
+x > 5
+Ver resolução
+Duas condições ao mesmo tempo: radicando não negativo, x − 2 ≥ 0, e denominador não nulo, x ≠ 5. Logo x ≥ 2 e x ≠ 5.
+Com x = 2 a conta dá (0/−3) = 0, sem erro: por isso o 2 entra. A C exclui o 2 à toa. A A esquece o denominador; a B esquece a raiz. A E exclui o trecho entre 2 e 5, onde a conta funciona (com x = 3: (1/−2)).
+Alternativa D
+Questão 4 · Imagem num conjunto finito
+Considere a função g: A → B, com A = {−2, −1, 0, 1, 2}, B = {0, 1, 2, 3, 4, 5} e g(x) = x². A imagem de g é
+{0, 1, 2, 3, 4, 5}
+{0, 1, 4}
+{−2, −1, 0, 1, 2}
+{1, 4}
+{−4, −1, 0, 1, 4}
+Ver resolução
+g(−2) = 4, g(−1) = 1, g(0) = 0, g(1) = 1, g(2) = 4
+Os valores que realmente saem são 0, 1 e 4: Im(g) = {0, 1, 4}. Repetições não se escrevem duas vezes num conjunto.
+A A é o contradomínio e a C, o domínio. A D esquece g(0) = 0. A E calcula −2² em vez de (−2)², e o resultado nem está contido em B.
+Alternativa B
+Questão 5 · Domínio pelo contexto
+De uma folha retangular de 30 cm por 20 cm recortam-se, nos quatro cantos, quadrados de lado x centímetros, e dobram-se as abas para formar uma caixa sem tampa. O volume da caixa é V(x) = x(30 − 2x)(20 − 2x). Para que a caixa possa ser construída, o domínio de V deve ser
+0 < x < 15
+0 < x < 10
+x > 0
+0 < x < 20
+10 < x < 15
+Ver resolução
+As três medidas da caixa precisam ser positivas ao mesmo tempo: x > 0, 30 − 2x > 0 (x < 15) e 20 − 2x > 0 (x < 10). Vale a mais restritiva: 0 < x < 10.
+A A usa só o lado de 30 cm. A D esquece que se recorta x dos dois lados (20 − x > 0). A C ignora o tamanho da folha. A E é justamente o trecho em que 20 − 2x é negativo e a fórmula dá volume negativo.
+Alternativa B
+Questão 6 · Quando y não é função de x
+Em uma turma, há alunos com a mesma altura. Em qual das situações a seguir a grandeza y não é função da grandeza x?
+y é o aluno da turma cuja altura é x cm.
+y é a área de um quadrado de lado x cm.
+y é o preço pago por x quilogramas de arroz.
+y é a temperatura registrada no instante x.
+y é o perímetro de um quadrado de lado x cm.
+Ver resolução
+Se dois alunos têm a mesma altura, aquele valor de x corresponde a dois valores de y. Saber a altura não determina o aluno: não é função.
+Nas outras, a entrada determina a saída sem ambiguidade: o lado determina a área (x²) e o perímetro (4x); a massa determina o preço; o instante determina a temperatura registrada, ainda que a mesma temperatura se repita em instantes diferentes (várias entradas com a mesma saída é permitido).
+Alternativa A
+Questão 7 · Substituir uma expressão
+Dada a função f(x) = x² − 1, a expressão de f(2x) é
+2x² − 1
+2x² − 2
+4x² − 1
+4x² − 4
+4x² − 4x + 1
+Ver resolução
+Troque cada x por (2x), com parênteses:
+f(2x) = (2x)² − 1 = 4x² − 1
+A A esquece os parênteses: 2x² eleva só o x. A B é 2 · f(x), e a D é 4 · f(x). A E é (2x − 1)², que eleva ao quadrado a expressão inteira. Conferência com x = 1: f(2) = 3, e só a C dá 3.
+Alternativa C
+Questão 8 · Imagem a partir do gráfico
+O gráfico de uma função f é formado por dois segmentos de reta: o primeiro liga os pontos (−2, 1) e (1, 4); o segundo liga (1, 4) e (5, 0). As extremidades pertencem ao gráfico. A imagem de f é o intervalo
+[−2, 5]
+[1, 4]
+[0, 5]
+[−2, 4]
+[0, 4]
+Ver resolução
+A imagem é a projeção do gráfico no eixo y. O ponto mais alto tem y = 4; o mais baixo, y = 0, no ponto (5, 0). Como os segmentos são contínuos, todos os valores entre eles são atingidos: [0, 4].
+A A é o domínio (projeção no eixo x). A B considera só o primeiro segmento. A C e a D misturam valores de x e de y.
+Alternativa E
+Questão 9 · O caminho de volta
+Em uma cidade, o preço de uma corrida de táxi, em reais, é dado por P(d) = 5 + 2,5d, em que d é a distância percorrida em quilômetros. Um passageiro pagou R$ 30,00 por uma corrida. A distância percorrida foi de
+6 km.
+10 km.
+12 km.
+14 km.
+80 km.
+Ver resolução
+Foi dada a saída; procura-se a entrada:
+5 + 2,5d = 30 → 2,5d = 25 → d = 10 km
+A E calcula P(30) = 80, o preço de uma corrida de 30 km. A C divide 30 por 2,5 e esquece a parte fixa. A D soma os 5 reais em vez de subtrair. A A divide 30 pela tarifa fixa.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Enuncio a definição de função: a cada x, um único y
+Identifico variável independente e dependente num texto
+Decido se um diagrama de flechas ou uma tabela representa uma função
+Distingo domínio, contradomínio e imagem e sei que Im ⊂ CD
+Calculo f(a), inclusive com negativos e expressões como f(2x)
+Sei que f(a + b) em geral é diferente de f(a) + f(b)
+Resolvo f(x) = k quando o enunciado dá a saída
+Aplico funções definidas por partes, como “hora ou fração”
+Uso o teste da reta vertical para reconhecer gráficos de funções
+Leio domínio e imagem como projeções do gráfico nos eixos
+Leio máximos, mínimos, zeros e intervalos de crescimento, dando intervalos em x
+Encontro o domínio de fórmulas com denominador e raiz quadrada
+Restrinjo o domínio pelo contexto: medidas positivas, contagens inteiras
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez de leitura de gráficos de outras áreas (Física, Química, Geografia). Depois siga para Função afim: gráfico, coeficientes e aplicações, a primeira família de funções do bloco.
+Flashcards para o Anki
+Foram gerados 33 cartões deste assunto no arquivo ENEM-Matematica-23-conceito-funcao-dominio-imagem.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

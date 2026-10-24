@@ -1,0 +1,59 @@
+Você resolve um sistema, as letras somem e sobra zero igual a dois. A maioria apaga tudo achando que errou a conta. Não errou: a conta acabou de dizer que não existe resposta.
+
+Ao final, você vai dizer se um sistema tem uma, nenhuma ou infinitas soluções, muitas vezes sem resolver nada.
+
+Antes, dois lembretes rápidos. Do episódio dois: no método da adição, você multiplica uma equação inteira e soma ou subtrai, para uma letra sumir. Da série de Equações do primeiro grau: os fretes quarenta mais três x e três x mais trinta e seis nunca empatam. A conta dava zero x igual a menos quatro.
+
+Olhe três cenas da rua. Dois trilhos de trem: correm lado a lado e nunca se encontram. Um cruzamento de duas ruas: elas têm um único ponto em comum. E uma rua desenhada duas vezes no mapa, uma em cima da outra: todos os pontos em comum.
+
+O que isso tem a ver com sistema? A equação x mais y igual a cinco tem muitas soluções: zero e cinco, um e quatro, dois e três. Marcando todas no plano, elas formam uma reta. Cada equação é uma estrada de soluções. E a solução do sistema é o ponto que está nas duas estradas: o cruzamento.
+
+Primeira posição. x mais y igual a cinco e x menos y igual a menos um. Somando as duas, o y some: dois x igual a quatro, x igual a dois e y igual a três. As retas se cruzam uma vez, no ponto dois, três. São retas concorrentes: que se cruzam num único ponto. E o sistema se chama possível e determinado, o SPD: tem uma única solução.
+
+Segunda posição. x mais dois y igual a quatro e dois x mais quatro y igual a dez. Multiplique a primeira por dois: dois x mais quatro y igual a oito. Agora subtraia da segunda: o x some, o y some, e sobra zero igual a dois. É a conta dizendo: esses trilhos nunca se encontram. São retas paralelas: lado a lado, sem ponto comum. O sistema é impossível, o SI: nenhuma solução.
+
+Terceira posição. x mais dois y igual a quatro e dois x mais quatro y igual a oito. O mesmo passo: dobro da primeira, menos a segunda. Sobra zero igual a zero. É a conta dizendo: é a mesma estrada desenhada duas vezes. Quatro e zero, dois e um, zero e dois: tudo serve nas duas. São retas coincidentes. O sistema é possível e indeterminado, o SPI: infinitas soluções.
+
+Lado a lado. Concorrentes: um cruzamento, uma solução. Paralelas: zero igual a dois, nenhuma. Coincidentes: zero igual a zero, infinitas. Não existe quarta posição: duas retas só podem fazer isso.
+
+E onde isso aparece na prova? Nos preços. Lembra dos fretes? Os dois cobravam três reais por quilômetro, com taxas diferentes. Mesmo preço por unidade: as retas sobem juntas, como trilhos. Uma fica sempre quatro reais acima. Por isso a pergunta quando custam o mesmo? não tem resposta. O zero x igual a menos quatro era um zero igual a dois disfarçado.
+
+Dá para saber a posição sem resolver? Dá. Escreva cada equação no formato a x mais b y igual a c. O a, o b e o c são os coeficientes: os números de cada lugar. Agora divida cada número da primeira pelo número do mesmo lugar na segunda. É a razão entre coeficientes. Três razões, em três caixinhas: a com a, b com b, c com c.
+
+E o que as caixinhas dizem? Se a razão do a é diferente da do b: concorrentes, SPD. No primeiro exemplo, um e menos um. Se a e b são iguais, mas o c é diferente: paralelas, SI. Um meio, dois quartos, mas quatro décimos. Se as três são iguais: a mesma reta, SPI. Um meio, dois quartos, quatro oitavos.
+
+Sem frações, em palavras. Se a segunda é múltipla da primeira só do lado esquerdo: paralelas. Se é múltipla inteira, lado direito junto: a mesma reta. O atalho: ache o fator. Divida um número da segunda pelo da primeira, e teste esse fator nos outros. O lado direito, por último: é ele que separa paralelas de coincidentes.
+
+E quando o sistema traz uma letra a mais? Três x mais dois y igual a sete e seis x mais k y igual a catorze. O k é um parâmetro: um número que a questão deixou para você escolher. Para quanto k há infinitas soluções? Ache o fator no par completo: seis é o dobro de três, catorze é o dobro de sete. Fator dois. Então k é o dobro de dois: k igual a quatro. Com qualquer outro k, a razão do b muda: uma única solução.
+
+Você pode ouvir falar de um tal de determinante para fazer essa mesma classificação. Isso tem série própria: Determinantes e sistemas lineares. Aqui, as razões resolvem.
+
+Sua vez. Classifique: x menos três y igual a dois e menos dois x mais seis y igual a menos quatro. E se o lado direito da segunda fosse cinco? Pause e tente.
+
+Vamos juntos. As três razões: um sobre menos dois, menos três sobre seis, dois sobre menos quatro. Todas valem menos um meio. Três iguais: a mesma reta, SPI, coincidentes. O fator é menos dois, e vale até no lado direito. Com o cinco, a última razão vira dois quintos, diferente de menos um meio. Múltipla só à esquerda: paralelas, SI.
+
+Vamos guardar em três frases. Um: concorrentes: uma solução. Paralelas: nenhuma. Coincidentes: infinitas. Dois: zero igual a dois é impossível; zero igual a zero é infinitas. Três: múltipla só à esquerda, paralelas; múltipla inteira, a mesma reta.
+
+Agora, os três erros clássicos. Primeiro: sobra zero igual a dois, e a pessoa pensa errei a conta. Parece certo, porque zero nunca é igual a dois. Mas o absurdo é a resposta: não existe par que sirva nas duas. Sistema impossível.
+
+Segundo: sobra zero igual a zero, e a pessoa marca solução zero: x igual a zero, y igual a zero. Parece certo, porque só aparece o zero na tela. Mas zero igual a zero é sempre verdade: qualquer ponto da estrada serve. São infinitas soluções.
+
+Terceiro: ver que a esquerda é múltipla e já dizer mesma reta. Como em x menos três y igual a dois e menos dois x mais seis y igual a cinco. Parece certo, porque os números das letras batem. Mas faltou o lado direito: dois vezes menos dois daria menos quatro, não cinco. São paralelas.
+
+Questão do ENEM, do nosso material. Eu resolvo. Um estudante representou no plano cartesiano as retas r: x mais dois y igual a quatro e s: dois x mais quatro y igual a dez, para resolver graficamente o sistema formado por elas. Ele deve concluir que as retas são: A: concorrentes, e o sistema tem uma única solução. B: coincidentes, e o sistema tem infinitas soluções. C: perpendiculares, e o sistema tem uma única solução. D: concorrentes na origem, e a solução é zero, zero. E: paralelas distintas, e o sistema não tem solução. Pause o vídeo e tente.
+
+É o par do começo, agora com cara de prova. As razões: um sobre dois, dois sobre quatro, quatro sobre dez. As duas primeiras valem um meio; a terceira, dois quintos. Em palavras: a esquerda de s é o dobro da de r, mas o dobro de quatro é oito, não dez. Pela adição, s menos duas vezes r dá zero igual a dois. Paralelas distintas, sem solução. Letra E!
+
+E as erradas? A B valeria se o lado direito de s fosse oito. A A e a C ignoram que as duas retas têm a mesma inclinação: sobem juntas, e não se cruzam. Perpendicular é cruzar formando um canto reto, como um L. E a D falha no teste direto: zero mais zero não dá quatro.
+
+Agora é com você. Um aplicativo resolve sistemas lineares e informa quando há infinitas soluções. Um usuário digitou o sistema formado por dois x mais três y igual a cinco e quatro x mais k y igual a dez e recebeu a mensagem: infinitas soluções. O valor de k digitado foi: A: seis. B: menos seis. C: três. D: doze. E: qualquer valor diferente de seis. Pause o vídeo e resolva.
+
+Infinitas soluções: múltipla inteira. O fator vem do par completo: quatro é o dobro de dois, dez é o dobro de cinco. Fator dois. Então k é o dobro de três: k igual a seis. As razões ficam um meio, um meio, um meio. Letra A!
+
+E as erradas? A E descreve justamente os casos de uma única solução. A B troca o sinal. A C copia o três sem multiplicar. E a D multiplica por quatro. Com menos seis, três ou doze, as retas são concorrentes.
+
+Para fechar, as mesmas três frases. Um: concorrentes: uma solução. Paralelas: nenhuma. Coincidentes: infinitas. Dois: zero igual a dois é impossível; zero igual a zero é infinitas. Três: múltipla só à esquerda, paralelas; múltipla inteira, a mesma reta.
+
+Ana e Beto pesam cento e vinte e cinco quilos juntos; Beto e Caio, cento e quarenta e cinco; Ana e Caio, cento e quarenta. Quanto pesa o Beto? Três incógnitas, e um atalho que resolve em duas linhas. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já apagou uma conta que deu zero igual a dois? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

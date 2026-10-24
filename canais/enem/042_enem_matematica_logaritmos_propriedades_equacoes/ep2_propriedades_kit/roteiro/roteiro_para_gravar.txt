@@ -1,0 +1,73 @@
+Log de dez mais dez é log de dez mais log de dez? Teste: log de vinte dá mais ou menos um vírgula trinta. Mas log de dez mais log de dez dá dois. A regra que parece óbvia está errada, e a alternativa com ela sempre aparece.
+
+Ao final desta aula, você vai usar as três propriedades e calcular o log de muitos números só com log de dois e log de três.
+
+Três lembretes rápidos. Da série de Potenciação: multiplicou potências de mesma base, soma os expoentes; dividiu, subtrai; potência de potência, multiplica. Da série de Divisibilidade: setenta e dois é dois ao cubo vezes três ao quadrado. E do episódio passado: log é um expoente.
+
+Antes das calculadoras, como se multiplicava? Com a régua de cálculo: uma régua que multiplica somando comprimentos. Pegue o trecho de um até dois. Emende o trecho de um até três. Onde termina? Exatamente no seis: dois vezes três.
+
+Por quê? Nessa régua, cada número fica a uma distância proporcional ao seu log. Somar comprimentos é somar logs, e o resultado cai no produto. Essa é a primeira propriedade.
+
+Escrita como regra. Uma propriedade operatória é uma regra que transforma uma conta em outra. Log de M vezes N é log de M mais log de N. O produto, o resultado de uma multiplicação, vira soma. Teste: log de dez vezes cem é log de mil, três. E log de dez mais log de cem: um mais dois, três.
+
+De onde vem? Das potências: b elevado a x vezes b elevado a y é b elevado a x mais y. Multiplicar soma os expoentes. E log é expoente. As propriedades do log são as regras de potência lidas de trás para frente.
+
+E a divisão? O quociente é o resultado de uma divisão. Log de M dividido por N é log de M menos log de N. Quociente vira diferença. Teste: log de mil dividido por dez é log de cem, dois. E três menos um: dois. Bateu.
+
+E se o número estiver elevado a alguma coisa? Uma potência é um número multiplicado por ele mesmo, como dez ao cubo. Log de M elevado a k é k vezes log de M: o expoente desce multiplicando. Teste: log de dez ao cubo, três; três vezes log de dez, três.
+
+E raiz? Raiz quadrada de dois é dois elevado a um meio. Então o log é um meio vezes log de dois: mais ou menos zero vírgula quinze.
+
+Atalho. Dentro do log, vezes vira mais; dividir vira menos; o expoente vai para a frente. Na dúvida sobre uma regra, teste com dez e cem: os logs são um e dois.
+
+E o que as propriedades não dizem? Log de M mais N não tem regra. Soma dentro do log é porta trancada. O teste do começo: um vírgula trinta contra dois.
+
+E dividir um log pelo outro? Log de M sobre log de N não é log de M menos log de N. Teste com mil e dez: três sobre um, três. Três menos um, dois. Não bate.
+
+Agora, o kit. Três caixinhas: log de dois, zero vírgula trezentos e um; log de três, zero vírgula quatrocentos e setenta e sete; log de dez, um. Para usar, faça a decomposição em fatores primos: escreva o número como produto de primos. Todo número feito de dois, três e cinco sai do kit. E o cinco? Dez dividido por dois.
+
+Montando as peças. Quatro, dois ao quadrado: duas vezes zero vírgula trezentos e um, zero vírgula seiscentos e dois. Seis, dois vezes três: soma, zero vírgula setecentos e setenta e oito. Nove, três ao quadrado: zero vírgula novecentos e cinquenta e quatro. Doze, dois ao quadrado vezes três: um vírgula zero setenta e nove.
+
+E com divisão? Cinco, dez dividido por dois: um menos zero vírgula trezentos e um, zero vírgula seiscentos e noventa e nove. Um vírgula cinco, três dividido por dois: zero vírgula cento e setenta e seis.
+
+E um número menor que um? Zero vírgula nove é nove dividido por dez: zero vírgula novecentos e cinquenta e quatro menos um, menos zero vírgula zero quarenta e seis. Zero vírgula dois, dois dividido por dez: menos zero vírgula seiscentos e noventa e nove. Para o dez dar menos que um, o expoente tem que ser negativo. Log de zero vírgula nove positivo é erro de sinal: decisivo no próximo episódio.
+
+Atalho para conferir. Número entre um e dez: log entre zero e um. Entre dez e cem: entre um e dois. Entre zero e um: negativo. Doze está entre dez e cem: um vírgula zero setenta e nove. Bateu.
+
+Sua vez. Com log de dois igual a zero vírgula trinta e log de três igual a zero vírgula quarenta e oito, calcule log de dezoito. Pause e tente.
+
+Vamos juntos. Decomposição: dezoito é dois vezes três ao quadrado. Produto vira soma, expoente desce: zero vírgula trinta mais duas vezes zero vírgula quarenta e oito. Zero vírgula trinta mais zero vírgula noventa e seis: um vírgula vinte e seis. Confere: entre dez e cem, log entre um e dois.
+
+Vamos guardar em três frases. Um: produto vira soma, quociente vira diferença, expoente desce multiplicando. Dois: soma dentro do log não tem regra. Três: número entre zero e um tem log negativo.
+
+Os quatro erros clássicos. Primeiro: log de M mais N igual a log de M mais log de N. Parece certo, porque lembra a regra do produto. Mas a soma de fora só aparece quando dentro tem vezes.
+
+Segundo: log de M dividido por log de N igual a log de M menos log de N. Parece certo, porque tem divisão e diferença. Mas a diferença é o log do quociente. Com mil e cem: três sobre dois é um e meio, e não um.
+
+Terceiro: log de setenta e dois igual a log de oito vezes log de nove. Parece certo, porque setenta e dois é oito vezes nove. Mas o vezes de dentro vira mais do lado de fora.
+
+Quarto: log de zero vírgula nove positivo. Parece certo, porque log de nove é positivo. Mas zero vírgula nove é nove sobre dez: menos um. Dá menos zero vírgula zero quarenta e seis.
+
+Agora, questões do nosso material. Esta, eu resolvo com você. Um técnico precisa de log de setenta e dois, mas só tem log de dois igual a zero vírgula trinta e log de três igual a zero vírgula quarenta e oito. A: zero vírgula setenta e oito. B: zero vírgula oitocentos e sessenta e quatro. C: zero vírgula noventa e seis. D: um vírgula trinta e oito. E: um vírgula oitenta e seis.
+
+Primeiro, a decomposição. Setenta e dois é oito vezes nove: dois ao cubo vezes três ao quadrado. Os expoentes descem: três vezes zero vírgula trinta, zero vírgula noventa, mais duas vezes zero vírgula quarenta e oito, zero vírgula noventa e seis. Total: um vírgula oitenta e seis, entre um e dois. Letra E!
+
+E as outras? A A é log de seis. A B multiplica log de oito por log de nove. A C é só log de nove. E a D é log de vinte e quatro: esqueceu o expoente do três.
+
+Esta a gente faz junto. Numa tabela antiga, log de dois é a e log de três é b. Quanto vale log de um vírgula cinco? A: b menos a. B: a menos b. C: a mais b. D: b sobre a. E: um mais b menos a. Pense comigo: um vírgula cinco é feito de quê?
+
+Um vírgula cinco é três dividido por dois. Quociente vira diferença: log de três menos log de dois. Em letras: b menos a. Confere com o kit: zero vírgula cento e setenta e seis. Positivo e pequeno, como deve ser. Letra A!
+
+E as erradas? A B é log de dois terços: negativo. A C é log de seis. A D divide os logs: isso é log de três na base dois. E a E é log de quinze: confundiu um vírgula cinco com quinze.
+
+E esta é sua. Um estudante escreveu quatro igualdades, com a e b positivos. Um: log de a mais b igual a log de a mais log de b. Dois: log de a ao cubo igual a três log de a. Três: log de a sobre b igual a log de a sobre log de b. Quatro: log de um igual a zero. São verdadeiras para todos os valores apenas: A: um e dois. B: dois e quatro. C: dois e três. D: um, dois e quatro. E: três e quatro. Pause o vídeo e resolva.
+
+Conferindo. A dois é a regra da potência: verdadeira. A quatro vem de dez elevado a zero igual a um: verdadeira. A um: com a e b iguais a dez, um vírgula trinta contra dois: falsa. A três: com a igual a cem e b igual a dez, um contra dois: falsa. Letra B!
+
+E as erradas? A A e a D aceitam a um, que é falsa. A C aceita a três. E a E aceita a três e deixa de fora a dois, que é verdadeira.
+
+Para fechar, as mesmas três frases. Um: produto vira soma, quociente vira diferença, expoente desce multiplicando. Dois: soma dentro do log não tem regra. Três: número entre zero e um tem log negativo.
+
+Um vírgula zero oito elevado a t igual a dois: o t está preso no expoente, e dois não é potência de um vírgula zero oito. Como derrubar esse t? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha caído no log de dez mais dez? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

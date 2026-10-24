@@ -1,0 +1,1034 @@
+<title>Determinantes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+.mx{display:inline-grid;column-gap:.8em;row-gap:.1em;vertical-align:middle;position:relative;padding:.14em .6em;margin:0 .2em;text-align:center;line-height:1.3;white-space:nowrap}
+.mx.c1{grid-template-columns:auto}
+.mx.c2{grid-template-columns:repeat(2,auto)}
+.mx.c3{grid-template-columns:repeat(3,auto)}
+.mx.c4{grid-template-columns:repeat(4,auto)}
+.mx > i{font-style:normal}
+.mx::before,.mx::after{content:"";position:absolute;top:0;bottom:0;width:.32em;border:1.3px solid currentColor}
+.mx::before{left:0;border-right:none}
+.mx::after{right:0;border-left:none}
+.mx.det::before,.mx.det::after{width:0;border-top:none;border-bottom:none;border-right:none;border-left:1.3px solid currentColor}
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 16 de 18</p>
+    <h1>Determinantes e sistemas lineares</h1>
+    <p class="deck">O determinante é um único número que resume uma matriz quadrada e responde a uma pergunta decisiva: o sistema tem uma solução só? Aqui você aprende a calculá-lo, a usá-lo na regra de Cramer e a classificar sistemas em possível determinado, possível indeterminado ou impossível.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="30 30 240 170" role="img" aria-label="Determinante de uma matriz dois por dois com elementos a, b, c e d: o produto da diagonal principal, a vezes d, entra com sinal mais, e o produto da diagonal secundária, b vezes c, entra com sinal menos; determinante igual a ad menos bc">
+  <line x1="60" y1="52" x2="60" y2="152" style="stroke:var(--ink-2);stroke-width:1.6"/>
+  <line x1="170" y1="52" x2="170" y2="152" style="stroke:var(--ink-2);stroke-width:1.6"/>
+  <line x1="96" y1="88" x2="134" y2="118" style="stroke:var(--c3);stroke-width:2"/>
+  <line x1="134" y1="88" x2="96" y2="118" style="stroke:var(--c4);stroke-width:2;stroke-dasharray:4 3"/>
+  <text x="85" y="86" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:18px;font-style:italic">a</text>
+  <text x="145" y="86" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:18px;font-style:italic">b</text>
+  <text x="85" y="132" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:18px;font-style:italic">c</text>
+  <text x="145" y="132" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:18px;font-style:italic">d</text>
+  <text x="238" y="88" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">+ ad</text>
+  <text x="238" y="130" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:15px">− bc</text>
+  <text x="150" y="186" text-anchor="middle" class="svg-ttl" style="fill:var(--ink);font-size:16px">det = ad − bc</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>9 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Matrizes e operações · Sistemas de equações lineares</dd></div>
+      <div><dt>Destrava</dt><dd>Área de polígonos por determinante, classificação de sistemas e problemas com várias incógnitas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM cobra sistemas lineares quase sempre dentro de uma história: ingressos de dois preços, combos de lanchonete, misturas, cargas. Montar e resolver o sistema é o tema de <strong>Sistemas de equações lineares</strong>. Esta página acrescenta três ferramentas:</p>
+<ul>
+  <li><strong>Determinante:</strong> o número que diz se a matriz tem inversa e se o sistema tem solução única. Também reaparece na Geometria Analítica, no cálculo da área de um triângulo a partir das coordenadas.</li>
+  <li><strong>Regra de Cramer:</strong> obtém cada incógnita como uma razão de determinantes, útil quando a pergunta pede <strong>uma</strong> das incógnitas.</li>
+  <li><strong>Classificação:</strong> decidir se o sistema é possível e determinado (uma solução), possível e indeterminado (infinitas) ou impossível (nenhuma), inclusive quando há um parâmetro no enunciado.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Saber que <strong>determinante diferente de zero garante solução única</strong>, e que determinante zero exige olhar mais: as equações podem ser incompatíveis (nenhuma solução) ou repetidas (infinitas). Essa ideia resolve as questões de classificação sem conta longa.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Determinante de ordem 1 e de ordem 2</h2>
+<div class="box def">
+  <span class="tag">Definição prática</span>
+  <p>Só matrizes <strong>quadradas</strong> têm determinante. Indica-se <span class="m">det <span class="v">A</span></span> ou com barras verticais no lugar dos colchetes. Para ordem 1, o determinante é o próprio elemento: <span class="m">det[−7] = −7</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Ordem 2: diagonal principal menos diagonal secundária</span>
+  <p class="m"><span class="mx c2 det"><i><span class="v">a</span></i><i><span class="v">b</span></i><i><span class="v">c</span></i><i><span class="v">d</span></i></span> = <span class="v">ad</span> − <span class="v">bc</span></p>
+  <p class="m"><span class="mx c2 det"><i>3</i><i>−2</i><i>4</i><i>5</i></span> = 3 · 5 − (−2) · 4 = 15 + 8 = 23</p>
+</div>
+<div class="box warn">
+  <span class="tag">O sinal do segundo produto</span>
+  <p>No exemplo, o produto da secundária é <span class="m">(−2) · 4 = −8</span>, e subtrair −8 é <strong>somar</strong> 8. Calcule o produto inteiro, com sinal, e só depois subtraia. Escrever “15 − 8” é o erro mais comum do assunto.</p>
+</div>
+<p>O determinante também aparece numa equação: <span class="m"><span class="mx c2 det"><i><span class="v">x</span></i><i>3</i><i>2</i><i><span class="v">x</span> + 1</i></span> = 0</span> vira <span class="m"><span class="v">x</span>(<span class="v">x</span> + 1) − 6 = 0</span>, isto é, <span class="m"><span class="v">x</span>² + <span class="v">x</span> − 6 = 0</span>, com raízes 2 e −3.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Ordem 3: a regra de Sarrus</h2>
+<p>Para uma 3 × 3, repita as duas primeiras colunas à direita. Some os três produtos das diagonais que descem para a direita e subtraia os três produtos das diagonais que descem para a esquerda.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 252" role="img" aria-label="Regra de Sarrus para a matriz de linhas 2 1 3, 0 4 1 e 5 2 1. As duas primeiras colunas são repetidas à direita. As três diagonais que descem para a direita dão os produtos 8, 5 e 0, que somam 13; as três que descem para a esquerda dão 60, 4 e 0, que somam 64. O determinante é 13 menos 64, igual a menos 51">
+  <line x1="40" y1="52" x2="40" y2="176" style="stroke:var(--ink-2);stroke-width:1.6"/>
+  <line x1="182" y1="52" x2="182" y2="176" style="stroke:var(--ink-2);stroke-width:1.6"/>
+  <line x1="60" y1="66" x2="160" y2="156" style="stroke:var(--c3);stroke-width:1.8;opacity:.75"/>
+  <line x1="110" y1="66" x2="210" y2="156" style="stroke:var(--c3);stroke-width:1.8;opacity:.75"/>
+  <line x1="160" y1="66" x2="260" y2="156" style="stroke:var(--c3);stroke-width:1.8;opacity:.75"/>
+  <line x1="160" y1="66" x2="60" y2="156" style="stroke:var(--c4);stroke-width:1.8;stroke-dasharray:5 3;opacity:.75"/>
+  <line x1="210" y1="66" x2="110" y2="156" style="stroke:var(--c4);stroke-width:1.8;stroke-dasharray:5 3;opacity:.75"/>
+  <line x1="260" y1="66" x2="160" y2="156" style="stroke:var(--c4);stroke-width:1.8;stroke-dasharray:5 3;opacity:.75"/>
+  <g class="svg-num" text-anchor="middle" style="font-size:15px;paint-order:stroke;stroke:var(--surface);stroke-width:5px;stroke-linejoin:round">
+    <text x="60" y="71" style="fill:var(--ink)">2</text><text x="110" y="71" style="fill:var(--ink)">1</text><text x="160" y="71" style="fill:var(--ink)">3</text>
+    <text x="60" y="116" style="fill:var(--ink)">0</text><text x="110" y="116" style="fill:var(--ink)">4</text><text x="160" y="116" style="fill:var(--ink)">1</text>
+    <text x="60" y="161" style="fill:var(--ink)">5</text><text x="110" y="161" style="fill:var(--ink)">2</text><text x="160" y="161" style="fill:var(--ink)">1</text>
+    <text x="210" y="71" style="fill:var(--ink-3)">2</text><text x="260" y="71" style="fill:var(--ink-3)">1</text>
+    <text x="210" y="116" style="fill:var(--ink-3)">0</text><text x="260" y="116" style="fill:var(--ink-3)">4</text>
+    <text x="210" y="161" style="fill:var(--ink-3)">5</text><text x="260" y="161" style="fill:var(--ink-3)">2</text>
+  </g>
+  <text x="235" y="36" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">colunas 1 e 2 repetidas</text>
+  <text x="300" y="92" class="svg-num" style="fill:var(--c3)">+ (8 + 5 + 0) = 13</text>
+  <text x="300" y="122" class="svg-num" style="fill:var(--c4)">− (60 + 4 + 0) = 64</text>
+  <text x="300" y="156" class="svg-num" style="fill:var(--ink);font-weight:700">det = 13 − 64 = −51</text>
+  <line x1="60" y1="208" x2="90" y2="208" style="stroke:var(--c3);stroke-width:1.8"/>
+  <text x="98" y="212" class="svg-lbl" style="fill:var(--c3)">descem para a direita: somam</text>
+  <line x1="60" y1="232" x2="90" y2="232" style="stroke:var(--c4);stroke-width:1.8;stroke-dasharray:5 3"/>
+  <text x="98" y="236" class="svg-lbl" style="fill:var(--c4)">descem para a esquerda: subtraem</text>
+</svg>
+<figcaption><b>Regra de Sarrus.</b> Os produtos das diagonais verdes são <span class="m">2·4·1 = 8</span>, <span class="m">1·1·5 = 5</span> e <span class="m">3·0·2 = 0</span>; os das vermelhas, <span class="m">3·4·5 = 60</span>, <span class="m">2·1·2 = 4</span> e <span class="m">1·0·1 = 0</span>. O determinante é a primeira soma menos a segunda.</figcaption>
+</figure>
+<div class="box warn">
+  <span class="tag">Subtraia a soma inteira</span>
+  <p>O sinal de menos vale para os <strong>três</strong> produtos da secundária. Some-os primeiro (64) e subtraia de uma vez. Sarrus só vale para ordem 3; não tente estender a regra para 4 × 4.</p>
+</div>
+<div class="box def">
+  <span class="tag">Atalho por Laplace</span>
+  <p>Quando uma linha ou coluna tem zeros, desenvolva por ela: cada elemento <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub></span> multiplica o determinante que sobra ao riscar sua linha e sua coluna, com sinal <span class="m">(−1)<sup><span class="v">i</span> + <span class="v">j</span></sup></span> (o padrão de sinais é + − + na primeira linha). No exemplo, pela primeira linha: <span class="m">2 · (4 − 2) − 1 · (0 − 5) + 3 · (0 − 20) = 4 + 5 − 60 = −51</span>, o mesmo resultado.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Propriedades que poupam conta</h2>
+<p>Muitas questões se resolvem sem calcular nada, só reconhecendo uma propriedade.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Efeito no determinante</th></tr></thead>
+  <tbody>
+    <tr><td>uma linha (ou coluna) só de zeros</td><td><strong>det = 0</strong></td></tr>
+    <tr><td>duas linhas (ou colunas) iguais ou proporcionais</td><td><strong>det = 0</strong></td></tr>
+    <tr><td>uma linha é combinação de outras (ex.: L3 = L1 + L2)</td><td><strong>det = 0</strong></td></tr>
+    <tr><td>trocar duas linhas de lugar</td><td>muda o <strong>sinal</strong></td></tr>
+    <tr><td>multiplicar uma linha por <span class="m"><span class="v">k</span></span></td><td>det fica multiplicado por <span class="m"><span class="v">k</span></span></td></tr>
+    <tr><td>multiplicar a matriz inteira (ordem <span class="m"><span class="v">n</span></span>) por <span class="m"><span class="v">k</span></span></td><td><span class="m">det(<span class="v">kA</span>) = <span class="v">k</span><sup><span class="v">n</span></sup> · det <span class="v">A</span></span></td></tr>
+    <tr><td>somar a uma linha um múltiplo de outra</td><td><strong>não muda</strong></td></tr>
+    <tr><td>transpor</td><td><span class="m">det <span class="v">A</span><sup>t</sup> = det <span class="v">A</span></span></td></tr>
+    <tr><td>produto de matrizes</td><td><span class="m">det(<span class="v">AB</span>) = det <span class="v">A</span> · det <span class="v">B</span></span></td></tr>
+    <tr><td>matriz triangular ou diagonal</td><td>produto dos elementos da diagonal principal</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">A armadilha do det(kA)</span>
+  <p>Multiplicar a matriz por <span class="m"><span class="v">k</span></span> multiplica <strong>cada uma das <span class="v">n</span> linhas</strong> por <span class="m"><span class="v">k</span></span>; por isso o fator é <span class="m"><span class="v">k</span><sup><span class="v">n</span></sup></span>. Numa 3 × 3 com <span class="m">det <span class="v">A</span> = 5</span>: <span class="m">det(2<span class="v">A</span>) = 2³ · 5 = 40</span>, e não 10.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo: linhas em progressão aritmética</span>
+  <p class="m"><span class="mx c3 det"><i>1</i><i>0</i><i>−1</i><i>3</i><i>2</i><i>1</i><i>5</i><i>4</i><i>3</i></span> = 0</p>
+  <p>Cada linha é a anterior somada de <span class="m">(2, 2, 2)</span>, então <span class="m"><span class="v">L</span><sub>3</sub> = 2<span class="v">L</span><sub>2</sub> − <span class="v">L</span><sub>1</sub></span>: uma linha é combinação das outras. Por Sarrus: <span class="m">(6 + 0 − 12) − (−10 + 4 + 0) = −6 + 6 = 0</span>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Determinante e matriz inversa</h2>
+<div class="box def">
+  <span class="tag">O critério</span>
+  <p>Uma matriz quadrada tem inversa <strong>se, e somente se, seu determinante é diferente de zero</strong>. Matriz com <span class="m">det = 0</span> é chamada <strong>singular</strong>.</p>
+</div>
+<p>Isso explica a fórmula da inversa 2 × 2 vista em <strong>Matrizes e operações</strong>: ela divide por <span class="m"><span class="v">ad</span> − <span class="v">bc</span></span>, que é o determinante. Se ele é zero, a divisão é impossível.</p>
+<div class="eq">
+  <span class="lbl">Consequências úteis</span>
+  <p class="m">det(<span class="v">A</span><sup>−1</sup>) = <span class="frac"><i>1</i><i>det <span class="v">A</span></i></span> &nbsp;&nbsp;(porque <span class="v">A</span> · <span class="v">A</span><sup>−1</sup> = <span class="v">I</span> e det <span class="v">I</span> = 1)</p>
+  <p>Se <span class="m">det <span class="v">A</span> = 4</span>, então <span class="m">det(<span class="v">A</span><sup>−1</sup>) = 0,25</span>. E para descobrir os valores de <span class="m"><span class="v">x</span></span> que tornam uma matriz <strong>não inversível</strong>, basta resolver <span class="m">det = 0</span>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> O sistema escrito como matrizes</h2>
+<p>Todo sistema linear pode ser escrito como <span class="m"><span class="v">A</span> · <span class="v">X</span> = <span class="v">B</span></span>: <span class="m"><span class="v">A</span></span> é a matriz dos coeficientes, <span class="m"><span class="v">X</span></span> a coluna das incógnitas e <span class="m"><span class="v">B</span></span> a coluna dos termos independentes.</p>
+<div class="eq">
+  <span class="lbl">Do sistema à forma matricial</span>
+  <p class="m">{ <span class="v">x</span> + <span class="v">y</span> = 250 &nbsp;;&nbsp; 40<span class="v">x</span> + 20<span class="v">y</span> = 7 400 } &nbsp;⟺&nbsp; <span class="mx c2"><i>1</i><i>1</i><i>40</i><i>20</i></span> · <span class="mx c1"><i><span class="v">x</span></i><i><span class="v">y</span></i></span> = <span class="mx c1"><i>250</i><i>7 400</i></span></p>
+  <p>Faça a multiplicação linha por coluna e as duas equações reaparecem. A matriz <span class="m"><span class="v">A</span></span> com a coluna <span class="m"><span class="v">B</span></span> acrescentada é a <strong>matriz completa</strong> (ou ampliada) do sistema.</p>
+</div>
+<p>Se <span class="m">det <span class="v">A</span> ≠ 0</span>, existe a inversa e a solução é única: <span class="m"><span class="v">X</span> = <span class="v">A</span><sup>−1</sup> · <span class="v">B</span></span>. A regra de Cramer é um jeito de fazer essa conta sem montar a inversa.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Regra de Cramer</h2>
+<div class="box def">
+  <span class="tag">O enunciado da regra</span>
+  <p>Num sistema com o mesmo número de equações e incógnitas e <span class="m"><span class="v">D</span> = det <span class="v">A</span> ≠ 0</span>, cada incógnita vale <span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">D</span><sub><span class="v">x</span></sub></i><i><span class="v">D</span></i></span></span>, em que <span class="m"><span class="v">D</span><sub><span class="v">x</span></sub></span> é o determinante obtido trocando, em <span class="m"><span class="v">A</span></span>, a <strong>coluna de <span class="v">x</span></strong> pela coluna dos termos independentes. O mesmo para <span class="m"><span class="v">y</span></span>, <span class="m"><span class="v">z</span></span>…</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo 2 × 2: ingressos de R$ 40 e R$ 20</span>
+  <p>Foram vendidos 250 ingressos, inteiras (<span class="m"><span class="v">x</span></span>) a R$ 40 e meias (<span class="m"><span class="v">y</span></span>) a R$ 20, com arrecadação de R$ 7 400.</p>
+  <p class="m"><span class="v">D</span> = <span class="mx c2 det"><i>1</i><i>1</i><i>40</i><i>20</i></span> = 20 − 40 = −20</p>
+  <p class="m"><span class="v">D</span><sub><span class="v">x</span></sub> = <span class="mx c2 det"><i>250</i><i>1</i><i>7 400</i><i>20</i></span> = 5 000 − 7 400 = −2 400 &nbsp;⟹&nbsp; <span class="v">x</span> = <span class="frac"><i>−2 400</i><i>−20</i></span> = 120</p>
+  <p class="m"><span class="v">D</span><sub><span class="v">y</span></sub> = <span class="mx c2 det"><i>1</i><i>250</i><i>40</i><i>7 400</i></span> = 7 400 − 10 000 = −2 600 &nbsp;⟹&nbsp; <span class="v">y</span> = <span class="frac"><i>−2 600</i><i>−20</i></span> = 130</p>
+  <p><strong>Conferência:</strong> <span class="m">120 + 130 = 250</span> e <span class="m">40 · 120 + 20 · 130 = 4 800 + 2 600 = 7 400</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Quando Cramer vale a pena</span>
+  <p>Em sistemas 3 × 3, Cramer exige quatro determinantes. Se a questão pede <strong>uma só incógnita</strong>, calcule só <span class="m"><span class="v">D</span></span> e o determinante dela: dois Sarrus. Se pede todas, a substituição ou o escalonamento costumam ser mais rápidos.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Classificação: uma, infinitas ou nenhuma solução</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Classificação</th><th>Soluções</th><th>O que o determinante diz (sistema <span class="v">n</span> × <span class="v">n</span>)</th></tr></thead>
+  <tbody>
+    <tr><td><strong>SPD</strong> · possível e determinado</td><td>exatamente uma</td><td><span class="m"><span class="v">D</span> ≠ 0</span></td></tr>
+    <tr><td><strong>SPI</strong> · possível e indeterminado</td><td>infinitas</td><td><span class="m"><span class="v">D</span> = 0</span> e equações compatíveis</td></tr>
+    <tr><td><strong>SI</strong> · impossível</td><td>nenhuma</td><td><span class="m"><span class="v">D</span> = 0</span> e equações contraditórias</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Num sistema 2 × 2, cada equação é uma reta no plano, e a solução é o ponto comum:</p>
+<figure class="fig">
+<svg viewBox="0 0 460 222" role="img" aria-label="Três gráficos lado a lado. No primeiro, duas retas concorrentes se cruzam em um ponto: sistema possível e determinado, D diferente de zero. No segundo, duas retas paralelas distintas não se encontram: sistema impossível, D igual a zero. No terceiro, duas retas coincidentes se sobrepõem: sistema possível e indeterminado, D igual a zero">
+  <g style="stroke:var(--ink-3);stroke-width:1.1">
+    <line x1="22" y1="140" x2="140" y2="140"/><line x1="40" y1="34" x2="40" y2="156"/>
+    <line x1="172" y1="140" x2="290" y2="140"/><line x1="190" y1="34" x2="190" y2="156"/>
+    <line x1="322" y1="140" x2="440" y2="140"/><line x1="340" y1="34" x2="340" y2="156"/>
+  </g>
+  <line x1="25" y1="150" x2="140" y2="50" style="stroke:var(--c1);stroke-width:2"/>
+  <line x1="25" y1="60" x2="140" y2="140" style="stroke:var(--c2);stroke-width:2"/>
+  <circle cx="82.5" cy="100" r="4.5" style="fill:var(--c4)"/>
+  <line x1="175" y1="140" x2="290" y2="70" style="stroke:var(--c1);stroke-width:2"/>
+  <line x1="175" y1="104" x2="290" y2="34" style="stroke:var(--c2);stroke-width:2"/>
+  <line x1="325" y1="148" x2="440" y2="56" style="stroke:var(--c1);stroke-width:5;opacity:.55"/>
+  <line x1="325" y1="148" x2="440" y2="56" style="stroke:var(--c2);stroke-width:2;stroke-dasharray:6 4"/>
+  <text x="81" y="180" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">concorrentes</text>
+  <text x="81" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">SPD · D ≠ 0</text>
+  <text x="231" y="180" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">paralelas distintas</text>
+  <text x="231" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">SI · D = 0</text>
+  <text x="381" y="180" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">coincidentes</text>
+  <text x="381" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">SPI · D = 0</text>
+</svg>
+<figcaption><b>Três posições, três classificações.</b> Retas concorrentes têm um ponto comum (uma solução). Retas paralelas distintas não têm nenhum (sistema impossível). Retas coincidentes têm todos os pontos em comum (infinitas soluções). Nos dois últimos casos as retas têm a mesma inclinação, e por isso <span class="m"><span class="v">D</span> = 0</span>.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Como distinguir SPI de SI quando D = 0</span>
+  <p class="m">{ <span class="v">x</span> + 2<span class="v">y</span> = 3 &nbsp;;&nbsp; 2<span class="v">x</span> + 4<span class="v">y</span> = 6 } &nbsp;→&nbsp; a 2ª é o dobro da 1ª: <strong>SPI</strong></p>
+  <p class="m">{ <span class="v">x</span> + 2<span class="v">y</span> = 3 &nbsp;;&nbsp; 2<span class="v">x</span> + 4<span class="v">y</span> = 7 } &nbsp;→&nbsp; o dobro da 1ª daria 6, não 7: <strong>SI</strong></p>
+  <p>Coeficientes proporcionais e termos independentes na mesma proporção: SPI. Coeficientes proporcionais e termos fora da proporção: SI.</p>
+</div>
+<div class="box warn">
+  <span class="tag">D = 0 não é “impossível”</span>
+  <p>O determinante zero só diz que a solução <strong>não é única</strong>. Para decidir entre SPI e SI, compare as equações ou escalone. Em 2 × 2, se <span class="m"><span class="v">D</span> = 0</span> e algum <span class="m"><span class="v">D</span><sub><span class="v">x</span></sub></span> ou <span class="m"><span class="v">D</span><sub><span class="v">y</span></sub></span> é diferente de zero, o sistema é impossível; se todos são zero, escalone antes de concluir.</p>
+</div>
+<div class="box def">
+  <span class="tag">Sistema homogêneo</span>
+  <p>Quando todos os termos independentes são zero, o sistema é <strong>homogêneo</strong> e nunca é impossível: <span class="m">(0, 0, …, 0)</span> sempre é solução, a <strong>trivial</strong>. Ele tem outras soluções (é SPI) exatamente quando <span class="m"><span class="v">D</span> = 0</span>.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Discussão com parâmetro</h2>
+<p>Quando o enunciado traz uma letra no lugar de um coeficiente, a pergunta é “para que valores o sistema é SPD, SPI ou SI”. O roteiro tem dois passos.</p>
+<div class="eq">
+  <span class="lbl">Exemplo com dois parâmetros</span>
+  <p><strong>1. Determinante:</strong> <span class="m"><span class="v">D</span> = <span class="mx c2 det"><i>1</i><i>2</i><i>2</i><i><span class="v">k</span></i></span> = <span class="v">k</span> − 4</span>. Se <span class="m"><span class="v">k</span> ≠ 4</span>: <strong>SPD</strong>, qualquer que seja <span class="m"><span class="v">m</span></span>.</p>
+  <p><strong>2. Caso <span class="m"><span class="v">D</span> = 0</span></strong> (<span class="m"><span class="v">k</span> = 4</span>): a 2ª equação vira <span class="m">2<span class="v">x</span> + 4<span class="v">y</span> = <span class="v">m</span></span>, cujos coeficientes são o dobro dos da 1ª. Se <span class="m"><span class="v">m</span> = 6</span>, ela é o dobro da 1ª: <strong>SPI</strong>. Se <span class="m"><span class="v">m</span> ≠ 6</span>: <strong>SI</strong>.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Condição</th><th>Classificação</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">k</span> ≠ 4</td><td>SPD</td></tr>
+    <tr><td class="m"><span class="v">k</span> = 4 e <span class="v">m</span> = 6</td><td>SPI</td></tr>
+    <tr><td class="m"><span class="v">k</span> = 4 e <span class="v">m</span> ≠ 6</td><td>SI</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Em 3 × 3, escalone no caso D = 0</span>
+  <p>Encontre o valor do parâmetro que zera <span class="m"><span class="v">D</span></span>, substitua no sistema e escalone (zere a primeira incógnita nas equações de baixo, depois a segunda). Uma linha “0 = 0” indica equação redundante (SPI, se não houver contradição); uma linha “0 = número não nulo” indica SI.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova e conexões</h2>
+<div class="box tip">
+  <span class="tag">1 · Procure a propriedade antes de fazer Sarrus</span>
+  <p>Linha de zeros, linhas iguais, proporcionais ou em progressão aritmética dão <span class="m">det = 0</span> na hora. Matriz triangular: multiplique a diagonal.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Calcule só o necessário</span>
+  <p>Se a pergunta é o preço de um item, use Cramer só para essa incógnita, ou some e subtraia equações de forma esperta. Se a pergunta é “quantas soluções”, nem resolva: classifique.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Confira a resposta nas equações originais</span>
+  <p>Substituir a solução nas equações leva segundos e pega quase todo erro de sinal em determinante.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Geometria Analítica</strong></td><td>área de triângulo por coordenadas e alinhamento de três pontos</td><td>a área é metade do módulo de um determinante; determinante zero = pontos alinhados</td></tr>
+    <tr><td><strong>Química</strong></td><td>balanceamento de equações</td><td>os coeficientes formam um sistema linear homogêneo, com infinitas soluções proporcionais</td></tr>
+    <tr><td><strong>Física</strong></td><td>circuitos com várias malhas</td><td>as leis de Kirchhoff geram sistemas lineares nas correntes</td></tr>
+    <tr><td><strong>Economia</strong></td><td>misturas, cestas e combos</td><td>cada restrição vira uma equação; o determinante diz se os dados bastam para uma resposta única</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">|3 −2; 4 5| = 15 − 8</span> &nbsp;→&nbsp; <span class="c">15 − (−8) = 23</span></span><small>Calcule o produto com sinal antes de subtrair.</small></li>
+  <li><span><span class="x">Sarrus: subtrair só o 1º produto</span> &nbsp;→&nbsp; <span class="c">subtrair a soma dos três</span></span><small>O menos vale para toda a diagonal secundária.</small></li>
+  <li><span><span class="x">det(2A) = 2 · det A</span> &nbsp;→&nbsp; <span class="c">2ⁿ · det A</span></span><small>Numa 3 × 3, o fator é 8.</small></li>
+  <li><span><span class="x">D = 0 ⟹ impossível</span> &nbsp;→&nbsp; <span class="c">SPI ou SI</span></span><small>Compare as equações ou escalone.</small></li>
+  <li><span><span class="x">Achou uma solução ⟹ SPD</span> &nbsp;→&nbsp; <span class="c">pode haver infinitas</span></span><small>Se D = 0, a solução encontrada é só uma entre muitas.</small></li>
+  <li><span><span class="x">Dₓ: trocar a linha de x</span> &nbsp;→&nbsp; <span class="c">trocar a coluna de x</span></span><small>A coluna dos termos independentes entra no lugar da coluna da incógnita.</small></li>
+  <li><span><span class="x">x = D / Dₓ</span> &nbsp;→&nbsp; <span class="c">x = Dₓ / D</span></span><small>O determinante principal fica no denominador.</small></li>
+  <li><span><span class="x">Homogêneo pode ser impossível</span> &nbsp;→&nbsp; <span class="c">nunca: (0, 0, 0) é solução</span></span><small>Só se pergunta se há outras soluções.</small></li>
+  <li><span><span class="x">k² = 4 ⟹ k = 2</span> &nbsp;→&nbsp; <span class="c">k = 2 ou k = −2</span></span><small>Equação do 2º grau no parâmetro tem duas raízes.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: dá para usar uma propriedade? A pergunta quer a solução ou só a classificação?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Ingressos de dois preços</span>
+    <p class="enun">Um teatro vendeu 250 ingressos para uma apresentação: inteiras a R$ 40,00 e meias-entradas a R$ 20,00. A arrecadação total foi de R$ 7 400,00. O número de meias-entradas vendidas foi</p>
+    <ol class="alt"><li>120.</li><li>125.</li><li>130.</li><li>185.</li><li>370.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com <span class="m"><span class="v">x</span></span> inteiras e <span class="m"><span class="v">y</span></span> meias: <span class="m"><span class="v">x</span> + <span class="v">y</span> = 250</span> e <span class="m">40<span class="v">x</span> + 20<span class="v">y</span> = 7 400</span>. Por Cramer, <span class="m"><span class="v">D</span> = 20 − 40 = −20</span> e <span class="m"><span class="v">D</span><sub><span class="v">y</span></sub> = 1 · 7 400 − 40 · 250 = −2 600</span>:</p>
+      <p class="m"><span class="v">y</span> = <span class="frac"><i>−2 600</i><i>−20</i></span> = 130</p>
+      <p>Conferência: 120 inteiras e 130 meias dão <span class="m">4 800 + 2 600 = 7 400</span>.</p>
+      <p>A A é o número de inteiras. A B divide os ingressos ao meio, ignorando a arrecadação. A D supõe que todos pagaram inteira (7 400 ÷ 40); a E, que todos pagaram meia (7 400 ÷ 20).</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Quando a matriz não tem inversa</span>
+    <p class="enun">Um sistema de criptografia só pode usar como chave uma matriz que tenha inversa. Para a matriz <span class="m"><span class="mx c2"><i><span class="v">x</span></i><i>3</i><i>2</i><i><span class="v">x</span> + 1</i></span></span>, os valores reais de <span class="m"><span class="v">x</span></span> que a tornam inadequada como chave são</p>
+    <ol class="alt"><li>0 e −1.</li><li>−2 e 3.</li><li>nenhum: ela sempre tem inversa.</li><li>−3 e 2.</li><li>apenas 2.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A matriz não tem inversa quando o determinante é zero:</p>
+      <p class="m"><span class="v">x</span>(<span class="v">x</span> + 1) − 3 · 2 = 0 &nbsp;⟹&nbsp; <span class="v">x</span>² + <span class="v">x</span> − 6 = 0 &nbsp;⟹&nbsp; <span class="v">x</span> = −3 ou <span class="v">x</span> = 2</p>
+      <p>Conferência: com <span class="m"><span class="v">x</span> = 2</span>, <span class="m">2 · 3 − 6 = 0</span>; com <span class="m"><span class="v">x</span> = −3</span>, <span class="m">(−3)(−2) − 6 = 0</span>.</p>
+      <p>A A esquece o produto da secundária e resolve <span class="m"><span class="v">x</span>(<span class="v">x</span> + 1) = 0</span>. A B troca os sinais das raízes. A C soma o 6 em vez de subtrair (<span class="m"><span class="v">x</span>² + <span class="v">x</span> + 6</span> não tem raiz real). A E encontra uma raiz por tentativa e para, esquecendo que a equação é do 2º grau.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Determinante de um múltiplo</span>
+    <p class="enun">Em um programa de modelagem, uma matriz quadrada <span class="m"><span class="v">A</span></span> de ordem 3 tem determinante igual a 5. O programa gera a matriz <span class="m">2<span class="v">A</span></span>, multiplicando todos os elementos de <span class="m"><span class="v">A</span></span> por 2. O determinante de <span class="m">2<span class="v">A</span></span> é</p>
+    <ol class="alt"><li>10.</li><li>20.</li><li>30.</li><li>40.</li><li>125.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplicar a matriz por 2 multiplica as <strong>três</strong> linhas por 2, e cada linha multiplicada dobra o determinante:</p>
+      <p class="m">det(2<span class="v">A</span>) = 2³ · det <span class="v">A</span> = 8 · 5 = 40</p>
+      <p>A A multiplica uma linha só. A B usa <span class="m">2²</span>, como se a matriz fosse 2 × 2. A C multiplica por 2 e pela ordem 3. A E eleva o determinante ao cubo, <span class="m">5³</span>, em vez do fator 2.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Sistema com parâmetro</span>
+    <p class="enun">Um técnico descreve uma mistura pelo sistema <span class="m">{ <span class="v">x</span> + 2<span class="v">y</span> = 3 &nbsp;;&nbsp; 2<span class="v">x</span> + <span class="v">k</span><span class="v">y</span> = <span class="v">m</span> }</span>, em que <span class="m"><span class="v">k</span></span> e <span class="m"><span class="v">m</span></span> são constantes reais ajustáveis. O sistema <strong>não tem solução</strong> exatamente quando</p>
+    <ol class="alt"><li><span class="m"><span class="v">k</span> = 4</span> e <span class="m"><span class="v">m</span> ≠ 6</span>.</li><li><span class="m"><span class="v">k</span> = 4</span> e <span class="m"><span class="v">m</span> = 6</span>.</li><li><span class="m"><span class="v">k</span> ≠ 4</span>, para qualquer valor de <span class="m"><span class="v">m</span></span>.</li><li><span class="m"><span class="v">k</span> = −4</span> e <span class="m"><span class="v">m</span> ≠ 6</span>.</li><li><span class="m"><span class="v">k</span> = 2</span> e <span class="m"><span class="v">m</span> ≠ 3</span>.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m"><span class="v">D</span> = 1 · <span class="v">k</span> − 2 · 2 = <span class="v">k</span> − 4</span>. Com <span class="m"><span class="v">k</span> ≠ 4</span>, o sistema tem solução única. Com <span class="m"><span class="v">k</span> = 4</span>, os coeficientes da 2ª equação são o dobro dos da 1ª; ela é compatível só se <span class="m"><span class="v">m</span> = 2 · 3 = 6</span>. Logo, não há solução para <span class="m"><span class="v">k</span> = 4</span> e <span class="m"><span class="v">m</span> ≠ 6</span>.</p>
+      <p>A B é o caso de infinitas soluções. A C é o caso de solução única. A D soma os produtos no determinante (<span class="m"><span class="v">k</span> + 4</span>). A E exige que a 2ª equação seja idêntica à 1ª, esquecendo que basta a proporção.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · A geometria do sistema</span>
+    <p class="enun">Em um aplicativo de gráficos, um estudante representou no plano cartesiano as duas equações do sistema <span class="m">{ 3<span class="v">x</span> − 6<span class="v">y</span> = 9 &nbsp;;&nbsp; −<span class="v">x</span> + 2<span class="v">y</span> = 4 }</span>. As retas obtidas são</p>
+    <ol class="alt"><li>concorrentes, e o sistema tem uma única solução.</li><li>paralelas distintas, e o sistema não tem solução.</li><li>coincidentes, e o sistema tem infinitas soluções.</li><li>perpendiculares, e o sistema tem uma única solução.</li><li>concorrentes na origem, e a solução é (0, 0).</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m"><span class="v">D</span> = 3 · 2 − (−6)(−1) = 6 − 6 = 0</span>: as retas têm a mesma inclinação. Dividindo a 1ª equação por 3: <span class="m"><span class="v">x</span> − 2<span class="v">y</span> = 3</span>; multiplicando a 2ª por −1: <span class="m"><span class="v">x</span> − 2<span class="v">y</span> = −4</span>. O mesmo <span class="m"><span class="v">x</span> − 2<span class="v">y</span></span> não pode valer 3 e −4: retas paralelas distintas, sistema impossível.</p>
+      <p>A A e a D supõem <span class="m"><span class="v">D</span> ≠ 0</span>. A C vê os coeficientes proporcionais e não confere os termos independentes. A E testa (0, 0), que não satisfaz nenhuma das equações.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Uma incógnita por Cramer</span>
+    <p class="enun">Em uma lanchonete, os preços do suco, do sanduíche e da salada são fixos. Três pedidos custaram: 1 suco, 1 sanduíche e 1 salada, R$ 16,00; 2 sucos e 1 sanduíche, R$ 15,00; 1 suco e 2 saladas, R$ 14,00. O preço de uma salada, em reais, é</p>
+    <ol class="alt"><li>3.</li><li>4.</li><li>5.</li><li>7.</li><li>15.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com suco <span class="m"><span class="v">x</span></span>, sanduíche <span class="m"><span class="v">y</span></span> e salada <span class="m"><span class="v">z</span></span>: <span class="m"><span class="v">x</span> + <span class="v">y</span> + <span class="v">z</span> = 16</span>, <span class="m">2<span class="v">x</span> + <span class="v">y</span> = 15</span>, <span class="m"><span class="v">x</span> + 2<span class="v">z</span> = 14</span>.</p>
+      <p class="m"><span class="v">D</span> = <span class="mx c3 det"><i>1</i><i>1</i><i>1</i><i>2</i><i>1</i><i>0</i><i>1</i><i>0</i><i>2</i></span> = (2 + 0 + 0) − (1 + 0 + 4) = −3</p>
+      <p class="m"><span class="v">D</span><sub><span class="v">z</span></sub> = <span class="mx c3 det"><i>1</i><i>1</i><i>16</i><i>2</i><i>1</i><i>15</i><i>1</i><i>0</i><i>14</i></span> = (14 + 15 + 0) − (16 + 0 + 28) = −15 &nbsp;⟹&nbsp; <span class="v">z</span> = <span class="frac"><i>−15</i><i>−3</i></span> = 5</p>
+      <p>Conferência: suco R$ 4, sanduíche R$ 7 e salada R$ 5 satisfazem os três pedidos (16, 15 e 14).</p>
+      <p>A A é o módulo de <span class="m"><span class="v">D</span></span>; a E, o módulo de <span class="m"><span class="v">D</span><sub><span class="v">z</span></sub></span> sem dividir por <span class="m"><span class="v">D</span></span>. A B é o preço do suco e a D, o do sanduíche: incógnitas trocadas.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Sistema homogêneo</span>
+    <p class="enun">O sistema <span class="m">{ <span class="v">x</span> + <span class="v">k</span><span class="v">y</span> = 0 &nbsp;;&nbsp; <span class="v">k</span><span class="v">x</span> + 4<span class="v">y</span> = 0 }</span>, com <span class="m"><span class="v">k</span></span> real, sempre admite a solução <span class="m"><span class="v">x</span> = <span class="v">y</span> = 0</span>. Ele admite também soluções diferentes dessa quando</p>
+    <ol class="alt"><li><span class="m"><span class="v">k</span> = 4</span>.</li><li><span class="m"><span class="v">k</span> = 2</span>, apenas.</li><li><span class="m"><span class="v">k</span> = 0</span>.</li><li><span class="m"><span class="v">k</span> = 4</span> ou <span class="m"><span class="v">k</span> = −4</span>.</li><li><span class="m"><span class="v">k</span> = 2</span> ou <span class="m"><span class="v">k</span> = −2</span>.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Um sistema homogêneo tem soluções além da trivial quando <span class="m"><span class="v">D</span> = 0</span>:</p>
+      <p class="m"><span class="v">D</span> = 1 · 4 − <span class="v">k</span> · <span class="v">k</span> = 4 − <span class="v">k</span>² = 0 &nbsp;⟹&nbsp; <span class="v">k</span> = 2 ou <span class="v">k</span> = −2</p>
+      <p>Com <span class="m"><span class="v">k</span> = 2</span>, as equações são <span class="m"><span class="v">x</span> + 2<span class="v">y</span> = 0</span> e <span class="m">2<span class="v">x</span> + 4<span class="v">y</span> = 0</span>: a mesma reta, e (2, −1) é solução, por exemplo.</p>
+      <p>A A esquece o quadrado (<span class="m">4 − <span class="v">k</span> = 0</span>). A B esquece a raiz negativa. A C dá <span class="m"><span class="v">D</span> = 4 ≠ 0</span>: só a solução trivial. A D resolve <span class="m"><span class="v">k</span>² = 16</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Propriedade em vez de conta</span>
+    <p class="enun">A matriz quadrada <span class="m"><span class="v">A</span></span> de ordem 3 é definida por <span class="m"><span class="v">a</span><sub><span class="v">ij</span></sub> = 2<span class="v">i</span> − <span class="v">j</span></span>. O determinante de <span class="m"><span class="v">A</span></span> é</p>
+    <ol class="alt"><li>−12.</li><li>−6.</li><li>0.</li><li>6.</li><li>12.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">A</span> = <span class="mx c3"><i>1</i><i>0</i><i>−1</i><i>3</i><i>2</i><i>1</i><i>5</i><i>4</i><i>3</i></span></p>
+      <p>Cada linha é a anterior mais <span class="m">(2, 2, 2)</span>, então <span class="m"><span class="v">L</span><sub>3</sub> = 2<span class="v">L</span><sub>2</sub> − <span class="v">L</span><sub>1</sub></span> e o determinante é zero. Por Sarrus: diagonais que descem para a direita <span class="m">6 + 0 − 12 = −6</span>; para a esquerda <span class="m">−10 + 4 + 0 = −6</span>; <span class="m">det = −6 − (−6) = 0</span>.</p>
+      <p>A B fica só com a soma da diagonal principal. A A soma as duas parciais em vez de subtrair. A D usa só a parte secundária, com o sinal de menos (<span class="m">−(−6)</span>). A E soma as duas parciais e ainda troca o sinal.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Uma solução não é a solução</span>
+    <p class="enun">Ao resolver o sistema <span class="m">{ <span class="v">x</span> + <span class="v">y</span> + <span class="v">z</span> = 6 &nbsp;;&nbsp; <span class="v">x</span> − <span class="v">y</span> + 2<span class="v">z</span> = 5 &nbsp;;&nbsp; 2<span class="v">x</span> + 3<span class="v">z</span> = 11 }</span>, um estudante verificou que o terno (1, 2, 3) satisfaz as três equações. Sobre esse sistema, é correto afirmar que ele é</p>
+    <ol class="alt"><li>possível e determinado, e (1, 2, 3) é sua única solução.</li><li>possível e indeterminado.</li><li>impossível, porque o determinante dos coeficientes é zero.</li><li>possível e determinado, com solução (0, 0, 0).</li><li>impossível, porque a terceira equação repete as outras.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Somando a 1ª e a 2ª equações: <span class="m">2<span class="v">x</span> + 3<span class="v">z</span> = 11</span>, que é exatamente a 3ª. Ela não traz informação nova, e sobram duas equações para três incógnitas. Como (1, 2, 3) é solução, o sistema é possível; como há uma equação redundante, há infinitas soluções. Outra, por exemplo: (−0,5; 2,5; 4), que também satisfaz as três.</p>
+      <p>Pelo determinante: <span class="m"><span class="v">D</span> = 1(−3 − 0) − 1(3 − 4) + 1(0 + 2) = 0</span>, o que confirma que a solução não é única.</p>
+      <p>A A conclui unicidade a partir de uma solução encontrada. A C confunde <span class="m"><span class="v">D</span> = 0</span> com impossibilidade, mas o terno (1, 2, 3) prova que há solução. A D não satisfaz a 1ª equação (0 ≠ 6). A E: equação repetida gera indeterminação, não impossibilidade.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo determinantes 2 × 2 sem errar o sinal do segundo produto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a regra de Sarrus em matrizes 3 × 3</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso Laplace quando há uma linha ou coluna com zeros</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço determinante zero por linhas nulas, iguais, proporcionais ou combinadas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que <span class="m">det(<span class="v">kA</span>) = <span class="v">k</span><sup><span class="v">n</span></sup> det <span class="v">A</span></span> e <span class="m">det(<span class="v">AB</span>) = det <span class="v">A</span> · det <span class="v">B</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Relaciono matriz inversível com determinante diferente de zero</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo um sistema na forma <span class="m"><span class="v">A</span> · <span class="v">X</span> = <span class="v">B</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico Cramer trocando a coluna certa e dividindo por <span class="m"><span class="v">D</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico sistemas em SPD, SPI e SI</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que <span class="m"><span class="v">D</span> = 0</span> não significa “impossível”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Associo concorrentes, paralelas e coincidentes às três classificações</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Discuto um sistema com parâmetro em dois passos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei quando um sistema homogêneo tem soluções além da trivial</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>25 questões</strong> e acerte pelo menos 18, com pelo menos seis de classificação ou discussão de sistemas. Depois siga para <strong>Polinômios e equações polinomiais</strong>, onde a busca por soluções passa de várias incógnitas de 1º grau para uma incógnita de grau alto.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>34 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-34-determinantes-sistemas-lineares.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-34";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

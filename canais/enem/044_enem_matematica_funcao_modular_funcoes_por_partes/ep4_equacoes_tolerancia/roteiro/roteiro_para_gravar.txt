@@ -1,0 +1,63 @@
+Um ciclista está a quatro quilômetros de um posto de apoio. Ele já passou pelo posto ou ainda vai chegar? As duas coisas podem ser verdade, em horários diferentes, e o ENEM coloca nas alternativas quem esqueceu uma delas.
+
+Ao final desta aula, você vai resolver equações e inequações com módulo desenhando a reta, e traduzir qualquer tolerância em intervalo.
+
+Dois lembretes rápidos. Do episódio três: módulo é distância até o zero. Módulo de menos sete é sete. E da série de Equações: em dois x menos cinco igual a sete, você soma cinco dos dois lados e divide por dois. x igual a seis.
+
+Pense numa fábrica de café. O pacote tem quinhentos gramas, e ela aceita tolerância de oito gramas. Ou numa peça de cinquenta milímetros que pode variar dois milímetros. Nos dois casos, a pergunta é a mesma: a que distância do certo você pode estar? E distância, você já sabe, se escreve com duas barrinhas.
+
+Primeiro, as palavras. Equação modular é uma igualdade com o x dentro das barrinhas. Por exemplo, módulo de x igual a sete. O conjunto solução é a lista de todos os x que funcionam. E quais funcionam? Se a distância até o zero é sete, você está no sete ou no menos sete.
+
+Isso vira a regra. Módulo de A igual a k, com k positivo: A vale k, ou A vale menos k. O primeiro é o caso positivo; o segundo, o caso negativo. Se k é zero, só A igual a zero. E se k é negativo? Não há solução. Distância nunca é negativa.
+
+Vamos resolver módulo de dois x menos cinco igual a sete. Caso positivo: dois x menos cinco igual a sete. Dois x igual a doze, x igual a seis. Caso negativo: dois x menos cinco igual a menos sete. Dois x igual a menos dois, x igual a menos um. Conferindo: doze menos cinco, sete. Menos dois menos cinco, menos sete, e o módulo dá sete. Atalho: dois casos, e substitua os dois na equação original.
+
+E quando os dois lados têm barrinhas? Módulo de x menos um igual a módulo de x menos sete. Leia como distância: x está à mesma distância do um e do sete. Só um ponto faz isso: o ponto médio. x igual a quatro. Três para cada lado.
+
+E se o lado direito tem letra? Módulo de x menos dois igual a dois x menos um. Caso positivo: x menos dois igual a dois x menos um. Dá x igual a menos um. Mas aí o lado direito vira dois vezes menos um, menos um: menos três. Um módulo igual a um número negativo? Impossível. Descarte.
+
+O outro caso. x menos dois igual a menos dois x mais um. Três x igual a três, x igual a um. Confere: módulo de menos um é um, e dois menos um também é um. Atalho: o lado direito com letra precisa dar zero ou positivo. Toda resposta se confere substituindo.
+
+E quando aparece menor ou maior no lugar do igual? Isso é uma inequação modular. Módulo de x menor que quatro: a distância até o zero é menor que quatro. O x mora entre menos quatro e quatro. Com o menor ou igual, as pontas entram. Isso é um intervalo fechado: as bolinhas ficam cheias.
+
+E o maior que? Módulo de x maior que quatro: a distância passa de quatro. O x está fora: antes do menos quatro, ou depois do quatro. Duas semirretas, e o meio apagado. Guarde assim: menor que fica entre; maior que fica fora.
+
+E a tolerância? Tolerância é quanto se pode errar para cada lado. O valor certo é o centro; a tolerância é o raio. Pense num elástico preso no centro: ele estica o raio para cada lado. A peça de cinquenta milímetros, com dois de tolerância: módulo de x menos cinquenta, menor ou igual a dois. De quarenta e oito a cinquenta e dois milímetros.
+
+Como o ENEM escreve isso em palavras? Difere de a em no máximo k: módulo de x menos a, menor ou igual a k. Fica entre. Difere em mais de k: módulo de x menos a, maior que k. Fica fora. Atalho: centro menos o raio, centro mais o raio. E com o menor ou igual, as pontas entram.
+
+Sua vez. Resolva módulo de três x menos seis igual a nove. Os dois casos, e a conferência. Pause e tente.
+
+Vamos juntos. Caso positivo: três x menos seis igual a nove. Três x igual a quinze, x igual a cinco. Caso negativo: três x menos seis igual a menos nove. Três x igual a menos três, x igual a menos um. Conferindo: quinze menos seis, nove. Menos três menos seis, menos nove, módulo nove. Solução: menos um e cinco.
+
+Vamos guardar em três frases. Um: módulo igual a k: o de dentro vale k ou menos k. Dois: menor que fica entre; maior que fica fora. Três: tolerância: centro mais ou menos o raio.
+
+Os três erros clássicos. Primeiro: módulo de x igual a cinco, e responder só o cinco. Parece certo: cinco é o número que está na conta. Mas o menos cinco também está a cinco do zero. São dois valores.
+
+Segundo: módulo de x igual a menos três, e responder mais ou menos três. Parece certo: é a regra de sempre, o de dentro vale k ou menos k. Mas a regra pede k positivo. Distância nunca é negativa: não há solução.
+
+Terceiro: módulo de x menor que quatro, e escrever x menor que mais ou menos quatro. Parece certo: é a mesma ideia dos dois casos da equação. Mas menor que fica entre: o certo é menos quatro menor que x, menor que quatro.
+
+Agora uma questão do nosso material de estudo, e eu faço com você. Num jogo de tabuleiro, a casa de um peão é um número inteiro x, e uma regra exige que módulo de dois x menos cinco seja igual a sete. Quais valores de x cumprem a regra? A: só o seis. B: menos seis e um. C: menos um e seis. D: um e seis. E: nenhum valor.
+
+Você já viu essa conta. Caso positivo: x igual a seis. Caso negativo: x igual a menos um. Os dois são inteiros, e os dois conferem: sete e sete. Letra C!
+
+E as pegadinhas? A A esquece o caso negativo. A B troca os sinais das duas soluções. A D erra o segundo caso: faz dois x igual a sete menos cinco, em vez de menos sete mais cinco. E a E confunde com módulo igual a menos sete. Aqui o sete é positivo.
+
+Agora a gente faz junto. Uma máquina embala café com massa de quinhentos gramas. O controle aprova o pacote de massa m quando módulo de m menos quinhentos é menor ou igual a oito. Os aprovados são: A: m até quinhentos e oito. B: m entre quatrocentos e noventa e dois e quinhentos e oito, sem as pontas. C: de quatrocentos e noventa e seis a quinhentos e quatro. D: de quatrocentos e noventa e dois a quinhentos e oito, com as pontas. E: até quatrocentos e noventa e dois, ou a partir de quinhentos e oito. Pause e tente.
+
+Vamos juntos. O alfinete vai no centro: quinhentos. O raio é oito. O elástico estica oito para cada lado: de quatrocentos e noventa e dois a quinhentos e oito. E o sinal é menor ou igual: as pontas entram. Letra D!
+
+E as erradas? A A só usa o limite de cima: aprovaria um pacote de trezentos gramas. A B tira as pontas, mas um pacote de quinhentos e oito é aprovado. A C divide a tolerância por dois, como se oito fosse a largura toda. E a E responde o contrário: os pacotes de fora.
+
+Agora é com você. Um ciclista parte do quilômetro zero de uma ciclovia reta e pedala a quatro quilômetros por hora. O posto de apoio fica no quilômetro doze. A distância até o posto, depois de t horas, é módulo de quatro t menos doze, para t de zero a seis. Quando essa distância vale quatro quilômetros? A: só em duas horas. B: só em quatro horas. C: em duas e em três horas. D: em uma e em quatro horas. E: em duas e em quatro horas. Pause o vídeo e resolva sozinho.
+
+Vamos conferir. Caso positivo: quatro t menos doze igual a quatro. Quatro t igual a dezesseis, t igual a quatro. Ele está no quilômetro dezesseis: já passou do posto. Caso negativo: quatro t menos doze igual a menos quatro. Quatro t igual a oito, t igual a dois. Quilômetro oito: ainda vai chegar. As duas horas estão entre zero e seis. Letra E!
+
+E as erradas? A A e a B ficam com um caso só: o ciclista está a quatro do posto uma vez antes e outra depois. A C inclui as três horas. Mas é a hora em que ele está no posto: distância zero. E a D erra a conta do caso negativo: chega a quatro t igual a quatro, em vez de quatro t igual a oito.
+
+Para fechar, as mesmas três frases. Um: módulo igual a k: o de dentro vale k ou menos k. Dois: menor que fica entre; maior que fica fora. Três: tolerância: centro mais ou menos o raio.
+
+No último episódio deste assunto, juntamos tarifas, faixas progressivas e módulo, caçamos as pegadinhas e treinamos para o ENEM.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: módulo de x menos três, menor ou igual a cinco: de onde até onde vai o x? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

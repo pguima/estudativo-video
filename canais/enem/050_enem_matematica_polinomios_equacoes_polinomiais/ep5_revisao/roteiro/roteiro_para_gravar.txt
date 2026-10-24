@@ -1,0 +1,69 @@
+Três frases resolvem quase toda questão de polinômio: a é raiz se P de a é igual a zero; o resto por x menos a é P de a; e uma raiz conhecida baixa o grau até o segundo. Hoje você treina as três.
+
+E o que a prova pede? Modelar: o volume de uma caixa, uma área, um lucro. Valor numérico e raízes: o lucro se anula, a altura volta a zero. Ler gráficos: onde a curva corta ou toca o eixo. E as relações entre raízes e coeficientes: a soma e o produto, sem resolver.
+
+E um aviso do próprio material: a teoria completa de polinômios cai mais nos vestibulares tradicionais. No ENEM, o polinômio aparece como modelo. E o que se pede é usar a ferramenta certa.
+
+Antes de cobrar, tente lembrar: qual número você põe no lugar do x para achar a soma dos coeficientes? Um: a caixa de papelão. O grau é o andar mais alto do prédio, o P de um é o raio X que soma os coeficientes, e a identidade confere as notas fiscais item por item. Dois: a esteira de Briot-Ruffini, o atalho do pedágio, que dá o resto sem dividir, e a raiz do divisor que mora do lado oposto.
+
+Três: o molho de chaves das candidatas. Raiz e fator são espelhos, e cada raiz achada derruba um andar. Quatro: a bola. O menos, mais, menos de Girard, a raiz que quica ou atravessa o eixo, e as raízes conjugadas, que andam como um par de meias.
+
+E nas outras áreas? Na Geometria Espacial, o volume de uma caixa é o produto de três fatores do primeiro grau: um polinômio de grau três. Na Economia, as raízes do lucro são os pontos de equilíbrio.
+
+Na Física, a posição no movimento uniformemente variado é um polinômio, e voltar à origem é achar uma raiz. E nos Números complexos, as raízes não reais vêm em pares conjugados.
+
+E na hora da prova? Quatro hábitos. Um: raiz? Substitua. Calcular P de a é mais rápido que dividir. Dois: uma raiz dada é um convite a Briot-Ruffini. Divida por ela e resolva o segundo grau que sobra.
+
+Três: pediu soma ou produto? Girard. Nem resolva a equação. Quatro: gráfico? Calcule o P de zero de cada alternativa e compare com o ponto do eixo vertical. Depois, as raízes e as multiplicidades.
+
+Agora, verdadeiro ou falso? Nove frases, dos erros que mais custam pontos. Em cada uma, pause e responda antes de mim.
+
+Um: se menos dois é raiz, o fator é x menos dois. Pause. Falso! Engana porque o dois aparece nos dois lugares. Mas raiz e fator são espelhos: sinais opostos. Raiz menos dois, fator x mais dois.
+
+Dois: em x ao cubo menos quatro x mais um, a esteira usa os coeficientes um, zero, menos quatro e um. Pause. Verdadeiro! Parece falso porque o x ao quadrado nem aparece. Mas na esteira, todo andar tem lugar: o que falta entra com zero.
+
+Três: para dividir por x mais três, a esteira usa o três. Pause. Falso! Engana porque o três está escrito ali. Mas a raiz do divisor mora do lado oposto: x mais três zera em menos três.
+
+Quatro: o resto da divisão por x menos a é P de menos a. Pause. Falso! Engana porque tem um menos no divisor. Mas o atalho do pedágio usa a raiz do divisor: x menos a zera em a. O resto é P de a.
+
+Cinco: no terceiro grau, o produto das raízes é menos d sobre a. Pause. Verdadeiro! Parece falso porque no segundo grau era c sobre a, sem o menos. Mas no terceiro, os sinais de Girard são menos, mais, menos: o produto leva o último menos.
+
+Seis: sabendo as raízes, o polinômio está identificado. Pause. Falso! Engana porque as raízes parecem dizer tudo. Mas falta o coeficiente dominante: x ao quadrado menos três x mais dois e o dobro dele têm as mesmas raízes, um e dois.
+
+Sete: uma raiz de multiplicidade dois só toca o eixo, sem atravessar. Pause. Verdadeiro! Parece falso porque parece que toda raiz corta o eixo. Mas a bola quica: x menos dois, ao quadrado, nunca fica negativo.
+
+Oito: com coeficientes reais, um menos i pode ser raiz sozinha. Pause. Falso! Engana porque o enunciado só cita uma. Mas raízes não reais andam como um par de meias: se um menos i é raiz, um mais i também é.
+
+E nove: a soma dos coeficientes é o P de zero. Pause. Falso! Engana porque o zero parece o ponto de partida. Mas P de zero é só o termo independente. A soma é o raio X: P de um.
+
+Quantas você acertou? Seis falsas e três verdadeiras. Agora, cinco questões inéditas. Em todas: escolha a ferramenta, resolva e confira.
+
+Questão um. Um reservatório em forma de bloco tem base quadrada de lado x metros e altura x mais um metros. Seu volume é doze metros cúbicos. O lado da base mede: A, três metros. B, quatro metros. C, dois metros. D, seis metros. E, doze metros. Pause e tente.
+
+Qual frase resolve? Testar a raiz e depois baixar o grau. x ao quadrado vezes x mais um, igual a doze: x ao cubo mais x ao quadrado menos doze, igual a zero. Teste o dois: oito mais quatro menos doze, zero. Na esteira, um, um, zero, menos doze, com o dois: sobra x ao quadrado mais três x mais seis, com delta negativo. Não há outra raiz real. Letra C! A A é a altura, a B é a área da base, a D leu um coeficiente como raiz, e a E tomou o termo independente.
+
+Questão dois. O resto da divisão de x à quarta menos três x ao quadrado mais x mais dois por x mais dois é: A, quatro. B, oito. C, dois. D, um. E, menos vinte. Pause e tente.
+
+Qual frase resolve? O resto é P da raiz do divisor. E x mais dois zera em menos dois. P de menos dois: dezesseis, menos doze, menos dois, mais dois: quatro. Na esteira, com o zero do x ao cubo: um, menos dois, um, menos um e resto quatro. Letra A! A B usou P de dois. A C é P de zero, a D é P de um, e a E esqueceu o zero na esteira.
+
+Questão três. As arestas de uma caixa, em centímetros, são as raízes de x ao cubo menos nove x ao quadrado mais vinte e seis x menos vinte e quatro. A área total da caixa, em centímetros quadrados, é: A, nove. B, vinte e quatro. C, vinte e seis. D, trinta e seis. E, cinquenta e dois. Pause e tente.
+
+Aqui não é nenhuma das três frases: é o hábito três, Girard. Nem resolva. A área total soma dois de cada face: o dobro da soma dos produtos dois a dois. Pelo menos, mais, menos, essa soma é vinte e seis. Dobrando, cinquenta e dois. Conferindo: as arestas são dois, três e quatro, e seis mais oito mais doze dá vinte e seis. Letra E! A C esqueceu de dobrar. A B é o volume, a A é a soma das arestas, e a D é o comprimento de todas as doze arestas.
+
+Questão quatro. Um polinômio de grau três apenas toca o eixo horizontal em x igual a um, atravessa esse eixo em x igual a menos três e corta o eixo vertical em zero, menos seis. A lei é: A, B, C, D ou E. Estão na tela. Pause e tente.
+
+Qual frase resolve? A raiz vira fator, e o hábito quatro: P de zero. Toca em um: a bola quica, x menos um, ao quadrado. Atravessa em menos três: x mais três. E falta o a na frente. P de zero: a vezes um vezes três, três a, igual a menos seis. Então a é menos dois. Letra E! A A esqueceu o coeficiente dominante. A B trocou os sinais das raízes, a C inverteu as multiplicidades, e a D errou o sinal do a.
+
+E a questão cinco. Um polinômio de grau três, com coeficientes reais e coeficiente dominante um, tem raízes um e dois i. Lembrando: i ao quadrado é menos um. Ele é: A, B, C, D ou E, na tela. Pause e tente.
+
+Qual frase resolve? Raiz vira fator, e o par de meias: se dois i é raiz, menos dois i também é. Dois i vezes menos dois i: menos quatro i ao quadrado, que dá mais quatro. Fica x ao quadrado mais quatro. Vezes x menos um: x ao cubo menos x ao quadrado mais quatro x menos quatro. Letra A! A B fez i ao quadrado igual a um. A C trocou o sinal da raiz um, a D esqueceu a raiz um, e a E esqueceu o conjugado.
+
+O checklist. Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada. Grau, P de zero, P de um, identidade e modelagem: episódio um. Divisão, Briot-Ruffini e restos: episódio dois.
+
+Forma fatorada, candidatas e redução de grau: episódio três. Girard, gráfico e conjugadas: episódio quatro. O que você não marcou, reveja o episódio correspondente.
+
+E a meta. Resolva vinte e cinco questões e acerte pelo menos dezoito. Com pelo menos cinco de modelagem ou leitura de gráfico.
+
+O próximo assunto é Números complexos, que explica de vez as raízes não reais que apareceram aqui, como um menos i e dois i.
+
+Se essa série te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual pegadinha te pegou? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. A série de polinômios está completa. Bons estudos, e até a próxima aula aqui no Estudativo.

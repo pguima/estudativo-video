@@ -1,0 +1,63 @@
+Uma máquina faz oitenta decibéis. Ligue outra igual ao lado. O barulho vai para cento e sessenta decibéis? Não: vai para cerca de oitenta e três. Para chegar a noventa decibéis, você precisaria de dez máquinas.
+
+Este é o quarto episódio da série de Função logarítmica. Ao final, você vai calcular decibéis, comparar dois sons em quantas vezes e somar fontes sonoras sem cair na pegadinha.
+
+Três lembretes rápidos. Da série de Logaritmos: log de dez elevado a n é n. E dez vezes log de dois dá cerca de três. Do episódio dois: a razão entre duas grandezas é dez elevado à diferença das leituras. E, de Notação científica: dividir potências de dez é subtrair os expoentes.
+
+Pense em quatro lugares. Uma biblioteca, quase silêncio. Uma avenida movimentada. Uma britadeira furando a calçada. E uma oficina cheia de máquinas. Cada coisa que faz barulho é uma fonte sonora. E a pergunta é: como dar um número para quão alto é cada som?
+
+Primeiro, três nomes. Intensidade sonora é a força do som que chega a cada pedaço do espaço. Ela se mede em watt por metro quadrado. O limiar da audição é o som mais fraco que a gente consegue ouvir: dez elevado a menos doze watt por metro quadrado. E o limiar da dor é o som tão forte que dói.
+
+E como vira número? O nível sonoro é a etiqueta do som, medida em decibéis. Beta igual a dez vezes log de I sobre I zero. Um som de dez elevado a menos cinco. Divida pelo limiar: menos cinco menos menos doze dá sete. Dez elevado a sete. Log disso é sete. Vezes dez: setenta decibéis.
+
+Atalho para calcular decibéis. Conte quantos degraus de dez a intensidade está acima do limiar. De menos doze até menos cinco, sete degraus. Ponha um zero no final: setenta decibéis.
+
+Por que usar log aqui? Do limiar da audição ao limiar da dor, a intensidade cresce um trilhão de vezes. Mas a escala vai só de zero a cento e vinte decibéis. O log encolhe o trilhão. E um número para guardar: as normas trabalhistas brasileiras fixam oitenta e cinco decibéis como limite para oito horas sem proteção.
+
+O que acontece quando o medidor sobe? Mais dez decibéis: intensidade vezes dez. Mais vinte: vezes cem. Mais quarenta: vezes dez mil. Cada dez decibéis é um zero a mais na intensidade.
+
+E mais três decibéis? Dez vezes log de dois dá cerca de três. Então mais três decibéis é intensidade vezes dois, aproximadamente. Dobrar o som soma só três na etiqueta.
+
+Um som de noventa decibéis é quantas vezes mais intenso que um de sessenta? Primeiro, a diferença: trinta decibéis. Agora, divida por dez, o número que está na frente do log. Dá três. E eleve dez a isso: mil vezes.
+
+Atalho para comparar. É a regra do episódio dois, com um detalhe: o dez da fórmula come um zero da diferença. Trinta vira três. Quarenta vira quatro. Sempre divida por dez antes de elevar.
+
+E duas máquinas juntas? Pense num balde. Cada máquina despeja um copo de intensidade. Intensidades se somam, como copos de água no balde. O decibel não é a água: é só a etiqueta do balde. Dois copos iguais dobram a água. E dobrar soma cerca de três: de oitenta para perto de oitenta e três.
+
+E para a etiqueta subir dez? A intensidade precisa ficar dez vezes maior. Então são dez copos. Dez fontes iguais. Só com o décimo copo o medidor sai de oitenta e chega a noventa.
+
+Atalho para fontes iguais. Conte as fontes como copos. Duas fontes: mais três decibéis. Dez fontes: mais dez decibéis. Nunca some as etiquetas.
+
+Sua vez. Um som de intensidade dez elevado a menos seis watt por metro quadrado tem quantos decibéis? Pause e tente.
+
+Vamos juntos. Divida pelo limiar: dez elevado a menos seis, sobre dez elevado a menos doze. Subtraia os expoentes: dez elevado a seis. Log disso é seis. Vezes dez: sessenta decibéis. Pelo atalho: seis degraus acima do limiar, ponha um zero.
+
+Vamos guardar em três frases. Um: cada dez decibéis a mais, intensidade vezes dez. Dois: para comparar, divida a diferença por dez e eleve dez ao resultado. Três: intensidades se somam; decibéis, não: dobrar a intensidade soma cerca de três decibéis.
+
+Agora, os dois erros clássicos. Primeiro: achar que um decibel a mais é intensidade vezes dez. Parece certo, porque o log conta zeros, e cada degrau parece valer um zero. Mas o dez da fórmula espalha cada zero por dez decibéis. Dobrar já pede três. Vezes dez pede dez decibéis.
+
+Segundo: oitenta mais oitenta igual a cento e sessenta. Parece certo, porque duas máquinas somam barulho. E somam mesmo, mas somam intensidade, não etiqueta. A intensidade dobra, e o nível vai para cerca de oitenta e três.
+
+Agora, questões no estilo do ENEM. Esta, eu faço. O nível sonoro beta é dado por dez vezes log de I sobre I zero, com I zero igual a dez elevado a menos doze. Perto de uma britadeira, mediu-se dez elevado a menos quatro watt por metro quadrado. O nível sonoro é: A: menos quarenta. B: oito. C: oitenta. D: cento e vinte. E: cento e sessenta decibéis.
+
+Qual dos cálculos é? Calcular decibéis. Divida pelo limiar: menos quatro menos menos doze dá oito. Dez elevado a oito. Log disso é oito. Vezes dez: oitenta decibéis. Letra C! E repare: oitenta está abaixo dos oitenta e cinco, mas bem perto do limite.
+
+E as armadilhas? A A esquece de dividir por I zero. A B esquece o dez da fórmula. A D usa só o expoente do limiar: dez vezes doze. E a E soma os expoentes, quatro mais doze, em vez de subtrair.
+
+Esta, a gente faz junto. Numa avenida movimentada, mediu-se oitenta decibéis. Numa biblioteca, quarenta. A intensidade na avenida, em relação à da biblioteca, é: A: duas vezes maior. B: quatro vezes. C: quarenta vezes. D: dez mil vezes. E: dez elevado a quarenta vezes. Pause o vídeo e tente.
+
+Vamos juntos. É comparar. A diferença: quarenta decibéis. Divida por dez: quatro. Eleve dez a quatro: dez mil vezes. Letra D!
+
+E as armadilhas? A A divide os níveis, oitenta por quarenta. A B para no quatro e esquece de elevar dez. A C usa a diferença como resposta. E a E esquece de dividir por dez.
+
+E esta você faz. Numa oficina, uma máquina produz setenta decibéis. O dono quer instalar outras máquinas idênticas, para que todas juntas produzam oitenta. As intensidades de fontes iguais se somam. O número total de máquinas deve ser: A: duas. B: quatro. C: oito. D: dez. E: onze. Pause o vídeo e tente.
+
+Vamos conferir. De setenta para oitenta, mais dez decibéis. Mais dez é intensidade vezes dez. Como os copos se somam, são dez máquinas no total. Letra D!
+
+E as armadilhas? A A acha que dobrar soma dez. Com duas, seriam só setenta e três. A B supõe que cada máquina extra soma três. A C divide oitenta por dez. E a E pensa em dez a mais, esquecendo que a primeira já conta. Com onze, cerca de oitenta vírgula quatro.
+
+Para fechar, as mesmas três frases. Um: cada dez decibéis a mais, intensidade vezes dez. Dois: para comparar, divida a diferença por dez e eleve dez ao resultado. Três: intensidades se somam; decibéis, não: dobrar a intensidade soma cerca de três decibéis.
+
+No último episódio deste assunto, juntamos pH, terremotos e decibéis, caçamos as pegadinhas e treinamos com questões de Química, Física e Geografia.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual é o lugar mais barulhento que você frequenta? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

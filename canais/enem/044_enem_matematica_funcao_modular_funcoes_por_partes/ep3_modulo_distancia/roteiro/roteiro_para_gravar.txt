@@ -1,0 +1,69 @@
+Módulo de menos três mais módulo de três dá seis. Módulo de menos três mais três dá zero. As mesmas barrinhas, os mesmos números, resultados diferentes. Hoje você entende por quê, e ganha um gráfico em forma de V de presente.
+
+Este é o terceiro episódio da série de Função modular e funções por partes. Ao final, você vai calcular módulos, achar o vértice de qualquer V e contar soluções olhando um gráfico rebatido.
+
+Dois lembretes rápidos. Da série de Operações: os negativos ficam à esquerda do zero, e menos de menos sete é sete. Da série de Função quadrática: a parábola x ao quadrado menos quatro corta o eixo x em menos dois e dois, com o vértice, o ponto mais baixo, em zero, menos quatro.
+
+Imagine uma régua no chão, com o zero no meio. Uma pessoa está no menos três; outra, no três. As duas caminham até o zero. Cada uma dá três passos. E entre menos quatro graus e nove graus? O termômetro andou treze graus. Distância não tem sinal.
+
+Então, o que é o módulo? A reta numérica é essa régua: os números em ordem. O módulo, ou valor absoluto, é a distância do número até o zero. Escreve-se com duas barrinhas. Módulo de menos três é três. Módulo é distância até o zero: distância nunca é negativa.
+
+E a regra escrita? Se x é zero ou positivo, o módulo é o próprio x. Se x é negativo, o módulo é menos x. Teste com menos sete: menos de menos sete dá sete. O módulo só apaga o sinal.
+
+E a distância entre dois pontos? É o módulo da diferença: módulo de a menos b. Entre menos dois e quatro: quatro menos menos dois, seis. Na outra ordem, menos seis, e o módulo devolve seis. A ordem não importa.
+
+Vamos treinar. Módulo de cinco menos nove: primeiro a conta de dentro, menos quatro. Módulo: quatro. Módulo de nove menos cinco: quatro também. Módulo de menos três mais módulo de três: seis. E módulo de menos três mais três: dentro dá zero, módulo zero. Esse é o gancho resolvido.
+
+Atalho para nunca errar um módulo. Primeiro, faça a conta de dentro das barrinhas. Depois, tire o sinal do resultado. Nessa ordem, sempre.
+
+E quando aparece uma letra? Módulo de menos x é igual a x? Teste com x igual a menos cinco: o módulo dá cinco, que é menos x, não x. O certo: módulo de menos x é módulo de x. E, da série de Potenciação: raiz de x ao quadrado também é módulo de x. Raiz de vinte e cinco, cinco.
+
+E se o módulo virar uma função? f de x igual a módulo de x. Marque os pontos: menos dois vai em dois, menos um em um, zero em zero, um em um, dois em dois. Formou um V. O bico se chama vértice: onde o gráfico muda de direção. À direita, vale x; à esquerda, menos x. Como no episódio um: duas leis, um gráfico só.
+
+Para onde o V vai em módulo de x menos três? Um deslocamento é o gráfico mudando de lugar, sem mudar de forma. O de dentro zera quando x é três. O V anda três para a direita. O sinal engana. Em módulo de x mais dois, zera em menos dois: o V vai para a esquerda.
+
+E o número de fora? Módulo de x mais um: o V sobe um. Duas vezes módulo de x: o V fecha. E menos módulo de x: o V fica de cabeça para baixo.
+
+Onde fica o vértice de módulo de x menos a, mais b? No ponto a, b. O a zera o de dentro; o b é o número de fora. O vértice é o ponto de mínimo, o mais baixo do gráfico: o módulo nunca fica abaixo de zero, então y nunca fica abaixo de b. Por isso, a imagem, o que sai, vai de b até o infinito.
+
+Atalho para o vértice. Zere o de dentro: é o x do vértice. O número de fora é o y. Módulo de x menos cinco, mais dois: vértice em cinco, dois.
+
+E se o módulo abraçar uma função inteira? Pense num espelho no chão, o eixo x. O que está acima fica. O que está abaixo é rebatido, espelhado para cima: a altura menos três vira três.
+
+Vamos rebater a parábola x ao quadrado menos quatro. Ela é negativa entre menos dois e dois. Esse trecho dobra para cima, como papel. O vértice zero, menos quatro vira zero, quatro: um máximo local, o mais alto daquele pedaço. E as raízes não saem do lugar: módulo de zero é zero.
+
+Quantas soluções tem módulo de x ao quadrado menos quatro igual a k? Passe uma régua horizontal na altura k. Com k negativo, nenhum corte. Em zero, dois. Em k igual a um, quatro: dois no arco do meio, um em cada perna. Vale para todo k entre zero e quatro. Em quatro, a régua encosta no topo: três. Acima de quatro, dois.
+
+Atalho para contar soluções sem conta nenhuma. Desenhe o gráfico rebatido. Passe a régua horizontal na altura pedida. Conte os cortes. Cada corte é uma solução.
+
+Sua vez. Onde fica o vértice de y igual a módulo de x mais um, menos três? E em que valores de x o gráfico corta o eixo x? Pause e tente.
+
+Vamos juntos. Zere o de dentro: x igual a menos um. O de fora é menos três. Vértice: menos um, menos três. Cortar o eixo x é ter y zero: módulo de x mais um igual a três. x está a três passos do menos um. Para a direita, dois; para a esquerda, menos quatro.
+
+Vamos guardar em três frases. Um: módulo é distância: nunca é negativo. Dois: o vértice mora onde o de dentro zera. Três: módulo de f de x: acima fica, abaixo rebate.
+
+Agora, os três erros clássicos. Primeiro: achar que módulo de x menos três leva o V para a esquerda. Parece certo, porque o menos lembra a esquerda. Mas o vértice mora onde o de dentro zera: em três, à direita.
+
+Segundo: achar que módulo de a mais b é sempre a soma dos módulos. Parece certo, porque com dois positivos funciona. Mas módulo de menos três mais três é zero, e a soma dos módulos dá seis.
+
+Terceiro: raiz de x ao quadrado igual a x. Parece certo, porque a raiz desfaz o quadrado. Mas com menos cinco, a raiz de vinte e cinco dá cinco. O certo é módulo de x.
+
+Agora, uma questão no estilo do ENEM. Esta, eu faço com você. O perfil de uma calha é f de x igual a módulo de x menos dois, menos um, em metros. O ponto mais baixo do gráfico e os valores de x em que f de x é zero são: A: dois, menos um; um e três. B: menos dois, menos um; menos três e menos um. C: dois, um; não há. D: menos dois, um; um e três. E: dois, menos um; menos um e três. Pause o vídeo e tente.
+
+Vamos lá. O ponto mais baixo é o vértice. Zere o de dentro: dois. O de fora: menos um. Vértice: dois, menos um. Os zeros: módulo de x menos dois igual a um. x está a um passo do dois: um ou três. Confira: f de um e f de três dão zero. Letra A!
+
+E as armadilhas? A B lê o menos dois como esquerda. A C troca o sinal do menos um e põe o V acima do eixo, sem zeros. A D erra o vértice nos dois sinais, com os zeros certos. E a E erra a conta: x menos dois igual a menos um dá um, não menos um.
+
+Agora é com você. O gráfico de g de x igual a módulo de x ao quadrado menos quatro sai da parábola x ao quadrado menos quatro, refletindo para cima o trecho abaixo do eixo. Quantos números reais x fazem g de x igual a três? A: nenhum. B: um. C: dois. D: três. E: quatro. Pause o vídeo e tente.
+
+Vamos conferir, por dois caminhos. Pela conta: o de dentro vale três ou menos três. x ao quadrado menos quatro igual a três: x ao quadrado é sete, mais ou menos raiz de sete. Igual a menos três: x ao quadrado é um, mais ou menos um. Quatro soluções.
+
+Agora pelo gráfico. O topo do arco rebatido está em zero, quatro. A régua em três passa abaixo do topo. Corta o arco do meio duas vezes, em menos um e um, e cada perna uma vez, perto de dois vírgula seis cinco. Quatro cortes. Letra E!
+
+E as armadilhas? A C, dois, resolve só o caso igual a três. A D, três, seria a resposta de g de x igual a quatro, com a régua no topo. A B, um, fica só com raiz de sete, esquecendo o mais ou menos e o outro caso. E a A, nenhum, acha que o módulo impede a igualdade, o que só vale com número negativo do outro lado.
+
+Para fechar, as mesmas três frases. Um: módulo é distância: nunca é negativo. Dois: o vértice mora onde o de dentro zera. Três: módulo de f de x: acima fica, abaixo rebate.
+
+Um pacote de café de quinhentos gramas pode variar no máximo oito gramas. Como se escreve isso com as duas barrinhas? E por que módulo de x igual a cinco tem duas respostas? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: em que outra situação do dia a dia o que importa é a distância, e não o sinal? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

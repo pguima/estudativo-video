@@ -1,0 +1,1065 @@
+<title>Produtos Notáveis</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 1 de 18</p>
+    <h1>Expressões algébricas e produtos notáveis</h1>
+    <p class="deck">Letras no lugar de números não são enfeite: são o jeito de escrever uma regra que vale para qualquer valor. Este assunto ensina a traduzir frases em expressões, a operar com elas sem errar sinal e a reconhecer os produtos notáveis, que encurtam contas e desmontam o erro mais famoso da álgebra.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Quadrado de lado a mais b dividido em quatro partes: um quadrado a ao quadrado, dois retângulos a vezes b e um quadrado b ao quadrado; por isso a mais b ao quadrado é igual a a ao quadrado mais 2ab mais b ao quadrado">
+  <rect x="22" y="40" width="84" height="84" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="64" y="87" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">a²</text>
+  <rect x="106" y="40" width="56" height="84" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="134" y="87" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:15px">ab</text>
+  <rect x="22" y="124" width="84" height="56" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="64" y="157" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:15px">ab</text>
+  <rect x="106" y="124" width="56" height="56" rx="0" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <text x="134" y="157" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">b²</text>
+  <text x="64" y="31" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">a</text>
+  <text x="134" y="31" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">b</text>
+  <text x="13" y="86" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">a</text>
+  <text x="13" y="156" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">b</text>
+  <text x="230" y="82" text-anchor="middle" class="svg-ttl" style="fill:var(--c5);font-size:16px">(a + b)²</text>
+  <text x="230" y="108" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">=</text>
+  <text x="230" y="134" text-anchor="middle" class="svg-num" style="fill:var(--ink)">a² + 2ab + b²</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a área é a soma das quatro partes</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>5 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Operações e conjuntos numéricos · Potenciação e radiciação</dd></div>
+      <div><dt>Destrava</dt><dd>Equações do 1º e do 2º grau, funções, áreas e volumes</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A prova quase nunca pede “fatore” ou “desenvolva”. Ela pede que você <strong>use</strong> a álgebra para resolver um problema concreto. As formas mais comuns:</p>
+<ul>
+  <li><strong>Modelar:</strong> escrever a expressão do custo de uma corrida, da área de um terreno ampliado, do volume de uma caixa recortada de uma folha.</li>
+  <li><strong>Comparar expressões:</strong> decidir qual alternativa é equivalente à expressão do enunciado, muitas vezes com distratores feitos do erro <span class="m">(<span class="v">a</span> + <span class="v">b</span>)² = <span class="v">a</span>² + <span class="v">b</span>²</span>.</li>
+  <li><strong>Calcular sem calculadora:</strong> produtos como <span class="m">1 003 · 997</span> ou diferenças como <span class="m">65² − 35²</span> saem de cabeça com produtos notáveis.</li>
+  <li><strong>Simplificar antes de calcular:</strong> uma fração algébrica fatorada vira uma conta de uma linha.</li>
+</ul>
+<p>Além disso, este é o idioma de todo o resto do bloco. Equações, funções, progressões e geometria analítica são escritas com as ferramentas desta página.</p>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas habilidades. Primeiro, <strong>traduzir o enunciado com cuidado</strong>: “o dobro da soma” e “a soma do dobro” são expressões diferentes. Segundo, <strong>lembrar do termo do meio</strong>: <span class="m">(<span class="v">a</span> + <span class="v">b</span>)²</span> tem <span class="m">2<span class="v">ab</span></span>, sempre. Quem domina essas duas escapa de quase todos os distratores do assunto.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Linguagem algébrica e valor numérico</h2>
+<div class="box def">
+  <span class="tag">Vocabulário mínimo</span>
+  <p>Uma <strong>expressão algébrica</strong> combina números, letras (as <strong>variáveis</strong>) e operações. Cada parcela separada por + ou − é um <strong>termo</strong>. Em <span class="m">−5<span class="v">x</span>²</span>, o <strong>coeficiente</strong> é −5 e a <strong>parte literal</strong> é <span class="m"><span class="v">x</span>²</span>. Termos com a mesma parte literal são <strong>semelhantes</strong> e só eles podem ser somados.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Frase</th><th>Expressão</th><th>Atenção</th></tr></thead>
+  <tbody>
+    <tr><td>o dobro de um número, aumentado de 3</td><td class="m">2<span class="v">x</span> + 3</td><td>primeiro dobra, depois soma</td></tr>
+    <tr><td>o dobro da soma de um número com 3</td><td class="m">2(<span class="v">x</span> + 3)</td><td>a soma vem antes: parênteses</td></tr>
+    <tr><td>o quadrado de um número, menos 1</td><td class="m"><span class="v">x</span>² − 1</td><td>diferente de <span class="m">(<span class="v">x</span> − 1)²</span></td></tr>
+    <tr><td>a metade de um número somada a seu triplo</td><td class="m"><span class="frac"><i><span class="v">x</span></i><i>2</i></span> + 3<span class="v">x</span></td><td>dois termos semelhantes</td></tr>
+    <tr><td>dois números consecutivos</td><td class="m"><span class="v">n</span> e <span class="v">n</span> + 1</td><td>pares consecutivos: <span class="m">2<span class="v">n</span></span> e <span class="m">2<span class="v">n</span> + 2</span></td></tr>
+    <tr><td>R$ 6,00 fixos mais R$ 2,50 por km</td><td class="m">6 + 2,5<span class="v">x</span></td><td>parte fixa + parte que varia</td></tr>
+  </tbody>
+</table>
+</div>
+<p>O <strong>valor numérico</strong> é o resultado de substituir as letras por números. Para <span class="m">3<span class="v">x</span>² − 2<span class="v">x</span> + 1</span> com <span class="m"><span class="v">x</span> = −2</span>:</p>
+<div class="eq">
+  <p class="m">3 · (−2)² − 2 · (−2) + 1 = 3 · 4 + 4 + 1 = <strong>17</strong></p>
+</div>
+<div class="box warn">
+  <span class="tag">Sempre com parênteses ao substituir um negativo</span>
+  <p><span class="m">(−2)² = 4</span>, mas <span class="m">−2² = −4</span>: no segundo, o expoente atinge só o 2. Substituir <span class="m"><span class="v">x</span></span> por <span class="m">(−2)</span>, com parênteses, evita o erro de sinal mais comum do assunto.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Operações com polinômios</h2>
+<p>Um <strong>polinômio</strong> é uma soma de termos com expoentes naturais, como <span class="m">2<span class="v">x</span>² − 5<span class="v">x</span> − 12</span>. As operações seguem duas regras que você já conhece dos números.</p>
+<div class="eq">
+  <span class="lbl">1 · Somar e subtrair: só termos semelhantes</span>
+  <p class="m">3<span class="v">x</span>² + 2<span class="v">x</span> − <span class="v">x</span>² + 5<span class="v">x</span> = (3 − 1)<span class="v">x</span>² + (2 + 5)<span class="v">x</span> = <strong>2<span class="v">x</span>² + 7<span class="v">x</span></strong></p>
+  <p><span class="m">2<span class="v">x</span>² + 7<span class="v">x</span></span> não se junta num termo só: <span class="m"><span class="v">x</span>²</span> e <span class="m"><span class="v">x</span></span> não são semelhantes.</p>
+</div>
+<div class="eq">
+  <span class="lbl">2 · Multiplicar: distributiva, todos com todos</span>
+  <p class="m">(2<span class="v">x</span> + 3)(<span class="v">x</span> − 4) = 2<span class="v">x</span>² − 8<span class="v">x</span> + 3<span class="v">x</span> − 12 = <strong>2<span class="v">x</span>² − 5<span class="v">x</span> − 12</strong></p>
+  <p>Cada termo do primeiro parêntese multiplica cada termo do segundo: são 2 × 2 = 4 produtos antes de reduzir.</p>
+</div>
+<div class="box warn">
+  <span class="tag">O sinal de menos antes do parêntese</span>
+  <p>Um “−” antes de parênteses troca o sinal de <strong>todos</strong> os termos de dentro: <span class="m">5 − (<span class="v">x</span> − 3) = 5 − <span class="v">x</span> + 3 = 8 − <span class="v">x</span></span>. Trocar só o primeiro termo é erro frequente e silencioso.</p>
+</div>
+<p>Nas potências, valem as regras de <strong>Potenciação e radiciação</strong>: <span class="m"><span class="v">x</span>² · <span class="v">x</span>³ = <span class="v">x</span>⁵</span> (soma os expoentes) e <span class="m">(3<span class="v">x</span>)² = 9<span class="v">x</span>²</span> (o expoente atinge o coeficiente também).</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Produtos notáveis</h2>
+<p>Alguns produtos aparecem tanto que vale guardar o resultado pronto. Os três primeiros são obrigatórios; o cubo aparece menos, mas cai.</p>
+<div class="eq">
+  <span class="lbl">Quadrado da soma</span>
+  <p class="m">(<span class="v">a</span> + <span class="v">b</span>)² = <span class="v">a</span>² + 2<span class="v">ab</span> + <span class="v">b</span>²</p>
+  <p>“O quadrado do primeiro, mais duas vezes o primeiro pelo segundo, mais o quadrado do segundo.”</p>
+</div>
+<div class="eq">
+  <span class="lbl">Quadrado da diferença</span>
+  <p class="m">(<span class="v">a</span> − <span class="v">b</span>)² = <span class="v">a</span>² − 2<span class="v">ab</span> + <span class="v">b</span>²</p>
+  <p>Só o termo do meio muda de sinal. O <span class="m"><span class="v">b</span>²</span> continua positivo.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Produto da soma pela diferença</span>
+  <p class="m">(<span class="v">a</span> + <span class="v">b</span>)(<span class="v">a</span> − <span class="v">b</span>) = <span class="v">a</span>² − <span class="v">b</span>²</p>
+  <p>Os termos do meio, <span class="m">−<span class="v">ab</span></span> e <span class="m">+<span class="v">ab</span></span>, se cancelam.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Cubo da soma e da diferença</span>
+  <p class="m">(<span class="v">a</span> + <span class="v">b</span>)³ = <span class="v">a</span>³ + 3<span class="v">a</span>²<span class="v">b</span> + 3<span class="v">a</span><span class="v">b</span>² + <span class="v">b</span>³</p>
+  <p class="m">(<span class="v">a</span> − <span class="v">b</span>)³ = <span class="v">a</span>³ − 3<span class="v">a</span>²<span class="v">b</span> + 3<span class="v">a</span><span class="v">b</span>² − <span class="v">b</span>³</p>
+</div>
+<p>O desenho do cabeçalho mostra por que o quadrado da soma tem quatro partes: um quadrado de lado <span class="m"><span class="v">a</span> + <span class="v">b</span></span> se divide em <span class="m"><span class="v">a</span>²</span>, <span class="m"><span class="v">b</span>²</span> e <strong>dois</strong> retângulos <span class="m"><span class="v">a</span> · <span class="v">b</span></span>. Exemplos no formato que a prova usa:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Produto</th><th>Desenvolvido</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td class="m">(<span class="v">x</span> + 5)²</td><td class="m"><span class="v">x</span>² + 10<span class="v">x</span> + 25</td><td><span class="m">2 · <span class="v">x</span> · 5 = 10<span class="v">x</span></span></td></tr>
+    <tr><td class="m">(2<span class="v">x</span> − 3)²</td><td class="m">4<span class="v">x</span>² − 12<span class="v">x</span> + 9</td><td><span class="m">(2<span class="v">x</span>)² = 4<span class="v">x</span>²</span> e <span class="m">2 · 2<span class="v">x</span> · 3 = 12<span class="v">x</span></span></td></tr>
+    <tr><td class="m">(<span class="v">x</span> + 7)(<span class="v">x</span> − 7)</td><td class="m"><span class="v">x</span>² − 49</td><td>soma pela diferença</td></tr>
+    <tr><td class="m">(1 + <span class="v">i</span>)²</td><td class="m">1 + 2<span class="v">i</span> + <span class="v">i</span>²</td><td>juros compostos de dois períodos</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O erro mais famoso da álgebra</h2>
+<p>Escrever <span class="m">(<span class="v">a</span> + <span class="v">b</span>)² = <span class="v">a</span>² + <span class="v">b</span>²</span> é tão comum que tem apelido: o “sonho do calouro”. O ENEM sabe disso e coloca o resultado errado entre as alternativas.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="À esquerda, um quadrado de lado 3 mais 4 formado por 49 quadradinhos: 9 mais 12 mais 12 mais 16. À direita, só os quadrados de 9 e 16, que somam 25. Faltam os dois retângulos de 12, isto é, 2 vezes 3 vezes 4 igual a 24">
+  <rect x="40" y="24" width="54" height="54" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <line x1="58" y1="24" x2="58" y2="78" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="76" y1="24" x2="76" y2="78" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="40" y1="42" x2="94" y2="42" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="40" y1="60" x2="94" y2="60" style="stroke:var(--c1-line);stroke-width:1"/>
+  <text x="67" y="56" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">9</text>
+  <rect x="94" y="24" width="72" height="54" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <line x1="112" y1="24" x2="112" y2="78" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="130" y1="24" x2="130" y2="78" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="148" y1="24" x2="148" y2="78" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="94" y1="42" x2="166" y2="42" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="94" y1="60" x2="166" y2="60" style="stroke:var(--c2-line);stroke-width:1"/>
+  <text x="130" y="56" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">12</text>
+  <rect x="40" y="78" width="54" height="72" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <line x1="58" y1="78" x2="58" y2="150" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="76" y1="78" x2="76" y2="150" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="40" y1="96" x2="94" y2="96" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="40" y1="114" x2="94" y2="114" style="stroke:var(--c2-line);stroke-width:1"/>
+  <line x1="40" y1="132" x2="94" y2="132" style="stroke:var(--c2-line);stroke-width:1"/>
+  <text x="67" y="119" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-size:14px">12</text>
+  <rect x="94" y="78" width="72" height="72" rx="0" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <line x1="112" y1="78" x2="112" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="130" y1="78" x2="130" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="148" y1="78" x2="148" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="94" y1="96" x2="166" y2="96" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="94" y1="114" x2="166" y2="114" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="94" y1="132" x2="166" y2="132" style="stroke:var(--c3-line);stroke-width:1"/>
+  <text x="130" y="119" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:14px">16</text>
+  <text x="103" y="172" text-anchor="middle" class="svg-num" style="fill:var(--ink)">(3 + 4)² = 49</text>
+  <rect x="262" y="96" width="54" height="54" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <line x1="280" y1="96" x2="280" y2="150" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="298" y1="96" x2="298" y2="150" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="262" y1="114" x2="316" y2="114" style="stroke:var(--c1-line);stroke-width:1"/>
+  <line x1="262" y1="132" x2="316" y2="132" style="stroke:var(--c1-line);stroke-width:1"/>
+  <text x="289" y="128" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:14px">9</text>
+  <rect x="330" y="78" width="72" height="72" rx="0" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <line x1="348" y1="78" x2="348" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="366" y1="78" x2="366" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="384" y1="78" x2="384" y2="150" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="330" y1="96" x2="402" y2="96" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="330" y1="114" x2="402" y2="114" style="stroke:var(--c3-line);stroke-width:1"/>
+  <line x1="330" y1="132" x2="402" y2="132" style="stroke:var(--c3-line);stroke-width:1"/>
+  <text x="366" y="119" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:14px">16</text>
+  <text x="332" y="172" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3² + 4² = 25</text>
+  <text x="212" y="92" text-anchor="middle" class="svg-ttl" style="fill:var(--c4);font-size:26px">≠</text>
+  <text x="230" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">faltam os dois retângulos: 2 · 3 · 4 = 24</text>
+</svg>
+<figcaption><b>Com números, o erro fica visível.</b> Um quadrado de lado 3 + 4 tem 49 quadradinhos. Somando só <span class="m">3²</span> e <span class="m">4²</span>, sobram 25: ficaram de fora os dois retângulos de <span class="m">3 · 4</span>, que são exatamente o termo <span class="m">2<span class="v">ab</span></span>.</figcaption>
+</figure>
+<div class="box warn">
+  <span class="tag">Potência não se distribui na soma</span>
+  <p><span class="m">(<span class="v">a</span> · <span class="v">b</span>)² = <span class="v">a</span>² · <span class="v">b</span>²</span> está certo: na multiplicação, o expoente se distribui. Na soma, não: <span class="m">(<span class="v">a</span> + <span class="v">b</span>)² ≠ <span class="v">a</span>² + <span class="v">b</span>²</span>. O mesmo vale para raiz: <span class="m"><span class="rad"><i>9 + 16</i></span> = 5</span>, mas <span class="m"><span class="rad"><i>9</i></span> + <span class="rad"><i>16</i></span> = 7</span>.</p>
+</div>
+<div class="box def">
+  <span class="tag">O teste de 10 segundos</span>
+  <p>Na dúvida se duas expressões são equivalentes, <strong>substitua um número simples</strong> nas duas. Com <span class="m"><span class="v">a</span> = 1</span> e <span class="m"><span class="v">b</span> = 2</span>: <span class="m">(1 + 2)² = 9</span>, mas <span class="m">1² + 2² = 5</span>. Resultados diferentes provam que as expressões não são iguais. Use valores como 2 ou 3; evite 0 e 1 sozinhos, que escondem diferenças (<span class="m">1² = 1</span>).</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Fatoração: o caminho de volta</h2>
+<p><strong>Fatorar</strong> é escrever uma soma como produto. É o caminho inverso do produto notável, e serve para simplificar frações, resolver equações e fazer contas de cabeça.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Caso</th><th>Como reconhecer</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Fator comum</strong></td><td>algo se repete em todos os termos</td><td class="m">6<span class="v">x</span>² + 9<span class="v">x</span> = 3<span class="v">x</span>(2<span class="v">x</span> + 3)</td></tr>
+    <tr><td><strong>Agrupamento</strong></td><td>quatro termos, fator comum aos pares</td><td class="m"><span class="v">ax</span> + 3<span class="v">a</span> + 2<span class="v">x</span> + 6 = (<span class="v">a</span> + 2)(<span class="v">x</span> + 3)</td></tr>
+    <tr><td><strong>Diferença de quadrados</strong></td><td>dois quadrados com sinal −</td><td class="m"><span class="v">x</span>² − 25 = (<span class="v">x</span> + 5)(<span class="v">x</span> − 5)</td></tr>
+    <tr><td><strong>Trinômio quadrado perfeito</strong></td><td>dois quadrados e o “dobro do produto”</td><td class="m">4<span class="v">x</span>² + 12<span class="v">x</span> + 9 = (2<span class="v">x</span> + 3)²</td></tr>
+    <tr><td><strong>Trinômio soma e produto</strong></td><td><span class="m"><span class="v">x</span>² + <span class="v">S</span><span class="v">x</span> + <span class="v">P</span></span>: dois números de soma <span class="v">S</span> e produto <span class="v">P</span></td><td class="m"><span class="v">x</span>² + 5<span class="v">x</span> + 6 = (<span class="v">x</span> + 2)(<span class="v">x</span> + 3)</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Como saber se é trinômio quadrado perfeito</span>
+  <p>Tire a raiz dos termos das pontas e confira o do meio. Em <span class="m"><span class="v">x</span>² − 6<span class="v">x</span> + 9</span>: as raízes são <span class="m"><span class="v">x</span></span> e 3, e <span class="m">2 · <span class="v">x</span> · 3 = 6<span class="v">x</span></span> confere. Então <span class="m"><span class="v">x</span>² − 6<span class="v">x</span> + 9 = (<span class="v">x</span> − 3)²</span>. Se o termo do meio não bater, não é quadrado perfeito.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 220" role="img" aria-label="Diferença de quadrados por recorte: de um quadrado de lado a retira-se um quadrado de lado b; a figura em L que sobra é cortada em dois retângulos, 1 e 2, que, girado o retângulo 2, formam um retângulo de lados a mais b e a menos b">
+  <defs>
+    <marker id="ar19" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c5)"/></marker>
+  </defs>
+  <rect x="40" y="30" width="110" height="66" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <rect x="40" y="96" width="66" height="44" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <rect x="106" y="96" width="44" height="44" rx="0" style="fill:none;stroke:var(--ink-3);stroke-width:1.2;stroke-dasharray:4 3"/>
+  <text x="128" y="122" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">b²</text>
+  <text x="95" y="68" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">1</text>
+  <text x="73" y="123" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">2</text>
+  <text x="95" y="21" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">a</text>
+  <text x="28" y="89" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">a</text>
+  <text x="158" y="67" class="svg-lbl" style="fill:var(--ink-2)">a − b</text>
+  <text x="158" y="122" class="svg-lbl" style="fill:var(--ink-2)">b</text>
+  <text x="73" y="156" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">a − b</text>
+  <text x="95" y="186" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">a² − b²</text>
+  <rect x="286" y="64" width="110" height="66" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <rect x="396" y="64" width="44" height="66" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.5"/>
+  <text x="341" y="102" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">1</text>
+  <text x="418" y="102" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">2</text>
+  <text x="363" y="55" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">a + b</text>
+  <text x="278" y="101" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">a − b</text>
+  <text x="363" y="186" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">(a + b)(a − b)</text>
+  <line x1="184" y1="97" x2="230" y2="97" style="stroke:var(--c5);stroke-width:2" marker-end="url(#ar19)"/>
+  <text x="207" y="87" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-size:10px">gire 2</text>
+  <text x="230" y="210" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mesma área, escrita de outro jeito</text>
+</svg>
+<figcaption><b>Por que <span class="m"><span class="v">a</span>² − <span class="v">b</span>² = (<span class="v">a</span> + <span class="v">b</span>)(<span class="v">a</span> − <span class="v">b</span>)</span>.</b> Tirando um quadrado de lado <span class="m"><span class="v">b</span></span> de um quadrado de lado <span class="m"><span class="v">a</span></span>, sobra um L. Cortado em dois retângulos e remontado, o L vira um retângulo de lados <span class="m"><span class="v">a</span> + <span class="v">b</span></span> e <span class="m"><span class="v">a</span> − <span class="v">b</span></span>: mesma área, agora escrita como produto.</figcaption>
+</figure>
+<p>Comece sempre pelo <strong>fator comum</strong>. Depois veja se o que sobrou é um produto notável: <span class="m"><span class="v">x</span>³ − 4<span class="v">x</span> = <span class="v">x</span>(<span class="v">x</span>² − 4) = <span class="v">x</span>(<span class="v">x</span> + 2)(<span class="v">x</span> − 2)</span>.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Frações algébricas: simplificar só fatores</h2>
+<p>Uma fração algébrica se simplifica como uma fração numérica: <strong>fatore em cima e embaixo e corte fatores iguais</strong>.</p>
+<div class="eq">
+  <span class="lbl">Exemplo</span>
+  <p class="m"><span class="frac"><i><span class="v">x</span>² − 9</i><i><span class="v">x</span>² + 3<span class="v">x</span></i></span> = <span class="frac"><i>(<span class="v">x</span> + 3)(<span class="v">x</span> − 3)</i><i><span class="v">x</span>(<span class="v">x</span> + 3)</i></span> = <span class="frac"><i><span class="v">x</span> − 3</i><i><span class="v">x</span></i></span>, &nbsp;com <span class="v">x</span> ≠ 0 e <span class="v">x</span> ≠ −3</p>
+</div>
+<div class="box warn">
+  <span class="tag">Cortar termo é proibido</span>
+  <p>Em <span class="m"><span class="frac"><i><span class="v">x</span> + 3</i><i>3</i></span></span> não se corta o 3: ele é <strong>termo</strong> do numerador, não fator. Com <span class="m"><span class="v">x</span> = 6</span>: <span class="m"><span class="frac"><i>6 + 3</i><i>3</i></span> = 3</span>, e não 6. Só se cancela o que está <strong>multiplicando</strong> tudo em cima e tudo embaixo.</p>
+</div>
+<div class="box def">
+  <span class="tag">Condição de existência</span>
+  <p>O denominador não pode ser zero. Os valores que anulam o denominador <strong>original</strong> continuam proibidos mesmo depois da simplificação: em <span class="m"><span class="frac"><i><span class="v">x</span> − 3</i><i><span class="v">x</span></i></span></span> o −3 não zera nada, mas ele foi excluído antes de cortar.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Cálculo mental com produtos notáveis</h2>
+<p>Sem calculadora, os produtos notáveis viram atalhos de conta. A ideia é escrever os números perto de uma dezena, centena ou milhar redondos.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Conta</th><th>Reescrita</th><th>Resultado</th></tr></thead>
+  <tbody>
+    <tr><td class="m">101²</td><td class="m">(100 + 1)² = 10 000 + 200 + 1</td><td class="m"><strong>10 201</strong></td></tr>
+    <tr><td class="m">998²</td><td class="m">(1 000 − 2)² = 1 000 000 − 4 000 + 4</td><td class="m"><strong>996 004</strong></td></tr>
+    <tr><td class="m">49 · 51</td><td class="m">(50 − 1)(50 + 1) = 2 500 − 1</td><td class="m"><strong>2 499</strong></td></tr>
+    <tr><td class="m">87² − 13²</td><td class="m">(87 + 13)(87 − 13) = 100 · 74</td><td class="m"><strong>7 400</strong></td></tr>
+    <tr><td class="m">2 025² − 2 024²</td><td class="m">(2 025 + 2 024) · 1</td><td class="m"><strong>4 049</strong></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">O sinal de que existe atalho</span>
+  <p>Dois fatores à mesma distância de um número redondo (49 e 51, 997 e 1 003) pedem <strong>soma pela diferença</strong>. Uma diferença de dois quadrados grandes pede <span class="m">(<span class="v">a</span> + <span class="v">b</span>)(<span class="v">a</span> − <span class="v">b</span>)</span>. Se a conta direta parece longa demais para a prova, provavelmente há um produto notável escondido.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Teste as alternativas com um número</span>
+  <p>Quando a pergunta é “qual expressão é equivalente”, escolha um valor simples (<span class="m"><span class="v">x</span> = 2</span>), calcule a expressão do enunciado e calcule cada alternativa. A que bater é a resposta. Se duas baterem, teste um segundo valor. É mais rápido e mais seguro que desenvolver tudo.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Traduza uma frase de cada vez</span>
+  <p>Em enunciados longos, escreva cada informação como uma expressão separada (“corrida 1: <span class="m"><span class="v">x</span></span>”, “corrida 2: <span class="m"><span class="v">x</span> + 3</span>”, “bandeirada: 6 por corrida”) e só depois junte tudo. Montar a expressão inteira de uma vez é onde se perde um termo.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Procure o termo do meio nos distratores</span>
+  <p>Se uma alternativa é igual à correta sem o <span class="m">2<span class="v">ab</span></span>, ou com ele pela metade, ela foi feita para quem caiu no sonho do calouro. Reconhecer o distrator ajuda a confirmar a escolha certa.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Matemática Financeira</strong></td><td>montante de dois períodos: <span class="m"><span class="v">C</span>(1 + <span class="v">i</span>)²</span></td><td>10% ao mês por dois meses dá <span class="m">1,1² = 1,21</span>: 21%, não 20%. O 1% a mais é o <span class="m"><span class="v">i</span>²</span>.</td></tr>
+    <tr><td><strong>Física</strong></td><td>energia cinética <span class="m"><span class="frac"><i><span class="v">m</span><span class="v">v</span>²</i><i>2</i></span></span></td><td>dobrar a velocidade multiplica a energia por 4, porque <span class="m">(2<span class="v">v</span>)² = 4<span class="v">v</span>²</span></td></tr>
+    <tr><td><strong>Geometria</strong></td><td>áreas e volumes com medidas variáveis</td><td>aumentar o lado em <span class="m"><span class="v">k</span></span> acrescenta <span class="m">2<span class="v">k</span><span class="v">x</span> + <span class="v">k</span>²</span> à área do quadrado</td></tr>
+    <tr><td><strong>Equação do 2º grau</strong></td><td>completar quadrado e fatorar</td><td>a fórmula de Bhaskara nasce do quadrado da soma (próximos assuntos)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>O tema de juros compostos está em <strong>Juros compostos e montante</strong>, do bloco de Matemática Financeira; aqui basta perceber que o <span class="m"><span class="v">i</span>²</span> é o “juro sobre juro”.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">(a + b)² = a² + b²</span> &nbsp;→&nbsp; <span class="c">a² + 2ab + b²</span></span><small>Falta o termo do meio, os dois retângulos do desenho.</small></li>
+  <li><span><span class="x">(a − b)² = a² − b²</span> &nbsp;→&nbsp; <span class="c">a² − 2ab + b²</span></span><small>O b² continua positivo; a² − b² é outro produto.</small></li>
+  <li><span><span class="x">−2² = 4</span> &nbsp;→&nbsp; <span class="c">−2² = −4 e (−2)² = 4</span></span><small>Ao substituir um negativo, use parênteses.</small></li>
+  <li><span><span class="x">5 − (x − 3) = 5 − x − 3</span> &nbsp;→&nbsp; <span class="c">5 − x + 3</span></span><small>O menos antes do parêntese troca todos os sinais.</small></li>
+  <li><span><span class="x">2x + 3x² = 5x³</span> &nbsp;→&nbsp; <span class="c">não se juntam</span></span><small>Só termos semelhantes se somam.</small></li>
+  <li><span><span class="x">(3x)² = 3x²</span> &nbsp;→&nbsp; <span class="c">9x²</span></span><small>O expoente atinge o coeficiente também.</small></li>
+  <li><span><span class="x">Cortar o 3 em (x + 3)/3</span> &nbsp;→&nbsp; <span class="c">só se cortam fatores</span></span><small>Fatore antes de simplificar.</small></li>
+  <li><span><span class="x">“o dobro da soma” = 2x + 3</span> &nbsp;→&nbsp; <span class="c">2(x + 3)</span></span><small>A ordem das palavras define os parênteses.</small></li>
+  <li><span><span class="x">x² − 16 = (x − 4)²</span> &nbsp;→&nbsp; <span class="c">(x + 4)(x − 4)</span></span><small>Diferença de quadrados não é quadrado da diferença.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de desenvolver, pergunte: dá para testar com um número? Há um produto notável escondido?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Traduzir o enunciado em expressão</span>
+    <p class="enun">Um aplicativo de transporte cobra, por corrida, uma tarifa fixa de R$ 6,00 mais R$ 2,50 por quilômetro rodado. Em um dia, uma pessoa fez duas corridas: a primeira de <span class="m"><span class="v">x</span></span> quilômetros e a segunda 3 quilômetros mais longa que a primeira. A expressão que dá o valor total pago pelas duas corridas, em reais, é</p>
+    <ol class="alt"><li><span class="m">2,5<span class="v">x</span> + 13,5</span></li><li><span class="m">5<span class="v">x</span> + 13,5</span></li><li><span class="m">5<span class="v">x</span> + 19,5</span></li><li><span class="m">5<span class="v">x</span> + 15</span></li><li><span class="m">17<span class="v">x</span> + 25,5</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Uma informação de cada vez. Tarifas fixas: duas corridas, <span class="m">2 · 6 = 12</span>. Quilômetros: <span class="m"><span class="v">x</span> + (<span class="v">x</span> + 3) = 2<span class="v">x</span> + 3</span>. Custo dos quilômetros: <span class="m">2,5(2<span class="v">x</span> + 3) = 5<span class="v">x</span> + 7,5</span>.</p>
+      <p class="m">12 + 5<span class="v">x</span> + 7,5 = 5<span class="v">x</span> + 19,5</p>
+      <p>A alternativa A soma só a segunda corrida (<span class="m">6 + 2,5(<span class="v">x</span> + 3)</span>); a B cobra uma tarifa fixa só; a D esquece de multiplicar os 3 km extras por 2,50; a E multiplica a tarifa fixa pelos quilômetros, <span class="m">(6 + 2,5)(2<span class="v">x</span> + 3)</span>.</p>
+      <p><strong>Conferência:</strong> com <span class="m"><span class="v">x</span> = 2</span>, as corridas têm 2 e 5 km e custam <span class="m">11 + 18,5 = 29,5</span>; e <span class="m">5 · 2 + 19,5 = 29,5</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Área ampliada e o termo do meio</span>
+    <p class="enun">Um terreno quadrado tem lado de <span class="m"><span class="v">x</span></span> metros. O proprietário vai aumentar cada lado em 3 metros, mantendo a forma quadrada. O aumento da área do terreno, em metros quadrados, é dado por</p>
+    <ol class="alt"><li><span class="m">9</span></li><li><span class="m">6<span class="v">x</span></span></li><li><span class="m">3<span class="v">x</span> + 9</span></li><li><span class="m">6<span class="v">x</span> + 9</span></li><li><span class="m"><span class="v">x</span>² + 6<span class="v">x</span> + 9</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Área nova menos área antiga:</p>
+      <p class="m">(<span class="v">x</span> + 3)² − <span class="v">x</span>² = <span class="v">x</span>² + 6<span class="v">x</span> + 9 − <span class="v">x</span>² = 6<span class="v">x</span> + 9</p>
+      <p>A alternativa A é o sonho do calouro: <span class="m">(<span class="v">x</span> + 3)² = <span class="v">x</span>² + 9</span>, o que deixaria só 9. A B esquece o quadradinho de canto <span class="m">3²</span>; a C conta só um dos dois retângulos <span class="m">3<span class="v">x</span></span>; a E é a área nova inteira, não o aumento.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Conta grande sem calculadora</span>
+    <p class="enun">Um depósito recebeu 1 003 caixas, cada uma com 997 parafusos. O número total de parafusos recebidos é</p>
+    <ol class="alt"><li>999 991</li><li>999 994</li><li>999 997</li><li>1 000 000</li><li>1 000 009</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os dois fatores estão a 3 unidades de 1 000. É o produto da soma pela diferença:</p>
+      <p class="m">1 003 · 997 = (1 000 + 3)(1 000 − 3) = 1 000 000 − 9 = 999 991</p>
+      <p>A D aproxima tudo para 1 000 · 1 000 e ignora o <span class="m">3²</span>; a E troca o sinal do 9; a B subtrai <span class="m">2 · 3 = 6</span>, como se fosse o termo do meio de um quadrado; a C subtrai só 3.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Simplificar fatorando</span>
+    <p class="enun">Para <span class="m"><span class="v">x</span> ≠ −4</span>, a expressão <span class="m"><span class="frac"><i><span class="v">x</span>² − 16</i><i><span class="v">x</span>² + 8<span class="v">x</span> + 16</i></span></span> é igual a</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>−2</i><i><span class="v">x</span> + 2</i></span></span></li><li><span class="m"><span class="frac"><i><span class="v">x</span> − 4</i><i><span class="v">x</span> + 4</i></span></span></li><li><span class="m"><span class="frac"><i><span class="v">x</span> + 4</i><i><span class="v">x</span> − 4</i></span></span></li><li><span class="m"><span class="v">x</span> − 4</span></li><li><span class="m"><span class="frac"><i>(<span class="v">x</span> − 4)²</i><i>(<span class="v">x</span> + 4)²</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Em cima, diferença de quadrados; embaixo, trinômio quadrado perfeito (<span class="m">2 · <span class="v">x</span> · 4 = 8<span class="v">x</span></span> confere):</p>
+      <p class="m"><span class="frac"><i>(<span class="v">x</span> + 4)(<span class="v">x</span> − 4)</i><i>(<span class="v">x</span> + 4)²</i></span> = <span class="frac"><i><span class="v">x</span> − 4</i><i><span class="v">x</span> + 4</i></span></p>
+      <p>A alternativa A “corta” o <span class="m"><span class="v">x</span>²</span> de cima com o de baixo, cortando termos em vez de fatores: sobra <span class="m"><span class="frac"><i>−16</i><i>8<span class="v">x</span> + 16</i></span></span>. A C inverte o resultado. A D trata o denominador como <span class="m"><span class="v">x</span> + 4</span>, esquecendo que ele é um quadrado. A E fatora <span class="m"><span class="v">x</span>² − 16</span> como <span class="m">(<span class="v">x</span> − 4)²</span>.</p>
+      <p><strong>Conferência:</strong> com <span class="m"><span class="v">x</span> = 0</span>, a expressão vale <span class="m"><span class="frac"><i>−16</i><i>16</i></span> = −1</span>, e <span class="m"><span class="frac"><i>0 − 4</i><i>0 + 4</i></span> = −1</span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Usar o produto notável ao contrário</span>
+    <p class="enun">Um retângulo tem perímetro de 18 cm e área de 14 cm². O quadrado da medida da diagonal desse retângulo, em centímetros quadrados, é</p>
+    <ol class="alt"><li>53</li><li>67</li><li>81</li><li>95</li><li>109</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Chame os lados de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span>. O perímetro dá <span class="m"><span class="v">a</span> + <span class="v">b</span> = 9</span>; a área, <span class="m"><span class="v">ab</span> = 14</span>. Pelo teorema de Pitágoras, o quadrado da diagonal é <span class="m"><span class="v">a</span>² + <span class="v">b</span>²</span>. Do quadrado da soma:</p>
+      <p class="m"><span class="v">a</span>² + <span class="v">b</span>² = (<span class="v">a</span> + <span class="v">b</span>)² − 2<span class="v">ab</span> = 81 − 28 = 53</p>
+      <p>A C usa <span class="m">(<span class="v">a</span> + <span class="v">b</span>)²</span> direto, o sonho do calouro de trás para frente. A B subtrai só <span class="m"><span class="v">ab</span></span>, esquecendo o 2. A D e a E somam em vez de subtrair.</p>
+      <p><strong>Conferência:</strong> os lados são 2 e 7 (soma 9, produto 14), e <span class="m">4 + 49 = 53</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Modelar a área de uma base</span>
+    <p class="enun">De uma folha retangular de papelão de 30 cm por 20 cm, recortam-se quatro quadrados de lado <span class="m"><span class="v">x</span></span> centímetros, um em cada canto. Dobrando as abas, obtém-se uma caixa sem tampa. A área do fundo dessa caixa, em cm², é</p>
+    <ol class="alt"><li><span class="m">600 − 4<span class="v">x</span>²</span></li><li><span class="m">600 − 100<span class="v">x</span></span></li><li><span class="m"><span class="v">x</span>² − 50<span class="v">x</span> + 600</span></li><li><span class="m">600 − 100<span class="v">x</span> − 4<span class="v">x</span>²</span></li><li><span class="m">4<span class="v">x</span>² − 100<span class="v">x</span> + 600</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada lado da folha perde <span class="m"><span class="v">x</span></span> nas duas pontas. O fundo mede <span class="m">(30 − 2<span class="v">x</span>)</span> por <span class="m">(20 − 2<span class="v">x</span>)</span>:</p>
+      <p class="m">(30 − 2<span class="v">x</span>)(20 − 2<span class="v">x</span>) = 600 − 60<span class="v">x</span> − 40<span class="v">x</span> + 4<span class="v">x</span>² = 4<span class="v">x</span>² − 100<span class="v">x</span> + 600</p>
+      <p>A A é a área da folha que sobra depois do recorte, que inclui as abas laterais, não só o fundo. A C tira <span class="m"><span class="v">x</span></span> de cada lado uma vez só, <span class="m">(30 − <span class="v">x</span>)(20 − <span class="v">x</span>)</span>. A B esquece o produto <span class="m">(−2<span class="v">x</span>)(−2<span class="v">x</span>)</span>; a D o calcula com o sinal errado.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Expressão equivalente</span>
+    <p class="enun">A expressão <span class="m">(2<span class="v">x</span> − 3)² − (2<span class="v">x</span> + 3)²</span> é equivalente a</p>
+    <ol class="alt"><li><span class="m">0</span></li><li><span class="m">−24<span class="v">x</span></span></li><li><span class="m">−12<span class="v">x</span></span></li><li><span class="m">24<span class="v">x</span></span></li><li><span class="m">8<span class="v">x</span>² + 18</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Desenvolvendo os dois quadrados:</p>
+      <p class="m">(4<span class="v">x</span>² − 12<span class="v">x</span> + 9) − (4<span class="v">x</span>² + 12<span class="v">x</span> + 9) = −24<span class="v">x</span></p>
+      <p>Mais rápido, como diferença de quadrados: <span class="m">[(2<span class="v">x</span> − 3) + (2<span class="v">x</span> + 3)] · [(2<span class="v">x</span> − 3) − (2<span class="v">x</span> + 3)] = 4<span class="v">x</span> · (−6) = −24<span class="v">x</span></span>.</p>
+      <p>A A vem do sonho do calouro: sem os termos do meio, tudo se cancela. A C usa <span class="m">6<span class="v">x</span></span> como termo do meio, esquecendo o 2 de <span class="m">2<span class="v">ab</span></span>. A D erra o sinal ao tirar o parêntese. A E soma os quadrados em vez de subtrair.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Aumento e desconto iguais</span>
+    <p class="enun">Uma loja aumentou em 30% o preço de um produto. Semanas depois, deu um desconto de 30% sobre o novo preço. Em relação ao preço original, o preço final</p>
+    <ol class="alt"><li>ficou igual ao preço original.</li><li>ficou 0,09% menor que o original.</li><li>ficou 0,9% menor que o original.</li><li>ficou 9% maior que o original.</li><li>ficou 9% menor que o original.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Aumento e desconto se aplicam por fatores (veja <strong>Porcentagem</strong>). O preço final é o original multiplicado por:</p>
+      <p class="m">(1 + 0,3)(1 − 0,3) = 1 − 0,3² = 1 − 0,09 = 0,91</p>
+      <p>É o produto da soma pela diferença: sobra sempre <span class="m">−<span class="v">p</span>²</span>, uma perda. O preço caiu 9%.</p>
+      <p>A A supõe que +30% e −30% se cancelam, mas o desconto incide sobre um valor maior. A B lê 0,09 como 0,09%, esquecendo de multiplicar por 100. A C erra a casa decimal. A D troca o sinal do <span class="m"><span class="v">p</span>²</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Cubo da soma</span>
+    <p class="enun">Um reservatório tem a forma de um cubo de aresta <span class="m"><span class="v">x</span></span> metros. Num projeto de ampliação, a aresta será aumentada em 1 metro. O acréscimo de volume, em metros cúbicos, será</p>
+    <ol class="alt"><li><span class="m">1</span></li><li><span class="m">3<span class="v">x</span> + 1</span></li><li><span class="m">3<span class="v">x</span>² + 1</span></li><li><span class="m">3<span class="v">x</span>² + 3<span class="v">x</span> + 1</span></li><li><span class="m"><span class="v">x</span>³ + 3<span class="v">x</span>² + 3<span class="v">x</span> + 1</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Volume novo menos volume antigo, com o cubo da soma:</p>
+      <p class="m">(<span class="v">x</span> + 1)³ − <span class="v">x</span>³ = <span class="v">x</span>³ + 3<span class="v">x</span>² + 3<span class="v">x</span> + 1 − <span class="v">x</span>³ = 3<span class="v">x</span>² + 3<span class="v">x</span> + 1</p>
+      <p>A A é o sonho do calouro em versão cúbica, <span class="m">(<span class="v">x</span> + 1)³ = <span class="v">x</span>³ + 1</span>. A B e a C esquecem um dos termos do meio. A E é o volume novo inteiro, não o acréscimo.</p>
+      <p><strong>Conferência:</strong> com <span class="m"><span class="v">x</span> = 2</span>, o volume passa de 8 para 27, acréscimo de 19; e <span class="m">3 · 4 + 3 · 2 + 1 = 19</span>.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Traduzo frases em expressões, distinguindo “o dobro da soma” de “a soma do dobro”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo valor numérico substituindo negativos entre parênteses</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo apenas termos semelhantes e multiplico polinômios pela distributiva completa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Troco todos os sinais ao eliminar um parêntese precedido de menos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Desenvolvo de cabeça o quadrado da soma e o da diferença</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço o produto da soma pela diferença e o uso nos dois sentidos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico com o desenho do quadrado por que <span class="m">(<span class="v">a</span> + <span class="v">b</span>)² ≠ <span class="v">a</span>² + <span class="v">b</span>²</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Desenvolvo o cubo da soma quando a questão envolve volume</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Fatoro por fator comum, agrupamento, diferença de quadrados e trinômio</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Simplifico frações algébricas cortando só fatores, com a condição de existência</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso produtos notáveis para fazer contas como 49 · 51 e 87² − 13² sem calculadora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Obtenho <span class="m"><span class="v">a</span>² + <span class="v">b</span>²</span> a partir de <span class="m"><span class="v">a</span> + <span class="v">b</span></span> e <span class="m"><span class="v">ab</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Testo alternativas substituindo um número quando a pergunta é de equivalência</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez de modelagem (escrever a expressão a partir de um texto). Depois siga para <strong>Equações e inequações do 1º grau</strong>, onde estas ferramentas passam a encontrar valores desconhecidos.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-19-expressoes-algebricas-produtos-notaveis.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. Este é o primeiro assunto do bloco, então a importação cria o deck <code>ENEM::Matemática::Álgebra e Funções</code>; os próximos assuntos do bloco se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-19";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

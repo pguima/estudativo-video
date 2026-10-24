@@ -1,0 +1,63 @@
+Nos números, se um produto dá zero, um dos fatores é zero. Nas matrizes, não: um, um; um, um, vezes um, menos um; menos um, um, dá a matriz nula, e nenhuma das duas é nula.
+
+Este é o quarto episódio da série de Matrizes. Ao final, você vai saber quais regras dos números valem para matrizes e vai calcular a inversa de uma dois por dois para decifrar um código.
+
+Três lembretes rápidos. Do episódio três: multiplicar matrizes é linha por coluna: multiplica casa com casa e soma. Do episódio um: a identidade tem um na diagonal e zero no resto. E a transposta troca linhas por colunas. Hoje, eu leio cada matriz linha por linha.
+
+Duas cenas do dia a dia. Calçar a meia e depois o sapato. Agora o contrário: o sapato e depois a meia. A ordem mudou o resultado. E um cadeado de segredo: quem tranca precisa de uma chave para destrancar.
+
+A ordem importa nas matrizes? Nos números, dois vezes três é três vezes dois. Isso se chama propriedade comutativa: trocar a ordem não muda o produto. Agora, A é um, dois; zero, um. B é um, zero; três, um. A vezes B, linha por coluna: sete, dois; três, um. B vezes A: um, dois; três, sete. Resultados diferentes. Multiplicar matrizes é como meia e sapato: a ordem muda o resultado.
+
+E às vezes um dos produtos nem existe. A é dois por três. B é três por quatro. A vezes B: o três do meio encaixa no três. Existe, e dá dois por quatro. B vezes A: o quatro do meio não encaixa no dois. Não existe.
+
+Atalho. Para saber se o produto existe, confira o meio: colunas da primeira iguais às linhas da segunda. E para provar que A vezes B é diferente de B vezes A, basta uma casa diferente. A primeira casa já resolve: sete de um lado, um do outro.
+
+E o produto que dá zero? Volte ao começo: um, um; um, um, vezes um, menos um; menos um, um. Primeira linha vezes primeira coluna: um menos um, zero. Todas as casas dão zero. A matriz nula é a que só tem zeros. E nenhum fator é nulo. Por isso, de A B igual a A C, você não pode cortar o A: B e C podem ser diferentes.
+
+Então nada dos números vale? Vale, sim. A identidade é o número um das matrizes: A vezes I é A, e I vezes A também. A associativa: pode agrupar como quiser, A B, vezes C, é A, vezes B C. A distributiva: A vezes B mais C é A B mais A C, mantendo o A do mesmo lado.
+
+E onde mora a pegadinha? Na transposta do produto, a ordem se inverte: A B, transposta, é B transposta vezes A transposta. Como tirar a roupa: primeiro o sapato, depois a meia. E A mais B, ao quadrado, não é A ao quadrado mais dois A B mais B ao quadrado. O certo é A ao quadrado, mais A B, mais B A, mais B ao quadrado. A B e B A só viram dois A B se as duas comutarem.
+
+Existe divisão de matrizes? Nos números, dividir por cinco é multiplicar por um quinto, o número que desfaz o cinco. Nas matrizes, quem desfaz A é a matriz inversa, A elevado a menos um: A vezes A inversa dá a identidade, nas duas ordens. A inversa é a chave do cadeado: A tranca, A inversa destranca. Ela só existe para matrizes quadradas. E nem toda quadrada tem.
+
+Como achar a chave de uma dois por dois? A é três, um; cinco, dois. Chame as casas de a, b, c, d. Primeiro, a conta a d menos b c: três vezes dois, menos um vezes cinco, seis menos cinco, um. Movimento um: troca a diagonal principal. O três e o dois trocam de lugar. Movimento dois: muda o sinal da secundária. O um e o cinco ganham um menos. Movimento três: divide tudo por a d menos b c, que é um. A inversa é dois, menos um; menos cinco, três.
+
+Será que está certa? Multiplique pela original. Três vezes dois, mais um vezes menos cinco: um. Três vezes menos um, mais um vezes três: zero. A segunda linha dá zero e um. Apareceu a identidade: confere! E se a d menos b c der zero? Não dá para dividir: não há inversa. Esse número tem nome e série própria: determinante.
+
+Atalho para não esquecer. Três movimentos: troca, sinal, divide. Troca na diagonal principal, sinal na secundária. E feche sempre com a conferência: multiplicou pela original, tem que aparecer a identidade.
+
+E para que serve isso? Para guardar segredos. Cada letra vira um número, e os números viram colunas. Codificar é trancar: multiplicar a coluna pela matriz-chave A. Decodificar é destrancar: quem recebe multiplica por A inversa e recupera a mensagem. Errou um sinal na inversa? A chave não serve, e sai lixo.
+
+Sua vez. Calcule a inversa de dois, um; três, dois e confira. Pause e tente.
+
+Vamos juntos. a d menos b c: dois vezes dois, menos um vezes três, quatro menos três, um. Troca a diagonal, muda o sinal da secundária, divide por um. A inversa é dois, menos um; menos três, dois. Conferindo: o produto com a original dá um, zero; zero, um. A identidade.
+
+Vamos guardar em três frases. Um: a ordem dos fatores altera o produto. Dois: produto zero não exige fator zero. Três: inversa dois por dois: troca a diagonal, muda o sinal da secundária, divide por a d menos b c.
+
+Agora, os três erros clássicos. Primeiro: supor que A vezes B é igual a B vezes A. Parece certo, porque nos números a ordem nunca importou. Mas com as matrizes do começo, a primeira casa dá sete numa ordem e um na outra.
+
+Segundo: concluir de A vezes B igual a zero que A ou B é zero. Parece certo, porque nos números essa regra vale sempre. Nas matrizes, o exemplo do gancho derruba: o produto é nulo e nenhum fator é.
+
+Terceiro: calcular a inversa só trocando a diagonal. Parece certo, porque a troca é o movimento que mais aparece. Em dois, um; três, dois, trocar a diagonal devolve a própria matriz, e o produto dá sete, quatro; doze, sete: não é a identidade.
+
+Questão no estilo do ENEM. Eu faço com você. Considere as matrizes A, um, dois; zero, um, e B, um, zero; três, um. A matriz A vezes B, menos B vezes A, é: A: a matriz nula, pois A vezes B é igual a B vezes A. B: seis, zero; zero, menos seis. C: menos seis, zero; zero, seis. D: zero, dois; menos três, zero. E: um, zero; zero, um.
+
+Vamos lá. Os dois produtos você já viu: A B é sete, dois; três, um. B A é um, dois; três, sete. Agora subtraia casa a casa: sete menos um, seis; dois menos dois, zero; três menos três, zero; um menos sete, menos seis. Letra B!
+
+E as erradas? A A supõe que A B é igual a B A, como nos números. A C faz a conta ao contrário: B A menos A B. A D é A menos B: subtrai as matrizes em vez de multiplicar. E a E é a identidade, sem relação com a conta.
+
+Próxima, nós fazemos. Um estudante listou afirmações sobre matrizes quadradas A e B de mesma ordem, sendo I a identidade e zero a matriz nula. A única afirmação verdadeira para quaisquer A e B é: A: A vezes I é igual a I vezes A, igual a A. B: A vezes B é igual a B vezes A. C: A mais B, ao quadrado, é igual a A ao quadrado mais dois A B mais B ao quadrado. D: A vezes B, transposta, é igual a A transposta vezes B transposta. E: se A vezes B é zero, então A é zero ou B é zero. Pause e tente.
+
+Vamos juntos. A identidade é o número um das matrizes, dos dois lados. Letra A! A B cai no bloco da meia e do sapato: a ordem importa. A C esquece que A B e B A podem ser diferentes. A D tem a ordem errada: o certo é B transposta vezes A transposta. E a E cai no exemplo do gancho.
+
+Agora, é com você. Um sistema de mensagens converte cada par de letras em uma matriz coluna M com dois números e envia E igual a A vezes M, em que A é três, um; cinco, dois. Uma mensagem chegou como E igual a dezessete; vinte e nove. Os dois números originais, de cima para baixo, eram: A: dois e cinco. B: menos cinco e menos dois. C: sessenta e três e cento e setenta e dois. D: cinco e dois. E: oitenta e cento e quarenta e três. Pause o vídeo e tente.
+
+Vamos conferir. A chave você já conhece: a inversa de três, um; cinco, dois é dois, menos um; menos cinco, três. Para destrancar, A inversa vezes E. Dois vezes dezessete, menos vinte e nove: cinco. Menos cinco vezes dezessete, mais três vezes vinte e nove: dois. Conferindo: três vezes cinco mais dois dá dezessete; cinco vezes cinco mais dois vezes dois dá vinte e nove. Letra D!
+
+E as armadilhas? A A inverte a ordem dos números. A B troca os sinais da diagonal principal, em vez da secundária. A C só troca a diagonal, o erro três. E a E multiplica de novo por A: tranca outra vez, em vez de destrancar.
+
+Para fechar, as mesmas três frases. Um: a ordem dos fatores altera o produto. Dois: produto zero não exige fator zero. Três: inversa dois por dois: troca a diagonal, muda o sinal da secundária, divide por a d menos b c.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e treinamos com questões inéditas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual regra dos números você mais se surpreendeu ao ver falhar nas matrizes? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

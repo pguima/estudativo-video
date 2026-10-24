@@ -1,0 +1,65 @@
+Um banco oferece duas modalidades de empréstimo com a mesma taxa de dez por cento ao mês, uma simples e uma composta. Quase todo mundo diz: a composta é sempre mais cara. Para um empréstimo de quinze dias, é o contrário.
+
+Ao final, você vai saber qual regime rende mais em cada prazo, reconhecer a reta e a curva e calcular duplicações sucessivas.
+
+Dois lembretes rápidos. Da série de juros simples: M igual a C vezes, abre parênteses, um mais i vezes t. No gráfico, uma reta. Do episódio 1: em juros compostos, M igual a C vezes um mais i, elevado a t.
+
+Agora, duas cenas da vida real. Um cliente, no banco, olha as duas propostas com a mesma taxa e pergunta: qual é a mais barata? E uma propaganda diz: este investimento dobra a cada sete anos. Guarde essas duas cenas. Elas voltam.
+
+Qual é a diferença de verdade entre os dois? Nos juros simples, os juros são calculados sempre sobre o capital inicial. Cada mês soma o mesmo valor, C vezes i. Nos compostos, os juros são calculados sobre o saldo anterior. Cada mês multiplica por um mais i. Pense em duas escadas. A dos simples tem degraus iguais. A dos compostos, a dez por cento, tem cada degrau dez por cento mais alto que o anterior.
+
+E como comparar os dois numa conta só? Olhe só o fator, o número que multiplica o capital. Nos simples: um mais i vezes t. Nos compostos: um mais i, elevado a t. Quem tiver o fator maior rende mais.
+
+E no desenho, como fica? Cem reais a dez por cento ao ano, nos dois regimes. Os simples formam uma reta, em azul: sobe sempre dez. Os compostos formam uma curva exponencial, em roxo: uma linha que sobe cada vez mais rápido. Em dez anos: duzentos na reta, duzentos e cinquenta e nove na curva.
+
+Mas olhe o começo com uma lupa. As duas partem do mesmo ponto, os cem reais. Entre zero e um ano, a reta fica ligeiramente acima da curva. Em um ano exato, elas se encontram. É o cruzamento: antes de um período, a reta fica por cima; depois, a curva dispara.
+
+Então quem rende mais? Depende do prazo. Vamos comparar os fatores. Meio ano: nos simples, um mais zero vírgula um vezes meio, um vírgula zero cinco. Nos compostos, o número que, multiplicado por ele mesmo, dá um vírgula um: cerca de um vírgula zero quatro oito oito. Simples ganha. Um ano: um vírgula dez nos dois. Empate. Dois anos: um vírgula vinte contra um vírgula vinte e um. Composto ganha, e a vantagem só aumenta.
+
+O atalho para nunca errar. Prazo menor que um período: simples rende mais. Exatamente um período: empate. Prazo maior que um período: compostos rendem mais.
+
+E por que isso importa no mundo real? Lembra dos juros de mora, a multa por dia de atraso, da série de juros simples? Atraso de poucos dias é uma fração de mês. E em frações de mês, a cobrança simples é a maior das duas. Por isso a mora de poucos dias é cobrada em juros simples. E o empréstimo de quinze dias do gancho era mais caro no simples.
+
+E a lista dos montantes compostos, tem nome? Cem reais a dez por cento: cento e dez, cento e vinte e um, cento e trinta e três e dez centavos. Cada número é o anterior vezes um vírgula um. Uma lista em que se multiplica sempre pelo mesmo número se chama progressão geométrica, ou PG. Esse número é a razão da PG: aqui, um mais i. E a curva é uma função exponencial. PG e exponencial têm séries próprias.
+
+E o investimento que dobra a cada sete anos? O tempo que o dinheiro leva para dobrar se chama tempo de duplicação. Na curva, ele é sempre o mesmo. Em sete anos, dobra: vezes dois. Nos sete seguintes, dobra de novo: vezes quatro. Mais sete: vezes oito. Dobrar, dobrar, dobrar: três duplicações multiplicam por oito, não por três.
+
+O atalho. Conte as duplicações: o prazo dividido pelo tempo de dobrar. Depois, eleve dois a esse número. Uma, vezes dois; duas, vezes quatro; três, vezes oito; quatro, vezes dezesseis.
+
+E se o fator for menor que um? Aí o valor encolhe a cada período: isso se chama decaimento. Um carro que perde vinte por cento do valor ao ano fica, a cada ano, com oitenta por cento: vale V vezes zero vírgula oito, elevado a t, com V o valor inicial. Também tem série própria.
+
+Sua vez. Mil reais a vinte por cento ao ano, por dois anos. Quanto dá em juros simples, e quanto em juros compostos? Pause e tente.
+
+Vamos juntos, fator ao lado de fator. Simples: um mais zero vírgula dois vezes dois, um vírgula quarenta. Montante: mil e quatrocentos reais. Compostos: um vírgula dois ao quadrado, um vírgula quarenta e quatro. Montante: mil, quatrocentos e quarenta reais. Dois anos, mais que um período: composto ganha: os quarenta reais a mais são juros sobre os juros.
+
+Vamos guardar em três frases. Um: simples soma; composto multiplica. Dois: antes de um período, o simples rende mais; depois, o composto. Três: cada duplicação multiplica por dois: três duplicações, vezes oito.
+
+Agora, os três erros clássicos. Primeiro: achar que juros compostos sempre rendem mais. Parece certo, porque no longo prazo a curva dispara e é isso que todo mundo vê. Mas antes do primeiro período, o simples rende mais. O composto só passa depois do cruzamento.
+
+Segundo: decidir pela regra geral, sem fazer a conta. Simples a onze por cento ao ano contra compostos a dez, por dois anos. Parece certo, porque as regras gerais são verdadeiras quando o resto é igual. Mas aqui as taxas são diferentes. Faça a conta: um vírgula vinte e dois contra um vírgula vinte e um. O simples ganha.
+
+Terceiro: multiplicar pelo número de duplicações. Mil reais que dobram a cada cinco anos, em quinze anos: três mil? Parece certo, porque são três períodos. Mas cada período dobra o anterior: dois, quatro, oito. Oito mil reais. Dois elevado a três, não dois vezes três.
+
+Uma questão do nosso material, no estilo do ENEM. Eu resolvo com você. Um banco oferece duas modalidades de empréstimo com a mesma taxa de dez por cento ao mês: uma a juros simples e outra a juros compostos. Comparando o valor a pagar ao final do prazo, conclui-se que: A: a de juros compostos é sempre mais cara. B: as duas custam sempre o mesmo, porque a taxa é a mesma. C: para prazos menores que um mês, a simples é mais cara; para maiores, a composta. D: para prazos menores que um mês, a composta é mais cara; para maiores, a simples. E: a de juros simples é sempre mais cara. Pause o vídeo e tente.
+
+Fator ao lado de fator. Meio mês: simples, um vírgula zero cinco; compostos, cerca de um vírgula zero quatro nove. O simples cobra mais. Um mês: um vírgula dez nos dois. Empate. Dois meses: um vírgula vinte contra um vírgula vinte e um. O composto cobra mais. É o cruzamento da reta com a curva. Letra C!
+
+E as outras? A A é a crença comum: só vale a partir do primeiro período. A B ignora que os regimes são diferentes: a mesma taxa não dá o mesmo valor. A D inverte as faixas. E a E só vale para prazos menores que um mês.
+
+Agora, nós fazemos juntos. Um investidor tem cinquenta mil reais para aplicar por dois anos. Proposta um: juros simples de vinte e dois por cento ao ano. Proposta dois: juros compostos de vinte por cento ao ano. Sobre os juros ao final dos dois anos: A: a um rende dois mil reais a mais que a dois. B: a dois rende dois mil reais a mais que a um. C: a um rende mais, porque sua taxa é maior. D: a dois rende mais, porque compostos sempre superam os simples. E: as duas rendem exatamente o mesmo. Pause o vídeo e tente.
+
+Vamos juntos. Proposta um, simples: cinquenta mil vezes zero vírgula vinte e dois, vezes dois: vinte e dois mil reais. Proposta dois, compostos: o fator é um vírgula dois ao quadrado, um vírgula quarenta e quatro. Os juros são a parte que passa de um: zero vírgula quarenta e quatro. Cinquenta mil vezes isso: vinte e dois mil reais. Empate! A taxa maior da um compensa exatamente os juros sobre juros da dois. Letra E!
+
+E as erradas? A A calcula a proposta dois como se fosse simples: cinquenta mil vezes zero vírgula dois vezes dois, vinte mil. A B inverte essa comparação errada. A C e a D decidem pela regra geral, sem fazer a conta.
+
+E agora, é você quem faz. Numa aplicação a juros compostos, o saldo dobra a cada sete anos. Uma pessoa depositou cinco mil reais e não fez retiradas. Após vinte e um anos, o saldo será de: A: quinze mil reais. B: vinte mil. C: trinta mil. D: quarenta mil. E: quarenta e cinco mil. Pause o vídeo e tente.
+
+Conferindo. Vinte e um dividido por sete: três duplicações. Cinco mil, dez mil, vinte mil, quarenta mil. Cinco mil vezes oito. Letra D!
+
+E as erradas? A A multiplica por três, o número de períodos. A B soma cinco mil por período, como em juros simples. A C multiplica por dois vezes três. E a E soma o capital de novo ao montante, que já o contém.
+
+Para fechar, as mesmas três frases. Um: simples soma; composto multiplica. Dois: antes de um período, o simples rende mais; depois, o composto. Três: cada duplicação multiplica por dois: três duplicações, vezes oito.
+
+A prova não deixa você calcular um vírgula zero cinco elevado a doze na mão. Ela dá uma pista, tipo: um vírgula zero cinco elevado a seis é mais ou menos um vírgula trinta e quatro. O que fazer com ela? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você também achava que juros compostos sempre rendem mais? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,69 @@
+Quantos números múltiplos de sete existem de cento e cinco até quatrocentos e noventa e sete? A conta, quatrocentos e noventa e sete menos cento e cinco, dividido por sete, dá cinquenta e seis. A resposta certa é cinquenta e sete. Um termo some, e a alternativa errada está lá esperando.
+
+Ao final desta aula, você vai contar termos, saltos e postes sem errar por um, e resolver problemas de três números em PA em uma linha.
+
+Antes, três lembretes rápidos. Do episódio um: um termo qualquer é o primeiro, mais n menos um saltos de tamanho r. Da série de Divisibilidade: os múltiplos de sete são a tabuada do sete: sete, catorze, vinte e um...
+
+E Pitágoras, no triângulo com ângulo reto, o canto de esquadro. Os dois lados que formam esse canto são os catetos. O lado maior, do outro lado, é a hipotenusa. A regra: hipotenusa ao quadrado é igual a cateto ao quadrado mais cateto ao quadrado. E a área desse triângulo é cateto vezes cateto, dividido por dois.
+
+Agora, uma cerca. Ela tem trinta metros, com uma estaca a cada três metros, uma em cada ponta. Conte comigo, no dedo: os pedaços de cerca entre duas estacas são dez. E as estacas? Onze. Sempre uma a mais. Guarde esse um: ele é o assunto de hoje.
+
+O que é interpolar? É colocar números no meio de dois números dados, formando uma PA. Os dois números dados, o primeiro e o último, são os extremos. E os números colocados entre eles são os meios aritméticos. Exemplo: três meios entre dois e catorze.
+
+Quantos termos fica a PA? Os três meios, mais os dois extremos: cinco termos. E quantos saltos entre eles? Um a menos: quatro saltos. De dois a catorze, doze; dividido por quatro saltos: razão três. A PA fica: dois, cinco, oito, onze, catorze. A regra: com k meios, são k mais dois termos e k mais um saltos.
+
+Agora, uma rodovia. Tem um poste no quilômetro três e outro no quilômetro vinte e sete. Vão instalar cinco postes no meio, todos com o mesmo espaço. Qual é a distância entre dois vizinhos? Conte os postes: cinco novos, mais os dois das pontas: sete postes. E os vãos? Entre sete postes, seis vãos.
+
+E a conta é com os vãos. Vinte e sete menos três: vinte e quatro quilômetros. Divididos em seis vãos iguais: seis r igual a vinte e quatro, r igual a quatro quilômetros. Postes e intervalos: entre sete postes há seis vãos.
+
+O atalho que salva tudo isso: desenhe a fila antes de dividir. Uma bolinha para cada termo, um arco para cada salto. Conte as bolinhas, conte os arcos: sempre um arco a menos. E divida pelos arcos.
+
+E quando a pergunta é quantos termos? Quantos múltiplos de sete há entre cem e quinhentos? Múltiplo de sete é um número que a divisão por sete deixa sem resto. O primeiro depois de cem: cem dividido por sete dá catorze e sobra; quinze vezes sete, cento e cinco. O último antes de quinhentos: setenta e um vezes sete, quatrocentos e noventa e sete.
+
+Eles formam uma PA de razão sete. Pelo termo geral: quatrocentos e noventa e sete é igual a cento e cinco, mais n menos um vezes sete. A distância, trezentos e noventa e dois, dividida por sete: n menos um é cinquenta e seis. Então n é cinquenta e sete. Os cinquenta e seis eram os saltos. Os termos são um a mais.
+
+Atalho para a prova: o número de termos é último menos primeiro, dividido pela razão, mais um. A divisão conta os saltos. E o mais um? O mais um conta o primeiro termo, que não é um salto.
+
+Lembra da cerca? Trinta dividido por três dá os intervalos, os pedaços entre duas estacas: dez. As estacas: onze. Sem fórmula nenhuma, é o mesmo um. Antes de responder, pergunte: o problema pediu os objetos ou os espaços entre eles?
+
+E o termo do meio? A média aritmética de dois números é a soma dividida por dois. Numa PA, o termo do meio é a média dos vizinhos. Ele dá um salto para cada lado: fica bem no meio. Então: duas vezes o do meio é igual à soma dos vizinhos.
+
+Exemplo: x, dez, dezesseis. Quanto vale x? Duas vezes dez, vinte, é igual a x mais dezesseis. x é quatro. Confira: quatro, dez, dezesseis. Saltos de seis. É PA.
+
+E quando são três números em PA e só a soma é conhecida? Use a notação simétrica: um jeito de dar nome aos três a partir do termo do meio. Chame o do meio de x. O da esquerda é x menos r, o da direita, x mais r. Agora some: o menos r e o mais r se cancelam. O r some, e sobra três x.
+
+O atalho: três números em PA com soma quarenta e cinco. Três x igual a quarenta e cinco: o do meio é quinze, na hora. Dividiu a soma por três, achou o do meio.
+
+Sua vez. Quantos múltiplos de seis há entre cinquenta e duzentos? Pause e tente.
+
+Vamos juntos. O primeiro: nove vezes seis, cinquenta e quatro. O último: trinta e três vezes seis, cento e noventa e oito. Último menos primeiro: cento e quarenta e quatro. Dividido por seis: vinte e quatro saltos. Mais um, o primeiro termo: vinte e cinco.
+
+Vamos guardar em três frases. Um: k meios entre dois números: k mais dois termos e k mais um saltos. Dois: contar termos: último menos primeiro, dividido pela razão, mais um. Três: três em PA: x menos r, x e x mais r.
+
+Agora, os três erros clássicos. Primeiro: cinco meios entre três e vinte e sete, e a razão sai vinte e quatro dividido por cinco. Parece certo, porque o enunciado falou cinco. Mas cinco são os postes novos. Com os extremos, são sete termos e seis saltos: vinte e quatro dividido por seis.
+
+Segundo: esquecer o mais um na contagem de múltiplos. Parece certo, porque cinquenta e seis sai redondinho. Mas a divisão contou os saltos. Falta o primeiro termo: some o um.
+
+Terceiro: contar os intervalos quando o problema pede os objetos, ou o contrário. Parece certo, porque a divisão dá um número limpo. Mas dez são os pedaços da cerca; estacas, onze. Desenhe a fila.
+
+Agora, questões no estilo do ENEM, do nosso material de estudo. Esta, eu resolvo com você. Em um trecho reto de rodovia, há postes no quilômetro três e no quilômetro vinte e sete. A concessionária vai instalar mais cinco postes entre esses dois, de modo que todos os sete postes fiquem igualmente espaçados. A distância entre dois postes vizinhos será de: A: três quilômetros. B: três vírgula quarenta e três. C: quatro. D: quatro vírgula oito. E: seis quilômetros.
+
+Desenhe a fila. Sete postes: sete bolinhas. Entre elas, seis arcos. Distância toda: vinte e quatro quilômetros. Dividida por seis vãos: quatro quilômetros. Conferindo: três, sete, onze, quinze, dezenove, vinte e três, vinte e sete. Fechou. Letra C!
+
+E as erradas? Cada uma dividiu por outro número. A A, por oito. A B, por sete: o número de postes. A D, por cinco: só os postes novos. E a E, por quatro, como se fossem cinco postes no total.
+
+Agora, juntos. Uma gráfica numera ingressos de cem a quinhentos. Os ingressos cujo número é múltiplo de sete dão direito a um brinde. A quantidade de ingressos premiados é: A: cinquenta e cinco. B: cinquenta e seis. C: cinquenta e sete. D: cinquenta e oito. E: setenta e um. Você já viu essa conta hoje. Pause e tente.
+
+Primeiro e último: cento e cinco e quatrocentos e noventa e sete. Último menos primeiro, dividido por sete: cinquenta e seis saltos. Mais um: cinquenta e sete. Letra C! A B esqueceu o mais um. A A esqueceu o mais um e ainda deixou o quatrocentos e noventa e sete de fora. A D começou no noventa e oito, que é menor que cem. E a E contou desde o sete.
+
+E esta é sua. Um terreno tem a forma de um triângulo retângulo cujos lados, em metros, formam uma progressão aritmética. O perímetro do terreno, a soma dos três lados, é trinta e seis metros. A área do terreno, em metros quadrados, é: A: trinta e seis. B: cinquenta e quatro. C: sessenta e sete vírgula cinco. D: setenta e dois. E: cento e oito. Dica: notação simétrica. Pause o vídeo e resolva.
+
+Conferindo. Lados: x menos r, x e x mais r. A soma é três x: trinta e seis. O do meio é doze. A hipotenusa é o maior lado: doze mais r. Pitágoras: doze mais r, ao quadrado, é igual a doze ao quadrado mais doze menos r, ao quadrado. Abrindo os quadrados, o r ao quadrado cancela. Sobra quarenta e oito r igual a cento e quarenta e quatro: r é três.
+
+Os lados: nove, doze e quinze. Confira Pitágoras: oitenta e um mais cento e quarenta e quatro dá duzentos e vinte e cinco, que é quinze ao quadrado. Área: cateto vezes cateto, nove vezes doze, dividido por dois: cinquenta e quatro metros quadrados. Letra B! A A confundiu área com perímetro. A C usou a hipotenusa como cateto. A D usou o doze duas vezes. E a E esqueceu de dividir por dois.
+
+Para fechar, as mesmas três frases. Um: k meios entre dois números: k mais dois termos e k mais um saltos. Dois: contar termos: último menos primeiro, dividido pela razão, mais um. Três: três em PA: x menos r, x e x mais r.
+
+Um menino somou um mais dois mais três, e assim por diante, até cem, em segundos, sem calculadora. O truque dele soma qualquer PA. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já errou por um contando postes? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

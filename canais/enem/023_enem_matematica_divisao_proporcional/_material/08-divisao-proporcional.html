@@ -1,0 +1,1064 @@
+<title>Divisão Proporcional</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 8 de 12</p>
+        <h1>Divisão proporcional</h1>
+        <p class="deck">Repartir um total conforme o peso de cada parte — lucro entre sócios, verba entre setores, conta entre amigos, herança entre herdeiros. Um único procedimento resolve todos os casos, e ele cabe em uma linha.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Barra representando três mil e seiscentos reais dividida em nove unidades iguais de quatrocentos reais, agrupadas em dois, três e quatro">
+  <text x="150" y="20" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2)">R$ 3.600 em 2 : 3 : 4</text>
+  <rect x="20" y="40" width="57.8" height="46" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2"/>
+  <rect x="77.8" y="40" width="86.6" height="46" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:2"/>
+  <rect x="164.4" y="40" width="115.6" height="46" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:2"/>
+  <line x1="48.9" y1="40" x2="48.9" y2="86" style="stroke:var(--c1);stroke-width:.8;stroke-dasharray:3 2"/>
+  <line x1="106.7" y1="40" x2="106.7" y2="86" style="stroke:var(--c3);stroke-width:.8;stroke-dasharray:3 2"/>
+  <line x1="135.6" y1="40" x2="135.6" y2="86" style="stroke:var(--c3);stroke-width:.8;stroke-dasharray:3 2"/>
+  <line x1="193.3" y1="40" x2="193.3" y2="86" style="stroke:var(--c2);stroke-width:.8;stroke-dasharray:3 2"/>
+  <line x1="222.2" y1="40" x2="222.2" y2="86" style="stroke:var(--c2);stroke-width:.8;stroke-dasharray:3 2"/>
+  <line x1="251.1" y1="40" x2="251.1" y2="86" style="stroke:var(--c2);stroke-width:.8;stroke-dasharray:3 2"/>
+  <text x="48.9" y="70" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-weight:600">2k</text>
+  <text x="121" y="70" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">3k</text>
+  <text x="222" y="70" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">4k</text>
+  <text x="48.9" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">800</text>
+  <text x="121" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">1.200</text>
+  <text x="222" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">1.600</text>
+  <path d="M20 122 L20 130 L48.9 130 L48.9 122" style="fill:none;stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="34" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1 parte</text>
+  <rect x="72" y="152" width="156" height="34" rx="9" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.5"/>
+  <text x="150" y="167" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">k = 3.600 ÷ 9</text>
+  <text x="150" y="181" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">k = 400</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">9 unidades iguais, agrupadas 2, 3 e 4</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>3 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Razão e proporção · Grandezas proporcionais</dd></div>
+      <div><dt>Destrava</dt><dd>Matemática financeira, rateios, porcentagem</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este é um assunto de <strong>procedimento</strong>: existe um caminho único que resolve todos os casos, e a dificuldade não está na conta, está em ler o enunciado e decidir quais são os pesos.</p>
+<p>Os contextos que a prova usa são sempre os mesmos:</p>
+<ul>
+  <li><strong>Sociedade e lucro</strong> — sócios que investiram valores diferentes.</li>
+  <li><strong>Rateio de despesas</strong> — conta de luz, condomínio, viagem entre amigos.</li>
+  <li><strong>Repartição de verbas</strong> — entre setores, escolas, municípios.</li>
+  <li><strong>Herança e partilha</strong> — entre herdeiros.</li>
+  <li><strong>Premiação por desempenho</strong> — bônus por metas, vendas ou dias trabalhados.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas coisas. Primeiro, o <strong>atalho do MMC na divisão inversa</strong> (seção 05), que evita trabalhar com frações. Segundo, a <strong>divisão composta por multiplicação</strong> (seção 06) — porque o erro instintivo é somar as duas séries, e a alternativa correspondente sempre está lá.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A ideia central: o valor de uma parte</h2>
+<p>Toda divisão proporcional funciona da mesma maneira: o total é quebrado em <strong>unidades iguais</strong>, e cada pessoa leva tantas unidades quanto for o seu peso.</p>
+
+<div class="box def">
+  <span class="tag">O procedimento, em três passos</span>
+  <ol style="margin:6px 0 0">
+    <li>Some os pesos.</li>
+    <li>Divida o total pela soma: esse é o <span class="m"><span class="v">k</span></span>, o valor de <strong>uma</strong> unidade.</li>
+    <li>Multiplique o <span class="m"><span class="v">k</span></span> por cada peso.</li>
+  </ol>
+  <p class="m" style="margin-top:12px;font-size:1.08rem"><span class="v">k</span> = <span class="frac"><i>total</i><i>soma dos pesos</i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Dividir R$ 3.600 em partes proporcionais a 2, 3 e 4</span>
+  <p class="m">Soma dos pesos: 2 + 3 + 4 = 9</p>
+  <p class="m"><span class="v">k</span> = <span class="frac"><i>3600</i><i>9</i></span> = 400</p>
+  <p class="m">Partes: 2·400 = <strong>800</strong> &nbsp;·&nbsp; 3·400 = <strong>1.200</strong> &nbsp;·&nbsp; 4·400 = <strong>1.600</strong></p>
+  <p class="m" style="margin-top:10px">Conferência: 800 + 1.200 + 1.600 = 3.600 ✓</p>
+</div>
+
+<p>O <span class="m"><span class="v">k</span></span> tem significado concreto: é <strong>quanto vale um ponto de peso</strong> naquela repartição. Se os pesos fossem dias trabalhados, o <span class="m"><span class="v">k</span></span> seria o valor de um dia.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Por que dividir pela soma funciona</h2>
+<p>A justificativa é a propriedade das proporções vista no assunto 6, e vale conhecê-la para nunca aplicar a fórmula no lugar errado.</p>
+
+<div class="box def">
+  <span class="tag">Propriedade da soma dos antecedentes</span>
+  <p>Se as partes <span class="m"><span class="v">x</span></span>, <span class="m"><span class="v">y</span></span> e <span class="m"><span class="v">z</span></span> são proporcionais a <span class="m"><span class="v">a</span></span>, <span class="m"><span class="v">b</span></span> e <span class="m"><span class="v">c</span></span>, então:</p>
+  <p class="m" style="font-size:1.05rem"><span class="frac"><i><span class="v">x</span></i><i><span class="v">a</span></i></span> = <span class="frac"><i><span class="v">y</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">z</span></i><i><span class="v">c</span></i></span> = <span class="frac"><i><span class="v">x</span> + <span class="v">y</span> + <span class="v">z</span></i><i><span class="v">a</span> + <span class="v">b</span> + <span class="v">c</span></i></span> = <span class="v">k</span></p>
+  <p>Como <span class="m"><span class="v">x</span> + <span class="v">y</span> + <span class="v">z</span></span> é justamente o total a repartir, o <span class="m"><span class="v">k</span></span> sai de imediato.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Uma consequência prática</span>
+  <p>Proporções equivalentes dão a <strong>mesma divisão</strong>. Repartir em <span class="m">2 : 3</span> é idêntico a repartir em <span class="m">4 : 6</span> ou <span class="m">20 : 30</span> — só o valor do <span class="m"><span class="v">k</span></span> muda.</p>
+  <p>Por isso, quando os pesos forem números grandes, <strong>simplifique todos pelo MDC antes de somar</strong>. As partes finais são exatamente as mesmas e a conta fica muito mais leve.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Divisão diretamente proporcional</h2>
+<p>É o caso padrão: quem tem o maior peso recebe a maior parte.</p>
+
+<div class="eq">
+  <span class="lbl">Uma herança de R$ 240.000 dividida proporcionalmente às idades 15, 20 e 25</span>
+  <p class="m">Soma: 15 + 20 + 25 = 60 &nbsp;→&nbsp; <span class="v">k</span> = <span class="frac"><i>240000</i><i>60</i></span> = 4.000</p>
+  <p class="m">Partes: 60.000 &nbsp;·&nbsp; 80.000 &nbsp;·&nbsp; 100.000</p>
+  <p class="m" style="margin-top:10px">Conferência: 60.000 + 80.000 + 100.000 = 240.000 ✓</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Diferença entre duas partes, sem calcular as duas</span>
+  <p>Se a questão pedir a <em>diferença</em> entre a maior e a menor parte, multiplique a diferença dos pesos pelo <span class="m"><span class="v">k</span></span>:</p>
+  <p class="m">(25 − 15) · 4.000 = 40.000</p>
+  <p>Uma multiplicação em vez de duas, com menos chance de erro.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Divisão inversamente proporcional</h2>
+<p>Aqui quem tem o <strong>menor</strong> número recebe a maior parte — bônus por menor número de faltas, rateio por menor tempo de uso, prêmio por menor número de erros.</p>
+
+<div class="box def">
+  <span class="tag">A regra</span>
+  <p>Dividir em partes <strong>inversamente</strong> proporcionais a <span class="m"><span class="v">a</span></span>, <span class="m"><span class="v">b</span></span> e <span class="m"><span class="v">c</span></span> é o mesmo que dividir em partes <strong>diretamente</strong> proporcionais a <span class="m"><span class="frac"><i>1</i><i><span class="v">a</span></i></span></span>, <span class="m"><span class="frac"><i>1</i><i><span class="v">b</span></i></span></span> e <span class="m"><span class="frac"><i>1</i><i><span class="v">c</span></i></span></span>.</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Transformação dos números 2, 3 e 4 em seus inversos e depois em pesos inteiros 6, 4 e 3 pela multiplicação pelo mínimo múltiplo comum 12">
+  <text x="14" y="24" class="svg-ttl" style="fill:var(--ink-2)">números do enunciado</text>
+  <rect x="14" y="34" width="60" height="34" rx="8" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4"/>
+  <text x="44" y="57" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">2</text>
+  <rect x="84" y="34" width="60" height="34" rx="8" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4"/>
+  <text x="114" y="57" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">3</text>
+  <rect x="154" y="34" width="60" height="34" rx="8" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.4"/>
+  <text x="184" y="57" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">4</text>
+  <path d="M114 74 L114 92" style="stroke:var(--c1);stroke-width:1.8" marker-end="url(#dv)"/>
+  <text x="230" y="88" class="svg-lbl" style="fill:var(--c1)">1 · troque pelo inverso</text>
+  <text x="14" y="112" class="svg-ttl" style="fill:var(--ink-2)">inversos</text>
+  <rect x="14" y="98" width="60" height="34" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="44" y="121" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">1/2</text>
+  <rect x="84" y="98" width="60" height="34" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="114" y="121" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">1/3</text>
+  <rect x="154" y="98" width="60" height="34" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="184" y="121" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">1/4</text>
+  <path d="M114 138 L114 156" style="stroke:var(--c3);stroke-width:1.8" marker-end="url(#dg)"/>
+  <text x="230" y="152" class="svg-lbl" style="fill:var(--c3)">2 · multiplique todos pelo MMC = 12</text>
+  <rect x="14" y="162" width="60" height="34" rx="8" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.8"/>
+  <text x="44" y="185" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">6</text>
+  <rect x="84" y="162" width="60" height="34" rx="8" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.8"/>
+  <text x="114" y="185" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">4</text>
+  <rect x="154" y="162" width="60" height="34" rx="8" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.8"/>
+  <text x="184" y="185" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">3</text>
+  <text x="230" y="180" class="svg-ttl" style="fill:var(--c3)">pesos finais · soma 13</text>
+  <text x="230" y="196" class="svg-lbl" style="fill:var(--ink-3)">agora é uma divisão direta comum</text>
+  <defs>
+    <marker id="dv" markerWidth="9" markerHeight="9" refX="4.5" refY="8" orient="auto"><polygon points="0,0 9,0 4.5,9" style="fill:var(--c1)"/></marker>
+    <marker id="dg" markerWidth="9" markerHeight="9" refX="4.5" refY="8" orient="auto"><polygon points="0,0 9,0 4.5,9" style="fill:var(--c3)"/></marker>
+  </defs>
+</svg>
+<figcaption><b>O atalho que evita trabalhar com frações.</b> Depois de trocar cada número pelo seu inverso, multiplicar todos pelo MMC dos denominadores devolve pesos inteiros sem alterar a proporção entre eles. Daí em diante, o problema é uma divisão direta comum.</figcaption>
+</figure>
+
+<div class="eq">
+  <span class="lbl">Dividir R$ 2.600 em partes inversamente proporcionais a 2, 3 e 4</span>
+  <p class="m">Pesos: 6, 4, 3 &nbsp;→&nbsp; soma 13 &nbsp;→&nbsp; <span class="v">k</span> = <span class="frac"><i>2600</i><i>13</i></span> = 200</p>
+  <p class="m">Partes: <strong>1.200</strong> &nbsp;·&nbsp; <strong>800</strong> &nbsp;·&nbsp; <strong>600</strong></p>
+  <p class="m" style="margin-top:10px">Conferência: 1.200 + 800 + 600 = 2.600 ✓ &nbsp;e o menor número (2) levou a maior parte ✓</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Inverter os valores não é inverter a ordem</span>
+  <p>Para dividir inversamente a <span class="m">2, 3, 4</span>, os pesos <strong>não</strong> são <span class="m">4, 3, 2</span>. São os inversos <span class="m"><span class="frac"><i>1</i><i>2</i></span>, <span class="frac"><i>1</i><i>3</i></span>, <span class="frac"><i>1</i><i>4</i></span></span>, que viram <span class="m">6, 4, 3</span>.</p>
+  <p>Com pesos <span class="m">4, 3, 2</span> as partes sairiam <span class="m">1.155</span>, <span class="m">866</span> e <span class="m">578</span> — números feios, o que já é um sinal de que o caminho foi o errado.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Divisão composta</h2>
+<p>Quando a repartição depende de <strong>dois critérios ao mesmo tempo</strong> — número de pessoas e dias trabalhados, capital e tempo, área e número de moradores.</p>
+
+<div class="box def">
+  <span class="tag">A regra</span>
+  <p><strong>Multiplique</strong> os termos correspondentes das duas séries. Os produtos são os pesos da divisão.</p>
+  <p>Se uma das séries for inversa, use os inversos dela antes de multiplicar.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">R$ 5.600 entre três equipes, proporcionalmente aos integrantes (2, 3, 5) e aos dias trabalhados (3, 4, 2)</span>
+  <p class="m">Produtos: 2·3 = 6 &nbsp;·&nbsp; 3·4 = 12 &nbsp;·&nbsp; 5·2 = 10</p>
+  <p class="m">Soma: 6 + 12 + 10 = 28 &nbsp;→&nbsp; <span class="v">k</span> = <span class="frac"><i>5600</i><i>28</i></span> = 200</p>
+  <p class="m">Partes: <strong>1.200</strong> &nbsp;·&nbsp; <strong>2.400</strong> &nbsp;·&nbsp; <strong>2.000</strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Multiplicar, nunca somar</span>
+  <p>O instinto manda somar as duas séries — <span class="m">2+3 = 5</span>, <span class="m">3+4 = 7</span>, <span class="m">5+2 = 7</span> — e o resultado fica errado. A equipe com 5 integrantes e 2 dias produziu <span class="m">5 × 2 = 10</span> “pessoas-dia”, não <span class="m">7</span>.</p>
+  <p>Pense em <strong>unidades combinadas</strong>: pessoa-dia, capital-mês, metro-quadrado-morador. Elas só existem por multiplicação.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Regra de sociedade</h2>
+<p>É a divisão proporcional aplicada a lucros e prejuízos: cada sócio recebe conforme o <strong>capital investido</strong>.</p>
+
+<div class="eq">
+  <span class="lbl">Três sócios investiram R$ 30.000, R$ 45.000 e R$ 75.000; o lucro foi de R$ 45.000</span>
+  <p class="m">Simplificando os pesos por 15.000: &nbsp; 2 : 3 : 5 &nbsp;→&nbsp; soma 10</p>
+  <p class="m"><span class="v">k</span> = <span class="frac"><i>45000</i><i>10</i></span> = 4.500</p>
+  <p class="m">Partes: <strong>9.000</strong> &nbsp;·&nbsp; <strong>13.500</strong> &nbsp;·&nbsp; <strong>22.500</strong></p>
+</div>
+
+<p>Prejuízo funciona igual: quem investiu mais absorve a maior parte da perda.</p>
+
+<h3>Quando os sócios ficam tempos diferentes</h3>
+<p>Aí a sociedade vira uma divisão composta, e o peso passa a ser <strong>capital × tempo</strong>:</p>
+
+<div class="eq">
+  <span class="lbl">A investiu 20 mil por 12 meses, B investiu 30 mil por 10 meses, C investiu 15 mil por 8 meses</span>
+  <p class="m">Pesos: 240.000 &nbsp;·&nbsp; 300.000 &nbsp;·&nbsp; 120.000</p>
+  <p class="m">Simplificando por 60.000: &nbsp; 4 : 5 : 2 &nbsp;→&nbsp; soma 11</p>
+  <p class="m">Com lucro de R$ 33.000: &nbsp; <span class="v">k</span> = 3.000 &nbsp;→&nbsp; <strong>12.000</strong> · <strong>15.000</strong> · <strong>6.000</strong></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Capital maior nem sempre significa parte maior</span>
+  <p>Um sócio com 20 mil por 12 meses tem peso <span class="m">240.000</span>. Outro com 30 mil por apenas 8 meses tem o mesmo <span class="m">240.000</span> — e os dois recebem partes <strong>iguais</strong>, apesar de capitais diferentes. É o produto que manda, não cada fator isolado.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Conferências que pegam erro</h2>
+<p>Três verificações rápidas que custam segundos e evitam marcar a alternativa errada.</p>
+
+<div class="box def">
+  <span class="tag">1 · A soma das partes tem de dar o total</span>
+  <p>É a checagem definitiva. Se não fechar, o erro está no <span class="m"><span class="v">k</span></span> ou nos pesos — e ainda dá tempo de refazer.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">2 · A ordem das partes tem de fazer sentido</span>
+  <p>Na divisão <strong>direta</strong>, o maior peso recebe a maior parte. Na <strong>inversa</strong>, o menor número recebe a maior parte. Se estiver ao contrário, o método foi trocado.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">3 · Leia de novo qual parte foi pedida</span>
+  <p>Muitas questões calculam todas as partes corretamente e erram na hora de escolher: pediram a <em>menor</em>, a <em>diferença</em>, a parte do <em>segundo</em> sócio. Sublinhe isso no enunciado antes de calcular.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Não arredonde o k no meio do caminho</span>
+  <p>Se o <span class="m"><span class="v">k</span></span> não for exato, mantenha-o como fração até o fim. Arredondar antes faz a soma das partes não fechar com o total, e é a causa mais comum de resultado “quase certo”.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> O que parece divisão proporcional e não é</h2>
+<p>O ENEM monta enunciados que se apresentam como repartição, mas em que a proporcionalidade não vale — ou não vale sobre o total.</p>
+
+<div class="box warn">
+  <span class="tag">A parte fixa antes da divisão</span>
+  <p>“Cada um recebe R$ 1.000 e o <strong>restante</strong> é dividido em partes proporcionais a 2, 3 e 5.”</p>
+  <p>A proporção incide apenas sobre o que sobrou. <strong>Separe a parte fixa primeiro</strong>, divida o restante e só então some a parte fixa de volta a cada um.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Por que não é divisão proporcional simples</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Imposto por faixas</strong></td><td>Cada faixa tem alíquota diferente, então não existe um <span class="m"><span class="v">k</span></span> único.</td></tr>
+    <tr><td><strong>Rateio com valor mínimo</strong></td><td>Há uma parcela fixa cobrada de todos antes de qualquer proporção.</td></tr>
+    <tr><td><strong>Herança com legítima</strong></td><td>Metade é dividida igualmente entre os herdeiros necessários; só a outra metade admite outra regra.</td></tr>
+    <tr><td><strong>Desconto escalonado</strong></td><td>O percentual muda conforme a quantidade, quebrando a razão constante.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Dividir em partes iguais é um caso particular</span>
+  <p>Repartir igualmente é dividir proporcionalmente a <span class="m">1, 1, 1</span>. Não é uma regra diferente — é a mesma, com todos os pesos iguais.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Simplifique os pesos antes de somar</span>
+  <p>Capitais como <span class="m">30.000 : 45.000 : 75.000</span> viram <span class="m">2 : 3 : 5</span> dividindo pelo MDC. A divisão é a mesma e a conta fica trivial.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Ache o k pela parte conhecida, quando o total não for dado</span>
+  <p>Se a questão informa uma das partes em vez do total, use-a para achar o <span class="m"><span class="v">k</span></span> e depois multiplique pela soma dos pesos para obter o total.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Trabalhe com a diferença dos pesos</span>
+  <p>Perguntas do tipo “quanto o primeiro recebeu a mais que o terceiro” saem em uma linha: <span class="m">(peso₁ − peso₃) · <span class="v">k</span></span>.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Na inversa, usar os próprios números como pesos</span> &nbsp;→&nbsp; <span class="c">use os inversos</span></span><small>Inversamente a 2, 3, 4 dá pesos 6, 4, 3 — e não 2, 3, 4 nem 4, 3, 2.</small></li>
+  <li><span><span class="x">Inverter a ordem em vez dos valores</span> &nbsp;→&nbsp; <span class="c">4, 3, 2 não é o inverso de 2, 3, 4</span></span><small>Os inversos são 1/2, 1/3 e 1/4, que multiplicados pelo MMC dão 6, 4 e 3.</small></li>
+  <li><span><span class="x">Na composta, somar as duas séries</span> &nbsp;→&nbsp; <span class="c">multiplique-as</span></span><small>Cinco pessoas por dois dias produzem 10 pessoas-dia, não 7.</small></li>
+  <li><span><span class="x">Dividir o total pelo número de partes</span> &nbsp;→&nbsp; <span class="c">divida pela soma dos pesos</span></span><small>São três pessoas, mas nove unidades de proporção em 2 : 3 : 4.</small></li>
+  <li><span><span class="x">Aplicar a proporção sobre o total quando há parte fixa</span> &nbsp;→&nbsp; <span class="c">separe a parte fixa antes</span></span><small>A proporção incide só sobre o restante; a parte fixa volta a ser somada no fim.</small></li>
+  <li><span><span class="x">Arredondar o k no meio do caminho</span> &nbsp;→&nbsp; <span class="c">mantenha exato até o fim</span></span><small>É o motivo mais comum de a soma das partes não fechar com o total.</small></li>
+  <li><span><span class="x">Responder a parte errada</span> &nbsp;→&nbsp; <span class="c">releia o que foi pedido</span></span><small>Menor parte, diferença entre partes e parte do segundo sócio são perguntas diferentes.</small></li>
+  <li><span><span class="x">Simplificar uma série e esquecer a outra</span> &nbsp;→&nbsp; <span class="c">simplifique só depois de multiplicar</span></span><small>Na divisão composta, faça os produtos primeiro e simplifique os pesos finais.</small></li>
+  <li><span><span class="x">Não conferir a soma das partes</span> &nbsp;→&nbsp; <span class="c">sempre confira</span></span><small>É a verificação que pega qualquer erro de k, de peso ou de método.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em todas, confira a soma das partes antes de escolher a alternativa.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Divisão direta</span>
+    <p class="enun">Um prêmio de R$ 3.600,00 será dividido entre três participantes em partes diretamente proporcionais a 2, 3 e 4. O participante que receber a maior quantia ficará com</p>
+    <ol class="alt"><li>R$ 800,00</li><li>R$ 1.200,00</li><li>R$ 1.440,00</li><li>R$ 1.600,00</li><li>R$ 1.800,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Some os pesos e ache o <span class="m"><span class="v">k</span></span>:</p>
+      <p class="m">2 + 3 + 4 = 9 &nbsp;→&nbsp; <span class="v">k</span> = 3600 ÷ 9 = 400</p>
+      <p>A maior parte cabe ao maior peso:</p>
+      <p class="m">4 · 400 = R$ 1.600,00</p>
+      <p><strong>Conferência:</strong> 800 + 1.200 + 1.600 = 3.600 ✓</p>
+      <p>A alternativa E é de quem dividiu o total por 2 em vez de usar os pesos.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Divisão inversa</span>
+    <p class="enun">Uma quantia de R$ 2.600,00 será repartida entre três funcionários em partes inversamente proporcionais aos números 2, 3 e 4. A maior parte corresponde a</p>
+    <ol class="alt"><li>R$ 600,00</li><li>R$ 800,00</li><li>R$ 1.100,00</li><li>R$ 1.200,00</li><li>R$ 1.300,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Troque cada número pelo inverso e multiplique todos pelo MMC dos denominadores, que é 12:</p>
+      <p class="m"><span class="frac"><i>1</i><i>2</i></span>, <span class="frac"><i>1</i><i>3</i></span>, <span class="frac"><i>1</i><i>4</i></span> &nbsp;→&nbsp; pesos 6, 4, 3</p>
+      <p class="m">Soma: 13 &nbsp;→&nbsp; <span class="v">k</span> = 2600 ÷ 13 = 200</p>
+      <p class="m">Partes: 6·200 = 1.200 &nbsp;·&nbsp; 4·200 = 800 &nbsp;·&nbsp; 3·200 = 600</p>
+      <p><strong>Duas conferências:</strong> a soma dá 2.600 ✓ e a maior parte coube ao <em>menor</em> número, como deve ser numa divisão inversa ✓</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Regra de sociedade</span>
+    <p class="enun">Três sócios investiram, respectivamente, R$ 30.000,00, R$ 45.000,00 e R$ 75.000,00 na abertura de uma empresa. Ao fim do primeiro ano, o lucro de R$ 45.000,00 foi dividido proporcionalmente ao capital investido. O segundo sócio recebeu</p>
+    <ol class="alt"><li>R$ 9.000,00</li><li>R$ 13.500,00</li><li>R$ 15.000,00</li><li>R$ 18.000,00</li><li>R$ 22.500,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Antes de qualquer conta, <strong>simplifique os pesos</strong>. Dividindo os três capitais por 15.000:</p>
+      <p class="m">30.000 : 45.000 : 75.000 &nbsp;=&nbsp; 2 : 3 : 5</p>
+      <p class="m">Soma: 10 &nbsp;→&nbsp; <span class="v">k</span> = 45000 ÷ 10 = 4.500</p>
+      <p class="m">Segundo sócio: 3 · 4.500 = R$ 13.500,00</p>
+      <p><strong>Conferência:</strong> 9.000 + 13.500 + 22.500 = 45.000 ✓</p>
+      <p>A alternativa C é a divisão igualitária do lucro por três — ignorando os capitais.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Divisão composta</span>
+    <p class="enun">Uma verba de R$ 5.600,00 será distribuída entre três equipes, proporcionalmente ao número de integrantes de cada uma — 2, 3 e 5 — e ao número de dias trabalhados — 3, 4 e 2, respectivamente. A equipe que receberá a maior verba ficará com</p>
+    <ol class="alt"><li>R$ 1.200,00</li><li>R$ 1.600,00</li><li>R$ 2.000,00</li><li>R$ 2.400,00</li><li>R$ 2.800,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Dois critérios ao mesmo tempo: <strong>multiplique</strong> os termos correspondentes.</p>
+      <p class="m">2·3 = 6 &nbsp;·&nbsp; 3·4 = 12 &nbsp;·&nbsp; 5·2 = 10</p>
+      <p class="m">Soma: 28 &nbsp;→&nbsp; <span class="v">k</span> = 5600 ÷ 28 = 200</p>
+      <p class="m">Partes: 1.200 &nbsp;·&nbsp; 2.400 &nbsp;·&nbsp; 2.000</p>
+      <p>A maior é R$ 2.400,00, da segunda equipe.</p>
+      <p><strong>Repare no que a multiplicação revela:</strong> a terceira equipe tem mais integrantes, mas trabalhou menos dias — e acaba com menos verba que a segunda. Somando as séries, esse efeito se perderia.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Capital e tempo</span>
+    <p class="enun">Em uma sociedade, o sócio A entrou com R$ 20.000,00 e permaneceu 12 meses; o sócio B, com R$ 30.000,00 por 10 meses; e o sócio C, com R$ 15.000,00 por 8 meses. O lucro de R$ 33.000,00 foi dividido proporcionalmente ao capital e ao tempo de permanência. O sócio B recebeu</p>
+    <ol class="alt"><li>R$ 6.000,00</li><li>R$ 11.000,00</li><li>R$ 12.000,00</li><li>R$ 15.000,00</li><li>R$ 16.500,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O peso de cada sócio é o produto <strong>capital × tempo</strong>:</p>
+      <p class="m">A: 20.000 · 12 = 240.000</p>
+      <p class="m">B: 30.000 · 10 = 300.000</p>
+      <p class="m">C: 15.000 · 8 = 120.000</p>
+      <p>Simplificando por 60.000:</p>
+      <p class="m">4 : 5 : 2 &nbsp;→&nbsp; soma 11 &nbsp;→&nbsp; <span class="v">k</span> = 33000 ÷ 11 = 3.000</p>
+      <p class="m">Sócio B: 5 · 3.000 = R$ 15.000,00</p>
+      <p><strong>Conferência:</strong> 12.000 + 15.000 + 6.000 = 33.000 ✓</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Achar o total pela parte</span>
+    <p class="enun">Um valor foi dividido entre três pessoas em partes diretamente proporcionais a 3, 5 e 7. Sabendo que a menor parte foi de R$ 1.800,00, o valor total dividido foi de</p>
+    <ol class="alt"><li>R$ 5.400,00</li><li>R$ 7.200,00</li><li>R$ 9.000,00</li><li>R$ 10.800,00</li><li>R$ 12.600,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Aqui o total é a incógnita, mas uma das partes é conhecida — e ela dá o <span class="m"><span class="v">k</span></span>. A menor parte corresponde ao menor peso, que é 3:</p>
+      <p class="m">3 · <span class="v">k</span> = 1800 &nbsp;→&nbsp; <span class="v">k</span> = 600</p>
+      <p>Com o <span class="m"><span class="v">k</span></span> em mãos, o total é o <span class="m"><span class="v">k</span></span> multiplicado pela soma dos pesos:</p>
+      <p class="m">3 + 5 + 7 = 15 &nbsp;→&nbsp; total = 15 · 600 = R$ 9.000,00</p>
+      <p><strong>Conferência:</strong> as partes seriam 1.800, 3.000 e 4.200, que somam 9.000 ✓</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Parte fixa antes da proporção</span>
+    <p class="enun">Uma quantia de R$ 10.000,00 será distribuída entre três pessoas da seguinte forma: cada uma recebe inicialmente R$ 1.000,00 e o restante é dividido em partes diretamente proporcionais a 2, 3 e 5. A terceira pessoa receberá, no total,</p>
+    <ol class="alt"><li>R$ 3.500,00</li><li>R$ 4.000,00</li><li>R$ 4.500,00</li><li>R$ 5.000,00</li><li>R$ 6.000,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Separe a parte fixa primeiro.</strong> Três pessoas recebem R$ 1.000,00 cada:</p>
+      <p class="m">10.000 − 3.000 = 7.000 a dividir proporcionalmente</p>
+      <p class="m">2 + 3 + 5 = 10 &nbsp;→&nbsp; <span class="v">k</span> = 7000 ÷ 10 = 700</p>
+      <p class="m">Parte proporcional da terceira: 5 · 700 = 3.500</p>
+      <p>Agora some a parte fixa de volta:</p>
+      <p class="m">1.000 + 3.500 = R$ 4.500,00</p>
+      <p>A alternativa A é de quem esqueceu de somar os R$ 1.000,00. A alternativa D é de quem aplicou a proporção sobre os R$ 10.000,00 inteiros.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Bônus por desempenho</span>
+    <p class="enun">Uma empresa distribuirá um bônus de R$ 4.200,00 entre três funcionários, em partes inversamente proporcionais ao número de faltas de cada um no semestre: 2, 3 e 6 faltas. O funcionário com 3 faltas receberá</p>
+    <ol class="alt"><li>R$ 700,00</li><li>R$ 1.050,00</li><li>R$ 1.400,00</li><li>R$ 1.800,00</li><li>R$ 2.100,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Menos faltas deve significar bônus maior — daí a divisão ser inversa. Inversos de 2, 3 e 6, multiplicados pelo MMC 6:</p>
+      <p class="m"><span class="frac"><i>1</i><i>2</i></span>, <span class="frac"><i>1</i><i>3</i></span>, <span class="frac"><i>1</i><i>6</i></span> &nbsp;→&nbsp; pesos 3, 2, 1</p>
+      <p class="m">Soma: 6 &nbsp;→&nbsp; <span class="v">k</span> = 4200 ÷ 6 = 700</p>
+      <p class="m">Partes: 2.100 &nbsp;·&nbsp; 1.400 &nbsp;·&nbsp; 700</p>
+      <p>O funcionário com 3 faltas tem peso 2 e recebe R$ 1.400,00.</p>
+      <p><strong>Conferência de sentido:</strong> quem faltou menos (2) levou mais (2.100); quem faltou mais (6) levou menos (700) ✓</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Diferença entre partes</span>
+    <p class="enun">Uma herança de R$ 240.000,00 foi dividida entre três herdeiros em partes diretamente proporcionais às suas idades: 15, 20 e 25 anos. A diferença entre a maior e a menor parte recebida foi de</p>
+    <ol class="alt"><li>R$ 20.000,00</li><li>R$ 40.000,00</li><li>R$ 60.000,00</li><li>R$ 80.000,00</li><li>R$ 100.000,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">15 + 20 + 25 = 60 &nbsp;→&nbsp; <span class="v">k</span> = 240000 ÷ 60 = 4.000</p>
+      <p><strong>Caminho curto:</strong> a diferença entre duas partes é a diferença dos pesos vezes o <span class="m"><span class="v">k</span></span>.</p>
+      <p class="m">(25 − 15) · 4.000 = 10 · 4.000 = R$ 40.000,00</p>
+      <p><strong>Caminho longo, para conferir:</strong> as partes são 60.000, 80.000 e 100.000, que somam 240.000 ✓, e <span class="m">100.000 − 60.000 = 40.000</span> ✓</p>
+      <p>As alternativas C e E são as partes individuais — a armadilha de quem calcula tudo certo e responde a pergunta errada.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o <span class="m"><span class="v">k</span></span> dividindo o total pela <strong>soma dos pesos</strong>, não pelo número de partes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei explicar por que dividir pela soma funciona, pela propriedade dos antecedentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Simplifico pesos grandes pelo MDC antes de somar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo divisão inversa trocando pelos inversos e multiplicando pelo MMC</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que inverter os valores não é o mesmo que inverter a ordem</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Na divisão composta, <strong>multiplico</strong> os termos correspondentes das séries</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a regra de sociedade com capitais e com capital × tempo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho o total a partir de uma única parte conhecida</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Separo a parte fixa antes de aplicar a proporção sobre o restante</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo diferenças entre partes multiplicando a diferença dos pesos pelo <span class="m"><span class="v">k</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro sempre se a soma das partes reproduz o total</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro se a ordem das partes é coerente com o tipo de divisão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Releio qual parte foi pedida antes de marcar a alternativa</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de <strong>divisão inversa</strong> e as de <strong>divisão composta</strong> — são as duas em que o caminho instintivo leva à alternativa errada. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>45 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-08-divisao-proporcional.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-08";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

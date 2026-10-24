@@ -1,0 +1,61 @@
+Produto de cento e cinquenta reais, um cupom de vinte reais e dez por cento de desconto. Tanto faz a ordem? Não: numa ordem você paga cento e dezessete reais, na outra, cento e quinze. Hoje você descobre por quê, e qual ordem pedir no caixa.
+
+Ao final desta aula, você vai calcular f de g de x em um número e montar a lei da composta, sem trocar a ordem das máquinas.
+
+Antes, três lembretes rápidos. Da série de Conceito de Função: calcular f de cinco é trocar o x por cinco. E dá para trocar o x por uma expressão inteira, sempre entre parênteses. Da série de Expressões algébricas: dois x mais um, ao quadrado, é quatro x ao quadrado, mais quatro x, mais um. Com o termo do meio.
+
+Imagine uma fábrica. A primeira máquina corta a peça. A segunda pinta. A peça que sai da primeira entra direto na segunda. Agora o caixa de uma loja: a etiqueta passa por dois carimbos, o do cupom e o dos dez por cento. Nos dois casos, uma etapa alimenta a outra.
+
+E como a matemática escreve essa fila? Assim: f de g de x. Isso se chama função composta: uma função aplicada ao resultado de outra. Também se escreve f bola g, com uma bolinha no meio. A g é a função de dentro: ela age primeiro. A f é a função de fora: age depois.
+
+Repare numa coisa estranha. Você escreve o f primeiro, mas quem age primeiro é o g. f de g de x se lê de dentro para fora. E um cuidado: o que sai de g precisa ser um número que f aceita. Se f não aceita, a fila trava.
+
+Vamos ligar as máquinas. A g faz dois x mais um. A f faz x ao quadrado, menos um. Entra o número dois na g: dois vezes dois, mais um: sai cinco. O cinco desce pela esteira e entra na f: cinco ao quadrado, menos um: sai vinte e quatro. Então f de g de dois é vinte e quatro.
+
+E se as máquinas trocarem de lugar? Agora o dois entra primeiro na f: dois ao quadrado, menos um: sai três. O três entra na g: dois vezes três, mais um: sai sete. Mesmo número na entrada, mesmas máquinas, e o resultado mudou: vinte e quatro virou sete.
+
+E se a prova perguntar só f de g de três? Atalho: número antes de lei. Não monte fórmula nenhuma. Calcule g de três: dois vezes três, mais um: sete. Jogue o sete na f: sete ao quadrado, menos um: quarenta e oito. Dois passos curtos, e quase nenhuma chance de errar a álgebra.
+
+E quando a pergunta pede a fórmula? Aí você monta a lei da composta: a regra que liga direto a entrada à saída. Na f, troque cada x pela g inteira, entre parênteses: dois x mais um, ao quadrado, menos um. Desenvolva com o termo do meio: quatro x ao quadrado, mais quatro x, mais um, menos um. O mais um e o menos um se anulam: quatro x ao quadrado, mais quatro x.
+
+E a outra ordem, g de f de x? Agora a de dentro é a f. Na g, troque o x por x ao quadrado menos um, entre parênteses: dois vezes isso, mais um. Dois x ao quadrado, menos dois, mais um: dois x ao quadrado, menos um. Duas leis diferentes. Com x igual a dois: uma dá vinte e quatro, a outra dá sete.
+
+Isso tem nome. Uma operação é comutativa quando a ordem não muda o resultado, como na soma: dois mais três é três mais dois. A composição, em geral, não é comutativa. f bola g é diferente de g bola f. Pense em meia e sapato: meia e depois sapato, tudo certo. Sapato e depois meia, não dá. A ordem muda o resultado.
+
+E como saber se a lei que você montou está certa? Atalho: confira com um número. Ponha x igual a dois na lei: quatro vezes quatro, mais quatro vezes dois: vinte e quatro. É o mesmo vinte e quatro que as máquinas deram. Bateu: a lei está certa.
+
+E se eu multiplicar f de dois por g de dois? f de dois é três. g de dois é cinco. Três vezes cinco: quinze. Nada a ver com vinte e quatro. Compor não é multiplicar. Na composição, o resultado de uma máquina entra na outra. Não se juntam dois resultados separados.
+
+Sua vez. Com f de x igual a três x e g de x igual a x mais quatro, calcule f de g de um e g de f de um. Pause e tente.
+
+Vamos juntos. f de g de um: a de dentro é a g. g de um, um mais quatro, cinco. Depois f de cinco, três vezes cinco, quinze. g de f de um: agora a de dentro é a f. f de um, três. Depois g de três, três mais quatro, sete. Ordens diferentes, resultados diferentes.
+
+Vamos guardar em três frases. Um: o que sai de uma máquina entra na outra. Dois: leia de dentro para fora: a de dentro age primeiro. Três: trocou a ordem, trocou o resultado.
+
+Agora, os quatro erros clássicos. Primeiro: em f de g de x, aplicar a f primeiro. Parece certo, porque a gente lê da esquerda para a direita, e o f vem antes. Mas a de dentro age primeiro: comece pela g.
+
+Segundo: achar que f bola g é igual a g bola f. Parece certo, porque na soma e na multiplicação a ordem não importa. Mas a composição não é comutativa. Com x igual a dois, vinte e quatro contra sete.
+
+Terceiro: multiplicar f de x por g de x em vez de substituir. Parece certo, porque f de g lembra f vezes g, como dois de três lembra dois vezes três. Mas compor é colocar uma dentro da outra. O produto deu quinze; a composta, vinte e quatro.
+
+Quarto: em f de dois x mais um, elevar só o x ao quadrado: dois x ao quadrado, mais um, menos um. Parece certo, porque na f o quadrado está grudado no x. Mas o x foi trocado pela expressão inteira. Ponha os parênteses: dois x mais um, ao quadrado, menos um.
+
+Agora, uma questão no estilo do ENEM, do nosso material. Esta, eu resolvo com você. Considere as funções f de x igual a x ao quadrado, menos um, e g de x igual a dois x mais três, definidas para todo x real. O valor de f de g de dois é: A: nove. B: dez. C: vinte e um. D: vinte e quatro. E: quarenta e oito. Pause o vídeo e tente.
+
+A pergunta é um número só. Então: número antes de lei. De dentro para fora: primeiro a g. g de dois, dois vezes dois, mais três: sete. Agora o sete entra na f: sete ao quadrado, menos um: quarenta e nove menos um, quarenta e oito. Letra E!
+
+E repare: cada alternativa errada é um erro clássico. A A, nove, trocou a ordem: fez g de f de dois. A B, dez, somou f de dois com g de dois: três mais sete. A C, vinte e um, multiplicou: três vezes sete. E a D, vinte e quatro, desenvolveu dois x mais três, ao quadrado, sem o termo do meio: dezesseis mais nove, menos um.
+
+E a última é sua: a do gancho. Uma loja oferece, para um produto de cento e cinquenta reais, um cupom que abate vinte reais do preço e uma promoção de dez por cento de desconto. O sistema permite aplicar os dois, em qualquer ordem, sempre sobre o valor da etapa anterior. Comparando as duas ordens, conclui-se que: A: o preço final é o mesmo nas duas ordens. B: aplicar o cupom antes é dois reais mais barato. C: aplicar o cupom antes é dezoito reais mais barato. D: aplicar a porcentagem antes é dois reais mais barato. E: aplicar a porcentagem antes é vinte reais mais barato. Pause e resolva.
+
+Conferindo. São duas máquinas: o cupom, c de p igual a p menos vinte, e o desconto, d de p igual a zero vírgula nove p. Cupom antes: cento e cinquenta menos vinte, cento e trinta. Noventa por cento disso: cento e dezessete. Porcentagem antes: noventa por cento de cento e cinquenta, cento e trinta e cinco. Menos vinte: cento e quinze. A porcentagem antes sai dois reais mais barato. Letra D!
+
+E por que dois reais? Monte as duas leis. Cupom antes: zero vírgula nove p, menos dezoito. Porcentagem antes: zero vírgula nove p, menos vinte. Com o cupom antes, os dez por cento caem também sobre os vinte reais do cupom, e ele passa a valer só dezoito. Atalho de caixa: peça a porcentagem primeiro, e o cupom depois.
+
+E as erradas? A A supõe que a composição é comutativa. A B inverte a conclusão. A C confunde os dezoito reais do cupom com a diferença entre as ordens. A E toma o cupom inteiro como diferença. E na série de Descontos você viu que dois descontos em porcentagem podem vir em qualquer ordem. Isso continua certo: multiplicar comuta. O que não comuta é misturar um desconto em reais com um em porcentagem.
+
+Para fechar, as mesmas três frases. Um: o que sai de uma máquina entra na outra. Dois: leia de dentro para fora: a de dentro age primeiro. Três: trocou a ordem, trocou o resultado.
+
+Uma fábrica faz quarenta peças por hora, e cada peça custa três reais mais um custo fixo. Qual é o custo em função das horas, sem passar pelas peças? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: no seu dia a dia, onde a ordem das etapas muda o resultado? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

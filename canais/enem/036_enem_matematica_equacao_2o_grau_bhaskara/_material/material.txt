@@ -1,0 +1,267 @@
+Equação do 2º Grau
+Matemática › Álgebra e Funções › Assunto 3 de 18
+Equação do 2º grau e fórmula de Bhaskara
+Quando a incógnita aparece ao quadrado, isolar o x não basta: a equação pode ter duas soluções, uma ou nenhuma. Este assunto ensina a resolver qualquer equação do 2º grau, a escolher o caminho mais curto (fatorar, soma e produto ou Bhaskara) e a decidir qual raiz faz sentido no problema.
+Semana
+6 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Expressões algébricas e produtos notáveis · Equações do 1º grau
+Destrava
+Função quadrática, problemas de área, lançamentos e lucro máximo
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM raramente escreve “resolva x² − 5x + 4 = 0”. A equação do 2º grau aparece no meio de um problema, e o trabalho é montá-la, resolvê-la e interpretar as raízes. As formas mais comuns:
+Áreas: um terreno ampliado, uma moldura, uma calçada de largura x em volta de um jardim.
+Movimento: o instante em que um objeto lançado atinge certa altura, com h(t) = v_0t − 5t².
+Contagem: número de jogos de um campeonato, de apertos de mão ou de diagonais, que dão expressões como (n(n − 1)/2).
+Economia: quantidade vendida para que o lucro seja zero, quando o preço cai à medida que se vende mais.
+Leitura das raízes: quantas soluções existem, qual delas serve e qual deve ser descartada (tempo negativo, medida negativa).
+O que rende mais aqui
+Três hábitos. Igualar a zero antes de qualquer coisa: ax² + bx + c = 0. Escolher o caminho: incompleta se resolve por fatoração, raízes inteiras saem por soma e produto, o resto vai para Bhaskara. E voltar ao enunciado: a raiz negativa de uma medida não é resposta, mas também não pode ser trocada de sinal.
+02 Forma geral e coeficientes
+Definição
+Equação do 2º grau é toda equação que pode ser escrita como ax² + bx + c = 0, com a ≠ 0. O número a acompanha x², o b acompanha x e o c é o termo independente. As soluções se chamam raízes.
+Se a = 0, o termo ao quadrado some e a equação vira do 1º grau. Antes de ler os coeficientes, passe tudo para um lado e organize na ordem x², x, número:
+ | Equação dada | Na forma geral | a | b | c
+ | 2x² − 7x + 3 = 0 | já está | 2 | −7 | 3
+ | 3x − x² = 2 | −x² + 3x − 2 = 0 | −1 | 3 | −2
+ | x² = 5x | x² − 5x = 0 | 1 | −5 | 0
+ | (x + 1)² = 9 | x² + 2x − 8 = 0 | 1 | 2 | −8
+O sinal faz parte do coeficiente
+Em x² − 7x + 10 = 0, o b é −7, não 7. Quase todos os erros na fórmula de Bhaskara começam aqui: o sinal é esquecido na leitura e o −b sai trocado. Se preferir, multiplique a equação inteira por −1 quando a for negativo; as raízes não mudam.
+03 Equações incompletas: sem fórmula
+Quando b = 0 ou c = 0, a equação é incompleta, e há caminhos mais curtos que Bhaskara.
+c = 0 · fator comum e produto nulo
+3x² − 12x = 0 → 3x(x − 4) = 0 → x = 0 ou x = 4
+Um produto só é zero se um dos fatores for zero. Uma das raízes é sempre 0; a outra é −(b/a).
+b = 0 · isolar x² e tirar a raiz com ±
+2x² − 50 = 0 → x² = 25 → x = 5 ou x = −5
+As raízes são simétricas. Se x² der negativo, como em x² + 9 = 0, não há raiz real.
+Nunca divida os dois lados por x
+De 3x² = 12x, dividir por x dá x = 4 e faz a raiz x = 0 desaparecer, porque dividir por x supõe que x ≠ 0. Passe tudo para um lado e coloque x em evidência.
+O mesmo produto nulo resolve qualquer equação que já venha fatorada: (x − 2)(x + 7) = 0 tem raízes 2 e −7, sem conta nenhuma. Desenvolver para depois aplicar Bhaskara é trabalho jogado fora.
+04 A fórmula de Bhaskara
+Para a equação completa, a fórmula resolve qualquer caso. Primeiro se calcula o discriminante Δ (delta); depois, as raízes.
+Discriminante e raízes
+Δ = b² − 4ac x = (−b ± √(Δ)/2a)
+Exemplo · 2x² − 7x + 3 = 0, com a = 2, b = −7, c = 3
+Δ = (−7)² − 4 · 2 · 3 = 49 − 24 = 25
+x = (7 ± 5/4) → x_1 = (12/4) = 3 e x_2 = (2/4) = (1/2)
+Conferência: 2 · 9 − 21 + 3 = 0. Substituir uma raiz na equação leva dez segundos e pega quase todo erro de sinal.
+De onde vem a fórmula
+Ela é o produto notável quadrado da soma usado ao contrário (veja Expressões algébricas e produtos notáveis). Multiplicando ax² + bx + c = 0 por 4a e somando b² dos dois lados, o lado esquerdo vira um quadrado perfeito:
+4a²x² + 4abx + b² = b² − 4ac → (2ax + b)² = Δ → 2ax + b = ±√(Δ)
+Isolando x, sai a fórmula. Por isso o ±: um número positivo tem duas raízes quadradas, uma positiva e outra negativa.
+Três tropeços clássicos na fórmula
+1. Com b = −7, o b² é (−7)² = 49, positivo. 2. O −b de b = −7 é +7. 3. O 2a divide o numerador inteiro, não só a raiz: (7 + 5) ÷ 4, e não 7 + 5 ÷ 4.
+05 O discriminante decide quantas raízes existem
+O Δ fica dentro de uma raiz quadrada. Por isso, só olhando o sinal dele já se sabe quantas soluções reais a equação tem, antes de qualquer outra conta.
+ | Sinal de Δ | Raízes reais | Exemplo
+ | Δ > 0 | duas, diferentes | x² − 5x + 4 = 0: Δ = 9, raízes 1 e 4
+ | Δ = 0 | uma só (raiz dupla) | x² − 6x + 9 = 0: Δ = 0, raiz 3
+ | Δ < 0 | nenhuma | x² + 2x + 5 = 0: Δ = −16
+O Δ diz quantas vezes a parábola toca o eixo x. As raízes da equação são os pontos em que o gráfico de y = ax² + bx + c cruza o eixo horizontal: duas vezes, uma vez (tangente) ou nenhuma. O estudo completo desse gráfico está em Função quadrática, próximos assuntos do bloco.
+Questões de parâmetro
+“Para que valor de k a equação tem uma única raiz?” pede Δ = 0. “Duas raízes reais distintas” pede Δ > 0; “nenhuma raiz real”, Δ < 0. Em x² − 6x + k = 0: 36 − 4k = 0, logo k = 9.
+06 Soma e produto: as raízes de cabeça
+Das duas raízes da fórmula sai uma relação que dispensa o Δ quando as raízes são inteiras:
+Relações de Girard para o 2º grau
+S = x_1 + x_2 = −(b/a) P = x_1 · x_2 = (c/a)
+Com a = 1, a equação é x² − Sx + P = 0: procure dois números com essa soma e esse produto.
+ | Equação | Soma e produto | Raízes
+ | x² − 7x + 10 = 0 | soma 7, produto 10 | 2 e 5
+ | x² + x − 12 = 0 | soma −1, produto −12 | 3 e −4
+ | x² + 8x + 15 = 0 | soma −8, produto 15 | −3 e −5
+ | 2x² − 7x + 3 = 0 | soma (7/2), produto (3/2) | 3 e (1/2)
+Sinais das raízes sem resolver
+Produto negativo: uma raiz positiva e uma negativa. Produto positivo e soma positiva: as duas positivas. Produto positivo e soma negativa: as duas negativas. Isso elimina alternativas em segundos.
+O caminho inverso também cai: para montar uma equação com raízes 3 e −5, faça S = −2 e P = −15, e escreva x² + 2x − 15 = 0. Equivalente é a forma fatorada:
+ax² + bx + c = a(x − x_1)(x − x_2) ex.: 2x² − 7x + 3 = 2(x − 3)(x − (1/2)) = (x − 3)(2x − 1)
+07 Do texto à equação: modelagem
+A equação do 2º grau nasce quando duas grandezas desconhecidas se multiplicam: largura vezes comprimento, número de times vezes número de adversários, preço vezes quantidade.
+Uma calçada de largura x em volta de um jardim de 10 m por 6 m. Cada dimensão cresce 2x, uma largura de cada lado. Se a área total for 140 m²: (10 + 2x)(6 + 2x) = 140, que vira x² + 8x − 20 = 0, com raízes 2 e −10. A calçada mede 2 m.
+Campeonato em turno único com n times
+jogos = (n(n − 1)/2)
+Cada time enfrenta os outros n − 1, e cada jogo foi contado duas vezes (A × B e B × A). Com 45 jogos: n² − n − 90 = 0, Δ = 361, n = (1 + 19/2) = 10 times. Em turno e returno não se divide por 2.
+Descartar a raiz não é trocar o sinal dela
+No jardim, a raiz −10 não serve, porque uma largura não é negativa. Ela é descartada; a resposta é a outra raiz, 2. Escolher “10 m” porque o número apareceu na conta é o distrator mais comum desse tipo de questão.
+08 Equações que viram do 2º grau
+Algumas equações de aparência diferente se resolvem com uma troca de variável.
+Biquadrada · x⁴ − 13x² + 36 = 0
+Chame x² = y. A equação vira y² − 13y + 36 = 0, com y = 4 ou y = 9 (soma 13, produto 36).
+x² = 4 → x = ±2 x² = 9 → x = ±3
+Quatro raízes reais. Se algum y der negativo, ele não gera raiz real, porque x² nunca é negativo.
+Com x no denominador · 6/x = x − 1
+Multiplique por x (com x ≠ 0): 6 = x² − x, ou x² − x − 6 = 0, raízes 3 e −2. Ambas servem, porque nenhuma anula o denominador.
+Não pare no y
+Na biquadrada, os valores de y ainda não são a resposta. Volte para x: cada y positivo dá duas raízes; y = 0 dá uma; y negativo, nenhuma.
+09 Estratégia de prova
+1 · Teste as alternativas na equação
+Se as alternativas são números, substitua cada uma na equação montada. Quem zerar é raiz. Muitas vezes isso é mais rápido do que calcular o Δ, principalmente com coeficientes grandes.
+2 · Simplifique antes de aplicar a fórmula
+4x² + 32x − 80 = 0 e x² + 8x − 20 = 0 têm as mesmas raízes. Dividir por um fator comum encurta todas as contas e diminui o risco de erro.
+3 · Soma e produto primeiro, Bhaskara depois
+Com a = 1 e números pequenos, tente soma e produto por alguns segundos. Se não aparecer um par inteiro, vá para a fórmula sem insistir.
+4 · Releia a pergunta depois de achar as raízes
+O enunciado pode pedir a outra dimensão do terreno, o intervalo de tempo entre as duas raízes, a área e não o lado. A raiz é o meio do caminho.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Física | MUV: s = s_0 + v_0t + (at²/2) | achar o instante em que o móvel passa por uma posição é resolver uma equação do 2º grau em t; tempo negativo se descarta
+ | Geometria | Pitágoras com lados x e x + 2; áreas | (x + 2)² exige o produto notável completo
+ | Economia | receita = preço × quantidade, com preço que cai | os pontos de lucro zero são as raízes da equação do lucro
+ | Função quadrática | zeros de f(x) = ax² + bx + c | as raízes desta página são onde a parábola corta o eixo x
+O lançamento vertical, com h = v_0t − 5t² (usando g = 10 m/s²), é a ponte mais comum com a Física: as duas raízes de h(t) = k são o instante da subida e o da descida em que o objeto passa pela altura k.
+11 Os erros que mais custam pontos
+Ler b = 7 em x² − 7x + 10 → b = −7O sinal faz parte do coeficiente.
+−7² = −49 no cálculo do Δ → (−7)² = 49O b² nunca é negativo.
+Dividir só a raiz por 2a → (−b ± √Δ) ÷ 2aO traço da fração cobre o numerador inteiro.
+Dividir 3x² = 12x por x → 3x(x − 4) = 0A divisão apaga a raiz x = 0.
+x² = 25 → x = 5 → x = 5 ou x = −5Só descarte o −5 se o contexto pedir.
+Trocar o sinal da raiz negativa → descartá-laSe −10 não serve, a resposta é a outra raiz, não 10.
+Soma das raízes = b/a → S = −b/aEm x² − 7x + 10, a soma é +7.
+Parar no y da biquadrada → voltar para x = ±√yE y negativo não gera raiz real.
+Igualar a 140 sem passar para um lado → … = 0 antes da fórmulaBhaskara só vale para ax² + bx + c = 0.
+12 Questões comentadas
+Nove questões no formato da prova. Monte a equação, iguale a zero e só então escolha o caminho: fatoração, soma e produto ou Bhaskara.
+Questão 1 · Calçada em volta de um jardim
+Um jardim retangular de 10 m por 6 m será contornado por uma calçada de largura constante, em todos os lados. Com a calçada, o conjunto formará um retângulo de 140 m² de área. A largura da calçada será de
+2 m.
+2,5 m.
+4 m.
+cerca de 4,5 m.
+10 m.
+Ver resolução
+Cada dimensão ganha uma largura de cada lado:
+(10 + 2x)(6 + 2x) = 140 → 4x² + 32x − 80 = 0 → x² + 8x − 20 = 0
+Soma −8 e produto −20: raízes 2 e −10. A largura não pode ser negativa, então x = 2 m.
+A E troca o sinal da raiz descartada. A C põe calçada em um lado só de cada dimensão: (10 + x)(6 + x) = 140 dá x = 4. A B esquece o termo 4x² (60 + 32x = 140). A D esquece os termos do meio: 60 + 4x² = 140 dá x = √(20) ≈ 4,5.
+Conferência: 14 · 10 = 140.
+Alternativa A
+Questão 2 · Parábola que toca o eixo uma única vez
+Um programa de desenho traça a curva y = x² − 6x + k, em que k é escolhido pelo usuário. Para uma vinheta, o designer quer que a curva toque o eixo horizontal em exatamente um ponto. O valor de k deve ser
+3.
+6.
+9.
+36.
+−9.
+Ver resolução
+Um único ponto de contato com o eixo significa uma única raiz: Δ = 0.
+Δ = (−6)² − 4 · 1 · k = 36 − 4k = 0 → k = 9
+Confere: x² − 6x + 9 = (x − 3)², que só zera em x = 3.
+A A é a própria raiz dupla, não o k. A B copia o valor de b sem sinal. A D esquece o 4 de 4ac. A E erra o sinal ao isolar k; com k = −9, o Δ seria 72 e haveria dois pontos de contato.
+Alternativa C
+Questão 3 · Montar a equação pelas raízes
+Um professor pediu aos alunos uma equação do 2º grau, com coeficiente de x² igual a 1, cujas raízes fossem 3 e −5. A equação correta é
+x² − 2x − 15 = 0
+x² + 2x + 15 = 0
+x² − 8x + 15 = 0
+x² + 2x − 15 = 0
+x² + 15x − 2 = 0
+Ver resolução
+Soma 3 + (−5) = −2; produto 3 · (−5) = −15. Com x² − Sx + P = 0:
+x² − (−2)x + (−15) = x² + 2x − 15 = 0
+Ou pela forma fatorada: (x − 3)(x + 5) = x² + 2x − 15.
+A A usa +Sx no lugar de −Sx e tem raízes −3 e 5. A B erra o sinal do produto e não tem raiz real. A C usa as raízes 3 e 5. A E troca a soma pelo produto.
+Alternativa D
+Questão 4 · Tempo acima de uma altura
+Uma bola é lançada verticalmente para cima, e sua altura, em metros, t segundos após o lançamento, é dada por h(t) = 20t − 5t². Durante quanto tempo a bola permanece acima de 15 m de altura?
+1 s
+2 s
+3 s
+4 s
+Nenhum: a bola não chega a 15 m.
+Ver resolução
+Os instantes em que a bola passa por 15 m:
+20t − 5t² = 15 → 5t² − 20t + 15 = 0 → t² − 4t + 3 = 0 → t = 1 ou t = 3
+Ela passa por 15 m subindo, em 1 s, e descendo, em 3 s. Fica acima disso de 1 s a 3 s: 2 s.
+A A e a C respondem um dos instantes, não o intervalo. A D é o tempo total de voo (h = 0 em t = 4). A E é falsa: em t = 2 a bola está a 40 − 20 = 20 m.
+Alternativa B
+Questão 5 · A raiz que sumiu
+Para resolver a equação 3x² = 12x, um estudante dividiu os dois lados por 3x e concluiu que a solução é x = 4. Sobre essa resolução, é correto afirmar que ela
+está correta, pois a única solução é 4.
+está errada, pois as soluções são 2 e −2.
+está errada, pois as soluções são 4 e −4.
+está incompleta, pois faltou a solução −4.
+está incompleta, pois faltou a solução 0.
+Ver resolução
+Passando tudo para um lado e fatorando:
+3x² − 12x = 0 → 3x(x − 4) = 0 → x = 0 ou x = 4
+Dividir por 3x só é permitido se x ≠ 0; ao fazer isso, o estudante eliminou justamente a raiz 0. O 4 está certo, mas a resposta está incompleta.
+A A ignora a raiz perdida. A B resolve 3x² = 12, esquecendo o x do lado direito. A C e a D aplicam o ± das incompletas com b = 0, mas aqui quem é zero é o c: −4 não satisfaz a equação (48 ≠ −48).
+Alternativa E
+Questão 6 · Número de times de um campeonato
+Em um campeonato de futebol de bairro disputado em turno único, cada time enfrenta cada um dos outros exatamente uma vez. A tabela completa tem 66 jogos. O número de times participantes é
+8.
+11.
+12.
+23.
+33.
+Ver resolução
+(n(n − 1)/2) = 66 → n² − n − 132 = 0
+Δ = 1 + 528 = 529 = 23² → n = (1 + 23/2) = 12
+A outra raiz, −11, não serve. Conferência: 12 · 11 ÷ 2 = 66.
+A D para em √(Δ). A B é o número de adversários de cada time (n − 1), ou o valor absoluto da raiz descartada. A A trata a equação como n² = 66. A E divide 66 por 2, como se cada time jogasse duas partidas.
+Alternativa C
+Questão 7 · Quando o lucro deixa de ser negativo
+Uma pequena fábrica vende x unidades de um produto por semana ao preço unitário de (50 − x) reais. O custo semanal de produção é 10x + 300 reais. A menor quantidade semanal vendida a partir da qual a fábrica deixa de ter prejuízo é
+10.
+20.
+30.
+40.
+300.
+Ver resolução
+Lucro = receita − custo:
+L = x(50 − x) − (10x + 300) = −x² + 40x − 300
+Lucro zero: x² − 40x + 300 = 0, com Δ = 1 600 − 1 200 = 400 e x = (40 ± 20/2): 10 ou 30. Entre essas raízes o lucro é positivo; o prejuízo acaba em 10 unidades.
+A C é a outra raiz, em que o lucro volta a zero. A B é o ponto médio entre as raízes, onde o lucro é máximo (assunto de Função quadrática). A D é a soma das raízes e a E, o produto.
+Alternativa A
+Questão 8 · Equação biquadrada
+Considere a equação x⁴ − 5x² − 36 = 0. O número de soluções reais dessa equação é
+nenhuma.
+uma.
+duas.
+três.
+quatro.
+Ver resolução
+Com y = x²: y² − 5y − 36 = 0, Δ = 25 + 144 = 169, y = (5 ± 13/2): 9 ou −4.
+x² = 9 → x = ±3 x² = −4 → sem solução real
+São duas soluções: 3 e −3.
+A E aceita x² = −4 como se desse ±2. A B fica só com a raiz positiva 3. A D mistura as duas coisas. A A conclui que o y negativo invalida a equação inteira.
+Alternativa C
+Questão 9 · Pitágoras com um lado desconhecido
+A diagonal de uma tela retangular mede 10 polegadas, e um dos lados da tela mede 2 polegadas a mais que o outro. A medida do lado maior, em polegadas, é
+5.
+6.
+cerca de 7,1.
+8.
+cerca de 8,9.
+Ver resolução
+Com lados x e x + 2, pelo teorema de Pitágoras:
+x² + (x + 2)² = 100 → 2x² + 4x − 96 = 0 → x² + 2x − 48 = 0
+Soma −2, produto −48: raízes 6 e −8. O lado menor mede 6 e o maior, 8. Conferência: 36 + 64 = 100.
+A B é o lado menor. A E vem de (x + 2)² = x² + 4: daí x² = 48, x ≈ 6,9 e o maior ≈ 8,9. A C supõe tela quadrada (10 ÷ √(2) ≈ 7,1). A A é a metade da diagonal.
+Alternativa D
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Escrevo qualquer equação do 2º grau na forma ax² + bx + c = 0 e leio os coeficientes com sinal
+Resolvo incompletas com c = 0 por fator comum, sem dividir por x
+Resolvo incompletas com b = 0 lembrando das duas raízes simétricas
+Uso o produto nulo em equações que já vêm fatoradas
+Aplico Bhaskara sem errar o b², o −b e a divisão por 2a
+Explico de onde vem a fórmula, completando o quadrado
+Decido pelo sinal de Δ quantas raízes reais existem e resolvo questões de parâmetro
+Acho raízes inteiras por soma e produto e sei os sinais das raízes sem resolver
+Monto uma equação a partir das raízes e escrevo a forma fatorada
+Modelo problemas de área, de lançamento e de campeonato com uma equação do 2º grau
+Descarto raízes sem sentido no contexto, sem trocar o sinal delas
+Resolvo biquadradas pela troca y = x² e volto para x
+Confiro raízes substituindo na equação original
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez em que você mesmo monta a equação a partir de um texto. Depois siga para Sistemas de equações lineares, onde duas incógnitas aparecem ao mesmo tempo.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-21-equacao-2o-grau-bhaskara.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

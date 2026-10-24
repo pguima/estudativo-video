@@ -1,0 +1,1011 @@
+<title>Lucro e Descontos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Financeira › Assunto 3 de 6</p>
+        <h1>Descontos, acréscimos, lucro e prejuízo</h1>
+        <p class="deck">A matemática do balcão: quanto custou, por quanto vender, quanto descontar. A conta é porcentagem, mas a pergunta decisiva é outra: <em>porcentagem de quê?</em> O mesmo lucro de R$ 20,00 é 25% do custo e 20% da venda, e o ENEM coloca as duas respostas nas alternativas.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Barra do preço de venda de cem reais dividida em custo de oitenta e lucro de vinte; o lucro é vinte e cinco por cento do custo e vinte por cento da venda">
+  <text x="150" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">lucro de R$ 20: quanto por cento?</text>
+  <text x="150" y="56" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">preço de venda: R$ 100</text>
+  <line x1="20" y1="62" x2="20" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <line x1="280" y1="62" x2="280" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <line x1="20" y1="62" x2="280" y2="62" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <rect x="20" y="72" width="208" height="32" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <rect x="228" y="72" width="52" height="32" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="124" y="92" text-anchor="middle" class="svg-num" style="fill:var(--c1)">custo 80</text>
+  <text x="254" y="92" text-anchor="middle" class="svg-num" style="fill:var(--c3)">+20</text>
+  <rect x="20" y="124" width="124" height="58" rx="8" style="fill:var(--surface);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="82" y="148" text-anchor="middle" class="svg-num" style="fill:var(--c1)">20 ÷ 80 = 25%</text>
+  <text x="82" y="168" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">sobre o custo</text>
+  <rect x="156" y="124" width="124" height="58" rx="8" style="fill:var(--surface);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="218" y="148" text-anchor="middle" class="svg-num" style="fill:var(--c3)">20 ÷ 100 = 20%</text>
+  <text x="218" y="168" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">sobre a venda</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mesmo lucro, duas porcentagens</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>25 · Fase Ampliação</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>36 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Porcentagem · Juros compostos e montante</dd></div>
+      <div><dt>Destrava</dt><dd>Taxas equivalentes e inflação</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Questões de comércio estão entre as mais contextualizadas da prova: uma loja que remarca preços, um comerciante que quer certa margem, uma promoção “leve 3, pague 2”, um vendedor que paga imposto e comissão. A ferramenta é a de <em>Porcentagem</em> (fator de multiplicação, variações sucessivas, voltar ao valor original), que este assunto não repete; aqui ela ganha vocabulário comercial e uma armadilha própria: a <strong>base</strong> da porcentagem.</p>
+<p>O que costuma ser cobrado:</p>
+<ul>
+  <li><strong>Lucro e prejuízo</strong> em reais e em porcentagem, sobre o custo ou sobre a venda.</li>
+  <li><strong>Formar o preço de venda</strong> para obter uma margem desejada.</li>
+  <li><strong>Descontos e acréscimos encadeados</strong>: liquidação mais desconto no caixa, preço mais frete ou imposto.</li>
+  <li><strong>Promoções</strong> que precisam ser traduzidas em desconto percentual para comparar.</li>
+  <li><strong>Descontos por faixa</strong>, em que cada parte do valor tem uma taxa.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Antes de calcular qualquer porcentagem, escreva <strong>sobre o que</strong> ela incide: custo, preço de venda, preço de etiqueta, preço já descontado. Quase todo erro deste assunto é a conta certa feita sobre a base errada.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A ferramenta: fatores</h2>
+<p>Revisão rápida do que vem de <em>Porcentagem</em>, agora com nomes do comércio:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Operação</th><th>Fator</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Acréscimo de <span class="v">p</span>%</strong> (frete, imposto, reajuste)</td><td class="m">1 + <span class="v">p</span>/100</td><td>+15% → × 1,15</td></tr>
+    <tr><td><strong>Desconto de <span class="v">p</span>%</strong> (promoção, pagamento à vista)</td><td class="m">1 − <span class="v">p</span>/100</td><td>−30% → × 0,70</td></tr>
+    <tr><td><strong>Vários em sequência</strong></td><td>produto dos fatores</td><td>−30% e −10% → × 0,70 · 0,90 = × 0,63</td></tr>
+    <tr><td><strong>Voltar ao valor anterior</strong></td><td>divida pelo fator</td><td>R$ 84,00 com 30% off → 84 ÷ 0,70 = 120</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Descontos sucessivos não se somam</span>
+  <p>20% de desconto e mais 10% sobre o novo preço dão <span class="m">0,8 · 0,9 = 0,72</span>: desconto total de <strong>28%</strong>, não 30%. O segundo desconto incide sobre um valor menor. E a ordem não importa: o produto de fatores é o mesmo.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Custo, venda, lucro e prejuízo</h2>
+<div class="box def">
+  <span class="tag">Definições</span>
+  <p><strong>Preço de custo</strong> (<span class="m"><span class="v">C</span></span>): quanto o comerciante pagou pela mercadoria.</p>
+  <p><strong>Preço de venda</strong> (<span class="m"><span class="v">V</span></span>): quanto o cliente paga.</p>
+  <p class="m" style="font-size:1.05rem"><span class="v">L</span> = <span class="v">V</span> − <span class="v">C</span></p>
+  <p>Se <span class="m"><span class="v">L</span> &gt; 0</span>, há <strong>lucro</strong>; se <span class="m"><span class="v">L</span> &lt; 0</span>, há <strong>prejuízo</strong> de <span class="m"><span class="v">C</span> − <span class="v">V</span></span>.</p>
+</div>
+<p>Em reais, não há ambiguidade. A ambiguidade aparece quando o lucro vira porcentagem, porque ele pode ser comparado com o custo ou com a venda:</p>
+<div class="eq">
+  <span class="lbl">Exemplo — comprou por R$ 80,00 e vendeu por R$ 100,00</span>
+  <p class="m">Lucro: 100 − 80 = R$ 20,00</p>
+  <p class="m">Sobre o custo: <span class="frac"><i>20</i><i>80</i></span> = 25% &nbsp;&nbsp;&nbsp; Sobre a venda: <span class="frac"><i>20</i><i>100</i></span> = 20%</p>
+</div>
+<p>Quando o enunciado não diz a base, a convenção é o <strong>custo</strong>: “lucro de 25%” significa 25% sobre o que foi pago. Mas o ENEM costuma dizer explicitamente, e é isso que você deve procurar.</p>
+<div class="box tip">
+  <span class="tag">Prejuízo também tem base</span>
+  <p>Comprou por R$ 120,00 e vendeu por R$ 90,00: prejuízo de R$ 30,00, que é <strong>25% do custo</strong> e cerca de 33,3% da venda. Prejuízo percentual, salvo aviso, é sobre o custo.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Lucro sobre o custo × lucro sobre a venda</h2>
+<p>As duas porcentagens têm nomes no comércio. A <strong>margem sobre o custo</strong> (o “markup”) diz quanto se acrescenta ao custo. A <strong>margem sobre a venda</strong> diz que fração do preço é lucro. Para o mesmo lucro, a margem sobre a venda é sempre a menor das duas, porque a venda é maior que o custo.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Três barras de custo cem com lucros de vinte e cinco, cinquenta e cem: lucro de vinte e cinco por cento do custo é vinte por cento da venda; cinquenta por cento do custo é trinta e três vírgula três por cento da venda; cem por cento do custo é cinquenta por cento da venda">
+  <rect x="20" y="18" width="110" height="30" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="130" y="18" width="27.5" height="30" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="75" y="38" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">custo 100</text>
+  <text x="143.8" y="37" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">+25</text>
+  <text x="270" y="30" class="svg-lbl" style="fill:var(--ink)">lucro = 25% do custo</text>
+  <text x="270" y="46" class="svg-lbl" style="fill:var(--ink-2)">= 20% da venda (125)</text>
+  <rect x="20" y="80" width="110" height="30" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="130" y="80" width="55" height="30" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="75" y="100" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">custo 100</text>
+  <text x="157.5" y="99" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">+50</text>
+  <text x="270" y="92" class="svg-lbl" style="fill:var(--ink)">lucro = 50% do custo</text>
+  <text x="270" y="108" class="svg-lbl" style="fill:var(--ink-2)">= 33,3% da venda (150)</text>
+  <rect x="20" y="142" width="110" height="30" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="130" y="142" width="110" height="30" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="75" y="162" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">custo 100</text>
+  <text x="185" y="161" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">+100</text>
+  <text x="270" y="154" class="svg-lbl" style="fill:var(--ink)">lucro = 100% do custo</text>
+  <text x="270" y="170" class="svg-lbl" style="fill:var(--ink-2)">= 50% da venda (200)</text>
+  <text x="20" y="204" class="svg-lbl" style="fill:var(--ink-3)">a margem sobre a venda é sempre menor que a sobre o custo</text>
+</svg>
+<figcaption><b>O mesmo lucro, medido de dois jeitos.</b> Acrescentar 100% ao custo (dobrar o preço) significa que metade do preço de venda é lucro: margem de 50% sobre a venda. Quem confunde as duas bases acha que “vender pelo dobro” é ter 100% do preço como lucro, o que é impossível.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Conversão entre as duas margens</span>
+  <p class="m">sobre a venda = <span class="frac"><i>sobre o custo</i><i>1 + sobre o custo</i></span> &nbsp;&nbsp;&nbsp; sobre o custo = <span class="frac"><i>sobre a venda</i><i>1 − sobre a venda</i></span></p>
+  <p>Com as taxas em decimal: 25% sobre o custo é <span class="m">0,25 ÷ 1,25 = 0,20</span> sobre a venda; 20% sobre a venda é <span class="m">0,20 ÷ 0,80 = 0,25</span> sobre o custo.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Margem sobre a venda nunca chega a 100%</span>
+  <p>Lucro sobre o custo pode ser 150%, 300%, qualquer valor. Lucro sobre a venda é sempre menor que 100%, porque o lucro é só uma parte do preço. Uma alternativa com “lucro de 125% sobre a venda” está errada antes de qualquer conta.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Formar o preço de venda</h2>
+<p>O comerciante sabe o custo e quer uma margem. Como calcular o preço depende da base da margem:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Margem desejada</th><th>Preço de venda</th><th>Custo R$ 72,00, margem de 20%</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Sobre o custo</strong></td><td class="m"><span class="v">V</span> = <span class="v">C</span> · (1 + <span class="v">m</span>)</td><td class="m">72 · 1,20 = R$ 86,40</td></tr>
+    <tr><td><strong>Sobre a venda</strong></td><td class="m"><span class="v">V</span> = <span class="frac"><i><span class="v">C</span></i><i>1 − <span class="v">m</span></i></span></td><td class="m">72 ÷ 0,80 = R$ 90,00</td></tr>
+  </tbody>
+</table>
+</div>
+<p>De onde vem a segunda fórmula: se 20% do preço é lucro, os outros 80% são o custo. Então <span class="m">0,80 · <span class="v">V</span> = 72</span>, e <span class="m"><span class="v">V</span> = 90</span>. Conferindo: o lucro é <span class="m">90 − 72 = 18</span>, e <span class="m">18 ÷ 90 = 20%</span>.</p>
+<div class="box warn">
+  <span class="tag">O erro clássico: multiplicar quando é para dividir</span>
+  <p>Para ter 20% de lucro <strong>sobre a venda</strong>, não basta somar 20% ao custo. R$ 86,40 dá lucro de 14,40, que é só cerca de 16,7% de 86,40. Margem sobre a venda pede <strong>divisão</strong> por <span class="m">1 − <span class="v">m</span></span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">O mesmo raciocínio vale para impostos e comissões</span>
+  <p>Se 15% de tudo o que se vende vai para imposto e comissão, o comerciante recebe 85% do preço. Para receber R$ 510,00 líquidos, precisa vender por <span class="m">510 ÷ 0,85 = 600</span>. Custos cobrados <strong>sobre o preço de venda</strong> se tratam como margem sobre a venda.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Descontos e acréscimos encadeados</h2>
+<p>No comércio real, porcentagens se acumulam: liquidação e mais um desconto no caixa; preço com desconto e frete por cima; preço de etiqueta com imposto. Em todos os casos, <strong>multiplique os fatores</strong>.</p>
+<div class="eq">
+  <span class="lbl">Exemplo — produto de R$ 200,00 com 20% de liquidação, mais 10% no Pix, mais 10% de frete</span>
+  <p class="m">200 · 0,80 · 0,90 = 144 &nbsp;→&nbsp; 144 · 1,10 = <strong>R$ 158,40</strong></p>
+  <p>Na ordem que for: <span class="m">200 · 1,10 · 0,80 · 0,90</span> dá o mesmo 158,40.</p>
+</div>
+<div class="box def">
+  <span class="tag">Desconto total equivalente</span>
+  <p class="m">desconto total = 1 − (fator<sub>1</sub> · fator<sub>2</sub> · …)</p>
+  <p>Dois descontos de 10% equivalem a 19% (<span class="m">1 − 0,9<sup>2</sup></span>). Descontos de 25% e 20% equivalem a 40% (<span class="m">1 − 0,75 · 0,8</span>).</p>
+</div>
+<div class="box warn">
+  <span class="tag">Aumentar e depois descontar a mesma porcentagem não volta ao preço</span>
+  <p>Este caso está em <em>Porcentagem</em> e é cobrado no contexto comercial: subir 20% e dar 20% de desconto termina 4% abaixo do preço original (<span class="m">1,2 · 0,8 = 0,96</span>). Para voltar ao preço, o desconto tem de ser menor que o aumento: depois de +25%, basta −20% (<span class="m">1,25 · 0,8 = 1</span>).</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Promoções e descontos por faixa</h2>
+<p>Promoções vêm escritas de jeitos que escondem o desconto real. Para comparar, traduza cada uma em <strong>desconto percentual efetivo</strong>: quanto se paga dividido pelo preço cheio.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Promoção</th><th>Paga</th><th>Desconto efetivo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Leve 3, pague 2</strong></td><td>2 de cada 3</td><td><span class="m">1 − <span class="frac"><i>2</i><i>3</i></span></span> ≈ 33,3%</td></tr>
+    <tr><td><strong>Leve 4, pague 3</strong></td><td>3 de cada 4</td><td>25%</td></tr>
+    <tr><td><strong>Segunda unidade com 50% de desconto</strong></td><td>1,5 de cada 2</td><td>25%</td></tr>
+    <tr><td><strong>Segunda unidade grátis</strong></td><td>1 de cada 2</td><td>50%</td></tr>
+    <tr><td><strong>Segunda unidade com 30% de desconto</strong></td><td>1,7 de cada 2</td><td>15%</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">“50% na segunda” não é 50% de desconto</span>
+  <p>O desconto vale para uma unidade em duas, então o desconto sobre a compra é a metade: 25%. E as promoções por quantidade só valem para quem precisa daquela quantidade: o desconto efetivo depende de quantas unidades você compra (com 4 unidades no “leve 3, pague 2”, a quarta sai pelo preço cheio).</p>
+</div>
+<h3>Desconto por faixa</h3>
+<p>Algumas lojas e tarifas aplicam taxas diferentes a <strong>partes</strong> do valor, como no imposto de renda. Cada faixa usa a sua taxa só sobre a parte do valor que cai nela:</p>
+<figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Compra de quinhentos reais com desconto por faixas: nada até duzentos, cinco por cento entre duzentos e quatrocentos, dez por cento acima de quatrocentos; desconto total de vinte reais, quatro por cento da compra">
+  <text x="30" y="24" class="svg-ttl" style="fill:var(--c5)">compra de R$ 500 · desconto por faixa</text>
+  <rect x="30" y="70" width="160" height="34" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="110" y="60" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">desconto de 0%</text>
+  <text x="110" y="92" text-anchor="middle" class="svg-num" style="fill:var(--c1)">R$ 0</text>
+  <rect x="190" y="70" width="160" height="34" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="270" y="60" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">desconto de 5%</text>
+  <text x="270" y="92" text-anchor="middle" class="svg-num" style="fill:var(--c2)">R$ 10</text>
+  <rect x="350" y="70" width="80" height="34" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="390" y="60" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">10%</text>
+  <text x="390" y="92" text-anchor="middle" class="svg-num" style="fill:var(--c3)">R$ 10</text>
+  <line x1="30" y1="104" x2="30" y2="112" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="30" y="126" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="190" y1="104" x2="190" y2="112" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="190" y="126" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">200</text>
+  <line x1="350" y1="104" x2="350" y2="112" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="350" y="126" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">400</text>
+  <line x1="430" y1="104" x2="430" y2="112" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="430" y="126" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">500</text>
+  <rect x="30" y="146" width="400" height="42" rx="9" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="230" y="164" text-anchor="middle" class="svg-num" style="fill:var(--c5)">desconto total R$ 20 → paga R$ 480</text>
+  <text x="230" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">4% da compra, não 10%</text>
+</svg>
+<figcaption><b>Faixas: nada até R$ 200,00, 5% entre R$ 200,00 e R$ 400,00, 10% acima de R$ 400,00.</b> Numa compra de R$ 500,00, os 10% só atingem os últimos R$ 100,00. Aplicar a taxa da faixa mais alta sobre o valor inteiro dá R$ 50,00 de desconto, mais que o dobro do correto.</figcaption>
+</figure>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Remarcações, liquidações e prejuízo</h2>
+<p>Um mesmo produto passa por várias porcentagens: margem sobre o custo para formar a etiqueta, desconto na liquidação, às vezes nova remarcação. Para saber se ainda há lucro, leve tudo a <strong>fatores sobre o custo</strong>:</p>
+<div class="eq">
+  <span class="lbl">Exemplo — etiqueta com 50% sobre o custo; liquidação de 1/3 sobre a etiqueta</span>
+  <p class="m">1,5 · <span class="frac"><i>2</i><i>3</i></span> = 1 &nbsp;→&nbsp; vendido exatamente pelo custo: nem lucro, nem prejuízo</p>
+</div>
+<p>Repare: um desconto de 33,3% anulou uma margem de 50%. É a assimetria de sempre, agora com dinheiro de comerciante.</p>
+<div class="box def">
+  <span class="tag">Lucro em um, prejuízo em outro</span>
+  <p>Vender dois itens pelo mesmo preço, um com lucro de <span class="m"><span class="v">p</span>%</span> e outro com prejuízo de <span class="m"><span class="v">p</span>%</span> (sobre o custo), <strong>não empata</strong>. O item do prejuízo custou mais caro, então os <span class="m"><span class="v">p</span>%</span> perdidos valem mais reais que os ganhos. O resultado global é sempre prejuízo. Descubra o custo de cada um dividindo o preço pelo fator e compare os totais.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Escreva a base ao lado de cada porcentagem</span>
+  <p>“25% <em>do custo</em>”, “10% <em>do preço com desconto</em>”, “15% <em>da venda</em>”. Uma palavra anotada evita a armadilha central do assunto.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Trabalhe com um preço de 100</span>
+  <p>Quando a questão pede só porcentagens, suponha custo ou preço igual a 100. Os fatores ficam visíveis (100 → 160 → 112) e a resposta sai em porcentagem direto.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Desconfie da soma de porcentagens</span>
+  <p>Se a sua conta somou duas porcentagens que incidem sobre bases diferentes (desconto da liquidação e desconto do caixa; lucro e imposto), ela está errada. Refaça com fatores.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Confira com o valor em reais</span>
+  <p>No fim, calcule o lucro em reais e divida pela base pedida. Leva poucos segundos e pega trocas entre margem sobre o custo e sobre a venda.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<ul>
+  <li><strong>Ciências Humanas:</strong> carga tributária, impostos embutidos no preço, inflação de alimentos e poder de compra usam exatamente a questão da base: o imposto é porcentagem do preço final ou do preço sem imposto?</li>
+  <li><strong>Leitura de gráficos e infográficos:</strong> variações percentuais de preços em reportagens exigem saber sobre que valor a variação foi calculada (ver <em>Leitura de gráficos: barras, linhas, setores e histograma</em>).</li>
+  <li><strong>Matemática Financeira:</strong> o desconto para pagamento à vista e o “parcelado sem juros” voltam em <em>Empréstimos, financiamentos e parcelamentos</em> e em <em>Comparação de propostas e tomada de decisão</em>, agora com juros embutidos.</li>
+  <li><strong>Funções definidas por partes:</strong> descontos e tarifas por faixa são funções definidas por partes, assunto de <em>Função modular e funções definidas por partes</em>.</li>
+</ul>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Lucro sobre a venda dividindo pelo custo</span> &nbsp;→&nbsp; <span class="c">divida pela base pedida</span></span><small>R$ 20,00 de lucro em venda de R$ 100,00 é 20% da venda e 25% do custo.</small></li>
+  <li><span><span class="x">Margem sobre a venda multiplicando o custo</span> &nbsp;→&nbsp; <span class="c">V = C ÷ (1 − m)</span></span><small>Custo 60 com 25% sobre a venda: 80, não 75.</small></li>
+  <li><span><span class="x">Somar descontos sucessivos</span> &nbsp;→&nbsp; <span class="c">multiplique os fatores</span></span><small>30% e 10% dão 37%, não 40%.</small></li>
+  <li><span><span class="x">Voltar ao preço original somando o desconto</span> &nbsp;→&nbsp; <span class="c">divida pelo fator</span></span><small>R$ 102,00 após 15% de desconto vinham de 102 ÷ 0,85 = 120.</small></li>
+  <li><span><span class="x">“50% na segunda” como 50% de desconto</span> &nbsp;→&nbsp; <span class="c">é 25% sobre o par</span></span><small>Traduza toda promoção em desconto efetivo antes de comparar.</small></li>
+  <li><span><span class="x">Taxa da faixa mais alta sobre o valor todo</span> &nbsp;→&nbsp; <span class="c">cada faixa com a sua taxa</span></span><small>Só a parte do valor dentro da faixa recebe aquela taxa.</small></li>
+  <li><span><span class="x">Lucro de p% e prejuízo de p% se anulam</span> &nbsp;→&nbsp; <span class="c">dá prejuízo</span></span><small>Os custos são diferentes; calcule cada um.</small></li>
+  <li><span><span class="x">Descontar imposto da margem em pontos percentuais</span> &nbsp;→&nbsp; <span class="c">calcule em reais</span></span><small>Imposto sobre a venda e lucro sobre o custo têm bases diferentes.</small></li>
+  <li><span><span class="x">Margem sobre a venda acima de 100%</span> &nbsp;→&nbsp; <span class="c">impossível</span></span><small>O lucro é parte do preço. Elimine a alternativa.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada porcentagem do enunciado, sublinhe a base antes de calcular.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Lucro sobre o custo</span>
+    <p class="enun">Um comerciante comprou uma mochila por R$ 120,00 e a vendeu por R$ 150,00. O lucro obtido, em relação ao preço de custo, foi de</p>
+    <ol class="alt"><li>20%.</li><li>25%.</li><li>30%.</li><li>80%.</li><li>125%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Lucro em reais: <span class="m">150 − 120 = 30</span>. Sobre o custo:</p>
+      <p class="m"><span class="frac"><i>30</i><i>120</i></span> = 0,25 = 25%</p>
+      <p>A A divide pela venda (<span class="m">30 ÷ 150</span>): é a margem sobre a venda, base que a questão não pediu. A C confunde R$ 30,00 com 30%. A D é a razão entre custo e venda, e a E, entre venda e custo: o fator 1,25 lido como porcentagem.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Formar o preço com margem sobre a venda</span>
+    <p class="enun">Uma artesã gasta R$ 60,00 para produzir cada peça. Ela quer que o lucro corresponda a 25% do preço de venda. O preço de venda de cada peça deve ser</p>
+    <ol class="alt"><li>R$ 45,00.</li><li>R$ 75,00.</li><li>R$ 80,00.</li><li>R$ 85,00.</li><li>R$ 240,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Se 25% do preço é lucro, os outros 75% cobrem o custo:</p>
+      <p class="m">0,75 · <span class="v">V</span> = 60 &nbsp;→&nbsp; <span class="v">V</span> = 80</p>
+      <p>Conferência: lucro de 20, e <span class="m">20 ÷ 80 = 25%</span>.</p>
+      <p>A B soma 25% ao custo: a margem fica sobre o custo, e o lucro (15) é só 20% de 75. A D soma 25 reais ao custo. A A multiplica o custo por 0,75, e a E divide o custo por 0,25: as duas usam a fração errada do preço.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Liquidação e desconto no caixa</span>
+    <p class="enun">Em uma liquidação, todos os produtos estão com 30% de desconto. Quem paga com Pix recebe, no caixa, mais 10% de desconto sobre o valor já reduzido. Para quem paga com Pix, o desconto total em relação ao preço original é de</p>
+    <ol class="alt"><li>3%.</li><li>33%.</li><li>37%.</li><li>40%.</li><li>63%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplique os fatores:</p>
+      <p class="m">0,70 · 0,90 = 0,63 &nbsp;→&nbsp; paga 63% do preço &nbsp;→&nbsp; desconto de 37%</p>
+      <p>A D soma os descontos, ignorando que o segundo incide sobre um valor menor. A E é o fator (o que se paga), não o desconto. A B soma 30% com “10% de 30%”, e a A multiplica as duas taxas entre si.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Lucro em um, prejuízo em outro</span>
+    <p class="enun">Um lojista vendeu dois aparelhos por R$ 600,00 cada. No primeiro, teve lucro de 20% sobre o preço de custo; no segundo, prejuízo de 20% sobre o preço de custo. Considerando as duas vendas, o lojista teve</p>
+    <ol class="alt"><li>nem lucro nem prejuízo.</li><li>lucro de R$ 50,00.</li><li>prejuízo de R$ 24,00.</li><li>prejuízo de R$ 48,00.</li><li>prejuízo de R$ 50,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Descubra o custo de cada aparelho dividindo o preço pelo fator:</p>
+      <p class="m"><span class="v">C</span><sub>1</sub> = <span class="frac"><i>600</i><i>1,2</i></span> = 500 &nbsp;&nbsp;&nbsp; <span class="v">C</span><sub>2</sub> = <span class="frac"><i>600</i><i>0,8</i></span> = 750</p>
+      <p class="m">Custo total 1.250, venda total 1.200 &nbsp;→&nbsp; prejuízo de R$ 50,00</p>
+      <p>A A é a intuição de que +20% e −20% se anulam. A B tem o valor certo e o sinal trocado. A D aplica <span class="m">1,2 · 0,8 = 0,96</span> sobre os R$ 1.200,00, como se fossem dois reajustes sucessivos do mesmo valor, e a C faz o mesmo sobre R$ 600,00. Os fatores não se encadeiam aqui: são dois produtos com custos diferentes.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Comparando promoções</span>
+    <p class="enun">Uma pessoa precisa comprar 6 unidades de um produto vendido por R$ 12,00 a unidade. Três lojas fazem promoções diferentes: loja I, “leve 3, pague 2”; loja II, “segunda unidade com 50% de desconto”; loja III, “30% de desconto em cada unidade”. Ordenando as lojas da mais barata para a mais cara, para essa compra, obtém-se</p>
+    <ol class="alt"><li>I, III, II.</li><li>I, II, III.</li><li>III, I, II.</li><li>II, I, III.</li><li>III, II, I.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Preço cheio das 6 unidades: R$ 72,00.</p>
+      <ul>
+        <li><strong>Loja I:</strong> paga 4 de 6 → <span class="m">4 · 12 = R$ 48,00</span> (desconto efetivo de 33,3%).</li>
+        <li><strong>Loja II:</strong> 3 pares de R$ 18,00 → <span class="m">R$ 54,00</span> (desconto efetivo de 25%).</li>
+        <li><strong>Loja III:</strong> <span class="m">72 · 0,70 = R$ 50,40</span> (30%).</li>
+      </ul>
+      <p>Ordem: I (48,00), III (50,40), II (54,00).</p>
+      <p>A D lê “50% na segunda” como 50% sobre tudo (R$ 36,00), o que põe a loja II em primeiro. A B compara os números anunciados sem calcular (50% parece mais que 30%) e coloca a II à frente da III. A C e a E tratam “leve 3, pague 2” como um desconto menor que 30%, sem perceber que é de um terço; a E ainda inverte a II e a I.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Preço antes do desconto</span>
+    <p class="enun">Após um desconto de 15%, uma camiseta passou a custar R$ 102,00. O preço da camiseta antes do desconto era</p>
+    <ol class="alt"><li>R$ 86,70.</li><li>R$ 117,00.</li><li>R$ 117,30.</li><li>R$ 120,00.</li><li>R$ 680,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O preço com desconto é 85% do original:</p>
+      <p class="m">0,85 · <span class="v">P</span> = 102 &nbsp;→&nbsp; <span class="v">P</span> = <span class="frac"><i>102</i><i>0,85</i></span> = R$ 120,00</p>
+      <p>A C aplica um acréscimo de 15% sobre R$ 102,00: base errada, porque os 15% eram do preço original. A B soma 15 reais. A A desconta 15% de novo. A E divide por 0,15 em vez de 0,85.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Lucro depois de imposto e comissão</span>
+    <p class="enun">Um revendedor compra um produto por R$ 400,00 e o vende por R$ 600,00. Sobre o preço de venda, ele paga 10% de imposto e 5% de comissão ao vendedor. O lucro líquido do revendedor, em relação ao preço de custo, é de</p>
+    <ol class="alt"><li>cerca de 18%.</li><li>27,5%.</li><li>35%.</li><li>42,5%.</li><li>50%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Imposto e comissão somam 15% <strong>do preço de venda</strong>: <span class="m">0,15 · 600 = 90</span>. O revendedor fica com <span class="m">600 − 90 = 510</span>.</p>
+      <p class="m">Lucro líquido: 510 − 400 = 110 &nbsp;→&nbsp; <span class="frac"><i>110</i><i>400</i></span> = 27,5%</p>
+      <p>A E é o lucro bruto, sem os descontos. A C subtrai 15 pontos percentuais dos 50%, misturando a base da venda com a do custo. A D aplica os 15% sobre a margem. A A divide os R$ 110,00 pelo preço de venda, mas a questão pede a base custo.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Desconto por faixa</span>
+    <p class="enun">Uma loja de material de construção dá desconto progressivo: nenhum desconto sobre os primeiros R$ 200,00 da compra, 5% sobre a parte da compra entre R$ 200,00 e R$ 400,00 e 10% sobre a parte que exceder R$ 400,00. Um cliente fez uma compra de R$ 600,00. Ele pagou</p>
+    <ol class="alt"><li>R$ 510,00.</li><li>R$ 540,00.</li><li>R$ 560,00.</li><li>R$ 570,00.</li><li>R$ 580,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada parte da compra recebe a taxa da sua faixa:</p>
+      <p class="m">0 + 0,05 · 200 + 0,10 · 200 = 0 + 10 + 20 = 30</p>
+      <p class="m">600 − 30 = R$ 570,00</p>
+      <p>A B aplica 10% sobre a compra inteira, e a A soma 5% e 10% e aplica 15% sobre tudo. A C aplica 10% a tudo o que passa de R$ 200,00, ignorando a faixa de 5%. A E desconta só a faixa mais alta e esquece a intermediária.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Margem que sobra depois da liquidação</span>
+    <p class="enun">Uma loja compra um tênis por R$ 50,00 e o etiqueta com 60% de lucro sobre o custo. Na liquidação, dá 30% de desconto sobre o preço da etiqueta. Na venda feita durante a liquidação, o lucro da loja em relação ao custo é de</p>
+    <ol class="alt"><li>12%.</li><li>30%.</li><li>42%.</li><li>60%.</li><li>112%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Em fatores sobre o custo: <span class="m">1,6 · 0,7 = 1,12</span>. Em reais: etiqueta <span class="m">50 · 1,6 = 80</span>; liquidação <span class="m">80 · 0,7 = 56</span>; lucro de 6 reais.</p>
+      <p class="m"><span class="frac"><i>6</i><i>50</i></span> = 12%</p>
+      <p>A B subtrai as porcentagens (<span class="m">60 − 30</span>), que têm bases diferentes. A C aplica o desconto só sobre a margem (<span class="m">60 · 0,7</span>). A D ignora a liquidação. A E lê o fator 1,12 como lucro de 112%.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo lucro e prejuízo em reais com <span class="m"><span class="v">L</span> = <span class="v">V</span> − <span class="v">C</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Expresso o lucro em porcentagem sobre o custo e sobre a venda, sem trocar as bases</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que, sem aviso, lucro e prejuízo percentuais são sobre o custo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto margem sobre o custo em margem sobre a venda e vice-versa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Formo o preço de venda para margem sobre o custo (multiplicando) e sobre a venda (dividindo)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Trato imposto e comissão sobre a venda como fração do preço que não fica com o vendedor</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encadeio descontos e acréscimos multiplicando fatores e acho o desconto total equivalente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Recupero o preço original dividindo pelo fator do desconto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Traduzo promoções como “leve 3, pague 2” e “50% na segunda” em desconto efetivo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo descontos por faixa aplicando cada taxa só à sua parte do valor</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Verifico se uma remarcação seguida de liquidação ainda deixa lucro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico por que lucro e prejuízo de mesma porcentagem, com mesmo preço de venda, resultam em prejuízo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sigo para <em>Taxas equivalentes e inflação</em> pronto para comparar taxas em períodos diferentes</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões de lucro, prejuízo e descontos e acerte pelo menos 14 (70%). Escolha questões que misturem duas bases diferentes (lucro sobre o custo e imposto sobre a venda, por exemplo): é onde o assunto separa quem calcula de quem lê. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>43 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-15-descontos-acrescimos-lucro-prejuizo.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Financeira</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-15";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

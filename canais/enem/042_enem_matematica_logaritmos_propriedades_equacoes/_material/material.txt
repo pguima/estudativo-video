@@ -1,0 +1,257 @@
+Logaritmos
+Matemática › Álgebra e Funções › Assunto 9 de 18
+Logaritmos: definição, propriedades e equações
+Logaritmo é só um nome para o expoente. Ele existe para responder à pergunta que a função exponencial deixa aberta: “a que potência devo elevar a base para obter este número?”. Com três propriedades e dois ou três valores dados no enunciado, o ENEM espera que você descubra tempos, contagens e expoentes que não fecham por igualdade de bases.
+Semana
+8 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Potenciação e radiciação · Função exponencial
+Destrava
+Função logarítmica (pH, Richter, decibéis), juros compostos e meia-vida
+Neste assunto
+01 O que o ENEM cobra aqui
+O logaritmo aparece na prova quase sempre como ferramenta, com os valores necessários dados no enunciado (“use log 2 = 0,30”). As formas mais comuns:
+Descobrir um tempo: em quantos anos um investimento dobra, em quantas horas uma cultura chega a certo tamanho, quando um material cai a uma fração.
+Calcular com valores dados: obter log 72 ou log 1,5 a partir de log 2 e log 3.
+Resolver equações logarítmicas simples, respeitando as condições de existência.
+Interpretar escalas (pH, Richter, decibéis), que são o assunto seguinte e usam tudo o que está aqui.
+O que rende mais aqui
+Ler log_b a como uma pergunta: “b elevado a quanto dá a?”. Quem faz essa tradução resolve de cabeça log_2 32 = 5, log 0,001 = −3 e log_9 3 = (1/2), e não esquece as propriedades, que são as regras de potência escritas ao contrário.
+02 A definição: o logaritmo é um expoente
+Definição
+log_b a = x ⇔ b^x = a
+b é a base, a é o logaritmando e x é o logaritmo. Condições de existência: a > 0, b > 0 e b ≠ 1.
+ | Logaritmo | Pergunta | Valor
+ | log_2 32 | 2 elevado a quanto dá 32? | 5
+ | log_3 (1/9) | 3 elevado a quanto dá (1/9)? | −2
+ | log_9 3 | 9 elevado a quanto dá 3? | (1/2)
+ | log 1 000 | 10 elevado a quanto dá 1 000? | 3
+ | log 0,01 | 10 elevado a quanto dá 0,01? | −2
+Duas notações especiais: sem base escrita, log a é o logaritmo decimal (base 10), o mais usado na prova. E ln a é o logaritmo natural, de base e ≈ 2,718, que aparece em modelos de crescimento contínuo.
+Por que o logaritmando tem de ser positivo
+Base positiva elevada a qualquer expoente dá resultado positivo. Não existe x com 10^x = 0 ou 10^x = −5, logo log 0 e log(−5) não existem. O logaritmo, porém, pode ser negativo: log 0,01 = −2.
+03 Consequências imediatas da definição
+ | Igualdade | Por quê | Exemplo
+ | log_b 1 = 0 | b^0 = 1 | log 1 = 0
+ | log_b b = 1 | b^1 = b | log 10 = 1
+ | log_b b^n = n | o expoente já está à vista | log 10^(−7) = −7
+ | b^(logb a) = a | elevar a base ao expoente que dá a | 10^(log 7) = 7
+ | log_b a = log_b c ⇔ a = c | expoentes iguais, potências iguais | log x = log 5 ⇒ x = 5
+Um uso imediato no ENEM: o logaritmo decimal conta “zeros”. Um número entre 10^(30) e 10^(31) tem logaritmo entre 30 e 31 e é escrito com 31 algarismos. Em geral, o número de algarismos de um inteiro positivo N é a parte inteira de log N mais 1.
+04 As três propriedades operatórias
+Como logaritmos são expoentes, suas propriedades são as regras de potência lidas de trás para frente. Para M, N > 0:
+1 · Produto vira soma
+log_b(M · N) = log_b M + log_b N
+Vem de b^x · b^y = b^(x + y).
+2 · Quociente vira diferença
+log_b((M/N)) = log_b M − log_b N
+3 · Expoente desce multiplicando
+log_b M^k = k · log_b M
+Vale também para raízes: log √(2) = log 2^(1/2) = (1/2) log 2.
+A régua logarítmica. Marcando cada número n a uma distância proporcional a log n, o trecho de 1 a 2 emendado ao trecho de 1 a 3 chega exatamente ao 6. Era assim que as réguas de cálculo multiplicavam antes das calculadoras: somando comprimentos.
+O que as propriedades não dizem
+log(M + N) não tem regra: não é log M + log N. E (log M/log N) não é log M − log N. Teste com números: log(10 + 10) = log 20 ≈ 1,30, mas log 10 + log 10 = 2.
+05 Mudança de base
+Calculadoras e tabelas trazem logaritmos decimais. Para qualquer outra base, divida:
+Fórmula de mudança de base
+log_b a = (log a/log b)
+Exemplos: log_2 10 = (log 10/log 2) = (1/0,301) ≈ 3,32 e log_4 32 = (log_2 32/log_2 4) = (5/2) = 2,5.
+Quem fica em cima
+O logaritmando vai para o numerador; a base, para o denominador. Uma conferência rápida: log_2 8 tem de dar 3, e (log 8/log 2) = (0,903/0,301) = 3. Invertida, a fração daria (1/3).
+06 Calculando com log 2 e log 3
+Com log 2 ≈ 0,301, log 3 ≈ 0,477 e log 10 = 1, sai o logaritmo de todo número que se escreve com fatores 2, 3 e 5 (porque 5 = (10/2)):
+ | Número | Decomposição | Logaritmo
+ | 4 | 2² | 2 · 0,301 = 0,602
+ | 5 | 10 ÷ 2 | 1 − 0,301 = 0,699
+ | 6 | 2 · 3 | 0,301 + 0,477 = 0,778
+ | 9 | 3² | 2 · 0,477 = 0,954
+ | 12 | 2² · 3 | 0,602 + 0,477 = 1,079
+ | 1,5 | 3 ÷ 2 | 0,477 − 0,301 = 0,176
+ | 0,9 | 9 ÷ 10 | 0,954 − 1 = −0,046
+ | 0,2 | 2 ÷ 10 | 0,301 − 1 = −0,699
+Números menores que 1 têm log negativo
+Se o resultado de log 0,9 ou log 0,2 saiu positivo, houve erro de sinal. Esse detalhe é o que decide as questões de decaimento, em que a conta é uma divisão de dois logaritmos negativos.
+07 Equações exponenciais resolvidas com log
+Quando as bases não fecham, aplique logaritmo dos dois lados e use a propriedade da potência para trazer a incógnita para baixo:
+Exemplo 1 · Para que expoente 2 dá 10?
+2^x = 10 → x · log 2 = log 10 → x = (1/0,301) ≈ 3,32
+O logaritmo lido no gráfico. A reta y = 10 encontra a curva y = 2^x entre x = 3 (que dá 8) e x = 4 (que dá 16). A abscissa exata desse encontro é log_2 10 ≈ 3,32.
+Exemplo 2 · Em quanto tempo um capital dobra a 5% ao ano?
+1,05^t = 2 → t = (log 2/log 1,05) ≈ (0,301/0,0212) ≈ 14,2 anos
+Juros simples dobrariam em 20 anos (100% ÷ 5%). Os compostos dobram antes, porque há juros sobre juros.
+Isole a potência primeiro
+Em 1 000 · 3^t = 50 000, divida por 1 000 antes de aplicar o log: 3^t = 50. Aplicar log direto exige lembrar que log(1 000 · 3^t) = 3 + t log 3, e não 3 · t log 3.
+08 Equações logarítmicas
+Três situações cobrem quase tudo. Em todas, confira a condição de existência no fim: substitua a solução e veja se cada logaritmando (e cada base) fica positivo.
+ | Tipo | Exemplo | Resolução
+ | Pela definição | log_3(x − 1) = 2 | x − 1 = 3² ⇒ x = 10
+ | Mesma base dos dois lados | log_2(3x − 1) = log_2(x + 5) | 3x − 1 = x + 5 ⇒ x = 3
+ | Juntar com as propriedades | log x + log(x + 3) = 1 | x(x + 3) = 10 ⇒ x = 2
+Na terceira, a equação x² + 3x − 10 = 0 tem raízes 2 e −5. A raiz −5 é descartada: log(−5) não existe. Esquecer essa verificação é o erro mais caro do assunto, porque a alternativa com as duas raízes sempre está lá.
+Roteiro
+1) Escreva as condições de existência. 2) Junte os logaritmos com as propriedades até ter um só de cada lado (ou um log igual a um número). 3) Elimine o log pela definição ou pela igualdade de logaritmandos. 4) Resolva e descarte o que viola as condições.
+09 Estratégia de prova
+1 · Decomponha antes de calcular
+Se o enunciado dá log 2 e log 3, todo número da conta deve ser escrito com 2, 3 e 10. Exemplo: 72 = 2³ · 3², 50 = (100/2), 0,9 = (9/10).
+2 · Estime a resposta antes de marcar
+Para 3^t = 50, saiba que 3³ = 27 e 3^4 = 81: a resposta fica entre 3 e 4. Essa estimativa elimina as alternativas que vêm de divisões invertidas (como 0,28) ou de subtrações (como 1,22).
+3 · Desconfie da alternativa com duas raízes
+Em equação logarítmica que vira equação do 2º grau, teste cada raiz nos logaritmandos originais antes de marcar o conjunto completo.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Química | pH = −log[H^(+)] | cada unidade de pH é um fator 10 na concentração
+ | Física | nível sonoro em decibéis | +10 dB significa intensidade 10 vezes maior
+ | Geografia | magnitude de terremotos | um grau a mais é amplitude 10 vezes maior
+ | Matemática Financeira | tempo para um montante atingir um valor | t = (log(M/C)/log(1 + i))
+ | Química e Biologia | meia-vida e crescimento de culturas | tempo = log da razão ÷ log do fator
+As escalas de pH, Richter e decibéis são o tema de Função logarítmica e aplicações, o próximo assunto do bloco.
+11 Os erros que mais custam pontos
+log(M + N) = log M + log N → só vale para M · NSoma dentro do log não tem regra.
+log M ÷ log N = log M − log N → log(M/N) = log M − log NA diferença é do log do quociente, não do quociente de logs.
+log 72 = log 8 · log 9 → log 8 + log 9Log do produto é soma dos logs.
+log₂ 10 = log 2 / log 10 → log 10 / log 2Na mudança de base, a base vai para baixo.
+log 0,9 > 0 → log 0,9 ≈ −0,046Números entre 0 e 1 têm logaritmo negativo.
+log 0 = 0 → log 0 não existeQuem vale zero é log 1.
+aceitar x = −5 em log x + log(x + 3) = 1 → descartarVerifique cada raiz nos logaritmandos originais.
+log(1 000 · 3ᵗ) = 3t · log 3 → 3 + t · log 3O 1 000 vira parcela, não fator.
+2¹⁰⁰ tem 30 algarismos → 31Algarismos = parte inteira do log + 1.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de usar os valores dados, decomponha os números e estime a resposta.
+Questão 1 · Tempo para dobrar um capital
+Um investidor aplicou um capital a juros compostos de 8% ao ano. Para estimar em quanto tempo o capital dobra, ele usou as aproximações log 2 = 0,30 e log 1,08 = 0,033. O tempo encontrado, em anos, foi aproximadamente
+0,11
+0,27
+9
+12,5
+25
+Ver resolução
+1,08^t = 2 → t · log 1,08 = log 2 → t = (0,30/0,033) ≈ 9,1
+A A inverte a divisão (0,033 ÷ 0,30). A B subtrai os logaritmos, como se (log 2/log 1,08) fosse log 2 − log 1,08. A D é o tempo em juros simples (100% ÷ 8%). A E divide 2 pela taxa 0,08, sem logaritmo.
+Alternativa C
+Questão 2 · Logaritmo por decomposição
+Um técnico precisa do valor de log 72, mas dispõe apenas das aproximações log 2 = 0,30 e log 3 = 0,48. Usando corretamente as propriedades dos logaritmos, ele obtém para log 72 o valor
+0,78
+0,864
+0,96
+1,38
+1,86
+Ver resolução
+Como 72 = 2³ · 3²:
+log 72 = 3 · 0,30 + 2 · 0,48 = 0,90 + 0,96 = 1,86
+Conferência: 72 está entre 10 e 100, então o log está entre 1 e 2.
+A A é log 2 + log 3 = log 6. A B multiplica log 8 · log 9, em vez de somar. A C é só log 9. A D é log 24: usa 3 · log 2, mas esquece o expoente 2 do 3.
+Alternativa E
+Questão 3 · Condição de existência
+O conjunto solução, nos reais, da equação log_2 x + log_2(x − 2) = 3 é
+{−2}
+{4}
+{−2, 4}
+{5}
+∅
+Ver resolução
+Condições: x > 0 e x > 2. Juntando os logs:
+log_2[x(x − 2)] = 3 → x² − 2x = 8 → x = 4 ou x = −2
+Só 4 satisfaz as condições. Conferência: log_2 4 + log_2 2 = 2 + 1 = 3.
+A C esquece de verificar as raízes; a A fica justamente com a raiz proibida. A D soma os logaritmandos, log_2(2x − 2) = 3, em vez de multiplicá-los. A E descarta também a raiz válida.
+Alternativa B
+Questão 4 · Contar algarismos
+Um professor desafiou a turma a descobrir quantos algarismos tem o número 2^(100) quando escrito no sistema decimal, sem calculá-lo. Dado que log 2 ≈ 0,301, a resposta correta é
+30
+31
+100
+101
+200
+Ver resolução
+log 2^(100) = 100 · 0,301 = 30,1 → 10^(30) < 2^(100) < 10^(31)
+Um número entre 10^(30) (que tem 31 algarismos) e 10^(31) tem 31 algarismos.
+A A toma a parte inteira do log e esquece de somar 1 (10^(30) já tem 31 algarismos). A C confunde o número de algarismos com o expoente; a D soma 1 a esse expoente. A E multiplica a base pelo expoente.
+Alternativa B
+Questão 5 · Mudança de base
+A área ocupada por uma colônia de fungos em uma placa de cultura quadruplica a cada semana, segundo o modelo A(t) = A_0 · 4^t, com t em semanas. O tempo necessário para que a área fique 32 vezes maior que a inicial, em semanas, é
+0,4
+2
+2,5
+8
+28
+Ver resolução
+4^t = 32 → t = log_4 32 = (log_2 32/log_2 4) = (5/2) = 2,5
+Também sai pela mesma base: 2^(2t) = 2^5. Conferência: em 2 semanas a área é 16 vezes maior; em 3, 64 vezes. 32 fica entre as duas.
+A A inverte a mudança de base ((2/5)). A B para na última semana inteira antes de 32 (16 vezes). A D divide 32 por 4; a E subtrai 4 de 32.
+Alternativa C
+Questão 6 · Tempo de crescimento de uma cultura
+Uma cultura de bactérias tem população modelada por N(t) = 1 000 · 3^t, com t em horas. Use log 2 = 0,30 e log 3 = 0,48. O tempo, em horas, para que a população atinja 50 000 bactérias é aproximadamente
+0,28
+1,22
+3,54
+16,7
+104
+Ver resolução
+Isole a potência: 3^t = 50. Como 50 = (100/2), log 50 = 2 − 0,30 = 1,70:
+t = (log 50/log 3) = (1,70/0,48) ≈ 3,54
+Conferência: 3³ = 27 < 50 < 81 = 3^4, então t fica entre 3 e 4.
+A A inverte a divisão. A B subtrai os logs (1,70 − 0,48). A D divide 50 por 3, como se o crescimento fosse linear. A E divide 50 por log 3, sem tirar o log de 50.
+Alternativa C
+Questão 7 · Propriedades verdadeiras e falsas
+Ao revisar para uma prova, um estudante escreveu as igualdades abaixo, em que a e b são números reais positivos e os logaritmos são decimais.
+I. log(a + b) = log a + log b
+II. log a³ = 3 log a
+III. log((a/b)) = (log a/log b)
+IV. log 1 = 0
+São verdadeiras para todos os valores positivos de a e b apenas as igualdades
+I e II.
+II e IV.
+II e III.
+I, II e IV.
+III e IV.
+Ver resolução
+II é a propriedade da potência e IV vem de 10^0 = 1: verdadeiras. I é falsa: com a = b = 10, log 20 ≈ 1,30, mas log 10 + log 10 = 2. III é falsa: o log do quociente é a diferença dos logs; com a = 100 e b = 10, log 10 = 1, e (2/1) = 2.
+A A, a D e a C aceitam uma igualdade falsa (I ou III). A E aceita III e deixa de fora a II, que é verdadeira.
+Alternativa B
+Questão 8 · Tempo de decaimento
+Um equipamento perde 10% de seu valor a cada ano, sempre em relação ao valor do ano anterior. Considere log 2 = 0,301 e log 3 = 0,477. O tempo necessário para que o equipamento valha a metade do preço de compra é de aproximadamente
+0,15 ano
+0,32 ano
+5 anos
+6,5 anos
+10 anos
+Ver resolução
+Fator 0,9 por ano: 0,9^t = 0,5. Com log 0,9 = 2 · 0,477 − 1 = −0,046 e log 0,5 = −0,301:
+t = (log 0,5/log 0,9) = (−0,301/−0,046) ≈ 6,5 anos
+A A inverte a divisão. A B usa log 9 = 0,954 no lugar de log 0,9, esquecendo de subtrair 1. A C supõe perda linear de 10 pontos percentuais do preço original por ano (50% ÷ 10%). A E confunde valer a metade com perder todo o valor, também supondo perda linear (100% ÷ 10%).
+Alternativa D
+Questão 9 · Expressar um logaritmo em letras
+Em uma tabela antiga, os valores de log 2 e log 3 aparecem indicados por a e b, respectivamente. Em função de a e b, o valor de log 1,5 é
+b − a
+a − b
+a + b
+(b/a)
+1 + b − a
+Ver resolução
+log 1,5 = log (3/2) = log 3 − log 2 = b − a
+Conferência: 0,477 − 0,301 = 0,176, positivo e pequeno, como deve ser o log de um número entre 1 e 10 próximo de 1.
+A B é log (2/3), negativo. A C é log 6. A D divide os logs, o que dá log_2 3, não log 1,5. A E é log 15 = log (30/2): confunde 1,5 com 15.
+Alternativa A
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Traduzo log_b a = x em b^x = a e vice-versa
+Escrevo as condições de existência e explico por que o logaritmando é positivo
+Calculo de cabeça logs como log_2 32, log 0,001 e log_9 3
+Uso log_b 1 = 0, log_b b = 1 e log_b b^n = n
+Aplico as propriedades do produto, do quociente e da potência
+Reconheço as “propriedades falsas”: log da soma e quociente de logs
+Faço mudança de base com o logaritmando em cima
+Obtenho logs de 4, 5, 6, 9, 12, 1,5 e 0,9 a partir de log 2 e log 3
+Conto os algarismos de uma potência grande pelo logaritmo
+Resolvo equações exponenciais com log, isolando a potência antes
+Calculo o tempo para dobrar ou cair à metade como razão de logaritmos
+Resolvo equações logarítmicas pela definição ou igualando logaritmandos
+Verifico cada raiz nas condições de existência antes de marcar
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez que dão log 2 e log 3 no enunciado. Depois siga para Função logarítmica e aplicações (pH, Richter, decibéis), onde estas contas viram escalas do mundo real.
+Flashcards para o Anki
+Foram gerados 39 cartões deste assunto no arquivo ENEM-Matematica-27-logaritmos-propriedades-equacoes.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

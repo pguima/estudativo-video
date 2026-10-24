@@ -1,0 +1,59 @@
+Uma confecção precisa vender seiscentas camisetas para empatar. Qual é o número mínimo de camisetas para ter lucro? Seiscentos está nas alternativas, e está errado. A resposta é seiscentos e um.
+
+Este é o quarto episódio da série de Função afim. Ao final, você vai dizer onde uma função afim é positiva ou negativa, montar custo, receita e lucro e decidir a partir de quando um plano compensa.
+
+Três lembretes rápidos. Da série de Equações e Inequações: uma inequação se resolve como uma equação, e o ponto de equilíbrio é onde dois valores empatam. Da mesma série: se n tem que ser maior que oitocentos, o menor inteiro é oitocentos e um. E do episódio três: com dois pontos, a taxa é a variação do y dividida pela variação do x.
+
+Imagine uma pequena fábrica de peças. Todo mês ela paga o aluguel e as máquinas, vendendo ou não. Cada peça gasta um pouco de material. E cada peça é vendida por um preço. E pense em dois aplicativos de transporte, cada um com a sua bandeirada e o seu preço por quilômetro. Hoje, os dois viram retas.
+
+Onde uma função é positiva? Fazer o estudo do sinal é descobrir para quais valores de x o resultado dá positivo, negativo ou zero. Pegue dois x menos seis. O zero é onde ela vale zero: dois x igual a seis, x igual a três. Antes do três, teste o zero: menos seis. Negativa. Depois do três, teste o cinco: dez menos seis, quatro. Positiva.
+
+E se o a for negativo? Pegue menos x mais quatro. O zero é x igual a quatro. Antes do quatro, teste o zero: mais quatro. Positiva. Depois do quatro, teste o seis: menos seis mais quatro, menos dois. Negativa. Ficou ao contrário da primeira. Por quê?
+
+Porque quem manda é o a. Regra para guardar: depois do zero, a função tem o sinal de a; antes do zero, o sinal contrário. Dois x menos seis: a é positivo, depois do três é positiva. Menos x mais quatro: a é negativo, depois do quatro é negativa. Atalho: ache o zero, olhe o a. Sem tabela, sem conta.
+
+Como a fábrica vira função? O custo fixo é o que se paga mesmo sem produzir nada: aluguel, máquinas. O custo variável cresce com cada peça: o custo de uma peça, vezes o número de peças. Juntos: C de x igual ao fixo, mais c vezes x. Uma função afim. A receita é o dinheiro que entra das vendas: R de x igual a p vezes x, o preço vezes as peças. Uma reta que sai da origem.
+
+E o lucro? O lucro é o que sobra: receita menos custo. E aqui mora um detalhe: escreva o custo entre parênteses. L de x igual a R de x, menos, abre parênteses, fixo mais c x. O menos vale para o custo inteiro. E quando o lucro dá negativo, ele tem outro nome: prejuízo.
+
+Vamos com números. Custo fixo de dois mil reais. Quinze reais para fazer cada peça. Venda a vinte e cinco. Lucro: vinte e cinco x, menos, entre parênteses, dois mil mais quinze x. Abre os parênteses: dez x menos dois mil. O ponto de equilíbrio é a quantidade em que o lucro é zero: nem ganha, nem perde. Dez x igual a dois mil: duzentas peças.
+
+E no gráfico, o que é esse empate? A receita sai da origem: sem vendas, sem dinheiro. O custo sai de dois mil: o aluguel já está lá. As duas retas se cruzam em duzentas peças, com cinco mil reais de custo e de receita. Antes do cruzamento, o custo fica em cima: prejuízo. Depois, a receita fica em cima: lucro. E cada peça a mais rende dez reais.
+
+Dá para achar o empate mais rápido? Atalho: o fixo, dividido pelo que sobra de cada unidade. De cada peça sobram vinte e cinco menos quinze, dez reais. Esses dez vão pagando o aluguel. Dois mil dividido por dez: duzentas peças. Mesma resposta, em uma linha.
+
+E a partir de quantas peças há lucro? Lucro positivo é L de x maior que zero. Isso é estudo do sinal! O zero é duzentos. O a é dez, positivo. Depois do duzentos, lucro. Repare no sinal: maior que, sem o igual. Isso é uma desigualdade estrita: o próprio duzentos não serve. Com duzentas peças, o lucro é zero. E lucro zero não é lucro. A resposta é duzentas e uma.
+
+E os dois aplicativos? O A cobra quatro reais de bandeirada, mais três por quilômetro. O B cobra dez de bandeirada, mais dois por quilômetro. Pense numa corrida: quem tem a bandeirada menor larga na frente; quem tem o quilômetro mais barato ganha no fim. As duas retas se cruzam em algum quilômetro. Onde?
+
+Pela série de Equações, você já sabe o atalho. Atalho da diferença: a diferença das bandeiradas, dez menos quatro, seis, dividida pela diferença por quilômetro, três menos dois, um. Seis quilômetros. Conferindo: o A dá vinte e dois, o B dá vinte e dois. Empate. E o novo: o A fica mais caro quando A menos B é positivo. x menos seis maior que zero. Estudo do sinal de novo. Até seis quilômetros, o A compensa. Depois, o B.
+
+Sua vez. Uma doceira tem custo fixo de seiscentos reais por mês, gasta quatro reais por bolo e vende cada um a dez reais. A partir de quantos bolos ela tem lucro? Pause e tente.
+
+Vamos juntos. Lucro: dez x, menos, entre parênteses, seiscentos mais quatro x. Dá seis x menos seiscentos. Empate: seis x igual a seiscentos, cem bolos. O a é seis, positivo: depois do cem, lucro. Com cem bolos, lucro zero. Com cento e um, seis reais. Resposta: a partir de cento e um bolos.
+
+Vamos guardar em três frases. Um: depois do zero, a função tem o sinal de a. Dois: lucro é receita menos custo, com o custo entre parênteses. Três: no equilíbrio o lucro é zero: com unidades inteiras, some um.
+
+Agora, os três erros clássicos. Primeiro: responder o ponto de equilíbrio como a primeira quantidade com lucro. Duzentas peças. Parece certo, porque a conta que você acabou de fazer deu exatamente esse número. Mas em duzentas o lucro é zero. Lucro começa em duzentas e uma.
+
+Segundo: dividir o custo fixo pelo preço de venda. Dois mil dividido por vinte e cinco, oitenta peças. Parece certo, porque cada venda ajuda a pagar o aluguel. Mas cada peça custa quinze para fazer. Só sobram dez. Com oitenta peças, o prejuízo é de mil e duzentos.
+
+Terceiro: somar as bandeiradas ao comparar planos. Quatro mais dez, catorze, dividido por um: catorze quilômetros. Parece certo, porque as duas bandeiradas entram na conta. Mas o que importa é quanto um larga na frente do outro: a diferença. Dez menos quatro, seis quilômetros.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. Uma confecção tem custo fixo mensal de doze mil reais e gasta trinta reais para produzir cada camiseta, vendida a cinquenta. O número mínimo de camisetas para ter lucro é: A: cento e cinquenta. B: duzentos e quarenta. C: quatrocentos. D: seiscentos. E: seiscentos e um. Pause o vídeo e tente.
+
+Pergunta: a partir de quando há lucro. Estudo do sinal. Lucro: cinquenta x, menos, entre parênteses, doze mil mais trinta x. Dá vinte x menos doze mil. Lucro maior que zero: vinte x maior que doze mil, x maior que seiscentos. Testando: seiscentas camisetas, lucro zero. Seiscentas e uma, lucro de vinte reais. Letra E!
+
+E as armadilhas? A D é o ponto de equilíbrio: nem lucro, nem prejuízo. A B divide doze mil pelo preço de venda, esquecendo o custo de cada camiseta. A C divide pelo custo de cada uma. E a A divide pela soma, cinquenta mais trinta.
+
+E esta é sua. A empresa A cobra seis reais fixos mais dois e quarenta por quilômetro. Na empresa B, o preço também é afim: uma corrida de zero quilômetro custa oito reais, e uma de dez quilômetros custa vinte e oito. A empresa A passa a ser mais cara que a B para corridas com mais de: A: dois quilômetros. B: cinco. C: quinze. D: vinte. E: trinta e cinco. Pause o vídeo e tente.
+
+Conferindo. Primeiro, a lei da B, pelos dois pontos. De zero a dez quilômetros, o preço foi de oito a vinte e oito: vinte a mais em dez quilômetros, dois reais por quilômetro. Bandeirada: oito. A mais cara que B: seis mais dois e quarenta x, maior que oito mais dois x. Zero vírgula quatro x maior que dois: x maior que cinco. Testando: com quatro quilômetros, o A ainda é mais barato. Com seis, o A já é mais caro. Letra B!
+
+E as armadilhas? A A é a diferença das bandeiradas sem dividir pela diferença por quilômetro. A E soma as bandeiradas: catorze dividido por zero vírgula quatro. A D e a C dividem por zero vírgula quatro a bandeirada de uma empresa só: oito, e seis.
+
+Para fechar, as mesmas três frases. Um: depois do zero, a função tem o sinal de a. Dois: lucro é receita menos custo, com o custo entre parênteses. Três: no equilíbrio o lucro é zero: com unidades inteiras, some um.
+
+No último episódio deste assunto, juntamos tudo, vemos a função afim escondida na Física, na termometria, nos juros simples e nas progressões e caçamos as pegadinhas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: que negócio você abriria, e quantas unidades precisaria vender para empatar? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,247 @@
+Função Afim
+Matemática › Álgebra e Funções › Assunto 6 de 18
+Função afim: gráfico, coeficientes e aplicações
+Uma parte fixa mais uma parte que cresce sempre no mesmo ritmo: é o modelo de tarifas, salários com comissão, velas que queimam e tanques que esvaziam. A função afim tem gráfico em linha reta, e seus dois coeficientes contam a história inteira: de onde a grandeza parte e quanto ela muda a cada unidade.
+Semana
+7 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Conceito de função · Equações e inequações do 1º grau
+Destrava
+Função quadrática, PA, juros simples, equação da reta, movimento uniforme
+Neste assunto
+01 O que o ENEM cobra aqui
+A função afim é a função mais cobrada do ENEM. Ela quase sempre vem em contexto, e a pergunta exige que você monte a lei a partir de dados, de uma tabela ou de um gráfico, e depois a use. As formas mais comuns:
+Tarifas e planos: valor fixo mais valor por unidade (minuto, quilômetro, metro cúbico), e a comparação entre dois planos.
+Variação constante no tempo: vela que derrete, reservatório que esvazia, carro que desvaloriza, árvore que cresce.
+Custo, receita e lucro: quantas unidades vender para não ter prejuízo.
+Leitura de gráfico: descobrir a taxa de variação e o valor inicial a partir de dois pontos de uma reta.
+Proporcional ou não: reconhecer que, com parte fixa, dobrar o x não dobra o y.
+O que rende mais aqui
+Dar nome aos coeficientes em português: a é quanto muda por unidade (taxa de variação) e b é o valor quando x = 0 (valor inicial). Com essas duas frases, quase toda questão vira uma conta de uma linha.
+02 Definição e casos particulares
+Definição
+Função afim é toda função f: ℝ → ℝ da forma f(x) = ax + b, com a e b reais. O a é o coeficiente angular (ou taxa de variação) e o b, o coeficiente linear (ou valor inicial). O gráfico é sempre uma reta.
+ | Caso | Forma | Gráfico | Exemplo
+ | Afim geral | ax + b | reta inclinada | táxi: 5 + 2,5d
+ | Linear (b = 0) | ax | reta pela origem | combustível: 6L
+ | Identidade | x | bissetriz dos quadrantes ímpares | —
+ | Constante (a = 0) | b | reta horizontal | mensalidade fixa: 99,90
+Alguns livros chamam de “função do 1º grau” só o caso com a ≠ 0. Para a prova, o que importa é reconhecer a estrutura “parte fixa + parte proporcional a x”.
+03 Coeficiente angular: a taxa de variação
+Numa função afim, cada vez que x aumenta 1, o y muda exatamente a. Por isso, com dois pontos quaisquer da reta:
+Taxa de variação
+a = (Δy/Δx) = (y_2 − y_1/x_2 − x_1)
+A unidade de a é “unidade de y por unidade de x”: reais por quilômetro, centímetros por minuto, litros por hora.
+ | x (horas) | 0 | 1 | 2 | 3 | 4
+ | y (litros) | 500 | 440 | 380 | 320 | 260
+ | diferença | — | −60 | −60 | −60 | −60
+As diferenças são constantes: é função afim, com a = −60 L/h e b = 500 L. Lei: y = 500 − 60x. Numa tabela com x espaçado irregularmente, divida cada diferença de y pela diferença de x correspondente.
+Δy sobre Δx, nessa ordem e com os mesmos pontos
+Inverter a fração (Δx/Δy) ou subtrair os pontos em ordens diferentes no numerador e no denominador troca o valor ou o sinal da taxa. Escreva os dois pontos, subtraia “segundo menos primeiro” em cima e embaixo.
+04 Coeficiente linear e zero da função
+Fazendo x = 0: f(0) = b. O coeficiente linear é o valor da função no início, e no gráfico é o ponto em que a reta corta o eixo y, (0, b).
+O zero (ou raiz) é o x que anula a função, onde a reta corta o eixo x:
+Zero da função afim
+ax + b = 0 → x = −(b/a)
+Em y = 500 − 60x, o tanque esvazia em x = (500/60) ≈ 8,3 h. Em f(x) = 2x − 6, o zero é 3.
+Em contexto, o zero tem nome
+Hora em que a vela acaba, quilometragem em que a dívida zera, temperatura em que algo congela. Quando a pergunta é “quando acaba?” ou “quando chega a zero?”, ela pede o zero da função.
+05 Crescente, decrescente, constante
+O sinal de a decide a inclinação; o tamanho de a decide o quanto ela é íngreme.
+O sinal de a lido no gráfico. Com a > 0, a reta sobe da esquerda para a direita (função crescente); com a < 0, desce (decrescente); com a = 0, é horizontal (constante). O b só desloca a reta para cima ou para baixo.
+ | Coeficiente | No gráfico | Em contexto
+ | a > 0 | reta sobe | a grandeza aumenta (conta que cresce com o consumo)
+ | a < 0 | reta desce | a grandeza diminui (vela, reservatório, valor de um carro)
+ | |a| maior | reta mais íngreme | variação mais rápida (tarifa por km mais cara)
+ | b maior | reta mais alta no eixo y | parte fixa maior
+Inclinação depende da escala
+Comparar a inclinação “a olho” só vale quando as retas estão no mesmo par de eixos. Em gráficos com escalas diferentes, calcule Δy/Δx de cada um.
+06 Obtendo a lei a partir de dois pontos
+Uma reta fica determinada por dois pontos, então dois dados bastam para escrever a lei. O roteiro:
+Exemplo · a reta passa por (2, 11) e (5, 20)
+1) a = (20 − 11/5 − 2) = (9/3) = 3
+2) substitua um ponto: 11 = 3 · 2 + b → b = 5
+3) lei: f(x) = 3x + 5 4) confira com o outro ponto: 3 · 5 + 5 = 20 ✓
+Se um dos pontos tem x = 0, o b já está dado. Também funciona montar o sistema 2a + b = 11 e 5a + b = 20 e subtrair as equações, como em Sistemas de equações lineares.
+Em contexto · escala termométrica
+Uma escala marca 10 °E no gelo fundente (0 °C) e 60 °E na água fervente (100 °C). Pontos (0, 10) e (100, 60): a = (50/100) = 0,5 e b = 10. Lei: E = 0,5C + 10. É o mesmo raciocínio que gera F = 1,8C + 32.
+07 Estudo do sinal
+Saber onde f(x) é positiva ou negativa é resolver uma inequação do 1º grau. Com o zero e o sinal de a, a resposta sai sem conta:
+ | | antes do zero | no zero | depois do zero
+ | a > 0 (ex.: 2x − 6, zero 3) | negativa | 0 | positiva
+ | a < 0 (ex.: −x + 4, zero 4) | positiva | 0 | negativa
+Regra para guardar: depois do zero, a função tem o sinal de a; antes, o sinal contrário.
+Lucro positivo é estudo do sinal
+“A partir de quantas unidades há lucro?” é perguntar onde L(x) > 0. Ache o zero (o ponto de equilíbrio) e use o sinal de a. Se a resposta precisa ser inteira e a desigualdade é estrita, o equilíbrio em si não serve: lucro zero não é lucro.
+08 Aplicações: custo, receita, lucro e proporcionalidade
+Os três modelos de uma pequena empresa
+C(x) = C_fixo + c · x R(x) = p · x L(x) = R(x) − C(x)
+Com custo fixo de R$ 2.000,00, custo de R$ 15,00 por peça e preço de venda de R$ 25,00: L(x) = 25x − (2 000 + 15x) = 10x − 2 000. Equilíbrio em x = 200 peças.
+Ponto de equilíbrio. A receita parte da origem (sem vendas, sem receita); o custo parte do custo fixo. Elas se cruzam em 200 peças, com R$ 5.000,00 de custo e de receita. Antes disso, o custo fica acima: prejuízo. Depois, a receita fica acima: lucro. Cada peça a mais rende 25 − 15 = 10 reais de lucro.
+Proporcional só quando b = 0
+Na função linear y = ax, y é proporcional a x: dobrar x dobra y. Com parte fixa, isso deixa de valer:
+Plano de celular · R$ 40,00 fixos + R$ 0,50 por minuto
+C(100) = 40 + 50 = 90 C(200) = 40 + 100 = 140 ≠ 2 · 90
+Dobrou o consumo, mas a parte fixa não dobra. Regra de três direta entre x e y só vale para funções lineares.
+A regra de três que o ENEM quer que você faça
+Se uma mola de 20 cm passa a 26 cm com 2 kg, com 5 kg ela não terá (26 · 5/2) = 65 cm. O que é proporcional à massa é o alongamento (6 cm para 2 kg, logo 15 cm para 5 kg); o comprimento total é afim: 20 + 15 = 35 cm.
+09 Estratégia de prova
+1 · Ache o b e o a por seus nomes
+Procure no texto o valor “inicial”, “fixo”, “sem uso”, “no instante zero”: é o b. Procure “por quilômetro”, “a cada hora”, “por unidade”: é o a. Se não houver, calcule a por Δy/Δx com dois dados.
+2 · Desconfie da regra de três
+Antes de montar uma proporção, pergunte se há parte fixa. Se houver, a proporção está errada, e a alternativa que ela produz está lá esperando por você.
+3 · Atenção ao ponto de partida do tempo
+Se os dados começam em t = 10 min, o valor inicial não é o primeiro dado da tabela. Extrapole para t = 0 com a taxa, e confira se a pergunta conta o tempo desde o início ou a partir de algum instante.
+4 · Confira com um ponto conhecido
+Com a lei pronta, substitua um dos dados do enunciado. Se não bater, há erro na taxa ou no sinal do b.
+10 Onde isso aparece nas outras áreas
+ | Área | Lei afim | Quem é a e quem é b
+ | Física (MU) | s = s_0 + vt | a é a velocidade; b, a posição inicial
+ | Física (MUV) | v = v_0 + at | a aceleração é a taxa de variação da velocidade
+ | Termometria | F = 1,8C + 32 | cada 1 °C vale 1,8 °F; 0 °C corresponde a 32 °F
+ | Matemática Financeira | M = C + Ci · t | juros simples: o montante cresce Ci por período
+ | Progressões | a_n = a_1 + (n − 1)r | uma PA é uma função afim definida nos naturais; a razão é a taxa
+Em todos esses casos, a pergunta “quanto muda por unidade?” dá o a, e “quanto vale no início?” dá o b. O gráfico da velocidade no MUV, por exemplo, é uma reta cuja inclinação é a aceleração.
+11 Os erros que mais custam pontos
+Regra de três com parte fixa → usar a lei y = ax + bDobrar x não dobra y quando b ≠ 0.
+a = Δx/Δy → a = Δy/ΔxVariação da saída sobre variação da entrada.
+Tomar o primeiro dado como b → b = f(0)Se a tabela começa em t = 10, extrapole até t = 0.
+Zero da função = b → zero = −b/ab é onde corta o eixo y; o zero, onde corta o eixo x.
+a < 0 em grandeza que diminui escrito com + → y = b − |a|xVela, tanque e depreciação têm taxa negativa.
+Equilíbrio = primeira unidade com lucro → lucro exige L > 0No equilíbrio o lucro é zero; com unidades inteiras, some 1.
+Esquecer o tempo já decorrido → tempo desde o início17 cm aos 10 min: o fim não é 17 ÷ taxa minutos.
+Trocar a e b ao ler o gráfico → b no eixo y, a na inclinaçãoConfira a lei com um ponto do gráfico.
+Comparar inclinações em escalas diferentes → calcular Δy/ΔxA aparência engana quando os eixos mudam.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, identifique primeiro o valor inicial e a taxa de variação.
+Questão 1 · A vela que derrete
+Uma vela foi acesa e passou a diminuir de altura a uma taxa constante. Dez minutos depois de acesa, ela media 17 cm; trinta minutos depois de acesa, media 13 cm. Mantido esse ritmo, o tempo total, contado a partir do momento em que foi acesa, até a vela se consumir por completo é de
+47,5 min.
+65 min.
+85 min.
+95 min.
+105 min.
+Ver resolução
+Taxa: a = (13 − 17/30 − 10) = −0,2 cm/min. Altura inicial: 17 + 0,2 · 10 = 19 cm. Lei: h(t) = 19 − 0,2t.
+19 − 0,2t = 0 → t = 95 min
+A C divide 17 por 0,2: é o tempo que falta a partir dos 10 min, sem somar esses 10. A B faz o mesmo a partir dos 30 min. A E extrapola errado a altura inicial (21 cm). A A usa a taxa de 0,4 cm/min, dividindo a queda de 4 cm por 10 min em vez de 20.
+Alternativa D
+Questão 2 · Dobrar o consumo não dobra a conta
+Um plano de celular cobra uma mensalidade fixa mais um valor constante por minuto de ligação. Em um mês com 100 minutos de ligação, a conta foi de R$ 90,00; a mensalidade fixa é de R$ 40,00. Em um mês com 200 minutos, a conta será de
+R$ 100,00.
+R$ 130,00.
+R$ 140,00.
+R$ 180,00.
+R$ 220,00.
+Ver resolução
+Os 100 minutos custaram 90 − 40 = 50 reais, ou R$ 0,50 por minuto. Lei: C(m) = 40 + 0,5m.
+C(200) = 40 + 100 = 140 reais
+A D é a regra de três (2 · 90), que dobra também a mensalidade. A E dobra a conta e soma a mensalidade de novo. A A esquece a mensalidade. A B soma à conta antiga a mensalidade em vez dos 100 minutos a mais.
+Alternativa C
+Questão 3 · Reservatório com vazamento
+Um reservatório tinha 2 000 litros de água quando começou um vazamento de vazão constante. Cinco horas depois, restavam 1 600 litros. Se nada for feito, o reservatório terá 400 litros após
+1,25 h do início do vazamento.
+4 h do início do vazamento.
+15 h do início do vazamento.
+20 h do início do vazamento.
+25 h do início do vazamento.
+Ver resolução
+Taxa: (1 600 − 2 000/5) = −80 L/h. Lei: V(t) = 2 000 − 80t.
+2 000 − 80t = 400 → 80t = 1 600 → t = 20 h
+A E é o tempo para esvaziar (V = 0). A C conta a partir da 5ª hora, não do início. A A faz uma proporção entre 400 e 1 600 litros, como se o volume fosse proporcional ao tempo. A B divide 1 600 por 400, misturando volumes com tempo.
+Alternativa D
+Questão 4 · Do equilíbrio ao lucro
+Uma confecção tem custo fixo mensal de R$ 12.000,00 e gasta R$ 30,00 para produzir cada camiseta, vendida a R$ 50,00. O número mínimo de camisetas que precisam ser produzidas e vendidas em um mês para que a confecção tenha lucro é
+150.
+240.
+400.
+600.
+601.
+Ver resolução
+L(x) = 50x − (12 000 + 30x) = 20x − 12 000
+Lucro exige L(x) > 0: x > 600. Com 600 camisetas o lucro é exatamente zero; a primeira quantidade inteira com lucro é 601.
+A D é o ponto de equilíbrio, em que não há lucro nem prejuízo. A B divide o custo fixo pelo preço de venda, esquecendo o custo de produção. A C divide pelo custo unitário. A A divide pela soma 50 + 30.
+Alternativa E
+Questão 5 · Uma escala termométrica nova
+Um estudante criou uma escala termométrica E que marca 10 °E no ponto de fusão do gelo (0 °C) e 60 °E no ponto de ebulição da água (100 °C), ao nível do mar. A relação entre as escalas é afim. Uma pessoa com temperatura corporal de 37 °C teria, nessa escala,
+18,5 °E.
+28,5 °E.
+47 °E.
+74 °E.
+84 °E.
+Ver resolução
+Pontos (0, 10) e (100, 60): a = (50/100) = 0,5 e b = 10.
+E = 0,5 · 37 + 10 = 28,5 °E
+A A esquece o b: trata a relação como proporcional. A C soma 10 sem aplicar a taxa. A D inverte a taxa (Δx/Δy = 2) e esquece o b; a E inverte a taxa e soma o b.
+Alternativa B
+Questão 6 · Lei a partir do gráfico
+O gráfico de uma função afim f é uma reta que corta o eixo vertical no ponto (0, −3) e passa pelo ponto (2, 1). A lei dessa função é
+f(x) = 2x − 3
+f(x) = −3x + 2
+f(x) = 0,5x − 3
+f(x) = 2x + 3
+f(x) = −2x − 3
+Ver resolução
+O ponto no eixo vertical dá b = −3. A taxa: a = (1 − (−3)/2 − 0) = (4/2) = 2. Lei: f(x) = 2x − 3. Conferência: f(2) = 4 − 3 = 1.
+A B troca os papéis de a e b. A C inverte a fração (Δx/Δy). A D erra o sinal de b e a E, o de a: a reta sobe de −3 para 1, então é crescente.
+Alternativa A
+Questão 7 · Qual corrida sai mais cara
+A empresa de transporte A cobra R$ 6,00 fixos mais R$ 2,40 por quilômetro. Na empresa B, o preço também é uma função afim da distância: uma corrida de 0 km (só a bandeirada) custa R$ 8,00, e uma de 10 km custa R$ 28,00. A empresa A passa a ser mais cara que a B para corridas com mais de
+2 km.
+5 km.
+15 km.
+20 km.
+35 km.
+Ver resolução
+Em B: a = (28 − 8/10) = 2 e b = 8, ou seja, P_B = 8 + 2x.
+6 + 2,4x > 8 + 2x → 0,4x > 2 → x > 5 km
+A A é a diferença entre as bandeiradas, que ainda precisa ser dividida pela diferença de preço por km. A E soma as bandeiradas em vez de subtrair (14 ÷ 0,4). A D e a C dividem por 0,4 a bandeirada de uma empresa só (8 e 6).
+Alternativa B
+Questão 8 · Depreciação linear
+Um carro comprado por R$ 60.000,00 passou a valer R$ 42.000,00 três anos depois. Suponha que o valor do carro diminua linearmente com o tempo. Sete anos após a compra, ele valerá
+R$ 6.000,00.
+R$ 12.000,00.
+R$ 18.000,00.
+R$ 24.000,00.
+cerca de R$ 26.000,00.
+Ver resolução
+Taxa: (42 000 − 60 000/3) = −6 000 reais por ano. Lei: V(t) = 60 000 − 6 000t.
+V(7) = 60 000 − 42 000 = 18 000 reais
+A A é a perda anual, não o valor. A B desconta 5 anos a partir do valor de R$ 42.000,00, quando faltam só 4. A D desconta duas vezes a perda de 3 anos, como se 7 anos fossem 6. A E aplica a mesma queda percentual (30% a cada 3 anos), que é o modelo exponencial, não o linear pedido.
+Alternativa C
+Questão 9 · A mola que alonga
+Uma mola tem 20 cm de comprimento sem carga. Pendurando-se nela um objeto de 2 kg, seu comprimento passa a 26 cm. Admitindo que o alongamento seja proporcional à massa pendurada, a massa que deixa a mola com 32 cm de comprimento é
+cerca de 2,5 kg.
+4 kg.
+6 kg.
+cerca de 10,7 kg.
+16 kg.
+Ver resolução
+O alongamento é de 6 cm para 2 kg: 3 cm por kg. O comprimento é afim na massa: L(m) = 20 + 3m.
+20 + 3m = 32 → m = 4 kg
+A A faz regra de três com o comprimento total ((32 · 2/26) ≈ 2,5). A D divide 32 por 3, esquecendo os 20 cm iniciais. A E divide 32 por 2. A C divide o alongamento de 12 cm por 2, usando a massa de referência como se fosse a taxa.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Reconheço uma função afim pela estrutura “parte fixa + parte proporcional”
+Interpreto a como taxa de variação, com unidade
+Interpreto b como valor inicial e ponto de corte no eixo y
+Calculo a = Δy/Δx a partir de dois pontos ou de uma tabela
+Escrevo a lei a partir de dois pontos e a confiro com um terceiro dado
+Extrapolo o valor inicial quando os dados não começam em zero
+Calculo o zero −b/a e o interpreto no contexto
+Leio no gráfico se a função é crescente, decrescente ou constante
+Faço o estudo do sinal com o zero e o sinal de a
+Monto custo, receita e lucro e encontro o ponto de equilíbrio
+Distingo função linear (proporcional) de função afim com parte fixa
+Comparo dois planos e decido a partir de quando um compensa
+Reconheço leis afins em MU, termometria, juros simples e PA
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez em que a lei precisa ser montada a partir de um gráfico ou de uma tabela. Depois siga para Função quadrática: vértice, raízes, máximo e mínimo, em que a taxa de variação deixa de ser constante.
+Flashcards para o Anki
+Foram gerados 32 cartões deste assunto no arquivo ENEM-Matematica-24-funcao-afim-grafico-coeficientes.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

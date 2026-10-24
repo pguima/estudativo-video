@@ -1,0 +1,1060 @@
+<title>Grandezas Proporcionais</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 7 de 12</p>
+        <h1>Grandezas direta e inversamente proporcionais</h1>
+        <p class="deck">O assunto anterior ensinou a resolver com regra de três. Este ensina a reconhecer <em>quando</em> a proporcionalidade existe — e a identificá-la numa tabela, num gráfico ou numa fórmula, que é como o ENEM costuma perguntar.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Dois gráficos lado a lado: à esquerda uma reta que passa pela origem, típica de grandezas diretamente proporcionais; à direita uma hipérbole, típica de grandezas inversamente proporcionais">
+  <rect x="8" y="34" width="134" height="146" rx="10" style="fill:var(--c1-soft);stroke:var(--c1-line);stroke-width:1"/>
+  <text x="75" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">direta</text>
+  <line x1="30" y1="164" x2="130" y2="164" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="30" y1="164" x2="30" y2="50" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="30" y1="164" x2="120" y2="58" style="stroke:var(--c1);stroke-width:2.5;stroke-linecap:round"/>
+  <circle cx="30" cy="164" r="3.5" style="fill:var(--c1)"/>
+  <text x="75" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">y = k · x</text>
+  <text x="122" y="50" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">y/x = k</text>
+  <rect x="158" y="34" width="134" height="146" rx="10" style="fill:var(--c2-soft);stroke:var(--c2-line);stroke-width:1"/>
+  <text x="225" y="24" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">inversa</text>
+  <line x1="180" y1="164" x2="280" y2="164" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <line x1="180" y1="164" x2="180" y2="50" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <path d="M191 56 C 210 118, 228 146, 274 154" style="fill:none;stroke:var(--c2);stroke-width:2.5;stroke-linecap:round"/>
+  <text x="225" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">y = k / x</text>
+  <text x="272" y="50" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">x · y = k</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>3 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Razão, proporção e regra de três</dd></div>
+      <div><dt>Destrava</dt><dd>Funções, gráficos, Física, leitura de tabelas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O assunto anterior tratou de <em>resolver</em> proporções. Este trata de <em>reconhecê-las</em> — e é uma habilidade diferente, cobrada de outro jeito.</p>
+<p>Os três formatos em que aparece:</p>
+<ol>
+  <li><strong>Tabela.</strong> O enunciado traz uma tabela de valores e pergunta que tipo de relação existe, ou pede o valor que falta. Resolve-se dividindo ou multiplicando as colunas.</li>
+  <li><strong>Gráfico.</strong> Uma curva é mostrada e se pergunta qual situação ela representa. Reta pela origem, reta com valor fixo e hipérbole significam coisas diferentes.</li>
+  <li><strong>Fórmula.</strong> Uma expressão de Física ou Química é dada e se pergunta o que acontece com uma grandeza quando outra dobra ou triplica.</li>
+</ol>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas coisas. Primeiro, o <strong>teste da tabela</strong> (seção 08): dividir e multiplicar as colunas responde qualquer questão desse tipo em segundos. Segundo, a <strong>reta que não passa pela origem</strong> (seção 10) — a armadilha mais cobrada do assunto, e a mais fácil de cair.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A constante de proporcionalidade</h2>
+<p>Toda proporcionalidade tem um número que <strong>não muda</strong> enquanto as grandezas variam. Achar esse número é achar a relação inteira.</p>
+
+<div class="box def">
+  <span class="tag">As duas constantes</span>
+  <p><strong>Diretamente proporcionais:</strong> o <strong>quociente</strong> é constante.</p>
+  <p class="m" style="font-size:1.08rem"><span class="frac"><i><span class="v">y</span></i><i><span class="v">x</span></i></span> = <span class="v">k</span> &nbsp;&nbsp;⟺&nbsp;&nbsp; <span class="v">y</span> = <span class="v">k</span> · <span class="v">x</span></p>
+  <p style="margin-top:12px"><strong>Inversamente proporcionais:</strong> o <strong>produto</strong> é constante.</p>
+  <p class="m" style="font-size:1.08rem"><span class="v">x</span> · <span class="v">y</span> = <span class="v">k</span> &nbsp;&nbsp;⟺&nbsp;&nbsp; <span class="v">y</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">x</span></i></span></p>
+</div>
+
+<h3>O k sempre significa alguma coisa</h3>
+<p>Ele não é um símbolo abstrato — é uma grandeza do problema:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Relação</th><th>O que é o k</th></tr></thead>
+  <tbody>
+    <tr><td>Preço e quantidade</td><td>direta</td><td>preço por unidade</td></tr>
+    <tr><td>Distância e tempo</td><td>direta</td><td>velocidade</td></tr>
+    <tr><td>Massa e volume</td><td>direta</td><td>densidade</td></tr>
+    <tr><td>Velocidade e tempo</td><td>inversa</td><td>a distância a percorrer</td></tr>
+    <tr><td>Operários e prazo</td><td>inversa</td><td>o total de trabalho</td></tr>
+    <tr><td>Pressão e volume de um gás</td><td>inversa</td><td>depende da temperatura</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Como achar o k</span>
+  <p>Use <strong>um par de valores conhecido</strong>. Se <span class="m"><span class="v">y</span> = 15</span> quando <span class="m"><span class="v">x</span> = 5</span> e a relação é direta, então <span class="m"><span class="v">k</span> = 15 ÷ 5 = 3</span> — e a fórmula completa é <span class="m"><span class="v">y</span> = 3<span class="v">x</span></span>, válida para qualquer outro valor.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Grandezas diretamente proporcionais</h2>
+<p>Duas grandezas são diretamente proporcionais quando, ao multiplicar uma por um número, a outra fica multiplicada <strong>pelo mesmo número</strong>.</p>
+
+<div class="eq">
+  <span class="lbl">Combustível consumido por um automóvel</span>
+  <p class="m">180 km → 15 L &nbsp;&nbsp;·&nbsp;&nbsp; 360 km → 30 L &nbsp;&nbsp;·&nbsp;&nbsp; 540 km → 45 L</p>
+  <p class="m" style="margin-top:10px"><span class="frac"><i>15</i><i>180</i></span> = <span class="frac"><i>30</i><i>360</i></span> = <span class="frac"><i>45</i><i>540</i></span> = <span class="frac"><i>1</i><i>12</i></span> = <span class="v">k</span></p>
+  <p>O <span class="m"><span class="v">k</span> = <span class="frac"><i>1</i><i>12</i></span></span> é o consumo por quilômetro. Com ele, qualquer distância se resolve numa multiplicação.</p>
+</div>
+
+<p>A definição se estende a sequências inteiras: duas sequências são diretamente proporcionais quando os termos correspondentes têm sempre a mesma razão.</p>
+<div class="eq">
+  <p class="m"><span class="frac"><i><span class="v">a</span><sub>1</sub></i><i><span class="v">b</span><sub>1</sub></i></span> = <span class="frac"><i><span class="v">a</span><sub>2</sub></i><i><span class="v">b</span><sub>2</sub></i></span> = <span class="frac"><i><span class="v">a</span><sub>3</sub></i><i><span class="v">b</span><sub>3</sub></i></span> = … = <span class="v">k</span></p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Grandezas inversamente proporcionais</h2>
+<p>Ao multiplicar uma grandeza por um número, a outra fica <strong>dividida</strong> por esse mesmo número. O produto permanece.</p>
+
+<div class="eq">
+  <span class="lbl">Tempo de viagem para percorrer 240 km</span>
+  <p class="m">40 km/h → 6 h &nbsp;&nbsp;·&nbsp;&nbsp; 60 km/h → 4 h &nbsp;&nbsp;·&nbsp;&nbsp; 80 km/h → 3 h</p>
+  <p class="m" style="margin-top:10px">40 · 6 = 60 · 4 = 80 · 3 = 240 = <span class="v">k</span></p>
+  <p>Aqui o <span class="m"><span class="v">k</span></span> é a própria distância — a grandeza que o problema mantém fixa.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">A ponte entre as duas ideias</span>
+  <p>Se <span class="m"><span class="v">y</span></span> é <strong>inversamente</strong> proporcional a <span class="m"><span class="v">x</span></span>, então <span class="m"><span class="v">y</span></span> é <strong>diretamente</strong> proporcional a <span class="m"><span class="frac"><i>1</i><i><span class="v">x</span></i></span></span>.</p>
+  <p>É a mesma relação vista de outro ângulo, e é o que permite tratar qualquer proporção inversa com as ferramentas da direta.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O gráfico de cada relação</h2>
+<p>O ENEM gosta de mostrar o gráfico e perguntar que situação ele descreve. Cada relação tem uma forma inconfundível.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Relação</th><th>Fórmula</th><th>Gráfico</th><th>Marca registrada</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Direta</strong></td><td class="m"><span class="v">y</span> = <span class="v">k</span><span class="v">x</span></td><td>Reta</td><td><strong>Passa pela origem</strong>; a inclinação é o k</td></tr>
+    <tr><td><strong>Inversa</strong></td><td class="m"><span class="v">y</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">x</span></i></span></td><td>Hipérbole</td><td>Aproxima-se dos eixos sem tocá-los</td></tr>
+    <tr><td><strong>Nenhuma das duas</strong></td><td class="m"><span class="v">y</span> = <span class="v">a</span><span class="v">x</span> + <span class="v">b</span></td><td>Reta</td><td><strong>Não</strong> passa pela origem</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">O teste de dois segundos no gráfico</span>
+  <p>Numa proporção direta, <span class="m"><span class="v">x</span> = 0</span> obriga <span class="m"><span class="v">y</span> = 0</span>. Portanto, <strong>a reta tem de cruzar a origem</strong>. Se ela corta o eixo vertical acima do zero, existe uma parcela fixa e a relação não é proporcional.</p>
+</div>
+
+<p>Na hipérbole, os eixos são <strong>assíntotas</strong>: a curva chega perto deles indefinidamente, mas nunca os alcança. Faz sentido no concreto — por mais que se aumente a velocidade, o tempo de viagem nunca chega a zero.</p>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Quando há mais de duas grandezas</h2>
+<p>Uma grandeza pode ser direta em relação a uma e inversa em relação a outra ao mesmo tempo. A regra de montagem é simples.</p>
+
+<div class="box def">
+  <span class="tag">A regra do numerador e do denominador</span>
+  <p>O que é <strong>diretamente</strong> proporcional vai no <strong>numerador</strong>. O que é <strong>inversamente</strong> proporcional vai no <strong>denominador</strong>.</p>
+  <p class="m" style="font-size:1.08rem"><span class="v">y</span> = <span class="v">k</span> · <span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Resistência de um fio condutor</span>
+  <p>A resistência é <strong>direta</strong> ao comprimento e <strong>inversa</strong> à área da seção:</p>
+  <p class="m"><span class="v">R</span> = <span class="v">k</span> · <span class="frac"><i><span class="v">L</span></i><i><span class="v">A</span></i></span></p>
+  <p>É exatamente a lei da resistividade que aparece em Física, <span class="m"><span class="v">R</span> = ρ<span class="frac"><i><span class="v">L</span></i><i><span class="v">A</span></i></span></span>, com o <span class="m">ρ</span> no papel do <span class="m"><span class="v">k</span></span>.</p>
+</div>
+
+<p>Para saber o efeito de várias mudanças ao mesmo tempo, aplique cada uma separadamente. Se <span class="m"><span class="v">a</span></span> dobra e <span class="m"><span class="v">b</span></span> triplica, então <span class="m"><span class="v">y</span></span> fica multiplicado por 2 e dividido por 3 — ou seja, por <span class="m"><span class="frac"><i>2</i><i>3</i></span></span>.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Proporcionalidade com potências</h2>
+<p>Nem toda proporcionalidade é linear. Quando a relação envolve quadrado ou cubo, dobrar uma grandeza não dobra a outra — e é aí que se erra.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Relação</th><th>Fórmula</th><th>Se x dobra, y…</th><th>Onde aparece</th></tr></thead>
+  <tbody>
+    <tr><td>Direta</td><td class="m"><span class="v">y</span> = <span class="v">k</span><span class="v">x</span></td><td>dobra</td><td>preço, distância</td></tr>
+    <tr><td>Quadrática</td><td class="m"><span class="v">y</span> = <span class="v">k</span><span class="v">x</span><sup>2</sup></td><td><strong>quadruplica</strong></td><td>área e lado, energia cinética</td></tr>
+    <tr><td>Cúbica</td><td class="m"><span class="v">y</span> = <span class="v">k</span><span class="v">x</span><sup>3</sup></td><td>fica <strong>8 vezes</strong> maior</td><td>volume e aresta</td></tr>
+    <tr><td>Inversa</td><td class="m"><span class="v">y</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">x</span></i></span></td><td>cai à metade</td><td>velocidade e tempo</td></tr>
+    <tr><td>Inversa do quadrado</td><td class="m"><span class="v">y</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">x</span><sup>2</sup></i></span></td><td>cai a <strong>um quarto</strong></td><td>luz, som, gravidade</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">A lei do inverso do quadrado</span>
+  <p>Aparece em Física com frequência: iluminação, intensidade sonora, força gravitacional e radiação seguem <span class="m"><span class="v">y</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">x</span><sup>2</sup></i></span></span>.</p>
+  <p>Afastar-se ao <strong>dobro</strong> da distância reduz o efeito a <strong>um quarto</strong>, não à metade. Triplicar a distância reduz a um nono.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Como reconhecer numa tabela</h2>
+<p>É o formato mais comum de questão, e existe um procedimento mecânico que resolve todos os casos.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 240" role="img" aria-label="Dois testes numa tabela: dividir y por x revela proporção direta quando o resultado é constante; multiplicar x por y revela proporção inversa quando o produto é constante">
+  <text x="14" y="20" class="svg-ttl" style="fill:var(--ink-2)">1 · divida y por x</text>
+  <rect x="14" y="30" width="200" height="26" rx="6" style="fill:var(--c1);"/>
+  <text x="44" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">x</text>
+  <text x="104" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">y</text>
+  <text x="174" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">y ÷ x</text>
+  <line x1="14" y1="82" x2="214" y2="82" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="14" y1="108" x2="214" y2="108" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="14" y1="134" x2="214" y2="134" style="stroke:var(--rule);stroke-width:1"/>
+  <text x="44" y="74" text-anchor="middle" class="svg-num" style="fill:var(--ink)">2</text><text x="104" y="74" text-anchor="middle" class="svg-num" style="fill:var(--ink)">6</text><text x="174" y="74" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">3</text>
+  <text x="44" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink)">5</text><text x="104" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink)">15</text><text x="174" y="100" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">3</text>
+  <text x="44" y="126" text-anchor="middle" class="svg-num" style="fill:var(--ink)">8</text><text x="104" y="126" text-anchor="middle" class="svg-num" style="fill:var(--ink)">24</text><text x="174" y="126" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">3</text>
+  <rect x="14" y="146" width="200" height="30" rx="7" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.3"/>
+  <text x="114" y="166" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">constante → DIRETA</text>
+  <text x="114" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">y = 3x</text>
+
+  <line x1="230" y1="14" x2="230" y2="206" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:4 4"/>
+
+  <text x="246" y="20" class="svg-ttl" style="fill:var(--ink-2)">2 · multiplique x por y</text>
+  <rect x="246" y="30" width="200" height="26" rx="6" style="fill:var(--c2);"/>
+  <text x="276" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">x</text>
+  <text x="336" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">y</text>
+  <text x="406" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--surface);font-weight:600">x · y</text>
+  <line x1="246" y1="82" x2="446" y2="82" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="246" y1="108" x2="446" y2="108" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="246" y1="134" x2="446" y2="134" style="stroke:var(--rule);stroke-width:1"/>
+  <text x="276" y="74" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3</text><text x="336" y="74" text-anchor="middle" class="svg-num" style="fill:var(--ink)">40</text><text x="406" y="74" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">120</text>
+  <text x="276" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink)">5</text><text x="336" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink)">24</text><text x="406" y="100" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">120</text>
+  <text x="276" y="126" text-anchor="middle" class="svg-num" style="fill:var(--ink)">8</text><text x="336" y="126" text-anchor="middle" class="svg-num" style="fill:var(--ink)">15</text><text x="406" y="126" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">120</text>
+  <rect x="246" y="146" width="200" height="30" rx="7" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.3"/>
+  <text x="346" y="166" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">constante → INVERSA</text>
+  <text x="346" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">y = 120 / x</text>
+
+  <rect x="90" y="212" width="280" height="24" rx="7" style="fill:var(--c4-soft);stroke:var(--c4-line);stroke-width:1"/>
+  <text x="230" y="228" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-weight:600">nenhum dos dois constante → não é proporcional</text>
+</svg>
+<figcaption><b>Dois cálculos respondem qualquer questão de tabela.</b> Divida a segunda coluna pela primeira: se der sempre o mesmo número, a relação é direta e esse número é o <span class="m"><span class="v">k</span></span>. Se não der, multiplique as duas: produto constante indica relação inversa. Se nenhum dos dois se mantiver, não há proporcionalidade alguma — e nenhuma regra de três pode ser usada.</figcaption>
+</figure>
+
+<div class="box tip">
+  <span class="tag">O hábito que economiza tempo</span>
+  <p>Ao ver uma tabela num enunciado, <strong>escreva uma terceira coluna à margem</strong> com o quociente ou o produto. É mais rápido do que testar alternativa por alternativa, e revela imediatamente o valor do <span class="m"><span class="v">k</span></span> — que costuma ser justamente o que a questão pede em seguida.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Onde isso aparece nas outras áreas</h2>
+<p>Metade das fórmulas de Física é uma afirmação de proporcionalidade. Reconhecer isso transforma decoreba em raciocínio.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Fórmula</th><th>Área</th><th>O que é proporcional a quê</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">v</span> = <span class="frac"><i><span class="v">d</span></i><i><span class="v">t</span></i></span></td><td>Física</td><td>Distância e tempo: <strong>diretas</strong>. Velocidade e tempo: <strong>inversas</strong></td></tr>
+    <tr><td class="m"><span class="v">F</span> = <span class="v">m</span> · <span class="v">a</span></td><td>Física</td><td>Força é <strong>direta</strong> à massa e à aceleração</td></tr>
+    <tr><td class="m"><span class="v">P</span> = <span class="v">U</span> · <span class="v">i</span></td><td>Física</td><td>Potência é <strong>direta</strong> à tensão e à corrente</td></tr>
+    <tr><td class="m"><span class="v">P</span> · <span class="v">V</span> = <span class="v">k</span></td><td>Química</td><td>Lei de Boyle: pressão e volume são <strong>inversas</strong></td></tr>
+    <tr><td class="m"><span class="v">d</span> = <span class="frac"><i><span class="v">m</span></i><i><span class="v">V</span></i></span></td><td>Química</td><td>Massa e volume são <strong>diretos</strong>; o k é a densidade</td></tr>
+    <tr><td class="m"><span class="v">E</span> = <span class="frac"><i><span class="v">m</span><span class="v">v</span><sup>2</sup></i><i>2</i></span></td><td>Física</td><td>Energia é <strong>quadrática</strong> na velocidade</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Ler fórmula como proporcionalidade</span>
+  <p>Numa fração, o que está <strong>em cima</strong> é direto e o que está <strong>embaixo</strong> é inverso. Sem decorar mais nada, você já sabe o que acontece se uma grandeza dobrar — e é isso que o ENEM pergunta.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> O que parece proporcional e não é</h2>
+<p>Esta é a armadilha mais cobrada do assunto, e ela tem uma cara só: <strong>uma parcela fixa</strong>.</p>
+
+<div class="box warn">
+  <span class="tag">A reta que não passa pela origem</span>
+  <p>Uma corrida de táxi cobra <span class="m">R$ 6,00</span> de bandeirada mais <span class="m">R$ 2,50</span> por quilômetro. O preço é <em>relacionado</em> à distância, mas <strong>não é proporcional</strong> a ela:</p>
+  <p class="m">8 km → 6 + 20 = R$ 26,00 &nbsp;&nbsp;·&nbsp;&nbsp; 16 km → 6 + 40 = R$ 46,00</p>
+  <p>Dobrar a distância <strong>não</strong> dobrou o preço, porque a bandeirada é cobrada uma vez só. Quem fez <span class="m">26 · 2 = 52</span> caiu na alternativa preparada para isso.</p>
+</div>
+
+<p>A mesma estrutura aparece em vários contextos do dia a dia, e o ENEM usa todos eles:</p>
+<ul>
+  <li><strong>Conta de luz e de água</strong> com taxa mínima ou de disponibilidade.</li>
+  <li><strong>Plano de celular</strong> com franquia fixa mais excedente.</li>
+  <li><strong>Frete</strong> com valor de despacho mais preço por quilo.</li>
+  <li><strong>Salário</strong> com parte fixa mais comissão.</li>
+</ul>
+
+<div class="box def">
+  <span class="tag">Como distinguir</span>
+  <p>Pergunte: <strong>quando a primeira grandeza vale zero, a segunda também vale zero?</strong></p>
+  <p>Se sim, há proporcionalidade. Se existe cobrança mesmo com consumo zero, a relação é <span class="m"><span class="v">y</span> = <span class="v">a</span><span class="v">x</span> + <span class="v">b</span></span> — uma função afim, assunto da semana 8, mas <strong>não</strong> uma proporção.</p>
+</div>
+
+<p>Outras relações que também não são proporcionais: <strong>juros compostos</strong> (crescimento exponencial), <strong>tarifas por faixa de consumo</strong> (o preço unitário muda de faixa para faixa) e <strong>área ou volume a partir de medidas lineares</strong> (relação quadrática ou cúbica, tratada na seção 07).</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Reta que não passa pela origem é proporção direta</span> &nbsp;→&nbsp; <span class="c">não é</span></span><small>Com uma parcela fixa, dobrar x não dobra y. É a armadilha mais cobrada do assunto.</small></li>
+  <li><span><span class="x">Táxi de 8 km custa 26; logo 16 km custam 52</span> &nbsp;→&nbsp; <span class="c">custam 46</span></span><small>A bandeirada é cobrada uma única vez, não dobra junto com a distância.</small></li>
+  <li><span><span class="x">Se o lado dobra, a área dobra</span> &nbsp;→&nbsp; <span class="c">quadruplica</span></span><small>A área é proporcional ao quadrado do lado; o volume, ao cubo da aresta.</small></li>
+  <li><span><span class="x">Dobrar a distância reduz a luz à metade</span> &nbsp;→&nbsp; <span class="c">reduz a um quarto</span></span><small>Lei do inverso do quadrado: luz, som e gravidade seguem k/x².</small></li>
+  <li><span><span class="x">Crescer junto significa ser proporcional</span> &nbsp;→&nbsp; <span class="c">é preciso razão constante</span></span><small>Idade e altura crescem juntas e não são proporcionais.</small></li>
+  <li><span><span class="x">Testar só uma linha da tabela</span> &nbsp;→&nbsp; <span class="c">teste todas</span></span><small>Uma linha isolada sempre dá algum quociente. A constância é que prova a relação.</small></li>
+  <li><span><span class="x">2,4 h é 2 h e 40 min</span> &nbsp;→&nbsp; <span class="c">é 2 h e 24 min</span></span><small>0,4 h vale 0,4 · 60 = 24 minutos. Décimo de hora não é minuto.</small></li>
+  <li><span><span class="x">Na proporção composta, somar os efeitos</span> &nbsp;→&nbsp; <span class="c">multiplique-os</span></span><small>Se a dobra e b triplica em y = ka/b, então y fica multiplicado por 2/3.</small></li>
+  <li><span><span class="x">A hipérbole toca os eixos</span> &nbsp;→&nbsp; <span class="c">nunca toca</span></span><small>Os eixos são assíntotas: por maior que seja a velocidade, o tempo não chega a zero.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Nas de tabela, escreva a coluna do quociente ou do produto antes de olhar as alternativas.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Reconhecer pela tabela</span>
+    <p class="enun">Um estudo registrou os seguintes pares de valores para duas grandezas <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">y</span></span>: (3; 40), (5; 24), (8; 15) e (12; 10). Sobre essas grandezas, é correto afirmar que</p>
+    <ol class="alt">
+      <li>são diretamente proporcionais, com <span class="m"><span class="v">k</span> = 120</span></li>
+      <li>são inversamente proporcionais, com <span class="m"><span class="v">k</span> = 120</span></li>
+      <li>são diretamente proporcionais, com <span class="m"><span class="v">k</span> = 13</span></li>
+      <li>são inversamente proporcionais, com <span class="m"><span class="v">k</span> = 43</span></li>
+      <li>não guardam relação de proporcionalidade</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Primeiro teste — divida <span class="m"><span class="v">y</span></span> por <span class="m"><span class="v">x</span></span>:</strong></p>
+      <p class="m">40 ÷ 3 ≈ 13,3 &nbsp;·&nbsp; 24 ÷ 5 = 4,8 &nbsp;·&nbsp; 15 ÷ 8 ≈ 1,9</p>
+      <p>Não é constante, então não é direta.</p>
+      <p><strong>Segundo teste — multiplique <span class="m"><span class="v">x</span></span> por <span class="m"><span class="v">y</span></span>:</strong></p>
+      <p class="m">3 · 40 = 120 &nbsp;·&nbsp; 5 · 24 = 120 &nbsp;·&nbsp; 8 · 15 = 120 &nbsp;·&nbsp; 12 · 10 = 120</p>
+      <p>Produto constante: as grandezas são <strong>inversamente proporcionais</strong>, com <span class="m"><span class="v">k</span> = 120</span> e fórmula <span class="m"><span class="v">y</span> = 120 ÷ <span class="v">x</span></span>.</p>
+      <p>A alternativa C usa o quociente da primeira linha como se fosse o k — o erro de testar uma linha só.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Achar o k e prever um valor</span>
+    <p class="enun">O consumo de combustível de um automóvel é diretamente proporcional à distância percorrida. Em um trajeto de 180 km, o veículo consumiu 15 litros. Mantidas as condições, o consumo em um trajeto de 300 km será de</p>
+    <ol class="alt"><li>18 litros</li><li>20 litros</li><li>25 litros</li><li>30 litros</li><li>36 litros</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Como a relação é direta, o quociente é constante. Achando o <span class="m"><span class="v">k</span></span>:</p>
+      <p class="m"><span class="v">k</span> = <span class="frac"><i>15</i><i>180</i></span> = <span class="frac"><i>1</i><i>12</i></span> litro por quilômetro</p>
+      <p>Agora aplique à nova distância:</p>
+      <p class="m">300 · <span class="frac"><i>1</i><i>12</i></span> = 25 litros</p>
+      <p><strong>Confira a plausibilidade:</strong> a distância aumentou cerca de 1,7 vez, e o consumo foi de 15 para 25 litros — também cerca de 1,7 vez. Coerente.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Relação inversa</span>
+    <p class="enun">Um motorista percorre determinado trajeto em 3 horas, mantendo velocidade média de 80 km/h. Se aumentar a velocidade média para 100 km/h, o mesmo trajeto será percorrido em</p>
+    <ol class="alt"><li>2 h 24 min</li><li>2 h 40 min</li><li>2 h 50 min</li><li>3 h 45 min</li><li>3 h 75 min</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Distância fixa: velocidade e tempo são <strong>inversamente proporcionais</strong>, com produto constante.</p>
+      <p class="m">80 · 3 = 240 km = <span class="v">k</span></p>
+      <p class="m">100 · <span class="v">t</span> = 240 &nbsp;→&nbsp; <span class="v">t</span> = 2,4 h</p>
+      <p><strong>O passo que decide a alternativa:</strong> converter a parte decimal em minutos.</p>
+      <p class="m">0,4 h = 0,4 · 60 = 24 minutos &nbsp;→&nbsp; 2 h 24 min</p>
+      <p>A alternativa B é de quem leu “2,4” como “2 h e 40 min”. Décimos de hora não são minutos, e essa distração aparece sempre que o resultado sai quebrado.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Identificar a proporção direta</span>
+    <p class="enun">Entre as situações abaixo, aquela em que as duas grandezas envolvidas são diretamente proporcionais é</p>
+    <ol class="alt">
+      <li>o valor de uma corrida de táxi com bandeirada fixa, em função da distância</li>
+      <li>o valor da conta de luz com taxa de disponibilidade, em função do consumo</li>
+      <li>o preço total de arroz vendido a R$ 5,00 o quilo, em função da quantidade comprada</li>
+      <li>a área de um terreno quadrado, em função da medida do lado</li>
+      <li>o tempo de uma viagem de distância fixa, em função da velocidade média</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Teste cada uma com a pergunta da origem: <em>com a primeira grandeza igual a zero, a segunda também é zero?</em></p>
+      <ul>
+        <li><strong>A e B</strong> — há cobrança mesmo com distância ou consumo zero. Relação afim, não proporcional.</li>
+        <li><strong>C</strong> — zero quilo custa zero reais, e dobrar a quantidade dobra o preço. <strong>Direta</strong>, com <span class="m"><span class="v">k</span> = 5</span>.</li>
+        <li><strong>D</strong> — dobrar o lado quadruplica a área. Relação <em>quadrática</em>, não direta.</li>
+        <li><strong>E</strong> — mais velocidade, menos tempo. Relação <strong>inversa</strong>.</li>
+      </ul>
+      <p>Repare que quatro das cinco alternativas descrevem relações reais entre as grandezas. Estar relacionado não basta: proporcionalidade direta exige razão constante <em>e</em> passagem pela origem.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · A armadilha da parcela fixa</span>
+    <p class="enun">Uma corrida de táxi custa R$ 6,00 de bandeirada mais R$ 2,50 por quilômetro rodado. Sabendo que uma corrida de 8 km custa R$ 26,00, o valor de uma corrida de 16 km será de</p>
+    <ol class="alt"><li>R$ 40,00</li><li>R$ 46,00</li><li>R$ 48,00</li><li>R$ 52,00</li><li>R$ 58,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A tentação é dobrar o valor junto com a distância — e é exatamente o que a questão espera.</p>
+      <p>Aplicando a regra de cobrança:</p>
+      <p class="m">6,00 + 2,50 · 16 = 6,00 + 40,00 = R$ 46,00</p>
+      <p><strong>Por que não são R$ 52,00:</strong> a bandeirada de R$ 6,00 é cobrada <strong>uma única vez</strong>, tanto na corrida de 8 km quanto na de 16 km. Só a parte de R$ 2,50 por quilômetro dobra. Dobrando tudo, a bandeirada seria cobrada duas vezes.</p>
+      <p>A relação aqui é <span class="m"><span class="v">y</span> = 2,5<span class="v">x</span> + 6</span> — uma reta que corta o eixo vertical em 6, e por isso não é proporcional.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Lei do inverso do quadrado</span>
+    <p class="enun">A iluminação produzida por uma lâmpada sobre uma superfície é inversamente proporcional ao quadrado da distância entre elas. A 2 metros da lâmpada, a iluminação medida é de 100 lux. A 5 metros, a iluminação será de</p>
+    <ol class="alt"><li>10 lux</li><li>16 lux</li><li>20 lux</li><li>40 lux</li><li>250 lux</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A relação é <span class="m"><span class="v">I</span> = <span class="frac"><i><span class="v">k</span></i><i><span class="v">d</span><sup>2</sup></i></span></span>. Primeiro o <span class="m"><span class="v">k</span></span>, com o par conhecido:</p>
+      <p class="m">100 = <span class="frac"><i><span class="v">k</span></i><i>2<sup>2</sup></i></span> &nbsp;→&nbsp; <span class="v">k</span> = 100 · 4 = 400</p>
+      <p>Agora a nova distância:</p>
+      <p class="m"><span class="v">I</span> = <span class="frac"><i>400</i><i>5<sup>2</sup></i></span> = <span class="frac"><i>400</i><i>25</i></span> = 16 lux</p>
+      <p>A alternativa D é de quem tratou como inversa simples, sem o quadrado: <span class="m">100 · 2 ÷ 5 = 40</span>. O quadrado no denominador faz a queda ser bem mais acentuada.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Proporcionalidade composta</span>
+    <p class="enun">A resistência elétrica de um fio é diretamente proporcional ao seu comprimento e inversamente proporcional à área de sua seção transversal. Um fio de 10 m de comprimento e 2 mm² de seção tem resistência de 5 Ω. Outro fio, do mesmo material, com 30 m de comprimento e 3 mm² de seção, terá resistência de</p>
+    <ol class="alt"><li>5 Ω</li><li>7,5 Ω</li><li>10 Ω</li><li>15 Ω</li><li>45 Ω</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Monte a fórmula pela regra do numerador e do denominador: o comprimento é direto, a área é inversa.</p>
+      <p class="m"><span class="v">R</span> = <span class="v">k</span> · <span class="frac"><i><span class="v">L</span></i><i><span class="v">A</span></i></span></p>
+      <p>Com os dados do primeiro fio:</p>
+      <p class="m">5 = <span class="v">k</span> · <span class="frac"><i>10</i><i>2</i></span> = 5<span class="v">k</span> &nbsp;→&nbsp; <span class="v">k</span> = 1</p>
+      <p>Aplicando ao segundo fio:</p>
+      <p class="m"><span class="v">R</span> = 1 · <span class="frac"><i>30</i><i>3</i></span> = 10 Ω</p>
+      <p><strong>Pelo raciocínio dos efeitos:</strong> o comprimento triplicou (×3) e a área aumentou 1,5 vez (÷1,5). Logo <span class="m">5 · 3 ÷ 1,5 = 10</span> — mesmo resultado, sem calcular o k.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Proporcionalidade quadrática</span>
+    <p class="enun">Uma praça tem formato quadrado. Em um projeto de ampliação, a medida do lado será triplicada. A área da praça ampliada, em relação à área atual, ficará multiplicada por</p>
+    <ol class="alt"><li>3</li><li>6</li><li>9</li><li>12</li><li>27</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A área do quadrado é <span class="m"><span class="v">A</span> = <span class="v">L</span><sup>2</sup></span> — proporcionalidade <strong>quadrática</strong>, não direta.</p>
+      <p>Triplicando o lado, a nova área é:</p>
+      <p class="m"><span class="v">A</span>' = (3<span class="v">L</span>)<sup>2</sup> = 9<span class="v">L</span><sup>2</sup> = 9<span class="v">A</span></p>
+      <p><strong>Conferindo com números:</strong> um quadrado de lado 2 tem área 4; com lado 6, a área é 36. E <span class="m">36 ÷ 4 = 9</span> ✓</p>
+      <p>A alternativa A é de quem aplicou proporção direta. A alternativa E é o fator do <em>volume</em>, que seria <span class="m">3<sup>3</sup> = 27</span> se a figura fosse um cubo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Proporcionalidade em Química</span>
+    <p class="enun">A uma temperatura constante, o volume ocupado por certa massa de gás é inversamente proporcional à pressão exercida sobre ele. Um gás ocupa 6 litros sob pressão de 2 atm. Ao ser comprimido até a pressão de 3 atm, mantida a temperatura, esse gás passará a ocupar</p>
+    <ol class="alt"><li>2 litros</li><li>3 litros</li><li>4 litros</li><li>9 litros</li><li>12 litros</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>É a lei de Boyle, e o enunciado já entrega a relação: pressão e volume são inversamente proporcionais, logo o <strong>produto é constante</strong>.</p>
+      <p class="m"><span class="v">P</span><sub>1</sub> · <span class="v">V</span><sub>1</sub> = <span class="v">P</span><sub>2</sub> · <span class="v">V</span><sub>2</sub></p>
+      <p class="m">2 · 6 = 3 · <span class="v">V</span><sub>2</sub> &nbsp;→&nbsp; 12 = 3<span class="v">V</span><sub>2</sub> &nbsp;→&nbsp; <span class="v">V</span><sub>2</sub> = 4 litros</p>
+      <p><strong>Conferência de bom senso:</strong> aumentar a pressão comprime o gás, então o volume tem de <em>diminuir</em>. As alternativas D e E dão volumes maiores e podem ser descartadas antes de qualquer conta.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que na relação direta o quociente é constante e na inversa o produto é constante</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho o valor de <span class="m"><span class="v">k</span></span> a partir de um par de valores e monto a fórmula completa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Digo o que o <span class="m"><span class="v">k</span></span> significa em cada contexto: preço unitário, velocidade, densidade</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço a relação numa tabela dividindo e multiplicando as colunas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Testo <strong>todas</strong> as linhas da tabela, nunca uma só</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Identifico a relação pelo gráfico: reta pela origem, hipérbole ou reta com valor fixo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que uma reta que não passa pela origem <strong>não</strong> representa proporção direta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço a parcela fixa em táxi, conta de luz, frete e plano de celular</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto proporcionalidade composta pondo o direto em cima e o inverso embaixo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei o efeito de dobrar <span class="m"><span class="v">x</span></span> nas relações quadrática, cúbica e do inverso do quadrado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio uma fórmula de Física identificando o que é direto e o que é inverso</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto décimos de hora em minutos corretamente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro se o resultado faz sentido antes de marcar a alternativa</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de <strong>tabela</strong> e as de <strong>parcela fixa</strong> — juntas, elas respondem pela maior parte das questões deste assunto. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-07-grandezas-proporcionais.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-07";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

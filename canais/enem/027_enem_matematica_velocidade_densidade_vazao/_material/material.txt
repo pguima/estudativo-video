@@ -1,0 +1,292 @@
+Velocidade, Densidade e Vazão
+Matemática › Matemática Básica e Proporcionalidade › Assunto 12 de 12
+Velocidade, densidade e vazão como razões
+Fecha a matéria com as três razões mais usadas da prova — e com a armadilha que engana quase todo mundo: a velocidade média de uma ida e volta não é a média das duas velocidades.
+Semana
+5 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Razão e proporção · Unidades de medida
+Destrava
+Cinemática, hidrostática, concentração, indicadores
+Neste assunto
+01 O que o ENEM cobra aqui
+Este assunto encerra a matéria juntando tudo o que veio antes: razão, proporção, unidades e conversões, agora aplicados às três taxas que a prova mais usa.
+O que aparece com mais frequência:
+Velocidade média em trajetos com trechos diferentes — e a armadilha da média, que é o item de maior retorno da página.
+Densidade para identificar material, decidir se algo flutua ou converter entre g/cm^3 e kg/m^3.
+Vazão em reservatórios, com torneiras somando e ralos subtraindo.
+Outras taxas do mesmo formato: rendimento, concentração, produtividade, densidade demográfica.
+O que rende mais aqui
+Duas coisas. A armadilha da velocidade média (seção 04), porque a resposta instintiva está sempre entre as alternativas. E o método das frações do tanque (seção 06), que resolve qualquer problema de torneiras sem precisar saber o volume.
+02 A estrutura comum
+Velocidade, densidade e vazão parecem assuntos diferentes, mas são a mesma ideia com nomes distintos: quanto de uma grandeza por unidade de outra.
+A unidade já escreve a fórmula. Ler “quilômetro por hora” é ler “quilômetro dividido por hora”; “grama por centímetro cúbico” é massa dividida por volume. Escrever a unidade ao lado de cada número do enunciado monta a conta sozinha — e é o hábito que mais evita erro neste assunto.
+As três perguntas possíveis
+Qualquer taxa admite três formatos de questão, e todos saem da mesma fórmula:
+Achar a taxa → divida. · Achar o numerador → multiplique. · Achar o denominador → divida ao contrário.
+v = (d/t) → d = v · t → t = (d/v)
+A taxa não muda com a quantidade
+Se a distância dobra e o tempo dobra, a velocidade permanece a mesma. Se a massa dobra e o volume dobra, a densidade não muda — por isso ela identifica o material, e não a quantidade dele.
+03 Velocidade média
+Definição
+v = (distância total/tempo total)
+As palavras total não são enfeite: elas são a definição inteira. Todo o percurso e todo o tempo entram na conta.
+Um trem percorre 180 km em 2 h 30 min
+2 h 30 min = 2,5 h
+v = (180/2,5) = 72 km/h
+Tempo parado também é tempo
+Se a viagem teve uma parada de 30 minutos e a pergunta é sobre o percurso completo, esses 30 minutos entram no tempo total e reduzem a velocidade média. A velocidade média responde: “se o trajeto inteiro tivesse ritmo constante, qual seria esse ritmo?”
+Para converter entre as duas unidades usuais, vale o fator visto no assunto 10: de km/h para m/s divide-se por 3,6; no sentido inverso, multiplica-se.
+04 A armadilha da média
+Esta é a questão assinada do assunto. Ela aparece com regularidade e a resposta instintiva está sempre entre as alternativas.
+Velocidade média não é média das velocidades
+Um carro vai a 60 km/h e volta pelo mesmo caminho a 40 km/h. A velocidade média do percurso completo não é 50 km/h — é 48 km/h.
+Por que 48, e não 50
+Tome 120 km de ida e 120 km de volta:
+ida: (120/60) = 2 h · volta: (120/40) = 3 h
+total: 240 km em 5 h → (240/5) = 48 km/h
+A razão do fenômeno
+As distâncias são iguais, mas os tempos não. Passa-se três horas no trecho lento e apenas duas no rápido — então a velocidade menor pesa mais na média.
+Por isso o resultado sempre puxa para abaixo da média simples, nunca para cima.
+A fórmula, quando as distâncias são iguais
+v = (2 · v_1 · v_2/v_1 + v_2)
+É a média harmônica. Para 60 e 40: (2 · 60 · 40/100) = 48.
+Ela só vale para distâncias iguais. Fora desse caso, volte sempre a distância total dividida por tempo total — que funciona em qualquer situação.
+Quando a média simples funciona
+Quando os tempos são iguais, não as distâncias. Duas horas a 60 e duas horas a 40 dão de fato 50 km/h de média, porque cada velocidade pesa o mesmo.
+05 Densidade
+Definição
+d = (m/V)
+Medida usualmente em g/cm^3 ou kg/m^3. A conversão entre elas multiplica por 1 000.
+A densidade é característica do material, não da quantidade: um prego e um portão de ferro têm a mesma densidade. É isso que permite identificar substâncias medindo massa e volume.
+ | Material | Densidade (g/cm³) | Material | Densidade (g/cm³)
+ | Óleo vegetal | 0,8 | Alumínio | 2,7
+ | Gelo | 0,92 | Ferro | 7,8
+ | Água | 1,0 | Chumbo | 11,3
+ | Água do mar | 1,03 | Ouro | 19,3
+O critério da flutuação
+Um corpo flutua se sua densidade for menor que a do líquido. O gelo, com 0,92 g/cm^3, flutua na água — e cerca de 92% do bloco fica submerso, que é a origem da expressão “ponta do iceberg”.
+O óleo, com 0,8, boia sobre a água; o ferro, com 7,8, afunda.
+A densidade da água amarra tudo
+1 g/cm^3 = 1 000 kg/m^3
+Daí saem as equivalências práticas: 1 L de água pesa 1 kg, e 1 m^3 pesa 1 tonelada.
+A densidade demográfica — habitantes por quilômetro quadrado — tem estrutura idêntica, embora não trate de massa. É a mesma razão aplicada à população, e cai em Geografia.
+06 Vazão
+Definição
+Q = (V/t) → t = (V/Q)
+Medida em L/s, L/min ou m^3/h. Lembre que 1 m^3 = 1 000 L.
+Uma caixa de 1 500 L com torneira de 12,5 L/min
+t = (1500/12,5) = 120 min = 2 horas
+Torneiras somando, ralos subtraindo
+O método das frações do tanque
+Quando o enunciado dá tempos em vez de vazões, trabalhe com a fração do tanque por hora. Assim as vazões podem ser somadas ou subtraídas mesmo sem conhecer o volume.
+Uma torneira que enche em 6 horas tem vazão de (1/6) do tanque por hora.
+Duas torneiras juntas — vazões se somam
+Uma enche em 6 h, outra em 3 h:
+(1/6) + (1/3) = (1/6) + (2/6) = (3/6) = (1/2) do tanque por hora
+Metade por hora → o tanque enche em 2 horas
+Torneira e ralo — vazões se subtraem
+A torneira enche em 4 h e o ralo esvazia em 6 h:
+(1/4) − (1/6) = (3/12) − (2/12) = (1/12) do tanque por hora
+Um doze avos por hora → o tanque enche em 12 horas
+A conferência que pega o erro de sinal
+Com duas torneiras enchendo, o tempo tem de ser menor que o de qualquer uma sozinha. Com um ralo aberto, tem de ser maior que o da torneira sozinha. Se o resultado contrariar isso, houve troca entre soma e subtração.
+Em contextos de rios e tubulações aparece ainda a relação Q = A · v: a vazão é a área da seção multiplicada pela velocidade do fluido.
+07 As outras taxas do mesmo formato
+Reconhecida a estrutura, toda taxa nova passa a ser familiar — e o ENEM inventa contextos com frequência.
+ | Taxa | Razão | Unidade | Contexto
+ | Rendimento | distância ÷ combustível | km/L | Viagens, custo de deslocamento
+ | Concentração | massa ÷ volume | g/L | Química, soro, poluentes
+ | Densidade demográfica | habitantes ÷ área | hab/km² | Geografia
+ | Produtividade agrícola | colheita ÷ área | sacas/ha | Agronegócio
+ | Preço unitário | preço ÷ quantidade | R$/kg | Comparação de compras
+ | Pressão | força ÷ área | N/m² | Física, hidrostática
+ | Taxa de natalidade | nascimentos ÷ população | por mil hab. | Demografia
+Quando a taxa serve para comparar
+Embalagens de tamanhos diferentes só podem ser comparadas pelo preço por quilo. Municípios de áreas diferentes só se comparam pela densidade demográfica. É essa a função da taxa: tornar comparável o que veio em quantidades distintas.
+08 Valores de referência
+Servem para conferir se o resultado faz sentido — uma velocidade de 500 km/h para um carro denuncia erro de unidade antes de qualquer revisão de conta.
+ | Grandeza | Valor típico | Grandeza | Valor típico
+ | Caminhada | 5 km/h | Torneira comum | 12 L/min
+ | Corrida | 12 km/h | Chuveiro | 10 L/min
+ | Carro na cidade | 40 km/h | Consumo por pessoa | 150 L/dia
+ | Carro na rodovia | 100 km/h | Caixa-d'água residencial | 500 a 1 000 L
+ | Som no ar | 340 m/s | Rendimento de carro | 10 a 15 km/L
+ | Luz no vácuo | 3 · 10^8 m/s | Densidade da água | 1 g/cm³
+09 Onde isso aparece nas outras áreas
+ | Área | Como aparece
+ | Física | Cinemática (velocidade média e instantânea), hidrostática (densidade e empuxo), vazão em tubulações
+ | Química | Densidade de soluções, concentração em g/L, cálculo de massa a partir do volume
+ | Biologia | Taxas populacionais, natalidade e mortalidade, fluxo de energia em cadeias
+ | Geografia | Densidade demográfica, vazão de rios, produtividade agrícola, indicadores sociais
+O mesmo conteúdo com outra roupa
+Uma questão de Física sobre velocidade média e uma de Geografia sobre densidade demográfica cobram exatamente a mesma habilidade: montar uma razão e conferir as unidades. Reconhecer isso reduz o volume real de conteúdo a estudar.
+10 Estratégia de prova
+1 · Escreva a unidade ao lado de cada número
+A barra da unidade é a divisão. Anotar L/min ao lado da vazão e min ao lado do tempo mostra sozinho que os dois se multiplicam para dar litros.
+2 · Padronize as unidades antes de dividir
+Vazão em litros por minuto com tempo em horas é o erro silencioso mais comum aqui. Converta primeiro, calcule depois.
+3 · Confira contra os valores de referência
+Densidade de 50 g/cm³, velocidade de 500 km/h para um carro ou 5 000 litros de caixa-d'água residencial são sinais de troca de unidade — e aparecem antes de refazer a conta.
+11 Os erros que mais custam pontos
+Média das velocidades como velocidade média → distância total ÷ tempo totalIda a 60 e volta a 40 dá 48 km/h, não 50. O trecho lento consome mais tempo.
+Ignorar o tempo de parada → parada entra no tempo totalSe a pergunta é sobre o percurso completo, todo o tempo conta.
+2,5 h lido como 2 h 50 min → 2 h 30 minMultiplique a parte decimal por 60. O tempo não é decimal.
+km/h e m/s tratados como iguais → fator 3,6De km/h para m/s divide-se; no sentido inverso, multiplica-se.
+g/cm³ e kg/m³ tratados como iguais → fator 1 000A água tem 1 g/cm³ e 1 000 kg/m³ — o mesmo valor com números bem diferentes.
+Somar as vazões quando há um ralo → subtraia a de saídaCom ralo aberto, o tempo tem de ser maior que o da torneira sozinha.
+Somar os tempos de duas torneiras → some as vazões, não os temposDuas torneiras juntas enchem mais rápido, então o tempo diminui.
+Misturar L/min com horas → padronize antesErro silencioso: a conta fecha e o resultado sai errado por fator 60.
+Achar que a densidade depende da quantidade → é característica do materialUm prego e um portão de ferro têm a mesma densidade.
+12 Questões comentadas
+Nove questões no formato da prova. Em todas, anote a unidade ao lado de cada número antes de montar a conta.
+Questão 1 · Velocidade média
+Um trem percorre 180 quilômetros entre duas estações em 2 horas e 30 minutos. A velocidade média desse trem, em quilômetros por hora, é de
+60
+66
+72
+75
+90
+Ver resolução
+Primeiro converta o tempo para horas decimais, com cuidado:
+2 h 30 min = 2,5 h (30 ÷ 60 = 0,5)
+v = (180/2,5) = 72 km/h
+A alternativa B é de quem usou 2,3 em vez de 2,5, lendo “30 minutos” como “0,30 hora” — o erro de tratar o tempo como decimal.
+Alternativa C
+Questão 2 · A armadilha da média
+Um motorista percorre o trajeto de ida entre duas cidades a uma velocidade média de 60 km/h e faz o trajeto de volta, pelo mesmo caminho, a 40 km/h. A velocidade média do percurso completo, de ida e volta, é de
+44 km/h
+46 km/h
+48 km/h
+50 km/h
+52 km/h
+Ver resolução
+A alternativa D é a resposta instintiva, e está errada. Velocidade média é distância total dividida pelo tempo total, não a média das velocidades.
+Adote uma distância conveniente para cada trecho, como 120 km:
+ida: (120/60) = 2 h · volta: (120/40) = 3 h
+v = (240 km/5 h) = 48 km/h
+Por que puxa para baixo: as distâncias são iguais, mas o trecho lento dura 3 horas contra 2 do rápido. A velocidade menor pesa mais na média, e o resultado fica sempre abaixo de 50.
+Pela média harmônica: (2 · 60 · 40/60 + 40) = (4800/100) = 48
+Alternativa C
+Questão 3 · Identificar o material
+Um objeto maciço tem massa de 156 gramas e ocupa um volume de 20 cm³. Consultando uma tabela de densidades, conclui-se que esse objeto é provavelmente de
+alumínio, densidade 2,7 g/cm³
+ferro, densidade 7,8 g/cm³
+chumbo, densidade 11,3 g/cm³
+ouro, densidade 19,3 g/cm³
+gelo, densidade 0,92 g/cm³
+Ver resolução
+d = (156/20) = 7,8 g/cm^3
+O valor corresponde ao ferro.
+Por que a densidade identifica o material: ela não depende da quantidade. Um objeto de ferro de 312 g ocuparia 40 cm³ e daria a mesma densidade de 7,8. É a razão que caracteriza a substância, não os valores absolutos.
+Alternativa B
+Questão 4 · Massa a partir da densidade
+Um bloco de gelo tem volume de 500 cm³. Sabendo que a densidade do gelo é 0,92 g/cm³, a massa desse bloco é de
+0,46 g
+46 g
+460 g
+500 g
+543 g
+Ver resolução
+Para achar o numerador da razão, multiplica-se:
+m = d · V = 0,92 · 500 = 460 g
+Conferência de sentido: o gelo é menos denso que a água, então 500 cm³ de gelo devem pesar menos que 500 g, que é o peso de 500 cm³ de água. E 460 < 500 ✓
+A alternativa E é de quem dividiu em vez de multiplicar — e o resultado maior que 500 já denunciaria o erro.
+Alternativa C
+Questão 5 · Tempo de enchimento
+Uma caixa-d'água com capacidade de 1 500 litros é abastecida por uma tubulação de vazão constante de 12,5 litros por minuto. Partindo da caixa vazia, o tempo necessário para enchê-la completamente é de
+1 hora
+1 hora e 30 minutos
+2 horas
+2 horas e 30 minutos
+3 horas
+Ver resolução
+Para achar o denominador da razão, divide-se:
+t = (1500 L/12,5 L/min) = 120 min
+120 min = 2 horas
+Repare que as unidades se cancelam corretamente: litros divididos por litros por minuto deixam minutos. Escrever a unidade ao lado de cada número confirma que a operação está certa.
+Alternativa C
+Questão 6 · Duas torneiras
+Uma torneira, sozinha, enche um tanque em 6 horas. Outra torneira, sozinha, enche o mesmo tanque em 3 horas. Abertas simultaneamente, as duas encherão o tanque em
+1 hora e 30 minutos
+2 horas
+4 horas e 30 minutos
+9 horas
+18 horas
+Ver resolução
+Não se somam tempos — somam-se vazões. Trabalhe com a fração do tanque por hora:
+primeira: (1/6) · segunda: (1/3) = (2/6)
+juntas: (1/6) + (2/6) = (3/6) = (1/2) do tanque por hora
+Meio tanque por hora significa o tanque cheio em 2 horas.
+Conferência obrigatória: com duas torneiras o tempo tem de ser menor que o da mais rápida sozinha, que são 3 horas. E 2 < 3 ✓ As alternativas D e E, maiores que 3 horas, seriam impossíveis.
+Alternativa B
+Questão 7 · Torneira e ralo
+Uma torneira enche um reservatório vazio em 4 horas. Um ralo, quando aberto, esvazia o reservatório cheio em 6 horas. Com a torneira e o ralo abertos ao mesmo tempo, a partir do reservatório vazio, ele ficará cheio em
+2 horas
+5 horas
+10 horas
+12 horas
+24 horas
+Ver resolução
+A vazão de entrada é positiva e a de saída, negativa. Subtraia:
+(1/4) − (1/6) = (3/12) − (2/12) = (1/12) do reservatório por hora
+Um doze avos por hora significa 12 horas para encher.
+Conferência obrigatória: com o ralo aberto, o tempo tem de ser maior que as 4 horas da torneira sozinha. E 12 > 4 ✓ A alternativa A, menor que 4 horas, seria impossível.
+Note também que a torneira é mais rápida que o ralo — se fosse o contrário, o reservatório nunca encheria.
+Alternativa D
+Questão 8 · Rendimento
+Um automóvel percorreu 420 quilômetros consumindo 35 litros de combustível. O rendimento médio desse veículo foi de
+8 km/L
+10 km/L
+12 km/L
+14 km/L
+15 km/L
+Ver resolução
+Rendimento é distância dividida por combustível:
+420 ÷ 35 = 12 km/L
+Conferência contra a referência: automóveis de passeio costumam render entre 10 e 15 km/L. O valor obtido está na faixa esperada.
+Esse mesmo rendimento responde as duas outras perguntas possíveis: com 50 litros o carro faria 600 km, e para 300 km precisaria de 25 litros.
+Alternativa C
+Questão 9 · Vazão de abastecimento urbano
+Uma cidade com 250 mil habitantes tem consumo médio de 180 litros de água por pessoa por dia. Para atender a essa demanda, o sistema de abastecimento precisa operar com vazão média, em metros cúbicos por hora, de
+187,5
+1 875
+18 750
+45 000
+1 080 000
+Ver resolução
+Consumo diário total da cidade:
+250 000 · 180 = 45 000 000 litros por dia
+Convertendo para metros cúbicos, com 1 m^3 = 1 000 L:
+45 000 000 ÷ 1 000 = 45 000 m^3 por dia
+Agora a vazão por hora:
+45 000 ÷ 24 = 1 875 m^3/h
+A alternativa D é o consumo diário em metros cúbicos, sem a divisão pelas 24 horas — a etapa que a questão realmente cobra. A E é o total em litros por dia, sem nenhuma conversão.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Reconheço que velocidade, densidade e vazão têm a mesma estrutura de razão
+Uso a unidade para descobrir se devo multiplicar ou dividir
+Calculo velocidade média como distância total dividida por tempo total
+Sei que a velocidade média de ida e volta não é a média das velocidades
+Sei explicar por que o resultado puxa para a velocidade menor
+Incluo o tempo de parada no cálculo da média do percurso completo
+Calculo densidade e uso o critério de flutuação em relação à água
+Converto g/cm^3 em kg/m^3 multiplicando por 1 000
+Sei que a densidade caracteriza o material e não depende da quantidade
+Resolvo problemas de torneiras somando frações do tanque por hora
+Subtraio a vazão do ralo e confiro que o tempo aumentou
+Padronizo unidades antes de dividir, sobretudo minutos e horas
+Confiro o resultado contra os valores típicos de referência
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Inclua questões de Física sobre cinemática e hidrostática — é o mesmo conteúdo com outra roupa, e treinar nos dois formatos consolida de uma vez. Depois atualize a linha na aba Cronograma.
+Matéria concluída
+Com este assunto, Matemática Básica e Proporcionalidade está completa: 12 assuntos, das operações fundamentais às taxas aplicadas. É a base sobre a qual se apoiam funções, geometria, estatística e boa parte de Física e Química.
+Antes de seguir para a próxima frente, vale uma revisão dos assuntos marcados como Revisar na planilha e um bloco de questões misturando os doze temas — é assim que a prova cobra, sem avisar de qual assunto é cada questão.
+Flashcards para o Anki
+Foram gerados 45 cartões deste assunto no arquivo ENEM-Matematica-12-velocidade-densidade-vazao.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

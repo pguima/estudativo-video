@@ -1,0 +1,277 @@
+Escalas, Plantas e Mapas
+Matemática › Matemática Básica e Proporcionalidade › Assunto 11 de 12
+Escalas, plantas e mapas
+A razão que liga o papel ao mundo. Cai em Matemática e em Geografia, e quase sempre pelo mesmo motivo: a conta da escala é fácil, mas a cadeia de conversão de centímetros até quilômetros derruba quem pula um degrau.
+Semana
+4 · Fase Fundamentos
+Incidência
+Média
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Razão e proporção · Unidades de medida
+Destrava
+Cartografia, geometria, leitura de plantas
+Neste assunto
+01 O que o ENEM cobra aqui
+Escala é uma razão simples, e a operação nunca é difícil. O que a prova cobra de fato são três coisas específicas, e todas envolvem um passo além da multiplicação:
+A cadeia de conversão. O resultado sai em centímetros e precisa chegar a quilômetros. Quem pula um degrau erra por fator 100 ou 1 000.
+A escala de área. Se a escala linear é 1 : 200, a de área é 1 : 40 000. Aplicar o fator linear a uma área é o erro mais caro do assunto.
+Escala grande e escala pequena. Denominador menor significa escala maior — um ponto contraintuitivo, muito cobrado em Geografia.
+O que rende mais aqui
+Guardar dois atalhos resolve quase tudo. Primeiro: numa escala 1 : n, 1 cm do mapa vale n ÷ 100 000 quilômetros. Segundo: área usa n^2 e volume usa n^3.
+02 O que é escala
+Definição
+E = (medida no desenho/medida real)
+As duas medidas precisam estar na mesma unidade. Como são grandezas de mesma espécie, as unidades se cancelam e a escala é um número puro, sem unidade.
+Ler 1 : 250 000 é ler: “cada 1 cm no papel corresponde a 250 000 cm no terreno”. Poderia ser qualquer unidade — 1 metro no papel valeria 250 000 metros reais —, mas na prática se trabalha em centímetros porque é a unidade da régua.
+Escala de ampliação existe
+Quando o desenho é maior que o objeto, a escala se inverte: 10 : 1 significa que o desenho tem dez vezes o tamanho real. Aparece em projetos de peças mecânicas pequenas e em microeletrônica.
+E 1 : 1 é o tamanho natural.
+03 Escala numérica e escala gráfica
+ | Tipo | Como aparece | Vantagem | Limitação
+ | Numérica | 1 : 50 000 | Direta para calcular | Deixa de valer se o mapa for ampliado ou reduzido
+ | Gráfica | Barra graduada com distâncias marcadas | Continua válida em qualquer ampliação | Exige medir com régua
+Por que a escala gráfica sobrevive à fotocópia
+Se um mapa 1 : 50 000 for reduzido à metade numa fotocópia, a escala real passa a ser 1 : 100 000 — mas o número impresso continua dizendo 50 000, e agora está errado.
+A barra gráfica, ao contrário, encolhe junto com o mapa e continua correta. É por isso que mapas de livro didático e de aplicativo trazem quase sempre os dois formatos.
+Converter gráfica em numérica
+Meça a barra com a régua e monte a razão, na mesma unidade:
+Se 4 cm da barra representam 10 km:
+10 km = 1 000 000 cm → (4/1 000 000) = (1/250 000)
+Escala: 1 : 250 000
+04 Escala grande e escala pequena
+Este é o ponto que mais confunde, porque a nomenclatura parece invertida — e não é.
+A regra
+Quanto menor o denominador, maior a escala.
+Escala grande → mais detalhe, menos território.
+Escala pequena → menos detalhe, mais território.
+A mesma folha de papel, dois recortes do mundo. Com denominador dez vezes menor, o mapa da esquerda cabe dentro do retângulo destacado à direita — e é por isso que ele mostra ruas e quadras, enquanto o outro só consegue mostrar o contorno da região. Escala grande não significa território grande; significa o contrário.
+Como não errar
+Pense na escala como fração: (1/25 000) é um número maior que (1/250 000), do mesmo modo que (1/2) > (1/20). A nomenclatura só está descrevendo o tamanho da fração.
+05 Os três cálculos
+Toda questão de escala pede uma destas três coisas. Identificar qual é o primeiro passo.
+ | O que se procura | O que fazer | Exemplo
+ | Medida real | Multiplique a do desenho pelo denominador | 6 cm em 1:500 000 → 3 000 000 cm
+ | Medida no desenho | Divida a real pelo denominador | 45 km em 1:1 500 000 → 3 cm
+ | A própria escala | Divida desenho por real, na mesma unidade | 4 cm para 12 km → 1:300 000
+A cadeia de conversão
+Depois de multiplicar pelo denominador, o resultado está em centímetros reais. Faltam dois degraus:
+cm ÷ 100 → m ÷ 1 000 → km
+Ou, de uma vez: divida por 100 000 para ir de centímetros a quilômetros.
+O atalho que economiza a cadeia inteira
+Numa escala 1 : n, cada centímetro do mapa vale (n/100 000) quilômetros.
+1 : 50 000 → 0,5 km por cm · 1 : 250 000 → 2,5 km por cm · 1 : 1 000 000 → 10 km por cm
+06 Escala de área e de volume
+A escala reduz cada dimensão pelo mesmo fator. Como a área tem duas dimensões e o volume tem três, os fatores se acumulam.
+As três escalas
+Comprimento: 1 : n
+Área: 1 : n^2
+Volume: 1 : n^3
+Numa planta 1 : 200, quanto representa 1 cm²?
+1 cm^2 · 200^2 = 1 · 40 000 = 40 000 cm^2
+40 000 ÷ 10 000 = 4 m^2
+Aplicar o fator linear à área
+Multiplicar 1 cm^2 por 200 em vez de 200^2 erra por um fator de 200. E o resultado ainda parece plausível, o que torna o engano difícil de perceber.
+O caminho mais seguro em plantas
+Em vez de converter a área diretamente, converta os lados primeiro e calcule a área com as medidas reais. Numa planta 1 : 100, um cômodo de 5 cm × 4 cm vira 5 m × 4 m — e a área é 20 m^2, sem nenhum risco de esquecer o quadrado.
+Maquetes e o fator cúbico
+Uma maquete 1 : 20 de um reservatório comporta 5 litros. Quanto comporta o real?
+5 · 20^3 = 5 · 8 000 = 40 000 L = 40 m^3
+Na mesma maquete, as alturas ficam divididas por 20 e as áreas de fachada por 400.
+07 Plantas e projetos
+É a aplicação mais próxima do dia a dia, e a que o ENEM usa em contextos de construção, reforma e acessibilidade.
+ | Escala | Uso típico | 1 cm representa
+ | 1 : 20 | Detalhes construtivos, mobiliário | 20 cm
+ | 1 : 50 | Planta baixa de residência | 50 cm
+ | 1 : 100 | Planta baixa de edifício | 1 m
+ | 1 : 500 | Implantação, loteamento | 5 m
+ | 1 : 1 000 | Plano urbanístico | 10 m
+Um projeto costuma trazer três representações na mesma escala: a planta baixa (vista de cima, como se o teto fosse removido), o corte (vista do interior como se o prédio fosse fatiado verticalmente) e a fachada (vista externa). Todas obedecem à mesma razão.
+A escala 1 : 100 é a mais amigável
+Nela, 1 cm no papel é exatamente 1 metro real. Uma parede de 7 cm mede 7 m; um cômodo de 4 cm × 3 cm tem 12 m². É a razão de ela ser a preferida em projetos e em questões de prova.
+08 Referências rápidas
+Valores que compensa reconhecer de imediato numa questão.
+ | Escala | 1 cm no mapa vale | 1 cm² vale | Uso típico
+ | 1 : 50 | 50 cm | 0,25 m² | Planta de residência
+ | 1 : 100 | 1 m | 1 m² | Planta de edifício
+ | 1 : 1 000 | 10 m | 100 m² | Plano urbanístico
+ | 1 : 25 000 | 250 m | 6,25 ha | Carta de bairro
+ | 1 : 50 000 | 0,5 km | 25 ha | Carta topográfica
+ | 1 : 250 000 | 2,5 km | 6,25 km² | Mapa regional
+ | 1 : 1 000 000 | 10 km | 100 km² | Mapa de estado
+A regra que gera a tabela inteira
+Numa escala 1 : n: 1 cm vale n centímetros, ou (n/100 000) quilômetros. E 1 cm² vale n^2 centímetros quadrados.
+09 Onde isso aparece nas outras áreas
+Escala é um dos poucos conteúdos que cai literalmente igual em duas áreas diferentes da prova.
+ | Área | Como aparece
+ | Geografia | Cartografia, leitura de cartas topográficas, comparação entre mapas, curvas de nível
+ | Matemática | Razão e proporção, semelhança de figuras, área e volume de sólidos semelhantes
+ | Física | Modelos reduzidos, ampliação de imagens em lentes e espelhos
+ | Contextos aplicados | Projetos de arquitetura, acessibilidade, urbanismo, agricultura
+A ponte com semelhança
+Escala é o mesmo conceito de semelhança de figuras, que volta na geometria plana da semana 12. A razão entre lados correspondentes é a escala; a razão entre áreas é o quadrado dela; entre volumes, o cubo. Aprender agora é adiantar aquele conteúdo.
+10 Estratégia de prova
+1 · Converta tudo para centímetros antes de aplicar a escala
+Escala compara medidas na mesma unidade. Passar tudo para centímetros, aplicar a razão e só então converter o resultado elimina a maior parte dos erros.
+2 · Identifique qual das três perguntas está sendo feita
+Medida real, medida no desenho ou a escala? Cada uma tem uma operação diferente — multiplicar, dividir ou montar a razão.
+3 · Confira a plausibilidade
+Numa escala de redução, a medida real é sempre muito maior que a do desenho. Se o resultado saiu da mesma ordem de grandeza do mapa, faltou um degrau da cadeia de conversão.
+11 Os erros que mais custam pontos
+Parar nos centímetros reais → divida por 100 000 para chegar a kmÉ o erro mais frequente do assunto: a conta da escala está certa e falta a conversão.
+Aplicar o fator linear à área → use n²Numa planta 1:200, 1 cm² vale 4 m², não 200 cm².
+Aplicar o fator linear ao volume → use n³Numa maquete 1:20, o volume real é 8 000 vezes o da maquete.
+1 : 250 000 é escala maior que 1 : 50 000 → é menorDenominador maior significa escala menor, menos detalhe e mais área.
+Inverter a razão da escala → desenho sobre realTrocar a ordem produz um número absurdo, do tipo 250 000 : 1.
+Comparar medidas em unidades diferentes → padronize antesEscala só faz sentido com as duas medidas na mesma unidade.
+Confiar na escala numérica de um mapa ampliado → use a escala gráficaA numérica deixa de valer quando o mapa muda de tamanho; a gráfica acompanha.
+Multiplicar quando deveria dividir → confira o sentidoDo mapa para o real, multiplica-se. Do real para o mapa, divide-se.
+12 Questões comentadas
+Nove questões no formato da prova. Em todas, escreva a unidade ao lado de cada número — é o que impede pular um degrau da conversão.
+Questão 1 · Do mapa para o real
+Em um mapa rodoviário de escala 1 : 500 000, a distância entre duas cidades é representada por um segmento de 6 cm. A distância real entre essas cidades é de
+3 km
+30 km
+300 km
+3 000 km
+30 000 km
+Ver resolução
+Do mapa para o real, multiplica-se pelo denominador:
+6 · 500 000 = 3 000 000 cm
+Agora a cadeia de conversão, que é onde a questão realmente é decidida:
+3 000 000 ÷ 100 = 30 000 m → 30 000 ÷ 1 000 = 30 km
+Pelo atalho: em 1 : 500 000, cada centímetro vale 500 000 ÷ 100 000 = 5 km. Logo 6 · 5 = 30 km.
+As alternativas C, D e E são exatamente os resultados de quem parou em cada degrau da conversão.
+Alternativa B
+Questão 2 · Do real para o mapa
+Um cartógrafo precisa representar uma distância real de 45 km em um mapa de escala 1 : 1 500 000. No mapa, essa distância ocupará
+0,3 cm
+3 cm
+30 cm
+33 cm
+300 cm
+Ver resolução
+Primeiro passe a distância real para centímetros, a mesma unidade da régua:
+45 km = 45 000 m = 4 500 000 cm
+Do real para o mapa, divide-se pelo denominador:
+4 500 000 ÷ 1 500 000 = 3 cm
+Conferência: 3 cm num mapa de papel é uma medida razoável. Se tivesse dado 300 cm, seriam três metros de mapa — sinal claro de erro.
+Alternativa B
+Questão 3 · Achar a escala
+Em um mapa, um trecho de estrada com 12 km de extensão real está representado por um segmento de 4 cm. A escala desse mapa é
+1 : 3 000
+1 : 30 000
+1 : 300 000
+1 : 3 000 000
+1 : 4 800 000
+Ver resolução
+Escala é desenho sobre real, com as duas medidas na mesma unidade:
+12 km = 1 200 000 cm
+E = (4/1 200 000) = (1/300 000)
+Conferindo pelo atalho: em 1 : 300 000, cada centímetro vale 3 km. Quatro centímetros dão 12 km ✓
+A alternativa B é de quem esqueceu de converter os quilômetros em centímetros e usou apenas 12 000.
+Alternativa C
+Questão 4 · Escala grande e pequena
+Um estudante precisa de um mapa que mostre com o maior nível de detalhe possível as ruas de um bairro. Entre as opções disponíveis, ele deve escolher a de escala
+1 : 10 000
+1 : 100 000
+1 : 500 000
+1 : 1 000 000
+1 : 10 000 000
+Ver resolução
+Mais detalhe significa escala maior, e escala maior significa denominador menor.
+Entre as opções, o menor denominador é 10 000.
+Confirmando pelo significado: em 1 : 10 000, cada centímetro vale 100 metros — é possível distinguir quadras e ruas. Já em 1 : 10 000 000, cada centímetro vale 100 km, e um bairro inteiro viraria um ponto.
+O raciocínio da fração: (1/10 000) é a maior das cinco frações, exatamente como (1/2) é maior que (1/20).
+Alternativa A
+Questão 5 · Área a partir da planta
+Em uma planta baixa desenhada na escala 1 : 100, uma sala aparece como um retângulo de 5 cm por 4 cm. A área real dessa sala é de
+0,2 m²
+2 m²
+20 m²
+200 m²
+2 000 m²
+Ver resolução
+Caminho recomendado — converta os lados primeiro:
+5 cm · 100 = 500 cm = 5 m 4 cm · 100 = 400 cm = 4 m
+Área = 5 · 4 = 20 m^2
+Pelo fator de área, para comparar:
+20 cm^2 · 100^2 = 200 000 cm^2 = 20 m^2 ✓
+Os dois caminhos batem, mas o primeiro é mais seguro: converter os lados torna impossível esquecer que o fator vai ao quadrado.
+Lembre que em 1 : 100 cada centímetro é exatamente 1 metro — a escala mais amigável de todas.
+Alternativa C
+Questão 6 · O fator de área
+Em um projeto desenhado na escala 1 : 200, cada centímetro quadrado do papel representa, na realidade, uma área de
+0,02 m²
+2 m²
+4 m²
+20 m²
+40 m²
+Ver resolução
+A escala linear é 1 : 200, logo a escala de área é 1 : 200^2:
+1 cm^2 · 40 000 = 40 000 cm^2
+40 000 ÷ 10 000 = 4 m^2
+Conferindo pela geometria: 1 cm² é um quadrado de 1 cm de lado. Na realidade, esse lado mede 200 cm = 2 m, e um quadrado de 2 m de lado tem 4 m^2 ✓
+A alternativa B é o resultado de quem aplicou o fator 200 uma vez só, esquecendo o quadrado.
+Alternativa C
+Questão 7 · Maquete e o fator cúbico
+Uma maquete construída na escala 1 : 20 reproduz um reservatório de água. A maquete comporta 5 litros. O reservatório real comporta
+100 litros
+2 000 litros
+8 000 litros
+40 000 litros
+400 000 litros
+Ver resolução
+Capacidade é volume, e o volume tem três dimensões — o fator vai ao cubo:
+20^3 = 8 000
+5 · 8 000 = 40 000 litros = 40 m^3
+Por que 8 000 e não 20: cada uma das três dimensões do reservatório é vinte vezes maior que na maquete. Comprimento, largura e altura multiplicam juntos: 20 · 20 · 20.
+A alternativa A aplicou o fator linear; a C usou o fator certo mas esqueceu de multiplicar pelos 5 litros da maquete.
+Alternativa D
+Questão 8 · Escala gráfica
+Em um mapa, a escala gráfica é representada por uma barra de 4 cm de comprimento, correspondente a 10 km no terreno. A escala numérica desse mapa é
+1 : 2 500
+1 : 25 000
+1 : 250 000
+1 : 400 000
+1 : 2 500 000
+Ver resolução
+Converta a distância real para centímetros e monte a razão:
+10 km = 10 000 m = 1 000 000 cm
+E = (4/1 000 000) = (1/250 000)
+Conferindo: em 1 : 250 000, cada centímetro vale 2,5 km. Quatro centímetros dão 10 km ✓
+Vale notar por que essa barra existe: se o mapa for ampliado numa fotocópia, a barra cresce junto e continua correta — enquanto o número “1 : 250 000” passaria a estar errado.
+Alternativa C
+Questão 9 · Planta baixa
+Na planta baixa de uma residência, desenhada na escala 1 : 50, uma parede da sala está representada por um segmento de 7 cm. O comprimento real dessa parede é de
+0,35 m
+3,5 m
+7 m
+35 m
+350 m
+Ver resolução
+7 · 50 = 350 cm = 3,5 m
+Conferência de plausibilidade: 3,5 metros é uma medida coerente para a parede de uma sala. A alternativa D daria 35 metros, o comprimento de um prédio; a A daria 35 centímetros, menos que um passo.
+Esse tipo de checagem é especialmente útil em questões de planta, porque as medidas têm referência concreta imediata — todo mundo sabe o tamanho aproximado de um cômodo.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Sei que escala é desenho dividido por real, com as duas na mesma unidade
+Interpreto 1 : 250 000 como “1 cm no mapa vale 250 000 cm reais”
+Percorro a cadeia cm → m → km sem pular degrau
+Uso o atalho: em 1 : n, cada cm vale n ÷ 100 000 km
+Resolvo os três tipos: achar o real, achar o desenho e achar a escala
+Sei que denominador menor significa escala maior e mais detalhe
+Aplico n^2 para área e n^3 para volume
+Prefiro converter os lados antes de calcular a área de um cômodo
+Resolvo maquetes lembrando que o volume varia com o cubo da escala
+Converto escala gráfica em numérica medindo a barra
+Sei por que a escala gráfica sobrevive a uma ampliação e a numérica não
+Reconheço que 1 : 100 significa 1 cm igual a 1 metro
+Confiro a plausibilidade do resultado antes de marcar
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Inclua questões de Geografia, onde a escala aparece com carta topográfica e curvas de nível em vez de números limpos. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 45 cartões deste assunto no arquivo ENEM-Matematica-11-escalas-plantas-mapas.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

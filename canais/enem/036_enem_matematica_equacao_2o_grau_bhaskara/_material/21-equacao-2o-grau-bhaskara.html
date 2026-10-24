@@ -1,0 +1,1028 @@
+<title>Equação do 2º Grau</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 3 de 18</p>
+    <h1>Equação do 2º grau e fórmula de Bhaskara</h1>
+    <p class="deck">Quando a incógnita aparece ao quadrado, isolar o <span class="m"><span class="v">x</span></span> não basta: a equação pode ter duas soluções, uma ou nenhuma. Este assunto ensina a resolver qualquer equação do 2º grau, a escolher o caminho mais curto (fatorar, soma e produto ou Bhaskara) e a decidir qual raiz faz sentido no problema.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Parábola y igual a x ao quadrado menos 5x mais 4 cortando o eixo x nos pontos 1 e 4, as raízes da equação; delta igual a 9 e x igual a 5 mais ou menos 3 sobre 2">
+  <defs>
+    <marker id="ax21h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="18" y1="100.8" x2="284" y2="100.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21h)"/>
+  <line x1="48" y1="154" x2="48" y2="10" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21h)"/>
+  <text x="286" y="92.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">x</text>
+  <text x="56" y="20" class="svg-lbl" style="fill:var(--ink-2)">y</text>
+  <polyline points="42,25.6 44.7,31 47.3,36.4 50,41.6 52.6,46.6 55.2,51.5 57.9,56.3 60.6,60.9 63.2,65.4 65.9,69.8 68.5,74 71.2,78.1 73.8,82 76.5,85.8 79.1,89.5 81.8,93 84.4,96.4 87.1,99.6 89.7,102.7 92.4,105.7 95,108.5 97.7,111.2 100.3,113.8 103,116.2 105.6,118.5 108.3,120.6 110.9,122.6 113.6,124.5 116.2,126.2 118.9,127.8 121.5,129.3 124.2,130.6 126.8,131.8 129.5,132.8 132.1,133.7 134.8,134.5 137.4,135.1 140.1,135.6 142.7,135.9 145.4,136.1 148,136.2 150.7,136.1 153.3,135.9 156,135.6 158.6,135.1 161.3,134.5 163.9,133.7 166.6,132.8 169.2,131.8 171.9,130.6 174.5,129.3 177.2,127.8 179.8,126.2 182.5,124.5 185.1,122.6 187.8,120.6 190.4,118.5 193.1,116.2 195.7,113.8 198.4,111.2 201,108.5 203.7,105.7 206.3,102.7 208.9,99.6 211.6,96.4 214.3,93 216.9,89.5 219.6,85.8 222.2,82 224.9,78.1 227.5,74 230.2,69.8 232.8,65.4 235.5,60.9 238.1,56.3 240.8,51.5 243.4,46.6 246.1,41.6 248.7,36.4 251.4,31 254,25.6" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="88" cy="100.8" r="4.5" style="fill:var(--c2)"/>
+  <circle cx="208" cy="100.8" r="4.5" style="fill:var(--c2)"/>
+  <text x="80" y="118.8" text-anchor="end" class="svg-num" style="fill:var(--c2)">x = 1</text>
+  <text x="216" y="118.8" class="svg-num" style="fill:var(--c2)">x = 4</text>
+  <text x="150" y="182" text-anchor="middle" class="svg-num" style="fill:var(--ink)">x² − 5x + 4 = 0</text>
+  <text x="150" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">Δ = 9 · x = (5 ± 3) ÷ 2</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>6 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Expressões algébricas e produtos notáveis · Equações do 1º grau</dd></div>
+      <div><dt>Destrava</dt><dd>Função quadrática, problemas de área, lançamentos e lucro máximo</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM raramente escreve “resolva <span class="m"><span class="v">x</span>² − 5<span class="v">x</span> + 4 = 0</span>”. A equação do 2º grau aparece <strong>no meio</strong> de um problema, e o trabalho é montá-la, resolvê-la e interpretar as raízes. As formas mais comuns:</p>
+<ul>
+  <li><strong>Áreas:</strong> um terreno ampliado, uma moldura, uma calçada de largura <span class="m"><span class="v">x</span></span> em volta de um jardim.</li>
+  <li><strong>Movimento:</strong> o instante em que um objeto lançado atinge certa altura, com <span class="m"><span class="v">h</span>(<span class="v">t</span>) = <span class="v">v</span><sub>0</sub><span class="v">t</span> − 5<span class="v">t</span>²</span>.</li>
+  <li><strong>Contagem:</strong> número de jogos de um campeonato, de apertos de mão ou de diagonais, que dão expressões como <span class="m"><span class="frac"><i><span class="v">n</span>(<span class="v">n</span> − 1)</i><i>2</i></span></span>.</li>
+  <li><strong>Economia:</strong> quantidade vendida para que o lucro seja zero, quando o preço cai à medida que se vende mais.</li>
+  <li><strong>Leitura das raízes:</strong> quantas soluções existem, qual delas serve e qual deve ser descartada (tempo negativo, medida negativa).</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três hábitos. <strong>Igualar a zero</strong> antes de qualquer coisa: <span class="m"><span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span> = 0</span>. <strong>Escolher o caminho</strong>: incompleta se resolve por fatoração, raízes inteiras saem por soma e produto, o resto vai para Bhaskara. E <strong>voltar ao enunciado</strong>: a raiz negativa de uma medida não é resposta, mas também não pode ser trocada de sinal.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Forma geral e coeficientes</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Equação do 2º grau é toda equação que pode ser escrita como <span class="m"><span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span> = 0</span>, com <span class="m"><span class="v">a</span> ≠ 0</span>. O número <span class="m"><span class="v">a</span></span> acompanha <span class="m"><span class="v">x</span>²</span>, o <span class="m"><span class="v">b</span></span> acompanha <span class="m"><span class="v">x</span></span> e o <span class="m"><span class="v">c</span></span> é o termo independente. As soluções se chamam <strong>raízes</strong>.</p>
+</div>
+<p>Se <span class="m"><span class="v">a</span> = 0</span>, o termo ao quadrado some e a equação vira do 1º grau. Antes de ler os coeficientes, <strong>passe tudo para um lado</strong> e organize na ordem <span class="m"><span class="v">x</span>²</span>, <span class="m"><span class="v">x</span></span>, número:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Equação dada</th><th>Na forma geral</th><th class="m"><span class="v">a</span></th><th class="m"><span class="v">b</span></th><th class="m"><span class="v">c</span></th></tr></thead>
+  <tbody>
+    <tr><td class="m">2<span class="v">x</span>² − 7<span class="v">x</span> + 3 = 0</td><td class="m">já está</td><td>2</td><td>−7</td><td>3</td></tr>
+    <tr><td class="m">3<span class="v">x</span> − <span class="v">x</span>² = 2</td><td class="m">−<span class="v">x</span>² + 3<span class="v">x</span> − 2 = 0</td><td>−1</td><td>3</td><td>−2</td></tr>
+    <tr><td class="m"><span class="v">x</span>² = 5<span class="v">x</span></td><td class="m"><span class="v">x</span>² − 5<span class="v">x</span> = 0</td><td>1</td><td>−5</td><td>0</td></tr>
+    <tr><td class="m">(<span class="v">x</span> + 1)² = 9</td><td class="m"><span class="v">x</span>² + 2<span class="v">x</span> − 8 = 0</td><td>1</td><td>2</td><td>−8</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">O sinal faz parte do coeficiente</span>
+  <p>Em <span class="m"><span class="v">x</span>² − 7<span class="v">x</span> + 10 = 0</span>, o <span class="m"><span class="v">b</span></span> é <strong>−7</strong>, não 7. Quase todos os erros na fórmula de Bhaskara começam aqui: o sinal é esquecido na leitura e o <span class="m">−<span class="v">b</span></span> sai trocado. Se preferir, multiplique a equação inteira por −1 quando <span class="m"><span class="v">a</span></span> for negativo; as raízes não mudam.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Equações incompletas: sem fórmula</h2>
+<p>Quando <span class="m"><span class="v">b</span> = 0</span> ou <span class="m"><span class="v">c</span> = 0</span>, a equação é <strong>incompleta</strong>, e há caminhos mais curtos que Bhaskara.</p>
+<div class="eq">
+  <span class="lbl">c = 0 · fator comum e produto nulo</span>
+  <p class="m">3<span class="v">x</span>² − 12<span class="v">x</span> = 0 &nbsp;→&nbsp; 3<span class="v">x</span>(<span class="v">x</span> − 4) = 0 &nbsp;→&nbsp; <span class="v">x</span> = 0 &nbsp;ou&nbsp; <span class="v">x</span> = 4</p>
+  <p>Um produto só é zero se um dos fatores for zero. Uma das raízes é <strong>sempre 0</strong>; a outra é <span class="m">−<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">b = 0 · isolar x² e tirar a raiz com ±</span>
+  <p class="m">2<span class="v">x</span>² − 50 = 0 &nbsp;→&nbsp; <span class="v">x</span>² = 25 &nbsp;→&nbsp; <span class="v">x</span> = 5 &nbsp;ou&nbsp; <span class="v">x</span> = −5</p>
+  <p>As raízes são <strong>simétricas</strong>. Se <span class="m"><span class="v">x</span>²</span> der negativo, como em <span class="m"><span class="v">x</span>² + 9 = 0</span>, não há raiz real.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Nunca divida os dois lados por x</span>
+  <p>De <span class="m">3<span class="v">x</span>² = 12<span class="v">x</span></span>, dividir por <span class="m"><span class="v">x</span></span> dá <span class="m"><span class="v">x</span> = 4</span> e faz a raiz <span class="m"><span class="v">x</span> = 0</span> desaparecer, porque dividir por <span class="m"><span class="v">x</span></span> supõe que <span class="m"><span class="v">x</span> ≠ 0</span>. Passe tudo para um lado e coloque <span class="m"><span class="v">x</span></span> em evidência.</p>
+</div>
+<p>O mesmo produto nulo resolve qualquer equação que já venha fatorada: <span class="m">(<span class="v">x</span> − 2)(<span class="v">x</span> + 7) = 0</span> tem raízes 2 e −7, sem conta nenhuma. Desenvolver para depois aplicar Bhaskara é trabalho jogado fora.</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> A fórmula de Bhaskara</h2>
+<p>Para a equação completa, a fórmula resolve qualquer caso. Primeiro se calcula o <strong>discriminante</strong> <span class="m">Δ</span> (delta); depois, as raízes.</p>
+<div class="eq">
+  <span class="lbl">Discriminante e raízes</span>
+  <p class="m" style="font-size:1.1rem">Δ = <span class="v">b</span>² − 4<span class="v">a</span><span class="v">c</span> &nbsp;&nbsp;&nbsp; <span class="v">x</span> = <span class="frac"><i>−<span class="v">b</span> ± <span class="rad"><i>Δ</i></span></i><i>2<span class="v">a</span></i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · 2x² − 7x + 3 = 0, com a = 2, b = −7, c = 3</span>
+  <p class="m">Δ = (−7)² − 4 · 2 · 3 = 49 − 24 = 25</p>
+  <p class="m"><span class="v">x</span> = <span class="frac"><i>7 ± 5</i><i>4</i></span> &nbsp;→&nbsp; <span class="v">x</span><sub>1</sub> = <span class="frac"><i>12</i><i>4</i></span> = 3 &nbsp;e&nbsp; <span class="v">x</span><sub>2</sub> = <span class="frac"><i>2</i><i>4</i></span> = <span class="frac"><i>1</i><i>2</i></span></p>
+  <p><strong>Conferência:</strong> <span class="m">2 · 9 − 21 + 3 = 0</span>. Substituir uma raiz na equação leva dez segundos e pega quase todo erro de sinal.</p>
+</div>
+<h3>De onde vem a fórmula</h3>
+<p>Ela é o produto notável <strong>quadrado da soma</strong> usado ao contrário (veja <em>Expressões algébricas e produtos notáveis</em>). Multiplicando <span class="m"><span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span> = 0</span> por <span class="m">4<span class="v">a</span></span> e somando <span class="m"><span class="v">b</span>²</span> dos dois lados, o lado esquerdo vira um quadrado perfeito:</p>
+<div class="eq">
+  <p class="m">4<span class="v">a</span>²<span class="v">x</span>² + 4<span class="v">a</span><span class="v">b</span><span class="v">x</span> + <span class="v">b</span>² = <span class="v">b</span>² − 4<span class="v">a</span><span class="v">c</span> &nbsp;→&nbsp; (2<span class="v">a</span><span class="v">x</span> + <span class="v">b</span>)² = Δ &nbsp;→&nbsp; 2<span class="v">a</span><span class="v">x</span> + <span class="v">b</span> = ±<span class="rad"><i>Δ</i></span></p>
+  <p>Isolando <span class="m"><span class="v">x</span></span>, sai a fórmula. Por isso o <span class="m">±</span>: um número positivo tem duas raízes quadradas, uma positiva e outra negativa.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Três tropeços clássicos na fórmula</span>
+  <p><strong>1.</strong> Com <span class="m"><span class="v">b</span> = −7</span>, o <span class="m"><span class="v">b</span>²</span> é <span class="m">(−7)² = 49</span>, positivo. <strong>2.</strong> O <span class="m">−<span class="v">b</span></span> de <span class="m"><span class="v">b</span> = −7</span> é <strong>+7</strong>. <strong>3.</strong> O <span class="m">2<span class="v">a</span></span> divide <strong>o numerador inteiro</strong>, não só a raiz: <span class="m">(7 + 5) ÷ 4</span>, e não <span class="m">7 + 5 ÷ 4</span>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O discriminante decide quantas raízes existem</h2>
+<p>O <span class="m">Δ</span> fica dentro de uma raiz quadrada. Por isso, só olhando o sinal dele já se sabe quantas soluções reais a equação tem, antes de qualquer outra conta.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Sinal de Δ</th><th>Raízes reais</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="m">Δ &gt; 0</td><td>duas, diferentes</td><td class="m"><span class="v">x</span>² − 5<span class="v">x</span> + 4 = 0: Δ = 9, raízes 1 e 4</td></tr>
+    <tr><td class="m">Δ = 0</td><td>uma só (raiz dupla)</td><td class="m"><span class="v">x</span>² − 6<span class="v">x</span> + 9 = 0: Δ = 0, raiz 3</td></tr>
+    <tr><td class="m">Δ &lt; 0</td><td>nenhuma</td><td class="m"><span class="v">x</span>² + 2<span class="v">x</span> + 5 = 0: Δ = −16</td></tr>
+  </tbody>
+</table>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Três parábolas abertas para cima. Na primeira, delta positivo, a curva corta o eixo x em dois pontos: duas raízes reais. Na segunda, delta igual a zero, a curva apenas toca o eixo em um ponto: uma raiz dupla. Na terceira, delta negativo, a curva fica toda acima do eixo: nenhuma raiz real">
+<defs>
+    <marker id="ax21d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="16" y1="113.4" x2="146" y2="113.4" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <line x1="78" y1="156" x2="78" y2="10" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <polyline points="22,60.9 23.4,64.8 24.8,68.7 26.2,72.4 27.6,76.1 29,79.6 30.4,83.1 31.8,86.4 33.2,89.7 34.6,92.8 36,95.9 37.4,98.8 38.8,101.7 40.2,104.4 41.6,107.1 43,109.6 44.4,112.1 45.8,114.4 47.2,116.7 48.6,118.8 50,120.9 51.4,122.8 52.8,124.7 54.2,126.4 55.6,128.1 57,129.6 58.4,131.1 59.8,132.4 61.2,133.7 62.6,134.8 64,135.9 65.4,136.8 66.8,137.7 68.2,138.4 69.6,139.1 71,139.6 72.4,140.1 73.8,140.4 75.2,140.7 76.6,140.8 78,140.9 79.4,140.8 80.8,140.7 82.2,140.4 83.6,140.1 85,139.6 86.4,139.1 87.8,138.4 89.2,137.7 90.6,136.8 92,135.9 93.4,134.8 94.8,133.7 96.2,132.4 97.6,131.1 99,129.6 100.4,128.1 101.8,126.4 103.2,124.7 104.6,122.8 106,120.9 107.4,118.8 108.8,116.7 110.2,114.4 111.6,112.1 113,109.6 114.4,107.1 115.8,104.4 117.2,101.7 118.6,98.8 120,95.9 121.4,92.8 122.8,89.7 124.2,86.4 125.6,83.1 127,79.6 128.4,76.1 129.8,72.4 131.2,68.7 132.6,64.8 134,60.9" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="45.2" cy="113.4" r="3.5" style="fill:var(--ink)"/>
+  <circle cx="110.8" cy="113.4" r="3.5" style="fill:var(--ink)"/>
+  <text x="78" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">Δ &gt; 0</text>
+  <text x="78" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">duas raízes reais</text>
+  <line x1="166" y1="113.4" x2="296" y2="113.4" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <line x1="228" y1="156" x2="228" y2="10" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <polyline points="172,33.4 173.4,37.4 174.8,41.2 176.2,45 177.6,48.6 179,52.2 180.4,55.6 181.8,59 183.2,62.2 184.6,65.4 186,68.4 187.4,71.4 188.8,74.2 190.2,77 191.6,79.6 193,82.2 194.4,84.6 195.8,87 197.2,89.2 198.6,91.4 200,93.4 201.4,95.4 202.8,97.2 204.2,99 205.6,100.6 207,102.2 208.4,103.6 209.8,105 211.2,106.2 212.6,107.4 214,108.4 215.4,109.4 216.8,110.2 218.2,111 219.6,111.6 221,112.2 222.4,112.6 223.8,113 225.2,113.2 226.6,113.4 228,113.4 229.4,113.4 230.8,113.2 232.2,113 233.6,112.6 235,112.2 236.4,111.6 237.8,111 239.2,110.2 240.6,109.4 242,108.4 243.4,107.4 244.8,106.2 246.2,105 247.6,103.6 249,102.2 250.4,100.6 251.8,99 253.2,97.2 254.6,95.4 256,93.4 257.4,91.4 258.8,89.2 260.2,87 261.6,84.6 263,82.2 264.4,79.6 265.8,77 267.2,74.2 268.6,71.4 270,68.4 271.4,65.4 272.8,62.2 274.2,59 275.6,55.6 277,52.2 278.4,48.6 279.8,45 281.2,41.2 282.6,37.4 284,33.4" style="fill:none;stroke:var(--c3);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="228" cy="113.4" r="3.5" style="fill:var(--ink)"/>
+  <text x="228" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">Δ = 0</text>
+  <text x="228" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">uma raiz (dupla)</text>
+  <line x1="316" y1="113.4" x2="446" y2="113.4" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <line x1="378" y1="156" x2="378" y2="10" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax21d)"/>
+  <polyline points="324.4,22 325.8,25.6 327.1,29.1 328.5,32.6 329.8,35.9 331.1,39.1 332.5,42.3 333.8,45.4 335.2,48.3 336.5,51.2 337.8,54 339.2,56.7 340.5,59.3 341.9,61.8 343.2,64.2 344.5,66.6 345.9,68.8 347.2,71 348.5,73 349.9,75 351.2,76.9 352.6,78.6 353.9,80.3 355.2,81.9 356.6,83.4 357.9,84.9 359.3,86.2 360.6,87.4 361.9,88.6 363.3,89.6 364.6,90.6 366,91.4 367.3,92.2 368.6,92.9 370,93.5 371.3,94 372.6,94.4 374,94.7 375.3,95 376.7,95.1 378,95.1 379.3,95.1 380.7,95 382,94.7 383.4,94.4 384.7,94 386,93.5 387.4,92.9 388.7,92.2 390,91.4 391.4,90.6 392.7,89.6 394.1,88.6 395.4,87.4 396.7,86.2 398.1,84.9 399.4,83.4 400.8,81.9 402.1,80.3 403.4,78.6 404.8,76.9 406.1,75 407.5,73 408.8,71 410.1,68.8 411.5,66.6 412.8,64.2 414.1,61.8 415.5,59.3 416.8,56.7 418.2,54 419.5,51.2 420.8,48.3 422.2,45.4 423.5,42.3 424.9,39.1 426.2,35.9 427.5,32.6 428.9,29.1 430.2,25.6 431.6,22" style="fill:none;stroke:var(--c4);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <text x="378" y="182" text-anchor="middle" class="svg-ttl" style="fill:var(--c4)">Δ &lt; 0</text>
+  <text x="378" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">nenhuma raiz real</text>
+</svg>
+<figcaption><b>O Δ diz quantas vezes a parábola toca o eixo <span class="m"><span class="v">x</span></span>.</b> As raízes da equação são os pontos em que o gráfico de <span class="m"><span class="v">y</span> = <span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span></span> cruza o eixo horizontal: duas vezes, uma vez (tangente) ou nenhuma. O estudo completo desse gráfico está em <em>Função quadrática</em>, próximos assuntos do bloco.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Questões de parâmetro</span>
+  <p>“Para que valor de <span class="m"><span class="v">k</span></span> a equação tem uma única raiz?” pede <span class="m">Δ = 0</span>. “Duas raízes reais distintas” pede <span class="m">Δ &gt; 0</span>; “nenhuma raiz real”, <span class="m">Δ &lt; 0</span>. Em <span class="m"><span class="v">x</span>² − 6<span class="v">x</span> + <span class="v">k</span> = 0</span>: <span class="m">36 − 4<span class="v">k</span> = 0</span>, logo <span class="m"><span class="v">k</span> = 9</span>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Soma e produto: as raízes de cabeça</h2>
+<p>Das duas raízes da fórmula sai uma relação que dispensa o <span class="m">Δ</span> quando as raízes são inteiras:</p>
+<div class="eq">
+  <span class="lbl">Relações de Girard para o 2º grau</span>
+  <p class="m" style="font-size:1.05rem"><span class="v">S</span> = <span class="v">x</span><sub>1</sub> + <span class="v">x</span><sub>2</sub> = −<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span> &nbsp;&nbsp;&nbsp; <span class="v">P</span> = <span class="v">x</span><sub>1</sub> · <span class="v">x</span><sub>2</sub> = <span class="frac"><i><span class="v">c</span></i><i><span class="v">a</span></i></span></p>
+  <p>Com <span class="m"><span class="v">a</span> = 1</span>, a equação é <span class="m"><span class="v">x</span>² − <span class="v">S</span><span class="v">x</span> + <span class="v">P</span> = 0</span>: procure dois números com essa soma e esse produto.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Equação</th><th>Soma e produto</th><th>Raízes</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">x</span>² − 7<span class="v">x</span> + 10 = 0</td><td>soma 7, produto 10</td><td class="m">2 e 5</td></tr>
+    <tr><td class="m"><span class="v">x</span>² + <span class="v">x</span> − 12 = 0</td><td>soma −1, produto −12</td><td class="m">3 e −4</td></tr>
+    <tr><td class="m"><span class="v">x</span>² + 8<span class="v">x</span> + 15 = 0</td><td>soma −8, produto 15</td><td class="m">−3 e −5</td></tr>
+    <tr><td class="m">2<span class="v">x</span>² − 7<span class="v">x</span> + 3 = 0</td><td>soma <span class="frac"><i>7</i><i>2</i></span>, produto <span class="frac"><i>3</i><i>2</i></span></td><td class="m">3 e <span class="frac"><i>1</i><i>2</i></span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Sinais das raízes sem resolver</span>
+  <p><strong>Produto negativo:</strong> uma raiz positiva e uma negativa. <strong>Produto positivo e soma positiva:</strong> as duas positivas. <strong>Produto positivo e soma negativa:</strong> as duas negativas. Isso elimina alternativas em segundos.</p>
+</div>
+<p>O caminho inverso também cai: para montar uma equação com raízes 3 e −5, faça <span class="m"><span class="v">S</span> = −2</span> e <span class="m"><span class="v">P</span> = −15</span>, e escreva <span class="m"><span class="v">x</span>² + 2<span class="v">x</span> − 15 = 0</span>. Equivalente é a <strong>forma fatorada</strong>:</p>
+<div class="eq">
+  <p class="m"><span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span> = <span class="v">a</span>(<span class="v">x</span> − <span class="v">x</span><sub>1</sub>)(<span class="v">x</span> − <span class="v">x</span><sub>2</sub>) &nbsp;&nbsp; ex.: 2<span class="v">x</span>² − 7<span class="v">x</span> + 3 = 2(<span class="v">x</span> − 3)(<span class="v">x</span> − <span class="frac"><i>1</i><i>2</i></span>) = (<span class="v">x</span> − 3)(2<span class="v">x</span> − 1)</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Do texto à equação: modelagem</h2>
+<p>A equação do 2º grau nasce quando duas grandezas desconhecidas se multiplicam: largura vezes comprimento, número de times vezes número de adversários, preço vezes quantidade.</p>
+<figure class="fig">
+<svg viewBox="0 0 470 248" role="img" aria-label="Retângulo interno de 10 por 6 metros, o jardim, cercado por uma faixa de largura x, a calçada. O retângulo externo mede 10 mais 2x por 6 mais 2x">
+  <rect x="100" y="34" width="280" height="200" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <rect x="140" y="74" width="200" height="120" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="240" y="130" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">jardim</text>
+  <text x="240" y="150" text-anchor="middle" class="svg-num" style="fill:var(--c1)">10 m × 6 m</text>
+  <text x="240" y="26" text-anchor="middle" class="svg-num" style="fill:var(--ink)">10 + 2x</text>
+  <text x="92" y="138" text-anchor="end" class="svg-num" style="fill:var(--ink)">6 + 2x</text>
+  <line x1="100" y1="134" x2="140" y2="134" style="stroke:var(--c3);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="120" y="128" text-anchor="middle" class="svg-num" style="fill:var(--c3)">x</text>
+  <line x1="340" y1="134" x2="380" y2="134" style="stroke:var(--c3);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="360" y="128" text-anchor="middle" class="svg-num" style="fill:var(--c3)">x</text>
+  <line x1="240" y1="34" x2="240" y2="74" style="stroke:var(--c3);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="250" y="58" class="svg-num" style="fill:var(--c3)">x</text>
+  <line x1="240" y1="194" x2="240" y2="234" style="stroke:var(--c3);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="250" y="218" class="svg-num" style="fill:var(--c3)">x</text>
+  <text x="396" y="60" class="svg-lbl" style="fill:var(--c3)">calçada</text>
+  <text x="396" y="76" class="svg-lbl" style="fill:var(--c3)">largura x</text>
+</svg>
+<figcaption><b>Uma calçada de largura <span class="m"><span class="v">x</span></span> em volta de um jardim de 10 m por 6 m.</b> Cada dimensão cresce <span class="m">2<span class="v">x</span></span>, uma largura de cada lado. Se a área total for 140 m²: <span class="m">(10 + 2<span class="v">x</span>)(6 + 2<span class="v">x</span>) = 140</span>, que vira <span class="m"><span class="v">x</span>² + 8<span class="v">x</span> − 20 = 0</span>, com raízes 2 e −10. A calçada mede <strong>2 m</strong>.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Campeonato em turno único com n times</span>
+  <p class="m">jogos = <span class="frac"><i><span class="v">n</span>(<span class="v">n</span> − 1)</i><i>2</i></span></p>
+  <p>Cada time enfrenta os outros <span class="m"><span class="v">n</span> − 1</span>, e cada jogo foi contado duas vezes (A × B e B × A). Com 45 jogos: <span class="m"><span class="v">n</span>² − <span class="v">n</span> − 90 = 0</span>, <span class="m">Δ = 361</span>, <span class="m"><span class="v">n</span> = <span class="frac"><i>1 + 19</i><i>2</i></span> = 10</span> times. Em turno e returno não se divide por 2.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Descartar a raiz não é trocar o sinal dela</span>
+  <p>No jardim, a raiz −10 não serve, porque uma largura não é negativa. Ela é <strong>descartada</strong>; a resposta é a outra raiz, 2. Escolher “10 m” porque o número apareceu na conta é o distrator mais comum desse tipo de questão.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Equações que viram do 2º grau</h2>
+<p>Algumas equações de aparência diferente se resolvem com uma <strong>troca de variável</strong>.</p>
+<div class="eq">
+  <span class="lbl">Biquadrada · x⁴ − 13x² + 36 = 0</span>
+  <p>Chame <span class="m"><span class="v">x</span>² = <span class="v">y</span></span>. A equação vira <span class="m"><span class="v">y</span>² − 13<span class="v">y</span> + 36 = 0</span>, com <span class="m"><span class="v">y</span> = 4</span> ou <span class="m"><span class="v">y</span> = 9</span> (soma 13, produto 36).</p>
+  <p class="m"><span class="v">x</span>² = 4 → <span class="v">x</span> = ±2 &nbsp;&nbsp;&nbsp; <span class="v">x</span>² = 9 → <span class="v">x</span> = ±3</p>
+  <p>Quatro raízes reais. Se algum <span class="m"><span class="v">y</span></span> der negativo, ele não gera raiz real, porque <span class="m"><span class="v">x</span>²</span> nunca é negativo.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Com x no denominador · 6/x = x − 1</span>
+  <p>Multiplique por <span class="m"><span class="v">x</span></span> (com <span class="m"><span class="v">x</span> ≠ 0</span>): <span class="m">6 = <span class="v">x</span>² − <span class="v">x</span></span>, ou <span class="m"><span class="v">x</span>² − <span class="v">x</span> − 6 = 0</span>, raízes 3 e −2. Ambas servem, porque nenhuma anula o denominador.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Não pare no y</span>
+  <p>Na biquadrada, os valores de <span class="m"><span class="v">y</span></span> ainda não são a resposta. Volte para <span class="m"><span class="v">x</span></span>: cada <span class="m"><span class="v">y</span></span> positivo dá duas raízes; <span class="m"><span class="v">y</span> = 0</span> dá uma; <span class="m"><span class="v">y</span></span> negativo, nenhuma.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Teste as alternativas na equação</span>
+  <p>Se as alternativas são números, substitua cada uma na equação montada. Quem zerar é raiz. Muitas vezes isso é mais rápido do que calcular o <span class="m">Δ</span>, principalmente com coeficientes grandes.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Simplifique antes de aplicar a fórmula</span>
+  <p><span class="m">4<span class="v">x</span>² + 32<span class="v">x</span> − 80 = 0</span> e <span class="m"><span class="v">x</span>² + 8<span class="v">x</span> − 20 = 0</span> têm as mesmas raízes. Dividir por um fator comum encurta todas as contas e diminui o risco de erro.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Soma e produto primeiro, Bhaskara depois</span>
+  <p>Com <span class="m"><span class="v">a</span> = 1</span> e números pequenos, tente soma e produto por alguns segundos. Se não aparecer um par inteiro, vá para a fórmula sem insistir.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Releia a pergunta depois de achar as raízes</span>
+  <p>O enunciado pode pedir a outra dimensão do terreno, o intervalo de tempo entre as duas raízes, a área e não o lado. A raiz é o meio do caminho.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>MUV: <span class="m"><span class="v">s</span> = <span class="v">s</span><sub>0</sub> + <span class="v">v</span><sub>0</sub><span class="v">t</span> + <span class="frac"><i><span class="v">a</span><span class="v">t</span>²</i><i>2</i></span></span></td><td>achar o instante em que o móvel passa por uma posição é resolver uma equação do 2º grau em <span class="m"><span class="v">t</span></span>; tempo negativo se descarta</td></tr>
+    <tr><td><strong>Geometria</strong></td><td>Pitágoras com lados <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">x</span> + 2</span>; áreas</td><td><span class="m">(<span class="v">x</span> + 2)²</span> exige o produto notável completo</td></tr>
+    <tr><td><strong>Economia</strong></td><td>receita = preço × quantidade, com preço que cai</td><td>os pontos de lucro zero são as raízes da equação do lucro</td></tr>
+    <tr><td><strong>Função quadrática</strong></td><td>zeros de <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span></span></td><td>as raízes desta página são onde a parábola corta o eixo <span class="m"><span class="v">x</span></span></td></tr>
+  </tbody>
+</table>
+</div>
+<p>O lançamento vertical, com <span class="m"><span class="v">h</span> = <span class="v">v</span><sub>0</sub><span class="v">t</span> − 5<span class="v">t</span>²</span> (usando <span class="m"><span class="v">g</span> = 10 m/s²</span>), é a ponte mais comum com a Física: as duas raízes de <span class="m"><span class="v">h</span>(<span class="v">t</span>) = <span class="v">k</span></span> são o instante da subida e o da descida em que o objeto passa pela altura <span class="m"><span class="v">k</span></span>.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Ler b = 7 em x² − 7x + 10</span> &nbsp;→&nbsp; <span class="c">b = −7</span></span><small>O sinal faz parte do coeficiente.</small></li>
+  <li><span><span class="x">−7² = −49 no cálculo do Δ</span> &nbsp;→&nbsp; <span class="c">(−7)² = 49</span></span><small>O b² nunca é negativo.</small></li>
+  <li><span><span class="x">Dividir só a raiz por 2a</span> &nbsp;→&nbsp; <span class="c">(−b ± √Δ) ÷ 2a</span></span><small>O traço da fração cobre o numerador inteiro.</small></li>
+  <li><span><span class="x">Dividir 3x² = 12x por x</span> &nbsp;→&nbsp; <span class="c">3x(x − 4) = 0</span></span><small>A divisão apaga a raiz x = 0.</small></li>
+  <li><span><span class="x">x² = 25 → x = 5</span> &nbsp;→&nbsp; <span class="c">x = 5 ou x = −5</span></span><small>Só descarte o −5 se o contexto pedir.</small></li>
+  <li><span><span class="x">Trocar o sinal da raiz negativa</span> &nbsp;→&nbsp; <span class="c">descartá-la</span></span><small>Se −10 não serve, a resposta é a outra raiz, não 10.</small></li>
+  <li><span><span class="x">Soma das raízes = b/a</span> &nbsp;→&nbsp; <span class="c">S = −b/a</span></span><small>Em x² − 7x + 10, a soma é +7.</small></li>
+  <li><span><span class="x">Parar no y da biquadrada</span> &nbsp;→&nbsp; <span class="c">voltar para x = ±√y</span></span><small>E y negativo não gera raiz real.</small></li>
+  <li><span><span class="x">Igualar a 140 sem passar para um lado</span> &nbsp;→&nbsp; <span class="c">… = 0 antes da fórmula</span></span><small>Bhaskara só vale para ax² + bx + c = 0.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Monte a equação, iguale a zero e só então escolha o caminho: fatoração, soma e produto ou Bhaskara.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Calçada em volta de um jardim</span>
+    <p class="enun">Um jardim retangular de 10 m por 6 m será contornado por uma calçada de largura constante, em todos os lados. Com a calçada, o conjunto formará um retângulo de 140 m² de área. A largura da calçada será de</p>
+    <ol class="alt"><li>2 m.</li><li>2,5 m.</li><li>4 m.</li><li>cerca de 4,5 m.</li><li>10 m.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada dimensão ganha uma largura de cada lado:</p>
+      <p class="m">(10 + 2<span class="v">x</span>)(6 + 2<span class="v">x</span>) = 140 &nbsp;→&nbsp; 4<span class="v">x</span>² + 32<span class="v">x</span> − 80 = 0 &nbsp;→&nbsp; <span class="v">x</span>² + 8<span class="v">x</span> − 20 = 0</p>
+      <p>Soma −8 e produto −20: raízes 2 e −10. A largura não pode ser negativa, então <span class="m"><span class="v">x</span> = 2</span> m.</p>
+      <p>A E troca o sinal da raiz descartada. A C põe calçada em um lado só de cada dimensão: <span class="m">(10 + <span class="v">x</span>)(6 + <span class="v">x</span>) = 140</span> dá <span class="m"><span class="v">x</span> = 4</span>. A B esquece o termo <span class="m">4<span class="v">x</span>²</span> (<span class="m">60 + 32<span class="v">x</span> = 140</span>). A D esquece os termos do meio: <span class="m">60 + 4<span class="v">x</span>² = 140</span> dá <span class="m"><span class="v">x</span> = <span class="rad"><i>20</i></span> ≈ 4,5</span>.</p>
+      <p><strong>Conferência:</strong> <span class="m">14 · 10 = 140</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Parábola que toca o eixo uma única vez</span>
+    <p class="enun">Um programa de desenho traça a curva <span class="m"><span class="v">y</span> = <span class="v">x</span>² − 6<span class="v">x</span> + <span class="v">k</span></span>, em que <span class="m"><span class="v">k</span></span> é escolhido pelo usuário. Para uma vinheta, o designer quer que a curva toque o eixo horizontal em exatamente um ponto. O valor de <span class="m"><span class="v">k</span></span> deve ser</p>
+    <ol class="alt"><li>3.</li><li>6.</li><li>9.</li><li>36.</li><li>−9.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Um único ponto de contato com o eixo significa uma única raiz: <span class="m">Δ = 0</span>.</p>
+      <p class="m">Δ = (−6)² − 4 · 1 · <span class="v">k</span> = 36 − 4<span class="v">k</span> = 0 &nbsp;→&nbsp; <span class="v">k</span> = 9</p>
+      <p>Confere: <span class="m"><span class="v">x</span>² − 6<span class="v">x</span> + 9 = (<span class="v">x</span> − 3)²</span>, que só zera em <span class="m"><span class="v">x</span> = 3</span>.</p>
+      <p>A A é a própria raiz dupla, não o <span class="m"><span class="v">k</span></span>. A B copia o valor de <span class="m"><span class="v">b</span></span> sem sinal. A D esquece o 4 de <span class="m">4<span class="v">a</span><span class="v">c</span></span>. A E erra o sinal ao isolar <span class="m"><span class="v">k</span></span>; com <span class="m"><span class="v">k</span> = −9</span>, o Δ seria 72 e haveria dois pontos de contato.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Montar a equação pelas raízes</span>
+    <p class="enun">Um professor pediu aos alunos uma equação do 2º grau, com coeficiente de <span class="m"><span class="v">x</span>²</span> igual a 1, cujas raízes fossem 3 e −5. A equação correta é</p>
+    <ol class="alt"><li><span class="m"><span class="v">x</span>² − 2<span class="v">x</span> − 15 = 0</span></li><li><span class="m"><span class="v">x</span>² + 2<span class="v">x</span> + 15 = 0</span></li><li><span class="m"><span class="v">x</span>² − 8<span class="v">x</span> + 15 = 0</span></li><li><span class="m"><span class="v">x</span>² + 2<span class="v">x</span> − 15 = 0</span></li><li><span class="m"><span class="v">x</span>² + 15<span class="v">x</span> − 2 = 0</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Soma <span class="m">3 + (−5) = −2</span>; produto <span class="m">3 · (−5) = −15</span>. Com <span class="m"><span class="v">x</span>² − <span class="v">S</span><span class="v">x</span> + <span class="v">P</span> = 0</span>:</p>
+      <p class="m"><span class="v">x</span>² − (−2)<span class="v">x</span> + (−15) = <span class="v">x</span>² + 2<span class="v">x</span> − 15 = 0</p>
+      <p>Ou pela forma fatorada: <span class="m">(<span class="v">x</span> − 3)(<span class="v">x</span> + 5) = <span class="v">x</span>² + 2<span class="v">x</span> − 15</span>.</p>
+      <p>A A usa <span class="m">+<span class="v">S</span><span class="v">x</span></span> no lugar de <span class="m">−<span class="v">S</span><span class="v">x</span></span> e tem raízes −3 e 5. A B erra o sinal do produto e não tem raiz real. A C usa as raízes 3 e 5. A E troca a soma pelo produto.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Tempo acima de uma altura</span>
+    <p class="enun">Uma bola é lançada verticalmente para cima, e sua altura, em metros, <span class="m"><span class="v">t</span></span> segundos após o lançamento, é dada por <span class="m"><span class="v">h</span>(<span class="v">t</span>) = 20<span class="v">t</span> − 5<span class="v">t</span>²</span>. Durante quanto tempo a bola permanece acima de 15 m de altura?</p>
+    <ol class="alt"><li>1 s</li><li>2 s</li><li>3 s</li><li>4 s</li><li>Nenhum: a bola não chega a 15 m.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os instantes em que a bola passa por 15 m:</p>
+      <p class="m">20<span class="v">t</span> − 5<span class="v">t</span>² = 15 &nbsp;→&nbsp; 5<span class="v">t</span>² − 20<span class="v">t</span> + 15 = 0 &nbsp;→&nbsp; <span class="v">t</span>² − 4<span class="v">t</span> + 3 = 0 &nbsp;→&nbsp; <span class="v">t</span> = 1 ou <span class="v">t</span> = 3</p>
+      <p>Ela passa por 15 m subindo, em 1 s, e descendo, em 3 s. Fica acima disso de 1 s a 3 s: <strong>2 s</strong>.</p>
+      <p>A A e a C respondem um dos instantes, não o intervalo. A D é o tempo total de voo (<span class="m"><span class="v">h</span> = 0</span> em <span class="m"><span class="v">t</span> = 4</span>). A E é falsa: em <span class="m"><span class="v">t</span> = 2</span> a bola está a <span class="m">40 − 20 = 20</span> m.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · A raiz que sumiu</span>
+    <p class="enun">Para resolver a equação <span class="m">3<span class="v">x</span>² = 12<span class="v">x</span></span>, um estudante dividiu os dois lados por <span class="m">3<span class="v">x</span></span> e concluiu que a solução é <span class="m"><span class="v">x</span> = 4</span>. Sobre essa resolução, é correto afirmar que ela</p>
+    <ol class="alt"><li>está correta, pois a única solução é 4.</li><li>está errada, pois as soluções são 2 e −2.</li><li>está errada, pois as soluções são 4 e −4.</li><li>está incompleta, pois faltou a solução −4.</li><li>está incompleta, pois faltou a solução 0.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Passando tudo para um lado e fatorando:</p>
+      <p class="m">3<span class="v">x</span>² − 12<span class="v">x</span> = 0 &nbsp;→&nbsp; 3<span class="v">x</span>(<span class="v">x</span> − 4) = 0 &nbsp;→&nbsp; <span class="v">x</span> = 0 ou <span class="v">x</span> = 4</p>
+      <p>Dividir por <span class="m">3<span class="v">x</span></span> só é permitido se <span class="m"><span class="v">x</span> ≠ 0</span>; ao fazer isso, o estudante eliminou justamente a raiz 0. O 4 está certo, mas a resposta está incompleta.</p>
+      <p>A A ignora a raiz perdida. A B resolve <span class="m">3<span class="v">x</span>² = 12</span>, esquecendo o <span class="m"><span class="v">x</span></span> do lado direito. A C e a D aplicam o <span class="m">±</span> das incompletas com <span class="m"><span class="v">b</span> = 0</span>, mas aqui quem é zero é o <span class="m"><span class="v">c</span></span>: −4 não satisfaz a equação (<span class="m">48 ≠ −48</span>).</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Número de times de um campeonato</span>
+    <p class="enun">Em um campeonato de futebol de bairro disputado em turno único, cada time enfrenta cada um dos outros exatamente uma vez. A tabela completa tem 66 jogos. O número de times participantes é</p>
+    <ol class="alt"><li>8.</li><li>11.</li><li>12.</li><li>23.</li><li>33.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="frac"><i><span class="v">n</span>(<span class="v">n</span> − 1)</i><i>2</i></span> = 66 &nbsp;→&nbsp; <span class="v">n</span>² − <span class="v">n</span> − 132 = 0</p>
+      <p class="m">Δ = 1 + 528 = 529 = 23² &nbsp;→&nbsp; <span class="v">n</span> = <span class="frac"><i>1 + 23</i><i>2</i></span> = 12</p>
+      <p>A outra raiz, −11, não serve. Conferência: <span class="m">12 · 11 ÷ 2 = 66</span>.</p>
+      <p>A D para em <span class="m"><span class="rad"><i>Δ</i></span></span>. A B é o número de adversários de cada time (<span class="m"><span class="v">n</span> − 1</span>), ou o valor absoluto da raiz descartada. A A trata a equação como <span class="m"><span class="v">n</span>² = 66</span>. A E divide 66 por 2, como se cada time jogasse duas partidas.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Quando o lucro deixa de ser negativo</span>
+    <p class="enun">Uma pequena fábrica vende <span class="m"><span class="v">x</span></span> unidades de um produto por semana ao preço unitário de <span class="m">(50 − <span class="v">x</span>)</span> reais. O custo semanal de produção é <span class="m">10<span class="v">x</span> + 300</span> reais. A menor quantidade semanal vendida a partir da qual a fábrica deixa de ter prejuízo é</p>
+    <ol class="alt"><li>10.</li><li>20.</li><li>30.</li><li>40.</li><li>300.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Lucro = receita − custo:</p>
+      <p class="m"><span class="v">L</span> = <span class="v">x</span>(50 − <span class="v">x</span>) − (10<span class="v">x</span> + 300) = −<span class="v">x</span>² + 40<span class="v">x</span> − 300</p>
+      <p>Lucro zero: <span class="m"><span class="v">x</span>² − 40<span class="v">x</span> + 300 = 0</span>, com <span class="m">Δ = 1 600 − 1 200 = 400</span> e <span class="m"><span class="v">x</span> = <span class="frac"><i>40 ± 20</i><i>2</i></span></span>: 10 ou 30. Entre essas raízes o lucro é positivo; o prejuízo acaba em <strong>10 unidades</strong>.</p>
+      <p>A C é a outra raiz, em que o lucro volta a zero. A B é o ponto médio entre as raízes, onde o lucro é máximo (assunto de <em>Função quadrática</em>). A D é a soma das raízes e a E, o produto.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Equação biquadrada</span>
+    <p class="enun">Considere a equação <span class="m"><span class="v">x</span>⁴ − 5<span class="v">x</span>² − 36 = 0</span>. O número de soluções reais dessa equação é</p>
+    <ol class="alt"><li>nenhuma.</li><li>uma.</li><li>duas.</li><li>três.</li><li>quatro.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com <span class="m"><span class="v">y</span> = <span class="v">x</span>²</span>: <span class="m"><span class="v">y</span>² − 5<span class="v">y</span> − 36 = 0</span>, <span class="m">Δ = 25 + 144 = 169</span>, <span class="m"><span class="v">y</span> = <span class="frac"><i>5 ± 13</i><i>2</i></span></span>: 9 ou −4.</p>
+      <p class="m"><span class="v">x</span>² = 9 → <span class="v">x</span> = ±3 &nbsp;&nbsp;&nbsp; <span class="v">x</span>² = −4 → sem solução real</p>
+      <p>São <strong>duas</strong> soluções: 3 e −3.</p>
+      <p>A E aceita <span class="m"><span class="v">x</span>² = −4</span> como se desse ±2. A B fica só com a raiz positiva 3. A D mistura as duas coisas. A A conclui que o <span class="m"><span class="v">y</span></span> negativo invalida a equação inteira.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Pitágoras com um lado desconhecido</span>
+    <p class="enun">A diagonal de uma tela retangular mede 10 polegadas, e um dos lados da tela mede 2 polegadas a mais que o outro. A medida do lado maior, em polegadas, é</p>
+    <ol class="alt"><li>5.</li><li>6.</li><li>cerca de 7,1.</li><li>8.</li><li>cerca de 8,9.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com lados <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">x</span> + 2</span>, pelo teorema de Pitágoras:</p>
+      <p class="m"><span class="v">x</span>² + (<span class="v">x</span> + 2)² = 100 &nbsp;→&nbsp; 2<span class="v">x</span>² + 4<span class="v">x</span> − 96 = 0 &nbsp;→&nbsp; <span class="v">x</span>² + 2<span class="v">x</span> − 48 = 0</p>
+      <p>Soma −2, produto −48: raízes 6 e −8. O lado menor mede 6 e o maior, <strong>8</strong>. Conferência: <span class="m">36 + 64 = 100</span>.</p>
+      <p>A B é o lado menor. A E vem de <span class="m">(<span class="v">x</span> + 2)² = <span class="v">x</span>² + 4</span>: daí <span class="m"><span class="v">x</span>² = 48</span>, <span class="m"><span class="v">x</span> ≈ 6,9</span> e o maior ≈ 8,9. A C supõe tela quadrada (<span class="m">10 ÷ <span class="rad"><i>2</i></span> ≈ 7,1</span>). A A é a metade da diagonal.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo qualquer equação do 2º grau na forma <span class="m"><span class="v">a</span><span class="v">x</span>² + <span class="v">b</span><span class="v">x</span> + <span class="v">c</span> = 0</span> e leio os coeficientes com sinal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo incompletas com <span class="m"><span class="v">c</span> = 0</span> por fator comum, sem dividir por <span class="m"><span class="v">x</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo incompletas com <span class="m"><span class="v">b</span> = 0</span> lembrando das duas raízes simétricas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o produto nulo em equações que já vêm fatoradas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico Bhaskara sem errar o <span class="m"><span class="v">b</span>²</span>, o <span class="m">−<span class="v">b</span></span> e a divisão por <span class="m">2<span class="v">a</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico de onde vem a fórmula, completando o quadrado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido pelo sinal de <span class="m">Δ</span> quantas raízes reais existem e resolvo questões de parâmetro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho raízes inteiras por soma e produto e sei os sinais das raízes sem resolver</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto uma equação a partir das raízes e escrevo a forma fatorada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Modelo problemas de área, de lançamento e de campeonato com uma equação do 2º grau</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Descarto raízes sem sentido no contexto, sem trocar o sinal delas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo biquadradas pela troca <span class="m"><span class="v">y</span> = <span class="v">x</span>²</span> e volto para <span class="m"><span class="v">x</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro raízes substituindo na equação original</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez em que você mesmo monta a equação a partir de um texto. Depois siga para <strong>Sistemas de equações lineares</strong>, onde duas incógnitas aparecem ao mesmo tempo.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>34 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-21-equacao-2o-grau-bhaskara.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-21";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

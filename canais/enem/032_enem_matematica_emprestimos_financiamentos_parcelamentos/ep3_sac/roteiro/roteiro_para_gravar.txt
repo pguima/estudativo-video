@@ -1,0 +1,63 @@
+Você paga uma parcela de dois mil e quatrocentos reais e a sua dívida cai só dois mil. Para onde foram os outros quatrocentos? Foram o aluguel do dinheiro.
+
+Ao final desta aula, você vai montar a tabela do SAC, calcular qualquer parcela sem montar todas e somar os juros do contrato inteiro de uma vez.
+
+Antes, um lembrete rápido da série de Porcentagem. Quatro por cento de dez mil. Por cento quer dizer por cem. Atalho: tire dois zeros do valor e multiplique pela taxa. Dez mil vira cem, vezes quatro: quatrocentos.
+
+Agora, um extrato de verdade. Alguém financiou um apartamento. Chega o primeiro boleto, o segundo, um pouco mais barato, o terceiro, mais barato ainda. E a pessoa pergunta: por que a minha parcela diminui?
+
+Primeira palavra. Saldo devedor é quanto você ainda deve num certo momento. Ele começa na dívida inteira e vai caindo até zero.
+
+Segunda. Juros da parcela são o aluguel do dinheiro daquele mês. E aqui está o detalhe: você só paga aluguel do que ainda deve. Por isso, os juros são a taxa vezes o saldo do início do mês.
+
+Terceira e quarta. Amortização é a parte do pagamento que abate a dívida de verdade. E a parcela, ou prestação, é o boleto inteiro: amortização mais juros.
+
+E como elas se ligam? Por três relações que valem em qualquer financiamento. Um: juros é a taxa vezes o saldo anterior. Dois: parcela é amortização mais juros. Três: o novo saldo é o saldo anterior menos a amortização.
+
+Repare na terceira. O saldo cai pela amortização, e não pela parcela inteira. Lembra do gancho? Parcela de dois mil e quatrocentos: dois mil de amortização e quatrocentos de juros. Os quatrocentos pagaram o aluguel. Só os dois mil derrubaram a dívida.
+
+E como o banco decide quanto amortizar por mês? O jeito de hoje é o SAC: Sistema de Amortização Constante. No SAC, a dívida é fatiada em fatias iguais. A fatia é a amortização, e ela é sempre a mesma. Amortização é o valor financiado dividido pelo número de parcelas.
+
+Exemplo: dez mil reais em cinco parcelas, a quatro por cento ao mês. Dez mil dividido por cinco: fatias de dois mil. Sai uma fatia por mês, e em cinco meses a dívida acabou.
+
+Agora a tabela, linha por linha, sempre na mesma ordem. Mês um. Saldo: dez mil. Juros: quatro por cento de dez mil, quatrocentos. Amortização: dois mil. Parcela: dois mil mais quatrocentos, dois mil e quatrocentos. Novo saldo: dez mil menos dois mil, oito mil.
+
+Mês dois. Saldo: oito mil. Juros: quatro por cento de oito mil, trezentos e vinte. A amortização continua dois mil, e a parcela fica dois mil trezentos e vinte. O saldo cai para seis mil.
+
+E assim por diante. Mês três: juros de duzentos e quarenta. Mês quatro: cento e sessenta. Mês cinco: só oitenta. Somando a coluna dos juros: mil e duzentos reais. E o total pago: os dez mil da dívida mais os juros, onze mil e duzentos.
+
+Agora dá para responder ao extrato. Por que a parcela diminui? A fatia é sempre a mesma. Mas a dívida emagrece a cada mês, e o juro, o aluguel do que sobrou, emagrece junto.
+
+Olhe a coluna dos juros. Viu um padrão? Eles descem sempre o mesmo degrau: oitenta. Uma lista assim, que sobe ou desce sempre o mesmo valor, se chama progressão aritmética, ou PA. Atalho: o degrau é a taxa vezes a amortização. Quatro por cento de dois mil, oitenta. E a parcela desce o mesmo degrau.
+
+E se a questão pedir uma parcela lá no meio, sem montar a tabela toda? Atalho: o saldo no início da parcela k é o valor financiado menos k menos um fatias. Parcela quatro: já saíram três fatias. Dez mil menos seis mil: quatro mil. Juros: cento e sessenta. Parcela: dois mil cento e sessenta. Bate com a tabela.
+
+E para somar todos os juros, sem somar um por um? Junte o primeiro com o último: quatrocentos mais oitenta, quatrocentos e oitenta. O segundo com o penúltimo: trezentos e vinte mais cento e sessenta, quatrocentos e oitenta de novo. Por isso a regra: primeiro mais último, vezes quantidade, dividido por dois. Quatrocentos e oitenta vezes cinco, dividido por dois: mil e duzentos. A PA tem série própria; aqui, só a fórmula.
+
+Sua vez. Doze mil reais em quatro parcelas pelo SAC, a cinco por cento ao mês. Quanto vale a primeira parcela e quanto vale a última? Pause e tente.
+
+Vamos juntos. A fatia: doze mil dividido por quatro, três mil. Primeira: saldo de doze mil, juros de cinco por cento, seiscentos. Parcela: três mil e seiscentos. Última: só sobrou uma fatia, três mil. Juros: cento e cinquenta. Parcela: três mil cento e cinquenta. E o total de juros: seiscentos mais cento e cinquenta, vezes quatro, dividido por dois: mil e quinhentos.
+
+Vamos guardar em três frases. Um: no SAC, a amortização é fixa e os juros caem junto com o saldo. Dois: o saldo cai pela amortização, não pela parcela inteira. Três: juros do SAC somam como PA: primeiro mais último, vezes quantidade, dividido por dois.
+
+Agora, os dois erros clássicos. Primeiro: abater a parcela inteira do saldo. Dez mil menos dois mil e quatrocentos, sete mil e seiscentos. Parece certo, porque você pagou dois mil e quatrocentos. Mas os juros só pagam o aluguel. Abata só a amortização: o saldo é oito mil.
+
+Segundo: calcular os juros sobre o valor inicial em todo mês. Quatrocentos vezes cinco, dois mil de juros. Parece certo, porque a taxa é a mesma todo mês: quatro por cento. Mas a taxa incide sobre um saldo que cai. Os juros descem a escadinha, e o total é mil e duzentos, não dois mil.
+
+Agora, questões no estilo do ENEM, do nosso material. Esta, eu resolvo com você. Um empresário financiou sessenta mil reais em dez parcelas mensais pelo SAC, com juros de um por cento ao mês sobre o saldo devedor. O valor da primeira parcela é: A: seiscentos reais. B: seis mil. C: seis mil e sessenta. D: seis mil e seiscentos. E: doze mil reais.
+
+Monto só a primeira linha da tabela. A fatia: sessenta mil dividido por dez, seis mil. Os juros do primeiro mês: um por cento do saldo inteiro, sessenta mil. Seiscentos. Parcela: seis mil mais seiscentos, seis mil e seiscentos. Plausível? Um pouco mais que um décimo da dívida, em dez parcelas. Faz sentido. Letra D!
+
+E as outras? A A e a B são só metade da conta: uma tem só os juros, a outra só a amortização. A C calculou os juros sobre a fatia, um por cento de seis mil, e não sobre o saldo. E a E cobrou na primeira parcela os juros dos dez meses de uma vez.
+
+E esta é sua. No mesmo financiamento, sessenta mil em dez parcelas pelo SAC, a um por cento ao mês, o total de juros pagos ao final do contrato é: A: três mil reais. B: três mil e trezentos. C: seis mil. D: seis mil e seiscentos. E: sessenta e três mil e trezentos. Pause o vídeo e resolva.
+
+Conferindo. O primeiro juro você já tem: seiscentos. O degrau da escadinha: um por cento da fatia de seis mil, sessenta. Seiscentos, quinhentos e quarenta, quatrocentos e oitenta... E o último não é zero: no décimo mês ainda sobra uma fatia de seis mil, com juros de sessenta. Primeiro mais último, seiscentos e sessenta, vezes dez, dividido por dois: três mil e trezentos. Letra B!
+
+Plausível? Fica abaixo dos seis mil de quem cobra seiscentos todo mês. E esse é o erro da C: juros constantes, como se o saldo não caísse. A A terminou a escadinha em zero: esqueceu os sessenta do último mês. A D é a primeira parcela, confundida com juros. E a E é o total pago: a dívida mais os juros.
+
+Para fechar, as mesmas três frases. Um: no SAC, a amortização é fixa e os juros caem junto com o saldo. Dois: o saldo cai pela amortização, não pela parcela inteira. Três: juros do SAC somam como PA: primeiro mais último, vezes quantidade, dividido por dois.
+
+E se o banco quiser que todas as parcelas sejam iguais? Quem paga mais juros no total, o SAC ou esse outro sistema? Próximo episódio: Price.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você sabia que os juros não abatem a sua dívida? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

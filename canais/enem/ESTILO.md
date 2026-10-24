@@ -72,6 +72,11 @@ Na tela: `cta(..., pergunta, canal="no Estudativo")` (o cartão do meio mostra "
 
 Despedida na tela: **"Bons estudos!"** (padrão do `aula.cta`).
 
+**Flashcards (Anki), obrigatório desde 2026-10-23 em TODAS as aulas ENEM:** depois da pergunta dos comentários e antes do {bye}:
+`"{anki}E tem mais: [p=0.2] na *descrição* deste vídeo tem um link para você adquirir os *flashcards do ENEM* no *Anki,* [p=0.2] o aplicativo de revisão, [p=0.2] para revisar tudo isso em poucos minutos por dia. [p=0.5] "`
+Na tela: `cta(..., canal="no Estudativo", anki=C["NN.anki"])` (cartão verde "Flashcards do ENEM (Anki) · link na descrição do vídeo").
+No `publicacao.md`: linha "📚 Flashcards do ENEM (Anki): [LINK DOS FLASHCARDS]" logo no início da descrição. O espaço reservado fica assim até o usuário mandar o link; depois, trocar em todos os publicacao.md (grep "LINK DOS FLASHCARDS").
+
 ## Visual
 - Primeira cena: `head(... "FÍSICA ENEM", "<ASSUNTO EM CAIXA ALTA>")`.
 - Área de conteúdo padrão `CARD_R = (140, 150, 1640, 690)`.

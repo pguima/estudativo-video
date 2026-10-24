@@ -1,0 +1,61 @@
+Um material radioativo perde metade a cada trinta anos. Depois de sessenta anos, acabou? Não: ainda resta um quarto. Depois de noventa, um oitavo. Ele nunca chega a zero.
+
+Este é o terceiro episódio da série de Função exponencial. Ao final, você vai resolver qualquer questão de dobra a cada ou de meia-vida contando intervalos, sem fórmula decorada.
+
+Três lembretes rápidos. Do episódio dois: a lei Q zero vezes a elevado a t. Q zero é o valor do começo; a é o fator. Da série de Potenciação: dois elevado a seis é sessenta e quatro. E um meio elevado a quatro é um dezesseis avos.
+
+Três cenas reais. Num laboratório, uma cultura de bactérias dobra de tempos em tempos. No seu corpo, um remédio vai saindo do sangue, metade de cada vez. E em Goiânia, em mil novecentos e oitenta e sete, o césio-cento e trinta e sete de um aparelho abandonado causou o maior acidente radioativo do Brasil. As três seguem a mesma conta.
+
+Como escrever uma coisa que dobra a cada tanto tempo? Tempo de duplicação é o tempo que a quantidade leva para dobrar. Vamos chamar de T. A lei fica: Q zero vezes dois elevado a t sobre T. E esse expoente, t sobre T, é um contador: quantas vezes o relógio apitou desde o começo. Se T é trinta minutos e passaram noventa, o relógio apitou três vezes.
+
+Mil bactérias dobram a cada trinta minutos. Quantas haverá depois de três horas? Primeiro, a mesma unidade: três horas são cento e oitenta minutos. Agora, conte os apitos: cento e oitenta dividido por trinta dá seis. A cada apito, dobra: dois mil, quatro mil, oito mil, dezesseis, trinta e dois, sessenta e quatro mil. Na fórmula: mil vezes dois elevado a seis, mil vezes sessenta e quatro. Repare: o tempo passou seis intervalos, e a população ficou sessenta e quatro vezes maior.
+
+Atalho para qualquer dobra a cada. Um: converta o tempo para a unidade do intervalo. Dois: divida e conte os apitos. Três: dobre de cabeça, um apito de cada vez: dois, quatro, oito, dezesseis, trinta e dois, sessenta e quatro. Seis apitos, vezes sessenta e quatro.
+
+E o caminho contrário, o que some pela metade? Um isótopo radioativo é uma versão instável de um elemento, que vai se desfazendo sozinha. Esse desfazer se chama decaimento. Meia-vida é o tempo para restar metade da quantidade. A lei: Q zero vezes um meio elevado a t sobre T. É o que acontece com o remédio: depois de uma meia-vida, sobra metade da dose no sangue. O mesmo contador de apitos, agora dividindo por dois.
+
+O césio-cento e trinta e sete tem meia-vida de cerca de trinta anos. Quanto resta depois de noventa? Conte os apitos: noventa dividido por trinta, três meias-vidas. Agora a potência: um meio elevado a três é um oitavo. Resta um oitavo do césio inicial. Pouco, mas não é zero. E em sessenta anos? Duas meias-vidas: um quarto, como no começo da aula.
+
+Por que nunca chega a zero? Comece com cem por cento. Uma meia-vida: cinquenta. Outra: metade de cinquenta, vinte e cinco. Outra: doze e meio. Pense numa pizza. Cada meia-vida corta pela metade a pizza que sobrou, e não a pizza inteira. Metade de um pedaço ainda é um pedaço. No gráfico, a curva desce e gruda no eixo, sem tocar: é a parede invisível do episódio um.
+
+E se a questão der a fração que resta e perguntar o tempo? Resta um oitavo do césio. Um oitavo é um meio elevado a três: três meias-vidas. Cada uma dura trinta anos: três vezes trinta, noventa anos. Resta um dezesseis avos? Um meio elevado a quatro: quatro meias-vidas, cento e vinte anos.
+
+Atalho para achar quantas meias-vidas passaram. Pegue o denominador da fração. Divida por dois até chegar a um, contando os cortes: dezesseis, oito, quatro, dois, um. Quatro cortes, quatro meias-vidas. Com o oito: quatro, dois, um, três cortes. Depois, multiplique pela duração de cada uma.
+
+Um detalhe para o futuro. Os valores a cada apito, mil, dois mil, quatro mil, oito mil, formam uma progressão geométrica: uma lista em que cada número é o anterior vezes o mesmo fator. Ela tem série própria. Aqui, basta contar os apitos.
+
+Sua vez. Uma amostra de cento e vinte gramas tem meia-vida de dez anos. Quanto resta depois de trinta anos? Pause e tente.
+
+Vamos juntos. Conte os apitos: trinta dividido por dez, três meias-vidas. Corte a pizza que sobrou: cento e vinte, sessenta, trinta, quinze gramas. Conferindo: cento e vinte vezes um oitavo também dá quinze. E faz sentido: quinze gramas é bem menos que cento e vinte, e ainda não é zero.
+
+Vamos guardar em três frases. Um: primeiro conte os intervalos, depois escreva a potência. Dois: cada meia-vida corta pela metade o que existe naquele momento. Três: duplicações se multiplicam: seis dobras são vezes sessenta e quatro, não vezes doze.
+
+Agora, os três erros clássicos. Primeiro: duas meias-vidas e não sobra nada. Parece certo, porque metade mais metade dá um inteiro. Mas a segunda metade é metade do que sobrou: cem, cinquenta, vinte e cinco por cento.
+
+Segundo: dobrou seis vezes, então ficou doze vezes maior. Parece certo, porque dobrar é vezes dois, e seis vezes dois dá doze. Mas cada dobra age sobre o resultado da anterior: dois vezes dois vezes dois, seis vezes. Vezes sessenta e quatro.
+
+Terceiro: contar o começo como um apito. Nas mil bactérias, sete duplicações, e cento e vinte e oito mil. Parece certo, porque a lista dos instantes, zero, trinta, sessenta, até cento e oitenta, tem sete números. Mas o relógio só apita quando um intervalo termina: cento e oitenta dividido por trinta, seis apitos.
+
+Agora, questões no estilo do ENEM. Esta primeira, eu faço com você olhando. Uma cultura começa com quinhentas bactérias, e a população dobra a cada vinte minutos. O número de bactérias duas horas depois será: A: três mil. B: seis mil. C: dezesseis mil. D: trinta e dois mil. E: sessenta e quatro mil.
+
+É um dobra a cada. Converta: duas horas são cento e vinte minutos. Conte os apitos: cento e vinte dividido por vinte, seis. Potência: quinhentos vezes dois elevado a seis, quinhentos vezes sessenta e quatro, trinta e dois mil. Faz sentido? Cresceu muito, como uma exponencial deve crescer. Dezesseis mil seria um apito a menos; sessenta e quatro mil, um a mais. O trinta e dois mil fica no lugar certo. Letra D!
+
+E as armadilhas? A A faz quinhentos vezes seis: soma quinhentos a cada apito, como se fosse linear. A B faz quinhentos vezes dois vezes seis: soma as dobras. A C conta só cinco apitos. E a E conta sete, o começo como um apito.
+
+A próxima, a gente resolve junto. O iodo-cento e trinta e um, usado em exames da tireoide, tem meia-vida de oito dias. Um laboratório recebeu oitenta miligramas. Depois de trinta e dois dias, restam: A: dois vírgula cinco miligramas. B: cinco. C: dez. D: vinte. E: quarenta. Pause o vídeo e tente.
+
+Vamos juntos. As unidades já combinam: dias e dias. Conte os apitos: trinta e dois dividido por oito, quatro meias-vidas. Corte o que sobrou: oitenta, quarenta, vinte, dez, cinco. Na potência: oitenta vezes um dezesseis avos, cinco miligramas. Faz sentido? Cinco é bem menos que oitenta, e ainda é mais que zero. Letra B!
+
+E as outras? A A corta uma vez a mais. A C para na terceira. A D divide oitenta por quatro, o número de meias-vidas, em vez de dividir por dezesseis. E a E corta uma vez só.
+
+A última é com você. O carbono-catorze tem meia-vida de cerca de cinco mil, setecentos e trinta anos. A datação por carbono-catorze usa isso para descobrir a idade de restos de seres vivos. Um pedaço de madeira tem um dezesseis avos do carbono-catorze de uma madeira viva. A idade dele, em anos, é: A: mil, quatrocentos e trinta e dois vírgula cinco. B: onze mil, quatrocentos e sessenta. C: dezessete mil, cento e noventa. D: vinte e dois mil, novecentos e vinte. E: noventa e um mil, seiscentos e oitenta. Pause o vídeo e tente sozinho.
+
+Confira. É o caminho inverso: deram a fração, pedem o tempo. Os cortes do dezesseis: oito, quatro, dois, um. Quatro meias-vidas. Repare na ordem: primeiro os intervalos, depois a conta. Quatro vezes cinco mil, setecentos e trinta: vinte e dois mil, novecentos e vinte anos. Faz sentido? Sobrou pouquinho, então passou muito tempo. Letra D!
+
+E as armadilhas? A A divide a meia-vida por quatro, em vez de multiplicar. A B conta só duas meias-vidas. A C, três. E a E multiplica por dezesseis: trata o denominador como número de meias-vidas. Dezesseis meias-vidas deixariam uma fração minúscula do carbono.
+
+Para fechar, as mesmas três frases. Um: primeiro conte os intervalos, depois escreva a potência. Dois: cada meia-vida corta pela metade o que existe naquele momento. Três: duplicações se multiplicam: seis dobras são vezes sessenta e quatro, não vezes doze.
+
+O perfil A ganha trezentos seguidores por semana. O perfil B só dobra, mas começa com cem. Quem vence, e quando? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha ouvido falar do césio de Goiânia? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,255 @@
+Lucro e Descontos
+Matemática › Matemática Financeira › Assunto 3 de 6
+Descontos, acréscimos, lucro e prejuízo
+A matemática do balcão: quanto custou, por quanto vender, quanto descontar. A conta é porcentagem, mas a pergunta decisiva é outra: porcentagem de quê? O mesmo lucro de R$ 20,00 é 25% do custo e 20% da venda, e o ENEM coloca as duas respostas nas alternativas.
+Semana
+25 · Fase Ampliação
+Incidência
+Média
+Tempo previsto
+36 min de teoria
+Pré-requisito
+Porcentagem · Juros compostos e montante
+Destrava
+Taxas equivalentes e inflação
+Neste assunto
+01 O que o ENEM cobra aqui
+Questões de comércio estão entre as mais contextualizadas da prova: uma loja que remarca preços, um comerciante que quer certa margem, uma promoção “leve 3, pague 2”, um vendedor que paga imposto e comissão. A ferramenta é a de Porcentagem (fator de multiplicação, variações sucessivas, voltar ao valor original), que este assunto não repete; aqui ela ganha vocabulário comercial e uma armadilha própria: a base da porcentagem.
+O que costuma ser cobrado:
+Lucro e prejuízo em reais e em porcentagem, sobre o custo ou sobre a venda.
+Formar o preço de venda para obter uma margem desejada.
+Descontos e acréscimos encadeados: liquidação mais desconto no caixa, preço mais frete ou imposto.
+Promoções que precisam ser traduzidas em desconto percentual para comparar.
+Descontos por faixa, em que cada parte do valor tem uma taxa.
+O que rende mais aqui
+Antes de calcular qualquer porcentagem, escreva sobre o que ela incide: custo, preço de venda, preço de etiqueta, preço já descontado. Quase todo erro deste assunto é a conta certa feita sobre a base errada.
+02 A ferramenta: fatores
+Revisão rápida do que vem de Porcentagem, agora com nomes do comércio:
+ | Operação | Fator | Exemplo
+ | Acréscimo de p% (frete, imposto, reajuste) | 1 + p/100 | +15% → × 1,15
+ | Desconto de p% (promoção, pagamento à vista) | 1 − p/100 | −30% → × 0,70
+ | Vários em sequência | produto dos fatores | −30% e −10% → × 0,70 · 0,90 = × 0,63
+ | Voltar ao valor anterior | divida pelo fator | R$ 84,00 com 30% off → 84 ÷ 0,70 = 120
+Descontos sucessivos não se somam
+20% de desconto e mais 10% sobre o novo preço dão 0,8 · 0,9 = 0,72: desconto total de 28%, não 30%. O segundo desconto incide sobre um valor menor. E a ordem não importa: o produto de fatores é o mesmo.
+03 Custo, venda, lucro e prejuízo
+Definições
+Preço de custo (C): quanto o comerciante pagou pela mercadoria.
+Preço de venda (V): quanto o cliente paga.
+L = V − C
+Se L > 0, há lucro; se L < 0, há prejuízo de C − V.
+Em reais, não há ambiguidade. A ambiguidade aparece quando o lucro vira porcentagem, porque ele pode ser comparado com o custo ou com a venda:
+Exemplo — comprou por R$ 80,00 e vendeu por R$ 100,00
+Lucro: 100 − 80 = R$ 20,00
+Sobre o custo: (20/80) = 25% Sobre a venda: (20/100) = 20%
+Quando o enunciado não diz a base, a convenção é o custo: “lucro de 25%” significa 25% sobre o que foi pago. Mas o ENEM costuma dizer explicitamente, e é isso que você deve procurar.
+Prejuízo também tem base
+Comprou por R$ 120,00 e vendeu por R$ 90,00: prejuízo de R$ 30,00, que é 25% do custo e cerca de 33,3% da venda. Prejuízo percentual, salvo aviso, é sobre o custo.
+04 Lucro sobre o custo × lucro sobre a venda
+As duas porcentagens têm nomes no comércio. A margem sobre o custo (o “markup”) diz quanto se acrescenta ao custo. A margem sobre a venda diz que fração do preço é lucro. Para o mesmo lucro, a margem sobre a venda é sempre a menor das duas, porque a venda é maior que o custo.
+O mesmo lucro, medido de dois jeitos. Acrescentar 100% ao custo (dobrar o preço) significa que metade do preço de venda é lucro: margem de 50% sobre a venda. Quem confunde as duas bases acha que “vender pelo dobro” é ter 100% do preço como lucro, o que é impossível.
+Conversão entre as duas margens
+sobre a venda = (sobre o custo/1 + sobre o custo) sobre o custo = (sobre a venda/1 − sobre a venda)
+Com as taxas em decimal: 25% sobre o custo é 0,25 ÷ 1,25 = 0,20 sobre a venda; 20% sobre a venda é 0,20 ÷ 0,80 = 0,25 sobre o custo.
+Margem sobre a venda nunca chega a 100%
+Lucro sobre o custo pode ser 150%, 300%, qualquer valor. Lucro sobre a venda é sempre menor que 100%, porque o lucro é só uma parte do preço. Uma alternativa com “lucro de 125% sobre a venda” está errada antes de qualquer conta.
+05 Formar o preço de venda
+O comerciante sabe o custo e quer uma margem. Como calcular o preço depende da base da margem:
+ | Margem desejada | Preço de venda | Custo R$ 72,00, margem de 20%
+ | Sobre o custo | V = C · (1 + m) | 72 · 1,20 = R$ 86,40
+ | Sobre a venda | V = (C/1 − m) | 72 ÷ 0,80 = R$ 90,00
+De onde vem a segunda fórmula: se 20% do preço é lucro, os outros 80% são o custo. Então 0,80 · V = 72, e V = 90. Conferindo: o lucro é 90 − 72 = 18, e 18 ÷ 90 = 20%.
+O erro clássico: multiplicar quando é para dividir
+Para ter 20% de lucro sobre a venda, não basta somar 20% ao custo. R$ 86,40 dá lucro de 14,40, que é só cerca de 16,7% de 86,40. Margem sobre a venda pede divisão por 1 − m.
+O mesmo raciocínio vale para impostos e comissões
+Se 15% de tudo o que se vende vai para imposto e comissão, o comerciante recebe 85% do preço. Para receber R$ 510,00 líquidos, precisa vender por 510 ÷ 0,85 = 600. Custos cobrados sobre o preço de venda se tratam como margem sobre a venda.
+06 Descontos e acréscimos encadeados
+No comércio real, porcentagens se acumulam: liquidação e mais um desconto no caixa; preço com desconto e frete por cima; preço de etiqueta com imposto. Em todos os casos, multiplique os fatores.
+Exemplo — produto de R$ 200,00 com 20% de liquidação, mais 10% no Pix, mais 10% de frete
+200 · 0,80 · 0,90 = 144 → 144 · 1,10 = R$ 158,40
+Na ordem que for: 200 · 1,10 · 0,80 · 0,90 dá o mesmo 158,40.
+Desconto total equivalente
+desconto total = 1 − (fator_1 · fator_2 · …)
+Dois descontos de 10% equivalem a 19% (1 − 0,9^2). Descontos de 25% e 20% equivalem a 40% (1 − 0,75 · 0,8).
+Aumentar e depois descontar a mesma porcentagem não volta ao preço
+Este caso está em Porcentagem e é cobrado no contexto comercial: subir 20% e dar 20% de desconto termina 4% abaixo do preço original (1,2 · 0,8 = 0,96). Para voltar ao preço, o desconto tem de ser menor que o aumento: depois de +25%, basta −20% (1,25 · 0,8 = 1).
+07 Promoções e descontos por faixa
+Promoções vêm escritas de jeitos que escondem o desconto real. Para comparar, traduza cada uma em desconto percentual efetivo: quanto se paga dividido pelo preço cheio.
+ | Promoção | Paga | Desconto efetivo
+ | Leve 3, pague 2 | 2 de cada 3 | 1 − (2/3) ≈ 33,3%
+ | Leve 4, pague 3 | 3 de cada 4 | 25%
+ | Segunda unidade com 50% de desconto | 1,5 de cada 2 | 25%
+ | Segunda unidade grátis | 1 de cada 2 | 50%
+ | Segunda unidade com 30% de desconto | 1,7 de cada 2 | 15%
+“50% na segunda” não é 50% de desconto
+O desconto vale para uma unidade em duas, então o desconto sobre a compra é a metade: 25%. E as promoções por quantidade só valem para quem precisa daquela quantidade: o desconto efetivo depende de quantas unidades você compra (com 4 unidades no “leve 3, pague 2”, a quarta sai pelo preço cheio).
+Desconto por faixa
+Algumas lojas e tarifas aplicam taxas diferentes a partes do valor, como no imposto de renda. Cada faixa usa a sua taxa só sobre a parte do valor que cai nela:
+Faixas: nada até R$ 200,00, 5% entre R$ 200,00 e R$ 400,00, 10% acima de R$ 400,00. Numa compra de R$ 500,00, os 10% só atingem os últimos R$ 100,00. Aplicar a taxa da faixa mais alta sobre o valor inteiro dá R$ 50,00 de desconto, mais que o dobro do correto.
+08 Remarcações, liquidações e prejuízo
+Um mesmo produto passa por várias porcentagens: margem sobre o custo para formar a etiqueta, desconto na liquidação, às vezes nova remarcação. Para saber se ainda há lucro, leve tudo a fatores sobre o custo:
+Exemplo — etiqueta com 50% sobre o custo; liquidação de 1/3 sobre a etiqueta
+1,5 · (2/3) = 1 → vendido exatamente pelo custo: nem lucro, nem prejuízo
+Repare: um desconto de 33,3% anulou uma margem de 50%. É a assimetria de sempre, agora com dinheiro de comerciante.
+Lucro em um, prejuízo em outro
+Vender dois itens pelo mesmo preço, um com lucro de p% e outro com prejuízo de p% (sobre o custo), não empata. O item do prejuízo custou mais caro, então os p% perdidos valem mais reais que os ganhos. O resultado global é sempre prejuízo. Descubra o custo de cada um dividindo o preço pelo fator e compare os totais.
+09 Estratégia de prova
+1 · Escreva a base ao lado de cada porcentagem
+“25% do custo”, “10% do preço com desconto”, “15% da venda”. Uma palavra anotada evita a armadilha central do assunto.
+2 · Trabalhe com um preço de 100
+Quando a questão pede só porcentagens, suponha custo ou preço igual a 100. Os fatores ficam visíveis (100 → 160 → 112) e a resposta sai em porcentagem direto.
+3 · Desconfie da soma de porcentagens
+Se a sua conta somou duas porcentagens que incidem sobre bases diferentes (desconto da liquidação e desconto do caixa; lucro e imposto), ela está errada. Refaça com fatores.
+4 · Confira com o valor em reais
+No fim, calcule o lucro em reais e divida pela base pedida. Leva poucos segundos e pega trocas entre margem sobre o custo e sobre a venda.
+10 Onde isso aparece nas outras áreas
+Ciências Humanas: carga tributária, impostos embutidos no preço, inflação de alimentos e poder de compra usam exatamente a questão da base: o imposto é porcentagem do preço final ou do preço sem imposto?
+Leitura de gráficos e infográficos: variações percentuais de preços em reportagens exigem saber sobre que valor a variação foi calculada (ver Leitura de gráficos: barras, linhas, setores e histograma).
+Matemática Financeira: o desconto para pagamento à vista e o “parcelado sem juros” voltam em Empréstimos, financiamentos e parcelamentos e em Comparação de propostas e tomada de decisão, agora com juros embutidos.
+Funções definidas por partes: descontos e tarifas por faixa são funções definidas por partes, assunto de Função modular e funções definidas por partes.
+11 Os erros que mais custam pontos
+Lucro sobre a venda dividindo pelo custo → divida pela base pedidaR$ 20,00 de lucro em venda de R$ 100,00 é 20% da venda e 25% do custo.
+Margem sobre a venda multiplicando o custo → V = C ÷ (1 − m)Custo 60 com 25% sobre a venda: 80, não 75.
+Somar descontos sucessivos → multiplique os fatores30% e 10% dão 37%, não 40%.
+Voltar ao preço original somando o desconto → divida pelo fatorR$ 102,00 após 15% de desconto vinham de 102 ÷ 0,85 = 120.
+“50% na segunda” como 50% de desconto → é 25% sobre o parTraduza toda promoção em desconto efetivo antes de comparar.
+Taxa da faixa mais alta sobre o valor todo → cada faixa com a sua taxaSó a parte do valor dentro da faixa recebe aquela taxa.
+Lucro de p% e prejuízo de p% se anulam → dá prejuízoOs custos são diferentes; calcule cada um.
+Descontar imposto da margem em pontos percentuais → calcule em reaisImposto sobre a venda e lucro sobre o custo têm bases diferentes.
+Margem sobre a venda acima de 100% → impossívelO lucro é parte do preço. Elimine a alternativa.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada porcentagem do enunciado, sublinhe a base antes de calcular.
+Questão 1 · Lucro sobre o custo
+Um comerciante comprou uma mochila por R$ 120,00 e a vendeu por R$ 150,00. O lucro obtido, em relação ao preço de custo, foi de
+20%.
+25%.
+30%.
+80%.
+125%.
+Ver resolução
+Lucro em reais: 150 − 120 = 30. Sobre o custo:
+(30/120) = 0,25 = 25%
+A A divide pela venda (30 ÷ 150): é a margem sobre a venda, base que a questão não pediu. A C confunde R$ 30,00 com 30%. A D é a razão entre custo e venda, e a E, entre venda e custo: o fator 1,25 lido como porcentagem.
+Alternativa B
+Questão 2 · Formar o preço com margem sobre a venda
+Uma artesã gasta R$ 60,00 para produzir cada peça. Ela quer que o lucro corresponda a 25% do preço de venda. O preço de venda de cada peça deve ser
+R$ 45,00.
+R$ 75,00.
+R$ 80,00.
+R$ 85,00.
+R$ 240,00.
+Ver resolução
+Se 25% do preço é lucro, os outros 75% cobrem o custo:
+0,75 · V = 60 → V = 80
+Conferência: lucro de 20, e 20 ÷ 80 = 25%.
+A B soma 25% ao custo: a margem fica sobre o custo, e o lucro (15) é só 20% de 75. A D soma 25 reais ao custo. A A multiplica o custo por 0,75, e a E divide o custo por 0,25: as duas usam a fração errada do preço.
+Alternativa C
+Questão 3 · Liquidação e desconto no caixa
+Em uma liquidação, todos os produtos estão com 30% de desconto. Quem paga com Pix recebe, no caixa, mais 10% de desconto sobre o valor já reduzido. Para quem paga com Pix, o desconto total em relação ao preço original é de
+3%.
+33%.
+37%.
+40%.
+63%.
+Ver resolução
+Multiplique os fatores:
+0,70 · 0,90 = 0,63 → paga 63% do preço → desconto de 37%
+A D soma os descontos, ignorando que o segundo incide sobre um valor menor. A E é o fator (o que se paga), não o desconto. A B soma 30% com “10% de 30%”, e a A multiplica as duas taxas entre si.
+Alternativa C
+Questão 4 · Lucro em um, prejuízo em outro
+Um lojista vendeu dois aparelhos por R$ 600,00 cada. No primeiro, teve lucro de 20% sobre o preço de custo; no segundo, prejuízo de 20% sobre o preço de custo. Considerando as duas vendas, o lojista teve
+nem lucro nem prejuízo.
+lucro de R$ 50,00.
+prejuízo de R$ 24,00.
+prejuízo de R$ 48,00.
+prejuízo de R$ 50,00.
+Ver resolução
+Descubra o custo de cada aparelho dividindo o preço pelo fator:
+C_1 = (600/1,2) = 500 C_2 = (600/0,8) = 750
+Custo total 1.250, venda total 1.200 → prejuízo de R$ 50,00
+A A é a intuição de que +20% e −20% se anulam. A B tem o valor certo e o sinal trocado. A D aplica 1,2 · 0,8 = 0,96 sobre os R$ 1.200,00, como se fossem dois reajustes sucessivos do mesmo valor, e a C faz o mesmo sobre R$ 600,00. Os fatores não se encadeiam aqui: são dois produtos com custos diferentes.
+Alternativa E
+Questão 5 · Comparando promoções
+Uma pessoa precisa comprar 6 unidades de um produto vendido por R$ 12,00 a unidade. Três lojas fazem promoções diferentes: loja I, “leve 3, pague 2”; loja II, “segunda unidade com 50% de desconto”; loja III, “30% de desconto em cada unidade”. Ordenando as lojas da mais barata para a mais cara, para essa compra, obtém-se
+I, III, II.
+I, II, III.
+III, I, II.
+II, I, III.
+III, II, I.
+Ver resolução
+Preço cheio das 6 unidades: R$ 72,00.
+Loja I: paga 4 de 6 → 4 · 12 = R$ 48,00 (desconto efetivo de 33,3%).
+Loja II: 3 pares de R$ 18,00 → R$ 54,00 (desconto efetivo de 25%).
+Loja III: 72 · 0,70 = R$ 50,40 (30%).
+Ordem: I (48,00), III (50,40), II (54,00).
+A D lê “50% na segunda” como 50% sobre tudo (R$ 36,00), o que põe a loja II em primeiro. A B compara os números anunciados sem calcular (50% parece mais que 30%) e coloca a II à frente da III. A C e a E tratam “leve 3, pague 2” como um desconto menor que 30%, sem perceber que é de um terço; a E ainda inverte a II e a I.
+Alternativa A
+Questão 6 · Preço antes do desconto
+Após um desconto de 15%, uma camiseta passou a custar R$ 102,00. O preço da camiseta antes do desconto era
+R$ 86,70.
+R$ 117,00.
+R$ 117,30.
+R$ 120,00.
+R$ 680,00.
+Ver resolução
+O preço com desconto é 85% do original:
+0,85 · P = 102 → P = (102/0,85) = R$ 120,00
+A C aplica um acréscimo de 15% sobre R$ 102,00: base errada, porque os 15% eram do preço original. A B soma 15 reais. A A desconta 15% de novo. A E divide por 0,15 em vez de 0,85.
+Alternativa D
+Questão 7 · Lucro depois de imposto e comissão
+Um revendedor compra um produto por R$ 400,00 e o vende por R$ 600,00. Sobre o preço de venda, ele paga 10% de imposto e 5% de comissão ao vendedor. O lucro líquido do revendedor, em relação ao preço de custo, é de
+cerca de 18%.
+27,5%.
+35%.
+42,5%.
+50%.
+Ver resolução
+Imposto e comissão somam 15% do preço de venda: 0,15 · 600 = 90. O revendedor fica com 600 − 90 = 510.
+Lucro líquido: 510 − 400 = 110 → (110/400) = 27,5%
+A E é o lucro bruto, sem os descontos. A C subtrai 15 pontos percentuais dos 50%, misturando a base da venda com a do custo. A D aplica os 15% sobre a margem. A A divide os R$ 110,00 pelo preço de venda, mas a questão pede a base custo.
+Alternativa B
+Questão 8 · Desconto por faixa
+Uma loja de material de construção dá desconto progressivo: nenhum desconto sobre os primeiros R$ 200,00 da compra, 5% sobre a parte da compra entre R$ 200,00 e R$ 400,00 e 10% sobre a parte que exceder R$ 400,00. Um cliente fez uma compra de R$ 600,00. Ele pagou
+R$ 510,00.
+R$ 540,00.
+R$ 560,00.
+R$ 570,00.
+R$ 580,00.
+Ver resolução
+Cada parte da compra recebe a taxa da sua faixa:
+0 + 0,05 · 200 + 0,10 · 200 = 0 + 10 + 20 = 30
+600 − 30 = R$ 570,00
+A B aplica 10% sobre a compra inteira, e a A soma 5% e 10% e aplica 15% sobre tudo. A C aplica 10% a tudo o que passa de R$ 200,00, ignorando a faixa de 5%. A E desconta só a faixa mais alta e esquece a intermediária.
+Alternativa D
+Questão 9 · Margem que sobra depois da liquidação
+Uma loja compra um tênis por R$ 50,00 e o etiqueta com 60% de lucro sobre o custo. Na liquidação, dá 30% de desconto sobre o preço da etiqueta. Na venda feita durante a liquidação, o lucro da loja em relação ao custo é de
+12%.
+30%.
+42%.
+60%.
+112%.
+Ver resolução
+Em fatores sobre o custo: 1,6 · 0,7 = 1,12. Em reais: etiqueta 50 · 1,6 = 80; liquidação 80 · 0,7 = 56; lucro de 6 reais.
+(6/50) = 12%
+A B subtrai as porcentagens (60 − 30), que têm bases diferentes. A C aplica o desconto só sobre a margem (60 · 0,7). A D ignora a liquidação. A E lê o fator 1,12 como lucro de 112%.
+Alternativa A
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Calculo lucro e prejuízo em reais com L = V − C
+Expresso o lucro em porcentagem sobre o custo e sobre a venda, sem trocar as bases
+Sei que, sem aviso, lucro e prejuízo percentuais são sobre o custo
+Converto margem sobre o custo em margem sobre a venda e vice-versa
+Formo o preço de venda para margem sobre o custo (multiplicando) e sobre a venda (dividindo)
+Trato imposto e comissão sobre a venda como fração do preço que não fica com o vendedor
+Encadeio descontos e acréscimos multiplicando fatores e acho o desconto total equivalente
+Recupero o preço original dividindo pelo fator do desconto
+Traduzo promoções como “leve 3, pague 2” e “50% na segunda” em desconto efetivo
+Calculo descontos por faixa aplicando cada taxa só à sua parte do valor
+Verifico se uma remarcação seguida de liquidação ainda deixa lucro
+Explico por que lucro e prejuízo de mesma porcentagem, com mesmo preço de venda, resultam em prejuízo
+Sigo para Taxas equivalentes e inflação pronto para comparar taxas em períodos diferentes
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões de lucro, prejuízo e descontos e acerte pelo menos 14 (70%). Escolha questões que misturem duas bases diferentes (lucro sobre o custo e imposto sobre a venda, por exemplo): é onde o assunto separa quem calcula de quem lê. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 43 cartões deste assunto no arquivo ENEM-Matematica-15-descontos-acrescimos-lucro-prejuizo.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Financeira é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

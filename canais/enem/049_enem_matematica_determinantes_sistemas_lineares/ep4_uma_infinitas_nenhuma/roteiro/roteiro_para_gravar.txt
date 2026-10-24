@@ -1,0 +1,73 @@
+Um estudante achou o terno um, dois, três num sistema três por três e cravou: solução única. Errou: o sistema tem infinitas soluções. E o determinante avisava.
+
+Ao final, você vai classificar qualquer sistema pelo determinante, sem resolver, e discutir um sistema com letras no lugar dos números.
+
+Três lembretes. Da série de Sistemas: retas que se cruzam, uma solução; paralelas, nenhuma; coincidentes, infinitas. Do episódio um: dois por dois é a d menos b c. E do segundo grau: k ao quadrado igual a quatro tem duas raízes, dois e menos dois.
+
+Imagine um técnico numa máquina de misturas com dois botões, k e m. Cada posição muda as equações da mistura. Em que posições o problema tem uma resposta, várias, ou nenhuma? Ele não precisa resolver nada. Basta um número: o determinante.
+
+Quantas respostas um sistema pode ter? Uma só: possível e determinado, o esse pê dê. Infinitas: possível e indeterminado, o esse pê i. Nenhuma: impossível, o esse i. E quem decide primeiro é o dê, o determinante.
+
+Como o dê decide? Pense num semáforo. Dê diferente de zero é sinal verde: uma solução só, e pronto. Dê igual a zero é sinal amarelo: pare e olhe as equações. Paralelas e coincidentes têm a mesma inclinação, e é isso que zera o dê.
+
+Então dê zero quer dizer impossível? Olhe: x mais dois y igual a três, e dois x mais quatro y igual a seis. A segunda é o dobro da primeira, inteirinha. São gêmeas: a mesma reta, equações compatíveis. Infinitas soluções. Troque o seis por sete. O dobro daria seis, não sete. São brigadas: paralelas, equações contraditórias. Nenhuma solução.
+
+E com conta? Use o dê x do episódio três: a coluna do x trocada pelos termos independentes. Nas brigadas: três vezes quatro, menos dois vezes sete: menos dois. Em dois por dois: dê zero e dê x ou dê y diferente de zero: impossível. Nas gêmeas, os dois dão zero: compare as equações antes de concluir.
+
+Um atalho sem essas contas. Ache o fator do lado esquerdo: aqui, vezes dois. Aplique no lado direito: três vezes dois, seis. Bateu: gêmeas. Não bateu: brigadas.
+
+E quando aparece uma letra no lugar de um número? Ela é um parâmetro: um número ajustável, como os botões da máquina. Discutir o sistema é dizer, para cada valor, se ele é esse pê dê, esse pê i ou esse i. Exemplo: x mais três y igual a dois, e três x mais k y igual a m.
+
+Passo um: o dê. Um vezes k, menos três vezes três: k menos nove. Se k é diferente de nove, sinal verde: esse pê dê, seja qual for o m. O m só importa no sinal amarelo.
+
+Passo dois: k igual a nove. A segunda vira três x mais nove y igual a m: o lado esquerdo é o triplo da primeira. O triplo do dois é seis. Com m igual a seis, gêmeas: esse pê i. Com m diferente de seis, brigadas: esse i. E o resumo vai numa tabela: condição, classificação.
+
+Atalho de toda discussão. Primeiro, ache o valor que zera o dê: o resto é esse pê dê. Só depois, nesse valor, compare o lado direito. Duas perguntas, nessa ordem.
+
+E em três por três? x mais y mais z igual a três; x mais dois y mais z igual a quatro; dois x mais três y mais k z igual a sete. Por Laplace, o dê dá k menos dois. Com k diferente de dois: esse pê dê. Com k igual a dois, sinal amarelo: hora de escalonar.
+
+Escalonar é zerar a primeira incógnita nas equações de baixo, formando uma escada. Segunda menos primeira: y igual a um. Terceira menos duas vezes a primeira: y igual a um de novo. Subtraindo as duas: zero igual a zero. Uma equação redundante: não traz informação nova. Sem contradição: esse pê i.
+
+E se o sete fosse nove? A terceira menos duas vezes a primeira dá y igual a três. Com o y igual a um de cima: zero igual a dois. Contradição: esse i.
+
+E se todo o lado direito for zero? É o sistema homogêneo. Nele, x e y iguais a zero sempre funcionam: a solução trivial. A porta zero, zero está sempre aberta. Por isso, ele nunca é impossível. E tem outras soluções exatamente quando dê é zero.
+
+Dois exemplos. X mais dois y igual a zero e três x mais cinco y igual a zero: dê é cinco menos seis, menos um. Só a porta zero, zero. Dois x menos y igual a zero e seis x menos três y igual a zero: dê zero. Há outras soluções, como um, dois.
+
+Sua vez. Classifique o sistema: dois x menos y igual a um, e quatro x menos dois y igual a cinco. Pause e tente.
+
+Vamos juntos. Dê: menos quatro, menos o menos quatro: zero. Sinal amarelo. O fator é dois. O dobro do um daria dois, não cinco. Brigadas: esse i. Confirmando: dê x é menos dois mais cinco, três. Diferente de zero: impossível mesmo.
+
+Vamos guardar em três frases. Um: Dê diferente de zero: uma solução só. Dois: Dê igual a zero: gêmeas dão infinitas, brigadas dão nenhuma. Três: homogêneo nunca é impossível.
+
+Agora, os quatro erros clássicos. Primeiro: dê zero, logo impossível. Parece certo, porque zero lembra nada. Mas zero é só o sinal amarelo: as gêmeas têm dê zero e infinitas soluções.
+
+Segundo: achei uma solução, então é esse pê dê. Parece certo, porque a conta fechou. Mas nas gêmeas, um, um é solução, e três, zero também. Achar uma não prova que é a única. Quem decide é o dê.
+
+Terceiro: homogêneo pode ser impossível. Parece certo, porque todo sistema parece poder brigar. Mas o zero, zero sempre serve. A porta está sempre aberta.
+
+Quarto: k ao quadrado igual a quatro, então k igual a dois, e só. Parece certo, porque o dois vem primeiro na cabeça. Mas menos dois ao quadrado também dá quatro: dois e menos dois.
+
+Agora, questões do material de estudo. Esta, eu faço. Um técnico descreve uma mistura pelo sistema x mais dois y igual a três, e dois x mais k y igual a m, em que k e m são constantes reais ajustáveis. O sistema não tem solução exatamente quando: A: k igual a quatro e m diferente de seis. B: k igual a quatro e m igual a seis. C: k diferente de quatro, para qualquer m. D: k igual a menos quatro e m diferente de seis. E: k igual a dois e m diferente de três.
+
+Passo um: o dê. Um vezes k, menos dois vezes dois: k menos quatro. Com k diferente de quatro, sinal verde: tem solução. Passo dois: k igual a quatro. A segunda vira dois x mais quatro y igual a m: o lado esquerdo é o dobro da primeira. O dobro do três é seis. Para brigarem, m diferente de seis. Letra A!
+
+E as outras? A B é o caso das gêmeas: infinitas soluções. A C é o sinal verde: solução única. A D somou no determinante: k mais quatro igual a zero. E a E copiou os números da primeira equação, como se a segunda tivesse de ser idêntica, e esqueceu que basta a proporção.
+
+A próxima, nós fazemos. O sistema x mais k y igual a zero e k x mais quatro y igual a zero, com k real, sempre admite a solução x igual a y igual a zero. Ele admite também soluções diferentes dessa quando: A: k igual a quatro. B: k igual a dois, apenas. C: k igual a zero. D: k igual a quatro ou k igual a menos quatro. E: k igual a dois ou k igual a menos dois. Pense comigo: que tipo de sistema é esse?
+
+É homogêneo: a porta zero, zero já está aberta. Outras soluções aparecem quando dê é zero. Um vezes quatro, menos k vezes k: quatro menos k ao quadrado. Igual a zero: k ao quadrado igual a quatro. Duas raízes: dois e menos dois. Com k igual a dois, dois, menos um serve: dois mais dois vezes menos um, zero. Letra E!
+
+E as outras? A A esqueceu o quadrado: quatro menos k igual a zero. A B esqueceu a raiz negativa. A C dá dê igual a quatro, diferente de zero: só a porta zero, zero. E a D resolveu k ao quadrado igual a dezesseis.
+
+E a última é sua. É a do gancho. Ao resolver o sistema x mais y mais z igual a seis; x menos y mais dois z igual a cinco; dois x mais três z igual a onze, um estudante verificou que o terno um, dois, três satisfaz as três equações. Sobre esse sistema, é correto afirmar que ele é: A: possível e determinado, e um, dois, três é sua única solução. B: possível e indeterminado. C: impossível, porque o determinante dos coeficientes é zero. D: possível e determinado, com solução zero, zero, zero. E: impossível, porque a terceira equação repete as outras. Pause o vídeo e resolva.
+
+Conferindo. Some a primeira com a segunda: dois x mais três z igual a onze. É a terceira! Ela é redundante. E o dê, por Laplace na primeira linha: menos três, mais um, mais dois: zero. Tem solução e não é única: esse pê i. Outra: menos zero vírgula cinco, dois vírgula cinco, quatro. Letra B!
+
+E as outras? A A concluiu que é única só porque achou uma. A C confundiu dê zero com impossível, mas o um, dois, três prova que há solução. A D nem satisfaz a primeira: zero não é seis. E a E: equação repetida gera infinitas soluções, não impossibilidade.
+
+Para fechar, as mesmas três frases. Um: Dê diferente de zero: uma solução só. Dois: Dê igual a zero: gêmeas dão infinitas, brigadas dão nenhuma. Três: homogêneo nunca é impossível.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e treinamos com questões inéditas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você também achava que dê zero era impossível? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

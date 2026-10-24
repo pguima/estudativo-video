@@ -1,0 +1,55 @@
+Uma mesada de um real que dobra toda semana. Em dez semanas, mil e vinte e quatro reais. Em vinte semanas, mais de um milhão: dois elevado a vinte é um milhão, quarenta e oito mil, quinhentos e setenta e seis. Somar nunca faria isso. Multiplicar faz.
+
+Este é o primeiro episódio da série de Função exponencial. Ao final, você vai reconhecer uma função exponencial, saber por que a base tem restrições e desenhar o gráfico dela sem decorar nada.
+
+Dois lembretes rápidos, da série de Potenciação. Qualquer base diferente de zero, elevada a zero, dá um. E expoente negativo inverte a base: dois elevado a menos dois é um sobre dois ao quadrado, um quarto. E, da série de Conceito de Função: função é uma máquina. Entra x, sai y.
+
+Repare em três coisas do dia a dia. A mesada que dobra: um, dois, quatro, oito. Um boato no grupo de mensagens, em que cada pessoa conta para três: um, três, nove, vinte e sete. E um café esfriando na mesa: rápido no começo, cada vez mais devagar. Nas três, cada passo multiplica pelo mesmo número.
+
+Qual é a diferença entre somar e multiplicar a cada passo? A função afim é uma escada de degraus iguais: soma dois, soma dois, soma dois. Na exponencial, cada degrau é o anterior multiplicado pelo mesmo número. Esse número se chama fator. Com fator dois, em poucos passos a segunda escada sai da tela.
+
+Então, o que é uma função exponencial? É toda função f de x igual a a elevado a x. O a é a base: o número que se multiplica. O x é o expoente: quantas vezes. O detalhe que muda tudo: a variável está no expoente. Em x ao quadrado, ela está na base. Isso não é exponencial.
+
+E por que a base tem regras? Ela precisa ser positiva e diferente de um. Com base um, um elevado a qualquer coisa dá um. A função ficaria parada, constante. Com base negativa, apareceriam contas como menos quatro elevado a um meio: a raiz de menos quatro, que não é um número real. A função ficaria cheia de buracos.
+
+Vamos montar uma tabela. Dois elevado a x, de menos dois até três. No zero, um. Para a direita, vezes dois: dois, quatro, oito. Para a esquerda, dividido por dois: um meio, um quarto.
+
+E com base um meio? No zero, de novo um. Para a direita, vezes um meio: um meio, um quarto, um oitavo. Para a esquerda, o contrário: dois, quatro. Repare: é a mesma lista, de trás para a frente.
+
+Atalho para montar qualquer tabela. Comece pelo um, no x igual a zero. Andou uma coluna para a direita? Multiplique pela base. Voltou uma coluna? Divida pela base. Sem calcular nenhuma potência.
+
+Apareceu algum número negativo nas tabelas? Nenhum. Nem o zero. Multiplicar ou dividir um número positivo por outro positivo nunca dá negativo. A imagem é o conjunto dos valores que saem da função. Aqui, todos os números maiores que zero.
+
+E como fica o desenho? Marque os pontos da tabela de dois elevado a x. A curva sobe cada vez mais rápido. É crescente: x aumenta, y aumenta. Para a esquerda, ela vai grudando no eixo x, sem tocar.
+
+E a base um meio? Os mesmos números, ao contrário: a curva desce. É decrescente. As duas passam pelo ponto zero, um, porque qualquer base elevada a zero dá um. E uma é o espelho da outra: um meio elevado a x é dois elevado a menos x.
+
+Atalho para desenhar sem tabela grande. Marque três pontos: x igual a menos um, zero e um. Base maior que um: o da direita fica mais alto, a curva sobe. Base entre zero e um: fica mais baixo, a curva desce. Depois, ligue com uma curva suave.
+
+A curva encosta no eixo x? Nunca. O eixo x é uma assíntota horizontal: uma reta da qual a curva chega cada vez mais perto, sem nunca tocar. Pense numa parede invisível. Um meio, um quarto, um oitavo, um dezesseis avos: encolhe sempre, e nunca vira zero.
+
+E quando vêm outros números junto? O número que multiplica a potência se chama coeficiente. Em cinco vezes dois elevado a x, a curva corta o eixo vertical no cinco, e não no um. E um número somado levanta a parede. Uma sopa numa cozinha a vinte e dois graus: T igual a vinte e dois mais setenta vezes zero vírgula cinco elevado a t. A potência vai sumindo, e a sopa se aproxima de vinte e dois graus, a temperatura da cozinha. A assíntota subiu para vinte e dois.
+
+Atalho para achar essa parede. Base entre zero e um, e o tempo crescendo? Apague a potência. Ela vira quase zero. O número somado sozinho é a assíntota.
+
+Sua vez. Complete a tabela de três elevado a x, para x de menos dois até dois. Use o atalho: comece pelo um. Pause e tente.
+
+Vamos juntos. No zero, um. Para a direita, vezes três: três e nove. Para a esquerda, dividido por três: um terço e um nono. Nenhum negativo. E o gráfico sobe, porque a base é maior que um.
+
+Vamos guardar em três frases. Um: na exponencial, cada passo multiplica pelo mesmo fator. Dois: base maior que um sobe; base entre zero e um desce; todas passam por zero, um. Três: a exponencial nunca chega a zero: ela só se aproxima da assíntota.
+
+Agora, os dois erros clássicos. Primeiro: dizer que dois elevado a menos três é menos oito. Parece certo, porque o sinal de menos está ali, e a gente leva ele para o resultado. Mas expoente negativo é um vire de cabeça para baixo, não um sinal de menos: um oitavo, positivo.
+
+Segundo: achar que a curva encosta no eixo x em algum momento. Parece certo, porque no desenho ela fica tão colada que parece tocar. Mas a metade de um número positivo ainda é positiva. A parede é invisível, e nunca é tocada.
+
+Agora, uma questão no estilo do ENEM. Esta, a gente resolve junto. Uma xícara de café é deixada sobre a mesa de uma sala climatizada. A temperatura dela, em graus Celsius, t minutos depois, é T de t igual a vinte e cinco, mais sessenta e cinco vezes zero vírgula oito elevado a t. Com o tempo, a temperatura do café se aproxima de: A: vinte e cinco graus. B: quarenta. C: sessenta e cinco. D: setenta e sete. E: noventa. Pause o vídeo e tente.
+
+Vamos juntos. A base é zero vírgula oito, entre zero e um. Então a potência encolhe: zero vírgula oito, zero vírgula sessenta e quatro, zero vírgula quinhentos e doze. A parcela sessenta e cinco vezes a potência desaparece aos poucos. Sobra vinte e cinco, a temperatura da sala. É a assíntota. Letra A!
+
+E as armadilhas? A B subtrai os dois números do modelo. A C é o sessenta e cinco, a diferença inicial entre o café e a sala. A D é a temperatura depois de um minuto: vinte e cinco mais cinquenta e dois. E a E é a temperatura inicial: vinte e cinco mais sessenta e cinco.
+
+Para fechar, as mesmas três frases. Um: na exponencial, cada passo multiplica pelo mesmo fator. Dois: base maior que um sobe; base entre zero e um desce; todas passam por zero, um. Três: a exponencial nunca chega a zero: ela só se aproxima da assíntota.
+
+Um carro de sessenta mil reais perde quinze por cento do valor por ano. Para achar o preço do ano seguinte, você multiplica por zero vírgula quinze ou por zero vírgula oitenta e cinco? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: onde mais você já viu alguma coisa crescer multiplicando? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

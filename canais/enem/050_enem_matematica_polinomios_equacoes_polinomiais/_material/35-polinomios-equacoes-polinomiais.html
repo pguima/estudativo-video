@@ -1,0 +1,1022 @@
+<title>Polinômios</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 17 de 18</p>
+    <h1>Polinômios e equações polinomiais</h1>
+    <p class="deck">Volume de caixa, lucro de uma fábrica, trajetória de um objeto: muitos modelos são polinômios. Este assunto ensina a operar e dividir polinômios, a achar raízes sem fórmula pronta e a ler no gráfico o que cada raiz diz.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Gráfico do polinômio P de x igual a x mais 2, vezes x menos 1, vezes x menos 3: uma curva de grau 3 que corta o eixo horizontal em menos 2, 1 e 3, suas três raízes reais">
+  <line x1="22" y1="100" x2="280" y2="100" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <line x1="127.2" y1="14" x2="127.2" y2="186" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <path d="M30.0,167.7 L32.0,158.7 L34.0,150.0 L36.0,141.8 L38.0,133.9 L40.0,126.3 L42.0,119.1 L44.0,112.3 L46.0,105.7 L48.0,99.6 L50.0,93.7 L52.0,88.1 L54.0,82.9 L56.0,78.0 L58.0,73.4 L60.0,69.0 L62.0,65.0 L64.0,61.2 L66.0,57.7 L68.0,54.5 L70.0,51.6 L72.0,48.9 L74.0,46.4 L76.0,44.2 L78.0,42.3 L80.0,40.5 L82.0,39.0 L84.0,37.7 L86.0,36.7 L88.0,35.8 L90.0,35.2 L92.0,34.7 L94.0,34.4 L96.0,34.3 L98.0,34.4 L100.0,34.7 L102.0,35.1 L104.0,35.7 L106.0,36.4 L108.0,37.3 L110.0,38.3 L112.0,39.5 L114.0,40.8 L116.0,42.2 L118.0,43.7 L120.0,45.3 L122.0,47.1 L124.0,48.9 L126.0,50.8 L128.0,52.8 L130.0,54.9 L132.0,57.1 L134.0,59.3 L136.0,61.6 L138.0,63.9 L140.0,66.3 L142.0,68.7 L144.0,71.2 L146.0,73.7 L148.0,76.2 L150.0,78.8 L152.0,81.3 L154.0,83.9 L156.0,86.4 L158.0,89.0 L160.0,91.5 L162.0,94.0 L164.0,96.5 L166.0,99.0 L168.0,101.4 L170.0,103.7 L172.0,106.1 L174.0,108.3 L176.0,110.5 L178.0,112.7 L180.0,114.7 L182.0,116.7 L184.0,118.6 L186.0,120.4 L188.0,122.1 L190.0,123.7 L192.0,125.2 L194.0,126.5 L196.0,127.8 L198.0,128.9 L200.0,129.9 L202.0,130.7 L204.0,131.4 L206.0,131.9 L208.0,132.3 L210.0,132.4 L212.0,132.5 L214.0,132.3 L216.0,132.0 L218.0,131.4 L220.0,130.7 L222.0,129.8 L224.0,128.6 L226.0,127.3 L228.0,125.7 L230.0,123.9 L232.0,121.8 L234.0,119.5 L236.0,117.0 L238.0,114.2 L240.0,111.2 L242.0,107.8 L244.0,104.3 L246.0,100.4 L248.0,96.3 L250.0,91.8 L252.0,87.1 L254.0,82.0 L256.0,76.7 L258.0,71.0 L260.0,65.1 L262.0,58.7 L264.0,52.1 L266.0,45.1 L268.0,37.8 L270.0,30.1" style="fill:none;stroke:var(--c1);stroke-width:2.4"/>
+  <circle cx="47.9" cy="100" r="4.5" style="fill:var(--c4)"/>
+  <circle cx="166.9" cy="100" r="4.5" style="fill:var(--c4)"/>
+  <circle cx="246.2" cy="100" r="4.5" style="fill:var(--c4)"/>
+  <text x="42" y="90" text-anchor="end" class="svg-num" style="fill:var(--c4)">−2</text>
+  <text x="174" y="90" class="svg-num" style="fill:var(--c4)">1</text>
+  <text x="240" y="90" text-anchor="end" class="svg-num" style="fill:var(--c4)">3</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-num" style="fill:var(--ink)">P(x) = (x + 2)(x − 1)(x − 3)</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>9 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Expressões algébricas e produtos notáveis · Equação do 2º grau e fórmula de Bhaskara</dd></div>
+      <div><dt>Destrava</dt><dd>Números complexos, gráficos de funções polinomiais e modelagem de volumes</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A teoria completa de polinômios é mais cobrada nos vestibulares tradicionais do que no ENEM. No ENEM, o polinômio aparece como <strong>modelo</strong>, e o que se pede é usar a ferramenta certa:</p>
+<ul>
+  <li><strong>Modelar:</strong> escrever o volume de uma caixa feita de uma folha recortada, a área de uma figura com medida variável, o lucro em função da quantidade.</li>
+  <li><strong>Valor numérico e raízes:</strong> saber que “o lucro se anula” ou “a altura volta a zero” significa achar uma raiz, e que uma raiz conhecida reduz o grau da equação.</li>
+  <li><strong>Ler gráficos:</strong> onde a curva corta ou toca o eixo, quantas raízes reais existem, qual lei corresponde ao gráfico.</li>
+  <li><strong>Relações entre raízes e coeficientes:</strong> obter soma ou produto das raízes sem resolver a equação, por exemplo o volume de um bloco cujas arestas são raízes de uma equação.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três ideias resolvem a maior parte das questões: <strong><span class="m"><span class="v">a</span></span> é raiz se, e só se, <span class="m"><span class="v">P</span>(<span class="v">a</span>) = 0</span></strong>; o <strong>resto da divisão por <span class="m"><span class="v">x</span> − <span class="v">a</span></span> é <span class="m"><span class="v">P</span>(<span class="v">a</span>)</span></strong>; e, conhecida uma raiz, <strong>Briot-Ruffini</strong> baixa o grau até chegar numa equação do 2º grau.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Polinômio, grau e valor numérico</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Um <strong>polinômio</strong> em <span class="m"><span class="v">x</span></span> é uma expressão da forma <span class="m"><span class="v">P</span>(<span class="v">x</span>) = <span class="v">a</span><sub><span class="v">n</span></sub><span class="v">x</span><sup><span class="v">n</span></sup> + … + <span class="v">a</span><sub>1</sub><span class="v">x</span> + <span class="v">a</span><sub>0</sub></span>, com expoentes naturais. Os números <span class="m"><span class="v">a</span><sub><span class="v">k</span></sub></span> são os <strong>coeficientes</strong>; <span class="m"><span class="v">a</span><sub>0</sub></span> é o <strong>termo independente</strong>. O <strong>grau</strong> é o maior expoente com coeficiente diferente de zero.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Expressão</th><th>É polinômio?</th><th>Grau</th></tr></thead>
+  <tbody>
+    <tr><td class="m">4<span class="v">x</span>³ − 78<span class="v">x</span>² + 360<span class="v">x</span></td><td>sim</td><td>3</td></tr>
+    <tr><td class="m">(<span class="v">m</span> − 2)<span class="v">x</span>² + 5<span class="v">x</span> − 1</td><td>sim</td><td>2 se <span class="m"><span class="v">m</span> ≠ 2</span>; 1 se <span class="m"><span class="v">m</span> = 2</span></td></tr>
+    <tr><td class="m"><span class="v">x</span>² + <span class="frac"><i>1</i><i><span class="v">x</span></i></span></td><td>não (expoente −1)</td><td>—</td></tr>
+    <tr><td class="m"><span class="rad"><i><span class="v">x</span></i></span> + 3</td><td>não (expoente ½)</td><td>—</td></tr>
+  </tbody>
+</table>
+</div>
+<p>O <strong>valor numérico</strong> <span class="m"><span class="v">P</span>(<span class="v">a</span>)</span> é o resultado de trocar <span class="m"><span class="v">x</span></span> por <span class="m"><span class="v">a</span></span>. Se <span class="m"><span class="v">P</span>(<span class="v">a</span>) = 0</span>, o número <span class="m"><span class="v">a</span></span> é uma <strong>raiz</strong> de <span class="m"><span class="v">P</span></span>.</p>
+<div class="eq">
+  <span class="lbl">Dois valores que saem de graça</span>
+  <p class="m"><span class="v">P</span>(0) = termo independente &nbsp;&nbsp;·&nbsp;&nbsp; <span class="v">P</span>(1) = soma de todos os coeficientes</p>
+  <p>Em <span class="m"><span class="v">P</span>(<span class="v">x</span>) = 2<span class="v">x</span>³ − 5<span class="v">x</span>² + <span class="v">x</span> + 7</span>: <span class="m"><span class="v">P</span>(0) = 7</span> e <span class="m"><span class="v">P</span>(1) = 2 − 5 + 1 + 7 = 5</span>. O truque do <span class="m"><span class="v">P</span>(1)</span> resolve questões como “soma dos coeficientes de <span class="m">(3<span class="v">x</span> − 2)<sup>10</sup></span>”: basta <span class="m">(3 − 2)<sup>10</sup> = 1</span>.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Operações e identidade de polinômios</h2>
+<p>Soma, subtração e multiplicação seguem as regras de <strong>Expressões algébricas e produtos notáveis</strong>: juntar termos semelhantes e aplicar a distributiva. Sobre o grau:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Operação</th><th>Grau do resultado</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>produto</td><td>soma dos graus</td><td>grau 3 vezes grau 2 dá grau 5</td></tr>
+    <tr><td>soma</td><td>no máximo o maior dos graus</td><td><span class="m">(<span class="v">x</span>² + 1) + (−<span class="v">x</span>² + 3<span class="v">x</span>) = 3<span class="v">x</span> + 1</span>: o grau caiu</td></tr>
+    <tr><td>potência <span class="m"><span class="v">P</span><sup><span class="v">k</span></sup></span></td><td><span class="m"><span class="v">k</span></span> vezes o grau de <span class="m"><span class="v">P</span></span></td><td><span class="m">(<span class="v">x</span>² − 3<span class="v">x</span> + 3)<sup>20</sup></span> tem grau 40</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Polinômios idênticos</span>
+  <p>Dois polinômios são <strong>idênticos</strong> (iguais para todo <span class="m"><span class="v">x</span></span>) quando têm <strong>os mesmos coeficientes</strong>, termo a termo. Assim, <span class="m"><span class="v">a</span><span class="v">x</span>² + (<span class="v">b</span> − 1)<span class="v">x</span> + 3 ≡ 2<span class="v">x</span>² + 5<span class="v">x</span> + <span class="v">c</span></span> obriga <span class="m"><span class="v">a</span> = 2</span>, <span class="m"><span class="v">b</span> = 6</span> e <span class="m"><span class="v">c</span> = 3</span>. O <strong>polinômio nulo</strong> tem todos os coeficientes iguais a zero.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Divisão de polinômios e o dispositivo de Briot-Ruffini</h2>
+<div class="eq">
+  <span class="lbl">A divisão sempre obedece a esta relação</span>
+  <p class="m"><span class="v">P</span>(<span class="v">x</span>) = <span class="v">D</span>(<span class="v">x</span>) · <span class="v">Q</span>(<span class="v">x</span>) + <span class="v">R</span>(<span class="v">x</span>), &nbsp;com grau <span class="v">R</span> &lt; grau <span class="v">D</span> (ou <span class="v">R</span> = 0)</p>
+  <p>O grau do quociente é <span class="m">grau <span class="v">P</span> − grau <span class="v">D</span></span>. Dividindo por um divisor de grau 1, o resto é um <strong>número</strong>; por um de grau 2, o resto tem no máximo grau 1, isto é, a forma <span class="m"><span class="v">ax</span> + <span class="v">b</span></span>.</p>
+</div>
+<p>Para dividir por <span class="m"><span class="v">x</span> − <span class="v">a</span></span>, o <strong>dispositivo de Briot-Ruffini</strong> substitui a divisão longa. Escreva <span class="m"><span class="v">a</span></span> à esquerda e os coeficientes de <span class="m"><span class="v">P</span></span> (todos, inclusive os zeros dos termos que faltam) à direita. Baixe o primeiro; depois, repetidamente, <strong>multiplique o último resultado por <span class="v">a</span> e some ao próximo coeficiente</strong>.</p>
+<figure class="fig">
+<svg viewBox="0 20 460 202" role="img" aria-label="Dispositivo de Briot-Ruffini dividindo 2x ao cubo menos 3x ao quadrado menos 5x mais 6 por x menos 2. À esquerda, a raiz 2; na linha de cima, os coeficientes 2, menos 3, menos 5 e 6. Na linha de baixo: 2 desce; 2 vezes 2 menos 3 dá 1; 2 vezes 1 menos 5 dá menos 3; 2 vezes menos 3 mais 6 dá 0. Quociente 2x ao quadrado mais x menos 3 e resto zero">
+  <defs>
+    <marker id="ar35" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c5)"/></marker>
+  </defs>
+  <line x1="78" y1="34" x2="78" y2="124" style="stroke:var(--ink-2);stroke-width:1.5"/>
+  <line x1="78" y1="86" x2="420" y2="86" style="stroke:var(--ink-2);stroke-width:1.5"/>
+  <text x="48" y="70" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:17px;font-weight:700">2</text>
+  <text x="48" y="112" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">raiz</text>
+  <text x="120" y="70" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:16px">2</text>
+  <text x="205" y="70" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:16px">−3</text>
+  <text x="290" y="70" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:16px">−5</text>
+  <text x="375" y="70" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:16px">6</text>
+  <text x="120" y="114" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:16px;font-weight:700">2</text>
+  <text x="205" y="114" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:16px;font-weight:700">1</text>
+  <text x="290" y="114" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:16px;font-weight:700">−3</text>
+  <text x="375" y="114" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:16px;font-weight:700">0</text>
+  <line x1="134" y1="104" x2="186" y2="76" style="stroke:var(--c5);stroke-width:1.4" marker-end="url(#ar35)"/>
+  <line x1="219" y1="104" x2="271" y2="76" style="stroke:var(--c5);stroke-width:1.4" marker-end="url(#ar35)"/>
+  <line x1="306" y1="104" x2="358" y2="76" style="stroke:var(--c5);stroke-width:1.4" marker-end="url(#ar35)"/>
+  <text x="120" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">desce</text>
+  <text x="205" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2·2 − 3</text>
+  <text x="290" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2·1 − 5</text>
+  <text x="375" y="146" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2·(−3) + 6</text>
+  <text x="375" y="166" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">resto</text>
+  <text x="205" y="166" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">quociente</text>
+  <text x="230" y="204" text-anchor="middle" class="svg-num" style="fill:var(--ink)">Q(x) = 2x² + x − 3 · R = 0</text>
+</svg>
+<figcaption><b>Briot-Ruffini: multiplica pela raiz e soma.</b> Dividindo <span class="m">2<span class="v">x</span>³ − 3<span class="v">x</span>² − 5<span class="v">x</span> + 6</span> por <span class="m"><span class="v">x</span> − 2</span>, a última linha dá os coeficientes do quociente (um grau a menos) e, no fim, o resto. Resto zero significa que 2 é raiz.</figcaption>
+</figure>
+<div class="box warn">
+  <span class="tag">Não pule o coeficiente zero</span>
+  <p>Em <span class="m"><span class="v">x</span>³ − 4<span class="v">x</span> + 1</span> falta o termo em <span class="m"><span class="v">x</span>²</span>: os coeficientes são <span class="m">1, 0, −4, 1</span>. Esquecer o zero desloca toda a conta. E o número à esquerda é a <strong>raiz</strong> do divisor: para <span class="m"><span class="v">x</span> + 3</span>, use −3.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Teorema do resto e de D’Alembert</h2>
+<div class="box def">
+  <span class="tag">Teorema do resto</span>
+  <p>O resto da divisão de <span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> por <span class="m"><span class="v">x</span> − <span class="v">a</span></span> é <span class="m"><span class="v">P</span>(<span class="v">a</span>)</span>. Motivo: em <span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> − <span class="v">a</span>)<span class="v">Q</span>(<span class="v">x</span>) + <span class="v">R</span></span>, trocar <span class="m"><span class="v">x</span></span> por <span class="m"><span class="v">a</span></span> zera o primeiro termo.</p>
+</div>
+<div class="box def">
+  <span class="tag">Teorema de D’Alembert</span>
+  <p><span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> é divisível por <span class="m"><span class="v">x</span> − <span class="v">a</span></span> se, e somente se, <span class="m"><span class="v">P</span>(<span class="v">a</span>) = 0</span>, isto é, se <span class="m"><span class="v">a</span></span> é raiz.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Dois usos típicos</span>
+  <p>Resto de <span class="m">2<span class="v">x</span>³ − <span class="v">x</span> + 5</span> por <span class="m"><span class="v">x</span> + 1</span>: <span class="m"><span class="v">P</span>(−1) = −2 + 1 + 5 = 4</span>, sem dividir nada.</p>
+  <p>Valor de <span class="m"><span class="v">k</span></span> para <span class="m"><span class="v">x</span>³ + <span class="v">k</span><span class="v">x</span> − 4</span> ser divisível por <span class="m"><span class="v">x</span> − 2</span>: <span class="m">8 + 2<span class="v">k</span> − 4 = 0</span>, logo <span class="m"><span class="v">k</span> = −2</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Resto da divisão por um polinômio de grau 2</span>
+  <p>Se o divisor é <span class="m">(<span class="v">x</span> − <span class="v">a</span>)(<span class="v">x</span> − <span class="v">b</span>)</span>, escreva o resto como <span class="m"><span class="v">R</span>(<span class="v">x</span>) = <span class="v">mx</span> + <span class="v">n</span></span>. Como <span class="m"><span class="v">P</span>(<span class="v">a</span>) = <span class="v">R</span>(<span class="v">a</span>)</span> e <span class="m"><span class="v">P</span>(<span class="v">b</span>) = <span class="v">R</span>(<span class="v">b</span>)</span>, os restos das divisões por <span class="m"><span class="v">x</span> − <span class="v">a</span></span> e por <span class="m"><span class="v">x</span> − <span class="v">b</span></span> dão um sistema 2 × 2 em <span class="m"><span class="v">m</span></span> e <span class="m"><span class="v">n</span></span>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Equações polinomiais e forma fatorada</h2>
+<div class="box def">
+  <span class="tag">Teorema fundamental da álgebra (versão de prova)</span>
+  <p>Toda equação polinomial de grau <span class="m"><span class="v">n</span> ≥ 1</span> tem exatamente <span class="m"><span class="v">n</span></span> raízes complexas, contadas com multiplicidade. Algumas podem ser reais, outras não reais.</p>
+</div>
+<p>Com as raízes <span class="m"><span class="v">r</span><sub>1</sub>, …, <span class="v">r</span><sub><span class="v">n</span></sub></span> e o coeficiente dominante <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub></span>, o polinômio se escreve na <strong>forma fatorada</strong>:</p>
+<div class="eq">
+  <span class="lbl">Forma fatorada</span>
+  <p class="m"><span class="v">P</span>(<span class="v">x</span>) = <span class="v">a</span><sub><span class="v">n</span></sub>(<span class="v">x</span> − <span class="v">r</span><sub>1</sub>)(<span class="v">x</span> − <span class="v">r</span><sub>2</sub>)…(<span class="v">x</span> − <span class="v">r</span><sub><span class="v">n</span></sub>)</p>
+  <p>Exemplo do cabeçalho: raízes −2, 1 e 3 e <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = 1</span> dão <span class="m">(<span class="v">x</span> + 2)(<span class="v">x</span> − 1)(<span class="v">x</span> − 3) = <span class="v">x</span>³ − 2<span class="v">x</span>² − 5<span class="v">x</span> + 6</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Raiz e fator têm sinais opostos</span>
+  <p>A raiz −2 vira o fator <span class="m">(<span class="v">x</span> + 2)</span>; a raiz 3 vira <span class="m">(<span class="v">x</span> − 3)</span>. E não esqueça o <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub></span>: as raízes de <span class="m">2<span class="v">x</span>² − 2</span> são ±1, mas o polinômio é <span class="m">2(<span class="v">x</span> − 1)(<span class="v">x</span> + 1)</span>, não <span class="m">(<span class="v">x</span> − 1)(<span class="v">x</span> + 1)</span>.</p>
+</div>
+<p>Uma raiz que aparece <span class="m"><span class="v">m</span></span> vezes na forma fatorada tem <strong>multiplicidade <span class="v">m</span></strong>. Em <span class="m">(<span class="v">x</span> + 1)²(<span class="v">x</span> − 3)</span>, −1 é raiz dupla e 3 é raiz simples: são três raízes contadas com multiplicidade, mas só dois valores distintos.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Caçando raízes: candidatas racionais e redução de grau</h2>
+<p>Não há fórmula prática para grau 3 ou mais. A estratégia é achar uma raiz, dividir e repetir até chegar no 2º grau.</p>
+<div class="box def">
+  <span class="tag">Teorema das raízes racionais</span>
+  <p>Se <span class="m"><span class="frac"><i><span class="v">p</span></i><i><span class="v">q</span></i></span></span> (fração irredutível) é raiz de um polinômio com coeficientes inteiros, então <span class="m"><span class="v">p</span></span> divide o <strong>termo independente</strong> e <span class="m"><span class="v">q</span></span> divide o <strong>coeficiente dominante</strong>. Com coeficiente dominante 1, as raízes racionais só podem ser inteiros divisores do termo independente.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo com o polinômio do cabeçalho</span>
+  <p><strong>1. Candidatas:</strong> divisores de 6: <span class="m">±1, ±2, ±3, ±6</span>.</p>
+  <p><strong>2. Teste:</strong> <span class="m"><span class="v">P</span>(1) = 1 − 2 − 5 + 6 = 0</span>. Achou: 1 é raiz.</p>
+  <p><strong>3. Reduza:</strong> Briot-Ruffini com 1 nos coeficientes <span class="m">1, −2, −5, 6</span> dá <span class="m">1, −1, −6</span> e resto 0. Quociente <span class="m"><span class="v">x</span>² − <span class="v">x</span> − 6</span>.</p>
+  <p><strong>4. Termine no 2º grau:</strong> <span class="m"><span class="v">x</span>² − <span class="v">x</span> − 6 = 0</span> tem raízes 3 e −2. Conjunto solução: <span class="m">{−2, 1, 3}</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Atalhos de teste</span>
+  <p>Teste 1 primeiro: <span class="m"><span class="v">P</span>(1)</span> é só a soma dos coeficientes. Depois −1: <span class="m"><span class="v">P</span>(−1)</span> troca o sinal dos termos de grau ímpar. Se a soma dos coeficientes é zero, 1 é raiz na hora.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Relações de Girard: soma e produto sem resolver</h2>
+<p>As raízes e os coeficientes estão ligados. Para o 2º grau você já conhece soma <span class="m">−<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></span> e produto <span class="m"><span class="frac"><i><span class="v">c</span></i><i><span class="v">a</span></i></span></span>. Para o 3º grau:</p>
+<div class="eq">
+  <span class="lbl">Grau 3: coeficientes a, b, c, d e três raízes</span>
+  <p>Para <span class="m"><span class="v">a</span><span class="v">x</span>³ + <span class="v">b</span><span class="v">x</span>² + <span class="v">c</span><span class="v">x</span> + <span class="v">d</span> = 0</span>, com raízes <span class="m"><span class="v">r</span><sub>1</sub>, <span class="v">r</span><sub>2</sub>, <span class="v">r</span><sub>3</sub></span>:</p>
+  <p class="m"><span class="v">r</span><sub>1</sub> + <span class="v">r</span><sub>2</sub> + <span class="v">r</span><sub>3</sub> = −<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span> &nbsp;&nbsp;&nbsp; <span class="v">r</span><sub>1</sub><span class="v">r</span><sub>2</sub> + <span class="v">r</span><sub>1</sub><span class="v">r</span><sub>3</sub> + <span class="v">r</span><sub>2</sub><span class="v">r</span><sub>3</sub> = <span class="frac"><i><span class="v">c</span></i><i><span class="v">a</span></i></span> &nbsp;&nbsp;&nbsp; <span class="v">r</span><sub>1</sub><span class="v">r</span><sub>2</sub><span class="v">r</span><sub>3</sub> = −<span class="frac"><i><span class="v">d</span></i><i><span class="v">a</span></i></span></p>
+  <p>Os sinais alternam: menos, mais, menos. Conferência com <span class="m"><span class="v">x</span>³ − 2<span class="v">x</span>² − 5<span class="v">x</span> + 6</span>, de raízes −2, 1 e 3: soma <span class="m">2 = −<span class="frac"><i>−2</i><i>1</i></span></span>; produtos dois a dois <span class="m">−2 − 6 + 3 = −5</span>; produto <span class="m">−6 = −<span class="frac"><i>6</i><i>1</i></span></span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Leitura geométrica</span>
+  <p>Se as três raízes são as arestas <span class="m"><span class="v">a</span></span>, <span class="m"><span class="v">b</span></span> e <span class="m"><span class="v">c</span></span> de um bloco retangular, o produto das raízes é o <strong>volume</strong>, a soma dos produtos dois a dois é <strong>metade da área total</strong> (<span class="m">2(<span class="v">ab</span> + <span class="v">ac</span> + <span class="v">bc</span>)</span>) e a soma das raízes é <strong>um quarto do comprimento de todas as arestas</strong>.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> O gráfico conta as raízes reais</h2>
+<p>As raízes reais de <span class="m"><span class="v">P</span></span> são os pontos onde o gráfico de <span class="m"><span class="v">y</span> = <span class="v">P</span>(<span class="v">x</span>)</span> encontra o eixo horizontal. A multiplicidade muda o jeito do encontro:</p>
+<figure class="fig">
+<svg viewBox="0 0 460 252" role="img" aria-label="Gráfico de P de x igual a x mais 1 ao quadrado vezes x menos 3. Em x igual a menos 1, raiz dupla, a curva apenas toca o eixo horizontal e volta para baixo. Em x igual a 3, raiz simples, a curva atravessa o eixo. A curva corta o eixo vertical em menos 3">
+  <line x1="40" y1="126.1" x2="425" y2="126.1" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <line x1="186.6" y1="22" x2="186.6" y2="210" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <path d="M50.0,181.4 L53.0,176.6 L56.0,172.0 L59.0,167.7 L62.0,163.6 L65.0,159.7 L68.0,156.1 L71.0,152.8 L74.0,149.6 L77.0,146.7 L80.0,144.0 L83.0,141.5 L86.0,139.2 L89.0,137.1 L92.0,135.2 L95.0,133.5 L98.0,132.0 L101.0,130.7 L104.0,129.6 L107.0,128.6 L110.0,127.8 L113.0,127.1 L116.0,126.7 L119.0,126.3 L122.0,126.1 L125.0,126.1 L128.0,126.2 L131.0,126.4 L134.0,126.8 L137.0,127.2 L140.0,127.8 L143.0,128.5 L146.0,129.3 L149.0,130.2 L152.0,131.3 L155.0,132.4 L158.0,133.5 L161.0,134.8 L164.0,136.2 L167.0,137.6 L170.0,139.1 L173.0,140.6 L176.0,142.2 L179.0,143.9 L182.0,145.6 L185.0,147.3 L188.0,149.1 L191.0,150.9 L194.0,152.8 L197.0,154.7 L200.0,156.5 L203.0,158.4 L206.0,160.3 L209.0,162.2 L212.0,164.1 L215.0,166.0 L218.0,167.9 L221.0,169.8 L224.0,171.6 L227.0,173.4 L230.0,175.2 L233.0,177.0 L236.0,178.7 L239.0,180.3 L242.0,181.9 L245.0,183.4 L248.0,184.9 L251.0,186.3 L254.0,187.7 L257.0,188.9 L260.0,190.1 L263.0,191.2 L266.0,192.2 L269.0,193.1 L272.0,193.9 L275.0,194.5 L278.0,195.1 L281.0,195.6 L284.0,195.9 L287.0,196.1 L290.0,196.2 L293.0,196.1 L296.0,195.9 L299.0,195.5 L302.0,195.0 L305.0,194.3 L308.0,193.5 L311.0,192.5 L314.0,191.3 L317.0,190.0 L320.0,188.4 L323.0,186.7 L326.0,184.8 L329.0,182.7 L332.0,180.3 L335.0,177.8 L338.0,175.1 L341.0,172.1 L344.0,168.9 L347.0,165.5 L350.0,161.9 L353.0,158.0 L356.0,153.9 L359.0,149.5 L362.0,144.8 L365.0,140.0 L368.0,134.8 L371.0,129.4 L374.0,123.7 L377.0,117.7 L380.0,111.5 L383.0,104.9 L386.0,98.1 L389.0,91.0 L392.0,83.5 L395.0,75.8 L398.0,67.7 L401.0,59.3 L404.0,50.6 L407.0,41.6 L410.0,32.2" style="fill:none;stroke:var(--c1);stroke-width:2.4"/>
+  <circle cx="124.5" cy="126.1" r="5" style="fill:var(--c2)"/>
+  <circle cx="372.8" cy="126.1" r="5" style="fill:var(--c4)"/>
+  <circle cx="186.6" cy="148.3" r="3.5" style="fill:var(--ink-2)"/>
+  <text x="124.5" y="110" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">raiz dupla: toca</text>
+  <text x="364" y="110" text-anchor="end" class="svg-lbl" style="fill:var(--c4)">raiz simples: atravessa</text>
+  <text x="124.5" y="148" text-anchor="middle" class="svg-num" style="fill:var(--c2)">−1</text>
+  <text x="382" y="144" class="svg-num" style="fill:var(--c4)">3</text>
+  <text x="180" y="163" text-anchor="end" class="svg-num" style="fill:var(--ink-2)">−3</text>
+  <text x="230" y="240" text-anchor="middle" class="svg-num" style="fill:var(--ink)">P(x) = (x + 1)²(x − 3)</text>
+</svg>
+<figcaption><b>Raiz de multiplicidade par toca; ímpar atravessa.</b> Em −1 o fator <span class="m">(<span class="v">x</span> + 1)²</span> nunca é negativo, então o sinal de <span class="m"><span class="v">P</span></span> não muda ali: a curva encosta no eixo e volta. Em 3 o fator <span class="m">(<span class="v">x</span> − 3)</span> troca de sinal, e a curva cruza o eixo. O ponto no eixo vertical é <span class="m"><span class="v">P</span>(0) = 1 · (−3) = −3</span>.</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th>Fato</th><th>Consequência</th></tr></thead>
+  <tbody>
+    <tr><td>coeficientes reais e raiz não real <span class="m"><span class="v">a</span> + <span class="v">b</span><span class="v">i</span></span></td><td>o conjugado <span class="m"><span class="v">a</span> − <span class="v">b</span><span class="v">i</span></span> também é raiz: as raízes não reais vêm aos pares</td></tr>
+    <tr><td>grau ímpar com coeficientes reais</td><td>pelo menos <strong>uma raiz real</strong> (o gráfico vai de um lado ao outro do eixo)</td></tr>
+    <tr><td>grau <span class="m"><span class="v">n</span></span></td><td>no máximo <span class="m"><span class="v">n</span></span> interseções com o eixo horizontal</td></tr>
+    <tr><td>coeficiente dominante positivo, grau ímpar</td><td>a curva começa embaixo (à esquerda) e termina em cima (à direita)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>As raízes não reais usam a unidade imaginária <span class="m"><span class="v">i</span></span>, com <span class="m"><span class="v">i</span>² = −1</span>, tema de <strong>Números complexos</strong>. Por enquanto basta a regra do par: se <span class="m">1 − <span class="v">i</span></span> é raiz de um polinômio com coeficientes reais, <span class="m">1 + <span class="v">i</span></span> também é, e o produto <span class="m">(<span class="v">x</span> − 1 + <span class="v">i</span>)(<span class="v">x</span> − 1 − <span class="v">i</span>) = <span class="v">x</span>² − 2<span class="v">x</span> + 2</span> tem coeficientes reais.</p>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova e conexões</h2>
+<div class="box tip">
+  <span class="tag">1 · Raiz? Substitua</span>
+  <p>Para conferir se um número é raiz, ou achar o resto por <span class="m"><span class="v">x</span> − <span class="v">a</span></span>, calcule <span class="m"><span class="v">P</span>(<span class="v">a</span>)</span>. É mais rápido que dividir.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Uma raiz dada é um convite a Briot-Ruffini</span>
+  <p>Se o enunciado entrega uma raiz de uma equação de grau 3, divida por ela e resolva o 2º grau que sobra. Não tente fatorar no olho.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Pediu soma ou produto? Girard</span>
+  <p>Não resolva a equação se a pergunta é só a soma ou o produto das raízes (ou o volume, ou a área de um bloco cujas arestas são raízes).</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Gráfico: teste o ponto no eixo vertical</span>
+  <p>Para escolher a lei de um gráfico, calcule <span class="m"><span class="v">P</span>(0)</span> de cada alternativa e compare com o ponto onde a curva corta o eixo <span class="m"><span class="v">y</span></span>. Depois confira raízes e multiplicidades.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Geometria Espacial</strong></td><td>volume de caixas e blocos com medida variável</td><td>volume = produto de três fatores de 1º grau: polinômio de grau 3</td></tr>
+    <tr><td><strong>Economia</strong></td><td>custo, receita e lucro</td><td>raízes do lucro são os pontos de equilíbrio</td></tr>
+    <tr><td><strong>Física</strong></td><td>posição no MUV</td><td><span class="m"><span class="v">s</span>(<span class="v">t</span>)</span> é polinômio do 2º grau; “volta à origem” é raiz</td></tr>
+    <tr><td><strong>Números complexos</strong></td><td>raízes não reais</td><td>vêm em pares conjugados quando os coeficientes são reais</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Raiz −2 → fator (x − 2)</span> &nbsp;→&nbsp; <span class="c">fator (x + 2)</span></span><small>Raiz e fator têm sinais opostos.</small></li>
+  <li><span><span class="x">Briot-Ruffini sem o coeficiente 0</span> &nbsp;→&nbsp; <span class="c">escreva os zeros</span></span><small>x³ − 4x + 1 tem coeficientes 1, 0, −4, 1.</small></li>
+  <li><span><span class="x">Dividir por x + 3 usando 3</span> &nbsp;→&nbsp; <span class="c">usar −3</span></span><small>Use a raiz do divisor.</small></li>
+  <li><span><span class="x">Resto por x − a = P(−a)</span> &nbsp;→&nbsp; <span class="c">P(a)</span></span><small>Substitua a raiz do divisor.</small></li>
+  <li><span><span class="x">Produto das raízes = d/a</span> &nbsp;→&nbsp; <span class="c">−d/a (grau 3)</span></span><small>Sinais de Girard: −, +, −.</small></li>
+  <li><span><span class="x">Esquecer o coeficiente dominante</span> &nbsp;→&nbsp; <span class="c">P = a(x − r₁)…</span></span><small>Raízes iguais não bastam para identificar o polinômio.</small></li>
+  <li><span><span class="x">Toda raiz atravessa o eixo</span> &nbsp;→&nbsp; <span class="c">multiplicidade par só toca</span></span><small>(x − 2)² não muda de sinal.</small></li>
+  <li><span><span class="x">Raiz 1 − i sozinha</span> &nbsp;→&nbsp; <span class="c">1 + i também é raiz</span></span><small>Com coeficientes reais, não reais vêm aos pares.</small></li>
+  <li><span><span class="x">Soma dos coeficientes = P(0)</span> &nbsp;→&nbsp; <span class="c">= P(1)</span></span><small>P(0) é o termo independente.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: dá para substituir um número? Há uma raiz dada? A pergunta é soma ou produto?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Modelar o volume de uma caixa</span>
+    <p class="enun">De uma folha retangular de 24 cm por 15 cm, recortam-se quatro quadrados de lado <span class="m"><span class="v">x</span></span> cm, um em cada canto, e dobram-se as abas para formar uma caixa sem tampa. O volume da caixa, em cm³, é dado pelo polinômio</p>
+    <ol class="alt"><li><span class="m"><span class="v">x</span>³ − 39<span class="v">x</span>² + 360<span class="v">x</span></span></li><li><span class="m">4<span class="v">x</span>² − 78<span class="v">x</span> + 360</span></li><li><span class="m">4<span class="v">x</span>³ + 78<span class="v">x</span>² + 360<span class="v">x</span></span></li><li><span class="m">4<span class="v">x</span>³ − 78<span class="v">x</span>² + 360<span class="v">x</span></span></li><li><span class="m">4<span class="v">x</span>³ − 78<span class="v">x</span>² + 360</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O fundo mede <span class="m">(24 − 2<span class="v">x</span>)</span> por <span class="m">(15 − 2<span class="v">x</span>)</span>, e a altura é <span class="m"><span class="v">x</span></span>:</p>
+      <p class="m"><span class="v">V</span> = <span class="v">x</span>(24 − 2<span class="v">x</span>)(15 − 2<span class="v">x</span>) = <span class="v">x</span>(360 − 78<span class="v">x</span> + 4<span class="v">x</span>²) = 4<span class="v">x</span>³ − 78<span class="v">x</span>² + 360<span class="v">x</span></p>
+      <p>A A tira <span class="m"><span class="v">x</span></span> de cada dimensão uma vez só. A B é a área do fundo, sem a altura. A C erra o sinal do termo do meio: <span class="m">(−2<span class="v">x</span>)(15) + (24)(−2<span class="v">x</span>)</span> é negativo. A E não multiplica o 360 pela altura <span class="m"><span class="v">x</span></span>.</p>
+      <p><strong>Conferência:</strong> com <span class="m"><span class="v">x</span> = 1</span>, a caixa mede 22 × 13 × 1 = 286; e <span class="m">4 − 78 + 360 = 286</span>.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Divisibilidade pelo teorema do resto</span>
+    <p class="enun">O polinômio <span class="m"><span class="v">P</span>(<span class="v">x</span>) = <span class="v">x</span>³ − 2<span class="v">x</span>² + <span class="v">k</span><span class="v">x</span> + 6</span> é divisível por <span class="m"><span class="v">x</span> − 3</span>. O valor de <span class="m"><span class="v">k</span></span> é</p>
+    <ol class="alt"><li>−15.</li><li>−13.</li><li>−5.</li><li>5.</li><li>13.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Divisível por <span class="m"><span class="v">x</span> − 3</span> significa resto zero, isto é, <span class="m"><span class="v">P</span>(3) = 0</span>:</p>
+      <p class="m">27 − 18 + 3<span class="v">k</span> + 6 = 0 &nbsp;⟹&nbsp; 3<span class="v">k</span> = −15 &nbsp;⟹&nbsp; <span class="v">k</span> = −5</p>
+      <p>A A para em <span class="m">3<span class="v">k</span> = −15</span> sem dividir por 3. A B usa <span class="m"><span class="v">P</span>(−3) = 0</span>, a raiz com sinal trocado (<span class="m">−39 − 3<span class="v">k</span> = 0</span>). A D erra o sinal na última passagem. A E combina os dois erros: usa <span class="m"><span class="v">P</span>(−3)</span> e troca o sinal.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Uma raiz conhecida reduz o grau</span>
+    <p class="enun">O lucro mensal de uma pequena fábrica, em milhares de reais, é modelado por <span class="m"><span class="v">L</span>(<span class="v">x</span>) = <span class="v">x</span>³ − 6<span class="v">x</span>² + 11<span class="v">x</span> − 6</span>, em que <span class="m"><span class="v">x</span></span> é a produção em centenas de unidades, com <span class="m">0 ≤ <span class="v">x</span> ≤ 4</span>. Sabe-se que o lucro é nulo quando <span class="m"><span class="v">x</span> = 1</span>. Os outros valores de <span class="m"><span class="v">x</span></span> para os quais o lucro é nulo são</p>
+    <ol class="alt"><li>2 e 3.</li><li>−2 e −3.</li><li>5 e 6.</li><li>1 e 6.</li><li>−1 e 6.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Briot-Ruffini com a raiz 1 nos coeficientes <span class="m">1, −6, 11, −6</span>: desce 1; <span class="m">1 · 1 − 6 = −5</span>; <span class="m">1 · (−5) + 11 = 6</span>; <span class="m">1 · 6 − 6 = 0</span>. O quociente é <span class="m"><span class="v">x</span>² − 5<span class="v">x</span> + 6</span>, cujas raízes (soma 5, produto 6) são 2 e 3.</p>
+      <p>Conferência: <span class="m"><span class="v">L</span>(2) = 8 − 24 + 22 − 6 = 0</span> e <span class="m"><span class="v">L</span>(3) = 27 − 54 + 33 − 6 = 0</span>.</p>
+      <p>A B troca os sinais das raízes ao ler os fatores. A C lê os coeficientes do quociente como se fossem raízes. A D erra a primeira soma do dispositivo (<span class="m">−7</span> em vez de −5) e resolve <span class="m"><span class="v">x</span>² − 7<span class="v">x</span> + 6 = 0</span>. A E troca o sinal do termo independente do quociente e resolve <span class="m"><span class="v">x</span>² − 5<span class="v">x</span> − 6 = 0</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Relações de Girard em um sólido</span>
+    <p class="enun">As medidas, em metros, das três arestas de um bloco retangular são as raízes da equação <span class="m">2<span class="v">x</span>³ − 14<span class="v">x</span>² + 28<span class="v">x</span> − 16 = 0</span>. O volume do bloco, em metros cúbicos, é</p>
+    <ol class="alt"><li>7.</li><li>8.</li><li>14.</li><li>16.</li><li>28.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O volume é o produto das três arestas, isto é, o produto das raízes. Por Girard:</p>
+      <p class="m"><span class="v">r</span><sub>1</sub><span class="v">r</span><sub>2</sub><span class="v">r</span><sub>3</sub> = −<span class="frac"><i><span class="v">d</span></i><i><span class="v">a</span></i></span> = −<span class="frac"><i>−16</i><i>2</i></span> = 8</p>
+      <p>Conferência: a equação é <span class="m">2(<span class="v">x</span> − 1)(<span class="v">x</span> − 2)(<span class="v">x</span> − 4) = 0</span>, arestas 1, 2 e 4, volume 8.</p>
+      <p>A A é a soma das raízes, <span class="m">−<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></span>. A C é a soma dos produtos dois a dois, <span class="m"><span class="frac"><i><span class="v">c</span></i><i><span class="v">a</span></i></span></span> (metade da área total). A D esquece de dividir por <span class="m"><span class="v">a</span> = 2</span>. A E é a área total do bloco, <span class="m">2 · 14</span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Lei a partir do gráfico</span>
+    <p class="enun">O gráfico a seguir representa um polinômio <span class="m"><span class="v">P</span></span> de grau 3. Ele cruza o eixo horizontal em <span class="m"><span class="v">x</span> = −1</span>, apenas toca esse eixo em <span class="m"><span class="v">x</span> = 2</span> e corta o eixo vertical no ponto (0, 4).</p>
+    <figure class="fig">
+<svg viewBox="0 0 340 210" role="img" aria-label="Gráfico de um polinômio de grau 3 que vem de baixo, cruza o eixo horizontal em x igual a menos 1, sobe até o ponto 0, 4 no eixo vertical, desce e apenas toca o eixo horizontal em x igual a 2, voltando a subir">
+  <line x1="30" y1="105" x2="310" y2="105" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <line x1="120.9" y1="12" x2="120.9" y2="198" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <path d="M40.0,170.5 L42.2,163.1 L44.3,155.9 L46.5,149.0 L48.7,142.4 L50.8,136.1 L53.0,130.0 L55.2,124.2 L57.3,118.6 L59.5,113.3 L61.7,108.2 L63.8,103.4 L66.0,98.8 L68.2,94.5 L70.3,90.4 L72.5,86.5 L74.7,82.8 L76.8,79.3 L79.0,76.1 L81.2,73.0 L83.3,70.2 L85.5,67.5 L87.7,65.1 L89.8,62.8 L92.0,60.7 L94.2,58.8 L96.3,57.1 L98.5,55.5 L100.7,54.1 L102.8,52.9 L105.0,51.8 L107.2,50.9 L109.3,50.1 L111.5,49.5 L113.7,49.0 L115.8,48.7 L118.0,48.4 L120.2,48.3 L122.3,48.4 L124.5,48.5 L126.7,48.7 L128.8,49.1 L131.0,49.6 L133.2,50.1 L135.3,50.8 L137.5,51.5 L139.7,52.3 L141.8,53.2 L144.0,54.2 L146.2,55.3 L148.3,56.4 L150.5,57.6 L152.7,58.8 L154.8,60.1 L157.0,61.5 L159.2,62.9 L161.3,64.3 L163.5,65.8 L165.7,67.3 L167.8,68.8 L170.0,70.3 L172.2,71.9 L174.3,73.5 L176.5,75.1 L178.7,76.7 L180.8,78.3 L183.0,79.8 L185.2,81.4 L187.3,83.0 L189.5,84.5 L191.7,86.1 L193.8,87.6 L196.0,89.0 L198.2,90.5 L200.3,91.9 L202.5,93.2 L204.7,94.5 L206.8,95.7 L209.0,96.9 L211.2,98.1 L213.3,99.1 L215.5,100.1 L217.7,101.0 L219.8,101.8 L222.0,102.6 L224.2,103.2 L226.3,103.8 L228.5,104.2 L230.7,104.6 L232.8,104.8 L235.0,105.0 L237.2,105.0 L239.3,104.9 L241.5,104.7 L243.7,104.3 L245.8,103.8 L248.0,103.2 L250.2,102.4 L252.3,101.5 L254.5,100.4 L256.7,99.2 L258.8,97.8 L261.0,96.2 L263.2,94.5 L265.3,92.6 L267.5,90.5 L269.7,88.3 L271.8,85.8 L274.0,83.2 L276.2,80.3 L278.3,77.3 L280.5,74.0 L282.7,70.5 L284.8,66.9 L287.0,63.0 L289.2,58.8 L291.3,54.5 L293.5,49.9 L295.7,45.1 L297.8,40.0 L300.0,34.7" style="fill:none;stroke:var(--c1);stroke-width:2.4"/>
+  <circle cx="63.1" cy="105" r="4" style="fill:var(--c4)"/>
+  <circle cx="236.4" cy="105" r="4" style="fill:var(--c4)"/>
+  <circle cx="120.9" cy="48.3" r="4" style="fill:var(--c2)"/>
+  <text x="57" y="96" text-anchor="end" class="svg-num" style="fill:var(--c4)">−1</text>
+  <text x="236.4" y="124" text-anchor="middle" class="svg-num" style="fill:var(--c4)">2</text>
+  <text x="113" y="38" text-anchor="end" class="svg-num" style="fill:var(--c2)">(0, 4)</text>
+</svg>
+    </figure>
+    <p class="enun">A lei de <span class="m"><span class="v">P</span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> − 1)(<span class="v">x</span> + 2)²</span></li><li><span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> + 1)²(<span class="v">x</span> − 2)</span></li><li><span class="m"><span class="v">P</span>(<span class="v">x</span>) = −(<span class="v">x</span> + 1)(<span class="v">x</span> − 2)²</span></li><li><span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> + 1)(<span class="v">x</span> − 2)</span></li><li><span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> + 1)(<span class="v">x</span> − 2)²</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cruzar em −1 indica raiz de multiplicidade ímpar: fator <span class="m">(<span class="v">x</span> + 1)</span>. Tocar em 2 indica multiplicidade par: fator <span class="m">(<span class="v">x</span> − 2)²</span>. Grau 3 fecha a conta: <span class="m"><span class="v">P</span>(<span class="v">x</span>) = <span class="v">a</span>(<span class="v">x</span> + 1)(<span class="v">x</span> − 2)²</span>. Com <span class="m"><span class="v">P</span>(0) = <span class="v">a</span> · 1 · 4 = 4</span>, <span class="m"><span class="v">a</span> = 1</span>.</p>
+      <p>A A troca os sinais das raízes (dá raízes 1 e −2). A B inverte as multiplicidades: tocaria em −1 e cruzaria em 2, com <span class="m"><span class="v">P</span>(0) = −2</span>. A C tem o sinal errado: <span class="m"><span class="v">P</span>(0) = −4</span>. A D tem grau 2 e cruzaria o eixo em 2.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Raízes conjugadas</span>
+    <p class="enun">Um polinômio <span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> de grau 3, com coeficientes reais e coeficiente dominante 1, tem como raízes os números 2 e <span class="m">1 − <span class="v">i</span></span>, em que <span class="m"><span class="v">i</span>² = −1</span>. Então <span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">x</span>³ + 4<span class="v">x</span>² + 6<span class="v">x</span> + 4</span></li><li><span class="m"><span class="v">x</span>³ − 4<span class="v">x</span>² + 6<span class="v">x</span> − 4</span></li><li><span class="m"><span class="v">x</span>³ − 4<span class="v">x</span>² + 4<span class="v">x</span></span></li><li><span class="m"><span class="v">x</span>³ − 2<span class="v">x</span>² + 2<span class="v">x</span> − 4</span></li><li><span class="m"><span class="v">x</span>² − 2<span class="v">x</span> + 2</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com coeficientes reais, o conjugado <span class="m">1 + <span class="v">i</span></span> também é raiz. As três raízes são 2, <span class="m">1 − <span class="v">i</span></span> e <span class="m">1 + <span class="v">i</span></span>. O par conjugado tem soma 2 e produto <span class="m">(1 − <span class="v">i</span>)(1 + <span class="v">i</span>) = 1 − <span class="v">i</span>² = 2</span>, e gera o fator <span class="m"><span class="v">x</span>² − 2<span class="v">x</span> + 2</span>:</p>
+      <p class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span> − 2)(<span class="v">x</span>² − 2<span class="v">x</span> + 2) = <span class="v">x</span>³ − 4<span class="v">x</span>² + 6<span class="v">x</span> − 4</p>
+      <p>A A usa as raízes com sinais trocados (−2 e <span class="m">−1 ± <span class="v">i</span></span>). A C calcula <span class="m">(1 − <span class="v">i</span>)(1 + <span class="v">i</span>)</span> como <span class="m">1 + <span class="v">i</span>² = 0</span>. A D usa o fator <span class="m"><span class="v">x</span>² + 2</span>, esquecendo que a soma do par é 2. A E tem grau 2: deixa de fora a raiz 2.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Pesquisa de raízes racionais</span>
+    <p class="enun">Ao estudar a equação <span class="m">2<span class="v">x</span>³ − 3<span class="v">x</span>² − 3<span class="v">x</span> + 2 = 0</span>, um estudante listou as possíveis raízes racionais e testou cada uma. O conjunto solução da equação é</p>
+    <ol class="alt"><li>{−2, −1/2, 1}</li><li>{−1, 2}</li><li>{−2, −1, 1, 2}</li><li>{1/2, 1, 2}</li><li>{−1, 1/2, 2}</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Candidatas <span class="m"><span class="frac"><i><span class="v">p</span></i><i><span class="v">q</span></i></span></span>: <span class="m"><span class="v">p</span></span> divide 2 e <span class="m"><span class="v">q</span></span> divide 2, logo <span class="m">±1, ±2, ±<span class="frac"><i>1</i><i>2</i></span></span>. Testando: <span class="m"><span class="v">P</span>(−1) = −2 − 3 + 3 + 2 = 0</span>. Briot-Ruffini com −1 nos coeficientes <span class="m">2, −3, −3, 2</span> dá <span class="m">2, −5, 2</span> e resto 0. Então <span class="m">2<span class="v">x</span>² − 5<span class="v">x</span> + 2 = 0</span>, com <span class="m">Δ = 25 − 16 = 9</span> e raízes <span class="m"><span class="frac"><i>5 ± 3</i><i>4</i></span></span>: 2 e <span class="m"><span class="frac"><i>1</i><i>2</i></span></span>.</p>
+      <p>A A troca os sinais de todas as raízes. A B testa só os inteiros e para; uma equação de grau 3 tem três raízes. A C lista candidatas inteiras sem testar (<span class="m"><span class="v">P</span>(1) = −2</span> e <span class="m"><span class="v">P</span>(−2) = −20</span>). A D inclui 1, que não é raiz, e perde o −1.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Soma dos coeficientes</span>
+    <p class="enun">Ao ser desenvolvido, o polinômio <span class="m"><span class="v">P</span>(<span class="v">x</span>) = (<span class="v">x</span>² − 3<span class="v">x</span> + 3)<sup>20</sup></span> tem muitos termos. A soma de todos os seus coeficientes é</p>
+    <ol class="alt"><li>1.</li><li>40.</li><li>3<sup>20</sup>.</li><li>4<sup>20</sup>.</li><li>7<sup>20</sup>.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A soma dos coeficientes é <span class="m"><span class="v">P</span>(1)</span>:</p>
+      <p class="m"><span class="v">P</span>(1) = (1 − 3 + 3)<sup>20</sup> = 1<sup>20</sup> = 1</p>
+      <p>A B é o grau do polinômio. A C é <span class="m"><span class="v">P</span>(0)</span>, o termo independente. A D soma só os coeficientes positivos de dentro, <span class="m">(1 + 3)<sup>20</sup></span>. A E ignora os sinais, <span class="m">(1 + 3 + 3)<sup>20</sup></span>, que é <span class="m"><span class="v">P</span>(−1)</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Resto da divisão por um polinômio de grau 2</span>
+    <p class="enun">Um polinômio <span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> dividido por <span class="m"><span class="v">x</span> − 1</span> deixa resto 3 e dividido por <span class="m"><span class="v">x</span> + 2</span> deixa resto −6. O resto da divisão de <span class="m"><span class="v">P</span>(<span class="v">x</span>)</span> por <span class="m">(<span class="v">x</span> − 1)(<span class="v">x</span> + 2)</span> é</p>
+    <ol class="alt"><li><span class="m">−3</span></li><li><span class="m">3<span class="v">x</span></span></li><li><span class="m">−18</span></li><li><span class="m">3<span class="v">x</span> − 6</span></li><li><span class="m">−3<span class="v">x</span> − 3</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O divisor tem grau 2, então o resto é <span class="m"><span class="v">R</span>(<span class="v">x</span>) = <span class="v">mx</span> + <span class="v">n</span></span>. Pelo teorema do resto, <span class="m"><span class="v">P</span>(1) = 3</span> e <span class="m"><span class="v">P</span>(−2) = −6</span>, e esses valores coincidem com os de <span class="m"><span class="v">R</span></span>:</p>
+      <p class="m"><span class="v">m</span> + <span class="v">n</span> = 3 &nbsp;e&nbsp; −2<span class="v">m</span> + <span class="v">n</span> = −6 &nbsp;⟹&nbsp; 3<span class="v">m</span> = 9, &nbsp;<span class="v">m</span> = 3, &nbsp;<span class="v">n</span> = 0</p>
+      <p>A A soma os dois restos. A C multiplica os dois restos. A D acerta <span class="m"><span class="v">m</span></span>, mas toma o segundo resto como termo independente. A E associa cada resto à raiz errada (<span class="m"><span class="v">R</span>(1) = −6</span> e <span class="m"><span class="v">R</span>(−2) = 3</span>).</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Identifico grau, coeficientes e termo independente de um polinômio</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso <span class="m"><span class="v">P</span>(1)</span> para a soma dos coeficientes e <span class="m"><span class="v">P</span>(0)</span> para o termo independente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a identidade de polinômios igualando coeficientes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Modelo volumes e áreas com polinômios</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo <span class="m"><span class="v">P</span> = <span class="v">D</span> · <span class="v">Q</span> + <span class="v">R</span></span> e sei o grau possível do resto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Divido por <span class="m"><span class="v">x</span> − <span class="v">a</span></span> com Briot-Ruffini, sem esquecer coeficientes zero</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo restos pelo teorema do resto, sem dividir</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso uma raiz conhecida para reduzir o grau da equação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Listo e testo as candidatas a raiz racional</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico as relações de Girard para soma e produto das raízes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto a forma fatorada sem errar sinais nem o coeficiente dominante</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio no gráfico raízes simples (atravessa) e de multiplicidade par (toca)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que raízes não reais vêm em pares conjugados quando os coeficientes são reais</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>25 questões</strong> e acerte pelo menos 18, com pelo menos cinco de modelagem ou leitura de gráfico. Depois siga para <strong>Números complexos</strong>, que explica as raízes não reais que apareceram aqui.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>34 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-35-polinomios-equacoes-polinomiais.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-35";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

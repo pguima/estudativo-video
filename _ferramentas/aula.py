@@ -148,7 +148,8 @@ def cursor(c, x, y, a, press=0.0):
     c.restore()
 
 
-def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Bons estudos!", canal="no canal"):
+def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Bons estudos!", canal="no canal", anki=None):
+    """anki = tempo do cue {anki}: troca a pergunta pelo aviso dos flashcards (Anki) com link na descrição"""
     INK, BLUE, RED, AMBER, INK2 = C_("INK"), C_("BLUE"), C_("RED"), C_("AMBER"), C_("INK2")
     y = 240
     a = ep(t, like - 0.2, 0.5)
@@ -182,13 +183,30 @@ def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Bons estudos!", ca
         icon(c, "", bxx + 170, y + 150, 120, mix(INK, AMBER, ep(t, bell + 0.4, 0.3)), a)
         c.restore()
         text(c, "Ativar o sininho", bxx + 170, y + 290, 34, "bold", INK, a)
-    a = fw(t, com, bye)
+    a = fw(t, com, anki if anki is not None else bye)
     if a > 0:
         yy = 640 + (1 - a) * 20
         w = max(1000, text_w(pergunta, "bold", 38) + 220)
         card(c, W / 2 - w / 2, yy, w, 130, a, r=36)
         icon(c, "", W / 2 - w / 2 + 90, yy + 65, 56, BLUE, a)
         text_mid(c, pergunta, W / 2 + 40, yy + 65, 38, "bold", INK, a)
+    if anki is not None:
+        GREEN = C_("GREEN")
+        a = fw(t, anki, bye)
+        if a > 0:
+            yy = 640 + (1 - a) * 20
+            s1, s2 = "Flashcards do ENEM (Anki)", "link na descrição do vídeo"
+            w = max(text_w(s1, "extrabold", 40), text_w(s2, "bold", 32)) + 260
+            card(c, W / 2 - w / 2, yy, w, 150, a, r=36)
+            rrect(c, W / 2 - w / 2 + 40, yy + 35, 80, 80, 20, GREEN, a)
+            ax, ay = W / 2 - w / 2 + 80, yy + 75
+            pa = skia.Paint(AntiAlias=True, Color=hexc("#FFFFFF", a), Style=skia.Paint.kStroke_Style,
+                            StrokeWidth=8, StrokeCap=skia.Paint.kRound_Cap, StrokeJoin=skia.Paint.kRound_Join)
+            pth = skia.Path(); pth.moveTo(ax, ay - 22); pth.lineTo(ax, ay + 18)
+            pth.moveTo(ax - 16, ay + 2); pth.lineTo(ax, ay + 18); pth.lineTo(ax + 16, ay + 2)
+            c.drawPath(pth, pa); c.drawLine(ax - 20, ay + 28, ax + 20, ay + 28, pa)
+            text(c, s1, W / 2 - w / 2 + 150, yy + 68, 40, "extrabold", INK, a, align="left")
+            text(c, s2, W / 2 - w / 2 + 150, yy + 115, 32, "bold", GREEN, a, align="left")
     ab = ep(t, bye, 0.6)
     if ab > 0:
         text(c, despedida, W / 2, 760 + (1 - ab) * 20, 72, "black", INK, ab)

@@ -1,0 +1,63 @@
+Ana deposita cinquenta reais em janeiro e, a cada mês, quinze reais a mais. Quanto em dezembro? Quem faz cinquenta mais doze vezes quinze responde duzentos e trinta reais e erra. A resposta é duzentos e quinze reais, e o motivo cabe numa escada.
+
+Ao final desta aula, você vai achar o termo cinquenta, cem ou mil de qualquer pê-á sem listar os anteriores.
+
+Antes, dois lembretes rápidos. Da série de Equações: seis erre igual a vinte e quatro? Divida os dois lados por seis: erre vale quatro. E, da série de Função Afim: o número que diz quanto muda a cada unidade é o coeficiente a da reta. Guarde essa ideia: ela volta daqui a pouco.
+
+Olhe três coisas do dia a dia. Uma escada: todos os degraus têm a mesma altura. Um cofrinho que recebe quinze reais a mais a cada mês. E quadradinhos de palitos de fósforo: quatro, sete, dez palitos. Nos três, o próximo é o anterior mais um valor fixo.
+
+Antes do nome difícil, três palavras simples. Sequência é uma lista de números em ordem: tem primeiro, segundo, terceiro. Cada número da lista é um termo. E o lugar dele na fila é a posição, também chamada de índice. O primeiro termo se escreve a um; o termo da posição ene se escreve a ene.
+
+E o que faz uma sequência ser uma pê-á? Progressão aritmética, a pê-á, é a sequência em que cada termo é o anterior mais um número fixo. Esse número fixo é a razão, a letra erre. Cinco, oito, onze, catorze: sempre mais três. Razão três, positiva: os termos sobem, pê-á crescente. A pê-á é uma escada de degraus iguais: a razão é a altura do degrau.
+
+E se o degrau descer? Quarenta, trinta e quatro, vinte e oito: razão menos seis. Os termos diminuem: pê-á decrescente. Sete, sete, sete: razão zero, pê-á constante. Um e meio, dois, dois e meio: razão zero vírgula cinco. A razão não precisa ser inteira. E dois, quatro, oito, dezesseis? As diferenças são dois, quatro, oito: não são iguais. Isso não é pê-á; é assunto da próxima série.
+
+Como achar a razão sem errar o sinal? Segundo menos primeiro. Sempre nessa ordem. Em quarenta, trinta e quatro, vinte e oito: trinta e quatro menos quarenta dá menos seis. Quem faz o maior menos o menor fica com mais seis, e a sequência passa a subir quando deveria descer.
+
+Agora, o coração da aula. Quanto Ana deposita em dezembro? Escreva os primeiros: a um é cinquenta, a dois é sessenta e cinco, a três é oitenta. Agora suba a escada com o dedo. Do primeiro ao segundo degrau: um salto. Do primeiro ao terceiro: dois saltos. E do primeiro ao décimo segundo? Onze saltos. Do primeiro ao décimo segundo degrau, você sobe onze vezes.
+
+Isso vira uma fórmula. Para chegar à posição ene, você dá ene menos um saltos. Então a ene é igual a a um mais ene menos um vezes erre. É o termo geral: a fórmula que entrega qualquer termo direto. Dezembro: cinquenta mais onze vezes quinze. Cinquenta mais cento e sessenta e cinco: duzentos e quinze reais.
+
+E como saber se a fórmula está certa? Teste com ene igual a um. Ela tem de devolver o primeiro termo. Um menos um é zero; zero vezes quinze é zero; sobra cinquenta. Passou. Agora a versão errada, com ene saltos: cinquenta mais um vezes quinze dá sessenta e cinco. Janeiro com sessenta e cinco? Reprovada.
+
+E se você não conhece o primeiro termo? Comece de qualquer termo conhecido. A ene é igual a a ká mais ene menos ká vezes erre. O ká é só a posição de onde você parte. Do quinto ao vigésimo termo, por exemplo, são vinte menos cinco: quinze saltos.
+
+E dá para achar a razão com dois termos soltos? Dá. A quatro é dezessete e a dez é quarenta e um. Do quarto ao décimo: seis saltos. E o termo subiu quarenta e um menos dezessete: vinte e quatro. Seis erre igual a vinte e quatro: erre igual a quatro. E o primeiro? Desça três saltos a partir do quarto: dezessete menos doze, cinco.
+
+O atalho: razão é a diferença dos termos dividida pela diferença das posições. Quarenta e um menos dezessete, vinte e quatro; dez menos quatro, seis. Vinte e quatro dividido por seis: quatro. Sem montar equação nenhuma.
+
+E os palitos? Vamos treinar com triângulos, que funcionam do mesmo jeito. O primeiro triângulo usa três palitos. O segundo encosta no primeiro e aproveita um lado: só precisa de dois palitos novos. Três, cinco, sete: pê-á de razão dois. Figura ene: três mais ene menos um vezes dois, que dá dois ene mais um. A figura vinte usa quarenta e um palitos, sem desenhar nenhuma das anteriores.
+
+E por que a pê-á lembra uma reta? Abra o termo geral: a ene é igual a erre vezes ene, mais a um menos erre. É a cara de uma função afim: y igual a a x mais b. A razão faz o papel do coeficiente a: quanto muda a cada passo.
+
+Marque a pê-á cinco, oito, onze, catorze, dezessete, vinte no plano. Os pontos ficam alinhados sobre a reta y igual a três ene mais dois. Mas são pontos soltos: não existe a posição dois e meio. A cada passo de um na posição, o termo sobe três: a razão é a inclinação.
+
+Sua vez. Qual é o trigésimo termo da pê-á sete, onze, quinze? Pause e tente.
+
+Vamos juntos. Razão: segundo menos primeiro, onze menos sete, quatro. Do primeiro ao trigésimo: vinte e nove saltos. Sete mais vinte e nove vezes quatro: sete mais cento e dezesseis, cento e vinte e três. Teste com ene igual a um: sete mais zero vezes quatro, sete. Passou.
+
+Três frases para guardar. Um: razão é segundo menos primeiro. Dois: do primeiro ao ene-ésimo termo há ene menos um saltos. Três: pê-á é uma reta vista só nos números inteiros.
+
+Erro um: a doze igual a a um mais doze vezes erre. Parece certo porque é o décimo segundo termo, e o doze está ali, pedindo para entrar. Mas o primeiro degrau já é o ponto de partida: são onze saltos. Um salto a mais é exatamente a alternativa errada.
+
+Erro dois: razão de quarenta, trinta e quatro, vinte e oito igual a seis. Parece certo porque a distância entre os números é mesmo seis, e o sinal some sem barulho. Faça segundo menos primeiro: menos seis. Sequência que desce tem razão negativa.
+
+Erro três: contar três palitos por triângulo e dizer que a figura ene usa três ene palitos. Parece certo porque cada triângulo, sozinho, tem mesmo três lados. Mas os vizinhos dividem um lado. Só o primeiro usa três; cada novo usa dois: dois ene mais um.
+
+Questão do material, e esta eu faço com você. Para juntar dinheiro, Ana depositou cinquenta reais em janeiro e decidiu que, a cada mês, depositaria quinze reais a mais do que no mês anterior. O valor que ela vai depositar em dezembro, o décimo segundo mês, é: A: cento e sessenta e cinco reais. B: cento e oitenta. C: duzentos e quinze. D: duzentos e trinta. E: mil quinhentos e noventa reais.
+
+Primeiro, os três primeiros termos: cinquenta, sessenta e cinco, oitenta. Razão quinze. Dezembro é a posição doze: onze saltos. Cinquenta mais onze vezes quinze: duzentos e quinze. Faz sentido? Partindo de cinquenta e subindo quinze por mês, chegar perto de duzentos é razoável. Letra C!
+
+E as outras? A A, cento e sessenta e cinco, é só o acréscimo: onze vezes quinze, sem os cinquenta. A B usa doze vezes quinze e esquece o depósito inicial. A D, duzentos e trinta, usou doze saltos. E a E é a soma dos doze depósitos, que ninguém pediu.
+
+E esta é sua. Uma criança monta, com palitos de fósforo, uma sequência de figuras. A figura um é um quadrado, com quatro palitos; a figura dois tem dois quadrados lado a lado, que compartilham um palito, com sete palitos; a figura três tem três quadrados em fila, com dez palitos, e assim por diante. O número de palitos para montar a figura cinquenta é: A: cento e um. B: cento e quarenta e oito. C: cento e cinquenta. D: cento e cinquenta e um. E: duzentos. Pause o vídeo e resolva.
+
+Conferindo. Quatro, sete, dez: razão três. Da figura um até a cinquenta: quarenta e nove saltos. Quatro mais quarenta e nove vezes três: quatro mais cento e quarenta e sete, cento e cinquenta e um. Pela forma de reta: três vezes cinquenta, mais um. Mesmo resultado. Letra D!
+
+E as erradas? A A, cento e um, é de quem acha que cada quadrado novo acrescenta dois palitos: dois vezes cinquenta, mais um. A B usou quarenta e nove quadrados. A C esqueceu o palito inicial: três vezes cinquenta. E a E contou quatro palitos por quadrado, ignorando os lados compartilhados.
+
+Para fechar, as mesmas três frases. Um: razão é segundo menos primeiro. Dois: do primeiro ao ene-ésimo termo há ene menos um saltos. Três: pê-á é uma reta vista só nos números inteiros.
+
+Entre os postes do quilômetro três e do quilômetro vinte e sete vão entrar mais cinco postes, todos igualmente espaçados. A distância entre eles é vinte e quatro dividido por cinco? Não. Próximo episódio: contar termos e saltos sem errar.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha caído no salto a mais? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

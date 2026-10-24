@@ -1,0 +1,63 @@
+Numa tabela de gols, quem troca linha por coluna transforma o time com o pior saldo do campeonato, menos três, num líder com mais três. A conta estava certa; a leitura, não.
+
+Ao final desta aula, você vai ler qualquer tabela em forma de matriz sem trocar o endereço e vai reconhecer os tipos de matriz que aparecem nos enunciados.
+
+Antes, um lembrete rápido. Da série de Operações: conta com sinal. Dois menos cinco dá menos três: quando tira mais do que tem, o resultado fica negativo. Vai servir já já, porque saldo de gols pode ser negativo.
+
+Olhe três coisas do dia a dia. A tabela de classificação de um campeonato. A tabela de distâncias entre cidades, daquelas de guia rodoviário. E uma foto do celular ampliada até aparecerem os quadradinhos. As três são números arrumados em linhas e colunas. E isso tem nome: matriz.
+
+E o que é, exatamente, uma matriz? Matriz é uma tabela de números arrumados em linhas e colunas. Linha é a fileira deitada, na horizontal. Coluna é a fileira em pé, na vertical. E a ordem da matriz diz o tamanho dela: m por n, m linhas e n colunas. Esta tem duas linhas e três colunas: é uma dois por três. Sempre as linhas primeiro.
+
+E como se aponta para um número lá dentro? Cada número da matriz é um elemento, e tem um endereço: a, i, j. O i é a linha. O j é a coluna. Pense no assento do cinema: primeiro a fileira, depois a poltrona. A dois três é fileira dois, poltrona três. Aqui, o nove.
+
+E se eu trocar a ordem? A três dois é fileira três, poltrona dois. Outro lugar, outro número: o três. Fileira dois, poltrona três não é o mesmo lugar que fileira três, poltrona dois. Por isso, em todo endereço: primeiro a linha, depois a coluna.
+
+E quando a matriz vem sem os números, só com uma fórmula? Essa fórmula é a lei de formação: a receita que diz quanto vale cada endereço. Exemplo: a i j igual a dois i menos j, numa matriz dois por três. É só trocar o i pela linha e o j pela coluna. A um um: dois vezes um, menos um: um. A um dois: dois menos dois, zero. A um três: menos um. Na linha dois, o dois i vale quatro: três, dois, um.
+
+Tem um jeito de montar mais rápido? Tem. Atalho: calcule só o primeiro, e ande pela regra. Em dois i menos j, cada passo para a direita aumenta o j: o valor cai um. Cada passo para baixo aumenta o i: o valor sobe dois. Um, zero, menos um; e embaixo, três, dois, um. A mesma matriz, quase sem conta.
+
+E aqueles nomes que aparecem nos enunciados? Matriz quadrada tem o mesmo número de linhas e de colunas. Ela tem a diagonal principal: a que desce da esquerda para a direita, onde a linha é igual à coluna. E a diagonal secundária: a outra, que sobe.
+
+E as famílias de matriz quadrada? Nula: todos os elementos iguais a zero. Diagonal: zero em tudo fora da diagonal principal. Identidade: uma diagonal com um em toda a diagonal principal. E triangular: zeros de um dos lados da diagonal principal.
+
+E a tal da transposta? A transposta troca as linhas pelas colunas. Esta matriz tem as linhas um, dois, três e quatro, cinco, seis. Na transposta, elas viram as colunas. Atalho: a primeira linha vira a primeira coluna. Repare no tamanho: a dois por três virou uma três por dois.
+
+E quando a transposta dá a mesma matriz? Aí ela é simétrica: igual à própria transposta. Olhe: oito acima da diagonal, oito abaixo. Cinco e cinco. Três e três. A diagonal principal funciona como um espelho: o que está de um lado se repete do outro.
+
+E onde esse espelho aparece na prova? Na tabela de distâncias. D um três é a distância da cidade um até a cidade três. Estrada de mão dupla: de um até três é o mesmo que de três até um. A tabela é simétrica. A diagonal é zero: de uma cidade até ela mesma. E se um valor sumiu, copie do espelho: o d um três apagado é o d três um, cento e vinte.
+
+E a tabela de gols? Também é um espelho? G i j são os gols que o time i marcou contra o time j. Então a linha conta o que o time fez, e a coluna conta o que fizeram contra ele. O saldo é linha menos coluna. Time um: marcou cinco, sofreu dois: mais três. E ela não é simétrica: o time um fez três no dois, o dois fez um no um. Três a um não é um a três.
+
+Antes de somar, um atalho. Rotule: escreva ao lado da matriz o que é linha e o que é coluna. E confira no fim: todo gol marcado por um time é sofrido por outro. Então os saldos somam zero. Mais três, menos quatro, mais um: zero. Fechou.
+
+E a foto ampliada do começo? Cada quadradinho é um pixel: o menor ponto da imagem. E cada pixel é um elemento da matriz. Numa imagem em preto e branco, um é pixel aceso; zero, apagado. Trocar todo um por zero inverte as cores. E a transposta espelha a figura na diagonal: a primeira linha vira a primeira coluna.
+
+Sua vez. Na matriz dois por dois com a i j igual a i mais dois j, quanto vale a dois um? E a um dois? Pause e tente.
+
+Vamos juntos. A dois um: linha dois, coluna um. Dois mais duas vezes um: quatro. A um dois: linha um, coluna dois. Um mais duas vezes dois: cinco. Endereços trocados, valores diferentes. Primeiro a linha, sempre.
+
+Vamos guardar em três frases. Um: primeiro a linha, depois a coluna. Dois: tabela de mão dupla é simétrica: a diagonal é o espelho. Três: linha é o que o time fez; coluna é o que ele sofreu.
+
+Agora, os três erros clássicos. Primeiro: ler a dois três como linha três, coluna dois. Parece certo, porque os dois números estão ali, e a ordem parece detalhe. Mas na nossa matriz dois por três, nem existe linha três. O primeiro índice é sempre a linha.
+
+Segundo: achar que a transposta de uma dois por três continua dois por três. Parece certo, porque os números são os mesmos. Mas as linhas viraram colunas: o tamanho gira junto. Vira três por dois.
+
+Terceiro: tomar a coluna como gols marcados. Parece certo, porque a soma da coluna parece tão boa quanto a da linha. Mas aí o time um, que fez cinco e sofreu dois, ficaria com menos três. Rotule antes: linha é o que o time fez.
+
+Agora, questões no estilo do ENEM, do nosso material de estudo. Esta primeira, eu resolvo com você. Em um torneio entre quatro times, os gols foram registrados na matriz G, em que g i j é o número de gols que o time i marcou contra o time j. A diagonal é zero, pois um time não joga contra si mesmo. O saldo de gols é a diferença entre gols marcados e gols sofridos. O time com o maior saldo de gols é: A: o time um. B: o time dois. C: o time três. D: o time quatro. E: os times um e quatro, empatados.
+
+Primeiro, os rótulos. Linha: gols marcados. Coluna: gols sofridos. Time um: a linha soma cinco, a coluna soma três. Saldo mais dois. Time dois: sete e sete, zero. Time três: dois e cinco, menos três. Time quatro: cinco e quatro, mais um. Conferência: mais dois, zero, menos três, mais um: soma zero. O maior saldo é do time um. Letra A!
+
+E as outras? A C fez coluna menos linha: trocou o endereço, e o time três, o pior do torneio, virou mais três. A B escolheu só quem mais marcou, o time dois, e esqueceu os gols sofridos. A E comparou só os gols marcados dos times um e quatro, cinco a cinco. E a D esqueceu um número da coluna quatro: o time quatro sofreu quatro gols, não dois.
+
+E esta é sua. Uma transportadora registra as distâncias rodoviárias, em quilômetros, entre quatro cidades na matriz D, em que d i j é a distância entre as cidades i e j. As estradas são de mão dupla, e dois valores foram apagados. Um caminhão faz o trajeto um, três, dois, quatro, sem voltar. A distância percorrida, em quilômetros, é: A: duzentos e quarenta. B: trezentos e cinquenta. C: trezentos e oitenta. D: quatrocentos e quarenta. E: quinhentos e oitenta. Pause o vídeo e resolva.
+
+Conferindo. Mão dupla: a matriz é simétrica. O x está na linha um, coluna três: copie do espelho, o d três um, cento e cinquenta. O y está na linha dois, coluna quatro: o espelho é o d quatro dois, cento e quarenta. O trajeto: de um a três, cento e cinquenta; de três a dois, noventa; de dois a quatro, cento e quarenta. Total: trezentos e oitenta. Letra C!
+
+E as erradas? A A achou o x, mas tratou o y apagado como zero. A B copiou o x do vizinho da linha, cento e vinte, em vez do espelho. A D usou a distância de um a quatro, duzentos, no lugar do y. E a E somou a volta de quatro para um, que o enunciado proibiu.
+
+Para fechar, as mesmas três frases. Um: primeiro a linha, depois a coluna. Dois: tabela de mão dupla é simétrica: a diagonal é o espelho. Três: linha é o que o time fez; coluna é o que ele sofreu.
+
+Se uma matriz tem as notas da prova um e outra as da prova dois, dá para calcular as médias da turma inteira de uma vez? Dá, e a conta é casa com casa. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha trocado linha por coluna numa tabela? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

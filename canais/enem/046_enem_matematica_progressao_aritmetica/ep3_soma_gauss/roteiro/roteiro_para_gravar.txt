@@ -1,0 +1,61 @@
+Um, mais dois, mais três, e assim por diante, até cem. Um menino de dez anos deu a resposta em segundos: cinco mil e cinquenta. Ele não era mais rápido nas contas; ele só juntou os números do jeito certo.
+
+Este é o terceiro episódio da série de Progressão aritmética. Ao final, você vai somar qualquer PA em uma linha e distinguir, no enunciado, quando a pergunta é o termo e quando é a soma.
+
+Dois lembretes rápidos. Do episódio um: o termo geral. O termo de posição n é o primeiro, mais n menos um saltos de razão. E a média de dois números: some e divida por dois. Vinte e sessenta e oito: oitenta e oito, metade, quarenta e quatro. Só isso.
+
+Como alguém soma cem números em segundos? O menino era Gauss, que virou um dos maiores matemáticos da história. Ele não somou na ordem. Juntou o primeiro com o último: um mais cem, cento e um. Depois o segundo com o penúltimo: dois mais noventa e nove, cento e um de novo. Três mais noventa e oito: cento e um.
+
+E quantos pares são? Cem números, de dois em dois: cinquenta pares. Todos valendo cento e um. Cinquenta vezes cento e um: cinco mil e cinquenta. O primeiro e o último têm nome: são os extremos. O truque de Gauss: todos os pares dão a mesma soma.
+
+Mas por que os pares dão sempre igual? Monte uma escada de bloquinhos: um, dois, três, quatro, cinco, seis. Agora uma segunda escada, igual, de cabeça para baixo. Encaixe as duas. Elas formam um retângulo: seis colunas de sete bloquinhos cada. Duas somas valem seis vezes sete, quarenta e dois. Uma soma só é a metade: vinte e um. É por isso que se divide por dois.
+
+E isso vira fórmula? Vira. A soma dos n primeiros termos é tudo somado, do primeiro até o de posição n. Ela se escreve esse ene. Esse ene é igual a a um mais a ene, vezes n, dividido por dois. Leia assim: número de termos vezes a média dos extremos. A média do primeiro com o último, vezes quantos termos há.
+
+E como fazer essa conta sem calculadora? Atalho: divida por dois antes. Procure o número par: a soma dos extremos ou o número de termos. Corte ele pela metade primeiro. De um a cem: cento e um vezes cem, dividido por dois. Corte o cem: cento e um vezes cinquenta. Conta de cabeça.
+
+E numa PA que não começa no um? Um teatro tem vinte e cinco fileiras. A primeira tem vinte cadeiras; cada uma tem duas a mais que a anterior. A última fileira não foi dada. Calcule antes: vinte, mais vinte e quatro saltos de dois. Sessenta e oito. Média dos extremos: quarenta e quatro. Vezes vinte e cinco fileiras: mil e cem cadeiras.
+
+Tem alguma soma que vale a pena decorar? Duas. A dos n primeiros números naturais: um mais dois até n dá n vezes n mais um, sobre dois. É o Gauss em uma linha. E a dos ímpares: os n primeiros ímpares somam n ao quadrado. Um mais três: quatro. Mais cinco: nove. Os dez primeiros ímpares: cem.
+
+E se você não souber o primeiro nem o último? Termos equidistantes dos extremos são os que estão à mesma distância das pontas: o segundo e o penúltimo, o terceiro e o antepenúltimo. Na PA três, cinco, sete, até vinte e cinco, com doze termos: o segundo mais o décimo primeiro dá cinco mais vinte e três, vinte e oito. Igual a três mais vinte e cinco. Atalho: os índices somam n mais um. Dois mais onze, treze. Basta um par para ter a soma: vinte e oito vezes doze, dividido por dois, cento e sessenta e oito.
+
+E quando a quantidade de termos é ímpar? Aí existe um termo médio: o que fica exatamente no meio da fila. Atalho: ele já é a média dos extremos. Oito, onze, quatorze, dezessete, vinte. O do meio é quatorze. Cinco termos vezes quatorze: setenta. Sem somar nada.
+
+E você já usou isso sem saber? Já, disfarçado. Na série de Empréstimos, os juros do SAC caíam assim: quatrocentos, trezentos e vinte, duzentos e quarenta, cento e sessenta, oitenta. Uma PA. O total de juros foi quatrocentos mais oitenta, vezes cinco, dividido por dois: mil e duzentos. Era a soma de Gauss o tempo todo.
+
+Sua vez. Quanto dá a soma dos vinte primeiros termos de cinco, oito, onze, e assim por diante? Pause e tente.
+
+Vamos juntos. O último termo não foi dado. Primeiro ele: cinco, mais dezenove saltos de três. Cinco mais cinquenta e sete: sessenta e dois. Agora a soma: cinco mais sessenta e dois, sessenta e sete. Vezes vinte, dividido por dois. A metade antes: vinte vira dez. Sessenta e sete vezes dez: seiscentos e setenta.
+
+Vamos guardar em três frases. Um: primeiro com último: todos os pares dão a mesma soma. Dois: soma é número de termos vezes a média dos extremos. Três: no décimo segundo é termo; em doze ou ao todo é soma.
+
+Agora, os três erros clássicos. Primeiro: esquecer de dividir por dois. Sessenta e sete vezes vinte: mil trezentos e quarenta. Parece certo, porque você juntou os extremos e multiplicou pelos termos. Mas assim você somou a fila duas vezes: as duas escadas. A soma é a metade: seiscentos e setenta.
+
+Segundo: responder o termo quando pedem a soma, ou o contrário. Sessenta e dois no lugar de seiscentos e setenta. Parece certo, porque as duas contas aparecem na resolução, e as duas estão nas alternativas. Atalho: sublinhe a palavra. No vigésimo é termo; ao todo é soma.
+
+Terceiro: calcular o último termo com n saltos. Cinco mais vinte vezes três: sessenta e cinco. E a soma vira setecentos. Parece certo, porque são vinte termos, então parecem vinte saltos. Mas do primeiro ao vigésimo são dezenove saltos. Sempre n menos um.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. Um teatro tem vinte e cinco fileiras. A primeira tem vinte cadeiras, e cada fileira seguinte tem duas a mais que a anterior. O número total de cadeiras do teatro é: A: mil e cem. B: mil cento e vinte e cinco. C: mil cento e cinquenta. D: mil e setecentos. E: dois mil e duzentos. Pause o vídeo e tente.
+
+Termo ou soma? Total: é soma. Última fileira: vinte mais vinte e quatro vezes dois, sessenta e oito. Vinte mais sessenta e oito: oitenta e oito. Metade: quarenta e quatro. Vezes vinte e cinco: mil e cem. Faz sentido: a fileira do meio tem quarenta e quatro cadeiras. Letra A!
+
+E as armadilhas? A B dá um salto a mais: última fileira com setenta. A C faz a primeira fileira também ganhar duas cadeiras: quinhentos mais seiscentos e cinquenta. A D supõe que todas as fileiras têm sessenta e oito. E a E esquece de dividir por dois.
+
+Agora fazemos juntos. Um atleta correu dois quilômetros no primeiro dia de treino e, a cada dia seguinte, meio quilômetro a mais. Ao fim dos doze primeiros dias, a distância total foi, em quilômetros: A: quarenta e cinco. B: cinquenta e sete. C: sessenta. D: noventa. E: cento e quatorze. Pause e tente.
+
+Sublinhe a palavra. Ao fim dos doze dias: é soma. O décimo segundo dia: dois, mais onze saltos de meio. Dois mais cinco e meio: sete e meio. Extremos: dois mais sete e meio, nove e meio. A metade antes: doze vira seis. Nove e meio vezes seis: cinquenta e sete. Letra B!
+
+E as armadilhas? A A esquece o primeiro termo na soma. A C dá doze saltos: último dia com oito. A D faz o atleta correr sete e meio todos os dias. E a E esquece de dividir por dois.
+
+E esta é sua. Em uma progressão aritmética de vinte termos, a soma do terceiro com o décimo oitavo termo é igual a cinquenta. A soma de todos os vinte termos é: A: duzentos e cinquenta. B: quatrocentos e cinquenta. C: quatrocentos e setenta e cinco. D: quinhentos. E: mil. Pause o vídeo e tente.
+
+Conferindo. Três mais dezoito: vinte e um. Um mais vinte: também vinte e um. São equidistantes. Então o primeiro mais o último também dá cinquenta. Soma: cinquenta vezes vinte, dividido por dois. Cinquenta vezes dez: quinhentos. Sem achar o primeiro termo, sem achar a razão. Letra D!
+
+E as armadilhas? A A divide por dois duas vezes. A B conta dezoito termos, e a C, dezenove: erros de contagem. E a E esquece de dividir por dois.
+
+Para fechar, as mesmas três frases. Um: primeiro com último: todos os pares dão a mesma soma. Dois: soma é número de termos vezes a média dos extremos. Três: no décimo segundo é termo; em doze ou ao todo é soma.
+
+Juros simples, calendário, prestação de financiamento: a PA aparece em muito lugar sem dizer o nome. E você já esbarrou nela em outras séries. Próximo episódio: a PA disfarçada.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você conseguiria somar de um a cem antes do Gauss? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

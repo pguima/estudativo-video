@@ -1,0 +1,248 @@
+Função Modular
+Matemática › Álgebra e Funções › Assunto 11 de 18
+Função modular e funções definidas por partes
+Conta de água, tarifa de estacionamento, imposto por faixas, margem de tolerância de uma peça: tudo isso é uma regra que muda de fórmula conforme o valor de entrada. Este assunto ensina a ler e montar funções por partes e a usar o módulo, a função “distância”, que é o caso mais famoso delas.
+Semana
+8 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Conceito de função · Função afim · Equações e inequações do 1º grau
+Destrava
+Função composta e inversa, leitura de tarifas e tabelas progressivas, desvio absoluto em estatística
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM raramente escreve “função modular” no enunciado. O que aparece, quase todo ano, são regras por faixas descritas em texto, tabela ou gráfico. As formas mais comuns:
+Calcular uma tarifa por faixas: conta de água ou de energia, estacionamento, frete, plano de celular com franquia.
+Escolher o gráfico certo: qual gráfico representa uma cobrança que é fixa até certo ponto e depois cresce? Saltos, trechos horizontais e mudanças de inclinação são a pista.
+Interpretar tolerâncias: “a medida pode variar no máximo 2 mm em relação a 50 mm” é exatamente a inequação |x − 50| ≤ 2.
+Distâncias na reta: quanto falta, quanto passou, quando a diferença vale um certo número — o módulo transforma tudo em distância positiva.
+O que rende mais aqui
+Duas habilidades. Primeiro, descobrir em qual faixa o valor cai antes de aplicar a fórmula: a lei certa depende da entrada. Segundo, nas faixas progressivas, cobrar cada parte pela taxa da sua faixa, e não o valor inteiro pela taxa da última faixa. Quem domina essas duas acerta a maioria das questões do tema.
+02 Módulo de um número: distância até o zero
+Definição
+O módulo (ou valor absoluto) de um número real x, escrito |x|, é a distância de x até o zero na reta numérica. Como distância, nunca é negativo.
+|x| = x, se x ≥ 0 e |x| = −x, se x < 0
+A segunda linha assusta, mas é simples: se x é negativo, −x é positivo. Por exemplo, |−7| = −(−7) = 7. O módulo “apaga o sinal”, e só isso.
+Módulo é distância. Em cima, −3 e 3 estão à mesma distância do zero, por isso |−3| = |3| = 3. Embaixo, a distância entre dois pontos quaisquer a e b é |a − b|: entre −2 e 4 há 6 unidades, em qualquer ordem que se faça a subtração.
+ | Expressão | Valor | Por quê
+ | |−12| | 12 | distância de −12 ao zero
+ | |5 − 9| | 4 | primeiro a conta de dentro: |−4| = 4
+ | |9 − 5| | 4 | a ordem da subtração não muda a distância
+ | |−3| + |3| | 6 | cada módulo vale 3
+ | |−3 + 3| | 0 | soma dentro primeiro: |0| = 0
+Módulo não “tira o menos” de uma letra
+|−x| não é x sempre: se x = −5, então |−x| = |5| = 5, que é −x, e não x. O correto é |−x| = |x|. Também vale √(x²) = |x|: com x = −5, √(25) = 5, e não −5.
+03 Funções definidas por partes
+Uma função definida por partes usa uma lei diferente em cada intervalo do domínio. Ela se escreve com uma chave, e cada linha vem com a sua condição:
+Conta de água de uma companhia fictícia (consumo em m³, valor em reais)
+f(x) = 40, se 0 ≤ x ≤ 10
+f(x) = 40 + 6(x − 10), se 10 < x ≤ 20
+f(x) = 100 + 9(x − 20), se x > 20
+O 100 da terceira linha é o valor da conta exatamente em 20 m³: 40 + 6 · 10 = 100. Cada faixa “parte de onde a anterior parou”.
+Três leis, um gráfico só. A tarifa é constante até 10 m³ (trecho horizontal), sobe 6 reais por m³ entre 10 e 20 e 9 reais por m³ acima de 20: a inclinação aumenta a cada faixa. Para 26 m³: 100 + 9 · 6 = 154 reais.
+Para calcular f(x), faça sempre em duas etapas: 1) descubra em que faixa o valor de entrada está; 2) use só a lei daquela faixa. Valores nas fronteiras (10, 20) pedem atenção ao sinal ≤ ou < de cada linha.
+Saltos e tarifas “por fração”
+Nem toda função por partes é contínua. Um estacionamento que cobra “R$ 10,00 a primeira hora e R$ 4,00 por hora adicional ou fração” tem gráfico em escada: o preço fica parado dentro de cada hora e dá um salto ao começar a seguinte. Ficar 2 h 05 min custa o mesmo que ficar 3 h: 10 + 2 · 4 = 18 reais. Nos gráficos em escada, a bolinha cheia marca o valor que vale na fronteira e a vazia, o que não vale.
+04 A função modular e seu gráfico em V
+A função f(x) = |x| é a função por partes mais famosa: f(x) = x para x ≥ 0 e f(x) = −x para x < 0. O gráfico, desenhado no cabeçalho, é um V com vértice na origem: duas semirretas de inclinação 1 e −1.
+Deslocamentos funcionam como em qualquer função:
+ | Função | O que acontece com o V | Vértice
+ | y = |x − 3| | anda 3 para a direita (o sinal engana) | (3, 0)
+ | y = |x + 2| | anda 2 para a esquerda | (−2, 0)
+ | y = |x| + 1 | sobe 1 | (0, 1)
+ | y = |x − 2| − 1 | 2 para a direita e 1 para baixo; corta o eixo x em 1 e 3 | (2, −1)
+ | y = 2|x| | V mais fechado (inclinações 2 e −2) | (0, 0)
+ | y = −|x| | V de cabeça para baixo | (0, 0)
+Onde está o vértice
+O vértice de y = |x − a| + b é o ponto (a, b): a é o valor que zera o que está dentro do módulo. Esse é o ponto de mínimo da função: |x − a| nunca é menor que zero, então y nunca é menor que b. A imagem é [b, +∞[.
+05 O gráfico de |f(x)|: rebater o que está abaixo do eixo
+Para desenhar y = |f(x)| partindo do gráfico de f: o que está acima do eixo x fica igual; o que está abaixo é espelhado para cima. Nenhum ponto do gráfico fica com y negativo.
+Rebatendo uma parábola. A parábola y = x² − 4 fica negativa entre −2 e 2. No gráfico de y = |x² − 4| esse trecho sobe, e o vértice (0, −4) vira um máximo local (0, 4). As raízes −2 e 2 não mudam: módulo de zero é zero.
+Contando soluções pelo gráfico
+Quantas soluções tem |x² − 4| = k? Trace a reta horizontal y = k no gráfico da direita. Para k < 0, nenhuma; k = 0, duas; 0 < k < 4, quatro; k = 4, três; k > 4, duas. O gráfico responde sem conta nenhuma.
+06 Equações modulares
+Se a distância de algo até o zero vale k, esse algo vale k ou −k. É toda a teoria:
+Regra
+|A| = k (com k > 0) ⇔ A = k ou A = −k
+Se k = 0, só A = 0. Se k < 0, não há solução: módulo nunca é negativo.
+Exemplo · um módulo igual a um número
+Resolver |2x − 5| = 7:
+2x − 5 = 7 → x = 6 ou 2x − 5 = −7 → x = −1
+Conferência: |12 − 5| = 7 e |−2 − 5| = |−7| = 7. Solução: {−1, 6}.
+Exemplo · módulo igual a módulo
+Em |x − 1| = |x − 7|, leia como distância: x está à mesma distância de 1 e de 7. Só o ponto médio serve: x = 4. Algebricamente, x − 1 = x − 7 (impossível) ou x − 1 = −(x − 7), que dá 2x = 8.
+Quando o lado direito tem letra
+Em |x − 2| = 2x − 1, o lado direito precisa ser ≥ 0. Resolva os dois casos e teste cada resposta na equação original: x − 2 = 2x − 1 dá x = −1, mas aí 2x − 1 = −3, negativo; descarte. O outro caso, x − 2 = −2x + 1, dá x = 1, que confere: |−1| = 1.
+07 Inequações modulares e tolerância
+De novo, pense em distância. “Distância até o zero menor que k” é um intervalo em volta do zero; “maior que k” são as duas pontas de fora.
+ | Inequação | Equivale a | Na reta
+ | |x| < k | −k < x < k | um intervalo só, “entre”
+ | |x| ≤ k | −k ≤ x ≤ k | intervalo fechado
+ | |x| > k | x < −k ou x > k | duas semirretas, “fora”
+ | |x − a| ≤ k | a − k ≤ x ≤ a + k | intervalo centrado em a, raio k
+Tolerância é módulo. “Pacote de 500 g com tolerância de 8 g” significa |m − 500| ≤ 8: aceita-se de 492 g a 508 g, com as pontas incluídas porque o sinal é ≤.
+Tradução direta
+“O valor x difere de a em no máximo k” → |x − a| ≤ k → de a − k a a + k. “Difere em mais de k” → |x − a| > k → abaixo de a − k ou acima de a + k. Centro e raio: é só isso que o enunciado precisa dar.
+08 Faixas progressivas: cada parte paga a taxa da sua faixa
+Muitos impostos e tarifas são progressivos: a alíquota maior incide só sobre a parte do valor que passa do limite, não sobre o valor todo. É uma função por partes em que cada faixa acrescenta um pedaço.
+Exemplo · taxa municipal fictícia sobre o lucro mensal
+Até R$ 2 000: isento. Parte entre R$ 2 000 e R$ 5 000: 10%. Parte acima de R$ 5 000: 20%. Para um lucro de R$ 7 000:
+0 + 0,10 · 3 000 + 0,20 · 2 000 = 300 + 400 = 700
+Cobrar 20% sobre os 7 000 inteiros daria 1 400, o dobro. A lei por partes, para x > 5 000, é T(x) = 300 + 0,2(x − 5 000).
+Progressiva × faixa única
+Leia o enunciado procurando a palavra “parte”, “excedente” ou “que ultrapassar”. Se ela aparece, a cobrança é progressiva (soma por faixas). Se o texto diz “quem consome mais de 20 m³ paga R$ 9,00 por m³” sem falar de excedente, a taxa vale para o consumo inteiro, e o gráfico tem um salto na fronteira.
+Atalho da “parcela a deduzir”
+Tabelas progressivas reais costumam trazer, para cada faixa, uma alíquota e uma “parcela a deduzir”: aplica-se a alíquota ao valor inteiro e subtrai-se a parcela. No exemplo, para lucros acima de 5 000: 0,2x − 700. Com x = 7 000: 1 400 − 700 = 700, o mesmo resultado. A parcela existe justamente para corrigir o excesso de cobrar a alíquota maior sobre tudo.
+09 Estratégia de prova
+1 · Localize a faixa antes de calcular
+Escreva ao lado do valor de entrada qual linha da regra ele usa. Depois, calcule só com ela. Na fronteira, confira o ≤.
+2 · Teste dois pontos no gráfico
+Em “qual gráfico representa”, calcule a função em um valor de cada faixa (por exemplo, 5 m³ e 25 m³) e procure o gráfico que passa pelos dois. Trechos horizontais significam valor fixo; saltos significam mudança de regra sem continuidade.
+3 · Transforme módulo em distância
+|x − a| é “distância de x até a”. Equações e inequações modulares quase sempre se resolvem desenhando a reta, sem álgebra pesada. E toda resposta de equação modular se confere substituindo.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Física | distância percorrida × deslocamento | quem vai 3 km para a frente e volta 3 km tem deslocamento 0, mas percorreu |3| + |−3| = 6 km
+ | Física | erro de medida x ± Δx | é a tolerância |x_real − x| ≤ Δx
+ | Estatística | desvio médio absoluto | média dos |x_i − média|: o módulo impede que desvios positivos e negativos se anulem
+ | Matemática Financeira | impostos e tarifas progressivas | cada parte do valor paga a alíquota da sua faixa
+ | Geografia | diferença de fuso horário, variação de temperatura | a amplitude térmica entre −4 °C e 9 °C é |9 − (−4)| = 13 °C
+11 Os erros que mais custam pontos
+|x| = 5 → x = 5 → x = 5 ou x = −5Dois pontos estão à distância 5 do zero.
+|x| = −3 → x = ±3 → sem soluçãoMódulo nunca é negativo.
+|x| < 4 → x < ±4 → −4 < x < 4“Menor que” fica entre; “maior que” fica fora.
+|x − 3|: V anda 3 para a esquerda → para a direitaO vértice está onde o de dentro zera: x = 3.
+|a + b| = |a| + |b| → só se a e b têm o mesmo sinal|−3 + 3| = 0, mas |−3| + |3| = 6.
+√(x²) = x → √(x²) = |x|Para x = −5 a raiz dá 5.
+Taxa da última faixa sobre o valor todo → cada parte na sua faixaEm cobrança progressiva, soma-se faixa por faixa.
+Usar a lei da faixa errada → localizar a faixa primeiroConfira as fronteiras com ≤ e <.
+“hora ou fração” proporcional → arredonda para cimaComeçou a hora, paga a hora inteira.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: em que faixa está o valor? O módulo pode ser lido como distância?
+Questão 1 · Conta de água por faixas
+Uma companhia de saneamento cobra a água consumida no mês assim: tarifa mínima de R$ 40,00 para consumo de até 10 m³; R$ 6,00 por m³ que exceder 10 m³, até 20 m³; e R$ 9,00 por m³ que exceder 20 m³. Uma residência consumiu 26 m³ em um mês. O valor da conta, em reais, foi
+R$ 136,00
+R$ 154,00
+R$ 156,00
+R$ 184,00
+R$ 234,00
+Ver resolução
+Cada faixa paga a sua parte: os primeiros 10 m³ estão na tarifa mínima; de 10 a 20 m³ são 10 m³ a R$ 6,00; de 20 a 26 m³ são 6 m³ a R$ 9,00.
+40 + 10 · 6 + 6 · 9 = 40 + 60 + 54 = 154
+A alternativa A cobra os 16 m³ acima de 10 todos a R$ 6,00 (40 + 16 · 6), esquecendo a terceira faixa. A C multiplica o consumo todo por 6 (26 · 6). A D cobra os 16 m³ excedentes todos a R$ 9,00 (40 + 16 · 9). A E aplica R$ 9,00 a todo o consumo (26 · 9), como se a última faixa valesse para tudo.
+Alternativa B
+Questão 2 · Tolerância como inequação modular
+Uma máquina embala pacotes de café com massa nominal de 500 g. O controle de qualidade aprova um pacote de massa m, em gramas, quando |m − 500| ≤ 8. Os pacotes aprovados são exatamente aqueles cuja massa satisfaz
+m ≤ 508
+492 < m < 508
+496 ≤ m ≤ 504
+492 ≤ m ≤ 508
+m ≤ 492 ou m ≥ 508
+Ver resolução
+|m − 500| ≤ 8 diz que a distância entre m e 500 é de no máximo 8: −8 ≤ m − 500 ≤ 8, ou seja, 492 ≤ m ≤ 508.
+A A só usa o limite de cima e aprovaria um pacote de 300 g. A B exclui as pontas, mas o sinal é ≤: um pacote de exatamente 508 g é aprovado. A C divide a tolerância por 2, como se 8 fosse a largura total do intervalo. A E é a resposta de |m − 500| ≥ 8: os pacotes de fora.
+Alternativa D
+Questão 3 · Lendo o gráfico em V
+Um engenheiro modela o perfil de uma calha pela função f(x) = |x − 2| − 1, em que x e f(x) são medidos em metros. O ponto mais baixo do gráfico de f e os valores de x em que f(x) = 0 são, respectivamente,
+(2, −1); x = 1 e x = 3
+(−2, −1); x = −3 e x = −1
+(2, 1); não há valores
+(−2, 1); x = 1 e x = 3
+(2, −1); x = −1 e x = 3
+Ver resolução
+O vértice de |x − a| + b é (a, b): aqui, (2, −1). Zeros: |x − 2| = 1, então x − 2 = 1 ou x − 2 = −1, isto é, x = 3 ou x = 1.
+A B lê o “− 2” como deslocamento para a esquerda. A C troca o sinal do −1 e conclui que o V fica acima do eixo. A D erra o vértice nos dois sinais, embora os zeros estejam certos. A E resolve o segundo caso como x − 2 = −1 → x = −1, errando a conta.
+Conferência: f(1) = |−1| − 1 = 0 e f(3) = |1| − 1 = 0.
+Alternativa A
+Questão 4 · Equação modular
+Em um jogo de tabuleiro, a casa de um peão é dada por um número inteiro x, e uma regra exige que |2x − 5| = 7. O conjunto de valores de x que cumprem a regra é
+{6}
+{−6, 1}
+{−1, 6}
+{1, 6}
+vazio
+Ver resolução
+Dois casos: 2x − 5 = 7 dá x = 6; 2x − 5 = −7 dá 2x = −2, x = −1.
+A A esquece o caso negativo. A B troca os sinais das duas soluções. A D erra o segundo caso fazendo 2x = 7 − 5 em vez de 2x = −7 + 5. A E confunde com |A| = −7, que de fato não teria solução; aqui o 7 é positivo.
+Conferência: |12 − 5| = 7 e |−2 − 5| = 7.
+Alternativa C
+Questão 5 · Tarifa “por hora ou fração”
+Um estacionamento cobra R$ 10,00 pela primeira hora e R$ 4,00 por hora adicional ou fração de hora adicional, com valor máximo de R$ 30,00 por dia. Um cliente deixou o carro das 8 h 10 min às 12 h 30 min do mesmo dia. Ele pagou
+R$ 14,00
+R$ 22,00
+R$ 23,33
+R$ 26,00
+R$ 30,00
+Ver resolução
+O carro ficou 4 h 20 min. A primeira hora custa 10. Sobram 3 h 20 min de horas adicionais; como fração conta como hora inteira, são 4 horas adicionais: 4 · 4 = 16.
+10 + 16 = 26 (abaixo do teto de 30)
+A A cobra uma só hora adicional. A B ignora os 20 minutos finais (3 adicionais). A C cobra proporcionalmente, 10 + 4 · 3,33…, o que a regra “ou fração” não permite. A E aplica o teto diário, que só valeria se a conta passasse de 30.
+Alternativa D
+Questão 6 · Contar soluções pelo gráfico rebatido
+O gráfico de g(x) = |x² − 4| é obtido a partir da parábola y = x² − 4 refletindo para cima o trecho que fica abaixo do eixo x. A quantidade de números reais x tais que g(x) = 3 é
+nenhuma
+uma
+duas
+três
+quatro
+Ver resolução
+|x² − 4| = 3 dá dois casos. x² − 4 = 3: x² = 7, x = ±√(7). x² − 4 = −3: x² = 1, x = ±1. São quatro soluções. No gráfico, a reta y = 3 passa abaixo do máximo local (0, 4) e corta o arco central duas vezes e as duas pernas externas uma vez cada.
+A C resolve só o caso positivo (±√(7)). A D seria a resposta para g(x) = 4, quando a reta toca o topo do arco. A B conta apenas uma raiz por caso, esquecendo o ±. A A acha que o módulo impede a igualdade, o que só ocorreria com número negativo.
+Alternativa E
+Questão 7 · Taxa progressiva
+Um município cobra uma taxa mensal sobre o lucro de pequenos negócios: a parte do lucro até R$ 2 000,00 é isenta; a parte entre R$ 2 000,00 e R$ 5 000,00 paga 10%; a parte que exceder R$ 5 000,00 paga 20%. Um negócio que teve lucro de R$ 7 000,00 no mês pagará de taxa
+R$ 500,00
+R$ 700,00
+R$ 900,00
+R$ 1 000,00
+R$ 1 400,00
+Ver resolução
+Faixa por faixa: isenção nos primeiros 2 000; 10% de 3 000 (de 2 000 a 5 000) = 300; 20% de 2 000 (de 5 000 a 7 000) = 400. Total: 700.
+A A aplica 10% sobre 5 000 e para aí, esquecendo a última faixa. A C aplica 10% desde o zero, sem a isenção: 500 + 400. A D aplica 20% sobre tudo o que passa de 2 000: 0,2 · 5 000. A E aplica 20% sobre o lucro inteiro, o erro clássico da cobrança progressiva.
+Alternativa B
+Questão 8 · Montar a lei de um plano com franquia
+Um plano de internet móvel custa R$ 50,00 por mês e inclui 10 GB. Cada GB consumido além da franquia custa R$ 8,00. Sendo x o consumo mensal em GB e f(x) o valor da fatura em reais, a lei de f é
+f(x) = 50 + 8x, para todo x ≥ 0
+f(x) = 50 se 0 ≤ x ≤ 10; f(x) = 8(x − 10) se x > 10
+f(x) = 50 se 0 ≤ x ≤ 10; f(x) = 50 + 8(x − 10) se x > 10
+f(x) = 50 se 0 ≤ x ≤ 10; f(x) = 50 + 0,8(x − 10) se x > 10
+f(x) = 50 + 8(x − 10), para todo x ≥ 0
+Ver resolução
+Até 10 GB paga-se só o fixo. Acima, o fixo continua e soma-se R$ 8,00 por GB excedente, x − 10: f(x) = 50 + 8(x − 10) para x > 10.
+A A cobra todos os GB, inclusive os da franquia. A B esquece os R$ 50,00 fixos acima de 10 GB: com 11 GB, a fatura cairia para R$ 8,00. A D usa R$ 0,80 por GB. A E vale para todo x e daria fatura de R$ 10,00 para quem não consome nada.
+Conferência: f(10) = 50 pelas duas linhas, então o gráfico não tem salto; f(15) = 50 + 40 = 90.
+Alternativa C
+Questão 9 · Distância como módulo ao longo do tempo
+Um ciclista parte do km 0 de uma ciclovia retilínea e pedala no sentido crescente da quilometragem a 4 km/h constantes. Um posto de apoio fica no km 12. A distância entre o ciclista e o posto, em km, após t horas, é d(t) = |4t − 12|, para 0 ≤ t ≤ 6. Essa distância vale 4 km
+somente em t = 2 h
+somente em t = 4 h
+em t = 2 h e em t = 3 h
+em t = 1 h e em t = 4 h
+em t = 2 h e em t = 4 h
+Ver resolução
+|4t − 12| = 4: 4t − 12 = 4 dá t = 4 (já passou do posto, no km 16); 4t − 12 = −4 dá t = 2 (ainda antes do posto, no km 8). Os dois instantes estão no intervalo de 0 a 6 h.
+A A e a B ficam com um caso só: o ciclista está a 4 km do posto uma vez antes e outra depois de passar por ele. A C inclui t = 3, instante em que a distância é zero. A D resolve o caso negativo como 4t = 4, esquecendo de somar 12.
+Alternativa E
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Explico o módulo como distância até o zero e calculo |a − b| como distância entre dois pontos
+Escrevo |x| como função por partes e sei que √(x²) = |x|
+Calculo o valor de uma função por partes localizando primeiro a faixa da entrada
+Monto a lei de uma tarifa com parte fixa e cobrança do excedente
+Reconheço no gráfico trechos constantes, mudanças de inclinação e saltos
+Aplico corretamente a regra “por hora ou fração”
+Encontro o vértice de y = |x − a| + b e esboço o V deslocado
+Desenho |f(x)| rebatendo para cima a parte negativa do gráfico de f
+Resolvo |A| = k pelos dois casos e reconheço quando não há solução
+Confiro na equação original as soluções quando o lado direito tem incógnita
+Transformo |x − a| ≤ k e |x − a| > k em intervalos
+Traduzo “tolerância de k em torno de a” para uma inequação modular
+Calculo impostos e tarifas progressivas faixa por faixa
+Antes de marcar “Dominado” no cronograma
+Resolva 25 questões e acerte pelo menos 18, com pelo menos dez de tarifas por faixas ou leitura de gráfico por partes. Depois siga para Função composta e função inversa, onde as funções passam a ser encadeadas e desfeitas.
+Flashcards para o Anki
+Foram gerados 36 cartões deste assunto no arquivo ENEM-Matematica-29-funcao-modular-funcoes-por-partes.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

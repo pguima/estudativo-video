@@ -1,0 +1,63 @@
+Mil reais a dez por cento ao mês. Em juros simples, depois de quatro meses, mil e quatrocentos reais. Em juros compostos, mil, quatrocentos e sessenta e quatro reais e dez centavos. Os mesmos dez por cento. Quem cria esses sessenta e quatro reais e dez a mais são os juros que passaram a render juros.
+
+Ao final desta aula, você vai calcular qualquer montante em juros compostos e encadear taxas diferentes sem somar porcentagens.
+
+Antes, três lembretes rápidos. Da série de Juros simples: capital é o valor do começo, juros é o acréscimo, montante é o total. Da Porcentagem: aumentar dez por cento é multiplicar por um vírgula dez, e dois aumentos seguidos multiplicam os fatores. E da Potenciação: um vírgula um ao cubo é um vírgula um, três vezes, multiplicado.
+
+Sabe aquela dívida do cartão de crédito que parece crescer sozinha? Você não gasta mais nada, e todo mês ela está maior que no mês anterior. E a poupança faz o mesmo, só que a seu favor: ela rende sobre o que já rendeu. É uma bola de neve: a cada volta, ela pega neve sobre a neve que já tinha, e cresce cada vez mais rápido.
+
+E o que muda, exatamente, dos juros simples para os compostos? O saldo é quanto você tem na conta naquele momento. Em juros compostos, os juros de cada mês são calculados sobre o saldo do mês anterior, que já inclui os juros acumulados. O juro do mês entra no saldo e passa a render também. Isso se chama incorporar os juros, ou capitalizar.
+
+Quanto isso faz de diferença? Vamos montar mês a mês: mil reais, dez por cento ao mês. No primeiro mês, dez por cento de mil: cem reais. Saldo, mil e cem. No segundo mês, os juros são dez por cento de mil e cem: cento e dez. Saldo, mil, duzentos e dez.
+
+No terceiro, dez por cento de mil, duzentos e dez: cento e vinte e um. Saldo, mil, trezentos e trinta e um. No quarto, cento e trinta e três e dez. Saldo, mil, quatrocentos e sessenta e quatro e dez. E em juros simples? Cem reais todo mês, sempre sobre os mil do começo. Repare: é sempre dez por cento, mas de um saldo cada vez maior.
+
+E quando os dois regimes começam a se separar? No primeiro mês, empatam: cem contra cem. A diferença nasce no segundo mês: dez reais, que são os juros dos cem do primeiro mês. Depois, vinte e um, trinta e três e dez... e cresce sem parar. É a bola de neve.
+
+E dá para pular a tabela? Dá. Repare que cada mês faz a mesma coisa: o saldo vezes um vírgula dez. Mil vezes um vírgula um, mil e cem. Vezes um vírgula um, mil, duzentos e dez. Pense em fatores, não em porcentagens somadas: cada período multiplica o saldo por um mais i.
+
+E depois de t meses? O capital foi multiplicado t vezes pelo mesmo fator. E multiplicação repetida se escreve como potência. M igual a C vezes, abre parênteses, um mais i, fecha parênteses, elevado a t. O número pequeno lá em cima é o expoente. Ele conta quantas vezes o fator foi aplicado: três anos, três multiplicações. E o número um mais i, elevado a t tem nome: fator de capitalização.
+
+E se a questão pedir só os juros? Em juros compostos, não existe fórmula direta dos juros. Você calcula o montante e tira o capital: J igual a M menos C.
+
+Agora um exemplo completo. Cinco mil reais a dois por cento ao mês, durante três meses. Primeiro, o fator de um mês: dois por cento a mais é um vírgula zero dois. Três meses, três multiplicações: um vírgula zero dois ao cubo.
+
+Passo a passo. Um vírgula zero dois vezes um vírgula zero dois: um vírgula zero quatro zero quatro. Vezes um vírgula zero dois de novo: um vírgula zero seis um dois zero oito. Montante: cinco mil vezes esse fator, cinco mil, trezentos e seis reais e quatro centavos. Juros: trezentos e seis e quatro. Em juros simples, seriam trezentos redondos. Os seis reais e quatro centavos a mais são os juros sobre os juros.
+
+E como multiplicar esses fatores sem calculadora? Atalho: multiplicar por um vírgula um é somar o número com o décimo dele. Um vírgula vinte e um, mais zero vírgula cento e vinte e um: um vírgula trezentos e trinta e um. E multiplicar por um vírgula zero dois é somar dois por cento do próprio número: cinco mil mais cem, cinco mil e cem.
+
+E se a taxa for ao ano e o prazo, em meses? A regra é a mesma dos juros simples: taxa e tempo no mesmo período. Mas aqui, dividir a taxa anual por doze não funciona. Isso tem série própria: taxas equivalentes. Nas questões deste assunto, a taxa já vem no período certo.
+
+E se cada mês tiver uma taxa diferente? Você já viu isso na Porcentagem: multiplique os fatores de cada período. Cinco por cento num mês, dez por cento no outro: um vírgula zero cinco vezes um vírgula dez, um vírgula cento e cinquenta e cinco. Aumento de quinze vírgula cinco por cento, e não de quinze.
+
+Sua vez. Dois mil reais a juros compostos de dez por cento ao mês, durante dois meses. Qual é o montante, e quanto foi de juros? Pause e tente.
+
+Vamos juntos. Fator de um mês: um vírgula um. Dois meses: um vírgula um ao quadrado, um vírgula vinte e um. Montante: dois mil vezes um vírgula vinte e um, dois mil, quatrocentos e vinte reais. Juros, por diferença: quatrocentos e vinte. Em juros simples, seriam quatrocentos.
+
+Vamos guardar em três frases. Um: juros compostos: juros sobre juros, como bola de neve. Dois: cada período multiplica o saldo por um mais i. Três: os juros saem por diferença: montante menos capital.
+
+Agora, os quatro erros clássicos. Primeiro: usar a fórmula dos simples, C vezes um mais i vezes t, quando o regime é composto. Daria cinco mil e trezentos, e não cinco mil, trezentos e seis. Parece certo, porque você acabou de aprender essa fórmula. Leia a palavra no enunciado: compostos pede potência.
+
+Segundo: somar as taxas. Dez por cento por dois anos seria vinte por cento. Parece certo, porque dez mais dez é vinte. Mas em compostos é um vírgula um ao quadrado, um vírgula vinte e um: vinte e um por cento.
+
+Terceiro: responder o montante quando pedem os juros, ou o contrário. Cinco mil, trezentos e seis no lugar de trezentos e seis. Parece certo, porque a fórmula entrega o montante, e ele está nas alternativas. Se a pergunta é quanto rendeu, tire o capital.
+
+Quarto: contar um período a mais. Três anos viram expoente quatro. Parece certo, porque do ano zero ao ano três há quatro números. Mas o expoente conta multiplicações: três anos, expoente três.
+
+Agora, uma questão no estilo do ENEM, do nosso material de estudo. Eu resolvo com você. Uma pessoa aplicou dez mil reais a juros compostos de dez por cento ao ano. Sem novos depósitos nem retiradas, o saldo ao final de três anos será de: A: três mil, trezentos e dez reais. B: treze mil. C: treze mil, trezentos e dez. D: catorze mil. E: catorze mil, seiscentos e quarenta e um reais.
+
+Primeiro, o fator de um ano: dez por cento a mais, um vírgula um. Três anos, três multiplicações: um vírgula um ao cubo. Um vírgula um, um vírgula vinte e um, um vírgula trezentos e trinta e um. Saldo: dez mil vezes um vírgula trezentos e trinta e um, treze mil, trezentos e dez reais. E a pergunta? O saldo, que é o montante. Letra C!
+
+E as outras? A B, treze mil, é o montante em juros simples: trinta por cento em três anos. A A, três mil, trezentos e dez, são só os juros, mas a pergunta é o saldo. A E usou quatro anos: expoente quatro. E a D é o montante simples desse mesmo prazo errado.
+
+E agora é sua. Um investimento de risco rendeu dez por cento no primeiro mês e vinte por cento no segundo, mas teve perda de vinte e cinco por cento no terceiro. Em relação ao valor investido no início, ao final do terceiro mês o investidor teve: A: perda de um por cento. B: ganho de cinco por cento. C: ganho de um por cento. D: ganho de trinta por cento. E: resultado nulo. Escreva o fator de cada mês. Pause o vídeo e resolva.
+
+Conferindo. Os fatores: um vírgula dez, um vírgula vinte e, na perda, zero vírgula setenta e cinco. O um vírgula dez vezes um vírgula vinte, um vírgula trinta e dois, você já conhece da série de Porcentagem. Agora, um vírgula trinta e dois vezes zero vírgula setenta e cinco: zero vírgula noventa e nove. Sobrou noventa e nove por cento do início: perda de um por cento. Letra A!
+
+E as armadilhas? A B somou as taxas: dez mais vinte menos vinte e cinco, cinco. É o raciocínio dos simples. A D somou só os ganhos. A C acertou o tamanho e errou o sinal. E a E achou que ganhos e perda quase se anulam. Não se anulam: a perda incide sobre um valor maior.
+
+Para fechar, as mesmas três frases. Um: juros compostos: juros sobre juros, como bola de neve. Dois: cada período multiplica o saldo por um mais i. Três: os juros saem por diferença: montante menos capital.
+
+Se juros compostos são juros sobre juros, eles sempre rendem mais que os simples, certo? Errado: existe um prazo em que os simples ganham. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha somado taxas que deviam ser multiplicadas? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

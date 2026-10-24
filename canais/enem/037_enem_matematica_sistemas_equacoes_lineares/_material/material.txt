@@ -1,0 +1,258 @@
+Sistemas Lineares
+Matemática › Álgebra e Funções › Assunto 4 de 18
+Sistemas de equações lineares
+Duas incógnitas pedem duas informações. Ingressos inteiros e meias, carros e motos, café caro e café barato: o ENEM adora problemas em que duas condições valem ao mesmo tempo. Este assunto ensina a montar o sistema, a resolvê-lo pelo caminho mais curto e a enxergar a solução como o cruzamento de duas retas.
+Semana
+6 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Equações e inequações do 1º grau
+Destrava
+Função afim, posição relativa de retas, problemas de mistura e de encontro
+Neste assunto
+01 O que o ENEM cobra aqui
+Sistemas lineares aparecem quase sempre como problema de texto. A conta é curta; o que separa quem acerta de quem erra é a tradução do enunciado em duas (ou três) equações. As formas mais comuns:
+Quantidade e valor: ingressos de dois preços, cédulas de dois valores, produtos de dois tipos, com o total de itens e o total arrecadado.
+Cabeças e patas: veículos e rodas, animais e patas, questões certas e erradas numa prova com pontuação negativa.
+Misturas: dois cafés, duas soluções, duas ligas metálicas com preços ou concentrações diferentes.
+Combinações de compras: “dois sanduíches e um suco custam…”, em que às vezes nem é preciso achar cada preço.
+Interpretação gráfica: o ponto de encontro de duas retas, ou por que duas tarifas nunca se igualam.
+O que rende mais aqui
+Nomear as incógnitas com unidade (“i = número de ingressos inteiros”) e escrever uma equação para cada informação do texto. Depois, olhar o que a pergunta pede: muitas vezes é uma combinação como x + y, que sai somando as equações, sem resolver o sistema inteiro.
+02 O que é um sistema e o que é uma solução
+Definição
+Um sistema linear é um conjunto de equações do 1º grau que devem valer ao mesmo tempo. Com duas incógnitas, a solução é um par ordenado (x, y) que satisfaz todas as equações.
+Uma equação sozinha, como g + c = 10, tem infinitas soluções: (1, 9), (2, 8), (6, 4)… A segunda equação é que escolhe uma delas. Num sítio com galinhas e coelhos, 10 cabeças e 28 patas:
+{ g + c = 10 (cabeças) 2g + 4c = 28 (patas)
+O par (6, 4) satisfaz as duas: 6 + 4 = 10 e 12 + 16 = 28. São 6 galinhas e 4 coelhos.
+Cada equação é uma reta de soluções; a solução do sistema é o cruzamento. Todos os pontos da reta azul têm 10 cabeças; todos os da reta laranja têm 28 patas. Só o ponto (6, 4) está nas duas.
+Testar é permitido
+Se as alternativas dão pares ou valores, substitua nas duas equações. Um par que satisfaz só uma delas é o distrator típico.
+03 Do texto ao sistema
+Quase todo problema de sistema com duas incógnitas segue o mesmo molde: uma equação conta quantidades, a outra soma valores (preço, patas, pontos, massa).
+ | Situação | Equação das quantidades | Equação dos valores
+ | 400 ingressos: inteira R$ 40, meia R$ 20, total R$ 11.200 | i + m = 400 | 40i + 20m = 11 200
+ | 30 veículos (carros e motos), 100 rodas | c + m = 30 | 4c + 2m = 100
+ | Prova de 20 questões: +5 por acerto, −2 por erro, nota 51 | a + e = 20 | 5a − 2e = 51
+ | 60 kg de café: R$ 30/kg e R$ 45/kg, mistura a R$ 40/kg | a + b = 60 | 30a + 45b = 40 · 60
+Na prova, a terceira linha dá e = 20 − a e 5a − 40 + 2a = 51, então a = 13 acertos e 7 erros.
+Frases de comparação
+“Pedro tem o dobro de Júlia” é P = 2J, e não 2P = J. Teste com números: se Júlia tem 5, Pedro tem 10, e 10 = 2 · 5 confere. “Se Pedro der 6 moedas a Júlia, ficam iguais” mexe nos dois lados: P − 6 = J + 6.
+04 Método da substituição
+Isole uma incógnita em uma das equações e substitua na outra. Funciona melhor quando alguma incógnita já aparece com coeficiente 1.
+Carros e motos · c + m = 30 e 4c + 2m = 100
+1) m = 30 − c
+2) 4c + 2(30 − c) = 100 → 4c + 60 − 2c = 100 → 2c = 40 → c = 20
+3) m = 30 − 20 = 10
+Conferência: 20 · 4 + 10 · 2 = 100 rodas.
+Parênteses na substituição
+Ao trocar m por 30 − c, o coeficiente multiplica os dois termos: 2(30 − c) = 60 − 2c. Escrever 2 · 30 − c é o erro mais comum do método.
+Atalho do “tudo de um tipo”
+Se os 30 veículos fossem motos, haveria 60 rodas. Sobram 40 rodas, e cada troca de moto por carro acrescenta 2: são 40 ÷ 2 = 20 carros. É a mesma conta da substituição, feita de cabeça.
+05 Método da adição
+Some (ou subtraia) as equações de modo que uma incógnita desapareça. Se os coeficientes não forem opostos, multiplique uma ou as duas equações antes.
+Coeficientes já opostos · 3x + 2y = 16 e 5x − 2y = 16
+(3x + 2y) + (5x − 2y) = 16 + 16 → 8x = 32 → x = 4
+Voltando à primeira: 12 + 2y = 16, logo y = 2.
+Multiplicando antes · 2x + 3y = 12 e 3x + 2y = 13
+× 3: 6x + 9y = 36 × 2: 6x + 4y = 26
+Subtraindo: 5y = 10 → y = 2 → 2x + 6 = 12 → x = 3
+Às vezes a pergunta é a soma
+No último sistema, somando as duas equações sem multiplicar nada: 5x + 5y = 25, ou seja, x + y = 5. Se o enunciado pergunta “quanto custam um de cada”, essa é a resposta, em uma linha. Antes de resolver, olhe o que foi pedido.
+Multiplique a equação inteira
+Ao multiplicar por 3, o lado direito também é multiplicado: 2x + 3y = 12 vira 6x + 9y = 36, não = 12.
+06 Interpretação gráfica: três posições de duas retas
+Cada equação linear com duas incógnitas é uma reta no plano. Duas retas só podem estar em três situações, e cada uma corresponde a um tipo de sistema.
+Concorrentes, paralelas ou coincidentes. Retas que se cruzam dão uma única solução (sistema possível e determinado). Retas paralelas nunca se encontram: não há solução (sistema impossível). Retas coincidentes têm todos os pontos em comum: infinitas soluções (sistema possível e indeterminado).
+ | Sistema | Classificação | Retas | O que acontece na conta
+ | x + y = 5 · x − y = −1 | SPD | concorrentes | sai um valor para cada incógnita: (2, 3)
+ | x + 2y = 4 · 2x + 4y = 10 | SI | paralelas | chega-se a um absurdo, como 0 = 2
+ | x + 2y = 4 · 2x + 4y = 8 | SPI | coincidentes | chega-se a uma identidade, como 0 = 0
+No contexto de preços, retas paralelas são duas tarifas com o mesmo preço por unidade e taxas fixas diferentes: uma é sempre mais cara, e a pergunta “quando custam o mesmo?” não tem resposta. Esse caso já apareceu em Equações e inequações do 1º grau.
+07 Classificar sem resolver
+Para o sistema a_1x + b_1y = c_1 e a_2x + b_2y = c_2, compare as razões entre os coeficientes correspondentes:
+ | Comparação | Classificação
+ | (a_1/a_2) ≠ (b_1/b_2) | SPD: uma única solução
+ | (a_1/a_2) = (b_1/b_2) ≠ (c_1/c_2) | SI: nenhuma solução
+ | (a_1/a_2) = (b_1/b_2) = (c_1/c_2) | SPI: infinitas soluções
+Em outras palavras: se uma equação é múltipla da outra só no lado esquerdo, as retas são paralelas; se é múltipla inteira, são a mesma reta.
+O determinante, para quem já viu
+O sistema 2 × 2 é SPD exatamente quando a_1b_2 − a_2b_1 ≠ 0. É a mesma condição das razões, escrita com multiplicação cruzada. A regra de Cramer, que calcula cada incógnita com determinantes, raramente compensa no ENEM: substituição e adição são mais rápidas.
+Exemplo · para que k o sistema 2x + 3y = 5 e 4x + ky = 10 tem infinitas soluções?
+(2/4) = (3/k) = (5/10) → k = 6
+Com k = 6, a segunda equação é o dobro da primeira. Com qualquer outro k, as razões de a e b diferem e o sistema tem uma única solução.
+08 Três incógnitas: escalonar ou somar tudo
+Com três incógnitas são necessárias três equações independentes. O método geral é o escalonamento: eliminar incógnitas até sobrar uma equação com uma só, e voltar substituindo.
+Sistema já escalonado
+x + y + z = 6 y + z = 5 z = 3
+De baixo para cima: z = 3, então y = 2, então x = 1.
+No ENEM, porém, os sistemas 3 × 3 costumam ter uma estrutura simétrica que permite um atalho:
+Preços combinados dois a dois · A + B = 13, B + C = 15, A + C = 14
+Somando as três: 2(A + B + C) = 42 → A + B + C = 21
+C = 21 − 13 = 8 A = 21 − 15 = 6 B = 21 − 14 = 7
+Cada incógnita é o total menos a equação que não a contém.
+Quando aparece “cada um aparece o mesmo número de vezes”
+Se cada incógnita aparece o mesmo número de vezes no conjunto das equações, some todas e divida. É o caso de pesagens em duplas, de combos de lanchonete e de distâncias entre três cidades.
+09 Estratégia de prova
+1 · Uma equação por informação
+Sublinhe no enunciado cada dado que relaciona as incógnitas. Duas incógnitas exigem duas informações independentes; se você só encontrou uma, releia, porque a outra está escondida (“ao todo”, “a mesma quantia”, “o dobro”).
+2 · Escolha o método pelo formato
+Coeficiente 1 em alguma incógnita: substituição. Coeficientes opostos ou fáceis de igualar: adição. Pergunta sobre x + y ou sobre o total: some as equações antes de tudo.
+3 · Confira na equação que você não usou por último
+Substitua o par encontrado na equação que não serviu para achar a última incógnita. Se der certo nas duas, a resposta está certa.
+4 · Responda a pergunta, não a incógnita
+O enunciado pode perguntar o número de meias e você achou o de inteiras; pode perguntar o total arrecadado com um tipo. O distrator com a outra incógnita está sempre entre as alternativas.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Física | encontro de dois móveis em MU | iguale as funções horárias s_A(t) = s_B(t); em sentidos opostos, uma velocidade é negativa
+ | Química | misturas de soluções e balanceamento | massa de soluto antes = massa de soluto depois é a “equação dos valores”
+ | Geometria analítica | interseção de retas | o ponto comum de duas retas é a solução do sistema formado pelas equações delas
+ | Função afim | ponto de equilíbrio entre dois planos | custo de A = custo de B é um sistema de duas funções afins
+O caso do encontro é o mais cobrado fora da Matemática: s_A = 20 + 80t e s_B = 200 − 100t se igualam quando 180t = 180, ou seja, em t = 1 h, no km 100.
+11 Os erros que mais custam pontos
+“P tem o dobro de J” → 2P = J → P = 2JTeste com números pequenos antes de seguir.
+2(30 − c) = 60 − c → 60 − 2cNa substituição, o coeficiente multiplica tudo.
+Multiplicar só o lado esquerdo → multiplicar a equação inteiraO lado direito também muda.
+Responder a outra incógnita → reler a perguntaInteiras ou meias? Carros ou motos?
+“Der 6 moedas” → P − 6 = J → P − 6 = J + 6Quem recebe também muda.
+Resolver tudo quando pedem x + y → somar as equaçõesÀs vezes a pergunta já é uma combinação delas.
+0 = 2 significa “errei a conta” → sistema impossívelRetas paralelas: não existe solução.
+0 = 0 significa “solução zero” → infinitas soluçõesAs duas equações são a mesma reta.
+Somar o total três vezes → dividir por 2 nas duplasEm A + B, B + C, A + C, cada um aparece duas vezes.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, nomeie as incógnitas, escreva uma equação por informação e só então resolva.
+Questão 1 · Inteiras e meias
+Um teatro vendeu 400 ingressos para uma sessão, alguns pelo preço inteiro de R$ 40,00 e os demais pela meia-entrada de R$ 20,00. A arrecadação total foi de R$ 11.200,00. O número de meias-entradas vendidas foi
+120.
+160.
+cerca de 187.
+240.
+280.
+Ver resolução
+i + m = 400 40i + 20m = 11 200
+Substituindo i = 400 − m: 16 000 − 40m + 20m = 11 200, então 20m = 4 800 e m = 240.
+Conferência: 160 inteiras e 240 meias dão 6 400 + 4 800 = 11 200.
+A B é o número de inteiras. A C divide a arrecadação pela soma dos dois preços, 11 200 ÷ 60, conta que não corresponde a nada no problema. A E divide o total por 40, como se todos pagassem inteira, e a A é 400 − 280, consequência desse mesmo erro.
+Alternativa D
+Questão 2 · Pesagens em duplas
+Três amigos, Ana, Beto e Caio, subiram em duplas numa balança. Ana e Beto juntos marcaram 125 kg; Beto e Caio, 145 kg; Ana e Caio, 140 kg. A massa de Beto, em quilogramas, é
+60.
+62,5.
+65.
+72,5.
+80.
+Ver resolução
+Somando as três pesagens, cada pessoa aparece duas vezes:
+2(A + B + C) = 410 → A + B + C = 205
+Beto é o total menos a dupla em que ele não está: B = 205 − 140 = 65. Ana tem 60 e Caio, 80. Conferência: 60 + 65 = 125.
+A A é a massa de Ana e a E, a de Caio. A B e a D dividem uma pesagem por 2 (125 ÷ 2 e 145 ÷ 2), como se os dois da dupla tivessem a mesma massa.
+Alternativa C
+Questão 3 · Infinitas soluções
+Um aplicativo resolve sistemas lineares e informa quando há infinitas soluções. Um usuário digitou o sistema formado por 2x + 3y = 5 e 4x + ky = 10 e recebeu a mensagem “infinitas soluções”. O valor de k digitado foi
+6.
+−6.
+3.
+12.
+qualquer valor diferente de 6.
+Ver resolução
+Infinitas soluções exigem que uma equação seja múltipla da outra, inclusive no lado direito. Como 4 = 2 · 2 e 10 = 2 · 5, o fator é 2, e então k = 2 · 3 = 6.
+A E descreve justamente os casos com uma única solução (razões de a e b diferentes). A B troca o sinal; a C copia o coeficiente da primeira equação sem multiplicar; a D multiplica por 4. Com −6, 3 ou 12 as retas são concorrentes.
+Alternativa A
+Questão 4 · Mistura de cafés
+Um comerciante mistura um café de R$ 30,00 o quilograma com outro de R$ 45,00 o quilograma e obtém 60 kg de um blend que vende a R$ 40,00 o quilograma, sem ganho nem perda em relação ao custo dos cafés. A quantidade usada do café mais barato foi de
+10 kg.
+20 kg.
+30 kg.
+40 kg.
+50 kg.
+Ver resolução
+a + b = 60 30a + 45b = 40 · 60 = 2 400
+Com b = 60 − a: 30a + 2 700 − 45a = 2 400, então 15a = 300 e a = 20 kg.
+Conferência: 20 · 30 + 40 · 45 = 600 + 1 800 = 2 400.
+A D é a quantidade do café caro. A C supõe partes iguais, que dariam preço médio de R$ 37,50, não R$ 40,00. A A usa a diferença de preço 40 − 30 como se fosse quantidade, e a E é 60 − 10.
+Alternativa B
+Questão 5 · Troca de moedas
+Pedro tem o dobro do número de moedas de Júlia. Se Pedro der 6 de suas moedas a Júlia, os dois ficarão com a mesma quantidade. Quantas moedas Pedro tem?
+6
+12
+18
+24
+36
+Ver resolução
+P = 2J P − 6 = J + 6
+Substituindo: 2J − 6 = J + 6, logo J = 12 e P = 24. Depois da troca, cada um fica com 18.
+A B é o número de Júlia; é também o que se obtém para Pedro esquecendo que Júlia recebe as moedas (P − 6 = J). A C é a quantidade de cada um depois da troca. A E é o total dos dois. A A é só o número de moedas transferidas.
+Alternativa D
+Questão 6 · Posição de duas retas
+Um estudante representou no plano cartesiano as retas r: x + 2y = 4 e s: 2x + 4y = 10, para resolver graficamente o sistema formado por elas. Ele deve concluir que as retas são
+concorrentes, e o sistema tem uma única solução.
+coincidentes, e o sistema tem infinitas soluções.
+perpendiculares, e o sistema tem uma única solução.
+concorrentes na origem, e a solução é (0, 0).
+paralelas distintas, e o sistema não tem solução.
+Ver resolução
+O lado esquerdo de s é o dobro do de r, mas o lado direito não: 2 · 4 = 8 ≠ 10. As razões ficam (1/2) = (2/4) ≠ (4/10): retas paralelas distintas, sistema impossível.
+Pela adição: multiplicando r por 2 e subtraindo de s, chega-se a 0 = 2, um absurdo.
+A B valeria se o lado direito de s fosse 8. A A e a C ignoram que as duas retas têm a mesma inclinação (as duas sobem 1 unidade em y a cada 2 que x recua). A D falha no teste direto: 0 + 0 ≠ 4.
+Alternativa E
+Questão 7 · Combo de lanchonete
+Em uma lanchonete, dois sanduíches e um suco custam R$ 31,00, e um sanduíche e dois sucos custam R$ 26,00. Todos os sanduíches têm o mesmo preço, assim como os sucos. Quanto custam, juntos, um sanduíche e um suco?
+R$ 7,00
+R$ 12,00
+R$ 19,00
+R$ 28,50
+R$ 57,00
+Ver resolução
+A pergunta é a soma. Somando as duas equações:
+(2S + J) + (S + 2J) = 57 → 3S + 3J = 57 → S + J = 19
+Se quiser os preços: subtraindo, S − J = 5; logo o sanduíche custa R$ 12,00 e o suco, R$ 7,00.
+A A é o suco e a B, o sanduíche. A E é a soma das duas compras, que contém três sanduíches e três sucos. A D divide 57 por 2, como se cada item aparecesse duas vezes.
+Alternativa C
+Questão 8 · Prova com três níveis
+Uma prova tem 20 questões: as fáceis valem 1 ponto, as médias valem 2 e as difíceis valem 3, num total de 37 pontos. O número de questões médias é 2 a mais que o de difíceis. O número de questões médias é
+5.
+7.
+8.
+15.
+17.
+Ver resolução
+f + m + d = 20 f + 2m + 3d = 37 m = d + 2
+Subtraindo a primeira da segunda: m + 2d = 17. Com m = d + 2: 3d = 15, d = 5, m = 7, f = 8.
+São 7 questões médias. Conferência: 8 + 7 + 5 = 20 questões e 8 + 14 + 15 = 37 pontos.
+A A é o número de difíceis e a C, o de fáceis. A D são os pontos das difíceis (5 · 3). A E é o resultado intermediário m + 2d, confundido com o valor de m.
+Alternativa B
+Questão 9 · Encontro na estrada
+Às 8 h, um carro passa pelo km 20 de uma rodovia, a 60 km/h, no sentido crescente da quilometragem. No mesmo instante, um ônibus passa pelo km 200, a 120 km/h, no sentido contrário. Mantidas as velocidades, os dois se cruzarão no
+km 60.
+km 80.
+km 110.
+km 140.
+km 180.
+Ver resolução
+s_carro = 20 + 60t s_ônibus = 200 − 120t
+Igualando: 180t = 180, t = 1 h. Posição: 20 + 60 = 80, o km 80 (às 9 h). Conferência: 200 − 120 = 80.
+A C é o ponto médio entre os km 20 e 200, que só valeria com velocidades iguais. A D troca as velocidades (o carro a 120 km/h). A A é o deslocamento do carro, não sua posição. A E é a distância inicial entre os dois.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Sei o que é a solução de um sistema e testo um par nas duas equações
+Monto o sistema “quantidades e valores” a partir de um texto
+Traduzo “o dobro de”, “a mais que” e “se der k a” sem inverter
+Resolvo por substituição, com parênteses ao substituir
+Resolvo por adição, multiplicando equações inteiras quando preciso
+Uso o atalho “tudo de um tipo” em problemas de cabeças e patas
+Somo as equações quando a pergunta é uma combinação como x + y
+Associo SPD, SI e SPI a retas concorrentes, paralelas e coincidentes
+Classifico um sistema 2 × 2 pelas razões entre os coeficientes
+Interpreto 0 = 2 e 0 = 0 no fim da conta
+Resolvo sistemas 3 × 3 escalonados e os simétricos somando tudo
+Resolvo problemas de mistura e de encontro de móveis com sistemas
+Confiro a resposta e verifico se ela é a incógnita que foi pedida
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos quinze de montagem a partir de texto (ingressos, misturas, combos). Depois siga para Conceito de função: domínio, contradomínio e imagem, que transforma as retas deste assunto em funções.
+Flashcards para o Anki
+Foram gerados 31 cartões deste assunto no arquivo ENEM-Matematica-22-sistemas-equacoes-lineares.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

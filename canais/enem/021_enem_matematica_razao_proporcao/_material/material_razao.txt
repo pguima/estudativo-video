@@ -1,0 +1,299 @@
+Razão, Proporção e Regra de Três
+Matemática › Matemática Básica e Proporcionalidade › Assunto 6 de 12
+Razão, proporção e regra de três
+Se houvesse um único assunto para levar no dia da prova, seria este. Velocidade, escala, densidade, câmbio, consumo, produtividade — tudo é razão. E a regra de três resolve mais questões de Matemática do ENEM do que qualquer outra ferramenta.
+Semana
+2 · Fase Fundamentos
+Incidência
+Muito alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Frações · Unidades
+Destrava
+Porcentagem, escalas, velocidade, Física inteira
+Neste assunto
+01 O que o ENEM cobra aqui
+Este é o assunto de maior retorno de toda a Matemática básica — e talvez da prova inteira. Não porque tenha muitas questões próprias, mas porque é a ferramenta padrão com que se resolve tudo o mais.
+Onde ele aparece:
+Direto: escala de mapas e plantas, velocidade média, densidade, consumo de combustível, câmbio, produtividade.
+Dentro de porcentagem: todo aumento e desconto é uma proporção.
+Dentro de Física: praticamente toda fórmula é uma razão ou uma proporcionalidade.
+Dentro de Química: estequiometria é regra de três com mols.
+Dentro de Geografia: densidade demográfica, escala cartográfica, indicadores.
+O que rende mais aqui
+Duas habilidades, nesta ordem. Primeiro: decidir se a relação é direta ou inversa (seção 06) — é onde se erra, não na conta. Segundo: saber quando a regra de três não se aplica (seção 10), porque o ENEM cobra isso de propósito, e quem aplica no automático cai.
+02 Razão
+Definição
+A razão entre a e b é o quociente (a/b), com b ≠ 0.
+O a é o antecedente; o b, o consequente.
+A ordem importa — e é onde se perde ponto
+“Razão de a para b” é (a/b), nunca o contrário. E leia com atenção o que é o consequente: numa turma com 18 meninas e 12 meninos, a razão de meninos para meninas é (12/18) = (2/3), mas a razão de meninos para o total é (12/30) = (2/5).
+A mesma razão pode aparecer de quatro formas, e todas significam o mesmo:
+(3/4) = 0,75 = 75% = 3 : 4
+Quando as duas grandezas são da mesma espécie (meninos e meninas), a razão é um número puro. Quando são de espécies diferentes (metros e segundos), a razão recebe o nome de taxa e carrega unidade.
+03 As razões que a prova mais usa
+ | Razão | Fórmula | Unidade típica | Onde cai
+ | Velocidade média | v = (Δs/Δt) | km/h, m/s | Matemática e Física
+ | Densidade | d = (m/V) | g/cm³, kg/m³ | Física e Química
+ | Escala | E = (desenho/real) | 1 : n | Geografia, plantas
+ | Densidade demográfica | (habitantes/área) | hab/km² | Geografia
+ | Rendimento | (distância/combustível) | km/L | contextos de consumo
+ | Vazão | (volume/tempo) | L/s, m³/h | reservatórios
+ | Custo unitário | (preço/quantidade) | R$/kg, R$/L | comparação de compras
+A conversão que mais cai: km/h e m/s
+km/h → m/s: divida por 3,6
+m/s → km/h: multiplique por 3,6
+O 3,6 vem de (1000 m/3600 s). Se esquecer o fator, guarde a lógica: m/s é sempre o número menor, porque um metro por segundo já é bem rápido.
+Escala: quanto menor o denominador, maior a escala
+Uma escala 1:50 000 é maior que 1:250 000. Parece invertido, mas é coerente: a de denominador menor mostra menos área com mais detalhe. Mapa de bairro tem escala grande; mapa-múndi, escala pequena.
+04 Proporção e a propriedade fundamental
+Definição
+Proporção é a igualdade entre duas razões:
+(a/b) = (c/d)
+Os extremos são a e d, as pontas. Os meios são b e c, o miolo.
+Propriedade fundamental
+a · d = b · c
+O produto dos extremos é igual ao produto dos meios. É esta propriedade — e só ela — que faz a regra de três funcionar.
+Uma consequência útil: inverter as duas razões mantém a proporção. Se (a/b) = (c/d), então (b/a) = (d/c). O que não se pode é inverter só um lado.
+05 As propriedades das proporções
+Três propriedades que transformam problemas aparentemente difíceis em contas de uma linha.
+1 · Soma e diferença com o consequente
+(a + b/b) = (c + d/d) (a − b/b) = (c − d/d)
+2 · Soma dos antecedentes sobre soma dos consequentes
+(a + c/b + d) = (a/b) = (c/d)
+Esta é a mais poderosa. Ela permite resolver problemas em que se conhece a soma das partes e a razão entre elas.
+O truque do k — mais rápido que qualquer propriedade
+Quando o enunciado dá uma razão e uma soma, escreva as partes como múltiplos de k:
+“A razão entre dois números é (3/5) e a soma é 64.”
+3k + 5k = 64 → 8k = 64 → k = 8
+Os números são 3·8 = 24 e 5·8 = 40
+Funciona para qualquer quantidade de partes, e é a base da divisão proporcional que vem na semana 3.
+Proporção contínua
+Quando os meios são iguais — (a/b) = (b/c) — vale b^2 = a·c, e b é a média geométrica entre a e c.
+06 Direta ou inversa: a decisão que vale a questão
+Quem erra regra de três quase nunca erra a multiplicação. Erra aqui, e resolve com perfeição o problema trocado.
+ | | Diretamente proporcionais | Inversamente proporcionais
+ | Comportamento | Uma aumenta, a outra aumenta | Uma aumenta, a outra diminui
+ | O que é constante | O quociente: (a/b) = k | O produto: a · b = k
+ | Exemplos | quantidade e preço · trabalhadores e produção · tempo e distância | velocidade e tempo · operários e dias · torneiras e tempo de enchimento
+Dobre uma grandeza e observe a outra. Se ela também dobra, a relação é direta; se cai pela metade, é inversa. Essa única pergunta resolve a decisão que faz perder a maioria das questões de regra de três.
+O teste que nunca falha
+Dobre uma grandeza e pergunte o que acontece com a outra.
+Dobrou também? Direta. · Virou metade? Inversa.
+Dobrando o número de operários, a obra leva metade do tempo → inversa. Dobrando os quilos comprados, o preço dobra → direta.
+Aumentar junto não é ser proporcional
+Idade e altura de uma criança crescem juntas, mas ninguém tem o dobro da altura ao dobrar de idade. Proporcionalidade exige que dobrar uma dobre exatamente a outra — não basta caminharem na mesma direção.
+07 Regra de três simples
+O procedimento
+Padronize as unidades. Horas com horas, km com km.
+Monte duas colunas, uma para cada grandeza, com a incógnita numa delas.
+Decida se é direta ou inversa pelo teste do dobro.
+Se for inversa, inverta uma das colunas.
+Multiplique em cruz e isole a incógnita.
+Caso direto — uma impressora faz 240 páginas em 8 minutos; quantas em 20?
+Mais tempo → mais páginas. Direta.
+(240/8) = (x/20) → 8x = 4800 → x = 600 páginas
+Caso inverso — 15 operários fazem uma obra em 24 dias; e 20 operários?
+Mais operários → menos dias. Inversa.
+Como o produto é constante: 15 · 24 = 20 · x
+360 = 20x → x = 18 dias
+O erro silencioso: unidades
+Se um dado vem em horas e o outro em minutos, a conta fecha perfeitamente e o resultado sai errado — sem nenhum sinal de alarme. Padronizar unidades é o passo zero, antes mesmo de decidir direta ou inversa.
+08 Regra de três composta
+Três ou mais grandezas envolvidas. Parece mais difícil, mas o método é o simples repetido.
+O método
+Monte uma coluna para cada grandeza, marcando a incógnita.
+Compare cada coluna com a coluna da incógnita, uma de cada vez, ignorando as demais.
+Inverta as colunas que forem inversas em relação à incógnita.
+A razão da incógnita é igual ao produto de todas as outras razões.
+A regra que evita a confusão
+Cada coluna é comparada com a incógnita, nunca umas com as outras. Tentar analisar tudo ao mesmo tempo é o que faz a questão parecer impossível.
+12 operários, 8 h/dia, constroem um muro em 15 dias. Em quantos dias, com 18 operários e 10 h/dia?
+Operários × dias: mais operários, menos dias → inversa
+Horas por dia × dias: mais horas por dia, menos dias → inversa
+(15/x) = (18/12) · (10/8) = 1,5 · 1,25 = 1,875
+x = (15/1,875) = 8 dias
+O atalho dos homens-hora
+Em problemas de operários, horas e dias, o trabalho total é constante. Multiplique tudo dos dois lados e iguale:
+12 · 8 · 15 = 1440 → 18 · 10 · x = 1440 → x = 8
+Mesma resposta, sem precisar decidir o que é direto e o que é inverso. Quando o problema tem essa cara — trabalhadores, ritmo e tempo produzindo uma quantidade fixa —, é o caminho mais seguro.
+09 Onde a regra de três não funciona
+Esta seção existe porque o ENEM cobra exatamente isso: monta uma questão com cara de regra de três em que aplicá-la dá errado. Quem responde no automático cai.
+O caso dos gatos — clássico e cruel
+“Dois gatos caçam dois ratos em dois minutos. Em quanto tempo quatro gatos caçam quatro ratos?”
+A resposta automática é 4 minutos (ou 1). A resposta certa é 2 minutos.
+Cada gato caça um rato em 2 minutos, trabalhando em paralelo. Dobrar gatos e ratos ao mesmo tempo mantém o ritmo — o tempo não muda.
+ | Situação | Por que não é proporcional
+ | Área e lado | Dobrar o lado quadruplica a área. A relação é com o quadrado.
+ | Volume e aresta | Dobrar a aresta multiplica o volume por 8.
+ | Juros compostos | Crescimento exponencial, M = C(1+i)^t. Regra de três só vale em juros simples.
+ | Tarifas por faixa | Conta de luz e água mudam de preço por faixa de consumo — não há razão única.
+ | Tarefas indivisíveis | Nove pessoas não fazem um bebê em um mês. Nem todo trabalho se paraleliza.
+O teste antes de aplicar
+Pergunte: dobrar a causa dobra mesmo o efeito? Se a resposta for “não” ou “depende”, a relação não é proporcional e a regra de três está fora.
+10 Estratégia de prova
+Três hábitos que economizam tempo e evitam a maior parte dos erros deste assunto.
+1 · Confira a plausibilidade antes de marcar
+Depois de calcular, olhe o resultado e pergunte se ele faz sentido. Mais operários resultaram em mais dias? Você inverteu o sentido. Aumentar a velocidade aumentou o tempo de viagem? Mesmo erro. Essa conferência leva três segundos e pega a maioria das trocas entre direta e inversa.
+2 · Reduza tudo a uma unidade
+Muitas questões saem mais rápido calculando o valor unitário do que montando a proporção: preço por quilo, consumo por litro, produção por operário por hora. Comparar embalagens de tamanhos diferentes, por exemplo, só é possível pelo preço unitário.
+3 · Padronize as unidades antes de tudo
+É o passo mais pulado e o erro mais silencioso: com unidades misturadas, a conta fecha e o resultado sai errado sem nenhum sinal. Converta primeiro, monte depois.
+11 Os erros que mais custam pontos
+Inverter a razão → “de a para b” é a/bE cuidado com o consequente: “para o total” não é “para o outro grupo”.
+Aplicar direta onde é inversa → use o teste do dobroÉ o erro campeão. Mais operários significam menos dias, não mais.
+Montar a regra de três sem padronizar unidades → converta primeiroA conta fecha e o resultado sai errado, sem nenhum sinal de alerta.
+m/s e km/h como se fossem iguais → fator 3,6km/h para m/s divide por 3,6; o caminho inverso multiplica.
+Na composta, comparar as colunas entre si → compare cada uma com a incógnitaUma de cada vez, ignorando as demais.
+Regra de três em área a partir do lado → a relação é quadráticaDobrar o lado quadruplica a área.
+Regra de três em juros compostos → só vale em juros simplesCrescimento exponencial não é proporcional ao tempo.
+1:250 000 é escala maior que 1:50 000 → é menorDenominador menor significa escala maior e mais detalhe.
+Dobrar gatos e ratos dobra o tempo → o tempo não mudaQuando causa e efeito dobram juntos, o ritmo permanece.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de montar qualquer conta, responda em voz alta: é direta ou inversa?
+Questão 1 · Razão e a ordem dos termos
+Em uma turma há 18 meninas e 12 meninos. A razão entre o número de meninos e o número total de alunos da turma é
+(2/3)
+(3/2)
+(2/5)
+(3/5)
+(5/2)
+Ver resolução
+O total é 18 + 12 = 30 alunos. A razão pedida é meninos para o total:
+(12/30) = (2/5)
+As armadilhas estão todas no consequente. A alternativa A é a razão de meninos para meninas; a D é de meninas para o total; a B e a E são as mesmas razões invertidas.
+Hábito que evita isso: sublinhe no enunciado o que vem depois da palavra “para”. Ele é o denominador.
+Alternativa C
+Questão 2 · Velocidade e conversão
+Um atleta percorre 100 metros em 12,5 segundos. A velocidade média desse atleta, em quilômetros por hora, é de
+8
+12,5
+28,8
+36
+80
+Ver resolução
+Primeiro a velocidade em m/s:
+v = (100/12,5) = 8 m/s
+Agora a conversão para km/h — multiplica por 3,6:
+8 · 3,6 = 28,8 km/h
+A alternativa A é de quem parou em m/s sem converter. E vale a conferência de bom senso: 28,8 km/h é plausível para um velocista; 8 km/h seria uma caminhada rápida.
+Alternativa C
+Questão 3 · Escala
+Em um mapa de escala 1 : 250 000, a distância entre duas cidades é representada por 8 cm. A distância real entre elas, em quilômetros, é de
+2
+20
+200
+2 000
+20 000
+Ver resolução
+A escala 1 : 250 000 significa que 1 cm no mapa vale 250 000 cm reais:
+8 · 250 000 = 2 000 000 cm
+Agora a conversão até quilômetros, com cuidado nos dois saltos:
+2 000 000 cm ÷ 100 = 20 000 m → ÷ 1 000 = 20 km
+As alternativas C, D e E são exatamente os resultados de quem parou numa das etapas de conversão. Uma alternativa para cada erro possível é assinatura do ENEM.
+Alternativa B
+Questão 4 · Regra de três direta
+Uma impressora industrial produz 240 páginas em 8 minutos, mantendo ritmo constante. Nessas condições, em 20 minutos ela produzirá
+96 páginas
+480 páginas
+600 páginas
+720 páginas
+4 800 páginas
+Ver resolução
+Teste do dobro: dobrando o tempo, dobram as páginas. Direta.
+(240/8) = (x/20) → 8x = 4 800 → x = 600
+Pelo valor unitário: 240 ÷ 8 = 30 páginas por minuto, e 30 · 20 = 600. Muitas vezes é mais rápido que montar a proporção.
+Alternativa C
+Questão 5 · Regra de três inversa
+Uma obra seria concluída por 15 operários em 24 dias. Se a construtora alocar 20 operários com o mesmo ritmo de trabalho, a obra será concluída em
+15 dias
+18 dias
+20 dias
+24 dias
+32 dias
+Ver resolução
+Teste do dobro: dobrando os operários, os dias caem pela metade. Inversa.
+Em relação inversa o produto é constante:
+15 · 24 = 20 · x
+360 = 20x → x = 18 dias
+Conferência de plausibilidade: mais operários, menos dias — 18 < 24 ✓. A alternativa E (32 dias) é o resultado de quem aplicou proporção direta, e o próprio bom senso a elimina.
+Alternativa B
+Questão 6 · Regra de três composta
+Doze operários, trabalhando 8 horas por dia, constroem um muro em 15 dias. Mantido o mesmo ritmo, dezoito operários trabalhando 10 horas por dia construirão um muro idêntico em
+6 dias
+8 dias
+10 dias
+12 dias
+18 dias
+Ver resolução
+Compare cada grandeza com a incógnita (dias), uma de cada vez:
+Operários × dias: mais operários, menos dias → inversa
+Horas/dia × dias: mais horas por dia, menos dias → inversa
+(15/x) = (18/12) · (10/8) = 1,5 · 1,25 = 1,875
+x = (15/1,875) = 8 dias
+Pelo atalho dos homens-hora, sem decidir nada sobre direto ou inverso:
+12 · 8 · 15 = 1 440 → 18 · 10 · x = 1 440 → x = 8
+Alternativa B
+Questão 7 · Razão com soma conhecida
+Dois sócios dividiram um lucro de R$ 64 000,00 na razão de 3 para 5. O sócio que recebeu a maior parte ficou com
+R$ 24 000,00
+R$ 32 000,00
+R$ 38 400,00
+R$ 40 000,00
+R$ 48 000,00
+Ver resolução
+Escreva as partes como múltiplos de k:
+3k + 5k = 64 000 → 8k = 64 000 → k = 8 000
+Partes: 3 · 8 000 = 24 000 e 5 · 8 000 = 40 000
+A maior parte é R$ 40 000,00.
+A alternativa A é a parte menor — leia sempre qual das duas o enunciado pede. A B é a divisão em partes iguais, ignorando a razão.
+Alternativa D
+Questão 8 · Quando a regra de três não vale
+Dois gatos caçam dois ratos em dois minutos. Mantido esse mesmo ritmo de caça, quatro gatos caçarão quatro ratos em
+1 minuto
+2 minutos
+4 minutos
+8 minutos
+16 minutos
+Ver resolução
+A tentação é montar uma regra de três — e é exatamente isso que a questão quer.
+Analise o ritmo individual: se dois gatos caçam dois ratos em 2 minutos, então cada gato caça um rato em 2 minutos, trabalhando em paralelo.
+Com quatro gatos e quatro ratos, cada gato continua com um rato para caçar, e continua levando os mesmos 2 minutos. Nada mudou no ritmo.
+As alternativas A e C são as duas regras de três possíveis — a direta e a inversa. Ambas erradas, porque causa e efeito dobraram juntos.
+A lição: antes de aplicar, pergunte se dobrar a causa dobra mesmo o efeito.
+Alternativa B
+Questão 9 · Razão em duas etapas
+Um automóvel percorre, em média, 12 quilômetros com um litro de combustível, vendido a R$ 5,80 o litro. O custo aproximado do combustível para uma viagem de 480 quilômetros será de
+R$ 82,80
+R$ 232,00
+R$ 240,00
+R$ 696,00
+R$ 2 784,00
+Ver resolução
+Duas razões encadeadas. Primeiro, quantos litros a viagem consome:
+480 ÷ 12 = 40 litros
+Depois, quanto custam esses litros:
+40 · 5,80 = R$ 232,00
+A alternativa E é de quem multiplicou os 480 km pelo preço do litro, pulando a primeira etapa — e o absurdo do valor já denuncia o erro. Sempre confira se a ordem de grandeza da resposta faz sentido para o contexto.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Monto uma razão na ordem certa, identificando o consequente no enunciado
+Conheço as razões usuais: velocidade, densidade, escala, rendimento, vazão
+Converto km/h em m/s e vice-versa pelo fator 3,6
+Resolvo problemas de escala, lembrando que denominador menor é escala maior
+Aplico a propriedade fundamental: produto dos meios igual ao dos extremos
+Uso o truque do k quando o enunciado dá a razão e a soma
+Decido entre direta e inversa pelo teste do dobro, sem hesitar
+Padronizo as unidades antes de montar qualquer regra de três
+Resolvo regra de três composta comparando cada coluna com a da incógnita
+Uso o atalho dos homens-hora em problemas de operários, jornada e prazo
+Reconheço quando a relação não é proporcional e a regra de três não vale
+Confiro a plausibilidade do resultado antes de marcar a alternativa
+Reduzo a valores unitários quando isso for mais rápido que a proporção
+Antes de marcar “Dominado” no cronograma
+Este é o assunto de maior incidência da Matemática básica — resolva 40 questões, não 30, e acerte pelo menos 28. Inclua questões de Física e Química, onde a regra de três aparece com outra roupa. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 46 cartões deste assunto no arquivo ENEM-Matematica-06-razao-proporcao-regra-de-tres.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

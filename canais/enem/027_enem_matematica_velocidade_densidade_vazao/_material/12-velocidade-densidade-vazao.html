@@ -1,0 +1,1075 @@
+<title>Velocidade, Densidade e Vazão</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 12 de 12</p>
+        <h1>Velocidade, densidade e vazão como razões</h1>
+        <p class="deck">Fecha a matéria com as três razões mais usadas da prova — e com a armadilha que engana quase todo mundo: a velocidade média de uma ida e volta não é a média das duas velocidades.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Ida a sessenta e volta a quarenta quilômetros por hora na mesma distância: o trecho lento consome mais tempo, e a velocidade média do percurso é quarenta e oito, não cinquenta">
+  <text x="150" y="14" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2)">120 km de ida, 120 km de volta</text>
+  <line x1="20" y1="34" x2="280" y2="34" style="stroke:var(--ink-3);stroke-width:2"/>
+  <line x1="150" y1="28" x2="150" y2="40" style="stroke:var(--ink-3);stroke-width:2"/>
+  <text x="85" y="28" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">ida · 60 km/h</text>
+  <text x="215" y="28" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">volta · 40 km/h</text>
+  <text x="150" y="52" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">distâncias iguais</text>
+  <text x="20" y="72" class="svg-lbl" style="fill:var(--ink-2)">tempo gasto em cada trecho</text>
+  <rect x="20" y="80" width="100" height="24" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="70" y="97" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-weight:600">2 h</text>
+  <rect x="20" y="110" width="150" height="24" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="95" y="127" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">3 h</text>
+  <text x="180" y="127" class="svg-lbl" style="fill:var(--c2)">mais tempo</text>
+  <text x="180" y="139" class="svg-lbl" style="fill:var(--c2)">no trecho lento</text>
+  <rect x="20" y="150" width="260" height="52" rx="9" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="150" y="169" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">240 km ÷ 5 h = 48 km/h</text>
+  <text x="150" y="185" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">distância total ÷ tempo total</text>
+  <text x="150" y="197" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">e não 50, a média das velocidades</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>5 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Razão e proporção · Unidades de medida</dd></div>
+      <div><dt>Destrava</dt><dd>Cinemática, hidrostática, concentração, indicadores</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este assunto encerra a matéria juntando tudo o que veio antes: razão, proporção, unidades e conversões, agora aplicados às três taxas que a prova mais usa.</p>
+<p>O que aparece com mais frequência:</p>
+<ul>
+  <li><strong>Velocidade média</strong> em trajetos com trechos diferentes — e a armadilha da média, que é o item de maior retorno da página.</li>
+  <li><strong>Densidade</strong> para identificar material, decidir se algo flutua ou converter entre <span class="m">g/cm<sup>3</sup></span> e <span class="m">kg/m<sup>3</sup></span>.</li>
+  <li><strong>Vazão</strong> em reservatórios, com torneiras somando e ralos subtraindo.</li>
+  <li><strong>Outras taxas</strong> do mesmo formato: rendimento, concentração, produtividade, densidade demográfica.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas coisas. A <strong>armadilha da velocidade média</strong> (seção 04), porque a resposta instintiva está sempre entre as alternativas. E o <strong>método das frações do tanque</strong> (seção 06), que resolve qualquer problema de torneiras sem precisar saber o volume.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A estrutura comum</h2>
+<p>Velocidade, densidade e vazão parecem assuntos diferentes, mas são a mesma ideia com nomes distintos: <strong>quanto de uma grandeza por unidade de outra</strong>.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 190" role="img" aria-label="Três taxas com a mesma estrutura: velocidade é distância por tempo, densidade é massa por volume e vazão é volume por tempo">
+  <rect x="14" y="26" width="136" height="96" rx="10" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="82" y="48" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">VELOCIDADE</text>
+  <text x="82" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">distância</text>
+  <line x1="42" y1="83" x2="122" y2="83" style="stroke:var(--ink);stroke-width:1.6"/>
+  <text x="82" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">tempo</text>
+  <text x="82" y="116" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">km/h · m/s</text>
+
+  <rect x="162" y="26" width="136" height="96" rx="10" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="230" y="48" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">DENSIDADE</text>
+  <text x="230" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">massa</text>
+  <line x1="196" y1="83" x2="264" y2="83" style="stroke:var(--ink);stroke-width:1.6"/>
+  <text x="230" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">volume</text>
+  <text x="230" y="116" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">g/cm³ · kg/m³</text>
+
+  <rect x="310" y="26" width="136" height="96" rx="10" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="378" y="48" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">VAZÃO</text>
+  <text x="378" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">volume</text>
+  <line x1="344" y1="83" x2="412" y2="83" style="stroke:var(--ink);stroke-width:1.6"/>
+  <text x="378" y="100" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:14px">tempo</text>
+  <text x="378" y="116" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">L/min · m³/h</text>
+
+  <rect x="14" y="136" width="432" height="34" rx="9" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.5"/>
+  <text x="230" y="158" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">a barra da unidade é a própria divisão</text>
+</svg>
+<figcaption><b>A unidade já escreve a fórmula.</b> Ler “quilômetro por hora” é ler “quilômetro dividido por hora”; “grama por centímetro cúbico” é massa dividida por volume. Escrever a unidade ao lado de cada número do enunciado monta a conta sozinha — e é o hábito que mais evita erro neste assunto.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">As três perguntas possíveis</span>
+  <p>Qualquer taxa admite três formatos de questão, e todos saem da mesma fórmula:</p>
+  <p><strong>Achar a taxa</strong> → divida. &nbsp;·&nbsp; <strong>Achar o numerador</strong> → multiplique. &nbsp;·&nbsp; <strong>Achar o denominador</strong> → divida ao contrário.</p>
+  <p class="m" style="margin-top:10px"><span class="v">v</span> = <span class="frac"><i><span class="v">d</span></i><i><span class="v">t</span></i></span> &nbsp;→&nbsp; <span class="v">d</span> = <span class="v">v</span> · <span class="v">t</span> &nbsp;→&nbsp; <span class="v">t</span> = <span class="frac"><i><span class="v">d</span></i><i><span class="v">v</span></i></span></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A taxa não muda com a quantidade</span>
+  <p>Se a distância dobra e o tempo dobra, a velocidade <strong>permanece a mesma</strong>. Se a massa dobra e o volume dobra, a densidade não muda — por isso ela identifica o material, e não a quantidade dele.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Velocidade média</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem"><span class="v">v</span> = <span class="frac"><i>distância total</i><i>tempo total</i></span></p>
+  <p>As palavras <strong>total</strong> não são enfeite: elas são a definição inteira. Todo o percurso e todo o tempo entram na conta.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Um trem percorre 180 km em 2 h 30 min</span>
+  <p class="m">2 h 30 min = 2,5 h</p>
+  <p class="m"><span class="v">v</span> = <span class="frac"><i>180</i><i>2,5</i></span> = <strong>72 km/h</strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Tempo parado também é tempo</span>
+  <p>Se a viagem teve uma parada de 30 minutos e a pergunta é sobre o percurso completo, esses 30 minutos <strong>entram no tempo total</strong> e reduzem a velocidade média. A velocidade média responde: <em>“se o trajeto inteiro tivesse ritmo constante, qual seria esse ritmo?”</em></p>
+</div>
+
+<p>Para converter entre as duas unidades usuais, vale o fator visto no assunto 10: de <span class="m">km/h</span> para <span class="m">m/s</span> divide-se por <span class="m">3,6</span>; no sentido inverso, multiplica-se.</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> A armadilha da média</h2>
+<p>Esta é a questão assinada do assunto. Ela aparece com regularidade e a resposta instintiva está sempre entre as alternativas.</p>
+
+<div class="box warn">
+  <span class="tag">Velocidade média não é média das velocidades</span>
+  <p>Um carro vai a <span class="m">60 km/h</span> e volta pelo mesmo caminho a <span class="m">40 km/h</span>. A velocidade média do percurso completo <strong>não é 50 km/h</strong> — é <strong>48 km/h</strong>.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Por que 48, e não 50</span>
+  <p>Tome <span class="m">120 km</span> de ida e <span class="m">120 km</span> de volta:</p>
+  <p class="m">ida: <span class="frac"><i>120</i><i>60</i></span> = 2 h &nbsp;&nbsp;·&nbsp;&nbsp; volta: <span class="frac"><i>120</i><i>40</i></span> = 3 h</p>
+  <p class="m">total: 240 km em 5 h &nbsp;→&nbsp; <span class="frac"><i>240</i><i>5</i></span> = 48 km/h</p>
+</div>
+
+<div class="box def">
+  <span class="tag">A razão do fenômeno</span>
+  <p>As <strong>distâncias</strong> são iguais, mas os <strong>tempos</strong> não. Passa-se três horas no trecho lento e apenas duas no rápido — então a velocidade menor pesa mais na média.</p>
+  <p>Por isso o resultado sempre puxa para <strong>abaixo</strong> da média simples, nunca para cima.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A fórmula, quando as distâncias são iguais</span>
+  <p class="m" style="font-size:1.05rem"><span class="v">v</span> = <span class="frac"><i>2 · <span class="v">v</span><sub>1</sub> · <span class="v">v</span><sub>2</sub></i><i><span class="v">v</span><sub>1</sub> + <span class="v">v</span><sub>2</sub></i></span></p>
+  <p>É a média harmônica. Para 60 e 40: <span class="m"><span class="frac"><i>2 · 60 · 40</i><i>100</i></span> = 48</span>.</p>
+  <p>Ela só vale para <strong>distâncias iguais</strong>. Fora desse caso, volte sempre a distância total dividida por tempo total — que funciona em qualquer situação.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Quando a média simples funciona</span>
+  <p>Quando os <strong>tempos</strong> são iguais, não as distâncias. Duas horas a 60 e duas horas a 40 dão de fato 50 km/h de média, porque cada velocidade pesa o mesmo.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Densidade</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem"><span class="v">d</span> = <span class="frac"><i><span class="v">m</span></i><i><span class="v">V</span></i></span></p>
+  <p>Medida usualmente em <span class="m">g/cm<sup>3</sup></span> ou <span class="m">kg/m<sup>3</sup></span>. A conversão entre elas multiplica por <span class="m">1 000</span>.</p>
+</div>
+
+<p>A densidade é <strong>característica do material</strong>, não da quantidade: um prego e um portão de ferro têm a mesma densidade. É isso que permite identificar substâncias medindo massa e volume.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Material</th><th>Densidade (g/cm³)</th><th>Material</th><th>Densidade (g/cm³)</th></tr></thead>
+  <tbody>
+    <tr><td>Óleo vegetal</td><td class="m">0,8</td><td>Alumínio</td><td class="m">2,7</td></tr>
+    <tr><td>Gelo</td><td class="m">0,92</td><td>Ferro</td><td class="m">7,8</td></tr>
+    <tr><td><strong>Água</strong></td><td class="m"><strong>1,0</strong></td><td>Chumbo</td><td class="m">11,3</td></tr>
+    <tr><td>Água do mar</td><td class="m">1,03</td><td>Ouro</td><td class="m">19,3</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">O critério da flutuação</span>
+  <p>Um corpo <strong>flutua</strong> se sua densidade for menor que a do líquido. O gelo, com <span class="m">0,92 g/cm<sup>3</sup></span>, flutua na água — e cerca de 92% do bloco fica submerso, que é a origem da expressão “ponta do iceberg”.</p>
+  <p>O óleo, com <span class="m">0,8</span>, boia sobre a água; o ferro, com <span class="m">7,8</span>, afunda.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">A densidade da água amarra tudo</span>
+  <p class="m">1 g/cm<sup>3</sup> = 1 000 kg/m<sup>3</sup></p>
+  <p>Daí saem as equivalências práticas: <span class="m">1 L</span> de água pesa <span class="m">1 kg</span>, e <span class="m">1 m<sup>3</sup></span> pesa <span class="m">1 tonelada</span>.</p>
+</div>
+
+<p>A <strong>densidade demográfica</strong> — habitantes por quilômetro quadrado — tem estrutura idêntica, embora não trate de massa. É a mesma razão aplicada à população, e cai em Geografia.</p>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Vazão</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem"><span class="v">Q</span> = <span class="frac"><i><span class="v">V</span></i><i><span class="v">t</span></i></span> &nbsp;&nbsp;→&nbsp;&nbsp; <span class="v">t</span> = <span class="frac"><i><span class="v">V</span></i><i><span class="v">Q</span></i></span></p>
+  <p>Medida em <span class="m">L/s</span>, <span class="m">L/min</span> ou <span class="m">m<sup>3</sup>/h</span>. Lembre que <span class="m">1 m<sup>3</sup> = 1 000 L</span>.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Uma caixa de 1 500 L com torneira de 12,5 L/min</span>
+  <p class="m"><span class="v">t</span> = <span class="frac"><i>1500</i><i>12,5</i></span> = 120 min = <strong>2 horas</strong></p>
+</div>
+
+<h3>Torneiras somando, ralos subtraindo</h3>
+<div class="box def">
+  <span class="tag">O método das frações do tanque</span>
+  <p>Quando o enunciado dá <em>tempos</em> em vez de vazões, trabalhe com a <strong>fração do tanque por hora</strong>. Assim as vazões podem ser somadas ou subtraídas mesmo sem conhecer o volume.</p>
+  <p>Uma torneira que enche em <span class="m">6</span> horas tem vazão de <span class="m"><span class="frac"><i>1</i><i>6</i></span></span> do tanque por hora.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Duas torneiras juntas — vazões se somam</span>
+  <p>Uma enche em 6 h, outra em 3 h:</p>
+  <p class="m"><span class="frac"><i>1</i><i>6</i></span> + <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>1</i><i>6</i></span> + <span class="frac"><i>2</i><i>6</i></span> = <span class="frac"><i>3</i><i>6</i></span> = <span class="frac"><i>1</i><i>2</i></span> do tanque por hora</p>
+  <p class="m">Metade por hora → o tanque enche em <strong>2 horas</strong></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Torneira e ralo — vazões se subtraem</span>
+  <p>A torneira enche em 4 h e o ralo esvazia em 6 h:</p>
+  <p class="m"><span class="frac"><i>1</i><i>4</i></span> − <span class="frac"><i>1</i><i>6</i></span> = <span class="frac"><i>3</i><i>12</i></span> − <span class="frac"><i>2</i><i>12</i></span> = <span class="frac"><i>1</i><i>12</i></span> do tanque por hora</p>
+  <p class="m">Um doze avos por hora → o tanque enche em <strong>12 horas</strong></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A conferência que pega o erro de sinal</span>
+  <p>Com duas torneiras enchendo, o tempo tem de ser <strong>menor</strong> que o de qualquer uma sozinha. Com um ralo aberto, tem de ser <strong>maior</strong> que o da torneira sozinha. Se o resultado contrariar isso, houve troca entre soma e subtração.</p>
+</div>
+
+<p>Em contextos de rios e tubulações aparece ainda a relação <span class="m"><span class="v">Q</span> = <span class="v">A</span> · <span class="v">v</span></span>: a vazão é a área da seção multiplicada pela velocidade do fluido.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> As outras taxas do mesmo formato</h2>
+<p>Reconhecida a estrutura, toda taxa nova passa a ser familiar — e o ENEM inventa contextos com frequência.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Taxa</th><th>Razão</th><th>Unidade</th><th>Contexto</th></tr></thead>
+  <tbody>
+    <tr><td>Rendimento</td><td>distância ÷ combustível</td><td class="m">km/L</td><td>Viagens, custo de deslocamento</td></tr>
+    <tr><td>Concentração</td><td>massa ÷ volume</td><td class="m">g/L</td><td>Química, soro, poluentes</td></tr>
+    <tr><td>Densidade demográfica</td><td>habitantes ÷ área</td><td class="m">hab/km²</td><td>Geografia</td></tr>
+    <tr><td>Produtividade agrícola</td><td>colheita ÷ área</td><td class="m">sacas/ha</td><td>Agronegócio</td></tr>
+    <tr><td>Preço unitário</td><td>preço ÷ quantidade</td><td class="m">R$/kg</td><td>Comparação de compras</td></tr>
+    <tr><td>Pressão</td><td>força ÷ área</td><td class="m">N/m²</td><td>Física, hidrostática</td></tr>
+    <tr><td>Taxa de natalidade</td><td>nascimentos ÷ população</td><td>por mil hab.</td><td>Demografia</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Quando a taxa serve para comparar</span>
+  <p>Embalagens de tamanhos diferentes só podem ser comparadas pelo <strong>preço por quilo</strong>. Municípios de áreas diferentes só se comparam pela <strong>densidade demográfica</strong>. É essa a função da taxa: tornar comparável o que veio em quantidades distintas.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Valores de referência</h2>
+<p>Servem para conferir se o resultado faz sentido — uma velocidade de 500 km/h para um carro denuncia erro de unidade antes de qualquer revisão de conta.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Grandeza</th><th>Valor típico</th><th>Grandeza</th><th>Valor típico</th></tr></thead>
+  <tbody>
+    <tr><td>Caminhada</td><td class="m">5 km/h</td><td>Torneira comum</td><td class="m">12 L/min</td></tr>
+    <tr><td>Corrida</td><td class="m">12 km/h</td><td>Chuveiro</td><td class="m">10 L/min</td></tr>
+    <tr><td>Carro na cidade</td><td class="m">40 km/h</td><td>Consumo por pessoa</td><td class="m">150 L/dia</td></tr>
+    <tr><td>Carro na rodovia</td><td class="m">100 km/h</td><td>Caixa-d'água residencial</td><td class="m">500 a 1 000 L</td></tr>
+    <tr><td>Som no ar</td><td class="m">340 m/s</td><td>Rendimento de carro</td><td class="m">10 a 15 km/L</td></tr>
+    <tr><td>Luz no vácuo</td><td class="m">3 · 10<sup>8</sup> m/s</td><td>Densidade da água</td><td class="m">1 g/cm³</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Como aparece</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>Cinemática (velocidade média e instantânea), hidrostática (densidade e empuxo), vazão em tubulações</td></tr>
+    <tr><td><strong>Química</strong></td><td>Densidade de soluções, concentração em g/L, cálculo de massa a partir do volume</td></tr>
+    <tr><td><strong>Biologia</strong></td><td>Taxas populacionais, natalidade e mortalidade, fluxo de energia em cadeias</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>Densidade demográfica, vazão de rios, produtividade agrícola, indicadores sociais</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">O mesmo conteúdo com outra roupa</span>
+  <p>Uma questão de Física sobre velocidade média e uma de Geografia sobre densidade demográfica cobram exatamente a mesma habilidade: montar uma razão e conferir as unidades. Reconhecer isso reduz o volume real de conteúdo a estudar.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Escreva a unidade ao lado de cada número</span>
+  <p>A barra da unidade é a divisão. Anotar <span class="m">L/min</span> ao lado da vazão e <span class="m">min</span> ao lado do tempo mostra sozinho que os dois se multiplicam para dar litros.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Padronize as unidades antes de dividir</span>
+  <p>Vazão em litros por minuto com tempo em horas é o erro silencioso mais comum aqui. Converta primeiro, calcule depois.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Confira contra os valores de referência</span>
+  <p>Densidade de 50 g/cm³, velocidade de 500 km/h para um carro ou 5 000 litros de caixa-d'água residencial são sinais de troca de unidade — e aparecem antes de refazer a conta.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Média das velocidades como velocidade média</span> &nbsp;→&nbsp; <span class="c">distância total ÷ tempo total</span></span><small>Ida a 60 e volta a 40 dá 48 km/h, não 50. O trecho lento consome mais tempo.</small></li>
+  <li><span><span class="x">Ignorar o tempo de parada</span> &nbsp;→&nbsp; <span class="c">parada entra no tempo total</span></span><small>Se a pergunta é sobre o percurso completo, todo o tempo conta.</small></li>
+  <li><span><span class="x">2,5 h lido como 2 h 50 min</span> &nbsp;→&nbsp; <span class="c">2 h 30 min</span></span><small>Multiplique a parte decimal por 60. O tempo não é decimal.</small></li>
+  <li><span><span class="x">km/h e m/s tratados como iguais</span> &nbsp;→&nbsp; <span class="c">fator 3,6</span></span><small>De km/h para m/s divide-se; no sentido inverso, multiplica-se.</small></li>
+  <li><span><span class="x">g/cm³ e kg/m³ tratados como iguais</span> &nbsp;→&nbsp; <span class="c">fator 1 000</span></span><small>A água tem 1 g/cm³ e 1 000 kg/m³ — o mesmo valor com números bem diferentes.</small></li>
+  <li><span><span class="x">Somar as vazões quando há um ralo</span> &nbsp;→&nbsp; <span class="c">subtraia a de saída</span></span><small>Com ralo aberto, o tempo tem de ser maior que o da torneira sozinha.</small></li>
+  <li><span><span class="x">Somar os tempos de duas torneiras</span> &nbsp;→&nbsp; <span class="c">some as vazões, não os tempos</span></span><small>Duas torneiras juntas enchem mais rápido, então o tempo diminui.</small></li>
+  <li><span><span class="x">Misturar L/min com horas</span> &nbsp;→&nbsp; <span class="c">padronize antes</span></span><small>Erro silencioso: a conta fecha e o resultado sai errado por fator 60.</small></li>
+  <li><span><span class="x">Achar que a densidade depende da quantidade</span> &nbsp;→&nbsp; <span class="c">é característica do material</span></span><small>Um prego e um portão de ferro têm a mesma densidade.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em todas, anote a unidade ao lado de cada número antes de montar a conta.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Velocidade média</span>
+    <p class="enun">Um trem percorre 180 quilômetros entre duas estações em 2 horas e 30 minutos. A velocidade média desse trem, em quilômetros por hora, é de</p>
+    <ol class="alt"><li>60</li><li>66</li><li>72</li><li>75</li><li>90</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Primeiro converta o tempo para horas decimais, com cuidado:</p>
+      <p class="m">2 h 30 min = 2,5 h &nbsp;&nbsp;(30 ÷ 60 = 0,5)</p>
+      <p class="m"><span class="v">v</span> = <span class="frac"><i>180</i><i>2,5</i></span> = 72 km/h</p>
+      <p>A alternativa B é de quem usou <span class="m">2,3</span> em vez de <span class="m">2,5</span>, lendo “30 minutos” como “0,30 hora” — o erro de tratar o tempo como decimal.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · A armadilha da média</span>
+    <p class="enun">Um motorista percorre o trajeto de ida entre duas cidades a uma velocidade média de 60 km/h e faz o trajeto de volta, pelo mesmo caminho, a 40 km/h. A velocidade média do percurso completo, de ida e volta, é de</p>
+    <ol class="alt"><li>44 km/h</li><li>46 km/h</li><li>48 km/h</li><li>50 km/h</li><li>52 km/h</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A alternativa D é a resposta instintiva, e está errada. Velocidade média é <strong>distância total dividida pelo tempo total</strong>, não a média das velocidades.</p>
+      <p>Adote uma distância conveniente para cada trecho, como 120 km:</p>
+      <p class="m">ida: <span class="frac"><i>120</i><i>60</i></span> = 2 h &nbsp;&nbsp;·&nbsp;&nbsp; volta: <span class="frac"><i>120</i><i>40</i></span> = 3 h</p>
+      <p class="m"><span class="v">v</span> = <span class="frac"><i>240 km</i><i>5 h</i></span> = 48 km/h</p>
+      <p><strong>Por que puxa para baixo:</strong> as distâncias são iguais, mas o trecho lento dura 3 horas contra 2 do rápido. A velocidade menor pesa mais na média, e o resultado fica sempre abaixo de 50.</p>
+      <p><strong>Pela média harmônica:</strong> <span class="m"><span class="frac"><i>2 · 60 · 40</i><i>60 + 40</i></span> = <span class="frac"><i>4800</i><i>100</i></span> = 48</span></p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Identificar o material</span>
+    <p class="enun">Um objeto maciço tem massa de 156 gramas e ocupa um volume de 20 cm³. Consultando uma tabela de densidades, conclui-se que esse objeto é provavelmente de</p>
+    <ol class="alt">
+      <li>alumínio, densidade 2,7 g/cm³</li>
+      <li>ferro, densidade 7,8 g/cm³</li>
+      <li>chumbo, densidade 11,3 g/cm³</li>
+      <li>ouro, densidade 19,3 g/cm³</li>
+      <li>gelo, densidade 0,92 g/cm³</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">d</span> = <span class="frac"><i>156</i><i>20</i></span> = 7,8 g/cm<sup>3</sup></p>
+      <p>O valor corresponde ao <strong>ferro</strong>.</p>
+      <p><strong>Por que a densidade identifica o material:</strong> ela não depende da quantidade. Um objeto de ferro de 312 g ocuparia 40 cm³ e daria a mesma densidade de 7,8. É a razão que caracteriza a substância, não os valores absolutos.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Massa a partir da densidade</span>
+    <p class="enun">Um bloco de gelo tem volume de 500 cm³. Sabendo que a densidade do gelo é 0,92 g/cm³, a massa desse bloco é de</p>
+    <ol class="alt"><li>0,46 g</li><li>46 g</li><li>460 g</li><li>500 g</li><li>543 g</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Para achar o numerador da razão, <strong>multiplica-se</strong>:</p>
+      <p class="m"><span class="v">m</span> = <span class="v">d</span> · <span class="v">V</span> = 0,92 · 500 = 460 g</p>
+      <p><strong>Conferência de sentido:</strong> o gelo é menos denso que a água, então 500 cm³ de gelo devem pesar <em>menos</em> que 500 g, que é o peso de 500 cm³ de água. E 460 &lt; 500 ✓</p>
+      <p>A alternativa E é de quem dividiu em vez de multiplicar — e o resultado maior que 500 já denunciaria o erro.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Tempo de enchimento</span>
+    <p class="enun">Uma caixa-d'água com capacidade de 1 500 litros é abastecida por uma tubulação de vazão constante de 12,5 litros por minuto. Partindo da caixa vazia, o tempo necessário para enchê-la completamente é de</p>
+    <ol class="alt"><li>1 hora</li><li>1 hora e 30 minutos</li><li>2 horas</li><li>2 horas e 30 minutos</li><li>3 horas</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Para achar o denominador da razão, divide-se:</p>
+      <p class="m"><span class="v">t</span> = <span class="frac"><i>1500 L</i><i>12,5 L/min</i></span> = 120 min</p>
+      <p class="m">120 min = 2 horas</p>
+      <p>Repare que as unidades se cancelam corretamente: litros divididos por litros por minuto deixam minutos. Escrever a unidade ao lado de cada número confirma que a operação está certa.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Duas torneiras</span>
+    <p class="enun">Uma torneira, sozinha, enche um tanque em 6 horas. Outra torneira, sozinha, enche o mesmo tanque em 3 horas. Abertas simultaneamente, as duas encherão o tanque em</p>
+    <ol class="alt"><li>1 hora e 30 minutos</li><li>2 horas</li><li>4 horas e 30 minutos</li><li>9 horas</li><li>18 horas</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Não se somam tempos — somam-se <strong>vazões</strong>. Trabalhe com a fração do tanque por hora:</p>
+      <p class="m">primeira: <span class="frac"><i>1</i><i>6</i></span> &nbsp;&nbsp;·&nbsp;&nbsp; segunda: <span class="frac"><i>1</i><i>3</i></span> = <span class="frac"><i>2</i><i>6</i></span></p>
+      <p class="m">juntas: <span class="frac"><i>1</i><i>6</i></span> + <span class="frac"><i>2</i><i>6</i></span> = <span class="frac"><i>3</i><i>6</i></span> = <span class="frac"><i>1</i><i>2</i></span> do tanque por hora</p>
+      <p>Meio tanque por hora significa o tanque cheio em <strong>2 horas</strong>.</p>
+      <p><strong>Conferência obrigatória:</strong> com duas torneiras o tempo tem de ser <em>menor</em> que o da mais rápida sozinha, que são 3 horas. E 2 &lt; 3 ✓ As alternativas D e E, maiores que 3 horas, seriam impossíveis.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Torneira e ralo</span>
+    <p class="enun">Uma torneira enche um reservatório vazio em 4 horas. Um ralo, quando aberto, esvazia o reservatório cheio em 6 horas. Com a torneira e o ralo abertos ao mesmo tempo, a partir do reservatório vazio, ele ficará cheio em</p>
+    <ol class="alt"><li>2 horas</li><li>5 horas</li><li>10 horas</li><li>12 horas</li><li>24 horas</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A vazão de entrada é positiva e a de saída, negativa. <strong>Subtraia:</strong></p>
+      <p class="m"><span class="frac"><i>1</i><i>4</i></span> − <span class="frac"><i>1</i><i>6</i></span> = <span class="frac"><i>3</i><i>12</i></span> − <span class="frac"><i>2</i><i>12</i></span> = <span class="frac"><i>1</i><i>12</i></span> do reservatório por hora</p>
+      <p>Um doze avos por hora significa <strong>12 horas</strong> para encher.</p>
+      <p><strong>Conferência obrigatória:</strong> com o ralo aberto, o tempo tem de ser <em>maior</em> que as 4 horas da torneira sozinha. E 12 &gt; 4 ✓ A alternativa A, menor que 4 horas, seria impossível.</p>
+      <p>Note também que a torneira é mais rápida que o ralo — se fosse o contrário, o reservatório nunca encheria.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Rendimento</span>
+    <p class="enun">Um automóvel percorreu 420 quilômetros consumindo 35 litros de combustível. O rendimento médio desse veículo foi de</p>
+    <ol class="alt"><li>8 km/L</li><li>10 km/L</li><li>12 km/L</li><li>14 km/L</li><li>15 km/L</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Rendimento é distância dividida por combustível:</p>
+      <p class="m">420 ÷ 35 = 12 km/L</p>
+      <p><strong>Conferência contra a referência:</strong> automóveis de passeio costumam render entre 10 e 15 km/L. O valor obtido está na faixa esperada.</p>
+      <p>Esse mesmo rendimento responde as duas outras perguntas possíveis: com 50 litros o carro faria <span class="m">600 km</span>, e para 300 km precisaria de <span class="m">25</span> litros.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Vazão de abastecimento urbano</span>
+    <p class="enun">Uma cidade com 250 mil habitantes tem consumo médio de 180 litros de água por pessoa por dia. Para atender a essa demanda, o sistema de abastecimento precisa operar com vazão média, em metros cúbicos por hora, de</p>
+    <ol class="alt"><li>187,5</li><li>1 875</li><li>18 750</li><li>45 000</li><li>1 080 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Consumo diário total da cidade:</p>
+      <p class="m">250 000 · 180 = 45 000 000 litros por dia</p>
+      <p>Convertendo para metros cúbicos, com <span class="m">1 m<sup>3</sup> = 1 000 L</span>:</p>
+      <p class="m">45 000 000 ÷ 1 000 = 45 000 m<sup>3</sup> por dia</p>
+      <p>Agora a vazão por hora:</p>
+      <p class="m">45 000 ÷ 24 = 1 875 m<sup>3</sup>/h</p>
+      <p>A alternativa D é o consumo <em>diário</em> em metros cúbicos, sem a divisão pelas 24 horas — a etapa que a questão realmente cobra. A E é o total em litros por dia, sem nenhuma conversão.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço que velocidade, densidade e vazão têm a mesma estrutura de razão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso a unidade para descobrir se devo multiplicar ou dividir</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo velocidade média como distância total dividida por tempo total</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que a velocidade média de ida e volta não é a média das velocidades</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei explicar por que o resultado puxa para a velocidade menor</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Incluo o tempo de parada no cálculo da média do percurso completo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo densidade e uso o critério de flutuação em relação à água</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto <span class="m">g/cm<sup>3</sup></span> em <span class="m">kg/m<sup>3</sup></span> multiplicando por 1 000</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que a densidade caracteriza o material e não depende da quantidade</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo problemas de torneiras somando frações do tanque por hora</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Subtraio a vazão do ralo e confiro que o tempo aumentou</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Padronizo unidades antes de dividir, sobretudo minutos e horas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro o resultado contra os valores típicos de referência</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Inclua questões de <strong>Física</strong> sobre cinemática e hidrostática — é o mesmo conteúdo com outra roupa, e treinar nos dois formatos consolida de uma vez. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+<div class="box def">
+  <span class="tag">Matéria concluída</span>
+  <p>Com este assunto, <strong>Matemática Básica e Proporcionalidade</strong> está completa: 12 assuntos, das operações fundamentais às taxas aplicadas. É a base sobre a qual se apoiam funções, geometria, estatística e boa parte de Física e Química.</p>
+  <p>Antes de seguir para a próxima frente, vale uma revisão dos assuntos marcados como <em>Revisar</em> na planilha e um bloco de questões misturando os doze temas — é assim que a prova cobra, sem avisar de qual assunto é cada questão.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>45 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-12-velocidade-densidade-vazao.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-12";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

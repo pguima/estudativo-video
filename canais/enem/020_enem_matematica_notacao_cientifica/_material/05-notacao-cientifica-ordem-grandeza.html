@@ -1,0 +1,1079 @@
+<title>Notação Científica e Ordem de Grandeza</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 5 de 12</p>
+    <h1>Notação científica e ordem de grandeza</h1>
+    <p class="deck">É a aplicação direta das potências de 10 do assunto anterior — e a linguagem em que o ENEM escreve população, verba pública, distância astronômica, tamanho de vírus e consumo de energia. Cai nas quatro áreas, não só em Matemática.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Escala logarítmica de tamanhos, do átomo em dez elevado a menos dez metros até a distância da Terra ao Sol em dez elevado a onze metros">
+  <line x1="20" y1="106" x2="284" y2="106" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <polygon points="284,106 276,102 276,110" style="fill:var(--ink-3)"/>
+  <line x1="20" y1="100" x2="20" y2="112" style="stroke:var(--c5);stroke-width:2"/>
+  <line x1="20" y1="100" x2="20" y2="76" style="stroke:var(--c5);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="20" y="68" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">átomo</text>
+  <text x="20" y="128" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10⁻¹⁰</text>
+  <line x1="57" y1="100" x2="57" y2="112" style="stroke:var(--c5);stroke-width:2"/>
+  <line x1="57" y1="112" x2="57" y2="140" style="stroke:var(--c5);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="57" y="154" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">vírus</text>
+  <text x="57" y="168" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10⁻⁷</text>
+  <line x1="94" y1="100" x2="94" y2="112" style="stroke:var(--c1);stroke-width:2"/>
+  <line x1="94" y1="100" x2="94" y2="76" style="stroke:var(--c1);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="94" y="68" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">cabelo</text>
+  <text x="94" y="128" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10⁻⁴</text>
+  <line x1="144" y1="100" x2="144" y2="112" style="stroke:var(--c3);stroke-width:2"/>
+  <line x1="144" y1="112" x2="144" y2="140" style="stroke:var(--c3);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="144" y="154" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">pessoa</text>
+  <text x="144" y="168" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10⁰</text>
+  <line x1="211" y1="100" x2="211" y2="112" style="stroke:var(--c2);stroke-width:2"/>
+  <line x1="211" y1="100" x2="211" y2="76" style="stroke:var(--c2);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="211" y="68" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">raio da Terra</text>
+  <text x="211" y="128" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10⁷</text>
+  <line x1="262" y1="100" x2="262" y2="112" style="stroke:var(--c2);stroke-width:2"/>
+  <line x1="262" y1="112" x2="262" y2="140" style="stroke:var(--c2);stroke-width:1;stroke-dasharray:3 3"/>
+  <text x="262" y="154" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">Terra–Sol</text>
+  <text x="262" y="168" text-anchor="middle" class="svg-num" style="fill:var(--ink-3)">10¹¹</text>
+  <text x="20" y="26" class="svg-ttl" style="fill:var(--ink-2)">cada passo à direita</text>
+  <text x="20" y="42" class="svg-ttl" style="fill:var(--ink-2)">multiplica por 10</text>
+  <text x="150" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">metros</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>2 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Potenciação e propriedades</dd></div>
+      <div><dt>Destrava</dt><dd>Unidades, Física, Química, estimativas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este assunto tem uma característica rara: ele aparece nas <strong>quatro áreas</strong> da prova, não só em Matemática. Toda vez que um enunciado traz um número muito grande ou muito pequeno — e o ENEM adora contextos reais — a notação científica está em jogo.</p>
+<ul>
+  <li><strong>Matemática:</strong> conversões, operações e comparação de grandezas.</li>
+  <li><strong>Física:</strong> distâncias astronômicas, energia, potência, carga elétrica.</li>
+  <li><strong>Química:</strong> número de Avogadro, concentração, pH, massa atômica.</li>
+  <li><strong>Biologia:</strong> tamanho de células, vírus e bactérias, população.</li>
+  <li><strong>Humanas:</strong> dados demográficos, PIB, verbas, área territorial.</li>
+</ul>
+<p>E há um detalhe estratégico: em muitas dessas questões as alternativas diferem em <strong>ordens de grandeza</strong>. Acertar só a potência de 10 já elimina quatro alternativas — mesmo sem fazer a conta exata.</p>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três coisas: <strong>somar com expoentes diferentes</strong> (seção 05, a que mais derruba), <strong>conversão de área e volume</strong> (seção 07, onde o fator é elevado ao quadrado ou ao cubo) e o <strong>critério real da ordem de grandeza</strong> (seção 06, que não é simplesmente “o expoente que está escrito”).</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A forma exata</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.1rem"><span class="v">a</span> · 10<sup><span class="v">n</span></sup> &nbsp;&nbsp; com &nbsp; 1 ≤ |<span class="v">a</span>| &lt; 10 &nbsp; e &nbsp; <span class="v">n</span> inteiro</p>
+  <p>O coeficiente <span class="m"><span class="v">a</span></span> tem <strong>exatamente um algarismo diferente de zero antes da vírgula</strong>. Nem menos, nem mais.</p>
+</div>
+
+<p>Essa restrição existe para que cada número tenha <strong>uma única</strong> escrita — e é justamente ela que a prova cobra nas alternativas.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Escrita</th><th>É notação científica?</th><th>Por quê</th><th>Forma correta</th></tr></thead>
+  <tbody>
+    <tr><td class="m">3,84 · 10<sup>8</sup></td><td>Sim</td><td>Coeficiente entre 1 e 10</td><td>—</td></tr>
+    <tr><td class="m">25 · 10<sup>3</sup></td><td><strong>Não</strong></td><td>Coeficiente ≥ 10</td><td class="m">2,5 · 10<sup>4</sup></td></tr>
+    <tr><td class="m">0,5 · 10<sup>4</sup></td><td><strong>Não</strong></td><td>Coeficiente &lt; 1</td><td class="m">5 · 10<sup>3</sup></td></tr>
+    <tr><td class="m">1 · 10<sup>−6</sup></td><td>Sim</td><td>Coeficiente igual a 1 é válido</td><td>—</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Expoente negativo, número positivo</span>
+  <p><span class="m">10<sup>−3</sup> = 0,001</span> — um número <strong>pequeno e positivo</strong>. O sinal do expoente indica o lado para onde a vírgula anda, nunca o sinal do resultado. Confundir isso troca a alternativa.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Convertendo qualquer número</h2>
+<div class="box def">
+  <span class="tag">A regra única</span>
+  <p>Ande com a vírgula até sobrar <strong>um algarismo</strong> antes dela. O expoente é o <strong>número de casas andadas</strong>; o sinal vem da direção.</p>
+  <p><strong>Vírgula para a esquerda</strong> (número grande) → expoente <strong>positivo</strong><br>
+  <strong>Vírgula para a direita</strong> (número pequeno) → expoente <strong>negativo</strong></p>
+</div>
+
+<div class="eq">
+  <p class="m">384 400 000 &nbsp;→&nbsp; vírgula andou 8 casas à esquerda &nbsp;→&nbsp; <strong>3,844 · 10<sup>8</sup></strong></p>
+  <p class="m">0,000 000 42 &nbsp;→&nbsp; vírgula andou 7 casas à direita &nbsp;→&nbsp; <strong>4,2 · 10<sup>−7</sup></strong></p>
+  <p class="m">5 970 000 000 000 000 000 000 000 &nbsp;→&nbsp; <strong>5,97 · 10<sup>24</sup></strong> &nbsp;(massa da Terra, em kg)</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A conferência de dois segundos</span>
+  <p>Antes de seguir, olhe o número original: se ele é <strong>maior que 1</strong>, o expoente <em>tem</em> que ser positivo; se é <strong>menor que 1</strong>, tem que ser negativo. Isso pega o erro de sinal na hora, sem precisar recontar as casas.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Multiplicação e divisão</h2>
+<p>São as operações fáceis: os coeficientes vão de um lado, os expoentes de outro.</p>
+
+<div class="eq">
+  <span class="lbl">As duas fórmulas</span>
+  <p class="m">(<span class="v">a</span>·10<sup><span class="v">m</span></sup>) · (<span class="v">b</span>·10<sup><span class="v">n</span></sup>) = (<span class="v">a</span>·<span class="v">b</span>) · 10<sup><span class="v">m</span>+<span class="v">n</span></sup> &nbsp;&nbsp;<em>soma os expoentes</em></p>
+  <p class="m">(<span class="v">a</span>·10<sup><span class="v">m</span></sup>) ÷ (<span class="v">b</span>·10<sup><span class="v">n</span></sup>) = (<span class="v">a</span>÷<span class="v">b</span>) · 10<sup><span class="v">m</span>−<span class="v">n</span></sup> &nbsp;&nbsp;<em>subtrai os expoentes</em></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O passo que quase todo mundo esquece: renormalizar</span>
+  <p>O resultado pode sair com coeficiente fora do intervalo <span class="m">[1, 10)</span> — e aí ainda não é notação científica:</p>
+  <p class="m">(8·10<sup>4</sup>) · (5·10<sup>2</sup>) = 40·10<sup>6</sup> &nbsp;→&nbsp; <strong>4·10<sup>7</sup></strong></p>
+  <p class="m">(2·10<sup>−2</sup>) ÷ (5·10<sup>−5</sup>) = 0,4·10<sup>3</sup> &nbsp;→&nbsp; <strong>4·10<sup>2</sup></strong></p>
+  <p>Repare que <span class="m">40·10<sup>6</sup></span> costuma estar entre as alternativas, esperando quem parou um passo antes.</p>
+</div>
+
+<h3>Potência e raiz</h3>
+<div class="eq">
+  <p class="m">(2 · 10<sup>−2</sup>)<sup>3</sup> = 2<sup>3</sup> · 10<sup>−6</sup> = 8 · 10<sup>−6</sup> &nbsp;&nbsp;<em>o expoente age nos dois fatores</em></p>
+</div>
+<p>Na raiz há um truque: <strong>o expoente precisa ficar par</strong> antes de extrair. Se não estiver, ajuste o coeficiente para compensar:</p>
+<div class="eq">
+  <p class="m"><span class="rad"><i>1,6 · 10<sup>−5</sup></i></span> = <span class="rad"><i>16 · 10<sup>−6</sup></i></span> = <span class="rad"><i>16</i></span> · 10<sup>−3</sup> = <strong>4 · 10<sup>−3</sup></strong></p>
+  <p>Passar de <span class="m">1,6·10<sup>−5</sup></span> para <span class="m">16·10<sup>−6</sup></span> não muda o valor: cresceu 10 vezes no coeficiente e caiu 10 vezes no expoente.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Soma e subtração: a que derruba</h2>
+<p>Aqui está a diferença que separa quem estudou de quem decorou. Multiplicar e dividir funciona com expoentes diferentes. <strong>Somar e subtrair, não.</strong></p>
+
+<div class="box def">
+  <span class="tag">A condição</span>
+  <p>Para somar ou subtrair, os números precisam ter o <strong>mesmo expoente</strong>. Iguale primeiro — normalmente convertendo o menor para o expoente do maior.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Somando 3·10⁵ + 8·10⁴ + 2·10⁴</span>
+  <p class="m">8·10<sup>4</sup> = 0,8·10<sup>5</sup> &nbsp;&nbsp; 2·10<sup>4</sup> = 0,2·10<sup>5</sup></p>
+  <p class="m">3·10<sup>5</sup> + 0,8·10<sup>5</sup> + 0,2·10<sup>5</sup> = <strong>4·10<sup>5</sup></strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Por que não dá para somar direto</span>
+  <p>Somar <span class="m">3 + 8 + 2 = 13</span> e escrever <span class="m">13·10<sup>5</sup></span> é o mesmo erro de somar metros com centímetros sem converter. <span class="m">10<sup>5</sup></span> e <span class="m">10<sup>4</sup></span> são unidades diferentes de tamanho.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Regra de bolso</span>
+  <p>Sempre converta para o <strong>maior</strong> expoente. Assim os coeficientes ajustados ficam menores que 1, fáceis de somar mentalmente, e o resultado já sai perto da forma normalizada.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Ordem de grandeza</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>É a <strong>potência de 10 mais próxima</strong> do número. Não serve para saber o valor exato — serve para saber a <em>escala</em>, para comparar coisas de tamanhos muito diferentes.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O critério real, que a maioria ignora</span>
+  <p>Ordem de grandeza <strong>não</strong> é simplesmente o expoente que está escrito. Escreva como <span class="m"><span class="v">a</span>·10<sup><span class="v">n</span></sup></span> e compare o coeficiente com <span class="m"><span class="rad"><i>10</i></span> ≈ 3,16</span>:</p>
+  <p class="m" style="font-size:1.05rem"><span class="v">a</span> &lt; 3,16 &nbsp;→&nbsp; ordem = 10<sup><span class="v">n</span></sup><br><span class="v">a</span> ≥ 3,16 &nbsp;→&nbsp; ordem = 10<sup><span class="v">n</span>+1</sup></p>
+</div>
+
+<p>A razão é geométrica, não arbitrária: <span class="m"><span class="rad"><i>10</i></span></span> é o ponto médio entre <span class="m">1</span> e <span class="m">10</span> numa escala de multiplicação. Abaixo dele o número está mais perto de <span class="m">10<sup><span class="v">n</span></sup></span>; acima, mais perto de <span class="m">10<sup><span class="v">n</span>+1</sup></span>.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Número</th><th>Coeficiente</th><th>Comparação</th><th>Ordem de grandeza</th></tr></thead>
+  <tbody>
+    <tr><td class="m">2,3 · 10<sup>5</sup></td><td class="m">2,3</td><td>menor que 3,16</td><td class="m">10<sup>5</sup></td></tr>
+    <tr><td class="m">7,2 · 10<sup>5</sup></td><td class="m">7,2</td><td>maior que 3,16</td><td class="m">10<sup>6</sup></td></tr>
+    <tr><td class="m">9,8 · 10<sup>−4</sup></td><td class="m">9,8</td><td>maior que 3,16</td><td class="m">10<sup>−3</sup></td></tr>
+    <tr><td class="m">1,1 · 10<sup>12</sup></td><td class="m">1,1</td><td>menor que 3,16</td><td class="m">10<sup>12</sup></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">Diferença de ordens = quantas vezes maior</span>
+  <p>Dois números que diferem em <strong>3 ordens de grandeza</strong> diferem por um fator de cerca de <span class="m">1000</span>. Cada ordem multiplica por 10. É assim que a prova compara o tamanho de um átomo com o de uma célula, ou o PIB de dois países.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Prefixos e conversão de unidades</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Prefixo</th><th>Símbolo</th><th>Potência</th><th>Onde aparece</th></tr></thead>
+  <tbody>
+    <tr><td>tera</td><td class="m">T</td><td class="m">10<sup>12</sup></td><td>terabyte, produção nacional</td></tr>
+    <tr><td>giga</td><td class="m">G</td><td class="m">10<sup>9</sup></td><td>gigabyte, gigawatt, PIB</td></tr>
+    <tr><td>mega</td><td class="m">M</td><td class="m">10<sup>6</sup></td><td>megawatt, habitantes</td></tr>
+    <tr><td>quilo</td><td class="m">k</td><td class="m">10<sup>3</sup></td><td>quilômetro, quilograma</td></tr>
+    <tr><td>deci</td><td class="m">d</td><td class="m">10<sup>−1</sup></td><td>decímetro, decibel</td></tr>
+    <tr><td>centi</td><td class="m">c</td><td class="m">10<sup>−2</sup></td><td>centímetro</td></tr>
+    <tr><td>mili</td><td class="m">m</td><td class="m">10<sup>−3</sup></td><td>miligrama, mililitro</td></tr>
+    <tr><td>micro</td><td class="m">μ</td><td class="m">10<sup>−6</sup></td><td>micrograma, poluentes</td></tr>
+    <tr><td>nano</td><td class="m">n</td><td class="m">10<sup>−9</sup></td><td>nanômetro, vírus</td></tr>
+    <tr><td>pico</td><td class="m">p</td><td class="m">10<sup>−12</sup></td><td>picossegundo</td></tr>
+  </tbody>
+</table>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Um metro quadrado dividido em uma grade de cem por cem centímetros, totalizando dez mil centímetros quadrados">
+  <rect x="40" y="26" width="150" height="150" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2"/>
+  <line x1="40" y1="63.5" x2="190" y2="63.5" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <line x1="40" y1="101" x2="190" y2="101" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <line x1="40" y1="138.5" x2="190" y2="138.5" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <line x1="77.5" y1="26" x2="77.5" y2="176" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <line x1="115" y1="26" x2="115" y2="176" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <line x1="152.5" y1="26" x2="152.5" y2="176" style="stroke:var(--c1-line);stroke-width:.8"/>
+  <text x="115" y="16" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">100 cm</text>
+  <text x="28" y="106" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)" transform="rotate(-90 28 106)">100 cm</text>
+  <text x="115" y="106" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">1 m²</text>
+  <text x="240" y="66" class="svg-num" style="fill:var(--ink-2)">100 × 100 =</text>
+  <rect x="238" y="80" width="200" height="34" rx="9" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <text x="338" y="103" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">10 000 cm² = 10⁴ cm²</text>
+  <rect x="238" y="126" width="200" height="34" rx="9" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.5"/>
+  <text x="338" y="149" text-anchor="middle" class="svg-ttl" style="fill:var(--c4)">e não 100 cm²</text>
+  <text x="338" y="182" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">erro por um fator de 100</text>
+</svg>
+<figcaption><b>Contar os quadradinhos resolve a dúvida.</b> Como cada lado do metro tem 100 centímetros, a grade tem <span class="m">100 × 100</span> células — e não 100. É por isso que o fator de conversão vai ao quadrado na área e ao cubo no volume.</figcaption>
+</figure>
+
+<div class="box warn">
+  <span class="tag">A armadilha de área e volume</span>
+  <p>Ao converter <strong>área</strong>, o fator é elevado ao <strong>quadrado</strong>. Ao converter <strong>volume</strong>, ao <strong>cubo</strong>. Este é um dos erros mais caros da prova inteira.</p>
+  <p class="m">1 m = 10<sup>2</sup> cm &nbsp;→&nbsp; 1 m<sup>2</sup> = 10<sup>4</sup> cm<sup>2</sup> &nbsp;→&nbsp; 1 m<sup>3</sup> = 10<sup>6</sup> cm<sup>3</sup></p>
+  <p class="m">1 km = 10<sup>3</sup> m &nbsp;→&nbsp; 1 km<sup>2</sup> = 10<sup>6</sup> m<sup>2</sup> &nbsp;→&nbsp; 1 km<sup>3</sup> = 10<sup>9</sup> m<sup>3</sup></p>
+  <p>Quem converte <span class="m">1 m<sup>2</sup> = 100 cm<sup>2</sup></span> erra por um fator de 100.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Equivalências que caem sempre</span>
+  <p class="m">1 L = 1 dm<sup>3</sup> = 10<sup>−3</sup> m<sup>3</sup> &nbsp;&nbsp;·&nbsp;&nbsp; 1 mL = 1 cm<sup>3</sup> &nbsp;&nbsp;·&nbsp;&nbsp; 1 m<sup>3</sup> = 1 000 L</p>
+  <p class="m">1 hectare = 10<sup>4</sup> m<sup>2</sup> &nbsp;(quadrado de 100 m de lado) &nbsp;&nbsp;·&nbsp;&nbsp; 1 km<sup>2</sup> = 100 hectares</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Comparar grandezas</h2>
+<p>“Quantas vezes maior” é <strong>divisão</strong>, não subtração. Parece óbvio lido assim, mas sob pressão a confusão acontece.</p>
+
+<div class="eq">
+  <span class="lbl">Quantas vezes a Terra é mais massiva que a Lua?</span>
+  <p class="m">Terra: 6 · 10<sup>24</sup> kg &nbsp;&nbsp; Lua: 7,5 · 10<sup>22</sup> kg</p>
+  <p class="m"><span class="frac"><i>6 · 10<sup>24</sup></i><i>7,5 · 10<sup>22</sup></i></span> = <span class="frac"><i>6</i><i>7,5</i></span> · 10<sup>2</sup> = 0,8 · 10<sup>2</sup> = <strong>80 vezes</strong></p>
+</div>
+
+<div class="box def">
+  <span class="tag">Duas perguntas diferentes</span>
+  <p><strong>“Quantas vezes maior”</strong> → divida. Resposta em <em>vezes</em>.</p>
+  <p><strong>“Quanto maior”</strong> → subtraia. Resposta na <em>mesma unidade</em> do enunciado, e aí você precisa igualar os expoentes antes.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Algarismos significativos</h2>
+<p>Cai com mais força em Física e Química, mas o critério é este:</p>
+<ul>
+  <li>Todos os algarismos <strong>diferentes de zero</strong> são significativos.</li>
+  <li>Zeros <strong>entre</strong> algarismos significativos contam.</li>
+  <li>Zeros <strong>à esquerda</strong> não contam — são só posicionais.</li>
+  <li>Zeros <strong>à direita, depois da vírgula</strong>, contam.</li>
+</ul>
+
+<div class="eq">
+  <p class="m">0,00420 → <strong>três</strong> significativos (4, 2 e o zero final)</p>
+  <p class="m">1 002 → <strong>quatro</strong> significativos</p>
+  <p class="m">4,20 · 10<sup>−3</sup> → <strong>três</strong> significativos</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A vantagem escondida da notação científica</span>
+  <p>No coeficiente, <strong>todos</strong> os algarismos são significativos. A notação elimina a ambiguidade dos zeros: <span class="m">4 200</span> pode ter dois, três ou quatro significativos, mas <span class="m">4,20·10<sup>3</sup></span> tem exatamente três, sem discussão.</p>
+</div>
+
+<p><strong>Arredondamento:</strong> olhe o algarismo seguinte. Menor que 5, mantém; 5 ou maior, soma 1.</p>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estimativa: a conta de guardanapo</h2>
+<p>Muitas questões do ENEM não exigem o valor exato — exigem a <strong>ordem certa</strong>. Nessas, arredondar cedo é estratégia, não descuido.</p>
+
+<div class="box def">
+  <span class="tag">O método</span>
+  <p>Arredonde cada fator para <strong>um algarismo significativo</strong>, multiplique mentalmente e some os expoentes:</p>
+  <p class="m">4,7·10<sup>3</sup> × 8,2·10<sup>5</sup> ≈ 5 × 8 · 10<sup>8</sup> = 40·10<sup>8</sup> = <strong>4·10<sup>9</sup></strong></p>
+  <p>O valor exato é <span class="m">3,854·10<sup>9</sup></span> — a estimativa erra menos de 4%, e as alternativas raramente estão tão próximas.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Quando usar</span>
+  <p>Olhe as alternativas <strong>antes</strong> de calcular. Se elas diferem em ordem de grandeza — <span class="m">10<sup>6</sup></span>, <span class="m">10<sup>8</sup></span>, <span class="m">10<sup>10</sup></span> —, a estimativa resolve em quinze segundos. Se estão todas na mesma potência e diferem só no coeficiente, aí a conta precisa ser exata.</p>
+</div>
+
+<h3>Escalas que vale ter na cabeça</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Grandeza</th><th>Ordem</th><th>Grandeza</th><th>Ordem</th></tr></thead>
+  <tbody>
+    <tr><td>Átomo</td><td class="m">10<sup>−10</sup> m</td><td>Raio da Terra</td><td class="m">10<sup>7</sup> m</td></tr>
+    <tr><td>Vírus</td><td class="m">10<sup>−7</sup> m</td><td>Terra ao Sol</td><td class="m">10<sup>11</sup> m</td></tr>
+    <tr><td>Célula</td><td class="m">10<sup>−5</sup> m</td><td>População mundial</td><td class="m">10<sup>10</sup></td></tr>
+    <tr><td>Fio de cabelo</td><td class="m">10<sup>−4</sup> m</td><td>População do Brasil</td><td class="m">10<sup>8</sup></td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">25·10³ é notação científica</span> &nbsp;→&nbsp; <span class="c">2,5·10⁴</span></span><small>O coeficiente precisa ficar entre 1 e 10. Renormalize sempre.</small></li>
+  <li><span><span class="x">Parar em 40·10⁶</span> &nbsp;→&nbsp; <span class="c">4·10⁷</span></span><small>Depois de multiplicar, o resultado quase sempre precisa ser renormalizado.</small></li>
+  <li><span><span class="x">3·10⁵ + 8·10⁴ = 11·10⁹</span> &nbsp;→&nbsp; <span class="c">3,8·10⁵</span></span><small>Na soma, iguale os expoentes primeiro. Somar expoentes só vale no produto.</small></li>
+  <li><span><span class="x">Multiplicar os expoentes no produto</span> &nbsp;→&nbsp; <span class="c">somar</span></span><small>Soma no produto, subtrai no quociente, multiplica só na potência de potência.</small></li>
+  <li><span><span class="x">1 m² = 100 cm²</span> &nbsp;→&nbsp; <span class="c">10 000 cm²</span></span><small>Em área o fator é ao quadrado; em volume, ao cubo. Erro de fator 100.</small></li>
+  <li><span><span class="x">Ordem de grandeza de 7,2·10⁵ é 10⁵</span> &nbsp;→&nbsp; <span class="c">10⁶</span></span><small>Coeficiente ≥ 3,16 sobe uma ordem. Não é o expoente escrito.</small></li>
+  <li><span><span class="x">10⁻³ é um número negativo</span> &nbsp;→&nbsp; <span class="c">é 0,001, positivo</span></span><small>O sinal do expoente indica o lado da vírgula, não o sinal do número.</small></li>
+  <li><span><span class="x">“Quantas vezes maior” resolvido por subtração</span> &nbsp;→&nbsp; <span class="c">é divisão</span></span><small>“Quantas vezes” é razão. “Quanto maior” é que é diferença.</small></li>
+  <li><span><span class="x">√(1,6·10⁻⁵) com expoente ímpar</span> &nbsp;→&nbsp; <span class="c">reescreva como 16·10⁻⁶</span></span><small>Só se extrai raiz quadrada limpa quando o expoente é par.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, olhe as alternativas: em várias delas a estimativa já basta.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Conversão</span>
+    <p class="enun">A massa da Terra é de aproximadamente 5 970 000 000 000 000 000 000 000 kg. Em notação científica, esse valor é</p>
+    <ol class="alt"><li><span class="m">5,97 · 10<sup>21</sup></span></li><li><span class="m">59,7 · 10<sup>23</sup></span></li><li><span class="m">5,97 · 10<sup>24</sup></span></li><li><span class="m">5,97 · 10<sup>−24</sup></span></li><li><span class="m">0,597 · 10<sup>25</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A vírgula está no fim do número e precisa parar depois do 5. Contando os algarismos que sobram à direita do 5: são <strong>24</strong>.</p>
+      <p class="m">5 970 000 000 000 000 000 000 000 = 5,97 · 10<sup>24</sup></p>
+      <p>Vale conferir as demais: <strong>B</strong> e <strong>E</strong> têm o valor correto, mas não estão em notação científica — os coeficientes 59,7 e 0,597 estão fora do intervalo [1, 10). <strong>D</strong> inverteu o sinal do expoente, o que faria a Terra pesar quase nada.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Multiplicação com renormalização</span>
+    <p class="enun">Um data center possui <span class="m">8 · 10<sup>4</sup></span> servidores, e cada servidor consome, em média, <span class="m">5 · 10<sup>2</sup></span> watts. A potência total consumida, em watts, é</p>
+    <ol class="alt"><li><span class="m">1,3 · 10<sup>7</sup></span></li><li><span class="m">4 · 10<sup>6</sup></span></li><li><span class="m">4 · 10<sup>7</sup></span></li><li><span class="m">40 · 10<sup>6</sup></span></li><li><span class="m">4 · 10<sup>8</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplica os coeficientes e soma os expoentes:</p>
+      <p class="m">(8 · 10<sup>4</sup>) · (5 · 10<sup>2</sup>) = 40 · 10<sup>6</sup></p>
+      <p>Mas <span class="m">40</span> não é coeficiente válido. Renormalizando:</p>
+      <p class="m">40 · 10<sup>6</sup> = 4 · 10<sup>7</sup> W</p>
+      <p>A alternativa D tem o valor certo escrito de forma errada — é a armadilha de quem para um passo antes. A alternativa A é de quem <em>somou</em> 8 + 5.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Divisão</span>
+    <p class="enun">Uma impressora 3D deposita material em camadas de <span class="m">5 · 10<sup>−5</sup></span> metro de espessura. Para produzir uma peça com <span class="m">2 · 10<sup>−2</sup></span> metro de altura, o número de camadas necessárias é</p>
+    <ol class="alt"><li>25</li><li>40</li><li>250</li><li>400</li><li>4 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Divide a altura total pela espessura de cada camada:</p>
+      <p class="m"><span class="frac"><i>2 · 10<sup>−2</sup></i><i>5 · 10<sup>−5</sup></i></span> = <span class="frac"><i>2</i><i>5</i></span> · 10<sup>−2−(−5)</sup> = 0,4 · 10<sup>3</sup></p>
+      <p>Renormalizando: <span class="m">4 · 10<sup>2</sup> = 400</span> camadas.</p>
+      <p>Atenção ao expoente: <span class="m">−2 − (−5) = −2 + 5 = +3</span>. Errar esse sinal leva direto à alternativa A.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Soma com expoentes diferentes</span>
+    <p class="enun">Três municípios vizinhos têm, respectivamente, <span class="m">3 · 10<sup>5</sup></span>, <span class="m">8 · 10<sup>4</sup></span> e <span class="m">2 · 10<sup>4</sup></span> habitantes. A população total da região é</p>
+    <ol class="alt"><li><span class="m">1,3 · 10<sup>4</sup></span></li><li><span class="m">1,3 · 10<sup>13</sup></span></li><li><span class="m">4 · 10<sup>5</sup></span></li><li><span class="m">4 · 10<sup>13</sup></span></li><li><span class="m">13 · 10<sup>5</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Soma exige <strong>mesmo expoente</strong>. Convertendo os dois menores para <span class="m">10<sup>5</sup></span>:</p>
+      <p class="m">8 · 10<sup>4</sup> = 0,8 · 10<sup>5</sup> &nbsp;&nbsp; 2 · 10<sup>4</sup> = 0,2 · 10<sup>5</sup></p>
+      <p class="m">3 · 10<sup>5</sup> + 0,8 · 10<sup>5</sup> + 0,2 · 10<sup>5</sup> = 4 · 10<sup>5</sup></p>
+      <p>São 400 000 habitantes.</p>
+      <p>As armadilhas: <strong>A</strong> e <strong>E</strong> somaram os coeficientes sem igualar os expoentes; <strong>B</strong> e <strong>D</strong> somaram os expoentes, aplicando na adição uma regra que só vale no produto.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Ordem de grandeza</span>
+    <p class="enun">Um estudo estima em <span class="m">7,2 · 10<sup>5</sup></span> o número de árvores de uma reserva florestal. A ordem de grandeza dessa quantidade é</p>
+    <ol class="alt"><li><span class="m">10<sup>4</sup></span></li><li><span class="m">10<sup>5</sup></span></li><li><span class="m">10<sup>6</sup></span></li><li><span class="m">10<sup>7</sup></span></li><li><span class="m">7 · 10<sup>5</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Ordem de grandeza é a potência de 10 <strong>mais próxima</strong>, e o critério compara o coeficiente com <span class="m"><span class="rad"><i>10</i></span> ≈ 3,16</span>:</p>
+      <p class="m">7,2 &gt; 3,16 &nbsp;→&nbsp; sobe uma ordem &nbsp;→&nbsp; 10<sup>6</sup></p>
+      <p>Faz sentido concretamente: <span class="m">7,2·10<sup>5</sup> = 720 000</span> está muito mais perto de <span class="m">1 000 000</span> do que de <span class="m">100 000</span>.</p>
+      <p>A alternativa B é a resposta de quem apenas repete o expoente escrito — o erro mais comum deste tópico. E a E não é sequer uma potência de 10.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Conversão de área</span>
+    <p class="enun">Um terreno retangular tem área de <span class="m">2,5 · 10<sup>3</sup></span> m². Essa área, expressa em centímetros quadrados, corresponde a</p>
+    <ol class="alt"><li><span class="m">2,5 · 10<sup>5</sup></span></li><li><span class="m">2,5 · 10<sup>6</sup></span></li><li><span class="m">2,5 · 10<sup>7</sup></span></li><li><span class="m">2,5 · 10<sup>9</sup></span></li><li><span class="m">2,5 · 10<sup>1</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O passo decisivo é lembrar que a conversão de <strong>área</strong> eleva o fator ao quadrado:</p>
+      <p class="m">1 m = 10<sup>2</sup> cm &nbsp;→&nbsp; 1 m<sup>2</sup> = (10<sup>2</sup>)<sup>2</sup> = 10<sup>4</sup> cm<sup>2</sup></p>
+      <p class="m">2,5 · 10<sup>3</sup> · 10<sup>4</sup> = 2,5 · 10<sup>7</sup> cm<sup>2</sup></p>
+      <p>A alternativa A é exatamente o resultado de quem usou <span class="m">10<sup>2</sup></span> em vez de <span class="m">10<sup>4</sup></span> — erro por um fator de 100, e é a distração mais escolhida em questões deste tipo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Quantas vezes maior</span>
+    <p class="enun">A massa da Terra é de aproximadamente <span class="m">6 · 10<sup>24</sup></span> kg e a da Lua, <span class="m">7,5 · 10<sup>22</sup></span> kg. A massa da Terra é maior que a da Lua em cerca de</p>
+    <ol class="alt"><li>8 vezes</li><li>80 vezes</li><li>800 vezes</li><li>2 vezes</li><li>100 vezes</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>“Quantas vezes maior” é <strong>divisão</strong>:</p>
+      <p class="m"><span class="frac"><i>6 · 10<sup>24</sup></i><i>7,5 · 10<sup>22</sup></i></span> = <span class="frac"><i>6</i><i>7,5</i></span> · 10<sup>2</sup> = 0,8 · 10<sup>2</sup> = 80</p>
+      <p><strong>Conferência por ordem de grandeza:</strong> os expoentes diferem em 2, o que sugere um fator próximo de 100. Como o coeficiente de cima é menor que o de baixo, o resultado fica um pouco abaixo de 100 — 80 é coerente.</p>
+      <p>A alternativa D é de quem subtraiu os expoentes e parou aí.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Raiz em notação científica</span>
+    <p class="enun">Uma placa quadrada tem área de <span class="m">1,6 · 10<sup>−5</sup></span> m². A medida do lado dessa placa, em metros, é</p>
+    <ol class="alt"><li><span class="m">4 · 10<sup>−3</sup></span></li><li><span class="m">4 · 10<sup>−2,5</sup></span></li><li><span class="m">1,26 · 10<sup>−3</sup></span></li><li><span class="m">8 · 10<sup>−3</sup></span></li><li><span class="m">4 · 10<sup>−6</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O lado do quadrado é a raiz da área. Mas o expoente <span class="m">−5</span> é ímpar, e raiz quadrada pede expoente par. Ajuste antes:</p>
+      <p class="m">1,6 · 10<sup>−5</sup> = 16 · 10<sup>−6</sup></p>
+      <p>Multiplicou o coeficiente por 10 e dividiu a potência por 10 — o valor não mudou. Agora sim:</p>
+      <p class="m"><span class="rad"><i>16 · 10<sup>−6</sup></i></span> = <span class="rad"><i>16</i></span> · <span class="rad"><i>10<sup>−6</sup></i></span> = 4 · 10<sup>−3</sup> m</p>
+      <p><strong>Conferindo:</strong> <span class="m">(4·10<sup>−3</sup>)<sup>2</sup> = 16·10<sup>−6</sup> = 1,6·10<sup>−5</sup></span> ✓</p>
+      <p>A alternativa B mostra por que o ajuste é necessário: dividir o expoente ímpar por 2 produz um expoente fracionário, que não é notação científica.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Estimativa em contexto</span>
+    <p class="enun">Uma cidade com <span class="m">1,2 · 10<sup>6</sup></span> habitantes registra consumo médio de <span class="m">1,5 · 10<sup>2</sup></span> litros de água por pessoa por dia. O consumo diário total da cidade, em litros, é de aproximadamente</p>
+    <ol class="alt"><li><span class="m">1,8 · 10<sup>7</sup></span></li><li><span class="m">1,8 · 10<sup>8</sup></span></li><li><span class="m">2,7 · 10<sup>8</sup></span></li><li><span class="m">1,8 · 10<sup>12</sup></span></li><li><span class="m">8 · 10<sup>3</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Consumo total é o consumo por pessoa vezes o número de pessoas:</p>
+      <p class="m">(1,2 · 10<sup>6</sup>) · (1,5 · 10<sup>2</sup>) = (1,2 · 1,5) · 10<sup>8</sup> = 1,8 · 10<sup>8</sup> litros</p>
+      <p>São 180 milhões de litros por dia — cerca de 72 piscinas olímpicas, para dar escala.</p>
+      <p>A alternativa D multiplicou os expoentes (<span class="m">6 · 2 = 12</span>) em vez de somá-los; a E dividiu em vez de multiplicar.</p>
+      <p><strong>Pela estimativa:</strong> <span class="m">1 × 1,5 = 1,5</span>, ordem <span class="m">10<sup>8</sup></span> — só B e C ficam de pé, e a conta exata do coeficiente decide.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que o coeficiente precisa ficar entre 1 e 10, e corrijo escritas como <span class="m">25·10<sup>3</sup></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto qualquer número contando as casas da vírgula e acertando o sinal do expoente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Multiplico e divido somando e subtraindo expoentes, e <strong>renormalizo</strong> o resultado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que somar exige igualar os expoentes antes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Extraio raiz ajustando o expoente para ficar par</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico o critério <span class="m"><span class="rad"><i>10</i></span> ≈ 3,16</span> para a ordem de grandeza, sem repetir o expoente escrito</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conheço os prefixos de tera a pico</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto área elevando o fator ao quadrado e volume ao cubo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que 1 L = 1 dm³, 1 mL = 1 cm³ e 1 hectare = <span class="m">10<sup>4</sup></span> m²</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo “quantas vezes maior” (divisão) de “quanto maior” (subtração)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conto algarismos significativos corretamente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso estimativa quando as alternativas diferem em ordem de grandeza</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Tenho na cabeça as escalas de átomo, célula, Terra e população</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Busque questões de <strong>Física e Química</strong> também — é onde este conteúdo mais aparece, e treinar só com questões de Matemática deixa metade do assunto sem uso. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>47 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-05-notacao-cientifica-ordem-grandeza.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-05";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

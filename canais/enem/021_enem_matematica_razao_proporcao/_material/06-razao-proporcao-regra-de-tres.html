@@ -1,0 +1,1078 @@
+<title>Razão, Proporção e Regra de Três</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 6 de 12</p>
+    <h1>Razão, proporção e regra de três</h1>
+    <p class="deck">Se houvesse um único assunto para levar no dia da prova, seria este. Velocidade, escala, densidade, câmbio, consumo, produtividade — tudo é razão. E a regra de três resolve mais questões de Matemática do ENEM do que qualquer outra ferramenta.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Balança equilibrada representando a proporção a sobre b igual a c sobre d, com a propriedade fundamental a vezes d igual a b vezes c">
+  <line x1="34" y1="86" x2="266" y2="86" style="stroke:var(--c1);stroke-width:5;stroke-linecap:round"/>
+  <line x1="150" y1="86" x2="150" y2="150" style="stroke:var(--c1);stroke-width:4"/>
+  <polygon points="150,146 128,180 172,180" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2;stroke-linejoin:round"/>
+  <line x1="122" y1="184" x2="178" y2="184" style="stroke:var(--c1);stroke-width:4;stroke-linecap:round"/>
+  <line x1="60" y1="86" x2="60" y2="112" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <path d="M30 112 L90 112 L78 136 L42 136 Z" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5;stroke-linejoin:round"/>
+  <line x1="240" y1="86" x2="240" y2="112" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <path d="M210 112 L270 112 L258 136 L222 136 Z" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5;stroke-linejoin:round"/>
+  <text x="60" y="64" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">a</text>
+  <line x1="50" y1="70" x2="70" y2="70" style="stroke:var(--ink);stroke-width:1.5"/>
+  <text x="60" y="84" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">b</text>
+  <text x="240" y="64" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">c</text>
+  <line x1="230" y1="70" x2="250" y2="70" style="stroke:var(--ink);stroke-width:1.5"/>
+  <text x="240" y="84" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">d</text>
+  <text x="150" y="30" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">a · d = b · c</text>
+  <text x="150" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">extremos = meios</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">as duas razões valem o mesmo</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>2 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Muito alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Frações · Unidades</dd></div>
+      <div><dt>Destrava</dt><dd>Porcentagem, escalas, velocidade, Física inteira</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este é o assunto de maior retorno de toda a Matemática básica — e talvez da prova inteira. Não porque tenha muitas questões próprias, mas porque é a <strong>ferramenta padrão</strong> com que se resolve tudo o mais.</p>
+<p>Onde ele aparece:</p>
+<ul>
+  <li><strong>Direto:</strong> escala de mapas e plantas, velocidade média, densidade, consumo de combustível, câmbio, produtividade.</li>
+  <li><strong>Dentro de porcentagem:</strong> todo aumento e desconto é uma proporção.</li>
+  <li><strong>Dentro de Física:</strong> praticamente toda fórmula é uma razão ou uma proporcionalidade.</li>
+  <li><strong>Dentro de Química:</strong> estequiometria é regra de três com mols.</li>
+  <li><strong>Dentro de Geografia:</strong> densidade demográfica, escala cartográfica, indicadores.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas habilidades, nesta ordem. Primeiro: <strong>decidir se a relação é direta ou inversa</strong> (seção 06) — é onde se erra, não na conta. Segundo: <strong>saber quando a regra de três não se aplica</strong> (seção 10), porque o ENEM cobra isso de propósito, e quem aplica no automático cai.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Razão</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>A <strong>razão entre <span class="m"><span class="v">a</span></span> e <span class="v">b</span></strong> é o quociente <span class="m"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span></span>, com <span class="m"><span class="v">b</span> ≠ 0</span>.</p>
+  <p>O <span class="m"><span class="v">a</span></span> é o <strong>antecedente</strong>; o <span class="m"><span class="v">b</span></span>, o <strong>consequente</strong>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">A ordem importa — e é onde se perde ponto</span>
+  <p>“Razão de <span class="m"><span class="v">a</span></span> <strong>para</strong> <span class="m"><span class="v">b</span></span>” é <span class="m"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span></span>, nunca o contrário. E leia com atenção o que é o consequente: numa turma com 18 meninas e 12 meninos, a razão de meninos <em>para meninas</em> é <span class="m"><span class="frac"><i>12</i><i>18</i></span> = <span class="frac"><i>2</i><i>3</i></span></span>, mas a razão de meninos <em>para o total</em> é <span class="m"><span class="frac"><i>12</i><i>30</i></span> = <span class="frac"><i>2</i><i>5</i></span></span>.</p>
+</div>
+
+<p>A mesma razão pode aparecer de quatro formas, e todas significam o mesmo:</p>
+<div class="eq">
+  <p class="m"><span class="frac"><i>3</i><i>4</i></span> &nbsp;=&nbsp; 0,75 &nbsp;=&nbsp; 75% &nbsp;=&nbsp; 3 : 4</p>
+</div>
+<p>Quando as duas grandezas são <strong>da mesma espécie</strong> (meninos e meninas), a razão é um número puro. Quando são <strong>de espécies diferentes</strong> (metros e segundos), a razão recebe o nome de <strong>taxa</strong> e carrega unidade.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> As razões que a prova mais usa</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Razão</th><th>Fórmula</th><th>Unidade típica</th><th>Onde cai</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Velocidade média</strong></td><td class="m"><span class="v">v</span> = <span class="frac"><i>Δ<span class="v">s</span></i><i>Δ<span class="v">t</span></i></span></td><td>km/h, m/s</td><td>Matemática e Física</td></tr>
+    <tr><td><strong>Densidade</strong></td><td class="m"><span class="v">d</span> = <span class="frac"><i><span class="v">m</span></i><i><span class="v">V</span></i></span></td><td>g/cm³, kg/m³</td><td>Física e Química</td></tr>
+    <tr><td><strong>Escala</strong></td><td class="m">E = <span class="frac"><i>desenho</i><i>real</i></span></td><td>1 : n</td><td>Geografia, plantas</td></tr>
+    <tr><td><strong>Densidade demográfica</strong></td><td class="m"><span class="frac"><i>habitantes</i><i>área</i></span></td><td>hab/km²</td><td>Geografia</td></tr>
+    <tr><td><strong>Rendimento</strong></td><td class="m"><span class="frac"><i>distância</i><i>combustível</i></span></td><td>km/L</td><td>contextos de consumo</td></tr>
+    <tr><td><strong>Vazão</strong></td><td class="m"><span class="frac"><i>volume</i><i>tempo</i></span></td><td>L/s, m³/h</td><td>reservatórios</td></tr>
+    <tr><td><strong>Custo unitário</strong></td><td class="m"><span class="frac"><i>preço</i><i>quantidade</i></span></td><td>R$/kg, R$/L</td><td>comparação de compras</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">A conversão que mais cai: km/h e m/s</span>
+  <p class="m" style="font-size:1.05rem">km/h &nbsp;→&nbsp; m/s: &nbsp;<strong>divida por 3,6</strong><br>m/s &nbsp;→&nbsp; km/h: &nbsp;<strong>multiplique por 3,6</strong></p>
+  <p>O 3,6 vem de <span class="m"><span class="frac"><i>1000 m</i><i>3600 s</i></span></span>. Se esquecer o fator, guarde a lógica: <span class="m">m/s</span> é sempre o número <em>menor</em>, porque um metro por segundo já é bem rápido.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Escala: quanto menor o denominador, maior a escala</span>
+  <p>Uma escala <span class="m">1:50 000</span> é <strong>maior</strong> que <span class="m">1:250 000</span>. Parece invertido, mas é coerente: a de denominador menor mostra <em>menos área com mais detalhe</em>. Mapa de bairro tem escala grande; mapa-múndi, escala pequena.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Proporção e a propriedade fundamental</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Proporção é a <strong>igualdade entre duas razões</strong>:</p>
+  <p class="m" style="font-size:1.1rem"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">c</span></i><i><span class="v">d</span></i></span></p>
+  <p>Os <strong>extremos</strong> são <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">d</span></span>, as pontas. Os <strong>meios</strong> são <span class="m"><span class="v">b</span></span> e <span class="m"><span class="v">c</span></span>, o miolo.</p>
+</div>
+
+<div class="box def">
+  <span class="tag">Propriedade fundamental</span>
+  <p class="m" style="font-size:1.1rem"><span class="v">a</span> · <span class="v">d</span> = <span class="v">b</span> · <span class="v">c</span></p>
+  <p>O produto dos <strong>extremos</strong> é igual ao produto dos <strong>meios</strong>. É esta propriedade — e só ela — que faz a regra de três funcionar.</p>
+</div>
+
+<p>Uma consequência útil: <strong>inverter as duas razões mantém a proporção</strong>. Se <span class="m"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">c</span></i><i><span class="v">d</span></i></span></span>, então <span class="m"><span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span> = <span class="frac"><i><span class="v">d</span></i><i><span class="v">c</span></i></span></span>. O que não se pode é inverter só um lado.</p>
+</section>
+
+<section id="s5">
+<h2><i>05</i> As propriedades das proporções</h2>
+<p>Três propriedades que transformam problemas aparentemente difíceis em contas de uma linha.</p>
+
+<div class="eq">
+  <span class="lbl">1 · Soma e diferença com o consequente</span>
+  <p class="m"><span class="frac"><i><span class="v">a</span> + <span class="v">b</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">c</span> + <span class="v">d</span></i><i><span class="v">d</span></i></span> &nbsp;&nbsp;&nbsp; <span class="frac"><i><span class="v">a</span> − <span class="v">b</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">c</span> − <span class="v">d</span></i><i><span class="v">d</span></i></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">2 · Soma dos antecedentes sobre soma dos consequentes</span>
+  <p class="m"><span class="frac"><i><span class="v">a</span> + <span class="v">c</span></i><i><span class="v">b</span> + <span class="v">d</span></i></span> = <span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">c</span></i><i><span class="v">d</span></i></span></p>
+  <p>Esta é a mais poderosa. Ela permite resolver problemas em que se conhece a <strong>soma</strong> das partes e a razão entre elas.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O truque do k — mais rápido que qualquer propriedade</span>
+  <p>Quando o enunciado dá uma razão e uma soma, escreva as partes como múltiplos de <span class="m"><span class="v">k</span></span>:</p>
+  <p><em>“A razão entre dois números é <span class="m"><span class="frac"><i>3</i><i>5</i></span></span> e a soma é 64.”</em></p>
+  <p class="m">3<span class="v">k</span> + 5<span class="v">k</span> = 64 &nbsp;→&nbsp; 8<span class="v">k</span> = 64 &nbsp;→&nbsp; <span class="v">k</span> = 8</p>
+  <p class="m">Os números são 3·8 = <strong>24</strong> e 5·8 = <strong>40</strong></p>
+  <p>Funciona para qualquer quantidade de partes, e é a base da divisão proporcional que vem na semana 3.</p>
+</div>
+
+<h3>Proporção contínua</h3>
+<p>Quando os meios são iguais — <span class="m"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span> = <span class="frac"><i><span class="v">b</span></i><i><span class="v">c</span></i></span></span> — vale <span class="m"><span class="v">b</span><sup>2</sup> = <span class="v">a</span>·<span class="v">c</span></span>, e <span class="m"><span class="v">b</span></span> é a <strong>média geométrica</strong> entre <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">c</span></span>.</p>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Direta ou inversa: a decisão que vale a questão</h2>
+<p>Quem erra regra de três quase nunca erra a multiplicação. Erra <strong>aqui</strong>, e resolve com perfeição o problema trocado.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th></th><th>Diretamente proporcionais</th><th>Inversamente proporcionais</th></tr></thead>
+  <tbody>
+    <tr><td>Comportamento</td><td>Uma aumenta, a outra <strong>aumenta</strong></td><td>Uma aumenta, a outra <strong>diminui</strong></td></tr>
+    <tr><td>O que é constante</td><td>O <strong>quociente</strong>: <span class="m"><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span> = <span class="v">k</span></span></td><td>O <strong>produto</strong>: <span class="m"><span class="v">a</span> · <span class="v">b</span> = <span class="v">k</span></span></td></tr>
+    <tr><td>Exemplos</td><td>quantidade e preço · trabalhadores e produção · tempo e distância</td><td>velocidade e tempo · operários e dias · torneiras e tempo de enchimento</td></tr>
+  </tbody>
+</table>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 190" role="img" aria-label="Teste do dobro: na proporção direta dobrar uma grandeza dobra a outra; na inversa, dobrar uma reduz a outra à metade">
+  <rect x="14" y="20" width="432" height="72" rx="11" style="fill:var(--c1-soft);stroke:var(--c1-line);stroke-width:1"/>
+  <text x="32" y="44" class="svg-ttl" style="fill:var(--c1)">DIRETA</text>
+  <text x="32" y="62" class="svg-lbl" style="fill:var(--ink-2)">quilos comprados</text>
+  <text x="32" y="80" class="svg-lbl" style="fill:var(--ink-2)">preço a pagar</text>
+  <text x="200" y="62" text-anchor="middle" class="svg-num" style="fill:var(--ink)">2 kg → 4 kg</text>
+  <text x="200" y="80" text-anchor="middle" class="svg-num" style="fill:var(--ink)">R$ 10 → R$ 20</text>
+  <path d="M300 68 L318 50" style="stroke:var(--c1);stroke-width:2.5;stroke-linecap:round" marker-end="url(#up1)"/>
+  <path d="M340 68 L358 50" style="stroke:var(--c1);stroke-width:2.5;stroke-linecap:round" marker-end="url(#up1)"/>
+  <text x="400" y="66" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">sobem juntas</text>
+  <rect x="14" y="104" width="432" height="72" rx="11" style="fill:var(--c2-soft);stroke:var(--c2-line);stroke-width:1"/>
+  <text x="32" y="128" class="svg-ttl" style="fill:var(--c2)">INVERSA</text>
+  <text x="32" y="146" class="svg-lbl" style="fill:var(--ink-2)">operários na obra</text>
+  <text x="32" y="164" class="svg-lbl" style="fill:var(--ink-2)">dias até terminar</text>
+  <text x="200" y="146" text-anchor="middle" class="svg-num" style="fill:var(--ink)">15 → 30</text>
+  <text x="200" y="164" text-anchor="middle" class="svg-num" style="fill:var(--ink)">24 dias → 12 dias</text>
+  <path d="M300 152 L318 134" style="stroke:var(--c2);stroke-width:2.5;stroke-linecap:round" marker-end="url(#up2)"/>
+  <path d="M340 134 L358 152" style="stroke:var(--c2);stroke-width:2.5;stroke-linecap:round" marker-end="url(#dn2)"/>
+  <text x="400" y="150" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">uma sobe,</text>
+  <text x="400" y="164" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">a outra desce</text>
+  <defs>
+    <marker id="up1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+    <marker id="up2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c2)"/></marker>
+    <marker id="dn2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c2)"/></marker>
+  </defs>
+</svg>
+<figcaption><b>Dobre uma grandeza e observe a outra.</b> Se ela também dobra, a relação é direta; se cai pela metade, é inversa. Essa única pergunta resolve a decisão que faz perder a maioria das questões de regra de três.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">O teste que nunca falha</span>
+  <p><strong>Dobre uma grandeza e pergunte o que acontece com a outra.</strong></p>
+  <p>Dobrou também? <strong>Direta.</strong> &nbsp;·&nbsp; Virou metade? <strong>Inversa.</strong></p>
+  <p><em>Dobrando o número de operários, a obra leva metade do tempo</em> → inversa. <em>Dobrando os quilos comprados, o preço dobra</em> → direta.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Aumentar junto não é ser proporcional</span>
+  <p>Idade e altura de uma criança crescem juntas, mas ninguém tem o dobro da altura ao dobrar de idade. Proporcionalidade exige que <strong>dobrar uma dobre exatamente a outra</strong> — não basta caminharem na mesma direção.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Regra de três simples</h2>
+<div class="box def">
+  <span class="tag">O procedimento</span>
+  <ol style="margin:6px 0 0">
+    <li><strong>Padronize as unidades.</strong> Horas com horas, km com km.</li>
+    <li>Monte duas colunas, uma para cada grandeza, com a incógnita numa delas.</li>
+    <li>Decida se é <strong>direta ou inversa</strong> pelo teste do dobro.</li>
+    <li>Se for <strong>inversa</strong>, inverta uma das colunas.</li>
+    <li>Multiplique em cruz e isole a incógnita.</li>
+  </ol>
+</div>
+
+<div class="eq">
+  <span class="lbl">Caso direto — uma impressora faz 240 páginas em 8 minutos; quantas em 20?</span>
+  <p class="m">Mais tempo → mais páginas. <strong>Direta.</strong></p>
+  <p class="m"><span class="frac"><i>240</i><i>8</i></span> = <span class="frac"><i><span class="v">x</span></i><i>20</i></span> &nbsp;→&nbsp; 8<span class="v">x</span> = 4800 &nbsp;→&nbsp; <span class="v">x</span> = <strong>600 páginas</strong></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Caso inverso — 15 operários fazem uma obra em 24 dias; e 20 operários?</span>
+  <p class="m">Mais operários → menos dias. <strong>Inversa.</strong></p>
+  <p class="m">Como o produto é constante: &nbsp; 15 · 24 = 20 · <span class="v">x</span></p>
+  <p class="m">360 = 20<span class="v">x</span> &nbsp;→&nbsp; <span class="v">x</span> = <strong>18 dias</strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O erro silencioso: unidades</span>
+  <p>Se um dado vem em horas e o outro em minutos, a conta fecha perfeitamente e o resultado sai errado — sem nenhum sinal de alarme. <strong>Padronizar unidades é o passo zero</strong>, antes mesmo de decidir direta ou inversa.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Regra de três composta</h2>
+<p>Três ou mais grandezas envolvidas. Parece mais difícil, mas o método é o simples repetido.</p>
+
+<div class="box def">
+  <span class="tag">O método</span>
+  <ol style="margin:6px 0 0">
+    <li>Monte uma coluna para cada grandeza, marcando a incógnita.</li>
+    <li>Compare <strong>cada coluna com a coluna da incógnita</strong>, uma de cada vez, ignorando as demais.</li>
+    <li>Inverta as colunas que forem inversas em relação à incógnita.</li>
+    <li>A razão da incógnita é igual ao <strong>produto</strong> de todas as outras razões.</li>
+  </ol>
+</div>
+
+<div class="box warn">
+  <span class="tag">A regra que evita a confusão</span>
+  <p>Cada coluna é comparada <strong>com a incógnita</strong>, nunca umas com as outras. Tentar analisar tudo ao mesmo tempo é o que faz a questão parecer impossível.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">12 operários, 8 h/dia, constroem um muro em 15 dias. Em quantos dias, com 18 operários e 10 h/dia?</span>
+  <p><strong>Operários × dias:</strong> mais operários, menos dias → <strong>inversa</strong></p>
+  <p><strong>Horas por dia × dias:</strong> mais horas por dia, menos dias → <strong>inversa</strong></p>
+  <p class="m" style="margin-top:10px"><span class="frac"><i>15</i><i><span class="v">x</span></i></span> = <span class="frac"><i>18</i><i>12</i></span> · <span class="frac"><i>10</i><i>8</i></span> = 1,5 · 1,25 = 1,875</p>
+  <p class="m"><span class="v">x</span> = <span class="frac"><i>15</i><i>1,875</i></span> = <strong>8 dias</strong></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O atalho dos homens-hora</span>
+  <p>Em problemas de operários, horas e dias, o <strong>trabalho total é constante</strong>. Multiplique tudo dos dois lados e iguale:</p>
+  <p class="m">12 · 8 · 15 = 1440 &nbsp;&nbsp;→&nbsp;&nbsp; 18 · 10 · <span class="v">x</span> = 1440 &nbsp;&nbsp;→&nbsp;&nbsp; <span class="v">x</span> = 8</p>
+  <p>Mesma resposta, sem precisar decidir o que é direto e o que é inverso. Quando o problema tem essa cara — trabalhadores, ritmo e tempo produzindo uma quantidade fixa —, é o caminho mais seguro.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Onde a regra de três não funciona</h2>
+<p>Esta seção existe porque o ENEM cobra exatamente isso: monta uma questão com cara de regra de três em que aplicá-la dá errado. Quem responde no automático cai.</p>
+
+<div class="box warn">
+  <span class="tag">O caso dos gatos — clássico e cruel</span>
+  <p><em>“Dois gatos caçam dois ratos em dois minutos. Em quanto tempo quatro gatos caçam quatro ratos?”</em></p>
+  <p>A resposta automática é 4 minutos (ou 1). A resposta certa é <strong>2 minutos</strong>.</p>
+  <p>Cada gato caça um rato em 2 minutos, trabalhando em paralelo. Dobrar gatos <em>e</em> ratos ao mesmo tempo mantém o ritmo — o tempo não muda.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Por que não é proporcional</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Área e lado</strong></td><td>Dobrar o lado <strong>quadruplica</strong> a área. A relação é com o quadrado.</td></tr>
+    <tr><td><strong>Volume e aresta</strong></td><td>Dobrar a aresta multiplica o volume por <strong>8</strong>.</td></tr>
+    <tr><td><strong>Juros compostos</strong></td><td>Crescimento exponencial, <span class="m">M = C(1+<span class="v">i</span>)<sup><span class="v">t</span></sup></span>. Regra de três só vale em juros <strong>simples</strong>.</td></tr>
+    <tr><td><strong>Tarifas por faixa</strong></td><td>Conta de luz e água mudam de preço por faixa de consumo — não há razão única.</td></tr>
+    <tr><td><strong>Tarefas indivisíveis</strong></td><td>Nove pessoas não fazem um bebê em um mês. Nem todo trabalho se paraleliza.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">O teste antes de aplicar</span>
+  <p>Pergunte: <strong>dobrar a causa dobra mesmo o efeito?</strong> Se a resposta for “não” ou “depende”, a relação não é proporcional e a regra de três está fora.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<p>Três hábitos que economizam tempo e evitam a maior parte dos erros deste assunto.</p>
+
+<div class="box tip">
+  <span class="tag">1 · Confira a plausibilidade antes de marcar</span>
+  <p>Depois de calcular, olhe o resultado e pergunte se ele faz sentido. Mais operários resultaram em <em>mais</em> dias? Você inverteu o sentido. Aumentar a velocidade aumentou o tempo de viagem? Mesmo erro. Essa conferência leva três segundos e pega a maioria das trocas entre direta e inversa.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">2 · Reduza tudo a uma unidade</span>
+  <p>Muitas questões saem mais rápido calculando o valor unitário do que montando a proporção: preço por quilo, consumo por litro, produção por operário por hora. Comparar embalagens de tamanhos diferentes, por exemplo, só é possível pelo preço unitário.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">3 · Padronize as unidades antes de tudo</span>
+  <p>É o passo mais pulado e o erro mais silencioso: com unidades misturadas, a conta fecha e o resultado sai errado sem nenhum sinal. Converta primeiro, monte depois.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Inverter a razão</span> &nbsp;→&nbsp; <span class="c">“de a para b” é a/b</span></span><small>E cuidado com o consequente: “para o total” não é “para o outro grupo”.</small></li>
+  <li><span><span class="x">Aplicar direta onde é inversa</span> &nbsp;→&nbsp; <span class="c">use o teste do dobro</span></span><small>É o erro campeão. Mais operários significam menos dias, não mais.</small></li>
+  <li><span><span class="x">Montar a regra de três sem padronizar unidades</span> &nbsp;→&nbsp; <span class="c">converta primeiro</span></span><small>A conta fecha e o resultado sai errado, sem nenhum sinal de alerta.</small></li>
+  <li><span><span class="x">m/s e km/h como se fossem iguais</span> &nbsp;→&nbsp; <span class="c">fator 3,6</span></span><small>km/h para m/s divide por 3,6; o caminho inverso multiplica.</small></li>
+  <li><span><span class="x">Na composta, comparar as colunas entre si</span> &nbsp;→&nbsp; <span class="c">compare cada uma com a incógnita</span></span><small>Uma de cada vez, ignorando as demais.</small></li>
+  <li><span><span class="x">Regra de três em área a partir do lado</span> &nbsp;→&nbsp; <span class="c">a relação é quadrática</span></span><small>Dobrar o lado quadruplica a área.</small></li>
+  <li><span><span class="x">Regra de três em juros compostos</span> &nbsp;→&nbsp; <span class="c">só vale em juros simples</span></span><small>Crescimento exponencial não é proporcional ao tempo.</small></li>
+  <li><span><span class="x">1:250 000 é escala maior que 1:50 000</span> &nbsp;→&nbsp; <span class="c">é menor</span></span><small>Denominador menor significa escala maior e mais detalhe.</small></li>
+  <li><span><span class="x">Dobrar gatos e ratos dobra o tempo</span> &nbsp;→&nbsp; <span class="c">o tempo não muda</span></span><small>Quando causa e efeito dobram juntos, o ritmo permanece.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de montar qualquer conta, responda em voz alta: <em>é direta ou inversa?</em></p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Razão e a ordem dos termos</span>
+    <p class="enun">Em uma turma há 18 meninas e 12 meninos. A razão entre o número de meninos e o número total de alunos da turma é</p>
+    <ol class="alt"><li><span class="m"><span class="frac"><i>2</i><i>3</i></span></span></li><li><span class="m"><span class="frac"><i>3</i><i>2</i></span></span></li><li><span class="m"><span class="frac"><i>2</i><i>5</i></span></span></li><li><span class="m"><span class="frac"><i>3</i><i>5</i></span></span></li><li><span class="m"><span class="frac"><i>5</i><i>2</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O total é <span class="m">18 + 12 = 30</span> alunos. A razão pedida é <strong>meninos para o total</strong>:</p>
+      <p class="m"><span class="frac"><i>12</i><i>30</i></span> = <span class="frac"><i>2</i><i>5</i></span></p>
+      <p>As armadilhas estão todas no consequente. A alternativa A é a razão de meninos para <em>meninas</em>; a D é de meninas para o total; a B e a E são as mesmas razões invertidas.</p>
+      <p><strong>Hábito que evita isso:</strong> sublinhe no enunciado o que vem depois da palavra “para”. Ele é o denominador.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Velocidade e conversão</span>
+    <p class="enun">Um atleta percorre 100 metros em 12,5 segundos. A velocidade média desse atleta, em quilômetros por hora, é de</p>
+    <ol class="alt"><li>8</li><li>12,5</li><li>28,8</li><li>36</li><li>80</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Primeiro a velocidade em m/s:</p>
+      <p class="m"><span class="v">v</span> = <span class="frac"><i>100</i><i>12,5</i></span> = 8 m/s</p>
+      <p>Agora a conversão para km/h — <strong>multiplica por 3,6</strong>:</p>
+      <p class="m">8 · 3,6 = 28,8 km/h</p>
+      <p>A alternativa A é de quem parou em m/s sem converter. E vale a conferência de bom senso: 28,8 km/h é plausível para um velocista; 8 km/h seria uma caminhada rápida.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Escala</span>
+    <p class="enun">Em um mapa de escala 1 : 250 000, a distância entre duas cidades é representada por 8 cm. A distância real entre elas, em quilômetros, é de</p>
+    <ol class="alt"><li>2</li><li>20</li><li>200</li><li>2 000</li><li>20 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A escala <span class="m">1 : 250 000</span> significa que 1 cm no mapa vale 250 000 cm reais:</p>
+      <p class="m">8 · 250 000 = 2 000 000 cm</p>
+      <p>Agora a conversão até quilômetros, com cuidado nos dois saltos:</p>
+      <p class="m">2 000 000 cm ÷ 100 = 20 000 m &nbsp;→&nbsp; ÷ 1 000 = 20 km</p>
+      <p>As alternativas C, D e E são exatamente os resultados de quem parou numa das etapas de conversão. Uma alternativa para cada erro possível é assinatura do ENEM.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Regra de três direta</span>
+    <p class="enun">Uma impressora industrial produz 240 páginas em 8 minutos, mantendo ritmo constante. Nessas condições, em 20 minutos ela produzirá</p>
+    <ol class="alt"><li>96 páginas</li><li>480 páginas</li><li>600 páginas</li><li>720 páginas</li><li>4 800 páginas</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Teste do dobro:</strong> dobrando o tempo, dobram as páginas. <strong>Direta.</strong></p>
+      <p class="m"><span class="frac"><i>240</i><i>8</i></span> = <span class="frac"><i><span class="v">x</span></i><i>20</i></span> &nbsp;→&nbsp; 8<span class="v">x</span> = 4 800 &nbsp;→&nbsp; <span class="v">x</span> = 600</p>
+      <p><strong>Pelo valor unitário:</strong> <span class="m">240 ÷ 8 = 30</span> páginas por minuto, e <span class="m">30 · 20 = 600</span>. Muitas vezes é mais rápido que montar a proporção.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Regra de três inversa</span>
+    <p class="enun">Uma obra seria concluída por 15 operários em 24 dias. Se a construtora alocar 20 operários com o mesmo ritmo de trabalho, a obra será concluída em</p>
+    <ol class="alt"><li>15 dias</li><li>18 dias</li><li>20 dias</li><li>24 dias</li><li>32 dias</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Teste do dobro:</strong> dobrando os operários, os dias caem pela metade. <strong>Inversa.</strong></p>
+      <p>Em relação inversa o <strong>produto é constante</strong>:</p>
+      <p class="m">15 · 24 = 20 · <span class="v">x</span></p>
+      <p class="m">360 = 20<span class="v">x</span> &nbsp;→&nbsp; <span class="v">x</span> = 18 dias</p>
+      <p><strong>Conferência de plausibilidade:</strong> mais operários, menos dias — 18 &lt; 24 ✓. A alternativa E (32 dias) é o resultado de quem aplicou proporção direta, e o próprio bom senso a elimina.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Regra de três composta</span>
+    <p class="enun">Doze operários, trabalhando 8 horas por dia, constroem um muro em 15 dias. Mantido o mesmo ritmo, dezoito operários trabalhando 10 horas por dia construirão um muro idêntico em</p>
+    <ol class="alt"><li>6 dias</li><li>8 dias</li><li>10 dias</li><li>12 dias</li><li>18 dias</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Compare cada grandeza <strong>com a incógnita (dias)</strong>, uma de cada vez:</p>
+      <ul>
+        <li><strong>Operários × dias:</strong> mais operários, menos dias → <strong>inversa</strong></li>
+        <li><strong>Horas/dia × dias:</strong> mais horas por dia, menos dias → <strong>inversa</strong></li>
+      </ul>
+      <p class="m"><span class="frac"><i>15</i><i><span class="v">x</span></i></span> = <span class="frac"><i>18</i><i>12</i></span> · <span class="frac"><i>10</i><i>8</i></span> = 1,5 · 1,25 = 1,875</p>
+      <p class="m"><span class="v">x</span> = <span class="frac"><i>15</i><i>1,875</i></span> = 8 dias</p>
+      <p><strong>Pelo atalho dos homens-hora</strong>, sem decidir nada sobre direto ou inverso:</p>
+      <p class="m">12 · 8 · 15 = 1 440 &nbsp;&nbsp;→&nbsp;&nbsp; 18 · 10 · <span class="v">x</span> = 1 440 &nbsp;&nbsp;→&nbsp;&nbsp; <span class="v">x</span> = 8</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Razão com soma conhecida</span>
+    <p class="enun">Dois sócios dividiram um lucro de R$ 64 000,00 na razão de 3 para 5. O sócio que recebeu a maior parte ficou com</p>
+    <ol class="alt"><li>R$ 24 000,00</li><li>R$ 32 000,00</li><li>R$ 38 400,00</li><li>R$ 40 000,00</li><li>R$ 48 000,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Escreva as partes como múltiplos de <span class="m"><span class="v">k</span></span>:</p>
+      <p class="m">3<span class="v">k</span> + 5<span class="v">k</span> = 64 000 &nbsp;→&nbsp; 8<span class="v">k</span> = 64 000 &nbsp;→&nbsp; <span class="v">k</span> = 8 000</p>
+      <p class="m">Partes: 3 · 8 000 = 24 000 &nbsp;e&nbsp; 5 · 8 000 = 40 000</p>
+      <p>A maior parte é <strong>R$ 40 000,00</strong>.</p>
+      <p>A alternativa A é a parte menor — leia sempre qual das duas o enunciado pede. A B é a divisão em partes iguais, ignorando a razão.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Quando a regra de três não vale</span>
+    <p class="enun">Dois gatos caçam dois ratos em dois minutos. Mantido esse mesmo ritmo de caça, quatro gatos caçarão quatro ratos em</p>
+    <ol class="alt"><li>1 minuto</li><li>2 minutos</li><li>4 minutos</li><li>8 minutos</li><li>16 minutos</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A tentação é montar uma regra de três — e é exatamente isso que a questão quer.</p>
+      <p>Analise o ritmo individual: se <strong>dois</strong> gatos caçam <strong>dois</strong> ratos em 2 minutos, então <strong>cada gato caça um rato em 2 minutos</strong>, trabalhando em paralelo.</p>
+      <p>Com quatro gatos e quatro ratos, cada gato continua com um rato para caçar, e continua levando os mesmos <strong>2 minutos</strong>. Nada mudou no ritmo.</p>
+      <p>As alternativas A e C são as duas regras de três possíveis — a direta e a inversa. Ambas erradas, porque causa e efeito dobraram <em>juntos</em>.</p>
+      <p><strong>A lição:</strong> antes de aplicar, pergunte se dobrar a causa dobra mesmo o efeito.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Razão em duas etapas</span>
+    <p class="enun">Um automóvel percorre, em média, 12 quilômetros com um litro de combustível, vendido a R$ 5,80 o litro. O custo aproximado do combustível para uma viagem de 480 quilômetros será de</p>
+    <ol class="alt"><li>R$ 82,80</li><li>R$ 232,00</li><li>R$ 240,00</li><li>R$ 696,00</li><li>R$ 2 784,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Duas razões encadeadas. Primeiro, quantos litros a viagem consome:</p>
+      <p class="m">480 ÷ 12 = 40 litros</p>
+      <p>Depois, quanto custam esses litros:</p>
+      <p class="m">40 · 5,80 = R$ 232,00</p>
+      <p>A alternativa E é de quem multiplicou os 480 km pelo preço do litro, pulando a primeira etapa — e o absurdo do valor já denuncia o erro. Sempre confira se a ordem de grandeza da resposta faz sentido para o contexto.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto uma razão na ordem certa, identificando o consequente no enunciado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conheço as razões usuais: velocidade, densidade, escala, rendimento, vazão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto km/h em m/s e vice-versa pelo fator 3,6</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo problemas de escala, lembrando que denominador menor é escala maior</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a propriedade fundamental: produto dos meios igual ao dos extremos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o truque do <span class="m"><span class="v">k</span></span> quando o enunciado dá a razão e a soma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Decido entre direta e inversa pelo teste do dobro, sem hesitar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Padronizo as unidades antes de montar qualquer regra de três</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo regra de três composta comparando cada coluna com a da incógnita</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o atalho dos homens-hora em problemas de operários, jornada e prazo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço quando a relação <strong>não</strong> é proporcional e a regra de três não vale</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro a plausibilidade do resultado antes de marcar a alternativa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reduzo a valores unitários quando isso for mais rápido que a proporção</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Este é o assunto de maior incidência da Matemática básica — resolva <strong>40 questões</strong>, não 30, e acerte pelo menos 28. Inclua questões de Física e Química, onde a regra de três aparece com outra roupa. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-06-razao-proporcao-regra-de-tres.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-06";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

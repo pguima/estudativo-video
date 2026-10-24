@@ -1,0 +1,65 @@
+Se eu te disser que um número ao quadrado deu nove, você não sabe se ele era três ou menos três. Essa dúvida tem nome, e é ela que decide se uma função pode ser desfeita.
+
+Ao final, você vai dizer se uma função tem inversa, achar pontos e o gráfico da inversa pelo espelho e ler inversas em tabelas.
+
+Antes, três lembretes rápidos. Do episódio passado: a inversa desfaz o caminho. Se f de um é três, a inversa leva o três de volta ao um. Da série de Conceito de Função: domínio é o que pode entrar; imagem é o que de fato sai. E das séries de Exponencial e Logaritmo: dois ao cubo é oito e log de oito na base dois é três dizem a mesma coisa.
+
+Pense num armário de chaves. Cada chave abre um só armário. E todo armário tem a sua chave. Achou um armário aberto? Você sabe qual chave foi usada. É isso que uma função precisa ter para dar para voltar.
+
+E se duas chaves abrissem o mesmo armário? Olhando o armário, não daria para saber qual chave veio. Uma função é injetora quando entradas diferentes dão saídas diferentes. E x ao quadrado, nos números reais, não é: menos três ao quadrado é nove, e três ao quadrado também é nove. O nove tem dois donos. É a dúvida do gancho.
+
+Como testar rápido? Atalho: teste um número e o oposto dele. Dois e menos dois. Se der a mesma saída, a função não é injetora. Em x ao quadrado, dois e menos dois dão quatro.
+
+E se existisse um armário sem chave? O contradomínio é o conjunto de saídas que a função promete: Uma função é sobrejetora quando toda saída do contradomínio é atingida. Agora dois elevado a x, prometendo todos os reais. Que x dá menos um? Nenhum. Dois elevado a qualquer coisa é sempre positivo. O menos um fica sozinho: ninguém chega nele.
+
+Então, quem tem inversa? Quem é as duas coisas ao mesmo tempo: injetora e sobrejetora. Isso se chama bijetora. Para voltar, cada saída precisa ter um dono e todo endereço precisa existir. Faltou uma das duas? Não existe inversa.
+
+Mas dá para salvar o x ao quadrado? Restringir o domínio é deixar entrar só uma parte dos números. Deixe entrar só o zero e os positivos. Agora o menos três nem entra: o nove tem um dono só, o três. E a volta existe: é a raiz quadrada. É por isso que raiz de nove é três, e não menos três: a raiz devolve só o valor não negativo.
+
+E o gráfico da inversa, onde fica? Pegue uma folha com um desenho de tinta fresca. Dobre a folha na diagonal e aperte. A tinta marca o outro lado: um desenho simétrico, quer dizer, igual, mas espelhado. Essa diagonal é a reta y igual a x: onde as duas coordenadas são iguais: um, um; dois, dois.
+
+Por que o espelho é essa reta? Se f de um é três, o gráfico de f tem o ponto um, três. A inversa faz o caminho contrário: f inversa de três é um. Ponto três, um. Trocar entrada e saída é trocar as coordenadas de lugar, e isso é refletir na reta y igual a x. Não no eixo y, nem na origem.
+
+Para achar um ponto da inversa, atalho: troque as duas coordenadas de lugar. O ponto a, b da função vira o ponto b, a da inversa. Nenhum sinal muda. Só a ordem.
+
+E qual par de inversas o ENEM mais cobra? Dois elevado a x e log de x na base dois. Pinte a curva de dois elevado a x. Dobre a folha na diagonal. A tinta desenha a curva do logaritmo. O ponto zero, um da exponencial vira o ponto um, zero do logaritmo.
+
+E tem mais. A exponencial aceita qualquer x: domínio, todos os reais. E só solta positivos: imagem, acima de zero. O logaritmo é o contrário: só aceita positivos, e solta qualquer real. Domínio e imagem trocam de lugar. E isso vale para qualquer par de inversas.
+
+Sua vez. O gráfico de y igual a dois elevado a x passa pelo ponto três, oito. Que ponto do gráfico de log de x na base dois corresponde a ele? Pause e tente.
+
+Vamos juntos. Troque as coordenadas de lugar: três, oito vira oito, três. Confere? Dois elevado a quanto dá oito? Três. Então o ponto é oito, três. O espelho funcionou.
+
+E quando a função vem numa tabela? A linha de cima tem as entradas, a de baixo, as saídas da função h. Quanto vale h inversa de quatro? A pergunta é: qual entrada dá quatro? Então procure o quatro nas saídas. Ele está na coluna do três. h inversa de quatro é três. A inversa se lê de baixo para cima.
+
+E uma composta em tabela? De dentro para fora, como no primeiro episódio. Para h de k de um: primeiro k de um, na linha do k: dois. Depois h de dois, na linha do h: um. Atalho de tabela: função normal, de cima para baixo; inversa, de baixo para cima.
+
+Vamos guardar em três frases. Um: só tem inversa quem é bijetora: cada saída com um dono, e todas existindo. Dois: o gráfico da inversa é o espelho em y igual a x: a, b vira b, a. Três: em tabela, procure o número nas saídas.
+
+Agora, os três erros clássicos. Primeiro: achar que x ao quadrado tem inversa raiz de x em todos os reais. Parece certo, porque a raiz desfaz o quadrado nas contas do dia a dia. Mas o nove tem dois donos. A volta só existe com o domínio de zero para cima.
+
+Segundo: refletir o ponto um, três no eixo y, e achar menos um, três. Ou trocar os sinais. Parece certo, porque espelho lembra virar para o outro lado. Mas o espelho da inversa é a diagonal: só a ordem troca. Três, um.
+
+Terceiro: para h inversa de quatro, procurar o quatro nas entradas e responder h de quatro, que é dois. Parece certo, porque a gente sempre lê a tabela de cima para baixo. Mas a inversa pergunta qual entrada dá quatro: procure nas saídas. A resposta é três.
+
+Agora, uma questão no estilo do ENEM, do nosso material. Esta, eu resolvo com você. Um programa de computador só consegue desfazer uma função f, de reais em reais, recuperando cada entrada a partir da saída, quando f é bijetora. Entre as funções abaixo, a única que o programa consegue desfazer é: A: x ao quadrado. B: módulo de x. C: dois elevado a x. D: x ao cubo, mais um. E: f de x igual a cinco, para todo x. Pause o vídeo e tente.
+
+Testando com números. A A, x ao quadrado: dois e menos dois dão quatro. Dois donos. A B, módulo de x: dois e menos dois dão dois. Dois donos de novo. A C, dois elevado a x: essa é injetora, cada x dá uma saída diferente. Mas nenhum x dá menos um. Não é sobrejetora. A E, sempre cinco: saiu cinco? Impossível saber de onde veio.
+
+Sobrou a D: x ao cubo, mais um. Ela é sempre crescente: x maior, saída maior. Ninguém repete. E atinge todos os reais, até os negativos: menos dois ao cubo, mais um, dá menos sete. A volta existe: tire o um, e faça a raiz cúbica. Atalho: confira com um número. Dois ao cubo, mais um, é nove. Nove menos um, oito; raiz cúbica de oito, dois. Voltou! Letra D!
+
+A próxima, a gente faz junto. Uma função f, de reais em reais, é crescente e invertível, e seu gráfico passa pelo ponto três, sete. O gráfico da função inversa certamente passa pelo ponto: A: três, sete. B: sete, três. C: menos três, menos sete. D: três, um sétimo. E: menos sete, menos três. Pause e tente.
+
+O que o ponto diz? f de três é sete. Então a inversa leva o sete de volta: f inversa de sete é três. Ponto sete, três. Troca de lugar, espelho na diagonal. Letra B! A A é o ponto da própria f. A C e a E trocam os sinais: isso é refletir na origem, nada a ver com inverter. E a D confunde f inversa com um sobre f.
+
+E a última é sua. Um sistema de senhas transforma cada dígito de um a cinco em duas etapas. Primeiro aplica o embaralhamento g; depois aplica o código f. As duas funções estão na tabela. Um técnico precisa calcular f inversa de g de três. Esse valor é: A: um. B: dois. C: três. D: quatro. E: cinco. Pause e resolva.
+
+Conferindo. De dentro para fora. Primeiro, g de três: na linha do g, embaixo do três, está o cinco. Agora f inversa de cinco: qual entrada de f dá cinco? Procure o cinco na linha do f. Ele está na coluna do dois. Letra B!
+
+E as erradas? A A aplicou f direto no três, ignorando o g: f de três é um. A C usou f no lugar de f inversa: f de cinco é três. A D aplicou g duas vezes: g de cinco é quatro. E a E parou no g de três, o cinco, e esqueceu a inversa.
+
+Para fechar, as mesmas três frases. Um: só tem inversa quem é bijetora: cada saída com um dono, e todas existindo. Dois: o gráfico da inversa é o espelho em y igual a x: a, b vira b, a. Três: em tabela, procure o número nas saídas.
+
+No último episódio deste assunto, juntamos composta e inversa, caçamos as pegadinhas e treinamos para o ENEM.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual dos três testes você vai usar primeiro na prova: o dos dois donos, o do espelho ou o da tabela? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

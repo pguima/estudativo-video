@@ -1,0 +1,296 @@
+Notação Científica e Ordem de Grandeza
+Matemática › Matemática Básica e Proporcionalidade › Assunto 5 de 12
+Notação científica e ordem de grandeza
+É a aplicação direta das potências de 10 do assunto anterior — e a linguagem em que o ENEM escreve população, verba pública, distância astronômica, tamanho de vírus e consumo de energia. Cai nas quatro áreas, não só em Matemática.
+Semana
+2 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Potenciação e propriedades
+Destrava
+Unidades, Física, Química, estimativas
+Neste assunto
+01 O que o ENEM cobra aqui
+Este assunto tem uma característica rara: ele aparece nas quatro áreas da prova, não só em Matemática. Toda vez que um enunciado traz um número muito grande ou muito pequeno — e o ENEM adora contextos reais — a notação científica está em jogo.
+Matemática: conversões, operações e comparação de grandezas.
+Física: distâncias astronômicas, energia, potência, carga elétrica.
+Química: número de Avogadro, concentração, pH, massa atômica.
+Biologia: tamanho de células, vírus e bactérias, população.
+Humanas: dados demográficos, PIB, verbas, área territorial.
+E há um detalhe estratégico: em muitas dessas questões as alternativas diferem em ordens de grandeza. Acertar só a potência de 10 já elimina quatro alternativas — mesmo sem fazer a conta exata.
+O que rende mais aqui
+Três coisas: somar com expoentes diferentes (seção 05, a que mais derruba), conversão de área e volume (seção 07, onde o fator é elevado ao quadrado ou ao cubo) e o critério real da ordem de grandeza (seção 06, que não é simplesmente “o expoente que está escrito”).
+02 A forma exata
+Definição
+a · 10^n com 1 ≤ |a| < 10 e n inteiro
+O coeficiente a tem exatamente um algarismo diferente de zero antes da vírgula. Nem menos, nem mais.
+Essa restrição existe para que cada número tenha uma única escrita — e é justamente ela que a prova cobra nas alternativas.
+ | Escrita | É notação científica? | Por quê | Forma correta
+ | 3,84 · 10^8 | Sim | Coeficiente entre 1 e 10 | —
+ | 25 · 10^3 | Não | Coeficiente ≥ 10 | 2,5 · 10^4
+ | 0,5 · 10^4 | Não | Coeficiente < 1 | 5 · 10^3
+ | 1 · 10^(−6) | Sim | Coeficiente igual a 1 é válido | —
+Expoente negativo, número positivo
+10^(−3) = 0,001 — um número pequeno e positivo. O sinal do expoente indica o lado para onde a vírgula anda, nunca o sinal do resultado. Confundir isso troca a alternativa.
+03 Convertendo qualquer número
+A regra única
+Ande com a vírgula até sobrar um algarismo antes dela. O expoente é o número de casas andadas; o sinal vem da direção.
+Vírgula para a esquerda (número grande) → expoente positivo
+Vírgula para a direita (número pequeno) → expoente negativo
+384 400 000 → vírgula andou 8 casas à esquerda → 3,844 · 10^8
+0,000 000 42 → vírgula andou 7 casas à direita → 4,2 · 10^(−7)
+5 970 000 000 000 000 000 000 000 → 5,97 · 10^(24) (massa da Terra, em kg)
+A conferência de dois segundos
+Antes de seguir, olhe o número original: se ele é maior que 1, o expoente tem que ser positivo; se é menor que 1, tem que ser negativo. Isso pega o erro de sinal na hora, sem precisar recontar as casas.
+04 Multiplicação e divisão
+São as operações fáceis: os coeficientes vão de um lado, os expoentes de outro.
+As duas fórmulas
+(a·10^m) · (b·10^n) = (a·b) · 10^(m+n) soma os expoentes
+(a·10^m) ÷ (b·10^n) = (a÷b) · 10^(m−n) subtrai os expoentes
+O passo que quase todo mundo esquece: renormalizar
+O resultado pode sair com coeficiente fora do intervalo [1, 10) — e aí ainda não é notação científica:
+(8·10^4) · (5·10^2) = 40·10^6 → 4·10^7
+(2·10^(−2)) ÷ (5·10^(−5)) = 0,4·10^3 → 4·10^2
+Repare que 40·10^6 costuma estar entre as alternativas, esperando quem parou um passo antes.
+Potência e raiz
+(2 · 10^(−2))^3 = 2^3 · 10^(−6) = 8 · 10^(−6) o expoente age nos dois fatores
+Na raiz há um truque: o expoente precisa ficar par antes de extrair. Se não estiver, ajuste o coeficiente para compensar:
+√(1,6 · 10^(−5)) = √(16 · 10^(−6)) = √(16) · 10^(−3) = 4 · 10^(−3)
+Passar de 1,6·10^(−5) para 16·10^(−6) não muda o valor: cresceu 10 vezes no coeficiente e caiu 10 vezes no expoente.
+05 Soma e subtração: a que derruba
+Aqui está a diferença que separa quem estudou de quem decorou. Multiplicar e dividir funciona com expoentes diferentes. Somar e subtrair, não.
+A condição
+Para somar ou subtrair, os números precisam ter o mesmo expoente. Iguale primeiro — normalmente convertendo o menor para o expoente do maior.
+Somando 3·10⁵ + 8·10⁴ + 2·10⁴
+8·10^4 = 0,8·10^5 2·10^4 = 0,2·10^5
+3·10^5 + 0,8·10^5 + 0,2·10^5 = 4·10^5
+Por que não dá para somar direto
+Somar 3 + 8 + 2 = 13 e escrever 13·10^5 é o mesmo erro de somar metros com centímetros sem converter. 10^5 e 10^4 são unidades diferentes de tamanho.
+Regra de bolso
+Sempre converta para o maior expoente. Assim os coeficientes ajustados ficam menores que 1, fáceis de somar mentalmente, e o resultado já sai perto da forma normalizada.
+06 Ordem de grandeza
+Definição
+É a potência de 10 mais próxima do número. Não serve para saber o valor exato — serve para saber a escala, para comparar coisas de tamanhos muito diferentes.
+O critério real, que a maioria ignora
+Ordem de grandeza não é simplesmente o expoente que está escrito. Escreva como a·10^n e compare o coeficiente com √(10) ≈ 3,16:
+a < 3,16 → ordem = 10^n
+a ≥ 3,16 → ordem = 10^(n+1)
+A razão é geométrica, não arbitrária: √(10) é o ponto médio entre 1 e 10 numa escala de multiplicação. Abaixo dele o número está mais perto de 10^n; acima, mais perto de 10^(n+1).
+ | Número | Coeficiente | Comparação | Ordem de grandeza
+ | 2,3 · 10^5 | 2,3 | menor que 3,16 | 10^5
+ | 7,2 · 10^5 | 7,2 | maior que 3,16 | 10^6
+ | 9,8 · 10^(−4) | 9,8 | maior que 3,16 | 10^(−3)
+ | 1,1 · 10^(12) | 1,1 | menor que 3,16 | 10^(12)
+Diferença de ordens = quantas vezes maior
+Dois números que diferem em 3 ordens de grandeza diferem por um fator de cerca de 1000. Cada ordem multiplica por 10. É assim que a prova compara o tamanho de um átomo com o de uma célula, ou o PIB de dois países.
+07 Prefixos e conversão de unidades
+ | Prefixo | Símbolo | Potência | Onde aparece
+ | tera | T | 10^(12) | terabyte, produção nacional
+ | giga | G | 10^9 | gigabyte, gigawatt, PIB
+ | mega | M | 10^6 | megawatt, habitantes
+ | quilo | k | 10^3 | quilômetro, quilograma
+ | deci | d | 10^(−1) | decímetro, decibel
+ | centi | c | 10^(−2) | centímetro
+ | mili | m | 10^(−3) | miligrama, mililitro
+ | micro | μ | 10^(−6) | micrograma, poluentes
+ | nano | n | 10^(−9) | nanômetro, vírus
+ | pico | p | 10^(−12) | picossegundo
+Contar os quadradinhos resolve a dúvida. Como cada lado do metro tem 100 centímetros, a grade tem 100 × 100 células — e não 100. É por isso que o fator de conversão vai ao quadrado na área e ao cubo no volume.
+A armadilha de área e volume
+Ao converter área, o fator é elevado ao quadrado. Ao converter volume, ao cubo. Este é um dos erros mais caros da prova inteira.
+1 m = 10^2 cm → 1 m^2 = 10^4 cm^2 → 1 m^3 = 10^6 cm^3
+1 km = 10^3 m → 1 km^2 = 10^6 m^2 → 1 km^3 = 10^9 m^3
+Quem converte 1 m^2 = 100 cm^2 erra por um fator de 100.
+Equivalências que caem sempre
+1 L = 1 dm^3 = 10^(−3) m^3 · 1 mL = 1 cm^3 · 1 m^3 = 1 000 L
+1 hectare = 10^4 m^2 (quadrado de 100 m de lado) · 1 km^2 = 100 hectares
+08 Comparar grandezas
+“Quantas vezes maior” é divisão, não subtração. Parece óbvio lido assim, mas sob pressão a confusão acontece.
+Quantas vezes a Terra é mais massiva que a Lua?
+Terra: 6 · 10^(24) kg Lua: 7,5 · 10^(22) kg
+(6 · 10^(24)/7,5 · 10^(22)) = (6/7,5) · 10^2 = 0,8 · 10^2 = 80 vezes
+Duas perguntas diferentes
+“Quantas vezes maior” → divida. Resposta em vezes.
+“Quanto maior” → subtraia. Resposta na mesma unidade do enunciado, e aí você precisa igualar os expoentes antes.
+09 Algarismos significativos
+Cai com mais força em Física e Química, mas o critério é este:
+Todos os algarismos diferentes de zero são significativos.
+Zeros entre algarismos significativos contam.
+Zeros à esquerda não contam — são só posicionais.
+Zeros à direita, depois da vírgula, contam.
+0,00420 → três significativos (4, 2 e o zero final)
+1 002 → quatro significativos
+4,20 · 10^(−3) → três significativos
+A vantagem escondida da notação científica
+No coeficiente, todos os algarismos são significativos. A notação elimina a ambiguidade dos zeros: 4 200 pode ter dois, três ou quatro significativos, mas 4,20·10^3 tem exatamente três, sem discussão.
+Arredondamento: olhe o algarismo seguinte. Menor que 5, mantém; 5 ou maior, soma 1.
+10 Estimativa: a conta de guardanapo
+Muitas questões do ENEM não exigem o valor exato — exigem a ordem certa. Nessas, arredondar cedo é estratégia, não descuido.
+O método
+Arredonde cada fator para um algarismo significativo, multiplique mentalmente e some os expoentes:
+4,7·10^3 × 8,2·10^5 ≈ 5 × 8 · 10^8 = 40·10^8 = 4·10^9
+O valor exato é 3,854·10^9 — a estimativa erra menos de 4%, e as alternativas raramente estão tão próximas.
+Quando usar
+Olhe as alternativas antes de calcular. Se elas diferem em ordem de grandeza — 10^6, 10^8, 10^(10) —, a estimativa resolve em quinze segundos. Se estão todas na mesma potência e diferem só no coeficiente, aí a conta precisa ser exata.
+Escalas que vale ter na cabeça
+ | Grandeza | Ordem | Grandeza | Ordem
+ | Átomo | 10^(−10) m | Raio da Terra | 10^7 m
+ | Vírus | 10^(−7) m | Terra ao Sol | 10^(11) m
+ | Célula | 10^(−5) m | População mundial | 10^(10)
+ | Fio de cabelo | 10^(−4) m | População do Brasil | 10^8
+11 Os erros que mais custam pontos
+25·10³ é notação científica → 2,5·10⁴O coeficiente precisa ficar entre 1 e 10. Renormalize sempre.
+Parar em 40·10⁶ → 4·10⁷Depois de multiplicar, o resultado quase sempre precisa ser renormalizado.
+3·10⁵ + 8·10⁴ = 11·10⁹ → 3,8·10⁵Na soma, iguale os expoentes primeiro. Somar expoentes só vale no produto.
+Multiplicar os expoentes no produto → somarSoma no produto, subtrai no quociente, multiplica só na potência de potência.
+1 m² = 100 cm² → 10 000 cm²Em área o fator é ao quadrado; em volume, ao cubo. Erro de fator 100.
+Ordem de grandeza de 7,2·10⁵ é 10⁵ → 10⁶Coeficiente ≥ 3,16 sobe uma ordem. Não é o expoente escrito.
+10⁻³ é um número negativo → é 0,001, positivoO sinal do expoente indica o lado da vírgula, não o sinal do número.
+“Quantas vezes maior” resolvido por subtração → é divisão“Quantas vezes” é razão. “Quanto maior” é que é diferença.
+√(1,6·10⁻⁵) com expoente ímpar → reescreva como 16·10⁻⁶Só se extrai raiz quadrada limpa quando o expoente é par.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, olhe as alternativas: em várias delas a estimativa já basta.
+Questão 1 · Conversão
+A massa da Terra é de aproximadamente 5 970 000 000 000 000 000 000 000 kg. Em notação científica, esse valor é
+5,97 · 10^(21)
+59,7 · 10^(23)
+5,97 · 10^(24)
+5,97 · 10^(−24)
+0,597 · 10^(25)
+Ver resolução
+A vírgula está no fim do número e precisa parar depois do 5. Contando os algarismos que sobram à direita do 5: são 24.
+5 970 000 000 000 000 000 000 000 = 5,97 · 10^(24)
+Vale conferir as demais: B e E têm o valor correto, mas não estão em notação científica — os coeficientes 59,7 e 0,597 estão fora do intervalo [1, 10). D inverteu o sinal do expoente, o que faria a Terra pesar quase nada.
+Alternativa C
+Questão 2 · Multiplicação com renormalização
+Um data center possui 8 · 10^4 servidores, e cada servidor consome, em média, 5 · 10^2 watts. A potência total consumida, em watts, é
+1,3 · 10^7
+4 · 10^6
+4 · 10^7
+40 · 10^6
+4 · 10^8
+Ver resolução
+Multiplica os coeficientes e soma os expoentes:
+(8 · 10^4) · (5 · 10^2) = 40 · 10^6
+Mas 40 não é coeficiente válido. Renormalizando:
+40 · 10^6 = 4 · 10^7 W
+A alternativa D tem o valor certo escrito de forma errada — é a armadilha de quem para um passo antes. A alternativa A é de quem somou 8 + 5.
+Alternativa C
+Questão 3 · Divisão
+Uma impressora 3D deposita material em camadas de 5 · 10^(−5) metro de espessura. Para produzir uma peça com 2 · 10^(−2) metro de altura, o número de camadas necessárias é
+25
+40
+250
+400
+4 000
+Ver resolução
+Divide a altura total pela espessura de cada camada:
+(2 · 10^(−2)/5 · 10^(−5)) = (2/5) · 10^(−2−(−5)) = 0,4 · 10^3
+Renormalizando: 4 · 10^2 = 400 camadas.
+Atenção ao expoente: −2 − (−5) = −2 + 5 = +3. Errar esse sinal leva direto à alternativa A.
+Alternativa D
+Questão 4 · Soma com expoentes diferentes
+Três municípios vizinhos têm, respectivamente, 3 · 10^5, 8 · 10^4 e 2 · 10^4 habitantes. A população total da região é
+1,3 · 10^4
+1,3 · 10^(13)
+4 · 10^5
+4 · 10^(13)
+13 · 10^5
+Ver resolução
+Soma exige mesmo expoente. Convertendo os dois menores para 10^5:
+8 · 10^4 = 0,8 · 10^5 2 · 10^4 = 0,2 · 10^5
+3 · 10^5 + 0,8 · 10^5 + 0,2 · 10^5 = 4 · 10^5
+São 400 000 habitantes.
+As armadilhas: A e E somaram os coeficientes sem igualar os expoentes; B e D somaram os expoentes, aplicando na adição uma regra que só vale no produto.
+Alternativa C
+Questão 5 · Ordem de grandeza
+Um estudo estima em 7,2 · 10^5 o número de árvores de uma reserva florestal. A ordem de grandeza dessa quantidade é
+10^4
+10^5
+10^6
+10^7
+7 · 10^5
+Ver resolução
+Ordem de grandeza é a potência de 10 mais próxima, e o critério compara o coeficiente com √(10) ≈ 3,16:
+7,2 > 3,16 → sobe uma ordem → 10^6
+Faz sentido concretamente: 7,2·10^5 = 720 000 está muito mais perto de 1 000 000 do que de 100 000.
+A alternativa B é a resposta de quem apenas repete o expoente escrito — o erro mais comum deste tópico. E a E não é sequer uma potência de 10.
+Alternativa C
+Questão 6 · Conversão de área
+Um terreno retangular tem área de 2,5 · 10^3 m². Essa área, expressa em centímetros quadrados, corresponde a
+2,5 · 10^5
+2,5 · 10^6
+2,5 · 10^7
+2,5 · 10^9
+2,5 · 10^1
+Ver resolução
+O passo decisivo é lembrar que a conversão de área eleva o fator ao quadrado:
+1 m = 10^2 cm → 1 m^2 = (10^2)^2 = 10^4 cm^2
+2,5 · 10^3 · 10^4 = 2,5 · 10^7 cm^2
+A alternativa A é exatamente o resultado de quem usou 10^2 em vez de 10^4 — erro por um fator de 100, e é a distração mais escolhida em questões deste tipo.
+Alternativa C
+Questão 7 · Quantas vezes maior
+A massa da Terra é de aproximadamente 6 · 10^(24) kg e a da Lua, 7,5 · 10^(22) kg. A massa da Terra é maior que a da Lua em cerca de
+8 vezes
+80 vezes
+800 vezes
+2 vezes
+100 vezes
+Ver resolução
+“Quantas vezes maior” é divisão:
+(6 · 10^(24)/7,5 · 10^(22)) = (6/7,5) · 10^2 = 0,8 · 10^2 = 80
+Conferência por ordem de grandeza: os expoentes diferem em 2, o que sugere um fator próximo de 100. Como o coeficiente de cima é menor que o de baixo, o resultado fica um pouco abaixo de 100 — 80 é coerente.
+A alternativa D é de quem subtraiu os expoentes e parou aí.
+Alternativa B
+Questão 8 · Raiz em notação científica
+Uma placa quadrada tem área de 1,6 · 10^(−5) m². A medida do lado dessa placa, em metros, é
+4 · 10^(−3)
+4 · 10^(−2,5)
+1,26 · 10^(−3)
+8 · 10^(−3)
+4 · 10^(−6)
+Ver resolução
+O lado do quadrado é a raiz da área. Mas o expoente −5 é ímpar, e raiz quadrada pede expoente par. Ajuste antes:
+1,6 · 10^(−5) = 16 · 10^(−6)
+Multiplicou o coeficiente por 10 e dividiu a potência por 10 — o valor não mudou. Agora sim:
+√(16 · 10^(−6)) = √(16) · √(10^(−6)) = 4 · 10^(−3) m
+Conferindo: (4·10^(−3))^2 = 16·10^(−6) = 1,6·10^(−5) ✓
+A alternativa B mostra por que o ajuste é necessário: dividir o expoente ímpar por 2 produz um expoente fracionário, que não é notação científica.
+Alternativa A
+Questão 9 · Estimativa em contexto
+Uma cidade com 1,2 · 10^6 habitantes registra consumo médio de 1,5 · 10^2 litros de água por pessoa por dia. O consumo diário total da cidade, em litros, é de aproximadamente
+1,8 · 10^7
+1,8 · 10^8
+2,7 · 10^8
+1,8 · 10^(12)
+8 · 10^3
+Ver resolução
+Consumo total é o consumo por pessoa vezes o número de pessoas:
+(1,2 · 10^6) · (1,5 · 10^2) = (1,2 · 1,5) · 10^8 = 1,8 · 10^8 litros
+São 180 milhões de litros por dia — cerca de 72 piscinas olímpicas, para dar escala.
+A alternativa D multiplicou os expoentes (6 · 2 = 12) em vez de somá-los; a E dividiu em vez de multiplicar.
+Pela estimativa: 1 × 1,5 = 1,5, ordem 10^8 — só B e C ficam de pé, e a conta exata do coeficiente decide.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Sei que o coeficiente precisa ficar entre 1 e 10, e corrijo escritas como 25·10^3
+Converto qualquer número contando as casas da vírgula e acertando o sinal do expoente
+Multiplico e divido somando e subtraindo expoentes, e renormalizo o resultado
+Sei que somar exige igualar os expoentes antes
+Extraio raiz ajustando o expoente para ficar par
+Aplico o critério √(10) ≈ 3,16 para a ordem de grandeza, sem repetir o expoente escrito
+Conheço os prefixos de tera a pico
+Converto área elevando o fator ao quadrado e volume ao cubo
+Sei que 1 L = 1 dm³, 1 mL = 1 cm³ e 1 hectare = 10^4 m²
+Distingo “quantas vezes maior” (divisão) de “quanto maior” (subtração)
+Conto algarismos significativos corretamente
+Uso estimativa quando as alternativas diferem em ordem de grandeza
+Tenho na cabeça as escalas de átomo, célula, Terra e população
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Busque questões de Física e Química também — é onde este conteúdo mais aparece, e treinar só com questões de Matemática deixa metade do assunto sem uso. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 47 cartões deste assunto no arquivo ENEM-Matematica-05-notacao-cientifica-ordem-grandeza.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

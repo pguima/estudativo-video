@@ -1,0 +1,65 @@
+Uma bola solta de oito metros quica para sempre, cada vez a três quartos da altura anterior. Infinitos quiques. Quanto ela percorre ao todo? Exatamente cinquenta e seis metros. Nem um centímetro a mais.
+
+Este é o terceiro episódio da série de Progressão geométrica. Ao final, você vai somar infinitos termos, transformar dízimas em fração e resolver o problema da bola sem cair nos distratores.
+
+Três lembretes rápidos. Do episódio dois: a soma finita da PG, que tem um q elevado a n dentro dela. Da série de Frações: um menos três quartos é um quarto. E dividir por uma fração é multiplicar pelo inverso: cinco dividido por um quarto é cinco vezes quatro, vinte. E da série de dízimas: zero vírgula dois sete dois sete é vinte e sete sobre noventa e nove. Hoje você vai ver por quê.
+
+Dá para somar infinitas coisas e o resultado não ser infinito? Pegue uma barra de chocolate. Coma a metade. Depois, a metade do que sobrou. Meio, três quartos, sete oitavos. Você nunca passa do chocolate inteiro, mas chega tão perto quanto quiser.
+
+Isso tem nome. Soma infinita é somar os termos de uma PG sem parar nunca. E cada parada no caminho é uma soma parcial: a soma dos primeiros pedaços. Quando as somas parciais chegam cada vez mais perto de um número, a gente diz que a soma converge. Esse número é o limite.
+
+Mas por que algumas somas infinitas param num número? Olhe a razão. No chocolate, ela é um meio. Multiplicar por um meio de novo e de novo encolhe o pedaço: um quarto, um oitavo, um sobre mil e vinte e quatro. q elevado a n fica perto de zero. Isso acontece quando a razão está entre menos um e um. Em símbolos: módulo de q menor que um.
+
+E o que acontece com a fórmula? Na soma finita, aquele q elevado a n vai virando zero, e some. Sobra uma fórmula curtinha: esse infinito é igual a a um, dividido por um menos q. Ela dá o limite das somas parciais: o número do qual elas se aproximam, sem nunca passar.
+
+Vamos ver a fórmula funcionar? Um quadrado de área um. Pinte a metade. Depois metade do que sobrou. Zero vírgula cinco, zero vírgula setenta e cinco, zero vírgula oitocentos e setenta e cinco. Nunca passa de um. Agora a fórmula. Primeiro, o freio: q é um meio, está entre menos um e um. Pode usar. Um meio, dividido por um menos um meio. Um meio sobre um meio: um. O quadrado inteiro.
+
+E como dividir por um menos q sem sofrer? Atalho: se um menos q é um sobre k, a soma é k vezes a um. Razão três quartos: um menos três quartos é um quarto. Então a soma é quatro vezes o primeiro termo. Razão um meio: duas vezes. Razão dois terços: três vezes.
+
+E se a razão for dois? Um, mais dois, mais quatro, mais oito. A soma não para de crescer. Se você usar a fórmula mesmo assim: um dividido por um menos dois dá menos um. Somando números positivos, deu negativo. Um absurdo. A fórmula só funciona com freio: a razão entre menos um e um.
+
+E o que a dízima tem a ver com isso? Dízima periódica é um número com casas decimais que se repetem para sempre. O bloco que se repete é o período. Zero vírgula dois sete dois sete: o período é vinte e sete. Quebre em pedaços: zero vírgula vinte e sete, mais zero vírgula zero zero vinte e sete, e assim por diante. É uma PG! Primeiro termo zero vírgula vinte e sete, razão zero vírgula zero um.
+
+Tem freio? Zero vírgula zero um está entre menos um e um. Tem. Zero vírgula vinte e sete, dividido por zero vírgula noventa e nove. Tire as vírgulas: vinte e sete sobre noventa e nove. Simplificando por nove: três onze avos. Atalho: os noves da regra prática são o um menos q. A regra dos noves que você aprendeu na série de Frações tem esta explicação.
+
+E a bola que quica para sempre? Pense numa bola solta de nove metros que sobe dois terços da altura anterior. A bola cai uma vez de nove metros. Depois disso, cada altura é percorrida duas vezes: ela sobe e desce. Descidas: nove, seis, quatro, e assim por diante. Um menos dois terços é um terço: três vezes nove, vinte e sete. Subidas: seis, quatro, e assim por diante: três vezes seis, dezoito. Total: quarenta e cinco metros.
+
+Dá para fazer em uma conta só? Dá. O total é a queda inicial, mais duas vezes as subidas. Atalho: h vezes um mais q, sobre um menos q. Nove, vezes cinco terços, dividido por um terço: nove vezes cinco, quarenta e cinco. Bateu.
+
+Sua vez. Quanto dá nove, mais três, mais um, mais um terço, e assim por diante? Pause e tente.
+
+Vamos juntos. A razão: três dividido por nove, um terço. Está entre menos um e um? Está. Um menos um terço: dois terços. Nove dividido por dois terços: nove vezes três meios, vinte e sete meios. Treze e meio.
+
+Vamos guardar em três frases. Um: com razão entre menos um e um, a soma infinita é a um sobre um menos q. Dois: razão fora disso: a soma não para de crescer. Três: bola: a primeira queda uma vez; o resto, duas.
+
+Agora, os quatro erros clássicos. Primeiro: dividir pela razão. Nove dividido por um terço: vinte e sete. Parece certo, porque o q é o número que aparece na PG. Mas o denominador é um menos q. A soma certa é treze e meio.
+
+Segundo: somar uma PG infinita de razão dois. Três, seis, doze: a fórmula daria menos três. Parece certo, porque a fórmula aceita qualquer número. Mas ela só vale com freio.
+
+Terceiro: na bola, fazer só altura sobre um menos q. Na bola de nove metros: vinte e sete. Parece certo, porque é a fórmula da soma infinita. Mas isso é só a descida. Faltaram as subidas: o certo é quarenta e cinco.
+
+Quarto: escrever zero vírgula dois sete dois sete como vinte e sete sobre cem. Parece certo, porque são duas casas depois da vírgula. Mas vinte e sete centésimos para no sete; a dízima continua. O certo é noventa e nove.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. Um designer cria um logotipo em etapas. Na primeira, um triângulo de doze centímetros quadrados. Em cada etapa seguinte, acrescenta triângulos cuja área total é um quarto da área acrescentada na etapa anterior. Repetindo indefinidamente, a área se aproxima de: A: doze. B: quinze vírgula setenta e cinco. C: dezesseis. D: vinte e quatro. E: quarenta e oito. Pause o vídeo e tente.
+
+A palavra-sinal. Atalho: indefinidamente, até parar, para sempre: é soma infinita. As áreas acrescentadas: doze, três, zero vírgula setenta e cinco. Razão um quarto, entre menos um e um. Um menos um quarto é três quartos. Doze dividido por três quartos: doze vezes quatro terços, dezesseis. Letra C!
+
+E as armadilhas? A A fica só na primeira etapa. A B soma só três etapas: o processo é infinito. A D usa razão um meio. E a E divide pela razão, e não por um menos q.
+
+Agora fazemos juntos. Um programa exibe o número zero vírgula dois sete dois sete, com o bloco vinte e sete se repetindo indefinidamente. Somando os infinitos termos, obtém-se a fração: A: vinte e sete sobre cem. B: três onze avos. C: vinte e sete sobre noventa. D: um sobre trinta e sete. E: dois sétimos. Pause e tente.
+
+Juntos, então. Primeiro termo, zero vírgula vinte e sete; razão, zero vírgula zero um. Tem freio. Zero vírgula vinte e sete sobre zero vírgula noventa e nove: vinte e sete noventa e nove avos, três onze avos. Confira na conta: três dividido por onze dá zero vírgula dois sete dois sete. Letra B!
+
+E as armadilhas? A A fica só com o primeiro termo. A C usa zero vírgula nove no denominador, como se a razão fosse zero vírgula um. A D usa três noves para um período de dois algarismos. E a E é só uma aproximação: zero vírgula dois oito.
+
+E esta é sua. Uma bola é solta de oito metros e, a cada toque no chão, sobe até três quartos da altura de que caiu. Mantido o padrão indefinidamente, a distância vertical total, em metros, até parar, é: A: vinte e quatro. B: trinta e dois. C: quarenta e oito. D: cinquenta e seis. E: sessenta e quatro. Pause o vídeo e tente.
+
+Conferindo. Razão três quartos: freio ok. Um menos três quartos é um quarto: a soma é quatro vezes o primeiro termo. Descidas: oito, seis, quatro e meio. Quatro vezes oito: trinta e dois. Subidas: seis, quatro e meio. Quatro vezes seis: vinte e quatro. Juntas: cinquenta e seis metros. Pelo atalho: oito vezes sete quartos, sobre um quarto: oito vezes sete. Letra D!
+
+E as armadilhas? A A conta só as subidas. A B conta só as descidas. A C dobra as subidas e esquece a queda de oito metros. E a E dobra tudo: conta a primeira queda duas vezes.
+
+Para fechar, as mesmas três frases. Um: com razão entre menos um e um, a soma infinita é a um sobre um menos q. Dois: razão fora disso: a soma não para de crescer. Três: bola: a primeira queda uma vez; o resto, duas.
+
+Juros compostos, remédio que cai à metade, carro que perde valor todo ano: você já esbarrou na PG em outras séries sem que ela dissesse o nome. Próximo episódio: a PG disfarçada.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: antes desta aula, você achava que infinitos termos podiam dar um número finito? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

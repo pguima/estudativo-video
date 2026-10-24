@@ -1,0 +1,53 @@
+Ana e Beto, cento e vinte e cinco quilos. Beto e Caio, cento e quarenta e cinco. Ana e Caio, cento e quarenta. Muita gente divide cento e vinte e cinco por dois e diz que Beto pesa sessenta e dois e meio. Ele pesa sessenta e cinco.
+
+Ao final, você vai resolver sistemas com três incógnitas pela escada e pelo atalho da soma.
+
+Antes, dois lembretes rápidos. Do episódio um, a substituição: se x mais y é dez e y é três, troque o y por três, e x é sete. Do episódio dois, subtrair uma equação da outra: o que é igual nas duas some.
+
+Imagine três amigos numa balança de farmácia. Eles sobem em duplas, e anotam três números. Ninguém subiu sozinho. Então como descobrir quanto pesa cada um? São três valores escondidos. Vamos precisar de três pistas.
+
+Quantas equações bastam? Um sistema três por três tem três equações e três incógnitas. E as equações precisam ser independentes: cada uma traz uma informação nova, e não é cópia nem mistura das outras. Com duas pistas para três números, sobra dúvida.
+
+Existe um sistema fácil de três incógnitas? Existe. Olhe este: x mais y mais z igual a seis; y mais z igual a cinco; z igual a três. Cada linha tem uma letra a menos. É um sistema escalonado: parece uma escada. E escalonar é justamente arrumar um sistema nesse formato.
+
+Por onde começar? Pelo degrau de baixo, que tem uma letra só: z igual a três. Suba um degrau e substitua: y mais três igual a cinco, y igual a dois. Suba mais um: x mais dois mais três igual a seis, x igual a um. Isso é a substituição de baixo para cima. Confira: um mais dois mais três, seis.
+
+Um atalho na escada. Repare: o degrau de cima é x mais y mais z. E o do meio já diz que y mais z é cinco. Então subtraia: seis menos cinco. x é um, sem nem achar o y.
+
+E quando o sistema não é uma escada? Numa lanchonete, os combos de dois lanches custam: A mais B, treze reais; B mais C, quinze; A mais C, catorze. Some as três e conte quantas vezes cada letra aparece. A: duas vezes. B: duas vezes. C: duas vezes. Então treze mais quinze mais catorze, quarenta e dois, é duas vezes A mais B mais C. Dividindo por dois: vinte e um.
+
+E agora, cada um? O C é o total menos a dupla em que ele não está. Vinte e um menos treze: C igual a oito. O A: vinte e um menos quinze, seis. O B: vinte e um menos catorze, sete. Confira com uma dupla: seis mais sete, treze. Bate.
+
+O atalho inteiro em três passos. Um: some as três duplas. Dois: divida por dois, porque cada um apareceu duas vezes. Três: tire do total a dupla que não tem quem você procura.
+
+Quando esse atalho funciona? Quando cada incógnita aparece o mesmo número de vezes. É o caso das pesagens em dupla, dos combos de lanchonete e das distâncias entre três cidades. Para os outros sistemas três por três, existe o escalonamento completo, que fica para a série de Determinantes.
+
+Sua vez. A mais B, nove. B mais C, onze. A mais C, dez. Quanto vale cada um? Pause e tente.
+
+Vamos juntos. Some: nove mais onze mais dez, trinta. Cada letra apareceu duas vezes: divida por dois, total quinze. A é quinze menos onze, quatro. B é quinze menos dez, cinco. C é quinze menos nove, seis. Confira: quatro mais cinco, nove. Bate.
+
+Vamos guardar em três frases. Um: sistema escalonado: resolva de baixo para cima. Dois: em duplas, cada um aparece duas vezes: some e divida por dois. Três: cada um é o total menos a dupla em que ele não está.
+
+Agora, os três erros clássicos. Primeiro: somar as três duplas e esquecer de dividir por dois. Nos combos, o C daria quarenta e dois menos treze, vinte e nove. Parece certo, porque a soma foi feita direitinho. Mas sozinho o C custaria mais que o combo B mais C, de quinze. Absurdo. Cada um apareceu duas vezes: divida por dois.
+
+Segundo: dividir uma dupla por dois. A mais B é treze, então cada um custaria seis e cinquenta. Parece certo, porque são dois lanches e treze reais. Mas isso supõe que os dois custam o mesmo. Ninguém disse isso. O A custa seis e o B, sete.
+
+Terceiro: responder um resultado do meio do caminho. Na escada, perguntam o y, e a pessoa responde cinco, o y mais z do degrau do meio. Parece certo, porque o cinco é o número que está na tela. Mas cinco é y mais z. O y é dois. Antes de marcar, releia a pergunta.
+
+Questão do ENEM, do nosso material: a balança do começo. Eu resolvo. Três amigos, Ana, Beto e Caio, subiram em duplas numa balança. Ana e Beto juntos marcaram cento e vinte e cinco quilos; Beto e Caio, cento e quarenta e cinco; Ana e Caio, cento e quarenta. A massa de Beto, em quilogramas, é: A: sessenta. B: sessenta e dois vírgula cinco. C: sessenta e cinco. D: setenta e dois vírgula cinco. E: oitenta. Pause o vídeo e tente.
+
+Pesagens em dupla: atalho da soma. Cento e vinte e cinco mais cento e quarenta e cinco mais cento e quarenta: quatrocentos e dez. Cada um subiu duas vezes: divida por dois, total duzentos e cinco. Beto é o total menos a dupla em que ele não está: Ana e Caio. Duzentos e cinco menos cento e quarenta: sessenta e cinco. Ana fica com sessenta, Caio com oitenta. Confira: sessenta mais sessenta e cinco, cento e vinte e cinco. Letra C!
+
+E as erradas? A A é a massa da Ana, não a do Beto. A E é a massa do Caio. A B dividiu cento e vinte e cinco por dois, e a D dividiu cento e quarenta e cinco por dois: as duas supõem que os dois da dupla pesam o mesmo.
+
+Agora é com você. Uma prova tem vinte questões: as fáceis valem um ponto, as médias valem dois e as difíceis valem três, num total de trinta e sete pontos. O número de questões médias é dois a mais que o de difíceis. O número de questões médias é: A: cinco. B: sete. C: oito. D: quinze. E: dezessete. Pause o vídeo e resolva.
+
+Etiquetas: f fáceis, m médias, d difíceis. Uma equação por informação. f mais m mais d igual a vinte. f mais dois m mais três d igual a trinta e sete. E m igual a d mais dois. Subtraia a primeira da segunda e conte: o f some, sobra um m e dois d. m mais dois d igual a dezessete. Troque o m por d mais dois: três d mais dois igual a dezessete, d igual a cinco. Então m é sete e f é oito. Confira: oito mais sete mais cinco, vinte; oito mais catorze mais quinze, trinta e sete. Letra B!
+
+E as erradas? A A é o número de difíceis. A C, o de fáceis. A D são os pontos das difíceis: cinco vezes três. E a E é o meio do caminho: m mais dois d, o terceiro erro clássico.
+
+Para fechar, as mesmas três frases. Um: sistema escalonado: resolva de baixo para cima. Dois: em duplas, cada um aparece duas vezes: some e divida por dois. Três: cada um é o total menos a dupla em que ele não está.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e vemos sistemas na Física, na Química e na Geometria.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha dividido uma pesagem em dupla por dois? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

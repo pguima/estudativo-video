@@ -1,0 +1,259 @@
+Juros Compostos
+Matemática › Matemática Financeira › Assunto 2 de 6
+Juros compostos e montante
+Juros sobre juros: cada período multiplica o saldo pelo mesmo fator, e o dinheiro cresce como uma potência. É o regime de bancos, cartões e financiamentos, e o ENEM cobra com potências dadas no enunciado, logaritmos aproximados e a comparação com os juros simples.
+Semana
+25 · Fase Ampliação
+Incidência
+Média
+Tempo previsto
+36 min de teoria
+Pré-requisito
+Juros simples · Potenciação
+Destrava
+Descontos e lucro · Taxas equivalentes e inflação
+Neste assunto
+01 O que o ENEM cobra aqui
+Juros compostos são o modelo real do dinheiro: poupança, investimentos, empréstimos, cheque especial e cartão de crédito funcionam assim. Na prova, aparecem em contexto e sem calculadora, então o enunciado entrega as potências ou os logaritmos de que você precisa.
+O que costuma ser cobrado:
+Calcular o montante com M = C(1 + i)^t, com a potência dada ou fácil de fazer à mão.
+Encontrar o tempo para atingir um valor, por tentativa ou com logaritmos aproximados.
+Trazer um valor futuro para hoje (quanto aplicar agora para ter tanto depois).
+Comparar simples e compostos, em números ou em gráficos (reta × curva).
+Encadear taxas diferentes período a período, multiplicando fatores.
+O que rende mais aqui
+Pensar em fatores, não em porcentagens somadas. Cada período multiplica o saldo por (1 + i); t períodos multiplicam por (1 + i)^t. É a mesma ferramenta das variações sucessivas de Porcentagem, repetida com a mesma taxa.
+02 Juros sobre juros
+Definição
+No regime de juros compostos, os juros de cada período são calculados sobre o saldo do período anterior, que já inclui os juros acumulados. Os juros são incorporados ao capital e passam a render também.
+Veja R$ 1.000,00 a 10% ao mês. No primeiro mês, os juros são 10% de 1.000. No segundo, 10% de 1.100. No terceiro, 10% de 1.210:
+Os juros de cada mês crescem. São sempre 10%, mas de um saldo cada vez maior: 100, depois 110, 121 e 133,10. Em juros simples seriam 100 todo mês, e o saldo do mês 4 seria 1.400, não 1.464,10.
+ | Mês | Juros simples (sobre 1.000) | Saldo simples | Juros compostos (sobre o saldo) | Saldo composto
+ | 1 | 100 | 1.100 | 100 | 1.100
+ | 2 | 100 | 1.200 | 110 | 1.210
+ | 3 | 100 | 1.300 | 121 | 1.331
+ | 4 | 100 | 1.400 | 133,10 | 1.464,10
+No primeiro período os dois regimes dão o mesmo resultado. A diferença nasce no segundo período e cresce sem parar.
+03 A fórmula do montante
+Cada mês multiplica o saldo por 1 + i (o mesmo fator de aumento de Porcentagem). Depois de t meses, o capital foi multiplicado t vezes por esse fator:
+Montante em juros compostos
+M = C · (1 + i)^t
+Os juros saem por diferença: J = M − C. Não existe fórmula direta de juros compostos que dispense o montante.
+O número (1 + i)^t é o fator de capitalização. A exigência de unidades é a mesma dos juros simples: i e t no mesmo período.
+Exemplo — R$ 5.000,00 a 2% ao mês, durante 3 meses
+1,02^3 = 1,02 · 1,02 · 1,02 = 1,061208
+M = 5.000 · 1,061208 = R$ 5.306,04 J = R$ 306,04
+Em juros simples seriam R$ 300,00 de juros. A diferença de R$ 6,04 são os juros sobre os juros.
+Dividir a taxa anual por 12 não funciona aqui
+Se a taxa é anual e o prazo está em meses, não basta dividir por 12. Em juros compostos, a conversão de taxas usa potência (taxas equivalentes, assunto 4 deste bloco). Nas questões deste assunto, a taxa já vem no período certo ou o prazo é um número inteiro de períodos da taxa.
+04 Simples × compostos: reta e curva
+Em juros simples o montante é uma função afim do tempo; em juros compostos, uma função exponencial:
+ | | Juros simples | Juros compostos
+ | Juros incidem sobre | o capital inicial | o saldo anterior
+ | Montante | M = C(1 + it) | M = C(1 + i)^t
+ | Cada período | soma C · i | multiplica por 1 + i
+ | Montantes período a período | PA de razão C · i | PG de razão 1 + i
+ | Gráfico | reta | curva exponencial
+R$ 100,00 a 10% ao ano nos dois regimes. A reta e a curva partem do mesmo ponto e se encontram em t = 1. Depois disso a curva dispara: em 10 anos, 259 contra 200. Entre 0 e 1 a reta fica ligeiramente acima da curva, diferença pequena demais para aparecer nesta escala.
+Quem rende mais depende do prazo
+Antes de um período (t < 1): simples rendem mais. Meio ano a 10% a.a. dá fator 1,05 em simples e √(1,1) ≈ 1,0488 em compostos.
+Exatamente um período: os dois são iguais (fator 1,10).
+Depois de um período (t > 1): compostos rendem mais, e a vantagem só aumenta.
+É por isso que juros de mora de poucos dias são cobrados em simples (ver Juros simples): para frações de mês, a cobrança simples é a maior das duas.
+05 Potências sem calculadora
+O ENEM não deixa você fazer 1,05^(12) na mão. Ou o enunciado dá a potência, ou dá uma potência menor que você combina. Três técnicas resolvem quase tudo.
+1 · Multiplicar passo a passo (expoentes pequenos)
+1,1^2 = 1,21 · 1,1^3 = 1,331 · 1,1^4 = 1,4641 · 1,1^5 = 1,61051
+Multiplicar por 1,1 é somar ao número a sua décima parte: 1,331 + 0,1331 = 1,4641.
+2 · Quebrar o expoente
+(1 + i)^(2n) = [(1 + i)^n]^2
+Se o enunciado diz “use 1,03^(10) ≈ 1,34” e o prazo é de 20 meses, faça 1,34^2 ≈ 1,80 (o valor exato de 1,34^2 é 1,7956).
+3 · Combinar potências dadas
+(1 + i)^(a + b) = (1 + i)^a · (1 + i)^b
+Com 1,1^5 ≈ 1,61 e 1,1^2 = 1,21, o fator de 7 anos a 10% é 1,61 · 1,21 ≈ 1,95.
+Dobrar o tempo não dobra o fator
+Se 6 meses dão fator 1,34, 12 meses dão 1,34^2 ≈ 1,80, não 2 · 1,34 nem 1 + 0,34 + 0,34 = 1,68. Somar as taxas de dois períodos é raciocinar em juros simples.
+06 Descobrindo o tempo
+O tempo está no expoente, então isolá-lo exige outra ferramenta. Na prova, há três caminhos, do mais simples ao mais formal.
+Por tentativa
+Quando o prazo é pequeno, teste as potências. A 10% a.m., para passar de 1,6 vezes o capital: 1,1^4 ≈ 1,46 ainda não basta, 1,1^5 ≈ 1,61 já basta. São 5 meses.
+Com logaritmos
+Aplicando logaritmo dos dois lados de (1 + i)^t = (M/C), o expoente desce:
+Tempo em juros compostos
+t = (log (M / C)/log (1 + i))
+Para dobrar a 10% a.a., com log 2 ≈ 0,301 e log 1,1 ≈ 0,041: t ≈ (0,301/0,041) ≈ 7,3 anos.
+O enunciado sempre fornece os logaritmos. As propriedades usadas (o log de uma potência e o log de um quociente) estão em Logaritmos: definição, propriedades e equações.
+Regra do 72, para estimar
+Tempo para dobrar ≈ 72 ÷ taxa
+A juros compostos, o capital dobra em aproximadamente (72/taxa em %) períodos. A 10% a.a., cerca de 7,2 anos; a 6% a.a., cerca de 12; a 8% a.a., cerca de 9. É estimativa, boa para taxas entre 2% e 20%, e serve para eliminar alternativas absurdas.
+O tempo de dobrar não vale para triplicar
+Triplicar não leva “uma vez e meia o tempo de dobrar”, nem o dobro dele. Use log 3 no lugar de log 2. Dobrar duas vezes é quadruplicar.
+07 Trazendo valores para hoje
+Muitas questões perguntam o caminho inverso: quanto aplicar hoje para ter um valor no futuro, ou quanto vale hoje uma dívida que vence depois. Basta isolar o capital:
+Valor presente
+C = (M/(1 + i)^t)
+Exemplo — quanto aplicar hoje, a 5% a.a., para ter R$ 11.025,00 em 2 anos?
+1,05^2 = 1,1025 → C = (11.025/1,1025) = R$ 10.000,00
+Trazer para hoje é dividir pelo fator
+Não se “tira 5% duas vezes” de 11.025: 11.025 · 0,95^2 dá 9.950,06, abaixo do valor certo. Retirar i% não desfaz um aumento de i%; dividir pelo fator desfaz (como em “voltar ao valor original”, de Porcentagem).
+Essa ideia é a base para comparar pagamentos em datas diferentes, que voltam em Empréstimos, financiamentos e parcelamentos e em Comparação de propostas e tomada de decisão.
+08 Montante como PG e como função exponencial
+Os montantes ao fim de cada período, C(1 + i), C(1 + i)^2, C(1 + i)^3, …, formam uma progressão geométrica de razão 1 + i. Como função contínua do tempo, M(t) = C · (1 + i)^t é uma exponencial de base maior que 1.
+A marca da exponencial: tempo de duplicação constante
+Se o saldo dobra em 7 anos, dobra de novo nos 7 seguintes, e de novo nos outros 7. Em 21 anos o capital é multiplicado por 2^3 = 8, não por 3. Esse é o comportamento de toda grandeza que cresce a uma taxa percentual fixa: dívidas, populações, bactérias.
+O mesmo modelo, com fator menor que 1, descreve decaimento: um bem que perde 20% do valor ao ano vale V_0 · 0,8^t depois de t anos. O estudo completo dessas funções está em Função exponencial e crescimento ou decaimento.
+09 Estratégia de prova
+1 · Procure as potências no enunciado
+Antes de calcular, veja quais potências ou logaritmos foram fornecidos. Eles indicam o caminho: se a questão dá 1,05^6 e o prazo é 12, a conta é elevar ao quadrado.
+2 · Elimine pelo simples
+Calcule rapidamente o montante em juros simples. Para prazos maiores que um período, a resposta composta é maior que esse valor. Alternativas iguais ou menores caem na hora.
+3 · Estime com a regra do 72
+Em questões de tempo, a regra do 72 dá a ordem de grandeza em segundos. Se ela aponta 7 anos e uma alternativa diz 25, essa alternativa saiu de juros simples ou de uma conta errada.
+4 · Trabalhe com fatores até o fim
+Multiplique os fatores e só no final converta em reais ou em porcentagem. Arredondar no meio do caminho afasta o resultado das alternativas.
+10 Onde isso aparece nas outras áreas
+Biologia: crescimento de populações e de colônias de bactérias com taxa fixa por período segue o mesmo P = P_0(1 + i)^t.
+Química: o decaimento radioativo (meia-vida) é a versão com fator menor que 1: a cada meia-vida, a massa é multiplicada por (1/2).
+Geografia: projeções de população, de PIB e de consumo a taxas anuais fixas.
+Álgebra e Funções: é a aplicação financeira de PG, função exponencial e logaritmo, os três assuntos que dão sustentação teórica a este.
+Inflação: preços que sobem a uma taxa mensal acumulam como juros compostos; o tema volta em Taxas equivalentes e inflação.
+11 Os erros que mais custam pontos
+Somar as taxas dos períodos → multiplique os fatores10% por 2 anos em compostos é 21%, não 20%.
+Calcular C(1 + i·t) quando o regime é composto → C(1 + i)ᵗLeia o regime no enunciado; a alternativa de juros simples está sempre lá.
+Responder o montante quando pedem os juros → J = M − CE o contrário também: os juros sozinhos aparecem como distrator.
+Dobrar o tempo e dobrar o fator → eleve o fator ao quadradoSe 6 meses dão 1,34, 12 meses dão 1,34², cerca de 1,80.
+Dividir a taxa anual por 12 → em compostos, a conversão usa potênciaTaxas proporcionais são exclusivas dos juros simples.
+Valor presente tirando i% por período → divida por (1 + i)ᵗRetirar 10% não desfaz um aumento de 10%.
+Contar um período a mais → o expoente é o número de capitalizaçõesTrês anos são expoente 3, mesmo que a tabela comece no ano 0.
+Dividir log 2 pela taxa → divida por log (1 + i)O denominador é o logaritmo do fator, não a taxa.
+Achar que compostos sempre rendem mais → só depois do primeiro períodoPara frações do período, os juros simples são maiores.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, escreva primeiro o fator de um período e só depois a potência.
+Questão 1 · Montante em três anos
+Uma pessoa aplicou R$ 10.000,00 a juros compostos de 10% ao ano. Sem novos depósitos nem retiradas, o saldo ao final de 3 anos será de
+R$ 3.310,00.
+R$ 13.000,00.
+R$ 13.310,00.
+R$ 14.000,00.
+R$ 14.641,00.
+Ver resolução
+1,1^3 = 1,331 → M = 10.000 · 1,331 = R$ 13.310,00
+A B é o montante em juros simples (30% em 3 anos). A A são só os juros compostos, mas a pergunta é o saldo. A E usa 4 anos (expoente 4), e a D é o montante simples desse mesmo prazo errado.
+Alternativa C
+Questão 2 · Tempo para triplicar
+Um fundo rende juros compostos de 20% ao ano. Para estimar em quanto tempo um capital aplicado nesse fundo triplica, um analista usou log 2 ≈ 0,30, log 3 ≈ 0,48 e log 1,2 ≈ 0,08. O tempo obtido foi de
+3,75 anos.
+6 anos.
+7,5 anos.
+10 anos.
+15 anos.
+Ver resolução
+Triplicar: 1,2^t = 3. Aplicando logaritmo:
+t = (log 3/log 1,2) ≈ (0,48/0,08) = 6 anos
+Conferência: 1,2^6 ≈ 2,99. A A é o tempo para dobrar (0,30 ÷ 0,08); o log 2 foi dado justamente para atrair esse erro. A C supõe que triplicar leva o dobro do tempo de dobrar (isso seria quadruplicar). A D é triplicar em juros simples (0,2 · t = 2), e a E é o erro simples de fazer J = 3C.
+Alternativa B
+Questão 3 · Quanto aplicar hoje
+Uma família quer ter R$ 12.100,00 daqui a 2 anos para trocar de carro. Ela encontrou uma aplicação que rende juros compostos de 10% ao ano. O valor que deve ser aplicado hoje, em um único depósito, é de
+R$ 10.000,00.
+R$ 10.083,33.
+R$ 10.890,00.
+R$ 11.000,00.
+R$ 14.641,00.
+Ver resolução
+Valor presente: divida pelo fator de dois anos, 1,1^2 = 1,21.
+C = (12.100/1,21) = R$ 10.000,00
+A B divide por 1,20, o fator de juros simples. A D desconta só um ano (12.100 ÷ 1,1). A C retira 10% uma única vez, o que nem desfaz o aumento de um ano. A E multiplica pelo fator em vez de dividir: projeta o valor para o futuro.
+Alternativa A
+Questão 4 · Simples ou compostos, conforme o prazo
+Um banco oferece duas modalidades de empréstimo com a mesma taxa de 10% ao mês: uma a juros simples e outra a juros compostos. Um cliente quer saber qual é mais barata. Comparando o valor a pagar ao final do prazo, conclui-se que
+a modalidade a juros compostos é sempre mais cara, qualquer que seja o prazo.
+as duas modalidades custam sempre o mesmo, porque a taxa é a mesma.
+para prazos menores que um mês, a modalidade a juros simples é mais cara; para prazos maiores que um mês, é a de juros compostos.
+para prazos menores que um mês, a modalidade a juros compostos é mais cara; para prazos maiores que um mês, é a de juros simples.
+a modalidade a juros simples é sempre mais cara, qualquer que seja o prazo.
+Ver resolução
+Compare os fatores. Em meio mês: simples 1 + 0,1 · 0,5 = 1,05; compostos √(1,1) ≈ 1,049. Em um mês: 1,10 nos dois. Em dois meses: simples 1,20; compostos 1,21.
+Antes de um período, o simples cobra mais; depois, o composto. Em exatamente um mês, empatam. É o cruzamento da reta com a curva no gráfico da seção 04.
+A A é a crença comum, verdadeira só a partir do primeiro período. A B ignora que os regimes são diferentes. A D inverte as faixas. A E vale apenas para prazos menores que um mês.
+Alternativa C
+Questão 5 · Taxas diferentes em sequência
+Um investimento de risco rendeu 10% no primeiro mês e 20% no segundo, mas teve perda de 25% no terceiro. Em relação ao valor investido no início, ao final do terceiro mês o investidor teve
+perda de 1%.
+ganho de 5%.
+ganho de 1%.
+ganho de 30%.
+resultado nulo, sem ganho nem perda.
+Ver resolução
+Multiplique os fatores dos três meses:
+1,10 · 1,20 · 0,75 = 1,32 · 0,75 = 0,99
+O saldo final é 99% do inicial: perda de 1%.
+A B soma as taxas (10 + 20 − 25 = 5), o raciocínio de juros simples. A D soma só os ganhos. A C acerta o tamanho da variação e erra o sinal. A E acredita que ganhos de 30% e perda de 25% “quase se anulam”; não se anulam, porque a perda incide sobre um valor maior.
+Alternativa A
+Questão 6 · Potência dada no enunciado
+Uma dívida de R$ 2.000,00 no cartão de crédito cresce a juros compostos de 5% ao mês. Considere 1,05⁶ ≈ 1,34. Se nada for pago, após 12 meses a dívida será de, aproximadamente,
+R$ 2.680,00.
+R$ 3.200,00.
+R$ 3.360,00.
+R$ 3.590,00.
+R$ 5.360,00.
+Ver resolução
+Doze meses são duas vezes seis: 1,05^(12) = (1,05^6)^2 ≈ 1,34^2 = 1,7956.
+M ≈ 2.000 · 1,7956 ≈ R$ 3.591,20 → cerca de R$ 3.590,00
+A A usa só o fator de 6 meses. A B é juros simples (60% em 12 meses). A C soma as taxas dos dois semestres (34% + 34% = 68%). A E multiplica o fator por 2 em vez de elevá-lo ao quadrado.
+Alternativa D
+Questão 7 · Tempo por tentativa
+R$ 1.000,00 foram aplicados a juros compostos de 10% ao mês. Considere 1,1⁴ ≈ 1,46 e 1,1⁵ ≈ 1,61. O número mínimo de meses completos para que o saldo atinja pelo menos R$ 1.600,00 é
+4.
+5.
+6.
+7.
+16.
+Ver resolução
+É preciso 1,1^t ≥ 1,6. Com 4 meses o saldo é cerca de R$ 1.460,00 (insuficiente); com 5 meses, cerca de R$ 1.610,00. São 5 meses.
+A C é a resposta em juros simples (1.000 + 100 · 6 = 1.600). A A para em 1,46, abaixo da meta. A D conta um mês a mais, e a E divide 1.600 por 100, misturando montante com juros mensais.
+Alternativa B
+Questão 8 · Duas propostas de investimento
+Um investidor tem R$ 50.000,00 para aplicar por 2 anos e recebe duas propostas: I) juros simples de 22% ao ano; II) juros compostos de 20% ao ano. Sobre os juros obtidos ao final dos 2 anos, é correto afirmar que
+a proposta I rende R$ 2.000,00 a mais que a II.
+a proposta II rende R$ 2.000,00 a mais que a I.
+a proposta I rende mais, porque sua taxa é maior.
+a proposta II rende mais, porque juros compostos sempre superam os simples.
+as duas propostas rendem exatamente o mesmo valor.
+Ver resolução
+I: 50.000 · 0,22 · 2 = R$ 22.000,00
+II: 50.000 · (1,2^2 − 1) = 50.000 · 0,44 = R$ 22.000,00
+Empate. A taxa maior da proposta I compensa exatamente os juros sobre juros da II neste prazo.
+A A calcula a proposta II como se fosse simples (R$ 20.000,00). A C e a D tiram conclusões só pela regra geral, sem fazer a conta. A B inverte a comparação errada da A.
+Alternativa E
+Questão 9 · Duplicações sucessivas
+Em uma aplicação a juros compostos, o saldo dobra a cada 7 anos. Uma pessoa depositou R$ 5.000,00 e não fez retiradas. Após 21 anos, o saldo será de
+R$ 15.000,00.
+R$ 20.000,00.
+R$ 30.000,00.
+R$ 40.000,00.
+R$ 45.000,00.
+Ver resolução
+21 anos são 3 períodos de duplicação. Cada um multiplica o saldo por 2:
+5.000 · 2^3 = 5.000 · 8 = R$ 40.000,00
+A A multiplica por 3, o número de períodos. A B soma 5.000 por período, como em juros simples. A C multiplica por 2 · 3. A E soma o capital de novo ao montante, que já o contém.
+Alternativa D
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Explico por que os juros de cada período crescem em juros compostos
+Aplico M = C(1 + i)^t e obtenho os juros por J = M − C
+Calculo potências pequenas de 1,1, 1,05, 1,02 à mão
+Combino potências dadas no enunciado, elevando ao quadrado ou multiplicando
+Sei que dobrar o tempo eleva o fator ao quadrado, não o dobra
+Encontro o tempo por tentativa quando o prazo é curto
+Uso t = log(M/C) / log(1 + i) com os logaritmos dados
+Estimo o tempo de duplicação pela regra do 72
+Trago um valor futuro para hoje dividindo pelo fator
+Comparo simples e compostos e sei qual rende mais antes e depois de um período
+Reconheço montantes compostos como PG de razão 1 + i e como função exponencial
+Encadeio taxas diferentes multiplicando os fatores de cada período
+Sigo para Descontos, acréscimos, lucro e prejuízo usando fatores em vez de somar porcentagens
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões de juros compostos e acerte pelo menos 14 (70%). Inclua questões com logaritmos fornecidos e com comparação entre regimes, as duas formas mais recorrentes. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 42 cartões deste assunto no arquivo ENEM-Matematica-14-juros-compostos-montante.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Financeira é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

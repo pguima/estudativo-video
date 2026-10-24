@@ -1,0 +1,1093 @@
+<title>Progressão Aritmética</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 13 de 18</p>
+    <h1>Progressão aritmética (PA)</h1>
+    <p class="deck">Uma sequência que cresce ou diminui sempre o mesmo tanto: a poupança que aumenta R$ 15,00 por mês, as fileiras de um teatro, os palitos de uma figura que se repete. Este assunto ensina a achar qualquer termo sem listar todos, a somar dezenas de termos em uma linha e a reconhecer a PA escondida nos enunciados.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Sete barras que crescem sempre o mesmo degrau verde, a razão r: cada termo da progressão aritmética é o anterior mais r">
+  <rect x="26" y="142" width="26" height="24" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="39" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₁</text>
+  <rect x="64" y="124" width="26" height="42" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="77" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₂</text>
+  <rect x="102" y="106" width="26" height="60" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="115" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₃</text>
+  <rect x="140" y="88" width="26" height="78" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="153" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₄</text>
+  <rect x="178" y="70" width="26" height="96" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="191" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₅</text>
+  <rect x="216" y="52" width="26" height="114" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="229" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₆</text>
+  <rect x="254" y="34" width="26" height="132" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="267" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a₇</text>
+  <rect x="64" y="124" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="102" y="106" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="140" y="88" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="178" y="70" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="216" y="52" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <rect x="254" y="34" width="26" height="18" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="267" y="26" text-anchor="middle" class="svg-num" style="fill:var(--c3)">+r</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">cada termo = anterior + r</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>9 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Equações do 1º grau · Função afim</dd></div>
+      <div><dt>Destrava</dt><dd>Progressão geométrica, juros simples como sequência, padrões e contagem</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A PA aparece no ENEM quase sempre disfarçada de situação do cotidiano. O nome “progressão aritmética” pode nem estar no texto; o que está é um <strong>aumento constante</strong>. As formas mais comuns:</p>
+<ul>
+  <li><strong>Padrões de figuras:</strong> palitos, bolinhas ou ladrilhos que crescem de forma regular; pede-se a figura de número 50 ou 100.</li>
+  <li><strong>Termo distante:</strong> quanto alguém vai guardar, pagar ou produzir no 12º mês, sabendo o primeiro valor e o aumento mensal.</li>
+  <li><strong>Soma de muitos termos:</strong> total de cadeiras de um teatro, quilômetros acumulados em um treino, total depositado em um ano.</li>
+  <li><strong>Contagem:</strong> quantos múltiplos de 7 há entre 100 e 500, quantos postes cabem em um trecho de estrada.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas habilidades. Primeiro, <strong>o “n − 1”</strong>: do 1º ao 12º termo há 11 saltos, não 12. É o erro mais frequente do tema, e os distratores são feitos dele. Segundo, <strong>a soma pela média</strong>: soma = número de termos × (primeiro + último) ÷ 2. Quem domina essas duas resolve quase tudo.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> O que é uma PA</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Uma <strong>progressão aritmética</strong> é uma sequência em que cada termo, a partir do segundo, é o anterior <strong>somado</strong> a uma constante <span class="m"><span class="v">r</span></span>, a <strong>razão</strong>:</p>
+  <p class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub><span class="v">n</span>−1</sub> + <span class="v">r</span> &nbsp;&nbsp;&nbsp;⇔&nbsp;&nbsp;&nbsp; <span class="v">r</span> = <span class="v">a</span><sub>2</sub> − <span class="v">a</span><sub>1</sub> = <span class="v">a</span><sub>3</sub> − <span class="v">a</span><sub>2</sub> = …</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Sequência</th><th>Razão</th><th>Tipo</th></tr></thead>
+  <tbody>
+    <tr><td><span class="m">(5, 8, 11, 14, …)</span></td><td><span class="m"><span class="v">r</span> = 3</span></td><td>crescente (<span class="m"><span class="v">r</span> &gt; 0</span>)</td></tr>
+    <tr><td><span class="m">(40, 34, 28, 22, …)</span></td><td><span class="m"><span class="v">r</span> = −6</span></td><td>decrescente (<span class="m"><span class="v">r</span> &lt; 0</span>)</td></tr>
+    <tr><td><span class="m">(7, 7, 7, …)</span></td><td><span class="m"><span class="v">r</span> = 0</span></td><td>constante</td></tr>
+    <tr><td><span class="m">(1,5; 2; 2,5; 3; …)</span></td><td><span class="m"><span class="v">r</span> = 0,5</span></td><td>crescente: a razão não precisa ser inteira</td></tr>
+    <tr><td><span class="m">(2, 4, 8, 16, …)</span></td><td>não é PA</td><td>as diferenças (2, 4, 8) não são constantes</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Razão é “segundo menos primeiro”</span>
+  <p>Na PA decrescente <span class="m">(40, 34, 28, …)</span>, a razão é <span class="m">34 − 40 = −6</span>, negativa. Calcular “o maior menos o menor” e ficar com <span class="m">+6</span> faz a sequência subir quando deveria descer.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Termo geral: chegar ao termo n sem listar todos</h2>
+<p>Do primeiro termo até o termo de posição <span class="m"><span class="v">n</span></span> há <span class="m"><span class="v">n</span> − 1</span> saltos de tamanho <span class="m"><span class="v">r</span></span>. Daí vem a fórmula central do assunto:</p>
+<div class="eq">
+  <span class="lbl">Termo geral da PA</span>
+  <p class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub>1</sub> + (<span class="v">n</span> − 1) · <span class="v">r</span></p>
+  <p>Versão a partir de qualquer termo conhecido: <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub><span class="v">k</span></sub> + (<span class="v">n</span> − <span class="v">k</span>) · <span class="v">r</span></span>. Do 5º ao 20º termo, por exemplo, são 15 saltos.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 176" role="img" aria-label="Quatro figuras de quadrados de palitos em fila, com 1, 2, 3 e 4 quadrados, usando 4, 7, 10 e 13 palitos: cada quadrado novo acrescenta 3 palitos, então a figura n usa 3n mais 1 palitos">
+  <rect x="30" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <text x="45" y="96" text-anchor="middle" class="svg-num" style="fill:var(--c1)">4</text>
+  <rect x="100" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="130" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <text x="130" y="96" text-anchor="middle" class="svg-num" style="fill:var(--c1)">7</text>
+  <rect x="200" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="230" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="260" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <text x="245" y="96" text-anchor="middle" class="svg-num" style="fill:var(--c1)">10</text>
+  <rect x="330" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="360" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="390" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <rect x="420" y="40" width="30" height="30" style="fill:none;stroke:var(--c1);stroke-width:3;stroke-linecap:round"/>
+  <text x="390" y="96" text-anchor="middle" class="svg-num" style="fill:var(--c1)">13</text>
+  <text x="45" y="26" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">fig. 1</text>
+  <text x="130" y="26" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">fig. 2</text>
+  <text x="245" y="26" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">fig. 3</text>
+  <text x="390" y="26" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">fig. 4</text>
+  <text x="230" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">+3 palitos por quadrado novo</text>
+  <text x="230" y="158" text-anchor="middle" class="svg-num" style="fill:var(--c5);font-size:14px">aₙ = 4 + (n − 1) · 3 = 3n + 1</text>
+</svg>
+<figcaption><b>Um padrão de palitos é uma PA.</b> A primeira figura usa 4 palitos e cada quadrado novo acrescenta 3 (ele aproveita um lado do anterior). Então <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = 4 + (<span class="v">n</span> − 1) · 3 = 3<span class="v">n</span> + 1</span>, e a figura 50 usa <span class="m">151</span> palitos, sem desenhar nenhuma das 49 anteriores.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">A contagem de saltos</span>
+  <p>Pense numa escada: para ir do 1º ao 12º degrau você sobe 11 vezes. Por isso o 12º termo de <span class="m">(50, 65, 80, …)</span> é <span class="m">50 + 11 · 15 = 215</span>, e não <span class="m">50 + 12 · 15</span>. Na dúvida, teste a fórmula com <span class="m"><span class="v">n</span> = 1</span>: ela tem de devolver o próprio <span class="m"><span class="v">a</span><sub>1</sub></span>.</p>
+</div>
+<div class="box def">
+  <span class="tag">Descobrir a razão a partir de dois termos</span>
+  <p>Se <span class="m"><span class="v">a</span><sub>4</sub> = 17</span> e <span class="m"><span class="v">a</span><sub>10</sub> = 41</span>, entre eles há 6 saltos: <span class="m">6<span class="v">r</span> = 41 − 17 = 24</span>, <span class="m"><span class="v">r</span> = 4</span>. E <span class="m"><span class="v">a</span><sub>1</sub> = 17 − 3 · 4 = 5</span>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> PA é função afim nos números naturais</h2>
+<p>Desenvolvendo o termo geral, <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">r</span> · <span class="v">n</span> + (<span class="v">a</span><sub>1</sub> − <span class="v">r</span>)</span>: é uma função afim <span class="m"><span class="v">y</span> = <span class="v">r</span><!----><span class="v">x</span> + <span class="v">b</span></span> calculada só em <span class="m"><span class="v">x</span> = 1, 2, 3, …</span>. A razão faz o papel do coeficiente angular.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 246" role="img" aria-label="Os termos da progressão 5, 8, 11, 14, 17, 20 marcados como pontos isolados no plano, alinhados sobre a reta tracejada y igual a 3n mais 2; a cada passo de 1 em n o valor sobe 3, a razão">
+  <defs>
+    <marker id="m31a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="94.3" y1="24" x2="94.3" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="128.6" y1="24" x2="128.6" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="162.9" y1="24" x2="162.9" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="197.1" y1="24" x2="197.1" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="231.4" y1="24" x2="231.4" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="265.7" y1="24" x2="265.7" y2="220" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="175.5" x2="300" y2="175.5" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="148.7" x2="300" y2="148.7" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="122" x2="300" y2="122" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="95.3" x2="300" y2="95.3" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="68.5" x2="300" y2="68.5" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="60" y1="41.8" x2="300" y2="41.8" style="stroke:var(--rule);stroke-width:1"/>
+  <line x1="54" y1="220" x2="310" y2="220" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m31a)"/>
+  <line x1="60" y1="226" x2="60" y2="14" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m31a)"/>
+  <line x1="94.3" y1="217" x2="94.3" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="94.3" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="128.6" y1="217" x2="128.6" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="128.6" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="162.9" y1="217" x2="162.9" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="162.9" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="197.1" y1="217" x2="197.1" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="197.1" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="231.4" y1="217" x2="231.4" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="231.4" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="265.7" y1="217" x2="265.7" y2="223" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="265.7" y="236" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="57" y1="175.5" x2="63" y2="175.5" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="179.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="57" y1="148.7" x2="63" y2="148.7" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="152.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="57" y1="122" x2="63" y2="122" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="126" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">11</text>
+  <line x1="57" y1="95.3" x2="63" y2="95.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="99.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">14</text>
+  <line x1="57" y1="68.5" x2="63" y2="68.5" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="72.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">17</text>
+  <line x1="57" y1="41.8" x2="63" y2="41.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="53" y="45.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">20</text>
+  <text x="312" y="213" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">n</text>
+  <text x="67" y="20" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">aₙ</text>
+  <polyline points="60,202.2 173.1,114 286.3,25.8" style="fill:none;stroke:var(--c1-line);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <circle cx="94.3" cy="175.5" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="128.6" cy="148.7" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="162.9" cy="122" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="197.1" cy="95.3" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="231.4" cy="68.5" r="4.2" style="fill:var(--c1)"/>
+  <circle cx="265.7" cy="41.8" r="4.2" style="fill:var(--c1)"/>
+  <line x1="128.6" y1="148.7" x2="162.9" y2="148.7" style="stroke:var(--c3);stroke-width:1.8;stroke-linecap:round"/>
+  <line x1="162.9" y1="148.7" x2="162.9" y2="122" style="stroke:var(--c3);stroke-width:1.8;stroke-linecap:round"/>
+  <text x="168.9" y="135.4" class="svg-lbl" style="fill:var(--c3)">r = 3</text>
+  <text x="316" y="70" class="svg-num" style="fill:var(--c1)">aₙ = 5 + (n−1)·3</text>
+  <text x="316" y="94" class="svg-num" style="fill:var(--c1)">   = 3n + 2</text>
+  <text x="316" y="136" class="svg-lbl" style="fill:var(--ink-2)">pontos isolados</text>
+  <text x="316" y="154" class="svg-lbl" style="fill:var(--ink-2)">sobre uma reta</text>
+  <text x="316" y="172" class="svg-lbl" style="fill:var(--ink-2)">de inclinação r</text>
+</svg>
+<figcaption><b>Os termos da PA ficam alinhados.</b> A PA <span class="m">(5, 8, 11, 14, 17, 20)</span> marcada no plano: pontos isolados (só existem para <span class="m"><span class="v">n</span></span> inteiro) sobre a reta <span class="m"><span class="v">y</span> = 3<span class="v">n</span> + 2</span>. A cada passo de 1 na posição, o termo sobe 3, a razão.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Reconhecer uma PA numa tabela</span>
+  <p>Se a tabela mostra valores em intervalos iguais de tempo e as <strong>diferenças</strong> entre valores consecutivos são iguais, o modelo é afim e os valores formam uma PA. Se o que se repete é o <strong>quociente</strong>, o modelo é exponencial e a sequência é uma PG, assunto seguinte.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Propriedades que poupam conta</h2>
+<div class="eq">
+  <span class="lbl">Termo do meio é a média dos vizinhos</span>
+  <p class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="frac"><i><span class="v">a</span><sub><span class="v">n</span>−1</sub> + <span class="v">a</span><sub><span class="v">n</span>+1</sub></i><i>2</i></span></p>
+  <p>Três números <span class="m"><span class="v">a</span>, <span class="v">b</span>, <span class="v">c</span></span> estão em PA (nessa ordem) se e só se <span class="m">2<span class="v">b</span> = <span class="v">a</span> + <span class="v">c</span></span>. Exemplo: <span class="m">(<span class="v">x</span>, 10, 16)</span> é PA quando <span class="m">2 · 10 = <span class="v">x</span> + 16</span>, ou seja, <span class="m"><span class="v">x</span> = 4</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Termos equidistantes dos extremos têm a mesma soma</span>
+  <p class="m"><span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub>2</sub> + <span class="v">a</span><sub><span class="v">n</span>−1</sub> = <span class="v">a</span><sub>3</sub> + <span class="v">a</span><sub><span class="v">n</span>−2</sub> = …</p>
+  <p>Numa PA de 20 termos, <span class="m"><span class="v">a</span><sub>3</sub> + <span class="v">a</span><sub>18</sub> = <span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub>20</sub></span>: os índices somam 21 nos dois casos. Basta conhecer um desses pares para ter a soma da PA inteira.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Notação simétrica para três termos</span>
+  <p>Quando o problema fala de três números em PA com soma conhecida, chame-os de <span class="m"><span class="v">x</span> − <span class="v">r</span></span>, <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">x</span> + <span class="v">r</span></span>. A soma é <span class="m">3<span class="v">x</span></span>, e o <span class="m"><span class="v">r</span></span> some: com soma 36, o termo do meio é 12 na hora. Para os lados de um triângulo retângulo em PA, isso leva direto ao triângulo de lados proporcionais a 3, 4 e 5.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Soma dos n primeiros termos</h2>
+<p>Conta-se que Gauss, ainda menino, somou de 1 a 100 em segundos: juntou o primeiro com o último (<span class="m">1 + 100</span>), o segundo com o penúltimo (<span class="m">2 + 99</span>), e assim por diante. São 50 pares de soma 101, total 5 050. A ideia vale para qualquer PA.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 230" role="img" aria-label="Escada azul de 1 a 6 quadradinhos encaixada com uma escada laranja igual, de cabeça para baixo: juntas formam um retângulo de 6 colunas e 7 linhas, por isso duas vezes a soma de 1 a 6 é 42 e a soma é 21">
+  <rect x="60" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="60" y="136" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="60" y="114" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="60" y="92" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="60" y="70" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="60" y="48" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="60" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="82" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="82" y="136" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="82" y="114" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="82" y="92" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="82" y="70" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="82" y="48" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="82" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="104" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="104" y="136" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="104" y="114" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="104" y="92" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="104" y="70" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="104" y="48" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="104" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="126" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="126" y="136" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="126" y="114" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="126" y="92" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="126" y="70" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="126" y="48" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="126" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="148" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="148" y="136" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="148" y="114" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="148" y="92" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="148" y="70" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="148" y="48" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="148" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="170" y="158" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="136" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="114" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="92" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="70" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="48" width="22" height="22" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="170" y="26" width="22" height="22" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="71" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">1</text>
+  <text x="93" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">2</text>
+  <text x="115" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">3</text>
+  <text x="137" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">4</text>
+  <text x="159" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">5</text>
+  <text x="181" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">6</text>
+  <text x="204" y="107" class="svg-lbl" style="fill:var(--ink-2)">n + 1 = 7</text>
+  <text x="126" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">n = 6 colunas</text>
+  <text x="300" y="50" class="svg-num" style="fill:var(--c1)">1 + 2 + 3 + 4 + 5 + 6</text>
+  <text x="300" y="74" class="svg-num" style="fill:var(--c2)">6 + 5 + 4 + 3 + 2 + 1</text>
+  <text x="300" y="106" class="svg-lbl" style="fill:var(--ink-2)">cada coluna soma 7</text>
+  <text x="300" y="130" class="svg-num" style="fill:var(--c5)">2S = 6 · 7 = 42</text>
+  <text x="300" y="154" class="svg-num" style="fill:var(--c5)">S = 21</text>
+</svg>
+<figcaption><b>Duas escadas formam um retângulo.</b> Somar <span class="m">1 + 2 + … + 6</span> duas vezes, uma em cada sentido, dá 6 colunas que valem 7 cada: <span class="m">2<span class="v">S</span> = 6 · 7</span>. Em geral, <span class="m">2<span class="v">S</span> = <span class="v">n</span> · (<span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub><span class="v">n</span></sub>)</span>.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Soma dos n primeiros termos</span>
+  <p class="m"><span class="v">S</span><sub><span class="v">n</span></sub> = <span class="frac"><i>(<span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub><span class="v">n</span></sub>) · <span class="v">n</span></i><i>2</i></span></p>
+  <p>Leia como “número de termos × média entre o primeiro e o último”. Se <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub></span> não foi dado, calcule-o antes pelo termo geral.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · fileiras de um teatro</span>
+  <p>25 fileiras; a primeira tem 20 cadeiras e cada uma tem 2 a mais que a anterior. Última: <span class="m"><span class="v">a</span><sub>25</sub> = 20 + 24 · 2 = 68</span>. Total:</p>
+  <p class="m"><span class="v">S</span><sub>25</sub> = <span class="frac"><i>(20 + 68) · 25</i><i>2</i></span> = 44 · 25 = 1 100</p>
+</div>
+<div class="box def">
+  <span class="tag">Somas que valem decorar</span>
+  <p>Os <span class="m"><span class="v">n</span></span> primeiros naturais: <span class="m">1 + 2 + … + <span class="v">n</span> = <span class="frac"><i><span class="v">n</span>(<span class="v">n</span> + 1)</i><i>2</i></span></span>. Os <span class="m"><span class="v">n</span></span> primeiros ímpares: <span class="m">1 + 3 + 5 + … = <span class="v">n</span>²</span> (os 10 primeiros ímpares somam 100).</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Interpolação e contagem de termos</h2>
+<p><strong>Interpolar</strong> <span class="m"><span class="v">k</span></span> meios aritméticos entre dois números é inserir <span class="m"><span class="v">k</span></span> termos entre eles formando uma PA. Com os dois extremos, a PA fica com <span class="m"><span class="v">k</span> + 2</span> termos e <span class="m"><span class="v">k</span> + 1</span> saltos.</p>
+<div class="eq">
+  <span class="lbl">Exemplo · postes em uma estrada</span>
+  <p>Entre os postes do km 3 e do km 27 serão instalados 5 postes, todos igualmente espaçados. São 7 postes e 6 intervalos:</p>
+  <p class="m">6<span class="v">r</span> = 27 − 3 = 24 &nbsp;→&nbsp; <span class="v">r</span> = 4 km</p>
+</div>
+<div class="eq">
+  <span class="lbl">Contar termos · múltiplos de 7 entre 100 e 500</span>
+  <p>O primeiro é 105 e o último é 497. Pelo termo geral, <span class="m">497 = 105 + (<span class="v">n</span> − 1) · 7</span>, então <span class="m"><span class="v">n</span> − 1 = 56</span> e <span class="m"><span class="v">n</span> = 57</span>.</p>
+  <p>Atalho: <span class="m"><span class="v">n</span> = <span class="frac"><i>último − primeiro</i><i><span class="v">r</span></i></span> + 1</span>. O “+ 1” conta o primeiro termo, que não é um salto.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Postes e intervalos</span>
+  <p>Numa cerca de 30 m com estacas a cada 3 m, há 10 intervalos e <strong>11</strong> estacas (se as duas pontas têm estaca). Contar intervalos quando se pede objetos, ou o contrário, é o mesmo erro do “n − 1”, agora fora da fórmula.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> PA em contexto: onde ela se esconde</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Por que é PA</th><th>Razão</th></tr></thead>
+  <tbody>
+    <tr><td>Juros simples</td><td>o juro de cada período é o mesmo</td><td><span class="m"><span class="v">C</span> · <span class="v">i</span></span> (R$ 60 ao mês para R$ 2 000 a 3%)</td></tr>
+    <tr><td>Depreciação linear</td><td>o bem perde o mesmo valor por ano</td><td>negativa</td></tr>
+    <tr><td>Calendário</td><td>o mesmo dia da semana se repete a cada 7 dias</td><td>7</td></tr>
+    <tr><td>Treino progressivo</td><td>aumento fixo de distância ou carga</td><td>o aumento diário</td></tr>
+    <tr><td>Padrões de figuras</td><td>cada etapa acrescenta o mesmo número de peças</td><td>peças acrescentadas</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Calendário com PA</span>
+  <p>Se o dia 3 de um mês é uma segunda-feira, as segundas-feiras desse mês são <span class="m">3, 10, 17, 24, 31</span>: PA de razão 7. Para saber o dia da semana de uma data distante, divida a distância em dias por 7 e olhe o resto.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Escreva os três primeiros termos</span>
+  <p>Antes de qualquer fórmula, liste <span class="m"><span class="v">a</span><sub>1</sub></span>, <span class="m"><span class="v">a</span><sub>2</sub></span>, <span class="m"><span class="v">a</span><sub>3</sub></span> a partir do texto. Isso confirma que é PA, dá a razão e serve para testar a fórmula que você montar.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Termo ou soma?</span>
+  <p>“Quanto no 12º mês” pede <span class="m"><span class="v">a</span><sub>12</sub></span>; “quanto ao todo em 12 meses” pede <span class="m"><span class="v">S</span><sub>12</sub></span>. Muitas alternativas trazem as duas respostas; sublinhe a palavra que decide.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Use a média na soma</span>
+  <p>A soma de uma PA é sempre (número de termos) × (termo médio). Com quantidade ímpar de termos, o termo do meio já é a média: os 5 termos <span class="m">(8, 11, 14, 17, 20)</span> somam <span class="m">5 · 14 = 70</span>.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Matemática Financeira</strong></td><td>juros simples</td><td>os montantes mês a mês formam PA de razão <span class="m"><span class="v">C</span> · <span class="v">i</span></span></td></tr>
+    <tr><td><strong>Física</strong></td><td>movimento uniformemente variado</td><td>as velocidades em instantes igualmente espaçados formam PA (razão <span class="m"><span class="v">a</span> · Δ<span class="v">t</span></span>); as distâncias em segundos sucessivos a partir do repouso seguem 1, 3, 5, 7…</td></tr>
+    <tr><td><strong>Química</strong></td><td>séries homólogas</td><td>cada carbono a mais acrescenta <span class="m">CH<sub>2</sub></span>, 14 u de massa molar: uma PA</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>gradiente térmico</td><td>com cerca de 6,5 °C a menos a cada 1 000 m de altitude, as temperaturas formam PA decrescente</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">a₁₂ = a₁ + 12r</span> &nbsp;→&nbsp; <span class="c">a₁ + 11r</span></span><small>Do 1º ao 12º termo há 11 saltos.</small></li>
+  <li><span><span class="x">Sₙ = n(a₁ + aₙ)</span> &nbsp;→&nbsp; <span class="c">n(a₁ + aₙ)/2</span></span><small>A soma usa a média dos extremos.</small></li>
+  <li><span><span class="x">Responder aₙ quando pedem Sₙ</span> &nbsp;→&nbsp; <span class="c">ler “no” × “ao todo”</span></span><small>“No 12º mês” é termo; “em 12 meses” é soma.</small></li>
+  <li><span><span class="x">Razão de (40, 34, 28) = 6</span> &nbsp;→&nbsp; <span class="c">r = −6</span></span><small>Razão é segundo menos primeiro.</small></li>
+  <li><span><span class="x">Múltiplos entre 105 e 497: (497 − 105)/7</span> &nbsp;→&nbsp; <span class="c">+ 1</span></span><small>Conte o primeiro termo.</small></li>
+  <li><span><span class="x">5 meios entre 3 e 27: r = 24/5</span> &nbsp;→&nbsp; <span class="c">r = 24/6</span></span><small>5 meios + 2 extremos = 7 termos, 6 saltos.</small></li>
+  <li><span><span class="x">(2, 4, 8, 16) é PA</span> &nbsp;→&nbsp; <span class="c">é PG</span></span><small>As diferenças não são constantes; os quocientes são.</small></li>
+  <li><span><span class="x">Figura n com 4n palitos</span> &nbsp;→&nbsp; <span class="c">3n + 1</span></span><small>Quadrados vizinhos dividem um lado.</small></li>
+  <li><span><span class="x">Montante do mês n de juros simples com a₁ = C</span> &nbsp;→&nbsp; <span class="c">Mₙ = C + n · Ci</span></span><small>Defina com cuidado o que é o termo 1.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: qual é o primeiro termo, qual é a razão, e o enunciado pede termo ou soma?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Padrão de palitos</span>
+    <p class="enun">Uma criança monta, com palitos de fósforo, uma sequência de figuras. A figura 1 é um quadrado (4 palitos); a figura 2 tem dois quadrados lado a lado, que compartilham um palito (7 palitos); a figura 3 tem três quadrados em fila (10 palitos), e assim por diante. O número de palitos necessários para montar a figura 50 é</p>
+    <ol class="alt"><li>101</li><li>148</li><li>150</li><li>151</li><li>200</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A sequência <span class="m">(4, 7, 10, …)</span> é PA de razão 3. Então <span class="m"><span class="v">a</span><sub>50</sub> = 4 + 49 · 3 = 151</span>. Pela forma simplificada, <span class="m">3 · 50 + 1 = 151</span>.</p>
+      <p>A A usa razão 2. A B usa 49 quadrados: <span class="m">3 · 49 + 1</span>. A C esquece o palito inicial, <span class="m">3 · 50</span>. A E conta 4 palitos por quadrado, ignorando os lados compartilhados.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Termo distante</span>
+    <p class="enun">Para juntar dinheiro, Ana depositou R$ 50,00 em janeiro e decidiu que, a cada mês, depositaria R$ 15,00 a mais do que no mês anterior. O valor que ela vai depositar em dezembro, o 12º mês, é</p>
+    <ol class="alt"><li>R$ 165,00</li><li>R$ 180,00</li><li>R$ 215,00</li><li>R$ 230,00</li><li>R$ 1 590,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m"><span class="v">a</span><sub>12</sub> = 50 + 11 · 15 = 50 + 165 = 215</span>.</p>
+      <p>A A é só o acréscimo acumulado, <span class="m">11 · 15</span>, sem os R$ 50,00 iniciais. A B usa <span class="m">12 · 15</span> e esquece o depósito inicial. A D usa 12 saltos em vez de 11: <span class="m">50 + 12 · 15</span>. A E é a soma dos 12 depósitos, <span class="m">(50 + 215) · 12 ÷ 2</span>, mas o enunciado pede o depósito de dezembro.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Soma das fileiras</span>
+    <p class="enun">Um teatro tem 25 fileiras de cadeiras. A primeira fileira tem 20 cadeiras e cada fileira seguinte tem 2 cadeiras a mais que a anterior. O número total de cadeiras do teatro é</p>
+    <ol class="alt"><li>1 100</li><li>1 125</li><li>1 150</li><li>1 700</li><li>2 200</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Última fileira: <span class="m"><span class="v">a</span><sub>25</sub> = 20 + 24 · 2 = 68</span>. Soma: <span class="m">(20 + 68) · 25 ÷ 2 = 44 · 25 = 1 100</span>.</p>
+      <p>A B usa <span class="m"><span class="v">a</span><sub>25</sub> = 20 + 25 · 2 = 70</span>, com um salto a mais: <span class="m">90 · 25 ÷ 2 = 1 125</span>. A C soma <span class="m">25 · 20</span> aos acréscimos de 2 a 50, como se a primeira fileira também ganhasse 2: <span class="m">500 + 650</span>. A D supõe que todas as fileiras têm 68 cadeiras. A E esquece de dividir por 2.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Interpolação</span>
+    <p class="enun">Em um trecho reto de rodovia, há postes no km 3 e no km 27. A concessionária vai instalar mais 5 postes entre esses dois, de modo que todos os 7 postes fiquem igualmente espaçados. A distância entre dois postes vizinhos será de</p>
+    <ol class="alt"><li>3 km</li><li>3,43 km</li><li>4 km</li><li>4,8 km</li><li>6 km</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Sete postes em fila formam 6 intervalos. A distância total é <span class="m">27 − 3 = 24</span> km, então cada intervalo mede <span class="m">24 ÷ 6 = 4</span> km. Os postes ficam nos km 3, 7, 11, 15, 19, 23 e 27.</p>
+      <p>A A conta 8 intervalos, um a mais que o número de postes: <span class="m">24 ÷ 8</span>. A B divide 24 pelo número de postes, 7. A D divide pelo número de postes novos, 5. A E divide por 4, como se fossem 5 postes no total.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Contagem de múltiplos</span>
+    <p class="enun">Uma gráfica numera ingressos de 100 a 500. Os ingressos cujo número é múltiplo de 7 dão direito a um brinde. A quantidade de ingressos premiados é</p>
+    <ol class="alt"><li>55</li><li>56</li><li>57</li><li>58</li><li>71</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O primeiro múltiplo de 7 a partir de 100 é 105 e o último até 500 é 497. Eles formam PA de razão 7: <span class="m"><span class="v">n</span> = (497 − 105) ÷ 7 + 1 = 56 + 1 = 57</span>.</p>
+      <p>A B esquece o “+ 1”, contando saltos em vez de termos. A A exclui também o 497. A D começa a contar do 98, que é menor que 100. A E conta todos os múltiplos de 7 de 7 a 497, inclusive os menores que 100.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Três termos e Pitágoras</span>
+    <p class="enun">Um terreno tem a forma de um triângulo retângulo cujos lados, em metros, formam uma progressão aritmética. O perímetro do terreno é 36 m. A área do terreno, em metros quadrados, é</p>
+    <ol class="alt"><li>36</li><li>54</li><li>67,5</li><li>72</li><li>108</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Lados <span class="m"><span class="v">x</span> − <span class="v">r</span></span>, <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">x</span> + <span class="v">r</span></span>: a soma <span class="m">3<span class="v">x</span> = 36</span> dá <span class="m"><span class="v">x</span> = 12</span>. A hipotenusa é o maior lado, <span class="m">12 + <span class="v">r</span></span>:</p>
+      <p class="m">(12 + <span class="v">r</span>)² = 12² + (12 − <span class="v">r</span>)² &nbsp;→&nbsp; 48<span class="v">r</span> = 144 &nbsp;→&nbsp; <span class="v">r</span> = 3</p>
+      <p>Os lados são 9, 12 e 15, e a área é <span class="m">9 · 12 ÷ 2 = 54</span> m².</p>
+      <p>A A confunde área com perímetro. A C usa a hipotenusa como cateto: <span class="m">9 · 15 ÷ 2</span>. A D toma o termo do meio como os dois catetos: <span class="m">12 · 12 ÷ 2</span>. A E esquece de dividir por 2.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Juros simples como PA</span>
+    <p class="enun">Um capital de R$ 2 000,00 foi aplicado a juros simples de 3% ao mês. Os montantes ao fim de cada mês formam uma progressão aritmética. O montante atinge R$ 3 080,00 ao fim do mês de número</p>
+    <ol class="alt"><li>17</li><li>18</li><li>19</li><li>36</li><li>51</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O juro mensal é <span class="m">0,03 · 2 000 = 60</span>. Ao fim do mês <span class="m"><span class="v">n</span></span>, o montante é <span class="m">2 000 + 60<span class="v">n</span></span>. Igualando: <span class="m">60<span class="v">n</span> = 1 080</span>, <span class="m"><span class="v">n</span> = 18</span>.</p>
+      <p>A A parte do montante do 1º mês, 2 060, e divide <span class="m">1 020</span> por 60, esquecendo de somar 1. A C trata 2 000 como o termo 1 da PA e usa <span class="m">2 000 + (<span class="v">n</span> − 1) · 60</span>: chega a 19, mas 2 000 é o valor no instante zero, não ao fim do 1º mês. A D usa juro de R$ 30,00 ao mês. A E divide o montante inteiro por 60.</p>
+      <p><strong>Conferência:</strong> 18 meses a R$ 60,00 dão R$ 1 080,00 de juros.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Distância acumulada</span>
+    <p class="enun">Um atleta iniciante correu 2 km no primeiro dia de treino e, a cada dia seguinte, correu 0,5 km a mais que no dia anterior. Ao fim dos 12 primeiros dias de treino, a distância total percorrida por ele, em quilômetros, foi</p>
+    <ol class="alt"><li>45</li><li>57</li><li>60</li><li>90</li><li>114</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>No 12º dia: <span class="m"><span class="v">a</span><sub>12</sub> = 2 + 11 · 0,5 = 7,5</span> km. Total: <span class="m">(2 + 7,5) · 12 ÷ 2 = 9,5 · 6 = 57</span> km.</p>
+      <p>A A esquece o primeiro termo na soma: <span class="m">7,5 · 12 ÷ 2</span>. A C usa <span class="m"><span class="v">a</span><sub>12</sub> = 2 + 12 · 0,5 = 8</span>, com um salto a mais. A D multiplica o último dia por 12, como se ele tivesse corrido 7,5 km todos os dias. A E esquece de dividir por 2.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Termos equidistantes</span>
+    <p class="enun">Em uma progressão aritmética de 20 termos, a soma do 3º com o 18º termo é igual a 50. A soma de todos os 20 termos dessa progressão é</p>
+    <ol class="alt"><li>250</li><li>450</li><li>475</li><li>500</li><li>1 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Os índices 3 e 18 somam 21, como 1 e 20: <span class="m"><span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub>20</sub> = <span class="v">a</span><sub>3</sub> + <span class="v">a</span><sub>18</sub> = 50</span>. Logo <span class="m"><span class="v">S</span><sub>20</sub> = 50 · 20 ÷ 2 = 500</span>. Não é preciso descobrir <span class="m"><span class="v">a</span><sub>1</sub></span> nem <span class="m"><span class="v">r</span></span>.</p>
+      <p>A A divide por 2 duas vezes. A B usa 18 termos, a C usa 19: erros de contagem. A E esquece de dividir por 2.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço uma PA pela diferença constante e calculo a razão como segundo menos primeiro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso <span class="m"><span class="v">a</span><sub><span class="v">n</span></sub> = <span class="v">a</span><sub>1</sub> + (<span class="v">n</span> − 1)<span class="v">r</span></span> explicando o porquê do <span class="m"><span class="v">n</span> − 1</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a razão a partir de dois termos quaisquer</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Transformo um padrão de figuras em termo geral</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Relaciono a PA com a função afim e a razão com a inclinação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso a média dos vizinhos para achar um termo desconhecido</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo três termos como <span class="m"><span class="v">x</span> − <span class="v">r</span>, <span class="v">x</span>, <span class="v">x</span> + <span class="v">r</span></span> quando a soma é dada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico a soma <span class="m"><span class="v">S</span><sub><span class="v">n</span></sub> = (<span class="v">a</span><sub>1</sub> + <span class="v">a</span><sub><span class="v">n</span></sub>)<span class="v">n</span>/2</span> e explico a ideia de Gauss</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso a propriedade dos termos equidistantes para somar sem achar a razão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpolo meios aritméticos contando corretamente termos e saltos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Conto múltiplos em um intervalo com o “+ 1”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo no enunciado quando se pede o termo e quando se pede a soma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço PA em juros simples, calendários e treinos progressivos</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos dez de contexto (padrões, cotidiano, contagem). Depois siga para <strong>Progressão geométrica (PG) e soma dos infinitos termos</strong>, em que o crescimento passa a ser por multiplicação.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>34 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-31-progressao-aritmetica.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-31";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

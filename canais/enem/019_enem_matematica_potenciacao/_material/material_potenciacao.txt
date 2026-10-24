@@ -1,0 +1,305 @@
+Potenciação e Radiciação
+Matemática › Matemática Básica e Proporcionalidade › Assunto 4 de 12
+Potenciação, radiciação e propriedades
+Abre a semana 2 e é a ferramenta mais reaproveitada da prova inteira: notação científica, juros compostos, Pitágoras, áreas, meia-vida, pH, escala Richter — todas dependem do que está nesta página.
+Semana
+2 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Operações · Fatoração em primos
+Destrava
+Notação científica, logaritmos, funções, geometria
+Neste assunto
+01 O que o ENEM cobra aqui
+Potência e raiz quase nunca são o tema de uma questão. São a linguagem em que outras questões estão escritas — e quem não lê essa linguagem trava antes de começar a pensar no problema.
+Onde elas aparecem, na ordem de frequência:
+Notação científica — população, distâncias, massas, verbas. É o próximo assunto do cronograma e depende inteiramente daqui.
+Geometria — Pitágoras, áreas, volumes. A raiz quadrada é onipresente.
+Juros compostos e crescimento — M = C(1+i)^t é uma potência.
+Logaritmos, pH, Richter, decibéis — o logaritmo é a pergunta inversa da potência.
+Física e Química — meia-vida, concentração, energia, ordens de grandeza.
+O que rende mais aqui
+As sete propriedades da seção 03, sabidas a ponto de aplicar sem pensar, e a simplificação de radicais da seção 07. O resto é apoio. Se o tempo apertar, garanta essas duas.
+02 Potenciação e os casos especiais
+Definição
+a^n = a · a · … · a (n fatores)
+a é a base, n é o expoente. Ex.: 2^5 = 2·2·2·2·2 = 32.
+O erro de partida
+2^3 não é 2 · 3 = 6. É 2 · 2 · 2 = 8. Parece elementar, mas sob pressão de tempo esse deslize acontece — e a alternativa errada costuma estar lá esperando.
+Os casos que valem decorar
+ | Caso | Resultado | Exemplo
+ | a^1 | O próprio a | 7^1 = 7
+ | a^0 | 1, para qualquer a ≠ 0 | 99^0 = 1
+ | 1^n | Sempre 1 | 1^(500) = 1
+ | a^(−n) | (1/a^n) — inverte a base | 2^(−3) = (1/8)
+ | ((a/b))^(−n) | ((b/a))^n — vira a fração de cabeça para baixo | ((2/3))^(−2) = (9/4)
+Expoente negativo não significa resultado negativo
+2^(−3) = (1/8), que é positivo. O sinal do expoente manda inverter a base, não trocar o sinal da resposta. Confundir isso é dos erros mais frequentes da prova.
+Sinal do resultado quando a base é negativa
+Expoente par → positivo: (−2)^4 = 16
+Expoente ímpar → negativo: (−2)^3 = −8
+E a distinção do parêntese: −3^2 = −9 (−3)^2 = 9
+03 As sete propriedades da potenciação
+Estas sete resolvem qualquer expressão da prova. Vale conhecê-las a ponto de aplicar sem parar para pensar.
+ | # | Propriedade | Em palavras | Exemplo
+ | 1 | a^m · a^n = a^(m+n) | Mesma base no produto: soma expoentes | 2^3·2^4 = 2^7
+ | 2 | a^m ÷ a^n = a^(m−n) | Mesma base no quociente: subtrai | 2^7÷2^3 = 2^4
+ | 3 | (a^m)^n = a^(m·n) | Potência de potência: multiplica | (2^3)^2 = 2^6
+ | 4 | (a·b)^n = a^n·b^n | O expoente distribui no produto | (2·5)^3 = 2^3·5^3
+ | 5 | ((a/b))^n = (a^n/b^n) | E no quociente também | ((2/3))^3 = (8/27)
+ | 6 | a^0 = 1 | Qualquer base não nula | 5^0 = 1
+ | 7 | a^(−n) = (1/a^n) | Expoente negativo inverte | 3^(−2) = (1/9)
+A condição que ninguém lê
+As propriedades 1 e 2 exigem a mesma base. As propriedades 4 e 5 exigem o mesmo expoente. Fora dessas condições, elas não valem.
+Por isso o primeiro movimento em toda expressão é colocar tudo na mesma base: se aparecem 2, 4, 8, 16 e 32, escreva todos como potência de 2.
+Três coisas que não existem
+a^m + a^n ≠ a^(m+n) · (a + b)^2 ≠ a^2 + b^2 · (2^3)^2 ≠ 2^(3^2)
+A regra de somar expoentes vale só no produto. Na soma, não há propriedade nenhuma.
+E cuidado com a torre: (2^3)^2 = 2^6 = 64, mas 2^(3^2) = 2^9 = 512 — a torre resolve de cima para baixo.
+Na dúvida, teste com números pequenos
+Não lembra se uma propriedade existe? Substitua por 2 e 3 e confira. Leva cinco segundos e resolve a dúvida com certeza — muito melhor do que apostar.
+04 Potências de base 10
+Merecem seção própria porque estruturam a notação científica, as unidades de medida e as ordens de grandeza.
+10^1 = 10 · 10^2 = 100 · 10^3 = 1 000 · 10^6 = 1 000 000
+10^(−1) = 0,1 · 10^(−2) = 0,01 · 10^(−3) = 0,001
+A leitura direta: 10^n é 1 seguido de n zeros. E 10^(−n) tem n casas decimais, com o 1 na última.
+Multiplicar potências de 10 é só somar expoentes
+(3·10^5) · (2·10^(−8)) = 6 · 10^(−3)
+Multiplica-se a parte numérica e somam-se os expoentes. É a propriedade 1 aplicada — nada de novo, só a base mais útil da prova.
+05 Radiciação: a operação inversa
+Definição
+√[n](a) = b ⟺ b^n = a
+O n é o índice, o a é o radicando. Índice 2 não se escreve: √(9) significa raiz quadrada.
+Perguntar √(81) é perguntar: que número elevado ao quadrado dá 81?
+Quando a raiz existe e quando não existe
+ | Índice | Radicando | Nos reais | Exemplo
+ | Par | Positivo | Existe | √(16) = 4
+ | Par | Negativo | Não existe | √(−4) ✗
+ | Ímpar | Positivo | Existe | √[3](8) = 2
+ | Ímpar | Negativo | Existe, negativa | √[3](−8) = −2
+A razão é simples: nenhum número real ao quadrado dá negativo, mas ao cubo dá — (−2)^3 = −8.
+A sutileza que aparece em questão
+√(a^2) = |a| e não simplesmente a
+Se a = −5, então √((−5)^2) = √(25) = 5 — positivo. A raiz de índice par sempre devolve o valor sem sinal.
+Em índice ímpar não há módulo: √[3](a^3) = a, com o sinal preservado.
+06 Propriedades da radiciação
+As que valem
+√(a·b) = √(a) · √(b) √(ab) = (√(a)/√(b))
+(√(a))^2 = a √(√(a)) — raiz de raiz: multiplicam-se os índices
+Exemplo da última: √(√[3](64)) = √[6](64) = 2, porque 2^6 = 64.
+O caminho de ida tem dois pontos de partida; o de volta tem um só destino. Tanto −5 quanto +5 elevados ao quadrado dão 25, mas a raiz quadrada é definida para devolver apenas o valor não negativo. Em índice ímpar isso não acontece, e o sinal se conserva.
+Simplificar índice e expoente
+Dividindo índice e expoente pelo mesmo número, o valor não muda:
+√[6](a^2) = √[3](a) · √[4](4) = √[4](2^2) = √(2)
+A propriedade que não existe
+√(a + b) ≠ √(a) + √(b)
+Teste: √(9 + 16) = √(25) = 5, mas √(9) + √(16) = 3 + 4 = 7. A raiz distribui sobre produto e quociente, nunca sobre soma ou diferença.
+07 Simplificar radicais
+Tirar de dentro da raiz tudo que sai. É o passo que transforma alternativas aparentemente diferentes em iguais.
+O método
+Fatore o radicando procurando o maior quadrado perfeito que o divide (ou cubo perfeito, se o índice for 3). Separe e extraia.
+√(50) = √(25 · 2) = √(25) · √(2) = 5√(2)
+√(72) = √(36 · 2) = 6√(2)
+√(180) = √(36 · 5) = 6√(5)
+√[3](54) = √[3](27 · 2) = 3√[3](2)
+Se o quadrado perfeito não saltar aos olhos
+Fatore em primos e agrupe de dois em dois (ou de três em três, para índice 3):
+180 = 2^2 · 3^2 · 5 → sai um 2 e um 3 → 6√(5)
+Cada par de fatores iguais vira um fator único fora da raiz. É o assunto de fatoração da semana passada trabalhando aqui.
+08 Operações com radicais
+Soma e subtração: só entre semelhantes
+Radicais semelhantes têm mesmo índice e mesmo radicando. Só esses se somam, e a conta é feita nos coeficientes:
+2√(3) + 5√(3) = 7√(3)
+O que não se soma
+√(2) + √(3)
+Radicandos diferentes não têm o que somar — a expressão já está na forma final. E jamais 2√(3) + 3√(2) = 5√(5): isso não existe.
+Simplifique antes de decidir que não dá
+Radicais que parecem diferentes muitas vezes viram semelhantes depois de simplificados:
+√(50) + √(8) − √(18) = 5√(2) + 2√(2) − 3√(2) = 4√(2)
+Sem simplificar, pareceriam três radicais incompatíveis. Simplificar é sempre o primeiro passo.
+Multiplicação e divisão de mesmo índice
+√(3) · √(12) = √(36) = 6 · (√(18)/√(2)) = √(9) = 3
+Conserva o índice e opera os radicandos. Com índices diferentes, converta para expoente fracionário (seção 10).
+09 Racionalização
+É reescrever a fração sem raiz no denominador, mantendo o valor. A prova cobra porque as alternativas costumam vir nessa forma — sua resposta pode estar certa e “não aparecer” na lista.
+Caso 1 — uma raiz quadrada sozinha
+(1/√(2)) = (1/√(2)) · (√(2)/√(2)) = (√(2)/2)
+Multiplica-se em cima e embaixo pela própria raiz. Como √(2)·√(2) = 2, o denominador fica inteiro.
+Caso 2 — um binômio com raiz: usa-se o conjugado
+(6/√(5) − √(2)) · (√(5) + √(2)/√(5) + √(2)) = (6(√(5) + √(2))/5 − 2) = 2√(5) + 2√(2)
+O que é o conjugado
+O mesmo binômio com o sinal do meio trocado: o conjugado de √(5) − √(2) é √(5) + √(2).
+Funciona porque o produto vira diferença de quadrados — (x−y)(x+y) = x^2−y^2 — e o quadrado desmancha a raiz.
+10 Expoente fracionário: a ponte
+Esta é a ideia mais poderosa da página. Toda raiz pode virar potência — e aí as sete propriedades passam a valer também para radicais.
+A conversão
+a^(m/n) = √[n](a^m)
+O denominador do expoente vira o índice da raiz. O numerador vira o expoente do radicando.
+√(2) = 2^(1/2) · √[3](5) = 5^(1/3) · √[3](8^2) = 8^(2/3) = 4
+Uso 1: multiplicar raízes de índices diferentes
+√(2) · √[3](2) = 2^(1/2) · 2^(1/3) = 2^(5/6) = √[6](2^5)
+Sem a conversão, não haveria como multiplicar índices diferentes.
+Uso 2: comparar raízes de índices diferentes
+Reduza tudo ao mesmo índice, usando o MMC dos índices. Comparar √(2), √[3](3) e √[6](10) — o MMC de 2, 3 e 6 é 6:
+√(2) = 2^(3/6) = √[6](8) √[3](3) = 3^(2/6) = √[6](9) √[6](10)
+Com o mesmo índice, basta comparar os radicandos: 8 < 9 < 10
+11 Os erros que mais custam pontos
+2³ = 6 → 2³ = 8Potência é multiplicar a base por ela mesma, não pelo expoente.
+a⁰ = 0 → a⁰ = 1Vale para qualquer base diferente de zero.
+2⁻³ é negativo → 2⁻³ = 1/8, positivoExpoente negativo inverte a base; não mexe no sinal do resultado.
+−3² = 9 → −3² = −9Sem parêntese, o expoente não pega o sinal. Só (−3)² = 9.
+aᵐ + aⁿ = aᵐ⁺ⁿ → não existeSomar expoentes vale só no produto.
+(2³)² = 2⁵ → 2⁶Potência de potência multiplica os expoentes, não soma.
+√(a+b) = √a + √b → não existeRaiz distribui sobre produto e quociente, nunca sobre soma.
+√(a²) = a → √(a²) = |a|Índice par sempre devolve valor sem sinal: √((−5)²) = 5.
+√−4 = −2 → não existe nos reaisÍndice par de radicando negativo não tem raiz real. Já ³√−8 = −2 existe.
+2√3 + 3√2 = 5√5 → não se somamSó radicais semelhantes — mesmo índice e mesmo radicando — se somam.
+12 Questões comentadas
+Nove questões no formato da prova. Na dúvida sobre uma propriedade, teste com números pequenos antes de aplicar — o hábito vale mais que a memória.
+Questão 1 · Mesma base
+Simplificando a expressão (2^5 · 4^3/8^2), obtém-se
+8
+16
+32
+64
+128
+Ver resolução
+O movimento que resolve: tudo na mesma base. Como 4 = 2^2 e 8 = 2^3:
+4^3 = (2^2)^3 = 2^6 8^2 = (2^3)^2 = 2^6
+(2^5 · 2^6/2^6) = (2^(11)/2^6) = 2^5 = 32
+Sem passar para a mesma base, nenhuma propriedade se aplica — é sempre o primeiro passo.
+Alternativa C
+Questão 2 · Potências de 10 em contexto
+Uma cidade consome 7,2 · 10^9 kWh de energia elétrica por ano e tem 1,2 · 10^6 habitantes. O consumo médio anual por habitante, em kWh, é de
+6 · 10^2
+6 · 10^3
+6 · 10^4
+8,4 · 10^3
+8,64 · 10^(15)
+Ver resolução
+Consumo por habitante é uma divisão. Divide-se a parte numérica e subtraem-se os expoentes:
+(7,2 · 10^9/1,2 · 10^6) = (7,2/1,2) · 10^(9−6) = 6 · 10^3
+São 6 000 kWh por habitante ao ano. A alternativa E é de quem multiplicou em vez de dividir.
+Alternativa B
+Questão 3 · Expoentes negativos
+O valor da expressão ((2/3))^(−2) + ((1/2))^(−3) é
+−(41/4)
+(17/36)
+(25/4)
+(41/4)
+12
+Ver resolução
+Expoente negativo inverte a fração e o expoente passa a positivo:
+((2/3))^(−2) = ((3/2))^2 = (9/4)
+((1/2))^(−3) = ((2/1))^3 = 8
+(9/4) + 8 = (9/4) + (32/4) = (41/4)
+A alternativa A é de quem achou que o expoente negativo torna o resultado negativo.
+Alternativa D
+Questão 4 · Simplificação de radical
+A forma simplificada de √(180) é
+3√(20)
+6√(5)
+9√(2)
+2√(45)
+18√(10)
+Ver resolução
+Procure o maior quadrado perfeito que divide 180:
+√(180) = √(36 · 5) = √(36) · √(5) = 6√(5)
+Pela fatoração, se o 36 não saltar aos olhos:
+180 = 2^2 · 3^2 · 5 → sai um 2 e um 3 → 6√(5)
+A alternativa A e a D estão corretas como valor, mas não estão totalmente simplificadas — ainda dá para tirar fator de dentro da raiz. A prova sempre pede a forma final.
+Alternativa B
+Questão 5 · Soma de radicais
+O valor de √(50) + √(8) − √(18) é
+√(40)
+2√(2)
+4√(2)
+10√(2)
+4√(10)
+Ver resolução
+Radicandos diferentes não se somam — mas simplifique antes de concluir isso:
+√(50) = 5√(2) √(8) = 2√(2) √(18) = 3√(2)
+Agora os três são semelhantes, e a conta é só nos coeficientes:
+5√(2) + 2√(2) − 3√(2) = 4√(2)
+A alternativa A é de quem somou os radicandos: 50 + 8 − 18 = 40 — o erro mais comum aqui.
+Alternativa C
+Questão 6 · Racionalização com conjugado
+Racionalizando o denominador de (6/√(5) − √(2)), obtém-se
+2√(5) + 2√(2)
+6√(5) − 6√(2)
+(√(5) + √(2)/3)
+2√(3)
+√(5) + √(2)
+Ver resolução
+Multiplique numerador e denominador pelo conjugado √(5) + √(2):
+(6(√(5) + √(2))/(√(5) − √(2))(√(5) + √(2)))
+O denominador é uma diferença de quadrados, e os quadrados desmancham as raízes:
+(√(5))^2 − (√(2))^2 = 5 − 2 = 3
+(6(√(5) + √(2))/3) = 2(√(5) + √(2)) = 2√(5) + 2√(2)
+Alternativa A
+Questão 7 · Comparar índices diferentes
+Colocando os números √(2), √[3](3) e √[6](10) em ordem crescente, obtém-se
+√(2) < √[3](3) < √[6](10)
+√[6](10) < √[3](3) < √(2)
+√[3](3) < √(2) < √[6](10)
+√(2) < √[6](10) < √[3](3)
+√[6](10) < √(2) < √[3](3)
+Ver resolução
+Índices diferentes não se comparam direto. Reduza todos ao mesmo índice — o MMC de 2, 3 e 6 é 6:
+√(2) = 2^(1/2) = 2^(3/6) = √[6](8)
+√[3](3) = 3^(1/3) = 3^(2/6) = √[6](9)
+Com o mesmo índice, compara-se apenas o radicando: 8 < 9 < 10.
+Repare no resultado contraintuitivo: √[6](10) tem o maior radicando e o maior índice, e ainda assim é o maior dos três.
+Alternativa A
+Questão 8 · Índice par e índice ímpar
+Para x = −7, o valor de √(x^2) + √[3](x^3) é
+−14
+−7
+0
+7
+14
+Ver resolução
+As duas raízes se comportam de modo diferente, e é exatamente isso que a questão testa.
+Índice par devolve o módulo, sempre positivo:
+√((−7)^2) = √(49) = 7
+Índice ímpar conserva o sinal:
+√[3]((−7)^3) = √[3](−343) = −7
+7 + (−7) = 0
+Quem aplicou √(x^2) = x obteve −14, a alternativa A.
+Alternativa C
+Questão 9 · Potência de um produto
+Um cubo tem aresta medindo 2 · 10^(−2) metro. O volume desse cubo, em metros cúbicos, é
+6 · 10^(−6)
+8 · 10^(−6)
+8 · 10^(−5)
+2 · 10^(−6)
+6 · 10^(−2)
+Ver resolução
+Volume do cubo é a aresta ao cubo. O expoente externo age nos dois fatores:
+V = (2 · 10^(−2))^3 = 2^3 · (10^(−2))^3
+= 8 · 10^(−6) m^3
+Dois deslizes possíveis, ambos com alternativa reservada: elevar só o 10 e deixar o 2 (alternativa D), ou multiplicar 2·3 = 6 em vez de 2^3 = 8 (alternativa A).
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Sei que a^0 = 1 e que expoente negativo inverte a base, sem mudar o sinal
+Determino o sinal de uma potência de base negativa pelo expoente par ou ímpar
+Distingo −3^2 de (−3)^2 sem hesitar
+Aplico as sete propriedades e sei que 1 e 2 exigem mesma base; 4 e 5, mesmo expoente
+Meu primeiro movimento numa expressão é colocar tudo na mesma base
+Sei que soma de potências não tem propriedade nenhuma
+Opero com potências de 10 somando e subtraindo expoentes
+Sei quando uma raiz existe nos reais e quando não existe
+Lembro que √(a^2) = |a|, mas que índice ímpar conserva o sinal
+Simplifico qualquer radical extraindo os quadrados perfeitos
+Só somo radicais semelhantes, e simplifico antes de decidir que não dá
+Racionalizo denominador com raiz simples e com conjugado
+Converto raiz em expoente fracionário para multiplicar e comparar índices diferentes
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de simplificação de radicais e de expressões com mesma base — são as que mais aparecem embutidas em outras questões. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 49 cartões deste assunto no arquivo ENEM-Matematica-04-potenciacao-radiciacao.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

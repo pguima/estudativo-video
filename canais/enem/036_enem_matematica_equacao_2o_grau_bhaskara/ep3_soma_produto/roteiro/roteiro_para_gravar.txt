@@ -1,0 +1,63 @@
+Uma bola passa pelos quinze metros de altura duas vezes: uma subindo e outra descendo. Descobrir esses dois instantes leva três segundos, sem Bhaskara, se você conhecer o jogo dos dois números.
+
+Ao final, você vai achar raízes de cabeça, saber os sinais delas sem resolver e montar a equação a partir das raízes.
+
+Antes, dois lembretes rápidos. Da série de Expressões Algébricas: x ao quadrado, mais cinco x, mais seis é x mais dois, vezes, x mais três: dois e três somam cinco e multiplicam seis. E do episódio um, o produto nulo: se uma multiplicação deu zero, alguém ali é zero.
+
+Uma adivinhação. Pensei em dois números. Somados, dão sete. Multiplicados, dão dez. Quais são? Dois e cinco! Dois mais cinco, sete; dois vezes cinco, dez.
+
+E a equação? Olhe x ao quadrado, menos sete x, mais dez, igual a zero. Troque o x por dois: quatro, menos catorze, mais dez: zero. Por cinco, também zero. Os dois números do jogo são as raízes da equação.
+
+Coincidência? Não. Chame as raízes de x um e x dois. A soma das raízes é x um mais x dois. Ela vale menos b sobre a. O produto das raízes é x um vezes x dois. Ele vale c sobre a. Essas duas fórmulas têm nome: relações de Girard.
+
+E quando o a é um? A equação fica x ao quadrado, menos S x, mais P, igual a zero. Em x ao quadrado, menos sete x, mais dez: o sinal do meio vem trocado. Na equação aparece menos sete, mas a soma é mais sete. E o último número é o produto: dez.
+
+Atalho: comece pelo produto. Pares que dão dez: um e dez, dois e cinco. Qual soma sete? Dois e cinco. E confira: multiplique e some.
+
+E com sinais negativos? x ao quadrado, mais x, menos doze. A soma é menos um, o sinal do meio trocado. O produto é menos doze. Dois números que multiplicam menos doze e somam menos um: três e menos quatro.
+
+x ao quadrado, mais oito x, mais quinze. Soma menos oito, produto quinze. Produto positivo e soma negativa: menos três e menos cinco.
+
+E quando o a não é um? Dois x ao quadrado, menos sete x, mais três. Soma, menos b sobre a: sete meios. Produto, c sobre a: três meios. As raízes: três e um meio. Some e multiplique: bate.
+
+E dá para saber os sinais das raízes sem resolver? Dá. O produto entrega os sinais. Produto negativo: um número positivo vezes um negativo. Uma raiz de cada lado do zero.
+
+Produto positivo: as duas do mesmo lado. E a soma diz qual. Soma positiva: as duas positivas. Soma negativa: as duas negativas.
+
+Atalho de prova: se as raízes têm sinais opostos, risque toda alternativa com as duas positivas. Antes de qualquer conta.
+
+E se a questão der as raízes e pedir a equação? Raízes três e menos cinco. Soma: menos dois. Produto: menos quinze. Encaixe em x ao quadrado, menos S x, mais P: menos, menos dois x, vira mais dois x. Resultado: x ao quadrado, mais dois x, menos quinze, igual a zero.
+
+Existe outro caminho? A forma fatorada: escrever a equação como multiplicação, usando as raízes. É a, vezes, x menos x um, vezes, x menos x dois. Em dois x ao quadrado, menos sete x, mais três: dois, vezes, x menos três, vezes, x menos um meio. O dois entra no último parêntese: x menos três, vezes, dois x menos um. Pelo produto nulo: três e um meio.
+
+E quando o jogo não funciona? x ao quadrado, menos três x, menos cinco: soma três, produto menos cinco. Cinco e menos um somam quatro; menos cinco e um, menos quatro. Nenhum par dá três. Se o par não aparece em poucos segundos, vá para Bhaskara.
+
+Sua vez. Ache de cabeça as raízes de x ao quadrado, menos x, menos vinte, igual a zero. E monte a equação de raízes dois e seis. Pause e tente.
+
+Vamos juntos. Soma um, o sinal do meio trocado; produto menos vinte: sinais opostos. Cinco e menos quatro. Agora, raízes dois e seis: soma oito, produto doze. x ao quadrado, menos oito x, mais doze, igual a zero.
+
+Vamos guardar em três frases. Um: soma é menos b sobre a; produto é c sobre a. Dois: dois números de soma S e produto P. Três: raízes dadas: x ao quadrado, menos S x, mais P, igual a zero.
+
+Agora, os três erros clássicos. Primeiro: soma das raízes igual a b sobre a. Em x ao quadrado, menos sete x, mais dez, daria menos sete. Parece certo: o número escrito é o menos sete. Mas a soma é menos b sobre a: mais sete.
+
+Segundo: montar a equação com mais S x. Raízes dois e seis viram x ao quadrado, mais oito x, mais doze. Parece certo: a soma é mesmo oito. Mas essa equação tem raízes menos dois e menos seis. O certo é menos S x: menos oito x.
+
+Terceiro: insistir no jogo quando as raízes não são inteiras, como em x ao quadrado, menos seis x, mais quatro. Parece certo: o jogo funcionou nos outros exemplos. Mas um e quatro somam cinco, dois e dois somam quatro. Nenhum par serve: Bhaskara, e as raízes são três mais ou menos raiz de cinco.
+
+Uma questão do nosso material. Eu faço com você. Um professor pediu aos alunos uma equação do segundo grau, com coeficiente de x ao quadrado igual a um, cujas raízes fossem três e menos cinco. A equação correta é: A: x ao quadrado, menos dois x, menos quinze. B: x ao quadrado, mais dois x, mais quinze. C: x ao quadrado, menos oito x, mais quinze. D: x ao quadrado, mais dois x, menos quinze. E: x ao quadrado, mais quinze x, menos dois. Pause o vídeo e tente.
+
+Vamos lá. É o caminho inverso: soma menos dois, produto menos quinze. x ao quadrado, menos S x, mais P: x ao quadrado, mais dois x, menos quinze. Confira pela forma fatorada: x menos três, vezes, x mais cinco dá exatamente isso. Letra D!
+
+E as erradas? A A usa mais S x: as raízes dela são menos três e cinco. A B erra o sinal do produto: não tem raiz real. A C usa as raízes três e cinco, sem o menos. E a E troca a soma pelo produto.
+
+E a bola do começo da aula. Você faz. Uma bola é lançada verticalmente para cima, e sua altura, em metros, t segundos após o lançamento, é dada por h igual a vinte t, menos cinco t ao quadrado. Durante quanto tempo a bola permanece acima de quinze metros de altura? A: um segundo. B: dois segundos. C: três segundos. D: quatro segundos. E: nenhum: a bola não chega a quinze metros. Pause o vídeo e resolva.
+
+Vamos conferir. Iguale a altura a quinze: vinte t, menos cinco t ao quadrado, igual a quinze. Arrume e troque os sinais: cinco t ao quadrado, menos vinte t, mais quinze, igual a zero. Divida tudo por cinco: t ao quadrado, menos quatro t, mais três. O jogo: soma quatro, produto três. Um e três. Passa por quinze metros subindo, em um segundo, e descendo, em três. Fica acima de um a três: dois segundos. Letra B!
+
+Teste t igual a dois: vinte metros, acima de quinze. A A e a C respondem um instante só, não o intervalo. A D é o voo inteiro: a altura volta a zero em quatro segundos. E a E é falsa: em dois segundos, a bola está a vinte metros. E a altura máxima? Fica para a série de Função Quadrática.
+
+Para fechar, as mesmas três frases. Um: soma é menos b sobre a; produto é c sobre a. Dois: dois números de soma S e produto P. Três: raízes dadas: x ao quadrado, menos S x, mais P, igual a zero.
+
+Uma calçada em volta de um jardim dá uma equação com raízes dois e menos dez. A resposta é dois, é dez ou é menos dez? Próximo episódio: do texto à equação.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você achou o dois e o cinco antes de mim? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

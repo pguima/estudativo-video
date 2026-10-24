@@ -1,0 +1,63 @@
+Resto da divisão de dois x ao cubo, menos x, mais cinco, por x mais um? Sem armar a conta: troque x por menos um. Dá menos dois, mais um, mais cinco igual a quatro. Pronto.
+
+Este é o segundo episódio da série de Polinômios. Ao final, você vai dividir por x menos a em uma linha, achar restos sem dividir e descobrir o valor de k que deixa um polinômio divisível.
+
+Três lembretes rápidos. Da série de Divisibilidade: dividendo é divisor vezes quociente, mais resto, e o resto é menor que o divisor. Do episódio um: P de a é trocar x por a. E da série de Sistemas: resolver duas equações com duas incógnitas.
+
+Comece pelos números. Dezessete balas para cinco crianças. Cada uma ganha três, e sobram duas. Dezessete é igual a cinco vezes três, mais dois. Dividendo: o que se divide, dezessete. Divisor: por quanto, cinco. Quociente: quanto cada um ganha, três. Resto: o que sobra, dois. E divisível quer dizer: resto zero.
+
+E com polinômios? A mesma conta: P é igual a D vezes Q, mais R. O resto tem grau menor que o divisor. E o grau do quociente é o grau de P menos o grau de D: grau três dividido por grau um dá quociente de grau dois.
+
+E que cara tem o resto? Divisor de grau um: o resto tem grau zero. É um número. Divisor de grau dois: o resto tem no máximo grau um. Ele tem a cara a x mais b.
+
+E como dividir rápido por x menos um número? Dispositivo de Briot-Ruffini: uma tabelinha que faz essa divisão em uma linha. À esquerda vai a raiz do divisor: o número que zera o divisor. Ela mora do lado oposto: x menos dois mora em dois; x mais três mora em menos três.
+
+Vamos dividir dois x ao cubo, menos três x ao quadrado, menos cinco x, mais seis, por x menos dois. Pense numa esteira. O primeiro coeficiente desce: dois. Multiplica pela raiz e soma com o próximo: dois vezes dois, quatro, menos três: um. De novo: dois vezes um, dois, menos cinco: menos três. E o último: dois vezes menos três, menos seis, mais seis: zero.
+
+E como se lê a esteira? Os primeiros números são o quociente, com um grau a menos: dois x ao quadrado, mais x, menos três. O último é o resto: zero. Resto zero quer dizer que dois é raiz do polinômio.
+
+Atalho. Antes de ligar a esteira, escreva todos os coeficientes, do maior para o menor expoente. E ponha à esquerda a raiz do lado oposto. Depois é só repetir: desce, multiplica pela raiz, soma.
+
+E onde a esteira trava? Em x ao cubo, menos quatro x, mais um, falta o x ao quadrado. Ele entra com zero: os coeficientes são um, zero, menos quatro, um. Sem o zero, a conta inteira escorrega uma casa. E para dividir por x mais três, a raiz do lado oposto: menos três.
+
+E se a questão quiser só o resto? Teorema do resto: o resto da divisão por x menos a é P de a. Por quê? Troque x por a em P igual a x menos a, vezes Q, mais R. O x menos a vira zero e leva o Q junto. Sobra só o R. É o pedágio: em vez de percorrer a divisão inteira, você substitui a raiz e paga só o resto.
+
+Volte ao gancho. Dois x ao cubo, menos x, mais cinco, por x mais um. A raiz do divisor é menos um. P de menos um: menos dois, mais um, mais cinco: quatro. Na esteira, com o zero do x ao quadrado: dois, menos dois, um... e o resto, quatro. Os dois caminhos batem.
+
+Atalho. Pediu só o resto da divisão por x menos a? Não divida: calcule P de a. Pediu o quociente? Aí, sim, esteira.
+
+E quando a divisão é exata? Teorema de D'Alembert: P é divisível por x menos a se, e só se, P de a é zero. Ou seja, a é raiz. Quanto vale k para x ao cubo, mais k x, menos quatro ser divisível por x menos dois? P de dois igual a zero: oito, mais dois k, menos quatro, igual a zero. Dois k é menos quatro: k é menos dois.
+
+E se o divisor for de grau dois? Por exemplo, x menos um, vezes x menos dois. O resto tem a cara m x mais n. Nas raízes do divisor, P e o resto dão o mesmo valor. Se o resto por x menos um é cinco, m mais n é cinco. Se o resto por x menos dois é sete, dois m mais n é sete. Um sistema dois por dois: m é dois, n é três. Resto: dois x mais três.
+
+Atalho. No sistema, subtraia uma equação da outra: o n some e o m aparece sozinho. Depois, confira: o resto tem de dar os dois valores do enunciado.
+
+Sua vez. Divida x ao cubo, menos quatro x, mais um, por x menos um, com a esteira. E confira o resto pelo teorema. Pause e tente.
+
+Vamos juntos. Coeficientes, com o zero: um, zero, menos quatro, um. Raiz: um. Desce um. Um mais zero: um. Um menos quatro: menos três. Menos três mais um: menos dois. Quociente: x ao quadrado, mais x, menos três. Resto: menos dois. E P de um: um, menos quatro, mais um: menos dois. Bateu!
+
+Vamos guardar em três frases. Um: o resto por x menos a é P de a. Dois: desce, multiplica pela raiz, soma. Três: não pule o zero; x mais três usa menos três.
+
+Agora, os erros clássicos. Primeiro: esteira sem o zero. Em x ao cubo, menos quatro x, mais um, por x menos dois, a pessoa usa um, menos quatro, um, e o resto sai menos três. Parece certo, porque o zero não aparece no polinômio. Mas a casa do x ao quadrado existe. Com o zero, o resto é um. E P de dois confirma: um.
+
+Segundo: dividir por x mais três usando três. Em x ao quadrado, mais dois x, menos cinco, a pessoa calcula P de três: dez. Parece certo, porque o três está escrito ali. Mas a raiz mora do lado oposto: P de menos três dá menos dois.
+
+Terceiro: achar que o resto por x menos a é P de menos a. Em x ao quadrado, menos três x, mais quatro, por x menos dois, a pessoa calcula P de menos dois: catorze. Parece certo, porque a pessoa decorou que o sinal troca. E troca mesmo: x menos dois vira mais dois. O resto é P de dois: dois.
+
+Agora, uma questão no estilo do ENEM. O polinômio x ao cubo, menos dois x ao quadrado, mais k x, mais seis é divisível por x menos três. O valor de k é: A: menos quinze. B: menos treze. C: menos cinco. D: cinco. E: treze.
+
+Essa, eu faço. Divisível por x menos três: raiz do divisor, três. D'Alembert: P de três é zero. Vinte e sete, menos dezoito, mais três k, mais seis, igual a zero. Quinze mais três k é zero: três k é menos quinze. Divide por três: k é menos cinco. Letra C! Confiro: com k igual a menos cinco, vinte e sete, menos dezoito, menos quinze, mais seis: zero.
+
+E as armadilhas? A A para em três k igual a menos quinze, sem dividir por três. A B usa P de menos três, a raiz com o sinal trocado: dá menos treze. A D erra o sinal na última passagem. E a E junta os dois erros: P de menos três e o sinal trocado.
+
+Agora, você faz. Um polinômio P, dividido por x menos um, deixa resto três; dividido por x mais dois, deixa resto menos seis. O resto da divisão de P por x menos um, vezes x mais dois, é: A: menos três. B: três x. C: menos dezoito. D: três x menos seis. E: menos três x, menos três. Uma dica: o resto tem grau no máximo um: m x mais n. Pause o vídeo e tente.
+
+Vamos conferir. As raízes do divisor: um e menos dois. P de um é três: m mais n é três. P de menos dois é menos seis: menos dois m, mais n, é menos seis. Subtraia: três m é nove, m é três. E n é zero. Resto: três x. Letra B! Confere: três vezes um, três; três vezes menos dois, menos seis.
+
+E as erradas? A A soma os dois restos. A C multiplica os dois restos. A D acerta o m, mas usa o segundo resto como termo independente. E a E troca as raízes: põe o menos seis no um, e o três no menos dois.
+
+Para fechar, as mesmas três frases. Um: o resto por x menos a é P de a. Dois: desce, multiplica pela raiz, soma. Três: não pule o zero; x mais três usa menos três.
+
+O lucro de uma fábrica é x ao cubo, menos seis x ao quadrado, mais onze x, menos seis, e você sabe que ele zera em x igual a um. Como achar os outros dois valores que zeram o lucro? Com a esteira de hoje. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha usado o teorema do resto? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

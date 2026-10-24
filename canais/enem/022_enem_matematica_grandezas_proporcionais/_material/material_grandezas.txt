@@ -1,0 +1,282 @@
+Grandezas Proporcionais
+Matemática › Matemática Básica e Proporcionalidade › Assunto 7 de 12
+Grandezas direta e inversamente proporcionais
+O assunto anterior ensinou a resolver com regra de três. Este ensina a reconhecer quando a proporcionalidade existe — e a identificá-la numa tabela, num gráfico ou numa fórmula, que é como o ENEM costuma perguntar.
+Semana
+3 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Razão, proporção e regra de três
+Destrava
+Funções, gráficos, Física, leitura de tabelas
+Neste assunto
+01 O que o ENEM cobra aqui
+O assunto anterior tratou de resolver proporções. Este trata de reconhecê-las — e é uma habilidade diferente, cobrada de outro jeito.
+Os três formatos em que aparece:
+Tabela. O enunciado traz uma tabela de valores e pergunta que tipo de relação existe, ou pede o valor que falta. Resolve-se dividindo ou multiplicando as colunas.
+Gráfico. Uma curva é mostrada e se pergunta qual situação ela representa. Reta pela origem, reta com valor fixo e hipérbole significam coisas diferentes.
+Fórmula. Uma expressão de Física ou Química é dada e se pergunta o que acontece com uma grandeza quando outra dobra ou triplica.
+O que rende mais aqui
+Duas coisas. Primeiro, o teste da tabela (seção 08): dividir e multiplicar as colunas responde qualquer questão desse tipo em segundos. Segundo, a reta que não passa pela origem (seção 10) — a armadilha mais cobrada do assunto, e a mais fácil de cair.
+02 A constante de proporcionalidade
+Toda proporcionalidade tem um número que não muda enquanto as grandezas variam. Achar esse número é achar a relação inteira.
+As duas constantes
+Diretamente proporcionais: o quociente é constante.
+(y/x) = k ⟺ y = k · x
+Inversamente proporcionais: o produto é constante.
+x · y = k ⟺ y = (k/x)
+O k sempre significa alguma coisa
+Ele não é um símbolo abstrato — é uma grandeza do problema:
+ | Situação | Relação | O que é o k
+ | Preço e quantidade | direta | preço por unidade
+ | Distância e tempo | direta | velocidade
+ | Massa e volume | direta | densidade
+ | Velocidade e tempo | inversa | a distância a percorrer
+ | Operários e prazo | inversa | o total de trabalho
+ | Pressão e volume de um gás | inversa | depende da temperatura
+Como achar o k
+Use um par de valores conhecido. Se y = 15 quando x = 5 e a relação é direta, então k = 15 ÷ 5 = 3 — e a fórmula completa é y = 3x, válida para qualquer outro valor.
+03 Grandezas diretamente proporcionais
+Duas grandezas são diretamente proporcionais quando, ao multiplicar uma por um número, a outra fica multiplicada pelo mesmo número.
+Combustível consumido por um automóvel
+180 km → 15 L · 360 km → 30 L · 540 km → 45 L
+(15/180) = (30/360) = (45/540) = (1/12) = k
+O k = (1/12) é o consumo por quilômetro. Com ele, qualquer distância se resolve numa multiplicação.
+A definição se estende a sequências inteiras: duas sequências são diretamente proporcionais quando os termos correspondentes têm sempre a mesma razão.
+(a_1/b_1) = (a_2/b_2) = (a_3/b_3) = … = k
+04 Grandezas inversamente proporcionais
+Ao multiplicar uma grandeza por um número, a outra fica dividida por esse mesmo número. O produto permanece.
+Tempo de viagem para percorrer 240 km
+40 km/h → 6 h · 60 km/h → 4 h · 80 km/h → 3 h
+40 · 6 = 60 · 4 = 80 · 3 = 240 = k
+Aqui o k é a própria distância — a grandeza que o problema mantém fixa.
+A ponte entre as duas ideias
+Se y é inversamente proporcional a x, então y é diretamente proporcional a (1/x).
+É a mesma relação vista de outro ângulo, e é o que permite tratar qualquer proporção inversa com as ferramentas da direta.
+05 O gráfico de cada relação
+O ENEM gosta de mostrar o gráfico e perguntar que situação ele descreve. Cada relação tem uma forma inconfundível.
+ | Relação | Fórmula | Gráfico | Marca registrada
+ | Direta | y = kx | Reta | Passa pela origem; a inclinação é o k
+ | Inversa | y = (k/x) | Hipérbole | Aproxima-se dos eixos sem tocá-los
+ | Nenhuma das duas | y = ax + b | Reta | Não passa pela origem
+O teste de dois segundos no gráfico
+Numa proporção direta, x = 0 obriga y = 0. Portanto, a reta tem de cruzar a origem. Se ela corta o eixo vertical acima do zero, existe uma parcela fixa e a relação não é proporcional.
+Na hipérbole, os eixos são assíntotas: a curva chega perto deles indefinidamente, mas nunca os alcança. Faz sentido no concreto — por mais que se aumente a velocidade, o tempo de viagem nunca chega a zero.
+06 Quando há mais de duas grandezas
+Uma grandeza pode ser direta em relação a uma e inversa em relação a outra ao mesmo tempo. A regra de montagem é simples.
+A regra do numerador e do denominador
+O que é diretamente proporcional vai no numerador. O que é inversamente proporcional vai no denominador.
+y = k · (a/b)
+Resistência de um fio condutor
+A resistência é direta ao comprimento e inversa à área da seção:
+R = k · (L/A)
+É exatamente a lei da resistividade que aparece em Física, R = ρ(L/A), com o ρ no papel do k.
+Para saber o efeito de várias mudanças ao mesmo tempo, aplique cada uma separadamente. Se a dobra e b triplica, então y fica multiplicado por 2 e dividido por 3 — ou seja, por (2/3).
+07 Proporcionalidade com potências
+Nem toda proporcionalidade é linear. Quando a relação envolve quadrado ou cubo, dobrar uma grandeza não dobra a outra — e é aí que se erra.
+ | Relação | Fórmula | Se x dobra, y… | Onde aparece
+ | Direta | y = kx | dobra | preço, distância
+ | Quadrática | y = kx^2 | quadruplica | área e lado, energia cinética
+ | Cúbica | y = kx^3 | fica 8 vezes maior | volume e aresta
+ | Inversa | y = (k/x) | cai à metade | velocidade e tempo
+ | Inversa do quadrado | y = (k/x^2) | cai a um quarto | luz, som, gravidade
+A lei do inverso do quadrado
+Aparece em Física com frequência: iluminação, intensidade sonora, força gravitacional e radiação seguem y = (k/x^2).
+Afastar-se ao dobro da distância reduz o efeito a um quarto, não à metade. Triplicar a distância reduz a um nono.
+08 Como reconhecer numa tabela
+É o formato mais comum de questão, e existe um procedimento mecânico que resolve todos os casos.
+Dois cálculos respondem qualquer questão de tabela. Divida a segunda coluna pela primeira: se der sempre o mesmo número, a relação é direta e esse número é o k. Se não der, multiplique as duas: produto constante indica relação inversa. Se nenhum dos dois se mantiver, não há proporcionalidade alguma — e nenhuma regra de três pode ser usada.
+O hábito que economiza tempo
+Ao ver uma tabela num enunciado, escreva uma terceira coluna à margem com o quociente ou o produto. É mais rápido do que testar alternativa por alternativa, e revela imediatamente o valor do k — que costuma ser justamente o que a questão pede em seguida.
+09 Onde isso aparece nas outras áreas
+Metade das fórmulas de Física é uma afirmação de proporcionalidade. Reconhecer isso transforma decoreba em raciocínio.
+ | Fórmula | Área | O que é proporcional a quê
+ | v = (d/t) | Física | Distância e tempo: diretas. Velocidade e tempo: inversas
+ | F = m · a | Física | Força é direta à massa e à aceleração
+ | P = U · i | Física | Potência é direta à tensão e à corrente
+ | P · V = k | Química | Lei de Boyle: pressão e volume são inversas
+ | d = (m/V) | Química | Massa e volume são diretos; o k é a densidade
+ | E = (mv^2/2) | Física | Energia é quadrática na velocidade
+Ler fórmula como proporcionalidade
+Numa fração, o que está em cima é direto e o que está embaixo é inverso. Sem decorar mais nada, você já sabe o que acontece se uma grandeza dobrar — e é isso que o ENEM pergunta.
+10 O que parece proporcional e não é
+Esta é a armadilha mais cobrada do assunto, e ela tem uma cara só: uma parcela fixa.
+A reta que não passa pela origem
+Uma corrida de táxi cobra R$ 6,00 de bandeirada mais R$ 2,50 por quilômetro. O preço é relacionado à distância, mas não é proporcional a ela:
+8 km → 6 + 20 = R$ 26,00 · 16 km → 6 + 40 = R$ 46,00
+Dobrar a distância não dobrou o preço, porque a bandeirada é cobrada uma vez só. Quem fez 26 · 2 = 52 caiu na alternativa preparada para isso.
+A mesma estrutura aparece em vários contextos do dia a dia, e o ENEM usa todos eles:
+Conta de luz e de água com taxa mínima ou de disponibilidade.
+Plano de celular com franquia fixa mais excedente.
+Frete com valor de despacho mais preço por quilo.
+Salário com parte fixa mais comissão.
+Como distinguir
+Pergunte: quando a primeira grandeza vale zero, a segunda também vale zero?
+Se sim, há proporcionalidade. Se existe cobrança mesmo com consumo zero, a relação é y = ax + b — uma função afim, assunto da semana 8, mas não uma proporção.
+Outras relações que também não são proporcionais: juros compostos (crescimento exponencial), tarifas por faixa de consumo (o preço unitário muda de faixa para faixa) e área ou volume a partir de medidas lineares (relação quadrática ou cúbica, tratada na seção 07).
+11 Os erros que mais custam pontos
+Reta que não passa pela origem é proporção direta → não éCom uma parcela fixa, dobrar x não dobra y. É a armadilha mais cobrada do assunto.
+Táxi de 8 km custa 26; logo 16 km custam 52 → custam 46A bandeirada é cobrada uma única vez, não dobra junto com a distância.
+Se o lado dobra, a área dobra → quadruplicaA área é proporcional ao quadrado do lado; o volume, ao cubo da aresta.
+Dobrar a distância reduz a luz à metade → reduz a um quartoLei do inverso do quadrado: luz, som e gravidade seguem k/x².
+Crescer junto significa ser proporcional → é preciso razão constanteIdade e altura crescem juntas e não são proporcionais.
+Testar só uma linha da tabela → teste todasUma linha isolada sempre dá algum quociente. A constância é que prova a relação.
+2,4 h é 2 h e 40 min → é 2 h e 24 min0,4 h vale 0,4 · 60 = 24 minutos. Décimo de hora não é minuto.
+Na proporção composta, somar os efeitos → multiplique-osSe a dobra e b triplica em y = ka/b, então y fica multiplicado por 2/3.
+A hipérbole toca os eixos → nunca tocaOs eixos são assíntotas: por maior que seja a velocidade, o tempo não chega a zero.
+12 Questões comentadas
+Nove questões no formato da prova. Nas de tabela, escreva a coluna do quociente ou do produto antes de olhar as alternativas.
+Questão 1 · Reconhecer pela tabela
+Um estudo registrou os seguintes pares de valores para duas grandezas x e y: (3; 40), (5; 24), (8; 15) e (12; 10). Sobre essas grandezas, é correto afirmar que
+são diretamente proporcionais, com k = 120
+são inversamente proporcionais, com k = 120
+são diretamente proporcionais, com k = 13
+são inversamente proporcionais, com k = 43
+não guardam relação de proporcionalidade
+Ver resolução
+Primeiro teste — divida y por x:
+40 ÷ 3 ≈ 13,3 · 24 ÷ 5 = 4,8 · 15 ÷ 8 ≈ 1,9
+Não é constante, então não é direta.
+Segundo teste — multiplique x por y:
+3 · 40 = 120 · 5 · 24 = 120 · 8 · 15 = 120 · 12 · 10 = 120
+Produto constante: as grandezas são inversamente proporcionais, com k = 120 e fórmula y = 120 ÷ x.
+A alternativa C usa o quociente da primeira linha como se fosse o k — o erro de testar uma linha só.
+Alternativa B
+Questão 2 · Achar o k e prever um valor
+O consumo de combustível de um automóvel é diretamente proporcional à distância percorrida. Em um trajeto de 180 km, o veículo consumiu 15 litros. Mantidas as condições, o consumo em um trajeto de 300 km será de
+18 litros
+20 litros
+25 litros
+30 litros
+36 litros
+Ver resolução
+Como a relação é direta, o quociente é constante. Achando o k:
+k = (15/180) = (1/12) litro por quilômetro
+Agora aplique à nova distância:
+300 · (1/12) = 25 litros
+Confira a plausibilidade: a distância aumentou cerca de 1,7 vez, e o consumo foi de 15 para 25 litros — também cerca de 1,7 vez. Coerente.
+Alternativa C
+Questão 3 · Relação inversa
+Um motorista percorre determinado trajeto em 3 horas, mantendo velocidade média de 80 km/h. Se aumentar a velocidade média para 100 km/h, o mesmo trajeto será percorrido em
+2 h 24 min
+2 h 40 min
+2 h 50 min
+3 h 45 min
+3 h 75 min
+Ver resolução
+Distância fixa: velocidade e tempo são inversamente proporcionais, com produto constante.
+80 · 3 = 240 km = k
+100 · t = 240 → t = 2,4 h
+O passo que decide a alternativa: converter a parte decimal em minutos.
+0,4 h = 0,4 · 60 = 24 minutos → 2 h 24 min
+A alternativa B é de quem leu “2,4” como “2 h e 40 min”. Décimos de hora não são minutos, e essa distração aparece sempre que o resultado sai quebrado.
+Alternativa A
+Questão 4 · Identificar a proporção direta
+Entre as situações abaixo, aquela em que as duas grandezas envolvidas são diretamente proporcionais é
+o valor de uma corrida de táxi com bandeirada fixa, em função da distância
+o valor da conta de luz com taxa de disponibilidade, em função do consumo
+o preço total de arroz vendido a R$ 5,00 o quilo, em função da quantidade comprada
+a área de um terreno quadrado, em função da medida do lado
+o tempo de uma viagem de distância fixa, em função da velocidade média
+Ver resolução
+Teste cada uma com a pergunta da origem: com a primeira grandeza igual a zero, a segunda também é zero?
+A e B — há cobrança mesmo com distância ou consumo zero. Relação afim, não proporcional.
+C — zero quilo custa zero reais, e dobrar a quantidade dobra o preço. Direta, com k = 5.
+D — dobrar o lado quadruplica a área. Relação quadrática, não direta.
+E — mais velocidade, menos tempo. Relação inversa.
+Repare que quatro das cinco alternativas descrevem relações reais entre as grandezas. Estar relacionado não basta: proporcionalidade direta exige razão constante e passagem pela origem.
+Alternativa C
+Questão 5 · A armadilha da parcela fixa
+Uma corrida de táxi custa R$ 6,00 de bandeirada mais R$ 2,50 por quilômetro rodado. Sabendo que uma corrida de 8 km custa R$ 26,00, o valor de uma corrida de 16 km será de
+R$ 40,00
+R$ 46,00
+R$ 48,00
+R$ 52,00
+R$ 58,00
+Ver resolução
+A tentação é dobrar o valor junto com a distância — e é exatamente o que a questão espera.
+Aplicando a regra de cobrança:
+6,00 + 2,50 · 16 = 6,00 + 40,00 = R$ 46,00
+Por que não são R$ 52,00: a bandeirada de R$ 6,00 é cobrada uma única vez, tanto na corrida de 8 km quanto na de 16 km. Só a parte de R$ 2,50 por quilômetro dobra. Dobrando tudo, a bandeirada seria cobrada duas vezes.
+A relação aqui é y = 2,5x + 6 — uma reta que corta o eixo vertical em 6, e por isso não é proporcional.
+Alternativa B
+Questão 6 · Lei do inverso do quadrado
+A iluminação produzida por uma lâmpada sobre uma superfície é inversamente proporcional ao quadrado da distância entre elas. A 2 metros da lâmpada, a iluminação medida é de 100 lux. A 5 metros, a iluminação será de
+10 lux
+16 lux
+20 lux
+40 lux
+250 lux
+Ver resolução
+A relação é I = (k/d^2). Primeiro o k, com o par conhecido:
+100 = (k/2^2) → k = 100 · 4 = 400
+Agora a nova distância:
+I = (400/5^2) = (400/25) = 16 lux
+A alternativa D é de quem tratou como inversa simples, sem o quadrado: 100 · 2 ÷ 5 = 40. O quadrado no denominador faz a queda ser bem mais acentuada.
+Alternativa B
+Questão 7 · Proporcionalidade composta
+A resistência elétrica de um fio é diretamente proporcional ao seu comprimento e inversamente proporcional à área de sua seção transversal. Um fio de 10 m de comprimento e 2 mm² de seção tem resistência de 5 Ω. Outro fio, do mesmo material, com 30 m de comprimento e 3 mm² de seção, terá resistência de
+5 Ω
+7,5 Ω
+10 Ω
+15 Ω
+45 Ω
+Ver resolução
+Monte a fórmula pela regra do numerador e do denominador: o comprimento é direto, a área é inversa.
+R = k · (L/A)
+Com os dados do primeiro fio:
+5 = k · (10/2) = 5k → k = 1
+Aplicando ao segundo fio:
+R = 1 · (30/3) = 10 Ω
+Pelo raciocínio dos efeitos: o comprimento triplicou (×3) e a área aumentou 1,5 vez (÷1,5). Logo 5 · 3 ÷ 1,5 = 10 — mesmo resultado, sem calcular o k.
+Alternativa C
+Questão 8 · Proporcionalidade quadrática
+Uma praça tem formato quadrado. Em um projeto de ampliação, a medida do lado será triplicada. A área da praça ampliada, em relação à área atual, ficará multiplicada por
+3
+6
+9
+12
+27
+Ver resolução
+A área do quadrado é A = L^2 — proporcionalidade quadrática, não direta.
+Triplicando o lado, a nova área é:
+A' = (3L)^2 = 9L^2 = 9A
+Conferindo com números: um quadrado de lado 2 tem área 4; com lado 6, a área é 36. E 36 ÷ 4 = 9 ✓
+A alternativa A é de quem aplicou proporção direta. A alternativa E é o fator do volume, que seria 3^3 = 27 se a figura fosse um cubo.
+Alternativa C
+Questão 9 · Proporcionalidade em Química
+A uma temperatura constante, o volume ocupado por certa massa de gás é inversamente proporcional à pressão exercida sobre ele. Um gás ocupa 6 litros sob pressão de 2 atm. Ao ser comprimido até a pressão de 3 atm, mantida a temperatura, esse gás passará a ocupar
+2 litros
+3 litros
+4 litros
+9 litros
+12 litros
+Ver resolução
+É a lei de Boyle, e o enunciado já entrega a relação: pressão e volume são inversamente proporcionais, logo o produto é constante.
+P_1 · V_1 = P_2 · V_2
+2 · 6 = 3 · V_2 → 12 = 3V_2 → V_2 = 4 litros
+Conferência de bom senso: aumentar a pressão comprime o gás, então o volume tem de diminuir. As alternativas D e E dão volumes maiores e podem ser descartadas antes de qualquer conta.
+Alternativa C
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Sei que na relação direta o quociente é constante e na inversa o produto é constante
+Acho o valor de k a partir de um par de valores e monto a fórmula completa
+Digo o que o k significa em cada contexto: preço unitário, velocidade, densidade
+Reconheço a relação numa tabela dividindo e multiplicando as colunas
+Testo todas as linhas da tabela, nunca uma só
+Identifico a relação pelo gráfico: reta pela origem, hipérbole ou reta com valor fixo
+Sei que uma reta que não passa pela origem não representa proporção direta
+Reconheço a parcela fixa em táxi, conta de luz, frete e plano de celular
+Monto proporcionalidade composta pondo o direto em cima e o inverso embaixo
+Sei o efeito de dobrar x nas relações quadrática, cúbica e do inverso do quadrado
+Leio uma fórmula de Física identificando o que é direto e o que é inverso
+Converto décimos de hora em minutos corretamente
+Confiro se o resultado faz sentido antes de marcar a alternativa
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de tabela e as de parcela fixa — juntas, elas respondem pela maior parte das questões deste assunto. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 46 cartões deste assunto no arquivo ENEM-Matematica-07-grandezas-proporcionais.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

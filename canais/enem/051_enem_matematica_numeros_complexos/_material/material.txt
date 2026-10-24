@@ -1,0 +1,262 @@
+Números Complexos
+Matemática › Álgebra e Funções › Assunto 18 de 18
+Números complexos
+Quando o delta dá negativo, a equação não acabou: ela tem raízes complexas. Este assunto apresenta a unidade imaginária, as quatro operações, o plano de Argand-Gauss e a forma trigonométrica, em que multiplicar vira girar.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Equação do 2º grau e fórmula de Bhaskara · Polinômios e equações polinomiais
+Destrava
+Raízes de polinômios, rotações no plano e a trigonometria do ciclo
+Neste assunto
+01 O que o ENEM cobra aqui
+Sendo honesto: números complexos quase não aparecem de forma direta no ENEM, e são presença certa em vestibulares tradicionais. Ainda assim, vale estudar com foco no que se reaproveita:
+Equações sem raiz real: entender que Δ < 0 significa “sem raízes reais”, e que as raízes existem como um par conjugado.
+Operar na forma algébrica: somar, multiplicar e dividir usando i² = −1, além das potências de i.
+Geometria no plano: todo complexo é um ponto; o módulo é uma distância; multiplicar por i é girar 90°. Isso conversa com coordenadas e rotações de figuras.
+Forma trigonométrica: potências grandes, como (1 + i)^8, saem em uma linha com a fórmula de De Moivre.
+O que rende mais aqui
+Trate i como uma letra qualquer e, no fim, troque i² por −1. Quase todos os erros do assunto vêm de esquecer essa troca ou de fazê-la com o sinal errado.
+02 A unidade imaginária e a forma algébrica
+Definição
+A unidade imaginária i é o número tal que i² = −1. Um número complexo tem a forma algébrica z = a + bi, com a e b reais: a = Re(z) é a parte real e b = Im(z) é a parte imaginária (o número que multiplica i, sem o i).
+ | Caso | Condição | Exemplo
+ | Real | b = 0 | −7 (= −7 + 0i)
+ | Imaginário puro | a = 0 e b ≠ 0 | 5i
+ | Não real | b ≠ 0 | 2 − 3i
+Os reais são um caso particular dos complexos: ℝ ⊂ ℂ. Com i, toda raiz quadrada de negativo passa a existir: √(−36) = 6i, porque (6i)² = 36i² = −36.
+Equação do 2º grau com delta negativo
+x² − 4x + 13 = 0 ⟹ Δ = 16 − 52 = −36 ⟹ x = (4 ± 6i/2) = 2 ± 3i
+As duas raízes são conjugadas: mesma parte real, partes imaginárias opostas. Soma 4 = −(b/a) e produto 13 = (c/a), como em qualquer equação do 2º grau.
+Cuidado ao multiplicar raízes de negativos
+√(−4) · √(−9) não é √(36) = 6. Escreva primeiro com i: 2i · 3i = 6i² = −6.
+03 Potências de i: um ciclo de quatro
+Cada multiplicação por i avança uma casa num ciclo de quatro valores:
+As potências de i se repetem de 4 em 4. i³ = i² · i = −i e i⁴ = (i²)² = 1. Para qualquer expoente, só importa o resto da divisão por 4.
+Receita: resto da divisão do expoente por 4
+i^(2026): 2026 = 4 · 506 + 2 ⟹ i^(2026) = i² = −1
+i^(103): 103 = 4 · 25 + 3 ⟹ i^(103) = i³ = −i
+Atalho: o resto da divisão por 4 depende só dos dois últimos algarismos do expoente (26 deixa resto 2; 03 deixa resto 3).
+Quatro potências seguidas somam zero
+1 + i + (−1) + (−i) = 0. Por isso somas como i + i² + … + i^(100) se resolvem agrupando de quatro em quatro: 100 termos formam 25 grupos, e a soma é 0.
+04 Operações na forma algébrica
+Adição e subtração: real com real, imaginária com imaginária
+(2 + 3i) + (1 − 5i) = 3 − 2i (2 + 3i) − (1 − 5i) = 1 + 8i
+Multiplicação: distributiva, depois o quadrado de i vira −1
+(2 + 3i)(1 − i) = 2 − 2i + 3i − 3i² = 2 + i + 3 = 5 + i
+O −3i² vira +3 e vai para a parte real. Esse é o passo que mais se erra.
+Conjugado
+O conjugado de z = a + bi é z̄ = a − bi: troca só o sinal da parte imaginária. A propriedade-chave é z · z̄ = a² + b², um número real e não negativo. Também vale z + z̄ = 2a.
+Divisão: multiplique em cima e embaixo pelo conjugado do denominador
+(3 + i/1 − i) = ((3 + i)(1 + i)/(1 − i)(1 + i)) = (3 + 3i + i + i²/1 + 1) = (2 + 4i/2) = 1 + 2i
+O denominador vira real (a² + b²), e a divisão passa a ser só dividir cada parte por esse número. Conferência: (1 + 2i)(1 − i) = 1 + i + 2 = 3 + i.
+Não divida parte por parte
+(3 + i/1 − i) não é (3/1) + (i/−i). Divisão só se distribui sobre a soma do numerador, nunca do denominador.
+05 Igualdade e equações com complexos
+Igualdade
+a + bi = c + di se, e somente se, a = c e b = d. Uma equação entre complexos vale por duas equações reais.
+Exemplo: quando o produto é um número real
+(a + 2i)(1 + i) = a + ai + 2i + 2i² = (a − 2) + (a + 2)i
+Real exige parte imaginária nula: a + 2 = 0, a = −2. Imaginário puro exigiria parte real nula e imaginária não nula: a = 2.
+Equações com z e z̄
+Escreva z = a + bi e z̄ = a − bi, desenvolva e iguale parte real com parte real, parte imaginária com parte imaginária. Sobra um sistema simples em a e b.
+06 O plano de Argand-Gauss
+Cada complexo a + bi corresponde ao ponto (a, b), o seu afixo: parte real no eixo horizontal (eixo real), parte imaginária no vertical (eixo imaginário). O cabeçalho mostra 3 + 4i no ponto (3, 4).
+Módulo: a distância até a origem
+|z| = ρ = √(a² + b²) |3 + 4i| = √(9 + 16) = 5
+É o teorema de Pitágoras no triângulo de catetos a e b. Note que z · z̄ = |z|².
+ | Operação | O que acontece no plano
+ | conjugado z̄ | reflexão no eixo real
+ | oposto −z | reflexão na origem (giro de 180°)
+ | soma z + w | translação: soma de coordenadas, como vetores
+ | |z − w| | distância entre os pontos de z e w
+ | multiplicar por i | giro de 90° no sentido anti-horário, em torno da origem
+A distância entre 1 + 2i e 4 + 6i, por exemplo, é |3 + 4i| = 5: a mesma fórmula de distância entre pontos da Geometria Analítica.
+07 Forma trigonométrica
+Um ponto do plano também fica determinado pela distância à origem (ρ, o módulo) e pelo ângulo com o eixo real positivo (θ, o argumento, entre 0° e 360°). Como a = ρ cos θ e b = ρ sen θ:
+Forma trigonométrica (polar)
+z = ρ(cos θ + i sen θ), com cos θ = (a/ρ) e sen θ = (b/ρ)
+Exemplo com módulo 2 e argumento de 60°
+ρ = √(1 + 3) = 2, cos θ = (1/2), sen θ = (√(3)/2) ⟹ θ = 60° ⟹ z = 2(cos 60° + i sen 60°)
+ | Complexo | Módulo | Argumento
+ | 1 + i | √(2) | 45°
+ | i | 1 | 90°
+ | −1 | 1 | 180°
+ | √(3) + i | 2 | 30°
+ | −1 + i | √(2) | 135° (2º quadrante)
+Confira o quadrante
+O ângulo de referência sai dos valores absolutos; o quadrante sai dos sinais de a e b. Em −1 + i o ângulo de referência é 45°, mas o ponto está no 2º quadrante: θ = 180° − 45° = 135°.
+08 Multiplicar é girar
+Na forma trigonométrica, multiplicação e divisão ficam simples:
+Produto e quociente
+z_1 · z_2 = ρ_1ρ_2[cos(θ_1 + θ_2) + i sen(θ_1 + θ_2)]
+(z_1/z_2) = (ρ_1/ρ_2)[cos(θ_1 − θ_2) + i sen(θ_1 − θ_2)]
+Multiplica os módulos e soma os argumentos (na divisão, divide e subtrai). Geometricamente, multiplicar por w estica pelo módulo de w e gira pelo argumento de w.
+Multiplicar por i gira 90°; conjugar reflete. i(3 + 2i) = 3i + 2i² = −2 + 3i: o ponto (3, 2) vai para (−2, 3), girado 90° no sentido anti-horário, com o mesmo módulo. O conjugado 3 − 2i é o espelho de z no eixo real.
+Giros prontos
+Multiplicar por i: 90° anti-horário, (a, b) → (−b, a). Por −1: 180°. Por −i: 90° horário, (a, b) → (b, −a). Como |i| = 1, nenhum desses giros muda o módulo.
+09 Potências: a fórmula de De Moivre
+Primeira fórmula de De Moivre
+z^n = ρ^n[cos(nθ) + i sen(nθ)]
+Elevar a n é multiplicar n vezes: o módulo vai à potência n e o argumento é multiplicado por n.
+Exemplo: a oitava potência de 1 + i, por dois caminhos
+De Moivre: ρ = √(2), θ = 45°. Então (√(2))^8 = 16 e 8 · 45° = 360°: 16(cos 360° + i sen 360°) = 16.
+Algébrico: (1 + i)² = 1 + 2i + i² = 2i; então (1 + i)^8 = (2i)^4 = 16i^4 = 16.
+Raízes n-ésimas, em uma frase
+As n raízes n-ésimas de um complexo não nulo têm todas o mesmo módulo e ficam igualmente espaçadas numa circunferência centrada na origem: são vértices de um polígono regular de n lados. As raízes quartas de 1, por exemplo, são 1, i, −1, −i: os vértices de um quadrado, os mesmos pontos do ciclo da seção 03.
+10 Estratégia de prova e conexões
+1 · Potência de i: resto por 4
+Divida o expoente por 4 e use só o resto (0 → 1, 1 → i, 2 → −1, 3 → −i).
+2 · Divisão: conjugado do denominador
+Multiplique em cima e embaixo pelo conjugado e confira multiplicando o resultado pelo denominador original.
+3 · Potência alta de algo simples: vá para a forma trigonométrica
+Para (1 + i)^n, (√(3) + i)^n e parecidos, De Moivre resolve em uma linha. Uma alternativa é achar uma potência pequena que dê um número simples, como (1 + i)² = 2i.
+4 · Pergunta geométrica? Desenhe o ponto
+Distância, rotação e reflexão ficam óbvias no plano de Argand-Gauss. Um esboço rápido elimina alternativas com o quadrante errado.
+ | Área | Onde entra | O que lembrar
+ | Polinômios | raízes não reais | com coeficientes reais, vêm em pares conjugados
+ | Trigonometria | ciclo trigonométrico | a forma polar usa cos e sen do argumento; multiplicar soma ângulos
+ | Geometria Analítica | distância e rotação de pontos | |z − w| é a distância; vezes i gira 90°
+ | Física e engenharia | circuitos de corrente alternada e ondas | grandezas que oscilam são tratadas como complexos (módulo = amplitude, argumento = fase)
+11 Os erros que mais custam pontos
+i² = 1 → i² = −1É a definição de i.
+Im(3 − 4i) = −4i → Im = −4A parte imaginária é o número, sem o i.
+(2 + 3i)(1 − i) = 2 − 3i → 5 + iDistributiva completa, não real × real e imaginária × imaginária.
+Dividir parte por parte → multiplicar pelo conjugadoSó o numerador se distribui.
+√−4 · √−9 = 6 → 2i · 3i = −6Escreva com i antes de multiplicar.
+|3 + 4i| = 7 → √(9 + 16) = 5Módulo é Pitágoras, não soma das partes.
+Conjugado de 3 + 4i = −3 − 4i → 3 − 4iSó a parte imaginária muda de sinal; −3 − 4i é o oposto.
+Argumento de −1 + i = 45° → 135°Confira o quadrante pelos sinais.
+Δ < 0: não há raízes → não há raízes reaisHá duas raízes complexas conjugadas.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: a conta fica mais fácil na forma algébrica ou na trigonométrica? Um desenho no plano ajuda?
+Questão 1 · Potências de i
+Em uma aula, o professor pediu aos alunos que simplificassem a expressão i^(2026) + i^(2027), em que i é a unidade imaginária. O resultado correto é
+1 + i
+−1 + i
+−1 − i
+1 − i
+0
+Ver resolução
+Restos por 4: 2026 = 4 · 506 + 2 e 2027 = 4 · 506 + 3. Logo i^(2026) = i² = −1 e i^(2027) = i³ = −i. Soma: −1 − i.
+A A usa i² = 1 e i³ = i. A B acerta i², mas toma i³ = i. A D usa i² = 1. A E supõe que potências consecutivas se anulam; só quatro seguidas somam zero.
+Alternativa C
+Questão 2 · Produto na forma algébrica
+Em um exercício sobre circuitos, duas grandezas são representadas pelos números complexos z = 2 + 3i e w = 1 − i. O produto z · w é
+5 + i
+−1 + i
+2 − 3i
+5 − i
+3 + 2i
+Ver resolução
+(2 + 3i)(1 − i) = 2 − 2i + 3i − 3i² = 2 + i + 3 = 5 + i
+A B usa i² = 1, e o −3i² vira −3. A C multiplica só real por real e imaginária por imaginária. A D erra o sinal dos termos em i (−2i + 3i = i). A E é a soma z + w.
+Alternativa A
+Questão 3 · Divisão pelo conjugado
+O quociente (3 + i/1 − i), escrito na forma a + bi, é
+2 + 4i
+3 − i
+2 + i
+1 + 4i
+1 + 2i
+Ver resolução
+Multiplicando em cima e embaixo por 1 + i:
+((3 + i)(1 + i)/(1 − i)(1 + i)) = (3 + 4i − 1/2) = (2 + 4i/2) = 1 + 2i
+Conferência: (1 + 2i)(1 − i) = 1 + i − 2i² = 3 + i.
+A A esquece de dividir pelo denominador 2. A B divide parte real por parte real (3 ÷ 1) e imaginária por imaginária (1 ÷ (−1)). A C troca parte real e imaginária. A D divide só a parte real por 2.
+Alternativa E
+Questão 4 · Distância no plano
+Em um galpão, as posições de um robô são registradas como números complexos, com as partes real e imaginária medidas em metros a partir de um canto. O robô sai da posição 1 + 2i e vai em linha reta até a posição 4 + 6i. A distância percorrida, em metros, é
+√(5)
+5
+7
+√(52)
+25
+Ver resolução
+A distância entre dois pontos é o módulo da diferença:
+|(4 + 6i) − (1 + 2i)| = |3 + 4i| = √(9 + 16) = 5
+A A é o módulo do ponto de partida, |1 + 2i|. A D é o módulo do ponto de chegada, como se o robô saísse do canto. A C soma as partes, 3 + 4, em vez de usar Pitágoras. A E esquece a raiz quadrada.
+Alternativa B
+Questão 5 · Rotação de 90°
+Um programa de desenho representa pontos do plano como números complexos. Para girar um ponto 90° no sentido anti-horário em torno da origem, o programa multiplica o número por i. O ponto representado por 3 + 2i, após esse giro, passa a ser representado por
+2 − 3i
+−3 − 2i
+3 − 2i
+−2 + 3i
+2 + 3i
+Ver resolução
+i(3 + 2i) = 3i + 2i² = −2 + 3i
+O ponto (3, 2), no 1º quadrante, vai para (−2, 3), no 2º, com o mesmo módulo √(13).
+A A é o giro de 90° no sentido horário (multiplicar por −i). A B é o giro de 180° (multiplicar por −1). A C é o conjugado, uma reflexão no eixo real. A E troca as partes de lugar sem o sinal, o que é uma reflexão na reta y = x, e não um giro.
+Alternativa D
+Questão 6 · Forma trigonométrica
+O número complexo z = 1 + √(3)i, escrito na forma trigonométrica, é
+4(cos 60° + i sen 60°)
+2(cos 60° + i sen 60°)
+2(cos 30° + i sen 30°)
+2(cos 120° + i sen 120°)
+2(cos 300° + i sen 300°)
+Ver resolução
+ρ = √(1² + (√(3))²) = √(4) = 2, cos θ = (1/2), sen θ = (√(3)/2) ⟹ θ = 60°
+A A esquece a raiz no módulo (1 + 3 = 4). A C troca seno e cosseno. A D coloca o ponto no 2º quadrante, mas a e b são positivos. A E é o conjugado 1 − √(3)i, no 4º quadrante.
+Alternativa B
+Questão 7 · Potência alta
+O valor de (1 + i)^8, em que i é a unidade imaginária, é
+−16
+8i
+16
+16i
+256
+Ver resolução
+(1 + i)² = 1 + 2i + i² = 2i. Então (1 + i)^8 = (2i)^4 = 16 · i^4 = 16. Por De Moivre: (√(2))^8 = 16 e 8 · 45° = 360°.
+A A usa i^4 = −1. A B multiplica 2i por 4 em vez de elevar à quarta. A D usa i^4 = i. A E toma o módulo de 1 + i como 2, e não √(2), obtendo 2^8.
+Alternativa C
+Questão 8 · Delta negativo
+Ao resolver a equação x² − 4x + 13 = 0 no conjunto dos números complexos, um estudante encontrou duas raízes. Essas raízes são
+2 + 3i e 2 − 3i.
+−2 + 3i e −2 − 3i.
+2 + 6i e 2 − 6i.
+4 + 6i e 4 − 6i.
+inexistentes, pois o discriminante é negativo.
+Ver resolução
+Δ = 16 − 52 = −36, √(−36) = 6i, x = (4 ± 6i/2) = 2 ± 3i
+Conferência por soma e produto: (2 + 3i) + (2 − 3i) = 4 e (2 + 3i)(2 − 3i) = 4 + 9 = 13.
+A B usa b em vez de −b na fórmula. A C divide só a parte real por 2. A D não divide nada por 2a. A E vale apenas no conjunto dos reais; nos complexos, a equação tem duas raízes.
+Alternativa A
+Questão 9 · Equação com o conjugado
+Sendo z̄ o conjugado do número complexo z, o número que satisfaz 2z + z̄ = 6 − 2i é
+2 + 2i
+2 − (2/3)i
+6 − (2/3)i
+3 − 2i
+2 − 2i
+Ver resolução
+Com z = a + bi e z̄ = a − bi:
+2a + 2bi + a − bi = 3a + bi = 6 − 2i ⟹ a = 2, b = −2
+Conferência: 2(2 − 2i) + (2 + 2i) = 6 − 2i.
+A A erra o sinal de b na última passagem. A B trata z̄ como se fosse z (3z = 6 − 2i). A C escreve o conjugado como −a + bi, trocando o sinal da parte errada. A D só considera o 2z na parte real (2a = 6).
+Alternativa E
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Uso i² = −1 e escrevo raízes de negativos com i
+Identifico parte real e parte imaginária, real e imaginário puro
+Resolvo equações do 2º grau com delta negativo
+Calculo qualquer potência de i pelo resto da divisão por 4
+Somo, subtraio e multiplico na forma algébrica
+Uso o conjugado e sei que z · z̄ = a² + b²
+Divido complexos multiplicando pelo conjugado do denominador
+Resolvo equações com z e z̄ igualando partes reais e imaginárias
+Represento complexos no plano de Argand-Gauss e calculo o módulo
+Uso |z − w| como distância entre pontos
+Passo para a forma trigonométrica conferindo o quadrante
+Multiplico na forma trigonométrica e sei que vezes i gira 90°
+Calculo potências com a fórmula de De Moivre
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões e acerte pelo menos 14, com pelo menos cinco de divisão ou potência e três de interpretação no plano. Este é o último assunto do bloco de Álgebra e Funções; siga para Ângulos, retas paralelas e transversais, que abre a Geometria Plana.
+Flashcards para o Anki
+Foram gerados 35 cartões deste assunto no arquivo ENEM-Matematica-36-numeros-complexos.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

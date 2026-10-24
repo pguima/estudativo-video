@@ -1,0 +1,61 @@
+Num modelo de desempenho, P de t igual a vinte vezes log de t, com t em horas de treino, cem horas dão quarenta pontos. Para chegar a sessenta pontos, você precisa de duzentas horas? Não: de mil. Essa é a cara do logaritmo.
+
+Este é o primeiro episódio da série de Função logarítmica. Ao final, você vai desenhar o gráfico do log, ler a base num gráfico, achar o domínio de uma expressão e resolver inequações logarítmicas.
+
+Três lembretes rápidos. Da série de Logaritmos: log na base b de a igual a x quer dizer b elevado a x igual a a. E a base é positiva e diferente de um. Da série de Função exponencial: o gráfico de dois elevado a x passa por zero, um e gruda no eixo x, a assíntota. E, de Conceito de função: domínio são os valores que podem entrar.
+
+Pense em alguém treinando para uma prova. As primeiras horas rendem muito: de uma para dez horas, vinte pontos. Mas para ganhar mais vinte, é preciso ir de dez para cem horas. Cada hora a mais rende menos que a anterior. Esse jeito de crescer tem nome: logaritmo.
+
+Então, o que é uma função logarítmica? É toda função f de x igual a log na base b de x, com b positivo e diferente de um. O x precisa ser maior que zero. Por isso, o domínio é de zero, aberto, até o infinito. E o que sai? A imagem, os valores que saem da função, são todos os números reais: negativos, zero e positivos.
+
+E de onde vem essa função? Se dois elevado a três é oito, então log na base dois de oito é três. O log desfaz o que a exponencial faz. Funções assim, em que uma desfaz a outra, se chamam funções inversas. Elas têm série própria. Aqui, só o desenho.
+
+Pegue o gráfico de dois elevado a x e a reta y igual a x, tracejada. Agora dobre a folha sobre essa reta. Cada ponto troca as coordenadas: zero, um vira um, zero. Um, dois vira dois, um. Três, oito vira oito, três. E a assíntota deitada, o eixo x, gira e fica em pé: vira o eixo y. É uma assíntota vertical: uma reta em pé da qual a curva chega perto, sem tocar. Domínio e imagem também trocam de papel.
+
+Atalho para desenhar o log. Faça a tabela da exponencial. Troque as colunas: o que era x vira y, e o que era y vira x. Pronto: você tem os pontos do log, sem calcular nenhum logaritmo.
+
+E como fica o gráfico? Com base maior que um, a curva sobe: é crescente. x aumenta, y aumenta. Com base entre zero e um, a curva desce: é decrescente. E as duas ficam coladas no eixo y, sem tocar.
+
+Existe algum ponto por onde toda função logarítmica passa? Existem dois. O um, zero: o log de um é zero, porque qualquer base elevada a zero dá um. E o b, um: o log da própria base é um. E repare: log na base um meio de x é menos log na base dois de x. Uma é o espelho da outra no eixo x.
+
+Atalho para ler a base num gráfico. Procure o ponto em que a curva tem altura um. O x desse ponto é a base. Se a curva passa por cinco, um, a base é cinco.
+
+Quando o log dá negativo? O sinal de uma função diz onde ela é positiva e onde é negativa. Com base maior que um: entre zero e um, o log é negativo. Log de zero vírgula zero um é menos dois. E para x maior que um, positivo. Com base entre zero e um, é o contrário. Log na base zero vírgula cinco de oito é menos três.
+
+Por que o log cresce cada vez mais devagar? De um para dez, o log sobe um. De dez para cem, sobe mais um. De cem para mil, mais um. É o retorno decrescente: para o log subir um degrau, x precisa ser multiplicado por dez. No treino: quarenta pontos são cem horas. Sessenta pontos são mil horas.
+
+O que pode entrar no log? Dentro do log, só entra número estritamente positivo. A porta do log fica fechada para o zero e para os negativos. Então, no log de dois x menos seis, escreva primeiro: dois x menos seis maior que zero. Dois x maior que seis, x maior que três.
+
+E quando aparece um x ao quadrado? No log de x ao quadrado menos nove, a condição é x ao quadrado maior que nove. Isso vale para x menor que menos três ou x maior que três. Teste o zero: dá menos nove. Porta fechada. E se o x estiver na base? No log na base x de cinco menos x, são três condições: cinco menos x positivo, x positivo e x diferente de um. Resposta: x entre zero e cinco, sem o um.
+
+Atalho para o domínio. Antes de qualquer conta, escreva maior que zero para o que está dentro do log. Tem x na base? Mais duas condições: maior que zero e diferente de um. Só depois resolva.
+
+E as inequações? Uma inequação logarítmica compara um log com um número, usando maior ou menor. Log na base dois de x maior que três. Base maior que um: o sentido se mantém. x maior que dois ao cubo, x maior que oito. E todo número maior que oito já é positivo. O domínio está garantido.
+
+E com base menor que um? Log na base zero vírgula cinco de x maior que dois. É a mesma regra da exponencial: base entre zero e um inverte o sentido. x menor que zero vírgula cinco ao quadrado, zero vírgula vinte e cinco. Mas a porta do log está fechada para o zero e os negativos. Resposta final: x entre zero e zero vírgula vinte e cinco.
+
+Atalho: toda inequação logarítmica em quatro passos. Um: escreva o domínio. Dois: tire o log, trocando por base elevada ao número. Três: base menor que um? Vire o sinal. Quatro: cruze com o domínio.
+
+Sua vez. Qual é o domínio de f de x igual a log de três x menos doze? E qual é a solução de log na base três de x menor que dois? Pause e tente.
+
+Vamos juntos. Três x menos doze maior que zero. Três x maior que doze, x maior que quatro. Agora a inequação. Base três, maior que um: o sentido se mantém. x menor que três ao quadrado, x menor que nove. E o domínio entra: x precisa ser positivo. Resposta: x entre zero e nove.
+
+Vamos guardar em três frases. Um: log e exponencial são espelhos na reta y igual a x. Dois: toda função logarítmica passa por um, zero e por b, um. Três: dentro do log, só número estritamente positivo.
+
+Agora, os três erros clássicos. Primeiro: dizer que o domínio de log de dois x menos seis é x maior ou igual a três. Parece certo, porque o três resolve a conta do zero. Mas com x igual a três, sobra log de zero, que não existe. O certo é x maior que três.
+
+Segundo: log na base zero vírgula cinco de x maior que dois dar x maior que zero vírgula vinte e cinco. Parece certo, porque com base dois, ou dez, o sinal fica onde está. Mas base menor que um inverte. O certo é x entre zero e zero vírgula vinte e cinco.
+
+Terceiro: achar que o logaritmo cresce cada vez mais rápido. Parece certo, porque a curva sobe para sempre, sem teto. Mas cada degrau custa dez vezes mais x. Ele cresce cada vez mais devagar.
+
+Agora, uma questão no estilo do ENEM. Esta, a gente resolve junto. O gráfico de uma função f de x igual a log na base b de x, com b positivo e diferente de um, passa pelo ponto vinte e cinco, dois. O valor de x para o qual f de x é igual a menos um é: A: menos cinco. B: zero vírgula zero quatro. C: zero vírgula dois. D: zero vírgula cinco. E: cinco. Pause o vídeo e tente.
+
+Vamos juntos. O ponto diz: log na base b de vinte e cinco é dois. Então b ao quadrado é vinte e cinco. b seria cinco ou menos cinco, mas a base é positiva: b igual a cinco. Agora, log na base cinco de x igual a menos um: x é cinco elevado a menos um, um quinto, zero vírgula dois. Positivo, e entre zero e um, onde o log é negativo. Letra C!
+
+E as armadilhas? A A faz x igual a menos a base, como se o expoente negativo trocasse o sinal. Mas x precisa ser positivo. A B usa vinte e cinco como base. A D usa o dois, a altura do ponto, como base. E a E é o ponto em que f de x vale um, não menos um.
+
+Para fechar, as mesmas três frases. Um: log e exponencial são espelhos na reta y igual a x. Dois: toda função logarítmica passa por um, zero e por b, um. Três: dentro do log, só número estritamente positivo.
+
+Um suco tem pH três, e a água da chuva tem pH seis. O suco é duas vezes mais ácido? Três vezes? Mil vezes? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: em que outra situação mais esforço rende cada vez menos? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

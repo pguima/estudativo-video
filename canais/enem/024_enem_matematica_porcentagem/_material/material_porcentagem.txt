@@ -1,0 +1,277 @@
+Porcentagem
+Matemática › Matemática Básica e Proporcionalidade › Assunto 9 de 12
+Porcentagem: aumentos, descontos e variações sucessivas
+Abre a semana 4 e disputa com a regra de três o posto de conteúdo mais cobrado da prova. Uma única ferramenta — o fator de multiplicação — resolve praticamente tudo, inclusive as armadilhas que derrubam quem calcula por partes.
+Semana
+4 · Fase Fundamentos
+Incidência
+Muito alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Frações e decimais · Razão e proporção
+Destrava
+Matemática financeira, estatística, Química
+Neste assunto
+01 O que o ENEM cobra aqui
+Porcentagem não é um assunto entre outros: é uma linguagem que atravessa a prova inteira. Aparece em Matemática, em Química, em Biologia, em Geografia e em toda leitura de gráfico.
+Os formatos mais frequentes:
+Aumentos e descontos em preços, salários, tarifas e impostos.
+Variações sucessivas — duas ou mais mudanças encadeadas, que é onde estão as armadilhas.
+Variação percentual entre dois valores de uma tabela ou gráfico.
+Pontos percentuais em taxas de desemprego, inflação, juros e aprovação.
+Leitura de gráficos de setores e de barras com percentuais.
+O que rende mais aqui
+Uma coisa acima de todas: o fator de multiplicação (seção 04). Ele resolve aumentos, descontos, variações sucessivas e o retorno ao valor original — tudo com uma multiplicação. Quem calcula “a parte e depois soma” gasta o dobro do tempo e erra as questões encadeadas.
+02 Os três cálculos básicos
+Toda questão de porcentagem é uma destas três perguntas. Reconhecer qual delas está sendo feita já resolve metade do problema.
+ | Pergunta | O que fazer | Exemplo
+ | Quanto é x% de um total? | Multiplique pela forma decimal | 15% de 200 = 0,15 · 200 = 30
+ | Que porcentagem a parte representa? | Divida a parte pelo total | 30 ÷ 200 = 0,15 = 15%
+ | Qual é o total? | Divida a parte pela forma decimal | 45 ÷ 0,15 = 300
+O erro estrutural: trocar o denominador
+Numa porcentagem, o denominador é sempre o valor de referência — o todo, ou o valor inicial numa variação. Colocar o número errado embaixo produz um resultado plausível e completamente incorreto.
+Subir de 40 para 50 é aumento de 10 ÷ 40 = 25%. Cair de 50 para 40 é queda de 10 ÷ 50 = 20%. Mesma diferença absoluta, porcentagens diferentes, porque as bases são diferentes.
+Cálculo mental que economiza minutos
+10% — vírgula uma casa à esquerda. 1% — duas casas. 5% — metade dos 10%.
+E daí sai tudo: 15% é 10% + 5%. Para 240: 24 + 12 = 36.
+03 Porcentagem, fração e decimal
+São três escritas do mesmo número, e a prova alterna entre elas dentro de um mesmo enunciado.
+ | Porcentagem | Fração | Decimal | Porcentagem | Fração | Decimal
+ | 10% | (1/10) | 0,1 | 50% | (1/2) | 0,5
+ | 12,5% | (1/8) | 0,125 | 60% | (3/5) | 0,6
+ | 20% | (1/5) | 0,2 | 75% | (3/4) | 0,75
+ | 25% | (1/4) | 0,25 | 80% | (4/5) | 0,8
+ | 33,3% | (1/3) | 0,333… | 100% | 1 | 1,0
+Reconhecer a fração poupa conta: 25% de um valor é dividir por 4; 20% é dividir por 5; 12,5% é dividir por 8.
+04 O fator de multiplicação
+Esta é a ferramenta central do assunto. Em vez de calcular a parte e depois somar ou subtrair, faz-se uma única multiplicação que já entrega o resultado final.
+As duas fórmulas
+Aumento de x%: fator = 1 + (x/100)
+Desconto de x%: fator = 1 − (x/100)
+ | Variação | Fator | Variação | Fator | Variação | Fator
+ | +5% | 1,05 | +50% | 1,50 | −5% | 0,95
+ | +10% | 1,10 | +100% | 2,00 | −10% | 0,90
+ | +20% | 1,20 | +200% | 3,00 | −25% | 0,75
+ | +25% | 1,25 | +300% | 4,00 | −40% | 0,60
+Aumentar 200% não é dobrar
+Aumentar 100% é dobrar (fator 2). Aumentar 200% é triplicar (fator 3) — o valor original mais duas vezes ele. O fator é sempre 1 mais a fração, e é esse 1 que representa o valor que já existia.
+O caminho de volta
+Todo fator pode ser lido ao contrário. Multiplicar por 1,5 é aumentar 50%. Multiplicar por 0,65 é dar desconto de 35%, porque 1 − 0,65 = 0,35.
+Isso é útil quando a questão informa o fator e pergunta a taxa — formato comum em problemas de crescimento.
+05 Variações sucessivas
+Duas ou mais mudanças encadeadas. Aqui está a maior parte dos pontos ganhos e perdidos neste assunto.
+A regra
+Multiplique os fatores. Nunca some as porcentagens.
+fator total = f_1 · f_2 · f_3 · …
+Um salário sobe 10% e depois mais 20%
+1,10 · 1,20 = 1,32 → aumento total de 32%
+E não 30%. O segundo aumento incide sobre um salário já aumentado, não sobre o original — por isso os 20% valem mais em reais na segunda vez.
+A ordem não importa
+Como a multiplicação é comutativa, 1,10 · 1,20 = 1,20 · 1,10. Aumentar e depois descontar dá exatamente o mesmo resultado que descontar e depois aumentar.
+Isso é útil quando o enunciado tenta confundir com a sequência das operações: ela é irrelevante para o resultado final.
+Três aumentos de 10% seguidos
+1,10^3 = 1,331 → +33,1%
+Quando a mesma variação se repete, o fator vira potência — e é exatamente essa a ponte para juros compostos, na semana 7.
+06 Aumento e desconto iguais não se anulam
+É a armadilha mais cobrada do assunto, e a que mais parece contra-intuitiva à primeira vista.
+O desconto incide sobre uma base maior que a do aumento. Os 20% de aumento valem 20 reais, mas os 20% de desconto valem 24, porque são calculados sobre 120. Por isso o valor final fica sempre abaixo do original — e o resultado seria o mesmo se a ordem fosse invertida.
+A fórmula geral
+Um aumento de x% seguido de um desconto de x% resulta em:
+1 − (x^2/10 000)
+Para x = 50: 1 − 0,25 = 0,75 — uma perda de 25%. Quanto maior o percentual, maior a perda.
+07 Voltar ao valor original
+Uma pergunta clássica: depois de um aumento de 25%, que desconto devolve o preço ao valor de antes?
+Não é o mesmo percentual
+Não são 25%. Para desfazer uma multiplicação, divide-se pelo fator:
+1 ÷ 1,25 = 0,80 → desconto de 20%
+A fórmula do retorno
+Para desfazer um aumento de x%, o desconto necessário é:
+d = (x/100 + x)
+Para x = 25: (25/125) = 0,20 = 20% ✓
+Descobrir o valor antes do desconto
+O mesmo raciocínio resolve o formato mais comum em contexto de compras:
+“Um produto custa R$ 150,00 já com 20% de desconto. Qual era o preço original?”
+150 ÷ 0,80 = R$ 187,50
+O erro instintivo é somar 20% aos 150, chegando a 180 — mas os 20% foram calculados sobre o preço original, que é maior.
+08 Por cento e ponto percentual
+Duas formas de descrever a mesma mudança, com significados diferentes. O ENEM cobra a distinção em contextos de economia e política.
+A diferença
+Ponto percentual (p.p.) — a diferença absoluta entre duas taxas.
+Por cento (%) — a variação relativa de uma taxa em relação à outra.
+A taxa de desemprego sobe de 8% para 10%
+Em pontos percentuais: 10 − 8 = 2 p.p.
+Em variação relativa: (10 − 8/8) = 0,25 = 25%
+As duas afirmações estão corretas e descrevem a mesma mudança. Dizer que “o desemprego subiu 2%” é que está errado.
+O caso que expõe a confusão
+Uma taxa de juros passa de 2% para 4%. Ela subiu 2 pontos percentuais — e, em termos relativos, dobrou, ou seja, subiu 100%. Chamar isso de “aumento de 2%” esconde que o custo do dinheiro dobrou.
+09 Porcentagem em gráficos
+Toda leitura de gráfico de setores ou de barras percentuais passa por aqui.
+Gráfico de setores
+O círculo inteiro é 100% e vale 360°. Portanto:
+1% = 3,6° · ângulo = porcentagem × 3,6
+Um setor de 90° vale 25%; um de 54° vale 15%.
+Porcentagens de bases diferentes não se somam
+Se 30% dos homens e 30% das mulheres de um grupo praticam esporte, não se conclui que 60% do grupo pratica — nem sequer que os dois grupos têm o mesmo número de praticantes.
+Só se somam porcentagens que se referem ao mesmo todo. Essa é uma das leituras equivocadas mais exploradas pela prova.
+10 Estratégia de prova
+1 · Converta tudo em fator antes de calcular
+Ao ler o enunciado, transforme cada variação em fator imediatamente. A questão vira uma multiplicação, e as variações sucessivas deixam de ser um problema.
+2 · Use 100 como valor de referência
+Quando o enunciado não dá o valor inicial e pergunta só a variação percentual, suponha 100. O resultado sai direto em porcentagem, sem álgebra.
+3 · Confira o sentido antes de marcar
+Aumento seguido de desconto de mesmo percentual sempre termina abaixo do original. Desconto sobre desconto sempre dá menos que a soma dos dois. Se o resultado contrariar isso, houve troca de operação.
+11 Os erros que mais custam pontos
+Somar as porcentagens em variações sucessivas → multiplique os fatores+10% e +20% dão +32%, não +30%. A segunda variação incide sobre valor já alterado.
++20% e depois −20% volta ao original → termina 4% abaixoO desconto incide sobre uma base maior que a do aumento.
+Após aumento de 25%, dar 25% de desconto para voltar → o desconto é de 20%Para desfazer, divide-se pelo fator: 1 ÷ 1,25 = 0,80.
+Preço com desconto de 20% é 150; original = 150 + 20% → 150 ÷ 0,80 = 187,50Os 20% incidiram sobre o preço original, que é maior que 150.
+Descontos de 30% e 10% somam 40% → somam 37%0,70 · 0,90 = 0,63, ou seja, o cliente paga 63% do preço.
+Taxa de 8% para 10% é aumento de 2% → 2 p.p., ou 25%Ponto percentual é diferença absoluta; por cento é variação relativa.
+Aumentar 200% é dobrar → é triplicarO fator é 1 + 2 = 3. O 1 representa o valor que já existia.
+Usar o valor final como denominador da variação → use o inicialDe 40 para 50 é +25%; de 50 para 40 é −20%. As bases são diferentes.
+Somar porcentagens de grupos diferentes → só se somam do mesmo todo30% dos homens e 30% das mulheres não fazem 60% do grupo.
+12 Questões comentadas
+Nove questões no formato da prova. Em todas, escreva o fator antes de fazer qualquer conta.
+Questão 1 · Achar o total
+Uma loja vendeu 45 unidades de um produto em um dia, o que corresponde a 15% de todo o estoque disponível. O estoque inicial dessa loja era de
+60 unidades
+150 unidades
+270 unidades
+300 unidades
+675 unidades
+Ver resolução
+A pergunta é do terceiro tipo: conhece-se a parte e a porcentagem, e busca-se o total. Divide-se pela forma decimal:
+45 ÷ 0,15 = 300 unidades
+Conferência: 15% de 300 = 0,15 · 300 = 45 ✓
+A alternativa E é de quem multiplicou por 15 em vez de dividir por 0,15.
+Alternativa D
+Questão 2 · Fator de aumento
+Um produto que custava R$ 80,00 sofreu reajuste de 25%. O novo preço do produto é
+R$ 85,00
+R$ 96,00
+R$ 100,00
+R$ 105,00
+R$ 120,00
+Ver resolução
+Aumento de 25% corresponde ao fator 1,25:
+80 · 1,25 = R$ 100,00
+Pelo caminho longo, para comparar: 25% de 80 é 20, e 80 + 20 = 100. Mesmo resultado, mas com duas operações em vez de uma — e o fator é o que permitirá encadear variações nas questões seguintes.
+Como 25% é (1/4), também dá para pensar: um quarto de 80 é 20.
+Alternativa C
+Questão 3 · Variações sucessivas
+O salário de um funcionário recebeu um reajuste de 10% em janeiro e outro de 20% em julho, ambos aplicados sobre o valor vigente na data. O aumento acumulado no ano foi de
+15%
+30%
+32%
+33%
+200%
+Ver resolução
+Variações sucessivas se resolvem multiplicando os fatores:
+1,10 · 1,20 = 1,32 → aumento de 32%
+Conferindo com um valor concreto: partindo de R$ 1.000,00, em janeiro vai a R$ 1.100,00; em julho, 20% de 1.100 é 220, chegando a R$ 1.320,00 — 32% acima do início ✓
+A alternativa B é a soma ingênua das taxas. O segundo reajuste incidiu sobre R$ 1.100,00, não sobre R$ 1.000,00, e por isso valeu R$ 220,00 em vez de R$ 200,00.
+Alternativa C
+Questão 4 · Aumento seguido de desconto igual
+O preço de uma mercadoria sofreu um aumento de 20% e, algumas semanas depois, um desconto de 20% sobre o preço já reajustado. Em relação ao preço inicial, o preço final ficou
+4% menor
+4% maior
+igual
+20% menor
+40% maior
+Ver resolução
+1,20 · 0,80 = 0,96 → o preço final é 96% do inicial, ou seja, 4% menor.
+Por que não volta ao original: partindo de 100, o aumento de 20% leva a 120. O desconto de 20% incide sobre 120, valendo 24 — e não 20. Retira-se mais do que se acrescentou.
+Vale como regra: aumento e desconto de mesmo percentual sempre terminam abaixo do valor original, qualquer que seja a ordem.
+Alternativa A
+Questão 5 · Voltar ao valor original
+Após um reajuste de 25%, uma loja decidiu promover um desconto sobre o novo preço, de modo que o produto voltasse a custar exatamente o valor anterior ao reajuste. O desconto concedido foi de
+15%
+20%
+22,5%
+25%
+30%
+Ver resolução
+Para desfazer uma multiplicação, divide-se pelo fator:
+1 ÷ 1,25 = 0,80 → fator de desconto 0,80 → desconto de 20%
+Conferindo com números: 100 → com +25% vira 125 → com −20% de 125 (que é 25) volta a 100 ✓
+A alternativa D é a resposta instintiva. Ela falha porque os 25% de aumento foram calculados sobre 100, enquanto o desconto incidiria sobre 125 — uma base maior.
+Pela fórmula: d = (25/125) = 20%
+Alternativa B
+Questão 6 · Descontos cumulativos
+Uma loja anuncia 30% de desconto em toda a coleção e oferece ainda 10% adicionais de abatimento no caixa, aplicados sobre o valor já reduzido. O desconto total obtido pelo cliente é de
+33%
+37%
+40%
+43%
+63%
+Ver resolução
+Multiplique os fatores de desconto:
+0,70 · 0,90 = 0,63
+O cliente paga 63% do preço, portanto o desconto foi de:
+100% − 63% = 37%
+A alternativa C é a soma das taxas, que superestima o benefício. A alternativa E confunde o que se paga com o que se desconta — leia sempre se a pergunta é sobre o desconto ou sobre o valor pago.
+Regra prática: descontos cumulativos sempre resultam em menos que a soma dos percentuais.
+Alternativa B
+Questão 7 · Pontos percentuais
+Um levantamento apontou que a taxa de desemprego de uma região passou de 8% para 10% em um ano. Sobre essa mudança, é correto afirmar que a taxa
+aumentou 2%
+aumentou 2 pontos percentuais, o que corresponde a um aumento relativo de 25%
+aumentou 20%
+aumentou 10 pontos percentuais
+dobrou
+Ver resolução
+Há duas leituras corretas da mesma mudança, e a alternativa B traz as duas.
+Diferença absoluta:
+10 − 8 = 2 pontos percentuais
+Variação relativa:
+(10 − 8/8) = 0,25 = 25%
+A alternativa A é o erro de linguagem mais comum na imprensa: “aumentou 2%” sugeriria que a taxa foi de 8% para 8,16%. A alternativa C usa o valor final como base, em vez do inicial.
+Alternativa B
+Questão 8 · Gráfico de setores
+Em um gráfico de setores que representa a distribuição de gastos de uma família, o setor correspondente aos gastos com transporte tem ângulo central de 54°. Esse setor representa, do total de gastos,
+5,4%
+10%
+15%
+18%
+54%
+Ver resolução
+O círculo inteiro corresponde a 100% e a 360°. A porcentagem é a fração do ângulo:
+(54/360) = 0,15 = 15%
+Pelo caminho do 3,6: como 1% vale 3,6°, basta dividir: 54 ÷ 3,6 = 15.
+Vale ter as referências na cabeça: 90° é 25%, 180° é 50%, 36° é 10%.
+Alternativa C
+Questão 9 · Variação total encadeada
+O preço de um insumo agrícola subiu 20% em um semestre e caiu 25% no semestre seguinte, sempre em relação ao preço vigente. Ao final do ano, em relação ao preço do início do período, o insumo ficou
+5% mais barato
+5% mais caro
+10% mais barato
+10% mais caro
+45% mais barato
+Ver resolução
+Multiplique os fatores:
+1,20 · 0,75 = 0,90
+O preço final é 90% do inicial, portanto 10% mais barato.
+Conferindo com R$ 100,00: sobe 20% e vai a R$ 120,00; cai 25% de 120, que é 30, e vai a R$ 90,00 ✓
+A alternativa A é a subtração ingênua das taxas (25 − 20 = 5). Repare que a queda de 25% incidiu sobre 120, valendo R$ 30,00 — mais do que os R$ 20,00 que haviam sido acrescentados.
+Alternativa C
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Resolvo os três cálculos básicos: achar a parte, a porcentagem e o total
+Sei que o denominador da variação é sempre o valor inicial
+Calculo 10%, 1%, 5% e 15% de cabeça
+Escrevo o fator de qualquer aumento ou desconto sem hesitar
+Leio o fator ao contrário: 1,5 é +50%; 0,65 é −35%
+Sei que aumentar 200% é triplicar, não dobrar
+Resolvo variações sucessivas multiplicando os fatores
+Sei explicar por que aumento e desconto iguais não se anulam
+Volto ao valor original dividindo pelo fator
+Acho o preço antes do desconto dividindo, e não somando a porcentagem
+Distingo ponto percentual de variação relativa
+Converto porcentagem em ângulo de setor e vice-versa
+Sei que porcentagens de bases diferentes não se somam
+Antes de marcar “Dominado” no cronograma
+Este é um dos assuntos de maior incidência da prova — resolva 40 questões, não 30, e acerte pelo menos 28. Concentre-se nas de variações sucessivas e de retorno ao valor original, onde o caminho instintivo erra. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 45 cartões deste assunto no arquivo ENEM-Matematica-09-porcentagem.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

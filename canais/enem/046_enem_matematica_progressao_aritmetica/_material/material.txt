@@ -1,0 +1,236 @@
+Progressão Aritmética
+Matemática › Álgebra e Funções › Assunto 13 de 18
+Progressão aritmética (PA)
+Uma sequência que cresce ou diminui sempre o mesmo tanto: a poupança que aumenta R$ 15,00 por mês, as fileiras de um teatro, os palitos de uma figura que se repete. Este assunto ensina a achar qualquer termo sem listar todos, a somar dezenas de termos em uma linha e a reconhecer a PA escondida nos enunciados.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Equações do 1º grau · Função afim
+Destrava
+Progressão geométrica, juros simples como sequência, padrões e contagem
+Neste assunto
+01 O que o ENEM cobra aqui
+A PA aparece no ENEM quase sempre disfarçada de situação do cotidiano. O nome “progressão aritmética” pode nem estar no texto; o que está é um aumento constante. As formas mais comuns:
+Padrões de figuras: palitos, bolinhas ou ladrilhos que crescem de forma regular; pede-se a figura de número 50 ou 100.
+Termo distante: quanto alguém vai guardar, pagar ou produzir no 12º mês, sabendo o primeiro valor e o aumento mensal.
+Soma de muitos termos: total de cadeiras de um teatro, quilômetros acumulados em um treino, total depositado em um ano.
+Contagem: quantos múltiplos de 7 há entre 100 e 500, quantos postes cabem em um trecho de estrada.
+O que rende mais aqui
+Duas habilidades. Primeiro, o “n − 1”: do 1º ao 12º termo há 11 saltos, não 12. É o erro mais frequente do tema, e os distratores são feitos dele. Segundo, a soma pela média: soma = número de termos × (primeiro + último) ÷ 2. Quem domina essas duas resolve quase tudo.
+02 O que é uma PA
+Definição
+Uma progressão aritmética é uma sequência em que cada termo, a partir do segundo, é o anterior somado a uma constante r, a razão:
+a_n = a_n−1 + r ⇔ r = a_2 − a_1 = a_3 − a_2 = …
+ | Sequência | Razão | Tipo
+ | (5, 8, 11, 14, …) | r = 3 | crescente (r > 0)
+ | (40, 34, 28, 22, …) | r = −6 | decrescente (r < 0)
+ | (7, 7, 7, …) | r = 0 | constante
+ | (1,5; 2; 2,5; 3; …) | r = 0,5 | crescente: a razão não precisa ser inteira
+ | (2, 4, 8, 16, …) | não é PA | as diferenças (2, 4, 8) não são constantes
+Razão é “segundo menos primeiro”
+Na PA decrescente (40, 34, 28, …), a razão é 34 − 40 = −6, negativa. Calcular “o maior menos o menor” e ficar com +6 faz a sequência subir quando deveria descer.
+03 Termo geral: chegar ao termo n sem listar todos
+Do primeiro termo até o termo de posição n há n − 1 saltos de tamanho r. Daí vem a fórmula central do assunto:
+Termo geral da PA
+a_n = a_1 + (n − 1) · r
+Versão a partir de qualquer termo conhecido: a_n = a_k + (n − k) · r. Do 5º ao 20º termo, por exemplo, são 15 saltos.
+Um padrão de palitos é uma PA. A primeira figura usa 4 palitos e cada quadrado novo acrescenta 3 (ele aproveita um lado do anterior). Então a_n = 4 + (n − 1) · 3 = 3n + 1, e a figura 50 usa 151 palitos, sem desenhar nenhuma das 49 anteriores.
+A contagem de saltos
+Pense numa escada: para ir do 1º ao 12º degrau você sobe 11 vezes. Por isso o 12º termo de (50, 65, 80, …) é 50 + 11 · 15 = 215, e não 50 + 12 · 15. Na dúvida, teste a fórmula com n = 1: ela tem de devolver o próprio a_1.
+Descobrir a razão a partir de dois termos
+Se a_4 = 17 e a_10 = 41, entre eles há 6 saltos: 6r = 41 − 17 = 24, r = 4. E a_1 = 17 − 3 · 4 = 5.
+04 PA é função afim nos números naturais
+Desenvolvendo o termo geral, a_n = r · n + (a_1 − r): é uma função afim y = rx + b calculada só em x = 1, 2, 3, …. A razão faz o papel do coeficiente angular.
+Os termos da PA ficam alinhados. A PA (5, 8, 11, 14, 17, 20) marcada no plano: pontos isolados (só existem para n inteiro) sobre a reta y = 3n + 2. A cada passo de 1 na posição, o termo sobe 3, a razão.
+Reconhecer uma PA numa tabela
+Se a tabela mostra valores em intervalos iguais de tempo e as diferenças entre valores consecutivos são iguais, o modelo é afim e os valores formam uma PA. Se o que se repete é o quociente, o modelo é exponencial e a sequência é uma PG, assunto seguinte.
+05 Propriedades que poupam conta
+Termo do meio é a média dos vizinhos
+a_n = (a_n−1 + a_n+1/2)
+Três números a, b, c estão em PA (nessa ordem) se e só se 2b = a + c. Exemplo: (x, 10, 16) é PA quando 2 · 10 = x + 16, ou seja, x = 4.
+Termos equidistantes dos extremos têm a mesma soma
+a_1 + a_n = a_2 + a_n−1 = a_3 + a_n−2 = …
+Numa PA de 20 termos, a_3 + a_18 = a_1 + a_20: os índices somam 21 nos dois casos. Basta conhecer um desses pares para ter a soma da PA inteira.
+Notação simétrica para três termos
+Quando o problema fala de três números em PA com soma conhecida, chame-os de x − r, x e x + r. A soma é 3x, e o r some: com soma 36, o termo do meio é 12 na hora. Para os lados de um triângulo retângulo em PA, isso leva direto ao triângulo de lados proporcionais a 3, 4 e 5.
+06 Soma dos n primeiros termos
+Conta-se que Gauss, ainda menino, somou de 1 a 100 em segundos: juntou o primeiro com o último (1 + 100), o segundo com o penúltimo (2 + 99), e assim por diante. São 50 pares de soma 101, total 5 050. A ideia vale para qualquer PA.
+Duas escadas formam um retângulo. Somar 1 + 2 + … + 6 duas vezes, uma em cada sentido, dá 6 colunas que valem 7 cada: 2S = 6 · 7. Em geral, 2S = n · (a_1 + a_n).
+Soma dos n primeiros termos
+S_n = ((a_1 + a_n) · n/2)
+Leia como “número de termos × média entre o primeiro e o último”. Se a_n não foi dado, calcule-o antes pelo termo geral.
+Exemplo · fileiras de um teatro
+25 fileiras; a primeira tem 20 cadeiras e cada uma tem 2 a mais que a anterior. Última: a_25 = 20 + 24 · 2 = 68. Total:
+S_25 = ((20 + 68) · 25/2) = 44 · 25 = 1 100
+Somas que valem decorar
+Os n primeiros naturais: 1 + 2 + … + n = (n(n + 1)/2). Os n primeiros ímpares: 1 + 3 + 5 + … = n² (os 10 primeiros ímpares somam 100).
+07 Interpolação e contagem de termos
+Interpolar k meios aritméticos entre dois números é inserir k termos entre eles formando uma PA. Com os dois extremos, a PA fica com k + 2 termos e k + 1 saltos.
+Exemplo · postes em uma estrada
+Entre os postes do km 3 e do km 27 serão instalados 5 postes, todos igualmente espaçados. São 7 postes e 6 intervalos:
+6r = 27 − 3 = 24 → r = 4 km
+Contar termos · múltiplos de 7 entre 100 e 500
+O primeiro é 105 e o último é 497. Pelo termo geral, 497 = 105 + (n − 1) · 7, então n − 1 = 56 e n = 57.
+Atalho: n = (último − primeiro/r) + 1. O “+ 1” conta o primeiro termo, que não é um salto.
+Postes e intervalos
+Numa cerca de 30 m com estacas a cada 3 m, há 10 intervalos e 11 estacas (se as duas pontas têm estaca). Contar intervalos quando se pede objetos, ou o contrário, é o mesmo erro do “n − 1”, agora fora da fórmula.
+08 PA em contexto: onde ela se esconde
+ | Situação | Por que é PA | Razão
+ | Juros simples | o juro de cada período é o mesmo | C · i (R$ 60 ao mês para R$ 2 000 a 3%)
+ | Depreciação linear | o bem perde o mesmo valor por ano | negativa
+ | Calendário | o mesmo dia da semana se repete a cada 7 dias | 7
+ | Treino progressivo | aumento fixo de distância ou carga | o aumento diário
+ | Padrões de figuras | cada etapa acrescenta o mesmo número de peças | peças acrescentadas
+Calendário com PA
+Se o dia 3 de um mês é uma segunda-feira, as segundas-feiras desse mês são 3, 10, 17, 24, 31: PA de razão 7. Para saber o dia da semana de uma data distante, divida a distância em dias por 7 e olhe o resto.
+09 Estratégia de prova
+1 · Escreva os três primeiros termos
+Antes de qualquer fórmula, liste a_1, a_2, a_3 a partir do texto. Isso confirma que é PA, dá a razão e serve para testar a fórmula que você montar.
+2 · Termo ou soma?
+“Quanto no 12º mês” pede a_12; “quanto ao todo em 12 meses” pede S_12. Muitas alternativas trazem as duas respostas; sublinhe a palavra que decide.
+3 · Use a média na soma
+A soma de uma PA é sempre (número de termos) × (termo médio). Com quantidade ímpar de termos, o termo do meio já é a média: os 5 termos (8, 11, 14, 17, 20) somam 5 · 14 = 70.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Matemática Financeira | juros simples | os montantes mês a mês formam PA de razão C · i
+ | Física | movimento uniformemente variado | as velocidades em instantes igualmente espaçados formam PA (razão a · Δt); as distâncias em segundos sucessivos a partir do repouso seguem 1, 3, 5, 7…
+ | Química | séries homólogas | cada carbono a mais acrescenta CH_2, 14 u de massa molar: uma PA
+ | Geografia | gradiente térmico | com cerca de 6,5 °C a menos a cada 1 000 m de altitude, as temperaturas formam PA decrescente
+11 Os erros que mais custam pontos
+a₁₂ = a₁ + 12r → a₁ + 11rDo 1º ao 12º termo há 11 saltos.
+Sₙ = n(a₁ + aₙ) → n(a₁ + aₙ)/2A soma usa a média dos extremos.
+Responder aₙ quando pedem Sₙ → ler “no” × “ao todo”“No 12º mês” é termo; “em 12 meses” é soma.
+Razão de (40, 34, 28) = 6 → r = −6Razão é segundo menos primeiro.
+Múltiplos entre 105 e 497: (497 − 105)/7 → + 1Conte o primeiro termo.
+5 meios entre 3 e 27: r = 24/5 → r = 24/65 meios + 2 extremos = 7 termos, 6 saltos.
+(2, 4, 8, 16) é PA → é PGAs diferenças não são constantes; os quocientes são.
+Figura n com 4n palitos → 3n + 1Quadrados vizinhos dividem um lado.
+Montante do mês n de juros simples com a₁ = C → Mₙ = C + n · CiDefina com cuidado o que é o termo 1.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: qual é o primeiro termo, qual é a razão, e o enunciado pede termo ou soma?
+Questão 1 · Padrão de palitos
+Uma criança monta, com palitos de fósforo, uma sequência de figuras. A figura 1 é um quadrado (4 palitos); a figura 2 tem dois quadrados lado a lado, que compartilham um palito (7 palitos); a figura 3 tem três quadrados em fila (10 palitos), e assim por diante. O número de palitos necessários para montar a figura 50 é
+101
+148
+150
+151
+200
+Ver resolução
+A sequência (4, 7, 10, …) é PA de razão 3. Então a_50 = 4 + 49 · 3 = 151. Pela forma simplificada, 3 · 50 + 1 = 151.
+A A usa razão 2. A B usa 49 quadrados: 3 · 49 + 1. A C esquece o palito inicial, 3 · 50. A E conta 4 palitos por quadrado, ignorando os lados compartilhados.
+Alternativa D
+Questão 2 · Termo distante
+Para juntar dinheiro, Ana depositou R$ 50,00 em janeiro e decidiu que, a cada mês, depositaria R$ 15,00 a mais do que no mês anterior. O valor que ela vai depositar em dezembro, o 12º mês, é
+R$ 165,00
+R$ 180,00
+R$ 215,00
+R$ 230,00
+R$ 1 590,00
+Ver resolução
+a_12 = 50 + 11 · 15 = 50 + 165 = 215.
+A A é só o acréscimo acumulado, 11 · 15, sem os R$ 50,00 iniciais. A B usa 12 · 15 e esquece o depósito inicial. A D usa 12 saltos em vez de 11: 50 + 12 · 15. A E é a soma dos 12 depósitos, (50 + 215) · 12 ÷ 2, mas o enunciado pede o depósito de dezembro.
+Alternativa C
+Questão 3 · Soma das fileiras
+Um teatro tem 25 fileiras de cadeiras. A primeira fileira tem 20 cadeiras e cada fileira seguinte tem 2 cadeiras a mais que a anterior. O número total de cadeiras do teatro é
+1 100
+1 125
+1 150
+1 700
+2 200
+Ver resolução
+Última fileira: a_25 = 20 + 24 · 2 = 68. Soma: (20 + 68) · 25 ÷ 2 = 44 · 25 = 1 100.
+A B usa a_25 = 20 + 25 · 2 = 70, com um salto a mais: 90 · 25 ÷ 2 = 1 125. A C soma 25 · 20 aos acréscimos de 2 a 50, como se a primeira fileira também ganhasse 2: 500 + 650. A D supõe que todas as fileiras têm 68 cadeiras. A E esquece de dividir por 2.
+Alternativa A
+Questão 4 · Interpolação
+Em um trecho reto de rodovia, há postes no km 3 e no km 27. A concessionária vai instalar mais 5 postes entre esses dois, de modo que todos os 7 postes fiquem igualmente espaçados. A distância entre dois postes vizinhos será de
+3 km
+3,43 km
+4 km
+4,8 km
+6 km
+Ver resolução
+Sete postes em fila formam 6 intervalos. A distância total é 27 − 3 = 24 km, então cada intervalo mede 24 ÷ 6 = 4 km. Os postes ficam nos km 3, 7, 11, 15, 19, 23 e 27.
+A A conta 8 intervalos, um a mais que o número de postes: 24 ÷ 8. A B divide 24 pelo número de postes, 7. A D divide pelo número de postes novos, 5. A E divide por 4, como se fossem 5 postes no total.
+Alternativa C
+Questão 5 · Contagem de múltiplos
+Uma gráfica numera ingressos de 100 a 500. Os ingressos cujo número é múltiplo de 7 dão direito a um brinde. A quantidade de ingressos premiados é
+55
+56
+57
+58
+71
+Ver resolução
+O primeiro múltiplo de 7 a partir de 100 é 105 e o último até 500 é 497. Eles formam PA de razão 7: n = (497 − 105) ÷ 7 + 1 = 56 + 1 = 57.
+A B esquece o “+ 1”, contando saltos em vez de termos. A A exclui também o 497. A D começa a contar do 98, que é menor que 100. A E conta todos os múltiplos de 7 de 7 a 497, inclusive os menores que 100.
+Alternativa C
+Questão 6 · Três termos e Pitágoras
+Um terreno tem a forma de um triângulo retângulo cujos lados, em metros, formam uma progressão aritmética. O perímetro do terreno é 36 m. A área do terreno, em metros quadrados, é
+36
+54
+67,5
+72
+108
+Ver resolução
+Lados x − r, x e x + r: a soma 3x = 36 dá x = 12. A hipotenusa é o maior lado, 12 + r:
+(12 + r)² = 12² + (12 − r)² → 48r = 144 → r = 3
+Os lados são 9, 12 e 15, e a área é 9 · 12 ÷ 2 = 54 m².
+A A confunde área com perímetro. A C usa a hipotenusa como cateto: 9 · 15 ÷ 2. A D toma o termo do meio como os dois catetos: 12 · 12 ÷ 2. A E esquece de dividir por 2.
+Alternativa B
+Questão 7 · Juros simples como PA
+Um capital de R$ 2 000,00 foi aplicado a juros simples de 3% ao mês. Os montantes ao fim de cada mês formam uma progressão aritmética. O montante atinge R$ 3 080,00 ao fim do mês de número
+17
+18
+19
+36
+51
+Ver resolução
+O juro mensal é 0,03 · 2 000 = 60. Ao fim do mês n, o montante é 2 000 + 60n. Igualando: 60n = 1 080, n = 18.
+A A parte do montante do 1º mês, 2 060, e divide 1 020 por 60, esquecendo de somar 1. A C trata 2 000 como o termo 1 da PA e usa 2 000 + (n − 1) · 60: chega a 19, mas 2 000 é o valor no instante zero, não ao fim do 1º mês. A D usa juro de R$ 30,00 ao mês. A E divide o montante inteiro por 60.
+Conferência: 18 meses a R$ 60,00 dão R$ 1 080,00 de juros.
+Alternativa B
+Questão 8 · Distância acumulada
+Um atleta iniciante correu 2 km no primeiro dia de treino e, a cada dia seguinte, correu 0,5 km a mais que no dia anterior. Ao fim dos 12 primeiros dias de treino, a distância total percorrida por ele, em quilômetros, foi
+45
+57
+60
+90
+114
+Ver resolução
+No 12º dia: a_12 = 2 + 11 · 0,5 = 7,5 km. Total: (2 + 7,5) · 12 ÷ 2 = 9,5 · 6 = 57 km.
+A A esquece o primeiro termo na soma: 7,5 · 12 ÷ 2. A C usa a_12 = 2 + 12 · 0,5 = 8, com um salto a mais. A D multiplica o último dia por 12, como se ele tivesse corrido 7,5 km todos os dias. A E esquece de dividir por 2.
+Alternativa B
+Questão 9 · Termos equidistantes
+Em uma progressão aritmética de 20 termos, a soma do 3º com o 18º termo é igual a 50. A soma de todos os 20 termos dessa progressão é
+250
+450
+475
+500
+1 000
+Ver resolução
+Os índices 3 e 18 somam 21, como 1 e 20: a_1 + a_20 = a_3 + a_18 = 50. Logo S_20 = 50 · 20 ÷ 2 = 500. Não é preciso descobrir a_1 nem r.
+A A divide por 2 duas vezes. A B usa 18 termos, a C usa 19: erros de contagem. A E esquece de dividir por 2.
+Alternativa D
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Reconheço uma PA pela diferença constante e calculo a razão como segundo menos primeiro
+Uso a_n = a_1 + (n − 1)r explicando o porquê do n − 1
+Calculo a razão a partir de dois termos quaisquer
+Transformo um padrão de figuras em termo geral
+Relaciono a PA com a função afim e a razão com a inclinação
+Uso a média dos vizinhos para achar um termo desconhecido
+Escrevo três termos como x − r, x, x + r quando a soma é dada
+Aplico a soma S_n = (a_1 + a_n)n/2 e explico a ideia de Gauss
+Uso a propriedade dos termos equidistantes para somar sem achar a razão
+Interpolo meios aritméticos contando corretamente termos e saltos
+Conto múltiplos em um intervalo com o “+ 1”
+Distingo no enunciado quando se pede o termo e quando se pede a soma
+Reconheço PA em juros simples, calendários e treinos progressivos
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez de contexto (padrões, cotidiano, contagem). Depois siga para Progressão geométrica (PG) e soma dos infinitos termos, em que o crescimento passa a ser por multiplicação.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-31-progressao-aritmetica.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

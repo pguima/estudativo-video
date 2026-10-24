@@ -1,0 +1,1077 @@
+<title>Taxas Equivalentes e Inflação</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Financeira › Assunto 4 de 6</p>
+    <h1>Taxas equivalentes e inflação</h1>
+    <p class="deck">Dez por cento ao mês não é cento e vinte por cento ao ano, e um rendimento de 10% num ano de inflação de 10% não deixou ninguém mais rico. Este assunto ensina a trocar o período de uma taxa sem errar e a separar o que o dinheiro rendeu de verdade do que só acompanhou a subida dos preços.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Escada de fatores: um capital multiplicado por 1,1 em cada um de três meses passa de 1 para 1,1, 1,21 e 1,331; dez por cento ao mês equivalem a 33,1 por cento no trimestre, não a 30 por cento">
+  <defs>
+    <marker id="h16a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c2)"/></marker>
+  </defs>
+  <line x1="24" y1="168" x2="282" y2="168" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <rect x="40" y="80" width="40" height="88" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="60" y="72" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1</text>
+  <text x="60" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 0</text>
+  <rect x="104" y="71.2" width="40" height="96.8" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="124" y="63.2" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1,1</text>
+  <text x="124" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 1</text>
+  <path d="M72 56 Q96 25.2 118 47.2" style="fill:none;stroke:var(--c2);stroke-width:1.5" marker-end="url(#h16a)"/>
+  <rect x="168" y="61.5" width="40" height="106.5" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="188" y="53.5" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1,21</text>
+  <text x="188" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 2</text>
+  <path d="M136 47.2 Q160 15.5 182 37.5" style="fill:none;stroke:var(--c2);stroke-width:1.5" marker-end="url(#h16a)"/>
+  <rect x="232" y="50.9" width="40" height="117.1" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="252" y="42.9" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1,331</text>
+  <text x="252" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 3</text>
+  <path d="M200 37.5 Q224 4.9 246 26.9" style="fill:none;stroke:var(--c2);stroke-width:1.5" marker-end="url(#h16a)"/>
+  <text x="150" y="22" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">×1,1  ×1,1  ×1,1  =  ×1,331</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">10% ao mês = 33,1% no trimestre</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>25 · Fase Ampliação</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>36 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Juros compostos e montante · Porcentagem</dd></div>
+      <div><dt>Destrava</dt><dd>Empréstimos, financiamentos e parcelamentos</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A prova raramente pede a palavra “equivalente”. Ela pede uma <strong>decisão</strong>: qual aplicação rende mais, se o salário ganhou ou perdeu da inflação, quanto custou de verdade um empréstimo anunciado com taxa mensal. Por trás de todas essas perguntas há duas ferramentas só:</p>
+<ul>
+  <li><strong>Trocar o período de uma taxa composta</strong> (de mensal para anual, de anual para semestral) sem multiplicar nem dividir pelo número de períodos.</li>
+  <li><strong>Separar inflação de ganho real</strong>, entendendo que as duas taxas se combinam por <em>multiplicação de fatores</em>, nunca por soma ou subtração.</li>
+</ul>
+<p>As contas são curtas. Quando aparece uma potência difícil, como <span class="m">1,01<sup>12</sup></span>, o enunciado dá o valor aproximado. O que separa quem acerta de quem erra é saber <strong>qual</strong> conta fazer.</p>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Uma única ideia resolve quase tudo: <strong>trabalhe com fatores</strong> (1 + taxa). Taxas compostas e inflação se acumulam multiplicando fatores; para voltar à taxa, tire 1 do fator final. Quem soma porcentagens de períodos diferentes cai em praticamente todos os distratores deste assunto.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Taxa proporcional e taxa equivalente</h2>
+<p>Duas taxas referidas a períodos diferentes podem ser comparadas de dois jeitos, e cada um serve a um regime de juros.</p>
+<div class="tw">
+<table>
+  <thead><tr><th></th><th>Taxa proporcional</th><th>Taxa equivalente</th></tr></thead>
+  <tbody>
+    <tr><td>Regime</td><td><strong>Juros simples</strong></td><td><strong>Juros compostos</strong></td></tr>
+    <tr><td>Como se obtém</td><td>Multiplica ou divide pelo número de períodos</td><td>Eleva ou extrai raiz do <strong>fator</strong></td></tr>
+    <tr><td>2% ao mês equivale a, no ano</td><td class="m">12 · 2% = 24%</td><td class="m">1,02<sup>12</sup> − 1 ≈ 26,8%</td></tr>
+    <tr><td>Por quê</td><td>Os juros incidem sempre sobre o capital inicial</td><td>Os juros de cada mês rendem juros nos meses seguintes</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Duas taxas são <strong>equivalentes</strong> quando, aplicadas ao mesmo capital pelo mesmo prazo total, produzem o <strong>mesmo montante</strong>. Em juros compostos, 2% ao mês e 26,8% ao ano são equivalentes; 2% ao mês e 24% ao ano não são.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 232" role="img" aria-label="Gráfico do fator acumulado em doze meses a 2 por cento ao mês: a curva dos juros compostos termina em 1,268, isto é 26,8 por cento, acima da reta tracejada da taxa proporcional, que termina em 1,24, isto é 24 por cento">
+  <defs>
+    <marker id="ax16" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="62" y1="196" x2="414" y2="196" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax16)"/>
+  <line x1="62" y1="196" x2="62" y2="16" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax16)"/>
+  <line x1="58" y1="196" x2="62" y2="196" style="stroke:var(--ink-2);stroke-width:1"/>
+  <line x1="62" y1="196" x2="392" y2="196" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="54" y="200" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1,0</text>
+  <line x1="58" y1="143.3" x2="62" y2="143.3" style="stroke:var(--ink-2);stroke-width:1"/>
+  <line x1="62" y1="143.3" x2="392" y2="143.3" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="54" y="147.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1,1</text>
+  <line x1="58" y1="90.7" x2="62" y2="90.7" style="stroke:var(--ink-2);stroke-width:1"/>
+  <line x1="62" y1="90.7" x2="392" y2="90.7" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="54" y="94.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1,2</text>
+  <line x1="58" y1="38" x2="62" y2="38" style="stroke:var(--ink-2);stroke-width:1"/>
+  <line x1="62" y1="38" x2="392" y2="38" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="54" y="42" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1,3</text>
+  <line x1="62" y1="196" x2="62" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="62" y="213" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="144.5" y1="196" x2="144.5" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="144.5" y="213" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="227" y1="196" x2="227" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="227" y="213" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="309.5" y1="196" x2="309.5" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="309.5" y="213" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">9</text>
+  <line x1="392" y1="196" x2="392" y2="200" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="392" y="213" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">12</text>
+  <text x="414" y="188" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">meses</text>
+  <text x="70" y="26" class="svg-lbl" style="fill:var(--ink-3)">fator acumulado</text>
+  <line x1="62" y1="196" x2="392" y2="69.6" style="stroke:var(--c2);stroke-width:2.2;stroke-dasharray:6 4"/>
+  <polyline points="62,196 68.9,193.4 75.8,190.8 82.6,188.1 89.5,185.5 96.4,182.8 103.2,180.1 110.1,177.4 117,174.7 123.9,172 130.8,169.3 137.6,166.5 144.5,163.8 151.4,161 158.2,158.2 165.1,155.4 172,152.6 178.9,149.8 185.8,146.9 192.6,144.1 199.5,141.2 206.4,138.3 213.2,135.4 220.1,132.5 227,129.6 233.9,126.6 240.8,123.7 247.6,120.7 254.5,117.7 261.4,114.7 268.2,111.7 275.1,108.6 282,105.6 288.9,102.5 295.8,99.5 302.6,96.4 309.5,93.3 316.4,90.1 323.2,87 330.1,83.8 337,80.7 343.9,77.5 350.8,74.3 357.6,71.1 364.5,67.8 371.4,64.6 378.2,61.3 385.1,58 392,54.7" style="fill:none;stroke:var(--c1);stroke-width:2.5"/>
+  <circle cx="89.5" cy="185.5" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="117" cy="174.7" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="144.5" cy="163.8" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="172" cy="152.6" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="199.5" cy="141.2" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="227" cy="129.6" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="254.5" cy="117.7" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="282" cy="105.6" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="309.5" cy="93.3" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="337" cy="80.7" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="364.5" cy="67.8" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="392" cy="54.7" r="2.6" style="fill:var(--c1)"/>
+  <text x="400" y="58.7" class="svg-num" style="fill:var(--c1)">26,8%</text>
+  <text x="400" y="75.6" class="svg-num" style="fill:var(--c2)">24%</text>
+  <text x="95" y="53.8" class="svg-lbl" style="fill:var(--c1)">composto: 1,02¹²</text>
+  <text x="216" y="180.2" class="svg-lbl" style="fill:var(--c2)">proporcional: 12 × 2%</text>
+</svg>
+<figcaption><b>Proporcional fica abaixo da equivalente.</b> A reta tracejada soma 2% por mês e chega a 24%; a curva multiplica por 1,02 a cada mês e chega a 26,8%. A diferença é o juro sobre juro, e cresce com o prazo e com a taxa.</figcaption>
+</figure>
+<p>No regime de juros simples (assunto <em>Juros simples</em>), a taxa proporcional é a correta. No regime composto (assunto <em>Juros compostos e montante</em>), que é o de quase toda situação real, ela está errada — e é a alternativa que o ENEM coloca para quem esquece disso.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Como calcular a taxa equivalente</h2>
+<p>Se um período longo contém <span class="m"><span class="v">n</span></span> períodos curtos, o fator do período longo é o fator do curto elevado a <span class="m"><span class="v">n</span></span>:</p>
+<div class="eq">
+  <span class="lbl">Taxas equivalentes em juros compostos</span>
+  <p class="m">1 + <span class="v">i</span><sub>longo</sub> = (1 + <span class="v">i</span><sub>curto</sub>)<sup><span class="v">n</span></sup></p>
+</div>
+<p>O caminho inverso, do longo para o curto, é uma raiz. Na prova ela sai “de cabeça” porque os números são escolhidos para isso. Reconheça os fatores mais usados:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Taxa curta</th><th>Fator elevado</th><th>Taxa longa equivalente</th><th>Proporcional (errada)</th></tr></thead>
+  <tbody>
+    <tr><td>10% ao mês</td><td class="m">1,1<sup>2</sup> = 1,21</td><td><strong>21% ao bimestre</strong></td><td>20%</td></tr>
+    <tr><td>10% ao mês</td><td class="m">1,1<sup>3</sup> = 1,331</td><td><strong>33,1% ao trimestre</strong></td><td>30%</td></tr>
+    <tr><td>20% ao semestre</td><td class="m">1,2<sup>2</sup> = 1,44</td><td><strong>44% ao ano</strong></td><td>40%</td></tr>
+    <tr><td>1% ao mês</td><td class="m">1,01<sup>12</sup> ≈ 1,1268</td><td><strong>≈ 12,68% ao ano</strong></td><td>12%</td></tr>
+    <tr><td>2% ao mês</td><td class="m">1,02<sup>12</sup> ≈ 1,268</td><td><strong>≈ 26,8% ao ano</strong></td><td>24%</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — do longo para o curto: qual taxa semestral equivale a 44% ao ano?</span>
+  <p class="m">(1 + <span class="v">i</span>)<sup>2</sup> = 1,44 &nbsp;→&nbsp; 1 + <span class="v">i</span> = <span class="rad"><i>1,44</i></span> = 1,2 &nbsp;→&nbsp; <span class="v">i</span> = <strong>20% ao semestre</strong></p>
+  <p>A proporcional daria 22% ao semestre, e 1,22<sup>2</sup> ≈ 1,488: quase 49% no ano, não 44%.</p>
+</div>
+<div class="box warn">
+  <span class="tag">O efeito cresce com a taxa</span>
+  <p>Com taxas pequenas e prazos curtos, a equivalente e a proporcional ficam próximas (1% ao mês: 12% contra 12,68%). Com taxas altas, a distância explode: 10% ao mês dão <span class="m">1,1<sup>12</sup> ≈ 3,14</span>, isto é, cerca de <strong>214% ao ano</strong>, e não 120%. É assim que o rotativo do cartão de crédito transforma uma taxa “de um dígito ao mês” numa taxa anual de três dígitos.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Taxa nominal e taxa efetiva</h2>
+<p>Bancos e contratos às vezes anunciam uma taxa num período e capitalizam em outro: “24% ao ano, capitalizados mensalmente”. Essa é a <strong>taxa nominal</strong>. Ela não é a que você paga.</p>
+<div class="box def">
+  <span class="tag">Como ler uma taxa nominal</span>
+  <ol style="margin:6px 0 0">
+    <li>Divida a taxa nominal pelo número de capitalizações: <span class="m">24% ÷ 12 = 2% ao mês</span>. Essa divisão é a <strong>única</strong> que a convenção permite.</li>
+    <li>Essa taxa do período de capitalização é efetiva. Capitalize-a pelo prazo desejado: <span class="m">1,02<sup>12</sup> ≈ 1,268</span>.</li>
+    <li>A <strong>taxa efetiva</strong> anual é <span class="m">≈ 26,8% ao ano</span>.</li>
+  </ol>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Anúncio (nominal)</th><th>Taxa por período</th><th>Efetiva anual</th></tr></thead>
+  <tbody>
+    <tr><td>12% a.a. com capitalização mensal</td><td>1% ao mês</td><td class="m">1,01<sup>12</sup> − 1 ≈ 12,68%</td></tr>
+    <tr><td>24% a.a. com capitalização semestral</td><td>12% ao semestre</td><td class="m">1,12<sup>2</sup> − 1 = 25,44%</td></tr>
+    <tr><td>24% a.a. com capitalização mensal</td><td>2% ao mês</td><td class="m">1,02<sup>12</sup> − 1 ≈ 26,8%</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">A mesma taxa nominal, custos diferentes</span>
+  <p>As duas últimas linhas anunciam “24% ao ano”, mas custam 25,44% e 26,8%. Quanto mais frequente a capitalização, maior a taxa efetiva. Para comparar propostas, <strong>converta todas para efetivas no mesmo período</strong>; a nominal sozinha não serve para comparar nada.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Taxas acumuladas em períodos sucessivos</h2>
+<p>Quando a taxa muda de um período para outro, a regra continua a mesma do assunto <em>Porcentagem</em>: multiplique os fatores de cada período.</p>
+<div class="eq">
+  <span class="lbl">Taxa acumulada</span>
+  <p class="m">1 + <span class="v">i</span><sub>acum</sub> = (1 + <span class="v">i</span><sub>1</sub>) · (1 + <span class="v">i</span><sub>2</sub>) · … · (1 + <span class="v">i</span><sub><span class="v">n</span></sub>)</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — um fundo rendeu +10%, +20% e −10% em três meses</span>
+  <p class="m">1,1 · 1,2 · 0,9 = 1,188 &nbsp;→&nbsp; acumulado de <strong>18,8%</strong></p>
+  <p>A soma das taxas daria 20%. A perda de 10% no terceiro mês incide sobre um valor já maior, por isso tira mais que os 10 pontos da soma.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Taxa média por período</span>
+  <p>Se o acumulado em <span class="m"><span class="v">n</span></span> períodos é conhecido, a taxa constante que daria o mesmo resultado é a equivalente da seção 03 — a média geométrica dos fatores, não a média das porcentagens. Um acumulado de 21% em dois meses corresponde a 10% ao mês, não a 10,5%.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Inflação e inflação acumulada</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p><strong>Inflação</strong> é o aumento generalizado dos preços num período. Ela é medida por <strong>índices de preços</strong>, que acompanham o custo de uma cesta fixa de produtos e serviços (no Brasil, o índice oficial é o IPCA, calculado pelo IBGE). A taxa de inflação é a variação percentual desse custo.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — a cesta custava R$ 500,00 e passou a custar R$ 540,00</span>
+  <p class="m"><span class="frac"><i>540</i><i>500</i></span> = 1,08 &nbsp;→&nbsp; inflação de <strong>8%</strong> no período</p>
+</div>
+<p>Inflação de vários períodos se acumula como qualquer taxa composta: multiplicando fatores.</p>
+<div class="eq">
+  <span class="lbl">Inflação de 5% num ano e de 4% no ano seguinte</span>
+  <p class="m">1,05 · 1,04 = 1,092 &nbsp;→&nbsp; acumulada de <strong>9,2%</strong> em dois anos, não 9%</p>
+</div>
+<div class="box warn">
+  <span class="tag">Inflação menor não significa preços menores</span>
+  <p>Se a inflação cai de 8% para 4%, os preços <strong>continuam subindo</strong>, só que mais devagar. Preço caindo é <strong>deflação</strong> (taxa negativa). Essa distinção aparece em questões de leitura de gráficos de inflação: uma curva descendente de taxas não é uma curva descendente de preços.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Poder de compra e valores corrigidos</h2>
+<p>Se os preços sobem, a mesma quantia compra menos. O <strong>poder de compra</strong> fica dividido pelo fator da inflação.</p>
+<div class="eq">
+  <span class="lbl">Poder de compra depois de uma inflação π</span>
+  <p class="m">poder de compra = <span class="frac"><i>1</i><i>1 + π</i></span></p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Inflação no período</th><th>Poder de compra restante</th><th>Perda de poder de compra</th></tr></thead>
+  <tbody>
+    <tr><td>25%</td><td class="m">1 ÷ 1,25 = 0,80</td><td><strong>20%</strong> (não 25%)</td></tr>
+    <tr><td>100%</td><td class="m">1 ÷ 2 = 0,50</td><td><strong>50%</strong> (não 100%)</td></tr>
+    <tr><td>10%</td><td class="m">1 ÷ 1,1 ≈ 0,909</td><td><strong>≈ 9,1%</strong></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Por que a perda é menor que a inflação</span>
+  <p>Mesmo com inflação de 100% — preços dobrando —, o dinheiro não vira pó: ele passa a comprar <strong>metade</strong>. A perda é de 50%. É o mesmo efeito do assunto <em>Porcentagem</em>: subir 25% e depois descer 20% volta ao ponto de partida.</p>
+</div>
+<h3>Deflacionar: comparar valores de datas diferentes</h3>
+<p>Para saber se um valor “aumentou de verdade”, divida o valor novo pelo fator da inflação do período. O resultado é o valor novo expresso <strong>em dinheiro da data antiga</strong>.</p>
+<div class="eq">
+  <span class="lbl">Um salário passou de R$ 2.000,00 para R$ 2.400,00 num período com inflação de 20%</span>
+  <p class="m"><span class="frac"><i>2.400</i><i>1,20</i></span> = 2.000 &nbsp;→&nbsp; o poder de compra é <strong>o mesmo</strong>; o aumento nominal de 20% só repôs a inflação</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Taxa real de juros</h2>
+<p>Uma aplicação anuncia sua <strong>taxa nominal</strong> (ou aparente): quanto o saldo em reais cresceu. A <strong>taxa real</strong> é quanto cresceu o poder de compra — o que sobra depois de descontar a inflação. As três se ligam por fatores:</p>
+<div class="eq">
+  <span class="lbl">Relação entre taxa nominal, inflação e taxa real</span>
+  <p class="m">(1 + <span class="v">i</span><sub>nominal</sub>) = (1 + <span class="v">i</span><sub>real</sub>) · (1 + π)</p>
+  <p class="m">1 + <span class="v">i</span><sub>real</sub> = <span class="frac"><i>1 + <span class="v">i</span><sub>nominal</sub></i><i>1 + π</i></span></p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 198" role="img" aria-label="Decomposição de um rendimento nominal de 15,5 por cento: R$ 100 viram R$ 105 só para repor a inflação de 5 por cento, e depois R$ 115,50 com ganho real de 10 por cento; o fator nominal 1,155 é o produto 1,05 vezes 1,10">
+  <defs>
+    <marker id="fi4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c4)"/></marker>
+    <marker id="fi3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c3)"/></marker>
+    <marker id="fi1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+  </defs>
+  <rect x="16" y="52" width="108" height="52" rx="9" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="70" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink)">R$ 100,00</text>
+  <text x="70" y="94" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">aplicado</text>
+  <rect x="176" y="52" width="108" height="52" rx="9" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="230" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink)">R$ 105,00</text>
+  <text x="230" y="94" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">só repõe preços</text>
+  <rect x="336" y="52" width="108" height="52" rx="9" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="390" y="76" text-anchor="middle" class="svg-num" style="fill:var(--ink)">R$ 115,50</text>
+  <text x="390" y="94" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">resgatado</text>
+  <line x1="128" y1="78" x2="170" y2="78" style="stroke:var(--c4);stroke-width:2" marker-end="url(#fi4)"/>
+  <text x="150" y="44" text-anchor="middle" class="svg-num" style="fill:var(--c4)">×1,05</text>
+  <text x="150" y="30" text-anchor="middle" class="svg-lbl" style="fill:var(--c4);font-size:10px">inflação</text>
+  <line x1="288" y1="78" x2="330" y2="78" style="stroke:var(--c3);stroke-width:2" marker-end="url(#fi3)"/>
+  <text x="310" y="44" text-anchor="middle" class="svg-num" style="fill:var(--c3)">×1,10</text>
+  <text x="310" y="30" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">ganho real</text>
+  <path d="M70 112 Q70 138 100 138 L360 138 Q390 138 390 112" style="fill:none;stroke:var(--c1);stroke-width:2" marker-end="url(#fi1)"/>
+  <text x="230" y="160" text-anchor="middle" class="svg-num" style="fill:var(--c1)">nominal: ×1,155  →  15,5% no período</text>
+  <text x="230" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">1,155 = 1,05 × 1,10   (não 5% + 10%)</text>
+</svg>
+<figcaption><b>O rendimento nominal é a inflação vezes o ganho real.</b> Dos R$ 15,50 de rendimento, R$ 5,00 só mantêm o poder de compra; o ganho real é de 10% sobre os R$ 105,00 já corrigidos. Por isso os fatores se multiplicam e as taxas não se somam.</figcaption>
+</figure>
+<div class="eq">
+  <span class="lbl">Exemplo 1 — aplicação rendeu 15,5% num ano de inflação de 5%</span>
+  <p class="m">1 + <span class="v">i</span><sub>real</sub> = <span class="frac"><i>1,155</i><i>1,05</i></span> = 1,10 &nbsp;→&nbsp; ganho real de <strong>10%</strong></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo 2 — poupança rendeu 8% num ano de inflação de 10%</span>
+  <p class="m">1 + <span class="v">i</span><sub>real</sub> = <span class="frac"><i>1,08</i><i>1,10</i></span> ≈ 0,982 &nbsp;→&nbsp; taxa real ≈ <strong>−1,8%</strong></p>
+  <p>O saldo aumentou em reais, mas compra menos do que antes. Taxa real negativa é perda, mesmo com “rendimento”.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> A aproximação por subtração e quando ela falha</h2>
+<p>No noticiário é comum ler “juros de 12% e inflação de 5%: ganho real de 7%”. É uma aproximação:</p>
+<div class="eq">
+  <span class="lbl">Aproximação (só para taxas pequenas)</span>
+  <p class="m"><span class="v">i</span><sub>real</sub> ≈ <span class="v">i</span><sub>nominal</sub> − π</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Nominal</th><th>Inflação</th><th>Subtração</th><th>Exata</th><th>Erro</th></tr></thead>
+  <tbody>
+    <tr><td>1% ao mês</td><td>0,5% ao mês</td><td>0,5%</td><td class="m">1,01 ÷ 1,005 − 1 ≈ 0,4975%</td><td>desprezível</td></tr>
+    <tr><td>26%</td><td>20%</td><td>6%</td><td class="m">1,26 ÷ 1,20 − 1 = 5%</td><td>1 ponto inteiro</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Na prova, use a conta exata</span>
+  <p>Quando as alternativas trazem 5% e 6% lado a lado, a subtração leva direto ao distrator. Os números do ENEM são escolhidos para a divisão de fatores sair redonda (1,26 ÷ 1,20 = 1,05). Use a subtração só para conferir a ordem de grandeza.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Converta tudo para fatores antes de pensar</span>
+  <p>Escreva ao lado de cada taxa o fator correspondente: 20% → 1,2; −10% → 0,9; inflação de 25% → 1,25. Juntar períodos é multiplicar; descontar inflação é dividir; voltar à taxa é tirar 1. Com fatores, não há como “somar porcentagens” por engano.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Identifique o regime e o tipo de taxa</span>
+  <p>Juros simples aceitam taxa proporcional; compostos exigem equivalente. “Capitalizado mensalmente” anuncia taxa nominal — divida só para achar a taxa do período e depois capitalize. Leia cada palavra do enunciado sobre a taxa antes de calcular.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Use as aproximações dadas e confira a plausibilidade</span>
+  <p>O enunciado fornece potências como <span class="m">1,01<sup>12</sup> ≈ 1,1268</span>; não tente calculá-las. Depois, confira: a taxa anual equivalente deve ser <strong>um pouco maior</strong> que a proporcional; a perda de poder de compra deve ser <strong>menor</strong> que a inflação; a taxa real deve ficar <strong>um pouco abaixo</strong> da diferença entre nominal e inflação.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">2% ao mês = 24% ao ano em juros compostos</span> &nbsp;→&nbsp; <span class="c">1,02¹² − 1 ≈ 26,8%</span></span><small>Multiplicar pelo número de períodos só vale em juros simples.</small></li>
+  <li><span><span class="x">Dividir a taxa anual por 12 para achar a mensal equivalente</span> &nbsp;→&nbsp; <span class="c">extraia a raiz do fator</span></span><small>44% ao ano equivalem a 20% ao semestre, não 22%.</small></li>
+  <li><span><span class="x">Tomar a taxa nominal pela efetiva</span> &nbsp;→&nbsp; <span class="c">divida pela capitalização e capitalize</span></span><small>“12% a.a. capitalizados mensalmente” custam cerca de 12,68% ao ano.</small></li>
+  <li><span><span class="x">Esquecer de tirar 1 do fator</span> &nbsp;→&nbsp; <span class="c">fator 1,268 é taxa de 26,8%</span></span><small>O distrator “126,8%” é exatamente este erro.</small></li>
+  <li><span><span class="x">Somar inflações de períodos sucessivos</span> &nbsp;→&nbsp; <span class="c">multiplique os fatores</span></span><small>10% e 20% acumulam 32%, não 30%.</small></li>
+  <li><span><span class="x">Perda de poder de compra igual à inflação</span> &nbsp;→&nbsp; <span class="c">1 − 1/(1 + π)</span></span><small>Inflação de 25% tira 20% do poder de compra.</small></li>
+  <li><span><span class="x">Taxa real = nominal − inflação</span> &nbsp;→&nbsp; <span class="c">divida os fatores</span></span><small>26% com inflação de 20% dá 5% real, não 6%.</small></li>
+  <li><span><span class="x">Rendimento positivo é sempre ganho</span> &nbsp;→&nbsp; <span class="c">compare com a inflação</span></span><small>Render 8% com inflação de 10% é perder poder de compra.</small></li>
+  <li><span><span class="x">Inflação caindo = preços caindo</span> &nbsp;→&nbsp; <span class="c">preços sobem mais devagar</span></span><small>Preço caindo é deflação, taxa negativa.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de qualquer conta, escreva os fatores ao lado das taxas.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Taxa mensal para anual</span>
+    <p class="enun">Uma aplicação rende 1% ao mês no regime de juros compostos. Considere 1,01<sup>12</sup> ≈ 1,1268. A taxa anual equivalente a essa aplicação é, aproximadamente,</p>
+    <ol class="alt"><li>1,27%</li><li>12,00%</li><li>12,12%</li><li>12,68%</li><li>112,68%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Em juros compostos, a taxa anual equivalente vem do fator mensal elevado a 12:</p>
+      <p class="m">1 + <span class="v">i</span> = 1,01<sup>12</sup> ≈ 1,1268 &nbsp;→&nbsp; <span class="v">i</span> ≈ 0,1268 = <strong>12,68%</strong></p>
+      <p><strong>Os distratores:</strong> B (12%) é a taxa proporcional, válida só em juros simples. C (12,12%) vem de multiplicar o fator 1,01 por 12. E (112,68%) é o fator escrito como porcentagem, sem tirar 1. A (1,27%) desloca a vírgula ao converter 0,1268.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Do período longo para o curto</span>
+    <p class="enun">Um investimento rendeu 33,1% em um trimestre, no regime de juros compostos, com a mesma taxa em cada mês. A taxa mensal desse investimento foi de</p>
+    <ol class="alt"><li>1,10%</li><li>3,31%</li><li>10,00%</li><li>11,03%</li><li>33,10%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O fator do trimestre é o fator mensal ao cubo:</p>
+      <p class="m">(1 + <span class="v">i</span>)<sup>3</sup> = 1,331 &nbsp;→&nbsp; 1 + <span class="v">i</span> = 1,1 &nbsp;(pois 1,1 · 1,1 · 1,1 = 1,331) &nbsp;→&nbsp; <span class="v">i</span> = <strong>10%</strong></p>
+      <p><strong>Os distratores:</strong> D (11,03%) é a taxa proporcional, 33,1 ÷ 3, que ignora o juro sobre juro. A (1,10%) confunde o fator 1,10 com a taxa. B (3,31%) desloca a vírgula de 33,1. E repete a taxa trimestral como se fosse mensal.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Taxa nominal e taxa efetiva</span>
+    <p class="enun">Um contrato de empréstimo informa uma taxa de 18% ao ano, com capitalização semestral. A taxa efetiva anual desse contrato é de</p>
+    <ol class="alt"><li>9,00%</li><li>18,00%</li><li>18,81%</li><li>19,56%</li><li>118,81%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A taxa de 18% ao ano é <strong>nominal</strong>. Dividida pelas duas capitalizações, dá a taxa efetiva do semestre: <span class="m">18% ÷ 2 = 9%</span>. Capitalizando por dois semestres:</p>
+      <p class="m">1,09<sup>2</sup> = 1,1881 &nbsp;→&nbsp; <strong>18,81% ao ano</strong></p>
+      <p><strong>Os distratores:</strong> B toma a taxa nominal pela efetiva, o erro principal que a questão testa. A (9%) é a taxa do semestre, uma etapa intermediária. D (19,56%) é o que se obteria com capitalização mensal (1,5% ao mês, 1,015<sup>12</sup>), que não é a do contrato. E é o fator 1,1881 sem tirar 1.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Inflação acumulada</span>
+    <p class="enun">Em um país, a inflação foi de 10% em um ano e de 20% no ano seguinte. A inflação acumulada nesses dois anos foi de</p>
+    <ol class="alt"><li>2%</li><li>15%</li><li>30%</li><li>32%</li><li>132%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Taxas sucessivas se acumulam multiplicando fatores:</p>
+      <p class="m">1,10 · 1,20 = 1,32 &nbsp;→&nbsp; <strong>32%</strong></p>
+      <p>Um produto de R$ 100,00 passou a R$ 110,00 e depois a R$ 132,00: os 20% do segundo ano incidiram sobre um preço que já tinha subido.</p>
+      <p><strong>Os distratores:</strong> C soma as taxas. B é a média, como se a pergunta fosse a taxa anual média (e mesmo essa não seria 15%). A é a diferença entre as taxas. E é o fator 1,32 escrito como porcentagem.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Poder de compra</span>
+    <p class="enun">Durante um período, os preços de uma cidade subiram, em média, 25%, enquanto o salário de um trabalhador permaneceu o mesmo. Em relação ao início do período, o poder de compra desse salário diminuiu</p>
+    <ol class="alt"><li>12,5%</li><li>20%</li><li>25%</li><li>75%</li><li>80%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O poder de compra fica dividido pelo fator da inflação:</p>
+      <p class="m"><span class="frac"><i>1</i><i>1,25</i></span> = 0,80 &nbsp;→&nbsp; o salário compra 80% do que comprava &nbsp;→&nbsp; perda de <strong>20%</strong></p>
+      <p>Conferência: com R$ 100,00 comprava-se 100 unidades de R$ 1,00; agora cada unidade custa R$ 1,25 e o mesmo dinheiro compra 80.</p>
+      <p><strong>Os distratores:</strong> C iguala a perda à inflação. E é o poder de compra que <em>restou</em>, não o que se perdeu. D é 100% − 25%, que mistura as duas coisas. A é a metade de 25%, sem fundamento.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Taxa real</span>
+    <p class="enun">Um investidor aplicou suas economias por um ano e obteve rendimento de 26%. No mesmo ano, a inflação foi de 20%. A taxa real de rendimento dessa aplicação foi de</p>
+    <ol class="alt"><li>4,76%</li><li>5,00%</li><li>6,00%</li><li>46,00%</li><li>51,20%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A taxa real vem da divisão dos fatores:</p>
+      <p class="m">1 + <span class="v">i</span><sub>real</sub> = <span class="frac"><i>1,26</i><i>1,20</i></span> = 1,05 &nbsp;→&nbsp; <strong>5%</strong></p>
+      <p><strong>Os distratores:</strong> C é a aproximação por subtração (26 − 20), que falha com taxas desse tamanho. A vem da divisão invertida, <span class="m">1 − 1,20 ÷ 1,26 ≈ 4,76%</span>. D soma as taxas e E multiplica os fatores (1,26 · 1,20 = 1,512): os dois tratam a inflação como ganho.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Reajuste e inflação</span>
+    <p class="enun">Uma categoria profissional recebeu reajuste salarial de 6% em um ano no qual a inflação foi de 10%. Considere 1,06 ÷ 1,10 ≈ 0,964. Em termos reais, esses trabalhadores tiveram</p>
+    <ol class="alt"><li>ganho de 4%.</li><li>ganho de cerca de 3,6%.</li><li>perda de 16%.</li><li>perda de 4%.</li><li>perda de cerca de 3,6%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Como o reajuste foi menor que a inflação, houve perda. O tamanho dela vem da divisão dos fatores:</p>
+      <p class="m"><span class="frac"><i>1,06</i><i>1,10</i></span> ≈ 0,964 &nbsp;→&nbsp; o salário compra cerca de 96,4% do que comprava &nbsp;→&nbsp; perda de cerca de <strong>3,6%</strong></p>
+      <p><strong>Os distratores:</strong> D é a subtração 6 − 10, que superestima a perda. C soma reajuste e inflação, como se os dois fossem perdas. A e B trocam o sinal: um reajuste positivo parece ganho, mas não quando os preços sobem mais.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Aumento real de um preço</span>
+    <p class="enun">O preço de um eletrodoméstico passou de R$ 200,00 para R$ 276,00 em um período no qual a inflação acumulada foi de 20%. Descontada a inflação, o preço desse eletrodoméstico teve um aumento real de</p>
+    <ol class="alt"><li>15%</li><li>18%</li><li>38%</li><li>58%</li><li>138%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Deflacione o preço novo, levando-o para o dinheiro da data inicial:</p>
+      <p class="m"><span class="frac"><i>276</i><i>1,20</i></span> = 230 &nbsp;→&nbsp; <span class="frac"><i>230</i><i>200</i></span> = 1,15 &nbsp;→&nbsp; aumento real de <strong>15%</strong></p>
+      <p>Pelo mesmo caminho da taxa real: o fator nominal é <span class="m">276 ÷ 200 = 1,38</span>, e <span class="m">1,38 ÷ 1,20 = 1,15</span>.</p>
+      <p><strong>Os distratores:</strong> B subtrai 38 − 20. C é o aumento nominal, sem descontar a inflação. D soma aumento e inflação. E é o fator 1,38 escrito como porcentagem.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Reconhecer a taxa equivalente</span>
+    <p class="enun">Um fundo rende 44% ao ano no regime de juros compostos. Qual das taxas a seguir, aplicada no mesmo regime, é equivalente à desse fundo?</p>
+    <ol class="alt"><li>3,67% ao mês</li><li>11% ao trimestre</li><li>14,67% ao quadrimestre</li><li>22% ao semestre</li><li>20% ao semestre</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Um ano tem dois semestres. Teste a alternativa que dá conta redonda:</p>
+      <p class="m">1,20<sup>2</sup> = 1,44 &nbsp;→&nbsp; 20% ao semestre equivalem a <strong>44% ao ano</strong></p>
+      <p><strong>Os distratores:</strong> todas as outras são <em>proporcionais</em> a 44% ao ano — 44 ÷ 12, 44 ÷ 4, 44 ÷ 3 e 44 ÷ 2 —, e por isso rendem mais que 44% quando capitalizadas. A D, por exemplo, dá 1,22<sup>2</sup> ≈ 1,488, quase 49% no ano. Quatro alternativas feitas com o mesmo erro: a questão premia quem desconfia da divisão.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Diferencio taxa proporcional (juros simples) de taxa equivalente (juros compostos)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a taxa anual equivalente a uma taxa mensal elevando o fator a 12</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro a taxa de um período curto a partir da de um período longo pela raiz do fator</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço de cabeça 1,1² = 1,21, 1,1³ = 1,331 e 1,2² = 1,44</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Transformo uma taxa nominal em efetiva: divido pela capitalização e capitalizo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo taxas acumuladas multiplicando fatores, inclusive com taxas negativas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico o que é inflação, índice de preços e inflação acumulada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a perda de poder de compra como 1 − 1/(1 + π)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Deflaciono um valor para compará-lo com outro de data anterior</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico (1 + nominal) = (1 + real)(1 + inflação) nos dois sentidos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei quando a aproximação “nominal menos inflação” falha</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo inflação em queda de deflação</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sigo para <em>Empréstimos, financiamentos e parcelamentos</em> sabendo converter qualquer taxa para o período da parcela</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de <strong>taxa real e reajuste salarial</strong> e as de <strong>comparação entre taxas de períodos diferentes</strong>, os dois formatos mais frequentes. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>42 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-16-taxas-equivalentes-inflacao.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Financeira</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-16";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

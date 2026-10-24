@@ -1,0 +1,1085 @@
+<title>Potenciação e Radiciação</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 4 de 12</p>
+    <h1>Potenciação, radiciação e propriedades</h1>
+    <p class="deck">Abre a semana 2 e é a ferramenta mais reaproveitada da prova inteira: notação científica, juros compostos, Pitágoras, áreas, meia-vida, pH, escala Richter — todas dependem do que está nesta página.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Gráfico de barras das potências de dois, de dois elevado a zero até dois elevado a cinco, mostrando o crescimento acelerado">
+  <line x1="16" y1="176" x2="288" y2="176" style="stroke:var(--rule-2);stroke-width:1.5"/>
+  <rect x="26" y="171.9" width="30" height="4.1" rx="1.5" style="fill:var(--c1-line)"/>
+  <rect x="68" y="167.9" width="30" height="8.1" rx="1.5" style="fill:var(--c1-line)"/>
+  <rect x="110" y="159.7" width="30" height="16.3" rx="1.5" style="fill:var(--c1)"/>
+  <rect x="152" y="143.5" width="30" height="32.5" rx="1.5" style="fill:var(--c1)"/>
+  <rect x="194" y="111" width="30" height="65" rx="1.5" style="fill:var(--c5)"/>
+  <rect x="236" y="46" width="30" height="130" rx="1.5" style="fill:var(--c5)"/>
+  <text x="41" y="165" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">1</text>
+  <text x="83" y="161" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">2</text>
+  <text x="125" y="153" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">4</text>
+  <text x="167" y="137" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">8</text>
+  <text x="209" y="104" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">16</text>
+  <text x="251" y="39" text-anchor="middle" class="svg-num" style="fill:var(--ink)">32</text>
+  <text x="41" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2⁰</text>
+  <text x="83" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2¹</text>
+  <text x="125" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2²</text>
+  <text x="167" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2³</text>
+  <text x="209" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2⁴</text>
+  <text x="251" y="194" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2⁵</text>
+  <text x="16" y="22" class="svg-ttl" style="fill:var(--ink-2)">cada passo dobra o anterior</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>2 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Operações · Fatoração em primos</dd></div>
+      <div><dt>Destrava</dt><dd>Notação científica, logaritmos, funções, geometria</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Potência e raiz quase nunca são o <em>tema</em> de uma questão. São a <strong>linguagem</strong> em que outras questões estão escritas — e quem não lê essa linguagem trava antes de começar a pensar no problema.</p>
+<p>Onde elas aparecem, na ordem de frequência:</p>
+<ul>
+  <li><strong>Notação científica</strong> — população, distâncias, massas, verbas. É o próximo assunto do cronograma e depende inteiramente daqui.</li>
+  <li><strong>Geometria</strong> — Pitágoras, áreas, volumes. A raiz quadrada é onipresente.</li>
+  <li><strong>Juros compostos e crescimento</strong> — <span class="m">M = C(1+i)<sup>t</sup></span> é uma potência.</li>
+  <li><strong>Logaritmos, pH, Richter, decibéis</strong> — o logaritmo é a pergunta inversa da potência.</li>
+  <li><strong>Física e Química</strong> — meia-vida, concentração, energia, ordens de grandeza.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p><strong>As sete propriedades da seção 03</strong>, sabidas a ponto de aplicar sem pensar, e a <strong>simplificação de radicais da seção 07</strong>. O resto é apoio. Se o tempo apertar, garanta essas duas.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Potenciação e os casos especiais</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem"><span class="v">a</span><sup><span class="v">n</span></sup> = <span class="v">a</span> · <span class="v">a</span> · … · <span class="v">a</span> &nbsp;&nbsp;(<span class="v">n</span> fatores)</p>
+  <p><span class="m"><span class="v">a</span></span> é a <strong>base</strong>, <span class="m"><span class="v">n</span></span> é o <strong>expoente</strong>. Ex.: <span class="m">2<sup>5</sup> = 2·2·2·2·2 = 32</span>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O erro de partida</span>
+  <p><span class="m">2<sup>3</sup></span> <strong>não</strong> é <span class="m">2 · 3 = 6</span>. É <span class="m">2 · 2 · 2 = 8</span>. Parece elementar, mas sob pressão de tempo esse deslize acontece — e a alternativa errada costuma estar lá esperando.</p>
+</div>
+
+<h3>Os casos que valem decorar</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Caso</th><th>Resultado</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">a</span><sup>1</sup></td><td>O próprio <span class="m"><span class="v">a</span></span></td><td class="m">7<sup>1</sup> = 7</td></tr>
+    <tr><td class="m"><span class="v">a</span><sup>0</sup></td><td><span class="m">1</span>, para qualquer <span class="m"><span class="v">a</span> ≠ 0</span></td><td class="m">99<sup>0</sup> = 1</td></tr>
+    <tr><td class="m">1<sup><span class="v">n</span></sup></td><td>Sempre <span class="m">1</span></td><td class="m">1<sup>500</sup> = 1</td></tr>
+    <tr><td class="m"><span class="v">a</span><sup>−<span class="v">n</span></sup></td><td class="m"><span class="frac"><i>1</i><i><span class="v">a</span><sup><span class="v">n</span></sup></i></span> — <strong>inverte</strong> a base</td><td class="m">2<sup>−3</sup> = <span class="frac"><i>1</i><i>8</i></span></td></tr>
+    <tr><td class="m">(<span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span>)<sup>−<span class="v">n</span></sup></td><td class="m">(<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span>)<sup><span class="v">n</span></sup> — vira a fração de cabeça para baixo</td><td class="m">(<span class="frac"><i>2</i><i>3</i></span>)<sup>−2</sup> = <span class="frac"><i>9</i><i>4</i></span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Expoente negativo não significa resultado negativo</span>
+  <p><span class="m">2<sup>−3</sup> = <span class="frac"><i>1</i><i>8</i></span></span>, que é <strong>positivo</strong>. O sinal do expoente manda inverter a base, não trocar o sinal da resposta. Confundir isso é dos erros mais frequentes da prova.</p>
+</div>
+
+<h3>Sinal do resultado quando a base é negativa</h3>
+<div class="eq">
+  <p class="m">Expoente <strong>par</strong> → positivo: &nbsp; (−2)<sup>4</sup> = 16</p>
+  <p class="m">Expoente <strong>ímpar</strong> → negativo: &nbsp; (−2)<sup>3</sup> = −8</p>
+  <p class="m" style="margin-top:10px">E a distinção do parêntese: &nbsp; −3<sup>2</sup> = <strong>−9</strong> &nbsp;&nbsp; (−3)<sup>2</sup> = <strong>9</strong></p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> As sete propriedades da potenciação</h2>
+<p>Estas sete resolvem qualquer expressão da prova. Vale conhecê-las a ponto de aplicar sem parar para pensar.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>#</th><th>Propriedade</th><th>Em palavras</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td class="m">1</td><td class="m"><span class="v">a</span><sup><span class="v">m</span></sup> · <span class="v">a</span><sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">m</span>+<span class="v">n</span></sup></td><td>Mesma base no produto: <strong>soma</strong> expoentes</td><td class="m">2<sup>3</sup>·2<sup>4</sup> = 2<sup>7</sup></td></tr>
+    <tr><td class="m">2</td><td class="m"><span class="v">a</span><sup><span class="v">m</span></sup> ÷ <span class="v">a</span><sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">m</span>−<span class="v">n</span></sup></td><td>Mesma base no quociente: <strong>subtrai</strong></td><td class="m">2<sup>7</sup>÷2<sup>3</sup> = 2<sup>4</sup></td></tr>
+    <tr><td class="m">3</td><td class="m">(<span class="v">a</span><sup><span class="v">m</span></sup>)<sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">m</span>·<span class="v">n</span></sup></td><td>Potência de potência: <strong>multiplica</strong></td><td class="m">(2<sup>3</sup>)<sup>2</sup> = 2<sup>6</sup></td></tr>
+    <tr><td class="m">4</td><td class="m">(<span class="v">a</span>·<span class="v">b</span>)<sup><span class="v">n</span></sup> = <span class="v">a</span><sup><span class="v">n</span></sup>·<span class="v">b</span><sup><span class="v">n</span></sup></td><td>O expoente distribui no produto</td><td class="m">(2·5)<sup>3</sup> = 2<sup>3</sup>·5<sup>3</sup></td></tr>
+    <tr><td class="m">5</td><td class="m">(<span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span>)<sup><span class="v">n</span></sup> = <span class="frac"><i><span class="v">a</span><sup><span class="v">n</span></sup></i><i><span class="v">b</span><sup><span class="v">n</span></sup></i></span></td><td>E no quociente também</td><td class="m">(<span class="frac"><i>2</i><i>3</i></span>)<sup>3</sup> = <span class="frac"><i>8</i><i>27</i></span></td></tr>
+    <tr><td class="m">6</td><td class="m"><span class="v">a</span><sup>0</sup> = 1</td><td>Qualquer base não nula</td><td class="m">5<sup>0</sup> = 1</td></tr>
+    <tr><td class="m">7</td><td class="m"><span class="v">a</span><sup>−<span class="v">n</span></sup> = <span class="frac"><i>1</i><i><span class="v">a</span><sup><span class="v">n</span></sup></i></span></td><td>Expoente negativo inverte</td><td class="m">3<sup>−2</sup> = <span class="frac"><i>1</i><i>9</i></span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">A condição que ninguém lê</span>
+  <p>As propriedades <strong>1 e 2 exigem a mesma base</strong>. As propriedades <strong>4 e 5 exigem o mesmo expoente</strong>. Fora dessas condições, elas não valem.</p>
+  <p>Por isso o primeiro movimento em toda expressão é <strong>colocar tudo na mesma base</strong>: se aparecem 2, 4, 8, 16 e 32, escreva todos como potência de 2.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Três coisas que não existem</span>
+  <p class="m"><span class="v">a</span><sup><span class="v">m</span></sup> + <span class="v">a</span><sup><span class="v">n</span></sup> ≠ <span class="v">a</span><sup><span class="v">m</span>+<span class="v">n</span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; (<span class="v">a</span> + <span class="v">b</span>)<sup>2</sup> ≠ <span class="v">a</span><sup>2</sup> + <span class="v">b</span><sup>2</sup> &nbsp;&nbsp;·&nbsp;&nbsp; (2<sup>3</sup>)<sup>2</sup> ≠ 2<sup>3<sup>2</sup></sup></p>
+  <p>A regra de somar expoentes vale só no <strong>produto</strong>. Na soma, não há propriedade nenhuma.</p>
+  <p>E cuidado com a torre: <span class="m">(2<sup>3</sup>)<sup>2</sup> = 2<sup>6</sup> = 64</span>, mas <span class="m">2<sup>3<sup>2</sup></sup> = 2<sup>9</sup> = 512</span> — a torre resolve de cima para baixo.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Na dúvida, teste com números pequenos</span>
+  <p>Não lembra se uma propriedade existe? Substitua por <span class="m">2</span> e <span class="m">3</span> e confira. Leva cinco segundos e resolve a dúvida com certeza — muito melhor do que apostar.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Potências de base 10</h2>
+<p>Merecem seção própria porque estruturam a notação científica, as unidades de medida e as ordens de grandeza.</p>
+<div class="eq">
+  <p class="m">10<sup>1</sup> = 10 &nbsp;·&nbsp; 10<sup>2</sup> = 100 &nbsp;·&nbsp; 10<sup>3</sup> = 1 000 &nbsp;·&nbsp; 10<sup>6</sup> = 1 000 000</p>
+  <p class="m">10<sup>−1</sup> = 0,1 &nbsp;·&nbsp; 10<sup>−2</sup> = 0,01 &nbsp;·&nbsp; 10<sup>−3</sup> = 0,001</p>
+</div>
+<p>A leitura direta: <span class="m">10<sup><span class="v">n</span></sup></span> é <strong>1 seguido de <span class="m"><span class="v">n</span></span> zeros</strong>. E <span class="m">10<sup>−<span class="v">n</span></sup></span> tem <strong><span class="m"><span class="v">n</span></span> casas decimais</strong>, com o 1 na última.</p>
+
+<div class="box tip">
+  <span class="tag">Multiplicar potências de 10 é só somar expoentes</span>
+  <p class="m">(3·10<sup>5</sup>) · (2·10<sup>−8</sup>) = 6 · 10<sup>−3</sup></p>
+  <p>Multiplica-se a parte numérica e somam-se os expoentes. É a propriedade 1 aplicada — nada de novo, só a base mais útil da prova.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Radiciação: a operação inversa</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem"><span class="rad"><i><span class="v">a</span></i></span><sup class="v" style="font-size:.62em">n</sup> = <span class="v">b</span> &nbsp;&nbsp;⟺&nbsp;&nbsp; <span class="v">b</span><sup><span class="v">n</span></sup> = <span class="v">a</span></p>
+  <p>O <span class="m"><span class="v">n</span></span> é o <strong>índice</strong>, o <span class="m"><span class="v">a</span></span> é o <strong>radicando</strong>. Índice 2 não se escreve: <span class="m"><span class="rad"><i>9</i></span></span> significa raiz quadrada.</p>
+  <p>Perguntar <span class="m"><span class="rad"><i>81</i></span></span> é perguntar: <em>que número elevado ao quadrado dá 81?</em></p>
+</div>
+
+<h3>Quando a raiz existe e quando não existe</h3>
+<div class="tw">
+<table>
+  <thead><tr><th>Índice</th><th>Radicando</th><th>Nos reais</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Par</td><td>Positivo</td><td>Existe</td><td class="m"><span class="rad"><i>16</i></span> = 4</td></tr>
+    <tr><td><strong>Par</strong></td><td><strong>Negativo</strong></td><td><strong>Não existe</strong></td><td class="m"><span class="rad"><i>−4</i></span> ✗</td></tr>
+    <tr><td>Ímpar</td><td>Positivo</td><td>Existe</td><td class="m"><span class="rad"><i>8</i></span><sup style="font-size:.62em">3</sup> = 2</td></tr>
+    <tr><td>Ímpar</td><td>Negativo</td><td>Existe, negativa</td><td class="m"><span class="rad"><i>−8</i></span><sup style="font-size:.62em">3</sup> = −2</td></tr>
+  </tbody>
+</table>
+</div>
+<p>A razão é simples: nenhum número real ao quadrado dá negativo, mas ao cubo dá — <span class="m">(−2)<sup>3</sup> = −8</span>.</p>
+
+<div class="box warn">
+  <span class="tag">A sutileza que aparece em questão</span>
+  <p class="m" style="font-size:1.05rem"><span class="rad"><i><span class="v">a</span><sup>2</sup></i></span> = |<span class="v">a</span>| &nbsp;&nbsp; e não simplesmente <span class="v">a</span></p>
+  <p>Se <span class="m"><span class="v">a</span> = −5</span>, então <span class="m"><span class="rad"><i>(−5)<sup>2</sup></i></span> = <span class="rad"><i>25</i></span> = 5</span> — <strong>positivo</strong>. A raiz de índice par sempre devolve o valor sem sinal.</p>
+  <p>Em índice <strong>ímpar</strong> não há módulo: <span class="m"><span class="rad"><i><span class="v">a</span><sup>3</sup></i></span><sup style="font-size:.62em">3</sup> = <span class="v">a</span></span>, com o sinal preservado.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Propriedades da radiciação</h2>
+<div class="eq">
+  <span class="lbl">As que valem</span>
+  <p class="m"><span class="rad"><i><span class="v">a</span>·<span class="v">b</span></i></span> = <span class="rad"><i><span class="v">a</span></i></span> · <span class="rad"><i><span class="v">b</span></i></span> &nbsp;&nbsp;&nbsp; <span class="rad"><i><span class="frac"><i><span class="v">a</span></i><i><span class="v">b</span></i></span></i></span> = <span class="frac"><i><span class="rad"><i><span class="v">a</span></i></span></i><i><span class="rad"><i><span class="v">b</span></i></span></i></span></p>
+  <p class="m" style="margin-top:10px">(<span class="rad"><i><span class="v">a</span></i></span>)<sup>2</sup> = <span class="v">a</span> &nbsp;&nbsp;&nbsp; <span class="rad"><i><span class="rad"><i><span class="v">a</span></i></span></i></span> — raiz de raiz: <strong>multiplicam-se os índices</strong></p>
+</div>
+<p>Exemplo da última: <span class="m"><span class="rad"><i><span class="rad"><i>64</i></span><sup style="font-size:.62em">3</sup></i></span> = <span class="rad"><i>64</i></span><sup style="font-size:.62em">6</sup> = 2</span>, porque <span class="m">2<sup>6</sup> = 64</span>.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 175" role="img" aria-label="Menos cinco e cinco elevados ao quadrado dão vinte e cinco, mas a raiz de vinte e cinco devolve apenas o cinco positivo">
+  <rect x="18" y="26" width="96" height="38" rx="9" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.5"/>
+  <text x="66" y="51" text-anchor="middle" class="svg-num" style="fill:var(--c4);font-size:15px">−5</text>
+  <rect x="18" y="102" width="96" height="38" rx="9" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.5"/>
+  <text x="66" y="127" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-size:15px">+5</text>
+  <path d="M118 45 L196 76" style="fill:none;stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#sq)"/>
+  <path d="M118 121 L196 90" style="fill:none;stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#sq)"/>
+  <text x="150" y="48" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">ao quadrado</text>
+  <text x="150" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">ao quadrado</text>
+  <rect x="200" y="64" width="86" height="38" rx="9" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:1.5"/>
+  <text x="243" y="89" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">25</text>
+  <path d="M290 83 L370 83" style="fill:none;stroke:var(--c3);stroke-width:2" marker-end="url(#sg)"/>
+  <text x="330" y="74" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">√ &nbsp;devolve</text>
+  <rect x="374" y="64" width="72" height="38" rx="9" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5"/>
+  <text x="410" y="89" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-size:15px">+5</text>
+  <text x="410" y="126" text-anchor="middle" class="svg-lbl" style="fill:var(--c3)">só o positivo</text>
+  <text x="230" y="164" text-anchor="middle" class="svg-ttl" style="fill:var(--ink-2)">por isso √(a²) = |a|, e não a</text>
+  <defs>
+    <marker id="sq" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><polygon points="0,0 9,4.5 0,9" style="fill:var(--ink-3)"/></marker>
+    <marker id="sg" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><polygon points="0,0 9,4.5 0,9" style="fill:var(--c3)"/></marker>
+  </defs>
+</svg>
+<figcaption><b>O caminho de ida tem dois pontos de partida; o de volta tem um só destino.</b> Tanto <span class="m">−5</span> quanto <span class="m">+5</span> elevados ao quadrado dão 25, mas a raiz quadrada é definida para devolver apenas o valor não negativo. Em índice ímpar isso não acontece, e o sinal se conserva.</figcaption>
+</figure>
+
+<h3>Simplificar índice e expoente</h3>
+<p>Dividindo índice e expoente pelo mesmo número, o valor não muda:</p>
+<div class="eq">
+  <p class="m"><span class="rad"><i><span class="v">a</span><sup>2</sup></i></span><sup style="font-size:.62em">6</sup> = <span class="rad"><i><span class="v">a</span></i></span><sup style="font-size:.62em">3</sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="rad"><i>4</i></span><sup style="font-size:.62em">4</sup> = <span class="rad"><i>2<sup>2</sup></i></span><sup style="font-size:.62em">4</sup> = <span class="rad"><i>2</i></span></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">A propriedade que não existe</span>
+  <p class="m"><span class="rad"><i><span class="v">a</span> + <span class="v">b</span></i></span> ≠ <span class="rad"><i><span class="v">a</span></i></span> + <span class="rad"><i><span class="v">b</span></i></span></p>
+  <p>Teste: <span class="m"><span class="rad"><i>9 + 16</i></span> = <span class="rad"><i>25</i></span> = 5</span>, mas <span class="m"><span class="rad"><i>9</i></span> + <span class="rad"><i>16</i></span> = 3 + 4 = 7</span>. A raiz distribui sobre <strong>produto e quociente</strong>, nunca sobre soma ou diferença.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Simplificar radicais</h2>
+<p>Tirar de dentro da raiz tudo que sai. É o passo que transforma alternativas aparentemente diferentes em iguais.</p>
+
+<div class="box def">
+  <span class="tag">O método</span>
+  <p>Fatore o radicando procurando o <strong>maior quadrado perfeito</strong> que o divide (ou cubo perfeito, se o índice for 3). Separe e extraia.</p>
+</div>
+
+<div class="eq">
+  <p class="m"><span class="rad"><i>50</i></span> = <span class="rad"><i>25 · 2</i></span> = <span class="rad"><i>25</i></span> · <span class="rad"><i>2</i></span> = <strong>5<span class="rad"><i>2</i></span></strong></p>
+  <p class="m"><span class="rad"><i>72</i></span> = <span class="rad"><i>36 · 2</i></span> = <strong>6<span class="rad"><i>2</i></span></strong></p>
+  <p class="m"><span class="rad"><i>180</i></span> = <span class="rad"><i>36 · 5</i></span> = <strong>6<span class="rad"><i>5</i></span></strong></p>
+  <p class="m"><span class="rad"><i>54</i></span><sup style="font-size:.62em">3</sup> = <span class="rad"><i>27 · 2</i></span><sup style="font-size:.62em">3</sup> = <strong>3<span class="rad"><i>2</i></span><sup style="font-size:.62em">3</sup></strong></p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Se o quadrado perfeito não saltar aos olhos</span>
+  <p>Fatore em primos e agrupe de dois em dois (ou de três em três, para índice 3):</p>
+  <p class="m">180 = 2<sup>2</sup> · 3<sup>2</sup> · 5 &nbsp;→&nbsp; sai um 2 e um 3 &nbsp;→&nbsp; 6<span class="rad"><i>5</i></span></p>
+  <p>Cada par de fatores iguais vira um fator único fora da raiz. É o assunto de fatoração da semana passada trabalhando aqui.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Operações com radicais</h2>
+
+<div class="box def">
+  <span class="tag">Soma e subtração: só entre semelhantes</span>
+  <p>Radicais semelhantes têm <strong>mesmo índice e mesmo radicando</strong>. Só esses se somam, e a conta é feita nos coeficientes:</p>
+  <p class="m">2<span class="rad"><i>3</i></span> + 5<span class="rad"><i>3</i></span> = 7<span class="rad"><i>3</i></span></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O que não se soma</span>
+  <p class="m"><span class="rad"><i>2</i></span> + <span class="rad"><i>3</i></span></p>
+  <p>Radicandos diferentes não têm o que somar — a expressão <strong>já está na forma final</strong>. E jamais <span class="m">2<span class="rad"><i>3</i></span> + 3<span class="rad"><i>2</i></span> = 5<span class="rad"><i>5</i></span></span>: isso não existe.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Simplifique antes de decidir que não dá</span>
+  <p>Radicais que parecem diferentes muitas vezes viram semelhantes depois de simplificados:</p>
+  <p class="m"><span class="rad"><i>50</i></span> + <span class="rad"><i>8</i></span> − <span class="rad"><i>18</i></span> = 5<span class="rad"><i>2</i></span> + 2<span class="rad"><i>2</i></span> − 3<span class="rad"><i>2</i></span> = <strong>4<span class="rad"><i>2</i></span></strong></p>
+  <p>Sem simplificar, pareceriam três radicais incompatíveis. Simplificar é sempre o primeiro passo.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Multiplicação e divisão de mesmo índice</span>
+  <p class="m"><span class="rad"><i>3</i></span> · <span class="rad"><i>12</i></span> = <span class="rad"><i>36</i></span> = 6 &nbsp;&nbsp;·&nbsp;&nbsp; <span class="frac"><i><span class="rad"><i>18</i></span></i><i><span class="rad"><i>2</i></span></i></span> = <span class="rad"><i>9</i></span> = 3</p>
+  <p>Conserva o índice e opera os radicandos. Com <strong>índices diferentes</strong>, converta para expoente fracionário (seção 10).</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Racionalização</h2>
+<p>É reescrever a fração sem raiz no denominador, mantendo o valor. A prova cobra porque as alternativas costumam vir nessa forma — sua resposta pode estar certa e “não aparecer” na lista.</p>
+
+<div class="eq">
+  <span class="lbl">Caso 1 — uma raiz quadrada sozinha</span>
+  <p class="m"><span class="frac"><i>1</i><i><span class="rad"><i>2</i></span></i></span> = <span class="frac"><i>1</i><i><span class="rad"><i>2</i></span></i></span> · <span class="frac"><i><span class="rad"><i>2</i></span></i><i><span class="rad"><i>2</i></span></i></span> = <span class="frac"><i><span class="rad"><i>2</i></span></i><i>2</i></span></p>
+  <p>Multiplica-se em cima e embaixo pela própria raiz. Como <span class="m"><span class="rad"><i>2</i></span>·<span class="rad"><i>2</i></span> = 2</span>, o denominador fica inteiro.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Caso 2 — um binômio com raiz: usa-se o conjugado</span>
+  <p class="m"><span class="frac"><i>6</i><i><span class="rad"><i>5</i></span> − <span class="rad"><i>2</i></span></i></span> · <span class="frac"><i><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></i><i><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></i></span> = <span class="frac"><i>6(<span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span>)</i><i>5 − 2</i></span> = 2<span class="rad"><i>5</i></span> + 2<span class="rad"><i>2</i></span></p>
+</div>
+
+<div class="box def">
+  <span class="tag">O que é o conjugado</span>
+  <p>O mesmo binômio com o <strong>sinal do meio trocado</strong>: o conjugado de <span class="m"><span class="rad"><i>5</i></span> − <span class="rad"><i>2</i></span></span> é <span class="m"><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></span>.</p>
+  <p>Funciona porque o produto vira diferença de quadrados — <span class="m">(<span class="v">x</span>−<span class="v">y</span>)(<span class="v">x</span>+<span class="v">y</span>) = <span class="v">x</span><sup>2</sup>−<span class="v">y</span><sup>2</sup></span> — e o quadrado desmancha a raiz.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Expoente fracionário: a ponte</h2>
+<p>Esta é a ideia mais poderosa da página. Toda raiz pode virar potência — e aí as sete propriedades passam a valer também para radicais.</p>
+
+<div class="box def">
+  <span class="tag">A conversão</span>
+  <p class="m" style="font-size:1.1rem"><span class="v">a</span><sup><span class="frac"><i><span class="v">m</span></i><i><span class="v">n</span></i></span></sup> = <span class="rad"><i><span class="v">a</span><sup><span class="v">m</span></sup></i></span><sup class="v" style="font-size:.62em">n</sup></p>
+  <p>O <strong>denominador</strong> do expoente vira o <strong>índice</strong> da raiz. O numerador vira o expoente do radicando.</p>
+</div>
+
+<div class="eq">
+  <p class="m"><span class="rad"><i>2</i></span> = 2<sup><span class="frac"><i>1</i><i>2</i></span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="rad"><i>5</i></span><sup style="font-size:.62em">3</sup> = 5<sup><span class="frac"><i>1</i><i>3</i></span></sup> &nbsp;&nbsp;·&nbsp;&nbsp; <span class="rad"><i>8<sup>2</sup></i></span><sup style="font-size:.62em">3</sup> = 8<sup><span class="frac"><i>2</i><i>3</i></span></sup> = 4</p>
+</div>
+
+<h3>Uso 1: multiplicar raízes de índices diferentes</h3>
+<div class="eq">
+  <p class="m"><span class="rad"><i>2</i></span> · <span class="rad"><i>2</i></span><sup style="font-size:.62em">3</sup> = 2<sup><span class="frac"><i>1</i><i>2</i></span></sup> · 2<sup><span class="frac"><i>1</i><i>3</i></span></sup> = 2<sup><span class="frac"><i>5</i><i>6</i></span></sup> = <span class="rad"><i>2<sup>5</sup></i></span><sup style="font-size:.62em">6</sup></p>
+  <p>Sem a conversão, não haveria como multiplicar índices diferentes.</p>
+</div>
+
+<h3>Uso 2: comparar raízes de índices diferentes</h3>
+<p>Reduza tudo ao <strong>mesmo índice</strong>, usando o MMC dos índices. Comparar <span class="m"><span class="rad"><i>2</i></span></span>, <span class="m"><span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup></span> e <span class="m"><span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></span> — o MMC de 2, 3 e 6 é 6:</p>
+<div class="eq">
+  <p class="m"><span class="rad"><i>2</i></span> = 2<sup><span class="frac"><i>3</i><i>6</i></span></sup> = <span class="rad"><i>8</i></span><sup style="font-size:.62em">6</sup> &nbsp;&nbsp; <span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup> = 3<sup><span class="frac"><i>2</i><i>6</i></span></sup> = <span class="rad"><i>9</i></span><sup style="font-size:.62em">6</sup> &nbsp;&nbsp; <span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></p>
+  <p class="m" style="margin-top:10px">Com o mesmo índice, basta comparar os radicandos: <strong>8 &lt; 9 &lt; 10</strong></p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">2³ = 6</span> &nbsp;→&nbsp; <span class="c">2³ = 8</span></span><small>Potência é multiplicar a base por ela mesma, não pelo expoente.</small></li>
+  <li><span><span class="x">a⁰ = 0</span> &nbsp;→&nbsp; <span class="c">a⁰ = 1</span></span><small>Vale para qualquer base diferente de zero.</small></li>
+  <li><span><span class="x">2⁻³ é negativo</span> &nbsp;→&nbsp; <span class="c">2⁻³ = 1/8, positivo</span></span><small>Expoente negativo inverte a base; não mexe no sinal do resultado.</small></li>
+  <li><span><span class="x">−3² = 9</span> &nbsp;→&nbsp; <span class="c">−3² = −9</span></span><small>Sem parêntese, o expoente não pega o sinal. Só (−3)² = 9.</small></li>
+  <li><span><span class="x">aᵐ + aⁿ = aᵐ⁺ⁿ</span> &nbsp;→&nbsp; <span class="c">não existe</span></span><small>Somar expoentes vale só no produto.</small></li>
+  <li><span><span class="x">(2³)² = 2⁵</span> &nbsp;→&nbsp; <span class="c">2⁶</span></span><small>Potência de potência multiplica os expoentes, não soma.</small></li>
+  <li><span><span class="x">√(a+b) = √a + √b</span> &nbsp;→&nbsp; <span class="c">não existe</span></span><small>Raiz distribui sobre produto e quociente, nunca sobre soma.</small></li>
+  <li><span><span class="x">√(a²) = a</span> &nbsp;→&nbsp; <span class="c">√(a²) = |a|</span></span><small>Índice par sempre devolve valor sem sinal: √((−5)²) = 5.</small></li>
+  <li><span><span class="x">√−4 = −2</span> &nbsp;→&nbsp; <span class="c">não existe nos reais</span></span><small>Índice par de radicando negativo não tem raiz real. Já ³√−8 = −2 existe.</small></li>
+  <li><span><span class="x">2√3 + 3√2 = 5√5</span> &nbsp;→&nbsp; <span class="c">não se somam</span></span><small>Só radicais semelhantes — mesmo índice e mesmo radicando — se somam.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Na dúvida sobre uma propriedade, teste com números pequenos antes de aplicar — o hábito vale mais que a memória.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Mesma base</span>
+    <p class="enun">Simplificando a expressão <span class="m"><span class="frac"><i>2<sup>5</sup> · 4<sup>3</sup></i><i>8<sup>2</sup></i></span></span>, obtém-se</p>
+    <ol class="alt"><li>8</li><li>16</li><li>32</li><li>64</li><li>128</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O movimento que resolve: <strong>tudo na mesma base</strong>. Como <span class="m">4 = 2<sup>2</sup></span> e <span class="m">8 = 2<sup>3</sup></span>:</p>
+      <p class="m">4<sup>3</sup> = (2<sup>2</sup>)<sup>3</sup> = 2<sup>6</sup> &nbsp;&nbsp;&nbsp; 8<sup>2</sup> = (2<sup>3</sup>)<sup>2</sup> = 2<sup>6</sup></p>
+      <p class="m"><span class="frac"><i>2<sup>5</sup> · 2<sup>6</sup></i><i>2<sup>6</sup></i></span> = <span class="frac"><i>2<sup>11</sup></i><i>2<sup>6</sup></i></span> = 2<sup>5</sup> = 32</p>
+      <p>Sem passar para a mesma base, nenhuma propriedade se aplica — é sempre o primeiro passo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Potências de 10 em contexto</span>
+    <p class="enun">Uma cidade consome <span class="m">7,2 · 10<sup>9</sup></span> kWh de energia elétrica por ano e tem <span class="m">1,2 · 10<sup>6</sup></span> habitantes. O consumo médio anual por habitante, em kWh, é de</p>
+    <ol class="alt"><li>6 · 10<sup>2</sup></li><li>6 · 10<sup>3</sup></li><li>6 · 10<sup>4</sup></li><li>8,4 · 10<sup>3</sup></li><li>8,64 · 10<sup>15</sup></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Consumo por habitante é uma divisão. Divide-se a parte numérica e <strong>subtraem-se</strong> os expoentes:</p>
+      <p class="m"><span class="frac"><i>7,2 · 10<sup>9</sup></i><i>1,2 · 10<sup>6</sup></i></span> = <span class="frac"><i>7,2</i><i>1,2</i></span> · 10<sup>9−6</sup> = 6 · 10<sup>3</sup></p>
+      <p>São <span class="m">6 000</span> kWh por habitante ao ano. A alternativa E é de quem multiplicou em vez de dividir.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Expoentes negativos</span>
+    <p class="enun">O valor da expressão <span class="m">(<span class="frac"><i>2</i><i>3</i></span>)<sup>−2</sup> + (<span class="frac"><i>1</i><i>2</i></span>)<sup>−3</sup></span> é</p>
+    <ol class="alt"><li><span class="m">−<span class="frac"><i>41</i><i>4</i></span></span></li><li><span class="m"><span class="frac"><i>17</i><i>36</i></span></span></li><li><span class="m"><span class="frac"><i>25</i><i>4</i></span></span></li><li><span class="m"><span class="frac"><i>41</i><i>4</i></span></span></li><li><span class="m">12</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Expoente negativo <strong>inverte a fração</strong> e o expoente passa a positivo:</p>
+      <p class="m">(<span class="frac"><i>2</i><i>3</i></span>)<sup>−2</sup> = (<span class="frac"><i>3</i><i>2</i></span>)<sup>2</sup> = <span class="frac"><i>9</i><i>4</i></span></p>
+      <p class="m">(<span class="frac"><i>1</i><i>2</i></span>)<sup>−3</sup> = (<span class="frac"><i>2</i><i>1</i></span>)<sup>3</sup> = 8</p>
+      <p class="m"><span class="frac"><i>9</i><i>4</i></span> + 8 = <span class="frac"><i>9</i><i>4</i></span> + <span class="frac"><i>32</i><i>4</i></span> = <span class="frac"><i>41</i><i>4</i></span></p>
+      <p>A alternativa A é de quem achou que o expoente negativo torna o resultado negativo.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Simplificação de radical</span>
+    <p class="enun">A forma simplificada de <span class="m"><span class="rad"><i>180</i></span></span> é</p>
+    <ol class="alt"><li><span class="m">3<span class="rad"><i>20</i></span></span></li><li><span class="m">6<span class="rad"><i>5</i></span></span></li><li><span class="m">9<span class="rad"><i>2</i></span></span></li><li><span class="m">2<span class="rad"><i>45</i></span></span></li><li><span class="m">18<span class="rad"><i>10</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Procure o maior quadrado perfeito que divide 180:</p>
+      <p class="m"><span class="rad"><i>180</i></span> = <span class="rad"><i>36 · 5</i></span> = <span class="rad"><i>36</i></span> · <span class="rad"><i>5</i></span> = 6<span class="rad"><i>5</i></span></p>
+      <p><strong>Pela fatoração, se o 36 não saltar aos olhos:</strong></p>
+      <p class="m">180 = 2<sup>2</sup> · 3<sup>2</sup> · 5 → sai um 2 e um 3 → 6<span class="rad"><i>5</i></span></p>
+      <p>A alternativa A e a D estão corretas <em>como valor</em>, mas não estão totalmente simplificadas — ainda dá para tirar fator de dentro da raiz. A prova sempre pede a forma final.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Soma de radicais</span>
+    <p class="enun">O valor de <span class="m"><span class="rad"><i>50</i></span> + <span class="rad"><i>8</i></span> − <span class="rad"><i>18</i></span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="rad"><i>40</i></span></span></li><li><span class="m">2<span class="rad"><i>2</i></span></span></li><li><span class="m">4<span class="rad"><i>2</i></span></span></li><li><span class="m">10<span class="rad"><i>2</i></span></span></li><li><span class="m">4<span class="rad"><i>10</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Radicandos diferentes não se somam — mas simplifique <strong>antes</strong> de concluir isso:</p>
+      <p class="m"><span class="rad"><i>50</i></span> = 5<span class="rad"><i>2</i></span> &nbsp;&nbsp; <span class="rad"><i>8</i></span> = 2<span class="rad"><i>2</i></span> &nbsp;&nbsp; <span class="rad"><i>18</i></span> = 3<span class="rad"><i>2</i></span></p>
+      <p>Agora os três são semelhantes, e a conta é só nos coeficientes:</p>
+      <p class="m">5<span class="rad"><i>2</i></span> + 2<span class="rad"><i>2</i></span> − 3<span class="rad"><i>2</i></span> = 4<span class="rad"><i>2</i></span></p>
+      <p>A alternativa A é de quem somou os radicandos: <span class="m">50 + 8 − 18 = 40</span> — o erro mais comum aqui.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Racionalização com conjugado</span>
+    <p class="enun">Racionalizando o denominador de <span class="m"><span class="frac"><i>6</i><i><span class="rad"><i>5</i></span> − <span class="rad"><i>2</i></span></i></span></span>, obtém-se</p>
+    <ol class="alt"><li><span class="m">2<span class="rad"><i>5</i></span> + 2<span class="rad"><i>2</i></span></span></li><li><span class="m">6<span class="rad"><i>5</i></span> − 6<span class="rad"><i>2</i></span></span></li><li><span class="m"><span class="frac"><i><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></i><i>3</i></span></span></li><li><span class="m">2<span class="rad"><i>3</i></span></span></li><li><span class="m"><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplique numerador e denominador pelo <strong>conjugado</strong> <span class="m"><span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span></span>:</p>
+      <p class="m"><span class="frac"><i>6(<span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span>)</i><i>(<span class="rad"><i>5</i></span> − <span class="rad"><i>2</i></span>)(<span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span>)</i></span></p>
+      <p>O denominador é uma diferença de quadrados, e os quadrados desmancham as raízes:</p>
+      <p class="m">(<span class="rad"><i>5</i></span>)<sup>2</sup> − (<span class="rad"><i>2</i></span>)<sup>2</sup> = 5 − 2 = 3</p>
+      <p class="m"><span class="frac"><i>6(<span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span>)</i><i>3</i></span> = 2(<span class="rad"><i>5</i></span> + <span class="rad"><i>2</i></span>) = 2<span class="rad"><i>5</i></span> + 2<span class="rad"><i>2</i></span></p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Comparar índices diferentes</span>
+    <p class="enun">Colocando os números <span class="m"><span class="rad"><i>2</i></span></span>, <span class="m"><span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup></span> e <span class="m"><span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></span> em ordem crescente, obtém-se</p>
+    <ol class="alt"><li><span class="m"><span class="rad"><i>2</i></span> &lt; <span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup> &lt; <span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></span></li><li><span class="m"><span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup> &lt; <span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup> &lt; <span class="rad"><i>2</i></span></span></li><li><span class="m"><span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup> &lt; <span class="rad"><i>2</i></span> &lt; <span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></span></li><li><span class="m"><span class="rad"><i>2</i></span> &lt; <span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup> &lt; <span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup></span></li><li><span class="m"><span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup> &lt; <span class="rad"><i>2</i></span> &lt; <span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Índices diferentes não se comparam direto. Reduza todos ao mesmo índice — o MMC de 2, 3 e 6 é <span class="m">6</span>:</p>
+      <p class="m"><span class="rad"><i>2</i></span> = 2<sup><span class="frac"><i>1</i><i>2</i></span></sup> = 2<sup><span class="frac"><i>3</i><i>6</i></span></sup> = <span class="rad"><i>8</i></span><sup style="font-size:.62em">6</sup></p>
+      <p class="m"><span class="rad"><i>3</i></span><sup style="font-size:.62em">3</sup> = 3<sup><span class="frac"><i>1</i><i>3</i></span></sup> = 3<sup><span class="frac"><i>2</i><i>6</i></span></sup> = <span class="rad"><i>9</i></span><sup style="font-size:.62em">6</sup></p>
+      <p>Com o mesmo índice, compara-se apenas o radicando: <span class="m">8 &lt; 9 &lt; 10</span>.</p>
+      <p>Repare no resultado contraintuitivo: <span class="m"><span class="rad"><i>10</i></span><sup style="font-size:.62em">6</sup></span> tem o maior radicando <em>e</em> o maior índice, e ainda assim é o maior dos três.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Índice par e índice ímpar</span>
+    <p class="enun">Para <span class="m"><span class="v">x</span> = −7</span>, o valor de <span class="m"><span class="rad"><i><span class="v">x</span><sup>2</sup></i></span> + <span class="rad"><i><span class="v">x</span><sup>3</sup></i></span><sup style="font-size:.62em">3</sup></span> é</p>
+    <ol class="alt"><li>−14</li><li>−7</li><li>0</li><li>7</li><li>14</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>As duas raízes se comportam de modo diferente, e é exatamente isso que a questão testa.</p>
+      <p><strong>Índice par</strong> devolve o módulo, sempre positivo:</p>
+      <p class="m"><span class="rad"><i>(−7)<sup>2</sup></i></span> = <span class="rad"><i>49</i></span> = 7</p>
+      <p><strong>Índice ímpar</strong> conserva o sinal:</p>
+      <p class="m"><span class="rad"><i>(−7)<sup>3</sup></i></span><sup style="font-size:.62em">3</sup> = <span class="rad"><i>−343</i></span><sup style="font-size:.62em">3</sup> = −7</p>
+      <p class="m">7 + (−7) = 0</p>
+      <p>Quem aplicou <span class="m"><span class="rad"><i><span class="v">x</span><sup>2</sup></i></span> = <span class="v">x</span></span> obteve <span class="m">−14</span>, a alternativa A.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Potência de um produto</span>
+    <p class="enun">Um cubo tem aresta medindo <span class="m">2 · 10<sup>−2</sup></span> metro. O volume desse cubo, em metros cúbicos, é</p>
+    <ol class="alt"><li><span class="m">6 · 10<sup>−6</sup></span></li><li><span class="m">8 · 10<sup>−6</sup></span></li><li><span class="m">8 · 10<sup>−5</sup></span></li><li><span class="m">2 · 10<sup>−6</sup></span></li><li><span class="m">6 · 10<sup>−2</sup></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Volume do cubo é a aresta ao cubo. O expoente externo age <strong>nos dois fatores</strong>:</p>
+      <p class="m">V = (2 · 10<sup>−2</sup>)<sup>3</sup> = 2<sup>3</sup> · (10<sup>−2</sup>)<sup>3</sup></p>
+      <p class="m">= 8 · 10<sup>−6</sup> m<sup>3</sup></p>
+      <p>Dois deslizes possíveis, ambos com alternativa reservada: elevar só o 10 e deixar o 2 (alternativa D), ou multiplicar <span class="m">2·3 = 6</span> em vez de <span class="m">2<sup>3</sup> = 8</span> (alternativa A).</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que <span class="m">a<sup>0</sup> = 1</span> e que expoente negativo inverte a base, sem mudar o sinal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Determino o sinal de uma potência de base negativa pelo expoente par ou ímpar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo <span class="m">−3<sup>2</sup></span> de <span class="m">(−3)<sup>2</sup></span> sem hesitar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico as sete propriedades e sei que 1 e 2 exigem mesma base; 4 e 5, mesmo expoente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Meu primeiro movimento numa expressão é colocar tudo na mesma base</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que soma de potências não tem propriedade nenhuma</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Opero com potências de 10 somando e subtraindo expoentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei quando uma raiz existe nos reais e quando não existe</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Lembro que <span class="m"><span class="rad"><i>a<sup>2</sup></i></span> = |a|</span>, mas que índice ímpar conserva o sinal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Simplifico qualquer radical extraindo os quadrados perfeitos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Só somo radicais semelhantes, e simplifico antes de decidir que não dá</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Racionalizo denominador com raiz simples e com conjugado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto raiz em expoente fracionário para multiplicar e comparar índices diferentes</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de simplificação de radicais e de expressões com mesma base — são as que mais aparecem embutidas em outras questões. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>49 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-04-potenciacao-radiciacao.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-04";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

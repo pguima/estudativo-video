@@ -1,0 +1,69 @@
+No ENEM, o sistema vem numa história de ingressos ou de lanchonete. O determinante é o atalho para duas perguntas: qual é o valor pedido e se existe uma resposta só. Hoje: nove frases de verdadeiro ou falso e cinco questões novas.
+
+E o que a prova pede? Três ferramentas. O determinante: o número que diz se a matriz tem inversa. A regra de Cramer: cada incógnita como uma divisão de determinantes. E a classificação: uma solução, infinitas ou nenhuma.
+
+E o que mais rende? D diferente de zero garante uma solução só. D igual a zero não decide sozinho: olhe as equações. Se elas brigam, nenhuma solução. Se são repetidas, infinitas.
+
+Antes de cobrar, tente lembrar: no dois por dois, o que acontece com o produto da secundária? Um: o teste da chave. Determinante diferente de zero, a chave abre: existe inversa. O produto da secundária entra de casaco, com o sinal dele, e em Sarrus é o time verde contra o time vermelho. Dois: as linhas parentes zeram o determinante, e os botões de volume: a matriz inteira vezes k gira todos os botões.
+
+Três: a troca de figurinha. No D x, sai a coluna do x e entram os termos independentes. E o D principal é o chão da fração. Quatro: o semáforo. Verde, uma solução; amarelo, olhe as equações: gêmeas dão infinitas, brigadas dão nenhuma. E o homogêneo tem a porta zero, zero sempre aberta.
+
+E nas outras áreas? Na Geometria Analítica, o determinante dá a área de um triângulo e diz se três pontos estão alinhados. Isso tem série própria. Na Química, balancear uma equação é resolver um sistema homogêneo.
+
+Na Física, os circuitos com várias malhas viram sistemas nas correntes. E na Economia, misturas, cestas e combos: cada restrição é uma equação, e o determinante diz se os dados bastam.
+
+E na hora da prova? Três hábitos. Um: procure a propriedade antes de fazer Sarrus. Linha de zeros, linhas parentes: determinante zero na hora. Dois: calcule só o necessário. Pediram o preço de um item? Cramer só nessa incógnita. Pediram quantas soluções? Nem resolva: classifique.
+
+Três: confira nas equações originais. Substituir leva segundos e pega quase todo erro de sinal.
+
+Agora, verdadeiro ou falso? Nove frases, dos erros que mais custam pontos. Em cada uma, pause e responda antes de mim.
+
+Um: o determinante de três, menos dois; quatro, cinco é quinze menos oito, sete. Pause. Falso! Engana porque o oito aparece mesmo na conta. Mas o produto entra de casaco: menos dois vezes quatro é menos oito. Quinze menos menos oito, vinte e três.
+
+Dois: em Sarrus, o sinal de menos vale só para o primeiro produto vermelho. Pause. Falso! Engana porque escrevemos os produtos um atrás do outro. Mas é time contra time: some o placar vermelho inteiro e subtraia o bloco todo.
+
+Três: numa matriz três por três com determinante dois, o determinante de duas vezes A é dezesseis. Pause. Verdadeiro! Parece falso porque dá vontade de responder quatro. Mas são três botões de volume: dois ao cubo, oito, vezes dois, dezesseis.
+
+Quatro: D igual a zero quer dizer sistema impossível. Pause. Falso! Engana porque o zero parece dizer não tem jeito. Mas é o amarelo do semáforo: em x mais y igual a dois e dois x mais dois y igual a quatro, D é zero e as equações são gêmeas: infinitas soluções.
+
+Cinco: nesse mesmo sistema, você achou x igual a um e y igual a um. Então a solução é única. Pause. Falso! Engana porque a conta deu certo. Mas com D zero, ela é só uma entre muitas: zero e dois e três e menos um também servem.
+
+Seis: para montar o D x, tire a coluna do x e ponha no lugar a coluna dos termos independentes. Pause. Verdadeiro! Parece falso porque muita gente troca a linha. Mas a figurinha trocada é a coluna: a coluna do x sai, os resultados entram.
+
+Sete: pela regra de Cramer, x é D dividido por D x. Pause. Falso! Engana porque os dois determinantes estão ali. Mas o D principal é o chão da fração: x é D x sobre D. Em x mais y igual a cinco e x menos y igual a um, dá três. Ao contrário, daria um terço.
+
+Oito: um sistema homogêneo nunca é impossível. Pause. Verdadeiro! Parece falso porque ele pode ter D zero. Mas a porta zero, zero está sempre aberta: tudo igual a zero resolve. A pergunta é só se há outras soluções.
+
+E nove: se k ao quadrado é quatro, então k é dois. Pause. Falso! Engana porque o dois é a resposta que vem primeiro. Mas é uma equação do segundo grau: k é dois ou menos dois.
+
+Quantas você acertou? Seis falsas e três verdadeiras. Agora, cinco questões inéditas. Em todas: calcule o D primeiro, resolva e confira nas equações.
+
+Questão um. O determinante da matriz quatro, menos três; dois, cinco é: A, catorze. B, menos catorze. C, vinte e seis. D, menos vinte e seis. E, nove. Pause e tente.
+
+Principal menos secundária, com o produto de casaco. Quatro vezes cinco, vinte. Menos três vezes dois, menos seis. Vinte menos menos seis: vinte e seis. Letra C! A A fez vinte menos seis. A D fez a secundária menos a principal, a B juntou os dois erros, e a E só somou a diagonal.
+
+Questão dois. Uma matriz A de ordem dois tem determinante quatro. O determinante de três A é: A, sete. B, doze. C, trinta e seis. D, sessenta e quatro. E, cento e oito. Pause e tente.
+
+Os botões de volume. Conte as linhas: ordem dois, dois botões. Três ao quadrado, nove, vezes quatro: trinta e seis. Letra C! A B girou um botão só. A E usou três ao cubo, como se a matriz fosse três por três. A D elevou o quatro ao cubo, e a A somou três mais quatro.
+
+Questão três. Três cadernos e duas canetas custam trinta e quatro reais. Dois cadernos e cinco canetas custam trinta reais. O preço de uma caneta é: A, cinquenta centavos. B, dois reais. C, dez reais. D, onze reais. E, vinte e dois reais. Pause e tente.
+
+Pediram só a caneta: Cramer só nessa incógnita. D: três vezes cinco, menos dois vezes dois, onze. D p, trocando a figurinha da coluna da caneta: três vezes trinta, menos dois vezes trinta e quatro, vinte e dois. Vinte e dois sobre onze, dois reais. O caderno sai dez reais, e vinte mais dez dá trinta. Letra B! A C é o caderno. A E esqueceu de dividir, a D é o próprio D, e a A inverteu a fração.
+
+Questão quatro. Sobre o sistema dois x mais y igual a quatro e seis x mais k y igual a doze, é correto afirmar que ele: A, é impossível para k igual a três. B, tem infinitas soluções para k igual a três. C, tem solução única para qualquer k. D, tem infinitas soluções para k igual a menos três. E, é impossível para todo k diferente de três. Pause e tente.
+
+D primeiro: dois k menos seis. Zera só em k igual a três. E aí, o amarelo: olhe as equações. A segunda é o triplo inteiro da primeira, até o doze, que é três vezes quatro. Gêmeas: infinitas soluções. Letra B! Repare: nenhum k deixa esse sistema impossível. A A confundiu D zero com impossível. A C ignorou o caso D zero, a D errou o sinal, e a E trocou o verde pelo vermelho.
+
+E a questão cinco. O sistema homogêneo x mais y igual a zero e três x mais k y igual a zero tem soluções além de zero, zero quando: A, k igual a três. B, k igual a menos três. C, k igual a zero. D, k diferente de três. E, nunca, pois um homogêneo só tem a solução zero, zero. Pause e tente.
+
+A porta zero, zero está sempre aberta. A pergunta é se há outras. Para isso, D tem de ser zero: k menos três igual a zero, k igual a três. Conferindo: com k três, um e menos um resolve as duas. Letra A! A B errou o sinal. Com k zero, D dá menos três: só a trivial. A D é justamente o caso de solução única, e a E esqueceu que D zero abre outras portas.
+
+O checklist. Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada. Dois por dois, Sarrus, Laplace e a inversa: episódio um. As propriedades: episódio dois.
+
+A vezes X igual a B e a regra de Cramer: episódio três. Classificação, parâmetro e homogêneo: episódio quatro. O que você não marcou, reveja o episódio correspondente.
+
+E a meta. Resolva vinte e cinco questões e acerte pelo menos dezoito. Com pelo menos seis de classificação ou discussão de sistemas.
+
+O próximo assunto é Polinômios e equações polinomiais: a busca por soluções sai de várias incógnitas do primeiro grau e vai para uma incógnita só, de grau alto.
+
+Se essa série te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual pegadinha te pegou? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. A série de determinantes está completa. Bons estudos, e até a próxima aula aqui no Estudativo.

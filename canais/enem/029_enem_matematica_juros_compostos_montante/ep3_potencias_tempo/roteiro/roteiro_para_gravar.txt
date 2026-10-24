@@ -1,0 +1,65 @@
+O enunciado diz: um vírgula zero cinco elevado a seis é aproximadamente um vírgula trinta e quatro. A pergunta é sobre doze meses. Quem faz duas vezes um vírgula trinta e quatro erra. Quem faz um vírgula trinta e quatro ao quadrado acerta. Essa é a diferença entre pensar em juros simples e pensar em juros compostos.
+
+Ao final, você vai usar as potências que o enunciado der, descobrir o tempo por tentativa ou por logaritmo e estimar com a regra do setenta e dois.
+
+Três lembretes rápidos. Do episódio um: M igual a C vezes um mais i, elevado a t. O um mais i é o fator de cada período. Potência é multiplicação repetida; o expoente, o numerinho de cima, conta as vezes. E da Potenciação: somar expoentes é multiplicar potências; e elevar ao quadrado dobra o expoente.
+
+Duas perguntas da vida real. Uma dívida de dois mil reais no cartão, a cinco por cento ao mês. Quanto vira em um ano, se ninguém pagar? E em quanto tempo o meu dinheiro dobra? Nas duas: uma potência grande e nenhuma calculadora.
+
+Técnica um: multiplicar passo a passo. A dez por cento, o fator é um vírgula um. Ao quadrado: um vírgula vinte e um. Ao cubo: um vírgula três, três, um. À quarta: um vírgula quatro, seis, quatro, um. À quinta: cerca de um vírgula sessenta e um. Serve para expoentes pequenos.
+
+E de cabeça? Multiplicar por um vírgula um é somar a décima parte. Um vírgula três, três, um, mais zero vírgula um, três, três, um: um vírgula quatro, seis, quatro, um. Ande com a vírgula uma casa e some.
+
+E se o expoente for grande? Técnica dois: quebrar o expoente, escrever o prazo como soma de prazos iguais. Vinte meses são dez mais dez: o fator de vinte meses é o de dez meses ao quadrado. Com um vírgula zero três elevado a dez cerca de um vírgula trinta e quatro, vinte meses dão um vírgula trinta e quatro ao quadrado: cerca de um vírgula oitenta.
+
+E se o prazo não for o dobro de nada? Técnica três: combinar potências, multiplicar fatores de prazos que somam o pedido. Sete anos a dez por cento: sete é cinco mais dois. Um vírgula sessenta e um vezes um vírgula vinte e um: cerca de um vírgula noventa e cinco.
+
+O atalho das três técnicas. Ache as potências dadas. Escreva o prazo como soma dos expoentes dados. Multiplique os fatores, e reais só na última linha.
+
+Agora, a pegadinha do gancho. Seis meses dão fator um vírgula trinta e quatro. E doze? O segundo semestre começa com o saldo já aumentado: o fator multiplica ele mesmo. Um vírgula trinta e quatro ao quadrado, cerca de um vírgula oitenta. Não é dois vírgula sessenta e oito, nem um vírgula sessenta e oito. Dobrar o tempo é elevar o fator ao quadrado, não dobrar o fator.
+
+E quando a pergunta é o tempo? Ele está no expoente, lá em cima. A primeira saída é a tentativa: testar os expoentes até passar da meta. A dez por cento ao mês, quando o saldo passa de um vírgula seis vezes o capital? Um vírgula um, um vírgula vinte e um, um vírgula trinta e três, um vírgula quarenta e seis: ainda não. Um vírgula sessenta e um: passou! Cinco meses.
+
+E se o prazo for longo demais para testar? Aí entra o logaritmo. Hoje, ele é só um número que o enunciado entrega. A fórmula: t igual a log de M sobre C, dividido por log de um mais i. Dobrar a dez por cento ao ano: log de dois, zero vírgula três, zero, um, sobre log de um vírgula um, zero vírgula zero, quatro, um. Cerca de sete vírgula três anos. Por que o log derruba o expoente fica para a série de Logaritmos. Na prova, os logs sempre vêm dados.
+
+O atalho do logaritmo. Um: M sobre C: dobrar é dois, triplicar é três. Dois: o log desse número. Três: divida pelo log do fator, nunca pela taxa.
+
+E dá para estimar em segundos? Estimar é achar um valor aproximado, bom para eliminar alternativas. A regra do setenta e dois: o tempo para dobrar é cerca de setenta e dois dividido pela taxa em por cento. A dez por cento, sete vírgula dois. A seis, doze. A oito, nove. É o seu radar: diz se a resposta está perto de sete anos ou de vinte e cinco. Vale bem entre dois e vinte por cento.
+
+E para triplicar? O tempo de dobrar não serve: troque o log de dois pelo log de três. A dez por cento: zero vírgula quatro, sete, sete sobre zero vírgula zero, quatro, um: cerca de onze vírgula seis anos. E dobrar duas vezes é quadruplicar: cerca de catorze vírgula seis.
+
+Sua vez. Considere um vírgula zero dois elevado a dez, aproximadamente um vírgula vinte e dois. Qual é o fator de vinte meses a dois por cento ao mês? E, pela regra do setenta e dois, em quanto tempo um capital dobra a nove por cento ao ano? Pause e tente.
+
+Vamos juntos. Vinte meses são dez mais dez: um vírgula vinte e dois ao quadrado. Dá um vírgula quatro, oito, oito, quatro, cerca de um vírgula quarenta e nove. Não dois vírgula quarenta e quatro! E o radar: setenta e dois sobre nove, oito anos.
+
+Vamos guardar em três frases. Um: dobrar o tempo é elevar o fator ao quadrado. Dois: o tempo está no expoente: tentativa, logaritmo ou regra do setenta e dois. Três: divida pelo log do fator, nunca pela taxa.
+
+Agora, os quatro erros clássicos. Primeiro: o tempo dobrou, e você dobra o fator: dois vírgula sessenta e oito. Parece certo, porque em juros simples o dobro do tempo dava o dobro dos juros. Mas em compostos, o fator vai ao quadrado.
+
+Segundo: somar as taxas: trinta e quatro mais trinta e quatro, sessenta e oito por cento. Parece certo, porque cada semestre rende mesmo trinta e quatro. Mas o segundo rende sobre um saldo maior. Somar taxas é pensar em simples.
+
+Terceiro: dividir o log de dois pela taxa: zero vírgula três sobre zero vírgula um, três anos. Parece certo, porque a taxa é o número que mais aparece. Mas o denominador é o log de um mais i. E o radar avisava: perto de sete, não de três.
+
+Quarto: usar o tempo de dobrar para triplicar: uma vez e meia, ou o dobro dele. Parece certo, porque três está entre dois e quatro. Mas triplicar usa o log de três. E o dobro do tempo de dobrar é quadruplicar.
+
+Agora, uma questão no estilo do ENEM, do nosso material de estudo. Eu resolvo com você. Uma dívida de dois mil reais no cartão de crédito cresce a juros compostos de cinco por cento ao mês. Considere um vírgula zero cinco elevado a seis, aproximadamente um vírgula trinta e quatro. Se nada for pago, após doze meses a dívida será de, aproximadamente: A: dois mil, seiscentos e oitenta reais. B: três mil e duzentos reais. C: três mil, trezentos e sessenta reais. D: três mil, quinhentos e noventa reais. E: cinco mil, trezentos e sessenta reais.
+
+O enunciado deu o fator de seis meses e pediu doze. Doze são seis mais seis: um vírgula trinta e quatro ao quadrado, um vírgula sete, nove, cinco, seis. Só agora, os reais: dois mil vezes isso, cerca de três mil, quinhentos e noventa e um. Plausível? O radar diz que a cinco por cento a dívida dobra em uns catorze meses. Em doze, quase o dobro. Letra D!
+
+E as erradas? A A usa só o fator de seis meses. A B é juros simples, sessenta por cento. A C soma as taxas dos semestres. E a E multiplica o fator por dois.
+
+Agora, nós fazemos juntos. Mil reais a juros compostos de dez por cento ao mês. Considere um vírgula um à quarta, cerca de um vírgula quarenta e seis, e à quinta, cerca de um vírgula sessenta e um. O número mínimo de meses completos para o saldo atingir pelo menos mil e seiscentos reais é: A: quatro. B: cinco. C: seis. D: sete. E: dezesseis.
+
+A meta é um vírgula seis vezes o capital. Quatro meses, mil, quatrocentos e sessenta: não basta. Cinco, mil, seiscentos e dez: passou. Letra B! A C é juros simples: mil mais cem vezes seis. A A para abaixo da meta. A D conta um mês a mais. E a E divide mil e seiscentos por cem, misturando montante com juros do mês.
+
+E agora, é você quem faz. Um fundo rende juros compostos de vinte por cento ao ano. Para estimar em quanto tempo um capital aplicado nesse fundo triplica, um analista usou: log de dois, zero vírgula trinta; log de três, zero vírgula quarenta e oito; e log de um vírgula dois, zero vírgula zero oito. O tempo obtido foi de: A: três vírgula setenta e cinco anos. B: seis anos. C: sete vírgula cinco anos. D: dez anos. E: quinze anos. Pause o vídeo e tente.
+
+Conferindo. Triplicar: log de três, zero vírgula quarenta e oito. Dividido pelo log do fator, zero vírgula zero oito: seis anos. Conferência: um vírgula dois à sexta dá dois vírgula noventa e nove. E o radar: dobra em uns três vírgula seis anos, quadruplica em uns sete. Triplicar fica no meio. Letra B!
+
+E as erradas? A A é o tempo para dobrar: o log de dois estava lá de isca. A C é o dobro do tempo de dobrar: quadruplicar. A D é triplicar em juros simples: vinte por cento ao ano, dez anos. E a E faz juros igual a três vezes o capital, também em simples.
+
+Para fechar, as mesmas três frases. Um: dobrar o tempo é elevar o fator ao quadrado. Dois: o tempo está no expoente: tentativa, logaritmo ou regra do setenta e dois. Três: divida pelo log do fator, nunca pela taxa.
+
+E o caminho de volta? Você quer ter doze mil e cem reais daqui a dois anos. Quanto precisa aplicar hoje? Tirar dez por cento duas vezes não funciona. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já conhecia a regra do setenta e dois? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

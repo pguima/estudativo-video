@@ -1,0 +1,73 @@
+Dois mais três i, vezes um menos i, dá cinco mais i. Quem esquece que i ao quadrado é menos um marca menos um mais i, e essa alternativa está lá esperando.
+
+Este é o segundo episódio da série de Números complexos. Ao final, você vai somar, multiplicar e dividir complexos e resolver equações com z e o conjugado de z.
+
+Quatro lembretes. Episódio um: i ao quadrado é menos um. Expressões algébricas: dois termos vezes dois termos dão quatro produtos. Frações: multiplicar em cima e embaixo pelo mesmo número não muda a fração. Sistemas: duas equações, duas incógnitas.
+
+Comece pela feira. Duas maçãs e três bananas, mais uma maçã e menos cinco bananas. Maçã com maçã: três. Banana com banana: três menos cinco, menos duas. Agora troque banana por i: dois mais três i, mais um menos cinco i, dá três menos dois i. Parte real com real; parte imaginária, a do i, com imaginária.
+
+E na subtração? Dois mais três i, menos um menos cinco i. O sinal de menos entra nas duas partes: menos um, e menos com menos cinco i vira mais cinco i. Dois menos um, um. Três i mais cinco i, oito i. Resultado: um mais oito i.
+
+Atalho. Na subtração, troque os sinais do segundo número antes. Depois é só somar: real com real, imaginária com imaginária.
+
+E para multiplicar? Vamos fazer um mais dois i, vezes três menos i. Trate o i como se fosse um x e use a distributiva: todos com todos. Três, menos i, mais seis i, menos dois i ao quadrado.
+
+E aquele i ao quadrado? Agora vem o pedágio: todo i ao quadrado vira menos um. Menos dois vezes menos um: mais dois. E ele muda de time: pula para a parte real. Real: três mais dois, cinco. Imaginária: menos i mais seis i, cinco i. Cinco mais cinco i.
+
+Atalho. Em a mais b i, vezes c mais d i, a parte real é a vezes c, menos b vezes d. A imaginária é a vezes d, mais b vezes c. Aqui: três mais dois, cinco; menos um mais seis, cinco. Bateu.
+
+E o que é o tal do conjugado? O conjugado de a mais b i é a menos b i. É o espelho: troca só o sinal da parte imaginária. O nome: z barra, um z com tracinho em cima. O conjugado de três mais quatro i é três menos quatro i. Já menos três menos quatro i é o oposto, que troca tudo.
+
+E para que serve o espelho? Três mais quatro i, vezes três menos quatro i. Os termos com i se cancelam: nove mais dezesseis, vinte e cinco. Um número real. A regra: z vezes z barra é a ao quadrado mais b ao quadrado, sempre real, e nunca negativo. E z mais z barra é dois a: aqui, seis.
+
+E como se divide por um número com i? Vamos dividir cinco mais cinco i por três menos i. O problema é o i no andar de baixo. A saída: multiplique em cima e embaixo pelo conjugado do denominador, três mais i. Mesmo número nos dois andares: a fração não muda.
+
+Primeiro, o andar de cima. Cinco mais cinco i, vezes três mais i: quinze, mais cinco i, mais quinze i, mais cinco i ao quadrado. Pedágio: vira menos cinco. Fica dez mais vinte i. Embaixo: nove mais um, dez. Andar de baixo limpo! Dez mais vinte i, dividido por dez: um mais dois i.
+
+E como ter certeza? Multiplique de volta: um mais dois i, vezes três menos i. Essa conta você já fez: dá cinco mais cinco i. O número do começo.
+
+Atalho. O andar de baixo vira a ao quadrado mais b ao quadrado: nove mais um, dez, direto. E no fim, multiplique de volta.
+
+E quando dois complexos são iguais? Igualdade de complexos: a mais b i é igual a c mais d i só se a for igual a c, e b for igual a d. Por isso, uma equação complexa vale por duas equações reais. E imaginário puro é o de parte real zero e imaginária não nula, como cinco i.
+
+Exemplo. Desenvolva a mais dois i, vezes um mais i. Fica a menos dois, mais a mais dois vezes i. Para o resultado ser real, a parte imaginária some: a mais dois é zero, a é menos dois. Para ser imaginário puro, some a parte real: a menos dois é zero, a é dois.
+
+E se a equação tiver z e z barra? Resolva z mais dois z barra, igual a seis mais i. Escreva z como a mais b i e z barra como a menos b i. Juntando: três a, menos b i. Iguale as partes: três a é seis, a é dois; menos b é um, b é menos um. Então z é dois menos i.
+
+Atalho. Troque z por a mais b i e z barra por a menos b i. Separe as partes: uma equação vira duas. E confira: dois menos i, mais quatro mais dois i: seis mais i.
+
+Sua vez. Calcule quatro menos i, vezes dois mais três i. E escreva o conjugado de menos dois mais cinco i. Pause e tente.
+
+Vamos juntos. Oito, mais doze i, menos dois i, menos três i ao quadrado. Pedágio: mais três. Onze, mais dez i: onze mais dez i. E o conjugado: o real fica, o imaginário troca: menos dois menos cinco i.
+
+Vamos guardar em três frases. Um: trate i como letra e troque i ao quadrado por menos um no fim. Dois: conjugado: só a parte imaginária troca de sinal. Três: na divisão, multiplique em cima e embaixo pelo conjugado do denominador.
+
+Agora, os erros clássicos. Primeiro: dois mais três i, vezes um menos i, igual a dois menos três i. Parece certo, porque na soma é assim: real com real, imaginária com imaginária. Mas no produto são quatro contas, mais o pedágio: cinco mais i.
+
+Segundo: dividir parte por parte. Cinco mais cinco i, sobre três menos i, vira cinco terços mais cinco i sobre menos i. Parece certo, porque com denominador real funciona: seis mais quatro i, sobre dois, é três mais dois i. Mas com i embaixo, primeiro limpe o andar de baixo. O certo é um mais dois i.
+
+Terceiro: achar que o conjugado de três mais quatro i é menos três menos quatro i. Parece certo, porque conjugar soa como inverter tudo. Mas esse é o oposto. O espelho troca só a parte imaginária: três menos quatro i.
+
+Agora, uma questão no estilo do ENEM. Em um exercício sobre circuitos, duas grandezas são representadas pelos números complexos z igual a dois mais três i e w igual a um menos i. O produto z vezes w é: A: cinco mais i. B: menos um mais i. C: dois menos três i. D: cinco menos i. E: três mais dois i.
+
+Essa, eu faço. Quatro produtos: dois, menos dois i, mais três i, menos três i ao quadrado. Pedágio: mais três, na parte real. Real, cinco; imaginária, i. Cinco mais i. Letra A!
+
+E as armadilhas? A B usa i ao quadrado igual a um: o menos três i ao quadrado vira menos três. A C multiplica só as partes correspondentes. A D erra o sinal dos termos em i. E a E é a soma, z mais w, e não o produto.
+
+A próxima, nós fazemos. O quociente de três mais i por um menos i, escrito na forma a mais b i, é: A: dois mais quatro i. B: três menos i. C: dois mais i. D: um mais quatro i. E: um mais dois i. Qual é o espelho do denominador?
+
+O espelho de um menos i é um mais i. Em cima: três, mais três i, mais i, mais i ao quadrado: dois mais quatro i. Embaixo: um mais um, dois. Dois mais quatro i, dividido por dois: um mais dois i. Letra E! Confere: vezes um menos i, dá três mais i.
+
+E as erradas? A A esquece de dividir pelo dois. A B divide parte por parte: três por um, e um por menos um. A C troca a parte real com a imaginária. E a D divide por dois só a parte real.
+
+Agora, você faz. Sendo z barra o conjugado do número complexo z, o número que satisfaz dois z mais z barra, igual a seis menos dois i, é: A: dois mais dois i. B: dois menos dois terços de i. C: seis menos dois terços de i. D: três menos dois i. E: dois menos dois i. Pause o vídeo e tente.
+
+Vamos conferir. z é a mais b i; z barra, a menos b i. Juntando: três a, mais b i. Iguale: três a é seis, a é dois; b é menos dois. z é dois menos dois i. Letra E! Confere: quatro menos quatro i, mais dois mais dois i, dá seis menos dois i.
+
+E as erradas? A A erra o sinal de b no fim. A B trata z barra como se fosse z: três z igual a seis menos dois i. A C escreve o conjugado como menos a mais b i, trocando o sinal da parte errada. E a D só considera o dois z na parte real.
+
+Para fechar, as mesmas três frases. Um: trate i como letra e troque i ao quadrado por menos um no fim. Dois: conjugado: só a parte imaginária troca de sinal. Três: na divisão, multiplique em cima e embaixo pelo conjugado do denominador.
+
+E se três mais quatro i for um ponto num mapa? A que distância ele está da origem? E o que acontece com o ponto quando você multiplica por i? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha caído no pedágio do i ao quadrado? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

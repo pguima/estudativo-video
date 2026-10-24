@@ -1,0 +1,47 @@
+Uma reta começa em vinte e uma curva começa em um. Até o passo seis, a reta está na frente: oitenta contra sessenta e quatro. No passo sete, a curva já passou: cento e vinte e oito contra noventa. E nunca mais perde.
+
+Este é o quarto episódio da série de Função exponencial. Ao final, você vai olhar uma tabela e dizer em segundos se o crescimento é afim ou exponencial, e achar o fator.
+
+Dois lembretes rápidos. Da série de Função afim: a afim soma sempre o mesmo valor. Do episódio dois: a exponencial é Q zero vezes a elevado a t: multiplica pelo fator a cada passo.
+
+Pense em dois perfis de uma rede social. O primeiro ganha sempre cem seguidores por semana: cem, duzentos, trezentos. O segundo dobra: cem, duzentos, quatrocentos. O primeiro é um modelo afim: soma o mesmo número. O segundo, um modelo exponencial: multiplica pelo mesmo número.
+
+E quando só aparece a tabela? As duas começam em cem. As duas dão o mesmo primeiro passo: cento e cinquenta. Depois, uma vai para duzentos, trezentos. A outra, para duzentos e vinte e cinco, até quinhentos e seis. Qual é qual?
+
+Primeiro teste: subtraia os vizinhos. Na primeira, cada valor menos o anterior dá sempre cinquenta. Isso é uma diferença constante: o mesmo salto sempre. Diferença constante é afim. Na segunda, os saltos são cinquenta, setenta e cinco, cento e doze e meio. Crescem.
+
+Segundo teste: divida. O teste da razão é dividir cada valor pelo anterior. Na segunda tabela: cento e cinquenta dividido por cem, um e meio. O próximo, um e meio de novo. Sempre um e meio. Isso é uma razão constante. Exponencial, e o fator é um e meio. Na afim, a razão vai caindo: um e meio, um vírgula trinta e três, e assim por diante. Guarde: na afim se repete a subtração; na exponencial, a divisão.
+
+Atalho em três passos. Um: divida vizinho por vizinho, nunca pelo primeiro valor. Dois: razão sempre igual? Ela é o fator a. Três: o valor em t igual a zero é o Q zero. Aqui, cem vezes um e meio elevado a t.
+
+E quem vence no fim? Lembra da tartaruga e da lebre? Aqui é ao contrário. A tartaruga anda numa reta: vinte mais dez t. A lebre anda numa curva: dois elevado a t. No passo seis: oitenta contra sessenta e quatro. A reta ainda na frente. No passo sete: noventa contra cento e vinte e oito. Ultrapassou!
+
+Por que ela nunca mais perde? A reta ganha sempre dez. A curva dobra: do passo seis para o sete, ela ganhou sessenta e quatro de uma vez. No passo dez, a reta tem cento e vinte. A curva tem mil e vinte e quatro. Por isso, toda exponencial crescente ultrapassa qualquer reta.
+
+Basta conferir dois pontos? Lembra da Questão três do episódio dois? Cinquenta mil, quarenta mil, trinta e dois mil. A reta cinquenta mil menos dez mil t acerta t igual a zero e acerta t igual a um. Em t igual a dois, ela dá trinta mil. A tabela diz trinta e dois mil. Duas leis podem concordar em dois pontos e brigar no terceiro.
+
+Atalho: antes de marcar uma lei, substitua t igual a zero, um e dois. Zero confere o valor inicial; um e dois, o fator. Menos de um minuto.
+
+Esse padrão tem nome? Tem. Os valores de uma exponencial em tempos iguais formam uma progressão geométrica: uma lista em que cada termo é o anterior vezes o mesmo número. Ela tem série própria.
+
+Sua vez. A tabela oitenta, cento e vinte, cento e oitenta, duzentos e setenta. É afim ou exponencial? E qual é o próximo valor? Pause e tente.
+
+Vamos juntos. Diferenças: quarenta, sessenta, noventa. Não são iguais. Não é afim. Razões: cento e vinte dividido por oitenta, um e meio. As outras, também um e meio. Razão constante: exponencial, fator um e meio. Próximo valor: duzentos e setenta vezes um e meio, quatrocentos e cinco.
+
+Vamos guardar em três frases. Um: diferença constante é afim; razão constante é exponencial. Dois: toda exponencial crescente acaba ultrapassando qualquer reta. Três: teste sempre três pontos, não dois.
+
+Agora, os dois erros clássicos. Primeiro: achar que dois pontos certos garantem a lei certa. Parece certo, porque dois pontos bastam para desenhar uma reta. Mas dois elevado a t e um mais t dão um e dois nos dois primeiros pontos. Em t igual a dois, quatro contra três.
+
+Segundo: confundir o ganho de uma semana com o total acumulado. Parece certo, porque quem ganha mais parece estar na frente. Na corrida, do passo quatro para o cinco, a curva ganha dezesseis e a reta só dez. Mas o total é trinta e dois contra setenta.
+
+Questão no estilo do ENEM, para fazermos juntos. Hoje, o perfil A tem mil seguidores e ganha trezentos por semana, sempre o mesmo número. O perfil B tem hoje cem seguidores, e esse número dobra a cada semana. O menor número de semanas ao fim do qual B terá mais seguidores que A é: A: três semanas. B: quatro. C: cinco. D: seis. E: nenhum: B nunca ultrapassa A. Pause o vídeo e tente.
+
+O A é afim: mil mais trezentos t. O B é exponencial: cem vezes dois elevado a t. Semana três: A tem mil e novecentos; B tem oitocentos. Semana quatro: A tem dois mil e duzentos; B tem mil e seiscentos. Ainda perde! Semana cinco: A tem dois mil e quinhentos; B tem três mil e duzentos. Ultrapassou. Letra C!
+
+E as armadilhas? A A confunde ganho com total: na terceira semana, B já ganha quatrocentos contra trezentos, mas tem bem menos. A B compara o B com os mil iniciais do A, esquecendo que o A também cresce. A D conta hoje como a primeira semana. E a E esquece a tartaruga e a lebre: a exponencial sempre passa a reta.
+
+Para fechar, as mesmas três frases. Um: diferença constante é afim; razão constante é exponencial. Dois: toda exponencial crescente acaba ultrapassando qualquer reta. Três: teste sempre três pontos, não dois.
+
+Se P de t é igual a mil vezes três elevado a t sobre dois, quando a população chega a oitenta e um mil? Dá para achar t sem tentar um por um. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já viu alguma coisa crescer como a lebre, dobrando sem parar? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

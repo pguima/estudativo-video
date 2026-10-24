@@ -1,0 +1,1066 @@
+<title>Sistemas Lineares</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 4 de 18</p>
+    <h1>Sistemas de equações lineares</h1>
+    <p class="deck">Duas incógnitas pedem duas informações. Ingressos inteiros e meias, carros e motos, café caro e café barato: o ENEM adora problemas em que duas condições valem ao mesmo tempo. Este assunto ensina a montar o sistema, a resolvê-lo pelo caminho mais curto e a enxergar a solução como o cruzamento de duas retas.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Duas retas no plano cartesiano: x mais y igual a 5, descendo, e x menos y igual a menos 1, subindo. Elas se cruzam no ponto 2, 3, que é a solução do sistema">
+  <defs>
+    <marker id="ax22h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="28" y1="148.4" x2="262" y2="148.4" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax22h)"/>
+  <line x1="51.7" y1="166" x2="51.7" y2="6" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax22h)"/>
+  <line x1="87.1" y1="145.4" x2="87.1" y2="151.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="87.1" y="164.4" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="122.5" y1="145.4" x2="122.5" y2="151.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="122.5" y="164.4" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="157.9" y1="145.4" x2="157.9" y2="151.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="157.9" y="164.4" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="193.3" y1="145.4" x2="193.3" y2="151.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="193.3" y="164.4" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="228.8" y1="145.4" x2="228.8" y2="151.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="228.8" y="164.4" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="48.7" y1="125.1" x2="54.7" y2="125.1" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="44.7" y="129.1" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="48.7" y1="101.8" x2="54.7" y2="101.8" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="44.7" y="105.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="48.7" y1="78.5" x2="54.7" y2="78.5" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="44.7" y="82.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="48.7" y1="55.2" x2="54.7" y2="55.2" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="44.7" y="59.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="48.7" y1="32" x2="54.7" y2="32" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="44.7" y="36" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="272" y="142.4" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">x</text>
+  <text x="59.7" y="16" class="svg-lbl" style="fill:var(--ink-2)">y</text>
+  <line x1="55.2" y1="34.3" x2="239.4" y2="155.3" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="34" y1="136.7" x2="214.6" y2="18" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="122.5" y1="148.4" x2="122.5" y2="78.5" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <line x1="51.7" y1="78.5" x2="122.5" y2="78.5" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <circle cx="122.5" cy="78.5" r="5" style="fill:var(--c4)"/>
+  <text x="132.5" y="82.5" class="svg-num" style="fill:var(--c4)">(2, 3)</text>
+  <text x="210" y="128.1" class="svg-num" style="fill:var(--c1)">x + y = 5</text>
+  <text x="179.3" y="36" text-anchor="end" class="svg-num" style="fill:var(--c2)">x − y = −1</text>
+  <text x="150" y="202" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a solução está nas duas retas</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>6 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Equações e inequações do 1º grau</dd></div>
+      <div><dt>Destrava</dt><dd>Função afim, posição relativa de retas, problemas de mistura e de encontro</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Sistemas lineares aparecem quase sempre como <strong>problema de texto</strong>. A conta é curta; o que separa quem acerta de quem erra é a tradução do enunciado em duas (ou três) equações. As formas mais comuns:</p>
+<ul>
+  <li><strong>Quantidade e valor:</strong> ingressos de dois preços, cédulas de dois valores, produtos de dois tipos, com o total de itens e o total arrecadado.</li>
+  <li><strong>Cabeças e patas:</strong> veículos e rodas, animais e patas, questões certas e erradas numa prova com pontuação negativa.</li>
+  <li><strong>Misturas:</strong> dois cafés, duas soluções, duas ligas metálicas com preços ou concentrações diferentes.</li>
+  <li><strong>Combinações de compras:</strong> “dois sanduíches e um suco custam…”, em que às vezes nem é preciso achar cada preço.</li>
+  <li><strong>Interpretação gráfica:</strong> o ponto de encontro de duas retas, ou por que duas tarifas nunca se igualam.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p><strong>Nomear as incógnitas com unidade</strong> (“<span class="m"><span class="v">i</span></span> = número de ingressos inteiros”) e escrever <strong>uma equação para cada informação</strong> do texto. Depois, olhar o que a pergunta pede: muitas vezes é uma combinação como <span class="m"><span class="v">x</span> + <span class="v">y</span></span>, que sai somando as equações, sem resolver o sistema inteiro.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> O que é um sistema e o que é uma solução</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Um <strong>sistema linear</strong> é um conjunto de equações do 1º grau que devem valer <strong>ao mesmo tempo</strong>. Com duas incógnitas, a solução é um <strong>par ordenado</strong> <span class="m">(<span class="v">x</span>, <span class="v">y</span>)</span> que satisfaz todas as equações.</p>
+</div>
+<p>Uma equação sozinha, como <span class="m"><span class="v">g</span> + <span class="v">c</span> = 10</span>, tem infinitas soluções: <span class="m">(1, 9)</span>, <span class="m">(2, 8)</span>, <span class="m">(6, 4)</span>… A segunda equação é que escolhe uma delas. Num sítio com galinhas e coelhos, 10 cabeças e 28 patas:</p>
+<div class="eq">
+  <p class="m">{ <span class="v">g</span> + <span class="v">c</span> = 10 &nbsp;&nbsp;(cabeças) &nbsp;&nbsp;&nbsp; 2<span class="v">g</span> + 4<span class="v">c</span> = 28 &nbsp;&nbsp;(patas)</p>
+  <p>O par <span class="m">(6, 4)</span> satisfaz as duas: <span class="m">6 + 4 = 10</span> e <span class="m">12 + 16 = 28</span>. São 6 galinhas e 4 coelhos.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 262" role="img" aria-label="Plano com galinhas no eixo horizontal e coelhos no vertical. A reta g mais c igual a 10 reúne todas as combinações com 10 cabeças; a reta 2g mais 4c igual a 28 reúne as combinações com 28 patas. As retas se cruzam no ponto 6, 4: seis galinhas e quatro coelhos">
+  <defs>
+    <marker id="ax22g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="54" y1="216" x2="412" y2="216" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax22g)"/>
+  <line x1="60" y1="222" x2="60" y2="14" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#ax22g)"/>
+  <line x1="106.9" y1="213" x2="106.9" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="106.9" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="153.8" y1="213" x2="153.8" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="153.8" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="200.7" y1="213" x2="200.7" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="200.7" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="247.6" y1="213" x2="247.6" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="247.6" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="294.5" y1="213" x2="294.5" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="294.5" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">10</text>
+  <line x1="341.4" y1="213" x2="341.4" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="341.4" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">12</text>
+  <line x1="388.3" y1="213" x2="388.3" y2="219" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="388.3" y="232" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">14</text>
+  <line x1="57" y1="179.8" x2="63" y2="179.8" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="53" y="183.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="57" y1="143.6" x2="63" y2="143.6" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="53" y="147.6" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="57" y1="107.4" x2="63" y2="107.4" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="53" y="111.4" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="57" y1="71.2" x2="63" y2="71.2" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="53" y="75.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="57" y1="35" x2="63" y2="35" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="53" y="39" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">10</text>
+  <text x="420" y="250" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">g (galinhas)</text>
+  <text x="68" y="24" class="svg-lbl" style="fill:var(--ink-2)">c (coelhos)</text>
+  <line x1="60" y1="35" x2="294.5" y2="216" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="60" y1="89.3" x2="388.3" y2="216" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="200.7" y1="216" x2="200.7" y2="143.6" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <line x1="60" y1="143.6" x2="200.7" y2="143.6" style="stroke:var(--ink-3);stroke-width:1;stroke-linecap:round;stroke-dasharray:3 3"/>
+  <circle cx="60" cy="35" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="106.9" cy="71.2" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="153.8" cy="107.4" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="247.6" cy="179.8" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="294.5" cy="216" r="2.6" style="fill:var(--c1)"/>
+  <circle cx="200.7" cy="143.6" r="5.5" style="fill:var(--c4)"/>
+  <text x="212.7" y="135.6" class="svg-num" style="fill:var(--c4)">(6, 4)</text>
+  <text x="100.8" y="49.5" class="svg-lbl" style="fill:var(--c1)">g + c = 10 (cabeças)</text>
+  <text x="289.1" y="168.4" class="svg-lbl" style="fill:var(--c2)">2g + 4c = 28 (patas)</text>
+</svg>
+<figcaption><b>Cada equação é uma reta de soluções; a solução do sistema é o cruzamento.</b> Todos os pontos da reta azul têm 10 cabeças; todos os da reta laranja têm 28 patas. Só o ponto <span class="m">(6, 4)</span> está nas duas.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Testar é permitido</span>
+  <p>Se as alternativas dão pares ou valores, substitua nas <strong>duas</strong> equações. Um par que satisfaz só uma delas é o distrator típico.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Do texto ao sistema</h2>
+<p>Quase todo problema de sistema com duas incógnitas segue o mesmo molde: uma equação conta <strong>quantidades</strong>, a outra soma <strong>valores</strong> (preço, patas, pontos, massa).</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Situação</th><th>Equação das quantidades</th><th>Equação dos valores</th></tr></thead>
+  <tbody>
+    <tr><td>400 ingressos: inteira R$ 40, meia R$ 20, total R$ 11.200</td><td class="m"><span class="v">i</span> + <span class="v">m</span> = 400</td><td class="m">40<span class="v">i</span> + 20<span class="v">m</span> = 11 200</td></tr>
+    <tr><td>30 veículos (carros e motos), 100 rodas</td><td class="m"><span class="v">c</span> + <span class="v">m</span> = 30</td><td class="m">4<span class="v">c</span> + 2<span class="v">m</span> = 100</td></tr>
+    <tr><td>Prova de 20 questões: +5 por acerto, −2 por erro, nota 51</td><td class="m"><span class="v">a</span> + <span class="v">e</span> = 20</td><td class="m">5<span class="v">a</span> − 2<span class="v">e</span> = 51</td></tr>
+    <tr><td>60 kg de café: R$ 30/kg e R$ 45/kg, mistura a R$ 40/kg</td><td class="m"><span class="v">a</span> + <span class="v">b</span> = 60</td><td class="m">30<span class="v">a</span> + 45<span class="v">b</span> = 40 · 60</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Na prova, a terceira linha dá <span class="m"><span class="v">e</span> = 20 − <span class="v">a</span></span> e <span class="m">5<span class="v">a</span> − 40 + 2<span class="v">a</span> = 51</span>, então <span class="m"><span class="v">a</span> = 13</span> acertos e 7 erros.</p>
+<div class="box warn">
+  <span class="tag">Frases de comparação</span>
+  <p>“Pedro tem o dobro de Júlia” é <span class="m"><span class="v">P</span> = 2<span class="v">J</span></span>, e não <span class="m">2<span class="v">P</span> = <span class="v">J</span></span>. Teste com números: se Júlia tem 5, Pedro tem 10, e <span class="m">10 = 2 · 5</span> confere. “Se Pedro der 6 moedas a Júlia, ficam iguais” mexe nos <strong>dois</strong> lados: <span class="m"><span class="v">P</span> − 6 = <span class="v">J</span> + 6</span>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Método da substituição</h2>
+<p>Isole uma incógnita em uma das equações e substitua na outra. Funciona melhor quando alguma incógnita já aparece com coeficiente 1.</p>
+<div class="eq">
+  <span class="lbl">Carros e motos · c + m = 30 e 4c + 2m = 100</span>
+  <p class="m">1) <span class="v">m</span> = 30 − <span class="v">c</span></p>
+  <p class="m">2) 4<span class="v">c</span> + 2(30 − <span class="v">c</span>) = 100 &nbsp;→&nbsp; 4<span class="v">c</span> + 60 − 2<span class="v">c</span> = 100 &nbsp;→&nbsp; 2<span class="v">c</span> = 40 &nbsp;→&nbsp; <span class="v">c</span> = 20</p>
+  <p class="m">3) <span class="v">m</span> = 30 − 20 = 10</p>
+  <p><strong>Conferência:</strong> <span class="m">20 · 4 + 10 · 2 = 100</span> rodas.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Parênteses na substituição</span>
+  <p>Ao trocar <span class="m"><span class="v">m</span></span> por <span class="m">30 − <span class="v">c</span></span>, o coeficiente multiplica os <strong>dois</strong> termos: <span class="m">2(30 − <span class="v">c</span>) = 60 − 2<span class="v">c</span></span>. Escrever <span class="m">2 · 30 − <span class="v">c</span></span> é o erro mais comum do método.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Atalho do “tudo de um tipo”</span>
+  <p>Se os 30 veículos fossem motos, haveria 60 rodas. Sobram 40 rodas, e cada troca de moto por carro acrescenta 2: são <span class="m">40 ÷ 2 = 20</span> carros. É a mesma conta da substituição, feita de cabeça.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Método da adição</h2>
+<p>Some (ou subtraia) as equações de modo que uma incógnita desapareça. Se os coeficientes não forem opostos, multiplique uma ou as duas equações antes.</p>
+<div class="eq">
+  <span class="lbl">Coeficientes já opostos · 3x + 2y = 16 e 5x − 2y = 16</span>
+  <p class="m">(3<span class="v">x</span> + 2<span class="v">y</span>) + (5<span class="v">x</span> − 2<span class="v">y</span>) = 16 + 16 &nbsp;→&nbsp; 8<span class="v">x</span> = 32 &nbsp;→&nbsp; <span class="v">x</span> = 4</p>
+  <p>Voltando à primeira: <span class="m">12 + 2<span class="v">y</span> = 16</span>, logo <span class="m"><span class="v">y</span> = 2</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Multiplicando antes · 2x + 3y = 12 e 3x + 2y = 13</span>
+  <p class="m">× 3: 6<span class="v">x</span> + 9<span class="v">y</span> = 36 &nbsp;&nbsp;&nbsp; × 2: 6<span class="v">x</span> + 4<span class="v">y</span> = 26</p>
+  <p class="m">Subtraindo: 5<span class="v">y</span> = 10 &nbsp;→&nbsp; <span class="v">y</span> = 2 &nbsp;→&nbsp; 2<span class="v">x</span> + 6 = 12 &nbsp;→&nbsp; <span class="v">x</span> = 3</p>
+</div>
+<div class="box def">
+  <span class="tag">Às vezes a pergunta é a soma</span>
+  <p>No último sistema, somando as duas equações sem multiplicar nada: <span class="m">5<span class="v">x</span> + 5<span class="v">y</span> = 25</span>, ou seja, <span class="m"><span class="v">x</span> + <span class="v">y</span> = 5</span>. Se o enunciado pergunta “quanto custam um de cada”, essa é a resposta, em uma linha. Antes de resolver, <strong>olhe o que foi pedido</strong>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Multiplique a equação inteira</span>
+  <p>Ao multiplicar por 3, o lado direito também é multiplicado: <span class="m">2<span class="v">x</span> + 3<span class="v">y</span> = 12</span> vira <span class="m">6<span class="v">x</span> + 9<span class="v">y</span> = 36</span>, não <span class="m">= 12</span>.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Interpretação gráfica: três posições de duas retas</h2>
+<p>Cada equação linear com duas incógnitas é uma reta no plano. Duas retas só podem estar em três situações, e cada uma corresponde a um tipo de sistema.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 216" role="img" aria-label="Três pares de retas. Concorrentes: cruzam-se em um ponto, o sistema é possível e determinado. Paralelas: não se encontram, o sistema é impossível. Coincidentes: uma sobre a outra, o sistema é possível e indeterminado, com infinitas soluções">
+<defs>
+    <marker id="ax22c" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="18" y1="86" x2="144" y2="86" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="78" y1="156" x2="78" y2="10" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="30.5" y1="132.5" x2="125.5" y2="39.5" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="30.5" y1="30.7" x2="125.5" y2="100.5" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <circle cx="89.9" cy="74.4" r="4.5" style="fill:var(--c4)"/>
+  <text x="78" y="184" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">concorrentes</text>
+  <text x="78" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">SPD · 1 solução</text>
+  <line x1="168" y1="86" x2="294" y2="86" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="228" y1="156" x2="228" y2="10" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="180.5" y1="115.1" x2="275.5" y2="39.5" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="180.5" y1="144.2" x2="275.5" y2="68.5" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <text x="228" y="184" text-anchor="middle" class="svg-ttl" style="fill:var(--c4)">paralelas</text>
+  <text x="228" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">SI · nenhuma</text>
+  <line x1="318" y1="86" x2="444" y2="86" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="378" y1="156" x2="378" y2="10" style="stroke:var(--ink-3);stroke-width:1.4" marker-end="url(#ax22c)"/>
+  <line x1="330.5" y1="126.7" x2="425.5" y2="45.3" style="stroke:var(--c1);stroke-width:2.6;stroke-linecap:round"/>
+  <line x1="330.5" y1="126.7" x2="425.5" y2="45.3" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:7 6"/>
+  <text x="378" y="184" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">coincidentes</text>
+  <text x="378" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">SPI · infinitas</text>
+</svg>
+<figcaption><b>Concorrentes, paralelas ou coincidentes.</b> Retas que se cruzam dão uma única solução (sistema possível e determinado). Retas paralelas nunca se encontram: não há solução (sistema impossível). Retas coincidentes têm todos os pontos em comum: infinitas soluções (sistema possível e indeterminado).</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th>Sistema</th><th>Classificação</th><th>Retas</th><th>O que acontece na conta</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="v">x</span> + <span class="v">y</span> = 5 · <span class="v">x</span> − <span class="v">y</span> = −1</td><td><strong>SPD</strong></td><td>concorrentes</td><td>sai um valor para cada incógnita: <span class="m">(2, 3)</span></td></tr>
+    <tr><td class="m"><span class="v">x</span> + 2<span class="v">y</span> = 4 · 2<span class="v">x</span> + 4<span class="v">y</span> = 10</td><td><strong>SI</strong></td><td>paralelas</td><td>chega-se a um absurdo, como <span class="m">0 = 2</span></td></tr>
+    <tr><td class="m"><span class="v">x</span> + 2<span class="v">y</span> = 4 · 2<span class="v">x</span> + 4<span class="v">y</span> = 8</td><td><strong>SPI</strong></td><td>coincidentes</td><td>chega-se a uma identidade, como <span class="m">0 = 0</span></td></tr>
+  </tbody>
+</table>
+</div>
+<p>No contexto de preços, retas paralelas são duas tarifas com o <strong>mesmo preço por unidade</strong> e taxas fixas diferentes: uma é sempre mais cara, e a pergunta “quando custam o mesmo?” não tem resposta. Esse caso já apareceu em <em>Equações e inequações do 1º grau</em>.</p>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Classificar sem resolver</h2>
+<p>Para o sistema <span class="m"><span class="v">a</span><sub>1</sub><span class="v">x</span> + <span class="v">b</span><sub>1</sub><span class="v">y</span> = <span class="v">c</span><sub>1</sub></span> e <span class="m"><span class="v">a</span><sub>2</sub><span class="v">x</span> + <span class="v">b</span><sub>2</sub><span class="v">y</span> = <span class="v">c</span><sub>2</sub></span>, compare as razões entre os coeficientes correspondentes:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Comparação</th><th>Classificação</th></tr></thead>
+  <tbody>
+    <tr><td class="m"><span class="frac"><i><span class="v">a</span><sub>1</sub></i><i><span class="v">a</span><sub>2</sub></i></span> ≠ <span class="frac"><i><span class="v">b</span><sub>1</sub></i><i><span class="v">b</span><sub>2</sub></i></span></td><td><strong>SPD</strong>: uma única solução</td></tr>
+    <tr><td class="m"><span class="frac"><i><span class="v">a</span><sub>1</sub></i><i><span class="v">a</span><sub>2</sub></i></span> = <span class="frac"><i><span class="v">b</span><sub>1</sub></i><i><span class="v">b</span><sub>2</sub></i></span> ≠ <span class="frac"><i><span class="v">c</span><sub>1</sub></i><i><span class="v">c</span><sub>2</sub></i></span></td><td><strong>SI</strong>: nenhuma solução</td></tr>
+    <tr><td class="m"><span class="frac"><i><span class="v">a</span><sub>1</sub></i><i><span class="v">a</span><sub>2</sub></i></span> = <span class="frac"><i><span class="v">b</span><sub>1</sub></i><i><span class="v">b</span><sub>2</sub></i></span> = <span class="frac"><i><span class="v">c</span><sub>1</sub></i><i><span class="v">c</span><sub>2</sub></i></span></td><td><strong>SPI</strong>: infinitas soluções</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em outras palavras: se uma equação é <strong>múltipla</strong> da outra só no lado esquerdo, as retas são paralelas; se é múltipla inteira, são a mesma reta.</p>
+<div class="box def">
+  <span class="tag">O determinante, para quem já viu</span>
+  <p>O sistema 2 × 2 é SPD exatamente quando <span class="m"><span class="v">a</span><sub>1</sub><span class="v">b</span><sub>2</sub> − <span class="v">a</span><sub>2</sub><span class="v">b</span><sub>1</sub> ≠ 0</span>. É a mesma condição das razões, escrita com multiplicação cruzada. A regra de Cramer, que calcula cada incógnita com determinantes, raramente compensa no ENEM: substituição e adição são mais rápidas.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · para que k o sistema 2x + 3y = 5 e 4x + ky = 10 tem infinitas soluções?</span>
+  <p class="m"><span class="frac"><i>2</i><i>4</i></span> = <span class="frac"><i>3</i><i><span class="v">k</span></i></span> = <span class="frac"><i>5</i><i>10</i></span> &nbsp;→&nbsp; <span class="v">k</span> = 6</p>
+  <p>Com <span class="m"><span class="v">k</span> = 6</span>, a segunda equação é o dobro da primeira. Com qualquer outro <span class="m"><span class="v">k</span></span>, as razões de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> diferem e o sistema tem uma única solução.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Três incógnitas: escalonar ou somar tudo</h2>
+<p>Com três incógnitas são necessárias três equações independentes. O método geral é o <strong>escalonamento</strong>: eliminar incógnitas até sobrar uma equação com uma só, e voltar substituindo.</p>
+<div class="eq">
+  <span class="lbl">Sistema já escalonado</span>
+  <p class="m"><span class="v">x</span> + <span class="v">y</span> + <span class="v">z</span> = 6 &nbsp;&nbsp;&nbsp; <span class="v">y</span> + <span class="v">z</span> = 5 &nbsp;&nbsp;&nbsp; <span class="v">z</span> = 3</p>
+  <p>De baixo para cima: <span class="m"><span class="v">z</span> = 3</span>, então <span class="m"><span class="v">y</span> = 2</span>, então <span class="m"><span class="v">x</span> = 1</span>.</p>
+</div>
+<p>No ENEM, porém, os sistemas 3 × 3 costumam ter uma <strong>estrutura simétrica</strong> que permite um atalho:</p>
+<div class="eq">
+  <span class="lbl">Preços combinados dois a dois · A + B = 13, B + C = 15, A + C = 14</span>
+  <p class="m">Somando as três: 2(<span class="v">A</span> + <span class="v">B</span> + <span class="v">C</span>) = 42 &nbsp;→&nbsp; <span class="v">A</span> + <span class="v">B</span> + <span class="v">C</span> = 21</p>
+  <p class="m"><span class="v">C</span> = 21 − 13 = 8 &nbsp;&nbsp; <span class="v">A</span> = 21 − 15 = 6 &nbsp;&nbsp; <span class="v">B</span> = 21 − 14 = 7</p>
+  <p>Cada incógnita é o total menos a equação que <strong>não</strong> a contém.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Quando aparece “cada um aparece o mesmo número de vezes”</span>
+  <p>Se cada incógnita aparece o mesmo número de vezes no conjunto das equações, some todas e divida. É o caso de pesagens em duplas, de combos de lanchonete e de distâncias entre três cidades.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Uma equação por informação</span>
+  <p>Sublinhe no enunciado cada dado que relaciona as incógnitas. Duas incógnitas exigem duas informações independentes; se você só encontrou uma, releia, porque a outra está escondida (“ao todo”, “a mesma quantia”, “o dobro”).</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Escolha o método pelo formato</span>
+  <p>Coeficiente 1 em alguma incógnita: substituição. Coeficientes opostos ou fáceis de igualar: adição. Pergunta sobre <span class="m"><span class="v">x</span> + <span class="v">y</span></span> ou sobre o total: some as equações antes de tudo.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Confira na equação que você não usou por último</span>
+  <p>Substitua o par encontrado na equação que não serviu para achar a última incógnita. Se der certo nas duas, a resposta está certa.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Responda a pergunta, não a incógnita</span>
+  <p>O enunciado pode perguntar o número de meias e você achou o de inteiras; pode perguntar o total arrecadado com um tipo. O distrator com a outra incógnita está sempre entre as alternativas.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>encontro de dois móveis em MU</td><td>iguale as funções horárias <span class="m"><span class="v">s</span><sub>A</sub>(<span class="v">t</span>) = <span class="v">s</span><sub>B</sub>(<span class="v">t</span>)</span>; em sentidos opostos, uma velocidade é negativa</td></tr>
+    <tr><td><strong>Química</strong></td><td>misturas de soluções e balanceamento</td><td>massa de soluto antes = massa de soluto depois é a “equação dos valores”</td></tr>
+    <tr><td><strong>Geometria analítica</strong></td><td>interseção de retas</td><td>o ponto comum de duas retas é a solução do sistema formado pelas equações delas</td></tr>
+    <tr><td><strong>Função afim</strong></td><td>ponto de equilíbrio entre dois planos</td><td>custo de A = custo de B é um sistema de duas funções afins</td></tr>
+  </tbody>
+</table>
+</div>
+<p>O caso do encontro é o mais cobrado fora da Matemática: <span class="m"><span class="v">s</span><sub>A</sub> = 20 + 80<span class="v">t</span></span> e <span class="m"><span class="v">s</span><sub>B</sub> = 200 − 100<span class="v">t</span></span> se igualam quando <span class="m">180<span class="v">t</span> = 180</span>, ou seja, em <span class="m"><span class="v">t</span> = 1</span> h, no km 100.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">“P tem o dobro de J” → 2P = J</span> &nbsp;→&nbsp; <span class="c">P = 2J</span></span><small>Teste com números pequenos antes de seguir.</small></li>
+  <li><span><span class="x">2(30 − c) = 60 − c</span> &nbsp;→&nbsp; <span class="c">60 − 2c</span></span><small>Na substituição, o coeficiente multiplica tudo.</small></li>
+  <li><span><span class="x">Multiplicar só o lado esquerdo</span> &nbsp;→&nbsp; <span class="c">multiplicar a equação inteira</span></span><small>O lado direito também muda.</small></li>
+  <li><span><span class="x">Responder a outra incógnita</span> &nbsp;→&nbsp; <span class="c">reler a pergunta</span></span><small>Inteiras ou meias? Carros ou motos?</small></li>
+  <li><span><span class="x">“Der 6 moedas” → P − 6 = J</span> &nbsp;→&nbsp; <span class="c">P − 6 = J + 6</span></span><small>Quem recebe também muda.</small></li>
+  <li><span><span class="x">Resolver tudo quando pedem x + y</span> &nbsp;→&nbsp; <span class="c">somar as equações</span></span><small>Às vezes a pergunta já é uma combinação delas.</small></li>
+  <li><span><span class="x">0 = 2 significa “errei a conta”</span> &nbsp;→&nbsp; <span class="c">sistema impossível</span></span><small>Retas paralelas: não existe solução.</small></li>
+  <li><span><span class="x">0 = 0 significa “solução zero”</span> &nbsp;→&nbsp; <span class="c">infinitas soluções</span></span><small>As duas equações são a mesma reta.</small></li>
+  <li><span><span class="x">Somar o total três vezes</span> &nbsp;→&nbsp; <span class="c">dividir por 2 nas duplas</span></span><small>Em A + B, B + C, A + C, cada um aparece duas vezes.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, nomeie as incógnitas, escreva uma equação por informação e só então resolva.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Inteiras e meias</span>
+    <p class="enun">Um teatro vendeu 400 ingressos para uma sessão, alguns pelo preço inteiro de R$ 40,00 e os demais pela meia-entrada de R$ 20,00. A arrecadação total foi de R$ 11.200,00. O número de meias-entradas vendidas foi</p>
+    <ol class="alt"><li>120.</li><li>160.</li><li>cerca de 187.</li><li>240.</li><li>280.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">i</span> + <span class="v">m</span> = 400 &nbsp;&nbsp;&nbsp; 40<span class="v">i</span> + 20<span class="v">m</span> = 11 200</p>
+      <p>Substituindo <span class="m"><span class="v">i</span> = 400 − <span class="v">m</span></span>: <span class="m">16 000 − 40<span class="v">m</span> + 20<span class="v">m</span> = 11 200</span>, então <span class="m">20<span class="v">m</span> = 4 800</span> e <span class="m"><span class="v">m</span> = 240</span>.</p>
+      <p><strong>Conferência:</strong> 160 inteiras e 240 meias dão <span class="m">6 400 + 4 800 = 11 200</span>.</p>
+      <p>A B é o número de inteiras. A C divide a arrecadação pela soma dos dois preços, <span class="m">11 200 ÷ 60</span>, conta que não corresponde a nada no problema. A E divide o total por 40, como se todos pagassem inteira, e a A é <span class="m">400 − 280</span>, consequência desse mesmo erro.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Pesagens em duplas</span>
+    <p class="enun">Três amigos, Ana, Beto e Caio, subiram em duplas numa balança. Ana e Beto juntos marcaram 125 kg; Beto e Caio, 145 kg; Ana e Caio, 140 kg. A massa de Beto, em quilogramas, é</p>
+    <ol class="alt"><li>60.</li><li>62,5.</li><li>65.</li><li>72,5.</li><li>80.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Somando as três pesagens, cada pessoa aparece duas vezes:</p>
+      <p class="m">2(<span class="v">A</span> + <span class="v">B</span> + <span class="v">C</span>) = 410 &nbsp;→&nbsp; <span class="v">A</span> + <span class="v">B</span> + <span class="v">C</span> = 205</p>
+      <p>Beto é o total menos a dupla em que ele não está: <span class="m"><span class="v">B</span> = 205 − 140 = 65</span>. Ana tem 60 e Caio, 80. Conferência: <span class="m">60 + 65 = 125</span>.</p>
+      <p>A A é a massa de Ana e a E, a de Caio. A B e a D dividem uma pesagem por 2 (125 ÷ 2 e 145 ÷ 2), como se os dois da dupla tivessem a mesma massa.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Infinitas soluções</span>
+    <p class="enun">Um aplicativo resolve sistemas lineares e informa quando há infinitas soluções. Um usuário digitou o sistema formado por <span class="m">2<span class="v">x</span> + 3<span class="v">y</span> = 5</span> e <span class="m">4<span class="v">x</span> + <span class="v">k</span><span class="v">y</span> = 10</span> e recebeu a mensagem “infinitas soluções”. O valor de <span class="m"><span class="v">k</span></span> digitado foi</p>
+    <ol class="alt"><li>6.</li><li>−6.</li><li>3.</li><li>12.</li><li>qualquer valor diferente de 6.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Infinitas soluções exigem que uma equação seja múltipla da outra, inclusive no lado direito. Como <span class="m">4 = 2 · 2</span> e <span class="m">10 = 2 · 5</span>, o fator é 2, e então <span class="m"><span class="v">k</span> = 2 · 3 = 6</span>.</p>
+      <p>A E descreve justamente os casos com <strong>uma única</strong> solução (razões de <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> diferentes). A B troca o sinal; a C copia o coeficiente da primeira equação sem multiplicar; a D multiplica por 4. Com −6, 3 ou 12 as retas são concorrentes.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Mistura de cafés</span>
+    <p class="enun">Um comerciante mistura um café de R$ 30,00 o quilograma com outro de R$ 45,00 o quilograma e obtém 60 kg de um blend que vende a R$ 40,00 o quilograma, sem ganho nem perda em relação ao custo dos cafés. A quantidade usada do café mais barato foi de</p>
+    <ol class="alt"><li>10 kg.</li><li>20 kg.</li><li>30 kg.</li><li>40 kg.</li><li>50 kg.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">a</span> + <span class="v">b</span> = 60 &nbsp;&nbsp;&nbsp; 30<span class="v">a</span> + 45<span class="v">b</span> = 40 · 60 = 2 400</p>
+      <p>Com <span class="m"><span class="v">b</span> = 60 − <span class="v">a</span></span>: <span class="m">30<span class="v">a</span> + 2 700 − 45<span class="v">a</span> = 2 400</span>, então <span class="m">15<span class="v">a</span> = 300</span> e <span class="m"><span class="v">a</span> = 20</span> kg.</p>
+      <p><strong>Conferência:</strong> <span class="m">20 · 30 + 40 · 45 = 600 + 1 800 = 2 400</span>.</p>
+      <p>A D é a quantidade do café caro. A C supõe partes iguais, que dariam preço médio de R$ 37,50, não R$ 40,00. A A usa a diferença de preço <span class="m">40 − 30</span> como se fosse quantidade, e a E é <span class="m">60 − 10</span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Troca de moedas</span>
+    <p class="enun">Pedro tem o dobro do número de moedas de Júlia. Se Pedro der 6 de suas moedas a Júlia, os dois ficarão com a mesma quantidade. Quantas moedas Pedro tem?</p>
+    <ol class="alt"><li>6</li><li>12</li><li>18</li><li>24</li><li>36</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">P</span> = 2<span class="v">J</span> &nbsp;&nbsp;&nbsp; <span class="v">P</span> − 6 = <span class="v">J</span> + 6</p>
+      <p>Substituindo: <span class="m">2<span class="v">J</span> − 6 = <span class="v">J</span> + 6</span>, logo <span class="m"><span class="v">J</span> = 12</span> e <span class="m"><span class="v">P</span> = 24</span>. Depois da troca, cada um fica com 18.</p>
+      <p>A B é o número de Júlia; é também o que se obtém para Pedro esquecendo que Júlia recebe as moedas (<span class="m"><span class="v">P</span> − 6 = <span class="v">J</span></span>). A C é a quantidade de cada um depois da troca. A E é o total dos dois. A A é só o número de moedas transferidas.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Posição de duas retas</span>
+    <p class="enun">Um estudante representou no plano cartesiano as retas <span class="m"><span class="v">r</span>: <span class="v">x</span> + 2<span class="v">y</span> = 4</span> e <span class="m"><span class="v">s</span>: 2<span class="v">x</span> + 4<span class="v">y</span> = 10</span>, para resolver graficamente o sistema formado por elas. Ele deve concluir que as retas são</p>
+    <ol class="alt"><li>concorrentes, e o sistema tem uma única solução.</li><li>coincidentes, e o sistema tem infinitas soluções.</li><li>perpendiculares, e o sistema tem uma única solução.</li><li>concorrentes na origem, e a solução é (0, 0).</li><li>paralelas distintas, e o sistema não tem solução.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O lado esquerdo de <span class="m"><span class="v">s</span></span> é o dobro do de <span class="m"><span class="v">r</span></span>, mas o lado direito não: <span class="m">2 · 4 = 8 ≠ 10</span>. As razões ficam <span class="m"><span class="frac"><i>1</i><i>2</i></span> = <span class="frac"><i>2</i><i>4</i></span> ≠ <span class="frac"><i>4</i><i>10</i></span></span>: retas paralelas distintas, sistema impossível.</p>
+      <p>Pela adição: multiplicando <span class="m"><span class="v">r</span></span> por 2 e subtraindo de <span class="m"><span class="v">s</span></span>, chega-se a <span class="m">0 = 2</span>, um absurdo.</p>
+      <p>A B valeria se o lado direito de <span class="m"><span class="v">s</span></span> fosse 8. A A e a C ignoram que as duas retas têm a mesma inclinação (as duas sobem 1 unidade em <span class="m"><span class="v">y</span></span> a cada 2 que <span class="m"><span class="v">x</span></span> recua). A D falha no teste direto: <span class="m">0 + 0 ≠ 4</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Combo de lanchonete</span>
+    <p class="enun">Em uma lanchonete, dois sanduíches e um suco custam R$ 31,00, e um sanduíche e dois sucos custam R$ 26,00. Todos os sanduíches têm o mesmo preço, assim como os sucos. Quanto custam, juntos, um sanduíche e um suco?</p>
+    <ol class="alt"><li>R$ 7,00</li><li>R$ 12,00</li><li>R$ 19,00</li><li>R$ 28,50</li><li>R$ 57,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A pergunta é a soma. Somando as duas equações:</p>
+      <p class="m">(2<span class="v">S</span> + <span class="v">J</span>) + (<span class="v">S</span> + 2<span class="v">J</span>) = 57 &nbsp;→&nbsp; 3<span class="v">S</span> + 3<span class="v">J</span> = 57 &nbsp;→&nbsp; <span class="v">S</span> + <span class="v">J</span> = 19</p>
+      <p>Se quiser os preços: subtraindo, <span class="m"><span class="v">S</span> − <span class="v">J</span> = 5</span>; logo o sanduíche custa R$ 12,00 e o suco, R$ 7,00.</p>
+      <p>A A é o suco e a B, o sanduíche. A E é a soma das duas compras, que contém três sanduíches e três sucos. A D divide 57 por 2, como se cada item aparecesse duas vezes.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Prova com três níveis</span>
+    <p class="enun">Uma prova tem 20 questões: as fáceis valem 1 ponto, as médias valem 2 e as difíceis valem 3, num total de 37 pontos. O número de questões médias é 2 a mais que o de difíceis. O número de questões médias é</p>
+    <ol class="alt"><li>5.</li><li>7.</li><li>8.</li><li>15.</li><li>17.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">f</span> + <span class="v">m</span> + <span class="v">d</span> = 20 &nbsp;&nbsp; <span class="v">f</span> + 2<span class="v">m</span> + 3<span class="v">d</span> = 37 &nbsp;&nbsp; <span class="v">m</span> = <span class="v">d</span> + 2</p>
+      <p>Subtraindo a primeira da segunda: <span class="m"><span class="v">m</span> + 2<span class="v">d</span> = 17</span>. Com <span class="m"><span class="v">m</span> = <span class="v">d</span> + 2</span>: <span class="m">3<span class="v">d</span> = 15</span>, <span class="m"><span class="v">d</span> = 5</span>, <span class="m"><span class="v">m</span> = 7</span>, <span class="m"><span class="v">f</span> = 8</span>.</p>
+      <p>São <strong>7</strong> questões médias. Conferência: <span class="m">8 + 7 + 5 = 20</span> questões e <span class="m">8 + 14 + 15 = 37</span> pontos.</p>
+      <p>A A é o número de difíceis e a C, o de fáceis. A D são os pontos das difíceis (<span class="m">5 · 3</span>). A E é o resultado intermediário <span class="m"><span class="v">m</span> + 2<span class="v">d</span></span>, confundido com o valor de <span class="m"><span class="v">m</span></span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Encontro na estrada</span>
+    <p class="enun">Às 8 h, um carro passa pelo km 20 de uma rodovia, a 60 km/h, no sentido crescente da quilometragem. No mesmo instante, um ônibus passa pelo km 200, a 120 km/h, no sentido contrário. Mantidas as velocidades, os dois se cruzarão no</p>
+    <ol class="alt"><li>km 60.</li><li>km 80.</li><li>km 110.</li><li>km 140.</li><li>km 180.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m"><span class="v">s</span><sub>carro</sub> = 20 + 60<span class="v">t</span> &nbsp;&nbsp;&nbsp; <span class="v">s</span><sub>ônibus</sub> = 200 − 120<span class="v">t</span></p>
+      <p>Igualando: <span class="m">180<span class="v">t</span> = 180</span>, <span class="m"><span class="v">t</span> = 1</span> h. Posição: <span class="m">20 + 60 = 80</span>, o km 80 (às 9 h). Conferência: <span class="m">200 − 120 = 80</span>.</p>
+      <p>A C é o ponto médio entre os km 20 e 200, que só valeria com velocidades iguais. A D troca as velocidades (o carro a 120 km/h). A A é o deslocamento do carro, não sua posição. A E é a distância inicial entre os dois.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei o que é a solução de um sistema e testo um par nas duas equações</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto o sistema “quantidades e valores” a partir de um texto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Traduzo “o dobro de”, “a mais que” e “se der k a” sem inverter</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo por substituição, com parênteses ao substituir</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo por adição, multiplicando equações inteiras quando preciso</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o atalho “tudo de um tipo” em problemas de cabeças e patas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo as equações quando a pergunta é uma combinação como <span class="m"><span class="v">x</span> + <span class="v">y</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Associo SPD, SI e SPI a retas concorrentes, paralelas e coincidentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Classifico um sistema 2 × 2 pelas razões entre os coeficientes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto <span class="m">0 = 2</span> e <span class="m">0 = 0</span> no fim da conta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo sistemas 3 × 3 escalonados e os simétricos somando tudo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo problemas de mistura e de encontro de móveis com sistemas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro a resposta e verifico se ela é a incógnita que foi pedida</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, com pelo menos quinze de montagem a partir de texto (ingressos, misturas, combos). Depois siga para <strong>Conceito de função: domínio, contradomínio e imagem</strong>, que transforma as retas deste assunto em funções.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>31 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-22-sistemas-equacoes-lineares.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-22";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

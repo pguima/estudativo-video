@@ -1,0 +1,57 @@
+Um balão sobe zero vírgula dois quilômetro por minuto, e a cada quilômetro o ar esfria seis graus. Que temperatura ele encontra aos dez minutos? Dá para responder com uma fórmula só, em que a altitude nem aparece.
+
+Ao final desta aula, você vai juntar duas fórmulas de um enunciado numa só e descobrir uma função escondida dentro de uma composta.
+
+Dois lembretes rápidos. Do episódio um: f de g de x se lê de dentro para fora; o que sai da de dentro entra na de fora. Da série de Função Afim: custo é o fixo mais o preço por unidade vezes a quantidade.
+
+Pense no balão subindo. Mais tempo, mais alto. Mais alto, mais frio. Agora uma fábrica, com um relógio e uma pilha de peças: mais horas, mais peças, mais custo. Tempo, altura, temperatura, reais: tudo isso é grandeza, algo que dá para medir.
+
+E como o ENEM monta essa questão? Com duas fórmulas ligadas por uma grandeza intermediária, a que aparece nas duas. Ela é uma ponte: você atravessa por ela, e ela some da resposta. A estratégia: substituir a ponte, trocar a letra dela pelo que ela vale.
+
+Vamos ao balão. A altitude, em quilômetros, depois de t minutos: h de t igual a zero vírgula dois t. A temperatura, em graus: T de h igual a vinte e cinco, menos seis h. Quem aparece nas duas? A altitude. Ela é a ponte.
+
+Agora, substitua. No lugar do h, ponha zero vírgula dois t: vinte e cinco, menos seis vezes zero vírgula dois t. Fica vinte e cinco, menos um vírgula dois t. Aos dez minutos: vinte e cinco menos doze, treze graus. E a altitude sumiu da fórmula.
+
+Confere pelo caminho longo? Aos dez minutos, o balão está a dois quilômetros; lá, vinte e cinco menos doze, treze. Atalho: multiplique as taxas. Zero vírgula dois quilômetro por minuto, vezes seis graus por quilômetro: o quilômetro se cancela, e sobra um vírgula dois grau por minuto.
+
+E quem vai dentro, e quem vai fora? Veja as cadeias: tempo, peças, custo; tempo, altitude, temperatura; dólar, real, imposto. A de dentro recebe o que você tem. A de fora entrega o que você quer. Tem o tempo, quer o custo? Dentro, as peças; fora, o custo.
+
+E se a prova esconder uma das funções? Caso um: você conhece a de fora. f de x igual a dois x mais cinco, e f de g de x igual a oito x menos um. Trate o g de x como uma incógnita: uma caixa fechada com o valor que você procura. A f dobra e soma cinco: dois vezes a caixa, mais cinco, igual a oito x menos um.
+
+Agora, abra a caixa. Passe o mais cinco para o outro lado, trocando o sinal: dois vezes a caixa igual a oito x menos seis. Divida tudo por dois: quatro x menos três. A função escondida era g de x igual a quatro x menos três.
+
+E se você conhecer a de dentro? Caso dois: g de x igual a x mais um, e f de g de x igual a x ao quadrado, mais dois x. Chame o que entra na f de u: u é x mais um, então x é u menos um. Troque: u menos um, ao quadrado, mais duas vezes u menos um. Desenvolva, e sobra f de x igual a x ao quadrado, menos um.
+
+E como ter certeza? Sempre confira: monte a composta de novo com a função achada. No caso um: f de quatro x menos três é oito x menos seis, mais cinco: oito x menos um. Confere. Atalho: teste com x igual a um. g de um é um, f de um é sete, e oito menos um, sete.
+
+Sua vez. Uma gráfica imprime p de t igual a cinquenta t páginas em t minutos. O custo de p páginas é C de p igual a vinte, mais zero vírgula um p, reais. Qual é o custo em função do tempo, e quanto custam dez minutos? Pause e tente.
+
+Vamos juntos. A ponte são as páginas. No lugar do p, ponha cinquenta t: vinte, mais zero vírgula um vezes cinquenta t. Fica vinte, mais cinco t. Dez minutos: vinte mais cinquenta, setenta reais. Pelo caminho longo: quinhentas páginas, vinte mais cinquenta, setenta. Bateu.
+
+Vamos guardar em três frases. Um: a grandeza que aparece nas duas fórmulas é a ponte. Dois: substitua a ponte e ela some da resposta. Três: achou a função escondida? Monte a composta de novo e confira.
+
+Agora, os quatro erros clássicos. Primeiro: compor na ordem errada, jogando o custo dentro da fórmula das páginas: mil mais cinco t. Parece certo, porque qualquer encaixe das duas fórmulas dá uma fórmula. Mas a de dentro recebe o que você tem: o tempo.
+
+Segundo: somar cinquenta mais zero vírgula um. Parece certo, porque são dois números por unidade, lado a lado. Mas um encaixa no outro: zero vírgula um real por página, vezes cinquenta páginas por minuto: cinco reais por minuto.
+
+Terceiro: esquecer o custo fixo e responder só cinco t. Parece certo, porque a atenção toda vai para o termo do t. Mas os vinte reais continuam lá: dez minutos custam setenta, não cinquenta.
+
+Quarto, na função escondida: parar em dois g de x igual a oito x menos seis, sem dividir por dois, ou passar o mais cinco sem trocar o sinal. Parece certo, porque a caixa já está quase sozinha. Mas a conferência denuncia: com esses erros, a composta não volta a oito x menos um.
+
+Agora, uma questão do nosso material. Esta, eu resolvo com você. Uma pequena fábrica produz n de t igual a quarenta t peças em t horas de funcionamento. O custo de produção, em reais, de n peças é C de n igual a quinhentos, mais três n. O custo em função do tempo t é dado por: A: vinte mil, mais cento e vinte t. B: quinhentos, mais quarenta e três t. C: quinhentos, mais cento e vinte t. D: quinhentos, mais três t. E: cento e vinte t. Pause o vídeo e tente.
+
+A ponte é o número de peças: tenho o tempo, quero o custo. No lugar do n, ponha quarenta t: quinhentos, mais três vezes quarenta t. Fica quinhentos, mais cento e vinte t. Confira em duas horas: oitenta peças, quinhentos mais duzentos e quarenta, setecentos e quarenta; pela fórmula, o mesmo. Letra C!
+
+E as erradas? A A compôs na ordem errada: quarenta vezes o custo. A B somou quarenta e três. A D usou o t como se fosse o número de peças. E a E esqueceu o custo fixo.
+
+E a última é sua. Sejam f e g funções afins, com f de x igual a três x menos dois, e f de g de x igual a seis x mais sete, para todo x real. A lei de g é: A: dezoito x mais dezenove. B: seis x mais nove. C: dois x, mais cinco terços. D: dois x menos três. E: dois x mais três. Pause e resolva.
+
+Conferindo. Você conhece a de fora. A caixa é o g de x: três vezes a caixa, menos dois, igual a seis x mais sete. Passe o menos dois, trocando o sinal: seis x mais nove. Divida tudo por três: dois x mais três. Confira: f de dois x mais três é seis x mais nove, menos dois: seis x mais sete. Letra E!
+
+E as erradas? A A aplicou a f sobre a composta. A B não dividiu por três. A C passou o menos dois sem trocar o sinal. E a D errou o sinal ao dividir o nove.
+
+Para fechar, as mesmas três frases. Um: a grandeza que aparece nas duas fórmulas é a ponte. Dois: substitua a ponte e ela some da resposta. Três: achou a função escondida? Monte a composta de novo e confira.
+
+A corrida de táxi custa quatro vírgula cinco, mais dois vírgula cinco x reais. Você tem trinta e sete reais: quantos quilômetros pode andar? E qual fórmula faz essa conta para qualquer valor? Próximo episódio: a função que desfaz.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: que duas grandezas do seu dia a dia se ligam por uma terceira? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

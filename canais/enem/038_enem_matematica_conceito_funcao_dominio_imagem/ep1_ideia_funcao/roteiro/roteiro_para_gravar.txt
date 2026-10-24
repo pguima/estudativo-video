@@ -1,0 +1,59 @@
+Abastecer dez litros a seis reais o litro custa sessenta reais. Sempre. Se a bomba às vezes cobrasse sessenta e às vezes setenta pelos mesmos dez litros, você brigaria com o frentista. Essa sua revolta tem nome em matemática: função.
+
+Este é o primeiro episódio do bloco de Funções. Ao final desta aula, você vai saber dizer, olhando um texto, uma tabela ou um diagrama de flechas, se aquilo é ou não é uma função, e quem depende de quem.
+
+Antes, dois lembretes rápidos. Um conjunto é só uma lista de elementos entre chaves. E, da série de Expressões algébricas: substituir um número numa fórmula. Seis vezes L, com L igual a dez: sessenta.
+
+Olhe três coisas do dia a dia. A bomba de combustível: você escolhe os litros, a bomba mostra o valor. O taxímetro: o carro anda, o preço sobe. A chamada da escola: cada número da lista corresponde a um aluno. Nas três, uma coisa entra e outra sai.
+
+O que faz a bomba ser confiável? Pense numa máquina. Entra um número, sai um número. Coloque o dez: sai sessenta. De novo: sessenta. De novo: sessenta. A mesma entrada dá sempre a mesma saída. Isso é uma função.
+
+Agora, com nome. Uma função é uma regra que pega cada elemento de um conjunto A e associa a ele um único elemento de um conjunto B. O conjunto A é o conjunto de partida: de onde saem as entradas. O B é o conjunto de chegada: onde ficam as saídas. A gente escreve assim: f, de A em B. A palavra que manda: único.
+
+Quem escolhe e quem é calculado? A entrada se chama variável independente: é o x, você escolhe. A saída é a variável dependente: o y, calculado a partir do x. A fórmula que liga os dois é a lei da função. No táxi, entra a distância, sai o preço. No quadrado, entra o lado, sai a área. Na bola jogada para cima, entra o tempo, sai a altura.
+
+E como saber quem depende de quem? Sabendo o lado de um quadrado, você sabe a área? Sabe. Lado três, área nove. A área é função do lado. Agora: sabendo a altura de um aluno, você sabe qual é o aluno? Não. Dois alunos podem ter um metro e setenta. O aluno não é função da altura.
+
+Guarde a ferramenta. A pergunta mágica: se eu souber isto, consigo dizer aquilo sem dúvida? Se a resposta é sim, é função. Se pode dar duas respostas, não é.
+
+E como desenhar uma função? Com um diagrama de flechas: o conjunto A de um lado, o B do outro, e uma flecha de cada entrada até a sua saída. Duas regras. Primeira: todo elemento de A tem flecha saindo. Segunda: de cada elemento de A sai uma só flecha. E o B? Nenhuma exigência. Pode receber várias flechas, ou nenhuma.
+
+Vamos testar três diagramas. No primeiro: o um vai para o a, o dois também vai para o a, e o três vai para o b. Todo mundo tem flecha? Tem. Alguém tem duas? Não. É função, mesmo com duas flechas chegando no a.
+
+No segundo: um para a, dois para b. E o três? Ficou sem flecha. Não é função. No terceiro: do dois saem duas flechas, uma para o b e outra para o c. Uma entrada com duas saídas. Não é função.
+
+Mas duas flechas chegando no mesmo lugar não estraga nada? Não estraga. Na regra x ao quadrado, o dois vira quatro, e o menos dois também vira quatro. Cada entrada continua com uma saída. É como a data de nascimento: cada pessoa tem uma só, mas muitas pessoas fazem aniversário no mesmo dia. Duas flechas chegando: pode. Duas saindo: não.
+
+E quando a prova dá uma tabela? A regra é a mesma: x são as entradas, y as saídas. O que não pode: o mesmo x aparecer em duas linhas com y diferentes. O mesmo y em duas linhas? Tudo bem: flechas chegando.
+
+E como olhar uma tabela rápido? Atalho: cace o x repetido. Passe o dedo só na coluna do x. Nenhum repetido? É função. Achou um repetido? Olhe os dois y. Se forem diferentes, não é.
+
+Sua vez. Esta tabela: x igual a um, y igual a três. x igual a dois, y igual a cinco. x igual a dois, y igual a seis. x igual a três, y igual a sete. Ela representa uma função? Pause e tente.
+
+Vamos juntos. Caçando o x repetido: um, dois, dois de novo. E os y do dois? Cinco e seis. Diferentes. O dois tem duas saídas. Não é função.
+
+Vamos guardar em três frases. Um: função: a cada entrada, uma única saída. Dois: duas flechas chegando pode; duas flechas saindo, não. Três: todo elemento do conjunto de partida precisa de flecha.
+
+Agora, os três erros clássicos. Primeiro: achar que duas flechas chegando no mesmo y impedem a função. Parece certo, porque a palavra único fica martelando. Mas o único é a saída de cada entrada. Duas entradas com a mesma saída: pode.
+
+Segundo: achar que tudo bem um elemento de A ficar sem flecha. Parece certo, porque ninguém ficou com duas saídas. Mas a regra pede todo elemento do conjunto de partida com flecha. Um sem flecha: não é função.
+
+Terceiro: inverter quem depende de quem, e dizer que o aluno é função da altura. Parece certo, porque cada aluno tem uma altura. Mas isso diz que a altura é função do aluno. O contrário, não. Pergunta mágica na ordem certa.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. Em uma turma, há alunos com a mesma altura. Em qual das situações a grandeza y não é função da grandeza x? A: y é o aluno da turma cuja altura é x centímetros. B: y é a área de um quadrado de lado x centímetros. C: y é o preço pago por x quilogramas de arroz. D: y é a temperatura registrada no instante x. E: y é o perímetro de um quadrado de lado x centímetros. Pause o vídeo e tente.
+
+Pergunta mágica em cada uma. Na A: sabendo a altura, eu digo qual aluno sem dúvida? Não: a turma tem alunos com a mesma altura. Uma entrada, duas saídas. Letra A!
+
+E as outras? Na B, o lado determina a área: x vezes x. Na E, o lado determina o perímetro: quatro vezes x. Na C, a quantidade de arroz determina o preço. E na D, o instante determina a temperatura registrada. A mesma temperatura em instantes diferentes? Flechas chegando: pode.
+
+E esta é sua. A secretaria de uma escola analisou três relações. Um: cada aluno matriculado associado à sua data de nascimento. Dois: cada professor associado às disciplinas que leciona, sabendo que alguns lecionam duas. Três: cada número da lista de chamada associado ao aluno que tem esse número. Considerando o primeiro conjunto como domínio, o de partida, são funções: A: apenas um. B: apenas dois. C: um e três. D: dois e três. E: um, dois e três. Pause o vídeo e tente.
+
+Conferindo. Na um, o conjunto de partida são os alunos. Cada aluno tem uma só data de nascimento. É função. Na dois, partida são os professores. Um professor com duas disciplinas tem duas flechas saindo: não é. Na três, partida são os números da chamada. Cada número, um aluno: é função. Um e três: letra C!
+
+E as armadilhas? A A descarta a três sem motivo nenhum. A B e a D aceitam a dois: confundem flechas chegando, que pode, com flechas saindo, que não pode. E a E ignora os professores com duas disciplinas.
+
+Para fechar, as mesmas três frases. Um: função: a cada entrada, uma única saída. Dois: duas flechas chegando pode; duas flechas saindo, não. Três: todo elemento do conjunto de partida precisa de flecha.
+
+Se a função x ao quadrado recebe só os números um, dois e três, e pode devolver um, quatro, sete ou nove, o sete sai alguma vez? Quem nunca sai tem nome. Próximo episódio: domínio, contradomínio e imagem.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: que máquina do seu dia a dia é uma função? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

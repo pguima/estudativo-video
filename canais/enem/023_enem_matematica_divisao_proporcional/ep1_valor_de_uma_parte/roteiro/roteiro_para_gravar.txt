@@ -1,0 +1,67 @@
+Lucro entre sócios, verba entre setores, herança, bônus: todas essas questões se resolvem com o mesmo procedimento, e ele cabe em uma linha.
+
+Ao final desta aula, você vai repartir qualquer valor em partes proporcionais e responder exatamente a parte que a questão pede.
+
+Antes, três lembretes rápidos. O truque do k, da série de Razão: razão três para cinco são pacotinhos: três para um, cinco para o outro. A soma dos de cima sobre a soma dos de baixo mantém a mesma razão. E o MDC, da série de Divisibilidade, é o maior número que divide todos ao mesmo tempo.
+
+Pense em três situações. Um prêmio repartido conforme a pontuação de cada um. Uma herança repartida conforme a idade dos herdeiros. Amigos que dividem a conta conforme o que cada um consumiu. Em nenhuma delas é justo dividir em partes iguais. Quem tem mais, leva mais.
+
+Isso tem nome: divisão proporcional. É repartir um total de acordo com números que dizem quanto cada um merece. Esses números se chamam pesos. Peso dois, peso três, peso quatro: quem tem peso quatro leva o dobro de quem tem peso dois.
+
+Vamos fazer juntos. Três mil e seiscentos reais em partes proporcionais a dois, três e quatro. Passo um: some os pesos. Dois mais três mais quatro: nove. Por quê? Porque o total vai virar nove pacotinhos iguais. Um leva dois, outro leva três, outro leva quatro.
+
+Passo dois: divida o total pela soma. Três mil e seiscentos dividido por nove: quatrocentos. Esse é o k: o valor de um pacotinho. Cada pacotinho vale quatrocentos reais.
+
+Passo três: multiplique o k por cada peso. Dois vezes quatrocentos: oitocentos. Três vezes quatrocentos: mil e duzentos. Quatro vezes quatrocentos: mil e seiscentos. E agora, a conferência: a soma das partes dá o total? Oitocentos mais mil e duzentos mais mil e seiscentos: três mil e seiscentos. Fechou!
+
+Esse é o procedimento inteiro, e ele cabe em uma linha. k igual ao total dividido pela soma dos pesos. Atalho para guardar: some, divida, multiplique. E no fim, sempre, feche o caixa: some as partes.
+
+E o k não é um número solto. Ele é o valor de um ponto de peso. Se os pesos forem dias trabalhados, o k é o valor de um dia. Se forem pontos num concurso, o k é quanto vale um ponto. Pergunte sempre: um pacotinho de quê?
+
+Mas por que dividir pela soma funciona? Cada parte dividida pelo seu peso dá o mesmo k: oitocentos sobre dois, mil e duzentos sobre três, mil e seiscentos sobre quatro. Sempre quatrocentos. E a propriedade da série de Razão diz: juntando tudo, o total sobre a soma dos pesos também dá k. É por isso que a conta começa pela soma.
+
+Uma surpresa agradável. Repartir em dois para três é a mesma coisa que repartir em quatro para seis, ou em vinte para trinta. Os pacotinhos mudam de tamanho, mas cada um continua levando a mesma fração do total. As partes finais são idênticas.
+
+E isso vira um atalho. Cinco mil reais em partes proporcionais a doze, dezoito e trinta. Números grandes? Simplifique pelo MDC: divida todos pelo maior número que divide os três. O MDC é seis. Os pesos viram dois, três e cinco. Soma dez, k igual a quinhentos: mil, mil e quinhentos, e dois mil e quinhentos. A soma dá cinco mil. Fechou.
+
+Agora uma herança. Cento e oitenta mil reais para três herdeiros, proporcionalmente às idades: quinze, vinte e vinte e cinco anos. Soma das idades: sessenta. Cento e oitenta mil dividido por sessenta: k igual a três mil. Três mil por ano de idade. Partes: quarenta e cinco mil, sessenta mil e setenta e cinco mil. Divisão direta: o mais velho, com o maior peso, leva a maior parte. E a soma fecha nos cento e oitenta mil.
+
+E se a questão pedir só a diferença entre a maior e a menor parte? Não precisa calcular as duas. A diferença dos pesos: vinte e cinco menos quinze, dez pacotinhos. Dez vezes o k, dez vezes três mil: trinta mil. Confira: setenta e cinco mil menos quarenta e cinco mil, trinta mil. Atalho: diferença das partes é a diferença dos pesos vezes o k.
+
+E quando a questão não dá o total? Pesos um, dois e quatro, e a maior parte foi de mil e duzentos reais. A maior parte tem peso quatro: quatro pacotinhos valem mil e duzentos. Um pacotinho, k igual a trezentos. O total tem sete pacotinhos: sete vezes trezentos, dois mil e cem. Confira: trezentos, seiscentos e mil e duzentos dão dois mil e cem. Atalho: conhece uma parte? Ela dá o k.
+
+Sua vez. Divida mil e quinhentos reais em partes proporcionais a um, dois e três. Pause o vídeo e calcule.
+
+Vamos conferir. Soma dos pesos: seis. Mil e quinhentos dividido por seis: k igual a duzentos e cinquenta. Partes: duzentos e cinquenta, quinhentos e setecentos e cinquenta. Fechando o caixa: a soma dá mil e quinhentos. Certo!
+
+Vamos guardar em três frases. Um: some os pesos, divida o total, multiplique cada peso. Dois: o k é o valor de um pacotinho. Três: a soma das partes tem que dar o total.
+
+Agora, os três erros clássicos. Primeiro: dividir o total pelo número de pessoas. Parece certo, porque são três pessoas. Mas são nove pacotinhos, não três. Divida pela soma dos pesos.
+
+Segundo: responder uma parte quando a questão pede a diferença, ou o contrário. Parece certo, porque a conta estava perfeita. Mas a pergunta era outra. Sublinhe o que foi pedido antes de calcular.
+
+Terceiro: não simplificar pesos grandes e se perder na conta. Parece certo, porque os números do enunciado são aqueles. Mas dividir todos pelo MDC dá exatamente as mesmas partes, com contas muito mais leves.
+
+Agora, uma questão no estilo do ENEM, do nosso material de estudo. Eu faço essa. Um prêmio de três mil e seiscentos reais será dividido entre três participantes em partes diretamente proporcionais a dois, três e quatro. O participante que receber a maior quantia ficará com: A: oitocentos reais. B: mil e duzentos. C: mil quatrocentos e quarenta. D: mil e seiscentos. E: mil e oitocentos.
+
+Primeiro, sublinhe o que foi pedido: a maior quantia. Some os pesos: nove. Divida: k igual a quatrocentos. A maior parte é do maior peso: quatro vezes quatrocentos, mil e seiscentos. Letra D! E o caixa fecha: oitocentos, mil e duzentos e mil e seiscentos dão três mil e seiscentos.
+
+E as outras? A A é a menor parte: conta certa, pergunta errada. A B dividiu pelo número de pessoas: três mil e seiscentos dividido por três. A C somou os pesos errado: dez em vez de nove. E a E dividiu o total por dois.
+
+Essa a gente faz junto. Uma herança de duzentos e quarenta mil reais foi dividida entre três herdeiros em partes diretamente proporcionais às suas idades: quinze, vinte e vinte e cinco anos. A diferença entre a maior e a menor parte recebida foi de: A: vinte mil. B: quarenta mil. C: sessenta mil. D: oitenta mil. E: cem mil. Pause e me diga: qual é o k?
+
+Se você achou quatro mil, acertou: soma das idades sessenta, duzentos e quarenta mil dividido por sessenta. Caminho curto: diferença dos pesos, vinte e cinco menos quinze, dez. Dez vezes quatro mil: quarenta mil. Letra B! Caminho longo, para conferir: as partes são sessenta, oitenta e cem mil. A soma fecha nos duzentos e quarenta mil, e cem menos sessenta dá quarenta mil.
+
+E as armadilhas? A C e a E são as partes da menor e da maior: quem calcula tudo certo e responde a pergunta errada. A D é a parte do meio. E a A pegou a diferença entre idades vizinhas, cinco anos, e não entre a maior e a menor.
+
+Agora é com você. Um valor foi dividido entre três pessoas em partes diretamente proporcionais a três, cinco e sete. Sabendo que a menor parte foi de mil e oitocentos reais, o valor total dividido foi de: A: cinco mil e quatrocentos. B: sete mil e duzentos. C: nove mil. D: dez mil e oitocentos. E: doze mil e seiscentos. Pause o vídeo e tente.
+
+Vamos resolver. A menor parte é do menor peso, o três. Três pacotinhos valem mil e oitocentos: k igual a seiscentos. O total tem três mais cinco mais sete, quinze pacotinhos. Quinze vezes seiscentos: nove mil. Letra C! Fechando o caixa: mil e oitocentos, três mil e quatro mil e duzentos somam nove mil.
+
+E as outras? A A multiplicou mil e oitocentos por três: tratou a parte como se fosse o k. A E fez o mesmo erro com o sete. A B esqueceu o peso da menor parte: seiscentos vezes doze. E a D não fecha o caixa com nenhuma conta.
+
+Para fechar, as mesmas três frases. Um: some os pesos, divida o total, multiplique cada peso. Dois: o k é o valor de um pacotinho. Três: a soma das partes tem que dar o total.
+
+E quando quem tem o menor número deve receber mais, como no bônus para quem faltou menos? Aí entra a divisão inversa, e um erro que quase todo mundo comete. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: quanto deu o k do exercício para você? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

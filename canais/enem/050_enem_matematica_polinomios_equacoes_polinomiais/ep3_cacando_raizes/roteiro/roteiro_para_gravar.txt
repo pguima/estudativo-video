@@ -1,0 +1,57 @@
+Não existe uma Bhaskara do terceiro grau que se use na prova. Mesmo assim, x ao cubo, menos dois x ao quadrado, menos cinco x, mais seis, igual a zero se resolve em um minuto: teste uma chave, baixe um grau e termine com Bhaskara.
+
+Este é o terceiro episódio da série de Polinômios. Ao final, você vai achar todas as raízes de uma equação de grau três com coeficientes inteiros e escrever o polinômio na forma fatorada sem errar sinal.
+
+Três lembretes rápidos. Do episódio dois: se P de a é zero, a é raiz, e o Briot-Ruffini divide por x menos a. Da série de Equação do segundo grau: Bhaskara, soma e produto e a forma a vezes x menos x um, vezes x menos x dois. E da Divisibilidade: os divisores de seis são um, dois, três e seis.
+
+Pense numa pequena fábrica. O lucro depende de quanto ela produz, e em algumas produções ele zera. Achar essas produções é achar as raízes de um polinômio. E o jeito de achar é como abrir uma porta com um molho de chaves: só algumas podem servir. Você testa uma por uma.
+
+Quantas raízes uma equação pode ter? Equação polinomial: um polinômio igual a zero. O teorema fundamental da álgebra garante: grau n tem exatamente n raízes. Grau três, três raízes. Algumas podem ser reais; outras, complexas, números com a unidade i, assunto da próxima série.
+
+E como as raízes montam o polinômio? Forma fatorada: o polinômio escrito como uma multiplicação. Cada pedaço é um fator. Raízes menos dois, um e três: x mais dois, vezes x menos um, vezes x menos três. Desenvolva: x ao cubo, menos dois x ao quadrado, menos cinco x, mais seis. É o polinômio do gancho.
+
+Repare no sinal. A raiz é menos dois, mas o fator é x mais dois. A raiz é três, e o fator é x menos três. Raiz e fator são espelhos: o sinal inverte. Faz sentido: x mais dois só dá zero quando x é menos dois.
+
+E falta uma peça. Dois x ao quadrado menos dois tem raízes um e menos um. Mas o polinômio não é x menos um, vezes x mais um. É dois vezes isso. Na frente dos fatores vai o coeficiente dominante, o número do maior expoente.
+
+Atalho. Para escrever o fator, troque o sinal da raiz. Para conferir, ponha a raiz no lugar do x: o fator tem que dar zero. E não esqueça o número da frente.
+
+E se uma raiz aparecer duas vezes? Em x mais um, ao quadrado, vezes x menos três, o fator x mais um aparece duas vezes. Multiplicidade: quantas vezes a raiz aparece. Menos um é raiz dupla; três é raiz simples, aparece uma vez. São três raízes contadas, mas só dois valores diferentes.
+
+Mas quais chaves vale a pena testar? Raiz racional: uma raiz que é inteiro ou fração. Candidata: um número que pode ser raiz. A regra: em cima, um divisor do termo independente; embaixo, um divisor do coeficiente dominante. Termo independente quatro e dominante três, por exemplo: mais ou menos um, dois, quatro, e um terço, dois terços, quatro terços. E se o dominante é um, sobram só os inteiros que dividem o termo independente.
+
+Vamos ao polinômio do gancho, em quatro passos. Passo um, as chaves: o dominante é um, então são os divisores de seis, mais ou menos um, dois, três e seis. Passo dois, testar: P de um é um, menos dois, menos cinco, mais seis: zero! A chave girou. Um é raiz.
+
+Passo três: derrubar um andar. Briot-Ruffini com um, nos coeficientes um, menos dois, menos cinco e seis. Desce o um. Um vezes um, mais menos dois: menos um. Um vezes menos um, mais menos cinco: menos seis. Um vezes menos seis, mais seis: zero, o resto. Sobra x ao quadrado menos x menos seis. O prédio caiu do terceiro para o segundo andar.
+
+Passo quatro: terminar no segundo grau. Dois números com soma um e produto menos seis: três e menos dois. Conferindo no polinômio original: P de três é vinte e sete, menos dezoito, menos quinze, mais seis: zero. P de menos dois: menos oito, menos oito, mais dez, mais seis: zero. Conjunto solução: menos dois, um e três.
+
+Atalho. Qual chave testar primeiro? O um: P de um é só a soma dos coeficientes. Deu zero, um é raiz na hora. Depois, o menos um: troque o sinal dos termos de grau ímpar. No polinômio do gancho: menos um, menos dois, mais cinco, mais seis: oito. Menos um não é raiz.
+
+Sua vez. Resolva x ao cubo, menos sete x, mais seis, igual a zero. Pause e tente.
+
+Vamos juntos. Soma dos coeficientes: um, mais zero, menos sete, mais seis: zero. Um é raiz. Cuidado: não tem x ao quadrado, então entra um zero na esteira: um, zero, menos sete, seis. Briot-Ruffini com um: um, um, menos seis, e resto zero. x ao quadrado mais x menos seis: dois e menos três. Conjunto solução: menos três, um e dois.
+
+Vamos guardar em três frases. Um: raiz e fator têm sinais opostos. Dois: candidatas: divisores do termo independente sobre divisores do dominante. Três: achou uma raiz, Briot-Ruffini derruba um grau.
+
+Agora, os erros clássicos. Primeiro: a raiz menos dois virar o fator x menos dois. Parece certo, porque a gente copia o número que viu. Mas x menos dois só zera em mais dois. O fator certo é x mais dois.
+
+Segundo erro. Esquecer o coeficiente dominante: escrever dois x ao quadrado menos dois como x menos um, vezes x mais um. Parece certo, porque as raízes estão certas. Mas esse produto dá x ao quadrado menos um. Falta o dois na frente.
+
+Agora, uma questão no estilo do ENEM. O lucro de uma pequena fábrica, em milhares de reais, é L de x igual a x ao cubo, menos seis x ao quadrado, mais onze x, menos seis, com x de zero a quatro centenas de unidades. O lucro é nulo quando x é um. Os outros valores que zeram o lucro são: A: dois e três. B: menos dois e menos três. C: cinco e seis. D: um e seis. E: menos um e seis.
+
+Essa, eu faço. A chave um já foi dada. Briot-Ruffini com um, nos coeficientes um, menos seis, onze e menos seis. Desce o um. Um vezes um, menos seis: menos cinco. Um vezes menos cinco, mais onze: seis. Um vezes seis, menos seis: zero. Sobra x ao quadrado menos cinco x mais seis: soma cinco, produto seis: dois e três. Confiro: L de dois e L de três dão zero. Letra A!
+
+E as armadilhas? A B troca os sinais das raízes ao ler os fatores. A C lê os coeficientes do quociente, cinco e seis, como se fossem raízes. A D erra a primeira soma da esteira: menos sete no lugar de menos cinco. E a E troca o sinal do seis e resolve x ao quadrado menos cinco x, menos seis.
+
+Agora, você faz. Um estudante listou as possíveis raízes racionais de dois x ao cubo, menos três x ao quadrado, menos três x, mais dois, igual a zero, e testou cada uma. O conjunto solução é: A: menos dois, menos um meio e um. B: menos um e dois. C: menos dois, menos um, um e dois. D: um meio, um e dois. E: menos um, um meio e dois. Pause o vídeo e tente.
+
+Vamos conferir. As chaves: em cima, divisores de dois; embaixo, divisores de dois. Mais ou menos um, dois e um meio. P de um: menos dois. Não gira. P de menos um: menos dois, menos três, mais três, mais dois: zero! Briot-Ruffini com menos um: dois, menos cinco, dois, e resto zero. Dois x ao quadrado menos cinco x mais dois: delta é vinte e cinco menos dezesseis, nove. Cinco mais ou menos três, sobre quatro: dois e um meio. Letra E!
+
+E as outras? A A troca os sinais de todas as raízes. A B testa só os inteiros e para: mas grau três tem três raízes. A C lista candidatas sem testar: P de um dá menos dois, e P de menos dois dá menos vinte. E a D põe o um, que não é raiz, e perde o menos um.
+
+Para fechar, as mesmas três frases. Um: raiz e fator têm sinais opostos. Dois: candidatas: divisores do termo independente sobre divisores do dominante. Três: achou uma raiz, Briot-Ruffini derruba um grau.
+
+As arestas de um bloco retangular são as raízes de dois x ao cubo, menos quatorze x ao quadrado, mais vinte e oito x, menos dezesseis, igual a zero. Dá para achar o volume sem descobrir nenhuma aresta? Dá. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual chave você testa primeiro? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

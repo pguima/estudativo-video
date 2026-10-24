@@ -1,0 +1,246 @@
+Função Exponencial
+Matemática › Álgebra e Funções › Assunto 8 de 18
+Função exponencial e crescimento ou decaimento
+Na função afim, cada passo soma a mesma quantidade; na exponencial, cada passo multiplica pelo mesmo fator. É o modelo de bactérias, populações, juros, medicamentos no sangue e material radioativo, e o ENEM o cobra quase sempre com uma situação real.
+Semana
+8 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Potenciação e radiciação · Conceito de função · Porcentagem
+Destrava
+Logaritmos, função logarítmica, progressão geométrica e juros compostos
+Neste assunto
+01 O que o ENEM cobra aqui
+A prova raramente pede “resolva a equação exponencial” sem contexto. O que aparece:
+Crescimento por fator: bactérias que dobram a cada intervalo, populações que crescem uma porcentagem fixa ao ano, seguidores, vírus, investimentos.
+Decaimento: meia-vida de material radioativo e de medicamentos, depreciação de bens, resfriamento.
+Reconhecer o modelo: decidir, por uma tabela ou por um gráfico, se o crescimento é linear ou exponencial, e escolher a lei certa.
+Descobrir o tempo: igualar potências de mesma base (e, quando não dá, usar logaritmos, assunto seguinte).
+O que rende mais aqui
+Traduzir a frase do enunciado no fator certo. “Dobra a cada 20 min” é fator 2 por período de 20 min; “cresce 3% ao ano” é fator 1,03 por ano; “perde 15% ao ano” é fator 0,85; “meia-vida de 8 dias” é fator (1/2) a cada 8 dias. Com o fator e o valor inicial, a lei sai sozinha.
+02 A função e as restrições da base
+Definição
+Função exponencial é toda função f(x) = a^x, com base a > 0 e a ≠ 1. A variável está no expoente, e é isso que a diferencia de x² ou x³, em que a variável está na base.
+As duas restrições têm motivo. Com base 1, 1^x = 1 sempre: a função seria constante. Com base negativa, potências como (−4)^(1/2) não são números reais, e a função ficaria cheia de buracos.
+ | x | −2 | −1 | 0 | 1 | 2 | 3
+ | 2^x | (1/4) | (1/2) | 1 | 2 | 4 | 8
+ | ((1/2))^x | 4 | 2 | 1 | (1/2) | (1/4) | (1/8)
+Expoente negativo não dá resultado negativo: 2^(−2) = (1/4). Por isso a imagem da exponencial é ]0, +∞[: a^x é sempre positivo.
+03 O gráfico: crescente ou decrescente
+Base maior que 1 sobe; base entre 0 e 1 desce. As duas curvas passam por (0, 1), porque a^0 = 1, e nunca tocam o eixo x. Como ((1/2))^x = 2^(−x), uma é o espelho da outra em relação ao eixo y.
+ | | a > 1 | 0 < a < 1
+ | Comportamento | crescente | decrescente
+ | Quando x cresce muito | dispara para +∞ | se aproxima de 0
+ | Quando x fica muito negativo | se aproxima de 0 | dispara para +∞
+ | Ponto comum | (0, 1); com coeficiente, y = k · a^x corta o eixo em (0, k)
+ | Domínio e imagem | domínio ℝ; imagem ]0, +∞[ (sem coeficiente nem deslocamento)
+Assíntota
+A reta y = 0 é uma assíntota horizontal: a curva chega tão perto dela quanto se queira, sem nunca tocá-la. Se a lei for y = 25 + 65 · 0,8^t, a assíntota sobe para y = 25: é o valor de que a grandeza se aproxima com o tempo.
+04 O modelo de crescimento e decaimento
+Quase toda questão do assunto usa a mesma lei:
+Lei geral
+Q(t) = Q_0 · a^t
+Q_0 é o valor no instante t = 0; a é o fator por unidade de tempo. Fator maior que 1, crescimento; entre 0 e 1, decaimento.
+ | Frase do enunciado | Fator | Lei
+ | população de 200 mil cresce 3% ao ano | 1 + 0,03 = 1,03 | P = 200 000 · 1,03^t
+ | carro de R$ 60 mil perde 15% ao ano | 1 − 0,15 = 0,85 | V = 60 000 · 0,85^t
+ | cultura de 500 bactérias triplica a cada hora | 3 | N = 500 · 3^t
+ | R$ 1 000 a juros compostos de 2% ao mês | 1,02 | M = 1 000 · 1,02^t
+Perder 15% não é fator 0,15
+O fator é o que sobra: quem perde 15% fica com 85%, fator 0,85. Usar 0,15 faria o carro valer, depois de um ano, só 15% do preço. O mesmo vale para aumento: crescer 3% é multiplicar por 1,03, não por 0,03 nem por 3.
+Para achar Q_0 e a a partir de dois pontos, divida um pelo outro. Se f(0) = 3 e f(2) = 12: Q_0 = 3 e a² = (12/3) = 4, logo a = 2.
+05 Tempo de duplicação e meia-vida
+Quando o enunciado dá o tempo para dobrar (ou cair à metade), o expoente conta quantos desses intervalos se passaram:
+Duplicação a cada T
+Q(t) = Q_0 · 2^(t/T)
+1 000 bactérias que dobram a cada 30 min, depois de 3 h: são (180/30) = 6 duplicações, e 1 000 · 2^6 = 64 000.
+Meia-vida T
+Q(t) = Q_0 · ((1/2))^(t/T)
+O césio-137, o material do acidente de Goiânia (1987), tem meia-vida de cerca de 30 anos. Depois de 90 anos, passaram-se 3 meias-vidas, e resta ((1/2))³ = (1/8) da quantidade inicial.
+Meia-vida em barras. A cada intervalo T, a quantidade cai à metade da que havia naquele momento, não à metade da inicial. Por isso, depois de 2 meias-vidas sobram 25%, e não zero.
+Duas meias-vidas não zeram a amostra
+Metade de 100% é 50%; metade de 50% é 25%. Quem subtrai 50% duas vezes chega a zero e erra. A grandeza exponencial nunca chega a zero: ela só se aproxima.
+06 Exponencial ou afim? Como reconhecer
+Numa tabela com o tempo andando em passos iguais, olhe para os valores:
+ | t | 0 | 1 | 2 | 3 | 4 | Padrão
+ | Afim | 100 | 150 | 200 | 250 | 300 | diferença constante (+50)
+ | Exponencial | 100 | 150 | 225 | 337,5 | 506,25 | razão constante (×1,5)
+As duas começam iguais e têm o mesmo primeiro passo, mas a exponencial ganha cada vez mais por passo. Toda exponencial crescente acaba ultrapassando qualquer função afim, por maior que seja a vantagem inicial da reta:
+A reta começa na frente; a curva vence no fim. Em t = 0, a afim vale 20 e a exponencial vale 1. Até t = 6 a reta está à frente (80 contra 64); em t = 7, a exponencial já passou (128 contra 90).
+O teste da razão
+Divida cada valor pelo anterior. Se a razão for sempre a mesma, o modelo é exponencial e essa razão é o fator a. Se o que se repete é a diferença, o modelo é afim. Os valores de uma exponencial em tempos igualmente espaçados formam uma progressão geométrica.
+07 Equações exponenciais
+Se os dois lados podem ser escritos como potências da mesma base, os expoentes são iguais (a função exponencial é injetora: valores diferentes de x dão potências diferentes).
+ | Equação | Mesma base | Solução
+ | 2^(x + 1) = 32 | 2^(x + 1) = 2^5 | x = 4
+ | 9^x = 27 | 3^(2x) = 3^3 | x = (3/2)
+ | 4^x = (1/8) | 2^(2x) = 2^(−3) | x = −(3/2)
+ | 1 000 · 3^(t/2) = 81 000 | 3^(t/2) = 81 = 3^4 | t = 8
+Quando aparecem duas potências somadas
+2^x + 2^(x + 1) = 24 → 2^x(1 + 2) = 24 → 2^x = 8 → x = 3
+Use 2^(x + 1) = 2 · 2^x e coloque a potência em evidência.
+Isole a potência antes de comparar expoentes
+Em 1 000 · 3^(t/2) = 81 000, divida por 1 000 primeiro. Só se igualam expoentes quando cada lado é uma potência só, da mesma base. Se a base não “fecha” (como em 2^x = 10), a ferramenta é o logaritmo, próximo assunto.
+08 Inequações exponenciais
+Com a mesma base dos dois lados, compare os expoentes, mas olhe a base antes:
+ | Base | Regra | Exemplo
+ | a > 1 | mantém o sentido da desigualdade | 2^x > 16 = 2^4 → x > 4
+ | 0 < a < 1 | inverte o sentido | ((1/3))^x > 9 = ((1/3))^(−2) → x < −2
+O motivo está no gráfico: se a função é decrescente, um valor maior da função corresponde a um x menor. Em contexto: um remédio que cai à metade a cada 4 h fica acima de 50 mg/L, partindo de 400 mg/L, enquanto 400 · ((1/2))^(t/4) > 50, isto é, ((1/2))^(t/4) > ((1/2))³, ou seja, t < 12 h.
+09 Estratégia de prova
+1 · Conte os intervalos antes de qualquer conta
+“Dobra a cada 20 min, por 2 h” são 120 ÷ 20 = 6 duplicações. Escreva o número de intervalos, depois a potência. Converta as unidades primeiro (horas em minutos, anos em meses) para não dividir grandezas diferentes.
+2 · Teste a lei em t = 0 e t = 1
+Para escolher a lei de uma tabela, substitua t = 0 (dá o valor inicial?) e t = 1 e t = 2 (dão os valores seguintes?). Leis afins costumam acertar os dois primeiros pontos e errar o terceiro: teste sempre três.
+3 · Quando a conta não fecha, procure o logaritmo
+Se o enunciado dá log 2, log 3 ou outros valores, a equação não se resolve igualando bases. Isole a potência e aplique logaritmo dos dois lados (veja Logaritmos).
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Biologia | crescimento de bactérias e populações sem limitação (curva em J) | com recursos limitados, o crescimento desacelera e a curva vira um S
+ | Química | decaimento radioativo e datação por carbono-14 (meia-vida de cerca de 5 730 anos) | a fração que resta é ((1/2))^n, com n meias-vidas
+ | Física | resfriamento de um corpo até a temperatura ambiente | a diferença de temperatura cai exponencialmente; a temperatura tende à do ambiente
+ | Matemática Financeira | juros compostos: M = C(1 + i)^t | é a exponencial de fator 1 + i
+ | Geografia | teoria de Malthus: população em PG, alimentos em PA | é a comparação exponencial × afim da seção 06
+11 Os erros que mais custam pontos
+perde 15% ⇒ fator 0,15 → fator 0,85O fator é o que sobra, não o que se perde.
+cresce 3% ⇒ fator 3 → fator 1,03Taxa vira fator somando 1.
+2 meias-vidas ⇒ sobra 0% → sobra 25%Cada meia-vida corta pela metade o que existe no momento.
+dobra 6 vezes ⇒ ×12 → ×2⁶ = ×64Duplicações se multiplicam, não se somam.
+2⁻³ = −8 → 2⁻³ = 1/8Expoente negativo inverte; o resultado continua positivo.
+3 · 2ˣ = 6ˣ → 3 · 2ˣ fica assimO coeficiente não entra na base.
+(1/3)ˣ > 9 ⇒ x > −2 → x < −2Base entre 0 e 1 inverte a desigualdade.
+igualar expoentes com coeficiente na frente → isole a potênciaEm 1 000 · 3ᵗ = 81 000, divida por 1 000 antes.
+dois pontos certos ⇒ lei certa → teste três pontosReta e curva podem coincidir em dois pontos.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, escreva o fator e o número de intervalos.
+Questão 1 · Duplicações de uma cultura
+Em um experimento, uma cultura começa com 500 bactérias, e a população dobra a cada 20 minutos, enquanto houver nutrientes. Supondo que os nutrientes não se esgotem, o número de bactérias 2 horas após o início do experimento será
+3 000
+6 000
+16 000
+32 000
+64 000
+Ver resolução
+Em 2 h = 120 min há 120 ÷ 20 = 6 duplicações:
+N = 500 · 2^6 = 500 · 64 = 32 000
+A A multiplica 500 por 6, como se a população aumentasse 500 a cada intervalo (crescimento linear). A B multiplica 500 por 2 e por 6, somando as duplicações em vez de compô-las. A C conta só 5 duplicações; a E conta 7, como se o instante inicial também fosse uma duplicação.
+Alternativa D
+Questão 2 · Meia-vida de um radiofármaco
+O iodo-131, usado em exames e tratamentos da tireoide, tem meia-vida de 8 dias. Um laboratório recebeu uma amostra com 80 mg desse isótopo. Considerando apenas o decaimento radioativo, a massa de iodo-131 restante na amostra após 32 dias será
+2,5 mg
+5 mg
+10 mg
+20 mg
+40 mg
+Ver resolução
+Em 32 dias há 32 ÷ 8 = 4 meias-vidas: 80 → 40 → 20 → 10 → 5.
+m = 80 · ((1/2))^4 = (80/16) = 5 mg
+A A aplica uma meia-vida a mais. A C para na terceira. A D divide 80 por 4, o número de meias-vidas, em vez de dividir por 2^4. A E aplica uma meia-vida só.
+Alternativa B
+Questão 3 · A lei a partir da tabela
+Uma revista especializada publicou o valor de mercado estimado de um modelo de máquina agrícola ao longo dos anos após a compra:
+ | Anos após a compra | 0 | 1 | 2 | 3
+ | Valor (R$) | 50 000 | 40 000 | 32 000 | 25 600
+A expressão que fornece o valor V, em reais, após t anos, compatível com todos os dados da tabela, é
+V = 50 000 − 10 000t
+V = 50 000 · 0,2^t
+V = 40 000 · 0,8^t
+V = 50 000 · 0,8t
+V = 50 000 · 0,8^t
+Ver resolução
+As razões entre valores consecutivos são iguais: (40 000/50 000) = (32 000/40 000) = (25 600/32 000) = 0,8. É uma exponencial de fator 0,8 (perda de 20% ao ano) e valor inicial 50 000.
+A A acerta os dois primeiros valores, mas dá 30 000 em t = 2, não 32 000: uma reta não serve. A B usa a taxa de perda (0,2) como fator. A C começa no valor do primeiro ano, e daria 40 000 em t = 0. A D escreve 0,8t (produto), que dá 0 em t = 0.
+Alternativa E
+Questão 4 · Igualar potências de mesma base
+Um estudo projetou que a população de uma espécie de ave em uma reserva, após t anos de um programa de proteção, seria dada por P(t) = 1 000 · 3^(t/2). Segundo esse modelo, a população atingirá 81 000 aves após
+4 anos
+8 anos
+27 anos
+54 anos
+162 anos
+Ver resolução
+Isole a potência e iguale as bases:
+3^(t/2) = (81 000/1 000) = 81 = 3^4 → (t/2) = 4 → t = 8
+A A resolve 3^t = 81, esquecendo a divisão do expoente por 2. A C divide 81 por 3, como se fosse 3t = 81. A D trata o expoente como produto: 3 · (t/2) = 81. A E iguala o expoente ao valor: (t/2) = 81.
+Alternativa B
+Questão 5 · Linear contra exponencial
+Hoje, o perfil A de uma rede social tem 1 000 seguidores e ganha 300 novos seguidores por semana, sempre o mesmo número. O perfil B tem hoje 100 seguidores, e esse número dobra a cada semana. Mantidos esses ritmos, o menor número inteiro de semanas, contadas a partir de hoje, ao fim do qual o perfil B terá mais seguidores que o perfil A é
+3 semanas.
+4 semanas.
+5 semanas.
+6 semanas.
+nenhum: B nunca ultrapassará A.
+Ver resolução
+Após t semanas: A = 1 000 + 300t e B = 100 · 2^t.
+ | t | 3 | 4 | 5
+ | A | 1 900 | 2 200 | 2 500
+ | B | 800 | 1 600 | 3 200
+A A confunde ganho semanal com total: da 2ª para a 3ª semana, B já ganha mais que A (400 contra 300), mas ainda tem muito menos seguidores. A B compara B com os 1 000 seguidores iniciais de A, esquecendo que A também cresce. A D conta o dia de hoje como primeira semana. A E ignora que toda exponencial crescente ultrapassa qualquer função afim.
+Alternativa C
+Questão 6 · Lei por dois pontos
+O gráfico de uma função do tipo f(x) = k · a^x, com k > 0 e a > 0, passa pelos pontos (0, 3) e (2, 12). O valor de f(3) é
+16,5
+18
+24
+36
+48
+Ver resolução
+f(0) = k = 3. Depois, 3a² = 12, logo a² = 4 e a = 2 (a base é positiva). Então f(3) = 3 · 2³ = 24.
+A A liga os pontos por uma reta (inclinação 4,5) e calcula 3 + 4,5 · 3. A B calcula k · a · x = 3 · 2 · 3, trocando a potência por um produto. A D supõe a = 3 e faz 12 · 3. A E multiplica 12 por a² = 4, como se de x = 2 para x = 3 houvesse dois passos.
+Alternativa C
+Questão 7 · Quando repetir a dose
+Logo após a administração de um medicamento, sua concentração no sangue de um paciente é de 400 mg/L. A partir daí, a concentração cai pela metade a cada 4 horas. O médico orientou que uma nova dose seja dada quando a concentração atingir 50 mg/L. A nova dose deve ser dada, após a primeira, em
+7 h
+8 h
+12 h
+16 h
+32 h
+Ver resolução
+De 400 para 50 a concentração cai a (1/8) = ((1/2))³: são 3 meias-vidas, 3 · 4 = 12 h (400 → 200 → 100 → 50).
+A A supõe queda linear: se cai 200 mg/L nas primeiras 4 h, cairia 50 mg/L por hora e chegaria a 50 em 7 h. A B para em 100 mg/L (duas meias-vidas). A D aplica uma meia-vida a mais, chegando a 25 mg/L. A E divide 400 por 50, obtém 8 e trata esse 8 como número de meias-vidas, quando 8 = 2³ indica três.
+Alternativa C
+Questão 8 · Datação por carbono-14
+O carbono-14 tem meia-vida de aproximadamente 5 730 anos. Em um sítio arqueológico, encontrou-se um fragmento de madeira com (1/16) da quantidade de carbono-14 que teria uma amostra equivalente de madeira viva. A idade aproximada do fragmento, em anos, é
+1 432,5
+11 460
+17 190
+22 920
+91 680
+Ver resolução
+(1/16) = ((1/2))^4: passaram-se 4 meias-vidas, 4 · 5 730 = 22 920 anos.
+A A divide a meia-vida por 4 em vez de multiplicar. A B e a C contam 2 e 3 meias-vidas. A E multiplica por 16, tratando o denominador da fração como número de meias-vidas, quando 16 meias-vidas deixariam (1/65 536) do carbono-14.
+Alternativa D
+Questão 9 · A assíntota em contexto
+Uma xícara de café é deixada sobre a mesa de uma sala climatizada. Sua temperatura, em graus Celsius, t minutos depois, é modelada por T(t) = 25 + 65 · 0,8^t. De acordo com esse modelo, à medida que o tempo passa, a temperatura do café se aproxima de
+25 °C
+40 °C
+65 °C
+77 °C
+90 °C
+Ver resolução
+Como 0 < 0,8 < 1, o termo 0,8^t se aproxima de zero quando t cresce, e a parcela 65 · 0,8^t desaparece aos poucos. Sobra 25: a temperatura tende à da sala. A reta T = 25 é a assíntota do gráfico.
+A B subtrai os dois números do modelo. A C toma o coeficiente da potência, que é a diferença inicial entre o café e a sala. A D é a temperatura após 1 minuto, 25 + 52. A E é a temperatura inicial, T(0) = 25 + 65.
+Alternativa A
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Explico por que a base da exponencial é positiva e diferente de 1
+Calculo potências de expoente negativo e fracionário sem errar sinal
+Esboço o gráfico de a^x para base maior que 1 e entre 0 e 1
+Sei que a curva passa por (0, 1), tem imagem positiva e assíntota horizontal
+Transformo uma taxa percentual de aumento ou de perda no fator certo
+Monto Q_0 · a^t a partir de valor inicial e fator, ou de dois pontos
+Uso tempo de duplicação e meia-vida contando o número de intervalos
+Distingo afim de exponencial numa tabela pelo teste da diferença e da razão
+Resolvo equações exponenciais igualando bases depois de isolar a potência
+Coloco potências em evidência em somas como 2^x + 2^(x + 1)
+Resolvo inequações exponenciais, invertendo o sentido quando a base está entre 0 e 1
+Interpreto a assíntota como o valor de que a grandeza se aproxima com o tempo
+Reconheço quando a equação exige logaritmo, por não fechar na mesma base
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez de meia-vida ou duplicação em contexto. Depois siga para Logaritmos: definição, propriedades e equações, a ferramenta que tira a incógnita do expoente quando as bases não fecham.
+Flashcards para o Anki
+Foram gerados 39 cartões deste assunto no arquivo ENEM-Matematica-26-funcao-exponencial-crescimento-decaimento.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

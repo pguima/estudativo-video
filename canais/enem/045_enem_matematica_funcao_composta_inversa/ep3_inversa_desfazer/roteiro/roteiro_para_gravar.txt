@@ -1,0 +1,65 @@
+Em Nova York, o termômetro marca noventa e oito vírgula seis graus Fahrenheit. Você está com febre? Não: são exatamente trinta e sete graus Celsius. Para saber, você precisa da fórmula que faz o caminho de volta.
+
+Ao final desta aula, você vai calcular a inversa de qualquer função afim, inverter uma fração e nunca mais confundir f inversa com um sobre f.
+
+Antes, três lembretes rápidos. Isolar o x é deixá-lo sozinho de um lado: em dois x mais um igual a sete, tira o um, divide por dois: x igual a três. Da Função Afim: F igual a um vírgula oito C, mais trinta e dois. E do episódio um: meia e sapato: a ordem muda o resultado.
+
+Pense em quem chega da rua. De manhã: meia, depois sapato. À noite, para desfazer: primeiro o sapato, depois a meia. O último passo é o primeiro a ser desfeito. E um termômetro de viagem que só mostra Fahrenheit: você quer o caminho de volta, para Celsius.
+
+E o que é uma função inversa? Toda função tem uma entrada, o número que você põe, e uma saída, o número que ela devolve. A função inversa é o caminho de volta: a saída vira entrada, e a entrada vira saída. Escreve-se f com um menos um pequeno, e lê-se f inversa. Se f leva a em b, a f inversa leva b de volta em a.
+
+E se eu fizer a ida e a volta? Aplico f, depois a f inversa: volto ao x. f inversa de f de x é igual a x. Ida e volta é ficar parado.
+
+Esse menos um é um expoente? Não. Aqui ele quer dizer desfazer. f de x igual a x mais três: para desfazer, tira três. A inversa é x menos três. Um sobre x mais três é outra coisa. Com x igual a um: a inversa dá menos dois; o um sobre dá zero vírgula vinte e cinco.
+
+E com f de x igual a dois x? Desfazer dobrar é dividir por dois: a inversa é x sobre dois. Com x igual a quatro: x sobre dois dá dois; um sobre dois x dá zero vírgula cento e vinte e cinco. Nem perto. Uma é reta, a outra é curva: funções diferentes.
+
+E como achar a inversa de dois x mais um? Pense numa esteira: o número é multiplicado por dois e depois soma um. Entra um, sai três. Para voltar, a esteira roda ao contrário: primeiro tira um, depois divide por dois. O três volta a ser um.
+
+No papel, isso vira uma receita de três passos. Um: escreva y igual a dois x mais um. Dois: isole o x. Passe o um para o outro lado, e divida por dois: x igual a y menos um, sobre dois. Três: troque os nomes: x vira y, y vira x. f inversa de x igual a x menos um, sobre dois.
+
+E como saber se está certa? Atalho: teste com um ponto. f de um é três. Então a inversa precisa levar o três de volta no um: três menos um, dividido por dois: um. Bateu.
+
+E vale para qualquer função afim? Vale. Em a x mais b, o x foi multiplicado por a, depois somado com b. Na volta: tira o b, depois divide pelo a. x menos b, sobre a. E se f cresce, a inversa também cresce.
+
+Isso vira atalho de prova. O que foi somado por último sai primeiro; depois divida pelo número do x. Cinco x mais quatro? x menos quatro, sobre cinco. Sem montar equação.
+
+E o termômetro de Nova York? F igual a um vírgula oito C, mais trinta e dois. Na volta: tira o trinta e dois, depois divide por um vírgula oito. C igual a F menos trinta e dois, sobre um vírgula oito. Noventa e oito vírgula seis menos trinta e dois: sessenta e seis vírgula seis. Dividido por um vírgula oito: trinta e sete graus. Sem febre.
+
+E toda conversão tem inversa? Tem. Atalho: leia a fórmula de trás para frente, com a conta oposta. O preço do táxi pela distância vira a distância pelo preço: é a nossa primeira questão.
+
+E se a função for uma fração, com x em cima e embaixo? Pegue três x mais dois, sobre x menos quatro, com x diferente de quatro. Multiplique cruzado: y vezes x menos quatro, igual a três x mais dois. Distribua o y: x y menos quatro y.
+
+Agora o x aparece duas vezes. Junte os termos com x de um lado: x y menos três x igual a quatro y mais dois. Ponha o x em evidência, isto é, para fora, multiplicando: x vezes y menos três. Divida e troque os nomes: quatro x mais dois, sobre x menos três. Teste: f de cinco é dezessete, e a inversa de dezessete dá setenta sobre catorze: cinco. Bateu.
+
+O truque da fração, em uma linha. Atalho: junte os x de um lado e ponha o x em evidência. É assim que o x fica sozinho.
+
+Sua vez. Calcule a inversa de f de x igual a três x menos seis e teste com um ponto. Pause e tente.
+
+Vamos juntos. O último passo foi tirar seis; então, primeiro soma seis: y mais seis igual a três x. Divide por três e troca os nomes: f inversa igual a x mais seis, sobre três. Teste: f de quatro é doze menos seis, seis. Inversa de seis: doze dividido por três, quatro. Voltou.
+
+Vamos guardar em três frases. Um: a inversa troca entrada e saída. Dois: desfaça na ordem contrária: primeiro o último passo. Três: f inversa desfaz; um sobre f só vira de cabeça para baixo.
+
+Agora, os três erros clássicos. Primeiro: achar que f inversa é um sobre f. Parece certo, porque em números, dois elevado a menos um é mesmo um meio. Mas no f, o menos um quer dizer desfazer: a inversa de x mais três é x menos três.
+
+Segundo: na inversa de dois x mais um, somar um em vez de tirar, ou dividir antes de tirar o um. Parece certo, porque as contas são as da ida. Mas desfazer é conta oposta, ordem contrária. Teste com três: nenhuma das duas volta ao um.
+
+Terceiro: trocar as letras sem isolar nada: x igual a dois y mais um, e para por aí. Parece certo, porque trocar os nomes é um dos passos. Mas é o último. Sem isolar, você só reescreveu a própria f.
+
+Agora, uma questão no estilo do ENEM, do nosso material. Esta, eu resolvo com você. Em uma cidade, o preço P, em reais, de uma corrida de táxi de x quilômetros é P igual a quatro vírgula cinco, mais dois vírgula cinco x. Um aplicativo quer mostrar quantos quilômetros o passageiro pode percorrer com um valor P disponível. A expressão que fornece x em função de P é: A: P menos quatro vírgula cinco, sobre dois vírgula cinco. B: P sobre dois vírgula cinco, menos quatro vírgula cinco. C: P mais quatro vírgula cinco, sobre dois vírgula cinco. D: dois vírgula cinco P, mais quatro vírgula cinco. E: um sobre quatro vírgula cinco mais dois vírgula cinco P. Pause o vídeo e tente.
+
+O preço é a saída; a pergunta quer a volta. A ida: vezes dois vírgula cinco, mais quatro vírgula cinco. A volta: tira quatro vírgula cinco, depois divide por dois vírgula cinco. x igual a P menos quatro vírgula cinco, sobre dois vírgula cinco. Teste com trinta e sete reais: trinta e dois e meio, dividido por dois e meio: treze quilômetros. E na ida, quatro e meio mais dois e meio vezes treze: trinta e sete. Letra A!
+
+E as erradas? A B divide antes de subtrair. A C soma o quatro e meio. A D troca as letras sem isolar. E a E confunde a inversa com um sobre a função. Com trinta e sete reais, nenhuma dá treze.
+
+E a última é sua. A função f de x igual a dois x mais um, sobre x menos três, definida para x diferente de três, é usada para converter um índice x em uma nota f de x e admite inversa no conjunto adequado. A lei de f inversa é: A: três x mais um, sobre x menos dois. B: x menos três, sobre dois x mais um. C: três x mais um, sobre x mais dois. D: três x menos um, sobre x menos dois. E: dois x mais um, sobre x menos três. Pause e resolva.
+
+Conferindo. Multiplique cruzado: x y menos três y igual a dois x mais um. Junte os x: x y menos dois x igual a três y mais um. Ponha o x em evidência: x vezes y menos dois igual a três y mais um. Divida e troque os nomes: três x mais um, sobre x menos dois. Letra A!
+
+Teste com um ponto. f de quatro: nove sobre um, nove. Na inversa: vinte e oito sobre sete, quatro. Voltou. A B é o um sobre f. A C erra o sinal do dois na evidência. A D erra o sinal do um. E a E é a própria f. Com o nove, só a A devolve o quatro.
+
+Para fechar, as mesmas três frases. Um: a inversa troca entrada e saída. Dois: desfaça na ordem contrária: primeiro o último passo. Três: f inversa desfaz; um sobre f só vira de cabeça para baixo.
+
+f de x igual a x ao quadrado leva três em nove e menos três em nove. Se eu te disser que a saída foi nove, de onde veio? Nem toda função pode ser desfeita. Próximo episódio: quem tem inversa, e o espelho que desenha o gráfico dela.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: que conversão do seu dia a dia você já fez de trás para frente? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

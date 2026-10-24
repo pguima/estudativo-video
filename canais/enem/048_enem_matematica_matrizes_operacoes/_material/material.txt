@@ -1,0 +1,268 @@
+Matrizes
+Matemática › Álgebra e Funções › Assunto 15 de 18
+Matrizes e operações
+Uma matriz é uma tabela de números com endereço: cada valor mora numa linha e numa coluna. No ENEM ela aparece como quadro de distâncias, tabela de produção ou imagem digital, e a conta que mais cai é a multiplicação, que combina quantidades com preços de uma só vez.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Operações e conjuntos numéricos · Sistemas de equações lineares
+Destrava
+Determinantes e sistemas lineares, leitura de tabelas e área por determinante
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM quase nunca escreve “calcule a matriz A · B”. A matriz chega disfarçada de tabela, e a pergunta é o que fazer com ela. As formas mais comuns:
+Ler o endereço: numa tabela de distâncias, de resultados de jogos ou de vendas, saber o que significa o elemento a_ij e o que significam a soma de uma linha e a soma de uma coluna.
+Multiplicar com sentido: quantidades vezes preços, porções vezes nutrientes. O produto de matrizes faz todas as contas “linha por coluna” de uma vez, e a pergunta costuma ser qual elemento do produto responde ao problema.
+Decidir se a conta existe: o produto só é definido quando o número de colunas da primeira é igual ao de linhas da segunda.
+Imagens e códigos: uma foto digital é uma matriz de pixels; um código secreto pode ser uma multiplicação por matriz, desfeita pela inversa.
+O que rende mais aqui
+Dominar a multiplicação linha por coluna e saber o que cada elemento do produto representa. Se a linha i de A é “o que a filial i compra” e a coluna j de B é “os preços do fornecedor j”, então c_ij é “quanto a filial i gasta no fornecedor j”.
+02 Matriz é uma tabela com endereço
+Definição e notação
+Uma matriz m × n (lê-se “m por n”) é uma tabela com m linhas (horizontais) e n colunas (verticais). O elemento a_ij está na linha i e na coluna j, sempre nessa ordem: primeiro a linha, depois a coluna.
+A matriz pode ser dada pelos números ou por uma lei de formação. Com a_ij = 2i − j e ordem 2 × 3, cada elemento sai de substituir o endereço:
+Montando pela lei de formação
+a_11 = 2 − 1 = 1, a_12 = 2 − 2 = 0, a_13 = 2 − 3 = −1
+a_21 = 4 − 1 = 3, a_22 = 4 − 2 = 2, a_23 = 4 − 3 = 1
+A = 10−1321
+Numa tabela de contexto, o endereço tem significado. Se d_ij é a distância da cidade i até a cidade j, então d_24 é a distância da cidade 2 à cidade 4. Se g_ij são os gols do time i contra o time j, a soma da linha i dá os gols marcados pelo time i e a soma da coluna i, os gols que ele sofreu.
+Não inverta o endereço
+a_23 e a_32 são elementos diferentes. No cabeçalho, a_23 = 9 (linha 2, coluna 3), enquanto a_32 = 3 (linha 3, coluna 2). Em tabelas de jogos, trocar linha por coluna troca “gols feitos” por “gols sofridos”.
+03 Tipos de matrizes que aparecem nos enunciados
+ | Nome | O que é | Exemplo
+ | Linha / coluna | uma só linha (1 × n) ou uma só coluna (m × 1) | 251
+ | Quadrada | mesmo número de linhas e colunas; tem diagonal principal (i = j) e secundária (i + j = n + 1) | 1423
+ | Nula | todos os elementos iguais a zero | 0000
+ | Diagonal | quadrada, com zeros fora da diagonal principal | 500−2
+ | Identidade I_n | diagonal com todos os elementos da diagonal iguais a 1 | 1001
+ | Triangular | quadrada, com zeros de um dos lados da diagonal principal | 3702
+ | Transposta A^t | troca linhas por colunas: a^t_ij = a_ji; uma matriz m × n vira n × m | 123456^t = 142536
+ | Simétrica | igual à própria transposta: a_ij = a_ji, espelhada na diagonal | 085803530
+Simetria tem significado
+Uma tabela de distâncias entre cidades por estrada de mão dupla é simétrica: de 1 até 3 é o mesmo que de 3 até 1. Por isso a diagonal é zero (de uma cidade até ela mesma) e, se um valor está faltando acima da diagonal, ele pode ser copiado do espelho abaixo dela. Já uma tabela de gols não é simétrica: 3 a 1 não é 1 a 3.
+04 Igualdade, adição e multiplicação por número
+Essas três operações são feitas elemento a elemento, e por isso exigem matrizes de mesma ordem (a multiplicação por número vale para qualquer matriz).
+Igualdade: mesma ordem e elementos correspondentes iguais
+x + y32x − y = 7321 ⟹ x + y = 7 e x − y = 1 ⟹ x = 4, y = 3
+Adição e subtração: posição com posição
+1420 + 3−152 = 4372
+Multiplicação por número: todos os elementos
+3 · 1420 = 31260
+Com isso já se resolvem situações reais. Se A tem as notas da prova 1 e B as da prova 2 (alunos nas linhas, disciplinas nas colunas), a matriz das médias ponderadas com pesos 0,4 e 0,6 é 0,4A + 0,6B, calculada posição por posição.
+Propriedades que funcionam como nos números
+A adição é comutativa e associativa, a matriz nula é o elemento neutro e cada matriz tem a sua oposta −A. Por isso equações como 2X + A = B se resolvem como no 1º grau: X = (B − A/2), conta feita elemento a elemento.
+05 Multiplicação de matrizes: linha por coluna
+Aqui está a operação que faz das matrizes uma ferramenta. O produto C = A · B não é feito posição com posição. Cada elemento c_ij combina a linha i de A com a coluna j de B: multiplica o 1º com o 1º, o 2º com o 2º, e assim por diante, e soma tudo.
+Cada elemento do produto é uma “linha vezes coluna”. O elemento da linha 1, coluna 2 do resultado usa a linha 1 de A e a coluna 2 de B. Para isso funcionar, a linha de A e a coluna de B precisam ter o mesmo tamanho.
+Condição e ordem do resultado
+A_m × n · B_n × p = C_m × p
+Os números “de dentro” (n e n) têm de ser iguais; os “de fora” (m e p) dão a ordem do produto. Uma 2 × 3 vezes uma 3 × 2 dá 2 × 2; uma 3 × 2 vezes outra 3 × 2 não existe.
+As quatro contas do exemplo, para conferir: c_11 = 1·2 + 2·1 + 3·0 = 4; c_12 = 19; c_21 = 0·2 + 1·1 + 4·0 = 1; c_22 = 0·4 + 1·0 + 4·5 = 20.
+Por que essa regra estranha faz sentido
+Pense numa filial que compra 10 kg de arroz, 5 kg de feijão e 4 L de óleo (uma linha) e num fornecedor que cobra R$ 5, R$ 9 e R$ 8 por unidade (uma coluna). O gasto é 10·5 + 5·9 + 4·8 = 127: exatamente “linha vezes coluna”. O produto de matrizes faz essa conta para todas as filiais e todos os fornecedores ao mesmo tempo.
+06 O que muda em relação aos números
+A multiplicação de matrizes tem propriedades boas (associativa, distributiva) e duas diferenças que caem como pegadinha.
+1 · Em geral, A · B ≠ B · A
+1201 · 1031 = 7231 mas 1031 · 1201 = 1237
+A ordem dos fatores importa. Às vezes um dos produtos nem existe: com A 2 × 3 e B 3 × 4, existe AB, mas não BA.
+2 · O produto pode dar zero sem nenhum fator ser zero
+1111 · 1−1−11 = 0000
+Logo, de AB = 0 não se conclui que A = 0 ou B = 0, e também não se pode “cortar” A de AB = AC.
+ | Propriedade | Vale? | Observação
+ | A · I = I · A = A | sim | a identidade faz o papel do número 1
+ | (AB)C = A(BC) | sim | associativa
+ | A(B + C) = AB + AC | sim | distributiva, mantendo o lado
+ | (AB)^t = B^tA^t | sim | a ordem se inverte
+ | AB = BA | não em geral | só para pares especiais (como A e I)
+ | (A + B)² = A² + 2AB + B² | não em geral | o certo é A² + AB + BA + B²
+07 Matriz inversa
+Definição
+A inversa de uma matriz quadrada A é a matriz A^(−1) tal que A · A^(−1) = A^(−1) · A = I. Ela desfaz o que A faz, como dividir desfaz multiplicar. Nem toda matriz tem inversa.
+Para matrizes 2 × 3 não há inversa (não são quadradas). Para 2 × 2 existe um atalho, que usa o número ad − bc, o determinante (tema do próximo assunto):
+Inversa de uma 2 × 2
+A = abcd ⟹ A^(−1) = (1/ad − bc) · d−b−ca
+Troca os elementos da diagonal principal, troca o sinal dos da secundária e divide tudo por ad − bc. Se ad − bc = 0, a matriz não tem inversa.
+Exemplo com conferência
+A = 3152, ad − bc = 6 − 5 = 1 ⟹ A^(−1) = 2−1−53
+3152 · 2−1−53 = 6 − 5−3 + 310 − 10−5 + 6 = 1001 ✓
+Códigos com matrizes
+Um jeito clássico de cifrar mensagens: troca-se cada letra por um número, agrupam-se os números em colunas e multiplica-se cada coluna por uma matriz-chave A. Quem recebe multiplica por A^(−1) e recupera o original. Por isso a chave precisa ter inversa, e quem erra o sinal na inversa decifra lixo.
+08 Matrizes como tabelas e imagens
+A leitura de contexto é o que mais cai. Quatro modelos cobrem quase tudo:
+ | Situação | O elemento a_ij é… | Contas típicas
+ | Distâncias ou custos entre locais | a distância de i até j | somar trechos de uma rota; tabela simétrica, diagonal zero
+ | Campeonato | gols (ou pontos) de i contra j | linha = gols feitos; coluna = gols sofridos; saldo = linha − coluna
+ | Ligações (voos, estradas, amizades) | 1 se há ligação direta de i para j; 0 se não há | A² conta os caminhos com exatamente uma escala
+ | Quantidade × preço | quantidade do item j no pedido i | produto pela matriz de preços dá o custo de cada pedido
+Uma imagem digital também é uma matriz: cada pixel é um elemento, e o número indica a cor ou o tom de cinza. Numa imagem em preto e branco, 1 pode ser “pixel aceso” e 0 “apagado”.
+Uma imagem é uma matriz. O pixel da linha i, coluna j é o elemento a_ij. Operações com a matriz viram efeitos na imagem: trocar 1 por 0 inverte as cores, e a transposta espelha a figura na diagonal principal (a primeira linha vira a primeira coluna).
+Por que A² conta caminhos com uma escala
+Se a_ij = 1 quando há voo direto de i para j, o elemento (A²)_ij = a_i1a_1j + a_i2a_2j + … soma 1 para cada cidade k que tem voo de i para k e de k para j. Cada parcela 1 é uma rota com escala em k.
+09 Estratégia de prova
+1 · Antes de calcular, rotule linhas e colunas
+Escreva ao lado da tabela o que é linha e o que é coluna (“linha = time que marcou”, “coluna = adversário”). Boa parte dos erros em questões de matriz é de leitura, não de conta.
+2 · Confira as ordens antes de multiplicar
+Escreva (2 × 3) · (3 × 2) e verifique os números de dentro. Se não baterem, talvez a tabela precise ser usada transposta, ou a alternativa “não existe” seja a correta.
+3 · Calcule só o elemento pedido
+Se a pergunta é “quanto a filial 2 gasta no fornecedor 1”, basta c_21: linha 2 da primeira vezes coluna 1 da segunda. Não perca tempo com a matriz inteira.
+4 · Confira a inversa multiplicando
+Uma inversa calculada se testa em segundos: o produto com a original tem de dar a identidade. Basta conferir um ou dois elementos.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Tecnologia | imagens digitais, filtros, telas | cada pixel é um elemento; brilho e contraste são operações com a matriz
+ | Economia e gestão | planilhas de produção, consumo e custo | quantidade × preço é produto de matrizes
+ | Nutrição (Biologia) | porções de alimentos × nutrientes por porção | o produto dá o total de cada nutriente em cada refeição
+ | Geografia | tabelas de distância entre cidades, redes de transporte | tabela simétrica; A² conta conexões com uma escala
+ | Sistemas lineares | forma A · X = B | com a inversa, X = A^(−1)B; é o próximo assunto
+11 Os erros que mais custam pontos
+a₂₃ = linha 3, coluna 2 → linha 2, coluna 3Primeiro índice é a linha, sempre.
+Multiplicar posição com posição → linha por colunaSó a adição é feita elemento a elemento.
+(2 × 3) · (2 × 3) existe → não existeColunas da 1ª têm de ser iguais às linhas da 2ª.
+AB = BA → em geral, AB ≠ BAA ordem dos fatores altera o produto.
+AB = 0 ⟹ A = 0 ou B = 0 → não vale para matrizesDuas matrizes não nulas podem ter produto nulo.
+Inversa: só trocar a diagonal → trocar, mudar sinais e dividir por ad − bcConfira multiplicando: tem de dar I.
+Transposta da 2 × 3 é 2 × 3 → é 3 × 2Linhas viram colunas.
+Coluna = gols marcados → coluna = gols sofridosReleia o que o enunciado define como a_ij.
+3 · A multiplica só a 1ª linha → multiplica todos os elementosNúmero vezes matriz atinge tudo.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: o que é linha, o que é coluna, e qual elemento responde à pergunta?
+Questão 1 · Ler linhas e colunas
+Em um torneio entre quatro times, os gols foram registrados na matriz G, em que g_ij é o número de gols que o time i marcou contra o time j (a diagonal é zero, pois um time não joga contra si mesmo): G = 0311203201011310. O saldo de gols é a diferença entre gols marcados e gols sofridos. O time com o maior saldo de gols é
+o time 1.
+o time 2.
+o time 3.
+o time 4.
+os times 1 e 4, empatados.
+Ver resolução
+Gols marcados pelo time i: soma da linha i. Gols sofridos: soma da coluna i (todos os gols feitos contra ele).
+ | Time | Marcados (linha) | Sofridos (coluna) | Saldo
+ | 1 | 0 + 3 + 1 + 1 = 5 | 0 + 2 + 0 + 1 = 3 | +2
+ | 2 | 2 + 0 + 3 + 2 = 7 | 3 + 0 + 1 + 3 = 7 | 0
+ | 3 | 0 + 1 + 0 + 1 = 2 | 1 + 3 + 0 + 1 = 5 | −3
+ | 4 | 1 + 3 + 1 + 0 = 5 | 1 + 2 + 1 + 0 = 4 | +1
+Conferência: a soma dos saldos é zero (todo gol marcado por um é sofrido por outro). O maior saldo é do time 1.
+A B escolhe o time que mais marcou, ignorando os gols sofridos. A C troca linha por coluna: calculando “coluna − linha”, o time 3 fica com +3. A E compara só os gols marcados dos times 1 e 4 (5 cada) e esquece que o 4 sofreu um gol a mais; a D erra a coluna 4 (o time 4 sofreu 4 gols, e seu saldo é +1).
+Alternativa A
+Questão 2 · Produto como custo
+Duas filiais de um restaurante compram arroz (kg), feijão (kg) e óleo (L). As quantidades estão na matriz Q (linha 1: filial 1; linha 2: filial 2), e os preços unitários de dois fornecedores, X e Y, estão nas colunas da matriz P, em reais: Q = 1054862 e P = 569789. Cada filial faz a compra completa em um único fornecedor e escolhe o que lhe sai mais barato. O gasto total das duas filiais, em reais, é
+215.
+235.
+237.
+239.
+241.
+Ver resolução
+O produto C = Q · P (2 × 3 vezes 3 × 2 = 2 × 2) dá em c_ij o gasto da filial i no fornecedor j:
+c_11 = 50 + 45 + 32 = 127; c_12 = 60 + 35 + 36 = 131
+c_21 = 40 + 54 + 16 = 110; c_22 = 48 + 42 + 18 = 108
+A filial 1 escolhe X (127) e a filial 2 escolhe Y (108): total 127 + 108 = 235.
+A A escolhe o preço mais baixo de cada item, misturando fornecedores (117 + 98), o que o enunciado proíbe. A C manda as duas filiais para X (127 + 110); a D, as duas para Y (131 + 108); a E soma as piores opções (131 + 110).
+Alternativa B
+Questão 3 · Quando o produto existe
+Um programa de planilhas guarda três tabelas como matrizes: A, com 2 linhas e 3 colunas; B, com 3 linhas e 4 colunas; e C, com 4 linhas e 2 colunas. Um usuário pede o produto A · B · C, nessa ordem. O resultado será
+uma matriz 2 × 4.
+uma matriz 3 × 3.
+uma matriz 4 × 4.
+inexistente, pois as ordens não são compatíveis.
+uma matriz 2 × 2.
+Ver resolução
+Passo a passo: (2 × 3) · (3 × 4) existe (3 = 3) e dá 2 × 4. Depois, (2 × 4) · (4 × 2) existe (4 = 4) e dá 2 × 2.
+A A para no primeiro produto e esquece o C. A B usa os números “de dentro” como ordem do resultado. A C usa os números de B e C de forma trocada. A D supõe que todas as matrizes precisariam ter a mesma ordem; basta que as dimensões vizinhas coincidam.
+Alternativa E
+Questão 4 · A ordem dos fatores
+Considere as matrizes A = 1201 e B = 1031. A matriz A · B − B · A é
+a matriz nula, pois A · B = B · A
+600−6
+−6006
+02−30
+1001
+Ver resolução
+AB = 1 + 60 + 20 + 30 + 1 = 7231, BA = 1236 + 1 = 1237
+AB − BA = 600−6
+A A supõe que AB = BA, como nos números. A C calcula BA − AB. A D é A − B: subtrai as matrizes em vez de calcular os produtos. A E é a identidade, sem relação com a conta.
+Alternativa B
+Questão 5 · Tabela simétrica de distâncias
+Uma transportadora registra as distâncias rodoviárias, em km, entre quatro cidades na matriz D, em que d_ij é a distância entre as cidades i e j. As estradas são de mão dupla, e dois valores foram apagados: D = 0120x200120090y15090060200140600. Um caminhão faz o trajeto 1 → 3 → 2 → 4, sem voltar. A distância percorrida, em km, é
+240.
+350.
+380.
+440.
+580.
+Ver resolução
+Estrada de mão dupla: d_ij = d_ji, a matriz é simétrica. Então x = d_13 = d_31 = 150 e y = d_24 = d_42 = 140.
+d_13 + d_32 + d_24 = 150 + 90 + 140 = 380
+A A completa o x pela simetria, mas trata o y apagado como zero (150 + 90). A B copia x do vizinho da mesma linha (120). A D usa a distância 1–4 (200) no lugar de y. A E acrescenta a volta 4 → 1 (200), que o enunciado exclui.
+Alternativa C
+Questão 6 · Decifrar com a inversa
+Um sistema de mensagens converte cada par de letras em uma matriz coluna M com dois números e envia E = A · M, em que A = 3152. Uma mensagem chegou como E = 1729. Os dois números originais, de cima para baixo, eram
+2 e 5.
+−5 e −2.
+63 e 172.
+5 e 2.
+80 e 143.
+Ver resolução
+Para desfazer a multiplicação por A, multiplica-se por A^(−1). Como ad − bc = 6 − 5 = 1:
+A^(−1) = 2−1−53, M = A^(−1) · E = 34 − 29−85 + 87 = 52
+Conferência: 3·5 + 1·2 = 17 e 5·5 + 2·2 = 29.
+A A inverte a ordem dos números. A B troca os sinais da diagonal principal em vez dos da secundária. A C só troca a diagonal, sem mudar sinal nenhum. A E multiplica de novo por A, o que codifica outra vez em vez de decifrar.
+Alternativa D
+Questão 7 · Contar rotas com o quadrado da matriz
+Uma companhia aérea atende quatro cidades. Na matriz A, a_ij = 1 se há voo direto da cidade i para a cidade j e a_ij = 0 caso contrário: A = 0110001110011100. O elemento da linha 1 e coluna 4 de A² = A · A indica o número de maneiras de ir da cidade 1 à cidade 4 com exatamente uma escala. Esse número é
+0.
+1.
+2.
+3.
+4.
+Ver resolução
+Linha 1 de A vezes coluna 4 de A:
+(A²)_14 = 0·0 + 1·1 + 1·1 + 0·0 = 2
+As duas parcelas iguais a 1 são as rotas 1 → 2 → 4 e 1 → 3 → 4.
+A A lê a_14 = 0, o voo direto, e não o elemento de A². A B conta só uma das escalas; 1 é, na verdade, o número de rotas com exatamente duas escalas (1 → 2 → 3 → 4). A D soma as rotas com uma e com duas escalas. A E soma a linha 1 inteira de A² (todas as rotas com uma escala que saem da cidade 1, para qualquer destino).
+Alternativa C
+Questão 8 · Média ponderada com matrizes
+Em uma escola, as notas de três alunos (linhas) em duas disciplinas (colunas) nas provas 1 e 2 estão nas matrizes A = 587466 e B = 755865. A média de cada aluno em cada disciplina é dada por M = 0,4A + 0,6B, e a média mínima para aprovação é 6,0. Quantos dos seis elementos de M são maiores ou iguais a 6,0?
+1
+2
+3
+4
+5
+Ver resolução
+Elemento a elemento:
+M = 2 + 4,23,2 + 32,8 + 31,6 + 4,82,4 + 3,62,4 + 3 = 6,26,25,86,46,05,4
+São 4 médias maiores ou iguais a 6,0 (o 6,0 conta, pois o critério é “maior ou igual”).
+A A conta alunos aprovados nas duas disciplinas (só o aluno 1), não médias. A B conta as médias abaixo de 6. A C troca os pesos (0,6A + 0,4B). A E usa a média simples (A + B/2), que deixa só um valor abaixo de 6.
+Alternativa D
+Questão 9 · Propriedades que valem e que não valem
+Um estudante listou afirmações sobre matrizes quadradas A e B de mesma ordem, sendo I a identidade e 0 a matriz nula. A única afirmação verdadeira para quaisquer A e B é
+A · I = I · A = A.
+A · B = B · A.
+(A + B)² = A² + 2AB + B².
+(A · B)^t = A^t · B^t.
+se A · B = 0, então A = 0 ou B = 0.
+Ver resolução
+A identidade é o elemento neutro da multiplicação, dos dois lados: AI = IA = A sempre.
+A B falha porque o produto não é comutativo (veja a questão 4). A C depende disso: (A + B)² = A² + AB + BA + B², e AB + BA só vira 2AB se elas comutarem. A D tem a ordem errada: o certo é B^tA^t. A E é falsa: há matrizes não nulas com produto nulo, como na seção 06.
+Alternativa A
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Localizo a_ij sem trocar linha por coluna
+Monto uma matriz a partir de uma lei de formação
+Reconheço matriz quadrada, identidade, diagonal, transposta e simétrica
+Somo matrizes e multiplico por número, elemento a elemento
+Resolvo igualdades de matrizes montando as equações elemento a elemento
+Decido se um produto existe e qual é a ordem do resultado
+Multiplico matrizes linha por coluna sem errar a soma
+Explico o que significa cada elemento de um produto num contexto de quantidade × preço
+Sei que AB ≠ BA em geral e que AB = 0 não obriga um fator nulo
+Calculo a inversa de uma 2 × 2 e confiro multiplicando
+Leio tabelas de jogos: linha = gols feitos, coluna = gols sofridos
+Uso a simetria para completar uma tabela de distâncias
+Interpreto A² numa matriz de ligações como contagem de rotas com uma escala
+Antes de marcar “Dominado” no cronograma
+Resolva 25 questões e acerte pelo menos 18, com pelo menos oito de leitura de tabela e cinco de produto em contexto. Depois siga para Determinantes e sistemas lineares, onde o número ad − bc da inversa ganha nome e passa a decidir se um sistema tem solução.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-33-matrizes-operacoes.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

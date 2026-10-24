@@ -1,0 +1,1040 @@
+<title>Porcentagem</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 9 de 12</p>
+        <h1>Porcentagem: aumentos, descontos e variações sucessivas</h1>
+        <p class="deck">Abre a semana 4 e disputa com a regra de três o posto de conteúdo mais cobrado da prova. Uma única ferramenta — o fator de multiplicação — resolve praticamente tudo, inclusive as armadilhas que derrubam quem calcula por partes.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Cem reais com aumento de dez por cento viram cento e dez, e com mais vinte por cento viram cento e trinta e dois, não cento e trinta">
+  <rect x="20" y="34" width="160" height="26" rx="5" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="100" y="52" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-weight:600">100</text>
+  <path d="M186 47 L206 47" style="stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#pa)"/>
+  <text x="248" y="44" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">× 1,10</text>
+  <text x="248" y="57" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">+10%</text>
+  <rect x="20" y="78" width="176" height="26" rx="5" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="108" y="96" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">110</text>
+  <path d="M202 91 L222 91" style="stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#pa)"/>
+  <text x="256" y="88" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">× 1,20</text>
+  <text x="256" y="101" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">+20%</text>
+  <rect x="20" y="122" width="211" height="26" rx="5" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="125" y="140" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">132</text>
+  <line x1="228" y1="118" x2="228" y2="152" style="stroke:var(--c4);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="252" y="138" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">130?</text>
+  <rect x="20" y="164" width="260" height="38" rx="9" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.5"/>
+  <text x="150" y="181" text-anchor="middle" class="svg-ttl" style="fill:var(--c5)">1,10 × 1,20 = 1,32</text>
+  <text x="150" y="195" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">os fatores se multiplicam, as taxas não se somam</text>
+  <defs>
+    <marker id="pa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-3)"/></marker>
+  </defs>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>4 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Muito alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Frações e decimais · Razão e proporção</dd></div>
+      <div><dt>Destrava</dt><dd>Matemática financeira, estatística, Química</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Porcentagem não é um assunto entre outros: é uma <strong>linguagem</strong> que atravessa a prova inteira. Aparece em Matemática, em Química, em Biologia, em Geografia e em toda leitura de gráfico.</p>
+<p>Os formatos mais frequentes:</p>
+<ul>
+  <li><strong>Aumentos e descontos</strong> em preços, salários, tarifas e impostos.</li>
+  <li><strong>Variações sucessivas</strong> — duas ou mais mudanças encadeadas, que é onde estão as armadilhas.</li>
+  <li><strong>Variação percentual</strong> entre dois valores de uma tabela ou gráfico.</li>
+  <li><strong>Pontos percentuais</strong> em taxas de desemprego, inflação, juros e aprovação.</li>
+  <li><strong>Leitura de gráficos</strong> de setores e de barras com percentuais.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Uma coisa acima de todas: o <strong>fator de multiplicação</strong> (seção 04). Ele resolve aumentos, descontos, variações sucessivas e o retorno ao valor original — tudo com uma multiplicação. Quem calcula “a parte e depois soma” gasta o dobro do tempo e erra as questões encadeadas.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Os três cálculos básicos</h2>
+<p>Toda questão de porcentagem é uma destas três perguntas. Reconhecer qual delas está sendo feita já resolve metade do problema.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Pergunta</th><th>O que fazer</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Quanto é x% de um total?</strong></td><td><strong>Multiplique</strong> pela forma decimal</td><td class="m">15% de 200 = 0,15 · 200 = 30</td></tr>
+    <tr><td><strong>Que porcentagem a parte representa?</strong></td><td><strong>Divida</strong> a parte pelo total</td><td class="m">30 ÷ 200 = 0,15 = 15%</td></tr>
+    <tr><td><strong>Qual é o total?</strong></td><td><strong>Divida</strong> a parte pela forma decimal</td><td class="m">45 ÷ 0,15 = 300</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">O erro estrutural: trocar o denominador</span>
+  <p>Numa porcentagem, o denominador é sempre o <strong>valor de referência</strong> — o todo, ou o valor inicial numa variação. Colocar o número errado embaixo produz um resultado plausível e completamente incorreto.</p>
+  <p>Subir de 40 para 50 é aumento de <span class="m">10 ÷ 40 = 25%</span>. Cair de 50 para 40 é queda de <span class="m">10 ÷ 50 = 20%</span>. Mesma diferença absoluta, porcentagens diferentes, porque as bases são diferentes.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Cálculo mental que economiza minutos</span>
+  <p><strong>10%</strong> — vírgula uma casa à esquerda. <strong>1%</strong> — duas casas. <strong>5%</strong> — metade dos 10%.</p>
+  <p>E daí sai tudo: <span class="m">15%</span> é <span class="m">10% + 5%</span>. Para 240: <span class="m">24 + 12 = 36</span>.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Porcentagem, fração e decimal</h2>
+<p>São três escritas do mesmo número, e a prova alterna entre elas dentro de um mesmo enunciado.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Porcentagem</th><th>Fração</th><th>Decimal</th><th>Porcentagem</th><th>Fração</th><th>Decimal</th></tr></thead>
+  <tbody>
+    <tr><td class="m">10%</td><td class="m"><span class="frac"><i>1</i><i>10</i></span></td><td class="m">0,1</td><td class="m">50%</td><td class="m"><span class="frac"><i>1</i><i>2</i></span></td><td class="m">0,5</td></tr>
+    <tr><td class="m">12,5%</td><td class="m"><span class="frac"><i>1</i><i>8</i></span></td><td class="m">0,125</td><td class="m">60%</td><td class="m"><span class="frac"><i>3</i><i>5</i></span></td><td class="m">0,6</td></tr>
+    <tr><td class="m">20%</td><td class="m"><span class="frac"><i>1</i><i>5</i></span></td><td class="m">0,2</td><td class="m">75%</td><td class="m"><span class="frac"><i>3</i><i>4</i></span></td><td class="m">0,75</td></tr>
+    <tr><td class="m">25%</td><td class="m"><span class="frac"><i>1</i><i>4</i></span></td><td class="m">0,25</td><td class="m">80%</td><td class="m"><span class="frac"><i>4</i><i>5</i></span></td><td class="m">0,8</td></tr>
+    <tr><td class="m">33,3%</td><td class="m"><span class="frac"><i>1</i><i>3</i></span></td><td class="m">0,333…</td><td class="m">100%</td><td class="m">1</td><td class="m">1,0</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Reconhecer a fração poupa conta: <span class="m">25%</span> de um valor é dividir por 4; <span class="m">20%</span> é dividir por 5; <span class="m">12,5%</span> é dividir por 8.</p>
+</section>
+
+<section id="s4">
+<h2><i>04</i> O fator de multiplicação</h2>
+<p>Esta é a ferramenta central do assunto. Em vez de calcular a parte e depois somar ou subtrair, faz-se <strong>uma única multiplicação</strong> que já entrega o resultado final.</p>
+
+<div class="box def">
+  <span class="tag">As duas fórmulas</span>
+  <p><strong>Aumento de x%:</strong> &nbsp; fator = <span class="m">1 + <span class="frac"><i>x</i><i>100</i></span></span></p>
+  <p><strong>Desconto de x%:</strong> &nbsp; fator = <span class="m">1 − <span class="frac"><i>x</i><i>100</i></span></span></p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Variação</th><th>Fator</th><th>Variação</th><th>Fator</th><th>Variação</th><th>Fator</th></tr></thead>
+  <tbody>
+    <tr><td class="m">+5%</td><td class="m">1,05</td><td class="m">+50%</td><td class="m">1,50</td><td class="m">−5%</td><td class="m">0,95</td></tr>
+    <tr><td class="m">+10%</td><td class="m">1,10</td><td class="m">+100%</td><td class="m">2,00</td><td class="m">−10%</td><td class="m">0,90</td></tr>
+    <tr><td class="m">+20%</td><td class="m">1,20</td><td class="m">+200%</td><td class="m">3,00</td><td class="m">−25%</td><td class="m">0,75</td></tr>
+    <tr><td class="m">+25%</td><td class="m">1,25</td><td class="m">+300%</td><td class="m">4,00</td><td class="m">−40%</td><td class="m">0,60</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Aumentar 200% não é dobrar</span>
+  <p>Aumentar <span class="m">100%</span> é dobrar (fator 2). Aumentar <span class="m">200%</span> é <strong>triplicar</strong> (fator 3) — o valor original mais duas vezes ele. O fator é sempre <span class="m">1</span> mais a fração, e é esse <span class="m">1</span> que representa o valor que já existia.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O caminho de volta</span>
+  <p>Todo fator pode ser lido ao contrário. Multiplicar por <span class="m">1,5</span> é aumentar <span class="m">50%</span>. Multiplicar por <span class="m">0,65</span> é dar desconto de <span class="m">35%</span>, porque <span class="m">1 − 0,65 = 0,35</span>.</p>
+  <p>Isso é útil quando a questão informa o fator e pergunta a taxa — formato comum em problemas de crescimento.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Variações sucessivas</h2>
+<p>Duas ou mais mudanças encadeadas. Aqui está a maior parte dos pontos ganhos e perdidos neste assunto.</p>
+
+<div class="box def">
+  <span class="tag">A regra</span>
+  <p><strong>Multiplique os fatores.</strong> Nunca some as porcentagens.</p>
+  <p class="m" style="font-size:1.06rem">fator total = <span class="v">f</span><sub>1</sub> · <span class="v">f</span><sub>2</sub> · <span class="v">f</span><sub>3</sub> · …</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Um salário sobe 10% e depois mais 20%</span>
+  <p class="m">1,10 · 1,20 = 1,32 &nbsp;→&nbsp; aumento total de <strong>32%</strong></p>
+  <p>E não 30%. O segundo aumento incide sobre um salário <strong>já aumentado</strong>, não sobre o original — por isso os 20% valem mais em reais na segunda vez.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A ordem não importa</span>
+  <p>Como a multiplicação é comutativa, <span class="m">1,10 · 1,20 = 1,20 · 1,10</span>. Aumentar e depois descontar dá exatamente o mesmo resultado que descontar e depois aumentar.</p>
+  <p>Isso é útil quando o enunciado tenta confundir com a sequência das operações: ela é irrelevante para o resultado final.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Três aumentos de 10% seguidos</span>
+  <p class="m">1,10<sup>3</sup> = 1,331 &nbsp;→&nbsp; <strong>+33,1%</strong></p>
+  <p>Quando a mesma variação se repete, o fator vira potência — e é exatamente essa a ponte para juros compostos, na semana 7.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Aumento e desconto iguais não se anulam</h2>
+<p>É a armadilha mais cobrada do assunto, e a que mais parece contra-intuitiva à primeira vista.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Cem reais com aumento de vinte por cento viram cento e vinte; um desconto de vinte por cento sobre cento e vinte retira vinte e quatro, resultando em noventa e seis, abaixo do valor original">
+  <line x1="230" y1="30" x2="230" y2="184" style="stroke:var(--c4);stroke-width:1.3;stroke-dasharray:4 3"/>
+  <text x="236" y="26" class="svg-lbl" style="fill:var(--c4)">nível original</text>
+  <rect x="30" y="40" width="200" height="30" rx="5" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="130" y="60" text-anchor="middle" class="svg-num" style="fill:var(--c1);font-weight:600">100</text>
+  <text x="300" y="60" class="svg-lbl" style="fill:var(--ink-2)">valor inicial</text>
+  <rect x="30" y="88" width="240" height="30" rx="5" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <rect x="222" y="88" width="48" height="30" rx="0" style="fill:var(--c4-soft);stroke:var(--c4);stroke-width:1.4"/>
+  <text x="120" y="108" text-anchor="middle" class="svg-num" style="fill:var(--c3);font-weight:600">120</text>
+  <text x="246" y="108" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">−24</text>
+  <text x="300" y="102" class="svg-lbl" style="fill:var(--ink-2)">+20% → 120</text>
+  <text x="300" y="116" class="svg-lbl" style="fill:var(--c4)">20% de 120 = 24, não 20</text>
+  <rect x="30" y="136" width="192" height="30" rx="5" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="126" y="156" text-anchor="middle" class="svg-num" style="fill:var(--c2);font-weight:600">96</text>
+  <text x="300" y="150" class="svg-lbl" style="fill:var(--ink-2)">−20% → 96</text>
+  <text x="300" y="164" class="svg-lbl" style="fill:var(--c2)">4% abaixo do início</text>
+  <text x="30" y="192" class="svg-lbl" style="fill:var(--ink-3)">1,20 × 0,80 = 0,96</text>
+</svg>
+<figcaption><b>O desconto incide sobre uma base maior que a do aumento.</b> Os 20% de aumento valem 20 reais, mas os 20% de desconto valem 24, porque são calculados sobre 120. Por isso o valor final fica sempre <em>abaixo</em> do original — e o resultado seria o mesmo se a ordem fosse invertida.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">A fórmula geral</span>
+  <p>Um aumento de <span class="m"><span class="v">x</span>%</span> seguido de um desconto de <span class="m"><span class="v">x</span>%</span> resulta em:</p>
+  <p class="m" style="font-size:1.06rem">1 − <span class="frac"><i><span class="v">x</span><sup>2</sup></i><i>10 000</i></span></p>
+  <p>Para <span class="m"><span class="v">x</span> = 50</span>: <span class="m">1 − 0,25 = 0,75</span> — uma perda de <strong>25%</strong>. Quanto maior o percentual, maior a perda.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Voltar ao valor original</h2>
+<p>Uma pergunta clássica: depois de um aumento de <span class="m">25%</span>, que desconto devolve o preço ao valor de antes?</p>
+
+<div class="box warn">
+  <span class="tag">Não é o mesmo percentual</span>
+  <p>Não são 25%. Para desfazer uma multiplicação, <strong>divide-se pelo fator</strong>:</p>
+  <p class="m">1 ÷ 1,25 = 0,80 &nbsp;→&nbsp; desconto de <strong>20%</strong></p>
+</div>
+
+<div class="box def">
+  <span class="tag">A fórmula do retorno</span>
+  <p>Para desfazer um aumento de <span class="m"><span class="v">x</span>%</span>, o desconto necessário é:</p>
+  <p class="m" style="font-size:1.06rem"><span class="v">d</span> = <span class="frac"><i><span class="v">x</span></i><i>100 + <span class="v">x</span></i></span></p>
+  <p>Para <span class="m"><span class="v">x</span> = 25</span>: <span class="m"><span class="frac"><i>25</i><i>125</i></span> = 0,20 = 20%</span> ✓</p>
+</div>
+
+<h3>Descobrir o valor antes do desconto</h3>
+<p>O mesmo raciocínio resolve o formato mais comum em contexto de compras:</p>
+<div class="eq">
+  <p><em>“Um produto custa R$ 150,00 já com 20% de desconto. Qual era o preço original?”</em></p>
+  <p class="m">150 ÷ 0,80 = <strong>R$ 187,50</strong></p>
+  <p>O erro instintivo é somar 20% aos 150, chegando a 180 — mas os 20% foram calculados sobre o preço <em>original</em>, que é maior.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Por cento e ponto percentual</h2>
+<p>Duas formas de descrever a mesma mudança, com significados diferentes. O ENEM cobra a distinção em contextos de economia e política.</p>
+
+<div class="box def">
+  <span class="tag">A diferença</span>
+  <p><strong>Ponto percentual (p.p.)</strong> — a diferença <em>absoluta</em> entre duas taxas.</p>
+  <p><strong>Por cento (%)</strong> — a variação <em>relativa</em> de uma taxa em relação à outra.</p>
+</div>
+
+<div class="eq">
+  <span class="lbl">A taxa de desemprego sobe de 8% para 10%</span>
+  <p class="m">Em pontos percentuais: 10 − 8 = <strong>2 p.p.</strong></p>
+  <p class="m">Em variação relativa: <span class="frac"><i>10 − 8</i><i>8</i></span> = 0,25 = <strong>25%</strong></p>
+  <p>As duas afirmações estão corretas e descrevem a mesma mudança. Dizer que “o desemprego subiu 2%” é que está errado.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O caso que expõe a confusão</span>
+  <p>Uma taxa de juros passa de <span class="m">2%</span> para <span class="m">4%</span>. Ela subiu <strong>2 pontos percentuais</strong> — e, em termos relativos, <strong>dobrou</strong>, ou seja, subiu <span class="m">100%</span>. Chamar isso de “aumento de 2%” esconde que o custo do dinheiro dobrou.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Porcentagem em gráficos</h2>
+<p>Toda leitura de gráfico de setores ou de barras percentuais passa por aqui.</p>
+
+<div class="box def">
+  <span class="tag">Gráfico de setores</span>
+  <p>O círculo inteiro é <span class="m">100%</span> e vale <span class="m">360°</span>. Portanto:</p>
+  <p class="m" style="font-size:1.05rem">1% = 3,6° &nbsp;&nbsp;·&nbsp;&nbsp; ângulo = porcentagem × 3,6</p>
+  <p>Um setor de <span class="m">90°</span> vale <span class="m">25%</span>; um de <span class="m">54°</span> vale <span class="m">15%</span>.</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Porcentagens de bases diferentes não se somam</span>
+  <p>Se 30% dos homens e 30% das mulheres de um grupo praticam esporte, <strong>não</strong> se conclui que 60% do grupo pratica — nem sequer que os dois grupos têm o mesmo número de praticantes.</p>
+  <p>Só se somam porcentagens que se referem ao <strong>mesmo todo</strong>. Essa é uma das leituras equivocadas mais exploradas pela prova.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Converta tudo em fator antes de calcular</span>
+  <p>Ao ler o enunciado, transforme cada variação em fator imediatamente. A questão vira uma multiplicação, e as variações sucessivas deixam de ser um problema.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Use 100 como valor de referência</span>
+  <p>Quando o enunciado não dá o valor inicial e pergunta só a variação percentual, <strong>suponha 100</strong>. O resultado sai direto em porcentagem, sem álgebra.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Confira o sentido antes de marcar</span>
+  <p>Aumento seguido de desconto de mesmo percentual sempre termina <em>abaixo</em> do original. Desconto sobre desconto sempre dá menos que a soma dos dois. Se o resultado contrariar isso, houve troca de operação.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Somar as porcentagens em variações sucessivas</span> &nbsp;→&nbsp; <span class="c">multiplique os fatores</span></span><small>+10% e +20% dão +32%, não +30%. A segunda variação incide sobre valor já alterado.</small></li>
+  <li><span><span class="x">+20% e depois −20% volta ao original</span> &nbsp;→&nbsp; <span class="c">termina 4% abaixo</span></span><small>O desconto incide sobre uma base maior que a do aumento.</small></li>
+  <li><span><span class="x">Após aumento de 25%, dar 25% de desconto para voltar</span> &nbsp;→&nbsp; <span class="c">o desconto é de 20%</span></span><small>Para desfazer, divide-se pelo fator: 1 ÷ 1,25 = 0,80.</small></li>
+  <li><span><span class="x">Preço com desconto de 20% é 150; original = 150 + 20%</span> &nbsp;→&nbsp; <span class="c">150 ÷ 0,80 = 187,50</span></span><small>Os 20% incidiram sobre o preço original, que é maior que 150.</small></li>
+  <li><span><span class="x">Descontos de 30% e 10% somam 40%</span> &nbsp;→&nbsp; <span class="c">somam 37%</span></span><small>0,70 · 0,90 = 0,63, ou seja, o cliente paga 63% do preço.</small></li>
+  <li><span><span class="x">Taxa de 8% para 10% é aumento de 2%</span> &nbsp;→&nbsp; <span class="c">2 p.p., ou 25%</span></span><small>Ponto percentual é diferença absoluta; por cento é variação relativa.</small></li>
+  <li><span><span class="x">Aumentar 200% é dobrar</span> &nbsp;→&nbsp; <span class="c">é triplicar</span></span><small>O fator é 1 + 2 = 3. O 1 representa o valor que já existia.</small></li>
+  <li><span><span class="x">Usar o valor final como denominador da variação</span> &nbsp;→&nbsp; <span class="c">use o inicial</span></span><small>De 40 para 50 é +25%; de 50 para 40 é −20%. As bases são diferentes.</small></li>
+  <li><span><span class="x">Somar porcentagens de grupos diferentes</span> &nbsp;→&nbsp; <span class="c">só se somam do mesmo todo</span></span><small>30% dos homens e 30% das mulheres não fazem 60% do grupo.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em todas, escreva o fator antes de fazer qualquer conta.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Achar o total</span>
+    <p class="enun">Uma loja vendeu 45 unidades de um produto em um dia, o que corresponde a 15% de todo o estoque disponível. O estoque inicial dessa loja era de</p>
+    <ol class="alt"><li>60 unidades</li><li>150 unidades</li><li>270 unidades</li><li>300 unidades</li><li>675 unidades</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A pergunta é do terceiro tipo: conhece-se a parte e a porcentagem, e busca-se o total. <strong>Divide-se</strong> pela forma decimal:</p>
+      <p class="m">45 ÷ 0,15 = 300 unidades</p>
+      <p><strong>Conferência:</strong> 15% de 300 = 0,15 · 300 = 45 ✓</p>
+      <p>A alternativa E é de quem multiplicou por 15 em vez de dividir por 0,15.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Fator de aumento</span>
+    <p class="enun">Um produto que custava R$ 80,00 sofreu reajuste de 25%. O novo preço do produto é</p>
+    <ol class="alt"><li>R$ 85,00</li><li>R$ 96,00</li><li>R$ 100,00</li><li>R$ 105,00</li><li>R$ 120,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Aumento de 25% corresponde ao fator <span class="m">1,25</span>:</p>
+      <p class="m">80 · 1,25 = R$ 100,00</p>
+      <p><strong>Pelo caminho longo, para comparar:</strong> 25% de 80 é 20, e 80 + 20 = 100. Mesmo resultado, mas com duas operações em vez de uma — e o fator é o que permitirá encadear variações nas questões seguintes.</p>
+      <p>Como 25% é <span class="m"><span class="frac"><i>1</i><i>4</i></span></span>, também dá para pensar: um quarto de 80 é 20.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Variações sucessivas</span>
+    <p class="enun">O salário de um funcionário recebeu um reajuste de 10% em janeiro e outro de 20% em julho, ambos aplicados sobre o valor vigente na data. O aumento acumulado no ano foi de</p>
+    <ol class="alt"><li>15%</li><li>30%</li><li>32%</li><li>33%</li><li>200%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Variações sucessivas se resolvem <strong>multiplicando os fatores</strong>:</p>
+      <p class="m">1,10 · 1,20 = 1,32 &nbsp;→&nbsp; aumento de 32%</p>
+      <p><strong>Conferindo com um valor concreto:</strong> partindo de R$ 1.000,00, em janeiro vai a R$ 1.100,00; em julho, 20% de 1.100 é 220, chegando a R$ 1.320,00 — 32% acima do início ✓</p>
+      <p>A alternativa B é a soma ingênua das taxas. O segundo reajuste incidiu sobre R$ 1.100,00, não sobre R$ 1.000,00, e por isso valeu R$ 220,00 em vez de R$ 200,00.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Aumento seguido de desconto igual</span>
+    <p class="enun">O preço de uma mercadoria sofreu um aumento de 20% e, algumas semanas depois, um desconto de 20% sobre o preço já reajustado. Em relação ao preço inicial, o preço final ficou</p>
+    <ol class="alt"><li>4% menor</li><li>4% maior</li><li>igual</li><li>20% menor</li><li>40% maior</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">1,20 · 0,80 = 0,96 &nbsp;→&nbsp; o preço final é 96% do inicial, ou seja, <strong>4% menor</strong>.</p>
+      <p><strong>Por que não volta ao original:</strong> partindo de 100, o aumento de 20% leva a 120. O desconto de 20% incide sobre 120, valendo 24 — e não 20. Retira-se mais do que se acrescentou.</p>
+      <p><strong>Vale como regra:</strong> aumento e desconto de mesmo percentual sempre terminam <em>abaixo</em> do valor original, qualquer que seja a ordem.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Voltar ao valor original</span>
+    <p class="enun">Após um reajuste de 25%, uma loja decidiu promover um desconto sobre o novo preço, de modo que o produto voltasse a custar exatamente o valor anterior ao reajuste. O desconto concedido foi de</p>
+    <ol class="alt"><li>15%</li><li>20%</li><li>22,5%</li><li>25%</li><li>30%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Para desfazer uma multiplicação, <strong>divide-se pelo fator</strong>:</p>
+      <p class="m">1 ÷ 1,25 = 0,80 &nbsp;→&nbsp; fator de desconto 0,80 &nbsp;→&nbsp; desconto de 20%</p>
+      <p><strong>Conferindo com números:</strong> 100 → com +25% vira 125 → com −20% de 125 (que é 25) volta a 100 ✓</p>
+      <p>A alternativa D é a resposta instintiva. Ela falha porque os 25% de aumento foram calculados sobre 100, enquanto o desconto incidiria sobre 125 — uma base maior.</p>
+      <p><strong>Pela fórmula:</strong> <span class="m"><span class="v">d</span> = <span class="frac"><i>25</i><i>125</i></span> = 20%</span></p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Descontos cumulativos</span>
+    <p class="enun">Uma loja anuncia 30% de desconto em toda a coleção e oferece ainda 10% adicionais de abatimento no caixa, aplicados sobre o valor já reduzido. O desconto total obtido pelo cliente é de</p>
+    <ol class="alt"><li>33%</li><li>37%</li><li>40%</li><li>43%</li><li>63%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplique os fatores de desconto:</p>
+      <p class="m">0,70 · 0,90 = 0,63</p>
+      <p>O cliente <strong>paga</strong> 63% do preço, portanto o desconto foi de:</p>
+      <p class="m">100% − 63% = 37%</p>
+      <p>A alternativa C é a soma das taxas, que superestima o benefício. A alternativa E confunde o que se paga com o que se desconta — leia sempre se a pergunta é sobre o desconto ou sobre o valor pago.</p>
+      <p><strong>Regra prática:</strong> descontos cumulativos sempre resultam em menos que a soma dos percentuais.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Pontos percentuais</span>
+    <p class="enun">Um levantamento apontou que a taxa de desemprego de uma região passou de 8% para 10% em um ano. Sobre essa mudança, é correto afirmar que a taxa</p>
+    <ol class="alt">
+      <li>aumentou 2%</li>
+      <li>aumentou 2 pontos percentuais, o que corresponde a um aumento relativo de 25%</li>
+      <li>aumentou 20%</li>
+      <li>aumentou 10 pontos percentuais</li>
+      <li>dobrou</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Há duas leituras corretas da mesma mudança, e a alternativa B traz as duas.</p>
+      <p><strong>Diferença absoluta:</strong></p>
+      <p class="m">10 − 8 = 2 pontos percentuais</p>
+      <p><strong>Variação relativa:</strong></p>
+      <p class="m"><span class="frac"><i>10 − 8</i><i>8</i></span> = 0,25 = 25%</p>
+      <p>A alternativa A é o erro de linguagem mais comum na imprensa: “aumentou 2%” sugeriria que a taxa foi de 8% para 8,16%. A alternativa C usa o valor final como base, em vez do inicial.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Gráfico de setores</span>
+    <p class="enun">Em um gráfico de setores que representa a distribuição de gastos de uma família, o setor correspondente aos gastos com transporte tem ângulo central de 54°. Esse setor representa, do total de gastos,</p>
+    <ol class="alt"><li>5,4%</li><li>10%</li><li>15%</li><li>18%</li><li>54%</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O círculo inteiro corresponde a 100% e a 360°. A porcentagem é a fração do ângulo:</p>
+      <p class="m"><span class="frac"><i>54</i><i>360</i></span> = 0,15 = 15%</p>
+      <p><strong>Pelo caminho do 3,6:</strong> como 1% vale 3,6°, basta dividir: <span class="m">54 ÷ 3,6 = 15</span>.</p>
+      <p>Vale ter as referências na cabeça: 90° é 25%, 180° é 50%, 36° é 10%.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Variação total encadeada</span>
+    <p class="enun">O preço de um insumo agrícola subiu 20% em um semestre e caiu 25% no semestre seguinte, sempre em relação ao preço vigente. Ao final do ano, em relação ao preço do início do período, o insumo ficou</p>
+    <ol class="alt"><li>5% mais barato</li><li>5% mais caro</li><li>10% mais barato</li><li>10% mais caro</li><li>45% mais barato</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplique os fatores:</p>
+      <p class="m">1,20 · 0,75 = 0,90</p>
+      <p>O preço final é 90% do inicial, portanto <strong>10% mais barato</strong>.</p>
+      <p><strong>Conferindo com R$ 100,00:</strong> sobe 20% e vai a R$ 120,00; cai 25% de 120, que é 30, e vai a R$ 90,00 ✓</p>
+      <p>A alternativa A é a subtração ingênua das taxas (25 − 20 = 5). Repare que a queda de 25% incidiu sobre 120, valendo R$ 30,00 — mais do que os R$ 20,00 que haviam sido acrescentados.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo os três cálculos básicos: achar a parte, a porcentagem e o total</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que o denominador da variação é sempre o valor <strong>inicial</strong></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo 10%, 1%, 5% e 15% de cabeça</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo o fator de qualquer aumento ou desconto sem hesitar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio o fator ao contrário: 1,5 é +50%; 0,65 é −35%</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que aumentar 200% é triplicar, não dobrar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo variações sucessivas multiplicando os fatores</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei explicar por que aumento e desconto iguais não se anulam</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Volto ao valor original dividindo pelo fator</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Acho o preço antes do desconto dividindo, e não somando a porcentagem</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Distingo ponto percentual de variação relativa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto porcentagem em ângulo de setor e vice-versa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que porcentagens de bases diferentes não se somam</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Este é um dos assuntos de maior incidência da prova — resolva <strong>40 questões</strong>, não 30, e acerte pelo menos 28. Concentre-se nas de <strong>variações sucessivas</strong> e de <strong>retorno ao valor original</strong>, onde o caminho instintivo erra. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>45 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-09-porcentagem.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-09";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

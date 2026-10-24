@@ -1,0 +1,69 @@
+No ENEM, a matriz quase nunca vem com esse nome. Ela vem como tabela de jogos, de distâncias, de compras ou como foto digital. Hoje você treina a reconhecer o disfarce. São nove frases de verdadeiro ou falso e cinco questões novas.
+
+E o que a prova pede? Ler o endereço: o que significa cada casa, a soma de uma linha e a de uma coluna. Multiplicar com sentido: quantidade vezes preço. Decidir se a conta existe. E imagens e códigos: a foto de pixels e a mensagem secreta.
+
+E o que mais rende? Saber o que cada elemento do produto representa. Se a linha i é o que a filial i compra, e a coluna j são os preços do fornecedor j, então o elemento c i j é quanto a filial i gasta no fornecedor j.
+
+Antes de cobrar, tente lembrar: em a dois três, qual número é a linha? Um: o assento do cinema. Primeiro a fileira, depois a poltrona: o dois é a linha. A tabela de mão dupla é um espelho, e no campeonato a linha é o que o time fez; a coluna, o que sofreu. Dois: as folhas transparentes. Na soma, cada casa conversa com a de baixo. E número vezes matriz é um aumento geral: atinge todo mundo.
+
+Três: o caixa do supermercado. Linha vezes coluna: cada quantidade encontra o seu preço, e o caixa soma tudo. E a regra do dominó: os números de dentro precisam encaixar. Quatro: meia e sapato, a ordem importa. A identidade é o número um das matrizes, e a inversa é a chave do cadeado.
+
+E nas outras áreas? Na tecnologia, cada pixel de uma foto é um elemento. Na economia, quantidade vezes preço é produto de matrizes. Na nutrição, porções vezes nutrientes dão o total de cada nutriente em cada refeição.
+
+Na Geografia, as tabelas de distância entre cidades e as redes de transporte. E os sistemas lineares, na forma A vezes X igual a B: esse é o assunto da próxima série.
+
+E na hora da prova? Quatro hábitos. Um: antes de calcular, rotule. Escreva ao lado o que é linha e o que é coluna. Boa parte dos erros é de leitura, não de conta. Dois: confira as ordens antes de multiplicar. Escreva dois por três, vezes três por dois, e veja se os números de dentro batem.
+
+Três: calcule só o elemento pedido. Se a pergunta é uma casa, não monte a matriz inteira. Quatro: confira a inversa multiplicando. O produto com a original tem de dar a identidade.
+
+Agora, verdadeiro ou falso? Nove frases, dos erros que mais custam pontos. Em cada uma, pause e responda antes de mim.
+
+Um: o elemento a dois três fica na linha três, coluna dois. Pause. Falso! Engana porque os dois números estão ali, e a ordem parece detalhe. Mas, como no cinema, primeiro a fileira: linha dois, coluna três.
+
+Dois: para multiplicar um, zero; dois, um por três, um; um, dois, basta multiplicar casa com casa. Pause. Falso! Engana porque a soma é mesmo casa a casa. Mas o produto é linha por coluna: o resultado é três, um; sete, quatro.
+
+Três: uma matriz dois por três, vezes outra dois por três, não existe. Pause. Verdadeiro! Parece falso porque as duas são do mesmo tamanho. Mas o dominó não encaixa: as colunas da primeira, três, têm de ser iguais às linhas da segunda, dois.
+
+Quatro: com matrizes, A vezes B é sempre igual a B vezes A. Pause. Falso! Engana porque com números a ordem não importa. Mas é meia e sapato: com um, um; zero, um e um, zero; um, um, uma ordem dá dois, um; um, um, a outra dá um, um; um, dois.
+
+Cinco: se A vezes B dá a matriz nula, então A ou B tem de ser nula. Pause. Falso! Engana porque, com números, um produto zero obriga um fator zero. Mas um, dois; dois, quatro vezes dois, menos dois; menos um, um dá tudo zero, e nenhuma das duas é nula.
+
+Seis: a inversa de quatro, um; três, um é um, menos um; menos três, quatro. Pause. Verdadeiro! Parece falso porque não é só trocar a diagonal. E não é mesmo: troca a diagonal, muda o sinal da outra e divide por a d menos b c, que aqui dá um. Multiplicando, sai a identidade.
+
+Sete: a transposta de uma matriz dois por três também é dois por três. Pause. Falso! Engana porque os números são os mesmos. Mas as linhas viram colunas: a transposta é três por dois.
+
+Oito: numa tabela de jogos em que a i j são os gols do time i contra o time j, a coluna conta os gols sofridos. Pause. Verdadeiro! Parece falso porque dá vontade de somar a coluna como gols marcados. Mas a linha é o que o time fez; a coluna, o que fizeram contra ele. Sempre releia a definição.
+
+E nove: três vezes a matriz um, dois; zero, quatro dá três, seis; zero, quatro. Pause. Falso! Engana porque o três parece ficar só na primeira linha. Mas é um aumento geral: atinge todas as casas. Três, seis; zero, doze.
+
+Quantas você acertou? Seis falsas e três verdadeiras. Agora, cinco questões inéditas. Em todas: rotule linha e coluna, escreva as ordens e confira no fim.
+
+Questão um. A matriz V mostra as vendas de três vendedores em três meses: o elemento v i j é o número de unidades vendidas pelo vendedor i no mês j. Qual foi o total vendido no mês dois pelos três vendedores? A, catorze. B, trinta. C, trinta e três. D, trinta e cinco. E, noventa e seis. Pause e tente.
+
+Rotule primeiro: linha é o vendedor, coluna é o mês. O mês dois é a coluna dois: oito, mais catorze, mais onze, trinta e três. Letra C! A A pegou só a casa dois dois. A B somou a linha dois, a D somou a linha um, e a E somou a tabela inteira.
+
+Questão dois. Considere a equação dois X mais A igual a B, com A igual a um, quatro; dois, zero e B igual a cinco, seis; quatro, oito. A soma dos elementos de X é: A, quatro vírgula cinco. B, oito. C, nove. D, quinze. E, dezesseis. Pause e tente.
+
+Isole o X como se fosse um número: X é B menos A, dividido por dois. B menos A, casa a casa: quatro, dois; dois, oito. Dividindo por dois: dois, um; um, quatro. Somando, oito. Letra B! A E esqueceu de dividir por dois. A D fez B mais A. A C fez B menos duas vezes A, e a A dividiu só o B.
+
+Questão três. A matriz Q dá as porções de arroz e de feijão nas refeições um e dois. A matriz N dá, por porção, os gramas de proteína e de carboidrato de cada alimento. Quantos gramas de proteína tem a refeição dois? A, dez. B, treze. C, dezesseis. D, vinte e quatro. E, setenta e três. Pause e tente.
+
+É o caixa do supermercado. Calcule só a casa pedida: a linha dois de Q, vezes a coluna um de N. Uma porção de arroz vezes três, mais três porções de feijão vezes sete: vinte e quatro gramas. Letra D! A A somou as proteínas sem as porções. A B calculou a refeição um. A C trocou as porções entre os alimentos, e a E usou a coluna dos carboidratos.
+
+Questão quatro. A é uma matriz três por dois, B é dois por quatro e C é três por quatro. Qual é a única operação possível? A, B vezes A. B, A mais B. C, A vezes B, mais C. D, C vezes A. E, A vezes C. Pause e tente.
+
+Escreva as ordens e confira o dominó. A vezes B: três por dois, vezes dois por quatro. Os de dentro encaixam, e o resultado é três por quatro, o mesmo tamanho de C. Então dá para somar. Letra C! Na A, quatro não encaixa com três. Na B, as ordens são diferentes. Na D, quatro e três de novo, e na E, dois e três.
+
+E a questão cinco. Uma mensagem foi trancada com a chave A igual a dois, um; cinco, três. Chegou a mensagem sete, dezoito. Quais eram os números originais, de cima para baixo? A, um e três. B, três e um. C, menos três e menos um. D, trinta e nove e setenta e um. E, trinta e dois e oitenta e nove. Pause e tente.
+
+A chave do cadeado: a inversa. a d menos b c, seis menos cinco, um. Troca a diagonal, muda o sinal da outra: três, menos um; menos cinco, dois. Vezes sete, dezoito: vinte e um menos dezoito, três; menos trinta e cinco mais trinta e seis, um. Conferindo: dois vezes três mais um, sete. Letra B! A A inverteu a ordem. A C mudou os sinais da diagonal errada. A D só trocou a diagonal, e a E trancou de novo com A.
+
+O checklist. Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada. O endereço, os tipos de matriz e as tabelas de jogos e distâncias: episódio um. Soma, número vezes matriz e igualdade: episódio dois.
+
+O produto linha por coluna e as rotas com A ao quadrado: episódio três. As propriedades e a inversa: episódio quatro. O que você não marcou, reveja o episódio correspondente.
+
+E a meta. Resolva vinte e cinco questões e acerte pelo menos dezoito. Com pelo menos oito de leitura de tabela e cinco de produto em contexto.
+
+O próximo assunto é Determinantes e sistemas lineares: o número a d menos b c da inversa ganha nome e passa a decidir se um sistema tem uma solução, nenhuma ou infinitas.
+
+Se essa série te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual pegadinha te pegou? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. A série de matrizes está completa. Bons estudos, e até a próxima aula aqui no Estudativo.

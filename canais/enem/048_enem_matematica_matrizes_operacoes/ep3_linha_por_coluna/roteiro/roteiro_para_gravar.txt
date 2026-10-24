@@ -1,0 +1,63 @@
+Dez vezes cinco, mais cinco vezes nove, mais quatro vezes oito: cento e vinte e sete. É o gasto de uma filial de restaurante num fornecedor. Essa conta de cupom de supermercado é, sozinha, toda a multiplicação de matrizes.
+
+Ao final desta aula, você vai saber se um produto de matrizes existe, qual o tamanho dele e o que cada número do resultado significa no problema.
+
+Antes, um lembrete do episódio um. O endereço a, i, j é o assento do cinema: primeiro a fileira, a linha; depois a poltrona, a coluna. E numa tabela, a linha diz quem; a coluna diz o quê.
+
+Pense no caixa do supermercado. Dez quilos de arroz, cinco de feijão, quatro litros de óleo. Preços: cinco, nove e oito reais. Cada quantidade encontra o seu preço: dez vezes cinco, cinco vezes nove, quatro vezes oito. E o caixa soma tudo num número só: cento e vinte e sete reais.
+
+E onde estão as matrizes nisso? A compra, deitada: uma linha. Os preços, em pé: uma coluna. O cupom é linha vezes coluna: primeiro com primeiro, segundo com segundo, e soma. Não é casa com casa, como as folhas transparentes da soma. É o caixa do supermercado.
+
+Então, qual é a regra? O produto de matrizes é a multiplicação de uma matriz por outra: A vezes B. Cada casa do resultado, a c, i, j, é a linha i de A vezes a coluna j de B, termo a termo, e soma. O caixa, feito para cada casa.
+
+Vamos ver funcionando, com as duas matrizes da tela. A primeira é dois por três; a segunda, três por dois. Casa c um um: linha um com coluna um. Um vezes dois, mais dois vezes um, mais três vezes zero: quatro. Casa c um dois: a mesma linha, com a coluna dois. Um vezes quatro, mais dois vezes zero, mais três vezes cinco: dezenove.
+
+Agora a segunda linha. Casa c dois um: zero vezes dois, mais um vezes um, mais quatro vezes zero: um. Casa c dois dois: zero vezes quatro, mais um vezes zero, mais quatro vezes cinco: vinte. Resultado: quatro, dezenove; um, vinte. Repare: o endereço diz quem multiplica quem. C dois um é a linha dois da primeira com a coluna um da segunda.
+
+Dá para multiplicar qualquer matriz por qualquer outra? Não. Olhe as ordens: dois por três e três por dois. Ponha lado a lado, como peças de dominó. Os números de dentro precisam ser iguais para encaixar. E os de fora dão o tamanho do resultado: dois por dois. Exatamente o que deu.
+
+Por que os de dentro têm que ser iguais? Porque cada quantidade da linha precisa do seu preço na coluna. Tente três por dois vezes três por dois. Dentro: dois e três. Sobra um preço sem quantidade: esse produto não existe.
+
+Atalho. Antes de qualquer conta, escreva as duas ordens lado a lado. Os de dentro são diferentes? Pare: não existe. São iguais? Risque os de dentro: os de fora são o tamanho do resultado. Dez segundos.
+
+E se a questão pedir um número só? Compras de duas filiais vezes preços de dois fornecedores. Quanto a filial dois gasta no fornecedor um? É a casa c dois um: linha dois com coluna um. Atalho: leia o endereço e calcule só a casa pedida. Uma conta, não quatro.
+
+Agora, uma matriz que conta caminhos. Quatro cidades e alguns voos diretos. Na matriz de ligações, a casa a, i, j vale um se tem voo direto de i para j, e zero se não tem. Aqui, a um voa para a dois e para a quatro; a dois, para a três; a três, para a um; a quatro, para a dois.
+
+Quantas rotas vão da um à três com uma escala, uma parada no meio do caminho? Quem conta é A ao quadrado, a matriz vezes ela mesma. Casa um três: linha um com coluna três. Zero vezes zero, mais um vezes um, mais zero vezes zero, mais um vezes zero. O um vezes um é a rota um, dois, três. A quatro recebe voo da um, mas não voa para a três: zero. Uma rota.
+
+Atalho para as rotas. Deite a linha da partida em cima da coluna da chegada e conte os encontros de um com um. Cada encontro é uma escala. A casa de A é o voo direto; a de A ao quadrado conta as rotas com uma escala.
+
+Sua vez. Quanto é a matriz dois, um; zero, três vezes a coluna um, quatro? E qual é a ordem do resultado? Pause e tente.
+
+Vamos juntos. O dominó: dois por dois vezes dois por um. Encaixa, e o resultado é dois por um, uma coluna. Linha um: dois vezes um, mais um vezes quatro: seis. Linha dois: zero vezes um, mais três vezes quatro: doze. A coluna seis, doze.
+
+Vamos guardar em três frases. Um: linha da primeira vezes coluna da segunda, e soma. Dois: os números de dentro encaixam; os de fora dão o tamanho. Três: c i j é a linha i com a coluna j.
+
+Agora, os dois erros clássicos. Primeiro: multiplicar posição com posição. Um, dois; três, quatro vezes cinco, seis; sete, oito daria cinco, doze; vinte e um, trinta e dois. Parece certo, porque na soma é casa com casa. Mas o produto é linha vezes coluna: o certo está na tela.
+
+Segundo: achar que dois por três vezes dois por três existe. Parece certo, porque as duas têm o mesmo tamanho, como a soma exige. Mas olhe o dominó: dentro, três e dois. Não encaixa.
+
+Agora, questões do nosso material, no estilo do ENEM. Esta, eu resolvo com você. Um programa de planilhas guarda três tabelas como matrizes: A, com duas linhas e três colunas; B, com três linhas e quatro colunas; e C, com quatro linhas e duas colunas. Um usuário pede o produto A vezes B vezes C, nessa ordem. O resultado será: A: uma matriz dois por quatro. B: três por três. C: quatro por quatro. D: inexistente, pois as ordens não são compatíveis. E: uma matriz dois por dois.
+
+Uma peça de cada vez. A vezes B: dois por três com três por quatro. Encaixa, e dá dois por quatro. Isso vezes C: dois por quatro com quatro por dois. Encaixa de novo: dois por dois. Letra E!
+
+E as outras? A A, dois por quatro, parou no primeiro produto. A B usou os de dentro do primeiro produto; a C, os de dentro do segundo. O tamanho vem dos de fora. E a D exige a mesma ordem para as três. Basta os vizinhos encaixarem.
+
+A próxima, a gente faz junto. Duas filiais de um restaurante compram arroz, feijão e óleo. As quantidades estão na matriz Q: filial um, dez, cinco, quatro; filial dois, oito, seis, dois. Os preços de dois fornecedores, X e Y, estão nas colunas da matriz P: X, cinco, nove, oito; Y, seis, sete, nove. Cada filial compra tudo em um único fornecedor, o que lhe sai mais barato. O gasto total das duas filiais é: A: duzentos e quinze reais. B: duzentos e trinta e cinco. C: duzentos e trinta e sete. D: duzentos e trinta e nove. E: duzentos e quarenta e um. Pause e tente.
+
+O dominó: dois por três vezes três por dois dá dois por dois. Linha da filial, coluna do fornecedor: c i j é o gasto da filial i no fornecedor j. Filial um no X: cento e vinte e sete, a conta do gancho. No Y: cento e trinta e um. Filial dois no X: cento e dez. No Y: quarenta e oito, mais quarenta e dois, mais dezoito: cento e oito.
+
+Cada filial escolhe o seu mais barato: a um no X, cento e vinte e sete; a dois no Y, cento e oito. Total: duzentos e trinta e cinco. Letra B! A armadilha é a A, duzentos e quinze: mistura os fornecedores, pegando o item mais barato de cada um, e o enunciado proíbe. A C manda as duas para o X; a D, para o Y; a E soma as piores opções.
+
+E esta é sua. Uma companhia aérea atende quatro cidades. Na matriz A, a casa a i j vale um se há voo direto da cidade i para a cidade j, e zero caso contrário. O elemento da linha um e coluna quatro de A ao quadrado indica o número de maneiras de ir da cidade um à quatro com exatamente uma escala. Esse número é: A: zero. B: um. C: dois. D: três. E: quatro. Pause o vídeo e resolva.
+
+Conferindo: linha um de A com a coluna quatro de A. Zero vezes zero, mais um vezes um, mais um vezes um, mais zero vezes zero: dois. No mapa: um, dois, quatro e um, três, quatro. Letra C!
+
+E as erradas? A A, zero, leu o voo direto, a casa de A. A B, um, conta as rotas com duas escalas: um, dois, três, quatro. A D soma as duas contagens. E a E, quatro, somou a linha um inteira de A ao quadrado: rotas para qualquer destino.
+
+Para fechar, as mesmas três frases. Um: linha da primeira vezes coluna da segunda, e soma. Dois: os números de dentro encaixam; os de fora dão o tamanho. Três: c i j é a linha i com a coluna j.
+
+Com números, dois vezes três é igual a três vezes dois. Com matrizes, A B é igual a B A? E dá para desfazer uma multiplicação, como a divisão desfaz a multiplicação? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já sabia que o cupom do mercado é uma multiplicação de matrizes? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

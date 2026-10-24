@@ -1,0 +1,71 @@
+Um capital a cinco por cento ao ano demora quanto para dobrar? Em juros simples, vinte anos. Em juros compostos, cerca de catorze vírgula dois. Para achar esse catorze vírgula dois você precisa derrubar um t do expoente. Hoje você aprende a derrubar.
+
+Este é o terceiro episódio da série de Logaritmos. Ao final, você vai resolver qualquer equação exponencial que não fecha na mesma base, com os logs que o enunciado der.
+
+Lembretes rápidos. Do episódio dois: log de M elevado a k é k vezes log de M. O kit: log de dois, zero vírgula trezentos e um; log de três, zero vírgula quatrocentos e setenta e sete. Ganhar oito por cento é multiplicar por um vírgula zero oito; perder dez, por zero vírgula nove. E de Juros compostos, a regra do setenta e dois.
+
+Perguntas de tempo. Em quantos anos o meu dinheiro dobra? Em quantas horas a cultura chega a cinquenta mil? Quando o equipamento vale a metade? Nas três, a resposta está no expoente, e a base não fecha.
+
+Dois elevado a x igual a dez. Dez não é potência de dois: a mesma base não fecha. Então a gente aplica log dos dois lados: escreve log na frente de cada lado, como o mesmo peso nos dois pratos da balança. O log é um elevador que traz o expoente para o térreo: x vezes log de dois igual a log de dez.
+
+Agora, dividir. Um sobre zero vírgula trezentos e um: x é cerca de três vírgula trinta e dois. Faz sentido? Estimar é chutar com critério, antes da conta. Dois ao cubo é oito; dois elevado a quatro, dezesseis. O dez mora entre os dois. No gráfico, a reta do dez cruza a curva entre três e quatro.
+
+Atalho: estime primeiro. Ache as duas potências inteiras que cercam o número. A resposta tem de cair entre elas. Saiu fora? Errou um passo.
+
+E se o enunciado só der logs na base dez? Mudança de base é reescrever um log de outra base como divisão de logs decimais. Log de a na base b é log de a dividido por log de b. A base vai para o porão. Log de dez na base dois: um sobre zero vírgula trezentos e um, três vírgula trinta e dois, a mesma conta de antes.
+
+E o porão aceita qualquer base. Log de trinta e dois na base quatro. Na base dois: trinta e dois dá cinco; quatro dá dois. Cinco sobre dois: dois vírgula cinco.
+
+Mas quem fica em cima? O numerador é o número de cima da fração; o denominador, o de baixo. Em cima, o logaritmando; embaixo, a base. Confira: log de oito na base dois tem de dar três. Zero vírgula novecentos e três sobre zero vírgula trezentos e um: três. Invertida, daria um terço. Esse é o atalho: na dúvida, monte a fração com um caso que você sabe de cabeça.
+
+Agora, o gancho. Cinco por cento ao ano: um vírgula zero cinco elevado a t igual a dois. Log dos dois lados, e o elevador desce o t: t vezes log de um vírgula zero cinco igual a log de dois. Em cima, o log de dois, o resultado. Zero vírgula trezentos e um sobre zero vírgula zero duzentos e doze: cerca de catorze vírgula dois anos.
+
+Confere? Em juros simples, cem dividido por cinco, vinte anos; os compostos dobram antes. A regra do setenta e dois: setenta e dois sobre cinco, catorze vírgula quatro. Bem perto. E é daqui que vem a fórmula do tempo da série de Juros compostos.
+
+E com um número na frente da potência? Mil vezes três elevado a t igual a cinquenta mil. Isolar a potência é deixá-la sozinha de um lado. Divida por mil: três elevado a t igual a cinquenta. Log direto também dá, mas o log de um produto vira soma: três mais t vezes log de três.
+
+E quando o valor cai? Um celular perde vinte e cinco por cento ao ano. Quando vale a metade? O fator é menor que um: zero vírgula setenta e cinco elevado a t igual a zero vírgula cinco. Número entre zero e um tem log negativo: log de zero vírgula setenta e cinco é menos zero vírgula cento e vinte e cinco. Menos dividido por menos: cerca de dois vírgula quatro anos. Positivo.
+
+Atalho para o sinal. No decaimento, os dois logs são negativos, e menos com menos dá mais. Tempo negativo? Um sinal se perdeu.
+
+Sua vez. Resolva: dois elevado a x igual a cinco, com log de dois igual a zero vírgula trinta. Dica: cinco é dez dividido por dois. Pause e tente.
+
+Vamos juntos. Log de cinco é log de dez menos log de dois: zero vírgula setenta. Em cima o cinco, embaixo a base: zero vírgula setenta sobre zero vírgula trinta, cerca de dois vírgula trinta e três. Confere: o cinco mora entre o quatro e o oito.
+
+Vamos guardar em três frases. Um: aplique log dos dois lados e o expoente desce. Dois: isole a potência antes de aplicar o log. Três: na mudança de base, a base vai para baixo.
+
+Os três erros clássicos. Primeiro: log de dez na base dois virar log de dois sobre log de dez. Parece certo, porque o dois aparece primeiro na leitura. Mas a base vai para o porão: log de dez sobre log de dois.
+
+Segundo: log de mil vezes três elevado a t virar três t vezes log de três. Parece certo, porque o log desce o expoente, e parece descer tudo junto. Mas log de produto é soma: três mais t vezes log de três.
+
+Terceiro: usar como log de zero vírgula seis o zero vírgula setecentos e setenta e oito, que é o log de seis. Parece certo, porque os algarismos são os mesmos. Mas zero vírgula seis é seis sobre dez: tire um. Fica negativo, menos zero vírgula duzentos e vinte e dois.
+
+Agora, uma questão no estilo do ENEM. Esta, eu faço. A área de uma colônia de fungos quadruplica a cada semana: A de t igual a A zero vezes quatro elevado a t. Em quantas semanas a área fica trinta e duas vezes maior? A: zero vírgula quatro. B: dois. C: dois vírgula cinco. D: oito. E: vinte e oito.
+
+Estime: em duas semanas, dezesseis vezes; em três, sessenta e quatro. Fica entre dois e três. Mudança de base: log de trinta e dois sobre log de quatro, cinco sobre dois. Ou mesma base: dois elevado a dois t igual a dois elevado a cinco. Os dois dão dois vírgula cinco. Letra C!
+
+E as armadilhas? A A inverte a fração. A B para na última semana inteira. A D divide trinta e dois por quatro. E a E subtrai.
+
+Esta, nós fazemos juntos. Bactérias: N de t igual a mil vezes três elevado a t, com t em horas. Log de dois, zero vírgula trinta; log de três, zero vírgula quarenta e oito. Em quantas horas a população chega a cinquenta mil? A: zero vírgula vinte e oito. B: um vírgula vinte e dois. C: três vírgula cinquenta e quatro. D: dezesseis vírgula sete. E: cento e quatro. Qual é o primeiro passo?
+
+Isolar a potência: três elevado a t igual a cinquenta. Estime: entre vinte e sete e oitenta e um, t fica entre três e quatro. Cinquenta é cem sobre dois: log de cinquenta é um vírgula setenta. Em cima o cinquenta, embaixo o três: cerca de três vírgula cinquenta e quatro. Letra C!
+
+E as erradas? A A inverte. A B subtrai os logs. A D divide cinquenta por três, como se fosse linear. E a E esquece de tirar o log do cinquenta.
+
+Agora, você faz. Um capital foi aplicado a juros compostos de oito por cento ao ano. Com log de dois igual a zero vírgula trinta e log de um vírgula zero oito igual a zero vírgula zero trinta e três, o tempo para dobrar, em anos, é cerca de: A: zero vírgula onze. B: zero vírgula vinte e sete. C: nove. D: doze vírgula cinco. E: vinte e cinco. Pause o vídeo e tente.
+
+Vamos conferir. Um vírgula zero oito elevado a t igual a dois. Log dos dois lados, e o t desce. Em cima o log de dois, embaixo o do fator: cerca de nove vírgula um. A regra do setenta e dois confirma: setenta e dois sobre oito, nove. Letra C!
+
+E as erradas? A A inverte. A B subtrai os logs. A D é o tempo em juros simples. E a E divide dois pela taxa, sem logaritmo.
+
+E a última, você faz também. Um equipamento perde dez por cento ao ano, sempre sobre o valor do ano anterior. Log de dois, zero vírgula trezentos e um; log de três, zero vírgula quatrocentos e setenta e sete. Ele valerá a metade em cerca de: A: zero vírgula quinze ano. B: zero vírgula trinta e dois ano. C: cinco anos. D: seis vírgula cinco anos. E: dez anos. Pause o vídeo e tente.
+
+Vamos conferir. Zero vírgula nove elevado a t igual a zero vírgula cinco. Log de zero vírgula nove é log de nove menos um: menos zero vírgula zero quarenta e seis. Log de zero vírgula cinco: menos zero vírgula trezentos e um. Dois negativos, tempo positivo: cerca de seis vírgula cinco anos. Letra D!
+
+E as erradas? A A inverte. A B usa log de nove no lugar de log de zero vírgula nove, e larga o sinal. A C supõe perda linear. E a E confunde a metade com perder tudo.
+
+Para fechar, as mesmas três frases. Um: aplique log dos dois lados e o expoente desce. Dois: isole a potência antes de aplicar o log. Três: na mudança de base, a base vai para baixo.
+
+Log na base dois de x, mais log na base dois de x menos dois, igual a três, tem duas raízes no papel, mas só uma vale. Qual, e por quê? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: qual dos três erros clássicos você já cometeu? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

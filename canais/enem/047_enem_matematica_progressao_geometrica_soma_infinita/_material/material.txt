@@ -1,0 +1,241 @@
+Progressão Geométrica
+Matemática › Álgebra e Funções › Assunto 14 de 18
+Progressão geométrica (PG) e soma dos infinitos termos
+Na PG cada termo é o anterior multiplicado pela mesma razão: bactérias que dobram, remédio que cai pela metade, dinheiro que rende juro sobre juro. Este assunto ensina o termo geral, a soma finita e o resultado mais surpreendente do tema: infinitas parcelas que somam um número finito.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Progressão aritmética · Potenciação · Função exponencial
+Destrava
+Juros compostos, meia-vida e decaimento, crescimento populacional, dízimas periódicas
+Neste assunto
+01 O que o ENEM cobra aqui
+A PG é o modelo de tudo que cresce ou diminui em porcentagem fixa ou por um fator fixo. No ENEM ela aparece assim:
+Crescimento por fator: bactérias que dobram a cada intervalo, mensagens repassadas a 3 pessoas, população que cresce 5% ao ano.
+Decaimento: meia-vida de substância radioativa ou de medicamento, depreciação percentual, bola que perde altura a cada quique.
+Soma finita: total de pessoas alcançadas por uma corrente, total de grãos, total depositado com aumentos percentuais.
+Soma infinita: distância total percorrida por uma bola até parar, área de figuras fractais, dízimas periódicas como frações.
+O que rende mais aqui
+Duas habilidades. Primeiro, contar os períodos: “dobra a cada 20 minutos, durante 2 horas” são 6 multiplicações por 2. Segundo, reconhecer a soma infinita: quando a razão está entre −1 e 1, as parcelas encolhem e a soma converge para (a_1/1 − q). Com isso se resolve a maioria das questões do tema.
+02 O que é uma PG
+Definição
+Uma progressão geométrica é uma sequência em que cada termo, a partir do segundo, é o anterior multiplicado por uma constante q, a razão:
+a_n = a_n−1 · q ⇔ q = (a_2/a_1) = (a_3/a_2) = …
+ | Sequência | Razão | Comportamento
+ | (3, 6, 12, 24, …) | q = 2 | crescente
+ | (80, 40, 20, 10, …) | q = (1/2) | decrescente (termos positivos e 0 < q < 1)
+ | (2, −6, 18, −54, …) | q = −3 | alternante: os sinais se revezam
+ | (5, 5, 5, …) | q = 1 | constante
+ | (1 000; 1 050; 1 102,5; …) | q = 1,05 | crescimento de 5% por período
+Razão é quociente, não diferença
+Em (80, 40, 20, …) a razão é (40/80) = 0,5, e não −40. Se as diferenças fossem iguais, seria PA. Na PG, o que se repete é a divisão de um termo pelo anterior.
+Porcentagem vira razão
+Crescer i% por período é multiplicar por q = 1 + i; cair i% é multiplicar por q = 1 − i. Uma população que cresce 5% ao ano forma PG de razão 1,05; um carro que perde 15% do valor ao ano, PG de razão 0,85.
+03 Termo geral
+Do primeiro termo ao de posição n há n − 1 multiplicações por q. Multiplicar n − 1 vezes pelo mesmo número é elevar a n − 1:
+Termo geral da PG
+a_n = a_1 · q^(n − 1)
+A partir de qualquer termo conhecido: a_n = a_k · q^(n − k).
+Exemplo · cultura de bactérias
+Uma cultura com 500 bactérias dobra a cada 20 minutos. Em 2 horas há 120 ÷ 20 = 6 duplicações:
+500 · 2^6 = 500 · 64 = 32 000
+Aqui é mais simples contar a partir do instante zero: depois de t períodos, a quantidade é a_0 · q^t. É a mesma fórmula, com o termo inicial chamado de a_0.
+Descobrir a razão a partir de dois termos
+Se a_2 = 6 e a_5 = 162, entre eles há 3 multiplicações: q³ = (162/6) = 27, q = 3. Na PA a distância entre termos se divide; na PG se tira a raiz.
+04 PG é função exponencial nos naturais
+O termo geral a_n = a_1 · q^(n − 1) é uma função exponencial calculada só em n = 1, 2, 3, …. Por isso uma PG de razão maior que 1, mesmo começando pequena, acaba ultrapassando qualquer PA.
+Somar 6 × multiplicar por 2. A PA (2, 8, 14, …) começa na frente, mas a PG (2, 4, 8, …) a alcança: no 5º termo já vale 32 contra 26, e no 6º, 64 contra 32. Os pontos da PA ficam numa reta; os da PG, numa curva exponencial.
+Teste da tabela
+Divida cada valor pelo anterior. Quociente constante: PG (modelo exponencial). Diferença constante: PA (modelo afim). Na tabela 1 000, 1 200, 1 440, 1 728, os quocientes são todos 1,2: crescimento de 20% por período.
+05 Propriedades que poupam conta
+Termo do meio é a média geométrica dos vizinhos
+(a_n)² = a_n−1 · a_n+1
+Três números a, b, c, nessa ordem, estão em PG se b² = ac. Exemplo: (4, x, 25) com termos positivos dá x² = 100, x = 10.
+Notação simétrica para três termos
+Quando se conhece o produto de três termos em PG, chame-os de (x/q), x e xq. O produto é x³ e a razão some. Produto 216 dá x = 6 na hora; a soma dos três decide a razão.
+Equidistantes têm o mesmo produto
+Numa PG finita, a_1 · a_n = a_2 · a_n−1 = … É a versão multiplicativa da propriedade da PA: lá a soma dos equidistantes se mantém; aqui, o produto.
+06 Soma dos n primeiros termos
+Soma finita da PG, com razão diferente de 1
+S_n = (a_1 · (q^n − 1)/q − 1)
+De onde vem: escreva S = a_1 + a_1q + … + a_1q^(n−1) e multiplique tudo por q. As duas somas têm quase todas as parcelas em comum; subtraindo, sobra qS − S = a_1q^n − a_1. Se q = 1, todos os termos são iguais e S_n = n · a_1.
+Exemplo · corrente de mensagens
+No 1º dia, 3 pessoas recebem uma mensagem; cada pessoa que a recebe a envia, no dia seguinte, a 3 pessoas que ainda não a receberam. Em 6 dias, o total de pessoas que receberam é:
+S_6 = (3 · (3^6 − 1)/3 − 1) = (3 · 728/2) = 1 092
+Só no 6º dia são 3^6 = 729; o total soma os seis dias.
+O tabuleiro de xadrez
+Na lenda, um grão na 1ª casa, 2 na 2ª, 4 na 3ª, e assim por diante até a 64ª casa. O total é S_64 = (2^(64) − 1/2 − 1) = 2^(64) − 1, cerca de 1,8 · 10^(19) grãos: centenas de vezes a produção mundial de trigo de um ano inteiro. É a força de uma PG de razão 2.
+07 Soma dos infinitos termos
+Se |q| < 1, cada termo é menor (em valor absoluto) que o anterior, e q^n fica tão perto de zero quanto se queira quando n cresce. Na fórmula da soma finita, o q^n “desaparece”:
+Soma da PG infinita, com razão entre −1 e 1
+S_∞ = (a_1/1 − q)
+A soma nunca é atingida com um número finito de parcelas, mas as somas parciais se aproximam dela tanto quanto se queira: é o limite da soma.
+Infinitas parcelas, soma 1. Pinte metade de um quadrado de área 1, depois metade do que sobrou, e assim por diante. As peças nunca ultrapassam o quadrado e vão preenchendo-o inteiro: (1/2) + (1/4) + (1/8) + … = (1/2/1 − 1/2) = 1.
+Dízima periódica como PG
+0,272727… = 0,27 + 0,0027 + 0,000027 + … = (0,27/1 − 0,01) = (27/99) = (3/11)
+Primeiro termo 0,27, razão 0,01. É a justificativa da regra prática “período sobre tantos noves quantos forem os algarismos do período”.
+Só vale com razão entre −1 e 1
+Com q = 2, a “fórmula” daria (1/1 − 2) = −1 para 1 + 2 + 4 + …, um absurdo: a soma cresce sem limite. Antes de usar (a_1/1 − q), confira que a razão está entre −1 e 1.
+08 PG em contexto: meia-vida, juros e quiques
+ | Situação | Razão | Fórmula típica
+ | Juros compostos a i por período | 1 + i | M = C(1 + i)^t
+ | Meia-vida | (1/2) por meia-vida | m = m_0 · ((1/2))^k, com k = tempo ÷ meia-vida
+ | Crescimento populacional de i ao ano | 1 + i | P = P_0(1 + i)^t
+ | Depreciação percentual | 1 − i | V = V_0(1 − i)^t
+Exemplo · meia-vida
+Uma amostra de 80 g de um isótopo com meia-vida de 5 anos, depois de 20 anos: são 20 ÷ 5 = 4 meias-vidas, e a massa restante é 80 · ((1/2))^4 = (80/16) = 5 g.
+A bola que quica para sempre percorre uma distância finita. Solta de 8 m, ela sobe a ¾ da altura anterior em cada quique. As descidas somam 8 + 6 + 4,5 + … = (8/1 − 3/4) = 32 m e as subidas, 6 + 4,5 + … = (6/1/4) = 24 m. Total: 56 m.
+Subidas e descidas
+No problema da bola, a primeira queda acontece uma vez só; cada altura seguinte é percorrida duas vezes (sobe e desce). Por isso: total = h + 2 · (qh/1 − q). Esquecer a queda inicial ou contá-la duas vezes são os distratores clássicos.
+09 Estratégia de prova
+1 · Conte os períodos com calma
+Converta tudo para a mesma unidade e divida: “meia-vida de 8 h, em 2 dias” são 48 ÷ 8 = 6 meias-vidas. O expoente é o número de vezes que o fator age, e a pergunta quase sempre pede a quantidade depois do último período.
+2 · Termo, soma finita ou soma infinita?
+“Quantas bactérias no fim” é termo. “Quantas pessoas receberam ao todo” é soma finita. “Até parar”, “indefinidamente”, “se o processo continuar para sempre” é soma infinita.
+3 · Use as potências que o enunciado dá
+O ENEM costuma fornecer 1,05^4 ≈ 1,2155 ou 2^(10) = 1 024. Se ele deu um valor, a resposta usa esse valor: monte a expressão de forma que ele apareça.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Química | radioatividade | a cada meia-vida a massa do isótopo se divide por 2
+ | Biologia | divisão celular, bactérias | por mitose, cada célula origina duas: 2^n células após n ciclos
+ | Biologia | pirâmide de energia | se só cerca de 10% passa a cada nível trófico, a energia disponível forma PG de razão aproximada 0,1
+ | Matemática Financeira | juros compostos | os montantes período a período formam PG de razão 1 + i
+ | Física | som e intensidade | cada +10 dB multiplica a intensidade por 10: níveis em PA, intensidades em PG
+11 Os erros que mais custam pontos
+aₙ = a₁ · qⁿ → a₁ · qⁿ⁻¹Do 1º ao n-ésimo termo há n − 1 multiplicações.
+Razão de (80, 40, 20) = −40 → q = 1/2Na PG a razão é o quociente.
+Dobra 6 vezes: 500 · 2 · 6 → 500 · 2⁶Fator repetido é potência, não produto pelo número de vezes.
+5% ao ano: q = 0,05 → q = 1,05A razão é o fator, 1 + i.
+S∞ = a₁/q → a₁/(1 − q)O denominador é 1 − q.
+Somar a PG infinita com q = 2 → só se |q| < 1Com |q| ≥ 1 a soma não converge.
+Bola: total = 8/(1 − q) → descidas + subidasAs alturas após o 1º quique são percorridas duas vezes.
+Total da corrente = 3⁶ → 3 + 9 + … + 3⁶3⁶ é só o último dia.
+0,2727… = 27/100 → 27/99 = 3/11Dízima é soma infinita, não truncamento.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: qual é o fator, quantas vezes ele age e o enunciado pede termo, soma ou soma infinita?
+Questão 1 · Bactérias que dobram
+Em um laboratório, uma cultura começa com 500 bactérias, e a população dobra a cada 20 minutos, nas condições do experimento. Duas horas após o início, o número de bactérias será
+6 000
+16 000
+18 000
+32 000
+64 000
+Ver resolução
+Em 120 minutos cabem 6 períodos de 20 minutos: 500 · 2^6 = 500 · 64 = 32 000.
+A A multiplica por 2 e por 6, 500 · 2 · 6, como se fosse crescimento linear. A B usa 5 duplicações, 2^5, aplicando o “n − 1” onde ele não cabe: a contagem começa no instante zero. A C eleva o número de períodos ao quadrado, 500 · 6². A E usa 7 duplicações.
+Alternativa D
+Questão 2 · Meia-vida
+Um isótopo radioativo usado em pesquisa tem meia-vida de 5 anos: a cada 5 anos, a massa restante cai pela metade. Uma amostra tem hoje 80 g desse isótopo. Daqui a 20 anos, a massa restante desse isótopo será
+2,5 g
+5 g
+10 g
+16 g
+20 g
+Ver resolução
+São 20 ÷ 5 = 4 meias-vidas: 80 → 40 → 20 → 10 → 5. Ou 80 · ((1/2))^4 = 5 g.
+A A aplica uma meia-vida a mais. A C aplica uma a menos. A D divide 80 por 5, confundindo a duração da meia-vida com o fator. A E divide 80 por 4, o número de meias-vidas, como se a perda fosse linear.
+Alternativa B
+Questão 3 · A bola que quica
+Uma bola é solta de uma altura de 8 m e, a cada vez que toca o chão, sobe verticalmente até ¾ da altura de que caiu. Supondo que esse padrão se mantenha indefinidamente, a distância vertical total percorrida pela bola, em metros, até parar, é
+24
+32
+48
+56
+64
+Ver resolução
+Descidas: 8 + 6 + 4,5 + …, PG de razão ¾: (8/1 − 3/4) = 32. Subidas: 6 + 4,5 + …: (6/1/4) = 24. Total: 32 + 24 = 56 m.
+A A conta só as subidas. A B conta só as descidas. A C dobra as subidas e esquece a queda inicial de 8 m. A E dobra as descidas, contando também a queda inicial duas vezes, como se a bola tivesse subido até 8 m antes de cair.
+Alternativa D
+Questão 4 · Soma finita: corrente de mensagens
+No primeiro dia de uma campanha, 3 pessoas recebem uma mensagem. Cada pessoa que recebe a mensagem a repassa, no dia seguinte, a exatamente 3 pessoas que ainda não a tinham recebido, e o processo continua assim. O total de pessoas que terão recebido a mensagem ao fim do 6º dia é
+18
+729
+1 092
+2 184
+2 187
+Ver resolução
+Recebem por dia: 3, 9, 27, 81, 243, 729, PG de razão 3. A soma é (3 · (3^6 − 1)/3 − 1) = (3 · 728/2) = 1 092.
+A A trata o crescimento como linear: 3 pessoas por dia durante 6 dias. A B conta só quem recebeu no 6º dia. A D esquece de dividir por q − 1 = 2. A E calcula 3^7, o número de pessoas que receberiam no 7º dia.
+Alternativa C
+Questão 5 · Três termos com produto conhecido
+As idades de três irmãos, em anos, são números inteiros que formam uma progressão geométrica crescente. O produto das três idades é 216 e a soma é 19. A idade do irmão mais velho é
+4
+6
+9
+12
+13
+Ver resolução
+Idades (x/q), x, xq: o produto é x³ = 216, então x = 6. Pela soma, (6/q) + 6 + 6q = 19, isto é, 6q² − 13q + 6 = 0, com raízes q = (3/2) e q = (2/3). Como a PG é crescente, q = (3/2): idades 4, 6 e 9.
+A A é o mais novo. A B é o do meio, que sai direto do produto. A D supõe razão 2 sem usar a soma (3, 6, 12 somam 21, não 19). A E subtrai a idade do meio da soma.
+Alternativa C
+Questão 6 · Dízima como soma infinita
+Um programa exibe o número 0,272727…, em que o bloco “27” se repete indefinidamente. Escrevendo esse número como 0,27 + 0,0027 + 0,000027 + … e somando os infinitos termos, obtém-se a fração
+(27/100)
+(3/11)
+(27/90)
+(1/37)
+(2/7)
+Ver resolução
+PG com a_1 = 0,27 e q = 0,01: S = (0,27/0,99) = (27/99) = (3/11). Conferência: 3 ÷ 11 = 0,2727…
+A A fica só com o primeiro termo. A C usa 1 − q = 0,9, como se a razão fosse 0,1. A D é (27/999), que vale 0,027027…: três noves para um período de dois algarismos. A E é uma aproximação (0,2857…) que não é igual ao número.
+Alternativa B
+Questão 7 · Crescimento percentual
+A população de um município é de 40 000 habitantes e, segundo uma projeção, deve crescer 5% ao ano nos próximos anos. Use 1,05^4 ≈ 1,2155. Daqui a 4 anos, a população projetada será de aproximadamente
+8 000 habitantes
+42 000 habitantes
+48 000 habitantes
+48 620 habitantes
+168 000 habitantes
+Ver resolução
+Os valores anuais formam PG de razão 1,05: 40 000 · 1,05^4 ≈ 40 000 · 1,2155 = 48 620.
+A A é só o aumento linear dos 4 anos, 4 · 2 000. A B é a população depois de 1 ano. A C soma 5% do valor inicial a cada ano (crescimento linear), ignorando que o percentual incide sobre a população já aumentada. A E multiplica por 1,05 e por 4, em vez de elevar à 4ª potência.
+Alternativa D
+Questão 8 · Área de um logotipo fractal
+Um designer cria um logotipo em etapas. Na primeira etapa desenha um triângulo de 12 cm² de área. Em cada etapa seguinte, acrescenta pequenos triângulos cuja área total é ¼ da área acrescentada na etapa anterior, sem sobreposição. Se o processo for repetido indefinidamente, a área do logotipo se aproxima de
+12 cm²
+15,75 cm²
+16 cm²
+24 cm²
+48 cm²
+Ver resolução
+As áreas acrescentadas formam a PG 12, 3, 0,75, … de razão ¼: S_∞ = (12/1 − 1/4) = (12/3/4) = 16 cm².
+A A considera só a primeira etapa. A B soma apenas três etapas, 12 + 3 + 0,75: o processo é infinito. A D usa razão ½. A E divide pela razão em vez de por 1 − q: (12/1/4).
+Alternativa C
+Questão 9 · Modelo a partir de uma tabela
+Uma loja virtual registrou o número de clientes cadastrados no início de cada ano, a partir do ano de lançamento (ano 0).
+ | Ano n | 0 | 1 | 2 | 3
+ | Clientes | 1 000 | 1 200 | 1 440 | 1 728
+Mantido o padrão observado, a expressão que fornece o número de clientes P(n) no ano n é
+P(n) = 1 000 + 200 · n
+P(n) = 1 000 · 1,2n
+P(n) = 1 000 · 0,2^n
+P(n) = 1 200^n
+P(n) = 1 000 · 1,2^n
+Ver resolução
+Os quocientes são constantes: (1 200/1 000) = (1 440/1 200) = (1 728/1 440) = 1,2. É uma PG de razão 1,2 começando em 1 000 no ano 0: P(n) = 1 000 · 1,2^n.
+A A é o modelo linear: acerta o ano 1, mas no ano 2 dá 1 400, e não 1 440. A B multiplica 1,2 por n e daria 0 clientes no ano 0. A C usa a taxa (0,2) no lugar do fator (1,2) e faz a quantidade cair. A D esquece o valor inicial.
+Alternativa E
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Reconheço uma PG pelo quociente constante e a diferencio de uma PA
+Transformo crescimento ou queda percentual na razão 1 + i ou 1 − i
+Uso a_n = a_1 · q^(n−1) e a versão a partir do instante zero
+Conto corretamente os períodos em problemas de duplicação e meia-vida
+Acho a razão a partir de dois termos tirando a raiz adequada
+Relaciono a PG com a função exponencial e explico por que ela supera qualquer PA
+Uso b² = ac e a notação x/q, x, xq para três termos
+Aplico a soma finita S_n = a_1(q^n − 1)/(q − 1)
+Distingo termo, soma finita e soma infinita pela leitura do enunciado
+Calculo a soma infinita a_1/(1 − q) e confiro que |q| < 1
+Converto dízimas periódicas em fração como soma de PG
+Resolvo o problema da bola separando a queda inicial das subidas e descidas
+Identifico pela tabela se o modelo é afim (PA) ou exponencial (PG)
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos oito de soma infinita ou de decaimento (meia-vida, quiques). Depois siga para Matrizes e operações, que abre a parte de álgebra linear do bloco.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-32-progressao-geometrica-soma-infinita.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

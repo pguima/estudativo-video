@@ -1,0 +1,1030 @@
+<title>Escalas, Plantas e Mapas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 11 de 12</p>
+        <h1>Escalas, plantas e mapas</h1>
+        <p class="deck">A razão que liga o papel ao mundo. Cai em Matemática e em Geografia, e quase sempre pelo mesmo motivo: a conta da escala é fácil, mas a cadeia de conversão de centímetros até quilômetros derruba quem pula um degrau.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Cadeia de conversão: um centímetro no mapa multiplicado pelo denominador da escala vira duzentos e cinquenta mil centímetros, que divididos por cem dão dois mil e quinhentos metros, e divididos por mil dão dois vírgula cinco quilômetros">
+  <text x="14" y="13" class="svg-ttl" style="fill:var(--ink-2)">escala 1 : 250 000</text>
+  <rect x="14" y="20" width="150" height="32" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="89" y="41" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">1 cm no mapa</text>
+  <path d="M89 54 L89 66" style="stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#es)"/>
+  <text x="174" y="63" class="svg-lbl" style="fill:var(--c5)">× 250 000</text>
+  <rect x="14" y="68" width="150" height="32" rx="8" style="fill:var(--surface);stroke:var(--rule-2);stroke-width:1.4"/>
+  <text x="89" y="89" text-anchor="middle" class="svg-num" style="fill:var(--ink)">250 000 cm</text>
+  <path d="M89 102 L89 114" style="stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#es)"/>
+  <text x="174" y="111" class="svg-lbl" style="fill:var(--c5)">÷ 100</text>
+  <rect x="14" y="116" width="150" height="32" rx="8" style="fill:var(--surface);stroke:var(--rule-2);stroke-width:1.4"/>
+  <text x="89" y="137" text-anchor="middle" class="svg-num" style="fill:var(--ink)">2 500 m</text>
+  <path d="M89 150 L89 162" style="stroke:var(--ink-3);stroke-width:1.6" marker-end="url(#es)"/>
+  <text x="174" y="159" class="svg-lbl" style="fill:var(--c5)">÷ 1 000</text>
+  <rect x="14" y="164" width="150" height="32" rx="8" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.8"/>
+  <text x="89" y="185" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">2,5 km</text>
+  <text x="174" y="182" class="svg-lbl" style="fill:var(--ink-3)">o degrau</text>
+  <text x="174" y="194" class="svg-lbl" style="fill:var(--ink-3)">mais esquecido</text>
+  <defs>
+    <marker id="es" markerWidth="9" markerHeight="9" refX="4.5" refY="8" orient="auto"><polygon points="0,0 9,0 4.5,9" style="fill:var(--ink-3)"/></marker>
+  </defs>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>4 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Razão e proporção · Unidades de medida</dd></div>
+      <div><dt>Destrava</dt><dd>Cartografia, geometria, leitura de plantas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Escala é uma razão simples, e a operação nunca é difícil. O que a prova cobra de fato são <strong>três coisas específicas</strong>, e todas envolvem um passo além da multiplicação:</p>
+<ol>
+  <li><strong>A cadeia de conversão.</strong> O resultado sai em centímetros e precisa chegar a quilômetros. Quem pula um degrau erra por fator 100 ou 1 000.</li>
+  <li><strong>A escala de área.</strong> Se a escala linear é <span class="m">1 : 200</span>, a de área é <span class="m">1 : 40 000</span>. Aplicar o fator linear a uma área é o erro mais caro do assunto.</li>
+  <li><strong>Escala grande e escala pequena.</strong> Denominador menor significa escala <em>maior</em> — um ponto contraintuitivo, muito cobrado em Geografia.</li>
+</ol>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Guardar dois atalhos resolve quase tudo. Primeiro: numa escala <span class="m">1 : <span class="v">n</span></span>, <strong>1 cm do mapa vale <span class="m"><span class="v">n</span> ÷ 100 000</span> quilômetros</strong>. Segundo: <strong>área usa <span class="m"><span class="v">n</span><sup>2</sup></span> e volume usa <span class="m"><span class="v">n</span><sup>3</sup></span></strong>.</p>
+</div>
+</section>
+<section id="s2">
+<h2><i>02</i> O que é escala</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p class="m" style="font-size:1.08rem">E = <span class="frac"><i>medida no desenho</i><i>medida real</i></span></p>
+  <p>As duas medidas precisam estar na <strong>mesma unidade</strong>. Como são grandezas de mesma espécie, as unidades se cancelam e a escala é um <strong>número puro</strong>, sem unidade.</p>
+</div>
+
+<p>Ler <span class="m">1 : 250 000</span> é ler: <em>“cada 1 cm no papel corresponde a 250 000 cm no terreno”</em>. Poderia ser qualquer unidade — 1 metro no papel valeria 250 000 metros reais —, mas na prática se trabalha em centímetros porque é a unidade da régua.</p>
+
+<div class="box tip">
+  <span class="tag">Escala de ampliação existe</span>
+  <p>Quando o desenho é <em>maior</em> que o objeto, a escala se inverte: <span class="m">10 : 1</span> significa que o desenho tem dez vezes o tamanho real. Aparece em projetos de peças mecânicas pequenas e em microeletrônica.</p>
+  <p>E <span class="m">1 : 1</span> é o tamanho natural.</p>
+</div>
+</section>
+<section id="s3">
+<h2><i>03</i> Escala numérica e escala gráfica</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Tipo</th><th>Como aparece</th><th>Vantagem</th><th>Limitação</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Numérica</strong></td><td class="m">1 : 50 000</td><td>Direta para calcular</td><td>Deixa de valer se o mapa for ampliado ou reduzido</td></tr>
+    <tr><td><strong>Gráfica</strong></td><td>Barra graduada com distâncias marcadas</td><td><strong>Continua válida</strong> em qualquer ampliação</td><td>Exige medir com régua</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box warn">
+  <span class="tag">Por que a escala gráfica sobrevive à fotocópia</span>
+  <p>Se um mapa <span class="m">1 : 50 000</span> for reduzido à metade numa fotocópia, a escala real passa a ser <span class="m">1 : 100 000</span> — mas o número impresso continua dizendo 50 000, e agora está <strong>errado</strong>.</p>
+  <p>A barra gráfica, ao contrário, encolhe junto com o mapa e continua correta. É por isso que mapas de livro didático e de aplicativo trazem quase sempre os dois formatos.</p>
+</div>
+
+<h3>Converter gráfica em numérica</h3>
+<p>Meça a barra com a régua e monte a razão, na mesma unidade:</p>
+<div class="eq">
+  <p>Se <span class="m">4 cm</span> da barra representam <span class="m">10 km</span>:</p>
+  <p class="m">10 km = 1 000 000 cm &nbsp;→&nbsp; <span class="frac"><i>4</i><i>1 000 000</i></span> = <span class="frac"><i>1</i><i>250 000</i></span></p>
+  <p class="m">Escala: <strong>1 : 250 000</strong></p>
+</div>
+</section>
+<section id="s4">
+<h2><i>04</i> Escala grande e escala pequena</h2>
+<p>Este é o ponto que mais confunde, porque a nomenclatura parece invertida — e não é.</p>
+
+<div class="box def">
+  <span class="tag">A regra</span>
+  <p><strong>Quanto menor o denominador, maior a escala.</strong></p>
+  <p>Escala <strong>grande</strong> → mais detalhe, menos território.<br>Escala <strong>pequena</strong> → menos detalhe, mais território.</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Dois mapas do mesmo tamanho de folha: à esquerda, escala um para vinte e cinco mil mostrando poucas quadras com muito detalhe; à direita, escala um para duzentos e cinquenta mil mostrando a região inteira, com a área anterior reduzida a um pequeno retângulo">
+  <rect x="18" y="34" width="180" height="132" rx="6" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.8"/>
+  <line x1="18" y1="78" x2="198" y2="78" style="stroke:var(--c1);stroke-width:2.5"/>
+  <line x1="18" y1="122" x2="198" y2="122" style="stroke:var(--c1);stroke-width:2.5"/>
+  <line x1="78" y1="34" x2="78" y2="166" style="stroke:var(--c1);stroke-width:2.5"/>
+  <line x1="138" y1="34" x2="138" y2="166" style="stroke:var(--c1);stroke-width:2.5"/>
+  <rect x="30" y="46" width="36" height="20" rx="2" style="fill:var(--c1);fill-opacity:.35"/>
+  <rect x="90" y="46" width="36" height="20" rx="2" style="fill:var(--c1);fill-opacity:.35"/>
+  <rect x="150" y="90" width="36" height="20" rx="2" style="fill:var(--c1);fill-opacity:.35"/>
+  <rect x="30" y="134" width="36" height="20" rx="2" style="fill:var(--c1);fill-opacity:.35"/>
+  <text x="108" y="26" text-anchor="middle" class="svg-ttl" style="fill:var(--c1)">1 : 25 000 · escala grande</text>
+  <text x="108" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">poucas quadras, ruas visíveis</text>
+  <text x="108" y="198" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1 cm = 250 m</text>
+
+  <rect x="262" y="34" width="180" height="132" rx="6" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.8"/>
+  <path d="M280 60 C 320 44, 360 66, 396 52 C 420 44, 430 70, 424 96 C 416 128, 380 148, 340 144 C 300 140, 276 116, 280 60 Z" style="fill:var(--c2);fill-opacity:.18;stroke:var(--c2);stroke-width:1.4"/>
+  <line x1="290" y1="110" x2="420" y2="96" style="stroke:var(--c2);stroke-width:1.2"/>
+  <line x1="330" y1="52" x2="352" y2="146" style="stroke:var(--c2);stroke-width:1.2"/>
+  <rect x="336" y="86" width="18" height="14" style="fill:none;stroke:var(--c4);stroke-width:2"/>
+  <text x="352" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">o mapa da esquerda cabe aqui</text>
+  <text x="352" y="26" text-anchor="middle" class="svg-ttl" style="fill:var(--c2)">1 : 250 000 · escala pequena</text>
+  <text x="352" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">a região inteira, sem ruas</text>
+  <line x1="336" y1="86" x2="200" y2="60" style="stroke:var(--c4);stroke-width:1;stroke-dasharray:4 3"/>
+</svg>
+<figcaption><b>A mesma folha de papel, dois recortes do mundo.</b> Com denominador dez vezes menor, o mapa da esquerda cabe dentro do retângulo destacado à direita — e é por isso que ele mostra ruas e quadras, enquanto o outro só consegue mostrar o contorno da região. Escala grande não significa território grande; significa o contrário.</figcaption>
+</figure>
+
+<div class="box tip">
+  <span class="tag">Como não errar</span>
+  <p>Pense na escala como <strong>fração</strong>: <span class="m"><span class="frac"><i>1</i><i>25 000</i></span></span> é um número <em>maior</em> que <span class="m"><span class="frac"><i>1</i><i>250 000</i></span></span>, do mesmo modo que <span class="m"><span class="frac"><i>1</i><i>2</i></span> &gt; <span class="frac"><i>1</i><i>20</i></span></span>. A nomenclatura só está descrevendo o tamanho da fração.</p>
+</div>
+</section>
+<section id="s5">
+<h2><i>05</i> Os três cálculos</h2>
+<p>Toda questão de escala pede uma destas três coisas. Identificar qual é o primeiro passo.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>O que se procura</th><th>O que fazer</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Medida real</strong></td><td><strong>Multiplique</strong> a do desenho pelo denominador</td><td class="m">6 cm em 1:500 000 → 3 000 000 cm</td></tr>
+    <tr><td><strong>Medida no desenho</strong></td><td><strong>Divida</strong> a real pelo denominador</td><td class="m">45 km em 1:1 500 000 → 3 cm</td></tr>
+    <tr><td><strong>A própria escala</strong></td><td><strong>Divida</strong> desenho por real, na mesma unidade</td><td class="m">4 cm para 12 km → 1:300 000</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">A cadeia de conversão</span>
+  <p>Depois de multiplicar pelo denominador, o resultado está em <strong>centímetros reais</strong>. Faltam dois degraus:</p>
+  <p class="m">cm &nbsp;<span style="color:var(--c5)">÷ 100</span>&nbsp; → &nbsp;m&nbsp; <span style="color:var(--c5)">÷ 1 000</span>&nbsp; → &nbsp;km</p>
+  <p>Ou, de uma vez: <strong>divida por 100 000</strong> para ir de centímetros a quilômetros.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O atalho que economiza a cadeia inteira</span>
+  <p>Numa escala <span class="m">1 : <span class="v">n</span></span>, cada centímetro do mapa vale <span class="m"><span class="frac"><i><span class="v">n</span></i><i>100 000</i></span></span> quilômetros.</p>
+  <p class="m">1 : 50 000 → 0,5 km por cm &nbsp;·&nbsp; 1 : 250 000 → 2,5 km por cm &nbsp;·&nbsp; 1 : 1 000 000 → 10 km por cm</p>
+</div>
+</section>
+<section id="s6">
+<h2><i>06</i> Escala de área e de volume</h2>
+<p>A escala reduz <strong>cada dimensão</strong> pelo mesmo fator. Como a área tem duas dimensões e o volume tem três, os fatores se acumulam.</p>
+
+<div class="box def">
+  <span class="tag">As três escalas</span>
+  <p><strong>Comprimento:</strong> <span class="m">1 : <span class="v">n</span></span></p>
+  <p><strong>Área:</strong> <span class="m">1 : <span class="v">n</span><sup>2</sup></span></p>
+  <p><strong>Volume:</strong> <span class="m">1 : <span class="v">n</span><sup>3</sup></span></p>
+</div>
+
+<div class="eq">
+  <span class="lbl">Numa planta 1 : 200, quanto representa 1 cm²?</span>
+  <p class="m">1 cm<sup>2</sup> · 200<sup>2</sup> = 1 · 40 000 = 40 000 cm<sup>2</sup></p>
+  <p class="m">40 000 ÷ 10 000 = <strong>4 m<sup>2</sup></strong></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Aplicar o fator linear à área</span>
+  <p>Multiplicar <span class="m">1 cm<sup>2</sup></span> por <span class="m">200</span> em vez de <span class="m">200<sup>2</sup></span> erra por um fator de 200. E o resultado ainda parece plausível, o que torna o engano difícil de perceber.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">O caminho mais seguro em plantas</span>
+  <p>Em vez de converter a área diretamente, <strong>converta os lados primeiro</strong> e calcule a área com as medidas reais. Numa planta <span class="m">1 : 100</span>, um cômodo de <span class="m">5 cm × 4 cm</span> vira <span class="m">5 m × 4 m</span> — e a área é <span class="m">20 m<sup>2</sup></span>, sem nenhum risco de esquecer o quadrado.</p>
+</div>
+
+<h3>Maquetes e o fator cúbico</h3>
+<div class="eq">
+  <span class="lbl">Uma maquete 1 : 20 de um reservatório comporta 5 litros. Quanto comporta o real?</span>
+  <p class="m">5 · 20<sup>3</sup> = 5 · 8 000 = 40 000 L = <strong>40 m<sup>3</sup></strong></p>
+  <p>Na mesma maquete, as alturas ficam divididas por <span class="m">20</span> e as áreas de fachada por <span class="m">400</span>.</p>
+</div>
+</section>
+<section id="s7">
+<h2><i>07</i> Plantas e projetos</h2>
+<p>É a aplicação mais próxima do dia a dia, e a que o ENEM usa em contextos de construção, reforma e acessibilidade.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Escala</th><th>Uso típico</th><th>1 cm representa</th></tr></thead>
+  <tbody>
+    <tr><td class="m">1 : 20</td><td>Detalhes construtivos, mobiliário</td><td class="m">20 cm</td></tr>
+    <tr><td class="m">1 : 50</td><td>Planta baixa de residência</td><td class="m">50 cm</td></tr>
+    <tr><td class="m">1 : 100</td><td>Planta baixa de edifício</td><td class="m">1 m</td></tr>
+    <tr><td class="m">1 : 500</td><td>Implantação, loteamento</td><td class="m">5 m</td></tr>
+    <tr><td class="m">1 : 1 000</td><td>Plano urbanístico</td><td class="m">10 m</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Um projeto costuma trazer três representações na mesma escala: a <strong>planta baixa</strong> (vista de cima, como se o teto fosse removido), o <strong>corte</strong> (vista do interior como se o prédio fosse fatiado verticalmente) e a <strong>fachada</strong> (vista externa). Todas obedecem à mesma razão.</p>
+
+<div class="box tip">
+  <span class="tag">A escala 1 : 100 é a mais amigável</span>
+  <p>Nela, <strong>1 cm no papel é exatamente 1 metro real</strong>. Uma parede de 7 cm mede 7 m; um cômodo de 4 cm × 3 cm tem 12 m². É a razão de ela ser a preferida em projetos e em questões de prova.</p>
+</div>
+</section>
+<section id="s8">
+<h2><i>08</i> Referências rápidas</h2>
+<p>Valores que compensa reconhecer de imediato numa questão.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Escala</th><th>1 cm no mapa vale</th><th>1 cm² vale</th><th>Uso típico</th></tr></thead>
+  <tbody>
+    <tr><td class="m">1 : 50</td><td class="m">50 cm</td><td class="m">0,25 m²</td><td>Planta de residência</td></tr>
+    <tr><td class="m">1 : 100</td><td class="m">1 m</td><td class="m">1 m²</td><td>Planta de edifício</td></tr>
+    <tr><td class="m">1 : 1 000</td><td class="m">10 m</td><td class="m">100 m²</td><td>Plano urbanístico</td></tr>
+    <tr><td class="m">1 : 25 000</td><td class="m">250 m</td><td class="m">6,25 ha</td><td>Carta de bairro</td></tr>
+    <tr><td class="m">1 : 50 000</td><td class="m">0,5 km</td><td class="m">25 ha</td><td>Carta topográfica</td></tr>
+    <tr><td class="m">1 : 250 000</td><td class="m">2,5 km</td><td class="m">6,25 km²</td><td>Mapa regional</td></tr>
+    <tr><td class="m">1 : 1 000 000</td><td class="m">10 km</td><td class="m">100 km²</td><td>Mapa de estado</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">A regra que gera a tabela inteira</span>
+  <p>Numa escala <span class="m">1 : <span class="v">n</span></span>: &nbsp; 1 cm vale <span class="m"><span class="v">n</span></span> centímetros, ou <span class="m"><span class="frac"><i><span class="v">n</span></i><i>100 000</i></span></span> quilômetros. E 1 cm² vale <span class="m"><span class="v">n</span><sup>2</sup></span> centímetros quadrados.</p>
+</div>
+</section>
+<section id="s9">
+<h2><i>09</i> Onde isso aparece nas outras áreas</h2>
+<p>Escala é um dos poucos conteúdos que cai literalmente igual em duas áreas diferentes da prova.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Como aparece</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Geografia</strong></td><td>Cartografia, leitura de cartas topográficas, comparação entre mapas, curvas de nível</td></tr>
+    <tr><td><strong>Matemática</strong></td><td>Razão e proporção, semelhança de figuras, área e volume de sólidos semelhantes</td></tr>
+    <tr><td><strong>Física</strong></td><td>Modelos reduzidos, ampliação de imagens em lentes e espelhos</td></tr>
+    <tr><td><strong>Contextos aplicados</strong></td><td>Projetos de arquitetura, acessibilidade, urbanismo, agricultura</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">A ponte com semelhança</span>
+  <p>Escala é o mesmo conceito de <strong>semelhança de figuras</strong>, que volta na geometria plana da semana 12. A razão entre lados correspondentes é a escala; a razão entre áreas é o quadrado dela; entre volumes, o cubo. Aprender agora é adiantar aquele conteúdo.</p>
+</div>
+</section>
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Converta tudo para centímetros antes de aplicar a escala</span>
+  <p>Escala compara medidas na mesma unidade. Passar tudo para centímetros, aplicar a razão e só então converter o resultado elimina a maior parte dos erros.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Identifique qual das três perguntas está sendo feita</span>
+  <p>Medida real, medida no desenho ou a escala? Cada uma tem uma operação diferente — multiplicar, dividir ou montar a razão.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Confira a plausibilidade</span>
+  <p>Numa escala de redução, a medida real é sempre <strong>muito maior</strong> que a do desenho. Se o resultado saiu da mesma ordem de grandeza do mapa, faltou um degrau da cadeia de conversão.</p>
+</div>
+</section>
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Parar nos centímetros reais</span> &nbsp;→&nbsp; <span class="c">divida por 100 000 para chegar a km</span></span><small>É o erro mais frequente do assunto: a conta da escala está certa e falta a conversão.</small></li>
+  <li><span><span class="x">Aplicar o fator linear à área</span> &nbsp;→&nbsp; <span class="c">use n²</span></span><small>Numa planta 1:200, 1 cm² vale 4 m², não 200 cm².</small></li>
+  <li><span><span class="x">Aplicar o fator linear ao volume</span> &nbsp;→&nbsp; <span class="c">use n³</span></span><small>Numa maquete 1:20, o volume real é 8 000 vezes o da maquete.</small></li>
+  <li><span><span class="x">1 : 250 000 é escala maior que 1 : 50 000</span> &nbsp;→&nbsp; <span class="c">é menor</span></span><small>Denominador maior significa escala menor, menos detalhe e mais área.</small></li>
+  <li><span><span class="x">Inverter a razão da escala</span> &nbsp;→&nbsp; <span class="c">desenho sobre real</span></span><small>Trocar a ordem produz um número absurdo, do tipo 250 000 : 1.</small></li>
+  <li><span><span class="x">Comparar medidas em unidades diferentes</span> &nbsp;→&nbsp; <span class="c">padronize antes</span></span><small>Escala só faz sentido com as duas medidas na mesma unidade.</small></li>
+  <li><span><span class="x">Confiar na escala numérica de um mapa ampliado</span> &nbsp;→&nbsp; <span class="c">use a escala gráfica</span></span><small>A numérica deixa de valer quando o mapa muda de tamanho; a gráfica acompanha.</small></li>
+  <li><span><span class="x">Multiplicar quando deveria dividir</span> &nbsp;→&nbsp; <span class="c">confira o sentido</span></span><small>Do mapa para o real, multiplica-se. Do real para o mapa, divide-se.</small></li>
+</ul>
+</section>
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em todas, escreva a unidade ao lado de cada número — é o que impede pular um degrau da conversão.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Do mapa para o real</span>
+    <p class="enun">Em um mapa rodoviário de escala 1 : 500 000, a distância entre duas cidades é representada por um segmento de 6 cm. A distância real entre essas cidades é de</p>
+    <ol class="alt"><li>3 km</li><li>30 km</li><li>300 km</li><li>3 000 km</li><li>30 000 km</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Do mapa para o real, <strong>multiplica-se</strong> pelo denominador:</p>
+      <p class="m">6 · 500 000 = 3 000 000 cm</p>
+      <p>Agora a cadeia de conversão, que é onde a questão realmente é decidida:</p>
+      <p class="m">3 000 000 ÷ 100 = 30 000 m &nbsp;→&nbsp; 30 000 ÷ 1 000 = 30 km</p>
+      <p><strong>Pelo atalho:</strong> em 1 : 500 000, cada centímetro vale <span class="m">500 000 ÷ 100 000 = 5 km</span>. Logo <span class="m">6 · 5 = 30 km</span>.</p>
+      <p>As alternativas C, D e E são exatamente os resultados de quem parou em cada degrau da conversão.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Do real para o mapa</span>
+    <p class="enun">Um cartógrafo precisa representar uma distância real de 45 km em um mapa de escala 1 : 1 500 000. No mapa, essa distância ocupará</p>
+    <ol class="alt"><li>0,3 cm</li><li>3 cm</li><li>30 cm</li><li>33 cm</li><li>300 cm</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Primeiro passe a distância real para centímetros, a mesma unidade da régua:</p>
+      <p class="m">45 km = 45 000 m = 4 500 000 cm</p>
+      <p>Do real para o mapa, <strong>divide-se</strong> pelo denominador:</p>
+      <p class="m">4 500 000 ÷ 1 500 000 = 3 cm</p>
+      <p><strong>Conferência:</strong> 3 cm num mapa de papel é uma medida razoável. Se tivesse dado 300 cm, seriam três metros de mapa — sinal claro de erro.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Achar a escala</span>
+    <p class="enun">Em um mapa, um trecho de estrada com 12 km de extensão real está representado por um segmento de 4 cm. A escala desse mapa é</p>
+    <ol class="alt"><li>1 : 3 000</li><li>1 : 30 000</li><li>1 : 300 000</li><li>1 : 3 000 000</li><li>1 : 4 800 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Escala é desenho sobre real, com as duas medidas na mesma unidade:</p>
+      <p class="m">12 km = 1 200 000 cm</p>
+      <p class="m">E = <span class="frac"><i>4</i><i>1 200 000</i></span> = <span class="frac"><i>1</i><i>300 000</i></span></p>
+      <p><strong>Conferindo pelo atalho:</strong> em 1 : 300 000, cada centímetro vale <span class="m">3 km</span>. Quatro centímetros dão <span class="m">12 km</span> ✓</p>
+      <p>A alternativa B é de quem esqueceu de converter os quilômetros em centímetros e usou apenas <span class="m">12 000</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Escala grande e pequena</span>
+    <p class="enun">Um estudante precisa de um mapa que mostre com o maior nível de detalhe possível as ruas de um bairro. Entre as opções disponíveis, ele deve escolher a de escala</p>
+    <ol class="alt"><li>1 : 10 000</li><li>1 : 100 000</li><li>1 : 500 000</li><li>1 : 1 000 000</li><li>1 : 10 000 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Mais detalhe significa <strong>escala maior</strong>, e escala maior significa <strong>denominador menor</strong>.</p>
+      <p>Entre as opções, o menor denominador é <span class="m">10 000</span>.</p>
+      <p><strong>Confirmando pelo significado:</strong> em 1 : 10 000, cada centímetro vale 100 metros — é possível distinguir quadras e ruas. Já em 1 : 10 000 000, cada centímetro vale 100 km, e um bairro inteiro viraria um ponto.</p>
+      <p><strong>O raciocínio da fração:</strong> <span class="m"><span class="frac"><i>1</i><i>10 000</i></span></span> é a maior das cinco frações, exatamente como <span class="m"><span class="frac"><i>1</i><i>2</i></span></span> é maior que <span class="m"><span class="frac"><i>1</i><i>20</i></span></span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Área a partir da planta</span>
+    <p class="enun">Em uma planta baixa desenhada na escala 1 : 100, uma sala aparece como um retângulo de 5 cm por 4 cm. A área real dessa sala é de</p>
+    <ol class="alt"><li>0,2 m²</li><li>2 m²</li><li>20 m²</li><li>200 m²</li><li>2 000 m²</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><strong>Caminho recomendado — converta os lados primeiro:</strong></p>
+      <p class="m">5 cm · 100 = 500 cm = 5 m &nbsp;&nbsp; 4 cm · 100 = 400 cm = 4 m</p>
+      <p class="m">Área = 5 · 4 = 20 m<sup>2</sup></p>
+      <p><strong>Pelo fator de área, para comparar:</strong></p>
+      <p class="m">20 cm<sup>2</sup> · 100<sup>2</sup> = 200 000 cm<sup>2</sup> = 20 m<sup>2</sup> ✓</p>
+      <p>Os dois caminhos batem, mas o primeiro é mais seguro: converter os lados torna impossível esquecer que o fator vai ao quadrado.</p>
+      <p>Lembre que em 1 : 100 cada centímetro é exatamente 1 metro — a escala mais amigável de todas.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · O fator de área</span>
+    <p class="enun">Em um projeto desenhado na escala 1 : 200, cada centímetro quadrado do papel representa, na realidade, uma área de</p>
+    <ol class="alt"><li>0,02 m²</li><li>2 m²</li><li>4 m²</li><li>20 m²</li><li>40 m²</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A escala linear é <span class="m">1 : 200</span>, logo a escala de área é <span class="m">1 : 200<sup>2</sup></span>:</p>
+      <p class="m">1 cm<sup>2</sup> · 40 000 = 40 000 cm<sup>2</sup></p>
+      <p class="m">40 000 ÷ 10 000 = 4 m<sup>2</sup></p>
+      <p><strong>Conferindo pela geometria:</strong> 1 cm² é um quadrado de 1 cm de lado. Na realidade, esse lado mede <span class="m">200 cm = 2 m</span>, e um quadrado de 2 m de lado tem <span class="m">4 m<sup>2</sup></span> ✓</p>
+      <p>A alternativa B é o resultado de quem aplicou o fator 200 uma vez só, esquecendo o quadrado.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Maquete e o fator cúbico</span>
+    <p class="enun">Uma maquete construída na escala 1 : 20 reproduz um reservatório de água. A maquete comporta 5 litros. O reservatório real comporta</p>
+    <ol class="alt"><li>100 litros</li><li>2 000 litros</li><li>8 000 litros</li><li>40 000 litros</li><li>400 000 litros</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Capacidade é volume, e o volume tem três dimensões — o fator vai ao <strong>cubo</strong>:</p>
+      <p class="m">20<sup>3</sup> = 8 000</p>
+      <p class="m">5 · 8 000 = 40 000 litros = 40 m<sup>3</sup></p>
+      <p><strong>Por que 8 000 e não 20:</strong> cada uma das três dimensões do reservatório é vinte vezes maior que na maquete. Comprimento, largura e altura multiplicam juntos: <span class="m">20 · 20 · 20</span>.</p>
+      <p>A alternativa A aplicou o fator linear; a C usou o fator certo mas esqueceu de multiplicar pelos 5 litros da maquete.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Escala gráfica</span>
+    <p class="enun">Em um mapa, a escala gráfica é representada por uma barra de 4 cm de comprimento, correspondente a 10 km no terreno. A escala numérica desse mapa é</p>
+    <ol class="alt"><li>1 : 2 500</li><li>1 : 25 000</li><li>1 : 250 000</li><li>1 : 400 000</li><li>1 : 2 500 000</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Converta a distância real para centímetros e monte a razão:</p>
+      <p class="m">10 km = 10 000 m = 1 000 000 cm</p>
+      <p class="m">E = <span class="frac"><i>4</i><i>1 000 000</i></span> = <span class="frac"><i>1</i><i>250 000</i></span></p>
+      <p><strong>Conferindo:</strong> em 1 : 250 000, cada centímetro vale 2,5 km. Quatro centímetros dão 10 km ✓</p>
+      <p>Vale notar por que essa barra existe: se o mapa for ampliado numa fotocópia, a barra cresce junto e continua correta — enquanto o número “1 : 250 000” passaria a estar errado.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Planta baixa</span>
+    <p class="enun">Na planta baixa de uma residência, desenhada na escala 1 : 50, uma parede da sala está representada por um segmento de 7 cm. O comprimento real dessa parede é de</p>
+    <ol class="alt"><li>0,35 m</li><li>3,5 m</li><li>7 m</li><li>35 m</li><li>350 m</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">7 · 50 = 350 cm = 3,5 m</p>
+      <p><strong>Conferência de plausibilidade:</strong> 3,5 metros é uma medida coerente para a parede de uma sala. A alternativa D daria 35 metros, o comprimento de um prédio; a A daria 35 centímetros, menos que um passo.</p>
+      <p>Esse tipo de checagem é especialmente útil em questões de planta, porque as medidas têm referência concreta imediata — todo mundo sabe o tamanho aproximado de um cômodo.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que escala é desenho dividido por real, com as duas na mesma unidade</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Interpreto 1 : 250 000 como “1 cm no mapa vale 250 000 cm reais”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Percorro a cadeia cm → m → km sem pular degrau</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso o atalho: em 1 : <span class="m"><span class="v">n</span></span>, cada cm vale <span class="m"><span class="v">n</span> ÷ 100 000</span> km</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo os três tipos: achar o real, achar o desenho e achar a escala</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que denominador menor significa escala <strong>maior</strong> e mais detalhe</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico <span class="m"><span class="v">n</span><sup>2</sup></span> para área e <span class="m"><span class="v">n</span><sup>3</sup></span> para volume</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Prefiro converter os lados antes de calcular a área de um cômodo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo maquetes lembrando que o volume varia com o cubo da escala</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto escala gráfica em numérica medindo a barra</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei por que a escala gráfica sobrevive a uma ampliação e a numérica não</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço que 1 : 100 significa 1 cm igual a 1 metro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro a plausibilidade do resultado antes de marcar</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Inclua questões de <strong>Geografia</strong>, onde a escala aparece com carta topográfica e curvas de nível em vez de números limpos. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>45 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-11-escalas-plantas-mapas.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-11";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

@@ -1,0 +1,57 @@
+Um mais i, elevado a oito: oito multiplicações? Na forma trigonométrica, raiz de dois elevado a oito dá dezesseis e oito vezes quarenta e cinco graus dá trezentos e sessenta graus, uma volta inteira. A resposta é dezesseis, em uma linha.
+
+Este é o quarto episódio da série de Números complexos. Ao final, você vai escrever um complexo como distância e ângulo, multiplicar girando e calcular potências altas com a fórmula de De Moivre.
+
+Três lembretes rápidos. Do episódio três: a mais b i é o ponto a, b no plano, e o módulo é a distância até a origem. Do episódio um: o relógio do i: um, i, menos um, menos i. E uma tabela de seno e cosseno, que fica na tela. Isso tem série própria, na Trigonometria.
+
+Olhe a tabela. Em trinta graus, o seno é um meio. Em quarenta e cinco, seno e cosseno são iguais. Em sessenta, o cosseno é um meio. E nos ângulos redondos, eles valem zero, um ou menos um.
+
+Imagine a tela de um radar. Um navio avisa: estou a duas milhas, na direção de sessenta graus. O operador marca o ponto. O mesmo ponto também pode ser dado por coordenadas: tanto para o lado, tanto para cima. Duas formas de dar o mesmo endereço.
+
+E um número complexo, tem endereço de radar? Tem. A distância até a origem é o módulo, a letra grega rô. Argumento: o ângulo que a seta faz com o eixo real positivo, a letra teta, de zero a trezentos e sessenta graus. Aí, a é rô vezes cosseno de teta, e b é rô vezes seno de teta. Forma trigonométrica, ou polar: z igual a rô, vezes cosseno de teta, mais i seno de teta.
+
+Vamos testar com raiz de três, mais i. Marque o ponto: raiz de três para o lado, um para cima. Primeiro quadrante. Módulo: raiz de três ao quadrado, mais um ao quadrado: raiz de quatro, dois. Cosseno: a sobre rô. Seno: b sobre rô, um meio. Na tabela, isso é trinta graus. z é dois, vezes cosseno de trinta, mais i seno de trinta.
+
+E os outros endereços prontos? Um mais i: módulo raiz de dois, quarenta e cinco graus. i: módulo um, noventa graus, reto para cima. Menos um: módulo um, cento e oitenta graus, para trás.
+
+Atalho. Ache o módulo. Depois, divida: a sobre rô é o cosseno, b sobre rô é o seno. Procure o par na tabela, e o ângulo aparece.
+
+E se o ponto estiver do outro lado? Pegue menos um, mais i. Um para trás, um para cima: segundo quadrante. Quadrante: um dos quatro pedaços do plano. Ângulo de referência: o ângulo dos números sem sinal. Aqui, quarenta e cinco graus. Quem escolhe o quadrante são os sinais. No segundo quadrante, teta é cento e oitenta, menos quarenta e cinco: cento e trinta e cinco graus.
+
+Atalho. Com o ângulo de referência na mão: no primeiro quadrante, é ele mesmo. No segundo, cento e oitenta menos ele. No terceiro, cento e oitenta mais ele. No quarto, trezentos e sessenta menos ele.
+
+E por que essa forma vale a pena? Porque multiplicar fica fácil. Multiplica os módulos e soma os ângulos. Dois, com trinta graus, vezes três, com sessenta graus: módulo seis, ângulo noventa. Deu seis i. A seta esticou e girou. E dividir? Divide os módulos e subtrai os ângulos.
+
+Lembra da manivela do episódio três? O i tem módulo um e ângulo noventa. Então, vezes i: o módulo fica igual, e o ângulo ganha noventa graus. Raiz de três mais i, de trinta graus, vira menos um, mais raiz de três i, em cento e vinte. Gira noventa, sem esticar.
+
+E elevar a uma potência alta? Elevar a n é multiplicar n vezes. Fórmula de De Moivre: o módulo vai elevado a n, e o ângulo é multiplicado por n. Raiz de três mais i, elevado a seis: módulo dois, elevado a seis: sessenta e quatro. Ângulo: seis vezes trinta, cento e oitenta. Cosseno de cento e oitenta é menos um, seno é zero. Resultado: menos sessenta e quatro.
+
+Atalho. Se o ângulo passar de trezentos e sessenta, tire as voltas inteiras. Quatrocentos e cinco graus: tire uma volta, sobram quarenta e cinco.
+
+E o caminho de volta, as raízes? Raízes enésimas: os números que, elevados a n, voltam ao número de partida. Em uma frase: todas têm o mesmo módulo e ficam igualmente espaçadas, nos cantos de um polígono regular, a figura de lados iguais. As raízes quartas de um: um, i, menos um, menos i. Um quadrado. O relógio do episódio um.
+
+Sua vez. Escreva um menos i na forma trigonométrica. Marque o ponto, diga o quadrante e ache o ângulo. Pause e tente.
+
+Vamos juntos. Um para o lado, um para baixo. a positivo, b negativo: quarto quadrante. Módulo: raiz de um mais um, raiz de dois. Ângulo de referência: quarenta e cinco. No quarto, trezentos e sessenta menos quarenta e cinco: trezentos e quinze graus. z é raiz de dois, vezes cosseno de trezentos e quinze, mais i seno de trezentos e quinze.
+
+Vamos guardar em três frases. Um: módulo e argumento: distância e direção. Dois: multiplicar: multiplica os módulos e soma os ângulos. Três: potência: módulo elevado a n, ângulo vezes n.
+
+Agora, o erro clássico. Dizer que o argumento de menos um, mais i é quarenta e cinco graus. Parece certo, porque a conta com os números sem sinal dá mesmo quarenta e cinco. Mas quarenta e cinco graus é o endereço de um mais i, no primeiro quadrante. O ponto está no segundo: cento e trinta e cinco graus.
+
+Agora, uma questão no estilo do ENEM. O número complexo z igual a um, mais raiz de três i, escrito na forma trigonométrica, é: A: quatro, cosseno de sessenta, mais i seno de sessenta. B: dois, com sessenta graus. C: dois, com trinta. D: dois, com cento e vinte. E: dois, com trezentos.
+
+Essa, eu faço. Marco o ponto: um para o lado, raiz de três para cima. a e b positivos: primeiro quadrante. Módulo: raiz de um mais três, raiz de quatro: dois. Cosseno: um meio. Seno: raiz de três sobre dois. Na tabela: sessenta graus. Letra B! Confiro: dois vezes um meio dá um, e dois vezes raiz de três sobre dois dá raiz de três.
+
+E as armadilhas? A A esquece a raiz no módulo: parou no quatro. A C troca seno e cosseno: trinta graus é o raiz de três mais i. A D põe o ponto no segundo quadrante, mas a e b são positivos. E a E é o conjugado, no quarto quadrante.
+
+Agora, você faz. O valor de um mais i, elevado a oito, em que i é a unidade imaginária, é: A: menos dezesseis. B: oito i. C: dezesseis. D: dezesseis i. E: duzentos e cinquenta e seis. Pause o vídeo e tente.
+
+Vamos conferir, por dois caminhos. De Moivre: um mais i tem módulo raiz de dois e ângulo quarenta e cinco. Raiz de dois elevado a oito: dezesseis. Oito vezes quarenta e cinco: trezentos e sessenta, uma volta inteira. Dezesseis, letra C! Algébrico: um mais i, ao quadrado, dá dois i, porque i ao quadrado é menos um. Elevado a oito é dois i, elevado a quatro: dezesseis vezes i a quarta. E i a quarta é um: dezesseis.
+
+E as armadilhas? A A usa i a quarta igual a menos um. A B multiplica dois i por quatro, em vez de elevar à quarta. A D usa i a quarta igual a i. E a E toma o módulo de um mais i como dois, e não raiz de dois: dois elevado a oito.
+
+Para fechar, as mesmas três frases. Um: módulo e argumento: distância e direção. Dois: multiplicar: multiplica os módulos e soma os ângulos. Três: potência: módulo elevado a n, ângulo vezes n.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e treinamos com questões inéditas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha pensado num número complexo como uma seta que gira? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,266 @@
+Produtos Notáveis
+Matemática › Álgebra e Funções › Assunto 1 de 18
+Expressões algébricas e produtos notáveis
+Letras no lugar de números não são enfeite: são o jeito de escrever uma regra que vale para qualquer valor. Este assunto ensina a traduzir frases em expressões, a operar com elas sem errar sinal e a reconhecer os produtos notáveis, que encurtam contas e desmontam o erro mais famoso da álgebra.
+Semana
+5 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Operações e conjuntos numéricos · Potenciação e radiciação
+Destrava
+Equações do 1º e do 2º grau, funções, áreas e volumes
+Neste assunto
+01 O que o ENEM cobra aqui
+A prova quase nunca pede “fatore” ou “desenvolva”. Ela pede que você use a álgebra para resolver um problema concreto. As formas mais comuns:
+Modelar: escrever a expressão do custo de uma corrida, da área de um terreno ampliado, do volume de uma caixa recortada de uma folha.
+Comparar expressões: decidir qual alternativa é equivalente à expressão do enunciado, muitas vezes com distratores feitos do erro (a + b)² = a² + b².
+Calcular sem calculadora: produtos como 1 003 · 997 ou diferenças como 65² − 35² saem de cabeça com produtos notáveis.
+Simplificar antes de calcular: uma fração algébrica fatorada vira uma conta de uma linha.
+Além disso, este é o idioma de todo o resto do bloco. Equações, funções, progressões e geometria analítica são escritas com as ferramentas desta página.
+O que rende mais aqui
+Duas habilidades. Primeiro, traduzir o enunciado com cuidado: “o dobro da soma” e “a soma do dobro” são expressões diferentes. Segundo, lembrar do termo do meio: (a + b)² tem 2ab, sempre. Quem domina essas duas escapa de quase todos os distratores do assunto.
+02 Linguagem algébrica e valor numérico
+Vocabulário mínimo
+Uma expressão algébrica combina números, letras (as variáveis) e operações. Cada parcela separada por + ou − é um termo. Em −5x², o coeficiente é −5 e a parte literal é x². Termos com a mesma parte literal são semelhantes e só eles podem ser somados.
+ | Frase | Expressão | Atenção
+ | o dobro de um número, aumentado de 3 | 2x + 3 | primeiro dobra, depois soma
+ | o dobro da soma de um número com 3 | 2(x + 3) | a soma vem antes: parênteses
+ | o quadrado de um número, menos 1 | x² − 1 | diferente de (x − 1)²
+ | a metade de um número somada a seu triplo | (x/2) + 3x | dois termos semelhantes
+ | dois números consecutivos | n e n + 1 | pares consecutivos: 2n e 2n + 2
+ | R$ 6,00 fixos mais R$ 2,50 por km | 6 + 2,5x | parte fixa + parte que varia
+O valor numérico é o resultado de substituir as letras por números. Para 3x² − 2x + 1 com x = −2:
+3 · (−2)² − 2 · (−2) + 1 = 3 · 4 + 4 + 1 = 17
+Sempre com parênteses ao substituir um negativo
+(−2)² = 4, mas −2² = −4: no segundo, o expoente atinge só o 2. Substituir x por (−2), com parênteses, evita o erro de sinal mais comum do assunto.
+03 Operações com polinômios
+Um polinômio é uma soma de termos com expoentes naturais, como 2x² − 5x − 12. As operações seguem duas regras que você já conhece dos números.
+1 · Somar e subtrair: só termos semelhantes
+3x² + 2x − x² + 5x = (3 − 1)x² + (2 + 5)x = 2x² + 7x
+2x² + 7x não se junta num termo só: x² e x não são semelhantes.
+2 · Multiplicar: distributiva, todos com todos
+(2x + 3)(x − 4) = 2x² − 8x + 3x − 12 = 2x² − 5x − 12
+Cada termo do primeiro parêntese multiplica cada termo do segundo: são 2 × 2 = 4 produtos antes de reduzir.
+O sinal de menos antes do parêntese
+Um “−” antes de parênteses troca o sinal de todos os termos de dentro: 5 − (x − 3) = 5 − x + 3 = 8 − x. Trocar só o primeiro termo é erro frequente e silencioso.
+Nas potências, valem as regras de Potenciação e radiciação: x² · x³ = x⁵ (soma os expoentes) e (3x)² = 9x² (o expoente atinge o coeficiente também).
+04 Produtos notáveis
+Alguns produtos aparecem tanto que vale guardar o resultado pronto. Os três primeiros são obrigatórios; o cubo aparece menos, mas cai.
+Quadrado da soma
+(a + b)² = a² + 2ab + b²
+“O quadrado do primeiro, mais duas vezes o primeiro pelo segundo, mais o quadrado do segundo.”
+Quadrado da diferença
+(a − b)² = a² − 2ab + b²
+Só o termo do meio muda de sinal. O b² continua positivo.
+Produto da soma pela diferença
+(a + b)(a − b) = a² − b²
+Os termos do meio, −ab e +ab, se cancelam.
+Cubo da soma e da diferença
+(a + b)³ = a³ + 3a²b + 3ab² + b³
+(a − b)³ = a³ − 3a²b + 3ab² − b³
+O desenho do cabeçalho mostra por que o quadrado da soma tem quatro partes: um quadrado de lado a + b se divide em a², b² e dois retângulos a · b. Exemplos no formato que a prova usa:
+ | Produto | Desenvolvido | Por quê
+ | (x + 5)² | x² + 10x + 25 | 2 · x · 5 = 10x
+ | (2x − 3)² | 4x² − 12x + 9 | (2x)² = 4x² e 2 · 2x · 3 = 12x
+ | (x + 7)(x − 7) | x² − 49 | soma pela diferença
+ | (1 + i)² | 1 + 2i + i² | juros compostos de dois períodos
+05 O erro mais famoso da álgebra
+Escrever (a + b)² = a² + b² é tão comum que tem apelido: o “sonho do calouro”. O ENEM sabe disso e coloca o resultado errado entre as alternativas.
+Com números, o erro fica visível. Um quadrado de lado 3 + 4 tem 49 quadradinhos. Somando só 3² e 4², sobram 25: ficaram de fora os dois retângulos de 3 · 4, que são exatamente o termo 2ab.
+Potência não se distribui na soma
+(a · b)² = a² · b² está certo: na multiplicação, o expoente se distribui. Na soma, não: (a + b)² ≠ a² + b². O mesmo vale para raiz: √(9 + 16) = 5, mas √(9) + √(16) = 7.
+O teste de 10 segundos
+Na dúvida se duas expressões são equivalentes, substitua um número simples nas duas. Com a = 1 e b = 2: (1 + 2)² = 9, mas 1² + 2² = 5. Resultados diferentes provam que as expressões não são iguais. Use valores como 2 ou 3; evite 0 e 1 sozinhos, que escondem diferenças (1² = 1).
+06 Fatoração: o caminho de volta
+Fatorar é escrever uma soma como produto. É o caminho inverso do produto notável, e serve para simplificar frações, resolver equações e fazer contas de cabeça.
+ | Caso | Como reconhecer | Exemplo
+ | Fator comum | algo se repete em todos os termos | 6x² + 9x = 3x(2x + 3)
+ | Agrupamento | quatro termos, fator comum aos pares | ax + 3a + 2x + 6 = (a + 2)(x + 3)
+ | Diferença de quadrados | dois quadrados com sinal − | x² − 25 = (x + 5)(x − 5)
+ | Trinômio quadrado perfeito | dois quadrados e o “dobro do produto” | 4x² + 12x + 9 = (2x + 3)²
+ | Trinômio soma e produto | x² + Sx + P: dois números de soma S e produto P | x² + 5x + 6 = (x + 2)(x + 3)
+Como saber se é trinômio quadrado perfeito
+Tire a raiz dos termos das pontas e confira o do meio. Em x² − 6x + 9: as raízes são x e 3, e 2 · x · 3 = 6x confere. Então x² − 6x + 9 = (x − 3)². Se o termo do meio não bater, não é quadrado perfeito.
+Por que a² − b² = (a + b)(a − b). Tirando um quadrado de lado b de um quadrado de lado a, sobra um L. Cortado em dois retângulos e remontado, o L vira um retângulo de lados a + b e a − b: mesma área, agora escrita como produto.
+Comece sempre pelo fator comum. Depois veja se o que sobrou é um produto notável: x³ − 4x = x(x² − 4) = x(x + 2)(x − 2).
+07 Frações algébricas: simplificar só fatores
+Uma fração algébrica se simplifica como uma fração numérica: fatore em cima e embaixo e corte fatores iguais.
+Exemplo
+(x² − 9/x² + 3x) = ((x + 3)(x − 3)/x(x + 3)) = (x − 3/x), com x ≠ 0 e x ≠ −3
+Cortar termo é proibido
+Em (x + 3/3) não se corta o 3: ele é termo do numerador, não fator. Com x = 6: (6 + 3/3) = 3, e não 6. Só se cancela o que está multiplicando tudo em cima e tudo embaixo.
+Condição de existência
+O denominador não pode ser zero. Os valores que anulam o denominador original continuam proibidos mesmo depois da simplificação: em (x − 3/x) o −3 não zera nada, mas ele foi excluído antes de cortar.
+08 Cálculo mental com produtos notáveis
+Sem calculadora, os produtos notáveis viram atalhos de conta. A ideia é escrever os números perto de uma dezena, centena ou milhar redondos.
+ | Conta | Reescrita | Resultado
+ | 101² | (100 + 1)² = 10 000 + 200 + 1 | 10 201
+ | 998² | (1 000 − 2)² = 1 000 000 − 4 000 + 4 | 996 004
+ | 49 · 51 | (50 − 1)(50 + 1) = 2 500 − 1 | 2 499
+ | 87² − 13² | (87 + 13)(87 − 13) = 100 · 74 | 7 400
+ | 2 025² − 2 024² | (2 025 + 2 024) · 1 | 4 049
+O sinal de que existe atalho
+Dois fatores à mesma distância de um número redondo (49 e 51, 997 e 1 003) pedem soma pela diferença. Uma diferença de dois quadrados grandes pede (a + b)(a − b). Se a conta direta parece longa demais para a prova, provavelmente há um produto notável escondido.
+09 Estratégia de prova
+1 · Teste as alternativas com um número
+Quando a pergunta é “qual expressão é equivalente”, escolha um valor simples (x = 2), calcule a expressão do enunciado e calcule cada alternativa. A que bater é a resposta. Se duas baterem, teste um segundo valor. É mais rápido e mais seguro que desenvolver tudo.
+2 · Traduza uma frase de cada vez
+Em enunciados longos, escreva cada informação como uma expressão separada (“corrida 1: x”, “corrida 2: x + 3”, “bandeirada: 6 por corrida”) e só depois junte tudo. Montar a expressão inteira de uma vez é onde se perde um termo.
+3 · Procure o termo do meio nos distratores
+Se uma alternativa é igual à correta sem o 2ab, ou com ele pela metade, ela foi feita para quem caiu no sonho do calouro. Reconhecer o distrator ajuda a confirmar a escolha certa.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Matemática Financeira | montante de dois períodos: C(1 + i)² | 10% ao mês por dois meses dá 1,1² = 1,21: 21%, não 20%. O 1% a mais é o i².
+ | Física | energia cinética (mv²/2) | dobrar a velocidade multiplica a energia por 4, porque (2v)² = 4v²
+ | Geometria | áreas e volumes com medidas variáveis | aumentar o lado em k acrescenta 2kx + k² à área do quadrado
+ | Equação do 2º grau | completar quadrado e fatorar | a fórmula de Bhaskara nasce do quadrado da soma (próximos assuntos)
+O tema de juros compostos está em Juros compostos e montante, do bloco de Matemática Financeira; aqui basta perceber que o i² é o “juro sobre juro”.
+11 Os erros que mais custam pontos
+(a + b)² = a² + b² → a² + 2ab + b²Falta o termo do meio, os dois retângulos do desenho.
+(a − b)² = a² − b² → a² − 2ab + b²O b² continua positivo; a² − b² é outro produto.
+−2² = 4 → −2² = −4 e (−2)² = 4Ao substituir um negativo, use parênteses.
+5 − (x − 3) = 5 − x − 3 → 5 − x + 3O menos antes do parêntese troca todos os sinais.
+2x + 3x² = 5x³ → não se juntamSó termos semelhantes se somam.
+(3x)² = 3x² → 9x²O expoente atinge o coeficiente também.
+Cortar o 3 em (x + 3)/3 → só se cortam fatoresFatore antes de simplificar.
+“o dobro da soma” = 2x + 3 → 2(x + 3)A ordem das palavras define os parênteses.
+x² − 16 = (x − 4)² → (x + 4)(x − 4)Diferença de quadrados não é quadrado da diferença.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de desenvolver, pergunte: dá para testar com um número? Há um produto notável escondido?
+Questão 1 · Traduzir o enunciado em expressão
+Um aplicativo de transporte cobra, por corrida, uma tarifa fixa de R$ 6,00 mais R$ 2,50 por quilômetro rodado. Em um dia, uma pessoa fez duas corridas: a primeira de x quilômetros e a segunda 3 quilômetros mais longa que a primeira. A expressão que dá o valor total pago pelas duas corridas, em reais, é
+2,5x + 13,5
+5x + 13,5
+5x + 19,5
+5x + 15
+17x + 25,5
+Ver resolução
+Uma informação de cada vez. Tarifas fixas: duas corridas, 2 · 6 = 12. Quilômetros: x + (x + 3) = 2x + 3. Custo dos quilômetros: 2,5(2x + 3) = 5x + 7,5.
+12 + 5x + 7,5 = 5x + 19,5
+A alternativa A soma só a segunda corrida (6 + 2,5(x + 3)); a B cobra uma tarifa fixa só; a D esquece de multiplicar os 3 km extras por 2,50; a E multiplica a tarifa fixa pelos quilômetros, (6 + 2,5)(2x + 3).
+Conferência: com x = 2, as corridas têm 2 e 5 km e custam 11 + 18,5 = 29,5; e 5 · 2 + 19,5 = 29,5.
+Alternativa C
+Questão 2 · Área ampliada e o termo do meio
+Um terreno quadrado tem lado de x metros. O proprietário vai aumentar cada lado em 3 metros, mantendo a forma quadrada. O aumento da área do terreno, em metros quadrados, é dado por
+9
+6x
+3x + 9
+6x + 9
+x² + 6x + 9
+Ver resolução
+Área nova menos área antiga:
+(x + 3)² − x² = x² + 6x + 9 − x² = 6x + 9
+A alternativa A é o sonho do calouro: (x + 3)² = x² + 9, o que deixaria só 9. A B esquece o quadradinho de canto 3²; a C conta só um dos dois retângulos 3x; a E é a área nova inteira, não o aumento.
+Alternativa D
+Questão 3 · Conta grande sem calculadora
+Um depósito recebeu 1 003 caixas, cada uma com 997 parafusos. O número total de parafusos recebidos é
+999 991
+999 994
+999 997
+1 000 000
+1 000 009
+Ver resolução
+Os dois fatores estão a 3 unidades de 1 000. É o produto da soma pela diferença:
+1 003 · 997 = (1 000 + 3)(1 000 − 3) = 1 000 000 − 9 = 999 991
+A D aproxima tudo para 1 000 · 1 000 e ignora o 3²; a E troca o sinal do 9; a B subtrai 2 · 3 = 6, como se fosse o termo do meio de um quadrado; a C subtrai só 3.
+Alternativa A
+Questão 4 · Simplificar fatorando
+Para x ≠ −4, a expressão (x² − 16/x² + 8x + 16) é igual a
+(−2/x + 2)
+(x − 4/x + 4)
+(x + 4/x − 4)
+x − 4
+((x − 4)²/(x + 4)²)
+Ver resolução
+Em cima, diferença de quadrados; embaixo, trinômio quadrado perfeito (2 · x · 4 = 8x confere):
+((x + 4)(x − 4)/(x + 4)²) = (x − 4/x + 4)
+A alternativa A “corta” o x² de cima com o de baixo, cortando termos em vez de fatores: sobra (−16/8x + 16). A C inverte o resultado. A D trata o denominador como x + 4, esquecendo que ele é um quadrado. A E fatora x² − 16 como (x − 4)².
+Conferência: com x = 0, a expressão vale (−16/16) = −1, e (0 − 4/0 + 4) = −1.
+Alternativa B
+Questão 5 · Usar o produto notável ao contrário
+Um retângulo tem perímetro de 18 cm e área de 14 cm². O quadrado da medida da diagonal desse retângulo, em centímetros quadrados, é
+53
+67
+81
+95
+109
+Ver resolução
+Chame os lados de a e b. O perímetro dá a + b = 9; a área, ab = 14. Pelo teorema de Pitágoras, o quadrado da diagonal é a² + b². Do quadrado da soma:
+a² + b² = (a + b)² − 2ab = 81 − 28 = 53
+A C usa (a + b)² direto, o sonho do calouro de trás para frente. A B subtrai só ab, esquecendo o 2. A D e a E somam em vez de subtrair.
+Conferência: os lados são 2 e 7 (soma 9, produto 14), e 4 + 49 = 53.
+Alternativa A
+Questão 6 · Modelar a área de uma base
+De uma folha retangular de papelão de 30 cm por 20 cm, recortam-se quatro quadrados de lado x centímetros, um em cada canto. Dobrando as abas, obtém-se uma caixa sem tampa. A área do fundo dessa caixa, em cm², é
+600 − 4x²
+600 − 100x
+x² − 50x + 600
+600 − 100x − 4x²
+4x² − 100x + 600
+Ver resolução
+Cada lado da folha perde x nas duas pontas. O fundo mede (30 − 2x) por (20 − 2x):
+(30 − 2x)(20 − 2x) = 600 − 60x − 40x + 4x² = 4x² − 100x + 600
+A A é a área da folha que sobra depois do recorte, que inclui as abas laterais, não só o fundo. A C tira x de cada lado uma vez só, (30 − x)(20 − x). A B esquece o produto (−2x)(−2x); a D o calcula com o sinal errado.
+Alternativa E
+Questão 7 · Expressão equivalente
+A expressão (2x − 3)² − (2x + 3)² é equivalente a
+0
+−24x
+−12x
+24x
+8x² + 18
+Ver resolução
+Desenvolvendo os dois quadrados:
+(4x² − 12x + 9) − (4x² + 12x + 9) = −24x
+Mais rápido, como diferença de quadrados: [(2x − 3) + (2x + 3)] · [(2x − 3) − (2x + 3)] = 4x · (−6) = −24x.
+A A vem do sonho do calouro: sem os termos do meio, tudo se cancela. A C usa 6x como termo do meio, esquecendo o 2 de 2ab. A D erra o sinal ao tirar o parêntese. A E soma os quadrados em vez de subtrair.
+Alternativa B
+Questão 8 · Aumento e desconto iguais
+Uma loja aumentou em 30% o preço de um produto. Semanas depois, deu um desconto de 30% sobre o novo preço. Em relação ao preço original, o preço final
+ficou igual ao preço original.
+ficou 0,09% menor que o original.
+ficou 0,9% menor que o original.
+ficou 9% maior que o original.
+ficou 9% menor que o original.
+Ver resolução
+Aumento e desconto se aplicam por fatores (veja Porcentagem). O preço final é o original multiplicado por:
+(1 + 0,3)(1 − 0,3) = 1 − 0,3² = 1 − 0,09 = 0,91
+É o produto da soma pela diferença: sobra sempre −p², uma perda. O preço caiu 9%.
+A A supõe que +30% e −30% se cancelam, mas o desconto incide sobre um valor maior. A B lê 0,09 como 0,09%, esquecendo de multiplicar por 100. A C erra a casa decimal. A D troca o sinal do p².
+Alternativa E
+Questão 9 · Cubo da soma
+Um reservatório tem a forma de um cubo de aresta x metros. Num projeto de ampliação, a aresta será aumentada em 1 metro. O acréscimo de volume, em metros cúbicos, será
+1
+3x + 1
+3x² + 1
+3x² + 3x + 1
+x³ + 3x² + 3x + 1
+Ver resolução
+Volume novo menos volume antigo, com o cubo da soma:
+(x + 1)³ − x³ = x³ + 3x² + 3x + 1 − x³ = 3x² + 3x + 1
+A A é o sonho do calouro em versão cúbica, (x + 1)³ = x³ + 1. A B e a C esquecem um dos termos do meio. A E é o volume novo inteiro, não o acréscimo.
+Conferência: com x = 2, o volume passa de 8 para 27, acréscimo de 19; e 3 · 4 + 3 · 2 + 1 = 19.
+Alternativa D
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Traduzo frases em expressões, distinguindo “o dobro da soma” de “a soma do dobro”
+Calculo valor numérico substituindo negativos entre parênteses
+Somo apenas termos semelhantes e multiplico polinômios pela distributiva completa
+Troco todos os sinais ao eliminar um parêntese precedido de menos
+Desenvolvo de cabeça o quadrado da soma e o da diferença
+Reconheço o produto da soma pela diferença e o uso nos dois sentidos
+Explico com o desenho do quadrado por que (a + b)² ≠ a² + b²
+Desenvolvo o cubo da soma quando a questão envolve volume
+Fatoro por fator comum, agrupamento, diferença de quadrados e trinômio
+Simplifico frações algébricas cortando só fatores, com a condição de existência
+Uso produtos notáveis para fazer contas como 49 · 51 e 87² − 13² sem calculadora
+Obtenho a² + b² a partir de a + b e ab
+Testo alternativas substituindo um número quando a pergunta é de equivalência
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez de modelagem (escrever a expressão a partir de um texto). Depois siga para Equações e inequações do 1º grau, onde estas ferramentas passam a encontrar valores desconhecidos.
+Flashcards para o Anki
+Foram gerados 46 cartões deste assunto no arquivo ENEM-Matematica-19-expressoes-algebricas-produtos-notaveis.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. Este é o primeiro assunto do bloco, então a importação cria o deck ENEM::Matemática::Álgebra e Funções; os próximos assuntos do bloco se somam a ele.

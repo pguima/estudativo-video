@@ -1,0 +1,59 @@
+Um grão de trigo na primeira casa do xadrez, dois na segunda, quatro na terceira… Na sexagésima quarta casa, a soma passa de dezoito quintilhões de grãos: centenas de vezes a produção mundial de trigo de um ano. E a fórmula que faz essa conta cabe numa linha.
+
+Este é o segundo episódio da série de Progressão geométrica. Ao final, você vai somar qualquer PG finita e resolver problemas de três números em PG em poucas linhas.
+
+Três lembretes rápidos. Do episódio um: a PG é uma máquina de multiplicar. O termo de posição n é o primeiro vezes q elevado a n menos um. Da série de Progressão aritmética: três números em PA se escrevem x menos r, x, x mais r. E da série de Equação do segundo grau: Bhaskara acha as raízes de qualquer equação com x ao quadrado. Só isso.
+
+Na PA, o termo do meio é a média dos vizinhos. E na PG? Pense assim: a PG é a PA com a soma trocada por multiplicação. Na PA, você soma os vizinhos e divide por dois. Na PG, você multiplica os vizinhos. O termo do meio, ao quadrado, dá esse produto. Isso tem nome: média geométrica. É o número que, ao quadrado, dá o produto dos dois vizinhos.
+
+Vamos testar. Quatro, x, vinte e cinco estão em PG, com termos positivos. Quanto vale x? x ao quadrado é quatro vezes vinte e cinco: cem. x é dez. Confira na máquina: quatro vezes dois e meio, dez. Dez vezes dois e meio, vinte e cinco. A mesma razão.
+
+E quando o problema dá o produto de três números em PG? Na PA, você chamava de x menos r, x, x mais r. Na PG, troque por divisão e multiplicação: x sobre q, x, x vezes q. Isso se chama notação simétrica: o x no centro, e a razão saindo igual para os dois lados.
+
+E por que isso ajuda? Multiplique os três. O q de cima cancela o q de baixo. O q some. Sobra x vezes x vezes x, x ao cubo. Produto sessenta e quatro? Que número vezes ele mesmo, três vezes, dá sessenta e quatro? Quatro. Atalho: o termo do meio é a raiz cúbica do produto. Sai na hora, sem saber a razão.
+
+E numa PG mais comprida? Lembra dos termos equidistantes da PA? São os que estão à mesma distância das pontas: o primeiro e o último, o segundo e o penúltimo. Na PA um, três, cinco, sete, nove, onze, cada par soma doze. Na PG um, dois, quatro, oito, dezesseis, trinta e dois, cada par tem o mesmo produto: um vezes trinta e dois, dois vezes dezesseis, quatro vezes oito. Todos dão trinta e dois. De novo: a soma da PA vira produto na PG.
+
+E como somar os termos de uma PG sem somar um por um? A soma finita é tudo somado, do primeiro até o de posição n. Ela se escreve esse ene. Escreva a soma: a um, mais a um vezes q, mais a um vezes q ao quadrado, até o último. Agora o truque: multiplique a soma inteira por q. Cada parcela sobe um degrau.
+
+E o que acontece quando você subtrai? Coloque as duas linhas uma sobre a outra. Quase todas as parcelas são iguais. Na subtração, elas se apagam. Sobra só a última da linha de cima menos a primeira da linha de baixo. Arrumando: esse ene é igual a a um, vezes q elevado a n, menos um, dividido por q menos um. Com q diferente de um. Se q for um, todos os termos são iguais, e a soma é n vezes a um.
+
+Tem jeito de lembrar sem decorar? Atalho: a soma é o próximo termo menos o primeiro, dividido por q menos um. É exatamente o que sobrou na subtração: a última parcela, empurrada um degrau, menos a primeira. Na razão dois, o divisor é um: a soma é o próximo termo menos o primeiro.
+
+Quantas pessoas recebem uma corrente de mensagens? No primeiro dia, três pessoas recebem. Cada uma repassa, no dia seguinte, para três pessoas novas. Por dia: três, nove, vinte e sete, oitenta e um, duzentos e quarenta e três, setecentos e vinte e nove. Só no sexto dia: setecentas e vinte e nove pessoas. Ao todo: três, vezes três elevado a seis menos um, sobre dois. Três vezes setecentos e vinte e oito, dividido por dois: mil e noventa e dois.
+
+Mas como saber qual dos dois números a questão quer? Atalho: antes de qualquer conta, escreva termo ou soma? No sexto dia é termo. Ao todo é soma. E liste os primeiros termos para conferir. Três mais nove mais vinte e sete: trinta e nove. Pela fórmula, com três dias: três vezes vinte e seis, sobre dois: trinta e nove. Bateu.
+
+E o tabuleiro do gancho? Primeira casa: um grão. Razão dois. Sessenta e quatro casas. A soma: um, vezes dois elevado a sessenta e quatro menos um, dividido por dois menos um, que é um. Sobra dois elevado a sessenta e quatro, menos um. Isso dá cerca de um vírgula oito vezes dez elevado a dezenove grãos. Dezoito quintilhões. É a força de uma PG de razão dois.
+
+Sua vez. Quanto dá dois, mais seis, mais dezoito, e assim por diante, com seis termos? Pause e tente.
+
+Vamos juntos. Termo ou soma? Soma. A razão: seis dividido por dois, três. Esse seis: dois, vezes três elevado a seis menos um, dividido por três menos um. Dois vezes setecentos e vinte e oito, dividido por dois. Setecentos e vinte e oito. Confira somando: dois, seis, dezoito, cinquenta e quatro, cento e sessenta e dois, quatrocentos e oitenta e seis. Total: setecentos e vinte e oito. Bateu.
+
+Vamos guardar em três frases. Um: na PG, o termo do meio ao quadrado é o produto dos vizinhos. Dois: três em PG: x sobre q, x e x vezes q. Três: soma finita: a um vezes, q elevado a n menos um, dividido por, q menos um.
+
+Agora, os três erros clássicos. Primeiro: dizer que o total da corrente é três elevado a seis, setecentos e vinte e nove. Parece certo, porque três elevado a seis é o número que aparece no sexto dia. Mas esse é só o último dia. O total soma os seis dias: mil e noventa e dois.
+
+Segundo: esquecer de dividir por q menos um. Na conta que fizemos juntos: dois vezes setecentos e vinte e oito, mil quatrocentos e cinquenta e seis. Parece certo, porque o começo da fórmula está todo ali. Mas, na subtração, sobrou q menos um vezes a soma. Falta dividir: setecentos e vinte e oito.
+
+Terceiro: usar a fórmula da soma da PA numa PG. Dois mais quatrocentos e oitenta e seis, vezes seis, sobre dois: mil quatrocentos e sessenta e quatro. Parece certo, porque na série de PA essa conta sempre funcionou. Mas ela vale quando os termos crescem somando. Na PG, eles crescem multiplicando: use a fórmula da PG.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. No primeiro dia de uma campanha, três pessoas recebem uma mensagem. Cada pessoa que recebe a repassa, no dia seguinte, a exatamente três pessoas que ainda não a tinham recebido. O total de pessoas que terão recebido a mensagem ao fim do sexto dia é: A: dezoito. B: setecentos e vinte e nove. C: mil e noventa e dois. D: dois mil cento e oitenta e quatro. E: dois mil cento e oitenta e sete. Pause o vídeo e tente.
+
+Termo ou soma? Total: é soma. Liste: três, nove, vinte e sete, oitenta e um, duzentos e quarenta e três, setecentos e vinte e nove. PG de razão três. Três vezes setecentos e vinte e oito, dividido por dois: mil e noventa e dois. Letra C!
+
+E as armadilhas? A A trata o crescimento como linear: três por dia, durante seis dias. A B conta só o sexto dia. A D esquece de dividir por q menos um, que é dois. E a E calcula três elevado a sete: quem receberia no sétimo dia.
+
+E esta é sua. As idades de três irmãos, em anos, são números inteiros em progressão geométrica crescente. O produto das três idades é duzentos e dezesseis, e a soma é dezenove. A idade do irmão mais velho é: A: quatro. B: seis. C: nove. D: doze. E: treze. Pause o vídeo e tente.
+
+Conferindo. Produto dado: notação simétrica. x sobre q, x, x vezes q. x ao cubo é duzentos e dezesseis: x é seis. Agora a soma: seis sobre q, mais seis, mais seis q, igual a dezenove. Multiplique tudo por q e arrume: seis q ao quadrado, menos treze q, mais seis, igual a zero. Bhaskara: delta é cento e sessenta e nove menos cento e quarenta e quatro, vinte e cinco. q é três meios ou dois terços.
+
+E qual das duas? A PG é crescente: q é três meios. Idades: quatro, seis, nove. Confira: quatro mais seis mais nove, dezenove. Quatro vezes seis vezes nove, duzentos e dezesseis. Letra C!
+
+E as armadilhas? A A é o irmão mais novo. A B é o do meio, que sai direto do produto. A D supõe razão dois sem usar a soma: três, seis e doze somam vinte e um, não dezenove. E a E subtrai a idade do meio da soma.
+
+Para fechar, as mesmas três frases. Um: na PG, o termo do meio ao quadrado é o produto dos vizinhos. Dois: três em PG: x sobre q, x e x vezes q. Três: soma finita: a um vezes, q elevado a n menos um, dividido por, q menos um.
+
+Pinte metade de um quadrado, depois metade do que sobrou, e assim para sempre. Infinitas pinceladas. A área pintada fica infinita? Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você chutaria quantos grãos cabem no tabuleiro? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

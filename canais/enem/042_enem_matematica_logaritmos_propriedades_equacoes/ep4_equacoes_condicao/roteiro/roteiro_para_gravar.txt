@@ -1,0 +1,45 @@
+Numa equação logarítmica que vira equação do segundo grau, a alternativa com as duas raízes sempre está lá. E quase sempre está errada.
+
+Este é o quarto episódio da série de Logaritmos. Ao final, você vai resolver equações logarítmicas em quatro passos e nunca mais aceitar uma raiz proibida.
+
+Três lembretes rápidos. Do episódio um: o logaritmando, o número de dentro do log, tem que ser positivo. Do episódio dois: log de M mais log de N é o log de M vezes N. E da série de Equação do segundo grau: x ao quadrado mais três x menos dez igual a zero. Soma menos três, produto menos dez: dois e menos cinco. São as raízes: os valores de x que deixam a equação verdadeira.
+
+Imagine uma porta com um segurança. Na placa está escrito: log de x. E o segurança só deixa entrar número positivo. Chega o três. Documento em dia: pode entrar. Chega o menos dois. Barrado. Log de menos dois não existe. Esse segurança é a condição de existência: a regra de quem pode ficar dentro do log.
+
+E onde ele trabalha? Numa equação logarítmica: uma equação em que o x aparece dentro de um log. A raiz que aparece na conta mas não passa pelo segurança é a raiz estranha. As que sobram formam o conjunto solução: a lista das respostas que valem. E se ninguém passar, o conjunto é vazio: nenhuma resposta.
+
+Existe um caminho que funciona sempre? Existe, em quatro passos. Um: escreva as condições de existência. Dois: junte os logs com as propriedades. Três: elimine o log, pela definição ou igualando o que está dentro. Quatro: resolva e descarte o que o segurança barrar.
+
+Primeiro tipo: o log é igual a um número. Log de x menos um, na base três, igual a dois. Passo um: x menos um tem que ser positivo, então x maior que um. Fica anotado no canto. Pela definição: três elevado a dois dá x menos um. Nove igual a x menos um. Então x igual a dez. Dez é maior que um? É. Entra.
+
+Segundo tipo: log dos dois lados, na mesma base. Log de três x menos um igual a log de x mais cinco, os dois na base dois. Condições: os dois de dentro positivos. Se os logs são iguais e a base é a mesma, o que está dentro também é igual. Três x menos um igual a x mais cinco. Dois x igual a seis: x igual a três. Documento: oito e oito, positivos. Entra.
+
+Atalho para o primeiro tipo. Log de alguma coisa na base b igual a c? A base pula para o outro lado e leva o número como expoente. Log de algo na base três igual a dois vira algo igual a três ao quadrado.
+
+Terceiro tipo: vários logs de um lado. Log de x mais log de x mais três igual a um. Sem base escrita: base dez. Condições: x positivo e x mais três positivo. Agora, junte as peças: soma de logs vira o log do produto. Log de x vezes x mais três, igual a um. Pela definição: x vezes x mais três igual a dez elevado a um, dez. Fica x ao quadrado mais três x menos dez igual a zero. Raízes: dois e menos cinco.
+
+Hora do documento. O dois: log de dois e log de cinco. Dois e cinco são positivos. Entra. O menos cinco: log de menos cinco. Não existe. Barrado: é uma raiz estranha. Conjunto solução: só o dois. Conferindo: log de dois mais log de cinco é log de dez: um.
+
+Sua vez. Resolva: log de x mais três, na base dois, igual a quatro. Comece pela condição. Pause e tente.
+
+Vamos juntos. Condição: x mais três positivo, então x maior que menos três. A base pula: x mais três igual a dois elevado a quatro, dezesseis. x igual a treze. Documento: treze mais três dá dezesseis, positivo. Entra.
+
+Vamos guardar em três frases. Um: escreva as condições de existência antes de começar. Dois: junte os logs até sobrar um só de cada lado. Três: toda raiz precisa passar no teste do logaritmando positivo.
+
+Atalho para a prova. Viu uma alternativa com duas raízes? Desconfie. Teste cada raiz só nos logaritmandos originais, um por um. Positivo entra; zero ou negativo é barrado.
+
+Agora, os dois erros clássicos. Primeiro: aceitar o menos cinco em log de x mais log de x mais três igual a um. Parece certo, porque menos cinco é raiz de verdade da equação do segundo grau. Mas a pergunta tem log, e log de menos cinco não existe.
+
+Segundo: somar os de dentro em vez de multiplicar. Parece certo, porque do lado de fora está escrito mais. No mesmo exemplo, somando dá log de dois x mais três igual a um, e x igual a três e meio. Que não confere. Soma de logs vira log do produto.
+
+E esta você faz. O conjunto solução, nos reais, da equação log de x na base dois mais log de x menos dois na base dois igual a três é: A: só o menos dois. B: só o quatro. C: menos dois e quatro. D: só o cinco. E: o conjunto vazio. Pause o vídeo e tente.
+
+Condições: x maior que zero e x maior que dois. Juntas: x maior que dois. Junte as peças: log de x vezes x menos dois, igual a três. A base pula: x ao quadrado menos dois x igual a dois ao cubo, oito. Raízes: quatro e menos dois. Documento: o quatro dá log de quatro e log de dois, positivos. Entra. O menos dois dá log de menos dois. Barrado. Conferindo: dois mais um, três. Letra B!
+
+E as armadilhas? A C pega as duas raízes e esquece de verificar. A A fica justamente com a raiz proibida. A D soma os de dentro: log de dois x menos dois igual a três dá x igual a cinco. E a E descarta também a raiz que valia.
+
+Para fechar, as mesmas três frases. Um: escreva as condições de existência antes de começar. Dois: junte os logs até sobrar um só de cada lado. Três: toda raiz precisa passar no teste do logaritmando positivo.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e treinamos com tempos de crescimento, decaimento e contas com log de dois e log de três.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha marcado a alternativa com as duas raízes? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

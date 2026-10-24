@@ -1,0 +1,263 @@
+Equações do 1º Grau
+Matemática › Álgebra e Funções › Assunto 2 de 18
+Equações e inequações do 1º grau
+Qual plano de celular compensa, quantos cartazes tornam a gráfica mais barata, que nota falta para passar de ano. Por trás dessas perguntas há uma equação ou uma inequação do 1º grau. Montá-la a partir do texto é a parte difícil; resolvê-la é uma sequência de passos que não muda nunca.
+Semana
+6 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Expressões algébricas e produtos notáveis · Frações
+Destrava
+Equação do 2º grau, sistemas lineares, função afim
+Neste assunto
+01 O que o ENEM cobra aqui
+A equação do 1º grau quase nunca aparece pronta na prova. Ela vem escondida num texto, e a questão mede se você consegue montá-la. Os contextos mais frequentes:
+Comparação de planos e tarifas: parte fixa mais parte por unidade (telefonia, táxi, locadora, gráfica). Pede-se o ponto em que os custos se igualam ou a partir de quando um plano é vantajoso.
+Divisões e frações de um total: salário, herança, orçamento, “gastou um terço e depois um quarto”.
+Médias e notas: “qual a nota mínima no trabalho para atingir média 6”.
+Misturas e concentrações: quanto de um ingrediente acrescentar para chegar a certo percentual.
+Isolar uma variável numa fórmula de Física, Química ou Matemática Financeira.
+O que rende mais aqui
+Três hábitos. Nomear a incógnita com clareza (“x = número de minutos”). Inverter o sinal da desigualdade ao multiplicar ou dividir por negativo. E ler o que a pergunta pede: muitas vezes o valor de x não é a resposta, e sim o custo, a idade do outro, o primeiro número inteiro que satisfaz a condição.
+02 Equação: uma balança em equilíbrio
+Definição
+Uma equação do 1º grau na incógnita x pode ser escrita como ax + b = 0, com a ≠ 0. Sua raiz (ou solução) é o valor de x que torna a igualdade verdadeira: x = −(b/a).
+O desenho do cabeçalho resume a regra: uma equação é uma balança equilibrada, e ela continua equilibrada se você fizer a mesma operação nos dois pratos.
+ | Princípio | O que permite | Atalho que você já usa
+ | Aditivo | somar ou subtrair o mesmo número dos dois lados | “passar para o outro lado trocando o sinal”
+ | Multiplicativo | multiplicar ou dividir os dois lados pelo mesmo número diferente de zero | “o que multiplica passa dividindo”
+A balança do cabeçalho
+3x + 4 = 19 → 3x = 15 → x = 5
+Tirou 4 dos dois pratos, depois dividiu os dois por 3. Confira substituindo: 3 · 5 + 4 = 19.
+“Passa dividindo” não muda o sinal
+Em −2x = 10, o −2 passa dividindo com o seu sinal: x = (10/−2) = −5. O atalho “troca o sinal” vale só para o que está somando ou subtraindo.
+03 Resolvendo passo a passo
+Toda equação do 1º grau se resolve com a mesma sequência. Siga a ordem e o sinal não escapa.
+Roteiro
+Elimine os denominadores, multiplicando tudo pelo mmc.
+Elimine os parênteses pela distributiva, cuidando do sinal.
+Separe: termos com x de um lado, números do outro.
+Reduza e divida pelo coeficiente de x.
+Confira substituindo na equação original.
+Com parênteses — atenção ao −3 · (−4)
+5(x − 2) − 3(x − 4) = 18
+5x − 10 − 3x + 12 = 18 → 2x + 2 = 18 → x = 8
+Quem escreve −3x − 12 chega a x = 20, e a conferência denuncia: 5 · 18 − 3 · 16 = 42, não 18.
+Com frações — o menos antes da fração vale para o numerador inteiro
+(x/2) − (x − 4/3) = 3 (mmc = 6)
+3x − 2(x − 4) = 18 → 3x − 2x + 8 = 18 → x = 10
+O traço da fração funciona como parênteses. Esquecer isso dá 3x − 2x − 8 = 18 e x = 26.
+04 Quando não há solução, ou há infinitas
+Às vezes o x desaparece durante a resolução. O que sobra diz tudo.
+ | Equação | Depois de simplificar | Conclusão
+ | 2(x + 3) = 2x + 5 | 0x = −1 (6 = 5) | Nenhuma solução: a igualdade é sempre falsa
+ | 3(x − 2) = 3x − 6 | 0x = 0 | Infinitas soluções: vale para todo x (é uma identidade)
+No contexto da prova
+Dois planos com a mesma tarifa por unidade e taxas fixas diferentes nunca custam o mesmo: um é sempre mais barato, pela diferença das taxas. Se as taxas também forem iguais, os planos são idênticos. A Questão 6 explora isso.
+05 Montar a equação a partir do texto
+É aqui que a questão é ganha ou perdida. O roteiro:
+Escolha a incógnita e escreva o que ela representa, com unidade.
+Escreva as outras quantidades em função dela (veja a tradução em Expressões algébricas e produtos notáveis).
+Ache a frase que dá a igualdade: “é igual a”, “custam o mesmo”, “totaliza”, “sobrou”.
+Resolva e responda o que foi pedido, que pode não ser o x.
+Números consecutivos — a soma de três consecutivos é 84
+x + (x + 1) + (x + 2) = 84 → 3x + 3 = 84 → x = 27
+Os números são 27, 28 e 29.
+Partes de um total — Ana tem o triplo de Bia, e as duas juntas têm R$ 96,00
+x + 3x = 96 → x = 24
+Bia tem R$ 24,00 e Ana, R$ 72,00. Chamar de x a menor parte evita frações.
+Problemas de idade: o tempo passa para todos
+“Daqui a 4 anos” soma 4 à idade de cada pessoa. Se hoje o filho tem f e o pai p, daqui a 4 anos são f + 4 e p + 4. Esquecer de somar em um dos dois é o distrator clássico.
+06 Inequações: a regra que muda tudo
+Uma inequação troca o sinal de igual por <, ≤, > ou ≥. A resposta deixa de ser um número e passa a ser um conjunto de números. Resolve-se exatamente como a equação, com uma única diferença.
+A regra de ouro
+Ao multiplicar ou dividir os dois lados por um número negativo, inverta o sinal da desigualdade. Somar e subtrair não mudam nada.
+Por quê: 2 < 5, mas −2 > −5. Multiplicar por −1 espelha a reta numérica e troca a ordem.
+Exemplo
+−2x + 7 > 1 → −2x > −6 → x < 3
+Dividiu por −2, o > virou <. Teste um valor: x = 0 dá 7 > 1, verdadeiro; x = 4 dá −1 > 1, falso. Confere com x < 3.
+A solução de uma inequação é um trecho da reta. Bolinha aberta quando o extremo não entra (< ou >); fechada quando entra (≤ ou ≥). Em intervalo: ]−∞, 3[ e ]2, 5].
+07 Intervalos e inequações duplas
+ | Desigualdade | Intervalo | Na reta
+ | 2 < x ≤ 5 | ]2, 5] | aberta em 2, fechada em 5
+ | x ≥ −1 | [−1, +∞[ | fechada em −1, seta à direita
+ | x < 3 | ]−∞, 3[ | aberta em 3, seta à esquerda
+O infinito nunca entra: o colchete junto dele fica sempre aberto. Em uma inequação dupla, faça a mesma operação nas três partes ao mesmo tempo:
+Exemplo
+1 < 2x − 3 ≤ 7 → 4 < 2x ≤ 10 → 2 < x ≤ 5
+Somou 3 nas três partes, dividiu as três por 2. Solução: ]2, 5].
+Quando a resposta precisa ser inteira
+Pessoas, cartazes, ingressos: se a inequação dá n > 800, o menor valor que serve é 801, não 800. Se dá n > 342,8, é 343. Releia se a desigualdade é estrita antes de arredondar.
+08 Comparar planos: o ponto de equilíbrio
+O contexto preferido do ENEM para este assunto. Duas tarifas do tipo “fixo + variável” e a pergunta: quando uma compensa?
+Locadora A: R$ 90,00 por dia mais R$ 0,50 por km · Locadora B: R$ 60,00 por dia mais R$ 0,80 por km
+Custos iguais (equação):
+90 + 0,5x = 60 + 0,8x → 30 = 0,3x → x = 100 km
+B mais barata (inequação):
+60 + 0,8x < 90 + 0,5x → 0,3x < 30 → x < 100 km
+O ponto de equilíbrio é o cruzamento das retas. Antes de 100 km pesa mais a taxa fixa, e B, com taxa menor, sai mais barata. Depois, pesa mais o preço por quilômetro, e A passa a compensar. Os gráficos de funções afins são estudados em Função afim.
+O atalho da diferença
+O ponto de equilíbrio é sempre diferença das taxas fixas ÷ diferença dos preços por unidade: (90 − 60/0,80 − 0,50) = (30/0,3) = 100. Quem tem a taxa fixa menor ganha no começo; quem tem o preço por unidade menor ganha no fim.
+09 Estratégia de prova
+1 · Substitua as alternativas
+Quando a montagem da equação parece confusa, teste as alternativas no enunciado. Numa questão de idades, por exemplo, coloque cada idade candidata na história e veja qual fecha. Com cinco opções, raramente passa da terceira.
+2 · Confira antes de marcar
+Substituir a resposta na equação original leva segundos e pega quase todos os erros de sinal. Em inequação, teste um número de dentro e um de fora do intervalo encontrado.
+3 · Releia a pergunta depois de achar o x
+O ENEM costuma colocar o valor de x entre as alternativas mesmo quando pede outra coisa: o custo no ponto de equilíbrio, a idade do pai, o volume final. Sublinhe o que é pedido antes de começar.
+10 Onde isso aparece nas outras áreas
+ | Área | Fórmula | Isolando a incógnita
+ | Matemática Financeira | M = C(1 + it) | R$ 2.000,00 a 2% ao mês viram R$ 2.480,00 em t: 1,24 = 1 + 0,02t, logo t = 12 meses
+ | Física (MUV) | v = v_0 + at | de 10 m/s a 30 m/s com 4 m/s²: 30 = 10 + 4t, logo t = 5 s
+ | Física (termometria) | F = 1,8C + 32 | 86 °F: 86 = 1,8C + 32, logo C = 30 °C
+Em todas, a fórmula é uma equação do 1º grau na incógnita procurada. O assunto Juros simples e as páginas de Física trazem os contextos completos.
+11 Os erros que mais custam pontos
+Dividir por negativo sem inverter → < vira >−2x > −6 dá x < 3, não x > 3.
+−3(x − 4) = −3x − 12 → −3x + 12Menos vezes menos dá mais.
+− (x − 4)/3 com o −4 intacto → o menos atinge o numerador inteiroO traço de fração funciona como parênteses.
+−2x = 10 → x = 5 → x = −5O que multiplica passa dividindo com o próprio sinal.
+n > 800 → n = 800 → n = 801Desigualdade estrita exclui o extremo.
+Somar 4 anos só a uma pessoa → o tempo passa para todosDaqui a k anos, cada idade ganha k.
+1/3 + 1/4 = 2/7 → 7/12Frações se somam com o mmc dos denominadores.
+Esquecer que o volume cresce na mistura → o total também mudaAcrescentar soluto aumenta o numerador e o denominador.
+Responder o x quando se pede outra coisa → releia a perguntaO valor de x costuma estar entre as alternativas como armadilha.
+12 Questões comentadas
+Nove questões no formato da prova. Em cada uma, escreva primeiro o que é o x, com unidade.
+Questão 1 · Planos de telefonia
+Uma operadora oferece dois planos de telefonia. No plano Alfa, paga-se uma mensalidade de R$ 50,00 mais R$ 0,40 por minuto de ligação. No plano Beta, a mensalidade é de R$ 20,00 e o minuto custa R$ 0,60. O número de minutos mensais para o qual os dois planos custam o mesmo valor é
+30
+50
+70
+150
+350
+Ver resolução
+Com x minutos:
+50 + 0,4x = 20 + 0,6x → 30 = 0,2x → x = 150
+Conferência: 50 + 60 = 110 e 20 + 90 = 110.
+A A divide a diferença das mensalidades pela soma das tarifas (30 ÷ 1). A B divide pela tarifa do Beta só (30 ÷ 0,6). A C soma mensalidades e tarifas, 70 ÷ 1. A E erra o sinal ao passar o 20 e chega a 70 ÷ 0,2.
+Alternativa D
+Questão 2 · A partir de quantos
+A gráfica P cobra R$ 120,00 de taxa de arte mais R$ 0,35 por cartaz impresso. A gráfica Q não cobra taxa, mas cobra R$ 0,50 por cartaz. O menor número de cartazes para o qual a gráfica P fica mais barata que a Q é
+240
+343
+480
+800
+801
+Ver resolução
+P mais barata que Q:
+120 + 0,35n < 0,50n → 120 < 0,15n → n > 800
+Com 800 cartazes os preços são iguais (R$ 400,00), então o menor número inteiro em que P é mais barata é 801.
+A D é o ponto de empate, que não satisfaz a desigualdade estrita. A A divide 120 por 0,50 e a B divide 120 por 0,35, comparando a taxa com o preço de uma gráfica só. A C erra a subtração 0,50 − 0,35 (usa 0,25).
+Alternativa E
+Questão 3 · Frações de um total
+Uma pessoa gasta (1/3) do seu salário com aluguel e (1/4) do salário com alimentação. Depois desses dois gastos, sobram R$ 1.250,00. O salário dessa pessoa é
+R$ 1.750,00
+R$ 1.979,17
+R$ 2.142,86
+R$ 2.500,00
+R$ 3.000,00
+Ver resolução
+As duas frações são do salário x. Os gastos somam (1/3) + (1/4) = (7/12) do salário; sobram (5/12):
+(5/12)x = 1 250 → x = (1 250 · 12/5) = 3 000
+A A soma as frações errado ((1/3) + (1/4) = (2/7)). A C troca o que sobrou pelo que foi gasto ((7/12)x = 1 250). A D calcula a alimentação sobre o que sobrou do aluguel, e não sobre o salário. A B aplica as frações aos R$ 1.250,00 e soma tudo.
+Alternativa E
+Questão 4 · Dividir por um número negativo
+Após ser desligado, um forno industrial esfria segundo o modelo T = 220 − 8t, em que T é a temperatura, em °C, e t o tempo, em minutos, válido nos primeiros 25 minutos. Por segurança, uma peça só pode ser retirada quando a temperatura for de, no máximo, 60 °C. Para isso, deve-se esperar
+no máximo 7,5 minutos.
+no máximo 20 minutos.
+no mínimo 20 minutos.
+no mínimo 27,5 minutos.
+no mínimo 35 minutos.
+Ver resolução
+“No máximo 60 °C” é T ≤ 60:
+220 − 8t ≤ 60 → −8t ≤ −160 → t ≥ 20
+Dividindo por −8, o ≤ vira ≥. Faz sentido: o forno esfria com o tempo, então é preciso esperar pelo menos 20 minutos.
+A B resolve certo a conta mas não inverte o sinal. A E troca o sinal do 60 (280 ÷ 8). A D calcula quando o modelo chegaria a 0 °C (220 ÷ 8), fora até do prazo de validade. A A divide 60 por 8, sem montar a inequação.
+Alternativa C
+Questão 5 · Problema de idades
+Hoje, a soma das idades de um pai e de seu filho é 52 anos. Daqui a 4 anos, a idade do pai será o triplo da idade do filho. A idade atual do filho é
+11 anos.
+13 anos.
+14 anos.
+15 anos.
+41 anos.
+Ver resolução
+Filho: f; pai: 52 − f. Daqui a 4 anos, os dois ganham 4:
+(52 − f) + 4 = 3(f + 4) → 56 − f = 3f + 12 → 44 = 4f → f = 11
+Conferência: o pai tem 41; daqui a 4 anos, 45 e 15, e 45 = 3 · 15.
+A B ignora os 4 anos (p = 3f). A C soma 4 só ao pai (p + 4 = 3f). A D é a idade do filho daqui a 4 anos, e a E é a idade atual do pai: respostas certas para outras perguntas.
+Alternativa A
+Questão 6 · Equação sem solução
+Duas empresas de frete calculam o preço, em reais, de uma entrega de x quilômetros. A empresa A cobra 40 + 3x; a empresa B cobra 3(x + 12). Comparando as duas, conclui-se que
+os preços se igualam em uma entrega de 12 km.
+os preços se igualam em uma entrega de 4 km.
+A é mais barata em qualquer entrega, por R$ 4,00.
+B é mais barata em qualquer entrega, por R$ 4,00.
+B é mais barata só nas entregas de até 12 km.
+Ver resolução
+Desenvolvendo B: 3x + 36. Igualando os preços:
+40 + 3x = 3x + 36 → 0x = −4
+Não há solução: os preços nunca se igualam. A diferença (40 + 3x) − (3x + 36) = 4 é a mesma para qualquer distância, e B é sempre R$ 4,00 mais barata.
+A A toma o 12 do parêntese como solução; a B transforma a diferença de R$ 4,00 numa distância de 4 km. A C inverte quem é mais barata. A E supõe que as retas se cruzam, mas elas são paralelas: têm a mesma tarifa por quilômetro.
+Alternativa D
+Questão 7 · Nota mínima com pesos
+Em uma disciplina, a média final é calculada com peso 2 para a prova e peso 3 para o trabalho. Para ser aprovado, o aluno precisa de média final igual ou superior a 6,0. Um aluno tirou 4,5 na prova. A menor nota que ele precisa tirar no trabalho para ser aprovado é
+6,0
+7,0
+7,5
+8,5
+10,5
+Ver resolução
+Média ponderada com nota T no trabalho:
+(2 · 4,5 + 3T/5) ≥ 6 → 9 + 3T ≥ 30 → T ≥ 7
+A C usa média simples, (4,5 + T/2) ≥ 6, ignorando os pesos. A D esquece o peso da prova (4,5 + 3T ≥ 30). A E divide 21 por 2 em vez de por 3. A A supõe que basta tirar a própria média exigida.
+Alternativa B
+Questão 8 · Inequação dupla e intervalo
+Um aplicativo cobra, por corrida, C = 6 + 2d reais, em que d é a distância em quilômetros. Um passageiro só ganha um cupom de desconto se a corrida custar mais de R$ 26,00, e ele tem R$ 46,00 disponíveis para pagá-la. As distâncias d que lhe permitem ganhar o cupom e pagar a corrida formam o intervalo
+[10, 20]
+]10, 20[
+]10, 20]
+]13, 23]
+]16, 26]
+Ver resolução
+“Mais de 26” é estrito; “tem 46 para pagar” permite custo igual a 46:
+26 < 6 + 2d ≤ 46 → 20 < 2d ≤ 40 → 10 < d ≤ 20
+Aberto em 10, fechado em 20: ]10, 20].
+A A e a B erram só os colchetes, tratando os dois extremos do mesmo jeito. A D esquece a tarifa fixa (26 < 2d ≤ 46); a E soma 6 em vez de subtrair.
+Alternativa C
+Questão 9 · Mistura e concentração
+Um tanque contém 40 litros de uma mistura com 25% de álcool, em volume. Deseja-se acrescentar álcool puro para que a concentração passe a ser de 40%. A quantidade de álcool puro a acrescentar, em litros, é
+6
+10
+15
+16
+50
+Ver resolução
+Há 0,25 · 40 = 10 L de álcool. Acrescentando x litros, o álcool e o volume total aumentam:
+(10 + x/40 + x) = 0,4 → 10 + x = 16 + 0,4x → 0,6x = 6 → x = 10
+Conferência: 20 L de álcool em 50 L dá 40%.
+A A esquece que o volume cresce (10 + x = 0,4 · 40). A C divide 6 por 0,4 em vez de 0,6. A D é a quantidade de álcool que haveria a 40% nos 40 L originais, e a E é o volume final da mistura.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Resolvo equações do 1º grau aplicando a mesma operação nos dois lados
+Elimino parênteses precedidos de menos sem errar sinal
+Elimino denominadores pelo mmc, tratando o traço da fração como parênteses
+Reconheço equações sem solução (0x = k) e com infinitas soluções (0x = 0)
+Monto a equação a partir de um texto, nomeando a incógnita com unidade
+Resolvo problemas de idade somando o tempo a todas as pessoas
+Inverto o sinal da desigualdade ao multiplicar ou dividir por negativo
+Represento a solução na reta e em notação de intervalo
+Resolvo inequações duplas operando nas três partes
+Encontro o menor inteiro que satisfaz uma desigualdade estrita
+Calculo o ponto de equilíbrio entre dois planos “fixo + variável”
+Resolvo problemas de mistura lembrando que o volume total também muda
+Confiro a resposta substituindo e releio o que a pergunta pede
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, metade delas de comparação de planos e inequações com resposta inteira. Depois siga para Equação do 2º grau e fórmula de Bhaskara.
+Flashcards para o Anki
+Foram gerados 41 cartões deste assunto no arquivo ENEM-Matematica-20-equacoes-inequacoes-1o-grau.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

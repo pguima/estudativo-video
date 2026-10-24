@@ -1,0 +1,61 @@
+Duas sequências começam no dois. Uma soma seis a cada passo: dois, oito, quatorze, vinte, vinte e seis. A outra só dobra: dois, quatro, oito, dezesseis, trinta e dois. No quinto termo, quem dobra já passou na frente. E nunca mais é alcançada.
+
+Este é o primeiro episódio da série de Progressão geométrica. Ao final, você vai reconhecer uma PG, transformar porcentagem em razão e achar qualquer termo sem listar os anteriores.
+
+Três lembretes rápidos. Potência é multiplicação repetida: dois elevado a seis, seis vezes o dois, sessenta e quatro. Crescer cinco por cento é multiplicar por um vírgula zero cinco. E da PA: do primeiro termo ao de posição n, são n menos um passos.
+
+O que acontece quando você dobra uma folha ao meio, e de novo, e de novo? Duas camadas. Quatro. Oito. Dezesseis. Cada número é o anterior vezes dois. Uma cidade que cresce cinco por cento ao ano faz igual: cada ano, vezes um vírgula zero cinco. Isso é uma progressão geométrica, a PG: cada termo é o anterior vezes o mesmo número.
+
+E esse número fixo? É a razão, a letra q. Pense numa máquina de multiplicar: cada termo entra, passa pela máquina vezes q e sai o seguinte. Com q igual a dois, a PG cresce. Com um meio, decresce: oitenta, quarenta, vinte. Com q negativo, os sinais se revezam: alternante. Com q igual a um, constante: cinco, cinco, cinco.
+
+Como descobrir a razão? Divida um termo pelo anterior. O resultado da divisão é o quociente. Em oitenta, quarenta, vinte: quarenta dividido por oitenta, zero vírgula cinco. Não é menos quarenta: isso é a diferença, coisa de PA. Na PG, o que se repete é a divisão.
+
+E quando a questão dá uma porcentagem? Ela vira razão. Fator é o número que multiplica. Atalho: crescer i por cento é multiplicar por um mais i. Cinco por cento: um vírgula zero cinco. Cair i por cento é multiplicar por um menos i. Um carro que perde quinze por cento: zero vírgula oitenta e cinco. Você multiplica pelo que fica, não pela porcentagem.
+
+E como achar o vigésimo termo sem listar todos? Pense na máquina. Até o segundo termo, ela age uma vez. Até o terceiro, duas. Até o de posição n, n menos um vezes. Daí o termo geral, a fórmula que dá qualquer termo: a ene é igual a a um, vezes q elevado a n menos um. Em três, seis, doze: o quinto termo é três vezes dois elevado a quatro, quarenta e oito. Partindo de outro termo, o de posição k: q elevado a n menos k.
+
+E quando a questão fala em tempo? Conte a partir do instante zero. O valor inicial vira o termo zero, a zero. Depois de t períodos: a zero vezes q elevado a t. Você já viu isso na série de Função Exponencial: quinhentas bactérias que dobram a cada vinte minutos. Em duas horas, seis duplicações: trinta e dois mil. É a mesma conta. Só muda quem é o primeiro. Atalho: antes de qualquer potência, escreva o fator e quantas vezes ele age.
+
+E se a questão dá dois termos soltos? O segundo termo é três, e o quinto é vinte e quatro. Atalho: conte as vezes pelos índices: cinco menos dois, três vezes. Então q ao cubo é vinte e quatro dividido por três, oito. Que número, três vezes, dá oito? Dois. Na PA, a distância entre os termos se divide. Na PG, se tira a raiz.
+
+Por que quem dobra nunca mais é alcançada? Coloque as duas para correr. A PA anda em passos iguais, numa reta. A PG sobe por uma curva. No quarto termo, ainda perde: dezesseis contra vinte. No quinto, trinta e dois contra vinte e seis. No sexto, sessenta e quatro contra trinta e dois. A PG é uma função exponencial calculada só em um, dois, três… Com razão maior que um, passa qualquer PA.
+
+E como saber se uma tabela é PA ou PG? Atalho: o teste da tabela. Divida cada valor pelo anterior. Duzentos, trezentos, quatrocentos e cinquenta: quociente sempre um vírgula cinco. PG. Duzentos, trezentos, quatrocentos: diferença sempre cem. PA. Quociente constante: exponencial. Diferença constante: afim.
+
+Sua vez. Um aplicativo tem dois mil usuários e cresce dez por cento ao mês. Qual é a razão, e quantos usuários terá daqui a três meses? Pause e tente.
+
+Vamos juntos. Crescer dez por cento: fator um vírgula um. Quantas vezes ele age? Três, uma por mês. Um vírgula um ao cubo é um vírgula trezentos e trinta e um. Vezes dois mil: dois mil seiscentos e sessenta e dois usuários.
+
+Vamos guardar em três frases. Um: na PG, o que se repete é a divisão de um termo pelo anterior. Dois: crescer i por cento é multiplicar por um mais i. Três: o expoente é o número de vezes que o fator age.
+
+Agora, os quatro erros clássicos. Primeiro: usar q elevado a n, sem o menos um. O quinto termo de três, seis, doze vira noventa e seis. Parece certo, porque é o quinto, então parece expoente cinco. Mas o primeiro termo já está lá. A máquina age quatro vezes: quarenta e oito.
+
+Segundo: dizer que a razão de oitenta, quarenta, vinte é menos quarenta. Parece certo, porque na PA era assim: um menos o outro. Mas na PG você divide. Quarenta dividido por oitenta: zero vírgula cinco.
+
+Terceiro: dobrar seis vezes virar vezes dois vezes seis: seis mil bactérias. Parece certo, porque tem um dois e tem um seis. Mas seis vezes é o expoente: dois elevado a seis, trinta e dois mil.
+
+Quarto: usar zero vírgula zero cinco como razão para cinco por cento. Mil pessoas viram cinquenta. Parece certo, porque zero vírgula zero cinco é cinco por cento. Mas isso é só o aumento. O fator é um vírgula zero cinco.
+
+Agora, uma questão no estilo do ENEM. Esta, eu resolvo com você. A população de um município é de quarenta mil habitantes e deve crescer cinco por cento ao ano. Use um vírgula zero cinco elevado a quatro aproximadamente igual a um vírgula dois um cinco cinco. Daqui a quatro anos, a população será de aproximadamente: A: oito mil. B: quarenta e dois mil. C: quarenta e oito mil. D: quarenta e oito mil seiscentos e vinte. E: cento e sessenta e oito mil. Pause o vídeo e tente.
+
+Fator e vezes. Cinco por cento ao ano: fator um vírgula zero cinco. Ele age quatro vezes. A potência o enunciado já deu: um vírgula dois um cinco cinco. Quarenta mil vezes isso: quarenta e oito mil seiscentos e vinte. Faz sentido: pouco mais de vinte por cento em quatro anos. Letra D!
+
+E as armadilhas? A A é só o aumento, e linear: quatro vezes dois mil. A B é um ano só. A C soma dois mil por ano: crescimento linear, esquecendo que os cinco por cento incidem sobre a população já aumentada. E a E multiplica por um vírgula zero cinco e por quatro, em vez de elevar a quatro.
+
+Agora fazemos juntos. Em um tanque de cultivo, a massa de algas é medida ao fim de cada semana, e os valores formam uma progressão geométrica. Ao fim da segunda semana havia seis gramas de algas e, ao fim da quinta semana, cento e sessenta e dois gramas. Mantido esse padrão, ao fim da sétima semana a massa de algas será de: A: duzentos e sessenta e seis gramas. B: quatrocentos e oitenta e seis gramas. C: novecentos e setenta e dois gramas. D: mil quatrocentos e cinquenta e oito gramas. E: quatro mil trezentos e setenta e quatro gramas. Pause e tente.
+
+Primeiro, a razão. Da segunda à quinta semana, o fator age três vezes. Q ao cubo é cento e sessenta e dois dividido por seis, vinte e sete. Q é três. Da quinta à sétima, mais duas vezes: cento e sessenta e dois vezes nove, mil quatrocentos e cinquenta e oito gramas. Letra D!
+
+E as armadilhas? A A trata como PA: soma cinquenta e dois por semana. A B multiplica uma vez só: sexta semana. A C faz três vezes dois, em vez de elevar. E a E multiplica três vezes: oitava semana.
+
+E esta é sua. Uma loja virtual registrou os clientes cadastrados no início de cada ano, a partir do ano de lançamento, o ano zero. Ano zero: mil. Ano um: mil e duzentos. Ano dois: mil quatrocentos e quarenta. Ano três: mil setecentos e vinte e oito. A expressão que dá os clientes no ano n é: A: mil mais duzentos n. B: mil vezes um vírgula dois n. C: mil vezes zero vírgula dois elevado a n. D: mil e duzentos elevado a n. E: mil vezes um vírgula dois elevado a n. Pause o vídeo e tente.
+
+Conferindo. Teste da tabela: divida cada valor pelo anterior. Dá um vírgula dois, sempre. É PG. O valor inicial é do ano zero: mil. O fator age n vezes. Mil vezes um vírgula dois elevado a n. Teste no ano dois: mil vezes um vírgula quatro quatro, mil quatrocentos e quarenta. Bate. Letra E!
+
+E as armadilhas? A A é linear: acerta o ano um, mas no ano dois dá mil e quatrocentos. A B multiplica por n: zero clientes no ano zero. A C usa a taxa no lugar do fator: a loja encolheria. E a D esquece o valor inicial.
+
+Para fechar, as mesmas três frases. Um: na PG, o que se repete é a divisão de um termo pelo anterior. Dois: crescer i por cento é multiplicar por um mais i. Três: o expoente é o número de vezes que o fator age.
+
+Uma mensagem vai para três pessoas no primeiro dia, e cada uma repassa para três novas no dia seguinte. Em seis dias, quantas pessoas receberam ao todo? Não é três elevado a seis. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: quantas vezes você consegue dobrar uma folha de papel? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,1077 @@
+<title>Equações do 1º Grau</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 2 de 18</p>
+    <h1>Equações e inequações do 1º grau</h1>
+    <p class="deck">Qual plano de celular compensa, quantos cartazes tornam a gráfica mais barata, que nota falta para passar de ano. Por trás dessas perguntas há uma equação ou uma inequação do 1º grau. Montá-la a partir do texto é a parte difícil; resolvê-la é uma sequência de passos que não muda nunca.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 214" role="img" aria-label="Balança em equilíbrio: no prato da esquerda, três caixas x e quatro pesos unitários, isto é 3x mais 4; no da direita, 19. Tirando 4 e dividindo por 3 dos dois lados, x é igual a 5">
+  <line x1="34" y1="96" x2="266" y2="96" style="stroke:var(--c1);stroke-width:5;stroke-linecap:round"/>
+  <line x1="150" y1="96" x2="150" y2="160" style="stroke:var(--c1);stroke-width:4"/>
+  <polygon points="150,156 128,188 172,188" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2;stroke-linejoin:round"/>
+  <line x1="64" y1="96" x2="64" y2="122" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <path d="M32 122 L96 122 L84 146 L44 146 Z" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5;stroke-linejoin:round"/>
+  <line x1="236" y1="96" x2="236" y2="122" style="stroke:var(--ink-3);stroke-width:1.5"/>
+  <path d="M204 122 L268 122 L256 146 L216 146 Z" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.5;stroke-linejoin:round"/>
+  <rect x="30" y="58" width="15" height="15" rx="2" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="37.5" y="69.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-style:italic">x</text>
+  <rect x="48" y="58" width="15" height="15" rx="2" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="55.5" y="69.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-style:italic">x</text>
+  <rect x="66" y="58" width="15" height="15" rx="2" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="73.5" y="69.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-style:italic">x</text>
+  <circle cx="86" cy="62" r="4" style="fill:var(--ink-3);stroke:none;stroke-width:1.5"/>
+  <circle cx="97" cy="62" r="4" style="fill:var(--ink-3);stroke:none;stroke-width:1.5"/>
+  <circle cx="86" cy="72" r="4" style="fill:var(--ink-3);stroke:none;stroke-width:1.5"/>
+  <circle cx="97" cy="72" r="4" style="fill:var(--ink-3);stroke:none;stroke-width:1.5"/>
+  <text x="64" y="50" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3x + 4</text>
+  <text x="236" y="50" text-anchor="middle" class="svg-num" style="fill:var(--ink)">19</text>
+  <rect x="219" y="58" width="34" height="22" rx="3" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="236" y="73" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">19</text>
+  <text x="150" y="26" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">o que se faz de um lado, faz-se do outro</text>
+  <text x="150" y="206" text-anchor="middle" class="svg-lbl" style="fill:var(--c5)">−4 e ÷3 nos dois pratos:  x = 5</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>6 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Expressões algébricas e produtos notáveis · Frações</dd></div>
+      <div><dt>Destrava</dt><dd>Equação do 2º grau, sistemas lineares, função afim</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A equação do 1º grau quase nunca aparece pronta na prova. Ela vem escondida num texto, e a questão mede se você consegue <strong>montá-la</strong>. Os contextos mais frequentes:</p>
+<ul>
+  <li><strong>Comparação de planos e tarifas:</strong> parte fixa mais parte por unidade (telefonia, táxi, locadora, gráfica). Pede-se o ponto em que os custos se igualam ou a partir de quando um plano é vantajoso.</li>
+  <li><strong>Divisões e frações de um total:</strong> salário, herança, orçamento, “gastou um terço e depois um quarto”.</li>
+  <li><strong>Médias e notas:</strong> “qual a nota mínima no trabalho para atingir média 6”.</li>
+  <li><strong>Misturas e concentrações:</strong> quanto de um ingrediente acrescentar para chegar a certo percentual.</li>
+  <li><strong>Isolar uma variável numa fórmula</strong> de Física, Química ou Matemática Financeira.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três hábitos. <strong>Nomear a incógnita</strong> com clareza (“<span class="m"><span class="v">x</span></span> = número de minutos”). <strong>Inverter o sinal da desigualdade</strong> ao multiplicar ou dividir por negativo. E <strong>ler o que a pergunta pede</strong>: muitas vezes o valor de <span class="m"><span class="v">x</span></span> não é a resposta, e sim o custo, a idade do outro, o primeiro número inteiro que satisfaz a condição.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Equação: uma balança em equilíbrio</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>Uma <strong>equação do 1º grau</strong> na incógnita <span class="m"><span class="v">x</span></span> pode ser escrita como <span class="m"><span class="v">ax</span> + <span class="v">b</span> = 0</span>, com <span class="m"><span class="v">a</span> ≠ 0</span>. Sua <strong>raiz</strong> (ou solução) é o valor de <span class="m"><span class="v">x</span></span> que torna a igualdade verdadeira: <span class="m"><span class="v">x</span> = −<span class="frac"><i><span class="v">b</span></i><i><span class="v">a</span></i></span></span>.</p>
+</div>
+<p>O desenho do cabeçalho resume a regra: uma equação é uma balança equilibrada, e ela continua equilibrada se você fizer <strong>a mesma operação nos dois pratos</strong>.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Princípio</th><th>O que permite</th><th>Atalho que você já usa</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Aditivo</strong></td><td>somar ou subtrair o mesmo número dos dois lados</td><td>“passar para o outro lado trocando o sinal”</td></tr>
+    <tr><td><strong>Multiplicativo</strong></td><td>multiplicar ou dividir os dois lados pelo mesmo número diferente de zero</td><td>“o que multiplica passa dividindo”</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="eq">
+  <span class="lbl">A balança do cabeçalho</span>
+  <p class="m">3<span class="v">x</span> + 4 = 19 &nbsp;→&nbsp; 3<span class="v">x</span> = 15 &nbsp;→&nbsp; <span class="v">x</span> = 5</p>
+  <p>Tirou 4 dos dois pratos, depois dividiu os dois por 3. <strong>Confira</strong> substituindo: <span class="m">3 · 5 + 4 = 19</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">“Passa dividindo” não muda o sinal</span>
+  <p>Em <span class="m">−2<span class="v">x</span> = 10</span>, o −2 passa dividindo <strong>com o seu sinal</strong>: <span class="m"><span class="v">x</span> = <span class="frac"><i>10</i><i>−2</i></span> = −5</span>. O atalho “troca o sinal” vale só para o que está somando ou subtraindo.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Resolvendo passo a passo</h2>
+<p>Toda equação do 1º grau se resolve com a mesma sequência. Siga a ordem e o sinal não escapa.</p>
+<div class="box def">
+  <span class="tag">Roteiro</span>
+  <ol style="margin:6px 0 0">
+    <li><strong>Elimine os denominadores</strong>, multiplicando tudo pelo mmc.</li>
+    <li><strong>Elimine os parênteses</strong> pela distributiva, cuidando do sinal.</li>
+    <li><strong>Separe</strong>: termos com <span class="m"><span class="v">x</span></span> de um lado, números do outro.</li>
+    <li><strong>Reduza</strong> e divida pelo coeficiente de <span class="m"><span class="v">x</span></span>.</li>
+    <li><strong>Confira</strong> substituindo na equação original.</li>
+  </ol>
+</div>
+<div class="eq">
+  <span class="lbl">Com parênteses — atenção ao −3 · (−4)</span>
+  <p class="m">5(<span class="v">x</span> − 2) − 3(<span class="v">x</span> − 4) = 18</p>
+  <p class="m">5<span class="v">x</span> − 10 − 3<span class="v">x</span> + 12 = 18 &nbsp;→&nbsp; 2<span class="v">x</span> + 2 = 18 &nbsp;→&nbsp; <span class="v">x</span> = 8</p>
+  <p>Quem escreve <span class="m">−3<span class="v">x</span> − 12</span> chega a <span class="m"><span class="v">x</span> = 20</span>, e a conferência denuncia: <span class="m">5 · 18 − 3 · 16 = 42</span>, não 18.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Com frações — o menos antes da fração vale para o numerador inteiro</span>
+  <p class="m"><span class="frac"><i><span class="v">x</span></i><i>2</i></span> − <span class="frac"><i><span class="v">x</span> − 4</i><i>3</i></span> = 3 &nbsp;&nbsp;(mmc = 6)</p>
+  <p class="m">3<span class="v">x</span> − 2(<span class="v">x</span> − 4) = 18 &nbsp;→&nbsp; 3<span class="v">x</span> − 2<span class="v">x</span> + 8 = 18 &nbsp;→&nbsp; <span class="v">x</span> = 10</p>
+  <p>O traço da fração funciona como parênteses. Esquecer isso dá <span class="m">3<span class="v">x</span> − 2<span class="v">x</span> − 8 = 18</span> e <span class="m"><span class="v">x</span> = 26</span>.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Quando não há solução, ou há infinitas</h2>
+<p>Às vezes o <span class="m"><span class="v">x</span></span> desaparece durante a resolução. O que sobra diz tudo.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Equação</th><th>Depois de simplificar</th><th>Conclusão</th></tr></thead>
+  <tbody>
+    <tr><td class="m">2(<span class="v">x</span> + 3) = 2<span class="v">x</span> + 5</td><td class="m">0<span class="v">x</span> = −1 &nbsp;(6 = 5)</td><td><strong>Nenhuma solução</strong>: a igualdade é sempre falsa</td></tr>
+    <tr><td class="m">3(<span class="v">x</span> − 2) = 3<span class="v">x</span> − 6</td><td class="m">0<span class="v">x</span> = 0</td><td><strong>Infinitas soluções</strong>: vale para todo <span class="m"><span class="v">x</span></span> (é uma identidade)</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">No contexto da prova</span>
+  <p>Dois planos com a <strong>mesma tarifa por unidade</strong> e taxas fixas diferentes nunca custam o mesmo: um é sempre mais barato, pela diferença das taxas. Se as taxas também forem iguais, os planos são idênticos. A Questão 6 explora isso.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Montar a equação a partir do texto</h2>
+<p>É aqui que a questão é ganha ou perdida. O roteiro:</p>
+<ol>
+  <li><strong>Escolha a incógnita</strong> e escreva o que ela representa, com unidade.</li>
+  <li><strong>Escreva as outras quantidades em função dela</strong> (veja a tradução em <strong>Expressões algébricas e produtos notáveis</strong>).</li>
+  <li><strong>Ache a frase que dá a igualdade</strong>: “é igual a”, “custam o mesmo”, “totaliza”, “sobrou”.</li>
+  <li><strong>Resolva e responda o que foi pedido</strong>, que pode não ser o <span class="m"><span class="v">x</span></span>.</li>
+</ol>
+<div class="eq">
+  <span class="lbl">Números consecutivos — a soma de três consecutivos é 84</span>
+  <p class="m"><span class="v">x</span> + (<span class="v">x</span> + 1) + (<span class="v">x</span> + 2) = 84 &nbsp;→&nbsp; 3<span class="v">x</span> + 3 = 84 &nbsp;→&nbsp; <span class="v">x</span> = 27</p>
+  <p>Os números são 27, 28 e 29.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Partes de um total — Ana tem o triplo de Bia, e as duas juntas têm R$ 96,00</span>
+  <p class="m"><span class="v">x</span> + 3<span class="v">x</span> = 96 &nbsp;→&nbsp; <span class="v">x</span> = 24</p>
+  <p>Bia tem R$ 24,00 e Ana, R$ 72,00. Chamar de <span class="m"><span class="v">x</span></span> a <strong>menor</strong> parte evita frações.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Problemas de idade: o tempo passa para todos</span>
+  <p>“Daqui a 4 anos” soma 4 à idade de <strong>cada</strong> pessoa. Se hoje o filho tem <span class="m"><span class="v">f</span></span> e o pai <span class="m"><span class="v">p</span></span>, daqui a 4 anos são <span class="m"><span class="v">f</span> + 4</span> e <span class="m"><span class="v">p</span> + 4</span>. Esquecer de somar em um dos dois é o distrator clássico.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Inequações: a regra que muda tudo</h2>
+<p>Uma <strong>inequação</strong> troca o sinal de igual por <span class="m"><</span>, <span class="m">≤</span>, <span class="m">></span> ou <span class="m">≥</span>. A resposta deixa de ser um número e passa a ser um <strong>conjunto de números</strong>. Resolve-se exatamente como a equação, com uma única diferença.</p>
+<div class="box warn">
+  <span class="tag">A regra de ouro</span>
+  <p>Ao <strong>multiplicar ou dividir</strong> os dois lados por um número <strong>negativo</strong>, <strong>inverta o sinal da desigualdade</strong>. Somar e subtrair não mudam nada.</p>
+  <p>Por quê: <span class="m">2 < 5</span>, mas <span class="m">−2 > −5</span>. Multiplicar por −1 espelha a reta numérica e troca a ordem.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo</span>
+  <p class="m">−2<span class="v">x</span> + 7 > 1 &nbsp;→&nbsp; −2<span class="v">x</span> > −6 &nbsp;→&nbsp; <span class="v">x</span> < 3</p>
+  <p>Dividiu por −2, o <span class="m">></span> virou <span class="m"><</span>. <strong>Teste um valor</strong>: <span class="m"><span class="v">x</span> = 0</span> dá <span class="m">7 > 1</span>, verdadeiro; <span class="m"><span class="v">x</span> = 4</span> dá <span class="m">−1 > 1</span>, falso. Confere com <span class="m"><span class="v">x</span> < 3</span>.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Duas retas numéricas. Na primeira, a solução de menos 2x mais 7 maior que 1: todos os números menores que 3, com bolinha aberta em 3 e seta para a esquerda. Na segunda, a solução de 1 menor que 2x menos 3 menor ou igual a 7: o trecho entre 2, bolinha aberta, e 5, bolinha fechada">
+  <defs>
+    <marker id="ax20" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-3)"/></marker>
+    <marker id="sl20" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+  </defs>
+  <text x="30" y="28" class="svg-num" style="fill:var(--ink)">−2x + 7 &gt; 1   →   x &lt; 3</text>
+  <line x1="22" y1="64" x2="432" y2="64" style="stroke:var(--ink-3);stroke-width:1.5" marker-end="url(#ax20)"/>
+  <line x1="52" y1="60" x2="52" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="52" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="96" y1="60" x2="96" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="96" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="140" y1="60" x2="140" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="140" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="184" y1="60" x2="184" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="184" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="228" y1="60" x2="228" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="228" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="272" y1="60" x2="272" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="272" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="316" y1="60" x2="316" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="316" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="360" y1="60" x2="360" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="360" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="404" y1="60" x2="404" y2="68" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="404" y="84" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">7</text>
+  <line x1="222" y1="64" x2="30" y2="64" style="stroke:var(--c1);stroke-width:4;stroke-linecap:round" marker-end="url(#sl20)"/>
+  <circle cx="228" cy="64" r="5.5" style="fill:var(--surface);stroke:var(--c1);stroke-width:2.2"/>
+  <text x="30" y="116" class="svg-num" style="fill:var(--ink)">1 &lt; 2x − 3 ≤ 7   →   2 &lt; x ≤ 5</text>
+  <line x1="22" y1="152" x2="432" y2="152" style="stroke:var(--ink-3);stroke-width:1.5" marker-end="url(#ax20)"/>
+  <line x1="52" y1="148" x2="52" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="52" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="96" y1="148" x2="96" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="96" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="140" y1="148" x2="140" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="140" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="184" y1="148" x2="184" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="184" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="228" y1="148" x2="228" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="228" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="272" y1="148" x2="272" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="272" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="316" y1="148" x2="316" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="316" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="360" y1="148" x2="360" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="360" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="404" y1="148" x2="404" y2="156" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="404" y="172" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">7</text>
+  <line x1="190" y1="152" x2="316" y2="152" style="stroke:var(--c3);stroke-width:4;stroke-linecap:round"/>
+  <circle cx="184" cy="152" r="5.5" style="fill:var(--surface);stroke:var(--c3);stroke-width:2.2"/>
+  <circle cx="316" cy="152" r="5.5" style="fill:var(--c3);stroke:var(--c3);stroke-width:2.2"/>
+  <text x="230" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">bolinha aberta: fica de fora  ·  fechada: entra</text>
+</svg>
+<figcaption><b>A solução de uma inequação é um trecho da reta.</b> Bolinha aberta quando o extremo não entra (<span class="m"><</span> ou <span class="m">></span>); fechada quando entra (<span class="m">≤</span> ou <span class="m">≥</span>). Em intervalo: <span class="m">]−∞, 3[</span> e <span class="m">]2, 5]</span>.</figcaption>
+</figure>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Intervalos e inequações duplas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Desigualdade</th><th>Intervalo</th><th>Na reta</th></tr></thead>
+  <tbody>
+    <tr><td class="m">2 < <span class="v">x</span> ≤ 5</td><td class="m">]2, 5]</td><td>aberta em 2, fechada em 5</td></tr>
+    <tr><td class="m"><span class="v">x</span> ≥ −1</td><td class="m">[−1, +∞[</td><td>fechada em −1, seta à direita</td></tr>
+    <tr><td class="m"><span class="v">x</span> < 3</td><td class="m">]−∞, 3[</td><td>aberta em 3, seta à esquerda</td></tr>
+  </tbody>
+</table>
+</div>
+<p>O infinito nunca entra: o colchete junto dele fica sempre <strong>aberto</strong>. Em uma <strong>inequação dupla</strong>, faça a mesma operação nas três partes ao mesmo tempo:</p>
+<div class="eq">
+  <span class="lbl">Exemplo</span>
+  <p class="m">1 < 2<span class="v">x</span> − 3 ≤ 7 &nbsp;→&nbsp; 4 < 2<span class="v">x</span> ≤ 10 &nbsp;→&nbsp; 2 < <span class="v">x</span> ≤ 5</p>
+  <p>Somou 3 nas três partes, dividiu as três por 2. Solução: <span class="m">]2, 5]</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Quando a resposta precisa ser inteira</span>
+  <p>Pessoas, cartazes, ingressos: se a inequação dá <span class="m"><span class="v">n</span> > 800</span>, o menor valor que serve é <strong>801</strong>, não 800. Se dá <span class="m"><span class="v">n</span> > 342,8</span>, é 343. Releia se a desigualdade é estrita antes de arredondar.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Comparar planos: o ponto de equilíbrio</h2>
+<p>O contexto preferido do ENEM para este assunto. Duas tarifas do tipo “fixo + variável” e a pergunta: quando uma compensa?</p>
+<div class="eq">
+  <span class="lbl">Locadora A: R$ 90,00 por dia mais R$ 0,50 por km · Locadora B: R$ 60,00 por dia mais R$ 0,80 por km</span>
+  <p><strong>Custos iguais</strong> (equação):</p>
+  <p class="m">90 + 0,5<span class="v">x</span> = 60 + 0,8<span class="v">x</span> &nbsp;→&nbsp; 30 = 0,3<span class="v">x</span> &nbsp;→&nbsp; <span class="v">x</span> = 100 km</p>
+  <p><strong>B mais barata</strong> (inequação):</p>
+  <p class="m">60 + 0,8<span class="v">x</span> < 90 + 0,5<span class="v">x</span> &nbsp;→&nbsp; 0,3<span class="v">x</span> < 30 &nbsp;→&nbsp; <span class="v">x</span> < 100 km</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 232" role="img" aria-label="Gráfico do custo de duas locadoras em função dos quilômetros: a reta A começa em 90 reais e sobe 0,50 por quilômetro; a reta B começa em 60 e sobe 0,80. Elas se cruzam em 100 quilômetros, com custo de 140 reais; antes disso B é mais barata, depois A">
+  <defs>
+    <marker id="ax20b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="64" y1="206" x2="418" y2="206" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax20b)"/>
+  <line x1="64" y1="206" x2="64" y2="14" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#ax20b)"/>
+  <line x1="146.5" y1="206" x2="146.5" y2="210" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="146.5" y="224" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">50</text>
+  <line x1="229" y1="206" x2="229" y2="210" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="229" y="224" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">100</text>
+  <line x1="311.5" y1="206" x2="311.5" y2="210" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="311.5" y="224" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">150</text>
+  <line x1="394" y1="206" x2="394" y2="210" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="394" y="224" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">200</text>
+  <text x="56" y="224" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="60" y1="163.5" x2="64" y2="163.5" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="56" y="167.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">60</text>
+  <line x1="60" y1="121" x2="64" y2="121" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="56" y="125" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">120</text>
+  <line x1="60" y1="78.5" x2="64" y2="78.5" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="56" y="82.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">180</text>
+  <line x1="60" y1="36" x2="64" y2="36" style="stroke:var(--ink-2);stroke-width:1"/>
+  <text x="56" y="40" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">240</text>
+  <text x="418" y="224" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">km</text>
+  <text x="74" y="22" class="svg-lbl" style="fill:var(--ink-3)">custo (R$)</text>
+  <line x1="229" y1="106.8" x2="229" y2="206" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="64" y1="106.8" x2="229" y2="106.8" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="64" y1="142.2" x2="394" y2="71.4" style="stroke:var(--c1);stroke-width:2.5"/>
+  <line x1="64" y1="163.5" x2="394" y2="50.2" style="stroke:var(--c2);stroke-width:2.5"/>
+  <circle cx="229" cy="106.8" r="4.5" style="fill:var(--c4);stroke:none;stroke-width:1.5"/>
+  <text x="239" y="128.8" class="svg-lbl" style="fill:var(--c4)">100 km → R$ 140</text>
+  <text x="394" y="36" text-anchor="end" class="svg-lbl" style="fill:var(--c2)">B: 60 + 0,80x</text>
+  <text x="394" y="108" text-anchor="end" class="svg-lbl" style="fill:var(--c1)">A: 90 + 0,50x</text>
+  <text x="73.9" y="192" text-anchor="" class="svg-lbl" style="fill:var(--ink-3);font-size:10px">antes de 100 km, B é mais barata</text>
+</svg>
+<figcaption><b>O ponto de equilíbrio é o cruzamento das retas.</b> Antes de 100 km pesa mais a taxa fixa, e B, com taxa menor, sai mais barata. Depois, pesa mais o preço por quilômetro, e A passa a compensar. Os gráficos de funções afins são estudados em <strong>Função afim</strong>.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">O atalho da diferença</span>
+  <p>O ponto de equilíbrio é sempre <strong>diferença das taxas fixas ÷ diferença dos preços por unidade</strong>: <span class="m"><span class="frac"><i>90 − 60</i><i>0,80 − 0,50</i></span> = <span class="frac"><i>30</i><i>0,3</i></span> = 100</span>. Quem tem a taxa fixa menor ganha no começo; quem tem o preço por unidade menor ganha no fim.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Substitua as alternativas</span>
+  <p>Quando a montagem da equação parece confusa, teste as alternativas no enunciado. Numa questão de idades, por exemplo, coloque cada idade candidata na história e veja qual fecha. Com cinco opções, raramente passa da terceira.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Confira antes de marcar</span>
+  <p>Substituir a resposta na equação original leva segundos e pega quase todos os erros de sinal. Em inequação, teste um número de dentro e um de fora do intervalo encontrado.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Releia a pergunta depois de achar o x</span>
+  <p>O ENEM costuma colocar o valor de <span class="m"><span class="v">x</span></span> entre as alternativas mesmo quando pede outra coisa: o custo no ponto de equilíbrio, a idade do pai, o volume final. Sublinhe o que é pedido antes de começar.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Fórmula</th><th>Isolando a incógnita</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Matemática Financeira</strong></td><td class="m"><span class="v">M</span> = <span class="v">C</span>(1 + <span class="v">it</span>)</td><td>R$ 2.000,00 a 2% ao mês viram R$ 2.480,00 em <span class="m"><span class="v">t</span></span>: <span class="m">1,24 = 1 + 0,02<span class="v">t</span></span>, logo <span class="m"><span class="v">t</span> = 12</span> meses</td></tr>
+    <tr><td><strong>Física (MUV)</strong></td><td class="m"><span class="v">v</span> = <span class="v">v</span><sub>0</sub> + <span class="v">at</span></td><td>de 10 m/s a 30 m/s com 4 m/s²: <span class="m">30 = 10 + 4<span class="v">t</span></span>, logo <span class="m"><span class="v">t</span> = 5</span> s</td></tr>
+    <tr><td><strong>Física (termometria)</strong></td><td class="m"><span class="v">F</span> = 1,8<span class="v">C</span> + 32</td><td>86 °F: <span class="m">86 = 1,8<span class="v">C</span> + 32</span>, logo <span class="m"><span class="v">C</span> = 30</span> °C</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Em todas, a fórmula é uma equação do 1º grau na incógnita procurada. O assunto <strong>Juros simples</strong> e as páginas de Física trazem os contextos completos.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Dividir por negativo sem inverter</span> &nbsp;→&nbsp; <span class="c">&lt; vira &gt;</span></span><small>−2x &gt; −6 dá x &lt; 3, não x &gt; 3.</small></li>
+  <li><span><span class="x">−3(x − 4) = −3x − 12</span> &nbsp;→&nbsp; <span class="c">−3x + 12</span></span><small>Menos vezes menos dá mais.</small></li>
+  <li><span><span class="x">− (x − 4)/3 com o −4 intacto</span> &nbsp;→&nbsp; <span class="c">o menos atinge o numerador inteiro</span></span><small>O traço de fração funciona como parênteses.</small></li>
+  <li><span><span class="x">−2x = 10 → x = 5</span> &nbsp;→&nbsp; <span class="c">x = −5</span></span><small>O que multiplica passa dividindo com o próprio sinal.</small></li>
+  <li><span><span class="x">n &gt; 800 → n = 800</span> &nbsp;→&nbsp; <span class="c">n = 801</span></span><small>Desigualdade estrita exclui o extremo.</small></li>
+  <li><span><span class="x">Somar 4 anos só a uma pessoa</span> &nbsp;→&nbsp; <span class="c">o tempo passa para todos</span></span><small>Daqui a k anos, cada idade ganha k.</small></li>
+  <li><span><span class="x">1/3 + 1/4 = 2/7</span> &nbsp;→&nbsp; <span class="c">7/12</span></span><small>Frações se somam com o mmc dos denominadores.</small></li>
+  <li><span><span class="x">Esquecer que o volume cresce na mistura</span> &nbsp;→&nbsp; <span class="c">o total também muda</span></span><small>Acrescentar soluto aumenta o numerador e o denominador.</small></li>
+  <li><span><span class="x">Responder o x quando se pede outra coisa</span> &nbsp;→&nbsp; <span class="c">releia a pergunta</span></span><small>O valor de x costuma estar entre as alternativas como armadilha.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, escreva primeiro o que é o <span class="m"><span class="v">x</span></span>, com unidade.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Planos de telefonia</span>
+    <p class="enun">Uma operadora oferece dois planos de telefonia. No plano Alfa, paga-se uma mensalidade de R$ 50,00 mais R$ 0,40 por minuto de ligação. No plano Beta, a mensalidade é de R$ 20,00 e o minuto custa R$ 0,60. O número de minutos mensais para o qual os dois planos custam o mesmo valor é</p>
+    <ol class="alt"><li>30</li><li>50</li><li>70</li><li>150</li><li>350</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Com <span class="m"><span class="v">x</span></span> minutos:</p>
+      <p class="m">50 + 0,4<span class="v">x</span> = 20 + 0,6<span class="v">x</span> &nbsp;→&nbsp; 30 = 0,2<span class="v">x</span> &nbsp;→&nbsp; <span class="v">x</span> = 150</p>
+      <p>Conferência: <span class="m">50 + 60 = 110</span> e <span class="m">20 + 90 = 110</span>.</p>
+      <p>A A divide a diferença das mensalidades pela <em>soma</em> das tarifas (<span class="m">30 ÷ 1</span>). A B divide pela tarifa do Beta só (<span class="m">30 ÷ 0,6</span>). A C soma mensalidades e tarifas, <span class="m">70 ÷ 1</span>. A E erra o sinal ao passar o 20 e chega a <span class="m">70 ÷ 0,2</span>.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · A partir de quantos</span>
+    <p class="enun">A gráfica P cobra R$ 120,00 de taxa de arte mais R$ 0,35 por cartaz impresso. A gráfica Q não cobra taxa, mas cobra R$ 0,50 por cartaz. O menor número de cartazes para o qual a gráfica P fica mais barata que a Q é</p>
+    <ol class="alt"><li>240</li><li>343</li><li>480</li><li>800</li><li>801</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>P mais barata que Q:</p>
+      <p class="m">120 + 0,35<span class="v">n</span> < 0,50<span class="v">n</span> &nbsp;→&nbsp; 120 < 0,15<span class="v">n</span> &nbsp;→&nbsp; <span class="v">n</span> > 800</p>
+      <p>Com 800 cartazes os preços são iguais (R$ 400,00), então o menor número inteiro em que P é <strong>mais barata</strong> é 801.</p>
+      <p>A D é o ponto de empate, que não satisfaz a desigualdade estrita. A A divide 120 por 0,50 e a B divide 120 por 0,35, comparando a taxa com o preço de uma gráfica só. A C erra a subtração <span class="m">0,50 − 0,35</span> (usa 0,25).</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Frações de um total</span>
+    <p class="enun">Uma pessoa gasta <span class="m"><span class="frac"><i>1</i><i>3</i></span></span> do seu salário com aluguel e <span class="m"><span class="frac"><i>1</i><i>4</i></span></span> do salário com alimentação. Depois desses dois gastos, sobram R$ 1.250,00. O salário dessa pessoa é</p>
+    <ol class="alt"><li>R$ 1.750,00</li><li>R$ 1.979,17</li><li>R$ 2.142,86</li><li>R$ 2.500,00</li><li>R$ 3.000,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>As duas frações são do salário <span class="m"><span class="v">x</span></span>. Os gastos somam <span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span> = <span class="frac"><i>7</i><i>12</i></span></span> do salário; sobram <span class="m"><span class="frac"><i>5</i><i>12</i></span></span>:</p>
+      <p class="m"><span class="frac"><i>5</i><i>12</i></span><span class="v">x</span> = 1 250 &nbsp;→&nbsp; <span class="v">x</span> = <span class="frac"><i>1 250 · 12</i><i>5</i></span> = 3 000</p>
+      <p>A A soma as frações errado (<span class="m"><span class="frac"><i>1</i><i>3</i></span> + <span class="frac"><i>1</i><i>4</i></span> = <span class="frac"><i>2</i><i>7</i></span></span>). A C troca o que sobrou pelo que foi gasto (<span class="m"><span class="frac"><i>7</i><i>12</i></span><span class="v">x</span> = 1 250</span>). A D calcula a alimentação sobre o que sobrou do aluguel, e não sobre o salário. A B aplica as frações aos R$ 1.250,00 e soma tudo.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Dividir por um número negativo</span>
+    <p class="enun">Após ser desligado, um forno industrial esfria segundo o modelo <span class="m"><span class="v">T</span> = 220 − 8<span class="v">t</span></span>, em que <span class="m"><span class="v">T</span></span> é a temperatura, em °C, e <span class="m"><span class="v">t</span></span> o tempo, em minutos, válido nos primeiros 25 minutos. Por segurança, uma peça só pode ser retirada quando a temperatura for de, no máximo, 60 °C. Para isso, deve-se esperar</p>
+    <ol class="alt"><li>no máximo 7,5 minutos.</li><li>no máximo 20 minutos.</li><li>no mínimo 20 minutos.</li><li>no mínimo 27,5 minutos.</li><li>no mínimo 35 minutos.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>“No máximo 60 °C” é <span class="m"><span class="v">T</span> ≤ 60</span>:</p>
+      <p class="m">220 − 8<span class="v">t</span> ≤ 60 &nbsp;→&nbsp; −8<span class="v">t</span> ≤ −160 &nbsp;→&nbsp; <span class="v">t</span> ≥ 20</p>
+      <p>Dividindo por −8, o <span class="m">≤</span> vira <span class="m">≥</span>. Faz sentido: o forno esfria com o tempo, então é preciso esperar <strong>pelo menos</strong> 20 minutos.</p>
+      <p>A B resolve certo a conta mas não inverte o sinal. A E troca o sinal do 60 (<span class="m">280 ÷ 8</span>). A D calcula quando o modelo chegaria a 0 °C (<span class="m">220 ÷ 8</span>), fora até do prazo de validade. A A divide 60 por 8, sem montar a inequação.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Problema de idades</span>
+    <p class="enun">Hoje, a soma das idades de um pai e de seu filho é 52 anos. Daqui a 4 anos, a idade do pai será o triplo da idade do filho. A idade atual do filho é</p>
+    <ol class="alt"><li>11 anos.</li><li>13 anos.</li><li>14 anos.</li><li>15 anos.</li><li>41 anos.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Filho: <span class="m"><span class="v">f</span></span>; pai: <span class="m">52 − <span class="v">f</span></span>. Daqui a 4 anos, <strong>os dois</strong> ganham 4:</p>
+      <p class="m">(52 − <span class="v">f</span>) + 4 = 3(<span class="v">f</span> + 4) &nbsp;→&nbsp; 56 − <span class="v">f</span> = 3<span class="v">f</span> + 12 &nbsp;→&nbsp; 44 = 4<span class="v">f</span> &nbsp;→&nbsp; <span class="v">f</span> = 11</p>
+      <p>Conferência: o pai tem 41; daqui a 4 anos, 45 e 15, e <span class="m">45 = 3 · 15</span>.</p>
+      <p>A B ignora os 4 anos (<span class="m"><span class="v">p</span> = 3<span class="v">f</span></span>). A C soma 4 só ao pai (<span class="m"><span class="v">p</span> + 4 = 3<span class="v">f</span></span>). A D é a idade do filho <em>daqui a 4 anos</em>, e a E é a idade atual do pai: respostas certas para outras perguntas.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Equação sem solução</span>
+    <p class="enun">Duas empresas de frete calculam o preço, em reais, de uma entrega de <span class="m"><span class="v">x</span></span> quilômetros. A empresa A cobra <span class="m">40 + 3<span class="v">x</span></span>; a empresa B cobra <span class="m">3(<span class="v">x</span> + 12)</span>. Comparando as duas, conclui-se que</p>
+    <ol class="alt"><li>os preços se igualam em uma entrega de 12 km.</li><li>os preços se igualam em uma entrega de 4 km.</li><li>A é mais barata em qualquer entrega, por R$ 4,00.</li><li>B é mais barata em qualquer entrega, por R$ 4,00.</li><li>B é mais barata só nas entregas de até 12 km.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Desenvolvendo B: <span class="m">3<span class="v">x</span> + 36</span>. Igualando os preços:</p>
+      <p class="m">40 + 3<span class="v">x</span> = 3<span class="v">x</span> + 36 &nbsp;→&nbsp; 0<span class="v">x</span> = −4</p>
+      <p>Não há solução: os preços nunca se igualam. A diferença <span class="m">(40 + 3<span class="v">x</span>) − (3<span class="v">x</span> + 36) = 4</span> é a mesma para qualquer distância, e B é sempre R$ 4,00 mais barata.</p>
+      <p>A A toma o 12 do parêntese como solução; a B transforma a diferença de R$ 4,00 numa distância de 4 km. A C inverte quem é mais barata. A E supõe que as retas se cruzam, mas elas são paralelas: têm a mesma tarifa por quilômetro.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Nota mínima com pesos</span>
+    <p class="enun">Em uma disciplina, a média final é calculada com peso 2 para a prova e peso 3 para o trabalho. Para ser aprovado, o aluno precisa de média final igual ou superior a 6,0. Um aluno tirou 4,5 na prova. A menor nota que ele precisa tirar no trabalho para ser aprovado é</p>
+    <ol class="alt"><li>6,0</li><li>7,0</li><li>7,5</li><li>8,5</li><li>10,5</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Média ponderada com nota <span class="m"><span class="v">T</span></span> no trabalho:</p>
+      <p class="m"><span class="frac"><i>2 · 4,5 + 3<span class="v">T</span></i><i>5</i></span> ≥ 6 &nbsp;→&nbsp; 9 + 3<span class="v">T</span> ≥ 30 &nbsp;→&nbsp; <span class="v">T</span> ≥ 7</p>
+      <p>A C usa média simples, <span class="m"><span class="frac"><i>4,5 + <span class="v">T</span></i><i>2</i></span> ≥ 6</span>, ignorando os pesos. A D esquece o peso da prova (<span class="m">4,5 + 3<span class="v">T</span> ≥ 30</span>). A E divide 21 por 2 em vez de por 3. A A supõe que basta tirar a própria média exigida.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Inequação dupla e intervalo</span>
+    <p class="enun">Um aplicativo cobra, por corrida, <span class="m"><span class="v">C</span> = 6 + 2<span class="v">d</span></span> reais, em que <span class="m"><span class="v">d</span></span> é a distância em quilômetros. Um passageiro só ganha um cupom de desconto se a corrida custar mais de R$ 26,00, e ele tem R$ 46,00 disponíveis para pagá-la. As distâncias <span class="m"><span class="v">d</span></span> que lhe permitem ganhar o cupom e pagar a corrida formam o intervalo</p>
+    <ol class="alt"><li><span class="m">[10, 20]</span></li><li><span class="m">]10, 20[</span></li><li><span class="m">]10, 20]</span></li><li><span class="m">]13, 23]</span></li><li><span class="m">]16, 26]</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>“Mais de 26” é estrito; “tem 46 para pagar” permite custo igual a 46:</p>
+      <p class="m">26 < 6 + 2<span class="v">d</span> ≤ 46 &nbsp;→&nbsp; 20 < 2<span class="v">d</span> ≤ 40 &nbsp;→&nbsp; 10 < <span class="v">d</span> ≤ 20</p>
+      <p>Aberto em 10, fechado em 20: <span class="m">]10, 20]</span>.</p>
+      <p>A A e a B erram só os colchetes, tratando os dois extremos do mesmo jeito. A D esquece a tarifa fixa (<span class="m">26 < 2<span class="v">d</span> ≤ 46</span>); a E soma 6 em vez de subtrair.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Mistura e concentração</span>
+    <p class="enun">Um tanque contém 40 litros de uma mistura com 25% de álcool, em volume. Deseja-se acrescentar álcool puro para que a concentração passe a ser de 40%. A quantidade de álcool puro a acrescentar, em litros, é</p>
+    <ol class="alt"><li>6</li><li>10</li><li>15</li><li>16</li><li>50</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Há <span class="m">0,25 · 40 = 10</span> L de álcool. Acrescentando <span class="m"><span class="v">x</span></span> litros, o álcool <strong>e o volume total</strong> aumentam:</p>
+      <p class="m"><span class="frac"><i>10 + <span class="v">x</span></i><i>40 + <span class="v">x</span></i></span> = 0,4 &nbsp;→&nbsp; 10 + <span class="v">x</span> = 16 + 0,4<span class="v">x</span> &nbsp;→&nbsp; 0,6<span class="v">x</span> = 6 &nbsp;→&nbsp; <span class="v">x</span> = 10</p>
+      <p>Conferência: 20 L de álcool em 50 L dá 40%.</p>
+      <p>A A esquece que o volume cresce (<span class="m">10 + <span class="v">x</span> = 0,4 · 40</span>). A C divide 6 por 0,4 em vez de 0,6. A D é a quantidade de álcool que haveria a 40% nos 40 L originais, e a E é o volume final da mistura.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo equações do 1º grau aplicando a mesma operação nos dois lados</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Elimino parênteses precedidos de menos sem errar sinal</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Elimino denominadores pelo mmc, tratando o traço da fração como parênteses</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço equações sem solução (0x = k) e com infinitas soluções (0x = 0)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto a equação a partir de um texto, nomeando a incógnita com unidade</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo problemas de idade somando o tempo a todas as pessoas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Inverto o sinal da desigualdade ao multiplicar ou dividir por negativo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Represento a solução na reta e em notação de intervalo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo inequações duplas operando nas três partes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro o menor inteiro que satisfaz uma desigualdade estrita</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o ponto de equilíbrio entre dois planos “fixo + variável”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo problemas de mistura lembrando que o volume total também muda</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro a resposta substituindo e releio o que a pergunta pede</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>30 questões</strong> e acerte pelo menos 21, metade delas de comparação de planos e inequações com resposta inteira. Depois siga para <strong>Equação do 2º grau e fórmula de Bhaskara</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>41 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-20-equacoes-inequacoes-1o-grau.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-20";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

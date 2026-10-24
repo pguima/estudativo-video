@@ -1,0 +1,254 @@
+Polinômios
+Matemática › Álgebra e Funções › Assunto 17 de 18
+Polinômios e equações polinomiais
+Volume de caixa, lucro de uma fábrica, trajetória de um objeto: muitos modelos são polinômios. Este assunto ensina a operar e dividir polinômios, a achar raízes sem fórmula pronta e a ler no gráfico o que cada raiz diz.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Expressões algébricas e produtos notáveis · Equação do 2º grau e fórmula de Bhaskara
+Destrava
+Números complexos, gráficos de funções polinomiais e modelagem de volumes
+Neste assunto
+01 O que o ENEM cobra aqui
+A teoria completa de polinômios é mais cobrada nos vestibulares tradicionais do que no ENEM. No ENEM, o polinômio aparece como modelo, e o que se pede é usar a ferramenta certa:
+Modelar: escrever o volume de uma caixa feita de uma folha recortada, a área de uma figura com medida variável, o lucro em função da quantidade.
+Valor numérico e raízes: saber que “o lucro se anula” ou “a altura volta a zero” significa achar uma raiz, e que uma raiz conhecida reduz o grau da equação.
+Ler gráficos: onde a curva corta ou toca o eixo, quantas raízes reais existem, qual lei corresponde ao gráfico.
+Relações entre raízes e coeficientes: obter soma ou produto das raízes sem resolver a equação, por exemplo o volume de um bloco cujas arestas são raízes de uma equação.
+O que rende mais aqui
+Três ideias resolvem a maior parte das questões: a é raiz se, e só se, P(a) = 0; o resto da divisão por x − a é P(a); e, conhecida uma raiz, Briot-Ruffini baixa o grau até chegar numa equação do 2º grau.
+02 Polinômio, grau e valor numérico
+Definição
+Um polinômio em x é uma expressão da forma P(x) = a_nx^n + … + a_1x + a_0, com expoentes naturais. Os números a_k são os coeficientes; a_0 é o termo independente. O grau é o maior expoente com coeficiente diferente de zero.
+ | Expressão | É polinômio? | Grau
+ | 4x³ − 78x² + 360x | sim | 3
+ | (m − 2)x² + 5x − 1 | sim | 2 se m ≠ 2; 1 se m = 2
+ | x² + (1/x) | não (expoente −1) | —
+ | √(x) + 3 | não (expoente ½) | —
+O valor numérico P(a) é o resultado de trocar x por a. Se P(a) = 0, o número a é uma raiz de P.
+Dois valores que saem de graça
+P(0) = termo independente · P(1) = soma de todos os coeficientes
+Em P(x) = 2x³ − 5x² + x + 7: P(0) = 7 e P(1) = 2 − 5 + 1 + 7 = 5. O truque do P(1) resolve questões como “soma dos coeficientes de (3x − 2)^(10)”: basta (3 − 2)^(10) = 1.
+03 Operações e identidade de polinômios
+Soma, subtração e multiplicação seguem as regras de Expressões algébricas e produtos notáveis: juntar termos semelhantes e aplicar a distributiva. Sobre o grau:
+ | Operação | Grau do resultado | Exemplo
+ | produto | soma dos graus | grau 3 vezes grau 2 dá grau 5
+ | soma | no máximo o maior dos graus | (x² + 1) + (−x² + 3x) = 3x + 1: o grau caiu
+ | potência P^k | k vezes o grau de P | (x² − 3x + 3)^(20) tem grau 40
+Polinômios idênticos
+Dois polinômios são idênticos (iguais para todo x) quando têm os mesmos coeficientes, termo a termo. Assim, ax² + (b − 1)x + 3 ≡ 2x² + 5x + c obriga a = 2, b = 6 e c = 3. O polinômio nulo tem todos os coeficientes iguais a zero.
+04 Divisão de polinômios e o dispositivo de Briot-Ruffini
+A divisão sempre obedece a esta relação
+P(x) = D(x) · Q(x) + R(x), com grau R < grau D (ou R = 0)
+O grau do quociente é grau P − grau D. Dividindo por um divisor de grau 1, o resto é um número; por um de grau 2, o resto tem no máximo grau 1, isto é, a forma ax + b.
+Para dividir por x − a, o dispositivo de Briot-Ruffini substitui a divisão longa. Escreva a à esquerda e os coeficientes de P (todos, inclusive os zeros dos termos que faltam) à direita. Baixe o primeiro; depois, repetidamente, multiplique o último resultado por a e some ao próximo coeficiente.
+Briot-Ruffini: multiplica pela raiz e soma. Dividindo 2x³ − 3x² − 5x + 6 por x − 2, a última linha dá os coeficientes do quociente (um grau a menos) e, no fim, o resto. Resto zero significa que 2 é raiz.
+Não pule o coeficiente zero
+Em x³ − 4x + 1 falta o termo em x²: os coeficientes são 1, 0, −4, 1. Esquecer o zero desloca toda a conta. E o número à esquerda é a raiz do divisor: para x + 3, use −3.
+05 Teorema do resto e de D’Alembert
+Teorema do resto
+O resto da divisão de P(x) por x − a é P(a). Motivo: em P(x) = (x − a)Q(x) + R, trocar x por a zera o primeiro termo.
+Teorema de D’Alembert
+P(x) é divisível por x − a se, e somente se, P(a) = 0, isto é, se a é raiz.
+Dois usos típicos
+Resto de 2x³ − x + 5 por x + 1: P(−1) = −2 + 1 + 5 = 4, sem dividir nada.
+Valor de k para x³ + kx − 4 ser divisível por x − 2: 8 + 2k − 4 = 0, logo k = −2.
+Resto da divisão por um polinômio de grau 2
+Se o divisor é (x − a)(x − b), escreva o resto como R(x) = mx + n. Como P(a) = R(a) e P(b) = R(b), os restos das divisões por x − a e por x − b dão um sistema 2 × 2 em m e n.
+06 Equações polinomiais e forma fatorada
+Teorema fundamental da álgebra (versão de prova)
+Toda equação polinomial de grau n ≥ 1 tem exatamente n raízes complexas, contadas com multiplicidade. Algumas podem ser reais, outras não reais.
+Com as raízes r_1, …, r_n e o coeficiente dominante a_n, o polinômio se escreve na forma fatorada:
+Forma fatorada
+P(x) = a_n(x − r_1)(x − r_2)…(x − r_n)
+Exemplo do cabeçalho: raízes −2, 1 e 3 e a_n = 1 dão (x + 2)(x − 1)(x − 3) = x³ − 2x² − 5x + 6.
+Raiz e fator têm sinais opostos
+A raiz −2 vira o fator (x + 2); a raiz 3 vira (x − 3). E não esqueça o a_n: as raízes de 2x² − 2 são ±1, mas o polinômio é 2(x − 1)(x + 1), não (x − 1)(x + 1).
+Uma raiz que aparece m vezes na forma fatorada tem multiplicidade m. Em (x + 1)²(x − 3), −1 é raiz dupla e 3 é raiz simples: são três raízes contadas com multiplicidade, mas só dois valores distintos.
+07 Caçando raízes: candidatas racionais e redução de grau
+Não há fórmula prática para grau 3 ou mais. A estratégia é achar uma raiz, dividir e repetir até chegar no 2º grau.
+Teorema das raízes racionais
+Se (p/q) (fração irredutível) é raiz de um polinômio com coeficientes inteiros, então p divide o termo independente e q divide o coeficiente dominante. Com coeficiente dominante 1, as raízes racionais só podem ser inteiros divisores do termo independente.
+Exemplo com o polinômio do cabeçalho
+1. Candidatas: divisores de 6: ±1, ±2, ±3, ±6.
+2. Teste: P(1) = 1 − 2 − 5 + 6 = 0. Achou: 1 é raiz.
+3. Reduza: Briot-Ruffini com 1 nos coeficientes 1, −2, −5, 6 dá 1, −1, −6 e resto 0. Quociente x² − x − 6.
+4. Termine no 2º grau: x² − x − 6 = 0 tem raízes 3 e −2. Conjunto solução: {−2, 1, 3}.
+Atalhos de teste
+Teste 1 primeiro: P(1) é só a soma dos coeficientes. Depois −1: P(−1) troca o sinal dos termos de grau ímpar. Se a soma dos coeficientes é zero, 1 é raiz na hora.
+08 Relações de Girard: soma e produto sem resolver
+As raízes e os coeficientes estão ligados. Para o 2º grau você já conhece soma −(b/a) e produto (c/a). Para o 3º grau:
+Grau 3: coeficientes a, b, c, d e três raízes
+Para ax³ + bx² + cx + d = 0, com raízes r_1, r_2, r_3:
+r_1 + r_2 + r_3 = −(b/a) r_1r_2 + r_1r_3 + r_2r_3 = (c/a) r_1r_2r_3 = −(d/a)
+Os sinais alternam: menos, mais, menos. Conferência com x³ − 2x² − 5x + 6, de raízes −2, 1 e 3: soma 2 = −(−2/1); produtos dois a dois −2 − 6 + 3 = −5; produto −6 = −(6/1).
+Leitura geométrica
+Se as três raízes são as arestas a, b e c de um bloco retangular, o produto das raízes é o volume, a soma dos produtos dois a dois é metade da área total (2(ab + ac + bc)) e a soma das raízes é um quarto do comprimento de todas as arestas.
+09 O gráfico conta as raízes reais
+As raízes reais de P são os pontos onde o gráfico de y = P(x) encontra o eixo horizontal. A multiplicidade muda o jeito do encontro:
+Raiz de multiplicidade par toca; ímpar atravessa. Em −1 o fator (x + 1)² nunca é negativo, então o sinal de P não muda ali: a curva encosta no eixo e volta. Em 3 o fator (x − 3) troca de sinal, e a curva cruza o eixo. O ponto no eixo vertical é P(0) = 1 · (−3) = −3.
+ | Fato | Consequência
+ | coeficientes reais e raiz não real a + bi | o conjugado a − bi também é raiz: as raízes não reais vêm aos pares
+ | grau ímpar com coeficientes reais | pelo menos uma raiz real (o gráfico vai de um lado ao outro do eixo)
+ | grau n | no máximo n interseções com o eixo horizontal
+ | coeficiente dominante positivo, grau ímpar | a curva começa embaixo (à esquerda) e termina em cima (à direita)
+As raízes não reais usam a unidade imaginária i, com i² = −1, tema de Números complexos. Por enquanto basta a regra do par: se 1 − i é raiz de um polinômio com coeficientes reais, 1 + i também é, e o produto (x − 1 + i)(x − 1 − i) = x² − 2x + 2 tem coeficientes reais.
+10 Estratégia de prova e conexões
+1 · Raiz? Substitua
+Para conferir se um número é raiz, ou achar o resto por x − a, calcule P(a). É mais rápido que dividir.
+2 · Uma raiz dada é um convite a Briot-Ruffini
+Se o enunciado entrega uma raiz de uma equação de grau 3, divida por ela e resolva o 2º grau que sobra. Não tente fatorar no olho.
+3 · Pediu soma ou produto? Girard
+Não resolva a equação se a pergunta é só a soma ou o produto das raízes (ou o volume, ou a área de um bloco cujas arestas são raízes).
+4 · Gráfico: teste o ponto no eixo vertical
+Para escolher a lei de um gráfico, calcule P(0) de cada alternativa e compare com o ponto onde a curva corta o eixo y. Depois confira raízes e multiplicidades.
+ | Área | Onde entra | O que lembrar
+ | Geometria Espacial | volume de caixas e blocos com medida variável | volume = produto de três fatores de 1º grau: polinômio de grau 3
+ | Economia | custo, receita e lucro | raízes do lucro são os pontos de equilíbrio
+ | Física | posição no MUV | s(t) é polinômio do 2º grau; “volta à origem” é raiz
+ | Números complexos | raízes não reais | vêm em pares conjugados quando os coeficientes são reais
+11 Os erros que mais custam pontos
+Raiz −2 → fator (x − 2) → fator (x + 2)Raiz e fator têm sinais opostos.
+Briot-Ruffini sem o coeficiente 0 → escreva os zerosx³ − 4x + 1 tem coeficientes 1, 0, −4, 1.
+Dividir por x + 3 usando 3 → usar −3Use a raiz do divisor.
+Resto por x − a = P(−a) → P(a)Substitua a raiz do divisor.
+Produto das raízes = d/a → −d/a (grau 3)Sinais de Girard: −, +, −.
+Esquecer o coeficiente dominante → P = a(x − r₁)…Raízes iguais não bastam para identificar o polinômio.
+Toda raiz atravessa o eixo → multiplicidade par só toca(x − 2)² não muda de sinal.
+Raiz 1 − i sozinha → 1 + i também é raizCom coeficientes reais, não reais vêm aos pares.
+Soma dos coeficientes = P(0) → = P(1)P(0) é o termo independente.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: dá para substituir um número? Há uma raiz dada? A pergunta é soma ou produto?
+Questão 1 · Modelar o volume de uma caixa
+De uma folha retangular de 24 cm por 15 cm, recortam-se quatro quadrados de lado x cm, um em cada canto, e dobram-se as abas para formar uma caixa sem tampa. O volume da caixa, em cm³, é dado pelo polinômio
+x³ − 39x² + 360x
+4x² − 78x + 360
+4x³ + 78x² + 360x
+4x³ − 78x² + 360x
+4x³ − 78x² + 360
+Ver resolução
+O fundo mede (24 − 2x) por (15 − 2x), e a altura é x:
+V = x(24 − 2x)(15 − 2x) = x(360 − 78x + 4x²) = 4x³ − 78x² + 360x
+A A tira x de cada dimensão uma vez só. A B é a área do fundo, sem a altura. A C erra o sinal do termo do meio: (−2x)(15) + (24)(−2x) é negativo. A E não multiplica o 360 pela altura x.
+Conferência: com x = 1, a caixa mede 22 × 13 × 1 = 286; e 4 − 78 + 360 = 286.
+Alternativa D
+Questão 2 · Divisibilidade pelo teorema do resto
+O polinômio P(x) = x³ − 2x² + kx + 6 é divisível por x − 3. O valor de k é
+−15.
+−13.
+−5.
+5.
+13.
+Ver resolução
+Divisível por x − 3 significa resto zero, isto é, P(3) = 0:
+27 − 18 + 3k + 6 = 0 ⟹ 3k = −15 ⟹ k = −5
+A A para em 3k = −15 sem dividir por 3. A B usa P(−3) = 0, a raiz com sinal trocado (−39 − 3k = 0). A D erra o sinal na última passagem. A E combina os dois erros: usa P(−3) e troca o sinal.
+Alternativa C
+Questão 3 · Uma raiz conhecida reduz o grau
+O lucro mensal de uma pequena fábrica, em milhares de reais, é modelado por L(x) = x³ − 6x² + 11x − 6, em que x é a produção em centenas de unidades, com 0 ≤ x ≤ 4. Sabe-se que o lucro é nulo quando x = 1. Os outros valores de x para os quais o lucro é nulo são
+2 e 3.
+−2 e −3.
+5 e 6.
+1 e 6.
+−1 e 6.
+Ver resolução
+Briot-Ruffini com a raiz 1 nos coeficientes 1, −6, 11, −6: desce 1; 1 · 1 − 6 = −5; 1 · (−5) + 11 = 6; 1 · 6 − 6 = 0. O quociente é x² − 5x + 6, cujas raízes (soma 5, produto 6) são 2 e 3.
+Conferência: L(2) = 8 − 24 + 22 − 6 = 0 e L(3) = 27 − 54 + 33 − 6 = 0.
+A B troca os sinais das raízes ao ler os fatores. A C lê os coeficientes do quociente como se fossem raízes. A D erra a primeira soma do dispositivo (−7 em vez de −5) e resolve x² − 7x + 6 = 0. A E troca o sinal do termo independente do quociente e resolve x² − 5x − 6 = 0.
+Alternativa A
+Questão 4 · Relações de Girard em um sólido
+As medidas, em metros, das três arestas de um bloco retangular são as raízes da equação 2x³ − 14x² + 28x − 16 = 0. O volume do bloco, em metros cúbicos, é
+7.
+8.
+14.
+16.
+28.
+Ver resolução
+O volume é o produto das três arestas, isto é, o produto das raízes. Por Girard:
+r_1r_2r_3 = −(d/a) = −(−16/2) = 8
+Conferência: a equação é 2(x − 1)(x − 2)(x − 4) = 0, arestas 1, 2 e 4, volume 8.
+A A é a soma das raízes, −(b/a). A C é a soma dos produtos dois a dois, (c/a) (metade da área total). A D esquece de dividir por a = 2. A E é a área total do bloco, 2 · 14.
+Alternativa B
+Questão 5 · Lei a partir do gráfico
+O gráfico a seguir representa um polinômio P de grau 3. Ele cruza o eixo horizontal em x = −1, apenas toca esse eixo em x = 2 e corta o eixo vertical no ponto (0, 4).
+A lei de P é
+P(x) = (x − 1)(x + 2)²
+P(x) = (x + 1)²(x − 2)
+P(x) = −(x + 1)(x − 2)²
+P(x) = (x + 1)(x − 2)
+P(x) = (x + 1)(x − 2)²
+Ver resolução
+Cruzar em −1 indica raiz de multiplicidade ímpar: fator (x + 1). Tocar em 2 indica multiplicidade par: fator (x − 2)². Grau 3 fecha a conta: P(x) = a(x + 1)(x − 2)². Com P(0) = a · 1 · 4 = 4, a = 1.
+A A troca os sinais das raízes (dá raízes 1 e −2). A B inverte as multiplicidades: tocaria em −1 e cruzaria em 2, com P(0) = −2. A C tem o sinal errado: P(0) = −4. A D tem grau 2 e cruzaria o eixo em 2.
+Alternativa E
+Questão 6 · Raízes conjugadas
+Um polinômio P(x) de grau 3, com coeficientes reais e coeficiente dominante 1, tem como raízes os números 2 e 1 − i, em que i² = −1. Então P(x) é
+x³ + 4x² + 6x + 4
+x³ − 4x² + 6x − 4
+x³ − 4x² + 4x
+x³ − 2x² + 2x − 4
+x² − 2x + 2
+Ver resolução
+Com coeficientes reais, o conjugado 1 + i também é raiz. As três raízes são 2, 1 − i e 1 + i. O par conjugado tem soma 2 e produto (1 − i)(1 + i) = 1 − i² = 2, e gera o fator x² − 2x + 2:
+P(x) = (x − 2)(x² − 2x + 2) = x³ − 4x² + 6x − 4
+A A usa as raízes com sinais trocados (−2 e −1 ± i). A C calcula (1 − i)(1 + i) como 1 + i² = 0. A D usa o fator x² + 2, esquecendo que a soma do par é 2. A E tem grau 2: deixa de fora a raiz 2.
+Alternativa B
+Questão 7 · Pesquisa de raízes racionais
+Ao estudar a equação 2x³ − 3x² − 3x + 2 = 0, um estudante listou as possíveis raízes racionais e testou cada uma. O conjunto solução da equação é
+{−2, −1/2, 1}
+{−1, 2}
+{−2, −1, 1, 2}
+{1/2, 1, 2}
+{−1, 1/2, 2}
+Ver resolução
+Candidatas (p/q): p divide 2 e q divide 2, logo ±1, ±2, ±(1/2). Testando: P(−1) = −2 − 3 + 3 + 2 = 0. Briot-Ruffini com −1 nos coeficientes 2, −3, −3, 2 dá 2, −5, 2 e resto 0. Então 2x² − 5x + 2 = 0, com Δ = 25 − 16 = 9 e raízes (5 ± 3/4): 2 e (1/2).
+A A troca os sinais de todas as raízes. A B testa só os inteiros e para; uma equação de grau 3 tem três raízes. A C lista candidatas inteiras sem testar (P(1) = −2 e P(−2) = −20). A D inclui 1, que não é raiz, e perde o −1.
+Alternativa E
+Questão 8 · Soma dos coeficientes
+Ao ser desenvolvido, o polinômio P(x) = (x² − 3x + 3)^(20) tem muitos termos. A soma de todos os seus coeficientes é
+1.
+40.
+3^(20).
+4^(20).
+7^(20).
+Ver resolução
+A soma dos coeficientes é P(1):
+P(1) = (1 − 3 + 3)^(20) = 1^(20) = 1
+A B é o grau do polinômio. A C é P(0), o termo independente. A D soma só os coeficientes positivos de dentro, (1 + 3)^(20). A E ignora os sinais, (1 + 3 + 3)^(20), que é P(−1).
+Alternativa A
+Questão 9 · Resto da divisão por um polinômio de grau 2
+Um polinômio P(x) dividido por x − 1 deixa resto 3 e dividido por x + 2 deixa resto −6. O resto da divisão de P(x) por (x − 1)(x + 2) é
+−3
+3x
+−18
+3x − 6
+−3x − 3
+Ver resolução
+O divisor tem grau 2, então o resto é R(x) = mx + n. Pelo teorema do resto, P(1) = 3 e P(−2) = −6, e esses valores coincidem com os de R:
+m + n = 3 e −2m + n = −6 ⟹ 3m = 9, m = 3, n = 0
+A A soma os dois restos. A C multiplica os dois restos. A D acerta m, mas toma o segundo resto como termo independente. A E associa cada resto à raiz errada (R(1) = −6 e R(−2) = 3).
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Identifico grau, coeficientes e termo independente de um polinômio
+Uso P(1) para a soma dos coeficientes e P(0) para o termo independente
+Aplico a identidade de polinômios igualando coeficientes
+Modelo volumes e áreas com polinômios
+Escrevo P = D · Q + R e sei o grau possível do resto
+Divido por x − a com Briot-Ruffini, sem esquecer coeficientes zero
+Calculo restos pelo teorema do resto, sem dividir
+Uso uma raiz conhecida para reduzir o grau da equação
+Listo e testo as candidatas a raiz racional
+Aplico as relações de Girard para soma e produto das raízes
+Monto a forma fatorada sem errar sinais nem o coeficiente dominante
+Leio no gráfico raízes simples (atravessa) e de multiplicidade par (toca)
+Sei que raízes não reais vêm em pares conjugados quando os coeficientes são reais
+Antes de marcar “Dominado” no cronograma
+Resolva 25 questões e acerte pelo menos 18, com pelo menos cinco de modelagem ou leitura de gráfico. Depois siga para Números complexos, que explica as raízes não reais que apareceram aqui.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-35-polinomios-equacoes-polinomiais.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

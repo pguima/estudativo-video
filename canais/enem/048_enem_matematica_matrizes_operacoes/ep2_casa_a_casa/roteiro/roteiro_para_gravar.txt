@@ -1,0 +1,51 @@
+Três alunos, duas disciplinas, duas provas: são seis médias ponderadas. Com matrizes, você escreve uma conta só, zero vírgula quatro A mais zero vírgula seis B, e ainda escapa da pegadinha de que seis vírgula zero também aprova.
+
+Este é o segundo episódio da série de Matrizes. Ao final, você vai somar matrizes, multiplicar por número e resolver igualdades de matrizes sem errar uma casa.
+
+Três lembretes. Do episódio um: a, i, j é o endereço: linha i, coluna j. Da série de Sistemas: x mais y igual a sete e x menos y igual a um. Somando as duas, o y some: dois x igual a oito. E zero vírgula quatro vezes cinco dá dois.
+
+Imagine duas planilhas de notas: a da prova um e a da prova dois. Os mesmos alunos nas linhas, as mesmas disciplinas nas colunas. Quer juntar as duas? Sobreponha as folhas: cada casa só conversa com a casa que está embaixo dela.
+
+Isso tem dois nomes. Mesma ordem: o mesmo número de linhas e de colunas. Elementos correspondentes: os que moram no mesmo endereço, um em cada matriz.
+
+Quando duas matrizes são iguais? Igualdade de matrizes: mesma ordem e casa por casa igual. Olhe esta: x mais y, três, dois, x menos y igual a sete, três, dois, um. Cada casa vira uma equação: é um sistema disfarçado. Somando: x igual a quatro. E y igual a três.
+
+E como se soma? Uma folha sobre a outra. Um, quatro, dois, zero mais três, menos um, cinco, dois. Primeira casa: um mais três, quatro. Depois quatro menos um, três. Dois mais cinco, sete. Zero mais dois, dois. Subtração: casa menos casa. Sempre na mesma ordem.
+
+E três vezes uma matriz? É um aumento geral: todo mundo recebe. Três vezes um, três. Três vezes quatro, doze. Três vezes dois, seis. Três vezes zero, zero. O carimbo bate em todas as casas, até a última.
+
+Atalho. Antes de qualquer conta, confira a ordem: se as matrizes têm tamanhos diferentes, a soma nem existe. E na igualdade, some as duas equações: o y some na hora.
+
+E as duas planilhas? Média ponderada: a média em que cada nota tem um peso. Com pesos zero vírgula quatro e zero vírgula seis: M igual a zero vírgula quatro A mais zero vírgula seis B. Um aluno tirou cinco na prova um e oito na prova dois. Zero vírgula quatro vezes cinco, dois. Zero vírgula seis vezes oito, quatro vírgula oito. Média: seis vírgula oito. Na matriz, essa conta é feita posição por posição.
+
+Atalho para conferir. A média ponderada fica sempre entre as duas notas. E mais perto da nota de peso maior. Entre cinco e oito, perto do oito: seis vírgula oito confere.
+
+E as regras dos números? Na soma, a ordem não importa. A matriz nula, toda de zeros, é o elemento neutro: não muda nada. E a oposta, menos A, troca o sinal de cada casa. Por isso, dois X mais A igual a B se resolve como no primeiro grau: X igual a B menos A, dividido por dois. Com A um, quatro, dois, zero e B cinco, seis, oito, dois: B menos A dá quatro, dois, seis, dois. Dividindo: dois, um, três, um.
+
+Sua vez. A é dois, cinco, um, três. B é quatro, um, três, sete. Quanto é dois A menos B? Pause e tente.
+
+Vamos juntos. Primeiro o carimbo, em todas as casas: dois A é quatro, dez, dois, seis. Agora casa menos casa: quatro menos quatro, zero. Dez menos um, nove. Dois menos três, menos um. Seis menos sete, menos um.
+
+Vamos guardar em três frases. Um: soma e igualdade: casa com casa, na mesma ordem. Dois: número vezes matriz atinge todas as casas. Três: igualdade de matrizes vira um sistema.
+
+Agora, os dois erros clássicos. Primeiro: em três vezes A, multiplicar só a primeira linha. Parece certo, porque na conta de números o três aparece uma vez só. Mas é aumento geral: o carimbo vai em todas as casas.
+
+Segundo: somar matrizes de ordens diferentes. Parece certo, porque sempre dá para somar números. Mas uma casa sem par não tem com quem somar: a soma não existe.
+
+Agora, uma questão no estilo do ENEM. Três alunos nas linhas, duas disciplinas nas colunas. A tem as notas da prova um, B as da prova dois. A média é M igual a zero vírgula quatro A mais zero vírgula seis B, e aprova quem tem seis vírgula zero ou mais. Quantos dos seis elementos de M são maiores ou iguais a seis vírgula zero? A: um. B: dois. C: três. D: quatro. E: cinco.
+
+A primeira casa, eu faço. Linha um, coluna um: cinco em A e sete em B. Zero vírgula quatro vezes cinco, dois. Zero vírgula seis vezes sete, quatro vírgula dois. M um um: seis vírgula dois. Entre cinco e sete, perto do sete: confere.
+
+As próximas duas, nós fazemos. M um dois: oito e cinco. Três vírgula dois mais três: seis vírgula dois. M dois um: sete e cinco. Dois vírgula oito mais três: cinco vírgula oito.
+
+As últimas três, você faz. M dois dois, M três um e M três dois. Depois, conte. Pause o vídeo e tente.
+
+Vamos conferir. Quatro e oito: um vírgula seis mais quatro vírgula oito, seis vírgula quatro. Seis e seis: seis vírgula zero. Seis e cinco: cinco vírgula quatro. Agora a contagem. O seis vírgula zero conta: o critério é maior ou igual. São quatro médias. Letra D!
+
+E as armadilhas? A A conta alunos aprovados nas duas disciplinas, só o primeiro, e não as médias. A B conta as médias abaixo de seis. A C troca os pesos. E a E usa a média simples, que deixa só um valor abaixo de seis.
+
+Para fechar, as mesmas três frases. Um: soma e igualdade: casa com casa, na mesma ordem. Dois: número vezes matriz atinge todas as casas. Três: igualdade de matrizes vira um sistema.
+
+Uma filial compra dez quilos de arroz, cinco quilos de feijão e quatro litros de óleo; o fornecedor cobra cinco, nove e oito reais. Como fazer essa conta para várias filiais e vários fornecedores de uma vez? Multiplicando matrizes, e essa conta não é casa com casa. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você contaria o seis vírgula zero como aprovado? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,1059 @@
+<title>Composta e Inversa</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 12 de 18</p>
+    <h1>Função composta e função inversa</h1>
+    <p class="deck">Compor é encadear: a saída de uma função vira a entrada da outra, como o tempo que define a produção, que define o custo. Inverter é desfazer: descobrir a entrada a partir da saída, como achar a distância a partir do preço da corrida. Este assunto ensina as duas operações e o gráfico que as liga.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Duas máquinas em sequência: x entra na máquina g, sai g de x, que entra na máquina f; o resultado é f de g de x, a composta f bola g">
+  <defs>
+    <marker id="m30h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <text x="22" y="101" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-style:italic;font-size:15px">x</text>
+  <line x1="34" y1="96" x2="66" y2="96" style="stroke:var(--ink-2);stroke-width:1.6" marker-end="url(#m30h)"/>
+  <rect x="70" y="70" width="64" height="52" rx="8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.6"/>
+  <text x="102" y="102" text-anchor="middle" class="svg-ttl" style="fill:var(--c1);font-size:17px">g</text>
+  <line x1="136" y1="96" x2="164" y2="96" style="stroke:var(--ink-2);stroke-width:1.6" marker-end="url(#m30h)"/>
+  <text x="150" y="62" text-anchor="middle" class="svg-num" style="fill:var(--c1)">g(x)</text>
+  <rect x="168" y="70" width="64" height="52" rx="8" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.6"/>
+  <text x="200" y="102" text-anchor="middle" class="svg-ttl" style="fill:var(--c2);font-size:17px">f</text>
+  <line x1="234" y1="96" x2="262" y2="96" style="stroke:var(--ink-2);stroke-width:1.6" marker-end="url(#m30h)"/>
+  <text x="274" y="101" text-anchor="middle" class="svg-num" style="fill:var(--ink);font-size:15px">?</text>
+  <text x="150" y="158" text-anchor="middle" class="svg-num" style="fill:var(--c5);font-size:14px">f(g(x)) = (f ∘ g)(x)</text>
+  <text x="150" y="196" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a de dentro age primeiro</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>8 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Conceito de função · Função afim · Função modular e funções por partes</dd></div>
+      <div><dt>Destrava</dt><dd>Exponencial e logaritmo como par inverso, conversões de unidades, modelos encadeados em Física e Química</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM quase nunca usa o símbolo <span class="m"><span class="v">f</span> ∘ <span class="v">g</span></span>. Ele descreve <strong>duas relações em cadeia</strong> ou pede para <strong>voltar</strong> de um resultado para a causa. As formas mais comuns:</p>
+<ul>
+  <li><strong>Encadear modelos:</strong> o custo depende da quantidade produzida, que depende do tempo; a temperatura depende da altitude, que depende do tempo de subida. A pergunta é a relação direta entre a primeira e a última grandeza.</li>
+  <li><strong>Inverter uma fórmula:</strong> dado o preço, achar a quantidade; dada a temperatura em Fahrenheit, achar em Celsius.</li>
+  <li><strong>Ler tabelas encadeadas:</strong> uma tabela leva de A para B, outra de B para C; ou um código que embaralha e precisa ser decodificado.</li>
+  <li><strong>Reconhecer o gráfico da inversa:</strong> o simétrico em relação à reta <span class="m"><span class="v">y</span> = <span class="v">x</span></span>, com o par exponencial e logaritmo como exemplo clássico.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas habilidades. Primeiro, <strong>a ordem</strong>: em <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>))</span> quem age primeiro é <span class="m"><span class="v">g</span></span>, a de dentro. Segundo, <strong>inverter é trocar o papel de entrada e saída</strong>: isolar a variável de entrada na fórmula. Quase todos os distratores do tema trocam a ordem ou confundem inversa com “um sobre”.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Composição: máquinas em sequência</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>A <strong>composta</strong> de <span class="m"><span class="v">f</span></span> com <span class="m"><span class="v">g</span></span>, escrita <span class="m"><span class="v">f</span> ∘ <span class="v">g</span></span> (lê-se “f bola g”), é a função que aplica primeiro <span class="m"><span class="v">g</span></span> e depois <span class="m"><span class="v">f</span></span> ao resultado:</p>
+  <p class="m">(<span class="v">f</span> ∘ <span class="v">g</span>)(<span class="v">x</span>) = <span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>))</p>
+  <p>Só faz sentido quando os valores de <span class="m"><span class="v">g</span>(<span class="v">x</span>)</span> estão no domínio de <span class="m"><span class="v">f</span></span>.</p>
+</div>
+<p>Pense em duas máquinas em fila, como no desenho do cabeçalho: <span class="m"><span class="v">x</span></span> entra em <span class="m"><span class="v">g</span></span>; o que sai, <span class="m"><span class="v">g</span>(<span class="v">x</span>)</span>, entra em <span class="m"><span class="v">f</span></span>. A leitura de <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>))</span> é <strong>de dentro para fora</strong>, ao contrário da ordem de escrita.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 210" role="img" aria-label="Três conjuntos lado a lado. Os valores 1, 2 e 3 vão por g, que dobra e soma um, para 3, 5 e 7; esses vão por f, que eleva ao quadrado e subtrai um, para 8, 24 e 48">
+  <defs>
+    <marker id="m30d1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+      <marker id="m30d2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c2)"/></marker>
+  </defs>
+  <ellipse cx="60" cy="104" rx="40" ry="66" style="fill:var(--paper-2);stroke:var(--rule-2);stroke-width:1.4"/>
+  <text x="60" y="26" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">x</text>
+  <text x="60" y="75" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1</text>
+  <text x="60" y="111" text-anchor="middle" class="svg-num" style="fill:var(--ink)">2</text>
+  <text x="60" y="147" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3</text>
+  <ellipse cx="230" cy="104" rx="40" ry="66" style="fill:var(--paper-2);stroke:var(--rule-2);stroke-width:1.4"/>
+  <text x="230" y="26" text-anchor="middle" class="svg-num" style="fill:var(--c1)">g(x)</text>
+  <text x="230" y="75" text-anchor="middle" class="svg-num" style="fill:var(--ink)">3</text>
+  <text x="230" y="111" text-anchor="middle" class="svg-num" style="fill:var(--ink)">5</text>
+  <text x="230" y="147" text-anchor="middle" class="svg-num" style="fill:var(--ink)">7</text>
+  <ellipse cx="400" cy="104" rx="40" ry="66" style="fill:var(--paper-2);stroke:var(--rule-2);stroke-width:1.4"/>
+  <text x="400" y="26" text-anchor="middle" class="svg-num" style="fill:var(--c2)">f(g(x))</text>
+  <text x="400" y="75" text-anchor="middle" class="svg-num" style="fill:var(--ink)">8</text>
+  <text x="400" y="111" text-anchor="middle" class="svg-num" style="fill:var(--ink)">24</text>
+  <text x="400" y="147" text-anchor="middle" class="svg-num" style="fill:var(--ink)">48</text>
+  <line x1="76" y1="70" x2="210" y2="70" style="stroke:var(--c1);stroke-width:1.4" marker-end="url(#m30d1)"/>
+  <line x1="246" y1="70" x2="376" y2="70" style="stroke:var(--c2);stroke-width:1.4" marker-end="url(#m30d2)"/>
+  <line x1="76" y1="106" x2="210" y2="106" style="stroke:var(--c1);stroke-width:1.4" marker-end="url(#m30d1)"/>
+  <line x1="246" y1="106" x2="376" y2="106" style="stroke:var(--c2);stroke-width:1.4" marker-end="url(#m30d2)"/>
+  <line x1="76" y1="142" x2="210" y2="142" style="stroke:var(--c1);stroke-width:1.4" marker-end="url(#m30d1)"/>
+  <line x1="246" y1="142" x2="376" y2="142" style="stroke:var(--c2);stroke-width:1.4" marker-end="url(#m30d2)"/>
+  <text x="145" y="190" text-anchor="middle" class="svg-num" style="fill:var(--c1)">g(x) = 2x + 1</text>
+  <text x="315" y="190" text-anchor="middle" class="svg-num" style="fill:var(--c2)">f(x) = x² − 1</text>
+</svg>
+<figcaption><b>Os valores passando pelas duas máquinas.</b> Com <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 1</span> e <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span>: o 2 vira <span class="m"><span class="v">g</span>(2) = 5</span>, que vira <span class="m"><span class="v">f</span>(5) = 24</span>. Assim, <span class="m"><span class="v">f</span>(<span class="v">g</span>(2)) = 24</span>. A composta liga diretamente a primeira coluna à última.</figcaption>
+</figure>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Calculando f(g(x)) e g(f(x))</h2>
+<p>Para obter a <strong>lei</strong> da composta, substitua cada <span class="m"><span class="v">x</span></span> da função de fora pela expressão inteira da função de dentro, <strong>entre parênteses</strong>.</p>
+<div class="eq">
+  <span class="lbl">Exemplo · as duas ordens de composição</span>
+  <p>Com <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span> e <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 1</span>:</p>
+  <p class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>)) = (2<span class="v">x</span> + 1)² − 1 = 4<span class="v">x</span>² + 4<span class="v">x</span> + 1 − 1 = 4<span class="v">x</span>² + 4<span class="v">x</span></p>
+  <p class="m"><span class="v">g</span>(<span class="v">f</span>(<span class="v">x</span>)) = 2(<span class="v">x</span>² − 1) + 1 = 2<span class="v">x</span>² − 1</p>
+  <p>As duas compostas são diferentes. Com <span class="m"><span class="v">x</span> = 2</span>: <span class="m"><span class="v">f</span>(<span class="v">g</span>(2)) = 24</span>, mas <span class="m"><span class="v">g</span>(<span class="v">f</span>(2)) = 7</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">A ordem importa</span>
+  <p>Em geral <span class="m"><span class="v">f</span> ∘ <span class="v">g</span> ≠ <span class="v">g</span> ∘ <span class="v">f</span></span>. Calçar a meia e depois o sapato não é o mesmo que calçar o sapato e depois a meia. Também não confunda composição com produto: <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>))</span> não é <span class="m"><span class="v">f</span>(<span class="v">x</span>) · <span class="v">g</span>(<span class="v">x</span>)</span>. Com os exemplos acima, <span class="m"><span class="v">f</span>(2) · <span class="v">g</span>(2) = 3 · 5 = 15</span>, nada a ver com 24.</p>
+</div>
+<div class="box tip">
+  <span class="tag">Número antes de lei</span>
+  <p>Se a pergunta é só <span class="m"><span class="v">f</span>(<span class="v">g</span>(3))</span>, não monte a lei da composta: calcule <span class="m"><span class="v">g</span>(3)</span> primeiro e jogue o número em <span class="m"><span class="v">f</span></span>. É mais rápido e evita erro de álgebra. A lei só compensa quando a pergunta pede uma expressão ou muitos valores.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Composição em contexto: grandezas encadeadas</h2>
+<p>No ENEM a composição aparece como duas fórmulas ligadas por uma grandeza intermediária. A estratégia é sempre a mesma: <strong>substitua a intermediária</strong>.</p>
+<div class="eq">
+  <span class="lbl">Exemplo · balão meteorológico (dados fictícios)</span>
+  <p>A altitude do balão, em km, <span class="m"><span class="v">t</span></span> minutos após o lançamento é <span class="m"><span class="v">h</span>(<span class="v">t</span>) = 0,2<span class="v">t</span></span>. A temperatura do ar, em °C, a <span class="m"><span class="v">h</span></span> km de altitude é <span class="m"><span class="v">T</span>(<span class="v">h</span>) = 25 − 6<span class="v">h</span></span>. A temperatura em função do tempo:</p>
+  <p class="m"><span class="v">T</span>(<span class="v">h</span>(<span class="v">t</span>)) = 25 − 6 · 0,2<span class="v">t</span> = 25 − 1,2<span class="v">t</span></p>
+  <p>Após 10 minutos, <span class="m"><span class="v">T</span> = 25 − 12 = 13</span> °C. A intermediária (altitude) sumiu da fórmula final.</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Cadeia</th><th>Função de dentro</th><th>Função de fora</th></tr></thead>
+  <tbody>
+    <tr><td>tempo → peças → custo</td><td>peças em função do tempo</td><td>custo em função das peças</td></tr>
+    <tr><td>tempo → altitude → temperatura</td><td>altitude em função do tempo</td><td>temperatura em função da altitude</td></tr>
+    <tr><td>dólar → real → imposto</td><td>conversão de moeda</td><td>imposto sobre o valor em reais</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Dica de leitura: a função de <strong>dentro</strong> é a que recebe a grandeza que você <strong>tem</strong>; a de <strong>fora</strong> é a que entrega a grandeza que você <strong>quer</strong>.</p>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Descobrindo uma função a partir da composta</h2>
+<p>Às vezes a prova dá a composta e uma das funções e pede a outra.</p>
+<div class="eq">
+  <span class="lbl">Caso 1 · conheço a de fora</span>
+  <p><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 3<span class="v">x</span> − 2</span> e <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>)) = 6<span class="v">x</span> + 7</span>. Aplique <span class="m"><span class="v">f</span></span> em <span class="m"><span class="v">g</span>(<span class="v">x</span>)</span> como se fosse uma incógnita:</p>
+  <p class="m">3 · <span class="v">g</span>(<span class="v">x</span>) − 2 = 6<span class="v">x</span> + 7 &nbsp;→&nbsp; <span class="v">g</span>(<span class="v">x</span>) = <span class="frac"><i>6<span class="v">x</span> + 9</i><i>3</i></span> = 2<span class="v">x</span> + 3</p>
+</div>
+<div class="eq">
+  <span class="lbl">Caso 2 · conheço a de dentro</span>
+  <p><span class="m"><span class="v">g</span>(<span class="v">x</span>) = <span class="v">x</span> + 1</span> e <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>)) = <span class="v">x</span>² + 2<span class="v">x</span></span>. Chame <span class="m"><span class="v">u</span> = <span class="v">x</span> + 1</span>, então <span class="m"><span class="v">x</span> = <span class="v">u</span> − 1</span>:</p>
+  <p class="m"><span class="v">f</span>(<span class="v">u</span>) = (<span class="v">u</span> − 1)² + 2(<span class="v">u</span> − 1) = <span class="v">u</span>² − 1 &nbsp;→&nbsp; <span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</p>
+</div>
+<div class="box tip">
+  <span class="tag">Sempre confira</span>
+  <p>Monte de novo a composta com a função encontrada. No caso 1: <span class="m"><span class="v">f</span>(2<span class="v">x</span> + 3) = 6<span class="v">x</span> + 9 − 2 = 6<span class="v">x</span> + 7</span>. Confere.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Função inversa: desfazer o caminho</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>A <strong>inversa</strong> de <span class="m"><span class="v">f</span></span>, escrita <span class="m"><span class="v">f</span>⁻¹</span>, leva cada saída de volta à sua entrada: se <span class="m"><span class="v">f</span>(<span class="v">a</span>) = <span class="v">b</span></span>, então <span class="m"><span class="v">f</span>⁻¹(<span class="v">b</span>) = <span class="v">a</span></span>. Compondo as duas, volta-se ao começo:</p>
+  <p class="m"><span class="v">f</span>⁻¹(<span class="v">f</span>(<span class="v">x</span>)) = <span class="v">x</span> &nbsp;&nbsp;e&nbsp;&nbsp; <span class="v">f</span>(<span class="v">f</span>⁻¹(<span class="v">x</span>)) = <span class="v">x</span></p>
+</div>
+<p>Para que a volta seja possível, cada saída precisa vir de <strong>uma única</strong> entrada, e todas as saídas pedidas precisam existir. Isto é, <span class="m"><span class="v">f</span></span> precisa ser <strong>bijetora</strong>:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Condição</th><th>Significado</th><th>Contraexemplo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Injetora</strong></td><td>entradas diferentes dão saídas diferentes</td><td><span class="m"><span class="v">x</span>²</span> em ℝ: <span class="m">(−3)² = 3² = 9</span>; de 9 não se sabe se veio 3 ou −3</td></tr>
+    <tr><td><strong>Sobrejetora</strong></td><td>toda saída do contradomínio é atingida</td><td><span class="m">2ˣ</span> de ℝ em ℝ: nenhum <span class="m"><span class="v">x</span></span> dá −1</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">f⁻¹ não é 1/f</span>
+  <p>O “⁻¹” aqui não é expoente. Se <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2<span class="v">x</span></span>, a inversa é <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i><span class="v">x</span></i><i>2</i></span></span> (desfaz a duplicação), e não <span class="m"><span class="frac"><i>1</i><i>2<span class="v">x</span></i></span></span>. Por coincidência, nesse caso parecem próximas; em <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span> + 3</span> a diferença é gritante: <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="v">x</span> − 3</span>, enquanto <span class="m"><span class="frac"><i>1</i><i><span class="v">x</span> + 3</i></span></span> é outra coisa.</p>
+</div>
+<div class="box def">
+  <span class="tag">Restringir o domínio salva a inversa</span>
+  <p><span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>²</span> não tem inversa em ℝ, mas tem se o domínio for <span class="m">[0, +∞[</span>: aí <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="rad"><i><span class="v">x</span></i></span></span>. É por isso que a raiz quadrada devolve só o valor não negativo.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Como calcular a inversa e onde fica seu gráfico</h2>
+<div class="eq">
+  <span class="lbl">Receita em três passos</span>
+  <p>1) Escreva <span class="m"><span class="v">y</span> = <span class="v">f</span>(<span class="v">x</span>)</span>. 2) Isole <span class="m"><span class="v">x</span></span>. 3) Troque os nomes: <span class="m"><span class="v">x</span></span> vira <span class="m"><span class="v">y</span></span> e <span class="m"><span class="v">y</span></span> vira <span class="m"><span class="v">x</span></span>.</p>
+  <p class="m"><span class="v">y</span> = 2<span class="v">x</span> + 1 &nbsp;→&nbsp; <span class="v">x</span> = <span class="frac"><i><span class="v">y</span> − 1</i><i>2</i></span> &nbsp;→&nbsp; <span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i><span class="v">x</span> − 1</i><i>2</i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo com fração</span>
+  <p>Inverter <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="frac"><i>2<span class="v">x</span> + 1</i><i><span class="v">x</span> − 3</i></span></span>, com <span class="m"><span class="v">x</span> ≠ 3</span>:</p>
+  <p class="m"><span class="v">y</span>(<span class="v">x</span> − 3) = 2<span class="v">x</span> + 1 &nbsp;→&nbsp; <span class="v">x</span><!----><span class="v">y</span> − 3<span class="v">y</span> = 2<span class="v">x</span> + 1 &nbsp;→&nbsp; <span class="v">x</span>(<span class="v">y</span> − 2) = 3<span class="v">y</span> + 1 &nbsp;→&nbsp; <span class="v">x</span> = <span class="frac"><i>3<span class="v">y</span> + 1</i><i><span class="v">y</span> − 2</i></span></p>
+  <p>Logo <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>3<span class="v">x</span> + 1</i><i><span class="v">x</span> − 2</i></span></span>, com <span class="m"><span class="v">x</span> ≠ 2</span>. O truque é juntar todos os termos com <span class="m"><span class="v">x</span></span> de um lado e pôr <span class="m"><span class="v">x</span></span> em evidência.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 270" role="img" aria-label="Gráficos de f de x igual a dois x mais um e de sua inversa, x menos um sobre dois, simétricos em relação à reta tracejada y igual a x; o ponto um, três de f corresponde ao ponto três, um da inversa">
+  <defs>
+    <marker id="m30s" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="54" y1="200.9" x2="300" y2="200.9" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m30s)"/>
+  <line x1="111.1" y1="258" x2="111.1" y2="12" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m30s)"/>
+  <line x1="143.1" y1="197.9" x2="143.1" y2="203.9" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="143.1" y="216.9" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="206.9" y1="197.9" x2="206.9" y2="203.9" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="206.9" y="216.9" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="270.8" y1="197.9" x2="270.8" y2="203.9" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="270.8" y="216.9" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <line x1="108.1" y1="105.1" x2="114.1" y2="105.1" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="104.1" y="109.1" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="108.1" y1="41.2" x2="114.1" y2="41.2" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="104.1" y="45.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="302" y="193.9" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="118.1" y="18" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <polyline points="66.4,245.6 175,137 283.6,28.4" style="fill:none;stroke:var(--ink-3);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <polyline points="72.8,245.6 127.1,137 181.4,28.4" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <polyline points="66.4,239.2 175,184.9 283.6,130.6" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="143.1" cy="105.1" r="3.5" style="fill:var(--c1)"/>
+  <circle cx="206.9" cy="168.9" r="3.5" style="fill:var(--c2)"/>
+  <line x1="143.1" y1="105.1" x2="206.9" y2="168.9" style="stroke:var(--c5);stroke-width:1.2;stroke-dasharray:3 3"/>
+  <text x="152.1" y="113.1" class="svg-lbl" style="fill:var(--c1)">(1, 3)</text>
+  <text x="210.9" y="186.9" class="svg-lbl" style="fill:var(--c2)">(3, 1)</text>
+  <text x="274.4" y="23.6" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">y = x</text>
+  <text x="312" y="60" class="svg-num" style="fill:var(--c1)">f(x) = 2x + 1</text>
+  <text x="312" y="84" class="svg-num" style="fill:var(--c2)">f⁻¹(x) = (x − 1)/2</text>
+  <text x="312" y="130" class="svg-lbl" style="fill:var(--ink-2)">cada ponto (a, b)</text>
+  <text x="312" y="148" class="svg-lbl" style="fill:var(--ink-2)">de f vira (b, a)</text>
+  <text x="312" y="166" class="svg-lbl" style="fill:var(--ink-2)">em f⁻¹: espelho</text>
+  <text x="312" y="184" class="svg-lbl" style="fill:var(--ink-2)">na reta y = x</text>
+</svg>
+<figcaption><b>Gráfico da inversa = espelho na reta y = x.</b> Como <span class="m"><span class="v">f</span>(1) = 3</span>, a inversa tem <span class="m"><span class="v">f</span>⁻¹(3) = 1</span>: o ponto (1, 3) vira (3, 1). Trocar entrada e saída é trocar as coordenadas, e isso reflete o gráfico na diagonal <span class="m"><span class="v">y</span> = <span class="v">x</span></span>.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Inversa de função afim</span>
+  <p>A inversa de <span class="m"><span class="v">y</span> = <span class="v">a</span><!----><span class="v">x</span> + <span class="v">b</span></span> (com <span class="m"><span class="v">a</span> ≠ 0</span>) é <span class="m"><span class="v">y</span> = <span class="frac"><i><span class="v">x</span> − <span class="v">b</span></i><i><span class="v">a</span></i></span></span>: desfaz-se na ordem contrária. Primeiro tira o <span class="m"><span class="v">b</span></span> que foi somado por último, depois divide pelo <span class="m"><span class="v">a</span></span>. Se <span class="m"><span class="v">f</span></span> cresce, <span class="m"><span class="v">f</span>⁻¹</span> também cresce.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Inversas em contexto: conversões e o par exponencial–logaritmo</h2>
+<p>Toda conversão de unidades vem com sua inversa. A fórmula que leva de Celsius para Fahrenheit, <span class="m"><span class="v">F</span> = 1,8<span class="v">C</span> + 32</span>, invertida dá <span class="m"><span class="v">C</span> = <span class="frac"><i><span class="v">F</span> − 32</i><i>1,8</i></span></span>. Em 98,6 °F: <span class="m"><span class="v">C</span> = 66,6 ÷ 1,8 = 37</span> °C.</p>
+<div class="eq">
+  <span class="lbl">Exemplo · corrida de táxi</span>
+  <p>Preço em função da distância: <span class="m"><span class="v">P</span>(<span class="v">x</span>) = 4,5 + 2,5<span class="v">x</span></span>. Distância em função do preço: <span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">P</span> − 4,5</i><i>2,5</i></span></span>. Quem pagou R$ 37,00 andou <span class="m">32,5 ÷ 2,5 = 13</span> km.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 280" role="img" aria-label="A exponencial y igual a dois elevado a x e o logaritmo na base dois são inversas: seus gráficos são simétricos em relação à reta y igual a x; o ponto três, oito da exponencial corresponde ao ponto oito, três do logaritmo, e zero, um corresponde a um, zero">
+  <defs>
+    <marker id="m30e" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="54" y1="204.3" x2="310" y2="204.3" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m30e)"/>
+  <line x1="115.7" y1="266" x2="115.7" y2="10" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m30e)"/>
+  <line x1="158.6" y1="201.3" x2="158.6" y2="207.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="158.6" y="220.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="201.4" y1="201.3" x2="201.4" y2="207.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="201.4" y="220.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="287.1" y1="201.3" x2="287.1" y2="207.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="287.1" y="220.3" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="112.7" y1="161.4" x2="118.7" y2="161.4" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="108.7" y="165.4" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="112.7" y1="118.6" x2="118.7" y2="118.6" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="108.7" y="122.6" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="112.7" y1="32.9" x2="118.7" y2="32.9" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="108.7" y="36.9" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <text x="312" y="197.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="122.7" y="16" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <polyline points="64.3,255.7 180,140 295.7,24.3" style="fill:none;stroke:var(--ink-3);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <polyline points="64.3,200.2 65,200.1 65.7,200 66.5,199.9 67.2,199.8 67.9,199.7 68.7,199.6 69.4,199.5 70.1,199.4 70.9,199.3 71.6,199.1 72.3,199 73,198.9 73.8,198.8 74.5,198.6 75.2,198.5 76,198.4 76.7,198.2 77.4,198.1 78.2,197.9 78.9,197.8 79.6,197.6 80.3,197.5 81.1,197.3 81.8,197.1 82.5,197 83.3,196.8 84,196.6 84.7,196.4 85.5,196.2 86.2,196 86.9,195.8 87.6,195.6 88.4,195.4 89.1,195.2 89.8,195 90.6,194.8 91.3,194.6 92,194.3 92.8,194.1 93.5,193.8 94.2,193.6 94.9,193.3 95.7,193.1 96.4,192.8 97.1,192.5 97.9,192.3 98.6,192 99.3,191.7 100.1,191.4 100.8,191.1 101.5,190.8 102.2,190.4 103,190.1 103.7,189.8 104.4,189.4 105.2,189.1 105.9,188.7 106.6,188.3 107.4,187.9 108.1,187.5 108.8,187.1 109.5,186.7 110.3,186.3 111,185.9 111.7,185.4 112.5,185 113.2,184.5 113.9,184.1 114.6,183.6 115.4,183.1 116.1,182.6 116.8,182.1 117.6,181.5 118.3,181 119,180.4 119.8,179.9 120.5,179.3 121.2,178.7 121.9,178.1 122.7,177.4 123.4,176.8 124.1,176.1 124.9,175.5 125.6,174.8 126.3,174.1 127.1,173.4 127.8,172.6 128.5,171.9 129.2,171.1 130,170.3 130.7,169.5 131.4,168.7 132.2,167.8 132.9,166.9 133.6,166 134.4,165.1 135.1,164.2 135.8,163.2 136.5,162.2 137.3,161.2 138,160.2 138.7,159.2 139.5,158.1 140.2,157 140.9,155.8 141.7,154.7 142.4,153.5 143.1,152.3 143.8,151.1 144.6,149.8 145.3,148.5 146,147.1 146.8,145.8 147.5,144.4 148.2,143 149,141.5 149.7,140 150.4,138.4 151.1,136.9 151.9,135.3 152.6,133.6 153.3,131.9 154.1,130.2 154.8,128.4 155.5,126.6 156.3,124.8 157,122.9 157.7,120.9 158.4,118.9 159.2,116.9 159.9,114.8 160.6,112.7 161.4,110.5 162.1,108.2 162.8,105.9 163.6,103.6 164.3,101.2 165,98.7 165.7,96.2 166.5,93.6 167.2,91 167.9,88.3 168.7,85.5 169.4,82.6 170.1,79.7 170.9,76.8 171.6,73.7 172.3,70.6 173,67.4 173.8,64.1 174.5,60.8 175.2,57.4 176,53.8 176.7,50.3 177.4,46.6 178.2,42.8 178.9,38.9 179.6,35 180.3,31 181.1,26.8" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <polyline points="119.8,255.6 120.9,248.2 122,242.3 123.1,237.3 124.2,233 125.3,229.2 126.4,225.8 127.5,222.8 128.6,220.1 129.7,217.5 130.8,215.2 131.9,213 133,211 134.1,209.1 135.2,207.3 136.3,205.6 137.4,203.9 138.5,202.4 139.6,201 140.7,199.6 141.8,198.2 142.9,197 144,195.7 145.1,194.5 146.2,193.4 147.3,192.3 148.4,191.3 149.5,190.2 150.6,189.2 151.7,188.3 152.8,187.4 153.9,186.4 155,185.6 156.1,184.7 157.2,183.9 158.3,183.1 159.4,182.3 160.5,181.5 161.6,180.8 162.7,180 163.8,179.3 164.9,178.6 166,177.9 167.1,177.3 168.2,176.6 169.3,176 170.4,175.3 171.5,174.7 172.6,174.1 173.7,173.5 174.8,172.9 175.9,172.4 177,171.8 178.1,171.3 179.2,170.7 180.3,170.2 181.4,169.7 182.5,169.2 183.6,168.7 184.7,168.2 185.8,167.7 186.9,167.2 188,166.7 189.1,166.2 190.2,165.8 191.3,165.3 192.4,164.9 193.5,164.4 194.6,164 195.7,163.6 196.8,163.2 197.9,162.7 199,162.3 200.1,161.9 201.2,161.5 202.3,161.1 203.4,160.7 204.5,160.4 205.6,160 206.7,159.6 207.8,159.2 208.8,158.9 209.9,158.5 211,158.1 212.1,157.8 213.2,157.4 214.3,157.1 215.4,156.7 216.5,156.4 217.6,156.1 218.7,155.7 219.8,155.4 220.9,155.1 222,154.8 223.1,154.4 224.2,154.1 225.3,153.8 226.4,153.5 227.5,153.2 228.6,152.9 229.7,152.6 230.8,152.3 231.9,152 233,151.7 234.1,151.4 235.2,151.1 236.3,150.9 237.4,150.6 238.5,150.3 239.6,150 240.7,149.8 241.8,149.5 242.9,149.2 244,149 245.1,148.7 246.2,148.4 247.3,148.2 248.4,147.9 249.5,147.7 250.6,147.4 251.7,147.2 252.8,146.9 253.9,146.7 255,146.4 256.1,146.2 257.2,145.9 258.3,145.7 259.4,145.5 260.5,145.2 261.6,145 262.7,144.7 263.8,144.5 264.9,144.3 266,144.1 267.1,143.8 268.2,143.6 269.3,143.4 270.4,143.2 271.5,143 272.6,142.7 273.7,142.5 274.8,142.3 275.9,142.1 277,141.9 278.1,141.7 279.2,141.5 280.3,141.3 281.4,141 282.5,140.8 283.6,140.6 284.7,140.4 285.8,140.2 286.9,140 288,139.8 289.1,139.6 290.2,139.5 291.3,139.3 292.4,139.1 293.5,138.9 294.6,138.7 295.7,138.5" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="180" cy="32.9" r="3.5" style="fill:var(--c1)"/>
+  <circle cx="287.1" cy="140" r="3.5" style="fill:var(--c2)"/>
+  <circle cx="115.7" cy="182.9" r="3.5" style="fill:var(--c1)"/>
+  <circle cx="137.1" cy="204.3" r="3.5" style="fill:var(--c2)"/>
+  <text x="188" y="36.9" class="svg-lbl" style="fill:var(--c1)">(3, 8)</text>
+  <text x="287.1" y="160" text-anchor="middle" class="svg-lbl" style="fill:var(--c2)">(8, 3)</text>
+  <text x="322" y="70" class="svg-num" style="fill:var(--c1)">y = 2ˣ</text>
+  <text x="322" y="94" class="svg-num" style="fill:var(--c2)">y = log₂ x</text>
+  <text x="322" y="140" class="svg-lbl" style="fill:var(--ink-2)">uma desfaz</text>
+  <text x="322" y="158" class="svg-lbl" style="fill:var(--ink-2)">a outra:</text>
+  <text x="322" y="176" class="svg-lbl" style="fill:var(--ink-2)">log₂(2ˣ) = x</text>
+</svg>
+<figcaption><b>Exponencial e logaritmo: o par inverso mais cobrado.</b> <span class="m">2³ = 8</span> e <span class="m">log₂ 8 = 3</span> dizem a mesma coisa nos dois sentidos. O gráfico de <span class="m"><span class="v">y</span> = log₂ <span class="v">x</span></span> é o de <span class="m"><span class="v">y</span> = 2ˣ</span> refletido em <span class="m"><span class="v">y</span> = <span class="v">x</span></span>; o ponto (0, 1) de um corresponde ao (1, 0) do outro.</figcaption>
+</figure>
+<p>Domínio e imagem também trocam de lugar: a exponencial tem domínio ℝ e imagem <span class="m">]0, +∞[</span>; o logaritmo, domínio <span class="m">]0, +∞[</span> e imagem ℝ. Essa troca vale para qualquer par de funções inversas.</p>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Identifique a grandeza intermediária</span>
+  <p>Em textos com duas fórmulas, sublinhe a grandeza que aparece nas duas (peças, altitude, valor em reais). Ela é a ponte: substitua-a e ela desaparece da resposta.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Teste as alternativas com um ponto</span>
+  <p>Para conferir uma inversa, pegue um ponto fácil de <span class="m"><span class="v">f</span></span>, como <span class="m"><span class="v">f</span>(1) = 3</span>, e veja qual alternativa dá <span class="m"><span class="v">f</span>⁻¹(3) = 1</span>. Para conferir uma composta, calcule <span class="m"><span class="v">f</span>(<span class="v">g</span>(0))</span> ou <span class="m"><span class="v">f</span>(<span class="v">g</span>(1))</span> com números e compare.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Em tabelas, vá de dentro para fora</span>
+  <p>Para <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">a</span>))</span>, ache <span class="m"><span class="v">g</span>(<span class="v">a</span>)</span> na tabela de <span class="m"><span class="v">g</span></span> e use o resultado como entrada na tabela de <span class="m"><span class="v">f</span></span>. Para <span class="m"><span class="v">f</span>⁻¹(<span class="v">b</span>)</span>, procure <span class="m"><span class="v">b</span></span> na <strong>linha das saídas</strong> de <span class="m"><span class="v">f</span></span> e leia a entrada correspondente.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>escalas termométricas</td><td><span class="m"><span class="v">F</span> = 1,8<span class="v">C</span> + 32</span> e <span class="m"><span class="v">C</span> = (<span class="v">F</span> − 32)/1,8</span> são inversas</td></tr>
+    <tr><td><strong>Física</strong></td><td>grandezas em cadeia: posição → velocidade → energia</td><td>a energia cinética em função do tempo é uma composta</td></tr>
+    <tr><td><strong>Química</strong></td><td>pH e concentração</td><td><span class="m">pH = −log[<span class="v">H</span>⁺]</span> e <span class="m">[<span class="v">H</span>⁺] = 10<sup>−pH</sup></span>: logaritmo e exponencial desfazem um ao outro</td></tr>
+    <tr><td><strong>Matemática Financeira</strong></td><td>câmbio e impostos</td><td>converter e depois tributar é compor; voltar do valor final ao inicial é inverter</td></tr>
+    <tr><td><strong>Linguagens e TIC</strong></td><td>criptografia simples</td><td>codificar é aplicar uma função; decodificar é aplicar a inversa</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">f(g(x)): aplicar f primeiro</span> &nbsp;→&nbsp; <span class="c">g primeiro, f depois</span></span><small>Lê-se de dentro para fora.</small></li>
+  <li><span><span class="x">f ∘ g = g ∘ f</span> &nbsp;→&nbsp; <span class="c">em geral são diferentes</span></span><small>Teste com um número: as duas ordens costumam dar resultados distintos.</small></li>
+  <li><span><span class="x">f(g(x)) = f(x) · g(x)</span> &nbsp;→&nbsp; <span class="c">substituir, não multiplicar</span></span><small>Composição põe uma função dentro da outra.</small></li>
+  <li><span><span class="x">f(2x + 1) com f(x) = x² − 1 → 2x² + 1 − 1</span> &nbsp;→&nbsp; <span class="c">(2x + 1)² − 1</span></span><small>Substitua a expressão inteira entre parênteses.</small></li>
+  <li><span><span class="x">f⁻¹(x) = 1/f(x)</span> &nbsp;→&nbsp; <span class="c">f⁻¹ desfaz f</span></span><small>O ⁻¹ não é expoente.</small></li>
+  <li><span><span class="x">inversa de 2x + 1 = (x + 1)/2</span> &nbsp;→&nbsp; <span class="c">(x − 1)/2</span></span><small>Desfaça na ordem contrária: primeiro subtraia 1, depois divida.</small></li>
+  <li><span><span class="x">x² tem inversa √x em ℝ</span> &nbsp;→&nbsp; <span class="c">só com domínio x ≥ 0</span></span><small>Sem restrição, x² não é injetora.</small></li>
+  <li><span><span class="x">Simetria da inversa no eixo y</span> &nbsp;→&nbsp; <span class="c">na reta y = x</span></span><small>O ponto (a, b) vira (b, a).</small></li>
+  <li><span><span class="x">f⁻¹(b): procurar b nas entradas</span> &nbsp;→&nbsp; <span class="c">procurar b nas saídas</span></span><small>Em tabela, a inversa se lê de baixo para cima.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: qual função age primeiro? O que é entrada e o que é saída?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Custo em função do tempo</span>
+    <p class="enun">Uma pequena fábrica produz <span class="m"><span class="v">n</span>(<span class="v">t</span>) = 40<span class="v">t</span></span> peças em <span class="m"><span class="v">t</span></span> horas de funcionamento. O custo de produção, em reais, de <span class="m"><span class="v">n</span></span> peças é <span class="m"><span class="v">C</span>(<span class="v">n</span>) = 500 + 3<span class="v">n</span></span>. O custo de produção, em reais, em função do tempo <span class="m"><span class="v">t</span></span> de funcionamento é dado por</p>
+    <ol class="alt"><li><span class="m">20 000 + 120<span class="v">t</span></span></li><li><span class="m">500 + 43<span class="v">t</span></span></li><li><span class="m">500 + 120<span class="v">t</span></span></li><li><span class="m">500 + 3<span class="v">t</span></span></li><li><span class="m">120<span class="v">t</span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A ponte é o número de peças. Substitua <span class="m"><span class="v">n</span> = 40<span class="v">t</span></span> no custo:</p>
+      <p class="m"><span class="v">C</span>(<span class="v">n</span>(<span class="v">t</span>)) = 500 + 3 · 40<span class="v">t</span> = 500 + 120<span class="v">t</span></p>
+      <p>A A compõe na ordem errada, <span class="m"><span class="v">n</span>(<span class="v">C</span>(<span class="v">t</span>)) = 40(500 + 3<span class="v">t</span>)</span>, aplicando a fórmula das peças ao custo. A B soma os coeficientes 40 e 3 em vez de multiplicá-los. A D ignora a função de dentro e usa <span class="m"><span class="v">t</span></span> como se fosse o número de peças. A E esquece o custo fixo de 500.</p>
+      <p><strong>Conferência:</strong> em 2 horas são 80 peças, que custam <span class="m">500 + 240 = 740</span>; e <span class="m">500 + 120 · 2 = 740</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Composta em um ponto</span>
+    <p class="enun">Considere as funções <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>² − 1</span> e <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 3</span>, definidas para todo <span class="m"><span class="v">x</span></span> real. O valor de <span class="m"><span class="v">f</span>(<span class="v">g</span>(2))</span> é</p>
+    <ol class="alt"><li>9</li><li>10</li><li>21</li><li>24</li><li>48</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>De dentro para fora: <span class="m"><span class="v">g</span>(2) = 7</span>; depois <span class="m"><span class="v">f</span>(7) = 49 − 1 = 48</span>.</p>
+      <p>A A calcula na ordem inversa: <span class="m"><span class="v">g</span>(<span class="v">f</span>(2)) = <span class="v">g</span>(3) = 9</span>. A B soma <span class="m"><span class="v">f</span>(2) + <span class="v">g</span>(2) = 3 + 7</span>. A C multiplica: <span class="m"><span class="v">f</span>(2) · <span class="v">g</span>(2) = 3 · 7</span>. A D desenvolve <span class="m">(2<span class="v">x</span> + 3)²</span> como <span class="m">4<span class="v">x</span>² + 9</span>, esquecendo o termo do meio: <span class="m">16 + 9 − 1 = 24</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Inverter a fórmula do preço</span>
+    <p class="enun">Em uma cidade, o preço <span class="m"><span class="v">P</span></span>, em reais, de uma corrida de táxi de <span class="m"><span class="v">x</span></span> quilômetros é <span class="m"><span class="v">P</span> = 4,5 + 2,5<span class="v">x</span></span>. Um aplicativo quer mostrar ao passageiro quantos quilômetros ele pode percorrer com um valor <span class="m"><span class="v">P</span></span> disponível. A expressão que fornece <span class="m"><span class="v">x</span></span> em função de <span class="m"><span class="v">P</span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">P</span> − 4,5</i><i>2,5</i></span></span></li><li><span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">P</span></i><i>2,5</i></span> − 4,5</span></li><li><span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">P</span> + 4,5</i><i>2,5</i></span></span></li><li><span class="m"><span class="v">x</span> = 2,5<span class="v">P</span> + 4,5</span></li><li><span class="m"><span class="v">x</span> = <span class="frac"><i>1</i><i>4,5 + 2,5<span class="v">P</span></i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Isolando <span class="m"><span class="v">x</span></span>: <span class="m"><span class="v">P</span> − 4,5 = 2,5<span class="v">x</span></span>, logo <span class="m"><span class="v">x</span> = <span class="frac"><i><span class="v">P</span> − 4,5</i><i>2,5</i></span></span>. Com R$ 37,00, <span class="m"><span class="v">x</span> = 32,5 ÷ 2,5 = 13</span> km; e de fato <span class="m">4,5 + 2,5 · 13 = 37</span>.</p>
+      <p>A B divide antes de subtrair, desfazendo as operações na ordem errada. A C soma o 4,5 em vez de subtraí-lo. A D troca as letras sem isolar nada, mantendo a forma da função original. A E confunde a inversa com “um sobre” a função.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Achar a função de dentro</span>
+    <p class="enun">Sejam <span class="m"><span class="v">f</span></span> e <span class="m"><span class="v">g</span></span> funções afins de ℝ em ℝ, com <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 3<span class="v">x</span> − 2</span> e <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>)) = 6<span class="v">x</span> + 7</span> para todo <span class="m"><span class="v">x</span></span> real. A lei de <span class="m"><span class="v">g</span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">g</span>(<span class="v">x</span>) = 18<span class="v">x</span> + 19</span></li><li><span class="m"><span class="v">g</span>(<span class="v">x</span>) = 6<span class="v">x</span> + 9</span></li><li><span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + <span class="frac"><i>5</i><i>3</i></span></span></li><li><span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> − 3</span></li><li><span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 3</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Aplicando <span class="m"><span class="v">f</span></span> a <span class="m"><span class="v">g</span>(<span class="v">x</span>)</span>: <span class="m">3<span class="v">g</span>(<span class="v">x</span>) − 2 = 6<span class="v">x</span> + 7</span>, então <span class="m">3<span class="v">g</span>(<span class="v">x</span>) = 6<span class="v">x</span> + 9</span> e <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 2<span class="v">x</span> + 3</span>.</p>
+      <p>A A calcula <span class="m"><span class="v">f</span>(6<span class="v">x</span> + 7)</span>, aplicando <span class="m"><span class="v">f</span></span> sobre a composta. A B para em <span class="m">3<span class="v">g</span>(<span class="v">x</span>) = 6<span class="v">x</span> + 9</span> e esquece de dividir por 3. A C passa o −2 para o outro lado sem trocar o sinal (<span class="m">3<span class="v">g</span> = 6<span class="v">x</span> + 5</span>). A D erra o sinal ao dividir o 9.</p>
+      <p><strong>Conferência:</strong> <span class="m"><span class="v">f</span>(2<span class="v">x</span> + 3) = 6<span class="v">x</span> + 9 − 2 = 6<span class="v">x</span> + 7</span>.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Ponto do gráfico da inversa</span>
+    <p class="enun">Uma função <span class="m"><span class="v">f</span></span>, de ℝ em ℝ, é crescente e invertível, e seu gráfico passa pelo ponto (3, 7). O gráfico da função inversa <span class="m"><span class="v">f</span>⁻¹</span> certamente passa pelo ponto</p>
+    <ol class="alt"><li>(3, 7)</li><li>(7, 3)</li><li>(−3, −7)</li><li>(3, <span class="m"><span class="frac"><i>1</i><i>7</i></span></span>)</li><li>(−7, −3)</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m"><span class="v">f</span>(3) = 7</span> significa <span class="m"><span class="v">f</span>⁻¹(7) = 3</span>: as coordenadas trocam de lugar, e o ponto (3, 7) vira (7, 3), seu reflexo na reta <span class="m"><span class="v">y</span> = <span class="v">x</span></span>.</p>
+      <p>A A é o ponto do próprio <span class="m"><span class="v">f</span></span>. A C e a E refletem o ponto na origem, trocando os sinais, o que nada tem a ver com inverter. A D toma <span class="m"><span class="v">f</span>⁻¹</span> por <span class="m"><span class="frac"><i>1</i><i><span class="v">f</span></i></span></span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · A ordem dos descontos</span>
+    <p class="enun">Uma loja oferece, para um produto de R$ 150,00, um cupom que abate R$ 20,00 do preço e uma promoção de 10% de desconto. O sistema permite aplicar os dois benefícios, em qualquer ordem, sempre sobre o valor resultante da etapa anterior. Comparando as duas ordens possíveis, conclui-se que</p>
+    <ol class="alt"><li>O preço final é o mesmo nas duas ordens.</li><li>Aplicar o cupom antes é R$ 2,00 mais barato.</li><li>Aplicar o cupom antes é R$ 18,00 mais barato.</li><li>Aplicar a porcentagem antes é R$ 2,00 mais barato.</li><li>Aplicar a porcentagem antes é R$ 20,00 mais barato.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>São duas funções: <span class="m"><span class="v">c</span>(<span class="v">p</span>) = <span class="v">p</span> − 20</span> e <span class="m"><span class="v">d</span>(<span class="v">p</span>) = 0,9<span class="v">p</span></span>. As ordens são compostas diferentes:</p>
+      <p class="m"><span class="v">d</span>(<span class="v">c</span>(150)) = 0,9 · 130 = 117 &nbsp;&nbsp;&nbsp;&nbsp; <span class="v">c</span>(<span class="v">d</span>(150)) = 135 − 20 = 115</p>
+      <p>Aplicar a porcentagem antes sai R$ 2,00 mais barato. Em geral, <span class="m"><span class="v">d</span>(<span class="v">c</span>(<span class="v">p</span>)) = 0,9<span class="v">p</span> − 18</span> e <span class="m"><span class="v">c</span>(<span class="v">d</span>(<span class="v">p</span>)) = 0,9<span class="v">p</span> − 20</span>: quando o cupom vem antes, o desconto de 10% incide sobre um valor menor, e os R$ 20,00 “valem” só R$ 18,00.</p>
+      <p>A A supõe que composição é comutativa. A B inverte a conclusão. A C confunde o valor efetivo do cupom (R$ 18,00) com a diferença entre as ordens. A E toma o valor do cupom inteiro como diferença.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Quem tem inversa</span>
+    <p class="enun">Um programa de computador só consegue “desfazer” uma função <span class="m"><span class="v">f</span></span> de ℝ em ℝ, recuperando cada entrada a partir da saída, quando <span class="m"><span class="v">f</span></span> é bijetora. Entre as funções abaixo, todas de ℝ em ℝ, a única que o programa consegue desfazer é</p>
+    <ol class="alt"><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>²</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = |<span class="v">x</span>|</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 2ˣ</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span>³ + 1</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 5</span>, para todo <span class="m"><span class="v">x</span></span> real</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m"><span class="v">x</span>³ + 1</span> é sempre crescente (injetora) e assume todos os valores reais (sobrejetora): de <span class="m"><span class="v">y</span></span> volta-se a <span class="m"><span class="v">x</span> = ∛(<span class="v">y</span> − 1)</span>. Única entrada para cada saída, e toda saída existe.</p>
+      <p>A A e a B não são injetoras: <span class="m">2</span> e <span class="m">−2</span> dão a mesma saída. A C é injetora, mas não sobrejetora em ℝ: nenhum <span class="m"><span class="v">x</span></span> dá saída negativa ou zero, então valores como −1 não teriam de onde voltar. A E leva tudo em 5: impossível saber de onde veio.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Inversa de uma função racional</span>
+    <p class="enun">A função <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="frac"><i>2<span class="v">x</span> + 1</i><i><span class="v">x</span> − 3</i></span></span>, definida para <span class="m"><span class="v">x</span> ≠ 3</span>, é usada para converter um índice <span class="m"><span class="v">x</span></span> em uma nota <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span> e admite inversa no conjunto adequado. A lei de <span class="m"><span class="v">f</span>⁻¹</span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>3<span class="v">x</span> + 1</i><i><span class="v">x</span> − 2</i></span></span></li><li><span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i><span class="v">x</span> − 3</i><i>2<span class="v">x</span> + 1</i></span></span></li><li><span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>3<span class="v">x</span> + 1</i><i><span class="v">x</span> + 2</i></span></span></li><li><span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>3<span class="v">x</span> − 1</i><i><span class="v">x</span> − 2</i></span></span></li><li><span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>2<span class="v">x</span> + 1</i><i><span class="v">x</span> − 3</i></span></span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>De <span class="m"><span class="v">y</span> = <span class="frac"><i>2<span class="v">x</span> + 1</i><i><span class="v">x</span> − 3</i></span></span>: <span class="m"><span class="v">x</span><!----><span class="v">y</span> − 3<span class="v">y</span> = 2<span class="v">x</span> + 1</span>, <span class="m"><span class="v">x</span>(<span class="v">y</span> − 2) = 3<span class="v">y</span> + 1</span>, <span class="m"><span class="v">x</span> = <span class="frac"><i>3<span class="v">y</span> + 1</i><i><span class="v">y</span> − 2</i></span></span>. Trocando os nomes, <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>) = <span class="frac"><i>3<span class="v">x</span> + 1</i><i><span class="v">x</span> − 2</i></span></span>.</p>
+      <p>A B é <span class="m"><span class="frac"><i>1</i><i><span class="v">f</span>(<span class="v">x</span>)</i></span></span>, o “um sobre” no lugar da inversa. A C erra o sinal do 2 ao pôr <span class="m"><span class="v">x</span></span> em evidência. A D erra o sinal do 1 ao passá-lo de lado. A E é a própria <span class="m"><span class="v">f</span></span>: troca as letras sem isolar.</p>
+      <p><strong>Conferência:</strong> <span class="m"><span class="v">f</span>(4) = 9</span> e <span class="m"><span class="frac"><i>3 · 9 + 1</i><i>9 − 2</i></span> = <span class="frac"><i>28</i><i>7</i></span> = 4</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Decodificar com tabelas</span>
+    <p class="enun">Um sistema de senhas transforma cada dígito de 1 a 5 em duas etapas. Primeiro aplica o embaralhamento <span class="m"><span class="v">g</span></span>; depois aplica o código <span class="m"><span class="v">f</span></span>. As duas funções são dadas na tabela.</p>
+    <div class="tw">
+    <table>
+      <thead><tr><th><span class="m"><span class="v">x</span></span></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead>
+      <tbody>
+        <tr><td><span class="m"><span class="v">f</span>(<span class="v">x</span>)</span></td><td>4</td><td>5</td><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td><span class="m"><span class="v">g</span>(<span class="v">x</span>)</span></td><td>3</td><td>1</td><td>5</td><td>2</td><td>4</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="enun">Um técnico precisa calcular <span class="m"><span class="v">f</span>⁻¹(<span class="v">g</span>(3))</span> para testar o sistema. Esse valor é</p>
+    <ol class="alt"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>De dentro para fora: <span class="m"><span class="v">g</span>(3) = 5</span>. Agora <span class="m"><span class="v">f</span>⁻¹(5)</span> é a entrada de <span class="m"><span class="v">f</span></span> que dá 5: na linha de <span class="m"><span class="v">f</span></span>, o 5 está na coluna <span class="m"><span class="v">x</span> = 2</span>. Logo <span class="m"><span class="v">f</span>⁻¹(<span class="v">g</span>(3)) = 2</span>.</p>
+      <p>A A aplica <span class="m"><span class="v">f</span></span> direto ao 3, ignorando <span class="m"><span class="v">g</span></span>: <span class="m"><span class="v">f</span>(3) = 1</span>. A C usa <span class="m"><span class="v">f</span></span> no lugar de <span class="m"><span class="v">f</span>⁻¹</span>: <span class="m"><span class="v">f</span>(5) = 3</span>. A D aplica <span class="m"><span class="v">g</span></span> duas vezes: <span class="m"><span class="v">g</span>(5) = 4</span>. A E para em <span class="m"><span class="v">g</span>(3)</span> e não aplica a inversa.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico que em <span class="m"><span class="v">f</span>(<span class="v">g</span>(<span class="v">x</span>))</span> a função <span class="m"><span class="v">g</span></span> age primeiro</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo uma composta em um ponto sem montar a lei</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto a lei de <span class="m"><span class="v">f</span> ∘ <span class="v">g</span></span> substituindo a expressão inteira entre parênteses</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Mostro com um exemplo que <span class="m"><span class="v">f</span> ∘ <span class="v">g</span></span> e <span class="m"><span class="v">g</span> ∘ <span class="v">f</span></span> podem ser diferentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encadeio duas fórmulas de um enunciado eliminando a grandeza intermediária</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Descubro a função de dentro ou a de fora a partir da composta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico por que só funções bijetoras têm inversa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a inversa isolando <span class="m"><span class="v">x</span></span> e trocando os nomes das variáveis</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Inverto funções racionais pondo <span class="m"><span class="v">x</span></span> em evidência</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Não confundo <span class="m"><span class="v">f</span>⁻¹(<span class="v">x</span>)</span> com <span class="m"><span class="frac"><i>1</i><i><span class="v">f</span>(<span class="v">x</span>)</i></span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Desenho o gráfico da inversa refletindo o de <span class="m"><span class="v">f</span></span> na reta <span class="m"><span class="v">y</span> = <span class="v">x</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço exponencial e logaritmo de mesma base como funções inversas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Leio compostas e inversas em tabelas de valores</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>25 questões</strong> e acerte pelo menos 18, com pelo menos oito de contexto (fórmulas encadeadas ou conversões a inverter). Depois siga para <strong>Progressão aritmética (PA)</strong>, que é uma função afim vista só nos números naturais.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>33 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-30-funcao-composta-inversa.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-30";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

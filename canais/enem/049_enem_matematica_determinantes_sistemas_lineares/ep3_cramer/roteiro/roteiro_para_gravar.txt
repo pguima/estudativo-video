@@ -1,0 +1,59 @@
+Numa lanchonete com suco, sanduíche e salada, a questão pede só o preço da salada. Com dois determinantes você chega lá, sem descobrir os outros preços.
+
+Ao final, você vai escrever um sistema como multiplicação de matrizes e vai achar a incógnita pedida pela regra de Cramer, sabendo quando ela compensa.
+
+Antes, três lembretes rápidos. Da série de Sistemas: quantidades numa equação, valores na outra. Da série de Matrizes: multiplicar é linha por coluna. E do episódio um: dois por dois é principal menos secundária; três por três, Sarrus.
+
+Imagine a bilheteria de um teatro. Foram vendidos duzentos e cinquenta ingressos: inteiras a quarenta reais e meias a vinte. O caixa fechou com sete mil e quatrocentos. É o mesmo tipo do problema dos ingressos da série de Sistemas, agora por outro caminho. E na lanchonete, com três itens, são três incógnitas.
+
+Dá para escrever um sistema como uma multiplicação? Inteiras são x, meias são y. x mais y, duzentos e cinquenta. Quarenta x mais vinte y, sete mil e quatrocentos. A matriz dos coeficientes, A, guarda os números que multiplicam as letras. A coluna das incógnitas, X, guarda as letras. E a coluna dos termos independentes, B, guarda as respostas.
+
+Agora, a mágica. A vezes X igual a B. Essa é a forma matricial. Multiplique linha por coluna: um vezes x, mais um vezes y. A primeira equação reaparece. A segunda linha devolve a segunda. E com a coluna B ao lado de A, você tem a matriz completa, ou ampliada, do sistema.
+
+E por que escrever assim? Lembra do teste da chave? Se o determinante de A é diferente de zero, A tem inversa. E aí a solução é única: X igual à inversa de A, vezes B. A regra de Cramer faz essa conta sem montar a inversa.
+
+Como funciona? Primeiro, o D: o determinante da própria matriz A. Depois, o D x. Pegue A e faça uma troca de figurinha: a coluna de x sai, e entra a coluna das respostas. A regra: x é igual a D x dividido por D. E repare onde o D ficou: embaixo. O D principal é o chão da fração.
+
+E o y? No D y, sai a coluna de y. y é D y dividido por D: o mesmo chão. Com z, o D z troca a terceira coluna. O D principal é sempre o mesmo, e sempre embaixo.
+
+Um atalho para nunca trocar a coluna errada. A coluna da incógnita é a posição dela na ordem x, y, z: primeira, segunda, terceira. Antes de calcular, pinte a coluna que vai sair: ela sai inteira, de cima a baixo.
+
+Vamos ao teatro. D é o determinante de um, um, quarenta, vinte. Principal: um vezes vinte, vinte. Secundária: um vezes quarenta, quarenta. Vinte menos quarenta: menos vinte. Esse é o chão.
+
+Agora o D x. A coluna de x, um e quarenta, sai. Entram as respostas. Duzentos e cinquenta vezes vinte, cinco mil. Menos um vezes sete mil e quatrocentos. Menos dois mil e quatrocentos. x é menos dois mil e quatrocentos, dividido por menos vinte. Negativo dividido por negativo dá positivo: cento e vinte inteiras.
+
+E as meias? No D y, sai a coluna de y. Um vezes sete mil e quatrocentos, menos duzentos e cinquenta vezes quarenta: menos dois mil e seiscentos. Dividido pelo mesmo chão, menos vinte: cento e trinta meias. Conferindo nas equações originais: cento e vinte mais cento e trinta, duzentos e cinquenta. Quatro mil e oitocentos mais dois mil e seiscentos, sete mil e quatrocentos.
+
+Então Cramer é sempre o melhor caminho? Não. Num três por três, Cramer completo exige quatro determinantes. Mas Cramer é ferramenta de precisão. Se a pergunta é uma incógnita só, calcule o D e o determinante dela: dois Sarrus. Se a questão pede todas, substituição ou escalonamento costumam ser mais rápidos.
+
+Sua vez. No sistema dois x mais y igual a sete e x menos y igual a dois, calcule o D, o D x, e o x. Pause e tente.
+
+Vamos juntos. A é dois, um, um, menos um. D: dois vezes menos um, menos dois, menos um vezes um: menos três. D x: sai a coluna de x, entram o sete e o dois. Sete vezes menos um, menos sete, menos dois: menos nove. x é menos nove dividido por menos três: negativo dividido por negativo, três. E o D y dá menos três: y é um. Seis mais um, sete; três menos um, dois.
+
+Vamos guardar em três frases. Um: D x: a coluna de x sai, entra a coluna das respostas. Dois: x é D x dividido por D: o D principal fica embaixo. Três: pediu uma incógnita só? Calcule só D e o dela.
+
+Agora, os dois erros clássicos. Primeiro: trocar a linha de x em vez da coluna. Parece certo, porque a gente lê a equação na horizontal. Mas no teatro isso dá catorze mil, quinhentos e cinquenta ingressos, num total de duzentos e cinquenta. O x mora numa coluna: é ela que sai.
+
+Segundo: escrever x igual a D dividido por D x. Parece certo, porque o D principal parece o mais importante. Mas assim o x vira zero vírgula zero zero oito ingresso. O D principal é o chão: fica embaixo.
+
+Agora, uma questão no estilo do ENEM. Esta, eu faço. Uma loja vendeu, em um dia, cinquenta peças entre camisetas, a trinta reais cada, e bonés, a vinte e cinco reais cada, arrecadando mil e quatrocentos reais. O número de bonés vendidos foi: A: vinte e cinco. B: trinta. C: vinte. D: cerca de quarenta e sete. E: cinquenta e seis.
+
+Nomeando: x camisetas, y bonés. x mais y, cinquenta. Trinta x mais vinte e cinco y, mil e quatrocentos. Pediu só o y: D e D y. D: um vezes vinte e cinco, menos um vezes trinta: menos cinco. D y: sai a coluna de y. Um vezes mil e quatrocentos, menos trinta vezes cinquenta: menos cem. y é menos cem dividido por menos cinco: negativo dividido por negativo, vinte. Conferindo: novecentos das camisetas mais quinhentos dos bonés: mil e quatrocentos. Letra C!
+
+E as outras? A A dividiu as peças ao meio. A B é o número de camisetas: a incógnita trocada. A D supõe que todos compraram camiseta: mil e quatrocentos dividido por trinta. E a E supõe que todos compraram boné: mil e quatrocentos dividido por vinte e cinco.
+
+Agora a lanchonete do começo, do nosso material de estudo. Esta, nós fazemos. Os preços do suco, do sanduíche e da salada são fixos. Um suco, um sanduíche e uma salada: dezesseis reais. Dois sucos e um sanduíche: quinze. Um suco e duas saladas: catorze. O preço de uma salada é: A: três. B: quatro. C: cinco. D: sete. E: quinze.
+
+Suco x, sanduíche y, salada z. x mais y mais z, dezesseis. Dois x mais y, quinze. x mais dois z, catorze. Cuidado: no segundo pedido não tem salada, no terceiro não tem sanduíche. Essas casas levam zero. D por Sarrus: o time verde soma dois. O vermelho soma cinco. Dois menos cinco: menos três.
+
+Agora é com você. A pergunta é só a salada, o z. Troque a terceira coluna pelas respostas, dezesseis, quinze, catorze, e calcule o D z. Pause e calcule.
+
+Conferindo. Time verde: catorze, quinze e zero: vinte e nove. Time vermelho: dezesseis, zero e vinte e oito: quarenta e quatro. Vinte e nove menos quarenta e quatro: menos quinze. z é menos quinze dividido por menos três: cinco reais. Com suco a quatro e sanduíche a sete, os três pedidos dão dezesseis, quinze e catorze. Letra C!
+
+E as armadilhas? A A é o tamanho do D, sem o sinal. A E é o D z sem dividir pelo chão. E a B e a D são o suco e o sanduíche: as outras incógnitas.
+
+Para fechar, as mesmas três frases. Um: D x: a coluna de x sai, entra a coluna das respostas. Dois: x é D x dividido por D: o D principal fica embaixo. Três: pediu uma incógnita só? Calcule só D e o dela.
+
+E quando D dá zero? A divisão por zero não existe. Isso quer dizer que o sistema não tem solução? Nem sempre: às vezes ele tem infinitas. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha usado a regra de Cramer? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

@@ -1,0 +1,59 @@
+Determinante de três, menos dois, quatro e cinco. Metade da turma escreve quinze menos oito, sete. A resposta é vinte e três. E é esse número que diz se uma matriz tem inversa.
+
+Ao final, você vai calcular determinantes dois por dois e três por três sem errar sinal e vai saber, só por ele, se uma matriz tem inversa.
+
+Antes, três lembretes rápidos. Sinais: menos vezes menos dá mais; menos vezes mais dá menos. Da série de Matrizes: a fórmula da inversa dois por dois divide por a d menos b c. E da série de Equação do segundo grau: em x ao quadrado menos cinco x mais seis, dois números que somam cinco e multiplicam seis: dois e três.
+
+Lembra da criptografia da série de Matrizes? A mensagem vira números, e a chave, uma matriz, embaralha tudo. Para ler de volta, usa-se a inversa da chave. Só que, às vezes, a chave não abre: ela não tem inversa. E existe um único número que avisa isso antes. Ele se chama determinante.
+
+E qual matriz tem determinante? Determinante é um número calculado a partir de uma matriz quadrada. Só as quadradas têm, com o mesmo número de linhas e de colunas. Uma dois por três não tem. A ordem é esse tamanho: ordem dois é dois por dois. E na ordem um, o determinante é o próprio número: o de menos sete é menos sete.
+
+E numa dois por dois? A diagonal principal desce da esquerda para a direita: a e d. A diagonal secundária é a outra: b e c. A regra: produto da principal menos produto da secundária. A d menos b c.
+
+Vamos ao gancho. Principal: três vezes cinco, quinze. Secundária: menos dois vezes quatro, menos oito. Agora o truque: esse menos oito entra de casaco, entre parênteses, com o sinal dele. Quinze menos menos oito: menos com menos dá mais. Quinze mais oito, vinte e três.
+
+Um atalho para nunca mais errar esse sinal. Calcule os dois produtos completos e escreva cada um, com sinal, antes de subtrair. Quinze. Menos oito, de casaco. Só depois, a conta: quinze menos o casaco inteiro.
+
+E quando a matriz tem um x dentro? Matriz x, quatro, um, x menos três. Para quais valores de x o determinante dá zero? Principal: x vezes x menos três. Secundária: quatro vezes um, quatro. Igualando a zero: x ao quadrado menos três x menos quatro, igual a zero. Soma três, produto menos quatro: quatro e menos um. Conferindo o quatro: quatro vezes um, menos quatro: zero. E por que procurar o zero? Daqui a pouco você vai ver: determinante zero é a chave que não abre.
+
+E numa três por três? Aí entra a regra de Sarrus: um jeito de calcular o determinante de ordem três pelas diagonais. Primeiro passo: repita as duas primeiras colunas à direita. Agora são dois times. O verde: três diagonais que descem para a direita. O vermelho: três que descem para a esquerda.
+
+O placar do time verde. Dois vezes quatro vezes um: oito. Um vezes um vezes cinco: cinco. Três vezes zero vezes dois: zero. Verde: treze.
+
+E o time vermelho. Três vezes quatro vezes cinco: sessenta. Dois vezes um vezes dois: quatro. Um vezes zero vezes um: zero. Vermelho: sessenta e quatro. Verde menos vermelho, em bloco: treze menos sessenta e quatro, menos cinquenta e um. E atenção: Sarrus só vale para três por três.
+
+Um atalho para não se perder no meio das setas. Escreva o placar em duas colunas: verde de um lado, vermelho do outro. E olhe os zeros: diagonal que passa por um zero dá produto zero, sem conta. Aqui, o três, zero, dois e o um, zero, um já vão direto para o placar.
+
+Tem outro caminho? Tem. O desenvolvimento de Laplace: escolha uma linha, e trabalhe um elemento de cada vez. Para cada elemento, risque a linha e a coluna dele. Sobra uma dois por dois: o determinante que sobra. O nome técnico é cofator. E os sinais seguem o padrão mais, menos, mais, alternando como um tabuleiro de xadrez que começa com mais no canto.
+
+Na mesma matriz, pela primeira linha. O dois: sobra quatro menos dois, dois. Dois vezes dois, quatro. O um, com sinal de menos: sobra zero menos cinco. Menos um vezes menos cinco, mais cinco. O três: sobra zero menos vinte. Três vezes menos vinte, menos sessenta. Quatro mais cinco menos sessenta: menos cinquenta e um. O mesmo resultado.
+
+E quando Laplace compensa? Atalho: escolha a linha com mais zeros. Zero vezes qualquer coisa é zero, e aquela parte some. A segunda linha começa com zero. Os sinais dela: menos, mais, menos. Quatro vezes menos treze, menos cinquenta e dois. Menos um vezes menos um, mais um. Menos cinquenta e um de novo, com uma conta a menos.
+
+E a chave do começo? Uma matriz é inversível quando tem inversa. E ela tem inversa se, e somente se, o determinante for diferente de zero. Determinante zero: a matriz é singular. A chave não abre. Exemplo: dois, quatro, um, dois: dois vezes dois menos quatro vezes um, zero. Essa não serve de chave. Por isso a fórmula da inversa divide por a d menos b c: se ele é zero, a divisão é impossível.
+
+E dá para saber mais alguma coisa? O determinante da inversa é um dividido pelo determinante. Se o da matriz é quatro, o da inversa é zero vírgula vinte e cinco, porque a matriz vezes a inversa dá a identidade, e o determinante da identidade é um. E para achar os valores de x que estragam a chave: resolva determinante igual a zero. Foi exatamente o que fizemos com o quatro e o menos um.
+
+Sua vez. Calcule o determinante de menos dois, três, quatro, menos cinco. E o da três por três um, dois, zero; zero, um, três; dois, zero, um. Pause e tente.
+
+Vamos juntos. Principal: menos dois vezes menos cinco, dez. Secundária: três vezes quatro, doze. Dez menos doze, menos dois. Na três por três, time verde: um, doze e zero, treze. Time vermelho: as três diagonais passam por um zero: zero. Treze menos zero, treze.
+
+Vamos guardar em três frases. Um: ordem dois: principal menos secundária, com o sinal dentro do produto. Dois: Sarrus: some cada time e subtraia o bloco vermelho inteiro. Três: determinante zero: a matriz não tem inversa.
+
+Agora, os três erros clássicos. Primeiro: escrever quinze menos oito em vez de quinze menos menos oito. Parece certo, porque a regra diz menos, e o oito parece só um número. Mas o produto era menos oito. Ele entra de casaco: vinte e três, não sete.
+
+Segundo: em Sarrus, subtrair só o primeiro produto vermelho, e somar os outros. Parece certo, porque o sinal de menos aparece uma vez só, na frente do sessenta. Mas o menos vale para o time inteiro: some o vermelho primeiro, sessenta e quatro, e subtraia em bloco.
+
+Terceiro: usar Sarrus numa quatro por quatro. Parece certo, porque a ideia das diagonais parece que cresce junto com a matriz. Mas não cresce: Sarrus só vale para três por três. Numa quatro por quatro, use Laplace.
+
+Agora, uma questão no estilo do ENEM, do nosso material de estudo. E esta é sua. Um sistema de criptografia só pode usar como chave uma matriz que tenha inversa. Para a matriz x, três, dois, x mais um, os valores reais de x que a tornam inadequada como chave são: A: zero e menos um. B: menos dois e três. C: nenhum: ela sempre tem inversa. D: menos três e dois. E: apenas dois. Pause o vídeo e resolva.
+
+Conferindo. Inadequada quer dizer: sem inversa. Ou seja, determinante zero. Principal: x vezes x mais um. Secundária: três vezes dois, seis. Fica: x ao quadrado mais x menos seis, igual a zero. Soma menos um, produto menos seis: menos três e dois. Conferindo o dois: dois vezes três, menos seis: zero. E o menos três: menos três vezes menos dois, seis, menos seis: zero. Letra D!
+
+E as outras? A A esqueceu a secundária: resolveu só x vezes x mais um, igual a zero. A B achou os números certos com os sinais trocados. A C somou o seis em vez de subtrair, e essa equação não tem raiz real. E a E achou o dois por tentativa e parou: esqueceu que equação do segundo grau pode ter duas raízes.
+
+Para fechar, as mesmas três frases. Um: ordem dois: principal menos secundária, com o sinal dentro do produto. Dois: Sarrus: some cada time e subtraia o bloco vermelho inteiro. Três: determinante zero: a matriz não tem inversa.
+
+Precisa mesmo fazer Sarrus em um, zero, menos um; três, dois, um; cinco, quatro, três? Dá para ver que o resultado é zero sem conta nenhuma. Próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha escrito quinze menos oito? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

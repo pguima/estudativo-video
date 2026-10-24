@@ -1,0 +1,49 @@
+Uma matriz três por três tem determinante cinco. Dobre todos os números dela. O novo determinante é dez? Não: é quarenta.
+
+Este é o segundo episódio da série de Determinantes e sistemas lineares. Ao final, você vai reconhecer em segundos quando o determinante é zero e quanto ele muda quando a matriz muda, sem fazer Sarrus.
+
+Três lembretes. Do episódio um: no Sarrus, as três diagonais que descem menos as três que sobem. Da série de Matrizes: a, i, j é a casa da linha i, coluna j; a lei de formação diz o que pôr em cada casa. E dois ao cubo é dois vezes dois vezes dois: oito.
+
+Imagine uma planilha de três linhas. A segunda linha é cópia da primeira. Ela trouxe alguma informação nova? Nenhuma. Para o determinante, informação repetida vale zero.
+
+Quando o determinante é zero sem conta nenhuma? Primeiro: uma linha, ou coluna, só de zeros. Segundo: duas linhas iguais ou proporcionais. Linhas proporcionais: uma é a outra vezes um número. Um, dois, três e dois, quatro, seis: vezes dois. São linhas parentes: informação repetida.
+
+E se o parentesco estiver escondido? Combinação de linhas: uma linha montada com as outras, somando e multiplicando. Olhe: um, zero, menos um; três, dois, um; cinco, quatro, três. Cada linha é a anterior mais dois, dois, dois. Então a terceira é duas vezes a segunda menos a primeira. Linha parente: determinante zero, sem conta.
+
+Atalho. Antes de qualquer Sarrus, pergunte em voz alta: tem alguma propriedade aqui? Linha de zeros? Linhas parentes? Zeros embaixo da diagonal? Se tiver, a conta encolhe ou some.
+
+E o que muda o valor? Pegue uma matriz com determinante sete. Troque duas linhas de lugar. É como virar no espelho: o valor fica, o sinal troca. Menos sete.
+
+Agora pense num aparelho de som com um botão de volume para cada linha. Gire um botão, vezes três: multiplicar uma linha por três. O determinante vai vezes três: de sete para vinte e um.
+
+E se você dobrar a matriz inteira? Ordem n: o número de linhas da matriz quadrada. Numa três por três, n é três. Dobrar a matriz inteira é girar os três botões. Primeiro botão: sete vira catorze. Segundo: vinte e oito. Terceiro: cinquenta e seis. É dois ao cubo vezes sete. Determinante de k A é k elevado a n vezes o determinante de A.
+
+E o que não muda? Somar a uma linha um múltiplo de outra: não muda. Transposta: a matriz com as linhas viradas colunas. Mesmo determinante. E o determinante de A vezes B é o de A vezes o de B.
+
+E o atalho mais bonito. Matriz triangular: só zeros abaixo da diagonal principal. Diagonal: zeros em todo lugar fora dela. Nas duas, o determinante é o produto da diagonal. Dois, cinco, um: dez. Sem Sarrus.
+
+Sua vez, duas perguntas. Quanto vale o determinante de três, sete, um; zero, dois, cinco; zero, zero, quatro? E, se uma matriz dois por dois tem determinante três, quanto vale o de três A? Pause e tente.
+
+Vamos juntos. Zeros embaixo da diagonal: triangular. Três vezes dois vezes quatro: vinte e quatro. Agora, dois por dois: n é dois. Três ao quadrado, nove, vezes três: vinte e sete.
+
+Vamos guardar em três frases. Um: linhas parentes zeram o determinante. Dois: matriz inteira vezes k: o determinante vai vezes k elevado a n. Três: triangular: multiplique a diagonal.
+
+Agora, o erro clássico. Dizer que o determinante de dois A é duas vezes o de A: sete vira catorze. Parece certo, porque com números dobrar tudo dobra o resultado. Mas cada linha é um botão, e são três. O fator é oito: cinquenta e seis.
+
+Agora, uma questão no estilo do ENEM. A matriz quadrada A, de ordem três, é definida por a, i, j igual a dois i menos j. O determinante de A é: A: menos doze. B: menos seis. C: zero. D: seis. E: doze.
+
+Essa, eu faço. Primeiro, monto a matriz. Linha um: dois menos um, um; dois menos dois, zero; dois menos três, menos um. Linha dois: três, dois, um. Linha três: cinco, quatro, três. Tem propriedade aqui? Tem: cada linha é a anterior mais dois, dois, dois. Linha parente: determinante zero. Letra C!
+
+Confiro por Sarrus. As que descem: seis, mais zero, menos doze: menos seis. As que sobem: menos dez, mais quatro, mais zero: menos seis. Menos seis menos menos seis: zero. Confere.
+
+E as armadilhas? A B fica só com a parte que desce. A A soma as duas partes, em vez de subtrair. A D usa só a parte que sobe, com o sinal de menos. E a E soma as duas e ainda troca o sinal.
+
+Agora, você faz. Uma matriz A, de ordem três, tem determinante cinco. Um programa gera dois A, multiplicando todos os elementos por dois. O determinante de dois A é: A: dez. B: vinte. C: trinta. D: quarenta. E: cento e vinte e cinco. Pause o vídeo e tente.
+
+Vamos conferir. Matriz inteira, ordem três: três botões. Cinco, dez, vinte, quarenta. Dois ao cubo vezes cinco. Letra D! A A gira um botão só. A B usa dois ao quadrado, como se fosse dois por dois. A C multiplica por dois e pela ordem três. E a E eleva o cinco ao cubo.
+
+Para fechar, as mesmas três frases. Um: linhas parentes zeram o determinante. Dois: matriz inteira vezes k: o determinante vai vezes k elevado a n. Três: triangular: multiplique a diagonal.
+
+O determinante diferente de zero garante que a matriz tem inversa. Num problema de ingressos, ele garante o quê? Que existe uma única resposta. E ele ainda calcula essa resposta: regra de Cramer, próximo episódio.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você teria respondido dez no gancho? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

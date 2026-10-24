@@ -1,0 +1,1039 @@
+<title>Unidades de Medida e Conversões</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Básica e Proporcionalidade › Assunto 10 de 12</p>
+        <h1>Unidades de medida e conversões</h1>
+        <p class="deck">Um erro de unidade não avisa: a conta fecha, o resultado sai limpo e está errado. Este assunto quase nunca é o tema da questão, mas decide o resultado de dezenas delas — em Matemática, Física, Química e Geografia.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Uma barra dividida em dez partes, um quadrado dividido em cem e um cubo dividido em mil, mostrando que o fator de conversão vai ao quadrado na área e ao cubo no volume">
+  <rect x="16" y="24" width="100" height="16" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <line x1="26" y1="24" x2="26" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="36" y1="24" x2="36" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="46" y1="24" x2="46" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="56" y1="24" x2="56" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="66" y1="24" x2="66" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="76" y1="24" x2="76" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="86" y1="24" x2="86" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="96" y1="24" x2="96" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <line x1="106" y1="24" x2="106" y2="40" style="stroke:var(--c1);stroke-width:.7"/>
+  <text x="128" y="30" class="svg-ttl" style="fill:var(--c1)">1 m = 10 dm</text>
+  <text x="128" y="43" class="svg-lbl" style="fill:var(--ink-3)">comprimento · ×10</text>
+
+  <rect x="16" y="58" width="60" height="60" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <line x1="28" y1="58" x2="28" y2="118" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="40" y1="58" x2="40" y2="118" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="52" y1="58" x2="52" y2="118" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="64" y1="58" x2="64" y2="118" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="16" y1="70" x2="76" y2="70" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="16" y1="82" x2="76" y2="82" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="16" y1="94" x2="76" y2="94" style="stroke:var(--c3);stroke-width:.6"/>
+  <line x1="16" y1="106" x2="76" y2="106" style="stroke:var(--c3);stroke-width:.6"/>
+  <text x="92" y="82" class="svg-ttl" style="fill:var(--c3)">1 m² = 100 dm²</text>
+  <text x="92" y="95" class="svg-lbl" style="fill:var(--ink-3)">área · ×100</text>
+
+  <path d="M20 152 L64 152 L64 196 L20 196 Z" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M20 152 L38 136 L82 136 L64 152 Z" style="fill:var(--c2-line);stroke:var(--c2);stroke-width:1.4"/>
+  <path d="M64 152 L82 136 L82 180 L64 196 Z" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4;fill-opacity:.6"/>
+  <line x1="34" y1="152" x2="34" y2="196" style="stroke:var(--c2);stroke-width:.6"/>
+  <line x1="49" y1="152" x2="49" y2="196" style="stroke:var(--c2);stroke-width:.6"/>
+  <line x1="20" y1="167" x2="64" y2="167" style="stroke:var(--c2);stroke-width:.6"/>
+  <line x1="20" y1="182" x2="64" y2="182" style="stroke:var(--c2);stroke-width:.6"/>
+  <text x="98" y="162" class="svg-ttl" style="fill:var(--c2)">1 m³ = 1 000 dm³</text>
+  <text x="98" y="175" class="svg-lbl" style="fill:var(--ink-3)">volume · ×1 000</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>4 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Potências de 10 · Notação científica</dd></div>
+      <div><dt>Destrava</dt><dd>Geometria, Física, Química, escalas</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Este assunto tem uma característica perversa: <strong>o erro não dá sinal</strong>. Quem troca uma unidade termina a conta normalmente, encontra um número redondo e marca a alternativa errada — que estará lá, esperando.</p>
+<p>Onde a conversão decide a questão:</p>
+<ul>
+  <li><strong>Geometria</strong> — área em m² e medidas em cm, volume em m³ e capacidade em litros.</li>
+  <li><strong>Física</strong> — velocidade em km/h e tempo em segundos, densidade em g/cm³ e massa em kg.</li>
+  <li><strong>Química</strong> — concentração em g/L, volume em mL, massa em mg.</li>
+  <li><strong>Geografia e atualidades</strong> — hectares, toneladas, quilowatt-hora, densidade demográfica.</li>
+  <li><strong>Contextos do dia a dia</strong> — receitas, consumo de água, conta de luz, tamanho de tela.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três fatos resolvem a maior parte das questões: <strong>área multiplica por 100 e volume por 1 000</strong> a cada degrau (seções 04 e 05); <strong>1 litro é 1 dm³</strong> (seção 05); e <strong>tempo não é decimal</strong> (seção 07). Se o tempo apertar, garanta esses três.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A escada do sistema métrico</h2>
+<p>As unidades-base são <strong>metro</strong>, <strong>grama</strong> e <strong>litro</strong>, e todos os múltiplos e submúltiplos seguem a mesma escada de prefixos.</p>
+
+<div class="eq">
+  <span class="lbl">A escada, do maior para o menor</span>
+  <p class="m" style="font-size:1.1rem">km &nbsp; hm &nbsp; dam &nbsp; <strong>m</strong> &nbsp; dm &nbsp; cm &nbsp; mm</p>
+  <p>Cada degrau <strong>à direita</strong> multiplica por 10. Cada degrau <strong>à esquerda</strong> divide por 10.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">A conferência de sentido</span>
+  <p>Indo para uma unidade <strong>menor</strong>, o número tem de <strong>aumentar</strong> — cabem mais centímetros do que metros na mesma distância. Indo para uma unidade maior, o número diminui.</p>
+  <p>Essa checagem pega quase todo erro de direção antes que ele chegue à alternativa.</p>
+</div>
+
+<p>Além da escada básica, os prefixos maiores e menores seguem as potências de 10 vistas no assunto 5: <span class="m">mega</span> (<span class="m">10<sup>6</sup></span>), <span class="m">giga</span> (<span class="m">10<sup>9</sup></span>), <span class="m">micro</span> (<span class="m">10<sup>−6</sup></span>) e <span class="m">nano</span> (<span class="m">10<sup>−9</sup></span>).</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Comprimento</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Conversão</th><th>Fator</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>km → m</td><td class="m">× 1 000</td><td class="m">2,5 km = 2 500 m</td></tr>
+    <tr><td>m → cm</td><td class="m">× 100</td><td class="m">1,8 m = 180 cm</td></tr>
+    <tr><td>m → mm</td><td class="m">× 1 000</td><td class="m">0,45 m = 450 mm</td></tr>
+    <tr><td>cm → mm</td><td class="m">× 10</td><td class="m">7,2 cm = 72 mm</td></tr>
+    <tr><td>cm → m</td><td class="m">÷ 100</td><td class="m">350 cm = 3,5 m</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Área: o fator vai ao quadrado</h2>
+<p>A escada é a mesma, mas cada degrau vale <strong>×100</strong> em vez de ×10 — porque a área tem duas dimensões, e o fator linear é elevado ao quadrado.</p>
+
+<div class="eq">
+  <span class="lbl">Os degraus da área</span>
+  <p class="m">1 m<sup>2</sup> = 100 dm<sup>2</sup> = 10 000 cm<sup>2</sup> = 1 000 000 mm<sup>2</sup></p>
+  <p class="m">1 km<sup>2</sup> = 1 000 000 m<sup>2</sup></p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O erro por fator 100</span>
+  <p>Escrever <span class="m">1 m<sup>2</sup> = 100 cm<sup>2</sup></span> é o deslize mais caro deste assunto. São <strong>10 000</strong>.</p>
+  <p>Para confirmar sem decorar: um metro quadrado é um quadrado de <span class="m">100 cm</span> de lado, e <span class="m">100 × 100 = 10 000</span> quadradinhos de 1 cm².</p>
+</div>
+
+<h3>As unidades agrárias</h3>
+<p>Aparecem sempre que o contexto é agricultura, desmatamento ou reforma agrária:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Unidade</th><th>Equivale a</th><th>Referência</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Hectare (ha)</strong></td><td class="m">10 000 m<sup>2</sup></td><td>Quadrado de 100 m de lado; é o mesmo que 1 hm²</td></tr>
+    <tr><td><strong>Are (a)</strong></td><td class="m">100 m<sup>2</sup></td><td>Pouco usado; 1 ha = 100 ares</td></tr>
+    <tr><td><strong>1 km²</strong></td><td class="m">100 hectares</td><td>Conversão frequente em questões ambientais</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Volume, capacidade e a ponte entre eles</h2>
+<p>No volume, cada degrau vale <strong>×1 000</strong>, porque são três dimensões.</p>
+
+<div class="eq">
+  <span class="lbl">Os degraus do volume</span>
+  <p class="m">1 m<sup>3</sup> = 1 000 dm<sup>3</sup> = 1 000 000 cm<sup>3</sup></p>
+</div>
+
+<p>Mas o fato mais útil deste assunto não é esse — é a <strong>ponte entre volume e capacidade</strong>:</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 200" role="img" aria-label="Um cubo de um decímetro de aresta contém exatamente um litro, que equivale a mil centímetros cúbicos, mil mililitros e um quilograma de água">
+  <path d="M40 78 L120 78 L120 158 L40 158 Z" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2"/>
+  <path d="M40 78 L70 50 L150 50 L120 78 Z" style="fill:var(--c1-line);stroke:var(--c1);stroke-width:2"/>
+  <path d="M120 78 L150 50 L150 130 L120 158 Z" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:2;fill-opacity:.6"/>
+  <text x="80" y="176" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">1 dm</text>
+  <text x="26" y="122" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)" transform="rotate(-90 26 122)">1 dm</text>
+  <text x="146" y="40" text-anchor="middle" class="svg-lbl" style="fill:var(--c1)">1 dm</text>
+  <path d="M162 104 L196 104" style="stroke:var(--c3);stroke-width:2" marker-end="url(#ub)"/>
+  <rect x="204" y="48" width="240" height="34" rx="8" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="324" y="71" text-anchor="middle" class="svg-ttl" style="fill:var(--c3)">1 dm³ = 1 litro</text>
+  <rect x="204" y="90" width="240" height="30" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.2"/>
+  <text x="324" y="110" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">1 000 cm³ = 1 000 mL</text>
+  <rect x="204" y="128" width="240" height="30" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.2"/>
+  <text x="324" y="148" text-anchor="middle" class="svg-num" style="fill:var(--ink-2)">1 kg de água pura</text>
+  <text x="324" y="180" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">e daí: 1 mL = 1 cm³ · 1 m³ = 1 000 L</text>
+  <defs>
+    <marker id="ub" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><polygon points="0,0 9,4.5 0,9" style="fill:var(--c3)"/></marker>
+  </defs>
+</svg>
+<figcaption><b>Um cubo de 1 dm de aresta é a definição do litro.</b> Dessa única equivalência saem todas as outras: como o cubo tem 1 000 cm³, cada mililitro é um centímetro cúbico; e como 1 m³ contém 1 000 dm³, uma caixa-d'água de 1 m³ comporta 1 000 litros. O quilograma de água fecha a ponte com a massa.</figcaption>
+</figure>
+
+<div class="box def">
+  <span class="tag">As equivalências que resolvem tudo</span>
+  <p class="m" style="font-size:1.06rem">1 L = 1 dm<sup>3</sup> &nbsp;·&nbsp; 1 mL = 1 cm<sup>3</sup> &nbsp;·&nbsp; 1 m<sup>3</sup> = 1 000 L</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">O engano do metro cúbico</span>
+  <p><span class="m">1 m<sup>3</sup></span> <strong>não</strong> é 1 litro — é <strong>mil</strong>. O litro corresponde ao <em>decímetro</em> cúbico. Confundir os dois erra por um fator de 1 000, e o resultado ainda parece razoável em contexto de piscina ou reservatório.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Massa</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Unidade</th><th>Equivale a</th><th>Onde aparece</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Tonelada (t)</strong></td><td class="m">1 000 kg</td><td>Cargas, produção agrícola, resíduos</td></tr>
+    <tr><td><strong>Quilograma (kg)</strong></td><td class="m">1 000 g</td><td>Unidade de referência</td></tr>
+    <tr><td><strong>Miligrama (mg)</strong></td><td class="m">0,001 g</td><td>Medicamentos, poluentes, nutrição</td></tr>
+    <tr><td><strong>Arroba</strong></td><td class="m">15 kg</td><td>Cotação de gado e agropecuária</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">A ligação entre massa e volume da água</span>
+  <p><span class="m">1 cm<sup>3</sup></span> de água pura pesa <span class="m">1 g</span>. Logo <span class="m">1 L</span> pesa <span class="m">1 kg</span> e <span class="m">1 m<sup>3</sup></span> pesa <span class="m">1 tonelada</span>.</p>
+  <p>É a densidade da água valendo <span class="m">1 g/cm<sup>3</sup></span>, e resolve na hora questões de reservatório, caminhão-pipa e enchente.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Tempo: a exceção que não é decimal</h2>
+<p>Todas as outras unidades andam de 10 em 10. O tempo, não — ele é <strong>sexagesimal</strong>, de 60 em 60. É por isso que ele derruba tanta gente.</p>
+
+<div class="eq">
+  <span class="lbl">As equivalências</span>
+  <p class="m">1 h = 60 min &nbsp;·&nbsp; 1 min = 60 s &nbsp;·&nbsp; 1 h = 3 600 s</p>
+</div>
+
+<div class="box warn">
+  <span class="tag">Décimo de hora não é minuto</span>
+  <p>Um resultado de <span class="m">2,4 h</span> <strong>não</strong> é 2 h e 40 min. Para converter a parte decimal, <strong>multiplique por 60</strong>:</p>
+  <p class="m">0,4 · 60 = 24 &nbsp;→&nbsp; 2 h 24 min</p>
+  <p>Do mesmo modo, <span class="m">2,5 h</span> é 2 h 30 min e <span class="m">3,25 h</span> é 3 h 15 min. Esse erro aparece sempre que uma divisão de velocidade dá resultado quebrado.</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">As frações de hora que vale reconhecer</span>
+  <p class="m">0,25 h = 15 min &nbsp;·&nbsp; 0,5 h = 30 min &nbsp;·&nbsp; 0,75 h = 45 min</p>
+  <p class="m">0,1 h = 6 min &nbsp;·&nbsp; 0,2 h = 12 min &nbsp;·&nbsp; 0,8 h = 48 min</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Unidades compostas</h2>
+<p>Velocidade, densidade, vazão e consumo são razões entre duas unidades. Para convertê-las, trata-se <strong>numerador e denominador separadamente</strong>.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Grandeza</th><th>Conversão</th><th>Regra</th></tr></thead>
+  <tbody>
+    <tr><td>Velocidade</td><td class="m">km/h → m/s</td><td><strong>Dividir por 3,6</strong></td></tr>
+    <tr><td>Velocidade</td><td class="m">m/s → km/h</td><td><strong>Multiplicar por 3,6</strong></td></tr>
+    <tr><td>Densidade</td><td class="m">g/cm<sup>3</sup> → kg/m<sup>3</sup></td><td>Multiplicar por 1 000</td></tr>
+    <tr><td>Vazão</td><td class="m">L/min → m<sup>3</sup>/h</td><td>Multiplicar por 0,06</td></tr>
+    <tr><td>Consumo</td><td class="m">km/L</td><td>Já é razão; converta só se a distância mudar de unidade</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box def">
+  <span class="tag">De onde vem o 3,6</span>
+  <p><span class="m">1 km/h</span> é <span class="m">1 000</span> metros em <span class="m">3 600</span> segundos:</p>
+  <p class="m"><span class="frac"><i>1000</i><i>3600</i></span> = <span class="frac"><i>1</i><i>3,6</i></span> m/s</p>
+  <p>Entender a origem evita inverter o sentido. E há uma conferência de bom senso: o valor em <span class="m">m/s</span> é sempre o <strong>menor</strong> dos dois, porque um metro por segundo já é bastante rápido.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Análise dimensional</h2>
+<p>É o método que nunca falha em unidades compostas: multiplica-se por frações de conversão que valem <span class="m">1</span>, e <strong>as unidades se cancelam como se fossem números</strong>.</p>
+
+<div class="eq">
+  <span class="lbl">Convertendo 72 km/h em m/s</span>
+  <p class="m">72 <span class="frac"><i>km</i><i>h</i></span> · <span class="frac"><i>1000 m</i><i>1 km</i></span> · <span class="frac"><i>1 h</i><i>3600 s</i></span></p>
+  <p>O <span class="m">km</span> do numerador cancela com o do denominador; o <span class="m">h</span> faz o mesmo. Sobram apenas metros e segundos:</p>
+  <p class="m"><span class="frac"><i>72 · 1000</i><i>3600</i></span> = 20 m/s</p>
+</div>
+
+<div class="box tip">
+  <span class="tag">Por que este método é confiável</span>
+  <p>Ele <strong>se verifica sozinho</strong>. Se as unidades não cancelarem até sobrar exatamente a unidade desejada, alguma fração foi montada de cabeça para baixo — e o erro aparece antes de qualquer conta.</p>
+  <p>Vale especialmente quando a questão mistura três ou mais unidades, situação em que decorar fatores não ajuda.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Unidades fora do sistema métrico</h2>
+<p>Aparecem em contextos importados — tecnologia, esporte, aviação, culinária. O ponto importante: <strong>a prova sempre fornece o fator de conversão</strong>. A habilidade cobrada é usá-lo, não memorizá-lo.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Unidade</th><th>Equivale a</th><th>Contexto típico</th></tr></thead>
+  <tbody>
+    <tr><td>Polegada</td><td class="m">2,54 cm</td><td>Telas, tubulações, rodas</td></tr>
+    <tr><td>Pé</td><td class="m">≈ 30,5 cm</td><td>Altitude na aviação</td></tr>
+    <tr><td>Milha</td><td class="m">≈ 1,6 km</td><td>Distâncias em países anglófonos</td></tr>
+    <tr><td>Libra</td><td class="m">≈ 0,45 kg</td><td>Peso em contexto internacional</td></tr>
+    <tr><td>Galão</td><td class="m">≈ 3,785 L</td><td>Combustível</td></tr>
+    <tr><td>Caloria</td><td class="m">≈ 4,18 J</td><td>Nutrição e termoquímica</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="box tip">
+  <span class="tag">O quilowatt-hora não é potência</span>
+  <p>O <span class="m">kWh</span> é unidade de <strong>energia</strong>: corresponde a um aparelho de <span class="m">1 kW</span> ligado por <span class="m">1 hora</span>. É assim que a conta de luz mede o consumo, e por isso um chuveiro de 5 kW ligado 12 minutos gasta <span class="m">1 kWh</span>.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">1 m² = 100 cm²</span> &nbsp;→&nbsp; <span class="c">10 000 cm²</span></span><small>Em área, cada degrau vale ×100. Erro por fator 100.</small></li>
+  <li><span><span class="x">1 m³ = 1 000 cm³</span> &nbsp;→&nbsp; <span class="c">1 000 000 cm³</span></span><small>Em volume, cada degrau vale ×1 000.</small></li>
+  <li><span><span class="x">1 m³ = 1 litro</span> &nbsp;→&nbsp; <span class="c">1 000 litros</span></span><small>O litro corresponde ao decímetro cúbico, não ao metro cúbico.</small></li>
+  <li><span><span class="x">2,4 h = 2 h 40 min</span> &nbsp;→&nbsp; <span class="c">2 h 24 min</span></span><small>Multiplique a parte decimal por 60. O tempo não é decimal.</small></li>
+  <li><span><span class="x">km/h → m/s multiplicando por 3,6</span> &nbsp;→&nbsp; <span class="c">divida por 3,6</span></span><small>O valor em m/s é sempre o menor dos dois.</small></li>
+  <li><span><span class="x">1 tonelada = 100 kg</span> &nbsp;→&nbsp; <span class="c">1 000 kg</span></span><small>A tonelada segue o prefixo quilo: 10³ kg.</small></li>
+  <li><span><span class="x">1 hectare = 1 000 m²</span> &nbsp;→&nbsp; <span class="c">10 000 m²</span></span><small>É um quadrado de 100 m de lado, ou seja, 1 hm².</small></li>
+  <li><span><span class="x">Somar medidas em unidades diferentes</span> &nbsp;→&nbsp; <span class="c">padronize antes</span></span><small>Erro silencioso: a conta fecha e o resultado sai errado sem nenhum alerta.</small></li>
+  <li><span><span class="x">Converter só o numerador de uma unidade composta</span> &nbsp;→&nbsp; <span class="c">converta os dois</span></span><small>Em g/cm³ para kg/m³, tanto a massa quanto o volume mudam de unidade.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, escreva todas as medidas na mesma unidade.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Unidade agrária</span>
+    <p class="enun">Um produtor rural pretende cercar uma área de plantio de 2,5 hectares. Essa área, expressa em metros quadrados, corresponde a</p>
+    <ol class="alt"><li>250 m²</li><li>2 500 m²</li><li>25 000 m²</li><li>250 000 m²</li><li>2 500 000 m²</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Um hectare é um quadrado de 100 m de lado:</p>
+      <p class="m">1 ha = 100 · 100 = 10 000 m<sup>2</sup></p>
+      <p class="m">2,5 · 10 000 = 25 000 m<sup>2</sup></p>
+      <p><strong>Referência útil:</strong> um campo de futebol tem cerca de 0,7 hectare. Uma área de 2,5 ha equivale a três campos e meio — coerente com 25 000 m².</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Volume e capacidade</span>
+    <p class="enun">Uma caixa-d'água tem capacidade de 1,2 m³. O volume de água que ela comporta, em litros, é de</p>
+    <ol class="alt"><li>1,2 L</li><li>12 L</li><li>120 L</li><li>1 200 L</li><li>12 000 L</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A ponte é <span class="m">1 m<sup>3</sup> = 1 000 L</span>, que vem de <span class="m">1 m<sup>3</sup> = 1 000 dm<sup>3</sup></span> e <span class="m">1 dm<sup>3</sup> = 1 L</span>:</p>
+      <p class="m">1,2 · 1 000 = 1 200 litros</p>
+      <p><strong>Conferência de bom senso:</strong> caixas-d'água residenciais têm entre 500 e 2 000 litros. As alternativas A, B e C dariam volumes menores que um balde.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Tempo</span>
+    <p class="enun">Um percurso foi cronometrado em 3,25 horas. Esse tempo corresponde a</p>
+    <ol class="alt"><li>3 h 15 min</li><li>3 h 25 min</li><li>3 h 40 min</li><li>3 h 45 min</li><li>3 h 50 min</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A parte inteira já são 3 horas. A parte decimal precisa ser <strong>multiplicada por 60</strong>:</p>
+      <p class="m">0,25 · 60 = 15 minutos</p>
+      <p>Portanto, 3 h 15 min.</p>
+      <p>A alternativa B é a leitura direta do “25” como minutos — o erro que aparece sempre que se trata o tempo como decimal. Vale reconhecer de imediato: <span class="m">0,25 h</span> é um quarto de hora.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Velocidade</span>
+    <p class="enun">Um veículo trafega a 72 km/h em uma rodovia. Essa velocidade, expressa em metros por segundo, é de</p>
+    <ol class="alt"><li>2 m/s</li><li>20 m/s</li><li>200 m/s</li><li>259,2 m/s</li><li>20 000 m/s</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>De km/h para m/s, <strong>divide-se</strong> por 3,6:</p>
+      <p class="m">72 ÷ 3,6 = 20 m/s</p>
+      <p><strong>Pela análise dimensional, que dispensa decorar o fator:</strong></p>
+      <p class="m">72 <span class="frac"><i>km</i><i>h</i></span> · <span class="frac"><i>1000 m</i><i>1 km</i></span> · <span class="frac"><i>1 h</i><i>3600 s</i></span> = <span class="frac"><i>72 000</i><i>3 600</i></span> = 20 m/s</p>
+      <p>A alternativa D é de quem multiplicou por 3,6 em vez de dividir. A conferência de sentido resolve: o número em m/s é sempre menor.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Densidade</span>
+    <p class="enun">Um óleo vegetal tem densidade de 0,8 g/cm³. Essa densidade, expressa em quilogramas por metro cúbico, corresponde a</p>
+    <ol class="alt"><li>0,0008 kg/m³</li><li>0,8 kg/m³</li><li>80 kg/m³</li><li>800 kg/m³</li><li>800 000 kg/m³</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Numa unidade composta, converta <strong>numerador e denominador</strong>:</p>
+      <p class="m">0,8 <span class="frac"><i>g</i><i>cm<sup>3</sup></i></span> · <span class="frac"><i>1 kg</i><i>1000 g</i></span> · <span class="frac"><i>1 000 000 cm<sup>3</sup></i><i>1 m<sup>3</sup></i></span></p>
+      <p class="m">= 0,8 · <span class="frac"><i>1 000 000</i><i>1 000</i></span> = 0,8 · 1 000 = 800 kg/m<sup>3</sup></p>
+      <p><strong>Regra prática:</strong> de g/cm³ para kg/m³, multiplica-se por 1 000.</p>
+      <p><strong>Conferência:</strong> a água tem 1 g/cm³ = 1 000 kg/m³, e 1 m³ de água pesa 1 tonelada. O óleo, sendo menos denso, dá 800 kg/m³ — coerente, e é por isso que ele boia na água.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Vazão</span>
+    <p class="enun">Uma torneira despeja água a uma vazão constante de 15 litros por minuto. Deixada aberta por 2 horas, ela terá despejado um volume de</p>
+    <ol class="alt"><li>0,18 m³</li><li>1,8 m³</li><li>18 m³</li><li>180 m³</li><li>1 800 m³</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Primeiro padronize o tempo, já que a vazão está por minuto:</p>
+      <p class="m">2 h = 120 min</p>
+      <p class="m">15 · 120 = 1 800 litros</p>
+      <p>Agora converta para metros cúbicos, lembrando que <span class="m">1 m<sup>3</sup> = 1 000 L</span>:</p>
+      <p class="m">1 800 ÷ 1 000 = 1,8 m<sup>3</sup></p>
+      <p>A alternativa E é de quem parou nos litros e trocou a unidade sem converter — e 1 800 m³ seria o volume de uma piscina olímpica inteira.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Massa</span>
+    <p class="enun">Um caminhão transporta uma carga de 3,5 toneladas de grãos. Essa carga, expressa em quilogramas, corresponde a</p>
+    <ol class="alt"><li>35 kg</li><li>350 kg</li><li>3 500 kg</li><li>35 000 kg</li><li>350 000 kg</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">1 t = 1 000 kg &nbsp;→&nbsp; 3,5 · 1 000 = 3 500 kg</p>
+      <p><strong>Conferência de plausibilidade:</strong> um caminhão de carga média transporta alguns milhares de quilos. A alternativa B daria 350 kg, o peso de uma moto grande; a D daria 35 toneladas, acima do limite legal de muitos veículos.</p>
+      <p>Se a carga fosse informada em arrobas, bastaria lembrar que <span class="m">1 arroba = 15 kg</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Unidade fora do sistema métrico</span>
+    <p class="enun">Uma televisão é anunciada como tendo 50 polegadas de diagonal. Considerando que 1 polegada equivale a 2,54 cm, a diagonal dessa televisão mede, em centímetros,</p>
+    <ol class="alt"><li>19,7 cm</li><li>52,5 cm</li><li>127 cm</li><li>254 cm</li><li>1 270 cm</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O enunciado fornece o fator, como o ENEM sempre faz com unidades fora do sistema métrico:</p>
+      <p class="m">50 · 2,54 = 127 cm</p>
+      <p>São 1,27 metro de diagonal — plausível para uma TV grande.</p>
+      <p>A alternativa A é de quem dividiu em vez de multiplicar. A conferência de sentido resolve: a polegada é <em>maior</em> que o centímetro, então o número em centímetros tem de ser maior.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Volume de um reservatório</span>
+    <p class="enun">Uma piscina retangular tem 8 metros de comprimento, 5 metros de largura e 1,5 metro de profundidade uniforme. Cheia até a borda, ela comporta</p>
+    <ol class="alt"><li>60 litros</li><li>600 litros</li><li>6 000 litros</li><li>60 000 litros</li><li>600 000 litros</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Primeiro o volume, com todas as medidas já em metros:</p>
+      <p class="m">V = 8 · 5 · 1,5 = 60 m<sup>3</sup></p>
+      <p>Agora a conversão para litros:</p>
+      <p class="m">60 · 1 000 = 60 000 litros</p>
+      <p><strong>Por que a conversão é o ponto da questão:</strong> o volume em metros cúbicos é um número pequeno e amigável, e a tentação é responder 60. As cinco alternativas cobrem todas as potências de 10 ao redor da resposta certa, justamente porque o erro esperado é de fator 10, 100 ou 1 000.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Percorro a escada km–hm–dam–m–dm–cm–mm nos dois sentidos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro o sentido: para unidade menor, o número aumenta</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que cada degrau vale ×100 em área e ×1 000 em volume, e por quê</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que 1 hectare são <span class="m">10 000 m<sup>2</sup></span> e que 1 km² são 100 hectares</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso a ponte <span class="m">1 L = 1 dm<sup>3</sup></span>, <span class="m">1 mL = 1 cm<sup>3</sup></span> e <span class="m">1 m<sup>3</sup> = 1 000 L</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Lembro que 1 L de água pesa 1 kg e 1 m³ pesa 1 tonelada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto tonelada, quilo, grama e miligrama sem hesitar</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto a parte decimal de uma hora multiplicando por 60</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto km/h e m/s no sentido certo e sei de onde vem o 3,6</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Converto unidades compostas tratando numerador e denominador</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso análise dimensional e deixo as unidades se cancelarem</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico o fator de conversão que o enunciado fornece para unidades fora do SI</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Padronizo todas as unidades antes de iniciar qualquer cálculo</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 30 questões e acerte pelo menos 21 (70%). Busque também questões de <strong>Física e Química</strong>, onde a conversão costuma estar embutida no meio do cálculo em vez de ser o objeto da pergunta. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>45 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-10-unidades-conversoes.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Básica</code> é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-10";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

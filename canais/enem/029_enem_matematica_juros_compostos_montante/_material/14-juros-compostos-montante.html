@@ -1,0 +1,1048 @@
+<title>Juros Compostos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Financeira › Assunto 2 de 6</p>
+        <h1>Juros compostos e montante</h1>
+        <p class="deck">Juros sobre juros: cada período multiplica o saldo pelo mesmo fator, e o dinheiro cresce como uma potência. É o regime de bancos, cartões e financiamentos, e o ENEM cobra com potências dadas no enunciado, logaritmos aproximados e a comparação com os juros simples.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Barras comparando cem reais a dez por cento ao ano durante cinco anos: a juros simples chegam a cento e cinquenta, a juros compostos a cento e sessenta e um">
+  <rect x="20" y="14" width="12" height="12" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="38" y="24" class="svg-lbl" style="fill:var(--c1)">simples: 100 → 150</text>
+  <rect x="20" y="32" width="12" height="12" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="38" y="42" class="svg-lbl" style="fill:var(--c2)">compostos: 100 → 161</text>
+  <rect x="20" y="101.7" width="14" height="68.3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="36" y="101.7" width="14" height="68.3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="35" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <rect x="66" y="94.9" width="14" height="75.1" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="82" y="94.9" width="14" height="75.1" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="81" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <rect x="112" y="88" width="14" height="82" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="128" y="87.4" width="14" height="82.6" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="127" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <rect x="158" y="81.2" width="14" height="88.8" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="174" y="79.1" width="14" height="90.9" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="173" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <rect x="204" y="74.4" width="14" height="95.6" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="220" y="70" width="14" height="100" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="219" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <rect x="250" y="67.5" width="14" height="102.5" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="266" y="60" width="14" height="110" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="265" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">anos a 10% · juros sobre juros</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>25 · Fase Ampliação</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>36 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Juros simples · Potenciação</dd></div>
+      <div><dt>Destrava</dt><dd>Descontos e lucro · Taxas equivalentes e inflação</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Juros compostos são o modelo real do dinheiro: poupança, investimentos, empréstimos, cheque especial e cartão de crédito funcionam assim. Na prova, aparecem em contexto e <strong>sem calculadora</strong>, então o enunciado entrega as potências ou os logaritmos de que você precisa.</p>
+<p>O que costuma ser cobrado:</p>
+<ul>
+  <li><strong>Calcular o montante</strong> com <span class="m"><span class="v">M</span> = <span class="v">C</span>(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span>, com a potência dada ou fácil de fazer à mão.</li>
+  <li><strong>Encontrar o tempo</strong> para atingir um valor, por tentativa ou com logaritmos aproximados.</li>
+  <li><strong>Trazer um valor futuro para hoje</strong> (quanto aplicar agora para ter tanto depois).</li>
+  <li><strong>Comparar simples e compostos</strong>, em números ou em gráficos (reta × curva).</li>
+  <li><strong>Encadear taxas diferentes</strong> período a período, multiplicando fatores.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Pensar em <strong>fatores</strong>, não em porcentagens somadas. Cada período multiplica o saldo por <span class="m">(1 + <span class="v">i</span>)</span>; <span class="v">t</span> períodos multiplicam por <span class="m">(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span>. É a mesma ferramenta das variações sucessivas de <em>Porcentagem</em>, repetida com a mesma taxa.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Juros sobre juros</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>No regime de <strong>juros compostos</strong>, os juros de cada período são calculados sobre o <strong>saldo do período anterior</strong>, que já inclui os juros acumulados. Os juros são incorporados ao capital e passam a render também.</p>
+</div>
+<p>Veja R$ 1.000,00 a 10% ao mês. No primeiro mês, os juros são 10% de 1.000. No segundo, 10% de 1.100. No terceiro, 10% de 1.210:</p>
+<figure class="fig">
+<svg viewBox="0 0 460 226" role="img" aria-label="Barras do saldo de mil reais a dez por cento ao mês: os juros de cada mês são cem, cento e dez, cento e vinte e um e cento e trinta e três reais e dez centavos, porque incidem sobre o saldo anterior">
+  <rect x="20" y="12" width="12" height="12" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="38" y="22" class="svg-lbl" style="fill:var(--ink-2)">saldo anterior</text>
+  <rect x="160" y="12" width="12" height="12" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="178" y="22" class="svg-lbl" style="fill:var(--ink-2)">juros do mês (10% do saldo)</text>
+  <rect x="40" y="97.5" width="40" height="102.5" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="60" y="90.5" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1.000</text>
+  <text x="60" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 0</text>
+  <rect x="118" y="97.5" width="40" height="102.5" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="118" y="87.3" width="40" height="10.2" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="162" y="96.4" class="svg-lbl" style="fill:var(--c3);font-size:10px">+100</text>
+  <text x="138" y="80.3" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1.100</text>
+  <text x="138" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 1</text>
+  <rect x="196" y="87.3" width="40" height="112.7" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="196" y="76" width="40" height="11.3" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="240" y="85.7" class="svg-lbl" style="fill:var(--c3);font-size:10px">+110</text>
+  <text x="216" y="69" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1.210</text>
+  <text x="216" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 2</text>
+  <rect x="274" y="76" width="40" height="124" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="274" y="63.6" width="40" height="12.4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="318" y="73.8" class="svg-lbl" style="fill:var(--c3);font-size:10px">+121</text>
+  <text x="294" y="56.6" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1.331</text>
+  <text x="294" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 3</text>
+  <rect x="352" y="63.6" width="40" height="136.4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="352" y="50" width="40" height="13.6" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.6"/>
+  <text x="396" y="60.8" class="svg-lbl" style="fill:var(--c3);font-size:10px">+133,10</text>
+  <text x="372" y="43" text-anchor="middle" class="svg-num" style="fill:var(--ink)">1.464,10</text>
+  <text x="372" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 4</text>
+</svg>
+<figcaption><b>Os juros de cada mês crescem.</b> São sempre 10%, mas de um saldo cada vez maior: 100, depois 110, 121 e 133,10. Em juros simples seriam 100 todo mês, e o saldo do mês 4 seria 1.400, não 1.464,10.</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th>Mês</th><th>Juros simples (sobre 1.000)</th><th>Saldo simples</th><th>Juros compostos (sobre o saldo)</th><th>Saldo composto</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>100</td><td>1.100</td><td>100</td><td>1.100</td></tr>
+    <tr><td>2</td><td>100</td><td>1.200</td><td>110</td><td>1.210</td></tr>
+    <tr><td>3</td><td>100</td><td>1.300</td><td>121</td><td>1.331</td></tr>
+    <tr><td>4</td><td>100</td><td>1.400</td><td>133,10</td><td>1.464,10</td></tr>
+  </tbody>
+</table>
+</div>
+<p>No primeiro período os dois regimes dão o mesmo resultado. A diferença nasce no segundo período e cresce sem parar.</p>
+</section>
+
+<section id="s3">
+<h2><i>03</i> A fórmula do montante</h2>
+<p>Cada mês multiplica o saldo por <span class="m">1 + <span class="v">i</span></span> (o mesmo fator de aumento de <em>Porcentagem</em>). Depois de <span class="m"><span class="v">t</span></span> meses, o capital foi multiplicado <span class="m"><span class="v">t</span></span> vezes por esse fator:</p>
+<div class="eq">
+  <span class="lbl">Montante em juros compostos</span>
+  <p class="m" style="font-size:1.1rem"><span class="v">M</span> = <span class="v">C</span> · (1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></p>
+  <p>Os juros saem por diferença: <span class="m"><span class="v">J</span> = <span class="v">M</span> − <span class="v">C</span></span>. Não existe fórmula direta de juros compostos que dispense o montante.</p>
+</div>
+<p>O número <span class="m">(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span> é o <strong>fator de capitalização</strong>. A exigência de unidades é a mesma dos juros simples: <span class="m"><span class="v">i</span></span> e <span class="m"><span class="v">t</span></span> no mesmo período.</p>
+<div class="eq">
+  <span class="lbl">Exemplo — R$ 5.000,00 a 2% ao mês, durante 3 meses</span>
+  <p class="m">1,02<sup>3</sup> = 1,02 · 1,02 · 1,02 = 1,061208</p>
+  <p class="m"><span class="v">M</span> = 5.000 · 1,061208 = <strong>R$ 5.306,04</strong> &nbsp;&nbsp; <span class="v">J</span> = R$ 306,04</p>
+  <p>Em juros simples seriam R$ 300,00 de juros. A diferença de R$ 6,04 são os juros sobre os juros.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Dividir a taxa anual por 12 não funciona aqui</span>
+  <p>Se a taxa é anual e o prazo está em meses, não basta dividir por 12. Em juros compostos, a conversão de taxas usa potência (taxas equivalentes, assunto 4 deste bloco). Nas questões deste assunto, a taxa já vem no período certo ou o prazo é um número inteiro de períodos da taxa.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Simples × compostos: reta e curva</h2>
+<p>Em juros simples o montante é uma <strong>função afim</strong> do tempo; em juros compostos, uma <strong>função exponencial</strong>:</p>
+<div class="tw">
+<table>
+  <thead><tr><th></th><th>Juros simples</th><th>Juros compostos</th></tr></thead>
+  <tbody>
+    <tr><td>Juros incidem sobre</td><td>o capital inicial</td><td>o saldo anterior</td></tr>
+    <tr><td>Montante</td><td class="m"><span class="v">M</span> = <span class="v">C</span>(1 + <span class="v">i</span><span class="v">t</span>)</td><td class="m"><span class="v">M</span> = <span class="v">C</span>(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></td></tr>
+    <tr><td>Cada período</td><td><strong>soma</strong> <span class="m"><span class="v">C</span> · <span class="v">i</span></span></td><td><strong>multiplica</strong> por <span class="m">1 + <span class="v">i</span></span></td></tr>
+    <tr><td>Montantes período a período</td><td>PA de razão <span class="m"><span class="v">C</span> · <span class="v">i</span></span></td><td>PG de razão <span class="m">1 + <span class="v">i</span></span></td></tr>
+    <tr><td>Gráfico</td><td>reta</td><td>curva exponencial</td></tr>
+  </tbody>
+</table>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 252" role="img" aria-label="Gráfico do montante de cem a dez por cento ao ano: a juros simples é uma reta que chega a duzentos em dez anos; a juros compostos é uma curva exponencial que chega a duzentos e cinquenta e nove; as duas se encontram em t igual a um">
+  <line x1="70" y1="222" x2="440" y2="222" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m14a)"/>
+  <line x1="70" y1="222" x2="70" y2="26" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m14a)"/>
+  <line x1="66" y1="160" x2="70" y2="160" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="62" y="164" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">100</text>
+  <line x1="66" y1="98" x2="70" y2="98" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="62" y="102" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">200</text>
+  <line x1="70" y1="222" x2="70" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="70" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="138" y1="222" x2="138" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="138" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="206" y1="222" x2="206" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="206" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="274" y1="222" x2="274" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="274" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">6</text>
+  <line x1="342" y1="222" x2="342" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="342" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">8</text>
+  <line x1="410" y1="222" x2="410" y2="226" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="410" y="239" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">10</text>
+  <text x="76" y="30" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">M</text>
+  <text x="440" y="214" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2)">t (anos)</text>
+  <line x1="70" y1="160" x2="410" y2="98" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <polyline points="70,160 73.4,159.4 76.8,158.8 80.2,158.2 83.6,157.6 87,157 90.4,156.4 93.8,155.7 97.2,155.1 100.6,154.4 104,153.8 107.4,153.1 110.8,152.5 114.2,151.8 117.6,151.1 121,150.5 124.4,149.8 127.8,149.1 131.2,148.4 134.6,147.7 138,147 141.4,146.3 144.8,145.5 148.2,144.8 151.6,144.1 155,143.3 158.4,142.6 161.8,141.8 165.2,141 168.6,140.3 172,139.5 175.4,138.7 178.8,137.9 182.2,137.1 185.6,136.3 189,135.5 192.4,134.6 195.8,133.8 199.2,132.9 202.6,132.1 206,131.2 209.4,130.4 212.8,129.5 216.2,128.6 219.6,127.7 223,126.8 226.4,125.9 229.8,125 233.2,124 236.6,123.1 240,122.1 243.4,121.2 246.8,120.2 250.2,119.3 253.6,118.3 257,117.3 260.4,116.3 263.8,115.3 267.2,114.2 270.6,113.2 274,112.2 277.4,111.1 280.8,110 284.2,109 287.6,107.9 291,106.8 294.4,105.7 297.8,104.6 301.2,103.5 304.6,102.3 308,101.2 311.4,100 314.8,98.9 318.2,97.7 321.6,96.5 325,95.3 328.4,94.1 331.8,92.8 335.2,91.6 338.6,90.4 342,89.1 345.4,87.8 348.8,86.5 352.2,85.2 355.6,83.9 359,82.6 362.4,81.3 365.8,79.9 369.2,78.6 372.6,77.2 376,75.8 379.4,74.4 382.8,73 386.2,71.6 389.6,70.1 393,68.7 396.4,67.2 399.8,65.7 403.2,64.2 406.6,62.7 410,61.2" style="fill:none;stroke:var(--c2);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="104" cy="153.8" r="3.5" style="fill:var(--c4)"/>
+  <text x="106" y="173.8" class="svg-lbl" style="fill:var(--c4)">t = 1: valem o mesmo (110)</text>
+  <text x="416" y="102" class="svg-lbl" style="fill:var(--c1)">200</text>
+  <text x="416" y="65.2" class="svg-lbl" style="fill:var(--c2)">259</text>
+  <text x="104" y="54" class="svg-lbl" style="fill:var(--c2)">compostos: M = 100 · 1,1ᵗ (curva)</text>
+  <text x="104" y="72" class="svg-lbl" style="fill:var(--c1)">simples: M = 100 + 10t (reta)</text>
+  <defs>
+    <marker id="m14a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+</svg>
+<figcaption><b>R$ 100,00 a 10% ao ano nos dois regimes.</b> A reta e a curva partem do mesmo ponto e se encontram em <span class="m"><span class="v">t</span> = 1</span>. Depois disso a curva dispara: em 10 anos, 259 contra 200. Entre 0 e 1 a reta fica ligeiramente acima da curva, diferença pequena demais para aparecer nesta escala.</figcaption>
+</figure>
+<div class="box def">
+  <span class="tag">Quem rende mais depende do prazo</span>
+  <p><strong>Antes de um período</strong> (<span class="m"><span class="v">t</span> &lt; 1</span>): simples rendem mais. Meio ano a 10% a.a. dá fator 1,05 em simples e <span class="m"><span class="rad"><i>1,1</i></span> ≈ 1,0488</span> em compostos.</p>
+  <p><strong>Exatamente um período</strong>: os dois são iguais (fator 1,10).</p>
+  <p><strong>Depois de um período</strong> (<span class="m"><span class="v">t</span> &gt; 1</span>): compostos rendem mais, e a vantagem só aumenta.</p>
+</div>
+<p>É por isso que juros de mora de poucos dias são cobrados em simples (ver <em>Juros simples</em>): para frações de mês, a cobrança simples é a maior das duas.</p>
+</section>
+
+<section id="s5">
+<h2><i>05</i> Potências sem calculadora</h2>
+<p>O ENEM não deixa você fazer <span class="m">1,05<sup>12</sup></span> na mão. Ou o enunciado dá a potência, ou dá uma potência menor que você combina. Três técnicas resolvem quase tudo.</p>
+<div class="eq">
+  <span class="lbl">1 · Multiplicar passo a passo (expoentes pequenos)</span>
+  <p class="m">1,1<sup>2</sup> = 1,21 &nbsp;·&nbsp; 1,1<sup>3</sup> = 1,331 &nbsp;·&nbsp; 1,1<sup>4</sup> = 1,4641 &nbsp;·&nbsp; 1,1<sup>5</sup> = 1,61051</p>
+  <p>Multiplicar por 1,1 é somar ao número a sua décima parte: <span class="m">1,331 + 0,1331 = 1,4641</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">2 · Quebrar o expoente</span>
+  <p class="m">(1 + <span class="v">i</span>)<sup>2<span class="v">n</span></sup> = [(1 + <span class="v">i</span>)<sup><span class="v">n</span></sup>]<sup>2</sup></p>
+  <p>Se o enunciado diz “use <span class="m">1,03<sup>10</sup> ≈ 1,34</span>” e o prazo é de 20 meses, faça <span class="m">1,34<sup>2</sup> ≈ 1,80</span> (o valor exato de <span class="m">1,34<sup>2</sup></span> é 1,7956).</p>
+</div>
+<div class="eq">
+  <span class="lbl">3 · Combinar potências dadas</span>
+  <p class="m">(1 + <span class="v">i</span>)<sup><span class="v">a</span> + <span class="v">b</span></sup> = (1 + <span class="v">i</span>)<sup><span class="v">a</span></sup> · (1 + <span class="v">i</span>)<sup><span class="v">b</span></sup></p>
+  <p>Com <span class="m">1,1<sup>5</sup> ≈ 1,61</span> e <span class="m">1,1<sup>2</sup> = 1,21</span>, o fator de 7 anos a 10% é <span class="m">1,61 · 1,21 ≈ 1,95</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Dobrar o tempo não dobra o fator</span>
+  <p>Se 6 meses dão fator 1,34, 12 meses dão <span class="m">1,34<sup>2</sup> ≈ 1,80</span>, não <span class="m">2 · 1,34</span> nem <span class="m">1 + 0,34 + 0,34 = 1,68</span>. Somar as taxas de dois períodos é raciocinar em juros simples.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Descobrindo o tempo</h2>
+<p>O tempo está no expoente, então isolá-lo exige outra ferramenta. Na prova, há três caminhos, do mais simples ao mais formal.</p>
+<h3>Por tentativa</h3>
+<p>Quando o prazo é pequeno, teste as potências. A 10% a.m., para passar de 1,6 vezes o capital: <span class="m">1,1<sup>4</sup> ≈ 1,46</span> ainda não basta, <span class="m">1,1<sup>5</sup> ≈ 1,61</span> já basta. São <strong>5 meses</strong>.</p>
+<h3>Com logaritmos</h3>
+<p>Aplicando logaritmo dos dois lados de <span class="m">(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup> = <span class="frac"><i><span class="v">M</span></i><i><span class="v">C</span></i></span></span>, o expoente desce:</p>
+<div class="eq">
+  <span class="lbl">Tempo em juros compostos</span>
+  <p class="m"><span class="v">t</span> = <span class="frac"><i>log (<span class="v">M</span> / <span class="v">C</span>)</i><i>log (1 + <span class="v">i</span>)</i></span></p>
+  <p>Para dobrar a 10% a.a., com <span class="m">log 2 ≈ 0,301</span> e <span class="m">log 1,1 ≈ 0,041</span>: <span class="m"><span class="v">t</span> ≈ <span class="frac"><i>0,301</i><i>0,041</i></span> ≈ 7,3</span> anos.</p>
+</div>
+<p>O enunciado sempre fornece os logaritmos. As propriedades usadas (o log de uma potência e o log de um quociente) estão em <em>Logaritmos: definição, propriedades e equações</em>.</p>
+<h3>Regra do 72, para estimar</h3>
+<div class="box tip">
+  <span class="tag">Tempo para dobrar ≈ 72 ÷ taxa</span>
+  <p>A juros compostos, o capital dobra em aproximadamente <span class="m"><span class="frac"><i>72</i><i>taxa em %</i></span></span> períodos. A 10% a.a., cerca de 7,2 anos; a 6% a.a., cerca de 12; a 8% a.a., cerca de 9. É estimativa, boa para taxas entre 2% e 20%, e serve para eliminar alternativas absurdas.</p>
+</div>
+<div class="box warn">
+  <span class="tag">O tempo de dobrar não vale para triplicar</span>
+  <p>Triplicar não leva “uma vez e meia o tempo de dobrar”, nem o dobro dele. Use <span class="m">log 3</span> no lugar de <span class="m">log 2</span>. Dobrar duas vezes é quadruplicar.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Trazendo valores para hoje</h2>
+<p>Muitas questões perguntam o caminho inverso: quanto aplicar <strong>hoje</strong> para ter um valor no futuro, ou quanto vale hoje uma dívida que vence depois. Basta isolar o capital:</p>
+<div class="eq">
+  <span class="lbl">Valor presente</span>
+  <p class="m" style="font-size:1.05rem"><span class="v">C</span> = <span class="frac"><i><span class="v">M</span></i><i>(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — quanto aplicar hoje, a 5% a.a., para ter R$ 11.025,00 em 2 anos?</span>
+  <p class="m">1,05<sup>2</sup> = 1,1025 &nbsp;→&nbsp; <span class="v">C</span> = <span class="frac"><i>11.025</i><i>1,1025</i></span> = <strong>R$ 10.000,00</strong></p>
+</div>
+<div class="box warn">
+  <span class="tag">Trazer para hoje é dividir pelo fator</span>
+  <p>Não se “tira 5% duas vezes” de 11.025: <span class="m">11.025 · 0,95<sup>2</sup></span> dá 9.950,06, abaixo do valor certo. Retirar <span class="m"><span class="v">i</span>%</span> não desfaz um aumento de <span class="m"><span class="v">i</span>%</span>; dividir pelo fator desfaz (como em “voltar ao valor original”, de <em>Porcentagem</em>).</p>
+</div>
+<p>Essa ideia é a base para comparar pagamentos em datas diferentes, que voltam em <em>Empréstimos, financiamentos e parcelamentos</em> e em <em>Comparação de propostas e tomada de decisão</em>.</p>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Montante como PG e como função exponencial</h2>
+<p>Os montantes ao fim de cada período, <span class="m"><span class="v">C</span>(1 + <span class="v">i</span>), <span class="v">C</span>(1 + <span class="v">i</span>)<sup>2</sup>, <span class="v">C</span>(1 + <span class="v">i</span>)<sup>3</sup>, …</span>, formam uma <strong>progressão geométrica</strong> de razão <span class="m">1 + <span class="v">i</span></span>. Como função contínua do tempo, <span class="m"><span class="v">M</span>(<span class="v">t</span>) = <span class="v">C</span> · (1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span> é uma <strong>exponencial</strong> de base maior que 1.</p>
+<div class="box def">
+  <span class="tag">A marca da exponencial: tempo de duplicação constante</span>
+  <p>Se o saldo dobra em 7 anos, dobra de novo nos 7 seguintes, e de novo nos outros 7. Em 21 anos o capital é multiplicado por <span class="m">2<sup>3</sup> = 8</span>, não por 3. Esse é o comportamento de toda grandeza que cresce a uma taxa percentual fixa: dívidas, populações, bactérias.</p>
+</div>
+<p>O mesmo modelo, com fator menor que 1, descreve <strong>decaimento</strong>: um bem que perde 20% do valor ao ano vale <span class="m"><span class="v">V</span><sub>0</sub> · 0,8<sup><span class="v">t</span></sup></span> depois de <span class="m"><span class="v">t</span></span> anos. O estudo completo dessas funções está em <em>Função exponencial e crescimento ou decaimento</em>.</p>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Procure as potências no enunciado</span>
+  <p>Antes de calcular, veja quais potências ou logaritmos foram fornecidos. Eles indicam o caminho: se a questão dá <span class="m">1,05<sup>6</sup></span> e o prazo é 12, a conta é elevar ao quadrado.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Elimine pelo simples</span>
+  <p>Calcule rapidamente o montante em juros simples. Para prazos maiores que um período, a resposta composta é <strong>maior</strong> que esse valor. Alternativas iguais ou menores caem na hora.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Estime com a regra do 72</span>
+  <p>Em questões de tempo, a regra do 72 dá a ordem de grandeza em segundos. Se ela aponta 7 anos e uma alternativa diz 25, essa alternativa saiu de juros simples ou de uma conta errada.</p>
+</div>
+<div class="box tip">
+  <span class="tag">4 · Trabalhe com fatores até o fim</span>
+  <p>Multiplique os fatores e só no final converta em reais ou em porcentagem. Arredondar no meio do caminho afasta o resultado das alternativas.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<ul>
+  <li><strong>Biologia:</strong> crescimento de populações e de colônias de bactérias com taxa fixa por período segue o mesmo <span class="m"><span class="v">P</span> = <span class="v">P</span><sub>0</sub>(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span>.</li>
+  <li><strong>Química:</strong> o decaimento radioativo (meia-vida) é a versão com fator menor que 1: a cada meia-vida, a massa é multiplicada por <span class="m"><span class="frac"><i>1</i><i>2</i></span></span>.</li>
+  <li><strong>Geografia:</strong> projeções de população, de PIB e de consumo a taxas anuais fixas.</li>
+  <li><strong>Álgebra e Funções:</strong> é a aplicação financeira de PG, função exponencial e logaritmo, os três assuntos que dão sustentação teórica a este.</li>
+  <li><strong>Inflação:</strong> preços que sobem a uma taxa mensal acumulam como juros compostos; o tema volta em <em>Taxas equivalentes e inflação</em>.</li>
+</ul>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Somar as taxas dos períodos</span> &nbsp;→&nbsp; <span class="c">multiplique os fatores</span></span><small>10% por 2 anos em compostos é 21%, não 20%.</small></li>
+  <li><span><span class="x">Calcular C(1 + i·t) quando o regime é composto</span> &nbsp;→&nbsp; <span class="c">C(1 + i)ᵗ</span></span><small>Leia o regime no enunciado; a alternativa de juros simples está sempre lá.</small></li>
+  <li><span><span class="x">Responder o montante quando pedem os juros</span> &nbsp;→&nbsp; <span class="c">J = M − C</span></span><small>E o contrário também: os juros sozinhos aparecem como distrator.</small></li>
+  <li><span><span class="x">Dobrar o tempo e dobrar o fator</span> &nbsp;→&nbsp; <span class="c">eleve o fator ao quadrado</span></span><small>Se 6 meses dão 1,34, 12 meses dão 1,34², cerca de 1,80.</small></li>
+  <li><span><span class="x">Dividir a taxa anual por 12</span> &nbsp;→&nbsp; <span class="c">em compostos, a conversão usa potência</span></span><small>Taxas proporcionais são exclusivas dos juros simples.</small></li>
+  <li><span><span class="x">Valor presente tirando i% por período</span> &nbsp;→&nbsp; <span class="c">divida por (1 + i)ᵗ</span></span><small>Retirar 10% não desfaz um aumento de 10%.</small></li>
+  <li><span><span class="x">Contar um período a mais</span> &nbsp;→&nbsp; <span class="c">o expoente é o número de capitalizações</span></span><small>Três anos são expoente 3, mesmo que a tabela comece no ano 0.</small></li>
+  <li><span><span class="x">Dividir log 2 pela taxa</span> &nbsp;→&nbsp; <span class="c">divida por log (1 + i)</span></span><small>O denominador é o logaritmo do fator, não a taxa.</small></li>
+  <li><span><span class="x">Achar que compostos sempre rendem mais</span> &nbsp;→&nbsp; <span class="c">só depois do primeiro período</span></span><small>Para frações do período, os juros simples são maiores.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Em cada uma, escreva primeiro o fator de um período e só depois a potência.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Montante em três anos</span>
+    <p class="enun">Uma pessoa aplicou R$ 10.000,00 a juros compostos de 10% ao ano. Sem novos depósitos nem retiradas, o saldo ao final de 3 anos será de</p>
+    <ol class="alt"><li>R$ 3.310,00.</li><li>R$ 13.000,00.</li><li>R$ 13.310,00.</li><li>R$ 14.000,00.</li><li>R$ 14.641,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">1,1<sup>3</sup> = 1,331 &nbsp;→&nbsp; <span class="v">M</span> = 10.000 · 1,331 = R$ 13.310,00</p>
+      <p>A B é o montante em juros simples (30% em 3 anos). A A são só os juros compostos, mas a pergunta é o saldo. A E usa 4 anos (expoente 4), e a D é o montante simples desse mesmo prazo errado.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Tempo para triplicar</span>
+    <p class="enun">Um fundo rende juros compostos de 20% ao ano. Para estimar em quanto tempo um capital aplicado nesse fundo triplica, um analista usou log 2 ≈ 0,30, log 3 ≈ 0,48 e log 1,2 ≈ 0,08. O tempo obtido foi de</p>
+    <ol class="alt"><li>3,75 anos.</li><li>6 anos.</li><li>7,5 anos.</li><li>10 anos.</li><li>15 anos.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Triplicar: <span class="m">1,2<sup><span class="v">t</span></sup> = 3</span>. Aplicando logaritmo:</p>
+      <p class="m"><span class="v">t</span> = <span class="frac"><i>log 3</i><i>log 1,2</i></span> ≈ <span class="frac"><i>0,48</i><i>0,08</i></span> = 6 anos</p>
+      <p>Conferência: <span class="m">1,2<sup>6</sup> ≈ 2,99</span>. A A é o tempo para <em>dobrar</em> (<span class="m">0,30 ÷ 0,08</span>); o log 2 foi dado justamente para atrair esse erro. A C supõe que triplicar leva o dobro do tempo de dobrar (isso seria quadruplicar). A D é triplicar em juros simples (<span class="m">0,2 · <span class="v">t</span> = 2</span>), e a E é o erro simples de fazer <span class="m"><span class="v">J</span> = 3<span class="v">C</span></span>.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Quanto aplicar hoje</span>
+    <p class="enun">Uma família quer ter R$ 12.100,00 daqui a 2 anos para trocar de carro. Ela encontrou uma aplicação que rende juros compostos de 10% ao ano. O valor que deve ser aplicado hoje, em um único depósito, é de</p>
+    <ol class="alt"><li>R$ 10.000,00.</li><li>R$ 10.083,33.</li><li>R$ 10.890,00.</li><li>R$ 11.000,00.</li><li>R$ 14.641,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Valor presente: divida pelo fator de dois anos, <span class="m">1,1<sup>2</sup> = 1,21</span>.</p>
+      <p class="m"><span class="v">C</span> = <span class="frac"><i>12.100</i><i>1,21</i></span> = R$ 10.000,00</p>
+      <p>A B divide por 1,20, o fator de juros simples. A D desconta só um ano (<span class="m">12.100 ÷ 1,1</span>). A C retira 10% uma única vez, o que nem desfaz o aumento de um ano. A E multiplica pelo fator em vez de dividir: projeta o valor para o futuro.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Simples ou compostos, conforme o prazo</span>
+    <p class="enun">Um banco oferece duas modalidades de empréstimo com a mesma taxa de 10% ao mês: uma a juros simples e outra a juros compostos. Um cliente quer saber qual é mais barata. Comparando o valor a pagar ao final do prazo, conclui-se que</p>
+    <ol class="alt">
+      <li>a modalidade a juros compostos é sempre mais cara, qualquer que seja o prazo.</li>
+      <li>as duas modalidades custam sempre o mesmo, porque a taxa é a mesma.</li>
+      <li>para prazos menores que um mês, a modalidade a juros simples é mais cara; para prazos maiores que um mês, é a de juros compostos.</li>
+      <li>para prazos menores que um mês, a modalidade a juros compostos é mais cara; para prazos maiores que um mês, é a de juros simples.</li>
+      <li>a modalidade a juros simples é sempre mais cara, qualquer que seja o prazo.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Compare os fatores. Em meio mês: simples <span class="m">1 + 0,1 · 0,5 = 1,05</span>; compostos <span class="m"><span class="rad"><i>1,1</i></span> ≈ 1,049</span>. Em um mês: 1,10 nos dois. Em dois meses: simples 1,20; compostos 1,21.</p>
+      <p>Antes de um período, o simples cobra mais; depois, o composto. Em exatamente um mês, empatam. É o cruzamento da reta com a curva no gráfico da seção 04.</p>
+      <p>A A é a crença comum, verdadeira só a partir do primeiro período. A B ignora que os regimes são diferentes. A D inverte as faixas. A E vale apenas para prazos menores que um mês.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Taxas diferentes em sequência</span>
+    <p class="enun">Um investimento de risco rendeu 10% no primeiro mês e 20% no segundo, mas teve perda de 25% no terceiro. Em relação ao valor investido no início, ao final do terceiro mês o investidor teve</p>
+    <ol class="alt"><li>perda de 1%.</li><li>ganho de 5%.</li><li>ganho de 1%.</li><li>ganho de 30%.</li><li>resultado nulo, sem ganho nem perda.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Multiplique os fatores dos três meses:</p>
+      <p class="m">1,10 · 1,20 · 0,75 = 1,32 · 0,75 = 0,99</p>
+      <p>O saldo final é 99% do inicial: <strong>perda de 1%</strong>.</p>
+      <p>A B soma as taxas (<span class="m">10 + 20 − 25 = 5</span>), o raciocínio de juros simples. A D soma só os ganhos. A C acerta o tamanho da variação e erra o sinal. A E acredita que ganhos de 30% e perda de 25% “quase se anulam”; não se anulam, porque a perda incide sobre um valor maior.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Potência dada no enunciado</span>
+    <p class="enun">Uma dívida de R$ 2.000,00 no cartão de crédito cresce a juros compostos de 5% ao mês. Considere 1,05⁶ ≈ 1,34. Se nada for pago, após 12 meses a dívida será de, aproximadamente,</p>
+    <ol class="alt"><li>R$ 2.680,00.</li><li>R$ 3.200,00.</li><li>R$ 3.360,00.</li><li>R$ 3.590,00.</li><li>R$ 5.360,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Doze meses são duas vezes seis: <span class="m">1,05<sup>12</sup> = (1,05<sup>6</sup>)<sup>2</sup> ≈ 1,34<sup>2</sup> = 1,7956</span>.</p>
+      <p class="m"><span class="v">M</span> ≈ 2.000 · 1,7956 ≈ R$ 3.591,20 &nbsp;→&nbsp; cerca de R$ 3.590,00</p>
+      <p>A A usa só o fator de 6 meses. A B é juros simples (60% em 12 meses). A C soma as taxas dos dois semestres (<span class="m">34% + 34% = 68%</span>). A E multiplica o fator por 2 em vez de elevá-lo ao quadrado.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Tempo por tentativa</span>
+    <p class="enun">R$ 1.000,00 foram aplicados a juros compostos de 10% ao mês. Considere 1,1⁴ ≈ 1,46 e 1,1⁵ ≈ 1,61. O número mínimo de meses completos para que o saldo atinja pelo menos R$ 1.600,00 é</p>
+    <ol class="alt"><li>4.</li><li>5.</li><li>6.</li><li>7.</li><li>16.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>É preciso <span class="m">1,1<sup><span class="v">t</span></sup> ≥ 1,6</span>. Com 4 meses o saldo é cerca de R$ 1.460,00 (insuficiente); com 5 meses, cerca de R$ 1.610,00. São <strong>5 meses</strong>.</p>
+      <p>A C é a resposta em juros simples (<span class="m">1.000 + 100 · 6 = 1.600</span>). A A para em 1,46, abaixo da meta. A D conta um mês a mais, e a E divide 1.600 por 100, misturando montante com juros mensais.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Duas propostas de investimento</span>
+    <p class="enun">Um investidor tem R$ 50.000,00 para aplicar por 2 anos e recebe duas propostas: I) juros simples de 22% ao ano; II) juros compostos de 20% ao ano. Sobre os juros obtidos ao final dos 2 anos, é correto afirmar que</p>
+    <ol class="alt">
+      <li>a proposta I rende R$ 2.000,00 a mais que a II.</li>
+      <li>a proposta II rende R$ 2.000,00 a mais que a I.</li>
+      <li>a proposta I rende mais, porque sua taxa é maior.</li>
+      <li>a proposta II rende mais, porque juros compostos sempre superam os simples.</li>
+      <li>as duas propostas rendem exatamente o mesmo valor.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">I: 50.000 · 0,22 · 2 = R$ 22.000,00</p>
+      <p class="m">II: 50.000 · (1,2<sup>2</sup> − 1) = 50.000 · 0,44 = R$ 22.000,00</p>
+      <p>Empate. A taxa maior da proposta I compensa exatamente os juros sobre juros da II neste prazo.</p>
+      <p>A A calcula a proposta II como se fosse simples (R$ 20.000,00). A C e a D tiram conclusões só pela regra geral, sem fazer a conta. A B inverte a comparação errada da A.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Duplicações sucessivas</span>
+    <p class="enun">Em uma aplicação a juros compostos, o saldo dobra a cada 7 anos. Uma pessoa depositou R$ 5.000,00 e não fez retiradas. Após 21 anos, o saldo será de</p>
+    <ol class="alt"><li>R$ 15.000,00.</li><li>R$ 20.000,00.</li><li>R$ 30.000,00.</li><li>R$ 40.000,00.</li><li>R$ 45.000,00.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>21 anos são 3 períodos de duplicação. Cada um multiplica o saldo por 2:</p>
+      <p class="m">5.000 · 2<sup>3</sup> = 5.000 · 8 = R$ 40.000,00</p>
+      <p>A A multiplica por 3, o número de períodos. A B soma 5.000 por período, como em juros simples. A C multiplica por <span class="m">2 · 3</span>. A E soma o capital de novo ao montante, que já o contém.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico por que os juros de cada período crescem em juros compostos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico <span class="m"><span class="v">M</span> = <span class="v">C</span>(1 + <span class="v">i</span>)<sup><span class="v">t</span></sup></span> e obtenho os juros por <span class="m"><span class="v">J</span> = <span class="v">M</span> − <span class="v">C</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo potências pequenas de 1,1, 1,05, 1,02 à mão</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Combino potências dadas no enunciado, elevando ao quadrado ou multiplicando</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que dobrar o tempo eleva o fator ao quadrado, não o dobra</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro o tempo por tentativa quando o prazo é curto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Uso <span class="m"><span class="v">t</span> = log(<span class="v">M</span>/<span class="v">C</span>) / log(1 + <span class="v">i</span>)</span> com os logaritmos dados</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Estimo o tempo de duplicação pela regra do 72</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Trago um valor futuro para hoje dividindo pelo fator</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Comparo simples e compostos e sei qual rende mais antes e depois de um período</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço montantes compostos como PG de razão <span class="m">1 + <span class="v">i</span></span> e como função exponencial</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encadeio taxas diferentes multiplicando os fatores de cada período</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sigo para <em>Descontos, acréscimos, lucro e prejuízo</em> usando fatores em vez de somar porcentagens</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões de juros compostos e acerte pelo menos 14 (70%). Inclua questões com logaritmos fornecidos e com comparação entre regimes, as duas formas mais recorrentes. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>42 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-14-juros-compostos-montante.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Financeira</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-14";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

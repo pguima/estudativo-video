@@ -1,0 +1,1135 @@
+<title>Função Modular</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Álgebra e Funções › Assunto 11 de 18</p>
+    <h1>Função modular e funções definidas por partes</h1>
+    <p class="deck">Conta de água, tarifa de estacionamento, imposto por faixas, margem de tolerância de uma peça: tudo isso é uma regra que muda de fórmula conforme o valor de entrada. Este assunto ensina a ler e montar funções por partes e a usar o módulo, a função “distância”, que é o caso mais famoso delas.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Gráfico em V da função y igual a módulo de x: para x positivo coincide com a reta y igual a x; para x negativo a reta y igual a x, tracejada abaixo do eixo, é refletida para cima">
+  <defs>
+    <marker id="m29h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="34" y1="120.8" x2="272" y2="120.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29h)"/>
+  <line x1="151" y1="188" x2="151" y2="12" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29h)"/>
+  <line x1="67.8" y1="117.8" x2="67.8" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="67.8" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−3</text>
+  <line x1="95.5" y1="117.8" x2="95.5" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="95.5" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−2</text>
+  <line x1="123.2" y1="117.8" x2="123.2" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="119.2" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="178.8" y1="117.8" x2="178.8" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="178.8" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="206.5" y1="117.8" x2="206.5" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="206.5" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="234.2" y1="117.8" x2="234.2" y2="123.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="234.2" y="136.8" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="148" y1="97.3" x2="154" y2="97.3" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="144" y="101.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="148" y1="73.8" x2="154" y2="73.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="144" y="77.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="148" y1="50.2" x2="154" y2="50.2" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="144" y="54.2" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <text x="274" y="113.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="158" y="18" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <polyline points="84.4,177.3 117.7,149.1 151,120.8" style="fill:none;stroke:var(--ink-3);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:5 4"/>
+  <polyline points="51.1,36.1 151,120.8 250.9,36.1" style="fill:none;stroke:var(--c1);stroke-width:2.8;stroke-linejoin:round;stroke-linecap:round"/>
+  <text x="94.4" y="181.3" class="svg-lbl" style="fill:var(--ink-3)">y = x</text>
+  <text x="56.7" y="28.8" class="svg-num" style="fill:var(--c1)">y = |x|</text>
+  <text x="150" y="206" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">a parte negativa sobe: espelho no eixo x</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>8 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Conceito de função · Função afim · Equações e inequações do 1º grau</dd></div>
+      <div><dt>Destrava</dt><dd>Função composta e inversa, leitura de tarifas e tabelas progressivas, desvio absoluto em estatística</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>O ENEM raramente escreve “função modular” no enunciado. O que aparece, quase todo ano, são <strong>regras por faixas</strong> descritas em texto, tabela ou gráfico. As formas mais comuns:</p>
+<ul>
+  <li><strong>Calcular uma tarifa por faixas:</strong> conta de água ou de energia, estacionamento, frete, plano de celular com franquia.</li>
+  <li><strong>Escolher o gráfico certo:</strong> qual gráfico representa uma cobrança que é fixa até certo ponto e depois cresce? Saltos, trechos horizontais e mudanças de inclinação são a pista.</li>
+  <li><strong>Interpretar tolerâncias:</strong> “a medida pode variar no máximo 2 mm em relação a 50 mm” é exatamente a inequação <span class="m">|<span class="v">x</span> − 50| ≤ 2</span>.</li>
+  <li><strong>Distâncias na reta:</strong> quanto falta, quanto passou, quando a diferença vale um certo número — o módulo transforma tudo em distância positiva.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas habilidades. Primeiro, <strong>descobrir em qual faixa o valor cai antes de aplicar a fórmula</strong>: a lei certa depende da entrada. Segundo, nas faixas progressivas, <strong>cobrar cada parte pela taxa da sua faixa</strong>, e não o valor inteiro pela taxa da última faixa. Quem domina essas duas acerta a maioria das questões do tema.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Módulo de um número: distância até o zero</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>O <strong>módulo</strong> (ou valor absoluto) de um número real <span class="m"><span class="v">x</span></span>, escrito <span class="m">|<span class="v">x</span>|</span>, é a <strong>distância</strong> de <span class="m"><span class="v">x</span></span> até o zero na reta numérica. Como distância, nunca é negativo.</p>
+  <p class="m">|<span class="v">x</span>| = <span class="v">x</span>, &nbsp;se <span class="v">x</span> ≥ 0 &nbsp;&nbsp;&nbsp; e &nbsp;&nbsp;&nbsp; |<span class="v">x</span>| = −<span class="v">x</span>, &nbsp;se <span class="v">x</span> &lt; 0</p>
+</div>
+<p>A segunda linha assusta, mas é simples: se <span class="m"><span class="v">x</span></span> é negativo, <span class="m">−<span class="v">x</span></span> é positivo. Por exemplo, <span class="m">|−7| = −(−7) = 7</span>. O módulo “apaga o sinal”, e só isso.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 214" role="img" aria-label="Duas retas numéricas. Na primeira, menos três e três estão ambos a três unidades do zero, por isso módulo de menos três e módulo de três valem três. Na segunda, a distância entre menos dois e quatro é o módulo de quatro menos menos dois, igual a seis">
+  <defs>
+    <marker id="m29r" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="24" y1="70" x2="438" y2="70" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29r)"/>
+  <line x1="30" y1="66" x2="30" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="30" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−5</text>
+  <line x1="70" y1="66" x2="70" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="70" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−4</text>
+  <line x1="110" y1="66" x2="110" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="110" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−3</text>
+  <line x1="150" y1="66" x2="150" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="150" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−2</text>
+  <line x1="190" y1="66" x2="190" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="190" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="230" y1="66" x2="230" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="230" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="270" y1="66" x2="270" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="270" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="310" y1="66" x2="310" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="310" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="350" y1="66" x2="350" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="350" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="390" y1="66" x2="390" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="390" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="430" y1="66" x2="430" y2="74" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="430" y="90" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <circle cx="110" cy="70" r="4.5" style="fill:var(--c2)"/>
+  <circle cx="350" cy="70" r="4.5" style="fill:var(--c1)"/>
+  <circle cx="230" cy="70" r="3.5" style="fill:var(--ink-2)"/>
+  <path d="M110 62 Q170 18 230 62" style="fill:none;stroke:var(--c2);stroke-width:1.6"/>
+  <path d="M230 62 Q290 18 350 62" style="fill:none;stroke:var(--c1);stroke-width:1.6"/>
+  <text x="170" y="34" text-anchor="middle" class="svg-num" style="fill:var(--c2)">|−3| = 3</text>
+  <text x="290" y="34" text-anchor="middle" class="svg-num" style="fill:var(--c1)">|3| = 3</text>
+  <line x1="24" y1="150" x2="438" y2="150" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29r)"/>
+  <line x1="30" y1="146" x2="30" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="30" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−5</text>
+  <line x1="70" y1="146" x2="70" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="70" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−4</text>
+  <line x1="110" y1="146" x2="110" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="110" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−3</text>
+  <line x1="150" y1="146" x2="150" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="150" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−2</text>
+  <line x1="190" y1="146" x2="190" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="190" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">−1</text>
+  <line x1="230" y1="146" x2="230" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="230" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <line x1="270" y1="146" x2="270" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="270" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <line x1="310" y1="146" x2="310" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="310" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="350" y1="146" x2="350" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="350" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <line x1="390" y1="146" x2="390" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="390" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <line x1="430" y1="146" x2="430" y2="154" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="430" y="170" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <circle cx="150" cy="150" r="4.5" style="fill:var(--c3)"/>
+  <circle cx="390" cy="150" r="4.5" style="fill:var(--c3)"/>
+  <path d="M150 142 Q270 90 390 142" style="fill:none;stroke:var(--c3);stroke-width:1.6"/>
+  <text x="270" y="106" text-anchor="middle" class="svg-num" style="fill:var(--c3)">|4 − (−2)| = 6</text>
+  <text x="230" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">módulo = distância: nunca negativa</text>
+</svg>
+<figcaption><b>Módulo é distância.</b> Em cima, −3 e 3 estão à mesma distância do zero, por isso <span class="m">|−3| = |3| = 3</span>. Embaixo, a distância entre dois pontos quaisquer <span class="m"><span class="v">a</span></span> e <span class="m"><span class="v">b</span></span> é <span class="m">|<span class="v">a</span> − <span class="v">b</span>|</span>: entre −2 e 4 há 6 unidades, em qualquer ordem que se faça a subtração.</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th>Expressão</th><th>Valor</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td><span class="m">|−12|</span></td><td><span class="m">12</span></td><td>distância de −12 ao zero</td></tr>
+    <tr><td><span class="m">|5 − 9|</span></td><td><span class="m">4</span></td><td>primeiro a conta de dentro: <span class="m">|−4| = 4</span></td></tr>
+    <tr><td><span class="m">|9 − 5|</span></td><td><span class="m">4</span></td><td>a ordem da subtração não muda a distância</td></tr>
+    <tr><td><span class="m">|−3| + |3|</span></td><td><span class="m">6</span></td><td>cada módulo vale 3</td></tr>
+    <tr><td><span class="m">|−3 + 3|</span></td><td><span class="m">0</span></td><td>soma dentro primeiro: <span class="m">|0| = 0</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Módulo não “tira o menos” de uma letra</span>
+  <p><span class="m">|−<span class="v">x</span>|</span> não é <span class="m"><span class="v">x</span></span> sempre: se <span class="m"><span class="v">x</span> = −5</span>, então <span class="m">|−<span class="v">x</span>| = |5| = 5</span>, que é <span class="m">−<span class="v">x</span></span>, e não <span class="m"><span class="v">x</span></span>. O correto é <span class="m">|−<span class="v">x</span>| = |<span class="v">x</span>|</span>. Também vale <span class="m"><span class="rad"><i><span class="v">x</span>²</i></span> = |<span class="v">x</span>|</span>: com <span class="m"><span class="v">x</span> = −5</span>, <span class="m"><span class="rad"><i>25</i></span> = 5</span>, e não −5.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Funções definidas por partes</h2>
+<p>Uma função <strong>definida por partes</strong> usa uma lei diferente em cada intervalo do domínio. Ela se escreve com uma chave, e cada linha vem com a sua condição:</p>
+<div class="eq">
+  <span class="lbl">Conta de água de uma companhia fictícia (consumo em m³, valor em reais)</span>
+  <p class="m"><span class="v">f</span>(<span class="v">x</span>) = 40, &nbsp;se 0 ≤ <span class="v">x</span> ≤ 10</p>
+  <p class="m"><span class="v">f</span>(<span class="v">x</span>) = 40 + 6(<span class="v">x</span> − 10), &nbsp;se 10 &lt; <span class="v">x</span> ≤ 20</p>
+  <p class="m"><span class="v">f</span>(<span class="v">x</span>) = 100 + 9(<span class="v">x</span> − 20), &nbsp;se <span class="v">x</span> &gt; 20</p>
+  <p>O 100 da terceira linha é o valor da conta exatamente em 20 m³: <span class="m">40 + 6 · 10 = 100</span>. Cada faixa “parte de onde a anterior parou”.</p>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 236" role="img" aria-label="Gráfico do valor da conta de água em função do consumo: constante em quarenta reais até dez metros cúbicos, depois sobe seis reais por metro cúbico até cem reais em vinte metros cúbicos, e então nove reais por metro cúbico; com vinte e seis metros cúbicos a conta é cento e cinquenta e quatro reais">
+  <defs>
+    <marker id="m29f" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="64" y1="200" x2="420" y2="200" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29f)"/>
+  <line x1="70" y1="206" x2="70" y2="14" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29f)"/>
+  <line x1="183.3" y1="197" x2="183.3" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="183.3" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">10</text>
+  <line x1="296.7" y1="197" x2="296.7" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="296.7" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">20</text>
+  <line x1="364.7" y1="197" x2="364.7" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="364.7" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">26</text>
+  <line x1="410" y1="197" x2="410" y2="203" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="410" y="216" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">30</text>
+  <line x1="67" y1="164.8" x2="73" y2="164.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="63" y="168.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">40</text>
+  <line x1="67" y1="112" x2="73" y2="112" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="63" y="116" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">100</text>
+  <line x1="67" y1="64.5" x2="73" y2="64.5" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="63" y="68.5" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">154</text>
+  <text x="422" y="193" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">m³</text>
+  <text x="77" y="20" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">R$</text>
+  <line x1="183.3" y1="200" x2="183.3" y2="164.8" style="stroke:var(--rule-2);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="296.7" y1="200" x2="296.7" y2="112" style="stroke:var(--rule-2);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="70" y1="112" x2="296.7" y2="112" style="stroke:var(--rule-2);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="364.7" y1="200" x2="364.7" y2="64.5" style="stroke:var(--c4-line);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="70" y1="64.5" x2="364.7" y2="64.5" style="stroke:var(--c4-line);stroke-width:1;stroke-dasharray:3 3"/>
+  <line x1="70" y1="164.8" x2="183.3" y2="164.8" style="stroke:var(--c1);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="183.3" y1="164.8" x2="296.7" y2="112" style="stroke:var(--c2);stroke-width:2.4;stroke-linecap:round"/>
+  <line x1="296.7" y1="112" x2="410" y2="32.8" style="stroke:var(--c4);stroke-width:2.4;stroke-linecap:round"/>
+  <circle cx="364.7" cy="64.5" r="3.5" style="fill:var(--c4)"/>
+  <text x="81.3" y="155.8" class="svg-lbl" style="fill:var(--c1)">tarifa mínima</text>
+  <text x="245.7" y="156" class="svg-lbl" style="fill:var(--c2)">+ 6 por m³</text>
+  <text x="318.1" y="85.6" text-anchor="end" class="svg-lbl" style="fill:var(--c4)">+ 9 por m³</text>
+</svg>
+<figcaption><b>Três leis, um gráfico só.</b> A tarifa é constante até 10 m³ (trecho horizontal), sobe 6 reais por m³ entre 10 e 20 e 9 reais por m³ acima de 20: a inclinação aumenta a cada faixa. Para 26 m³: <span class="m">100 + 9 · 6 = 154</span> reais.</figcaption>
+</figure>
+<p>Para calcular <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span>, faça sempre em duas etapas: <strong>1)</strong> descubra em que faixa o valor de entrada está; <strong>2)</strong> use só a lei daquela faixa. Valores nas fronteiras (10, 20) pedem atenção ao sinal <span class="m">≤</span> ou <span class="m">&lt;</span> de cada linha.</p>
+<div class="box def">
+  <span class="tag">Saltos e tarifas “por fração”</span>
+  <p>Nem toda função por partes é contínua. Um estacionamento que cobra “R$ 10,00 a primeira hora e R$ 4,00 por hora adicional ou fração” tem gráfico em <strong>escada</strong>: o preço fica parado dentro de cada hora e dá um salto ao começar a seguinte. Ficar 2 h 05 min custa o mesmo que ficar 3 h: <span class="m">10 + 2 · 4 = 18</span> reais. Nos gráficos em escada, a bolinha cheia marca o valor que vale na fronteira e a vazia, o que não vale.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> A função modular e seu gráfico em V</h2>
+<p>A função <span class="m"><span class="v">f</span>(<span class="v">x</span>) = |<span class="v">x</span>|</span> é a função por partes mais famosa: <span class="m"><span class="v">f</span>(<span class="v">x</span>) = <span class="v">x</span></span> para <span class="m"><span class="v">x</span> ≥ 0</span> e <span class="m"><span class="v">f</span>(<span class="v">x</span>) = −<span class="v">x</span></span> para <span class="m"><span class="v">x</span> &lt; 0</span>. O gráfico, desenhado no cabeçalho, é um <strong>V</strong> com vértice na origem: duas semirretas de inclinação 1 e −1.</p>
+<p>Deslocamentos funcionam como em qualquer função:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Função</th><th>O que acontece com o V</th><th>Vértice</th></tr></thead>
+  <tbody>
+    <tr><td><span class="m"><span class="v">y</span> = |<span class="v">x</span> − 3|</span></td><td>anda 3 para a <strong>direita</strong> (o sinal engana)</td><td><span class="m">(3, 0)</span></td></tr>
+    <tr><td><span class="m"><span class="v">y</span> = |<span class="v">x</span> + 2|</span></td><td>anda 2 para a esquerda</td><td><span class="m">(−2, 0)</span></td></tr>
+    <tr><td><span class="m"><span class="v">y</span> = |<span class="v">x</span>| + 1</span></td><td>sobe 1</td><td><span class="m">(0, 1)</span></td></tr>
+    <tr><td><span class="m"><span class="v">y</span> = |<span class="v">x</span> − 2| − 1</span></td><td>2 para a direita e 1 para baixo; corta o eixo <span class="m"><span class="v">x</span></span> em 1 e 3</td><td><span class="m">(2, −1)</span></td></tr>
+    <tr><td><span class="m"><span class="v">y</span> = 2|<span class="v">x</span>|</span></td><td>V mais fechado (inclinações 2 e −2)</td><td><span class="m">(0, 0)</span></td></tr>
+    <tr><td><span class="m"><span class="v">y</span> = −|<span class="v">x</span>|</span></td><td>V de cabeça para baixo</td><td><span class="m">(0, 0)</span></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Onde está o vértice</span>
+  <p>O vértice de <span class="m"><span class="v">y</span> = |<span class="v">x</span> − <span class="v">a</span>| + <span class="v">b</span></span> é o ponto <span class="m">(<span class="v">a</span>, <span class="v">b</span>)</span>: <span class="m"><span class="v">a</span></span> é o valor que <strong>zera o que está dentro</strong> do módulo. Esse é o ponto de mínimo da função: <span class="m">|<span class="v">x</span> − <span class="v">a</span>|</span> nunca é menor que zero, então <span class="m"><span class="v">y</span></span> nunca é menor que <span class="m"><span class="v">b</span></span>. A imagem é <span class="m">[<span class="v">b</span>, +∞[</span>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O gráfico de |f(x)|: rebater o que está abaixo do eixo</h2>
+<p>Para desenhar <span class="m"><span class="v">y</span> = |<span class="v">f</span>(<span class="v">x</span>)|</span> partindo do gráfico de <span class="m"><span class="v">f</span></span>: o que está <strong>acima</strong> do eixo <span class="m"><span class="v">x</span></span> fica igual; o que está <strong>abaixo</strong> é espelhado para cima. Nenhum ponto do gráfico fica com <span class="m"><span class="v">y</span></span> negativo.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 236" role="img" aria-label="À esquerda, a parábola y igual a x ao quadrado menos quatro, com o trecho entre menos dois e dois abaixo do eixo x e vértice em menos quatro. À direita, o gráfico de módulo de x ao quadrado menos quatro: o mesmo trecho, tracejado, aparece refletido para cima, formando um arco com máximo quatro em x igual a zero">
+  <defs>
+    <marker id="m29b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="34" y1="121.8" x2="220" y2="121.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29b)"/>
+  <line x1="125" y1="206" x2="125" y2="20" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29b)"/>
+  <line x1="75" y1="118.8" x2="75" y2="124.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="70" y="137.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">−2</text>
+  <line x1="175" y1="118.8" x2="175" y2="124.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="180" y="137.8" text-anchor="start" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <line x1="122" y1="53.8" x2="128" y2="53.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="118" y="57.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <text x="222" y="114.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="132" y="26" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <polyline points="50,36.8 50.9,40.6 51.9,44.4 52.8,48.1 53.8,51.7 54.7,55.3 55.6,58.9 56.6,62.4 57.5,65.9 58.4,69.3 59.4,72.7 60.3,76 61.2,79.3 62.2,82.5 63.1,85.7 64.1,88.8 65,91.9 65.9,94.9 66.9,97.9 67.8,100.8 68.8,103.7 69.7,106.6 70.6,109.4 71.6,112.1 72.5,114.8 73.4,117.5 74.4,120.1 75.3,122.6 76.2,125.2 77.2,127.6 78.1,130 79.1,132.4 80,134.7 80.9,137 81.9,139.2 82.8,141.4 83.8,143.5 84.7,145.6 85.6,147.6 86.6,149.6 87.5,151.6 88.4,153.4 89.4,155.3 90.3,157.1 91.2,158.8 92.2,160.5 93.1,162.2 94.1,163.8 95,165.3 95.9,166.8 96.9,168.3 97.8,169.7 98.8,171.1 99.7,172.4 100.6,173.6 101.6,174.9 102.5,176 103.4,177.2 104.4,178.2 105.3,179.3 106.2,180.2 107.2,181.2 108.1,182.1 109.1,182.9 110,183.7 110.9,184.4 111.9,185.1 112.8,185.8 113.7,186.4 114.7,186.9 115.6,187.4 116.6,187.9 117.5,188.3 118.4,188.6 119.4,188.9 120.3,189.2 121.2,189.4 122.2,189.6 123.1,189.7 124.1,189.8 125,189.8 125.9,189.8 126.9,189.7 127.8,189.6 128.8,189.4 129.7,189.2 130.6,188.9 131.6,188.6 132.5,188.3 133.4,187.9 134.4,187.4 135.3,186.9 136.2,186.4 137.2,185.8 138.1,185.1 139.1,184.4 140,183.7 140.9,182.9 141.9,182.1 142.8,181.2 143.8,180.2 144.7,179.3 145.6,178.2 146.6,177.2 147.5,176 148.4,174.9 149.4,173.6 150.3,172.4 151.2,171.1 152.2,169.7 153.1,168.3 154.1,166.8 155,165.3 155.9,163.8 156.9,162.2 157.8,160.5 158.8,158.8 159.7,157.1 160.6,155.3 161.6,153.4 162.5,151.6 163.4,149.6 164.4,147.6 165.3,145.6 166.3,143.5 167.2,141.4 168.1,139.2 169.1,137 170,134.7 170.9,132.4 171.9,130 172.8,127.6 173.8,125.2 174.7,122.6 175.6,120.1 176.6,117.5 177.5,114.8 178.4,112.1 179.4,109.4 180.3,106.6 181.2,103.7 182.2,100.8 183.1,97.9 184.1,94.9 185,91.9 185.9,88.8 186.9,85.7 187.8,82.5 188.7,79.3 189.7,76 190.6,72.7 191.6,69.3 192.5,65.9 193.4,62.4 194.4,58.9 195.3,55.3 196.2,51.7 197.2,48.1 198.1,44.4 199.1,40.6 200,36.8" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <circle cx="125" cy="189.8" r="3" style="fill:var(--c1)"/>
+  <text x="125" y="215.8" text-anchor="middle" class="svg-num" style="fill:var(--c1)">y = x² − 4</text>
+  <line x1="264" y1="121.8" x2="450" y2="121.8" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29b)"/>
+  <line x1="355" y1="206" x2="355" y2="20" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29b)"/>
+  <line x1="305" y1="118.8" x2="305" y2="124.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="300" y="137.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">−2</text>
+  <line x1="405" y1="118.8" x2="405" y2="124.8" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="410" y="137.8" text-anchor="start" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <text x="452" y="114.8" text-anchor="end" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">x</text>
+  <text x="362" y="26" class="svg-lbl" style="fill:var(--ink-2);font-style:italic">y</text>
+  <text x="363" y="43.8" class="svg-lbl" style="fill:var(--c2)">4</text>
+  <polyline points="305,121.8 305.6,123.5 306.2,125.2 306.9,126.8 307.5,128.4 308.1,130 308.8,131.6 309.4,133.2 310,134.7 310.6,136.2 311.2,137.7 311.9,139.2 312.5,140.7 313.1,142.1 313.8,143.5 314.4,144.9 315,146.3 315.6,147.6 316.2,149 316.9,150.3 317.5,151.6 318.1,152.8 318.8,154.1 319.4,155.3 320,156.5 320.6,157.7 321.2,158.8 321.9,160 322.5,161.1 323.1,162.2 323.8,163.2 324.4,164.3 325,165.3 325.6,166.3 326.2,167.3 326.9,168.3 327.5,169.2 328.1,170.2 328.8,171.1 329.4,171.9 330,172.8 330.6,173.6 331.2,174.5 331.9,175.3 332.5,176 333.1,176.8 333.8,177.5 334.4,178.2 335,178.9 335.6,179.6 336.2,180.2 336.9,180.9 337.5,181.5 338.1,182.1 338.8,182.6 339.4,183.2 340,183.7 340.6,184.2 341.2,184.7 341.9,185.1 342.5,185.6 343.1,186 343.8,186.4 344.4,186.7 345,187.1 345.6,187.4 346.2,187.7 346.9,188 347.5,188.3 348.1,188.5 348.8,188.7 349.4,188.9 350,189.1 350.6,189.3 351.2,189.4 351.9,189.5 352.5,189.6 353.1,189.7 353.8,189.8 354.4,189.8 355,189.8 355.6,189.8 356.2,189.8 356.9,189.7 357.5,189.6 358.1,189.5 358.8,189.4 359.4,189.3 360,189.1 360.6,188.9 361.2,188.7 361.9,188.5 362.5,188.3 363.1,188 363.8,187.7 364.4,187.4 365,187.1 365.6,186.7 366.2,186.4 366.9,186 367.5,185.6 368.1,185.1 368.8,184.7 369.4,184.2 370,183.7 370.6,183.2 371.2,182.6 371.9,182.1 372.5,181.5 373.1,180.9 373.8,180.2 374.4,179.6 375,178.9 375.6,178.2 376.2,177.5 376.9,176.8 377.5,176 378.1,175.3 378.8,174.5 379.4,173.6 380,172.8 380.6,171.9 381.2,171.1 381.9,170.2 382.5,169.2 383.1,168.3 383.8,167.3 384.4,166.3 385,165.3 385.6,164.3 386.2,163.2 386.9,162.2 387.5,161.1 388.1,160 388.8,158.8 389.4,157.7 390,156.5 390.6,155.3 391.2,154.1 391.9,152.8 392.5,151.6 393.1,150.3 393.8,149 394.4,147.6 395,146.3 395.6,144.9 396.2,143.5 396.9,142.1 397.5,140.7 398.1,139.2 398.8,137.7 399.4,136.2 400,134.7 400.6,133.2 401.2,131.6 401.9,130 402.5,128.4 403.1,126.8 403.8,125.2 404.4,123.5 405,121.8" style="fill:none;stroke:var(--ink-3);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:4 4"/>
+  <polyline points="280,36.8 280.9,40.6 281.9,44.4 282.8,48.1 283.8,51.7 284.7,55.3 285.6,58.9 286.6,62.4 287.5,65.9 288.4,69.3 289.4,72.7 290.3,76 291.2,79.3 292.2,82.5 293.1,85.7 294.1,88.8 295,91.9 295.9,94.9 296.9,97.9 297.8,100.8 298.8,103.7 299.7,106.6 300.6,109.4 301.6,112.1 302.5,114.8 303.4,117.5 304.4,120.1 305.3,121 306.2,118.4 307.2,116 308.1,113.6 309.1,111.2 310,108.9 310.9,106.6 311.9,104.4 312.8,102.2 313.8,100.1 314.7,98 315.6,96 316.6,94 317.5,92 318.4,90.2 319.4,88.3 320.3,86.5 321.2,84.8 322.2,83.1 323.1,81.4 324.1,79.8 325,78.3 325.9,76.8 326.9,75.3 327.8,73.9 328.8,72.5 329.7,71.2 330.6,70 331.6,68.7 332.5,67.6 333.4,66.4 334.4,65.4 335.3,64.3 336.2,63.4 337.2,62.4 338.1,61.5 339.1,60.7 340,59.9 340.9,59.2 341.9,58.5 342.8,57.8 343.8,57.2 344.7,56.7 345.6,56.2 346.6,55.7 347.5,55.3 348.4,55 349.4,54.7 350.3,54.4 351.2,54.2 352.2,54 353.1,53.9 354.1,53.8 355,53.8 355.9,53.8 356.9,53.9 357.8,54 358.8,54.2 359.7,54.4 360.6,54.7 361.6,55 362.5,55.3 363.4,55.7 364.4,56.2 365.3,56.7 366.2,57.2 367.2,57.8 368.1,58.5 369.1,59.2 370,59.9 370.9,60.7 371.9,61.5 372.8,62.4 373.8,63.4 374.7,64.3 375.6,65.4 376.6,66.4 377.5,67.6 378.4,68.7 379.4,70 380.3,71.2 381.2,72.5 382.2,73.9 383.1,75.3 384.1,76.8 385,78.3 385.9,79.8 386.9,81.4 387.8,83.1 388.8,84.8 389.7,86.5 390.6,88.3 391.6,90.2 392.5,92 393.4,94 394.4,96 395.3,98 396.2,100.1 397.2,102.2 398.1,104.4 399.1,106.6 400,108.9 400.9,111.2 401.9,113.6 402.8,116 403.8,118.4 404.7,121 405.6,120.1 406.6,117.5 407.5,114.8 408.4,112.1 409.4,109.4 410.3,106.6 411.2,103.7 412.2,100.8 413.1,97.9 414.1,94.9 415,91.9 415.9,88.8 416.9,85.7 417.8,82.5 418.8,79.3 419.7,76 420.6,72.7 421.6,69.3 422.5,65.9 423.4,62.4 424.4,58.9 425.3,55.3 426.2,51.7 427.2,48.1 428.1,44.4 429.1,40.6 430,36.8" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round"/>
+  <text x="355" y="215.8" text-anchor="middle" class="svg-num" style="fill:var(--c2)">y = |x² − 4|</text>
+</svg>
+<figcaption><b>Rebatendo uma parábola.</b> A parábola <span class="m"><span class="v">y</span> = <span class="v">x</span>² − 4</span> fica negativa entre −2 e 2. No gráfico de <span class="m"><span class="v">y</span> = |<span class="v">x</span>² − 4|</span> esse trecho sobe, e o vértice (0, −4) vira um máximo local (0, 4). As raízes −2 e 2 não mudam: módulo de zero é zero.</figcaption>
+</figure>
+<div class="box def">
+  <span class="tag">Contando soluções pelo gráfico</span>
+  <p>Quantas soluções tem <span class="m">|<span class="v">x</span>² − 4| = <span class="v">k</span></span>? Trace a reta horizontal <span class="m"><span class="v">y</span> = <span class="v">k</span></span> no gráfico da direita. Para <span class="m"><span class="v">k</span> &lt; 0</span>, nenhuma; <span class="m"><span class="v">k</span> = 0</span>, duas; <span class="m">0 &lt; <span class="v">k</span> &lt; 4</span>, <strong>quatro</strong>; <span class="m"><span class="v">k</span> = 4</span>, três; <span class="m"><span class="v">k</span> &gt; 4</span>, duas. O gráfico responde sem conta nenhuma.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Equações modulares</h2>
+<p>Se a distância de algo até o zero vale <span class="m"><span class="v">k</span></span>, esse algo vale <span class="m"><span class="v">k</span></span> ou <span class="m">−<span class="v">k</span></span>. É toda a teoria:</p>
+<div class="eq">
+  <span class="lbl">Regra</span>
+  <p class="m">|<span class="v">A</span>| = <span class="v">k</span> &nbsp;(com <span class="v">k</span> &gt; 0) &nbsp;⇔&nbsp; <span class="v">A</span> = <span class="v">k</span> &nbsp;ou&nbsp; <span class="v">A</span> = −<span class="v">k</span></p>
+  <p>Se <span class="m"><span class="v">k</span> = 0</span>, só <span class="m"><span class="v">A</span> = 0</span>. Se <span class="m"><span class="v">k</span> &lt; 0</span>, não há solução: módulo nunca é negativo.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · um módulo igual a um número</span>
+  <p>Resolver <span class="m">|2<span class="v">x</span> − 5| = 7</span>:</p>
+  <p class="m">2<span class="v">x</span> − 5 = 7 &nbsp;→&nbsp; <span class="v">x</span> = 6 &nbsp;&nbsp;&nbsp;&nbsp; ou &nbsp;&nbsp;&nbsp;&nbsp; 2<span class="v">x</span> − 5 = −7 &nbsp;→&nbsp; <span class="v">x</span> = −1</p>
+  <p>Conferência: <span class="m">|12 − 5| = 7</span> e <span class="m">|−2 − 5| = |−7| = 7</span>. Solução: <span class="m">{−1, 6}</span>.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo · módulo igual a módulo</span>
+  <p>Em <span class="m">|<span class="v">x</span> − 1| = |<span class="v">x</span> − 7|</span>, leia como distância: <span class="m"><span class="v">x</span></span> está à mesma distância de 1 e de 7. Só o ponto médio serve: <span class="m"><span class="v">x</span> = 4</span>. Algebricamente, <span class="m"><span class="v">x</span> − 1 = <span class="v">x</span> − 7</span> (impossível) ou <span class="m"><span class="v">x</span> − 1 = −(<span class="v">x</span> − 7)</span>, que dá <span class="m">2<span class="v">x</span> = 8</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Quando o lado direito tem letra</span>
+  <p>Em <span class="m">|<span class="v">x</span> − 2| = 2<span class="v">x</span> − 1</span>, o lado direito precisa ser <span class="m">≥ 0</span>. Resolva os dois casos e <strong>teste cada resposta na equação original</strong>: <span class="m"><span class="v">x</span> − 2 = 2<span class="v">x</span> − 1</span> dá <span class="m"><span class="v">x</span> = −1</span>, mas aí <span class="m">2<span class="v">x</span> − 1 = −3</span>, negativo; descarte. O outro caso, <span class="m"><span class="v">x</span> − 2 = −2<span class="v">x</span> + 1</span>, dá <span class="m"><span class="v">x</span> = 1</span>, que confere: <span class="m">|−1| = 1</span>.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Inequações modulares e tolerância</h2>
+<p>De novo, pense em distância. “Distância até o zero menor que <span class="m"><span class="v">k</span></span>” é um intervalo em volta do zero; “maior que <span class="m"><span class="v">k</span></span>” são as duas pontas de fora.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Inequação</th><th>Equivale a</th><th>Na reta</th></tr></thead>
+  <tbody>
+    <tr><td><span class="m">|<span class="v">x</span>| &lt; <span class="v">k</span></span></td><td><span class="m">−<span class="v">k</span> &lt; <span class="v">x</span> &lt; <span class="v">k</span></span></td><td>um intervalo só, “entre”</td></tr>
+    <tr><td><span class="m">|<span class="v">x</span>| ≤ <span class="v">k</span></span></td><td><span class="m">−<span class="v">k</span> ≤ <span class="v">x</span> ≤ <span class="v">k</span></span></td><td>intervalo fechado</td></tr>
+    <tr><td><span class="m">|<span class="v">x</span>| &gt; <span class="v">k</span></span></td><td><span class="m"><span class="v">x</span> &lt; −<span class="v">k</span></span> ou <span class="m"><span class="v">x</span> &gt; <span class="v">k</span></span></td><td>duas semirretas, “fora”</td></tr>
+    <tr><td><span class="m">|<span class="v">x</span> − <span class="v">a</span>| ≤ <span class="v">k</span></span></td><td><span class="m"><span class="v">a</span> − <span class="v">k</span> ≤ <span class="v">x</span> ≤ <span class="v">a</span> + <span class="v">k</span></span></td><td>intervalo centrado em <span class="m"><span class="v">a</span></span>, raio <span class="m"><span class="v">k</span></span></td></tr>
+  </tbody>
+</table>
+</div>
+<figure class="fig">
+<svg viewBox="0 0 460 160" role="img" aria-label="Reta numérica de 488 a 512 com o intervalo fechado de 492 a 508 destacado: são os valores que distam no máximo 8 de 500, ou seja, módulo de m menos 500 menor ou igual a 8">
+  <defs>
+    <marker id="m29t" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+  </defs>
+  <line x1="34" y1="80" x2="428" y2="80" style="stroke:var(--ink-2);stroke-width:1.4" marker-end="url(#m29t)"/>
+  <rect x="103.3" y="74" width="253.3" height="12" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <line x1="40" y1="76" x2="40" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="40" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">488</text>
+  <line x1="103.3" y1="76" x2="103.3" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="103.3" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">492</text>
+  <line x1="166.7" y1="76" x2="166.7" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="166.7" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">496</text>
+  <line x1="230" y1="76" x2="230" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="230" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">500</text>
+  <line x1="293.3" y1="76" x2="293.3" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="293.3" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">504</text>
+  <line x1="356.7" y1="76" x2="356.7" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="356.7" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">508</text>
+  <line x1="420" y1="76" x2="420" y2="84" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="420" y="102" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">512</text>
+  <circle cx="103.3" cy="80" r="4.5" style="fill:var(--c3)"/>
+  <circle cx="356.7" cy="80" r="4.5" style="fill:var(--c3)"/>
+  <circle cx="230" cy="80" r="3.5" style="fill:var(--ink-2)"/>
+  <text x="166.7" y="64" text-anchor="middle" class="svg-num" style="fill:var(--c3)">8 g</text>
+  <text x="293.3" y="64" text-anchor="middle" class="svg-num" style="fill:var(--c3)">8 g</text>
+  <line x1="230" y1="50" x2="230" y2="72" style="stroke:var(--ink-3);stroke-width:1;stroke-dasharray:2 2"/>
+  <text x="230" y="44" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">500 (valor nominal)</text>
+  <text x="230" y="140" text-anchor="middle" class="svg-num" style="fill:var(--c3)">|m − 500| ≤ 8  ⇔  492 ≤ m ≤ 508</text>
+</svg>
+<figcaption><b>Tolerância é módulo.</b> “Pacote de 500 g com tolerância de 8 g” significa <span class="m">|<span class="v">m</span> − 500| ≤ 8</span>: aceita-se de 492 g a 508 g, com as pontas incluídas porque o sinal é <span class="m">≤</span>.</figcaption>
+</figure>
+<div class="box tip">
+  <span class="tag">Tradução direta</span>
+  <p>“O valor <span class="m"><span class="v">x</span></span> difere de <span class="m"><span class="v">a</span></span> em no máximo <span class="m"><span class="v">k</span></span>” → <span class="m">|<span class="v">x</span> − <span class="v">a</span>| ≤ <span class="v">k</span></span> → de <span class="m"><span class="v">a</span> − <span class="v">k</span></span> a <span class="m"><span class="v">a</span> + <span class="v">k</span></span>. “Difere em mais de <span class="m"><span class="v">k</span></span>” → <span class="m">|<span class="v">x</span> − <span class="v">a</span>| &gt; <span class="v">k</span></span> → abaixo de <span class="m"><span class="v">a</span> − <span class="v">k</span></span> ou acima de <span class="m"><span class="v">a</span> + <span class="v">k</span></span>. Centro e raio: é só isso que o enunciado precisa dar.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Faixas progressivas: cada parte paga a taxa da sua faixa</h2>
+<p>Muitos impostos e tarifas são <strong>progressivos</strong>: a alíquota maior incide <strong>só sobre a parte</strong> do valor que passa do limite, não sobre o valor todo. É uma função por partes em que cada faixa acrescenta um pedaço.</p>
+<div class="eq">
+  <span class="lbl">Exemplo · taxa municipal fictícia sobre o lucro mensal</span>
+  <p>Até R$ 2 000: isento. Parte entre R$ 2 000 e R$ 5 000: 10%. Parte acima de R$ 5 000: 20%. Para um lucro de R$ 7 000:</p>
+  <p class="m">0 + 0,10 · 3 000 + 0,20 · 2 000 = 300 + 400 = 700</p>
+  <p>Cobrar 20% sobre os 7 000 inteiros daria 1 400, o dobro. A lei por partes, para <span class="m"><span class="v">x</span> &gt; 5 000</span>, é <span class="m"><span class="v">T</span>(<span class="v">x</span>) = 300 + 0,2(<span class="v">x</span> − 5 000)</span>.</p>
+</div>
+<div class="box warn">
+  <span class="tag">Progressiva × faixa única</span>
+  <p>Leia o enunciado procurando a palavra “parte”, “excedente” ou “que ultrapassar”. Se ela aparece, a cobrança é progressiva (soma por faixas). Se o texto diz “quem consome mais de 20 m³ paga R$ 9,00 por m³” sem falar de excedente, a taxa vale para o consumo inteiro, e o gráfico tem um <strong>salto</strong> na fronteira.</p>
+</div>
+<div class="box def">
+  <span class="tag">Atalho da “parcela a deduzir”</span>
+  <p>Tabelas progressivas reais costumam trazer, para cada faixa, uma alíquota e uma “parcela a deduzir”: aplica-se a alíquota ao valor <strong>inteiro</strong> e subtrai-se a parcela. No exemplo, para lucros acima de 5 000: <span class="m">0,2<span class="v">x</span> − 700</span>. Com <span class="m"><span class="v">x</span> = 7 000</span>: <span class="m">1 400 − 700 = 700</span>, o mesmo resultado. A parcela existe justamente para corrigir o excesso de cobrar a alíquota maior sobre tudo.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Localize a faixa antes de calcular</span>
+  <p>Escreva ao lado do valor de entrada qual linha da regra ele usa. Depois, calcule só com ela. Na fronteira, confira o <span class="m">≤</span>.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Teste dois pontos no gráfico</span>
+  <p>Em “qual gráfico representa”, calcule a função em um valor de cada faixa (por exemplo, 5 m³ e 25 m³) e procure o gráfico que passa pelos dois. Trechos horizontais significam valor fixo; saltos significam mudança de regra sem continuidade.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · Transforme módulo em distância</span>
+  <p><span class="m">|<span class="v">x</span> − <span class="v">a</span>|</span> é “distância de <span class="m"><span class="v">x</span></span> até <span class="m"><span class="v">a</span></span>”. Equações e inequações modulares quase sempre se resolvem desenhando a reta, sem álgebra pesada. E toda resposta de equação modular se confere substituindo.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Onde isso aparece nas outras áreas</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Área</th><th>Onde entra</th><th>O que lembrar</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Física</strong></td><td>distância percorrida × deslocamento</td><td>quem vai 3 km para a frente e volta 3 km tem deslocamento 0, mas percorreu <span class="m">|3| + |−3| = 6</span> km</td></tr>
+    <tr><td><strong>Física</strong></td><td>erro de medida <span class="m"><span class="v">x</span> ± Δ<span class="v">x</span></span></td><td>é a tolerância <span class="m">|<span class="v">x</span><sub>real</sub> − <span class="v">x</span>| ≤ Δ<span class="v">x</span></span></td></tr>
+    <tr><td><strong>Estatística</strong></td><td>desvio médio absoluto</td><td>média dos <span class="m">|<span class="v">x</span><sub><span class="v">i</span></sub> − <span class="v">m</span>édia|</span>: o módulo impede que desvios positivos e negativos se anulem</td></tr>
+    <tr><td><strong>Matemática Financeira</strong></td><td>impostos e tarifas progressivas</td><td>cada parte do valor paga a alíquota da sua faixa</td></tr>
+    <tr><td><strong>Geografia</strong></td><td>diferença de fuso horário, variação de temperatura</td><td>a amplitude térmica entre −4 °C e 9 °C é <span class="m">|9 − (−4)| = 13</span> °C</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">|x| = 5 → x = 5</span> &nbsp;→&nbsp; <span class="c">x = 5 ou x = −5</span></span><small>Dois pontos estão à distância 5 do zero.</small></li>
+  <li><span><span class="x">|x| = −3 → x = ±3</span> &nbsp;→&nbsp; <span class="c">sem solução</span></span><small>Módulo nunca é negativo.</small></li>
+  <li><span><span class="x">|x| &lt; 4 → x &lt; ±4</span> &nbsp;→&nbsp; <span class="c">−4 &lt; x &lt; 4</span></span><small>“Menor que” fica entre; “maior que” fica fora.</small></li>
+  <li><span><span class="x">|x − 3|: V anda 3 para a esquerda</span> &nbsp;→&nbsp; <span class="c">para a direita</span></span><small>O vértice está onde o de dentro zera: x = 3.</small></li>
+  <li><span><span class="x">|a + b| = |a| + |b|</span> &nbsp;→&nbsp; <span class="c">só se a e b têm o mesmo sinal</span></span><small>|−3 + 3| = 0, mas |−3| + |3| = 6.</small></li>
+  <li><span><span class="x">√(x²) = x</span> &nbsp;→&nbsp; <span class="c">√(x²) = |x|</span></span><small>Para x = −5 a raiz dá 5.</small></li>
+  <li><span><span class="x">Taxa da última faixa sobre o valor todo</span> &nbsp;→&nbsp; <span class="c">cada parte na sua faixa</span></span><small>Em cobrança progressiva, soma-se faixa por faixa.</small></li>
+  <li><span><span class="x">Usar a lei da faixa errada</span> &nbsp;→&nbsp; <span class="c">localizar a faixa primeiro</span></span><small>Confira as fronteiras com ≤ e &lt;.</small></li>
+  <li><span><span class="x">“hora ou fração” proporcional</span> &nbsp;→&nbsp; <span class="c">arredonda para cima</span></span><small>Começou a hora, paga a hora inteira.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, pergunte: em que faixa está o valor? O módulo pode ser lido como distância?</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Conta de água por faixas</span>
+    <p class="enun">Uma companhia de saneamento cobra a água consumida no mês assim: tarifa mínima de R$ 40,00 para consumo de até 10 m³; R$ 6,00 por m³ que exceder 10 m³, até 20 m³; e R$ 9,00 por m³ que exceder 20 m³. Uma residência consumiu 26 m³ em um mês. O valor da conta, em reais, foi</p>
+    <ol class="alt"><li>R$ 136,00</li><li>R$ 154,00</li><li>R$ 156,00</li><li>R$ 184,00</li><li>R$ 234,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada faixa paga a sua parte: os primeiros 10 m³ estão na tarifa mínima; de 10 a 20 m³ são 10 m³ a R$ 6,00; de 20 a 26 m³ são 6 m³ a R$ 9,00.</p>
+      <p class="m">40 + 10 · 6 + 6 · 9 = 40 + 60 + 54 = 154</p>
+      <p>A alternativa A cobra os 16 m³ acima de 10 todos a R$ 6,00 (<span class="m">40 + 16 · 6</span>), esquecendo a terceira faixa. A C multiplica o consumo todo por 6 (<span class="m">26 · 6</span>). A D cobra os 16 m³ excedentes todos a R$ 9,00 (<span class="m">40 + 16 · 9</span>). A E aplica R$ 9,00 a todo o consumo (<span class="m">26 · 9</span>), como se a última faixa valesse para tudo.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Tolerância como inequação modular</span>
+    <p class="enun">Uma máquina embala pacotes de café com massa nominal de 500 g. O controle de qualidade aprova um pacote de massa <span class="m"><span class="v">m</span></span>, em gramas, quando <span class="m">|<span class="v">m</span> − 500| ≤ 8</span>. Os pacotes aprovados são exatamente aqueles cuja massa satisfaz</p>
+    <ol class="alt"><li><span class="m"><span class="v">m</span> ≤ 508</span></li><li><span class="m">492 &lt; <span class="v">m</span> &lt; 508</span></li><li><span class="m">496 ≤ <span class="v">m</span> ≤ 504</span></li><li><span class="m">492 ≤ <span class="v">m</span> ≤ 508</span></li><li><span class="m"><span class="v">m</span> ≤ 492</span> ou <span class="m"><span class="v">m</span> ≥ 508</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m">|<span class="v">m</span> − 500| ≤ 8</span> diz que a distância entre <span class="m"><span class="v">m</span></span> e 500 é de no máximo 8: <span class="m">−8 ≤ <span class="v">m</span> − 500 ≤ 8</span>, ou seja, <span class="m">492 ≤ <span class="v">m</span> ≤ 508</span>.</p>
+      <p>A A só usa o limite de cima e aprovaria um pacote de 300 g. A B exclui as pontas, mas o sinal é <span class="m">≤</span>: um pacote de exatamente 508 g é aprovado. A C divide a tolerância por 2, como se 8 fosse a largura total do intervalo. A E é a resposta de <span class="m">|<span class="v">m</span> − 500| ≥ 8</span>: os pacotes de fora.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Lendo o gráfico em V</span>
+    <p class="enun">Um engenheiro modela o perfil de uma calha pela função <span class="m"><span class="v">f</span>(<span class="v">x</span>) = |<span class="v">x</span> − 2| − 1</span>, em que <span class="m"><span class="v">x</span></span> e <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span> são medidos em metros. O ponto mais baixo do gráfico de <span class="m"><span class="v">f</span></span> e os valores de <span class="m"><span class="v">x</span></span> em que <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 0</span> são, respectivamente,</p>
+    <ol class="alt"><li>(2, −1); <span class="m"><span class="v">x</span> = 1</span> e <span class="m"><span class="v">x</span> = 3</span></li><li>(−2, −1); <span class="m"><span class="v">x</span> = −3</span> e <span class="m"><span class="v">x</span> = −1</span></li><li>(2, 1); não há valores</li><li>(−2, 1); <span class="m"><span class="v">x</span> = 1</span> e <span class="m"><span class="v">x</span> = 3</span></li><li>(2, −1); <span class="m"><span class="v">x</span> = −1</span> e <span class="m"><span class="v">x</span> = 3</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O vértice de <span class="m">|<span class="v">x</span> − <span class="v">a</span>| + <span class="v">b</span></span> é <span class="m">(<span class="v">a</span>, <span class="v">b</span>)</span>: aqui, (2, −1). Zeros: <span class="m">|<span class="v">x</span> − 2| = 1</span>, então <span class="m"><span class="v">x</span> − 2 = 1</span> ou <span class="m"><span class="v">x</span> − 2 = −1</span>, isto é, <span class="m"><span class="v">x</span> = 3</span> ou <span class="m"><span class="v">x</span> = 1</span>.</p>
+      <p>A B lê o “− 2” como deslocamento para a esquerda. A C troca o sinal do −1 e conclui que o V fica acima do eixo. A D erra o vértice nos dois sinais, embora os zeros estejam certos. A E resolve o segundo caso como <span class="m"><span class="v">x</span> − 2 = −1 → <span class="v">x</span> = −1</span>, errando a conta.</p>
+      <p><strong>Conferência:</strong> <span class="m"><span class="v">f</span>(1) = |−1| − 1 = 0</span> e <span class="m"><span class="v">f</span>(3) = |1| − 1 = 0</span>.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Equação modular</span>
+    <p class="enun">Em um jogo de tabuleiro, a casa de um peão é dada por um número inteiro <span class="m"><span class="v">x</span></span>, e uma regra exige que <span class="m">|2<span class="v">x</span> − 5| = 7</span>. O conjunto de valores de <span class="m"><span class="v">x</span></span> que cumprem a regra é</p>
+    <ol class="alt"><li><span class="m">{6}</span></li><li><span class="m">{−6, 1}</span></li><li><span class="m">{−1, 6}</span></li><li><span class="m">{1, 6}</span></li><li>vazio</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Dois casos: <span class="m">2<span class="v">x</span> − 5 = 7</span> dá <span class="m"><span class="v">x</span> = 6</span>; <span class="m">2<span class="v">x</span> − 5 = −7</span> dá <span class="m">2<span class="v">x</span> = −2</span>, <span class="m"><span class="v">x</span> = −1</span>.</p>
+      <p>A A esquece o caso negativo. A B troca os sinais das duas soluções. A D erra o segundo caso fazendo <span class="m">2<span class="v">x</span> = 7 − 5</span> em vez de <span class="m">2<span class="v">x</span> = −7 + 5</span>. A E confunde com <span class="m">|<span class="v">A</span>| = −7</span>, que de fato não teria solução; aqui o 7 é positivo.</p>
+      <p><strong>Conferência:</strong> <span class="m">|12 − 5| = 7</span> e <span class="m">|−2 − 5| = 7</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Tarifa “por hora ou fração”</span>
+    <p class="enun">Um estacionamento cobra R$ 10,00 pela primeira hora e R$ 4,00 por hora adicional ou fração de hora adicional, com valor máximo de R$ 30,00 por dia. Um cliente deixou o carro das 8 h 10 min às 12 h 30 min do mesmo dia. Ele pagou</p>
+    <ol class="alt"><li>R$ 14,00</li><li>R$ 22,00</li><li>R$ 23,33</li><li>R$ 26,00</li><li>R$ 30,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O carro ficou 4 h 20 min. A primeira hora custa 10. Sobram 3 h 20 min de horas adicionais; como fração conta como hora inteira, são 4 horas adicionais: <span class="m">4 · 4 = 16</span>.</p>
+      <p class="m">10 + 16 = 26 &nbsp;(abaixo do teto de 30)</p>
+      <p>A A cobra uma só hora adicional. A B ignora os 20 minutos finais (3 adicionais). A C cobra proporcionalmente, <span class="m">10 + 4 · 3,33…</span>, o que a regra “ou fração” não permite. A E aplica o teto diário, que só valeria se a conta passasse de 30.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Contar soluções pelo gráfico rebatido</span>
+    <p class="enun">O gráfico de <span class="m"><span class="v">g</span>(<span class="v">x</span>) = |<span class="v">x</span>² − 4|</span> é obtido a partir da parábola <span class="m"><span class="v">y</span> = <span class="v">x</span>² − 4</span> refletindo para cima o trecho que fica abaixo do eixo <span class="m"><span class="v">x</span></span>. A quantidade de números reais <span class="m"><span class="v">x</span></span> tais que <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 3</span> é</p>
+    <ol class="alt"><li>nenhuma</li><li>uma</li><li>duas</li><li>três</li><li>quatro</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m">|<span class="v">x</span>² − 4| = 3</span> dá dois casos. <span class="m"><span class="v">x</span>² − 4 = 3</span>: <span class="m"><span class="v">x</span>² = 7</span>, <span class="m"><span class="v">x</span> = ±<span class="rad"><i>7</i></span></span>. <span class="m"><span class="v">x</span>² − 4 = −3</span>: <span class="m"><span class="v">x</span>² = 1</span>, <span class="m"><span class="v">x</span> = ±1</span>. São quatro soluções. No gráfico, a reta <span class="m"><span class="v">y</span> = 3</span> passa abaixo do máximo local (0, 4) e corta o arco central duas vezes e as duas pernas externas uma vez cada.</p>
+      <p>A C resolve só o caso positivo (<span class="m">±<span class="rad"><i>7</i></span></span>). A D seria a resposta para <span class="m"><span class="v">g</span>(<span class="v">x</span>) = 4</span>, quando a reta toca o topo do arco. A B conta apenas uma raiz por caso, esquecendo o <span class="m">±</span>. A A acha que o módulo impede a igualdade, o que só ocorreria com número negativo.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Taxa progressiva</span>
+    <p class="enun">Um município cobra uma taxa mensal sobre o lucro de pequenos negócios: a parte do lucro até R$ 2 000,00 é isenta; a parte entre R$ 2 000,00 e R$ 5 000,00 paga 10%; a parte que exceder R$ 5 000,00 paga 20%. Um negócio que teve lucro de R$ 7 000,00 no mês pagará de taxa</p>
+    <ol class="alt"><li>R$ 500,00</li><li>R$ 700,00</li><li>R$ 900,00</li><li>R$ 1 000,00</li><li>R$ 1 400,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Faixa por faixa: isenção nos primeiros 2 000; 10% de 3 000 (de 2 000 a 5 000) = 300; 20% de 2 000 (de 5 000 a 7 000) = 400. Total: 700.</p>
+      <p>A A aplica 10% sobre 5 000 e para aí, esquecendo a última faixa. A C aplica 10% desde o zero, sem a isenção: <span class="m">500 + 400</span>. A D aplica 20% sobre tudo o que passa de 2 000: <span class="m">0,2 · 5 000</span>. A E aplica 20% sobre o lucro inteiro, o erro clássico da cobrança progressiva.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Montar a lei de um plano com franquia</span>
+    <p class="enun">Um plano de internet móvel custa R$ 50,00 por mês e inclui 10 GB. Cada GB consumido além da franquia custa R$ 8,00. Sendo <span class="m"><span class="v">x</span></span> o consumo mensal em GB e <span class="m"><span class="v">f</span>(<span class="v">x</span>)</span> o valor da fatura em reais, a lei de <span class="m"><span class="v">f</span></span> é</p>
+    <ol class="alt"><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50 + 8<span class="v">x</span></span>, para todo <span class="m"><span class="v">x</span> ≥ 0</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50</span> se <span class="m">0 ≤ <span class="v">x</span> ≤ 10</span>; <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 8(<span class="v">x</span> − 10)</span> se <span class="m"><span class="v">x</span> &gt; 10</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50</span> se <span class="m">0 ≤ <span class="v">x</span> ≤ 10</span>; <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50 + 8(<span class="v">x</span> − 10)</span> se <span class="m"><span class="v">x</span> &gt; 10</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50</span> se <span class="m">0 ≤ <span class="v">x</span> ≤ 10</span>; <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50 + 0,8(<span class="v">x</span> − 10)</span> se <span class="m"><span class="v">x</span> &gt; 10</span></li><li><span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50 + 8(<span class="v">x</span> − 10)</span>, para todo <span class="m"><span class="v">x</span> ≥ 0</span></li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Até 10 GB paga-se só o fixo. Acima, o fixo continua e soma-se R$ 8,00 por GB <strong>excedente</strong>, <span class="m"><span class="v">x</span> − 10</span>: <span class="m"><span class="v">f</span>(<span class="v">x</span>) = 50 + 8(<span class="v">x</span> − 10)</span> para <span class="m"><span class="v">x</span> &gt; 10</span>.</p>
+      <p>A A cobra todos os GB, inclusive os da franquia. A B esquece os R$ 50,00 fixos acima de 10 GB: com 11 GB, a fatura cairia para R$ 8,00. A D usa R$ 0,80 por GB. A E vale para todo <span class="m"><span class="v">x</span></span> e daria fatura de R$ 10,00 para quem não consome nada.</p>
+      <p><strong>Conferência:</strong> <span class="m"><span class="v">f</span>(10) = 50</span> pelas duas linhas, então o gráfico não tem salto; <span class="m"><span class="v">f</span>(15) = 50 + 40 = 90</span>.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Distância como módulo ao longo do tempo</span>
+    <p class="enun">Um ciclista parte do km 0 de uma ciclovia retilínea e pedala no sentido crescente da quilometragem a 4 km/h constantes. Um posto de apoio fica no km 12. A distância entre o ciclista e o posto, em km, após <span class="m"><span class="v">t</span></span> horas, é <span class="m"><span class="v">d</span>(<span class="v">t</span>) = |4<span class="v">t</span> − 12|</span>, para <span class="m">0 ≤ <span class="v">t</span> ≤ 6</span>. Essa distância vale 4 km</p>
+    <ol class="alt"><li>somente em <span class="m"><span class="v">t</span> = 2</span> h</li><li>somente em <span class="m"><span class="v">t</span> = 4</span> h</li><li>em <span class="m"><span class="v">t</span> = 2</span> h e em <span class="m"><span class="v">t</span> = 3</span> h</li><li>em <span class="m"><span class="v">t</span> = 1</span> h e em <span class="m"><span class="v">t</span> = 4</span> h</li><li>em <span class="m"><span class="v">t</span> = 2</span> h e em <span class="m"><span class="v">t</span> = 4</span> h</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p><span class="m">|4<span class="v">t</span> − 12| = 4</span>: <span class="m">4<span class="v">t</span> − 12 = 4</span> dá <span class="m"><span class="v">t</span> = 4</span> (já passou do posto, no km 16); <span class="m">4<span class="v">t</span> − 12 = −4</span> dá <span class="m"><span class="v">t</span> = 2</span> (ainda antes do posto, no km 8). Os dois instantes estão no intervalo de 0 a 6 h.</p>
+      <p>A A e a B ficam com um caso só: o ciclista está a 4 km do posto uma vez antes e outra depois de passar por ele. A C inclui <span class="m"><span class="v">t</span> = 3</span>, instante em que a distância é zero. A D resolve o caso negativo como <span class="m">4<span class="v">t</span> = 4</span>, esquecendo de somar 12.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico o módulo como distância até o zero e calculo <span class="m">|<span class="v">a</span> − <span class="v">b</span>|</span> como distância entre dois pontos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo <span class="m">|<span class="v">x</span>|</span> como função por partes e sei que <span class="m"><span class="rad"><i><span class="v">x</span>²</i></span> = |<span class="v">x</span>|</span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o valor de uma função por partes localizando primeiro a faixa da entrada</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto a lei de uma tarifa com parte fixa e cobrança do excedente</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço no gráfico trechos constantes, mudanças de inclinação e saltos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico corretamente a regra “por hora ou fração”</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro o vértice de <span class="m"><span class="v">y</span> = |<span class="v">x</span> − <span class="v">a</span>| + <span class="v">b</span></span> e esboço o V deslocado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Desenho <span class="m">|<span class="v">f</span>(<span class="v">x</span>)|</span> rebatendo para cima a parte negativa do gráfico de <span class="m"><span class="v">f</span></span></span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Resolvo <span class="m">|<span class="v">A</span>| = <span class="v">k</span></span> pelos dois casos e reconheço quando não há solução</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Confiro na equação original as soluções quando o lado direito tem incógnita</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Transformo <span class="m">|<span class="v">x</span> − <span class="v">a</span>| ≤ <span class="v">k</span></span> e <span class="m">|<span class="v">x</span> − <span class="v">a</span>| &gt; <span class="v">k</span></span> em intervalos</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Traduzo “tolerância de <span class="m"><span class="v">k</span></span> em torno de <span class="m"><span class="v">a</span></span>” para uma inequação modular</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo impostos e tarifas progressivas faixa por faixa</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva <strong>25 questões</strong> e acerte pelo menos 18, com pelo menos dez de tarifas por faixas ou leitura de gráfico por partes. Depois siga para <strong>Função composta e função inversa</strong>, onde as funções passam a ser encadeadas e desfeitas.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>36 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-29-funcao-modular-funcoes-por-partes.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Álgebra e Funções</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-29";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

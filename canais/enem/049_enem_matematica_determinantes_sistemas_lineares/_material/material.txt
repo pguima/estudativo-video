@@ -1,0 +1,261 @@
+Determinantes
+Matemática › Álgebra e Funções › Assunto 16 de 18
+Determinantes e sistemas lineares
+O determinante é um único número que resume uma matriz quadrada e responde a uma pergunta decisiva: o sistema tem uma solução só? Aqui você aprende a calculá-lo, a usá-lo na regra de Cramer e a classificar sistemas em possível determinado, possível indeterminado ou impossível.
+Semana
+9 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Matrizes e operações · Sistemas de equações lineares
+Destrava
+Área de polígonos por determinante, classificação de sistemas e problemas com várias incógnitas
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM cobra sistemas lineares quase sempre dentro de uma história: ingressos de dois preços, combos de lanchonete, misturas, cargas. Montar e resolver o sistema é o tema de Sistemas de equações lineares. Esta página acrescenta três ferramentas:
+Determinante: o número que diz se a matriz tem inversa e se o sistema tem solução única. Também reaparece na Geometria Analítica, no cálculo da área de um triângulo a partir das coordenadas.
+Regra de Cramer: obtém cada incógnita como uma razão de determinantes, útil quando a pergunta pede uma das incógnitas.
+Classificação: decidir se o sistema é possível e determinado (uma solução), possível e indeterminado (infinitas) ou impossível (nenhuma), inclusive quando há um parâmetro no enunciado.
+O que rende mais aqui
+Saber que determinante diferente de zero garante solução única, e que determinante zero exige olhar mais: as equações podem ser incompatíveis (nenhuma solução) ou repetidas (infinitas). Essa ideia resolve as questões de classificação sem conta longa.
+02 Determinante de ordem 1 e de ordem 2
+Definição prática
+Só matrizes quadradas têm determinante. Indica-se det A ou com barras verticais no lugar dos colchetes. Para ordem 1, o determinante é o próprio elemento: det[−7] = −7.
+Ordem 2: diagonal principal menos diagonal secundária
+abcd = ad − bc
+3−245 = 3 · 5 − (−2) · 4 = 15 + 8 = 23
+O sinal do segundo produto
+No exemplo, o produto da secundária é (−2) · 4 = −8, e subtrair −8 é somar 8. Calcule o produto inteiro, com sinal, e só depois subtraia. Escrever “15 − 8” é o erro mais comum do assunto.
+O determinante também aparece numa equação: x32x + 1 = 0 vira x(x + 1) − 6 = 0, isto é, x² + x − 6 = 0, com raízes 2 e −3.
+03 Ordem 3: a regra de Sarrus
+Para uma 3 × 3, repita as duas primeiras colunas à direita. Some os três produtos das diagonais que descem para a direita e subtraia os três produtos das diagonais que descem para a esquerda.
+Regra de Sarrus. Os produtos das diagonais verdes são 2·4·1 = 8, 1·1·5 = 5 e 3·0·2 = 0; os das vermelhas, 3·4·5 = 60, 2·1·2 = 4 e 1·0·1 = 0. O determinante é a primeira soma menos a segunda.
+Subtraia a soma inteira
+O sinal de menos vale para os três produtos da secundária. Some-os primeiro (64) e subtraia de uma vez. Sarrus só vale para ordem 3; não tente estender a regra para 4 × 4.
+Atalho por Laplace
+Quando uma linha ou coluna tem zeros, desenvolva por ela: cada elemento a_ij multiplica o determinante que sobra ao riscar sua linha e sua coluna, com sinal (−1)^(i + j) (o padrão de sinais é + − + na primeira linha). No exemplo, pela primeira linha: 2 · (4 − 2) − 1 · (0 − 5) + 3 · (0 − 20) = 4 + 5 − 60 = −51, o mesmo resultado.
+04 Propriedades que poupam conta
+Muitas questões se resolvem sem calcular nada, só reconhecendo uma propriedade.
+ | Situação | Efeito no determinante
+ | uma linha (ou coluna) só de zeros | det = 0
+ | duas linhas (ou colunas) iguais ou proporcionais | det = 0
+ | uma linha é combinação de outras (ex.: L3 = L1 + L2) | det = 0
+ | trocar duas linhas de lugar | muda o sinal
+ | multiplicar uma linha por k | det fica multiplicado por k
+ | multiplicar a matriz inteira (ordem n) por k | det(kA) = k^n · det A
+ | somar a uma linha um múltiplo de outra | não muda
+ | transpor | det A^t = det A
+ | produto de matrizes | det(AB) = det A · det B
+ | matriz triangular ou diagonal | produto dos elementos da diagonal principal
+A armadilha do det(kA)
+Multiplicar a matriz por k multiplica cada uma das n linhas por k; por isso o fator é k^n. Numa 3 × 3 com det A = 5: det(2A) = 2³ · 5 = 40, e não 10.
+Exemplo: linhas em progressão aritmética
+10−1321543 = 0
+Cada linha é a anterior somada de (2, 2, 2), então L_3 = 2L_2 − L_1: uma linha é combinação das outras. Por Sarrus: (6 + 0 − 12) − (−10 + 4 + 0) = −6 + 6 = 0.
+05 Determinante e matriz inversa
+O critério
+Uma matriz quadrada tem inversa se, e somente se, seu determinante é diferente de zero. Matriz com det = 0 é chamada singular.
+Isso explica a fórmula da inversa 2 × 2 vista em Matrizes e operações: ela divide por ad − bc, que é o determinante. Se ele é zero, a divisão é impossível.
+Consequências úteis
+det(A^(−1)) = (1/det A) (porque A · A^(−1) = I e det I = 1)
+Se det A = 4, então det(A^(−1)) = 0,25. E para descobrir os valores de x que tornam uma matriz não inversível, basta resolver det = 0.
+06 O sistema escrito como matrizes
+Todo sistema linear pode ser escrito como A · X = B: A é a matriz dos coeficientes, X a coluna das incógnitas e B a coluna dos termos independentes.
+Do sistema à forma matricial
+{ x + y = 250 ; 40x + 20y = 7 400 } ⟺ 114020 · xy = 2507 400
+Faça a multiplicação linha por coluna e as duas equações reaparecem. A matriz A com a coluna B acrescentada é a matriz completa (ou ampliada) do sistema.
+Se det A ≠ 0, existe a inversa e a solução é única: X = A^(−1) · B. A regra de Cramer é um jeito de fazer essa conta sem montar a inversa.
+07 Regra de Cramer
+O enunciado da regra
+Num sistema com o mesmo número de equações e incógnitas e D = det A ≠ 0, cada incógnita vale x = (D_x/D), em que D_x é o determinante obtido trocando, em A, a coluna de x pela coluna dos termos independentes. O mesmo para y, z…
+Exemplo 2 × 2: ingressos de R$ 40 e R$ 20
+Foram vendidos 250 ingressos, inteiras (x) a R$ 40 e meias (y) a R$ 20, com arrecadação de R$ 7 400.
+D = 114020 = 20 − 40 = −20
+D_x = 25017 40020 = 5 000 − 7 400 = −2 400 ⟹ x = (−2 400/−20) = 120
+D_y = 1250407 400 = 7 400 − 10 000 = −2 600 ⟹ y = (−2 600/−20) = 130
+Conferência: 120 + 130 = 250 e 40 · 120 + 20 · 130 = 4 800 + 2 600 = 7 400.
+Quando Cramer vale a pena
+Em sistemas 3 × 3, Cramer exige quatro determinantes. Se a questão pede uma só incógnita, calcule só D e o determinante dela: dois Sarrus. Se pede todas, a substituição ou o escalonamento costumam ser mais rápidos.
+08 Classificação: uma, infinitas ou nenhuma solução
+ | Classificação | Soluções | O que o determinante diz (sistema n × n)
+ | SPD · possível e determinado | exatamente uma | D ≠ 0
+ | SPI · possível e indeterminado | infinitas | D = 0 e equações compatíveis
+ | SI · impossível | nenhuma | D = 0 e equações contraditórias
+Num sistema 2 × 2, cada equação é uma reta no plano, e a solução é o ponto comum:
+Três posições, três classificações. Retas concorrentes têm um ponto comum (uma solução). Retas paralelas distintas não têm nenhum (sistema impossível). Retas coincidentes têm todos os pontos em comum (infinitas soluções). Nos dois últimos casos as retas têm a mesma inclinação, e por isso D = 0.
+Como distinguir SPI de SI quando D = 0
+{ x + 2y = 3 ; 2x + 4y = 6 } → a 2ª é o dobro da 1ª: SPI
+{ x + 2y = 3 ; 2x + 4y = 7 } → o dobro da 1ª daria 6, não 7: SI
+Coeficientes proporcionais e termos independentes na mesma proporção: SPI. Coeficientes proporcionais e termos fora da proporção: SI.
+D = 0 não é “impossível”
+O determinante zero só diz que a solução não é única. Para decidir entre SPI e SI, compare as equações ou escalone. Em 2 × 2, se D = 0 e algum D_x ou D_y é diferente de zero, o sistema é impossível; se todos são zero, escalone antes de concluir.
+Sistema homogêneo
+Quando todos os termos independentes são zero, o sistema é homogêneo e nunca é impossível: (0, 0, …, 0) sempre é solução, a trivial. Ele tem outras soluções (é SPI) exatamente quando D = 0.
+09 Discussão com parâmetro
+Quando o enunciado traz uma letra no lugar de um coeficiente, a pergunta é “para que valores o sistema é SPD, SPI ou SI”. O roteiro tem dois passos.
+Exemplo com dois parâmetros
+1. Determinante: D = 122k = k − 4. Se k ≠ 4: SPD, qualquer que seja m.
+2. Caso D = 0 (k = 4): a 2ª equação vira 2x + 4y = m, cujos coeficientes são o dobro dos da 1ª. Se m = 6, ela é o dobro da 1ª: SPI. Se m ≠ 6: SI.
+ | Condição | Classificação
+ | k ≠ 4 | SPD
+ | k = 4 e m = 6 | SPI
+ | k = 4 e m ≠ 6 | SI
+Em 3 × 3, escalone no caso D = 0
+Encontre o valor do parâmetro que zera D, substitua no sistema e escalone (zere a primeira incógnita nas equações de baixo, depois a segunda). Uma linha “0 = 0” indica equação redundante (SPI, se não houver contradição); uma linha “0 = número não nulo” indica SI.
+10 Estratégia de prova e conexões
+1 · Procure a propriedade antes de fazer Sarrus
+Linha de zeros, linhas iguais, proporcionais ou em progressão aritmética dão det = 0 na hora. Matriz triangular: multiplique a diagonal.
+2 · Calcule só o necessário
+Se a pergunta é o preço de um item, use Cramer só para essa incógnita, ou some e subtraia equações de forma esperta. Se a pergunta é “quantas soluções”, nem resolva: classifique.
+3 · Confira a resposta nas equações originais
+Substituir a solução nas equações leva segundos e pega quase todo erro de sinal em determinante.
+ | Área | Onde entra | O que lembrar
+ | Geometria Analítica | área de triângulo por coordenadas e alinhamento de três pontos | a área é metade do módulo de um determinante; determinante zero = pontos alinhados
+ | Química | balanceamento de equações | os coeficientes formam um sistema linear homogêneo, com infinitas soluções proporcionais
+ | Física | circuitos com várias malhas | as leis de Kirchhoff geram sistemas lineares nas correntes
+ | Economia | misturas, cestas e combos | cada restrição vira uma equação; o determinante diz se os dados bastam para uma resposta única
+11 Os erros que mais custam pontos
+|3 −2; 4 5| = 15 − 8 → 15 − (−8) = 23Calcule o produto com sinal antes de subtrair.
+Sarrus: subtrair só o 1º produto → subtrair a soma dos trêsO menos vale para toda a diagonal secundária.
+det(2A) = 2 · det A → 2ⁿ · det ANuma 3 × 3, o fator é 8.
+D = 0 ⟹ impossível → SPI ou SICompare as equações ou escalone.
+Achou uma solução ⟹ SPD → pode haver infinitasSe D = 0, a solução encontrada é só uma entre muitas.
+Dₓ: trocar a linha de x → trocar a coluna de xA coluna dos termos independentes entra no lugar da coluna da incógnita.
+x = D / Dₓ → x = Dₓ / DO determinante principal fica no denominador.
+Homogêneo pode ser impossível → nunca: (0, 0, 0) é soluçãoSó se pergunta se há outras soluções.
+k² = 4 ⟹ k = 2 → k = 2 ou k = −2Equação do 2º grau no parâmetro tem duas raízes.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: dá para usar uma propriedade? A pergunta quer a solução ou só a classificação?
+Questão 1 · Ingressos de dois preços
+Um teatro vendeu 250 ingressos para uma apresentação: inteiras a R$ 40,00 e meias-entradas a R$ 20,00. A arrecadação total foi de R$ 7 400,00. O número de meias-entradas vendidas foi
+120.
+125.
+130.
+185.
+370.
+Ver resolução
+Com x inteiras e y meias: x + y = 250 e 40x + 20y = 7 400. Por Cramer, D = 20 − 40 = −20 e D_y = 1 · 7 400 − 40 · 250 = −2 600:
+y = (−2 600/−20) = 130
+Conferência: 120 inteiras e 130 meias dão 4 800 + 2 600 = 7 400.
+A A é o número de inteiras. A B divide os ingressos ao meio, ignorando a arrecadação. A D supõe que todos pagaram inteira (7 400 ÷ 40); a E, que todos pagaram meia (7 400 ÷ 20).
+Alternativa C
+Questão 2 · Quando a matriz não tem inversa
+Um sistema de criptografia só pode usar como chave uma matriz que tenha inversa. Para a matriz x32x + 1, os valores reais de x que a tornam inadequada como chave são
+0 e −1.
+−2 e 3.
+nenhum: ela sempre tem inversa.
+−3 e 2.
+apenas 2.
+Ver resolução
+A matriz não tem inversa quando o determinante é zero:
+x(x + 1) − 3 · 2 = 0 ⟹ x² + x − 6 = 0 ⟹ x = −3 ou x = 2
+Conferência: com x = 2, 2 · 3 − 6 = 0; com x = −3, (−3)(−2) − 6 = 0.
+A A esquece o produto da secundária e resolve x(x + 1) = 0. A B troca os sinais das raízes. A C soma o 6 em vez de subtrair (x² + x + 6 não tem raiz real). A E encontra uma raiz por tentativa e para, esquecendo que a equação é do 2º grau.
+Alternativa D
+Questão 3 · Determinante de um múltiplo
+Em um programa de modelagem, uma matriz quadrada A de ordem 3 tem determinante igual a 5. O programa gera a matriz 2A, multiplicando todos os elementos de A por 2. O determinante de 2A é
+10.
+20.
+30.
+40.
+125.
+Ver resolução
+Multiplicar a matriz por 2 multiplica as três linhas por 2, e cada linha multiplicada dobra o determinante:
+det(2A) = 2³ · det A = 8 · 5 = 40
+A A multiplica uma linha só. A B usa 2², como se a matriz fosse 2 × 2. A C multiplica por 2 e pela ordem 3. A E eleva o determinante ao cubo, 5³, em vez do fator 2.
+Alternativa D
+Questão 4 · Sistema com parâmetro
+Um técnico descreve uma mistura pelo sistema { x + 2y = 3 ; 2x + ky = m }, em que k e m são constantes reais ajustáveis. O sistema não tem solução exatamente quando
+k = 4 e m ≠ 6.
+k = 4 e m = 6.
+k ≠ 4, para qualquer valor de m.
+k = −4 e m ≠ 6.
+k = 2 e m ≠ 3.
+Ver resolução
+D = 1 · k − 2 · 2 = k − 4. Com k ≠ 4, o sistema tem solução única. Com k = 4, os coeficientes da 2ª equação são o dobro dos da 1ª; ela é compatível só se m = 2 · 3 = 6. Logo, não há solução para k = 4 e m ≠ 6.
+A B é o caso de infinitas soluções. A C é o caso de solução única. A D soma os produtos no determinante (k + 4). A E exige que a 2ª equação seja idêntica à 1ª, esquecendo que basta a proporção.
+Alternativa A
+Questão 5 · A geometria do sistema
+Em um aplicativo de gráficos, um estudante representou no plano cartesiano as duas equações do sistema { 3x − 6y = 9 ; −x + 2y = 4 }. As retas obtidas são
+concorrentes, e o sistema tem uma única solução.
+paralelas distintas, e o sistema não tem solução.
+coincidentes, e o sistema tem infinitas soluções.
+perpendiculares, e o sistema tem uma única solução.
+concorrentes na origem, e a solução é (0, 0).
+Ver resolução
+D = 3 · 2 − (−6)(−1) = 6 − 6 = 0: as retas têm a mesma inclinação. Dividindo a 1ª equação por 3: x − 2y = 3; multiplicando a 2ª por −1: x − 2y = −4. O mesmo x − 2y não pode valer 3 e −4: retas paralelas distintas, sistema impossível.
+A A e a D supõem D ≠ 0. A C vê os coeficientes proporcionais e não confere os termos independentes. A E testa (0, 0), que não satisfaz nenhuma das equações.
+Alternativa B
+Questão 6 · Uma incógnita por Cramer
+Em uma lanchonete, os preços do suco, do sanduíche e da salada são fixos. Três pedidos custaram: 1 suco, 1 sanduíche e 1 salada, R$ 16,00; 2 sucos e 1 sanduíche, R$ 15,00; 1 suco e 2 saladas, R$ 14,00. O preço de uma salada, em reais, é
+3.
+4.
+5.
+7.
+15.
+Ver resolução
+Com suco x, sanduíche y e salada z: x + y + z = 16, 2x + y = 15, x + 2z = 14.
+D = 111210102 = (2 + 0 + 0) − (1 + 0 + 4) = −3
+D_z = 111621151014 = (14 + 15 + 0) − (16 + 0 + 28) = −15 ⟹ z = (−15/−3) = 5
+Conferência: suco R$ 4, sanduíche R$ 7 e salada R$ 5 satisfazem os três pedidos (16, 15 e 14).
+A A é o módulo de D; a E, o módulo de D_z sem dividir por D. A B é o preço do suco e a D, o do sanduíche: incógnitas trocadas.
+Alternativa C
+Questão 7 · Sistema homogêneo
+O sistema { x + ky = 0 ; kx + 4y = 0 }, com k real, sempre admite a solução x = y = 0. Ele admite também soluções diferentes dessa quando
+k = 4.
+k = 2, apenas.
+k = 0.
+k = 4 ou k = −4.
+k = 2 ou k = −2.
+Ver resolução
+Um sistema homogêneo tem soluções além da trivial quando D = 0:
+D = 1 · 4 − k · k = 4 − k² = 0 ⟹ k = 2 ou k = −2
+Com k = 2, as equações são x + 2y = 0 e 2x + 4y = 0: a mesma reta, e (2, −1) é solução, por exemplo.
+A A esquece o quadrado (4 − k = 0). A B esquece a raiz negativa. A C dá D = 4 ≠ 0: só a solução trivial. A D resolve k² = 16.
+Alternativa E
+Questão 8 · Propriedade em vez de conta
+A matriz quadrada A de ordem 3 é definida por a_ij = 2i − j. O determinante de A é
+−12.
+−6.
+0.
+6.
+12.
+Ver resolução
+A = 10−1321543
+Cada linha é a anterior mais (2, 2, 2), então L_3 = 2L_2 − L_1 e o determinante é zero. Por Sarrus: diagonais que descem para a direita 6 + 0 − 12 = −6; para a esquerda −10 + 4 + 0 = −6; det = −6 − (−6) = 0.
+A B fica só com a soma da diagonal principal. A A soma as duas parciais em vez de subtrair. A D usa só a parte secundária, com o sinal de menos (−(−6)). A E soma as duas parciais e ainda troca o sinal.
+Alternativa C
+Questão 9 · Uma solução não é a solução
+Ao resolver o sistema { x + y + z = 6 ; x − y + 2z = 5 ; 2x + 3z = 11 }, um estudante verificou que o terno (1, 2, 3) satisfaz as três equações. Sobre esse sistema, é correto afirmar que ele é
+possível e determinado, e (1, 2, 3) é sua única solução.
+possível e indeterminado.
+impossível, porque o determinante dos coeficientes é zero.
+possível e determinado, com solução (0, 0, 0).
+impossível, porque a terceira equação repete as outras.
+Ver resolução
+Somando a 1ª e a 2ª equações: 2x + 3z = 11, que é exatamente a 3ª. Ela não traz informação nova, e sobram duas equações para três incógnitas. Como (1, 2, 3) é solução, o sistema é possível; como há uma equação redundante, há infinitas soluções. Outra, por exemplo: (−0,5; 2,5; 4), que também satisfaz as três.
+Pelo determinante: D = 1(−3 − 0) − 1(3 − 4) + 1(0 + 2) = 0, o que confirma que a solução não é única.
+A A conclui unicidade a partir de uma solução encontrada. A C confunde D = 0 com impossibilidade, mas o terno (1, 2, 3) prova que há solução. A D não satisfaz a 1ª equação (0 ≠ 6). A E: equação repetida gera indeterminação, não impossibilidade.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Calculo determinantes 2 × 2 sem errar o sinal do segundo produto
+Aplico a regra de Sarrus em matrizes 3 × 3
+Uso Laplace quando há uma linha ou coluna com zeros
+Reconheço determinante zero por linhas nulas, iguais, proporcionais ou combinadas
+Sei que det(kA) = k^n det A e det(AB) = det A · det B
+Relaciono matriz inversível com determinante diferente de zero
+Escrevo um sistema na forma A · X = B
+Aplico Cramer trocando a coluna certa e dividindo por D
+Classifico sistemas em SPD, SPI e SI
+Sei que D = 0 não significa “impossível”
+Associo concorrentes, paralelas e coincidentes às três classificações
+Discuto um sistema com parâmetro em dois passos
+Sei quando um sistema homogêneo tem soluções além da trivial
+Antes de marcar “Dominado” no cronograma
+Resolva 25 questões e acerte pelo menos 18, com pelo menos seis de classificação ou discussão de sistemas. Depois siga para Polinômios e equações polinomiais, onde a busca por soluções passa de várias incógnitas de 1º grau para uma incógnita de grau alto.
+Flashcards para o Anki
+Foram gerados 34 cartões deste assunto no arquivo ENEM-Matematica-34-determinantes-sistemas-lineares.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

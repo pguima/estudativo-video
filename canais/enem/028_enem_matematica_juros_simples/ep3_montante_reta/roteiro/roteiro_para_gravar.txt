@@ -1,0 +1,55 @@
+Um gráfico com uma reta e dois pontos. Só isso. E dele dá para tirar o capital, os juros de cada mês e a taxa da aplicação, sem nenhuma fórmula nova.
+
+Ao final desta aula, você vai ler capital e taxa num gráfico ou numa tabela e reconhecer a sequência dos montantes.
+
+Dois lembretes rápidos. Do episódio 1: M igual a C mais C vezes i vezes t; e os juros de um mês são C vezes i. E num gráfico, cada eixo é uma régua: no horizontal, o tempo; no vertical, o montante. Cada ponto diz: no mês tal, havia tanto.
+
+Olhe o extrato de uma aplicação. Começou com mil reais. Mês um: mil e cinquenta. Mês dois: mil e cem. Mês três: mil, cento e cinquenta. Sobe sempre cinquenta. O montante sobe uma escada de degraus iguais: cada degrau são os juros de um mês.
+
+Dá para escrever essa escada numa linha só? Dá. Pense numa regra: você diz o mês, ela devolve o montante. M de t igual a C mais C vezes i, vezes t. C é onde a escada começa; C vezes i, a altura de cada degrau; e t conta os degraus.
+
+E como fica no desenho? Um gráfico mostra como uma coisa muda com outra. Aqui: mil reais a cinco por cento ao mês. A escada sobe cinquenta reais por mês. Ligue as pontas dos degraus: vira uma reta. Agora, uma linha tracejada na altura do capital, os mil reais. A distância entre a reta e essa linha são os juros acumulados. No mês seis, trezentos reais.
+
+Onde essa reta começa? No mês zero, o dia do depósito. Ali ainda não há juros: o montante é o próprio capital. Esse é o ponto inicial: a reta começa no capital. O ponto onde ela corta o eixo vertical é o dinheiro do dia zero. E o quanto ela sobe a cada mês se chama inclinação: aqui, C vezes i, cinquenta reais. Reta com começo e inclinação, y igual a b mais a vezes x, se chama função afim. Ela tem série própria.
+
+Rende mais no começo ou no fim? Dois meses no começo: de mil para mil e cem. Cem reais. Dois meses no fim, do mês oito ao dez: de mil e quatrocentos para mil e quinhentos. Cem reais de novo. Tempos iguais, juros iguais.
+
+E se eu só te der dois pontos da reta? Mês zero, mil reais. Mês quatro, mil e duzentos. O capital é o valor no mês zero: mil reais. Os juros por mês: a subida dividida pelo tempo. Subiu duzentos em quatro meses: cinquenta por mês. E a taxa? Divida o degrau pelo capital, nunca pelo montante. Cinquenta dividido por mil: zero vírgula zero cinco, cinco por cento ao mês.
+
+O atalho em três passos. Um: capital é o valor em t igual a zero. Dois: juros por mês é a variação dividida pelo tempo. Três: taxa é o degrau dividido pelo capital.
+
+E por que a regra de três funciona aqui? Porque cada mês põe o mesmo degrau. Dois meses, cem reais. Quatro meses, duzentos. O dobro do tempo dá o dobro dos juros. Juros e tempo são proporcionais. Rendeu cento e cinquenta em três meses? Em doze meses, seiscentos. Mas isso vale em juros simples, e só neles.
+
+E a lista dos montantes, tem nome? Mil reais a três por cento ao mês. Montantes: mil e trinta, mil e sessenta, mil e noventa, mil, cento e vinte. Uma lista em que se soma sempre o mesmo número se chama progressão aritmética, ou PA. E esse número somado é a razão da PA. Aqui, mil vezes zero vírgula zero três: trinta reais. Atalho: a razão é C vezes i, o degrau da escada. PA tem série própria.
+
+E quem usa juros simples de verdade? Conta atrasada, empréstimo informal e cobranças por dia. Já bancos e cartões usam juros compostos: próxima série. Na prova, o enunciado diz o regime.
+
+Sua vez. Num gráfico de juros simples, o montante vale dois mil e quinhentos reais no mês zero e dois mil, setecentos e cinquenta no mês cinco. Qual é a taxa mensal? Pause e tente.
+
+Vamos juntos, pelos três passos. Capital: o valor no mês zero, dois mil e quinhentos. Juros em cinco meses: dois mil, setecentos e cinquenta menos dois mil e quinhentos, duzentos e cinquenta. Por mês: duzentos e cinquenta dividido por cinco, cinquenta reais. Taxa: cinquenta dividido por dois mil e quinhentos, zero vírgula zero dois. Dois por cento ao mês.
+
+Vamos guardar em três frases. Um: o montante sobe uma escada de degraus iguais. Dois: a reta começa no capital. Três: taxa é o degrau dividido pelo capital.
+
+Agora, os três erros clássicos. Primeiro: dividir pelo montante final. Cinquenta dividido por dois mil, setecentos e cinquenta: um vírgula oito por cento. Parece certo, porque o montante é o número que mais chama a atenção. Mas a taxa é sobre o capital: o valor do mês zero.
+
+Segundo: esquecer de dividir pelo número de meses. Duzentos e cinquenta dividido por dois mil e quinhentos: dez por cento ao mês! Parece certo, porque duzentos e cinquenta é a subida que você vê no gráfico. Mas essa subida é de cinco meses. Primeiro ache o degrau de um mês.
+
+Terceiro: confundir a razão da PA com a taxa: razão três, ou taxa de trinta por cento. Parece certo, porque as duas medem o crescimento. Mas a razão é em reais, trinta; a taxa, em por cento, três.
+
+Agora, uma questão no estilo do ENEM, do nosso material de estudo. Eu resolvo com você. Um capital de cinco mil reais é aplicado a juros simples de dois por cento ao mês. Os montantes ao final de cada mês, a partir do primeiro, formam uma: A: progressão geométrica de razão um vírgula zero dois. B: progressão aritmética de razão dois. C: progressão geométrica de razão cem. D: progressão aritmética de razão um vírgula zero dois. E: progressão aritmética de razão cem.
+
+Primeiro, o degrau. Dois por cento de cinco mil: cem reais por mês. Os montantes: cinco mil e cem, cinco mil e duzentos, cinco mil e trezentos. Soma sempre cem: é uma PA. E a razão é C vezes i: cem reais. Letra E!
+
+E as outras? A A descreve juros compostos, em que o saldo é multiplicado por um vírgula zero dois a cada mês. A progressão geométrica: próxima série. A B confunde a razão com a taxa: dois é o por cento, não os reais. A C e a D misturam os dois tipos: a C põe a razão certa no tipo errado, e a D, o tipo certo com a razão dos compostos.
+
+E agora, é você quem faz. O gráfico mostra a evolução do montante de uma aplicação a juros simples, desde o dia em que o capital foi depositado. A reta começa em mil e seiscentos reais no mês zero e chega a dois mil reais no mês dez. A taxa mensal de juros dessa aplicação é de: A: dois por cento. B: dois vírgula cinco por cento. C: vinte por cento. D: vinte e cinco por cento. E: quarenta por cento. Pause o vídeo e tente.
+
+Conferindo. Capital: o valor no mês zero, mil e seiscentos. Juros em dez meses: dois mil menos mil e seiscentos, quatrocentos. Por mês: quarenta reais, a inclinação. Taxa: quarenta dividido por mil e seiscentos, zero vírgula zero vinte e cinco. Dois vírgula cinco por cento ao mês. Plausível? Dois e meio por cento de mil e seiscentos dá quarenta. Letra B!
+
+E as erradas? A D, quatrocentos dividido por mil e seiscentos, esqueceu os dez meses. A A e a C dividem pelo montante final, dois mil: quarenta ou quatrocentos sobre dois mil. Dois e vinte por cento. E a E leu quarenta reais por mês como quarenta por cento.
+
+Para fechar, as mesmas três frases. Um: o montante sobe uma escada de degraus iguais. Dois: a reta começa no capital. Três: taxa é o degrau dividido pelo capital.
+
+Mil e duzentos reais viraram mil e quinhentos em dez meses. Qual foi a taxa anual? E em quanto tempo um capital triplica a dois por cento ao mês? Próximo episódio: descobrindo capital, taxa ou tempo.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha visto juros num gráfico? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

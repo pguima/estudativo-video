@@ -1,0 +1,264 @@
+Taxas Equivalentes e Inflação
+Matemática › Matemática Financeira › Assunto 4 de 6
+Taxas equivalentes e inflação
+Dez por cento ao mês não é cento e vinte por cento ao ano, e um rendimento de 10% num ano de inflação de 10% não deixou ninguém mais rico. Este assunto ensina a trocar o período de uma taxa sem errar e a separar o que o dinheiro rendeu de verdade do que só acompanhou a subida dos preços.
+Semana
+25 · Fase Ampliação
+Incidência
+Média
+Tempo previsto
+36 min de teoria
+Pré-requisito
+Juros compostos e montante · Porcentagem
+Destrava
+Empréstimos, financiamentos e parcelamentos
+Neste assunto
+01 O que o ENEM cobra aqui
+A prova raramente pede a palavra “equivalente”. Ela pede uma decisão: qual aplicação rende mais, se o salário ganhou ou perdeu da inflação, quanto custou de verdade um empréstimo anunciado com taxa mensal. Por trás de todas essas perguntas há duas ferramentas só:
+Trocar o período de uma taxa composta (de mensal para anual, de anual para semestral) sem multiplicar nem dividir pelo número de períodos.
+Separar inflação de ganho real, entendendo que as duas taxas se combinam por multiplicação de fatores, nunca por soma ou subtração.
+As contas são curtas. Quando aparece uma potência difícil, como 1,01^(12), o enunciado dá o valor aproximado. O que separa quem acerta de quem erra é saber qual conta fazer.
+O que rende mais aqui
+Uma única ideia resolve quase tudo: trabalhe com fatores (1 + taxa). Taxas compostas e inflação se acumulam multiplicando fatores; para voltar à taxa, tire 1 do fator final. Quem soma porcentagens de períodos diferentes cai em praticamente todos os distratores deste assunto.
+02 Taxa proporcional e taxa equivalente
+Duas taxas referidas a períodos diferentes podem ser comparadas de dois jeitos, e cada um serve a um regime de juros.
+ | | Taxa proporcional | Taxa equivalente
+ | Regime | Juros simples | Juros compostos
+ | Como se obtém | Multiplica ou divide pelo número de períodos | Eleva ou extrai raiz do fator
+ | 2% ao mês equivale a, no ano | 12 · 2% = 24% | 1,02^(12) − 1 ≈ 26,8%
+ | Por quê | Os juros incidem sempre sobre o capital inicial | Os juros de cada mês rendem juros nos meses seguintes
+Definição
+Duas taxas são equivalentes quando, aplicadas ao mesmo capital pelo mesmo prazo total, produzem o mesmo montante. Em juros compostos, 2% ao mês e 26,8% ao ano são equivalentes; 2% ao mês e 24% ao ano não são.
+Proporcional fica abaixo da equivalente. A reta tracejada soma 2% por mês e chega a 24%; a curva multiplica por 1,02 a cada mês e chega a 26,8%. A diferença é o juro sobre juro, e cresce com o prazo e com a taxa.
+No regime de juros simples (assunto Juros simples), a taxa proporcional é a correta. No regime composto (assunto Juros compostos e montante), que é o de quase toda situação real, ela está errada — e é a alternativa que o ENEM coloca para quem esquece disso.
+03 Como calcular a taxa equivalente
+Se um período longo contém n períodos curtos, o fator do período longo é o fator do curto elevado a n:
+Taxas equivalentes em juros compostos
+1 + i_longo = (1 + i_curto)^n
+O caminho inverso, do longo para o curto, é uma raiz. Na prova ela sai “de cabeça” porque os números são escolhidos para isso. Reconheça os fatores mais usados:
+ | Taxa curta | Fator elevado | Taxa longa equivalente | Proporcional (errada)
+ | 10% ao mês | 1,1^2 = 1,21 | 21% ao bimestre | 20%
+ | 10% ao mês | 1,1^3 = 1,331 | 33,1% ao trimestre | 30%
+ | 20% ao semestre | 1,2^2 = 1,44 | 44% ao ano | 40%
+ | 1% ao mês | 1,01^(12) ≈ 1,1268 | ≈ 12,68% ao ano | 12%
+ | 2% ao mês | 1,02^(12) ≈ 1,268 | ≈ 26,8% ao ano | 24%
+Exemplo — do longo para o curto: qual taxa semestral equivale a 44% ao ano?
+(1 + i)^2 = 1,44 → 1 + i = √(1,44) = 1,2 → i = 20% ao semestre
+A proporcional daria 22% ao semestre, e 1,22^2 ≈ 1,488: quase 49% no ano, não 44%.
+O efeito cresce com a taxa
+Com taxas pequenas e prazos curtos, a equivalente e a proporcional ficam próximas (1% ao mês: 12% contra 12,68%). Com taxas altas, a distância explode: 10% ao mês dão 1,1^(12) ≈ 3,14, isto é, cerca de 214% ao ano, e não 120%. É assim que o rotativo do cartão de crédito transforma uma taxa “de um dígito ao mês” numa taxa anual de três dígitos.
+04 Taxa nominal e taxa efetiva
+Bancos e contratos às vezes anunciam uma taxa num período e capitalizam em outro: “24% ao ano, capitalizados mensalmente”. Essa é a taxa nominal. Ela não é a que você paga.
+Como ler uma taxa nominal
+Divida a taxa nominal pelo número de capitalizações: 24% ÷ 12 = 2% ao mês. Essa divisão é a única que a convenção permite.
+Essa taxa do período de capitalização é efetiva. Capitalize-a pelo prazo desejado: 1,02^(12) ≈ 1,268.
+A taxa efetiva anual é ≈ 26,8% ao ano.
+ | Anúncio (nominal) | Taxa por período | Efetiva anual
+ | 12% a.a. com capitalização mensal | 1% ao mês | 1,01^(12) − 1 ≈ 12,68%
+ | 24% a.a. com capitalização semestral | 12% ao semestre | 1,12^2 − 1 = 25,44%
+ | 24% a.a. com capitalização mensal | 2% ao mês | 1,02^(12) − 1 ≈ 26,8%
+A mesma taxa nominal, custos diferentes
+As duas últimas linhas anunciam “24% ao ano”, mas custam 25,44% e 26,8%. Quanto mais frequente a capitalização, maior a taxa efetiva. Para comparar propostas, converta todas para efetivas no mesmo período; a nominal sozinha não serve para comparar nada.
+05 Taxas acumuladas em períodos sucessivos
+Quando a taxa muda de um período para outro, a regra continua a mesma do assunto Porcentagem: multiplique os fatores de cada período.
+Taxa acumulada
+1 + i_acum = (1 + i_1) · (1 + i_2) · … · (1 + i_n)
+Exemplo — um fundo rendeu +10%, +20% e −10% em três meses
+1,1 · 1,2 · 0,9 = 1,188 → acumulado de 18,8%
+A soma das taxas daria 20%. A perda de 10% no terceiro mês incide sobre um valor já maior, por isso tira mais que os 10 pontos da soma.
+Taxa média por período
+Se o acumulado em n períodos é conhecido, a taxa constante que daria o mesmo resultado é a equivalente da seção 03 — a média geométrica dos fatores, não a média das porcentagens. Um acumulado de 21% em dois meses corresponde a 10% ao mês, não a 10,5%.
+06 Inflação e inflação acumulada
+Definição
+Inflação é o aumento generalizado dos preços num período. Ela é medida por índices de preços, que acompanham o custo de uma cesta fixa de produtos e serviços (no Brasil, o índice oficial é o IPCA, calculado pelo IBGE). A taxa de inflação é a variação percentual desse custo.
+Exemplo — a cesta custava R$ 500,00 e passou a custar R$ 540,00
+(540/500) = 1,08 → inflação de 8% no período
+Inflação de vários períodos se acumula como qualquer taxa composta: multiplicando fatores.
+Inflação de 5% num ano e de 4% no ano seguinte
+1,05 · 1,04 = 1,092 → acumulada de 9,2% em dois anos, não 9%
+Inflação menor não significa preços menores
+Se a inflação cai de 8% para 4%, os preços continuam subindo, só que mais devagar. Preço caindo é deflação (taxa negativa). Essa distinção aparece em questões de leitura de gráficos de inflação: uma curva descendente de taxas não é uma curva descendente de preços.
+07 Poder de compra e valores corrigidos
+Se os preços sobem, a mesma quantia compra menos. O poder de compra fica dividido pelo fator da inflação.
+Poder de compra depois de uma inflação π
+poder de compra = (1/1 + π)
+ | Inflação no período | Poder de compra restante | Perda de poder de compra
+ | 25% | 1 ÷ 1,25 = 0,80 | 20% (não 25%)
+ | 100% | 1 ÷ 2 = 0,50 | 50% (não 100%)
+ | 10% | 1 ÷ 1,1 ≈ 0,909 | ≈ 9,1%
+Por que a perda é menor que a inflação
+Mesmo com inflação de 100% — preços dobrando —, o dinheiro não vira pó: ele passa a comprar metade. A perda é de 50%. É o mesmo efeito do assunto Porcentagem: subir 25% e depois descer 20% volta ao ponto de partida.
+Deflacionar: comparar valores de datas diferentes
+Para saber se um valor “aumentou de verdade”, divida o valor novo pelo fator da inflação do período. O resultado é o valor novo expresso em dinheiro da data antiga.
+Um salário passou de R$ 2.000,00 para R$ 2.400,00 num período com inflação de 20%
+(2.400/1,20) = 2.000 → o poder de compra é o mesmo; o aumento nominal de 20% só repôs a inflação
+08 Taxa real de juros
+Uma aplicação anuncia sua taxa nominal (ou aparente): quanto o saldo em reais cresceu. A taxa real é quanto cresceu o poder de compra — o que sobra depois de descontar a inflação. As três se ligam por fatores:
+Relação entre taxa nominal, inflação e taxa real
+(1 + i_nominal) = (1 + i_real) · (1 + π)
+1 + i_real = (1 + i_nominal/1 + π)
+O rendimento nominal é a inflação vezes o ganho real. Dos R$ 15,50 de rendimento, R$ 5,00 só mantêm o poder de compra; o ganho real é de 10% sobre os R$ 105,00 já corrigidos. Por isso os fatores se multiplicam e as taxas não se somam.
+Exemplo 1 — aplicação rendeu 15,5% num ano de inflação de 5%
+1 + i_real = (1,155/1,05) = 1,10 → ganho real de 10%
+Exemplo 2 — poupança rendeu 8% num ano de inflação de 10%
+1 + i_real = (1,08/1,10) ≈ 0,982 → taxa real ≈ −1,8%
+O saldo aumentou em reais, mas compra menos do que antes. Taxa real negativa é perda, mesmo com “rendimento”.
+09 A aproximação por subtração e quando ela falha
+No noticiário é comum ler “juros de 12% e inflação de 5%: ganho real de 7%”. É uma aproximação:
+Aproximação (só para taxas pequenas)
+i_real ≈ i_nominal − π
+ | Nominal | Inflação | Subtração | Exata | Erro
+ | 1% ao mês | 0,5% ao mês | 0,5% | 1,01 ÷ 1,005 − 1 ≈ 0,4975% | desprezível
+ | 26% | 20% | 6% | 1,26 ÷ 1,20 − 1 = 5% | 1 ponto inteiro
+Na prova, use a conta exata
+Quando as alternativas trazem 5% e 6% lado a lado, a subtração leva direto ao distrator. Os números do ENEM são escolhidos para a divisão de fatores sair redonda (1,26 ÷ 1,20 = 1,05). Use a subtração só para conferir a ordem de grandeza.
+10 Estratégia de prova
+1 · Converta tudo para fatores antes de pensar
+Escreva ao lado de cada taxa o fator correspondente: 20% → 1,2; −10% → 0,9; inflação de 25% → 1,25. Juntar períodos é multiplicar; descontar inflação é dividir; voltar à taxa é tirar 1. Com fatores, não há como “somar porcentagens” por engano.
+2 · Identifique o regime e o tipo de taxa
+Juros simples aceitam taxa proporcional; compostos exigem equivalente. “Capitalizado mensalmente” anuncia taxa nominal — divida só para achar a taxa do período e depois capitalize. Leia cada palavra do enunciado sobre a taxa antes de calcular.
+3 · Use as aproximações dadas e confira a plausibilidade
+O enunciado fornece potências como 1,01^(12) ≈ 1,1268; não tente calculá-las. Depois, confira: a taxa anual equivalente deve ser um pouco maior que a proporcional; a perda de poder de compra deve ser menor que a inflação; a taxa real deve ficar um pouco abaixo da diferença entre nominal e inflação.
+11 Os erros que mais custam pontos
+2% ao mês = 24% ao ano em juros compostos → 1,02¹² − 1 ≈ 26,8%Multiplicar pelo número de períodos só vale em juros simples.
+Dividir a taxa anual por 12 para achar a mensal equivalente → extraia a raiz do fator44% ao ano equivalem a 20% ao semestre, não 22%.
+Tomar a taxa nominal pela efetiva → divida pela capitalização e capitalize“12% a.a. capitalizados mensalmente” custam cerca de 12,68% ao ano.
+Esquecer de tirar 1 do fator → fator 1,268 é taxa de 26,8%O distrator “126,8%” é exatamente este erro.
+Somar inflações de períodos sucessivos → multiplique os fatores10% e 20% acumulam 32%, não 30%.
+Perda de poder de compra igual à inflação → 1 − 1/(1 + π)Inflação de 25% tira 20% do poder de compra.
+Taxa real = nominal − inflação → divida os fatores26% com inflação de 20% dá 5% real, não 6%.
+Rendimento positivo é sempre ganho → compare com a inflaçãoRender 8% com inflação de 10% é perder poder de compra.
+Inflação caindo = preços caindo → preços sobem mais devagarPreço caindo é deflação, taxa negativa.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de qualquer conta, escreva os fatores ao lado das taxas.
+Questão 1 · Taxa mensal para anual
+Uma aplicação rende 1% ao mês no regime de juros compostos. Considere 1,01^(12) ≈ 1,1268. A taxa anual equivalente a essa aplicação é, aproximadamente,
+1,27%
+12,00%
+12,12%
+12,68%
+112,68%
+Ver resolução
+Em juros compostos, a taxa anual equivalente vem do fator mensal elevado a 12:
+1 + i = 1,01^(12) ≈ 1,1268 → i ≈ 0,1268 = 12,68%
+Os distratores: B (12%) é a taxa proporcional, válida só em juros simples. C (12,12%) vem de multiplicar o fator 1,01 por 12. E (112,68%) é o fator escrito como porcentagem, sem tirar 1. A (1,27%) desloca a vírgula ao converter 0,1268.
+Alternativa D
+Questão 2 · Do período longo para o curto
+Um investimento rendeu 33,1% em um trimestre, no regime de juros compostos, com a mesma taxa em cada mês. A taxa mensal desse investimento foi de
+1,10%
+3,31%
+10,00%
+11,03%
+33,10%
+Ver resolução
+O fator do trimestre é o fator mensal ao cubo:
+(1 + i)^3 = 1,331 → 1 + i = 1,1 (pois 1,1 · 1,1 · 1,1 = 1,331) → i = 10%
+Os distratores: D (11,03%) é a taxa proporcional, 33,1 ÷ 3, que ignora o juro sobre juro. A (1,10%) confunde o fator 1,10 com a taxa. B (3,31%) desloca a vírgula de 33,1. E repete a taxa trimestral como se fosse mensal.
+Alternativa C
+Questão 3 · Taxa nominal e taxa efetiva
+Um contrato de empréstimo informa uma taxa de 18% ao ano, com capitalização semestral. A taxa efetiva anual desse contrato é de
+9,00%
+18,00%
+18,81%
+19,56%
+118,81%
+Ver resolução
+A taxa de 18% ao ano é nominal. Dividida pelas duas capitalizações, dá a taxa efetiva do semestre: 18% ÷ 2 = 9%. Capitalizando por dois semestres:
+1,09^2 = 1,1881 → 18,81% ao ano
+Os distratores: B toma a taxa nominal pela efetiva, o erro principal que a questão testa. A (9%) é a taxa do semestre, uma etapa intermediária. D (19,56%) é o que se obteria com capitalização mensal (1,5% ao mês, 1,015^(12)), que não é a do contrato. E é o fator 1,1881 sem tirar 1.
+Alternativa C
+Questão 4 · Inflação acumulada
+Em um país, a inflação foi de 10% em um ano e de 20% no ano seguinte. A inflação acumulada nesses dois anos foi de
+2%
+15%
+30%
+32%
+132%
+Ver resolução
+Taxas sucessivas se acumulam multiplicando fatores:
+1,10 · 1,20 = 1,32 → 32%
+Um produto de R$ 100,00 passou a R$ 110,00 e depois a R$ 132,00: os 20% do segundo ano incidiram sobre um preço que já tinha subido.
+Os distratores: C soma as taxas. B é a média, como se a pergunta fosse a taxa anual média (e mesmo essa não seria 15%). A é a diferença entre as taxas. E é o fator 1,32 escrito como porcentagem.
+Alternativa D
+Questão 5 · Poder de compra
+Durante um período, os preços de uma cidade subiram, em média, 25%, enquanto o salário de um trabalhador permaneceu o mesmo. Em relação ao início do período, o poder de compra desse salário diminuiu
+12,5%
+20%
+25%
+75%
+80%
+Ver resolução
+O poder de compra fica dividido pelo fator da inflação:
+(1/1,25) = 0,80 → o salário compra 80% do que comprava → perda de 20%
+Conferência: com R$ 100,00 comprava-se 100 unidades de R$ 1,00; agora cada unidade custa R$ 1,25 e o mesmo dinheiro compra 80.
+Os distratores: C iguala a perda à inflação. E é o poder de compra que restou, não o que se perdeu. D é 100% − 25%, que mistura as duas coisas. A é a metade de 25%, sem fundamento.
+Alternativa B
+Questão 6 · Taxa real
+Um investidor aplicou suas economias por um ano e obteve rendimento de 26%. No mesmo ano, a inflação foi de 20%. A taxa real de rendimento dessa aplicação foi de
+4,76%
+5,00%
+6,00%
+46,00%
+51,20%
+Ver resolução
+A taxa real vem da divisão dos fatores:
+1 + i_real = (1,26/1,20) = 1,05 → 5%
+Os distratores: C é a aproximação por subtração (26 − 20), que falha com taxas desse tamanho. A vem da divisão invertida, 1 − 1,20 ÷ 1,26 ≈ 4,76%. D soma as taxas e E multiplica os fatores (1,26 · 1,20 = 1,512): os dois tratam a inflação como ganho.
+Alternativa B
+Questão 7 · Reajuste e inflação
+Uma categoria profissional recebeu reajuste salarial de 6% em um ano no qual a inflação foi de 10%. Considere 1,06 ÷ 1,10 ≈ 0,964. Em termos reais, esses trabalhadores tiveram
+ganho de 4%.
+ganho de cerca de 3,6%.
+perda de 16%.
+perda de 4%.
+perda de cerca de 3,6%.
+Ver resolução
+Como o reajuste foi menor que a inflação, houve perda. O tamanho dela vem da divisão dos fatores:
+(1,06/1,10) ≈ 0,964 → o salário compra cerca de 96,4% do que comprava → perda de cerca de 3,6%
+Os distratores: D é a subtração 6 − 10, que superestima a perda. C soma reajuste e inflação, como se os dois fossem perdas. A e B trocam o sinal: um reajuste positivo parece ganho, mas não quando os preços sobem mais.
+Alternativa E
+Questão 8 · Aumento real de um preço
+O preço de um eletrodoméstico passou de R$ 200,00 para R$ 276,00 em um período no qual a inflação acumulada foi de 20%. Descontada a inflação, o preço desse eletrodoméstico teve um aumento real de
+15%
+18%
+38%
+58%
+138%
+Ver resolução
+Deflacione o preço novo, levando-o para o dinheiro da data inicial:
+(276/1,20) = 230 → (230/200) = 1,15 → aumento real de 15%
+Pelo mesmo caminho da taxa real: o fator nominal é 276 ÷ 200 = 1,38, e 1,38 ÷ 1,20 = 1,15.
+Os distratores: B subtrai 38 − 20. C é o aumento nominal, sem descontar a inflação. D soma aumento e inflação. E é o fator 1,38 escrito como porcentagem.
+Alternativa A
+Questão 9 · Reconhecer a taxa equivalente
+Um fundo rende 44% ao ano no regime de juros compostos. Qual das taxas a seguir, aplicada no mesmo regime, é equivalente à desse fundo?
+3,67% ao mês
+11% ao trimestre
+14,67% ao quadrimestre
+22% ao semestre
+20% ao semestre
+Ver resolução
+Um ano tem dois semestres. Teste a alternativa que dá conta redonda:
+1,20^2 = 1,44 → 20% ao semestre equivalem a 44% ao ano
+Os distratores: todas as outras são proporcionais a 44% ao ano — 44 ÷ 12, 44 ÷ 4, 44 ÷ 3 e 44 ÷ 2 —, e por isso rendem mais que 44% quando capitalizadas. A D, por exemplo, dá 1,22^2 ≈ 1,488, quase 49% no ano. Quatro alternativas feitas com o mesmo erro: a questão premia quem desconfia da divisão.
+Alternativa E
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Diferencio taxa proporcional (juros simples) de taxa equivalente (juros compostos)
+Calculo a taxa anual equivalente a uma taxa mensal elevando o fator a 12
+Encontro a taxa de um período curto a partir da de um período longo pela raiz do fator
+Reconheço de cabeça 1,1² = 1,21, 1,1³ = 1,331 e 1,2² = 1,44
+Transformo uma taxa nominal em efetiva: divido pela capitalização e capitalizo
+Calculo taxas acumuladas multiplicando fatores, inclusive com taxas negativas
+Explico o que é inflação, índice de preços e inflação acumulada
+Calculo a perda de poder de compra como 1 − 1/(1 + π)
+Deflaciono um valor para compará-lo com outro de data anterior
+Aplico (1 + nominal) = (1 + real)(1 + inflação) nos dois sentidos
+Sei quando a aproximação “nominal menos inflação” falha
+Distingo inflação em queda de deflação
+Sigo para Empréstimos, financiamentos e parcelamentos sabendo converter qualquer taxa para o período da parcela
+Antes de marcar “Dominado” no cronograma
+Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de taxa real e reajuste salarial e as de comparação entre taxas de períodos diferentes, os dois formatos mais frequentes. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 42 cartões deste assunto no arquivo ENEM-Matematica-16-taxas-equivalentes-inflacao.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Financeira é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

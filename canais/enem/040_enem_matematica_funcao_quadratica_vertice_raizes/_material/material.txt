@@ -1,0 +1,249 @@
+Função Quadrática
+Matemática › Álgebra e Funções › Assunto 7 de 18
+Função quadrática: vértice, raízes, máximo e mínimo
+Toda vez que duas grandezas variam em sentidos opostos e se multiplicam (preço e vendas, largura e comprimento), aparece uma parábola. O ENEM quer que você ache onde ela corta o eixo, onde ela vira e qual é o maior ou o menor valor possível.
+Semana
+7 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Equação do 2º grau e fórmula de Bhaskara · Função afim
+Destrava
+Otimização, lançamento oblíquo, função exponencial e inequações
+Neste assunto
+01 O que o ENEM cobra aqui
+A função quadrática é uma das funções mais cobradas da prova, quase sempre dentro de uma situação concreta. As formas mais comuns:
+Maximizar ou minimizar: o preço que dá a maior receita, a medida que dá a maior área, a produção que dá o menor custo. É o vértice.
+Trajetórias: a altura de uma bola, de um jato de água ou de um salto ao longo do tempo. Altura máxima e instante de chegada ao solo.
+Ler e montar a lei: obter f(x) a partir das raízes e de um ponto do gráfico, como num arco de ponte ou numa antena parabólica.
+Sinal: para que valores o lucro é positivo, a temperatura está acima de um limite, a função é negativa.
+O que rende mais aqui
+Saber de cor x_V = (−b/2a) e entender o que cada coordenada do vértice significa no problema. A abscissa diz onde o ótimo acontece (qual preço, qual medida, qual instante); a ordenada diz quanto vale o ótimo (qual receita, qual área, qual altura). Metade dos erros vem de responder uma quando a pergunta pedia a outra.
+02 A lei e o desenho da parábola
+Definição
+Função quadrática (ou do 2º grau) é toda função f(x) = ax² + bx + c, com a, b, c reais e a ≠ 0. Seu gráfico é uma parábola. Se a = 0, sobra uma função afim e o gráfico vira reta.
+Cada coeficiente conta uma coisa sobre o desenho:
+ | Coeficiente | O que mostra no gráfico | Exemplo em 2x² − 8x + 6
+ | a | concavidade: a > 0 boca para cima; a < 0 boca para baixo. Quanto maior |a|, mais fechada | a = 2: para cima, tem mínimo
+ | c | onde a parábola corta o eixo y: o ponto (0, c) | corta em (0, 6)
+ | b | junto com a, decide de que lado do eixo y fica o vértice | x_V = 8 ÷ 4 = 2, à direita
+O sinal de a decide tudo sobre o vértice. Com a > 0 a parábola tem um ponto mais baixo (mínimo) e nenhum máximo; com a < 0, um ponto mais alto (máximo) e nenhum mínimo.
+O sinal de a vem com o termo
+Em h(t) = 20t − 5t², o coeficiente de t² é a = −5, mesmo escrito por último. Identifique os coeficientes pela potência de x, não pela posição na expressão.
+03 Raízes: onde a parábola corta o eixo x
+As raízes (ou zeros) são os valores de x com f(x) = 0. Geometricamente, são os pontos em que a parábola encontra o eixo x. Encontrá-las é resolver a equação do 2º grau ax² + bx + c = 0:
+Fórmula de Bhaskara
+Δ = b² − 4ac x = (−b ± √(Δ)/2a)
+Em 2x² − 8x + 6: Δ = 64 − 48 = 16 e x = (8 ± 4/4), ou seja, x₁ = 1 e x₂ = 3.
+O discriminante Δ diz quantas vezes a parábola toca o eixo x, antes de qualquer conta de raiz:
+Δ conta os encontros com o eixo x. Positivo: duas raízes reais e diferentes. Zero: uma raiz dupla, e o vértice fica sobre o eixo. Negativo: nenhuma raiz real, e a parábola fica inteira de um lado do eixo (acima, se a > 0).
+Soma e produto: o atalho que confere tudo
+Se as raízes existem, x₁ + x₂ = (−b/a) e x₁ · x₂ = (c/a). Em x² − 7x + 10, procure dois números de soma 7 e produto 10: são 2 e 5, sem Bhaskara.
+04 O vértice e o eixo de simetria
+A parábola é simétrica em relação a uma reta vertical, o eixo de simetria, que passa pelo vértice, o ponto em que a curva para de descer e começa a subir (ou o contrário). As coordenadas do vértice são:
+Coordenadas do vértice
+x_V = (−b/2a) y_V = (−Δ/4a) = f(x_V)
+Em 2x² − 8x + 6: x_V = (8/4) = 2 e y_V = f(2) = 8 − 16 + 6 = −2. Pela outra fórmula, (−16/8) = −2: as duas concordam.
+Calcule o y do vértice substituindo
+Na prova, y_V = f(x_V) costuma ser mais seguro que (−Δ/4a): não exige lembrar do sinal de menos nem calcular Δ. Use a fórmula com Δ quando x_V der uma fração feia.
+Como a parábola é simétrica, o vértice fica exatamente no meio das raízes: x_V = (x₁ + x₂/2). Com raízes 1 e 3, o vértice está em x = 2. O mesmo vale para quaisquer dois pontos de mesma altura: se f(0) = f(6), o eixo de simetria é x = 3.
+ | | a > 0 | a < 0
+ | O vértice é | ponto de mínimo | ponto de máximo
+ | Valor extremo | valor mínimo y_V | valor máximo y_V
+ | Imagem | [y_V, +∞[ | ]−∞, y_V]
+ | Decrescente / crescente | desce até x_V, depois sobe | sobe até x_V, depois desce
+05 Máximo e mínimo: problemas de otimização
+O roteiro é sempre o mesmo: escolher a variável, escrever a grandeza a otimizar como função dela, achar o vértice e responder o que foi pedido.
+Exemplo 1 · Área máxima com tela limitada
+Com 60 m de tela, quer-se cercar um terreno retangular encostado num muro (o muro dispensa tela num dos lados). Chame de x as duas laterais; a frente mede 60 − 2x.
+A(x) = x(60 − 2x) = −2x² + 60x → x_V = (−60/−4) = 15 → A(15) = 15 · 30 = 450 m²
+Área do cercado em função da lateral. Laterais muito curtas ou muito longas dão área pequena; o máximo fica no meio das raízes 0 e 30, em x = 15. Repare que o ótimo não é um quadrado: com o muro, a frente (30 m) é o dobro da lateral.
+Exemplo 2 · Preço que maximiza a receita
+Um produto vendido a R$ 20,00 tem 100 vendas por dia; cada R$ 1,00 de aumento faz perder 4 vendas. Com x reais de aumento:
+R(x) = (20 + x)(100 − 4x) = −4x² + 20x + 2 000 → x_V = (−20/−8) = 2,5
+Preço ótimo: R$ 22,50, com 90 vendas e receita de 22,5 · 90 = 2 025 reais. A pergunta pode pedir o aumento (2,50), o preço (22,50), as vendas (90) ou a receita (2 025): leia o comando antes de marcar.
+O vértice precisa caber no problema
+Se o vértice cai fora do intervalo permitido (lotação máxima, quantidade negativa, tempo antes do lançamento), o ótimo fica na borda do intervalo. Confira se a resposta faz sentido físico antes de marcar.
+06 Três formas de escrever a mesma função
+ | Forma | Lei | Mostra de cara
+ | Geral | ax² + bx + c | concavidade e corte no eixo y
+ | Fatorada | a(x − x₁)(x − x₂) | as raízes
+ | Canônica | a(x − x_V)² + y_V | o vértice
+As três descrevem a mesma parábola: 2x² − 8x + 6 = 2(x − 1)(x − 3) = 2(x − 2)² − 2. Desenvolva qualquer uma com produtos notáveis e chegue à geral.
+Montar a lei a partir do gráfico
+Se o gráfico mostra as raízes, comece pela fatorada e use mais um ponto para achar a. Raízes 0 e 40 com altura 10 no meio (um arco de ponte): f(x) = a · x(x − 40) e f(20) = a · 20 · (−20) = 10, logo a = (−1/40). Se o gráfico mostra o vértice, comece pela canônica.
+07 Estudo do sinal e inequações do 2º grau
+Estudar o sinal é dizer para quais x a função é positiva, nula ou negativa. Com duas raízes, a regra cabe numa frase: entre as raízes, o sinal é o contrário do sinal de a; fora delas, o mesmo sinal de a.
+ | Caso | Sinal de f(x) com a > 0
+ | Δ > 0 (raízes x₁ < x₂) | positiva fora de [x₁, x₂], negativa entre as raízes
+ | Δ = 0 (raiz dupla x₀) | positiva em todo x ≠ x₀, nula em x₀
+ | Δ < 0 | positiva para todo x real
+Inequação · resolva x² − 5x + 6 ≤ 0
+Raízes 2 e 3 (soma 5, produto 6). Com a = 1 > 0, a função é negativa entre as raízes e nula nelas:
+S = {x ∈ ℝ | 2 ≤ x ≤ 3}
+Não divida a inequação por x
+Em x² > 4x, dividir por x dá x > 4 e perde a parte negativa da solução (se x é negativo, o sentido inverte). Passe tudo para um lado, x² − 4x > 0, ache as raízes 0 e 4 e estude o sinal: x < 0 ou x > 4.
+08 Trajetórias e leitura de gráficos
+Um objeto lançado verticalmente para cima tem altura dada por uma quadrática no tempo, com a < 0. Com h(t) = −5t² + 20t (metros e segundos):
+ | Pergunta | O que calcular | Resultado
+ | Em que instante atinge a altura máxima? | t_V = (−20/−10) | 2 s
+ | Qual é a altura máxima? | h(2) = −20 + 40 | 20 m
+ | Quando volta ao solo? | −5t(t − 4) = 0 | 4 s (a outra raiz, 0, é o lançamento)
+ | Em que instantes está a 15 m? | −5t² + 20t = 15 | 1 s (subindo) e 3 s (descendo)
+Note a simetria: sobe em 2 s e desce em 2 s; passa pelos 15 m em 1 s e em 3 s, instantes à mesma distância do vértice. O gráfico de h × t é uma parábola, mas a trajetória no espaço é uma reta vertical: não confunda o gráfico com o caminho do objeto. Já num lançamento oblíquo, o caminho no espaço também é uma parábola (veja o assunto de lançamentos, em Física).
+09 Estratégia de prova
+1 · Sublinhe o que é pedido: x ou y do vértice
+“Qual preço”, “qual medida”, “em que instante” pedem x_V. “Qual a receita máxima”, “qual a área máxima”, “qual a altura máxima” pedem y_V. As duas respostas estão nas alternativas, de propósito.
+2 · Raízes primeiro, vértice no meio
+Quando a função já vem fatorada, ou é fácil de fatorar (x(60 − 2x)), ache as raízes de cabeça e tire a média. Em x(60 − 2x), as raízes são 0 e 30, logo x_V = 15, sem fórmula.
+3 · Teste as alternativas no gráfico
+Para escolher a lei de um gráfico, confira três coisas em cada alternativa: o sinal de a (concavidade), o valor de c (corte no eixo y) e as raízes. Normalmente duas checagens já eliminam quatro alternativas.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Física | MUV: s = s₀ + v₀t + (at²/2) | altura máxima é o vértice; o gráfico s × t é parábola, o de v × t é reta
+ | Economia | receita = preço × quantidade, quando a quantidade cai com o preço | o lucro máximo é o vértice de L = R − C, não o da receita
+ | Geometria | áreas com perímetro fixo | sem muro, com perímetro fixo, o retângulo de área máxima é o quadrado
+ | Física (energia) | E_c = (mv²/2) | gráfico de E_c × v é um ramo de parábola
+11 Os erros que mais custam pontos
+x_V = b/2a → x_V = −b/2aEsquecer o sinal de menos espelha o vértice para o outro lado.
+x_V = −b/a → −b/2a−b/a é a soma das raízes; o vértice é a média, metade disso.
+responder x_V quando pedem o máximo → y_VInstante não é altura; preço não é receita.
+a = 20 em h = 20t − 5t² → a = −5O coeficiente a acompanha o termo ao quadrado, esteja onde estiver.
+a > 0 tem máximo → a > 0 tem mínimoBoca para cima: o vértice é o fundo da curva.
+Δ < 0: a função é negativa → tem o sinal de aSem raízes, a parábola fica toda acima ou toda abaixo do eixo, conforme a.
+x² > 4x ⇒ x > 4 → x < 0 ou x > 4Nunca divida a inequação por uma expressão de sinal desconhecido.
+perímetro fixo + muro ⇒ quadrado → monte A(x)O quadrado só é ótimo quando os quatro lados usam a tela.
+gráfico h × t = caminho do objeto → é altura no tempoNa subida vertical, o caminho é reta; a parábola está no gráfico.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, decida: a pergunta é sobre raízes, sobre o x do vértice ou sobre o y do vértice?
+Questão 1 · Altura máxima de um lançamento
+Em uma demonstração de fogos, um artefato é lançado verticalmente a partir do solo, e sua altura, em metros, é dada por h(t) = −5t² + 30t, em que t é o tempo em segundos após o lançamento. O artefato explode no ponto mais alto da trajetória. A altura da explosão, em metros, é
+3
+45
+90
+135
+180
+Ver resolução
+O ponto mais alto é o vértice. Primeiro o instante, depois a altura:
+t_V = (−30/−10) = 3 s → h(3) = −5 · 9 + 30 · 3 = −45 + 90 = 45 m
+A A responde o instante (o x do vértice), não a altura. A C calcula só 30 · 3, esquecendo o termo −5t². A D troca o sinal desse termo (45 + 90). A E usa o instante de volta ao solo, 6 s, e ainda ignora o termo quadrático (30 · 6).
+Alternativa B
+Questão 2 · Preço que maximiza a receita
+Um teatro de 500 lugares vende, em média, 300 ingressos por sessão ao preço de R$ 60,00. Uma pesquisa indicou que, para cada R$ 1,00 de desconto no preço do ingresso, são vendidos 10 ingressos a mais por sessão. Para que a receita por sessão seja a maior possível, o preço do ingresso deve ser
+R$ 15,00
+R$ 30,00
+R$ 45,00
+R$ 60,00
+R$ 75,00
+Ver resolução
+Com x reais de desconto, o preço é 60 − x e o público, 300 + 10x:
+R(x) = (60 − x)(300 + 10x) = −10x² + 300x + 18 000 → x_V = (−300/−20) = 15
+O desconto ótimo é R$ 15,00, e o preço, 60 − 15 = 45 reais. São 450 ingressos, o que cabe nos 500 lugares, e a receita é de R$ 20 250,00.
+A A responde o desconto, não o preço. A B é a metade do preço atual, sem modelagem. A D mantém o preço, ignorando que o desconto aumenta a receita. A E erra o sinal de x_V (desconto de −15, isto é, aumento de 15).
+Alternativa C
+Questão 3 · Área máxima encostada no muro
+Um sitiante tem 80 metros de tela para cercar uma horta retangular. Um dos lados da horta ficará encostado num muro e não receberá tela; os outros três lados serão inteiramente cercados com os 80 metros. A maior área possível da horta, em metros quadrados, é
+400
+711
+800
+1 200
+1 600
+Ver resolução
+Laterais x e frente 80 − 2x. A área tem raízes 0 e 40, logo o vértice está em 20:
+A(x) = x(80 − 2x) → A(20) = 20 · 40 = 800 m²
+A A cerca os quatro lados (quadrado de 20 m) e desperdiça o muro. A B divide a tela em três partes iguais (cerca de 26,7 m cada), mas o ótimo não tem lados iguais. A D usa lateral de 20 m com frente 80 − 20 = 60, esquecendo a segunda lateral. A E escreve A = x(80 − x), que contaria a tela de uma lateral só, e obtém o quadrado de 40 m.
+Alternativa C
+Questão 4 · A lei a partir do gráfico
+O gráfico de uma função quadrática f é uma parábola que corta o eixo das abscissas nos pontos de abscissas 1 e 5 e corta o eixo das ordenadas no ponto (0, 5). A lei dessa função é
+f(x) = x² + 6x + 5
+f(x) = x² − 6x + 5
+f(x) = −x² + 6x − 5
+f(x) = x² − 5x + 6
+f(x) = 5x² − 30x + 25
+Ver resolução
+Pela forma fatorada, f(x) = a(x − 1)(x − 5). O ponto (0, 5) dá a · (−1)(−5) = 5, logo a = 1:
+f(x) = (x − 1)(x − 5) = x² − 6x + 5
+A A tem raízes −1 e −5 (sinais trocados). A C tem as raízes certas, mas corta o eixo y em −5. A D troca soma e produto: suas raízes são 2 e 3. A E usa a = 5, confundindo o termo independente com o coeficiente, e corta o eixo y em 25.
+Alternativa B
+Questão 5 · Quando o lucro é positivo
+O lucro mensal de uma pequena fábrica, em milhares de reais, é modelado por L(x) = −x² + 14x − 40, em que x é a quantidade produzida, em centenas de unidades. A fábrica tem lucro positivo quando produz
+menos de 400 unidades.
+mais de 1 000 unidades.
+menos de 400 ou mais de 1 000 unidades.
+mais de 400 e menos de 1 000 unidades.
+menos de 700 unidades.
+Ver resolução
+Raízes de −x² + 14x − 40 = 0, ou x² − 14x + 40 = 0: soma 14 e produto 40, logo 4 e 10. Como a = −1 < 0, a função é positiva entre as raízes: 4 < x < 10, isto é, entre 400 e 1 000 unidades.
+A C é o sinal de uma parábola com a > 0: positiva fora das raízes. A A e a B ficam com só um pedaço dessa região errada. A E confunde “lucro crescendo” (antes do vértice, x < 7) com “lucro positivo”: produzir 200 unidades dá L(2) = −16, prejuízo.
+Alternativa D
+Questão 6 · Altura de um arco parabólico
+O arco de uma ponte tem a forma de uma parábola. Seus pés estão apoiados no nível da água, a 40 m um do outro, e o ponto mais alto do arco fica 10 m acima da água, exatamente no meio do vão. A altura do arco, em relação à água, num ponto situado a 5 m de um dos pés, medidos na horizontal, é
+2,5 m
+4,375 m
+5,625 m
+7,5 m
+9,375 m
+Ver resolução
+Com a origem num dos pés, as raízes são 0 e 40: f(x) = a · x(x − 40). O vértice (20, 10) dá a · 20 · (−20) = 10, logo a = (−1/40).
+f(5) = (−1/40) · 5 · (−35) = (175/40) = 4,375 m
+A A supõe que a altura cresce em linha reta do pé ao topo (10 · (5/20)). A D faz a mesma proporção a partir do topo. A E mede os 5 m a partir do centro, e não do pé. A C usa a fração ((15/20))² · 10, que é o quanto o arco desceu em relação ao topo, e não a altura que sobrou: 10 − 5,625 = 4,375.
+Alternativa B
+Questão 7 · Parábola que não toca o eixo
+Em um programa de computador, o gráfico de f(x) = x² − 6x + k só aparece inteiramente acima do eixo das abscissas, sem tocá-lo, para certos valores reais da constante k. Esses valores são os que satisfazem
+k < −9
+k < 9
+k = 9
+k > 36
+k > 9
+Ver resolução
+Com a = 1 > 0, a parábola fica toda acima do eixo quando não há raiz real, isto é, Δ < 0:
+Δ = 36 − 4k < 0 → k > 9
+Outra leitura: o vértice está em x = 3 e f(3) = k − 9 precisa ser positivo. A B é a condição para duas raízes (Δ > 0); a C, para a parábola tangenciar o eixo. A D esquece o fator 4 de 4ac. A A troca o sinal de 9 e daria valores de k com duas raízes.
+Alternativa E
+Questão 8 · Custo mínimo de produção
+O custo diário de produção de uma oficina, em reais, é C(x) = 2x² − 120x + 5 000, em que x é o número de peças produzidas no dia. A quantidade de peças que torna o custo mínimo e o valor desse custo são, respectivamente,
+30 peças e R$ 3 200,00
+60 peças e R$ 5 000,00
+30 peças e R$ 10 400,00
+15 peças e R$ 3 650,00
+30 peças e R$ 5 000,00
+Ver resolução
+Com a = 2 > 0, o vértice é ponto de mínimo:
+x_V = (120/4) = 30 → C(30) = 1 800 − 3 600 + 5 000 = 3 200
+A B usa −b/a (a soma das raízes) no lugar de −b/2a. A C acerta o 30, mas soma o termo 120 · 30 em vez de subtrair. A D divide por 4a no cálculo de x_V. A E confunde o custo mínimo com o termo independente, que é o custo de produzir zero peças.
+Alternativa A
+Questão 9 · Distância de um salto
+Num parque aquático, a trajetória do salto de um golfinho, fora da água, é descrita por y = −0,5(x − 4)² + 2, em que x é a distância horizontal, em metros, a partir de um marco na borda do tanque e y é a altura acima da superfície da água, em metros. A distância horizontal entre o ponto em que o golfinho sai da água e o ponto em que volta a ela é
+2 m
+2√2 m
+4 m
+6 m
+8 m
+Ver resolução
+O golfinho está na superfície quando y = 0:
+0,5(x − 4)² = 2 → (x − 4)² = 4 → x = 2 ou x = 6
+A distância entre as raízes é 6 − 2 = 4 m. A forma canônica ajuda: o vértice (4, 2) está no meio das raízes, que ficam 2 m para cada lado.
+A A é a altura máxima, o y do vértice. A B ignora o coeficiente 0,5 e resolve (x − 4)² = 2, com raízes 4 ± √2. A D é a abscissa do ponto de reentrada, medida a partir do marco, não a distância do salto. A E dobra a abscissa do vértice, como se o salto começasse no marco.
+Alternativa C
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Identifico a, b e c pela potência de x, mesmo fora de ordem
+Leio a concavidade pelo sinal de a e o corte no eixo y pelo valor de c
+Calculo as raízes por Bhaskara ou por soma e produto
+Relaciono o sinal de Δ com o número de pontos em que a parábola toca o eixo x
+Calculo o vértice por −b/2a e por f(x_V)
+Uso a simetria: o vértice está no meio das raízes e de quaisquer dois pontos de mesma altura
+Digo se o vértice é máximo ou mínimo e escrevo a imagem da função
+Monto a função a otimizar (área, receita, custo) a partir do texto
+Distingo quando a pergunta pede x_V e quando pede y_V
+Escrevo a lei a partir das raízes e de um ponto (forma fatorada) ou do vértice (forma canônica)
+Estudo o sinal e resolvo inequações do 2º grau sem dividir por x
+Resolvo problemas de lançamento: instante e altura máximos, volta ao solo
+Confiro se o vértice cabe no intervalo permitido pelo problema
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21, com pelo menos dez de otimização em contexto (preço, área, altura). Depois siga para Função exponencial e crescimento ou decaimento, onde a variável sobe para o expoente.
+Flashcards para o Anki
+Foram gerados 38 cartões deste assunto no arquivo ENEM-Matematica-25-funcao-quadratica-vertice-raizes.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.

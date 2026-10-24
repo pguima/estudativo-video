@@ -1,0 +1,292 @@
+Divisão Proporcional
+Matemática › Matemática Básica e Proporcionalidade › Assunto 8 de 12
+Divisão proporcional
+Repartir um total conforme o peso de cada parte — lucro entre sócios, verba entre setores, conta entre amigos, herança entre herdeiros. Um único procedimento resolve todos os casos, e ele cabe em uma linha.
+Semana
+3 · Fase Fundamentos
+Incidência
+Média
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Razão e proporção · Grandezas proporcionais
+Destrava
+Matemática financeira, rateios, porcentagem
+Neste assunto
+01 O que o ENEM cobra aqui
+Este é um assunto de procedimento: existe um caminho único que resolve todos os casos, e a dificuldade não está na conta, está em ler o enunciado e decidir quais são os pesos.
+Os contextos que a prova usa são sempre os mesmos:
+Sociedade e lucro — sócios que investiram valores diferentes.
+Rateio de despesas — conta de luz, condomínio, viagem entre amigos.
+Repartição de verbas — entre setores, escolas, municípios.
+Herança e partilha — entre herdeiros.
+Premiação por desempenho — bônus por metas, vendas ou dias trabalhados.
+O que rende mais aqui
+Duas coisas. Primeiro, o atalho do MMC na divisão inversa (seção 05), que evita trabalhar com frações. Segundo, a divisão composta por multiplicação (seção 06) — porque o erro instintivo é somar as duas séries, e a alternativa correspondente sempre está lá.
+02 A ideia central: o valor de uma parte
+Toda divisão proporcional funciona da mesma maneira: o total é quebrado em unidades iguais, e cada pessoa leva tantas unidades quanto for o seu peso.
+O procedimento, em três passos
+Some os pesos.
+Divida o total pela soma: esse é o k, o valor de uma unidade.
+Multiplique o k por cada peso.
+k = (total/soma dos pesos)
+Dividir R$ 3.600 em partes proporcionais a 2, 3 e 4
+Soma dos pesos: 2 + 3 + 4 = 9
+k = (3600/9) = 400
+Partes: 2·400 = 800 · 3·400 = 1.200 · 4·400 = 1.600
+Conferência: 800 + 1.200 + 1.600 = 3.600 ✓
+O k tem significado concreto: é quanto vale um ponto de peso naquela repartição. Se os pesos fossem dias trabalhados, o k seria o valor de um dia.
+03 Por que dividir pela soma funciona
+A justificativa é a propriedade das proporções vista no assunto 6, e vale conhecê-la para nunca aplicar a fórmula no lugar errado.
+Propriedade da soma dos antecedentes
+Se as partes x, y e z são proporcionais a a, b e c, então:
+(x/a) = (y/b) = (z/c) = (x + y + z/a + b + c) = k
+Como x + y + z é justamente o total a repartir, o k sai de imediato.
+Uma consequência prática
+Proporções equivalentes dão a mesma divisão. Repartir em 2 : 3 é idêntico a repartir em 4 : 6 ou 20 : 30 — só o valor do k muda.
+Por isso, quando os pesos forem números grandes, simplifique todos pelo MDC antes de somar. As partes finais são exatamente as mesmas e a conta fica muito mais leve.
+04 Divisão diretamente proporcional
+É o caso padrão: quem tem o maior peso recebe a maior parte.
+Uma herança de R$ 240.000 dividida proporcionalmente às idades 15, 20 e 25
+Soma: 15 + 20 + 25 = 60 → k = (240000/60) = 4.000
+Partes: 60.000 · 80.000 · 100.000
+Conferência: 60.000 + 80.000 + 100.000 = 240.000 ✓
+Diferença entre duas partes, sem calcular as duas
+Se a questão pedir a diferença entre a maior e a menor parte, multiplique a diferença dos pesos pelo k:
+(25 − 15) · 4.000 = 40.000
+Uma multiplicação em vez de duas, com menos chance de erro.
+05 Divisão inversamente proporcional
+Aqui quem tem o menor número recebe a maior parte — bônus por menor número de faltas, rateio por menor tempo de uso, prêmio por menor número de erros.
+A regra
+Dividir em partes inversamente proporcionais a a, b e c é o mesmo que dividir em partes diretamente proporcionais a (1/a), (1/b) e (1/c).
+O atalho que evita trabalhar com frações. Depois de trocar cada número pelo seu inverso, multiplicar todos pelo MMC dos denominadores devolve pesos inteiros sem alterar a proporção entre eles. Daí em diante, o problema é uma divisão direta comum.
+Dividir R$ 2.600 em partes inversamente proporcionais a 2, 3 e 4
+Pesos: 6, 4, 3 → soma 13 → k = (2600/13) = 200
+Partes: 1.200 · 800 · 600
+Conferência: 1.200 + 800 + 600 = 2.600 ✓ e o menor número (2) levou a maior parte ✓
+Inverter os valores não é inverter a ordem
+Para dividir inversamente a 2, 3, 4, os pesos não são 4, 3, 2. São os inversos (1/2), (1/3), (1/4), que viram 6, 4, 3.
+Com pesos 4, 3, 2 as partes sairiam 1.155, 866 e 578 — números feios, o que já é um sinal de que o caminho foi o errado.
+06 Divisão composta
+Quando a repartição depende de dois critérios ao mesmo tempo — número de pessoas e dias trabalhados, capital e tempo, área e número de moradores.
+A regra
+Multiplique os termos correspondentes das duas séries. Os produtos são os pesos da divisão.
+Se uma das séries for inversa, use os inversos dela antes de multiplicar.
+R$ 5.600 entre três equipes, proporcionalmente aos integrantes (2, 3, 5) e aos dias trabalhados (3, 4, 2)
+Produtos: 2·3 = 6 · 3·4 = 12 · 5·2 = 10
+Soma: 6 + 12 + 10 = 28 → k = (5600/28) = 200
+Partes: 1.200 · 2.400 · 2.000
+Multiplicar, nunca somar
+O instinto manda somar as duas séries — 2+3 = 5, 3+4 = 7, 5+2 = 7 — e o resultado fica errado. A equipe com 5 integrantes e 2 dias produziu 5 × 2 = 10 “pessoas-dia”, não 7.
+Pense em unidades combinadas: pessoa-dia, capital-mês, metro-quadrado-morador. Elas só existem por multiplicação.
+07 Regra de sociedade
+É a divisão proporcional aplicada a lucros e prejuízos: cada sócio recebe conforme o capital investido.
+Três sócios investiram R$ 30.000, R$ 45.000 e R$ 75.000; o lucro foi de R$ 45.000
+Simplificando os pesos por 15.000: 2 : 3 : 5 → soma 10
+k = (45000/10) = 4.500
+Partes: 9.000 · 13.500 · 22.500
+Prejuízo funciona igual: quem investiu mais absorve a maior parte da perda.
+Quando os sócios ficam tempos diferentes
+Aí a sociedade vira uma divisão composta, e o peso passa a ser capital × tempo:
+A investiu 20 mil por 12 meses, B investiu 30 mil por 10 meses, C investiu 15 mil por 8 meses
+Pesos: 240.000 · 300.000 · 120.000
+Simplificando por 60.000: 4 : 5 : 2 → soma 11
+Com lucro de R$ 33.000: k = 3.000 → 12.000 · 15.000 · 6.000
+Capital maior nem sempre significa parte maior
+Um sócio com 20 mil por 12 meses tem peso 240.000. Outro com 30 mil por apenas 8 meses tem o mesmo 240.000 — e os dois recebem partes iguais, apesar de capitais diferentes. É o produto que manda, não cada fator isolado.
+08 Conferências que pegam erro
+Três verificações rápidas que custam segundos e evitam marcar a alternativa errada.
+1 · A soma das partes tem de dar o total
+É a checagem definitiva. Se não fechar, o erro está no k ou nos pesos — e ainda dá tempo de refazer.
+2 · A ordem das partes tem de fazer sentido
+Na divisão direta, o maior peso recebe a maior parte. Na inversa, o menor número recebe a maior parte. Se estiver ao contrário, o método foi trocado.
+3 · Leia de novo qual parte foi pedida
+Muitas questões calculam todas as partes corretamente e erram na hora de escolher: pediram a menor, a diferença, a parte do segundo sócio. Sublinhe isso no enunciado antes de calcular.
+Não arredonde o k no meio do caminho
+Se o k não for exato, mantenha-o como fração até o fim. Arredondar antes faz a soma das partes não fechar com o total, e é a causa mais comum de resultado “quase certo”.
+09 O que parece divisão proporcional e não é
+O ENEM monta enunciados que se apresentam como repartição, mas em que a proporcionalidade não vale — ou não vale sobre o total.
+A parte fixa antes da divisão
+“Cada um recebe R$ 1.000 e o restante é dividido em partes proporcionais a 2, 3 e 5.”
+A proporção incide apenas sobre o que sobrou. Separe a parte fixa primeiro, divida o restante e só então some a parte fixa de volta a cada um.
+ | Situação | Por que não é divisão proporcional simples
+ | Imposto por faixas | Cada faixa tem alíquota diferente, então não existe um k único.
+ | Rateio com valor mínimo | Há uma parcela fixa cobrada de todos antes de qualquer proporção.
+ | Herança com legítima | Metade é dividida igualmente entre os herdeiros necessários; só a outra metade admite outra regra.
+ | Desconto escalonado | O percentual muda conforme a quantidade, quebrando a razão constante.
+Dividir em partes iguais é um caso particular
+Repartir igualmente é dividir proporcionalmente a 1, 1, 1. Não é uma regra diferente — é a mesma, com todos os pesos iguais.
+10 Estratégia de prova
+1 · Simplifique os pesos antes de somar
+Capitais como 30.000 : 45.000 : 75.000 viram 2 : 3 : 5 dividindo pelo MDC. A divisão é a mesma e a conta fica trivial.
+2 · Ache o k pela parte conhecida, quando o total não for dado
+Se a questão informa uma das partes em vez do total, use-a para achar o k e depois multiplique pela soma dos pesos para obter o total.
+3 · Trabalhe com a diferença dos pesos
+Perguntas do tipo “quanto o primeiro recebeu a mais que o terceiro” saem em uma linha: (peso₁ − peso₃) · k.
+11 Os erros que mais custam pontos
+Na inversa, usar os próprios números como pesos → use os inversosInversamente a 2, 3, 4 dá pesos 6, 4, 3 — e não 2, 3, 4 nem 4, 3, 2.
+Inverter a ordem em vez dos valores → 4, 3, 2 não é o inverso de 2, 3, 4Os inversos são 1/2, 1/3 e 1/4, que multiplicados pelo MMC dão 6, 4 e 3.
+Na composta, somar as duas séries → multiplique-asCinco pessoas por dois dias produzem 10 pessoas-dia, não 7.
+Dividir o total pelo número de partes → divida pela soma dos pesosSão três pessoas, mas nove unidades de proporção em 2 : 3 : 4.
+Aplicar a proporção sobre o total quando há parte fixa → separe a parte fixa antesA proporção incide só sobre o restante; a parte fixa volta a ser somada no fim.
+Arredondar o k no meio do caminho → mantenha exato até o fimÉ o motivo mais comum de a soma das partes não fechar com o total.
+Responder a parte errada → releia o que foi pedidoMenor parte, diferença entre partes e parte do segundo sócio são perguntas diferentes.
+Simplificar uma série e esquecer a outra → simplifique só depois de multiplicarNa divisão composta, faça os produtos primeiro e simplifique os pesos finais.
+Não conferir a soma das partes → sempre confiraÉ a verificação que pega qualquer erro de k, de peso ou de método.
+12 Questões comentadas
+Nove questões no formato da prova. Em todas, confira a soma das partes antes de escolher a alternativa.
+Questão 1 · Divisão direta
+Um prêmio de R$ 3.600,00 será dividido entre três participantes em partes diretamente proporcionais a 2, 3 e 4. O participante que receber a maior quantia ficará com
+R$ 800,00
+R$ 1.200,00
+R$ 1.440,00
+R$ 1.600,00
+R$ 1.800,00
+Ver resolução
+Some os pesos e ache o k:
+2 + 3 + 4 = 9 → k = 3600 ÷ 9 = 400
+A maior parte cabe ao maior peso:
+4 · 400 = R$ 1.600,00
+Conferência: 800 + 1.200 + 1.600 = 3.600 ✓
+A alternativa E é de quem dividiu o total por 2 em vez de usar os pesos.
+Alternativa D
+Questão 2 · Divisão inversa
+Uma quantia de R$ 2.600,00 será repartida entre três funcionários em partes inversamente proporcionais aos números 2, 3 e 4. A maior parte corresponde a
+R$ 600,00
+R$ 800,00
+R$ 1.100,00
+R$ 1.200,00
+R$ 1.300,00
+Ver resolução
+Troque cada número pelo inverso e multiplique todos pelo MMC dos denominadores, que é 12:
+(1/2), (1/3), (1/4) → pesos 6, 4, 3
+Soma: 13 → k = 2600 ÷ 13 = 200
+Partes: 6·200 = 1.200 · 4·200 = 800 · 3·200 = 600
+Duas conferências: a soma dá 2.600 ✓ e a maior parte coube ao menor número, como deve ser numa divisão inversa ✓
+Alternativa D
+Questão 3 · Regra de sociedade
+Três sócios investiram, respectivamente, R$ 30.000,00, R$ 45.000,00 e R$ 75.000,00 na abertura de uma empresa. Ao fim do primeiro ano, o lucro de R$ 45.000,00 foi dividido proporcionalmente ao capital investido. O segundo sócio recebeu
+R$ 9.000,00
+R$ 13.500,00
+R$ 15.000,00
+R$ 18.000,00
+R$ 22.500,00
+Ver resolução
+Antes de qualquer conta, simplifique os pesos. Dividindo os três capitais por 15.000:
+30.000 : 45.000 : 75.000 = 2 : 3 : 5
+Soma: 10 → k = 45000 ÷ 10 = 4.500
+Segundo sócio: 3 · 4.500 = R$ 13.500,00
+Conferência: 9.000 + 13.500 + 22.500 = 45.000 ✓
+A alternativa C é a divisão igualitária do lucro por três — ignorando os capitais.
+Alternativa B
+Questão 4 · Divisão composta
+Uma verba de R$ 5.600,00 será distribuída entre três equipes, proporcionalmente ao número de integrantes de cada uma — 2, 3 e 5 — e ao número de dias trabalhados — 3, 4 e 2, respectivamente. A equipe que receberá a maior verba ficará com
+R$ 1.200,00
+R$ 1.600,00
+R$ 2.000,00
+R$ 2.400,00
+R$ 2.800,00
+Ver resolução
+Dois critérios ao mesmo tempo: multiplique os termos correspondentes.
+2·3 = 6 · 3·4 = 12 · 5·2 = 10
+Soma: 28 → k = 5600 ÷ 28 = 200
+Partes: 1.200 · 2.400 · 2.000
+A maior é R$ 2.400,00, da segunda equipe.
+Repare no que a multiplicação revela: a terceira equipe tem mais integrantes, mas trabalhou menos dias — e acaba com menos verba que a segunda. Somando as séries, esse efeito se perderia.
+Alternativa D
+Questão 5 · Capital e tempo
+Em uma sociedade, o sócio A entrou com R$ 20.000,00 e permaneceu 12 meses; o sócio B, com R$ 30.000,00 por 10 meses; e o sócio C, com R$ 15.000,00 por 8 meses. O lucro de R$ 33.000,00 foi dividido proporcionalmente ao capital e ao tempo de permanência. O sócio B recebeu
+R$ 6.000,00
+R$ 11.000,00
+R$ 12.000,00
+R$ 15.000,00
+R$ 16.500,00
+Ver resolução
+O peso de cada sócio é o produto capital × tempo:
+A: 20.000 · 12 = 240.000
+B: 30.000 · 10 = 300.000
+C: 15.000 · 8 = 120.000
+Simplificando por 60.000:
+4 : 5 : 2 → soma 11 → k = 33000 ÷ 11 = 3.000
+Sócio B: 5 · 3.000 = R$ 15.000,00
+Conferência: 12.000 + 15.000 + 6.000 = 33.000 ✓
+Alternativa D
+Questão 6 · Achar o total pela parte
+Um valor foi dividido entre três pessoas em partes diretamente proporcionais a 3, 5 e 7. Sabendo que a menor parte foi de R$ 1.800,00, o valor total dividido foi de
+R$ 5.400,00
+R$ 7.200,00
+R$ 9.000,00
+R$ 10.800,00
+R$ 12.600,00
+Ver resolução
+Aqui o total é a incógnita, mas uma das partes é conhecida — e ela dá o k. A menor parte corresponde ao menor peso, que é 3:
+3 · k = 1800 → k = 600
+Com o k em mãos, o total é o k multiplicado pela soma dos pesos:
+3 + 5 + 7 = 15 → total = 15 · 600 = R$ 9.000,00
+Conferência: as partes seriam 1.800, 3.000 e 4.200, que somam 9.000 ✓
+Alternativa C
+Questão 7 · Parte fixa antes da proporção
+Uma quantia de R$ 10.000,00 será distribuída entre três pessoas da seguinte forma: cada uma recebe inicialmente R$ 1.000,00 e o restante é dividido em partes diretamente proporcionais a 2, 3 e 5. A terceira pessoa receberá, no total,
+R$ 3.500,00
+R$ 4.000,00
+R$ 4.500,00
+R$ 5.000,00
+R$ 6.000,00
+Ver resolução
+Separe a parte fixa primeiro. Três pessoas recebem R$ 1.000,00 cada:
+10.000 − 3.000 = 7.000 a dividir proporcionalmente
+2 + 3 + 5 = 10 → k = 7000 ÷ 10 = 700
+Parte proporcional da terceira: 5 · 700 = 3.500
+Agora some a parte fixa de volta:
+1.000 + 3.500 = R$ 4.500,00
+A alternativa A é de quem esqueceu de somar os R$ 1.000,00. A alternativa D é de quem aplicou a proporção sobre os R$ 10.000,00 inteiros.
+Alternativa C
+Questão 8 · Bônus por desempenho
+Uma empresa distribuirá um bônus de R$ 4.200,00 entre três funcionários, em partes inversamente proporcionais ao número de faltas de cada um no semestre: 2, 3 e 6 faltas. O funcionário com 3 faltas receberá
+R$ 700,00
+R$ 1.050,00
+R$ 1.400,00
+R$ 1.800,00
+R$ 2.100,00
+Ver resolução
+Menos faltas deve significar bônus maior — daí a divisão ser inversa. Inversos de 2, 3 e 6, multiplicados pelo MMC 6:
+(1/2), (1/3), (1/6) → pesos 3, 2, 1
+Soma: 6 → k = 4200 ÷ 6 = 700
+Partes: 2.100 · 1.400 · 700
+O funcionário com 3 faltas tem peso 2 e recebe R$ 1.400,00.
+Conferência de sentido: quem faltou menos (2) levou mais (2.100); quem faltou mais (6) levou menos (700) ✓
+Alternativa C
+Questão 9 · Diferença entre partes
+Uma herança de R$ 240.000,00 foi dividida entre três herdeiros em partes diretamente proporcionais às suas idades: 15, 20 e 25 anos. A diferença entre a maior e a menor parte recebida foi de
+R$ 20.000,00
+R$ 40.000,00
+R$ 60.000,00
+R$ 80.000,00
+R$ 100.000,00
+Ver resolução
+15 + 20 + 25 = 60 → k = 240000 ÷ 60 = 4.000
+Caminho curto: a diferença entre duas partes é a diferença dos pesos vezes o k.
+(25 − 15) · 4.000 = 10 · 4.000 = R$ 40.000,00
+Caminho longo, para conferir: as partes são 60.000, 80.000 e 100.000, que somam 240.000 ✓, e 100.000 − 60.000 = 40.000 ✓
+As alternativas C e E são as partes individuais — a armadilha de quem calcula tudo certo e responde a pergunta errada.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Calculo o k dividindo o total pela soma dos pesos, não pelo número de partes
+Sei explicar por que dividir pela soma funciona, pela propriedade dos antecedentes
+Simplifico pesos grandes pelo MDC antes de somar
+Resolvo divisão inversa trocando pelos inversos e multiplicando pelo MMC
+Sei que inverter os valores não é o mesmo que inverter a ordem
+Na divisão composta, multiplico os termos correspondentes das séries
+Aplico a regra de sociedade com capitais e com capital × tempo
+Acho o total a partir de uma única parte conhecida
+Separo a parte fixa antes de aplicar a proporção sobre o restante
+Calculo diferenças entre partes multiplicando a diferença dos pesos pelo k
+Confiro sempre se a soma das partes reproduz o total
+Confiro se a ordem das partes é coerente com o tipo de divisão
+Releio qual parte foi pedida antes de marcar a alternativa
+Antes de marcar “Dominado” no cronograma
+Resolva 30 questões e acerte pelo menos 21 (70%). Priorize as de divisão inversa e as de divisão composta — são as duas em que o caminho instintivo leva à alternativa errada. Depois atualize a linha na aba Cronograma.
+Flashcards para o Anki
+Foram gerados 45 cartões deste assunto no arquivo ENEM-Matematica-08-divisao-proporcional.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Matemática Básica é o mesmo dos assuntos anteriores, então os cartões se somam ao baralho que você já tem.

@@ -1,0 +1,65 @@
+As arestas de um bloco são as raízes de dois x ao cubo, menos catorze x ao quadrado, mais vinte e oito x, menos dezesseis, igual a zero. O volume é oito metros cúbicos, e você descobre isso sem achar nenhuma aresta.
+
+Este é o quarto episódio da série de Polinômios. Ao final, você vai tirar soma e produto das raízes direto dos coeficientes, escolher a lei de um gráfico pelas raízes e completar as raízes não reais.
+
+Quatro lembretes rápidos. Do segundo grau: soma, menos b sobre a; produto, c sobre a. Do episódio três: fator que aparece duas vezes, multiplicidade dois. Da Função quadrática: raiz é onde a curva encontra o eixo x. E um número novo: i, com i ao quadrado igual a menos um. Isso tem série própria, a próxima.
+
+Pense numa caixa de sapato. Ela tem três medidas: a, b e c. O volume é a vezes b vezes c. Agora, duas bolas. Uma cai no chão e quica: encosta e volta. A outra cai num vidro fino e atravessa. Hoje, a caixa vira equação, e as bolas viram gráfico.
+
+Dá para saber a soma das raízes sem achar nenhuma delas? Dá. Relações de Girard: as contas que ligam os coeficientes às raízes. Para a x ao cubo, mais b x ao quadrado, mais c x, mais d, igual a zero: a soma das três raízes é menos b sobre a. A soma dos produtos dois a dois é c sobre a: você multiplica as raízes em pares e soma. E o produto das três é menos d sobre a. Menos, mais, menos.
+
+Será que funciona mesmo? Pegue x ao cubo, menos dois x ao quadrado, menos cinco x, mais seis, de raízes menos dois, um e três. Os coeficientes, com os sinais: a é um, b é menos dois, c é menos cinco, d é seis. Soma: dois. Menos b sobre a: dois. Pares: menos dois, menos seis, mais três: menos cinco, o c sobre a. Produto: menos seis, o menos d sobre a. Bateu tudo.
+
+Atalho. Antes de qualquer fração, escreva a, b, c e d com os sinais. Depois aplique o menos, mais, menos. O sinal do coeficiente e o sinal da fórmula não se confundem.
+
+E a caixa de sapato? Se as arestas são as raízes, o produto das raízes é o volume. A soma dos produtos dois a dois é metade da área total. E a soma das raízes é um quarto do comprimento de todas as arestas. Numa caixa de dois, três e cinco: volume trinta; pares, trinta e um, metade da área; e soma dez, um quarto das arestas.
+
+E o gráfico, o que ele conta? As raízes reais são os pontos onde a curva encontra o eixo horizontal. Veja x mais um, ao quadrado, vezes x menos três. Em menos um, a bola quica: a curva toca o eixo e volta. Em três, a bola atravessa. E no eixo vertical: P de zero é um vezes menos três: menos três.
+
+Por que ela quica em menos um? Multiplicidade par: o fator aparece um número par de vezes. Ao quadrado, ele nunca é negativo. O sinal não muda: a curva toca e volta. Multiplicidade ímpar: o fator aparece um número ímpar de vezes. Ele troca de sinal, e a curva atravessa.
+
+E como o gráfico elimina alternativas? Grau n: no máximo n encontros com o eixo. Grau ímpar, com coeficientes reais: pelo menos uma raiz real. A curva vai de um lado ao outro do eixo. E grau ímpar com o coeficiente dominante positivo: a curva começa embaixo e termina em cima.
+
+Atalho. Diante de um gráfico, três leituras: conte os encontros com o eixo, veja em cada um se toca ou atravessa, e leia P de zero no eixo vertical.
+
+E quando a raiz não é real? Unidade imaginária: o número i, que ao quadrado dá menos um. Raiz não real: uma raiz que usa o i, como um menos i. Conjugado: o mesmo número, i com sinal trocado. A regra: com coeficientes reais, raízes não reais andam em dupla, como par de meias. Se um menos i é raiz, um mais i vem junto.
+
+E o par gera o quê? Pegue o par dois mais i e dois menos i. Soma: os i se cancelam: quatro. Produto: quatro, menos i ao quadrado. Como i ao quadrado é menos um, quatro mais um: cinco. O par gera x ao quadrado, menos quatro x, mais cinco. Coeficientes reais. O i sumiu.
+
+Atalho. Para um par conjugado: x ao quadrado, menos a soma vezes x, mais o produto. No produto, o menos i ao quadrado vira mais um.
+
+Sua vez. As raízes de x ao cubo, menos seis x ao quadrado, mais onze x, menos seis são um, dois e três: o lucro da Questão três. Confira as três relações de Girard. Pause e tente.
+
+Vamos juntos. a é um, b é menos seis, c é onze, d é menos seis. Soma: seis; menos b sobre a: seis. Pares: dois, mais três, mais seis: onze; c sobre a: onze. Produto: seis; menos d sobre a: seis.
+
+Vamos guardar em três frases. Um: Girard no terceiro grau: menos, mais, menos, sempre dividindo por a. Dois: multiplicidade par toca; ímpar atravessa. Três: raiz não real chega com o conjugado.
+
+Agora, os erros clássicos. O primeiro: usar d sobre a como produto no terceiro grau. Em x ao cubo, menos dois x ao quadrado, menos cinco x, mais seis, a pessoa diz seis. Parece certo, porque no segundo grau o produto é c sobre a, sem menos. Mas no terceiro grau os sinais alternam: o produto é menos d sobre a, menos seis.
+
+O segundo: achar que toda raiz atravessa o eixo. Em x mais um, ao quadrado, vezes x menos três, desenhar a curva cruzando em menos um. Parece certo, porque raiz parece sinônimo de cortar o eixo. Mas o fator ao quadrado não troca de sinal: em menos um, a curva toca e volta.
+
+O terceiro: aceitar um menos i sozinha. Dizer que um polinômio de grau dois, com coeficientes reais, tem raízes três e um menos i. Parece certo, porque são só duas raízes para um grau dois. Mas um menos i traz o um mais i: seriam três raízes. O grau teria de ser pelo menos três.
+
+Agora, uma questão no estilo do ENEM. As medidas, em metros, das três arestas de um bloco retangular são as raízes de dois x ao cubo, menos catorze x ao quadrado, mais vinte e oito x, menos dezesseis, igual a zero. O volume do bloco, em metros cúbicos, é: A: sete. B: oito. C: catorze. D: dezesseis. E: vinte e oito.
+
+Essa, eu faço. É soma, produto ou gráfico? Volume é produto das arestas: produto das raízes. Os coeficientes, com os sinais: a é dois, b é menos catorze, c é vinte e oito, d é menos dezesseis. Produto: menos d sobre a: menos, menos dezesseis, sobre dois: oito. Letra B! Confiro: a equação é dois vezes x menos um, x menos dois, x menos quatro. Arestas um, dois e quatro: volume oito.
+
+E as armadilhas? A A é a soma das raízes: menos b sobre a, sete. A C é c sobre a, catorze: a metade da área total. A D esquece de dividir por dois. E a E é a área total do bloco: duas vezes catorze.
+
+Agora, nós fazemos. O gráfico mostra um polinômio P de grau três. Ele cruza o eixo horizontal em menos um, só toca esse eixo em dois e corta o eixo vertical em zero, quatro. A lei de P é: A, B, C, D ou E, na tela. Pense comigo.
+
+É soma, produto ou gráfico? Gráfico. Cruza em menos um: multiplicidade ímpar, fator x mais um. Toca em dois: multiplicidade par, fator x menos dois, ao quadrado. Um mais dois: grau três. Fechou. P é a vezes x mais um, vezes x menos dois ao quadrado. P de zero: a vezes um vezes quatro, quatro a. Igual a quatro: a é um. Letra E!
+
+E as outras? A A troca os sinais das raízes: daria um e menos dois. A B inverte as multiplicidades: tocaria em menos um, cruzaria em dois, e P de zero daria menos dois. A C tem o sinal errado: P de zero, menos quatro. E a D é de grau dois.
+
+Agora, você faz. Um polinômio P de grau três, com coeficientes reais e coeficiente dominante um, tem como raízes dois e um menos i, em que i ao quadrado é menos um. Então, P de x é: A, B, C, D ou E, na tela. Pause o vídeo e tente.
+
+Vamos conferir. Coeficientes reais: o par de meias. Um mais i entra. Soma do par: dois. Produto: um, menos i ao quadrado: um mais um, dois. O par gera x ao quadrado, menos dois x, mais dois. Vezes x menos dois: x ao cubo, menos quatro x ao quadrado, mais seis x, menos quatro. Letra B! Girard confere: soma das raízes, quatro; menos b sobre a, quatro.
+
+E as armadilhas? A A usa as raízes com os sinais trocados. A C calcula o produto do par como zero, como se i ao quadrado fosse mais um. A D usa o fator x ao quadrado mais dois: esquece que a soma do par é dois. E a E tem grau dois: deixa de fora a raiz dois.
+
+Para fechar, as mesmas três frases. Um: Girard no terceiro grau: menos, mais, menos, sempre dividindo por a. Dois: multiplicidade par toca; ímpar atravessa. Três: raiz não real chega com o conjugado.
+
+No último episódio deste assunto, juntamos tudo, caçamos as pegadinhas e treinamos com questões inéditas.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: você já tinha visto a bola que quica no eixo? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

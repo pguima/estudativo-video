@@ -1,0 +1,73 @@
+Uma vela mede dezessete centímetros dez minutos depois de acesa. Ela perde zero vírgula dois centímetro por minuto. Quem faz dezessete dividido por zero vírgula dois responde oitenta e cinco minutos e erra: a pergunta contava o tempo desde que a vela foi acesa. Hoje você aprende a voltar o filme até o zero.
+
+Este é o segundo episódio da série de Função afim. Ao final, você vai tirar a taxa de dois dados quaisquer, achar o valor inicial mesmo quando ele não aparece e responder quando acaba? com uma conta.
+
+Dois lembretes rápidos. Do episódio um: em a x mais b, o a é a taxa e o b é o valor inicial. E da série de Equações do primeiro grau: três x menos doze igual a zero. Passa o doze, divide por três: x igual a quatro.
+
+O que estas três coisas têm em comum? Um tanque de quinhentos litros esvaziando, com uma marca a cada hora. Uma vela acesa. E um carro que perde valor a cada ano: a depreciação. Nas três, algo diminui sempre no mesmo ritmo.
+
+Como medir esse ritmo? Com o delta, uma letra grega em forma de triângulo. Quer dizer variação: o valor final menos o inicial. Na função afim, cada vez que o x aumenta um, o y muda exatamente a. Esse a é o coeficiente angular, ou taxa de variação.
+
+E se eu só tiver dois pontos? a igual a delta y sobre delta x: y dois menos y um, sobre x dois menos x um. Quanto a saída andou, dividido por quanto a entrada andou. E a taxa tem unidade: litros por hora, centímetros por minuto, reais por ano.
+
+Vamos ao tanque. Hora zero: quinhentos litros. Depois quatrocentos e quarenta, trezentos e oitenta, trezentos e vinte, duzentos e sessenta. De uma linha para a outra: menos sessenta, sempre. A taxa é menos sessenta litros por hora, com menos porque o tanque diminui. O b é quinhentos. A lei: y igual a quinhentos menos sessenta x.
+
+E se as horas pularem? Hora um: quatrocentos e quarenta. Hora três: trezentos e vinte. O y caiu cento e vinte, mas o x andou duas horas. Menos cento e vinte sobre dois: menos sessenta. A mesma taxa.
+
+E a ordem da subtração importa? Delta y sobre delta x, nessa ordem e com os mesmos pontos. Veja: em cima, trezentos e oitenta menos quinhentos. Embaixo, zero menos dois. Dá mais sessenta. O tanque encheria? Não. Cada andar subtraiu numa ordem, e o sinal virou.
+
+Como nunca errar isso? Atalho: escreva os dois pontos. Subtraia segundo menos primeiro, em cima e embaixo. E confira o sinal: se a coisa diminui, a taxa é negativa.
+
+E o b? Ponha x igual a zero: sobra f de zero igual a b. O b é o coeficiente linear: o valor no início. No gráfico, assunto do episódio três, é onde a reta corta o eixo vertical. Pense no b como a foto no instante zero.
+
+E se a tabela não começa no zero? Se ela começa aos dez minutos, você precisa voltar o filme até o zero. Outra vela: aos cinco minutos, catorze centímetros, perdendo zero vírgula quatro por minuto. Volte cinco minutos: ela tinha dois centímetros a mais. Dezesseis centímetros. Esse é o b.
+
+Atalho: b é o valor medido, mais o que se perdeu até ali. Taxa vezes o tempo que passou: zero vírgula quatro vezes cinco, dois. Se a coisa crescesse, você tiraria o que ganhou.
+
+E quando o y chega a zero? O x que faz a função dar zero se chama zero, ou raiz da função. A conta: a x mais b igual a zero. Passa o b, divide por a: x igual a menos b sobre a. Em dois x menos seis, x igual a três.
+
+Quando o tanque seca? Quinhentos menos sessenta x igual a zero. X igual a quinhentos sobre sessenta, oito vírgula três horas. No relógio, não é oito e meia: é oito horas e vinte minutos.
+
+Por que vinte? Atalho: o que vem depois da vírgula é fração de hora. Multiplique por sessenta. Um terço de hora vezes sessenta: vinte minutos. A hora tem sessenta minutos, não cem.
+
+E na prova, como o zero aparece? Com nome. A hora em que a vela acaba, o tanque seca, a dívida zera. A pergunta quando acaba? pede o zero da função. Nossa vela de dezesseis centímetros: dezesseis menos zero vírgula quatro t igual a zero. Quarenta minutos. Usamos a lei além dos dados: isso é extrapolar, supor que o ritmo continua.
+
+Sua vez. Uma tabela: x zero, y trinta. X dois, y vinte e seis. X quatro, vinte e dois. X seis, dezoito. Qual é a taxa, qual é o b e quando o y chega a zero? Pause e tente.
+
+Vamos juntos. O y cai quatro, mas o x pula de dois em dois. Menos quatro sobre dois: taxa menos dois. O b: aqui a foto do zero está na tabela. Trinta. Trinta menos dois x igual a zero: x igual a quinze. Quem usa menos quatro como taxa, esquecendo o pulo do x, acha sete e meio.
+
+Vamos guardar em três frases. Um: taxa é delta y sobre delta x, com unidade e com sinal. Dois: b é o valor no instante zero, não o primeiro dado da tabela. Três: quando acaba? pede o zero: a x mais b igual a zero.
+
+Agora, os cinco erros clássicos. Primeiro: a fração invertida, dois sobre menos cento e vinte. Parece certo, porque as duas dividem as diferenças. Mas a taxa é saída sobre entrada: menos sessenta.
+
+Segundo: tomar o primeiro dado da tabela como b. Catorze centímetros, aos cinco minutos. Parece certo, porque é o primeiro número que aparece. Mas o b é a foto do zero: dezesseis.
+
+Terceiro: confundir o zero com o b. Parece certo, porque os dois têm zero na história. Mas o b é o y quando x é zero: quinhentos litros. O zero é o x que zera o y: oito horas e vinte.
+
+Quarto: taxa com mais numa coisa que diminui: quinhentos mais sessenta x. Parece certo, porque o enunciado diz perde sessenta e a gente anota só o número. Mas em duas horas o tanque teria seiscentos e vinte litros. Diminui: menos sessenta x.
+
+Quinto: esquecer o tempo que já passou. Catorze dividido por zero vírgula quatro, trinta e cinco minutos. Parece certo, porque a conta acha quanto falta. Mas, desde que a vela foi acesa, são quarenta.
+
+Uma questão no estilo do ENEM. Esta, eu resolvo com você. Um reservatório tinha dois mil litros quando começou um vazamento constante. Cinco horas depois, restavam mil e seiscentos. Ele terá quatrocentos litros após: A: uma vírgula vinte e cinco hora. B: quatro horas. C: quinze. D: vinte. E: vinte e cinco horas. Pause o vídeo e tente.
+
+Primeiro, os dois pontos. Zero, dois mil. Cinco, mil e seiscentos. Taxa: menos quatrocentos sobre cinco, menos oitenta litros por hora. Dois mil menos oitenta t igual a quatrocentos: oitenta t igual a mil e seiscentos, t igual a vinte. Conferindo com o outro dado: em cinco horas, mil e seiscentos. Bate. Letra D!
+
+E as armadilhas? A E é o tempo para esvaziar, que não foi pedido. A C conta a partir da quinta hora. A A faz proporção entre quatrocentos e mil e seiscentos litros. E a B divide mil e seiscentos por quatrocentos, misturando litros com horas.
+
+Agora, nós fazemos. Um carro comprado por sessenta mil reais passou a valer quarenta e dois mil três anos depois. A depreciação é linear: a mesma quantia por ano. Sete anos após a compra, ele valerá: A: seis mil reais. B: doze mil. C: dezoito mil. D: vinte e quatro mil. E: cerca de vinte e seis mil. Pause o vídeo e tente.
+
+Os dois pontos: zero, sessenta mil; três, quarenta e dois mil. Taxa: menos dezoito mil sobre três, menos seis mil reais por ano. Em sete anos: sessenta mil menos quarenta e dois mil, dezoito mil. Conferindo: em três anos, quarenta e dois mil. Bate. Letra C!
+
+E as outras? A A é a perda por ano, não o valor. A B desconta cinco anos depois dos quarenta e dois mil, quando faltavam quatro. A D desconta duas vezes a perda de três anos, como se sete fossem seis. E a E aplica a queda em porcentagem: o modelo exponencial, a próxima família de funções.
+
+E esta é sua. Uma vela acesa diminui num ritmo constante. Dez minutos depois de acesa, media dezessete centímetros; trinta minutos depois, treze. O tempo total, contado desde que foi acesa, até ela acabar é: A: quarenta e sete vírgula cinco minutos. B: sessenta e cinco. C: oitenta e cinco. D: noventa e cinco. E: cento e cinco. Pause o vídeo e tente.
+
+Conferindo. Os pontos: dez, dezessete; trinta, treze. Menos quatro sobre vinte: menos zero vírgula dois centímetro por minuto. Volte o filme dez minutos: mais dois centímetros. Dezenove. Esse é o b. Dezenove menos zero vírgula dois t igual a zero: t igual a noventa e cinco. Conferindo: aos trinta, dezenove menos seis, treze. Letra D!
+
+E as armadilhas? A C é a do gancho: o que falta a partir dos dez minutos. A B faz o mesmo a partir dos trinta. A E soma a queda inteira, quatro centímetros, e começa em vinte e um. E a A usa a altura certa com a taxa errada: quatro centímetros em dez minutos, em vez de vinte.
+
+Para fechar, as mesmas três frases. Um: taxa é delta y sobre delta x, com unidade e com sinal. Dois: b é o valor no instante zero, não o primeiro dado da tabela. Três: quando acaba? pede o zero: a x mais b igual a zero.
+
+Uma reta que corta o eixo vertical em menos três e passa pelo ponto dois, um: qual é a lei? E como saber, só de olhar, se ela sobe ou desce? Próximo episódio: o gráfico.
+
+Se essa aula te ajudou, deixe o seu like, inscreva-se no Estudativo e ative o sininho, para acompanhar toda a Matemática do ENEM do zero. E me conte nos comentários: o que na sua casa tem uma hora em que acaba? E tem mais: na descrição deste vídeo tem um link para você adquirir os flashcards do ENEM no Anki, o aplicativo de revisão, para revisar tudo isso em poucos minutos por dia. Bons estudos, e até a próxima aula aqui no Estudativo.

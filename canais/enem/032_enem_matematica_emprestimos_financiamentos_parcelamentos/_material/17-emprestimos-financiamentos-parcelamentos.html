@@ -1,0 +1,1059 @@
+<title>Empréstimos e Financiamentos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Matemática</b> › Matemática Financeira › Assunto 5 de 6</p>
+    <h1>Empréstimos, financiamentos e parcelamentos</h1>
+    <p class="deck">Toda compra a prazo é um empréstimo disfarçado, e todo empréstimo é uma troca de dinheiro de hoje por dinheiro de amanhã. Com uma ideia — só se somam valores na mesma data — você descobre os juros escondidos no “sem juros”, monta a tabela do SAC e lê a da Price sem decorar fórmula.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Diagrama de fluxo de caixa de um empréstimo: no mês zero entram R$ 10.000, seta para cima; nos meses 1 a 5 saem cinco parcelas, setas para baixo">
+  <defs>
+    <marker id="h17" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+    <marker id="h17g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c3)"/></marker>
+    <marker id="h17r" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c4)"/></marker>
+  </defs>
+  <line x1="18" y1="112" x2="292" y2="112" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#h17)"/>
+  <line x1="34" y1="108" x2="34" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="80" y1="108" x2="80" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="126" y1="108" x2="126" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="172" y1="108" x2="172" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="218" y1="108" x2="218" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="264" y1="108" x2="264" y2="116" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <line x1="34" y1="106" x2="34" y2="34" style="stroke:var(--c3);stroke-width:3" marker-end="url(#h17g)"/>
+  <text x="42" y="30" class="svg-lbl" style="fill:var(--c3)">recebe R$ 10.000</text>
+  <line x1="80" y1="118" x2="80" y2="160" style="stroke:var(--c4);stroke-width:3" marker-end="url(#h17r)"/>
+  <line x1="126" y1="118" x2="126" y2="160" style="stroke:var(--c4);stroke-width:3" marker-end="url(#h17r)"/>
+  <line x1="172" y1="118" x2="172" y2="160" style="stroke:var(--c4);stroke-width:3" marker-end="url(#h17r)"/>
+  <line x1="218" y1="118" x2="218" y2="160" style="stroke:var(--c4);stroke-width:3" marker-end="url(#h17r)"/>
+  <line x1="264" y1="118" x2="264" y2="160" style="stroke:var(--c4);stroke-width:3" marker-end="url(#h17r)"/>
+  <text x="172" y="184" text-anchor="middle" class="svg-lbl" style="fill:var(--c4)">paga 5 parcelas</text>
+  <text x="27" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <text x="89" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <text x="135" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <text x="181" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <text x="227" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <text x="273" y="104" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">juros pelo tempo em que se deve</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>26 · Fase Ampliação</dd></div>
+      <div><dt>Incidência</dt><dd>Média</dd></div>
+      <div><dt>Tempo previsto</dt><dd>36 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Taxas equivalentes e inflação · Juros compostos e montante</dd></div>
+      <div><dt>Destrava</dt><dd>Comparação de propostas e tomada de decisão</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>As questões deste assunto têm cara de anúncio de loja ou de contrato de banco: “à vista ou em duas vezes”, “10× sem juros”, “financiamento em 12 parcelas fixas”, “pague o mínimo da fatura”. O que a prova quer saber é sempre uma destas coisas:</p>
+<ul>
+  <li><strong>Qual é a taxa de juros embutida</strong> num parcelamento, sobretudo no formato “entrada + uma parcela”.</li>
+  <li><strong>Quanto vale hoje</strong> uma sequência de parcelas futuras, ou quanto se paga para quitar uma dívida antes do prazo.</li>
+  <li><strong>Como se compõe uma parcela</strong> no SAC e na Price: quanto é juro, quanto é amortização, quanto ainda se deve.</li>
+  <li><strong>Quanto cresce uma dívida</strong> de cartão de crédito ou cheque especial deixada para depois.</li>
+</ul>
+<p>Nenhuma fórmula pesada é exigida. Quando a Price aparece, o enunciado fornece o fator ou o valor da parcela; potências como <span class="m">1,1<sup>2</sup></span> saem de cabeça ou vêm dadas.</p>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Duas ideias. Primeiro: <strong>juros incidem sobre o que ainda se deve</strong>, nunca sobre o valor total da compra. Segundo: <strong>valores em datas diferentes não se somam</strong> sem antes serem levados à mesma data, multiplicando ou dividindo pelo fator dos juros.</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> O vocabulário de um financiamento</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Termo</th><th>O que é</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Valor financiado (principal)</strong></td><td>O dinheiro emprestado: o preço à vista menos a entrada.</td></tr>
+    <tr><td><strong>Entrada</strong></td><td>Parte paga no ato. Não é financiada e, por isso, não gera juros.</td></tr>
+    <tr><td><strong>Saldo devedor</strong></td><td>Quanto ainda se deve num dado momento.</td></tr>
+    <tr><td><strong>Juros da parcela</strong></td><td>Taxa do período × saldo devedor do início do período.</td></tr>
+    <tr><td><strong>Amortização</strong></td><td>A parte da parcela que <strong>abate</strong> a dívida: parcela − juros.</td></tr>
+    <tr><td><strong>Parcela (prestação)</strong></td><td>Amortização + juros.</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">As três relações que valem em qualquer sistema</span>
+  <p class="m">juros = <span class="v">i</span> · saldo devedor anterior</p>
+  <p class="m">parcela = amortização + juros</p>
+  <p class="m">novo saldo = saldo anterior − amortização</p>
+  <p>Repare que o saldo cai pela <strong>amortização</strong>, não pela parcela inteira. A parte de juros paga o “aluguel” do dinheiro e não reduz a dívida.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Dinheiro em datas diferentes</h2>
+<p>R$ 1.000,00 hoje não valem o mesmo que R$ 1.000,00 daqui a um mês, porque o dinheiro de hoje pode render juros. Para comparar ou somar valores, leve-os para a <strong>mesma data</strong>:</p>
+<div class="eq">
+  <span class="lbl">Levar ao futuro e trazer ao presente (juros compostos, taxa i por período)</span>
+  <p class="m">valor daqui a <span class="v">n</span> períodos = valor hoje · (1 + <span class="v">i</span>)<sup><span class="v">n</span></sup></p>
+  <p class="m">valor hoje = <span class="frac"><i>valor daqui a <span class="v">n</span> períodos</i><i>(1 + <span class="v">i</span>)<sup><span class="v">n</span></sup></i></span></p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — quanto valem hoje R$ 2.662,00 a receber em 3 meses, a 10% ao mês?</span>
+  <p class="m"><span class="frac"><i>2.662</i><i>1,1<sup>3</sup></i></span> = <span class="frac"><i>2.662</i><i>1,331</i></span> = <strong>R$ 2.000,00</strong></p>
+</div>
+<p>Uma sequência de parcelas vale, hoje, a <strong>soma de cada parcela trazida ao presente</strong> separadamente. Esse é o valor justo para comprar à vista, ou para quitar a dívida antecipadamente.</p>
+<figure class="fig">
+<svg viewBox="0 0 460 196" role="img" aria-label="Linha do tempo com duas parcelas de R$ 1.210 nos meses 1 e 2, à taxa de 10 por cento ao mês. A primeira é trazida a hoje dividindo por 1,1 e vale 1.100; a segunda, dividindo por 1,21, vale 1.000; somadas valem R$ 2.100 hoje">
+  <defs>
+    <marker id="v17" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--ink-2)"/></marker>
+    <marker id="v17b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" style="fill:var(--c1)"/></marker>
+  </defs>
+  <line x1="30" y1="70" x2="440" y2="70" style="stroke:var(--ink-2);stroke-width:1.5" marker-end="url(#v17)"/>
+  <line x1="70" y1="65" x2="70" y2="75" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="70" y="92" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">hoje</text>
+  <line x1="230" y1="65" x2="230" y2="75" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="230" y="92" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 1</text>
+  <line x1="390" y1="65" x2="390" y2="75" style="stroke:var(--ink-2);stroke-width:1.2"/>
+  <text x="390" y="92" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">mês 2</text>
+  <text x="230" y="56" text-anchor="middle" class="svg-num" style="fill:var(--c4)">R$ 1.210</text>
+  <text x="390" y="56" text-anchor="middle" class="svg-num" style="fill:var(--c4)">R$ 1.210</text>
+  <path d="M230 104 Q150 128 82 114" style="fill:none;stroke:var(--c1);stroke-width:1.8" marker-end="url(#v17b)"/>
+  <path d="M390 104 Q230 180 82 136" style="fill:none;stroke:var(--c1);stroke-width:1.8" marker-end="url(#v17b)"/>
+  <text x="170" y="136" text-anchor="middle" class="svg-num" style="fill:var(--c1)">÷ 1,1</text>
+  <text x="300" y="176" text-anchor="middle" class="svg-num" style="fill:var(--c1)">÷ 1,1² = ÷ 1,21</text>
+  <text x="24" y="120" class="svg-num" style="fill:var(--ink)">1.100</text>
+  <text x="24" y="142" class="svg-num" style="fill:var(--ink)">1.000</text>
+  <line x1="22" y1="150" x2="72" y2="150" style="stroke:var(--ink);stroke-width:1"/>
+  <text x="24" y="166" text-anchor=";font-weight:700" class="svg-num" style="fill:var(--c3)">2.100</text>
+  <text x="230" y="30" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">taxa de 10% ao mês</text>
+</svg>
+<figcaption><b>Cada parcela volta ao presente pelo seu próprio prazo.</b> A de 1 mês divide por 1,1; a de 2 meses, por 1,21. Somar as parcelas sem descontar (R$ 2.420,00) ou descontar todas pelo mesmo prazo são os dois erros que a prova explora.</figcaption>
+</figure>
+</section>
+
+<section id="s4">
+<h2><i>04</i> Entrada mais uma parcela: a taxa embutida</h2>
+<p>É o formato mais frequente nas provas: “à vista por X ou em duas vezes iguais, a primeira no ato e a segunda em 30 dias”. O raciocínio cabe em três linhas.</p>
+<div class="box def">
+  <span class="tag">O método</span>
+  <ol style="margin:6px 0 0">
+    <li>A entrada é paga hoje, então <strong>não é financiada</strong>. O valor financiado é <strong>preço à vista − entrada</strong>.</li>
+    <li>Daqui a 30 dias, paga-se a segunda parcela no lugar desse valor financiado.</li>
+    <li>Taxa = <span class="m"><span class="frac"><i>parcela − valor financiado</i><i>valor financiado</i></span></span>.</li>
+  </ol>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — geladeira: R$ 1.900,00 à vista ou 2 × R$ 1.000,00 (ato + 30 dias)</span>
+  <p class="m">financiado = 1.900 − 1.000 = 900 &nbsp;→&nbsp; paga 1.000 depois de um mês</p>
+  <p class="m">juros = 100 &nbsp;→&nbsp; taxa = <span class="frac"><i>100</i><i>900</i></span> ≈ <strong>11,1% ao mês</strong></p>
+</div>
+<div class="box warn">
+  <span class="tag">Os denominadores errados</span>
+  <p>Os R$ 100,00 de diferença parecem pouco perto de R$ 1.900,00 (5,3%) ou de R$ 2.000,00 (5%). Mas eles são o preço de adiar só <strong>R$ 900,00</strong> — e por um mês. Dividir pelo preço total esconde uma taxa mensal alta.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O “sem juros” e o desconto à vista</h2>
+<p>Se uma loja vende por R$ 1.000,00 “em 10 × sem juros” e por R$ 900,00 à vista, o preço real do produto é R$ 900,00. Quem parcela paga R$ 100,00 a mais por adiar o pagamento: <strong>há juros</strong>, apenas embutidos no preço “cheio”.</p>
+<div class="box def">
+  <span class="tag">Regra prática</span>
+  <p>Sempre que existir um <strong>desconto para pagamento à vista</strong>, o parcelado tem juros, não importa o que diga o anúncio. O “sem juros” só é verdadeiro quando o preço à vista e o total parcelado são iguais.</p>
+</div>
+<p>O tamanho dessa taxa depende de quantas parcelas há e de quando vencem. Com uma única parcela futura, a conta é a da seção 04. Com várias, o ENEM fornece um fator ou pede apenas a comparação qualitativa — e a decisão entre pagar à vista ou parcelar é o assunto <em>Comparação de propostas e tomada de decisão</em>.</p>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Sistema de Amortização Constante (SAC)</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>No SAC, a dívida é dividida em <strong>amortizações iguais</strong>: amortização = <span class="m"><span class="frac"><i>valor financiado</i><i>número de parcelas</i></span></span>. Os juros de cada mês incidem sobre o saldo, que cai sempre o mesmo valor. Por isso <strong>os juros e as parcelas diminuem</strong> a cada mês, em progressão aritmética.</p>
+</div>
+<div class="eq">
+  <span class="lbl">Exemplo — R$ 10.000,00 em 5 parcelas mensais, a 4% ao mês, pelo SAC</span>
+  <p class="m">amortização = 10.000 ÷ 5 = 2.000 por mês</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Mês</th><th>Saldo no início</th><th>Juros (4%)</th><th>Amortização</th><th>Parcela</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>10.000,00</td><td>400,00</td><td>2.000,00</td><td><strong>2.400,00</strong></td></tr>
+    <tr><td>2</td><td>8.000,00</td><td>320,00</td><td>2.000,00</td><td><strong>2.320,00</strong></td></tr>
+    <tr><td>3</td><td>6.000,00</td><td>240,00</td><td>2.000,00</td><td><strong>2.240,00</strong></td></tr>
+    <tr><td>4</td><td>4.000,00</td><td>160,00</td><td>2.000,00</td><td><strong>2.160,00</strong></td></tr>
+    <tr><td>5</td><td>2.000,00</td><td>80,00</td><td>2.000,00</td><td><strong>2.080,00</strong></td></tr>
+    <tr><td colspan="2"><strong>Total</strong></td><td><strong>1.200,00</strong></td><td>10.000,00</td><td>11.200,00</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Atalhos do SAC</span>
+  <p>Os juros caem sempre o mesmo valor: <span class="m"><span class="v">i</span> · amortização = 4% · 2.000 = 80</span> por mês. Logo, a parcela também cai 80 por mês. Para qualquer parcela <span class="m"><span class="v">k</span></span>, o saldo no início é <span class="m">valor financiado − (<span class="v">k</span> − 1) · amortização</span>. O total de juros é a soma de uma PA: (primeiro + último) × quantidade ÷ 2 = (400 + 80) · 5 ÷ 2 = 1.200.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Sistema Price (parcelas fixas)</h2>
+<div class="box def">
+  <span class="tag">Definição</span>
+  <p>No sistema Price (ou francês), <strong>todas as parcelas são iguais</strong>. Como os juros caem junto com o saldo, a parte de amortização <strong>cresce</strong> a cada mês. É o sistema dos crediários e da maioria dos empréstimos pessoais.</p>
+</div>
+<p>O valor da parcela vem de uma fórmula que o ENEM não cobra de memória: a prova dá o <strong>fator</strong> (ou a própria parcela) e pede o resto.</p>
+<div class="eq">
+  <span class="lbl">Parcela na Price, com o fator dado no enunciado</span>
+  <p class="m">parcela = valor financiado × fator</p>
+  <p>Para R$ 10.000,00 em 5 parcelas a 4% ao mês, com fator 0,224627: &nbsp;<span class="m">parcela ≈ <strong>R$ 2.246,27</strong></span></p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Mês</th><th>Saldo no início</th><th>Juros (4%)</th><th>Amortização</th><th>Parcela</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>10.000,00</td><td>400,00</td><td>1.846,27</td><td>2.246,27</td></tr>
+    <tr><td>2</td><td>8.153,73</td><td>326,15</td><td>1.920,12</td><td>2.246,27</td></tr>
+    <tr><td>3</td><td>6.233,61</td><td>249,34</td><td>1.996,93</td><td>2.246,27</td></tr>
+    <tr><td>4</td><td>4.236,68</td><td>169,47</td><td>2.076,80</td><td>2.246,27</td></tr>
+    <tr><td>5</td><td>2.159,88</td><td>86,39</td><td>2.159,88</td><td>2.246,27</td></tr>
+    <tr><td colspan="2"><strong>Total</strong></td><td><strong>1.231,35</strong></td><td>10.000,00</td><td>11.231,35</td></tr>
+  </tbody>
+</table>
+</div>
+<p style="font-size:.9rem;color:var(--ink-3)">Valores arredondados ao centavo; o último mês absorve a diferença de arredondamento.</p>
+<div class="box warn">
+  <span class="tag">A primeira linha é sempre igual nos dois sistemas</span>
+  <p>No primeiro mês, os juros são <span class="m"><span class="v">i</span> · valor financiado</span> em qualquer sistema (aqui, 400). O que muda é a amortização: no SAC é fixa; na Price é <strong>parcela − juros</strong>. Questões que pedem “quanto da primeira parcela abate a dívida” se resolvem só com essa conta.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> SAC e Price lado a lado</h2>
+<figure class="fig">
+<svg viewBox="0 0 460 244" role="img" aria-label="Barras empilhadas das cinco parcelas de um financiamento de R$ 10.000 a 4 por cento ao mês. No SAC a amortização é sempre 2.000 e os juros caem de 400 a 80, então as parcelas descem de 2.400 a 2.080. Na Price a parcela é fixa em 2.246,27: a amortização cresce e os juros diminuem">
+  <line x1="40" y1="196" x2="446" y2="196" style="stroke:var(--ink-2);stroke-width:1.5"/>
+  <text x="34" y="200" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">0</text>
+  <text x="34" y="141.7" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">1.000</text>
+  <line x1="40" y1="137.7" x2="446" y2="137.7" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="34" y="83.3" text-anchor="end" class="svg-lbl" style="fill:var(--ink-3)">2.000</text>
+  <line x1="40" y1="79.3" x2="446" y2="79.3" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 4"/>
+  <text x="146" y="22" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">SAC</text>
+  <rect x="54" y="79.3" width="28" height="116.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="54" y="56" width="28" height="23.3" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="68" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <rect x="92" y="79.3" width="28" height="116.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="92" y="60.7" width="28" height="18.7" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="106" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <rect x="130" y="79.3" width="28" height="116.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="130" y="65.3" width="28" height="14" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="144" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <rect x="168" y="79.3" width="28" height="116.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="168" y="70" width="28" height="9.3" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="182" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <rect x="206" y="79.3" width="28" height="116.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="206" y="74.7" width="28" height="4.7" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="220" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="352" y="22" text-anchor="middle" class="svg-ttl" style="fill:var(--ink)">Price</text>
+  <rect x="260" y="88.3" width="28" height="107.7" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="260" y="65" width="28" height="23.3" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="274" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">1</text>
+  <rect x="298" y="84" width="28" height="112" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="298" y="65" width="28" height="19" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="312" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">2</text>
+  <rect x="336" y="79.5" width="28" height="116.5" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="336" y="65" width="28" height="14.5" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="350" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">3</text>
+  <rect x="374" y="74.9" width="28" height="121.1" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="374" y="65" width="28" height="9.9" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="388" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">4</text>
+  <rect x="412" y="70" width="28" height="126" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <rect x="412" y="65" width="28" height="5" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="426" y="211" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3)">5</text>
+  <text x="146" y="44" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">2.400 → 2.080</text>
+  <text x="352" y="44" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">2.246,27 fixa</text>
+  <rect x="98" y="222" width="12" height="12" rx="0" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="116" y="232" class="svg-lbl" style="fill:var(--ink-2)">amortização</text>
+  <rect x="254" y="222" width="12" height="12" rx="0" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="272" y="232" class="svg-lbl" style="fill:var(--ink-2)">juros</text>
+</svg>
+<figcaption><b>Mesma dívida, mesma taxa, perfis opostos.</b> No SAC a parcela começa mais alta e cai; na Price ela é constante, começa mais baixa e termina mais alta. Em azul, o que abate a dívida; em laranja, os juros.</figcaption>
+</figure>
+<div class="tw">
+<table>
+  <thead><tr><th></th><th>SAC</th><th>Price</th></tr></thead>
+  <tbody>
+    <tr><td>Amortização</td><td><strong>Constante</strong></td><td>Crescente</td></tr>
+    <tr><td>Juros por parcela</td><td>Decrescentes</td><td>Decrescentes</td></tr>
+    <tr><td>Parcela</td><td>Decrescente (cai sempre o mesmo valor)</td><td><strong>Constante</strong></td></tr>
+    <tr><td>Primeira parcela</td><td>Maior que a da Price</td><td>Menor que a do SAC</td></tr>
+    <tr><td>Total de juros</td><td><strong>Menor</strong> (R$ 1.200,00 no exemplo)</td><td>Maior (R$ 1.231,35 no exemplo)</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Por que o SAC paga menos juros</span>
+  <p>No SAC a dívida é abatida mais depressa no começo, então o saldo sobre o qual incidem os juros fica menor mais cedo. Não é que o SAC tenha taxa menor: a taxa é a mesma; o que muda é <strong>quanto se deve, por quanto tempo</strong>. O SAC é comum em financiamento imobiliário; a Price, em crediário e crédito pessoal, pela previsibilidade da parcela fixa.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Cartão de crédito, rotativo e cheque especial</h2>
+<p>Quem paga só parte da fatura do cartão financia o restante no <strong>rotativo</strong>. Sobre o saldo não pago incidem juros compostos, mês a mês, além de novas compras.</p>
+<div class="eq">
+  <span class="lbl">Exemplo — fatura de R$ 2.000,00, pagamento de R$ 500,00, juros de 12% ao mês</span>
+  <p class="m">saldo financiado = 1.500 &nbsp;→&nbsp; próxima fatura: 1.500 · 1,12 = <strong>R$ 1.680,00</strong> (sem novas compras)</p>
+  <p class="m">sem pagar nada por 3 meses: 1.500 · 1,12<sup>3</sup> ≈ 1.500 · 1,405 ≈ <strong>R$ 2.107,50</strong></p>
+</div>
+<div class="box warn">
+  <span class="tag">Juros sobre o saldo, não sobre a fatura</span>
+  <p>Os juros incidem sobre o que <strong>não foi pago</strong> (R$ 1.500,00), não sobre a fatura original. E, por serem compostos, três meses a 12% não somam 36%: somam cerca de 40,5%. O cheque especial funciona do mesmo modo, sobre o saldo negativo da conta.</p>
+</div>
+<p>Esse é o caso extremo da seção 03 do assunto <em>Taxas equivalentes e inflação</em>: uma taxa mensal de dois dígitos corresponde a uma taxa anual de três.</p>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia de prova</h2>
+<div class="box tip">
+  <span class="tag">1 · Desenhe a linha do tempo</span>
+  <p>Um traço horizontal, as datas marcadas, setas para o que se recebe e para o que se paga. Dez segundos de desenho mostram o que é entrada (data zero, sem juros), o que é parcela futura e qual valor está sendo financiado.</p>
+</div>
+<div class="box tip">
+  <span class="tag">2 · Juros só sobre o saldo devedor</span>
+  <p>Antes de calcular juros, pergunte: <strong>quanto se deve neste momento?</strong> Não é o preço total, não é a fatura inteira, não é o valor inicial do financiamento depois de algumas parcelas pagas.</p>
+</div>
+<div class="box tip">
+  <span class="tag">3 · No SAC monte a primeira linha; na Price use o fator</span>
+  <p>No SAC, amortização = dívida ÷ parcelas e juros = taxa × saldo; o resto sai por padrão. Na Price, a parcela vem do fator dado; juros do mês = taxa × saldo e amortização = parcela − juros. Não tente lembrar a fórmula da Price: ela não é cobrada.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Calcular a taxa sobre o preço total</span> &nbsp;→&nbsp; <span class="c">divida pelo valor financiado</span></span><small>A entrada não é financiada; os juros remuneram só o que ficou para depois.</small></li>
+  <li><span><span class="x">Acreditar no “sem juros” com desconto à vista</span> &nbsp;→&nbsp; <span class="c">o preço real é o à vista</span></span><small>A diferença entre o total parcelado e o à vista são juros embutidos.</small></li>
+  <li><span><span class="x">Somar parcelas de datas diferentes</span> &nbsp;→&nbsp; <span class="c">traga cada uma para a mesma data</span></span><small>Duas parcelas de 1.210 a 10% valem 2.100 hoje, não 2.420.</small></li>
+  <li><span><span class="x">Descontar todas as parcelas pelo mesmo prazo</span> &nbsp;→&nbsp; <span class="c">cada uma pelo seu</span></span><small>A de 1 mês divide por 1,1; a de 2 meses, por 1,21.</small></li>
+  <li><span><span class="x">Abater a parcela inteira do saldo</span> &nbsp;→&nbsp; <span class="c">só a amortização abate</span></span><small>Os juros não reduzem a dívida.</small></li>
+  <li><span><span class="x">Juros do SAC sobre o valor inicial em todo mês</span> &nbsp;→&nbsp; <span class="c">sobre o saldo, que cai</span></span><small>Os juros diminuem em PA; somá-los como constantes superestima o custo.</small></li>
+  <li><span><span class="x">Na Price, amortização constante</span> &nbsp;→&nbsp; <span class="c">constante é a parcela</span></span><small>Na Price a amortização cresce; no SAC é ela que é constante.</small></li>
+  <li><span><span class="x">Achar que SAC e Price custam os mesmos juros</span> &nbsp;→&nbsp; <span class="c">SAC paga menos</span></span><small>Mesma taxa, mas o saldo do SAC cai mais depressa.</small></li>
+  <li><span><span class="x">Juros simples no rotativo do cartão</span> &nbsp;→&nbsp; <span class="c">compostos, sobre o saldo não pago</span></span><small>Dois meses a 10% multiplicam por 1,21, não por 1,20.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove questões no formato da prova. Antes de calcular, desenhe a linha do tempo e identifique quanto se deve em cada data.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Entrada mais uma parcela</span>
+    <p class="enun">Uma loja anuncia um aparelho por “2 × R$ 500,00 sem juros, a primeira no ato da compra e a segunda 30 dias depois”. Para pagamento à vista, o mesmo aparelho sai por R$ 900,00. A taxa mensal de juros efetivamente cobrada de quem escolhe o parcelamento é de</p>
+    <ol class="alt"><li>0%, como afirma o anúncio.</li><li>10,0%.</li><li>11,1%.</li><li>20,0%.</li><li>25,0%.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A primeira parcela é paga no ato: funciona como entrada e não é financiada.</p>
+      <p class="m">financiado = 900 − 500 = 400 &nbsp;→&nbsp; paga 500 depois de 30 dias</p>
+      <p class="m">taxa = <span class="frac"><i>500 − 400</i><i>400</i></span> = <span class="frac"><i>100</i><i>400</i></span> = <strong>25% ao mês</strong></p>
+      <p><strong>Os distratores:</strong> A acredita no anúncio, mas existe desconto à vista, logo há juros. B divide os R$ 100,00 pelo total a prazo (1.000); C, pelo preço à vista (900); D, pela parcela (500). Os três usam um denominador maior que o valor realmente financiado.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Primeira parcela no SAC</span>
+    <p class="enun">Um empresário financiou R$ 60.000,00 em 10 parcelas mensais pelo Sistema de Amortização Constante (SAC), com juros de 1% ao mês sobre o saldo devedor. O valor da primeira parcela é</p>
+    <ol class="alt"><li>R$ 600,00</li><li>R$ 6.000,00</li><li>R$ 6.060,00</li><li>R$ 6.600,00</li><li>R$ 12.000,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">amortização = 60.000 ÷ 10 = 6.000</p>
+      <p class="m">juros do 1º mês = 1% · 60.000 = 600</p>
+      <p class="m">parcela = 6.000 + 600 = <strong>R$ 6.600,00</strong></p>
+      <p><strong>Os distratores:</strong> A são só os juros e B só a amortização: cada um é metade da parcela. C calcula os juros sobre a amortização (1% de 6.000), e não sobre o saldo devedor. E cobra na primeira parcela os juros de 1% sobre 60.000 pelos 10 meses, como se fossem juros simples sobre o total.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · Total de juros no SAC</span>
+    <p class="enun">No financiamento da questão anterior (R$ 60.000,00 em 10 parcelas pelo SAC, a 1% ao mês), o total de juros pagos ao final do contrato é</p>
+    <ol class="alt"><li>R$ 3.000,00</li><li>R$ 3.300,00</li><li>R$ 6.000,00</li><li>R$ 6.600,00</li><li>R$ 63.300,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O saldo cai 6.000 por mês, então os juros caem 60 por mês: 600, 540, 480, …, 60. É uma PA de 10 termos:</p>
+      <p class="m">total = <span class="frac"><i>(600 + 60) · 10</i><i>2</i></span> = <strong>R$ 3.300,00</strong></p>
+      <p><strong>Os distratores:</strong> C supõe juros de 600 em todos os meses, como se o saldo não diminuísse. A faz a média entre 600 e zero, esquecendo que o último mês ainda tem juros de 60. D é o valor da primeira parcela, confundido com juros. E é o total pago (principal mais juros).</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Parcela na Price com fator dado</span>
+    <p class="enun">Uma pessoa financiou R$ 20.000,00 em 12 parcelas mensais iguais, pelo sistema Price, com juros de 2% ao mês. Para essa taxa e esse prazo, o valor da parcela é obtido multiplicando-se o valor financiado pelo fator 0,0946. O valor de cada parcela é</p>
+    <ol class="alt"><li>R$ 1.666,67</li><li>R$ 1.700,00</li><li>R$ 1.892,00</li><li>R$ 2.066,67</li><li>R$ 22.704,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">parcela = 20.000 · 0,0946 = <strong>R$ 1.892,00</strong></p>
+      <p>Conferência de plausibilidade: sem juros a parcela seria 20.000 ÷ 12 ≈ 1.666,67; com juros, tem de ser um pouco maior.</p>
+      <p><strong>Os distratores:</strong> A ignora os juros. B aplica 2% uma única vez sobre a parcela sem juros. D aplica juros simples de 24% sobre o total e divide por 12. E é o total pago nas 12 parcelas (12 · 1.892).</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · SAC e Price</span>
+    <p class="enun">Um banco oferece o mesmo valor de financiamento, com a mesma taxa de juros e o mesmo número de parcelas, pelo SAC ou pelo sistema Price. A respeito dessas duas opções, é correto afirmar que</p>
+    <ol class="alt"><li>no SAC, as parcelas diminuem ao longo do tempo, porque a amortização é constante e os juros incidem sobre um saldo cada vez menor.</li><li>na Price, a amortização é a mesma em todas as parcelas, e por isso as parcelas são iguais.</li><li>no SAC, os juros pagos em cada parcela são iguais, pois a taxa é fixa.</li><li>na Price, a primeira parcela é maior que a primeira parcela do SAC.</li><li>os dois sistemas resultam no mesmo total de juros, pois a taxa e o prazo são iguais.</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A alternativa A descreve exatamente o SAC: amortização fixa, saldo caindo sempre o mesmo valor, juros e parcelas decrescentes.</p>
+      <p><strong>Os distratores:</strong> B troca os sistemas — na Price a <em>parcela</em> é fixa e a amortização cresce. C confunde taxa fixa com juros fixos: os juros dependem do saldo. D inverte a comparação: a primeira parcela do SAC é a maior de todas e supera a da Price (2.400 contra 2.246,27 no exemplo da seção 07). E ignora que, no SAC, a dívida cai mais depressa e gera menos juros no total.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Valor presente de parcelas</span>
+    <p class="enun">Uma compra pode ser paga em duas parcelas de R$ 1.210,00, com vencimentos em 30 e em 60 dias, sem entrada. Se a taxa de juros é de 10% ao mês, no regime composto, o valor à vista equivalente a esse parcelamento é</p>
+    <ol class="alt"><li>R$ 1.936,00</li><li>R$ 2.000,00</li><li>R$ 2.100,00</li><li>R$ 2.178,00</li><li>R$ 2.420,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Cada parcela é trazida a hoje pelo seu próprio prazo:</p>
+      <p class="m"><span class="frac"><i>1.210</i><i>1,1</i></span> + <span class="frac"><i>1.210</i><i>1,21</i></span> = 1.100 + 1.000 = <strong>R$ 2.100,00</strong></p>
+      <p><strong>Os distratores:</strong> E soma as parcelas sem considerar o tempo. B desconta as duas por dois meses (2.420 ÷ 1,21). D tira 10% do total uma só vez; A tira 20% do total, um desconto simples de 10% por mês. Os dois últimos tratam a taxa como desconto sobre o valor futuro, e não como divisão pelo fator.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Rotativo do cartão</span>
+    <p class="enun">A fatura de um cartão de crédito era de R$ 1.000,00, e o titular pagou apenas R$ 200,00. Sobre o saldo restante incidem juros compostos de 10% ao mês. Se o titular não fizer nenhum outro pagamento nem novas compras, sua dívida dois meses depois será de</p>
+    <ol class="alt"><li>R$ 880,00</li><li>R$ 960,00</li><li>R$ 968,00</li><li>R$ 1.168,00</li><li>R$ 1.210,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O saldo financiado é <span class="m">1.000 − 200 = 800</span>. Dois meses de juros compostos:</p>
+      <p class="m">800 · 1,1<sup>2</sup> = 800 · 1,21 = <strong>R$ 968,00</strong></p>
+      <p><strong>Os distratores:</strong> A aplica só um mês de juros. B usa juros simples (20% em dois meses). D soma de volta os R$ 200,00 já pagos. E aplica os juros sobre a fatura inteira, e não sobre o saldo que ficou devendo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Quitação antecipada</span>
+    <p class="enun">Falta pagar uma única parcela de R$ 2.420,00 de um financiamento, com vencimento daqui a 2 meses. O contrato prevê que, na quitação antecipada, a parcela seja trazida ao presente pela mesma taxa do financiamento, 10% ao mês, no regime composto. Para quitar a dívida hoje, o cliente deve pagar</p>
+    <ol class="alt"><li>R$ 2.000,00</li><li>R$ 2.178,00</li><li>R$ 2.200,00</li><li>R$ 2.420,00</li><li>R$ 2.928,20</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p class="m">valor hoje = <span class="frac"><i>2.420</i><i>1,1<sup>2</sup></i></span> = <span class="frac"><i>2.420</i><i>1,21</i></span> = <strong>R$ 2.000,00</strong></p>
+      <p>Conferência: R$ 2.000,00 aplicados a 10% viram 2.200 em um mês e 2.420 em dois.</p>
+      <p><strong>Os distratores:</strong> C desconta só um mês. B tira 10% do valor uma vez, como desconto simples. D ignora o desconto a que o contrato dá direito. E multiplica pelo fator em vez de dividir, levando o valor ainda mais para o futuro.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Saldo devedor na Price</span>
+    <p class="enun">No financiamento da questão 4 (R$ 20.000,00 em 12 parcelas de R$ 1.892,00, a 2% ao mês, pelo sistema Price), o saldo devedor imediatamente após o pagamento da primeira parcela é</p>
+    <ol class="alt"><li>R$ 1.492,00</li><li>R$ 18.108,00</li><li>R$ 18.333,33</li><li>R$ 18.508,00</li><li>R$ 20.400,00</li></ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>Separe a primeira parcela em juros e amortização:</p>
+      <p class="m">juros = 2% · 20.000 = 400 &nbsp;→&nbsp; amortização = 1.892 − 400 = 1.492</p>
+      <p class="m">novo saldo = 20.000 − 1.492 = <strong>R$ 18.508,00</strong></p>
+      <p><strong>Os distratores:</strong> B abate a parcela inteira, esquecendo que a parte de juros não reduz a dívida. C usa a amortização do SAC (20.000 ÷ 12). A é a amortização, não o saldo. E soma os juros à dívida sem descontar o pagamento.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Defino valor financiado, saldo devedor, juros, amortização e parcela</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo juros sempre sobre o saldo devedor do início do período</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Levo um valor ao futuro e trago ao presente com o fator (1 + i)ⁿ</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o valor hoje de uma sequência de parcelas, cada uma pelo seu prazo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Encontro a taxa embutida em “entrada + uma parcela” usando o valor financiado</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço juros embutidos no “sem juros” quando há desconto à vista</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto a tabela do SAC e calculo qualquer parcela sem montar todas</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Somo os juros do SAC como uma progressão aritmética</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a parcela da Price com o fator dado e separo juros e amortização</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Comparo SAC e Price: amortização, parcela, primeira parcela e total de juros</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo a dívida do rotativo do cartão com juros compostos sobre o saldo não pago</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Calculo o valor de quitação antecipada de uma parcela</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sigo para <em>Comparação de propostas e tomada de decisão</em> sabendo levar valores à mesma data</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Resolva 20 questões e acerte pelo menos 14 (70%). Priorize as de <strong>entrada + parcela</strong> e as de <strong>tabela do SAC</strong>, as mais frequentes. Depois atualize a linha na aba <strong>Cronograma</strong>.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>37 cartões</strong> deste assunto no arquivo <code>ENEM-Matematica-17-emprestimos-financiamentos-parcelamentos.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Matemática::Matemática Financeira</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-mat-17";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

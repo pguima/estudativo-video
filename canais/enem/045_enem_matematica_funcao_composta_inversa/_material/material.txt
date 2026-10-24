@@ -1,0 +1,246 @@
+Composta e Inversa
+Matemática › Álgebra e Funções › Assunto 12 de 18
+Função composta e função inversa
+Compor é encadear: a saída de uma função vira a entrada da outra, como o tempo que define a produção, que define o custo. Inverter é desfazer: descobrir a entrada a partir da saída, como achar a distância a partir do preço da corrida. Este assunto ensina as duas operações e o gráfico que as liga.
+Semana
+8 · Fase Fundamentos
+Incidência
+Alta
+Tempo previsto
+45 min de teoria
+Pré-requisito
+Conceito de função · Função afim · Função modular e funções por partes
+Destrava
+Exponencial e logaritmo como par inverso, conversões de unidades, modelos encadeados em Física e Química
+Neste assunto
+01 O que o ENEM cobra aqui
+O ENEM quase nunca usa o símbolo f ∘ g. Ele descreve duas relações em cadeia ou pede para voltar de um resultado para a causa. As formas mais comuns:
+Encadear modelos: o custo depende da quantidade produzida, que depende do tempo; a temperatura depende da altitude, que depende do tempo de subida. A pergunta é a relação direta entre a primeira e a última grandeza.
+Inverter uma fórmula: dado o preço, achar a quantidade; dada a temperatura em Fahrenheit, achar em Celsius.
+Ler tabelas encadeadas: uma tabela leva de A para B, outra de B para C; ou um código que embaralha e precisa ser decodificado.
+Reconhecer o gráfico da inversa: o simétrico em relação à reta y = x, com o par exponencial e logaritmo como exemplo clássico.
+O que rende mais aqui
+Duas habilidades. Primeiro, a ordem: em f(g(x)) quem age primeiro é g, a de dentro. Segundo, inverter é trocar o papel de entrada e saída: isolar a variável de entrada na fórmula. Quase todos os distratores do tema trocam a ordem ou confundem inversa com “um sobre”.
+02 Composição: máquinas em sequência
+Definição
+A composta de f com g, escrita f ∘ g (lê-se “f bola g”), é a função que aplica primeiro g e depois f ao resultado:
+(f ∘ g)(x) = f(g(x))
+Só faz sentido quando os valores de g(x) estão no domínio de f.
+Pense em duas máquinas em fila, como no desenho do cabeçalho: x entra em g; o que sai, g(x), entra em f. A leitura de f(g(x)) é de dentro para fora, ao contrário da ordem de escrita.
+Os valores passando pelas duas máquinas. Com g(x) = 2x + 1 e f(x) = x² − 1: o 2 vira g(2) = 5, que vira f(5) = 24. Assim, f(g(2)) = 24. A composta liga diretamente a primeira coluna à última.
+03 Calculando f(g(x)) e g(f(x))
+Para obter a lei da composta, substitua cada x da função de fora pela expressão inteira da função de dentro, entre parênteses.
+Exemplo · as duas ordens de composição
+Com f(x) = x² − 1 e g(x) = 2x + 1:
+f(g(x)) = (2x + 1)² − 1 = 4x² + 4x + 1 − 1 = 4x² + 4x
+g(f(x)) = 2(x² − 1) + 1 = 2x² − 1
+As duas compostas são diferentes. Com x = 2: f(g(2)) = 24, mas g(f(2)) = 7.
+A ordem importa
+Em geral f ∘ g ≠ g ∘ f. Calçar a meia e depois o sapato não é o mesmo que calçar o sapato e depois a meia. Também não confunda composição com produto: f(g(x)) não é f(x) · g(x). Com os exemplos acima, f(2) · g(2) = 3 · 5 = 15, nada a ver com 24.
+Número antes de lei
+Se a pergunta é só f(g(3)), não monte a lei da composta: calcule g(3) primeiro e jogue o número em f. É mais rápido e evita erro de álgebra. A lei só compensa quando a pergunta pede uma expressão ou muitos valores.
+04 Composição em contexto: grandezas encadeadas
+No ENEM a composição aparece como duas fórmulas ligadas por uma grandeza intermediária. A estratégia é sempre a mesma: substitua a intermediária.
+Exemplo · balão meteorológico (dados fictícios)
+A altitude do balão, em km, t minutos após o lançamento é h(t) = 0,2t. A temperatura do ar, em °C, a h km de altitude é T(h) = 25 − 6h. A temperatura em função do tempo:
+T(h(t)) = 25 − 6 · 0,2t = 25 − 1,2t
+Após 10 minutos, T = 25 − 12 = 13 °C. A intermediária (altitude) sumiu da fórmula final.
+ | Cadeia | Função de dentro | Função de fora
+ | tempo → peças → custo | peças em função do tempo | custo em função das peças
+ | tempo → altitude → temperatura | altitude em função do tempo | temperatura em função da altitude
+ | dólar → real → imposto | conversão de moeda | imposto sobre o valor em reais
+Dica de leitura: a função de dentro é a que recebe a grandeza que você tem; a de fora é a que entrega a grandeza que você quer.
+05 Descobrindo uma função a partir da composta
+Às vezes a prova dá a composta e uma das funções e pede a outra.
+Caso 1 · conheço a de fora
+f(x) = 3x − 2 e f(g(x)) = 6x + 7. Aplique f em g(x) como se fosse uma incógnita:
+3 · g(x) − 2 = 6x + 7 → g(x) = (6x + 9/3) = 2x + 3
+Caso 2 · conheço a de dentro
+g(x) = x + 1 e f(g(x)) = x² + 2x. Chame u = x + 1, então x = u − 1:
+f(u) = (u − 1)² + 2(u − 1) = u² − 1 → f(x) = x² − 1
+Sempre confira
+Monte de novo a composta com a função encontrada. No caso 1: f(2x + 3) = 6x + 9 − 2 = 6x + 7. Confere.
+06 Função inversa: desfazer o caminho
+Definição
+A inversa de f, escrita f⁻¹, leva cada saída de volta à sua entrada: se f(a) = b, então f⁻¹(b) = a. Compondo as duas, volta-se ao começo:
+f⁻¹(f(x)) = x e f(f⁻¹(x)) = x
+Para que a volta seja possível, cada saída precisa vir de uma única entrada, e todas as saídas pedidas precisam existir. Isto é, f precisa ser bijetora:
+ | Condição | Significado | Contraexemplo
+ | Injetora | entradas diferentes dão saídas diferentes | x² em ℝ: (−3)² = 3² = 9; de 9 não se sabe se veio 3 ou −3
+ | Sobrejetora | toda saída do contradomínio é atingida | 2ˣ de ℝ em ℝ: nenhum x dá −1
+f⁻¹ não é 1/f
+O “⁻¹” aqui não é expoente. Se f(x) = 2x, a inversa é f⁻¹(x) = (x/2) (desfaz a duplicação), e não (1/2x). Por coincidência, nesse caso parecem próximas; em f(x) = x + 3 a diferença é gritante: f⁻¹(x) = x − 3, enquanto (1/x + 3) é outra coisa.
+Restringir o domínio salva a inversa
+f(x) = x² não tem inversa em ℝ, mas tem se o domínio for [0, +∞[: aí f⁻¹(x) = √(x). É por isso que a raiz quadrada devolve só o valor não negativo.
+07 Como calcular a inversa e onde fica seu gráfico
+Receita em três passos
+1) Escreva y = f(x). 2) Isole x. 3) Troque os nomes: x vira y e y vira x.
+y = 2x + 1 → x = (y − 1/2) → f⁻¹(x) = (x − 1/2)
+Exemplo com fração
+Inverter f(x) = (2x + 1/x − 3), com x ≠ 3:
+y(x − 3) = 2x + 1 → xy − 3y = 2x + 1 → x(y − 2) = 3y + 1 → x = (3y + 1/y − 2)
+Logo f⁻¹(x) = (3x + 1/x − 2), com x ≠ 2. O truque é juntar todos os termos com x de um lado e pôr x em evidência.
+Gráfico da inversa = espelho na reta y = x. Como f(1) = 3, a inversa tem f⁻¹(3) = 1: o ponto (1, 3) vira (3, 1). Trocar entrada e saída é trocar as coordenadas, e isso reflete o gráfico na diagonal y = x.
+Inversa de função afim
+A inversa de y = ax + b (com a ≠ 0) é y = (x − b/a): desfaz-se na ordem contrária. Primeiro tira o b que foi somado por último, depois divide pelo a. Se f cresce, f⁻¹ também cresce.
+08 Inversas em contexto: conversões e o par exponencial–logaritmo
+Toda conversão de unidades vem com sua inversa. A fórmula que leva de Celsius para Fahrenheit, F = 1,8C + 32, invertida dá C = (F − 32/1,8). Em 98,6 °F: C = 66,6 ÷ 1,8 = 37 °C.
+Exemplo · corrida de táxi
+Preço em função da distância: P(x) = 4,5 + 2,5x. Distância em função do preço: x = (P − 4,5/2,5). Quem pagou R$ 37,00 andou 32,5 ÷ 2,5 = 13 km.
+Exponencial e logaritmo: o par inverso mais cobrado. 2³ = 8 e log₂ 8 = 3 dizem a mesma coisa nos dois sentidos. O gráfico de y = log₂ x é o de y = 2ˣ refletido em y = x; o ponto (0, 1) de um corresponde ao (1, 0) do outro.
+Domínio e imagem também trocam de lugar: a exponencial tem domínio ℝ e imagem ]0, +∞[; o logaritmo, domínio ]0, +∞[ e imagem ℝ. Essa troca vale para qualquer par de funções inversas.
+09 Estratégia de prova
+1 · Identifique a grandeza intermediária
+Em textos com duas fórmulas, sublinhe a grandeza que aparece nas duas (peças, altitude, valor em reais). Ela é a ponte: substitua-a e ela desaparece da resposta.
+2 · Teste as alternativas com um ponto
+Para conferir uma inversa, pegue um ponto fácil de f, como f(1) = 3, e veja qual alternativa dá f⁻¹(3) = 1. Para conferir uma composta, calcule f(g(0)) ou f(g(1)) com números e compare.
+3 · Em tabelas, vá de dentro para fora
+Para f(g(a)), ache g(a) na tabela de g e use o resultado como entrada na tabela de f. Para f⁻¹(b), procure b na linha das saídas de f e leia a entrada correspondente.
+10 Onde isso aparece nas outras áreas
+ | Área | Onde entra | O que lembrar
+ | Física | escalas termométricas | F = 1,8C + 32 e C = (F − 32)/1,8 são inversas
+ | Física | grandezas em cadeia: posição → velocidade → energia | a energia cinética em função do tempo é uma composta
+ | Química | pH e concentração | pH = −log[H⁺] e [H⁺] = 10^(−pH): logaritmo e exponencial desfazem um ao outro
+ | Matemática Financeira | câmbio e impostos | converter e depois tributar é compor; voltar do valor final ao inicial é inverter
+ | Linguagens e TIC | criptografia simples | codificar é aplicar uma função; decodificar é aplicar a inversa
+11 Os erros que mais custam pontos
+f(g(x)): aplicar f primeiro → g primeiro, f depoisLê-se de dentro para fora.
+f ∘ g = g ∘ f → em geral são diferentesTeste com um número: as duas ordens costumam dar resultados distintos.
+f(g(x)) = f(x) · g(x) → substituir, não multiplicarComposição põe uma função dentro da outra.
+f(2x + 1) com f(x) = x² − 1 → 2x² + 1 − 1 → (2x + 1)² − 1Substitua a expressão inteira entre parênteses.
+f⁻¹(x) = 1/f(x) → f⁻¹ desfaz fO ⁻¹ não é expoente.
+inversa de 2x + 1 = (x + 1)/2 → (x − 1)/2Desfaça na ordem contrária: primeiro subtraia 1, depois divida.
+x² tem inversa √x em ℝ → só com domínio x ≥ 0Sem restrição, x² não é injetora.
+Simetria da inversa no eixo y → na reta y = xO ponto (a, b) vira (b, a).
+f⁻¹(b): procurar b nas entradas → procurar b nas saídasEm tabela, a inversa se lê de baixo para cima.
+12 Questões comentadas
+Nove questões no formato da prova. Antes de calcular, pergunte: qual função age primeiro? O que é entrada e o que é saída?
+Questão 1 · Custo em função do tempo
+Uma pequena fábrica produz n(t) = 40t peças em t horas de funcionamento. O custo de produção, em reais, de n peças é C(n) = 500 + 3n. O custo de produção, em reais, em função do tempo t de funcionamento é dado por
+20 000 + 120t
+500 + 43t
+500 + 120t
+500 + 3t
+120t
+Ver resolução
+A ponte é o número de peças. Substitua n = 40t no custo:
+C(n(t)) = 500 + 3 · 40t = 500 + 120t
+A A compõe na ordem errada, n(C(t)) = 40(500 + 3t), aplicando a fórmula das peças ao custo. A B soma os coeficientes 40 e 3 em vez de multiplicá-los. A D ignora a função de dentro e usa t como se fosse o número de peças. A E esquece o custo fixo de 500.
+Conferência: em 2 horas são 80 peças, que custam 500 + 240 = 740; e 500 + 120 · 2 = 740.
+Alternativa C
+Questão 2 · Composta em um ponto
+Considere as funções f(x) = x² − 1 e g(x) = 2x + 3, definidas para todo x real. O valor de f(g(2)) é
+9
+10
+21
+24
+48
+Ver resolução
+De dentro para fora: g(2) = 7; depois f(7) = 49 − 1 = 48.
+A A calcula na ordem inversa: g(f(2)) = g(3) = 9. A B soma f(2) + g(2) = 3 + 7. A C multiplica: f(2) · g(2) = 3 · 7. A D desenvolve (2x + 3)² como 4x² + 9, esquecendo o termo do meio: 16 + 9 − 1 = 24.
+Alternativa E
+Questão 3 · Inverter a fórmula do preço
+Em uma cidade, o preço P, em reais, de uma corrida de táxi de x quilômetros é P = 4,5 + 2,5x. Um aplicativo quer mostrar ao passageiro quantos quilômetros ele pode percorrer com um valor P disponível. A expressão que fornece x em função de P é
+x = (P − 4,5/2,5)
+x = (P/2,5) − 4,5
+x = (P + 4,5/2,5)
+x = 2,5P + 4,5
+x = (1/4,5 + 2,5P)
+Ver resolução
+Isolando x: P − 4,5 = 2,5x, logo x = (P − 4,5/2,5). Com R$ 37,00, x = 32,5 ÷ 2,5 = 13 km; e de fato 4,5 + 2,5 · 13 = 37.
+A B divide antes de subtrair, desfazendo as operações na ordem errada. A C soma o 4,5 em vez de subtraí-lo. A D troca as letras sem isolar nada, mantendo a forma da função original. A E confunde a inversa com “um sobre” a função.
+Alternativa A
+Questão 4 · Achar a função de dentro
+Sejam f e g funções afins de ℝ em ℝ, com f(x) = 3x − 2 e f(g(x)) = 6x + 7 para todo x real. A lei de g é
+g(x) = 18x + 19
+g(x) = 6x + 9
+g(x) = 2x + (5/3)
+g(x) = 2x − 3
+g(x) = 2x + 3
+Ver resolução
+Aplicando f a g(x): 3g(x) − 2 = 6x + 7, então 3g(x) = 6x + 9 e g(x) = 2x + 3.
+A A calcula f(6x + 7), aplicando f sobre a composta. A B para em 3g(x) = 6x + 9 e esquece de dividir por 3. A C passa o −2 para o outro lado sem trocar o sinal (3g = 6x + 5). A D erra o sinal ao dividir o 9.
+Conferência: f(2x + 3) = 6x + 9 − 2 = 6x + 7.
+Alternativa E
+Questão 5 · Ponto do gráfico da inversa
+Uma função f, de ℝ em ℝ, é crescente e invertível, e seu gráfico passa pelo ponto (3, 7). O gráfico da função inversa f⁻¹ certamente passa pelo ponto
+(3, 7)
+(7, 3)
+(−3, −7)
+(3, (1/7))
+(−7, −3)
+Ver resolução
+f(3) = 7 significa f⁻¹(7) = 3: as coordenadas trocam de lugar, e o ponto (3, 7) vira (7, 3), seu reflexo na reta y = x.
+A A é o ponto do próprio f. A C e a E refletem o ponto na origem, trocando os sinais, o que nada tem a ver com inverter. A D toma f⁻¹ por (1/f).
+Alternativa B
+Questão 6 · A ordem dos descontos
+Uma loja oferece, para um produto de R$ 150,00, um cupom que abate R$ 20,00 do preço e uma promoção de 10% de desconto. O sistema permite aplicar os dois benefícios, em qualquer ordem, sempre sobre o valor resultante da etapa anterior. Comparando as duas ordens possíveis, conclui-se que
+O preço final é o mesmo nas duas ordens.
+Aplicar o cupom antes é R$ 2,00 mais barato.
+Aplicar o cupom antes é R$ 18,00 mais barato.
+Aplicar a porcentagem antes é R$ 2,00 mais barato.
+Aplicar a porcentagem antes é R$ 20,00 mais barato.
+Ver resolução
+São duas funções: c(p) = p − 20 e d(p) = 0,9p. As ordens são compostas diferentes:
+d(c(150)) = 0,9 · 130 = 117 c(d(150)) = 135 − 20 = 115
+Aplicar a porcentagem antes sai R$ 2,00 mais barato. Em geral, d(c(p)) = 0,9p − 18 e c(d(p)) = 0,9p − 20: quando o cupom vem antes, o desconto de 10% incide sobre um valor menor, e os R$ 20,00 “valem” só R$ 18,00.
+A A supõe que composição é comutativa. A B inverte a conclusão. A C confunde o valor efetivo do cupom (R$ 18,00) com a diferença entre as ordens. A E toma o valor do cupom inteiro como diferença.
+Alternativa D
+Questão 7 · Quem tem inversa
+Um programa de computador só consegue “desfazer” uma função f de ℝ em ℝ, recuperando cada entrada a partir da saída, quando f é bijetora. Entre as funções abaixo, todas de ℝ em ℝ, a única que o programa consegue desfazer é
+f(x) = x²
+f(x) = |x|
+f(x) = 2ˣ
+f(x) = x³ + 1
+f(x) = 5, para todo x real
+Ver resolução
+x³ + 1 é sempre crescente (injetora) e assume todos os valores reais (sobrejetora): de y volta-se a x = ∛(y − 1). Única entrada para cada saída, e toda saída existe.
+A A e a B não são injetoras: 2 e −2 dão a mesma saída. A C é injetora, mas não sobrejetora em ℝ: nenhum x dá saída negativa ou zero, então valores como −1 não teriam de onde voltar. A E leva tudo em 5: impossível saber de onde veio.
+Alternativa D
+Questão 8 · Inversa de uma função racional
+A função f(x) = (2x + 1/x − 3), definida para x ≠ 3, é usada para converter um índice x em uma nota f(x) e admite inversa no conjunto adequado. A lei de f⁻¹ é
+f⁻¹(x) = (3x + 1/x − 2)
+f⁻¹(x) = (x − 3/2x + 1)
+f⁻¹(x) = (3x + 1/x + 2)
+f⁻¹(x) = (3x − 1/x − 2)
+f⁻¹(x) = (2x + 1/x − 3)
+Ver resolução
+De y = (2x + 1/x − 3): xy − 3y = 2x + 1, x(y − 2) = 3y + 1, x = (3y + 1/y − 2). Trocando os nomes, f⁻¹(x) = (3x + 1/x − 2).
+A B é (1/f(x)), o “um sobre” no lugar da inversa. A C erra o sinal do 2 ao pôr x em evidência. A D erra o sinal do 1 ao passá-lo de lado. A E é a própria f: troca as letras sem isolar.
+Conferência: f(4) = 9 e (3 · 9 + 1/9 − 2) = (28/7) = 4.
+Alternativa A
+Questão 9 · Decodificar com tabelas
+Um sistema de senhas transforma cada dígito de 1 a 5 em duas etapas. Primeiro aplica o embaralhamento g; depois aplica o código f. As duas funções são dadas na tabela.
+ | x | 1 | 2 | 3 | 4 | 5
+ | f(x) | 4 | 5 | 1 | 2 | 3
+ | g(x) | 3 | 1 | 5 | 2 | 4
+Um técnico precisa calcular f⁻¹(g(3)) para testar o sistema. Esse valor é
+1
+2
+3
+4
+5
+Ver resolução
+De dentro para fora: g(3) = 5. Agora f⁻¹(5) é a entrada de f que dá 5: na linha de f, o 5 está na coluna x = 2. Logo f⁻¹(g(3)) = 2.
+A A aplica f direto ao 3, ignorando g: f(3) = 1. A C usa f no lugar de f⁻¹: f(5) = 3. A D aplica g duas vezes: g(5) = 4. A E para em g(3) e não aplica a inversa.
+Alternativa B
+13 Checklist de domínio
+Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.
+Explico que em f(g(x)) a função g age primeiro
+Calculo uma composta em um ponto sem montar a lei
+Monto a lei de f ∘ g substituindo a expressão inteira entre parênteses
+Mostro com um exemplo que f ∘ g e g ∘ f podem ser diferentes
+Encadeio duas fórmulas de um enunciado eliminando a grandeza intermediária
+Descubro a função de dentro ou a de fora a partir da composta
+Explico por que só funções bijetoras têm inversa
+Calculo a inversa isolando x e trocando os nomes das variáveis
+Inverto funções racionais pondo x em evidência
+Não confundo f⁻¹(x) com (1/f(x))
+Desenho o gráfico da inversa refletindo o de f na reta y = x
+Reconheço exponencial e logaritmo de mesma base como funções inversas
+Leio compostas e inversas em tabelas de valores
+Antes de marcar “Dominado” no cronograma
+Resolva 25 questões e acerte pelo menos 18, com pelo menos oito de contexto (fórmulas encadeadas ou conversões a inverter). Depois siga para Progressão aritmética (PA), que é uma função afim vista só nos números naturais.
+Flashcards para o Anki
+Foram gerados 33 cartões deste assunto no arquivo ENEM-Matematica-30-funcao-composta-inversa.txt.
+Para importar: abra o Anki → Arquivo → Importar → selecione o arquivo. O deck ENEM::Matemática::Álgebra e Funções é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.
