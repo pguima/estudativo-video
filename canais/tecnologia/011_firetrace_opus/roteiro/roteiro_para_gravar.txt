@@ -1,0 +1,34 @@
+ROTEIRO PARA GRAVAR — Tecnologia 011: FireTrace (protótipo de análise de incêndios feito com o Claude Opus 5.5)
+Voz: Gemini TTS Studio local (Neno), tags alegre + confiante. Números por extenso. Parte 1 = cenas 01–07 · Parte 2 = cenas 08–15.
+
+===== PARTE 1 =====
+Um mapa em três dimensões de uma serra na Califórnia. O fogo avançando, hora a hora. Seis drones no ar, e uma câmera térmica marcando um ponto quente de novecentos e oitenta e três graus. Parece software de centro de comando. Mas é um protótipo, que um desenvolvedor diz ter feito com o Claude Opus cinco ponto cinco.
+
+O post é do Dilum Sanjaya, um desenvolvedor que posta no X demonstrações visuais feitas com IA. No dia oito de outubro, ele escreveu: brinquei com uma ideia de ferramenta de análise de incêndios florestais. Ela mostra o avanço do fogo ao longo do tempo, rastreia pontos quentes com drones e acompanha o combate. Feito com o Opus cinco ponto cinco. Junto, um vídeo de quase dois minutos, sem som. Oito dias depois, a conta oficial do Claude destacou o projeto numa lista de seis criações da comunidade.
+
+Tudo o que você vê aqui é uma recriação nossa, desenhada para explicar. O app se chama FireTrace: análise forense de incêndios. O caso é o incidente Ridgeview, nas montanhas de San Gabriel, na Califórnia, de catorze a dezoito de agosto de dois mil e vinte e quatro. Pelo jeito, um cenário de demonstração. No centro, um mapa 3D do relevo, e o perímetro do fogo crescendo, com a hora marcada em cada trecho, desde a ignição, às catorze e vinte e seis.
+
+Embaixo, uma linha do tempo que você toca como um vídeo, com os eventos-chave: ignição, crescimento rápido, um foco secundário, o fogo cruzando a crista e a contenção. Ao lado, gráficos de área queimada, velocidade de avanço e perfil de elevação. À direita, camadas que ligam e desligam: relevo, imagem aérea, cicatriz da queimada, propagação modelada e linhas de contenção. E um painel de clima.
+
+Na aba de drones, seis de seis estão no ar, cada um com uma função. Um mapeia o perímetro, outro circula a frente mais ativa do fogo, outro vigia um foco secundário. Tem patrulha, levantamento e até um drone só para retransmitir o sinal. Clicando num deles, abre a câmera infravermelha, com a telemetria na tela. E as detecções caem numa lista: ponto quente, novecentos e oitenta e três graus Celsius.
+
+A terceira aba mostra os recursos em campo: treze unidades. Aviões-tanque, como um DC-10 e um C-130, helicópteros e um avião de coordenação aérea, caminhões, equipes em solo e um trator. Tem o registro de cada lançamento de retardante, e gráficos de galões, de linha construída e de pessoal. Dá até para seguir um avião com uma câmera de perseguição.
+
+E como se constrói uma coisa assim? Primeiro, o que não sabemos: o Dilum não contou quanto tempo levou, quais pedidos fez à IA, que bibliotecas usou, e não publicou o código. Então, o que segue é como apps assim costumam ser feitos. Na base, uma camada de dados: perímetros por hora, posições dos drones, lançamentos de retardante. Num protótipo, dados simulados. Em cima, o mapa 3D, tipicamente desenhado com WebGL a partir de um modelo de elevação do terreno. Depois, a linha do tempo, e por fim os painéis e gráficos.
+
+===== PARTE 2 =====
+O segredo de um painel desses é ter um relógio só. Você arrasta a linha do tempo e tudo se atualiza junto: o perímetro no mapa, a posição dos drones, os gráficos e a lista de eventos. São muitas peças conversando entre si.
+
+E o que isso diz sobre o Opus cinco ponto cinco? A Anthropic lançou o modelo em vinte e dois de setembro. Segundo a empresa, ele chega ao nível do Claude Fable cinco ponto um na maior parte do trabalho, custando cerca de quarenta por cento menos que o Opus cinco. A Anthropic destaca tarefas longas, e cita um teste em que vários modelos criaram um jogo a partir de um único pedido: o Opus cinco ponto cinco teve a maior nota em gráficos e acabamento. Só que um vídeo não mostra quantas tentativas nem quanto ajuste manual foi preciso.
+
+E no mundo real? Isso já existe, com dados de verdade. A NASA mantém o FIRMS, que distribui focos de incêndio vistos por satélite em até três horas depois da observação. Nos Estados Unidos, aviões com infravermelho voam à noite, e atualizam o perímetro de calor uma vez por dia. Os drones do Serviço Florestal americano enxergam através da fumaça, e, segundo o órgão, acham um foco de cinco por cinco centímetros a quase oitocentos metros. E aqui no Brasil, o INPE processa mais de duzentas imagens de satélite por dia para detectar focos de calor, no programa Queimadas.
+
+Só que existe uma distância grande entre um protótipo bonito e um sistema de combate. No protótipo, os dados são de demonstração; no real, vêm de sensores, satélites e equipes. No protótipo, atraso não importa; no real, minutos contam. E um sistema real precisa ser testado em campo e ter alguém responsável pelas decisões tomadas com ele.
+
+E os cuidados com esse post. O protótipo só existe em vídeo: não há código nem demo para testar. O autor não diz se os dados são reais ou simulados. O feito com Opus cinco ponto cinco é a palavra dele; não sabemos quanta intervenção manual houve. E o destaque da conta do Claude é vitrine, não uma avaliação independente.
+
+Resumindo. O FireTrace é um protótipo de análise de incêndios, postado pelo Dilum Sanjaya em oito de outubro. Mapa 3D, linha do tempo, drones com câmera térmica e recursos em campo, tudo sincronizado. Ele diz que fez com o Opus cinco ponto cinco, mas não mostrou como. O mundo real já usa satélites, aviões e drones, com dados validados. É uma ótima ideia ilustrada, não uma ferramenta pronta.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: que ferramenta você tentaria criar com uma IA dessas? Até o próximo vídeo.
+
+As fontes deste vídeo estão na tela e na descrição.

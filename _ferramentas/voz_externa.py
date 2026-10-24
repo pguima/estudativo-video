@@ -1,17 +1,19 @@
 """Usa uma narração gravada/gerada fora (arquivos de áudio) no lugar do TTS.
 
-Uso: python voz_externa.py <proj> <json_palavras> parte1.wav parte2.wav ...
+Uso: python voz_externa.py <proj> <json_palavras> parte1.wav parte2.wav ... [--lang en]
 - json_palavras: saída de transcrever_palavras.py para as mesmas partes (mesma ordem)
 - alinha as palavras do roteiro (roteiro/cenas.py) com a transcrição
 - insere silêncio onde o roteiro pede pausas longas (animações), e entre blocos
 Gera <proj>/audio/narracao.wav e <proj>/audio/tempos.json (substitui os do TTS).
+--lang en: roteiro/cenas_en.py → audio_en/narracao.wav e audio_en/tempos.json.
 """
-import difflib, importlib.util, json, subprocess, sys
+import difflib, json, re, subprocess, sys
 from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
 from narracao import parse, norm, SR, decode  # noqa
+import idioma
 
 GAP_PARTES = 0.35       # silêncio entre arquivos
 PAUSA_MIN_LONGA = 1.0   # pausas do roteiro >= isso são garantidas no áudio
@@ -23,8 +25,48 @@ NUM = {"0": "zero", "1": "um", "2": "dois", "3": "tres", "4": "quatro", "5": "ci
        "9": "nove", "10": "dez", "50": "cinquenta"}
 
 
+# inglês: o roteiro escreve os números por extenso ("nine hundred eighty-three"), o Whisper devolve algarismos
+UN = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen " \
+     "eighteen nineteen".split()
+DEZ = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+ORD = dict(one="first", two="second", three="third", five="fifth", eight="eighth", nine="ninth", twelve="twelfth")
+
+
+def en_int(n):
+    if n < 20:
+        return UN[n]
+    if n < 100:
+        return DEZ[n // 10] + ("-" + UN[n % 10] if n % 10 else "")
+    for v, nome in ((10 ** 9, "billion"), (10 ** 6, "million"), (1000, "thousand"), (100, "hundred")):
+        if n >= v:
+            return en_int(n // v) + " " + nome + (" " + en_int(n % v) if n % v else "")
+
+
+def expand_en(piece):
+    p = piece.strip(".,:;!?\"'()")
+    m = re.fullmatch(r"(\d[\d,]*)(?:\.(\d+))?(%|st|nd|rd|th)?", p)
+    if not m:
+        return [piece]
+    n = int(m.group(1).replace(",", ""))
+    if m.group(2) is None and not m.group(3) and 1900 <= n < 2100 and not 2000 <= n < 2010:
+        w = en_int(n // 100) + " " + (en_int(n % 100) if n % 100 else "hundred")  # ano: twenty twenty-four
+    else:
+        w = en_int(n)
+    if m.group(2):
+        w += " point " + " ".join(UN[int(d)] for d in m.group(2))
+    if m.group(3) == "%":
+        w += " percent"
+    elif m.group(3):
+        last = re.split(r"[ -]", w)[-1]
+        o = ORD.get(last) or (last[:-1] + "ieth" if last.endswith("y") else last + "th")
+        w = w[: len(w) - len(last)] + o
+    return w.split()
+
+
 def expand(piece):
     """números do Whisper -> palavras como no roteiro"""
+    if idioma.LANG == "en":
+        return expand_en(piece)
     n = norm(piece)
     if n == "9h30":
         return ["nove", "e", "meia"]
@@ -37,8 +79,12 @@ def expand(piece):
 
 def main(proj, wjson, parts):
     proj = Path(proj)
-    spec = importlib.util.spec_from_file_location("cenas", proj / "roteiro" / "cenas.py")
-    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    P = idioma.pastas(proj)
+    mod = idioma.cenas(proj)
+    # Shorts: RITMO = dict(gap_bloco=0.0, pad_inicio=0.05, pad_fim=0.8) no cenas*.py encurta os respiros
+    global GAP_BLOCO, PAD_INICIO, PAD_FIM
+    r = getattr(mod, "RITMO", {})
+    GAP_BLOCO, PAD_INICIO, PAD_FIM = r.get("gap_bloco", GAP_BLOCO), r.get("pad_inicio", PAD_INICIO), r.get("pad_fim", PAD_FIM)
     trans = json.loads(Path(wjson).read_text(encoding="utf-8"))
 
     # 1) áudio contínuo + palavras reconhecidas em tempo global
@@ -178,15 +224,18 @@ def main(proj, wjson, parts):
     for a, b in zip(scenes, scenes[1:]):
         a["dur"] = round(b["start"] - a["start"], 3)
     total = len(new) / SR
-    raw = proj / "audio" / "narracao_bruta.f32"
+    P.audio.mkdir(exist_ok=True)
+    raw = P.audio / "narracao_bruta.f32"
     new.astype(np.float32).tofile(raw)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", str(raw),
-                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", str(SR), str(proj / "audio" / "narracao.wav")], check=True)
+                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", str(SR), str(P.audio / "narracao.wav")], check=True)
     raw.unlink()
-    (proj / "audio" / "tempos.json").write_text(json.dumps(dict(total=round(total, 3), scenes=scenes), ensure_ascii=False,
+    (P.audio / "tempos.json").write_text(json.dumps(dict(total=round(total, 3), scenes=scenes), ensure_ascii=False,
                                                           indent=1), encoding="utf-8")
     print(f"silêncios inseridos: {len(inserts)}  total: {total/60:.2f} min")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3:])
+    lang, args = idioma.pega_lang(sys.argv[1:])
+    idioma.definir(lang)
+    main(args[0], args[1], args[2:])

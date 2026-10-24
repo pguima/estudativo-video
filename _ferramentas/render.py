@@ -3,13 +3,18 @@
 python render.py <proj> --stills 12.5,40,90     -> PNGs de prévia em <proj>/trabalho/stills
 python render.py <proj> --video [--from 0 --to 60] [--jobs 4] [--retomar]
 python render.py <proj> --final                 -> junta segmentos + narração + trilha em <proj>/final
+--lang en: versão em inglês (cenas_en.py + textos_en.py; audio_en/, trabalho_en/, som_en/, final/<arquivo>_en.mp4)
+--vertical: Short 1080x1920 (motor.W/H trocados antes de importar o visual)
 """
-import argparse, importlib.util, json, math, subprocess, sys
+import argparse, json, math, os, subprocess, sys
 from multiprocessing import Pool
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+if "--vertical" in sys.argv:
+    os.environ["VIDEO_FORMATO"] = "vertical"  # antes do import motor; os processos do Pool herdam
 import motor as M
+import idioma
 
 SEG = 20.0  # segundos por segmento de render
 
@@ -18,12 +23,10 @@ _STATE = {}
 
 def load(proj):
     proj = Path(proj)
-    def mod(name, path):
-        spec = importlib.util.spec_from_file_location(name, path)
-        m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
-    cenas = mod("cenas", proj / "roteiro" / "cenas.py")
-    visual = mod("visual", proj / "roteiro" / "visual.py")
-    tempos = json.loads((proj / "audio" / "tempos.json").read_text(encoding="utf-8"))
+    P = idioma.pastas(proj)
+    cenas = idioma.cenas(proj)
+    visual = idioma.carregar("visual", proj / "roteiro" / "visual.py", proj)  # textos da tela traduzidos (textos_en.py)
+    tempos = json.loads((P.audio / "tempos.json").read_text(encoding="utf-8"))
     blk_of = {s["id"]: s["block"] for s in cenas.SCENES}
     scenes = tempos["scenes"]
     C = M.Cues()
@@ -40,7 +43,7 @@ def load(proj):
         else:
             blocks.append(dict(name=s["block"], start=s["start"], end=s["start"] + s["dur"]))
     total = tempos["total"] + 0.3
-    return dict(proj=proj, visual=visual, scenes=scenes, C=C, blocks=blocks, total=total)
+    return dict(proj=proj, P=P, visual=visual, scenes=scenes, C=C, blocks=blocks, total=total)
 
 
 def frame(st, c, t):
@@ -50,6 +53,8 @@ def frame(st, c, t):
     for b in st["blocks"]:
         if b["start"] - 0.01 <= t < b["end"] + 0.4:
             a = M.ease_io(M.prog(t, b["start"], 0.45)) * (1 - M.ease_io(M.prog(t, b["end"] - 0.05, 0.4)))
+            if b is st["blocks"][0] and getattr(st["visual"], "ENTRADA_SECA", False):  # Short: 1º quadro já cheio
+                a = 1 - M.ease_io(M.prog(t, b["end"] - 0.05, 0.4))
             if a <= 0:
                 continue
             if a < 1:
@@ -69,7 +74,8 @@ def frame(st, c, t):
         M.text(c, wm, M.W / 2, 1052, 20, "semibold", "#C9C9C6")
 
 
-def _init(proj):
+def _init(proj, lang):
+    idioma.definir(lang)
     _STATE.update(load(proj))
 
 
@@ -108,12 +114,17 @@ def main():
     ap.add_argument("--to", dest="t1", type=float, default=None)
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--retomar", action="store_true", help="pula segmentos já completos")
+    ap.add_argument("--vertical", action="store_true", help="Short 1080x1920")
+    ap.add_argument("--lang", default="pt", help="idioma da versão (pt = padrão; en = Tecnativo English)")
     a = ap.parse_args()
+    idioma.definir(a.lang)
     proj = Path(a.proj)
     st = load(proj)
+    if a.lang != "pt" and (proj / "roteiro" / "cenas.py").exists() and (falta := idioma.faltando(proj, a.lang)):
+        print(f"⚠️  {len(falta)} textos da tela sem tradução (ficam em português): python _ferramentas/idioma.py faltando {proj}")
     if a.stills:
         import skia
-        out = proj / "trabalho" / "stills"; out.mkdir(parents=True, exist_ok=True)
+        out = st["P"].trabalho / "stills"; out.mkdir(parents=True, exist_ok=True)
         surf = skia.Surface(M.W, M.H); c = surf.getCanvas()
         for ts in a.stills.split(","):
             t = float(ts)
@@ -121,7 +132,7 @@ def main():
             surf.makeImageSnapshot().save(str(out / f"t{t:07.2f}.png"), skia.kPNG)
         print("ok", out)
     if a.video:
-        segdir = proj / "trabalho" / "segmentos"; segdir.mkdir(parents=True, exist_ok=True)
+        segdir = st["P"].trabalho / "segmentos"; segdir.mkdir(parents=True, exist_ok=True)
         t1 = a.t1 if a.t1 is not None else st["total"]
         nseg = math.ceil(st["total"] / SEG)
         jobs = []
@@ -134,7 +145,7 @@ def main():
                 continue  # segmento já completo
             jobs.append((i, round(s * M.FPS), round(e * M.FPS), out))
         print(f"{len(jobs)} segmentos para renderizar", flush=True)
-        with Pool(a.jobs, initializer=_init, initargs=(str(proj),)) as pool:
+        with Pool(a.jobs, initializer=_init, initargs=(str(proj), a.lang)) as pool:
             for i in pool.imap_unordered(render_seg, jobs):
                 print(f"segmento {i} pronto ({len(jobs)} no total)", flush=True)
     if a.final:
@@ -142,28 +153,31 @@ def main():
 
 
 def finalize(proj, st):
-    segdir = proj / "trabalho" / "segmentos"
+    P = st["P"]
+    segdir = P.trabalho / "segmentos"
     segs = sorted(segdir.glob("seg_*.mp4"))
     lst = segdir / "lista.txt"
     lst.write_text("".join(f"file '{p.name}'\n" for p in segs), encoding="utf-8")
-    video = proj / "trabalho" / "video_mudo.mp4"
+    video = P.trabalho / "video_mudo.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(video)], check=True)
-    musica = proj / "audio" / "trilha.wav"
-    nome = getattr(st["visual"], "ARQUIVO_FINAL", "video_final.mp4")
+    musica = P.audio / "trilha.wav"
+    nome = idioma.arquivo_final(getattr(st["visual"], "ARQUIVO_FINAL", "video_final.mp4"))
     (proj / "final").mkdir(exist_ok=True)
     out = proj / "final" / nome
     # canal Tecnologia (visual.py com `import tech`): trilha eletrônica + efeitos HUD de som_tech.py, salvo SOM = None
     # (projeto com som/mixar.py próprio, como o 009 "plantão de notícias", usa o dele)
     som = getattr(st["visual"], "SOM", {})
     if (proj / "som" / "mixar.py").exists():
+        if P.lang != "pt":
+            sys.exit("som/mixar.py próprio do projeto só faz a versão em português: adapte-o para som_" + P.lang)
         subprocess.run([sys.executable, str(proj / "som" / "mixar.py")], check=True)
         return
     if hasattr(st["visual"], "tech") and som is not None:
         import som_tech
         som_tech.gerar(proj, som)
-        som_tech.mixar(proj, out)
+        som_tech.mixar(proj, out, som)
         return
-    cmd = ["ffmpeg", "-v", "error", "-y", "-i", str(video), "-i", str(proj / "audio" / "narracao.wav")]
+    cmd = ["ffmpeg", "-v", "error", "-y", "-i", str(video), "-i", str(P.audio / "narracao.wav")]
     if musica.exists():
         cmd += ["-i", str(musica), "-filter_complex",
                 "[2:a]volume=1.0[m];[1:a]asplit[v1][v2];[m][v2]sidechaincompress=threshold=0.03:ratio=4:attack=30:release=600[md];"

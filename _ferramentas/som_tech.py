@@ -3,6 +3,7 @@ Tudo SINTETIZADO aqui (livre de direitos). O render.py chama sozinho no --final 
 
 Uso manual: python3 _ferramentas/som_tech.py <proj>        (gera <proj>/som/trilha.wav e sfx.wav e mixa o final)
             python3 _ferramentas/som_tech.py <proj> --so-som   (só gera os .wav)
+            --lang en: versão em inglês (audio_en/, trabalho_en/ → som_en/ e final/<arquivo>_en.mp4)
 Pré-requisitos: audio/tempos.json, audio/narracao.wav e trabalho/video_mudo.mp4 (render.py --video --final).
 
 Trilha: eletrônica "tech" ~112 BPM em ré menor (Dm Bb F C): arpejo pluck em semicolcheias com eco, baixo pulsando
@@ -17,6 +18,8 @@ Ajustes por vídeo no visual.py (opcional):
   SOM = dict(sfx={"05.c": ["typing@+0.2", "pop@+1.4"], "10.e": "alert", "03.b": None},  # None = sem efeito
              bpm=112, trilha=True)
   SOM = None desliga o som (vídeo só com narração).
+  Shorts: SOM = dict(intro=False, ganho_trilha=0.42, lufs=-14, bpm=124): batida completa desde o 1º segundo,
+  trilha mais presente e volume final de Shorts (loudnorm).
   Efeitos: pop, click, whoosh, lock, typing, notif, data, glitch, impact, confirm, alert, deny, bell, shimmer.
 """
 import json
@@ -24,6 +27,7 @@ import subprocess
 import sys
 from pathlib import Path
 import numpy as np
+import idioma
 
 SR = 48000
 G_TRILHA = 0.30   # trilha (~-26 LUFS) ~10 dB abaixo da voz (-16.5) antes do ducking
@@ -61,7 +65,7 @@ class Som:
     def __init__(self, proj, cfg=None):
         self.proj = Path(proj)
         self.cfg = cfg or {}
-        d = json.loads((self.proj / "audio" / "tempos.json").read_text(encoding="utf-8"))
+        d = json.loads((idioma.pastas(proj).audio / "tempos.json").read_text(encoding="utf-8"))
         self.scenes = d["scenes"]
         self.C = {}
         for s in self.scenes:
@@ -79,6 +83,9 @@ class Som:
         ids = [s["id"] for s in self.scenes]
         cta = [s for s in self.scenes if "like" in s["cues"]]
         self.t_full = self.scenes[1]["start"] if len(ids) > 1 else 2.0
+        if not self.cfg.get("intro", True):  # Short: batida do começo ao fim
+            self.t_full = 0.0
+            self.t_out = self.t_out if cta else self.DUR - 1.0
         self.t_out = cta[0]["start"] if cta else self.scenes[max(1, len(ids) - 2)]["start"]
 
     # ------------------------------------------------------------ utilidades
@@ -310,27 +317,29 @@ def save(path, st):
 
 def gerar(proj, cfg=None):
     s = Som(proj, cfg)
-    som = Path(proj) / "som"
+    som = idioma.pastas(proj).som
     if s.cfg.get("trilha", True):
         save(som / "trilha.wav", s.trilha())
     save(som / "sfx.wav", s.sfx())
 
 
-def mixar(proj, out):
+def mixar(proj, out, cfg=None):
     """vídeo mudo + narração + trilha (ducking pela voz) + efeitos → out"""
-    proj = Path(proj)
-    som = proj / "som"
+    cfg = cfg or {}
+    P = idioma.pastas(proj)
+    fim = f"loudnorm=I={cfg['lufs']}:TP=-1.0:LRA=9" if cfg.get("lufs") else "alimiter=limit=0.93:level=false"
+    som = P.som
     F = "aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo"
-    ins = ["-i", str(proj / "trabalho" / "video_mudo.mp4"), "-i", str(proj / "audio" / "narracao.wav")]
+    ins = ["-i", str(P.trabalho / "video_mudo.mp4"), "-i", str(P.audio / "narracao.wav")]
     if (som / "trilha.wav").exists():
         ins += ["-i", str(som / "trilha.wav"), "-i", str(som / "sfx.wav")]
-        fc = (f"[1:a]{F},asplit=2[v][vk];[2:a]{F},volume={G_TRILHA}[m];"
+        fc = (f"[1:a]{F},asplit=2[v][vk];[2:a]{F},volume={cfg.get('ganho_trilha', G_TRILHA)}[m];"
               f"[m][vk]sidechaincompress=threshold=0.02:ratio=5:attack=40:release=700:makeup=1[md];"
               f"[3:a]{F},volume={G_SFX}[sx];"
-              f"[v][md][sx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.93:level=false[a]")
+              f"[v][md][sx]amix=inputs=3:duration=first:normalize=0,{fim}[a]")
     else:
         ins += ["-i", str(som / "sfx.wav")]
-        fc = f"[1:a]{F}[v];[2:a]{F},volume={G_SFX}[sx];[v][sx]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.93:level=false[a]"
+        fc = f"[1:a]{F}[v];[2:a]{F},volume={G_SFX}[sx];[v][sx]amix=inputs=2:duration=first:normalize=0,{fim}[a]"
     subprocess.run(["ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(out)], check=True)
     print("FINAL (com som tech):", out)
@@ -339,16 +348,17 @@ def mixar(proj, out):
 def cfg_do_visual(proj):
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     sys.path.insert(0, str(Path(proj) / "roteiro"))
-    import importlib
-    vis = importlib.import_module("visual")
+    vis = idioma.carregar("visual", Path(proj) / "roteiro" / "visual.py", proj)
     return vis, getattr(vis, "SOM", {})
 
 
 if __name__ == "__main__":
-    proj = Path(sys.argv[1]).resolve()
+    lang, args = idioma.pega_lang(sys.argv[1:])
+    idioma.definir(lang)
+    proj = Path(args[0]).resolve()
     vis, cfg = cfg_do_visual(proj)
     if cfg is None:
         sys.exit("SOM = None no visual.py: vídeo sem som")
     gerar(proj, cfg)
     if "--so-som" not in sys.argv:
-        mixar(proj, proj / "final" / getattr(vis, "ARQUIVO_FINAL", "video_final.mp4"))
+        mixar(proj, proj / "final" / idioma.arquivo_final(getattr(vis, "ARQUIVO_FINAL", "video_final.mp4")), cfg)

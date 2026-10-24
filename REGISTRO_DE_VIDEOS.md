@@ -20,9 +20,9 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 |---|---|---|---|
 | ENEM (Estudativo) | 39 | 9 | 6 h 35 min |
 | Seguridade Social / INSS (Estudativo) | 17 | 0 | 1 h 48 min |
-| Tecnologia | 10 | 3 | 0 h 50 min |
+| Tecnologia | 11 | 3 | 0 h 56 min |
 | Trading | 2 | 0 | 0 h 17 min |
-| **Total** | **68** | **12** | **9 h 31 min** |
+| **Total** | **69** | **12** | **9 h 37 min** |
 
 ## ENEM (Estudativo)
 
@@ -117,7 +117,8 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 10 | `canais/tecnologia/007_remotion` | Remotion: Crie Vídeos com Código React (e com Agentes de IA) | 4:43 | 2026-10-17 | `tecnologia_007_remotion.mp4` |
 | 11 | `canais/tecnologia/008_bastidores_videos_com_ia` | Sem Câmera, Sem Microfone: Como Eu Faço Vídeos Só com IA | 5:28 | 2026-10-19 | `tecnologia_008_bastidores_videos_com_ia.mp4` |
 | 12 | `canais/tecnologia/009_tse_congestionamento_divulgacao` | O Que Aconteceu com o Sistema do TSE na Divulgação dos Votos? | 3:18 | 2026-10-22 | `tecnologia_009_tse_congestionamento_divulgacao.mp4` |
-| 13 | `canais/tecnologia/010_claude_duet` | Claude Duet: a IA da Anthropic que Trabalha Antes de Você Pedir | 5:38 | 2026-10-22 | `tecnologia_010_claude_duet.mp4` |
+| 13 | `canais/tecnologia/010_claude_duet` | Claude Duet: a IA da Anthropic que Trabalha Antes de Você Pedir | 5:38 | 2026-10-23 | `tecnologia_010_claude_duet.mp4` |
+| 14 | `canais/tecnologia/011_firetrace_opus` | Um Painel de Incêndios Feito com IA? O FireTrace do Claude Opus 5.5 | 5:52 | 2026-10-23 | `tecnologia_011_firetrace_opus.mp4` |
 
 ## Trading
 

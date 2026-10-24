@@ -16,7 +16,9 @@ videos_canal/
 │   ├── narracao.py             narração TTS provisória (edge-tts)
 │   ├── transcrever_palavras.py transcreve a sua voz com o tempo de cada palavra (Whisper)
 │   ├── voz_externa.py          sincroniza a sua voz (vozgen/Gemini) com o roteiro
+│   ├── idioma.py               versões em outro idioma (--lang en: roteiro, textos da tela, pastas _en, capas)
 │   ├── som_tech.py             som padrão do canal Tecnologia (trilha eletrônica + efeitos HUD), automático no --final
+│   ├── gerar_dashboard.py      painel estático dos vídeos prontos → dashboard/ + dashboard.zip (zproapp.webformas.com.br)
 │   ├── transcrever.py · musica.py · prever.sh
 │   ├── fontes/                 fonte Inter
 │   └── amostras_voz/           amostras de vozes testadas
@@ -86,4 +88,7 @@ python _ferramentas/render.py <projeto> --video --final --jobs 3 --retomar
 # 4) capas
 python <projeto>/youtube/capa.py
 ```
+Versão em inglês (canal Tecnativo English): os mesmos comandos com `--lang en`, a partir de `roteiro/cenas_en.py` +
+`roteiro/textos_en.py`; tudo sai em `audio_en/`, `trabalho_en/`, `som_en/`, `youtube_en/` e `final/*_en.mp4`.
+Passo a passo em [canais/tecnologia/ESTILO.md](canais/tecnologia/ESTILO.md#versão-em-inglês-canal-tecnativo-english-desde-2026-10-23).
 Tema escuro/claro: `motor.set_theme("escuro")` no topo do `roteiro/visual.py`.

@@ -1,5 +1,6 @@
 """Capas do vídeo Tecnologia 010 — Claude Duet (tema 'tech'). 3 variações em 1280x720.
-Só motion graphics: nenhuma captura de tela nem logo. Telas do Duet = mockup com selo ILUSTRATIVO."""
+Só motion graphics, sem captura de tela; logo = ícone oficial do app (logo_claude_duet.svg, de claude.com/product/claude-duet).
+Telas do Duet = mockup com selo ILUSTRATIVO."""
 import subprocess, sys
 from pathlib import Path
 
@@ -19,6 +20,22 @@ def base(c, col=CYAN, tag="IA · AGENTE PROATIVO · ANTHROPIC"):
     for x, y, dx, dy in ((m, m, 1, 1), (W - m, m, -1, 1), (m, H - m, 1, -1), (W - m, H - m, -1, -1)):
         tech._bracket(c, x, y, dx, dy, col, 0.7)
     chip(c, tag, 84, 110, col, 1, size=34, filled=True)
+
+
+def logo(c, x, y, size):
+    d = skia.SVGDOM.MakeFromStream(skia.Stream.MakeFromFile(str(HERE / "logo_claude_duet.svg")))
+    c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(x, y, size, size), size * .22, size * .22), blur_paint("#000000", 0.5, 24))
+    c.save(); c.translate(x, y); c.scale(size / 1024, size / 1024); d.render(c); c.restore()
+
+
+def rodape(c, s, size, icone=True):
+    """ícone do Claude Duet + linha de apoio, sem invadir o painel da direita"""
+    x = 90
+    if icone:
+        logo(c, 84, 724, 132)
+        x = 246
+    size = min(size, size * (1076 - x) / text_w(s, "monob", size))
+    text(c, s, x, 806, size, "monob", INK2, align="left")
 
 
 def big(c, l1, l2, word, col):
@@ -71,21 +88,22 @@ def lado_fluxo(c):
 def capa_antes(c):
     base(c, CYAN)
     big(c, "A IA QUE TRABALHA", "ANTES DE VOCÊ", "PEDIR", CYAN)
-    text(c, "Claude Duet, da Anthropic", 90, 800, 44, "monob", INK2, align="left")
+    rodape(c, "Claude Duet, da Anthropic", 44)
     lado_notif(c)
 
 
 def capa_aprova(c):
     base(c, GOLD, "CLAUDE DUET · SEGURANÇA")
     big(c, "ELE AGE SOZINHO,", "MAS PEDE", "AUTORIZAÇÃO", GOLD)
-    text(c, "o que o Claude Duet faz e o que é proibido", 90, 800, 40, "monob", INK2, align="left")
+    rodape(c, "o que o Claude Duet faz e o que é proibido", 40)
     lado_aprovacao(c)
 
 
 def capa_nome(c):
     base(c, VIOLET, "NOVO · ANTHROPIC · 21/10/2026")
     big(c, "CLAUDE", "DUET", "CHEGOU", VIOLET)
-    text(c, "brief · alertas · tarefas na nuvem", 90, 800, 44, "monob", INK2, align="left")
+    logo(c, 690, 205, 270)   # ícone grande ao lado do nome
+    rodape(c, "brief · alertas · tarefas na nuvem", 44, icone=False)
     lado_fluxo(c)
 
 

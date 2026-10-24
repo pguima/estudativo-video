@@ -1,0 +1,438 @@
+{
+ "total": 25.8,
+ "scenes": [
+  {
+   "id": "01",
+   "block": "gancho",
+   "start": 0.0,
+   "dur": 4.12,
+   "tokens": [
+    {
+     "disp": "Vai",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.36
+    },
+    {
+     "disp": "estudar",
+     "bold": false,
+     "t0": 0.36,
+     "t1": 0.74
+    },
+    {
+     "disp": "Seguridade",
+     "bold": true,
+     "t0": 0.8,
+     "t1": 1.22
+    },
+    {
+     "disp": "Social",
+     "bold": true,
+     "t0": 1.22,
+     "t1": 1.68
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 1.68,
+     "t1": 1.88
+    },
+    {
+     "disp": "concurso?",
+     "bold": true,
+     "t0": 1.88,
+     "t1": 2.4
+    },
+    {
+     "disp": "Então,",
+     "bold": false,
+     "t0": 2.66,
+     "t1": 2.98
+    },
+    {
+     "disp": "comece",
+     "bold": false,
+     "t0": 3.06,
+     "t1": 3.52
+    },
+    {
+     "disp": "por",
+     "bold": true,
+     "t0": 3.52,
+     "t1": 3.74
+    },
+    {
+     "disp": "aqui!",
+     "bold": true,
+     "t0": 3.74,
+     "t1": 4.02
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 2.66
+   }
+  },
+  {
+   "id": "02",
+   "block": "decorar",
+   "start": 4.12,
+   "dur": 5.72,
+   "tokens": [
+    {
+     "disp": "Antes",
+     "bold": false,
+     "t0": 0.3,
+     "t1": 0.52
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 0.52,
+     "t1": 0.7
+    },
+    {
+     "disp": "decorar",
+     "bold": true,
+     "t0": 0.7,
+     "t1": 1.06
+    },
+    {
+     "disp": "conceitos",
+     "bold": false,
+     "t0": 1.06,
+     "t1": 1.7
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.7,
+     "t1": 1.9
+    },
+    {
+     "disp": "resolver",
+     "bold": false,
+     "t0": 1.9,
+     "t1": 2.2
+    },
+    {
+     "disp": "questões,",
+     "bold": true,
+     "t0": 2.2,
+     "t1": 2.76
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 3.08,
+     "t1": 3.16
+    },
+    {
+     "disp": "importante",
+     "bold": false,
+     "t0": 3.16,
+     "t1": 3.6
+    },
+    {
+     "disp": "entender",
+     "bold": false,
+     "t0": 3.6,
+     "t1": 4.14
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 4.14,
+     "t1": 4.42
+    },
+    {
+     "disp": "fundamentos",
+     "bold": true,
+     "t0": 4.42,
+     "t1": 5.12
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 5.12,
+     "t1": 5.22
+    },
+    {
+     "disp": "matéria.",
+     "bold": false,
+     "t0": 5.22,
+     "t1": 5.62
+    }
+   ],
+   "cues": {
+    "a": 0.3,
+    "b": 3.08
+   }
+  },
+  {
+   "id": "03",
+   "block": "modulo",
+   "start": 9.84,
+   "dur": 6.1,
+   "tokens": [
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 0.28,
+     "t1": 0.38
+    },
+    {
+     "disp": "canal",
+     "bold": false,
+     "t0": 0.38,
+     "t1": 0.66
+    },
+    {
+     "disp": "Estudativo,",
+     "bold": true,
+     "t0": 0.66,
+     "t1": 1.42
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.74,
+     "t1": 1.9
+    },
+    {
+     "disp": "encontra",
+     "bold": false,
+     "t0": 1.9,
+     "t1": 2.2
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.2,
+     "t1": 2.4
+    },
+    {
+     "disp": "primeiro",
+     "bold": true,
+     "t0": 2.4,
+     "t1": 2.74
+    },
+    {
+     "disp": "módulo",
+     "bold": true,
+     "t0": 2.74,
+     "t1": 3.3
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 3.3,
+     "t1": 3.46
+    },
+    {
+     "disp": "curso",
+     "bold": false,
+     "t0": 3.46,
+     "t1": 3.72
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.72,
+     "t1": 3.94
+    },
+    {
+     "disp": "Seguridade",
+     "bold": false,
+     "t0": 3.94,
+     "t1": 4.48
+    },
+    {
+     "disp": "Social:",
+     "bold": false,
+     "t0": 4.48,
+     "t1": 4.84
+    },
+    {
+     "disp": "Fundamentos.",
+     "bold": true,
+     "t0": 5.34,
+     "t1": 6.0
+    }
+   ],
+   "cues": {
+    "a": 0.28,
+    "b": 1.74,
+    "c": 5.34
+   }
+  },
+  {
+   "id": "04",
+   "block": "base",
+   "start": 15.94,
+   "dur": 3.42,
+   "tokens": [
+    {
+     "disp": "Dê",
+     "bold": false,
+     "t0": 0.26,
+     "t1": 0.46
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.46,
+     "t1": 0.54
+    },
+    {
+     "disp": "primeiro",
+     "bold": true,
+     "t0": 0.54,
+     "t1": 0.7
+    },
+    {
+     "disp": "passo",
+     "bold": true,
+     "t0": 0.7,
+     "t1": 1.02
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 1.02,
+     "t1": 1.22
+    },
+    {
+     "disp": "construir",
+     "bold": false,
+     "t0": 1.22,
+     "t1": 1.62
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 1.62,
+     "t1": 1.82
+    },
+    {
+     "disp": "base",
+     "bold": true,
+     "t0": 1.82,
+     "t1": 2.12
+    },
+    {
+     "disp": "sólida",
+     "bold": true,
+     "t0": 2.12,
+     "t1": 2.64
+    },
+    {
+     "disp": "nessa",
+     "bold": false,
+     "t0": 2.64,
+     "t1": 2.84
+    },
+    {
+     "disp": "matéria.",
+     "bold": false,
+     "t0": 2.84,
+     "t1": 3.32
+    }
+   ],
+   "cues": {
+    "a": 0.26,
+    "b": 1.02
+   }
+  },
+  {
+   "id": "05",
+   "block": "cta",
+   "start": 19.36,
+   "dur": 6.44,
+   "tokens": [
+    {
+     "disp": "Acesse",
+     "bold": false,
+     "t0": 0.24,
+     "t1": 0.72
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.72,
+     "t1": 0.8
+    },
+    {
+     "disp": "canal",
+     "bold": false,
+     "t0": 0.8,
+     "t1": 0.98
+    },
+    {
+     "disp": "Estudativo",
+     "bold": true,
+     "t0": 0.98,
+     "t1": 1.76
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.76,
+     "t1": 2.06
+    },
+    {
+     "disp": "comece",
+     "bold": false,
+     "t0": 2.06,
+     "t1": 2.46
+    },
+    {
+     "disp": "agora",
+     "bold": false,
+     "t0": 2.46,
+     "t1": 2.84
+    },
+    {
+     "disp": "pelo",
+     "bold": false,
+     "t0": 2.84,
+     "t1": 3.1
+    },
+    {
+     "disp": "Módulo",
+     "bold": true,
+     "t0": 3.1,
+     "t1": 3.56
+    },
+    {
+     "disp": "1.",
+     "bold": true,
+     "t0": 3.56,
+     "t1": 3.8
+    },
+    {
+     "disp": "Te",
+     "bold": false,
+     "t0": 4.18,
+     "t1": 4.2
+    },
+    {
+     "disp": "espero",
+     "bold": false,
+     "t0": 4.2,
+     "t1": 4.5
+    },
+    {
+     "disp": "lá!",
+     "bold": false,
+     "t0": 4.5,
+     "t1": 4.7
+    }
+   ],
+   "cues": {
+    "a": 0.24,
+    "b": 4.18
+   }
+  }
+ ]
+}

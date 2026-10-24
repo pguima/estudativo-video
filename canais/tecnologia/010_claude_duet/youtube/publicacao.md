@@ -4,7 +4,7 @@
 **Canal:** Tecnologia (IA, desenvolvimento, ferramentas) · notícia/explicação de produto lançado em 21/10/2026
 **Narração:** Gemini TTS Studio local (voz Neno, tags alegre + confiante, instrução "apresentador de tecnologia entusiasmado, mas preciso"). A parte 1 repetiu a cena dos conectores; a repetição foi cortada (original em `audio/nova_voz/parte_1_original.wav`).
 **Fonte:** `original/fonte_claude_duet.md` (anúncio oficial em claude.com + imprensa, consulta em 22/10/2026)
-**Imagens:** só motion graphics do canal. Telas do Duet (brief da manhã, notificações, cartão de aprovação) são **mockups com selo ILUSTRATIVO**, com itens de exemplo inventados. Nomes de apps e empresas só como texto, **sem logos**.
+**Imagens:** só motion graphics do canal. Telas do Duet (brief da manhã, notificações, cartão de aprovação) são **mockups com selo ILUSTRATIVO**, com itens de exemplo inventados. Nomes de apps e empresas só como texto, **sem logos** no vídeo. As **capas** levam o ícone oficial do app Claude Duet (`logo_claude_duet.svg`, de claude.com/product/claude-duet), para identificar o produto.
 **Som:** trilha eletrônica + efeitos de interface nos elementos e transições (`_ferramentas/som_tech.py`, padrão do canal desde 23/10/2026; ajustes em `SOM` no `visual.py`). Final ≈ -17 LUFS.
 
 ## Capa (escolha 1)
@@ -67,7 +67,7 @@ A Anthropic anunciou em 21 de outubro de 2026 o Claude Duet: um app novo em que 
 • Acesso: prévia de pesquisa com lista de espera, planos Pro e Max, só nos EUA; iOS, Android e claude.ai; incluído no plano, mas usa os mesmos limites de uso (as checagens em segundo plano também contam)
 • Limites admitidos: pode errar o que é urgente, tarefas pessoais ainda são mais fracas, não mostra o navegador. Segundo Flavio Copes (citando a central de ajuda), o Microsoft 365 ainda não funciona no Duet
 
-🖼️ Sobre as imagens: tudo é motion graphics do canal. As telas do Duet são mockups ilustrativos (com selo), com itens de exemplo inventados; não há capturas de tela nem logos de terceiros. A narração usa voz sintética (IA).
+🖼️ Sobre as imagens: o vídeo é todo em motion graphics do canal. As telas do Duet são mockups ilustrativos (com selo), com itens de exemplo inventados; não há capturas de tela nem logos de terceiros. A narração usa voz sintética (IA).
 
 📰 Fontes (consultadas em 22/10/2026):
 • Anthropic (oficial) — Introducing Claude Duet (21/10/2026): https://claude.com/resources/articles/claude-duet
