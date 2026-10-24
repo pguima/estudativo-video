@@ -10,9 +10,12 @@
 
 # Intermediários de render, transcrições e vozes
 **/trabalho/
+**/trabalho_*/
 **/analise/
 **/audio/nova_voz/
 **/audio/*.wav
+**/audio_*/nova_voz/
+**/audio_*/*.wav
 **/__pycache__/
 *.pyc
 

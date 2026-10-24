@@ -6,9 +6,11 @@ sincronizada com a narração e um desenhador de gráficos de candles.
 import math
 from functools import lru_cache
 from pathlib import Path
+import os
 import skia
 
-W, H = 1920, 1080
+# VIDEO_FORMATO=vertical (render.py --vertical): Shorts 1080x1920
+W, H = (1080, 1920) if os.environ.get("VIDEO_FORMATO") == "vertical" else (1920, 1080)
 FPS = 30
 FONTES = Path(__file__).parent / "fontes" / "inter" / "extras" / "ttf"
 # Segoe Icons só existe no Windows; fora dele os ícones do CTA saem como vetor (ver ICONES_VETOR)

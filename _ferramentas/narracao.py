@@ -1,17 +1,19 @@
 """Gera a narração (edge-tts) de um projeto e os tempos de cada palavra/cue.
 
-Uso: python narracao.py <pasta_do_projeto>
+Uso: python narracao.py <pasta_do_projeto> [--lang en]   (en: roteiro/cenas_en.py → audio_en/, voz americana)
 Lê   <proj>/roteiro/cenas.py
 Gera <proj>/audio/cenas/*.wav, <proj>/audio/narracao.wav, <proj>/audio/tempos.json
 """
-import asyncio, hashlib, json, re, subprocess, sys, unicodedata, importlib.util
+import asyncio, hashlib, json, re, subprocess, sys, unicodedata
 from pathlib import Path
 import numpy as np
 import edge_tts
+import idioma
 
 VOZ = "pt-BR-AntonioNeural"
 RATE = "-9%"
 PITCH = "-12Hz"
+VOZES = {"en": ("en-US-AndrewNeural", "-4%", "-6Hz")}  # outros idiomas: (voz, rate, pitch)
 SR = 48000
 PAUSA_ENTRE_CENAS = 0.75
 PAUSA_INICIO = 0.6
@@ -116,10 +118,10 @@ def align(tokens, words):
 
 async def main(proj):
     proj = Path(proj)
-    spec = importlib.util.spec_from_file_location("cenas", proj / "roteiro" / "cenas.py")
-    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    outdir = proj / "audio" / "cenas"; outdir.mkdir(parents=True, exist_ok=True)
-    cache = proj / "audio" / "cache"; cache.mkdir(exist_ok=True)
+    P = idioma.pastas(proj)
+    mod = idioma.cenas(proj)
+    outdir = P.audio / "cenas"; outdir.mkdir(parents=True, exist_ok=True)
+    cache = P.audio / "cache"; cache.mkdir(exist_ok=True)
 
     full = [np.zeros(int(PAUSA_INICIO * SR), np.float32)]
     cursor = PAUSA_INICIO
@@ -163,19 +165,23 @@ async def main(proj):
         print(f"cena {sc['id']:>3} {sc['block']:<10} {dur:6.2f}s  cues={list(cues)}")
         cursor += dur
     audio = np.concatenate(full)
-    raw = proj / "audio" / "narracao_bruta.f32"
+    raw = P.audio / "narracao_bruta.f32"
     audio.astype(np.float32).tofile(raw)
     # tratamento: mais grave/encorpada, compressão suave, loudness de YouTube
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", str(raw),
                     "-af", "bass=g=4:f=110,equalizer=f=250:t=q:w=1:g=1,equalizer=f=3200:t=q:w=1:g=1.5,"
                            "acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120,"
                            "aecho=0.8:0.85:28:0.06,loudnorm=I=-16:TP=-1.5:LRA=9",
-                    "-ar", str(SR), str(proj / "audio" / "narracao.wav")], check=True)
+                    "-ar", str(SR), str(P.audio / "narracao.wav")], check=True)
     raw.unlink()
-    (proj / "audio" / "tempos.json").write_text(json.dumps(dict(total=round(cursor, 3), scenes=result),
+    (P.audio / "tempos.json").write_text(json.dumps(dict(total=round(cursor, 3), scenes=result),
                                                           ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"TOTAL {cursor/60:.2f} min")
 
 
 if __name__ == "__main__":
-    asyncio.run(main(sys.argv[1]))
+    lang, args = idioma.pega_lang(sys.argv[1:])
+    idioma.definir(lang)
+    if lang in VOZES:
+        VOZ, RATE, PITCH = VOZES[lang]
+    asyncio.run(main(args[0]))

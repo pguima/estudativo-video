@@ -1,8 +1,10 @@
-"""tempos.json provisório (sem voz): 0,36 s por palavra + pausas [p=]. Uso: tempos_sinteticos.py <proj>"""
-import sys, re, json, importlib.util
+"""tempos.json provisório (sem voz): 0,36 s por palavra + pausas [p=]. Uso: tempos_sinteticos.py <proj> [--lang en]"""
+import sys, re, json
 from pathlib import Path
-proj = Path(sys.argv[1])
-s = importlib.util.spec_from_file_location("c", proj / "roteiro" / "cenas.py"); m = importlib.util.module_from_spec(s); s.loader.exec_module(m)
+import idioma
+lang, args = idioma.pega_lang(sys.argv[1:])
+proj = Path(args[0])
+m = idioma.cenas(proj, lang)
 WPS = 0.36
 t, scenes = 0.6, []
 for sc in m.SCENES:
@@ -22,5 +24,6 @@ for sc in m.SCENES:
     dur = lt + 0.4
     scenes.append(dict(id=sc["id"], block=sc["block"], start=round(t, 2), dur=round(dur, 2), tokens=toks, cues=cues))
     t += dur
-(proj / "audio" / "tempos.json").write_text(json.dumps(dict(total=round(t + 0.5, 2), scenes=scenes), ensure_ascii=False), encoding="utf-8")
+audio = idioma.pastas(proj, lang).audio; audio.mkdir(exist_ok=True)
+(audio / "tempos.json").write_text(json.dumps(dict(total=round(t + 0.5, 2), scenes=scenes), ensure_ascii=False), encoding="utf-8")
 for s_ in scenes: print(s_["id"], s_["block"], s_["start"], s_["dur"])

@@ -14,6 +14,7 @@ import math
 from functools import lru_cache
 import skia
 import motor
+from idioma import tr  # textos fixos do CTA na versão em inglês (idioma.COMUNS)
 
 # ---------------- tema ----------------
 motor.TEMAS["tech"] = dict(
@@ -372,7 +373,9 @@ LIKE, BELL, CHAT = "\ue8e1", "\uea8f", "\ue90a"
 
 def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Até o próximo vídeo!"):
     y = 250
-    items = [(like, 330, CYAN, LIKE, "CURTIR"), (sub, 790, ROSE, None, "INSCREVA-SE"), (bell, 1250, GOLD, BELL, "SININHO")]
+    despedida = tr(despedida)
+    items = [(like, 330, CYAN, LIKE, tr("CURTIR")), (sub, 790, ROSE, None, tr("INSCREVA-SE")),
+             (bell, 1250, GOLD, BELL, tr("SININHO"))]
     for k, (t0, x, col, gl, lab) in enumerate(items):
         a = ep(t, t0 - 0.2, 0.5)
         if a <= 0:
@@ -391,7 +394,7 @@ def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Até o próximo v�
         else:
             press = math.sin(math.pi * prog(t, t0 + 1.1, 0.35))
             done = ep(t, t0 + 1.3, 0.3)
-            chip(c, "INSCRITO" if done > 0.5 else "INSCREVA-SE", cx, cy + 10, col, a, anchor="center",
+            chip(c, tr("INSCRITO") if done > 0.5 else tr("INSCREVA-SE"), cx, cy + 10, col, a, anchor="center",
                  size=34 * (1 - 0.05 * press), filled=done <= 0.5)
         glow_text(c, lab, cx, y + 290 + (1 - a) * 20, 30, "monob", mix(INK2, col, on), a, glow=0.3 * on)
     a = ep(t, com, 0.5) * (1 - prog(t, bye, 0.4))
