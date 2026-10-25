@@ -361,4 +361,4 @@ if __name__ == "__main__":
         sys.exit("SOM = None no visual.py: vídeo sem som")
     gerar(proj, cfg)
     if "--so-som" not in sys.argv:
-        mixar(proj, proj / "final" / idioma.arquivo_final(getattr(vis, "ARQUIVO_FINAL", "video_final.mp4")), cfg)
+        mixar(proj, proj / "final" / idioma.arquivo_final(getattr(vis, "ARQUIVO_FINAL", "video_final.mp4"), proj=proj), cfg)

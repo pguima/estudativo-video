@@ -50,10 +50,11 @@ def frame(st, c, t):
     # ganchos opcionais do visual.py: BACKGROUND(c, t), CAPTION(c, scene, t), OVERLAY(c, t) (canal tecnologia)
     bg = getattr(st["visual"], "BACKGROUND", None)
     bg(c, t) if bg else M.background(c)
+    seca = getattr(st["visual"], "ENTRADA_SECA", False)
     for b in st["blocks"]:
-        if b["start"] - 0.01 <= t < b["end"] + 0.4:
+        if (b["start"] - 0.01 <= t or (seca and b is st["blocks"][0])) and t < b["end"] + 0.4:
             a = M.ease_io(M.prog(t, b["start"], 0.45)) * (1 - M.ease_io(M.prog(t, b["end"] - 0.05, 0.4)))
-            if b is st["blocks"][0] and getattr(st["visual"], "ENTRADA_SECA", False):  # Short: 1º quadro já cheio
+            if b is st["blocks"][0] and seca:  # 1º quadro já cheio, mesmo antes da 1ª fala
                 a = 1 - M.ease_io(M.prog(t, b["end"] - 0.05, 0.4))
             if a <= 0:
                 continue
@@ -161,7 +162,7 @@ def finalize(proj, st):
     video = P.trabalho / "video_mudo.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(video)], check=True)
     musica = P.audio / "trilha.wav"
-    nome = idioma.arquivo_final(getattr(st["visual"], "ARQUIVO_FINAL", "video_final.mp4"))
+    nome = idioma.arquivo_final(getattr(st["visual"], "ARQUIVO_FINAL", "video_final.mp4"), proj=proj)
     (proj / "final").mkdir(exist_ok=True)
     out = proj / "final" / nome
     # canal Tecnologia (visual.py com `import tech`): trilha eletrônica + efeitos HUD de som_tech.py, salvo SOM = None

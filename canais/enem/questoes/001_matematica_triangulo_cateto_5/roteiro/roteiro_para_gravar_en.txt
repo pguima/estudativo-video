@@ -1,0 +1,34 @@
+=== PART 1 (save as audio_en/nova_voz/parte_1.wav) ===
+
+A right triangle has one leg equal to five, and all three sides are whole numbers. How long are the other two sides? It looks like information is missing, but it isn't. In this lesson, you'll solve it step by step, using the Pythagorean theorem and a special product.
+
+First, the names. A right triangle is one with a right angle, ninety degrees. The side opposite the right angle is the hypotenuse, and it's always the longest side. We'll call it a. The other two sides are the legs: b and c. In our problem, leg c is five.
+
+The Pythagorean theorem connects all three sides: a squared equals b squared plus c squared. For example, in the three, four, five triangle: three squared is nine, four squared is sixteen, and nine plus sixteen is twenty-five, which is five squared. Notice: there, five was the hypotenuse. In our triangle, five is a leg. So: a squared equals b squared plus twenty-five.
+
+But this equation has two unknowns. If the sides could be any number, there would be infinitely many answers: with b equal to one, a would be the square root of twenty-six; with b equal to two, the square root of twenty-nine; and so on. The key piece of information is this: the sides are whole numbers.
+
+One option is to test: b equals one, two, three, until a squared is a perfect square. It works, but it's slow, and it doesn't prove there's no other answer. There's a better way, one that finds all the answers at once.
+
+Step one: move b squared to the other side. It's being added, so it moves over as a subtraction: a squared minus b squared equals twenty-five. On the left we now have a difference of two squares. And that's where the special product comes in.
+
+Special products are multiplications that show up so often that it's worth knowing the result by heart. One of them is the product of a sum and a difference: x plus y, times x minus y, equals x squared minus y squared. You can check it with the distributive property: x times x is x squared; x times minus y is minus x y; y times x is plus x y; and y times minus y is minus y squared. The middle terms cancel out, leaving x squared minus y squared.
+
+
+=== PART 2 (save as audio_en/nova_voz/parte_2.wav) ===
+
+Here's an example with numbers: ten plus three, times ten minus three, is thirteen times seven, which is ninety-one. And ten squared minus three squared, a hundred minus nine, is also ninety-one. It works!
+
+Now, reading the formula backwards, with a instead of x and b instead of y: a squared minus b squared equals a plus b, times a minus b. So our equation becomes: a plus b, times a minus b, equals twenty-five. Look at what happened: the difference of squares turned into a product of two whole numbers that equals twenty-five.
+
+Which products of positive whole numbers equal twenty-five? Only two: one times twenty-five, and five times five. Now, an important detail: since b is positive, a plus b is bigger than a minus b. So a plus b is the larger factor, and a minus b is the smaller one. In the five times five case, both factors would be equal, and that only happens if b is zero. A side of length zero is not a triangle.
+
+Only one case is left: a plus b equals twenty-five, and a minus b equals one. That's a system. Adding the two equations, b cancels out: two a equals twenty-six, so a is thirteen. Back to the first one: thirteen plus b equals twenty-five, so b is twelve.
+
+Always check. Twelve squared is one hundred forty-four, five squared is twenty-five: the sum is one hundred sixty-nine. And thirteen squared is also one hundred sixty-nine. The triangle is five, twelve, thirteen, and it's the only answer with whole-number sides.
+
+And the best part: the method works for other legs too. With a leg of seven: a plus b, times a minus b, equals forty-nine. One times forty-nine gives a equal to twenty-five and b equal to twenty-four: the seven, twenty-four, twenty-five triangle. Now it's your turn: try it with a leg of nine, and leave your answer in the comments. Hint: there may be more than one.
+
+To sum up the path: Pythagoras; isolate the difference of squares; apply the special product; list the divisors; and solve the system.
+
+Every tool you saw in this question has a full lesson here on Estudativo English: the Pythagorean theorem, special products, and systems of equations. If you want to learn each one from scratch, look for these lessons on the channel. And if this question helped, subscribe to Estudativo English for the next one.

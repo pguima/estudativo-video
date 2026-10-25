@@ -4,6 +4,11 @@ Cada idioma tem o próprio roteiro, voz, tempos, render, som e publicação, lad
     roteiro/cenas_en.py   roteiro em inglês: MESMOS ids, blocks e {cues} do cenas.py (o visual.py é o mesmo)
     roteiro/textos_en.py  TEXTOS = {"texto em português": "texto em inglês"} para os textos da TELA (visual.py e capa.py)
                           (None = ainda sem tradução, fica em português; "" = some na versão traduzida)
+    IDIOMAS_NO_CODIGO = True  no visual.py/capa.py: os textos da tela já vêm nos dois idiomas no próprio código
+                          (escolhidos por idioma.LANG, ex.: questões de matemática do Estudativo); não usa textos_en.py
+    IDIOMA = "en"         no cenas.py: projeto que só existe em inglês (canal próprio); com --lang en
+                          ele usa roteiro/cenas.py, audio/, trabalho/, final/<arquivo>.mp4 (sem _en), mas voz, Whisper e
+                          números em inglês
     roteiro/textos.py     o contrário, para vídeo que nasceu em inglês (visual.py com textos em inglês, ex.: Short 012):
                           TEXTOS = {"texto em inglês": "texto em português"}, aplicado na versão em português
     audio_en/  trabalho_en/  som_en/  youtube_en/      final/<arquivo>_en.mp4
@@ -52,17 +57,24 @@ def pega_lang(argv):
     return lang, argv
 
 
+def nativo(proj):
+    """idioma em que o projeto nasceu: IDIOMA = "en" no roteiro/cenas.py (projeto só em inglês); padrão pt"""
+    f = Path(proj) / "roteiro" / "cenas.py"
+    m = f.exists() and re.search(r"^IDIOMA\s*=\s*[\"'](\w+)", f.read_text(encoding="utf-8"), re.M)
+    return m.group(1) if m else "pt"
+
+
 def pastas(proj, lang=None):
     proj, lang = Path(proj), lang or LANG
-    suf = "" if lang == "pt" else f"_{lang}"
+    suf = "" if lang in ("pt", nativo(proj)) else f"_{lang}"  # projeto nativo em inglês: --lang en usa audio/, final/...
     return SimpleNamespace(lang=lang, sufixo=suf, audio=proj / f"audio{suf}", trabalho=proj / f"trabalho{suf}",
                            som=proj / f"som{suf}", youtube=proj / f"youtube{suf}", final=proj / "final",
                            cenas=proj / "roteiro" / f"cenas{suf}.py", textos=proj / "roteiro" / f"textos{suf}.py")
 
 
-def arquivo_final(nome, lang=None):
-    """tecnologia_011_x.mp4 -> tecnologia_011_x_en.mp4"""
-    suf = pastas(".", lang).sufixo
+def arquivo_final(nome, lang=None, proj="."):
+    """tecnologia_011_x.mp4 -> tecnologia_011_x_en.mp4 (sem sufixo no idioma nativo do projeto)"""
+    suf = pastas(proj, lang).sufixo
     p = Path(nome)
     return f"{p.stem}{suf}{p.suffix}"
 
@@ -184,7 +196,8 @@ def faltando(proj, lang="en"):
     proj = Path(proj)
     d = textos(proj, lang)
     fontes = [proj / "roteiro" / "visual.py", proj / "youtube" / "capa.py"]
-    return [s for f in fontes if f.exists() for s in candidatos(f) if s not in d]
+    fontes = [f for f in fontes if f.exists() and "IDIOMAS_NO_CODIGO = True" not in f.read_text(encoding="utf-8")]
+    return [s for f in fontes for s in candidatos(f) if s not in d]
 
 
 def extrair(proj, lang="en"):

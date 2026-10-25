@@ -1,0 +1,34 @@
+=== PARTE 1 (salvar como audio/nova_voz/parte_1.wav) ===
+
+Um triângulo retângulo tem um cateto igual a cinco, e os três lados são números inteiros. Quanto valem os outros dois lados? Parece que falta informação, mas não falta. Nesta aula, você vai resolver isso passo a passo, usando o Teorema de Pitágoras e um produto notável.
+
+Primeiro, os nomes. Triângulo retângulo é o que tem um ângulo reto, de noventa graus. O lado oposto ao ângulo reto é a hipotenusa, e ela é sempre o maior lado. Vamos chamá-la de a. Os outros dois lados são os catetos: b e c. No nosso problema, o cateto c vale cinco.
+
+O Teorema de Pitágoras liga os três lados: a ao quadrado é igual a b ao quadrado mais c ao quadrado. Por exemplo, no triângulo três, quatro, cinco: três ao quadrado é nove, quatro ao quadrado é dezesseis, e nove mais dezesseis dá vinte e cinco, que é cinco ao quadrado. Repare: lá, o cinco era a hipotenusa. No nosso triângulo, o cinco é um cateto. Então: a ao quadrado é igual a b ao quadrado mais vinte e cinco.
+
+Só que essa equação tem duas incógnitas. Se os lados pudessem ser qualquer número, haveria infinitas respostas: com b igual a um, a seria raiz de vinte e seis; com b igual a dois, raiz de vinte e nove; e assim por diante. A informação que resolve tudo é esta: os lados são inteiros.
+
+Uma saída seria testar: b igual a um, dois, três, até a ao quadrado dar um quadrado perfeito. Até funciona, mas é lento, e não prova que não existe outra resposta. Existe um caminho melhor, que encontra todas as respostas de uma vez.
+
+Primeiro passo: passar o b ao quadrado para o outro lado. Ele está somando, então passa subtraindo: a ao quadrado menos b ao quadrado é igual a vinte e cinco. Do lado esquerdo ficou uma diferença de dois quadrados. E é aqui que entra o produto notável.
+
+Produtos notáveis são multiplicações que aparecem tanto que vale a pena conhecer o resultado de cor. Um deles é o produto da soma pela diferença: x mais y, vezes x menos y, é igual a x ao quadrado menos y ao quadrado. Dá para conferir com a distributiva: x vezes x dá x ao quadrado; x vezes menos y dá menos x y; y vezes x dá mais x y; e y vezes menos y dá menos y ao quadrado. Os termos do meio se cancelam, e sobra x ao quadrado menos y ao quadrado.
+
+
+=== PARTE 2 (salvar como audio/nova_voz/parte_2.wav) ===
+
+Um exemplo com números: dez mais três, vezes dez menos três, é treze vezes sete, que dá noventa e um. E dez ao quadrado menos três ao quadrado, cem menos nove, também dá noventa e um. Funciona!
+
+Agora, lendo a fórmula ao contrário, com a no lugar de x e b no lugar de y: a ao quadrado menos b ao quadrado é igual a a mais b, vezes a menos b. Então a nossa equação vira: a mais b, vezes a menos b, igual a vinte e cinco. Repare no que aconteceu: a diferença de quadrados virou uma multiplicação de dois números inteiros que dá vinte e cinco.
+
+Quais multiplicações de inteiros positivos dão vinte e cinco? Só duas: um vezes vinte e cinco, e cinco vezes cinco. Agora, um detalhe importante: como b é positivo, a mais b é maior que a menos b. Então a mais b é o fator maior, e a menos b, o menor. No caso cinco vezes cinco, os dois fatores seriam iguais, e isso só acontece se b for zero. Um lado igual a zero não forma triângulo.
+
+Sobra um caso só: a mais b igual a vinte e cinco, e a menos b igual a um. É um sistema. Somando as duas equações, o b cancela: dois a igual a vinte e seis, então a é treze. Voltando na primeira: treze mais b igual a vinte e cinco, então b é doze.
+
+Sempre confira. Doze ao quadrado é cento e quarenta e quatro, cinco ao quadrado é vinte e cinco: a soma dá cento e sessenta e nove. E treze ao quadrado também é cento e sessenta e nove. O triângulo é cinco, doze, treze, e ele é a única resposta com lados inteiros.
+
+E o melhor: o método serve para outros catetos. Com um cateto igual a sete: a mais b, vezes a menos b, dá quarenta e nove. Um vezes quarenta e nove dá a igual a vinte e cinco e b igual a vinte e quatro: o triângulo sete, vinte e quatro, vinte e cinco. Agora é com você: tenta com o cateto nove, e deixa a sua resposta nos comentários. Dica: pode ter mais de uma.
+
+Resumindo o caminho: Pitágoras; isolar a diferença de quadrados; aplicar o produto notável; listar os divisores; e resolver o sistema.
+
+Cada ferramenta que apareceu nesta questão tem uma aula completa aqui no Estudativo: Teorema de Pitágoras, produtos notáveis e sistemas de equações. Se quiser aprender cada uma do zero, procura essas aulas aqui no canal. E se essa questão te ajudou, se inscreve no Estudativo para a próxima.

@@ -16,6 +16,12 @@ Leia antes o [ESTILO_COMUM.md](../../ESTILO_COMUM.md). Aqui está só o que é *
 > - **Mapas**: sempre dados reais via `_ferramentas/mapas.py` (Natural Earth; projeções equirretangular, Mercator, Peters).
 >   A IA nunca desenha mapa que o aluno vai ler. Em escalas locais/regionais, use região genérica ou mapa de cidade
 >   (um país real com "1 cm = 5 km" fica errado).
+> **Desde 2026-10-25: Matemática tem design system próprio** — `_ferramentas/matematica.py` (paleta azul-noite com
+> âmbar/ciano/menta/coral, quadro de contas, figuras, legenda que vira notação). É o padrão para os vídeos de matemática
+> novos (aulas e questões). **Questões resolvidas** ficam separadas das aulas, em `questoes/` (guia: [questoes/ESTILO.md](questoes/ESTILO.md)),
+> e sempre terminam convidando para as aulas do assunto no canal. **Estudativo English** (versão em inglês, focada em
+> Matemática) = `--lang en` no mesmo projeto; só alguns vídeos ganham versão em inglês ([canal_en.md](canal_en.md)).
+
 Referências: Física `003`–`009` (o 009, Vetores, é o mais recente) · Matemática `010_enem_matematica_conjuntos` · Química `011_enem_quimica_materia` · Geografia `012_enem_geografia_cartografia` · Linguagens `013_enem_linguagens_compreensao` · Redação `014_enem_redacao_leitura_proposta`.
 
 ## O que troca entre as matérias
