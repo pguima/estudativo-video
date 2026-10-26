@@ -11,8 +11,7 @@
 #       etanol (−114, 78) líquido · água (0, 100) sólida → só mercúrio e etanol.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão: matéria, substâncias e misturas em 1 vídeo — Química ENEM, episódio 6"
-
+TITULO = "Revisão de Química: 9 Pegadinhas e 5 Questões Inéditas | Matéria e Misturas Ep. 6"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

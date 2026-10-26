@@ -18,7 +18,7 @@ Use o "Testar e comparar" com A e B.
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **O₂ Tem 2 Átomos e Não É Composta? Química do Zero | Ep. 1** ← recomendado (com capa A)
+1. **O₂ Tem 2 Átomos e Não É Composta? Química do Zero | Matéria e Misturas Ep. 1** ← recomendado (com capa A)
 2. Substância Simples ou Composta em 2 Segundos | Química ENEM Ep. 1 (com capa B)
 3. Química Como LEGO: Matéria e Substâncias do Zero | ENEM Ep. 1 (com capa C)
 4. Matéria, Substância Simples e Composta para Iniciantes | Química ENEM
@@ -64,7 +64,10 @@ O gás oxigênio tem 2 átomos, o enxofre tem 8 e a água tem 3. Mesmo assim, s�
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Química do ENEM do zero.
 💬 Comente: antes desta aula, você achava que O₂ era composta?
-➡️ Próximo episódio: Alotropia (por que grafite e diamante são feitos da mesma coisa).
+
+➡️ Próximo episódio: Grafite e Diamante São a Mesma Coisa? Alotropia do Zero | Matéria e Misturas Ep. 2
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
 
 #ENEM #QuímicaENEM #QuímicaDoZero
 ```
@@ -73,7 +76,7 @@ O gás oxigênio tem 2 átomos, o enxofre tem 8 e a água tem 3. Mesmo assim, s�
 
 ## Tags
 ```
-enem, química enem, química do zero, substância simples, substância composta, substância simples e composta, substância pura, matéria, o que é matéria, propriedades da matéria, propriedades gerais e específicas, átomo, elemento químico, molécula, fórmula química, química para iniciantes, química básica, enem 2026, aula de química, matéria substâncias e misturas, exercícios resolvidos
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, substância simples, substância composta, substância simples e composta, substância pura, matéria, o que é matéria, propriedades da matéria, propriedades gerais e específicas, átomo, elemento químico, molécula, fórmula química, química para iniciantes, química básica, enem 2026, aula de química, matéria substâncias e misturas, exercícios resolvidos
 ```
 
 ## Hashtags
@@ -116,6 +119,7 @@ enem, química enem, química do zero, substância simples, substância composta
 - 07:43 (questão): card para o vídeo antigo de vídeo único **só se ele estiver publicado**; senão, nenhum
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, como primeiro vídeo.
 
 ## Ideias de Shorts

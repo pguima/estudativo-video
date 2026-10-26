@@ -20,8 +20,7 @@
 #   2. O denominador é sempre de onde você partiu. 3. 10% é andar a vírgula uma casa.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Porcentagem do zero: os três cálculos básicos e a conta de cabeça · Matemática ENEM, episódio 1"
-
+TITULO = "Porcentagem do zero: os três cálculos básicos e a conta de cabeça | Porcentagem Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

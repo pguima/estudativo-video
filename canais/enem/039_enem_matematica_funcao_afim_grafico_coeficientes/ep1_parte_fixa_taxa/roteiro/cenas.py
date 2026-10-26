@@ -24,8 +24,7 @@
 #   2. Proporcional é o caso especial com b = 0. 3. Com parte fixa, dobrar o x não dobra o y.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função afim do zero: parte fixa + taxa · Matemática ENEM, Função afim episódio 1"
-
+TITULO = "Função afim do zero: parte fixa + taxa | Função Afim Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

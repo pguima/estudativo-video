@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Quando os Ônibus Voltam a Sair Juntos? MMC do Zero | Matemática Ep. 4** ← recomendado (com capa A)
-2. MMC e a Pegadinha do "Quantas Vezes" | Matemática Ep. 4 (com capa B)
-3. MMC de 3 Jeitos: Tabuada, Fatoração e Varal | Matemática Ep. 4 (com capa C)
-4. Mínimo Múltiplo Comum Sem Decoreba | Matemática Ep. 4
+1. **Quando os Ônibus Voltam a Sair Juntos? MMC do Zero | Divisibilidade Ep. 4** ← recomendado (com capa A)
+2. MMC e a Pegadinha do "Quantas Vezes" | Divisibilidade Ep. 4 (com capa B)
+3. MMC de 3 Jeitos: Tabuada, Fatoração e Varal | Divisibilidade Ep. 4 (com capa C)
+4. Mínimo Múltiplo Comum Sem Decoreba | Divisibilidade Ep. 4
 
 ---
 
@@ -72,7 +72,9 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já tinha caído na pegadinha do "quantas vezes"?
-⬅️ Episódio 3: fatoração e a fórmula dos divisores · ➡️ Episódio 5: MDC.
+
+⬅️ Episódio anterior: O 360 Tem 24 Divisores: Descubra em 15 Segundos | Divisibilidade Ep. 3
+➡️ Próximo episódio: Achou o MDC e Errou a Questão? O Passo Que Falta | Divisibilidade Ep. 5
 
 #ENEM #MatematicaENEM #MMC
 ```
@@ -81,7 +83,7 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mmc, mínimo múltiplo comum, como calcular mmc, decomposição simultânea, mmc pela fatoração, questão de ônibus mmc, mmc enem, quantas vezes coincidem, divisibilidade, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mmc, mínimo múltiplo comum, como calcular mmc, decomposição simultânea, mmc pela fatoração, questão de ônibus mmc, mmc enem, quantas vezes coincidem, divisibilidade, matemática básica
 ```
 
 ## Hashtags
@@ -124,6 +126,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 10:27 (ponte): card para o **Episódio 5**, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 3.
 
 ## Ideias de Shorts

@@ -8,8 +8,7 @@
 #   2. Conforme guarda a forma; equivalente guarda a área. Nunca as duas.
 #   3. Mercator infla os polos; Peters acerta as áreas e estica as formas.
 
-TITULO = "Por que todo mapa mente: projeções, Mercator e Peters — Cartografia, episódio 3"
-
+TITULO = "Por Que Todo Mapa Mente: Mercator x Peters | Cartografia Ep. 3"
 PRONUNCIA = {
     "ENEM": "Enem",
     "ONU": "O N U",

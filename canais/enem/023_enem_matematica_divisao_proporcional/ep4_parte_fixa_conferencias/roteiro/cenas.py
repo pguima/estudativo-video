@@ -31,8 +31,7 @@
 #   2. A soma das partes tem que fechar o caixa. 3. Releia o que foi pedido antes de marcar.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Divisão proporcional com parte fixa e as 3 conferências que pegam o erro · Matemática ENEM, episódio 4"
-
+TITULO = "Divisão com parte fixa e as 3 conferências que pegam o erro | Divisão Proporcional Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

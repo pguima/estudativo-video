@@ -27,8 +27,7 @@
 #   "comprimiu? o volume TEM de diminuir".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Várias grandezas ao mesmo tempo: como ler qualquer fórmula de Física e Química · Matemática ENEM, episódio 4"
-
+TITULO = "Várias grandezas ao mesmo tempo: leia fórmulas de Física e Química | Grandezas Proporcionais Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

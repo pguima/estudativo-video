@@ -30,8 +30,7 @@
 #   ache o k" · "simplifique os capitais pelo MDC antes de somar" · "capital vezes tempo: corte os zeros iguais".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Divisão composta e regra de sociedade: multiplicar, nunca somar · Matemática ENEM, episódio 3"
-
+TITULO = "Divisão composta e regra de sociedade: multiplicar, nunca somar | Divisão Proporcional Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

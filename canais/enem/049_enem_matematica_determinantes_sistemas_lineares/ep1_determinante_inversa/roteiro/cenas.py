@@ -23,8 +23,7 @@
 # Contas conferidas em Python (numpy): 23, −51 (Sarrus e Laplace pelas linhas 1 e 2), −2, 13, 0; raízes 4/−1, 2/3, −3/2.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Determinante do zero: 2 × 2, Sarrus e o teste da inversa · Matemática ENEM, Determinantes episódio 1"
-
+TITULO = "Determinante do zero: 2 × 2, Sarrus e o teste da inversa | Determinantes Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

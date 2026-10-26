@@ -52,8 +52,7 @@
 # Ponte (do usuário): Logaritmos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função exponencial: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Função exponencial episódio 6"
-
+TITULO = "Revisão de função exponencial: 9 pegadinhas e 5 questões estilo ENEM | Função Exponencial Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **As 5 Pegadinhas da Tese no ENEM + 5 Questões Inéditas | Ep. 7** ← recomendado (com capa A)
+1. **As 5 Pegadinhas da Tese no ENEM + 5 Questões Inéditas | Interpretação Ep. 7** ← recomendado (com capa A)
 2. Você Cai Nestas Pegadinhas de Interpretação? | Linguagens ENEM Ep. 7 (com capa B)
 3. Tese no ENEM: Revisão Completa e Treino | Linguagens ENEM Ep. 7 (com capa C)
 4. Interpretação de Texto ENEM: Revisão Geral com Questões | Ep. 7
@@ -64,7 +64,10 @@ Quase toda questão de Linguagens — e muitas de Humanas e Natureza — termina
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: quantas das 5 questões você acertou?
-⬅️ Episódio 6: A tese implícita · ▶️ Série completa na playlist "Linguagens ENEM do Zero".
+
+⬅️ Episódio anterior: Sem Dizer "Eu Defendo", o Texto Tem Tese | Interpretação Ep. 6
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -73,7 +76,7 @@ Quase toda questão de Linguagens — e muitas de Humanas e Natureza — termina
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, tese, compreensão global, questões enem, pegadinhas enem, redução, extrapolação, contradição, verdade do mundo, revisão enem, português enem, linguagens do zero, enem 2026, vestibular, exercícios de interpretação
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, tese, compreensão global, questões enem, pegadinhas enem, redução, extrapolação, contradição, verdade do mundo, revisão enem, português enem, linguagens do zero, enem 2026, vestibular, exercícios de interpretação
 ```
 
 ## Hashtags
@@ -117,6 +120,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 10:54 (checklist): card para o **Episódio 3** (armadilhas e os 6 passos), o mais citado no checklist
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"** — este é o episódio 7 de 7 da série Compreensão Global e Tese.
 
 ## Ideias de Shorts

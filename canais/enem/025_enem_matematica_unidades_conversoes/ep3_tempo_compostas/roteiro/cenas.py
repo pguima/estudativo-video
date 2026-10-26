@@ -28,8 +28,7 @@
 #   3. Em m/s, o número é sempre o menor.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O tempo não é decimal: horas, minutos, km/h e m/s · Matemática ENEM, Unidades e conversões, episódio 3"
-
+TITULO = "O tempo não é decimal: horas, minutos, km/h e m/s | Unidades de Medida Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

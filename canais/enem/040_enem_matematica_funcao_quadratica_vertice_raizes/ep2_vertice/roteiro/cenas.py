@@ -31,8 +31,7 @@
 #   3. x do vértice: onde ou quando. y do vértice: quanto.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O vértice da parábola do zero: máximo, mínimo e altura máxima · Matemática ENEM, Função quadrática episódio 2"
-
+TITULO = "O vértice da parábola do zero: máximo, mínimo e altura máxima | Função Quadrática Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

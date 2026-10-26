@@ -18,9 +18,9 @@ Mantenha o selo "MATEMÁTICA BÁSICA · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Bolinha Cheia ou Vazia? Intervalos Reais do Zero | Matemática Ep. 3** ← recomendado (com capa A)
+1. **Bolinha Cheia ou Vazia? Intervalos Reais do Zero | Matemática Básica Ep. 3** ← recomendado (com capa A)
 2. O Infinito É Sempre Aberto! Intervalos Reais para o ENEM (com capa B)
-3. "Acima de" Não É "A Partir de": Intervalos Reais | Matemática Ep. 3 (com capa C)
+3. "Acima de" Não É "A Partir de": Intervalos Reais | Matemática Básica Ep. 3 (com capa C)
 4. Intervalos Reais em 7 Minutos: Colchete, Reta e Inequação | ENEM
 
 ---
@@ -68,7 +68,11 @@ Num gráfico do ENEM, uma bolinha vazia em vez de cheia muda a alternativa corre
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: frete grátis acima de R$ 100 — a compra de 100 ganha?
-⬅️ Episódio 2: Conjuntos numéricos · ➡️ Episódio 4: Diagrama de Venn.
+
+⬅️ Episódio anterior: O Número Que Nunca Termina: Racional ou Irracional? | Matemática Básica Ep. 2
+➡️ Próximo episódio: Diagrama de Venn: a Palavra "Apenas" Muda Tudo | Matemática Básica Ep. 4
+
+📺 Playlist da série: Matemática Básica: Operações e Conjuntos
 
 #ENEM #MatematicaENEM #IntervalosReais
 ```
@@ -77,7 +81,7 @@ Num gráfico do ENEM, uma bolinha vazia em vez de cheia muda a alternativa corre
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, intervalos reais, intervalo aberto, intervalo fechado, intervalo semiaberto, bolinha cheia e vazia, reta numérica, inequação, infinito, colchetes, conjuntos numéricos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
+enem, matemática enem, matematica para o enem, matemática básica operações e conjuntos, estudativo, intervalos reais, intervalo aberto, intervalo fechado, intervalo semiaberto, bolinha cheia e vazia, reta numérica, inequação, infinito, colchetes, conjuntos numéricos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -120,6 +124,7 @@ enem, matemática enem, matematica para o enem, intervalos reais, intervalo aber
 - 06:23 (ponte): card para o **Episódio 4**, quando for publicado
 
 ## Playlist
+**"Matemática Básica: Operações e Conjuntos"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, depois do Episódio 2.
 
 ## Ideias de Shorts

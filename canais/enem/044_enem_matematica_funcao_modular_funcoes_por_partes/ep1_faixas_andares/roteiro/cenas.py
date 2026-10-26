@@ -30,8 +30,7 @@
 #   onde a anterior parou. 3. Hora ou fração: começou, pagou inteira.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Gastou o dobro e pagou mais que o dobro? Funções por partes · Matemática ENEM, Função modular e por partes, ep. 1"
-
+TITULO = "Gastou o dobro e pagou mais que o dobro? Funções por partes | Função Modular Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

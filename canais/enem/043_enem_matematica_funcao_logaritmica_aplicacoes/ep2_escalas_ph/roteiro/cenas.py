@@ -31,8 +31,7 @@
 #   2. Menor pH, mais ácido: cada unidade a menos é 10 vezes mais H⁺. 3. Se [H⁺] = k · 10⁻ⁿ, o pH fica entre n − 1 e n.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Escala logarítmica e pH: por que pH 2 é 1 000 vezes mais ácido que pH 5 · Matemática ENEM, Função logarítmica ep. 2"
-
+TITULO = "Escala logarítmica e pH: por que pH 2 é 1 000 vezes mais ácido que pH 5 | Função Logarítmica Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

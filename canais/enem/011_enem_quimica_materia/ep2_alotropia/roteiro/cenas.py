@@ -13,8 +13,7 @@
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 # Fórmulas escritas como se leem ("O dois", "O três"); na tela aparecem como O₂, O₃.
 
-TITULO = "Grafite e diamante são a MESMA coisa? Alotropia do zero — Química ENEM, episódio 2"
-
+TITULO = "Grafite e Diamante São a Mesma Coisa? Alotropia do Zero | Matéria e Misturas Ep. 2"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

@@ -25,8 +25,7 @@
 #   2. Taxa embutida = juros ÷ valor financiado. 3. Se existe desconto à vista, o "sem juros" tem juros.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O \"sem juros\" tem juros: a taxa escondida na entrada + 1 parcela · Matemática ENEM, Empréstimos episódio 2"
-
+TITULO = "O \"sem juros\" tem juros: a taxa escondida na entrada + 1 parcela | Financiamentos Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

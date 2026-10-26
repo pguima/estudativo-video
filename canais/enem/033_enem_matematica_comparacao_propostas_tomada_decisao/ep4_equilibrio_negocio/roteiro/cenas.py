@@ -24,8 +24,7 @@
 #   com o custo fixo. 3. "No mínimo" com resultado quebrado: arredonde para cima.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Quantas peças para empatar? Ponto de equilíbrio e meta de lucro · Matemática ENEM, Comparação de propostas episódio 4"
-
+TITULO = "Quantas peças para empatar? Ponto de equilíbrio e meta de lucro | Comparar Propostas Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

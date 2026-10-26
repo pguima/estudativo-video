@@ -18,7 +18,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos | Redação Ep. 5** ← recomendado (com capa A)
+1. **Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos | Proposta de Redação Ep. 5** ← recomendado (com capa A)
 2. Do Tema Até a Tese em 6 Passos: Oficina de Redação ENEM | Ep. 5 (com capa B)
 3. Pegue Papel e Caneta: Lendo uma Proposta Real do ENEM | Redação Ep. 5 (com capa C)
 4. Como Ler a Proposta de Redação do ENEM: Método em 6 Passos | Ep. 5
@@ -71,7 +71,11 @@ Hoje você não vai só assistir. Pegue papel e caneta: neste quinto episódio d
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: qual foi a sua tese para o tema das doenças mentais?
-⬅️ Episódio 4: tangenciamento e fuga ao tema · ➡️ Episódio 6: pegadinhas e desafio com cinco temas reais.
+
+⬅️ Episódio anterior: Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) | Proposta de Redação Ep. 4
+➡️ Próximo episódio: Você Cai Nessas 10 Pegadinhas da Redação do ENEM? | Proposta de Redação Ep. 6
+
+📺 Playlist da série: Redação: Leitura da Proposta
 
 #ENEM #RedacaoENEM #TeseDaRedacao
 ```
@@ -80,7 +84,7 @@ Hoje você não vai só assistir. Pegue papel e caneta: neste quinto episódio d
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, tese da redação, como fazer a tese, proposta de redação, frase temática, pergunta-problema, tese provisória, tangenciamento, registro civil redação, invisibilidade e registro civil, tema enem 2021, estigma doenças mentais redação, tema enem 2020, cartilha do participante, redação do zero, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, estudativo, redacao enem, tese da redação, como fazer a tese, proposta de redação, frase temática, pergunta-problema, tese provisória, tangenciamento, registro civil redação, invisibilidade e registro civil, tema enem 2021, estigma doenças mentais redação, tema enem 2020, cartilha do participante, redação do zero, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -125,6 +129,7 @@ enem, redação enem, redação do enem, redacao enem, tese da redação, como f
 - 11:40 (ponte): card para o **Episódio 6**, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"**, logo depois do Episódio 4.
 
 ## Ideias de Shorts

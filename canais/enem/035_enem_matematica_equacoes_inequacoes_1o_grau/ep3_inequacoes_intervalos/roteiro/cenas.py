@@ -29,8 +29,7 @@
 #   fica de fora. 3. Teste um número de dentro e um de fora.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Inequações do zero: o sinal que vira, os intervalos e a resposta inteira · Matemática ENEM, Equações episódio 3"
-
+TITULO = "Inequações do zero: o sinal que vira, os intervalos e a resposta inteira | Equações do 1º Grau Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

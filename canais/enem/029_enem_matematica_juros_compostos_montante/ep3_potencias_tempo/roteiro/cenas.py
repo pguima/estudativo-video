@@ -28,8 +28,7 @@
 #   tentativa, logaritmo ou regra do 72. 3. Divida pelo log do fator, nunca pela taxa.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros compostos sem calculadora: potências, tempo e a regra do 72 · Matemática ENEM, Juros compostos episódio 3"
-
+TITULO = "Juros compostos sem calculadora: potências, tempo e a regra do 72 | Juros Compostos Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

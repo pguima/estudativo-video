@@ -44,8 +44,7 @@
 # Ponte (do usuário): Ângulos, retas paralelas e transversais (abre o bloco de Geometria Plana).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de números complexos: potências de i, divisão, giros e as pegadinhas · Matemática ENEM, Complexos ep. 5"
-
+TITULO = "Revisão: potências de i, divisão, giros e as pegadinhas | Números Complexos Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -49,8 +49,7 @@
 # Ponte (do usuário): Função modular e funções definidas por partes.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função logarítmica: pH, terremotos e decibéis em 5 questões · Matemática ENEM, episódio 5"
-
+TITULO = "Revisão de função logarítmica: pH, terremotos e decibéis em 5 questões | Função Logarítmica Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

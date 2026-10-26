@@ -14,8 +14,7 @@
 #   3. Para testar, divida pelos primos até a raiz.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O 1 é primo? O 2 é primo? Números primos do zero — Matemática ENEM, Divisibilidade episódio 2"
-
+TITULO = "O 1 é Primo? E o 2? Números Primos do Zero | Divisibilidade Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

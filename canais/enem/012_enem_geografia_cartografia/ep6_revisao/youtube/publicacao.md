@@ -18,7 +18,7 @@ A capa B costuma render comentário ("acertei 7!"). Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Revisão de Cartografia para o ENEM: 9 Pegadinhas e 5 Questões | Ep. 6** ← recomendado (com capa A ou B)
+1. **Revisão de Cartografia para o ENEM: 9 Pegadinhas e 5 Questões | Cartografia Ep. 6** ← recomendado (com capa A ou B)
 2. Está Pronto para Cartografia no ENEM? Revisão Completa | Cartografia Ep. 6
 3. 9 Pegadinhas de Cartografia que Derrubam no ENEM | Cartografia Ep. 6 (com capa B)
 4. Cartografia: 5 Questões Inéditas Resolvidas | Geografia ENEM
@@ -62,6 +62,8 @@ A cartografia é a porta de entrada da Geografia no ENEM e cai de dois jeitos: c
 📺 A série completa:
 Ep. 1 Escala · Ep. 2 Coordenadas e orientação · Ep. 3 Projeções · Ep. 4 Curvas de nível · Ep. 5 Mapas temáticos e anamorfoses · Ep. 6 Revisão
 
+⬅️ Episódio anterior: Anamorfose do Zero: o Mapa em Que a Índia Fica Gigante | Cartografia Ep. 5
+
 👍 Se a série te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder a próxima série.
 💬 Comente: quantas das 9 pegadinhas você acertou?
 ➡️ Próximo assunto: Fusos horários (cada 15° de longitude = 1 hora).
@@ -73,7 +75,7 @@ Ep. 1 Escala · Ep. 2 Coordenadas e orientação · Ep. 3 Projeções · Ep. 4 C
 
 ## Tags
 ```
-enem, geografia enem, cartografia, revisão cartografia, cartografia enem, pegadinhas enem, questões de cartografia, escala cartográfica, coordenadas geográficas, projeções cartográficas, mercator e peters, curvas de nível, declividade, anamorfose, mapas temáticos, revisão enem, enem 2026, geografia do zero, aula de geografia, cartografia do zero, exercícios resolvidos
+enem, geografia enem, cartografia, estudativo, revisão cartografia, cartografia enem, pegadinhas enem, questões de cartografia, escala cartográfica, coordenadas geográficas, projeções cartográficas, mercator e peters, curvas de nível, declividade, anamorfose, mapas temáticos, revisão enem, enem 2026, geografia do zero, aula de geografia, cartografia do zero, exercícios resolvidos
 ```
 
 ## Hashtags
@@ -116,6 +118,7 @@ enem, geografia enem, cartografia, revisão cartografia, cartografia enem, pegad
 - 08:59 (checklist): card para o **Episódio 1** (quem precisa rever do começo)
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 **"Cartografia do Zero — Geografia ENEM"**, como último vídeo. Vale também fixar este episódio no topo da playlist como "comece por aqui se for revisar".
 
 ## Ideias de Shorts

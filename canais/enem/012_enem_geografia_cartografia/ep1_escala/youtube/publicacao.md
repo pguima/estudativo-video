@@ -71,7 +71,8 @@ Um mapa de 2 metros na parede da escola pode ter escala PEQUENA. Como assim? Nes
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder os próximos episódios.
 💬 Comente: você também achava que o mapa da parede tinha escala grande?
-➡️ Próximo episódio: Coordenadas geográficas.
+
+➡️ Próximo episódio: Latitude e Longitude do Zero: a Batalha Naval do Planeta | Cartografia Ep. 2
 
 #ENEM #GeografiaENEM #Cartografia
 ```
@@ -80,7 +81,7 @@ Um mapa de 2 metros na parede da escola pode ter escala PEQUENA. Como assim? Nes
 
 ## Tags
 ```
-enem, geografia enem, cartografia, escala cartográfica, escala do mapa, escala numérica, escala gráfica, escala grande e pequena, como calcular escala, distância real no mapa, corte cinco zeros, centímetro para quilômetro, mapa ampliado, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, vestibular, cartografia do zero
+enem, geografia enem, cartografia, estudativo, escala cartográfica, escala do mapa, escala numérica, escala gráfica, escala grande e pequena, como calcular escala, distância real no mapa, corte cinco zeros, centímetro para quilômetro, mapa ampliado, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, vestibular, cartografia do zero
 ```
 
 ## Hashtags (no fim da descrição; as 3 primeiras aparecem acima do título)
@@ -120,6 +121,7 @@ enem, geografia enem, cartografia, escala cartográfica, escala do mapa, escala 
 - 08:05 (ponte): card para o **Episódio 2**, quando ele for publicado
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 Crie a playlist **"Cartografia do Zero — Geografia ENEM"** com os 6 episódios em ordem, e coloque-a também dentro de "Geografia ENEM do Zero".
 Sobre o vídeo antigo (`_antigo_video_unico`, versão única de 7:13): se você já publicou, deixe-o como "resumo para revisão" no fim da playlist; se não publicou, a série o substitui.
 

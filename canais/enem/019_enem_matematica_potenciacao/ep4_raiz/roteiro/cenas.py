@@ -21,8 +21,7 @@
 #   número" · "na dúvida, teste com números de raiz exata (9 e 16)".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "√(9 + 16) NÃO é √9 + √16: raiz do zero, sem decorar · Matemática ENEM, episódio 4"
-
+TITULO = "√(9 + 16) NÃO é √9 + √16: raiz do zero, sem decorar | Potenciação Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

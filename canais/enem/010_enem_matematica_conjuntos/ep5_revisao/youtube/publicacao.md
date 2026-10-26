@@ -18,7 +18,7 @@ Mantenha o selo "MATEMÁTICA BÁSICA · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **As 6 Pegadinhas de Matemática Básica do ENEM | Revisão Ep. 5** ← recomendado (com capa A)
+1. **As 6 Pegadinhas Mais Comuns do ENEM | Matemática Básica Ep. 5** ← recomendado (com capa A)
 2. Verdadeiro ou Falso? Revisão de Matemática Básica para o ENEM (com capa B)
 3. Sinais, Conjuntos, Intervalos e Venn: Revisão Completa | Ep. 5 (com capa C)
 4. 5 Questões Inéditas de Matemática Básica no Estilo ENEM
@@ -58,6 +58,10 @@ Este assunto quase não cai sozinho no ENEM, mas aparece dentro de quase todas a
 10:10 A meta: 30 questões, 21 acertos
 10:23 Próximo assunto
 
+⬅️ Episódio anterior: Diagrama de Venn: a Palavra "Apenas" Muda Tudo | Matemática Básica Ep. 4
+
+📺 Playlist da série: Matemática Básica: Operações e Conjuntos
+
 👍 Se a revisão te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: quantas das 5 questões você acertou?
 📚 Série completa: 1 Ordem e sinais · 2 Conjuntos numéricos · 3 Intervalos · 4 Diagrama de Venn · 5 Revisão.
@@ -69,7 +73,7 @@ Este assunto quase não cai sozinho no ENEM, mas aparece dentro de quase todas a
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, revisão enem, pegadinhas enem, matemática básica, regra de sinais, ordem das operações, conjuntos numéricos, racional ou irracional, intervalos reais, diagrama de venn, questões inéditas enem, verdadeiro ou falso, matemática do zero, aula de matemática, enem 2026, vestibular
+enem, matemática enem, matematica para o enem, matemática básica operações e conjuntos, estudativo, revisão enem, pegadinhas enem, matemática básica, regra de sinais, ordem das operações, conjuntos numéricos, racional ou irracional, intervalos reais, diagrama de venn, questões inéditas enem, verdadeiro ou falso, matemática do zero, aula de matemática, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -116,6 +120,7 @@ enem, matemática enem, matematica para o enem, revisão enem, pegadinhas enem, 
 - 02:13 (V ou F de Venn): card para o **Episódio 4**
 
 ## Playlist
+**"Matemática Básica: Operações e Conjuntos"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, como último vídeo do primeiro assunto.
 
 ## Ideias de Shorts

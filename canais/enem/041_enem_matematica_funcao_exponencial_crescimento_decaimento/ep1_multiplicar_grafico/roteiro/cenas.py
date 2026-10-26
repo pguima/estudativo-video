@@ -27,8 +27,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função exponencial do zero: multiplicar em vez de somar e o gráfico · Matemática ENEM, Exponencial episódio 1"
-
+TITULO = "Função exponencial do zero: multiplicar em vez de somar e o gráfico | Função Exponencial Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

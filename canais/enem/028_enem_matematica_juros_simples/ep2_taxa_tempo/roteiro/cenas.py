@@ -28,8 +28,7 @@
 #   3. A multa é o ingresso; os juros de mora são o taxímetro.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros simples: taxa ao ano, prazo em meses e o boleto atrasado · Matemática ENEM, Juros simples episódio 2"
-
+TITULO = "Juros simples: taxa ao ano, prazo em meses e o boleto atrasado | Juros Simples Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

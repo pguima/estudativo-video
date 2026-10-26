@@ -16,8 +16,7 @@
 #   D ]20, +∞[ "a partir de 20"   → confundiu "acima de" com "a partir de" (erro 3)
 #   E [20, +∞] "a partir de 20"   → erros 1 e 2 juntos
 
-TITULO = "Bolinha cheia ou vazia? Intervalos reais do zero — Matemática ENEM, episódio 3"
-
+TITULO = "Bolinha Cheia ou Vazia? Intervalos Reais do Zero | Matemática Básica Ep. 3"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

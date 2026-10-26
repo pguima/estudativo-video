@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Assunto Não É Tese: Interpretação de Texto do Zero | Linguagens Ep. 1** ← recomendado (com capa A)
+1. **Assunto Não É Tese: Interpretação de Texto do Zero | Interpretação Ep. 1** ← recomendado (com capa A)
 2. Leu o Texto e Não Sabe o Que Marcar? Tese do Zero | ENEM (com capa B)
 3. Mesmas Palavras, Outra Tese: a Armadilha do ENEM | Linguagens Ep. 1 (com capa C)
 4. Tema, Assunto e Tese em 12 Minutos | Interpretação de Texto ENEM
@@ -70,7 +70,10 @@ Dois textos podem falar do mesmo assunto e defender coisas opostas. Se você só
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: quantas das três frases do exercício você acertou?
-➡️ Episódio 2: o resumo em uma frase.
+
+➡️ Próximo episódio: Resuma Qualquer Texto em 1 Frase: a Fórmula | Interpretação Ep. 2
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -79,7 +82,7 @@ Dois textos podem falar do mesmo assunto e defender coisas opostas. Se você só
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, tese, tema e tese, assunto e tese, ideia central, ideias secundárias, texto argumentativo, compreensão de texto, como achar a tese, português enem, linguagens do zero, aula de português, revisão enem, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, tese, tema e tese, assunto e tese, ideia central, ideias secundárias, texto argumentativo, compreensão de texto, como achar a tese, português enem, linguagens do zero, aula de português, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -122,6 +125,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 11:20 (ponte): card para o **Episódio 2**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"** (nova), como primeiro vídeo.
 
 ## Ideias de Shorts

@@ -13,8 +13,7 @@
 # Desafio: os 5 temas da seção 03; 2016 resolvido ao vivo como modelo (pergunta e tese elaboradas para fins didáticos).
 # Cores: azul = definição/tema · verde = método · amarelo = armadilha · vermelho = erro/penalidade · roxo = regra oficial.
 
-TITULO = "Revisão: as pegadinhas da leitura da proposta e o desafio dos 5 temas — Redação ENEM, episódio 6"
-
+TITULO = "Você Cai Nessas 10 Pegadinhas da Redação do ENEM? | Proposta de Redação Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

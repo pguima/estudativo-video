@@ -30,8 +30,7 @@
 #   2. Soma dentro do log não tem regra. 3. Número entre 0 e 1 tem log negativo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "As 3 propriedades do logaritmo e o kit log 2 e log 3 · Matemática ENEM, Logaritmos episódio 2"
-
+TITULO = "As 3 propriedades do logaritmo e o kit log 2 e log 3 | Logaritmos Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

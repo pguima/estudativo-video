@@ -18,8 +18,7 @@
 #   3. Pediram "quantas vezes"? Ainda falta dividir.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "MMC: quando as coisas voltam a coincidir — Matemática ENEM, Divisibilidade episódio 4"
-
+TITULO = "Quando os Ônibus Voltam a Sair Juntos? MMC do Zero | Divisibilidade Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

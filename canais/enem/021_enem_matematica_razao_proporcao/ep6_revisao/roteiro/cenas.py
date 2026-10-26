@@ -39,8 +39,7 @@
 # Ponte (do usuário): Grandezas proporcionais (gráfico, tabela e constante).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de razão, proporção e regra de três: treino, 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 6"
-
+TITULO = "Revisão: treino, 9 pegadinhas e 5 questões estilo ENEM | Razão e Proporção Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -26,8 +26,7 @@
 #   3. Dividir: conserva a primeira, inverte a segunda.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "1/2 + 1/3 dá 2/5? As quatro operações com frações sem calculadora · Matemática ENEM, episódio 3"
-
+TITULO = "1/2 + 1/3 dá 2/5? As quatro operações com frações sem calculadora | Frações Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

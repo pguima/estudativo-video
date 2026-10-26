@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Achou o MDC e Errou a Questão? O Passo Que Falta | Matemática Ep. 5** ← recomendado (com capa A)
-2. MDC: a Maior Régua Que Mede Tudo Certinho | Matemática Ep. 5 (com capa B)
-3. MDC pela Fatoração e por Euclides | Matemática Ep. 5 (com capa C)
-4. MDC no Varal: Fatore Todos os Números Juntos | Matemática Ep. 5
+1. **Achou o MDC e Errou a Questão? O Passo Que Falta | Divisibilidade Ep. 5** ← recomendado (com capa A)
+2. MDC: a Maior Régua Que Mede Tudo Certinho | Divisibilidade Ep. 5 (com capa B)
+3. MDC pela Fatoração e por Euclides | Divisibilidade Ep. 5 (com capa C)
+4. MDC no Varal: Fatore Todos os Números Juntos | Divisibilidade Ep. 5
 
 ---
 
@@ -70,7 +70,9 @@ Você calcula o MDC certinho e ainda erra a questão. Isso acontece porque o ENE
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já tinha respondido o MDC quando a questão pedia outra coisa?
-⬅️ Episódio 4: MMC · ➡️ Episódio 6: MMC ou MDC? A decisão em 10 segundos.
+
+⬅️ Episódio anterior: Quando os Ônibus Voltam a Sair Juntos? MMC do Zero | Divisibilidade Ep. 4
+➡️ Próximo episódio: MMC ou MDC? Repete ou Reparte, a Decisão em 10 s | Divisibilidade Ep. 6
 
 #ENEM #MatematicaENEM #MDC
 ```
@@ -79,7 +81,7 @@ Você calcula o MDC certinho e ainda erra a questão. Isso acontece porque o ENE
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mdc, máximo divisor comum, como calcular mdc, mdc pela fatoração, algoritmo de euclides, mdc enem, questão de tábuas mdc, mdc grupos, divisibilidade, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mdc, máximo divisor comum, como calcular mdc, mdc pela fatoração, algoritmo de euclides, mdc enem, questão de tábuas mdc, mdc grupos, divisibilidade, matemática básica
 ```
 
 ## Hashtags
@@ -124,6 +126,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 11:12 (ponte): card para o **Episódio 6**, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 4.
 
 ## Ideias de Shorts

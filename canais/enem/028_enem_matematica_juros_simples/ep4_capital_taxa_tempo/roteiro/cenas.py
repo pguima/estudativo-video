@@ -30,8 +30,7 @@
 #   2. Triplicar é ganhar duas vezes o capital em juros. 3. A entrada não é empréstimo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros simples: descubra capital, taxa ou tempo (e quando o dinheiro dobra) · Matemática ENEM, Juros simples episódio 4"
-
+TITULO = "Juros simples: descubra capital, taxa ou tempo (e quando o dinheiro dobra) | Juros Simples Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

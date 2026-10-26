@@ -27,8 +27,7 @@
 # CTA: |x − 3| ≤ 5 → de −2 a 8. Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação e inequação modular do zero: dois casos, entre e fora, e a tolerância · Matemática ENEM, Função Modular ep. 4"
-
+TITULO = "Equação e inequação modular do zero: dois casos, entre e fora, e a tolerância | Função Modular Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -51,8 +51,7 @@
 # Ponte (do usuário): Progressão geométrica e soma dos infinitos termos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de progressão aritmética: palitos, poupança e postes · Matemática ENEM, PA ep. 5"
-
+TITULO = "Revisão de progressão aritmética: palitos, poupança e postes | PA Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

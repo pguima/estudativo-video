@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **O 1 é Primo? E o 2? Números Primos do Zero | Matemática Ep. 2** ← recomendado (com capa A)
-2. Os 25 Primos Até 100 e o Teste da Raiz | Matemática Ep. 2 (com capa B)
-3. Primos São os Tijolos dos Números | Matemática Ep. 2 (com capa C)
-4. Números Primos e Compostos Sem Decoreba | Matemática Ep. 2
+1. **O 1 é Primo? E o 2? Números Primos do Zero | Divisibilidade Ep. 2** ← recomendado (com capa A)
+2. Os 25 Primos Até 100 e o Teste da Raiz | Divisibilidade Ep. 2 (com capa B)
+3. Primos São os Tijolos dos Números | Divisibilidade Ep. 2 (com capa C)
+4. Números Primos e Compostos Sem Decoreba | Divisibilidade Ep. 2
 
 ---
 
@@ -66,7 +66,9 @@ O 1 é primo? O 2 é primo? Metade das pessoas erra as duas, e as duas caem em p
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: antes desta aula, você achava que o 1 era primo?
-⬅️ Episódio 1: múltiplos, divisores e critérios · ➡️ Episódio 3: fatoração e a fórmula dos divisores.
+
+⬅️ Episódio anterior: 6 813 é Divisível por 9? Descubra em 2 Segundos | Divisibilidade Ep. 1
+➡️ Próximo episódio: O 360 Tem 24 Divisores: Descubra em 15 Segundos | Divisibilidade Ep. 3
 
 #ENEM #MatematicaENEM #NumerosPrimos
 ```
@@ -75,7 +77,7 @@ O 1 é primo? O 2 é primo? Metade das pessoas erra as duas, e as duas caem em p
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, números primos, primos até 100, o 1 é primo, o 2 é primo, número composto, crivo de eratóstenes, primos entre si, como saber se um número é primo, divisibilidade, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, números primos, primos até 100, o 1 é primo, o 2 é primo, número composto, crivo de eratóstenes, primos entre si, como saber se um número é primo, divisibilidade, matemática básica
 ```
 
 ## Hashtags
@@ -118,6 +120,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 07:17 (ponte): card para o **Episódio 3**, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 1.
 
 ## Ideias de Shorts

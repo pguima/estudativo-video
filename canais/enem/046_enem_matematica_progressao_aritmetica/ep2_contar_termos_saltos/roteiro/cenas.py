@@ -30,8 +30,7 @@
 #   2. Contar termos: (último − primeiro) ÷ razão, mais 1. 3. Três em PA: x − r, x e x + r.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Postes, múltiplos e o erro de um: contar termos na PA · Matemática ENEM, Progressão Aritmética episódio 2"
-
+TITULO = "Postes, múltiplos e o erro de um: contar termos na PA | PA Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

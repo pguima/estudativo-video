@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **6 813 é Divisível por 9? Descubra em 2 Segundos | Matemática Ep. 1** ← recomendado (com capa A)
-2. 36 Quadradinhos: Todos os Divisores Sem Esquecer | Matemática Ep. 1 (com capa B)
-3. Múltiplo ou Divisor? Nunca Mais Confunda | Matemática Ep. 1 (com capa C)
-4. Critérios de Divisibilidade do Zero: 2, 3, 5, 9 e 10 | Matemática Ep. 1
+1. **6 813 é Divisível por 9? Descubra em 2 Segundos | Divisibilidade Ep. 1** ← recomendado (com capa A)
+2. 36 Quadradinhos: Todos os Divisores Sem Esquecer | Divisibilidade Ep. 1 (com capa B)
+3. Múltiplo ou Divisor? Nunca Mais Confunda | Divisibilidade Ep. 1 (com capa C)
+4. Critérios de Divisibilidade do Zero: 2, 3, 5, 9 e 10 | Divisibilidade Ep. 1
 
 ---
 
@@ -78,7 +78,8 @@ Dá para saber se 6 813 é divisível por 9 em dois segundos, sem fazer a divis�
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já conhecia o truque de somar os algarismos?
-➡️ Episódio 2: números primos, os tijolos de todos os números.
+
+➡️ Próximo episódio: O 1 é Primo? E o 2? Números Primos do Zero | Divisibilidade Ep. 2
 
 #ENEM #MatematicaENEM #Divisibilidade
 ```
@@ -87,7 +88,7 @@ Dá para saber se 6 813 é divisível por 9 em dois segundos, sem fazer a divis�
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, divisibilidade, critérios de divisibilidade, múltiplos e divisores, divisor, múltiplo, divisível por 3, divisível por 9, soma dos algarismos, mmc e mdc, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, divisibilidade, critérios de divisibilidade, múltiplos e divisores, divisor, múltiplo, divisível por 3, divisível por 9, soma dos algarismos, mmc e mdc, matemática básica
 ```
 
 ## Hashtags
@@ -129,6 +130,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 10:09 (ponte): card para o **Episódio 2**
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, abrindo o bloco Divisibilidade, Primos, MMC e MDC (depois da série Operações e Conjuntos Numéricos).
 
 ## Ideias de Shorts

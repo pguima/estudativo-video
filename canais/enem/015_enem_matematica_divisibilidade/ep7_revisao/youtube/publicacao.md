@@ -19,10 +19,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Você Cai Nessas 9 Pegadinhas de MMC e MDC? | Matemática Ep. 7** ← recomendado (com capa A)
-2. MMC ou MDC? 5 Questões Inéditas Estilo ENEM | Matemática Ep. 7 (com capa B)
-3. Divisibilidade, Primos, MMC e MDC: Revisão | Matemática Ep. 7 (com capa C)
-4. Revisão Completa de MMC e MDC para o ENEM | Matemática Ep. 7
+1. **Você Cai Nessas 9 Pegadinhas de MMC e MDC? | Divisibilidade Ep. 7** ← recomendado (com capa A)
+2. MMC ou MDC? 5 Questões Inéditas Estilo ENEM | Divisibilidade Ep. 7 (com capa B)
+3. Divisibilidade, Primos, MMC e MDC: Revisão | Divisibilidade Ep. 7 (com capa C)
+4. Revisão Completa de MMC e MDC para o ENEM | Divisibilidade Ep. 7
 
 ---
 
@@ -60,6 +60,8 @@ Este assunto rende questão própria quase todo ano no ENEM, e o formato é quas
 2. Repartir em pedaços iguais, do maior tamanho possível: MDC.
 3. Na dúvida: repete ou reparte?
 
+⬅️ Episódio anterior: MMC ou MDC? Repete ou Reparte, a Decisão em 10 s | Divisibilidade Ep. 6
+
 👍 Se a série te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: quantas das nove você acertou no verdadeiro ou falso?
 ⬅️ Episódio 6: MMC ou MDC? · ➡️ Próximo assunto: Frações, decimais e dízimas.
@@ -71,7 +73,7 @@ Este assunto rende questão própria quase todo ano no ENEM, e o formato é quas
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, revisão mmc e mdc, pegadinhas mmc mdc, questões de mmc e mdc, divisibilidade, números primos, fatoração, critérios de divisibilidade, quantos divisores, mmc ou mdc, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, revisão mmc e mdc, pegadinhas mmc mdc, questões de mmc e mdc, divisibilidade, números primos, fatoração, critérios de divisibilidade, quantos divisores, mmc ou mdc, matemática básica
 ```
 
 ## Hashtags
@@ -120,6 +122,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 10:37 (próximo assunto): card para o vídeo de Frações, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 6 (fecha a série Divisibilidade, Primos, MMC e MDC).
 
 ## Ideias de Shorts

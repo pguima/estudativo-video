@@ -25,8 +25,7 @@
 #   comum. 3. Corta-se fator, nunca termo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Fatoração do zero: os 5 casos e a fração que você não pode cortar · Matemática ENEM, Álgebra episódio 3"
-
+TITULO = "Fatoração do zero: os 5 casos e a fração que você não pode cortar | Produtos Notáveis Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -33,8 +33,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Multiplicar matrizes do zero: linha por coluna · Matemática ENEM, Matrizes episódio 3"
-
+TITULO = "Multiplicar matrizes do zero: linha por coluna | Matrizes Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

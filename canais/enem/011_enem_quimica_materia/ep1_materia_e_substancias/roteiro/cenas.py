@@ -13,8 +13,7 @@
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 # Fórmulas escritas como se leem ("O dois", "H dois O", "F e", "N a C l"); na tela aparecem como O₂, H₂O, Fe, NaCl.
 
-TITULO = "O₂ tem 2 átomos e não é composta? Matéria e substância simples × composta do zero — Química ENEM, episódio 1"
-
+TITULO = "O₂ Tem 2 Átomos e Não É Composta? Química do Zero | Matéria e Misturas Ep. 1"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Sem Dizer "Eu Defendo", o Texto Tem Tese | Linguagens ENEM Ep. 6** ← recomendado (com capa A)
+1. **Sem Dizer "Eu Defendo", o Texto Tem Tese | Interpretação Ep. 6** ← recomendado (com capa A)
 2. Elogio Irônico É Crítica: Não Caia Nessa | Linguagens ENEM Ep. 6 (com capa B)
 3. A Opinião Está na Escolha: a Tese Implícita | ENEM Ep. 6 (com capa C)
 4. Tese Implícita e Ironia: Interpretação de Texto do Zero | ENEM
@@ -69,7 +69,11 @@ Um texto pode não ter nenhuma frase de opinião e mesmo assim defender uma idei
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: qual foi o elogio mais irônico que você já ouviu?
-⬅️ Episódio 5: As pistas que entregam a tese · ➡️ Episódio 7: Estratégia e revisão.
+
+⬅️ Episódio anterior: O Texto Avisa Onde Está a Tese: as Placas | Interpretação Ep. 5
+➡️ Próximo episódio: As 5 Pegadinhas da Tese no ENEM + 5 Questões Inéditas | Interpretação Ep. 7
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -78,7 +82,7 @@ Um texto pode não ter nenhuma frase de opinião e mesmo assim defender uma idei
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, tese implícita, implícito e explícito, ironia, ironia enem, inferência, crônica, charge, extrapolação, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, tese implícita, implícito e explícito, ironia, ironia enem, inferência, crônica, charge, extrapolação, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -121,6 +125,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 07:51 (ponte): card para o **Episódio 7**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"**, depois do Episódio 5.
 
 ## Ideias de Shorts

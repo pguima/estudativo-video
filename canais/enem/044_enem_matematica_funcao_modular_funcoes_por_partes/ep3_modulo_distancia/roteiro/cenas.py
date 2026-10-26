@@ -31,8 +31,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Módulo do zero: distância, o gráfico em V e o rebatimento · Matemática ENEM, Função Modular ep. 3"
-
+TITULO = "Módulo do zero: distância, o gráfico em V e o rebatimento | Função Modular Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

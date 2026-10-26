@@ -32,8 +32,7 @@
 #   fator da inflação. 3. Inflação caindo não é preço caindo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Inflação de 100% e o dinheiro vira pó? Inflação acumulada e poder de compra · Matemática ENEM, Taxas e Inflação episódio 3"
-
+TITULO = "Inflação de 100% e o dinheiro vira pó? Inflação acumulada e poder de compra | Taxas e Inflação Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

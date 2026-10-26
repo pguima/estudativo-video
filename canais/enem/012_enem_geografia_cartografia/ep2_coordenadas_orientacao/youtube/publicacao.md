@@ -79,7 +79,9 @@ Com só dois números, o GPS sabe exatamente onde você está em qualquer lugar 
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder os próximos episódios.
 💬 Comente: você já tinha caído na pegadinha do 40° oeste?
-⬅️ Episódio 1: Escala · ➡️ Episódio 3: Projeções.
+
+⬅️ Episódio anterior: Escala do Mapa do Zero: o Zoom que o ENEM Cobra | Cartografia Ep. 1
+➡️ Próximo episódio: Por Que Todo Mapa Mente: Mercator x Peters | Cartografia Ep. 3
 
 #ENEM #GeografiaENEM #Cartografia
 ```
@@ -88,7 +90,7 @@ Com só dois números, o GPS sabe exatamente onde você está em qualquer lugar 
 
 ## Tags
 ```
-enem, geografia enem, cartografia, coordenadas geográficas, latitude e longitude, paralelos e meridianos, equador, meridiano de greenwich, hemisférios, trópico de capricórnio, círculos polares, rosa dos ventos, pontos cardeais, pontos colaterais, declinação magnética, equinócio, distância entre coordenadas, 1 grau 111 km, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
+enem, geografia enem, cartografia, estudativo, coordenadas geográficas, latitude e longitude, paralelos e meridianos, equador, meridiano de greenwich, hemisférios, trópico de capricórnio, círculos polares, rosa dos ventos, pontos cardeais, pontos colaterais, declinação magnética, equinócio, distância entre coordenadas, 1 grau 111 km, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
 ```
 
 ## Hashtags (no fim da descrição; as 3 primeiras aparecem acima do título)
@@ -131,6 +133,7 @@ enem, geografia enem, cartografia, coordenadas geográficas, latitude e longitud
 - 10:37 (ponte): card para o **Episódio 3**, quando ele for publicado
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 **"Cartografia do Zero — Geografia ENEM"**, logo depois do Episódio 1.
 
 ## Ideias de Shorts

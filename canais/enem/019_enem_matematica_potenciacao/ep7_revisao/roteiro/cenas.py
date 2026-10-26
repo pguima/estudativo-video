@@ -33,8 +33,7 @@
 # Ponte: Notação científica e ordem de grandeza (depende das potências de 10).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de potenciação e radiciação: 10 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 7"
-
+TITULO = "Revisão de potenciação e radiciação: 10 pegadinhas e 5 questões estilo ENEM | Potenciação Ep. 7"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

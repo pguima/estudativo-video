@@ -30,8 +30,7 @@
 #   é só uma estimativa; na prova, divida. 3. Rendimento abaixo da inflação é perda, mesmo com saldo maior.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Rendeu 8%, a inflação foi 10%: quanto você perdeu? Taxa real · Matemática ENEM, Taxas e Inflação episódio 4"
-
+TITULO = "Rendeu 8%, a inflação foi 10%: quanto você perdeu? Taxa real | Taxas e Inflação Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

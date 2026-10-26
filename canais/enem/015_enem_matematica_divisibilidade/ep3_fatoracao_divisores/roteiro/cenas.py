@@ -16,8 +16,7 @@
 #   3. Divisores: some 1 em cada expoente e multiplique.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O 360 tem 24 divisores: fatoração em primos e a fórmula dos divisores — Matemática ENEM, episódio 3"
-
+TITULO = "O 360 Tem 24 Divisores: Descubra em 15 Segundos | Divisibilidade Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

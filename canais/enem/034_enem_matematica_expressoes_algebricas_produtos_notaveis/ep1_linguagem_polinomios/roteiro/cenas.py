@@ -23,8 +23,7 @@
 #   3. Na distributiva, todos cumprimentam todos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Álgebra do zero: traduzir frases, valor numérico e distributiva · Matemática ENEM, Expressões algébricas episódio 1"
-
+TITULO = "Álgebra do zero: traduzir frases, valor numérico e distributiva | Produtos Notáveis Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

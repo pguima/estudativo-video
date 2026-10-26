@@ -24,8 +24,7 @@
 #   coeficiente. 3. Nunca divida por x: coloque x em evidência.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação do 2º grau do zero: coeficientes com sinal e incompletas sem fórmula · Matemática ENEM, 2º grau episódio 1"
-
+TITULO = "Equação do 2º grau do zero: coeficientes com sinal e incompletas sem fórmula | Bhaskara Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

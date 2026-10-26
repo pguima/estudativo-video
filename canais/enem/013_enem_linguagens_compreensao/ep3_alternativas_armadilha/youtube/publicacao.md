@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **As Alternativas Erradas do ENEM Seguem 5 Moldes | Linguagens Ep. 3** ← recomendado (com capa A)
+1. **As Alternativas Erradas do ENEM Seguem 5 Moldes | Interpretação Ep. 3** ← recomendado (com capa A)
 2. Elimine Alternativas em Segundos: o Método de 6 Passos | ENEM (com capa B)
 3. É Verdade, Mas Não Está no Texto: a Armadilha do ENEM | Ep. 3 (com capa C)
 4. Redução, Extrapolação e Contradição: Interpretação de Texto ENEM
@@ -74,7 +74,11 @@ As alternativas erradas do ENEM não são aleatórias: quase todas seguem cinco 
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: quantas armadilhas da questão das cisternas você acertou?
-⬅️ Episódio 2: O resumo em uma frase · ➡️ Episódio 4: Onde a tese se esconde.
+
+⬅️ Episódio anterior: Resuma Qualquer Texto em 1 Frase: a Fórmula | Interpretação Ep. 2
+➡️ Próximo episódio: A Primeira Frase Pode Ser a Armadilha | Interpretação Ep. 4
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -83,7 +87,7 @@ As alternativas erradas do ENEM não são aleatórias: quase todas seguem cinco 
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, alternativas erradas, como eliminar alternativas, distrator, redução, extrapolação, contradição, verdade do mundo, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, alternativas erradas, como eliminar alternativas, distrator, redução, extrapolação, contradição, verdade do mundo, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -128,6 +132,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 10:41 (ponte): card para o **Episódio 4**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"**, depois do Episódio 2.
 
 ## Ideias de Shorts

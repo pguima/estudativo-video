@@ -18,8 +18,7 @@
 #   3. Simplificar é dividir em cima e embaixo pelo mesmo número; pelo MDC, de uma vez.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O que é uma fração de verdade: os 4 significados e como simplificar · Matemática ENEM, episódio 1"
-
+TITULO = "O que é uma fração de verdade: os 4 significados e como simplificar | Frações Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

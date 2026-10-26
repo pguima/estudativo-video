@@ -18,9 +18,9 @@ Mantenha o selo "MATEMÁTICA BÁSICA · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Diagrama de Venn: a Palavra "Apenas" Muda Tudo | Matemática Ep. 4** ← recomendado (com capa A)
+1. **Diagrama de Venn: a Palavra "Apenas" Muda Tudo | Matemática Básica Ep. 4** ← recomendado (com capa A)
 2. A Questão Ponto Garantido do ENEM: Diagrama de Venn do Zero (com capa B)
-3. Quem Foi Contado Duas Vezes? Diagrama de Venn | Matemática Ep. 4 (com capa C)
+3. Quem Foi Contado Duas Vezes? Diagrama de Venn | Matemática Básica Ep. 4 (com capa C)
 4. Diagrama de Venn com 2 e 3 Grupos Sem Decorar Fórmula | ENEM
 
 ---
@@ -69,7 +69,11 @@ Esta é a questão mais previsível de Matemática do ENEM: cai quase todo ano, 
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já tinha caído na pegadinha do "apenas"?
-⬅️ Episódio 3: Intervalos reais · ➡️ Episódio 5: Revisão geral.
+
+⬅️ Episódio anterior: Bolinha Cheia ou Vazia? Intervalos Reais do Zero | Matemática Básica Ep. 3
+➡️ Próximo episódio: As 6 Pegadinhas Mais Comuns do ENEM | Matemática Básica Ep. 5
+
+📺 Playlist da série: Matemática Básica: Operações e Conjuntos
 
 #ENEM #MatematicaENEM #DiagramaDeVenn
 ```
@@ -78,7 +82,7 @@ Esta é a questão mais previsível de Matemática do ENEM: cai quase todo ano, 
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, diagrama de venn, conjuntos, união e interseção, operações com conjuntos, venn três conjuntos, questão de conjuntos enem, apenas a, complementar, conjuntos disjuntos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
+enem, matemática enem, matematica para o enem, matemática básica operações e conjuntos, estudativo, diagrama de venn, conjuntos, união e interseção, operações com conjuntos, venn três conjuntos, questão de conjuntos enem, apenas a, complementar, conjuntos disjuntos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -121,6 +125,7 @@ enem, matemática enem, matematica para o enem, diagrama de venn, conjuntos, uni
 - 09:11 (ponte): card para o **Episódio 5**, quando for publicado
 
 ## Playlist
+**"Matemática Básica: Operações e Conjuntos"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, depois do Episódio 3.
 
 ## Ideias de Shorts

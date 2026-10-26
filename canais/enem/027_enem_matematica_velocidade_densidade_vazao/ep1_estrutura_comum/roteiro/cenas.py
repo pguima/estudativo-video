@@ -23,8 +23,7 @@
 #   2. Taxa: divida. Numerador: multiplique. Denominador: divida ao contrário. 3. A taxa não muda com a quantidade.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Velocidade, densidade e vazão são UMA conta só · Matemática ENEM, Taxas episódio 1"
-
+TITULO = "Velocidade, densidade e vazão são UMA conta só | Velocidade e Vazão Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

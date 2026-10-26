@@ -16,8 +16,7 @@
 #   3. Dividir por menos de 1 faz o número crescer.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Dividi 4,8 por 0,12 e deu 40: decimais sem calculadora · Matemática ENEM, episódio 5"
-
+TITULO = "Dividi 4,8 por 0,12 e deu 40: decimais sem calculadora | Frações Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

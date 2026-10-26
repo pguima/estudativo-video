@@ -31,8 +31,7 @@
 # Contas conferidas em trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Área máxima e receita máxima: otimização com a parábola · Matemática ENEM, Função quadrática episódio 3"
-
+TITULO = "Área máxima e receita máxima: otimização com a parábola | Função Quadrática Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

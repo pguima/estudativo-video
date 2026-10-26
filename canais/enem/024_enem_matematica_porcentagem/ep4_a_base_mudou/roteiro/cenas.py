@@ -28,8 +28,7 @@
 #   2. Aumento e desconto iguais sempre terminam abaixo. 3. Para voltar, divida pelo fator.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A base mudou: por que +20% e −20% não se anulam · Matemática ENEM, Porcentagem episódio 4"
-
+TITULO = "A base mudou: por que +20% e −20% não se anulam | Porcentagem Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

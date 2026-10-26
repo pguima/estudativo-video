@@ -43,8 +43,7 @@
 # Ponte (do usuário): Velocidade, densidade e vazão.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de escalas, plantas e mapas: 8 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 4"
-
+TITULO = "Revisão de escalas, plantas e mapas: 8 pegadinhas e 5 questões estilo ENEM | Escalas Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

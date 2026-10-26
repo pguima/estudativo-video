@@ -24,8 +24,7 @@
 #   vírgula" (número pequeno) · "maior que 1 → +, menor que 1 → −" · "escreva em notação científica e conte o coeficiente".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Notação científica do zero: a forma exata, a vírgula que anda e os algarismos significativos · Matemática ENEM, ep. 1"
-
+TITULO = "Notação científica do zero: a vírgula que anda e os significativos | Notação Científica Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

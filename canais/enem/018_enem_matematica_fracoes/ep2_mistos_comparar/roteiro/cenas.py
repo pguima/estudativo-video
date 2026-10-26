@@ -23,8 +23,7 @@
 #   3. Três ou mais frações: transforme em decimal.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "3/7 ou 3/5: qual é maior? Números mistos e comparação de frações · Matemática ENEM, episódio 2"
-
+TITULO = "3/7 ou 3/5: qual é maior? Números mistos e comparação de frações | Frações Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

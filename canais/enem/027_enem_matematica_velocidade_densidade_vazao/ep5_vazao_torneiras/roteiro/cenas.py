@@ -32,8 +32,7 @@
 #   3. Com ajuda, o tempo diminui; com ralo, aumenta.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Duas torneiras juntas: 9 horas? NÃO! · Matemática ENEM, Velocidade, densidade e vazão, episódio 5"
-
+TITULO = "Duas torneiras juntas: 9 horas? NÃO! | Velocidade e Vazão Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

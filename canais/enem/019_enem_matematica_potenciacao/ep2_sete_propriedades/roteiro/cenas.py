@@ -26,8 +26,7 @@
 #   2¹ a 2⁵" · "teste com 2 e 3".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "As 7 propriedades da potência (sem decorar nenhuma) · Matemática ENEM, episódio 2"
-
+TITULO = "As 7 propriedades da potência (sem decorar nenhuma) | Potenciação Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

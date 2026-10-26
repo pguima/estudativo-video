@@ -50,8 +50,7 @@
 # Ponte (do usuário): Polinômios e equações polinomiais.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de determinantes e sistemas: Cramer, D = 0 e as pegadinhas · Matemática ENEM, Determinantes ep. 5"
-
+TITULO = "Revisão de determinantes e sistemas: Cramer, D = 0 e as pegadinhas | Determinantes Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

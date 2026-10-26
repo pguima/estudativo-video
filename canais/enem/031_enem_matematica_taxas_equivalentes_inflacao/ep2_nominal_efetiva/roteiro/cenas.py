@@ -27,8 +27,7 @@
 #   porcentagens.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "24% ao ano que custa 26,8%: taxa nominal × efetiva · Matemática ENEM, Taxas e Inflação episódio 2"
-
+TITULO = "24% ao ano que custa 26,8%: taxa nominal × efetiva | Taxas e Inflação Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

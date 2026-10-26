@@ -27,8 +27,7 @@
 #   2. O contexto corta ainda mais: medida positiva, contagem inteira. 3. Com várias condições, vale a mais restritiva.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Domínio pela fórmula e pelo contexto: as duas proibições e a caixa de papelão · Matemática ENEM, Funções episódio 5"
-
+TITULO = "Domínio pela fórmula e pelo contexto: as duas proibições e a caixa de papelão | Funções Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

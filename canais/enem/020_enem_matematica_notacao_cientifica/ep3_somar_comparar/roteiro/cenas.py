@@ -30,8 +30,7 @@
 #   coeficiente fica menor que 1" · "confira com o número por extenso" · "a pergunta é em VEZES ou na UNIDADE?".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "3 · 10⁵ + 8 · 10⁴ NÃO é 11 · 10⁵: somar em notação científica · Matemática ENEM, Notação Científica ep. 3"
-
+TITULO = "3 · 10⁵ + 8 · 10⁴ NÃO é 11 · 10⁵: somar em notação científica | Notação Científica Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

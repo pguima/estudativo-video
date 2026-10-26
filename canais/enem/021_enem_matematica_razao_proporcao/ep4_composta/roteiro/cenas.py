@@ -22,8 +22,7 @@
 #   "obra fixa: multiplique tudo de um lado e iguale ao outro" · conferência do pacote na alternativa.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Regra de três composta sem medo (e o atalho dos homens-hora) · Matemática ENEM, episódio 4"
-
+TITULO = "Regra de três composta sem medo (e o atalho dos homens-hora) | Razão e Proporção Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

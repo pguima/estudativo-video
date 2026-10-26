@@ -32,8 +32,7 @@
 #   2. Em planta, converta os lados antes de calcular a área. 3. Em 1 : 100, 1 centímetro é 1 metro.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Planta e maquete no ENEM: por que a área usa n² e o volume usa n³ · Escalas, episódio 3"
-
+TITULO = "Planta e maquete no ENEM: por que a área usa n² e o volume usa n³ | Escalas Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -29,8 +29,7 @@
 #   2. x é D_x dividido por D: o D principal fica embaixo. 3. Pediu uma incógnita só? Calcule só D e o dela.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Regra de Cramer do zero: o sistema como A · X = B · Matemática ENEM, Determinantes episódio 3"
-
+TITULO = "Regra de Cramer do zero: o sistema como A · X = B | Determinantes Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

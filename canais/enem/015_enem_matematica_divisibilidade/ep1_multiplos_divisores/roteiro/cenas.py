@@ -16,8 +16,7 @@
 #   3. Três e nove: some os algarismos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Dá para saber se 6 813 é divisível por 9 em 2 segundos — Múltiplos, divisores e critérios · Matemática ENEM, episódio 1"
-
+TITULO = "6 813 é Divisível por 9? Descubra em 2 Segundos | Divisibilidade Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

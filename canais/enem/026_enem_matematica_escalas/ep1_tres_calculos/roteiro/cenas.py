@@ -30,8 +30,7 @@
 #   2. Do mapa para o mundo, multiplique; do mundo para o mapa, divida. 3. Em 1 : n, cada centímetro vale n ÷ 100 000 km.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Escala do zero: os três cálculos e o caminho até o quilômetro · Matemática ENEM, Escalas episódio 1"
-
+TITULO = "Escala do zero: os três cálculos e o caminho até o quilômetro | Escalas Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

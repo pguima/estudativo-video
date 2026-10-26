@@ -34,8 +34,7 @@
 # Ponte: Razão, proporção e regra de três.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de notação científica: 9 pegadinhas e 5 questões em todas as áreas do ENEM · Matemática ENEM, episódio 6"
-
+TITULO = "Revisão: 9 pegadinhas e 5 questões em todas as áreas do ENEM | Notação Científica Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

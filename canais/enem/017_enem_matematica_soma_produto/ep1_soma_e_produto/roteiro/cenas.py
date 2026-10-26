@@ -24,8 +24,7 @@
 #   3. Comece pelo produto e use a soma para escolher o par. (Fim: os 5 passos pedidos pelo usuário, que as contêm.)
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha/sinais · verde = atalho/resposta · vermelho = erro.
 
-TITULO = "Equação do 2º grau sem Bhaskara: Soma e Produto — Matemática ENEM"
-
+TITULO = "Equação do 2º Grau em Segundos, SEM Bhaskara | Matemática ENEM"
 # Estilo da voz (gerar_voz_local.py): voz Neno, igual às séries 015 e 016
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

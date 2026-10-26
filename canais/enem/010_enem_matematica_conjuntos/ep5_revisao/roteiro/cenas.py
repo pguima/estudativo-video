@@ -17,8 +17,7 @@
 #       soma 44 · nenhum 6. Apenas M = 14 (B). A 11 de fora para dentro · C 17 descontou só um par ·
 #       D 22 descontou só o miolo · E 25 ignorou o "apenas".
 
-TITULO = "Revisão: as pegadinhas de sinais, conjuntos, intervalos e Venn — Matemática ENEM, episódio 5"
-
+TITULO = "As 6 Pegadinhas Mais Comuns do ENEM | Matemática Básica Ep. 5"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

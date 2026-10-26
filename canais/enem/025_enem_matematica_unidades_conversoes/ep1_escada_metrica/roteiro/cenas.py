@@ -22,8 +22,7 @@
 #   3. Tonelada é mil quilos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Unidades de medida do zero: a escada do sistema métrico (comprimento e massa) · Matemática ENEM, episódio 1"
-
+TITULO = "Unidades de medida do zero: a escada do sistema métrico | Unidades de Medida Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

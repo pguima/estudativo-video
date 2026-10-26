@@ -29,8 +29,7 @@
 #   2. Soma é número de termos vezes a média dos extremos. 3. "No 12º" é termo; "em 12" ou "ao todo" é soma.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A soma de Gauss: some qualquer PA em uma linha · Matemática ENEM, Progressão aritmética episódio 3"
-
+TITULO = "A soma de Gauss: some qualquer PA em uma linha | PA Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

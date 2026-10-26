@@ -30,8 +30,7 @@
 # Narração sem o símbolo ℝ: "os números reais" / "todos os reais". Contas conferidas em trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Quem tem inversa? Bijetora e o espelho na reta y = x · Matemática ENEM, Composta e Inversa ep. 4"
-
+TITULO = "Quem tem inversa? Bijetora e o espelho na reta y = x | Composta e Inversa Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

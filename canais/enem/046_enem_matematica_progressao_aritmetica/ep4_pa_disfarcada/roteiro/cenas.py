@@ -24,8 +24,7 @@
 #   termo zero. 3. A semana é uma PA de razão 7: olhe o resto da divisão.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A PA escondida: juros simples, calendário e financiamentos · Matemática ENEM, Progressão aritmética episódio 4"
-
+TITULO = "A PA escondida: juros simples, calendário e financiamentos | PA Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

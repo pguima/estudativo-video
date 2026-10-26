@@ -47,8 +47,7 @@
 # Ponte (do usuário): Sistemas de equações lineares.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de equação do 2º grau: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, 2º grau episódio 6"
-
+TITULO = "Revisão de equação do 2º grau: 9 pegadinhas e 5 questões estilo ENEM | Bhaskara Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

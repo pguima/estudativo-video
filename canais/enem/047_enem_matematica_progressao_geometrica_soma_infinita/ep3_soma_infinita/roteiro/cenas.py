@@ -30,8 +30,7 @@
 #   2. Razão fora disso: a soma não para de crescer. 3. Bola: a primeira queda uma vez; o resto, duas.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Soma infinita da PG: infinitas parcelas, um número finito · Matemática ENEM, Progressão geométrica episódio 3"
-
+TITULO = "Soma infinita da PG: infinitas parcelas, um número finito | PG Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

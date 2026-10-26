@@ -24,8 +24,7 @@
 #   divida o total por essa soma e multiplique" · conferência "as partes somam o total? estão na razão?".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Proporção: por que a regra de três funciona e o truque do k · Matemática ENEM, episódio 2"
-
+TITULO = "Proporção: por que a regra de três funciona e o truque do k | Razão e Proporção Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

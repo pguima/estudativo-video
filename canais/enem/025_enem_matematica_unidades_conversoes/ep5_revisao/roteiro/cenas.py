@@ -40,8 +40,7 @@
 # Ponte (do usuário): Escalas, plantas e mapas.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de unidades e conversões: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 5"
-
+TITULO = "Revisão de unidades e conversões: 9 pegadinhas e 5 questões estilo ENEM | Unidades de Medida Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

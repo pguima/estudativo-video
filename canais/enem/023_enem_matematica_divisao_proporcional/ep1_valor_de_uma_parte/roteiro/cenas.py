@@ -25,8 +25,7 @@
 #   · "conhece uma parte? ela dá o k".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Divisão proporcional do zero: o valor de uma parte (o truque do k) · Matemática ENEM, episódio 1"
-
+TITULO = "Divisão proporcional do zero: o valor de uma parte (o truque do k) | Divisão Proporcional Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

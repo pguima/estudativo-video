@@ -20,8 +20,7 @@
 # Atalhos (verde): "escreva a coluna auxiliar na margem: ela mostra a relação E o k" · "a constância é a prova".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Proporcional ou não? Reconheça na tabela com DUAS contas · Matemática ENEM, Grandezas Proporcionais, episódio 2"
-
+TITULO = "Proporcional ou não? Reconheça na tabela com DUAS contas | Grandezas Proporcionais Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

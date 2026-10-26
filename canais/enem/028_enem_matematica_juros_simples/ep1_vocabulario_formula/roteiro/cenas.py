@@ -23,8 +23,7 @@
 #   2. Juros é o acréscimo; montante é o total. 3. Calcule um período e multiplique pelo tempo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros simples do zero: juros, montante e a fórmula J = C · i · t · Matemática ENEM, Juros simples episódio 1"
-
+TITULO = "Juros simples do zero: juros, montante e a fórmula J = C · i · t | Juros Simples Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

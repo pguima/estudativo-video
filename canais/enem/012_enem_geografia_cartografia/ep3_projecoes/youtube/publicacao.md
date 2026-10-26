@@ -73,7 +73,9 @@ No mapa da escola, a Groenlândia parece do tamanho da África, que é cerca de 
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder os próximos episódios.
 💬 Comente: você também achava que a Groenlândia era do tamanho da África?
-⬅️ Episódio 2: Coordenadas · ➡️ Episódio 4: Curvas de nível.
+
+⬅️ Episódio anterior: Latitude e Longitude do Zero: a Batalha Naval do Planeta | Cartografia Ep. 2
+➡️ Próximo episódio: Curvas de Nível do Zero: Leia Morros e Vales no Mapa | Cartografia Ep. 4
 
 #ENEM #GeografiaENEM #Cartografia
 ```
@@ -82,7 +84,7 @@ No mapa da escola, a Groenlândia parece do tamanho da África, que é cerca de 
 
 ## Tags
 ```
-enem, geografia enem, cartografia, projeções cartográficas, projeção de mercator, projeção de peters, mercator x peters, groenlândia e áfrica, tamanho real dos países, projeção cilíndrica, projeção cônica, projeção azimutal, projeção conforme, projeção equivalente, projeção equidistante, eurocentrismo, mapa com o sul em cima, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
+enem, geografia enem, cartografia, estudativo, projeções cartográficas, projeção de mercator, projeção de peters, mercator x peters, groenlândia e áfrica, tamanho real dos países, projeção cilíndrica, projeção cônica, projeção azimutal, projeção conforme, projeção equivalente, projeção equidistante, eurocentrismo, mapa com o sul em cima, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
 ```
 
 ## Hashtags
@@ -125,6 +127,7 @@ enem, geografia enem, cartografia, projeções cartográficas, projeção de mer
 - 08:17 (ponte): card para o **Episódio 4**, quando for publicado
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 **"Cartografia do Zero — Geografia ENEM"**, depois do Episódio 2.
 
 ## Ideias de Shorts

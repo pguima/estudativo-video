@@ -26,8 +26,7 @@
 #   2. Equilíbrio = diferença das taxas ÷ diferença dos preços. 3. No empate ninguém é mais barato.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Qual plano compensa? O ponto de equilíbrio em uma linha · Matemática ENEM, Equações episódio 4"
-
+TITULO = "Qual plano compensa? O ponto de equilíbrio em uma linha | Equações do 1º Grau Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

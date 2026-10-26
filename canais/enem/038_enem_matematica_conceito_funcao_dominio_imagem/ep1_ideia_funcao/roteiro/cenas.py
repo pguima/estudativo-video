@@ -20,8 +20,7 @@
 #   2. Duas flechas chegando pode; duas flechas saindo, não. 3. Todo elemento do conjunto de partida precisa de flecha.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função do zero: quando é e quando NÃO é · Matemática ENEM, Funções episódio 1"
-
+TITULO = "Função do zero: quando é e quando NÃO é | Funções Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

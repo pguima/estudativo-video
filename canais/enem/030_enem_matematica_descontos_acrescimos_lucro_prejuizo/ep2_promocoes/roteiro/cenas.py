@@ -27,8 +27,7 @@
 #   2. Para voltar ao preço original, divida pelo fator. 3. Toda promoção vira desconto efetivo antes da comparação.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Promoção desmascarada: descontos encadeados, preço original e faixas · Matemática ENEM, Descontos episódio 2"
-
+TITULO = "Promoção desmascarada: descontos encadeados, preço original e faixas | Descontos e Lucro Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

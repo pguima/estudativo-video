@@ -16,8 +16,7 @@
 #   3. Confira antes de desenvolver, não depois.
 # Cores: azul = núcleo/tema · verde = delimitadores e método · amarelo = armadilha · vermelho = erro · roxo = regra oficial.
 
-TITULO = "Oficina: a leitura da proposta em 6 passos, do tema até a tese — Redação ENEM, episódio 5"
-
+TITULO = "Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos | Proposta de Redação Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

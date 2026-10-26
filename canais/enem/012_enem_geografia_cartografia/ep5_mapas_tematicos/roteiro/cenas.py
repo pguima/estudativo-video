@@ -8,8 +8,7 @@
 #   2. Anamorfose: o tamanho é um dado, não o território.
 #   3. Projeção mantém a realidade; anamorfose distorce de propósito.
 
-TITULO = "Anamorfose e mapas temáticos do zero: leia qualquer mapa do ENEM — Cartografia, episódio 5"
-
+TITULO = "Anamorfose do Zero: o Mapa em Que a Índia Fica Gigante | Cartografia Ep. 5"
 PRONUNCIA = {
     "ENEM": "Enem",
     "PIB": "P I B",

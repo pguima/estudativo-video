@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **MMC ou MDC? Repete ou Reparte, a Decisão em 10 s | Matemática Ep. 6** ← recomendado (com capa A)
-2. Conta Certa, Problema Errado: MMC ou MDC? | Matemática Ep. 6 (com capa B)
-3. Quantas Estacas na Cerca? MDC e Perímetro | Matemática Ep. 6 (com capa C)
-4. Como Saber se a Questão É de MMC ou MDC | Matemática Ep. 6
+1. **MMC ou MDC? Repete ou Reparte, a Decisão em 10 s | Divisibilidade Ep. 6** ← recomendado (com capa A)
+2. Conta Certa, Problema Errado: MMC ou MDC? | Divisibilidade Ep. 6 (com capa B)
+3. Quantas Estacas na Cerca? MDC e Perímetro | Divisibilidade Ep. 6 (com capa C)
+4. Como Saber se a Questão É de MMC ou MDC | Divisibilidade Ep. 6
 
 ---
 
@@ -65,7 +65,9 @@ Quem erra esta questão no ENEM quase nunca erra a conta. Erra a escolha, e reso
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: quantas das seis você acertou no repete ou reparte?
-⬅️ Episódio 5: MDC · ➡️ Episódio 7: revisão, pegadinhas e treino.
+
+⬅️ Episódio anterior: Achou o MDC e Errou a Questão? O Passo Que Falta | Divisibilidade Ep. 5
+➡️ Próximo episódio: Você Cai Nessas 9 Pegadinhas de MMC e MDC? | Divisibilidade Ep. 7
 
 #ENEM #MatematicaENEM #MMCeMDC
 ```
@@ -74,7 +76,7 @@ Quem erra esta questão no ENEM quase nunca erra a conta. Erra a escolha, e reso
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mmc ou mdc, diferença entre mmc e mdc, quando usar mmc, quando usar mdc, mdc vezes mmc, questão de estacas, perímetro e mdc, mmc e mdc enem, divisibilidade, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, mmc ou mdc, diferença entre mmc e mdc, quando usar mmc, quando usar mdc, mdc vezes mmc, questão de estacas, perímetro e mdc, mmc e mdc enem, divisibilidade, matemática básica
 ```
 
 ## Hashtags
@@ -119,6 +121,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 11:37 (ponte): card para o **Episódio 7**, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 5.
 
 ## Ideias de Shorts

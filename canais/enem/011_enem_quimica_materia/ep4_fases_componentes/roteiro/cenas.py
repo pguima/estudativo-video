@@ -13,8 +13,7 @@
 #   3. Os dois números são independentes: conte duas vezes.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Água com 3 cubos de gelo: quantas fases? Fases e componentes do zero — Química ENEM, episódio 4"
-
+TITULO = "Água com 3 Cubos de Gelo: Quantas Fases? Química do Zero | Matéria e Misturas Ep. 4"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

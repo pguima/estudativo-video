@@ -14,8 +14,7 @@
 # Cores: azul = tese/definição · verde = pista/palavra-sinal · amarelo = armadilha · vermelho = erro · roxo = fórmula/regra.
 # Textos-base (parágrafo das hortas, os três resumos da seção 07, Questão 6) lidos EXATAMENTE como no material.
 
-TITULO = "Resuma qualquer texto em uma frase (e ache a alternativa certa) — Linguagens ENEM, episódio 2"
-
+TITULO = "Resuma Qualquer Texto em 1 Frase: a Fórmula | Interpretação Ep. 2"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

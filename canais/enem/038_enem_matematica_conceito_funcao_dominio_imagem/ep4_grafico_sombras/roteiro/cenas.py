@@ -27,8 +27,7 @@
 #   imagem é a sombra na parede. 3. Cresce e decresce se responde em x.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Gráfico de função do zero: domínio e imagem são SOMBRAS · Matemática ENEM, Funções episódio 4"
-
+TITULO = "Gráfico de função do zero: domínio e imagem são SOMBRAS | Funções Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

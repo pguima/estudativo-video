@@ -16,8 +16,7 @@
 #   3. Atalho: multiplique o que sobra em cada etapa.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A armadilha do \"do restante\": o erro que mais custa ponto em frações · Matemática ENEM, episódio 4"
-
+TITULO = "A armadilha do \"do restante\": o erro que mais custa ponto em frações | Frações Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -18,7 +18,7 @@ Use o "Testar e comparar" com A e B.
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Puro ou Não? Só com um Termômetro: Curva de Aquecimento | Ep. 5** ← recomendado (com capa A)
+1. **Puro ou Não? Só com um Termômetro: Curva de Aquecimento | Matéria e Misturas Ep. 5** ← recomendado (com capa A)
 2. Curva de Aquecimento: o Gráfico que Mais Cai no ENEM | Química Ep. 5 (com capa B)
 3. Eutética ou Azeotrópica? Nunca Mais Erre | Química do Zero Ep. 5 (com capa C)
 4. Ponto de Fusão, Ebulição e Curva de Aquecimento | Química para Iniciantes
@@ -78,7 +78,11 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Química do ENEM do zero.
 💬 Comente: você já conhecia a mistura eutética?
-➡️ Próximo episódio: a revisão da série, com um roteiro de 3 perguntas, as pegadinhas e questões novas.
+
+⬅️ Episódio anterior: Água com 3 Cubos de Gelo: Quantas Fases? Química do Zero | Matéria e Misturas Ep. 4
+➡️ Próximo episódio: Revisão de Química: 9 Pegadinhas e 5 Questões Inéditas | Matéria e Misturas Ep. 6
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
 
 #ENEM #QuímicaENEM #QuímicaDoZero
 ```
@@ -87,7 +91,7 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 ## Tags
 ```
-enem, química enem, química do zero, curva de aquecimento, gráfico de aquecimento, substância pura e mistura, patamar, ponto de fusão, ponto de ebulição, estado físico, mistura eutética, mistura azeotrópica, eutética e azeotrópica, solda estanho chumbo, álcool 96, mercúrio metal líquido, química para iniciantes, aula de química, enem 2026
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, curva de aquecimento, gráfico de aquecimento, substância pura e mistura, patamar, ponto de fusão, ponto de ebulição, estado físico, mistura eutética, mistura azeotrópica, eutética e azeotrópica, solda estanho chumbo, álcool 96, mercúrio metal líquido, química para iniciantes, aula de química, enem 2026
 ```
 
 ## Hashtags
@@ -131,6 +135,7 @@ enem, química enem, química do zero, curva de aquecimento, gráfico de aquecim
 - 05:10 (erros clássicos): card para a **playlist** da série
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, depois do Episódio 4.
 
 ## Ideias de Shorts

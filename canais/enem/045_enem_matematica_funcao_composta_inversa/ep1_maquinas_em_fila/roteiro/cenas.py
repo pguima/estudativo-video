@@ -24,8 +24,7 @@
 #   2. Leia de dentro para fora: a de dentro age primeiro. 3. Trocou a ordem, trocou o resultado.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função composta do zero: a ordem das máquinas muda tudo · Matemática ENEM, Composta e Inversa ep. 1"
-
+TITULO = "Função composta do zero: a ordem das máquinas muda tudo | Composta e Inversa Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

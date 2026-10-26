@@ -29,8 +29,7 @@
 # Ponte: Potenciação e radiciação (expoente negativo ficou de fora da série).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de frações, decimais e dízimas: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 8"
-
+TITULO = "9 pegadinhas e 5 questões estilo ENEM: revisão geral | Frações Ep. 8"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

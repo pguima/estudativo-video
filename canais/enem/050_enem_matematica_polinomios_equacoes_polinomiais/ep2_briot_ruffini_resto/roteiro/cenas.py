@@ -30,8 +30,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Briot-Ruffini e o teorema do resto: o resto sem dividir · Matemática ENEM, Polinômios episódio 2"
-
+TITULO = "Briot-Ruffini e o teorema do resto: o resto sem dividir | Polinômios Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

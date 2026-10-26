@@ -24,8 +24,7 @@
 #   2. Cada período multiplica o saldo por 1 + i. 3. Os juros saem por diferença: montante menos capital.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros compostos do zero: juros sobre juros e a fórmula M = C · (1 + i)ᵗ · Matemática ENEM, Juros compostos episódio 1"
-
+TITULO = "Juros compostos do zero: juros sobre juros e a fórmula M = C · (1 + i)ᵗ | Juros Compostos Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

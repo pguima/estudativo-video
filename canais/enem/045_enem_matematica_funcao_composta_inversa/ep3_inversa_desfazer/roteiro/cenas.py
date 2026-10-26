@@ -28,8 +28,7 @@
 #   passo. 3. f⁻¹ desfaz; 1/f só vira de cabeça para baixo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função inversa do zero: desfazer o caminho sem cair no 1/f · Matemática ENEM, Composta e Inversa ep. 3"
-
+TITULO = "Função inversa do zero: desfazer o caminho sem cair no 1/f | Composta e Inversa Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

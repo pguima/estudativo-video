@@ -19,7 +19,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Você Cai Nessas 10 Pegadinhas da Redação do ENEM? | Revisão Ep. 6** ← recomendado (com capa A)
+1. **Você Cai Nessas 10 Pegadinhas da Redação do ENEM? | Proposta de Redação Ep. 6** ← recomendado (com capa A)
 2. Desafio: 5 Temas Reais do ENEM, 5 Minutos Cada | Redação Ep. 6 (com capa B)
 3. Leitura da Proposta: Revisão Completa em 12 Minutos | Redação Ep. 6 (com capa C)
 4. Revisão da Redação ENEM: V ou F, 5 Questões e Desafio | Ep. 6
@@ -59,6 +59,10 @@ Ler a proposta leva poucos minutos e decide se o seu texto pode chegar a mil ou 
 2. Use os textos motivadores para entender, não para preencher.
 3. Teste a tese contra a frase temática antes de escrever.
 
+⬅️ Episódio anterior: Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos | Proposta de Redação Ep. 5
+
+📺 Playlist da série: Redação: Leitura da Proposta
+
 👍 Se a série te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: quantas das dez você acertou no verdadeiro ou falso?
 ⬅️ Episódio 5: a oficina dos 6 passos · ➡️ Próximo assunto: Introdução, contextualização e apresentação da tese.
@@ -70,7 +74,7 @@ Ler a proposta leva poucos minutos e decide se o seu texto pode chegar a mil ou 
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, revisão redação enem, pegadinhas redação enem, tangenciamento, fuga ao tema, frase temática, tese da redação, textos motivadores, cópia na redação, assunto e tema, temas da redação do enem, desafio redação, cartilha do participante, redação do zero, redação nota 1000, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, proposta de redação, estudativo, redacao enem, revisão redação enem, pegadinhas redação enem, tangenciamento, fuga ao tema, frase temática, tese da redação, textos motivadores, cópia na redação, assunto e tema, temas da redação do enem, desafio redação, cartilha do participante, redação do zero, redação nota 1000, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -115,6 +119,7 @@ enem, redação enem, redação do enem, redacao enem, revisão redação enem, 
 - 11:32 (próximo assunto): card para o vídeo de Introdução, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"**, logo depois do Episódio 5 (fecha a série Leitura da Proposta).
 
 ## Ideias de Shorts

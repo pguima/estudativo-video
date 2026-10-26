@@ -47,8 +47,7 @@
 # Ponte (do usuário): Determinantes e sistemas lineares.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de matrizes: tabelas, produto e código secreto · Matemática ENEM, Matrizes ep. 5"
-
+TITULO = "Revisão de matrizes: tabelas, produto e código secreto | Matrizes Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

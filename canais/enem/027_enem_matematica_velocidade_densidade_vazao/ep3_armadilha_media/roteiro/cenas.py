@@ -22,8 +22,7 @@
 #   média simples. 3. Na dúvida, distância total sobre tempo total, sempre.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Ida a 60, volta a 40: por que a média NÃO é 50 · Matemática ENEM, Velocidade, densidade e vazão, episódio 3"
-
+TITULO = "Ida a 60, volta a 40: por que a média NÃO é 50 | Velocidade e Vazão Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

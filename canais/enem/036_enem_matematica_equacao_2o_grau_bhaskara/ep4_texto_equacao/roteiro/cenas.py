@@ -35,8 +35,7 @@
 #   simplifique antes da fórmula. 3. Raiz sem sentido se descarta, não se troca o sinal.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Do texto à equação do 2º grau: a raiz que vai para o lixo · Matemática ENEM, 2º grau episódio 4"
-
+TITULO = "Do texto à equação do 2º grau: a raiz que vai para o lixo | Bhaskara Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

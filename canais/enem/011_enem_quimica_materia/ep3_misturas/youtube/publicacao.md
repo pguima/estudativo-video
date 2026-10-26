@@ -18,7 +18,7 @@ A capa C tende a gerar comentário ("como assim o leite não é homogêneo?"). U
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Ar, Água Mineral e Ouro 18k São Puros? Misturas do Zero | Ep. 3** ← recomendado (com capa A)
+1. **Ar, Água Mineral e Ouro 18k São Puros? Misturas do Zero | Matéria e Misturas Ep. 3** ← recomendado (com capa A)
 2. O Leite É Homogêneo? Misturas Homogêneas e Heterogêneas | Química Ep. 3 (com capa C)
 3. Mistura Homogênea e Heterogênea do Zero | Química ENEM Ep. 3 (com capa B)
 4. Substância Pura ou Mistura? Como Classificar | Química para Iniciantes
@@ -77,7 +77,11 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Química do ENEM do zero.
 💬 Comente: você achava que a água mineral era pura?
-➡️ Próximo episódio: Fases e componentes (um copo com água e três cubos de gelo tem quantas fases?).
+
+⬅️ Episódio anterior: Grafite e Diamante São a Mesma Coisa? Alotropia do Zero | Matéria e Misturas Ep. 2
+➡️ Próximo episódio: Água com 3 Cubos de Gelo: Quantas Fases? Química do Zero | Matéria e Misturas Ep. 4
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
 
 #ENEM #QuímicaENEM #QuímicaDoZero
 ```
@@ -86,7 +90,7 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 ## Tags
 ```
-enem, química enem, química do zero, mistura homogênea, mistura heterogênea, misturas, substância pura e mistura, o que é fase, solução, mistura de gases, leite é heterogêneo, sangue heterogêneo, liga metálica, solução sólida, aço, bronze, latão, ouro 18 quilates, quilate, água mineral é pura, química para iniciantes, aula de química, enem 2026
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, mistura homogênea, mistura heterogênea, misturas, substância pura e mistura, o que é fase, solução, mistura de gases, leite é heterogêneo, sangue heterogêneo, liga metálica, solução sólida, aço, bronze, latão, ouro 18 quilates, quilate, água mineral é pura, química para iniciantes, aula de química, enem 2026
 ```
 
 ## Hashtags
@@ -130,6 +134,7 @@ enem, química enem, química do zero, mistura homogênea, mistura heterogênea,
 - 06:16 (erros clássicos): card para a **playlist** da série
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, depois do Episódio 2.
 
 ## Ideias de Shorts

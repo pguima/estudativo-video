@@ -72,6 +72,8 @@ Você sabia que é possível resolver uma equação do segundo grau sem a fórmu
 
 ➡️ Quando as raízes não são fáceis de achar de cabeça: veja a aula do método de Po-Shen Loh aqui no canal (playlist Matemática ENEM do Zero).
 
+📺 Playlist da série: Equação do 2º Grau sem Bhaskara
+
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: quanto tempo você levou para resolver o desafio?
 
@@ -83,7 +85,7 @@ Você sabia que é possível resolver uma equação do segundo grau sem a fórmu
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, equação do segundo grau, equação do 2º grau, soma e produto, relações de girard, sem bhaskara, fórmula de bhaskara, raízes da equação, fatoração, regra dos sinais, função quadrática
+enem, matemática enem, matematica para o enem, equação do 2º grau sem bhaskara, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, equação do segundo grau, equação do 2º grau, soma e produto, relações de girard, sem bhaskara, fórmula de bhaskara, raízes da equação, fatoração, regra dos sinais, função quadrática
 ```
 
 ## Hashtags
@@ -128,6 +130,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 03:32 (Relações de Girard): card para a playlist "Matemática ENEM do Zero"
 
 ## Playlist
+**"Equação do 2º Grau sem Bhaskara"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"** — logo antes do vídeo 016 (Po-Shen Loh), que começa pela mesma ideia de soma e produto.
 
 ## Ideias de Shorts

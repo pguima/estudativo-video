@@ -28,8 +28,7 @@
 #   2. Do período longo para o curto: raiz do fator, nunca divisão. 3. No fim, tire o 1 do fator.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Taxa equivalente do zero: 10% ao mês NÃO é 120% ao ano · Matemática ENEM, Taxas e Inflação episódio 1"
-
+TITULO = "Taxa equivalente do zero: 10% ao mês NÃO é 120% ao ano | Taxas e Inflação Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

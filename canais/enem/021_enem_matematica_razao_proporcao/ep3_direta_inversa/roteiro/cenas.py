@@ -28,8 +28,7 @@
 #   valor unitário (30 páginas por minuto) · conferência de bom senso (mais gente, menos dias).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Regra de três: direta ou inversa? O teste do dobro · Matemática ENEM, episódio 3"
-
+TITULO = "Regra de três: direta ou inversa? O teste do dobro | Razão e Proporção Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

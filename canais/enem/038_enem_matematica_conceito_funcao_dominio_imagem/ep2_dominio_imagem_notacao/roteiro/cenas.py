@@ -24,8 +24,7 @@
 #   contradomínio, não necessariamente ele todo. 3. Substitua o x pelo que estiver entre parênteses, com parênteses.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Domínio, imagem e f(x) do zero: a máquina e a cadeira vazia · Matemática ENEM, Funções episódio 2"
-
+TITULO = "Domínio, imagem e f(x) do zero: a máquina e a cadeira vazia | Funções Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

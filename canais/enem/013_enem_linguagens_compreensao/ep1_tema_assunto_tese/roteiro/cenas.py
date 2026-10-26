@@ -14,8 +14,7 @@
 # Leitura da Questão 1: texto inteiro fixo na tela; marca-texto acompanha cada frase ({f1}…{f5});
 # os comentários ({c1}…{c5}) aparecem como notas na margem, sem tirar o texto da tela.
 
-TITULO = "Assunto ou tese? O erro que derruba quem lê o texto e não sabe o que marcar — Linguagens ENEM, episódio 1"
-
+TITULO = "Assunto Não É Tese: Interpretação de Texto do Zero | Interpretação Ep. 1"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

@@ -26,8 +26,7 @@
 #   3. Taxa é o degrau dividido pelo capital.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Juros simples no gráfico: capital, taxa e a PA dos montantes · Matemática ENEM, Juros simples episódio 3"
-
+TITULO = "Juros simples no gráfico: capital, taxa e a PA dos montantes | Juros Simples Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

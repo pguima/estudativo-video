@@ -29,8 +29,7 @@
 #   não o primeiro dado da tabela. 3. "Quando acaba?" pede o zero: ax + b = 0.
 # Cores: azul = definição / b · roxo = regra / a · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Taxa de variação, valor inicial e o zero da função · Matemática ENEM, Função afim episódio 2"
-
+TITULO = "Taxa de variação, valor inicial e o zero da função | Função Afim Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

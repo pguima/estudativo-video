@@ -20,7 +20,7 @@ A capa A provoca a resposta errada ("4!") e costuma render comentário. Use o "T
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Água com 3 Cubos de Gelo: Quantas Fases? Química do Zero | Ep. 4** ← recomendado (com capa A)
+1. **Água com 3 Cubos de Gelo: Quantas Fases? Química do Zero | Matéria e Misturas Ep. 4** ← recomendado (com capa A)
 2. Fases e Componentes: a Pegadinha Preferida do ENEM | Química Ep. 4
 3. Fase É a Foto, Componente É a Receita | Química ENEM Ep. 4 (com capa B)
 4. Como Contar Fases e Componentes Sem Errar | Química para Iniciantes
@@ -73,7 +73,11 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Química do ENEM do zero.
 💬 Comente: antes desta aula, você respondia quatro fases?
-➡️ Próximo episódio: a curva de aquecimento (como saber se um material é puro com um termômetro e um relógio).
+
+⬅️ Episódio anterior: Ar, Água Mineral e Ouro 18k São Puros? Misturas do Zero | Matéria e Misturas Ep. 3
+➡️ Próximo episódio: Puro ou Não? Só com um Termômetro: Curva de Aquecimento | Matéria e Misturas Ep. 5
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
 
 #ENEM #QuímicaENEM #QuímicaDoZero
 ```
@@ -82,7 +86,7 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 ## Tags
 ```
-enem, química enem, química do zero, fases e componentes, número de fases, número de componentes, quantas fases, sistema homogêneo, sistema heterogêneo, fase e componente, água e gelo fases, densidade, liga homogênea, bronze, questões de química enem, química para iniciantes, aula de química, misturas, enem 2026
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, fases e componentes, número de fases, número de componentes, quantas fases, sistema homogêneo, sistema heterogêneo, fase e componente, água e gelo fases, densidade, liga homogênea, bronze, questões de química enem, química para iniciantes, aula de química, misturas, enem 2026
 ```
 
 ## Hashtags
@@ -126,6 +130,7 @@ enem, química enem, química do zero, fases e componentes, número de fases, n�
 - 03:39 (bronze, liga homogênea): card para o **Episódio 3**
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, depois do Episódio 3.
 
 ## Ideias de Shorts

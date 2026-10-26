@@ -18,8 +18,7 @@
 # Cores: azul = definição · verde = abordagem completa/método · amarelo = tangenciamento/armadilha · vermelho = fuga/erro
 #   · roxo = regra oficial.
 
-TITULO = "Tangenciamento e fuga ao tema: o erro silencioso — Redação ENEM, episódio 4"
-
+TITULO = "Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) | Proposta de Redação Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

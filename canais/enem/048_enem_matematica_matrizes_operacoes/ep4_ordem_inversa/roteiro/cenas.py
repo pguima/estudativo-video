@@ -34,8 +34,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Matriz inversa e as regras que mudam (AB ≠ BA) · Matemática ENEM, Matrizes episódio 4"
-
+TITULO = "Matriz inversa e as regras que mudam (AB ≠ BA) | Matrizes Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

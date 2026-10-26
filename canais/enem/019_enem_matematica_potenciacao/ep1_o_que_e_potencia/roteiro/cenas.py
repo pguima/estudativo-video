@@ -20,8 +20,7 @@
 #   "expoente negativo: inverta a base e tire o menos" · "fração: vire de cabeça para baixo" · "par de sinais de menos vira mais".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Potência do zero: por que 2⁰ = 1 e expoente negativo NÃO dá negativo · Matemática ENEM, episódio 1"
-
+TITULO = "Potência do zero: por que 2⁰ = 1 e expoente negativo NÃO dá negativo | Potenciação Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

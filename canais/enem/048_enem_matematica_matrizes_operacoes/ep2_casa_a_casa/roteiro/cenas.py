@@ -25,8 +25,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Somar matrizes e multiplicar por número: casa com casa · Matemática ENEM, Matrizes episódio 2"
-
+TITULO = "Somar matrizes e multiplicar por número: casa com casa | Matrizes Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

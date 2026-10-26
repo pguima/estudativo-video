@@ -25,8 +25,7 @@
 #   2. Na multiplicação o expoente entra; na soma, fica barrado. 3. Na dúvida, teste com números.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Produtos notáveis e o sonho do calouro: o termo do meio que o ENEM esconde · Matemática ENEM, Álgebra episódio 2"
-
+TITULO = "Produtos notáveis e o sonho do calouro: o termo do meio que o ENEM esconde | Produtos Notáveis Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

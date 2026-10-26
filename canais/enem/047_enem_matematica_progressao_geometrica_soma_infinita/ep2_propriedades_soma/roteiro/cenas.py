@@ -30,8 +30,7 @@
 #   2. Três em PG: x/q, x e x·q. 3. Soma finita: a₁ vezes (qⁿ − 1), dividido por (q − 1).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Soma da PG e as propriedades que poupam conta · Matemática ENEM, Progressão geométrica episódio 2"
-
+TITULO = "Soma da PG e as propriedades que poupam conta | PG Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -37,8 +37,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Decibéis do zero: por que 80 + 80 não dá 160 · Matemática ENEM, Função logarítmica episódio 4"
-
+TITULO = "Decibéis do zero: por que 80 + 80 não dá 160 | Função Logarítmica Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

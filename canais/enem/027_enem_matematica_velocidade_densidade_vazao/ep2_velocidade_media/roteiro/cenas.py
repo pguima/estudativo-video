@@ -25,8 +25,7 @@
 #   2. Tempo parado também é tempo. 3. Trinta minutos são 0,5 hora, não 0,30.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Velocidade média do zero: o erro do relógio que o ENEM cobra · Matemática ENEM, Velocidade episódio 2"
-
+TITULO = "Velocidade média do zero: o erro do relógio que o ENEM cobra | Velocidade e Vazão Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

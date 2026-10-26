@@ -33,8 +33,7 @@
 #   radicandos" · "o índice multiplicou por k? eleve o radicando a k".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "1/√2 ou √2/2? Racionalização e expoente fracionário do zero · Matemática ENEM, episódio 6"
-
+TITULO = "1/√2 ou √2/2? Racionalização e expoente fracionário do zero | Potenciação Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

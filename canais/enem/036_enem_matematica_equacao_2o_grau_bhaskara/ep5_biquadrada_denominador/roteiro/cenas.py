@@ -24,8 +24,7 @@
 #   raiz real.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação biquadrada e x no denominador: não pare no y · Matemática ENEM, 2º grau episódio 5"
-
+TITULO = "Equação biquadrada e x no denominador: não pare no y | Bhaskara Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

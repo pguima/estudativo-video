@@ -18,8 +18,7 @@
 # Textos-base (Dona Lurdes; Questão 4: texto, comando e alternativas) lidos EXATAMENTE como no material.
 # Na gravação: a Questão 4 (cena 24) pede entonação irônica, de elogio exagerado.
 
-TITULO = "A tese implícita: quando o texto defende algo sem dizer \"eu defendo\" — Linguagens ENEM, episódio 6"
-
+TITULO = "Sem Dizer \"Eu Defendo\", o Texto Tem Tese | Interpretação Ep. 6"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

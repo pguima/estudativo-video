@@ -18,10 +18,10 @@ Mantenha o selo "MATEMÁTICA ENEM". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **O 360 Tem 24 Divisores: Descubra em 15 Segundos | Matemática Ep. 3** ← recomendado (com capa A)
-2. Fatoração em Primos: a Receita de Todo Número | Matemática Ep. 3 (com capa B)
-3. Quantos Divisores? O Erro do +1 | Matemática Ep. 3 (com capa C)
-4. Fatoração e Fórmula dos Divisores do Zero | Matemática Ep. 3
+1. **O 360 Tem 24 Divisores: Descubra em 15 Segundos | Divisibilidade Ep. 3** ← recomendado (com capa A)
+2. Fatoração em Primos: a Receita de Todo Número | Divisibilidade Ep. 3 (com capa B)
+3. Quantos Divisores? O Erro do +1 | Divisibilidade Ep. 3 (com capa C)
+4. Fatoração e Fórmula dos Divisores do Zero | Divisibilidade Ep. 3
 
 ---
 
@@ -64,7 +64,9 @@ O 360 tem 24 divisores. Dá para descobrir isso em quinze segundos, sem listar n
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: quantos divisores tem o 72?
-⬅️ Episódio 2: números primos · ➡️ Episódio 4: MMC.
+
+⬅️ Episódio anterior: O 1 é Primo? E o 2? Números Primos do Zero | Divisibilidade Ep. 2
+➡️ Próximo episódio: Quando os Ônibus Voltam a Sair Juntos? MMC do Zero | Divisibilidade Ep. 4
 
 #ENEM #MatematicaENEM #Fatoracao
 ```
@@ -73,7 +75,7 @@ O 360 tem 24 divisores. Dá para descobrir isso em quinze segundos, sem listar n
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, fatoração, fatoração em primos, decomposição em fatores primos, quantos divisores tem um número, fórmula dos divisores, número de divisores, teorema fundamental da aritmética, divisibilidade, matemática básica
+enem, matemática enem, matematica para o enem, divisibilidade primos mmc e mdc, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, fatoração, fatoração em primos, decomposição em fatores primos, quantos divisores tem um número, fórmula dos divisores, número de divisores, teorema fundamental da aritmética, divisibilidade, matemática básica
 ```
 
 ## Hashtags
@@ -117,6 +119,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 07:41 (ponte): card para o **Episódio 4**, quando for publicado
 
 ## Playlist
+**"Divisibilidade, Primos, MMC e MDC"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, logo depois do Episódio 2.
 
 ## Ideias de Shorts

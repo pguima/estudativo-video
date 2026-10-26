@@ -46,8 +46,7 @@
 # Ponte (do usuário): Equações e inequações do 1º grau.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de expressões algébricas: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Álgebra episódio 5"
-
+TITULO = "Revisão de expressões algébricas: 9 pegadinhas e 5 questões estilo ENEM | Produtos Notáveis Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

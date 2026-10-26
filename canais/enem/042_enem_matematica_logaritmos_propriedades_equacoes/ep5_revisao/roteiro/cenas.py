@@ -48,8 +48,7 @@
 # Ponte (do usuário): Função logarítmica e aplicações (pH, Richter, decibéis).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de logaritmos: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Logaritmos episódio 5"
-
+TITULO = "Revisão de logaritmos: 9 pegadinhas e 5 questões estilo ENEM | Logaritmos Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -30,8 +30,7 @@
 #   2. Substitua a ponte e ela some da resposta. 3. Achou a função escondida? Monte a composta de novo e confira.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função composta no ENEM: junte duas fórmulas numa só · Matemática ENEM, Composta e Inversa ep. 2"
-
+TITULO = "Função composta no ENEM: junte duas fórmulas numa só | Composta e Inversa Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

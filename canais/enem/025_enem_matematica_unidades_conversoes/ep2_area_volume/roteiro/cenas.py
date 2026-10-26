@@ -29,8 +29,7 @@
 #   2. 1 litro é 1 decímetro cúbico; 1 metro cúbico são 1 000 litros. 3. 1 litro de água pesa 1 quilo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Área e volume sem errar: metro quadrado, metro cúbico e litro · Unidades de medida, episódio 2"
-
+TITULO = "Área e volume sem errar: metro quadrado, metro cúbico e litro | Unidades de Medida Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

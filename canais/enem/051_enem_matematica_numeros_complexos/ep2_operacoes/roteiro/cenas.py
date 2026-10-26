@@ -32,8 +32,7 @@
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 #   Na tela: parte REAL em azul, parte IMAGINÁRIA em roxo.
 
-TITULO = "Operações com números complexos: produto, conjugado e divisão · Matemática ENEM, Complexos episódio 2"
-
+TITULO = "Operações com números complexos: produto, conjugado e divisão | Números Complexos Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

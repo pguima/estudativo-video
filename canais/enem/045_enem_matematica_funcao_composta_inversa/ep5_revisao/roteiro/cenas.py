@@ -53,8 +53,7 @@
 # Ponte (do usuário): Progressão aritmética.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função composta e inversa: câmbio, termômetro e tabela · Matemática ENEM, Composta e Inversa ep. 5"
-
+TITULO = "Revisão de função composta e inversa: câmbio, termômetro e tabela | Composta e Inversa Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

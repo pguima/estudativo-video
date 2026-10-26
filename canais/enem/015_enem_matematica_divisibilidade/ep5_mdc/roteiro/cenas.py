@@ -22,8 +22,7 @@
 #   3. Achou o MDC? Agora responda o que foi perguntado.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "MDC: o maior pedaço que cabe certinho — Matemática ENEM, Divisibilidade episódio 5"
-
+TITULO = "Achou o MDC e Errou a Questão? O Passo Que Falta | Divisibilidade Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

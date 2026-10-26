@@ -33,8 +33,7 @@
 #   3. Achou o x? Releia a pergunta.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Do texto à equação: idades, partes e misturas sem cair na pegadinha · Matemática ENEM, Equações episódio 2"
-
+TITULO = "Do texto à equação: idades, partes e misturas sem cair na pegadinha | Equações do 1º Grau Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

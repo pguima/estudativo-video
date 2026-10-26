@@ -68,6 +68,8 @@ Dois números somam 8 e, multiplicados, dão 12. Quais são? Essa pergunta já �
 2. O u ao quadrado é a média ao quadrado, menos c.
 3. As raízes são a média menos u e a média mais u.
 
+📺 Playlist da série: Equação do 2º Grau sem Bhaskara
+
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já conhecia esse jeito de resolver sem Bhaskara?
 
@@ -78,7 +80,7 @@ Dois números somam 8 e, multiplicados, dão 12. Quais são? Essa pergunta já �
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, equação do segundo grau, equação do 2º grau, po-shen loh, método po-shen loh, sem bhaskara, fórmula de bhaskara, soma e produto, raízes da equação, raiz dupla, delta negativo, função quadrática
+enem, matemática enem, matematica para o enem, equação do 2º grau sem bhaskara, estudativo, enem 2026, matemática do zero, aula de matemática, revisão enem, vestibular, equação do segundo grau, equação do 2º grau, po-shen loh, método po-shen loh, sem bhaskara, fórmula de bhaskara, soma e produto, raízes da equação, raiz dupla, delta negativo, função quadrática
 ```
 
 ## Hashtags
@@ -123,6 +125,7 @@ enem, matemática enem, matematica para o enem, enem 2026, matemática do zero, 
 - 10:48 (agora é com você): card para a playlist
 
 ## Playlist
+**"Equação do 2º Grau sem Bhaskara"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**.
 
 ## Ideias de Shorts

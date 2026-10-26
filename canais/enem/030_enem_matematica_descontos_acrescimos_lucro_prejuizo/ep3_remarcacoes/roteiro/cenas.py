@@ -29,8 +29,7 @@
 #   2. Desconto menor pode anular margem maior. 3. Lucro de p% e prejuízo de p% no mesmo preço dão prejuízo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A liquidação comeu o lucro? Remarcações e o lucro que sobra · Matemática ENEM, Descontos e Lucro episódio 3"
-
+TITULO = "A liquidação comeu o lucro? Remarcações e o lucro que sobra | Descontos e Lucro Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

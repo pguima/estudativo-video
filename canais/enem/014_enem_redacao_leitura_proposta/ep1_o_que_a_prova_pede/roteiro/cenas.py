@@ -18,8 +18,7 @@
 #   roxo = regra oficial (Cartilha/edital).
 # Citações oficiais lidas EXATAMENTE como no material: comando (cena 15), definição de tema (27), Questão 1 (42–43).
 
-TITULO = "O que a prova de redação pede: assunto, tema e tese — Redação ENEM, episódio 1"
-
+TITULO = "A Redação Começa Antes da 1ª Linha: o Que a Prova Pede | Proposta de Redação Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

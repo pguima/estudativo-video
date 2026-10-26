@@ -24,8 +24,7 @@
 #   · "distância ×2 → luz ÷4; ×3 → ÷9" · "o expoente diz quantas vezes o fator se multiplica" · "confira com números pequenos".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Quando dobrar não dobra: quadrática, cúbica e inverso do quadrado · Matemática ENEM, episódio 5"
-
+TITULO = "Quando dobrar não dobra: quadrática, cúbica e inverso do quadrado | Grandezas Proporcionais Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

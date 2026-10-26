@@ -28,8 +28,7 @@
 #   2. O fator é o que sobra: perder 15% é multiplicar por 0,85. 3. Juros compostos são a mesma exponencial com outro nome.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função exponencial: da frase do enunciado à lei Q₀ · aᵗ · Matemática ENEM, Exponencial episódio 2"
-
+TITULO = "Função exponencial: da frase do enunciado à lei Q₀ · aᵗ | Função Exponencial Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

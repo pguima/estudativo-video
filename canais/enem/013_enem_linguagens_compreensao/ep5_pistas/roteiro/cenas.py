@@ -20,8 +20,7 @@
 # Cores: azul = tese/definição · verde = pista/palavra-sinal · amarelo = armadilha · vermelho = erro · roxo = regra.
 # Textos-base (Questões 5 e 7: título, texto, comando e alternativas) lidos EXATAMENTE como no material.
 
-TITULO = "As placas que entregam a tese: título, parágrafos e palavras-sinal — Linguagens ENEM, episódio 5"
-
+TITULO = "O Texto Avisa Onde Está a Tese: as Placas | Interpretação Ep. 5"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

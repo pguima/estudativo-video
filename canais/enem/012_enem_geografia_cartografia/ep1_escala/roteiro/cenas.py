@@ -7,8 +7,7 @@
 #   2. Para passar de centímetros para quilômetros, corte cinco zeros.
 #   3. Escala grande é zoom aproximado; escala pequena é zoom afastado.
 
-TITULO = "Escala do mapa do zero: o zoom que o ENEM cobra — Cartografia, episódio 1"
-
+TITULO = "Escala do Mapa do Zero: o Zoom que o ENEM Cobra | Cartografia Ep. 1"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

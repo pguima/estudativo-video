@@ -18,7 +18,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Linha Copiada Vira Linha Fantasma: Textos Motivadores | Redação Ep. 3** ← recomendado (com capa A)
+1. **Linha Copiada Vira Linha Fantasma: Textos Motivadores | Proposta de Redação Ep. 3** ← recomendado (com capa A)
 2. Copiar do Texto de Apoio Pode Zerar a Redação? Entenda | Redação Ep. 3 (com capa B)
 3. Como Usar os Textos Motivadores Sem Copiar | Redação ENEM do Zero, Ep. 3 (com capa C)
 4. Textos Motivadores e Cópia na Redação do ENEM | Redação do Zero, Ep. 3
@@ -75,7 +75,11 @@ Copiar uma frase do texto de apoio parece inofensivo. Mas essa linha simplesment
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: como ficou a sua versão da frase do transporte?
-⬅️ Episódio 2: a frase temática bloco a bloco · ➡️ Episódio 4: abordagem completa, tangenciamento e fuga ao tema.
+
+⬅️ Episódio anterior: Como Desmontar a Frase Temática da Redação do ENEM | Proposta de Redação Ep. 2
+➡️ Próximo episódio: Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) | Proposta de Redação Ep. 4
+
+📺 Playlist da série: Redação: Leitura da Proposta
 
 #ENEM #RedacaoENEM #TextosMotivadores
 ```
@@ -84,7 +88,7 @@ Copiar uma frase do texto de apoio parece inofensivo. Mas essa linha simplesment
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, textos motivadores, coletânea, cópia na redação, linhas copiadas, texto insuficiente, nota zero redação, paráfrase, como não copiar na redação, repertório sociocultural, proposta de redação, cartilha do participante, edital enem, redação do zero, redação nota 1000, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, estudativo, redacao enem, textos motivadores, coletânea, cópia na redação, linhas copiadas, texto insuficiente, nota zero redação, paráfrase, como não copiar na redação, repertório sociocultural, proposta de redação, cartilha do participante, edital enem, redação do zero, redação nota 1000, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -127,6 +131,7 @@ enem, redação enem, redação do enem, redacao enem, textos motivadores, colet
 - 10:31 (ponte): card para o **Episódio 4**, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"**, logo depois do Episódio 2.
 
 ## Ideias de Shorts

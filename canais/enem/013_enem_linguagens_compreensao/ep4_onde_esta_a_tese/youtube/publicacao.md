@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **A Primeira Frase Pode Ser a Armadilha | Linguagens ENEM Ep. 4** ← recomendado (com capa A)
+1. **A Primeira Frase Pode Ser a Armadilha | Interpretação Ep. 4** ← recomendado (com capa A)
 2. Onde Está a Tese? No Começo, no Fim ou em Lugar Nenhum | ENEM (com capa B)
 3. Leia Até o Primeiro "Mas": Como Achar a Tese | Linguagens Ep. 4 (com capa C)
 4. Texto Dedutivo, Indutivo e Tese Implícita do Zero | ENEM
@@ -68,7 +68,11 @@ Muita gente marca a primeira frase do texto como a opinião do autor. Às vezes,
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: você já marcou a primeira frase como tese?
-⬅️ Episódio 3: As 5 alternativas-armadilha · ➡️ Episódio 5: As pistas que entregam a tese.
+
+⬅️ Episódio anterior: As Alternativas Erradas do ENEM Seguem 5 Moldes | Interpretação Ep. 3
+➡️ Próximo episódio: O Texto Avisa Onde Está a Tese: as Placas | Interpretação Ep. 5
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -77,7 +81,7 @@ Muita gente marca a primeira frase do texto como a opinião do autor. Às vezes,
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, onde está a tese, tese, texto dedutivo, texto indutivo, tese implícita, tese explícita, refutar, artigo de opinião, crônica, compreensão de texto, português enem, linguagens do zero, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, onde está a tese, tese, texto dedutivo, texto indutivo, tese implícita, tese explícita, refutar, artigo de opinião, crônica, compreensão de texto, português enem, linguagens do zero, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -120,6 +124,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 08:58 (ponte): card para o **Episódio 5**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"**, depois do Episódio 3.
 
 ## Ideias de Shorts

@@ -51,8 +51,7 @@
 # Ponte (do usuário): Função composta e função inversa.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função modular e funções por partes: conta de água, estacionamento e tolerância · Matemática ENEM, ep. 5"
-
+TITULO = "Revisão: conta de água, estacionamento e tolerância | Função Modular Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

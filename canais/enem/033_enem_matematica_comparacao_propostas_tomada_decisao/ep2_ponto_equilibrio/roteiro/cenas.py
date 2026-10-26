@@ -28,8 +28,7 @@
 #   vence o fixo baixo; acima, o preço por unidade baixo. 3. No empate, os dois custam o mesmo: "mais barato" começa depois.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Qual plano vale mais a pena? O ponto de equilíbrio · Matemática ENEM, Comparação de propostas episódio 2"
-
+TITULO = "Qual plano vale mais a pena? O ponto de equilíbrio | Comparar Propostas Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

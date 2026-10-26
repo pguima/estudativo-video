@@ -10,8 +10,7 @@
 #   Q4 1:25 000, 2 cm = 500 m; 450 − 300 = 150 m; 150 ÷ 500 = 30% (B)
 #   Q5 tamanho ∝ emissões de CO₂ → os maiores no mapa são os que mais emitem (C)
 
-TITULO = "Revisão de Cartografia para o ENEM: pegadinhas e questões inéditas — Cartografia, episódio 6"
-
+TITULO = "Revisão de Cartografia para o ENEM: 9 Pegadinhas e 5 Questões | Cartografia Ep. 6"
 PRONUNCIA = {
     "ENEM": "Enem",
     "CO₂": "C O dois",

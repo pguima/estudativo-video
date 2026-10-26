@@ -35,8 +35,7 @@
 #   2. Entre as raízes, o sinal contrário ao de a. 3. Inequação do 2º grau: passe tudo para um lado e nunca divida por x.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Três formas da função quadrática e estudo do sinal · Matemática ENEM, Função quadrática episódio 4"
-
+TITULO = "Três formas da função quadrática e estudo do sinal | Função Quadrática Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

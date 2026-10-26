@@ -26,8 +26,7 @@
 #   2. Multiplique pelo MMC e as frações somem. 3. Inverter o valor, não a ordem.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Divisão inversamente proporcional: inverter o valor, não a ordem (atalho do MMC) · Matemática ENEM, episódio 2"
-
+TITULO = "Divisão inversamente proporcional: inverta o valor, não a ordem | Divisão Proporcional Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

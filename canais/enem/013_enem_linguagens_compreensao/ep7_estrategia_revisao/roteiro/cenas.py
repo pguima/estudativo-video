@@ -17,8 +17,7 @@
 #   Q5 divulgação científica .. E · A extrapolação de causa · B verdade do mundo · C contradição · D redução
 # Cores: azul = tese/definição · verde = pista/palavra-sinal · amarelo = armadilha · vermelho = erro · roxo = regra.
 
-TITULO = "Revisão: as pegadinhas da tese e 5 questões inéditas — Linguagens ENEM, episódio 7"
-
+TITULO = "As 5 Pegadinhas da Tese no ENEM + 5 Questões Inéditas | Interpretação Ep. 7"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

@@ -19,8 +19,7 @@
 #   3. Em que linha isso está?
 # Cores: azul = tese/definição · verde = pista/palavra-sinal · amarelo = armadilha · vermelho = erro · roxo = fórmula/regra.
 
-TITULO = "As 5 alternativas-armadilha do ENEM (e o método de 6 passos) — Linguagens ENEM, episódio 3"
-
+TITULO = "As Alternativas Erradas do ENEM Seguem 5 Moldes | Interpretação Ep. 3"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

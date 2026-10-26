@@ -19,7 +19,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) | Ep. 4** ← recomendado (com capa A)
+1. **Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) | Proposta de Redação Ep. 4** ← recomendado (com capa A)
 2. Bairro Certo, Casa Errada: o Que É Tangenciar o Tema | Redação Ep. 4 (com capa B)
 3. Fuga ao Tema x Tangenciamento: Qual Zera a Redação? | Redação Ep. 4 (com capa C)
 4. Abordagem Completa, Tangenciamento e Fuga ao Tema | Redação do Zero, Ep. 4
@@ -69,7 +69,11 @@ Quem foge ao tema geralmente percebe. Quem tangencia quase nunca percebe, e pode
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: como você classificou as três teses do cinema?
-⬅️ Episódio 3: textos motivadores sem copiar · ➡️ Episódio 5: a leitura completa de uma proposta em 6 passos.
+
+⬅️ Episódio anterior: Linha Copiada Vira Linha Fantasma: Textos Motivadores | Proposta de Redação Ep. 3
+➡️ Próximo episódio: Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos | Proposta de Redação Ep. 5
+
+📺 Playlist da série: Redação: Leitura da Proposta
 
 #ENEM #RedacaoENEM #Tangenciamento
 ```
@@ -78,7 +82,7 @@ Quem foge ao tema geralmente percebe. Quem tangencia quase nunca percebe, e pode
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, tangenciamento, tangenciar o tema, fuga ao tema, abordagem completa, nota zero redação, competência 2, competências da redação, tema da redação enem 2025, envelhecimento redação, cartilha do participante, frase temática, proposta de redação, redação do zero, redação nota 1000, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, estudativo, redacao enem, tangenciamento, tangenciar o tema, fuga ao tema, abordagem completa, nota zero redação, competência 2, competências da redação, tema da redação enem 2025, envelhecimento redação, cartilha do participante, frase temática, proposta de redação, redação do zero, redação nota 1000, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -121,6 +125,7 @@ enem, redação enem, redação do enem, redacao enem, tangenciamento, tangencia
 - 09:52 (ponte): card para o **Episódio 5**, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"**, logo depois do Episódio 3.
 
 ## Ideias de Shorts

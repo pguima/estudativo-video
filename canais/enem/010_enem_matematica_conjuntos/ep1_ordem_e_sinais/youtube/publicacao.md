@@ -18,9 +18,9 @@ Mantenha o selo "MATEMÁTICA BÁSICA · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero | Matemática Ep. 1** ← recomendado (com capa A)
+1. **2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero | Matemática Básica Ep. 1** ← recomendado (com capa A)
 2. −3² Não É 9! O Erro Mais Caro da Prova | Regra de Sinais ENEM (com capa B)
-3. Menos com Menos Dá Mais? Regra de Sinais com Dinheiro | Matemática Ep. 1 (com capa C)
+3. Menos com Menos Dá Mais? Regra de Sinais com Dinheiro | Matemática Básica Ep. 1 (com capa C)
 4. Ordem das Operações e Regra de Sinais para Iniciantes | Matemática ENEM
 
 ---
@@ -73,7 +73,10 @@ Quanto dá 2 + 3 × 4? Metade das pessoas responde 20, metade responde 14. Só u
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: antes desta aula, você respondia 14 ou 20?
-➡️ Episódio 2: Os conjuntos numéricos.
+
+➡️ Próximo episódio: O Número Que Nunca Termina: Racional ou Irracional? | Matemática Básica Ep. 2
+
+📺 Playlist da série: Matemática Básica: Operações e Conjuntos
 
 #ENEM #MatematicaENEM #RegraDeSinais
 ```
@@ -82,7 +85,7 @@ Quanto dá 2 + 3 × 4? Metade das pessoas responde 20, metade responde 14. Só u
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, ordem das operações, expressão numérica, regra de sinais, menos com menos dá mais, jogo de sinais, potência de base negativa, menos três ao quadrado, parênteses colchetes e chaves, números negativos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
+enem, matemática enem, matematica para o enem, matemática básica operações e conjuntos, estudativo, ordem das operações, expressão numérica, regra de sinais, menos com menos dá mais, jogo de sinais, potência de base negativa, menos três ao quadrado, parênteses colchetes e chaves, números negativos, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -124,6 +127,7 @@ enem, matemática enem, matematica para o enem, ordem das operações, expressã
 - 11:03 (ponte): card para o **Episódio 2**, quando for publicado
 
 ## Playlist
+**"Matemática Básica: Operações e Conjuntos"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, como primeiro vídeo da série Matemática Básica.
 
 ## Ideias de Shorts

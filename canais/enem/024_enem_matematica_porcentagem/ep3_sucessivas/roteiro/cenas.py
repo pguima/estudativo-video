@@ -22,8 +22,7 @@
 #   2. A segunda variação incide sobre o valor já alterado. 3. A ordem não muda o resultado.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Variações sucessivas: multiplique os fatores, nunca some as porcentagens · Matemática ENEM, Porcentagem episódio 3"
-
+TITULO = "Variações sucessivas: multiplique os fatores, nunca some as porcentagens | Porcentagem Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

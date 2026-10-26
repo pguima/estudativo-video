@@ -24,8 +24,7 @@
 #   3. Aumentar 200% é triplicar.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Fator de multiplicação: aumentos e descontos numa conta só (aumentar 200% é triplicar) · Matemática ENEM, episódio 2"
-
+TITULO = "Fator de multiplicação: aumentar 200% é triplicar | Porcentagem Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

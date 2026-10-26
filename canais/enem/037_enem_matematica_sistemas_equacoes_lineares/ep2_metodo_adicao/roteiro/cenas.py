@@ -30,8 +30,7 @@
 #   equação inteira. 3. Antes de resolver, olhe o que foi pedido.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Sistemas lineares: o método da adição e o truque da soma · Matemática ENEM, sistemas episódio 2"
-
+TITULO = "Sistemas lineares: o método da adição e o truque da soma | Sistemas Lineares Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

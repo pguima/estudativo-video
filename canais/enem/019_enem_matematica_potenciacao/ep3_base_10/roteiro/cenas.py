@@ -23,8 +23,7 @@
 #   potências com potências" · "por habitante, por pessoa, por unidade = dividir" · "de fora entra em todos".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Potências de 10: 1 000 000 × 0,001 de cabeça em 3 segundos · Matemática ENEM, episódio 3"
-
+TITULO = "Potências de 10: 1 000 000 × 0,001 de cabeça em 3 segundos | Potenciação Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

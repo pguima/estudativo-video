@@ -18,7 +18,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **A Redação Começa Antes da 1ª Linha: o Que a Prova Pede | Redação Ep. 1** ← recomendado (com capa A)
+1. **A Redação Começa Antes da 1ª Linha: o Que a Prova Pede | Proposta de Redação Ep. 1** ← recomendado (com capa A)
 2. Assunto, Tema e Tese na Redação do ENEM: a Diferença | Redação Ep. 1 (com capa B)
 3. "É um Tema Importante" Não É Tese! Redação ENEM do Zero | Ep. 1 (com capa C)
 4. Como Ler a Proposta de Redação do ENEM | Redação do Zero, Ep. 1
@@ -66,7 +66,10 @@ A redação começa antes da primeira linha. Um erro na leitura da proposta pode
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: no tema de 2022, você acertou o assunto e o tema?
-➡️ Episódio 2: como desmontar a frase temática, bloco a bloco.
+
+➡️ Próximo episódio: Como Desmontar a Frase Temática da Redação do ENEM | Proposta de Redação Ep. 2
+
+📺 Playlist da série: Redação: Leitura da Proposta
 
 #ENEM #RedacaoENEM #PropostaDeRedacao
 ```
@@ -75,7 +78,7 @@ A redação começa antes da primeira linha. Um erro na leitura da proposta pode
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, proposta de redação, frase temática, tema da redação, assunto e tema, tema e tese, tese redação, texto dissertativo-argumentativo, textos motivadores, comando da redação, competências da redação, cartilha do participante, como fazer redação, redação do zero, redação nota 1000, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, estudativo, redacao enem, proposta de redação, frase temática, tema da redação, assunto e tema, tema e tese, tese redação, texto dissertativo-argumentativo, textos motivadores, comando da redação, competências da redação, cartilha do participante, como fazer redação, redação do zero, redação nota 1000, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -119,6 +122,7 @@ enem, redação enem, redação do enem, redacao enem, proposta de redação, fr
 - 10:34 (ponte): card para o **Episódio 2**, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"** (nova), como primeiro vídeo.
 
 ## Ideias de Shorts

@@ -27,8 +27,7 @@
 #   é o espelho. 3. Linha é o que o time fez; coluna é o que ele sofreu.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Matriz do zero: a tabela com endereço · Matemática ENEM, Matrizes episódio 1"
-
+TITULO = "Matriz do zero: a tabela com endereço | Matrizes Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

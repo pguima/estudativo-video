@@ -31,8 +31,7 @@
 #   2. Margem sobre o custo, multiplique; margem sobre a venda, divida por 1 − m. 3. Lucro sobre a venda nunca chega a 100%.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Lucro de 25% ou de 20%? A pegadinha da BASE · Matemática ENEM, Descontos e Lucro episódio 1"
-
+TITULO = "Lucro de 25% ou de 20%? A pegadinha da BASE | Descontos e Lucro Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

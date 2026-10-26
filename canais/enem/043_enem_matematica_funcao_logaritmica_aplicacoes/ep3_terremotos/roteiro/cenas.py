@@ -33,8 +33,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Terremotos no ENEM: amplitude ×100, energia ×1 000 · Matemática ENEM, Função logarítmica episódio 3"
-
+TITULO = "Terremotos no ENEM: amplitude ×100, energia ×1 000 | Função Logarítmica Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

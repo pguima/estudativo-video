@@ -28,8 +28,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Gráfico da função afim e a lei por dois pontos · Matemática ENEM, Função afim episódio 3"
-
+TITULO = "Gráfico da função afim e a lei por dois pontos | Função Afim Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

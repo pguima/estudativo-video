@@ -12,8 +12,7 @@
 #   3. O gráfico não diz se é simples ou composta.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica (patamar) · vermelho = erro.
 
-TITULO = "Como saber se um material é puro só com um termômetro? Curva de aquecimento do zero — Química ENEM, episódio 5"
-
+TITULO = "Puro ou Não? Só com um Termômetro: Curva de Aquecimento | Matéria e Misturas Ep. 5"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

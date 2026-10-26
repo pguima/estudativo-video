@@ -23,8 +23,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função logarítmica do zero: o espelho da exponencial, gráfico, domínio e sinal · Matemática ENEM, Logarítmica ep. 1"
-
+TITULO = "Função logarítmica do zero: o espelho da exponencial, gráfico e domínio | Função Logarítmica Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

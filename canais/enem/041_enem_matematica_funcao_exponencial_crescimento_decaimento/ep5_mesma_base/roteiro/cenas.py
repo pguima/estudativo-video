@@ -29,8 +29,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação exponencial do zero: mesma base, isolar a potência e a desigualdade que vira · Matemática ENEM, Exponencial episódio 5"
-
+TITULO = "Equação exponencial do zero: mesma base e a desigualdade que vira | Função Exponencial Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

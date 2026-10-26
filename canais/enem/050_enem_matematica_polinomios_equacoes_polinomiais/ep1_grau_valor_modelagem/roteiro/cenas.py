@@ -30,8 +30,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Polinômio do zero: grau, valor numérico e o truque do P(1) · Matemática ENEM, Polinômios episódio 1"
-
+TITULO = "Polinômio do zero: grau, valor numérico e o truque do P(1) | Polinômios Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

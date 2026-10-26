@@ -59,8 +59,7 @@
 # Ponte (do usuário): Função quadrática.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função afim: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Função afim episódio 5"
-
+TITULO = "Revisão de função afim: 9 pegadinhas e 5 questões estilo ENEM | Função Afim Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

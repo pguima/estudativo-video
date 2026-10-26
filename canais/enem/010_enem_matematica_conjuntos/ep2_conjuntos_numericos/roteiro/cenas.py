@@ -12,8 +12,7 @@
 #   3. Raiz de quadrado perfeito é racional.
 # Na narração, os símbolos são falados pela letra ("a letra N"); na tela aparecem ℕ ℤ ℚ 𝕀 ℝ ⊂ ∪.
 
-TITULO = "Racional ou irracional? Os conjuntos numéricos do zero — Matemática ENEM, episódio 2"
-
+TITULO = "O Número Que Nunca Termina: Racional ou Irracional? | Matemática Básica Ep. 2"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

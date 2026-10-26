@@ -30,8 +30,7 @@
 #   3. Raízes dadas: x² − Sx + P = 0.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Soma e produto: raízes de cabeça sem Bhaskara · Matemática ENEM, 2º grau episódio 3"
-
+TITULO = "Soma e produto: raízes de cabeça sem Bhaskara | Bhaskara Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

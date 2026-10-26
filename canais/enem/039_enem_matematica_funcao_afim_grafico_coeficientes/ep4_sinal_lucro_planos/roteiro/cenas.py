@@ -27,8 +27,7 @@
 #   2. Lucro é receita menos custo, com o custo entre parênteses. 3. No equilíbrio o lucro é zero: com unidades inteiras, some 1.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Lucro, prejuízo e ponto de equilíbrio: estudo do sinal · Matemática ENEM, Função afim episódio 4"
-
+TITULO = "Lucro, prejuízo e ponto de equilíbrio: estudo do sinal | Função Afim Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

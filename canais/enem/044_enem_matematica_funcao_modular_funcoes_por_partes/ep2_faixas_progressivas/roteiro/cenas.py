@@ -31,8 +31,7 @@
 #   ultrapassar": é progressivo. 3. Parcela a deduzir: cobra tudo na taxa maior e devolve o excesso.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Imposto progressivo e conta de água por faixas: cada parte paga a sua taxa · Matemática ENEM, Funções por partes episódio 2"
-
+TITULO = "Imposto progressivo e conta de água por faixas: cada parte paga a sua taxa | Função Modular Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

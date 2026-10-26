@@ -32,8 +32,7 @@
 #   3. Juros do SAC somam como PA: primeiro mais último, vezes quantidade, dividido por 2.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "SAC do zero: por que a parcela diminui e como somar os juros · Matemática ENEM, Financiamentos episódio 3"
-
+TITULO = "SAC do zero: por que a parcela diminui e como somar os juros | Financiamentos Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

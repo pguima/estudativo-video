@@ -24,8 +24,7 @@
 #   Q4 (30, 48) e Q5 (8, 12): MMC = todos os primos do varal; MDC = só os primos que dividiram todos juntos.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão: divisibilidade, primos, MMC e MDC em 9 pegadinhas e 5 questões — Matemática ENEM, episódio 7"
-
+TITULO = "Você Cai Nessas 9 Pegadinhas de MMC e MDC? | Divisibilidade Ep. 7"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -32,8 +32,7 @@
 #   ganha, o outro perde" · "o de fora entra nos dois" · "deixe o expoente par com a gangorra" · "confira elevando ao quadrado".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Notação científica: multiplicar, dividir, elevar e tirar raiz (sem cair no 40 · 10⁶) · Matemática ENEM, episódio 2"
-
+TITULO = "Multiplicar e dividir em notação científica (sem cair no 40 · 10⁶) | Notação Científica Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -27,8 +27,7 @@
 #   3. Menor que a água boia; maior afunda.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Densidade do zero: descubra o material e se ele boia · Matemática ENEM, Velocidade, densidade e vazão ep. 4"
-
+TITULO = "Densidade do zero: descubra o material e se ele boia | Velocidade e Vazão Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

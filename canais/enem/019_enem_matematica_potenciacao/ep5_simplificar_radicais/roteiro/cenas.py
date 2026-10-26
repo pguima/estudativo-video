@@ -29,8 +29,7 @@
 #   3. Simplifique antes de dizer que não dá.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "√50 = 5√2: simplificar raízes e somar radicais do zero · Matemática ENEM, episódio 5"
-
+TITULO = "√50 = 5√2: simplificar raízes e somar radicais do zero | Potenciação Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

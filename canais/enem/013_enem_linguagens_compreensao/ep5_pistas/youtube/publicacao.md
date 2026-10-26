@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **O Texto Avisa Onde Está a Tese: as Placas | Linguagens ENEM Ep. 5** ← recomendado (com capa A)
+1. **O Texto Avisa Onde Está a Tese: as Placas | Interpretação Ep. 5** ← recomendado (com capa A)
 2. Não Confie Só no Título: Interpretação de Texto | ENEM Ep. 5 (com capa B)
 3. Para Que Serve Este Parágrafo? Questões de Organização | ENEM (com capa C)
 4. Título, Parágrafos e Palavras-Sinal: Ache a Tese Mais Rápido | ENEM
@@ -71,7 +71,11 @@ Antes de chegar à tese, o texto já te avisou onde ela está. Só que quase nin
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Comente: quantas das quatro placas você acertou?
-⬅️ Episódio 4: Onde a tese se esconde · ➡️ Episódio 6: A tese implícita.
+
+⬅️ Episódio anterior: A Primeira Frase Pode Ser a Armadilha | Interpretação Ep. 4
+➡️ Próximo episódio: Sem Dizer "Eu Defendo", o Texto Tem Tese | Interpretação Ep. 6
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
 
 #ENEM #LinguagensENEM #InterpretacaoDeTexto
 ```
@@ -80,7 +84,7 @@ Antes de chegar à tese, o texto já te avisou onde ela está. Só que quase nin
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, palavras-sinal, conectivos, título, tópico frasal, função do parágrafo, paragrafação, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, palavras-sinal, conectivos, título, tópico frasal, função do parágrafo, paragrafação, tese, compreensão de texto, português enem, linguagens do zero, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -123,6 +127,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 09:06 (ponte): card para o **Episódio 6**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"**, depois do Episódio 4.
 
 ## Ideias de Shorts

@@ -50,8 +50,7 @@
 # Ponte (do usuário): Função afim: gráfico, coeficientes e aplicações; o táxi P(d) = 5 + 2,5d.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de função: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Funções episódio 6"
-
+TITULO = "Revisão de função: 9 pegadinhas e 5 questões estilo ENEM | Funções Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

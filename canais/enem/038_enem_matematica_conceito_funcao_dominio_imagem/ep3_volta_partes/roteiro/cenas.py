@@ -26,8 +26,7 @@
 #   a faixa. 3. Hora ou fração: começou a hora, paga a hora.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Pagou R$ 30 de táxi: andou quantos km? O caminho de volta · Matemática ENEM, Conceito de função, episódio 3"
-
+TITULO = "Pagou R$ 30 de táxi: andou quantos km? O caminho de volta | Funções Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

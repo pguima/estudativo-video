@@ -72,7 +72,9 @@ Como saber se um terreno é perigoso para construir uma casa olhando só para um
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder os próximos episódios.
 💬 Comente: a rua da sua casa tem mais ou menos de 30%?
-⬅️ Episódio 3: Projeções · ➡️ Episódio 5: Mapas temáticos e anamorfoses.
+
+⬅️ Episódio anterior: Por Que Todo Mapa Mente: Mercator x Peters | Cartografia Ep. 3
+➡️ Próximo episódio: Anamorfose do Zero: o Mapa em Que a Índia Fica Gigante | Cartografia Ep. 5
 
 #ENEM #GeografiaENEM #Cartografia
 ```
@@ -81,7 +83,7 @@ Como saber se um terreno é perigoso para construir uma casa olhando só para um
 
 ## Tags
 ```
-enem, geografia enem, cartografia, curvas de nível, isoípsa, equidistância, desnível, declividade, como calcular declividade, perfil topográfico, relevo no mapa, morro e depressão, vale, montante e jusante, área de risco, deslizamento, lei 6766, carta topográfica, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
+enem, geografia enem, cartografia, estudativo, curvas de nível, isoípsa, equidistância, desnível, declividade, como calcular declividade, perfil topográfico, relevo no mapa, morro e depressão, vale, montante e jusante, área de risco, deslizamento, lei 6766, carta topográfica, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
 ```
 
 ## Hashtags
@@ -124,6 +126,7 @@ enem, geografia enem, cartografia, curvas de nível, isoípsa, equidistância, d
 - 08:38 (ponte): card para o **Episódio 5**, quando for publicado
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 **"Cartografia do Zero — Geografia ENEM"**, depois do Episódio 3.
 
 ## Ideias de Shorts

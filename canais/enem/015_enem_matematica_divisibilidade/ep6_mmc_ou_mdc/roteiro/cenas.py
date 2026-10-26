@@ -17,8 +17,7 @@
 #   3. MDC vezes MMC é igual a a vezes b, só para dois números.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "MMC ou MDC? A decisão em 10 segundos — Matemática ENEM, Divisibilidade episódio 6"
-
+TITULO = "MMC ou MDC? Repete ou Reparte, a Decisão em 10 s | Divisibilidade Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

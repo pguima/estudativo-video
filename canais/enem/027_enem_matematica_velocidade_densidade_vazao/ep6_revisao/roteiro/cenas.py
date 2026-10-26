@@ -43,8 +43,7 @@
 # Meta (material): 30 questões, pelo menos 21 acertos (70%), incluindo Física (cinemática e hidrostática).
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de velocidade, densidade e vazão: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 6"
-
+TITULO = "Revisão: 9 pegadinhas e 5 questões estilo ENEM | Velocidade e Vazão Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

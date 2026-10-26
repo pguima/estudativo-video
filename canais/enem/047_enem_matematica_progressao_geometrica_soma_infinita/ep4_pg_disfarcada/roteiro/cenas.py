@@ -33,8 +33,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A PG disfarçada: juros, meia-vida e carro usado · Matemática ENEM, PG episódio 4"
-
+TITULO = "A PG disfarçada: juros, meia-vida e carro usado | PG Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

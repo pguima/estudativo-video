@@ -48,8 +48,7 @@
 # Ponte (do usuário): Conceito de função: domínio, contradomínio e imagem.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de sistemas lineares: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Álgebra episódio 5"
-
+TITULO = "Revisão de sistemas lineares: 9 pegadinhas e 5 questões estilo ENEM | Sistemas Lineares Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

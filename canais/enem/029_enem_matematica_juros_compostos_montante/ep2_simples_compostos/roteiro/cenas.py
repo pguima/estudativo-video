@@ -30,8 +30,7 @@
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 # Cores dos regimes no gráfico (pedido do prompt): reta (simples) = AZUL · curva (compostos) = ROXO.
 
-TITULO = "Juros simples × compostos: reta, curva e quem rende mais · Matemática ENEM, Juros compostos episódio 2"
-
+TITULO = "Juros simples × compostos: reta, curva e quem rende mais | Juros Compostos Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

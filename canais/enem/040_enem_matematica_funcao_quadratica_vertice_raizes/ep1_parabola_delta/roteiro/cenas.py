@@ -26,8 +26,7 @@
 #   2. c é onde a parábola corta o eixo vertical. 3. Δ conta quantas vezes a parábola encosta no eixo x.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Função quadrática do zero: a parábola e o que o Δ desenha · Matemática ENEM, Função quadrática episódio 1"
-
+TITULO = "Função quadrática do zero: a parábola e o que o Δ desenha | Função Quadrática Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

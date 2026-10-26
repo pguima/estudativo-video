@@ -18,7 +18,7 @@ A capa B costuma render comentário ("acertei 7!"). Use o "Testar e comparar" co
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Revisão de Química: 9 Pegadinhas e 5 Questões Inéditas | Ep. 6** ← recomendado (com capa A ou B)
+1. **Revisão de Química: 9 Pegadinhas e 5 Questões Inéditas | Matéria e Misturas Ep. 6** ← recomendado (com capa A ou B)
 2. 3 Perguntas que Classificam Qualquer Material | Química ENEM Ep. 6 (com capa A)
 3. 9 Pegadinhas de Química que Derrubam no ENEM | Química do Zero Ep. 6 (com capa B)
 4. Matéria, Substâncias e Misturas: Revisão Completa | Química ENEM
@@ -62,6 +62,10 @@ Este é o primeiro assunto de Química do ENEM, e ele monta o vocabulário de to
 📺 A série completa:
 Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Misturas · Ep. 4 Fases e componentes · Ep. 5 Curva de aquecimento · Ep. 6 Revisão
 
+⬅️ Episódio anterior: Puro ou Não? Só com um Termômetro: Curva de Aquecimento | Matéria e Misturas Ep. 5
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
+
 👍 Se a série te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder a próxima série.
 💬 Comente: quantas das 9 pegadinhas você acertou?
 ➡️ Próximo assunto: Separação de misturas (tudo o que você classificou como mistura, lá você aprende a separar).
@@ -73,7 +77,7 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 ## Tags
 ```
-enem, química enem, química do zero, revisão química, matéria substâncias e misturas, substância pura e mistura, substância simples e composta, mistura homogênea e heterogênea, fases e componentes, curva de aquecimento, eutética e azeotrópica, alotropia, pegadinhas enem, questões de química, exercícios resolvidos, química para iniciantes, revisão enem, enem 2026
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, revisão química, matéria substâncias e misturas, substância pura e mistura, substância simples e composta, mistura homogênea e heterogênea, fases e componentes, curva de aquecimento, eutética e azeotrópica, alotropia, pegadinhas enem, questões de química, exercícios resolvidos, química para iniciantes, revisão enem, enem 2026
 ```
 
 ## Hashtags
@@ -116,6 +120,7 @@ enem, química enem, química do zero, revisão química, matéria substâncias 
 - 08:27 (checklist): card para o **Episódio 1** (quem precisa rever do começo)
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, como último vídeo. Vale fixá-lo no topo da playlist como "comece por aqui se for revisar".
 
 ## Ideias de Shorts

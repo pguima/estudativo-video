@@ -50,8 +50,7 @@
 # Ponte (do usuário): Números complexos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de polinômios: P(a), teorema do resto, Girard e as pegadinhas · Matemática ENEM, Polinômios ep. 5"
-
+TITULO = "Revisão de polinômios: P(a), teorema do resto, Girard e as pegadinhas | Polinômios Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

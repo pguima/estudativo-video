@@ -18,8 +18,7 @@
 #   3. "Para virar porcentagem, multiplique o decimal por 100."
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A tabela que vale ouro: fração, decimal e porcentagem de cabeça · Matemática ENEM, episódio 7"
-
+TITULO = "A tabela que vale ouro: fração, decimal e porcentagem de cabeça | Frações Ep. 7"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

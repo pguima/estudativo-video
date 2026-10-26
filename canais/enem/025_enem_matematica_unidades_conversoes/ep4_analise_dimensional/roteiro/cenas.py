@@ -25,8 +25,7 @@
 #   resposta. 3. Unidade de fora? A prova te dá o fator: use-o.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Análise dimensional: converta sem decorar fatores · Matemática ENEM, Unidades e conversões, episódio 4"
-
+TITULO = "Análise dimensional: converta sem decorar fatores | Unidades de Medida Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

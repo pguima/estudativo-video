@@ -33,8 +33,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Caçando raízes: equação do 3º grau sem fórmula · Matemática ENEM, Polinômios episódio 3"
-
+TITULO = "Caçando raízes: equação do 3º grau sem fórmula | Polinômios Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

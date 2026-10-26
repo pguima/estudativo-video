@@ -27,8 +27,7 @@
 #   duas vezes: some e divida por 2. 3. Cada um é o total menos a dupla em que ele não está.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Sistema com 3 incógnitas: a escada e o atalho da soma · Matemática ENEM, Sistemas episódio 4"
-
+TITULO = "Sistema com 3 incógnitas: a escada e o atalho da soma | Sistemas Lineares Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

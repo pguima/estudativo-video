@@ -28,8 +28,7 @@
 #   "unidade menor → número maior" · "1 litro = um cubo de 10 cm; 1 mL = um cubinho de 1 cm".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "1 m² NÃO são 100 cm²: prefixos e a armadilha de área e volume · Matemática ENEM, episódio 5"
-
+TITULO = "1 m² NÃO são 100 cm²: prefixos e a armadilha de área e volume | Notação Científica Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

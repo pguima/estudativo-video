@@ -20,8 +20,7 @@
 # Cores: azul = tese/definição · verde = pista/palavra-sinal · amarelo = armadilha · vermelho = erro · roxo = regra.
 # Textos-base (Questões 2 e 3: texto, comando e alternativas) lidos EXATAMENTE como no material.
 
-TITULO = "Onde a tese se esconde: no começo, no fim ou em lugar nenhum — Linguagens ENEM, episódio 4"
-
+TITULO = "A Primeira Frase Pode Ser a Armadilha | Interpretação Ep. 4"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

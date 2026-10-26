@@ -23,8 +23,7 @@
 #   o próprio sinal. 3. O traço da fração é um parêntese disfarçado.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação do 1º grau do zero: a balança e o roteiro de 5 passos · Matemática ENEM, Equações episódio 1"
-
+TITULO = "Equação do 1º grau do zero: a balança e o roteiro de 5 passos | Equações do 1º Grau Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

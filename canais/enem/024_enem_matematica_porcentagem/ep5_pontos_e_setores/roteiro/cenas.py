@@ -24,8 +24,7 @@
 #   2. Na pizza, 1% vale 3,6°. 3. Só se somam porcentagens do mesmo todo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Ponto percentual × por cento e gráfico de setores · Matemática ENEM, Porcentagem episódio 5"
-
+TITULO = "Ponto percentual × por cento e gráfico de setores | Porcentagem Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

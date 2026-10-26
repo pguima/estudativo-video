@@ -52,8 +52,7 @@
 # Ponte (do usuário): Matrizes e operações.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de progressão geométrica: remédio, corrente e bola quicando · Matemática ENEM, PG ep. 5"
-
+TITULO = "Revisão de progressão geométrica: remédio, corrente e bola quicando | PG Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

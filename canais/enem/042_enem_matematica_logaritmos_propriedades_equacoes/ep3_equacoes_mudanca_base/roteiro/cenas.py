@@ -31,8 +31,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação exponencial com logaritmo do zero: o expoente desce e a mudança de base · Matemática ENEM, Logaritmos episódio 3"
-
+TITULO = "Equação exponencial com logaritmo do zero: o expoente desce e a mudança de base | Logaritmos Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

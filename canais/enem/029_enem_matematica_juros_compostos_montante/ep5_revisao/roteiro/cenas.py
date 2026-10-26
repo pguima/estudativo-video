@@ -46,8 +46,7 @@
 # Ponte (do usuário): Descontos, acréscimos, lucro e prejuízo.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de juros compostos: 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, Juros compostos episódio 5"
-
+TITULO = "Revisão de juros compostos: 9 pegadinhas e 5 questões estilo ENEM | Juros Compostos Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

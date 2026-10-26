@@ -14,8 +14,7 @@
 #   3. Transforme o tema em pergunta; a tese é a resposta.
 # Cores: azul = núcleo/tema · verde = delimitadores e método · amarelo = armadilha · vermelho = erro · roxo = regra oficial.
 
-TITULO = "A frase temática bloco a bloco: núcleo, delimitadores e foco — Redação ENEM, episódio 2"
-
+TITULO = "Como Desmontar a Frase Temática da Redação do ENEM | Proposta de Redação Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

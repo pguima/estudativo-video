@@ -29,8 +29,7 @@
 #   3. Substituiu? Ponha parênteses.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Sistema de equações do zero: do texto ao sistema e a substituição · Matemática ENEM, Sistemas episódio 1"
-
+TITULO = "Sistema de equações do zero: do texto ao sistema e a substituição | Sistemas Lineares Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

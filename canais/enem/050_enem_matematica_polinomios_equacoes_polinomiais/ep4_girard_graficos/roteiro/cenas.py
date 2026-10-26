@@ -35,8 +35,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Girard e gráficos: soma e produto das raízes sem resolver · Matemática ENEM, Polinômios episódio 4"
-
+TITULO = "Girard e gráficos: soma e produto das raízes sem resolver | Polinômios Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -30,8 +30,7 @@
 #   2. Crescer i% é multiplicar por 1 + i. 3. O expoente é o número de vezes que o fator age.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Progressão geométrica do zero: a máquina de multiplicar · Matemática ENEM, PG episódio 1"
-
+TITULO = "Progressão geométrica do zero: a máquina de multiplicar | PG Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

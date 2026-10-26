@@ -27,8 +27,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Número complexo do zero: i² = −1, delta negativo e i elevado a 2026 · Matemática ENEM, Complexos episódio 1"
-
+TITULO = "Número complexo do zero: i² = −1, delta negativo e i elevado a 2026 | Números Complexos Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

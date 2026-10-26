@@ -18,7 +18,7 @@ Mantenha o selo "REDAÇÃO ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Como Desmontar a Frase Temática da Redação do ENEM | Redação Ep. 2** ← recomendado (com capa A)
+1. **Como Desmontar a Frase Temática da Redação do ENEM | Proposta de Redação Ep. 2** ← recomendado (com capa A)
 2. Esqueceu Um Bloco do Tema? É Assim que a Redação Perde Pontos | Ep. 2 (com capa B)
 3. Foco ou Corte do Tema? Como Escolher o Foco da Redação | Redação Ep. 2 (com capa C)
 4. Frase Temática, Foco e Pergunta-Problema | Redação ENEM do Zero, Ep. 2
@@ -74,7 +74,11 @@ A Cartilha do ENEM diz que a redação precisa abordar TODOS os elementos da fra
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se no Estudativo e ative o sininho para acompanhar a Redação do ENEM do zero.
 💬 Comente: qual foi a sua pergunta-problema para o tema de 2017?
-➡️ Episódio 3: textos motivadores e o risco da cópia.
+
+⬅️ Episódio anterior: A Redação Começa Antes da 1ª Linha: o Que a Prova Pede | Proposta de Redação Ep. 1
+➡️ Próximo episódio: Linha Copiada Vira Linha Fantasma: Textos Motivadores | Proposta de Redação Ep. 3
+
+📺 Playlist da série: Redação: Leitura da Proposta
 
 #ENEM #RedacaoENEM #FraseTematica
 ```
@@ -83,7 +87,7 @@ A Cartilha do ENEM diz que a redação precisa abordar TODOS os elementos da fra
 
 ## Tags
 ```
-enem, redação enem, redação do enem, redacao enem, frase temática, tema da redação, como ler o tema da redação, núcleo e delimitadores, recorte do tema, foco da redação, tangenciamento, pergunta-problema, tese redação, proposta de redação, desafios para, cartilha do participante, redação do zero, redação nota 1000, enem 2026, vestibular
+enem, redação enem, redação do enem, redação leitura da proposta, estudativo, redacao enem, frase temática, tema da redação, como ler o tema da redação, núcleo e delimitadores, recorte do tema, foco da redação, tangenciamento, pergunta-problema, tese redação, proposta de redação, desafios para, cartilha do participante, redação do zero, redação nota 1000, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -126,6 +130,7 @@ enem, redação enem, redação do enem, redacao enem, frase temática, tema da 
 - 11:26 (ponte): card para o **Episódio 3**, quando for publicado
 
 ## Playlist
+**"Redação: Leitura da Proposta"** (playlist da série, na ordem dos episódios) e também
 **"Redação ENEM do Zero"**, logo depois do Episódio 1.
 
 ## Ideias de Shorts

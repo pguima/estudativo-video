@@ -15,8 +15,7 @@
 #   3. Parafraseie e acrescente algo seu.
 # Cores: azul = definição · verde = dica/método · amarelo = armadilha · vermelho = erro/penalidade · roxo = regra oficial.
 
-TITULO = "Textos motivadores: como usar sem copiar — Redação ENEM, episódio 3"
-
+TITULO = "Linha Copiada Vira Linha Fantasma: Textos Motivadores | Proposta de Redação Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

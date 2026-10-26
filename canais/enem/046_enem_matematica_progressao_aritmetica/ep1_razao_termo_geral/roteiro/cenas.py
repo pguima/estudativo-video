@@ -26,8 +26,7 @@
 #   2. Do 1º ao n-ésimo termo há n − 1 saltos. 3. PA é uma reta vista só nos números inteiros.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Progressão aritmética do zero: a razão e o n − 1 · Matemática ENEM, PA episódio 1"
-
+TITULO = "Progressão aritmética do zero: a razão e o n − 1 | PA Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

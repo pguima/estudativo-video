@@ -23,8 +23,7 @@
 #   "aresta ×2 → volume ×8" · "preço ÷ quantidade = preço de UMA unidade" · "converta primeiro, monte depois".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Quando a regra de três NÃO funciona (o problema dos gatos) · Matemática ENEM, episódio 5"
-
+TITULO = "Quando a regra de três NÃO funciona (o problema dos gatos) | Razão e Proporção Ep. 5"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

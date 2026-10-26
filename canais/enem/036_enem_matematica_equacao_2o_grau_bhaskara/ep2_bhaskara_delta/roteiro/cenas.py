@@ -27,8 +27,7 @@
 #   negativo, nenhuma real. 3. O 2a divide o numerador inteiro.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Fórmula de Bhaskara do zero: o sinal do b e o que o delta revela · Matemática ENEM, 2º grau episódio 2"
-
+TITULO = "Fórmula de Bhaskara do zero: o sinal do b e o que o delta revela | Bhaskara Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

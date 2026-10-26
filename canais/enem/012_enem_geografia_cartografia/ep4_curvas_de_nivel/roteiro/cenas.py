@@ -8,8 +8,7 @@
 #   2. Curvas próximas: terreno íngreme.
 #   3. Declividade: desnível dividido pela distância, vezes cem, na mesma unidade.
 
-TITULO = "Curvas de nível do zero: leia morros e vales no mapa — Cartografia, episódio 4"
-
+TITULO = "Curvas de Nível do Zero: Leia Morros e Vales no Mapa | Cartografia Ep. 4"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

@@ -29,8 +29,7 @@
 #   2. Diferença de quadrados vira soma vezes diferença. 3. Conta grande demais é aviso de atalho.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "1 003 × 997 de cabeça? Contas grandes com produtos notáveis · Matemática ENEM, Álgebra episódio 4"
-
+TITULO = "1 003 × 997 de cabeça? Contas grandes com produtos notáveis | Produtos Notáveis Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -23,8 +23,7 @@
 #   "separe o fixo do que varia: só a parte que varia acompanha" · "passar pela origem não basta: tem de ser reta".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "O gráfico de cada proporção e a armadilha do táxi (parcela fixa) · Matemática ENEM, grandezas proporcionais, ep. 3"
-
+TITULO = "O gráfico de cada proporção e a armadilha do táxi (parcela fixa) | Grandezas Proporcionais Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

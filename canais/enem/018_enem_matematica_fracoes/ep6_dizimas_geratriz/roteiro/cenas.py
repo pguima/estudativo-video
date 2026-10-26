@@ -19,8 +19,7 @@
 #   3. Geratriz: 9 para cada algarismo que repete, 0 para cada um que não repete.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Decimal exato ou dízima? E como achar a fração geratriz · Matemática ENEM, episódio 6"
-
+TITULO = "Decimal exato ou dízima? E como achar a fração geratriz | Frações Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

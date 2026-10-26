@@ -18,7 +18,7 @@ Use o "Testar e comparar" com A e B.
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Grafite e Diamante São a Mesma Coisa? Alotropia do Zero | Ep. 2** ← recomendado (com capa A)
+1. **Grafite e Diamante São a Mesma Coisa? Alotropia do Zero | Matéria e Misturas Ep. 2** ← recomendado (com capa A)
 2. Alotropia: Mesmas Peças, Outra Montagem | Química ENEM Ep. 2 (com capa B)
 3. Grafeno, Nanotubo e Ozônio no ENEM: Alotropia | Química do Zero Ep. 2 (com capa C)
 4. O que É Alotropia? Química para Iniciantes | ENEM
@@ -72,7 +72,11 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Química do ENEM do zero.
 💬 Comente: você sabia que o diamante e o grafite eram a mesma coisa?
-➡️ Próximo episódio: Misturas (por que quase nada ao seu redor é puro).
+
+⬅️ Episódio anterior: O₂ Tem 2 Átomos e Não É Composta? Química do Zero | Matéria e Misturas Ep. 1
+➡️ Próximo episódio: Ar, Água Mineral e Ouro 18k São Puros? Misturas do Zero | Matéria e Misturas Ep. 3
+
+📺 Playlist da série: Química: Matéria, Substâncias e Misturas
 
 #ENEM #QuímicaENEM #QuímicaDoZero
 ```
@@ -81,7 +85,7 @@ Ep. 1 Matéria e substância simples × composta · Ep. 2 Alotropia · Ep. 3 Mis
 
 ## Tags
 ```
-enem, química enem, química do zero, alotropia, alótropos, o que é alotropia, grafite e diamante, diamante e grafite, ozônio, o2 e o3, camada de ozônio, atomicidade, grafeno, nanotubo de carbono, fulereno, nanotecnologia, formas do carbono, fósforo branco e vermelho, enxofre rômbico e monoclínico, química para iniciantes, aula de química, enem 2026
+enem, química enem, química do zero, química matéria substâncias e misturas, matéria e misturas, estudativo, alotropia, alótropos, o que é alotropia, grafite e diamante, diamante e grafite, ozônio, o2 e o3, camada de ozônio, atomicidade, grafeno, nanotubo de carbono, fulereno, nanotecnologia, formas do carbono, fósforo branco e vermelho, enxofre rômbico e monoclínico, química para iniciantes, aula de química, enem 2026
 ```
 
 ## Hashtags
@@ -125,6 +129,7 @@ enem, química enem, química do zero, alotropia, alótropos, o que é alotropia
 - 05:25 (erro 3, "conte as letras"): card para o **Episódio 1**
 
 ## Playlist
+**"Química: Matéria, Substâncias e Misturas"** (playlist da série, na ordem dos episódios) e também
 **"Química do Zero — Matéria, Substâncias e Misturas"**, logo depois do Episódio 1.
 
 ## Ideias de Shorts

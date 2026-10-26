@@ -28,8 +28,7 @@
 #   "a ordem é o expoente escrito ou o seguinte, nunca outro" · "olhe as alternativas antes de calcular".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Ordem de grandeza: por que 7 · 10⁵ é ordem 10⁶ (o critério do 3,16) · Matemática ENEM, episódio 4"
-
+TITULO = "Ordem de grandeza: por que 7 · 10⁵ é ordem 10⁶ (o critério do 3,16) | Notação Científica Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

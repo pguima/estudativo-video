@@ -14,8 +14,7 @@
 #   Q9: 120 − 40 = 80 (C). Só Q 50, nenhum 30 → 80+40+50+30 = 200.
 #   Q2: miolo 10 · pares 20, 10, 5 · sozinhos 20, 15, 15 · soma 95 · nenhum 5 (B). Fórmula: 150 − 65 + 10 = 95.
 
-TITULO = "Diagrama de Venn do zero: a questão ponto garantido do ENEM — Matemática, episódio 4"
-
+TITULO = "Diagrama de Venn: a Palavra \"Apenas\" Muda Tudo | Matemática Básica Ep. 4"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

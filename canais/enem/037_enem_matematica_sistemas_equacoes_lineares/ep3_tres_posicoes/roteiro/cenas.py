@@ -30,8 +30,7 @@
 #   2. 0 = 2 é impossível; 0 = 0 é infinitas. 3. Múltipla só à esquerda, paralelas; múltipla inteira, a mesma reta.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Sistema sem solução? 0 = 2 não é erro de conta · Matemática ENEM, sistemas episódio 3"
-
+TITULO = "Sistema sem solução? 0 = 2 não é erro de conta | Sistemas Lineares Ep. 3"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

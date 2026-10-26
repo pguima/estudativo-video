@@ -31,8 +31,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Propriedades do determinante: a resposta sem fazer Sarrus · Matemática ENEM, Determinantes episódio 2"
-
+TITULO = "Propriedades do determinante: a resposta sem fazer Sarrus | Determinantes Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

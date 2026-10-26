@@ -22,8 +22,7 @@
 #   "taxa: leia o 'por' como 'dividido por'" · "siga as unidades: km ÷ km/L = litros; litros × R$/L = reais".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Razão: a ordem que derruba no ENEM (o que vem depois do “para” vai embaixo) · Matemática ENEM, episódio 1"
-
+TITULO = "Razão: o que vem depois do “para” vai embaixo | Razão e Proporção Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

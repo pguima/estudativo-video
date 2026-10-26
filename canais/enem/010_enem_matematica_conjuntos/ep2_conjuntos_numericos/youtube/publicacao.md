@@ -18,9 +18,9 @@ Mantenha o selo "MATEMÁTICA BÁSICA · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **O Número Que Nunca Termina: Racional ou Irracional? | Matemática Ep. 2** ← recomendado (com capa A)
+1. **O Número Que Nunca Termina: Racional ou Irracional? | Matemática Básica Ep. 2** ← recomendado (com capa A)
 2. Ter Raiz Não É Ser Irracional! Conjuntos Numéricos ENEM (com capa B)
-3. Conjuntos Numéricos do Zero: as Bonecas Russas | Matemática Ep. 2 (com capa C)
+3. Conjuntos Numéricos do Zero: as Bonecas Russas | Matemática Básica Ep. 2 (com capa C)
 4. Racional ou Irracional em Segundos | Conjuntos Numéricos ENEM
 
 ---
@@ -74,7 +74,11 @@ Existe um número que nunca termina e nunca se repete. Os gregos descobriram iss
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar toda a Matemática do ENEM do zero.
 💬 Comente: você já tinha caído na pegadinha do 22/7?
-⬅️ Episódio 1: Ordem das operações e regra de sinais · ➡️ Episódio 3: Intervalos reais.
+
+⬅️ Episódio anterior: 2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero | Matemática Básica Ep. 1
+➡️ Próximo episódio: Bolinha Cheia ou Vazia? Intervalos Reais do Zero | Matemática Básica Ep. 3
+
+📺 Playlist da série: Matemática Básica: Operações e Conjuntos
 
 #ENEM #MatematicaENEM #ConjuntosNumericos
 ```
@@ -83,7 +87,7 @@ Existe um número que nunca termina e nunca se repete. Os gregos descobriram iss
 
 ## Tags
 ```
-enem, matemática enem, matematica para o enem, conjuntos numéricos, números racionais, números irracionais, racional ou irracional, números reais, números naturais, números inteiros, dízima periódica, raiz de 2, raiz quadrada, quadrado perfeito, número pi, número de ouro, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
+enem, matemática enem, matematica para o enem, matemática básica operações e conjuntos, estudativo, conjuntos numéricos, números racionais, números irracionais, racional ou irracional, números reais, números naturais, números inteiros, dízima periódica, raiz de 2, raiz quadrada, quadrado perfeito, número pi, número de ouro, matemática básica, matemática do zero, aula de matemática, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -126,6 +130,7 @@ enem, matemática enem, matematica para o enem, conjuntos numéricos, números r
 - 11:17 (ponte): card para o **Episódio 3**, quando for publicado
 
 ## Playlist
+**"Matemática Básica: Operações e Conjuntos"** (playlist da série, na ordem dos episódios) e também
 **"Matemática ENEM do Zero"**, depois do Episódio 1.
 
 ## Ideias de Shorts

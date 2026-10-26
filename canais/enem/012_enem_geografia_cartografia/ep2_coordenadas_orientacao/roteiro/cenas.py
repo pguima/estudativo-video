@@ -8,8 +8,7 @@
 #   2. Longitude: a partir de Greenwich, até cento e oitenta graus.
 #   3. Um grau de latitude vale cerca de cento e onze quilômetros.
 
-TITULO = "Latitude e longitude do zero: a batalha naval do planeta — Cartografia, episódio 2"
-
+TITULO = "Latitude e Longitude do Zero: a Batalha Naval do Planeta | Cartografia Ep. 2"
 PRONUNCIA = {
     "ENEM": "Enem",
     "GPS": "G P S",

@@ -72,7 +72,9 @@ E se o tamanho de cada país no mapa fosse o número de pessoas que vivem nele? 
 
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para não perder o último episódio.
 💬 Comente: que dado você gostaria de ver num mapa de balões?
-⬅️ Episódio 4: Curvas de nível · ➡️ Episódio 6: Revisão e pegadinhas.
+
+⬅️ Episódio anterior: Curvas de Nível do Zero: Leia Morros e Vales no Mapa | Cartografia Ep. 4
+➡️ Próximo episódio: Revisão de Cartografia para o ENEM: 9 Pegadinhas e 5 Questões | Cartografia Ep. 6
 
 #ENEM #GeografiaENEM #Cartografia
 ```
@@ -81,7 +83,7 @@ E se o tamanho de cada país no mapa fosse o número de pessoas que vivem nele? 
 
 ## Tags
 ```
-enem, geografia enem, cartografia, anamorfose, cartograma, mapa temático, mapas temáticos, legenda do mapa, base cartográfica, gradação de cores, símbolos proporcionais, mapa de população, mapa do pib, anamorfose e projeção, como ler mapas, leitura de mapas enem, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
+enem, geografia enem, cartografia, estudativo, anamorfose, cartograma, mapa temático, mapas temáticos, legenda do mapa, base cartográfica, gradação de cores, símbolos proporcionais, mapa de população, mapa do pib, anamorfose e projeção, como ler mapas, leitura de mapas enem, geografia para iniciantes, geografia do zero, aula de geografia, revisão enem, enem 2026, cartografia do zero
 ```
 
 ## Hashtags
@@ -124,6 +126,7 @@ enem, geografia enem, cartografia, anamorfose, cartograma, mapa temático, mapas
 - 07:52 (ponte): card para o **Episódio 6**, quando for publicado
 
 ## Playlist
+**"Cartografia do Zero"** (playlist da série, na ordem dos episódios) e também
 **"Cartografia do Zero — Geografia ENEM"**, depois do Episódio 4.
 
 ## Ideias de Shorts

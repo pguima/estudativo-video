@@ -12,8 +12,7 @@
 #   3. Liga metálica é mistura, não substância pura.
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Ar, água mineral e ouro 18k são puros? Misturas homogêneas e heterogêneas do zero — Química ENEM, episódio 3"
-
+TITULO = "Ar, Água Mineral e Ouro 18k São Puros? Misturas do Zero | Matéria e Misturas Ep. 3"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

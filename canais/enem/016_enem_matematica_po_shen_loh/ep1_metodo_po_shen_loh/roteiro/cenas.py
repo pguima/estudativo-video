@@ -28,8 +28,7 @@
 #   3. As raízes são a média menos u e a média mais u.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Equação do 2º grau sem Bhaskara: o método de Po-Shen Loh — Matemática ENEM"
-
+TITULO = "Equação do 2º Grau SEM Bhaskara em 3 Passos | Matemática ENEM"
 # Estilo da voz (gerar_voz_local.py): voz Neno, mais emoção, sem acelerar (igual à série 015)
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -18,7 +18,7 @@ Mantenha o selo "LINGUAGENS ENEM · EPISÓDIO N". Use o "Testar e comparar".
 ---
 
 ## Título (escolha 1; até 70 caracteres)
-1. **Resuma Qualquer Texto em 1 Frase: a Fórmula | Linguagens Ep. 2** ← recomendado (com capa A)
+1. **Resuma Qualquer Texto em 1 Frase: a Fórmula | Interpretação Ep. 2** ← recomendado (com capa A)
 2. Se Não Cabe em Uma Frase, Você Não Entendeu o Texto | ENEM (com capa B)
 3. Ache a Alternativa Certa Antes de Ler as Opções | Linguagens Ep. 2 (com capa C)
 4. Resumo em Uma Frase: Interpretação de Texto do Zero | ENEM
@@ -67,6 +67,11 @@ Se você não consegue dizer um texto em uma frase, você ainda não entendeu o 
 2. Com suas palavras, não copiando.
 3. Resumo conta o texto, não a sua opinião.
 
+⬅️ Episódio anterior: Assunto Não É Tese: Interpretação de Texto do Zero | Interpretação Ep. 1
+➡️ Próximo episódio: As Alternativas Erradas do ENEM Seguem 5 Moldes | Interpretação Ep. 3
+
+📺 Playlist da série: Interpretação de Texto: Compreensão e Tese
+
 👍 Se a aula te ajudou, deixe seu like, inscreva-se e ative o sininho para acompanhar Linguagens do ENEM do zero.
 💬 Desafio: resuma esta aula em uma frase nos comentários!
 ⬅️ Episódio 1: Tema, assunto e tese · ➡️ Episódio 3: As 5 alternativas-armadilha.
@@ -78,7 +83,7 @@ Se você não consegue dizer um texto em uma frase, você ainda não entendeu o 
 
 ## Tags
 ```
-enem, linguagens enem, interpretação de texto, interpretação de texto enem, resumo, como fazer resumo, síntese, ideia central, tese, redução, extrapolação, compreensão de texto, português enem, linguagens do zero, aula de português, revisão enem, enem 2026, vestibular
+enem, linguagens enem, interpretação de texto, interpretação de texto compreensão e tese, interpretação, estudativo, interpretação de texto enem, resumo, como fazer resumo, síntese, ideia central, tese, redução, extrapolação, compreensão de texto, português enem, linguagens do zero, aula de português, revisão enem, enem 2026, vestibular
 ```
 
 ## Hashtags
@@ -121,6 +126,7 @@ enem, linguagens enem, interpretação de texto, interpretação de texto enem, 
 - 07:22 (ponte): card para o **Episódio 3**, quando for publicado
 
 ## Playlist
+**"Interpretação de Texto: Compreensão e Tese"** (playlist da série, na ordem dos episódios) e também
 **"Linguagens ENEM do Zero"**, depois do Episódio 1.
 
 ## Ideias de Shorts

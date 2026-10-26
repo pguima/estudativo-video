@@ -24,8 +24,7 @@
 #   "multiplicar por 1/12 é dividir por 12" · "o k da inversa é o que fica fixo" · "cada décimo de hora = 6 minutos".
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "A constante k: o número que não muda (direta e inversa do zero) · Matemática ENEM, episódio 1"
-
+TITULO = "A constante k: o número que não muda (direta e inversa do zero) | Grandezas Proporcionais Ep. 1"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

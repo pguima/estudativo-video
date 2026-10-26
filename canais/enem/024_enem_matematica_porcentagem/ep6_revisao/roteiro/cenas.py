@@ -36,8 +36,7 @@
 # Ponte (do usuário): Unidades e conversões; a repetição do mesmo fator vai virar juros compostos.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Revisão de porcentagem: estratégia de prova, 9 pegadinhas e 5 questões estilo ENEM · Matemática ENEM, episódio 6"
-
+TITULO = "Revisão: 9 pegadinhas e 5 questões estilo ENEM | Porcentagem Ep. 6"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

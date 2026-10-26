@@ -22,8 +22,7 @@
 #   mais detalhe. 3. Denominador menor, escala maior.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Escala gráfica e escala numérica: o que sobrevive à fotocópia · Matemática ENEM, Escalas episódio 2"
-
+TITULO = "Escala gráfica e escala numérica: o que sobrevive à fotocópia | Escalas Ep. 2"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

@@ -11,8 +11,7 @@
 # Cores: azul = definição · roxo = regra · amarelo = armadilha · verde = dica · vermelho = erro.
 # Visual das contas: a expressão inteira fica sempre na tela; a parte resolvida ganha cor e "encolhe" para o resultado.
 
-TITULO = "2 + 3 × 4 dá 14 ou 20? Ordem das operações e regra de sinais do zero — Matemática ENEM, episódio 1"
-
+TITULO = "2 + 3 × 4 Dá 14 ou 20? Ordem das Operações do Zero | Matemática Básica Ep. 1"
 PRONUNCIA = {
     "ENEM": "Enem",
 }

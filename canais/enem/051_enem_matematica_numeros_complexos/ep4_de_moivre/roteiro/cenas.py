@@ -31,8 +31,7 @@
 # Contas conferidas em ../trabalho/conferir_contas.py.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "(1 + i) elevado a 8 em uma linha: forma trigonométrica e De Moivre · Matemática ENEM, Complexos episódio 4"
-
+TITULO = "(1 + i) elevado a 8 em uma linha: forma trigonométrica e De Moivre | Números Complexos Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],

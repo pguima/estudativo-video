@@ -23,8 +23,7 @@
 #   2. Tirar 10% não desfaz um aumento de 10%. 3. Confira multiplicando de volta.
 # Cores: azul = definição · roxo = regra/fórmula · amarelo = armadilha · verde = atalho/dica · vermelho = erro.
 
-TITULO = "Quanto aplicar hoje? Valor presente em juros compostos · Matemática ENEM, Juros compostos episódio 4"
-
+TITULO = "Quanto aplicar hoje? Valor presente em juros compostos | Juros Compostos Ep. 4"
 # Estilo da voz (gerar_voz_local.py): voz Neno, expressiva, sem acelerar
 VOZ = dict(
     tags=["alegre", "curiosa", "amigavel"],
