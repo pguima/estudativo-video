@@ -15,6 +15,9 @@ Referência: `001_rea_engenharia_reversa`.
 | Pasta | `canais/tecnologia/NNN_<slug>/` · arquivo final `tecnologia_NNN_<slug>.mp4` |
 | Fonte | Sempre guardar em `original/fonte_<tema>.md` o que foi lido (README, site, data da consulta) |
 
+> **Série Top 10 GitHub:** mesmo tema, mas sem roxo (`tech.ACENTO2`, `tech.BASE`, `tech.ORB_A`) e com 3D de `tech3d.py`.
+> Regras em [TOP10_GITHUB.md](TOP10_GITHUB.md).
+
 ## Linguagem visual (tech.py)
 - **Fundo animado** (`tech.background(c, t)`): espaço azul-escuro, matriz de pontos, duas órbitas de luz (ciano e violeta)
   que flutuam, **grade em perspectiva** rolando para a câmera, partículas subindo, scanlines e vinheta.

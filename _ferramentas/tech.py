@@ -40,6 +40,10 @@ INK2 = motor.INK2
 DIM = "#62708A"
 PANEL = "#0A1222"
 SERIE = "TECH//001"
+# ajustes por vídeo/série (defina no visual.py ANTES do primeiro quadro; o padrão do canal não muda):
+ACENTO2 = VIOLET                                   # 2ª cor do fundo (órbita, horizonte, partículas) e do CTA
+BASE = ("#0E1A3A", "#060A18", "#03050B")          # degradê radial do fundo (centro → borda)
+ORB_A = 0.28                                       # intensidade das órbitas de luz
 
 
 # ---------------- utilidades ----------------
@@ -96,7 +100,7 @@ def _base():
     c = s.getCanvas()
     c.clear(hexc(motor.BG))
     sh = skia.GradientShader.MakeRadial(center=(W * 0.5, H * 0.18), radius=W * 0.8,
-                                        colors=[hexc("#0E1A3A"), hexc("#060A18"), hexc("#03050B")], positions=[0, 0.5, 1])
+                                        colors=[hexc(c_) for c_ in BASE], positions=[0, 0.5, 1])
     p = skia.Paint(AntiAlias=True); p.setShader(sh)
     c.drawRect(skia.Rect.MakeWH(W, H), p)
     # matriz de pontos (metade de cima)
@@ -113,7 +117,7 @@ def _orb(color, r):
     s = skia.Surface(size, size)
     c = s.getCanvas()
     c.clear(skia.ColorTRANSPARENT)
-    c.drawCircle(size / 2, size / 2, r, blur_paint(color, 0.28, r * 0.45))
+    c.drawCircle(size / 2, size / 2, r, blur_paint(color, ORB_A, r * 0.45))
     return s.makeImageSnapshot()
 
 
@@ -151,7 +155,7 @@ def _grid(c, t):
         y = hz + (bottom - hz) * u ** 2.2
         c.drawLine(0, y, W, y, paint(col, 0.14 * u ** 1.2, stroke=1.2))
     # brilho no horizonte
-    c.drawRect(skia.Rect.MakeXYWH(0, hz - 2, W, 4), blur_paint(VIOLET, 0.35, 10))
+    c.drawRect(skia.Rect.MakeXYWH(0, hz - 2, W, 4), blur_paint(ACENTO2, 0.35, 10))
 
 
 def _particles(c, t):
@@ -160,14 +164,14 @@ def _particles(c, t):
         sp = 8 + 22 * hash01(i, 2)
         y = H - ((hash01(i, 3) * H + t * sp) % (H + 40))
         r = 0.8 + 1.8 * hash01(i, 4)
-        col = CYAN if i % 3 else VIOLET
+        col = CYAN if i % 3 else ACENTO2
         tw = 0.35 + 0.65 * (0.5 + 0.5 * math.sin(t * (1 + hash01(i, 5) * 2) + i))
         c.drawCircle(x, y, r, paint(col, 0.55 * tw))
 
 
 def background(c, t=0.0):
     c.drawImage(_base(), 0, 0)
-    o1, o2 = _orb(CYAN, 380), _orb(VIOLET, 420)
+    o1, o2 = _orb(CYAN, 380), _orb(ACENTO2, 420)
     c.drawImage(o1, -300 + 60 * math.sin(t * 0.11), -420 + 40 * math.cos(t * 0.13))
     c.drawImage(o2, W - 900 + 70 * math.cos(t * 0.09), H - 1000 + 50 * math.sin(t * 0.12))
     _grid(c, t)
@@ -401,8 +405,8 @@ def cta(c, t, like, sub, bell, com, bye, pergunta, despedida="Até o próximo v�
     if a > 0:
         w = max(1100, text_w(pergunta, "bold", 38) + 240)
         yy = 650 + (1 - a) * 20
-        panel(c, W / 2 - w / 2, yy, w, 130, a, VIOLET)
-        motor.icon(c, CHAT, W / 2 - w / 2 + 90, yy + 65, 56, p=paint(VIOLET, a))
+        panel(c, W / 2 - w / 2, yy, w, 130, a, ACENTO2)
+        motor.icon(c, CHAT, W / 2 - w / 2 + 90, yy + 65, 56, p=paint(ACENTO2, a))
         text_mid(c, pergunta, W / 2 + 40, yy + 65, 38, "bold", INK, a)
     ab = ep(t, bye, 0.6)
     if ab > 0:

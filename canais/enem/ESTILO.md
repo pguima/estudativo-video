@@ -128,6 +128,14 @@ No `publicacao.md`: linha "📚 Flashcards do ENEM (Anki): [LINK DOS FLASHCARDS]
   trecho, trilha 1–5) → logo Estudativo + busca digitando "Estudativo" + playlist + INSCREVA-SE + sininho + "Bons estudos!".
 - ~40 s, legenda palavra a palavra (laranja = palavra dita) em y≈1530, fora da área dos botões das redes. Mesmo arquivo para YouTube, Reels e TikTok.
 
+### Divulgação em outras redes (desde 2026-10-26)
+- Par Short vertical (~35 s) + horizontal (~60 s) por série, com narração Gemini e legenda queimada (funciona no mudo).
+  Modelo: `014_enem_redacao_leitura_proposta/divulgacao_visual.py` (desenho compartilhado) + `divulgacao_short/` e
+  `divulgacao_horizontal/` (cenas.py + visual.py curto). Som: som_tech (SFX por cue), -14 LUFS.
+- Retenção: gancho com número/penalidade no 1º quadro → placar → laço aberto (teste com tema real, resposta no carimbo)
+  → capas reais dos episódios → busca "Estudativo" + playlist da série (horizontal: + playlist geral da matéria).
+- `youtube/publicacao.md` de cada um traz o texto pronto por rede (Shorts, Reels, TikTok, Facebook, LinkedIn, X, WhatsApp).
+
 ## Atalhos e macetes em exatas (desde 2026-10-22, pedido do usuário)
 - Matemática, Física e Química: todo procedimento ganha o seu **atalho de prova** (cor verde), priorizando o método mais rápido.
   Ex.: MMC e MDC pela **decomposição simultânea** (um varal só: MMC = todos os primos; MDC = só os primos que dividiram todos juntos).

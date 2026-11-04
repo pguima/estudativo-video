@@ -154,13 +154,19 @@ def xmark(c, cx, cy, r, a, col=None, w=10):
 
 HAND_TF = skia.Typeface.MakeFromFile("C:/Windows/Fonts/segoesc.ttf")
 HAND_TFB = skia.Typeface.MakeFromFile("C:/Windows/Fonts/segoescb.ttf")
+HAND_K = 1.0
+if HAND_TF is None:  # Linux (sem Segoe Script): Caveat (Google Fonts, OFL), 30% maior para ter a mesma altura de letra
+    _FD = Path(__file__).resolve().parents[5] / "_ferramentas" / "fontes"
+    HAND_TF = skia.Typeface.MakeFromFile(str(_FD / "Caveat-Medium.ttf"))
+    HAND_TFB = skia.Typeface.MakeFromFile(str(_FD / "Caveat-Bold.ttf"))
+    HAND_K = 1.3
 _HF = {}
 
 
 def hfont(size, bold=False):
     k = (size, bold)
     if k not in _HF:
-        _HF[k] = skia.Font(HAND_TFB if bold else HAND_TF, size)
+        _HF[k] = skia.Font(HAND_TFB if bold else HAND_TF, size * HAND_K)
     return _HF[k]
 
 

@@ -608,13 +608,13 @@ def b_erros(c, t, C, B):
 # questões 5 e 7
 # ======================================================================
 
-def alts_panel(c, t, C, alts, x, y0, w, size, aok_cue, okL, d_line=6):
+def alts_panel(c, t, C, alts, x, y0, w, size, aok_cue, okL, d_line=6, gap_why=26, why_size=16):
     aok = ep(t, C[aok_cue], 0.5)
     y = y0
     for L, s, cue_in, cx, why, col in alts:
         a, d = rise(t, C[cue_in])
         lines = wrap(s, "bold", size, w - 60)
-        hh = len(lines) * (size + d_line) + 12 + (26 if cx else 0)
+        hh = len(lines) * (size + d_line) + 12 + (gap_why if cx else 0)
         ok = L == okL
         if a > 0:
             if ok and aok > 0:
@@ -627,7 +627,7 @@ def alts_panel(c, t, C, alts, x, y0, w, size, aok_cue, okL, d_line=6):
                 if ax > 0:
                     strike(c, x + 36, yy - size * 0.35, x + 44 + text_w(ln, "bold", size), yy - size * 0.35, ax, RED, ax)
             if ax > 0:
-                pill(c, why, x + 40, y + d + len(lines) * (size + d_line) + 2, col, size=16, a=ax, bounds=(0, 1920))
+                pill(c, why, x + 40, y + d + len(lines) * (size + d_line) + 2, col, size=why_size, a=ax, bounds=(0, 1920))
         y += hh + 12
 
 

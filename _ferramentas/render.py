@@ -165,7 +165,8 @@ def finalize(proj, st):
     nome = idioma.arquivo_final(getattr(st["visual"], "ARQUIVO_FINAL", "video_final.mp4"), proj=proj)
     (proj / "final").mkdir(exist_ok=True)
     out = proj / "final" / nome
-    # canal Tecnologia (visual.py com `import tech`): trilha eletrônica + efeitos HUD de som_tech.py, salvo SOM = None
+    # canal Tecnologia (visual.py com `import tech`) ou qualquer visual.py com um SOM = dict(...) preenchido (matemática:
+    # Shorts e questões): trilha eletrônica + efeitos de som_tech.py, salvo SOM = None
     # (projeto com som/mixar.py próprio, como o 009 "plantão de notícias", usa o dele)
     som = getattr(st["visual"], "SOM", {})
     if (proj / "som" / "mixar.py").exists():
@@ -173,7 +174,7 @@ def finalize(proj, st):
             sys.exit("som/mixar.py próprio do projeto só faz a versão em português: adapte-o para som_" + P.lang)
         subprocess.run([sys.executable, str(proj / "som" / "mixar.py")], check=True)
         return
-    if hasattr(st["visual"], "tech") and som is not None:
+    if som is not None and (hasattr(st["visual"], "tech") or som):
         import som_tech
         som_tech.gerar(proj, som)
         som_tech.mixar(proj, out, som)

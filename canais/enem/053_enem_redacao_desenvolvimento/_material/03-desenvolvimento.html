@@ -1,0 +1,1116 @@
+<title>Desenvolvimento da Redação</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Redação. As cores semânticas das caixas
+   permanecem idênticas às demais páginas; só o cabeçalho muda. */
+:root{ --area:#1F5A7A }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#7CC3E6 } }
+:root[data-theme="dark"]{ --area:#7CC3E6 }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+.tb{ margin:12px 0; padding:10px 14px; border-left:3px solid var(--area); background:var(--surface); font-size:.95rem }
+.tb .fonte{ display:block; margin-top:6px; font-size:.8rem; color:var(--ink-3) }
+.tb mark.erro{ background:var(--c4-soft); color:inherit; padding:0 2px; border-radius:2px }
+.tb mark.ok{ background:var(--c3-soft); color:inherit; padding:0 2px; border-radius:2px }
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Redação</b> › Estrutura e Técnica › Assunto 3 de 12</p>
+        <h1>Desenvolvimento: tópico frasal, argumento, repertório, análise e fechamento</h1>
+        <p class="deck">Os parágrafos de desenvolvimento são onde a tese é provada — ou apenas repetida. A diferença entre uma opinião e um argumento está em quatro movimentos depois da primeira frase: explicar, fundamentar, analisar e ligar de volta à tese. É aqui que o repertório deixa de ser enfeite e passa a trabalhar.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Parágrafo representado por cinco faixas empilhadas: tópico frasal, argumento, repertório, análise, a mais alta, e fechamento. Uma seta sai do fechamento e sobe pela direita até a tese, no topo. Legenda: um eixo, cinco movimentos">
+  <rect x="112" y="8" width="76" height="22" rx="11" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="150" y="23" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">TESE</text>
+  <rect x="46" y="42" width="196" height="22" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.3"/>
+  <text x="144" y="56.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">tópico frasal</text>
+  <rect x="46" y="70" width="196" height="22" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.3"/>
+  <text x="144" y="84.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700;font-size:10px">argumento</text>
+  <rect x="46" y="98" width="196" height="22" rx="3" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.3"/>
+  <text x="144" y="112.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-weight:700;font-size:10px">repertório</text>
+  <rect x="46" y="126" width="196" height="34" rx="3" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.3"/>
+  <text x="144" y="146.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700;font-size:10px">análise</text>
+  <rect x="46" y="166" width="196" height="22" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.3"/>
+  <text x="144" y="180.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">fechamento</text>
+  <path d="M 242 177 H 268 V 19 H 196" style="fill:none;stroke:var(--c1);stroke-width:1.8"/>
+  <polygon points="188,19 197,15 197,23" style="fill:var(--c1);stroke:none"/>
+  <text x="150" y="204" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">um eixo, cinco movimentos</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>2 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Introdução: contextualização e apresentação da tese · Estrutura argumentativa: tese, argumentos e contra-argumentos</dd></div>
+      <div><dt>Destrava</dt><dd>Conclusão: agente, ação, meio, finalidade e detalhamento · Tipos de argumento: histórico, estatístico, de autoridade, por exemplificação</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>A Competência 3 avalia se o texto seleciona, relaciona, organiza e <strong>interpreta</strong> informações, fatos e opiniões em defesa de um ponto de vista; a Competência 2, se o repertório sociocultural é legitimado, pertinente e <strong>produtivo</strong>. As duas se decidem, sobretudo, nos parágrafos de desenvolvimento. A Cartilha do Participante associa os níveis mais altos da C3 ao desenvolvimento dos argumentos com explicitação de sua relevância — e à <strong>autoria</strong>.</p>
+<p>Os formatos que você vai treinar nesta página:</p>
+<ul>
+  <li><strong>Tópico frasal</strong> que anuncia o argumento do parágrafo e o liga a um eixo da tese.</li>
+  <li><strong>Argumento</strong> explicado (por quê?) e <strong>fundamentado</strong> por repertório, exemplo, dado ou comparação.</li>
+  <li><strong>Análise</strong>: a interpretação que liga a referência ao problema brasileiro discutido.</li>
+  <li><strong>Fechamento</strong> que devolve o parágrafo à tese.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três ideias. Cada parágrafo de desenvolvimento cumpre <strong>um eixo</strong> anunciado na introdução (seção 03). O repertório só é produtivo se vier seguido de <strong>análise</strong> — o que ele mostra sobre o problema (seções 05 e 06). E a última frase responde ao “<strong>e daí?</strong>”, ligando o parágrafo de volta à tese (seção 07).</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> A anatomia do parágrafo de desenvolvimento</h2>
+<p>O modelo mais ensinado divide o parágrafo em cinco partes. Elas correspondem à escada de quatro degraus apresentada em <strong>Competência 3 — selecionar, relacionar e organizar informações e argumentos</strong> (afirmar, explicar, fundamentar, ligar), com a fundamentação desdobrada em repertório e análise.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 256" role="img" aria-label="Tabela visual das cinco partes do parágrafo de desenvolvimento, com a pergunta que cada uma responde e uma barra de peso típico. Tópico frasal: o que afirmo, peso pequeno. Argumento: por que procede, peso médio. Repertório: o que comprova, peso médio. Análise: o que isso mostra, a barra mais longa. Fechamento: e daí, de volta à tese, peso pequeno. Nota: a análise é a parte mais longa, porque nela aparece a autoria">
+  <text x="172" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700;font-size:10px">PERGUNTA</text>
+  <text x="326" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700;font-size:10px">PESO TÍPICO</text>
+  <rect x="10" y="26" width="150" height="34" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="85" y="47" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">TÓPICO FRASAL</text>
+  <text x="172" y="47" class="svg-lbl" style="fill:var(--ink);font-size:10px">o que afirmo?</text>
+  <rect x="326" y="35" width="43.4" height="16" rx="2" style="fill:var(--c1);stroke:none"/>
+  <rect x="10" y="70" width="150" height="34" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="85" y="91" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">ARGUMENTO</text>
+  <text x="172" y="91" class="svg-lbl" style="fill:var(--ink);font-size:10px">por que procede?</text>
+  <rect x="326" y="79" width="68.2" height="16" rx="2" style="fill:var(--c2);stroke:none"/>
+  <rect x="10" y="114" width="150" height="34" rx="4" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="85" y="135" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-weight:700">REPERTÓRIO</text>
+  <text x="172" y="135" class="svg-lbl" style="fill:var(--ink);font-size:10px">o que comprova?</text>
+  <rect x="326" y="123" width="62" height="16" rx="2" style="fill:var(--c5);stroke:none"/>
+  <rect x="10" y="158" width="150" height="34" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="85" y="179" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">ANÁLISE</text>
+  <text x="172" y="179" class="svg-lbl" style="fill:var(--ink);font-size:10px">o que isso mostra?</text>
+  <rect x="326" y="167" width="124" height="16" rx="2" style="fill:var(--c3);stroke:none"/>
+  <rect x="10" y="202" width="150" height="34" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="85" y="223" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">FECHAMENTO</text>
+  <text x="172" y="223" class="svg-lbl" style="fill:var(--ink);font-size:10px">e daí? → tese</text>
+  <rect x="326" y="211" width="49.6" height="16" rx="2" style="fill:var(--c1);stroke:none"/>
+  <text x="230" y="248" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:9.5px">a análise é a parte mais longa: é nela que aparece a autoria</text>
+</svg>
+<figcaption><b>Cinco partes, cinco perguntas.</b> O tópico frasal afirma; o argumento explica por que a afirmação procede; o repertório comprova; a análise interpreta a referência à luz do problema; o fechamento liga tudo de volta à tese. As barras à direita indicam o peso típico de cada parte num parágrafo bem desenvolvido: a análise costuma ser a mais longa, porque é nela que aparece a autoria.</figcaption>
+</figure>
+
+<div class="box warn">
+  <span class="tag">Método, não exigência oficial</span>
+  <p>A sequência tópico frasal–argumento–repertório–análise–fechamento é um <strong>método de estudo</strong>, não um critério do Inep. As partes podem mudar de ordem (o repertório pode vir antes da explicação, por exemplo) e duas delas podem caber numa mesma frase. O que os descritores avaliam é se as informações estão <strong>relacionadas ao tema</strong>, <strong>organizadas</strong>, <strong>desenvolvidas</strong> e a serviço de um ponto de vista. Também não há número oficial de parágrafos: o modelo com dois parágrafos de desenvolvimento é o mais comum por caber bem na folha.</p>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> O tópico frasal</h2>
+<div class="box def">
+  <span class="tag">Tópico frasal</span>
+  <p>É a frase, em geral a primeira do parágrafo, que <strong>anuncia o argumento</strong> que ele vai desenvolver. No desenvolvimento da redação, ela retoma um dos eixos antecipados na introdução e diz o que o parágrafo vai provar sobre ele.</p>
+</div>
+<p>Exemplos para o tema do Enem 2020, “O estigma associado às doenças mentais na sociedade brasileira”, supondo uma tese com dois eixos: desinformação e mídia.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Tópico frasal</th><th>Avaliação</th></tr></thead>
+  <tbody>
+    <tr><td>“A saúde mental é muito importante.”</td><td>vago: não anuncia argumento nem eixo</td></tr>
+    <tr><td>“Existem muitas doenças mentais, como a depressão e a ansiedade.”</td><td>informativo: descreve o assunto, não defende nada</td></tr>
+    <tr><td>“Em primeiro lugar, a desinformação sobre os transtornos mentais sustenta o estigma que os cerca.”</td><td>bom: conectivo de ordenação, eixo 1 e afirmação a provar</td></tr>
+    <tr><td>“Além disso, representações midiáticas que associam o adoecimento psíquico à violência reforçam o preconceito.”</td><td>bom: conectivo de adição, eixo 2 e relação de causa</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Teste do tópico frasal</span>
+  <p>Leia em sequência só a tese e os tópicos frasais. Se essas três frases formam um raciocínio completo — a posição e as duas razões —, o projeto de texto está visível. É a mesma “revisão de coerência em dois minutos” sugerida no assunto da Competência 3.</p>
+</div>
+<div class="box def">
+  <span class="tag">O conectivo de abertura</span>
+  <p>Expressões como “em primeiro lugar”, “além disso”, “ademais” e “por outro lado” marcam a <strong>progressão</strong> entre parágrafos e são avaliadas na Competência 4. Escolha-as pela relação de sentido, não por hábito: “por outro lado” anuncia contraste, não simples acréscimo. O assunto <strong>Conectivos e progressão argumentativa entre parágrafos</strong> aprofunda essa escolha.</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> O argumento: explicar o porquê</h2>
+<p>Depois de afirmar, o parágrafo precisa <strong>explicar</strong>: por que a afirmação do tópico frasal procede? Essa explicação é o argumento propriamente dito — a razão que torna a tese aceitável, como se vê em <strong>Estrutura argumentativa: tese, argumentos e contra-argumentos</strong>.</p>
+<div class="tb">
+  <p><strong>Tópico frasal.</strong> Em primeiro lugar, a desinformação sobre os transtornos mentais sustenta o estigma que os cerca.</p>
+  <p><strong>Argumento.</strong> <mark class="ok">Como pouco se discute saúde mental nas escolas e nas famílias, sintomas como a tristeza persistente ou a ansiedade intensa costumam ser interpretados como fraqueza de caráter, e não como condições que têm tratamento.</mark></p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>Repare na relação de <strong>causa e consequência</strong> (“como… costumam ser interpretados…”): a falta de informação <em>produz</em> a leitura preconceituosa. Sem essa frase, o tópico frasal ficaria como afirmação solta.</p>
+<div class="box def">
+  <span class="tag">Estratégias argumentativas citadas pela Cartilha</span>
+  <p>Ao comentar o projeto de texto, a Cartilha do Participante lista estratégias que podem ser usadas: <strong>exemplos, dados estatísticos, pesquisas, fatos comprováveis, citações ou depoimentos de pessoas especializadas, pequenas narrativas ilustrativas, alusões históricas e comparações</strong> entre fatos, situações, épocas ou lugares. Os tipos de argumento são estudados em <strong>Tipos de argumento: histórico, estatístico, de autoridade, por exemplificação</strong>.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> O repertório: comprovar com algo de fora da prova</h2>
+<p>O repertório sociocultural, na definição da Cartilha, é uma informação, um fato, uma citação ou uma experiência vivida que, relacionada ao tema, contribui como argumento. No parágrafo, ele <strong>comprova</strong> ou <strong>ilustra</strong> o argumento. A Cartilha de 2026 dá três orientações para evitar o repertório de bolso:</p>
+<ul>
+  <li>escolher referências específicas que realmente tenham relação com o tema;</li>
+  <li>articular o repertório às ideias usadas para defender o ponto de vista;</li>
+  <li>mostrar que entende o conteúdo citado e que ele fortalece a tese.</li>
+</ul>
+<div class="tw">
+<table>
+  <thead><tr><th>Como apresentar</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>quem/o quê + conteúdo exato</td><td>“Em <em>O Alienista</em>, de Machado de Assis, o médico Simão Bacamarte recolhe à Casa Verde a maior parte da população de Itaguaí…”</td></tr>
+    <tr><td>lei + o que ela determina</td><td>“A Lei nº 10.216/2001, que trata dos direitos das pessoas com transtornos mentais, redirecionou o modelo de assistência em saúde mental…”</td></tr>
+    <tr><td>fato histórico + data segura</td><td>“Promulgada em 1988, a Constituição Federal…”</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Prefira a paráfrase</span>
+  <p>Citações longas entre aspas ocupam linhas e raramente são lembradas com exatidão. Parafraseie a ideia, atribua-a corretamente e gaste as linhas na análise. Se não tiver certeza da autoria ou do conteúdo, não atribua: apresente a ideia como argumento seu.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> A análise: onde o parágrafo ganha autoria</h2>
+<p>Análise (ou aprofundamento) é a parte em que você <strong>interpreta</strong> o repertório à luz do problema: o que ele mostra sobre a realidade brasileira discutida e por que isso sustenta a tese. A Cartilha, ao comentar um uso produtivo da Constituição de 1988, elogia exatamente isto: o texto estabelece uma <strong>relação lógica</strong> entre o antecedente histórico e a realidade atual, evidenciando a distância entre os direitos previstos e sua efetivação.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 222" role="img" aria-label="Três degraus da análise, de cima para baixo, ligados por setas. 1, o que a referência mostra: em O Alienista, o rótulo de louco servia para excluir; parar aqui é apenas citar. 2, como isso aparece no Brasil hoje: quem sofre psiquicamente ainda é afastado, e não cuidado. 3, o que isso prova para a tese: o medo do julgamento adia a busca por tratamento; chegar aqui é argumentar">
+  <rect x="10" y="10" width="440" height="56" rx="4" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="22" y="31" class="svg-lbl" style="fill:var(--c5);font-weight:700">1 · O QUE A REFERÊNCIA MOSTRA</text>
+  <text x="22" y="51" class="svg-lbl" style="fill:var(--ink);font-size:10px">O Alienista: o rótulo de “louco” servia para excluir</text>
+  <text x="440" y="31" text-anchor="end" class="svg-lbl" style="fill:var(--c4);font-size:9.5px">parar aqui = citar</text>
+  <line x1="230" y1="68" x2="230" y2="74" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="230,80 226,73 234,73" style="fill:var(--ink-3)"/>
+  <rect x="10" y="82" width="440" height="56" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="22" y="103" class="svg-lbl" style="fill:var(--c2);font-weight:700">2 · COMO ISSO APARECE NO BRASIL HOJE</text>
+  <text x="22" y="123" class="svg-lbl" style="fill:var(--ink);font-size:10px">quem sofre psiquicamente ainda é afastado, e não cuidado</text>
+  <line x1="230" y1="140" x2="230" y2="146" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="230,152 226,145 234,145" style="fill:var(--ink-3)"/>
+  <rect x="10" y="154" width="440" height="56" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="22" y="175" class="svg-lbl" style="fill:var(--c3);font-weight:700">3 · O QUE ISSO PROVA PARA A TESE</text>
+  <text x="22" y="195" class="svg-lbl" style="fill:var(--ink);font-size:10px">o medo do julgamento adia a busca por tratamento</text>
+  <text x="440" y="175" text-anchor="end" class="svg-lbl" style="fill:var(--c3);font-size:9.5px">chegar aqui = argumentar</text>
+</svg>
+<figcaption><b>A referência não fala sozinha.</b> O primeiro degrau diz o que a referência mostra (na obra de Machado, o rótulo de loucura usado para excluir). O segundo confronta essa ideia com o Brasil de hoje (quem sofre psiquicamente ainda é afastado). O terceiro diz o que isso prova para a tese (o medo do julgamento adia a busca por ajuda). Parar no primeiro degrau é citar; chegar ao terceiro é argumentar.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Pergunta de análise</th><th>O que ela produz</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Por que isso acontece?</strong></td><td>a causa do problema</td></tr>
+    <tr><td><strong>Isso ainda vale no Brasil de hoje? Como?</strong></td><td>a atualização da referência</td></tr>
+    <tr><td><strong>Quem é afetado, e de que forma?</strong></td><td>a consequência concreta</td></tr>
+    <tr><td><strong>O que isso prova sobre a tese?</strong></td><td>a ligação com o ponto de vista</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">O sinal de que falta análise</span>
+  <p>Se, depois do repertório, a frase seguinte já é o fechamento (“Dessa forma, o problema é grave”), faltou o meio do caminho. Pergunte “e daí?” à referência e escreva a resposta antes de fechar.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> O fechamento: de volta à tese</h2>
+<p>A última frase do parágrafo amarra o que foi desenvolvido ao <strong>ponto de vista</strong> do texto. Muitos cursos chamam essa frase de “mini-conclusão” — nome de método, não termo oficial.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Fechamento</th><th>Avaliação</th></tr></thead>
+  <tbody>
+    <tr><td>“Dessa forma, enquanto a informação não substituir o preconceito, o estigma continuará a afastar os brasileiros do tratamento.”</td><td>bom: retoma o eixo e o liga à tese</td></tr>
+    <tr><td>“Assim, isso é um problema muito grave.”</td><td>vago: “isso” e “grave” não dizem nada sobre a tese</td></tr>
+    <tr><td>“Além disso, a falta de psicólogos nas escolas também é um problema.”</td><td>abre assunto novo no lugar de fechar</td></tr>
+    <tr><td>“Será que um dia isso vai mudar?”</td><td>pergunta retórica: não amarra o argumento</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Conectivos de fechamento</span>
+  <p>“Dessa forma”, “assim”, “desse modo”, “logo”, “por conseguinte”. Evite usar no fim de cada parágrafo o mesmo conectivo que abrirá a conclusão (“portanto”), para não repetir a marca e para que a conclusão continue soando como conclusão.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Parágrafo-modelo comentado</h2>
+<p>Primeiro parágrafo de desenvolvimento para o tema do Enem 2020, com a tese: “No Brasil, o estigma associado às doenças mentais persiste em razão da desinformação sobre os transtornos e de representações midiáticas que associam o adoecimento psíquico à violência.”</p>
+<div class="tb">
+  <p><strong>[1]</strong> Em primeiro lugar, a desinformação sobre os transtornos mentais sustenta o estigma que os cerca. <strong>[2]</strong> Como pouco se discute saúde mental nas escolas e nas famílias, sintomas como a tristeza persistente ou a ansiedade intensa costumam ser interpretados como fraqueza de caráter, e não como condições que têm tratamento. <strong>[3]</strong> Essa confusão tem raízes antigas: em <em>O Alienista</em>, Machado de Assis satiriza o médico Simão Bacamarte, que, com critérios arbitrários, recolhe à Casa Verde a maior parte da população de Itaguaí, mostrando como o rótulo de “louco” podia servir para excluir. <strong>[4]</strong> Mais de um século depois, os critérios mudaram, mas a lógica persiste: quem sofre psiquicamente ainda é visto como alguém a ser afastado, e não cuidado, o que leva muitos a adiar a busca por ajuda por medo do julgamento. <strong>[5]</strong> Dessa forma, enquanto a informação não substituir o preconceito, o estigma continuará a afastar os brasileiros do tratamento.</p>
+  <span class="fonte">Parágrafo elaborado para fins didáticos.</span>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Frase</th><th>Função</th><th>O que observar</th></tr></thead>
+  <tbody>
+    <tr><td class="m">[1]</td><td>tópico frasal</td><td>conectivo de ordenação + eixo 1 da tese (desinformação)</td></tr>
+    <tr><td class="m">[2]</td><td>argumento</td><td>causa (“como pouco se discute”) e efeito (leitura de fraqueza)</td></tr>
+    <tr><td class="m">[3]</td><td>repertório</td><td>obra de domínio público, atribuição correta, conteúdo resumido em paráfrase</td></tr>
+    <tr><td class="m">[4]</td><td>análise</td><td>atualiza a referência (“mais de um século depois”) e mostra a consequência concreta</td></tr>
+    <tr><td class="m">[5]</td><td>fechamento</td><td>retoma o eixo e o liga à tese, sem informação nova</td></tr>
+  </tbody>
+</table>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 460 246" role="img" aria-label="Dois parágrafos de desenvolvimento lado a lado. D1, desinformação, abre com em primeiro lugar; D2, mídia, abre com além disso. Cada um tem a mesma sequência: tópico frasal, argumento, repertório, análise e fechamento. Dos dois fechamentos saem setas para a tese, que reúne desinformação e mídia">
+  <text x="115" y="16" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-weight:700">D1 · desinformação</text>
+  <text x="115" y="32" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">“Em primeiro lugar,”</text>
+  <rect x="10" y="42" width="210" height="20" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="115" y="55.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-size:10px">tópico frasal</text>
+  <rect x="10" y="67" width="210" height="20" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="115" y="80.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">argumento</text>
+  <rect x="10" y="92" width="210" height="20" rx="3" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.2"/>
+  <text x="115" y="105.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-size:10px">repertório</text>
+  <rect x="10" y="117" width="210" height="30" rx="3" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="115" y="135.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">análise</text>
+  <rect x="10" y="152" width="210" height="20" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="115" y="165.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-size:10px">fechamento</text>
+  <text x="345" y="16" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-weight:700">D2 · mídia</text>
+  <text x="345" y="32" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">“Além disso,”</text>
+  <rect x="240" y="42" width="210" height="20" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="345" y="55.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-size:10px">tópico frasal</text>
+  <rect x="240" y="67" width="210" height="20" rx="3" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.2"/>
+  <text x="345" y="80.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-size:10px">argumento</text>
+  <rect x="240" y="92" width="210" height="20" rx="3" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.2"/>
+  <text x="345" y="105.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-size:10px">repertório</text>
+  <rect x="240" y="117" width="210" height="30" rx="3" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.2"/>
+  <text x="345" y="135.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-size:10px">análise</text>
+  <rect x="240" y="152" width="210" height="20" rx="3" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="345" y="165.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-size:10px">fechamento</text>
+  <line x1="115" y1="177" x2="183.4" y2="199.8" style="stroke:var(--c1);stroke-width:1.8"/><polygon points="190,202 181.1,203.3 183.7,195.7" style="fill:var(--c1)"/>
+  <line x1="345" y1="177" x2="276.6" y2="199.8" style="stroke:var(--c1);stroke-width:1.8"/><polygon points="270,202 276.3,195.7 278.9,203.3" style="fill:var(--c1)"/>
+  <rect x="110" y="204" width="240" height="34" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="230" y="225" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">TESE · desinformação + mídia</text>
+</svg>
+<figcaption><b>Dois parágrafos, a mesma arquitetura.</b> O primeiro desenvolvimento cumpre o eixo da desinformação; o segundo, o eixo da mídia. Cada um tem sua sequência completa, abre com um conectivo que marca a progressão (“em primeiro lugar”, “além disso”) e fecha apontando para a tese. Quando os dois fechamentos convergem para a mesma posição, o leitor percebe o projeto de texto.</figcaption>
+</figure>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Do parágrafo fraco ao bom</h2>
+<p>Mesmo eixo, três versões. Todas foram elaboradas para fins didáticos.</p>
+<div class="tb">
+  <p><strong>Versão 1 — só opinião.</strong> Em primeiro lugar, a desinformação é um grande problema. <mark class="erro">Muitas pessoas não sabem nada sobre doenças mentais e isso é muito ruim. As pessoas deveriam se informar mais.</mark> Dessa forma, a desinformação precisa acabar.</p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>Há tópico frasal e fechamento, mas o meio repete a mesma ideia com outras palavras: não há explicação de causa, nenhum repertório e nenhuma análise. Pelos descritores, tende a informações pouco desenvolvidas, com argumentação previsível.</p>
+<div class="tb">
+  <p><strong>Versão 2 — repertório solto.</strong> Em primeiro lugar, a desinformação sustenta o estigma. <mark class="erro">Machado de Assis escreveu <em>O Alienista</em>, obra muito importante da literatura brasileira.</mark> Dessa forma, o estigma das doenças mentais continua no Brasil.</p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>A referência é legítima e até pertinente, mas é apenas <strong>mencionada</strong>: o texto não diz o que a obra mostra nem como isso se liga ao problema. Passa no teste da retirada — sairia sem fazer falta. É o tipo de uso que a Cartilha considera não produtivo.</p>
+<p><strong>Versão 3</strong> — é o parágrafo-modelo da seção 08: a mesma obra, agora resumida, atualizada e ligada à tese.</p>
+<div class="eq">
+  <span class="lbl">O que mudou</span>
+  <p>Repetição → <strong>explicação causal</strong>. Menção → <strong>conteúdo da referência</strong>. Salto para o fechamento → <strong>análise</strong> que conecta passado e presente.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Estratégia: planejar o parágrafo em cinco linhas</h2>
+<p>No rascunho, antes de redigir o parágrafo inteiro, escreva uma linha curta para cada parte. Se alguma linha ficar vazia, o parágrafo ainda não está pronto.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Linha do rascunho</th><th>Exemplo (eixo 2: mídia)</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Tópico</strong></td><td>além disso, a mídia associa transtorno a violência</td></tr>
+    <tr><td><strong>Por quê</strong></td><td>noticiário e ficção destacam casos extremos → imagem de perigo</td></tr>
+    <tr><td><strong>Repertório</strong></td><td>um exemplo que eu conheça de fato (série, filme, cobertura jornalística)</td></tr>
+    <tr><td><strong>Análise</strong></td><td>o público passa a temer quem tem diagnóstico → isolamento, silêncio</td></tr>
+    <tr><td><strong>Fecho</strong></td><td>assim, a mídia reforça o estigma que afasta do tratamento</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Equilíbrio entre os parágrafos</span>
+  <p>Os dois parágrafos de desenvolvimento costumam ter tamanho parecido e ser os mais longos da redação. Se um deles ficou com metade do outro, provavelmente lhe falta análise.</p>
+</div>
+<div class="box def">
+  <span class="tag">Onde isso conversa com outros assuntos</span>
+  <p>A escolha do repertório se aprofunda em <strong>Repertório sociocultural: leis, filosofia, sociologia, história, literatura, cinema, dados</strong>; os conectivos de abertura e de fechamento, em <strong>Conectivos e progressão argumentativa entre parágrafos</strong> e em <strong>Coesão sequencial: conectivos e operadores argumentativos</strong> (Gramática). Os critérios que o corretor aplica estão em <strong>Competência 2</strong> e <strong>Competência 3</strong>; em Linguagens, <strong>Falácias e estratégias de persuasão</strong> ajuda a não trocar argumento por generalização.</p>
+</div>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Tópico frasal vago ou só informativo</span> &nbsp;→&nbsp; <span class="c">anuncie o argumento e o eixo</span></span><small>“A saúde mental é importante” não diz o que será provado.</small></li>
+  <li><span><span class="x">Afirmar sem explicar</span> &nbsp;→&nbsp; <span class="c">diga por que a afirmação procede</span></span><small>Opinião repetida não é argumento.</small></li>
+  <li><span><span class="x">Citar e abandonar</span> &nbsp;→&nbsp; <span class="c">resuma o conteúdo e analise</span></span><small>Repertório mencionado sem uso tende a não ser produtivo.</small></li>
+  <li><span><span class="x">Pular a análise</span> &nbsp;→&nbsp; <span class="c">pergunte “e daí?” à referência</span></span><small>É na análise que aparece a autoria.</small></li>
+  <li><span><span class="x">Fechar com frase vaga</span> &nbsp;→&nbsp; <span class="c">ligue o eixo à tese</span></span><small>“Isso é muito grave” não amarra nada.</small></li>
+  <li><span><span class="x">Abrir assunto novo no fim do parágrafo</span> &nbsp;→&nbsp; <span class="c">fechamento sem informação nova</span></span><small>O assunto novo fica sem desenvolvimento.</small></li>
+  <li><span><span class="x">Misturar os dois eixos no mesmo parágrafo</span> &nbsp;→&nbsp; <span class="c">um parágrafo, um eixo</span></span><small>A progressão fica confusa e um eixo some.</small></li>
+  <li><span><span class="x">Repetir no D2 o argumento do D1</span> &nbsp;→&nbsp; <span class="c">cada parágrafo acrescenta algo novo</span></span><small>Repetição desnecessária pesa na C3.</small></li>
+  <li><span><span class="x">Citação longa e decorada</span> &nbsp;→&nbsp; <span class="c">paráfrase curta e atribuição correta</span></span><small>Gaste as linhas na análise.</small></li>
+  <li><span><span class="x">Tratar as cinco partes como regra oficial</span> &nbsp;→&nbsp; <span class="c">é método; os descritores avaliam desenvolvimento e organização</span></span><small>A ordem pode variar; o que não pode faltar é o raciocínio.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove situações de escrita do desenvolvimento. Os temas citados são de edições reais do Enem; os parágrafos e frases foram elaborados para fins didáticos.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · Onde está o tópico frasal</span>
+    <p class="enun">Leia o parágrafo, escrito para o tema do Enem 2023:<br>“(I) No Brasil, a Constituição de 1988 declara homens e mulheres iguais em direitos e obrigações. (II) Na prática, porém, o cuidado com filhos, idosos e doentes continua recaindo sobre as mulheres, sem remuneração nem reconhecimento. (III) Além disso, a herança de uma divisão de tarefas que atribui o cuidado ao feminino torna esse trabalho invisível. (IV) Essa herança se manifesta desde a infância, quando meninas são cobradas pelas tarefas domésticas de que os meninos são dispensados.”<br>A frase que funcionaria melhor como tópico frasal de um parágrafo sobre o eixo “herança cultural” é a</p>
+    <ol class="alt">
+      <li>I, pois apresenta um repertório legal.</li>
+      <li>II, pois contrapõe a lei à realidade.</li>
+      <li>IV, pois traz um exemplo do cotidiano.</li>
+      <li>III, pois anuncia o argumento a ser desenvolvido e abre com conectivo de progressão.</li>
+      <li>nenhuma, pois tópico frasal só pode ser uma pergunta.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O tópico frasal <strong>anuncia o argumento</strong> do parágrafo. A frase III afirma a ideia que o eixo “herança cultural” precisa provar (a divisão de tarefas torna o cuidado invisível) e já abre com “além disso”, marca de progressão.</p>
+      <p>A I e a II formam a fundamentação e o contraste de outro eixo (lei × realidade). A IV é exemplo — sustenta a III, não a anuncia. A E inventa uma regra.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · A parte que falta</span>
+    <p class="enun">Leia o parágrafo, escrito para o tema do Enem 2019, “Democratização do acesso ao cinema no Brasil”:<br>“Em primeiro lugar, a concentração das salas de exibição limita o acesso ao cinema. Segundo o filme <em>Cinema Paradiso</em>, de Giuseppe Tornatore, a sala de cinema pode ser o centro da vida cultural de uma pequena cidade. Dessa forma, a concentração das salas é um problema.”<br>Considerando o modelo de parágrafo estudado, o que mais falta a esse trecho é</p>
+    <ol class="alt">
+      <li>um tópico frasal, pois o parágrafo não indica seu argumento.</li>
+      <li>a análise, que relacionaria a referência à realidade brasileira — cidades do interior sem salas — e mostraria por que isso sustenta a tese.</li>
+      <li>um fechamento, pois o parágrafo termina sem retomar a ideia.</li>
+      <li>um repertório, pois filmes não são aceitos como repertório.</li>
+      <li>uma proposta de intervenção completa, obrigatória em cada parágrafo.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O parágrafo tem tópico frasal, repertório e fechamento, mas salta da referência direto para a conclusão. Falta a <strong>análise</strong>: explicar o que o filme mostra e como isso se aplica ao Brasil, onde muitas cidades não têm sala — é isso que tornaria o repertório produtivo.</p>
+      <p>A A e a C ignoram que o tópico frasal e o fechamento existem (o fechamento é fraco, mas existe). A D contraria a Cartilha, que aceita filmes como repertório. A E inventa uma exigência: a proposta é avaliada no texto como um todo, e não por parágrafo.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · O melhor tópico frasal</span>
+    <p class="enun">A tese de uma redação sobre o tema do Enem 2021 é: “A falta de registro civil torna parte dos brasileiros invisível para o Estado, situação mantida pela distância dos cartórios e pela desinformação sobre a gratuidade do registro.” O tópico frasal mais adequado para o segundo parágrafo de desenvolvimento é:</p>
+    <ol class="alt">
+      <li>Em primeiro lugar, a distância dos cartórios dificulta o registro em regiões isoladas.</li>
+      <li>A cidadania é um direito de todos os seres humanos.</li>
+      <li>Por fim, cabe ao governo resolver o problema do registro civil.</li>
+      <li>Muitos países têm sistemas eficientes de registro de nascimento.</li>
+      <li>Além disso, a desinformação sobre a gratuidade do registro afasta famílias de baixa renda dos cartórios.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>O segundo eixo anunciado pela tese é a <strong>desinformação sobre a gratuidade</strong>. A E retoma esse eixo, afirma algo a provar e usa um conectivo de adição adequado ao segundo parágrafo.</p>
+      <p>A A repete o primeiro eixo e ainda usa “em primeiro lugar”. A B é genérica e fica no assunto amplo. A C antecipa a proposta, que é papel da conclusão, e não anuncia argumento. A D sai do recorte brasileiro.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Repertório que trabalha</span>
+    <p class="enun">Para o tema do Enem 2025, “Perspectivas acerca do envelhecimento na sociedade brasileira”, o trecho de desenvolvimento em que o repertório é usado de forma produtiva é:</p>
+    <ol class="alt">
+      <li>O Estatuto da Pessoa Idosa atribui à família, à sociedade e ao poder público o dever de assegurar à pessoa idosa direitos como a convivência comunitária. Muitas cidades, porém, não têm calçadas acessíveis nem espaços de convivência, o que confina idosos em casa e transforma esse direito em promessa.</li>
+      <li>Segundo Aristóteles, o homem é um animal político. Portanto, o envelhecimento deve ser discutido por todos.</li>
+      <li>O Estatuto da Pessoa Idosa é uma lei brasileira. Ele é muito importante para o país.</li>
+      <li>Como diz o ditado, quem espera sempre alcança. Por isso, os idosos devem ter paciência.</li>
+      <li>Conforme o texto motivador da prova, a população idosa cresceu no Brasil.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A A apresenta o <strong>conteúdo</strong> da lei, <strong>confronta</strong> o direito previsto com a realidade das cidades e mostra a <strong>consequência</strong> (o confinamento), ligando tudo a uma perspectiva sobre o envelhecimento no Brasil — repertório legitimado, pertinente e produtivo.</p>
+      <p>A B é o repertório de bolso citado pela Cartilha de 2026. A C menciona a lei sem dizer o que ela determina nem usá-la. A D usa um ditado sem relação com o argumento — e chega a uma conclusão desrespeitosa à espera dos idosos. A E apenas retoma a coletânea: não é repertório sociocultural.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · O fechamento adequado</span>
+    <p class="enun">Um parágrafo de desenvolvimento discutiu como a ausência de creches públicas sobrecarrega as mulheres com o cuidado dos filhos (tema do Enem 2023). A frase que melhor fecha esse parágrafo é:</p>
+    <ol class="alt">
+      <li>Além disso, a violência urbana também afeta as mulheres brasileiras.</li>
+      <li>Será que um dia essa realidade vai mudar?</li>
+      <li>Desse modo, sem uma rede pública que divida o cuidado, esse trabalho continua recaindo sobre as mulheres e permanece invisível.</li>
+      <li>Assim, isso é algo muito triste e preocupante.</li>
+      <li>Em primeiro lugar, as creches são instituições de ensino.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A C usa conectivo conclusivo, retoma o eixo (falta de rede pública de cuidado) e o liga à tese (o trabalho de cuidado da mulher permanece invisível), sem informação nova.</p>
+      <p>A A abre um assunto novo, fora do eixo. A B é pergunta retórica e não amarra o argumento. A D é vaga: “isso” e “triste” não dizem nada sobre a tese. A E reinicia o parágrafo com um conectivo de abertura e uma definição óbvia.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · Método ou regra?</span>
+    <p class="enun">Sobre a estrutura tópico frasal–argumento–repertório–análise–fechamento, é correto afirmar que</p>
+    <ol class="alt">
+      <li>é exigida pela Cartilha do Participante, e a falta de qualquer parte zera a Competência 3.</li>
+      <li>vale só para o primeiro parágrafo de desenvolvimento.</li>
+      <li>proíbe que o repertório apareça antes da explicação do argumento.</li>
+      <li>dispensa o repertório, desde que o parágrafo tenha análise.</li>
+      <li>é um método de estudo: as partes podem variar de ordem, mas os descritores avaliam se as informações estão relacionadas ao tema, organizadas e desenvolvidas em defesa de um ponto de vista.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A estrutura é um <strong>método</strong> que ajuda a cumprir o que os descritores da C3 avaliam (seleção, relação, organização e interpretação das informações em defesa de um ponto de vista). Não há na Cartilha uma ordem obrigatória de frases.</p>
+      <p>A A inventa uma regra e uma punição. A B restringe o método sem motivo. A C transforma sugestão em proibição. A D contraria a C2: o repertório produtivo é o que o descritor do nível 200 menciona.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · Pondo em ordem</span>
+    <p class="enun">As frases abaixo, sobre o tema do Enem 2017, estão fora de ordem:<br>(1) Assim, sem professores preparados em Libras, a escola continua excluindo quem deveria acolher.<br>(2) Em primeiro lugar, a falta de formação dos professores em Libras compromete a educação de estudantes surdos.<br>(3) A Lei nº 10.436/2002 reconhece a Língua Brasileira de Sinais como meio legal de comunicação e expressão.<br>(4) Isso ocorre porque, sem domínio da língua de sinais, o docente não consegue explicar os conteúdos ao aluno surdo.<br>(5) Apesar desse reconhecimento, muitas escolas ainda não contam com professores ou intérpretes capazes de usá-la, o que deixa o aluno surdo à margem das aulas.<br>A sequência que segue o modelo tópico frasal–argumento–repertório–análise–fechamento é</p>
+    <ol class="alt">
+      <li>2 – 4 – 3 – 5 – 1.</li>
+      <li>3 – 2 – 4 – 1 – 5.</li>
+      <li>2 – 3 – 1 – 4 – 5.</li>
+      <li>1 – 2 – 3 – 4 – 5.</li>
+      <li>4 – 2 – 5 – 3 – 1.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A frase 2 anuncia o argumento (tópico frasal); a 4 explica por quê (argumento); a 3 traz a lei (repertório); a 5 confronta a lei com a realidade (análise, iniciada por “apesar desse reconhecimento”, que retoma a 3); e a 1 fecha com “assim”.</p>
+      <p>A B começa pelo repertório e põe o fechamento antes da análise. A C põe o fechamento no meio. A D começa pelo fechamento. A E abre com “isso ocorre porque”, que retoma uma afirmação ainda não feita.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · A estratégia usada</span>
+    <p class="enun">Em um parágrafo sobre o tema do Enem 2025, lê-se: “Assim como as cidades brasileiras foram redesenhadas, ao longo do século XX, para a circulação dos automóveis, precisam agora ser adaptadas para quem caminha mais devagar.” A estratégia argumentativa predominante nesse trecho é a</p>
+    <ol class="alt">
+      <li>citação de autoridade.</li>
+      <li>apresentação de dado estatístico.</li>
+      <li>narrativa ilustrativa.</li>
+      <li>comparação entre situações.</li>
+      <li>definição de conceito.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>“Assim como… precisam agora…” estabelece uma <strong>comparação</strong> entre duas situações — a adaptação ao automóvel e a adaptação ao envelhecimento —, uma das estratégias listadas pela Cartilha.</p>
+      <p>Não há especialista citado (A), número (B), história com personagens (C) nem definição de termo (E).</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · Abrindo o segundo eixo</span>
+    <p class="enun">A introdução de uma redação sobre o tema do Enem 2020 anunciou dois eixos: a desinformação sobre os transtornos e as representações midiáticas que os associam à violência. O primeiro parágrafo de desenvolvimento tratou da desinformação. A frase mais adequada para abrir o segundo é:</p>
+    <ol class="alt">
+      <li>Em primeiro lugar, a desinformação sobre os transtornos mentais sustenta o estigma.</li>
+      <li>Portanto, cabe ao Ministério da Saúde criar campanhas sobre saúde mental.</li>
+      <li>Além disso, ao associar o adoecimento psíquico à violência, parte da mídia reforça a imagem de perigo que alimenta o estigma.</li>
+      <li>A televisão foi inventada no início do século XX.</li>
+      <li>Por outro lado, a desinformação também é um problema.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A C cumpre o <strong>segundo eixo</strong> anunciado, com conectivo de adição e uma afirmação a provar (a mídia reforça o estigma).</p>
+      <p>A A repete o primeiro eixo. A B salta para a proposta, papel da conclusão. A D traz informação sem relação com o recorte. A E usa “por outro lado” sem contraste e volta ao primeiro eixo.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Nomeio as cinco partes do parágrafo e a pergunta que cada uma responde</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que o modelo é método, não critério oficial</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo um tópico frasal que retoma um eixo da tese</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escolho o conectivo de abertura pela relação de sentido</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico a afirmação com uma relação de causa e consequência</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Cito as estratégias argumentativas listadas pela Cartilha</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Apresento um repertório com atribuição correta e conteúdo em paráfrase</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo a análise que liga a referência ao Brasil de hoje</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Fecho o parágrafo ligando o eixo à tese, sem informação nova</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Transformo um parágrafo de “só opinião” num argumento</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço e corrijo um repertório solto</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Planejo um parágrafo em cinco linhas de rascunho</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo dois parágrafos com eixos diferentes e estrutura equilibrada</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Retome as introduções que você escreveu no assunto anterior. Para uma delas, escreva os dois parágrafos de desenvolvimento: planeje cada um em cinco linhas, redija e marque no texto cada parte (tópico, argumento, repertório, análise, fechamento). Depois, faça o teste da retirada com cada repertório e leia em sequência a tese e os dois tópicos frasais.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>Conclusão: agente, ação, meio, finalidade e detalhamento</strong>, fecha o texto com a proposta de intervenção ligada aos dois eixos.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>42 cartões</strong> deste assunto no arquivo <code>ENEM-Redacao-03-desenvolvimento.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Redação::Estrutura e Técnica</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-red-03";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

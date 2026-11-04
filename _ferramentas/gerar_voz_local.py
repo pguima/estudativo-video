@@ -19,14 +19,14 @@ for n, partes in ((1, p1), (2, p2)):
     texto = "\n\n".join(partes)
     (out / f"parte_{n}.txt").write_text(texto, encoding="utf-8")
     voz = getattr(m, "VOZ", {})  # opcional no cenas.py: VOZ = dict(tags=[...], prompt="instrução de estilo")
-    body = json.dumps(dict(text=texto, language=idioma.TTS.get(lang, "pt-BR"), voiceName="Neno", tags=voz.get("tags", ["alegre"]), accent="neutro",
+    body = json.dumps(dict(text=texto, language=idioma.TTS.get(lang, "pt-BR"), voiceName=voz.get("voiceName", "Neno"), tags=voz.get("tags", ["alegre"]), accent="neutro",
                            customPrompt=voz.get("prompt", ""), speed=1.0)).encode()
     req = urllib.request.Request("http://localhost:3000/api/tts/generate", data=body, headers={"Content-Type": "application/json"})
     for tent in range(4):  # o servidor às vezes devolve 502 (erro do Gemini): tenta de novo
         try:
             r = json.loads(urllib.request.urlopen(req, timeout=900).read())
-            if "lite" in (r.get("modelUsed") or "") and tent < 3:  # fallback do servidor = voz diferente
-                print(f"parte {n}: veio {r.get('modelUsed')}, tentando de novo", flush=True); time.sleep(20); continue
+            if "lite" in (r.get("modelUsed") or ""):  # fallback do servidor = voz diferente (cota do flash acabou): não salva
+                print(f"parte {n}: veio {r.get('modelUsed')} (cota do flash-tts acabou?), nada salvo", flush=True); sys.exit(3)
             break
         except urllib.error.HTTPError as e:
             print(f"parte {n}: HTTP {e.code} {e.read()[:300]!r} (tentativa {tent + 1})", flush=True)

@@ -1,6 +1,6 @@
 # Publicação no YouTube — Redação ENEM · Episódio 6: Revisão geral, pegadinhas e desafio prático (série Leitura da Proposta)
 
-**Arquivo do vídeo:** `final/enem_redacao_leitura_proposta_ep6_revisao_desafio.mp4` (12:09, 1920x1080, tema claro)
+**Arquivo do vídeo:** `final/enem_redacao_leitura_proposta_ep6_revisao_desafio.mp4` (12:24, 1920x1080, tema claro)
 **Canal:** Estudativo · série Leitura da Proposta (episódio 6 de 6, fecha o assunto)
 **Narração:** Gemini TTS Studio local, voz **Neno** (sotaque neutro, tags alegre + curiosa + amigável, prompt de professor de cursinho com clima de desafio), voz única do início ao fim, sem cortes
 **Fonte:** material de Redação, assunto 1 (Leitura da proposta e delimitação do tema), seções 01, 11 e 13 (+ tabela de temas da seção 03 no desafio). Nenhuma das Questões 1 a 9 da seção 12.
@@ -41,18 +41,18 @@ Ler a proposta leva poucos minutos e decide se o seu texto pode chegar a mil ou 
 
 ⏱️ Capítulos
 00:00 Você está pronto?
-00:11 Os 3 hábitos que mais rendem
-00:45 O mapa da série
-01:08 Verdadeiro ou falso: as 10 pegadinhas
-04:06 Questão 1: assunto × tema
-05:11 Questão 2: a tese que cobre os blocos
-06:19 Questão 3: motivadores × cópia
-07:18 Questão 4: completa, tangencia ou fuga
-08:31 Questão 5: foco legítimo × corte
-09:26 Desafio: 5 temas reais
-09:49 Eu faço o modelo: 2016
-10:38 Checklist de domínio
-11:32 Próximo assunto: introdução
+00:10 Os 3 hábitos que mais rendem
+00:44 O mapa da série
+01:07 Verdadeiro ou falso: as 10 pegadinhas
+03:59 Questão 1: assunto × tema
+04:59 Questão 2: a tese que cobre os blocos
+06:11 Questão 3: motivadores × cópia
+07:17 Questão 4: completa, tangencia ou fuga
+08:38 Questão 5: foco legítimo × corte
+09:36 Desafio: 5 temas reais
+10:00 Eu faço o modelo: 2016
+10:51 Checklist de domínio
+11:50 Próximo assunto: introdução
 
 📋 Os 3 hábitos que mais rendem:
 1. Decomponha a frase temática em blocos e anote o que cada um obriga o texto a discutir.

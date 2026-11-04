@@ -1,0 +1,1057 @@
+{
+ "total": 56.2,
+ "scenes": [
+  {
+   "id": "01",
+   "block": "gancho",
+   "start": 0.05,
+   "dur": 7.83,
+   "tokens": [
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.44
+    },
+    {
+     "disp": "first",
+     "bold": false,
+     "t0": 0.44,
+     "t1": 0.78
+    },
+    {
+     "disp": "foldable",
+     "bold": true,
+     "t0": 0.78,
+     "t1": 1.4
+    },
+    {
+     "disp": "iPhone",
+     "bold": false,
+     "t0": 1.4,
+     "t1": 1.82
+    },
+    {
+     "disp": "costs",
+     "bold": false,
+     "t0": 1.82,
+     "t1": 2.22
+    },
+    {
+     "disp": "almost",
+     "bold": false,
+     "t0": 2.22,
+     "t1": 2.48
+    },
+    {
+     "disp": "two",
+     "bold": true,
+     "t0": 2.48,
+     "t1": 2.88
+    },
+    {
+     "disp": "thousand",
+     "bold": true,
+     "t0": 2.48,
+     "t1": 2.88
+    },
+    {
+     "disp": "dollars.",
+     "bold": true,
+     "t0": 2.88,
+     "t1": 3.56
+    },
+    {
+     "disp": "And",
+     "bold": false,
+     "t0": 3.56,
+     "t1": 4.4
+    },
+    {
+     "disp": "some",
+     "bold": false,
+     "t0": 4.4,
+     "t1": 4.64
+    },
+    {
+     "disp": "owners",
+     "bold": false,
+     "t0": 4.64,
+     "t1": 4.9
+    },
+    {
+     "disp": "are",
+     "bold": false,
+     "t0": 4.9,
+     "t1": 5.14
+    },
+    {
+     "disp": "watching",
+     "bold": false,
+     "t0": 5.14,
+     "t1": 5.44
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 5.44,
+     "t1": 5.62
+    },
+    {
+     "disp": "screen",
+     "bold": false,
+     "t0": 5.62,
+     "t1": 5.9
+    },
+    {
+     "disp": "crack",
+     "bold": true,
+     "t0": 5.9,
+     "t1": 6.24
+    },
+    {
+     "disp": "within",
+     "bold": false,
+     "t0": 6.24,
+     "t1": 6.58
+    },
+    {
+     "disp": "hours.",
+     "bold": false,
+     "t0": 6.58,
+     "t1": 7.34
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 3.56
+   }
+  },
+  {
+   "id": "02",
+   "block": "relatos",
+   "start": 7.88,
+   "dur": 8.62,
+   "tokens": [
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.43
+    },
+    {
+     "disp": "iPhone",
+     "bold": false,
+     "t0": 0.43,
+     "t1": 0.85
+    },
+    {
+     "disp": "Duo",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.25
+    },
+    {
+     "disp": "hit",
+     "bold": false,
+     "t0": 1.25,
+     "t1": 1.55
+    },
+    {
+     "disp": "stores",
+     "bold": false,
+     "t0": 1.55,
+     "t1": 1.85
+    },
+    {
+     "disp": "on",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 2.07
+    },
+    {
+     "disp": "Friday.",
+     "bold": false,
+     "t0": 2.07,
+     "t1": 2.37
+    },
+    {
+     "disp": "Then",
+     "bold": false,
+     "t0": 2.81,
+     "t1": 3.05
+    },
+    {
+     "disp": "came",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.23
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 3.23,
+     "t1": 3.37
+    },
+    {
+     "disp": "reports:",
+     "bold": false,
+     "t0": 3.37,
+     "t1": 3.69
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 4.13,
+     "t1": 4.25
+    },
+    {
+     "disp": "open",
+     "bold": false,
+     "t0": 4.25,
+     "t1": 4.57
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.71
+    },
+    {
+     "disp": "phone,",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 4.99
+    },
+    {
+     "disp": "hear",
+     "bold": false,
+     "t0": 5.23,
+     "t1": 5.45
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.45,
+     "t1": 5.57
+    },
+    {
+     "disp": "crunch,",
+     "bold": true,
+     "t0": 5.57,
+     "t1": 5.99
+    },
+    {
+     "disp": "and",
+     "bold": false,
+     "t0": 5.99,
+     "t1": 6.53
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.53,
+     "t1": 6.65
+    },
+    {
+     "disp": "white",
+     "bold": true,
+     "t0": 6.65,
+     "t1": 7.01
+    },
+    {
+     "disp": "line",
+     "bold": true,
+     "t0": 7.01,
+     "t1": 7.35
+    },
+    {
+     "disp": "shows",
+     "bold": false,
+     "t0": 7.35,
+     "t1": 7.63
+    },
+    {
+     "disp": "up",
+     "bold": false,
+     "t0": 7.63,
+     "t1": 7.83
+    },
+    {
+     "disp": "on",
+     "bold": false,
+     "t0": 7.83,
+     "t1": 7.93
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.03
+    },
+    {
+     "disp": "screen.",
+     "bold": false,
+     "t0": 8.03,
+     "t1": 8.29
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.81,
+    "c": 5.99
+   }
+  },
+  {
+   "id": "03",
+   "block": "apple",
+   "start": 16.5,
+   "dur": 6.7,
+   "tokens": [
+    {
+     "disp": "Apple",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.75
+    },
+    {
+     "disp": "confirmed",
+     "bold": false,
+     "t0": 0.75,
+     "t1": 1.07
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 1.07,
+     "t1": 1.31
+    },
+    {
+     "disp": "issue,",
+     "bold": false,
+     "t0": 1.31,
+     "t1": 1.53
+    },
+    {
+     "disp": "on",
+     "bold": false,
+     "t0": 1.53,
+     "t1": 1.99
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.11
+    },
+    {
+     "disp": "small",
+     "bold": true,
+     "t0": 2.11,
+     "t1": 2.63
+    },
+    {
+     "disp": "number",
+     "bold": true,
+     "t0": 2.63,
+     "t1": 3.01
+    },
+    {
+     "disp": "of",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.15
+    },
+    {
+     "disp": "units.",
+     "bold": false,
+     "t0": 3.15,
+     "t1": 3.41
+    },
+    {
+     "disp": "If",
+     "bold": false,
+     "t0": 3.95,
+     "t1": 4.09
+    },
+    {
+     "disp": "yours",
+     "bold": false,
+     "t0": 4.09,
+     "t1": 4.31
+    },
+    {
+     "disp": "is",
+     "bold": false,
+     "t0": 4.31,
+     "t1": 4.45
+    },
+    {
+     "disp": "affected,",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 4.77
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 4.99,
+     "t1": 5.09
+    },
+    {
+     "disp": "get",
+     "bold": false,
+     "t0": 5.09,
+     "t1": 5.23
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.23,
+     "t1": 5.31
+    },
+    {
+     "disp": "replacement",
+     "bold": true,
+     "t0": 5.31,
+     "t1": 5.67
+    },
+    {
+     "disp": "under",
+     "bold": false,
+     "t0": 5.67,
+     "t1": 6.05
+    },
+    {
+     "disp": "warranty.",
+     "bold": false,
+     "t0": 6.05,
+     "t1": 6.39
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.95
+   }
+  },
+  {
+   "id": "04",
+   "block": "causa",
+   "start": 23.2,
+   "dur": 9.54,
+   "tokens": [
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.57
+    },
+    {
+     "disp": "cause?",
+     "bold": false,
+     "t0": 0.57,
+     "t1": 0.83
+    },
+    {
+     "disp": "iFixit",
+     "bold": false,
+     "t0": 1.67,
+     "t1": 1.89
+    },
+    {
+     "disp": "tore",
+     "bold": true,
+     "t0": 2.07,
+     "t1": 2.29
+    },
+    {
+     "disp": "it",
+     "bold": true,
+     "t0": 2.29,
+     "t1": 2.49
+    },
+    {
+     "disp": "down.",
+     "bold": true,
+     "t0": 2.29,
+     "t1": 2.67
+    },
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 3.19
+    },
+    {
+     "disp": "breaks",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.47
+    },
+    {
+     "disp": "show",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.77
+    },
+    {
+     "disp": "up",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 3.91
+    },
+    {
+     "disp": "near",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.03
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.17
+    },
+    {
+     "disp": "hinge,",
+     "bold": true,
+     "t0": 4.17,
+     "t1": 4.57
+    },
+    {
+     "disp": "where",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.81
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 4.97
+    },
+    {
+     "disp": "support",
+     "bold": false,
+     "t0": 4.97,
+     "t1": 5.35
+    },
+    {
+     "disp": "bar",
+     "bold": false,
+     "t0": 5.35,
+     "t1": 5.73
+    },
+    {
+     "disp": "may",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 6.11
+    },
+    {
+     "disp": "be",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.27
+    },
+    {
+     "disp": "pressing",
+     "bold": true,
+     "t0": 6.27,
+     "t1": 6.63
+    },
+    {
+     "disp": "on",
+     "bold": true,
+     "t0": 6.63,
+     "t1": 6.81
+    },
+    {
+     "disp": "the",
+     "bold": true,
+     "t0": 6.81,
+     "t1": 6.93
+    },
+    {
+     "disp": "screen.",
+     "bold": true,
+     "t0": 6.93,
+     "t1": 7.19
+    },
+    {
+     "disp": "But",
+     "bold": false,
+     "t0": 7.39,
+     "t1": 8.01
+    },
+    {
+     "disp": "that's",
+     "bold": false,
+     "t0": 8.01,
+     "t1": 8.45
+    },
+    {
+     "disp": "still",
+     "bold": false,
+     "t0": 8.45,
+     "t1": 8.73
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.73,
+     "t1": 8.85
+    },
+    {
+     "disp": "theory.",
+     "bold": true,
+     "t0": 8.85,
+     "t1": 9.11
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.67,
+    "c": 4.57
+   }
+  },
+  {
+   "id": "05",
+   "block": "conta",
+   "start": 32.74,
+   "dur": 7.98,
+   "tokens": [
+    {
+     "disp": "Now,",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.49
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 0.67,
+     "t1": 0.71
+    },
+    {
+     "disp": "painful",
+     "bold": false,
+     "t0": 0.71,
+     "t1": 1.01
+    },
+    {
+     "disp": "part:",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.31
+    },
+    {
+     "disp": "out",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 2.05
+    },
+    {
+     "disp": "of",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.17
+    },
+    {
+     "disp": "warranty,",
+     "bold": false,
+     "t0": 2.17,
+     "t1": 2.45
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.69,
+     "t1": 2.79
+    },
+    {
+     "disp": "new",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 3.01
+    },
+    {
+     "disp": "inner",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.25
+    },
+    {
+     "disp": "screen",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.59
+    },
+    {
+     "disp": "costs",
+     "bold": false,
+     "t0": 3.59,
+     "t1": 3.95
+    },
+    {
+     "disp": "nine",
+     "bold": true,
+     "t0": 3.95,
+     "t1": 5.31
+    },
+    {
+     "disp": "hundred",
+     "bold": true,
+     "t0": 3.95,
+     "t1": 5.31
+    },
+    {
+     "disp": "ninety-nine",
+     "bold": true,
+     "t0": 3.95,
+     "t1": 5.31
+    },
+    {
+     "disp": "dollars.",
+     "bold": true,
+     "t0": 3.95,
+     "t1": 5.31
+    },
+    {
+     "disp": "Half",
+     "bold": true,
+     "t0": 6.41,
+     "t1": 6.75
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 6.75,
+     "t1": 6.91
+    },
+    {
+     "disp": "price",
+     "bold": false,
+     "t0": 6.91,
+     "t1": 7.17
+    },
+    {
+     "disp": "of",
+     "bold": false,
+     "t0": 7.17,
+     "t1": 7.31
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 7.31,
+     "t1": 7.37
+    },
+    {
+     "disp": "phone.",
+     "bold": false,
+     "t0": 7.37,
+     "t1": 7.67
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 6.41
+   }
+  },
+  {
+   "id": "06",
+   "block": "areia",
+   "start": 40.72,
+   "dur": 9.48,
+   "tokens": [
+    {
+     "disp": "Nobody",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.87
+    },
+    {
+     "disp": "knows",
+     "bold": false,
+     "t0": 0.87,
+     "t1": 1.13
+    },
+    {
+     "disp": "how",
+     "bold": false,
+     "t0": 1.13,
+     "t1": 1.33
+    },
+    {
+     "disp": "many",
+     "bold": false,
+     "t0": 1.33,
+     "t1": 1.45
+    },
+    {
+     "disp": "phones",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 1.71
+    },
+    {
+     "disp": "are",
+     "bold": false,
+     "t0": 1.71,
+     "t1": 1.83
+    },
+    {
+     "disp": "affected,",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.17
+    },
+    {
+     "disp": "and",
+     "bold": false,
+     "t0": 2.17,
+     "t1": 2.61
+    },
+    {
+     "disp": "there",
+     "bold": false,
+     "t0": 2.61,
+     "t1": 2.73
+    },
+    {
+     "disp": "are",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.83
+    },
+    {
+     "disp": "even",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 3.03
+    },
+    {
+     "disp": "fake",
+     "bold": true,
+     "t0": 3.03,
+     "t1": 3.41
+    },
+    {
+     "disp": "photos",
+     "bold": true,
+     "t0": 3.41,
+     "t1": 3.83
+    },
+    {
+     "disp": "out",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 4.05
+    },
+    {
+     "disp": "there.",
+     "bold": false,
+     "t0": 4.05,
+     "t1": 4.27
+    },
+    {
+     "disp": "But",
+     "bold": false,
+     "t0": 4.63,
+     "t1": 4.85
+    },
+    {
+     "disp": "iFixit's",
+     "bold": false,
+     "t0": 4.85,
+     "t1": 5.47
+    },
+    {
+     "disp": "CEO",
+     "bold": false,
+     "t0": 5.47,
+     "t1": 5.87
+    },
+    {
+     "disp": "warned:",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.29
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.67,
+     "t1": 6.79
+    },
+    {
+     "disp": "grain",
+     "bold": true,
+     "t0": 6.79,
+     "t1": 7.17
+    },
+    {
+     "disp": "of",
+     "bold": true,
+     "t0": 7.17,
+     "t1": 7.33
+    },
+    {
+     "disp": "sand",
+     "bold": true,
+     "t0": 7.33,
+     "t1": 7.73
+    },
+    {
+     "disp": "can",
+     "bold": false,
+     "t0": 7.73,
+     "t1": 8.05
+    },
+    {
+     "disp": "kill",
+     "bold": false,
+     "t0": 8.05,
+     "t1": 8.47
+    },
+    {
+     "disp": "this",
+     "bold": false,
+     "t0": 8.47,
+     "t1": 8.71
+    },
+    {
+     "disp": "screen.",
+     "bold": false,
+     "t0": 8.71,
+     "t1": 9.07
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.63
+   }
+  },
+  {
+   "id": "07",
+   "block": "final",
+   "start": 50.2,
+   "dur": 6.0,
+   "tokens": [
+    {
+     "disp": "So:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "would",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 1.17
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 1.17,
+     "t1": 1.29
+    },
+    {
+     "disp": "pay",
+     "bold": false,
+     "t0": 1.29,
+     "t1": 1.47
+    },
+    {
+     "disp": "that",
+     "bold": false,
+     "t0": 1.47,
+     "t1": 1.63
+    },
+    {
+     "disp": "for",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 1.79
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.79,
+     "t1": 1.89
+    },
+    {
+     "disp": "phone",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.03
+    },
+    {
+     "disp": "that",
+     "bold": false,
+     "t0": 2.03,
+     "t1": 2.17
+    },
+    {
+     "disp": "folds?",
+     "bold": false,
+     "t0": 2.17,
+     "t1": 2.43
+    },
+    {
+     "disp": "Or",
+     "bold": false,
+     "t0": 2.87,
+     "t1": 3.23
+    },
+    {
+     "disp": "will",
+     "bold": false,
+     "t0": 3.23,
+     "t1": 3.39
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.49
+    },
+    {
+     "disp": "wait",
+     "bold": false,
+     "t0": 3.49,
+     "t1": 3.67
+    },
+    {
+     "disp": "for",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 3.81
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 3.81,
+     "t1": 3.87
+    },
+    {
+     "disp": "second",
+     "bold": true,
+     "t0": 3.87,
+     "t1": 4.11
+    },
+    {
+     "disp": "generation?",
+     "bold": true,
+     "t0": 4.11,
+     "t1": 4.45
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.87
+   }
+  }
+ ]
+}

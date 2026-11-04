@@ -1,0 +1,6 @@
+Narração em inglês do piloto (We, The Ancients), voz Zephyr (gemini-3.8-flash-tts, en-US), gerada em 01/11/2026.
+- Usada: takeA (parte 1 = cenas 01–11, 4:59; parte 2 = cenas 12–21, 5:36). Total com a pausa: 10:35.
+- takeB ficou de reserva: falou "warrant" em vez de "warn" (cena 15) e "plasti-conglomerate" (cena 11).
+- No takeA a Zephyr disse "what seems strongest" e "that turned into ice"; o cenas_en.py foi ajustado para o que foi falado.
+- Conferido com Whisper small (tudo) + medium (trechos duvidosos).
+- montar.py <take> gera narracao.wav, tempos.json, marcas_abertura.json e saida_en/legenda_en.srt.

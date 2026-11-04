@@ -1,0 +1,33 @@
+Um celular, um número de WhatsApp e cinco pessoas tentando atender ao mesmo tempo. Ou pior: uma ferramenta não oficial que imita o WhatsApp Web e pode parar a qualquer momento. Existe um caminho oficial: a API do WhatsApp, da própria Meta. Neste vídeo: quanto custa, como configurar e como ligar ela num sistema de multiatendimento.
+
+Primeiro, o que é. A Cloud API faz parte da Plataforma WhatsApp Business. Ela roda nos servidores da Meta: você não instala nada. Para enviar, o seu sistema faz uma chamada HTTP. Para receber, a Meta avisa o seu servidor por um webhook: mensagem nova, entregue, lida. E a Meta não cobra mensalidade pela Cloud API. Você paga por mensagem.
+
+E para entender o preço, você precisa de duas regras. Regra um: quando o cliente manda uma mensagem, abre uma janela de vinte e quatro horas. Dentro dela, você responde com texto livre. Regra dois: fora da janela, só com um modelo aprovado pela Meta, o famoso template. E todo modelo tem uma categoria: marketing, utilidade, como confirmação de pedido, e autenticação, o código de login.
+
+Agora, os preços. Estes são da tabela oficial da Meta em reais, válida desde primeiro de outubro de dois mil e vinte e seis, para números do Brasil. Mensagem de marketing: trinta e dois centavos. Utilidade: três centavos e meio. Autenticação: também três centavos e meio. E o que o cliente manda para você é grátis.
+
+E aqui tem uma mudança importante. Desde primeiro de outubro, as respostas de atendimento dentro da janela passaram a ser cobradas. Cada número tem mil mensagens de serviço grátis por mês. Da mensagem mil e um em diante, três centavos e meio cada. E a Meta já avisou: sem forma de pagamento cadastrada, essas mensagens podem parar de ser entregues.
+
+Vamos fazer uma conta de exemplo. Uma loja, num mês. Duas mil mensagens de marketing: seiscentos e quarenta e três reais e quarenta centavos. Cinco mil confirmações de pedido, na categoria utilidade: cento e setenta e cinco reais. Três mil respostas de atendimento: mil são grátis, e as outras duas mil saem por setenta reais. Total: oitocentos e oitenta e oito reais e quarenta centavos. Repare: quase tudo vem do marketing.
+
+Mais quatro detalhes de custo. Utilidade e autenticação ficam mais baratas com volume, com desconto de cinco a vinte e cinco por cento; marketing, não. Conversa que começa num anúncio de clique para o WhatsApp tem as respostas grátis por até sete dias. Desde julho, dá para pagar em reais. E, se você usar uma plataforma ou um parceiro da Meta, a mensalidade deles é à parte.
+
+Agora, a configuração. Passo um: um portfólio empresarial da Meta, o antigo Business Manager. Passo dois: no Meta for Developers, crie um app com o caso de uso conectar-se com clientes pelo WhatsApp. Passo três: a Meta te dá um número de teste e um token temporário, para mandar a primeira mensagem na hora. Passo quatro: o número de verdade. Ele não pode estar ativo no aplicativo do WhatsApp: precisa ser apagado de lá antes, e ganha um nome de exibição e um PIN de duas etapas.
+
+Passo cinco: o token permanente. Nas configurações do negócio, crie um usuário do sistema, dê acesso ao app e à conta do WhatsApp, e gere o token com as permissões de mensagens e de gerenciamento. Passo seis: o webhook. Uma URL com HTTPS, um token de verificação que você inventa, e a assinatura do campo messages. Passo sete: forma de pagamento. E passo oito: verifique a empresa. O limite começa em duzentos e cinquenta contatos por dia fora da janela, e sobe para dois mil depois da verificação.
+
+E como fica no código? Para enviar, um POST no endereço da Graph API, com o ID do número no caminho e o token no cabeçalho. No corpo, o produto, o destinatário, o tipo e o texto. A resposta traz o ID da mensagem. E, quando o cliente responde, a Meta faz o caminho inverso: manda um JSON para o seu webhook, com o número, o nome e o texto.
+
+E onde entra o multiatendimento? O cliente manda a mensagem. A Meta entrega no webhook do seu sistema. O sistema coloca a conversa numa fila e distribui entre os atendentes, por equipe, etiqueta ou rodízio. O atendente responde no painel, e o sistema faz o POST de volta para a API. Resultado: um número só, vários atendentes, cada um no seu computador.
+
+Um exemplo prático: o Chatwoot, uma plataforma de atendimento de código aberto. Em configurações, caixas de entrada, você adiciona um canal WhatsApp Cloud. Ele pede três coisas: o ID do número, o ID da conta do WhatsApp Business e o token permanente. Aí o próprio Chatwoot confere o acesso e configura o webhook na Meta. Depois, é só adicionar os atendentes.
+
+Três dicas para o dia a dia. Primeira: no painel, a janela de vinte e quatro horas continua valendo. Passou do prazo, o atendente precisa mandar um modelo. Segunda: o token precisa da permissão de gerenciamento, senão os modelos não aparecem no painel. Terceira: se você não quer largar o aplicativo WhatsApp Business no celular, existe a coexistência: o mesmo número no app e na API, com até seis meses de histórico. Mas ela é ativada pelo fluxo de cadastro de um parceiro, não pela configuração manual.
+
+E alguns cuidados. Para mandar mensagem primeiro, você precisa do consentimento da pessoa. Modelo mal avaliado derruba a qualidade do número e trava o aumento do limite. O token é a chave da sua conta: fica no servidor, nunca no front-end. E valide a assinatura de cada webhook, para ter certeza de que veio da Meta.
+
+Resumindo. A Cloud API é oficial, hospedada pela Meta e sem mensalidade. Você paga por mensagem: marketing trinta e dois centavos, o resto três e meio. Mil respostas de atendimento grátis por mês, por número. Configuração: app, número, token permanente e webhook. E o multiatendimento é um sistema no meio, com um número e vários atendentes.
+
+Se esse vídeo te mostrou algo novo, deixe o seu like, inscreva-se no canal e ative o sininho, para não perder as próximas ferramentas. E me conte nos comentários: qual sistema de atendimento você usa com o WhatsApp? Até o próximo vídeo.
+
+As fontes deste vídeo estão na tela e na descrição.

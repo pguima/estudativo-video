@@ -258,6 +258,9 @@ class Som:
             tt = tt_(3.0)
             s = sum(a * np.sin(2 * np.pi * note(m) * tt) * np.exp(-tt * d) for m, a, d in ((84, 1, 1.5), (91, .5, 2), (96, .3, 2.6)))
             return nrm(s) * np.minimum(1, tt / 0.005) * 0.7
+        if nome in ("tick", "tick2"):   # tique do cronômetro (tick2: o último, mais agudo)
+            tt = tt_(0.09); f = 1760 if nome == "tick2" else 1320
+            return np.sin(2 * np.pi * f * tt) * np.exp(-tt * 70) + 0.5 * np.sin(2 * np.pi * 2 * f * tt) * np.exp(-tt * 120)
         if nome == "shimmer":
             tt = tt_(2.5)
             s = sum(np.sin(2 * np.pi * note(m) * tt) * np.exp(-np.maximum(0, tt - k * 0.07) * 2.2) * (tt >= k * 0.07)
@@ -266,7 +269,7 @@ class Som:
         raise ValueError(f"efeito desconhecido: {nome}")
 
     GAIN = dict(pop=0.07, click=0.10, lock=0.08, whoosh=0.13, typing=0.09, notif=0.09, data=0.05, glitch=0.10,
-                impact=0.45, confirm=0.09, alert=0.09, deny=0.10, bell=0.16, shimmer=0.12)
+                impact=0.45, confirm=0.09, alert=0.09, deny=0.10, bell=0.16, shimmer=0.12, tick=0.10, tick2=0.10)
 
     def sfx(self):
         buf = np.zeros((self.N, 2))

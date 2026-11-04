@@ -1,0 +1,979 @@
+{
+ "total": 49.96,
+ "scenes": [
+  {
+   "id": "01",
+   "block": "gancho",
+   "start": 0.05,
+   "dur": 6.19,
+   "tokens": [
+    {
+     "disp": "Microsoft",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.58
+    },
+    {
+     "disp": "just",
+     "bold": false,
+     "t0": 0.58,
+     "t1": 0.9
+    },
+    {
+     "disp": "offered",
+     "bold": false,
+     "t0": 0.9,
+     "t1": 1.22
+    },
+    {
+     "disp": "money",
+     "bold": false,
+     "t0": 1.22,
+     "t1": 1.5
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 1.5,
+     "t1": 1.7
+    },
+    {
+     "disp": "sixty",
+     "bold": true,
+     "t0": 1.7,
+     "t1": 2.2
+    },
+    {
+     "disp": "thousand",
+     "bold": true,
+     "t0": 2.2,
+     "t1": 2.8
+    },
+    {
+     "disp": "employees",
+     "bold": true,
+     "t0": 2.8,
+     "t1": 3.3
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 3.3,
+     "t1": 3.62
+    },
+    {
+     "disp": "leave.",
+     "bold": false,
+     "t0": 3.62,
+     "t1": 3.86
+    },
+    {
+     "disp": "That's",
+     "bold": false,
+     "t0": 4.3,
+     "t1": 4.48
+    },
+    {
+     "disp": "almost",
+     "bold": false,
+     "t0": 4.48,
+     "t1": 4.66
+    },
+    {
+     "disp": "a",
+     "bold": true,
+     "t0": 4.66,
+     "t1": 4.82
+    },
+    {
+     "disp": "quarter",
+     "bold": true,
+     "t0": 4.82,
+     "t1": 5.16
+    },
+    {
+     "disp": "of",
+     "bold": false,
+     "t0": 5.16,
+     "t1": 5.38
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 5.38,
+     "t1": 5.46
+    },
+    {
+     "disp": "company.",
+     "bold": false,
+     "t0": 5.46,
+     "t1": 5.8
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 4.3
+   }
+  },
+  {
+   "id": "02",
+   "block": "quem",
+   "start": 6.24,
+   "dur": 6.3,
+   "tokens": [
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.49
+    },
+    {
+     "disp": "offer",
+     "bold": false,
+     "t0": 0.49,
+     "t1": 0.65
+    },
+    {
+     "disp": "covers",
+     "bold": false,
+     "t0": 0.65,
+     "t1": 0.99
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 0.99,
+     "t1": 1.19
+    },
+    {
+     "disp": "U.S.,",
+     "bold": false,
+     "t0": 1.19,
+     "t1": 1.45
+    },
+    {
+     "disp": "Canada,",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.13
+    },
+    {
+     "disp": "India",
+     "bold": false,
+     "t0": 2.53,
+     "t1": 2.77
+    },
+    {
+     "disp": "and",
+     "bold": false,
+     "t0": 3.11,
+     "t1": 3.19
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.33
+    },
+    {
+     "disp": "U.K.",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.61
+    },
+    {
+     "disp": "And",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.27
+    },
+    {
+     "disp": "it",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.35
+    },
+    {
+     "disp": "goes",
+     "bold": false,
+     "t0": 4.35,
+     "t1": 4.47
+    },
+    {
+     "disp": "all",
+     "bold": false,
+     "t0": 4.47,
+     "t1": 4.81
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 4.93
+    },
+    {
+     "disp": "way",
+     "bold": false,
+     "t0": 4.93,
+     "t1": 5.07
+    },
+    {
+     "disp": "up",
+     "bold": false,
+     "t0": 5.07,
+     "t1": 5.19
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 5.19,
+     "t1": 5.31
+    },
+    {
+     "disp": "vice",
+     "bold": true,
+     "t0": 5.31,
+     "t1": 5.51
+    },
+    {
+     "disp": "president.",
+     "bold": true,
+     "t0": 5.51,
+     "t1": 5.91
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.01
+   }
+  },
+  {
+   "id": "03",
+   "block": "pacote",
+   "start": 12.54,
+   "dur": 7.36,
+   "tokens": [
+    {
+     "disp": "The",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.47
+    },
+    {
+     "disp": "package,",
+     "bold": false,
+     "t0": 0.47,
+     "t1": 0.75
+    },
+    {
+     "disp": "according",
+     "bold": false,
+     "t0": 0.97,
+     "t1": 1.19
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 1.19,
+     "t1": 1.45
+    },
+    {
+     "disp": "Business",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 1.63
+    },
+    {
+     "disp": "Insider:",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 2.13
+    },
+    {
+     "disp": "one",
+     "bold": false,
+     "t0": 2.47,
+     "t1": 2.73
+    },
+    {
+     "disp": "or",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.83
+    },
+    {
+     "disp": "two",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 2.99
+    },
+    {
+     "disp": "weeks",
+     "bold": true,
+     "t0": 2.99,
+     "t1": 3.21
+    },
+    {
+     "disp": "of",
+     "bold": true,
+     "t0": 3.21,
+     "t1": 3.37
+    },
+    {
+     "disp": "pay",
+     "bold": true,
+     "t0": 3.37,
+     "t1": 3.61
+    },
+    {
+     "disp": "for",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 3.81
+    },
+    {
+     "disp": "every",
+     "bold": false,
+     "t0": 3.81,
+     "t1": 4.05
+    },
+    {
+     "disp": "six",
+     "bold": false,
+     "t0": 4.05,
+     "t1": 4.35
+    },
+    {
+     "disp": "months",
+     "bold": false,
+     "t0": 4.35,
+     "t1": 4.59
+    },
+    {
+     "disp": "on",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.77
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 4.77,
+     "t1": 4.85
+    },
+    {
+     "disp": "job,",
+     "bold": false,
+     "t0": 4.85,
+     "t1": 5.15
+    },
+    {
+     "disp": "plus",
+     "bold": false,
+     "t0": 5.31,
+     "t1": 5.59
+    },
+    {
+     "disp": "stock",
+     "bold": false,
+     "t0": 5.59,
+     "t1": 5.95
+    },
+    {
+     "disp": "and",
+     "bold": false,
+     "t0": 5.95,
+     "t1": 6.17
+    },
+    {
+     "disp": "health",
+     "bold": false,
+     "t0": 6.17,
+     "t1": 6.47
+    },
+    {
+     "disp": "care",
+     "bold": false,
+     "t0": 6.17,
+     "t1": 6.47
+    },
+    {
+     "disp": "for",
+     "bold": false,
+     "t0": 6.47,
+     "t1": 6.73
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.73,
+     "t1": 6.83
+    },
+    {
+     "disp": "while.",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 7.03
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 5.31
+   }
+  },
+  {
+   "id": "04",
+   "block": "motivo",
+   "start": 19.9,
+   "dur": 9.46,
+   "tokens": [
+    {
+     "disp": "And",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.53
+    },
+    {
+     "disp": "the",
+     "bold": false,
+     "t0": 0.53,
+     "t1": 0.61
+    },
+    {
+     "disp": "reason?",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 0.87
+    },
+    {
+     "disp": "Artificial",
+     "bold": true,
+     "t0": 1.65,
+     "t1": 2.17
+    },
+    {
+     "disp": "intelligence.",
+     "bold": true,
+     "t0": 2.17,
+     "t1": 2.69
+    },
+    {
+     "disp": "Microsoft",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.77
+    },
+    {
+     "disp": "plans",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.15
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.33
+    },
+    {
+     "disp": "spend",
+     "bold": false,
+     "t0": 4.33,
+     "t1": 4.55
+    },
+    {
+     "disp": "over",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 4.77
+    },
+    {
+     "disp": "one",
+     "bold": true,
+     "t0": 4.77,
+     "t1": 5.89
+    },
+    {
+     "disp": "hundred",
+     "bold": true,
+     "t0": 4.77,
+     "t1": 5.89
+    },
+    {
+     "disp": "seventy",
+     "bold": true,
+     "t0": 4.77,
+     "t1": 5.89
+    },
+    {
+     "disp": "billion",
+     "bold": true,
+     "t0": 5.89,
+     "t1": 6.49
+    },
+    {
+     "disp": "dollars",
+     "bold": true,
+     "t0": 6.49,
+     "t1": 6.69
+    },
+    {
+     "disp": "this",
+     "bold": false,
+     "t0": 6.49,
+     "t1": 7.13
+    },
+    {
+     "disp": "year,",
+     "bold": false,
+     "t0": 7.13,
+     "t1": 7.47
+    },
+    {
+     "disp": "largely",
+     "bold": false,
+     "t0": 7.71,
+     "t1": 8.05
+    },
+    {
+     "disp": "on",
+     "bold": false,
+     "t0": 8.05,
+     "t1": 8.21
+    },
+    {
+     "disp": "AI",
+     "bold": false,
+     "t0": 8.21,
+     "t1": 8.51
+    },
+    {
+     "disp": "data",
+     "bold": true,
+     "t0": 8.51,
+     "t1": 8.79
+    },
+    {
+     "disp": "centers.",
+     "bold": true,
+     "t0": 8.79,
+     "t1": 9.17
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.39,
+    "c": 7.71
+   }
+  },
+  {
+   "id": "05",
+   "block": "maio",
+   "start": 29.36,
+   "dur": 6.42,
+   "tokens": [
+    {
+     "disp": "Back",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "in",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 0.77
+    },
+    {
+     "disp": "May,",
+     "bold": false,
+     "t0": 0.77,
+     "t1": 0.97
+    },
+    {
+     "disp": "it",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.21
+    },
+    {
+     "disp": "made",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.37
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.47
+    },
+    {
+     "disp": "similar",
+     "bold": false,
+     "t0": 1.47,
+     "t1": 1.73
+    },
+    {
+     "disp": "offer",
+     "bold": false,
+     "t0": 1.73,
+     "t1": 2.05
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.21
+    },
+    {
+     "disp": "about",
+     "bold": false,
+     "t0": 2.21,
+     "t1": 2.43
+    },
+    {
+     "disp": "nine",
+     "bold": true,
+     "t0": 2.43,
+     "t1": 2.77
+    },
+    {
+     "disp": "thousand",
+     "bold": true,
+     "t0": 2.77,
+     "t1": 3.17
+    },
+    {
+     "disp": "people.",
+     "bold": false,
+     "t0": 3.17,
+     "t1": 3.47
+    },
+    {
+     "disp": "This",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.17
+    },
+    {
+     "disp": "one",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.33
+    },
+    {
+     "disp": "is",
+     "bold": false,
+     "t0": 4.33,
+     "t1": 4.57
+    },
+    {
+     "disp": "almost",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.73
+    },
+    {
+     "disp": "seven",
+     "bold": true,
+     "t0": 4.73,
+     "t1": 5.15
+    },
+    {
+     "disp": "times",
+     "bold": true,
+     "t0": 5.15,
+     "t1": 5.61
+    },
+    {
+     "disp": "bigger.",
+     "bold": false,
+     "t0": 5.61,
+     "t1": 5.87
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.03
+   }
+  },
+  {
+   "id": "06",
+   "block": "memo",
+   "start": 35.78,
+   "dur": 7.3,
+   "tokens": [
+    {
+     "disp": "Employees",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "have",
+     "bold": false,
+     "t0": 0.83,
+     "t1": 1.01
+    },
+    {
+     "disp": "until",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.25
+    },
+    {
+     "disp": "early",
+     "bold": true,
+     "t0": 1.25,
+     "t1": 1.57
+    },
+    {
+     "disp": "December",
+     "bold": true,
+     "t0": 1.57,
+     "t1": 1.97
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 1.97,
+     "t1": 2.19
+    },
+    {
+     "disp": "decide.",
+     "bold": false,
+     "t0": 2.19,
+     "t1": 2.51
+    },
+    {
+     "disp": "And",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.29
+    },
+    {
+     "disp": "Microsoft's",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.83
+    },
+    {
+     "disp": "chief",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 3.97
+    },
+    {
+     "disp": "people",
+     "bold": false,
+     "t0": 3.97,
+     "t1": 4.23
+    },
+    {
+     "disp": "officer",
+     "bold": false,
+     "t0": 4.23,
+     "t1": 4.53
+    },
+    {
+     "disp": "wrote:",
+     "bold": false,
+     "t0": 4.53,
+     "t1": 4.79
+    },
+    {
+     "disp": "this",
+     "bold": true,
+     "t0": 5.19,
+     "t1": 5.31
+    },
+    {
+     "disp": "is",
+     "bold": true,
+     "t0": 5.31,
+     "t1": 5.43
+    },
+    {
+     "disp": "new",
+     "bold": true,
+     "t0": 5.43,
+     "t1": 5.57
+    },
+    {
+     "disp": "for",
+     "bold": true,
+     "t0": 5.57,
+     "t1": 5.75
+    },
+    {
+     "disp": "us.",
+     "bold": true,
+     "t0": 5.75,
+     "t1": 5.93
+    },
+    {
+     "disp": "We'll",
+     "bold": true,
+     "t0": 6.25,
+     "t1": 6.47
+    },
+    {
+     "disp": "learn",
+     "bold": true,
+     "t0": 6.47,
+     "t1": 6.63
+    },
+    {
+     "disp": "from",
+     "bold": true,
+     "t0": 6.63,
+     "t1": 6.81
+    },
+    {
+     "disp": "it.",
+     "bold": true,
+     "t0": 6.81,
+     "t1": 6.99
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.19,
+    "c": 5.19
+   }
+  },
+  {
+   "id": "07",
+   "block": "final",
+   "start": 43.08,
+   "dur": 6.88,
+   "tokens": [
+    {
+     "disp": "So:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.67
+    },
+    {
+     "disp": "if",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.13
+    },
+    {
+     "disp": "someone",
+     "bold": false,
+     "t0": 1.13,
+     "t1": 1.37
+    },
+    {
+     "disp": "offered",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.65
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.87
+    },
+    {
+     "disp": "money",
+     "bold": false,
+     "t0": 1.87,
+     "t1": 2.07
+    },
+    {
+     "disp": "to",
+     "bold": false,
+     "t0": 2.07,
+     "t1": 2.25
+    },
+    {
+     "disp": "leave,",
+     "bold": false,
+     "t0": 2.25,
+     "t1": 2.49
+    },
+    {
+     "disp": "would",
+     "bold": false,
+     "t0": 2.81,
+     "t1": 2.87
+    },
+    {
+     "disp": "you",
+     "bold": false,
+     "t0": 2.87,
+     "t1": 3.01
+    },
+    {
+     "disp": "take",
+     "bold": true,
+     "t0": 3.01,
+     "t1": 3.21
+    },
+    {
+     "disp": "it?",
+     "bold": true,
+     "t0": 3.21,
+     "t1": 3.31
+    },
+    {
+     "disp": "Or",
+     "bold": false,
+     "t0": 3.69,
+     "t1": 3.89
+    },
+    {
+     "disp": "is",
+     "bold": false,
+     "t0": 3.89,
+     "t1": 4.01
+    },
+    {
+     "disp": "AI",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.29
+    },
+    {
+     "disp": "coming",
+     "bold": false,
+     "t0": 4.29,
+     "t1": 4.65
+    },
+    {
+     "disp": "for",
+     "bold": false,
+     "t0": 4.65,
+     "t1": 4.81
+    },
+    {
+     "disp": "your",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 4.93
+    },
+    {
+     "disp": "job",
+     "bold": false,
+     "t0": 4.93,
+     "t1": 5.19
+    },
+    {
+     "disp": "anyway?",
+     "bold": true,
+     "t0": 5.19,
+     "t1": 5.39
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.69
+   }
+  }
+ ]
+}

@@ -55,4 +55,4 @@ python $F/voz_externa.py $Q $Q/analise/voz.json <parte_1.wav> <parte_2.wav> [--l
 python $F/render.py $Q --video --final --jobs 4 [--lang en]
 python $Q/youtube/capa.py
 ```
-Som: `SOM = dict(intro=False, ganho_trilha=0.20, lufs=-14, ...)`; poucos efeitos, só nos resultados (dicionário `sfx`).
+Som: **aula horizontal SEM trilha de fundo** (pedido do usuário, 30/10/2026): `SOM = dict(intro=False, ganho_trilha=0.0, lufs=-14, ...)`, só voz + poucos efeitos nos resultados (dicionário `sfx`). Trilha de fundo só nos Shorts.

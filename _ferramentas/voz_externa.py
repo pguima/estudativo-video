@@ -25,6 +25,23 @@ NUM = {"0": "zero", "1": "um", "2": "dois", "3": "tres", "4": "quatro", "5": "ci
        "9": "nove", "10": "dez", "50": "cinquenta"}
 
 
+def pt_int(n):
+    """0..9999 por extenso, como o roteiro escreve ("duzentos e quarenta", "dois mil e vinte e cinco")"""
+    U = "zero um dois tres quatro cinco seis sete oito nove dez onze doze treze catorze quinze dezesseis dezessete " \
+        "dezoito dezenove".split()
+    D = "_ _ vinte trinta quarenta cinquenta sessenta setenta oitenta noventa".split()
+    C = "_ cento duzentos trezentos quatrocentos quinhentos seiscentos setecentos oitocentos novecentos".split()
+    if n < 20:
+        return U[n]
+    if n < 100:
+        return D[n // 10] + ("" if n % 10 == 0 else " e " + U[n % 10])
+    if n < 1000:
+        return "cem" if n == 100 else C[n // 100] + ("" if n % 100 == 0 else " e " + pt_int(n % 100))
+    m = ("mil" if n // 1000 == 1 else pt_int(n // 1000) + " mil")
+    r = n % 1000
+    return m + ("" if r == 0 else (" e " if r < 100 or r % 100 == 0 else " ") + pt_int(r))
+
+
 # inglês: o roteiro escreve os números por extenso ("nine hundred eighty-three"), o Whisper devolve algarismos
 UN = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen " \
      "eighteen nineteen".split()
@@ -70,10 +87,8 @@ def expand(piece):
     n = norm(piece)
     if n == "9h30":
         return ["nove", "e", "meia"]
-    if n == "50" and "%" in piece:
-        return ["cinquenta", "por", "cento"]
-    if n in NUM:
-        return [NUM[n]]
+    if n.isdigit() and int(n) < 10000:   # "240" -> duzentos e quarenta; "25%" -> vinte e cinco por cento
+        return pt_int(int(n)).split() + (["por", "cento"] if "%" in piece else [])
     return [piece]
 
 

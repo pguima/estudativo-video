@@ -1,0 +1,1123 @@
+<title>Introdução da Redação</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,0,700;8..60,1,400&display=swap">
+<style>
+/* ==========================================================================
+   Série de estudos ENEM — sistema visual compartilhado
+   Fundo claro e acolhedor, cor com função semântica, ilustrações em SVG.
+   Cada cor identifica um tipo de conteúdo; nenhuma é decorativa.
+   ========================================================================== */
+
+/* ---------- tokens: tema claro (base, sempre definido) ---------- */
+:root{
+  --paper:#FBF8F3;
+  --paper-2:#F4EFE6;
+  --surface:#FFFFFF;
+  --surface-2:#F6F2EA;
+  --ink:#1E242B;
+  --ink-2:#59636E;
+  --ink-3:#8A939D;
+  --rule:#E8E1D5;
+  --rule-2:#D6CDBD;
+
+  /* azul — identidade de Matemática, definições e estrutura */
+  --c1:#1A64BE;  --c1-soft:#E8F0FC;  --c1-line:#A9C7EE;
+  /* âmbar — atenção, armadilha, cuidado */
+  --c2:#A96410;  --c2-soft:#FDF1DC;  --c2-line:#EFCE96;
+  /* verde — truque, atalho, confirmação */
+  --c3:#12775B;  --c3-soft:#E0F3EB;  --c3-line:#9BD5BE;
+  /* carmim — erro, o que não fazer */
+  --c4:#BC2E4B;  --c4-soft:#FCE8EC;  --c4-line:#F0AEBC;
+  /* roxo — fórmula em destaque, ponte entre ideias */
+  --c5:#63459F;  --c5-soft:#F0EAFB;  --c5-line:#C6B4EC;
+
+  --shadow-s:0 1px 2px rgba(30,36,43,.05), 0 2px 6px -3px rgba(30,36,43,.12);
+  --shadow-m:0 1px 2px rgba(30,36,43,.05), 0 12px 28px -18px rgba(30,36,43,.35);
+
+  --r-s:6px; --r-m:10px; --r-l:16px;
+
+  --step--1:.815rem;
+  --step-0:1.05rem;
+  --step-1:1.2rem;
+  --step-2:1.45rem;
+  --step-3:1.95rem;
+  --step-4:2.9rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171B;
+    --paper-2:#1A1E23;
+    --surface:#1C2126;
+    --surface-2:#252B31;
+    --ink:#ECEDE8;
+    --ink-2:#A7B0B8;
+    --ink-3:#7C858D;
+    --rule:#2E353C;
+    --rule-2:#414A53;
+
+    --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+    --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+    --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+    --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+    --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+    --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+    --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171B;
+  --paper-2:#1A1E23;
+  --surface:#1C2126;
+  --surface-2:#252B31;
+  --ink:#ECEDE8;
+  --ink-2:#A7B0B8;
+  --ink-3:#7C858D;
+  --rule:#2E353C;
+  --rule-2:#414A53;
+
+  --c1:#79ADEE;  --c1-soft:#182739;  --c1-line:#37567D;
+  --c2:#E0AE5A;  --c2-soft:#2E2517;  --c2-line:#6A5330;
+  --c3:#5EC8A0;  --c3-soft:#152A24;  --c3-line:#2F6252;
+  --c4:#F0899E;  --c4-soft:#301A20;  --c4-line:#6E3B48;
+  --c5:#B49BEB;  --c5-soft:#241E36;  --c5-line:#4E4177;
+
+  --shadow-s:0 1px 2px rgba(0,0,0,.35), 0 2px 6px -3px rgba(0,0,0,.5);
+  --shadow-m:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -20px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:var(--step-0);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-wrap:break-word;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--c1);z-index:60;border-radius:0 2px 2px 0}
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+.masthead{
+  background:var(--paper-2);
+  border-bottom:1px solid var(--rule);
+  padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,40px);
+}
+.head-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,56px);align-items:center}
+@media (max-width:860px){.head-grid{grid-template-columns:1fr;gap:26px}}
+
+.trail{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:var(--step--1);letter-spacing:.08em;
+  color:var(--ink-3);margin:0 0 16px;line-height:1.6;
+}
+.trail b{
+  color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:3px 11px;margin-right:4px;
+}
+h1{
+  font-family:Gabarito,"Helvetica Neue",Arial,sans-serif;font-weight:800;
+  font-size:clamp(2rem,5.4vw,var(--step-4));line-height:1.05;
+  letter-spacing:-.028em;margin:0;text-wrap:balance;color:var(--ink);
+}
+.deck{margin:16px 0 0;max-width:56ch;color:var(--ink-2);font-size:var(--step-1);line-height:1.6}
+
+.head-art{display:flex;justify-content:center;align-items:center}
+.head-art svg{width:100%;max-width:300px;height:auto}
+@media (max-width:860px){.head-art svg{max-width:250px}}
+
+.ficha{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  margin:clamp(24px,4vw,36px) 0 0;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r-m);overflow:hidden;
+}
+.ficha div{background:var(--surface);padding:14px 18px}
+.ficha dt{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 6px;
+}
+.ficha dd{margin:0;font-family:Gabarito,sans-serif;font-weight:600;font-size:.97rem;line-height:1.35;color:var(--ink)}
+
+/* ==========================================================================
+   Layout de leitura
+   ========================================================================== */
+.layout{display:grid;grid-template-columns:216px minmax(0,1fr);gap:clamp(32px,5vw,60px);padding:clamp(28px,4vw,44px) 0 0;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr;gap:0}}
+
+nav.toc{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto;padding-right:4px}
+@media (max-width:980px){
+  nav.toc{position:static;max-height:none;margin-bottom:30px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:var(--r-m);padding:18px 20px}
+}
+nav.toc p{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;
+}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.toc a{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:9px;align-items:start;
+  font-family:Gabarito,sans-serif;font-size:.85rem;line-height:1.35;font-weight:500;
+  color:var(--ink-2);text-decoration:none;padding:6px 9px;border-radius:var(--r-s);
+  transition:background .16s,color .16s;
+}
+nav.toc a span{
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+nav.toc a.on{background:var(--c1-soft);color:var(--c1);font-weight:700}
+nav.toc a.on span{color:var(--c1)}
+nav.toc a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+
+article{max-width:none;padding-bottom:90px}
+section{padding-top:clamp(38px,5vw,54px);scroll-margin-top:22px}
+
+/* ---------- títulos ---------- */
+h2{
+  font-family:Gabarito,sans-serif;font-weight:800;font-size:var(--step-3);
+  line-height:1.14;letter-spacing:-.024em;margin:0 0 18px;text-wrap:balance;color:var(--ink);
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;
+}
+h2 i{
+  font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+  color:#fff;background:var(--c1);border-radius:var(--r-s);
+  width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  letter-spacing:0;flex:none;
+}
+:root[data-theme="dark"] h2 i{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2 i{color:#101418}}
+h3{
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:var(--step-1);
+  margin:34px 0 10px;letter-spacing:-.012em;color:var(--ink);
+  padding-left:13px;border-left:3px solid var(--c1-line);
+}
+p{margin:0 0 16px;max-width:70ch}
+article ul,article ol{margin:0 0 18px;padding-left:1.4em;max-width:70ch}
+article li{margin-bottom:9px}
+article li::marker{color:var(--c1)}
+strong{font-weight:700}
+em{font-style:italic}
+
+/* ==========================================================================
+   Matemática embutida no texto
+   ========================================================================== */
+.m{font-family:"Source Serif 4",Georgia,serif;white-space:nowrap;font-feature-settings:"lnum"}
+.v{font-style:italic}
+.frac{display:inline-flex;flex-direction:column;vertical-align:-.58em;text-align:center;margin:0 .18em;line-height:1.2}
+.frac > i{font-style:normal;padding:0 .34em}
+.frac > i:first-child{border-bottom:1.3px solid currentColor}
+.rad{display:inline-flex;align-items:flex-start;white-space:nowrap}
+.rad::before{content:"√";font-size:1.06em;line-height:1}
+.rad > i{font-style:normal;border-top:1.2px solid currentColor;padding:0 .17em;margin-top:.14em}
+sup{font-size:.72em;line-height:0}
+sub{font-size:.72em;line-height:0}
+
+/* ---------- bloco de equação / passo a passo ---------- */
+.eq{
+  background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-m);padding:18px 22px;margin:0 0 22px;
+  font-size:1.06rem;overflow-x:auto;box-shadow:var(--shadow-s);
+  position:relative;
+}
+.eq::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+  background:var(--c5);border-radius:0 3px 3px 0;
+}
+.eq p{margin:0 0 10px;max-width:none}
+.eq p:last-child{margin:0}
+.eq .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c5);display:block;margin-bottom:10px;font-weight:600;
+}
+
+/* ==========================================================================
+   Caixas de destaque — cada cor tem função
+   ========================================================================== */
+.box{
+  border-radius:var(--r-m);padding:18px 22px 18px 22px;margin:0 0 22px;
+  border:1px solid var(--rule);background:var(--surface);
+  box-shadow:var(--shadow-s);position:relative;
+}
+.box p{max-width:none}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+.box .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.67rem;letter-spacing:.1em;
+  text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  margin-bottom:10px;font-weight:600;
+}
+.box .tag::before{content:"";width:11px;height:11px;flex:none;border-radius:3px}
+
+.box.def{background:var(--c1-soft);border-color:var(--c1-line)}
+.box.def .tag{color:var(--c1)}
+.box.def .tag::before{background:var(--c1);border-radius:50%}
+
+.box.warn{background:var(--c2-soft);border-color:var(--c2-line)}
+.box.warn .tag{color:var(--c2)}
+.box.warn .tag::before{
+  background:var(--c2);border-radius:2px;
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+}
+
+.box.tip{background:var(--c3-soft);border-color:var(--c3-line)}
+.box.tip .tag{color:var(--c3)}
+.box.tip .tag::before{background:var(--c3)}
+
+/* ==========================================================================
+   Tabelas
+   ========================================================================== */
+.tw{
+  overflow-x:auto;margin:0 0 24px;border:1px solid var(--rule);
+  border-radius:var(--r-m);background:var(--surface);box-shadow:var(--shadow-s);
+}
+table{border-collapse:collapse;width:100%;font-size:.96rem;min-width:min(100%,420px)}
+th{
+  background:var(--c1);color:#fff;font-family:Gabarito,sans-serif;
+  font-weight:600;font-size:.8rem;letter-spacing:.015em;text-align:left;
+  padding:11px 15px;white-space:nowrap;
+}
+:root[data-theme="dark"] th{color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#101418}}
+td{padding:11px 15px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.55}
+tbody tr:nth-child(even){background:var(--surface-2)}
+td:first-child{white-space:nowrap;font-weight:600}
+
+/* ==========================================================================
+   Figuras ilustradas
+   ========================================================================== */
+figure.fig{
+  margin:0 0 26px;background:var(--surface);border:1px solid var(--rule);
+  border-radius:var(--r-l);padding:22px clamp(16px,3vw,26px) 16px;
+  box-shadow:var(--shadow-m);
+}
+figure.fig svg{display:block;width:100%;max-width:100%;height:auto;margin:0 auto}
+figure.fig figcaption{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.9rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+figure.fig figcaption b{color:var(--ink);font-weight:700}
+.svg-ink{fill:var(--ink)}
+.svg-mut{fill:var(--ink-2)}
+.svg-lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em}
+.svg-ttl{font-family:Gabarito,sans-serif;font-weight:700;font-size:13px}
+.svg-num{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+
+/* ==========================================================================
+   Lista de erros — errado × certo
+   ========================================================================== */
+.erros{list-style:none;padding:0;margin:0 0 12px;display:flex;flex-direction:column;gap:10px;max-width:none}
+.erros li{
+  padding:15px 18px;margin:0;border:1px solid var(--rule);
+  border-left:4px solid var(--c4);border-radius:var(--r-m);
+  background:var(--surface);box-shadow:var(--shadow-s);line-height:1.6;
+}
+.erros .x{
+  color:var(--c4);font-weight:700;background:var(--c4-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros .c{
+  color:var(--c3);font-weight:700;background:var(--c3-soft);
+  padding:2px 8px;border-radius:var(--r-s);display:inline-block;
+}
+.erros small{color:var(--ink-2);font-size:.9rem;display:block;margin-top:8px;line-height:1.55}
+
+/* ==========================================================================
+   Questões
+   ========================================================================== */
+.q{
+  border:1px solid var(--rule);border-radius:var(--r-l);background:var(--surface);
+  margin:0 0 20px;box-shadow:var(--shadow-m);overflow:hidden;
+}
+.q > header{padding:20px clamp(18px,3vw,24px) 8px}
+.q .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--c1);font-weight:600;
+  background:var(--c1-soft);border:1px solid var(--c1-line);
+  border-radius:99px;padding:4px 12px;display:inline-block;
+}
+.q .enun{margin:14px 0 16px;max-width:none}
+.q ol.alt{
+  list-style:none;counter-reset:alt;margin:0 0 16px;padding:0;
+  display:grid;gap:7px;max-width:none;
+}
+.q ol.alt li{
+  counter-increment:alt;margin:0;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:11px;align-items:baseline;
+  padding:7px 12px;border:1px solid var(--rule);border-radius:var(--r-s);
+  background:var(--paper);font-size:.98rem;
+}
+.q ol.alt li::before{
+  content:counter(alt,upper-alpha);
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--c1);background:var(--c1-soft);border-radius:var(--r-s);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+}
+details{border-top:1px solid var(--rule)}
+summary{
+  cursor:pointer;padding:14px clamp(18px,3vw,24px);list-style:none;
+  font-family:Gabarito,sans-serif;font-weight:700;font-size:.88rem;color:var(--c1);
+  display:flex;align-items:center;gap:9px;transition:background .16s;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"";width:0;height:0;flex:none;
+  border-left:7px solid currentColor;border-top:5px solid transparent;
+  border-bottom:5px solid transparent;transition:transform .2s;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--c1-soft)}
+summary:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.sol{
+  padding:4px clamp(18px,3vw,24px) 22px;font-size:.98rem;
+  border-top:1px solid var(--rule);background:var(--paper);
+}
+.sol p{max-width:none}
+.sol p:first-child{margin-top:16px}
+.sol .eq{background:var(--surface)}
+.gab{
+  display:inline-block;margin-top:10px;font-family:Gabarito,sans-serif;font-weight:700;
+  background:var(--c3);color:#fff;border-radius:99px;padding:6px 16px;font-size:.88rem;
+}
+:root[data-theme="dark"] .gab{color:#0F1A16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gab{color:#0F1A16}}
+
+/* ==========================================================================
+   Checklist
+   ========================================================================== */
+.check{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:4px;max-width:none}
+.check li{display:block;margin:0}
+.check label{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:13px;align-items:start;
+  cursor:pointer;padding:10px 14px;border-radius:var(--r-m);
+  border:1px solid transparent;transition:background .16s,border-color .16s;
+}
+.check label:hover{background:var(--surface);border-color:var(--rule)}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .bub{
+  width:22px;height:22px;border-radius:7px;border:2px solid var(--rule-2);
+  margin-top:2px;background:var(--surface);position:relative;
+  transition:background .16s,border-color .16s;
+}
+.check .bub::after{
+  content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(42deg) scale(0);
+  transition:transform .16s;
+}
+:root[data-theme="dark"] .check .bub::after{border-color:#101418}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .check .bub::after{border-color:#101418}}
+.check input:checked ~ .bub{background:var(--c3);border-color:var(--c3)}
+.check input:checked ~ .bub::after{transform:rotate(42deg) scale(1)}
+.check input:checked ~ .txt{color:var(--ink-3)}
+.check input:focus-visible ~ .bub{outline:2px solid var(--c1);outline-offset:3px}
+.check .txt{line-height:1.55}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+.foot{border-top:1px solid var(--rule);padding:30px 0 80px;margin-top:40px}
+.foot .card{
+  border:1px solid var(--c5-line);background:var(--c5-soft);
+  border-radius:var(--r-l);padding:24px clamp(20px,3vw,28px);max-width:74ch;
+}
+.foot h4{
+  font-family:Gabarito,sans-serif;font-size:var(--step-1);margin:0 0 10px;
+  font-weight:800;color:var(--c5);
+}
+.foot p{max-width:none}
+.foot code{
+  font-family:"IBM Plex Mono",monospace;font-size:.84rem;background:var(--surface);
+  border:1px solid var(--rule);padding:2px 7px;border-radius:var(--r-s);
+  overflow-wrap:anywhere;
+}
+
+/* ==========================================================================
+   Acessibilidade e impressão
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{
+  nav.toc,#progress,summary,.head-art{display:none}
+  .sol{display:block!important;background:none}
+  details{border:0}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  .layout{grid-template-columns:1fr}
+  .q,section,figure.fig,.box,.erros li{break-inside:avoid;box-shadow:none}
+  .masthead{background:none}
+}
+</style>
+
+<style>
+/* acento de área — Redação. As cores semânticas das caixas
+   permanecem idênticas às demais páginas; só o cabeçalho muda. */
+:root{ --area:#1F5A7A }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --area:#7CC3E6 } }
+:root[data-theme="dark"]{ --area:#7CC3E6 }
+.masthead{ border-top:4px solid var(--area) }
+.trail b{
+  color:var(--area);
+  background:color-mix(in srgb, var(--area) 13%, transparent);
+  border-color:color-mix(in srgb, var(--area) 42%, transparent);
+}
+.tb{ margin:12px 0; padding:10px 14px; border-left:3px solid var(--area); background:var(--surface); font-size:.95rem }
+.tb .fonte{ display:block; margin-top:6px; font-size:.8rem; color:var(--ink-3) }
+.tb mark.erro{ background:var(--c4-soft); color:inherit; padding:0 2px; border-radius:2px }
+.tb mark.ok{ background:var(--c3-soft); color:inherit; padding:0 2px; border-radius:2px }
+</style>
+
+<div id="progress"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-grid">
+      <div>
+        <p class="trail"><b>Redação</b> › Estrutura e Técnica › Assunto 2 de 12</p>
+        <h1>Introdução: contextualização e apresentação da tese</h1>
+        <p class="deck">O primeiro parágrafo é a promessa do texto: ele situa o problema, diz o que você defende e mostra por onde a argumentação vai passar. Uma introdução genérica, que serviria para qualquer tema, desperdiça as linhas mais lidas da redação; uma introdução bem montada já deixa o projeto de texto visível para o corretor.</p>
+      </div>
+      <div class="head-art">
+<svg viewBox="0 0 300 212" role="img" aria-label="Funil de três faixas, da mais larga à mais estreita: contexto, ponte, tese mais eixos. Da faixa da tese saem duas setas para dois parágrafos: D1, eixo A, e D2, eixo B. Legenda: do contexto à tese">
+  <rect x="35" y="16" width="230" height="30" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="150" y="35.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">contexto</text>
+  <rect x="65" y="56" width="170" height="30" rx="4" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="150" y="75.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c5);font-weight:700">ponte</text>
+  <rect x="95" y="96" width="110" height="30" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="150" y="115.5" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">tese + eixos</text>
+  <line x1="124" y1="128" x2="104.2" y2="138.7" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="98,142 103.1,134.7 106.9,141.7" style="fill:var(--ink-3)"/>
+  <line x1="176" y1="128" x2="195.8" y2="138.7" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="202,142 193.1,141.7 196.9,134.7" style="fill:var(--ink-3)"/>
+  <rect x="52" y="144" width="84" height="28" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="94" y="162" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">D1 · eixo A</text>
+  <rect x="168" y="144" width="84" height="28" rx="4" style="fill:var(--surface);stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="210" y="162" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">D2 · eixo B</text>
+  <text x="150" y="200" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2)">do contexto à tese</text>
+</svg>
+      </div>
+    </div>
+    <dl class="ficha">
+      <div><dt>Semana</dt><dd>1 · Fase Fundamentos</dd></div>
+      <div><dt>Incidência</dt><dd>Alta</dd></div>
+      <div><dt>Tempo previsto</dt><dd>45 min de teoria</dd></div>
+      <div><dt>Pré-requisito</dt><dd>Leitura da proposta e delimitação do tema · Estrutura argumentativa: tese, argumentos e contra-argumentos</dd></div>
+      <div><dt>Destrava</dt><dd>Desenvolvimento: tópico frasal, argumento, repertório, análise e fechamento · Repertório sociocultural: leis, filosofia, sociologia, história, literatura, cinema, dados</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="toc" aria-label="Sumário">
+    <p>Neste assunto</p>
+    <ol id="toclist"></ol>
+  </nav>
+
+  <article>
+
+<section id="s1">
+<h2><i>01</i> O que o ENEM cobra aqui</h2>
+<p>Nenhum descritor oficial avalia “a introdução” isoladamente: o Inep corrige o texto inteiro pelas cinco competências. Mas é na introdução que três delas começam a ser percebidas — a <strong>proposição</strong> do ponto de vista (Competência 2, que espera proposição, argumentação e conclusão), o <strong>projeto de texto</strong> (Competência 3) e a pertinência do primeiro <strong>repertório</strong> (Competência 2). A Cartilha do Participante resume a tarefa: inicie o texto apresentando seu ponto de vista, desenvolva justificativas para comprová-lo e elabore uma conclusão.</p>
+<p>Os formatos que você vai treinar nesta página:</p>
+<ul>
+  <li><strong>Contextualização</strong> com repertório, contexto histórico, dado ou conceito — ligada ao recorte do tema.</li>
+  <li><strong>Tese</strong> clara, contestável e completa em relação à frase temática.</li>
+  <li><strong>Antecipação dos argumentos</strong>: os dois eixos que o desenvolvimento vai sustentar.</li>
+  <li>Comparação de <strong>introduções fracas e boas</strong>, com o motivo de cada diferença.</li>
+</ul>
+<div class="box tip">
+  <span class="tag">O que rende mais aqui</span>
+  <p>Três ideias. A contextualização só ajuda se tiver uma <strong>ponte</strong> explícita para o recorte do tema (seção 04). A tese é uma <strong>posição</strong>, não a repetição da frase temática (seção 05). E anunciar dois eixos na introdução torna o <strong>projeto de texto</strong> visível — o que a Cartilha elogia nas redações de nota alta (seção 06).</p>
+</div>
+</section>
+
+<section id="s2">
+<h2><i>02</i> Os três movimentos da introdução</h2>
+<p>Nos comentários das redações de nota alta publicados na Cartilha do Participante de 2026, aparece repetidas vezes a mesma descrição: na introdução, são apresentadas <strong>a contextualização, a tese e a antecipação dos argumentos</strong>. Essa sequência é o modelo de introdução mais ensinado nos cursos preparatórios.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 176" role="img" aria-label="Faixa horizontal que representa o parágrafo de introdução, dividida em três partes de larguras decrescentes: contexto, com referência e ponte, responde de onde parte a discussão; tese, a posição, responde o que o autor defende; eixos A e B respondem por onde ele vai provar. Nota: as larguras indicam proporção típica, não regra">
+  <text x="10" y="20" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">O PARÁGRAFO DE INTRODUÇÃO</text>
+  <rect x="10" y="32" width="212" height="54" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="116" y="54" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">CONTEXTO</text>
+  <text x="116" y="72" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">referência + ponte</text>
+  <line x1="116" y1="90" x2="116" y2="102" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="116" y="118" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">de onde parte</text>
+  <text x="116" y="132" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">a discussão?</text>
+  <rect x="226" y="32" width="128" height="54" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="290" y="54" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700">TESE</text>
+  <text x="290" y="72" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">posição</text>
+  <line x1="290" y1="90" x2="290" y2="102" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="290" y="118" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">o que o autor</text>
+  <text x="290" y="132" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">defende?</text>
+  <rect x="358" y="32" width="92" height="54" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="404" y="54" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">EIXOS</text>
+  <text x="404" y="72" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">A e B</text>
+  <line x1="404" y1="90" x2="404" y2="102" style="stroke:var(--ink-3);stroke-width:1.2"/>
+  <text x="404" y="118" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">por onde vai</text>
+  <text x="404" y="132" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-2);font-size:10px">provar?</text>
+  <text x="230" y="166" text-anchor="middle" class="svg-lbl" style="fill:var(--ink-3);font-size:9.5px">larguras: proporção típica de cada parte, não regra</text>
+</svg>
+<figcaption><b>Um parágrafo, três perguntas do leitor.</b> A contextualização responde “de onde parte a discussão?”, situando o problema com uma referência ligada ao tema. A tese responde “o que o autor defende?”. A antecipação responde “por quais caminhos ele vai provar isso?”, anunciando os eixos dos parágrafos de desenvolvimento. As larguras indicam a proporção típica de cada parte, não uma regra.</figcaption>
+</figure>
+
+<div class="box warn">
+  <span class="tag">Método, não exigência oficial</span>
+  <p>A introdução “em três partes” é um <strong>método de estudo</strong> eficiente, mas não é critério do Inep. A Cartilha não exige número fixo de frases, ordem obrigatória nem tamanho para a introdução. O que os descritores pedem é que o texto tenha proposição, argumentação e conclusão (C2) e um projeto de texto perceptível (C3). Uma introdução que contextualiza e apresenta a tese, mesmo sem anunciar eixos, pode funcionar; o modelo em três movimentos apenas reduz o risco de esquecer algo.</p>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Movimento</th><th>Função</th><th>Competência em jogo</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Contextualização</strong></td><td>situar o problema e mostrar repertório pertinente</td><td>C2 (repertório e tema)</td></tr>
+    <tr><td><strong>Tese</strong></td><td>tomar posição sobre o recorte completo</td><td>C2 (tipo e tema) e C3 (ponto de vista)</td></tr>
+    <tr><td><strong>Antecipação dos argumentos</strong></td><td>anunciar os eixos do desenvolvimento</td><td>C3 (projeto de texto)</td></tr>
+    <tr><td>Articulação entre as partes</td><td>ligar as frases com conectivos e retomadas</td><td>C4 (coesão)</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<section id="s3">
+<h2><i>03</i> Contextualizar: quatro caminhos</h2>
+<p>Contextualizar é dar ao leitor o <strong>ponto de partida</strong> da discussão. Há quatro caminhos frequentes. Na figura, todos se aplicam ao tema do Enem 2024, “Desafios para a valorização da herança africana no Brasil”.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 248" role="img" aria-label="Grade com quatro caixas, quatro formas de contextualizar o tema do Enem 2024. Repertório, lei: Lei 10.639 de 2003, ensino obrigatório de história e cultura afro-brasileira; risco: citar e abandonar. Histórico, fato: abolição em 1888, sem políticas de integração da população liberta; risco: data ou fato incerto. Dado, número: Censo 2022 do IBGE, pretos e pardos somam 55,5 por cento da população; risco: número sem fonte. Conceito, definição: patrimônio cultural imaterial, artigo 216 da Constituição de 1988; risco: definição óbvia">
+  <text x="10" y="16" class="svg-lbl" style="fill:var(--ink-3);font-weight:700">TEMA DO ENEM 2024: QUATRO PORTAS</text>
+  <rect x="10" y="26" width="216" height="102" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="20" y="45" class="svg-lbl" style="fill:var(--c2);font-weight:700">REPERTÓRIO · lei</text>
+  <text x="20" y="64" class="svg-lbl" style="fill:var(--ink);font-size:10px">Lei nº 10.639/2003: ensino</text>
+  <text x="20" y="78" class="svg-lbl" style="fill:var(--ink);font-size:10px">obrigatório de história e</text>
+  <text x="20" y="92" class="svg-lbl" style="fill:var(--ink);font-size:10px">cultura afro-brasileira</text>
+  <text x="20" y="118" class="svg-lbl" style="fill:var(--c4);font-size:9.5px">risco: citar e abandonar</text>
+  <rect x="234" y="26" width="216" height="102" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="244" y="45" class="svg-lbl" style="fill:var(--c1);font-weight:700">HISTÓRICO · fato</text>
+  <text x="244" y="64" class="svg-lbl" style="fill:var(--ink);font-size:10px">abolição em 1888, sem</text>
+  <text x="244" y="78" class="svg-lbl" style="fill:var(--ink);font-size:10px">políticas de integração</text>
+  <text x="244" y="92" class="svg-lbl" style="fill:var(--ink);font-size:10px">da população liberta</text>
+  <text x="244" y="118" class="svg-lbl" style="fill:var(--c4);font-size:9.5px">risco: data ou fato incerto</text>
+  <rect x="10" y="138" width="216" height="102" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="20" y="157" class="svg-lbl" style="fill:var(--c3);font-weight:700">DADO · número</text>
+  <text x="20" y="176" class="svg-lbl" style="fill:var(--ink);font-size:10px">Censo 2022 (IBGE): pretos</text>
+  <text x="20" y="190" class="svg-lbl" style="fill:var(--ink);font-size:10px">e pardos somam 55,5%</text>
+  <text x="20" y="204" class="svg-lbl" style="fill:var(--ink);font-size:10px">da população</text>
+  <text x="20" y="230" class="svg-lbl" style="fill:var(--c4);font-size:9.5px">risco: número sem fonte</text>
+  <rect x="234" y="138" width="216" height="102" rx="4" style="fill:var(--c5-soft);stroke:var(--c5);stroke-width:1.4"/>
+  <text x="244" y="157" class="svg-lbl" style="fill:var(--c5);font-weight:700">CONCEITO · definição</text>
+  <text x="244" y="176" class="svg-lbl" style="fill:var(--ink);font-size:10px">patrimônio cultural</text>
+  <text x="244" y="190" class="svg-lbl" style="fill:var(--ink);font-size:10px">imaterial (art. 216 da</text>
+  <text x="244" y="204" class="svg-lbl" style="fill:var(--ink);font-size:10px">Constituição de 1988)</text>
+  <text x="244" y="230" class="svg-lbl" style="fill:var(--c4);font-size:9.5px">risco: definição óbvia</text>
+</svg>
+<figcaption><b>Quatro portas para o mesmo tema.</b> Uma lei (a Lei nº 10.639/2003, que tornou obrigatório o ensino de história e cultura afro-brasileira), um fato histórico (a abolição tardia, em 1888, sem políticas de integração), um dado (no Censo 2022 do IBGE, pretos e pardos somam 55,5% da população) ou um conceito (patrimônio cultural imaterial, reconhecido no art. 216 da Constituição). Cada porta tem um risco típico, indicado embaixo de cada caixa.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Caminho</th><th>Funciona bem quando…</th><th>Cuidado com…</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Repertório</strong> (lei, obra, filme, pensador)</td><td>a referência se liga diretamente ao recorte</td><td>a referência “coringa”, que serviria a qualquer tema</td></tr>
+    <tr><td><strong>Contexto histórico</strong></td><td>o passado explica um problema que persiste</td><td>datas e fatos que você não tem certeza de que estão corretos</td></tr>
+    <tr><td><strong>Dado</strong></td><td>o número dimensiona o problema</td><td>números inventados ou sem fonte (“pesquisas mostram que 90%…”)</td></tr>
+    <tr><td><strong>Conceito</strong></td><td>a definição esclarece o que está em jogo</td><td>definição de dicionário, óbvia, que não acrescenta nada</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Dado da coletânea não é repertório</span>
+  <p>Se o dado veio de um texto motivador, ele é informação da própria prova. Pode ser retomado brevemente, por paráfrase, mas não substitui conhecimento seu — e copiá-lo faz as linhas deixarem de contar (veja <strong>Leitura da proposta e delimitação do tema</strong>).</p>
+</div>
+</section>
+
+<section id="s4">
+<h2><i>04</i> A ponte: do contexto ao recorte</h2>
+<p>O erro mais comum da contextualização não é a referência em si, mas a falta de <strong>ligação</strong> com o tema. A Cartilha de 2026 comenta um exemplo de repertório de bolso na introdução: uma menção à <em>A República</em>, de Platão, que “poderia ser retirada da introdução sem alterar significativamente a compreensão do texto”. Esse é o teste: <strong>se a referência sai e nada muda, ela não estava trabalhando.</strong></p>
+<div class="tb">
+  <p><strong>Sem ponte.</strong> A Constituição Federal de 1988 é conhecida como Constituição Cidadã. <mark class="erro">Nesse sentido, a herança africana é muito importante para o Brasil.</mark></p>
+  <p><strong>Com ponte.</strong> A Constituição Federal de 1988 reconhece como patrimônio cultural brasileiro os bens que guardam a memória dos diferentes grupos formadores da sociedade. <mark class="ok">Entre esses grupos, porém, os povos africanos e seus descendentes ainda veem sua contribuição tratada como folclore ou restrita a datas comemorativas</mark>, o que revela a distância entre o reconhecimento legal e a valorização efetiva.</p>
+  <span class="fonte">Trechos elaborados para fins didáticos.</span>
+</div>
+<p>No primeiro trecho, a referência é um rótulo genérico e a frase seguinte não depende dela. No segundo, a Constituição é <strong>interpretada</strong> (o que ela reconhece) e <strong>confrontada</strong> com a realidade (como a herança africana é tratada) — e esse contraste já prepara a tese.</p>
+<div class="box tip">
+  <span class="tag">Fórmula de ponte (método)</span>
+  <p>Referência → <strong>o que ela mostra</strong> → <strong>como isso se relaciona com o recorte</strong>. Expressões como “de modo semelhante”, “essa realidade, no entanto”, “tal cenário se repete” ou “ao contrário do que prevê a lei” costumam marcar a passagem do contexto para o problema.</p>
+</div>
+</section>
+
+<section id="s5">
+<h2><i>05</i> A tese: posição sobre o recorte completo</h2>
+<div class="box def">
+  <span class="tag">Tese</span>
+  <p>É a <strong>posição</strong> que o texto vai defender sobre o tema. Uma boa tese de redação do ENEM é <strong>clara</strong> (dá para resumir numa frase), <strong>contestável</strong> (alguém poderia defender outra posição), <strong>completa</strong> em relação ao recorte (cobre todos os blocos da frase temática) e <strong>argumentável</strong> (dá para sustentar com fatos e raciocínio em dois parágrafos).</p>
+</div>
+<div class="tw">
+<table>
+  <thead><tr><th>Frase</th><th>É tese?</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td>“A herança africana é um tema muito importante.”</td><td>não</td><td>só afirma a importância; não há posição</td></tr>
+    <tr><td>“A herança africana deve ser valorizada.”</td><td>fraca</td><td>tem posição, mas quase ninguém a contestaria e não diz o que impede a valorização</td></tr>
+    <tr><td>“A cultura africana é rica e diversa.”</td><td>não para este tema</td><td>fala do assunto, sem “desafios”, “valorização” e “Brasil”</td></tr>
+    <tr><td>“A valorização da herança africana no Brasil é dificultada pela aplicação irregular do ensino de cultura afro-brasileira e pela pouca visibilidade dessa cultura na mídia.”</td><td>sim</td><td>posição contestável, cobre o recorte e anuncia dois eixos</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Tese em primeira pessoa?</span>
+  <p>A Cartilha não proíbe a primeira pessoa, mas o registro impessoal é o mais usado no texto dissertativo-argumentativo formal: “acredito que…” costuma ser substituído por “é preciso reconhecer que…”, “evidencia-se que…” ou simplesmente pela afirmação direta. O assunto <strong>Impessoalidade, escolha vocabular e clareza</strong> aprofunda esse ponto.</p>
+</div>
+</section>
+
+<section id="s6">
+<h2><i>06</i> Antecipar os argumentos: a introdução como mapa</h2>
+<p>Antecipar é anunciar, de forma breve, os <strong>eixos</strong> que cada parágrafo de desenvolvimento vai sustentar. Ao comentar redações de nota alta, a Cartilha destaca introduções que delimitam a tese “antecipando, assim, os dois eixos argumentativos que serão desenvolvidos” ou que antecipam as causas a discutir, “anunciando, portanto, o seu projeto de texto”.</p>
+
+<figure class="fig">
+<svg viewBox="0 0 460 252" role="img" aria-label="Mapa do projeto de texto. No topo, a introdução, cuja tese anuncia eixo A e eixo B. Uma seta leva o eixo A ao desenvolvimento 1, que cumpre o eixo A, e outra leva o eixo B ao desenvolvimento 2, que cumpre o eixo B. Dos dois desenvolvimentos, setas descem para a conclusão, que retoma a tese e traz proposta para os problemas A e B">
+  <rect x="10" y="14" width="440" height="58" rx="4" style="fill:var(--c1-soft);stroke:var(--c1);stroke-width:1.4"/>
+  <text x="24" y="34" class="svg-lbl" style="fill:var(--c1);font-weight:700">INTRODUÇÃO</text>
+  <text x="24" y="56" class="svg-lbl" style="fill:var(--ink);font-size:10px">tese:</text>
+  <rect x="150" y="44" width="80" height="18" rx="9" style="fill:var(--surface);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="190" y="57" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">eixo A</text>
+  <rect x="270" y="44" width="80" height="18" rx="9" style="fill:var(--surface);stroke:var(--c1);stroke-width:1.2"/>
+  <text x="310" y="57" text-anchor="middle" class="svg-lbl" style="fill:var(--c1);font-weight:700;font-size:10px">eixo B</text>
+  <text x="240" y="56" text-anchor="middle" class="svg-lbl" style="fill:var(--ink)">+</text>
+  <line x1="190" y1="64" x2="121.1" y2="102.6" style="stroke:var(--c1);stroke-width:1.8"/><polygon points="115,106 120,98.6 123.9,105.6" style="fill:var(--c1)"/>
+  <line x1="310" y1="64" x2="340.5" y2="100.6" style="stroke:var(--c1);stroke-width:1.8"/><polygon points="345,106 336.8,102.4 343,97.3" style="fill:var(--c1)"/>
+  <rect x="10" y="110" width="210" height="50" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="115" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">DESENVOLVIMENTO 1</text>
+  <text x="115" y="148" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">cumpre o eixo A</text>
+  <rect x="240" y="110" width="210" height="50" rx="4" style="fill:var(--c2-soft);stroke:var(--c2);stroke-width:1.4"/>
+  <text x="345" y="130" text-anchor="middle" class="svg-lbl" style="fill:var(--c2);font-weight:700">DESENVOLVIMENTO 2</text>
+  <text x="345" y="148" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">cumpre o eixo B</text>
+  <line x1="115" y1="162" x2="164" y2="192.3" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="170,196 161.1,195.2 165.3,188.4" style="fill:var(--ink-3)"/>
+  <line x1="345" y1="162" x2="296" y2="192.3" style="stroke:var(--ink-3);stroke-width:1.6"/><polygon points="290,196 294.7,188.4 298.9,195.2" style="fill:var(--ink-3)"/>
+  <rect x="10" y="200" width="440" height="46" rx="4" style="fill:var(--c3-soft);stroke:var(--c3);stroke-width:1.4"/>
+  <text x="230" y="219" text-anchor="middle" class="svg-lbl" style="fill:var(--c3);font-weight:700">CONCLUSÃO</text>
+  <text x="230" y="237" text-anchor="middle" class="svg-lbl" style="fill:var(--ink);font-size:10px">retoma a tese; proposta para os problemas A e B</text>
+</svg>
+<figcaption><b>O que a introdução promete, o texto entrega.</b> A tese anuncia dois eixos — A e B. O primeiro parágrafo de desenvolvimento cumpre o eixo A; o segundo, o eixo B; a conclusão retoma os dois na proposta de intervenção. É o mesmo projeto de texto descrito em Competência 3 — selecionar, relacionar e organizar informações e argumentos.</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+  <thead><tr><th>Forma de antecipar</th><th>Exemplo (tema de 2024)</th></tr></thead>
+  <tbody>
+    <tr><td>dois substantivos coordenados</td><td>“…dificultada pela <strong>aplicação irregular da lei</strong> e pela <strong>pouca visibilidade na mídia</strong>.”</td></tr>
+    <tr><td>causa e consequência</td><td>“…pois o apagamento escolar <strong>alimenta</strong> preconceitos que, por sua vez, <strong>afastam</strong> os jovens dessas tradições.”</td></tr>
+    <tr><td>dois agentes</td><td>“…problema que envolve tanto <strong>a escola</strong> quanto <strong>os meios de comunicação</strong>.”</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box warn">
+  <span class="tag">Promessa feita é promessa cobrada</span>
+  <p>Se a introdução anuncia dois eixos e o desenvolvimento trata de um terceiro assunto, o leitor percebe a quebra — e a coerência (C3) sofre. Escreva a antecipação <strong>depois</strong> de planejar os parágrafos de desenvolvimento no rascunho, nunca antes.</p>
+</div>
+</section>
+
+<section id="s7">
+<h2><i>07</i> Introduções fracas × boas, lado a lado</h2>
+<p>Tema: “Desafios para a valorização da herança africana no Brasil” (Enem 2024). Todas as versões foram elaboradas para fins didáticos.</p>
+<div class="tb">
+  <p><strong>Versão 1 — genérica.</strong> <mark class="erro">Desde os primórdios da humanidade, a cultura é fundamental para todos os povos.</mark> Nesse sentido, a herança africana também é importante e deve ser valorizada. <mark class="erro">Portanto, é necessário discutir esse tema.</mark></p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>A primeira frase serviria para qualquer tema; a tese não é contestável; nada é antecipado; e a última frase só anuncia que haverá discussão. Tende a argumentação <strong>previsível</strong> (C2) e a um projeto pouco visível (C3).</p>
+<div class="tb">
+  <p><strong>Versão 2 — repertório de bolso.</strong> <mark class="erro">Segundo Aristóteles, o homem é um animal político.</mark> Dessa forma, a valorização da herança africana no Brasil é um desafio que precisa ser enfrentado por toda a sociedade.</p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>A citação é exatamente o tipo de referência genérica que a Cartilha de 2026 chama de <strong>repertório de bolso</strong>: não se liga ao recorte e poderia ser apagada sem perda. A tese repete o tema.</p>
+<div class="tb">
+  <p><strong>Versão 3 — boa.</strong> <mark class="ok">Sancionada em 2003, a Lei nº 10.639 tornou obrigatório o ensino de história e cultura afro-brasileira nas escolas do país, reconhecendo a contribuição africana na formação nacional.</mark> Mais de duas décadas depois, porém, essa herança ainda é frequentemente reduzida a estereótipos ou lembrada apenas em datas comemorativas. <mark class="ok">Esse quadro decorre, sobretudo, da aplicação irregular da lei nas escolas e da pouca visibilidade da cultura afro-brasileira nos meios de comunicação</mark> — obstáculos que precisam ser enfrentados para que essa herança seja, de fato, valorizada no Brasil.</p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>A lei é <strong>legítima</strong> e <strong>pertinente</strong>; a segunda frase faz a <strong>ponte</strong> (o que a lei prevê × o que acontece); a terceira traz a <strong>tese</strong> com dois eixos (escola e mídia) e cobre o recorte — desafios, valorização, herança africana, Brasil.</p>
+<div class="eq">
+  <span class="lbl">O que mudou da versão 1 para a 3</span>
+  <p>Contexto genérico → <strong>referência verificável ligada ao recorte</strong>. Importância → <strong>posição contestável</strong>. Nenhum caminho → <strong>dois eixos anunciados</strong>.</p>
+</div>
+</section>
+
+<section id="s8">
+<h2><i>08</i> Armadilhas comuns da introdução</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>Armadilha</th><th>Exemplo</th><th>Por que atrapalha</th></tr></thead>
+  <tbody>
+    <tr><td>abertura universal</td><td>“Desde os primórdios…”, “Hoje em dia, muito se fala sobre…”</td><td>não informa nada sobre o recorte</td></tr>
+    <tr><td>citação decorada</td><td>frase de pensador encaixada em qualquer tema</td><td>repertório de bolso: tende a não ser produtivo</td></tr>
+    <tr><td>autoria duvidosa</td><td>frase “famosa” atribuída sem certeza</td><td>repertório precisa ser legitimado</td></tr>
+    <tr><td>dado sem fonte</td><td>“pesquisas mostram que 90%…”</td><td>número que não se pode verificar fragiliza o argumento</td></tr>
+    <tr><td>pergunta sem resposta</td><td>“Até quando isso vai continuar?” encerrando a introdução</td><td>a pergunta não substitui a tese</td></tr>
+    <tr><td>introdução que já argumenta</td><td>exemplos e explicações que seriam do desenvolvimento</td><td>a introdução incha e os eixos se repetem depois</td></tr>
+    <tr><td>tese que tangencia</td><td>tese só sobre o assunto amplo</td><td>compromete o texto inteiro desde o início</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box tip">
+  <span class="tag">Tamanho: uma referência prática</span>
+  <p>Não há tamanho oficial. Como a folha de redação tem espaço limitado e o desenvolvimento precisa de mais linhas, muitos professores sugerem que a introdução ocupe algo entre um quinto e um quarto do texto. Se a sua introdução passou disso, provavelmente está argumentando antes da hora.</p>
+</div>
+</section>
+
+<section id="s9">
+<h2><i>09</i> Estratégia: em que ordem escrever</h2>
+<p>A introdução é o primeiro parágrafo a ser lido, mas não precisa ser o primeiro a ser pensado. No rascunho, uma ordem que costuma funcionar:</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Passo</th><th>O que fazer</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1. Tese provisória</strong></td><td>a resposta à pergunta-problema, feita na leitura da proposta</td></tr>
+    <tr><td><strong>2. Eixos</strong></td><td>os dois argumentos que sustentam a tese, cada um com seu repertório</td></tr>
+    <tr><td><strong>3. Contextualização</strong></td><td>a referência que melhor prepara essa tese — às vezes, ligada a um dos eixos</td></tr>
+    <tr><td><strong>4. Ponte</strong></td><td>a frase que liga a referência ao recorte</td></tr>
+    <tr><td><strong>5. Tese final com antecipação</strong></td><td>a tese reescrita já com os dois eixos</td></tr>
+    <tr><td><strong>6. Conferência</strong></td><td>a introdução cobre os blocos da frase temática? A conclusão vai retomá-la?</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box def">
+  <span class="tag">Onde isso conversa com outros assuntos</span>
+  <p>Em Linguagens, <strong>Estrutura argumentativa: tese, argumentos e contra-argumentos</strong> mostra a introdução como lugar habitual da tese explícita. Na Redação, a escolha do repertório se aprofunda em <strong>Repertório sociocultural: leis, filosofia, sociologia, história, literatura, cinema, dados</strong>; os conectivos que ligam contexto e tese, em <strong>Conectivos e progressão argumentativa entre parágrafos</strong> e em <strong>Coesão sequencial: conectivos e operadores argumentativos</strong> (Gramática). A forma como o corretor lê tudo isso está em <strong>Competência 2</strong> e <strong>Competência 3</strong>.</p>
+</div>
+</section>
+
+<section id="s10">
+<h2><i>10</i> Treino guiado: montando uma introdução</h2>
+<p>Tema do Enem 2022: <strong>“Desafios para a valorização de comunidades e povos tradicionais no Brasil”</strong>.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Etapa</th><th>Rascunho</th></tr></thead>
+  <tbody>
+    <tr><td>Blocos</td><td>desafios · valorização · comunidades e povos tradicionais (indígenas, quilombolas, ribeirinhos, entre outros) · Brasil</td></tr>
+    <tr><td>Tese provisória</td><td>a valorização esbarra na insegurança sobre o território e no desconhecimento de seus modos de vida</td></tr>
+    <tr><td>Eixo A</td><td>território: sem terra garantida, os modos de vida tradicionais não se sustentam</td></tr>
+    <tr><td>Eixo B</td><td>desconhecimento: a escola e a mídia pouco mostram esses povos fora de estereótipos</td></tr>
+    <tr><td>Contextualização</td><td>a Constituição de 1988 reconhece aos indígenas sua organização social, costumes, línguas, crenças e tradições e os direitos sobre as terras que tradicionalmente ocupam (art. 231), e assegura aos remanescentes das comunidades dos quilombos a propriedade das terras que ocupam (art. 68 do ADCT)</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="tb">
+  <p><mark class="ok">A Constituição Federal de 1988 reconhece aos povos indígenas seus costumes, línguas e tradições, bem como os direitos sobre as terras que tradicionalmente ocupam, e assegura às comunidades quilombolas a propriedade de seus territórios.</mark> Na prática, contudo, muitos desses grupos ainda lutam pela demarcação ou pela titulação de suas terras e são retratados de forma estereotipada, como se pertencessem apenas ao passado. <mark class="ok">Assim, a valorização das comunidades e dos povos tradicionais no Brasil depende de superar dois obstáculos: a insegurança territorial, que ameaça seus modos de vida, e o desconhecimento da sociedade sobre suas culturas.</mark></p>
+  <span class="fonte">Trecho elaborado para fins didáticos.</span>
+</div>
+<p>Repare na estrutura: referência constitucional verificável (contexto), contraste com a realidade introduzido por “na prática, contudo” (ponte) e tese com dois eixos nomeados (antecipação). Os parágrafos de desenvolvimento já têm destino: um para o território, outro para o desconhecimento.</p>
+</section>
+
+<section id="s11">
+<h2><i>11</i> Os erros que mais custam pontos</h2>
+<ul class="erros">
+  <li><span><span class="x">Abrir com frase que serve a qualquer tema</span> &nbsp;→&nbsp; <span class="c">contextualize o recorte, não “a humanidade”</span></span><small>“Desde os primórdios” não informa nada.</small></li>
+  <li><span><span class="x">Citar e abandonar</span> &nbsp;→&nbsp; <span class="c">faça a ponte entre a referência e o tema</span></span><small>Se a referência sai e nada muda, ela não trabalhava.</small></li>
+  <li><span><span class="x">Usar repertório de bolso</span> &nbsp;→&nbsp; <span class="c">escolha uma referência ligada ao recorte</span></span><small>A Cartilha alerta para o uso genérico desde 2025.</small></li>
+  <li><span><span class="x">Inventar dados ou atribuir frases sem certeza</span> &nbsp;→&nbsp; <span class="c">use só o que você pode verificar</span></span><small>Repertório precisa ser legitimado.</small></li>
+  <li><span><span class="x">Repetir a frase temática como tese</span> &nbsp;→&nbsp; <span class="c">tome posição contestável</span></span><small>“É um tema importante” não é ponto de vista.</small></li>
+  <li><span><span class="x">Tese que deixa um bloco do tema de fora</span> &nbsp;→&nbsp; <span class="c">confira cada bloco da frase temática</span></span><small>O tangenciamento começa na introdução.</small></li>
+  <li><span><span class="x">Não anunciar os eixos</span> &nbsp;→&nbsp; <span class="c">antecipe os dois argumentos</span></span><small>Torna o projeto de texto visível (C3).</small></li>
+  <li><span><span class="x">Anunciar eixos que o texto não cumpre</span> &nbsp;→&nbsp; <span class="c">escreva a antecipação depois de planejar</span></span><small>Promessa sem entrega rompe a coerência.</small></li>
+  <li><span><span class="x">Argumentar já na introdução</span> &nbsp;→&nbsp; <span class="c">deixe exemplos e explicações para o desenvolvimento</span></span><small>Introdução longa rouba linhas dos argumentos.</small></li>
+  <li><span><span class="x">Tratar o modelo em três partes como regra oficial</span> &nbsp;→&nbsp; <span class="c">é método; o Inep avalia por competências</span></span><small>O que conta é proposição, projeto e repertório pertinente.</small></li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><i>12</i> Questões comentadas</h2>
+<p>Nove situações de escrita da introdução. Os temas citados são de edições reais do Enem; as introduções e teses foram elaboradas para fins didáticos.</p>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 1 · A melhor introdução</span>
+    <p class="enun">Para o tema do Enem 2025, “Perspectivas acerca do envelhecimento na sociedade brasileira”, a introdução que contextualiza o tema, apresenta uma tese sobre o recorte completo e antecipa os argumentos é:</p>
+    <ol class="alt">
+      <li>Desde sempre, os seres humanos envelhecem. Isso é algo natural e que acontece com todos. Portanto, é importante refletir sobre o envelhecimento.</li>
+      <li>O envelhecimento das células é estudado pela biologia há séculos. Os cientistas descobriram que o corpo perde funções com o tempo. Esse processo atinge todos os seres vivos.</li>
+      <li>O Estatuto da Pessoa Idosa assegura às pessoas com 60 anos ou mais direitos como saúde, dignidade e convivência comunitária. No Brasil, contudo, a velhice ainda é vista sobretudo como perda, o que alimenta o etarismo e atrasa a adaptação das cidades a uma população que envelhece — dois desafios que mostram a urgência de novas perspectivas sobre a velhice.</li>
+      <li>Segundo Platão, a sociedade ideal é governada pelos sábios. Assim, o envelhecimento é um tema que merece a atenção de todos.</li>
+      <li>No Japão, a população idosa é numerosa e o país criou diversos serviços para ela. Por isso, o envelhecimento japonês é um exemplo de organização para o mundo.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A C contextualiza com uma referência legal pertinente (o Estatuto da Pessoa Idosa, Lei nº 10.741/2003), faz a ponte com a realidade brasileira (“no Brasil, contudo”), apresenta uma tese sobre as <strong>perspectivas</strong> acerca do envelhecimento e anuncia dois eixos: o etarismo e a adaptação das cidades.</p>
+      <p>A A é genérica e não tem tese contestável. A B fica no processo biológico universal — exemplo oficial de tangenciamento. A D usa Platão de forma genérica, como no exemplo de repertório de bolso da Cartilha, e não toma posição. A E sai do contexto brasileiro.</p>
+      <span class="gab">Alternativa C</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 2 · Que tipo de contextualização?</span>
+    <p class="enun">Leia o início de uma introdução para o tema do Enem 2024: “O Brasil foi o último país das Américas a abolir a escravidão, em 1888, e o fez sem nenhuma política de integração da população liberta.” Essa contextualização recorre principalmente a</p>
+    <ol class="alt">
+      <li>um contexto histórico, usado para explicar a origem de um problema que persiste.</li>
+      <li>um dado estatístico, usado para dimensionar o problema.</li>
+      <li>um conceito sociológico, usado para definir o que está em jogo.</li>
+      <li>uma obra literária, usada como analogia.</li>
+      <li>uma experiência vivida, usada como ilustração.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A frase traz um <strong>fato histórico</strong> — a abolição tardia e sem integração — que pode explicar problemas atuais ligados à valorização da herança africana. É o caminho do contexto histórico.</p>
+      <p>A B confunde a data com um dado estatístico: não há quantidade sendo medida. A C não se aplica: nenhum conceito é definido. A D e a E descrevem fontes que não aparecem no trecho.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 3 · O teste da retirada</span>
+    <p class="enun">Uma introdução para o tema de 2025 começa assim: “Segundo Aristóteles, o ser humano é um animal político. Dessa forma, o envelhecimento é uma questão relevante na sociedade brasileira.” Com base no que a Cartilha de 2026 diz sobre repertório, o principal problema desse início é que</p>
+    <ol class="alt">
+      <li>autores da Antiguidade não podem ser citados na redação do Enem.</li>
+      <li>a citação deveria vir entre aspas e com o ano da obra.</li>
+      <li>a referência viola os direitos humanos e zera a Competência 5.</li>
+      <li>o trecho tem desvios de norma que comprometem a Competência 1.</li>
+      <li>a referência é genérica e não se conecta ao recorte: poderia ser retirada sem mudar o sentido, o que caracteriza o repertório de bolso.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A Cartilha de 2026 dá exatamente Aristóteles (“animal político”) e Platão como exemplos de <strong>repertório de bolso</strong> no tema de 2025: referências encaixadas de forma genérica, que podem ser retiradas sem alterar a compreensão do texto e, por isso, tendem a ser avaliadas como não produtivas.</p>
+      <p>A A generaliza: o problema não é o autor, mas o encaixe. A B inventa uma exigência formal. A C confunde as coisas: nada no trecho desrespeita direitos humanos. A D não se sustenta: o trecho não tem desvio gramatical relevante.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 4 · Tese com antecipação</span>
+    <p class="enun">Para o tema do Enem 2020, “O estigma associado às doenças mentais na sociedade brasileira”, a frase que apresenta uma tese e antecipa os dois eixos do desenvolvimento é:</p>
+    <ol class="alt">
+      <li>O estigma associado às doenças mentais é um assunto que precisa ser debatido.</li>
+      <li>No Brasil, o estigma associado às doenças mentais persiste em razão da desinformação sobre os transtornos e de representações midiáticas que associam o adoecimento psíquico à violência.</li>
+      <li>Até quando a sociedade brasileira vai ignorar a saúde mental?</li>
+      <li>Muitas pessoas sofrem com doenças mentais em todo o mundo.</li>
+      <li>Este texto vai tratar do estigma associado às doenças mentais na sociedade brasileira.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A B toma posição (o estigma persiste por duas causas) e nomeia os eixos que o desenvolvimento vai sustentar: <strong>desinformação</strong> e <strong>representações midiáticas</strong>.</p>
+      <p>A A só afirma a importância do debate. A C é uma pergunta retórica, que não substitui a tese. A D fica no assunto amplo, fora do Brasil e sem estigma. A E anuncia o tema, mas não diz o que o texto defende.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 5 · Promessa não cumprida</span>
+    <p class="enun">A introdução de uma redação anuncia que o texto discutirá “a falta de salas de cinema fora das capitais e o preço dos ingressos”. O primeiro parágrafo de desenvolvimento trata da falta de salas; o segundo, da qualidade dos roteiros dos filmes nacionais. Esse descompasso afeta principalmente</p>
+    <ol class="alt">
+      <li>a Competência 1, pois houve mudança de registro.</li>
+      <li>a Competência 4, pois faltam conectivos entre os parágrafos.</li>
+      <li>a Competência 5, que avalia apenas a introdução.</li>
+      <li>a Competência 3, pois o projeto de texto anunciado na introdução não é cumprido pelo desenvolvimento.</li>
+      <li>nenhuma competência, já que a introdução não é avaliada pelo Inep.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A introdução prometeu dois eixos e o desenvolvimento entregou outro no lugar do segundo. É uma falha de <strong>projeto de texto</strong> e de relação entre as partes — aspectos da coerência avaliados na <strong>Competência 3</strong>.</p>
+      <p>A A e a B citam problemas que o enunciado não descreve. A C erra a competência: a C5 avalia a proposta de intervenção. A E é falsa: o texto inteiro é avaliado, e o projeto de texto envolve a introdução.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 6 · A estrutura é obrigatória?</span>
+    <p class="enun">Um estudante afirma: “A introdução precisa ter exatamente três frases — contexto, tese e antecipação —, senão o Inep desconta pontos.” De acordo com a Cartilha do Participante, essa afirmação está</p>
+    <ol class="alt">
+      <li>correta, pois o modelo em três frases é critério da Competência 2.</li>
+      <li>incorreta: o modelo em três movimentos é um método útil, aparece nos comentários de redações de nota alta, mas a avaliação se faz pelas competências, sem número fixo de frases.</li>
+      <li>correta, pois cada frase ausente reduz 40 pontos na Competência 3.</li>
+      <li>incorreta, pois a introdução não deve conter tese, que só aparece na conclusão.</li>
+      <li>correta apenas para textos com mais de 25 linhas.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A Cartilha comenta introduções de nota alta que trazem contextualização, tese e antecipação, mas os descritores avaliam o texto por <strong>competências e níveis</strong>, sem exigir número de frases. O modelo é <strong>método de estudo</strong>.</p>
+      <p>A A e a C inventam critérios e “descontos” — a correção é por níveis descritos, não por subtração aritmética. A D contraria a própria Cartilha, que orienta iniciar o texto apresentando o ponto de vista. A E inventa uma condição.</p>
+      <span class="gab">Alternativa B</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 7 · A ponte que falta</span>
+    <p class="enun">Para o tema do Enem 2021, “Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil”, um participante iniciou a introdução assim: “A Lei nº 9.534/1997 tornou gratuitos o registro civil de nascimento e a primeira certidão.” A frase seguinte que melhor faz a ponte entre essa referência e o recorte do tema é:</p>
+    <ol class="alt">
+      <li>Nesse sentido, as leis brasileiras são muito numerosas.</li>
+      <li>Além disso, o Brasil tem uma das maiores populações do mundo.</li>
+      <li>Por isso, todos os brasileiros já têm acesso pleno à cidadania.</li>
+      <li>Dessa forma, a cidadania surgiu na Grécia Antiga.</li>
+      <li>Ainda assim, há brasileiros sem certidão de nascimento — e, sem ela, invisíveis para o Estado e afastados de direitos básicos.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A E contrapõe a lei (“ainda assim”) à realidade e liga a falta de registro à <strong>invisibilidade</strong> e ao <strong>acesso à cidadania</strong> — todos os blocos do tema aparecem e a tese pode vir em seguida.</p>
+      <p>A A generaliza para as leis em geral. A B traz informação sem relação com o recorte. A C tira uma conclusão que a própria realidade do tema contradiz e eliminaria o problema a discutir. A D salta para o assunto amplo, fora do Brasil.</p>
+      <span class="gab">Alternativa E</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 8 · Dado legítimo</span>
+    <p class="enun">Para contextualizar o tema do Enem 2024, “Desafios para a valorização da herança africana no Brasil”, o uso de dado mais adequado é:</p>
+    <ol class="alt">
+      <li>Segundo o Censo 2022 do IBGE, pretos e pardos somam 55,5% da população brasileira — maioria que contrasta com o espaço reduzido da cultura afro-brasileira nos currículos.</li>
+      <li>Pesquisas mostram que 90% dos brasileiros desconhecem a cultura africana.</li>
+      <li>Segundo especialistas, a herança africana é a mais importante do mundo.</li>
+      <li>Todo mundo sabe que a maioria das pessoas valoriza a cultura africana.</li>
+      <li>Segundo o Censo 2022, a população brasileira está envelhecendo.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A A traz um dado <strong>verificável</strong> (fonte e ano), <strong>pertinente</strong> (composição da população) e já <strong>interpretado</strong>: o contraste entre a maioria negra e o pouco espaço da cultura afro-brasileira prepara a tese.</p>
+      <p>A B apresenta um número sem fonte identificável — não se pode verificar. A C atribui a “especialistas” anônimos um juízo vago. A D é senso comum sem base. A E traz um dado de outro assunto.</p>
+      <span class="gab">Alternativa A</span>
+    </div>
+  </details>
+</div>
+
+<div class="q">
+  <header>
+    <span class="num">Questão 9 · A tese que tangencia</span>
+    <p class="enun">Para o tema do Enem 2022, “Desafios para a valorização de comunidades e povos tradicionais no Brasil”, uma das teses abaixo tende a levar o texto ao tangenciamento. Qual?</p>
+    <ol class="alt">
+      <li>A valorização dos povos tradicionais brasileiros esbarra na insegurança territorial e no desconhecimento da sociedade sobre seus modos de vida.</li>
+      <li>No Brasil, comunidades quilombolas, indígenas e ribeirinhas ainda são pouco valorizadas porque o Estado demora a garantir seus territórios e a escola pouco as apresenta.</li>
+      <li>A falta de demarcação de terras e o preconceito dificultam a valorização dos povos tradicionais no país.</li>
+      <li>Os povos indígenas da América do Sul desenvolveram, ao longo dos séculos, técnicas agrícolas variadas.</li>
+      <li>Valorizar os povos tradicionais do Brasil exige enfrentar o estereótipo que os associa apenas ao passado e a pressão econômica sobre suas terras.</li>
+    </ol>
+  </header>
+  <details>
+    <summary>Ver resolução</summary>
+    <div class="sol">
+      <p>A D fala de povos indígenas, parte do assunto amplo, mas sem “desafios”, sem “valorização” e fora do recorte brasileiro: um texto desenvolvido a partir dela fica <strong>só no assunto</strong> — o tangenciamento.</p>
+      <p>As demais contemplam os blocos do tema: a A, a C e a E nomeiam obstáculos à valorização no Brasil (“no país”, na C; “do Brasil”, na E); a B cita grupos, lugar e dois desafios.</p>
+      <span class="gab">Alternativa D</span>
+    </div>
+  </details>
+</div>
+</section>
+
+<section id="s13">
+<h2><i>13</i> Checklist de domínio</h2>
+<p>Marque só o que você conseguiria explicar em voz alta para outra pessoa, sem consultar nada.</p>
+<ul class="check" id="check">
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Nomeio os três movimentos da introdução e a pergunta que cada um responde</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Sei que o modelo em três movimentos é método, não critério oficial</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Relaciono cada movimento à competência em jogo</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Contextualizo um tema por repertório, histórico, dado e conceito</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aponto o risco típico de cada tipo de contextualização</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo a frase-ponte entre a referência e o recorte</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Aplico o teste da retirada a um repertório</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Diferencio tese, declaração de importância e repetição do tema</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Escrevo uma tese clara, contestável e completa</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Antecipo dois eixos de três formas diferentes</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Explico por que eixos anunciados e não cumpridos afetam a C3</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Reconheço as armadilhas de abertura (frase universal, bolso, dado sem fonte)</span></label></li>
+  <li><label><input type="checkbox"><span class="bub"></span><span class="txt">Monto uma introdução completa em até dez minutos de rascunho</span></label></li>
+</ul>
+<p id="checkout" style="font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--ink-3)"></p>
+<div class="box tip">
+  <span class="tag">Antes de marcar “Dominado” no cronograma</span>
+  <p>Escolha três temas de anos anteriores. Para cada um, escreva duas introduções: uma com contextualização histórica ou legal e outra com dado ou conceito — sempre com ponte, tese e dois eixos. Depois, aplique o teste da retirada ao repertório e confira se a tese cobre todos os blocos da frase temática.</p>
+  <p style="margin-top:10px">O próximo assunto, <strong>Desenvolvimento: tópico frasal, argumento, repertório, análise e fechamento</strong>, mostra como cumprir cada eixo anunciado.</p>
+</div>
+</section>
+
+<footer class="foot">
+  <div class="card">
+    <h4>Flashcards para o Anki</h4>
+    <p>Foram gerados <strong>46 cartões</strong> deste assunto no arquivo <code>ENEM-Redacao-02-introducao.txt</code>.</p>
+    <p style="margin-bottom:0">Para importar: abra o Anki → <em>Arquivo</em> → <em>Importar</em> → selecione o arquivo. O deck <code>ENEM::Redação::Estrutura e Técnica</code> é o mesmo dos assuntos anteriores do bloco, então os cartões se somam a ele.</p>
+  </div>
+</footer>
+
+  </article>
+</div>
+
+<script>window.ESTUDO_KEY = "enem-red-02";</script>
+<script>
+// sumário gerado a partir das seções
+const secs = [...document.querySelectorAll("article section")];
+const ol = document.getElementById("toclist");
+secs.forEach(s=>{
+  const h = s.querySelector("h2");
+  const num = h.querySelector("i").textContent;
+  const titulo = h.textContent.replace(num,"").trim();
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = "#" + s.id;
+  a.innerHTML = '<span>' + num + '</span>' + titulo;
+  li.appendChild(a); ol.appendChild(li);
+});
+const links = [...ol.querySelectorAll("a")];
+
+// destaca a seção em leitura
+const obs = new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const i = secs.indexOf(e.target);
+      links.forEach((l,k)=>l.classList.toggle("on", k===i));
+    }
+  });
+},{rootMargin:"-15% 0px -70% 0px"});
+secs.forEach(s=>obs.observe(s));
+
+// barra de progresso de leitura
+const bar = document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  bar.style.width = Math.min(100, p*100) + "%";
+},{passive:true});
+
+// checklist persistente — a chave vem de cada página
+const KEY = window.ESTUDO_KEY || "enem-estudo";
+const boxes = [...document.querySelectorAll("#check input")];
+const out = document.getElementById("checkout");
+let saved = [];
+try{ saved = JSON.parse(localStorage.getItem(KEY) || "[]"); }catch(e){}
+boxes.forEach((b,i)=>{
+  b.checked = saved.includes(i);
+  b.addEventListener("change",()=>{
+    const on = boxes.map((x,k)=>x.checked?k:-1).filter(k=>k>=0);
+    try{ localStorage.setItem(KEY, JSON.stringify(on)); }catch(e){}
+    conta();
+  });
+});
+function conta(){
+  const n = boxes.filter(b=>b.checked).length;
+  out.textContent = n + " de " + boxes.length + " itens dominados"
+    + (n===boxes.length ? " · pode marcar Dominado na planilha" : "");
+}
+conta();
+</script>
+

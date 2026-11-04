@@ -1,4 +1,4 @@
-# Registro de vídeos criados — atualizado em 23/10/2026
+# Registro de vídeos criados — atualizado em 29/10/2026
 
 Gerado por `_ferramentas/registrar_videos.py` a partir das pastas de cada projeto (pode rodar de novo a qualquer momento).
 Planilha com os mesmos dados: `registro_videos.csv` (separador `;`, abre no Excel).
@@ -18,11 +18,11 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 
 | Canal | Vídeos | Shorts | Duração total |
 |---|---|---|---|
-| ENEM (Estudativo) | 39 | 9 | 6 h 35 min |
-| Seguridade Social / INSS (Estudativo) | 17 | 0 | 1 h 48 min |
-| Tecnologia | 11 | 3 | 0 h 56 min |
+| ENEM (Estudativo) | 73 | 9 | 10 h 50 min |
+| Seguridade Social / INSS (Estudativo) | 18 | 0 | 1 h 48 min |
+| Tecnologia | 15 | 3 | 1 h 08 min |
 | Trading | 2 | 0 | 0 h 17 min |
-| **Total** | **69** | **12** | **9 h 37 min** |
+| **Total** | **108** | **12** | **14 h 04 min** |
 
 ## ENEM (Estudativo)
 
@@ -63,21 +63,55 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 33 | `canais/enem/013_enem_linguagens_compreensao/ep5_pistas` | O Texto Avisa Onde Está a Tese: as Placas · Linguagens ENEM Ep. 5 | 9:33 | 2026-10-14 | `enem_linguagens_compreensao_ep5_pistas.mp4` |
 | 34 | `canais/enem/013_enem_linguagens_compreensao/ep6_tese_implicita` | Sem Dizer "Eu Defendo", o Texto Tem Tese · Linguagens ENEM Ep. 6 | 8:19 | 2026-10-15 | `enem_linguagens_compreensao_ep6_tese_implicita.mp4` |
 | 35 | `canais/enem/013_enem_linguagens_compreensao/ep7_estrategia_revisao` | As 5 Pegadinhas da Tese no ENEM + 5 Questões Inéditas · Ep. 7 | 12:18 | 2026-10-17 | `enem_linguagens_compreensao_ep7_estrategia_revisao.mp4` |
-| 36 | `canais/enem/014_enem_redacao_leitura_proposta/ep1_o_que_a_prova_pede` | A Redação Começa Antes da 1ª Linha: o Que a Prova Pede · Redação Ep. 1 | 11:03 | 2026-10-19 | `enem_redacao_leitura_proposta_ep1_o_que_a_prova_pede.mp4` |
-| 37 | `canais/enem/014_enem_redacao_leitura_proposta/ep2_frase_tematica_blocos` | Como Desmontar a Frase Temática da Redação do ENEM · Redação Ep. 2 | 11:58 | 2026-10-19 | `enem_redacao_leitura_proposta_ep2_frase_tematica_blocos.mp4` |
-| 38 | `canais/enem/014_enem_redacao_leitura_proposta/ep3_textos_motivadores` | Linha Copiada Vira Linha Fantasma: Textos Motivadores · Redação Ep. 3 | 11:02 | 2026-10-20 | `enem_redacao_leitura_proposta_ep3_textos_motivadores.mp4` |
-| 39 | `canais/enem/014_enem_redacao_leitura_proposta/ep4_tangenciamento_fuga` | Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) · Ep. 4 | 10:20 | 2026-10-20 | `enem_redacao_leitura_proposta_ep4_tangenciamento_fuga.mp4` |
-| 40 | `canais/enem/014_enem_redacao_leitura_proposta/ep5_oficina_seis_passos` | Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos · Redação Ep. 5 | 12:07 | 2026-10-20 | `enem_redacao_leitura_proposta_ep5_oficina_seis_passos.mp4` |
-| 41 | `canais/enem/014_enem_redacao_leitura_proposta/ep6_revisao_desafio` | Você Cai Nessas 10 Pegadinhas da Redação do ENEM? · Revisão Ep. 6 | 12:05 | 2026-10-21 | `enem_redacao_leitura_proposta_ep6_revisao_desafio.mp4` |
-| 42 | `canais/enem/015_enem_matematica_divisibilidade/ep1_multiplos_divisores` | 6 813 é Divisível por 9? Descubra em 2 Segundos · Matemática Ep. 1 | 10:43 | 2026-10-21 | `enem_matematica_divisibilidade_ep1_multiplos_divisores.mp4` |
-| 43 | `canais/enem/015_enem_matematica_divisibilidade/ep2_primos` | O 1 é Primo? E o 2? Números Primos do Zero · Matemática Ep. 2 | 7:45 | 2026-10-21 | `enem_matematica_divisibilidade_ep2_primos.mp4` |
-| 44 | `canais/enem/015_enem_matematica_divisibilidade/ep3_fatoracao_divisores` | O 360 Tem 24 Divisores: Descubra em 15 Segundos · Matemática Ep. 3 | 8:11 | 2026-10-21 | `enem_matematica_divisibilidade_ep3_fatoracao_divisores.mp4` |
-| 45 | `canais/enem/015_enem_matematica_divisibilidade/ep4_mmc` | Quando os Ônibus Voltam a Sair Juntos? MMC do Zero · Matemática Ep. 4 | 11:00 | 2026-10-21 | `enem_matematica_divisibilidade_ep4_mmc.mp4` |
-| 46 | `canais/enem/015_enem_matematica_divisibilidade/ep5_mdc` | Achou o MDC e Errou a Questão? O Passo Que Falta · Matemática Ep. 5 | 11:41 | 2026-10-21 | `enem_matematica_divisibilidade_ep5_mdc.mp4` |
-| 47 | `canais/enem/015_enem_matematica_divisibilidade/ep6_mmc_ou_mdc` | MMC ou MDC? Repete ou Reparte, a Decisão em 10 s · Matemática Ep. 6 | 12:07 | 2026-10-21 | `enem_matematica_divisibilidade_ep6_mmc_ou_mdc.mp4` |
-| 48 | `canais/enem/015_enem_matematica_divisibilidade/ep7_revisao` | Você Cai Nessas 9 Pegadinhas de MMC e MDC? · Matemática Ep. 7 | 11:04 | 2026-10-21 | `enem_matematica_divisibilidade_ep7_revisao.mp4` |
-| 49 | `canais/enem/016_enem_matematica_po_shen_loh/ep1_metodo_po_shen_loh` | Equação do 2º Grau SEM Bhaskara em 3 Passos · Matemática ENEM | 11:17 | 2026-10-22 | `enem_matematica_po_shen_loh_ep1_metodo.mp4` |
-| 50 | `canais/enem/017_enem_matematica_soma_produto/ep1_soma_e_produto` | Equação do 2º Grau em Segundos, SEM Bhaskara · Matemática ENEM | 9:57 | 2026-10-22 | `enem_matematica_soma_produto_ep1.mp4` |
+| 36 | `canais/enem/014_enem_redacao_leitura_proposta/divulgacao_horizontal` | Dá pra tirar ZERO na redação do ENEM com um texto perfeito: a série Leitura da Proposta | 1:01 | 2026-10-26 | `redacao_leitura_proposta_divulgacao_horizontal.mp4` |
+| 37 | `canais/enem/014_enem_redacao_leitura_proposta/divulgacao_short` | Dá pra tirar ZERO na redação do ENEM com um texto perfeito | 0:33 | 2026-10-26 | `redacao_leitura_proposta_divulgacao_short.mp4` |
+| 38 | `canais/enem/014_enem_redacao_leitura_proposta/ep1_o_que_a_prova_pede` | A Redação Começa Antes da 1ª Linha: o Que a Prova Pede · Redação Ep. 1 | 11:03 | 2026-10-19 | `enem_redacao_leitura_proposta_ep1_o_que_a_prova_pede.mp4` |
+| 39 | `canais/enem/014_enem_redacao_leitura_proposta/ep2_frase_tematica_blocos` | Como Desmontar a Frase Temática da Redação do ENEM · Redação Ep. 2 | 11:58 | 2026-10-19 | `enem_redacao_leitura_proposta_ep2_frase_tematica_blocos.mp4` |
+| 40 | `canais/enem/014_enem_redacao_leitura_proposta/ep3_textos_motivadores` | Linha Copiada Vira Linha Fantasma: Textos Motivadores · Redação Ep. 3 | 11:02 | 2026-10-20 | `enem_redacao_leitura_proposta_ep3_textos_motivadores.mp4` |
+| 41 | `canais/enem/014_enem_redacao_leitura_proposta/ep4_tangenciamento_fuga` | Tangenciar o Tema Custa Até 480 Pontos (e Quase Ninguém Percebe) · Ep. 4 | 10:20 | 2026-10-20 | `enem_redacao_leitura_proposta_ep4_tangenciamento_fuga.mp4` |
+| 42 | `canais/enem/014_enem_redacao_leitura_proposta/ep5_oficina_seis_passos` | Sua Tese Esqueceu um Bloco? Do Tema à Tese em 6 Passos · Redação Ep. 5 | 12:07 | 2026-10-20 | `enem_redacao_leitura_proposta_ep5_oficina_seis_passos.mp4` |
+| 43 | `canais/enem/014_enem_redacao_leitura_proposta/ep6_revisao_desafio` | Você Cai Nessas 10 Pegadinhas da Redação do ENEM? · Proposta de Redação Ep. 6 | 12:25 | 2026-10-26 | `enem_redacao_leitura_proposta_ep6_revisao_desafio.mp4` |
+| 44 | `canais/enem/015_enem_matematica_divisibilidade/ep1_multiplos_divisores` | 6 813 é Divisível por 9? Descubra em 2 Segundos · Matemática Ep. 1 | 10:43 | 2026-10-21 | `enem_matematica_divisibilidade_ep1_multiplos_divisores.mp4` |
+| 45 | `canais/enem/015_enem_matematica_divisibilidade/ep2_primos` | O 1 é Primo? E o 2? Números Primos do Zero · Matemática Ep. 2 | 7:45 | 2026-10-21 | `enem_matematica_divisibilidade_ep2_primos.mp4` |
+| 46 | `canais/enem/015_enem_matematica_divisibilidade/ep3_fatoracao_divisores` | O 360 Tem 24 Divisores: Descubra em 15 Segundos · Matemática Ep. 3 | 8:11 | 2026-10-21 | `enem_matematica_divisibilidade_ep3_fatoracao_divisores.mp4` |
+| 47 | `canais/enem/015_enem_matematica_divisibilidade/ep4_mmc` | Quando os Ônibus Voltam a Sair Juntos? MMC do Zero · Matemática Ep. 4 | 11:00 | 2026-10-21 | `enem_matematica_divisibilidade_ep4_mmc.mp4` |
+| 48 | `canais/enem/015_enem_matematica_divisibilidade/ep5_mdc` | Achou o MDC e Errou a Questão? O Passo Que Falta · Matemática Ep. 5 | 11:41 | 2026-10-21 | `enem_matematica_divisibilidade_ep5_mdc.mp4` |
+| 49 | `canais/enem/015_enem_matematica_divisibilidade/ep6_mmc_ou_mdc` | MMC ou MDC? Repete ou Reparte, a Decisão em 10 s · Matemática Ep. 6 | 12:07 | 2026-10-21 | `enem_matematica_divisibilidade_ep6_mmc_ou_mdc.mp4` |
+| 50 | `canais/enem/015_enem_matematica_divisibilidade/ep7_revisao` | Você Cai Nessas 9 Pegadinhas de MMC e MDC? · Matemática Ep. 7 | 11:04 | 2026-10-21 | `enem_matematica_divisibilidade_ep7_revisao.mp4` |
+| 51 | `canais/enem/016_enem_matematica_po_shen_loh/ep1_metodo_po_shen_loh` | Equação do 2º Grau SEM Bhaskara em 3 Passos · Matemática ENEM | 11:17 | 2026-10-22 | `enem_matematica_po_shen_loh_ep1_metodo.mp4` |
+| 52 | `canais/enem/017_enem_matematica_soma_produto/ep1_soma_e_produto` | Equação do 2º Grau em Segundos, SEM Bhaskara · Matemática ENEM | 9:57 | 2026-10-22 | `enem_matematica_soma_produto_ep1.mp4` |
+| 53 | `canais/enem/018_enem_matematica_fracoes/ep1_o_que_e_fracao` | O que é uma fração de verdade: os 4 significados e como simplificar · Frações Ep. 1 | 9:17 | 2026-10-24 | `enem_matematica_fracoes_ep1_o_que_e_fracao.mp4` |
+| 54 | `canais/enem/018_enem_matematica_fracoes/ep2_mistos_comparar` | 3/7 ou 3/5: qual é maior? Números mistos e comparação de frações · Frações Ep. 2 | 10:54 | 2026-10-24 | `enem_matematica_fracoes_ep2_mistos_comparar.mp4` |
+| 55 | `canais/enem/018_enem_matematica_fracoes/ep3_operacoes` | 1/2 + 1/3 dá 2/5? As quatro operações com frações sem calculadora · Frações Ep. 3 | 11:12 | 2026-10-24 | `enem_matematica_fracoes_ep3_operacoes.mp4` |
+| 56 | `canais/enem/018_enem_matematica_fracoes/ep4_do_restante` | A armadilha do \ | 7:33 | 2026-10-24 | `enem_matematica_fracoes_ep4_do_restante.mp4` |
+| 57 | `canais/enem/018_enem_matematica_fracoes/ep5_decimais` | Dividi 4,8 por 0,12 e deu 40: decimais sem calculadora · Frações Ep. 5 | 8:40 | 2026-10-24 | `enem_matematica_fracoes_ep5_decimais.mp4` |
+| 58 | `canais/enem/018_enem_matematica_fracoes/ep6_dizimas_geratriz` | Decimal exato ou dízima? E como achar a fração geratriz · Frações Ep. 6 | 12:06 | 2026-10-24 | `enem_matematica_fracoes_ep6_dizimas_geratriz.mp4` |
+| 59 | `canais/enem/018_enem_matematica_fracoes/ep7_tabela_ouro` | A tabela que vale ouro: fração, decimal e porcentagem de cabeça · Frações Ep. 7 | 8:57 | 2026-10-24 | `enem_matematica_fracoes_ep7_tabela_ouro.mp4` |
+| 60 | `canais/enem/018_enem_matematica_fracoes/ep8_revisao` | 9 pegadinhas e 5 questões estilo ENEM: revisão geral · Frações Ep. 8 | 10:59 | 2026-10-26 | `enem_matematica_fracoes_ep8_revisao.mp4` |
+| 61 | `canais/enem/052_enem_redacao_introducao/divulgacao_horizontal` | Sua redação começa com \ | 1:04 | 2026-10-27 | `redacao_introducao_divulgacao_horizontal.mp4` |
+| 62 | `canais/enem/052_enem_redacao_introducao/divulgacao_short` | Sua redação começa com \ | 0:34 | 2026-10-27 | `redacao_introducao_divulgacao_short.mp4` |
+| 63 | `canais/enem/052_enem_redacao_introducao/ep1_tres_movimentos` | As 3 Perguntas que o 1º Parágrafo da Redação Precisa Responder · Introdução da Redação Ep. 1 | 9:18 | 2026-10-27 | `enem_redacao_introducao_ep1_tres_movimentos.mp4` |
+| 64 | `canais/enem/052_enem_redacao_introducao/ep2_quatro_caminhos` | Desde os Primórdios? 4 Jeitos Melhores de Começar a Redação · Introdução da Redação Ep. 2 | 9:56 | 2026-10-27 | `enem_redacao_introducao_ep2_quatro_caminhos.mp4` |
+| 65 | `canais/enem/052_enem_redacao_introducao/ep3_ponte_teste_retirada` | Sua Citação de Filósofo Pode Ser Apagada? O Teste da Retirada · Introdução da Redação Ep. 3 | 9:36 | 2026-10-26 | `enem_redacao_introducao_ep3_ponte_teste_retirada.mp4` |
+| 66 | `canais/enem/052_enem_redacao_introducao/ep4_tese_antecipacao` | Opinião Não É Tese: Como Escrever a Tese da Redação do ENEM · Introdução da Redação Ep. 4 | 10:07 | 2026-10-27 | `enem_redacao_introducao_ep4_tese_antecipacao.mp4` |
+| 67 | `canais/enem/052_enem_redacao_introducao/ep5_fracas_boas_armadilhas` | Aristóteles na Introdução? 3 Versões, Só 1 Funciona · Introdução da Redação Ep. 5 | 9:39 | 2026-10-27 | `enem_redacao_introducao_ep5_fracas_boas_armadilhas.mp4` |
+| 68 | `canais/enem/052_enem_redacao_introducao/ep6_oficina_seis_passos` | Escreva uma Introdução do ENEM Comigo, do Zero, em 6 Passos · Introdução da Redação Ep. 6 | 9:52 | 2026-10-27 | `enem_redacao_introducao_ep6_oficina_seis_passos.mp4` |
+| 69 | `canais/enem/052_enem_redacao_introducao/ep7_revisao_desafio` | 10 Pegadinhas do 1º Parágrafo da Redação: Você Cai? · Introdução da Redação Ep. 7 | 13:21 | 2026-10-26 | `enem_redacao_introducao_ep7_revisao_desafio.mp4` |
+| 70 | `canais/enem/053_enem_redacao_desenvolvimento/ep1_anatomia_paragrafo` | Seu Parágrafo Prova a Tese ou Só Repete? As 5 Partes do Desenvolvimento · Desenvolvimento da Redação Ep. 1 | 10:38 | 2026-10-27 | `enem_redacao_desenvolvimento_ep1_anatomia_paragrafo.mp4` |
+| 71 | `canais/enem/053_enem_redacao_desenvolvimento/ep2_topico_frasal` | O Tópico Frasal: a 1ª Frase Que Diz o Que o Parágrafo Vai Provar · Desenvolvimento da Redação Ep. 2 | 10:00 | 2026-10-28 | `enem_redacao_desenvolvimento_ep2_topico_frasal.mp4` |
+| 72 | `canais/enem/053_enem_redacao_desenvolvimento/ep3_argumento_repertorio` | Sua Redação Só Tem Opinião? Argumento e Repertório que Convencem · Desenvolvimento da Redação Ep. 3 | 12:20 | 2026-10-28 | `enem_redacao_desenvolvimento_ep3_argumento_repertorio.mp4` |
+| 73 | `canais/enem/053_enem_redacao_desenvolvimento/ep4_analise_fechamento` | Citar Não É Argumentar: a Análise e o Fechamento do Parágrafo · Desenvolvimento da Redação Ep. 4 | 11:24 | 2026-10-28 | `enem_redacao_desenvolvimento_ep4_analise_fechamento.mp4` |
+| 74 | `canais/enem/053_enem_redacao_desenvolvimento/ep5_paragrafo_modelo` | O Mesmo Parágrafo do Fraco ao Bom: o Parágrafo-Modelo Comentado · Desenvolvimento da Redação Ep. 5 | 12:10 | 2026-10-27 | `enem_redacao_desenvolvimento_ep5_paragrafo_modelo.mp4` |
+| 75 | `canais/enem/053_enem_redacao_desenvolvimento/ep6_oficina_cinco_linhas` | Planeje em 5 Linhas e Escreva Comigo o 2º Parágrafo · Desenvolvimento da Redação Ep. 6 | 10:22 | 2026-10-28 | `enem_redacao_desenvolvimento_ep6_oficina_cinco_linhas.mp4` |
+| 76 | `canais/enem/053_enem_redacao_desenvolvimento/ep7_revisao_desafio` | 10 Pegadinhas do Parágrafo de Desenvolvimento: Você Cai? · Desenvolvimento da Redação Ep. 7 | 12:24 | 2026-10-28 | `enem_redacao_desenvolvimento_ep7_revisao_desafio.mp4` |
+| 77 | `canais/enem/questoes/001_matematica_triangulo_cateto_5` | Só um lado do triângulo vale 5. Quanto valem os outros? (Pitágoras + produto notável) | 7:36 | 2026-10-25 | `estudativo_questao_001_matematica_triangulo_cateto_5.mp4` |
+| 78 | `canais/enem/questoes/001_matematica_triangulo_cateto_5` | Só um lado do triângulo vale 5. Quanto valem os outros? (Pitágoras + produto notável) | 5:11 | 2026-10-25 | `estudativo_questao_001_matematica_triangulo_cateto_5_en.mp4` |
+| 79 | `canais/enem/questoes/002_matematica_short_quantos_quadrados` | — | 1:15 | 2026-10-28 | `estudativo_short_002_quantos_quadrados.mp4` |
+| 80 | `canais/enem/questoes/002_matematica_short_quantos_quadrados` | — | 1:09 | 2026-10-28 | `estudativo_short_002_quantos_quadrados_sem_audio.mp4` |
+| 81 | `canais/enem/questoes/003_matematica_short_quantos_triangulos` | — | 1:03 | 2026-10-28 | `estudativo_short_003_quantos_triangulos.mp4` |
+| 82 | `canais/enem/questoes/003_matematica_short_quantos_triangulos` | — | 1:09 | 2026-10-28 | `estudativo_short_003_quantos_triangulos_sem_audio.mp4` |
+| 83 | `canais/enem/questoes/004_matematica_short_quantos_retangulos` | — | 1:13 | 2026-10-29 | `estudativo_short_004_quantos_retangulos.mp4` |
+| 84 | `canais/enem/questoes/004_matematica_short_quantos_retangulos` | — | 1:09 | 2026-10-28 | `estudativo_short_004_quantos_retangulos_sem_audio.mp4` |
 
 ## Seguridade Social / INSS (Estudativo)
 
@@ -100,6 +134,7 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 15 | `canais/seguridade_social/015_dependentes` | Quem Recebe a Pensão por Morte? Dependentes do INSS · Aula 15 | 6:30 | 2026-10-22 | `seguridade_015_dependentes.mp4` |
 | 16 | `canais/seguridade_social/016_filiacao_inscricao` | Nunca Pagou o INSS e Está Filiado? Filiação × Inscrição · Aula 16 | 7:25 | 2026-10-22 | `seguridade_016_filiacao_inscricao.mp4` |
 | 17 | `canais/seguridade_social/017_qualidade_periodo_de_graca` | Período de Graça: 12, 24 ou 36 Meses? Qualidade de Segurado · Aula 17 | 6:43 | 2026-10-22 | `seguridade_017_qualidade_periodo_de_graca.mp4` |
+| 18 | `canais/seguridade_social/shorts_promo/modulo1_fundamentos` | Vai estudar Seguridade Social para concurso? Comece por aqui #shorts | 0:25 | 2026-10-24 | `seguridade_short_modulo1_fundamentos.mp4` |
 
 ## Tecnologia
 
@@ -119,6 +154,10 @@ Cada projeto guarda: `roteiro/` (cenas.py = roteiro, visual.py = animações), `
 | 12 | `canais/tecnologia/009_tse_congestionamento_divulgacao` | O Que Aconteceu com o Sistema do TSE na Divulgação dos Votos? | 3:18 | 2026-10-22 | `tecnologia_009_tse_congestionamento_divulgacao.mp4` |
 | 13 | `canais/tecnologia/010_claude_duet` | Claude Duet: a IA da Anthropic que Trabalha Antes de Você Pedir | 5:38 | 2026-10-23 | `tecnologia_010_claude_duet.mp4` |
 | 14 | `canais/tecnologia/011_firetrace_opus` | Um Painel de Incêndios Feito com IA? O FireTrace do Claude Opus 5.5 | 5:52 | 2026-10-23 | `tecnologia_011_firetrace_opus.mp4` |
+| 15 | `canais/tecnologia/011_firetrace_opus` | Um Painel de Incêndios Feito com IA? O FireTrace do Claude Opus 5.5 | 5:58 | 2026-10-23 | `tecnologia_011_firetrace_opus_en.mp4` |
+| 16 | `canais/tecnologia/012_short_tv_sem_anuncios` | Ele deixou uma IA invadir a TV pra acabar com os anúncios 📺 #shorts | 0:44 | 2026-10-23 | `tecnologia_012_short_tv_sem_anuncios.mp4` |
+| 17 | `canais/tecnologia/012_short_tv_sem_anuncios` | Ele deixou uma IA invadir a TV pra acabar com os anúncios 📺 #shorts | 0:42 | 2026-10-23 | `tecnologia_012_short_tv_sem_anuncios_en.mp4` |
+| 18 | `canais/tecnologia/013_top10_github_ep01` | Os 10 Projetos que Mais Cresceram no GitHub em Outubro de 2026 | 5:31 | 2026-10-28 | `tecnologia_013_top10_github_ep01.mp4` |
 
 ## Trading
 

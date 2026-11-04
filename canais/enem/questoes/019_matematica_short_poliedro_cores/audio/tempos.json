@@ -1,0 +1,1056 @@
+{
+ "total": 64.08,
+ "scenes": [
+  {
+   "id": "01",
+   "block": "gancho",
+   "start": 0.05,
+   "dur": 9.27,
+   "tokens": [
+    {
+     "disp": "Questão",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.64
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 0.64,
+     "t1": 0.78
+    },
+    {
+     "disp": "ENEM",
+     "bold": false,
+     "t0": 0.78,
+     "t1": 0.92
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 1.109,
+     "t1": 1.309
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 1.297,
+     "t1": 1.497
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.486,
+     "t1": 1.686
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 1.674,
+     "t1": 1.874
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.863,
+     "t1": 2.063
+    },
+    {
+     "disp": "cinco.",
+     "bold": false,
+     "t0": 2.051,
+     "t1": 2.251
+    },
+    {
+     "disp": "Um",
+     "bold": false,
+     "t0": 2.24,
+     "t1": 2.4
+    },
+    {
+     "disp": "prisma",
+     "bold": false,
+     "t0": 2.4,
+     "t1": 2.66
+    },
+    {
+     "disp": "hexagonal",
+     "bold": false,
+     "t0": 2.66,
+     "t1": 3.34
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 3.34,
+     "t1": 3.52
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 3.52,
+     "t1": 3.78
+    },
+    {
+     "disp": "tronco",
+     "bold": false,
+     "t0": 3.78,
+     "t1": 4.0
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.0,
+     "t1": 4.14
+    },
+    {
+     "disp": "pirâmide",
+     "bold": false,
+     "t0": 4.14,
+     "t1": 4.56
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 4.56,
+     "t1": 4.7
+    },
+    {
+     "disp": "cima.",
+     "bold": false,
+     "t0": 4.7,
+     "t1": 5.0
+    },
+    {
+     "disp": "Faces",
+     "bold": false,
+     "t0": 5.3,
+     "t1": 5.68
+    },
+    {
+     "disp": "congruentes",
+     "bold": true,
+     "t0": 5.68,
+     "t1": 6.28
+    },
+    {
+     "disp": "ganham",
+     "bold": false,
+     "t0": 6.28,
+     "t1": 6.58
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.58,
+     "t1": 6.7
+    },
+    {
+     "disp": "mesma",
+     "bold": true,
+     "t0": 6.7,
+     "t1": 6.98
+    },
+    {
+     "disp": "cor.",
+     "bold": true,
+     "t0": 6.98,
+     "t1": 7.3
+    },
+    {
+     "disp": "Quantas",
+     "bold": false,
+     "t0": 7.7,
+     "t1": 8.08
+    },
+    {
+     "disp": "cores",
+     "bold": false,
+     "t0": 8.08,
+     "t1": 8.34
+    },
+    {
+     "disp": "vão",
+     "bold": false,
+     "t0": 8.34,
+     "t1": 8.56
+    },
+    {
+     "disp": "ser",
+     "bold": false,
+     "t0": 8.56,
+     "t1": 8.68
+    },
+    {
+     "disp": "usadas?",
+     "bold": false,
+     "t0": 8.68,
+     "t1": 9.04
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 5.3,
+    "c": 7.7
+   }
+  },
+  {
+   "id": "02",
+   "block": "opcoes",
+   "start": 9.32,
+   "dur": 10.64,
+   "tokens": [
+    {
+     "disp": "As",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.47
+    },
+    {
+     "disp": "opções:",
+     "bold": false,
+     "t0": 0.47,
+     "t1": 0.73
+    },
+    {
+     "disp": "nove,",
+     "bold": false,
+     "t0": 1.29,
+     "t1": 1.47
+    },
+    {
+     "disp": "oito,",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.13
+    },
+    {
+     "disp": "seis,",
+     "bold": false,
+     "t0": 2.51,
+     "t1": 2.83
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 3.23,
+     "t1": 3.61
+    },
+    {
+     "disp": "ou",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 4.07
+    },
+    {
+     "disp": "três.",
+     "bold": false,
+     "t0": 4.07,
+     "t1": 4.35
+    },
+    {
+     "disp": "Comenta",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 5.15
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 5.15,
+     "t1": 5.47
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.47,
+     "t1": 5.61
+    },
+    {
+     "disp": "ver!",
+     "bold": false,
+     "t0": 5.61,
+     "t1": 5.81
+    },
+    {
+     "disp": "Pausa",
+     "bold": false,
+     "t0": 6.27,
+     "t1": 6.43
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 6.65
+    },
+    {
+     "disp": "pensa.",
+     "bold": false,
+     "t0": 6.65,
+     "t1": 6.87
+    },
+    {
+     "disp": "Valendo!",
+     "bold": false,
+     "t0": 7.23,
+     "t1": 7.69
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.69,
+    "c": 6.27
+   }
+  },
+  {
+   "id": "03",
+   "block": "pegadinha",
+   "start": 19.96,
+   "dur": 13.04,
+   "tokens": [
+    {
+     "disp": "Se",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.63
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 0.63,
+     "t1": 0.81
+    },
+    {
+     "disp": "pintou",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 1.17
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 1.17,
+     "t1": 1.31
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 1.31,
+     "t1": 1.49
+    },
+    {
+     "disp": "hexágonos",
+     "bold": false,
+     "t0": 1.49,
+     "t1": 2.05
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.19
+    },
+    {
+     "disp": "mesma",
+     "bold": false,
+     "t0": 2.19,
+     "t1": 2.41
+    },
+    {
+     "disp": "cor,",
+     "bold": false,
+     "t0": 2.41,
+     "t1": 2.75
+    },
+    {
+     "disp": "deu",
+     "bold": false,
+     "t0": 2.97,
+     "t1": 3.15
+    },
+    {
+     "disp": "três:",
+     "bold": false,
+     "t0": 3.15,
+     "t1": 3.47
+    },
+    {
+     "disp": "letra",
+     "bold": false,
+     "t0": 3.71,
+     "t1": 4.03
+    },
+    {
+     "disp": "E.",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.21
+    },
+    {
+     "disp": "Pegadinha!",
+     "bold": true,
+     "t0": 5.63,
+     "t1": 6.23
+    },
+    {
+     "disp": "Congruente",
+     "bold": false,
+     "t0": 6.23,
+     "t1": 6.83
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 6.95,
+     "t1": 6.99
+    },
+    {
+     "disp": "mesma",
+     "bold": false,
+     "t0": 6.99,
+     "t1": 7.31
+    },
+    {
+     "disp": "forma",
+     "bold": false,
+     "t0": 7.31,
+     "t1": 7.75
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 7.75,
+     "t1": 7.89
+    },
+    {
+     "disp": "mesmo",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.19
+    },
+    {
+     "disp": "tamanho.",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.49
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 8.99,
+     "t1": 9.15
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.25
+    },
+    {
+     "disp": "cima",
+     "bold": false,
+     "t0": 9.25,
+     "t1": 9.45
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 9.59
+    },
+    {
+     "disp": "menor:",
+     "bold": true,
+     "t0": 9.59,
+     "t1": 9.81
+    },
+    {
+     "disp": "mesma",
+     "bold": false,
+     "t0": 10.19,
+     "t1": 10.39
+    },
+    {
+     "disp": "forma,",
+     "bold": false,
+     "t0": 10.39,
+     "t1": 10.75
+    },
+    {
+     "disp": "tamanho",
+     "bold": false,
+     "t0": 10.97,
+     "t1": 11.25
+    },
+    {
+     "disp": "diferente.",
+     "bold": false,
+     "t0": 11.25,
+     "t1": 11.51
+    },
+    {
+     "disp": "Não",
+     "bold": false,
+     "t0": 11.51,
+     "t1": 12.27
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 12.27,
+     "t1": 12.43
+    },
+    {
+     "disp": "congruente.",
+     "bold": false,
+     "t0": 12.43,
+     "t1": 12.93
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 5.63
+   }
+  },
+  {
+   "id": "04",
+   "block": "faces",
+   "start": 33.0,
+   "dur": 12.32,
+   "tokens": [
+    {
+     "disp": "Primeiro:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 1.03,
+     "t1": 1.15
+    },
+    {
+     "disp": "bases",
+     "bold": false,
+     "t0": 1.15,
+     "t1": 1.39
+    },
+    {
+     "disp": "coladas",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.85
+    },
+    {
+     "disp": "ficam",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 2.17
+    },
+    {
+     "disp": "dentro,",
+     "bold": true,
+     "t0": 2.17,
+     "t1": 2.49
+    },
+    {
+     "disp": "sem",
+     "bold": false,
+     "t0": 2.69,
+     "t1": 2.83
+    },
+    {
+     "disp": "tinta.",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 3.17
+    },
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 3.41,
+     "t1": 3.63
+    },
+    {
+     "disp": "fora,",
+     "bold": false,
+     "t0": 3.63,
+     "t1": 3.95
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 4.21,
+     "t1": 4.27
+    },
+    {
+     "disp": "seis",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.47
+    },
+    {
+     "disp": "retângulos:",
+     "bold": false,
+     "t0": 4.47,
+     "t1": 5.03
+    },
+    {
+     "disp": "uma",
+     "bold": true,
+     "t0": 5.25,
+     "t1": 5.43
+    },
+    {
+     "disp": "cor.",
+     "bold": true,
+     "t0": 5.55,
+     "t1": 5.67
+    },
+    {
+     "disp": "Os",
+     "bold": false,
+     "t0": 6.03,
+     "t1": 6.21
+    },
+    {
+     "disp": "seis",
+     "bold": false,
+     "t0": 6.21,
+     "t1": 6.35
+    },
+    {
+     "disp": "trapézios:",
+     "bold": false,
+     "t0": 6.35,
+     "t1": 6.99
+    },
+    {
+     "disp": "outra",
+     "bold": true,
+     "t0": 7.27,
+     "t1": 7.47
+    },
+    {
+     "disp": "cor.",
+     "bold": true,
+     "t0": 7.61,
+     "t1": 7.75
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 8.15,
+     "t1": 8.25
+    },
+    {
+     "disp": "hexágono",
+     "bold": false,
+     "t0": 8.25,
+     "t1": 8.63
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.63,
+     "t1": 8.79
+    },
+    {
+     "disp": "baixo:",
+     "bold": false,
+     "t0": 8.79,
+     "t1": 9.03
+    },
+    {
+     "disp": "a",
+     "bold": true,
+     "t0": 9.17,
+     "t1": 9.19
+    },
+    {
+     "disp": "terceira.",
+     "bold": true,
+     "t0": 9.19,
+     "t1": 9.67
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 9.91,
+     "t1": 10.09
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 10.09,
+     "t1": 10.15
+    },
+    {
+     "disp": "hexágono",
+     "bold": false,
+     "t0": 10.15,
+     "t1": 10.53
+    },
+    {
+     "disp": "menor,",
+     "bold": false,
+     "t0": 10.53,
+     "t1": 10.87
+    },
+    {
+     "disp": "lá",
+     "bold": false,
+     "t0": 11.03,
+     "t1": 11.19
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 11.19,
+     "t1": 11.31
+    },
+    {
+     "disp": "cima:",
+     "bold": false,
+     "t0": 11.31,
+     "t1": 11.61
+    },
+    {
+     "disp": "a",
+     "bold": true,
+     "t0": 11.87,
+     "t1": 11.91
+    },
+    {
+     "disp": "quarta.",
+     "bold": true,
+     "t0": 11.91,
+     "t1": 12.15
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.41,
+    "c": 6.03,
+    "d": 8.15,
+    "e": 9.91
+   }
+  },
+  {
+   "id": "05",
+   "block": "resposta",
+   "start": 45.32,
+   "dur": 10.32,
+   "tokens": [
+    {
+     "disp": "Quatro",
+     "bold": true,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "cores!",
+     "bold": true,
+     "t0": 0.83,
+     "t1": 1.15
+    },
+    {
+     "disp": "Letra",
+     "bold": false,
+     "t0": 1.49,
+     "t1": 1.77
+    },
+    {
+     "disp": "D.",
+     "bold": true,
+     "t0": 1.77,
+     "t1": 2.09
+    },
+    {
+     "disp": "São",
+     "bold": false,
+     "t0": 2.49,
+     "t1": 2.71
+    },
+    {
+     "disp": "catorze",
+     "bold": false,
+     "t0": 2.71,
+     "t1": 3.19
+    },
+    {
+     "disp": "faces,",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.61
+    },
+    {
+     "disp": "mas",
+     "bold": false,
+     "t0": 3.71,
+     "t1": 3.85
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.03
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.41
+    },
+    {
+     "disp": "tipos.",
+     "bold": false,
+     "t0": 4.41,
+     "t1": 4.73
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 5.29,
+     "t1": 5.49
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 5.49,
+     "t1": 5.65
+    },
+    {
+     "disp": "fosse",
+     "bold": false,
+     "t0": 5.65,
+     "t1": 5.93
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 5.93,
+     "t1": 6.11
+    },
+    {
+     "disp": "pirâmide",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.51
+    },
+    {
+     "disp": "inteira",
+     "bold": false,
+     "t0": 6.51,
+     "t1": 6.99
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 6.99,
+     "t1": 7.11
+    },
+    {
+     "disp": "cima?",
+     "bold": false,
+     "t0": 7.11,
+     "t1": 7.43
+    },
+    {
+     "disp": "Sem",
+     "bold": false,
+     "t0": 7.73,
+     "t1": 7.97
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.97,
+     "t1": 8.11
+    },
+    {
+     "disp": "hexágono",
+     "bold": false,
+     "t0": 8.11,
+     "t1": 8.51
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.51,
+     "t1": 8.67
+    },
+    {
+     "disp": "cima:",
+     "bold": false,
+     "t0": 8.67,
+     "t1": 8.89
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 9.21,
+     "t1": 9.41
+    },
+    {
+     "disp": "três",
+     "bold": true,
+     "t0": 9.41,
+     "t1": 9.83
+    },
+    {
+     "disp": "cores.",
+     "bold": false,
+     "t0": 9.83,
+     "t1": 10.07
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 1.49,
+    "c": 2.49,
+    "d": 5.29
+   }
+  },
+  {
+   "id": "06",
+   "block": "final",
+   "start": 55.64,
+   "dur": 8.44,
+   "tokens": [
+    {
+     "disp": "Você",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.47
+    },
+    {
+     "disp": "acertou?",
+     "bold": false,
+     "t0": 0.47,
+     "t1": 0.85
+    },
+    {
+     "disp": "Conta",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.43
+    },
+    {
+     "disp": "aqui",
+     "bold": false,
+     "t0": 1.43,
+     "t1": 1.57
+    },
+    {
+     "disp": "nos",
+     "bold": false,
+     "t0": 1.57,
+     "t1": 1.65
+    },
+    {
+     "disp": "comentários.",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 2.03
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 2.03,
+     "t1": 2.65
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.65,
+     "t1": 2.67
+    },
+    {
+     "disp": "explicação",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 3.07
+    },
+    {
+     "disp": "completa,",
+     "bold": false,
+     "t0": 3.07,
+     "t1": 3.55
+    },
+    {
+     "disp": "passo",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.05
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.05,
+     "t1": 4.15
+    },
+    {
+     "disp": "passo,",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.43
+    },
+    {
+     "disp": "está",
+     "bold": false,
+     "t0": 4.61,
+     "t1": 4.81
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 4.93
+    },
+    {
+     "disp": "vídeo",
+     "bold": false,
+     "t0": 4.93,
+     "t1": 5.19
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 5.19,
+     "t1": 5.35
+    },
+    {
+     "disp": "questão",
+     "bold": false,
+     "t0": 5.35,
+     "t1": 5.67
+    },
+    {
+     "disp": "aqui",
+     "bold": false,
+     "t0": 5.67,
+     "t1": 6.13
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 6.13,
+     "t1": 6.29
+    },
+    {
+     "disp": "Estudativo.",
+     "bold": true,
+     "t0": 6.29,
+     "t1": 6.81
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.03
+   }
+  }
+ ]
+}
