@@ -16,12 +16,14 @@
 **/audio/*.wav
 **/audio_*/nova_voz/
 **/audio_*/*.wav
+canais/survive_the_headline/episodes/*/output/
 **/__pycache__/
 *.pyc
 
 # Fontes: só os TTF da Inter usados pelo motor.py (+ licença)
 _ferramentas/fontes/*
 !_ferramentas/fontes/inter/
+!_ferramentas/fontes/instrument_serif/
 _ferramentas/fontes/inter/*
 !_ferramentas/fontes/inter/LICENSE.txt
 !_ferramentas/fontes/inter/extras/

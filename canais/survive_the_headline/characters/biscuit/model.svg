@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-425 -480 850 860" role="img" aria-label="Biscuit" preserveAspectRatio="xMidYMax meet" overflow="visible" opacity="1" display="inline" xmlns="http://www.w3.org/2000/svg">
+<title>Biscuit - modelo-base de Survive the Headline</title>
+<desc>Partes alternativas e acessorios existem com display=none. Cada parte tem id e data-part; data-pivot marca o ponto de articulacao. A animacao vem do rig em engine/rigs.</desc>
+<defs>
+<clipPath id="biscuit-clip-eye-right">
+<path d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0C15.1 24 -15.1 24 -21 0Z"/>
+</clipPath>
+<clipPath id="biscuit-clip-eye-left">
+<path d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0C15.1 24 -15.1 24 -21 0Z"/>
+</clipPath>
+</defs>
+<g transform="translate(0 340) scale(1.009) translate(0 -340)" data-part="proportion">
+<g transform="translate(0 340) scale(0.8) translate(0 -340)" data-part="scale" id="biscuit-scale">
+<ellipse cx="-16" cy="345" fill="#000" fill-opacity="0.22" data-part="shadow" id="biscuit-shadow" display="inline" opacity="1" rx="150" ry="14"/>
+<g data-part="character" id="biscuit-character" transform="scale(1 1)">
+<g data-part="bowl" id="biscuit-bowl" display="none" opacity="0" transform="translate(240 342)">
+<ellipse cx="0" cy="-44" rx="58" ry="12" fill="#9a5a2c" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-34 -46l10 -4l10 5l10 -6l12 5l12 -4l10 4" fill="none" stroke="#744119" stroke-width="4" stroke-linecap="round"/>
+<path d="M-66 -40Q-58 0 -46 0H46Q58 0 66 -40Q0 -22 -66 -40Z" fill="#2a7fb8" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-48 -10H48" stroke="#1f608c" stroke-width="6" stroke-linecap="round" fill="none"/>
+</g>
+<g data-part="ball" id="biscuit-ball" display="none" opacity="0" transform="translate(230 342)">
+<circle cx="0" cy="-26" r="26" fill="#c8e03a" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-22 -40Q-2 -26 -22 -12M22 -40Q2 -26 22 -12" fill="none" stroke="#fbfbf4" stroke-width="4.5" stroke-linecap="round"/>
+</g>
+<g data-part="root" id="biscuit-root" transform="translate(-26 234)">
+<g data-part="layer-tail" id="biscuit-layer-tail">
+<g data-part="tail" id="biscuit-tail" data-pivot="-106,-30,0" transform="translate(-106 -30)">
+<g>
+<g transform="translate(0 0) rotate(142) scale(1 1)">
+<path d="M-13 0A13 13 0 0 1 13 0L11 34A11 11 0 0 1 -11 34Z" fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(0 34) rotate(-44) scale(1 1)">
+<path d="M-11 0A11 11 0 0 1 11 0L6 28A6 6 0 0 1 -6 28Z" fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g>
+<g data-part="tail-base" id="biscuit-tail-base" transform="translate(0 0) rotate(142) scale(1 1)">
+<path d="M-13 0A13 13 0 0 1 13 0L11 34A11 11 0 0 1 -11 34Z" fill="#C58A45"/>
+<g data-part="tail-tip" id="biscuit-tail-tip" transform="translate(0 34) rotate(-44) scale(1 1)">
+<path d="M-11 0A11 11 0 0 1 11 0L6 28A6 6 0 0 1 -6 28Z" fill="#C58A45"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g data-part="layer-legs-behind" id="biscuit-layer-legs-behind">
+<g data-part="leg-back-left" id="biscuit-leg-back-left" data-pivot="-76,20,-38" transform="translate(-62 20)">
+<g>
+<g transform="translate(0 0) rotate(-14)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-33 0A33 33 0 0 1 33 0L18 36A18 18 0 0 1 -18 36Z"/>
+<g transform="translate(0 36) rotate(28)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 0A17 17 0 0 1 17 0L14 36A14 14 0 0 1 -14 36Z"/>
+<g transform="translate(0 36) rotate(-14)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="leg-back-left-upper" id="biscuit-leg-back-left-upper" transform="translate(0 0) rotate(-14)">
+<path fill="#ad793d" d="M-33 0A33 33 0 0 1 33 0L18 36A18 18 0 0 1 -18 36Z"/>
+<g data-part="leg-back-left-lower" id="biscuit-leg-back-left-lower" transform="translate(0 36) rotate(28)">
+<path fill="#ad793d" d="M-17 0A17 17 0 0 1 17 0L14 36A14 14 0 0 1 -14 36Z"/>
+<g data-part="back-paw-left" id="biscuit-back-paw-left" transform="translate(0 36) rotate(-14)">
+<path fill="#ad793d" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+<path fill="none" stroke="#242424" stroke-width="3" stroke-linecap="round" d="M9 12V5M23 12V5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g data-part="leg-front-left" id="biscuit-leg-front-left" data-pivot="72,20,-30" transform="translate(86 20)">
+<g>
+<g transform="translate(0 0) rotate(4)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-21 0A21 21 0 0 1 21 0L17 38A17 17 0 0 1 -17 38Z"/>
+<g transform="translate(0 38) rotate(0)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-16 0A16 16 0 0 1 16 0L14 34A14 14 0 0 1 -14 34Z"/>
+<g transform="translate(0 34) rotate(-4)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="leg-front-left-upper" id="biscuit-leg-front-left-upper" transform="translate(0 0) rotate(4)">
+<path fill="#ad793d" d="M-21 0A21 21 0 0 1 21 0L17 38A17 17 0 0 1 -17 38Z"/>
+<g data-part="leg-front-left-lower" id="biscuit-leg-front-left-lower" transform="translate(0 38) rotate(0)">
+<path fill="#ad793d" d="M-16 0A16 16 0 0 1 16 0L14 34A14 14 0 0 1 -14 34Z"/>
+<g data-part="front-paw-left" id="biscuit-front-paw-left" transform="translate(0 34) rotate(-4)">
+<path fill="#ad793d" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+<path fill="none" stroke="#242424" stroke-width="3" stroke-linecap="round" d="M9 12V5M23 12V5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g data-part="layer-body" id="biscuit-layer-body">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" transform="translate(0 0) scale(1 1)" d="M-112 -10C-111.3 -22.3 -110.3 -36.3 -100 -44C-89.7 -51.7 -68.3 -54.3 -50 -56C-31.7 -57.7 -9 -53.7 10 -54C29 -54.3 48.7 -59.7 64 -58C79.3 -56.3 94 -52.7 102 -44C110 -35.3 112.3 -18.3 112 -6C111.7 6.3 109.3 21.3 100 30C90.7 38.7 73.3 43.7 56 46C38.7 48.3 16 43.7 -4 44C-24 44.3 -47.3 50.3 -64 48C-80.7 45.7 -96 39.7 -104 30C-112 20.3 -112.7 2.3 -112 -10Z"/>
+<path fill="none" stroke="#242424" stroke-width="87.25" stroke-linecap="round" d="M68 -28L92 -68"/>
+<path fill="#C58A45" data-part="body" id="biscuit-body" transform="translate(0 0) scale(1 1)" d="M-112 -10C-111.3 -22.3 -110.3 -36.3 -100 -44C-89.7 -51.7 -68.3 -54.3 -50 -56C-31.7 -57.7 -9 -53.7 10 -54C29 -54.3 48.7 -59.7 64 -58C79.3 -56.3 94 -52.7 102 -44C110 -35.3 112.3 -18.3 112 -6C111.7 6.3 109.3 21.3 100 30C90.7 38.7 73.3 43.7 56 46C38.7 48.3 16 43.7 -4 44C-24 44.3 -47.3 50.3 -64 48C-80.7 45.7 -96 39.7 -104 30C-112 20.3 -112.7 2.3 -112 -10Z"/>
+<path fill="none" stroke="#C58A45" stroke-width="76" stroke-linecap="round" data-part="neck" id="biscuit-neck" d="M68 -28L92 -68"/>
+<path fill="#a9773b" data-part="body-shade" id="biscuit-body-shade" transform="translate(0 0) scale(1 1)" d="M-70 44C-58 45 -40 40.3 -20 40C0 39.7 30.7 43.7 50 42C69.3 40.3 96 32 96 30C96 28 68.7 30.3 50 30C31.3 29.7 4.3 27.3 -16 28C-36.3 28.7 -59.3 33 -72 34C-84.7 35 -92.3 32.3 -92 34C-91.7 35.7 -82 43 -70 44Z" display="inline" opacity="1"/>
+<path fill="#fff8ec" data-part="chest-patch" id="biscuit-chest-patch" transform="translate(0 0) scale(1 1)" d="M88 -26C93.3 -25 103 -17 106 -10C109 -3 108.7 8.7 106 16C103.3 23.3 97 30.3 90 34C83 37.7 70 40 64 38C58 36 54.3 28.3 54 22C53.7 15.7 58.7 6.3 62 0C65.3 -6.3 69.7 -11.7 74 -16C78.3 -20.3 82.7 -27 88 -26Z"/>
+</g>
+<g data-part="layer-legs-front" id="biscuit-layer-legs-front">
+<g data-part="leg-back-right" id="biscuit-leg-back-right" data-pivot="-76,20,-38" transform="translate(-76 20)">
+<g>
+<g transform="translate(0 0) rotate(-10)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-33 0A33 33 0 0 1 33 0L18 36A18 18 0 0 1 -18 36Z"/>
+<g transform="translate(0 36) rotate(28)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 0A17 17 0 0 1 17 0L14 36A14 14 0 0 1 -14 36Z"/>
+<g transform="translate(0 36) rotate(-18)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="leg-back-right-upper" id="biscuit-leg-back-right-upper" transform="translate(0 0) rotate(-10)">
+<path fill="#C58A45" d="M-33 0A33 33 0 0 1 33 0L18 36A18 18 0 0 1 -18 36Z"/>
+<g data-part="leg-back-right-lower" id="biscuit-leg-back-right-lower" transform="translate(0 36) rotate(28)">
+<path fill="#C58A45" d="M-17 0A17 17 0 0 1 17 0L14 36A14 14 0 0 1 -14 36Z"/>
+<g data-part="back-paw-right" id="biscuit-back-paw-right" transform="translate(0 36) rotate(-18)">
+<path fill="#C58A45" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+<path fill="none" stroke="#242424" stroke-width="3" stroke-linecap="round" d="M9 12V5M23 12V5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g data-part="leg-front-right" id="biscuit-leg-front-right" data-pivot="72,20,-30" transform="translate(72 20)">
+<g>
+<g transform="translate(0 0)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-21 0A21 21 0 0 1 21 0L17 38A17 17 0 0 1 -17 38Z"/>
+<g transform="translate(0 38)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-16 0A16 16 0 0 1 16 0L14 34A14 14 0 0 1 -14 34Z"/>
+<g transform="translate(0 34)">
+<path fill="#242424" stroke="#242424" stroke-width="11.25" stroke-linejoin="round" stroke-linecap="round" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="leg-front-right-upper" id="biscuit-leg-front-right-upper" transform="translate(0 0)">
+<path fill="#C58A45" d="M-21 0A21 21 0 0 1 21 0L17 38A17 17 0 0 1 -17 38Z"/>
+<g data-part="leg-front-right-lower" id="biscuit-leg-front-right-lower" transform="translate(0 38)">
+<path fill="#C58A45" d="M-16 0A16 16 0 0 1 16 0L14 34A14 14 0 0 1 -14 34Z"/>
+<g data-part="front-paw-right" id="biscuit-front-paw-right" transform="translate(0 34)">
+<path fill="#C58A45" d="M-17 -8C-9.7 -10.3 14.8 -10.3 24 -8C33.2 -5.7 37 2.3 38 6C39 9.7 30 14 30 14C30 14 -15 14 -15 14C-15 14 -19.7 9.7 -20 6C-20.3 2.3 -24.3 -5.7 -17 -8Z"/>
+<path fill="none" stroke="#242424" stroke-width="3" stroke-linecap="round" d="M9 12V5M23 12V5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g data-part="layer-collar" id="biscuit-layer-collar">
+<g data-part="collar" id="biscuit-collar" display="inline" opacity="1">
+<path fill="none" stroke="#242424" stroke-width="29.25" stroke-linecap="round" d="M118 -31.7Q68.5 -28.8 47.7 -73.9"/>
+<path fill="none" stroke="#d9302f" stroke-width="18" stroke-linecap="round" data-part="collar-band" id="biscuit-collar-band" d="M118 -31.7Q68.5 -28.8 47.7 -73.9"/>
+<path fill="none" stroke="#a81f22" stroke-width="3" stroke-linecap="round" d="M118 -31.7Q68.5 -28.8 47.7 -73.9"/>
+<g data-part="medal" id="biscuit-medal" transform="translate(109.6 -29.5)">
+<circle cx="0" cy="12" r="13" fill="#ffc62e" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="0" cy="12" r="6.5" fill="none" stroke="#d99a12" stroke-width="3"/>
+</g>
+</g>
+</g>
+<g data-part="layer-head" id="biscuit-layer-head">
+<g data-part="head" id="biscuit-head" data-pivot="92,-50,0" transform="translate(92 -50)">
+<g>
+<g data-part="ear-left" id="biscuit-ear-left" transform="translate(34 -110) rotate(8)">
+<path fill="#6b3f22" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" d="M-14 -4C-7.3 -10 7 -10.3 14 -6C21 -1.7 26 11.7 28 22C30 32.3 29.7 46.3 26 56C22.3 65.7 13.3 78.3 6 80C-1.3 81.7 -12.7 74.3 -18 66C-23.3 57.7 -26.7 41.7 -26 30C-25.3 18.3 -20.7 2 -14 -4Z"/>
+<path fill="none" stroke="#54301a" stroke-width="7" stroke-linecap="round" d="M2 18Q10 42 2 62"/>
+</g>
+</g>
+<path fill="#C58A45" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" data-part="face" id="biscuit-face" d="M14 10C24.3 9.7 35.3 8 44 2C52.7 -4 61.3 -15.7 66 -26C70.7 -36.3 73 -48.7 72 -60C71 -71.3 66.7 -85 60 -94C53.3 -103 42.3 -110 32 -114C21.7 -118 9.3 -118.7 -2 -118C-13.3 -117.3 -27 -115.3 -36 -110C-45 -104.7 -52 -96 -56 -86C-60 -76 -61.7 -61.3 -60 -50C-58.3 -38.7 -53 -27 -46 -18C-39 -9 -28 -0.7 -18 4C-8 8.7 3.7 10.3 14 10Z"/>
+<g/>
+<path fill="#5a1c22" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" data-part="mouth" id="biscuit-mouth" d="M40 -22C48 -24.3 82 -25.3 92 -24C102 -22.7 100.7 -17.3 100 -14C99.3 -10.7 94.7 -6 88 -4C81.3 -2 67.3 -1 60 -2C52.7 -3 47.3 -6.7 44 -10C40.7 -13.3 32 -19.7 40 -22Z" display="none" opacity="0"/>
+<g data-part="jaw" id="biscuit-jaw" transform="translate(0 0) rotate(0 44 -18)">
+<path fill="#e8cfa6" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" d="M40 -22C48 -24.3 82 -25.3 92 -24C102 -22.7 100.7 -17.3 100 -14C99.3 -10.7 94.7 -6 88 -4C81.3 -2 67.3 -1 60 -2C52.7 -3 47.3 -6.7 44 -10C40.7 -13.3 32 -19.7 40 -22Z"/>
+<ellipse fill="#ec7d86" cx="68" cy="-16" rx="26" ry="7" display="none" opacity="0"/>
+<g data-part="tongue" id="biscuit-tongue" display="none" opacity="0" transform="translate(80 -2) rotate(8)">
+<path fill="#ec7d86" stroke="#242424" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" d="M-13 0A13 13 0 0 1 13 0L12 1A12 12 0 0 1 -12 1Z"/>
+<path fill="none" stroke="#c95d68" stroke-width="3" stroke-linecap="round" d="M0 4V5"/>
+</g>
+<g data-part="bone" id="biscuit-bone" display="none" opacity="0" transform="translate(62 -6) scale(0.74 1)">
+<path d="M-40 -6C-46 -18 -60 -14 -56 -2C-62 2 -60 16 -46 12C-42 10 -40 8 -38 6H38C40 8 42 10 46 12C60 16 62 2 56 -2C60 -14 46 -18 40 -6Z" fill="#f4efe2" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-34 3H34" stroke="#d9d0ba" stroke-width="4" stroke-linecap="round" fill="none"/>
+</g>
+</g>
+<path fill="#f7e6c8" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" data-part="muzzle" id="biscuit-muzzle" d="M22 -30C22 -36.7 27.7 -51.7 34 -58C40.3 -64.3 51.3 -66.3 60 -68C68.7 -69.7 78.7 -69.7 86 -68C93.3 -66.3 100 -62.7 104 -58C108 -53.3 110 -45.7 110 -40C110 -34.3 108.3 -28 104 -24C99.7 -20 92 -17.7 84 -16C76 -14.3 64.3 -13.7 56 -14C47.7 -14.3 39.7 -15.3 34 -18C28.3 -20.7 22 -23.3 22 -30Z"/>
+<path fill="#fbf7ee" stroke="#242424" stroke-width="2.5" stroke-linejoin="round" data-part="fangs" id="biscuit-fangs" d="M40 -17L46 -4L52 -17ZM64 -17L70 -4L76 -17Z" display="none" opacity="0"/>
+<path fill="none" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" data-part="mouth-line" id="biscuit-mouth-line" d="M18 -23.2Q64 -13.5 106 -19"/>
+<g data-part="nose" id="biscuit-nose" transform="translate(104 -60) scale(1 1.1)">
+<path fill="#1f1b1e" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" d="M-15 -6C-15 -14 15 -14 15 -6C15 4 6 11 0 11C-6 11 -15 4 -15 -6Z"/>
+<ellipse cx="-4" cy="-4" rx="5" ry="2.8" fill="#6a6470"/>
+</g>
+<g data-part="eye-right" id="biscuit-eye-right" transform="translate(40 -84) scale(0.84 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0C15.1 24 -15.1 24 -21 0Z"/>
+<g clip-path="url(#biscuit-clip-eye-right)">
+<g data-part="pupil-right" id="biscuit-pupil-right" transform="translate(0 0) scale(1 1)">
+<circle r="15" fill="#6b4226"/>
+<circle r="10" fill="#120d0a"/>
+<circle cx="5" cy="-6" r="4.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="6" stroke-linecap="round" d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0"/>
+</g>
+<g data-part="eye-left" id="biscuit-eye-left" display="none" opacity="0" transform="translate(68 -84) scale(0.06 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0C15.1 24 -15.1 24 -21 0Z"/>
+<g clip-path="url(#biscuit-clip-eye-left)">
+<g data-part="pupil-left" id="biscuit-pupil-left" transform="translate(0 0) scale(1 1)">
+<circle r="15" fill="#6b4226"/>
+<circle r="10" fill="#120d0a"/>
+<circle cx="5" cy="-6" r="4.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="6" stroke-linecap="round" d="M-21 0C-15.1 -30.6 15.1 -30.6 21 0"/>
+</g>
+<path fill="none" stroke="#6b3f22" stroke-width="9" stroke-linecap="round" data-part="brow-right" id="biscuit-brow-right" d="M26.6 -110Q40 -119 53.4 -112"/>
+<path fill="none" stroke="#6b3f22" stroke-width="9" stroke-linecap="round" data-part="brow-left" id="biscuit-brow-left" display="none" opacity="0" d="M69.6 -110Q68 -119 66.4 -112"/>
+<g>
+<g data-part="ear-right" id="biscuit-ear-right" transform="translate(-14 -106) rotate(10)">
+<path fill="#6b3f22" stroke="#242424" stroke-width="5.625" stroke-linejoin="round" stroke-linecap="round" d="M-14 -4C-7.3 -10 7 -10.3 14 -6C21 -1.7 26 11.7 28 22C30 32.3 29.7 46.3 26 56C22.3 65.7 13.3 78.3 6 80C-1.3 81.7 -12.7 74.3 -18 66C-23.3 57.7 -26.7 41.7 -26 30C-25.3 18.3 -20.7 2 -14 -4Z"/>
+<path fill="none" stroke="#54301a" stroke-width="7" stroke-linecap="round" d="M2 18Q10 42 2 62"/>
+</g>
+</g>
+<g data-part="sweat" id="biscuit-sweat" display="none" opacity="0">
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(78 -112) rotate(12) scale(0.5 0.5)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(92 -92) rotate(-10) scale(0.38 0.38)"/>
+</g>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(46 -44) scale(0.75 0.75)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(92 6.8) scale(0.72 0.72)"/>
+</g>
+</g>
+<g data-part="layer-paw-over" id="biscuit-layer-paw-over"/>
+<g data-part="zzz" id="biscuit-zzz" display="none" opacity="0">
+<path d="M-9 -9H9L-9 9H9" fill="none" stroke="#9fb4d9" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-9 -9H9L-9 9H9" fill="none" stroke="#9fb4d9" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-9 -9H9L-9 9H9" fill="none" stroke="#9fb4d9" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

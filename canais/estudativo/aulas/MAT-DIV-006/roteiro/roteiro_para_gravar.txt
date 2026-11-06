@@ -1,0 +1,43 @@
+Duas fitas: uma de setenta e dois centímetros, outra de cento e vinte. Você corta em pedaços iguais, os maiores possíveis, sem sobrar nada. Quantos pedaços saem?
+
+Até o fim desta aula, você resolve isso sem tentativa e erro, e leva o atalho de prova: a pista no texto que entrega o MDC.
+
+Para acompanhar, você só precisa de uma coisa: calcular o MDC de dois números. Se faltar, procure a aula no canal.
+
+Antes da conta, entenda a história. Para não sobrar nada, o tamanho do pedaço precisa caber certinho em setenta e dois. E também em cento e vinte. Caber certinho é ser divisor.
+
+Pedaços de trinta centímetros? Setenta e dois dividido por trinta deixa resto. Não serve. Pedaços de doze? Serve nas duas fitas. Mas será que é o maior?
+
+O pedaço precisa ser divisor das duas medidas, e o maior possível. Isso é exatamente o máximo divisor comum.
+
+Setenta e dois é dois vezes dois vezes dois vezes três vezes três. Cento e vinte é dois vezes dois vezes dois vezes três vezes cinco. Em comum: dois vezes dois vezes dois vezes três. Vinte e quatro centímetros.
+
+Só que a pergunta não é o tamanho. É quantos pedaços. Setenta e dois dividido por vinte e quatro: três pedaços. Cento e vinte dividido por vinte e quatro: cinco pedaços. Três mais cinco: oito pedaços.
+
+O mesmo problema aparece com outra roupa. Uma lanchonete tem trinta pães de queijo e quarenta e cinco coxinhas. Quer montar o maior número possível de bandejas iguais, sem sobrar nada.
+
+O número de bandejas precisa dividir trinta e quarenta e cinco. É divisor comum, e o maior: MDC. Trinta é dois vezes três vezes cinco. Quarenta e cinco é três vezes três vezes cinco. Em comum, três vezes cinco: quinze bandejas.
+
+Em cada bandeja: trinta dividido por quinze, dois pães. Quarenta e cinco dividido por quinze, três coxinhas.
+
+Repare na diferença. Nas fitas, o MDC deu o tamanho de cada pedaço. Nas bandejas, deu a quantidade de bandejas. Pense sempre no que aquele número significa na história.
+
+O erro mais comum é parar no MDC. A pessoa acha vinte e quatro e responde vinte e quatro. Só que a pergunta era quantos pedaços. Vinte e quatro é o tamanho. A resposta é oito. Antes de terminar, releia o que foi pedido.
+
+Agora o atalho, que é uma pista no texto. Procure três ideias juntas: partes iguais, sem sobra, o maior possível. Apareceu isso, é MDC.
+
+Funciona porque cada ideia é um pedaço do nome. Sem sobra é divisor. Igual para todos é comum. O maior possível é máximo.
+
+Quando não compensa? Se o texto já dá o tamanho do pedaço, não tem MDC: é só dividir. E a palavra maior, sozinha, não prova nada. Confira se a história é mesmo de repartir em partes iguais. Coisas que se repetem no tempo pedem outra conta, assunto da próxima aula.
+
+Hora de testar. Uma loja tem sessenta e três sabonetes e oitenta e quatro cremes. Quer montar o maior número possível de kits iguais, sem sobrar nada. Quantos kits, e o que vai em cada um?
+
+Pause o vídeo e tente.
+
+Vamos lá. Kits iguais, sem sobra, o maior número possível: MDC. Sessenta e três é três vezes três vezes sete. Oitenta e quatro é dois vezes dois vezes três vezes sete. Em comum: três vezes sete. Vinte e um kits.
+
+Em cada kit: sessenta e três dividido por vinte e um, três sabonetes. Oitenta e quatro dividido por vinte e um, quatro cremes.
+
+Resumindo: partes iguais, sem sobra, as maiores possíveis, é MDC. E sempre confira o que a pergunta quer de verdade.
+
+Na próxima aula, o caso contrário: ônibus que saem de tempos em tempos e se encontram de novo. É o problema de MMC, e você vai ver a diferença para este aqui. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

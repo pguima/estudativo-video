@@ -1,0 +1,57 @@
+Em problema de MMC e MDC, muita gente acerta a conta e erra a escolha. Resolve direitinho o problema errado.
+
+Você vai treinar isso, e o resto do módulo, em cinco questões criadas para esta aula. Em cada uma: pause, resolva e volte para conferir.
+
+Você vai usar regras de divisibilidade, fatoração, MDC e MMC. Se travar em alguma, procure a aula no canal.
+
+Questão um. Mil duzentas e setenta e oito balas vão ser divididas igualmente entre seis crianças. Sem fazer a divisão, diga se sobra bala.
+
+Pause o vídeo e tente.
+
+Para dividir por seis, o número precisa ser par e passar no teste do três. Termina em oito: é par. Noves fora: um com oito, risca. Dois com sete, risca. Não sobrou nada, então passa no três.
+
+Passou nos testes: não sobra bala. Dito de outro jeito, mil duzentos e setenta e oito é múltiplo de seis, e seis é divisor dele.
+
+Questão dois. Escreva duzentos e sessenta e seis como multiplicação de primos.
+
+Pause o vídeo e tente.
+
+É par: por dois, cento e trinta e três. Esse tem cara de primo, então teste. Não é par. A soma dos algarismos dá sete, o três não serve. Não termina em zero nem em cinco. Por sete: dezenove, sem resto.
+
+Dezenove é primo: por dezenove, um. Resposta: dois vezes sete vezes dezenove. Conferindo: dois vezes sete, catorze. Catorze vezes dezenove, duzentos e sessenta e seis.
+
+Questão três. Duas tábuas, de oitenta e quatro e de cento e vinte e seis centímetros, vão ser cortadas em pedaços iguais, os maiores possíveis, sem sobra. Quantos pedaços saem, no total?
+
+Pause o vídeo e tente.
+
+Pedaços iguais, sem sobra, os maiores possíveis: MDC. Divida ao mesmo tempo. Por dois: quarenta e dois e sessenta e três. Por três: catorze e vinte e um. Por sete: dois e três. Dois vezes três vezes sete: quarenta e dois centímetros.
+
+Mas a pergunta é quantos pedaços. Oitenta e quatro dividido por quarenta e dois: dois pedaços. Cento e vinte e seis dividido por quarenta e dois: três. No total, cinco pedaços. Repare: o dois e o três que sobraram no fim da divisão já eram essa resposta.
+
+Questão quatro. Uma pessoa toma um remédio a cada oito horas e outro a cada doze. Às seis da manhã, tomou os remédios juntos. Quando toma juntos de novo?
+
+Pause o vídeo e tente.
+
+A cada, juntos, de novo: MMC. Com dois números, cabe o atalho: multiplique e divida pelo MDC. O MDC de oito e doze é quatro. Oito vezes doze, noventa e seis. Dividido por quatro, vinte e quatro.
+
+São vinte e quatro horas depois: às seis da manhã do dia seguinte.
+
+Última questão, e é a da escolha. Os números são os mesmos: dezoito e vinte e quatro. Caso A: cordas de dezoito e de vinte e quatro metros, cortadas em pedaços iguais, os maiores possíveis, sem sobra. Qual é o tamanho do pedaço?
+
+Caso B: um sinal toca a cada dezoito segundos, outro a cada vinte e quatro. Tocaram juntos agora. Quando tocam juntos de novo? Decida entre MMC e MDC em cada caso, e resolva.
+
+Pause o vídeo e tente.
+
+O caso A reparte: é MDC. Dezoito é dois vezes três vezes três. Vinte e quatro é dois vezes dois vezes dois vezes três. Em comum: dois vezes três. Seis metros.
+
+O caso B repete: é MMC. Dezoito vezes vinte e quatro, quatrocentos e trinta e dois. Dividido pelo MDC, que é seis: setenta e dois segundos.
+
+Para fechar, um atalho que confere a sua escolha: a régua. O MDC nunca passa do menor número. O MMC nunca fica abaixo do maior. Seis é menor que dezoito. Setenta e dois é maior que vinte e quatro. Tudo no lugar.
+
+Funciona porque o MDC divide os números, e nenhum divisor passa do próprio número. Já o MMC é múltiplo deles, e um múltiplo não fica abaixo do número.
+
+Quando não compensa? Ela denuncia o método trocado, mas não a conta errada. Se você errasse o MDC e achasse doze, a régua deixaria passar. Para pegar esse erro, divida os números pelo MDC: não pode sobrar resto.
+
+Resumindo: reparte, MDC. Repete, MMC. E fatorar resolve as duas contas. Com isso, você fechou o módulo.
+
+O próximo passo é seguir para Frações, onde o MDC ajuda a simplificar e o MMC ajuda a somar. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

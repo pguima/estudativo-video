@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-425 -480 850 860" role="img" aria-label="Bea Rivera" preserveAspectRatio="xMidYMax meet" overflow="visible" opacity="1" display="inline" xmlns="http://www.w3.org/2000/svg">
+<title>Bea - modelo-base de Survive the Headline</title>
+<desc>Partes alternativas e acessorios existem com display=none. Cada parte tem id e data-part; data-pivot marca o ponto de articulacao. A animacao vem do rig em engine/rigs.</desc>
+<defs>
+<clipPath id="bea-clip-eye-right">
+<path d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0C16.6 24 -16.6 24 -23 0Z"/>
+</clipPath>
+<clipPath id="bea-clip-eye-left">
+<path d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0C16.6 24 -16.6 24 -23 0Z"/>
+</clipPath>
+<clipPath id="bea-clip-mouth">
+<path d="M-17 -3.5C-9.4 2.2 9.4 2.2 17 -3.5C9.4 2.2 -9.4 2.2 -17 -3.5Z"/>
+</clipPath>
+</defs>
+<g transform="translate(0 340) scale(0.947) translate(0 -340)" data-part="proportion">
+<ellipse cx="0" cy="343" rx="88" ry="12" fill="#000" fill-opacity="0.22" data-part="shadow" id="bea-shadow" display="inline" opacity="1"/>
+<g data-part="character" id="bea-character" transform="scale(1 1)">
+<g data-part="seat" id="bea-seat" display="none" opacity="0" transform="translate(0 340) scale(0.74 1.027) translate(0 -340)">
+<rect x="-70" y="192" width="140" height="22" rx="6" fill="#a5764a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-58 214L-70 340H-54L-38 214Z" fill="#7d5533" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58 214L70 340H54L38 214Z" fill="#7d5533" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-60 282H60V295H-60Z" fill="#a5764a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="pelvis" id="bea-pelvis" data-pivot="0,0" transform="translate(0 158)">
+<g data-part="layer-backpack" id="bea-layer-backpack" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="backpack" id="bea-backpack" display="none" opacity="0">
+<path fill="#8a5cd6" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="backpack-body" id="bea-backpack-body"/>
+<path fill="#6c43b3" data-part="backpack-pocket" id="bea-backpack-pocket"/>
+</g>
+</g>
+<g data-part="layer-back-arm" id="bea-layer-back-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)"/>
+<g data-part="leg-left" id="bea-leg-left" data-pivot="22,10" transform="translate(22 10)">
+<g>
+<g transform="translate(0 0) rotate(-2)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 0A20 20 0 0 1 20 0L16 70A16 16 0 0 1 -16 70Z"/>
+<g data-pivot="0,70" transform="translate(0 70) rotate(2)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-16 0A16 16 0 0 1 16 0L14 72A14 14 0 0 1 -14 72Z"/>
+<g data-pivot="0,72" transform="translate(4 72)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-17 -5C-22.8 -3.2 -17.2 2.7 -18 6C-18.8 9.3 -21.5 12.2 -22 15C-22.5 17.8 -21 23 -21 23C-21 23 21 23 21 23C21 23 22.5 17.8 22 15C21.5 12.2 18.8 9.3 18 6C17.2 2.7 22.8 -3.2 17 -5C11.2 -6.8 -11.2 -6.8 -17 -5Z"/>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-22 20C-22 20 -23 30 -23 30C-23 30 23 30 23 30C23 30 22 20 22 20C22 20 -22 20 -22 20Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-left" id="bea-thigh-left" transform="translate(0 0) rotate(-2)">
+<path d="M-20 0A20 20 0 0 1 20 0L16 70A16 16 0 0 1 -16 70Z" fill="#e6dcf4"/>
+<g data-part="shin-left" id="bea-shin-left" data-pivot="0,70" transform="translate(0 70) rotate(2)">
+<path d="M-16 0A16 16 0 0 1 16 0L14 72A14 14 0 0 1 -14 72Z" fill="#e6dcf4"/>
+<g data-part="foot-left" id="bea-foot-left" data-pivot="0,72" transform="translate(4 72)">
+<path d="M-17 -5C-22.8 -3.2 -17.2 2.7 -18 6C-18.8 9.3 -21.5 12.2 -22 15C-22.5 17.8 -21 23 -21 23C-21 23 21 23 21 23C21 23 22.5 17.8 22 15C21.5 12.2 18.8 9.3 18 6C17.2 2.7 22.8 -3.2 17 -5C11.2 -6.8 -11.2 -6.8 -17 -5Z" fill="#25b6c4"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#ffd23f" d="M-13 15H13"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-22 20C-22 20 -23 30 -23 30C-23 30 23 30 23 30C23 30 22 20 22 20C22 20 -22 20 -22 20Z" fill="#ffffff"/>
+<path d="M-14 -5H14" fill="none" stroke-width="4" stroke-linecap="round" stroke="#f3edfa"/>
+</g>
+<path d="M-3.5 0A3.5 3.5 0 0 1 3.5 0L3 54A3 3 0 0 1 -3 54Z" transform="translate(8 14) scale(1 1)" fill="#cfc2e6"/>
+<path d="M-8 -2Q0 5 8 -2" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#cfc2e6"/>
+</g>
+<path d="M-4 0A4 4 0 0 1 4 0L3.5 50A3.5 3.5 0 0 1 -3.5 50Z" transform="translate(8 8) scale(1 1)" fill="#cfc2e6" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<g data-part="leg-right" id="bea-leg-right" data-pivot="-22,10" transform="translate(-22 10)">
+<g>
+<g transform="translate(0 0) rotate(2)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 0A20 20 0 0 1 20 0L16 70A16 16 0 0 1 -16 70Z"/>
+<g data-pivot="0,70" transform="translate(0 70) rotate(-2)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-16 0A16 16 0 0 1 16 0L14 72A14 14 0 0 1 -14 72Z"/>
+<g data-pivot="0,72" transform="translate(-4 72)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-17 -5C-22.8 -3.2 -17.2 2.7 -18 6C-18.8 9.3 -21.5 12.2 -22 15C-22.5 17.8 -21 23 -21 23C-21 23 21 23 21 23C21 23 22.5 17.8 22 15C21.5 12.2 18.8 9.3 18 6C17.2 2.7 22.8 -3.2 17 -5C11.2 -6.8 -11.2 -6.8 -17 -5Z"/>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-22 20C-22 20 -23 30 -23 30C-23 30 23 30 23 30C23 30 22 20 22 20C22 20 -22 20 -22 20Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-right" id="bea-thigh-right" transform="translate(0 0) rotate(2)">
+<path d="M-20 0A20 20 0 0 1 20 0L16 70A16 16 0 0 1 -16 70Z" fill="#e6dcf4"/>
+<g data-part="shin-right" id="bea-shin-right" data-pivot="0,70" transform="translate(0 70) rotate(-2)">
+<path d="M-16 0A16 16 0 0 1 16 0L14 72A14 14 0 0 1 -14 72Z" fill="#e6dcf4"/>
+<g data-part="foot-right" id="bea-foot-right" data-pivot="0,72" transform="translate(-4 72)">
+<path d="M-17 -5C-22.8 -3.2 -17.2 2.7 -18 6C-18.8 9.3 -21.5 12.2 -22 15C-22.5 17.8 -21 23 -21 23C-21 23 21 23 21 23C21 23 22.5 17.8 22 15C21.5 12.2 18.8 9.3 18 6C17.2 2.7 22.8 -3.2 17 -5C11.2 -6.8 -11.2 -6.8 -17 -5Z" fill="#25b6c4"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#ffd23f" d="M-13 15H13"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-22 20C-22 20 -23 30 -23 30C-23 30 23 30 23 30C23 30 22 20 22 20C22 20 -22 20 -22 20Z" fill="#ffffff"/>
+<path d="M-14 -5H14" fill="none" stroke-width="4" stroke-linecap="round" stroke="#f3edfa"/>
+</g>
+<path d="M-3.5 0A3.5 3.5 0 0 1 3.5 0L3 54A3 3 0 0 1 -3 54Z" transform="translate(8 14) scale(1 1)" fill="#cfc2e6"/>
+<path d="M-8 -2Q0 5 8 -2" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#cfc2e6"/>
+</g>
+<path d="M-4 0A4 4 0 0 1 4 0L3.5 50A3.5 3.5 0 0 1 -3.5 50Z" transform="translate(8 8) scale(1 1)" fill="#cfc2e6" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<path stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hips" id="bea-hips" d="M-42 -10C-53 -0.2 -66 45 -66 45C-66 45 -41 49.7 -30 51C-19 52.3 -10 53 0 53C10 53 19 52.3 30 51C41 49.7 66 45 66 45C66 45 53 -0.2 42 -10C31 -19.8 14 -14 0 -14C-14 -14 -31 -19.8 -42 -10Z" fill="#4c82c7"/>
+<path fill="none" stroke-width="3" stroke-linecap="round" data-part="skirt-detail" id="bea-skirt-detail" stroke="#3a68a6" d="M-58 39Q0 54 58 39M-38 6Q0 11 38 6"/>
+<g data-part="layer-hair-back" id="bea-layer-hair-back" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g transform="translate(0 -128)">
+<path fill="#533218" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-back" id="bea-hair-back" d="M-52 -146C-65.3 -136.7 -74 -118.3 -80 -104C-86 -89.7 -88 -73 -88 -60C-88 -47 -79.7 -38 -80 -26C-80.3 -14 -93 0.3 -90 12C-87 23.7 -72 40 -62 44C-52 48 -40.3 36.3 -30 36C-19.7 35.7 -10 42 0 42C10 42 19.7 35.7 30 36C40.3 36.3 52 48 62 44C72 40 87 23.7 90 12C93 0.3 80.3 -14 80 -26C79.7 -38 88 -47 88 -60C88 -73 86 -89.7 80 -104C74 -118.3 65.3 -136.7 52 -146C38.7 -155.3 17.3 -160 0 -160C-17.3 -160 -38.7 -155.3 -52 -146Z"/>
+</g>
+</g>
+<g data-part="layer-neck" id="bea-layer-neck" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="neck" id="bea-neck" transform="translate(0 -122)">
+<path d="M-14 0A14 14 0 0 1 14 0L16 30A16 16 0 0 1 -16 30Z" fill="#f2c3a2" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-12 2H12V10Q0 18 -12 10Z" fill="#e2a884"/>
+</g>
+</g>
+<g data-part="torso" id="bea-torso" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<path stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="torso-shape" id="bea-torso-shape" d="M-22 -128C-30.3 -129 -44 -124.7 -50 -120C-56 -115.3 -57.7 -110 -58 -100C-58.3 -90 -54 -72.7 -52 -60C-50 -47.3 -46.7 -36 -46 -24C-45.3 -12 -48 12 -48 12C-48 12 -32 15 -24 16C-16 17 -8 18 0 18C8 18 16 17 24 16C32 15 48 12 48 12C48 12 45.3 -12 46 -24C46.7 -36 50 -47.3 52 -60C54 -72.7 58.3 -90 58 -100C57.7 -110 56 -115.3 50 -120C44 -124.7 30.3 -129 22 -128C13.7 -127 7.3 -114 0 -114C-7.3 -114 -13.7 -127 -22 -128Z" fill="#F17C75"/>
+<path data-part="torso-shade" id="bea-torso-shade" d="M36 15C39 18 46.3 18.5 48 12C49.7 5.5 45.3 -12 46 -24C46.7 -36 50.5 -49 52 -60C53.5 -71 56.7 -89 55 -90C53.3 -91 45.5 -76 42 -66C38.5 -56 36 -40 34 -30C32 -20 29.7 -13.5 30 -6C30.3 1.5 33 12 36 15Z" fill="#d46d67" display="inline" opacity="1"/>
+<path fill="none" stroke-width="3.2" stroke-linecap="round" d="M-26 -8Q-12 -2 0 -6M30 -40Q20 -32 10 -34" stroke="#ae5954"/>
+<path fill="#fff4ec" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" data-part="collar" id="bea-collar" d="M-26 -127Q-23.4 -106 -2 -108L0 -116L2 -108Q23.4 -106 26 -127Q0 -112 -26 -127Z"/>
+<path fill="#ffd23f" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" data-part="star" id="bea-star" d="M0 -81L3.8 -71.3L14.3 -70.6L6.2 -64L8.8 -53.9L0 -59.5L-8.8 -53.9L-6.2 -64L-14.3 -70.6L-3.8 -71.3Z"/>
+<path fill="none" stroke="#5a3699" stroke-width="10" stroke-linecap="round" data-part="backpack-straps" id="bea-backpack-straps" display="none" opacity="0"/>
+</g>
+<g data-part="layer-head" id="bea-layer-head" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="head" id="bea-head" data-pivot="0,-128" transform="translate(0 -128)">
+<path fill="#f2c3a2" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="face" id="bea-face" d="M0 8C10 8 21 9.3 30 6C39 2.7 48 -2.7 54 -12C60 -21.3 63.7 -36.7 66 -50C68.3 -63.3 69.3 -79.3 68 -92C66.7 -104.7 64 -117 58 -126C52 -135 41.7 -141.8 32 -146C22.3 -150.2 10.7 -151 0 -151C-10.7 -151 -22.3 -150.2 -32 -146C-41.7 -141.8 -52 -135 -58 -126C-64 -117 -66.7 -104.7 -68 -92C-69.3 -79.3 -68.3 -63.3 -66 -50C-63.7 -36.7 -60 -21.3 -54 -12C-48 -2.7 -39 2.7 -30 6C-21 9.3 -10 8 0 8Z"/>
+<path fill="#e2a884" fill-opacity="0.7" d="M30 6C35 3.8 48 -2.7 54 -12C60 -21.3 63.7 -36.7 66 -50C68.3 -63.3 68.5 -85 68 -92C67.5 -99 64.3 -98.7 63 -92C61.7 -85.3 62.8 -64.3 60 -52C57.2 -39.7 52 -26.8 46 -18C40 -9.2 26.7 -3 24 1C21.3 5 25 8.2 30 6Z" display="inline" opacity="1"/>
+<path data-part="tint" id="bea-tint" d="M0 8C10 8 21 9.3 30 6C39 2.7 48 -2.7 54 -12C60 -21.3 63.7 -36.7 66 -50C68.3 -63.3 69.3 -79.3 68 -92C66.7 -104.7 64 -117 58 -126C52 -135 41.7 -141.8 32 -146C22.3 -150.2 10.7 -151 0 -151C-10.7 -151 -22.3 -150.2 -32 -146C-41.7 -141.8 -52 -135 -58 -126C-64 -117 -66.7 -104.7 -68 -92C-69.3 -79.3 -68.3 -63.3 -66 -50C-63.7 -36.7 -60 -21.3 -54 -12C-48 -2.7 -39 2.7 -30 6C-21 9.3 -10 8 0 8Z" fill="#e0392b" opacity="0"/>
+<path fill="#f28f8a" data-part="cheeks" id="bea-cheeks" d="M-53 -42a15 9 0 1 0 30 0a15 9 0 1 0 -30 0ZM21 -42a15 9 0 1 0 30 0a15 9 0 1 0 -30 0Z" opacity="0.32"/>
+<g data-part="mouth" id="bea-mouth" transform="translate(0 -25)">
+<path fill="#5a1c22" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-17 -3.5C-9.4 2.2 9.4 2.2 17 -3.5C9.4 2.2 -9.4 2.2 -17 -3.5Z" display="none" opacity="0"/>
+<g clip-path="url(#bea-clip-mouth)">
+<ellipse fill="#d9636a" cx="0" cy="2.2" rx="10.5" ry="0" display="none" opacity="0"/>
+<rect fill="#fbf7ee" x="-60" width="120" y="-13.8" height="16" display="none" opacity="0"/>
+<path fill="none" stroke="#242424" stroke-width="2.5" d="M0 0"/>
+</g>
+<path fill="none" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-17 -3.5C-9.4 2.2 9.4 2.2 17 -3.5" display="inline" opacity="1"/>
+<path fill="none" stroke="#e0848a" stroke-width="4" stroke-linecap="round" data-part="lower-lip" id="bea-lower-lip" d="M-7.1 9.7Q0 12.7 7.1 9.7" display="inline" opacity="1"/>
+</g>
+<g data-part="eye-right" id="bea-eye-right" transform="translate(-29 -72) scale(1 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3" stroke-linejoin="round" d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0C16.6 24 -16.6 24 -23 0Z" display="inline" opacity="1"/>
+<g clip-path="url(#bea-clip-eye-right)" display="inline" opacity="1">
+<g data-part="pupil-right" id="bea-pupil-right" transform="translate(0 0) scale(1 1)">
+<circle r="15.5" fill="#6b4226"/>
+<circle r="10" fill="#120d0a"/>
+<circle cx="5" cy="-6" r="4.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="5" stroke-linecap="round" d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0"/>
+</g>
+<g data-part="eye-left" id="bea-eye-left" display="inline" opacity="1" transform="translate(29 -72) scale(1 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3" stroke-linejoin="round" d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0C16.6 24 -16.6 24 -23 0Z" display="inline" opacity="1"/>
+<g clip-path="url(#bea-clip-eye-left)" display="inline" opacity="1">
+<g data-part="pupil-left" id="bea-pupil-left" transform="translate(0 0) scale(1 1)">
+<circle r="15.5" fill="#6b4226"/>
+<circle r="10" fill="#120d0a"/>
+<circle cx="5" cy="-6" r="4.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="5" stroke-linecap="round" d="M-23 0C-16.6 -29.7 16.6 -29.7 23 0"/>
+</g>
+<ellipse fill="rgb(242,195,162)" data-part="nose" id="bea-nose" cx="0" cy="-46" rx="7" ry="5.5"/>
+<path fill="none" stroke="#242424" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" d="M6.6 -47.8C6.6 -47.2 7.1 -45.4 6.7 -44.4C6.3 -43.3 5.3 -42.2 4.1 -41.6C3 -40.9 1.4 -40.5 0 -40.5C-1.4 -40.5 -3 -40.9 -4.1 -41.6C-5.3 -42.2 -6.3 -43.3 -6.7 -44.4C-7.1 -45.4 -6.6 -47.2 -6.6 -47.8"/>
+<path fill="#6b4226" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-front" id="bea-hair-front" d="M-66 0C-66 0 -75 -22 -78 -36C-81 -50 -84 -69.7 -84 -84C-84 -98.3 -82.7 -111 -78 -122C-73.3 -133 -65.7 -142.7 -56 -150C-46.3 -157.3 -32.7 -163.3 -20 -166C-7.3 -168.7 7.3 -168.7 20 -166C32.7 -163.3 46.3 -157.3 56 -150C65.7 -142.7 73.3 -133 78 -122C82.7 -111 84 -98.3 84 -84C84 -69.7 81 -50 78 -36C75 -22 66 0 66 0C66 0 58.7 -18 58 -30C57.3 -42 62 -60.3 62 -72C62 -83.7 61 -92.3 58 -100C55 -107.7 50 -114 44 -118C38 -122 22 -124 22 -124C22 -124 9 -118.3 2 -118C-5 -117.7 -20 -122 -20 -122C-20 -122 -33.7 -118 -40 -114C-46.3 -110 -54.7 -110.3 -58 -98C-61.3 -85.7 -58.7 -56.3 -60 -40C-61.3 -23.7 -66 0 -66 0Z"/>
+<path fill="none" stroke="#8f6242" stroke-width="7" stroke-linecap="round" d="M-38 -146Q-14 -156 12 -156"/>
+<path fill="none" stroke="#4a2c17" stroke-width="8.5" stroke-linecap="round" data-part="brow-right" id="bea-brow-right" d="M-47 -103Q-31.7 -118 -11 -105"/>
+<path fill="none" stroke="#4a2c17" stroke-width="8.5" stroke-linecap="round" data-part="brow-left" id="bea-brow-left" display="inline" opacity="1" d="M47 -103Q31.7 -118 11 -105"/>
+<g data-part="pigtail-left" id="bea-pigtail-left" transform="translate(76 -116) rotate(-24)" display="inline" opacity="1">
+<path d="M-9 0C-18 14 -14 36 0 48C14 36 18 14 9 0Z" fill="#6b4226" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-4 12Q-7 26 -1 36" fill="none" stroke="#8f6242" stroke-width="3.5" stroke-linecap="round"/>
+<circle r="8" fill="#25b6c4" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="pigtail-right" id="bea-pigtail-right" transform="translate(-76 -116) rotate(24)">
+<path d="M-9 0C-18 14 -14 36 0 48C14 36 18 14 9 0Z" fill="#6b4226" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-4 12Q-7 26 -1 36" fill="none" stroke="#8f6242" stroke-width="3.5" stroke-linecap="round"/>
+<circle r="8" fill="#25b6c4" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="sweat" id="bea-sweat" display="none" opacity="0">
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(82 -104) rotate(12) scale(0.5 1)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(-84 -82) rotate(-10) scale(0.38 1)"/>
+</g>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(-23 -36) scale(0.72 1)"/>
+</g>
+</g>
+<g data-part="layer-front-arm" id="bea-layer-front-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="teddy-bear-hugged" id="bea-teddy-bear-hugged" display="none" opacity="0" transform="translate(0 -90) scale(1 1)">
+<ellipse cx="-20" cy="-12" rx="11" ry="11" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="20" cy="-12" rx="11" ry="11" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="-26" cy="40" rx="11" ry="13" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="26" cy="40" rx="11" ry="13" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="-15" cy="62" rx="12" ry="10" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="15" cy="62" rx="12" ry="10" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="44" rx="24" ry="24" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="44" rx="13" ry="13" fill="#e3bb8e" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="4" rx="26" ry="23" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="10" rx="12" ry="9" fill="#e3bb8e" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="-9" cy="-2" r="3.2" fill="#242424"/>
+<circle cx="9" cy="-2" r="3.2" fill="#242424"/>
+<path d="M-3 6H3L0 10Z" fill="#242424" stroke="#242424" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<g data-part="arm-left" id="bea-arm-left" data-pivot="50,-104" transform="translate(50 -104)">
+<g>
+<g transform="translate(0 0) rotate(-7)">
+<path d="M-13 0A13 13 0 0 1 13 0L12 58A12 12 0 0 1 -12 58Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,58" transform="translate(0 58) rotate(8)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-12 0A12 12 0 0 1 12 0L10 54A10 10 0 0 1 -10 54Z"/>
+<g data-pivot="0,54" transform="translate(0 54) scale(-0.68 0.68)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#242424" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-17 0A17 17 0 0 1 17 0L15.5 26A15.5 15.5 0 0 1 -15.5 26Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-left" id="bea-upper-arm-left" transform="translate(0 0) rotate(-7)">
+<path d="M-13 0A13 13 0 0 1 13 0L12 58A12 12 0 0 1 -12 58Z" fill="#f2c3a2"/>
+<g data-part="forearm-left" id="bea-forearm-left" data-pivot="0,58" transform="translate(0 58) rotate(8)">
+<path fill="#f2c3a2" d="M-12 0A12 12 0 0 1 12 0L10 54A10 10 0 0 1 -10 54Z"/>
+<g data-part="hand-left" id="bea-hand-left" data-pivot="0,54" transform="translate(0 54) scale(-0.68 0.68)" display="inline" opacity="1">
+<g data-part="fingers-left" id="bea-fingers-left">
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#f2c3a2" data-part="palm-left" id="bea-palm-left"/>
+<g data-part="held-left" id="bea-held-left">
+<g data-part="teddy-bear" id="bea-teddy-bear" display="none" opacity="0" transform="translate(0 50) scale(1.5 1.5)">
+<ellipse cx="-20" cy="-12" rx="11" ry="11" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="20" cy="-12" rx="11" ry="11" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="-26" cy="40" rx="11" ry="13" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="26" cy="40" rx="11" ry="13" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="-15" cy="62" rx="12" ry="10" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="15" cy="62" rx="12" ry="10" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="44" rx="24" ry="24" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="44" rx="13" ry="13" fill="#e3bb8e" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="4" rx="26" ry="23" fill="#b97a46" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="0" cy="10" rx="12" ry="9" fill="#e3bb8e" stroke="#242424" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="-9" cy="-2" r="3.2" fill="#242424"/>
+<circle cx="9" cy="-2" r="3.2" fill="#242424"/>
+<path d="M-3 6H3L0 10Z" fill="#242424" stroke="#242424" stroke-width="2" stroke-linejoin="round"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#e2a884" d="M-3 0A3 3 0 0 1 3 0L2.5 37.8A2.5 2.5 0 0 1 -2.5 37.8Z" transform="translate(5 6)"/>
+</g>
+<path data-part="sleeve-left" id="bea-sleeve-left" d="M-17 0A17 17 0 0 1 17 0L15.5 26A15.5 15.5 0 0 1 -15.5 26Z" fill="#F17C75"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" d="M-14 40H14" stroke="#ae5954"/>
+</g>
+</g>
+<ellipse data-part="shoulder-left" id="bea-shoulder-left" display="inline" opacity="1" fill="#F17C75" cx="-8" cy="3" rx="18" ry="18"/>
+</g>
+<g data-part="arm-right" id="bea-arm-right" data-pivot="-50,-104" transform="translate(-50 -104)">
+<g>
+<g transform="translate(0 0) rotate(7)">
+<path d="M-13 0A13 13 0 0 1 13 0L12 58A12 12 0 0 1 -12 58Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,58" transform="translate(0 58) rotate(-8)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-12 0A12 12 0 0 1 12 0L10 54A10 10 0 0 1 -10 54Z"/>
+<g data-pivot="0,54" transform="translate(0 54) scale(0.68 0.68)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#242424" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-17 0A17 17 0 0 1 17 0L15.5 26A15.5 15.5 0 0 1 -15.5 26Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-right" id="bea-upper-arm-right" transform="translate(0 0) rotate(7)">
+<path d="M-13 0A13 13 0 0 1 13 0L12 58A12 12 0 0 1 -12 58Z" fill="#f2c3a2"/>
+<g data-part="forearm-right" id="bea-forearm-right" data-pivot="0,58" transform="translate(0 58) rotate(-8)">
+<path fill="#f2c3a2" d="M-12 0A12 12 0 0 1 12 0L10 54A10 10 0 0 1 -10 54Z"/>
+<g data-part="hand-right" id="bea-hand-right" data-pivot="0,54" transform="translate(0 54) scale(0.68 0.68)" display="inline" opacity="1">
+<g data-part="fingers-right" id="bea-fingers-right">
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#f2c3a2" data-part="palm-right" id="bea-palm-right"/>
+<g data-part="held-right" id="bea-held-right">
+<g data-part="tablet" id="bea-tablet" display="none" opacity="0">
+<rect x="-60" y="12" width="120" height="84" rx="10" fill="#25b6c4" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="0" cy="54" r="9" fill="#e9edf2"/>
+</g>
+<g transform="translate(0 -10) scale(1.5)" data-part="colored-pencils" id="bea-colored-pencils" display="none" opacity="0">
+<path d="M-32 8H30V18H-32Z" fill="#ff6f61" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M30 8L46 13L30 18Z" fill="#f1cf9f" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-32 22H30V32H-32Z" fill="#ffd23f" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M30 22L46 27L30 32Z" fill="#f1cf9f" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-32 36H30V46H-32Z" fill="#25b6c4" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M30 36L46 41L30 46Z" fill="#f1cf9f" stroke="#242424" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#f2c3a2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#e2a884" d="M-3 0A3 3 0 0 1 3 0L2.5 37.8A2.5 2.5 0 0 1 -2.5 37.8Z" transform="translate(5 6)"/>
+<g transform="translate(0 42)" data-part="bracelet" id="bea-bracelet" display="inline" opacity="1">
+<circle cx="-8" cy="0" r="4" fill="#ffd23f" stroke="#242424" stroke-width="2"/>
+<circle cx="0" cy="0" r="4" fill="#25b6c4" stroke="#242424" stroke-width="2"/>
+<circle cx="8" cy="0" r="4" fill="#ff6f61" stroke="#242424" stroke-width="2"/>
+</g>
+</g>
+<path data-part="sleeve-right" id="bea-sleeve-right" d="M-17 0A17 17 0 0 1 17 0L15.5 26A15.5 15.5 0 0 1 -15.5 26Z" fill="#F17C75"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" d="M-14 40H14" stroke="#ae5954"/>
+</g>
+</g>
+<ellipse data-part="shoulder-right" id="bea-shoulder-right" display="inline" opacity="1" fill="#F17C75" cx="8" cy="3" rx="18" ry="18"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,47 @@
+Dois ônibus saem juntos do terminal. Um passa a sair a cada doze minutos. O outro, a cada dezoito. Quando saem juntos de novo?
+
+Até o fim desta aula, você responde isso e para de confundir MMC com MDC, com um atalho de prova: a pista no texto.
+
+Para acompanhar, lembre de duas coisas: calcular o MMC e reconhecer um problema de MDC. Se faltar alguma, procure a aula no canal.
+
+Monte a linha do tempo. O primeiro ônibus sai aos doze, vinte e quatro, trinta e seis e quarenta e oito minutos. O segundo sai aos dezoito, trinta e seis e cinquenta e quatro.
+
+Cada ônibus só sai nos múltiplos do seu intervalo. Sair junto é estar nas duas listas: múltiplo comum. E a primeira vez é o menor deles. Mínimo múltiplo comum.
+
+A primeira coincidência é em trinta e seis minutos. Se saíram juntos às sete horas, saem juntos de novo às sete e trinta e seis.
+
+E não para por aí. Eles voltam a se encontrar aos setenta e dois, aos cento e oito, e assim por diante. O MMC é o intervalo entre um encontro e outro.
+
+Sem lista, use a fatoração simultânea. Doze e dezoito, lado a lado. Por dois: seis e nove. Por dois: três e nove. Por três: um e três. Por três: um e um. Dois vezes dois vezes três vezes três: trinta e seis.
+
+Com dois números, também vale o atalho da aula de MMC: doze vezes dezoito, duzentos e dezesseis. Dividido pelo MDC, que é seis: trinta e seis.
+
+Veja os mesmos números em outra história. Duas cordas, de doze e de dezoito metros, cortadas em pedaços iguais, os maiores possíveis, sem sobra.
+
+Aqui o pedaço precisa caber nas cordas: é divisor comum, o maior. MDC de doze e dezoito: seis metros.
+
+Mesmos números, respostas diferentes. Trinta e seis nos ônibus. Seis nas cordas. Quem decide é a história, não a conta.
+
+MDC reparte: uma coisa é dividida em partes iguais. MMC repete: coisas acontecem em ciclos e voltam a coincidir.
+
+Treine o olho, sem calcular nada. Quarenta lápis e sessenta canetas em estojos iguais, o maior número possível, sem sobra: reparte, MDC. Dois amigos vão à academia, um a cada três dias, outro a cada quatro, e se encontraram hoje. Quando se encontram lá de novo? Repete, MMC.
+
+O erro mais comum é usar o MDC no problema dos ônibus. A pessoa responde seis minutos. Mas aos seis minutos nenhum ônibus voltou a sair. O encontro não pode vir antes da próxima saída de cada um.
+
+Agora o atalho, que é uma pista no texto: a cada, ao mesmo tempo, juntos de novo. Apareceu isso, é MMC.
+
+Funciona porque cada pista é um pedaço do nome. A cada é múltiplo. Junto é comum. A primeira vez de novo é mínimo.
+
+Quando não compensa? Quando a pergunta vai além do próximo encontro. Se pedir quantos encontros os ônibus têm em três horas, o MMC é só o começo: cento e oitenta minutos divididos por trinta e seis, cinco encontros, sem contar a saída do começo. E a cada, sozinho, não basta: com um ônibus só, não existe encontro, e não existe MMC.
+
+Hora de testar. Uma máquina passa por manutenção a cada quinze dias. Outra, a cada vinte. Hoje, pararam juntas. É MMC ou MDC? Daqui a quantos dias param juntas de novo?
+
+Pause o vídeo e tente.
+
+Vamos lá. A cada, juntas, de novo: MMC. Por dois: quinze e dez. Por dois: quinze e cinco. Por três: cinco e cinco. Por cinco: um e um.
+
+Multiplique a coluna: dois vezes dois vezes três vezes cinco. Sessenta dias.
+
+Resumindo: reparte em partes iguais, MDC. Repete e volta a coincidir, MMC.
+
+Na próxima aula, é a sua vez: cinco questões para praticar múltiplos, primos, MMC e MDC. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,51 @@
+Qual é o maior número que divide setenta e dois e cento e vinte, sem deixar resto? Só o cento e vinte tem dezesseis divisores. Listar tudo cansa.
+
+Até o fim desta aula, você acha esse número com poucas contas, e ainda leva um atalho de prova.
+
+Para acompanhar, você só precisa de uma coisa: fatorar, ou seja, escrever um número como multiplicação de primos. Se faltar, procure a aula no canal.
+
+Esse número se chama MDC: máximo divisor comum. O nome já explica tudo, parte por parte.
+
+Divisor: o número que divide outro sem deixar resto. Comum: que aparece na lista de todos os números. Máximo: o maior deles.
+
+Para que serve? Você tem doze laranjas e dezoito maçãs, e quer montar o maior número possível de sacolas iguais, sem sobrar fruta. O número de sacolas precisa dividir doze e também dezoito.
+
+Liste os divisores. De doze: um, dois, três, quatro, seis e doze. De dezoito: um, dois, três, seis, nove e dezoito.
+
+Nas duas listas aparecem um, dois, três e seis. O maior é seis. MDC de doze e dezoito é seis. São seis sacolas, cada uma com duas laranjas e três maçãs.
+
+Com números pequenos, isso resolve. Com números maiores, a lista cansa. E é aí que a fatoração entra.
+
+Primeiro, fatore cada número. Setenta e dois: por dois, trinta e seis. Por dois, dezoito. Por dois, nove. Por três, três. Por três, um. Ficou dois vezes dois vezes dois vezes três vezes três.
+
+Cento e vinte: por dois, sessenta. Por dois, trinta. Por dois, quinze. Por três, cinco. Por cinco, um. Ficou dois vezes dois vezes dois vezes três vezes cinco.
+
+Vem a regra do MDC: só entra o primo que divide todos os números. Na prática, ele precisa aparecer nas duas fatorações.
+
+Forme pares, um primo de cada número. Dois com dois. Dois com dois. Dois com dois. Três com três. Sobraram um três no setenta e dois e o cinco no cento e vinte. Sem par, ficam de fora.
+
+O MDC é a multiplicação dos primos que formaram par: dois vezes dois vezes dois vezes três. Vinte e quatro.
+
+Para conferir: setenta e dois dividido por vinte e quatro dá três. Cento e vinte dividido por vinte e quatro dá cinco. Nenhum resto.
+
+O erro mais comum é levar um primo que ficou sem par. Setenta e dois tem o três repetido, e a pessoa escreve o três duas vezes no MDC. Dá setenta e dois. Mas cento e vinte dividido por setenta e dois deixa resto. Cada primo entra só as vezes que aparece nas duas fatorações.
+
+Agora o atalho: divida os números ao mesmo tempo. Escreva lado a lado e use só primos que dividam todos.
+
+Por dois: trinta e seis e sessenta. Por dois: dezoito e trinta. Por dois: nove e quinze. Por três: três e cinco. Três e cinco só têm o um em comum: pare. Multiplique a coluna: dois vezes dois vezes dois vezes três. Vinte e quatro.
+
+Funciona porque cada primo usado divide todos os números, que é a regra do MDC. Você faz uma conta só, em vez de duas fatorações.
+
+Quando não compensa? Quando nenhuma regra de divisibilidade mostra um primo comum, como em noventa e um e sessenta e cinco. Aí é melhor fatorar cada um: sete vezes treze e cinco vezes treze. MDC treze.
+
+Hora de testar. Qual é o MDC de quarenta e oito e sessenta?
+
+Pause o vídeo e tente.
+
+Vamos lá. Quarenta e oito é dois vezes dois vezes dois vezes dois vezes três. Sessenta é dois vezes dois vezes três vezes cinco.
+
+Formam par: dois com dois, dois com dois, três com três. Dois vezes dois vezes três. Doze.
+
+Resumindo: fatore cada número, junte os primos que aparecem em todos e multiplique.
+
+Na próxima aula, o outro lado da moeda: o MMC, o menor múltiplo que os números têm em comum. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

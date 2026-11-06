@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biscuit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="biscuit.css">
+</head>
+<body>
+<div class="demo">
+  <header class="demo-head">
+    <h1>Biscuit</h1>
+    <p>Survive the Headline · o cachorro dos Rivera · mascote do canal · modelo-base único</p>
+  </header>
+
+  <div class="bench">
+    <div class="stage" id="stage" data-bg="checker"><div class="biscuit-host" id="biscuit"></div></div>
+    <aside class="panel" aria-label="Controles">
+      <section class="group"><h2>Expressão</h2><div class="chips" id="c-expression"></div></section>
+      <section class="group"><h2>Pose</h2><div class="chips" id="c-pose"></div></section>
+      <section class="group"><h2>Direção</h2><div class="chips" id="c-direction"></div></section>
+      <section class="group"><h2>Animação</h2><div class="chips" id="c-animation"></div></section>
+      <section class="group"><h2>Bolinha</h2><div class="chips" id="c-ball"></div></section>
+            <section class="group"><h2>Acessórios e movimentos</h2><div class="chips" id="c-toggles"></div></section>
+            <section class="group"><h2>Fundo</h2><div class="chips" id="c-bg"></div></section>
+      <section class="group">
+        <h2>Última chamada da API</h2>
+        <div class="readout" id="readout" aria-live="polite">biscuit.setPose('standing');</div>
+        <div class="chips"><button type="button" id="copy-svg">Copiar SVG do quadro</button></div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="sheet">
+    <h2>Expressões</h2>
+    <p>Todas as cabeças abaixo são o mesmo modelo com valores diferentes. Clique para aplicar ao personagem principal.</p>
+    <div class="cells" id="sheet-expr"></div>
+  </section>
+
+  <section class="sheet">
+    <h2>Poses</h2>
+    <div class="cells" id="sheet-pose"></div>
+  </section>
+
+  <section class="sheet">
+    <h2>Incorporar em outro projeto</h2>
+    <p>Modelo editável com todas as partes nomeadas: <a href="assets/biscuit-model.svg">assets/biscuit-model.svg</a>. Abre no Illustrator, Figma ou Inkscape.</p>
+<pre class="embed">&lt;link rel="stylesheet" href="biscuit.css"&gt;
+&lt;div id="palco" style="width:480px;height:480px"&gt;&lt;/div&gt;
+&lt;script src="biscuit.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  const biscuit = new BiscuitRivera('#palco');
+  biscuit.setExpression('curious').setPose('sitting').setDirection('right');
+
+  // Acessórios: true liga, false desliga, 'auto' deixa a pose decidir
+  biscuit.setAccessory('bone', true);
+  biscuit.setAccessory('collar', false);
+  biscuit.setAccessory('ball', 'auto');
+
+  // Animações independentes da pose
+  biscuit.setAnimation('tail_wag');
+  biscuit.setAnimation('bark');
+&lt;/script&gt;</pre>
+  </section>
+</div>
+
+<script src="biscuit.js"></script>
+<script>
+(function () {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const biscuit = window.biscuit = new BiscuitRivera('#biscuit', { animation: reduced ? 'none' : 'idle' });
+  if (reduced) biscuit.setBreathing(false).setBlinking(false);
+  const readout = document.getElementById('readout');
+  const log = text => { readout.textContent = text; };
+
+  function chips(id, items, current, onPick) {
+    const box = document.getElementById(id);
+    const buttons = items.map(([value, label]) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = label;
+      b.dataset.value = value;
+      b.setAttribute('aria-pressed', String(value === current));
+      b.addEventListener('click', () => { select(value); onPick(value); });
+      box.appendChild(b);
+      return b;
+    });
+    function select(value) {
+      buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.value === value)));
+    }
+    return select;
+  }
+
+  const EXPR = { neutral: 'Neutro', happy: 'Feliz', excited: 'Empolgado', curious: 'Curioso', confused: 'Confuso', shocked: 'Chocado', scared: 'Assustado', sad: 'Triste', angry: 'Bravo', sleepy: 'Com sono', hungry: 'Com fome', suspicious: 'Desconfiado', guilty: 'Culpado' };
+  const POSE = { idle: 'Relaxado', standing: 'Em pé', sitting: 'Sentado', lying_down: 'Deitado', sleeping: 'Dormindo', running: 'Correndo', walking: 'Andando', jumping: 'Pulando', begging: 'Pedindo', playing: 'Brincando', sniffing: 'Farejando', barking: 'Latindo', looking_up: 'Olhando para cima', head_tilt: 'Cabeça inclinada', rolling: 'Rolando', hiding: 'Escondido' };
+  const ANIM = { none: 'Parado', idle: 'Natural', tail_wag: 'Abanando', bark: 'Latido', pant: 'Ofegando', sleep: 'Sono', ear_flap: 'Orelhas', head_shake: 'Sacudindo', tremble: 'Tremendo' };
+
+  const pickExpr = chips('c-expression', Object.entries(EXPR), 'neutral', v => { biscuit.setExpression(v); log(`biscuit.setExpression('${v}');`); });
+  const pickPose = chips('c-pose', Object.entries(POSE), 'standing', v => { biscuit.setPose(v); log(`biscuit.setPose('${v}');`); });
+  chips('c-direction', [['left', 'Perfil esq.'], ['three-quarter-left', '3/4 esq.'], ['front', 'Frente'], ['three-quarter-right', '3/4 dir.'], ['right', 'Perfil dir.']], 'right', v => { biscuit.setDirection(v); log(`biscuit.setDirection('${v}');`); });
+  chips('c-animation', Object.entries(ANIM), reduced ? 'none' : 'idle', v => { biscuit.setAnimation(v); log(`biscuit.setAnimation('${v}');`); });
+  const tri = [['auto', 'Pela pose'], ['on', 'Ligado'], ['off', 'Desligado']];
+  const triValue = v => (v === 'auto' ? `'auto'` : v === 'on');
+  const triApply = name => v => {
+    biscuit.setAccessory(name, v === 'auto' ? 'auto' : v === 'on');
+    log(`biscuit.setAccessory('${name}', ${triValue(v)});`);
+  };
+  chips('c-ball', tri, 'auto', triApply('ball'));
+  chips('c-bg', [['checker', 'Quadriculado'], ['transparent', 'Transparente'], ['chroma', 'Chroma'], ['scene', 'Cena']], 'checker', v => { document.getElementById('stage').dataset.bg = v; });
+
+  const toggles = document.getElementById('c-toggles');
+  function toggle(label, initial, apply) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = label;
+    let on = initial;
+    b.setAttribute('aria-pressed', String(on));
+    b.addEventListener('click', () => { on = !on; b.setAttribute('aria-pressed', String(on)); log(apply(on)); });
+    toggles.appendChild(b);
+  }
+  const acc = (name, on) => { biscuit.setAccessory(name, on); return `biscuit.setAccessory('${name}', ${on});`; };
+  toggle('Visível', true, on => { biscuit.setVisible(on); return `biscuit.setVisible(${on});`; });
+  toggle('Coleira', true, on => acc('collar', on));
+  toggle('Osso', false, on => acc('bone', on));
+  toggle('Tigela', false, on => acc('bowl', on));
+  toggle('Sombra', true, on => acc('shadow', on));
+  toggle('Respiração', !reduced, on => { biscuit.setBreathing(on); return `biscuit.setBreathing(${on});`; });
+  toggle('Piscar', !reduced, on => { biscuit.setBlinking(on); return `biscuit.setBlinking(${on});`; });
+
+  const copyBtn = document.getElementById('copy-svg');
+  copyBtn.addEventListener('click', async () => {
+    const original = copyBtn.textContent;
+    try {
+      await navigator.clipboard.writeText(biscuit.toSVG());
+      copyBtn.textContent = 'SVG copiado';
+    } catch (err) {
+      copyBtn.textContent = 'Cópia bloqueada';
+    }
+    setTimeout(() => { copyBtn.textContent = original; }, 1600);
+  });
+
+  function cell(parent, cls, label, configure, onClick) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'cell ' + cls;
+    const view = document.createElement('div');
+    view.className = 'view';
+    const host = document.createElement('div');
+    host.className = 'biscuit-host';
+    view.appendChild(host);
+    const name = document.createElement('span');
+    name.textContent = label;
+    b.append(view, name);
+    b.addEventListener('click', onClick);
+    parent.appendChild(b);
+    const d = new BiscuitRivera(host, { autoStart: false, animation: 'none' });
+    d.setBlinking(false).setBreathing(false).setAccessory('shadow', cls !== 'face');
+    configure(d);
+    d.tick(0);
+  }
+  const exprBox = document.getElementById('sheet-expr');
+  BiscuitRivera.EXPRESSIONS.forEach(n => cell(exprBox, 'face', n, d => d.setDirection('front', { duration: 0 }).setExpression(n, { duration: 0 }), () => { pickExpr(n); biscuit.setExpression(n); log(`biscuit.setExpression('${n}');`); }));
+  const poseBox = document.getElementById('sheet-pose');
+  BiscuitRivera.POSES.forEach(n => cell(poseBox, 'body', n, d => d.setPose(n, { duration: 0 }), () => { pickPose(n); biscuit.setPose(n); log(`biscuit.setPose('${n}');`); }));
+})();
+</script>
+</body>
+</html>

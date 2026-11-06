@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>#s{width:1600px;height:900px}</style></head><body><div id="s"></div><div id="a" style="width:850px;height:860px"></div><pre id="out">pending</pre><div id="models"></div>
+<script src="../engine/SVGRenderer.js"></script><script src="../engine/ExpressionEngine.js"></script><script src="../engine/PoseController.js"></script><script src="../engine/AnimationEngine.js"></script><script src="../engine/LipSyncEngine.js"></script><script src="../engine/CharacterEngine.js"></script><script src="../engine/rigs/HumanRig.js"></script><script src="../engine/rigs/QuadrupedRig.js"></script><script src="../scenes/backdrops.js"></script><script src="../scenes/family-scene.js"></script>
+<script>
+CharacterEngine.configure({ basePath: '../characters/' });
+const out = []; const ok = (n, c) => out.push((c ? 'PASS ' : 'FAIL ') + n);
+const NAMES = ['dan', 'mia', 'leo', 'bea', 'biscuit'];
+const bad = svg => { let b = 0; svg.querySelectorAll('*').forEach(el => { for (const a of Array.from(el.attributes)) if (/NaN|undefined/.test(a.value)) b++; }); return b; };
+const height = c => { let top = 1e9, bot = -1e9; c.svg.querySelectorAll('path').forEach(el => { if (el.closest('[display="none"]') || el.closest('defs') || !el.getAttribute('d')) return; const ctm = el.getScreenCTM(), n = el.getTotalLength(); for (let i = 0; i <= 14; i++) { const q = el.getPointAtLength(n * i / 14).matrixTransform(ctm); top = Math.min(top, q.y); bot = Math.max(bot, q.y); } }); return bot - top; };
+(async () => {
+  try {
+    const all = {};
+    for (const n of NAMES) {
+      const h = document.createElement('div'); h.style.cssText = 'width:850px;height:860px'; document.getElementById('a').append(h);
+      const c = all[n] = await CharacterEngine.load(n, { container: h, autoStart: false, animation: 'none', direction: n === 'biscuit' ? 'right' : 'front' });
+      c.svg.setAttribute('width', 850); c.svg.setAttribute('height', 860); c.setBreathing(false).setBlinking(false).tick(0);
+      ok(n + ' api', c.setExpression('neutral') === c && c.setPose(c.poses[0]) === c && c.play('idle') === c && c.setDirection('left') === c && c.setVisible(true) === c);
+      c.setDirection(n === 'biscuit' ? 'right' : 'front', { duration: 0 }).play('none', { duration: 0 }).setPose(n === 'biscuit' ? 'standing' : 'standing', { duration: 0 }).tick(16);
+    }
+    const H = {}; NAMES.forEach(n => { H[n] = height(all[n]); });
+    const target = { mia: 94, leo: 88, bea: 57, biscuit: 28 };
+    Object.keys(target).forEach(n => { const p = H[n] / H.dan * 100; ok(n + ' proporção ' + p.toFixed(1) + '% (alvo ' + target[n] + '%)', Math.abs(p - target[n]) < 1); });
+    for (const n of ['dan', 'mia', 'leo', 'bea']) {
+      const miss = ['neutral', 'happy', 'worried', 'shocked', 'angry', 'thinking', 'talking', 'surprised'].filter(e => !all[n].expressions.includes(e));
+      ok(n + ' expressões humanas obrigatórias ' + miss.join(','), !miss.length);
+    }
+    for (const n of NAMES) {
+      const c = all[n], base = c.svg.querySelectorAll('*').length; let same = true, nan = 0, combos = 0;
+      for (const p of c.poses) for (const e of c.expressions) for (const d of ['front', 'left', 'three-quarter-right']) { c.setPose(p, { duration: 0 }).setExpression(e, { duration: 0 }).setDirection(d, { duration: 0 }).tick(16); combos++; if (c.svg.querySelectorAll('*').length !== base) same = false; nan += bad(c.svg); }
+      ok(n + ' mesmo modelo em ' + combos + ' combinações (' + base + ' nós)', same); ok(n + ' sem valor inválido', !nan);
+      c.setDirection(n === 'biscuit' ? 'right' : 'front', { duration: 0 }).setPose(c.poses[0], { duration: 0 }).setExpression('neutral', { duration: 0 });
+      let threw = 0; for (const fn of [() => c.setPose('x'), () => c.setExpression('x'), () => c.play('x'), () => c.setDirection('x'), () => c.setAccessory('x', 1)]) { try { fn(); } catch (e) { threw++; } } ok(n + ' nomes inválidos geram erro', threw === 5);
+      let an = 0; c.play('idle', { duration: 0 }); for (const p of c.poses.concat(c.poses)) { c.setPose(p).setExpression(c.expressions[0]); for (const a of c.animations) { c.play(a); for (let k = 0; k < 3; k++) c.tick(33); } an += bad(c.svg); } ok(n + ' estável em transições interrompidas', !an);
+      ['ids'].forEach(() => { const ids = Array.from(c.svg.querySelectorAll('[id]')).map(e => e.id); ok(n + ' ids únicos (' + ids.length + ') ' + ids.filter((x, i) => ids.indexOf(x) !== i).join(','), new Set(ids).size === ids.length); });
+    }
+    /* estados independentes */
+    all.dan.setExpression('happy', { duration: 0 }); all.mia.setExpression('angry', { duration: 0 });
+    ok('estados independentes', all.dan.getState().expression === 'happy' && all.mia.getState().expression === 'angry');
+    /* lip sync e fala */
+    const dan = all.dan; dan.setExpression('neutral', { duration: 0 }).play('none', { duration: 0 }).tick(0);
+    const m = () => dan.svg.querySelector('#' + dan.prefix + '-mouth path').getAttribute('d'), m0 = m();
+    dan.speak('Bom dia, família', 1.5); const seen = new Set(); for (let i = 0; i < 60; i++) { dan.tick(33); seen.add(m()); } ok('lip sync muda a boca (' + seen.size + ')', seen.size > 6);
+    for (let i = 0; i < 30; i++) dan.tick(33); ok('lip sync volta à expressão', m() === m0);
+    dan.setExpression('talking', { duration: 0 }); const s2 = new Set(); for (let i = 0; i < 20; i++) { dan.tick(33); s2.add(m()); } ok('expressão talking mexe a boca', s2.size > 4); dan.setExpression('neutral', { duration: 0 });
+    /* braço */
+    const mia = all.mia; mia.setPose('standing', { duration: 0 }).play('none', { duration: 0 }).tick(0);
+    const up = s => mia.svg.querySelector('#' + mia.prefix + '-upper-arm-' + s).getAttribute('transform'), r0 = up('right'), l0 = up('left');
+    mia.setArm('right', { shoulder: -40, elbow: -60 }); for (let i = 0; i < 30; i++) mia.tick(16); ok('setArm independente', up('right') !== r0 && up('left') === l0); mia.setArm('right', null); for (let i = 0; i < 30; i++) mia.tick(16);
+    mia.setOutfit('scrubs'); ok('figurino troca e prende o cabelo', mia.getState().hair === 'up'); mia.setOutfit('casual');
+    /* cenas */
+    const scene = CharacterEngine.createScene('#s', { autoStart: false });
+    for (const b of STH.Backdrops.list()) { scene.setBackground(b.id); scene.tick(0); }
+    ok('cenários (' + STH.Backdrops.list().length + ')', STH.Backdrops.list().length >= 9);
+    const F = STH.FamilyScene, cast = await F.setup(scene);
+    let i = 0, nanS = 0; for (let f = 0; f < F.duration * 30; f++) { const t = f / 30; while (i < F.beats.length && F.beats[i].t <= t) F.beats[i++].run(cast); scene.tick(1000 / 30); if (f % 30 === 0) nanS += bad(scene.svg); }
+    ok('cena de família do início ao fim', !nanS && i === F.beats.length);
+    const run = async () => { const sc = document.createElement('div'); document.body.append(sc); const s = CharacterEngine.createScene(sc, { autoStart: false }); const c = await F.setup(s); let k = 0; const fr = []; for (let f = 0; f < 90; f++) { const t = f / 30; while (k < F.beats.length && F.beats[k].t <= t) F.beats[k++].run(c); s.tick(1000 / 30); if (f % 30 === 0) fr.push(s.toSVG()); } s.destroy(); sc.remove(); return fr.join(''); };
+    ok('cena determinística', (await run()) === (await run()));
+    const parsed = new DOMParser().parseFromString(scene.toSVG(), 'image/svg+xml'); ok('SVG da cena válido', !parsed.querySelector('parsererror'));
+    /* modelos */
+    for (const n of NAMES) { const h = document.createElement('div'); document.getElementById('a').append(h); const c = await CharacterEngine.load(n, { container: h, autoStart: false, animation: 'none', idPrefix: n, direction: n === 'biscuit' ? 'right' : 'front', seed: 1 }); c.setBreathing(false).setBlinking(false).tick(0); const t = document.createElement('textarea'); t.id = 'model-' + n; t.textContent = c.toSVG(); document.getElementById('models').append(t); }
+  } catch (e) { out.push('FAIL exceção ' + e.message + ' ' + e.stack); }
+  document.getElementById('out').textContent = 'RESULT\n' + out.join('\n') + '\nEND';
+})();
+</script></body></html>

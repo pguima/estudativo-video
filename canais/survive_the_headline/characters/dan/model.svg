@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-425 -480 850 860" role="img" aria-label="Dan Rivera" preserveAspectRatio="xMidYMax meet" overflow="visible" opacity="1" display="inline" xmlns="http://www.w3.org/2000/svg">
+<title>Dan - modelo-base de Survive the Headline</title>
+<desc>Partes alternativas e acessorios existem com display=none. Cada parte tem id e data-part; data-pivot marca o ponto de articulacao. A animacao vem do rig em engine/rigs.</desc>
+<defs>
+<clipPath id="dan-clip-eye-r">
+<path d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0C14.4 23.2 -14.4 23.2 -20 0Z"/>
+</clipPath>
+<clipPath id="dan-clip-eye-l">
+<path d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0C14.4 23.2 -14.4 23.2 -20 0Z"/>
+</clipPath>
+<clipPath id="dan-clip-mouth">
+<path d="M-26 -1.8C-14.3 1.2 14.3 1.2 26 -1.8C14.3 1.2 -14.3 1.2 -26 -1.8Z"/>
+</clipPath>
+</defs>
+<g transform="translate(0 340) scale(1) translate(0 -340)" data-part="proportion">
+<ellipse cx="0" cy="346" rx="150" ry="17" fill="#000" fill-opacity="0.22" data-part="shadow" id="dan-shadow" display="inline" opacity="1"/>
+<g data-part="character" id="dan-character" transform="scale(1 1)">
+<g data-part="seat" id="dan-seat" display="none" opacity="0" transform="translate(0 340) scale(1 1.873) translate(0 -340)">
+<rect x="-74" y="182" width="148" height="24" rx="6" fill="#a5764a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-62 206L-74 340H-58L-40 206Z" fill="#7d5533" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M62 206L74 340H58L40 206Z" fill="#7d5533" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-64 276H64V290H-64Z" fill="#a5764a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g transform="translate(232 242)" data-part="toolbox" id="dan-toolbox" display="none" opacity="0">
+<path d="M-42 0V-22Q-42 -30 -34 -30H34Q42 -30 42 -22V0H30V-18H-30V0Z" fill="#7f8a96" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-82" y="0" width="164" height="98" rx="8" fill="#e0422f" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-80" y="30" width="160" height="7" fill="#a92d1f"/>
+<rect x="-14" y="24" width="28" height="22" rx="3" fill="#b9c2cc" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="pelvis" id="dan-pelvis" data-pivot="0,0" transform="translate(0 0)">
+<g data-part="layer-back-arm" id="dan-layer-back-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)"/>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" data-part="hips-outline" id="dan-hips-outline" d="M-78 -8C-91.3 -1.7 -83.3 16.7 -80 26C-76.7 35.3 -71.3 43.7 -58 48C-44.7 52.3 -19.3 52 0 52C19.3 52 44.7 52.3 58 48C71.3 43.7 76.7 35.3 80 26C83.3 16.7 91.3 -1.7 78 -8C64.7 -14.3 26 -12 0 -12C-26 -12 -64.7 -14.3 -78 -8Z"/>
+<g data-part="leg-left" id="dan-leg-left" data-pivot="38,10" transform="translate(38 10)">
+<g>
+<g transform="translate(0 0) rotate(-3)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-34 0A34 34 0 0 1 34 0L27 146A27 27 0 0 1 -27 146Z"/>
+<g data-pivot="0,146" transform="translate(0 146) rotate(3)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-27 0A27 27 0 0 1 27 0L26 146A26 26 0 0 1 -26 146Z"/>
+<g data-pivot="0,146" transform="translate(5 146)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-25 -8C-33.5 -5 -24.7 4.7 -26 10C-27.3 15.3 -32 19.7 -33 24C-34 28.3 -32 36 -32 36C-32 36 32 36 32 36C32 36 34 28.3 33 24C32 19.7 27.3 15.3 26 10C24.7 4.7 33.5 -5 25 -8C16.5 -11 -16.5 -11 -25 -8Z"/>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-33 27C-33 27 -34 40 -34 40C-34 40 34 40 34 40C34 40 33 27 33 27C33 27 -33 27 -33 27Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-left" id="dan-thigh-left" transform="translate(0 0) rotate(-3)">
+<path d="M-34 0A34 34 0 0 1 34 0L27 146A27 27 0 0 1 -27 146Z" fill="#3f74b5"/>
+<g data-part="shin-left" id="dan-shin-left" data-pivot="0,146" transform="translate(0 146) rotate(3)">
+<path d="M-27 0A27 27 0 0 1 27 0L26 146A26 26 0 0 1 -26 146Z" fill="#3f74b5"/>
+<g data-part="foot-left" id="dan-foot-left" data-pivot="0,146" transform="translate(5 146)">
+<path d="M-25 -8C-33.5 -5 -24.7 4.7 -26 10C-27.3 15.3 -32 19.7 -33 24C-34 28.3 -32 36 -32 36C-32 36 32 36 32 36C32 36 34 28.3 33 24C32 19.7 27.3 15.3 26 10C24.7 4.7 33.5 -5 25 -8C16.5 -11 -16.5 -11 -25 -8Z" fill="#7a4a26"/>
+<path fill="none" stroke-width="4" stroke-linecap="round" stroke="#5f381b" d="M-26 10Q0 16 26 10"/>
+<path fill="none" stroke="#d9b98a" stroke-width="3.5" stroke-linecap="round" d="M-12 2H10M-10 12H16"/>
+<path d="M-33 27C-33 27 -34 40 -34 40C-34 40 34 40 34 40C34 40 33 27 33 27C33 27 -33 27 -33 27Z" fill="#35200f"/>
+<path d="M-26 -10H26" fill="none" stroke-width="6" stroke-linecap="round" stroke="#6f9dd2"/>
+</g>
+<path d="M-7 0A7 7 0 0 1 7 0L7 112A7 7 0 0 1 -7 112Z" transform="translate(15 14) scale(1 1)" fill="#315e98"/>
+<path d="M-15 -3Q0 8 15 -3" fill="none" stroke-width="3.5" stroke-linecap="round" stroke="#315e98"/>
+</g>
+<path d="M-8 0A8 8 0 0 1 8 0L7 120A7 7 0 0 1 -7 120Z" transform="translate(15 8) scale(1 1)" fill="#315e98" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<g data-part="leg-right" id="dan-leg-right" data-pivot="-38,10" transform="translate(-38 10)">
+<g>
+<g transform="translate(0 0) rotate(3)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-34 0A34 34 0 0 1 34 0L27 146A27 27 0 0 1 -27 146Z"/>
+<g data-pivot="0,146" transform="translate(0 146) rotate(-3)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-27 0A27 27 0 0 1 27 0L26 146A26 26 0 0 1 -26 146Z"/>
+<g data-pivot="0,146" transform="translate(-5 146)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-25 -8C-33.5 -5 -24.7 4.7 -26 10C-27.3 15.3 -32 19.7 -33 24C-34 28.3 -32 36 -32 36C-32 36 32 36 32 36C32 36 34 28.3 33 24C32 19.7 27.3 15.3 26 10C24.7 4.7 33.5 -5 25 -8C16.5 -11 -16.5 -11 -25 -8Z"/>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-33 27C-33 27 -34 40 -34 40C-34 40 34 40 34 40C34 40 33 27 33 27C33 27 -33 27 -33 27Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-right" id="dan-thigh-right" transform="translate(0 0) rotate(3)">
+<path d="M-34 0A34 34 0 0 1 34 0L27 146A27 27 0 0 1 -27 146Z" fill="#3f74b5"/>
+<g data-part="shin-right" id="dan-shin-right" data-pivot="0,146" transform="translate(0 146) rotate(-3)">
+<path d="M-27 0A27 27 0 0 1 27 0L26 146A26 26 0 0 1 -26 146Z" fill="#3f74b5"/>
+<g data-part="foot-right" id="dan-foot-right" data-pivot="0,146" transform="translate(-5 146)">
+<path d="M-25 -8C-33.5 -5 -24.7 4.7 -26 10C-27.3 15.3 -32 19.7 -33 24C-34 28.3 -32 36 -32 36C-32 36 32 36 32 36C32 36 34 28.3 33 24C32 19.7 27.3 15.3 26 10C24.7 4.7 33.5 -5 25 -8C16.5 -11 -16.5 -11 -25 -8Z" fill="#7a4a26"/>
+<path fill="none" stroke-width="4" stroke-linecap="round" stroke="#5f381b" d="M-26 10Q0 16 26 10"/>
+<path fill="none" stroke="#d9b98a" stroke-width="3.5" stroke-linecap="round" d="M-12 2H10M-10 12H16"/>
+<path d="M-33 27C-33 27 -34 40 -34 40C-34 40 34 40 34 40C34 40 33 27 33 27C33 27 -33 27 -33 27Z" fill="#35200f"/>
+<path d="M-26 -10H26" fill="none" stroke-width="6" stroke-linecap="round" stroke="#6f9dd2"/>
+</g>
+<path d="M-7 0A7 7 0 0 1 7 0L7 112A7 7 0 0 1 -7 112Z" transform="translate(15 14) scale(1 1)" fill="#315e98"/>
+<path d="M-15 -3Q0 8 15 -3" fill="none" stroke-width="3.5" stroke-linecap="round" stroke="#315e98"/>
+</g>
+<path d="M-8 0A8 8 0 0 1 8 0L7 120A7 7 0 0 1 -7 120Z" transform="translate(15 8) scale(1 1)" fill="#315e98" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<path fill="#3f74b5" data-part="hips" id="dan-hips" d="M-78 -8C-91.3 -1.7 -83.3 16.7 -80 26C-76.7 35.3 -71.3 43.7 -58 48C-44.7 52.3 -19.3 52 0 52C19.3 52 44.7 52.3 58 48C71.3 43.7 76.7 35.3 80 26C83.3 16.7 91.3 -1.7 78 -8C64.7 -14.3 26 -12 0 -12C-26 -12 -64.7 -14.3 -78 -8Z"/>
+<g data-part="layer-neck" id="dan-layer-neck" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="neck" id="dan-neck" transform="translate(0 -250)">
+<path d="M-29 0A29 29 0 0 1 29 0L31 46A31 31 0 0 1 -31 46Z" fill="#eab48e" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-27 2H27V16Q0 28 -27 16Z" fill="#d6976f"/>
+</g>
+</g>
+<g data-part="torso" id="dan-torso" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<path fill="#243B5A" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-38 -234C-53.3 -235 -81 -225.7 -92 -218C-103 -210.3 -103.2 -204.3 -104 -188C-104.8 -171.7 -100 -144.7 -97 -120C-94 -95.3 -87.2 -65 -86 -40C-84.8 -15 -90 30 -90 30C-90 30 -55 34.7 -40 36C-25 37.3 -13.3 38 0 38C13.3 38 25 37.3 40 36C55 34.7 90 30 90 30C90 30 84.8 -15 86 -40C87.2 -65 94 -95.3 97 -120C100 -144.7 104.8 -171.7 104 -188C103.2 -204.3 103 -210.3 92 -218C81 -225.7 53.3 -235 38 -234C22.7 -233 12.7 -212 0 -212C-12.7 -212 -22.7 -233 -38 -234Z"/>
+<path fill="#1c2e46" d="M64 34C68.7 40.7 86.3 42.3 90 30C93.7 17.7 84.8 -15 86 -40C87.2 -65 94.7 -100 97 -120C99.3 -140 103.2 -158.3 100 -160C96.8 -161.7 83.7 -146.7 78 -130C72.3 -113.3 68.7 -80 66 -60C63.3 -40 62.3 -25.7 62 -10C61.7 5.7 59.3 27.3 64 34Z" display="inline" opacity="1"/>
+<path fill="none" stroke="#162336" stroke-width="3.5" stroke-linecap="round" d="M-58 -34Q-30 -22 -8 -28M62 -86Q44 -70 20 -72"/>
+<path fill="none" stroke="#162336" stroke-width="9" stroke-linecap="round" data-part="collar" id="dan-collar" d="M-38 -232Q0 -192 38 -232"/>
+</g>
+<g data-part="toolbelt" id="dan-toolbelt" data-pivot="0,0" transform="translate(0 0) scale(1 1)" display="none" opacity="0">
+<path fill="#8a5a2e" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="belt" id="dan-belt"/>
+<rect width="26" height="22" rx="3" fill="#b9c2cc" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-part="pouch" id="dan-pouch">
+<rect x="8" y="-24" width="9" height="28" rx="3" fill="#f4b41a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-14 -30L-6 -30L-4 4L-12 4Z" fill="#b9c2cc" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-26 0H26L22 52Q0 62 -22 52Z" fill="#65401f" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-22 14H22" stroke="#8a5a2e" stroke-width="4" fill="none"/>
+</g>
+<g data-part="pouch-far" id="dan-pouch-far">
+<path d="M-22 0H22L18 42Q0 50 -18 42Z" fill="#65401f" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<g data-part="layer-head" id="dan-layer-head" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="head" id="dan-head" data-pivot="0,-256" transform="translate(0 -256)">
+<g data-part="ears-back" id="dan-ears-back">
+<g transform="translate(81 -66) scale(-1 1)" display="inline" opacity="1">
+<path d="M-4 -24Q-22 -26 -20 -2Q-18 24 2 20Q10 0 -4 -24Z" fill="#eab48e" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-6 -12Q-14 -10 -11 3" fill="none" stroke="#d6976f" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(-81 -66) scale(1 1)">
+<path d="M-4 -24Q-22 -26 -20 -2Q-18 24 2 20Q10 0 -4 -24Z" fill="#eab48e" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-6 -12Q-14 -10 -11 3" fill="none" stroke="#d6976f" stroke-width="4" stroke-linecap="round"/>
+</g>
+</g>
+<path fill="#eab48e" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="face" id="dan-face" d="M0 8C11.3 8 23.7 9 34 5C44.3 1 55.3 -5.5 62 -16C68.7 -26.5 71.3 -44 74 -58C76.7 -72 79.3 -86.3 78 -100C76.7 -113.7 73.3 -129.7 66 -140C58.7 -150.3 45 -157.3 34 -162C23 -166.7 11.3 -168 0 -168C-11.3 -168 -23 -166.7 -34 -162C-45 -157.3 -58.7 -150.3 -66 -140C-73.3 -129.7 -76.7 -113.7 -78 -100C-79.3 -86.3 -76.7 -72 -74 -58C-71.3 -44 -68.7 -26.5 -62 -16C-55.3 -5.5 -44.3 1 -34 5C-23.7 9 -11.3 8 0 8Z"/>
+<path fill="#e0ac88" data-part="stubble" id="dan-stubble" d="M74 -58C75 -51.3 68.7 -26.5 62 -16C55.3 -5.5 44.3 1 34 5C23.7 9 11.3 8 0 8C-11.3 8 -23.7 9 -34 5C-44.3 1 -55.3 -5.5 -62 -16C-68.7 -26.5 -75 -51.3 -74 -58C-73 -64.7 -61.7 -59 -56 -56C-50.3 -53 -46.7 -42 -40 -40C-33.3 -38 -22.7 -44 -16 -44C-9.3 -44 -5.3 -40 0 -40C5.3 -40 9.3 -44 16 -44C22.7 -44 33.3 -38 40 -40C46.7 -42 50.3 -53 56 -56C61.7 -59 73 -64.7 74 -58Z"/>
+<path fill="#d6976f" fill-opacity="0.75" d="M34 5C40 2.3 55.3 -5.5 62 -16C68.7 -26.5 71.3 -44 74 -58C76.7 -72 78.3 -93 78 -100C77.7 -107 74 -106.7 72 -100C70 -93.3 69.3 -73 66 -60C62.7 -47 58.7 -32 52 -22C45.3 -12 29 -4.5 26 0C23 4.5 28 7.7 34 5Z" display="inline" opacity="1"/>
+<path data-part="tint" id="dan-tint" d="M0 8C11.3 8 23.7 9 34 5C44.3 1 55.3 -5.5 62 -16C68.7 -26.5 71.3 -44 74 -58C76.7 -72 79.3 -86.3 78 -100C76.7 -113.7 73.3 -129.7 66 -140C58.7 -150.3 45 -157.3 34 -162C23 -166.7 11.3 -168 0 -168C-11.3 -168 -23 -166.7 -34 -162C-45 -157.3 -58.7 -150.3 -66 -140C-73.3 -129.7 -76.7 -113.7 -78 -100C-79.3 -86.3 -76.7 -72 -74 -58C-71.3 -44 -68.7 -26.5 -62 -16C-55.3 -5.5 -44.3 1 -34 5C-23.7 9 -11.3 8 0 8Z" fill="#e0392b" opacity="0"/>
+<g data-part="mouth" id="dan-mouth" transform="translate(0 -24)">
+<path fill="#5a1c22" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-26 -1.8C-14.3 1.2 14.3 1.2 26 -1.8C14.3 1.2 -14.3 1.2 -26 -1.8Z" display="none" opacity="0"/>
+<g clip-path="url(#dan-clip-mouth)">
+<ellipse fill="#d9636a" cx="0" cy="1.2" rx="16.1" ry="0" display="none" opacity="0"/>
+<rect fill="#fbf7ee" x="-60" width="120" y="-14.8" height="16" display="none" opacity="0"/>
+<path fill="none" stroke="#242424" stroke-width="2.5" d="M0 0"/>
+</g>
+<path fill="none" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-26 -1.8C-14.3 1.2 14.3 1.2 26 -1.8" display="inline" opacity="1"/>
+</g>
+<g data-part="eye-right" id="dan-eye-right" transform="translate(-34 -84) scale(1 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3" stroke-linejoin="round" d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0C14.4 23.2 -14.4 23.2 -20 0Z" display="inline" opacity="1"/>
+<g clip-path="url(#dan-clip-eye-r)" display="inline" opacity="1">
+<g data-part="pupil-right" id="dan-pupil-right" transform="translate(0 0) scale(1 1)">
+<circle r="12.5" fill="#5a3a22"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="6.5" stroke-linecap="round" d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0"/>
+</g>
+<g data-part="eye-left" id="dan-eye-left" display="inline" opacity="1" transform="translate(34 -84) scale(1 1)">
+<path fill="#ffffff" stroke="#242424" stroke-width="3" stroke-linejoin="round" d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0C14.4 23.2 -14.4 23.2 -20 0Z" display="inline" opacity="1"/>
+<g clip-path="url(#dan-clip-eye-l)" display="inline" opacity="1">
+<g data-part="pupil-left" id="dan-pupil-left" transform="translate(0 0) scale(1 1)">
+<circle r="12.5" fill="#5a3a22"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.6" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="6.5" stroke-linecap="round" d="M-20 0C-14.4 -25.7 14.4 -25.7 20 0"/>
+</g>
+<ellipse fill="rgb(234,180,142)" data-part="nose" id="dan-nose" cx="0" cy="-55" rx="14" ry="12"/>
+<path fill="none" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M13.2 -58.9C13.3 -57.6 14.2 -53.7 13.4 -51.4C12.5 -49.1 10.5 -46.7 8.3 -45.3C6.1 -43.9 2.8 -43 0 -43C-2.8 -43 -6.1 -43.9 -8.3 -45.3C-10.5 -46.7 -12.5 -49.1 -13.4 -51.4C-14.2 -53.7 -13.3 -57.6 -13.2 -58.9"/>
+<path fill="#3b2a20" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair" id="dan-hair" d="M-80 -84C-80 -84 -86.8 -106.7 -87 -118C-87.2 -129.3 -85.8 -142 -81 -152C-76.2 -162 -67.8 -171.3 -58 -178C-48.2 -184.7 -34.7 -189.3 -22 -192C-9.3 -194.7 5.3 -195.7 18 -194C30.7 -192.3 43.5 -188.7 54 -182C64.5 -175.3 75.5 -164.7 81 -154C86.5 -143.3 87.2 -129.7 87 -118C86.8 -106.3 80 -84 80 -84C80 -84 73.3 -99 71 -108C68.7 -117 66 -138 66 -138C66 -138 51 -149.8 42 -153C33 -156.2 20.3 -157.5 12 -157C3.7 -156.5 -8 -150 -8 -150C-8 -150 -21.7 -157 -30 -157C-38.3 -157 -51.7 -153.5 -58 -150C-64.3 -146.5 -68 -136 -68 -136C-68 -136 -69 -114.7 -71 -106C-73 -97.3 -80 -84 -80 -84Z"/>
+<path fill="none" stroke="#5a4231" stroke-width="7" stroke-linecap="round" d="M-44 -170Q-16 -182 16 -181"/>
+<path fill="none" stroke="#2c1f18" stroke-width="11.5" stroke-linecap="round" data-part="brow-right" id="dan-brow-right" d="M-57 -121Q-34 -130.6 -11 -121"/>
+<path fill="none" stroke="#2c1f18" stroke-width="11.5" stroke-linecap="round" data-part="brow-left" id="dan-brow-left" display="inline" opacity="1" d="M57 -121Q34 -130.6 11 -121"/>
+<g data-part="ears-top" id="dan-ears-top"/>
+<g data-part="sweat" id="dan-sweat" display="none" opacity="0">
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(84 -128) rotate(12) scale(0.55 1)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" transform="translate(-90 -100) rotate(-10) scale(0.4 1)"/>
+</g>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#242424" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(-28 -45) scale(0.8 1)"/>
+</g>
+</g>
+<g data-part="layer-front-arm" id="dan-layer-front-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="arm-left" id="dan-arm-left" data-pivot="92,-192" transform="translate(90 -192)">
+<g>
+<g transform="translate(0 0) rotate(-7)">
+<path d="M-23 0A23 23 0 0 1 23 0L21 104A21 21 0 0 1 -21 104Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,104" transform="translate(0 104) rotate(9)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-21 0A21 21 0 0 1 21 0L17 98A17 17 0 0 1 -17 98Z"/>
+<g data-pivot="0,98" transform="translate(0 98) scale(-1 1)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#242424" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-29 0A29 29 0 0 1 29 0L28 60A28 28 0 0 1 -28 60Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-left" id="dan-upper-arm-left" transform="translate(0 0) rotate(-7)">
+<path d="M-23 0A23 23 0 0 1 23 0L21 104A21 21 0 0 1 -21 104Z" fill="#eab48e"/>
+<g data-part="forearm-left" id="dan-forearm-left" data-pivot="0,104" transform="translate(0 104) rotate(9)">
+<path fill="#eab48e" d="M-21 0A21 21 0 0 1 21 0L17 98A17 17 0 0 1 -17 98Z"/>
+<g data-part="hand-left" id="dan-hand-left" data-pivot="0,98" transform="translate(0 98) scale(-1 1)" display="inline" opacity="1">
+<g data-part="fingers-left" id="dan-fingers-left">
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#eab48e" data-part="palm-left" id="dan-palm-left"/>
+<g data-part="held-left" id="dan-held-left">
+<g data-part="pliers" id="dan-pliers" display="none" opacity="0">
+<path d="M-20 24Q0 16 26 26L26 32Q0 26 -20 34Z" fill="#e0422f" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-20 42Q0 44 26 36L26 30Q0 36 -20 34Z" fill="#e0422f" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M24 24L66 28L68 31L24 38Z" fill="#b9c2cc" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M28 31H64" stroke="#242424" stroke-width="2.5" fill="none"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#eab48e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#d6976f" d="M-6 0A6 6 0 0 1 6 0L5 78.4A5 5 0 0 1 -5 78.4Z" transform="translate(10 8)"/>
+</g>
+<path data-part="sleeve-left" id="dan-sleeve-left" d="M-29 0A29 29 0 0 1 29 0L28 60A28 28 0 0 1 -28 60Z" fill="#243B5A"/>
+<path fill="none" stroke-width="5" stroke-linecap="round" d="M-27 76H27" stroke="#162336"/>
+</g>
+</g>
+<ellipse data-part="shoulder-left" id="dan-shoulder-left" display="inline" opacity="1" fill="#243B5A" cx="-15" cy="5" rx="33" ry="33"/>
+</g>
+<g data-part="arm-right" id="dan-arm-right" data-pivot="-92,-192" transform="translate(-90 -192)">
+<g>
+<g transform="translate(0 0) rotate(7)">
+<path d="M-23 0A23 23 0 0 1 23 0L21 104A21 21 0 0 1 -21 104Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,104" transform="translate(0 104) rotate(-9)">
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-21 0A21 21 0 0 1 21 0L17 98A17 17 0 0 1 -17 98Z"/>
+<g data-pivot="0,98" transform="translate(0 98) scale(1 1)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#242424" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#242424" stroke="#242424" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-29 0A29 29 0 0 1 29 0L28 60A28 28 0 0 1 -28 60Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-right" id="dan-upper-arm-right" transform="translate(0 0) rotate(7)">
+<path d="M-23 0A23 23 0 0 1 23 0L21 104A21 21 0 0 1 -21 104Z" fill="#eab48e"/>
+<g data-part="forearm-right" id="dan-forearm-right" data-pivot="0,104" transform="translate(0 104) rotate(-9)">
+<path fill="#eab48e" d="M-21 0A21 21 0 0 1 21 0L17 98A17 17 0 0 1 -17 98Z"/>
+<g data-part="hand-right" id="dan-hand-right" data-pivot="0,98" transform="translate(0 98) scale(1 1)" display="inline" opacity="1">
+<g data-part="fingers-right" id="dan-fingers-right">
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#242424" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#eab48e" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#eab48e" data-part="palm-right" id="dan-palm-right"/>
+<g data-part="held-right" id="dan-held-right">
+<g data-part="screwdriver" id="dan-screwdriver" display="none" opacity="0">
+<rect x="-28" y="22" width="54" height="20" rx="8" fill="#f4b41a" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="26" y="28" width="58" height="8" fill="#b9c2cc" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M84 28L96 32L84 36Z" fill="#7f8a96" stroke="#242424" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<path fill="none" stroke="#242424" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#eab48e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#d6976f" d="M-6 0A6 6 0 0 1 6 0L5 78.4A5 5 0 0 1 -5 78.4Z" transform="translate(10 8)"/>
+</g>
+<path data-part="sleeve-right" id="dan-sleeve-right" d="M-29 0A29 29 0 0 1 29 0L28 60A28 28 0 0 1 -28 60Z" fill="#243B5A"/>
+<path fill="none" stroke-width="5" stroke-linecap="round" d="M-27 76H27" stroke="#162336"/>
+</g>
+</g>
+<ellipse data-part="shoulder-right" id="dan-shoulder-right" display="inline" opacity="1" fill="#243B5A" cx="15" cy="5" rx="33" ry="33"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

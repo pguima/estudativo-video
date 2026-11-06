@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-425 -480 850 860" role="img" aria-label="Leo Rivera" preserveAspectRatio="xMidYMax meet" overflow="visible" opacity="1" display="inline" xmlns="http://www.w3.org/2000/svg">
+<title>Leo Rivera - modelo-base</title>
+<desc>Survive the Headline. Frente, neutro, moletom. Acessorios (smartphone, fones, notebook, mochila) existem com display=none. Cada parte tem id e data-part; data-pivot marca o ponto de articulacao. Direita e esquerda sao do personagem.</desc>
+<defs>
+<clipPath id="leo-clip-eye-right">
+<path d="M-20 0C-14.4 -26.9 14.4 -22.9 20 0C14.4 22.7 -14.4 22.7 -20 0Z"/>
+</clipPath>
+<clipPath id="leo-clip-eye-left">
+<path d="M-20 0C-14.4 -22.9 14.4 -26.9 20 0C14.4 22.7 -14.4 22.7 -20 0Z"/>
+</clipPath>
+<clipPath id="leo-clip-mouth">
+<path d="M-21 -1.1C-11.5 0.7 11.6 0.7 21 -1.1C11.6 0.7 -11.5 0.7 -21 -1.1Z"/>
+</clipPath>
+</defs>
+<ellipse cx="0" cy="344" rx="120" ry="15" fill="#000" fill-opacity="0.22" data-part="shadow" id="leo-shadow" display="inline" opacity="1"/>
+<g data-part="character" id="leo-character" transform="scale(1 1)">
+<g data-part="seat" id="leo-seat" display="none" opacity="0" transform="translate(0 340) scale(1 2.02) translate(0 -340)">
+<rect x="-70" y="192" width="140" height="22" rx="6" fill="#a5764a" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-58 214L-70 340H-54L-38 214Z" fill="#7d5533" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58 214L70 340H54L38 214Z" fill="#7d5533" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-60 282H60V295H-60Z" fill="#a5764a" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="pelvis" id="leo-pelvis" data-pivot="0,0" transform="translate(0 2)">
+<g data-part="layer-backpack" id="leo-layer-backpack" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="backpack" id="leo-backpack" display="none" opacity="0">
+<path fill="#c8452a" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="backpack-body" id="leo-backpack-body"/>
+<path fill="#97321d" data-part="backpack-pocket" id="leo-backpack-pocket"/>
+</g>
+</g>
+<g data-part="layer-back-arm" id="leo-layer-back-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-52 -8C-61.7 -2 -59.3 15 -58 24C-56.7 33 -53.7 41.7 -44 46C-34.3 50.3 -14.7 50 0 50C14.7 50 34.3 50.3 44 46C53.7 41.7 56.7 33 58 24C59.3 15 61.7 -2 52 -8C42.3 -14 17.3 -12 0 -12C-17.3 -12 -42.3 -14 -52 -8Z"/>
+<g data-part="leg-left" id="leo-leg-left" data-pivot="28,10" transform="translate(28 10)">
+<g>
+<g transform="translate(0 0) rotate(-2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-29 0A29 29 0 0 1 29 0L23 146A23 23 0 0 1 -23 146Z"/>
+<g data-pivot="0,146" transform="translate(0 146) rotate(2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-23 0A23 23 0 0 1 23 0L18 144A18 18 0 0 1 -18 144Z"/>
+<g data-pivot="0,144" transform="translate(4 144)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-left" id="leo-thigh-left" transform="translate(0 0) rotate(-2)">
+<path d="M-29 0A29 29 0 0 1 29 0L23 146A23 23 0 0 1 -23 146Z" fill="#343845"/>
+<g data-part="shin-left" id="leo-shin-left" data-pivot="0,146" transform="translate(0 146) rotate(2)">
+<path d="M-23 0A23 23 0 0 1 23 0L18 144A18 18 0 0 1 -18 144Z" fill="#343845"/>
+<g data-part="foot-left" id="leo-foot-left" data-pivot="0,144" transform="translate(4 144)">
+<path d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z" fill="#f4f5f7"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#c8452a" d="M-16 20H16"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z" fill="#c9ced6"/>
+<path d="M-17 -6H17" fill="none" stroke-width="9" stroke-linecap="round" stroke="#4c5163"/>
+</g>
+<path d="M-5 0A5 5 0 0 1 5 0L4.5 112A4.5 4.5 0 0 1 -4.5 112Z" transform="translate(12 14) scale(1 1)" fill="#272a35"/>
+<path d="M-12 -3Q0 7 12 -3" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#272a35"/>
+</g>
+<path d="M-6 0A6 6 0 0 1 6 0L5 118A5 5 0 0 1 -5 118Z" transform="translate(12 8) scale(1 1)" fill="#272a35" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<g data-part="leg-right" id="leo-leg-right" data-pivot="-28,10" transform="translate(-28 10)">
+<g>
+<g transform="translate(0 0) rotate(2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-29 0A29 29 0 0 1 29 0L23 146A23 23 0 0 1 -23 146Z"/>
+<g data-pivot="0,146" transform="translate(0 146) rotate(-2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-23 0A23 23 0 0 1 23 0L18 144A18 18 0 0 1 -18 144Z"/>
+<g data-pivot="0,144" transform="translate(-4 144)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-right" id="leo-thigh-right" transform="translate(0 0) rotate(2)">
+<path d="M-29 0A29 29 0 0 1 29 0L23 146A23 23 0 0 1 -23 146Z" fill="#343845"/>
+<g data-part="shin-right" id="leo-shin-right" data-pivot="0,146" transform="translate(0 146) rotate(-2)">
+<path d="M-23 0A23 23 0 0 1 23 0L18 144A18 18 0 0 1 -18 144Z" fill="#343845"/>
+<g data-part="foot-right" id="leo-foot-right" data-pivot="0,144" transform="translate(-4 144)">
+<path d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z" fill="#f4f5f7"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#c8452a" d="M-16 20H16"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z" fill="#c9ced6"/>
+<path d="M-17 -6H17" fill="none" stroke-width="9" stroke-linecap="round" stroke="#4c5163"/>
+</g>
+<path d="M-5 0A5 5 0 0 1 5 0L4.5 112A4.5 4.5 0 0 1 -4.5 112Z" transform="translate(12 14) scale(1 1)" fill="#272a35"/>
+<path d="M-12 -3Q0 7 12 -3" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#272a35"/>
+</g>
+<path d="M-6 0A6 6 0 0 1 6 0L5 118A5 5 0 0 1 -5 118Z" transform="translate(12 8) scale(1 1)" fill="#272a35" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<path data-part="hips" id="leo-hips" d="M-52 -8C-61.7 -2 -59.3 15 -58 24C-56.7 33 -53.7 41.7 -44 46C-34.3 50.3 -14.7 50 0 50C14.7 50 34.3 50.3 44 46C53.7 41.7 56.7 33 58 24C59.3 15 61.7 -2 52 -8C42.3 -14 17.3 -12 0 -12C-17.3 -12 -42.3 -14 -52 -8Z" fill="#343845"/>
+<g data-part="layer-hair-back" id="leo-layer-hair-back" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g transform="translate(0 -228)">
+<path fill="#2c1b11" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-back" id="leo-hair-back" d="M-40 -170C-51 -163.3 -61 -151.7 -66 -140C-71 -128.3 -70 -111.7 -70 -100C-70 -88.3 -68.3 -78.7 -66 -70C-63.7 -61.3 -61 -53.7 -56 -48C-51 -42.3 -42.7 -39 -36 -36C-29.3 -33 -22 -31.3 -16 -30C-10 -28.7 -5.3 -28 0 -28C5.3 -28 10 -28.7 16 -30C22 -31.3 29.3 -33 36 -36C42.7 -39 51 -42.3 56 -48C61 -53.7 63.7 -61.3 66 -70C68.3 -78.7 70 -88.3 70 -100C70 -111.7 71 -128.3 66 -140C61 -151.7 51 -163.3 40 -170C29 -176.7 13.3 -180 0 -180C-13.3 -180 -29 -176.7 -40 -170Z"/>
+</g>
+</g>
+<g data-part="layer-hood" id="leo-layer-hood" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<path stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hood" id="leo-hood" d="M-56 -196C-60 -202.3 -58 -217.7 -54 -226C-50 -234.3 -41 -242 -32 -246C-23 -250 -10.7 -250 0 -250C10.7 -250 23 -250 32 -246C41 -242 50 -234.3 54 -226C58 -217.7 60 -202.3 56 -196C52 -189.7 39.3 -189.7 30 -188C20.7 -186.3 10 -186 0 -186C-10 -186 -20.7 -186.3 -30 -188C-39.3 -189.7 -52 -189.7 -56 -196Z" fill="#14214a"/>
+</g>
+<g data-part="layer-neck" id="leo-layer-neck" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="neck" id="leo-neck" transform="translate(0 -222)">
+<path d="M-19 0A19 19 0 0 1 19 0L22 62A22 22 0 0 1 -22 62Z" fill="#efb995" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-17 2H17V14Q0 24 -17 14Z" fill="#d99e78"/>
+</g>
+</g>
+<g data-part="torso" id="leo-torso" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<path stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="torso-shape" id="leo-torso-shape" d="M-28 -208C-39.7 -209.7 -61 -204.7 -70 -198C-79 -191.3 -81.3 -182.7 -82 -168C-82.7 -153.3 -77 -129.7 -74 -110C-71 -90.3 -65.3 -73.3 -64 -50C-62.7 -26.7 -66 30 -66 30C-66 30 -41 34 -30 35C-19 36 -10 36 0 36C10 36 19 36 30 35C41 34 66 30 66 30C66 30 62.7 -26.7 64 -50C65.3 -73.3 71 -90.3 74 -110C77 -129.7 82.7 -153.3 82 -168C81.3 -182.7 79 -191.3 70 -198C61 -204.7 39.7 -209.7 28 -208C16.3 -206.3 9.3 -188 0 -188C-9.3 -188 -16.3 -206.3 -28 -208Z" fill="#1b2c5a"/>
+<path data-part="torso-shade" id="leo-torso-shade" d="M48 33C52 39.7 63.3 43.8 66 30C68.7 16.2 62.7 -26.7 64 -50C65.3 -73.3 71.7 -93.3 74 -110C76.3 -126.7 80.3 -149 78 -150C75.7 -151 65.3 -131.7 60 -116C54.7 -100.3 49 -73.7 46 -56C43 -38.3 41.7 -24.8 42 -10C42.3 4.8 44 26.3 48 33Z" fill="#14214a" display="inline" opacity="1"/>
+<path fill="none" stroke-width="3.2" stroke-linecap="round" d="M-44 -66Q-26 -58 -12 -62M50 -112Q36 -100 20 -102" stroke="#0e1836"/>
+<path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-part="collar" id="leo-collar" stroke="#0e1836" d="M-30 -206Q-15 -194 -9 -190M30 -206Q15 -194 9 -190"/>
+<path fill="#e4e7ee" stroke="#1b1a22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" data-part="tshirt" id="leo-tshirt" d="M-27 -206C-27 -206 -9 -190 0 -190C9 -190 27 -206 27 -206C27 -206 3 -92 3 -92C3 -92 -3 -92 -3 -92C-3 -92 -27 -206 -27 -206Z"/>
+<path fill="none" stroke="#c4cad6" stroke-width="5" stroke-linecap="round" d="M-22 -200Q0 -180 22 -200"/>
+<path fill="none" stroke="#c9ced8" stroke-width="3.5" stroke-linecap="round" data-part="zipper" id="leo-zipper" d="M0 -92L0 34"/>
+<path fill="none" stroke="#eef0f5" stroke-width="3.5" stroke-linecap="round" data-part="drawstrings" id="leo-drawstrings" d="M-13 -196V-152M13 -196V-142"/>
+<path stroke="#1b1a22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" data-part="pocket" id="leo-pocket" d="M-44 -48C-44 -48 44 -48 44 -48C44 -48 56 16 56 16C56 16 -56 16 -56 16C-56 16 -44 -48 -44 -48Z" fill="#1b2c5a"/>
+<path fill="none" stroke-width="3.5" stroke-linecap="round" data-part="hem" id="leo-hem" d="M-64 20L64 20" stroke="#0e1836"/>
+<path fill="none" stroke="#7a2817" stroke-width="13" stroke-linecap="round" data-part="backpack-straps" id="leo-backpack-straps" display="none" opacity="0"/>
+</g>
+<g data-part="layer-head" id="leo-layer-head" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="head" id="leo-head" data-pivot="0,-228" transform="translate(0 -228)">
+<g data-part="ears-back" id="leo-ears-back">
+<g transform="translate(68 -72) scale(-1 1)" display="inline" opacity="1">
+<path d="M-3 -19Q-18 -21 -16 -2Q-14 19 2 16Q8 0 -3 -19Z" fill="#efb995" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-5 -9Q-11 -8 -9 2" fill="none" stroke="#d99e78" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(-68 -72)">
+<path d="M-3 -19Q-18 -21 -16 -2Q-14 19 2 16Q8 0 -3 -19Z" fill="#efb995" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-5 -9Q-11 -8 -9 2" fill="none" stroke="#d99e78" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+</g>
+<path fill="#efb995" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="face" id="leo-face" d="M0 10C8.7 10 18 11 26 7C34 3 42.3 -3.5 48 -14C53.7 -24.5 57.3 -41 60 -56C62.7 -71 64.7 -89.3 64 -104C63.3 -118.7 61.7 -133.3 56 -144C50.3 -154.7 39.3 -163 30 -168C20.7 -173 10 -174 0 -174C-10 -174 -20.7 -173 -30 -168C-39.3 -163 -50.3 -154.7 -56 -144C-61.7 -133.3 -63.3 -118.7 -64 -104C-64.7 -89.3 -62.7 -71 -60 -56C-57.3 -41 -53.7 -24.5 -48 -14C-42.3 -3.5 -34 3 -26 7C-18 11 -8.7 10 0 10Z"/>
+<path fill="#d99e78" fill-opacity="0.7" d="M26 7C30.7 4.3 42.3 -3.5 48 -14C53.7 -24.5 57.3 -41 60 -56C62.7 -71 64.2 -96 64 -104C63.8 -112 60.7 -111.7 59 -104C57.3 -96.3 56.8 -72 54 -58C51.2 -44 47.7 -30 42 -20C36.3 -10 22.7 -2.5 20 2C17.3 6.5 21.3 9.7 26 7Z" display="inline" opacity="1"/>
+<path data-part="tint" id="leo-tint" d="M0 10C8.7 10 18 11 26 7C34 3 42.3 -3.5 48 -14C53.7 -24.5 57.3 -41 60 -56C62.7 -71 64.7 -89.3 64 -104C63.3 -118.7 61.7 -133.3 56 -144C50.3 -154.7 39.3 -163 30 -168C20.7 -173 10 -174 0 -174C-10 -174 -20.7 -173 -30 -168C-39.3 -163 -50.3 -154.7 -56 -144C-61.7 -133.3 -63.3 -118.7 -64 -104C-64.7 -89.3 -62.7 -71 -60 -56C-57.3 -41 -53.7 -24.5 -48 -14C-42.3 -3.5 -34 3 -26 7C-18 11 -8.7 10 0 10Z" fill="#e0392b" opacity="0"/>
+<path fill="none" stroke="#c98a62" stroke-width="3.6" stroke-linecap="round" data-part="freckles" id="leo-freckles" d="M-36 -58h.1M-26 -54h.1M-16 -59h.1M16 -59h.1M26 -54h.1M36 -58h.1"/>
+<path fill="#e8705f" data-part="blush" id="leo-blush" display="none" opacity="0" d="M-47 -46a17 9 0 1 0 34 0a17 9 0 1 0 -34 0ZM11 -46a17 9 0 1 0 34 0a17 9 0 1 0 -34 0Z"/>
+<g data-part="mouth" id="leo-mouth" transform="translate(0 -23)">
+<path fill="#5a1c22" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-21 -1.1C-11.5 0.7 11.6 0.7 21 -1.1C11.6 0.7 -11.5 0.7 -21 -1.1Z" display="none" opacity="0"/>
+<g clip-path="url(#leo-clip-mouth)">
+<ellipse fill="#d9636a" cx="0" cy="0.7" rx="13" ry="0" display="none" opacity="0"/>
+<rect fill="#fbf7ee" x="-60" width="120" y="-15.3" height="16" display="none" opacity="0"/>
+<path fill="none" stroke="#1b1a22" stroke-width="2.5" d="M0 0"/>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-21 -1.1C-11.5 0.7 11.6 0.7 21 -1.1" display="inline" opacity="1"/>
+<path fill="none" stroke="#d39a78" stroke-width="4" stroke-linecap="round" data-part="lower-lip" id="leo-lower-lip" d="M-8.8 8.5Q0 11.5 8.8 8.5" display="inline" opacity="1"/>
+</g>
+<g data-part="eye-right" id="leo-eye-right" transform="translate(-28 -86) scale(1 1)">
+<path fill="#ffffff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" d="M-20 0C-14.4 -26.9 14.4 -22.9 20 0C14.4 22.7 -14.4 22.7 -20 0Z"/>
+<g clip-path="url(#leo-clip-eye-right)">
+<g data-part="pupil-right" id="leo-pupil-right" transform="translate(0 0) scale(1 1)">
+<circle r="12.5" fill="#5e3a20"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.8" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="6" stroke-linecap="round" d="M-20 0C-14.4 -26.9 14.4 -22.9 20 0"/>
+</g>
+<g data-part="eye-left" id="leo-eye-left" display="inline" opacity="1" transform="translate(28 -86) scale(1 1)">
+<path fill="#ffffff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" d="M-20 0C-14.4 -22.9 14.4 -26.9 20 0C14.4 22.7 -14.4 22.7 -20 0Z"/>
+<g clip-path="url(#leo-clip-eye-left)">
+<g data-part="pupil-left" id="leo-pupil-left" transform="translate(0 0) scale(1 1)">
+<circle r="12.5" fill="#5e3a20"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.8" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="6" stroke-linecap="round" d="M-20 0C-14.4 -22.9 14.4 -26.9 20 0"/>
+</g>
+<ellipse fill="rgb(239,185,149)" data-part="nose" id="leo-nose" cx="0" cy="-54" rx="10" ry="9"/>
+<path fill="none" stroke="#1b1a22" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" d="M9.5 -56.9C9.5 -56 10.1 -53 9.5 -51.3C9 -49.6 7.5 -47.8 5.9 -46.7C4.3 -45.7 2 -45 0 -45C-2 -45 -4.3 -45.7 -5.9 -46.7C-7.5 -47.8 -9 -49.6 -9.5 -51.3C-10.1 -53 -9.5 -56 -9.5 -56.9"/>
+<path fill="#3a2519" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-front" id="leo-hair-front" d="M-66 -88C-66 -88 -69.3 -109.3 -72 -118C-74.7 -126.7 -82 -140 -82 -140C-82 -140 -70.7 -144 -70 -150C-69.3 -156 -78 -176 -78 -176C-78 -176 -57.3 -170 -52 -174C-46.7 -178 -46 -200 -46 -200C-46 -200 -27.3 -184.7 -20 -186C-12.7 -187.3 -2 -208 -2 -208C-2 -208 14.3 -188.7 22 -188C29.7 -187.3 44 -204 44 -204C44 -204 48.3 -180.3 54 -176C59.7 -171.7 78 -178 78 -178C78 -178 71 -157 72 -150C73 -143 84 -136 84 -136C84 -136 75 -124 72 -116C69 -108 66 -88 66 -88C66 -88 63.3 -108.7 60 -116C56.7 -123.3 46 -132 46 -132C46 -132 32 -122.7 26 -124C20 -125.3 10 -140 10 -140C10 -140 -5.3 -124.3 -12 -124C-18.7 -123.7 -30 -138 -30 -138C-30 -138 -41.3 -123.3 -46 -122C-50.7 -120.7 -58 -130 -58 -130C-58 -130 -58.7 -113 -60 -106C-61.3 -99 -66 -88 -66 -88Z"/>
+<path fill="none" stroke="#5e4130" stroke-width="7" stroke-linecap="round" d="M-34 -170Q-12 -180 12 -176"/>
+<path fill="none" stroke="#2c1b11" stroke-width="10.5" stroke-linecap="round" data-part="brow-right" id="leo-brow-right" d="M-49 -114Q-31.1 -126.4 -7 -116"/>
+<path fill="none" stroke="#2c1b11" stroke-width="10.5" stroke-linecap="round" data-part="brow-left" id="leo-brow-left" display="inline" opacity="1" d="M49 -114Q31.2 -126.4 7 -116"/>
+<g data-part="ears-top" id="leo-ears-top"/>
+<g data-part="headphones" id="leo-headphones" display="none" opacity="0">
+<path fill="none" stroke="#1b1a22" stroke-width="15" stroke-linecap="round" d="M-69 -90C-77 -236 77 -236 69 -90"/>
+<path fill="none" stroke="#2a2d38" stroke-width="8" stroke-linecap="round" data-part="headphones-band" id="leo-headphones-band" d="M-69 -90C-77 -236 77 -236 69 -90"/>
+<g data-part="headphones-cup-far" id="leo-headphones-cup-far" transform="translate(69 -72) scale(1 1)" display="inline" opacity="1">
+<rect x="-15" y="-25" width="30" height="50" rx="13" fill="#15161c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-10" y="-19" width="20" height="38" rx="9" fill="#ff8a1f" stroke="#1b1a22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="headphones-cup-near" id="leo-headphones-cup-near" transform="translate(-69 -72)">
+<rect x="-15" y="-25" width="30" height="50" rx="13" fill="#15161c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-10" y="-19" width="20" height="38" rx="9" fill="#ff8a1f" stroke="#1b1a22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<g data-part="sweat" id="leo-sweat" display="none" opacity="0">
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" transform="translate(84 -112) rotate(12) scale(0.5 1)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" transform="translate(-90 -92) rotate(-10) scale(0.38 1)"/>
+</g>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(-22 -46) scale(0.72 1)"/>
+</g>
+</g>
+<g data-part="laptop-deck" id="leo-laptop-deck" display="none" opacity="0">
+<path fill="#aeb6c2" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="laptop-base" id="leo-laptop-base"/>
+<path fill="#7f8896" data-part="laptop-keys" id="leo-laptop-keys"/>
+</g>
+<g data-part="layer-front-arm" id="leo-layer-front-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="smartphone-held" id="leo-smartphone-held" display="none" opacity="0">
+<rect rx="7" fill="#ff8a1f" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle r="4" fill="#0d0e13" stroke="#3a3f4d" stroke-width="2"/>
+</g>
+<g data-part="arm-left" id="leo-arm-left" data-pivot="72,-170" transform="translate(72 -170)">
+<g>
+<g transform="translate(0 0) rotate(-5)">
+<path d="M-22 0A22 22 0 0 1 22 0L19 100A19 19 0 0 1 -19 100Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,100" transform="translate(0 100) rotate(7)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-19 0A19 19 0 0 1 19 0L16 96A16 16 0 0 1 -16 96Z"/>
+<g data-pivot="0,96" transform="translate(0 96) scale(-0.86 0.86)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#1b1a22" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-left" id="leo-upper-arm-left" transform="translate(0 0) rotate(-5)">
+<path d="M-22 0A22 22 0 0 1 22 0L19 100A19 19 0 0 1 -19 100Z" fill="#1b2c5a"/>
+<g data-part="forearm-left" id="leo-forearm-left" data-pivot="0,100" transform="translate(0 100) rotate(7)">
+<path d="M-19 0A19 19 0 0 1 19 0L16 96A16 16 0 0 1 -16 96Z" fill="#1b2c5a"/>
+<g data-part="hand-left" id="leo-hand-left" data-pivot="0,96" transform="translate(0 96) scale(-0.86 0.86)" display="inline" opacity="1">
+<g data-part="fingers-left" id="leo-fingers-left">
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#efb995" data-part="palm-left" id="leo-palm-left"/>
+<g data-part="held-left" id="leo-held-left">
+<g data-part="laptop-closed" id="leo-laptop-closed" display="none" opacity="0">
+<rect x="-62" y="10" width="124" height="88" rx="6" fill="#aeb6c2" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-58 90H58" stroke="#7f8896" stroke-width="3"/>
+<circle cx="0" cy="54" r="11" fill="#e9edf2"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#efb995" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path d="M-4.5 0A4.5 4.5 0 0 1 4.5 0L3.5 71A3.5 3.5 0 0 1 -3.5 71Z" transform="translate(9 8)" fill="#14214a"/>
+<path fill="none" stroke-width="7" stroke-linecap="round" data-part="cuff-left" id="leo-cuff-left" d="M-13 93H13" stroke="#0e1836"/>
+</g>
+<path d="M-5 0A5 5 0 0 1 5 0L4 74A4 4 0 0 1 -4 74Z" transform="translate(10 12)" fill="#14214a"/>
+</g>
+</g>
+<ellipse data-part="shoulder-left" id="leo-shoulder-left" display="inline" opacity="1" fill="#1b2c5a" cx="-12" cy="4" rx="25" ry="25"/>
+</g>
+<g data-part="arm-right" id="leo-arm-right" data-pivot="-72,-170" transform="translate(-72 -170)">
+<g>
+<g transform="translate(0 0) rotate(5)">
+<path d="M-22 0A22 22 0 0 1 22 0L19 100A19 19 0 0 1 -19 100Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,100" transform="translate(0 100) rotate(-7)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-19 0A19 19 0 0 1 19 0L16 96A16 16 0 0 1 -16 96Z"/>
+<g data-pivot="0,96" transform="translate(0 96) scale(0.86 0.86)" display="inline" opacity="1">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#1b1a22" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-right" id="leo-upper-arm-right" transform="translate(0 0) rotate(5)">
+<path d="M-22 0A22 22 0 0 1 22 0L19 100A19 19 0 0 1 -19 100Z" fill="#1b2c5a"/>
+<g data-part="forearm-right" id="leo-forearm-right" data-pivot="0,100" transform="translate(0 100) rotate(-7)">
+<path d="M-19 0A19 19 0 0 1 19 0L16 96A16 16 0 0 1 -16 96Z" fill="#1b2c5a"/>
+<g data-part="hand-right" id="leo-hand-right" data-pivot="0,96" transform="translate(0 96) scale(0.86 0.86)" display="inline" opacity="1">
+<g data-part="fingers-right" id="leo-fingers-right">
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#efb995" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#efb995" data-part="palm-right" id="leo-palm-right"/>
+<g data-part="held-right" id="leo-held-right">
+<g data-part="smartphone" id="leo-smartphone" display="none" opacity="0" transform="translate(0 20) scale(1 1)">
+<rect x="-18" y="-8" width="36" height="74" rx="7" fill="#ff8a1f" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="-8" cy="2" r="4.5" fill="#0d0e13" stroke="#3a3f4d" stroke-width="2"/>
+<circle cx="-8" cy="14" r="3.5" fill="#0d0e13" stroke="#3a3f4d" stroke-width="2"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#efb995" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path d="M-4.5 0A4.5 4.5 0 0 1 4.5 0L3.5 71A3.5 3.5 0 0 1 -3.5 71Z" transform="translate(9 8)" fill="#14214a"/>
+<path fill="none" stroke-width="7" stroke-linecap="round" data-part="cuff-right" id="leo-cuff-right" d="M-13 93H13" stroke="#0e1836"/>
+</g>
+<path d="M-5 0A5 5 0 0 1 5 0L4 74A4 4 0 0 1 -4 74Z" transform="translate(10 12)" fill="#14214a"/>
+</g>
+</g>
+<ellipse data-part="shoulder-right" id="leo-shoulder-right" display="inline" opacity="1" fill="#1b2c5a" cx="12" cy="4" rx="25" ry="25"/>
+</g>
+<path stroke="#1b1a22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" data-part="pocket-front" id="leo-pocket-front" d="M-44 -48C-44 -48 44 -48 44 -48C44 -48 56 16 56 16C56 16 -56 16 -56 16C-56 16 -44 -48 -44 -48Z" fill="#1b2c5a" display="none" opacity="0"/>
+</g>
+<g data-part="laptop" id="leo-laptop" display="none" opacity="0">
+<path fill="none" stroke="#1b1a22" stroke-width="12" stroke-linecap="round"/>
+<path fill="none" stroke="#aeb6c2" stroke-width="4" stroke-linecap="round"/>
+<path fill="#aeb6c2" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="laptop-lid" id="leo-laptop-lid"/>
+<ellipse ry="11" fill="#e9edf2" data-part="laptop-logo" id="leo-laptop-logo"/>
+</g>
+</g>
+</g>
+</svg>

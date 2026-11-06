@@ -43,4 +43,4 @@ for n, partes in ((1, p1), (2, p2)):
         rate = int(re.search(r"rate=(\d+)", mime).group(1)) if "rate=" in mime else 24000
         with wave.open(str(dst), "wb") as w:
             w.setnchannels(1); w.setsampwidth(2); w.setframerate(rate); w.writeframes(raw)
-    print(f"parte {n}: {len(texto.split())} palavras · {mime} · {r.get('modelUsed')} → {dst}", flush=True)
+    print(f"parte {n}: {len(texto.split())} palavras | {mime} | {r.get('modelUsed')} -> {dst}", flush=True)

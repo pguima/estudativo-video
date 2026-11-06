@@ -8,6 +8,7 @@ Vale para **todo** vídeo, de qualquer canal. O que muda de um canal para outro 
 | Trading (ICT / Smart Money) | [canais/trading/ESTILO.md](canais/trading/ESTILO.md) |
 | ENEM (Física) | [canais/enem/ESTILO.md](canais/enem/ESTILO.md) |
 | Seguridade Social (INSS) | [canais/seguridade_social/ESTILO.md](canais/seguridade_social/ESTILO.md) |
+| Estudativo (curso novo, `canais/estudativo/aulas/`) | [canais/estudativo/ESTILO.md](canais/estudativo/ESTILO.md) — **visual próprio** (`editorial.py`), roteiro curto e sem legenda; use a skill `estudativo-aula` |
 | Tecnologia (IA, dev, ferramentas) | [canais/tecnologia/ESTILO.md](canais/tecnologia/ESTILO.md) — **visual próprio** (futurista, `tech.py`): a seção 2 abaixo não vale para ele |
 
 ---

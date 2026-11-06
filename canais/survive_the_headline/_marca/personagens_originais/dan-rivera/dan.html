@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dan Rivera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dan.css">
+</head>
+<body>
+<div class="demo">
+  <header class="demo-head">
+    <h1>Dan Rivera</h1>
+    <p>Survive the Headline · 42 anos · eletricista autônomo · modelo-base único</p>
+  </header>
+
+  <div class="bench">
+    <div class="stage" id="stage" data-bg="checker"><div class="dan-host" id="dan"></div></div>
+    <aside class="panel" aria-label="Controles">
+      <section class="group"><h2>Expressão</h2><div class="chips" id="c-expression"></div></section>
+      <section class="group"><h2>Pose</h2><div class="chips" id="c-pose"></div></section>
+      <section class="group"><h2>Direção</h2><div class="chips" id="c-direction"></div></section>
+      <section class="group"><h2>Animação</h2><div class="chips" id="c-animation"></div></section>
+      <section class="group"><h2>Movimentos automáticos e acessórios</h2><div class="chips" id="c-toggles"></div></section>
+      <section class="group"><h2>Fundo</h2><div class="chips" id="c-bg"></div></section>
+      <section class="group">
+        <h2>Última chamada da API</h2>
+        <div class="readout" id="readout" aria-live="polite">dan.setPose('standing');</div>
+        <div class="chips"><button type="button" id="copy-svg">Copiar SVG do quadro</button></div>
+      </section>
+    </aside>
+  </div>
+
+  <section class="sheet">
+    <h2>Expressões</h2>
+    <p>Todas as cabeças abaixo são o mesmo modelo com valores diferentes. Clique para aplicar ao personagem principal.</p>
+    <div class="cells" id="sheet-expr"></div>
+  </section>
+
+  <section class="sheet">
+    <h2>Poses</h2>
+    <div class="cells" id="sheet-pose"></div>
+  </section>
+
+  <section class="sheet">
+    <h2>Incorporar em outro projeto</h2>
+<pre class="embed">&lt;link rel="stylesheet" href="dan.css"&gt;
+&lt;div id="palco" style="width:480px;height:480px"&gt;&lt;/div&gt;
+&lt;script src="dan.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  const dan = new DanRivera('#palco');
+  dan.setExpression('worried').setPose('explaining').setDirection('left');
+
+  // Vídeo quadro a quadro, com resultado idêntico a cada renderização:
+  const clip = new DanRivera('#palco', { autoStart: false, seed: 42 });
+  clip.setPose('running', { duration: 0 });
+  for (let quadro = 0; quadro &lt; 90; quadro++) {
+    clip.tick(1000 / 30);
+    salvarQuadro(clip.toSVG());   // sua função
+  }
+&lt;/script&gt;</pre>
+  </section>
+</div>
+
+<script src="dan.js"></script>
+<script>
+(function () {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dan = window.dan = new DanRivera('#dan', { animation: reduced ? 'none' : 'idle' });
+  if (reduced) dan.setBreathing(false).setBlinking(false);
+  const readout = document.getElementById('readout');
+  const log = text => { readout.textContent = text; };
+
+  function chips(id, items, current, onPick) {
+    const box = document.getElementById(id);
+    const buttons = items.map(([value, label]) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = label;
+      b.dataset.value = value;
+      b.setAttribute('aria-pressed', String(value === current));
+      b.addEventListener('click', () => { select(value); onPick(value); });
+      box.appendChild(b);
+      return b;
+    });
+    function select(value) {
+      buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.value === value)));
+    }
+    return select;
+  }
+
+  const EXPR = { neutral: 'Neutro', happy: 'Feliz', worried: 'Preocupado', shocked: 'Chocado', scared: 'Assustado', angry: 'Bravo', sad: 'Triste', determined: 'Determinado' };
+  const POSE = { idle: 'Relaxado', standing: 'Em pé', explaining: 'Explicando', pointing: 'Apontando', hands_on_head: 'Mãos na cabeça', arms_crossed: 'Braços cruzados', shrugging: 'Dando de ombros', running: 'Correndo', sitting: 'Sentado', working: 'Trabalhando' };
+  const ANIM = { none: 'Parado', idle: 'Natural', talk: 'Falando', nod: 'Sim', shake: 'Não', wave: 'Acenando', tremble: 'Tremendo' };
+
+  const pickExpr = chips('c-expression', Object.entries(EXPR), 'neutral', v => { dan.setExpression(v); log(`dan.setExpression('${v}');`); });
+  const pickPose = chips('c-pose', Object.entries(POSE), 'standing', v => { dan.setPose(v); log(`dan.setPose('${v}');`); });
+  chips('c-direction', [['left', 'Perfil esq.'], ['three-quarter-left', '3/4 esq.'], ['front', 'Frente'], ['three-quarter-right', '3/4 dir.'], ['right', 'Perfil dir.']], 'front', v => { dan.setDirection(v); log(`dan.setDirection('${v}');`); });
+  chips('c-animation', Object.entries(ANIM), reduced ? 'none' : 'idle', v => { dan.setAnimation(v); log(`dan.setAnimation('${v}');`); });
+  chips('c-bg', [['checker', 'Quadriculado'], ['transparent', 'Transparente'], ['chroma', 'Chroma'], ['scene', 'Cena']], 'checker', v => { document.getElementById('stage').dataset.bg = v; });
+
+  const toggles = document.getElementById('c-toggles');
+  function toggle(label, initial, apply) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = label;
+    let on = initial;
+    b.setAttribute('aria-pressed', String(on));
+    b.addEventListener('click', () => { on = !on; b.setAttribute('aria-pressed', String(on)); log(apply(on)); });
+    toggles.appendChild(b);
+  }
+  const acc = (name, on) => { dan.setAccessory(name, on); return `dan.setAccessory('${name}', ${on});`; };
+  toggle('Respiração', !reduced, on => { dan.setBreathing(on); return `dan.setBreathing(${on});`; });
+  toggle('Piscar', !reduced, on => { dan.setBlinking(on); return `dan.setBlinking(${on});`; });
+  toggle('Visível', true, on => { dan.setVisible(on); return `dan.setVisible(${on});`; });
+  toggle('Cinto', false, on => acc('toolbelt', on));
+  toggle('Chave de fenda', false, on => acc('screwdriver', on));
+  toggle('Alicate', false, on => acc('pliers', on));
+  toggle('Caixa', false, on => acc('toolbox', on));
+  toggle('Sombra', true, on => acc('shadow', on));
+
+  const copyBtn = document.getElementById('copy-svg');
+  copyBtn.addEventListener('click', async () => {
+    const original = copyBtn.textContent;
+    try {
+      await navigator.clipboard.writeText(dan.toSVG());
+      copyBtn.textContent = 'SVG copiado';
+    } catch (err) {
+      copyBtn.textContent = 'Cópia bloqueada';
+    }
+    setTimeout(() => { copyBtn.textContent = original; }, 1600);
+  });
+
+  function cell(parent, cls, label, configure, onClick) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'cell ' + cls;
+    const view = document.createElement('div');
+    view.className = 'view';
+    const host = document.createElement('div');
+    host.className = 'dan-host';
+    view.appendChild(host);
+    const name = document.createElement('span');
+    name.textContent = label;
+    b.append(view, name);
+    b.addEventListener('click', onClick);
+    parent.appendChild(b);
+    const d = new DanRivera(host, { autoStart: false, animation: 'none' });
+    d.setBlinking(false).setBreathing(false).setAccessory('shadow', cls !== 'face');
+    configure(d);
+    d.tick(0);
+  }
+  const exprBox = document.getElementById('sheet-expr');
+  DanRivera.EXPRESSIONS.forEach(n => cell(exprBox, 'face', n, d => d.setExpression(n, { duration: 0 }), () => { pickExpr(n); dan.setExpression(n); log(`dan.setExpression('${n}');`); }));
+  const poseBox = document.getElementById('sheet-pose');
+  DanRivera.POSES.forEach(n => cell(poseBox, 'body', n, d => d.setPose(n, { duration: 0 }), () => { pickPose(n); dan.setPose(n); log(`dan.setPose('${n}');`); }));
+})();
+</script>
+</body>
+</html>

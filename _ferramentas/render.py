@@ -82,16 +82,20 @@ def _init(proj, lang):
 
 def render_seg(args):
     i, f0, f1, out = args
+    import numpy as np
     import skia
     st = _STATE
-    surf = skia.Surface(M.W, M.H)
+    # a tela é o próprio buffer: entrega cada quadro ao ffmpeg sem as duas cópias de um snapshot
+    buf = np.zeros((M.H, M.W, 4), np.uint8)
+    surf = skia.Surface(buf, colorType=skia.kRGBA_8888_ColorType, alphaType=skia.kPremul_AlphaType)
     c = surf.getCanvas()
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{M.W}x{M.H}",
                            "-r", str(M.FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                            "-pix_fmt", "yuv420p", "-threads", "2", str(out)], stdin=subprocess.PIPE)
     for f in range(f0, f1):
         frame(st, c, f / M.FPS)
-        ff.stdin.write(surf.makeImageSnapshot().toarray(colorType=skia.kRGBA_8888_ColorType).tobytes())
+        surf.flushAndSubmit()
+        ff.stdin.write(buf.data)
     ff.stdin.close(); ff.wait()
     return i
 

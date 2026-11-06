@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Survive the Headline: player</title>
+<link rel="stylesheet" href="player.css"></head>
+<body>
+<div id="frame">
+  <div id="world">
+    <div id="tela"></div>
+    <div id="grade"></div>
+    <div id="gfx"></div>
+  </div>
+  <div id="vig"></div>
+  <div id="barT"></div><div id="barB"></div>
+  <div id="fx"></div>
+  <div id="flash"></div>
+  <svg width="0" height="0" style="position:absolute"><filter id="mb" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur id="mbx" stdDeviation="0 0"/></filter></svg>
+  <div id="sim">SIMULATION · BASED ON REAL DATA</div>
+  <div id="clock"><b></b><span></span></div>
+  <div id="hud"></div>
+  <div id="cap"></div>
+  <div id="card"></div>
+</div>
+<script src="../engine/SVGRenderer.js"></script>
+<script src="../engine/ExpressionEngine.js"></script>
+<script src="../engine/PoseController.js"></script>
+<script src="../engine/AnimationEngine.js"></script>
+<script src="../engine/LipSyncEngine.js"></script>
+<script src="../engine/CharacterEngine.js"></script>
+<script src="../engine/rigs/HumanRig.js"></script>
+<script src="../engine/rigs/QuadrupedRig.js"></script>
+<script src="extras.js"></script>
+<script src="../characters/dan/config.js"></script>
+<script src="../characters/mia/config.js"></script>
+<script src="../characters/leo/config.js"></script>
+<script src="../characters/bea/config.js"></script>
+<script src="../characters/biscuit/config.js"></script>
+<script src="../scenes/backdrops.js"></script>
+<script src="backdrops-extra.js"></script>
+<script src="graphics.js"></script>
+<script src="camera.js"></script>
+<script src="runtime.js"></script>
+<script>
+const ep = new URLSearchParams(location.search).get('ep') || 'ep01-ai-bubble';
+const s = document.createElement('script');
+s.src = '../episodes/' + ep + '/episode.js';
+s.onload = () => {
+  const v = document.createElement('script');
+  v.src = '../episodes/' + ep + '/voz.js';
+  v.onload = v.onerror = () => Player.boot();
+  document.body.appendChild(v);
+};
+document.body.appendChild(s);
+</script>
+</body></html>

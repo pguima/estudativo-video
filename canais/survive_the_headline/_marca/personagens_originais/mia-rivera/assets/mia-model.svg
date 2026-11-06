@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-425 -480 850 860" role="img" aria-label="Mia Rivera" preserveAspectRatio="xMidYMax meet" overflow="visible" opacity="1" display="inline" xmlns="http://www.w3.org/2000/svg">
+<title>Mia Rivera - modelo-base</title>
+<desc>Survive the Headline. Frente, neutra, figurino cotidiano. Partes alternativas (coque, bolso, cracha) existem com display=none. Cada parte tem id e data-part; data-pivot marca o ponto de articulacao. Direita e esquerda sao da personagem.</desc>
+<defs>
+<clipPath id="mia-clip-eye-right">
+<path d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0C15.1 22.7 -15.1 22.7 -21 0Z"/>
+</clipPath>
+<clipPath id="mia-clip-eye-left">
+<path d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0C15.1 22.7 -15.1 22.7 -21 0Z"/>
+</clipPath>
+<clipPath id="mia-clip-mouth">
+<path d="M-22 -2.4C-12.1 1.5 12.1 1.5 22 -2.4C12.1 1.5 -12.1 1.5 -22 -2.4Z"/>
+</clipPath>
+</defs>
+<ellipse cx="0" cy="344" rx="130" ry="15" fill="#000" fill-opacity="0.22" data-part="shadow" id="mia-shadow" display="inline" opacity="1"/>
+<g data-part="character" id="mia-character" transform="scale(1 1)">
+<g data-part="seat" id="mia-seat" display="none" opacity="0" transform="translate(0 0)">
+<rect x="-70" y="192" width="140" height="22" rx="6" fill="#a5764a" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-58 214L-70 340H-54L-38 214Z" fill="#7d5533" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M58 214L70 340H54L38 214Z" fill="#7d5533" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-60 282H60V295H-60Z" fill="#a5764a" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g data-part="pelvis" id="mia-pelvis" data-pivot="0,0" transform="translate(0 18)">
+<g data-part="layer-back-arm" id="mia-layer-back-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-60 -8C-71.3 -2 -69.7 14.7 -68 24C-66.3 33.3 -61.3 43.3 -50 48C-38.7 52.7 -16.7 52 0 52C16.7 52 38.7 52.7 50 48C61.3 43.3 66.3 33.3 68 24C69.7 14.7 71.3 -2 60 -8C48.7 -14 20 -12 0 -12C-20 -12 -48.7 -14 -60 -8Z"/>
+<g data-part="leg-left" id="mia-leg-left" data-pivot="34,10" transform="translate(34 10)">
+<g>
+<g transform="translate(0 0) rotate(-2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-32 0A32 32 0 0 1 32 0L24 138A24 24 0 0 1 -24 138Z"/>
+<g data-pivot="0,138" transform="translate(0 138) rotate(2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-24 0A24 24 0 0 1 24 0L20 136A20 20 0 0 1 -20 136Z"/>
+<g data-pivot="0,136" transform="translate(4 136)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-left" id="mia-thigh-left" transform="translate(0 0) rotate(-2)">
+<path d="M-32 0A32 32 0 0 1 32 0L24 138A24 24 0 0 1 -24 138Z" fill="#2f4a78"/>
+<g data-part="shin-left" id="mia-shin-left" data-pivot="0,138" transform="translate(0 138) rotate(2)">
+<path d="M-24 0A24 24 0 0 1 24 0L20 136A20 20 0 0 1 -20 136Z" fill="#2f4a78"/>
+<g data-part="foot-left" id="mia-foot-left" data-pivot="0,136" transform="translate(4 136)">
+<path d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z" fill="#f4f5f7"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#8fb8c4" d="M-16 20H16"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z" fill="#c9ced6"/>
+<path d="M-21 -9H21" fill="none" stroke-width="5" stroke-linecap="round" stroke="#4f6d9e"/>
+</g>
+<path d="M-5.5 0A5.5 5.5 0 0 1 5.5 0L5.5 104A5.5 5.5 0 0 1 -5.5 104Z" transform="translate(12 14) scale(1 1)" fill="#253b61"/>
+<path d="M-12 -3Q0 7 12 -3" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#253b61"/>
+</g>
+<path d="M-6.5 0A6.5 6.5 0 0 1 6.5 0L5.5 112A5.5 5.5 0 0 1 -5.5 112Z" transform="translate(12 8) scale(1 1)" fill="#253b61" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<g data-part="leg-right" id="mia-leg-right" data-pivot="-34,10" transform="translate(-34 10)">
+<g>
+<g transform="translate(0 0) rotate(2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-32 0A32 32 0 0 1 32 0L24 138A24 24 0 0 1 -24 138Z"/>
+<g data-pivot="0,138" transform="translate(0 138) rotate(-2)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-24 0A24 24 0 0 1 24 0L20 136A20 20 0 0 1 -20 136Z"/>
+<g data-pivot="0,136" transform="translate(-4 136)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z"/>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z"/>
+</g>
+</g>
+</g>
+</g>
+<g>
+<g data-part="thigh-right" id="mia-thigh-right" transform="translate(0 0) rotate(2)">
+<path d="M-32 0A32 32 0 0 1 32 0L24 138A24 24 0 0 1 -24 138Z" fill="#2f4a78"/>
+<g data-part="shin-right" id="mia-shin-right" data-pivot="0,138" transform="translate(0 138) rotate(-2)">
+<path d="M-24 0A24 24 0 0 1 24 0L20 136A20 20 0 0 1 -20 136Z" fill="#2f4a78"/>
+<g data-part="foot-right" id="mia-foot-right" data-pivot="0,136" transform="translate(-4 136)">
+<path d="M-20 -6C-26.8 -3.7 -20 3.7 -21 8C-22 12.3 -25.3 16.3 -26 20C-26.7 23.7 -25 30 -25 30C-25 30 25 30 25 30C25 30 26.7 23.7 26 20C25.3 16.3 22 12.3 21 8C20 3.7 26.8 -3.7 20 -6C13.2 -8.3 -13.2 -8.3 -20 -6Z" fill="#f4f5f7"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" stroke="#8fb8c4" d="M-16 20H16"/>
+<path fill="none" stroke="#7f8a96" stroke-width="3" stroke-linecap="round" d="M-9 3H8M-7 11H13"/>
+<path d="M-26 26C-26 26 -27 38 -27 38C-27 38 27 38 27 38C27 38 26 26 26 26C26 26 -26 26 -26 26Z" fill="#c9ced6"/>
+<path d="M-21 -9H21" fill="none" stroke-width="5" stroke-linecap="round" stroke="#4f6d9e"/>
+</g>
+<path d="M-5.5 0A5.5 5.5 0 0 1 5.5 0L5.5 104A5.5 5.5 0 0 1 -5.5 104Z" transform="translate(12 14) scale(1 1)" fill="#253b61"/>
+<path d="M-12 -3Q0 7 12 -3" fill="none" stroke-width="3.2" stroke-linecap="round" stroke="#253b61"/>
+</g>
+<path d="M-6.5 0A6.5 6.5 0 0 1 6.5 0L5.5 112A5.5 5.5 0 0 1 -5.5 112Z" transform="translate(12 8) scale(1 1)" fill="#253b61" display="inline" opacity="1"/>
+</g>
+</g>
+</g>
+<path data-part="hips" id="mia-hips" d="M-60 -8C-71.3 -2 -69.7 14.7 -68 24C-66.3 33.3 -61.3 43.3 -50 48C-38.7 52.7 -16.7 52 0 52C16.7 52 38.7 52.7 50 48C61.3 43.3 66.3 33.3 68 24C69.7 14.7 71.3 -2 60 -8C48.7 -14 20 -12 0 -12C-20 -12 -48.7 -14 -60 -8Z" fill="#2f4a78"/>
+<g data-part="layer-hair-back" id="mia-layer-hair-back" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g transform="translate(0 -232)">
+<path fill="#33200f" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-back" id="mia-hair-back" d="M-60 -170C-75.3 -159.2 -85 -136.3 -92 -120C-99 -103.7 -102 -87 -102 -72C-102 -57 -91.3 -44 -92 -30C-92.7 -16 -109.3 -2.3 -106 12C-102.7 26.3 -83.7 50.7 -72 56C-60.3 61.3 -48 45 -36 44C-24 43 -12 50 0 50C12 50 24 43 36 44C48 45 60.3 61.3 72 56C83.7 50.7 102.7 26.3 106 12C109.3 -2.3 92.7 -16 92 -30C91.3 -44 102 -57 102 -72C102 -87 99 -103.7 92 -120C85 -136.3 75.3 -159.2 60 -170C44.7 -180.8 20 -185 0 -185C-20 -185 -44.7 -180.8 -60 -170Z" display="inline" opacity="1"/>
+<g data-part="hair-bun" id="mia-hair-bun" display="none" opacity="0" transform="translate(0 -188)">
+<circle r="31" fill="#43291c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-16 -8Q0 -22 16 -10M-14 8Q2 -4 18 6" fill="none" stroke="#6a4630" stroke-width="4" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g data-part="layer-neck" id="mia-layer-neck" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="neck" id="mia-neck" transform="translate(0 -226)">
+<path d="M-21 0A21 21 0 0 1 21 0L24 62A24 24 0 0 1 -24 62Z" fill="#f0bf9c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-19 2H19V14Q0 24 -19 14Z" fill="#dda27c"/>
+</g>
+</g>
+<g data-part="torso" id="mia-torso" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<path stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="torso-shape" id="mia-torso-shape" d="M-30 -212C-42.3 -213 -64.7 -205 -74 -198C-83.3 -191 -85.7 -184.7 -86 -170C-86.3 -155.3 -80 -130 -76 -110C-72 -90 -62.7 -72.7 -62 -50C-61.3 -27.3 -72 26 -72 26C-72 26 -46 30.7 -34 32C-22 33.3 -11.3 34 0 34C11.3 34 22 33.3 34 32C46 30.7 72 26 72 26C72 26 61.3 -27.3 62 -50C62.7 -72.7 72 -90 76 -110C80 -130 86.3 -155.3 86 -170C85.7 -184.7 83.3 -191 74 -198C64.7 -205 42.3 -213 30 -212C17.7 -211 10 -192 0 -192C-10 -192 -17.7 -211 -30 -212Z" fill="#0f5f6e"/>
+<path data-part="torso-shade" id="mia-torso-shade" d="M54 30C58.3 36 70.7 39.3 72 26C73.3 12.7 61.3 -27.3 62 -50C62.7 -72.7 72.7 -93.3 76 -110C79.3 -126.7 84 -149 82 -150C80 -151 69.3 -131.7 64 -116C58.7 -100.3 53 -73.7 50 -56C47 -38.3 45.3 -24.3 46 -10C46.7 4.3 49.7 24 54 30Z" fill="#0b4a57" display="inline" opacity="1"/>
+<path fill="none" stroke-width="3.2" stroke-linecap="round" d="M-44 -26Q-22 -16 -6 -22M46 -74Q32 -60 14 -62" stroke="#083a45"/>
+<path fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-part="collar" id="mia-collar" stroke="#083a45" d="M-30 -211Q0 -175 30 -211"/>
+<path fill="none" stroke-width="3.2" stroke-linecap="round" data-part="pocket" id="mia-pocket" stroke="#083a45" d="M-50 -128H-18V-98H-50Z" display="none" opacity="0"/>
+<g data-part="badge" id="mia-badge" transform="translate(36 -124)" display="none" opacity="0">
+<rect x="-5" y="-10" width="10" height="12" rx="2" fill="#c7ced6" stroke="#1b1a22" stroke-width="2.5"/>
+<rect x="-15" y="0" width="30" height="38" rx="3" fill="#ffffff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-13" y="2" width="26" height="8" fill="#1c8c96"/>
+<circle cx="0" cy="19" r="6" fill="#dda27c"/>
+<path d="M-8 32H8" stroke="#7f8a96" stroke-width="3" stroke-linecap="round"/>
+</g>
+</g>
+<g data-part="layer-head" id="mia-layer-head" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="head" id="mia-head" data-pivot="0,-232" transform="translate(0 -232)">
+<g data-part="ears-back" id="mia-ears-back">
+<g transform="translate(75 -70) scale(-1 1)" display="none" opacity="0">
+<path d="M-3 -19Q-18 -21 -16 -2Q-14 19 2 16Q8 0 -3 -19Z" fill="#f0bf9c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-5 -9Q-11 -8 -9 2" fill="none" stroke="#dda27c" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(-75 -70)" display="none" opacity="0">
+<path d="M-3 -19Q-18 -21 -16 -2Q-14 19 2 16Q8 0 -3 -19Z" fill="#f0bf9c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-5 -9Q-11 -8 -9 2" fill="none" stroke="#dda27c" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+</g>
+<path fill="#f0bf9c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="face" id="mia-face" d="M0 8C10 8 21 8.7 30 5C39 1.3 47.7 -4.2 54 -14C60.3 -23.8 65 -40 68 -54C71 -68 73 -84.3 72 -98C71 -111.7 68.7 -126 62 -136C55.3 -146 42.3 -153.5 32 -158C21.7 -162.5 10.7 -163 0 -163C-10.7 -163 -21.7 -162.5 -32 -158C-42.3 -153.5 -55.3 -146 -62 -136C-68.7 -126 -71 -111.7 -72 -98C-73 -84.3 -71 -68 -68 -54C-65 -40 -60.3 -23.8 -54 -14C-47.7 -4.2 -39 1.3 -30 5C-21 8.7 -10 8 0 8Z"/>
+<path fill="#dda27c" fill-opacity="0.7" d="M30 5C35 2.7 47.7 -4.2 54 -14C60.3 -23.8 65 -40 68 -54C71 -68 72.2 -90.7 72 -98C71.8 -105.3 68.7 -105 67 -98C65.3 -91 65.2 -69 62 -56C58.8 -43 54.3 -29.3 48 -20C41.7 -10.7 27 -4.2 24 0C21 4.2 25 7.3 30 5Z" display="inline" opacity="1"/>
+<path data-part="tint" id="mia-tint" d="M0 8C10 8 21 8.7 30 5C39 1.3 47.7 -4.2 54 -14C60.3 -23.8 65 -40 68 -54C71 -68 73 -84.3 72 -98C71 -111.7 68.7 -126 62 -136C55.3 -146 42.3 -153.5 32 -158C21.7 -162.5 10.7 -163 0 -163C-10.7 -163 -21.7 -162.5 -32 -158C-42.3 -153.5 -55.3 -146 -62 -136C-68.7 -126 -71 -111.7 -72 -98C-73 -84.3 -71 -68 -68 -54C-65 -40 -60.3 -23.8 -54 -14C-47.7 -4.2 -39 1.3 -30 5C-21 8.7 -10 8 0 8Z" fill="#e0392b" opacity="0"/>
+<circle r="2.6" fill="#8a5a3c" data-part="mole" id="mia-mole" cx="-35" cy="-44"/>
+<g data-part="mouth" id="mia-mouth" transform="translate(0 -23)">
+<path fill="#5a1c22" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-22 -2.4C-12.1 1.5 12.1 1.5 22 -2.4C12.1 1.5 -12.1 1.5 -22 -2.4Z" display="none" opacity="0"/>
+<g clip-path="url(#mia-clip-mouth)">
+<ellipse fill="#d9636a" cx="0" cy="1.5" rx="13.6" ry="0" display="none" opacity="0"/>
+<rect fill="#fbf7ee" x="-60" width="120" y="-14.5" height="16" display="none" opacity="0"/>
+<path fill="none" stroke="#1b1a22" stroke-width="2.5" d="M0 0"/>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" d="M-22 -2.4C-12.1 1.5 12.1 1.5 22 -2.4" display="inline" opacity="1"/>
+<path fill="none" stroke="#c9757a" stroke-width="4" stroke-linecap="round" data-part="lower-lip" id="mia-lower-lip" d="M-9.2 9.2Q0 12.2 9.2 9.2" display="inline" opacity="1"/>
+</g>
+<g data-part="eye-right" id="mia-eye-right" transform="translate(-31 -80) scale(1 1)">
+<path fill="#ffffff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0C15.1 22.7 -15.1 22.7 -21 0Z"/>
+<g clip-path="url(#mia-clip-eye-right)">
+<g data-part="pupil-right" id="mia-pupil-right" transform="translate(0 0) scale(1 1)">
+<circle r="13.5" fill="#6b4226"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.8" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="6" stroke-linecap="round" d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0"/>
+<path fill="none" stroke="#1b1a22" stroke-width="4" stroke-linecap="round" data-part="lash-right" id="mia-lash-right" d="M-21 0L-29 -6M-17 -7.9L-25 -14.9"/>
+</g>
+<g data-part="eye-left" id="mia-eye-left" display="inline" opacity="1" transform="translate(31 -80) scale(1 1)">
+<path fill="#ffffff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0C15.1 22.7 -15.1 22.7 -21 0Z"/>
+<g clip-path="url(#mia-clip-eye-left)">
+<g data-part="pupil-left" id="mia-pupil-left" transform="translate(0 0) scale(1 1)">
+<circle r="13.5" fill="#6b4226"/>
+<circle r="8.5" fill="#120d0a"/>
+<circle cx="4" cy="-5" r="3.8" fill="#fff"/>
+</g>
+</g>
+<path fill="none" stroke="#1b1a22" stroke-width="6" stroke-linecap="round" d="M-21 0C-15.1 -26.2 15.1 -26.2 21 0"/>
+<path fill="none" stroke="#1b1a22" stroke-width="4" stroke-linecap="round" data-part="lash-left" id="mia-lash-left" d="M21 0L29 -6M17 -7.9L25 -14.9"/>
+</g>
+<ellipse fill="rgb(240,191,156)" data-part="nose" id="mia-nose" cx="0" cy="-50" rx="9" ry="7.5"/>
+<path fill="none" stroke="#1b1a22" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" d="M8.5 -52.4C8.5 -51.6 9.1 -49.2 8.6 -47.8C8.1 -46.3 6.8 -44.8 5.3 -44C3.9 -43.1 1.8 -42.5 0 -42.5C-1.8 -42.5 -3.9 -43.1 -5.3 -44C-6.8 -44.8 -8.1 -46.3 -8.6 -47.8C-9.1 -49.2 -8.5 -51.6 -8.5 -52.4"/>
+<path fill="#43291c" stroke="#1b1a22" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" data-part="hair-front" id="mia-hair-front" d="M-72 2C-72 2 -80.7 -23.7 -84 -40C-87.3 -56.3 -91.7 -79.3 -92 -96C-92.3 -112.7 -91 -127.3 -86 -140C-81 -152.7 -72.7 -164 -62 -172C-51.3 -180 -36 -185 -22 -188C-8 -191 8 -192.3 22 -190C36 -187.7 51.3 -182 62 -174C72.7 -166 81 -155 86 -142C91 -129 92.3 -113 92 -96C91.7 -79 87.3 -56.3 84 -40C80.7 -23.7 72 2 72 2C72 2 63 -19.7 62 -34C61 -48.3 66.3 -70 66 -84C65.7 -98 63.7 -109 60 -118C56.3 -127 50.7 -132.3 44 -138C37.3 -143.7 20 -152 20 -152C20 -152 4.7 -148.7 -4 -146C-12.7 -143.3 -23.7 -140.7 -32 -136C-40.3 -131.3 -49 -125.3 -54 -118C-59 -110.7 -60.7 -106 -62 -92C-63.3 -78 -60.3 -49.7 -62 -34C-63.7 -18.3 -72 2 -72 2Z"/>
+<path fill="none" stroke="#6a4630" stroke-width="7" stroke-linecap="round" d="M-44 -166Q-16 -178 14 -178"/>
+<path fill="none" stroke="#6a4630" stroke-width="4" stroke-linecap="round" data-part="hair-wave" id="mia-hair-wave" d="M-74 -82Q-81 -60 -72 -44Q-68 -30 -73 -16M74 -82Q81 -60 72 -44Q68 -30 73 -16" display="inline" opacity="1"/>
+<path fill="none" stroke="#33200f" stroke-width="8.5" stroke-linecap="round" data-part="brow-right" id="mia-brow-right" d="M-52 -111Q-34.1 -123.4 -10 -113"/>
+<path fill="none" stroke="#33200f" stroke-width="8.5" stroke-linecap="round" data-part="brow-left" id="mia-brow-left" display="inline" opacity="1" d="M52 -111Q34.2 -123.4 10 -113"/>
+<g data-part="ears-top" id="mia-ears-top"/>
+<g data-part="sweat" id="mia-sweat" display="none" opacity="0">
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" transform="translate(96 -122) rotate(12) scale(0.5 1)"/>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" transform="translate(-100 -96) rotate(-10) scale(0.38 1)"/>
+</g>
+<path d="M0 -14Q11 2 7 8A8 8 0 0 1 -7 8Q-11 2 0 -14Z" fill="#8fd6ff" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" display="none" opacity="0" transform="translate(-25 -42) scale(0.72 1)"/>
+</g>
+</g>
+<g data-part="layer-front-arm" id="mia-layer-front-arm" data-pivot="0,0" transform="translate(0 0) scale(1 1)">
+<g data-part="arm-left" id="mia-arm-left" data-pivot="76,-172" transform="translate(76 -172)">
+<g>
+<g transform="translate(0 0) rotate(-6)">
+<path d="M-18 0A18 18 0 0 1 18 0L16.5 94A16.5 16.5 0 0 1 -16.5 94Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,94" transform="translate(0 94) rotate(8)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-16.5 0A16.5 16.5 0 0 1 16.5 0L13 90A13 13 0 0 1 -13 90Z"/>
+<g data-pivot="0,90" transform="translate(0 90) scale(-0.86 0.86)">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#1b1a22" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-23 0A23 23 0 0 1 23 0L21 72A21 21 0 0 1 -21 72Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-left" id="mia-upper-arm-left" transform="translate(0 0) rotate(-6)">
+<path d="M-18 0A18 18 0 0 1 18 0L16.5 94A16.5 16.5 0 0 1 -16.5 94Z" fill="#f0bf9c"/>
+<g data-part="forearm-left" id="mia-forearm-left" data-pivot="0,94" transform="translate(0 94) rotate(8)">
+<path fill="#f0bf9c" d="M-16.5 0A16.5 16.5 0 0 1 16.5 0L13 90A13 13 0 0 1 -13 90Z"/>
+<g data-part="hand-left" id="mia-hand-left" data-pivot="0,90" transform="translate(0 90) scale(-0.86 0.86)">
+<g data-part="fingers-left" id="mia-fingers-left">
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#f0bf9c" data-part="palm-left" id="mia-palm-left"/>
+<path fill="none" stroke="#1b1a22" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#dda27c" d="M-4.5 0A4.5 4.5 0 0 1 4.5 0L3.5 66.6A3.5 3.5 0 0 1 -3.5 66.6Z" transform="translate(8 8)"/>
+</g>
+<path data-part="sleeve-left" id="mia-sleeve-left" d="M-23 0A23 23 0 0 1 23 0L21 72A21 21 0 0 1 -21 72Z" fill="#0f5f6e"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" d="M-20 88H20" stroke="#083a45"/>
+</g>
+</g>
+<ellipse data-part="shoulder-left" id="mia-shoulder-left" display="inline" opacity="1" fill="#0f5f6e" cx="-12" cy="4" rx="27" ry="27"/>
+</g>
+<g data-part="arm-right" id="mia-arm-right" data-pivot="-76,-172" transform="translate(-76 -172)">
+<g>
+<g transform="translate(0 0) rotate(6)">
+<path d="M-18 0A18 18 0 0 1 18 0L16.5 94A16.5 16.5 0 0 1 -16.5 94Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<g data-pivot="0,94" transform="translate(0 94) rotate(-8)">
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-16.5 0A16.5 16.5 0 0 1 16.5 0L13 90A13 13 0 0 1 -13 90Z"/>
+<g data-pivot="0,90" transform="translate(0 90) scale(0.86 0.86)">
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path fill="none" stroke="#1b1a22" stroke-width="18.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1M-5 28L-5 39.7L-5 44.8M5 28L5 39.1L5 42.2M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+</g>
+<path fill="#1b1a22" stroke="#1b1a22" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" d="M-23 0A23 23 0 0 1 23 0L21 72A21 21 0 0 1 -21 72Z"/>
+</g>
+</g>
+<g>
+<g data-part="upper-arm-right" id="mia-upper-arm-right" transform="translate(0 0) rotate(6)">
+<path d="M-18 0A18 18 0 0 1 18 0L16.5 94A16.5 16.5 0 0 1 -16.5 94Z" fill="#f0bf9c"/>
+<g data-part="forearm-right" id="mia-forearm-right" data-pivot="0,94" transform="translate(0 94) rotate(-8)">
+<path fill="#f0bf9c" d="M-16.5 0A16.5 16.5 0 0 1 16.5 0L13 90A13 13 0 0 1 -13 90Z"/>
+<g data-part="hand-right" id="mia-hand-right" data-pivot="0,90" transform="translate(0 90) scale(0.86 0.86)">
+<g data-part="fingers-right" id="mia-fingers-right">
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-14.5 28L-14.5 38.3L-14.5 44.1"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M-5 28L-5 39.7L-5 44.8"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M5 28L5 39.1L5 42.2"/>
+<path fill="none" stroke="#1b1a22" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" d="M14.5 28L14.5 36.1L14.5 36.9"/>
+</g>
+<path d="M-19 -4Q-23 16 -20 34Q0 42 20 34Q23 16 19 -4Q0 -10 -19 -4Z" fill="#f0bf9c" data-part="palm-right" id="mia-palm-right"/>
+<path fill="none" stroke="#1b1a22" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+<path fill="none" stroke="#f0bf9c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M15 8L21 19L18 30"/>
+</g>
+<path fill="#dda27c" d="M-4.5 0A4.5 4.5 0 0 1 4.5 0L3.5 66.6A3.5 3.5 0 0 1 -3.5 66.6Z" transform="translate(8 8)"/>
+<g transform="translate(0 72)" data-part="watch" id="mia-watch" display="inline" opacity="1">
+<rect x="-17" y="-5" width="34" height="10" rx="3" fill="#3a3f4b" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle r="7.5" fill="#e8edf2" stroke="#1b1a22" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<path data-part="sleeve-right" id="mia-sleeve-right" d="M-23 0A23 23 0 0 1 23 0L21 72A21 21 0 0 1 -21 72Z" fill="#0f5f6e"/>
+<path fill="none" stroke-width="4.5" stroke-linecap="round" d="M-20 88H20" stroke="#083a45"/>
+</g>
+</g>
+<ellipse data-part="shoulder-right" id="mia-shoulder-right" display="inline" opacity="1" fill="#0f5f6e" cx="12" cy="4" rx="27" ry="27"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

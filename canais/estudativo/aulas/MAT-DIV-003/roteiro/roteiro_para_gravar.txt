@@ -1,0 +1,51 @@
+Noventa e um é um número primo? Ele tem cara de primo, e muita gente diz que sim. E erra.
+
+Até o fim desta aula, você descobre por que ele não é, aprende a desmontar qualquer número em primos e ainda leva um atalho de prova.
+
+Para acompanhar, lembre de duas coisas: as regras de divisibilidade e a divisão por dois algarismos. Se faltar alguma, procure a aula no canal.
+
+Pense em cadeiras arrumadas em fileiras iguais. Com doze cadeiras, você tem várias arrumações: duas fileiras de seis, três fileiras de quatro.
+
+Com sete cadeiras, não tem jeito: ou uma fileira de sete, ou sete fileiras de uma. O sete só se divide por um e por ele mesmo.
+
+Esse é o número primo: tem exatamente dois divisores, o um e ele mesmo. Sete é primo. Doze não é: tem seis divisores, e número assim se chama composto.
+
+Atenção a estes casos. O um não é primo, porque tem um divisor só. O dois é primo, e é o único primo par: qualquer outro par também se divide por dois.
+
+Os primeiros primos são dois, três, cinco, sete, onze, treze, dezessete, dezenove, vinte e três e vinte e nove. Vale ter essa lista na cabeça.
+
+Como testar noventa e um? Tente dividir pelos primos, em ordem. Por dois? Não, é ímpar. Por três? A soma dos algarismos dá dez, não. Por cinco? Não termina em zero nem em cinco.
+
+Por sete? Noventa e um dividido por sete dá treze, sem resto. Aí está: noventa e um é sete vezes treze. Tem divisor além do um e dele mesmo, então não é primo.
+
+Todo número composto pode ser desmontado em primos. Cada número de uma multiplicação se chama fator. E fatorar é escrever o número como multiplicação só de primos.
+
+O método é o das divisões sucessivas: divida pelo menor primo que conseguir, repita com o resultado e pare quando chegar em um.
+
+Vamos com trezentos e sessenta. É par. Por dois, cento e oitenta. Por dois de novo, noventa. Por dois, quarenta e cinco.
+
+Quarenta e cinco é ímpar, então o dois não serve mais. A soma dos algarismos dá nove: por três, quinze. Por três de novo, cinco. Por cinco, um. Chegou em um, acabou.
+
+A resposta é a coluna dos divisores: dois vezes dois vezes dois vezes três vezes três vezes cinco. Para conferir, multiplique: oito vezes nove, setenta e dois. Vezes cinco, trezentos e sessenta.
+
+O erro mais comum é parar em números que não são primos. A pessoa escreve trezentos e sessenta igual a dez vezes trinta e seis, e acha que fatorou. A conta está certa, mas dez e trinta e seis ainda se desmontam. Fatorar só termina quando todo fator é primo.
+
+Agora o atalho, para testar se um número é primo sem perder tempo: pare quando o resultado da divisão ficar menor que o divisor.
+
+Teste noventa e sete. Dois, três e cinco não dividem. Por sete, dá treze e sobra resto. Treze ainda é maior que sete: continue. Por onze, dá oito e sobra resto. Oito é menor que onze: pare. Noventa e sete é primo.
+
+Funciona porque divisores vêm em pares: se existisse um divisor maior, o par dele seria menor, e você já teria testado. E só precisa testar primos, porque quem não se divide por dois também não se divide por quatro.
+
+Quando não compensa? Se o número é par, termina em cinco ou a soma dá múltiplo de três, as regras já resolveram. E em números enormes, o teste fica longo demais para fazer à mão.
+
+Hora de testar. Escreva cento e vinte e seis como multiplicação de primos.
+
+Pause o vídeo e tente.
+
+Vamos lá. É par: por dois, sessenta e três. Seis mais três dá nove: por três, vinte e um. Por três, sete. Por sete, um.
+
+Resposta: dois vezes três vezes três vezes sete. Conferindo: dois vezes nove, dezoito. Vezes sete, cento e vinte e seis.
+
+Resumindo: primo tem exatamente dois divisores, e fatorar é dividir pelo menor primo até chegar em um.
+
+Na próxima aula, a fatoração vira ferramenta para achar o MDC, o maior divisor que dois números têm em comum. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

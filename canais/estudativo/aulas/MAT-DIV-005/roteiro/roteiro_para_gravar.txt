@@ -1,0 +1,45 @@
+Qual é o menor número que é múltiplo de doze, de dezoito e de trinta, ao mesmo tempo? Listando um por um, você ia ficar um bom tempo aqui.
+
+Até o fim desta aula, você resolve isso em menos de um minuto, e ainda leva um atalho de prova.
+
+Para acompanhar, lembre de duas coisas: o que são números primos e o que é o MDC. Se faltar alguma, procure a aula no canal.
+
+MMC quer dizer mínimo múltiplo comum. O nome já explica tudo, parte por parte.
+
+Múltiplo: o resultado de multiplicar o número por outro, como na tabuada, só que sem parar no dez. Comum: que aparece na lista de todos os números. Mínimo: o menor deles, sem contar o zero.
+
+Vamos ver com quatro e seis. Múltiplos de quatro: quatro, oito, doze, dezesseis, vinte, vinte e quatro. Múltiplos de seis: seis, doze, dezoito, vinte e quatro.
+
+Os dois aparecem em doze e em vinte e quatro. O menor é doze. MMC de quatro e seis é doze.
+
+Com números pequenos, isso resolve. Com números grandes, a lista não acaba mais. E aí entra o método de verdade.
+
+É a fatoração simultânea: fatorar todos os números ao mesmo tempo. Escreva os números lado a lado. Doze, dezoito e trinta. A regra é uma só: use sempre o menor primo que divida pelo menos um deles. Quem não for divisível, só desce repetido.
+
+O dois divide os três números: seis, nove, quinze. O dois de novo divide o seis: três. Nove e quinze descem repetidos.
+
+Agora o três: um, três, cinco. Três de novo: um, um, cinco. Por fim, o cinco: um, um, um. Quando tudo vira um, acabou.
+
+O MMC é a multiplicação de todos os primos que você usou: dois vezes dois vezes três vezes três vezes cinco. Cento e oitenta.
+
+Se você viu a aula de MDC, repare na diferença. No MDC, só entra o primo que divide todos os números. No MMC, basta dividir um.
+
+O erro mais comum é parar antes da hora. A pessoa vê um, um, cinco, acha que acabou, e esquece o último cinco. Ela chega em trinta e seis, que nem é múltiplo de trinta. Só pare quando todos virarem um.
+
+Agora o atalho, que serve para dois números: MMC vezes MDC é igual a um número vezes o outro.
+
+Só doze e dezoito, sem o trinta. Você já sabe que o MDC é seis. Para achar o MMC, multiplique os dois números e divida pelo MDC. Doze vezes dezoito, duzentos e dezesseis. Dividido por seis: trinta e seis. Esse é o MMC, sem fatorar nada.
+
+E tem um caso ainda mais rápido: se o maior número já é múltiplo do menor, ele mesmo é o MMC. MMC de cinco e vinte? Vinte.
+
+Hora de testar. Qual é o MMC de seis, oito e dez?
+
+Pause o vídeo e tente.
+
+Vamos lá. Por dois: três, quatro, cinco. Por dois: três, dois, cinco. Por dois: três, um, cinco. Por três: um, um, cinco. Por cinco: um, um, um.
+
+Agora multiplique: dois vezes dois vezes dois vezes três vezes cinco. Cento e vinte.
+
+Resumindo: divida pelo menor primo, quem não divide desce repetido, e multiplique a coluna quando tudo virar um.
+
+Na próxima aula, o MDC em problemas de verdade: dividir coisas em partes iguais, as maiores possíveis. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!
