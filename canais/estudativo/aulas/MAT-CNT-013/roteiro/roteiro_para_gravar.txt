@@ -1,0 +1,43 @@
+Você lança três moedas. Qual a chance de sair pelo menos uma cara? Listar todos os jeitos cansa. Mas só existe um resultado sem cara nenhuma. E ele resolve a questão em uma linha: a chance dá sete oitavos.
+
+Até o fim desta aula, você calcula chances pelo lado contrário, sabe quando isso economiza tempo e leva um atalho de prova.
+
+Você vai usar duas coisas: probabilidade é favoráveis sobre possíveis, e o complementar de um conjunto: o que está no universo e fica fora dele. Se faltar alguma, procure no canal.
+
+Primeiro, o espaço amostral: todos os resultados possíveis. Cada moeda tem duas faces, cara ou coroa. São três casinhas com duas opções cada: dois vezes dois vezes dois dá oito resultados.
+
+Na árvore de possibilidades, são oito pontas. Pelo menos uma cara quer dizer uma, duas ou três caras. Só uma ponta fica de fora: coroa, coroa, coroa.
+
+Então os favoráveis são oito menos um, que dá sete. A chance é sete oitavos. Repare: você não contou o que pode acontecer. Contou o que não pode, e tirou do total.
+
+Esse lado contrário tem nome: evento complementar. É o mesmo complementar dos conjuntos, e o universo é o espaço amostral. O evento é pelo menos uma cara. O complementar é tudo que fica fora dele: nenhuma cara.
+
+Um evento e o seu complementar dividem o espaço amostral inteiro: ou acontece um, ou acontece o outro. Juntas, as chances somam oito oitavos, que é um inteiro: cem por cento, a certeza.
+
+Daí sai a regra: a chance do evento é um menos a chance do complementar. Na tela, pê de á é a chance do evento á. Com um traço em cima do á, é a chance do complementar.
+
+Nas três moedas: um menos um oitavo. Um inteiro tem oito oitavos: oito pedaços iguais. Tirando um pedaço, sobram sete oitavos. Em por cento, dá oitenta e sete e meio por cento: quase certeza.
+
+Agora um caso em que o nenhum tem muitos resultados. Você chuta duas questões, cada uma com cinco alternativas e só uma certa. Qual a chance de acertar pelo menos uma?
+
+Possíveis: cinco vezes cinco dá vinte e cinco. O complementar é errar ambas. Cada questão tem quatro alternativas erradas: quatro vezes quatro dá dezesseis jeitos de errar tudo.
+
+A chance de errar tudo é dezesseis vinte e cinco avos. Tire do inteiro: vinte e cinco menos dezesseis dá nove. A chance de acertar pelo menos uma é nove vinte e cinco avos, que dá trinta e seis por cento.
+
+O erro comum é ler pelo menos uma como exatamente uma. Nas três moedas, a pessoa conta só cara, coroa, coroa; coroa, cara, coroa; e coroa, coroa, cara. Responde três oitavos. Mas pelo menos uma também aceita duas ou três caras. Por isso, sete oitavos.
+
+Agora o atalho. Viu pelo menos um, no mínimo um ou algum? Calcule a chance do nenhum e tire de um.
+
+Funciona porque o nenhum costuma ser um grupo pequeno e fácil de contar, enquanto o pelo menos um se espalha em vários casos. Não compensa quando o próprio evento já é pequeno, como sair três caras: é uma ponta só, um oitavo, direto.
+
+Hora de testar. Você lança dois dados comuns, de seis faces. Qual a chance de sair pelo menos um seis?
+
+Pause o vídeo e tente.
+
+Vamos lá. Possíveis: seis vezes seis dá trinta e seis. O complementar é nenhum seis. Cada dado tem cinco faces que não são seis: cinco vezes cinco dá vinte e cinco.
+
+Os favoráveis: trinta e seis menos vinte e cinco dá onze. A chance é onze trinta e seis avos, um pouco menos que um terço. Quem achou que nenhum seis era um caso só respondeu trinta e cinco trinta e seis avos, e errou feio.
+
+Resumindo: o complementar é tudo que fica fora do evento. Pelo menos um? Calcule o nenhum e tire de um.
+
+Na próxima aula, a palavra ou entra na probabilidade: a chance de tirar do baralho um rei ou uma carta de copas, sem contar o rei de copas duas vezes. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

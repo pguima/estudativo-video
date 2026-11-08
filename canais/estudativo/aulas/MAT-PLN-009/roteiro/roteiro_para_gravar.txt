@@ -1,0 +1,39 @@
+Um mais dois í é raiz de xis ao cubo menos três xis ao quadrado mais sete xis menos cinco. Sem fazer conta nenhuma, você já sabe outra raiz: um menos dois í. E a terceira sai em poucos passos.
+
+Até o fim desta aula, você usa o par de uma raiz complexa para achar todas as raízes, com um atalho de prova.
+
+Você vai usar três coisas: o conjugado: o de dois mais três í é dois menos três í; a forma fatorada, com um parêntese por raiz; e a divisão de polinômios pela chave. Se faltar alguma, procure no canal.
+
+Na aula passada, dois mais três í e dois menos três í saíram juntos da mesma equação. Não foi sorte: o mais ou menos da fórmula sempre entrega o par. E isso vale em qualquer grau: se um complexo é raiz, o conjugado dele também é.
+
+Por quê? Trocar í por menos í não muda nenhum número real, e menos í, ao quadrado, também dá menos um. Então, se a conta com um mais dois í dá zero, a mesma conta com um menos dois í também dá. Só tem uma condição: os coeficientes do polinômio precisam ser reais.
+
+Uma consequência: grau três tem três raízes, e as que têm í vêm de duas em duas. Então todo polinômio de grau três com coeficientes reais tem pelo menos uma raiz real.
+
+Falta a terceira raiz. O par vira dois parênteses: xis menos, abre parênteses, um mais dois í, fecha parênteses, vezes xis menos, abre parênteses, um menos dois í, fecha parênteses.
+
+Junte xis menos um em cada parêntese: fica xis menos um, menos dois í, vezes xis menos um, mais dois í. É soma vezes diferença: xis menos um, ao quadrado, menos, abre parênteses, dois í, fecha parênteses, ao quadrado.
+
+Xis menos um, ao quadrado: xis ao quadrado menos dois xis mais um. Dois í, ao quadrado: quatro vezes menos um, menos quatro. Tirar menos quatro é somar quatro: xis ao quadrado menos dois xis mais cinco. O í sumiu: o par sempre dá coeficientes reais.
+
+Divida o polinômio por esse pedaço, pela chave. Xis ao cubo dividido por xis ao quadrado: xis. Xis vezes o divisor: xis ao cubo menos dois xis ao quadrado mais cinco xis. Trocando os sinais e somando, fica menos xis ao quadrado mais dois xis menos cinco.
+
+Menos xis ao quadrado dividido por xis ao quadrado: menos um. Menos um vezes o divisor: menos xis ao quadrado mais dois xis menos cinco. Subtraindo: resto zero. Quociente xis menos um: a terceira raiz é um.
+
+Cuidado com o erro mais comum: trocar o sinal errado no conjugado. O par de um mais dois í não é menos um menos dois í. A parte real fica igual, e só o sinal do í muda: um menos dois í.
+
+Agora o atalho: o par já sai pronto, sem abrir parênteses. Para um mais ou menos dois í: o termo do meio é menos duas vezes a parte real, vezes xis: menos dois xis. O número sozinho é a parte real ao quadrado, mais o quadrado do número que acompanha o í: um mais quatro, cinco. Xis ao quadrado menos dois xis mais cinco.
+
+Funciona porque é a mesma conta que você acabou de fazer, para qualquer par. E antes de dividir, teste o um: aqui, um menos três mais sete menos cinco dá zero. O um é raiz, e a divisão só confirma. Se o um não fosse raiz, a divisão pelo par seria o caminho.
+
+Hora de testar. Dois í é raiz de xis ao cubo menos xis ao quadrado mais quatro xis menos quatro. Ache as outras duas raízes.
+
+Pause o vídeo e tente.
+
+Vamos lá. Dois í é zero mais dois í: o conjugado é menos dois í. Pelo atalho, o termo do meio é menos duas vezes zero: desaparece. O número sozinho é zero mais quatro, quatro. O par vira xis ao quadrado mais quatro.
+
+Na chave: xis ao cubo dividido por xis ao quadrado, xis. Xis vezes xis ao quadrado mais quatro: xis ao cubo mais quatro xis. Sobra menos xis ao quadrado menos quatro: menos um vezes o divisor, resto zero. Quociente xis menos um. Raízes: dois í, menos dois í e um.
+
+Resumindo: com coeficientes reais, raiz complexa vem com o conjugado, o par vira um fator de grau dois, e a divisão entrega as outras raízes.
+
+Na próxima aula, você pratica raízes reais e complexas juntas, em questões no estilo das provas. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

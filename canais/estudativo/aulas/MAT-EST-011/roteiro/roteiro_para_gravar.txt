@@ -1,0 +1,35 @@
+Cinco notas na tela. Qual é a nota do meio? Se você apontou o nove, que está no meio da lista, caiu numa armadilha. Antes de achar o meio, a lista precisa estar em ordem.
+
+Até o fim desta aula, você acha o valor do meio e o valor mais comum de qualquer lista e leva um atalho de prova.
+
+Você precisa de duas coisas: a média aritmética, que é a soma dividida pela quantidade, e a frequência absoluta, que conta quantas vezes cada valor aparece. Se faltar alguma, procure no canal.
+
+A mediana é o valor do meio, com os dados em ordem, do menor para o maior. Ela deixa metade dos dados de cada lado. Pense numa fila de pessoas organizada por altura: a altura de quem está no meio da fila é a mediana.
+
+Nas notas do começo, já em ordem, o valor do meio é o terceiro: cinco. Duas notas abaixo dele, duas acima. O nove era só o que estava no meio da bagunça.
+
+E com quantidade par? Veja os quatro números na tela. Em ordem, não sobra um no meio: sobram o cinco e o oito. A mediana é a média dos números do meio. Cinco mais oito dá treze. Treze dividido por dois dá seis vírgula cinco. Repare: a mediana nem precisa estar na lista.
+
+A moda é o valor que mais aparece. Como a roupa da moda: a que você mais vê na rua. Na lista da tela, o sete aparece três vezes, mais que qualquer outro. A moda é sete. Para achar, conte quantas vezes cada valor aparece, como na tabela de frequência.
+
+Uma lista pode ter duas modas, se dois valores empatam no topo. E pode não ter moda, se todos aparecem o mesmo número de vezes. A moda serve até para dado que não é número: o transporte mais usado, a cor de camiseta mais vendida.
+
+Numa tabela de frequência, a moda é ainda mais rápida: é o valor da linha com a maior frequência absoluta. Na pesquisa de transporte com vinte pessoas, ônibus aparece oito vezes, mais que os outros. A moda é ônibus.
+
+Agora, um erro comum: achar a mediana pelo menor e pelo maior valor. Nos quatro números, três mais nove dá doze, que dividido por dois dá seis. Mas a mediana é seis vírgula cinco. A mediana não olha só as pontas: ela olha a posição de todos os dados.
+
+Atalho para listas grandes: a posição do meio. Some um à quantidade de dados e divida por dois. Com onze dados, onze mais um dá doze, e doze dividido por dois dá seis. A mediana é o sexto valor.
+
+Funciona porque o sexto deixa cinco antes e cinco depois. Se der número quebrado, como cinco e meio com dez dados, a mediana é a média do quinto e do sexto. Em lista curta, não compensa: olhe e ache o meio.
+
+Hora de testar. As notas de oito alunos estão na tela. Qual é a mediana? E qual é a moda?
+
+Pause o vídeo e tente.
+
+Vamos lá. Primeiro, coloque em ordem. São oito dados: oito mais um dá nove, e nove dividido por dois dá quatro e meio. A mediana é a média do quarto e do quinto valor: o sete e o oito. Sete mais oito dá quinze, e quinze dividido por dois dá sete vírgula cinco.
+
+A moda é nove: é a única nota que aparece duas vezes. E confira a mediana: quatro notas ficam abaixo de sete vírgula cinco e quatro ficam acima. Metade de cada lado, como deve ser.
+
+Resumindo: para a mediana, ordene e pegue o meio; para a moda, procure o que mais aparece.
+
+Na próxima aula, os dados vêm numa tabela, com a nota e o número de alunos. Você vai achar média, mediana e moda sem escrever a lista inteira. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

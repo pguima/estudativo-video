@@ -1,0 +1,47 @@
+Três palitos: de dois, de três e de seis centímetros. Tente montar um triângulo com eles. Não fecha. Os palitos menores não alcançam um ao outro.
+
+Até o fim desta aula, você sabe na hora se três medidas formam triângulo, acha os valores possíveis do terceiro lado e leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: saber que um triângulo tem três lados que se fecham em três cantos, e resolver uma inequação dupla, com o xis preso entre dois números. Se faltar alguma, procure no canal.
+
+Por que não fecha? Deite o palito de seis centímetros. De cada ponta dele sai um palito menor: o de dois de um lado, o de três do outro, tentando se encontrar lá em cima.
+
+Mesmo esticados ao máximo, deitados sobre o maior, eles somam cinco centímetros. Cinco é menos que seis. Não chegam nem a se tocar. Levantando, ficam mais longe ainda.
+
+Essa é a condição de existência do triângulo: cada lado tem que ser menor que a soma dos outros. É a ideia de que o caminho reto é o mais curto: ir direto de um canto a outro é sempre mais curto que dar a volta pelo terceiro canto.
+
+E se a soma der exatamente igual? Palitos de dois, de três e de cinco centímetros. Dois mais três dá cinco: os menores ficam deitados em cima do maior, achatados. Vira uma linha, não um triângulo.
+
+Então a soma dos menores tem que ser maior que o maior lado. Igual não serve.
+
+O caso que mais cai: você conhece dois lados, de cinco e de oito centímetros, e quer saber quanto pode medir o terceiro, que vamos chamar de xis.
+
+O xis tem que ser menor que a soma dos outros, cinco mais oito: xis menor que treze.
+
+O oito tem que ser menor que cinco mais xis. Tire cinco de cada lado: três menor que xis. E o cinco já é menor que o oito: passa no teste sozinho.
+
+Juntando as exigências: três menor que xis, menor que treze. O terceiro lado fica entre três e treze, sem encostar nas pontas.
+
+Se o lado for um número inteiro de centímetros, ele vai de quatro até doze. Contando: doze menos quatro dá oito, mais um, porque o quatro também entra: nove valores.
+
+O erro mais comum é deixar as pontas entrarem. A pessoa responde de três até treze e conta onze valores.
+
+Teste a ponta: lados de três, de cinco e de oito centímetros. Três mais cinco dá oito, igualzinho ao maior. É o caso achatado. O treze também achata: cinco mais oito dá treze.
+
+E o atalho prometido, em duas partes. Com três medidas, teste só o maior lado: ele é menor que a soma dos outros? Se for, forma triângulo.
+
+Funciona porque os lados menores passam no teste sozinhos: cada um já é menor que o maior lado, então é menor que o maior somado com qualquer outro.
+
+Com dois lados, o terceiro fica entre a diferença e a soma. Oito menos cinco dá três. Oito mais cinco dá treze. Só não pare no intervalo quando a questão pedir mais, como o triângulo ser isósceles: aí, o terceiro lado ainda tem que repetir um dos outros.
+
+Hora de testar. Um triângulo tem lados de quatro e de nove centímetros. O terceiro lado é um número inteiro de centímetros. Quantos valores ele pode ter?
+
+Pause o vídeo e tente.
+
+Vamos lá. Diferença: nove menos quatro dá cinco. Soma: nove mais quatro dá treze. Cinco menor que xis, menor que treze. Sem as pontas, os inteiros vão de seis até doze.
+
+Contando: doze menos seis dá seis, mais um, porque o seis também entra: sete valores. Quem deixa as pontas entrarem conta nove, e erra.
+
+Resumindo: o maior lado tem que ser menor que a soma dos outros, e o terceiro lado fica entre a diferença e a soma, sem as pontas.
+
+Hoje, três medidas diziam se o triângulo existe. Na próxima aula, você vê quais informações garantem que dois triângulos são iguais, os casos de congruência, e usa isso para descobrir um lado ou um ângulo que falta. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

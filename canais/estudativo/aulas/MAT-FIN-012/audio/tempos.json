@@ -1,0 +1,4500 @@
+{
+ "total": 282.83,
+ "scenes": [
+  {
+   "id": "s01",
+   "block": "gancho",
+   "start": 0.6,
+   "dur": 10.23,
+   "tokens": [
+    {
+     "disp": "Dois",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.48
+    },
+    {
+     "disp": "financiamentos",
+     "bold": false,
+     "t0": 0.48,
+     "t1": 1.3
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 1.3,
+     "t1": 1.54
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 1.54,
+     "t1": 1.9
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 1.9,
+     "t1": 2.12
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 2.12,
+     "t1": 2.42
+    },
+    {
+     "disp": "Mesma",
+     "bold": false,
+     "t0": 2.86,
+     "t1": 3.3
+    },
+    {
+     "disp": "taxa,",
+     "bold": false,
+     "t0": 3.5,
+     "t1": 3.94
+    },
+    {
+     "disp": "mesmo",
+     "bold": false,
+     "t0": 4.16,
+     "t1": 4.42
+    },
+    {
+     "disp": "prazo.",
+     "bold": false,
+     "t0": 4.62,
+     "t1": 4.9
+    },
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 5.3,
+     "t1": 5.48
+    },
+    {
+     "disp": "fim,",
+     "bold": false,
+     "t0": 5.48,
+     "t1": 5.7
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 6.14,
+     "t1": 6.3
+    },
+    {
+     "disp": "deles",
+     "bold": false,
+     "t0": 6.3,
+     "t1": 6.48
+    },
+    {
+     "disp": "cobrou",
+     "bold": false,
+     "t0": 6.48,
+     "t1": 6.86
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 6.86,
+     "t1": 7.22
+    },
+    {
+     "disp": "juros.",
+     "bold": false,
+     "t0": 7.22,
+     "t1": 7.5
+    },
+    {
+     "disp": "Qual,",
+     "bold": false,
+     "t0": 8.08,
+     "t1": 8.34
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.92,
+     "t1": 9.08
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 9.08,
+     "t1": 9.24
+    },
+    {
+     "disp": "quê?",
+     "bold": false,
+     "t0": 9.24,
+     "t1": 9.42
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 2.86,
+    "c": 6.86
+   }
+  },
+  {
+   "id": "s02",
+   "block": "gancho",
+   "start": 10.83,
+   "dur": 8.38,
+   "tokens": [
+    {
+     "disp": "Até",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 0.69
+    },
+    {
+     "disp": "fim",
+     "bold": false,
+     "t0": 0.69,
+     "t1": 0.85
+    },
+    {
+     "disp": "desta",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.03
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 1.03,
+     "t1": 1.39
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.53,
+     "t1": 1.71
+    },
+    {
+     "disp": "vai",
+     "bold": false,
+     "t0": 1.71,
+     "t1": 1.85
+    },
+    {
+     "disp": "montar",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 2.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.19,
+     "t1": 2.27
+    },
+    {
+     "disp": "primeira",
+     "bold": false,
+     "t0": 2.27,
+     "t1": 2.53
+    },
+    {
+     "disp": "linha",
+     "bold": false,
+     "t0": 2.53,
+     "t1": 2.87
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.87,
+     "t1": 3.01
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.11
+    },
+    {
+     "disp": "financiamento",
+     "bold": false,
+     "t0": 3.11,
+     "t1": 3.77
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.19
+    },
+    {
+     "disp": "saber",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.39
+    },
+    {
+     "disp": "qual",
+     "bold": false,
+     "t0": 4.39,
+     "t1": 4.75
+    },
+    {
+     "disp": "sistema",
+     "bold": false,
+     "t0": 4.75,
+     "t1": 5.17
+    },
+    {
+     "disp": "cobra",
+     "bold": false,
+     "t0": 5.17,
+     "t1": 5.49
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 5.49,
+     "t1": 5.87
+    },
+    {
+     "disp": "juros,",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.21
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.21,
+     "t1": 6.61
+    },
+    {
+     "disp": "ainda",
+     "bold": false,
+     "t0": 6.61,
+     "t1": 6.83
+    },
+    {
+     "disp": "leva",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 7.01
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 7.01,
+     "t1": 7.13
+    },
+    {
+     "disp": "atalho",
+     "bold": false,
+     "t0": 7.13,
+     "t1": 7.45
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 7.45,
+     "t1": 7.55
+    },
+    {
+     "disp": "prova.",
+     "bold": false,
+     "t0": 7.55,
+     "t1": 7.83
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 7.13
+   }
+  },
+  {
+   "id": "s03",
+   "block": "lembrete",
+   "start": 19.21,
+   "dur": 12.56,
+   "tokens": [
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.81
+    },
+    {
+     "disp": "acompanhar,",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 1.29
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.65
+    },
+    {
+     "disp": "precisa",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.91
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 1.91,
+     "t1": 2.13
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 2.13,
+     "t1": 2.25
+    },
+    {
+     "disp": "coisa:",
+     "bold": false,
+     "t0": 2.25,
+     "t1": 2.55
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.33
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.61
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 3.79
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 3.79,
+     "t1": 3.89
+    },
+    {
+     "disp": "mês",
+     "bold": false,
+     "t0": 3.89,
+     "t1": 4.09
+    },
+    {
+     "disp": "são",
+     "bold": false,
+     "t0": 4.09,
+     "t1": 4.31
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.31,
+     "t1": 4.45
+    },
+    {
+     "disp": "taxa",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 5.01
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.01,
+     "t1": 5.35
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.35,
+     "t1": 5.61
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 5.61,
+     "t1": 5.85
+    },
+    {
+     "disp": "devido.",
+     "bold": false,
+     "t0": 5.85,
+     "t1": 6.35
+    },
+    {
+     "disp": "Dois",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.29
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.397,
+     "t1": 7.597
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 7.503,
+     "t1": 7.703
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 7.61,
+     "t1": 7.91
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 7.91,
+     "t1": 8.09
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 8.09,
+     "t1": 8.31
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 8.79,
+     "t1": 8.97
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 8.97,
+     "t1": 9.21
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 9.21,
+     "t1": 9.55
+    },
+    {
+     "disp": "Se",
+     "bold": false,
+     "t0": 10.17,
+     "t1": 10.45
+    },
+    {
+     "disp": "faltar,",
+     "bold": false,
+     "t0": 10.45,
+     "t1": 10.83
+    },
+    {
+     "disp": "procure",
+     "bold": false,
+     "t0": 11.03,
+     "t1": 11.47
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 11.47,
+     "t1": 11.63
+    },
+    {
+     "disp": "canal.",
+     "bold": false,
+     "t0": 11.63,
+     "t1": 11.85
+    }
+   ],
+   "cues": {
+    "a": 3.05,
+    "b": 8.97
+   }
+  },
+  {
+   "id": "s04",
+   "block": "nomes",
+   "start": 31.77,
+   "dur": 11.3,
+   "tokens": [
+    {
+     "disp": "Num",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.91
+    },
+    {
+     "disp": "financiamento,",
+     "bold": false,
+     "t0": 0.91,
+     "t1": 1.47
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 1.57,
+     "t1": 1.69
+    },
+    {
+     "disp": "parcela,",
+     "bold": false,
+     "t0": 1.69,
+     "t1": 2.27
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.43,
+     "t1": 2.55
+    },
+    {
+     "disp": "prestação,",
+     "bold": false,
+     "t0": 2.55,
+     "t1": 3.05
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.43
+    },
+    {
+     "disp": "duas",
+     "bold": false,
+     "t0": 3.43,
+     "t1": 3.75
+    },
+    {
+     "disp": "partes.",
+     "bold": false,
+     "t0": 3.75,
+     "t1": 4.13
+    },
+    {
+     "disp": "Os",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 4.81
+    },
+    {
+     "disp": "juros:",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 5.07
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.53,
+     "t1": 5.59
+    },
+    {
+     "disp": "aluguel",
+     "bold": false,
+     "t0": 5.59,
+     "t1": 5.95
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 5.95,
+     "t1": 6.11
+    },
+    {
+     "disp": "dinheiro",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.37
+    },
+    {
+     "disp": "naquele",
+     "bold": false,
+     "t0": 6.37,
+     "t1": 6.73
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 6.73,
+     "t1": 7.01
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 7.47,
+     "t1": 7.63
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 7.63,
+     "t1": 7.73
+    },
+    {
+     "disp": "amortização:",
+     "bold": false,
+     "t0": 7.73,
+     "t1": 8.45
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 9.01,
+     "t1": 9.11
+    },
+    {
+     "disp": "pedaço",
+     "bold": false,
+     "t0": 9.11,
+     "t1": 9.43
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 9.43,
+     "t1": 9.55
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.57,
+     "t1": 9.63
+    },
+    {
+     "disp": "fato",
+     "bold": false,
+     "t0": 9.63,
+     "t1": 9.91
+    },
+    {
+     "disp": "abate",
+     "bold": false,
+     "t0": 10.01,
+     "t1": 10.35
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 10.35,
+     "t1": 10.45
+    },
+    {
+     "disp": "dívida.",
+     "bold": false,
+     "t0": 10.45,
+     "t1": 10.77
+    }
+   ],
+   "cues": {
+    "a": 2.55,
+    "b": 4.69,
+    "c": 7.73
+   }
+  },
+  {
+   "id": "s05",
+   "block": "nomes",
+   "start": 43.07,
+   "dur": 11.3,
+   "tokens": [
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.69
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 0.69,
+     "t1": 0.77
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 0.77,
+     "t1": 1.01
+    },
+    {
+     "disp": "ainda",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.19
+    },
+    {
+     "disp": "deve",
+     "bold": false,
+     "t0": 1.19,
+     "t1": 1.51
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 1.61,
+     "t1": 1.73
+    },
+    {
+     "disp": "chama",
+     "bold": false,
+     "t0": 1.73,
+     "t1": 2.01
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 2.01,
+     "t1": 2.57
+    },
+    {
+     "disp": "devedor.",
+     "bold": false,
+     "t0": 2.57,
+     "t1": 3.07
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 3.83
+    },
+    {
+     "disp": "aqui",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 4.01
+    },
+    {
+     "disp": "está",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.29
+    },
+    {
+     "disp": "regra",
+     "bold": false,
+     "t0": 4.29,
+     "t1": 4.55
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 4.73
+    },
+    {
+     "disp": "ouro:",
+     "bold": false,
+     "t0": 4.73,
+     "t1": 5.07
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 5.59,
+     "t1": 5.81
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 5.81,
+     "t1": 6.11
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.29
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.59
+    },
+    {
+     "disp": "mês",
+     "bold": false,
+     "t0": 6.59,
+     "t1": 6.93
+    },
+    {
+     "disp": "valem",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.61
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 7.61,
+     "t1": 7.89
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 7.99
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 7.99,
+     "t1": 8.45
+    },
+    {
+     "disp": "devedor,",
+     "bold": false,
+     "t0": 8.45,
+     "t1": 8.89
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.99,
+     "t1": 9.31
+    },
+    {
+     "disp": "não",
+     "bold": false,
+     "t0": 9.31,
+     "t1": 9.49
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 9.49,
+     "t1": 9.77
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 9.77,
+     "t1": 9.89
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 9.89,
+     "t1": 10.07
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 10.07,
+     "t1": 10.21
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 10.21,
+     "t1": 10.41
+    },
+    {
+     "disp": "pegou.",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.71
+    }
+   ],
+   "cues": {
+    "a": 2.01,
+    "b": 5.59
+   }
+  },
+  {
+   "id": "s06",
+   "block": "sac",
+   "start": 54.37,
+   "dur": 14.58,
+   "tokens": [
+    {
+     "disp": "Primeiro",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.91
+    },
+    {
+     "disp": "sistema:",
+     "bold": false,
+     "t0": 0.91,
+     "t1": 1.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.75,
+     "t1": 1.83
+    },
+    {
+     "disp": "SAC,",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.13
+    },
+    {
+     "disp": "sistema",
+     "bold": false,
+     "t0": 2.65,
+     "t1": 3.15
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.15,
+     "t1": 3.45
+    },
+    {
+     "disp": "amortização",
+     "bold": false,
+     "t0": 3.45,
+     "t1": 3.91
+    },
+    {
+     "disp": "constante.",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.73
+    },
+    {
+     "disp": "Constante",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 6.19
+    },
+    {
+     "disp": "quer",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.41
+    },
+    {
+     "disp": "dizer",
+     "bold": false,
+     "t0": 6.41,
+     "t1": 6.59
+    },
+    {
+     "disp": "igual",
+     "bold": false,
+     "t0": 6.79,
+     "t1": 7.05
+    },
+    {
+     "disp": "todo",
+     "bold": false,
+     "t0": 7.05,
+     "t1": 7.37
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 7.37,
+     "t1": 7.65
+    },
+    {
+     "disp": "Dez",
+     "bold": false,
+     "t0": 8.45,
+     "t1": 8.73
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 8.73,
+     "t1": 8.91
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 8.91,
+     "t1": 9.19
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 9.19,
+     "t1": 9.47
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 9.47,
+     "t1": 9.69
+    },
+    {
+     "disp": "meses:",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 10.09
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 10.63,
+     "t1": 10.85
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 10.85,
+     "t1": 11.07
+    },
+    {
+     "disp": "dividido",
+     "bold": false,
+     "t0": 11.07,
+     "t1": 11.47
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 11.47,
+     "t1": 11.65
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 11.65,
+     "t1": 11.89
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 12.21,
+     "t1": 12.41
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 12.41,
+     "t1": 12.57
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 12.73,
+     "t1": 12.93
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 12.93,
+     "t1": 13.15
+    },
+    {
+     "disp": "amortização",
+     "bold": false,
+     "t0": 13.15,
+     "t1": 13.59
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 13.59,
+     "t1": 13.99
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 13.99,
+     "t1": 14.21
+    }
+   ],
+   "cues": {
+    "a": 1.83,
+    "b": 6.79,
+    "c": 10.63
+   }
+  },
+  {
+   "id": "s07",
+   "block": "sac",
+   "start": 68.95,
+   "dur": 20.38,
+   "tokens": [
+    {
+     "disp": "Monte",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.85
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 0.99
+    },
+    {
+     "disp": "primeira",
+     "bold": false,
+     "t0": 0.99,
+     "t1": 1.21
+    },
+    {
+     "disp": "linha,",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.63
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 1.99
+    },
+    {
+     "disp": "taxa",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.31
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.31,
+     "t1": 2.43
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 2.43,
+     "t1": 2.73
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 2.857,
+     "t1": 3.057
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 2.983,
+     "t1": 3.183
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 3.11,
+     "t1": 3.33
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.51
+    },
+    {
+     "disp": "Saldo",
+     "bold": false,
+     "t0": 4.29,
+     "t1": 4.77
+    },
+    {
+     "disp": "devedor:",
+     "bold": false,
+     "t0": 4.77,
+     "t1": 5.25
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 5.55,
+     "t1": 5.91
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 5.91,
+     "t1": 6.19
+    },
+    {
+     "disp": "Juros:",
+     "bold": false,
+     "t0": 7.01,
+     "t1": 7.29
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.13
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 8.25,
+     "t1": 8.45
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 8.37,
+     "t1": 8.57
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.49,
+     "t1": 8.77
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 8.77,
+     "t1": 8.97
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 8.97,
+     "t1": 9.21
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 9.43,
+     "t1": 9.67
+    },
+    {
+     "disp": "duzentos.",
+     "bold": false,
+     "t0": 9.67,
+     "t1": 9.87
+    },
+    {
+     "disp": "Amortização:",
+     "bold": false,
+     "t0": 10.81,
+     "t1": 11.37
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 12.05,
+     "t1": 12.21
+    },
+    {
+     "disp": "Prestação:",
+     "bold": false,
+     "t0": 13.13,
+     "t1": 13.75
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 14.15,
+     "t1": 14.57
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 14.75,
+     "t1": 15.05
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 15.05,
+     "t1": 15.37
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 15.79,
+     "t1": 16.07
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 16.07,
+     "t1": 16.25
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 16.37,
+     "t1": 16.47
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 16.47,
+     "t1": 16.67
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 16.67,
+     "t1": 17.05
+    },
+    {
+     "disp": "Saldo",
+     "bold": false,
+     "t0": 17.81,
+     "t1": 18.39
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 18.39,
+     "t1": 18.51
+    },
+    {
+     "disp": "fica:",
+     "bold": false,
+     "t0": 18.51,
+     "t1": 18.81
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 19.35,
+     "t1": 19.67
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 19.67,
+     "t1": 19.89
+    }
+   ],
+   "cues": {
+    "a": 2.43,
+    "b": 5.55,
+    "c": 9.67,
+    "d": 12.05,
+    "e": 16.07,
+    "f": 19.35
+   }
+  },
+  {
+   "id": "s08",
+   "block": "sac",
+   "start": 89.33,
+   "dur": 11.58,
+   "tokens": [
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.85
+    },
+    {
+     "disp": "segundo",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.07
+    },
+    {
+     "disp": "mês,",
+     "bold": false,
+     "t0": 1.07,
+     "t1": 1.35
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 1.91
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 1.91,
+     "t1": 2.09
+    },
+    {
+     "disp": "valem",
+     "bold": false,
+     "t0": 2.09,
+     "t1": 2.45
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 2.45,
+     "t1": 2.67
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 3.01
+    },
+    {
+     "disp": "mil:",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.29
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 3.983
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 3.983,
+     "t1": 4.137
+    },
+    {
+     "disp": "oitenta.",
+     "bold": false,
+     "t0": 4.137,
+     "t1": 4.29
+    },
+    {
+     "disp": "Prestação:",
+     "bold": false,
+     "t0": 5.23,
+     "t1": 5.81
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 6.23,
+     "t1": 6.45
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 6.85,
+     "t1": 6.983
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.983,
+     "t1": 7.117
+    },
+    {
+     "disp": "oitenta.",
+     "bold": false,
+     "t0": 7.117,
+     "t1": 7.25
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.39
+    },
+    {
+     "disp": "SAC,",
+     "bold": false,
+     "t0": 8.39,
+     "t1": 8.75
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.89,
+     "t1": 8.93
+    },
+    {
+     "disp": "prestação",
+     "bold": false,
+     "t0": 8.93,
+     "t1": 9.31
+    },
+    {
+     "disp": "começa",
+     "bold": false,
+     "t0": 9.31,
+     "t1": 9.59
+    },
+    {
+     "disp": "alta",
+     "bold": false,
+     "t0": 9.59,
+     "t1": 10.07
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 10.07,
+     "t1": 10.51
+    },
+    {
+     "disp": "vai",
+     "bold": false,
+     "t0": 10.51,
+     "t1": 10.63
+    },
+    {
+     "disp": "caindo.",
+     "bold": false,
+     "t0": 10.63,
+     "t1": 10.97
+    }
+   ],
+   "cues": {
+    "a": 3.83,
+    "b": 6.23,
+    "c": 8.89
+   }
+  },
+  {
+   "id": "s09",
+   "block": "price",
+   "start": 100.91,
+   "dur": 14.96,
+   "tokens": [
+    {
+     "disp": "Segundo",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.87
+    },
+    {
+     "disp": "sistema:",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.27
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.01
+    },
+    {
+     "disp": "tabela",
+     "bold": false,
+     "t0": 2.01,
+     "t1": 2.33
+    },
+    {
+     "disp": "Price.",
+     "bold": false,
+     "t0": 2.33,
+     "t1": 2.81
+    },
+    {
+     "disp": "Nela,",
+     "bold": false,
+     "t0": 3.51,
+     "t1": 3.91
+    },
+    {
+     "disp": "todas",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.33
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 4.33,
+     "t1": 4.59
+    },
+    {
+     "disp": "prestações",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 5.05
+    },
+    {
+     "disp": "são",
+     "bold": false,
+     "t0": 5.05,
+     "t1": 5.25
+    },
+    {
+     "disp": "iguais.",
+     "bold": false,
+     "t0": 5.25,
+     "t1": 5.55
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 6.35,
+     "t1": 6.53
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 6.53,
+     "t1": 6.83
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 6.99
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 6.99,
+     "t1": 7.21
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 7.21,
+     "t1": 7.39
+    },
+    {
+     "disp": "prestação",
+     "bold": false,
+     "t0": 7.39,
+     "t1": 7.91
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 7.91,
+     "t1": 8.07
+    },
+    {
+     "disp": "assunto",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.31
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.31,
+     "t1": 8.53
+    },
+    {
+     "disp": "outra",
+     "bold": false,
+     "t0": 8.53,
+     "t1": 8.73
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 8.73,
+     "t1": 9.05
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 9.05,
+     "t1": 9.47
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 9.47,
+     "t1": 9.57
+    },
+    {
+     "disp": "prova",
+     "bold": false,
+     "t0": 9.57,
+     "t1": 9.75
+    },
+    {
+     "disp": "costuma",
+     "bold": false,
+     "t0": 9.75,
+     "t1": 10.13
+    },
+    {
+     "disp": "dar",
+     "bold": false,
+     "t0": 10.13,
+     "t1": 10.31
+    },
+    {
+     "disp": "esse",
+     "bold": false,
+     "t0": 10.31,
+     "t1": 10.43
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 10.43,
+     "t1": 10.63
+    },
+    {
+     "disp": "pronto.",
+     "bold": false,
+     "t0": 10.63,
+     "t1": 11.01
+    },
+    {
+     "disp": "Aqui,",
+     "bold": false,
+     "t0": 11.61,
+     "t1": 12.03
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 12.29,
+     "t1": 12.59
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 12.59,
+     "t1": 12.85
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 12.85,
+     "t1": 12.99
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 12.99,
+     "t1": 13.263
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.263,
+     "t1": 13.537
+    },
+    {
+     "disp": "treze",
+     "bold": false,
+     "t0": 13.537,
+     "t1": 13.81
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 13.81,
+     "t1": 14.09
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 14.09,
+     "t1": 14.35
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 14.35,
+     "t1": 14.57
+    }
+   ],
+   "cues": {
+    "a": 2.01,
+    "b": 4.17,
+    "c": 12.85
+   }
+  },
+  {
+   "id": "s10",
+   "block": "price",
+   "start": 115.87,
+   "dur": 19.04,
+   "tokens": [
+    {
+     "disp": "Primeira",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "linha",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.17
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 1.17,
+     "t1": 1.33
+    },
+    {
+     "disp": "Price.",
+     "bold": false,
+     "t0": 1.33,
+     "t1": 1.57
+    },
+    {
+     "disp": "Juros:",
+     "bold": false,
+     "t0": 2.37,
+     "t1": 2.83
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.39
+    },
+    {
+     "disp": "mesmos",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.77
+    },
+    {
+     "disp": "duzentos,",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.07
+    },
+    {
+     "disp": "porque",
+     "bold": false,
+     "t0": 4.53,
+     "t1": 4.91
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 4.91,
+     "t1": 5.05
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 5.05,
+     "t1": 5.33
+    },
+    {
+     "disp": "também",
+     "bold": false,
+     "t0": 5.33,
+     "t1": 5.65
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 5.65,
+     "t1": 5.79
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 5.79,
+     "t1": 6.01
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 6.01,
+     "t1": 6.15
+    },
+    {
+     "disp": "Amortização:",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.67
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 8.47,
+     "t1": 8.57
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 8.57,
+     "t1": 8.67
+    },
+    {
+     "disp": "sobra",
+     "bold": false,
+     "t0": 8.67,
+     "t1": 9.07
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 9.07,
+     "t1": 9.21
+    },
+    {
+     "disp": "prestação,",
+     "bold": false,
+     "t0": 9.21,
+     "t1": 9.71
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 10.11,
+     "t1": 10.41
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.59
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 10.59,
+     "t1": 10.71
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 10.95
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 10.95,
+     "t1": 11.19
+    },
+    {
+     "disp": "treze",
+     "bold": false,
+     "t0": 11.19,
+     "t1": 11.43
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 11.43,
+     "t1": 12.03
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 12.03,
+     "t1": 12.41
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 12.93,
+     "t1": 13.19
+    },
+    {
+     "disp": "novecentos",
+     "bold": false,
+     "t0": 13.19,
+     "t1": 13.39
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.39,
+     "t1": 13.59
+    },
+    {
+     "disp": "treze.",
+     "bold": false,
+     "t0": 13.59,
+     "t1": 13.79
+    },
+    {
+     "disp": "Saldo",
+     "bold": false,
+     "t0": 14.73,
+     "t1": 15.33
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 15.33,
+     "t1": 15.45
+    },
+    {
+     "disp": "fica:",
+     "bold": false,
+     "t0": 15.45,
+     "t1": 15.79
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 16.09,
+     "t1": 16.59
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 16.59,
+     "t1": 16.83
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 16.83,
+     "t1": 17.13
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 17.13,
+     "t1": 17.33
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 17.13,
+     "t1": 17.33
+    },
+    {
+     "disp": "oitenta",
+     "bold": false,
+     "t0": 17.13,
+     "t1": 17.503
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 17.503,
+     "t1": 17.877
+    },
+    {
+     "disp": "sete.",
+     "bold": false,
+     "t0": 17.877,
+     "t1": 18.25
+    }
+   ],
+   "cues": {
+    "a": 3.77,
+    "b": 10.11,
+    "c": 16.09
+   }
+  },
+  {
+   "id": "s11",
+   "block": "porque",
+   "start": 134.91,
+   "dur": 17.06,
+   "tokens": [
+    {
+     "disp": "Compare",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.07
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 1.07,
+     "t1": 1.39
+    },
+    {
+     "disp": "depois",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.69
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 1.69,
+     "t1": 1.81
+    },
+    {
+     "disp": "primeiro",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 2.11
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 2.11,
+     "t1": 2.33
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.27
+    },
+    {
+     "disp": "SAC,",
+     "bold": false,
+     "t0": 3.27,
+     "t1": 3.55
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 3.95,
+     "t1": 4.23
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 4.23,
+     "t1": 4.43
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 4.43,
+     "t1": 5.15
+    },
+    {
+     "disp": "Price,",
+     "bold": false,
+     "t0": 5.15,
+     "t1": 5.51
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 6.05
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.05,
+     "t1": 6.25
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 6.25,
+     "t1": 6.43
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 6.63
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 6.63
+    },
+    {
+     "disp": "oitenta",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 6.763
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.763,
+     "t1": 7.097
+    },
+    {
+     "disp": "sete.",
+     "bold": false,
+     "t0": 7.097,
+     "t1": 7.43
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.41
+    },
+    {
+     "disp": "Price,",
+     "bold": false,
+     "t0": 8.41,
+     "t1": 8.81
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.87,
+     "t1": 8.95
+    },
+    {
+     "disp": "dívida",
+     "bold": false,
+     "t0": 8.95,
+     "t1": 9.19
+    },
+    {
+     "disp": "cai",
+     "bold": false,
+     "t0": 9.19,
+     "t1": 9.39
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.61
+    },
+    {
+     "disp": "devagar",
+     "bold": false,
+     "t0": 9.61,
+     "t1": 10.01
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 10.01,
+     "t1": 10.19
+    },
+    {
+     "disp": "começo.",
+     "bold": false,
+     "t0": 10.19,
+     "t1": 10.53
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 11.23,
+     "t1": 11.43
+    },
+    {
+     "disp": "como",
+     "bold": false,
+     "t0": 11.43,
+     "t1": 11.63
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 11.63,
+     "t1": 11.85
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 11.85,
+     "t1": 12.03
+    },
+    {
+     "disp": "valem",
+     "bold": false,
+     "t0": 12.03,
+     "t1": 12.53
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 12.53,
+     "t1": 12.79
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 12.79,
+     "t1": 12.93
+    },
+    {
+     "disp": "saldo,",
+     "bold": false,
+     "t0": 12.93,
+     "t1": 13.43
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 13.65,
+     "t1": 13.83
+    },
+    {
+     "disp": "paga",
+     "bold": false,
+     "t0": 13.83,
+     "t1": 14.05
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 14.05,
+     "t1": 14.43
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 14.43,
+     "t1": 14.67
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 14.67,
+     "t1": 14.83
+    },
+    {
+     "disp": "dívida",
+     "bold": false,
+     "t0": 14.83,
+     "t1": 15.13
+    },
+    {
+     "disp": "maior,",
+     "bold": false,
+     "t0": 15.13,
+     "t1": 15.59
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 15.59,
+     "t1": 15.99
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 15.99,
+     "t1": 16.27
+    },
+    {
+     "disp": "tempo.",
+     "bold": false,
+     "t0": 16.27,
+     "t1": 16.63
+    }
+   ],
+   "cues": {
+    "a": 3.95,
+    "b": 5.73,
+    "c": 9.19,
+    "d": 13.65
+   }
+  },
+  {
+   "id": "s12",
+   "block": "porque",
+   "start": 151.97,
+   "dur": 20.38,
+   "tokens": [
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.59
+    },
+    {
+     "disp": "total,",
+     "bold": false,
+     "t0": 0.59,
+     "t1": 0.91
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.31,
+     "t1": 1.41
+    },
+    {
+     "disp": "SAC",
+     "bold": false,
+     "t0": 1.41,
+     "t1": 1.61
+    },
+    {
+     "disp": "cobra",
+     "bold": false,
+     "t0": 1.61,
+     "t1": 1.97
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 1.97,
+     "t1": 2.15
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.97,
+     "t1": 2.15
+    },
+    {
+     "disp": "cem",
+     "bold": false,
+     "t0": 2.15,
+     "t1": 2.39
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 2.39,
+     "t1": 2.73
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.91
+    },
+    {
+     "disp": "juros:",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.19
+    },
+    {
+     "disp": "são",
+     "bold": false,
+     "t0": 3.79,
+     "t1": 4.01
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.17
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.41
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.41,
+     "t1": 4.59
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.91
+    },
+    {
+     "disp": "mês,",
+     "bold": false,
+     "t0": 4.91,
+     "t1": 5.15
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.45,
+     "t1": 5.65
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 5.65,
+     "t1": 6.01
+    },
+    {
+     "disp": "caindo",
+     "bold": false,
+     "t0": 6.01,
+     "t1": 6.59
+    },
+    {
+     "disp": "até",
+     "bold": false,
+     "t0": 6.59,
+     "t1": 6.91
+    },
+    {
+     "disp": "vinte,",
+     "bold": false,
+     "t0": 6.91,
+     "t1": 7.45
+    },
+    {
+     "disp": "somados.",
+     "bold": false,
+     "t0": 7.45,
+     "t1": 8.13
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 8.81,
+     "t1": 9.19
+    },
+    {
+     "disp": "Price,",
+     "bold": false,
+     "t0": 9.19,
+     "t1": 9.57
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 10.05,
+     "t1": 10.23
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 10.23,
+     "t1": 10.41
+    },
+    {
+     "disp": "prestações",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.97
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 10.97,
+     "t1": 11.21
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 11.21,
+     "t1": 11.45
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 11.45,
+     "t1": 11.73
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 11.73,
+     "t1": 11.97
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 11.97,
+     "t1": 12.183
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 12.183,
+     "t1": 12.397
+    },
+    {
+     "disp": "treze",
+     "bold": false,
+     "t0": 12.397,
+     "t1": 12.61
+    },
+    {
+     "disp": "somam",
+     "bold": false,
+     "t0": 12.61,
+     "t1": 13.37
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 13.37,
+     "t1": 13.59
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 13.59,
+     "t1": 13.89
+    },
+    {
+     "disp": "onze",
+     "bold": false,
+     "t0": 13.89,
+     "t1": 14.19
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 14.19,
+     "t1": 14.39
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 14.19,
+     "t1": 14.397
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 14.397,
+     "t1": 14.603
+    },
+    {
+     "disp": "trinta.",
+     "bold": false,
+     "t0": 14.603,
+     "t1": 14.81
+    },
+    {
+     "disp": "Tirando",
+     "bold": false,
+     "t0": 15.81,
+     "t1": 16.29
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 16.29,
+     "t1": 16.45
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 16.45,
+     "t1": 16.67
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 16.67,
+     "t1": 16.85
+    },
+    {
+     "disp": "emprestados,",
+     "bold": false,
+     "t0": 16.85,
+     "t1": 17.47
+    },
+    {
+     "disp": "cerca",
+     "bold": false,
+     "t0": 17.83,
+     "t1": 18.11
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 18.11,
+     "t1": 18.33
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 18.33,
+     "t1": 18.49
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 18.49,
+     "t1": 18.697
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 18.697,
+     "t1": 18.903
+    },
+    {
+     "disp": "trinta",
+     "bold": false,
+     "t0": 18.903,
+     "t1": 19.11
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 19.11,
+     "t1": 19.45
+    },
+    {
+     "disp": "juros.",
+     "bold": false,
+     "t0": 19.45,
+     "t1": 19.73
+    }
+   ],
+   "cues": {
+    "a": 1.97,
+    "b": 17.83
+   }
+  },
+  {
+   "id": "s13",
+   "block": "erro",
+   "start": 172.35,
+   "dur": 16.98,
+   "tokens": [
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "erro",
+     "bold": false,
+     "t0": 0.83,
+     "t1": 0.95
+    },
+    {
+     "disp": "comum",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.49
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.49,
+     "t1": 1.81
+    },
+    {
+     "disp": "calcular",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 2.13
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 2.13,
+     "t1": 2.29
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 2.29,
+     "t1": 2.43
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 2.43,
+     "t1": 2.91
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.25
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.33
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.55
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.67
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 3.85
+    },
+    {
+     "disp": "pegou.",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.13
+    },
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 4.97,
+     "t1": 5.11
+    },
+    {
+     "disp": "segundo",
+     "bold": false,
+     "t0": 5.11,
+     "t1": 5.33
+    },
+    {
+     "disp": "mês",
+     "bold": false,
+     "t0": 5.33,
+     "t1": 5.55
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 5.55,
+     "t1": 5.69
+    },
+    {
+     "disp": "SAC,",
+     "bold": false,
+     "t0": 5.69,
+     "t1": 5.91
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.47
+    },
+    {
+     "disp": "pessoa",
+     "bold": false,
+     "t0": 6.47,
+     "t1": 6.65
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 6.65,
+     "t1": 6.93
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.15
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.263,
+     "t1": 7.463
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 7.377,
+     "t1": 7.577
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 7.49,
+     "t1": 7.71
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 7.71,
+     "t1": 7.87
+    },
+    {
+     "disp": "mil,",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.09
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.09,
+     "t1": 8.59
+    },
+    {
+     "disp": "acha",
+     "bold": false,
+     "t0": 8.59,
+     "t1": 8.83
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 8.83,
+     "t1": 9.21
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.21,
+     "t1": 9.45
+    },
+    {
+     "disp": "novo.",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 9.71
+    },
+    {
+     "disp": "Mas",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.61
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 10.61,
+     "t1": 10.85
+    },
+    {
+     "disp": "já",
+     "bold": false,
+     "t0": 10.85,
+     "t1": 11.03
+    },
+    {
+     "disp": "devolveu",
+     "bold": false,
+     "t0": 11.03,
+     "t1": 11.59
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 11.59,
+     "t1": 11.73
+    },
+    {
+     "disp": "Os",
+     "bold": false,
+     "t0": 12.61,
+     "t1": 12.95
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 12.95,
+     "t1": 13.25
+    },
+    {
+     "disp": "valem",
+     "bold": false,
+     "t0": 13.25,
+     "t1": 13.69
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 13.69,
+     "t1": 13.93
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 13.93,
+     "t1": 14.41
+    },
+    {
+     "disp": "mil:",
+     "bold": false,
+     "t0": 14.41,
+     "t1": 14.61
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 14.41,
+     "t1": 14.803
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 14.803,
+     "t1": 15.197
+    },
+    {
+     "disp": "oitenta.",
+     "bold": false,
+     "t0": 15.197,
+     "t1": 15.59
+    }
+   ],
+   "cues": {
+    "a": 2.43,
+    "b": 8.83,
+    "c": 13.93
+   }
+  },
+  {
+   "id": "s14",
+   "block": "atalho",
+   "start": 189.33,
+   "dur": 17.96,
+   "tokens": [
+    {
+     "disp": "Agora",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.97,
+     "t1": 1.03
+    },
+    {
+     "disp": "atalho",
+     "bold": false,
+     "t0": 1.03,
+     "t1": 1.51
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.63
+    },
+    {
+     "disp": "SAC.",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 1.91
+    },
+    {
+     "disp": "Como",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.93
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.93,
+     "t1": 3.09
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 3.09,
+     "t1": 3.33
+    },
+    {
+     "disp": "cai",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.47
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.65
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 3.75,
+     "t1": 3.91
+    },
+    {
+     "disp": "mês,",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.15
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 4.91
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 4.91,
+     "t1": 5.09
+    },
+    {
+     "disp": "caem",
+     "bold": false,
+     "t0": 5.09,
+     "t1": 5.39
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 5.39,
+     "t1": 5.65
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 5.777,
+     "t1": 5.977
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 5.903,
+     "t1": 6.103
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.03,
+     "t1": 6.21
+    },
+    {
+     "disp": "mil:",
+     "bold": false,
+     "t0": 6.21,
+     "t1": 6.29
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 6.85,
+     "t1": 7.29
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 7.29,
+     "t1": 7.53
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.53,
+     "t1": 7.75
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 7.75,
+     "t1": 7.97
+    },
+    {
+     "disp": "Então",
+     "bold": false,
+     "t0": 8.57,
+     "t1": 8.97
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 9.09,
+     "t1": 9.39
+    },
+    {
+     "disp": "prestação",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.93
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 9.93,
+     "t1": 10.17
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 10.17,
+     "t1": 10.53
+    },
+    {
+     "disp": "reais",
+     "bold": false,
+     "t0": 10.53,
+     "t1": 10.81
+    },
+    {
+     "disp": "menor",
+     "bold": false,
+     "t0": 10.81,
+     "t1": 11.13
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 11.13,
+     "t1": 11.35
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 11.35,
+     "t1": 11.39
+    },
+    {
+     "disp": "anterior.",
+     "bold": false,
+     "t0": 11.39,
+     "t1": 11.63
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 12.41,
+     "t1": 12.71
+    },
+    {
+     "disp": "décima:",
+     "bold": false,
+     "t0": 12.71,
+     "t1": 13.17
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 13.69,
+     "t1": 13.77
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.69,
+     "t1": 13.77
+    },
+    {
+     "disp": "duzentos",
+     "bold": false,
+     "t0": 13.77,
+     "t1": 14.13
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 14.13,
+     "t1": 14.65
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 14.65,
+     "t1": 15.17
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 15.17,
+     "t1": 15.43
+    },
+    {
+     "disp": "vinte,",
+     "bold": false,
+     "t0": 15.43,
+     "t1": 15.77
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 16.41,
+     "t1": 16.63
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 16.41,
+     "t1": 16.63
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 16.63,
+     "t1": 17.01
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 17.01,
+     "t1": 17.25
+    }
+   ],
+   "cues": {
+    "a": 4.69,
+    "b": 9.09,
+    "c": 13.69
+   }
+  },
+  {
+   "id": "s15",
+   "block": "atalho",
+   "start": 207.29,
+   "dur": 7.28,
+   "tokens": [
+    {
+     "disp": "Funciona",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 1.01
+    },
+    {
+     "disp": "porque",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.21
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.37
+    },
+    {
+     "disp": "amortização",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.79
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.79,
+     "t1": 2.17
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 2.17,
+     "t1": 2.47
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.47,
+     "t1": 2.59
+    },
+    {
+     "disp": "mesma.",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.89
+    },
+    {
+     "disp": "Não",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.61
+    },
+    {
+     "disp": "serve",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 3.91
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.11
+    },
+    {
+     "disp": "Price,",
+     "bold": false,
+     "t0": 4.11,
+     "t1": 4.39
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 4.77,
+     "t1": 4.95
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 4.95,
+     "t1": 5.03
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.03,
+     "t1": 5.11
+    },
+    {
+     "disp": "amortização",
+     "bold": false,
+     "t0": 5.11,
+     "t1": 5.45
+    },
+    {
+     "disp": "muda",
+     "bold": false,
+     "t0": 5.45,
+     "t1": 6.05
+    },
+    {
+     "disp": "todo",
+     "bold": false,
+     "t0": 6.05,
+     "t1": 6.29
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.53
+    }
+   ],
+   "cues": {
+    "a": 1.21,
+    "b": 5.45
+   }
+  },
+  {
+   "id": "s16",
+   "block": "questao",
+   "start": 214.57,
+   "dur": 12.22,
+   "tokens": [
+    {
+     "disp": "Hora",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.71
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 0.71,
+     "t1": 0.89
+    },
+    {
+     "disp": "testar.",
+     "bold": false,
+     "t0": 0.89,
+     "t1": 1.29
+    },
+    {
+     "disp": "Um",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.29
+    },
+    {
+     "disp": "financiamento",
+     "bold": false,
+     "t0": 2.29,
+     "t1": 2.83
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 3.05
+    },
+    {
+     "disp": "sessenta",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.43
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 3.43,
+     "t1": 3.67
+    },
+    {
+     "disp": "reais,",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 4.03
+    },
+    {
+     "disp": "pela",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.45
+    },
+    {
+     "disp": "SAC,",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 4.81
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 5.41
+    },
+    {
+     "disp": "sessenta",
+     "bold": false,
+     "t0": 5.41,
+     "t1": 5.85
+    },
+    {
+     "disp": "meses,",
+     "bold": false,
+     "t0": 5.85,
+     "t1": 6.23
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.23,
+     "t1": 6.79
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 6.79,
+     "t1": 7.07
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.15,
+     "t1": 7.35
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 7.23,
+     "t1": 7.43
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 7.31,
+     "t1": 7.51
+    },
+    {
+     "disp": "mês.",
+     "bold": false,
+     "t0": 7.51,
+     "t1": 7.63
+    },
+    {
+     "disp": "Monte",
+     "bold": false,
+     "t0": 7.63,
+     "t1": 8.73
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.93,
+     "t1": 9.27
+    },
+    {
+     "disp": "primeira",
+     "bold": false,
+     "t0": 9.27,
+     "t1": 9.27
+    },
+    {
+     "disp": "linha",
+     "bold": false,
+     "t0": 9.27,
+     "t1": 9.69
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 10.31
+    },
+    {
+     "disp": "diga",
+     "bold": false,
+     "t0": 10.31,
+     "t1": 10.45
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 10.45,
+     "t1": 10.53
+    },
+    {
+     "disp": "valor",
+     "bold": false,
+     "t0": 10.53,
+     "t1": 10.71
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 10.93
+    },
+    {
+     "disp": "segunda",
+     "bold": false,
+     "t0": 10.93,
+     "t1": 11.27
+    },
+    {
+     "disp": "prestação.",
+     "bold": false,
+     "t0": 11.27,
+     "t1": 11.81
+    }
+   ],
+   "cues": {
+    "a": 3.05,
+    "b": 5.41,
+    "c": 6.79,
+    "d": 7.63
+   }
+  },
+  {
+   "id": "s17",
+   "block": "questao",
+   "start": 226.79,
+   "dur": 4.32,
+   "tokens": [
+    {
+     "disp": "Pause",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.89
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.89,
+     "t1": 1.05
+    },
+    {
+     "disp": "vídeo",
+     "bold": false,
+     "t0": 1.05,
+     "t1": 1.27
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.27,
+     "t1": 1.51
+    },
+    {
+     "disp": "tente.",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.67
+    }
+   ],
+   "cues": {
+    "a": 0.35
+   }
+  },
+  {
+   "id": "s18",
+   "block": "resposta",
+   "start": 231.11,
+   "dur": 14.76,
+   "tokens": [
+    {
+     "disp": "Vamos",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "lá.",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.13
+    },
+    {
+     "disp": "Amortização:",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.35
+    },
+    {
+     "disp": "sessenta",
+     "bold": false,
+     "t0": 2.35,
+     "t1": 2.91
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.27
+    },
+    {
+     "disp": "dividido",
+     "bold": false,
+     "t0": 3.27,
+     "t1": 3.71
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 3.71,
+     "t1": 3.89
+    },
+    {
+     "disp": "sessenta",
+     "bold": false,
+     "t0": 3.89,
+     "t1": 4.29
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 4.29,
+     "t1": 4.65
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 4.65,
+     "t1": 4.79
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 4.89,
+     "t1": 5.09
+    },
+    {
+     "disp": "Juros:",
+     "bold": false,
+     "t0": 5.81,
+     "t1": 6.43
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 7.03
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.123,
+     "t1": 7.323
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 7.217,
+     "t1": 7.417
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 7.31,
+     "t1": 7.57
+    },
+    {
+     "disp": "sessenta",
+     "bold": false,
+     "t0": 7.57,
+     "t1": 7.79
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 7.79,
+     "t1": 8.07
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.35
+    },
+    {
+     "disp": "seiscentos.",
+     "bold": false,
+     "t0": 8.35,
+     "t1": 8.55
+    },
+    {
+     "disp": "Prestação:",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 10.03
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 10.03,
+     "t1": 10.71
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 10.03,
+     "t1": 10.71
+    },
+    {
+     "disp": "seiscentos.",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 11.03
+    },
+    {
+     "disp": "Saldo",
+     "bold": false,
+     "t0": 11.95,
+     "t1": 12.43
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 12.43,
+     "t1": 12.53
+    },
+    {
+     "disp": "fica:",
+     "bold": false,
+     "t0": 12.53,
+     "t1": 12.79
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 12.79,
+     "t1": 13.15
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.15,
+     "t1": 13.51
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 13.51,
+     "t1": 13.87
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 13.87,
+     "t1": 14.29
+    }
+   ],
+   "cues": {
+    "a": 2.35,
+    "b": 8.35,
+    "c": 10.03,
+    "d": 12.79
+   }
+  },
+  {
+   "id": "s19",
+   "block": "resposta",
+   "start": 245.87,
+   "dur": 15.98,
+   "tokens": [
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.87
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 0.87,
+     "t1": 0.95
+    },
+    {
+     "disp": "segunda,",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.15
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 1.55
+    },
+    {
+     "disp": "atalho:",
+     "bold": false,
+     "t0": 1.55,
+     "t1": 1.89
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 2.35,
+     "t1": 2.59
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.77
+    },
+    {
+     "disp": "caem",
+     "bold": false,
+     "t0": 2.77,
+     "t1": 3.09
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 3.09,
+     "t1": 3.31
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.59
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.67
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.81
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 3.81,
+     "t1": 3.93
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 4.35,
+     "t1": 4.47
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 4.47,
+     "t1": 4.81
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 5.01
+    },
+    {
+     "disp": "Segunda",
+     "bold": false,
+     "t0": 5.77,
+     "t1": 6.37
+    },
+    {
+     "disp": "prestação:",
+     "bold": false,
+     "t0": 6.37,
+     "t1": 6.83
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 7.41,
+     "t1": 7.67
+    },
+    {
+     "disp": "quinhentos",
+     "bold": false,
+     "t0": 7.67,
+     "t1": 8.03
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.03,
+     "t1": 8.39
+    },
+    {
+     "disp": "noventa",
+     "bold": false,
+     "t0": 8.39,
+     "t1": 8.75
+    },
+    {
+     "disp": "reais.",
+     "bold": false,
+     "t0": 8.75,
+     "t1": 9.03
+    },
+    {
+     "disp": "Confira:",
+     "bold": false,
+     "t0": 9.87,
+     "t1": 10.47
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 10.91,
+     "t1": 11.19
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 11.297,
+     "t1": 11.497
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 11.403,
+     "t1": 11.603
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 11.51,
+     "t1": 11.73
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 11.73,
+     "t1": 11.837
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 11.837,
+     "t1": 11.943
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 11.943,
+     "t1": 12.05
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 12.05,
+     "t1": 12.43
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 12.43,
+     "t1": 12.83
+    },
+    {
+     "disp": "quinhentos",
+     "bold": false,
+     "t0": 12.83,
+     "t1": 13.037
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.037,
+     "t1": 13.243
+    },
+    {
+     "disp": "noventa,",
+     "bold": false,
+     "t0": 13.243,
+     "t1": 13.45
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 13.95,
+     "t1": 14.37
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 14.37,
+     "t1": 14.61
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 14.69,
+     "t1": 14.83
+    },
+    {
+     "disp": "amortização.",
+     "bold": false,
+     "t0": 14.83,
+     "t1": 15.23
+    }
+   ],
+   "cues": {
+    "a": 3.09,
+    "b": 7.41,
+    "c": 13.95
+   }
+  },
+  {
+   "id": "s20",
+   "block": "fim",
+   "start": 261.85,
+   "dur": 7.4,
+   "tokens": [
+    {
+     "disp": "Resumindo:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.51
+    },
+    {
+     "disp": "juros",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.65
+    },
+    {
+     "disp": "valem",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.97
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 1.97,
+     "t1": 2.31
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 2.31,
+     "t1": 2.57
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.57,
+     "t1": 2.67
+    },
+    {
+     "disp": "saldo",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 3.03
+    },
+    {
+     "disp": "devedor.",
+     "bold": false,
+     "t0": 3.03,
+     "t1": 3.43
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 4.09,
+     "t1": 4.39
+    },
+    {
+     "disp": "Price",
+     "bold": false,
+     "t0": 4.39,
+     "t1": 4.71
+    },
+    {
+     "disp": "cobra",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 4.97
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 4.97,
+     "t1": 5.37
+    },
+    {
+     "disp": "porque",
+     "bold": false,
+     "t0": 5.37,
+     "t1": 5.63
+    },
+    {
+     "disp": "amortiza",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 6.07
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 6.07,
+     "t1": 6.41
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 6.41,
+     "t1": 6.59
+    },
+    {
+     "disp": "começo.",
+     "bold": false,
+     "t0": 6.59,
+     "t1": 6.83
+    }
+   ],
+   "cues": {
+    "a": 1.37,
+    "b": 5.63
+   }
+  },
+  {
+   "id": "s21",
+   "block": "fim",
+   "start": 269.25,
+   "dur": 13.58,
+   "tokens": [
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.51
+    },
+    {
+     "disp": "próxima",
+     "bold": false,
+     "t0": 0.51,
+     "t1": 0.73
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 0.73,
+     "t1": 1.03
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.23
+    },
+    {
+     "disp": "vê",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.41
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.41,
+     "t1": 1.65
+    },
+    {
+     "disp": "outro",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.87
+    },
+    {
+     "disp": "lado:",
+     "bold": false,
+     "t0": 1.87,
+     "t1": 2.13
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.69,
+     "t1": 2.73
+    },
+    {
+     "disp": "dinheiro",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.91
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.11
+    },
+    {
+     "disp": "rende.",
+     "bold": false,
+     "t0": 3.11,
+     "t1": 3.45
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 4.09,
+     "t1": 4.19
+    },
+    {
+     "disp": "aprende",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.51
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.51,
+     "t1": 4.57
+    },
+    {
+     "disp": "descontar",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.95
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 4.95,
+     "t1": 5.05
+    },
+    {
+     "disp": "imposto,",
+     "bold": false,
+     "t0": 5.05,
+     "t1": 5.41
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 5.41,
+     "t1": 5.79
+    },
+    {
+     "disp": "vale",
+     "bold": false,
+     "t0": 5.79,
+     "t1": 5.93
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 5.93,
+     "t1": 6.21
+    },
+    {
+     "disp": "sobre",
+     "bold": false,
+     "t0": 6.21,
+     "t1": 6.51
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 6.51,
+     "t1": 6.55
+    },
+    {
+     "disp": "rendimento.",
+     "bold": false,
+     "t0": 6.55,
+     "t1": 6.95
+    },
+    {
+     "disp": "Inscreva-se",
+     "bold": false,
+     "t0": 7.67,
+     "t1": 8.25
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 8.37,
+     "t1": 8.53
+    },
+    {
+     "disp": "seguir",
+     "bold": false,
+     "t0": 8.53,
+     "t1": 8.71
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 8.71,
+     "t1": 8.85
+    },
+    {
+     "disp": "curso",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 9.01
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 9.01,
+     "t1": 9.15
+    },
+    {
+     "disp": "começo",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.35
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 9.35,
+     "t1": 9.59
+    },
+    {
+     "disp": "fim.",
+     "bold": false,
+     "t0": 9.59,
+     "t1": 9.69
+    },
+    {
+     "disp": "Bons",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 10.63
+    },
+    {
+     "disp": "estudos!",
+     "bold": false,
+     "t0": 10.63,
+     "t1": 10.93
+    }
+   ],
+   "cues": {
+    "a": 4.95,
+    "b": 7.67,
+    "c": 9.69
+   }
+  }
+ ]
+}

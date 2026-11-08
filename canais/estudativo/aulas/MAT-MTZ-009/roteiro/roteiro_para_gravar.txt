@@ -1,0 +1,49 @@
+Cinco questões de sistemas lineares, criadas para esta aula. Em cada uma, pause o vídeo e resolva antes de ver a resposta. Errar aqui não custa nada, e ensina mais do que só assistir.
+
+Você vai usar quatro ferramentas: o escalonamento, uma letra por vez; a última linha da escada, que diz se há uma, infinitas ou nenhuma solução; a regra de Cramer, com cada letra igual ao seu determinante dividido por D; e a conferência no fim. Se faltar alguma, procure no canal.
+
+Questão um. Resolva: xis mais ípsilon mais zê igual a nove; xis menos ípsilon mais zê igual a três; dois xis mais ípsilon menos zê igual a três.
+
+Pause o vídeo e tente.
+
+Vamos lá. Repare: a primeira e a segunda só são diferentes no ípsilon. Primeira menos segunda: o xis e o zê somem juntos, e sobra dois ípsilon igual a seis: ípsilon igual a três.
+
+Ponha ípsilon igual a três nas outras. Na primeira: xis mais zê igual a seis. Na terceira: dois xis menos zê igual a zero. Somando as duas, o zê some: três xis igual a seis, e xis igual a dois. Então, zê é quatro. A solução é dois, três, quatro.
+
+Agora o atalho que apareceu aqui: procure duas equações quase iguais. Subtraindo uma da outra, várias letras somem de uma vez. Na questão um, uma subtração só já deu o ípsilon.
+
+Funciona porque o que é igual nas duas se cancela. Se nenhuma dupla for parecida, volte ao caminho de sempre: tire o xis das outras.
+
+Questão dois. Numa lanchonete, um suco, um sanduíche e um doce custam dezenove reais. Dois sucos e um sanduíche custam dezoito. Um sanduíche e três doces custam vinte e cinco. Quanto custa cada um?
+
+Pause o vídeo e tente.
+
+Vamos lá. Suco é xis, sanduíche é ípsilon, doce é zê. Xis mais ípsilon mais zê igual a dezenove; dois xis mais ípsilon igual a dezoito; ípsilon mais três zê igual a vinte e cinco.
+
+Segunda menos duas vezes a primeira: menos ípsilon menos dois zê igual a menos vinte. Trocando todos os sinais, ípsilon mais dois zê igual a vinte. A terceira menos essa: zê igual a cinco. Ípsilon mais dez igual a vinte: ípsilon igual a dez. Xis mais dez mais cinco igual a dezenove: xis igual a quatro.
+
+Suco, quatro reais; sanduíche, dez; doce, cinco. Conferindo: dois sucos e um sanduíche, oito mais dez, dezoito. Bateu.
+
+Questão três. Para que valor de cá o sistema fica sem solução? Xis mais ípsilon mais zê igual a um; xis mais dois ípsilon mais zê igual a dois; dois xis mais três ípsilon mais cá zê igual a cinco.
+
+Pause o vídeo e tente.
+
+Segunda menos primeira: ípsilon igual a um. Terceira menos duas vezes a primeira: ípsilon mais, abre parênteses, cá menos dois, fecha parênteses, vezes zê, igual a três.
+
+Como ípsilon é um, cá menos dois, vezes zê, igual a dois. Com cá igual a dois, fica zero igual a dois: impossível. Resposta: cá igual a dois.
+
+Questão quatro. Pela regra de Cramer, ache só o ípsilon: dois xis mais três ípsilon igual a treze; xis menos dois ípsilon igual a menos quatro.
+
+Pause o vídeo e tente.
+
+Só uma letra: dois determinantes. D: dois vezes menos dois, menos três vezes um: menos quatro menos três, menos sete. D ípsilon, com a coluna do ípsilon trocada: dois vezes menos quatro, menos treze vezes um: menos oito menos treze, menos vinte e um. Ípsilon: menos vinte e um dividido por menos sete, três.
+
+Última questão, rápida. Três planos passam todos pela mesma reta. O sistema com as equações desses planos tem quantas soluções?
+
+Pause o vídeo e tente.
+
+Infinitas. Cada ponto da reta está nos três planos ao mesmo tempo, e uma reta tem infinitos pontos. O sistema é possível e indeterminado.
+
+Resumindo: escalone, uma letra por vez; procure equações quase iguais; leia a última linha da escada e confira sempre.
+
+Esta é a última aula da trilha de matrizes e sistemas. Volte às aulas das questões em que errou, e inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,41 @@
+Duas circunferências: uma de raio três, outra de raio dois, com os centros a cinco de distância. Elas se cortam? Três mais dois dá cinco, exatamente a distância: elas só se encostam, num ponto.
+
+Até o fim desta aula, você descobre a posição entre duas circunferências comparando três números, e leva um atalho de prova.
+
+Você vai usar três coisas: ler o centro e o raio na equação reduzida; a distância entre dois pontos, pelo triângulo retângulo; e o módulo, que tira o sinal. Se faltar alguma, procure no canal.
+
+Compare a distância entre os centros com dois números: a soma dos raios e a diferença dos raios. Imagine a circunferência menor andando em direção à maior.
+
+Distância maior que a soma: uma fica fora da outra, sem se tocar. São externas.
+
+Distância igual à soma: elas se encostam por fora, num ponto. São tangentes externas, como no gancho.
+
+Distância maior que a diferença e menor que a soma: elas se cortam em dois pontos. São secantes.
+
+Distância igual à diferença: a menor encosta por dentro, num ponto. São tangentes internas. Distância menor que a diferença: uma fica dentro da outra, sem tocar. E com distância zero, os centros coincidem: são concêntricas.
+
+E por que módulo na diferença? Porque a diferença tem que dar positiva: módulo de dois menos três é um, não importa a ordem dos raios.
+
+Conte os pontos em comum: secantes, dois. Tangentes, por fora ou por dentro, um só: tangente quer dizer que encosta. Externas, uma dentro da outra ou concêntricas: nenhum.
+
+Agora, com as equações. Xis menos um, ao quadrado, mais ípsilon menos dois, ao quadrado, igual a dezesseis: centro xis um, ípsilon dois, e raio quatro. Xis menos quatro, ao quadrado, mais ípsilon menos seis, ao quadrado, igual a quatro: centro xis quatro, ípsilon seis, e raio dois.
+
+Distância entre os centros: catetos três e quatro, hipotenusa cinco. Soma dos raios: seis. Diferença: dois. Cinco está entre dois e seis: as circunferências são secantes.
+
+O erro comum é comparar só com a soma. Centros a um de distância, raios cinco e dois. A pessoa vê que um é menor que sete e responde: secantes. Mas um também é menor que a diferença, três: a menor está inteira dentro da maior.
+
+Agora o atalho: uma régua com duas marcas. Marque a diferença e a soma dos raios. Coloque a distância na régua: antes da primeira marca, uma dentro da outra; em cima dela, tangentes internas; entre as marcas, secantes; em cima da segunda, tangentes externas; depois dela, externas.
+
+Funciona porque, afastando os centros, as marcas são os dois momentos em que elas se encostam. A régua diz quantos pontos de encontro existem, mas não diz onde eles estão: para achar os pontos, a conta é outra.
+
+Hora de testar. Xis ao quadrado mais ípsilon ao quadrado igual a cem, e xis menos três, ao quadrado, mais ípsilon menos quatro, ao quadrado, igual a vinte e cinco. Qual é a posição entre elas?
+
+Pause o vídeo e tente.
+
+Vamos lá. A primeira tem centro na origem e raio dez. A segunda, centro xis três, ípsilon quatro, e raio cinco. Distância entre os centros: catetos três e quatro, cinco.
+
+Soma dos raios: quinze. Diferença: dez menos cinco, cinco. A distância é igual à diferença: tangentes internas. A menor encosta por dentro, num ponto só.
+
+Resumindo: calcule a distância entre os centros, a soma e a diferença dos raios, e veja onde a distância cai na régua.
+
+Na próxima aula, começam as cônicas, uma família de curvas famosas. A primeira é a parábola, vista como os pontos que ficam à mesma distância de um ponto e de uma reta. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

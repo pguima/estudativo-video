@@ -1,0 +1,45 @@
+Xis ao quadrado mais três xis mais cinco, dividido por xis menos um. A conta dá quociente xis mais quatro e resto nove. Mas esse nove sai em três segundos, sem dividir nada.
+
+Até o fim desta aula, você divide polinômios pelo método da chave e acha o resto pelo atalho do teorema do resto.
+
+Você vai usar duas coisas: o valor numérico, em que P de um é trocar o xis por um, e a divisão com resto: dezessete dividido por cinco dá três, e sobram dois. Se faltar alguma, procure no canal.
+
+Na divisão de números, dezessete é igual a cinco vezes três, mais dois. Dividendo é igual a divisor vezes quociente, mais resto. E o resto é menor que o divisor, senão caberia mais uma vez.
+
+Com polinômios é igual: P de xis é igual ao divisor vezes o quociente, mais o resto. Só que aqui, menor quer dizer de grau menor. Dividindo por xis menos um, que tem grau um, o resto não tem xis: é só um número.
+
+Monte a chave, como na conta de números. O método tem três passos que se repetem: dividir, multiplicar e subtrair.
+
+Dividir: só o primeiro termo de cada um. Xis ao quadrado dividido por xis dá xis. É o primeiro pedaço do quociente. Multiplicar: xis vezes xis menos um dá xis ao quadrado menos xis.
+
+Subtrair: tire esse resultado de cima, trocando os sinais dele. O xis ao quadrado desaparece. Três xis menos, abre parênteses, menos xis, fecha parênteses: quatro xis. Desça o cinco: fica quatro xis mais cinco.
+
+Repita com o que sobrou. Quatro xis dividido por xis: mais quatro. Quatro vezes xis menos um: quatro xis menos quatro. Trocando os sinais e somando: cinco mais quatro, nove.
+
+Nove não tem xis: o grau ficou menor que o do divisor, e a conta para. Quociente xis mais quatro, resto nove. Confira: xis menos um, vezes xis mais quatro, dá xis ao quadrado mais três xis menos quatro. Mais nove: volta o polinômio do começo.
+
+Cuidado com o erro mais comum: esquecer de trocar os sinais na subtração. A pessoa faz três xis menos xis e escreve dois xis. Repetindo o erro no fim, sai quociente xis mais dois e resto três.
+
+A conferência denuncia: não volta o polinômio do começo. Subtrair o parêntese inteiro é trocar todos os sinais dele.
+
+E o resto sem dividir? Volte para P de xis igual a xis menos um, vezes o quociente, mais o resto. Troque o xis por um, o número que zera o xis menos um. Um menos um dá zero, e zero vezes qualquer coisa dá zero. Sobra P de um igual ao resto.
+
+Um mais três mais cinco: nove. O mesmo resto, sem chave. Esse é o teorema do resto: o resto da divisão por xis menos á é P de á.
+
+E com mais no divisor? Pergunte que número zera o divisor. Xis mais dois zera com menos dois, e o resto é P de menos dois.
+
+Agora o atalho de prova: divisível quer dizer resto zero. Para saber se um polinômio é divisível por xis menos á, basta ver se P de á dá zero. Em xis ao cubo menos oito, dividido por xis menos dois: dois ao cubo dá oito, e oito menos oito, zero. Divisível, sem armar a conta.
+
+Funciona porque, com resto zero, a divisão é exata, como doze dividido por três. Mas o atalho dá só o resto. Se a questão pedir o quociente, arme a chave. E ele vale para divisor do tipo xis mais ou menos um número.
+
+Hora de testar. Qual é o resto da divisão de xis ao cubo mais dois xis ao quadrado menos cinco por xis mais dois?
+
+Pause o vídeo e tente.
+
+Vamos lá. Xis mais dois zera com xis igual a menos dois: o resto é P de menos dois. Abre parênteses, menos dois, fecha parênteses, ao cubo: menos oito. Dois vezes, abre parênteses, menos dois, fecha parênteses, ao quadrado: dois vezes quatro, oito. Menos oito mais oito menos cinco: resto menos cinco.
+
+Quem usou mais dois no lugar de menos dois calculou oito mais oito menos cinco, onze. O número é o que zera o divisor: o sinal troca.
+
+Resumindo: na chave, divida, multiplique e subtraia, trocando os sinais, e o resto da divisão por xis menos á é P de á.
+
+Na próxima aula, você divide por xis menos um número só com os coeficientes, numa tabelinha chamada Briô-Rufíni. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

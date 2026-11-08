@@ -1,0 +1,39 @@
+Abre parênteses, xis mais dois, fecha parênteses, elevado a quatro. Pelo chuveirinho, são quatro parênteses multiplicados, e muita conta para errar. Com uma linha do triângulo de Pascal, você escreve a resposta direto.
+
+Até o fim desta aula, você abre uma soma de dois termos elevada a quatro, a cinco, a seis, acha um termo sozinho e leva um atalho de prova.
+
+Você vai usar duas coisas: o triângulo de Pascal, em que cada número é a soma dos dois de cima, e o cubo da soma: xis mais um, ao cubo, dá xis ao cubo mais três xis ao quadrado mais três xis mais um. Se faltar alguma, procure no canal.
+
+Binômio é uma soma de dois termos, como á mais bê. Repare no número da frente de cada termo, o coeficiente. Á mais bê, ao quadrado: um, dois, um. Ao cubo: um, três, três, um. São as linhas dois e três do triângulo de Pascal.
+
+Por que o triângulo aparece? No cubo, você multiplica três parênteses iguais. Cada termo da resposta pega uma letra de cada parêntese. Para formar á ao quadrado vezes bê, o bê vem de um dos três parênteses: três jeitos de escolher. Por isso o três na frente: é o binomial de três sobre um.
+
+A regra para á mais bê, elevado a ene: os coeficientes vêm da linha ene. O expoente do á começa em ene e desce de um em um. O expoente do bê começa em zero e sobe. Em cada termo, os dois expoentes somam ene.
+
+Agora, xis mais dois, elevado a quatro. Aqui, á é xis e bê é dois. A linha quatro é um, quatro, seis, quatro, um.
+
+Um vezes xis elevado a quatro: xis elevado a quatro. Quatro vezes xis ao cubo vezes dois: oito xis ao cubo. Seis vezes xis ao quadrado vezes dois ao quadrado, que é quatro: vinte e quatro xis ao quadrado.
+
+Quatro vezes xis vezes dois ao cubo, que é oito: trinta e dois xis. Um vezes dois elevado a quatro: dezesseis. Pronto, sem multiplicar nenhum parêntese.
+
+E se a prova pedir só o coeficiente de xis ao quadrado? Não precisa abrir tudo. Use o termo geral: o binomial de ene sobre cá, vezes á elevado a, abre parênteses, ene menos cá, fecha parênteses, vezes bê elevado a cá. Cá é quantas vezes o bê foi escolhido.
+
+Para ter xis ao quadrado, o expoente do xis, quatro menos cá, tem que dar dois. Então cá vale dois. Binomial de quatro sobre dois é seis. Dois ao quadrado é quatro. Seis vezes quatro: vinte e quatro.
+
+O erro comum é copiar só o número do triângulo. A pessoa vê o seis na linha quatro e responde seis xis ao quadrado. Esqueceu que o dois também entra, elevado ao quadrado. Seis vezes quatro dá vinte e quatro. Quando o bê não é um, ele muda os coeficientes.
+
+Agora o atalho, para conferir a conta: troque o xis por um. Um mais dois dá três, e três elevado a quatro dá oitenta e um. Do outro lado, um mais oito mais vinte e quatro mais trinta e dois mais dezesseis também dá oitenta e um. Bateu.
+
+Funciona porque, com xis igual a um, todo xis vira um, e sobra a soma dos coeficientes. Se der diferente, tem erro em algum termo. Mas a soma não acha um coeficiente sozinho: para isso, use o termo geral.
+
+Hora de testar. Em xis mais três, elevado a cinco, qual é o coeficiente de xis ao cubo? E quanto dá a soma de todos os coeficientes?
+
+Pause o vídeo e tente.
+
+Vamos lá. O expoente do xis é cinco menos cá. Para dar três, cá vale dois. Binomial de cinco sobre dois é dez. Três ao quadrado é nove. Dez vezes nove: noventa. O termo é noventa xis ao cubo.
+
+E a soma: troque o xis por um. Um mais três dá quatro. Quatro elevado a cinco dá mil e vinte e quatro.
+
+Resumindo: os coeficientes vêm do triângulo, os expoentes trocam de um em um, e o segundo termo entra elevado, com o número dele.
+
+Na próxima aula, o mesmo binomial calcula chances: por exemplo, a de sair exatamente duas caras em cinco lançamentos de uma moeda. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

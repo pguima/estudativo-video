@@ -1,0 +1,47 @@
+Duas matrizes dois por dois. Para multiplicar, muita gente faz elemento com elemento, como na soma. Está errado. Matriz vezes matriz é linha por coluna, e trocar a ordem pode mudar o resultado.
+
+Até o fim desta aula, você multiplica duas matrizes e sabe pelo tamanho se o produto existe, com um atalho de prova.
+
+Lembre duas coisas: o tamanho de uma matriz é linhas por colunas, e a i jota é o elemento da linha i, coluna jota. Se faltar alguma, procure no canal.
+
+Por que linha por coluna? Numa lanchonete, você pede dois sanduíches e três sucos. O sanduíche custa oito reais, e o suco, cinco.
+
+A conta é dois vezes oito, mais três vezes cinco: dezesseis mais quinze, trinta e um reais. Repare: os pedidos estão deitados, numa linha. Os preços estão em pé, numa coluna.
+
+O primeiro da linha vezes o primeiro da coluna, mais o segundo vezes o segundo. Isso é linha vezes coluna, e é assim que se multiplicam matrizes.
+
+Vamos multiplicar A, que é um, dois, zero, um, por B, que é um, zero, três, um. Cada elemento do resultado vem de uma linha de A com uma coluna de B.
+
+Linha um de A com coluna um de B: um vezes um, mais dois vezes três. Um mais seis, sete. Ele vai para a linha um, coluna um.
+
+Linha um com coluna dois: um vezes zero, mais dois vezes um: dois.
+
+Linha dois com coluna um: zero vezes um, mais um vezes três: três. Linha dois com coluna dois: zero vezes zero, mais um vezes um: um.
+
+A vezes B dá sete, dois, três, um. É o endereço de novo: a linha i de A com a coluna jota de B dá o elemento i jota.
+
+Agora, troque a ordem: B vezes A. Linha um de B com coluna um de A: um vezes um, mais zero vezes zero: um. Fazendo o resto do mesmo jeito, sai um, dois, três, sete.
+
+A vezes B deu sete, dois, três, um. B vezes A deu um, dois, três, sete. Com números, três vezes cinco é cinco vezes três. Com matrizes, a ordem pode mudar o resultado.
+
+E quando o produto existe? Cada linha de A precisa ter o mesmo tanto de números que cada coluna de B. Senão, sobra número sem par.
+
+Ou seja: o número de colunas de A tem que ser igual ao número de linhas de B. E o resultado fica com as linhas de A e as colunas de B.
+
+Cuidado com o erro mais comum: multiplicar elemento com elemento, como na soma. Em A vezes B, daria um, zero, zero, um. Não bate com o sete, dois, três, um. Na multiplicação, é sempre linha com coluna.
+
+Agora o atalho do tamanho: escreva os tamanhos lado a lado. Dois por três, vezes três por quatro. Os números do meio são iguais? O produto existe. Os de fora dão o tamanho do resultado: dois por quatro.
+
+Funciona porque os do meio contam os números que vão se encontrar, linha com coluna. E serve para pegar a ordem trocada: três por quatro, vezes dois por três? Quatro e dois são diferentes: não existe.
+
+Hora de testar. A é dois, um, zero, três. B é um, quatro, dois, zero. Calcule A vezes B.
+
+Pause o vídeo e tente.
+
+Vamos lá. Linha um com coluna um: dois vezes um, mais um vezes dois: quatro. Linha um com coluna dois: dois vezes quatro, mais um vezes zero: oito.
+
+Linha dois com coluna um: zero vezes um, mais três vezes dois: seis. Linha dois com coluna dois: zero vezes quatro, mais três vezes zero: zero. Quatro, oito, seis, zero.
+
+Resumindo: linha da primeira com coluna da segunda, multiplica par a par e soma, e a ordem importa.
+
+Na próxima aula, você calcula o determinante, um número que resume uma matriz, até nas três por três, pela regra de Sarrus. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

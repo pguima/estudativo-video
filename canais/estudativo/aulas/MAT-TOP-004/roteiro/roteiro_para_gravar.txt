@@ -1,0 +1,39 @@
+Numa sala com treze pessoas, eu garanto, sem perguntar nada a ninguém: pelo menos duas fazem aniversário no mesmo mês. Não é sorte. É certeza.
+
+Até o fim desta aula, você descobre quantas pessoas ou objetos garantem uma repetição, e leva um atalho de prova.
+
+Você só vai precisar de divisão com resto: por exemplo, treze dividido por doze dá um, e sobra um. Se faltar, procure no canal.
+
+A ideia vem de pombos e casinhas. São quatro pombos e só três casinhas. Coloque um pombo em cada casinha: sobra um. Onde quer que ele entre, alguma casinha fica com dois.
+
+Esse é o princípio da casa dos pombos: se há mais pombos que casinhas, pelo menos uma casinha recebe dois ou mais. Ele não diz qual casinha. Só garante que ela existe.
+
+Volte aos aniversários. As casinhas são os doze meses. Os pombos são as pessoas. Pense no pior caso, o azar máximo: doze pessoas podem nascer cada uma num mês diferente. Mas a décima terceira não tem mês livre: ela repete algum.
+
+Por isso doze pessoas não garantem nada, e treze garantem. Dá para ver na divisão: treze dividido por doze dá um, e sobra um. Cada mês recebe uma pessoa, e a que sobra entra em algum mês, que fica com duas.
+
+E para garantir três pessoas no mesmo mês? Pior caso: duas pessoas em cada mês, sem passar de duas. Doze vezes dois dá vinte e quatro pessoas, sem nenhum trio. A próxima pessoa fecha um trio: vinte e cinco.
+
+Confira na divisão: vinte e cinco dividido por doze dá dois, e sobra um. Cada mês fica com duas pessoas, e a que sobra forma um trio.
+
+Com os dias do ano, a ideia é a mesma. Contando o vinte e nove de fevereiro, são trezentos e sessenta e seis dias possíveis. Então trezentas e sessenta e sete pessoas garantem duas com o mesmo aniversário, dia e mês. Com trezentas e sessenta e seis, ainda pode não haver repetição.
+
+O pior caso também resolve a gaveta de meias. No escuro, você tira meias de uma gaveta com meias pretas, brancas e azuis. Quantas tirar para garantir um par da mesma cor? Pior caso: uma de cada cor, três meias. A quarta repete uma cor: quatro meias.
+
+O erro comum é multiplicar direto. Para três no mesmo mês, a pessoa faz doze vezes três e responde trinta e seis. Trinta e seis até garantem, mas a pergunta quer o menor número que garante. Com vinte e cinco, já não tem como escapar do trio. Encha cada mês só até quase transbordar.
+
+Agora o atalho: multiplique as casinhas por um a menos do que quantos você quer na mesma casinha, e some um. Três no mesmo mês: doze vezes dois, mais um, vinte e cinco. Par de meias: três vezes um, mais um, quatro.
+
+Funciona porque a multiplicação é o pior caso: todas as casinhas cheias até quase transbordar. Não vale quando a pergunta escolhe a casinha. Para garantir duas meias pretas, o pior caso é tirar todas as meias das outras cores primeiro.
+
+Hora de testar. Uma gaveta tem cinco meias brancas, cinco pretas e cinco azuis. No escuro, quantas você precisa tirar para garantir três da mesma cor? E para garantir duas pretas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Três da mesma cor: as casinhas são as três cores. Pior caso: duas de cada cor, seis meias. A sétima fecha o trio: sete meias.
+
+Duas pretas: a pergunta escolhe a cor. Pior caso: as cinco brancas e as cinco azuis, dez meias, e só depois duas pretas. Doze meias.
+
+Resumindo: imagine o pior caso e some um.
+
+Na próxima aula, você conta quantos números de um a cem são múltiplos de dois ou de três, sem contar nenhum número duas vezes. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

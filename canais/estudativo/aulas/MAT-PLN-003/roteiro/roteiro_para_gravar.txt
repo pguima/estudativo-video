@@ -1,0 +1,39 @@
+Xis ao cubo menos dois xis ao quadrado menos cinco xis mais seis, dividido por xis menos um. Pela chave, são três rodadas de dividir, multiplicar e subtrair. Com uma tabelinha que usa só os coeficientes, sai em vinte segundos.
+
+Até o fim desta aula, você divide por xis menos um número usando só os coeficientes: é o dispositivo de Briô-Rufíni, uma tabelinha que faz a divisão.
+
+Você vai usar duas coisas: na divisão, o polinômio é o divisor vezes o quociente, mais o resto, e o teorema do resto: o resto da divisão por xis menos á é P de á. Se faltar alguma, procure no canal.
+
+Monte assim. À esquerda, o número que zera o divisor. Para xis menos um, é o um. À direita, os coeficientes, do maior expoente para o menor: um, menos dois, menos cinco e seis.
+
+A regra tem duas partes: baixe o primeiro, e depois multiplique pelo número da esquerda e some com o próximo.
+
+Baixe o um. Um vezes um, um. Mais menos dois: menos um. Menos um vezes um, menos um. Mais menos cinco: menos seis. Menos seis vezes um, menos seis. Mais seis: zero.
+
+Agora leia a última linha. O último número é o resto: zero. Os outros são os coeficientes do quociente, com grau um a menos que o dividendo. O dividendo tinha grau três, então o quociente é xis ao quadrado menos xis menos seis.
+
+Confira pelo teorema do resto: P de um é um menos dois menos cinco mais seis: zero. Bateu com a tabela.
+
+E quando falta um termo? Divida xis ao cubo menos quatro xis mais cinco por xis mais dois. Xis mais dois zera com menos dois. Não tem xis ao quadrado: o coeficiente dele é zero, e o zero entra na tabela. Um, zero, menos quatro, cinco.
+
+Baixe o um. Um vezes menos dois, menos dois. Mais zero: menos dois. Menos dois vezes menos dois, quatro. Mais menos quatro: zero. Zero vezes menos dois, zero. Mais cinco: cinco.
+
+Quociente: xis ao quadrado menos dois xis mais zero, ou seja, xis ao quadrado menos dois xis. Resto cinco.
+
+O erro mais comum é justamente pular o zero do termo que falta. Com um, menos quatro e cinco, a tabela dá resto dezessete. Mas P de menos dois é menos oito mais oito mais cinco: cinco. Termo que falta entra com zero, sempre.
+
+Agora o atalho: o último número da tabela é P do número da esquerda. Então a mesma tabela calcula o valor de um polinômio, só com vezes e mais, sem potência. P de três, no polinômio do começo: baixe o um; um vezes três, mais menos dois, um; um vezes três, mais menos cinco, menos dois; menos dois vezes três, mais seis, zero.
+
+Funciona porque o resto da divisão por xis menos três é P de três. Não serve para divisor como dois xis menos um, com número na frente do xis: aí, use a chave.
+
+Hora de testar. Divida dois xis ao cubo menos três xis mais um por xis menos um.
+
+Pause o vídeo e tente.
+
+Vamos lá. À esquerda, o um. Falta o xis ao quadrado: dois, zero, menos três, um. Baixe o dois. Dois vezes um, mais zero: dois. Dois vezes um, mais menos três: menos um. Menos um vezes um, mais um: zero.
+
+Quociente: dois xis ao quadrado mais dois xis menos um. Resto zero: a divisão é exata. Conferindo: P de um é dois menos três mais um, zero. Bateu.
+
+Resumindo: o número que zera o divisor à esquerda, os coeficientes com zero no que falta, e baixe, multiplique e some.
+
+Na próxima aula, esse resto zero vira ferramenta: você usa uma raiz conhecida para quebrar o polinômio em pedaços, como xis menos um, vezes xis menos três, vezes xis mais dois. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,47 @@
+Quantos números de três algarismos têm todos os algarismos diferentes? Muita gente faz dez vezes nove vezes oito, que dá setecentos e vinte. Errou. São seiscentos e quarenta e oito.
+
+Até o fim desta aula, você conta com regras no meio do caminho, sabe por qual casinha começar e quando somar em vez de multiplicar.
+
+Para acompanhar, lembre do princípio multiplicativo: uma casinha para cada etapa, quantas opções cabem em cada uma, e multiplique. Se faltar, procure no canal.
+
+Um número de três algarismos tem três casinhas: centena, dezena e unidade. E aqui há regras. Algarismo não pode repetir. E o zero não pode ficar na frente: zero quarenta e sete é só quarenta e sete, um número de dois algarismos.
+
+Qual casinha tem mais regra? A da centena, porque ela não aceita o zero. Então comece por ela. Ela tem nove opções: de um a nove.
+
+Depois, a dezena. Ela aceita o zero, mas não aceita o algarismo que foi para a centena. Dez menos um dá nove opções.
+
+Por último, a unidade. Já foi usado um algarismo na centena e outro na dezena. Dez menos dois dá oito opções.
+
+Nove vezes nove dá oitenta e um. Oitenta e um vezes oito dá seiscentos e quarenta e oito.
+
+E se você começasse pela unidade? Dez opções, depois nove na dezena. Na centena, a conta trava: se o zero já foi usado, sobram oito; se não foi, só sete. Por isso, comece pela casinha mais difícil.
+
+Às vezes, nem começando pela difícil a conta fecha. Veja: números de três algarismos diferentes que terminam em zero ou em cinco.
+
+A casinha difícil é a unidade: só aceita zero ou cinco. Mas a escolha dela muda a centena. Então separe em casos.
+
+Caso um: termina em zero. A centena tem nove opções, e a dezena tem oito. Nove vezes oito dá setenta e dois.
+
+Caso dois: termina em cinco. A centena não aceita nem o zero nem o cinco: fica com oito opções. A dezena aceita o zero, mas não os algarismos já usados: oito também. Oito vezes oito dá sessenta e quatro.
+
+Cada número cai em um caso só: ou termina em zero, ou termina em cinco. Casos que não acontecem juntos se somam. Setenta e dois mais sessenta e quatro dá cento e trinta e seis.
+
+A palavra ou ajuda, mas não decide sozinha. Pergunte: eu faço todas as etapas? Multiplique. Cada resultado cai em um caso só? Some os casos.
+
+O erro do começo foi deixar o zero ir para qualquer lugar. Dez vezes nove vezes oito conta também os que começam com zero, como zero quarenta e sete. Esses não têm três algarismos de verdade.
+
+Agora o atalho: conte tudo e tire o que não pode. Sem a regra do zero, dá setecentos e vinte. Os que começam com zero têm uma opção na centena, nove na dezena e oito na unidade: dá setenta e dois. Setecentos e vinte menos setenta e dois dá seiscentos e quarenta e oito.
+
+Funciona porque cada número da conta grande ou é proibido, ou não é. Compensa quando o proibido é fácil de contar. Quando o proibido se espalha em muitos casos, conte direto.
+
+Hora de testar. Quantos números de dois algarismos diferentes são pares? Lembre: número par termina em zero, dois, quatro, seis ou oito.
+
+Pause o vídeo e tente.
+
+Vamos lá. A unidade é a casinha difícil, e o zero muda a dezena: separe em casos. Termina em zero: a dezena tem nove opções, de um a nove. São nove números.
+
+Termina em dois, quatro, seis ou oito: quatro opções na unidade. A dezena não aceita o zero nem o algarismo da unidade: oito opções. Quatro vezes oito dá trinta e dois. Os casos não acontecem juntos: nove mais trinta e dois dá quarenta e um.
+
+Resumindo: comece pela casinha mais difícil. Se ela muda as outras, separe em casos e some.
+
+Na próxima aula, as casinhas servem para outra coisa: contar quantos divisores um número tem, como o setenta e dois, sem listar nenhum. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

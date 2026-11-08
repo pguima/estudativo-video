@@ -1,0 +1,41 @@
+Seu celular tem dois gigabytes livres. Quantos bytes são isso? Escrito por inteiro, o número tem nove zeros. Com potência de dez, cabe em uma linha curta.
+
+Até o fim desta aula, você vai usar os prefixos gigantes e minúsculos, converter polegadas em centímetros e ainda leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: a escada das unidades, com quilo valendo mil, e a notação científica, com expoente negativo para números pequenos. Se faltar alguma, procure no canal.
+
+Primeiro, o que é byte: é a unidade que mede o tamanho de um arquivo. Uma letra de um texto simples ocupa cerca de um byte.
+
+Você já conhece o quilo: mil, dez elevado a três. Acima dele vem o mega: um milhão, dez elevado a seis. E o giga: um bilhão, dez elevado a nove. Uma foto de três megabytes tem três vezes dez elevado a seis bytes: três milhões.
+
+Então dois gigabytes são dois vezes dez elevado a nove bytes. Dois bilhões de bytes. E já está na notação científica: a frente é dois, e a frente vai de um até menos de dez.
+
+Em informática, às vezes o enunciado avisa que cada prefixo vale mil e vinte e quatro vezes o anterior, em vez de mil. Se avisar, use o valor do enunciado.
+
+Para baixo, o mili você já conhece: milésimo, dez elevado a menos três. Depois vem o micro: milionésimo, dez elevado a menos seis. E o nano: bilionésimo, dez elevado a menos nove.
+
+O vírus da gripe mede cerca de cem nanômetros. Em metros: cem vezes dez elevado a menos nove. Cem é dez ao quadrado. Repete a base e soma os expoentes: dez elevado a menos sete metro.
+
+Agora, as unidades fora do sistema métrico: polegada, pé, milha, libra. Elas vieram de outros países e não andam de dez em dez. A boa notícia: a prova dá o fator de conversão.
+
+Uma televisão de cinquenta polegadas. Esse número mede a diagonal da tela, de um canto ao canto oposto. O enunciado diz: uma polegada vale dois vírgula cinquenta e quatro centímetros.
+
+Cada polegada vira dois vírgula cinquenta e quatro centímetros, então multiplique: cinquenta vezes dois vírgula cinquenta e quatro. Cinquenta é metade de cem. Vezes cem: duzentos e cinquenta e quatro. Metade: cento e vinte e sete. A diagonal tem cento e vinte e sete centímetros.
+
+O erro comum é dividir pelo fator. Cinquenta dividido por dois vírgula cinquenta e quatro dá quase vinte. Uma televisão de vinte centímetros? O centímetro é menor que a polegada, então o número tem que crescer.
+
+Agora o atalho dos prefixos: eles andam de três em três no expoente. Quilo, três. Mega, seis. Giga, nove. Mili, menos três. Micro, menos seis. Nano, menos nove.
+
+Funciona porque cada prefixo vale mil vezes o anterior, e mil é dez elevado a três. Não compensa com centi e deci, que ficam fora dessa sequência: para eles, volte à escada.
+
+Hora de testar. Um pendrive tem sessenta e quatro gigabytes. Escreva em bytes, na notação científica. E uma corrida tem cinco milhas. O enunciado diz que uma milha vale um vírgula seis quilômetro. Quantos quilômetros tem a corrida?
+
+Pause o vídeo e tente.
+
+Vamos lá. Giga é dez elevado a nove: sessenta e quatro vezes dez elevado a nove. Sessenta e quatro passa de dez, então a vírgula anda uma casa para a esquerda e o expoente sobe um. Seis vírgula quatro vezes dez elevado a dez bytes.
+
+Na corrida, cada milha vira um vírgula seis quilômetro: multiplique. Sem a vírgula, cinco vezes dezesseis dá oitenta. Uma casa: oito quilômetros. Quilômetro é menor que milha, e o número cresceu.
+
+Resumindo: os prefixos andam de três em três no expoente, e fora do sistema métrico, use o fator do enunciado, conferindo se o número deve crescer ou diminuir.
+
+Na próxima aula, você vai ver o que é um metro quadrado e por que, na área, cada degrau da escada vale cem. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

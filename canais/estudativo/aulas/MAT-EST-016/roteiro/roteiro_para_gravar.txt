@@ -1,0 +1,43 @@
+Duas turmas, criadas para esta aula, com a mesma média: quatro. Numa, as notas estão todas coladas no quatro. Na outra, vão de zero a oito. A média não enxerga essa diferença.
+
+Até o fim desta aula, você calcula três medidas que enxergam: desvio médio, variância e desvio padrão. E leva um atalho de prova.
+
+Você precisa de duas coisas: a média, a soma dividida pela quantidade, e a raiz quadrada, inclusive de fração e quando ela não é exata. Se faltar alguma, procure no canal.
+
+Vamos usar só três valores: dois quatro e seis. A soma dá doze. Doze dividido por três dá quatro. A média é quatro.
+
+O desvio de um valor é quanto ele se afasta da média: o valor menos a média. Dois menos quatro dá menos dois. Quatro menos quatro dá zero. Seis menos quatro dá dois.
+
+A ideia natural seria fazer a média dos desvios. Mas some: menos dois mais zero mais dois dá zero. E sempre vai dar zero. Lembra da aula de média? O que sobra num valor cobre o que falta em outro. Para medir o espalhamento, o sinal precisa sumir. Existem dois jeitos.
+
+Primeiro jeito: esquecer o sinal. Use só a distância até a média, que é sempre positiva. As distâncias são dois zero e dois.
+
+O desvio médio é a média dessas distâncias. Dois mais zero mais dois dá quatro. Quatro dividido por três dá quatro terços, cerca de um vírgula três. Em média, cada valor fica a quatro terços da média.
+
+Segundo jeito: elevar cada desvio ao quadrado. Negativo ao quadrado vira positivo. Menos dois ao quadrado dá quatro. Zero ao quadrado dá zero. Dois ao quadrado dá quatro.
+
+A variância é a média desses quadrados. Quatro mais zero mais quatro dá oito. Oito dividido por três dá oito terços. Na tela, a receita: cada valor menos a média, ao quadrado, somados e divididos pela quantidade de valores. Alguns livros, quando os dados são só uma parte de um grupo maior, dividem pela quantidade menos um. Se a questão quiser essa versão, ela vai dizer. Sem esse aviso, divida pela quantidade.
+
+A variância tem um defeito: ela muda a unidade. Se os dados estão em metros, os quadrados ficam em metros quadrados. Para voltar à unidade dos dados, tire a raiz quadrada. Esse é o desvio padrão: a raiz da variância.
+
+Aqui, raiz de oito terços. Não é exata, então cerque. Oito dividido por três dá cerca de dois vírgula sessenta e sete. Um vírgula seis ao quadrado dá dois vírgula cinquenta e seis. Um vírgula sete ao quadrado dá dois vírgula oitenta e nove. Fica mais perto do primeiro: o desvio padrão é cerca de um vírgula seis.
+
+E as turmas do começo? Na turma colada no quatro, o desvio padrão é pequeno. Na turma de zero a oito, é grande. Quanto maior o desvio padrão, mais espalhados os dados. E se todos os valores forem iguais, ele dá zero.
+
+Agora, cuidado com um erro muito comum: escrever menos dois ao quadrado como menos quatro. Aí a soma vira menos quatro mais zero mais quatro, que dá zero. E a pessoa conclui que a variância é zero. Impossível: os valores são diferentes. Menos dois vezes menos dois dá quatro positivo.
+
+Agora o atalho de prova. Um professor soma um ponto na nota de todo mundo. O que acontece com o desvio padrão? Nada. Dois quatro e seis viram três cinco e sete. A média também sobe um, e os desvios continuam menos dois zero e dois.
+
+E se ele dobrar todas as notas? Cada desvio dobra, então o desvio padrão também dobra. Mas a variância fica quatro vezes maior, porque o dobro de um desvio, ao quadrado, dá quatro vezes o quadrado dele. Funciona porque a dispersão só depende da distância até a média. Não compensa quando só alguns valores mudam: aí, refaça a conta.
+
+Hora de testar. Os tempos de espera de cinco clientes, em minutos, estão na tela. Calcule a média, o desvio médio, a variância e o desvio padrão.
+
+Pause o vídeo e tente.
+
+Vamos lá. A soma dá vinte e cinco. Vinte e cinco dividido por cinco dá cinco minutos de média. Os desvios são menos três menos um zero um e três. As distâncias somam oito. Oito dividido por cinco dá um vírgula seis minuto de desvio médio.
+
+Os quadrados: nove um zero um e nove. A soma dá vinte. Vinte dividido por cinco dá quatro: essa é a variância. E a raiz quadrada de quatro dá dois: o desvio padrão é de dois minutos.
+
+Resumindo: desvio médio é a média das distâncias, variância é a média dos quadrados dos desvios e desvio padrão é a raiz da variância.
+
+Na próxima aula, você vai interpretar esses números: qual atleta é mais regular e o que fazer quando as médias são diferentes, com o coeficiente de variação. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

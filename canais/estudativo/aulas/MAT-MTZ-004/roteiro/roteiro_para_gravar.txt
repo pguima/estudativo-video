@@ -1,0 +1,39 @@
+Qual é a inversa da matriz dois, um, um, um? Se você inverteu cada número e achou um meio, um, um, um, errou. A inversa é um, menos um, menos um, dois.
+
+Até o fim desta aula, você acha a inversa de uma matriz dois por dois, sabe quando ela não existe, e ainda leva um atalho de prova.
+
+Lembre duas coisas: multiplicar matrizes é linha por coluna, e o determinante da dois por dois é a principal menos a secundária. Se faltar alguma, procure no canal.
+
+Com números, dois vezes um meio dá um. Por isso, um meio é o inverso de dois: multiplicado por ele, dá um. E o um é especial: multiplicar por um não muda nada.
+
+Nas matrizes, o papel do um é da matriz identidade: um na diagonal principal e zero no resto. Ela leva a letra I. Multiplicar uma matriz pela identidade não muda a matriz.
+
+Então, a inversa de A é a matriz que, multiplicada por A, dá a identidade. Ela se escreve A elevado a menos um.
+
+Na dois por dois, a inversa sai em três passos. Um: troque de lugar os números da diagonal principal. Dois: troque o sinal dos números da secundária. Três: divida tudo pelo determinante.
+
+Com dois, um, um, um: o determinante é dois vezes um, menos um vezes um: um. Trocando a principal, dois e um viram um e dois. Trocando o sinal da secundária, os uns viram menos um. Dividir por um não muda nada: a inversa é um, menos um, menos um, dois.
+
+Confira multiplicando, linha por coluna. Dois vezes um, mais um vezes menos um: um. Dois vezes menos um, mais um vezes dois: zero. Um vezes um, mais um vezes menos um: zero. Um vezes menos um, mais um vezes dois: um. Deu a identidade.
+
+E quando a inversa não existe? Com números, o zero não tem inverso: nenhum número vezes zero dá um. Nas matrizes, o aviso vem do determinante. Determinante zero, sem inversa: o passo três pediria uma divisão por zero, que não existe.
+
+Veja dois, quatro, um, dois. Dois vezes dois, menos quatro vezes um: quatro menos quatro, zero. Essa matriz não tem inversa.
+
+Cuidado com o erro mais comum: inverter cada número. Um meio, um, um, um não é a inversa de dois, um, um, um. Multiplique: a primeira conta já dá dois vezes um meio, mais um vezes um: dois. Não deu a identidade.
+
+Agora o atalho de prova: calcule o determinante antes de tudo. Deu zero? Pare: não existe inversa. Deu um? A inversa sai de cabeça: troca a principal e muda o sinal da secundária.
+
+Funciona porque dividir por um não muda nada. Com outro determinante, como dois, ainda falta dividir cada número por ele: aí não dá para pular o passo três.
+
+Hora de testar. Ache a inversa da matriz dois, três, um, um, se ela existir.
+
+Pause o vídeo e tente.
+
+Vamos lá. Determinante: dois vezes um, menos três vezes um: menos um. Não é zero, então a inversa existe. Troque a principal: um e dois. Mude o sinal da secundária: menos três e menos um.
+
+Falta dividir por menos um, e dividir por menos um troca o sinal de tudo. A inversa é menos um, três, um, menos dois. Confira a primeira conta: dois vezes menos um, mais três vezes um: um.
+
+Resumindo: determinante zero, sem inversa. Senão, troca a principal, muda o sinal da secundária e divide pelo determinante.
+
+A próxima aula é de prática: você usa tudo de matrizes e determinantes em questões no estilo de prova. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

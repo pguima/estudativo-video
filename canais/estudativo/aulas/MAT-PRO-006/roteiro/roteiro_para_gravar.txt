@@ -1,0 +1,39 @@
+Um mais dois mais três, e assim por diante, até cem. Conta a história que um professor passou essa soma para a turma, para ter uma hora de sossego. Em poucos minutos, um menino respondeu: cinco mil e cinquenta. O nome dele era Gauss, e ele virou um dos maiores matemáticos da história.
+
+Até o fim desta aula, você soma qualquer pê á com a ideia dele, usa a fórmula da soma e leva um atalho de prova.
+
+Você precisa de uma coisa: o termo geral da pê á, para achar o último termo. É o primeiro termo, mais um salto de razão para cada passo. Se faltar, procure no canal.
+
+A ideia é juntar as pontas. Um mais cem dá cento e um. Dois mais noventa e nove também dá cento e um. Três mais noventa e oito, de novo. Um lado sobe um, o outro desce um, e a soma do par não muda.
+
+De um a cem são cem números, então são cinquenta pares. Cinquenta vezes cento e um dá cinco mil e cinquenta. Sem somar um número de cada vez.
+
+E se a quantidade de termos for ímpar? Um deles fica sem par. Então escreva a soma duas vezes: uma na ordem, outra de trás para frente. Cada coluna dá primeiro mais último. São tantas colunas quantos são os termos. Isso é a soma em dobro, então divida por dois.
+
+Daí sai a fórmula: ésse índice ene igual a, abre parênteses, á índice um mais á índice ene, fecha parênteses, vezes ene, dividido por dois. Ésse índice ene é a soma dos termos. Á índice um é o primeiro. Á índice ene é o último. Ene é quantos termos são. Em palavras: primeiro mais último, vezes a quantidade, dividido por dois.
+
+Teste com poucos termos: um mais dois mais três mais quatro mais cinco dá quinze. Pela fórmula: um mais cinco dá seis. Seis vezes cinco dá trinta. Dividido por dois dá quinze. Bateu, mesmo com quantidade ímpar.
+
+Agora, uma situação real. Uma pessoa guarda cinco reais no primeiro dia, e a cada dia dois reais a mais que no dia anterior. Quanto ela junta em trinta dias?
+
+A fórmula pede o último termo, então ache primeiro. Do primeiro ao trigésimo dia são vinte e nove saltos. Vinte e nove vezes dois dá cinquenta e oito. Mais cinco dá sessenta e três reais no último dia.
+
+Agora a soma: cinco mais sessenta e três dá sessenta e oito. Vezes trinta, dividido por dois. Divida o trinta primeiro, que é mais fácil: dá quinze. Sessenta e oito vezes quinze dá mil e vinte reais.
+
+O erro comum é pôr o número de dias no lugar do último termo. A pessoa faz cinco mais trinta, vezes trinta, dividido por dois, e acha quinhentos e vinte e cinco reais.
+
+Mas trinta é a posição do último dia, não o que se guardou nele. No último dia, ela guardou sessenta e três. É a velha confusão entre posição e valor. Primeiro ache o último termo, depois some.
+
+Agora o atalho: a soma é a média vezes a quantidade. A média é o valor que todos teriam se fossem iguais, e na pê á é primeiro mais último, dividido por dois. Nos trinta dias: sessenta e oito dividido por dois dá trinta e quatro. Trinta e quatro vezes trinta dá mil e vinte.
+
+Funciona porque o que falta nos primeiros dias sobra nos últimos. É como se ela guardasse trinta e quatro reais todo dia. Não compensa quando primeiro mais último dá ímpar, como o cento e um de Gauss: a média vira cinquenta vírgula cinco. Aí, divida a quantidade por dois: cento e um vezes cinquenta.
+
+Hora de testar. Um auditório tem vinte fileiras de cadeiras. A primeira fileira tem doze cadeiras, e cada fileira tem duas cadeiras a mais que a da frente. Quantas cadeiras há no auditório?
+
+Pause o vídeo e tente.
+
+Vamos lá. Primeiro, a última fileira: dezenove saltos de dois dá trinta e oito. Doze mais trinta e oito dá cinquenta cadeiras. Agora a soma: doze mais cinquenta dá sessenta e dois. Vinte dividido por dois dá dez. Sessenta e dois vezes dez dá seiscentas e vinte cadeiras.
+
+Resumindo: ache o último termo, some as pontas, multiplique pela quantidade e divida por dois.
+
+Na próxima aula, é hora de praticar: figuras, calendários e pagamentos, com tudo o que você viu de sequências e de pê á. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

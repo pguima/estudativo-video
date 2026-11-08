@@ -1,0 +1,37 @@
+Tire uma carta de um baralho. Qual a chance de ser um rei ou uma carta de copas? Muita gente soma os reis com as copas e responde dezessete cinquenta e dois avos. Errou por uma carta só.
+
+Até o fim desta aula, você calcula a chance de um evento ou outro, sem contar nada duas vezes, e leva um atalho de prova.
+
+Você vai usar duas coisas: probabilidade é favoráveis sobre possíveis, e a fórmula da união do diagrama de Venn: ene de á, mais ene de bê, menos ene da interseção. Se faltar alguma, procure no canal.
+
+Primeiro, o baralho. São cinquenta e duas cartas, em quatro naipes: copas, espadas, ouros e paus. Cada naipe tem treze cartas, do ás ao rei. Então existem quatro reis, um de cada naipe.
+
+Agora o diagrama de Venn. O conjunto á são os reis: quatro cartas. O conjunto bê são as cartas de copas: treze. Uma carta está em ambos ao mesmo tempo: o rei de copas. Ela vai no meio.
+
+De dentro para fora. Só rei: quatro menos um dá três. Só copas: treze menos um dá doze. Somando os pedaços: três mais um mais doze dá dezesseis cartas.
+
+A chance é dezesseis cinquenta e dois avos. Divida em cima e embaixo por quatro: quatro treze avos. Em por cento, dá cerca de trinta e um por cento: pouco menos de um terço.
+
+A fórmula da união também vale para chances. Pê de á é a chance do evento á. A chance de á ou bê é a chance de á, mais a de bê, menos a chance de ambos juntos.
+
+No baralho: quatro cinquenta e dois avos, mais treze cinquenta e dois avos, menos um cinquenta e dois avos. Todas têm embaixo o mesmo número, o total de cartas. Então a conta é só em cima: quatro mais treze menos um dá dezesseis. De novo, dezesseis cinquenta e dois avos.
+
+E quando não existe parte em comum? Rei ou dama. Nenhuma carta é rei e dama ao mesmo tempo: a interseção é vazia. Não há nada contado duas vezes, então não há nada para tirar. Aí, é só somar: quatro mais quatro dá oito. A chance é oito cinquenta e dois avos, ou dois treze avos.
+
+Volte ao erro do começo. Quatro mais treze dá dezessete. Mas o rei de copas foi contado duas vezes: uma entre os reis, outra entre as copas. Tire uma vez, e fica dezesseis. A palavra ou pede soma, mas antes pergunte: dá para acontecer junto?
+
+Agora o atalho: faça a conta com quantidades e só divida no fim. Contar cartas é mais fácil que lidar com frações, e o resultado é o mesmo, porque todas as chances têm o mesmo total embaixo.
+
+Não compensa quando a questão já dá as chances, em por cento. Num mês, sessenta por cento dos clientes de uma loja pagaram com cartão, cinquenta por cento com pix, e trinta por cento usaram ambos. Qual a chance de um cliente sorteado ter usado cartão ou pix? Use a fórmula direto: sessenta mais cinquenta menos trinta dá oitenta por cento.
+
+Hora de testar. Uma urna tem trinta bolinhas, numeradas de um a trinta. Uma é sorteada. Qual a chance de sair um múltiplo de três ou de cinco?
+
+Pause o vídeo e tente.
+
+Vamos lá. Múltiplos de três até trinta: dez números. Múltiplos de cinco: seis. Múltiplos de três e de cinco ao mesmo tempo: quinze e trinta. Eles entraram em ambas as listas.
+
+Dez mais seis dá dezesseis. Tirando o quinze e o trinta, que estão em ambas as listas, dá catorze. A chance é catorze trinta avos. Simplificando por dois: sete quinze avos, um pouco menos da metade.
+
+Resumindo: na palavra ou, some as chances e tire uma vez a parte em comum.
+
+Na próxima aula, a questão dá uma pista antes de perguntar: qual a chance de a pessoa sorteada ser mulher, sabendo que ela usa óculos? Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

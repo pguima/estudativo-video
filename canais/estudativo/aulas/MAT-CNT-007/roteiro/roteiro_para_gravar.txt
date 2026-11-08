@@ -1,0 +1,43 @@
+Oito corredores na final. Ouro, prata e bronze. Quantos pódios diferentes podem sair? Não é oito fatorial, que passa de quarenta mil. São trezentos e trinta e seis.
+
+Até o fim desta aula, você conta escolhas em que a ordem importa, aprende um teste para saber quando ela importa e leva um atalho de prova.
+
+Você vai usar as casinhas do princípio multiplicativo, o fatorial e o corte de fatoriais numa divisão: oito fatorial dividido por seis fatorial deixa oito vezes sete, que dá cinquenta e seis. Se faltar alguma, procure no canal.
+
+Faça uma casinha para cada lugar do pódio. No ouro, cabe qualquer um dos oito. Na prata, sobram sete, porque quem ganhou o ouro não ganha a prata. No bronze, sobram seis.
+
+Oito vezes sete dá cinquenta e seis. Vezes seis dá trezentos e trinta e seis pódios.
+
+Repare: é a mesma conta da fila, só que ela para no meio. Na fila, todos os oito entram, e a conta desce até o um. No pódio, só três sobem, então são só três casinhas.
+
+Mas como saber se a ordem importa? Faça o teste da troca. Pegue um resultado: Ana no ouro, Bia na prata, Caio no bronze. Agora troque Ana e Bia de lugar.
+
+Bia com o ouro e Ana com a prata é outro pódio. Outra foto, outra medalha no peito. Trocar a ordem mudou o resultado. Então a ordem importa.
+
+Compare com outra situação. Os mesmos oito corredores, mas agora os três primeiros só ganham vaga na próxima prova. Ana, Bia e Caio classificados, ou Bia, Ana e Caio: é o mesmo grupo. Aqui, a ordem não importa, e a conta é outra. Esse caso fica para a próxima aula.
+
+Escolher só alguns, em uma ordem que importa, se chama arranjo. O pódio é um arranjo de oito elementos tomados três a três.
+
+Na fórmula, ene é o total e pê é quantos você escolhe. O arranjo é ene fatorial dividido pelo fatorial de ene menos pê.
+
+De onde vem isso? Oito fatorial arruma os oito corredores em fila. Mas a ordem dos cinco que ficaram fora do pódio não interessa. Por isso, divida por cinco fatorial. Corte como você já sabe: sobra oito vezes sete vezes seis, que dá trezentos e trinta e seis de novo.
+
+E se todos entrarem, como numa fila? Embaixo fica zero fatorial, que vale um. O arranjo vira o fatorial do total: é a permutação que você já conhece.
+
+O erro comum é usar o fatorial do total. A pessoa pensa em fila, faz oito fatorial e responde quarenta mil trezentos e vinte. Isso conta a ordem de chegada dos oito corredores, até o último. O pódio só olha os três primeiros.
+
+Agora o atalho: o arranjo é uma multiplicação descendo do total, com tantos números quantos são os lugares. Três lugares entre oito: três números, descendo do oito. Dois lugares entre dez? Dez vezes nove dá noventa.
+
+Funciona porque cada lugar tem uma opção a menos que o anterior, e a fórmula corta o resto. Não compensa quando há regra no meio, como o zero que não pode vir na frente de um número: aí, volte às casinhas e comece pela mais difícil.
+
+Hora de testar. Um clube tem dez sócios e vai escolher presidente, vice e tesoureiro. Quantas chapas diferentes são possíveis? Antes da conta, faça o teste da troca.
+
+Pause o vídeo e tente.
+
+Vamos lá. O teste: Ana presidente e Bia vice é diferente de Bia presidente e Ana vice. Os cargos são diferentes, então a ordem importa: é arranjo.
+
+São três cargos: três números descendo do dez. Dez vezes nove dá noventa. Noventa vezes oito dá setecentos e vinte chapas.
+
+Resumindo: escolhe só alguns, e trocar a ordem muda o resultado? É arranjo: multiplique descendo do total, um número por lugar.
+
+Na próxima aula, a ordem deixa de importar: uma comissão de três pessoas entre oito. E você vai ver por que a resposta é o arranjo dividido por três fatorial. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,39 @@
+Numa empresa, o salário médio é de quatro mil duzentos e cinquenta reais. Parece bom. Mas nove dos dez funcionários ganham até três mil. A conta está certa. Só que a média não era a medida certa para essa pergunta.
+
+Até o fim desta aula, você sabe quando usar média, mediana ou moda e leva um atalho de prova.
+
+Você precisa de três medidas: a média aritmética, que é a soma dividida pela quantidade; a mediana, o valor do meio com os dados em ordem; e a moda, o valor que mais aparece. Se faltar alguma, procure no canal.
+
+Os salários estão na tela. Quatro pessoas ganham dois mil reais. Três ganham dois mil e quinhentos. Duas ganham três mil. E o diretor ganha vinte e um mil.
+
+A soma dá quarenta e dois mil e quinhentos. Dividida por dez pessoas, dá quatro mil duzentos e cinquenta. Agora a mediana. Com dez salários em ordem, olhe o quinto e o sexto: dois mil e quinhentos. E a moda: dois mil, o salário mais comum.
+
+Por que a média ficou tão alta? Porque ela soma todos os valores. O salário do diretor entra inteiro na soma e puxa a média para cima. Já a mediana só olha a posição. O diretor é só mais um na ponta da fila.
+
+Veja o teste. O diretor ganha um aumento e vai para quarenta e um mil. A média sobe para seis mil duzentos e cinquenta. A mediana continua dois mil e quinhentos. O quinto e o sexto da fila não mudaram.
+
+Então, quando usar cada uma? A média, quando importa o total, porque média vezes quantidade dá o total. E quando os dados não têm valores muito fora do padrão.
+
+A mediana, quando há valores extremos, como salários, preços de imóveis e tempo de espera. Ela responde quanto ganha quem está no meio da fila.
+
+A moda, quando a pergunta é o mais comum: o tamanho de roupa que mais sai, o sabor mais pedido. E ela é a única das três que funciona com dado que não é número, como cor ou sabor.
+
+Um erro comum: jogar fora o salário do diretor para a média ficar mais justa. Não pode. Ele é um dado real da empresa. A saída não é apagar o dado: é escolher a medida que não se deixa puxar, a mediana.
+
+Agora o atalho: compare a média com a mediana. Se a média ficou bem acima da mediana, tem valor muito alto puxando para cima. Se ficou bem abaixo, tem valor muito baixo puxando para baixo. Funciona porque só a média sente os valores das pontas. Diferença pequena não prova nada: aí, olhe os dados.
+
+E o enunciado costuma dar pistas. Metade ganha até, ou valor central, pede mediana. Mais comum ou mais vendido pede moda. Dividir o total igualmente pede média.
+
+Mas a palavra é só pista. Quem decide é a situação. Na dúvida, pergunte: eu preciso do total, do meio ou do mais comum?
+
+Hora de testar. Diga a medida certa para cada caso. Caso um: uma loja de calçados vai repor o estoque e quer saber o número que mais sai. Caso dois: um site quer mostrar o preço típico das casas de um bairro, que tem uma mansão. Caso três: uma família quer guardar o mesmo valor todo mês para que, no fim do ano, o dinheiro guardado pague todas as contas de luz.
+
+Pause o vídeo e tente.
+
+Vamos lá. Caso um: moda. A loja quer o número mais comum, e não um tamanho quebrado no meio do caminho. Caso dois: mediana. A mansão puxaria a média para cima, e o preço pareceria mais alto do que é para a maioria.
+
+Caso três: média. O valor guardado por mês, vezes doze meses, precisa dar o total das contas do ano: é o total dividido igualmente pelos doze meses. Aqui, o mês mais caro precisa entrar na conta.
+
+Resumindo: a média sente cada valor, a mediana só sente a posição e a moda mostra o mais comum.
+
+Na próxima aula, você corta os dados em quatro partes, em vez de duas. São os quartis, e você vai entender o que quer dizer ficar no percentil noventa de uma prova. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

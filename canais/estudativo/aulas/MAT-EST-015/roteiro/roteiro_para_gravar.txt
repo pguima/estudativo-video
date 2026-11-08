@@ -1,0 +1,39 @@
+Duas turmas, a mesma mediana: seis. São parecidas? Nem um pouco. Um desenho simples mostra a diferença de uma olhada: o boxplot.
+
+Até o fim desta aula, você lê um boxplot, calcula a amplitude e leva um atalho de prova.
+
+Você precisa de uma coisa: os quartis. O primeiro é a mediana da metade de baixo, o segundo é a própria mediana e o terceiro é a mediana da metade de cima. Se faltar, procure no canal.
+
+Lembra das onze notas da aula de quartis? Elas cabem em cinco números: a menor nota, dois; o primeiro quartil, quatro; a mediana, seis; o terceiro quartil, oito; e a maior nota, dez.
+
+O boxplot desenha esses cinco números sobre uma reta com escala. Uma caixa vai do primeiro ao terceiro quartil. Um traço dentro dela marca a mediana.
+
+Da caixa saem duas hastes, chamadas de bigodes. Uma vai até o menor valor, a outra vai até o maior. Daí o nome: caixa e bigodes.
+
+A amplitude é o maior valor menos o menor. Dez menos dois dá oito. No desenho, é a distância de uma ponta à outra dos bigodes. E repare: a resposta é um número só: oito. Nada de responder de dois a dez.
+
+A largura da caixa também conta: oito menos quatro dá quatro. É a amplitude interquartil. Ela mede o espalhamento só da metade do meio dos dados.
+
+O desenho tem quatro pedaços: bigode de baixo, metade de baixo da caixa, metade de cima e bigode de cima. Como os quartis cortam os dados em quatro, cada pedaço guarda cerca de um quarto dos dados: vinte e cinco por cento.
+
+E aqui está o erro mais comum: achar que o bigode mais comprido tem mais dados. Não tem. Cada bigode guarda cerca de vinte e cinco por cento. O comprido só mostra que ali os valores estão mais espalhados.
+
+Agora o atalho: conte os pedaços em vez de fazer conta. Quantos por cento tiraram mais que o primeiro quartil? Três pedaços: setenta e cinco por cento. E dentro da caixa? Dois pedaços: cinquenta por cento.
+
+Funciona porque os pedaços têm a mesma quantidade de dados, mesmo com tamanhos diferentes. Não compensa quando o valor perguntado não é um dos cinco números: aí, o boxplot só dá uma estimativa.
+
+Agora as turmas do começo, uma sobre a outra, na mesma escala. Manhã: de quatro a oito, caixa de cinco a sete. Noite: de um a dez, caixa de quatro a oito. Manhã e noite têm a mesma mediana: seis.
+
+Mas a amplitude da manhã é oito menos quatro, que dá quatro. A da noite, dez menos um, que dá nove. A manhã é mais homogênea: as notas são parecidas. A noite é espalhada. E na noite, cerca de vinte e cinco por cento tiraram oito ou mais, porque oito é o terceiro quartil dela.
+
+Hora de testar. Os boxplots mostram o tempo de entrega, em dias, de duas lojas. Item um: qual é a amplitude de cada uma? Item dois: em qual delas pelo menos metade das entregas chega em até três dias? Item três: qual é mais previsível?
+
+Pause o vídeo e tente.
+
+Vamos lá. Loja do centro: sete menos dois dá cinco dias. Loja do bairro: doze menos um dá onze dias. Pelo menos metade em até três dias é pergunta de mediana. A mediana do bairro é três; a do centro é quatro. Resposta: a loja do bairro.
+
+Mas a mais previsível é a do centro: caixa e bigodes curtos. No bairro, a caixa vai de dois a seis, e o bigode chega a doze dias. Você pode receber rápido ou esperar quase duas semanas.
+
+Resumindo: o boxplot mostra os cinco números, cada pedaço tem um quarto dos dados e a amplitude é a maior ponta menos a menor.
+
+Só que a amplitude olha só as duas pontas. Na próxima aula, medidas que usam todos os dados: quanto cada valor se afasta da média. São o desvio médio, a variância e o desvio padrão. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,37 @@
+Cinco em cima, dois embaixo, entre parênteses e sem tracinho no meio. Quem lê como fração pensa em cinco meios. Mas isso não é fração. É um número binomial, e ele vale dez.
+
+Até o fim desta aula, você calcula números binomiais, monta o triângulo de Pascal e leva um atalho de prova.
+
+Você vai usar a combinação: escolher alguns quando a ordem não importa. Faça o arranjo e divida pelo fatorial de quantos foram escolhidos. Se faltar, procure no canal.
+
+O número binomial é só outro jeito de escrever a combinação. Em cima, o total. Embaixo, quantos você escolhe. Lê-se binomial de cinco sobre dois: de quantos jeitos dá para escolher dois entre cinco.
+
+Pense em cinco amigos e dois ingressos para um show. Cinco vezes quatro dá vinte. Vinte dividido por dois fatorial dá dez. São dez duplas possíveis.
+
+Três casos saem de cabeça. Escolher zero: um jeito só, não levar ninguém. Escolher todos: também um jeito. Escolher um: tantos jeitos quanto o total. E vale a troca da aula de combinação: escolher os dois que vão é o mesmo que escolher os três que ficam.
+
+Agora, escreva os binomiais em linhas. Na linha quatro, ficam quatro sobre zero, quatro sobre um, e assim até quatro sobre quatro. As linhas começam no zero: a do topo é a linha zero, só com o um. A linha um: um, um. A linha dois: um, dois, um. Pelos casos de cabeça, toda linha começa e termina em um.
+
+E o meio? Cada número é a soma dos dois que estão em cima dele. Um mais dois dá três: a linha três é um, três, três, um. Três mais três dá seis: a linha quatro é um, quatro, seis, quatro, um. Esse é o triângulo de Pascal.
+
+Por que a soma funciona? Volte aos cinco amigos e separe a Ana. Ou a Ana vai, e você escolhe só mais um entre os outros quatro: quatro jeitos. Ou a Ana não vai, e você escolhe os dois entre os quatro: seis jeitos. Quatro mais seis dá dez, e os dois vizinhos de cima formam o dez da linha cinco.
+
+Para achar um binomial no triângulo, o número de cima diz a linha, e o de baixo diz a posição, sempre contando a partir do zero. Binomial de quatro sobre dois: linha quatro, posição dois. Seis.
+
+O erro comum é contar as linhas a partir do um. A pessoa procura o binomial de quatro sobre dois na quarta linha de cima para baixo: um, três, três, um. E responde três. Mas a linha do topo é a linha zero. Confira com a conta: quatro vezes três, dividido por dois, dá seis.
+
+Agora o atalho: some uma linha inteira. Um mais quatro mais seis mais quatro mais um dá dezesseis, que é dois elevado a quatro. Na linha ene, a soma é dois elevado a ene.
+
+Funciona porque a linha quatro conta todos os grupos que dá para formar com quatro pessoas, de qualquer tamanho. E cada pessoa entra ou não entra: duas opções para cada uma, dois vezes dois vezes dois vezes dois. Esse total inclui o grupo vazio, sem ninguém: se o grupo não pode ficar vazio, tire um. Compensa quando a pergunta é quantos grupos no total. Para um tamanho só, faça a combinação.
+
+Hora de testar. A linha cinco é um, cinco, dez, dez, cinco, um. Monte a linha seis. Depois, confira o binomial de seis sobre dois pela conta e a soma da linha pelo atalho.
+
+Pause o vídeo e tente.
+
+Vamos lá. As pontas são um. No meio, um mais cinco, seis; cinco mais dez, quinze; dez mais dez, vinte. Depois, a linha se repete ao contrário, como na troca de quem vai por quem fica: um, seis, quinze, vinte, quinze, seis, um.
+
+Seis vezes cinco dá trinta, e dividido por dois fatorial dá quinze: bate com a posição dois. E a soma: dois elevado a seis dá sessenta e quatro. Some a linha e confira: sessenta e quatro.
+
+Resumindo: o binomial é a combinação escrita em pé, e no triângulo, cada número é a soma dos dois de cima.
+
+Na próxima aula, esses números resolvem abre parênteses, xis mais dois, fecha parênteses, elevado a quatro, sem multiplicar parêntese por parêntese: é o binômio de Newton. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

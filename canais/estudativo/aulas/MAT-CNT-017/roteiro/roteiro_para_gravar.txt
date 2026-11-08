@@ -1,0 +1,41 @@
+Uma urna tem três bolas azuis e duas vermelhas. Você tira duas bolas. A chance de ambas serem azuis depende de um detalhe: a primeira bola volta para a urna antes da segunda? Se volta, a chance dá trinta e seis por cento. Se não volta, dá trinta.
+
+Até o fim desta aula, você calcula sorteios em sequência, devolvendo ou não, e leva um atalho de prova.
+
+Você vai usar duas coisas: eventos independentes multiplicam as chances, e na probabilidade condicional, a pista vira o novo total. Se faltar alguma, procure no canal.
+
+Primeiro, com reposição. Repor quer dizer devolver a bola à urna antes do próximo sorteio. Na primeira tirada, são três azuis em cinco bolas: três quintos.
+
+A bola volta, e a urna fica igualzinha ao começo. Na segunda, de novo três quintos. A primeira tirada não muda a segunda: são independentes. Três quintos vezes três quintos dá nove vinte e cinco avos, que são trinta e seis por cento.
+
+Agora, sem reposição: a primeira bola fica fora da urna. Na primeira tirada, a urna ainda está completa: três quintos.
+
+Saiu azul, e essa é a pista. Na urna, sobram quatro bolas, e só duas azuis. A chance da segunda azul, sabendo que a primeira foi azul, é dois quartos.
+
+Multiplique: três quintos vezes dois quartos dá seis vinte avos. Dividindo por dois: três décimos, que são trinta por cento. Caiu porque cada azul que sai deixa a urna com menos azuis.
+
+Teste com duas vermelhas. Com reposição: dois quintos vezes dois quintos dá quatro vinte e cinco avos, dezesseis por cento. Sem reposição: dois quintos vezes um quarto dá dois vinte avos, que é um décimo: dez por cento. Sem reposição, a segunda tirada depende da primeira: os eventos são dependentes.
+
+A regra vale sempre: multiplique as chances de cada tirada. O que muda é a urna. Com reposição, ela fica igual. Sem reposição, ela perde a bola que saiu.
+
+E um detalhe de prova: tirar duas bolas de uma vez é o mesmo que sem reposição. A primeira bola não volta para a urna antes da segunda.
+
+O erro comum aparece no sem reposição. A pessoa lembra que a urna perdeu uma bola, mas tira só do total. Faz três quintos vezes três quartos, que dá nove vinte avos. Só que a bola que saiu era azul. Ela sai de cima e de baixo: dois quartos.
+
+Agora o atalho. Sem reposição, tirando sempre a mesma cor, cada fração nova desce um em cima e um embaixo. Três azuis seguidas: três quintos, dois quartos e um terço.
+
+Em cima, três vezes dois vezes um dá seis. Embaixo, cinco vezes quatro vezes três dá sessenta. Seis sessenta avos, que é um décimo.
+
+Funciona porque cada bola que sai é daquela cor e faz parte do total. Não vale quando a cor muda. Azul e depois vermelha é três quintos vezes dois quartos, porque nenhuma vermelha saiu: só o total desceu.
+
+Hora de testar. Uma caixa tem dez lâmpadas, e três estão queimadas. Você tira duas, uma depois da outra. Qual a chance de ambas funcionarem, com reposição e sem reposição?
+
+Pause o vídeo e tente.
+
+Vamos lá. Funcionam sete das dez. Com reposição: sete décimos vezes sete décimos dá quarenta e nove centésimos, ou quarenta e nove por cento.
+
+Sem reposição: na segunda tirada, sobram seis boas em nove lâmpadas. Sete décimos vezes seis nonos dá quarenta e dois noventa avos. Dividindo por seis: sete quinze avos, um pouco menos de quarenta e sete por cento.
+
+Resumindo: multiplique as chances de cada tirada. Sem reposição, a bola que saiu sai do total e da sua cor.
+
+Na próxima aula, essas contas viram uma árvore de probabilidades: você multiplica ao longo de cada caminho, soma os caminhos e calcula até a chance de um filho herdar uma característica dos pais. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

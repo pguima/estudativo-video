@@ -1,0 +1,41 @@
+Quantos anagramas tem a palavra arara? Cinco letras, então cinco fatorial, que dá cento e vinte? Não. São só dez.
+
+Até o fim desta aula, você conta anagramas com letras repetidas, pessoas em volta de uma mesa redonda e leva um atalho de prova.
+
+Você vai usar a permutação: coisas todas diferentes em fila dão o fatorial da quantidade. E vai cortar fatoriais numa divisão. Se faltar alguma, procure no canal.
+
+Comece pequeno: a palavra ana. Finja que os ás são diferentes: um vermelho e um azul. Com três letras diferentes, seriam três fatorial, que dá seis anagramas.
+
+Agora apague as cores. Á vermelho, ene, á azul e á azul, ene, á vermelho viram a mesma palavra. Cada anagrama de verdade foi contado duas vezes: uma para cada ordem dos ás.
+
+Então divida: seis dividido por dois dá três. São eles: á, ene, á. Á, á, ene. Ene, á, á.
+
+A regra: faça a conta como se tudo fosse diferente e divida pelo fatorial de cada repetição. Letra que aparece três vezes: divide por três fatorial. Letra que aparece duas vezes: divide por dois fatorial. Por que fatorial? Três ás coloridos trocam de lugar de três fatorial jeitos, e todos esses jeitos dão a mesma palavra.
+
+Em arara, o á aparece três vezes, e o erre aparece duas. Fica cinco fatorial dividido por três fatorial vezes dois fatorial.
+
+Corte como você já sabe: cinco fatorial dividido por três fatorial deixa cinco vezes quatro, que dá vinte. Vinte dividido por dois fatorial, que é dois, dá dez anagramas.
+
+O erro comum é dividir só por uma repetição. A pessoa vê os três ás, faz cinco fatorial dividido por três fatorial e para em vinte. Mas os erres também trocam de lugar sem mudar a palavra. Toda letra repetida divide. Sem dividir pelo erre, cada palavra aparece duas vezes, uma para cada ordem dos erres.
+
+Agora, a mesa redonda. Cinco pessoas vão sentar em volta de uma mesa redonda. Ali, o que importa é quem está à direita e quem está à esquerda de cada um.
+
+Imagine todo mundo levantando e sentando uma cadeira para a direita, junto. Cada pessoa continua com o mesmo vizinho à direita e o mesmo vizinho à esquerda. Para a mesa, é a mesma arrumação. Gire de novo, e de novo: depois de cinco giros, todo mundo volta ao lugar.
+
+Em fila, seriam cinco fatorial, que dá cento e vinte. Mas cada arrumação da mesa aparece ali cinco vezes, uma para cada giro. Cento e vinte dividido por cinco dá vinte e quatro.
+
+Agora o atalho: fixe uma pessoa. Ela senta em qualquer lugar e vira a referência. As outras quatro fazem uma fila a partir dela: quatro fatorial dá vinte e quatro. Mesma resposta, sem dividir.
+
+Funciona porque fixar uma pessoa elimina os giros. Por isso, mesa redonda é o fatorial de um a menos: oito pessoas, sete fatorial. Não vale se as cadeiras forem numeradas: aí, girar muda a arrumação, e a conta volta a ser a de fila.
+
+Hora de testar. Quantos anagramas tem a palavra banana? E de quantas formas seis amigos podem sentar em volta de uma mesa redonda?
+
+Pause o vídeo e tente.
+
+Vamos lá. Banana tem seis letras: o á aparece três vezes, o ene, duas vezes, e o bê, uma. Seis fatorial dividido por três fatorial deixa seis vezes cinco vezes quatro, que dá cento e vinte. Dividido por dois dá sessenta anagramas.
+
+Na mesa, fixe um amigo. Os outros cinco fazem fila a partir dele: cinco fatorial dá cento e vinte formas. Em fila, seriam seis fatorial, que dá setecentos e vinte: seis vezes mais.
+
+Resumindo: letra repetida, divida pelo fatorial da repetição. Mesa redonda, fixe uma pessoa e faça a fila com as outras.
+
+Até aqui, todo mundo entrava na fila. Na próxima aula, você escolhe só alguns: o pódio, com três corredores entre oito, e testa se trocar a ordem muda o resultado. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

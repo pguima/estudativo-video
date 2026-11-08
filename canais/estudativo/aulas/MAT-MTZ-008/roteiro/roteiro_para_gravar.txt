@@ -1,0 +1,37 @@
+Dois xis mais ípsilon igual a cinco; xis mais ípsilon igual a três. Dá para resolver esse sistema só com determinantes, sem somar nem substituir nada. Xis igual a dois, ípsilon igual a um.
+
+Até o fim desta aula, você escreve um sistema como multiplicação de matrizes, resolve pela regra de Cramer e ainda leva um atalho de prova.
+
+Lembre duas coisas: multiplicar matrizes é linha por coluna, e o determinante da dois por dois é a principal menos a secundária. Se faltar alguma, procure no canal.
+
+Separe o sistema em três partes. Os números da frente das letras formam a matriz A: dois, um, um, um. As letras formam a coluna X: xis e ípsilon. Os números depois do igual formam a coluna B: cinco e três.
+
+Agora, A vezes X, linha por coluna. Linha um: dois vezes xis, mais um vezes ípsilon. Linha dois: um vezes xis, mais um vezes ípsilon. É o sistema de volta. Por isso, ele se escreve A vezes X igual a B.
+
+A regra de Cramer usa três determinantes. D, o determinante de A: dois vezes um, menos um vezes um: um.
+
+D xis: troque a coluna do xis pela coluna B. Fica cinco, um, três, um. Cinco vezes um, menos um vezes três: dois.
+
+D ípsilon: troque a coluna do ípsilon pela coluna B. Fica dois, cinco, um, três. Dois vezes três, menos cinco vezes um: um.
+
+Xis é D xis dividido por D: dois dividido por um, dois. Ípsilon é D ípsilon dividido por D: um dividido por um, um. Confira: duas vezes dois, mais um, cinco. Bateu.
+
+Tem outro caminho, com a inversa. Essa matriz A é a mesma da aula de inversa, e a inversa dela é um, menos um, menos um, dois. Multiplicando pela inversa, o A some, e X é a inversa vezes B. Linha um: cinco menos três, dois. Linha dois: menos cinco mais seis, um.
+
+E se D der zero? Cramer não funciona: dividiria por zero. Aí o sistema tem infinitas soluções ou nenhuma, e isso é assunto de outra aula.
+
+Cuidado com o erro mais comum: trocar a coluna errada. Quem troca a coluna do ípsilon achando que é a do xis acha xis igual a um. Mas, com xis igual a um, a segunda equação dá ípsilon igual a dois, e a primeira fica dois mais dois, quatro, e não cinco. A primeira coluna é do xis; a segunda, do ípsilon.
+
+Agora o atalho: se a pergunta quer só uma letra, calcule só dois determinantes: D e o daquela letra. Funciona porque cada letra tem a sua fração, separada das outras. No três por três, Cramer pede quatro Sarrus: aí, escalonar costuma ser mais rápido.
+
+Hora de testar. Pela regra de Cramer, resolva: três xis mais dois ípsilon igual a doze; xis menos ípsilon igual a menos um.
+
+Pause o vídeo e tente.
+
+Vamos lá. D: três vezes menos um, menos dois vezes um: menos três menos dois, menos cinco. D xis: doze vezes menos um, menos dois vezes menos um: menos doze mais dois, menos dez. D ípsilon: três vezes menos um, menos doze vezes um: menos três menos doze, menos quinze.
+
+Xis: menos dez dividido por menos cinco, dois. Ípsilon: menos quinze dividido por menos cinco, três. Sinais iguais na divisão dão positivo. Confira: três vezes dois, mais duas vezes três: doze. Bateu.
+
+Resumindo: o sistema é A vezes X igual a B. Cada letra é o seu determinante dividido por D. E com D zero, Cramer não serve.
+
+A próxima aula é de prática: você resolve e discute sistemas de até três equações em questões no estilo de prova. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

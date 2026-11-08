@@ -1,0 +1,43 @@
+Um líquido tem pê agá três. Outro tem pê agá cinco. A diferença parece pequena: só dois pontos. Mas o primeiro é cem vezes mais ácido que o segundo.
+
+Isso acontece porque o pê agá é uma escala logarítmica. Até o fim desta aula, você compara acidez, terremotos e barulho com a fórmula que a questão der, e leva um atalho de prova.
+
+Você precisa de duas coisas: o logaritmo como expoente, com a base dez escondida quando não aparece; e as propriedades, como logaritmo de uma divisão virar diferença de logaritmos. Se faltar alguma, procure no canal.
+
+Por que medir com logaritmo? Algumas grandezas vão de números minúsculos a números gigantes. O logaritmo na base dez conta os zeros. Logaritmo de cem dá dois. De mil dá três. De um milhão dá seis. Na escala, subir um ponto é multiplicar por dez.
+
+Comece pelo pê agá, que mede a acidez. A fórmula é pê agá igual a menos o logaritmo da concentração de hidrogênio. Essa concentração mede quanto hidrogênio há em cada litro, na forma que deixa o líquido ácido. Mais hidrogênio, mais ácido.
+
+Se a concentração é dez elevado a menos três, o logaritmo dela dá menos três, e o pê agá dá três. O menos da fórmula está lá só para o pê agá sair positivo.
+
+Pê agá cinco é concentração dez elevado a menos cinco. Divida a concentração do pê agá três pela do pê agá cinco. Mesma base, a divisão subtrai os expoentes: de menos cinco até menos três, são dois passos. Dez ao quadrado dá cem. Pê agá menor, mais ácido. Cada ponto a menos multiplica a acidez por dez.
+
+No terremoto, a escala Richter. Uma fórmula comum nas questões é eme igual ao logaritmo da amplitude dividida por uma amplitude de referência. Eme é a magnitude. A amplitude, a letra á maiúscula na tela, é o tamanho do tremor registrado no aparelho. A de referência, com um zero pequeno embaixo, é fixa.
+
+Compare magnitude sete com magnitude cinco. Sete menos cinco dá dois. Pela propriedade, cada magnitude é o logaritmo da amplitude menos o logaritmo da referência. Na subtração, a referência se cancela, e sobra o logaritmo da amplitude do sete dividida pela do cinco, igual a dois.
+
+Logaritmo igual a dois quer dizer dez ao quadrado. A amplitude do terremoto sete é cem vezes a do cinco.
+
+No som, a fórmula é beta igual a dez vezes o logaritmo da intensidade dividida por uma intensidade de referência. Beta é o nível em decibéis. A intensidade, a letra i na tela, mede a energia do som que chega ao ouvido, e a de referência, com o zero pequeno, é fixa: o som mais fraco que o ouvido percebe. Repare no dez na frente: ele muda a conta.
+
+Pense num som dez decibéis mais alto que outro. A diferença dos níveis fica dez vezes o logaritmo da divisão das intensidades, igual a dez. Divida por dez: o logaritmo dá um. Então a intensidade fica dez vezes maior. Com vinte decibéis a mais, a intensidade fica cem vezes maior.
+
+O erro comum é ler a escala como uma régua comum. A pessoa vê pê agá três e pê agá cinco, calcula cinco menos três, que dá dois, e responde duas vezes mais ácido.
+
+Mas cada ponto é uma multiplicação por dez, não uma soma. Dois pontos são dez vezes dez, que dá cem vezes.
+
+Agora o atalho: a diferença vira expoente do dez. Pê agá e Richter: diferença dois vira dez ao quadrado, que dá cem vezes. Decibéis: divida a diferença por dez antes. Trinta decibéis a mais dão expoente três, e dez ao cubo dá mil vezes.
+
+Funciona porque a fórmula usa logaritmo na base dez, e a diferença de logaritmos é o logaritmo da divisão. Não compensa quando a diferença não é inteira, como pê agá três contra três vírgula três. Aí o expoente é quebrado, e a conta pede o logaritmo de dois, assunto de outra aula. E leia sempre a fórmula do enunciado: se o número na frente mudar, o atalho muda junto.
+
+Hora de testar, com valores criados para esta aula. Um liquidificador ligado chega a noventa decibéis. Uma conversa, a sessenta. Com beta igual a dez vezes o logaritmo da intensidade dividida pela de referência, quantas vezes a intensidade do liquidificador é maior?
+
+Pause o vídeo e tente.
+
+Vamos lá. A diferença: noventa menos sessenta dá trinta decibéis. Tire o dez da frente: trinta dividido por dez dá três. O logaritmo da divisão das intensidades dá três. Dez ao cubo dá mil. Mil vezes mais intenso.
+
+Repare: o nível subiu de sessenta para noventa, só a metade a mais. A intensidade ficou mil vezes maior. Essa é a força da escala logarítmica.
+
+Resumindo: na escala logarítmica, cada ponto multiplica por dez. Ache a diferença, ajuste pelo número da fórmula, e ela vira o expoente do dez.
+
+Na próxima aula, é a sua vez: questões para praticar logaritmos, com propriedades, equações e escalas de ciências. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

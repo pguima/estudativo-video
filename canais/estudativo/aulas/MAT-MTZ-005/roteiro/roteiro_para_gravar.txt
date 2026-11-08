@@ -1,0 +1,49 @@
+Cinco questões de matrizes e determinantes, criadas para esta aula. Em cada uma, pause o vídeo e resolva antes de ver a resposta. Errar aqui não custa nada, e ensina mais do que só assistir.
+
+Você vai usar quatro ferramentas: o endereço a i jota, linha antes da coluna; a multiplicação linha por coluna; o determinante, o que desce menos o que sobe; e a receita da inversa. Se faltar alguma, procure no canal.
+
+Questão um. A matriz A é dois por dois, com a i jota igual a i vezes jota. B é um, menos um, zero, dois. Calcule a transposta de A, mais três vezes B.
+
+Pause o vídeo e tente.
+
+Vamos lá. Montando A: um vezes um, um; um vezes dois, dois; dois vezes um, dois; dois vezes dois, quatro. E a transposta? I vezes jota dá o mesmo que jota vezes i, então a transposta é a própria A. Nem precisa montar.
+
+Três vezes B: três, menos três, zero, seis. Somando lugar com lugar: um mais três, quatro; dois com menos três, menos um; dois mais zero, dois; quatro mais seis, dez.
+
+Questão dois. A é um, dois, três, menos um. B é dois, zero, um, quatro. Calcule A vezes B.
+
+Pause o vídeo e tente.
+
+Linha por coluna. Linha um com coluna um: um vezes dois, mais dois vezes um: quatro. Linha um com coluna dois: um vezes zero, mais dois vezes quatro: oito.
+
+Linha dois com coluna um: três vezes dois dá seis, menos um vezes um dá menos um: seis menos um, cinco. Linha dois com coluna dois: três vezes zero dá zero, menos um vezes quatro dá menos quatro. Quatro, oito, cinco, menos quatro.
+
+Agora um atalho de prova: em questão com alternativas, você não precisa calcular o produto inteiro. Procure um elemento que muda de uma alternativa para outra e calcule só ele: uma linha com uma coluna.
+
+Funciona porque cada elemento do produto depende só de uma linha e de uma coluna. Se duas alternativas tiverem esse mesmo elemento, calcule mais um para desempatar.
+
+Questão três. Calcule o determinante de um, zero, dois; menos um, três, um; dois, um, zero.
+
+Pause o vídeo e tente.
+
+É Sarrus. Copie as duas primeiras colunas. Descendo: um vezes três vezes zero, zero; zero vezes um vezes dois, zero; dois vezes menos um vezes um, menos dois. Total descendo: menos dois.
+
+Subindo: dois vezes três vezes dois, doze; um vezes um vezes um, um; zero vezes menos um vezes zero, zero. Total subindo: treze. Menos dois, menos treze: menos quinze.
+
+Questão quatro. A matriz três, um, cinco, dois tem inversa? Se tiver, ache a inversa.
+
+Pause o vídeo e tente.
+
+Primeiro, o determinante: três vezes dois, menos um vezes cinco: seis menos cinco, um. Não é zero: a inversa existe. E com determinante um, ela sai de cabeça: troque a principal, dois e três; mude o sinal da secundária, menos um e menos cinco.
+
+A inversa é dois, menos um, menos cinco, três. Conferindo a primeira conta: três vezes dois, mais um vezes menos cinco: seis menos cinco, um. Bateu.
+
+Última questão, rápida. A é dois por três, e B é três por dois. Existe A vezes B? E B vezes A? Se existirem, de que tamanho?
+
+Pause o vídeo e tente.
+
+Escreva os tamanhos lado a lado. A vezes B: dois por três, vezes três por dois. Os do meio, três e três, são iguais: existe. Os de fora dão dois por dois. B vezes A: três por dois, vezes dois por três. Dois e dois: existe, e é três por três. Os dois produtos existem, mas nem têm o mesmo tamanho.
+
+Resumindo: linha antes da coluna, produto é linha por coluna, determinante é o que desce menos o que sobe, e determinante zero não tem inversa.
+
+Na próxima aula, você resolve sistemas com três equações e três letras, eliminando uma letra de cada vez. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,39 @@
+Uma comissão com dois homens, escolhidos entre cinco, e duas mulheres, escolhidas entre quatro. Quem soma as escolhas chega em dezesseis. A resposta certa é sessenta.
+
+Até o fim desta aula, você monta comissões com regras, resolve o pelo menos um e leva um atalho de prova.
+
+Você vai usar a combinação: o arranjo dividido pelo fatorial de quantos foram escolhidos. E duas ideias das casinhas: etapas que você faz todas se multiplicam, e casos que não acontecem juntos se somam. Se faltar alguma, procure no canal.
+
+Volte à comissão. Ela é montada em etapas: escolher os homens e escolher as mulheres. Você faz todas as etapas, então multiplique.
+
+Homens: dois entre cinco. Ordem não importa, é combinação. Cinco vezes quatro dá vinte. Dividido por dois fatorial dá dez.
+
+Mulheres: duas entre quatro. Quatro vezes três dá doze. Dividido por dois fatorial dá seis.
+
+Cada dupla de homens combina com cada dupla de mulheres. Dez vezes seis dá sessenta comissões. Somar daria dezesseis, que é só quantas duplas existem, sem formar comissão nenhuma.
+
+Agora, o pelo menos um. O mesmo grupo: cinco homens e quatro mulheres, nove pessoas. Quantas comissões de três pessoas têm pelo menos uma mulher? No total, sem regra nenhuma, são três entre nove: nove vezes oito vezes sete dá quinhentos e quatro, e dividido por três fatorial dá oitenta e quatro.
+
+Pelo menos uma quer dizer uma, duas ou três mulheres. Cada comissão cai em um caso só, então conte cada caso e some.
+
+Uma mulher: quatro opções, e dois homens entre cinco, que dá dez. Quatro vezes dez dá quarenta. Duas mulheres: seis duplas, vezes cinco opções de homem, dá trinta. Três mulheres: só quatro comissões, porque escolher três entre quatro é deixar uma de fora.
+
+Quarenta mais trinta dá setenta. Mais quatro dá setenta e quatro comissões.
+
+O erro comum é garantir uma mulher e completar com qualquer pessoa. Quatro opções de mulher, vezes duas pessoas entre as oito que sobram, que dá vinte e oito. Quatro vezes vinte e oito dá cento e doze. Mais que o total, que é oitenta e quatro! A comissão Ana, Bia e Caio foi contada duas vezes: uma com Ana garantida, outra com Bia garantida.
+
+Agora o atalho: conte tudo e tire o que não serve. O contrário de pelo menos uma mulher é nenhuma mulher: só homens. Três homens entre cinco é deixar dois de fora: cinco vezes quatro dividido por dois dá dez. Oitenta e quatro menos dez dá setenta e quatro. O mesmo resultado, em uma linha.
+
+Funciona porque cada comissão ou tem mulher, ou não tem. Compensa sempre que aparece pelo menos um: o que não serve é um caso só, o nenhum. Não compensa quando a pergunta é exata, como exatamente uma mulher: aí, conte direto, que dá quarenta.
+
+Hora de testar. Um grupo tem quatro professores e seis alunos. Quantas comissões de dois professores e dois alunos existem? E quantas comissões de três pessoas têm pelo menos um professor?
+
+Pause o vídeo e tente.
+
+Vamos lá. Professores: quatro vezes três dividido por dois dá seis. Alunos: seis vezes cinco dividido por dois dá quinze. As etapas se multiplicam: seis vezes quinze dá noventa comissões.
+
+No pelo menos um, conte tudo: três entre dez. Dez vezes nove vezes oito dá setecentos e vinte, e dividido por seis dá cento e vinte. O que não serve: nenhum professor, só alunos. Três entre seis: seis vezes cinco vezes quatro dividido por seis dá vinte. Cento e vinte menos vinte dá cem. Faz sentido: a parte que serve é menor que o total.
+
+Resumindo: grupos diferentes são etapas: multiplique as combinações. Pelo menos um? Conte tudo e tire o nenhum.
+
+Na próxima aula, é a sua vez de praticar: você vai decidir se multiplica, permuta, arranja ou combina, em problemas com regras no meio. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

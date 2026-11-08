@@ -1,0 +1,35 @@
+Um silo de fazenda: um cilindro com um telhado em forma de cone. Não existe fórmula de silo. E nem precisa: você corta o silo em sólidos que já conhece.
+
+Até o fim desta aula, você calcula o volume de sólidos montados com peças, com e sem furo, e leva um atalho de prova.
+
+Você precisa de três volumes: o cilindro, pi érre ao quadrado vezes agá; o cone, um terço do cilindro de mesma base e mesma altura; e o cubo, aresta vezes aresta vezes aresta. Se faltar algum, procure no canal.
+
+O método tem três passos. Passo um: separe o sólido em peças conhecidas. Passo dois: calcule o volume de cada peça, cada uma com a sua altura. Passo três: some o que foi juntado e subtraia o que foi tirado.
+
+O silo: um cilindro de raio dois metros e altura seis, e em cima um cone de mesmo raio, com três metros de altura. Use pi igual a três.
+
+Base: três vezes dois ao quadrado dá doze metros quadrados. Cilindro e cone têm essa mesma base. Cilindro: doze vezes seis dá setenta e dois. Cone: doze vezes três dá trinta e seis, e dividido por três dá doze.
+
+As peças foram juntadas, então some: setenta e dois mais doze dá oitenta e quatro. O silo guarda oitenta e quatro metros cúbicos de grãos.
+
+Agora o contrário: tirar. Uma peça de metal é um cubo de dez centímetros de aresta, com um furo cilíndrico de dois centímetros de raio, que atravessa a peça de lado a lado.
+
+Cubo: dez vezes dez vezes dez dá mil centímetros cúbicos. O furo atravessa o cubo, então a altura do furo é dez. Furo: dois ao quadrado dá quatro, e três vezes quatro vezes dez dá cento e vinte. O furo foi tirado, então subtraia: mil menos cento e vinte dá oitocentos e oitenta centímetros cúbicos de metal.
+
+O erro mais comum é usar a altura total numa peça só. O silo tem nove metros, do chão até a ponta. Quem põe nove no cilindro faz doze vezes nove, que dá cento e oito, e, com o cone, chega a cento e vinte. Mas o cilindro de nove metros já ocupa o lugar do cone. Cada peça usa só a sua altura.
+
+Agora o atalho, para cilindro e cone de mesmo raio. O cone vale um cilindro com um terço da altura dele. Então junte as alturas: um terço de três dá um, e seis mais um dá sete. Doze vezes sete dá oitenta e quatro. Uma conta só.
+
+Funciona porque a base é a mesma: doze vezes seis, mais doze vezes um, é doze vezes sete. Não compensa quando os raios são diferentes, como um telhado mais largo que a parede: aí, calcule peça por peça.
+
+Hora de testar. Um tubo de concreto tem forma de cilindro, com cinquenta centímetros de raio e um metro de comprimento. Por dentro, passa um furo cilíndrico de quarenta centímetros de raio, de ponta a ponta. Use pi igual a três. Quantos litros de concreto formam o tubo?
+
+Pause o vídeo e tente.
+
+Vamos lá. Trabalhe em decímetros, porque o litro é um decímetro cúbico. Dez centímetros fazem um decímetro. Raio de fora: cinquenta centímetros são cinco decímetros. Raio do furo: quarenta centímetros são quatro. Comprimento: um metro são dez decímetros. Cilindro cheio: três vezes vinte e cinco vezes dez dá setecentos e cinquenta.
+
+Furo: três vezes dezesseis vezes dez dá quatrocentos e oitenta. O furo foi tirado: setecentos e cinquenta menos quatrocentos e oitenta dá duzentos e setenta. São duzentos e setenta litros de concreto. Confira pela ponta do tubo, que é uma coroa, o anel entre o círculo de fora e o furo: vinte e cinco menos dezesseis dá nove, e três vezes nove dá vinte e sete, e vinte e sete vezes dez dá duzentos e setenta. Bateu.
+
+Resumindo: corte em peças conhecidas, cada peça com a sua altura, some o que junta e subtraia o que tira.
+
+Na próxima aula, a água mede o volume para você: você descobre o volume de uma pedra pelo quanto a água sobe num aquário e prevê se o líquido transborda. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

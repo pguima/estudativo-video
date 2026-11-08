@@ -1,0 +1,41 @@
+Dois dados. Qual a chance de a soma dar sete? Muita gente pensa: as somas vão de dois a doze. São onze somas. Então, um onze avos. Errado. A chance é um sexto.
+
+Até o fim desta aula, você usa a contagem para achar probabilidades e leva um atalho para sorteios.
+
+Você vai usar a probabilidade: favoráveis sobre possíveis, quando todos os resultados têm a mesma chance. E as ferramentas de contagem: as casinhas e a combinação. Se faltar alguma, procure no canal.
+
+Pense nos dados com cores diferentes: um branco e um vermelho. O branco tem seis resultados. O vermelho também tem seis. Cada dado é uma etapa, e o resultado precisa de cada um deles: seis vezes seis dá trinta e seis resultados possíveis.
+
+Veja na tabela. Nas linhas, o dado branco. Nas colunas, o vermelho. Cada quadradinho é um resultado, como branco três e vermelho quatro. Todos têm a mesma chance.
+
+Agora, os que somam sete. Branco um e vermelho seis. Branco dois e vermelho cinco. Três e quatro. Quatro e três. Cinco e dois. Seis e um. Na tabela, é uma diagonal inteira: seis quadradinhos.
+
+Seis favoráveis em trinta e seis possíveis: seis trinta e seis avos. Divida em cima e embaixo por seis, e dá um sexto.
+
+E por que o um onze avos do começo errou? Porque as somas não têm a mesma chance. Soma dois só sai com um e um: um quadradinho. Soma sete sai de seis jeitos. Probabilidade se conta em resultados de mesma chance, não em somas.
+
+A contagem também resolve sorteios. Um grupo de oito pessoas vai sortear uma comissão de três. Qual a chance de Ana estar na comissão?
+
+Possíveis: comissões de três entre oito. A ordem não importa: combinação. Oito vezes sete vezes seis, dividido por três fatorial, dá cinquenta e seis.
+
+Favoráveis: as comissões com Ana dentro. Ana já tem lugar. Falta escolher duas pessoas entre as sete que sobram: sete vezes seis dividido por dois dá vinte e um.
+
+Vinte e um cinquenta e seis avos. Divida em cima e embaixo por sete, e dá três oitavos. Um oitavo é doze vírgula cinco por cento. Três oitavos é o triplo: doze vírgula cinco mais doze vírgula cinco dá vinte e cinco, e mais doze vírgula cinco dá trinta e sete vírgula cinco por cento.
+
+O erro comum é tratar os dados como se fossem iguais. A pessoa lista um e seis. Dois e cinco. Três e quatro. E para aí. Dá três trinta e seis avos, que simplifica para um doze avos. Mas branco um com vermelho seis é diferente de branco seis com vermelho um. Na tabela, são quadradinhos diferentes.
+
+Agora o atalho para sorteios: a chance de uma pessoa ser sorteada é vagas sobre pessoas. Três vagas para oito pessoas: três oitavos. Sem combinação nenhuma.
+
+Funciona porque o sorteio é justo: ninguém tem mais chance que ninguém, e as vagas se dividem igualmente entre todos. Não compensa quando a pergunta envolve mais de uma pessoa, como Ana e Bia juntas: aí, conte favoráveis e possíveis.
+
+Hora de testar. Dois dados: qual a chance de a soma dar oito? E seis amigos sorteiam dois ingressos para um show. Qual a chance de Ana e Bia serem as sorteadas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Soma oito: dois e seis. Três e cinco. Quatro e quatro. Cinco e três. Seis e dois. São cinco favoráveis em trinta e seis possíveis. A chance é cinco trinta e seis avos, uma fração que não simplifica. Quatro e quatro aparece uma vez só: trocar as cores não muda nada.
+
+Nos ingressos, os possíveis são duplas entre seis amigos. Seis vezes cinco dividido por dois dá quinze. Favoráveis: só uma dupla, Ana com Bia. A chance é um quinze avos. Aqui o atalho não serve: a pergunta envolve duas pessoas ao mesmo tempo.
+
+Resumindo: conte os possíveis, conte os favoráveis e divida. Sempre com resultados de mesma chance.
+
+Na próxima aula, a pergunta tem um pelo menos: a chance de sair pelo menos uma cara em três moedas. E o caminho mais curto é olhar para o que não pode acontecer. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

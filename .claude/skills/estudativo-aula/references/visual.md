@@ -81,6 +81,31 @@ Texto sobre esfera ou faixa da matéria usa `E.SOBRE`, nunca branco fixo: Redaç
 | `E.reta(c, t, t0, x0, x1, y, vmin, vmax, marcas, fmt, tm=...)` | Reta numérica; devolve a função valor → x. `tm` = instante de cada marca |
 | `E.salto(c, t, t0, x0, x1, y, alto, rotulo=...)` | Arco com seta sobre a reta: dívida e pagamento |
 | `E.moeda(c, cx, cy, r, s, a)` | Moeda na cor da matéria (`"25¢"`) |
+| `P = E.plano(c, t, t0, x, y, w, h, xmin, xmax, ymin, ymax, passo=1, grade=True, marcas_x=..., marcas_y=...)` | Plano cartesiano na caixa (x, y, w, h), eixos com seta, marcas e grade. Devolve `P`: `P.x(v)`, `P.y(v)`, `P(x, y)` levam valor a pixel |
+| `E.ponto(c, t, t0, P, x, y, rotulo, guias=False, valores=False, lado=(1, -1))` | Ponto no plano, que entra com um salto. `guias` traça o tracejado até os eixos, `valores` escreve x e y na ponta delas. `lado` = de que lado fica o rótulo |
+| `E.curva(c, t, t0, P, f, a, b, d=1.2, rotulo=..., em=(x, y), tracejada=False)` | Gráfico de `f` desenhado da esquerda para a direita. Corta sozinho em assíntota e furo (`1/x`, `math.tan`, `math.log`) |
+| `E.reta_pontos(c, t, t0, P, A, B, rotulos=("A", "B"), rotulo=...)` | Reta por dois pontos, de borda a borda do plano, com os pontos marcados |
+| `E.area(c, t, t0, P, f, a, b, g=None, alfa=0.24)` | Região entre `f` e `g` (ou o eixo x) de a até b, pintada da esquerda para a direita |
+| `E.colunas(c, t, t0, dados, x, y, w, h, destaque=(), deitado=False, eixo_y=False, fmt=...)` | Colunas, ou barras com `deitado=True`. `dados = [(rótulo, valor[, cor])]`. Com `destaque`, só esses índices ficam na cor da matéria e os outros em cinza |
+| `E.serie(c, t, t0, dados, x, y, w, h, vmin=0, vmax=..., marcas=..., eixos=True)` | Gráfico de linha. A linha cresce e cada ponto acende quando ela chega. Para uma segunda série, chame de novo com `eixos=False` |
+| `E.pizza(c, t, t0, dados, cx, cy, r, rosca=0, destaque=(), casas=0)` | Setores girando a partir do alto, com rótulo e porcentagem por fora. `rosca` abre o miolo. Os índices de `destaque` saem um pouco do centro |
+| `E.histograma(c, t, t0, limites, freqs, x, y, w, h, poligono=False)` | Classes coladas com rótulo nos limites (`limites` tem um item a mais que `freqs`). `poligono` traça o polígono de frequências |
+| `E.segmento(c, t, t0, A, B, medida, rotulos=("A", "B"), lado=1, cota=False, tracejado=False)` | Segmento que cresce, com a medida ao lado. `cota` faz a linha de cota afastada, como no desenho técnico |
+| `E.angulo(c, t, t0, V, A, B, rotulo, r=64, reto=None, dentro=False)` | Ângulo AVB com arco e rótulo na bissetriz. O ângulo de 90° vira quadradinho sozinho |
+| `E.poligono(c, t, t0, pts, vertices, lados=..., angulos=..., iguais=..., retos=(), tv/tl/ta=...)` | Polígono que se desenha em volta, com nomes, medidas dos lados (`lados[i]` vai de `pts[i]` a `pts[i+1]`), ângulos, tracinhos de lados iguais e ângulos retos. É a base das peças abaixo |
+| `E.triangulo(c, t, t0, A, B, C, vertices=("A", "B", "C"), lados=(AB, BC, CA), angulos=..., iguais=..., retos=...)` | Triângulo por três pontos, com os mesmos parâmetros de `E.poligono` |
+| `E.marcas_iguais(c, A, B, n, cor, a)` | n tracinhos no meio de um lado: lados com o mesmo número de tracinhos são iguais |
+| `E.regular(c, t, t0, n, cx, cy, r, vertices, lado=..., raio=..., apotema=...)` | Polígono regular de n lados com um lado deitado embaixo. `raio` e `apotema` traçam esses segmentos a partir do centro |
+| `E.retangulo(c, t, t0, x, y, w, h, base, altura)` e `E.quadrado(c, t, t0, x, y, l, lado)` | Retângulo com a base embaixo e a altura à esquerda. O quadrado já vem com os tracinhos de lados iguais e o ângulo reto |
+| `E.paralelogramo(c, t, t0, x, y, w, h, desloca, base, altura, lado)` e `E.trapezio(c, t, t0, x, y, B, b, h, desloca=None, base_maior=..., base_menor=..., altura=...)` | A altura entra tracejada, com o quadradinho no pé. O trapézio sem `desloca` é isósceles |
+| `E.circulo(c, t, t0, cx, cy, r, o="O", raio=(ang, rót), diametro=(ang, rót), corda=(a1, a2, rót), setor=(a1, a2, rót), arco=(a1, a2, rót), te={...})` | Circunferência que se fecha, com centro, raio, diâmetro, corda, setor pintado e arco em destaque. Ângulos em graus, no sentido anti-horário a partir da direita |
+| `E.paralelas(c, t, t0, cx, cy, w, gap, inclina=60, angulos={k: rót}, cores={k: cor}, ta={k: t})` | Retas paralelas r e s cortadas pela transversal t. Os ângulos vão de 1 a 4 no cruzamento de cima e de 5 a 8 no de baixo, na ordem acima à direita, acima à esquerda, abaixo à esquerda, abaixo à direita |
+| `E.cubo(c, t, t0, x, y, a, medida, todas=False)` e `E.paralelepipedo(c, t, t0, x, y, a, b, h, (larg, prof, alt), vertices=...)` | Perspectiva cavaleira. (x, y) é o canto de baixo à esquerda da frente. As arestas escondidas saem tracejadas |
+| `E.prisma(c, t, t0, cx, cy, n, r, h, altura, aresta)` e `E.piramide(c, t, t0, cx, cy, n, r, h, altura, aresta)` | Base regular de n lados vista de cima e de lado. (cx, cy) é o centro da base. A pirâmide traça a altura tracejada até o centro |
+| `E.cilindro(c, t, t0, cx, cy, r, h, raio, altura)`, `E.cone(c, t, t0, cx, cy, r, h, raio, altura, geratriz)` e `E.esfera(c, t, t0, cx, cy, r, raio)` | Corpos redondos com volume suave. A parte de trás da base (e do equador) sai tracejada. (cx, cy) é o centro da base, ou da esfera |
+| `E.venn(c, t, t0, cx, cy, r, nomes, numeros={reg: n}, pinta=[reg ou (reg, t)], tn={reg: t})` | Venn de 2 ou 3 conjuntos no retângulo do universo. As regiões são nomeadas pela posição do conjunto: `"A"`, `"AB"`, `"ABC"`, `"BC"`…; `""` = fora de todos. O número fica no ponto mais folgado da região |
+| `E.arvore(c, t, t0, niveis, x, y, w, h, ramos=..., folha=fn, tn=[...], destaque=(caminho,))` | Árvore de possibilidades da esquerda para a direita. `niveis[i]` é uma lista igual para todos os nós ou uma função caminho → rótulos (sem reposição). `ramos` faz o mesmo para o texto do ramo (`"f{1}{2}"`). Os caminhos em `destaque` ficam na cor da matéria |
+| `E.trigono(c, t, t0, cx, cy, r, ang, rotulo="θ", seno=True, cosseno=True, tangente=False, notaveis=(30, 45, 60), ts={...})` | Círculo trigonométrico com o ângulo, o ponto P, o cosseno projetado no eixo x e o seno no eixo y. `ang` pode variar com `t` para girar |
 | `palco(c, t)` | Fundo escuro: chame no início do bloco |
 | `E.cortina` | Transição, já chamada no `OVERLAY` |
 

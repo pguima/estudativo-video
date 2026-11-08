@@ -1,0 +1,35 @@
+Vinte alunos, cinco notas diferentes, tudo numa tabela. Muita gente escreve a lista inteira, nota por nota, para achar a mediana. Não precisa. A tabela já entrega as três medidas.
+
+Até o fim desta aula, você tira média, mediana e moda direto da tabela e leva um atalho de prova.
+
+Você precisa de duas coisas: a média ponderada, em que cada valor tem um peso, e a moda e a mediana, com a posição do meio. Se faltar alguma, procure no canal.
+
+Comece pela média. Na tabela, cinco alunos tiraram sete. É como se o sete aparecesse cinco vezes na lista. Então o número de alunos é o peso de cada nota. É uma média ponderada.
+
+Multiplique cada nota pelo número de alunos. Quatro vezes dois dá oito. Seis vezes quatro dá vinte e quatro. Sete vezes cinco dá trinta e cinco. Oito vezes seis dá quarenta e oito. Nove vezes três dá vinte e sete.
+
+Somando tudo, dá cento e quarenta e dois. Agora divida pelo total de alunos, vinte, e não pelo número de linhas. Cento e quarenta e dois dividido por vinte dá sete vírgula um. Confira se faz sentido: a média ficou entre a menor nota e a maior. Se sair fora disso, a conta está errada.
+
+Agora a mediana. São vinte alunos: vinte mais um dá vinte e um, e vinte e um dividido por dois dá dez e meio. A mediana é a média do décimo e do décimo primeiro aluno, com as notas em ordem. E a tabela já vem em ordem, da menor nota para a maior. Ela faz o papel da lista ordenada.
+
+Quem diz onde eles estão é a frequência acumulada. Até a nota seis, são seis alunos. Até a nota sete, são onze. Então do sétimo ao décimo primeiro aluno, todos tiraram sete. A mediana é sete. Se os alunos do meio caíssem em linhas diferentes, você faria a média das duas notas.
+
+E a moda? É a nota que mais alunos tiraram. A maior frequência é seis alunos, na linha da nota oito. A moda é oito. Basta procurar o maior número da coluna de alunos e olhar a nota ao lado.
+
+E aqui mora o erro mais comum: responder seis, que é o número de alunos. A moda é sempre um valor dos dados, a nota, e não quantas vezes ela aparece.
+
+Agora o atalho da média: escolha uma nota do meio como base. Vamos usar o sete. Anote quanto cada nota passa ou falta para o sete, vezes o número de alunos. As notas abaixo de sete somam menos dez. As notas acima somam mais doze. No total, dá dois.
+
+Dois dividido por vinte dá zero vírgula um. Sete mais zero vírgula um dá sete vírgula um. Funciona porque tirar sete de todas as notas tira sete da média. No fim, é só devolver. Com valores pequenos, como número de filhos, não compensa: faça a conta direta.
+
+Hora de testar. A tabela mostra quantos filhos têm vinte famílias de uma rua. Calcule a média, a mediana e a moda do número de filhos.
+
+Pause o vídeo e tente.
+
+Vamos lá. Média: multiplique cada número de filhos pelo número de famílias. Somando os produtos, dá trinta e sete. Trinta e sete dividido por vinte dá um vírgula oitenta e cinco filhos por família.
+
+Mediana: o décimo e o décimo primeiro. Até um filho, são nove famílias. Até dois filhos, nove mais cinco dá catorze. As famílias do meio têm dois filhos: a mediana é dois. Moda: a maior frequência é sete, na linha de um filho. A moda é um filho, não sete.
+
+Resumindo: média, cada valor vezes a frequência, dividido pelo total; mediana, pela acumulada; moda, o valor da linha mais frequente.
+
+Na próxima aula, a pergunta que decide questões: qual medida usar? Você vai ver por que um salário muito alto puxa a média e quase não mexe na mediana. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

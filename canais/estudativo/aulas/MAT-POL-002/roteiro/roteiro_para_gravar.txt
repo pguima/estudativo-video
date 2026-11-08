@@ -1,0 +1,43 @@
+Um hexágono tem seis lados. Quantas diagonais ele tem? Muita gente faz a conta e responde dezoito. É o dobro do certo. E o motivo é que cada diagonal foi contada duas vezes.
+
+Até o fim desta aula, você acha a soma dos ângulos de qualquer polígono, conta as diagonais sem desenhar e leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: os ângulos de dentro de um triângulo somam cento e oitenta graus, e diagonal é o segmento que liga vértices que não são vizinhos. Se faltar alguma, procure no canal.
+
+Polígono é uma figura fechada feita só de segmentos de reta, os lados. O nome conta os lados: três lados, triângulo; quatro, quadrilátero; cinco, pentágono; seis, hexágono; oito, octógono; dez, decágono.
+
+Nesta aula, os polígonos são convexos: sem nenhuma ponta virada para dentro. São os que mais aparecem em prova.
+
+Volte ao hexágono. Escolha um vértice. Dele, trace todas as diagonais que der. O hexágono fica cortado em quatro triângulos.
+
+Repare que os ângulos dos triângulos encaixam certinho nos ângulos do hexágono. Nada sobra, nada falta. Então a soma é quatro vezes cento e oitenta, que dá setecentos e vinte graus.
+
+Por que quatro triângulos, e não seis? Cada lado que não encosta no vértice escolhido ganha um triângulo só dele. Fica de fora o par de lados que encostam no vértice. Seis lados, menos esse par: quatro triângulos.
+
+Com qualquer polígono é assim. Chame de ene o número de lados. O corte dá ene menos dois triângulos. Então a soma dos ângulos internos é ene menos dois, vezes cento e oitenta.
+
+Quadrilátero: quatro menos dois dá dois triângulos, e duas vezes cento e oitenta dá trezentos e sessenta graus. Pentágono: cinco menos dois dá três triângulos, e três vezes cento e oitenta dá quinhentos e quarenta graus.
+
+Agora as diagonais. Fique no mesmo vértice do hexágono. Ele não liga diagonal com ele mesmo, nem com os vizinhos, porque aí seria um lado. Seis menos três dá três diagonais saindo de cada vértice.
+
+São seis vértices, cada um com três diagonais: seis vezes três dá dezoito. Mas a diagonal que vai de á até dê é a mesma que vai de dê até á. Cada uma entrou na conta uma vez em cada ponta. Dezoito dividido por dois dá nove diagonais.
+
+Em fórmula: ene vezes, abre parênteses, ene menos três, fecha parênteses, dividido por dois. Ene é o número de vértices, igual ao de lados. Ene menos três é quantas diagonais saem de cada vértice. E o dividido por dois desconta a contagem dupla.
+
+Voltando ao erro do começo. Quem responde dezoito esqueceu de dividir por dois. Teste num quadrilátero, que dá para contar no dedo: de cada vértice, quatro menos três dá uma diagonal, e quatro vezes um dá quatro. Mas o quadrilátero só tem duas diagonais. Quatro dividido por dois dá dois: agora bateu.
+
+E o atalho prometido, para a soma dos ângulos: cada lado a mais soma cento e oitenta. Triângulo, cento e oitenta. Quadrilátero, trezentos e sessenta. Pentágono, quinhentos e quarenta. Hexágono, setecentos e vinte.
+
+Funciona porque um lado a mais é um triângulo a mais no corte. Não compensa com muitos lados, como num polígono de vinte lados. Aí, use a conta: vinte menos dois dá dezoito, e dezoito vezes cento e oitenta dá três mil duzentos e quarenta graus.
+
+Hora de testar. Um octógono tem oito lados. Quanto somam os seus ângulos internos? E quantas diagonais ele tem?
+
+Pause o vídeo e tente.
+
+Vamos lá. Oito menos dois dá seis triângulos. Seis vezes cento e oitenta dá mil e oitenta graus. Conferindo pelo atalho: o hexágono tem setecentos e vinte; setecentos e vinte mais cento e oitenta dá novecentos; novecentos mais cento e oitenta dá mil e oitenta. Bateu.
+
+Diagonais: de cada vértice saem oito menos três, que dá cinco. Oito vezes cinco dá quarenta. Quarenta dividido por dois dá vinte diagonais.
+
+Resumindo: corte o polígono em triângulos a partir de um vértice. São ene menos dois triângulos, de cento e oitenta graus cada. E, nas diagonais, divida por dois.
+
+Na próxima aula, os polígonos com todos os lados e todos os ângulos iguais. Você vai achar cada ângulo do octógono e descobrir por que hexágonos cobrem um piso sem buracos. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

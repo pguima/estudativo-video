@@ -1,0 +1,35 @@
+Uma pessoa acertou sessenta e duas questões de cem e ficou no percentil noventa. Foi mal ou foi bem? Foi muito bem. E até o fim desta aula você entende por quê.
+
+Você vai dividir os dados em quatro partes, achar os quartis e levar um atalho de prova.
+
+Você precisa de uma coisa: a mediana. Ordene os dados e pegue o meio. Para achar a posição, some um à quantidade e divida por dois. Se faltar, procure no canal.
+
+A mediana corta os dados em duas metades. Os quartis cortam em quatro partes, cada uma com cerca de um quarto dos dados. São três cortes: primeiro, segundo e terceiro quartil.
+
+Veja onze notas na tela, já em ordem. Onze mais um dá doze, e doze dividido por dois dá seis: a mediana está na sexta posição. O valor que está lá é seis. Aqui os números coincidiram, mas a mediana é o valor, não a posição. Ela é o segundo quartil.
+
+Agora, faça a mesma coisa em cada metade. Com quantidade ímpar, a mediana fica de fora das metades. Sobram cinco notas embaixo. A do meio delas é quatro: o primeiro quartil. Sobram cinco notas em cima. A do meio é oito: o terceiro quartil.
+
+Então, o primeiro quartil é a mediana da metade de baixo. O terceiro é a mediana da metade de cima. Cerca de um quarto das notas fica até o primeiro quartil, e cerca de três quartos, até o terceiro. Entre esses cortes fica cerca de metade das notas: a metade do meio. Atenção: livros e planilhas têm outros jeitos de calcular os quartis, que podem dar valores um pouco diferentes. Neste curso, o jeito é sempre este: a mediana de cada metade. Se o enunciado da prova ensinar outro, siga o enunciado.
+
+E o percentil? É a mesma ideia, cortando em cem partes. O percentil noventa é o valor que deixa cerca de noventa por cento dos dados abaixo dele ou iguais a ele.
+
+Por isso, o primeiro quartil é o percentil vinte e cinco. A mediana é o percentil cinquenta. O terceiro quartil é o percentil setenta e cinco. Ficar no percentil noventa de uma prova é ir melhor ou igual a cerca de noventa por cento dos candidatos.
+
+E aqui está o erro do começo. Muita gente lê percentil noventa como acertar noventa por cento da prova. Não é. O percentil compara você com os outros. Com sessenta e dois acertos, a pessoa ficou acima de cerca de noventa por cento dos candidatos. A prova é que foi difícil.
+
+Agora o atalho: para saber quantos ficaram acima, faça cem menos o percentil. Percentil noventa? Cem menos noventa dá dez. Você está entre os dez por cento mais altos. Numa prova com dois mil candidatos, dez por cento de dois mil dá duzentos. Você está entre os cerca de duzentos primeiros.
+
+Funciona porque quem não está abaixo, está acima. Mas o resultado é sempre aproximado: em lista pequena ou com muitas notas iguais, conte na lista em vez de usar a porcentagem.
+
+Hora de testar. As notas de oito alunos estão na tela. Item um: ache o primeiro, o segundo e o terceiro quartil. Item dois: numa prova grande, Bia tirou nota igual ao terceiro quartil. O que isso diz sobre ela?
+
+Pause o vídeo e tente.
+
+Vamos lá. Primeiro, em ordem. Com oito notas, a mediana é a média da quarta e da quinta nota. Seis mais sete dá treze, e treze dividido por dois dá seis vírgula cinco. Com quantidade par, as metades ficam com quatro notas cada.
+
+Na metade de baixo, os valores do meio são cinco e seis: a média deles dá cinco vírgula cinco, o primeiro quartil. Na metade de cima, oito e nove: a média dá oito vírgula cinco, o terceiro quartil. E a Bia: cerca de setenta e cinco por cento tiraram nota igual ou menor que a dela. Ela está entre os vinte e cinco por cento mais altos.
+
+Resumindo: os quartis são medianas das metades, e o percentil diz quantos ficaram abaixo de você, não quanto você acertou.
+
+Na próxima aula, esses números viram um desenho: o boxplot. Nele você lê mínimo, quartis, máximo e amplitude e compara duas turmas de uma olhada. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

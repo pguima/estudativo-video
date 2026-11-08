@@ -1,0 +1,41 @@
+Duas cidades começam com dez mil habitantes. A primeira ganha trezentas pessoas por ano. A segunda cresce três por cento ao ano. No primeiro ano, as cidades chegam a dez mil e trezentos. Parece a mesma coisa.
+
+Em cinquenta anos, a primeira chega a vinte e cinco mil. A segunda passa de quarenta e três mil. Até o fim desta aula, você entende essa diferença, monta a lei de cada uma e leva um atalho de prova.
+
+Você precisa de três coisas: função afim, que muda sempre o mesmo valor a cada passo, fator de aumento e de desconto, e a função exponencial, com o xis no expoente. Se faltar alguma, procure no canal.
+
+Na primeira cidade, cada ano soma trezentos. Dez mil. Dez mil e trezentos. Dez mil e seiscentos. É a função afim: pê igual a dez mil mais trezentos vezes tê, com tê em anos. O gráfico é uma reta.
+
+Na segunda, cada ano soma três por cento do que já existe. Somar três por cento é multiplicar pelo fator um vírgula zero três. Em um ano, dez mil vezes um vírgula zero três dá dez mil e trezentos. Em dois anos, vezes um vírgula zero três de novo dá dez mil seiscentos e nove.
+
+Os três por cento do segundo ano valem sobre uma população maior, então o salto cresce: trezentos, depois trezentos e nove. Em tê anos, o fator se repete tê vezes. O mesmo número multiplicado várias vezes é uma potência.
+
+A lei fica pê igual a pê zero vezes um vírgula zero três elevado a tê. Pê é a população no ano tê. Pê zero é a população do começo, no ano zero. E o fator vai na base, com o tempo no expoente. Base maior que um: a curva sobe.
+
+E no caminho contrário? Um carro de cinquenta mil reais perde dez por cento do valor a cada ano. Tirar dez por cento é multiplicar pelo fator de desconto zero vírgula nove.
+
+Em um ano, cinquenta mil vezes zero vírgula nove dá quarenta e cinco mil. Em dois anos, vezes zero vírgula nove de novo dá quarenta mil e quinhentos. Em três anos, dá trinta e seis mil quatrocentos e cinquenta. A lei: vê igual a cinquenta mil vezes zero vírgula nove elevado a tê. Base entre zero e um: a curva desce. Isso se chama decaimento.
+
+E quando a prova dá só uma tabela? Com o tempo andando de um em um, faça dois testes. Subtraia cada valor do anterior. Se a diferença for sempre a mesma, é afim: o modelo soma.
+
+Divida cada valor pelo anterior. Se a divisão der sempre o mesmo número, é exponencial: o modelo multiplica. E esse número é o fator. No carro, quarenta e cinco mil dividido por cinquenta mil dá zero vírgula nove.
+
+Agora, cuidado com um erro muito comum. O carro perde dez por cento por ano. Então, em dez anos, perde cem por cento e vale zero. Será?
+
+Não. Cada ano tira dez por cento do que sobrou, e o que sobra é cada vez menor. Na calculadora, depois de dez anos, o carro ainda vale cerca de dezessete mil e quatrocentos reais. Como você viu no gráfico, a exponencial nunca chega a zero.
+
+Agora o atalho: olhe os saltos. Saltos iguais, é afim. Saltos que crescem ou encolhem, desconfie de exponencial, e só então divida.
+
+Funciona porque no afim se soma sempre o mesmo valor. Na exponencial, se soma uma porcentagem de um valor que muda. Não compensa com taxa pequena e números arredondados: os saltos parecem iguais. Aí, faça a divisão.
+
+Hora de testar. Dois perfis começam com mil seguidores. Mês a mês, o perfil á tem: mil. Mil e cem. Mil duzentos e dez. Mil trezentos e trinta e um. O perfil bê tem: mil. Mil e cem. Mil e duzentos. Mil e trezentos. Qual é exponencial? Escreva a lei de cada um.
+
+Pause o vídeo e tente.
+
+Vamos lá. No perfil bê, os saltos são sempre cem. É afim: ésse igual a mil mais cem vezes tê, com tê em meses.
+
+No perfil á, os saltos crescem: cem. Depois cento e dez. Depois cento e vinte e um. Divida: mil e cem dividido por mil dá um vírgula um. Mil duzentos e dez dividido por mil e cem também. É exponencial, com fator um vírgula um. Isso é dez por cento ao mês. A lei: ésse igual a mil vezes um vírgula um elevado a tê.
+
+Resumindo: somar o mesmo valor é afim. Multiplicar pelo mesmo fator é exponencial, com o fator na base e o tempo no expoente.
+
+Na próxima aula, o tempo é medido de outro jeito: quanto leva para dobrar, ou para cair pela metade. Você vai calcular quanto resta de um remédio depois de três meias-vidas e contar bactérias que dobram a cada vinte minutos. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

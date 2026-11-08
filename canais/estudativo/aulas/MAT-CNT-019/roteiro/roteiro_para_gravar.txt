@@ -1,0 +1,41 @@
+Quatro situações de probabilidade, criadas para esta aula. Em cada uma, o mais difícil é escolher a ferramenta. Pause o vídeo e resolva antes de ver a resposta.
+
+Use as palavras da pergunta como pista. Pelo menos um? Calcule o nenhum e tire de um. A palavra ou? Some e tire a parte em comum. A palavra e, em sequência? Multiplique. Sabendo que? A pista vira o novo total. Nenhuma dessas? Conte favoráveis e possíveis. Se alguma travar, procure a aula no canal.
+
+Situação um. Um grupo tem quatro homens e três mulheres. Duas pessoas são sorteadas para uma comissão. Qual a chance de serem ambas mulheres?
+
+Pause o vídeo e tente.
+
+Vamos lá, contando. Na comissão, a ordem não importa: é combinação. Possíveis: sete vezes seis dá quarenta e dois, e dividido por dois dá vinte e uma comissões. Favoráveis: três vezes dois dá seis, e dividido por dois dá três comissões só de mulheres. A chance é três vinte e um avos, que simplifica para um sétimo.
+
+Agora um atalho: trate como sorteio sem reposição. A primeira mulher: três sétimos. A segunda: dois sextos. Três sétimos vezes dois sextos dá seis quarenta e dois avos: um sétimo. Funciona porque sortear duas de uma vez é o mesmo que sem reposição.
+
+Não compensa quando a pergunta mistura, como um homem e uma mulher. Aí, são dois caminhos na árvore: homem antes ou mulher antes. E quem esquece um deles erra pela metade.
+
+Situação dois. Uma pessoa chuta três questões, cada uma com quatro alternativas e só uma certa. Qual a chance de acertar pelo menos uma?
+
+Pause o vídeo e tente.
+
+Vamos lá. Pelo menos uma: calcule o nenhum. Errar uma questão tem chance de três quartos. As questões são independentes, então multiplique: três quartos elevado a três dá vinte e sete sessenta e quatro avos.
+
+Tire de um: sessenta e quatro menos vinte e sete dá trinta e sete. A chance é trinta e sete sessenta e quatro avos, pouco mais da metade. Contar direto pediria uma, duas ou três certas: três contas no lugar de uma.
+
+Situação três. Uma urna tem cinquenta bolinhas, numeradas de um a cinquenta. Qual a chance de sortear um múltiplo de quatro ou de seis?
+
+Pause o vídeo e tente.
+
+Vamos lá. A palavra ou: some e tire a parte em comum. Múltiplos de quatro até cinquenta: doze. Múltiplos de seis: oito. Múltiplos de quatro e de seis ao mesmo tempo são os múltiplos do MMC, que é doze: doze, vinte e quatro, trinta e seis e quarenta e oito.
+
+Doze mais oito dá vinte. Vinte menos os quatro números em comum dá dezesseis. A chance é dezesseis cinquenta avos, ou trinta e dois por cento. Cuidado com a armadilha: a parte em comum não são os múltiplos de quatro vezes seis, e sim os do MMC.
+
+Última situação: genética. A característica só aparece com a versão recessiva do pai e da mãe. A mãe tem uma versão dominante e uma recessiva. O pai tem duas recessivas, e mostra a característica. Qual a chance de um filho do casal nascer com ela? E, se o casal tiver dois filhos, qual a chance de ambos nascerem com ela?
+
+Pause o vídeo e tente.
+
+Vamos lá, pela árvore. O pai só tem a recessiva para passar: um galho só, com chance de um inteiro. A mãe passa a recessiva com um meio. Ao longo do caminho, multiplique: um vezes um meio dá um meio. Cinquenta por cento.
+
+Para dois filhos, cada nascimento é independente do outro. Um meio vezes um meio dá um quarto. Repare: o primeiro filho não muda a chance do segundo, como a moeda que não tem memória.
+
+Resumindo: leia a palavra que manda na pergunta e escolha a ferramenta antes de fazer conta.
+
+Com isso, você fecha a trilha de contagem e probabilidade. A próxima trilha é geometria analítica. Na primeira aula, você calcula a distância entre dois pontos do plano usando um triângulo retângulo. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

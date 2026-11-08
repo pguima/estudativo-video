@@ -1,0 +1,41 @@
+Um, dois, três, quatro. O determinante dessa matriz é dois ou menos dois? Quem faz a conta na ordem errada acha dois. A resposta é menos dois.
+
+Até o fim desta aula, você calcula o determinante de matrizes dois por dois e três por três, e ainda leva um atalho de prova.
+
+Lembre duas coisas: matriz é uma tabela de números em linhas e colunas, e a i jota é o elemento da linha i, coluna jota. Se faltar alguma, procure no canal.
+
+O determinante é um número calculado a partir de uma matriz. Ele só existe na matriz quadrada: a que tem o mesmo número de linhas e de colunas, como dois por dois ou três por três. Para que ele serve? Você vê na aula de matriz inversa.
+
+Numa matriz quadrada, há duas diagonais. A diagonal principal desce da esquerda para a direita: um e quatro. A diagonal secundária sobe da esquerda para a direita: três e dois.
+
+A regra da dois por dois: multiplique a principal, multiplique a secundária, e faça a principal menos a secundária.
+
+Um vezes quatro, quatro. Três vezes dois, seis. Quatro menos seis, menos dois. Na tela, o determinante aparece entre duas barras em pé, no lugar dos colchetes.
+
+Com número negativo, cuidado com o sinal. Veja três, menos dois, cinco, um. Principal: três vezes um, três. Secundária: cinco vezes menos dois, menos dez. Três menos, abre parênteses, menos dez, fecha parênteses: três mais dez, treze.
+
+E na três por três? Use a regra de Sarrus. Primeiro, copie as duas primeiras colunas ao lado da matriz.
+
+Agora, três diagonais descendo, como a principal. Dois vezes um vezes dois, quatro. Um vezes quatro vezes um, quatro. Três vezes zero vezes zero, zero. Somando, oito.
+
+Depois, três diagonais subindo, como a secundária. Um vezes um vezes três, três. Zero vezes quatro vezes dois, zero. Dois vezes zero vezes um, zero. Somando, três.
+
+Descendo menos subindo: oito menos três, cinco. É a mesma ideia da dois por dois: o que desce, menos o que sobe.
+
+Cuidado com o erro mais comum: fazer a secundária menos a principal. Em um, dois, três, quatro, seis menos quatro dá dois, com o sinal trocado. A principal vem primeiro: a que desce.
+
+Agora o atalho: se tudo abaixo da diagonal principal for zero, o determinante é só o produto da diagonal. Em dois, cinco, sete; zero, três, um; zero, zero, quatro: dois vezes três vezes quatro, vinte e quatro.
+
+Funciona porque, no Sarrus, todas as outras diagonais passam por um zero, e qualquer número vezes zero dá zero. Vale também se o zerado for tudo acima da diagonal. Com o zero fora desse lugar, faça o Sarrus inteiro. E uma linha inteira de zeros? Toda diagonal passa por ela: o determinante é zero.
+
+Hora de testar. Calcule o determinante da matriz um, dois, zero; três, um, dois; zero, um, um.
+
+Pause o vídeo e tente.
+
+Vamos lá. Copie as duas primeiras colunas. Descendo: um vezes um vezes um, um; dois vezes dois vezes zero, zero; zero vezes três vezes um, zero. Total descendo: um.
+
+Subindo: zero vezes um vezes zero, zero; um vezes dois vezes um, dois; um vezes três vezes dois, seis. Total subindo: oito. Um menos oito: menos sete.
+
+Resumindo: na dois por dois, principal menos secundária. Na três por três, Sarrus: o que desce menos o que sobe.
+
+Na próxima aula, você usa o determinante para achar a matriz inversa, e descobre por que determinante zero é um problema. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

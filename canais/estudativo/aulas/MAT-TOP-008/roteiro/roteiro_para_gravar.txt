@@ -1,0 +1,35 @@
+Três pontos: xis um, ípsilon um; xis dois, ípsilon três; e xis três, ípsilon cinco. Estão na mesma reta? Ponha as coordenadas num quadro, calcule um determinante, e, se der zero, estão alinhados.
+
+Até o fim desta aula, você testa o alinhamento de três pontos pelo determinante, acha um número que falta e leva um atalho de prova.
+
+Você vai usar duas coisas: três pontos estão alinhados quando a inclinação, o eme, não muda de um ponto para o outro; e o determinante três por três, pela regra de Sarrus. Se faltar alguma, procure no canal.
+
+Monte a matriz assim: uma linha para cada ponto. Na primeira coluna, os xis. Na segunda, os ípsilons. Na terceira, só o número um, para completar o três por três.
+
+Agora, Sarrus. Repita as duas primeiras colunas ao lado. Descendo para a direita: um vezes três vezes um dá três. Um vezes um vezes três dá três. Um vezes dois vezes cinco dá dez. Somando, dezesseis.
+
+No outro sentido: um vezes três vezes três dá nove. Um vezes um vezes cinco dá cinco. Um vezes dois vezes um dá dois. Somando, dezesseis. Dezesseis menos dezesseis: zero. Os pontos estão alinhados.
+
+Confira pelo eme: do primeiro ao segundo ponto, sobe dois e anda um: eme igual a dois. Do segundo ao terceiro, sobe dois e anda um: dois de novo. Mesma inclinação: alinhados. O determinante faz esse mesmo teste, numa conta só.
+
+Troque o terceiro ponto por xis quatro, ípsilon seis. Descendo para a direita: três, mais quatro, mais doze, dezenove. No outro sentido: doze, mais seis, mais dois, vinte. Dezenove menos vinte dá menos um. Diferente de zero: os pontos formam um triângulo. E a ordem das linhas? Trocar a ordem dos pontos pode trocar o sinal do resultado, mas zero continua zero. Monte na ordem que quiser.
+
+O determinante brilha quando falta um número. Para que valor de cá o ponto xis cá, ípsilon sete, fica alinhado com xis um, ípsilon um, e xis dois, ípsilon três? Faça Sarrus com o cá no lugar do xis. Descendo: três, mais cá, mais catorze. No outro sentido: três cá, mais sete, mais dois.
+
+Primeira soma menos a segunda, igual a zero: dezessete mais cá, menos três cá, menos nove. Oito menos dois cá igual a zero: cá vale quatro. Confira pelo eme: de xis um, ípsilon um, até xis quatro, ípsilon sete, sobe seis e anda três: eme igual a dois. Bateu.
+
+O erro comum é somar as duas partes em vez de subtrair. Nos pontos do começo, a pessoa faz dezesseis mais dezesseis, trinta e dois, e conclui que não estão alinhados. O determinante é a primeira soma menos a segunda: zero.
+
+Agora o atalho: leve o primeiro ponto para a origem. Subtraia o primeiro ponto dos outros dois. Xis dois, ípsilon três, vira xis um, ípsilon dois. Xis três, ípsilon cinco, vira xis dois, ípsilon quatro. Sobra um determinante dois por dois: um vezes quatro, menos dois vezes dois: zero.
+
+Funciona porque deslizar os três pontos juntos não muda se eles estão alinhados. E o dois por dois é o mesmo multiplicar em cruz do teste do eme. E ele dá até o mesmo valor do três por três. Só não esqueça de subtrair sempre o mesmo ponto dos outros dois.
+
+Hora de testar. Para que valor de cá os pontos xis zero, ípsilon um; xis dois, ípsilon cinco; e xis cá, ípsilon nove ficam alinhados?
+
+Pause o vídeo e tente.
+
+Vamos lá, pelo atalho. Tire o primeiro ponto dos outros dois: xis dois, ípsilon quatro, e xis cá, ípsilon oito. Dois vezes oito, menos quatro vezes cá: dezesseis menos quatro cá. Igual a zero: cá vale quatro.
+
+Resumindo: uma linha por ponto, com um no fim, e determinante zero quer dizer alinhados.
+
+Na próxima aula, você compara duas circunferências e descobre, só pela distância entre os centros, se elas se cortam, se encostam ou ficam separadas. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

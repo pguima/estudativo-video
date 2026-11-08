@@ -1,0 +1,39 @@
+Amor. Roma. Ramo. Mora. Todas usam as mesmas letras, só que em outra ordem. Quantas palavras dá para formar assim, com ou sem sentido? Contar nos dedos cansa. Com casinhas, é uma linha: Vinte e quatro.
+
+Até o fim desta aula, você conta filas e anagramas, inclusive com gente que tem que ficar junta, e leva um atalho de prova.
+
+Você vai usar duas coisas: começar pela casinha mais difícil e o fatorial: o número vezes todos os de baixo, até o um. Se faltar alguma, procure no canal.
+
+Anagrama é cada ordem possível das letras de uma palavra, contando a própria palavra. Vale com ou sem sentido: erre, eme, ó, á também conta, mesmo sem significar nada.
+
+Amor tem quatro letras diferentes: á, eme, ó, erre. Faça quatro casinhas. Na primeira, cabem quatro letras. Na segunda, sobram três. Depois, duas e uma.
+
+Quatro vezes três vezes dois vezes um é quatro fatorial, que dá vinte e quatro anagramas.
+
+E se o anagrama tivesse que começar com á? Comece pela casinha difícil: a primeira só aceita o á, uma opção. As outras três letras se arrumam nas casinhas que sobram: três fatorial dá seis. São seis anagramas de amor que começam com á.
+
+Trocar de lugar coisas todas diferentes se chama permutação. O total é sempre o fatorial da quantidade. Por quê? Cada casinha tem uma opção a menos que a anterior, porque quem já entrou não entra de novo. Vale para letras, para livros na prateleira e para pessoas em fila. Cinco pessoas em fila? Cinco fatorial dá cento e vinte filas.
+
+Agora, uma regra no meio. Cinco amigos vão tirar foto em fila, e Ana e Bia querem ficar sempre juntas. Quantas filas existem?
+
+O truque é colar Ana e Bia, como se fossem uma pessoa só: onde uma vai, a outra vai junto. A fila agora tem o bloco e mais três amigos. São quatro peças: quatro fatorial dá vinte e quatro.
+
+Mas dentro do bloco elas podem trocar de lugar: Ana e Bia, ou Bia e Ana. São dois fatorial, que dá duas ordens. Vinte e quatro vezes dois dá quarenta e oito filas.
+
+O erro comum é esquecer a troca dentro do bloco e responder vinte e quatro. Mas a foto com Ana à esquerda de Bia é diferente da foto com Bia à esquerda de Ana. O bloco sempre multiplica pelas ordens de dentro.
+
+Agora o atalho, para quando a prova pede o contrário: Ana e Bia separadas. Não conte as separadas. Conte todas e tire as juntas. Todas: cinco fatorial dá cento e vinte. Cento e vinte menos quarenta e oito dá setenta e dois. É mais rápido que contar as separadas casinha por casinha.
+
+Funciona porque cada fila cai em um grupo só: ou elas estão juntas, ou separadas. Não compensa quando a regra é um lugar fixo, como Ana na ponta esquerda da fila: aí, comece pela casinha da Ana: uma opção para ela, e quatro fatorial para os outros.
+
+Hora de testar. Quantos anagramas tem a palavra Brasil? E em quantos deles as vogais ficam juntas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Brasil tem seis letras diferentes: bê, erre, á, esse, i, ele. Nenhuma repete, então vale o fatorial. Seis fatorial dá setecentos e vinte anagramas.
+
+Para as vogais juntas, cole o á com o i em um bloco. Ficam o bloco e mais quatro consoantes: cinco peças. Cinco fatorial dá cento e vinte. Dentro do bloco, o á e o i podem trocar de lugar: cento e vinte vezes dois dá duzentos e quarenta. Faz sentido ser menos que setecentos e vinte: ficar junto é uma exigência a mais.
+
+Resumindo: coisas todas diferentes em fila, use o fatorial. Tem que ficar junto? Cole em bloco e multiplique pelas trocas de dentro.
+
+E se a palavra tiver letras repetidas, como arara? Ou se a fila virar uma mesa redonda? É a próxima aula. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

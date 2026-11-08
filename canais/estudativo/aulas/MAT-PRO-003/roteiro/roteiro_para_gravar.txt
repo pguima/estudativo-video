@@ -1,0 +1,43 @@
+Á, bê, cê, dê, á, bê, cê, dê, e assim por diante. Qual letra está na posição dois mil e vinte e seis? Ninguém precisa escrever duas mil letras. Basta uma divisão.
+
+Até o fim desta aula, você acha qualquer posição de um padrão que se repete, o dia da semana daqui a muitos dias e leva um atalho de prova.
+
+Você precisa de três coisas: dividir com resto, o MMC dos encontros que se repetem e a diferença entre posição e termo. Se faltar alguma, procure no canal.
+
+Repare que a lista anda em blocos de quatro letras. Cada bloco é uma volta completa, que termina em dê. O dê está na posição quatro, na oito e na doze: os múltiplos de quatro.
+
+Então divida a posição pelo tamanho do bloco. Dois mil e vinte e seis dividido por quatro dá quinhentos e seis, com resto dois. São quinhentas e seis voltas completas, e a última termina em dê, na posição dois mil e vinte e quatro.
+
+O resto diz quantas casas você anda depois da última volta. Resto dois: á, bê. A letra da posição dois mil e vinte e seis é bê. As voltas não importam. Quem manda é o resto.
+
+Guarde a tabela: resto um dá a letra á, resto dois dá bê, resto três dá cê, e resto zero dá dê, a última do bloco.
+
+A semana é o padrão que mais se repete: um bloco de sete dias. Hoje é terça. Que dia será daqui a cem dias?
+
+Cem dividido por sete dá catorze, com resto dois. Catorze semanas completas voltam para a terça. Ande mais dois dias: quarta, quinta. Daqui a cem dias, é quinta-feira.
+
+Repare: na semana, cada volta de sete dias fecha de novo no dia de hoje. Então resto zero quer dizer o mesmo dia de hoje: daqui a sete dias, terça de novo. É a mesma ideia das letras: com resto zero, você para onde a última volta fechou.
+
+E quando são dois ciclos? Uma máquina passa por manutenção a cada doze dias. Outra, a cada dezoito. Hoje, uma segunda-feira, as máquinas pararam juntas. Em que dia da semana voltam a parar juntas?
+
+Ciclos que voltam a coincidir pedem o MMC, como nos ônibus da aula de MMC. O MMC de doze e dezoito dá trinta e seis. Agora o resto: trinta e seis dividido por sete dá cinco, com resto um. Segunda mais um dia dá terça. Param juntas daqui a trinta e seis dias, numa terça-feira.
+
+O erro comum é o resto zero. Na posição dois mil e vinte e oito, a divisão por quatro dá quinhentos e sete, com resto zero. A pessoa pensa que não sobrou nada, volta para o começo e responde a letra á.
+
+Mas resto zero quer dizer que a última volta acabou de fechar. As voltas fecham em dê, como nas posições quatro e oito. A resposta é dê.
+
+Agora o atalho: no bloco de quatro, olhe só os dois últimos algarismos. Em dois mil e vinte e seis, olhe o vinte e seis. Vinte e seis dividido por quatro dá seis, com resto dois. O mesmo resto, com uma conta de cabeça.
+
+Funciona porque cem é múltiplo de quatro. As centenas e os milhares fecham voltas inteiras e não mudam o resto. Não compensa com o bloco de sete da semana. Cem dividido por sete deixa resto, então ali você faz a divisão inteira.
+
+Hora de testar. Uma fila de luzes pisca vermelho, azul, verde, vermelho, azul, verde, e assim por diante. Qual é a cor da luz da posição cem? E, se hoje é sábado, que dia da semana será daqui a quarenta e cinco dias?
+
+Pause o vídeo e tente.
+
+Vamos lá. O bloco tem três cores. Cem dividido por três dá trinta e três, com resto um. Resto um é a primeira cor do bloco: vermelho.
+
+Nos dias, o bloco tem sete. Quarenta e cinco dividido por sete dá seis, com resto três. Seis semanas voltam ao sábado. Ande três dias: domingo, segunda, terça. Daqui a quarenta e cinco dias, é terça-feira.
+
+Resumindo: divida pelo tamanho do bloco. As voltas somem, e o resto diz onde você para. E resto zero é o fim de uma volta.
+
+Na próxima aula, a sequência sobe sempre do mesmo tanto, como cinco, nove, treze: a progressão aritmética. Você vai achar a razão, calcular o vigésimo termo com uma fórmula e ver que ela é parente da função afim. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

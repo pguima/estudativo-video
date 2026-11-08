@@ -1,0 +1,35 @@
+Um hexágono regular de lado dois. Qual é a área? Parece que precisa de uma fórmula nova. Não precisa: corte o hexágono em seis triângulos, e a área sai seis raiz de três: pouco mais que dez.
+
+Até o fim desta aula, você calcula a área de qualquer triângulo equilátero e de qualquer hexágono regular, e leva um atalho de prova.
+
+Você precisa de três coisas: a área do triângulo é base vezes altura, dividido por dois; a altura do equilátero é éle raiz de três, dividido por dois; e o polígono regular tem lados iguais e ângulos iguais, com cento e vinte graus em cada canto do hexágono. Se faltar alguma, procure no canal.
+
+Comece pelo equilátero de lado seis. A base é seis, e a altura é três raiz de três. Seis vezes três raiz de três dá dezoito raiz de três. Dividido por dois dá nove raiz de três.
+
+Com um lado qualquer, éle, a conta é a mesma. A base é éle. A altura é éle raiz de três, dividido por dois. Base vezes altura dá éle ao quadrado raiz de três, dividido por dois. E a metade disso dá éle ao quadrado raiz de três, dividido por quatro.
+
+Essa é a fórmula: á igual a éle ao quadrado, vezes raiz de três, dividido por quatro. Éle é o lado. Confira com o lado seis: seis ao quadrado dá trinta e seis, trinta e seis dividido por quatro dá nove. Nove raiz de três de novo.
+
+Agora o hexágono regular. Ligue o centro aos seis vértices. Aparecem seis triângulos iguais, e a volta em torno do centro se reparte em seis: trezentos e sessenta dividido por seis dá sessenta graus no centro de cada um.
+
+E nos cantos do hexágono? Cada um tem cento e vinte graus, e a linha que vem do centro divide esse canto ao meio, e cento e vinte dividido por dois dá sessenta. Três ângulos de sessenta graus: cada triângulo é equilátero, com o lado igual ao lado do hexágono.
+
+Então a área do hexágono é seis vezes a área do triângulo. Lado dois: dois ao quadrado dá quatro, e quatro dividido por quatro dá um. Cada triângulo tem raiz de três. O hexágono tem seis raiz de três. Raiz de três é perto de um vírgula sete. Seis vezes um vírgula sete dá dez vírgula dois.
+
+O erro mais comum é dividir por dois em vez de quatro. No lado seis, a pessoa acha dezoito raiz de três, mais de trinta. Mas esse é o retângulo em volta do triângulo, com base seis e altura três raiz de três. O triângulo é metade desse retângulo: não pode ter a área dele inteira.
+
+Agora o atalho, para lado par: use a metade do lado. Éle ao quadrado, dividido por quatro, é a metade do lado ao quadrado. Lado seis: a metade é três, e três ao quadrado dá nove, então a área é nove raiz de três. Lado oito: a metade é quatro, e quatro ao quadrado dá dezesseis, então a área é dezesseis raiz de três.
+
+Funciona porque quatro é dois ao quadrado: dividir o quadrado por quatro dá o mesmo que elevar a metade ao quadrado. Não compensa com lado ímpar: lado cinco dá vinte e cinco raiz de três, dividido por quatro. Aí, deixe o quatro embaixo.
+
+Hora de testar. Um piso é feito de ladrilhos em forma de hexágono regular com dez centímetros de lado. Qual é a área de um ladrilho? Use raiz de três igual a um vírgula sete.
+
+Pause o vídeo e tente.
+
+Vamos lá. O ladrilho tem seis triângulos equiláteros de lado dez. Pelo atalho, a metade de dez é cinco, e cinco ao quadrado dá vinte e cinco. Cada triângulo tem vinte e cinco raiz de três.
+
+Seis vezes vinte e cinco dá cento e cinquenta. O ladrilho tem cento e cinquenta raiz de três centímetros quadrados. Cento e cinquenta vezes um vírgula sete dá duzentos e cinquenta e cinco centímetros quadrados.
+
+Resumindo: equilátero, éle ao quadrado vezes raiz de três, dividido por quatro. Hexágono regular, seis desses triângulos.
+
+Na próxima aula, uma pergunta de quem vai cercar um terreno: com quarenta metros de cerca, qual retângulo guarda a maior área? A resposta sai do vértice de uma parábola. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

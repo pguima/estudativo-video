@@ -1,0 +1,39 @@
+Uma doceria tem quatro sabores de brigadeiro. Você vai levar três doces, e pode repetir o sabor. Quantas escolhas diferentes existem? Não é quatro, nem sessenta e quatro. São vinte.
+
+Até o fim desta aula, você conta escolhas em que pode repetir, resolve equações como xis mais ípsilon mais zê igual a dez e ainda leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: na combinação, a ordem não importa: faça o arranjo e divida pelo fatorial de quantos foram escolhidos; e escolher quem entra é o mesmo que escolher quem fica de fora. Se faltar alguma, procure no canal.
+
+Por que não é quatro? Quatro é a combinação de quatro sabores, três a três: só escolhas com três sabores diferentes. Mas aqui pode repetir: três de chocolate vale, e dois de coco com um de limão também.
+
+O truque é escrever cada escolha com bolinhas e barras. Cada bolinha é um doce. As barras separam os sabores: com quatro sabores, são três barras, que fazem quatro espaços.
+
+Duas bolinhas, barra, uma bolinha, barra, barra: dois de chocolate, um de morango, nenhum de coco, nenhum de limão. Barra, barra, barra, três bolinhas: três de limão.
+
+Toda escolha vira uma fila de seis símbolos: três bolinhas e três barras. E toda fila assim vira uma escolha. Então, basta contar as filas: escolher, entre seis lugares, os três das bolinhas.
+
+A ordem dos lugares escolhidos não importa: é uma combinação. Seis vezes cinco vezes quatro, cento e vinte, dividido por três fatorial, que é seis: vinte escolhas.
+
+A regra: com ene tipos e pê objetos, são pê bolinhas e ene menos uma barras. Escolha os lugares das bolinhas entre todos os lugares: pê mais ene menos um.
+
+Agora, a equação xis mais ípsilon mais zê igual a dez, com números inteiros, sem negativos: zero, um, dois, e assim por diante. É distribuir dez bolinhas em três caixas, a do xis, a do ípsilon e a do zê. São dez bolinhas e duas barras: doze lugares.
+
+Escolher os lugares das dez bolinhas é o mesmo que escolher os lugares das duas barras. Doze vezes onze, cento e trinta e dois, dividido por dois fatorial: sessenta e seis soluções.
+
+Agora, cuidado com o erro mais comum: usar o princípio multiplicativo: quatro vezes quatro vezes quatro, sessenta e quatro. Essa conta trata chocolate e depois coco, e coco e depois chocolate, como escolhas diferentes. Na sacola, a ordem não importa: é a mesma escolha.
+
+Agora o atalho, para quando cada um precisa receber pelo menos um: dê um para cada antes de contar. Em xis mais ípsilon mais zê igual a dez, com cada letra valendo pelo menos um: dê um a cada letra, e sobram sete. Sete bolinhas e duas barras: nove lugares. Nove vezes oito, dividido por dois: trinta e seis.
+
+Funciona porque, depois de garantir um para cada, o que sobra pode ser distribuído livremente, até com zero. Não compensa quando o zero é permitido: aí, conte direto.
+
+Hora de testar. Uma sorveteria tem cinco sabores, e a casquinha leva duas bolas, podendo repetir o sabor. Quantas casquinhas diferentes existem? E quantas soluções inteiras, sem negativos, tem xis mais ípsilon mais zê igual a seis?
+
+Pause o vídeo e tente.
+
+Vamos lá. Duas bolinhas e quatro barras: seis lugares. Escolha os lugares das duas bolinhas: seis vezes cinco, dividido por dois, quinze. Confira: cinco casquinhas de um sabor só, mais dez com dois sabores diferentes: quinze.
+
+Na equação, seis bolinhas e duas barras: oito lugares. Oito vezes sete, dividido por dois: vinte e oito soluções.
+
+Resumindo: pode repetir e a ordem não importa? Bolinhas e barras. Com ene tipos, são ene menos uma barras, e a resposta é escolher os lugares das bolinhas, ou das barras.
+
+Na próxima aula, você pratica o módulo inteiro: binômio de Newton, a chance de um número exato de acertos, casa dos pombos, inclusão e exclusão, e as bolinhas e barras. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

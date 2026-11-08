@@ -1,0 +1,39 @@
+Oito fatorial dividido por seis fatorial. Parece conta de calculadora. Mas dá para resolver de cabeça, em uma linha, e o resultado é cinquenta e seis.
+
+Até o fim desta aula, você calcula fatoriais, corta contas enormes antes de fazer e leva um atalho de prova.
+
+Você vai usar duas coisas: o princípio multiplicativo, com as casinhas, e simplificar fração: dividir em cima e embaixo pelo mesmo número. Se faltar alguma, procure no canal.
+
+Você tem cinco livros diferentes para pôr em uma prateleira. De quantas formas pode arrumar? Faça cinco casinhas, uma para cada lugar.
+
+No primeiro lugar, cabe qualquer um dos cinco. No segundo, sobram quatro, porque o livro que já foi para a prateleira não volta. Depois, três, dois e um.
+
+Cinco vezes quatro dá vinte. Vezes três dá sessenta. Vezes dois dá cento e vinte. Vezes um dá cento e vinte formas.
+
+Essa multiplicação aparece tanto que tem nome: fatorial. Na escrita, é o número seguido de um ponto de exclamação. Aqui, ele não é espanto: é conta. A regra: multiplique o número por todos os de baixo, descendo de um em um até chegar no um.
+
+Os primeiros fatoriais crescem rápido. Um fatorial dá um. Dois fatorial dá dois. Três fatorial dá seis. Quatro fatorial dá vinte e quatro. Cinco fatorial dá cento e vinte. Seis fatorial dá setecentos e vinte.
+
+Repare: cada fatorial é o anterior vezes o número novo. Seis fatorial é seis vezes cinco fatorial: seis vezes cento e vinte dá setecentos e vinte. Sete fatorial é sete vezes seis fatorial: dá cinco mil e quarenta. Essa ideia é a chave para cortar contas. E a escada também desce: um fatorial é um vezes zero fatorial. Para essa conta dar um, zero fatorial tem que valer um. Guarde isso: ele aparece nas próximas aulas.
+
+Voltando ao começo: oito fatorial dividido por seis fatorial. Abra o de cima só até chegar no seis fatorial: oito vezes sete vezes seis fatorial.
+
+Embaixo também tem seis fatorial. É como simplificar fração: divida em cima e embaixo por seis fatorial. Ele some de cima e de baixo. Sobra oito vezes sete, que dá cinquenta e seis. Pelo caminho longo, oito fatorial dá quarenta mil trezentos e vinte, e ainda teria a divisão por setecentos e vinte.
+
+O erro comum é fazer a conta só com os números que aparecem. A pessoa faz oito menos seis dá dois, e responde dois fatorial, que dá dois. Bem longe de cinquenta e seis. O seis fatorial some inteiro, mas o oito e o sete ficam: abra o maior e corte só o que for igual.
+
+Agora o atalho: a diferença diz quantos números sobram. De seis para oito, a diferença é dois: sobram dois números, descendo do oito: oito e sete. Dez fatorial dividido por sete fatorial? Diferença três: dez vezes nove vezes oito dá setecentos e vinte. Treze fatorial dividido por onze fatorial? Diferença dois: treze vezes doze dá cento e cinquenta e seis.
+
+Funciona porque tudo do menor fatorial para baixo se corta. Não compensa quando os números estão longe, como dez fatorial dividido por dois fatorial: sobram oito números para multiplicar. E na soma, nada se corta: oito fatorial mais seis fatorial não vira conta curta: calcule cada fatorial separado.
+
+Hora de testar. Quanto é quatro fatorial mais três fatorial? E quanto é doze fatorial dividido por dez fatorial?
+
+Pause o vídeo e tente.
+
+Vamos lá. Na soma, nada se corta: calcule cada fatorial separado. Quatro fatorial dá vinte e quatro. Três fatorial dá seis. Vinte e quatro mais seis dá trinta. Quem juntou tudo em sete fatorial chegou em cinco mil e quarenta, bem longe.
+
+Na divisão, a diferença é dois: sobram o doze e o onze. Doze vezes onze dá cento e trinta e dois. Sem o corte, você teria que calcular doze fatorial, que passa de quatrocentos milhões.
+
+Resumindo: fatorial multiplica o número por todos os de baixo, até o um. Na divisão, abra o maior até encontrar o menor, e corte.
+
+Na próxima aula, o fatorial vira ferramenta: você conta filas e anagramas, como as trocas de letras da palavra amor, e filas com duas pessoas sempre juntas. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,43 @@
+Numa turma de quarenta alunos, vinte e dois jogam futebol, dezessete jogam vôlei e sete jogam ambos. Quantos não jogam nenhum? Muita gente tira tudo do quarenta e acha um. A resposta é oito.
+
+Até o fim desta aula, você resolve esse tipo de problema com dois e com três esportes, e ainda leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: interseção e união no diagrama de Venn, e resolver equação fazendo o mesmo nos dois lados. Se faltar alguma, procure no canal.
+
+O segredo é preencher o diagrama de dentro para fora. Comece pela interseção: sete alunos jogam ambos. Esse sete vai no meio.
+
+Dos vinte e dois do futebol, sete já estão no meio. Só futebol: vinte e dois menos sete dá quinze. Dos dezessete do vôlei, sete também já estão lá. Só vôlei: dezessete menos sete dá dez.
+
+Some os pedaços: quinze mais sete mais dez dá trinta e dois. São os que jogam pelo menos um esporte. O resto fica fora dos círculos: quarenta menos trinta e dois dá oito alunos.
+
+Na prova, o número de elementos de um conjunto á se escreve ene de á. E existe uma fórmula para a união: ene da união é ene de á, mais ene de bê, menos ene da interseção.
+
+Por que esse menos? Quem joga ambos foi contado duas vezes: uma no futebol e outra no vôlei. Então tira uma vez. Vinte e dois mais dezessete dá trinta e nove, menos sete dá trinta e dois. Igual ao diagrama.
+
+Com três esportes, o método é o mesmo. Turma de cinquenta alunos. Dezenove jogam futebol, vinte jogam vôlei, dezesseis jogam basquete.
+
+Seis jogam futebol e vôlei. Cinco jogam futebol e basquete. Sete jogam vôlei e basquete. E só dois jogam os três esportes. Atenção: os seis de futebol e vôlei já incluem quem joga tudo.
+
+De dentro para fora. No centro, o dois. Em cada dupla de esportes, desconte o centro. Futebol e vôlei: seis menos dois dá quatro. Futebol e basquete: cinco menos dois dá três. Vôlei e basquete: sete menos dois dá cinco.
+
+Falta quem joga um esporte só. Futebol: dezenove menos quatro, menos três, menos dois. Sobram dez. Vôlei: vinte menos quatro, menos cinco, menos dois: nove. Basquete: dezesseis menos três, menos cinco, menos dois: seis.
+
+Some as sete partes: trinta e nove alunos jogam alguma coisa. Cinquenta menos trinta e nove: onze não jogam nenhum dos esportes.
+
+Volte ao erro do começo. Quarenta menos vinte e dois menos dezessete dá um. Só que os sete que jogam ambos saíram duas vezes, uma em cada esporte. Devolva os sete: um mais sete dá oito. É a resposta certa.
+
+Agora o atalho: a fórmula também roda ao contrário. Se a questão dá quem não joga nenhum e esconde quem joga ambos, chame a interseção de xis e resolva a equação.
+
+Funciona porque a fórmula é uma igualdade: sabendo três números, a equação dá o quarto. Não compensa com três conjuntos: a fórmula fica comprida demais. Ali, preencha o diagrama de dentro para fora.
+
+Hora de testar. Numa pesquisa com sessenta pessoas, trinta e cinco usam um aplicativo de mapas, trinta usam um aplicativo de música e dez não usam nenhum. Quantas usam ambos? E quantas usam só o de mapas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Se dez não usam nenhum, a união tem sessenta menos dez dá cinquenta. Chame de xis quem usa ambos. Pela fórmula: trinta e cinco mais trinta, menos xis, igual a cinquenta. Sessenta e cinco menos xis igual a cinquenta.
+
+Some xis nos dois lados: sessenta e cinco igual a cinquenta mais xis. Tire cinquenta: xis igual a quinze. Quinze pessoas usam ambos. E só o de mapas: trinta e cinco menos quinze dá vinte pessoas.
+
+Resumindo: preencha de dentro para fora e tire uma vez a interseção, que foi contada duas vezes.
+
+Na próxima aula, os conjuntos mais famosos da matemática: os naturais, os inteiros e os racionais, e por que uma dízima também é fração. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,39 @@
+Pensei num número e elevei ao quadrado. Deu quatro. Em que número eu pensei? Dois? Menos dois? Não dá para saber. E é por isso que essa função não tem inversa.
+
+Até o fim desta aula, você descobre quando uma função pode ser desfeita, com três palavras: injetora, sobrejetora e bijetora. E leva um atalho de prova.
+
+Você precisa de duas coisas: domínio, contradomínio e imagem. O contradomínio é onde as saídas podem cair, e a imagem é o que de fato sai. E ler um gráfico: onde ele sobe e onde desce. Se faltar alguma, procure no canal.
+
+A função inversa é a máquina que desfaz: você dá a saída, e ela devolve a entrada. Para isso funcionar, cada saída tem que vir de uma entrada só, e toda saída pedida tem que existir. Cada exigência tem um nome.
+
+A primeira é ser injetora: entradas diferentes dão saídas diferentes. Ípsilon igual a xis ao quadrado falha: menos dois e dois são entradas diferentes, e ambas dão quatro.
+
+No gráfico, isso aparece com uma reta horizontal. Na altura quatro, ela corta a curva em dois pontos: em xis menos dois e em xis dois. Se alguma reta horizontal corta o gráfico mais de uma vez, a função não é injetora.
+
+A segunda é ser sobrejetora: a imagem é o contradomínio inteiro. Ou seja, toda saída que a função promete, ela entrega.
+
+Agora, use todos os reais como contradomínio. Ele tem os negativos. Mas nenhum número ao quadrado dá menos um. A reta horizontal na altura menos um não toca a curva. Não é sobrejetora.
+
+Quando a função é injetora e sobrejetora ao mesmo tempo, ela é bijetora. Só a bijetora tem inversa.
+
+Dá para consertar o xis ao quadrado. Fique só com xis maior ou igual a zero: some a metade da esquerda, e cada altura passa a ser tocada uma vez só. Agora é injetora.
+
+E troque o contradomínio por de zero até mais infinito, fechado no zero. Toda saída prometida aparece. Bijetora. E a inversa você já conhece: saiu quatro, a entrada foi a raiz quadrada de quatro, dois.
+
+O erro comum é usar a reta vertical. A reta vertical testa se o desenho é uma função: cada xis com uma saída só. Xis ao quadrado passa nesse teste, e mesmo assim não é injetora. Para injetora, a reta é horizontal.
+
+O atalho de prova: veja se o gráfico só sobe ou só desce. Se ele nunca muda de direção, nenhuma altura se repete: é injetora, sem testar ponto nenhum. Xis ao quadrado desce e depois sobe, e as alturas se repetem.
+
+O atalho só responde se é injetora. Para saber se é sobrejetora, compare sempre a imagem com o contradomínio.
+
+Hora de testar. A função é éfe de xis igual a xis ao quadrado, com domínio de zero até mais infinito e contradomínio todos os reais. Ela é injetora? Sobrejetora? Bijetora?
+
+Pause o vídeo e tente.
+
+Vamos lá. Com xis só de zero para cima, o gráfico só sobe: é injetora. Mas o contradomínio tem os negativos, e nenhum quadrado dá negativo. Não é sobrejetora. Então, não é bijetora.
+
+O conserto é trocar o contradomínio por de zero até mais infinito. Mesma lei, mesmo desenho, e agora ela é bijetora. O contradomínio faz parte da função.
+
+Resumindo: injetora não repete saída, sobrejetora entrega todo o contradomínio, e bijetora é as duas coisas: só ela tem inversa.
+
+Na próxima aula, você aprende a calcular a inversa, e vê que o gráfico dela é um espelho do gráfico original. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

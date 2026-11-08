@@ -1,0 +1,41 @@
+Setenta e duas cadeiras, arrumadas em fileiras iguais. De quantos jeitos dá para arrumar? Uma fileira de setenta e duas cadeiras, duas fileiras de trinta e seis, três fileiras de vinte e quatro... Cada jeito é um divisor de setenta e dois. E dá para contar todos sem listar nenhum.
+
+Até o fim desta aula, você conta os divisores de qualquer número e leva um atalho de prova.
+
+Você vai precisar de três coisas: fatorar usando potências, o princípio multiplicativo, com as casinhas, e saber que um número elevado a zero dá um. Se faltar alguma, procure no canal.
+
+Primeiro, fatore. Setenta e dois dividido por dois dá trinta e seis. Por dois dá dezoito. Por dois dá nove. Por três dá três. Por três dá um. Para conferir: oito vezes nove dá setenta e dois.
+
+Foram três divisões por dois e duas por três. Setenta e dois é dois ao cubo vezes três ao quadrado.
+
+Agora pense: o que é um divisor de setenta e dois? É um número montado só com pedaços dessa fatoração. Ele pode usar fatores dois e fatores três, mas nunca mais do que o setenta e dois tem, e nenhum outro primo. O seis, por exemplo, usa um fator dois e um fator três.
+
+Quantas vezes o fator dois pode aparecer no divisor? Nenhuma vez, uma, duas ou três vezes. São quatro opções: dois elevado a zero, a um, ao quadrado e ao cubo. Elas dão um, dois, quatro e oito.
+
+E o fator três? Nenhuma vez, uma ou duas vezes. São três opções: um, três e nove.
+
+Montar um divisor é escolher uma opção do fator dois e uma opção do fator três. São etapas, e você faz todas: é o princípio multiplicativo. Quatro vezes três dá doze divisores.
+
+Veja na tabela. Nas linhas, um, dois, quatro e oito. Nas colunas, um, três e nove. Cada quadradinho é a linha vezes a coluna. Saem doze divisores, nenhum repetido, nenhum faltando: do um até o setenta e dois.
+
+A regra: fatore usando potências, some um em cada expoente e multiplique os resultados. Esse mais um é a opção nenhuma vez.
+
+No setenta e dois, os expoentes são três e dois. Três mais um dá quatro. Dois mais um dá três. Quatro vezes três dá doze. Sem tabela e sem lista.
+
+O erro comum é esquecer esse mais um. A pessoa multiplica os expoentes: três vezes dois dá seis. Mas a tabela mostrou doze. Ficaram de fora os divisores sem o fator dois, como o nove, os sem o fator três, como o oito, e até o um.
+
+Agora o atalho, para quando a prova pede só os divisores ímpares, ou só os pares. Ímpar não tem fator dois. Então ignore o dois: sobra só o fator três, com três opções. Setenta e dois tem três divisores ímpares: um, três e nove.
+
+E os pares? Doze menos três dá nove. Funciona porque todo divisor ou é par, ou é ímpar. Não compensa quando a questão quer os divisores escritos, não só quantos são: aí, monte a tabela.
+
+Hora de testar. Você já viu que trezentos e sessenta é dois ao cubo vezes três ao quadrado vezes cinco. Quantos divisores ele tem? E quantos são ímpares?
+
+Pause o vídeo e tente.
+
+Vamos lá. Some um em cada expoente. Três mais um dá quatro. Dois mais um dá três. E o cinco? Ele aparece uma vez: o expoente é um, que não se escreve. Um mais um dá dois.
+
+Quatro vezes três dá doze. Doze vezes dois dá vinte e quatro divisores. Para os ímpares, ignore o fator dois: três vezes dois dá seis.
+
+Resumindo: fatore, some um em cada expoente e multiplique.
+
+Na próxima aula, uma multiplicação que aparece o tempo todo em contagem ganha nome próprio: o fatorial. E você aprende a cortar contas enormes antes de fazer. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

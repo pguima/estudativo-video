@@ -1,0 +1,47 @@
+Logaritmo de oito na base dois dá três. Logaritmo de mil e vinte e quatro na base dois dá dez. O número ficou mais de cem vezes maior, e o logaritmo andou só sete. Esse crescimento preguiçoso tem um desenho, e ele é o espelho de uma curva que você já conhece.
+
+Até o fim desta aula, você desenha esse gráfico, diz quais números podem entrar no logaritmo, resolve inequações com ele e leva um atalho de prova.
+
+Você precisa de três coisas: ler o logaritmo como expoente, o gráfico de dois elevado a xis e a inequação exponencial, com o sinal que vira quando a base fica entre zero e um. Se faltar alguma, procure no canal.
+
+Monte a tabela de ípsilon igual a logaritmo de xis na base dois. Para cada xis, pergunte: dois elevado a quanto dá esse número? Xis igual a um: dois elevado a zero dá um, então ípsilon é zero. Xis igual a dois: ípsilon é um. Xis igual a quatro: ípsilon é dois. Xis igual a oito: ípsilon é três.
+
+E abaixo de um? Um meio é dois elevado a menos um: ípsilon é menos um. Um quarto é dois elevado a menos dois: ípsilon é menos dois.
+
+Coloque do lado a tabela de dois elevado a xis. Lá, xis dois dá ípsilon quatro. No logaritmo, xis quatro dá ípsilon dois. São os mesmos números, com as colunas trocadas. A potência pega o expoente e entrega o resultado. O logaritmo faz o caminho de volta.
+
+No plano, trocar xis com ípsilon é refletir numa reta: a diagonal, onde xis e ípsilon são iguais. Não é o espelho no eixo ípsilon da aula de função exponencial: agora o espelho é a diagonal. Dobre o papel nela, e a curva de dois elevado a xis cai em cima da curva do logaritmo.
+
+Olhe a curva do logaritmo. Ela passa por xis um, ípsilon zero, porque o logaritmo de um é sempre zero. Sobe, porque a base dois é maior que um, mas sobe cada vez mais devagar. E nunca encosta no eixo ípsilon: chega perto, sem tocar.
+
+Com base entre zero e um, como um meio, a curva desce. É a mesma regra da exponencial: base maior que um sobe, base entre zero e um desce.
+
+Repare que a curva só existe à direita do eixo ípsilon. Dois elevado a qualquer expoente é sempre positivo. Então o que fica dentro do logaritmo, o logaritmando, precisa ser maior que zero. Os números que podem entrar formam o domínio: de zero até mais infinito, aberto no zero.
+
+Veja logaritmo de xis menos três. A base dez está escondida. O logaritmando agora é xis menos três, e ele precisa ser positivo. Xis menos três maior que zero. Xis maior que três. Domínio: de três até mais infinito, aberto no três. O próprio três fica de fora, porque daria logaritmo de zero, que não existe.
+
+Agora a inequação: logaritmo de xis na base dois maior que três. Escreva o três como logaritmo na base dois: três é o logaritmo de oito na base dois. Fica logaritmo de xis maior que logaritmo de oito, os logaritmos na base dois.
+
+Base dois, maior que um: a curva sobe. Logaritmo maior vem de logaritmando maior. O sinal se mantém: xis maior que oito. No gráfico, trace a linha deitada na altura três: a curva passa acima dela depois do xis oito.
+
+Com base entre zero e um, o sinal vira, como na exponencial. E nos dois casos, confira o domínio: o logaritmando tem que ser positivo.
+
+O erro comum é esquecer o domínio. Em logaritmo de xis na base dois menor que três, a pessoa resolve xis menor que oito e para aí.
+
+Mas xis menor que oito inclui o zero e o menos um. Dois elevado a quanto dá menos um? Nenhum expoente. Esse logaritmo nem existe. A resposta certa junta as condições: xis maior que zero e menor que oito. Intervalo aberto no zero e aberto no oito.
+
+Agora o atalho: a base sobe e vira potência. Logaritmo de xis na base dois maior que três? Leve a base para o outro lado, com o três de expoente: xis maior que dois ao cubo. Xis maior que oito, numa linha só.
+
+Funciona porque o logaritmo é um expoente: logaritmo maior que três quer dizer que o dois precisa de mais que três no expoente para chegar no xis. Com base maior que um, isso é xis maior que dois ao cubo. Mas o atalho não faz tudo: com base entre zero e um, vire o sinal; e junte sempre o domínio no fim: no menor que oito, foi ele que tirou o zero e os negativos.
+
+Hora de testar. Resolva logaritmo de xis menos um na base dois menor que três, com o xis menos um todo dentro do logaritmo. Dê a resposta como intervalo.
+
+Pause o vídeo e tente.
+
+Vamos lá. Primeiro, o domínio: xis menos um maior que zero, então xis maior que um. Agora a base sobe: xis menos um menor que dois ao cubo, que dá oito. Base dois, o sinal fica: xis menor que nove.
+
+Junte as condições: xis maior que um e menor que nove. Intervalo aberto no um e aberto no nove. Teste o cinco: cinco menos um dá quatro, e o logaritmo de quatro na base dois dá dois, menor que três. Bateu.
+
+Resumindo: o logaritmo é o espelho da exponencial na diagonal. O logaritmando tem que ser positivo. E na inequação, base maior que um mantém o sinal, e base entre zero e um vira.
+
+Na próxima aula, o logaritmo sai do papel: a acidez de um líquido, a força de um terremoto e o barulho em decibéis. Você vai ver por que pê agá três é cem vezes mais ácido que pê agá cinco. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

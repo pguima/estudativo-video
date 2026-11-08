@@ -1,0 +1,37 @@
+Três postes, num mapa quadriculado: xis um, ípsilon um; xis três, ípsilon cinco; e xis cinco, ípsilon dez. Eles estão na mesma reta? No desenho, parece que sim. Não estão, e uma conta curta prova isso.
+
+Até o fim desta aula, você mede a inclinação de uma reta, liga essa medida a um ângulo e testa se três pontos estão alinhados.
+
+Para acompanhar, você precisa de duas coisas: a taxa de variação da função afim, delta ípsilon dividido por delta xis; e a tangente, cateto oposto dividido pelo adjacente, que dá um em quarenta e cinco graus. Se faltar alguma, procure no canal.
+
+Na geometria analítica, aquela taxa ganha um nome e uma letra: coeficiente angular, a letra eme. É o mesmo á da função afim: quanto a reta sobe a cada passo para a direita.
+
+Pegue os pontos xis um, ípsilon dois, e xis quatro, ípsilon oito. Delta ípsilon: oito menos dois dá seis. Delta xis: quatro menos um dá três. Eme igual a seis dividido por três, que dá dois. A cada passo para a direita, a reta sobe dois.
+
+E de onde vem o nome angular? Desenhe o triângulo da subida: o delta xis deitado e o delta ípsilon em pé. O ângulo entre a reta e a horizontal se chama teta. É o ângulo que a reta faz com o eixo xis.
+
+Para o ângulo teta, o delta ípsilon é o cateto oposto e o delta xis é o adjacente. Oposto dividido por adjacente é a tangente. Então, eme é a tangente de teta. Quanto maior o ângulo, mais em pé fica a reta, e maior o eme.
+
+Teste com um ângulo conhecido. Reta por xis um, ípsilon um, e xis quatro, ípsilon quatro. Sobe três, anda três: três dividido por três dá um. Tangente igual a um: quarenta e cinco graus. E uma reta de sessenta graus tem eme igual a raiz de três. Quando a reta desce, o eme é negativo, e esse ângulo é assunto de outra aula.
+
+Agora, o teste de alinhamento. Três pontos estão na mesma reta quando a inclinação não muda. Calcule o eme do primeiro ao segundo ponto e o eme do segundo ao terceiro. Deu igual: alinhados. Deu diferente: a linha entorta no meio, e eles não estão alinhados.
+
+Nos postes do começo: do primeiro ao segundo, sobe quatro e anda dois: quatro dividido por dois dá dois. Do segundo ao terceiro, sobe cinco e anda dois: cinco dividido por dois dá dois vírgula cinco. A inclinação mudou: não estão alinhados.
+
+Agora, cuidado com o erro mais comum: dividir ao contrário, o delta xis pelo delta ípsilon. Com os pontos de antes, a pessoa faz três dividido por seis, que dá zero vírgula cinco. Mas a reta sobe seis enquanto anda três: ela está mais em pé que a de quarenta e cinco graus, e o eme tem de passar de um. O que sobe vai em cima. O que anda vai embaixo.
+
+Agora o atalho do alinhamento: multiplique em cruz, sem fazer a divisão. Nos postes, as inclinações são quatro dividido por dois e cinco dividido por dois. Quatro vezes dois dá oito. Dois vezes cinco dá dez. Oito não é igual a dez: não estão alinhados.
+
+Funciona porque duas frações são iguais quando os produtos em cruz são iguais: é a proporção. Serve para fugir de divisão que não dá exata. Não compensa quando as divisões são fáceis, como seis dividido por três: aí, calcule o eme direto.
+
+Hora de testar. Os pontos são á, em xis menos um, ípsilon quatro; bê, em xis um, ípsilon um; e cê, em xis cinco, ípsilon menos cinco. Qual é o coeficiente angular de á até bê? E os três pontos estão alinhados?
+
+Pause o vídeo e tente.
+
+Vamos lá. De á até bê: delta ípsilon, um menos quatro, dá menos três. Delta xis, um menos, abre parênteses, menos um, dá dois. Eme igual a menos três dividido por dois, que dá menos um vírgula cinco. Negativo: a reta desce.
+
+De bê até cê: delta ípsilon, menos cinco menos um, dá menos seis. Delta xis, cinco menos um, dá quatro. Em cruz: menos três vezes quatro dá menos doze. Dois vezes menos seis dá menos doze. Deu igual: os três pontos estão alinhados.
+
+Resumindo: eme é delta ípsilon dividido por delta xis, eme é a tangente do ângulo com o eixo xis, e pontos alinhados mantêm o mesmo eme.
+
+Na próxima aula, você escreve a equação de uma reta de três jeitos: reduzida, geral e segmentária. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,37 @@
+De um a cem, quantos números são múltiplos de dois ou de três? São cinquenta múltiplos de dois e trinta e três de três. Muita gente soma e responde oitenta e três. A resposta certa é sessenta e sete.
+
+Até o fim desta aula, você conta uniões sem contar nenhum número duas vezes, com dois e com três conjuntos, e leva um atalho de prova.
+
+Você vai usar duas coisas. A fórmula da união: ene da união é ene de á, mais ene de bê, menos ene da interseção. E o MMC, o menor múltiplo comum. Se faltar alguma, procure no canal.
+
+Primeiro, como contar múltiplos sem listar: divida e ignore o resto. Cem dividido por dois dá cinquenta: cinquenta múltiplos de dois. Cem dividido por três dá trinta e três, e sobra um: trinta e três múltiplos de três. O resto só mostra que o último pedaço não completou mais um múltiplo.
+
+Por que oitenta e três está errado? Números como seis, doze e dezoito são múltiplos de dois e de três ao mesmo tempo. Entraram na conta do dois e na conta do três: foram contados duas vezes.
+
+Quem é múltiplo de dois e de três ao mesmo tempo é múltiplo do MMC, seis. Cem dividido por seis dá dezesseis, e sobra quatro. Tire os repetidos uma vez: cinquenta mais trinta e três, menos dezesseis, dá sessenta e sete.
+
+Esse é o princípio da inclusão-exclusão. Inclua cada conjunto inteiro, e exclua o que foi contado duas vezes. Com dois conjuntos, é a fórmula da união que você já conhece.
+
+E com dois, três ou cinco? Primeiro, some os três conjuntos: múltiplos de cinco são cem dividido por cinco, vinte. Cinquenta mais trinta e três mais vinte dá cento e três.
+
+Depois, tire as duplas, cada uma pelo MMC: de dois e três, os múltiplos de seis: dezesseis. De dois e cinco, os de dez: dez. De três e cinco, os de quinze: seis. Cento e três menos trinta e dois dá setenta e um.
+
+Mas falta um detalhe. Os múltiplos de dois, três e cinco ao mesmo tempo, os de trinta, no miolo do diagrama, foram somados três vezes e tirados três vezes: sumiram da conta. Cem dividido por trinta dá três. Devolva: setenta e um mais três, setenta e quatro.
+
+O erro comum é multiplicar em vez de usar o MMC. Quais números são múltiplos de quatro e de seis ao mesmo tempo? Quem multiplica responde os de vinte e quatro. Mas o doze já é múltiplo de quatro e de seis, e ficou de fora. A resposta são os múltiplos do MMC, doze. O produto só serve quando os números não têm divisor comum além do um, como dois e três.
+
+Agora o atalho: o desenho dos múltiplos se repete a cada MMC. De um a seis, os múltiplos de dois ou de três são dois, três, quatro e seis: quatro números. Até noventa e seis, cabem dezesseis blocos de seis: dezesseis vezes quatro, sessenta e quatro. Sobram noventa e sete a cem, com três números que servem. Sessenta e quatro mais três, sessenta e sete.
+
+Funciona porque a cada seis números, o desenho recomeça igual. Não compensa quando o MMC é grande, como o trinta de dois, três e cinco. Aí, use a conta de incluir e excluir.
+
+Hora de testar. De um a duzentos, quantos números são múltiplos de três ou de cinco?
+
+Pause o vídeo e tente.
+
+Vamos lá. Duzentos dividido por três dá sessenta e seis, e sobra dois. Duzentos dividido por cinco dá quarenta. Os dois ao mesmo tempo: o MMC de três e cinco é quinze. Duzentos dividido por quinze dá treze, e sobra cinco.
+
+Sessenta e seis mais quarenta, menos treze: noventa e três números.
+
+Resumindo: some cada conjunto, tire o que foi contado duas vezes, e, com três conjuntos, devolva o miolo.
+
+Na próxima aula, você conta escolhas em que pode repetir: por exemplo, de quantos jeitos escolher três doces entre quatro sabores, levando sabores iguais se quiser. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

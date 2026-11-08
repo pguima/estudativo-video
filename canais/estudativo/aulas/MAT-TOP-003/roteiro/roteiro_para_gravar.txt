@@ -1,0 +1,37 @@
+Você joga uma moeda cinco vezes. Qual a chance de sair exatamente duas caras? Muita gente responde dois quintos. Mas a chance é cinco dezesseis avos, pouco mais de trinta e um por cento.
+
+Até o fim desta aula, você calcula a chance de algo acontecer um número exato de vezes, e leva um atalho de prova.
+
+Você vai usar duas coisas: chances de jogadas independentes se multiplicam, e o binomial conta de quantos jeitos dá para escolher alguns entre vários. Se faltar alguma, procure no canal.
+
+Comece por uma ordem só: cara, cara, coroa, coroa, coroa. Cada jogada tem chance um meio, e uma jogada não muda a outra. Um meio, multiplicado cinco vezes, dá um trinta e dois avos.
+
+Mas as duas caras podem cair em qualquer par de jogadas: na primeira e na terceira, na quarta e na quinta, e assim por diante. Quantas ordens? É escolher duas jogadas entre cinco: binomial de cinco sobre dois, que dá dez.
+
+Cada ordem tem a mesma chance, um trinta e dois avos. Dez vezes um trinta e dois avos dá dez trinta e dois avos. Dividindo em cima e embaixo por dois: cinco dezesseis avos.
+
+Essa conta tem nome: distribuição binomial. Ela vale quando você repete a mesma tentativa várias vezes, sempre com a mesma chance, sem uma mudar a outra, e cada tentativa tem só dois resultados: sucesso ou fracasso.
+
+A chance de exatamente cá sucessos em ene tentativas tem três partes. Primeiro, o binomial de ene sobre cá. Depois, a chance de sucesso, elevada a cá. Por fim, a chance de fracasso, elevada a ene menos cá, que é o número de fracassos. Multiplique as três. Nos livros, pê é a chance de sucesso, e quê, a de fracasso.
+
+Agora, com chances diferentes. Você joga um dado três vezes. Qual a chance de sair exatamente um seis? Sucesso é o seis: um sexto. Fracasso é qualquer outra face: cinco faces em seis, cinco sextos.
+
+Binomial de três sobre um dá três: o seis pode vir na primeira, na segunda ou na terceira jogada. Um sexto, uma vez. Cinco sextos, duas vezes: vinte e cinco trinta e seis avos. Três vezes um sexto vezes vinte e cinco trinta e seis avos dá setenta e cinco duzentos e dezesseis avos. Dividindo em cima e embaixo por três: vinte e cinco setenta e dois avos, quase trinta e cinco por cento.
+
+O erro comum é esquecer o binomial. Nas cinco moedas, a pessoa calcula a chance de uma ordem só, um trinta e dois avos, e responde pouco mais de três por cento. Mas existem dez ordens com duas caras, e todas contam. Multiplique pelo número de ordens.
+
+Agora o atalho, quando a chance é um meio, como na moeda. Toda ordem tem a mesma chance: um meio elevado a ene. Então a resposta é o número da linha ene do triângulo, dividido por dois elevado a ene.
+
+Cinco moedas: a linha cinco é um, cinco, dez, dez, cinco, um, e dois elevado a cinco é trinta e dois. Nenhuma cara: um trinta e dois avos. Duas caras: dez trinta e dois avos. Três caras: dez trinta e dois avos também. Funciona porque a linha soma dois elevado a ene, o total de ordens. Com chance diferente de um meio, como no dado, use a regra completa.
+
+Hora de testar. Uma prova tem três questões, cada uma com quatro alternativas. Alguém chuta todas. Qual a chance de acertar exatamente duas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Acertar é uma alternativa em quatro: um quarto. Errar é três em quatro: três quartos. Binomial de três sobre dois dá três.
+
+Um quarto, duas vezes: um dezesseis avos. Três quartos, uma vez. Três vezes um dezesseis avos vezes três quartos dá nove sessenta e quatro avos, uns catorze por cento.
+
+Resumindo: conte as ordens com o binomial e multiplique pela chance de uma ordem.
+
+Na próxima aula, uma ideia simples que garante resultados sem calcular chance nenhuma: o princípio da casa dos pombos. Com ele, você mostra que, entre treze pessoas, duas fazem aniversário no mesmo mês. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

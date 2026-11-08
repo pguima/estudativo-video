@@ -1,0 +1,41 @@
+Olhe um favo de mel. As abelhas usam hexágonos, encaixados sem nenhum buraco. Por que não pentágonos? A resposta está num único ângulo.
+
+Até o fim desta aula, você acha o ângulo de qualquer polígono regular, descobre quais deles formam um piso sem buracos e leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: a soma dos ângulos internos de um polígono é ene menos dois, vezes cento e oitenta, e o ângulo externo nasce quando você prolonga um lado. Se faltar alguma, procure no canal.
+
+Polígono regular tem todos os lados iguais e todos os ângulos iguais. As duas exigências juntas. Um losango achatado tem lados iguais, mas ângulos diferentes: não é regular. Um retângulo comprido tem ângulos iguais, mas lados diferentes: também não. O quadrado, que é losango e retângulo ao mesmo tempo, é o quadrilátero regular.
+
+Como os ângulos são iguais, cada ângulo interno é a soma dividida pelo número de lados. No octógono, a soma é seis vezes cento e oitenta, que dá mil e oitenta. Mil e oitenta dividido por oito dá cento e trinta e cinco graus.
+
+No hexágono, a soma é setecentos e vinte. Setecentos e vinte dividido por seis dá cento e vinte graus. No pentágono, a soma é quinhentos e quarenta. Quinhentos e quarenta dividido por cinco dá cento e oito graus.
+
+Agora o ângulo externo. Prolongue um lado do octógono. Entre o prolongamento e o lado vizinho, nasce o externo. Ele e o interno estão sobre uma linha reta: cento e oitenta menos cento e trinta e cinco dá quarenta e cinco graus.
+
+E aqui tem uma regra bonita. Imagine que você caminha pela borda do octógono. Em cada vértice, você vira o ângulo externo. Quando chega de volta ao começo, deu uma volta completa. A soma dos externos é trezentos e sessenta graus, em qualquer polígono convexo.
+
+Cuidado com o erro mais comum: trocar o externo pelo interno. A pessoa faz trezentos e sessenta dividido por oito, acha quarenta e cinco e diz que esse é o ângulo do octógono. Mas quarenta e cinco é agudo, e os cantos do octógono são bem abertos: obtusos. Quarenta e cinco é o externo.
+
+E o atalho prometido: comece pelo externo. Trezentos e sessenta dividido pelo número de lados. Depois, o interno é cento e oitenta menos ele. Octógono: trezentos e sessenta dividido por oito dá quarenta e cinco; cento e oitenta menos quarenta e cinco dá cento e trinta e cinco.
+
+Funciona porque a volta completa não depende do número de lados, e a conta fica bem menor que a da soma. Só vale para polígono regular. Se os ângulos forem diferentes, os externos também são, e só a soma de trezentos e sessenta continua valendo.
+
+Agora o piso. Para cobrir um chão sem buracos e sem peça em cima de peça, os cantos que se encontram num ponto precisam fechar uma volta: trezentos e sessenta graus.
+
+Hexágono regular: cento e vinte graus. Três hexágonos num ponto: três vezes cento e vinte dá trezentos e sessenta. Fecha certinho. É o favo de mel.
+
+Pentágono regular: cento e oito graus. Três pentágonos num ponto: três vezes cento e oito dá trezentos e vinte e quatro. Sobra um buraco de trinta e seis graus. Com quatro pentágonos, quatro vezes cento e oito dá quatrocentos e trinta e dois. Passa da volta, e uma peça fica em cima da outra. Pentágonos regulares não cobrem o piso sozinhos.
+
+A regra: um polígono regular cobre o piso sozinho quando o ângulo interno cabe um número exato de vezes em trezentos e sessenta. Só três passam no teste: o triângulo equilátero, de sessenta graus, o quadrado, de noventa, e o hexágono, de cento e vinte.
+
+Hora de testar. Um polígono regular tem doze lados. Quanto mede cada ângulo interno? E, num piso com dois desses polígonos em cada ponto, que polígono regular completa o encaixe?
+
+Pause o vídeo e tente.
+
+Vamos lá, pelo atalho. Externo: trezentos e sessenta dividido por doze dá trinta. Interno: cento e oitenta menos trinta dá cento e cinquenta graus.
+
+No ponto, cento e cinquenta mais cento e cinquenta dá trezentos. Para fechar a volta, faltam sessenta graus. Sessenta é o ângulo do triângulo equilátero. Conferindo pela soma: dez vezes cento e oitenta dá mil e oitocentos, e mil e oitocentos dividido por doze dá cento e cinquenta. Bateu.
+
+Resumindo: regular tem lados e ângulos iguais. O externo é trezentos e sessenta dividido pelo número de lados, o interno é cento e oitenta menos o externo. E, no piso, os cantos fecham trezentos e sessenta.
+
+Na próxima aula, uma figura sem lado nenhum: a circunferência. Você conhece raio e diâmetro e calcula quanto uma roda anda em cada volta. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

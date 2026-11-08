@@ -1,0 +1,39 @@
+Oito pessoas. Uma comissão de três. Quem usa a conta do pódio responde trezentos e trinta e seis. Mas comissão não tem ouro nem prata. São só cinquenta e seis.
+
+Até o fim desta aula, você conta escolhas em que a ordem não importa, entende de onde vem a divisão e leva um atalho de prova.
+
+Você vai usar o arranjo: escolher alguns em uma ordem que importa, multiplicando descendo do total, um número por lugar. E o teste da troca. Se faltar alguma, procure no canal.
+
+Faça o teste da troca. Pegue uma comissão: Ana, Bia e Caio. Troque a ordem: Bia, Caio e Ana. Continua a mesma comissão: as mesmas três pessoas, sem cargo. A ordem não importa.
+
+Então, de onde saiu o trezentos e trinta e seis? O arranjo conta cada ordem como um resultado diferente. Liste as ordens de Ana, Bia e Caio: são seis. No arranjo, são seis resultados. Na comissão, um só.
+
+Por que seis? Três pessoas se arrumam em fila de três fatorial jeitos: três vezes dois vezes um dá seis. E isso vale para toda comissão: cada uma aparece seis vezes no arranjo.
+
+Então divida pelas repetições. Trezentos e trinta e seis dividido por seis dá cinquenta e seis comissões.
+
+Escolher alguns sem que a ordem importe se chama combinação. A regra: faça o arranjo e divida pelo fatorial de quantos foram escolhidos.
+
+Na fórmula, ene é o total e pê é quantos você escolhe. Em cima, o arranjo: pê números descendo do ene. Embaixo, pê fatorial. Nos livros, ela aparece toda em fatoriais: ene fatorial dividido por pê fatorial vezes o fatorial de ene menos pê. É a mesma conta, só que sem cortar.
+
+E se você escolher todos os oito? Embaixo aparece zero fatorial, que vale um. A conta dá um: uma comissão só, com todo mundo dentro. Faz sentido: não sobrou ninguém para escolher.
+
+Mais um exemplo. Uma pizzaria faz pizza meio a meio, com dois sabores diferentes, entre cinco sabores. Calabresa com queijo é a mesma pizza que queijo com calabresa: combinação. Cinco vezes quatro dá vinte. Vinte dividido por dois fatorial dá dez pizzas.
+
+O erro comum é dividir só pelo número de escolhidos. A pessoa faz trezentos e trinta e seis dividido por três e responde cento e doze. Mas cada comissão não aparece três vezes no arranjo. Aparece seis vezes: uma para cada ordem. Divida por três fatorial, não por três.
+
+Agora o atalho: escolher quem entra é o mesmo que escolher quem fica de fora. Uma comissão de oito pessoas entre dez? Escolha quem fica de fora: só duas pessoas. Dez vezes nove dá noventa. Noventa dividido por dois fatorial dá quarenta e cinco.
+
+Funciona porque cada comissão de oito deixa exatamente duas pessoas de fora, e cada dupla de fora forma uma comissão só. Compensa quando você escolhe mais da metade. Escolhendo menos da metade, faça a conta direto. Sete pessoas entre nove? Pense nas duas de fora: nove vezes oito dividido por dois dá trinta e seis.
+
+Hora de testar. Numa turma de onze pessoas, o professor vai formar uma dupla para apresentar um trabalho. Quantas duplas são possíveis? E de quantos jeitos você escolhe três livros entre seis para levar numa viagem?
+
+Pause o vídeo e tente.
+
+Vamos lá. Na dupla, trocar a ordem não muda nada: combinação. Onze vezes dez dá cento e dez. Cento e dez dividido por dois fatorial dá cinquenta e cinco duplas.
+
+Nos livros, também não há ordem. Seis vezes cinco vezes quatro dá cento e vinte. Cento e vinte dividido por três fatorial, que é seis, dá vinte jeitos.
+
+Resumindo: a ordem não importa? É combinação. Faça o arranjo e divida pelo fatorial de quantos foram escolhidos.
+
+Na próxima aula, as comissões ganham regras: dois homens entre cinco e duas mulheres entre quatro, e o famoso pelo menos um. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

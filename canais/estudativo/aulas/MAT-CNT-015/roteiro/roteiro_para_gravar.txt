@@ -1,0 +1,39 @@
+Uma pessoa é sorteada numa turma. Antes de dizer o nome, alguém dá uma pista: a pessoa sorteada usa óculos. Essa pista muda a chance de ter sido uma mulher? Muda. E quem ignora a pista erra a conta.
+
+Até o fim desta aula, você usa a pista para encolher o espaço amostral, faz isso numa tabela e leva um atalho de prova.
+
+Você vai usar duas coisas: probabilidade é favoráveis sobre possíveis, e o espaço amostral é a lista de todos os resultados possíveis. Se faltar alguma, procure no canal.
+
+Comece com um dado. A chance de sair seis é um sexto. Agora, alguém olha o dado e avisa: saiu número par. E agora, qual a chance de ser seis?
+
+Com a pista, o um, o três e o cinco estão fora. Sobram só o dois, o quatro e o seis. O espaço amostral encolheu para três resultados. A chance de ser seis subiu para um terço.
+
+Isso é probabilidade condicional: a chance de um evento, sabendo que outro já aconteceu. A regra é uma só: a pista vira o novo total. O que está fora da pista sai da conta.
+
+Na prova, aparece pê de á, barra, bê. A barra em pé se lê dado que, ou sabendo que. Embaixo vai a quantidade de casos de bê, a pista. Em cima, os casos de á que também estão em bê: a interseção.
+
+Agora a turma, com quarenta alunos. São dezoito homens: seis usam óculos e doze não usam. E vinte e duas mulheres: dez usam óculos e doze não usam.
+
+Na tabela, cada linha é homens ou mulheres. Cada coluna é com ou sem óculos. Somando a coluna dos óculos: seis mais dez dá dezesseis alunos de óculos.
+
+A pergunta: chance de ser mulher, sabendo que usa óculos. A pista é usa óculos. Então o novo total é a coluna dos óculos: dezesseis. Desses, dez são mulheres.
+
+A chance é dez dezesseis avos. Dividindo por dois: cinco oitavos, que dá sessenta e dois e meio por cento.
+
+O erro comum é dividir pela turma inteira: dez quarenta avos, que dá um quarto. Mas essa é outra pergunta: a chance de sortear alguém que é mulher e usa óculos, sem pista nenhuma. Com a pista, quem não usa óculos já saiu da conta.
+
+E a ordem importa. Chance de usar óculos, sabendo que é mulher? Agora a pista é ser mulher: o total vira a linha das mulheres, vinte e duas. Fica dez vinte e dois avos, ou cinco onze avos. Outra pista, outra resposta.
+
+Agora o atalho: ache a pista na frase e cubra o resto da tabela. Viu sabendo que, dado que ou entre os que? O que vem depois é o novo total. Use só aquela linha ou coluna.
+
+Funciona porque a pista elimina todo o resto. Mas não confie só na palavra: às vezes a pista vem escondida, como em um aluno de óculos foi sorteado. Aí, pergunte: quem ainda pode ter sido sorteado?
+
+Hora de testar. Uma empresa tem cinquenta funcionários. No turno da manhã, dezoito vão de ônibus e doze vão de carro. No da tarde, oito vão de ônibus e doze vão de carro. Um funcionário que vai de ônibus é sorteado. Qual a chance de ele ser do turno da manhã?
+
+Pause o vídeo e tente.
+
+Vamos lá. A pista está escondida: vai de ônibus. O novo total é a coluna do ônibus: dezoito mais oito dá vinte e seis. Desses, dezoito são da manhã. A chance é dezoito vinte e seis avos. Dividindo por dois: nove treze avos, quase setenta por cento.
+
+Resumindo: a pista vira o novo total. Em cima, só quem cumpre as duas condições ao mesmo tempo.
+
+E quando a pista não muda nada? Saber que a moeda deu cara muda a chance de o dado dar seis? Na próxima aula: eventos independentes, e por que aí você multiplica as chances. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,37 @@
+Quarenta metros de cerca para fechar um cercado retangular. Dezenove metros por um dá dezenove metros quadrados de área. Quinze por cinco dá setenta e cinco. Mesma cerca, áreas bem diferentes. Qual é a maior possível?
+
+Até o fim desta aula, você acha o retângulo de maior área para uma cerca dada, montando uma função e achando o vértice, e leva um atalho de prova.
+
+Você precisa de três coisas: a área do retângulo é base vezes altura; o perímetro é a soma da volta inteira; e o xis do vértice da parábola é a média das raízes, ou menos bê dividido por dois á. Se faltar alguma, procure no canal.
+
+Quarenta metros de volta inteira são vinte de meia volta. Então base mais altura dá vinte. Chame a base de xis. A altura é o que falta para vinte: vinte menos xis.
+
+A área é base vezes altura: á de xis igual a xis vezes vinte menos xis, com o vinte menos xis entre parênteses. É uma função: cada base dá uma área. Fazendo a distributiva, vinte xis menos xis ao quadrado.
+
+Tem xis ao quadrado, então o gráfico é uma parábola. O número na frente do xis ao quadrado é menos um: a parábola abre para baixo. O vértice é o ponto mais alto: a maior área possível.
+
+As raízes vêm de graça. Um produto só dá zero quando um fator vale zero: xis igual a zero, ou xis igual a vinte. Faz sentido: com base zero ou altura zero, o retângulo fica achatado, sem área nenhuma.
+
+O xis do vértice é a média das raízes: zero mais vinte dá vinte, dividido por dois dá dez. Pela fórmula, o mesmo. Aqui, o á da fórmula não é a área: é o número na frente do xis ao quadrado, menos um, e o bê é o número na frente do xis, vinte. Menos vinte dividido por menos dois dá dez.
+
+Base dez, altura vinte menos dez, que dá dez. É um quadrado! Área: dez vezes dez dá cem metros quadrados. Mais que os setenta e cinco do quinze por cinco, e nenhum retângulo com essa cerca passa de cem.
+
+O erro mais comum é usar a volta inteira no lugar da meia volta. A pessoa escreve xis vezes quarenta menos xis, acha o vértice em vinte e responde um quadrado de vinte por vinte. Mas a volta desse quadrado tem oitenta metros: o dobro da cerca. Confira sempre o perímetro da resposta.
+
+Agora o atalho: quando a cerca dá a volta inteira, o maior retângulo é o quadrado. O lado é o perímetro dividido por quatro: quarenta dividido por quatro dá dez.
+
+Funciona porque as raízes são sempre zero e a meia volta, e o vértice fica bem no meio: base e altura ficam iguais. Não compensa quando a cerca não dá a volta inteira, como num cercado encostado num muro. Aí, monte a função.
+
+Hora de testar. Um cercado retangular fica encostado num muro, e o muro faz um dos lados. Os outros três lados usam quarenta metros de cerca. Quais medidas dão a maior área, e que área é essa?
+
+Pause o vídeo e tente.
+
+Vamos lá. Chame de xis cada lado que sai do muro. Esses lados gastam dois xis de cerca, e o lado de frente para o muro fica com o que sobra, quarenta menos dois xis. A área: á de xis igual a xis vezes quarenta menos dois xis.
+
+As raízes: xis igual a zero, ou quarenta menos dois xis igual a zero, que dá xis igual a vinte. A média dá dez. Os lados que saem do muro medem dez metros, e o da frente, quarenta menos vinte, que dá vinte metros.
+
+Área: dez vezes vinte dá duzentos metros quadrados. Não é um quadrado! Por quê? Espelhe o cercado do outro lado do muro. Fica um retângulo com a volta inteira de cerca, e a cerca dobra para oitenta metros. Com a volta inteira, o maior é o quadrado, de vinte por vinte. O seu cercado é a metade dele, com dez por vinte. Conferindo a cerca: dez mais dez mais vinte dá quarenta. Bateu.
+
+Resumindo: escreva a área em função de um lado e ache o vértice. Com a volta inteira de cerca, a resposta é o quadrado.
+
+Na próxima aula, é hora de praticar: escolher a fórmula certa para cada figura, converter unidades e calcular o custo de piso, cerca e pintura. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

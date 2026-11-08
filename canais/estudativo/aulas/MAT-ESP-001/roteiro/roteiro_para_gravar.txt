@@ -1,0 +1,47 @@
+Um dado tem seis faces e oito pontas. Quantas dobras ele tem, entre uma face e outra? Dá para responder sem contar nenhuma. Basta uma conta com três números, que vale para muitos sólidos.
+
+Até o fim desta aula, você separa os sólidos em dois grupos, conta faces, arestas e vértices e leva um atalho de prova.
+
+Para acompanhar, você precisa de duas coisas: polígono é uma figura plana e fechada, feita só de lados retos, com cantos chamados vértices; e na conta das diagonais, cada uma entrava duas vezes, uma por ponta. Se faltar alguma, procure no canal.
+
+Uma figura plana cabe numa folha de papel. Um sólido ocupa espaço: tem comprimento, largura e altura. Como uma caixa de sapato, uma lata ou uma bola.
+
+Os sólidos se dividem em dois grupos. Poliedro é o sólido feito só de faces planas, e cada face é um polígono. Como o dado e a caixa de sapato.
+
+Corpo redondo é o sólido que tem alguma parte curva. Os famosos são três: o cilindro, como a lata; o cone, como a casquinha de sorvete; e a esfera, como a bola. Um teste rápido: corpo redondo rola na mesa, se você deitar do jeito certo.
+
+Entre os poliedros, dois tipos aparecem muito. O prisma tem duas bases iguais, uma de frente para a outra, ligadas por retângulos. A caixa de sapato é um prisma chamado paralelepípedo, ou bloco. E o cubo é o bloco com todas as faces quadradas.
+
+A pirâmide tem uma base só, e as outras faces são triângulos que se encontram num ponto lá em cima. A base dá o sobrenome: base quadrada, pirâmide quadrangular; base triangular, pirâmide triangular.
+
+Agora, as partes de um poliedro, no cubo. Face é cada polígono da casca. Aresta é o encontro de duas faces: a dobra. Vértice é a ponta, onde as arestas se juntam.
+
+No desenho, o cubo aparece em perspectiva, como numa foto. As arestas que ficam escondidas atrás aparecem tracejadas. Elas contam do mesmo jeito.
+
+Contando no cubo: quatro vértices em cima e quatro embaixo dá oito. Arestas: quatro em cima, quatro embaixo e quatro em pé dá doze. E seis faces.
+
+Repare numa conta curiosa: vértices, menos arestas, mais faces. No cubo, oito menos doze mais seis dá dois.
+
+Na pirâmide quadrangular: cinco vértices, quatro embaixo e a ponta; oito arestas, quatro na base e quatro subindo; cinco faces, a base e quatro triângulos. Cinco menos oito mais cinco dá dois de novo.
+
+Essa é a relação de Euler: vê menos á mais efe igual a dois. Vê é o número de vértices, á, o de arestas, e efe, o de faces. Ela vale nos poliedros convexos, sem nenhuma parte afundada, que são os que caem em prova.
+
+Ela serve para achar o número que falta. Um poliedro tem oito vértices e seis faces. Oito menos á mais seis igual a dois. Catorze menos á igual a dois. Á igual a doze arestas, as do dado do começo.
+
+O erro mais comum é contar as arestas face por face. O cubo tem seis faces de quatro lados, e a pessoa faz seis vezes quatro, que dá vinte e quatro arestas. Mas cada aresta é a dobra entre duas faces: ela entrou na conta uma vez por face. Vinte e quatro é o dobro do certo.
+
+E daí sai o atalho: some os lados de todas as faces e divida por dois. Um poliedro de vinte faces, todas triangulares: vinte vezes três dá sessenta lados. Sessenta dividido por dois dá trinta arestas.
+
+Funciona porque cada aresta é lado de exatamente duas faces, como a diagonal que tinha duas pontas. Não compensa quando você não sabe a forma das faces: aí, use Euler. E o atalho e Euler, juntos, resolvem tudo: no poliedro de vinte faces, vê menos trinta mais vinte igual a dois. Então vê vale doze vértices.
+
+Hora de testar. Uma caixa de presente é um prisma de base hexagonal: duas bases de seis lados, ligadas por retângulos. Quantas faces ela tem? Quantos vértices? E, pela relação de Euler, quantas arestas?
+
+Pause o vídeo e tente.
+
+Vamos lá. Faces: a base de cima, a de baixo e um retângulo para cada lado do hexágono. Dois mais seis dá oito faces. Vértices: seis em cada base, então seis vezes dois dá doze.
+
+Euler: doze menos á mais oito igual a dois. Vinte menos á igual a dois. Á igual a dezoito arestas. Conferindo pelo atalho: as bases têm doze lados, e os seis retângulos, vinte e quatro. Trinta e seis dividido por dois dá dezoito. Bateu.
+
+Resumindo: poliedro só tem faces planas, e corpo redondo tem parte curva. E, nos poliedros, vê menos á mais efe dá dois.
+
+Na próxima aula, você desmonta esses sólidos e abre no papel: as planificações. E descobre qual face de um cubo fica de frente para qual, olhando só o molde. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

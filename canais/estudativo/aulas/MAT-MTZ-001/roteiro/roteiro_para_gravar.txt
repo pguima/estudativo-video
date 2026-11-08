@@ -1,0 +1,47 @@
+Olhe esta tabela de números. Quanto vale o elemento a dois um? Se você respondeu cinco, leu na ordem errada. A resposta é três.
+
+Até o fim desta aula, você monta uma matriz, acha a transposta, soma e multiplica por número, e ainda leva um atalho de prova.
+
+Para acompanhar, você só precisa de uma coisa: trocar a letra por um número e fazer a conta. Por exemplo, dois xis menos três, para xis igual a cinco, dá dez menos três, sete. Se faltar, procure no canal.
+
+Pense no boletim de dois alunos, em três provas. Ana tirou sete, cinco e oito. Bruno tirou seis, nove e quatro.
+
+Tire os nomes, cerque os números com colchetes, e você tem uma matriz: números organizados em linhas, que ficam deitadas, e colunas, que ficam em pé.
+
+Essa matriz tem duas linhas e três colunas. Por isso, ela é uma matriz dois por três. Sempre as linhas primeiro, depois as colunas.
+
+Cada número da matriz é um elemento, e cada elemento tem um endereço. a um três é o elemento da linha um, coluna três: a nota da Ana na terceira prova, oito.
+
+Os números pequenos dizem primeiro a linha, depois a coluna. Para falar de qualquer elemento, a linha vira a letra i, e a coluna vira a letra jota. a i jota é o elemento da linha i, coluna jota.
+
+Às vezes, a questão não dá os números. Ela dá uma regra para montar a matriz. Por exemplo: matriz dois por dois, com a i jota igual a i mais jota. É trocar letra por número, como no valor numérico.
+
+Linha um, coluna um: um mais um, dois. Linha um, coluna dois: um mais dois, três. Linha dois, coluna um: dois mais um, três. Linha dois, coluna dois: dois mais dois, quatro.
+
+A transposta de uma matriz troca linhas por colunas. A primeira linha vira a primeira coluna. A segunda linha vira a segunda coluna. Ela leva um tê pequeno no alto do nome.
+
+No boletim, cada aluno passa a ser uma coluna. A matriz dois por três vira três por dois.
+
+Para somar duas matrizes, some cada elemento com o elemento do mesmo lugar. Dois mais um, três. Três com menos um, dois. Três mais zero, três. Quatro mais cinco, nove.
+
+Por isso, só dá para somar matrizes do mesmo tamanho. Uma dois por dois com uma dois por três? Sobram elementos sem par, e a soma não existe.
+
+E três vezes uma matriz? O três multiplica cada elemento. Três vezes dois, três, três, quatro dá seis, nove, nove, doze.
+
+Agora, cuidado com o erro mais comum: ler o endereço ao contrário. a dois um é linha dois, coluna um: o três. Quem vai primeiro na coluna pega o cinco, que é o a um dois. Linha primeiro, sempre.
+
+Agora o atalho: se a regra não muda quando você troca i por jota, a transposta é a própria matriz. i mais jota dá o mesmo que jota mais i, então a transposta de dois, três, três, quatro é ela mesma. Não precisa montar.
+
+Funciona porque a transposta troca o elemento i jota com o elemento jota i. Se eles são iguais, nada muda. Não vale para i menos jota: um menos dois dá menos um, mas dois menos um dá um.
+
+Hora de testar. A matriz A é dois por dois, com a i jota igual a dois i menos jota. Calcule A mais a transposta de A.
+
+Pause o vídeo e tente.
+
+Vamos lá. Dois i é duas vezes o número da linha. Na linha um: dois menos um, um, e dois menos dois, zero. Na linha dois: quatro menos um, três, e quatro menos dois, dois.
+
+A transposta põe as linhas em pé: um e três em cima, zero e dois embaixo. Somando lugar com lugar: dois, três, três, quatro. A matriz do i mais jota de novo.
+
+Resumindo: primeiro a linha, depois a coluna. Na soma, lugar com lugar. O número multiplica todos os elementos.
+
+Na próxima aula, você multiplica uma matriz por outra, linha por coluna, e descobre que a ordem muda o resultado. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

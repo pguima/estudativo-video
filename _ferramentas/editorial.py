@@ -1068,7 +1068,7 @@ def _ler(s, i=0, fim=None):
             else:
                 dentro, i = [("t", s[i + 1])], i + 2
             nos.append(("e", dentro))
-        elif ch == "r" and i + 1 < len(s) and (s[i + 1] == "{" or (s[i + 1].isdigit() and s[i + 2] == "{")):
+        elif ch == "r" and i + 1 < len(s) and (s[i + 1] == "{" or (s[i + 1] in "0123456789" and i + 2 < len(s) and s[i + 2] == "{")):
             solta()
             ind = None
             i += 1
@@ -1295,3 +1295,1490 @@ def capa_modelo(c, materia, l1, l2, it):
     escreve(c, l2, 76, 660, 210, "g", tom)
     escreve(c, it, 84, 860, 170, "i", tom)
     (mais if MATERIAS[materia]["forma"] == "mais" else bola)(c, 1640, 760, 210, mix(cor, "#FFFFFF", 0.82), 1.0)
+
+
+# =====================================================================================================================
+# geometria, gráficos e diagramas: todas recebem (c, t, t0, ...), entram com animação e usam a cor da matéria.
+# Rótulos aceitam a escrita de E.formula ("f{1}{2}", "r{3}", "x^2"); letra grega sai na grotesca, porque a serifada não tem.
+# =====================================================================================================================
+def _num(v):
+    """número para a tela: 3 → "3", -2 → "−2", 2.5 → "2,5\""""
+    if isinstance(v, str):
+        return v
+    v = float(v)
+    s = str(int(round(v))) if abs(v - round(v)) < 1e-9 else f"{v:.2f}".rstrip("0").rstrip(".").replace(".", ",")
+    return s.replace("-", "−")
+
+
+def _est(s, estilo):
+    """a serifada não tem letra grega nem raiz: nesses casos o rótulo sai na grotesca bold"""
+    if estilo in "is":
+        f = fonte(estilo, 40)
+        if any(g == 0 for g in f.textToGlyphs(re.sub(r"[{}^]", "", s))):
+            return "b"
+    return estilo
+
+
+def _mede(s, size, estilo):
+    """largura e meia altura do rótulo (fração ocupa dois andares)"""
+    estilo = _est(s, estilo)
+    return formula(None, s, 0, 0, size, estilo, a=0), size * (0.75 if "f{" in s else 0.37)
+
+
+def _meio(c, s, cx, cy, size, estilo="b", cor=None, a=1.0):
+    """rótulo centrado em (cx, cy), nas duas direções"""
+    if a <= 0 or s is None or s == "":
+        return
+    s = _num(s)
+    estilo = _est(s, estilo)
+    formula(c, s, cx, cy + size * 0.36, size, estilo, cor or TINTA, a, "center")
+
+
+def _cola(c, s, x, y, nx, ny, gap, size, estilo="b", cor=None, a=1.0):
+    """rótulo encostado no ponto (x, y) pelo lado da direção (nx, ny): a borda mais próxima fica a `gap` px do ponto"""
+    if s is None or s == "":
+        return
+    s = _num(s)
+    n = math.hypot(nx, ny) or 1.0
+    nx, ny = nx / n, ny / n
+    w, hh = _mede(s, size, estilo)
+    k = gap + min(abs(nx) * w / 2 + abs(ny) * hh, math.hypot(w / 2, hh))
+    _meio(c, s, x + nx * k, y + ny * k, size, estilo, cor, a)
+
+
+def _uni(ax, ay, bx, by):
+    dx, dy = bx - ax, by - ay
+    n = math.hypot(dx, dy) or 1.0
+    return dx / n, dy / n
+
+
+def _ponto_px(c, x, y, r, cor, a):
+    if a > 0:
+        c.drawCircle(x, y, r, M.paint(cor, a))
+
+
+TRACO = [16, 12]  # tracejado das linhas auxiliares e das arestas ocultas
+
+
+# ---------------- plano cartesiano ----------------
+class Plano:
+    """o que E.plano devolve: x(v) e y(v) levam valor a pixel, p(x, y) faz os dois; caixa = (x, y, w, h) do gráfico"""
+
+    def __init__(s, x, y, w, h, xmin, xmax, ymin, ymax, escuro=False):
+        s.caixa, s.xmin, s.xmax, s.ymin, s.ymax, s.escuro = (x, y, w, h), xmin, xmax, ymin, ymax, escuro
+        s.ox = s.x(0) if xmin <= 0 <= xmax else x  # onde passa cada eixo
+        s.oy = s.y(0) if ymin <= 0 <= ymax else y + h
+
+    def x(s, v):
+        return s.caixa[0] + (float(v) - s.xmin) / (s.xmax - s.xmin) * s.caixa[2]
+
+    def y(s, v):
+        return s.caixa[1] + s.caixa[3] - (float(v) - s.ymin) / (s.ymax - s.ymin) * s.caixa[3]
+
+    def p(s, x, y):
+        return s.x(x), s.y(y)
+
+    __call__ = p
+
+
+def _marcas(vmin, vmax, passo):
+    k0 = math.ceil(vmin / passo - 1e-9)
+    out, k = [], k0
+    while k * passo <= vmax + 1e-9:
+        out.append(round(k * passo, 10))
+        k += 1
+    return out
+
+
+def plano(c, t, t0, x, y, w, h, xmin, xmax, ymin, ymax, passo=1, passo_y=None, marcas_x=None, marcas_y=None, grade=True,
+          nomes=("x", "y"), fmt=None, size=40, escuro=False, d=0.6, rotulos=True):
+    """plano cartesiano na caixa (x, y, w, h), com eixos em seta, marcas, rótulos e grade. Devolve um Plano: P.x(v), P.y(v), P(x, y).
+    marcas_x/marcas_y = valores rotulados (senão, de `passo` em `passo`); fmt = valor → texto; rotulos=False só põe os traços."""
+    P = Plano(x, y, w, h, xmin, xmax, ymin, ymax, escuro)
+    tinta = "#FFFFFF" if escuro else TINTA
+    fmt = fmt or _num
+    mx = marcas_x if marcas_x is not None else _marcas(xmin, xmax, passo)
+    my = marcas_y if marcas_y is not None else _marcas(ymin, ymax, passo_y or passo)
+    if grade and t >= t0:
+        q = ep(t, t0, 0.8) * (0.14 if escuro else 1)
+        for v in _marcas(xmin, xmax, passo):
+            M.line(c, P.x(v), y, P.x(v), y + h, CLARO if escuro else FIO, q, 2)
+        for v in _marcas(ymin, ymax, passo_y or passo):
+            M.line(c, x, P.y(v), x + w, P.y(v), CLARO if escuro else FIO, q, 2)
+    if t >= t0:
+        p = ep(t, t0, d)
+        M.arrow(c, x - 10, P.oy, x + w + 44, P.oy, tinta, 1.0, 5, 22, p)
+        M.arrow(c, P.ox, y + h + 10, P.ox, y - 44, tinta, 1.0, 5, 22, p)
+    nx_, ny_ = nomes
+    foco(c, t, t0 + d * 0.8, 0.4, lambda a: _meio(c, nx_, x + w + 44, P.oy + 42, 56, "i", tinta, a))
+    foco(c, t, t0 + d * 0.8, 0.4, lambda a: _cola(c, ny_, P.ox + 16, y - 30, 1, 0, 0, 56, "i", tinta, a))
+    zero = False
+    for i, v in enumerate(mx):
+        if abs(v) < 1e-12 and P.ox == P.x(0):
+            zero = True
+            continue
+        X = P.x(v)
+        foco(c, t, t0 + 0.2 + i * 0.03, 0.4, lambda a, X=X, v=v: (
+            M.line(c, X, P.oy - 10, X, P.oy + 10, tinta, a, 4),
+            rotulos and centro(c, fmt(v), X, P.oy + 14 + size, size, "b", tinta, a)), sobe=6)
+    for i, v in enumerate(my):
+        if abs(v) < 1e-12 and P.oy == P.y(0):
+            continue
+        Y = P.y(v)
+        foco(c, t, t0 + 0.2 + i * 0.03, 0.4, lambda a, Y=Y, v=v: (
+            M.line(c, P.ox - 10, Y, P.ox + 10, Y, tinta, a, 4),
+            rotulos and escreve(c, fmt(v), P.ox - 22 - larg(fmt(v), "b", size), Y + size * 0.36, size, "b", tinta, a)), sobe=6)
+    if zero and rotulos:
+        foco(c, t, t0 + 0.2, 0.4, lambda a: escreve(c, "0", P.ox - 16 - larg("0", "b", size), P.oy + 14 + size, size, "b", tinta, a))
+    return P
+
+
+def ponto(c, t, t0, P, x, y, rotulo=None, guias=False, valores=False, cor=None, r=13, lado=(1, -1), size=48, d=0.5):
+    """ponto (x, y) no plano P, com rótulo do lado (dx, dy) (1, −1 = acima à direita). guias = tracejado até os eixos;
+    valores = escreve x e y na ponta das guias (para valor fora das marcas)"""
+    cor = cor or COR
+    tinta = "#FFFFFF" if P.escuro else TINTA
+    X, Y = P(x, y)
+    if guias and t >= t0:
+        q = ep(t, t0 + 0.1, d)
+        M.line(c, X, Y, X, P.oy, tinta, 0.75, 4, dash=TRACO, progress=q)
+        M.line(c, X, Y, P.ox, Y, tinta, 0.75, 4, dash=TRACO, progress=q)
+    if valores:
+        foco(c, t, t0 + 0.3, 0.4, lambda a: (
+            centro(c, _num(x), X, P.oy + (14 + size if y >= 0 else -24), size * 0.9, "g", COR_TEXTO, a),
+            escreve(c, _num(y), P.ox - 22 - larg(_num(y), "g", size * 0.9), Y + size * 0.32, size * 0.9, "g", COR_TEXTO, a)))
+    k = ease_back(prog(t, t0, 0.45))
+    if k > 0:
+        _ponto_px(c, X, Y, r * k, cor, 1.0)
+    if rotulo:
+        foco(c, t, t0 + 0.2, 0.4, lambda a: _cola(c, rotulo, X, Y, lado[0], lado[1], r + 8, size, "b", COR_TEXTO if not P.escuro else CLARO, a))
+    return X, Y
+
+
+def _avalia(f, x):
+    try:
+        v = f(x)
+        if isinstance(v, complex) or v is None:
+            return None
+        v = float(v)
+        return v if math.isfinite(v) else None
+    except (ZeroDivisionError, ValueError, OverflowError, TypeError):
+        return None
+
+
+def _trechos(P, f, a, b, n):
+    """amostra f em [a, b] e corta nos furos e assíntotas: sem valor, ou um salto de mais de uma tela entre duas amostras"""
+    x, y, w, h = P.caixa
+    trechos, atual, ant = [], [], None
+    for i in range(n + 1):
+        xv = a + (b - a) * i / n
+        v = _avalia(f, xv)
+        if v is None:
+            if len(atual) > 1:
+                trechos.append(atual)
+            atual, ant = [], None
+            continue
+        py = P.y(v)
+        if ant is not None:
+            fora = (ant < y and py > y + h) or (ant > y + h and py < y)
+            if fora or abs(py - ant) > h * 1.2:
+                if len(atual) > 1:
+                    trechos.append(atual)
+                atual = []
+        atual.append((P.x(xv), clamp(py, y - 2 * h, y + 3 * h), xv))
+        ant = py
+    if len(atual) > 1:
+        trechos.append(atual)
+    return trechos
+
+
+def curva(c, t, t0, P, f, a=None, b=None, d=1.2, cor=None, largura=7, n=700, rotulo=None, em=None, size=52, tracejada=False):
+    """gráfico de f no plano P, desenhado da esquerda para a direita em d segundos. Corta sozinho em assíntota e furo (1/x, tg x, log x).
+    rotulo = nome da curva ("f(x) = x^2"), posto em `em` = (x, y) em valores (senão, perto do fim do traço)"""
+    if t < t0:
+        return
+    cor = cor or COR
+    a = P.xmin if a is None else a
+    b = P.xmax if b is None else b
+    p = ease_io(prog(t, t0, d))
+    lim = a + (b - a) * p
+    x, y, w, h = P.caixa
+    c.save()
+    c.clipRect(skia.Rect.MakeXYWH(x - 6, y - 6, w + 12, h + 12), True)
+    pt = M.paint(cor, 1.0, stroke=largura, cap_round=True)
+    pt.setStrokeJoin(skia.Paint.kRound_Join)
+    if tracejada:
+        pt.setPathEffect(skia.DashPathEffect.Make(TRACO, 0))
+    ult = None
+    for tr in _trechos(P, f, a, b, n):
+        path, ok = skia.Path(), False
+        for i, (px, py, xv) in enumerate(tr):
+            if xv > lim + 1e-12:
+                break
+            path.lineTo(px, py) if ok else path.moveTo(px, py)
+            ok = True
+            if y - 2 <= py <= y + h + 2:
+                ult = (px, py)
+        if ok:
+            c.drawPath(path, pt)
+    c.restore()
+    if rotulo:
+        if em is not None:
+            lx, ly = P(*em)
+            foco(c, t, t0 + d * 0.8, 0.5, lambda q: _meio(c, rotulo, lx, ly, size, "b", COR_TEXTO if not P.escuro else CLARO, q))
+        elif ult:
+            lx, ly = ult
+            foco(c, t, t0 + d * 0.8, 0.5, lambda q: _cola(c, rotulo, lx, ly, -1, 1 if ly < y + 80 else -1, 18, size, "b", COR_TEXTO if not P.escuro else CLARO, q))
+
+
+def _corta_caixa(x0, y0, x1, y1, cx, cy, cw, ch):
+    """recorte de um segmento numa caixa (Liang-Barsky); devolve None se ficar todo fora"""
+    dx, dy = x1 - x0, y1 - y0
+    u0, u1 = 0.0, 1.0
+    for p_, q_ in ((-dx, x0 - cx), (dx, cx + cw - x0), (-dy, y0 - cy), (dy, cy + ch - y0)):
+        if abs(p_) < 1e-12:
+            if q_ < 0:
+                return None
+            continue
+        r = q_ / p_
+        if p_ < 0:
+            u0 = max(u0, r)
+        else:
+            u1 = min(u1, r)
+    if u0 > u1:
+        return None
+    return x0 + dx * u0, y0 + dy * u0, x0 + dx * u1, y0 + dy * u1
+
+
+def reta_pontos(c, t, t0, P, A, B, cor=None, largura=7, pontos=True, rotulos=(None, None), rotulo=None, d=0.8, size=48):
+    """reta que passa por A = (x1, y1) e B = (x2, y2), de borda a borda do plano; pontos = marca A e B (com rotulos).
+    rotulo = nome da reta, perto da borda direita"""
+    cor = cor or COR
+    (ax, ay), (bx, by) = P(*A), P(*B)
+    dx, dy = bx - ax, by - ay
+    k = 1e4 / (math.hypot(dx, dy) or 1)
+    x, y, w, h = P.caixa
+    seg = _corta_caixa(ax - dx * k, ay - dy * k, ax + dx * k, ay + dy * k, x, y, w, h)
+    if seg and t >= t0:
+        x0, y0, x1, y1 = seg
+        M.line(c, x0, y0, x1, y1, cor, 1.0, largura, progress=ease_io(prog(t, t0, d)))
+        if rotulo:
+            foco(c, t, t0 + d * 0.8, 0.4, lambda q: _cola(c, rotulo, x1, y1, -1, 1 if y1 < y + h / 2 else -1, 20, size, "b", COR_TEXTO if not P.escuro else CLARO, q))
+    if pontos:
+        for i, (pv, rot) in enumerate(zip((A, B), rotulos)):
+            ponto(c, t, t0 + d * 0.5 + 0.15 * i, P, pv[0], pv[1], rot, cor=TINTA if not P.escuro else "#FFFFFF", r=12, lado=(1, 1) if dy < 0 and dx > 0 else (1, -1), size=size)
+
+
+def area(c, t, t0, P, f, a, b, g=None, cor=None, alfa=0.24, d=0.8, n=300):
+    """região entre f e g (ou o eixo x) de a até b, pintada da esquerda para a direita"""
+    if t < t0:
+        return
+    cor = cor or COR
+    g = g or (lambda x: 0.0)
+    xs = [a + (b - a) * i / n for i in range(n + 1)]
+    cima = [(P.x(v), P.y(_avalia(f, v) or 0.0)) for v in xs]
+    baixo = [(P.x(v), P.y(_avalia(g, v) or 0.0)) for v in reversed(xs)]
+    path = skia.Path()
+    path.moveTo(*cima[0])
+    for q in cima[1:] + baixo:
+        path.lineTo(*q)
+    path.close()
+    x, y, w, h = P.caixa
+    p = ease_io(prog(t, t0, d))
+    c.save()
+    c.clipRect(skia.Rect.MakeXYWH(x, y, w, h), True)
+    c.clipRect(skia.Rect.MakeLTRB(P.x(a) - 1, y - 10, lerp(P.x(a), P.x(b), p) + 1, y + h + 10), True)
+    c.drawPath(path, M.paint(cor, alfa))
+    c.restore()
+
+
+# ---------------- gráficos de dados ----------------
+def _passo_bom(span, n=4):
+    """passo redondo para ~n divisões"""
+    bruto = span / n
+    e = 10 ** math.floor(math.log10(bruto))
+    for m in (1, 2, 2.5, 5, 10):
+        if m * e >= bruto - 1e-12:
+            return m * e
+    return 10 * e
+
+
+def _eixo_dados(c, t, t0, x, y, w, h, vmin, vmax, marcas, fmt, size, tinta, grade=True, eixo_y=True):
+    """linha de base e, se pedido, eixo vertical com marcas e grade horizontal fina"""
+    vy = lambda v: y + h - (v - vmin) / (vmax - vmin) * h
+    if grade and t >= t0:
+        for v in marcas:
+            if v != vmin:
+                M.line(c, x, vy(v), x + w, vy(v), FIO, ep(t, t0, 0.6), 2)
+    if eixo_y:
+        if t >= t0:
+            M.line(c, x, y + h, x, y - 20, tinta, 1.0, 4, progress=ep(t, t0, 0.5))
+        for i, v in enumerate(marcas):
+            foco(c, t, t0 + 0.15 + i * 0.04, 0.4, lambda a, v=v: escreve(c, fmt(v), x - 20 - larg(fmt(v), "b", size), vy(v) + size * 0.36, size, "b", TINTA2, a), sobe=6)
+    if t >= t0:
+        M.line(c, x - (10 if eixo_y else 0), y + h, x + w, y + h, tinta, 1.0, 5, progress=ep(t, t0, 0.5))
+    return vy
+
+
+def colunas(c, t, t0, dados, x, y, w, h, vmax=None, cor=None, destaque=(), fmt=None, size=44, deitado=False, passo=0.12,
+            valores=True, eixo_y=False, marcas=None, escuro=False, d=0.6):
+    """gráfico de colunas (deitado=True: barras). dados = [(rótulo, valor[, cor])]; destaque = índices na cor da matéria, os outros em cinza
+    (sem destaque, todas na cor da matéria). Cada coluna cresce no seu tempo e ganha o valor na ponta. Devolve o centro de cada coluna"""
+    tinta = "#FFFFFF" if escuro else TINTA
+    fmt = fmt or _num
+    vmax = vmax or max(v for _, v, *_ in dados) * 1.12
+    n = len(dados)
+    cores = []
+    for i, (_, _, *cc) in enumerate(dados):
+        cores.append(cc[0] if cc else (cor or COR) if not destaque or i in destaque else mix(CINZA, PAPEL, 0.25))
+    centros = []
+    if not deitado:
+        if marcas is None and eixo_y:
+            marcas = _marcas(0, vmax, _passo_bom(vmax))
+        vy = _eixo_dados(c, t, t0, x, y, w, h, 0, vmax, marcas or [], fmt, size, tinta, grade=eixo_y, eixo_y=eixo_y)
+        slot = w / n
+        bw = slot * 0.62
+        for i, (rot, v, *_) in enumerate(dados):
+            cx = x + slot * (i + 0.5)
+            ti = t0 + 0.3 + i * passo
+            q = ease_out(prog(t, ti, d))
+            topo = lerp(y + h, vy(v), q)
+            if q > 0:
+                M.rrect(c, cx - bw / 2, topo, bw, y + h - topo, min(10, bw * 0.12), cores[i], 1.0)
+                c.drawRect(skia.Rect.MakeXYWH(cx - bw / 2, y + h - 12, bw, 12), M.paint(cores[i]))
+            foco(c, t, ti, 0.4, lambda a, rot=rot, cx=cx: _meio(c, rot, cx, y + h + 18 + size * 0.55, size, "b", tinta, a), sobe=6)
+            if valores:
+                foco(c, t, ti + d * 0.8, 0.4, lambda a, v=v, cx=cx, i=i: _meio(c, fmt(v), cx, vy(v) - 20 - size * 0.5, size * 1.1, "g", (COR_TEXTO if cores[i] == (cor or COR) else tinta) if not escuro else "#FFFFFF", a))
+            centros.append((cx, vy(v)))
+        return centros
+    # barras deitadas: rótulo à esquerda de x, barras crescem para a direita até x + w
+    if t >= t0:
+        M.line(c, x, y - 10, x, y + h + 10, tinta, 1.0, 5, progress=ep(t, t0, 0.5))
+    slot = h / n
+    bh = slot * 0.62
+    vx = lambda v: x + v / vmax * w
+    for i, (rot, v, *_) in enumerate(dados):
+        cy = y + slot * (i + 0.5)
+        ti = t0 + 0.3 + i * passo
+        q = ease_out(prog(t, ti, d))
+        if q > 0:
+            fim = lerp(x, vx(v), q)
+            M.rrect(c, x, cy - bh / 2, fim - x, bh, min(10, bh * 0.12), cores[i], 1.0)
+            c.drawRect(skia.Rect.MakeXYWH(x, cy - bh / 2, min(12, fim - x), bh), M.paint(cores[i]))
+        foco(c, t, ti, 0.4, lambda a, rot=rot, cy=cy: formula(c, _num(rot), x - 24, cy + size * 0.36, size, _est(_num(rot), "b"), tinta, a, "right"), sobe=6)
+        if valores:
+            foco(c, t, ti + d * 0.8, 0.4, lambda a, v=v, cy=cy, i=i: escreve(c, fmt(v), vx(v) + 20, cy + size * 0.4, size * 1.1, "g", (COR_TEXTO if cores[i] == (cor or COR) else tinta) if not escuro else "#FFFFFF", a))
+        centros.append((vx(v), cy))
+    return centros
+
+
+def serie(c, t, t0, dados, x, y, w, h, vmin=0, vmax=None, marcas=None, cor=None, fmt=None, size=40, pontos=True, valores=True,
+          d=1.4, eixos=True, destaque=(), largura=7):
+    """gráfico de linha (série no tempo). dados = [(rótulo do eixo x, valor)]; a linha cresce em d segundos e cada ponto acende quando
+    ela chega. marcas = valores do eixo vertical (senão, redondos). Chame de novo com eixos=False para uma segunda série. Devolve os pontos"""
+    cor = cor or COR
+    fmt = fmt or _num
+    vals = [v for _, v in dados]
+    vmax = vmax if vmax is not None else max(vals) * 1.1
+    if marcas is None:
+        marcas = _marcas(vmin, vmax, _passo_bom(vmax - vmin))
+    if eixos:
+        vy = _eixo_dados(c, t, t0, x, y, w, h, vmin, vmax, marcas, fmt, size, TINTA)
+    else:
+        vy = lambda v: y + h - (v - vmin) / (vmax - vmin) * h
+    n = len(dados)
+    xs = [x + w * (i + 0.5) / n for i in range(n)]
+    pts = [(xs[i], vy(v)) for i, v in enumerate(vals)]
+    if eixos:
+        for i, (rot, _) in enumerate(dados):
+            foco(c, t, t0 + 0.2 + i * 0.04, 0.4, lambda a, rot=rot, i=i: _meio(c, rot, xs[i], y + h + 18 + size * 0.55, size, "b", TINTA, a), sobe=6)
+    t1 = t0 + 0.5
+    p = ease_io(prog(t, t1, d)) * (n - 1)
+    if p > 0:
+        path = skia.Path()
+        path.moveTo(*pts[0])
+        k = int(p)
+        for i in range(1, min(k, n - 1) + 1):
+            path.lineTo(*pts[i])
+        if k < n - 1:
+            f_ = p - k
+            path.lineTo(lerp(pts[k][0], pts[k + 1][0], f_), lerp(pts[k][1], pts[k + 1][1], f_))
+        pt = M.paint(cor, 1.0, stroke=largura, cap_round=True)
+        pt.setStrokeJoin(skia.Paint.kRound_Join)
+        c.drawPath(path, pt)
+    for i, (px, py) in enumerate(pts):
+        ti = t1 + d * (i / max(1, n - 1)) - 0.05
+        if pontos:
+            k_ = ease_back(prog(t, ti, 0.4))
+            if k_ > 0:
+                c.drawCircle(px, py, 13 * k_, M.paint(cor))
+                c.drawCircle(px, py, 6 * k_, M.paint(PAPEL))
+        if valores and (not destaque or i in destaque):
+            acima = i == 0 or i == n - 1 or vals[i] >= (vals[i - 1] + vals[i + 1]) / 2
+            foco(c, t, ti + 0.1, 0.4, lambda a, i=i, px=px, py=py, acima=acima: _meio(c, fmt(vals[i]), px, py + (-1 if acima else 1) * (26 + size * 0.5), size * 1.05, "g", COR_TEXTO if i in destaque or not destaque else TINTA, a), sobe=6)
+    return pts
+
+
+def _paleta(n, cor=None):
+    """tons da cor da matéria, do forte ao claro, com o cinza para completar"""
+    cor = cor or COR
+    base = [cor, mix(cor, "#FFFFFF", 0.45), mix(cor, "#000000", 0.38), mix(cor, "#FFFFFF", 0.72), TINTA2, CINZA, mix(cor, "#FFFFFF", 0.25), "#B8B8BE"]
+    return [base[i % len(base)] for i in range(n)]
+
+
+def pizza(c, t, t0, dados, cx, cy, r, cores=None, pct=True, rosca=0.0, size=44, d=1.2, destaque=(), rotulos=True, casas=0):
+    """gráfico de setores. dados = [(rótulo, valor)]; os setores giram a partir do alto, no sentido do relógio, e cada um ganha
+    rótulo e porcentagem por fora. rosca = 0..0.8 abre o miolo; destaque = índices que saem um pouco do centro"""
+    total = float(sum(v for _, v in dados))
+    cores = cores or _paleta(len(dados))
+    p = ease_io(prog(t, t0, d))
+    ang = -90.0
+    for i, (rot, v) in enumerate(dados):
+        varre = 360.0 * v / total
+        fim = min(ang + varre, -90 + 360 * p)
+        meio = math.radians(ang + varre / 2)
+        sai = 22 if i in destaque else 0
+        ox, oy = math.cos(meio) * sai, math.sin(meio) * sai
+        if fim > ang:
+            path = skia.Path()
+            ro = skia.Rect.MakeXYWH(cx + ox - r, cy + oy - r, 2 * r, 2 * r)
+            if rosca > 0:
+                ri = r * rosca
+                path.arcTo(ro, ang, fim - ang, True)
+                path.arcTo(skia.Rect.MakeXYWH(cx + ox - ri, cy + oy - ri, 2 * ri, 2 * ri), fim, ang - fim, False)
+                path.close()
+            else:
+                path.moveTo(cx + ox, cy + oy)
+                path.arcTo(ro, ang, fim - ang, False)
+                path.close()
+            c.drawPath(path, M.paint(cores[i]))
+            sep = M.paint(PAPEL, 1.0, stroke=5)
+            sep.setStrokeJoin(skia.Paint.kRound_Join)
+            c.drawPath(path, sep)
+        ti = t0 + d * ((ang + varre / 2 + 90) / 360) + 0.1
+        if rotulos:
+            ux, uy = math.cos(meio), math.sin(meio)
+            px, py = cx + ox + ux * (r + 28), cy + oy + uy * (r + 28)
+            porc = 100 * v / total
+            ps = (f"{porc:.{casas}f}".replace(".", ",") if casas else str(round(porc))) + "%"
+            w1 = max(_mede(rot, size, "b")[0], larg(ps, "g", size * 1.2))
+            k = min(abs(ux) * w1 / 2, w1 / 2) + abs(uy) * size * 0.95
+            lx, ly = px + ux * k, py + uy * k
+            foco(c, t, ti, 0.45, lambda a, lx=lx, ly=ly, rot=rot, ps=ps, i=i: (
+                _meio(c, rot, lx, ly - size * 0.62, size, "b", TINTA, a),
+                pct and _meio(c, ps, lx, ly + size * 0.62, size * 1.2, "g", cores[i] if M.lum(cores[i]) < 0.4 else mix(cores[i], "#000000", 0.4), a)), sobe=6)
+        ang += varre
+
+
+def histograma(c, t, t0, limites, freqs, x, y, w, h, vmax=None, marcas=None, cor=None, fmt=None, size=40, valores=True,
+               passo=0.1, poligono=False, d=0.5, destaque=()):
+    """histograma: classes coladas, limites = [0, 10, 20, 30] (um a mais que freqs). Rótulos nos limites.
+    poligono = polígono de frequências: abre meia classe de cada lado e põe as frequências dentro das colunas"""
+    assert len(limites) == len(freqs) + 1, (limites, freqs)
+    cor = cor or COR
+    fmt = fmt or _num
+    vmax = vmax or max(freqs) * 1.15
+    if marcas is None:
+        marcas = _marcas(0, vmax, _passo_bom(vmax))
+    vy = _eixo_dados(c, t, t0, x, y, w, h, 0, vmax, marcas, fmt, size, TINTA)
+    lo, hi = limites[0], limites[-1]
+    folga = w / (len(freqs) + 1) / 2 if poligono else 0.0
+    vx = lambda v: x + folga + (v - lo) / (hi - lo) * (w - 2 * folga)
+    for i, v in enumerate(limites):
+        foco(c, t, t0 + 0.2 + i * 0.04, 0.4, lambda a, v=v: (M.line(c, vx(v), y + h, vx(v), y + h + 14, TINTA, a, 4),
+                                                         centro(c, fmt(v), vx(v), y + h + 24 + size, size, "b", TINTA, a)), sobe=6)
+    meios = []
+    for i, f_ in enumerate(freqs):
+        x0, x1 = vx(limites[i]), vx(limites[i + 1])
+        ti = t0 + 0.3 + i * passo
+        q = ease_out(prog(t, ti, d))
+        cr = cor if not destaque or i in destaque else mix(CINZA, PAPEL, 0.25)
+        if q > 0:
+            topo = lerp(y + h, vy(f_), q)
+            c.drawRect(skia.Rect.MakeLTRB(x0, topo, x1, y + h), M.paint(cr))
+            c.drawRect(skia.Rect.MakeLTRB(x0, topo, x1, y + h), M.paint(PAPEL, 1.0, stroke=4))
+        if valores:
+            dentro = poligono and (y + h - vy(f_)) > size * 2.4
+            yv = vy(f_) + 30 + size * 0.55 if dentro else vy(f_) - 18 - size * 0.5
+            cv = M.on(cr) if dentro else COR_TEXTO if cr == cor else TINTA2
+            foco(c, t, ti + d * 0.8, 0.4, lambda a, f_=f_, x0=x0, x1=x1, yv=yv, cv=cv: _meio(c, fmt(f_), (x0 + x1) / 2, yv, size * 1.05, "g", cv, a), sobe=6)
+        meios.append(((x0 + x1) / 2, vy(f_)))
+    if poligono:
+        tp = t0 + 0.3 + len(freqs) * passo + d
+        pts = [(vx(lo) - (meios[0][0] - vx(lo)), y + h)] + meios + [(vx(hi) + (vx(hi) - meios[-1][0]), y + h)]
+        q = ease_io(prog(t, tp, 1.0)) * (len(pts) - 1)
+        for i in range(len(pts) - 1):
+            f_ = clamp(q - i)
+            if f_ > 0:
+                M.line(c, *pts[i], *pts[i + 1], TINTA, 1.0, 6, progress=f_)
+        for i, (px, py) in enumerate(pts):
+            if t >= tp and q >= i:
+                c.drawCircle(px, py, 10, M.paint(TINTA))
+    return meios
+
+
+# ---------------- geometria plana ----------------
+def marcas_iguais(c, A, B, n=1, cor=None, a=1.0, tam=18, largura=5):
+    """n tracinhos no meio do lado AB: lados com o mesmo número de tracinhos são iguais"""
+    if a <= 0 or n <= 0:
+        return
+    ux, uy = _uni(*A, *B)
+    mx, my = (A[0] + B[0]) / 2, (A[1] + B[1]) / 2
+    for k in range(n):
+        off = (k - (n - 1) / 2) * 12
+        px, py = mx + ux * off, my + uy * off
+        M.line(c, px - uy * tam, py + ux * tam, px + uy * tam, py - ux * tam, cor or TINTA, a, largura)
+
+
+def segmento(c, t, t0, A, B, medida=None, rotulos=None, cor=None, lado=1, afasta=26, largura=6, pontas=True, tracejado=False,
+             size=48, d=0.6, cota=False):
+    """segmento de A até B que cresce em d segundos, com a medida ao lado (lado = 1 ou −1 escolhe o lado) e os nomes nas pontas.
+    cota = linha de cota com tracinhos, afastada do segmento, como em desenho técnico"""
+    cor = cor or TINTA
+    ux, uy = _uni(*A, *B)
+    nx, ny = uy * lado, -ux * lado
+    if t >= t0:
+        M.line(c, *A, *B, cor, 1.0, largura, dash=TRACO if tracejado else None, progress=ease_io(prog(t, t0, d)))
+    if pontas:
+        for i, P_ in enumerate((A, B)):
+            k = ease_back(prog(t, t0 + (0 if i == 0 else d * 0.9), 0.35))
+            if k > 0:
+                c.drawCircle(P_[0], P_[1], 10 * k, M.paint(cor))
+    if rotulos:
+        for i, (P_, s) in enumerate(zip((A, B), rotulos)):
+            sx, sy = (-ux, -uy) if i == 0 else (ux, uy)
+            foco(c, t, t0 + d * 0.6, 0.4, lambda a, P_=P_, s=s, sx=sx, sy=sy: _cola(c, s, P_[0], P_[1], sx, sy, 18, size, "b", TINTA, a))
+    if medida is not None:
+        mx, my = (A[0] + B[0]) / 2, (A[1] + B[1]) / 2
+        if cota:
+            off = afasta + 20
+            a0 = (A[0] + nx * off, A[1] + ny * off)
+            b0 = (B[0] + nx * off, B[1] + ny * off)
+            q = ep(t, t0 + d * 0.7, 0.5)
+            if q > 0:
+                M.line(c, *a0, *b0, TINTA2, q, 3)
+                for P_ in (a0, b0):
+                    M.line(c, P_[0] - nx * 14, P_[1] - ny * 14, P_[0] + nx * 14, P_[1] + ny * 14, TINTA2, q, 3)
+            mx, my = mx + nx * off, my + ny * off
+            foco(c, t, t0 + d * 0.7, 0.4, lambda a: _cola(c, medida, mx, my, nx, ny, 12, size, "b", COR_TEXTO, a))
+        else:
+            foco(c, t, t0 + d * 0.7, 0.4, lambda a: _cola(c, medida, mx, my, nx, ny, afasta, size, "b", COR_TEXTO, a))
+
+
+def angulo(c, t, t0, V, A, B, rotulo=None, r=64, cor=None, reto=None, preenche=0.2, largura=5, size=46, d=0.5, afasta=14, dentro=False):
+    """ângulo AVB: arco do lado de VA até o lado de VB (o menor dos dois) com rótulo na bissetriz. reto=None reconhece 90° e
+    desenha o quadradinho; dentro=True põe o rótulo dentro do arco (ângulo grande)"""
+    if t < t0:
+        return
+    cor = cor or COR
+    a1 = math.degrees(math.atan2(A[1] - V[1], A[0] - V[0]))
+    a2 = math.degrees(math.atan2(B[1] - V[1], B[0] - V[0]))
+    varre = (a2 - a1 + 180) % 360 - 180
+    if reto is None:
+        reto = abs(abs(varre) - 90) < 0.6
+    p = ease_out(prog(t, t0, d))
+    bis = math.radians(a1 + varre / 2)
+    bx, by = math.cos(bis), math.sin(bis)
+    if reto:
+        s = r * 0.62
+        u1 = (math.cos(math.radians(a1)), math.sin(math.radians(a1)))
+        u2 = (math.cos(math.radians(a2)), math.sin(math.radians(a2)))
+        q1 = (V[0] + u1[0] * s, V[1] + u1[1] * s)
+        q2 = (V[0] + u2[0] * s, V[1] + u2[1] * s)
+        qm = (q1[0] + u2[0] * s, q1[1] + u2[1] * s)
+        path = skia.Path()
+        path.moveTo(*V); path.lineTo(*q1); path.lineTo(*qm); path.lineTo(*q2); path.close()
+        c.drawPath(path, M.paint(cor, preenche * p))
+        pt = M.paint(cor, p, stroke=largura)
+        pt.setStrokeJoin(skia.Paint.kRound_Join)
+        borda = skia.Path()
+        borda.moveTo(*q1); borda.lineTo(*qm); borda.lineTo(*q2)
+        c.drawPath(borda, pt)
+        c.drawCircle(V[0] + bx * s * 0.62, V[1] + by * s * 0.62, max(3.5, largura * 0.8), M.paint(cor, p))
+        ralo = s * 1.41
+    else:
+        ret = skia.Rect.MakeXYWH(V[0] - r, V[1] - r, 2 * r, 2 * r)
+        if preenche > 0:
+            path = skia.Path()
+            path.moveTo(*V); path.arcTo(ret, a1, varre * p, False); path.close()
+            c.drawPath(path, M.paint(cor, preenche))
+        c.drawArc(ret, a1, varre * p, False, M.paint(cor, 1.0, stroke=largura, cap_round=True))
+        ralo = r
+    if rotulo:
+        cr = COR_TEXTO if cor == COR else cor
+        if dentro:
+            foco(c, t, t0 + d * 0.7, 0.4, lambda a: _meio(c, rotulo, V[0] + bx * ralo * 0.58, V[1] + by * ralo * 0.58, size, "b", cr, a))
+        else:
+            w_, hh = _mede(_num(rotulo), size, "b")
+            dist = ralo + afasta + min(abs(bx) * w_ / 2 + abs(by) * hh, math.hypot(w_ / 2, hh))
+            meia = math.radians(abs(varre) / 2)
+            if meia < math.radians(80):  # ângulo estreito: o rótulo se afasta até não tocar nenhum dos dois lados
+                for a_ in (a1, a2):
+                    nx_, ny_ = -math.sin(math.radians(a_)), math.cos(math.radians(a_))
+                    dist = max(dist, (abs(nx_) * w_ / 2 + abs(ny_) * hh + 10) / max(0.15, math.sin(meia)))
+            foco(c, t, t0 + d * 0.7, 0.4, lambda a: _meio(c, rotulo, V[0] + bx * dist, V[1] + by * dist, size, "b", cr, a))
+
+
+def _contorno(c, pts, p, cor, largura, fecha=True, dash=None):
+    """contorno que se desenha em volta, p = 0..1 do perímetro"""
+    if p <= 0:
+        return
+    lados = list(zip(pts, pts[1:] + (pts[:1] if fecha else [])))
+    comp = [math.dist(a, b) for a, b in lados]
+    alvo = sum(comp) * p
+    path = skia.Path()
+    path.moveTo(*pts[0])
+    for (a, b), L in zip(lados, comp):
+        if alvo >= L:
+            path.lineTo(*b)
+            alvo -= L
+        else:
+            f_ = alvo / L if L else 0
+            path.lineTo(lerp(a[0], b[0], f_), lerp(a[1], b[1], f_))
+            break
+    else:
+        if fecha:
+            path.close()
+    pt = M.paint(cor, 1.0, stroke=largura, cap_round=True)
+    pt.setStrokeJoin(skia.Paint.kRound_Join)
+    if dash:
+        pt.setPathEffect(skia.DashPathEffect.Make(dash, 0))
+    c.drawPath(path, pt)
+
+
+def poligono(c, t, t0, pts, vertices=None, lados=None, angulos=None, iguais=None, retos=(), cor=None, preenche=0.1, largura=6,
+             size=50, d=0.9, tl=None, ta=None, tv=None, r_ang=None, escuro=False):
+    """polígono pelos pontos, desenhado em volta em d segundos. vertices = nomes; lados = medida de cada lado (lado i vai de pts[i] a pts[i+1]);
+    angulos = rótulo de cada vértice (None = sem arco); iguais = tracinhos de cada lado; retos = vértices com quadradinho.
+    tv, tl, ta = instantes dos nomes, das medidas e dos ângulos (senão, em fila depois do contorno). Devolve os pontos"""
+    pts = [tuple(p_) for p_ in pts]
+    n = len(pts)
+    tinta = "#FFFFFF" if escuro else TINTA
+    cor_f = cor or COR
+    gx, gy = sum(p_[0] for p_ in pts) / n, sum(p_[1] for p_ in pts) / n
+    if preenche > 0 and t >= t0:
+        path = skia.Path()
+        path.addPoly(pts, True)
+        c.drawPath(path, M.paint(cor_f, preenche * ep(t, t0 + d * 0.6, 0.5)))
+    if t >= t0:
+        _contorno(c, pts, ease_io(prog(t, t0, d)), tinta, largura)
+    lado_min = min(math.dist(pts[i], pts[(i + 1) % n]) for i in range(n))
+    for i in range(n):
+        V, ant, prox = pts[i], pts[i - 1], pts[(i + 1) % n]
+        ang_ = (angulos[i] if angulos and i < len(angulos) else None)
+        if ang_ is not None or i in retos:
+            ti = ta[i] if ta else t0 + d + 0.3 + 0.12 * i
+            angulo(c, t, ti, V, ant, prox, ang_ if ang_ != "" else None, r=r_ang or min(70, lado_min * 0.3), cor=cor, reto=True if i in retos else None)
+    for i in range(n):
+        A, B = pts[i], pts[(i + 1) % n]
+        if iguais and i < len(iguais) and iguais[i]:
+            q = ep(t, (tl[i] if tl else t0 + d + 0.1 * i), 0.4)
+            marcas_iguais(c, A, B, iguais[i], tinta, q)
+        if lados and i < len(lados) and lados[i] is not None:
+            ux, uy = _uni(*A, *B)
+            nx, ny = uy, -ux
+            mx, my = (A[0] + B[0]) / 2, (A[1] + B[1]) / 2
+            if (mx + nx - gx) ** 2 + (my + ny - gy) ** 2 < (mx - gx) ** 2 + (my - gy) ** 2:
+                nx, ny = -nx, -ny
+            ti = tl[i] if tl else t0 + d + 0.1 * i
+            foco(c, t, ti, 0.4, lambda a, s=lados[i], mx=mx, my=my, nx=nx, ny=ny: _cola(c, s, mx, my, nx, ny, 20, size * 0.94, "b", COR_TEXTO if not escuro else CLARO, a))
+    if vertices:
+        for i, s in enumerate(vertices):
+            if not s:
+                continue
+            V, ant, prox = pts[i], pts[i - 1], pts[(i + 1) % n]
+            u1, u2 = _uni(*V, *ant), _uni(*V, *prox)
+            ox, oy = -(u1[0] + u2[0]), -(u1[1] + u2[1])
+            if math.hypot(ox, oy) < 1e-6:
+                ox, oy = V[0] - gx, V[1] - gy
+            if (ox * (V[0] - gx) + oy * (V[1] - gy)) < 0:  # vértice côncavo: o rótulo vai para fora mesmo assim
+                ox, oy = -ox, -oy
+            ti = tv[i] if tv else t0 + d * 0.4 + 0.1 * i
+            foco(c, t, ti, 0.4, lambda a, s=s, V=V, ox=ox, oy=oy: _cola(c, s, V[0], V[1], ox, oy, 14, size, "g", tinta, a))
+    return pts
+
+
+def triangulo(c, t, t0, A, B, C, vertices=("A", "B", "C"), **kw):
+    """triângulo ABC: lados[0] = AB, lados[1] = BC, lados[2] = CA; angulos na ordem dos vértices. Os outros parâmetros são os de E.poligono"""
+    return poligono(c, t, t0, [A, B, C], vertices, **kw)
+
+
+def regular(c, t, t0, n, cx, cy, r, vertices=None, lado=None, raio=None, apotema=None, giro=0.0, mostra_centro=None, **kw):
+    """polígono regular de n lados com um lado deitado embaixo; lado = medida escrita no lado de baixo;
+    raio e apotema = rótulos (desenham o segmento do centro). giro em graus. Os outros parâmetros são os de E.poligono"""
+    ini = 90 - 180 / n + giro
+    pts = [(cx + r * math.cos(math.radians(ini + k * 360 / n)), cy + r * math.sin(math.radians(ini + k * 360 / n))) for k in range(n)]
+    d = kw.get("d", 0.9)
+    lados = [lado] + [None] * (n - 1) if lado is not None else kw.pop("lados", None)
+    poligono(c, t, t0, pts, vertices, lados=lados, **kw)
+    t1 = t0 + d + 0.4
+    if mostra_centro or raio or apotema:
+        k = ease_back(prog(t, t1, 0.35))
+        if k > 0:
+            c.drawCircle(cx, cy, 9 * k, M.paint(TINTA))
+    if raio:
+        V = pts[n // 2]
+        segmento(c, t, t1 + 0.2, (cx, cy), V, raio, cor=TINTA2, pontas=False, tracejado=True, largura=5, lado=1, size=kw.get("size", 50) * 0.94)
+    if apotema:
+        mx, my = (pts[0][0] + pts[1][0]) / 2, (pts[0][1] + pts[1][1]) / 2
+        segmento(c, t, t1 + 0.5, (cx, cy), (mx, my), None, cor=COR_TEXTO, pontas=False, tracejado=True, largura=5)
+        angulo(c, t, t1 + 0.8, (mx, my), (cx, cy), pts[1], r=34, reto=True, preenche=0.0)
+        foco(c, t, t1 + 0.8, 0.4, lambda a: _cola(c, apotema, (cx + mx) / 2, (cy + my) / 2, -1, 0, 16, kw.get("size", 50) * 0.94, "b", COR_TEXTO, a))
+    return pts
+
+
+def retangulo(c, t, t0, x, y, w, h, base=None, altura=None, vertices=None, **kw):
+    """retângulo (x, y = canto de cima à esquerda) com a base escrita embaixo e a altura à esquerda. Vértices na ordem:
+    embaixo à esquerda, embaixo à direita, em cima à direita, em cima à esquerda. Os outros parâmetros são os de E.poligono"""
+    pts = [(x, y + h), (x + w, y + h), (x + w, y), (x, y)]
+    return poligono(c, t, t0, pts, vertices, lados=kw.pop("lados", [base, None, None, altura]), **kw)
+
+
+def quadrado(c, t, t0, x, y, l, lado=None, vertices=None, **kw):
+    """quadrado de lado l (px) com a medida embaixo e os tracinhos de lados iguais"""
+    kw.setdefault("iguais", [1, 1, 1, 1])
+    kw.setdefault("retos", (0,))
+    return retangulo(c, t, t0, x, y, l, l, lado, None, vertices, **kw)
+
+
+def _altura(c, t, t0, topo, pe, rotulo, lado=1, size=48, cor=None):
+    """altura tracejada de topo até pe, com o quadradinho e o rótulo do lado (1 = direita)"""
+    segmento(c, t, t0, topo, pe, None, cor=cor or TINTA2, pontas=False, tracejado=True, largura=5)
+    angulo(c, t, t0 + 0.3, pe, topo, (pe[0] + lado * 50, pe[1]), r=40, reto=True, preenche=0.0)
+    foco(c, t, t0 + 0.4, 0.4, lambda a: _cola(c, rotulo, pe[0], (topo[1] + pe[1]) / 2, lado, 0, 16, size, "b", COR_TEXTO, a))
+
+
+def paralelogramo(c, t, t0, x, y, w, h, desloca, base=None, altura=None, lado=None, vertices=None, **kw):
+    """paralelogramo: base w embaixo, de (x, y + h); o lado de cima começa desloca px à direita. altura = rótulo da altura
+    tracejada (do vértice de cima à esquerda); lado = medida do lado inclinado da direita"""
+    pts = [(x, y + h), (x + w, y + h), (x + w + desloca, y), (x + desloca, y)]
+    d = kw.get("d", 0.9)
+    poligono(c, t, t0, pts, vertices, lados=kw.pop("lados", [base, lado, None, None]), **kw)
+    if altura:
+        _altura(c, t, t0 + d + 0.4, pts[3], (x + desloca, y + h), altura, 1, kw.get("size", 50) * 0.94)
+    return pts
+
+
+def trapezio(c, t, t0, x, y, B, b, h, desloca=None, base_maior=None, base_menor=None, altura=None, vertices=None, **kw):
+    """trapézio: base maior B embaixo, de (x, y + h); base menor b em cima, desloca px à direita (sem desloca: isósceles)"""
+    desloca = (B - b) / 2 if desloca is None else desloca
+    pts = [(x, y + h), (x + B, y + h), (x + desloca + b, y), (x + desloca, y)]
+    d = kw.get("d", 0.9)
+    poligono(c, t, t0, pts, vertices, lados=kw.pop("lados", [base_maior, None, base_menor, None]), **kw)
+    if altura:
+        _altura(c, t, t0 + d + 0.4, pts[3], (x + desloca, y + h), altura, 1, kw.get("size", 50) * 0.94)
+    return pts
+
+
+def _no_circ(cx, cy, r, ang):
+    """ponto do círculo no ângulo ang (graus, anti-horário a partir da direita, como na matemática)"""
+    return cx + r * math.cos(math.radians(ang)), cy - r * math.sin(math.radians(ang))
+
+
+def circulo(c, t, t0, cx, cy, r, o="O", raio=None, diametro=None, corda=None, setor=None, arco=None, cor=None, preenche=0.0,
+            size=50, d=0.8, te=None, largura=6):
+    """circunferência que se fecha em d segundos, com centro o. Ângulos em graus, anti-horário a partir da direita:
+    raio = (ângulo, rótulo); diametro = (ângulo, rótulo); corda = (a1, a2, rótulo); setor = (a1, a2, rótulo do ângulo) pintado;
+    arco = (a1, a2, rótulo) em destaque, de a1 até a2 no sentido anti-horário.
+    te = {"raio": t, "diametro": t, ...} instantes de cada peça (senão, em fila)"""
+    cor = cor or COR
+    te = te or {}
+    fila = [k for k, v in (("setor", setor), ("raio", raio), ("diametro", diametro), ("corda", corda), ("arco", arco)) if v]
+    quando = {k: te.get(k, t0 + d + 0.2 + 0.5 * i) for i, k in enumerate(fila)}
+    ret = skia.Rect.MakeXYWH(cx - r, cy - r, 2 * r, 2 * r)
+    if setor:
+        a1, a2, rot = setor
+        q = ease_io(prog(t, quando["setor"], 0.7))
+        if q > 0:
+            varre = ((a2 - a1) % 360) * q
+            path = skia.Path()
+            path.moveTo(cx, cy); path.arcTo(ret, -a1, -varre, False); path.close()
+            c.drawPath(path, M.paint(cor, 0.22))
+            pt = M.paint(cor, 1.0, stroke=largura - 1)
+            pt.setStrokeJoin(skia.Paint.kRound_Join)
+            c.drawPath(path, pt)
+            if rot:
+                bis = a1 + (a2 - a1) % 360 / 2
+                ra = min(90, r * 0.32)
+                c.drawArc(skia.Rect.MakeXYWH(cx - ra, cy - ra, 2 * ra, 2 * ra), -a1, -varre, False, M.paint(cor, 1.0, stroke=5))
+                foco(c, t, quando["setor"] + 0.5, 0.4, lambda a: _cola(c, rot, *_no_circ(cx, cy, ra, bis), math.cos(math.radians(bis)), -math.sin(math.radians(bis)), 14, size, "b", COR_TEXTO, a))
+    if preenche > 0 and t >= t0:
+        c.drawCircle(cx, cy, r, M.paint(cor, preenche * ep(t, t0 + d * 0.6, 0.5)))
+    if t >= t0:
+        c.drawArc(ret, 0, -360 * ease_io(prog(t, t0, d)), False, M.paint(TINTA, 1.0, stroke=largura, cap_round=True))
+    if arco:
+        a1, a2, rot = arco
+        q = ease_io(prog(t, quando["arco"], 0.6))
+        if q > 0:
+            varre = (a2 - a1) % 360
+            c.drawArc(ret, -a1, -varre * q, False, M.paint(cor, 1.0, stroke=largura + 8, cap_round=True))
+            meio = a1 + varre / 2
+            foco(c, t, quando["arco"] + 0.4, 0.4, lambda a: _cola(c, rot, *_no_circ(cx, cy, r + largura, meio), math.cos(math.radians(meio)), -math.sin(math.radians(meio)), 16, size, "b", COR_TEXTO, a))
+    if diametro:
+        ang, rot = diametro
+        P1, P2 = _no_circ(cx, cy, r, ang + 180), _no_circ(cx, cy, r, ang)
+        segmento(c, t, quando["diametro"], P1, P2, None, cor=COR_TEXTO, pontas=True, largura=6)
+        nx, ny = -math.sin(math.radians(ang)), -math.cos(math.radians(ang))  # normal "para cima" na tela
+        mx, my = (P1[0] * 0.25 + P2[0] * 0.75), (P1[1] * 0.25 + P2[1] * 0.75)
+        foco(c, t, quando["diametro"] + 0.4, 0.4, lambda a: _cola(c, rot, mx, my, nx, ny, 16, size, "b", COR_TEXTO, a))
+    if raio:
+        ang, rot = raio
+        P1 = _no_circ(cx, cy, r, ang)
+        segmento(c, t, quando["raio"], (cx, cy), P1, None, cor=COR_TEXTO, pontas=False, largura=6)
+        k = ease_back(prog(t, quando["raio"] + 0.5, 0.35))
+        if k > 0:
+            c.drawCircle(*P1, 10 * k, M.paint(COR_TEXTO))
+        nx, ny = -math.sin(math.radians(ang)), -math.cos(math.radians(ang))
+        if ny > 0.2:
+            nx, ny = -nx, -ny
+        mx, my = (cx + P1[0]) / 2, (cy + P1[1]) / 2
+        foco(c, t, quando["raio"] + 0.4, 0.4, lambda a: _cola(c, rot, mx, my, nx, ny, 16, size, "b", COR_TEXTO, a))
+    if corda:
+        a1, a2, rot = corda
+        P1, P2 = _no_circ(cx, cy, r, a1), _no_circ(cx, cy, r, a2)
+        segmento(c, t, quando["corda"], P1, P2, None, cor=TINTA2, pontas=True, largura=6)
+        mx, my = (P1[0] + P2[0]) / 2, (P1[1] + P2[1]) / 2
+        foco(c, t, quando["corda"] + 0.4, 0.4, lambda a: _cola(c, rot, mx, my, cx - mx, cy - my, 14, size, "b", TINTA2, a))
+    k = ease_back(prog(t, t0 + d * 0.5, 0.35))
+    if k > 0:
+        c.drawCircle(cx, cy, 10 * k, M.paint(TINTA))
+    if o:
+        foco(c, t, t0 + d * 0.5, 0.4, lambda a: _cola(c, o, cx, cy, -0.7, 1, 20, size, "g", TINTA, a))
+
+
+def paralelas(c, t, t0, cx, cy, w=1100, gap=300, inclina=60, angulos=None, nomes=("r", "s", "t"), cores=None, size=50, d=0.7, ta=None, r_ang=62):
+    """duas paralelas (r em cima, s embaixo) cortadas pela transversal t, que passa por (cx, cy) com inclinação `inclina` (graus).
+    angulos = {k: rótulo}, k de 1 a 8: 1 a 4 no cruzamento de cima, 5 a 8 no de baixo, na ordem acima à direita, acima à esquerda,
+    abaixo à esquerda, abaixo à direita. cores = {k: cor}; ta = {k: instante}"""
+    angulos, cores, ta = angulos or {}, cores or {}, ta or {}
+    y1, y2 = cy - gap / 2, cy + gap / 2
+    k_ = 1 / math.tan(math.radians(inclina))
+    P1 = (cx + gap / 2 * k_, y1)
+    P2 = (cx - gap / 2 * k_, y2)
+    if t >= t0:
+        for i, yy in enumerate((y1, y2)):
+            M.line(c, cx - w / 2, yy, cx + w / 2, yy, TINTA, 1.0, 6, progress=ease_io(prog(t, t0 + 0.15 * i, d)))
+        ux, uy = math.cos(math.radians(inclina)), -math.sin(math.radians(inclina))
+        M.line(c, P2[0] - ux * 130, P2[1] - uy * 130, P1[0] + ux * 130, P1[1] + uy * 130, TINTA2, 1.0, 6,
+               progress=ease_io(prog(t, t0 + 0.4, d)))
+        # setinhas de paralela
+        q = ep(t, t0 + d, 0.4)
+        for yy in (y1, y2):
+            xm = cx + w * 0.36
+            M.line(c, xm - 14, yy - 16, xm + 6, yy, TINTA, q, 5)
+            M.line(c, xm - 14, yy + 16, xm + 6, yy, TINTA, q, 5)
+    ux, uy = math.cos(math.radians(inclina)), -math.sin(math.radians(inclina))
+    for i, (s, x_, y_) in enumerate(((nomes[0], cx + w / 2 + 20, y1), (nomes[1], cx + w / 2 + 20, y2))):
+        foco(c, t, t0 + d * 0.8, 0.4, lambda a, s=s, x_=x_, y_=y_: escreve(c, s, x_, y_ + 20, 64, "i", TINTA, a))
+    foco(c, t, t0 + d + 0.3, 0.4, lambda a: _cola(c, nomes[2], P1[0] + ux * 130, P1[1] + uy * 130, 1, 0, 14, 64, "i", TINTA2, a))
+    raios = (0, inclina, 180, 180 + inclina)
+    for k, rot in sorted(angulos.items()):
+        V = P1 if k <= 4 else P2
+        j = (k - 1) % 4
+        a1, a2 = raios[j], raios[(j + 1) % 4] if j < 3 else 360
+        A = _no_circ(V[0], V[1], 10, a1)
+        B = _no_circ(V[0], V[1], 10, a2)
+        angulo(c, t, ta.get(k, t0 + d + 0.5 + 0.15 * k), V, A, B, rot, r=r_ang, cor=cores.get(k), size=size)
+    return P1, P2
+
+
+# ---------------- geometria espacial: perspectiva simples, arestas ocultas tracejadas ----------------
+def _vista_obliqua(k=0.5, ang=38):
+    """perspectiva cavaleira: a frente fica em verdadeira grandeza, a profundidade sobe para a direita"""
+    kc, ks = k * math.cos(math.radians(ang)), k * math.sin(math.radians(ang))
+    return (1, 0, kc), (0, 1, ks), (kc, ks, -1)  # direita, cima, de onde se olha (z = profundidade)
+
+
+def _vista_alta(giro=-24, inclina=22):
+    """vista de cima e de lado (ortogonal): bases viram elipses deitadas"""
+    g, p = math.radians(giro), math.radians(inclina)
+    v = (math.sin(g) * math.cos(p), math.sin(p), math.cos(g) * math.cos(p))
+    R = (math.cos(g), 0, -math.sin(g))
+    U = (v[1] * R[2] - v[2] * R[1], v[2] * R[0] - v[0] * R[2], v[0] * R[1] - v[1] * R[0])
+    return R, U, v
+
+
+def _proj(P, R, U, ox, oy):
+    return ox + sum(a * b for a, b in zip(P, R)), oy - sum(a * b for a, b in zip(P, U))
+
+
+def _solido(c, t, t0, verts, faces, vista, ox, oy, cor=None, preenche=0.14, largura=6, d=1.0, escuro=False):
+    """sólido convexo: verts 3D, faces = listas de índices. Arestas que só tocam faces de costas saem tracejadas. Devolve os pontos na tela"""
+    R, U, v = vista
+    tinta = "#FFFFFF" if escuro else TINTA
+    cor = cor or COR
+    pts = [_proj(P, R, U, ox, oy) for P in verts]
+    g = [sum(P[i] for P in verts) / len(verts) for i in range(3)]
+    vis = []
+    for f in faces:
+        a, b, c_ = (verts[f[0]], verts[f[1]], verts[f[2]])
+        u1 = [b[i] - a[i] for i in range(3)]
+        u2 = [c_[i] - a[i] for i in range(3)]
+        n = (u1[1] * u2[2] - u1[2] * u2[1], u1[2] * u2[0] - u1[0] * u2[2], u1[0] * u2[1] - u1[1] * u2[0])
+        fc = [sum(verts[i][k] for i in f) / len(f) for k in range(3)]
+        if sum(n[k] * (fc[k] - g[k]) for k in range(3)) < 0:
+            n = tuple(-x for x in n)
+        nn = math.sqrt(sum(x * x for x in n)) or 1
+        vis.append((sum(n[k] * v[k] for k in range(3)) / nn, n))
+    q = ep(t, t0 + d * 0.5, 0.6)
+    if preenche > 0 and q > 0:
+        for f, (dv, n) in zip(faces, vis):
+            if dv > 1e-6:
+                nn = math.sqrt(sum(x * x for x in n)) or 1
+                luz = 0.55 + 0.45 * max(0.0, (n[1] * 0.8 + n[0] * -0.3) / nn)  # o topo mais claro, a frente mais escura
+                path = skia.Path()
+                path.addPoly([pts[i] for i in f], True)
+                c.drawPath(path, M.paint(mix(cor, "#FFFFFF", 1 - luz * 0.5), preenche * q * 2.2))
+    arestas, sentido = {}, {}
+    for fi, f in enumerate(faces):
+        for i in range(len(f)):
+            e = tuple(sorted((f[i], f[(i + 1) % len(f)])))
+            arestas.setdefault(e, []).append(fi)
+            sentido.setdefault(e, (f[i], f[(i + 1) % len(f)]))
+    p = prog(t, t0, d)
+    N = len(arestas)
+    ocultas, visiveis = [], []
+    for k, (e, fs) in enumerate(arestas.items()):
+        q_ = ease_io(clamp((p - 0.6 * k / N) / 0.4))  # uma aresta puxa a outra, como quem desenha
+        (ocultas if all(vis[fi][0] <= 1e-6 for fi in fs) else visiveis).append((sentido[e], q_))
+    for (i, j), q_ in ocultas:
+        M.line(c, *pts[i], *pts[j], tinta, 0.55, largura - 2, dash=TRACO, progress=q_)
+    for (i, j), q_ in visiveis:
+        M.line(c, *pts[i], *pts[j], tinta, 1.0, largura, progress=q_)
+    return pts
+
+
+def _medida_aresta(c, t, t0, A, B, s, lado, size, cor=None, gap=18, longe=None):
+    """rótulo de aresta: do lado (nx, ny) indicado; longe = ponto do qual o rótulo foge"""
+    if not s:
+        return
+    mx, my = (A[0] + B[0]) / 2, (A[1] + B[1]) / 2
+    nx, ny = lado
+    foco(c, t, t0, 0.4, lambda a: _cola(c, s, mx, my, nx, ny, gap, size, "b", cor or COR_TEXTO, a))
+
+
+def paralelepipedo(c, t, t0, x, y, a, b, h, medidas=(None, None, None), cor=None, preenche=0.14, size=48, d=1.0, vertices=None, tm=None, **kw):
+    """paralelepípedo em perspectiva cavaleira: (x, y) = canto de baixo à esquerda da frente; a = largura, b = profundidade, h = altura (px).
+    medidas = (largura, profundidade, altura): embaixo, na aresta que sobe para trás à direita, e à esquerda. vertices = 8 nomes
+    (frente: embaixo esq, embaixo dir, cima dir, cima esq; depois os de trás na mesma ordem). tm = instante das medidas"""
+    V = [(0, 0, 0), (a, 0, 0), (a, h, 0), (0, h, 0), (0, 0, b), (a, 0, b), (a, h, b), (0, h, b)]
+    F = [(0, 1, 2, 3), (4, 5, 6, 7), (0, 1, 5, 4), (3, 2, 6, 7), (0, 3, 7, 4), (1, 2, 6, 5)]
+    pts = _solido(c, t, t0, V, F, _vista_obliqua(), x, y, cor, preenche, d=d, **kw)
+    tm = tm if tm is not None else t0 + d + 0.2
+    ma, mb, mh = medidas
+    _medida_aresta(c, t, tm, pts[0], pts[1], ma, (0, 1), size)
+    _medida_aresta(c, t, tm + 0.15, pts[1], pts[5], mb, (1, 0.35), size)
+    _medida_aresta(c, t, tm + 0.3, pts[0], pts[3], mh, (-1, 0), size)
+    if vertices:
+        G = (sum(p_[0] for p_ in pts) / 8, sum(p_[1] for p_ in pts) / 8)
+        for i, s in enumerate(vertices):
+            if s:
+                foco(c, t, t0 + d * 0.6 + 0.05 * i, 0.4, lambda q, i=i, s=s: _cola(c, s, *pts[i], pts[i][0] - G[0], pts[i][1] - G[1], 12, size, "g", TINTA, q))
+    return pts
+
+
+def cubo(c, t, t0, x, y, a, medida=None, todas=False, **kw):
+    """cubo de aresta a (px), em perspectiva cavaleira; medida escrita embaixo (todas=True: nas três direções)"""
+    return paralelepipedo(c, t, t0, x, y, a, a, a, (medida, medida, medida) if todas else (medida, None, None), **kw)
+
+
+def _base_regular(n, r, giro=0.0):
+    ini = math.radians(90 + 180 / n + giro)  # um lado de frente para quem olha
+    return [(r * math.cos(ini + k * 2 * math.pi / n), r * math.sin(ini + k * 2 * math.pi / n)) for k in range(n)]
+
+
+def prisma(c, t, t0, cx, cy, n, r, h, altura=None, aresta=None, cor=None, preenche=0.14, size=48, d=1.0, giro=0.0, vista=(-24, 22), tm=None, **kw):
+    """prisma reto de base regular com n lados (raio r px) e altura h px; (cx, cy) = centro da base de baixo na tela.
+    altura = rótulo na aresta lateral mais à direita; aresta = rótulo de uma aresta da base, na frente"""
+    base = _base_regular(n, r, giro)
+    V = [(px, 0, pz) for px, pz in base] + [(px, h, pz) for px, pz in base]
+    F = [tuple(range(n)), tuple(range(n, 2 * n))] + [(i, (i + 1) % n, n + (i + 1) % n, n + i) for i in range(n)]
+    vs = _vista_alta(*vista)
+    pts = _solido(c, t, t0, V, F, vs, cx, cy, cor, preenche, d=d, **kw)
+    tm = tm if tm is not None else t0 + d + 0.2
+    i_dir = max(range(n), key=lambda i: pts[i][0])
+    _medida_aresta(c, t, tm + 0.15, pts[i_dir], pts[n + i_dir], altura, (1, 0), size)
+    if aresta:
+        i_fr = max(range(n), key=lambda i: pts[i][1] + pts[(i + 1) % n][1])
+        _medida_aresta(c, t, tm, pts[i_fr], pts[(i_fr + 1) % n], aresta, (0, 1), size)
+    return pts
+
+
+def piramide(c, t, t0, cx, cy, n, r, h, altura=None, aresta=None, cor=None, preenche=0.14, size=48, d=1.0, giro=0.0, vista=(-24, 18), tm=None, **kw):
+    """pirâmide reta de base regular com n lados (raio r px) e altura h px; (cx, cy) = centro da base na tela.
+    altura = rótulo da altura tracejada (do vértice ao centro da base); aresta = rótulo de uma aresta da base, na frente"""
+    base = _base_regular(n, r, giro)
+    V = [(px, 0, pz) for px, pz in base] + [(0, h, 0)]
+    F = [tuple(range(n))] + [(i, (i + 1) % n, n) for i in range(n)]
+    vs = _vista_alta(*vista)
+    pts = _solido(c, t, t0, V, F, vs, cx, cy, cor, preenche, d=d, **kw)
+    tm = tm if tm is not None else t0 + d + 0.2
+    if altura:
+        topo, pe = pts[n], _proj((0, 0, 0), vs[0], vs[1], cx, cy)
+        segmento(c, t, tm, topo, pe, None, cor=TINTA2, pontas=False, tracejado=True, largura=5)
+        k = ease_back(prog(t, tm + 0.4, 0.3))
+        if k > 0:
+            c.drawCircle(*pe, 8 * k, M.paint(TINTA))
+        foco(c, t, tm + 0.4, 0.4, lambda a: _cola(c, altura, pe[0], lerp(pe[1], topo[1], 0.3), 1, 0, 14, size, "b", COR_TEXTO, a))
+    if aresta:
+        i_fr = max(range(n), key=lambda i: pts[i][1] + pts[(i + 1) % n][1])
+        _medida_aresta(c, t, tm, pts[i_fr], pts[(i_fr + 1) % n], aresta, (0, 1), size)
+    return pts
+
+
+def _elipse(c, cx, cy, rx, ry, a1, varre, cor, a, largura, dash=None):
+    """arco de elipse; ângulos da tela (graus, horário a partir da direita)"""
+    if a <= 0 or abs(varre) < 0.01:
+        return
+    pt = M.paint(cor, a, stroke=largura, cap_round=True)
+    if dash:
+        pt.setPathEffect(skia.DashPathEffect.Make(dash, 0))
+    c.drawArc(skia.Rect.MakeXYWH(cx - rx, cy - ry, 2 * rx, 2 * ry), a1, varre, False, pt)
+
+
+def _volume(c, path, x0, x1, cor, a):
+    """preenchimento claro com sombra suave da esquerda para a direita (superfície curva)"""
+    p = skia.Paint(AntiAlias=True)
+    p.setShader(skia.GradientShader.MakeLinear(
+        [skia.Point(x0, 0), skia.Point(x1, 0)],
+        [hexc(mix(cor, "#FFFFFF", 0.62), a), hexc(mix(cor, "#FFFFFF", 0.82), a), hexc(mix(cor, "#FFFFFF", 0.5), a)], [0.0, 0.38, 1.0]))
+    c.drawPath(path, p)
+
+
+def cilindro(c, t, t0, cx, cy, r, h, raio=None, altura=None, cor=None, preenche=0.5, size=48, d=1.0, inclina=22, largura=6, tm=None):
+    """cilindro reto: (cx, cy) = centro da base de baixo na tela; r e h em px. A metade de trás da base sai tracejada.
+    raio = rótulo do raio desenhado na tampa; altura = rótulo à direita"""
+    cor = cor or COR
+    ry = r * math.sin(math.radians(inclina))
+    hy = h * math.cos(math.radians(inclina))
+    ct = cy - hy
+    p = ease_io(prog(t, t0, d))
+    q = ep(t, t0 + d * 0.5, 0.6)
+    if q > 0 and preenche > 0:
+        corpo = skia.Path()
+        corpo.moveTo(cx - r, ct); corpo.lineTo(cx - r, cy)
+        corpo.arcTo(skia.Rect.MakeXYWH(cx - r, cy - ry, 2 * r, 2 * ry), 180, -180, False)
+        corpo.lineTo(cx + r, ct)
+        corpo.arcTo(skia.Rect.MakeXYWH(cx - r, ct - ry, 2 * r, 2 * ry), 0, -180, False)
+        corpo.close()
+        _volume(c, corpo, cx - r, cx + r, cor, q * preenche * 1.6)
+        c.drawOval(skia.Rect.MakeXYWH(cx - r, ct - ry, 2 * r, 2 * ry), M.paint(mix(cor, "#FFFFFF", 0.7), q * preenche * 1.6))
+    if p > 0:
+        _elipse(c, cx, cy, r, ry, 180, 180 * p, TINTA, 0.55, largura - 2, TRACO)  # metade de trás (em cima, na tela)
+        _elipse(c, cx, cy, r, ry, 180, -180 * p, TINTA, 1.0, largura)
+        _elipse(c, cx, ct, r, ry, 180, 360 * p, TINTA, 1.0, largura)
+        for x_ in (cx - r, cx + r):
+            M.line(c, x_, cy, x_, ct, TINTA, 1.0, largura, progress=p)
+    tm = tm if tm is not None else t0 + d + 0.2
+    if raio:
+        segmento(c, t, tm, (cx, ct), (cx + r, ct), None, cor=COR_TEXTO, pontas=False, largura=5)
+        k = ease_back(prog(t, tm, 0.3))
+        if k > 0:
+            c.drawCircle(cx, ct, 8 * k, M.paint(TINTA))
+        foco(c, t, tm + 0.3, 0.4, lambda a: _cola(c, raio, cx + r / 2, ct, 0, -1, 10, size, "b", COR_TEXTO, a))
+    if altura:
+        foco(c, t, tm + 0.2, 0.4, lambda a: _cola(c, altura, cx + r, (cy + ct) / 2, 1, 0, 18, size, "b", COR_TEXTO, a))
+
+
+def cone(c, t, t0, cx, cy, r, h, raio=None, altura=None, geratriz=None, cor=None, preenche=0.5, size=48, d=1.0, inclina=22, largura=6, tm=None):
+    """cone reto: (cx, cy) = centro da base na tela; r e h em px. A parte de trás da base sai tracejada; altura e raio por dentro, tracejados.
+    geratriz = rótulo na lateral direita"""
+    cor = cor or COR
+    ry = r * math.sin(math.radians(inclina))
+    hy = h * math.cos(math.radians(inclina))
+    vx, vy = cx, cy - hy
+    # pontos de tangência das laterais com a elipse da base
+    yt = -ry * ry / hy
+    xt = r * math.sqrt(max(0.0, 1 - (yt / ry) ** 2))
+    at = math.degrees(math.atan2(yt / ry, xt / r))  # ângulo (tela) do ponto à direita, um pouco para trás
+    p = ease_io(prog(t, t0, d))
+    q = ep(t, t0 + d * 0.5, 0.6)
+    if q > 0 and preenche > 0:
+        corpo = skia.Path()
+        corpo.moveTo(vx, vy); corpo.lineTo(cx - xt, cy + yt)
+        corpo.arcTo(skia.Rect.MakeXYWH(cx - r, cy - ry, 2 * r, 2 * ry), 180 - at, -(180 - 2 * at), False)
+        corpo.close()
+        _volume(c, corpo, cx - r, cx + r, cor, q * preenche * 1.6)
+    if p > 0:
+        _elipse(c, cx, cy, r, ry, at, (180 - 2 * at) * p, TINTA, 1.0, largura)  # frente (para baixo na tela)
+        _elipse(c, cx, cy, r, ry, at, -(180 + 2 * at) * p, TINTA, 0.55, largura - 2, TRACO)  # trás
+        M.line(c, vx, vy, cx - xt, cy + yt, TINTA, 1.0, largura, progress=p)
+        M.line(c, vx, vy, cx + xt, cy + yt, TINTA, 1.0, largura, progress=p)
+    tm = tm if tm is not None else t0 + d + 0.2
+    if altura:
+        segmento(c, t, tm, (vx, vy), (cx, cy), None, cor=TINTA2, pontas=False, tracejado=True, largura=5)
+        foco(c, t, tm + 0.3, 0.4, lambda a: _cola(c, altura, cx, (vy + cy) / 2 + 30, -1, 0, 12, size, "b", COR_TEXTO, a))
+    if raio:
+        segmento(c, t, tm + 0.3, (cx, cy), (cx + r, cy), None, cor=COR_TEXTO, pontas=False, tracejado=True, largura=5)
+        foco(c, t, tm + 0.6, 0.4, lambda a: _cola(c, raio, cx + r / 2, cy, 0, -1, 10, size, "b", COR_TEXTO, a))
+    k = ease_back(prog(t, tm if (altura or raio) else 1e9, 0.3))
+    if k > 0:
+        c.drawCircle(cx, cy, 8 * k, M.paint(TINTA))
+    if geratriz:
+        foco(c, t, tm + 0.5, 0.4, lambda a: _cola(c, geratriz, (vx + cx + xt) / 2, (vy + cy + yt) / 2, 1, -0.25, 18, size, "b", COR_TEXTO, a))
+
+
+def esfera(c, t, t0, cx, cy, r, raio=None, cor=None, preenche=0.5, size=48, d=1.0, inclina=18, largura=6, tm=None):
+    """esfera: contorno, equador com a metade de trás tracejada e, se pedido, o raio do centro até a borda"""
+    cor = cor or COR
+    p = ease_io(prog(t, t0, d))
+    q = ep(t, t0 + d * 0.5, 0.6)
+    if q > 0 and preenche > 0:
+        g = skia.Paint(AntiAlias=True)
+        g.setShader(skia.GradientShader.MakeRadial(
+            skia.Point(cx - r * 0.35, cy - r * 0.4), r * 1.45,
+            [hexc(mix(cor, "#FFFFFF", 0.88), q * preenche * 1.6), hexc(mix(cor, "#FFFFFF", 0.62), q * preenche * 1.6), hexc(mix(cor, "#FFFFFF", 0.35), q * preenche * 1.6)], [0.0, 0.6, 1.0]))
+        c.drawCircle(cx, cy, r, g)
+    ry = r * math.sin(math.radians(inclina))
+    if p > 0:
+        c.drawArc(skia.Rect.MakeXYWH(cx - r, cy - r, 2 * r, 2 * r), 180, 360 * p, False, M.paint(TINTA, 1.0, stroke=largura, cap_round=True))
+        _elipse(c, cx, cy, r, ry, 180, 180 * p, TINTA, 0.55, largura - 2, TRACO)
+        _elipse(c, cx, cy, r, ry, 180, -180 * p, TINTA, 1.0, largura - 1)
+    tm = tm if tm is not None else t0 + d + 0.2
+    if raio:
+        k = ease_back(prog(t, tm, 0.3))
+        if k > 0:
+            c.drawCircle(cx, cy, 9 * k, M.paint(TINTA))
+        ang = -32
+        P1 = (cx + r * math.cos(math.radians(ang)), cy + r * math.sin(math.radians(ang)))
+        segmento(c, t, tm + 0.1, (cx, cy), P1, None, cor=COR_TEXTO, pontas=False, largura=6)
+        foco(c, t, tm + 0.4, 0.4, lambda a: _cola(c, raio, (cx + P1[0]) / 2, (cy + P1[1]) / 2, -0.55, -1, 18, size, "b", COR_TEXTO, a))
+
+
+# ---------------- diagramas ----------------
+def _venn_centros(n, cx, cy, r):
+    if n == 2:
+        return [(cx - r * 0.62, cy), (cx + r * 0.62, cy)]
+    return [(cx - r * 0.56, cy - r * 0.34), (cx + r * 0.56, cy - r * 0.34), (cx, cy + r * 0.6)]
+
+
+def _venn_caixa(n, cx, cy, r, size=60):
+    """o retângulo do universo, com lugar para os nomes dos conjuntos em cima"""
+    cs = _venn_centros(n, cx, cy, r)
+    x0 = min(x for x, _ in cs) - r - r * 0.32
+    x1 = max(x for x, _ in cs) + r + r * 0.32
+    y0 = min(y for _, y in cs) - r - size - 46
+    y1 = max(y for _, y in cs) + r + r * 0.22
+    return x0, y0, x1, y1
+
+
+def _regiao_path(n, cx, cy, r, reg, size=60):
+    """caminho da região: dentro dos conjuntos de reg ('A', 'AB', ...), fora dos outros; '' = só no universo"""
+    cs = _venn_centros(n, cx, cy, r)
+    letras = "ABC"[:n]
+    x0, y0, x1, y1 = _venn_caixa(n, cx, cy, r, size)
+    res = skia.Path()
+    res.addRect(skia.Rect.MakeLTRB(x0, y0, x1, y1))
+    for L, (x, y) in zip(letras, cs):
+        circ = skia.Path()
+        circ.addCircle(x, y, r)
+        res = skia.Op(res, circ, skia.PathOp.kIntersect_PathOp if L in reg else skia.PathOp.kDifference_PathOp)
+    return res
+
+
+@lru_cache(None)
+def _venn_lugar(n, cx, cy, r, reg):
+    """o ponto mais folgado da região (longe de todas as bordas): é onde o número fica"""
+    cs = _venn_centros(n, cx, cy, r)
+    letras = "ABC"[:n]
+    x0, y0, x1, y1 = min(x for x, _ in cs) - r, min(y for _, y in cs) - r, max(x for x, _ in cs) + r, max(y for _, y in cs) + r
+    melhor, best = None, -1
+    passo_ = max(4, r / 40)
+    yy = y0
+    while yy <= y1:
+        xx = x0
+        while xx <= x1:
+            ok, folga = True, 1e9
+            for L, (x, y) in zip(letras, cs):
+                dd = math.hypot(xx - x, yy - y)
+                if (dd < r) != (L in reg):
+                    ok = False
+                    break
+                folga = min(folga, abs(dd - r))
+            if ok and folga > best:
+                melhor, best = (xx, yy), folga
+            xx += passo_
+        yy += passo_
+    return melhor
+
+
+def venn(c, t, t0, cx, cy, r, nomes=("A", "B"), numeros=None, pinta=(), universo="U", cor=None, size=60, d=0.8, tn=None, alfa=0.32, tp=None):
+    """diagrama de Venn com 2 ou 3 conjuntos (raio r px), centrado em (cx, cy), dentro do retângulo do universo.
+    Regiões pelo lugar do conjunto, não pelo nome: 'A', 'B', 'AB', 'C', 'AC', 'BC', 'ABC'; '' = fora de todos.
+    numeros = {região: valor}; pinta = [região ou (região, instante)]; tn = {região: instante} dos números; tp = instante da pintura"""
+    n = len(nomes)
+    cor = cor or COR
+    cs = _venn_centros(n, cx, cy, r)
+    x0, y0, x1, y1 = _venn_caixa(n, cx, cy, r, size)
+    if universo is not None and t >= t0:
+        q = ep(t, t0, 0.5)
+        c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeLTRB(x0, y0, x1, y1), 18, 18), M.paint(TINTA, q, stroke=4))
+        if universo:
+            foco(c, t, t0 + 0.2, 0.4, lambda a: escreve(c, universo, x0 + 8, y0 - 16, 60, "i", TINTA2, a))  # o U fica por fora, no canto
+    for i, item in enumerate(pinta):
+        reg, ti = (item, tp if tp is not None else t0 + d + 0.3) if isinstance(item, str) else item
+        q = ep(t, ti, 0.5)
+        if q > 0:
+            c.drawPath(_regiao_path(n, cx, cy, r, "".join(sorted(reg)), size), M.paint(cor, alfa * q))
+    for i, (x, y) in enumerate(cs):
+        q = ease_io(prog(t, t0 + 0.15 * i, d))
+        if q > 0:
+            c.drawArc(skia.Rect.MakeXYWH(x - r, y - r, 2 * r, 2 * r), -90, 360 * q, False, M.paint(TINTA, 1.0, stroke=6, cap_round=True))
+    # nomes dos conjuntos: os de cima acima do círculo, puxados para fora; o de baixo, embaixo à direita
+    for i, (s, (x, y)) in enumerate(zip(nomes, cs)):
+        if i < 2:
+            lx, ly = x + (-1 if i == 0 else 1) * r * 0.3, y - r - 14 - size * 0.37
+            foco(c, t, t0 + d * 0.6 + 0.12 * i, 0.4, lambda a, s=s, lx=lx, ly=ly: _meio(c, s, lx, ly, size, "g", COR_TEXTO, a))
+        else:
+            foco(c, t, t0 + d * 0.6 + 0.12 * i, 0.4, lambda a, s=s, x=x, y=y: _cola(c, s, x + r * 0.72, y + r * 0.7, 1, 0.6, 22, size, "g", COR_TEXTO, a))
+    for i, (reg, v) in enumerate((numeros or {}).items()):
+        reg_ = "".join(sorted(reg))
+        lugar = (x1 - size, y1 - size * 0.8) if reg_ == "" else _venn_lugar(n, float(cx), float(cy), float(r), reg_)
+        if lugar is None:
+            continue
+        ti = (tn or {}).get(reg, t0 + d + 0.4 + 0.15 * i)
+        foco(c, t, ti, 0.4, lambda a, v=v, lugar=lugar: _meio(c, v, lugar[0], lugar[1], size, "g", TINTA, a))
+    return dict(centros=cs, caixa=(x0, y0, x1, y1))
+
+
+def arvore(c, t, t0, niveis, x, y, w, h, ramos=None, folha=None, raiz="", tn=None, tf=None, destaque=(), size=48, size_ramo=40):
+    """árvore de possibilidades, da esquerda para a direita, na caixa (x, y, w, h). niveis = uma lista de rótulos por nível, igual para
+    todos os nós (["C", "K"]), ou uma função caminho → rótulos (sorteio sem reposição). ramos = rótulo de cada ramo, do mesmo jeito
+    (lista paralela a niveis[i], ou função (caminho, rótulo) → texto, como "f{1}{2}"). folha = função caminho → texto no fim do ramo.
+    tn = instante de cada nível; tf = das folhas; destaque = caminhos (tuplas) pintados na cor da matéria. Devolve {caminho: (x, y)}"""
+    L = len(niveis)
+    filhos = lambda cam: list(niveis[len(cam)](cam) if callable(niveis[len(cam)]) else niveis[len(cam)])
+
+    def ramo_txt(cam, rot):
+        if not ramos or ramos[len(cam)] is None:
+            return None
+        r_ = ramos[len(cam)]
+        return r_(cam, rot) if callable(r_) else r_[filhos(cam).index(rot)]
+
+    folhas = []
+
+    def junta(cam):
+        if len(cam) == L:
+            folhas.append(cam)
+            return
+        for f_ in filhos(cam):
+            junta(cam + (f_,))
+
+    junta(())
+    nf = len(folhas)
+    larg_folha = 0
+    if folha:
+        larg_folha = max(larg(_num(folha(f_)), "b", size) for f_ in folhas) + 40
+    col = (w - larg_folha - 40) / L
+    pos = {}
+    for j, f_ in enumerate(folhas):
+        pos[f_] = (x + 40 + col * L, y + h * (j + 0.5) / nf)
+    for nivel in range(L - 1, -1, -1):
+        for f_ in folhas:
+            cam = f_[:nivel]
+            if cam not in pos:
+                ys = [pos[g][1] for g in pos if len(g) == nivel + 1 and g[:nivel] == cam]
+                pos[cam] = (x + 40 + col * nivel if nivel else x + 20, sum(ys) / len(ys))
+    tn = tn or [t0 + 0.7 * i for i in range(L)]
+    rotw = lambda s: (formula(None, _num(s), 0, 0, size, _est(_num(s), "g"), a=0) if s else 0)
+    if raiz:
+        foco(c, t, t0, 0.4, lambda a: _meio(c, raiz, pos[()][0], pos[()][1], size, "g", TINTA, a))
+    else:
+        k = ease_back(prog(t, t0, 0.35))
+        if k > 0:
+            c.drawCircle(*pos[()], 11 * k, M.paint(TINTA))
+    for cam, (px, py) in pos.items():
+        if not cam:
+            continue
+        pai = cam[:-1]
+        ax, ay = pos[pai]
+        ax += (rotw(pai[-1]) / 2 + 14) if pai else (rotw(raiz) / 2 + 14 if raiz else 14)
+        bx = px - rotw(cam[-1]) / 2 - 14
+        ti = tn[len(cam) - 1]
+        forte = any(cam == dd[:len(cam)] for dd in destaque)
+        cr = COR if forte else TINTA2
+        if t >= ti:
+            M.line(c, ax, ay, bx, py, cr, 1.0, 7 if forte else 5, progress=ease_io(prog(t, ti, 0.5)))
+        foco(c, t, ti + 0.35, 0.4, lambda a, cam=cam, px=px, py=py, forte=forte: _meio(c, cam[-1], px, py, size, "g", COR_TEXTO if forte else TINTA, a))
+        rt = ramo_txt(pai, cam[-1])
+        if rt:
+            mx, my = (ax + bx) / 2, (ay + py) / 2
+            ux, uy = _uni(ax, ay, bx, py)
+            nx, ny = (uy, -ux) if py <= ay else (-uy, ux)
+            if abs(py - ay) < 1:
+                nx, ny = 0, -1
+            foco(c, t, ti + 0.4, 0.4, lambda a, rt=rt, mx=mx, my=my, nx=nx, ny=ny, forte=forte: _cola(c, rt, mx, my, nx, ny, 8, size_ramo, "b", COR_TEXTO if forte else TINTA2, a))
+    if folha:
+        tf = tf if tf is not None else tn[-1] + 0.7
+        for j, f_ in enumerate(folhas):
+            px, py = pos[f_]
+            forte = f_ in destaque
+            s = _num(folha(f_))
+            foco(c, t, tf + 0.06 * j, 0.4, lambda a, s=s, px=px, py=py, f_=f_, forte=forte: escreve(c, s, px + rotw(f_[-1]) / 2 + 40, py + size * 0.36, size, "b", COR_TEXTO if forte else CINZA, a))
+    return pos
+
+
+def trigono(c, t, t0, cx, cy, r, ang, rotulo="θ", seno=True, cosseno=True, tangente=False, notaveis=(), ponto_="P", cor=None,
+            size=46, ts=None, escuro=False):
+    """círculo trigonométrico de raio r px em (cx, cy). ang em graus (pode variar com t, para girar). Mostra o ângulo, o ponto,
+    o cosseno projetado no eixo x e o seno no eixo y; tangente=True traça a tangente em x = 1. notaveis = ângulos marcados com rótulo.
+    ts = {"circulo", "raio", "cos", "sen", "tg"}: instantes (senão, em fila)"""
+    cor = cor or COR
+    tinta = "#FFFFFF" if escuro else TINTA
+    ts = ts or {}
+    tc = ts.get("circulo", t0)
+    tr = ts.get("raio", t0 + 1.0)
+    tcos = ts.get("cos", tr + 0.8)
+    tsen = ts.get("sen", tcos + 0.8)
+    ttg = ts.get("tg", tsen + 0.8)
+    if t >= tc:
+        q = ep(t, tc, 0.6)
+        M.arrow(c, cx - r - 70, cy, cx + r + 90, cy, tinta, 1.0, 4, 20, q)
+        M.arrow(c, cx, cy + r + 70, cx, cy - r - 90, tinta, 1.0, 4, 20, q)
+        c.drawArc(skia.Rect.MakeXYWH(cx - r, cy - r, 2 * r, 2 * r), 0, -360 * ease_io(prog(t, tc + 0.2, 0.9)), False, M.paint(tinta, 1.0, stroke=5))
+    foco(c, t, tc + 0.6, 0.4, lambda a: (escreve(c, "cos", cx + r + 60, cy + 58, size, "i", TINTA2 if not escuro else CLARO, a),
+                                         escreve(c, "sen", cx + 22, cy - r - 62, size, "i", TINTA2 if not escuro else CLARO, a)))
+    for s, X, Y, horiz, nx, ny in (("1", cx + r, cy, True, -1, 1), ("−1", cx - r, cy, True, 1, 1), ("1", cx, cy - r, False, -1, 1), ("−1", cx, cy + r, False, -1, -1)):
+        foco(c, t, tc + 0.7, 0.4, lambda a, s=s, X=X, Y=Y, horiz=horiz, nx=nx, ny=ny: (
+            M.line(c, X - (0 if horiz else 10), Y - (10 if horiz else 0), X + (0 if horiz else 10), Y + (10 if horiz else 0), tinta, a, 4),
+            _cola(c, s, X, Y, nx, ny, 16, size * 0.9, "b", tinta, a)))  # por dentro: por fora ficam os ângulos notáveis
+    for i, g in enumerate(notaveis):
+        X, Y = _no_circ(cx, cy, r, g)
+        gd = math.radians(g + (22 if g % 90 == 0 else 0))  # sobre o eixo, o rótulo sai de lado para não cair na seta
+        foco(c, t, tc + 0.9 + 0.05 * i, 0.4, lambda a, g=g, X=X, Y=Y, gd=gd: (
+            c.drawCircle(X, Y, 7, M.paint(CINZA, a)),
+            _cola(c, f"{_num(g)}°", X, Y, math.cos(gd), -math.sin(gd), 14, 40, "b", CINZA, a)))
+    a_r = math.radians(ang)
+    co, se = math.cos(a_r), math.sin(a_r)
+    Px, Py = cx + r * co, cy - r * se
+    if cosseno and t >= tcos:
+        q = ep(t, tcos, 0.5)
+        M.line(c, Px, Py, Px, cy, tinta, 0.7, 4, dash=TRACO, progress=q)
+        M.line(c, cx, cy, cx + r * co, cy, cor, 1.0, 12, progress=ep(t, tcos + 0.3, 0.5), cap_round=False)
+        foco(c, t, tcos + 0.5, 0.4, lambda a: _meio(c, f"cos {rotulo}", cx + r * co / 2, cy + (1 if se >= 0 else -1) * (size * 0.95), size, "b", COR_TEXTO if not escuro else CLARO, a))
+    if seno and t >= tsen:
+        q = ep(t, tsen, 0.5)
+        M.line(c, Px, Py, cx, Py, tinta, 0.7, 4, dash=TRACO, progress=q)
+        M.line(c, cx, cy, cx, Py, cor, 1.0, 12, progress=ep(t, tsen + 0.3, 0.5), cap_round=False)
+        foco(c, t, tsen + 0.5, 0.4, lambda a: _cola(c, f"sen {rotulo}", cx, cy - r * se / 2, -1 if co >= 0 else 1, 0, 18, size, "b", COR_TEXTO if not escuro else CLARO, a))
+    if tangente and abs(co) > 0.05 and t >= ttg:
+        tg = se / co
+        q = ep(t, ttg, 0.5)
+        Ty = cy - r * tg
+        M.line(c, cx + r, cy - r * 1.6, cx + r, cy + r * 1.6, tinta, q * 0.5, 3)
+        M.line(c, cx, cy, cx + r, Ty, tinta, 0.7, 4, dash=TRACO, progress=q)
+        M.line(c, cx + r, cy, cx + r, Ty, cor, 1.0, 12, progress=ep(t, ttg + 0.3, 0.5), cap_round=False)
+        foco(c, t, ttg + 0.5, 0.4, lambda a: _cola(c, f"tg {rotulo}", cx + r, Ty, 1, 0, 18, size, "b", COR_TEXTO if not escuro else CLARO, a))
+    if t >= tr:
+        q = ep(t, tr, 0.5)
+        ra = r * 0.24
+        path = skia.Path()
+        path.moveTo(cx, cy); path.arcTo(skia.Rect.MakeXYWH(cx - ra, cy - ra, 2 * ra, 2 * ra), 0, -ang * q, False); path.close()
+        c.drawPath(path, M.paint(cor, 0.2))
+        c.drawArc(skia.Rect.MakeXYWH(cx - ra, cy - ra, 2 * ra, 2 * ra), 0, -ang * q, False, M.paint(cor, 1.0, stroke=5))
+        M.line(c, cx, cy, Px, Py, tinta, 1.0, 6, progress=q)
+        k = ease_back(prog(t, tr + 0.3, 0.35))
+        if k > 0:
+            c.drawCircle(Px, Py, 13 * k, M.paint(cor))
+        bis = math.radians(ang / 2)
+        foco(c, t, tr + 0.3, 0.4, lambda a: _cola(c, rotulo, cx + ra * math.cos(bis), cy - ra * math.sin(bis), math.cos(bis), -math.sin(bis), 12, size, "b", COR_TEXTO if not escuro else CLARO, a))
+        if ponto_:
+            dp = math.radians(ang + 35)
+            foco(c, t, tr + 0.4, 0.4, lambda a: _cola(c, ponto_, Px, Py, math.cos(dp), -math.sin(dp), 18, size * 1.1, "g", tinta, a))
+    return Px, Py
+
+
+# ---------------- matrizes e determinantes ----------------
+class _GM:
+    """geometria de uma matriz desenhada: x[j] = centro da coluna j, y[i] = centro da linha i; x0, x1, y0, y1 = moldura"""
+
+
+def _cel_txt(v):
+    return "" if v is None else _num(v) if not isinstance(v, str) else v.replace("-", "−")
+
+
+def matriz_geo(m, cx, cy, size=88, gap=None, dy=None, wmin=None):
+    """só a geometria (sem desenhar): útil para posicionar setas e marcas antes da matriz entrar"""
+    lin, col = len(m), len(m[0])
+    gap = size * 0.7 if gap is None else gap
+    dy = size * 1.32 if dy is None else dy
+    wmin = size * 0.62 if wmin is None else wmin
+    ws = [max(wmin, max(formula(None, _cel_txt(m[i][j]), 0, 0, size, "g", a=0) for i in range(lin))) for j in range(col)]
+    w = sum(ws) + gap * (col - 1)
+    h = dy * (lin - 1) + size * 1.15
+    G = _GM()
+    x = cx - w / 2
+    G.x = []
+    for wj in ws:
+        G.x.append(x + wj / 2)
+        x += wj + gap
+    G.y = [cy - dy * (lin - 1) / 2 + i * dy for i in range(lin)]
+    pad = size * 0.46
+    G.x0, G.x1, G.y0, G.y1 = cx - w / 2 - pad, cx + w / 2 + pad, cy - h / 2, cy + h / 2
+    G.ws, G.dy, G.size, G.cx, G.cy = ws, dy, size, cx, cy
+    return G
+
+
+def matriz(c, t, t0, m, cx, cy, size=88, cor=None, cores=None, tc=None, tl=None, barras=False, nome=None, gap=None, dy=None,
+           escuro=False, d=0.5, wmin=None, tm=None):
+    """matriz com colchetes (barras=True: as barras do determinante), centrada em (cx, cy). Devolve a geometria G (G.x, G.y).
+    m = lista de linhas; elemento = número, texto na escrita de E.formula ("a₁₂", "2x") ou None (casa vazia).
+    cores = {(i, j): cor, ("l", i): cor, ("c", j): cor}; tc = {(i, j): instante} de cada elemento; tl = instante de cada linha;
+    tm = instante da moldura (senão t0). nome = "A" escreve "A =" à esquerda."""
+    G = matriz_geo(m, cx, cy, size, gap, dy, wmin)
+    tinta = "#FFFFFF" if escuro else TINTA
+    cores, tc = cores or {}, tc or {}
+    tmold = t0 if tm is None else tm
+    q = ep(t, tmold, 0.5)
+    if q > 0:
+        lw = max(5, size * 0.075)
+        pt = M.paint(cor or tinta, q, stroke=lw, cap_round=True)
+        pt.setStrokeJoin(skia.Paint.kRound_Join)
+        k = size * 0.22
+        meio, meia = (G.y0 + G.y1) / 2, (G.y1 - G.y0) / 2 * ease_out(q)
+        for x, s in ((G.x0, 1), (G.x1, -1)):
+            p = skia.Path()
+            if barras:
+                p.moveTo(x + s * k * 0.5, meio - meia); p.lineTo(x + s * k * 0.5, meio + meia)
+            else:
+                p.moveTo(x + s * k, meio - meia); p.lineTo(x, meio - meia); p.lineTo(x, meio + meia); p.lineTo(x + s * k, meio + meia)
+            c.drawPath(p, pt)
+    if nome:
+        foco(c, t, tmold, d, lambda a: formula(c, f"{nome} =", G.x0 - size * 0.3, cy + size * 0.36, size, "g", cor or tinta, a, "right"))
+    for i, linha_ in enumerate(m):
+        for j, v in enumerate(linha_):
+            s = _cel_txt(v)
+            if not s:
+                continue
+            ti = tc.get((i, j), tl[i] if tl else t0)
+            cc = cores.get((i, j), cores.get(("l", i), cores.get(("c", j), tinta)))
+            foco(c, t, ti, d, lambda a, s=s, i=i, j=j, cc=cc: formula(c, s, G.x[j], G.y[i] + size * 0.36, size, "g", cc, a, "center"))
+    return G
+
+
+def matriz_marca(c, G, linha=None, coluna=None, cor=None, a=1.0, p=1.0, folga=None, cheia=0.12):
+    """faixa arredondada sobre uma linha, uma coluna ou um elemento (linha e coluna) de uma matriz já desenhada.
+    p = 0..1 faz a faixa crescer; cheia = opacidade do fundo (0 = só contorno)"""
+    if a <= 0 or p <= 0:
+        return
+    cor = cor or COR
+    f = G.size * 0.22 if folga is None else folga
+    if linha is not None:
+        y0, y1 = G.y[linha] - G.size * 0.58, G.y[linha] + G.size * 0.58
+    else:
+        y0, y1 = G.y0 + G.size * 0.0, G.y1
+    if coluna is not None:
+        x0, x1 = G.x[coluna] - G.ws[coluna] / 2 - f, G.x[coluna] + G.ws[coluna] / 2 + f
+    else:
+        x0, x1 = G.x0 + G.size * 0.12, G.x1 - G.size * 0.12
+    if linha is None:
+        y0, y1 = y0 - f * 0.2, y1 + f * 0.2
+    e = ease_out(clamp(p))
+    if coluna is None or linha is not None and coluna is None:
+        x1 = x0 + (x1 - x0) * e
+    else:
+        y1 = y0 + (y1 - y0) * e
+    r = skia.RRect.MakeRectXY(skia.Rect.MakeLTRB(x0, y0, x1, y1), G.size * 0.3, G.size * 0.3)
+    if cheia > 0:
+        c.drawRRect(r, M.paint(cor, a * cheia))
+    c.drawRRect(r, M.paint(cor, a, stroke=max(4, G.size * 0.05)))
