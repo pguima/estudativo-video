@@ -1045,6 +1045,209 @@ def divida(c, cx, cy, w, h, valor, a=1.0, cancela=0.0, topo="dívida", cor=None)
         M.line(c, cx - k, cy - k, cx + k, cy + k, TINTA, a, 8, progress=ease_out(clamp(cancela)))
 
 
+# ---------------- fórmulas: expoente, raiz e fração em linha ----------------
+def _ler(s, i=0, fim=None):
+    """lê a escrita de fórmula até `fim`: 2^5, 10^{-3}, r{72}, r3{27} (índice antes da chave), f{2}{3}. Devolve (nós, posição)"""
+    nos, txt = [], ""
+
+    def solta():
+        nonlocal txt
+        if txt:
+            nos.append(("t", txt))
+            txt = ""
+
+    while i < len(s):
+        ch = s[i]
+        if ch == fim:
+            solta()
+            return nos, i + 1
+        if ch == "^":
+            solta()
+            if s[i + 1] == "{":
+                dentro, i = _ler(s, i + 2, "}")
+            else:
+                dentro, i = [("t", s[i + 1])], i + 2
+            nos.append(("e", dentro))
+        elif ch == "r" and i + 1 < len(s) and (s[i + 1] == "{" or (s[i + 1].isdigit() and s[i + 2] == "{")):
+            solta()
+            ind = None
+            i += 1
+            if s[i] != "{":
+                ind, i = s[i], i + 1
+            dentro, i = _ler(s, i + 1, "}")
+            nos.append(("r", dentro, ind))
+        elif ch == "f" and i + 1 < len(s) and s[i + 1] == "{":
+            solta()
+            cima, i = _ler(s, i + 2, "}")
+            baixo, i = _ler(s, i + 1, "}")
+            nos.append(("f", cima, baixo))
+        else:
+            txt += ch
+            i += 1
+    solta()
+    return nos, i
+
+
+def _medir(nos, size, est):
+    w = 0.0
+    for n in nos:
+        if n[0] == "t":
+            w += larg(n[1], est, size) + APERTO[est] * size + size * 0.02
+        elif n[0] == "e":
+            w += _medir(n[1], size * 0.58, est) + size * 0.04
+        elif n[0] == "r":
+            w += _medir(n[1], size, est) + size * 0.62 + (size * 0.14 if n[2] else 0)
+        else:
+            w += max(_medir(n[1], size * 0.78, est), _medir(n[2], size * 0.78, est)) + size * 0.22
+    return w
+
+
+def _desenhar(c, nos, x, y, size, est, cor, a):
+    for n in nos:
+        if n[0] == "t":
+            escreve(c, n[1], x, y, size, est, cor, a)
+            x += larg(n[1], est, size) + APERTO[est] * size + size * 0.02
+        elif n[0] == "e":
+            _desenhar(c, n[1], x + size * 0.02, y - size * 0.42, size * 0.58, est, cor, a)
+            x += _medir(n[1], size * 0.58, est) + size * 0.04
+        elif n[0] == "r":
+            dentro = _medir(n[1], size, est)
+            if n[2]:
+                escreve(c, n[2], x, y - size * 0.5, size * 0.42, est, cor, a)
+                x += size * 0.14
+            tem_f = any(m[0] == "f" for m in n[1])  # com fração dentro, a raiz cresce para abraçar os dois andares
+            alto, baixo, l = y - size * (1.2 if tem_f else 0.92), y + size * (0.56 if tem_f else 0.06), max(4, size * 0.075)
+            x0, x1, x2, x3 = x + size * 0.04, x + size * 0.15, x + size * 0.3, x + size * 0.5
+            p = skia.Path()
+            p.moveTo(x0, y - size * 0.3); p.lineTo(x1, y - size * 0.38); p.lineTo(x2, baixo); p.lineTo(x3, alto); p.lineTo(x3 + dentro + size * 0.1, alto)
+            pt = M.paint(cor, a, stroke=l, cap_round=True)
+            pt.setStrokeJoin(skia.Paint.kRound_Join)
+            c.drawPath(p, pt)
+            _desenhar(c, n[1], x3 + size * 0.06, y, size, est, cor, a)
+            x += dentro + size * 0.62
+        else:
+            s_ = size * 0.78
+            wc, wb = _medir(n[1], s_, est), _medir(n[2], s_, est)
+            w = max(wc, wb) + size * 0.12
+            _desenhar(c, n[1], x + (w - wc) / 2, y - size * 0.46, s_, est, cor, a)
+            _desenhar(c, n[2], x + (w - wb) / 2, y + size * 0.46, s_, est, cor, a)
+            b = max(4, size * 0.07)
+            c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(x, y - size * 0.3 - b / 2, w, b), b / 2, b / 2), M.paint(cor, a))
+            x += w + size * 0.1
+    return x
+
+
+def formula(c, s, x, y, size, estilo="g", cor=None, a=1.0, align="left"):
+    """fórmula numa linha, com expoente, raiz e fração de verdade. x é a borda (ou o centro, com align="center"), y a linha de base. Devolve a largura.
+    Escrita: 2^5 · 2^4 | 10^{−3} | r{72} (raiz) | 6r{2} | r3{27} (cúbica) | r4{16} | f{2}{3} (fração) | (f{2}{3})^3 | 9^{1/2} | r{f{9}{16}}"""
+    nos, _ = _ler(s)
+    w = _medir(nos, size, estilo)
+    if a > 0:
+        xi = x - w / 2 if align == "center" else x - w if align == "right" else x
+        _desenhar(c, nos, xi, y, size, estilo, cor or TINTA, a)
+    return w
+
+
+def formula_em(c, t, t0, s, x, y, size, estilo="g", cor=None, align="left"):
+    """fórmula que entra com foco no instante t0"""
+    foco(c, t, t0, 0.5, lambda a: formula(c, s, x, y, size, estilo, cor, a, align))
+
+
+def cientifica(c, t, t0, n, e, x, y, size=110, cor=None, cor_e=None, te=None, align="left"):
+    """número em notação científica: n = "4,5", e = expoente. te = instante do expoente (senão, junto); cor_e destaca o expoente.
+    Confere a forma: 1 ≤ n < 10, senão para (assert); para mostrar a forma errada, use E.formula."""
+    assert 1 <= float(n.replace(",", ".")) < 10, n
+    e_ = str(e).replace("-", "−")
+    corpo = f"{n} × 10"
+    w_c = formula(c, corpo, 0, 0, size, a=0)
+    w_e = formula(c, f"^{{{e_}}}", 0, 0, size, a=0)
+    xi = x - (w_c + w_e) / 2 if align == "center" else x
+    foco(c, t, t0, 0.5, lambda a: formula(c, corpo, xi, y, size, cor=cor, a=a))
+    foco(c, t, te if te is not None else t0, 0.5, lambda a: formula(c, f"^{{{e_}}}", xi + w_c, y, size, cor=cor_e or cor, a=a))
+    return w_c + w_e
+
+
+# ---------------- equações ----------------
+def balanca(c, cx, cy, esq, dir_, inclina=0.0, a=1.0, size=96, larg_braco=620, cor=None, escuro=False):
+    """balança de dois pratos: esq e dir_ são fórmulas (escrita de E.formula) ou funções fn(c, x, y) que desenham sobre o prato.
+    inclina: −1..1, positivo baixa o prato da direita (lado mais pesado). Fica equilibrada com 0: é a equação."""
+    if a <= 0:
+        return
+    tinta = "#FFFFFF" if escuro else TINTA
+    cor = cor or COR
+    ang = math.radians(9 * clamp(inclina, -1, 1))
+    topo = cy - 250
+    # base e coluna
+    M.rrect(c, cx - 150, cy + 220, 300, 26, 13, tinta, a)
+    M.line(c, cx, cy + 220, cx, topo, tinta, a, 12)
+    c.drawCircle(cx, topo, 20, M.paint(cor, a))
+    pontas = []
+    for lado in (-1, 1):
+        px = cx + lado * larg_braco / 2 * math.cos(ang)
+        py = topo + lado * larg_braco / 2 * math.sin(ang)
+        pontas.append((px, py))
+    M.line(c, pontas[0][0], pontas[0][1], pontas[1][0], pontas[1][1], tinta, a, 12)
+    for (px, py), conteudo in zip(pontas, (esq, dir_)):
+        yp = py + 300  # prato pendurado sempre na vertical, com fio longo para passar por fora da fórmula
+        wt = formula(c, conteudo, 0, 0, size, a=0) if isinstance(conteudo, str) and conteudo else 200
+        hw = max(170, wt / 2 + 80)
+        for dx in (-hw, hw):
+            M.line(c, px, py, px + dx, yp, CINZA, a, 3)
+        p = skia.Path()
+        p.moveTo(px - hw, yp); p.lineTo(px + hw, yp); p.lineTo(px + hw - 50, yp + 34); p.lineTo(px - hw + 50, yp + 34); p.close()
+        c.drawPath(p, M.paint(cor, a))
+        if callable(conteudo):
+            conteudo(c, px, yp - 20)
+        elif conteudo:
+            formula(c, conteudo, px, yp - 24, size, cor=tinta, a=a, align="center")
+    return pontas
+
+
+def intervalo(c, t, t0, vx, y, ini, fim, fecha_ini=False, fecha_fim=False, cor=None, d=0.7, r=17):
+    """trecho de solução sobre a reta: vx = função valor → x de E.reta; ini/fim = None para seguir até a ponta (com seta).
+    fecha_* = bolinha cheia (o número entra); aberta = o número não entra."""
+    p = ease_out(prog(t, t0, d))
+    if p <= 0:
+        return
+    cor = cor or COR
+    x0 = vx(ini) if ini is not None else 60
+    x1 = vx(fim) if fim is not None else W - 60
+    xm = lerp(x0, x1, p) if ini is not None else lerp(x1, x0, p)
+    a_, b_ = (x0, xm) if ini is not None else (xm, x1)
+    M.line(c, a_, y, b_, y, cor, 1.0, 12, cap_round=False)
+    if p >= 0.99:
+        if ini is None:
+            M.line(c, x0, y, x0 + 26, y - 18, cor, 1.0, 8)
+            M.line(c, x0, y, x0 + 26, y + 18, cor, 1.0, 8)
+        if fim is None:
+            M.line(c, x1, y, x1 - 26, y - 18, cor, 1.0, 8)
+            M.line(c, x1, y, x1 - 26, y + 18, cor, 1.0, 8)
+    for v, fecha in ((ini, fecha_ini), (fim, fecha_fim)):
+        if v is None:
+            continue
+        x = vx(v)
+        c.drawCircle(x, y, r, M.paint(cor if fecha else PAPEL, ep(t, t0, 0.3)))
+        c.drawCircle(x, y, r, M.paint(cor, ep(t, t0, 0.3), stroke=6))
+
+
+def sistema(c, t, t0, linhas, x, y, size=96, dy=None, cor=None, tl=None):
+    """sistema de equações: chave à esquerda e uma fórmula por linha. tl = instante de cada linha (senão, entram juntas)."""
+    dy = dy or size * 1.45
+    cor = cor or TINTA
+    alto, baixo = y - size * 0.95, y + (len(linhas) - 1) * dy + size * 0.35
+    meio = (alto + baixo) / 2
+    q = ep(t, t0, 0.5)
+    if q > 0:
+        p = skia.Path()
+        k = size * 0.32
+        p.moveTo(x, alto); p.cubicTo(x - k, alto, x - k * 0.2, meio - k, x - k, meio)
+        p.cubicTo(x - k * 0.2, meio + k, x - k, baixo, x, baixo)
+        c.drawPath(p, M.paint(cor, q, stroke=max(5, size * 0.07), cap_round=True))
+    for i, l in enumerate(linhas):
+        ti = tl[i] if tl else t0
+        foco(c, t, ti, 0.5, lambda a, l=l, i=i: formula(c, l, x + size * 0.3, y + i * dy, size, cor=cor, a=a))
+
+
 def moeda(c, cx, cy, r, s, a=1.0, cor=None):
     """moeda na cor da matéria, com aro e o valor no meio"""
     if a <= 0 or r <= 1:

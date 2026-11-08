@@ -70,6 +70,11 @@ Texto sobre esfera ou faixa da matéria usa `E.SOBRE`, nunca branco fixo: Redaç
 | `E.conta_mult(c, t, a, b, tn, tl, xv, y0, size, tz=..., tr=..., tsoma=..., vai=...)` | Conta armada de multiplicar, refeita pela peça. `tl` = uma lista por linha, da direita para a esquerda; `tz` = o zero de cada linha depois da primeira; `vai = [(coluna da direita, texto, t0[, t_some])]`. `E.armada` aceita o mesmo `vai` |
 | `E.expressao(c, t, estados, tp, cx, y, size, empilha=..., t0=...)` | Expressão que se resolve no lugar: `estados = [(texto, trecho da vez), ...]`, com `assert` de que todos valem o mesmo. `empilha=dy` deixa cada etapa numa linha |
 | `E.divida(c, cx, cy, w, h, valor, a, cancela)` | Cartão de dívida; `cancela` 0..1 risca |
+| `E.formula(c, s, x, y, size, estilo, cor, a, align)` | Fórmula com expoente, raiz e fração: `2^5 · 2^4`, `10^{−3}`, `r{72}`, `6r{2}`, `r3{27}`, `(f{2}{3})^3`, `9^{1/2}`, `r{f{9}{16}}`. `E.formula_em(c, t, t0, ...)` entra com foco |
+| `E.cientifica(c, t, t0, n, e, x, y, size, te=..., cor_e=...)` | Notação científica; `te` faz o expoente entrar depois. Para em `assert` se 1 ≤ n < 10 não valer: a forma errada se mostra com `E.formula` |
+| `E.balanca(c, cx, cy, esq, dir_, inclina, a, size)` | Balança de dois pratos: cada prato recebe uma fórmula (`"2x + 3"`) ou uma função que desenha. `inclina` baixa um lado; 0 é a equação |
+| `E.intervalo(c, t, t0, vx, y, ini, fim, fecha_ini, fecha_fim)` | Solução de inequação sobre `E.reta`: bolinha cheia entra, aberta não; `None` segue até a ponta com seta |
+| `E.sistema(c, t, t0, linhas, x, y, size, tl=...)` | Chave do sistema com uma fórmula por linha |
 | `E.dividir(dividendo, divisor, casas_max)` | Faz a divisão de verdade e devolve os passos, para `E.conta_div` (`"7,5"` ou `"7"`; divisor inteiro). Com resto de verdade, use `casas_max=0`: `E.dividir("17", 5, 0)` |
 | `E.conta_div(c, t, D, tq, tr, t0, x, y, size, tv=..., ts=...)` | Conta de dividir na chave: `tq` = cada algarismo do quociente, `tr` = cada linha de baixo com o resto e o algarismo que desceu, mais a última com o resto final. `ts` mostra o resto sozinho antes de o algarismo descer |
 | `E.quadro_casas(c, t, nomes, tc, linhas, x, y, w_col, size, grossa=1)` | Quadro inteiro, décimo, centésimo, milésimo; com `grossa=None`, centena, dezena, unidade. Célula `(algarismo, t0[, cor])` |

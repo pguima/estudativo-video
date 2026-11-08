@@ -1,0 +1,4839 @@
+{
+ "total": 303.13,
+ "scenes": [
+  {
+   "id": "s01",
+   "block": "gancho",
+   "start": 0.6,
+   "dur": 13.11,
+   "tokens": [
+    {
+     "disp": "Abre",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.42
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 0.42,
+     "t1": 0.98
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 1.14,
+     "t1": 1.34
+    },
+    {
+     "disp": "três,",
+     "bold": false,
+     "t0": 1.3,
+     "t1": 2.32
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 2.32,
+     "t1": 2.62
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 2.62,
+     "t1": 3.12
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 3.12,
+     "t1": 3.6
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 3.6,
+     "t1": 4.1
+    },
+    {
+     "disp": "Dá",
+     "bold": false,
+     "t0": 4.46,
+     "t1": 4.7
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 4.7,
+     "t1": 4.98
+    },
+    {
+     "disp": "Sem",
+     "bold": false,
+     "t0": 5.72,
+     "t1": 6.02
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 6.02,
+     "t1": 6.6
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 6.77,
+     "t1": 6.97
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.94,
+     "t1": 7.92
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 7.92,
+     "t1": 8.2
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 8.2,
+     "t1": 8.7
+    },
+    {
+     "disp": "Dá",
+     "bold": false,
+     "t0": 9.16,
+     "t1": 9.26
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 9.26,
+     "t1": 9.46
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 9.26,
+     "t1": 10.44
+    },
+    {
+     "disp": "Um",
+     "bold": false,
+     "t0": 10.44,
+     "t1": 10.64
+    },
+    {
+     "disp": "par",
+     "bold": false,
+     "t0": 10.64,
+     "t1": 10.84
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 10.84,
+     "t1": 10.98
+    },
+    {
+     "disp": "parênteses",
+     "bold": false,
+     "t0": 10.98,
+     "t1": 11.42
+    },
+    {
+     "disp": "troca",
+     "bold": false,
+     "t0": 11.42,
+     "t1": 11.92
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 11.92,
+     "t1": 12.02
+    },
+    {
+     "disp": "sinal",
+     "bold": false,
+     "t0": 12.02,
+     "t1": 12.2
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 12.2,
+     "t1": 12.32
+    },
+    {
+     "disp": "resposta.",
+     "bold": false,
+     "t0": 12.32,
+     "t1": 12.6
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 4.7,
+    "c": 5.72,
+    "d": 9.26
+   }
+  },
+  {
+   "id": "s02",
+   "block": "gancho",
+   "start": 13.71,
+   "dur": 9.42,
+   "tokens": [
+    {
+     "disp": "Até",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.71
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.71,
+     "t1": 0.81
+    },
+    {
+     "disp": "fim",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 0.93
+    },
+    {
+     "disp": "desta",
+     "bold": false,
+     "t0": 0.93,
+     "t1": 1.09
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 1.09,
+     "t1": 1.43
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.67,
+     "t1": 1.81
+    },
+    {
+     "disp": "calcula",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 2.17
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 2.29,
+     "t1": 2.59
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.75
+    },
+    {
+     "disp": "negativo,",
+     "bold": false,
+     "t0": 2.75,
+     "t1": 3.29
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.53,
+     "t1": 3.71
+    },
+    {
+     "disp": "fração",
+     "bold": false,
+     "t0": 3.71,
+     "t1": 4.11
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.11,
+     "t1": 4.57
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.71
+    },
+    {
+     "disp": "decimal,",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 5.05
+    },
+    {
+     "disp": "põe",
+     "bold": false,
+     "t0": 5.65,
+     "t1": 5.75
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.75,
+     "t1": 5.81
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 5.81,
+     "t1": 6.15
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 6.15,
+     "t1": 6.31
+    },
+    {
+     "disp": "ordem",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.69
+    },
+    {
+     "disp": "das",
+     "bold": false,
+     "t0": 6.69,
+     "t1": 6.87
+    },
+    {
+     "disp": "operações",
+     "bold": false,
+     "t0": 6.87,
+     "t1": 7.37
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 7.37,
+     "t1": 7.89
+    },
+    {
+     "disp": "leva",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.03
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 8.03,
+     "t1": 8.19
+    },
+    {
+     "disp": "atalho",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.53
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.53,
+     "t1": 8.63
+    },
+    {
+     "disp": "prova.",
+     "bold": false,
+     "t0": 8.63,
+     "t1": 8.87
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 6.15,
+    "c": 8.19
+   }
+  },
+  {
+   "id": "s03",
+   "block": "lembrete",
+   "start": 23.13,
+   "dur": 11.32,
+   "tokens": [
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "acompanhar,",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 1.07
+    },
+    {
+     "disp": "lembre",
+     "bold": false,
+     "t0": 1.47,
+     "t1": 1.69
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 1.69,
+     "t1": 1.89
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.23
+    },
+    {
+     "disp": "coisas:",
+     "bold": false,
+     "t0": 2.23,
+     "t1": 2.63
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 3.11,
+     "t1": 3.29
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.43
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 3.43,
+     "t1": 3.55
+    },
+    {
+     "disp": "potência,",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 4.01
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.39,
+     "t1": 4.53
+    },
+    {
+     "disp": "regra",
+     "bold": false,
+     "t0": 4.53,
+     "t1": 4.83
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.83,
+     "t1": 4.99
+    },
+    {
+     "disp": "sinais,",
+     "bold": false,
+     "t0": 4.99,
+     "t1": 5.33
+    },
+    {
+     "disp": "multiplicar",
+     "bold": false,
+     "t0": 5.33,
+     "t1": 6.31
+    },
+    {
+     "disp": "frações",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.75
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.75,
+     "t1": 7.29
+    },
+    {
+     "disp": "multiplicar",
+     "bold": false,
+     "t0": 7.29,
+     "t1": 7.93
+    },
+    {
+     "disp": "decimais.",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.47
+    },
+    {
+     "disp": "Se",
+     "bold": false,
+     "t0": 8.87,
+     "t1": 9.15
+    },
+    {
+     "disp": "faltar",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.45
+    },
+    {
+     "disp": "alguma,",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 9.79
+    },
+    {
+     "disp": "procure",
+     "bold": false,
+     "t0": 10.19,
+     "t1": 10.37
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 10.37,
+     "t1": 10.59
+    },
+    {
+     "disp": "canal.",
+     "bold": false,
+     "t0": 10.59,
+     "t1": 10.77
+    }
+   ],
+   "cues": {
+    "a": 1.89,
+    "b": 3.11,
+    "c": 4.39,
+    "d": 5.33,
+    "e": 7.29
+   }
+  },
+  {
+   "id": "s04",
+   "block": "negativo",
+   "start": 34.45,
+   "dur": 18.13,
+   "tokens": [
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.51
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 0.51,
+     "t1": 0.85
+    },
+    {
+     "disp": "continua",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.37
+    },
+    {
+     "disp": "dizendo",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.67
+    },
+    {
+     "disp": "quantas",
+     "bold": false,
+     "t0": 1.67,
+     "t1": 2.21
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 2.21,
+     "t1": 2.55
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.55,
+     "t1": 2.79
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 2.99
+    },
+    {
+     "disp": "aparece.",
+     "bold": false,
+     "t0": 2.99,
+     "t1": 3.41
+    },
+    {
+     "disp": "Só",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.11
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 4.11,
+     "t1": 4.23
+    },
+    {
+     "disp": "agora",
+     "bold": false,
+     "t0": 4.23,
+     "t1": 4.49
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.77,
+     "t1": 4.81
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 5.05
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 5.05,
+     "t1": 5.17
+    },
+    {
+     "disp": "negativa,",
+     "bold": false,
+     "t0": 5.17,
+     "t1": 5.81
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.31
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.39
+    },
+    {
+     "disp": "parêntese",
+     "bold": false,
+     "t0": 6.39,
+     "t1": 6.89
+    },
+    {
+     "disp": "mostra",
+     "bold": false,
+     "t0": 6.89,
+     "t1": 7.29
+    },
+    {
+     "disp": "isso:",
+     "bold": false,
+     "t0": 7.29,
+     "t1": 7.67
+    },
+    {
+     "disp": "abre",
+     "bold": false,
+     "t0": 8.37,
+     "t1": 8.57
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 8.57,
+     "t1": 9.11
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 9.26,
+     "t1": 9.46
+    },
+    {
+     "disp": "dois,",
+     "bold": false,
+     "t0": 9.41,
+     "t1": 10.31
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 10.31,
+     "t1": 10.65
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 10.65,
+     "t1": 11.11
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 11.11,
+     "t1": 11.55
+    },
+    {
+     "disp": "cubo.",
+     "bold": false,
+     "t0": 11.55,
+     "t1": 11.83
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 12.41,
+     "t1": 12.49
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 12.49,
+     "t1": 12.69
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 12.49,
+     "t1": 13.09
+    },
+    {
+     "disp": "aparece",
+     "bold": false,
+     "t0": 13.09,
+     "t1": 13.33
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 13.33,
+     "t1": 13.75
+    },
+    {
+     "disp": "vezes:",
+     "bold": false,
+     "t0": 13.75,
+     "t1": 14.09
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 14.38,
+     "t1": 14.58
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 14.67,
+     "t1": 15.27
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 15.27,
+     "t1": 15.61
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 15.61,
+     "t1": 15.81
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 15.61,
+     "t1": 16.51
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 16.51,
+     "t1": 16.83
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 16.83,
+     "t1": 17.03
+    },
+    {
+     "disp": "dois.",
+     "bold": false,
+     "t0": 16.83,
+     "t1": 18.03
+    }
+   ],
+   "cues": {
+    "a": 1.67,
+    "b": 8.37,
+    "c": 14.38
+   }
+  },
+  {
+   "id": "s05",
+   "block": "negativo",
+   "start": 52.58,
+   "dur": 11.44,
+   "tokens": [
+    {
+     "disp": "Uma",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.18
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 0.18,
+     "t1": 0.52
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 0.52,
+     "t1": 0.74
+    },
+    {
+     "disp": "vez.",
+     "bold": false,
+     "t0": 0.74,
+     "t1": 0.92
+    },
+    {
+     "disp": "Menos",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.43
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 1.54,
+     "t1": 2.22
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 2.22,
+     "t1": 2.36
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 2.36,
+     "t1": 2.56
+    },
+    {
+     "disp": "dois:",
+     "bold": false,
+     "t0": 2.36,
+     "t1": 3.32
+    },
+    {
+     "disp": "sinais",
+     "bold": false,
+     "t0": 3.32,
+     "t1": 3.78
+    },
+    {
+     "disp": "iguais,",
+     "bold": false,
+     "t0": 3.78,
+     "t1": 4.06
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 4.44,
+     "t1": 4.9
+    },
+    {
+     "disp": "quatro.",
+     "bold": false,
+     "t0": 4.9,
+     "t1": 5.22
+    },
+    {
+     "disp": "Mais",
+     "bold": false,
+     "t0": 5.22,
+     "t1": 6.02
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 6.02,
+     "t1": 6.44
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 6.44,
+     "t1": 6.7
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 6.7,
+     "t1": 6.9
+    },
+    {
+     "disp": "dois:",
+     "bold": false,
+     "t0": 6.7,
+     "t1": 7.78
+    },
+    {
+     "disp": "sinais",
+     "bold": false,
+     "t0": 7.78,
+     "t1": 8.16
+    },
+    {
+     "disp": "diferentes,",
+     "bold": false,
+     "t0": 8.16,
+     "t1": 8.46
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 8.75,
+     "t1": 8.95
+    },
+    {
+     "disp": "oito.",
+     "bold": false,
+     "t0": 9.04,
+     "t1": 11.34
+    }
+   ],
+   "cues": {
+    "a": 1.23,
+    "b": 5.22,
+    "c": 8.75
+   }
+  },
+  {
+   "id": "s06",
+   "block": "parenteses",
+   "start": 64.02,
+   "dur": 12.53,
+   "tokens": [
+    {
+     "disp": "Volte",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.24
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 0.24,
+     "t1": 0.32
+    },
+    {
+     "disp": "começo",
+     "bold": false,
+     "t0": 0.32,
+     "t1": 0.56
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 0.56,
+     "t1": 0.78
+    },
+    {
+     "disp": "aula.",
+     "bold": false,
+     "t0": 0.78,
+     "t1": 0.96
+    },
+    {
+     "disp": "Abre",
+     "bold": false,
+     "t0": 1.62,
+     "t1": 1.76
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 1.76,
+     "t1": 2.24
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 2.48,
+     "t1": 2.68
+    },
+    {
+     "disp": "três,",
+     "bold": false,
+     "t0": 2.72,
+     "t1": 3.48
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 3.48,
+     "t1": 3.76
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 3.76,
+     "t1": 4.22
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 4.22,
+     "t1": 4.68
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 4.68,
+     "t1": 5.12
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 5.7,
+     "t1": 5.84
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 5.84,
+     "t1": 6.18
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 6.18,
+     "t1": 6.44
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 6.44,
+     "t1": 6.52
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 6.52,
+     "t1": 6.72
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.52,
+     "t1": 7.36
+    },
+    {
+     "disp": "inteiro:",
+     "bold": false,
+     "t0": 7.36,
+     "t1": 7.54
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 7.88,
+     "t1": 8.08
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 8.22,
+     "t1": 8.68
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 8.68,
+     "t1": 8.94
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 8.94,
+     "t1": 9.14
+    },
+    {
+     "disp": "três.",
+     "bold": false,
+     "t0": 8.94,
+     "t1": 10.34
+    },
+    {
+     "disp": "Sinais",
+     "bold": false,
+     "t0": 10.34,
+     "t1": 10.72
+    },
+    {
+     "disp": "iguais:",
+     "bold": false,
+     "t0": 10.72,
+     "t1": 11.0
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 11.44,
+     "t1": 11.82
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 11.82,
+     "t1": 12.1
+    }
+   ],
+   "cues": {
+    "a": 1.62,
+    "b": 7.88,
+    "c": 11.44
+   }
+  },
+  {
+   "id": "s07",
+   "block": "parenteses",
+   "start": 76.55,
+   "dur": 11.93,
+   "tokens": [
+    {
+     "disp": "Sem",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.59
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 0.59,
+     "t1": 1.17
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.43,
+     "t1": 1.45
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 1.83
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.13
+    },
+    {
+     "disp": "alcança",
+     "bold": false,
+     "t0": 2.13,
+     "t1": 2.57
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.57,
+     "t1": 2.67
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 2.71
+    },
+    {
+     "disp": "está",
+     "bold": false,
+     "t0": 2.71,
+     "t1": 2.83
+    },
+    {
+     "disp": "colado",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 3.35
+    },
+    {
+     "disp": "nele:",
+     "bold": false,
+     "t0": 3.35,
+     "t1": 3.73
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.15
+    },
+    {
+     "disp": "três.",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.43
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 5.07,
+     "t1": 5.21
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 5.21,
+     "t1": 5.45
+    },
+    {
+     "disp": "fica",
+     "bold": false,
+     "t0": 5.45,
+     "t1": 5.75
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.75,
+     "t1": 5.87
+    },
+    {
+     "disp": "fora.",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.07
+    },
+    {
+     "disp": "Primeiro,",
+     "bold": false,
+     "t0": 6.55,
+     "t1": 6.97
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 7.11,
+     "t1": 7.27
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 7.27,
+     "t1": 7.51
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 7.51,
+     "t1": 7.87
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.33
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 8.33,
+     "t1": 8.63
+    },
+    {
+     "disp": "Depois,",
+     "bold": false,
+     "t0": 9.05,
+     "t1": 9.45
+    },
+    {
+     "disp": "entra",
+     "bold": false,
+     "t0": 9.53,
+     "t1": 9.67
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 9.67,
+     "t1": 9.75
+    },
+    {
+     "disp": "menos:",
+     "bold": false,
+     "t0": 9.75,
+     "t1": 9.95
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 9.75,
+     "t1": 9.93
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 10.43,
+     "t1": 11.83
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.01,
+    "c": 7.11,
+    "d": 9.75
+   }
+  },
+  {
+   "id": "s08",
+   "block": "parenteses",
+   "start": 88.48,
+   "dur": 11.17,
+   "tokens": [
+    {
+     "disp": "Você",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.2
+    },
+    {
+     "disp": "aprendeu",
+     "bold": false,
+     "t0": 0.2,
+     "t1": 0.56
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 0.56,
+     "t1": 0.72
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.72,
+     "t1": 0.84
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 0.84,
+     "t1": 1.1
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 1.1,
+     "t1": 1.34
+    },
+    {
+     "disp": "começo",
+     "bold": false,
+     "t0": 1.34,
+     "t1": 1.66
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 1.66,
+     "t1": 1.86
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 1.86,
+     "t1": 2.14
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.14,
+     "t1": 2.42
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 2.42,
+     "t1": 2.54
+    },
+    {
+     "disp": "sinal",
+     "bold": false,
+     "t0": 2.54,
+     "t1": 2.78
+    },
+    {
+     "disp": "colado",
+     "bold": false,
+     "t0": 2.78,
+     "t1": 3.28
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 3.28,
+     "t1": 3.44
+    },
+    {
+     "disp": "número.",
+     "bold": false,
+     "t0": 3.44,
+     "t1": 3.76
+    },
+    {
+     "disp": "Continua",
+     "bold": false,
+     "t0": 4.14,
+     "t1": 4.7
+    },
+    {
+     "disp": "sendo,",
+     "bold": false,
+     "t0": 4.7,
+     "t1": 4.94
+    },
+    {
+     "disp": "mas",
+     "bold": false,
+     "t0": 5.34,
+     "t1": 5.54
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.54,
+     "t1": 5.66
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 5.66,
+     "t1": 6.0
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 6.0,
+     "t1": 6.2
+    },
+    {
+     "disp": "resolvida",
+     "bold": false,
+     "t0": 6.2,
+     "t1": 6.52
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 6.52,
+     "t1": 7.06
+    },
+    {
+     "disp": "dele.",
+     "bold": false,
+     "t0": 7.06,
+     "t1": 7.36
+    },
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 7.82,
+     "t1": 8.06
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 8.06,
+     "t1": 8.18
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 8.18,
+     "t1": 8.34
+    },
+    {
+     "disp": "entrar",
+     "bold": false,
+     "t0": 8.34,
+     "t1": 8.76
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 8.76,
+     "t1": 8.92
+    },
+    {
+     "disp": "potência,",
+     "bold": false,
+     "t0": 8.92,
+     "t1": 9.38
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 9.7,
+     "t1": 10.02
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 10.02,
+     "t1": 10.2
+    },
+    {
+     "disp": "parênteses.",
+     "bold": false,
+     "t0": 10.2,
+     "t1": 10.62
+    }
+   ],
+   "cues": {
+    "a": 5.54,
+    "b": 9.7
+   }
+  },
+  {
+   "id": "s09",
+   "block": "fracao",
+   "start": 99.65,
+   "dur": 18.02,
+   "tokens": [
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.49
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 0.49,
+     "t1": 0.63
+    },
+    {
+     "disp": "fração?",
+     "bold": false,
+     "t0": 0.63,
+     "t1": 1.05
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 1.95
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 1.95,
+     "t1": 2.11
+    },
+    {
+     "disp": "lavagem,",
+     "bold": false,
+     "t0": 2.11,
+     "t1": 2.53
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 2.69,
+     "t1": 2.79
+    },
+    {
+     "disp": "camiseta",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 3.19
+    },
+    {
+     "disp": "fica",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.41
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 3.41,
+     "t1": 3.65
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 3.65,
+     "t1": 3.93
+    },
+    {
+     "disp": "terços",
+     "bold": false,
+     "t0": 3.93,
+     "t1": 4.37
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 4.37,
+     "t1": 4.57
+    },
+    {
+     "disp": "cor",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.81
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 4.95
+    },
+    {
+     "disp": "tinha",
+     "bold": false,
+     "t0": 4.95,
+     "t1": 5.17
+    },
+    {
+     "disp": "antes.",
+     "bold": false,
+     "t0": 5.17,
+     "t1": 5.45
+    },
+    {
+     "disp": "Depois",
+     "bold": false,
+     "t0": 5.95,
+     "t1": 6.27
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.27,
+     "t1": 6.45
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.45,
+     "t1": 6.77
+    },
+    {
+     "disp": "lavagens,",
+     "bold": false,
+     "t0": 6.77,
+     "t1": 7.23
+    },
+    {
+     "disp": "restam",
+     "bold": false,
+     "t0": 7.51,
+     "t1": 7.87
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.07
+    },
+    {
+     "disp": "terços",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.47
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.65,
+     "t1": 8.81
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 8.81,
+     "t1": 9.01
+    },
+    {
+     "disp": "terços",
+     "bold": false,
+     "t0": 9.01,
+     "t1": 9.43
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.63,
+     "t1": 9.69
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 9.91
+    },
+    {
+     "disp": "terços.",
+     "bold": false,
+     "t0": 9.91,
+     "t1": 10.25
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 10.79,
+     "t1": 10.95
+    },
+    {
+     "disp": "palavra",
+     "bold": false,
+     "t0": 10.95,
+     "t1": 11.19
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 11.19,
+     "t1": 11.71
+    },
+    {
+     "disp": "significa",
+     "bold": false,
+     "t0": 11.71,
+     "t1": 12.17
+    },
+    {
+     "disp": "vezes,",
+     "bold": false,
+     "t0": 12.17,
+     "t1": 12.59
+    },
+    {
+     "disp": "então",
+     "bold": false,
+     "t0": 13.09,
+     "t1": 13.39
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 13.47,
+     "t1": 13.57
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 13.57,
+     "t1": 13.77
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 13.77,
+     "t1": 13.99
+    },
+    {
+     "disp": "abre",
+     "bold": false,
+     "t0": 14.35,
+     "t1": 14.57
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 14.57,
+     "t1": 15.03
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 15.45,
+     "t1": 15.63
+    },
+    {
+     "disp": "terços,",
+     "bold": false,
+     "t0": 15.63,
+     "t1": 16.01
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 16.43,
+     "t1": 16.59
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 16.59,
+     "t1": 17.07
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 17.07,
+     "t1": 17.59
+    },
+    {
+     "disp": "cubo.",
+     "bold": false,
+     "t0": 17.59,
+     "t1": 17.91
+    }
+   ],
+   "cues": {
+    "a": 3.65,
+    "b": 6.45,
+    "c": 14.35
+   }
+  },
+  {
+   "id": "s10",
+   "block": "fracao",
+   "start": 117.67,
+   "dur": 16.92,
+   "tokens": [
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.65
+    },
+    {
+     "disp": "parêntese",
+     "bold": false,
+     "t0": 0.65,
+     "t1": 1.07
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 1.07,
+     "t1": 1.31
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.31,
+     "t1": 1.47
+    },
+    {
+     "disp": "fração",
+     "bold": false,
+     "t0": 1.47,
+     "t1": 1.75
+    },
+    {
+     "disp": "inteira",
+     "bold": false,
+     "t0": 1.75,
+     "t1": 2.15
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 2.15,
+     "t1": 2.31
+    },
+    {
+     "disp": "repetir.",
+     "bold": false,
+     "t0": 2.31,
+     "t1": 2.83
+    },
+    {
+     "disp": "Multiplica",
+     "bold": false,
+     "t0": 3.41,
+     "t1": 3.95
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 3.95,
+     "t1": 4.07
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.07,
+     "t1": 4.19
+    },
+    {
+     "disp": "cima:",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.47
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 4.99,
+     "t1": 5.19
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.19,
+     "t1": 5.51
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 5.51,
+     "t1": 5.81
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.81,
+     "t1": 6.09
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 6.09,
+     "t1": 6.45
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 6.45,
+     "t1": 6.89
+    },
+    {
+     "disp": "oito.",
+     "bold": false,
+     "t0": 6.89,
+     "t1": 7.19
+    },
+    {
+     "disp": "Multiplica",
+     "bold": false,
+     "t0": 7.59,
+     "t1": 8.19
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.31
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.31,
+     "t1": 8.39
+    },
+    {
+     "disp": "baixo:",
+     "bold": false,
+     "t0": 8.39,
+     "t1": 8.67
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.41
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 9.41,
+     "t1": 9.65
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 9.65,
+     "t1": 9.97
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 9.97,
+     "t1": 10.19
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 10.19,
+     "t1": 10.55
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 10.55,
+     "t1": 10.83
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 10.83,
+     "t1": 11.05
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 11.05,
+     "t1": 11.21
+    },
+    {
+     "disp": "sete.",
+     "bold": false,
+     "t0": 11.21,
+     "t1": 11.87
+    },
+    {
+     "disp": "Oito",
+     "bold": false,
+     "t0": 11.99,
+     "t1": 12.37
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 12.55,
+     "t1": 12.61
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 12.61,
+     "t1": 12.79
+    },
+    {
+     "disp": "sete",
+     "bold": false,
+     "t0": 12.79,
+     "t1": 13.03
+    },
+    {
+     "disp": "avos.",
+     "bold": false,
+     "t0": 13.03,
+     "t1": 13.35
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 13.87,
+     "t1": 14.09
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 14.09,
+     "t1": 14.47
+    },
+    {
+     "disp": "vale",
+     "bold": false,
+     "t0": 14.47,
+     "t1": 14.71
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 14.71,
+     "t1": 14.89
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 14.89,
+     "t1": 14.99
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 14.99,
+     "t1": 15.07
+    },
+    {
+     "disp": "cima",
+     "bold": false,
+     "t0": 15.07,
+     "t1": 15.39
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.39,
+     "t1": 15.79
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 15.79,
+     "t1": 15.95
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 15.95,
+     "t1": 16.03
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 16.03,
+     "t1": 16.09
+    },
+    {
+     "disp": "baixo.",
+     "bold": false,
+     "t0": 16.09,
+     "t1": 16.37
+    }
+   ],
+   "cues": {
+    "a": 1.31,
+    "b": 4.99,
+    "c": 9.15,
+    "d": 11.99,
+    "e": 14.71
+   }
+  },
+  {
+   "id": "s11",
+   "block": "decimal",
+   "start": 134.59,
+   "dur": 16.18,
+   "tokens": [
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.67
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 0.67,
+     "t1": 0.83
+    },
+    {
+     "disp": "decimal?",
+     "bold": false,
+     "t0": 0.83,
+     "t1": 1.11
+    },
+    {
+     "disp": "Zero",
+     "bold": false,
+     "t0": 2.23,
+     "t1": 2.45
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 2.45,
+     "t1": 2.77
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 2.77,
+     "t1": 3.07
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 3.07,
+     "t1": 3.21
+    },
+    {
+     "disp": "quadrado",
+     "bold": false,
+     "t0": 3.21,
+     "t1": 3.67
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 3.83
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 4.13
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 4.13,
+     "t1": 4.45
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 4.75
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 4.75,
+     "t1": 5.09
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 5.09,
+     "t1": 5.45
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 5.45,
+     "t1": 5.73
+    },
+    {
+     "disp": "três.",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 6.05
+    },
+    {
+     "disp": "Ignore",
+     "bold": false,
+     "t0": 6.33,
+     "t1": 6.77
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 6.77,
+     "t1": 6.91
+    },
+    {
+     "disp": "vírgulas:",
+     "bold": false,
+     "t0": 6.91,
+     "t1": 7.27
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 7.59,
+     "t1": 7.93
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.07
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.39
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 8.39,
+     "t1": 8.65
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 8.65,
+     "t1": 8.97
+    },
+    {
+     "disp": "Conte",
+     "bold": false,
+     "t0": 9.49,
+     "t1": 9.95
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 9.95,
+     "t1": 10.09
+    },
+    {
+     "disp": "casas:",
+     "bold": false,
+     "t0": 10.09,
+     "t1": 10.55
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 10.87,
+     "t1": 11.09
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 11.09,
+     "t1": 11.27
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 11.27,
+     "t1": 11.53
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 11.53,
+     "t1": 11.89
+    },
+    {
+     "disp": "duas.",
+     "bold": false,
+     "t0": 11.89,
+     "t1": 12.13
+    },
+    {
+     "disp": "Nove",
+     "bold": false,
+     "t0": 12.13,
+     "t1": 13.11
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 13.11,
+     "t1": 13.35
+    },
+    {
+     "disp": "duas",
+     "bold": false,
+     "t0": 13.35,
+     "t1": 13.61
+    },
+    {
+     "disp": "casas:",
+     "bold": false,
+     "t0": 13.61,
+     "t1": 14.03
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 14.23,
+     "t1": 14.65
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 14.65,
+     "t1": 15.05
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 15.05,
+     "t1": 15.29
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 15.29,
+     "t1": 15.63
+    }
+   ],
+   "cues": {
+    "a": 2.23,
+    "b": 3.83,
+    "c": 7.59,
+    "d": 10.87,
+    "e": 14.23
+   }
+  },
+  {
+   "id": "s12",
+   "block": "ordem",
+   "start": 150.77,
+   "dur": 14.08,
+   "tokens": [
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "onde",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.11
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.11,
+     "t1": 1.23
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.83
+    },
+    {
+     "disp": "entra",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.25
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 2.25,
+     "t1": 2.43
+    },
+    {
+     "disp": "ordem",
+     "bold": false,
+     "t0": 2.43,
+     "t1": 2.79
+    },
+    {
+     "disp": "das",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 2.91
+    },
+    {
+     "disp": "operações?",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.35
+    },
+    {
+     "disp": "Você",
+     "bold": false,
+     "t0": 4.37,
+     "t1": 4.67
+    },
+    {
+     "disp": "viu",
+     "bold": false,
+     "t0": 4.67,
+     "t1": 4.87
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 4.87,
+     "t1": 5.03
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.03,
+     "t1": 5.15
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.15,
+     "t1": 5.51
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 5.51,
+     "t1": 5.91
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 5.91,
+     "t1": 6.05
+    },
+    {
+     "disp": "soma",
+     "bold": false,
+     "t0": 6.05,
+     "t1": 6.43
+    },
+    {
+     "disp": "empacotada.",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 7.09
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 7.43,
+     "t1": 7.55
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 7.55,
+     "t1": 8.01
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 8.01,
+     "t1": 8.23
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 8.23,
+     "t1": 8.35
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 8.35,
+     "t1": 8.73
+    },
+    {
+     "disp": "empacotado.",
+     "bold": false,
+     "t0": 8.73,
+     "t1": 9.49
+    },
+    {
+     "disp": "Primeiro",
+     "bold": false,
+     "t0": 9.87,
+     "t1": 10.23
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 10.27,
+     "t1": 10.35
+    },
+    {
+     "disp": "resolvem",
+     "bold": false,
+     "t0": 10.35,
+     "t1": 10.81
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 10.81,
+     "t1": 10.87
+    },
+    {
+     "disp": "pacotes.",
+     "bold": false,
+     "t0": 10.87,
+     "t1": 11.33
+    },
+    {
+     "disp": "Então",
+     "bold": false,
+     "t0": 11.71,
+     "t1": 12.07
+    },
+    {
+     "disp": "ela",
+     "bold": false,
+     "t0": 12.25,
+     "t1": 12.37
+    },
+    {
+     "disp": "ganha",
+     "bold": false,
+     "t0": 12.37,
+     "t1": 12.63
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 12.63,
+     "t1": 12.71
+    },
+    {
+     "disp": "degrau",
+     "bold": false,
+     "t0": 12.71,
+     "t1": 13.03
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 13.03,
+     "t1": 13.43
+    },
+    {
+     "disp": "dela.",
+     "bold": false,
+     "t0": 13.43,
+     "t1": 13.69
+    }
+   ],
+   "cues": {
+    "a": 5.91,
+    "b": 8.23
+   }
+  },
+  {
+   "id": "s13",
+   "block": "ordem",
+   "start": 164.85,
+   "dur": 10.08,
+   "tokens": [
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.57
+    },
+    {
+     "disp": "ordem",
+     "bold": false,
+     "t0": 0.57,
+     "t1": 0.85
+    },
+    {
+     "disp": "fica",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.05
+    },
+    {
+     "disp": "assim:",
+     "bold": false,
+     "t0": 1.05,
+     "t1": 1.33
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 1.69,
+     "t1": 2.21
+    },
+    {
+     "disp": "depois",
+     "bold": false,
+     "t0": 2.53,
+     "t1": 2.75
+    },
+    {
+     "disp": "potência,",
+     "bold": false,
+     "t0": 2.75,
+     "t1": 3.41
+    },
+    {
+     "disp": "depois",
+     "bold": false,
+     "t0": 3.71,
+     "t1": 3.99
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 3.99,
+     "t1": 4.59
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.81
+    },
+    {
+     "disp": "dividido,",
+     "bold": false,
+     "t0": 4.81,
+     "t1": 5.29
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 5.57,
+     "t1": 5.75
+    },
+    {
+     "disp": "último",
+     "bold": false,
+     "t0": 5.75,
+     "t1": 5.99
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 6.23,
+     "t1": 6.41
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.41,
+     "t1": 6.57
+    },
+    {
+     "disp": "menos.",
+     "bold": false,
+     "t0": 6.57,
+     "t1": 6.77
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 7.33,
+     "t1": 7.45
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 7.45,
+     "t1": 7.87
+    },
+    {
+     "disp": "entra",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.27
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 8.27,
+     "t1": 8.67
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 8.67,
+     "t1": 8.87
+    },
+    {
+     "disp": "vezes.",
+     "bold": false,
+     "t0": 8.87,
+     "t1": 9.09
+    }
+   ],
+   "cues": {
+    "a": 1.69,
+    "b": 2.53,
+    "c": 3.71,
+    "d": 5.57,
+    "e": 8.27
+   }
+  },
+  {
+   "id": "s14",
+   "block": "ordem",
+   "start": 174.93,
+   "dur": 12.66,
+   "tokens": [
+    {
+     "disp": "Dois",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.21
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.63
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 2.01
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 2.01,
+     "t1": 2.39
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 2.39,
+     "t1": 2.71
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 2.71,
+     "t1": 3.17
+    },
+    {
+     "disp": "Primeiro",
+     "bold": false,
+     "t0": 3.45,
+     "t1": 4.05
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.11,
+     "t1": 4.15
+    },
+    {
+     "disp": "potência:",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.57
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 4.85,
+     "t1": 5.13
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 5.13,
+     "t1": 5.25
+    },
+    {
+     "disp": "quadrado",
+     "bold": false,
+     "t0": 5.25,
+     "t1": 5.63
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 5.77
+    },
+    {
+     "disp": "quatro.",
+     "bold": false,
+     "t0": 5.77,
+     "t1": 6.09
+    },
+    {
+     "disp": "Depois",
+     "bold": false,
+     "t0": 6.43,
+     "t1": 6.77
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.01,
+     "t1": 7.07
+    },
+    {
+     "disp": "vezes:",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.31
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 7.83,
+     "t1": 8.05
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 8.05,
+     "t1": 8.27
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 8.27,
+     "t1": 8.63
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 8.63,
+     "t1": 9.03
+    },
+    {
+     "disp": "doze.",
+     "bold": false,
+     "t0": 9.03,
+     "t1": 9.29
+    },
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 9.97
+    },
+    {
+     "disp": "último,",
+     "bold": false,
+     "t0": 9.97,
+     "t1": 10.21
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 10.53,
+     "t1": 10.75
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 10.75,
+     "t1": 10.97
+    },
+    {
+     "disp": "doze",
+     "bold": false,
+     "t0": 10.97,
+     "t1": 11.29
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 11.29,
+     "t1": 11.59
+    },
+    {
+     "disp": "catorze.",
+     "bold": false,
+     "t0": 11.59,
+     "t1": 11.97
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.45,
+    "c": 6.43,
+    "d": 9.69,
+    "e": 11.59
+   }
+  },
+  {
+   "id": "s15",
+   "block": "ordem",
+   "start": 187.59,
+   "dur": 9.2,
+   "tokens": [
+    {
+     "disp": "Quem",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.79
+    },
+    {
+     "disp": "soma",
+     "bold": false,
+     "t0": 0.79,
+     "t1": 1.01
+    },
+    {
+     "disp": "primeiro",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.39
+    },
+    {
+     "disp": "chega",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.65
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.81
+    },
+    {
+     "disp": "vinte.",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 2.13
+    },
+    {
+     "disp": "Quem",
+     "bold": false,
+     "t0": 2.57,
+     "t1": 2.73
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.93
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 2.93,
+     "t1": 3.25
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.49
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 3.49,
+     "t1": 3.79
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 3.79,
+     "t1": 4.27
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.43
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 4.43,
+     "t1": 4.87
+    },
+    {
+     "disp": "chega",
+     "bold": false,
+     "t0": 4.87,
+     "t1": 5.27
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 5.27,
+     "t1": 5.43
+    },
+    {
+     "disp": "trinta",
+     "bold": false,
+     "t0": 5.43,
+     "t1": 5.63
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 5.77
+    },
+    {
+     "disp": "oito.",
+     "bold": false,
+     "t0": 5.77,
+     "t1": 5.99
+    },
+    {
+     "disp": "Saiu",
+     "bold": false,
+     "t0": 6.45,
+     "t1": 6.93
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.05
+    },
+    {
+     "disp": "ordem,",
+     "bold": false,
+     "t0": 7.05,
+     "t1": 7.39
+    },
+    {
+     "disp": "saiu",
+     "bold": false,
+     "t0": 7.61,
+     "t1": 7.93
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.05
+    },
+    {
+     "disp": "resposta.",
+     "bold": false,
+     "t0": 8.05,
+     "t1": 8.33
+    }
+   ],
+   "cues": {
+    "a": 1.81,
+    "b": 2.93,
+    "c": 5.43
+   }
+  },
+  {
+   "id": "s16",
+   "block": "erro",
+   "start": 196.79,
+   "dur": 23.8,
+   "tokens": [
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.75
+    },
+    {
+     "disp": "erro",
+     "bold": false,
+     "t0": 0.75,
+     "t1": 0.85
+    },
+    {
+     "disp": "comum",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 1.15
+    },
+    {
+     "disp": "aqui",
+     "bold": false,
+     "t0": 1.15,
+     "t1": 1.49
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.49,
+     "t1": 1.65
+    },
+    {
+     "disp": "escrever",
+     "bold": false,
+     "t0": 1.65,
+     "t1": 1.97
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 1.97,
+     "t1": 2.47
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 2.47,
+     "t1": 2.79
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 3.09
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 3.09,
+     "t1": 3.39
+    },
+    {
+     "disp": "quadrado",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.87
+    },
+    {
+     "disp": "igual",
+     "bold": false,
+     "t0": 3.87,
+     "t1": 4.21
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.21,
+     "t1": 4.51
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 4.51,
+     "t1": 4.79
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 4.79,
+     "t1": 5.11
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 5.11,
+     "t1": 5.39
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 5.39,
+     "t1": 5.97
+    },
+    {
+     "disp": "pessoa",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.23
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 6.23,
+     "t1": 6.51
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.51,
+     "t1": 6.81
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 6.81,
+     "t1": 6.99
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.99,
+     "t1": 7.33
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 7.33,
+     "t1": 7.63
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 7.63,
+     "t1": 7.91
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 7.91,
+     "t1": 8.19
+    },
+    {
+     "disp": "casa",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.41
+    },
+    {
+     "disp": "só.",
+     "bold": false,
+     "t0": 8.41,
+     "t1": 8.65
+    },
+    {
+     "disp": "Mas",
+     "bold": false,
+     "t0": 9.07,
+     "t1": 9.47
+    },
+    {
+     "disp": "multiplicar",
+     "bold": false,
+     "t0": 9.47,
+     "t1": 10.05
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 10.05,
+     "t1": 10.23
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 10.23,
+     "t1": 10.43
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 10.43,
+     "t1": 10.71
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 10.99
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 10.99,
+     "t1": 11.29
+    },
+    {
+     "disp": "pegar",
+     "bold": false,
+     "t0": 11.29,
+     "t1": 11.47
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 11.47,
+     "t1": 11.77
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 11.77,
+     "t1": 11.87
+    },
+    {
+     "disp": "pedaço,",
+     "bold": false,
+     "t0": 11.87,
+     "t1": 12.41
+    },
+    {
+     "disp": "então",
+     "bold": false,
+     "t0": 12.65,
+     "t1": 13.01
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 13.09,
+     "t1": 13.17
+    },
+    {
+     "disp": "resultado",
+     "bold": false,
+     "t0": 13.17,
+     "t1": 13.51
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 13.51,
+     "t1": 13.77
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 13.77,
+     "t1": 13.85
+    },
+    {
+     "disp": "ficar",
+     "bold": false,
+     "t0": 13.85,
+     "t1": 14.05
+    },
+    {
+     "disp": "menor",
+     "bold": false,
+     "t0": 14.05,
+     "t1": 14.53
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 14.53,
+     "t1": 14.79
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 14.79,
+     "t1": 14.99
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 14.99,
+     "t1": 15.27
+    },
+    {
+     "disp": "três.",
+     "bold": false,
+     "t0": 15.27,
+     "t1": 15.57
+    },
+    {
+     "disp": "Zero",
+     "bold": false,
+     "t0": 16.13,
+     "t1": 16.51
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 16.51,
+     "t1": 16.83
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 16.83,
+     "t1": 17.03
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 17.03,
+     "t1": 17.41
+    },
+    {
+     "disp": "fica.",
+     "bold": false,
+     "t0": 17.41,
+     "t1": 17.75
+    },
+    {
+     "disp": "Elevar",
+     "bold": false,
+     "t0": 18.43,
+     "t1": 18.81
+    },
+    {
+     "disp": "nem",
+     "bold": false,
+     "t0": 18.81,
+     "t1": 19.03
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 19.03,
+     "t1": 19.43
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 19.43,
+     "t1": 19.63
+    },
+    {
+     "disp": "crescer:",
+     "bold": false,
+     "t0": 19.63,
+     "t1": 20.03
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 20.23,
+     "t1": 20.49
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 20.49,
+     "t1": 20.87
+    },
+    {
+     "disp": "entre",
+     "bold": false,
+     "t0": 20.87,
+     "t1": 21.23
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 21.23,
+     "t1": 21.65
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 21.65,
+     "t1": 21.93
+    },
+    {
+     "disp": "um,",
+     "bold": false,
+     "t0": 21.93,
+     "t1": 22.09
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 22.39,
+     "t1": 22.53
+    },
+    {
+     "disp": "número",
+     "bold": false,
+     "t0": 22.53,
+     "t1": 22.75
+    },
+    {
+     "disp": "diminui.",
+     "bold": false,
+     "t0": 22.75,
+     "t1": 23.25
+    }
+   ],
+   "cues": {
+    "a": 1.97,
+    "b": 7.63,
+    "c": 14.05,
+    "d": 16.13,
+    "e": 20.23
+   }
+  },
+  {
+   "id": "s17",
+   "block": "atalho",
+   "start": 220.59,
+   "dur": 8.75,
+   "tokens": [
+    {
+     "disp": "Agora",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.73
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.85,
+     "t1": 0.89
+    },
+    {
+     "disp": "atalho:",
+     "bold": false,
+     "t0": 0.89,
+     "t1": 1.27
+    },
+    {
+     "disp": "olhe",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 1.83
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 1.93
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.45
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 2.45,
+     "t1": 2.93
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.93,
+     "t1": 3.09
+    },
+    {
+     "disp": "fazer",
+     "bold": false,
+     "t0": 3.09,
+     "t1": 3.31
+    },
+    {
+     "disp": "conta.",
+     "bold": false,
+     "t0": 3.31,
+     "t1": 3.63
+    },
+    {
+     "disp": "Base",
+     "bold": false,
+     "t0": 4.13,
+     "t1": 4.43
+    },
+    {
+     "disp": "negativa",
+     "bold": false,
+     "t0": 4.43,
+     "t1": 4.89
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 4.89,
+     "t1": 5.09
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 5.09,
+     "t1": 5.47
+    },
+    {
+     "disp": "par",
+     "bold": false,
+     "t0": 5.47,
+     "t1": 5.73
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 6.03
+    },
+    {
+     "disp": "positivo.",
+     "bold": false,
+     "t0": 6.03,
+     "t1": 6.49
+    },
+    {
+     "disp": "Com",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.11
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 7.11,
+     "t1": 7.53
+    },
+    {
+     "disp": "ímpar",
+     "bold": false,
+     "t0": 7.53,
+     "t1": 7.87
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.13
+    },
+    {
+     "disp": "negativo.",
+     "bold": false,
+     "t0": 8.13,
+     "t1": 8.65
+    }
+   ],
+   "cues": {
+    "a": 1.63,
+    "b": 5.09,
+    "c": 7.11
+   }
+  },
+  {
+   "id": "s18",
+   "block": "atalho",
+   "start": 229.34,
+   "dur": 8.55,
+   "tokens": [
+    {
+     "disp": "Abre",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.7
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 0.7,
+     "t1": 1.18
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 1.18,
+     "t1": 1.6
+    },
+    {
+     "disp": "um,",
+     "bold": false,
+     "t0": 1.6,
+     "t1": 1.88
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 2.08,
+     "t1": 2.32
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 2.32,
+     "t1": 2.82
+    },
+    {
+     "disp": "elevado",
+     "bold": false,
+     "t0": 2.82,
+     "t1": 3.56
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.56,
+     "t1": 3.72
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 3.72,
+     "t1": 3.873
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 3.873,
+     "t1": 4.027
+    },
+    {
+     "disp": "cinco.",
+     "bold": false,
+     "t0": 4.027,
+     "t1": 4.18
+    },
+    {
+     "disp": "Vinte",
+     "bold": false,
+     "t0": 4.6,
+     "t1": 4.82
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.82,
+     "t1": 5.04
+    },
+    {
+     "disp": "cinco",
+     "bold": false,
+     "t0": 5.04,
+     "t1": 5.26
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 5.26,
+     "t1": 5.52
+    },
+    {
+     "disp": "ímpar.",
+     "bold": false,
+     "t0": 5.52,
+     "t1": 5.72
+    },
+    {
+     "disp": "Resposta:",
+     "bold": false,
+     "t0": 5.96,
+     "t1": 6.36
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 6.36,
+     "t1": 6.88
+    },
+    {
+     "disp": "um.",
+     "bold": false,
+     "t0": 6.88,
+     "t1": 7.16
+    },
+    {
+     "disp": "Nenhuma",
+     "bold": false,
+     "t0": 7.42,
+     "t1": 7.74
+    },
+    {
+     "disp": "conta.",
+     "bold": false,
+     "t0": 7.74,
+     "t1": 8.12
+    }
+   ],
+   "cues": {
+    "a": -0.1,
+    "b": 4.6,
+    "c": 6.36
+   }
+  },
+  {
+   "id": "s19",
+   "block": "atalho",
+   "start": 237.89,
+   "dur": 12.34,
+   "tokens": [
+    {
+     "disp": "Funciona",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.93
+    },
+    {
+     "disp": "porque",
+     "bold": false,
+     "t0": 0.93,
+     "t1": 1.15
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 1.15,
+     "t1": 1.53
+    },
+    {
+     "disp": "dupla",
+     "bold": false,
+     "t0": 1.53,
+     "t1": 1.89
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.03
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 2.03,
+     "t1": 2.29
+    },
+    {
+     "disp": "vira",
+     "bold": false,
+     "t0": 2.29,
+     "t1": 2.65
+    },
+    {
+     "disp": "mais.",
+     "bold": false,
+     "t0": 2.65,
+     "t1": 2.87
+    },
+    {
+     "disp": "Com",
+     "bold": false,
+     "t0": 3.31,
+     "t1": 3.45
+    },
+    {
+     "disp": "expoente",
+     "bold": false,
+     "t0": 3.45,
+     "t1": 3.83
+    },
+    {
+     "disp": "ímpar,",
+     "bold": false,
+     "t0": 3.83,
+     "t1": 4.19
+    },
+    {
+     "disp": "sobra",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.67
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 4.67,
+     "t1": 4.83
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 4.83,
+     "t1": 5.19
+    },
+    {
+     "disp": "sem",
+     "bold": false,
+     "t0": 5.19,
+     "t1": 5.55
+    },
+    {
+     "disp": "dupla.",
+     "bold": false,
+     "t0": 5.55,
+     "t1": 5.85
+    },
+    {
+     "disp": "Só",
+     "bold": false,
+     "t0": 6.51,
+     "t1": 6.71
+    },
+    {
+     "disp": "vale",
+     "bold": false,
+     "t0": 6.71,
+     "t1": 6.89
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 6.89,
+     "t1": 7.07
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.27
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.37
+    },
+    {
+     "disp": "dentro",
+     "bold": false,
+     "t0": 7.37,
+     "t1": 7.75
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 7.75,
+     "t1": 7.99
+    },
+    {
+     "disp": "parêntese.",
+     "bold": false,
+     "t0": 7.99,
+     "t1": 8.49
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 9.09
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 9.09,
+     "t1": 9.19
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 9.19,
+     "t1": 9.45
+    },
+    {
+     "disp": "positiva",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 9.93
+    },
+    {
+     "disp": "não",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 10.89
+    },
+    {
+     "disp": "compensa:",
+     "bold": false,
+     "t0": 10.89,
+     "t1": 11.03
+    },
+    {
+     "disp": "não",
+     "bold": false,
+     "t0": 10.89,
+     "t1": 11.03
+    },
+    {
+     "disp": "há",
+     "bold": false,
+     "t0": 10.89,
+     "t1": 11.03
+    },
+    {
+     "disp": "sinal",
+     "bold": false,
+     "t0": 11.03,
+     "t1": 11.21
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 11.21,
+     "t1": 11.35
+    },
+    {
+     "disp": "decidir.",
+     "bold": false,
+     "t0": 11.35,
+     "t1": 11.79
+    }
+   ],
+   "cues": {
+    "a": 1.15,
+    "b": 4.19,
+    "c": 6.51
+   }
+  },
+  {
+   "id": "s20",
+   "block": "questao",
+   "start": 250.23,
+   "dur": 8.45,
+   "tokens": [
+    {
+     "disp": "Hora",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.93
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 0.93,
+     "t1": 1.09
+    },
+    {
+     "disp": "testar.",
+     "bold": false,
+     "t0": 1.09,
+     "t1": 1.43
+    },
+    {
+     "disp": "Resolva:",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.29
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.99
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 2.99,
+     "t1": 3.51
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 3.51,
+     "t1": 3.91
+    },
+    {
+     "disp": "vezes,",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.57
+    },
+    {
+     "disp": "abre",
+     "bold": false,
+     "t0": 4.99,
+     "t1": 5.19
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 5.19,
+     "t1": 5.67
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 5.67,
+     "t1": 6.09
+    },
+    {
+     "disp": "três,",
+     "bold": false,
+     "t0": 6.09,
+     "t1": 6.43
+    },
+    {
+     "disp": "fecha",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 6.99
+    },
+    {
+     "disp": "parênteses,",
+     "bold": false,
+     "t0": 6.99,
+     "t1": 7.51
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 7.51,
+     "t1": 7.89
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.35
+    }
+   ],
+   "cues": {
+    "a": 2.73,
+    "b": 4.99
+   }
+  },
+  {
+   "id": "s21",
+   "block": "questao",
+   "start": 258.68,
+   "dur": 4.07,
+   "tokens": [
+    {
+     "disp": "Pause",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.76
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.76,
+     "t1": 0.88
+    },
+    {
+     "disp": "vídeo",
+     "bold": false,
+     "t0": 0.88,
+     "t1": 1.06
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.06,
+     "t1": 1.22
+    },
+    {
+     "disp": "tente.",
+     "bold": false,
+     "t0": 1.22,
+     "t1": 1.42
+    }
+   ],
+   "cues": {
+    "a": -0.1
+   }
+  },
+  {
+   "id": "s22",
+   "block": "resposta",
+   "start": 262.75,
+   "dur": 18.08,
+   "tokens": [
+    {
+     "disp": "Vamos",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.69
+    },
+    {
+     "disp": "lá.",
+     "bold": false,
+     "t0": 0.69,
+     "t1": 0.93
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 1.35,
+     "t1": 1.43
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 1.43,
+     "t1": 1.75
+    },
+    {
+     "disp": "vem",
+     "bold": false,
+     "t0": 1.75,
+     "t1": 1.93
+    },
+    {
+     "disp": "primeiro,",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.33
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 2.65,
+     "t1": 2.67
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 2.77
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 2.77,
+     "t1": 2.93
+    },
+    {
+     "disp": "está",
+     "bold": false,
+     "t0": 2.93,
+     "t1": 3.25
+    },
+    {
+     "disp": "dentro",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.63
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 3.63,
+     "t1": 3.79
+    },
+    {
+     "disp": "parêntese:",
+     "bold": false,
+     "t0": 3.79,
+     "t1": 4.19
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 4.57,
+     "t1": 4.85
+    },
+    {
+     "disp": "nove.",
+     "bold": false,
+     "t0": 4.85,
+     "t1": 5.13
+    },
+    {
+     "disp": "Depois",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 5.97
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.15
+    },
+    {
+     "disp": "vezes:",
+     "bold": false,
+     "t0": 6.15,
+     "t1": 6.35
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 7.15
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 7.15,
+     "t1": 7.33
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 7.33,
+     "t1": 7.67
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 7.67,
+     "t1": 7.97
+    },
+    {
+     "disp": "dezoito.",
+     "bold": false,
+     "t0": 7.97,
+     "t1": 8.21
+    },
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 8.89,
+     "t1": 9.39
+    },
+    {
+     "disp": "último:",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.69
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 10.25,
+     "t1": 10.55
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 10.55,
+     "t1": 10.89
+    },
+    {
+     "disp": "dezoito",
+     "bold": false,
+     "t0": 10.89,
+     "t1": 11.43
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 11.43,
+     "t1": 11.97
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 11.97,
+     "t1": 12.21
+    },
+    {
+     "disp": "oito.",
+     "bold": false,
+     "t0": 12.21,
+     "t1": 12.57
+    },
+    {
+     "disp": "Quem",
+     "bold": false,
+     "t0": 13.25,
+     "t1": 13.51
+    },
+    {
+     "disp": "começou",
+     "bold": false,
+     "t0": 13.51,
+     "t1": 13.87
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 13.87,
+     "t1": 14.15
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 14.15,
+     "t1": 14.47
+    },
+    {
+     "disp": "menos",
+     "bold": false,
+     "t0": 14.47,
+     "t1": 14.71
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 14.71,
+     "t1": 15.05
+    },
+    {
+     "disp": "chegou",
+     "bold": false,
+     "t0": 15.29,
+     "t1": 15.59
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 15.59,
+     "t1": 15.71
+    },
+    {
+     "disp": "setenta",
+     "bold": false,
+     "t0": 15.71,
+     "t1": 15.857
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.857,
+     "t1": 16.003
+    },
+    {
+     "disp": "dois:",
+     "bold": false,
+     "t0": 16.003,
+     "t1": 16.15
+    },
+    {
+     "disp": "saiu",
+     "bold": false,
+     "t0": 16.69,
+     "t1": 17.09
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 17.09,
+     "t1": 17.19
+    },
+    {
+     "disp": "ordem.",
+     "bold": false,
+     "t0": 17.19,
+     "t1": 17.53
+    }
+   ],
+   "cues": {
+    "a": 4.57,
+    "b": 6.83,
+    "c": 10.25,
+    "d": 11.97
+   }
+  },
+  {
+   "id": "s23",
+   "block": "fim",
+   "start": 280.83,
+   "dur": 5.77,
+   "tokens": [
+    {
+     "disp": "Resumindo:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.91
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.31,
+     "t1": 1.45
+    },
+    {
+     "disp": "parêntese",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 2.07
+    },
+    {
+     "disp": "decide",
+     "bold": false,
+     "t0": 2.07,
+     "t1": 2.53
+    },
+    {
+     "disp": "quem",
+     "bold": false,
+     "t0": 2.53,
+     "t1": 2.97
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.97,
+     "t1": 3.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.31
+    },
+    {
+     "disp": "base,",
+     "bold": false,
+     "t0": 3.31,
+     "t1": 3.67
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.17
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.25
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 4.25,
+     "t1": 4.61
+    },
+    {
+     "disp": "vem",
+     "bold": false,
+     "t0": 4.61,
+     "t1": 4.85
+    },
+    {
+     "disp": "antes",
+     "bold": false,
+     "t0": 4.85,
+     "t1": 5.23
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 5.23,
+     "t1": 5.39
+    },
+    {
+     "disp": "vezes.",
+     "bold": false,
+     "t0": 5.39,
+     "t1": 5.67
+    }
+   ],
+   "cues": {
+    "a": 1.31,
+    "b": 4.17
+   }
+  },
+  {
+   "id": "s24",
+   "block": "fim",
+   "start": 286.6,
+   "dur": 16.53,
+   "tokens": [
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.82
+    },
+    {
+     "disp": "próxima",
+     "bold": false,
+     "t0": 0.82,
+     "t1": 1.08
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 1.08,
+     "t1": 1.42
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.72,
+     "t1": 1.9
+    },
+    {
+     "disp": "vai",
+     "bold": false,
+     "t0": 1.9,
+     "t1": 2.04
+    },
+    {
+     "disp": "multiplicar",
+     "bold": false,
+     "t0": 2.04,
+     "t1": 2.84
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 2.84,
+     "t1": 2.96
+    },
+    {
+     "disp": "dividir",
+     "bold": false,
+     "t0": 2.96,
+     "t1": 3.42
+    },
+    {
+     "disp": "potências",
+     "bold": false,
+     "t0": 3.42,
+     "t1": 3.96
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.96,
+     "t1": 4.16
+    },
+    {
+     "disp": "mesma",
+     "bold": false,
+     "t0": 4.16,
+     "t1": 4.44
+    },
+    {
+     "disp": "base",
+     "bold": false,
+     "t0": 4.44,
+     "t1": 4.92
+    },
+    {
+     "disp": "sem",
+     "bold": false,
+     "t0": 4.92,
+     "t1": 5.5
+    },
+    {
+     "disp": "calcular",
+     "bold": false,
+     "t0": 5.5,
+     "t1": 5.94
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 5.94,
+     "t1": 6.12
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 6.12,
+     "t1": 6.42
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.66,
+     "t1": 6.86
+    },
+    {
+     "disp": "descobrir",
+     "bold": false,
+     "t0": 6.86,
+     "t1": 7.16
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 7.16,
+     "t1": 7.44
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 7.44,
+     "t1": 7.58
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 7.58,
+     "t1": 7.72
+    },
+    {
+     "disp": "número",
+     "bold": false,
+     "t0": 7.72,
+     "t1": 8.06
+    },
+    {
+     "disp": "elevado",
+     "bold": false,
+     "t0": 8.06,
+     "t1": 8.7
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.7,
+     "t1": 8.82
+    },
+    {
+     "disp": "zero",
+     "bold": false,
+     "t0": 8.82,
+     "t1": 9.12
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 9.12,
+     "t1": 9.4
+    },
+    {
+     "disp": "um.",
+     "bold": false,
+     "t0": 9.4,
+     "t1": 9.58
+    },
+    {
+     "disp": "Inscreva-se",
+     "bold": false,
+     "t0": 10.16,
+     "t1": 10.7
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 10.82,
+     "t1": 11.0
+    },
+    {
+     "disp": "seguir",
+     "bold": false,
+     "t0": 11.0,
+     "t1": 11.24
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 11.24,
+     "t1": 11.38
+    },
+    {
+     "disp": "curso",
+     "bold": false,
+     "t0": 11.38,
+     "t1": 11.62
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 11.62,
+     "t1": 11.8
+    },
+    {
+     "disp": "começo",
+     "bold": false,
+     "t0": 11.8,
+     "t1": 12.06
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 12.06,
+     "t1": 12.32
+    },
+    {
+     "disp": "fim.",
+     "bold": false,
+     "t0": 12.32,
+     "t1": 12.46
+    },
+    {
+     "disp": "Bons",
+     "bold": false,
+     "t0": 13.06,
+     "t1": 13.3
+    },
+    {
+     "disp": "estudos!",
+     "bold": false,
+     "t0": 13.3,
+     "t1": 13.74
+    }
+   ],
+   "cues": {
+    "a": 2.04,
+    "b": 7.16,
+    "c": 10.16,
+    "d": 13.06
+   }
+  }
+ ]
+}

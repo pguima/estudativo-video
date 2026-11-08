@@ -1,0 +1,45 @@
+Quarenta e cinco vezes dez elevado a três. A conta está certa: vale quarenta e cinco mil. Mas esse número não está na forma correta, e uma prova pode cobrar exatamente isso.
+
+Até o fim desta aula, você vai escrever números enormes e números minúsculos em uma linha curta, e ainda leva um atalho de prova.
+
+Para acompanhar, você só precisa de duas coisas: ler números grandes e conhecer as potências de dez, inclusive com expoente negativo. Se faltar alguma, procure no canal.
+
+Uma fábrica produziu quarenta e cinco milhões de parafusos. Escrito por inteiro, são seis zeros, e basta perder um para errar feio. A saída é trocar os zeros por uma potência de dez. Isso se chama notação científica.
+
+A forma tem duas partes: um número na frente, vezes uma potência de dez. Esse número da frente, que vamos chamar só de frente, tem uma regra: ele vai de um até menos de dez.
+
+O um vale. Nove vírgula nove também vale. Mas o dez já não vale, e zero vírgula cinco também não. Na prática: um único algarismo antes da vírgula, e ele não pode ser zero.
+
+Vamos escrever quarenta e cinco milhões. Todo número inteiro tem uma vírgula escondida no fim. Ande com ela para a esquerda, até sobrar um algarismo antes dela. São sete casas, e fica quatro vírgula cinco.
+
+Mas quatro vírgula cinco não é quarenta e cinco milhões. Andar sete casas para a esquerda dividiu o número por dez elevado a sete. Para o valor não mudar, multiplique por dez elevado a sete. Resultado: quatro vírgula cinco vezes dez elevado a sete.
+
+Com número pequeno, é o caminho de volta. Pegue zero vírgula zero zero zero trinta e dois. Aqui a vírgula anda para a direita, até passar do primeiro algarismo que não é zero. São quatro casas, e fica três vírgula dois.
+
+Andar para a direita multiplicou o número por dez mil. Para desfazer, é preciso dividir por dez mil, e isso é o mesmo que multiplicar por dez elevado a menos quatro. Resultado: três vírgula dois vezes dez elevado a menos quatro.
+
+A regra cabe em três linhas. A vírgula andou para a esquerda: expoente positivo. Andou para a direita: expoente negativo. Quantas casas andou, esse é o tamanho do expoente.
+
+Voltemos ao começo: quarenta e cinco vezes dez elevado a três. Por que não está na forma? Porque quarenta e cinco passa de dez. Para consertar, ande a vírgula uma casa para a esquerda: quatro vírgula cinco.
+
+A frente ficou dez vezes menor. Então a potência precisa ficar dez vezes maior: o expoente sobe de três para quatro. Fica quatro vírgula cinco vezes dez elevado a quatro. Mesmo valor, quarenta e cinco mil, agora na forma correta.
+
+Cuidado com o erro mais comum: contar os zeros. Quarenta e cinco milhões tem seis zeros, e a pessoa escreve quatro vírgula cinco vezes dez elevado a seis.
+
+Mas isso é quatro milhões e quinhentos mil: dez vezes menos! Quem manda é a vírgula, não o zero. Ela também passa pelo cinco, e essa casa entra na conta.
+
+Agora o atalho, para número grande: conte quantos algarismos vêm depois do primeiro. Quarenta e cinco milhões tem oito algarismos. Tirando o primeiro, sobram sete: dez elevado a sete, sem andar casa por casa.
+
+Funciona porque a vírgula passa por cada algarismo depois do primeiro. Não compensa quando o número já vem com vírgula ou com potência: aí, ande a vírgula e compense.
+
+Hora de testar. O Brasil tem cerca de duzentos e catorze milhões de habitantes. Um glóbulo vermelho do sangue mede cerca de zero vírgula zero zero zero zero zero oito metro. Escreva cada valor em notação científica.
+
+Pause o vídeo e tente.
+
+Vamos lá. Duzentos e catorze milhões tem nove algarismos. Tirando o primeiro, sobram oito. Fica dois vírgula catorze vezes dez elevado a oito.
+
+No glóbulo, a vírgula anda para a direita até passar do oito: seis casas. Direita, expoente negativo: oito vezes dez elevado a menos seis metro.
+
+Resumindo: um número de um até menos de dez, vezes uma potência de dez, e o expoente conta as casas que a vírgula andou.
+
+Na próxima aula, você vai fazer contas em notação científica e descobrir quantas vezes a massa da Terra é maior que a da Lua. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

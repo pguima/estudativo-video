@@ -1,0 +1,508 @@
+{
+ "g_trilha": 0.62,
+ "g_efeitos": 0.8,
+ "duck": 0.62,
+ "abaixa": {
+  "panic": 0.42,
+  "open-1": 0.62,
+  "open-2": 0.6,
+  "open-3": 0.55,
+  "open-4": 0.55,
+  "ask": 0.62,
+  "bell": 0.68,
+  "small-1": 0.5,
+  "small-2": 0.48,
+  "small-3": 0.42,
+  "table": 0.65,
+  "dan-best": 0.65,
+  "mia-no": 0.6,
+  "bea-q": 0.6,
+  "mia-intro": 0.8,
+  "vet": 0.8,
+  "logo": 1.5,
+  "end": 2.6
+ },
+ "secoes": [
+  {
+   "de": "open-1",
+   "faixas": {
+    "cordas": 1,
+    "baixo": 1,
+    "metal": 1,
+    "tema": 0.9,
+    "coro": 0.6,
+    "taiko": 1,
+    "caixa": 0.7,
+    "prato": 1,
+    "tick": 0.5
+   }
+  },
+  {
+   "de": "logo",
+   "faixas": {
+    "metal": 1,
+    "coro": 1,
+    "prato": 0.6,
+    "taiko": 0.6
+   }
+  },
+  {
+   "de": "meet",
+   "faixas": {
+    "piano": 1,
+    "luz": 0.5,
+    "coro": 0.25,
+    "prato": 0.2
+   }
+  },
+  {
+   "de": "until",
+   "faixas": {
+    "cordas": 0.6,
+    "baixo": 0.7,
+    "tick": 0.7,
+    "coro": 0.4,
+    "caixa": 0.3
+   }
+  },
+  {
+   "de": "DAY 1",
+   "faixas": {
+    "cordas": 1,
+    "baixo": 1,
+    "metal": 0.8,
+    "tema": 0.7,
+    "taiko": 0.8,
+    "caixa": 0.6,
+    "prato": 0.7,
+    "tick": 0.4
+   }
+  },
+  {
+   "de": "leo-school",
+   "faixas": {
+    "cordas": 0.8,
+    "baixo": 0.7,
+    "taiko": 0.4,
+    "coro": 0.3,
+    "tick": 0.4
+   }
+  },
+  {
+   "de": "spx",
+   "faixas": {
+    "cordas": 0.9,
+    "baixo": 0.9,
+    "metal": 0.6,
+    "taiko": 0.6,
+    "caixa": 0.4,
+    "prato": 0.4
+   }
+  },
+  {
+   "de": "DAY 3",
+   "faixas": {
+    "cordas": 0.6,
+    "baixo": 0.6,
+    "coro": 0.5,
+    "taiko": 0.3,
+    "tick": 0.5
+   }
+  },
+  {
+   "de": "site-quiet",
+   "faixas": {
+    "cordas": 0.5,
+    "baixo": 0.5,
+    "coro": 0.5,
+    "tick": 0.8
+   }
+  },
+  {
+   "de": "DAY 5",
+   "faixas": {
+    "cordas": 0.9,
+    "baixo": 0.9,
+    "metal": 0.5,
+    "taiko": 0.6,
+    "caixa": 0.5,
+    "tick": 0.5,
+    "prato": 0.4
+   }
+  },
+  {
+   "de": "panic",
+   "faixas": {
+    "cordas": 1,
+    "baixo": 1,
+    "metal": 1,
+    "tema": 0.8,
+    "alto": 0.6,
+    "coro": 0.8,
+    "taiko": 1,
+    "caixa": 0.9,
+    "prato": 1,
+    "tick": 0.6
+   }
+  },
+  {
+   "de": "invoice",
+   "faixas": {
+    "cordas": 0.6,
+    "baixo": 0.7,
+    "coro": 0.4,
+    "tick": 0.5
+   }
+  },
+  {
+   "de": "DAY 7",
+   "faixas": {
+    "piano": 0.8,
+    "luz": 0.35,
+    "coro": 0.45,
+    "baixo": 0.3,
+    "tema": 0.25
+   }
+  },
+  {
+   "de": "DAY 9",
+   "faixas": {
+    "cordas": 0.7,
+    "baixo": 0.7,
+    "taiko": 0.4,
+    "caixa": 0.3,
+    "coro": 0.3
+   }
+  },
+  {
+   "de": "DAY 12",
+   "faixas": {
+    "cordas": 0.9,
+    "baixo": 0.9,
+    "metal": 0.6,
+    "tema": 0.5,
+    "taiko": 0.7,
+    "caixa": 0.5,
+    "prato": 0.5
+   }
+  },
+  {
+   "de": "DAY 14",
+   "faixas": {
+    "cordas": 0.5,
+    "baixo": 0.6,
+    "coro": 0.5,
+    "tick": 0.8,
+    "taiko": 0.25
+   }
+  },
+  {
+   "de": "you",
+   "faixas": {
+    "tick": 1,
+    "baixo": 0.5,
+    "coro": 0.3
+   }
+  },
+  {
+   "de": "dan-no",
+   "faixas": {
+    "cordas": 0.7,
+    "baixo": 0.7,
+    "metal": 0.4,
+    "taiko": 0.5,
+    "tick": 0.5
+   }
+  },
+  {
+   "de": "a-paid",
+   "faixas": {
+    "luz": 0.7,
+    "piano": 0.7,
+    "metal": 0.3,
+    "coro": 0.4
+   }
+  },
+  {
+   "de": "bounce",
+   "faixas": {
+    "cordas": 0.8,
+    "baixo": 0.8,
+    "metal": 0.5,
+    "taiko": 0.5
+   }
+  },
+  {
+   "de": "DAY 17",
+   "faixas": {
+    "piano": 0.8,
+    "luz": 0.4,
+    "coro": 0.4,
+    "tema": 0.3
+   }
+  },
+  {
+   "de": "market",
+   "faixas": {
+    "piano": 0.6,
+    "luz": 0.5,
+    "baixo": 0.3
+   }
+  },
+  {
+   "de": "DAY 20",
+   "faixas": {
+    "piano": 0.7,
+    "luz": 0.45,
+    "coro": 0.45,
+    "baixo": 0.4
+   }
+  },
+  {
+   "de": "DAY 24",
+   "faixas": {
+    "cordas": 0.7,
+    "baixo": 0.8,
+    "coro": 0.5,
+    "tick": 0.6,
+    "taiko": 0.4,
+    "caixa": 0.3
+   }
+  },
+  {
+   "de": "fight",
+   "faixas": {
+    "cordas": 1,
+    "baixo": 1,
+    "metal": 0.7,
+    "taiko": 0.8,
+    "caixa": 0.6,
+    "prato": 0.5,
+    "tick": 0.4,
+    "tema": 0.5
+   }
+  },
+  {
+   "de": "stairs",
+   "faixas": {
+    "piano": 0.8,
+    "coro": 0.5,
+    "luz": 0.3
+   }
+  },
+  {
+   "de": "DAY 27",
+   "faixas": {
+    "piano": 0.7,
+    "luz": 0.6,
+    "coro": 0.4,
+    "baixo": 0.4,
+    "taiko": 0.2
+   }
+  },
+  {
+   "de": "bank-relief",
+   "faixas": {
+    "luz": 1,
+    "piano": 1,
+    "metal": 0.6,
+    "coro": 0.7,
+    "prato": 0.6
+   }
+  },
+  {
+   "de": "DAY 30",
+   "faixas": {
+    "luz": 0.8,
+    "piano": 0.8,
+    "metal": 0.5,
+    "coro": 0.6,
+    "taiko": 0.5,
+    "prato": 0.4,
+    "baixo": 0.5
+   }
+  },
+  {
+   "de": "verdict",
+   "faixas": {
+    "luz": 0.6,
+    "piano": 0.7,
+    "coro": 0.4,
+    "baixo": 0.4
+   }
+  },
+  {
+   "de": "actions",
+   "faixas": {
+    "luz": 0.8,
+    "piano": 0.8,
+    "baixo": 0.6,
+    "taiko": 0.4,
+    "caixa": 0.3,
+    "metal": 0.3
+   }
+  },
+  {
+   "de": "ask",
+   "faixas": {
+    "cordas": 0.8,
+    "baixo": 0.8,
+    "metal": 0.7,
+    "tema": 0.8,
+    "coro": 0.6,
+    "taiko": 0.7,
+    "caixa": 0.5,
+    "prato": 0.6
+   }
+  },
+  {
+   "de": "next",
+   "faixas": {
+    "tick": 1,
+    "baixo": 0.8,
+    "cordas": 0.45,
+    "coro": 0.5
+   }
+  },
+  {
+   "de": "next",
+   "t": 2.2,
+   "faixas": {
+    "tick": 0.9,
+    "baixo": 0.9,
+    "cordas": 0.7,
+    "coro": 0.6,
+    "taiko": 0.5,
+    "caixa": 0.4
+   }
+  },
+  {
+   "de": "next",
+   "t": 5.6,
+   "faixas": {
+    "tick": 0.8,
+    "baixo": 1,
+    "cordas": 0.9,
+    "coro": 0.8,
+    "metal": 0.4,
+    "taiko": 0.8,
+    "caixa": 0.8,
+    "prato": 0.5
+   }
+  },
+  {
+   "de": "next",
+   "t": 10.65,
+   "faixas": {
+    "tick": 1
+   }
+  },
+  {
+   "de": "end",
+   "faixas": {
+    "cordas": 1,
+    "baixo": 1,
+    "metal": 1,
+    "alto": 1,
+    "tema": 0.7,
+    "coro": 1,
+    "taiko": 1,
+    "caixa": 1,
+    "prato": 1,
+    "tick": 0.4
+   }
+  },
+  {
+   "de": "end",
+   "t": 6.0,
+   "faixas": {}
+  }
+ ],
+ "eventos": [
+  {
+   "plano": "logo",
+   "fx": "sting"
+  },
+  {
+   "plano": "bell",
+   "fx": "sino",
+   "palavra": "bell"
+  },
+  {
+   "plano": "call",
+   "fx": "vibra",
+   "t": 0.1
+  },
+  {
+   "plano": "bank-call",
+   "fx": "toque",
+   "t": 0.1
+  },
+  {
+   "plano": "market",
+   "fx": "caixa",
+   "t": 1.4
+  },
+  {
+   "plano": "market",
+   "fx": "caixa",
+   "t": 2.3
+  },
+  {
+   "plano": "market",
+   "fx": "caixa",
+   "t": 3.1
+  },
+  {
+   "plano": "next",
+   "fx": "sting",
+   "t": 0.0,
+   "g": 0.6
+  },
+  {
+   "plano": "until",
+   "fx": "subida",
+   "t": 0.6
+  },
+  {
+   "plano": "DAY 1",
+   "fx": "crash"
+  },
+  {
+   "plano": "panic",
+   "fx": "crash"
+  },
+  {
+   "plano": "end",
+   "fx": "crash"
+  },
+  {
+   "plano": "end",
+   "fx": "tambor"
+  },
+  {
+   "plano": "next",
+   "fx": "subida",
+   "t": 8.2,
+   "g": 1.2
+  },
+  {
+   "plano": "end",
+   "fx": "final",
+   "t": 6.0
+  },
+  {
+   "plano": "end",
+   "fx": "tique",
+   "t": 7.05
+  },
+  {
+   "plano": "end",
+   "fx": "tique",
+   "t": 7.6
+  }
+ ],
+ "duck_grave": 0.45,
+ "duck_agudo": 0.9,
+ "ciclo": "end"
+}

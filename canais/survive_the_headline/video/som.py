@@ -27,7 +27,7 @@ from scipy.signal import butter, sosfilt  # noqa: E402
 from som_antigos import SR, bp, ducking, hp, lp, note, nrm, put, reverb, saw, tt  # noqa: E402
 
 RNG = np.random.default_rng(2026)
-BEAT = 60 / 112
+BEAT = 60 / 96
 BAR = BEAT * 4
 LEAD, LEAD_FALA = 0.12, 0.15
 TRANS_EARLY = 0.14
@@ -52,67 +52,94 @@ def env_ar(n, a, r):
 
 
 # ------------------------------------------------------------------ instrumentos
-# Tema original do canal, em linguagem de trailer: ostinato de cordas, metais, coro, tambores. Ré menor, 112 BPM.
-HEROI = [[38, 57, 62, 65], [34, 58, 62, 65], [41, 57, 60, 65], [36, 55, 60, 64]]   # Dm Bb F C
-LUZ = [[41, 57, 60, 65], [36, 55, 60, 64], [38, 57, 62, 65], [34, 58, 62, 65]]     # F C Dm Bb (mesma grade, abre para a esperança)
-TEMA = [(62, 3), (69, 1), (69, 2), (67, 1), (69, 1),  (70, 3), (69, 1), (67, 2), (65, 2),
-        (65, 3), (69, 1), (72, 2), (70, 1), (69, 1),  (67, 3), (72, 1), (72, 4)]   # (nota, tempos); 32 tempos = 8 compassos
+# Trilha de thriller financeiro (direção de 07/11/2026): piano misterioso, synths escuros e pulsos eletrônicos;
+# suspense com sub grave, tique-taque, cordas tensas e percussão contida; piano e cello melancólicos na luta da família;
+# piano quente e cordas na esperança frágil; final escuro e sem resolução. Nada de metais, coro ou tambores de trailer.
+# Ré menor, 96 BPM; cada acorde dura 2 compassos e o ciclo de 4 acordes (8 compassos) começa no cartão final.
+ESCURO = [[38, 57, 62, 65], [34, 58, 62, 65], [31, 58, 62, 67], [33, 57, 61, 64]]   # Dm Bb Gm A
+LUZ = [[41, 57, 60, 65], [36, 55, 60, 64], [38, 57, 62, 65], [34, 58, 62, 65]]      # F C Dm Bb (mesma grade, abre para a esperança)
+# motivo do piano misterioso: (tempo dentro do ciclo de 32, nota)
+MOTIVO = [(0, 69), (1.5, 65), (3, 64), (4, 62), (6, 57),
+          (8, 70), (9.5, 65), (11, 62), (12, 65), (14, 58),
+          (16, 67), (17.5, 70), (19, 69), (20, 67), (22, 62),
+          (24, 64), (25.5, 61), (27, 64), (28, 69), (30, 57)]
+# melodia do cello: (nota, tempos); 32 tempos = 8 compassos
+CELLO = [(57, 3), (53, 1), (52, 2), (50, 2),
+         (53, 3), (55, 1), (57, 2), (58, 2),
+         (62, 4), (58, 2), (57, 2),
+         (57, 2), (55, 1), (53, 1), (52, 4)]
 
 
-def g_metal(notas, d=None):
-    d = d or BAR * 2 + 1.3
-    t = tt(d)
+def g_pad(notas, d=None):
+    """synth escuro: serras desafinadas, filtro fechado que respira devagar"""
+    d = d or BAR * 2
+    t = tt(d + 2.4)
     x = np.zeros(len(t))
-    for n in notas + [notas[0] + 12]:
-        for det in (0.996, 1.0, 1.005):
+    for n in [notas[0] + 12] + notas[1:]:
+        for det in (0.993, 1.0, 1.007):
             x += saw(note(n) * det, t + RNG.random())
-    brilho = np.clip(t / 0.22, 0, 1) * (0.5 + 0.5 * np.exp(-t * 1.5))
-    x = lp(x, 520, 2) * (1 - brilho) + lp(x, 2600, 2) * brilho
-    x = np.tanh(x / np.max(np.abs(x)) * 2.2) * env_ar(len(t), 0.07, 0.7)
-    return np.float32(reverb(nrm(x, 0.7), 2.4, 0.3))
+    resp = 0.5 + 0.5 * np.sin(2 * np.pi * t / (d + 2.4) - np.pi / 2)
+    x = lp(x, 380, 2) * (1 - resp) + lp(x, 1100, 2) * resp
+    x += bp(RNG.normal(0, 1, len(t)), 2200, 6500) * 0.015 * np.std(x)
+    return np.float32(reverb(nrm(x * env_ar(len(t), 1.6, 2.2), 0.7), 3.6, 0.45))
 
 
-def g_trompa(m, d):
-    t = tt(d + 0.9)
-    vib = 1 + 0.004 * np.sin(2 * np.pi * 5.1 * t) * np.clip((t - 0.25) / 0.3, 0, 1)
-    fase = np.cumsum(note(m) * vib) / SR
-    x = saw(1, fase) + 0.5 * (2 * np.abs(saw(1, fase * 0.5)) - 1) + 0.55 * saw(1, fase * 0.5 + 0.13)
-    x = lp(x, 1900, 2) * env_ar(len(t), 0.05, 0.75)
-    return np.float32(reverb(nrm(x, 0.8), 2.4, 0.34))
-
-
-def g_coro(notas):
-    d = BAR * 2 + 2.0
+def g_cordas_longas(notas, quente=False):
+    """cordas sustentadas: tensas (agudas, com trêmulo) ou quentes (médias, legato)"""
+    d = BAR * 2 + 1.6
     t = tt(d)
     x = np.zeros(len(t))
-    for n in notas[1:] + [notas[1] + 12]:
-        for det in (0.997, 1.004):
-            f = note(n) * det * (1 + 0.003 * np.sin(2 * np.pi * (4.6 + det) * t))
+    vozes = ([notas[0] + 12] + notas[1:]) if quente else [n + 12 for n in notas[1:]]
+    for n in vozes:
+        for det in (0.996, 1.0, 1.004):
+            f = note(n) * det * (1 + 0.004 * np.sin(2 * np.pi * (5.0 + det) * t + RNG.random() * 6))
             x += saw(1, np.cumsum(f) / SR + RNG.random())
-    x = bp(x, 520, 900) + 0.6 * bp(x, 1050, 1450) + 0.22 * bp(x, 2300, 2950)   # formantes de "ah"
-    return np.float32(reverb(nrm(x * env_ar(len(t), 0.7, 1.4), 0.6), 3.4, 0.5))
+    x = lp(x, 1500 if quente else 2600, 2)
+    if not quente:
+        x *= 0.65 + 0.35 * np.sin(2 * np.pi * 7.5 * t)
+    return np.float32(reverb(nrm(x * env_ar(len(t), 1.0 if quente else 0.8, 1.4), 0.6), 3.2, 0.45))
+
+
+def g_sub(m, d=None):
+    d = d or BAR * 2
+    t = tt(d + 0.8)
+    f = note(m)
+    x = np.sin(2 * np.pi * f * t) + 0.18 * np.sin(4 * np.pi * f * t)
+    return np.float32(st(np.tanh(x * 1.3) * env_ar(len(t), 0.4, 0.9)))
+
+
+def g_pulso(m):
+    """pulso eletrônico: serra com filtro que fecha rápido"""
+    t = tt(0.34)
+    f = note(m)
+    x = saw(f, t) + saw(f * 1.004, t + 0.3)
+    x = lp(x, 240) + lp(x, 1200) * np.exp(-t * 18)
+    return np.float32(st(nrm(x * np.exp(-t * 7) * env_ar(len(t), 0.003, 0.04), 0.8)))
 
 
 def g_spic(m):
     t = tt(0.17)
     f = note(m)
     x = saw(f, t) + saw(f * 1.006, t + 0.1) * 0.7 + saw(f * 0.995, t + 0.2) * 0.5
-    return np.float32(st(lp(x, 3000) * np.exp(-t * 13) * env_ar(len(t), 0.002, 0.02)))
+    return np.float32(st(lp(x, 2600) * np.exp(-t * 13) * env_ar(len(t), 0.002, 0.02)))
 
 
-def g_baixo(m):
-    t = tt(0.26)
-    f = note(m)
-    x = lp(saw(f, t), 300) + np.sin(2 * np.pi * f * t) * 0.9
-    return np.float32(st(x * np.exp(-t * 6) * env_ar(len(t), 0.003, 0.03)))
-
-
-def g_piano(n):
-    t = tt(2.8)
+def g_piano(n, d=2.8):
+    t = tt(d)
     f = note(n)
     x = sum(np.sin(2 * np.pi * f * k * (1 + 0.0004 * k * k) * t) * np.exp(-t * (1.0 + 0.6 * k)) / k ** 1.1 for k in range(1, 9))
     x += lp(RNG.normal(0, 1, len(t)), 3000) * np.exp(-t * 90) * 0.12
-    return np.float32(reverb(nrm(x * env_ar(len(t), 0.002, 0.2), 0.8), 2.2, 0.26))
+    return np.float32(reverb(nrm(x * env_ar(len(t), 0.002, 0.2), 0.8), 2.8, 0.34))
+
+
+def g_cello(m, d):
+    t = tt(d + 0.7)
+    vib = 1 + 0.006 * np.sin(2 * np.pi * 5.3 * t) * np.clip((t - 0.3) / 0.4, 0, 1)
+    fase = np.cumsum(note(m) * vib) / SR
+    x = saw(1, fase) + 0.3 * saw(1, fase * 2 + 0.1)
+    x = bp(x, 80, 2200) + 0.8 * bp(x, 230, 700)                        # corpo de madeira
+    x += bp(RNG.normal(0, 1, len(t)), 1500, 4000) * 0.03 * np.std(x)   # arco
+    return np.float32(reverb(nrm(x * env_ar(len(t), 0.2, 0.55), 0.8), 2.8, 0.36))
 
 
 def g_tick(alto):
@@ -120,6 +147,11 @@ def g_tick(alto):
     r = np.sin(2 * np.pi * (2700 if alto else 2050) * t) * np.exp(-t * 300)
     x = r * 0.7 + bp(RNG.normal(0, 1, len(t)), 1800, 7000) * np.exp(-t * 500) * 0.9
     return np.float32(st(nrm(x, 0.8), 0.18 if alto else -0.18))
+
+
+def g_chiado(pan):
+    t = tt(0.05)
+    return np.float32(st(nrm(hp(RNG.normal(0, 1, len(t)), 7000) * np.exp(-t * 95), 0.7), pan))
 
 
 def g_taiko(f0=56):
@@ -130,10 +162,12 @@ def g_taiko(f0=56):
     return np.float32(reverb(nrm(x, 0.9), 2.0, 0.28))
 
 
-def g_caixa():
-    t = tt(0.32)
-    x = bp(RNG.normal(0, 1, len(t)), 1400, 7500) * np.exp(-t * 20) + np.sin(2 * np.pi * 196 * t) * np.exp(-t * 34) * 0.7
-    return np.float32(reverb(nrm(x, 0.8), 0.9, 0.2))
+def g_surdo():
+    """percussão de cinema contida: tambor grave e abafado"""
+    t = tt(1.6)
+    f = 44 + 60 * np.exp(-t * 22)
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 4.0) + lp(RNG.normal(0, 1, len(t)), 450) * np.exp(-t * 30) * 0.4
+    return np.float32(reverb(nrm(x, 0.9), 2.6, 0.34))
 
 
 def g_prato(d=3.6):
@@ -144,7 +178,7 @@ def g_prato(d=3.6):
 
 def sequencia(dur, inicio_ciclo):
     """faixas soltas, cada uma com a duração do episódio. Tudo cai na mesma grade, e um ciclo de 8 compassos começa
-    exatamente em inicio_ciclo (o cartão final), para o tema entrar na cabeça do compasso."""
+    exatamente em inicio_ciclo (o cartão final)."""
     n = int(dur * SR) + SR * 8
     ciclo = BAR * 8
     zero = inicio_ciclo % ciclo - ciclo
@@ -152,25 +186,6 @@ def sequencia(dur, inicio_ciclo):
     vazio = lambda: np.zeros((n, 2), np.float32)
     rng = np.random.default_rng(7)
     acorde = lambda t, prog: prog[int(((t - zero) / (BAR * 2)) % 4)]
-    PAT = [0, 12, 0, 7, 12, 0, 7, 0, 0, 12, 0, 7, 12, 19, 12, 7]
-
-    def cordas(prog, oit):
-        cache = {}
-        b = vazio()
-        for k, t in passos(BEAT / 4):
-            m = acorde(t + 0.001, prog)[0] + oit + PAT[k % 16]
-            cache.setdefault(m, g_spic(m))
-            put(b, t, cache[m], 1.0 if k % 4 == 0 else 0.62 + 0.14 * (k % 2))
-        return b
-
-    def baixo():
-        cache = {}
-        b = vazio()
-        for k, t in passos(BEAT / 2):
-            m = acorde(t + 0.001, HEROI)[0] + (12 if k % 4 == 3 else 0)
-            cache.setdefault(m, g_baixo(m))
-            put(b, t, cache[m], 1.0 if k % 2 == 0 else 0.7)
-        return b
 
     def blocos(prog, grao):
         gs = [grao(c) for c in prog]
@@ -179,60 +194,96 @@ def sequencia(dur, inicio_ciclo):
             put(b, t, gs[k % 4])
         return b
 
-    def tema(oit):
+    def pulso():
+        cache = {}
+        b = vazio()
+        for k, t in passos(BEAT / 2):
+            m = acorde(t + 0.001, ESCURO)[0] + (12 if k % 8 == 7 else 0)
+            cache.setdefault(m, g_pulso(m))
+            put(b, t, cache[m], 1.0 if k % 2 == 0 else 0.55)
+        return b
+
+    def cordas():
+        cache = {}
+        b = vazio()
+        for k, t in passos(BEAT / 4):
+            c = acorde(t + 0.001, ESCURO)
+            r = c[0] + 12
+            m = [r, r + 12, c[1], r + 12, r, r + 12, c[2], c[1]][k % 8]
+            cache.setdefault(m, g_spic(m))
+            put(b, t, cache[m], 1.0 if k % 4 == 0 else 0.55 + 0.12 * (k % 2))
+        return b
+
+    def piano_misterio():
+        cache = {}
+        b = vazio()
+        for c in range(int((dur - zero) / ciclo) + 1):
+            t0 = zero + c * ciclo
+            for q, m in MOTIVO:
+                cache.setdefault(m, g_piano(m, 3.4))
+                put(b, t0 + q * BEAT + rng.normal(0, 0.006), cache[m], 0.55 + rng.random() * 0.15)
+            for j, ac in enumerate(ESCURO):
+                m = ac[0] + 12
+                cache.setdefault(m, g_piano(m, 3.4))
+                put(b, t0 + j * BAR * 2, cache[m], 0.5)
+        return b
+
+    def piano_triste():
+        cache = {}
+        b = vazio()
+        ORD = [1, 2, 3, 2, 1, 2, 3, 2]
+        for k, t in passos(BEAT):
+            c = acorde(t + 0.001, ESCURO)
+            notas = [(c[ORD[k % 8]], 0.42 + rng.random() * 0.12)]
+            if k % 8 == 0:
+                notas.append((c[0] + 12, 0.6))
+            elif k % 8 == 4:
+                notas.append((c[0] + 19, 0.4))
+            for m, g in notas:
+                cache.setdefault(m, g_piano(m))
+                put(b, t + rng.normal(0, 0.008), cache[m], g)
+        return b
+
+    def cello():
         cache = {}
         b = vazio()
         for c in range(int((dur - zero) / ciclo) + 1):
             t = zero + c * ciclo
-            for m, q in TEMA:
+            for m, q in CELLO:
                 d = q * BEAT
-                chave = (m + oit, q)
-                cache.setdefault(chave, g_trompa(m + oit, d))
-                put(b, t, cache[chave])
+                cache.setdefault((m, q), g_cello(m, d))
+                put(b, t, cache[(m, q)])
                 t += d
         return b
 
-    def piano():
+    def esperanca():
         cache = {}
         b = vazio()
         ARP = [0, 1, 2, 3, 2, 1, 3, 2]
         for k, t in passos(BEAT / 2):
             c = acorde(t + 0.001, LUZ)
-            m = c[1 + ARP[k % 8] % 3] + 12 * (1 + (ARP[k % 8] == 3))
+            m = c[1 + ARP[k % 8] % 3] + 12 * (ARP[k % 8] == 3)
             cache.setdefault(m, g_piano(m))
-            put(b, t + rng.normal(0, 0.005), cache[m], 0.5 + 0.3 * (k % 4 == 0) + rng.random() * 0.15)
+            put(b, t + rng.normal(0, 0.005), cache[m], 0.45 + 0.25 * (k % 4 == 0) + rng.random() * 0.12)
+            if k % 16 == 0:
+                cache.setdefault(c[0] + 12, g_piano(c[0] + 12))
+                put(b, t, cache[c[0] + 12], 0.6)
         return b
 
-    def tambores():
+    def surdo():
         b = vazio()
-        g, g2 = g_taiko(), g_taiko(92)
-        PAD = [1, 0, 0, .6, 0, 0, .8, 0, 1, 0, .55, 0, .8, 0, .55, .6]
+        g = g_surdo()
+        PAD = [1, 0, 0, .45, 0, 0, .7, 0]
+        for k, t in passos(BEAT / 2):
+            if PAD[k % 8]:
+                put(b, t, g, PAD[k % 8])
+        return b
+
+    def chiado():
+        b = vazio()
+        gs = [g_chiado(-0.3), g_chiado(0.3)]
         for k, t in passos(BEAT / 4):
-            compasso = (k // 16) % 8
-            if compasso == 7 and k % 16 >= 8:                 # virada para o próximo ciclo
-                put(b, t, g2, 0.45 + 0.55 * (k % 16 - 8) / 8)
-            elif PAD[k % 16]:
-                put(b, t, g, PAD[k % 16])
-        return b
-
-    def caixa():
-        b = vazio()
-        g = g_caixa()
-        for k, t in passos(BEAT / 4):
-            compasso = (k // 16) % 8
-            if compasso == 7:
-                put(b, t, g, 0.3 + 0.7 * (k % 16) / 16)       # rufo que sobe
-            elif k % 8 == 4 or k % 16 in (14, 15):
-                put(b, t, g, 0.8 if k % 8 == 4 else 0.45)
-        return b
-
-    def pratos():
-        b = vazio()
-        g = g_prato()
-        sobe = g_prato(BAR)[::-1].copy()
-        for k, t in passos(BAR * 4):
-            put(b, t, g)
-            put(b, t - BAR, sobe, 0.55)
+            put(b, t, gs[k % 2], 1.0 if k % 4 == 2 else 0.4)
         return b
 
     def tick():
@@ -242,18 +293,19 @@ def sequencia(dur, inicio_ciclo):
             put(b, t, g0 if k % 2 == 0 else g1)
         return b
 
-    yield 'cordas', 0.15, lambda: cordas(HEROI, 12)
-    yield 'luz', 0.13, lambda: cordas(LUZ, 12)
-    yield 'baixo', 0.20, baixo
-    yield 'metal', 0.20, lambda: blocos(HEROI, g_metal)
-    yield 'tema', 0.27, lambda: tema(0)
-    yield 'alto', 0.22, lambda: tema(12)
-    yield 'coro', 0.17, lambda: blocos(HEROI, g_coro)
-    yield 'piano', 0.30, piano
-    yield 'taiko', 0.36, tambores
-    yield 'caixa', 0.10, caixa
-    yield 'prato', 0.12, pratos
-    yield 'tick', 0.09, tick
+    yield 'pad', 0.34, lambda: blocos(ESCURO, g_pad)
+    yield 'sub', 0.14, lambda: blocos(ESCURO, lambda c: g_sub(c[0]))
+    yield 'pulso', 0.15, pulso
+    yield 'cordas', 0.11, cordas
+    yield 'longas', 0.22, lambda: blocos(ESCURO, g_cordas_longas)
+    yield 'calor', 0.20, lambda: blocos(LUZ, lambda c: g_cordas_longas(c, True))
+    yield 'misterio', 0.30, piano_misterio
+    yield 'piano', 0.26, piano_triste
+    yield 'cello', 0.13, cello
+    yield 'esperanca', 0.24, esperanca
+    yield 'surdo', 0.30, surdo
+    yield 'chiado', 0.12, chiado
+    yield 'tick', 0.12, tick
 
 
 def trilha(dur, pontos, inicio_ciclo):
@@ -265,8 +317,8 @@ def trilha(dur, pontos, inicio_ciclo):
         alvo = np.zeros(len(ctl))
         for (t0, v), t1 in zip(pontos, [p[0] for p in pontos[1:]] + [dur + 1]):
             alvo[(ctl >= t0) & (ctl < t1)] = v.get(nome, 0)
-        k = 2
-        alvo = np.convolve(np.pad(alvo, k, mode='edge'), np.ones(2 * k + 1) / (2 * k + 1), mode='valid')[:len(ctl)]  # troca em ~0,25 s
+        k = 6
+        alvo = np.convolve(np.pad(alvo, k, mode='edge'), np.ones(2 * k + 1) / (2 * k + 1), mode='valid')[:len(ctl)]  # troca em ~0,6 s
         if alvo.max() == 0:
             continue
         faixa = faz()[:n]
@@ -363,18 +415,26 @@ def fx_tique_dia():
 
 
 def fx_sting():
-    t = tt(4.2)
-    x = sum(saw(note(n) * d, t) for n, d in ((26, 1), (26, 1.008), (38, 0.996), (45, 1.004), (50, 1.0)))
-    x = lp(np.tanh(x * 0.8), 620, 3) * np.exp(-t * 1.0) * env_ar(len(t), 0.02, 1)
-    return reverb(nrm(x, 0.9), 3, 0.35)
+    """marca do logo: grave escuro que cai, com um acorde de piano por cima (sem cara de trailer)"""
+    t = tt(4.5)
+    f = 30 + 40 * np.exp(-t * 3)
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 1.1) * env_ar(len(t), 0.01, 1.2)
+    x = reverb(nrm(x, 0.9), 3, 0.3)
+    for m in (38, 50, 57, 62, 65):
+        p = np.array(g_piano(m, 4.5), float)
+        x[:len(p)] += p * 0.35
+    return nrm(x, 0.9)
 
 
 def fx_final():
-    """acorde de dominante (Lá) que não resolve: o episódio termina em suspenso"""
-    x = np.array(g_metal([33, 57, 61, 64], 1.1), float)
+    """acorde que não resolve (Lá com Ré e Si bemol por cima): o episódio termina em suspenso"""
+    x = np.array(g_cordas_longas([33, 57, 62, 70]), float) * 0.9
     x = np.pad(x, ((0, SR), (0, 0)))
-    t = np.array(g_taiko(), float)
-    x[:len(t)] += t
+    for m in (33, 45, 62, 70):
+        p = np.array(g_piano(m, 4.0), float)
+        x[:len(p)] += p * 0.45
+    s = np.array(g_sub(33, 3.0), float)
+    x[:len(s)] += s * 0.5
     return x
 
 
