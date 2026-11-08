@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-002 · Fração de uma quantidade: a parte e o total
 
-**Arquivo:** `final/estudativo_MAT-FRA-002_fracao_de_uma_quantidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-002_fracao_de_uma_quantidade.mp4` · 4:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Dois quintos do salário são R$ 600. Se a sua resposta foi R$ 240, o salário i
 ✅ Um problema de tanque resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] O salário que ficou menor que a parte
-[TEMPO] O que você precisa saber
-[TEMPO] 3/4 de 20 na barra de chocolate
-[TEMPO] Divide pelo de baixo, multiplica pelo de cima
-[TEMPO] O caminho de volta: da parte para o total
-[TEMPO] Total ou parte: qual caminho usar
-[TEMPO] O erro dos R$ 240
-[TEMPO] O atalho: tire o pedaço que falta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 O salário que ficou menor que a parte
+0:21 O que você precisa saber
+0:34 3/4 de 20 na barra de chocolate
+0:55 Divide pelo de baixo, multiplica pelo de cima
+1:17 O caminho de volta: da parte para o total
+1:56 Total ou parte: qual caminho usar
+2:27 O erro dos R$ 240
+2:46 O atalho: tire o pedaço que falta
+3:18 Hora de testar
+3:31 Resolvendo o problema
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-001 · O que é uma fração
 
-**Arquivo:** `final/estudativo_MAT-FRA-001_o_que_e_uma_fracao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-001_o_que_e_uma_fracao.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,16 @@ Três quartos, cinco doze avos, doze quartos: se essas palavras te travam, esta 
 ✅ O atalho da tabuada ao contrário e um problema resolvido
 
 ⏱️ Capítulos
-[TEMPO] Três quartos, cinco doze avos: parece código
-[TEMPO] O que você precisa saber
-[TEMPO] A barra de chocolate: pintar 3/4
-[TEMPO] Numerador e denominador
-[TEMPO] Como se lê uma fração
-[TEMPO] O traço é uma divisão: 12/4 = 3
-[TEMPO] O erro de contar só os pintados
-[TEMPO] O atalho: a tabuada ao contrário
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Três quartos, cinco doze avos: parece código
+0:28 A barra de chocolate: pintar 3/4
+1:03 Numerador e denominador
+1:35 Como se lê uma fração
+2:25 O traço é uma divisão: 12/4 = 3
+2:52 O erro de contar só os pintados
+3:14 O atalho: a tabuada ao contrário
+3:37 Hora de testar
+3:49 Resolvendo o problema
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

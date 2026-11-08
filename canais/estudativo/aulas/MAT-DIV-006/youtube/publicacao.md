@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-006 · Problemas de MDC: partes iguais, as maiores possíveis
 
-**Arquivo:** `final/estudativo_MAT-DIV-006_problemas_de_mdc.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-006_problemas_de_mdc.mp4` · 4:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,15 @@ Duas fitas, de 72 cm e de 120 cm, cortadas em pedaços iguais, os maiores possí
 ✅ Uma questão resolvida: 63 sabonetes e 84 cremes em kits iguais
 
 ⏱️ Capítulos
-[TEMPO] Duas fitas: quantos pedaços saem?
-[TEMPO] O que você precisa lembrar
-[TEMPO] Por que esse problema é de MDC
-[TEMPO] A conta: 24 cm e 8 pedaços
-[TEMPO] O mesmo problema nas bandejas
-[TEMPO] O erro de parar no MDC
-[TEMPO] O atalho: a pista no texto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Duas fitas: quantos pedaços saem?
+0:25 Por que esse problema é de MDC
+0:53 A conta: 24 cm e 8 pedaços
+1:20 O mesmo problema nas bandejas
+2:05 O erro de parar no MDC
+2:19 O atalho: a pista no texto
+2:56 Hora de testar
+3:12 Resolvendo a questão
+3:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular o MDC: [LINK MAT-DIV-004]

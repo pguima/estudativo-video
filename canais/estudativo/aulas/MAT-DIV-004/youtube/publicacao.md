@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-004 · Calcular o MDC
 
-**Arquivo:** `final/estudativo_MAT-DIV-004_calcular_mdc.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-004_calcular_mdc.mp4` · 4:12 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,14 @@ Qual é o maior número que divide 72 e 120 sem deixar resto? Só o 120 tem 16 d
 ✅ Uma questão resolvida: o MDC de 48 e 60
 
 ⏱️ Capítulos
-[TEMPO] O maior divisor de 72 e 120
-[TEMPO] O que você precisa lembrar
-[TEMPO] O que quer dizer MDC
-[TEMPO] Listando divisores
-[TEMPO] O MDC pela fatoração
-[TEMPO] O erro de levar um primo sem par
-[TEMPO] O atalho: dividir ao mesmo tempo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 O maior divisor de 72 e 120
+0:23 O que quer dizer MDC
+0:40 Listando divisores
+1:21 O MDC pela fatoração
+2:25 O erro de levar um primo sem par
+2:43 O atalho: dividir ao mesmo tempo
+3:29 Hora de testar
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Números primos e fatoração: [LINK MAT-DIV-003]

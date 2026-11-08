@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-013 · Ordem das operações e parênteses
 
-**Arquivo:** `final/estudativo_MAT-NUM-013_ordem_operacoes_parenteses.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-013_ordem_operacoes_parenteses.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,15 @@ Se 2 + 3 × 4 deu 20, você fez na ordem em que leu, e a resposta é 14. Nesta a
 ✅ O atalho dos blocos
 
 ⏱️ Capítulos
-[TEMPO] 14 ou 20?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que o vezes vem antes: os envelopes
-[TEMPO] A ordem das operações
-[TEMPO] Parênteses e colchetes
-[TEMPO] O erro: vezes sempre antes do dividido
-[TEMPO] Atalho: os blocos
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 14 ou 20?
+0:24 Por que o vezes vem antes: os envelopes
+1:01 A ordem das operações
+1:57 Parênteses e colchetes
+2:23 O erro: vezes sempre antes do dividido
+2:50 Atalho: os blocos
+3:36 Hora de testar
+3:50 Resposta
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

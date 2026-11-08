@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-014 · Ler, comparar e arredondar decimais
 
-**Arquivo:** `final/estudativo_MAT-FRA-014_ler_comparar_arredondar_decimais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-014_ler_comparar_arredondar_decimais.mp4` · 4:54 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Zero vírgula oito ou zero vírgula setenta e cinco: qual é maior? Nesta aula, 
 ✅ Arredondar: olhe o algarismo logo depois da última casa que fica
 
 ⏱️ Capítulos
-[TEMPO] Qual é maior: 0,8 ou 0,75?
-[TEMPO] O que você precisa saber
-[TEMPO] O que a vírgula separa
-[TEMPO] Décimos, centésimos e milésimos
-[TEMPO] Como ler um decimal
-[TEMPO] Comparar casa por casa
-[TEMPO] O erro mais comum
-[TEMPO] Atalho: iguale as casas
-[TEMPO] Arredondar decimais
-[TEMPO] Hora de testar: o dólar em dois bancos
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Qual é maior: 0,8 ou 0,75?
+0:16 O que você precisa saber
+0:27 O que a vírgula separa
+0:39 Décimos, centésimos e milésimos
+1:11 Como ler um decimal
+1:30 Comparar casa por casa
+2:01 O erro mais comum
+2:16 Atalho: iguale as casas
+2:43 Arredondar decimais
+3:50 Hora de testar: o dólar em dois bancos
+4:08 Resposta
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

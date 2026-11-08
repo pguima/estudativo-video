@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-006 · Praticando: o que é uma fração
 
-**Arquivo:** `final/estudativo_MAT-FRA-006_praticando_o_que_e_uma_fracao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-006_praticando_o_que_e_uma_fracao.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações do dia a dia, criadas para esta aula: um mês de trabalho, a e
 ✅ O atalho de tirar o pedaço que falta
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações do dia a dia
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: os dias de trabalho
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: a menor entrada
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: a viagem
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: tire o pedaço que falta
-[TEMPO] Situação 4: o preço da televisão
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: as tortas
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações do dia a dia
+0:12 As quatro ferramentas
+0:22 Situação 1: os dias de trabalho
+0:35 Resposta da situação 1
+1:05 Situação 2: a menor entrada
+1:20 Resposta da situação 2
+1:53 Situação 3: a viagem
+2:06 Resposta da situação 3
+2:18 O atalho: tire o pedaço que falta
+2:36 Situação 4: o preço da televisão
+2:49 Resposta da situação 4
+3:16 Situação 5: as tortas
+3:32 Resposta da situação 5
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

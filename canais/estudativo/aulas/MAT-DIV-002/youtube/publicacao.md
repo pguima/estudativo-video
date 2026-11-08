@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-002 · Regras de divisibilidade
 
-**Arquivo:** `final/estudativo_MAT-DIV-002_regras_divisibilidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-002_regras_divisibilidade.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,18 @@ O número 4.572 se divide por 9? Dá para saber em poucos segundos, sem armar a 
 ✅ Uma questão resolvida: quem divide 7.290
 
 ⏱️ Capítulos
-[TEMPO] 4.572 se divide por 9?
-[TEMPO] O que você precisa lembrar
-[TEMPO] O que quer dizer divisível
-[TEMPO] Por 2, por 5 e por 10: o último algarismo
-[TEMPO] Por 4: os dois últimos algarismos
-[TEMPO] Por 3 e por 9: a soma dos algarismos
-[TEMPO] Por 6: as duas regras juntas
-[TEMPO] O placar final do 4.572
-[TEMPO] O erro de olhar o final no teste do 3
-[TEMPO] O atalho dos noves fora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 4.572 se divide por 9?
+0:23 O que quer dizer divisível
+0:35 Por 2, por 5 e por 10: o último algarismo
+1:09 Por 4: os dois últimos algarismos
+1:32 Por 3 e por 9: a soma dos algarismos
+2:13 Por 6: as duas regras juntas
+2:25 O placar final do 4.572
+2:35 O erro de olhar o final no teste do 3
+2:51 O atalho dos noves fora
+3:26 Hora de testar
+3:38 Resolvendo a questão
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Múltiplos e divisores: [LINK MAT-DIV-001]

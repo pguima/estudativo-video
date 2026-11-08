@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-009 · Multiplicar frações
 
-**Arquivo:** `final/estudativo_MAT-FRA-009_multiplicar_fracoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-009_multiplicar_fracoes.mp4` · 5:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Multiplicar sempre aumenta? Entre frações, não: 1/2 × 1/4 dá 1/8, menor que
 ✅ Um problema de terreno resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Multiplicar sempre aumenta?
-[TEMPO] O que você precisa saber
-[TEMPO] A palavra "de" vira vezes
-[TEMPO] A grade: 2/3 de 5/7
-[TEMPO] A regra da multiplicação
-[TEMPO] Treino: a pizza
-[TEMPO] O erro de repetir o de baixo
-[TEMPO] O atalho: cortar em cruz
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Multiplicar sempre aumenta?
+0:26 O que você precisa saber
+0:41 A palavra "de" vira vezes
+1:13 A grade: 2/3 de 5/7
+1:41 A regra da multiplicação
+2:25 Treino: a pizza
+2:50 O erro de repetir o de baixo
+3:14 O atalho: cortar em cruz
+4:11 Hora de testar
+4:26 Resolvendo o problema
+4:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Fração de uma quantidade: a parte e o total: [LINK MAT-FRA-002]

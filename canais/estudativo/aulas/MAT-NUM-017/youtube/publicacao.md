@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-017 · Multiplicar e dividir inteiros: regra de sinais
 
-**Arquivo:** `final/estudativo_MAT-NUM-017_regra_de_sinais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-017_regra_de_sinais.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Como duas coisas negativas viram dinheiro no bolso? Decorar não ajuda, entender
 ✅ O atalho de contar os sinais de menos
 
 ⏱️ Capítulos
-[TEMPO] Menos vezes menos dá mais?
-[TEMPO] O que você precisa saber
-[TEMPO] Os quatro casos da regra de sinais
-[TEMPO] Dividir com sinal
-[TEMPO] O erro: usar a regra na soma
-[TEMPO] Atalho: conte os sinais de menos
-[TEMPO] Hora de testar: as parcelas
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Menos vezes menos dá mais?
+0:17 O que você precisa saber
+0:30 Os quatro casos da regra de sinais
+2:02 Dividir com sinal
+2:46 O erro: usar a regra na soma
+3:12 Atalho: conte os sinais de menos
+3:46 Hora de testar: as parcelas
+4:03 Resposta
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

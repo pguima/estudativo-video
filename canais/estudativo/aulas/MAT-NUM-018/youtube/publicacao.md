@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-018 · Expressões com inteiros
 
-**Arquivo:** `final/estudativo_MAT-NUM-018_expressoes_com_inteiros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-018_expressoes_com_inteiros.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Se −3 + 2 × (−4) deu 4, você fez na ordem em que leu, e a resposta é −1
 ✅ O atalho dos blocos, com sinal colado
 
 ⏱️ Capítulos
-[TEMPO] 4 ou −11?
-[TEMPO] O que você precisa saber
-[TEMPO] Os dois papéis do menos
-[TEMPO] Resolvendo expressões com inteiros
-[TEMPO] O erro: menos antes de parêntese
-[TEMPO] Atalho: os blocos com sinal colado
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 4 ou −11?
+0:18 O que você precisa saber
+0:35 Os dois papéis do menos
+1:02 Resolvendo expressões com inteiros
+2:16 O erro: menos antes de parêntese
+2:43 Atalho: os blocos com sinal colado
+3:43 Hora de testar
+3:56 Resposta
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Ordem das operações e parênteses: [LINK MAT-NUM-013]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-015 · Somar e subtrair decimais
 
-**Arquivo:** `final/estudativo_MAT-FRA-015_somar_subtrair_decimais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-015_somar_subtrair_decimais.mp4` · 4:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Se 2,35 + 1,4 deu 2,49, a vírgula te enganou. Nesta aula, você arma a conta co
 ✅ O atalho do troco
 
 ⏱️ Capítulos
-[TEMPO] A vírgula te enganou?
-[TEMPO] O que você precisa saber
-[TEMPO] Vírgula embaixo de vírgula
-[TEMPO] Subtrair: o troco de uma nota de dez
-[TEMPO] Decimais com número negativo
-[TEMPO] De onde veio o erro
-[TEMPO] Atalho: o troco do caixa
-[TEMPO] Hora de testar: o saldo
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 A vírgula te enganou?
+0:22 O que você precisa saber
+0:34 Vírgula embaixo de vírgula
+1:03 Subtrair: o troco de uma nota de dez
+1:48 Decimais com número negativo
+2:24 De onde veio o erro
+2:41 Atalho: o troco do caixa
+3:11 Hora de testar: o saldo
+3:24 Resposta
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

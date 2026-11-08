@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-008 · Multiplicar por dois algarismos
 
-**Arquivo:** `final/estudativo_MAT-NUM-008_multiplicar_por_dois_algarismos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-008_multiplicar_por_dois_algarismos.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um auditório tem 34 fileiras com 26 cadeiras cada. Se a sua conta deu 272, sumi
 ✅ O atalho de conferir pelo tamanho do resultado
 
 ⏱️ Capítulos
-[TEMPO] 34 × 26 deu 272?
-[TEMPO] O que você precisa saber
-[TEMPO] Os dois blocos de cadeiras
-[TEMPO] A conta armada: 34 × 26
-[TEMPO] Conferir trocando a ordem
-[TEMPO] O erro de esquecer o zero
-[TEMPO] Atalho: confira pelo tamanho
-[TEMPO] Hora de testar: as latas do mercado
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 34 × 26 deu 272?
+0:18 O que você precisa saber
+0:29 Os dois blocos de cadeiras
+0:51 A conta armada: 34 × 26
+1:45 Conferir trocando a ordem
+2:09 O erro de esquecer o zero
+2:29 Atalho: confira pelo tamanho
+3:03 Hora de testar: as latas do mercado
+3:16 Resposta
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar por 10, por 100 e por um algarismo: [LINK MAT-NUM-007]

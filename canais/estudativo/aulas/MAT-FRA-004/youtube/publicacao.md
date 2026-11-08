@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-004 · Frações maiores que 1 e número misto
 
-**Arquivo:** `final/estudativo_MAT-FRA-004_fracoes_maiores_que_1_numero_misto.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-004_fracoes_maiores_que_1_numero_misto.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Uma barra tem três pedaços. Como alguém pode comer sete terços? Em poucos mi
 ✅ Um problema de pizza resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Como comer 7/3 de uma barra?
-[TEMPO] O que você precisa saber
-[TEMPO] Três barras, sete pedaços
-[TEMPO] Fração própria, imprópria e número misto
-[TEMPO] Da fração ao número misto
-[TEMPO] Do número misto à fração
-[TEMPO] O erro de somar o inteiro com o de cima
-[TEMPO] O atalho: a tabuada do de baixo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Como comer 7/3 de uma barra?
+0:19 O que você precisa saber
+0:32 Três barras, sete pedaços
+0:57 Fração própria, imprópria e número misto
+1:21 Da fração ao número misto
+1:57 Do número misto à fração
+2:30 O erro de somar o inteiro com o de cima
+2:48 O atalho: a tabuada do de baixo
+3:18 Hora de testar
+3:32 Resolvendo o problema
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

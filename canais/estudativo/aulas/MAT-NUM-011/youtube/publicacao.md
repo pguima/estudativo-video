@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-011 · Qual conta o problema pede
 
-**Arquivo:** `final/estudativo_MAT-NUM-011_qual_conta_o_problema_pede.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-011_qual_conta_o_problema_pede.mp4` · 4:44 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,16 @@ Ana tem 30 reais. Isso é 5 reais a mais do que Bia tem. Quanto Bia tem? Viu a p
 ✅ O atalho de trocar por números pequenos
 
 ⏱️ Capítulos
-[TEMPO] Viu "mais" e somou?
-[TEMPO] O que você precisa saber
-[TEMPO] A pergunta que escolhe a conta
-[TEMPO] As quatro contas e suas pistas
-[TEMPO] Pista não é regra: cada e sobrou
-[TEMPO] O erro de obedecer à palavra
-[TEMPO] Problemas com mais de uma conta
-[TEMPO] Atalho: troque por números pequenos
-[TEMPO] Hora de testar: a idade da filha
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Viu "mais" e somou?
+0:27 A pergunta que escolhe a conta
+0:39 As quatro contas e suas pistas
+1:38 Pista não é regra: cada e sobrou
+2:13 O erro de obedecer à palavra
+2:55 Problemas com mais de uma conta
+3:13 Atalho: troque por números pequenos
+3:41 Hora de testar: a idade da filha
+3:54 Resposta
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

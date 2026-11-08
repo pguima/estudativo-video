@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-012 · Expressões com frações, inclusive negativas
 
-**Arquivo:** `final/estudativo_MAT-FRA-012_expressoes_com_fracoes_negativas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-012_expressoes_com_fracoes_negativas.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Quanto dá 1/2 + 2/3 × 3/4? Se você fez na ordem em que leu, deu 7/8, e a resp
 ✅ Uma expressão completa resolvida passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Por que não dá 7/8
-[TEMPO] Os quatro lembretes
-[TEMPO] A ordem das operações
-[TEMPO] Frações negativas
-[TEMPO] Número misto na conta
-[TEMPO] O erro do misto com sinal
-[TEMPO] O atalho: separe em blocos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a expressão
-[TEMPO] Resumo e próxima aula
+0:00 Por que não dá 7/8
+0:18 Os quatro lembretes
+0:51 A ordem das operações
+1:20 Frações negativas
+2:04 Número misto na conta
+2:25 O erro do misto com sinal
+2:57 O atalho: separe em blocos
+3:51 Hora de testar
+4:01 Resolvendo a expressão
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações maiores que 1 e número misto: [LINK MAT-FRA-004]

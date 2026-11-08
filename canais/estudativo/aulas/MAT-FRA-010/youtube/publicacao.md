@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-010 · Fração do restante
 
-**Arquivo:** `final/estudativo_MAT-FRA-010_fracao_do_restante.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-010_fracao_do_restante.mp4` · 4:28 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Salário de R$ 1.200. A pessoa gasta 1/3 e depois 1/4 do que sobrou. Quanto rest
 ✅ Um problema de vendas resolvido e conferido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] A armadilha do salário
-[TEMPO] O que você precisa saber
-[TEMPO] A barra de doze quadradinhos
-[TEMPO] Só com frações
-[TEMPO] De onde vêm os R$ 500
-[TEMPO] O atalho: multiplique só as sobras
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 A armadilha do salário
+0:25 O que você precisa saber
+0:42 A barra de doze quadradinhos
+1:29 Só com frações
+2:06 De onde vêm os R$ 500
+2:36 O atalho: multiplique só as sobras
+3:27 Hora de testar
+3:42 Resolvendo o problema
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Somar e subtrair com denominadores iguais: [LINK MAT-FRA-007]
