@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-003 · Números primos e fatoração
 
-**Arquivo:** `final/estudativo_MAT-DIV-003_primos_fatoracao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-003_primos_fatoracao.mp4` · 4:36 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,14 @@ Use "Testar e comparar" no Studio com as três.
 ✅ Uma questão resolvida: a fatoração de 126
 
 ⏱️ Capítulos
-[TEMPO] 91 é primo?
-[TEMPO] O que você precisa lembrar
-[TEMPO] O que é número primo
-[TEMPO] Testando o 91
-[TEMPO] Fatorar: desmontar em primos
-[TEMPO] O erro de parar antes dos primos
-[TEMPO] O atalho para testar um primo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 91 é primo?
+0:24 O que é número primo
+1:15 Testando o 91
+1:40 Fatorar: desmontar em primos
+2:36 O erro de parar antes dos primos
+2:52 O atalho para testar um primo
+3:44 Hora de testar
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Regras de divisibilidade: [LINK MAT-DIV-002]

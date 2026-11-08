@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-015 · Números negativos e reta numérica
 
-**Arquivo:** `final/estudativo_MAT-NUM-015_numeros_negativos_reta_numerica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-015_numeros_negativos_reta_numerica.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Sete é maior que dois, mas −7 é menor que −2. Nesta aula, você entende os
 ✅ O atalho para comparar negativos
 
 ⏱️ Capítulos
-[TEMPO] −7 ou −2?
-[TEMPO] O que você precisa saber
-[TEMPO] O que existe abaixo do zero
-[TEMPO] A reta numérica
-[TEMPO] Comparar na reta
-[TEMPO] Módulo e oposto
-[TEMPO] O erro: módulo não troca o sinal
-[TEMPO] Atalho: vira ao contrário
-[TEMPO] Hora de testar: as câmaras frias
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 −7 ou −2?
+0:18 O que você precisa saber
+0:29 O que existe abaixo do zero
+0:45 A reta numérica
+1:28 Comparar na reta
+2:02 Módulo e oposto
+2:38 O erro: módulo não troca o sinal
+2:55 Atalho: vira ao contrário
+3:22 Hora de testar: as câmaras frias
+3:42 Resposta
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler e comparar números grandes: [LINK MAT-NUM-002]

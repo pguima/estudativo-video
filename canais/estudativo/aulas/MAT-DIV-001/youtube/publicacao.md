@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-001 · Múltiplos e divisores
 
-**Arquivo:** `final/estudativo_MAT-DIV-001_multiplos_divisores.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-001_multiplos_divisores.mp4` · 4:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,15 @@ Quantos divisores tem o 36? Se você contou de cabeça, é bem provável que ten
 ✅ Uma questão resolvida: os divisores de 28
 
 ⏱️ Capítulos
-[TEMPO] Quantos divisores tem o 36?
-[TEMPO] O que você precisa lembrar
-[TEMPO] O que é múltiplo
-[TEMPO] O que é divisor
-[TEMPO] Os divisores em pares
-[TEMPO] O erro de trocar as palavras
-[TEMPO] O atalho: pare quando os pares se encontrarem
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Quantos divisores tem o 36?
+0:13 O que você precisa lembrar
+0:25 O que é múltiplo
+1:10 O que é divisor
+1:29 Os divisores em pares
+2:17 O erro de trocar as palavras
+2:38 O atalho: pare quando os pares se encontrarem
+3:09 Hora de testar
+3:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

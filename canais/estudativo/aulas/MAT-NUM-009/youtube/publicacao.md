@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-009 · Dividir por um algarismo, com e sem resto
 
-**Arquivo:** `final/estudativo_MAT-NUM-009_dividir_por_um_algarismo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-009_dividir_por_um_algarismo.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho do vezes 5
 
 ⏱️ Capítulos
-[TEMPO] 612 ÷ 3 deu 24?
-[TEMPO] O que você precisa saber
-[TEMPO] Os nomes da divisão e o resto
-[TEMPO] A prova real
-[TEMPO] A conta na chave: 78 ÷ 3
-[TEMPO] O zero no meio: 612 ÷ 3
-[TEMPO] O erro de pular o zero
-[TEMPO] Atalho: vezes 5
-[TEMPO] Hora de testar: os pães da padaria
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 612 ÷ 3 deu 24?
+0:28 Os nomes da divisão e o resto
+1:08 A prova real
+1:25 A conta na chave: 78 ÷ 3
+2:23 O zero no meio: 612 ÷ 3
+2:51 O erro de pular o zero
+3:08 Atalho: vezes 5
+3:34 Hora de testar: os pães da padaria
+3:49 Resposta
+4:18 Resumo e próxima aula
 
 📚 Antes desta aula
 Subtrair de cabeça e com a conta armada: [LINK MAT-NUM-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-005 · Comparar frações e marcar na reta
 
-**Arquivo:** `final/estudativo_MAT-FRA-005_comparar_fracoes_marcar_na_reta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-005_comparar_fracoes_marcar_na_reta.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Dois terços ou três quintos: qual é maior? Em fração, o tamanho dos número
 ✅ Um problema de garrafas de suco resolvido pelos dois caminhos
 
 ⏱️ Capítulos
-[TEMPO] 2/3 ou 3/5: qual é maior?
-[TEMPO] O que você precisa saber
-[TEMPO] Pedaços do mesmo tamanho
-[TEMPO] Comparar pelo MMC
-[TEMPO] O erro de achar que número maior é fração maior
-[TEMPO] O atalho: o teste da cruz
-[TEMPO] Marcando frações na reta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 2/3 ou 3/5: qual é maior?
+0:20 O que você precisa saber
+0:31 Pedaços do mesmo tamanho
+0:54 Comparar pelo MMC
+1:34 O erro de achar que número maior é fração maior
+1:52 O atalho: o teste da cruz
+2:34 Marcando frações na reta
+3:20 Hora de testar
+3:32 Resolvendo o problema
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular o MMC: [LINK MAT-DIV-005]

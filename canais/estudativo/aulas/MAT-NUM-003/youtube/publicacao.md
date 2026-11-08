@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-003 · Somar de cabeça e com a conta armada
 
-**Arquivo:** `final/estudativo_MAT-NUM-003_somar_cabeca_conta_armada.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-003_somar_cabeca_conta_armada.mp4` · 4:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Oito mais sete: dá para fazer sem os dedos, e esse caminho serve para a vida to
 ✅ O atalho de completar o número redondo
 
 ⏱️ Capítulos
-[TEMPO] 8 + 7 e os R$ 110 que somem
-[TEMPO] O que você precisa saber
-[TEMPO] Completar o dez
-[TEMPO] A conta armada e o vai um
-[TEMPO] O erro: esquecer o vai um
-[TEMPO] O atalho: complete o redondo
-[TEMPO] Questão: mercado e farmácia
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 8 + 7 e os R$ 110 que somem
+0:23 O que você precisa saber
+0:35 Completar o dez
+1:19 A conta armada e o vai um
+2:31 O erro: esquecer o vai um
+2:56 O atalho: complete o redondo
+3:29 Questão: mercado e farmácia
+3:42 Resposta
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Algarismos e valor posicional: [LINK MAT-NUM-001]

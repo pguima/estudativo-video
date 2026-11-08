@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-005 · Tabuada com macetes: 2, 5, 9 e 10
 
-**Arquivo:** `final/estudativo_MAT-NUM-005_tabuada_macetes_2_5_9_10.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-005_tabuada_macetes_2_5_9_10.mp4` · 4:43 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,18 @@ Se 9 × 7 trava, não é falta de capacidade: mandaram decorar, e ninguém mostr
 ✅ O atalho do 9
 
 ⏱️ Capítulos
-[TEMPO] 9 × 7 travou?
-[TEMPO] O que você precisa saber
-[TEMPO] O que quer dizer vezes
-[TEMPO] A tabuada do 10
-[TEMPO] A tabuada do 2
-[TEMPO] A tabuada do 5
-[TEMPO] A tabuada do 9
-[TEMPO] O que já está resolvido
-[TEMPO] O erro: somar no lugar de multiplicar
-[TEMPO] O atalho do 9
-[TEMPO] Questão: as garrafas
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 9 × 7 travou?
+0:29 O que quer dizer vezes
+1:09 A tabuada do 10
+1:28 A tabuada do 2
+1:42 A tabuada do 5
+2:15 A tabuada do 9
+2:43 O que já está resolvido
+2:58 O erro: somar no lugar de multiplicar
+3:12 O atalho do 9
+3:51 Questão: as garrafas
+4:05 Resposta
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Subtrair de cabeça e com a conta armada: [LINK MAT-NUM-004]

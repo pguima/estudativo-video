@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-007 · Multiplicar por 10, por 100 e por um algarismo
 
-**Arquivo:** `final/estudativo_MAT-NUM-007_multiplicar_por_10_100_e_um_algarismo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-007_multiplicar_por_10_100_e_um_algarismo.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Seis parcelas de 47 reais. Se a sua conta deu 242, faltaram 40 reais, e eles sum
 ✅ O atalho do vezes 99
 
 ⏱️ Capítulos
-[TEMPO] 47 × 6 deu 242?
-[TEMPO] O que você precisa saber
-[TEMPO] Vezes 10 e vezes 100: de onde vêm os zeros
-[TEMPO] Quebrar o número: 6 × 23
-[TEMPO] A conta armada: 47 × 6
-[TEMPO] O erro de esquecer o que subiu
-[TEMPO] Atalho: vezes 99
-[TEMPO] Hora de testar: as parcelas da compra
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 47 × 6 deu 242?
+0:20 O que você precisa saber
+0:30 Vezes 10 e vezes 100: de onde vêm os zeros
+1:19 Quebrar o número: 6 × 23
+1:55 A conta armada: 47 × 6
+2:49 O erro de esquecer o que subiu
+3:14 Atalho: vezes 99
+3:41 Hora de testar: as parcelas da compra
+3:52 Resposta
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Algarismos e valor posicional: [LINK MAT-NUM-001]

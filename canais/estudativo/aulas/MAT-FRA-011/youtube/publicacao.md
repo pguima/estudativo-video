@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-011 · Dividir frações
 
-**Arquivo:** `final/estudativo_MAT-FRA-011_dividir_fracoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-011_dividir_fracoes.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Três litros de suco, copos de 1/4 de litro: quantos copos você enche? A conta 
 ✅ Um problema de fita e laços resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Dividiu e o número cresceu
-[TEMPO] O que você precisa saber
-[TEMPO] Quantas vezes cabe?
-[TEMPO] Garrafas de 2/3 de litro
-[TEMPO] A regra: conserva, vira, multiplica
-[TEMPO] O erro de virar a fração errada
-[TEMPO] O atalho: fração com 1 em cima
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Dividiu e o número cresceu
+0:21 O que você precisa saber
+0:37 Quantas vezes cabe?
+1:11 Garrafas de 2/3 de litro
+1:46 A regra: conserva, vira, multiplica
+2:47 O erro de virar a fração errada
+3:06 O atalho: fração com 1 em cima
+3:42 Hora de testar
+3:55 Resolvendo o problema
+4:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar frações: [LINK MAT-FRA-009]

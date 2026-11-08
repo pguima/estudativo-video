@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-016 · Somar e subtrair inteiros
 
-**Arquivo:** `final/estudativo_MAT-NUM-016_somar_subtrair_inteiros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-016_somar_subtrair_inteiros.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Se 3 − (−5) deu −2, você caiu na armadilha: a resposta é 8. Nesta aula, 
 ✅ O atalho das entradas e saídas
 
 ⏱️ Capítulos
-[TEMPO] 3 − (−5) não é −2
-[TEMPO] O que você precisa saber
-[TEMPO] Dívida e pagamento
-[TEMPO] Tirar uma dívida é como ganhar
-[TEMPO] Várias contas em fila
-[TEMPO] O erro: somar tudo
-[TEMPO] Atalho: entradas e saídas
-[TEMPO] Hora de testar: o saldo
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 3 − (−5) não é −2
+0:15 O que você precisa saber
+0:27 Dívida e pagamento
+1:25 Tirar uma dívida é como ganhar
+2:17 Várias contas em fila
+2:39 O erro: somar tudo
+2:55 Atalho: entradas e saídas
+3:25 Hora de testar: o saldo
+3:43 Resposta
+4:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Números negativos e reta numérica: [LINK MAT-NUM-015]

@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-014 · Montar a expressão de um problema
 
-**Arquivo:** `final/estudativo_MAT-NUM-014_montar_expressao_problema.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-014_montar_expressao_problema.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Troco maior que o dinheiro entregue? Faltou um par de parênteses. Nesta aula, v
 ✅ O atalho da frase primeiro
 
 ⏱️ Capítulos
-[TEMPO] Troco maior que o dinheiro?
-[TEMPO] O que você precisa saber
-[TEMPO] Montando a expressão do troco
-[TEMPO] Juntar antes de dividir
-[TEMPO] O erro: esquecer os parênteses
-[TEMPO] Atalho: a frase primeiro
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Troco maior que o dinheiro?
+0:15 O que você precisa saber
+0:29 Montando a expressão do troco
+1:56 Juntar antes de dividir
+2:17 O erro: esquecer os parênteses
+2:45 Atalho: a frase primeiro
+3:12 Hora de testar
+3:28 Resposta
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Qual conta o problema pede: [LINK MAT-NUM-011]

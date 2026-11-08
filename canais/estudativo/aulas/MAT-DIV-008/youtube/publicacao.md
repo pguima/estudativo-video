@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-008 · Praticando: múltiplos, primos, MMC e MDC
 
-**Arquivo:** `final/estudativo_MAT-DIV-008_praticando_mmc_mdc.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-008_praticando_mmc_mdc.mp4` · 5:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,18 @@ Em problema de MMC e MDC, muita gente acerta a conta e erra a escolha. Nesta aul
 ✅ A régua: o MDC nunca passa do menor, o MMC nunca fica abaixo do maior
 
 ⏱️ Capítulos
-[TEMPO] Acertar a conta e errar a escolha
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: as balas
-[TEMPO] Resposta da questão 1
-[TEMPO] Questão 2: 266 em primos
-[TEMPO] Resposta da questão 2
-[TEMPO] Questão 3: as tábuas
-[TEMPO] Resposta da questão 3
-[TEMPO] Questão 4: os remédios
-[TEMPO] Resposta da questão 4
-[TEMPO] Questão 5: MMC ou MDC?
-[TEMPO] Resposta da questão 5
-[TEMPO] O atalho: a régua
-[TEMPO] Resumo e próximo passo
+0:00 Acertar a conta e errar a escolha
+0:26 Questão 1: as balas
+0:39 Resposta da questão 1
+1:03 Questão 2: 266 em primos
+1:39 Questão 3: as tábuas
+1:55 Resposta da questão 3
+2:30 Questão 4: os remédios
+2:44 Resposta da questão 4
+3:04 Questão 5: MMC ou MDC?
+3:38 Resposta da questão 5
+4:03 O atalho: a régua
+4:46 Resumo e próximo passo
 
 📚 Antes desta aula
 Múltiplos e divisores: [LINK MAT-DIV-001]

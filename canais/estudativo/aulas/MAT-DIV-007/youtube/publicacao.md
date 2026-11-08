@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-007 · Problemas de MMC: encontros que se repetem
 
-**Arquivo:** `final/estudativo_MAT-DIV-007_problemas_de_mmc.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-007_problemas_de_mmc.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,16 @@ Dois ônibus saem juntos do terminal, um a cada 12 minutos, o outro a cada 18. Q
 ✅ Uma questão resolvida: duas máquinas em manutenção
 
 ⏱️ Capítulos
-[TEMPO] Dois ônibus: quando saem juntos de novo?
-[TEMPO] O que você precisa lembrar
-[TEMPO] A linha do tempo
-[TEMPO] A conta: 36 minutos
-[TEMPO] Os mesmos números, outra história
-[TEMPO] Treine o olho: MMC ou MDC?
-[TEMPO] O erro de usar o MDC
-[TEMPO] O atalho: a pista no texto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Dois ônibus: quando saem juntos de novo?
+0:26 A linha do tempo
+1:08 A conta: 36 minutos
+1:37 Os mesmos números, outra história
+2:14 Treine o olho: MMC ou MDC?
+2:35 O erro de usar o MDC
+2:47 O atalho: a pista no texto
+3:25 Hora de testar
+3:41 Resolvendo a questão
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular o MMC: [LINK MAT-DIV-005]

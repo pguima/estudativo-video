@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-013 · Praticando: operações com frações
 
-**Arquivo:** `final/estudativo_MAT-FRA-013_praticando_operacoes_com_fracoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-013_praticando_operacoes_com_fracoes.mp4` · 4:55 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações criadas para esta aula, com as quatro operações entre fraç�
 ✅ Resolver −5/6 + 1/2 ÷ 3/4 em blocos
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações com as quatro operações
-[TEMPO] Que operação é essa?
-[TEMPO] Situação 1: a parede
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: os funcionários promovidos
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: as caixas do caminhão
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: multiplique só as sobras
-[TEMPO] Situação 4: os aventais
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: conta com fração negativa
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações com as quatro operações
+0:14 Que operação é essa?
+0:30 Situação 1: a parede
+0:44 Resposta da situação 1
+1:20 Situação 2: os funcionários promovidos
+1:35 Resposta da situação 2
+2:01 Situação 3: as caixas do caminhão
+2:17 Resposta da situação 3
+2:39 O atalho: multiplique só as sobras
+3:05 Situação 4: os aventais
+3:18 Resposta da situação 4
+3:50 Situação 5: conta com fração negativa
+4:02 Resposta da situação 5
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Somar e subtrair com denominadores iguais: [LINK MAT-FRA-007]

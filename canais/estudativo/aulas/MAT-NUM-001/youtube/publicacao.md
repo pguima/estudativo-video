@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-001 · Algarismos e valor posicional
 
-**Arquivo:** `final/estudativo_MAT-NUM-001_algarismos_valor_posicional.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-001_algarismos_valor_posicional.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,17 @@ O mesmo 3 pode valer três reais, trinta ou trezentos. O que muda é o lugar. Es
 ✅ O atalho de contar as casas à direita
 
 ⏱️ Capítulos
-[TEMPO] O que muda é o lugar
-[TEMPO] Você já usa isso
-[TEMPO] Dez símbolos: os algarismos
-[TEMPO] Unidade, dezena e centena
-[TEMPO] Por que as casas são assim
-[TEMPO] Mesmo algarismo, valor diferente
-[TEMPO] Abrir o número em partes
-[TEMPO] O erro: escrever como se fala
-[TEMPO] O atalho: conte as casas à direita
-[TEMPO] Questão: o boleto
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 O que muda é o lugar
+0:29 Dez símbolos: os algarismos
+0:54 Unidade, dezena e centena
+1:40 Por que as casas são assim
+1:59 Mesmo algarismo, valor diferente
+2:23 Abrir o número em partes
+2:42 O erro: escrever como se fala
+3:10 O atalho: conte as casas à direita
+3:41 Questão: o boleto
+3:56 Resposta
+4:09 Resumo e próxima aula
 
 ▶️ Próxima aula: Ler e comparar números grandes [LINK MAT-NUM-002]
 

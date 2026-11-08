@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-010 · Dividir por dois algarismos
 
-**Arquivo:** `final/estudativo_MAT-NUM-010_dividir_por_dois_algarismos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-010_dividir_por_dois_algarismos.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Mil e trinta e cinco reais para 23 pessoas. Ninguém decorou a tabuada do 23, e 
 ✅ O atalho de saber o tamanho do resultado antes de dividir
 
 ⏱️ Capítulos
-[TEMPO] 1.035 ÷ 23 sem tabuada
-[TEMPO] O que você precisa saber
-[TEMPO] O segredo é estimar
-[TEMPO] Palpite alto: 1.035 ÷ 23
-[TEMPO] O erro do palpite baixo: 756 ÷ 28
-[TEMPO] Atalho: o tamanho do resultado
-[TEMPO] Hora de testar: as laranjas do sítio
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 1.035 ÷ 23 sem tabuada
+0:19 O que você precisa saber
+0:30 O segredo é estimar
+0:45 Palpite alto: 1.035 ÷ 23
+1:54 O erro do palpite baixo: 756 ÷ 28
+3:00 Atalho: o tamanho do resultado
+3:33 Hora de testar: as laranjas do sítio
+3:47 Resposta
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar por dois algarismos: [LINK MAT-NUM-008]

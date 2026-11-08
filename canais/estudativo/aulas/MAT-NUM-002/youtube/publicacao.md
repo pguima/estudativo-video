@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-002 · Ler e comparar números grandes
 
-**Arquivo:** `final/estudativo_MAT-NUM-002_ler_comparar_numeros_grandes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-002_ler_comparar_numeros_grandes.mp4` · 4:44 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Você lê 2.048.500 de primeira, em voz alta? Sabe qual é maior entre 1.099 e 1
 ✅ O atalho de contar os pontos
 
 ⏱️ Capítulos
-[TEMPO] Você lê este prêmio de primeira?
-[TEMPO] O que você precisa saber
-[TEMPO] Grupos de três e os pontos
-[TEMPO] Lendo 2.048.500
-[TEMPO] Comparar casa por casa
-[TEMPO] Os sinais de maior e menor
-[TEMPO] O erro: olhar o fim do número
-[TEMPO] O atalho: conte os pontos
-[TEMPO] Questão: os dois apartamentos
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Você lê este prêmio de primeira?
+0:21 O que você precisa saber
+0:32 Grupos de três e os pontos
+1:12 Lendo 2.048.500
+1:41 Comparar casa por casa
+2:36 Os sinais de maior e menor
+3:00 O erro: olhar o fim do número
+3:16 O atalho: conte os pontos
+3:41 Questão: os dois apartamentos
+3:58 Resposta
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Algarismos e valor posicional: [LINK MAT-NUM-001]

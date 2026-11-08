@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-004 · Subtrair de cabeça e com a conta armada
 
-**Arquivo:** `final/estudativo_MAT-NUM-004_subtrair_cabeca_conta_armada.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-004_subtrair_cabeca_conta_armada.mp4` · 4:12 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Se 503 − 178 deu 475, você caiu no erro mais comum da subtração. Nesta aula
 ✅ O atalho de deixar redondo o número de baixo
 
 ⏱️ Capítulos
-[TEMPO] 503 − 178 deu 475?
-[TEMPO] O que você precisa saber
-[TEMPO] Subtrair de cabeça e conferir
-[TEMPO] Pedir emprestado
-[TEMPO] Por cima do zero
-[TEMPO] O erro: inverter a conta
-[TEMPO] O atalho: deixe redondo
-[TEMPO] Questão: a conta no banco
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 503 − 178 deu 475?
+0:15 O que você precisa saber
+0:26 Subtrair de cabeça e conferir
+0:51 Pedir emprestado
+1:27 Por cima do zero
+2:16 O erro: inverter a conta
+2:38 O atalho: deixe redondo
+3:09 Questão: a conta no banco
+3:23 Resposta
+3:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Somar de cabeça e com a conta armada: [LINK MAT-NUM-003]

@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-006 · Tabuada com macetes: 3, 4, 6, 7 e 8
 
-**Arquivo:** `final/estudativo_MAT-NUM-006_tabuada_macetes_3_4_6_7_8.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-006_tabuada_macetes_3_4_6_7_8.mp4` · 4:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,20 +32,19 @@ Na hora do aperto, muita gente chuta 7 × 8. Tirando as tabuadas do 1, do 2, do 
 ✅ O atalho do 6
 
 ⏱️ Capítulos
-[TEMPO] 7 × 8 e as 15 contas que faltam
-[TEMPO] O que você precisa saber
-[TEMPO] Por que dobrar funciona
-[TEMPO] Vezes 4
-[TEMPO] Vezes 8
-[TEMPO] Vezes 3
-[TEMPO] Vezes 6
-[TEMPO] A tabuada do 7
-[TEMPO] As quinze contas juntas
-[TEMPO] O erro: dobrar uma vez a menos
-[TEMPO] O atalho do 6
-[TEMPO] Questão: o auditório
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 7 × 8 e as 15 contas que faltam
+0:23 O que você precisa saber
+0:34 Por que dobrar funciona
+0:47 Vezes 4 e vezes 8
+1:17 Vezes 3
+1:36 Vezes 6
+1:53 A tabuada do 7
+2:39 As quinze contas juntas
+2:55 O erro: dobrar uma vez a menos
+3:11 O atalho do 6
+3:51 Questão: o auditório
+4:05 Resposta
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Tabuada com macetes: 2, 5, 9 e 10: [LINK MAT-NUM-005]
