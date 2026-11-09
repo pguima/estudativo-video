@@ -1,0 +1,35 @@
+Dois chutes saem com a mesma velocidade: um a trinta graus, outro a sessenta. Qual vai mais longe? Nenhum: sem o ar atrapalhar, os dois caem no mesmo ponto. E o mais longe de todos sai a quarenta e cinco graus.
+
+Até o fim desta aula, você vai calcular a altura máxima e o alcance de um lançamento inclinado, e entender esses ângulos.
+
+Para acompanhar, você precisa de três coisas: decompor um vetor com seno e cosseno; o lançamento para cima, com tempo de subida vê zero dividido por gê; e o lançamento horizontal, com os dois movimentos separados. Se faltar alguma, procure no canal.
+
+No lançamento oblíquo, o objeto sai inclinado, fazendo um ângulo com o chão. O primeiro passo é decompor a velocidade de saída. A parte horizontal é vê zero vezes o cosseno do ângulo. A parte vertical é vê zero vezes o seno.
+
+Uma bola sai a cinquenta metros por segundo, num ângulo de cosseno zero vírgula oito e seno zero vírgula seis. Horizontal: cinquenta vezes zero vírgula oito, quarenta metros por segundo. Vertical: cinquenta vezes zero vírgula seis, trinta metros por segundo.
+
+Daqui em diante, cada parte cuida da sua vida, como no lançamento horizontal. Na vertical, é um lançamento para cima a trinta metros por segundo. Tempo de subida: trinta dividido por dez, três segundos. Altura máxima: cinco vezes três ao quadrado, quarenta e cinco metros. Tempo de voo: o dobro, seis segundos.
+
+Na horizontal, nada freia a bola: ela anda quarenta metros por segundo durante os seis segundos. Alcance: quarenta vezes seis, duzentos e quarenta metros.
+
+Cuidado com o erro mais comum: achar que, no ponto mais alto, a velocidade é zero. Só a parte vertical zera. A horizontal continua quarenta metros por segundo, porque a bola continua indo para a frente. Lá em cima, a velocidade é só a horizontal.
+
+Agora, os ângulos. Troque o ângulo pelo complementar, o que soma noventa graus com ele: o seno e o cosseno trocam de lugar. A horizontal vira trinta, e a vertical, quarenta. O voo dura oito segundos, e o alcance é trinta vezes oito, duzentos e quarenta metros. O mesmo! Só que a bola sobe mais e demora mais.
+
+Funciona porque o alcance depende da parte horizontal vezes a vertical. Trocar a ordem não muda o produto. E, com a mesma velocidade de saída, esse produto é o maior possível quando as duas partes são iguais, o que acontece a quarenta e cinco graus. Saindo a vinte metros por segundo, a trinta ou a sessenta graus, a bola vai a uns trinta e cinco metros. A quarenta e cinco graus, vai a quarenta.
+
+Agora, o atalho de prova. Com gê igual a dez, o alcance é a velocidade horizontal vezes a vertical, dividido por cinco. Quarenta vezes trinta, mil e duzentos, dividido por cinco: duzentos e quarenta. Funciona porque o tempo de voo é duas vezes a vertical dividida por dez, ou seja, a vertical dividida por cinco.
+
+Não compensa quando a bola cai numa altura diferente da saída, como num chute do alto de um morro. Aí, nem o atalho, nem os quarenta e cinco graus valem: calcule o tempo pela altura da descida, até o ponto onde a bola cai.
+
+Hora de testar. Uma bola é chutada do chão a vinte e cinco metros por segundo, num ângulo de cosseno zero vírgula seis e seno zero vírgula oito. Qual é a altura máxima e qual é o alcance? E que outro ângulo daria o mesmo alcance?
+
+Pause o vídeo e tente.
+
+Vamos lá. Horizontal: vinte e cinco vezes zero vírgula seis, quinze. Vertical: vinte e cinco vezes zero vírgula oito, vinte. Subida: vinte dividido por dez, dois segundos. Altura máxima: cinco vezes dois ao quadrado, vinte metros.
+
+Voo: quatro segundos. Alcance: quinze vezes quatro, sessenta metros. Pelo atalho, quinze vezes vinte, dividido por cinco: sessenta. E o mesmo alcance sai do ângulo complementar, o de seno zero vírgula seis e cosseno zero vírgula oito.
+
+Resumindo: decomponha a velocidade, use a vertical para o tempo e a altura, e a horizontal para o alcance. Saindo e chegando na mesma altura, quarenta e cinco graus vai mais longe.
+
+Na próxima aula, você vai praticar tudo isso: gráficos, queda e lançamentos, em questões novas. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,43 @@
+Dois geradores, três ramos, três correntes desconhecidas. Parece muito, mas a lei dos nós e a das malhas viram um sistema de equações que você já sabe resolver.
+
+Até o fim desta aula, você vai montar e resolver esse sistema, e conhecer um atalho que resolve tudo com uma equação só.
+
+Para acompanhar, você precisa de duas coisas: as leis de Kirchhoff, com a regra de sinais; e resolver um sistema por substituição: isolar uma letra numa equação e levar para a outra. Se faltar alguma, procure no canal.
+
+Veja o circuito. No ramo da esquerda, um gerador de dez volts e um resistor de dois ohms. No da direita, um gerador de seis volts e outro resistor de dois ohms. No meio, um resistor de um ohm. Os três ramos ligam os mesmos dois nós: A em cima e B embaixo.
+
+Passo um: dê nome e sentido à corrente de cada ramo. i um sobe pela esquerda, i dois sobe pela direita, e i três desce pelo meio. Se algum chute estiver errado, a conta avisa com um sinal de menos.
+
+Passo dois: a lei dos nós em A. Chegam i um e i dois, e sai i três: i três é igual a i um mais i dois.
+
+Passo três: uma malha de cada lado. Na esquerda, subindo pelo gerador: mais dez, menos dois i um, menos um vezes i três, igual a zero. Na direita, do mesmo jeito: seis, menos dois i dois, menos i três, igual a zero.
+
+Passo quatro: troque i três por i um mais i dois. Na esquerda: dez igual a três vezes i um, mais i dois. Na direita: seis igual a i um, mais três vezes i dois. Duas equações, duas letras: um sistema.
+
+Isole i dois na primeira: i dois igual a dez menos três i um. Leve para a segunda: seis igual a i um, mais três vezes, abre parênteses, dez menos três i um, fecha parênteses. Seis igual a trinta menos oito i um: i um vale três ampères.
+
+Volte: i dois é dez menos nove, um ampère. E i três é três mais um, quatro ampères. Todos positivos: os chutes estavam certos.
+
+Confira na malha de fora, que você não usou. Mais dez, menos dois vezes três. Descendo pela direita, você anda contra i dois: mais dois vezes um. E entra pelo positivo do gerador de seis: menos seis. Dez, menos seis do resistor, mais dois, menos os seis volts do gerador: zero.
+
+Cuidado com o erro mais comum: escrever a lei dos nós em A e em B e achar que tem duas equações. Em B, chega i três e saem i um e i dois: é a mesma equação, virada. A segunda equação tem que vir de uma malha.
+
+Agora, o atalho: chame de u a tensão entre A e B. No meio, a corrente é u dividido por um. Na esquerda, o gerador perde no resistor: i um é dez menos u, dividido por dois. Na direita, seis menos u, dividido por dois.
+
+Lei dos nós: dez menos u, sobre dois, mais seis menos u, sobre dois, igual a u. Multiplique tudo por dois: dezesseis menos dois u, igual a dois u. u vale quatro volts. Daí, cada corrente sai direto: três, um e quatro ampères.
+
+Funciona porque os três ramos ligam os mesmos dois nós: a tensão entre eles é a mesma para todos. Não compensa quando o circuito tem mais de dois nós: aí, volte às malhas.
+
+Hora de testar. Esquerda: gerador de dez volts e resistor de três ohms. Direita: gerador de oito volts e resistor de dois ohms. Meio: um ohm. Os dois geradores têm o positivo para o nó de cima. Monte o sistema e ache as três correntes.
+
+Pause o vídeo e tente.
+
+Vamos lá. Nó em A: i três igual a i um mais i dois. Malha da esquerda: dez igual a três vezes i um, mais i três. Da direita: oito igual a dois vezes i dois, mais i três. Trocando i três: dez igual a quatro vezes i um, mais i dois, e oito igual a i um, mais três vezes i dois.
+
+Da primeira: i dois igual a dez menos quatro i um. Na segunda: oito igual a i um, mais trinta, menos doze i um. Onze i um igual a vinte e dois: i um vale dois ampères. i dois é dez menos oito, dois ampères, e i três, quatro.
+
+Confira pelo atalho: dez menos u, sobre três, mais oito menos u, sobre dois, igual a u. Multiplique tudo por seis: quarenta e quatro igual a onze u, e u vale quatro volts. No meio, quatro dividido por um: quatro ampères. Confere.
+
+Resumindo: corrente com nome e sentido em cada ramo, um nó, duas malhas e o sistema por substituição. Com só dois nós, a tensão entre eles resolve tudo numa equação.
+
+Na próxima aula, você vai praticar com circuitos que não se reduzem a um resistor só. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

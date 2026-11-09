@@ -1,0 +1,43 @@
+Uma pilha nova traz escrito: um vírgula cinco volts. Ligue nela um brinquedo que puxa muita corrente, e a tensão nos polos cai. Parte da tensão se perde dentro da própria pilha.
+
+Até o fim desta aula, você vai calcular essa perda, ler o gráfico de um gerador e achar o rendimento de uma bateria.
+
+Para acompanhar, você precisa de três coisas: a tensão é a resistência vezes a corrente; a potência é a tensão vezes a corrente; e o rendimento é a potência útil dividida pela total. Se faltar alguma, procure no canal.
+
+Gerador é o que transforma outra energia em energia elétrica: a pilha usa uma reação química; a usina, o giro de uma turbina. A tensão que ele cria se chama força eletromotriz, a letra grega épsilon, em volt.
+
+Apesar do nome, ela não é uma força: é a energia que o gerador dá a cada coulomb de carga. Uma pilha de um vírgula cinco volts dá um vírgula cinco joule a cada coulomb.
+
+Mas a corrente também atravessa o gerador por dentro, e lá dentro existe uma resistência: a resistência interna, erre pequeno. Nela se perde uma tensão de erre pequeno vezes i, que vira calor. Por isso a pilha esquenta quando trabalha muito.
+
+Sobra para fora u igual a épsilon menos erre pequeno vezes i. A letra u é a tensão útil, nos polos; épsilon, a força eletromotriz; erre pequeno, a resistência interna, em ohm; e i, a corrente, em ampère.
+
+Exemplo: uma bateria de doze volts, com resistência interna de meio ohm, fornece seis ampères. A perda é meio vezes seis: três volts. Nos polos sobram doze menos três, nove volts.
+
+E sem corrente nenhuma? Com i igual a zero, não há perda: u é igual a épsilon. A força eletromotriz é a tensão do gerador sem nada ligado.
+
+Agora, o gráfico da tensão pela corrente. u igual a doze menos meio vezes i é uma função afim: uma reta que desce. Ela começa em doze volts, que é épsilon, e a cada ampère a mais, perde meio volt.
+
+A reta toca o eixo da corrente onde u vale zero. Doze dividido por meio, que é o mesmo que doze vezes dois: vinte e quatro ampères. É a corrente de curto-circuito, com os polos ligados por um fio sem resistência. Toda a tensão se perde dentro, e a bateria esquenta. Os detalhes do curto ficam para outra aula.
+
+E o rendimento? A potência total é épsilon vezes i: doze vezes seis, setenta e dois watts. A útil é u vezes i: nove vezes seis, cinquenta e quatro watts. Os dezoito watts que faltam viram calor dentro da bateria: erre pequeno vezes i ao quadrado, meio vezes trinta e seis.
+
+Rendimento: cinquenta e quatro dividido por setenta e dois, setenta e cinco por cento.
+
+Cuidado com o erro mais comum: usar épsilon como a tensão nos polos. Com seis ampères, a pessoa calcula doze vezes seis, setenta e dois watts, como potência útil. Mas os polos têm só nove volts: a útil é cinquenta e quatro. Épsilon só aparece nos polos quando não há corrente.
+
+Agora, os atalhos. Rendimento é u dividido por épsilon, porque a corrente aparece em cima e embaixo, e corta. Nove dividido por doze: setenta e cinco por cento, sem calcular nenhuma potência.
+
+No gráfico, épsilon é onde a reta corta o eixo da tensão, e erre pequeno é épsilon dividido pela corrente de curto. Doze dividido por vinte e quatro: meio ohm. Não compensa quando a questão pede as potências em watt: aí, multiplique pela corrente.
+
+Hora de testar. O gráfico de um gerador começa em dez volts e toca o eixo da corrente em cinco ampères. Qual é a resistência interna, e qual é o rendimento quando ele fornece um ampère?
+
+Pause o vídeo e tente.
+
+Vamos lá. Épsilon é dez volts. A resistência interna é dez dividido por cinco: dois ohms. Com um ampère, a perda é dois vezes um, dois volts, e nos polos sobram oito volts.
+
+Rendimento: oito dividido por dez, oitenta por cento.
+
+Resumindo: u igual a épsilon menos erre pequeno vezes i; no gráfico, a reta começa em épsilon e termina na corrente de curto; e o rendimento é u dividido por épsilon.
+
+Na próxima aula, você vai ligar o gerador a um resistor e achar a corrente com uma fração só, a lei de Pouillet. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

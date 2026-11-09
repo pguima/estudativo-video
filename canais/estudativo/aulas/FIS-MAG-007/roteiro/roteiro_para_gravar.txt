@@ -1,0 +1,41 @@
+A energia elétrica sai da usina e viaja centenas de quilômetros com centenas de milhares de volts. Na sua tomada, chegam cento e vinte e sete ou duzentos e vinte. Por que subir tanto a tensão, para depois baixar?
+
+Até o fim desta aula, você vai calcular a tensão de um transformador e entender por que a tensão alta quase acaba com a perda nos fios.
+
+Para acompanhar, lembre duas coisas. Fluxo mudando numa bobina cria tensão, pela lei de Faraday. E a potência elétrica é tensão vezes corrente, e a perda num fio é erre vezes i ao quadrado. Se faltar alguma, procure no canal.
+
+O transformador é simples: um anel de ferro com duas bobinas enroladas nele. A primeira, chamada primária, recebe a tensão da rede. A segunda, a secundária, entrega a tensão nova.
+
+A rede é de corrente alternada: ela vai e volta o tempo todo. Então, o campo da primária muda o tempo todo. O ferro leva esse fluxo até a secundária, e o fluxo mudando cria tensão nela, pela lei de Faraday. Nenhum fio liga uma bobina na outra.
+
+Cada espira recebe a mesma mudança de fluxo, e ganha a mesma tensão. Então, mais espiras, mais tensão. U um dividido por U dois é igual a ene um dividido por ene dois. U é a tensão, em volt, e ene é o número de espiras de cada bobina.
+
+Um exemplo. Duzentos e vinte volts na primária, que tem mil e cem espiras. A secundária tem sessenta espiras. Mil e cem dividido por sessenta é o mesmo que duzentos e vinte dividido por U dois. Duzentos e vinte vezes sessenta, dividido por mil e cem: doze volts. É o que fazia o carregador antigo, aquele pesado.
+
+E com uma pilha, ele não funciona. A corrente da pilha é contínua: o fluxo fica parado, e fluxo parado não cria tensão.
+
+Agora, o ponto que a prova mais cobra. O transformador não cria energia. Num transformador ideal, a potência que entra é a potência que sai: U um vezes i um é igual a U dois vezes i dois. Se a tensão sobe, a corrente desce na mesma proporção.
+
+E é aí que entra a transmissão. Uma usina manda cem quilowatts por uma linha com resistência de cinco ohms. Com mil volts, a corrente é cem mil dividido por mil: cem ampères. A perda é cinco vezes cem ao quadrado: cinquenta mil watts. Metade da energia vira calor no caminho.
+
+Agora, com dez mil volts. A corrente cai para dez ampères. A perda é cinco vezes dez ao quadrado: quinhentos watts. A tensão subiu dez vezes, e a perda caiu cem vezes.
+
+Por isso, perto da usina, um transformador sobe a tensão. A energia viaja com corrente pequena. E perto da sua casa, outros transformadores, como o do poste, baixam a tensão de novo.
+
+Cuidado com o erro mais comum: achar que o transformador que sobe a tensão aumenta a potência. A tensão sobe dez vezes, e a corrente cai dez vezes. O produto, que é a potência, fica igual. Na vida real, até perde um pouco no ferro e nos fios.
+
+Agora, o atalho de prova. A tensão segue as espiras: dez vezes mais espiras, dez vezes mais tensão. A corrente vai ao contrário: dez vezes menos corrente.
+
+E a perda vai com o quadrado da corrente. Então, multiplique a tensão por um número, e a perda fica dividida por esse número ao quadrado. Tensão vezes dez, perda dividida por cem. Isso vale para a mesma potência e a mesma linha: se a questão mudar a potência, faça a conta.
+
+Hora de testar. Na saída de uma usina, um transformador tem duzentas espiras na primária e quatro mil na secundária. A primária recebe onze mil volts. Qual é a tensão na linha? E mais: comparando com mandar a energia direto com onze mil volts, quantas vezes a perda cai?
+
+Pause o vídeo e tente.
+
+Vamos lá. Quatro mil dividido por duzentos: a secundária tem vinte vezes mais espiras. Onze mil vezes vinte: duzentos e vinte mil volts.
+
+Tensão vinte vezes maior, corrente vinte vezes menor. A perda cai vinte ao quadrado: quatrocentas vezes.
+
+Resumindo: a tensão segue as espiras, a potência que entra é a que sai, e tensão alta deixa a corrente pequena e a perda menor. Na próxima aula, você pratica tudo do magnetismo e da indução em questões.
+
+Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

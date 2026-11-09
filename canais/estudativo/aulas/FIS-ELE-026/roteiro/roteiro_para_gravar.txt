@@ -1,0 +1,27 @@
+Na prova, Kirchhoff aparece de três jeitos: um nó, uma malha ou duas malhas. Até o fim desta aula, você vai resolver uma questão de cada, mais uma com uma surpresa no sinal.
+
+Antes, o método. Dê nome e sentido a cada corrente. No nó, o que chega é igual ao que sai. Na malha, o gerador soma épsilon se você entra pelo negativo, e o resistor subtrai erre vezes i se você anda a favor da corrente. Com só dois nós, use a tensão entre eles.
+
+Questão um. Num nó chegam três ampères e uma corrente desconhecida. Saem cinco ampères e dois ampères. Quanto vale a corrente desconhecida? Pause e tente.
+
+O que chega é igual ao que sai: três mais i, igual a cinco mais dois. Três mais i, igual a sete: i vale quatro ampères.
+
+Questão dois. Uma malha tem três geradores: doze volts e seis volts empurrando num sentido, e três volts empurrando no outro. As resistências da volta somam cinco ohms. Qual é a corrente? Pause e tente.
+
+Uma malha só: use o atalho. A favor: doze mais seis, dezoito. Contra: três. Dezoito menos três, quinze, dividido por cinco: três ampères, no sentido dos geradores de doze e de seis volts.
+
+Questão três. Esquerda: gerador de oito volts e resistor de dois ohms. Direita: gerador de catorze volts e resistor de quatro ohms. Meio: dois ohms. Os geradores têm o positivo para cima. Monte o sistema e ache as correntes. Pause e tente.
+
+i um sobe pela esquerda, i dois sobe pela direita, i três desce pelo meio: i três igual a i um mais i dois. Malha da esquerda: oito igual a dois i um mais dois i três. Da direita: catorze igual a quatro i dois mais dois i três.
+
+Trocando i três: oito igual a quatro i um mais dois i dois; catorze igual a dois i um mais seis i dois. Da primeira, dividida por dois: i dois igual a quatro menos dois i um. Na segunda: catorze igual a dois i um, mais vinte e quatro, menos doze i um, que é vinte e quatro menos dez i um. Dez i um igual a dez: i um vale um ampère, i dois, dois, e i três, três.
+
+Questão quatro. Esquerda: gerador de doze volts e resistor de um ohm. Direita: uma bateria de seis volts e resistor de um ohm. Meio: quatro ohms. As duas com o positivo para cima. A bateria de seis volts está fornecendo energia ou sendo carregada? Pause e tente.
+
+Dois nós: use a tensão entre eles. Doze menos u, sobre um, mais seis menos u, sobre um, igual a u sobre quatro. Multiplique tudo por quatro: setenta e dois menos oito u, igual a u. u vale oito volts.
+
+Na direita: seis menos oito, dividido por um: menos dois ampères. O sinal de menos diz que a corrente desce pela bateria de seis volts: ela entra pelo positivo. A bateria está sendo carregada. Confira o nó: na esquerda, doze menos oito, quatro ampères. Quatro menos dois, dois, igual a oito sobre quatro.
+
+E quanta potência vira energia química nela? Épsilon vezes i: seis vezes dois, doze watts, ou seja, doze joules a cada segundo. E o resistor de um ohm do mesmo ramo esquenta com um vezes dois ao quadrado: quatro watts.
+
+Resumindo: nó, malha e sistema, sempre com a regra de sinais; e o sinal de menos na resposta não é erro: é o sentido real da corrente. Com esta aula, você fecha a trilha de Eletricidade. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

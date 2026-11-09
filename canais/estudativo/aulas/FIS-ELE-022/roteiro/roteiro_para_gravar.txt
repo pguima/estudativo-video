@@ -1,0 +1,39 @@
+Quando a hélice de um ventilador ligado fica travada, o motor esquenta muito mais, e pode até queimar. Girando, o próprio motor segura a corrente. Parado, não.
+
+Até o fim desta aula, você vai entender o motor e calcular a tensão de várias pilhas juntas, em série e em paralelo.
+
+Para acompanhar, você precisa de duas coisas: no gerador real, u igual a épsilon menos erre pequeno vezes i; e a lei de Pouillet: a corrente é épsilon dividido pela soma das resistências. Se faltar alguma, procure no canal.
+
+O gerador entrega energia elétrica. O receptor recebe energia elétrica e transforma em outra que não é só calor: movimento, no motor; energia química, na bateria do celular carregando.
+
+A parte da tensão que vira trabalho útil se chama força contraeletromotriz, épsilon linha, em volt. E o receptor também tem resistência interna, erre linha, que transforma uma parte da energia em calor.
+
+Por isso, o receptor precisa receber mais do que épsilon linha: u igual a épsilon linha mais erre linha vezes i. No gerador, a perda interna diminui a tensão que sai. No receptor, ela aumenta a tensão que precisa entrar.
+
+Exemplo: um motor de nove volts de força contraeletromotriz, com um vírgula cinco ohm interno, recebendo dois ampères. Um vírgula cinco vezes dois, três volts de perda. Ele precisa de nove mais três, doze volts.
+
+O rendimento do receptor é a parte útil dividida pela que entrou: épsilon linha dividido por u. Nove dividido por doze, setenta e cinco por cento.
+
+E o ventilador travado? Sem girar, o motor não tem força contraeletromotriz: épsilon linha vira zero. Com os mesmos doze volts, a corrente é doze dividido por um vírgula cinco: oito ampères, quatro vezes mais. E o calor, erre linha vezes i ao quadrado, fica dezesseis vezes maior.
+
+Agora, as pilhas. Em série, o polo positivo de uma encosta no negativo da outra. As forças eletromotrizes somam: duas pilhas de um vírgula cinco volts dão três volts. As resistências internas também somam, porque estão em série.
+
+Se uma pilha entrar invertida, ela subtrai. Quatro pilhas, uma invertida: três vezes um vírgula cinco, quatro e meio, menos um e meio: três volts, em vez de seis.
+
+Em paralelo, pilhas iguais ligam positivo com positivo e negativo com negativo. A força eletromotriz não soma: continua um vírgula cinco volts. O que muda é a resistência interna: divida pela quantidade, como em resistores iguais em paralelo. Cada pilha fornece só uma parte da corrente, e o conjunto dura mais.
+
+Cuidado com o erro mais comum: somar as forças eletromotrizes em paralelo. Três pilhas de um vírgula cinco volts em paralelo não dão quatro e meio: dão um vírgula cinco. Só a série soma.
+
+Agora, o atalho para gerador e motor no mesmo circuito: com a bateria mais forte que o motor, a força contraeletromotriz entra subtraindo na lei de Pouillet. A corrente é épsilon menos épsilon linha, dividido pela soma de todas as resistências.
+
+Exemplo: bateria de vinte e quatro volts com um ohm, motor de doze volts com dois ohms. Vinte e quatro menos doze, doze; dividido por um mais dois, três: quatro ampères. Funciona porque o motor empurra contra a bateria. Não compensa com ramos em paralelo: aí, entram as leis de Kirchhoff, assunto de outra aula.
+
+Hora de testar. Quatro pilhas de um vírgula cinco volts, cada uma com zero vírgula um ohm de resistência interna, são ligadas em série a uma lâmpada de dois vírgula seis ohms. Qual é a força eletromotriz do conjunto, qual é a corrente, e qual seria a força eletromotriz se as quatro fossem ligadas em paralelo?
+
+Pause o vídeo e tente.
+
+Vamos lá. Em série, tudo soma: quatro vezes um vírgula cinco, seis volts; quatro vezes zero vírgula um, zero vírgula quatro ohm. Pouillet: seis dividido por dois vírgula seis mais zero vírgula quatro, seis dividido por três, dois ampères. Em paralelo, a força eletromotriz não soma: um vírgula cinco volts.
+
+Resumindo: no receptor, u igual a épsilon linha mais erre linha vezes i; pilhas em série somam tudo; em paralelo, se forem iguais, a força eletromotriz fica a mesma, e a resistência interna se divide.
+
+Na próxima aula, você vai praticar com conta de luz, chuveiro, baterias e motores. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

@@ -1,0 +1,39 @@
+Nos pisca-piscas antigos de Natal, bastava uma lâmpada queimar para a fileira inteira apagar. A culpa era do jeito de ligar: em série.
+
+Até o fim desta aula, você vai calcular a resistência equivalente de resistores em série, a corrente e a tensão em cada um.
+
+Para acompanhar, você precisa de duas coisas: a primeira lei de Ohm, em que a tensão u, em volt, é a resistência erre, em ohm, vezes a corrente i, em ampère; e que a tensão é uma diferença de potencial entre dois pontos. Se faltar alguma, procure no canal.
+
+Resistor é a peça feita para ter resistência. Ligar em série é ligar um atrás do outro, no mesmo fio, de modo que a corrente só tem um caminho.
+
+Daí sai a primeira regra: a corrente é a mesma em todos. Pense numa fila única, sem desvio: quem passa pelo primeiro passa, obrigatoriamente, pelos outros. Nenhuma carga se perde no caminho.
+
+Segunda regra: a tensão da pilha se divide. Cada resistor fica com um pedaço, e os pedaços somam a tensão total.
+
+Com isso, sai a resistência equivalente: o único resistor que, no lugar de todos, deixa passar a mesma corrente com a mesma tensão. A tensão total é erre um vezes i, mais erre dois vezes i. Coloque o i em evidência: erre um mais erre dois, tudo vezes i.
+
+Então, em série, a equivalente é a soma: erre equivalente igual a erre um, mais erre dois, mais erre três, quantos houver. Ela é sempre maior que o maior resistor.
+
+Um exemplo. Uma pilha de doze volts liga dois ohms e quatro ohms em série. A equivalente é seis ohms. A corrente é doze dividido por seis: dois ampères, a mesma nos dois.
+
+Agora, a tensão em cada um, com u igual a erre vezes i. No de dois ohms: dois vezes dois, quatro volts. No de quatro ohms: quatro vezes dois, oito volts. Quatro mais oito, doze: a tensão da pilha. Repare: o resistor maior fica com a maior tensão.
+
+Cuidado com o erro mais comum: achar que a corrente vai se gastando, e que sai do último resistor menos corrente do que entra no primeiro. Não: a corrente é a mesma do começo ao fim. O que cai de um resistor para o outro é o potencial: cada um fica com um pedaço da tensão.
+
+E é por isso que o pisca-pisca apagava: lâmpada queimada é fio cortado. Sem caminho, a corrente para em todas.
+
+Agora, o atalho: em série, a tensão se divide na proporção das resistências. Dois e quatro ohms: são seis partes. O de dois fica com dois sextos, um terço dos doze volts: quatro volts. O de quatro fica com dois terços: oito volts. Sem calcular a corrente.
+
+Funciona porque a corrente é a mesma em todos, então a tensão em cada um é proporcional à resistência dele. Não compensa quando a questão pede a corrente também: aí, faça pela lei de Ohm, que a corrente já sai no caminho.
+
+Hora de testar. Uma fonte de quarenta volts liga em série três ohms, cinco ohms e doze ohms. Qual é a corrente? E qual é a tensão no resistor de doze ohms?
+
+Pause o vídeo e tente.
+
+Vamos lá. A equivalente é três mais cinco mais doze: vinte ohms. A corrente é quarenta dividido por vinte: dois ampères. No de doze ohms: doze vezes dois, vinte e quatro volts.
+
+Pelo atalho: doze de vinte partes, três quintos de quarenta: vinte e quatro de novo. Os outros ficam com seis e dez volts, e seis mais dez mais vinte e quatro dá quarenta.
+
+Resumindo: em série, a corrente é a mesma, a tensão se divide e a resistência equivalente é a soma.
+
+Na próxima aula, você vai ligar resistores lado a lado, em paralelo, e ver por que, ali, a equivalente diminui. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

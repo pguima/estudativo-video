@@ -1,0 +1,43 @@
+Dentro do motor de um carro, quem empurra o pistão não é uma mão nem uma mola. É um gás. E um gás que empurra faz trabalho, como qualquer força.
+
+Até o fim desta aula, você vai calcular o trabalho de um gás e tirar esse trabalho direto de um gráfico.
+
+Para acompanhar, você precisa de duas coisas: o trabalho de uma força que empurra no sentido do movimento, tau igual a éfe vezes dê, em joule; e a pressão, que é força dividida por área, em pascal. Se faltar alguma, procure no canal.
+
+Pense num gás preso num cilindro, com uma tampa que desliza, o êmbolo, que no motor se chama pistão. O gás empurra o êmbolo com uma pressão pê. Como a pressão é força por área, a força é pê vezes a área do êmbolo.
+
+O êmbolo anda uma distância dê. Trabalho é força vezes distância: pê vezes área vezes dê. Mas área vezes distância é o volume que o gás ganhou: a variação de volume, delta vê. Delta é o símbolo de variação: o volume final menos o inicial.
+
+Fica assim: tau, o trabalho, é igual a pê vezes delta vê. Tau é a letra grega que as provas usam para trabalho, em joule. Pê é a pressão, em pascal. Delta vê, em metro cúbico. Vale quando a pressão fica constante, a transformação isobárica.
+
+Exemplo. Um gás a cem mil pascals se expande de dois para cinco litros. Delta vê é cinco menos dois: três litros. Em metro cúbico: um metro cúbico tem mil litros, então três litros são três milésimos de metro cúbico.
+
+Cem mil vezes três milésimos: trezentos joules. E o sinal conta uma história. Na expansão, delta vê é positivo: o gás empurra e faz trabalho. Na compressão, delta vê é negativo: alguém empurra o gás, e ele recebe trabalho. Com o volume parado, o trabalho é zero.
+
+Vamos ao gráfico. Ponha a pressão no eixo de pé e o volume no deitado. Pressão constante é uma linha reta deitada. A área embaixo dela é um retângulo: altura pê, base delta vê. Área igual a pê vezes delta vê: é o trabalho.
+
+E isso vale sempre: no gráfico pê vê, o trabalho é a área embaixo da linha, como no gráfico de força por distância. Se a pressão muda em linha reta, a figura vira um trapézio. Pressão de cem para trezentos quilopascals, volume de um para três metros cúbicos.
+
+Área do trapézio: base maior mais base menor, vezes a altura, dividido por dois. Aqui, o trapézio está deitado: as bases são as pressões, trezentos e cem, e a altura é a variação de volume, dois. Quatrocentos vezes dois, dividido por dois: quatrocentos quilojoules.
+
+E se o gás vai e volta ao ponto de partida? Isso é um ciclo, como num motor. Na ida, por cima, a pressão é alta: o gás faz o trabalho da área embaixo do caminho de cima. Na volta, por baixo, ele é comprimido com pressão baixa: recebe o trabalho da área embaixo do caminho de baixo.
+
+A diferença é só a área de dentro do ciclo. Pressão de cem a duzentos quilopascals, volume de um a quatro metros cúbicos: altura cem, base três: trezentos quilojoules por volta. Ciclo no sentido horário, o trabalho é positivo: é o motor. No anti-horário, a ida é por baixo, e o saldo fica negativo.
+
+Cuidado com o erro mais comum: multiplicar pascal por litro. No exemplo, a pessoa faz cem mil vezes três e responde trezentos mil joules. Mil vezes mais que o certo, porque o litro é mil vezes menor que o metro cúbico.
+
+Agora, o atalho de prova: quilopascal vezes litro dá joule direto. Cem mil pascals são cem quilopascals. Cem vezes três litros: trezentos joules, sem converter nada.
+
+Funciona porque o quilo multiplica por mil, e o litro divide por mil: um cancela o outro. Não compensa se a pressão vier em atmosfera, ou o volume em centímetro cúbico: aí, converta para pascal e metro cúbico.
+
+Hora de testar. Um gás, a pressão constante de duzentos quilopascals, passa de quatro para um litro. Qual é o trabalho? E o gás fez ou recebeu esse trabalho?
+
+Pause o vídeo e tente.
+
+Vamos lá. Delta vê é o final menos o inicial: um menos quatro, menos três litros. Com o atalho: duzentos quilopascals vezes menos três litros, menos seiscentos joules.
+
+O sinal de menos diz que o volume diminuiu: foi uma compressão. O gás recebeu seiscentos joules de trabalho.
+
+Resumindo: tau é pê vezes delta vê; no gráfico pê vê, o trabalho é a área; e no ciclo, é a área de dentro.
+
+Na próxima aula, você vai ver para onde vai o calor que um gás recebe: uma parte vira trabalho, e outra fica guardada nele. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

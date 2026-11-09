@@ -1,0 +1,37 @@
+Um inventor apresenta um motor novo. A fonte quente dele está a trezentos e vinte e sete graus Celsius; a fria, a vinte e sete graus. Ele teria rendimento de sessenta por cento. Dá para saber se é mentira, sem abrir o motor?
+
+Até o fim desta aula, você vai calcular o rendimento máximo de uma máquina e testar se ela é possível.
+
+Para acompanhar, você precisa de duas coisas: o rendimento, eta igual a um menos quê frio sobre quê quente; e passar de Celsius para kelvin: some duzentos e setenta e três. Se faltar alguma, procure no canal.
+
+Em mil oitocentos e vinte e quatro, o engenheiro francês Sadi Carnot fez a pergunta certa: qual é o melhor rendimento possível entre duas fontes? Ele mostrou que esse máximo depende só das temperaturas das fontes. Não importa o combustível nem o tamanho do motor.
+
+A máquina ideal, a máquina de Carnot, trabalha num ciclo com duas isotérmicas e duas adiabáticas, sem atrito e sem perdas além do quê frio. Nela, a razão entre os calores é igual à razão entre as temperaturas.
+
+Então, o rendimento máximo é um menos tê frio sobre tê quente. Tê frio é a temperatura da fonte fria, tê quente, a da fonte quente, as duas em kelvin. Nenhuma máquina real passa desse valor.
+
+Vamos testar o inventor. Trezentos e vinte e sete mais duzentos e setenta e três: seiscentos kelvin. Vinte e sete mais duzentos e setenta e três: trezentos kelvin.
+
+Trezentos dividido por seiscentos dá meio. Um menos meio: cinquenta por cento. Nem a máquina ideal passa de cinquenta. O motor de sessenta por cento é impossível: o inventor está errado.
+
+O teste é este: rendimento menor que o de Carnot, a máquina é possível. Maior, é impossível. Igual, só a máquina ideal, que não existe na prática.
+
+A fórmula também mostra como melhorar uma máquina: fonte quente mais quente, ou fonte fria mais fria. Cem por cento só com a fonte fria a zero kelvin, o zero absoluto, que não dá para atingir. Por isso, nenhuma máquina chega a cem por cento. As usinas térmicas modernas, então, trabalham com vapor cada vez mais quente.
+
+Cuidado com o erro mais comum: usar graus Celsius. Com o inventor, ficaria um menos vinte e sete dividido por trezentos e vinte e sete, cerca de noventa e dois por cento. E o motor de sessenta pareceria possível. Em Celsius, o zero não é o zero de verdade, e a divisão perde o sentido.
+
+Agora, o atalho de prova: escreva o rendimento máximo como a diferença sobre a quente. Tê quente menos tê frio, dividido por tê quente. E a diferença é a mesma em Celsius e em kelvin, porque o duzentos e setenta e três se cancela.
+
+Trezentos e vinte e sete menos vinte e sete: trezentos, direto dos graus Celsius. Só a quente vai para kelvin: seiscentos. Trezentos dividido por seiscentos, cinquenta por cento. Funciona sempre, e só não compensa quando a questão já dá as duas temperaturas em kelvin.
+
+Hora de testar. Numa usina, a fonte quente está a duzentos e vinte e sete graus Celsius, e a fria, a vinte e sete graus. Qual é o rendimento máximo? E um projeto com quarenta e cinco por cento é possível?
+
+Pause o vídeo e tente.
+
+Vamos lá, com o atalho. A diferença: duzentos e vinte e sete menos vinte e sete, duzentos. A quente em kelvin: duzentos e vinte e sete mais duzentos e setenta e três, quinhentos. Duzentos dividido por quinhentos, zero vírgula quatro, quarenta por cento.
+
+Quarenta e cinco é mais que quarenta: o projeto é impossível. Pela fórmula completa, dá o mesmo: um menos trezentos dividido por quinhentos, um menos zero vírgula seis, quarenta por cento.
+
+Resumindo: o rendimento máximo é um menos tê frio sobre tê quente, sempre em kelvin, e nenhuma máquina real passa dele.
+
+Na próxima aula, a máquina vai rodar ao contrário: você vai entender a geladeira e o que mede a entropia. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

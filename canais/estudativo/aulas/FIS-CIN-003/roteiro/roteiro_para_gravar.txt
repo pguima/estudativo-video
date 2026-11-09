@@ -1,0 +1,37 @@
+Uma bola é chutada a vinte metros por segundo, inclinada em relação ao chão. Ela não avança vinte metros por segundo: só dezesseis. E sobe a doze. Dezesseis mais doze dá vinte e oito, e não vinte. E está tudo certo.
+
+Até o fim desta aula, você vai dividir um vetor numa parte deitada e numa em pé, e somar vetores inclinados pelo método dos eixos.
+
+Para acompanhar, você precisa de três coisas: somar vetores em ângulo reto com Pitágoras; achar um cateto com seno e cosseno, como o seno de trinta e sete graus, zero vírgula seis, e o cosseno, zero vírgula oito; e os ângulos notáveis, trinta, quarenta e cinco e sessenta graus. Se faltar alguma, procure no canal.
+
+Na aula de soma, dois vetores em ângulo reto viravam um só: a hipotenusa. Decompor é o caminho de volta: trocar um vetor inclinado por dois, um em cada eixo, que somados fazem o mesmo efeito. Eles se chamam componentes.
+
+Ponha o começo do vetor no cruzamento de dois eixos: o xis, deitado, e o ípsilon, em pé. Trace a sombra da ponta em cada eixo. Aparece um triângulo retângulo: o vetor é a hipotenusa, e as componentes são os catetos.
+
+O ângulo, que se chama teta, fica entre o vetor e o eixo xis. A componente xis encosta no ângulo: é o cateto adjacente. Vê xis é vê vezes o cosseno de teta. A componente ípsilon fica de frente para o ângulo: é o oposto. Vê ípsilon é vê vezes o seno de teta.
+
+Na bola: vinte metros por segundo, a trinta e sete graus do chão. Vê xis: vinte vezes zero vírgula oito, dezesseis. Vê ípsilon: vinte vezes zero vírgula seis, doze. Confira com Pitágoras: duzentos e cinquenta e seis mais cento e quarenta e quatro, quatrocentos: vinte ao quadrado.
+
+Por isso dezesseis mais doze não dá vinte: as componentes estão em ângulo reto, e não se somam em fila. Com ângulo notável, o jeito é o mesmo. Um vetor de dez, a sessenta graus. Xis: dez vezes o cosseno de sessenta, um meio: cinco. Ípsilon: dez vezes o seno de sessenta, raiz de três dividido por dois: cinco raiz de três.
+
+E para somar vetores inclinados, o método dos eixos. Decomponha cada vetor. Some todos os xis, some todos os ípsilon, com sinal: para a esquerda ou para baixo, entra com menos. No fim, junte as duas somas com Pitágoras.
+
+Um drone faz dois deslocamentos: dez metros, subindo a trinta e sete graus com o chão, e depois nove metros na vertical, para cima. Xis: oito do primeiro, nada do segundo: oito. Ípsilon: seis mais nove, quinze. Pitágoras: sessenta e quatro mais duzentos e vinte e cinco, duzentos e oitenta e nove. A raiz é dezessete metros.
+
+Cuidado com o erro mais comum: usar sempre o cosseno no xis, sem olhar onde está o ângulo. Se a prova dá o ângulo com a vertical, tudo troca: o cosseno vai para o ípsilon, e o seno, para o xis. A regra certa: o cosseno fica com o eixo que encosta no ângulo.
+
+Agora, o atalho de prova: trinta e sete e cinquenta e três graus são o triângulo três, quatro, cinco. Divida o vetor por cinco. Com trinta e sete graus, quatro partes vão para o eixo que encosta no ângulo. Três partes vão para o outro. Com cinquenta e três, é ao contrário. Vinte dividido por cinco, quatro: dezesseis e doze.
+
+Funciona porque zero vírgula oito é quatro quintos, e zero vírgula seis é três quintos. Não serve para trinta, quarenta e cinco ou sessenta graus: aí, use a tabela dos notáveis.
+
+Hora de testar. Uma bola é chutada a vinte e cinco metros por segundo, a trinta e sete graus do chão. Quais são as componentes deitada e em pé? E se os trinta e sete graus fossem com a vertical?
+
+Pause o vídeo e tente.
+
+Vamos lá. Vinte e cinco dividido por cinco, cinco. O ângulo é com o chão, então o eixo que encosta nele é o xis: cinco vezes quatro, vinte metros por segundo. No ípsilon, cinco vezes três, quinze. Confira: quinze, vinte e vinte e cinco formam o três, quatro, cinco, vezes cinco.
+
+Com o ângulo na vertical, o eixo que encosta nele é o ípsilon. Tudo troca: vinte para cima, quinze para a frente.
+
+Resumindo: as componentes são os catetos; o eixo que encosta no ângulo leva o cosseno; para somar, some os xis, some os ípsilon e feche com Pitágoras.
+
+Na próxima aula, você vai usar isso no lançamento oblíquo: a parte deitada da velocidade leva a bola para a frente, e a parte em pé, para cima. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

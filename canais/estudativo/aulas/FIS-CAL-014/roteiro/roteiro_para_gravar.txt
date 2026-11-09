@@ -1,0 +1,39 @@
+Num carro, a gasolina queima e libera calor. Só cerca de um quarto desse calor vira movimento. O resto sai pelo escapamento e pelo radiador. Defeito do motor? Em parte. Mas nem um motor perfeito chegaria a cem por cento: é uma lei da natureza.
+
+Até o fim desta aula, você vai calcular o rendimento de uma máquina térmica e explicar por que ele nunca chega a cem por cento.
+
+Para acompanhar, você precisa de duas coisas: o rendimento, que é a parte útil dividida pelo total, em porcentagem; e que, num ciclo, delta U é zero, então o calor que entra menos o que sai vira trabalho. Se faltar alguma, procure no canal.
+
+Máquina térmica é tudo o que transforma calor em trabalho, repetindo um ciclo: motor de carro, usina térmica, locomotiva a vapor. Toda máquina térmica tem três partes.
+
+A fonte quente, onde algo queima ou ferve. A máquina recebe dela um calor: o quê quente. Ela faz um trabalho, tau. E joga o resto na fonte fria, o ar ou a água de um rio: o quê frio.
+
+No ciclo, delta U é zero, então nada fica guardado: tudo o que entra, sai. Quê quente é igual a tau mais quê frio. Ou tau é igual a quê quente menos quê frio. Aqui, quê quente e quê frio são só quantidades, sem sinal.
+
+O rendimento usa a letra grega eta. Eta é o útil dividido pelo total. O útil é o trabalho. O total é o calor que a máquina recebeu da fonte quente. Eta igual a tau dividido por quê quente.
+
+Exemplo. Uma máquina recebe mil joules da fonte quente e joga setecentos na fria. Trabalho: mil menos setecentos, trezentos joules. Rendimento: trezentos dividido por mil, zero vírgula três, trinta por cento.
+
+E por que não cem por cento? É a segunda lei da termodinâmica: nenhuma máquina, trabalhando em ciclo, transforma todo o calor recebido em trabalho. Sempre sobra um quê frio para a fonte fria.
+
+Pense numa roda-d'água. Ela só gira porque a água cai de cima para baixo. A água não some na roda: ela chega lá embaixo. O calor também só passa sozinho do quente para o frio. A máquina aproveita essa passagem, mas o calor precisa chegar à fonte fria.
+
+Sem fonte fria, não há passagem de calor, e a máquina para. Por isso, o rendimento de uma máquina térmica é sempre menor que cem por cento.
+
+Cuidado com o erro mais comum: dividir pelo calor errado. No exemplo, quem faz trezentos dividido por setecentos acha cerca de quarenta e três por cento. Mas setecentos é o que foi jogado fora. O total é o que entrou: mil.
+
+Agora, o atalho de prova: eta igual a um menos quê frio sobre quê quente. Setecentos dividido por mil, zero vírgula sete. Um menos zero vírgula sete, zero vírgula três: trinta por cento, sem calcular o trabalho.
+
+Funciona porque o trabalho é quê quente menos quê frio: dividir tudo por quê quente dá um menos quê frio sobre quê quente. Ou pense assim: se setenta por cento foi jogado fora, sobraram trinta. Não compensa quando a questão já dá o trabalho: aí, use tau sobre quê quente direto.
+
+Hora de testar. Em cada ciclo, uma máquina recebe oitocentos joules da fonte quente e joga seiscentos na fonte fria. Qual é o trabalho por ciclo? E o rendimento?
+
+Pause o vídeo e tente.
+
+Vamos lá. Tudo o que entra, sai: oitocentos menos seiscentos, duzentos joules de trabalho. Rendimento: duzentos dividido por oitocentos, um quarto, vinte e cinco por cento.
+
+Com o atalho: seiscentos dividido por oitocentos dá três quartos, setenta e cinco por cento jogados fora. Sobram vinte e cinco. Parecido com o motor do carro do começo da aula.
+
+Resumindo: a máquina recebe quê quente, faz tau e joga quê frio fora; o rendimento é tau sobre quê quente; e pela segunda lei, ele nunca chega a cem por cento.
+
+Na próxima aula, você vai descobrir o rendimento máximo que uma máquina pode ter, só com as temperaturas das fontes. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

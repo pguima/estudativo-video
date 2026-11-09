@@ -1,0 +1,43 @@
+Uma bateria de doze volts, ligada a um resistor de cinco ohms. Doze dividido por cinco, dois vírgula quatro ampères? Não: passam só dois. Faltou a resistência que fica dentro da bateria: um ohm.
+
+Até o fim desta aula, você vai achar a corrente de um circuito com uma fração só, e descobrir qual resistor recebe a maior potência.
+
+Para acompanhar, você precisa de duas coisas: nos polos do gerador, u igual a épsilon menos erre pequeno vezes i; e reduzir resistores em série e em paralelo até um só. Se faltar alguma, procure no canal.
+
+Ligue o gerador a um resistor, erre grande. A tensão nos polos do gerador é a mesma tensão do resistor. Para o gerador, ela é épsilon menos erre pequeno vezes i; para o resistor, erre grande vezes i.
+
+Iguale as duas: erre grande vezes i é igual a épsilon menos erre pequeno vezes i. Passe o erre pequeno vezes i para o outro lado, coloque o i em evidência, e sai a lei de Pouillet: i igual a épsilon dividido por erre grande mais erre pequeno.
+
+Leia assim: a força eletromotriz empurra a corrente por todas as resistências da volta, a de fora e a de dentro, em série.
+
+No gancho: doze dividido por cinco mais um, doze dividido por seis, dois ampères. Nos polos, erre grande vezes i: cinco vezes dois, dez volts.
+
+Com vários resistores fora, reduza primeiro. Dois resistores de dez ohms em paralelo: dez dividido por dois, cinco ohms. Aí, é o mesmo circuito: dois ampères.
+
+Agora, a potência que chega ao resistor de fora: a potência útil do gerador. Pegue um gerador de doze volts e dois ohms internos, e troque o resistor de fora.
+
+Com um ohm fora: a corrente é quatro ampères, e a potência, um ohm vezes quatro ao quadrado: dezesseis watts. Com dois ohms: três ampères, dois ohms vezes nove: dezoito watts. Com quatro ohms: dois ampères, quatro ohms vezes quatro: dezesseis watts de novo.
+
+O máximo veio no meio, quando a resistência de fora é igual à de dentro. Erre grande igual a erre pequeno: é a condição de potência máxima.
+
+Por quê? A potência útil é u vezes i: épsilon vezes i, menos erre pequeno vezes i ao quadrado. É uma parábola de boca para baixo, que vale zero sem corrente e na corrente de curto. A parábola é simétrica: o topo fica no meio, na metade da corrente de curto.
+
+Com metade da corrente de curto, a perda interna é metade de épsilon, e os polos ficam com a outra metade. Por isso, na potência máxima, o rendimento é cinquenta por cento.
+
+Cuidado com o erro mais comum: achar que um resistor menor sempre recebe mais potência. Com um ohm, a corrente subiu, mas a potência caiu para dezesseis watts. Abaixo de erre pequeno, a maior parte da tensão se perde dentro do gerador.
+
+Agora, o atalho da potência máxima: erre grande igual a erre pequeno, u igual a metade de épsilon, e a potência máxima é metade de épsilon vezes metade da corrente de curto: épsilon ao quadrado dividido por quatro erre pequeno. Doze ao quadrado, cento e quarenta e quatro, dividido por oito: dezoito watts, sem tabela.
+
+Funciona porque é o topo da parábola, já calculado. Mas potência máxima não é rendimento máximo: metade da energia vira calor no gerador. Se a questão pedir o maior rendimento, o atalho não serve.
+
+Hora de testar. Um gerador de vinte e quatro volts, com dois ohms internos, alimenta doze ohms e seis ohms em paralelo. Qual é a corrente no gerador? E qual resistor de fora daria a potência máxima, e de quanto?
+
+Pause o vídeo e tente.
+
+Vamos lá. Paralelo, produto pela soma: setenta e dois dividido por dezoito, quatro ohms. Pouillet: vinte e quatro dividido por quatro mais dois, quatro ampères.
+
+Potência máxima com o resistor de fora igual a dois ohms. Vinte e quatro ao quadrado, quinhentos e setenta e seis, dividido por quatro vezes dois, oito: setenta e dois watts.
+
+Resumindo: a corrente é épsilon dividido pela soma de todas as resistências da volta; e a potência máxima sai com a resistência de fora igual à de dentro, com rendimento de cinquenta por cento.
+
+Na próxima aula, o motor, que recebe energia elétrica e devolve movimento, e o que acontece quando você junta várias pilhas. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

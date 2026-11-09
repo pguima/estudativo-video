@@ -1,0 +1,37 @@
+Ligue um amperímetro do jeito errado e ele pode queimar na hora. Ligue um voltímetro do jeito errado e o circuito para de funcionar.
+
+Até o fim desta aula, você vai saber ligar os dois medidores, e achar um resistor desconhecido com uma multiplicação cruzada.
+
+Para acompanhar, você precisa de duas coisas: em série, a corrente é a mesma, e a tensão se divide na proporção das resistências; e em paralelo, a tensão é a mesma, e a menor resistência leva a maior corrente. Se faltar alguma, procure no canal.
+
+O amperímetro mede a corrente. Para medir a corrente de um resistor, ela precisa passar por dentro do aparelho: então, ele entra em série, no mesmo fio do resistor. O ideal é que tenha resistência zero, para não mudar a corrente que mede.
+
+O voltímetro mede a tensão entre dois pontos. Então, ele entra em paralelo, com uma ponta de cada lado do resistor, e fica com a mesma tensão dele. O ideal é ter resistência enorme, para quase nenhuma corrente desviar por ele.
+
+Para não esquecer: o amperímetro fica no caminho da corrente, como uma catraca; o voltímetro fica por fora, como uma régua, com uma ponta em cada lado. Com doze volts, dois ohms e quatro ohms em série: o amperímetro, em qualquer ponto do fio, marca dois ampères; o voltímetro, nas pontas do de quatro, marca oito volts.
+
+Cuidado com o erro mais comum: trocar as ligações. Amperímetro em paralelo é um caminho de resistência zero ao lado do resistor: quase toda a corrente desvia por ele, a corrente fica enorme, e o aparelho pode queimar.
+
+Voltímetro em série põe uma resistência enorme no caminho: a corrente quase zera, e o circuito para de funcionar.
+
+Agora, a ponte de Wheatstone. São quatro resistores num losango, ligados à pilha pelo ponto de cima e pelo de baixo. À esquerda, erre um em cima e erre dois embaixo; à direita, erre três em cima e erre quatro embaixo. No meio, de um lado ao outro, fica um amperímetro bem sensível, o galvanômetro.
+
+Quando o galvanômetro marca zero, a ponte está em equilíbrio. E vale a regra: o produto dos resistores opostos, na diagonal, é igual. Erre um vezes erre quatro é igual a erre dois vezes erre três.
+
+Por quê? Sem corrente no meio, cada lado do losango é uma série simples, com a tensão da pilha. E, para não passar corrente pelo galvanômetro, não pode haver tensão entre as pontas dele. Então, a tensão se divide na mesma proporção dos dois lados: erre um está para erre dois, assim como erre três está para erre quatro. Multiplicando em cruz, sai a regra.
+
+Exemplo. Com a ponte em equilíbrio, erre um vale dois ohms, erre dois, oito, erre três, três, e erre quatro é o desconhecido. Dois vezes erre quatro igual a oito vezes três, vinte e quatro. Erre quatro vale doze ohms.
+
+Agora, o atalho: ponte em equilíbrio, apague o que está no meio. Se não passa corrente por ali, tanto faz ter um galvanômetro, um resistor ou nada. Sobram os dois lados em série, ligados em paralelo. Dois mais oito, dez; três mais doze, quinze. Produto pela soma: cento e cinquenta dividido por vinte e cinco, seis ohms.
+
+Antes de apagar, confira o produto cruzado. Se ele não fechar, passa corrente no meio, e o meio não pode sair.
+
+Hora de testar. Numa ponte em equilíbrio, erre um vale três ohms, erre dois, nove ohms, e erre três, seis ohms. Quanto vale erre quatro?
+
+Pause o vídeo e tente.
+
+Vamos lá. Os opostos são erre um com erre quatro, e erre dois com erre três. Três vezes erre quatro igual a nove vezes seis, cinquenta e quatro. Erre quatro vale dezoito ohms. Confira pela proporção: três está para nove assim como seis está para dezoito. Um terço, dos dois lados.
+
+Resumindo: amperímetro em série, com resistência quase zero; voltímetro em paralelo, com resistência enorme; e ponte em equilíbrio: produto dos opostos igual, e o meio pode ser apagado.
+
+Na próxima aula, você vai praticar o módulo inteiro: fio, série, paralelo, circuito misto, curto e medidores. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

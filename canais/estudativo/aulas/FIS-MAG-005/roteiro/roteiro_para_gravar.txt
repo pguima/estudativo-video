@@ -1,0 +1,41 @@
+Em mil oitocentos e trinta e um, Michael Faraday enfiou um ímã numa bobina de fio. Apareceu corrente, sem pilha nenhuma. Com o ímã parado lá dentro, a corrente sumiu. Só o movimento gerava corrente.
+
+Até o fim desta aula, você vai saber o que é fluxo magnético, o que faz ele mudar e calcular a tensão elétrica que essa mudança cria.
+
+Para acompanhar, lembre duas coisas. As linhas de campo mostram o campo bê, em tesla. E a área do retângulo é a base vezes a altura. Se faltar alguma, procure no canal.
+
+Imagine uma espira, um anel de fio, com linhas de campo passando por dentro dela. O fluxo magnético mede quanto campo atravessa a espira. É o fi, a letra grega que parece um círculo cortado.
+
+Com o campo atravessando a espira de frente, fi igual a bê vezes á. Bê é o campo, em tesla, e á é a área da espira, em metro quadrado. A unidade do fluxo é o weber, que é tesla vezes metro quadrado.
+
+E se a espira girar? Deitada ao longo das linhas, nenhuma linha passa por dentro: o fluxo é zero. Nas posições do meio, multiplique pelo cosseno do ângulo entre o campo e a reta em pé sobre a espira.
+
+Então, três coisas mudam o fluxo. Mudar o campo, como ao aproximar o ímã. Mudar a área, esticando ou encolhendo a espira. E mudar o ângulo, girando a espira.
+
+Agora, a lei de Faraday. Quando o fluxo muda, aparece uma tensão na espira: o empurrão que faz a corrente andar. Ela se chama força eletromotriz, mas não é uma força: é medida em volt, a unidade de tensão, que você vê na aula de potencial elétrico.
+
+O valor dela: épsilon igual a delta fi, dividido por delta tê. Delta fi é quanto o fluxo mudou, em weber, e delta tê é em quanto tempo, em segundo. Mudança rápida, tensão grande. Numa bobina com ene espiras, multiplique por ene.
+
+Um exemplo. Uma espira de vinte por dez centímetros: zero vírgula dois vezes zero vírgula um, zero vírgula zero dois metro quadrado. O campo cai de zero vírgula cinco tesla para zero, em zero vírgula um segundo. O fluxo cai zero vírgula cinco vezes zero vírgula zero dois, zero vírgula zero um weber. Dividido por zero vírgula um: zero vírgula um volt.
+
+Um caso que cai muito: uma barra de metal deslizando sobre dois trilhos, num campo que fura a folha. A barra, os trilhos e o fio do fundo formam um retângulo. Quando a barra anda, a área do retângulo cresce, e o fluxo também.
+
+Em cada segundo, a área cresce o comprimento da barra vezes a velocidade. Então, épsilon igual a bê vezes éle vezes vê. Campo de zero vírgula cinco tesla, barra de zero vírgula quatro metro, a cinco metros por segundo: zero vírgula cinco vezes zero vírgula quatro dá zero vírgula dois, vezes cinco, um volt.
+
+Cuidado com o erro mais comum: achar que um ímã forte parado dentro da bobina gera corrente. O fluxo é grande, mas não muda. Delta fi é zero, e a tensão também. O que conta é a mudança, não o tamanho do fluxo.
+
+Agora, o atalho de prova. Antes de qualquer conta, pergunte: o fluxo está mudando? Se nada muda, a resposta é zero, sem conta. Se é uma barra andando, use direto bê éle vê.
+
+Funciona porque bê éle vê é o próprio delta fi por delta tê, já pronto para a barra. Confira pela unidade: tesla vezes metro vezes metro por segundo é weber por segundo, que é volt. Não serve quando o campo ou o ângulo também mudam: aí, volte para delta fi por delta tê.
+
+Hora de testar. Uma bobina tem dez espiras. Um ímã se aproxima, e o fluxo em cada espira vai de zero vírgula zero dois para zero vírgula zero oito weber, em zero vírgula dois segundo. Qual é a tensão induzida? E mais: e se o ímã parar?
+
+Pause o vídeo e tente.
+
+Vamos lá. Delta fi é zero vírgula zero oito menos zero vírgula zero dois: zero vírgula zero seis weber. Dividido por zero vírgula dois, zero vírgula três. Vezes dez espiras: três volts.
+
+E com o ímã parado, o fluxo para de mudar. A tensão vai a zero, mesmo com o ímã lá dentro.
+
+Resumindo: fi igual a bê vezes á, campo, área e ângulo mudam o fluxo, e épsilon é delta fi por delta tê. Na próxima aula, o sentido dessa corrente, com a lei de Lenz e o freio magnético.
+
+Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

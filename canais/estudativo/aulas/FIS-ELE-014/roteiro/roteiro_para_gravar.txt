@@ -1,0 +1,41 @@
+Um passarinho pousa num fio desencapado da rua e não sente nada. Uma pessoa encosta o dedo num fio da tomada e leva um choque. Qual é a diferença?
+
+Até o fim desta aula, você vai achar um curto-circuito e entender o disjuntor, a ligação da casa e o perigo do choque.
+
+Para acompanhar, você precisa de duas coisas: a tensão u é a resistência erre vezes a corrente i; e reduzir um circuito com série e paralelo, dando uma letra a cada nó. Se faltar alguma, procure no canal.
+
+Curto-circuito é um fio, sem resistor, ligando dois pontos do circuito que tinham tensão entre eles. A resistência desse fio é praticamente zero. Então, a tensão entre esses dois pontos é zero vezes a corrente: zero.
+
+E, se a tensão nas pontas de um resistor é zero, a corrente nele também é zero. O resistor em curto sai do circuito: é como se não existisse. Com as letras: as duas pontas do fio recebem a mesma letra, e o resistor que ficou com as duas pontas na mesma letra some.
+
+Exemplo. Uma pilha de doze volts, com quatro ohms e dois ohms em série. Seis ohms: dois ampères. Agora, um fio liga as pontas do resistor de quatro ohms. Ele sai do circuito, e sobra só o de dois: doze dividido por dois, seis ampères. A corrente ficou três vezes maior.
+
+No pior caso, um fio liga direto os dois polos da pilha. A resistência cai quase a zero, e a corrente fica enorme. Corrente grande esquenta os fios: pode derreter a capa e começar um incêndio. Esse calor da corrente é assunto de outra aula.
+
+Para isso existem o fusível e o disjuntor. Eles ficam em série, no começo do circuito, para que toda a corrente passe por eles. Se a corrente passa do limite, o fio fino do fusível derrete, ou o disjuntor desarma. O circuito abre, e a corrente para.
+
+E a casa é ligada em paralelo. Cada aparelho fica num ramo entre os mesmos dois fios que vêm da rua, então todos recebem a mesma tensão, cento e vinte e sete ou duzentos e vinte volts. E desligar um aparelho não desliga os outros.
+
+Em série, a tensão se dividiria, e um aparelho desligado cortaria todos. Só que cada ramo novo em paralelo diminui a equivalente e aumenta a corrente total. Por isso, muita coisa ligada ao mesmo tempo desarma o disjuntor.
+
+Agora, o choque. O que machuca é a corrente que atravessa o corpo. E ela só passa se houver tensão entre dois pontos do corpo, como a mão no fio e o pé no chão.
+
+Por isso, o passarinho escapa: as duas patas estão no mesmo fio, quase no mesmo ponto. Sem tensão entre elas, não passa corrente pelo corpo. Se a asa encostasse em outro fio, aí, sim, levaria choque.
+
+A resistência do corpo muda muito. Com a pele seca, ela fica perto de cem mil ohms; molhada, cai para uns mil ohms. Na tomada de cento e vinte e sete volts, com a pele molhada, a corrente é cento e vinte e sete dividido por mil: cento e vinte e sete milésimos de ampère.
+
+Uns dez milésimos de ampère já travam os músculos: a pessoa não consegue soltar. Perto de cem milésimos, a corrente pode desregular o coração. Com a pele molhada, os cento e vinte e sete passam dos dois limites. Com a pele seca, seria pouco mais de um milésimo. Por isso, nunca mexa em eletricidade com a mão molhada.
+
+Cuidado com o erro mais comum: o fusível vive queimando, e a pessoa troca por um que aguenta mais corrente. O fusível para de queimar, mas o problema continua: agora, a corrente alta passa pelos fios sem proteção nenhuma. O certo é descobrir a causa.
+
+Agora, o atalho para achar o curto: procure um fio sem resistor ligando dois pontos. Dê a mesma letra às duas pontas dele, e apague todo resistor que ficou com as duas pontas na mesma letra. Sobra um circuito mais simples, e você resolve como sempre. Não confunda: fio com uma lâmpada ou um resistor no meio não é curto.
+
+Hora de testar. Uma bateria de doze volts liga em série três lâmpadas iguais, de quatro ohms cada. Um fio liga as duas pontas de uma das lâmpadas. O que acontece com essa lâmpada, e qual é a corrente nas outras?
+
+Pause o vídeo e tente.
+
+Vamos lá. Antes: doze ohms, doze dividido por doze, um ampère. Com o fio, a lâmpada em curto fica sem tensão: ela apaga. Sobram duas de quatro ohms: oito ohms. Doze dividido por oito: um vírgula cinco ampère nas outras duas. A corrente aumentou, porque a resistência total diminuiu.
+
+Resumindo: fio sem resistor é curto, e o que ele liga sai do circuito; fusível e disjuntor, em série, abrem o circuito quando a corrente passa do limite; a casa é em paralelo, para cada aparelho ter a mesma tensão; e o choque é a corrente que passa pelo corpo.
+
+Na próxima aula, você vai medir corrente e tensão com o amperímetro e o voltímetro, e achar um resistor desconhecido na ponte de Wheatstone. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

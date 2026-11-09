@@ -1,0 +1,41 @@
+Uma bateria virada contra a outra, na mesma volta do circuito: ela soma ou subtrai? E, num cruzamento de fios, quanto de corrente vai para cada lado? Duas regras respondem: as leis de Kirchhoff.
+
+Até o fim desta aula, você vai usar a lei dos nós e a lei das malhas, com a regra de sinais que evita quase todo erro.
+
+Para acompanhar, você precisa de três coisas: nó é onde a corrente se divide ou se junta, e ramo é o caminho entre dois nós; a tensão num resistor é erre vezes i; e o que gerador e receptor fazem com a tensão. Se faltar alguma, procure no canal.
+
+Primeira lei: a lei dos nós. A soma das correntes que chegam num nó é igual à soma das que saem. Carga não some nem se acumula no fio: é como água num cano que se divide.
+
+Exemplo: chegam cinco ampères e dois ampères. Saem quatro ampères e uma corrente desconhecida. Cinco mais dois, sete, igual a quatro mais i: i vale três ampères.
+
+Segunda lei: a lei das malhas. Malha é qualquer caminho fechado do circuito. Dando uma volta inteira, a soma das tensões que sobem e descem é zero.
+
+Por quê? Cada ponto do circuito tem um potencial. Voltando ao ponto de partida, você volta ao mesmo potencial. É como andar num morro: quando você volta ao começo, tudo o que subiu, desceu.
+
+Agora, a regra de sinais. Escolha um sentido para a corrente e ande a malha nesse sentido. No gerador, se você entra pelo negativo e sai pelo positivo, some épsilon, porque o potencial sobe. Se entra pelo positivo, subtraia.
+
+No resistor, andando a favor da corrente, subtraia erre vezes i, porque o potencial cai. Andando contra a corrente, some.
+
+Veja esta malha. Um gerador de vinte volts, um resistor de dois ohms, uma bateria de oito volts virada contra o gerador e um resistor de quatro ohms.
+
+Ande no sentido da corrente, saindo do negativo do gerador de vinte. Mais vinte. Menos dois i. Na bateria de oito, você entra pelo positivo: menos oito. Menos quatro i. Tudo igual a zero.
+
+Vinte menos oito, doze, igual a seis i: i vale dois ampères. E a bateria de oito volts, com a corrente entrando pelo positivo, funciona como receptor: ela está sendo carregada.
+
+E se você chutasse a corrente ao contrário? A conta daria menos dois ampères. O sinal de menos só avisa que o sentido real é o oposto. O valor, dois ampères, continua certo.
+
+Cuidado com o erro mais comum: dar o sinal do gerador pelo sentido da corrente. O sinal depende só do polo por onde você entra. Quem escreve mais oito na bateria virada acha vinte e oito dividido por seis, quase quatro vírgula sete ampères, e erra.
+
+Agora, o atalho para uma malha só: a corrente é a soma das forças eletromotrizes a favor, menos as contra, dividida pela soma de todas as resistências. Vinte menos oito, dividido por dois mais quatro: dois ampères. Funciona porque é a lei das malhas já arrumada, a mesma conta da aula de receptores. Não serve com mais de uma malha: aí, é sistema de equações, na próxima aula.
+
+Hora de testar. Numa malha, dois geradores estão virados um contra o outro: dezoito volts e seis volts. Há três resistores: um, dois e três ohms. Qual é a corrente, e em qual gerador ela entra pelo positivo?
+
+Pause o vídeo e tente.
+
+Vamos lá. O de dezoito vence: a corrente sai pelo positivo dele. Lei das malhas: dezoito menos seis, menos um i, menos dois i, menos três i, igual a zero. Doze igual a seis i: dois ampères.
+
+A corrente entra pelo positivo do gerador de seis volts: ele funciona como receptor.
+
+Resumindo: no nó, o que chega é igual ao que sai; na malha, as tensões da volta somam zero; e o sinal do gerador depende do polo por onde você entra.
+
+Na próxima aula, você vai juntar as duas leis num circuito com duas malhas e dois geradores, montando um sistema de equações. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

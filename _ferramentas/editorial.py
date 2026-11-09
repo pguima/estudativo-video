@@ -189,9 +189,43 @@ def mais(c, cx, cy, r, cor=None, a=1.0, giro=0.0, sombra=True):
     c.restore()
 
 
-def simbolo(c, cx, cy, r, a=1.0, giro=0.0):
-    """forma-símbolo da matéria atual (por enquanto desenhada só a da Matemática; as outras saem como esfera)"""
-    mais(c, cx, cy, r, a=a, giro=giro) if FORMA == "mais" else bola(c, cx, cy, r, a=a)
+def orbita(c, cx, cy, r, cor=None, a=1.0, giro=0.0, sombra=True):
+    """o símbolo da Física: um núcleo com volume e duas órbitas cruzadas, cada uma com um elétron. r = meia largura da órbita"""
+    cor = cor or COR
+    if a <= 0 or r <= 0:
+        return
+    ry, lw, rn = r * 0.36, max(3, r * 0.085), r * 0.3
+    claro, escuro = hexc(mix(cor, "#FFFFFF", 0.22), a), hexc(mix(cor, "#000000", 0.25), a)
+
+    def aneis(frente):
+        for k, ang in enumerate((28, -28)):
+            c.save(); c.translate(cx, cy); c.rotate(ang + giro)
+            p = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=lw)
+            p.setShader(skia.GradientShader.MakeLinear([skia.Point(-r, -ry), skia.Point(r, ry)], [claro, escuro]))
+            ret = skia.Rect.MakeXYWH(-r, -ry, 2 * r, 2 * ry)
+            c.drawArc(ret, 0 if frente else 180, 180, False, p)  # metade de baixo passa na frente do núcleo
+            if frente:  # elétron na frente, em lados opostos nas duas órbitas
+                e = math.radians(18 if k == 0 else 162)
+                c.drawCircle(r * math.cos(e), ry * math.sin(e), lw * 1.35, M.paint(mix(cor, "#000000", 0.18), a))
+            c.restore()
+    if sombra:
+        s = skia.Paint(AntiAlias=True, Color=hexc("#000000", 0.2 * a))
+        s.setMaskFilter(skia.MaskFilter.MakeBlur(skia.kNormal_BlurStyle, r * 0.08))
+        c.drawCircle(cx + r * 0.05, cy + r * 0.1, rn, s)
+    aneis(False)
+    bola(c, cx, cy, rn, cor, a)
+    aneis(True)
+
+
+def simbolo(c, cx, cy, r, a=1.0, giro=0.0, cor=None, forma=None):
+    """forma-símbolo da matéria atual (desenhadas: o + da Matemática e a órbita da Física; as outras saem como esfera)"""
+    forma = forma or FORMA
+    if forma == "mais":
+        mais(c, cx, cy, r, cor, a=a, giro=giro)
+    elif forma == "orbita":
+        orbita(c, cx, cy, r, cor, a=a, giro=giro)
+    else:
+        bola(c, cx, cy, r, cor, a=a)
 
 
 def arco(c, cx, cy, r, ini, varre, cor, largura, a=1.0):
@@ -1294,7 +1328,9 @@ def capa_modelo(c, materia, l1, l2, it):
     escreve(c, l1, 76, 450, 210, "g", tom)
     escreve(c, l2, 76, 660, 210, "g", tom)
     escreve(c, it, 84, 860, 170, "i", tom)
-    (mais if MATERIAS[materia]["forma"] == "mais" else bola)(c, 1640, 760, 210, mix(cor, "#FFFFFF", 0.82), 1.0)
+    forma = MATERIAS[materia]["forma"]
+    r = 260 if forma == "orbita" else 210  # a órbita é vazada: precisa de mais largura para pesar como o + e a esfera
+    simbolo(c, 1640 if forma != "orbita" else 1590, 760, r, cor=mix(cor, "#FFFFFF", 0.82), forma=forma)
 
 
 # =====================================================================================================================

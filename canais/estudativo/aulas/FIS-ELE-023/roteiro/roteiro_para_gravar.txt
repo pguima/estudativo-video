@@ -1,0 +1,29 @@
+Conta de luz, chuveiro, bateria e motor: na prova, eles aparecem misturados. Até o fim desta aula, você vai resolver seis questões e saber qual fórmula chamar em cada uma.
+
+Antes, o método: pergunte o que cada peça faz com a energia. Resistor só esquenta: escolha a fórmula da potência pelo que não muda. Gerador perde dentro: u igual a épsilon menos erre pequeno vezes i. Receptor precisa de mais: u igual a épsilon linha mais erre linha vezes i. E a energia da conta é potência vezes tempo, em quilowatt-hora.
+
+Questão um. Um chuveiro de quatro mil e quatrocentos watts fica ligado meia hora por dia, durante trinta dias. O quilowatt-hora custa oitenta centavos. Quanto o chuveiro custa no mês? Pause e tente.
+
+Divida por mil: quatro vírgula quatro quilowatts. Tempo no mês: meia hora vezes trinta, quinze horas. Energia: quatro vírgula quatro vezes quinze, sessenta e seis quilowatts-hora. Sessenta e seis vezes oitenta centavos: cinquenta e dois reais e oitenta centavos.
+
+Questão dois. Um chuveiro de duzentos e vinte volts tem duas posições: quatro mil oitocentos e quarenta watts e dois mil quatrocentos e vinte watts. Qual é a resistência na posição inverno? Pause e tente.
+
+Inverno é a posição de maior potência: quatro mil oitocentos e quarenta. A tensão é fixa: isole o erre em pê igual a u ao quadrado dividido por erre. Erre é quarenta e oito mil e quatrocentos dividido por quatro mil oitocentos e quarenta: dez ohms. No verão, metade da potência, o dobro da resistência: vinte ohms.
+
+Questão três. Duas lâmpadas de duzentos e vinte volts: uma de cem watts e outra de cinquenta. Qual brilha mais em série, qual brilha mais em paralelo, e quantas vezes mais? Pause e tente.
+
+Em paralelo, cada uma recebe os duzentos e vinte volts da etiqueta: a de cem brilha mais, o dobro. Em série, a corrente é a mesma, e ganha a de maior resistência: a de cinquenta watts brilha mais, também o dobro, porque cem dividido por cinquenta é dois.
+
+Questão quatro. Uma bateria de vinte volts, com dois ohms de resistência interna, alimenta um resistor de dezoito ohms. Qual é a tensão nos polos, e qual é o rendimento da bateria? Pause e tente.
+
+Pouillet: vinte dividido por dezoito mais dois, um ampère. Nos polos: vinte menos dois vezes um, dezoito volts. Rendimento: dezoito dividido por vinte, noventa por cento.
+
+Questão cinco. Uma bateria de doze volts, com um ohm interno, liga um motor de seis volts de força contraeletromotriz e dois ohms internos. Qual é a corrente, e qual é o rendimento do motor? Pause e tente.
+
+A força contraeletromotriz subtrai: doze menos seis, seis, dividido por um mais dois, três: dois ampères. O motor recebe seis mais dois vezes dois, dez volts. Rendimento do motor: seis dividido por dez, sessenta por cento.
+
+Questão seis. Um gerador de vinte volts tem quatro ohms de resistência interna. Que resistor de fora recebe a maior potência, e de quantos watts? Pause e tente.
+
+Potência máxima: a resistência de fora igual à de dentro, quatro ohms. Vinte ao quadrado, quatrocentos, dividido por quatro vezes quatro, dezesseis: vinte e cinco watts. Confira: a corrente é vinte dividido por oito, dois vírgula cinco ampères, e quatro vezes dois vírgula cinco ao quadrado dá vinte e cinco.
+
+Resumindo: pergunte o que cada peça faz com a energia, e a fórmula aparece. Na próxima aula, as leis de Kirchhoff: a lei dos nós e a das malhas, com a regra de sinais. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

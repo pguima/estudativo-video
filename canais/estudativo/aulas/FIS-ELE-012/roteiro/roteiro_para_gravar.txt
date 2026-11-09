@@ -1,0 +1,37 @@
+Ligue mais um resistor num circuito e a resistência total diminui. Parece errado, mas é o que acontece em paralelo.
+
+Até o fim desta aula, você vai calcular a resistência equivalente em paralelo, com dois atalhos que resolvem quase toda questão.
+
+Para acompanhar, você precisa de duas coisas: em série, a corrente é a mesma e a equivalente é a soma; e somar frações com denominadores diferentes, usando o mínimo múltiplo comum. Se faltar alguma, procure no canal.
+
+Em paralelo, cada resistor fica num caminho separado, e todos ligam os mesmos dois pontos. Um ponto onde a corrente se divide se chama nó, e cada caminho entre dois nós é um ramo.
+
+Daí saem duas regras. Primeira: a tensão é a mesma em todos os ramos, porque todos estão ligados aos mesmos dois pontos. Segunda: a corrente total é a soma das correntes dos ramos.
+
+Por que a equivalente diminui? Pense num pedágio. Abrir mais uma cabine não deixa a passagem mais difícil: passa mais carro no mesmo tempo. Cada ramo novo é mais um caminho para a corrente.
+
+A conta sai da lei de Ohm. A corrente em cada ramo é a tensão dividida pela resistência dele. Somando os ramos, sai a regra: um dividido pela equivalente é igual a um dividido por erre um, mais um dividido por erre dois, e assim por diante.
+
+Exemplo: três ohms e seis ohms em paralelo. Um terço mais um sexto. O mínimo múltiplo comum é seis: dois sextos mais um sexto, três sextos, que é um meio. Um dividido pela equivalente vale um meio, então a equivalente vale dois ohms.
+
+Repare: dois ohms é menos que o menor resistor, o de três. Em paralelo, a equivalente é sempre menor que o menor resistor. Use isso para conferir a resposta.
+
+E as correntes? Com doze volts nos dois: no de três ohms, doze dividido por três, quatro ampères; no de seis, dois ampères. A menor resistência leva a maior corrente. E quatro mais dois, seis ampères, é o mesmo que doze dividido pela equivalente.
+
+Cuidado com o erro mais comum: parar no um meio e responder meio ohm. Esse um meio é um dividido pela equivalente. Falta virar a fração: a equivalente é dois ohms. Na prova, o meio ohm costuma estar nas alternativas, esperando quem esquece de virar.
+
+Agora, os atalhos. Para dois resistores: produto pela soma. Três vezes seis, dezoito; três mais seis, nove. Dezoito dividido por nove: dois ohms. O mesmo resultado, sem fração.
+
+Para resistores iguais: divida o valor de um deles pela quantidade. Três resistores de doze ohms: doze dividido por três, quatro ohms. Os dois funcionam porque são a soma de frações já feita, pronta para usar. O produto pela soma não vale para três de uma vez: junte dois, e depois junte o terceiro. Seis, três e dois ohms: seis com três dá dois; dois com dois dá um ohm.
+
+Hora de testar. Uma pilha de doze volts liga em paralelo quatro ohms e doze ohms. Qual é a resistência equivalente, e qual é a corrente que sai da pilha?
+
+Pause o vídeo e tente.
+
+Vamos lá. Produto pela soma: quatro vezes doze, quarenta e oito; quatro mais doze, dezesseis. Quarenta e oito dividido por dezesseis: três ohms. Menor que quatro: confere. A corrente total é doze dividido por três: quatro ampères.
+
+Conferindo pelos ramos: doze dividido por quatro, três ampères; doze dividido por doze, um ampère. Três mais um, quatro.
+
+Resumindo: em paralelo, a tensão é a mesma, a corrente se divide, e a equivalente é menor que o menor resistor: produto pela soma para dois, e o valor dividido pela quantidade para iguais.
+
+Na próxima aula, você vai juntar série e paralelo no mesmo circuito, e reduzir tudo, passo a passo, até um único resistor. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!

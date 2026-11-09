@@ -1,0 +1,37 @@
+Um circuito cheio de resistores parece um labirinto. Mas ele se desfaz com duas peças que você já conhece: série e paralelo.
+
+Até o fim desta aula, você vai reduzir um circuito a um único resistor e voltar, achando a corrente em cada um.
+
+Para acompanhar, você precisa de duas coisas: em série, a corrente é a mesma e as resistências somam; em paralelo, a tensão é a mesma, e a equivalente sai pelo produto pela soma, ou pelo valor dividido pela quantidade, para iguais. Se faltar alguma, procure no canal.
+
+O primeiro passo é reconhecer cada grupo. Dois resistores estão em série quando nenhum fio sai do ponto entre eles: a corrente que passa por um é obrigada a passar pelo outro. Estão em paralelo quando ligam os mesmos dois nós, os pontos onde a corrente se divide.
+
+Veja este circuito. Uma pilha de dezoito volts, um resistor de quatro ohms, e, depois dele, seis ohms e três ohms em paralelo, entre os mesmos dois nós.
+
+Comece pelo paralelo. Seis vezes três, dezoito; seis mais três, nove; dezoito dividido por nove, dois ohms. Redesenhe, com um só resistor de dois ohms no lugar dos dois. Sobram quatro e dois em série: a equivalente é seis ohms.
+
+A corrente que sai da pilha é dezoito dividido por seis: três ampères.
+
+Agora, o caminho de volta. Os três ampères passam inteiros pelo resistor de quatro ohms, que está em série: a tensão nele é quatro vezes três, doze volts. O paralelo equivale a dois ohms, e também recebe os três ampères: dois vezes três, seis volts nele. Doze mais seis, os dezoito da pilha.
+
+Esses seis volts são os mesmos nos dois ramos. No de seis ohms: seis dividido por seis, um ampère. No de três: seis dividido por três, dois ampères. Um mais dois, três: a corrente que chegou ao nó.
+
+Cuidado com o erro mais comum: usar a tensão da pilha no paralelo. A pessoa faz dezoito dividido por seis, três ampères, e dezoito dividido por três, seis ampères.
+
+Nove ampères nos ramos, se só três saem da pilha? Impossível. Doze dos dezoito volts ficaram no resistor de quatro ohms, antes do paralelo.
+
+Agora, o atalho para circuitos confusos: dê uma letra a cada nó. Um fio sem resistor não muda a letra: as duas pontas dele recebem a mesma. Resistores com o mesmo par de letras estão em paralelo, não importa como foram desenhados. Dois resistores desenhados um embaixo do outro, com as pontas nas letras á e bê, estão em paralelo, mesmo parecendo outra coisa.
+
+Funciona porque a resistência de um fio é praticamente zero: a tensão nele é zero vezes a corrente, zero. As duas pontas são, na prática, o mesmo ponto. Não compensa em circuitos pequenos, em que a série e o paralelo já estão à vista.
+
+Hora de testar. Uma fonte de trinta volts liga um resistor de quatro ohms em série com dois resistores de doze ohms em paralelo. Qual é a corrente em cada resistor de doze ohms?
+
+Pause o vídeo e tente.
+
+Vamos lá. Dois de doze em paralelo: doze dividido por dois, seis ohms. Em série com quatro: dez ohms. Corrente total: trinta dividido por dez, três ampères.
+
+Agora, a volta. No paralelo, seis vezes três, dezoito volts. Em cada resistor de doze ohms, dezoito dividido por doze: um vírgula cinco ampère. As duas correntes são iguais, porque os ramos são iguais, e somam os três ampères.
+
+Resumindo: reduza um grupo de cada vez, redesenhando; ache a corrente total; e volte: na série, a corrente passa inteira, e, no paralelo, a tensão é a mesma.
+
+Na próxima aula, você vai ver o que acontece quando um fio liga dois pontos sem resistor nenhum: o curto-circuito, e como o disjuntor protege a sua casa. Inscreva-se para seguir o curso do começo ao fim. Bons estudos!
