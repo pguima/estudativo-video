@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-017 · Densidade
 
-**Arquivo:** `final/estudativo_MAT-RAZ-017_densidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-017_densidade.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,18 @@ Um tronco de 300 kg boia no rio, e um clipe de papel, que quase não pesa nada, 
 ✅ O atalho: massa menor que o volume (em g e cm³, ou kg e L) boia
 
 ⏱️ Capítulos
-[TEMPO] O tronco boia e o clipe afunda
-[TEMPO] O que você precisa saber
-[TEMPO] O que é densidade
-[TEMPO] A fórmula d = m/V
-[TEMPO] Calculando a densidade da madeira e da pedra
-[TEMPO] A densidade da água
-[TEMPO] Boia ou afunda?
-[TEMPO] A densidade é do material
-[TEMPO] O erro de achar que o mais pesado afunda
-[TEMPO] O atalho: compare massa e volume
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bola e a peça de metal
-[TEMPO] Resumo e próxima aula
+0:00 O tronco boia e o clipe afunda
+0:16 O que você precisa saber
+0:33 O que é densidade
+0:44 A fórmula d = m/V
+0:59 Calculando a densidade da madeira e da pedra
+1:30 A densidade da água
+1:50 A densidade é do material
+2:04 O erro de achar que o mais pesado afunda
+2:30 O atalho: compare massa e volume
+3:10 Hora de testar
+3:29 Resolvendo: a bola e a peça de metal
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter volume e litros: [LINK MAT-MED-005]

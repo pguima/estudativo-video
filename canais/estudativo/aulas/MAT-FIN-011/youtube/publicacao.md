@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-011 · À vista ou a prazo
 
-**Arquivo:** `final/estudativo_MAT-FIN-011_a_vista_ou_a_prazo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-011_a_vista_ou_a_prazo.mp4` · 4:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,12 +33,12 @@ Uma loja vende um produto por R$ 200 à vista, ou R$ 100 de entrada e R$ 110 daq
 0:00 R$ 200 à vista ou R$ 100 + R$ 110?
 0:24 O que você precisa saber
 0:44 Comparar na mesma data
-1:49 Os juros escondidos na compra a prazo
-2:21 O erro de usar o preço inteiro
+1:50 Os juros escondidos na compra a prazo
+2:22 O erro de usar o preço inteiro
 2:38 O atalho: parcela dividida pelo saldo
-3:03 Hora de testar
-3:22 Resolvendo: a geladeira de R$ 900
-3:47 Resumo e próxima aula
+3:04 Hora de testar
+3:23 Resolvendo: a geladeira de R$ 900
+3:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros compostos: achar o capital ou o tempo: [LINK MAT-FIN-006]

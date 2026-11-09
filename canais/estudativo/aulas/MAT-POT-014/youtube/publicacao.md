@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-014 · Ordem de grandeza
 
-**Arquivo:** `final/estudativo_MAT-POT-014_ordem_de_grandeza.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-014_ordem_de_grandeza.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,17 @@ Pela subtração, 5.000 está mais perto de 1.000. Em ordem de grandeza, a respo
 ✅ O atalho de olhar só o primeiro algarismo
 
 ⏱️ Capítulos
-[TEMPO] 5.000 está mais perto de quem?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é ordem de grandeza
-[TEMPO] Medir em vezes, não em subtração
-[TEMPO] O ponto de virada: 3,16
-[TEMPO] O método em dois passos
-[TEMPO] Um aviso: a referência 5,5
-[TEMPO] O erro com números pequenos
-[TEMPO] O atalho: olhe só o primeiro algarismo
-[TEMPO] Questão: o mundo e a cidade
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 5.000 está mais perto de quem?
+0:29 O que é ordem de grandeza
+0:41 Medir em vezes, não em subtração
+1:06 O ponto de virada: 3,16
+1:46 O método em dois passos
+2:19 Um aviso: a referência 5,5
+2:38 O erro com números pequenos
+3:08 O atalho: olhe só o primeiro algarismo
+3:32 Questão: o mundo e a cidade
+3:45 Resposta
+4:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Raiz quadrada: exata e aproximada: [LINK MAT-POT-007]

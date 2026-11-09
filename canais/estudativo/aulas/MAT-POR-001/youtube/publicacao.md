@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-001 · O que é porcentagem: fração e decimal
 
-**Arquivo:** `final/estudativo_MAT-POR-001_o_que_e_porcentagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-001_o_que_e_porcentagem.mp4` · 4:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,14 @@ Use "Testar e comparar" no Studio com as três.
 
 ⏱️ Capítulos
 0:00 12,5% é uma fatia de pizza
-0:17 O que você precisa saber
-0:26 Por cento quer dizer em cada cem
-0:45 Porcentagem em fração e em decimal
-1:30 Porcentagem com meio: 12,5%
-2:20 O erro de escrever 5% como 0,5
-2:46 O atalho: o caminho das metades
-3:22 Hora de testar
-3:37 Resolvendo a bateria do celular
-4:05 Resumo e próxima aula
+0:27 Por cento quer dizer em cada cem
+0:46 Porcentagem em fração e em decimal
+1:31 Porcentagem com meio: 12,5%
+2:21 O erro de escrever 5% como 0,5
+2:47 O atalho: o caminho das metades
+3:23 Hora de testar
+3:38 Resolvendo a bateria do celular
+4:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações equivalentes e simplificação: [LINK MAT-FRA-003]

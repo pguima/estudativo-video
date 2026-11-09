@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-004 · Juros compostos: mês a mês e a fórmula
 
-**Arquivo:** `final/estudativo_MAT-FIN-004_juros_compostos_formula.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-004_juros_compostos_formula.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,14 +33,14 @@ Mil reais, a 10% ao mês, por três meses. Em juros simples, viram R$ 1.300. Em 
 ⏱️ Capítulos
 0:00 R$ 1.300 ou R$ 1.331?
 0:19 O que você precisa saber
-0:31 Juros compostos mês a mês
-1:07 Com fatores: 1,1 ao cubo
-1:38 A fórmula M = C · (1 + i)^t e a tabela da prova
+0:32 Juros compostos mês a mês
+1:08 Com fatores: 1,1 ao cubo
+1:39 A fórmula M = C · (1 + i)^t e a tabela da prova
 2:33 O erro de multiplicar o fator pelo tempo
-2:52 O atalho para 10%: somar a décima parte
-3:17 Hora de testar
-3:40 Resolvendo: R$ 4.000 a 3% ao mês por 4 meses
-4:16 Resumo e próxima aula
+2:53 O atalho para 10%: somar a décima parte
+3:18 Hora de testar
+3:41 Resolvendo: R$ 4.000 a 3% ao mês por 4 meses
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros simples: [LINK MAT-FIN-001]

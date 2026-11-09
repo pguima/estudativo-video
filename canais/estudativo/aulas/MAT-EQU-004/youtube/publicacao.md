@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-004 · Distributiva e sinal de menos antes do parêntese
 
-**Arquivo:** `final/estudativo_MAT-EQU-004_distributiva_e_sinal_de_menos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-004_distributiva_e_sinal_de_menos.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: menos sozinho troca todos os sinais de dentro
 
 ⏱️ Capítulos
-[TEMPO] 5 − (x − 3): onde o sinal se perde
-[TEMPO] O que você precisa saber
-[TEMPO] Distributiva: três combos
-[TEMPO] Com sinal de menos: −2(x − 5)
-[TEMPO] O menos sozinho antes do parêntese
-[TEMPO] O erro de multiplicar só o primeiro termo
-[TEMPO] O atalho: menos troca todos os sinais
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 2x + 10
-[TEMPO] Resumo e próxima aula
+0:00 5 − (x − 3): onde o sinal se perde
+0:21 O que você precisa saber
+0:35 Distributiva: três combos
+1:18 Com sinal de menos: −2(x − 5)
+1:55 O menos sozinho antes do parêntese
+2:47 O erro de multiplicar só o primeiro termo
+3:05 O atalho: menos troca todos os sinais
+3:40 Hora de testar
+3:55 Resposta: 2x + 10
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Juntar termos semelhantes: [LINK MAT-EQU-003]

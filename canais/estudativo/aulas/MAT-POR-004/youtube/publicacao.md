@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-004 · Fatores de aumento e de desconto
 
-**Arquivo:** `final/estudativo_MAT-POR-004_fatores_de_aumento_e_desconto.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-004_fatores_de_aumento_e_desconto.mp4` · 4:14 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Um produto de R$ 200 vai subir 15%. O normal é calcular o aumento e depois soma
 ⏱️ Capítulos
 0:00 Um aumento de 15% numa conta só
 0:18 O que você precisa saber
-0:28 O jeito longo: duas contas
-0:44 O fator de aumento: × 1,15
-1:26 O fator de desconto: × 0,8
-1:49 A regra: 100 mais ou menos a taxa
-2:12 O erro do 1,5 no lugar de 1,05
-2:34 O atalho: leia o fator ao contrário
-3:04 Hora de testar
-3:20 Resolvendo a conta de luz e o fogão
-3:45 Resumo e próxima aula
+0:29 O jeito longo: duas contas
+0:45 O fator de aumento: × 1,15
+1:27 O fator de desconto: × 0,8
+1:50 A regra: 100 mais ou menos a taxa
+2:13 O erro do 1,5 no lugar de 1,05
+2:35 O atalho: leia o fator ao contrário
+3:05 Hora de testar
+3:21 Resolvendo a conta de luz e o fogão
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular porcentagem de cabeça e na conta: [LINK MAT-POR-002]

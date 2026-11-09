@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-013 · Rendimento líquido
 
-**Arquivo:** `final/estudativo_MAT-FIN-013_rendimento_liquido.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-013_rendimento_liquido.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,15 +33,15 @@ Você aplicou R$ 10.000 e a aplicação chegou a R$ 11.000. Com 15% de imposto, 
 ⏱️ Capítulos
 0:00 R$ 11.000 com 15% de imposto: quanto você leva?
 0:21 O que você precisa saber
-0:35 Rendimento bruto e rendimento líquido
-1:08 A regra: vezes 0,85
-1:21 Com juros compostos
-1:49 Comparar duas aplicações
-2:12 O erro de tirar o imposto do capital
-2:27 O atalho para comparar taxas
-2:58 Hora de testar
-3:18 Resolvendo: R$ 20.000 em duas opções
-3:52 Resumo e próxima aula
+0:36 Rendimento bruto e rendimento líquido
+1:09 A regra: vezes 0,85
+1:23 Com juros compostos
+1:51 Comparar duas aplicações
+2:14 O erro de tirar o imposto do capital
+2:29 O atalho para comparar taxas
+3:00 Hora de testar
+3:20 Resolvendo: R$ 20.000 em duas opções
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros compostos: mês a mês e a fórmula: [LINK MAT-FIN-004]

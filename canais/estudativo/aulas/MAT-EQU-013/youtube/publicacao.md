@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-013 · Montar uma equação a partir do problema
 
-**Arquivo:** `final/estudativo_MAT-EQU-013_montar_equacao_problema.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-013_montar_equacao_problema.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Três números seguidos somam 84. Quais são? Dá para sair chutando, mas existe
 ✅ Um problema de idades resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Três números seguidos somam 84
-[TEMPO] O que você precisa saber
-[TEMPO] O método em quatro passos
-[TEMPO] Números consecutivos
-[TEMPO] O problema da carteira
-[TEMPO] O erro de parar no x
-[TEMPO] O atalho: o número do meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o exercício
-[TEMPO] Resumo e próxima aula
+0:00 Três números seguidos somam 84
+0:16 O que você precisa saber
+0:30 O método em quatro passos
+0:49 Números consecutivos
+1:44 O problema da carteira
+2:55 O erro de parar no x
+3:11 O atalho: o número do meio
+3:36 Hora de testar
+3:50 Resolvendo o exercício
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 A letra no lugar de um número: [LINK MAT-EQU-001]

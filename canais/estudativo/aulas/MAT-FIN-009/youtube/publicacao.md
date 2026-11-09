@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-009 · Inflação acumulada e poder de compra
 
-**Arquivo:** `final/estudativo_MAT-FIN-009_inflacao_e_poder_de_compra.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-009_inflacao_e_poder_de_compra.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,14 @@ A inflação foi de 5% num ano e de 4% no seguinte. Os preços subiram 9%? Quase
 
 ⏱️ Capítulos
 0:00 5% e 4% de inflação dão 9%?
-0:18 O que você precisa saber
-0:31 Inflação acumulada: multiplique os fatores
-1:22 Poder de compra: o pacote de café
-2:20 O erro de achar que a perda é de 25%
-2:33 O atalho com frações
-3:00 Hora de testar
-3:18 Resolvendo: 25% e 20% de inflação
-3:49 Resumo e próxima aula
+0:19 O que você precisa saber
+0:32 Inflação acumulada: multiplique os fatores
+1:23 Poder de compra: o pacote de café
+2:21 O erro de achar que a perda é de 25%
+2:34 O atalho com frações
+3:01 Hora de testar
+3:19 Resolvendo: 25% e 20% de inflação
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Aumentos e descontos sucessivos: [LINK MAT-POR-010]

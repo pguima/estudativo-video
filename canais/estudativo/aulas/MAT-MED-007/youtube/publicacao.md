@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-007 · Somar e subtrair horas
 
-**Arquivo:** `final/estudativo_MAT-MED-007_somar_e_subtrair_horas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-007_somar_e_subtrair_horas.mp4` · 4:05 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,14 @@ Três horas e cinquenta minutos mais duas horas e vinte e cinco minutos: somando
 
 ⏱️ Capítulos
 0:00 5 h 75 min existe?
-0:16 O que você precisa saber
 0:26 Somar horas em dois passos
-1:09 Quando a soma passa de 24 horas
-1:24 Subtrair horas
-1:53 O erro de emprestar 100
+1:10 Quando a soma passa de 24 horas
+1:25 Subtrair horas
+1:54 O erro de emprestar 100
 2:15 O atalho: complete a hora cheia
-2:57 Hora de testar
-3:08 Resolvendo a viagem de ônibus
-3:36 Resumo e próxima aula
+2:59 Hora de testar
+3:12 Resolvendo a viagem de ônibus
+3:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter tempo e hora decimal: [LINK MAT-MED-006]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-006 · Juros compostos: achar o capital ou o tempo
 
-**Arquivo:** `final/estudativo_MAT-FIN-006_juros_compostos_capital_tempo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-006_juros_compostos_capital_tempo.mp4` · 4:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,13 +33,13 @@ Você quer ter R$ 1.210 daqui a dois anos, numa aplicação que rende 10% ao ano
 ⏱️ Capítulos
 0:00 Quanto aplicar hoje para ter R$ 1.210?
 0:24 O que você precisa saber
-0:38 Achar o capital: o caminho de volta
+0:39 Achar o capital: o caminho de volta
 1:31 O erro de tirar os juros do montante
 2:03 Em quanto tempo o dinheiro dobra
-2:40 O atalho: a regra do 72
+2:41 O atalho: a regra do 72
 3:33 Hora de testar
-3:52 Resolvendo: R$ 7.200 em 2 anos e o dobro a 4% ao mês
-4:22 Resumo e próxima aula
+3:53 Resolvendo: R$ 7.200 em 2 anos e o dobro a 4% ao mês
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros compostos: mês a mês e a fórmula: [LINK MAT-FIN-004]

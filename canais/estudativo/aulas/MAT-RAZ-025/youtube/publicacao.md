@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-025 · Unidades como guia
 
-**Arquivo:** `final/estudativo_MAT-RAZ-025_unidades_como_guia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-025_unidades_como_guia.mp4` · 5:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma torneira pingando parece não gastar nada, mas em um mês joga fora mais de 
 ✅ O atalho: monte a fila inteira, corte unidades e números, e só multiplique no fim
 
 ⏱️ Capítulos
-[TEMPO] A torneira pingando
-[TEMPO] O que você precisa saber
-[TEMPO] A unidade corta: km/h vezes h
-[TEMPO] O fator de conversão vale 1
-[TEMPO] Gota a gota até os litros do mês
-[TEMPO] O erro do fator de cabeça para baixo
-[TEMPO] O atalho: monte a fila inteira
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o chuveiro em metros cúbicos
-[TEMPO] Resumo e próxima aula
+0:00 A torneira pingando
+0:20 O que você precisa saber
+0:31 A unidade corta: km/h vezes h
+1:06 O fator de conversão vale 1
+1:32 Gota a gota até os litros do mês
+2:45 O erro do fator de cabeça para baixo
+3:17 O atalho: monte a fila inteira
+3:50 Hora de testar
+4:07 Resolvendo: o chuveiro em metros cúbicos
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar frações: [LINK MAT-FRA-009]

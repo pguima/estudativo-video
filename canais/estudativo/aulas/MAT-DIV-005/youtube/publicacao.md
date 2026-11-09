@@ -1,6 +1,6 @@
 # Publicação — MAT-DIV-005 · Calcular o MMC
 
-**Arquivo:** `final/estudativo_MAT-DIV-005_calcular_mmc.mp4` · 4:12 · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-DIV-005_calcular_mmc.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Qual é o menor número que é múltiplo de 12, de 18 e de 30 ao mesmo tempo? Li
 
 ⏱️ Capítulos
 0:00 O menor múltiplo de 12, 18 e 30
-0:16 O que você precisa lembrar
+0:17 O que você precisa lembrar
 0:27 O que quer dizer MMC
-0:47 Listando múltiplos
-1:18 A fatoração simultânea
-2:11 A diferença entre MDC e MMC
+0:48 Listando múltiplos
+1:19 A fatoração simultânea
+2:12 A diferença entre MDC e MMC
 2:22 O erro de parar antes da hora
-2:36 O atalho MMC × MDC
-3:15 Hora de testar
-3:25 Resolvendo a questão
-3:49 Resumo e próxima aula
+2:37 O atalho MMC × MDC
+3:16 Hora de testar
+3:26 Resolvendo a questão
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Números primos e fatoração: [LINK MAT-DIV-003]

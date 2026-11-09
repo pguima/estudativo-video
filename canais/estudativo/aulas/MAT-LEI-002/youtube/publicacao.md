@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-002 · Palavras que mudam a conta
 
-**Arquivo:** `final/estudativo_MAT-LEI-002_palavras_que_mudam_a_conta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-002_palavras_que_mudam_a_conta.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Se Maria tem x reais e João tem 3 reais a mais que ela, João tem x + 3, e não
 
 ⏱️ Capítulos
 0:00 Três reais a mais não é 3x
-0:17 O que você precisa saber
-0:30 A mais que: soma à base
-1:00 Do restante: fração de quê?
-1:39 No mínimo e no máximo
-2:29 O erro de ler a mais que como vezes
+0:18 O que você precisa saber
+0:31 A mais que: soma à base
+1:01 Do restante: fração de quê?
+1:40 No mínimo e no máximo
+2:30 O erro de ler a mais que como vezes
 2:41 O atalho: troque a letra por 10
 3:15 Hora de testar
-3:31 Resolvendo o problema das camisetas
-3:54 Resumo e próxima aula
+3:32 Resolvendo o problema das camisetas
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 A letra no lugar de um número: [LINK MAT-EQU-001]

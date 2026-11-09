@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-014 · Dividir em partes inversamente proporcionais
 
-**Arquivo:** `final/estudativo_MAT-RAZ-014_divisao_inversamente_proporcional.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-014_divisao_inversamente_proporcional.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um prêmio de R$ 2.340 vai ser dividido entre três funcionários, de forma inve
 ✅ O atalho: MMC ÷ cada número, e quando trocar a ordem funciona (só com duas pessoas)
 
 ⏱️ Capítulos
-[TEMPO] Quem faltou menos leva mais
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia: os pesos são os inversos
-[TEMPO] Tirando as frações com o MMC
-[TEMPO] Achando o k e as partes
-[TEMPO] Conferindo: o produto não muda
-[TEMPO] O erro de trocar a ordem
-[TEMPO] O atalho: MMC dividido por cada número
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a herança dos netos
-[TEMPO] Resumo e próxima aula
+0:00 Quem faltou menos leva mais
+0:22 O que você precisa saber
+0:36 A ideia: os pesos são os inversos
+1:12 Tirando as frações com o MMC
+1:38 Achando o k e as partes
+1:58 Conferindo: o produto não muda
+2:19 O erro de trocar a ordem
+2:54 O atalho: MMC dividido por cada número
+3:28 Hora de testar
+3:46 Resolvendo a herança dos netos
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir em partes diretamente proporcionais: [LINK MAT-RAZ-013]

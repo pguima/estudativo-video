@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-009 · Regra de três composta com grandeza inversa
 
-**Arquivo:** `final/estudativo_MAT-RAZ-009_regra_de_tres_composta_inversa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-009_regra_de_tres_composta_inversa.mp4` · 4:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Doze operários, trabalhando 8 horas por dia, levantam um muro em 15 dias. Dezoi
 ✅ Quando o atalho não vale: obra de outro tamanho
 
 ⏱️ Capítulos
-[TEMPO] Mais gente, mais horas e mais dias?
-[TEMPO] O que você precisa saber
-[TEMPO] Uma grandeza de cada vez
-[TEMPO] Pelas colunas: vire as inversas
-[TEMPO] O erro de tratar tudo como direto
-[TEMPO] O atalho homem-hora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão dos jardineiros
-[TEMPO] Resumo e próxima aula
+0:00 Mais gente, mais horas e mais dias?
+0:23 O que você precisa saber
+0:36 Uma grandeza de cada vez
+1:11 Pelas colunas: vire as inversas
+2:07 O erro de tratar tudo como direto
+2:32 O atalho homem-hora
+3:16 Hora de testar
+3:33 Resolvendo a questão dos jardineiros
+4:04 Resumo e próxima aula
 
 📚 Antes desta aula
 Regra de três inversa: [LINK MAT-RAZ-007]

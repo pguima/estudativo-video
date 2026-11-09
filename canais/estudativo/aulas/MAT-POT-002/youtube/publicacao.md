@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-002 · Potência de negativo, fração ou decimal
 
-**Arquivo:** `final/estudativo_MAT-POT-002_potencia_de_negativo_fracao_decimal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-002_potencia_de_negativo_fracao_decimal.mp4` · 5:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho do expoente par e ímpar
 
 ⏱️ Capítulos
-[TEMPO] Um parêntese troca o sinal
-[TEMPO] O que você precisa saber
-[TEMPO] Base negativa
-[TEMPO] Com e sem parênteses
-[TEMPO] Potência de fração
-[TEMPO] Potência de decimal
-[TEMPO] A potência na ordem das operações
-[TEMPO] O erro de 0,3 ao quadrado
-[TEMPO] O atalho: olhe o expoente
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Um parêntese troca o sinal
+0:23 O que você precisa saber
+0:35 Base negativa
+1:05 Com e sem parênteses
+1:41 Potência de fração
+2:16 Potência de decimal
+2:32 A potência na ordem das operações
+3:18 O erro de 0,3 ao quadrado
+3:42 O atalho: olhe o expoente
+4:12 Hora de testar
+4:24 Resposta
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar frações: [LINK MAT-FRA-009]

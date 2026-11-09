@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-002 · União, interseção, diferença e complementar
 
-**Arquivo:** `final/estudativo_MAT-CON-002_uniao_intersecao_diferenca_complementar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-002_uniao_intersecao_diferenca_complementar.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quem toma café ou chá: quem toma os dois entra na conta? Na matemática, entra
 ✅ O atalho: comece pela interseção, e o resto sai sozinho
 
 ⏱️ Capítulos
-[TEMPO] Café ou chá: quem toma os dois entra?
-[TEMPO] O que você precisa saber
-[TEMPO] O diagrama de Venn
-[TEMPO] Interseção
-[TEMPO] União
-[TEMPO] Diferença
-[TEMPO] Universo e complementar
-[TEMPO] O erro de tirar quem está em ambos
-[TEMPO] O atalho: comece pela interseção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Café ou chá: quem toma os dois entra?
+0:24 O que você precisa saber
+0:35 O diagrama de Venn
+0:52 Interseção
+1:02 União
+1:19 Diferença
+1:34 Universo e complementar
+1:59 O erro de tirar quem está em ambos
+2:24 O atalho: comece pela interseção
+3:03 Hora de testar
+3:25 Resolvendo a questão
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Conjuntos: pertence, está contido e vazio: [LINK MAT-CON-001]

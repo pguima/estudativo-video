@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-005 · Multiplicar termos com letra e duas expressões
 
-**Arquivo:** `final/estudativo_MAT-EQU-005_multiplicar_termos_com_letra.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-005_multiplicar_termos_com_letra.mp4` · 5:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho para (x + a)(x + b), e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] 3x vezes 2x: quanto dá?
-[TEMPO] O que você precisa saber
-[TEMPO] Termo vezes termo
-[TEMPO] Somar não é multiplicar
-[TEMPO] Dois parênteses: o piso retangular
-[TEMPO] O chuveirinho
-[TEMPO] O erro das faixas do meio
-[TEMPO] O atalho de (x + a)(x + b)
-[TEMPO] Hora de testar
-[TEMPO] Resposta: x² + 3x − 4
-[TEMPO] Resumo e próxima aula
+0:00 3x vezes 2x: quanto dá?
+0:19 O que você precisa saber
+0:35 Termo vezes termo
+1:18 Somar não é multiplicar
+1:55 Dois parênteses: o piso retangular
+3:05 O chuveirinho
+3:28 O erro das faixas do meio
+3:42 O atalho de (x + a)(x + b)
+4:14 Hora de testar
+4:28 Resposta: x² + 3x − 4
+5:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Distributiva e sinal de menos antes do parêntese: [LINK MAT-EQU-004]

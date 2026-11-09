@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-004 · Estimar contas e quantidades
 
-**Arquivo:** `final/estudativo_MAT-LEI-004_estimar_contas_e_quantidades.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-004_estimar_contas_e_quantidades.mp4` · 4:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,14 @@ Quantas vezes o coração bate em 70 anos de vida? Milhões? Bilhões? Dá para 
 
 ⏱️ Capítulos
 0:00 Quantas vezes o coração bate em 70 anos?
-0:16 O que você precisa saber
-0:30 O que é estimar
+0:17 O que você precisa saber
+0:31 O que é estimar
 1:14 Estimando as batidas do coração
 2:29 O erro de perder um zero
-2:45 O atalho: um sobe, o outro desce
-3:15 Hora de testar
-3:29 Resolvendo as respirações de um dia
-3:55 Resumo e próxima aula
+2:47 O atalho: um sobe, o outro desce
+3:17 Hora de testar
+3:30 Resolvendo as respirações de um dia
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-014 · Erro relativo: qual erro pesa mais
 
-**Arquivo:** `final/estudativo_MAT-POR-014_erro_relativo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-014_erro_relativo.mp4` · 4:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Um pedreiro errou 1 cm ao medir uma parede de 2 m. Um relojoeiro errou 1 mm numa
 
 ⏱️ Capítulos
 0:00 Qual erro pesa mais: 1 cm em 2 m ou 1 mm em 1 cm?
-0:20 O que você precisa saber
-0:32 Erro absoluto e erro relativo
-1:11 O pedreiro: 1 cm em 2 m
-1:33 O relojoeiro: 1 mm em 1 cm
-1:59 O erro de dividir sem converter
-2:21 O atalho: mesmo número em cima, olhe embaixo
-2:55 Hora de testar
-3:10 Resolvendo o marceneiro e o pedreiro
-3:39 Resumo e próxima aula
+0:21 O que você precisa saber
+0:33 Erro absoluto e erro relativo
+1:12 O pedreiro: 1 cm em 2 m
+1:34 O relojoeiro: 1 mm em 1 cm
+2:00 O erro de dividir sem converter
+2:22 O atalho: mesmo número em cima, olhe embaixo
+2:56 Hora de testar
+3:11 Resolvendo o marceneiro e o pedreiro
+3:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter comprimento, a escada do metro: [LINK MAT-MED-001]

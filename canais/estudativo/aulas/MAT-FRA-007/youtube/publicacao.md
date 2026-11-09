@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-007 · Somar e subtrair com denominadores iguais
 
-**Arquivo:** `final/estudativo_MAT-FRA-007_somar_fracoes_denominadores_iguais.mp4` · 3:26 · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-007_somar_fracoes_denominadores_iguais.mp4` · 3:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,15 @@ Se você somou 2/7 + 3/7 e chegou em 5/14, esta aula é para você. Em pouco mai
 ⏱️ Capítulos
 0:00 O erro de somar os de baixo
 0:20 O que você precisa lembrar
-0:36 A barra de chocolate
-0:56 A regra em duas partes
-1:11 Treinando a soma
-1:29 Subtraindo frações
-1:39 Quanto falta para um inteiro
-1:55 Por que 5/14 está errado
-2:19 Dois atalhos
-2:39 Hora de testar
-2:51 Resolvendo o problema
-3:03 Resumo e próxima aula
+0:37 A barra de chocolate
+0:57 A regra em duas partes
+1:12 Treinando a soma
+1:30 Subtraindo frações
+1:56 Por que 5/14 está errado
+2:21 Dois atalhos
+2:40 Hora de testar
+2:53 Resolvendo o problema
+3:05 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

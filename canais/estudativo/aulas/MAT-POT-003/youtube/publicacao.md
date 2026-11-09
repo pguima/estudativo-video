@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-003 · Multiplicar e dividir potências de mesma base
 
-**Arquivo:** `final/estudativo_MAT-POT-003_multiplicar_dividir_potencias_mesma_base.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-003_multiplicar_dividir_potencias_mesma_base.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Sete elevado a zero não é zero: é 1, e dá para provar. Nesta aula, você mul
 ✅ O atalho da escada do dois
 
 ⏱️ Capítulos
-[TEMPO] Sete elevado a zero
-[TEMPO] O que você precisa saber
-[TEMPO] Multiplicar: soma os expoentes
-[TEMPO] Dividir: subtrai os expoentes
-[TEMPO] A prova do expoente zero
-[TEMPO] Só com a mesma base
-[TEMPO] O erro de multiplicar os expoentes
-[TEMPO] O atalho: a escada do dois
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Sete elevado a zero
+0:20 O que você precisa saber
+0:32 Multiplicar: soma os expoentes
+1:16 Dividir: subtrai os expoentes
+1:47 A prova do expoente zero
+2:29 Só com a mesma base
+2:57 O erro de multiplicar os expoentes
+3:12 O atalho: a escada do dois
+3:52 Hora de testar
+4:07 Resposta
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir por um algarismo, com e sem resto: [LINK MAT-NUM-009]

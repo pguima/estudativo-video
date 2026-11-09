@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-019 · Fração em decimal e decimal em fração
 
-**Arquivo:** `final/estudativo_MAT-FRA-019_fracao_em_decimal_e_decimal_em_fracao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-019_fracao_em_decimal_e_decimal_em_fracao.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,15 @@ Muita gente escreve 3/8 como 3,8, mas um é menos que um inteiro e o outro é qu
 ✅ O atalho de fazer o denominador virar 10 ou 100
 
 ⏱️ Capítulos
-[TEMPO] 3/8 é igual a 3,8?
-[TEMPO] O que você precisa saber
-[TEMPO] O traço da fração é uma divisão
-[TEMPO] Três oitavos em decimal
-[TEMPO] De decimal para fração
-[TEMPO] O erro no número de zeros
-[TEMPO] O atalho: faça o de baixo virar 100
-[TEMPO] Questão: as duas tábuas
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 3/8 é igual a 3,8?
+0:28 O traço da fração é uma divisão
+0:44 Três oitavos em decimal
+1:20 De decimal para fração
+2:11 O erro no número de zeros
+2:28 O atalho: faça o de baixo virar 100
+2:59 Questão: as duas tábuas
+3:15 Resposta
+3:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações equivalentes e simplificação: [LINK MAT-FRA-003]

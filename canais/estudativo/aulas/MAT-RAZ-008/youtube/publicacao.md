@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-008 · Regra de três composta com grandezas diretas
 
-**Arquivo:** `final/estudativo_MAT-RAZ-008_regra_de_tres_composta_diretas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-008_regra_de_tres_composta_diretas.mp4` · 4:57 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Três máquinas, trabalhando quatro horas, fazem 120 peças. Cinco máquinas, tr
 ✅ O atalho: 3 · 4 = 12 horas de máquina, 10 peças por hora de máquina, e quando ele não compensa
 
 ⏱️ Capítulos
-[TEMPO] Faltou uma grandeza na conta
-[TEMPO] O que você precisa saber
-[TEMPO] Uma mudança de cada vez
-[TEMPO] As colunas e a multiplicação das frações
-[TEMPO] O erro de esquecer uma coluna
-[TEMPO] O atalho: 1 máquina em 1 hora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão das costureiras
-[TEMPO] Resumo e próxima aula
+0:00 Faltou uma grandeza na conta
+0:21 O que você precisa saber
+0:35 Uma mudança de cada vez
+1:24 As colunas e a multiplicação das frações
+2:46 O erro de esquecer uma coluna
+3:03 O atalho: 1 máquina em 1 hora
+3:39 Hora de testar
+3:54 Resolvendo a questão das costureiras
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Grandezas direta e inversamente proporcionais: [LINK MAT-RAZ-004]

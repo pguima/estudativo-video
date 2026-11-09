@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-012 · Praticando: equações do 1º grau
 
-**Arquivo:** `final/estudativo_MAT-EQU-012_praticando_equacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-012_praticando_equacoes.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,19 @@ Cinco equações criadas para esta aula, uma de cada tipo: letra dos dois lados,
 ✅ Conferir cada resposta substituindo
 
 ⏱️ Capítulos
-[TEMPO] Cinco equações para resolver
-[TEMPO] A ferramenta de sempre
-[TEMPO] Equação 1: x dos dois lados
-[TEMPO] Resposta da equação 1
-[TEMPO] O atalho: o lado com mais x
-[TEMPO] Equação 2: parênteses
-[TEMPO] Resposta da equação 2
-[TEMPO] Equação 3: frações
-[TEMPO] Resposta da equação 3
-[TEMPO] Equação 4: decimais
-[TEMPO] Resposta da equação 4
-[TEMPO] Equação 5: a fórmula do ciclista
-[TEMPO] Resposta da equação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco equações para resolver
+0:12 A ferramenta de sempre
+0:24 Equação 1: x dos dois lados
+0:58 O atalho: o lado com mais x
+1:16 Equação 2: parênteses
+1:28 Resposta da equação 2
+2:00 Equação 3: frações
+2:11 Resposta da equação 3
+2:59 Equação 4: decimais
+3:12 Resposta da equação 4
+3:38 Equação 5: a fórmula do ciclista
+3:56 Resposta da equação 5
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é equação: fazer o mesmo nos dois lados: [LINK MAT-EQU-007]

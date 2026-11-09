@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-001 · Converter comprimento: a escada do metro
 
-**Arquivo:** `final/estudativo_MAT-MED-001_converter_comprimento_escada_do_metro.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-001_converter_comprimento_escada_do_metro.mp4` · 4:53 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma corrida de 2,5 km tem quantos metros? Se você respondeu 250, encolheu a cor
 
 ⏱️ Capítulos
 0:00 2,5 km dá 250 metros?
-0:20 O que você precisa saber
-0:35 Escolher a unidade certa
-1:16 A escada do metro
-1:54 Quilômetro para metro
-2:18 Centímetro para metro
-2:52 O erro de andar para o lado errado
-3:16 O atalho: o nome diz a conta
-3:53 Hora de testar
-4:08 Resolvendo a caminhada
-4:29 Resumo e próxima aula
+0:21 O que você precisa saber
+0:36 Escolher a unidade certa
+1:17 A escada do metro
+1:55 Quilômetro para metro
+2:19 Centímetro para metro
+2:53 O erro de andar para o lado errado
+3:17 O atalho: o nome diz a conta
+3:55 Hora de testar
+4:09 Resolvendo a caminhada
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar decimais e andar com a vírgula: [LINK MAT-FRA-016]

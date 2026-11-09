@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-021 · Praticando: números decimais
 
-**Arquivo:** `final/estudativo_MAT-FRA-021_praticando_numeros_decimais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-021_praticando_numeros_decimais.mp4` · 4:53 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações de dinheiro e de medida, criadas para esta aula: o troco do me
 ✅ Escrever 0,85 como 17/20 e multiplicar por 100
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações de dinheiro e medida
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: o troco no mercado
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: o pacote de arroz
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: o tecido
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: três quartos de um preço
-[TEMPO] Situação 4: a conta entre amigos
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: a caminhada
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e fim da trilha
+0:00 Cinco situações de dinheiro e medida
+0:12 As quatro ferramentas
+0:23 Situação 1: o troco no mercado
+0:38 Resposta da situação 1
+0:55 Situação 2: o pacote de arroz
+1:13 Resposta da situação 2
+1:53 Situação 3: o tecido
+2:06 Resposta da situação 3
+2:32 O atalho: três quartos de um preço
+3:00 Situação 4: a conta entre amigos
+3:16 Resposta da situação 4
+3:48 Situação 5: a caminhada
+4:03 Resposta da situação 5
+4:23 Resumo e fim da trilha
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

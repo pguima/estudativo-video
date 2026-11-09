@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-008 · Equação com letra dos dois lados
 
-**Arquivo:** `final/estudativo_MAT-EQU-008_equacao_letra_dos_dois_lados.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-008_equacao_letra_dos_dois_lados.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Quando a equação tem x dos dois lados do igual, a regra continua a da balança
 ✅ O atalho de passar para o outro lado, e o cuidado com o número que multiplica
 
 ⏱️ Capítulos
-[TEMPO] x dos dois lados do igual
-[TEMPO] O que você precisa saber
-[TEMPO] Desfazer na ordem contrária
-[TEMPO] Resolvendo 2x + 3 = 11
-[TEMPO] Caixas nos dois pratos
-[TEMPO] Por que tirar 3x, e não 5x
-[TEMPO] Terminando: x = 5
-[TEMPO] Conferindo nos dois lados
-[TEMPO] O erro de dividir primeiro
-[TEMPO] O atalho: passa para o outro lado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 7x − 4 = 3x + 20
-[TEMPO] Resumo e próxima aula
+0:00 x dos dois lados do igual
+0:18 O que você precisa saber
+0:32 Desfazer na ordem contrária
+0:56 Resolvendo 2x + 3 = 11
+1:16 Caixas nos dois pratos
+1:41 Por que tirar 3x, e não 5x
+2:03 Terminando: x = 5
+2:15 Conferindo nos dois lados
+2:30 O erro de dividir primeiro
+2:56 O atalho: passa para o outro lado
+3:39 Hora de testar
+3:51 Resolvendo 7x − 4 = 3x + 20
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Juntar termos semelhantes: [LINK MAT-EQU-003]

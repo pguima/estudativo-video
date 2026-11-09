@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-002 · Calcular porcentagem de cabeça e na conta
 
-**Arquivo:** `final/estudativo_MAT-POR-002_calcular_porcentagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-002_calcular_porcentagem.mp4` · 4:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Quanto é 15% de 80? Dá para fazer de cabeça, em poucos segundos: 10% de 80 é
 
 ⏱️ Capítulos
 0:00 15% de 80 de cabeça
-0:15 O que você precisa saber
-0:28 Comece pelo 10%
+0:16 O que você precisa saber
+0:29 Comece pelo 10%
 0:54 Montando 5%, 20%, 15% e 1%
-1:24 Na conta: multiplicar pelo decimal
-2:13 O erro de esquecer as casas
-2:28 O atalho: troque a ordem
-2:59 Hora de testar
-3:13 Resolvendo a taxa de serviço
-3:37 Resumo e próxima aula
+1:25 Na conta: multiplicar pelo decimal
+2:14 O erro de esquecer as casas
+2:29 O atalho: troque a ordem
+3:00 Hora de testar
+3:14 Resolvendo a taxa de serviço
+3:38 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é porcentagem: fração e decimal: [LINK MAT-POR-001]

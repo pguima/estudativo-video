@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-012 · Tabelas SAC e Price
 
-**Arquivo:** `final/estudativo_MAT-FIN-012_tabelas_sac_e_price.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-012_tabelas_sac_e_price.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,15 +33,15 @@ Dois financiamentos de R$ 10.000, com a mesma taxa e o mesmo prazo. No fim, um d
 ⏱️ Capítulos
 0:00 Mesma taxa, mesmo prazo: qual cobra mais juros?
 0:19 O que você precisa saber
-0:31 Prestação, juros, amortização e saldo devedor
+0:32 Prestação, juros, amortização e saldo devedor
 0:54 A SAC: amortização constante
-1:40 A tabela Price: prestações iguais
-2:14 Por que a Price cobra mais juros
-2:52 O erro de calcular os juros sobre o valor emprestado
-3:09 O atalho da SAC
-3:34 Hora de testar
+1:41 A tabela Price: prestações iguais
+2:15 Por que a Price cobra mais juros
+2:53 O erro de calcular os juros sobre o valor emprestado
+3:10 O atalho da SAC
+3:35 Hora de testar
 3:51 Resolvendo: R$ 60.000 em 60 meses
-4:21 Resumo e próxima aula
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros simples: [LINK MAT-FIN-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-011 · Ler uma fórmula como proporcionalidade
 
-**Arquivo:** `final/estudativo_MAT-RAZ-011_formula_como_proporcionalidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-011_formula_como_proporcionalidade.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um fio ganha o dobro do comprimento, e o corte dele fica com a metade da área. 
 ✅ O atalho: troque cada letra pelo fator, 1 · 2 ÷ 1/2 = 4, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] O fio mais comprido e mais fino
-[TEMPO] O que você precisa saber
-[TEMPO] A letra que multiplica: direta
-[TEMPO] A letra que divide: inversa
-[TEMPO] A fórmula do fio, uma mudança de cada vez
-[TEMPO] O erro de tratar a letra de baixo como de cima
-[TEMPO] O atalho: troque cada letra pelo fator
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 O fio mais comprido e mais fino
+0:21 O que você precisa saber
+0:36 A letra que multiplica: direta
+0:52 A letra que divide: inversa
+1:24 A fórmula do fio, uma mudança de cada vez
+2:23 O erro de tratar a letra de baixo como de cima
+2:46 O atalho: troque cada letra pelo fator
+3:30 Hora de testar
+3:47 Resolvendo a questão
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Isolar uma letra numa fórmula: [LINK MAT-EQU-011]

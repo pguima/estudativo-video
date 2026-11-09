@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-004 · Potência de potência e de um produto
 
-**Arquivo:** `final/estudativo_MAT-POT-004_potencia_de_potencia_e_de_produto.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-004_potencia_de_potencia_e_de_produto.mp4` · 5:09 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Se você somou os expoentes de (2³)⁴ e chegou em 2⁷, errou: a resposta é 2
 ✅ O atalho dos pares de 2 e 5
 
 ⏱️ Capítulos
-[TEMPO] Soma ou multiplica?
-[TEMPO] O que você precisa saber
-[TEMPO] Potência de potência
-[TEMPO] Potência de um produto
-[TEMPO] Fatoração com potências
-[TEMPO] O erro do parêntese com soma
-[TEMPO] O atalho: pares de 2 e 5
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Soma ou multiplica?
+0:23 O que você precisa saber
+0:37 Potência de potência
+1:25 Potência de um produto
+2:08 Fatoração com potências
+2:53 O erro do parêntese com soma
+3:17 O atalho: pares de 2 e 5
+3:56 Hora de testar
+4:07 Resposta
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Números primos e fatoração: [LINK MAT-DIV-003]

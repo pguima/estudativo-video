@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-015 · Praticando: notação científica
 
-**Arquivo:** `final/estudativo_MAT-POT-015_praticando_notacao_cientifica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-015_praticando_notacao_cientifica.mp4` · 5:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações criadas para esta aula: a luz do Sol até a Terra, o fio de c
 ✅ O atalho de andar a vírgula antes de dividir
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações, a começar pela luz do Sol
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: a luz do Sol
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: o fio de cabelo e as bactérias
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: as duas cidades
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: ande a vírgula antes de dividir
-[TEMPO] Situação 4: os segundos de um ano
-[TEMPO] Resposta da situação 4
-[TEMPO] Resumo e fim da trilha
+0:00 Quatro situações, a começar pela luz do Sol
+0:15 As quatro ferramentas
+0:29 Situação 1: a luz do Sol
+0:46 Resposta da situação 1
+1:39 Situação 2: o fio de cabelo e as bactérias
+2:10 Resposta da situação 2
+2:48 Situação 3: as duas cidades
+3:04 Resposta da situação 3
+3:32 O atalho: ande a vírgula antes de dividir
+4:02 Situação 4: os segundos de um ano
+4:17 Resposta da situação 4
+4:34 Resumo e fim da trilha
 
 📚 Antes desta aula
 Escrever em notação científica: [LINK MAT-POT-012]

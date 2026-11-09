@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-021 · Praticando: sistemas de equações
 
-**Arquivo:** `final/estudativo_MAT-EQU-021_praticando_sistemas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-021_praticando_sistemas.mp4` · 4:39 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Quatro problemas de preço e quantidade, criados para esta aula, com preços inv
 ✅ Supor que todos os lanches são de R$ 8 e achar 30 lanches de R$ 12
 
 ⏱️ Capítulos
-[TEMPO] Quatro problemas de preço e quantidade
-[TEMPO] As três ferramentas
-[TEMPO] Problema 1: a padaria
-[TEMPO] Resposta do problema 1
-[TEMPO] Problema 2: a loja
-[TEMPO] Resposta do problema 2
-[TEMPO] Problema 3: cadernos e canetas
-[TEMPO] Resposta do problema 3
-[TEMPO] Problema 4: a lanchonete
-[TEMPO] Resposta do problema 4
-[TEMPO] Resumo e fim da trilha
+0:00 Quatro problemas de preço e quantidade
+0:14 As três ferramentas
+0:28 Problema 1: a padaria
+0:42 Resposta do problema 1
+1:20 Problema 2: a loja
+1:35 Resposta do problema 2
+2:12 Problema 3: cadernos e canetas
+2:28 Resposta do problema 3
+3:12 Problema 4: a lanchonete
+3:29 Resposta do problema 4
+4:17 Resumo e fim da trilha
 
 📚 Antes desta aula
 Sistema de equações: método da substituição: [LINK MAT-EQU-018]

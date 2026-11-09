@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-003 · Prefixos e unidades fora do sistema métrico
 
-**Arquivo:** `final/estudativo_MAT-MED-003_prefixos_e_unidades_fora_do_sistema_metrico.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-003_prefixos_e_unidades_fora_do_sistema_metrico.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Dois gigabytes são dois bilhões de bytes: escrito por inteiro, o número tem n
 
 ⏱️ Capítulos
 0:00 2 GB são quantos bytes?
-0:19 O que você precisa saber
+0:20 O que você precisa saber
 0:33 Prefixos gigantes: quilo, mega e giga
-1:20 Prefixos minúsculos: mili, micro e nano
-1:47 Unidades fora do sistema métrico
-2:29 O erro de dividir pelo fator
-2:42 O atalho: de 3 em 3 no expoente
-3:08 Hora de testar
-3:27 Resolvendo o pendrive e a corrida
-3:57 Resumo e próxima aula
+1:21 Prefixos minúsculos: mili, micro e nano
+1:48 Unidades fora do sistema métrico
+2:30 O erro de dividir pelo fator
+2:44 O atalho: de 3 em 3 no expoente
+3:09 Hora de testar
+3:28 Resolvendo o pendrive e a corrida
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter massa e capacidade: [LINK MAT-MED-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-015 · Resolver inequação do 1º grau
 
-**Arquivo:** `final/estudativo_MAT-EQU-015_resolver_inequacao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-015_resolver_inequacao.mp4` · 5:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Muita gente resolve −2x < 6 e escreve x < −3. Só que o zero serve na inequa
 ✅ O atalho de testar o zero na inequação original
 
 ⏱️ Capítulos
-[TEMPO] O erro do −2x < 6
-[TEMPO] O que você precisa saber
-[TEMPO] O que é uma inequação
-[TEMPO] Por que o sinal vira
-[TEMPO] Resolvendo −2x < 6 e marcando na reta
-[TEMPO] O erro oposto: virar sem precisar
-[TEMPO] O atalho: teste o zero
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 O erro do −2x < 6
+0:28 O que você precisa saber
+0:41 O que é uma inequação
+1:24 Por que o sinal vira
+2:26 Resolvendo −2x < 6 e marcando na reta
+3:08 O erro oposto: virar sem precisar
+3:38 O atalho: teste o zero
+4:10 Hora de testar
+4:26 Resolvendo o problema
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação com letra dos dois lados: [LINK MAT-EQU-008]

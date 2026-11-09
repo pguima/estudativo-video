@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-011 · Praticando: raízes
 
-**Arquivo:** `final/estudativo_MAT-POT-011_praticando_raizes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-011_praticando_raizes.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,17 @@ Quatro problemas de medida, criados para esta aula: o rodapé de uma sala, uma t
 ✅ Ver 729^(2/3) no fundo do reservatório
 
 ⏱️ Capítulos
-[TEMPO] Quatro problemas de medida
-[TEMPO] A ideia que volta sempre
-[TEMPO] Problema 1: o rodapé
-[TEMPO] Resposta do problema 1
-[TEMPO] Problema 2: a tábua no jardim
-[TEMPO] Resposta do problema 2
-[TEMPO] O atalho: compare os quadrados
-[TEMPO] Problema 3: os canteiros
-[TEMPO] Resposta do problema 3
-[TEMPO] Problema 4: o reservatório
-[TEMPO] Resposta do problema 4
-[TEMPO] Resumo e próxima aula
+0:00 Quatro problemas de medida
+0:25 Problema 1: o rodapé
+0:42 Resposta do problema 1
+1:12 Problema 2: a tábua no jardim
+1:28 Resposta do problema 2
+1:41 O atalho: compare os quadrados
+2:05 Problema 3: os canteiros
+2:26 Resposta do problema 3
+2:59 Problema 4: o reservatório
+3:26 Resposta do problema 4
+4:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Raiz quadrada: exata e aproximada: [LINK MAT-POT-007]

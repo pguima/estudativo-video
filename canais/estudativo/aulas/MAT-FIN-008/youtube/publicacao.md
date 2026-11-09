@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-008 · Taxa equivalente e taxa efetiva
 
-**Arquivo:** `final/estudativo_MAT-FIN-008_taxa_equivalente_e_efetiva.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-008_taxa_equivalente_e_efetiva.mp4` · 5:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Um financiamento cobra 1% ao mês. Em um ano, dá 12%? Não: dá 12,68%. Nesta a
 
 ⏱️ Capítulos
 0:00 1% ao mês dá 12% ao ano?
-0:17 O que você precisa saber
+0:18 O que você precisa saber
 0:33 10% ao mês durante 2 meses
 0:58 Taxas equivalentes: é só potência
-1:23 1% ao mês durante um ano: 12,68%
+1:24 1% ao mês durante um ano: 12,68%
 2:02 O caminho de volta: a raiz quadrada
 2:20 Taxa nominal e taxa efetiva
-3:02 O erro de multiplicar a taxa pelo tempo
-3:17 O atalho para dois períodos
-3:53 Hora de testar
-4:12 Resolvendo: 24% ao ano com capitalização mensal
-4:44 Resumo e próxima aula
+3:03 O erro de multiplicar a taxa pelo tempo
+3:18 O atalho para dois períodos
+3:54 Hora de testar
+4:13 Resolvendo: 24% ao ano com capitalização mensal
+4:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros compostos: mês a mês e a fórmula: [LINK MAT-FIN-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-002 · Valor numérico de uma expressão
 
-**Arquivo:** `final/estudativo_MAT-EQU-002_valor_numerico_de_uma_expressao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-002_valor_numerico_de_uma_expressao.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,14 @@ Quanto vale 2x² − 3 quando x = −2? Se deu −11, faltou um par de parêntes
 ✅ O atalho: expoente par apaga o sinal, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] Deu −11? Faltou um parêntese
-[TEMPO] O que você precisa saber
-[TEMPO] Trocar a letra pelo número
-[TEMPO] A conta do começo, passo a passo
-[TEMPO] O erro do vezes antes da potência
-[TEMPO] O atalho: expoente par apaga o sinal
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 21
-[TEMPO] Resumo e próxima aula
+0:00 Deu −11? Faltou um parêntese
+0:17 O que você precisa saber
+0:40 Trocar a letra pelo número
+1:39 A conta do começo, passo a passo
+2:19 O erro do vezes antes da potência
+2:37 O atalho: expoente par apaga o sinal
+3:21 Hora de testar
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 A letra no lugar de um número: [LINK MAT-EQU-001]

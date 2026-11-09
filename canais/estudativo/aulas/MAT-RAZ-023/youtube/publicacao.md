@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-023 · Praticando: escalas
 
-**Arquivo:** `final/estudativo_MAT-RAZ-023_praticando_escalas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-023_praticando_escalas.mp4` · 4:35 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações com mapas, plantas e maquetes, cada uma com pausa para você t
 ✅ Conferir se a resposta faz sentido no mundo real
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para treinar
-[TEMPO] As ferramentas que você vai usar
-[TEMPO] Situação 1: distância no mapa
-[TEMPO] Resposta: multiplica e anda a vírgula
-[TEMPO] Situação 2: o corredor na planta
-[TEMPO] Resposta: converta antes de dividir
-[TEMPO] Situação 3: a trilha e a escala gráfica
-[TEMPO] Resposta: trechos e escala numérica
-[TEMPO] Situação 4: a área do apartamento
-[TEMPO] Resposta: converta os lados
-[TEMPO] Situação 5: o volume na maquete
-[TEMPO] Resposta: escala ao cubo
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para treinar
+0:14 As ferramentas que você vai usar
+0:32 Situação 1: distância no mapa
+0:45 Resposta: multiplica e anda a vírgula
+1:02 Situação 2: o corredor na planta
+1:15 Resposta: converta antes de dividir
+1:40 Situação 3: a trilha e a escala gráfica
+1:58 Resposta: trechos e escala numérica
+2:28 Situação 4: a área do apartamento
+2:42 Resposta: converta os lados
+3:21 Situação 5: o volume na maquete
+3:36 Resposta: escala ao cubo
+4:04 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é escala: medida real e do desenho: [LINK MAT-RAZ-020]

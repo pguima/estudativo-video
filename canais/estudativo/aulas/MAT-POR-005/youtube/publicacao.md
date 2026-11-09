@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-005 · Variação percentual
 
-**Arquivo:** `final/estudativo_MAT-POR-005_variacao_percentual.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-005_variacao_percentual.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,14 +32,14 @@ Um preço passou de R$ 80 para R$ 100. Subiu R$ 20, e muita gente diz: aumento d
 ⏱️ Capítulos
 0:00 De R$ 80 para R$ 100: aumento de quanto?
 0:19 O que você precisa saber
-0:29 Quantos por cento de quê? Do valor de antes
+0:30 Quantos por cento de quê? Do valor de antes
 1:00 A regra em 3 passos
-1:28 Na queda é igual
-1:53 O erro de dividir pelo valor novo
+1:29 Na queda é igual
+1:54 O erro de dividir pelo valor novo
 2:07 O atalho: divida o novo pelo antigo
 2:57 Hora de testar
-3:14 Resolvendo o aluguel e o produto
-3:50 Resumo e próxima aula
+3:15 Resolvendo o aluguel e o produto
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Descobrir quantos por cento e achar o total: [LINK MAT-POR-003]

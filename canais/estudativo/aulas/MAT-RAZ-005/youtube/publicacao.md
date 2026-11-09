@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-005 · Direta, inversa ou nenhuma: o teste do dobro
 
-**Arquivo:** `final/estudativo_MAT-RAZ-005_teste_do_dobro.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-005_teste_do_dobro.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,14 +30,13 @@ Numa cidade inventada, uma corrida de táxi de 2 km custa R$ 11. Então a de 4 k
 
 ⏱️ Capítulos
 0:00 O táxi de R$ 11 e o de R$ 17
-0:21 O que você precisa saber
 0:31 O teste do dobro e as três saídas
-1:22 Por que o táxi não é proporcional
+1:23 Por que o táxi não é proporcional
 1:59 O erro: um sobe, o outro desce
 2:34 O atalho: o teste do zero
-3:07 Hora de testar
-3:35 Resolvendo as três situações
-4:08 Resumo e próxima aula
+3:08 Hora de testar
+3:36 Resolvendo as três situações
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Grandezas direta e inversamente proporcionais: [LINK MAT-RAZ-004]

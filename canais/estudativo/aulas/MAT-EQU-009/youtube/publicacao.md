@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-009 · Equação com parênteses
 
-**Arquivo:** `final/estudativo_MAT-EQU-009_equacao_com_parenteses.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-009_equacao_com_parenteses.mp4` · 4:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Você resolve 2x + 1 = 2x + 3, faz tudo certo, e o x some. Errou? Não: a equaç
 ✅ O atalho: compare o número que multiplica o x dos dois lados
 
 ⏱️ Capítulos
-[TEMPO] O x sumiu: errou?
-[TEMPO] O que você precisa saber
-[TEMPO] Resolvendo 3(x − 2) = 2x + 4
-[TEMPO] O erro de multiplicar só o x
-[TEMPO] Quando o x some
-[TEMPO] O atalho: compare o número do x
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o exercício
-[TEMPO] Resumo e próxima aula
+0:00 O x sumiu: errou?
+0:19 O que você precisa saber
+0:31 Resolvendo 3(x − 2) = 2x + 4
+1:26 O erro de multiplicar só o x
+1:48 Quando o x some
+2:49 O atalho: compare o número do x
+3:17 Hora de testar
+3:31 Resolvendo o exercício
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Distributiva e sinal de menos antes do parêntese: [LINK MAT-EQU-004]

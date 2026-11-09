@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-013 · Contas em notação científica
 
-**Arquivo:** `final/estudativo_MAT-POT-013_contas_em_notacao_cientifica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-013_contas_em_notacao_cientifica.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Quem soma 3 × 10⁵ com 8 × 10⁴ e escreve 11 × 10⁵ acha quase o triplo do
 ✅ O atalho de achar o expoente antes da conta
 
 ⏱️ Capítulos
-[TEMPO] O erro de somar 3 com 8
-[TEMPO] O que você precisa saber
-[TEMPO] Multiplicar: caixas e folhas
-[TEMPO] Dividir: a massa da Terra e da Lua
-[TEMPO] Somar: as notas e o mesmo expoente
-[TEMPO] O erro comum
-[TEMPO] O atalho: ache o expoente antes da conta
-[TEMPO] Questão: as garrafas da fábrica
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 O erro de somar 3 com 8
+0:20 O que você precisa saber
+0:32 Multiplicar: caixas e folhas
+1:20 Dividir: a massa da Terra e da Lua
+2:07 Somar: as notas e o mesmo expoente
+2:57 O erro comum
+3:15 O atalho: ache o expoente antes da conta
+3:41 Questão: as garrafas da fábrica
+3:57 Resposta
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Escrever em notação científica: [LINK MAT-POT-012]

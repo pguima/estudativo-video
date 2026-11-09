@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-012 · Escrever em notação científica
 
-**Arquivo:** `final/estudativo_MAT-POT-012_escrever_em_notacao_cientifica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-012_escrever_em_notacao_cientifica.mp4` · 4:48 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Por que 45 × 10³ vale 45 mil e mesmo assim não está na forma correta? Nesta 
 ✅ O atalho de contar os algarismos depois do primeiro
 
 ⏱️ Capítulos
-[TEMPO] 45 × 10³: conta certa, forma errada
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a notação científica existe
-[TEMPO] A forma: a frente e a potência de 10
-[TEMPO] Número grande: 45 milhões
-[TEMPO] Número pequeno: 0,00032
-[TEMPO] A regra em três linhas
-[TEMPO] Corrigindo 45 × 10³
-[TEMPO] O erro de contar os zeros
-[TEMPO] O atalho: conte depois do primeiro algarismo
-[TEMPO] Questão: o Brasil e o glóbulo vermelho
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 45 × 10³: conta certa, forma errada
+0:20 O que você precisa saber
+0:32 Por que a notação científica existe
+0:48 A forma: a frente e a potência de 10
+1:12 Número grande: 45 milhões
+1:42 Número pequeno: 0,00032
+2:14 A regra em três linhas
+2:26 Corrigindo 45 × 10³
+2:57 O erro de contar os zeros
+3:18 O atalho: conte depois do primeiro algarismo
+3:43 Questão: o Brasil e o glóbulo vermelho
+4:02 Resposta
+4:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler e comparar números grandes: [LINK MAT-NUM-002]

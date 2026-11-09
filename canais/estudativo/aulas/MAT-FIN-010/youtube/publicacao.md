@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-010 · Taxa real de juros
 
-**Arquivo:** `final/estudativo_MAT-FIN-010_taxa_real_de_juros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-010_taxa_real_de_juros.mp4` · 4:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,14 +32,14 @@ Uma aplicação rendeu 10% num ano em que a inflação foi de 5%. Você ficou 5%
 ⏱️ Capítulos
 0:00 Rendeu 10% com inflação de 5%: ganhou 5%?
 0:17 O que você precisa saber
-0:31 Taxa aparente e taxa real
-0:41 O exemplo com R$ 1.000
-1:25 A regra com fatores: divida pela inflação
+0:32 Taxa aparente e taxa real
+0:42 O exemplo com R$ 1.000
+1:26 A regra com fatores: divida pela inflação
 2:09 O erro de subtrair as taxas
-2:28 O atalho para conferir
-2:58 Hora de testar
-3:13 Resolvendo: 26% de rendimento e 20% de inflação
-3:42 Resumo e próxima aula
+2:29 O atalho para conferir
+2:59 Hora de testar
+3:14 Resolvendo: 26% de rendimento e 20% de inflação
+3:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Inflação acumulada e poder de compra: [LINK MAT-FIN-009]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-019 · Sistema de equações: método da adição
 
-**Arquivo:** `final/estudativo_MAT-EQU-019_sistema_metodo_da_adicao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-019_sistema_metodo_da_adicao.mp4` · 5:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ Um sistema para você resolver, com a resposta passo a passo
 
 ⏱️ Capítulos
-[TEMPO] O sistema que se resolve somando
-[TEMPO] O que você precisa saber
-[TEMPO] Por que pode somar: a balança
-[TEMPO] Somando as equações
-[TEMPO] Quando não basta: multiplicar antes
-[TEMPO] O erro de multiplicar só um lado
-[TEMPO] O atalho: olhe o que a pergunta pede
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o sistema
-[TEMPO] Resumo e próxima aula
+0:00 O sistema que se resolve somando
+0:22 O que você precisa saber
+0:36 Por que pode somar: a balança
+1:06 Somando as equações
+1:42 Quando não basta: multiplicar antes
+3:12 O erro de multiplicar só um lado
+3:38 O atalho: olhe o que a pergunta pede
+4:09 Hora de testar
+4:24 Resolvendo o sistema
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Distributiva e sinal de menos antes do parêntese: [LINK MAT-EQU-004]

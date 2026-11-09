@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-014 · Comparar dois planos
 
-**Arquivo:** `final/estudativo_MAT-EQU-014_comparar_dois_planos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-014_comparar_dois_planos.mp4` · 4:21 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ O plano A cobra R$ 40 por mês mais R$ 0,50 por minuto. O plano B cobra R$ 20 po
 ✅ Um problema de táxi resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Qual plano é mais barato?
-[TEMPO] O que você precisa saber
-[TEMPO] A conta de cada plano
-[TEMPO] Testando numa tabela
-[TEMPO] A equação do empate
-[TEMPO] O erro de olhar só a mensalidade
-[TEMPO] O atalho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Qual plano é mais barato?
+0:29 O que você precisa saber
+0:42 A conta de cada plano
+1:01 Testando numa tabela
+1:27 A equação do empate
+2:20 O erro de olhar só a mensalidade
+2:36 O atalho
+3:08 Hora de testar
+3:27 Resolvendo o problema
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

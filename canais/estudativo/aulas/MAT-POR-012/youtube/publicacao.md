@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-012 · Ponto percentual e porcentagem de porcentagem
 
-**Arquivo:** `final/estudativo_MAT-POR-012_ponto_percentual.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-012_ponto_percentual.mp4` · 4:57 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ A parte dos trabalhadores que vão de bicicleta passou de 8% para 10%. Um jornal
 ✅ O atalho: multiplique os números e divida por 100
 
 ⏱️ Capítulos
-[TEMPO] De 8% para 10%: subiu 2% ou 25%?
-[TEMPO] O que você precisa saber
-[TEMPO] Ponto percentual e variação percentual
-[TEMPO] Porcentagem de porcentagem
-[TEMPO] Qual jornal errou
-[TEMPO] O atalho: multiplique e divida por 100
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: alunos de bicicleta
-[TEMPO] Resumo e próxima aula
+0:00 De 8% para 10%: subiu 2% ou 25%?
+0:25 O que você precisa saber
+0:38 Ponto percentual e variação percentual
+1:41 Porcentagem de porcentagem
+2:22 Qual jornal errou
+2:47 O atalho: multiplique e divida por 100
+3:25 Hora de testar
+3:52 Resolvendo: alunos de bicicleta
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular porcentagem de cabeça e na conta: [LINK MAT-POR-002]

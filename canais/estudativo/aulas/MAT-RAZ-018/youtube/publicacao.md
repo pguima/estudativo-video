@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-018 · Vazão e torneiras juntas
 
-**Arquivo:** `final/estudativo_MAT-RAZ-018_vazao_e_torneiras_juntas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-018_vazao_e_torneiras_juntas.mp4` · 5:09 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Uma torneira enche a caixa em 3 horas, outra em 6. Juntas, levam 4 horas e meia?
 ✅ O atalho de duas torneiras: produto sobre soma, (3 × 6) ÷ (3 + 6) = 2 horas
 
 ⏱️ Capítulos
-[TEMPO] Duas torneiras juntas: 4 horas e meia?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é vazão
-[TEMPO] Em quanto tempo a caixa enche
-[TEMPO] Duas vazões: some as vazões
-[TEMPO] Só os tempos: quanto enche em uma hora
-[TEMPO] O erro de unidade: metro cúbico e litro
-[TEMPO] O atalho: produto sobre soma
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: tanque de 4 h e de 12 h
-[TEMPO] Resumo e próxima aula
+0:00 Duas torneiras juntas: 4 horas e meia?
+0:26 O que você precisa saber
+0:40 O que é vazão
+1:15 Em quanto tempo a caixa enche
+1:47 Duas vazões: some as vazões
+2:12 Só os tempos: quanto enche em uma hora
+2:45 O erro de unidade: metro cúbico e litro
+3:12 O atalho: produto sobre soma
+4:09 Hora de testar
+4:23 Resolvendo: tanque de 4 h e de 12 h
+4:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Somar frações com denominadores diferentes: [LINK MAT-FRA-008]

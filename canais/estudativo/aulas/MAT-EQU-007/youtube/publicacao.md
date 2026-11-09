@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-007 · O que é equação: fazer o mesmo nos dois lados
 
-**Arquivo:** `final/estudativo_MAT-EQU-007_o_que_e_equacao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-007_o_que_e_equacao.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,19 @@ Equação é uma balança: o sinal de igual é o equilíbrio, e ela só continua
 ✅ O atalho: em questão com alternativas, teste as alternativas
 
 ⏱️ Capítulos
-[TEMPO] Será que x vale 4?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é equação e como conferir
-[TEMPO] A balança: o mesmo nos dois lados
-[TEMPO] x + 7 = 12: subtraia
-[TEMPO] 3x = 12: divida
-[TEMPO] x/4 = 5: multiplique
-[TEMPO] O padrão das quatro contas
-[TEMPO] O erro de usar a conta errada
-[TEMPO] O atalho: teste as alternativas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo x − 6 = 9
-[TEMPO] Resumo e próxima aula
+0:00 Será que x vale 4?
+0:17 O que você precisa saber
+0:28 O que é equação e como conferir
+1:07 A balança: o mesmo nos dois lados
+1:27 x + 7 = 12: subtraia
+1:52 3x = 12: divida
+2:09 x/4 = 5: multiplique
+2:30 O padrão das quatro contas
+2:44 O erro de usar a conta errada
+3:08 O atalho: teste as alternativas
+3:31 Hora de testar
+3:41 Resolvendo x − 6 = 9
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico de uma expressão: [LINK MAT-EQU-002]

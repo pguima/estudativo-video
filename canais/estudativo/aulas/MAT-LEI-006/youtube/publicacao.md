@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-006 · Escolher a melhor opção
 
-**Arquivo:** `final/estudativo_MAT-LEI-006_escolher_a_melhor_opcao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-006_escolher_a_melhor_opcao.mp4` · 4:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,14 @@ Uma garrafa de suco de 1,5 litro custa R$ 5,40 e uma de 2 litros custa R$ 7,00. 
 
 ⏱️ Capítulos
 0:00 A etiqueta menor engana
-0:18 O que você precisa saber
-0:30 Compare o preço por litro
-1:14 A compra mais barata de 16 latas
-2:20 O erro de parar no preço por lata
-2:37 O atalho: comece pelo máximo
-3:00 Hora de testar
-3:17 Resolvendo a compra de 22 garrafas
-3:46 Resumo e próxima aula
+0:19 O que você precisa saber
+0:31 Compare o preço por litro
+1:15 A compra mais barata de 16 latas
+2:21 O erro de parar no preço por lata
+2:38 O atalho: comece pelo máximo
+3:01 Hora de testar
+3:18 Resolvendo a compra de 22 garrafas
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Desenhar o problema: barras e tabelas: [LINK MAT-LEI-003]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-018 · Sistema de equações: método da substituição
 
-**Arquivo:** `final/estudativo_MAT-EQU-018_sistema_substituicao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-018_sistema_substituicao.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ x + y = 5 tem resposta demais: x pode ser 1, 2, 3... Com uma segunda equação, 
 ✅ Um sistema resolvido passo a passo: x = 4 e y = 8
 
 ⏱️ Capítulos
-[TEMPO] Uma equação, resposta demais
-[TEMPO] O que você precisa saber
-[TEMPO] O que é sistema e solução
-[TEMPO] O problema dos carros e motos
-[TEMPO] O método em três passos
-[TEMPO] Conferindo nas duas equações
-[TEMPO] O erro no parêntese
-[TEMPO] O atalho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Uma equação, resposta demais
+0:26 O que você precisa saber
+0:39 O que é sistema e solução
+1:15 O problema dos carros e motos
+1:43 O método em três passos
+2:41 Conferindo nas duas equações
+2:54 O erro no parêntese
+3:16 O atalho
+3:44 Hora de testar
+3:58 Resolvendo o problema
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação com parênteses: [LINK MAT-EQU-009]

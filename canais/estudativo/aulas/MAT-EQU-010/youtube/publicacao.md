@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-010 · Equação com frações ou decimais
 
-**Arquivo:** `final/estudativo_MAT-EQU-010_equacao_com_fracoes_e_decimais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-010_equacao_com_fracoes_e_decimais.mp4` · 4:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Fração dentro de equação assusta, mas some num passo só: multiplique cada t
 ✅ O atalho: dividir por 0,5 é dobrar
 
 ⏱️ Capítulos
-[TEMPO] Fração dentro de equação
-[TEMPO] O que você precisa saber
-[TEMPO] Multiplicar tudo pelo MMC
-[TEMPO] Por que funciona: a balança
-[TEMPO] Divide pelo de baixo, multiplica pelo de cima
-[TEMPO] Resolvendo x/2 + x/3 = 5
-[TEMPO] Equação com vírgula: tudo vezes 10
-[TEMPO] Resolvendo 0,5x + 1,2 = 3
-[TEMPO] O erro de multiplicar só as frações
-[TEMPO] O atalho: dividir por 0,5 é dobrar
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo x/4 + 1 = x/6 + 2
-[TEMPO] Resumo e próxima aula
+0:00 Fração dentro de equação
+0:18 O que você precisa saber
+0:30 Multiplicar tudo pelo MMC
+0:43 Por que funciona: a balança
+1:01 Divide pelo de baixo, multiplica pelo de cima
+1:16 Resolvendo x/2 + x/3 = 5
+1:34 Equação com vírgula: tudo vezes 10
+1:49 Resolvendo 0,5x + 1,2 = 3
+2:16 O erro de multiplicar só as frações
+2:41 O atalho: dividir por 0,5 é dobrar
+3:12 Hora de testar
+3:24 Resolvendo x/4 + 1 = x/6 + 2
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular o MMC: [LINK MAT-DIV-005]

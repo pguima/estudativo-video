@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-019 · Praticando: divisão proporcional, velocidade, densidade e vazão
 
-**Arquivo:** `final/estudativo_MAT-RAZ-019_praticando_proporcao_velocidade_densidade_vazao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-019_praticando_proporcao_velocidade_densidade_vazao.mp4` · 5:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações para treinar tudo desta parte do curso, cada uma com pausa par
 ✅ 1,2 h não é 1 h 20 min: são 1 h 12 min
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para treinar
-[TEMPO] As ferramentas que você vai usar
-[TEMPO] Situação 1: os sócios
-[TEMPO] Resposta: capital vezes tempo
-[TEMPO] Situação 2: o prêmio
-[TEMPO] Resposta: inversa às faltas
-[TEMPO] Situação 3: a viagem
-[TEMPO] Resposta: distância total sobre tempo total
-[TEMPO] Situação 4: o objeto na água
-[TEMPO] Resposta: densidade e boia
-[TEMPO] Situação 5: a caixa-d'água
-[TEMPO] Resposta: 1,2 hora em horas e minutos
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para treinar
+0:13 As ferramentas que você vai usar
+0:30 Situação 1: os sócios
+0:47 Resposta: capital vezes tempo
+1:20 Situação 2: o prêmio
+1:36 Resposta: inversa às faltas
+2:09 Situação 3: a viagem
+2:31 Resposta: distância total sobre tempo total
+3:09 Situação 4: o objeto na água
+3:23 Resposta: densidade e boia
+3:56 Situação 5: a caixa-d'água
+4:10 Resposta: 1,2 hora em horas e minutos
+5:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Dividir em partes diretamente proporcionais: [LINK MAT-RAZ-013]

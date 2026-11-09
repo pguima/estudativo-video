@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-003 · Frações equivalentes e simplificação
 
-**Arquivo:** `final/estudativo_MAT-FRA-003_fracoes_equivalentes_simplificacao.mp4` · 4:15 · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-003_fracoes_equivalentes_simplificacao.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -34,14 +34,14 @@ Use "Testar e comparar" no Studio com as três.
 0:00 18/24 é só 3/4 disfarçado
 0:18 O que você precisa saber
 0:29 A mesma barra: 1/2, 2/4 e 3/6
-1:08 A regra das frações equivalentes
-1:35 Simplificar frações
-2:01 Degrau a degrau e com o MDC
-2:38 O erro de somar em cima e embaixo
-2:59 O atalho: teste da cruz
-3:24 Hora de testar
-3:38 Resolvendo o problema
-3:55 Resumo e próxima aula
+1:09 A regra das frações equivalentes
+1:36 Simplificar frações
+2:02 Degrau a degrau e com o MDC
+2:40 O erro de somar em cima e embaixo
+3:01 O atalho: teste da cruz
+3:26 Hora de testar
+3:40 Resolvendo o problema
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é uma fração: [LINK MAT-FRA-001]

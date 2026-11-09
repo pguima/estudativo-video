@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-002 · Achar capital, taxa ou tempo
 
-**Arquivo:** `final/estudativo_MAT-FIN-002_achar_capital_taxa_tempo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-002_achar_capital_taxa_tempo.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,15 @@ Um dinheiro aplicado a 5% ao mês, em juros simples: em quanto tempo ele dobra? 
 ⏱️ Capítulos
 0:00 Em quanto tempo o dinheiro dobra?
 0:17 O que você precisa saber
-0:28 A prova pode esconder qualquer letra
-0:38 Achar o tempo: t = J ÷ C · i
-1:06 Dobrar a 5% ao mês: 20 meses
-1:52 Achar a taxa: i = J ÷ C · t
-2:14 Achar o capital pela porcentagem
-2:39 O erro de confundir montante com juros
-2:55 O atalho para dobrar: 100 ÷ taxa
-3:21 Hora de testar
-3:31 Resolvendo: em quantos meses a dívida triplica
-3:58 Resumo e próxima aula
+0:29 A prova pode esconder qualquer letra
+1:07 Dobrar a 5% ao mês: 20 meses
+1:53 Achar a taxa: i = J ÷ C · t
+2:15 Achar o capital pela porcentagem
+2:40 O erro de confundir montante com juros
+2:56 O atalho para dobrar: 100 ÷ taxa
+3:22 Hora de testar
+3:32 Resolvendo: em quantos meses a dívida triplica
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros simples: [LINK MAT-FIN-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-005 · Conta por faixas
 
-**Arquivo:** `final/estudativo_MAT-LEI-005_conta_por_faixas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-005_conta_por_faixas.mp4` · 4:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,13 @@ Uma casa gastou 24 metros cúbicos de água no mês. Se você calculou R$ 196,80
 
 ⏱️ Capítulos
 0:00 R$ 196,80 na conta de água?
-0:18 O que você precisa saber
 0:28 Metro cúbico e cobrança por faixas
-1:01 Calculando a conta de 24 m³
-2:06 O erro de cobrar tudo pelo preço mais caro
-2:40 O atalho: faixa cheia vira valor fixo
-3:07 Hora de testar
+1:02 Calculando a conta de 24 m³
+2:07 O erro de cobrar tudo pelo preço mais caro
+2:41 O atalho: faixa cheia vira valor fixo
+3:08 Hora de testar
 3:19 Resolvendo a conta de 31 m³
-3:44 Resumo e próxima aula
+3:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar decimais e andar com a vírgula: [LINK MAT-FRA-016]

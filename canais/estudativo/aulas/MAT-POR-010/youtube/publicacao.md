@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-010 · Aumentos e descontos sucessivos
 
-**Arquivo:** `final/estudativo_MAT-POR-010_aumentos_e_descontos_sucessivos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-010_aumentos_e_descontos_sucessivos.mp4` · 4:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um produto subiu 10% em um mês e 20% no mês seguinte. Subiu 30% no total? Não
 ✅ O atalho: a + b + a × b ÷ 100, com desconto entrando com sinal de menos
 
 ⏱️ Capítulos
-[TEMPO] Subiu 10% e 20%: subiu 30%?
-[TEMPO] O que você precisa saber
-[TEMPO] Fazendo com R$ 100
-[TEMPO] Multiplicando os fatores
-[TEMPO] Subir 20% e cair 20%
-[TEMPO] O erro de somar as porcentagens
-[TEMPO] O atalho para duas variações
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: +25% e −20%
-[TEMPO] Resumo e próxima aula
+0:00 Subiu 10% e 20%: subiu 30%?
+0:18 O que você precisa saber
+0:35 Fazendo com R$ 100
+0:58 Multiplicando os fatores
+1:27 Subir 20% e cair 20%
+2:09 O erro de somar as porcentagens
+2:22 O atalho para duas variações
+3:05 Hora de testar
+3:22 Resolvendo: +25% e −20%
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Fatores de aumento e de desconto: [LINK MAT-POR-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-003 · O truque do k
 
-**Arquivo:** `final/estudativo_MAT-RAZ-003_truque_do_k.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-003_truque_do_k.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,14 @@ Dois números estão na razão 3 para 5 e somam 64. Quais são eles? Nesta aula,
 
 ⏱️ Capítulos
 0:00 3 para 5 e somam 64: quais são?
-0:20 O que você precisa saber
-0:29 A ideia: pacotinhos iguais
+0:30 A ideia: pacotinhos iguais
 1:04 Resolvendo com o k
-1:56 E com três números?
-2:11 O erro de confundir com 3/5 do total
-2:38 O atalho: total ÷ número de partes
+1:57 E com três números?
+2:12 O erro de confundir com 3/5 do total
+2:39 O atalho: total ÷ número de partes
 3:13 Hora de testar
-3:27 Resolvendo a questão da massa
-3:59 Resumo e próxima aula
+3:28 Resolvendo a questão da massa
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Proporção: achar o termo desconhecido: [LINK MAT-RAZ-002]

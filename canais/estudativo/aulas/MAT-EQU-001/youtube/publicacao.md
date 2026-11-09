@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-001 · A letra no lugar de um número
 
-**Arquivo:** `final/estudativo_MAT-EQU-001_a_letra_no_lugar_de_um_numero.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-001_a_letra_no_lugar_de_um_numero.mp4` · 4:43 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Se x vale 5, quanto vale 2x? Se você pensou em 25, esta aula é para você. Em 
 ✅ O teste do 10, e por que não testar com o 2
 
 ⏱️ Capítulos
-[TEMPO] Se x vale 5, quanto vale 2x?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que usar uma letra
-[TEMPO] Como ler 2x + 3
-[TEMPO] Escrevendo frases em linguagem matemática
-[TEMPO] O erro do dobro
-[TEMPO] O atalho: o teste do 10
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 3x − 4
-[TEMPO] Resumo e próxima aula
+0:00 Se x vale 5, quanto vale 2x?
+0:17 O que você precisa saber
+0:30 Por que usar uma letra
+1:06 Como ler 2x + 3
+1:55 Escrevendo frases em linguagem matemática
+2:49 O erro do dobro
+3:04 O atalho: o teste do 10
+3:44 Hora de testar
+3:58 Resposta: 3x − 4
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Ordem das operações e parênteses: [LINK MAT-NUM-013]

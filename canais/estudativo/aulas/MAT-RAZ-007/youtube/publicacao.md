@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-007 · Regra de três inversa
 
-**Arquivo:** `final/estudativo_MAT-RAZ-007_regra_de_tres_inversa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-007_regra_de_tres_inversa.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Quatro pintores pintam uma casa em nove dias. Com seis pintores, quantos dias? Q
 ✅ O atalho: na inversa, multiplique na linha, também para velocidade e tempo
 
 ⏱️ Capítulos
-[TEMPO] Mais pintores, mais dias?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a multiplicação não muda
-[TEMPO] Pela tabela: vire a coluna sem o x
-[TEMPO] O erro de montar como direta
-[TEMPO] O atalho: multiplique na linha
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão da ração
-[TEMPO] Resumo e próxima aula
+0:00 Mais pintores, mais dias?
+0:20 O que você precisa saber
+0:32 Por que a multiplicação não muda
+1:26 Pela tabela: vire a coluna sem o x
+2:01 O erro de montar como direta
+2:27 O atalho: multiplique na linha
+3:13 Hora de testar
+3:28 Resolvendo a questão da ração
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Direta, inversa ou nenhuma: o teste do dobro: [LINK MAT-RAZ-005]

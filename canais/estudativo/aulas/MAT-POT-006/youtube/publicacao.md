@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-006 · Praticando: potências
 
-**Arquivo:** `final/estudativo_MAT-POT-006_praticando_potencias.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-006_praticando_potencias.mp4` · 5:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,21 +30,20 @@ Cinco contas criadas para esta aula, e cada uma junta o que você viu sobre pot�
 ✅ Testar uma regra com números pequenos
 
 ⏱️ Capítulos
-[TEMPO] Cinco contas
-[TEMPO] Suas ferramentas
-[TEMPO] Conta 1
-[TEMPO] Resposta da conta 1
-[TEMPO] O atalho: tudo na mesma base
-[TEMPO] Conta 2
-[TEMPO] Resposta da conta 2
-[TEMPO] Conta 3
-[TEMPO] Resposta da conta 3
-[TEMPO] Conta 4
-[TEMPO] Resposta da conta 4
-[TEMPO] Conta 5: a pilha de papel
-[TEMPO] Resposta da conta 5
-[TEMPO] Última dica: teste com números pequenos
-[TEMPO] Resumo e próxima aula
+0:00 Cinco contas
+0:13 Suas ferramentas
+0:31 Conta 1
+0:43 Resposta da conta 1
+1:14 O atalho: tudo na mesma base
+1:29 Conta 2
+1:44 Resposta da conta 2
+2:15 Conta 3
+2:26 Resposta da conta 3
+2:52 Conta 4
+3:27 Conta 5: a pilha de papel
+3:45 Resposta da conta 5
+4:13 Última dica: teste com números pequenos
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é potência: [LINK MAT-POT-001]

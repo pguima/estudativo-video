@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-005 · Converter volume e litros
 
-**Arquivo:** `final/estudativo_MAT-MED-005_converter_volume_e_litros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-005_converter_volume_e_litros.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,14 +32,14 @@ Uma caixa-d'água de 2 metros cúbicos guarda quantos litros? Se você pensou 2 
 ⏱️ Capítulos
 0:00 2 m³ são quantos litros?
 0:20 O que você precisa saber
-0:31 O que é volume e o metro cúbico
-1:14 Do metro cúbico ao decímetro cúbico
+0:32 O que é volume e o metro cúbico
+1:15 Do metro cúbico ao decímetro cúbico
 1:46 A ponte com o litro
-2:36 O erro de usar a regra da área
-2:57 O atalho: de m³ para litro, vezes mil
-3:19 Hora de testar
-3:34 Resolvendo o reservatório e a lata
-3:57 Resumo e próxima aula
+2:37 O erro de usar a regra da área
+2:58 O atalho: de m³ para litro, vezes mil
+3:20 Hora de testar
+3:35 Resolvendo o reservatório e a lata
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter massa e capacidade: [LINK MAT-MED-002]

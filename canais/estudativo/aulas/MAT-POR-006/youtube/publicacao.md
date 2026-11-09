@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-006 · Achar o preço antes do aumento ou desconto
 
-**Arquivo:** `final/estudativo_MAT-POR-006_preco_antes_do_aumento_ou_desconto.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-006_preco_antes_do_aumento_ou_desconto.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Você pagou R$ 96 com 20% de desconto. Quanto custava antes? Quem soma 20% chega
 ✅ O atalho: 20% = 1/5, então 96 ÷ 4 × 5 = 120
 
 ⏱️ Capítulos
-[TEMPO] Quanto custava antes do desconto?
-[TEMPO] O que você precisa saber
-[TEMPO] A máquina do desconto
-[TEMPO] Rodando a máquina ao contrário: 96 ÷ 0,8
-[TEMPO] A regra: agora dividido pelo fator
-[TEMPO] Com aumento: 230 ÷ 1,15
-[TEMPO] O erro de calcular sobre o preço de agora
-[TEMPO] O atalho com frações
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a conta de luz
-[TEMPO] Resumo e próxima aula
+0:00 Quanto custava antes do desconto?
+0:23 O que você precisa saber
+0:41 A máquina do desconto
+1:01 Rodando a máquina ao contrário: 96 ÷ 0,8
+1:28 A regra: agora dividido pelo fator
+1:39 Com aumento: 230 ÷ 1,15
+2:13 O erro de calcular sobre o preço de agora
+2:43 O atalho com frações
+3:26 Hora de testar
+3:40 Resolvendo a conta de luz
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Fatores de aumento e de desconto: [LINK MAT-POR-004]

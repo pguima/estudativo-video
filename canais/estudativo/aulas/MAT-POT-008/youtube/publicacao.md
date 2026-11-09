@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-008 · Expoente fracionário
 
-**Arquivo:** `final/estudativo_MAT-POT-008_expoente_fracionario.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-008_expoente_fracionario.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,13 @@ Nove elevado a um meio não é 4,5: a resposta é 3. Esse expoente em forma de f
 ✅ Uma questão resolvida: 25 elevado a 3/2
 
 ⏱️ Capítulos
-[TEMPO] 9 elevado a um meio
-[TEMPO] O que você precisa lembrar
-[TEMPO] De onde vem o expoente em fração
-[TEMPO] Quando o de cima não é 1
-[TEMPO] O erro de trocar os papéis
-[TEMPO] O atalho: base como potência
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 9 elevado a um meio
+0:24 De onde vem o expoente em fração
+1:57 Quando o de cima não é 1
+2:40 O erro de trocar os papéis
+3:00 O atalho: base como potência
+3:33 Hora de testar
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência de potência e de um produto: [LINK MAT-POT-004]

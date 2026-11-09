@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-017 · Dividir com resultado decimal
 
-**Arquivo:** `final/estudativo_MAT-FRA-017_dividir_resultado_decimal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-017_dividir_resultado_decimal.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Sete reais entre quatro pessoas dá um, e sobram três. Se você escreveu 1,3, e
 ✅ O atalho de dividir por 4: metade da metade
 
 ⏱️ Capítulos
-[TEMPO] 7 ÷ 4 deu 1,3?
-[TEMPO] O que você precisa saber
-[TEMPO] Quando já existe vírgula: 7,5 ÷ 3
-[TEMPO] Continuar depois da vírgula: 7 ÷ 4
-[TEMPO] Quando não dá nem um inteiro: 1 ÷ 4
-[TEMPO] O zero no resultado: 4,2 ÷ 4
-[TEMPO] Quando o resto nunca zera: 10 ÷ 3
-[TEMPO] O erro de colar o resto
-[TEMPO] Atalho: metade da metade
-[TEMPO] Hora de testar: a conta dos seis amigos
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 7 ÷ 4 deu 1,3?
+0:18 O que você precisa saber
+0:28 Quando já existe vírgula: 7,5 ÷ 3
+1:00 Continuar depois da vírgula: 7 ÷ 4
+1:56 Quando não dá nem um inteiro: 1 ÷ 4
+2:16 O zero no resultado: 4,2 ÷ 4
+2:40 Quando o resto nunca zera: 10 ÷ 3
+2:58 O erro de colar o resto
+3:13 Atalho: metade da metade
+3:36 Hora de testar: a conta dos seis amigos
+3:48 Resposta
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

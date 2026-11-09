@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-001 · Juros simples
 
-**Arquivo:** `final/estudativo_MAT-FIN-001_juros_simples.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-001_juros_simples.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,15 +33,15 @@ Você pegou R$ 1.000 emprestados a 36% ao ano e pagou tudo em 5 meses. Se a sua 
 ⏱️ Capítulos
 0:00 Juros de R$ 1.800 num empréstimo de R$ 1.000?
 0:23 O que você precisa saber
-0:33 Os quatro personagens: capital, taxa, tempo e montante
+0:34 Os quatro personagens: capital, taxa, tempo e montante
 1:07 Mês a mês: R$ 24 todo mês
-1:35 A fórmula J = C · i · t
-2:12 Taxa e tempo na mesma unidade
-2:54 O erro de não passar a taxa para decimal
-3:12 O atalho: taxa e tempo numa porcentagem só
-3:42 Hora de testar
-3:58 Resolvendo: R$ 2.000 a 18% ao ano por 4 meses
-4:18 Resumo e próxima aula
+1:36 A fórmula J = C · i · t
+2:13 Taxa e tempo na mesma unidade
+2:55 O erro de não passar a taxa para decimal
+3:13 O atalho: taxa e tempo numa porcentagem só
+3:43 Hora de testar
+3:59 Resolvendo: R$ 2.000 a 18% ao ano por 4 meses
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular porcentagem de cabeça e na conta: [LINK MAT-POR-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-005 · Juros simples contra compostos
 
-**Arquivo:** `final/estudativo_MAT-FIN-005_juros_simples_contra_compostos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-005_juros_simples_contra_compostos.mp4` · 4:05 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Juros compostos rendem sempre mais que juros simples? Parece verdade, mas é fal
 
 ⏱️ Capítulos
 0:00 Juros compostos rendem sempre mais?
-0:14 O que você precisa saber
-0:29 Em um mês: empate
-0:53 Em dois meses ou mais: ganham os compostos
-1:28 Em meio mês: ganham os simples
-2:12 No gráfico: a reta e a curva
-2:25 O erro de achar que compostos sempre rendem mais
-2:40 O atalho: compare o prazo com 1 período
-3:01 Hora de testar
-3:14 Resolvendo: 12% ao ano em 6 meses, 1 ano e 2 anos
-3:40 Resumo e próxima aula
+0:15 O que você precisa saber
+0:30 Em um mês: empate
+0:54 Em dois meses ou mais: ganham os compostos
+1:29 Em meio mês: ganham os simples
+2:13 No gráfico: a reta e a curva
+2:26 O erro de achar que compostos sempre rendem mais
+2:41 O atalho: compare o prazo com 1 período
+3:02 Hora de testar
+3:16 Resolvendo: 12% ao ano em 6 meses, 1 ano e 2 anos
+3:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros compostos: mês a mês e a fórmula: [LINK MAT-FIN-004]

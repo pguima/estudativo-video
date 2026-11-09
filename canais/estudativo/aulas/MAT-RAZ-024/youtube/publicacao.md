@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-024 · Velocidade média em dois trechos
 
-**Arquivo:** `final/estudativo_MAT-RAZ-024_velocidade_media_em_dois_trechos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-024_velocidade_media_em_dois_trechos.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Um carro vai a uma cidade a 40 km/h e volta pelo mesmo caminho a 60 km/h. Qual �
 ✅ O atalho para ida e volta: o dobro do produto dividido pela soma
 
 ⏱️ Capítulos
-[TEMPO] Ida a 40, volta a 60: não é 50
-[TEMPO] O que você precisa saber
-[TEMPO] Escolhendo a distância
-[TEMPO] O tempo de cada trecho
-[TEMPO] Por que não dá 50
-[TEMPO] Quando a média simples funciona
-[TEMPO] Trechos diferentes e parada no meio
-[TEMPO] O erro da média das velocidades
-[TEMPO] O atalho: o dobro do produto pela soma
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a ida e volta do ônibus
-[TEMPO] Resumo e próxima aula
+0:00 Ida a 40, volta a 60: não é 50
+0:22 O que você precisa saber
+0:37 Escolhendo a distância
+0:49 O tempo de cada trecho
+1:12 Por que não dá 50
+1:40 Quando a média simples funciona
+1:57 Trechos diferentes e parada no meio
+2:30 O erro da média das velocidades
+2:47 O atalho: o dobro do produto pela soma
+3:24 Hora de testar
+3:39 Resolvendo a ida e volta do ônibus
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Taxas e velocidade média: [LINK MAT-RAZ-015]

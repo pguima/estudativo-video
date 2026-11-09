@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-003 · Conta atrasada: multa com juros
 
-**Arquivo:** `final/estudativo_MAT-FIN-003_conta_atrasada_multa_juros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-003_conta_atrasada_multa_juros.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,14 @@ Uma conta de R$ 200 paga com 10 dias de atraso, com multa de 2% e juros de mora 
 
 ⏱️ Capítulos
 0:00 Conta de R$ 200 com 10 dias de atraso: quanto você paga?
-0:23 O que você precisa saber
 0:32 Duas cobranças: multa e juros de mora
-0:59 A multa: 2% de R$ 200
-1:08 A mora: de taxa ao mês para taxa ao dia
-1:56 O total: R$ 206
-2:16 O erro de cobrar a multa todo dia
-2:33 O atalho: some as porcentagens antes
-3:04 Hora de testar
-3:22 Resolvendo: conta de internet com 20 dias de atraso
-3:56 Resumo e próxima aula
+1:00 A multa: 2% de R$ 200
+1:57 O total: R$ 206
+2:18 O erro de cobrar a multa todo dia
+2:35 O atalho: some as porcentagens antes
+3:07 Hora de testar
+3:24 Resolvendo: conta de internet com 20 dias de atraso
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros simples: [LINK MAT-FIN-001]

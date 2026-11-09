@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-005 · Expoente negativo e potências de 10
 
-**Arquivo:** `final/estudativo_MAT-POT-005_expoente_negativo_potencias_de_10.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-005_expoente_negativo_potencias_de_10.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Dois elevado a menos três não é menos oito. O resultado nem é negativo: é u
 ✅ O atalho para escrever 10⁻⁶ como decimal
 
 ⏱️ Capítulos
-[TEMPO] Dois elevado a menos três
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem o expoente negativo
-[TEMPO] A escada que desce
-[TEMPO] Potências de 10: zeros e casas
-[TEMPO] O erro do começo
-[TEMPO] O atalho da base 10
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Dois elevado a menos três
+0:20 O que você precisa saber
+0:34 De onde vem o expoente negativo
+1:37 A escada que desce
+2:03 Potências de 10: zeros e casas
+2:45 O erro do começo
+3:01 O atalho da base 10
+3:33 Hora de testar
+3:48 Resposta
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar decimais e andar com a vírgula: [LINK MAT-FRA-016]

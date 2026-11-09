@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-016 · Multiplicar decimais e andar com a vírgula
 
-**Arquivo:** `final/estudativo_MAT-FRA-016_multiplicar_decimais_andar_virgula.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-016_multiplicar_decimais_andar_virgula.mp4` · 4:43 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um metro de fita custa 30 centavos, você leva um metro e vinte, e a conta deu R
 ✅ O atalho do vezes 5
 
 ⏱️ Capítulos
-[TEMPO] 1,2 × 0,3 deu 3,6?
-[TEMPO] O que você precisa saber
-[TEMPO] Andar com a vírgula
-[TEMPO] Multiplicar decimais em três passos
-[TEMPO] E com sinal negativo?
-[TEMPO] O erro de contar um número só
-[TEMPO] Atalho: vezes cinco
-[TEMPO] Hora de testar: o tecido fiado
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 1,2 × 0,3 deu 3,6?
+0:25 O que você precisa saber
+0:36 Andar com a vírgula
+1:42 Multiplicar decimais em três passos
+2:33 E com sinal negativo?
+3:12 O erro de contar um número só
+3:25 Atalho: vezes cinco
+3:44 Hora de testar: o tecido fiado
+3:58 Resposta
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

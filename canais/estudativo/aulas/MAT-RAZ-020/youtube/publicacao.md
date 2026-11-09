@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-020 · O que é escala: medida real e do desenho
 
-**Arquivo:** `final/estudativo_MAT-RAZ-020_o_que_e_escala.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-020_o_que_e_escala.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Num mapa, duas cidades estão a 3 cm uma da outra. No mundo real, são quilômet
 ✅ O atalho: em 1 : 50.000, 1 cm vale 500 m, ou 0,5 km
 
 ⏱️ Capítulos
-[TEMPO] O número no canto do mapa
-[TEMPO] O que você precisa saber
-[TEMPO] O que é escala: 1 : 100
-[TEMPO] Do papel para o real: o mapa de 1 : 50.000
-[TEMPO] Do real para o papel: a parede na planta
-[TEMPO] O erro de esquecer a escada
-[TEMPO] O atalho: quanto vale 1 cm
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 7 cm em 1 : 200.000
-[TEMPO] Resumo e próxima aula
+0:00 O número no canto do mapa
+0:22 O que você precisa saber
+0:35 O que é escala: 1 : 100
+1:20 Do papel para o real: o mapa de 1 : 50.000
+1:59 Do real para o papel: a parede na planta
+2:35 O erro de esquecer a escada
+2:56 O atalho: quanto vale 1 cm
+3:35 Hora de testar
+3:48 Resolvendo: 7 cm em 1 : 200.000
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é razão: [LINK MAT-RAZ-001]

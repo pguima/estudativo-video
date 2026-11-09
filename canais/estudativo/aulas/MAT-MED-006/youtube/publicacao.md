@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-006 · Converter tempo e hora decimal
 
-**Arquivo:** `final/estudativo_MAT-MED-006_converter_tempo_e_hora_decimal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-006_converter_tempo_e_hora_decimal.mp4` · 4:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ O aplicativo diz que a viagem dura 2,2 horas. Se você leu 2 horas e 20 minutos,
 
 ⏱️ Capítulos
 0:00 2,2 horas são 2 h 20 min?
-0:17 O que você precisa saber
-0:29 O tempo anda de 60 em 60
-0:52 Horas e minutos em minutos
+0:18 O que você precisa saber
+0:30 O tempo anda de 60 em 60
+0:53 Horas e minutos em minutos
 1:16 Minutos em horas
-1:54 Hora com vírgula
-2:32 O erro de ler décimos como minutos
-2:46 O atalho: cada décimo são 6 minutos
-3:15 Hora de testar
+1:55 Hora com vírgula
+2:33 O erro de ler décimos como minutos
+2:47 O atalho: cada décimo são 6 minutos
+3:17 Hora de testar
 3:31 Resolvendo a entrega e o treino
-3:56 Resumo e próxima aula
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Fração de uma quantidade: [LINK MAT-FRA-002]

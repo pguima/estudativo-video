@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-017 · Praticando: problemas e inequações
 
-**Arquivo:** `final/estudativo_MAT-EQU-017_praticando_problemas_e_inequacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-017_praticando_problemas_e_inequacoes.mp4` · 4:57 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações criadas para esta aula, com valores inventados: um livro lido
 ✅ Responder com o maior número inteiro: 17 horas
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: o livro
-[TEMPO] Resposta da situação 1
-[TEMPO] O atalho: a fração que falta
-[TEMPO] Situação 2: as academias
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: inequação dupla
-[TEMPO] Resposta da situação 3
-[TEMPO] Situação 4: a caixa-d'água
-[TEMPO] Resposta da situação 4
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:15 As quatro ferramentas
+0:30 Situação 1: o livro
+0:45 Resposta da situação 1
+1:23 O atalho: a fração que falta
+1:49 Situação 2: as academias
+2:08 Resposta da situação 2
+2:37 Situação 3: inequação dupla
+2:51 Resposta da situação 3
+3:20 Situação 4: a caixa-d'água
+3:39 Resposta da situação 4
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

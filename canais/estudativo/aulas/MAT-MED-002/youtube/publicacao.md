@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-002 · Converter massa e capacidade
 
-**Arquivo:** `final/estudativo_MAT-MED-002_converter_massa_e_capacidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-002_converter_massa_e_capacidade.mp4` · 4:39 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,14 +32,14 @@ Uma garrafa de 750 mL tem quantos litros? Se você respondeu 7,5, sua garrafa vi
 ⏱️ Capítulos
 0:00 750 mL são 7,5 litros?
 0:19 O que você precisa saber
-0:30 A escada da massa
-1:20 A tonelada
-1:55 A escada da capacidade
-2:41 O erro de parar no segundo degrau
-3:01 O atalho: pule de mil em mil
-3:34 Hora de testar
+0:31 A escada da massa
+1:21 A tonelada
+1:56 A escada da capacidade
+2:42 O erro de parar no segundo degrau
+3:02 O atalho: pule de mil em mil
+3:35 Hora de testar
 3:47 Resolvendo o caminhão de arroz
-4:13 Resumo e próxima aula
+4:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter comprimento, a escada do metro: [LINK MAT-MED-001]

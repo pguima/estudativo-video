@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-011 · Voltar ao valor original
 
-**Arquivo:** `final/estudativo_MAT-POR-011_voltar_ao_valor_original.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-011_voltar_ao_valor_original.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Um salário foi cortado em 20% e, meses depois, ganhou 20% de aumento. Voltou ao
 ✅ O atalho: perdeu 1/5, ganha 1/4; perdeu 1/4, ganha 1/3; perdeu 1/10, ganha 1/9
 
 ⏱️ Capítulos
-[TEMPO] Caiu 20% e subiu 20%: voltou?
-[TEMPO] O que você precisa saber
-[TEMPO] Fazendo com R$ 100
-[TEMPO] Com fatores: 1 dividido pelo fator
-[TEMPO] O erro de subir a mesma porcentagem
-[TEMPO] O atalho com frações
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as vendas da sorveteria
-[TEMPO] Resumo e próxima aula
+0:00 Caiu 20% e subiu 20%: voltou?
+0:24 O que você precisa saber
+0:42 Fazendo com R$ 100
+1:27 Com fatores: 1 dividido pelo fator
+2:23 O erro de subir a mesma porcentagem
+2:36 O atalho com frações
+3:14 Hora de testar
+3:31 Resolvendo as vendas da sorveteria
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Variação percentual: [LINK MAT-POR-005]

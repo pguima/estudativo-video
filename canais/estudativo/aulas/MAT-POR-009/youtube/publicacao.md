@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-009 · Praticando: porcentagem, aumentos e lucro
 
-**Arquivo:** `final/estudativo_MAT-POR-009_praticando_porcentagem_aumentos_lucro.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-009_praticando_porcentagem_aumentos_lucro.mp4` · 4:41 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações de compra e venda, criadas para esta aula, para você pausar, 
 ✅ O atalho: 15% de cabeça é 10% mais 5%
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: desconto à vista
-[TEMPO] Resolvendo com o fator 0,85
-[TEMPO] O atalho: 15% de cabeça
-[TEMPO] Situação 2: quanto subiu o aluguel
-[TEMPO] Resolvendo: o valor de antes vai embaixo
-[TEMPO] Situação 3: preço antes da liquidação
-[TEMPO] Resolvendo: 117 ÷ 0,65
-[TEMPO] Situação 4: a margem da doceira
-[TEMPO] Resolvendo: sobre o custo e sobre a venda
-[TEMPO] Situação 5: leve 5, pague 3 ou 45%
-[TEMPO] Resolvendo a promoção
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:12 As quatro ferramentas
+0:28 Situação 1: desconto à vista
+0:41 Resolvendo com o fator 0,85
+0:52 O atalho: 15% de cabeça
+1:19 Situação 2: quanto subiu o aluguel
+1:30 Resolvendo: o valor de antes vai embaixo
+1:58 Situação 3: preço antes da liquidação
+2:11 Resolvendo: 117 ÷ 0,65
+2:50 Situação 4: a margem da doceira
+3:07 Resolvendo: sobre o custo e sobre a venda
+3:39 Situação 5: leve 5, pague 3 ou 45%
+3:55 Resolvendo a promoção
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Fatores de aumento e de desconto: [LINK MAT-POR-004]

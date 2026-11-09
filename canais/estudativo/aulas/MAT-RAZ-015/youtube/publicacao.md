@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-015 · Taxas e velocidade média
 
-**Arquivo:** `final/estudativo_MAT-RAZ-015_taxas_e_velocidade_media.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-015_taxas_e_velocidade_media.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um ônibus faz 180 km em 2 horas e 30 minutos. Se você escreveu o tempo como 2,
 ✅ O atalho: com meia hora no tempo, dobre a distância e o tempo
 
 ⏱️ Capítulos
-[TEMPO] 2 h 30 min não é 2,3 h
-[TEMPO] O que você precisa saber
-[TEMPO] Taxa: km/L, R$/kg e qual pacote compensa
-[TEMPO] Velocidade média: distância total ÷ tempo total
-[TEMPO] Calculando o tempo da viagem
-[TEMPO] O erro de ler minuto como décimo
-[TEMPO] O atalho: tem meia hora? dobre tudo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a viagem da ciclista
-[TEMPO] Resumo e próxima aula
+0:00 2 h 30 min não é 2,3 h
+0:18 O que você precisa saber
+0:30 Taxa: km/L, R$/kg e qual pacote compensa
+1:23 Velocidade média: distância total ÷ tempo total
+2:00 Calculando o tempo da viagem
+2:28 O erro de ler minuto como décimo
+2:46 O atalho: tem meia hora? dobre tudo
+3:14 Hora de testar
+3:31 Resolvendo a viagem da ciclista
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é razão: [LINK MAT-RAZ-001]

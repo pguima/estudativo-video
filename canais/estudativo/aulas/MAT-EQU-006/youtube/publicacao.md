@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-006 · Praticando: expressões algébricas
 
-**Arquivo:** `final/estudativo_MAT-EQU-006_praticando_expressoes_algebricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-006_praticando_expressoes_algebricas.mp4` · 5:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações com letra, criadas para esta aula: as figurinhas de Ana, Bia e
 ✅ Área do terreno: (x + 5)(x + 2) = x² + 7x + 10
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações com letra
-[TEMPO] As cinco ferramentas
-[TEMPO] Situação 1: as figurinhas
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: valor numérico
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: dois parênteses
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: o teste do zero
-[TEMPO] Situação 4: a sala quadrada
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: o terreno
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações com letra
+0:12 As cinco ferramentas
+0:26 Situação 1: as figurinhas
+0:44 Resposta da situação 1
+1:30 Situação 2: valor numérico
+1:42 Resposta da situação 2
+2:18 Situação 3: dois parênteses
+2:32 Resposta da situação 3
+2:51 O atalho: o teste do zero
+3:30 Situação 4: a sala quadrada
+3:41 Resposta da situação 4
+4:04 Situação 5: o terreno
+4:19 Resposta da situação 5
+4:59 Resumo e próxima aula
 
 📚 Antes desta aula
 A letra no lugar de um número: [LINK MAT-EQU-001]

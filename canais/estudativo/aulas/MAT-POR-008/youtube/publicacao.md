@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-008 · Promoções: leve 3, pague 2
 
-**Arquivo:** `final/estudativo_MAT-POR-008_leve_3_pague_2.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-008_leve_3_pague_2.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma loja faz leve 3, pague 2 e a outra dá 30% de desconto. Qual sai mais barato
 ✅ Produtos com preços diferentes: a economia dividida pelo preço cheio
 
 ⏱️ Capítulos
-[TEMPO] Leve 3, pague 2 ou 30% de desconto?
-[TEMPO] O que você precisa saber
-[TEMPO] Fazendo a conta com preço
-[TEMPO] A regra: o que sai de graça sobre o que você leva
-[TEMPO] O erro de dividir pelo que você paga
-[TEMPO] O atalho: três frações
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as caixas de leite
-[TEMPO] Resumo e próxima aula
+0:00 Leve 3, pague 2 ou 30% de desconto?
+0:21 O que você precisa saber
+0:35 Fazendo a conta com preço
+1:21 A regra: o que sai de graça sobre o que você leva
+2:10 O erro de dividir pelo que você paga
+2:27 O atalho: três frações
+3:19 Hora de testar
+3:34 Resolvendo as caixas de leite
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Descobrir quantos por cento e achar o total: [LINK MAT-POR-003]

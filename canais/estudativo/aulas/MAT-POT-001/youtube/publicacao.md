@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-001 · O que é potência
 
-**Arquivo:** `final/estudativo_MAT-POT-001_o_que_e_potencia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-001_o_que_e_potencia.mp4` · 5:21 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,15 @@ Se você respondeu 10 para 2 elevado a 5, caiu no erro mais comum. Nesta aula, v
 ✅ O atalho para 35 ao quadrado, e por que ele funciona
 
 ⏱️ Capítulos
-[TEMPO] Dois elevado a cinco: o erro mais comum
-[TEMPO] O que você precisa saber
-[TEMPO] Dobrando uma folha de papel
-[TEMPO] Base e expoente
-[TEMPO] Os quadrados de 1 a 15
-[TEMPO] O erro do começo
-[TEMPO] O atalho do final 5
-[TEMPO] Hora de testar
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Dois elevado a cinco: o erro mais comum
+0:26 Dobrando uma folha de papel
+0:53 Base e expoente
+1:39 Os quadrados de 1 a 15
+3:02 O erro do começo
+3:27 O atalho do final 5
+4:21 Hora de testar
+4:36 Resposta
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar por dois algarismos: [LINK MAT-NUM-008]

@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-012 · Praticando: razão, proporção e regra de três
 
-**Arquivo:** `final/estudativo_MAT-RAZ-012_praticando_razao_proporcao_regra_de_tres.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-012_praticando_razao_proporcao_regra_de_tres.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações do dia a dia, criadas para esta aula: o frete de uma encomenda
 ✅ Preço pela área: lado dobrado, preço vezes 4 (R$ 400)
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações do dia a dia
-[TEMPO] As ferramentas
-[TEMPO] Situação 1: o frete da encomenda
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: os pães da padaria
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: a viagem
-[TEMPO] Resposta da situação 3
-[TEMPO] Situação 4: os pintores do prédio
-[TEMPO] Resposta da situação 4
-[TEMPO] O atalho das horas de trabalho
-[TEMPO] Situação 5: a lona quadrada
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações do dia a dia
+0:13 As ferramentas
+0:30 Situação 1: o frete da encomenda
+0:47 Resposta da situação 1
+1:18 Situação 2: os pães da padaria
+1:33 Resposta da situação 2
+2:07 Situação 3: a viagem
+2:21 Resposta da situação 3
+2:37 Situação 4: os pintores do prédio
+2:53 Resposta da situação 4
+3:17 O atalho das horas de trabalho
+3:32 Situação 5: a lona quadrada
+3:46 Resposta da situação 5
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Direta, inversa ou nenhuma: o teste do dobro: [LINK MAT-RAZ-005]

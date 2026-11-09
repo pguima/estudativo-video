@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-006 · Regra de três direta
 
-**Arquivo:** `final/estudativo_MAT-RAZ-006_regra_de_tres_direta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-006_regra_de_tres_direta.mp4` · 4:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,14 @@ Três quilos de carne custam R$ 18. Quanto custam sete quilos? Essa pergunta, co
 
 ⏱️ Capítulos
 0:00 3 kg custam R$ 18: quanto custam 7 kg?
-0:17 O que você precisa saber
+0:18 O que você precisa saber
 0:32 Os três passos da regra de três
-1:27 O caminho do valor de um
-2:20 O erro de misturar unidades na mesma coluna
-2:46 O atalho: divida antes de multiplicar
-3:16 Hora de testar
+1:28 O caminho do valor de um
+2:21 O erro de misturar unidades na mesma coluna
+2:47 O atalho: divida antes de multiplicar
+3:17 Hora de testar
 3:29 Resolvendo a questão da impressora
-3:57 Resumo e próxima aula
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Proporção: achar o termo desconhecido: [LINK MAT-RAZ-002]

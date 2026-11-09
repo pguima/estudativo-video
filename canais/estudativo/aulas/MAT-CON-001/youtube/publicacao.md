@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-001 · Conjuntos: pertence, está contido e vazio
 
-**Arquivo:** `final/estudativo_MAT-CON-001_conjuntos_pertence_contido_vazio.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-001_conjuntos_pertence_contido_vazio.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quantos subconjuntos tem o conjunto {1, 2, 3}? Muita gente responde 6, mas são 
 ✅ O atalho: n elementos dão 2ⁿ subconjuntos (2³ = 8; nas vogais, 2⁵ = 32)
 
 ⏱️ Capítulos
-[TEMPO] Quantos subconjuntos tem {1, 2, 3}?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é um conjunto
-[TEMPO] Descrever pela regra e o conjunto vazio
-[TEMPO] Pertence
-[TEMPO] Está contido e subconjunto
-[TEMPO] Contando os 8 subconjuntos
-[TEMPO] O erro de trocar os símbolos
-[TEMPO] O atalho: 2 elevado ao número de elementos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo com P = {2, 5, 7, 9}
-[TEMPO] Resumo e próxima aula
+0:00 Quantos subconjuntos tem {1, 2, 3}?
+0:23 O que você precisa saber
+0:36 O que é um conjunto
+1:07 Descrever pela regra e o conjunto vazio
+1:28 Pertence
+1:41 Está contido e subconjunto
+2:10 Contando os 8 subconjuntos
+2:26 O erro de trocar os símbolos
+2:58 O atalho: 2 elevado ao número de elementos
+3:39 Hora de testar
+3:58 Resolvendo com P = {2, 5, 7, 9}
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler e comparar números grandes: [LINK MAT-NUM-002]

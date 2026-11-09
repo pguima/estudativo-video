@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-002 · Proporção: achar o termo desconhecido
 
-**Arquivo:** `final/estudativo_MAT-RAZ-002_proporcao_termo_desconhecido.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-002_proporcao_termo_desconhecido.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,14 @@ x/6 = 4/3. Quanto vale x? Parece equação difícil, mas sai em uma multiplicaç
 
 ⏱️ Capítulos
 0:00 x/6 = 4/3: quanto vale x?
-0:16 O que você precisa saber
-0:28 O que é proporção e o produto cruzado
+0:17 O que você precisa saber
+0:29 O que é proporção e o produto cruzado
 1:17 Achando o número que falta
-2:16 De volta à receita
-2:34 O erro de multiplicar reto
-3:01 O atalho: procure o fator
-3:24 Hora de testar
-3:34 Resolvendo x/4 = 15/6
-4:01 Resumo e próxima aula
+2:17 De volta à receita
+2:35 O erro de multiplicar reto
+3:02 O atalho: procure o fator
+3:25 Hora de testar
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é razão: [LINK MAT-RAZ-001]

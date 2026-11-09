@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-001 · Achar a pergunta e os dados úteis
 
-**Arquivo:** `final/estudativo_MAT-LEI-001_achar_a_pergunta_e_os_dados_uteis.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-001_achar_a_pergunta_e_os_dados_uteis.mp4` · 5:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma escola leva 292 pessoas em ônibus de 40 lugares, e a conta dá 7,3. Só que
 
 ⏱️ Capítulos
 0:00 7,3 ônibus não existe
-0:20 O que você precisa saber
-0:30 Leia a pergunta primeiro
-1:10 Marque só os dados úteis
-1:31 A conta e o sentido da resposta
-2:20 O erro de arredondar como decimal
-3:13 O atalho da tabuada
-3:45 Hora de testar
-4:05 Resolvendo o problema das latas de tinta
-4:36 Resumo e próxima aula
+0:21 O que você precisa saber
+0:32 Leia a pergunta primeiro
+1:11 Marque só os dados úteis
+1:32 A conta e o sentido da resposta
+2:21 O erro de arredondar como decimal
+3:14 O atalho da tabuada
+3:46 Hora de testar
+4:06 Resolvendo o problema das latas de tinta
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Qual conta o problema pede: [LINK MAT-NUM-011]

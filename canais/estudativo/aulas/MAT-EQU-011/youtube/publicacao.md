@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-011 · Isolar uma letra numa fórmula
 
-**Arquivo:** `final/estudativo_MAT-EQU-011_isolar_letra_formula.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-011_isolar_letra_formula.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,15 @@ A fórmula da velocidade é v = d/t, mas a prova pede a distância. Precisa deco
 ✅ O atalho do triângulo, e quando não usar
 
 ⏱️ Capítulos
-[TEMPO] A prova pede a distância: e agora?
-[TEMPO] O que você precisa saber
-[TEMPO] O que cada letra é
-[TEMPO] Isolando a distância
-[TEMPO] Isolando o tempo
-[TEMPO] O erro de dividir pelo tempo
-[TEMPO] O atalho do triângulo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o exercício
-[TEMPO] Resumo e próxima aula
+0:00 A prova pede a distância: e agora?
+0:33 O que cada letra é
+1:06 Isolando a distância
+2:24 Isolando o tempo
+2:43 O erro de dividir pelo tempo
+3:02 O atalho do triângulo
+3:42 Hora de testar
+3:55 Resolvendo o exercício
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação com letra dos dois lados: [LINK MAT-EQU-008]

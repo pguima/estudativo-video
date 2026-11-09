@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-008 · Somar e subtrair com denominadores diferentes
 
-**Arquivo:** `final/estudativo_MAT-FRA-008_somar_fracoes_denominadores_diferentes.mp4` · 4:35 · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-008_somar_fracoes_denominadores_diferentes.mp4` · 4:39 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Se você somou 1/2 + 1/3 e chegou em 2/5, esta aula é para você. Em menos de 5
 ⏱️ Capítulos
 0:00 O erro mais comum das frações
 0:23 O que você precisa saber
-0:34 Por que não dá para somar direto
+0:35 Por que não dá para somar direto
 1:15 O método em três passos
-1:51 Subtraindo frações
-2:20 Simplificando no final
-2:43 O erro de esquecer o numerador
-3:00 O atalho da borboleta
-3:42 Hora de testar
-3:54 Resolvendo o problema
-4:15 Resumo e próxima aula
+1:52 Subtraindo frações
+2:21 Simplificando no final
+2:44 O erro de esquecer o numerador
+3:02 O atalho da borboleta
+3:44 Hora de testar
+3:56 Resolvendo o problema
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Somar com denominadores iguais: [LINK MAT-FRA-007]

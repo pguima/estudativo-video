@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-016 · Converter km/h em m/s
 
-**Arquivo:** `final/estudativo_MAT-RAZ-016_converter_km_h_em_m_s.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-016_converter_km_h_em_m_s.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um carro a 72 km/h anda quantos metros em um segundo? São 20, e dá para achar 
 ✅ O atalho: 36 = 10, 72 = 20, 108 = 30, e 90 km/h = 25 m/s
 
 ⏱️ Capítulos
-[TEMPO] 72 km/h são quantos metros por segundo?
-[TEMPO] O que você precisa saber
-[TEMPO] As duas unidades
-[TEMPO] Convertendo sem atalho
-[TEMPO] De onde vem o 3,6
-[TEMPO] O caminho de volta: × 3,6
-[TEMPO] O erro de errar a direção
-[TEMPO] O atalho dos três pares
-[TEMPO] Hora de testar
-[TEMPO] O carro passou do limite?
-[TEMPO] Resumo e próxima aula
+0:00 72 km/h são quantos metros por segundo?
+0:16 O que você precisa saber
+0:29 As duas unidades
+0:46 Convertendo sem atalho
+1:14 De onde vem o 3,6
+1:55 O caminho de volta: × 3,6
+2:09 O erro de errar a direção
+2:46 O atalho dos três pares
+3:30 Hora de testar
+3:44 O carro passou do limite?
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Taxas e velocidade média: [LINK MAT-RAZ-015]

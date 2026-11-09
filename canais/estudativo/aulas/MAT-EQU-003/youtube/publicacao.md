@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-003 · Juntar termos semelhantes
 
-**Arquivo:** `final/estudativo_MAT-EQU-003_juntar_termos_semelhantes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-003_juntar_termos_semelhantes.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: circule os termos com x e sublinhe os números soltos
 
 ⏱️ Capítulos
-[TEMPO] 3x + 2 é igual a 5x?
-[TEMPO] O que você precisa saber
-[TEMPO] Caixas de ovos: 3x + 5x
-[TEMPO] Termo e termo semelhante
-[TEMPO] Por que 3x + 2 não vira 5x
-[TEMPO] Uma expressão bagunçada e o resultado negativo
-[TEMPO] O erro do sinal da frente
-[TEMPO] O atalho: circule e sublinhe
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 5x + 5
-[TEMPO] Resumo e próxima aula
+0:00 3x + 2 é igual a 5x?
+0:16 O que você precisa saber
+0:32 Caixas de ovos: 3x + 5x
+1:11 Termo e termo semelhante
+1:31 Por que 3x + 2 não vira 5x
+1:49 Uma expressão bagunçada e o resultado negativo
+2:25 O erro do sinal da frente
+2:50 O atalho: circule e sublinhe
+3:22 Hora de testar
+3:33 Resposta: 5x + 5
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 A letra no lugar de um número: [LINK MAT-EQU-001]

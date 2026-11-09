@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-001 · O que é razão
 
-**Arquivo:** `final/estudativo_MAT-RAZ-001_o_que_e_razao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-001_o_que_e_razao.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma fita tem 50 cm e a outra, 2 m. Quem divide 50 por 2 chega em 25, e a fita me
 
 ⏱️ Capítulos
 0:00 50 cm dividido por 2 m dá 25?
-0:18 O que você precisa saber
+0:19 O que você precisa saber
 0:30 O que é razão
-1:15 A ordem importa
-1:40 As duas medidas na mesma unidade
-2:30 O erro de misturar unidades
-2:45 O atalho: corte os zeros
-3:12 Hora de testar
-3:25 Resolvendo a questão das tábuas
-3:53 Resumo e próxima aula
+1:16 A ordem importa
+1:41 As duas medidas na mesma unidade
+2:27 O erro de misturar unidades
+2:42 O atalho: corte os zeros
+3:08 Hora de testar
+3:22 Resolvendo a questão das tábuas
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações equivalentes e simplificação: [LINK MAT-FRA-003]

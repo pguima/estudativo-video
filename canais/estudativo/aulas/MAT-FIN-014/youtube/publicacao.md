@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-014 · Praticando: taxas, inflação e propostas
 
-**Arquivo:** `final/estudativo_MAT-FIN-014_praticando_taxas_inflacao_e_propostas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-014_praticando_taxas_inflacao_e_propostas.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Cinco propostas do dia a dia, criadas para esta aula, para você pausar e resolv
 ⏱️ Capítulos
 0:00 Cinco propostas para resolver
 0:13 O que você vai usar
-0:26 Situação 1: taxa efetiva
-0:43 Resolvendo a situação 1
-1:15 Situação 2: inflação e ganho real
-1:34 Resolvendo a situação 2
-2:10 Situação 3: à vista ou a prazo
-2:30 Resolvendo a situação 3
-2:58 Situação 4: SAC e Price
-3:14 Resolvendo a situação 4
-3:32 Situação 5: qual aplicação escolher
-3:50 Resolvendo a situação 5
-4:14 Resumo e próxima aula
+0:27 Situação 1: taxa efetiva
+0:44 Resolvendo a situação 1
+1:16 Situação 2: inflação e ganho real
+1:35 Resolvendo a situação 2
+2:12 Situação 3: à vista ou a prazo
+2:32 Resolvendo a situação 3
+2:59 Situação 4: SAC e Price
+3:16 Resolvendo a situação 4
+3:33 Situação 5: qual aplicação escolher
+3:52 Resolvendo a situação 5
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Taxa equivalente e taxa efetiva: [LINK MAT-FIN-008]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-020 · Dízimas: reconhecer e prever
 
-**Arquivo:** `final/estudativo_MAT-FRA-020_dizimas_reconhecer_e_prever.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-020_dizimas_reconhecer_e_prever.mp4` · 4:48 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Por que 5 dividido por 11 não acaba nunca? Nesta aula, você vê o resto voltar
 ✅ O atalho de cortar os zeros do denominador
 
 ⏱️ Capítulos
-[TEMPO] Essa conta acaba?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a conta se repete
-[TEMPO] Dízima, período e decimal exato
-[TEMPO] Por que só o 2 e o 5
-[TEMPO] Testando: 7/40 e 7/30
-[TEMPO] O erro: simplifique primeiro
-[TEMPO] O atalho: corte os zeros
-[TEMPO] Questão: exato ou dízima?
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 Essa conta acaba?
+0:23 O que você precisa saber
+0:38 Por que a conta se repete
+1:02 Dízima, período e decimal exato
+1:24 Por que só o 2 e o 5
+2:09 Testando: 7/40 e 7/30
+2:56 O erro: simplifique primeiro
+3:17 O atalho: corte os zeros
+3:46 Questão: exato ou dízima?
+4:01 Resposta
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Números primos e fatoração: [LINK MAT-DIV-003]

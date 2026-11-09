@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-013 · Praticando: variações sucessivas
 
-**Arquivo:** `final/estudativo_MAT-POR-013_praticando_variacoes_sucessivas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-013_praticando_variacoes_sucessivas.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Lojas e notícias adoram porcentagem, e muitas vezes ela engana. Nesta aula de p
 ✅ Porcentagem de porcentagem: 40% de 70% = 28% das casas
 
 ⏱️ Capítulos
-[TEMPO] Porcentagem que engana
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: a conta de água
-[TEMPO] Resolvendo: 1,05 × 1,1
-[TEMPO] O atalho: aumentos seguidos de cabeça
-[TEMPO] Situação 2: desconto em cima de desconto
-[TEMPO] Resolvendo: 0,7 × 0,8
-[TEMPO] Situação 3: a notícia das vendas
-[TEMPO] Resolvendo: as vendas não voltaram
-[TEMPO] Situação 4: a manchete dos juros
-[TEMPO] Resolvendo: pontos percentuais
-[TEMPO] Situação 5: internet por fibra
-[TEMPO] Resolvendo: porcentagem de porcentagem
-[TEMPO] Resumo e próxima trilha
+0:00 Porcentagem que engana
+0:13 As quatro ferramentas
+0:30 Situação 1: a conta de água
+0:43 Resolvendo: 1,05 × 1,1
+1:00 O atalho: aumentos seguidos de cabeça
+1:20 Situação 2: desconto em cima de desconto
+1:34 Resolvendo: 0,7 × 0,8
+1:59 Situação 3: a notícia das vendas
+2:19 Resolvendo: as vendas não voltaram
+3:03 Situação 4: a manchete dos juros
+3:20 Resolvendo: pontos percentuais
+3:39 Situação 5: internet por fibra
+3:55 Resolvendo: porcentagem de porcentagem
+4:16 Resumo e próxima trilha
 
 📚 Antes desta aula
 Aumentos e descontos sucessivos: [LINK MAT-POR-010]

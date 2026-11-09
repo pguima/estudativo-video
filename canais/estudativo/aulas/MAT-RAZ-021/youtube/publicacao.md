@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-021 · Descobrir a escala e usar escala gráfica
 
-**Arquivo:** `final/estudativo_MAT-RAZ-021_descobrir_a_escala_e_escala_grafica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-021_descobrir_a_escala_e_escala_grafica.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Tire uma cópia de um mapa reduzida pela metade e a escala escrita no canto, 1 :
 ✅ O atalho: real ÷ desenho, em centímetros, dá o número de baixo da escala
 
 ⏱️ Capítulos
-[TEMPO] A cópia que deixa a escala errada
-[TEMPO] O que você precisa saber
-[TEMPO] Achar a escala: 4 cm para 10 km
-[TEMPO] A escala gráfica
-[TEMPO] O erro das unidades diferentes
-[TEMPO] O atalho: real dividido pelo desenho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 3 cm para 6 km
-[TEMPO] Resumo e próxima aula
+0:00 A cópia que deixa a escala errada
+0:27 O que você precisa saber
+0:40 Achar a escala: 4 cm para 10 km
+1:22 A escala gráfica
+2:34 O erro das unidades diferentes
+2:56 O atalho: real dividido pelo desenho
+3:24 Hora de testar
+3:40 Resolvendo: 3 cm para 6 km
+4:04 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é escala: medida real e do desenho: [LINK MAT-RAZ-020]

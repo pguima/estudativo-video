@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-007 · Praticando: da leitura à decisão
 
-**Arquivo:** `final/estudativo_MAT-LEI-007_praticando_da_leitura_a_decisao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-007_praticando_da_leitura_a_decisao.mp4` · 4:41 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Cinco problemas de enunciado comprido, criados para esta aula. Em cada um, pause
 
 ⏱️ Capítulos
 0:00 Cinco problemas para resolver
-0:11 As ferramentas da trilha
-0:25 Situação 1: mesas para a festa
-0:44 Resposta 1: no mínimo, sobe
-1:15 Situação 2: as páginas do livro
-1:30 Resposta 2: a barra de 12 quadradinhos
-2:03 Situação 3: o valor recebido pela loja
-2:21 Resposta 3: estimativa
-2:47 Situação 4: o estacionamento
-3:01 Resposta 4: corte o tempo nas faixas
-3:20 Situação 5: táxi ou aplicativo
-3:39 Resposta 5: a tabela das corridas
-4:10 Resumo e próxima aula
+0:12 As ferramentas da trilha
+0:26 Situação 1: mesas para a festa
+0:45 Resposta 1: no mínimo, sobe
+1:16 Situação 2: as páginas do livro
+1:31 Resposta 2: a barra de 12 quadradinhos
+2:05 Situação 3: o valor recebido pela loja
+2:22 Resposta 3: estimativa
+2:48 Situação 4: o estacionamento
+3:03 Resposta 4: corte o tempo nas faixas
+3:23 Situação 5: táxi ou aplicativo
+3:41 Resposta 5: a tabela das corridas
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Achar a pergunta e os dados úteis: [LINK MAT-LEI-001]

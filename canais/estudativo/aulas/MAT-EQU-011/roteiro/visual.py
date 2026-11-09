@@ -157,7 +157,7 @@ def carro(c, x, y, a, cor=None):
 def triangulo(c, cx, topo, meia, base, a, tinta, cor, letras=(1, 1, 1), size=150):
     """o triângulo do atalho: d em cima, v e t embaixo; letras = alfa de cada letra (d, v, t)"""
     if a <= 0:
-        return
+        return topo + (base - topo) * 0.6  # quem chama usa a altura da barra mesmo antes do triângulo aparecer
     p = skia.Path()
     p.moveTo(cx, topo); p.lineTo(cx + meia, base); p.lineTo(cx - meia, base); p.close()
     pt = M.paint(tinta, a, stroke=8)

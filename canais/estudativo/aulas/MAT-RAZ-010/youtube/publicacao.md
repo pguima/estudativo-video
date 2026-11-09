@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-010 · Proporcional ao quadrado
 
-**Arquivo:** `final/estudativo_MAT-RAZ-010_proporcional_ao_quadrado.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-010_proporcional_ao_quadrado.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Uma sala quadrada de 3 m de lado tem 9 m² de piso. Com o dobro do lado, são 18
 ✅ O atalho: ache o fator do lado e eleve ao quadrado, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] 18 ou 36 metros quadrados?
-[TEMPO] O que você precisa saber
-[TEMPO] Área do quadrado: por que quatro vezes
-[TEMPO] A regra: proporcional ao quadrado
-[TEMPO] O erro da foto ampliada
-[TEMPO] O atalho: fator ao quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o piso com o triplo do lado
-[TEMPO] Resumo e próxima aula
+0:00 18 ou 36 metros quadrados?
+0:19 O que você precisa saber
+0:35 Área do quadrado: por que quatro vezes
+1:29 A regra: proporcional ao quadrado
+2:30 O erro da foto ampliada
+2:52 O atalho: fator ao quadrado
+3:21 Hora de testar
+3:37 Resolvendo o piso com o triplo do lado
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter área: [LINK MAT-MED-004]

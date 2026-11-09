@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-007 · Raiz quadrada: exata e aproximada
 
-**Arquivo:** `final/estudativo_MAT-POT-007_raiz_quadrada_exata_aproximada.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-007_raiz_quadrada_exata_aproximada.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,17 @@ Raiz quadrada de 1.764 parece conta de calculadora, mas sai só com divisões si
 ✅ Uma questão resolvida: a raiz de 784
 
 ⏱️ Capítulos
-[TEMPO] Raiz de 1.764 sem calculadora
-[TEMPO] O que você precisa lembrar
-[TEMPO] O que é raiz quadrada
-[TEMPO] Por que só o positivo
-[TEMPO] Fatorando 1.764
-[TEMPO] As duplas de primos
-[TEMPO] Estimando a raiz de 20
-[TEMPO] O erro de dividir por dois
-[TEMPO] O atalho para raiz exata
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Raiz de 1.764 sem calculadora
+0:26 O que é raiz quadrada
+0:48 Por que só o positivo
+1:03 Fatorando 1.764
+1:27 As duplas de primos
+2:03 Estimando a raiz de 20
+2:54 O erro de dividir por dois
+3:10 O atalho para raiz exata
+3:45 Hora de testar
+3:57 Resolvendo a questão
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler, comparar e arredondar decimais: [LINK MAT-FRA-014]

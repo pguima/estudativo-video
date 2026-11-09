@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-004 · Grandezas direta e inversamente proporcionais
 
-**Arquivo:** `final/estudativo_MAT-RAZ-004_grandezas_direta_inversa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-004_grandezas_direta_inversa.mp4` · 4:47 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,13 @@ Mais quilos de feijão, mais você paga. Mais velocidade na estrada, menos tempo
 
 ⏱️ Capítulos
 0:00 Anda junto ou ao contrário?
-0:22 O que você precisa saber
-0:31 O que é grandeza
-0:41 Diretamente proporcionais: a divisão não muda
-1:25 Inversamente proporcionais: o produto não muda
-2:20 O erro de achar que subir junto basta
-2:56 O macete: direta, divisão
-3:26 Hora de testar
-3:48 Resolvendo a questão das torneiras
-4:20 Resumo e próxima aula
+0:32 O que é grandeza
+1:26 Inversamente proporcionais: o produto não muda
+2:21 O erro de achar que subir junto basta
+2:57 O macete: direta, divisão
+3:27 Hora de testar
+3:49 Resolvendo a questão das torneiras
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é razão: [LINK MAT-RAZ-001]

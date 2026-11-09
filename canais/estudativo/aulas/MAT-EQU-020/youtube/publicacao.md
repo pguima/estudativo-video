@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-020 · Montar sistema a partir do problema
 
-**Arquivo:** `final/estudativo_MAT-EQU-020_montar_sistema_do_problema.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-020_montar_sistema_do_problema.mp4` · 5:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Trinta veículos, entre carros e motos, e cem rodas: quantos são os carros? Nes
 ✅ Um problema de cédulas de R$ 10 e R$ 20 para você resolver, com a resposta passo a passo
 
 ⏱️ Capítulos
-[TEMPO] 30 veículos e 100 rodas
-[TEMPO] O que você precisa saber
-[TEMPO] O problema do teatro
-[TEMPO] Montando o sistema em três passos
-[TEMPO] Resolvendo por substituição
-[TEMPO] O erro de misturar coisas diferentes
-[TEMPO] O atalho: suponha que todos são de um tipo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema das cédulas
-[TEMPO] Resumo e próxima aula
+0:00 30 veículos e 100 rodas
+0:16 O que você precisa saber
+0:28 O problema do teatro
+0:46 Montando o sistema em três passos
+1:37 Resolvendo por substituição
+2:17 O erro de misturar coisas diferentes
+2:45 O atalho: suponha que todos são de um tipo
+3:41 Hora de testar
+4:00 Resolvendo o problema das cédulas
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

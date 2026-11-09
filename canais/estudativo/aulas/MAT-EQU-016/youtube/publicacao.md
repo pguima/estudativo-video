@@ -1,6 +1,6 @@
 # Publicação — MAT-EQU-016 · Inequação dupla e inequação em problemas
 
-**Arquivo:** `final/estudativo_MAT-EQU-016_inequacao_dupla_e_problemas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EQU-016_inequacao_dupla_e_problemas.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Dois planos empatam com 70 minutos. A partir de quantos minutos o de minuto mais
 ✅ Quando o arredondamento vai para baixo: 7 horas de estacionamento
 
 ⏱️ Capítulos
-[TEMPO] Empatam com 70: e agora?
-[TEMPO] O que você precisa saber
-[TEMPO] A inequação dupla
-[TEMPO] O problema dos planos
-[TEMPO] O erro de responder o empate
-[TEMPO] O atalho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema
-[TEMPO] Resumo e próxima aula
+0:00 Empatam com 70: e agora?
+0:25 O que você precisa saber
+0:39 A inequação dupla
+1:39 O problema dos planos
+2:51 O erro de responder o empate
+3:05 O atalho
+3:35 Hora de testar
+3:53 Resolvendo o problema
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Comparar dois planos: [LINK MAT-EQU-014]

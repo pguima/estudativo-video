@@ -1,6 +1,6 @@
 # Publicação — MAT-FIN-007 · Praticando: juros simples e compostos
 
-**Arquivo:** `final/estudativo_MAT-FIN-007_praticando_juros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FIN-007_praticando_juros.mp4` · 5:05 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,13 +32,13 @@ Cinco situações de dinheiro, criadas para esta aula: empréstimo, aplicação 
 ⏱️ Capítulos
 0:00 Cinco situações para resolver
 0:14 As três ferramentas
-0:29 Situação 1: o total de um empréstimo
-1:08 Situação 2: qual foi a taxa
-1:41 Situação 3: condomínio atrasado
-2:25 Situação 4: simples contra compostos
-3:12 Situação 5: quanto aplicar hoje
-4:04 O atalho para dobrar
-4:31 Resumo e próxima aula
+0:30 Situação 1: o total de um empréstimo
+1:10 Situação 2: qual foi a taxa
+1:43 Situação 3: condomínio atrasado
+2:27 Situação 4: simples contra compostos
+3:15 Situação 5: quanto aplicar hoje
+4:07 O atalho para dobrar
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Juros simples: [LINK MAT-FIN-001]

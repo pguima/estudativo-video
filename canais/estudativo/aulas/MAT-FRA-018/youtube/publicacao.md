@@ -1,6 +1,6 @@
 # Publicação — MAT-FRA-018 · Dividir por um número decimal
 
-**Arquivo:** `final/estudativo_MAT-FRA-018_dividir_por_um_numero_decimal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FRA-018_dividir_por_um_numero_decimal.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Por que 1,5 dividido por 0,25 dá 6, um número maior? Com moedas de 25 centavos
 ✅ O atalho: dividir por 0,5 é dobrar e por 0,25 é multiplicar por 4
 
 ⏱️ Capítulos
-[TEMPO] O resultado é maior ou menor?
-[TEMPO] O que você precisa saber
-[TEMPO] As moedas: por que o resultado cresce
-[TEMPO] Por que andar a vírgula não muda a divisão
-[TEMPO] A regra em três passos
-[TEMPO] Quando o outro número fica com vírgula
-[TEMPO] O erro mais comum
-[TEMPO] O atalho: dividir por 0,5 e por 0,25
-[TEMPO] Questão: os laços de fita
-[TEMPO] Resposta
-[TEMPO] Resumo e próxima aula
+0:00 O resultado é maior ou menor?
+0:22 O que você precisa saber
+0:36 As moedas: por que o resultado cresce
+1:01 Por que andar a vírgula não muda a divisão
+1:36 A regra em três passos
+2:12 Quando o outro número fica com vírgula
+2:46 O erro mais comum
+3:04 O atalho: dividir por 0,5 e por 0,25
+3:28 Questão: os laços de fita
+3:42 Resposta
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar decimais e andar com a vírgula: [LINK MAT-FRA-016]

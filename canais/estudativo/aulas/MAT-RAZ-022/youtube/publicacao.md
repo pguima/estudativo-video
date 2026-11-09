@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-022 · Escala ao quadrado, escala ao cubo
 
-**Arquivo:** `final/estudativo_MAT-RAZ-022_escala_ao_quadrado_escala_ao_cubo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-022_escala_ao_quadrado_escala_ao_cubo.mp4` · 4:09 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Numa planta de escala 1 : 100, uma sala ocupa 20 cm². Quem multiplica por 100 a
 ✅ Comprimento, escala direta; área, ao quadrado; volume, ao cubo
 
 ⏱️ Capítulos
-[TEMPO] Uma sala menor que uma mesa
-[TEMPO] O que você precisa saber
-[TEMPO] Área na planta: escala ao quadrado
-[TEMPO] Volume na maquete: escala ao cubo
-[TEMPO] O erro de aplicar a escala direto
-[TEMPO] O atalho: converta os lados
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o terreno de 6 cm² em 1 : 1.000
-[TEMPO] Resumo e próxima aula
+0:00 Uma sala menor que uma mesa
+0:21 O que você precisa saber
+0:33 Área na planta: escala ao quadrado
+1:30 Volume na maquete: escala ao cubo
+2:23 O erro de aplicar a escala direto
+2:44 O atalho: converta os lados
+3:08 Hora de testar
+3:23 Resolvendo: o terreno de 6 cm² em 1 : 1.000
+3:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter área: [LINK MAT-MED-004]

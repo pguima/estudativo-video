@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-009 · Simplificar e somar radicais
 
-**Arquivo:** `final/estudativo_MAT-POT-009_simplificar_somar_radicais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-009_simplificar_somar_radicais.mp4` · 5:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ Raiz de 2 não é exata, raiz de 8 também não, mas uma vezes a outra dá 4, ce
 ✅ Uma questão resolvida: √12 + √75
 
 ⏱️ Capítulos
-[TEMPO] Raiz vezes raiz dá exato
-[TEMPO] O que você precisa lembrar
-[TEMPO] Multiplicar raízes
-[TEMPO] Simplificar: as duplas saem da raiz
-[TEMPO] Somar radicais
-[TEMPO] O erro de somar o de dentro
-[TEMPO] O atalho do maior quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Raiz vezes raiz dá exato
+0:13 O que você precisa lembrar
+0:27 Multiplicar raízes
+1:17 Simplificar: as duplas saem da raiz
+2:14 Somar radicais
+2:54 O erro de somar o de dentro
+3:40 O atalho do maior quadrado
+4:10 Hora de testar
+4:21 Resolvendo a questão
+4:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência de potência e de um produto: [LINK MAT-POT-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-POT-016 · Raiz de fração e decimal, raiz cúbica e raiz de negativo
 
-**Arquivo:** `final/estudativo_MAT-POT-016_raiz_fracao_decimal_cubica_negativo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POT-016_raiz_fracao_decimal_cubica_negativo.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ A raiz quadrada de 0,25 dá 0,5, que é maior que o número de dentro. E tem rai
 ✅ Uma questão resolvida com quatro raízes
 
 ⏱️ Capítulos
-[TEMPO] A raiz que fica maior
-[TEMPO] O que você precisa lembrar
-[TEMPO] Raiz de fração
-[TEMPO] Raiz de decimal
-[TEMPO] Raiz cúbica
-[TEMPO] O índice da raiz
-[TEMPO] Raiz de número negativo
-[TEMPO] O erro com o sinal de menos
-[TEMPO] O atalho da metade das casas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 A raiz que fica maior
+0:19 O que você precisa lembrar
+0:31 Raiz de fração
+0:54 Raiz de decimal
+1:16 Raiz cúbica
+1:34 O índice da raiz
+2:01 Raiz de número negativo
+2:53 O erro com o sinal de menos
+3:06 O atalho da metade das casas
+3:37 Hora de testar
+3:56 Resolvendo a questão
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência de negativo, fração ou decimal: [LINK MAT-POT-002]

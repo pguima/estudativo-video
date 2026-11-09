@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-003 · Descobrir quantos por cento e achar o total
 
-**Arquivo:** `final/estudativo_MAT-POR-003_quantos_por_cento_e_total.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-003_quantos_por_cento_e_total.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,14 +31,13 @@ Você ganhou R$ 30 de desconto numa compra de R$ 120. Muita gente chuta 30%, mas
 
 ⏱️ Capítulos
 0:00 R$ 30 de desconto em R$ 120: quantos por cento?
-0:20 O que você precisa saber
-0:29 Quantos por cento: a parte dividida pelo total
-1:25 Achar o total sabendo a parte
-2:16 O erro de calcular a porcentagem da parte
+0:30 Quantos por cento: a parte dividida pelo total
+1:26 Achar o total sabendo a parte
+2:18 O erro de calcular a porcentagem da parte
 2:29 O atalho: fazer o total virar 100
-2:58 Hora de testar
-3:16 Resolvendo a turma e a escola
-3:47 Resumo e próxima aula
+2:59 Hora de testar
+3:17 Resolvendo a turma e a escola
+3:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular porcentagem de cabeça e na conta: [LINK MAT-POR-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-008 · Praticando: medidas e unidades
 
-**Arquivo:** `final/estudativo_MAT-MED-008_praticando_medidas_e_unidades.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-008_praticando_medidas_e_unidades.mp4` · 5:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Cinco problemas criados para esta aula, um de cada medida, e em todos a unidade 
 
 ⏱️ Capítulos
 0:00 Cinco problemas, a unidade muda no meio
-0:11 O que você vai usar
-0:29 Problema 1: as voltas na pista
+0:12 O que você vai usar
+0:30 Problema 1: as voltas na pista
 0:44 Resposta do problema 1
-1:08 Problema 2: o elevador de carga
-1:23 Resposta do problema 2
-1:43 Problema 3: os azulejos da parede
-1:59 Resposta do problema 3
-2:35 O atalho: converta os lados, não a área
-3:05 Problema 4: o aquário
-3:18 Resposta do problema 4
-3:55 Problema 5: a hora com vírgula
-4:08 Resposta do problema 5
-4:52 Resumo e próxima aula
+1:09 Problema 2: o elevador de carga
+1:24 Resposta do problema 2
+1:44 Problema 3: os azulejos da parede
+2:00 Resposta do problema 3
+2:37 O atalho: converta os lados, não a área
+3:07 Problema 4: o aquário
+3:21 Resposta do problema 4
+3:57 Problema 5: a hora com vírgula
+4:12 Resposta do problema 5
+4:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter comprimento, a escada do metro: [LINK MAT-MED-001]

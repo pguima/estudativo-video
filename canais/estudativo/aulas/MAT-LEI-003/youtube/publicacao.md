@@ -1,6 +1,6 @@
 # Publicação — MAT-LEI-003 · Desenhar o problema: barras e tabelas
 
-**Arquivo:** `final/estudativo_MAT-LEI-003_desenhar_o_problema_barras_e_tabelas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-LEI-003_desenhar_o_problema_barras_e_tabelas.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma pessoa gastou 2/5 do salário e ficou com R$ 600. Qual é o salário? Muita 
 ✅ Um problema de notas de R$ 5 e R$ 10 resolvido pela tabela
 
 ⏱️ Capítulos
-[TEMPO] Gastou 2/5 e sobrou R$ 600
-[TEMPO] O que você precisa saber
-[TEMPO] A barra: da parte para o total
-[TEMPO] A barra para comparar idades
-[TEMPO] A tabela de palpites
-[TEMPO] O erro de calcular a fração da sobra
-[TEMPO] O atalho da tabela
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o problema das notas
-[TEMPO] Resumo e próxima aula
+0:00 Gastou 2/5 e sobrou R$ 600
+0:17 O que você precisa saber
+0:30 A barra: da parte para o total
+1:02 A barra para comparar idades
+1:43 A tabela de palpites
+2:33 O erro de calcular a fração da sobra
+2:56 O atalho da tabela
+3:18 Hora de testar
+3:32 Resolvendo o problema das notas
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico de uma expressão: [LINK MAT-EQU-002]

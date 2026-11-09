@@ -1,6 +1,6 @@
 # Publicação — MAT-RAZ-013 · Dividir em partes diretamente proporcionais
 
-**Arquivo:** `final/estudativo_MAT-RAZ-013_divisao_diretamente_proporcional.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-RAZ-013_divisao_diretamente_proporcional.mp4` · 4:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Dois sócios puseram R$ 3.000 e R$ 5.000 num negócio e o lucro foi de R$ 1.200.
 ✅ O atalho: quanto um recebe a mais = diferença dos pesos × k
 
 ⏱️ Capítulos
-[TEMPO] Metade para cada não é justo
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia: os números da razão são os pesos
-[TEMPO] Achando o k: 8k = 1.200
-[TEMPO] O método em três passos
-[TEMPO] Sócios com tempos diferentes: capital × tempo
-[TEMPO] O erro de olhar só o capital
-[TEMPO] O atalho: quanto um recebeu a mais
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a sociedade da Ana e da Bia
-[TEMPO] Resumo e próxima aula
+0:00 Metade para cada não é justo
+0:22 O que você precisa saber
+0:35 A ideia: os números da razão são os pesos
+0:56 Achando o k: 8k = 1.200
+1:25 O método em três passos
+1:36 Sócios com tempos diferentes: capital × tempo
+2:48 O erro de olhar só o capital
+3:11 O atalho: quanto um recebeu a mais
+3:47 Hora de testar
+4:03 Resolvendo a sociedade da Ana e da Bia
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 O truque do k: [LINK MAT-RAZ-003]

@@ -1,6 +1,6 @@
 # Publicação — MAT-POR-007 · Lucro sobre o custo e sobre a venda
 
-**Arquivo:** `final/estudativo_MAT-POR-007_lucro_sobre_custo_e_sobre_venda.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POR-007_lucro_sobre_custo_e_sobre_venda.mp4` · 3:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Comprou por R$ 80 e vendeu por R$ 100: o lucro de R$ 20 é 25% ou 20%? Os dois, 
 ✅ O atalho: pensar em partes (custo 4, lucro 1, venda 5)
 
 ⏱️ Capítulos
-[TEMPO] 25% ou 20% de lucro?
-[TEMPO] O que você precisa saber
-[TEMPO] Custo, venda e lucro
-[TEMPO] Sobre o custo e sobre a venda
-[TEMPO] Preço com margem de lucro
-[TEMPO] O erro de usar o fator de aumento
-[TEMPO] O atalho: pense em partes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o preço do tênis
-[TEMPO] Resumo e próxima aula
+0:00 25% ou 20% de lucro?
+0:18 O que você precisa saber
+0:29 Custo, venda e lucro
+0:40 Sobre o custo e sobre a venda
+1:17 Preço com margem de lucro
+2:12 O erro de usar o fator de aumento
+2:25 O atalho: pense em partes
+2:55 Hora de testar
+3:07 Resolvendo o preço do tênis
+3:30 Resumo e próxima aula
 
 📚 Antes desta aula
 Descobrir quantos por cento e achar o total: [LINK MAT-POR-003]

@@ -1,6 +1,6 @@
 # Publicação — MAT-MED-004 · Converter área
 
-**Arquivo:** `final/estudativo_MAT-MED-004_converter_area.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MED-004_converter_area.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,14 +32,14 @@ Um metro quadrado tem quantos centímetros quadrados? Se você respondeu cem, er
 ⏱️ Capítulos
 0:00 1 m² tem quantos cm²?
 0:16 O que você precisa saber
-0:30 O que é área e o metro quadrado
-1:11 Do metro quadrado ao centímetro quadrado
-1:57 O hectare e o quilômetro quadrado
+0:31 O que é área e o metro quadrado
+1:12 Do metro quadrado ao centímetro quadrado
+1:58 O hectare e o quilômetro quadrado
 2:31 O erro de usar a escada do comprimento
-2:53 O atalho: eleve o fator ao quadrado
+2:54 O atalho: eleve o fator ao quadrado
 3:24 Hora de testar
-3:39 Resolvendo o sítio e a lajota
-4:00 Resumo e próxima aula
+3:40 Resolvendo o sítio e a lajota
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter comprimento, a escada do metro: [LINK MAT-MED-001]
