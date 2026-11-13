@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-010 · Vazão e equação da continuidade
 
-**Arquivo:** `final/estudativo_FIS-EGF-010_vazao_e_equacao_da_continuidade.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-010_vazao_e_equacao_da_continuidade.mp4` · 4:40 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Tampe com o dedo parte da ponta da mangueira e a água sai bem mais rápida. Nes
 ✅ O atalho: a razão dos diâmetros ao quadrado
 
 ⏱️ Capítulos
-[TEMPO] O dedo na mangueira
-[TEMPO] O que você precisa saber
-[TEMPO] Vazão: Q = V/t = A·v
-[TEMPO] A equação da continuidade
-[TEMPO] O erro do diâmetro
-[TEMPO] O atalho: diâmetros ao quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a mangueira e o balde
-[TEMPO] Resumo e próxima aula
+0:00 O dedo na mangueira
+0:20 O que você precisa saber
+0:38 Vazão: Q = V/t = A·v
+1:46 A equação da continuidade
+2:34 O erro do diâmetro
+2:56 O atalho: diâmetros ao quadrado
+3:22 Hora de testar
+3:43 Resolvendo: a mangueira e o balde
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Pressão: força por área: [LINK FIS-EGF-004]

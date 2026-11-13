@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-010 · Eixos de simetria e dobraduras
 
-**Arquivo:** `final/estudativo_MAT-POL-010_eixos_de_simetria_e_dobraduras.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-010_eixos_de_simetria_e_dobraduras.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Dobre uma folha ao meio, de novo ao meio, faça um furo só e abra: aparecem qua
 ✅ Dobradura: cada dobra dobra as camadas; 2 dobras e 1 furo dão 4 furos; 3 dobras dão 8
 
 ⏱️ Capítulos
-[TEMPO] Um furo que vira quatro
-[TEMPO] O que você precisa saber
-[TEMPO] O que é eixo de simetria
-[TEMPO] Quantos eixos tem cada figura
-[TEMPO] O erro da diagonal do retângulo
-[TEMPO] O atalho: eixos = lados no regular
-[TEMPO] Dobraduras: camadas e espelhos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Um furo que vira quatro
+0:22 O que você precisa saber
+0:34 O que é eixo de simetria
+0:56 Quantos eixos tem cada figura
+1:34 O erro da diagonal do retângulo
+1:51 O atalho: eixos = lados no regular
+2:30 Dobraduras: camadas e espelhos
+3:09 Hora de testar
+3:25 Resolvendo a questão
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Polígonos regulares: [LINK MAT-POL-003]

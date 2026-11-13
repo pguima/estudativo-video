@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-015 · Boxplot e amplitude
 
-**Arquivo:** `final/estudativo_MAT-EST-015_boxplot_e_amplitude.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-015_boxplot_e_amplitude.mp4` · 5:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Duas turmas com a mesma mediana, seis. São parecidas? Nem um pouco, e um desenh
 ✅ Comparar turmas: mesma mediana, amplitudes 4 e 9
 
 ⏱️ Capítulos
-[TEMPO] Duas turmas, a mesma mediana
-[TEMPO] O que você precisa saber
-[TEMPO] Os cinco números
-[TEMPO] O desenho: caixa e bigodes
-[TEMPO] A amplitude e a largura da caixa
-[TEMPO] Os quatro pedaços e o erro do bigode comprido
-[TEMPO] O atalho: conte os pedaços
-[TEMPO] Comparando as duas turmas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas lojas
-[TEMPO] Resumo e próxima aula
+0:00 Duas turmas, a mesma mediana
+0:18 O que você precisa saber
+0:31 Os cinco números
+0:46 O desenho: caixa e bigodes
+1:06 A amplitude e a largura da caixa
+1:31 Os quatro pedaços e o erro do bigode comprido
+2:00 O atalho: conte os pedaços
+2:25 Comparando as duas turmas
+2:59 Hora de testar
+4:37 Resolvendo as duas lojas
+5:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Quartis e percentis: [LINK MAT-EST-014]

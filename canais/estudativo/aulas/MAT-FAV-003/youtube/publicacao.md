@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-003 · Equações e inequações modulares
 
-**Arquivo:** `final/estudativo_MAT-FAV-003_equacoes_e_inequacoes_modulares.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-003_equacoes_e_inequacoes_modulares.mp4` · 4:12 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Quem resolve |x − 3| = 5 e responde só x = 8 está certo, mas incompleto: x =
 ✅ O atalho: centro e raio, menor fica entre, maior fica fora
 
 ⏱️ Capítulos
-[TEMPO] Uma equação com duas respostas
-[TEMPO] O que você precisa saber
-[TEMPO] Módulo como distância até o 3
-[TEMPO] A equação modular
-[TEMPO] A inequação modular: entre e fora
-[TEMPO] O erro de tirar as barras
-[TEMPO] O atalho: centro e raio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: |x + 2| ≤ 4
-[TEMPO] Resumo e próxima aula
+0:00 Uma equação com duas respostas
+0:22 O que você precisa saber
+0:34 Módulo como distância até o 3
+0:53 A equação modular
+1:29 A inequação modular: entre e fora
+2:11 O erro de tirar as barras
+2:37 O atalho: centro e raio
+3:08 Hora de testar
+3:19 Resolvendo: |x + 2| ≤ 4
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Inequação dupla e inequação em problemas: [LINK MAT-EQU-016]

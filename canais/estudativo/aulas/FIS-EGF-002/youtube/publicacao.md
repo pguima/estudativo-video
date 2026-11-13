@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-002 · Leis de Kepler
 
-**Arquivo:** `final/estudativo_FIS-EGF-002_leis_de_kepler.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-002_leis_de_kepler.mp4` · 5:10 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ A Terra não anda em volta do Sol num círculo perfeito, nem sempre na mesma vel
 ✅ O atalho: raio × k → período × k · √k
 
 ⏱️ Capítulos
-[TEMPO] A Terra corre mais em janeiro
-[TEMPO] O que você precisa saber
-[TEMPO] Primeira lei: a órbita é uma elipse
-[TEMPO] Segunda lei: a lei das áreas
-[TEMPO] Terceira lei: T² sobre R³
-[TEMPO] O erro das estações do ano
-[TEMPO] O atalho: k vezes a raiz de k
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o planeta 16 vezes mais longe
-[TEMPO] Resumo e próxima aula
+0:00 A Terra corre mais em janeiro
+0:28 O que você precisa saber
+0:41 Primeira lei: a órbita é uma elipse
+1:14 Segunda lei: a lei das áreas
+1:43 Terceira lei: T² sobre R³
+3:00 O erro das estações do ano
+3:21 O atalho: k vezes a raiz de k
+3:57 Hora de testar
+4:16 Resolvendo: o planeta 16 vezes mais longe
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Período, frequência e rpm: [LINK FIS-CIN-018]

@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-008 · Plano inclinado
 
-**Arquivo:** `final/estudativo_FIS-DIN-008_plano_inclinado.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-008_plano_inclinado.mp4` · 5:01 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Uma caixa pesada e uma leve descem juntas uma rampa sem atrito: qual chega prime
 ✅ O atalho: a = g·(sen θ − μ·cos θ)
 
 ⏱️ Capítulos
-[TEMPO] Pesada ou leve: qual chega primeiro?
-[TEMPO] O que você precisa saber
-[TEMPO] Decompor o peso na rampa
-[TEMPO] A normal na rampa
-[TEMPO] Sem atrito: a = g·sen θ
-[TEMPO] Com atrito
-[TEMPO] O erro: normal igual ao peso
-[TEMPO] O atalho da rampa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: aceleração e normal
-[TEMPO] Resumo e próxima aula
+0:00 Pesada ou leve: qual chega primeiro?
+0:21 O que você precisa saber
+0:35 Decompor o peso na rampa
+1:22 A normal na rampa
+1:34 Sem atrito: a = g·sen θ
+2:03 Com atrito
+2:45 O erro: normal igual ao peso
+3:02 O atalho da rampa
+3:38 Hora de testar
+3:56 Resolvendo: aceleração e normal
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Força de atrito: estático e cinético: [LINK FIS-DIN-007]

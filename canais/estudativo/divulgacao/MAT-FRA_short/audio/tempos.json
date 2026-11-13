@@ -1,0 +1,639 @@
+{
+ "total": 39.47,
+ "scenes": [
+  {
+   "id": "s01",
+   "block": "desafio",
+   "start": 0.0,
+   "dur": 4.83,
+   "tokens": [
+    {
+     "disp": "Quanto",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 0.4
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 0.4,
+     "t1": 0.62
+    },
+    {
+     "disp": "um",
+     "bold": true,
+     "t0": 0.62,
+     "t1": 0.86
+    },
+    {
+     "disp": "meio",
+     "bold": true,
+     "t0": 0.86,
+     "t1": 1.16
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 1.16,
+     "t1": 1.5
+    },
+    {
+     "disp": "um",
+     "bold": true,
+     "t0": 1.5,
+     "t1": 1.76
+    },
+    {
+     "disp": "terço?",
+     "bold": true,
+     "t0": 1.76,
+     "t1": 2.14
+    },
+    {
+     "disp": "Você",
+     "bold": false,
+     "t0": 2.52,
+     "t1": 2.76
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 2.76,
+     "t1": 2.94
+    },
+    {
+     "disp": "três",
+     "bold": true,
+     "t0": 2.94,
+     "t1": 3.3
+    },
+    {
+     "disp": "segundos.",
+     "bold": true,
+     "t0": 3.3,
+     "t1": 3.58
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 2.52
+   }
+  },
+  {
+   "id": "s02",
+   "block": "macete",
+   "start": 4.83,
+   "dur": 12.06,
+   "tokens": [
+    {
+     "disp": "Se",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.53
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 0.53,
+     "t1": 0.71
+    },
+    {
+     "disp": "pensou",
+     "bold": false,
+     "t0": 0.71,
+     "t1": 1.05
+    },
+    {
+     "disp": "dois",
+     "bold": true,
+     "t0": 1.05,
+     "t1": 1.33
+    },
+    {
+     "disp": "quintos,",
+     "bold": true,
+     "t0": 1.33,
+     "t1": 1.89
+    },
+    {
+     "disp": "errou!",
+     "bold": true,
+     "t0": 1.99,
+     "t1": 2.29
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 2.91
+    },
+    {
+     "disp": "macete",
+     "bold": false,
+     "t0": 2.91,
+     "t1": 3.35
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 3.35,
+     "t1": 3.49
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.49,
+     "t1": 3.61
+    },
+    {
+     "disp": "borboleta.",
+     "bold": true,
+     "t0": 3.61,
+     "t1": 4.31
+    },
+    {
+     "disp": "Em",
+     "bold": false,
+     "t0": 4.67,
+     "t1": 4.69
+    },
+    {
+     "disp": "cima:",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 4.97
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 5.21,
+     "t1": 5.35
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.35,
+     "t1": 5.51
+    },
+    {
+     "disp": "três,",
+     "bold": false,
+     "t0": 5.51,
+     "t1": 5.83
+    },
+    {
+     "disp": "mais",
+     "bold": true,
+     "t0": 5.97,
+     "t1": 6.35
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 6.35,
+     "t1": 6.69
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 6.69,
+     "t1": 6.93
+    },
+    {
+     "disp": "um,",
+     "bold": false,
+     "t0": 6.93,
+     "t1": 7.21
+    },
+    {
+     "disp": "cinco.",
+     "bold": true,
+     "t0": 7.49,
+     "t1": 7.77
+    },
+    {
+     "disp": "Embaixo:",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.31
+    },
+    {
+     "disp": "dois",
+     "bold": false,
+     "t0": 8.87,
+     "t1": 9.07
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 9.07,
+     "t1": 9.33
+    },
+    {
+     "disp": "três,",
+     "bold": false,
+     "t0": 9.33,
+     "t1": 9.67
+    },
+    {
+     "disp": "seis.",
+     "bold": true,
+     "t0": 9.97,
+     "t1": 10.29
+    },
+    {
+     "disp": "Cinco",
+     "bold": true,
+     "t0": 10.79,
+     "t1": 11.31
+    },
+    {
+     "disp": "sextos!",
+     "bold": true,
+     "t0": 11.31,
+     "t1": 11.95
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 1.99,
+    "c": 2.73,
+    "d": 4.67,
+    "e": 8.19,
+    "f": 10.79
+   }
+  },
+  {
+   "id": "s03",
+   "block": "virada",
+   "start": 16.89,
+   "dur": 5.35,
+   "tokens": [
+    {
+     "disp": "Fração",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.81
+    },
+    {
+     "disp": "não",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 1.07
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.07,
+     "t1": 1.31
+    },
+    {
+     "disp": "difícil.",
+     "bold": true,
+     "t0": 1.31,
+     "t1": 1.59
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.09
+    },
+    {
+     "disp": "regra",
+     "bold": false,
+     "t0": 2.09,
+     "t1": 2.41
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.41,
+     "t1": 2.59
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.79
+    },
+    {
+     "disp": "só:",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 3.05
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.53
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 3.53,
+     "t1": 3.67
+    },
+    {
+     "disp": "soma",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 4.01
+    },
+    {
+     "disp": "pedaço",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.47
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 4.47,
+     "t1": 4.61
+    },
+    {
+     "disp": "mesmo",
+     "bold": true,
+     "t0": 4.61,
+     "t1": 4.87
+    },
+    {
+     "disp": "tamanho.",
+     "bold": true,
+     "t0": 4.87,
+     "t1": 5.25
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 1.99,
+    "c": 3.33
+   }
+  },
+  {
+   "id": "s04",
+   "block": "trilha",
+   "start": 22.24,
+   "dur": 8.72,
+   "tokens": [
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 0.32,
+     "t1": 0.58
+    },
+    {
+     "disp": "isso",
+     "bold": false,
+     "t0": 0.58,
+     "t1": 0.8
+    },
+    {
+     "disp": "eu",
+     "bold": false,
+     "t0": 0.94,
+     "t1": 1.0
+    },
+    {
+     "disp": "montei",
+     "bold": false,
+     "t0": 1.0,
+     "t1": 1.28
+    },
+    {
+     "disp": "vinte",
+     "bold": true,
+     "t0": 1.28,
+     "t1": 1.473
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 1.473,
+     "t1": 1.667
+    },
+    {
+     "disp": "uma",
+     "bold": true,
+     "t0": 1.667,
+     "t1": 1.86
+    },
+    {
+     "disp": "aulas,",
+     "bold": true,
+     "t0": 1.86,
+     "t1": 2.28
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 2.44,
+     "t1": 2.64
+    },
+    {
+     "disp": "zero:",
+     "bold": true,
+     "t0": 2.64,
+     "t1": 2.98
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.98,
+     "t1": 3.4
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 3.4,
+     "t1": 3.56
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 3.56,
+     "t1": 3.66
+    },
+    {
+     "disp": "fração,",
+     "bold": false,
+     "t0": 3.66,
+     "t1": 4.08
+    },
+    {
+     "disp": "somar",
+     "bold": false,
+     "t0": 4.3,
+     "t1": 4.64
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.64,
+     "t1": 4.72
+    },
+    {
+     "disp": "subtrair,",
+     "bold": false,
+     "t0": 4.72,
+     "t1": 5.2
+    },
+    {
+     "disp": "multiplicar",
+     "bold": false,
+     "t0": 5.46,
+     "t1": 6.1
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.1,
+     "t1": 6.16
+    },
+    {
+     "disp": "dividir,",
+     "bold": false,
+     "t0": 6.16,
+     "t1": 6.72
+    },
+    {
+     "disp": "números",
+     "bold": false,
+     "t0": 6.72,
+     "t1": 7.14
+    },
+    {
+     "disp": "decimais",
+     "bold": false,
+     "t0": 7.14,
+     "t1": 7.86
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 7.86,
+     "t1": 8.08
+    },
+    {
+     "disp": "dízimas.",
+     "bold": false,
+     "t0": 8.08,
+     "t1": 8.62
+    }
+   ],
+   "cues": {
+    "a": 0.32,
+    "b": 2.98,
+    "c": 4.3,
+    "d": 5.46,
+    "e": 6.72,
+    "f": 7.86
+   }
+  },
+  {
+   "id": "s05",
+   "block": "cta",
+   "start": 30.96,
+   "dur": 8.51,
+   "tokens": [
+    {
+     "disp": "Procure",
+     "bold": false,
+     "t0": 0.24,
+     "t1": 0.76
+    },
+    {
+     "disp": "Estudativo",
+     "bold": true,
+     "t0": 0.76,
+     "t1": 1.86
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 1.86,
+     "t1": 2.08
+    },
+    {
+     "disp": "YouTube",
+     "bold": false,
+     "t0": 2.08,
+     "t1": 2.44
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 2.44,
+     "t1": 2.76
+    },
+    {
+     "disp": "assista",
+     "bold": false,
+     "t0": 2.76,
+     "t1": 3.16
+    },
+    {
+     "disp": "à",
+     "bold": false,
+     "t0": 3.16,
+     "t1": 3.18
+    },
+    {
+     "disp": "playlist",
+     "bold": false,
+     "t0": 3.18,
+     "t1": 3.48
+    },
+    {
+     "disp": "Frações",
+     "bold": true,
+     "t0": 3.84,
+     "t1": 4.4
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 4.4,
+     "t1": 4.56
+    },
+    {
+     "disp": "Decimais",
+     "bold": true,
+     "t0": 4.56,
+     "t1": 5.02
+    },
+    {
+     "disp": "do",
+     "bold": true,
+     "t0": 5.02,
+     "t1": 5.18
+    },
+    {
+     "disp": "Zero.",
+     "bold": true,
+     "t0": 5.18,
+     "t1": 5.48
+    },
+    {
+     "disp": "Bons",
+     "bold": false,
+     "t0": 5.84,
+     "t1": 6.16
+    },
+    {
+     "disp": "estudos!",
+     "bold": false,
+     "t0": 6.16,
+     "t1": 6.56
+    }
+   ],
+   "cues": {
+    "a": 0.24,
+    "b": 2.44,
+    "c": 5.84
+   }
+  }
+ ]
+}

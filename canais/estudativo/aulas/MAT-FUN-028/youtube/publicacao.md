@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-028 · Sistema de inequações
 
-**Arquivo:** `final/estudativo_MAT-FUN-028_sistema_de_inequacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-028_sistema_de_inequacoes.mp4` · 5:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um número precisa obedecer duas condições ao mesmo tempo: x − 1 > 0 e x² �
 ✅ Contar os inteiros de uma resposta
 
 ⏱️ Capítulos
-[TEMPO] Duas condições ao mesmo tempo
-[TEMPO] O que você precisa saber
-[TEMPO] O que é um sistema de inequações
-[TEMPO] Os 3 passos: resolver, empilhar e cruzar
-[TEMPO] Outro sistema: ]3, 5]
-[TEMPO] O erro: juntar em vez de cruzar
-[TEMPO] O atalho: maior dos começos, menor dos fins
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: quantos inteiros?
-[TEMPO] Resumo e próxima aula
+0:00 Duas condições ao mesmo tempo
+0:25 O que você precisa saber
+0:45 O que é um sistema de inequações
+0:58 Os 3 passos: resolver, empilhar e cruzar
+2:05 Outro sistema: ]3, 5]
+2:46 O erro: juntar em vez de cruzar
+3:08 O atalho: maior dos começos, menor dos fins
+3:46 Hora de testar
+4:02 Resolvendo: quantos inteiros?
+4:56 Resumo e próxima aula
 
 📚 Antes desta aula
 União e interseção de intervalos: [LINK MAT-CON-008]

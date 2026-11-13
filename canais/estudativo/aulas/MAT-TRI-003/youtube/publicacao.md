@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-003 · Ângulos notáveis: 30°, 45° e 60°
 
-**Arquivo:** `final/estudativo_MAT-TRI-003_angulos_notaveis_30_45_60.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-003_angulos_notaveis_30_45_60.mp4` · 5:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Seno de 30° é 1/2, cosseno de 45° é √2/2 e tangente de 60° é √3. Esses
 ✅ sen 45° · cos 45° + tg 30° · tg 60° = 1/2 + 1 = 1,5
 
 ⏱️ Capítulos
-[TEMPO] A tabela de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] 45° pelo quadrado
-[TEMPO] 30° e 60° pelo triângulo equilátero
-[TEMPO] O erro de trocar o 30° com o 60°
-[TEMPO] O macete da tabela
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a expressão
-[TEMPO] Resumo e próxima aula
+0:00 A tabela de cabeça
+0:24 O que você precisa saber
+0:42 45° pelo quadrado
+1:20 30° e 60° pelo triângulo equilátero
+2:47 O erro de trocar o 30° com o 60°
+3:07 O macete da tabela
+4:04 Hora de testar
+4:18 Resolvendo a expressão
+4:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Seno, cosseno e tangente no triângulo retângulo: [LINK MAT-TRI-001]

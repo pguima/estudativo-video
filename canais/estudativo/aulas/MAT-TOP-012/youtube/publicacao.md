@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-012 · Hipérbole e como reconhecer cada cônica
 
-**Arquivo:** `final/estudativo_MAT-TOP-012_hiperbole_e_conicas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-012_hiperbole_e_conicas.mp4` · 5:52 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Com mais no meio, x²/9 + y²/16 = 1 é uma elipse. Com menos, a figura se abre 
 ✅ O erro de levar a conta da elipse para a hipérbole
 
 ⏱️ Capítulos
-[TEMPO] Um sinal muda a figura
-[TEMPO] O que você precisa saber
-[TEMPO] A diferença fixa das distâncias
-[TEMPO] A equação reduzida e os vértices
-[TEMPO] A caixa: focos e assíntotas
-[TEMPO] Como reconhecer cada cônica
-[TEMPO] O erro de usar a conta da elipse
-[TEMPO] O atalho: a caixa resolve tudo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as questões
-[TEMPO] Resumo e próxima aula
+0:00 Um sinal muda a figura
+0:22 O que você precisa saber
+0:40 A diferença fixa das distâncias
+1:05 A equação reduzida e os vértices
+1:49 A caixa: focos e assíntotas
+2:43 Como reconhecer cada cônica
+3:24 O erro de usar a conta da elipse
+3:51 O atalho: a caixa resolve tudo
+4:23 Hora de testar
+4:46 Resolvendo as questões
+5:27 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação da reta: reduzida, geral e segmentária: [LINK MAT-ANA-004]

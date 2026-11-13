@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-003 · Qual lei usar: senos ou cossenos
 
-**Arquivo:** `final/estudativo_MAT-TRA-003_qual_lei_usar_senos_ou_cossenos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-003_qual_lei_usar_senos_ou_cossenos.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Dois pontos separados por um lago: ninguém estica uma trena sobre a água, mas 
 ✅ O atalho: o quadrado do maior lado contra a soma dos quadrados dos outros
 
 ⏱️ Capítulos
-[TEMPO] Dois pontos separados por um lago
-[TEMPO] O que você precisa saber
-[TEMPO] A pergunta que decide
-[TEMPO] O lago: lei dos cossenos
-[TEMPO] Três lados: tem ângulo obtuso?
-[TEMPO] O erro: senos sem par completo
-[TEMPO] O atalho do maior lado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: lados 6, 8 e 11
-[TEMPO] Resumo e próxima aula
+0:00 Dois pontos separados por um lago
+0:26 O que você precisa saber
+0:40 A pergunta que decide
+1:14 O lago: lei dos cossenos
+1:50 Três lados: tem ângulo obtuso?
+2:21 O erro: senos sem par completo
+2:39 O atalho do maior lado
+3:08 Hora de testar
+3:27 Resolvendo: lados 6, 8 e 11
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Lei dos senos: [LINK MAT-TRA-001]

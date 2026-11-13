@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-008 · Equação reduzida da circunferência: centro e raio
 
-**Arquivo:** `final/estudativo_MAT-ANA-008_equacao_reduzida_da_circunferencia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-008_equacao_reduzida_da_circunferencia.mp4` · 5:28 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: o centro é o número que zera cada parêntese
 
 ⏱️ Capítulos
-[TEMPO] Uma conta que é um desenho
-[TEMPO] O que você precisa saber
-[TEMPO] Centro na origem: Pitágoras
-[TEMPO] Centro fora da origem
-[TEMPO] A regra geral: equação reduzida
-[TEMPO] Lendo o centro e o raio
-[TEMPO] Escrevendo a equação
-[TEMPO] O erro de dizer que o raio é 9
-[TEMPO] O atalho: zere os parênteses
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: centro (−1, 5), raio 4
-[TEMPO] Resumo e próxima aula
+0:00 Uma conta que é um desenho
+0:23 O que você precisa saber
+0:38 Centro na origem: Pitágoras
+1:18 Centro fora da origem
+2:04 A regra geral: equação reduzida
+2:20 Lendo o centro e o raio
+2:42 Escrevendo a equação
+3:21 O erro de dizer que o raio é 9
+3:44 O atalho: zere os parênteses
+4:13 Hora de testar
+4:33 Resolvendo: centro (−1, 5), raio 4
+5:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Distância entre dois pontos: [LINK MAT-ANA-001]

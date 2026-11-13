@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-001 · Plano cartesiano: marcar e ler pontos
 
-**Arquivo:** `final/estudativo_MAT-FUN-001_plano_cartesiano_marcar_e_ler_pontos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-001_plano_cartesiano_marcar_e_ler_pontos.mp4` · 4:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: (+, +) 1º, (−, +) 2º, (−, −) 3º, (+, −) 4º; ponto num eixo não tem quadrante
 
 ⏱️ Capítulos
-[TEMPO] Mesmos números, lugares diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] Eixo x, eixo y e origem
-[TEMPO] O endereço de um ponto: corredor e elevador
-[TEMPO] Marcando (3, −2), (−1, 4) e (0, 3)
-[TEMPO] Os quatro quadrantes
-[TEMPO] Lendo o endereço no mapa
-[TEMPO] O erro de começar pelo elevador
-[TEMPO] O atalho: o quadrante pelos sinais
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: farmácia e posto
-[TEMPO] Resumo e próxima aula
+0:00 Mesmos números, lugares diferentes
+0:21 O que você precisa saber
+0:32 Eixo x, eixo y e origem
+1:01 O endereço de um ponto: corredor e elevador
+1:29 Marcando (3, −2), (−1, 4) e (0, 3)
+2:02 Os quatro quadrantes
+2:37 Lendo o endereço no mapa
+3:05 O erro de começar pelo elevador
+3:25 O atalho: o quadrante pelos sinais
+3:51 Hora de testar
+4:09 Resolvendo: farmácia e posto
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Números negativos e reta numérica: [LINK MAT-NUM-015]

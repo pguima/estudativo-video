@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-009 · Praticando: ângulos e triângulos
 
-**Arquivo:** `final/estudativo_MAT-ANG-009_praticando_angulos_e_triangulos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-009_praticando_angulos_e_triangulos.mp4` · 5:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões de ângulos e triângulos, criadas para esta aula: pause, resolv
 ✅ Baricentro com equação: AG = 2 · GM, mediana de 15 (não pare no x = 4)
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: triângulo entre paralelas
-[TEMPO] Resposta 1: x = 20 e Â = 60°
-[TEMPO] O atalho: olhe só para o ponto de cima
-[TEMPO] Questão 2: isósceles e ângulo externo
-[TEMPO] Resposta 2: 50°, 65° e 65°
-[TEMPO] Questão 3: o terreno isósceles
-[TEMPO] Resposta 3: 11 m e perímetro de 27 m
-[TEMPO] Questão 4: a bissetriz do isósceles
-[TEMPO] Resposta 4: 8 cm e 90°
-[TEMPO] Questão 5: baricentro com equação
-[TEMPO] Resposta 5: mediana de 15
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões para resolver
+0:13 O que você vai usar
+0:29 Questão 1: triângulo entre paralelas
+0:59 Resposta 1: x = 20 e Â = 60°
+1:33 O atalho: olhe só para o ponto de cima
+2:01 Questão 2: isósceles e ângulo externo
+2:20 Resposta 2: 50°, 65° e 65°
+2:51 Questão 3: o terreno isósceles
+3:07 Resposta 3: 11 m e perímetro de 27 m
+3:37 Questão 4: a bissetriz do isósceles
+3:56 Resposta 4: 8 cm e 90°
+4:30 Questão 5: baricentro com equação
+4:47 Resposta 5: mediana de 15
+5:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas paralelas cortadas por uma transversal: [LINK MAT-ANG-003]

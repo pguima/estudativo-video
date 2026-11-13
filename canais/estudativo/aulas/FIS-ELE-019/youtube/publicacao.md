@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-019 · Chuveiro, lâmpadas e tomada
 
-**Arquivo:** `final/estudativo_FIS-ELE-019_chuveiro_lampadas_tomada.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-019_chuveiro_lampadas_tomada.mp4` · 5:05 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Na posição inverno, o chuveiro esquenta mais porque a resistência dele é men
 ✅ O atalho: quantas vezes mais, direto pela razão das etiquetas
 
 ⏱️ Capítulos
-[TEMPO] Chuveiro no inverno: mais ou menos resistência?
-[TEMPO] O que você precisa saber
-[TEMPO] A tomada e o chuveiro
-[TEMPO] A etiqueta da lâmpada
-[TEMPO] Lâmpadas em paralelo e em série
-[TEMPO] O erro: a de maior potência sempre brilha mais?
-[TEMPO] O atalho: brilho pela etiqueta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 40 W e 100 W em série
-[TEMPO] Resumo e próxima aula
+0:00 Chuveiro no inverno: mais ou menos resistência?
+0:24 O que você precisa saber
+0:43 A tomada e o chuveiro
+1:51 A etiqueta da lâmpada
+2:25 Lâmpadas em paralelo e em série
+3:08 O erro: a de maior potência sempre brilha mais?
+3:23 O atalho: brilho pela etiqueta
+3:55 Hora de testar
+4:11 Resolvendo: 40 W e 100 W em série
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência elétrica e efeito Joule: [LINK FIS-ELE-017]

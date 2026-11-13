@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-010 · Posições relativas: ponto, reta e circunferência
 
-**Arquivo:** `final/estudativo_MAT-ANA-010_posicoes_relativas_ponto_reta_circunferencia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-010_posicoes_relativas_ponto_reta_circunferencia.mp4` · 6:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma reta e uma circunferência se cortam, só se encostam ou nem se tocam? Sem d
 ✅ O atalho: com reta deitada ou em pé, a distância ao centro se lê no plano
 
 ⏱️ Capítulos
-[TEMPO] Corta, encosta ou passa longe?
-[TEMPO] O que você precisa saber
-[TEMPO] O ponto: dentro, em cima ou fora
-[TEMPO] A reta: substituição e delta
-[TEMPO] Tangente e externa
-[TEMPO] O erro de comparar com o raio
-[TEMPO] O atalho: reta deitada ou em pé
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: fora e tangente
-[TEMPO] Resumo e próxima aula
+0:00 Corta, encosta ou passa longe?
+0:21 O que você precisa saber
+0:39 O ponto: dentro, em cima ou fora
+1:33 A reta: substituição e delta
+2:56 Tangente e externa
+3:49 O erro de comparar com o raio
+4:09 O atalho: reta deitada ou em pé
+4:49 Hora de testar
+5:09 Resolvendo: fora e tangente
+5:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Ponto de encontro de duas retas: [LINK MAT-ANA-006]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-010 · Razão entre áreas de figuras semelhantes
 
-**Arquivo:** `final/estudativo_MAT-ARE-010_razao_entre_areas_de_figuras_semelhantes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-010_razao_entre_areas_de_figuras_semelhantes.mp4` · 4:41 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um terreno quadrado teve cada lado aumentado em 20%. A área não aumenta 20%, n
 ✅ O atalho: 20 + 20 + 20 · 20 / 100 = 44%, e lados 20% menores dão área 36% menor
 
 ⏱️ Capítulos
-[TEMPO] Lado +20%, área +44%?
-[TEMPO] O que você precisa saber
-[TEMPO] O triângulo ampliado 3 vezes
-[TEMPO] A regra: área × k²
-[TEMPO] Porcentagem na área: 1,2² = 1,44
-[TEMPO] O erro dos 40%
-[TEMPO] O atalho dos aumentos seguidos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o logotipo
-[TEMPO] Resumo e próxima aula
+0:00 Lado +20%, área +44%?
+0:21 O que você precisa saber
+0:40 O triângulo ampliado 3 vezes
+1:18 A regra: área × k²
+1:33 Porcentagem na área: 1,2² = 1,44
+2:05 O erro dos 40%
+2:42 O atalho dos aumentos seguidos
+3:27 Hora de testar
+3:45 Resolvendo o logotipo
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Triângulos semelhantes: critérios e razão de semelhança: [LINK MAT-ANG-012]

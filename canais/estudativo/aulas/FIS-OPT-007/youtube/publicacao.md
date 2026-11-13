@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-007 · Equação das lentes e dioptria
 
-**Arquivo:** `final/estudativo_FIS-OPT-007_equacao_das_lentes_dioptria.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-007_equacao_das_lentes_dioptria.mp4` · 4:35 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Mais dois graus na receita é uma lente convergente com foco a 50 cm. Nesta aula
 ✅ O atalho f (cm) = 100 ÷ grau
 
 ⏱️ Capítulos
-[TEMPO] Mais dois graus
-[TEMPO] O que você precisa saber
-[TEMPO] A equação das lentes
-[TEMPO] Exemplos: lupa e divergente
-[TEMPO] O grau dos óculos
-[TEMPO] O erro do centímetro
-[TEMPO] O atalho do grau
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 Mais dois graus
+0:18 O que você precisa saber
+0:33 A equação das lentes
+1:02 Exemplos: lupa e divergente
+1:54 O grau dos óculos
+2:41 O erro do centímetro
+2:56 O atalho do grau
+3:25 Hora de testar
+3:41 Resolvendo
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Lentes: formar imagens: [LINK FIS-OPT-006]

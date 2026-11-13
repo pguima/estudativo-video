@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-009 · Praticando: som e efeito Doppler
 
-**Arquivo:** `final/estudativo_FIS-OND-009_praticando_som_e_efeito_doppler.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-009_praticando_som_e_efeito_doppler.mp4` · 3:51 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Na prova, o som aparece de quatro jeitos: decibéis, instrumentos, ressonância 
 ✅ Efeito Doppler com o ouvinte em movimento
 
 ⏱️ Capítulos
-[TEMPO] Os quatro jeitos de o som cair na prova
-[TEMPO] O que você vai usar
-[TEMPO] O método: o que a questão compara
-[TEMPO] Questão 1: decibéis
-[TEMPO] Questão 2: flauta e violino
-[TEMPO] Questão 3: a corda do violão
-[TEMPO] Questão 4: o tubo que ressoa
-[TEMPO] Questão 5: o carro e a sirene
-[TEMPO] Resumo e próxima aula
+0:00 Os quatro jeitos de o som cair na prova
+0:11 O que você vai usar
+0:20 O método: o que a questão compara
+0:38 Questão 1: decibéis
+1:05 Questão 2: flauta e violino
+1:38 Questão 3: a corda do violão
+2:09 Questão 4: o tubo que ressoa
+2:51 Questão 5: o carro e a sirene
+3:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Som: altura, intensidade e timbre: [LINK FIS-OND-006]

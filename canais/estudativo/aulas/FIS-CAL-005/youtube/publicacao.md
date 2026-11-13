@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-005 · Trocas de calor no calorímetro
 
-**Arquivo:** `final/estudativo_FIS-CAL-005_trocas_de_calor_calorimetro.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-005_trocas_de_calor_calorimetro.mp4` · 4:25 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Misturando 200 g de água a 80 °C com 300 g de água a 20 °C, muita gente resp
 ✅ Onde a temperatura final cai entre as duas
 
 ⏱️ Capítulos
-[TEMPO] A média engana
-[TEMPO] O que você precisa saber
-[TEMPO] O calorímetro e a soma dos calores
-[TEMPO] Resolvendo a mistura de água
-[TEMPO] O atalho da média ponderada
-[TEMPO] Substâncias diferentes: metal na água
-[TEMPO] O erro da média simples
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as duas águas
-[TEMPO] Resumo e próxima aula
+0:00 A média engana
+0:21 O que você precisa saber
+0:35 O calorímetro e a soma dos calores
+1:02 Resolvendo a mistura de água
+1:41 O atalho da média ponderada
+2:14 Substâncias diferentes: metal na água
+2:55 O erro da média simples
+3:28 Hora de testar
+3:42 Resolvendo: as duas águas
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Calor sensível: Q = m·c·ΔT: [LINK FIS-CAL-003]

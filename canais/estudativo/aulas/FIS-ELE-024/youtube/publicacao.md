@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-024 · Leis de Kirchhoff: nós e malhas
 
-**Arquivo:** `final/estudativo_FIS-ELE-024_leis_de_kirchhoff_nos_e_malhas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-024_leis_de_kirchhoff_nos_e_malhas.mp4` · 4:21 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Uma bateria virada contra a outra na mesma volta do circuito soma ou subtrai? E 
 ✅ O atalho para uma malha só
 
 ⏱️ Capítulos
-[TEMPO] Bateria virada: soma ou subtrai?
-[TEMPO] O que você precisa saber
-[TEMPO] A lei dos nós
-[TEMPO] A lei das malhas
-[TEMPO] A regra de sinais
-[TEMPO] Exemplo: uma malha com dois geradores
-[TEMPO] O erro: o sinal pela corrente
-[TEMPO] O atalho para uma malha só
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 18 V contra 6 V
-[TEMPO] Resumo e próxima aula
+0:00 Bateria virada: soma ou subtrai?
+0:22 O que você precisa saber
+0:40 A lei dos nós
+1:04 A lei das malhas
+1:26 A regra de sinais
+1:51 Exemplo: uma malha com dois geradores
+2:38 O erro: o sinal pela corrente
+2:54 O atalho para uma malha só
+3:19 Hora de testar
+3:37 Resolvendo: 18 V contra 6 V
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Receptores e associação de pilhas: [LINK FIS-ELE-022]

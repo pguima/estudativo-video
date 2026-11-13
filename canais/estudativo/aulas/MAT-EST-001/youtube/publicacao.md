@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-001 · População, amostra e tipos de variáveis
 
-**Arquivo:** `final/estudativo_MAT-EST-001_populacao_amostra_e_tipos_de_variaveis.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-001_populacao_amostra_e_tipos_de_variaveis.mp4` · 5:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Para saber se a sopa está salgada, você não toma a panela inteira: uma colher
 ✅ O atalho: 80 de 1.000 = 8%, e tira 8% de cada turno
 
 ⏱️ Capítulos
-[TEMPO] Uma colher de sopa basta?
-[TEMPO] O que você precisa saber
-[TEMPO] População e censo
-[TEMPO] Amostra
-[TEMPO] Variável qualitativa e quantitativa
-[TEMPO] O erro do número que só dá nome
-[TEMPO] Amostra proporcional
-[TEMPO] O atalho da mesma porcentagem
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a pesquisa da empresa
-[TEMPO] Resumo e próxima aula
+0:00 Uma colher de sopa basta?
+0:20 O que você precisa saber
+0:34 População e censo
+1:01 Amostra
+1:25 Variável qualitativa e quantitativa
+1:47 O erro do número que só dá nome
+2:13 Amostra proporcional
+2:59 O atalho da mesma porcentagem
+3:38 Hora de testar
+4:04 Resolvendo a pesquisa da empresa
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Descobrir quantos por cento e achar o total: [LINK MAT-POR-003]

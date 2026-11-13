@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-025 · Circuito com duas malhas
 
-**Arquivo:** `final/estudativo_FIS-ELE-025_circuito_com_duas_malhas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-025_circuito_com_duas_malhas.mp4` · 5:31 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Dois geradores, três ramos e três correntes desconhecidas: parece muito, mas a
 ✅ O atalho da tensão entre os dois nós
 
 ⏱️ Capítulos
-[TEMPO] Dois geradores, três correntes
-[TEMPO] O que você precisa saber
-[TEMPO] O circuito, o nó e as malhas
-[TEMPO] O sistema e a conferência
-[TEMPO] O erro: o mesmo nó duas vezes
-[TEMPO] O atalho: a tensão entre os nós
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 10 V e 8 V
-[TEMPO] Resumo e próxima aula
+0:00 Dois geradores, três correntes
+0:19 O que você precisa saber
+0:32 O circuito, o nó e as malhas
+1:31 O sistema e a conferência
+2:38 O erro: o mesmo nó duas vezes
+2:54 O atalho: a tensão entre os nós
+3:44 Hora de testar
+4:05 Resolvendo: 10 V e 8 V
+5:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Leis de Kirchhoff: nós e malhas: [LINK FIS-ELE-024]

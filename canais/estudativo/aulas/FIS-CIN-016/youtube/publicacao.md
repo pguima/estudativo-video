@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-016 · Lançamento oblíquo
 
-**Arquivo:** `final/estudativo_FIS-CIN-016_lancamento_obliquo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-016_lancamento_obliquo.mp4` · 4:15 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Dois chutes saem com a mesma velocidade, um a 30° e outro a 60°. Qual vai mais
 ✅ O atalho: A = vx · vy ÷ 5, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] 30° ou 60°: qual vai mais longe?
-[TEMPO] O que você precisa saber
-[TEMPO] Decompor a velocidade de saída
-[TEMPO] Na vertical: tempo e altura máxima
-[TEMPO] Na horizontal: o alcance
-[TEMPO] O erro: no alto, v = 0?
-[TEMPO] Ângulos complementares e os 45°
-[TEMPO] O atalho do alcance
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o chute a 25 m/s
-[TEMPO] Resumo e próxima aula
+0:00 30° ou 60°: qual vai mais longe?
+0:22 O que você precisa saber
+0:37 Decompor a velocidade de saída
+1:06 Na vertical: tempo e altura máxima
+1:26 Na horizontal: o alcance
+1:35 O erro: no alto, v = 0?
+1:50 Ângulos complementares e os 45°
+2:30 O atalho do alcance
+3:01 Hora de testar
+3:20 Resolvendo: o chute a 25 m/s
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Lançamento vertical para cima: [LINK FIS-CIN-014]

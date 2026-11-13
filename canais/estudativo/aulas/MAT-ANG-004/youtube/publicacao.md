@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-004 · Soma dos ângulos do triângulo e ângulo externo
 
-**Arquivo:** `final/estudativo_MAT-ANG-004_soma_dos_angulos_e_angulo_externo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-004_soma_dos_angulos_e_angulo_externo.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Recorte um triângulo de papel, rasgue as três pontas e junte uma ao lado da ou
 ✅ O atalho: externo = soma dos internos de longe
 
 ⏱️ Capítulos
-[TEMPO] As pontas de papel que sempre dão 180°
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a soma é 180°
-[TEMPO] Achando o terceiro ângulo
-[TEMPO] O ângulo externo
-[TEMPO] O erro de usar o externo como de dentro
-[TEMPO] O atalho: externo = soma dos de longe
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x e 2x com externo de 150°
-[TEMPO] Resumo e próxima aula
+0:00 As pontas de papel que sempre dão 180°
+0:22 O que você precisa saber
+0:37 Por que a soma é 180°
+1:20 Achando o terceiro ângulo
+1:56 O ângulo externo
+2:45 O erro de usar o externo como de dentro
+3:11 O atalho: externo = soma dos de longe
+3:31 Hora de testar
+3:46 Resolvendo: x e 2x com externo de 150°
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas paralelas cortadas por uma transversal: [LINK MAT-ANG-003]

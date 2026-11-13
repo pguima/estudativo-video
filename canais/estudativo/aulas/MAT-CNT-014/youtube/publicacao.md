@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-014 · Probabilidade da união
 
-**Arquivo:** `final/estudativo_MAT-CNT-014_probabilidade_uniao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-014_probabilidade_uniao.mp4` · 4:14 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ Tire uma carta de um baralho: qual a chance de ser um rei ou uma carta de copas?
 ✅ Quando a questão já dá as chances em %: 60% + 50% − 30% = 80%
 
 ⏱️ Capítulos
-[TEMPO] Rei ou copas: 17/52?
-[TEMPO] O que você precisa saber
-[TEMPO] As 52 cartas do baralho
-[TEMPO] O Venn de reis e copas
-[TEMPO] A fórmula da união
-[TEMPO] O erro de contar duas vezes
-[TEMPO] O atalho: conte e divida no fim
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: múltiplo de 3 ou de 5
-[TEMPO] Resumo e próxima aula
+0:00 Rei ou copas: 17/52?
+0:21 O que você precisa saber
+0:36 As 52 cartas do baralho
+0:51 O Venn de reis e copas
+1:30 A fórmula da união
+2:20 O erro de contar duas vezes
+2:38 O atalho: conte e divida no fim
+3:12 Hora de testar
+3:27 Resolvendo: múltiplo de 3 ou de 5
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Probabilidade: favoráveis sobre possíveis: [LINK MAT-CNT-011]

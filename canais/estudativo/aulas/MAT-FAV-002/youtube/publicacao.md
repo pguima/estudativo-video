@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-002 · Módulo de um número e gráfico em V
 
-**Arquivo:** `final/estudativo_MAT-FAV-002_modulo_e_grafico_em_v.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-002_modulo_e_grafico_em_v.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Menos sete e sete são números diferentes, mas cada um está a sete passos do z
 ✅ O atalho: o vértice está onde o de dentro zera
 
 ⏱️ Capítulos
-[TEMPO] Menos sete e sete
-[TEMPO] O que você precisa saber
-[TEMPO] Módulo é distância até o zero
-[TEMPO] O gráfico em V
-[TEMPO] Mover o V: |x − 2| + 1
-[TEMPO] Rebater para cima: |x² − 4|
-[TEMPO] O erro do lado errado
-[TEMPO] O atalho: onde o de dentro zera
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: |x + 3| − 2
-[TEMPO] Resumo e próxima aula
+0:00 Menos sete e sete
+0:21 O que você precisa saber
+0:33 Módulo é distância até o zero
+1:10 O gráfico em V
+1:36 Mover o V: |x − 2| + 1
+2:04 Rebater para cima: |x² − 4|
+2:31 O erro do lado errado
+2:54 O atalho: onde o de dentro zera
+3:25 Hora de testar
+3:39 Resolvendo: |x + 3| − 2
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Função definida por partes: [LINK MAT-FAV-001]

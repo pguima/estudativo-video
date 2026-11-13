@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-002 · Segunda lei de Newton: F = m·a
 
-**Arquivo:** `final/estudativo_FIS-DIN-002_segunda_lei_de_newton.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-002_segunda_lei_de_newton.mp4` · 4:32 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Empurre um carrinho vazio e um cheio com a mesma força: o vazio dispara. Nesta 
 ✅ O atalho: mudou só uma coisa? Use a proporção
 
 ⏱️ Capítulos
-[TEMPO] Mesma força, carrinhos diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] A segunda lei: F = m·a
-[TEMPO] Exemplos resolvidos
-[TEMPO] A fórmula como proporção
-[TEMPO] O erro: uma força só
-[TEMPO] O atalho da proporção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a caixa de 20 kg
-[TEMPO] Resumo e próxima aula
+0:00 Mesma força, carrinhos diferentes
+0:23 O que você precisa saber
+0:39 A segunda lei: F = m·a
+1:20 Exemplos resolvidos
+1:54 A fórmula como proporção
+2:31 O erro: uma força só
+2:47 O atalho da proporção
+3:19 Hora de testar
+3:35 Resolvendo: a caixa de 20 kg
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Força resultante e primeira lei: inércia: [LINK FIS-DIN-001]

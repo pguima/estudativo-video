@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-006 · Praticando: razões trigonométricas
 
-**Arquivo:** `final/estudativo_MAT-TRI-006_praticando_razoes_trigonometricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-006_praticando_razoes_trigonometricas.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Quatro situações criadas para esta aula: uma sombra, uma escada, um farol e um
 ✅ Conferir se a resposta faz sentido
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a sombra
-[TEMPO] Resposta 1: a tangente de 37°
-[TEMPO] Situação 2: a escada
-[TEMPO] Resposta 2: cosseno 1/2 é 60°
-[TEMPO] Situação 3: o farol
-[TEMPO] Resposta 3: o atalho e a tangente
-[TEMPO] Situação 4: a antena
-[TEMPO] Resposta 4: com a hipotenusa procurada, divida
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:14 O que você vai usar
+0:30 Situação 1: a sombra
+0:50 Resposta 1: a tangente de 37°
+1:19 Situação 2: a escada
+1:33 Resposta 2: cosseno 1/2 é 60°
+2:05 Situação 3: o farol
+2:23 Resposta 3: o atalho e a tangente
+3:12 Situação 4: a antena
+3:26 Resposta 4: com a hipotenusa procurada, divida
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Seno, cosseno e tangente no triângulo retângulo: [LINK MAT-TRI-001]

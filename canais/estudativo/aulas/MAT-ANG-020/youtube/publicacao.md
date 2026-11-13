@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-020 · Pontos notáveis e baricentro
 
-**Arquivo:** `final/estudativo_MAT-ANG-020_pontos_notaveis_e_baricentro.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-020_pontos_notaveis_e_baricentro.mp4` · 4:47 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,20 +31,20 @@ Um triângulo de papelão equilibra na ponta de um lápis, mas só num ponto exa
 ✅ O atalho: divida a mediana por 3 (30 → 10 e 20)
 
 ⏱️ Capítulos
-[TEMPO] O triângulo na ponta do lápis
-[TEMPO] O que você precisa saber
-[TEMPO] Três linhas, um ponto só
-[TEMPO] Baricentro: o ponto de equilíbrio
-[TEMPO] Incentro: o círculo de dentro
-[TEMPO] Circuncentro: o círculo em volta
-[TEMPO] Ortocentro: o encontro das alturas
-[TEMPO] No equilátero, um ponto só
-[TEMPO] O baricentro e o 2 para 1
-[TEMPO] O erro de inverter os pedaços
-[TEMPO] O atalho: mediana dividida por 3
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 21 cm e circuncentro
-[TEMPO] Resumo e próxima aula
+0:00 O triângulo na ponta do lápis
+0:16 O que você precisa saber
+0:28 Três linhas, um ponto só
+0:44 Baricentro: o ponto de equilíbrio
+0:53 Incentro: o círculo de dentro
+1:04 Circuncentro: o círculo em volta
+1:22 Ortocentro: o encontro das alturas
+1:39 No equilátero, um ponto só
+1:46 O baricentro e o 2 para 1
+2:28 O erro de inverter os pedaços
+2:42 O atalho: mediana dividida por 3
+3:29 Hora de testar
+3:54 Resolvendo: 21 cm e circuncentro
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Altura, mediana, bissetriz e mediatriz: [LINK MAT-ANG-008]

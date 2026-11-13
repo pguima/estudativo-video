@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-012 · Praticando: vazão e Bernoulli
 
-**Arquivo:** `final/estudativo_FIS-EGF-012_praticando_vazao_e_bernoulli.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-012_praticando_vazao_e_bernoulli.mp4` · 4:34 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações criadas para esta aula, a última da trilha de equilíbrio, gr
 ✅ Torricelli: a velocidade acompanha a raiz da altura
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] As três ferramentas
-[TEMPO] Situação 1: a caixa d'água
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: o rio
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: o cano que afina
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: diferença de quadrados
-[TEMPO] Situação 4: a asa
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: o tanque
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e fim da trilha
+0:00 Cinco situações
+0:12 As três ferramentas
+0:33 Situação 1: a caixa d'água
+0:47 Resposta da situação 1
+1:08 Situação 2: o rio
+1:26 Resposta da situação 2
+1:45 Situação 3: o cano que afina
+1:58 Resposta da situação 3
+2:28 O atalho: diferença de quadrados
+2:48 Situação 4: a asa
+3:07 Resposta da situação 4
+3:36 Situação 5: o tanque
+3:51 Resposta da situação 5
+4:10 Resumo e fim da trilha
 
 📚 Antes desta aula
 Vazão e equação da continuidade: [LINK FIS-EGF-010]

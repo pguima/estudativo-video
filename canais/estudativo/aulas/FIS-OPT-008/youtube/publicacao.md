@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-008 · Olho humano e defeitos da visão
 
-**Arquivo:** `final/estudativo_FIS-OPT-008_olho_humano_defeitos_da_visao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-008_olho_humano_defeitos_da_visao.mp4` · 4:41 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Na receita de quem tem miopia, o grau vem com sinal de menos; na de quem tem hip
 ✅ O atalho: míope, menos; grau = −1 ÷ ponto remoto
 
 ⏱️ Capítulos
-[TEMPO] O sinal da receita
-[TEMPO] O que você precisa saber
-[TEMPO] Como o olho forma a imagem
-[TEMPO] Miopia
-[TEMPO] Hipermetropia e presbiopia
-[TEMPO] Astigmatismo
-[TEMPO] O erro mais comum
-[TEMPO] Os atalhos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 O sinal da receita
+0:22 O que você precisa saber
+0:38 Como o olho forma a imagem
+1:23 Miopia
+2:00 Hipermetropia e presbiopia
+2:33 Astigmatismo
+2:52 O erro mais comum
+3:06 Os atalhos
+3:40 Hora de testar
+3:53 Resolvendo
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação das lentes e dioptria: [LINK FIS-OPT-007]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-013 · Função logarítmica: gráfico e inequações
 
-**Arquivo:** `final/estudativo_MAT-EXP-013_funcao_logaritmica_grafico_e_inequacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-013_funcao_logaritmica_grafico_e_inequacoes.mp4` · 6:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ O logaritmo de 8 na base 2 dá 3. O de 1.024 dá 10. O número ficou mais de 100
 ✅ O atalho: a base sobe e vira potência, x > 2³
 
 ⏱️ Capítulos
-[TEMPO] 8 e 1.024: o crescimento preguiçoso do logaritmo
-[TEMPO] O que você precisa saber
-[TEMPO] A tabela de log₂ x
-[TEMPO] O espelho de 2ˣ na diagonal
-[TEMPO] O domínio: logaritmando positivo
-[TEMPO] Inequação logarítmica: log₂ x > 3
-[TEMPO] O erro de esquecer o domínio
-[TEMPO] O atalho: a base sobe e vira potência
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo log₂(x − 1) < 3
-[TEMPO] Resumo e próxima aula
+0:00 8 e 1.024: o crescimento preguiçoso do logaritmo
+0:30 O que você precisa saber
+0:45 A tabela de log₂ x
+1:21 O espelho de 2ˣ na diagonal
+2:30 O domínio: logaritmando positivo
+3:10 Inequação logarítmica: log₂ x > 3
+3:50 O erro de esquecer o domínio
+4:16 O atalho: a base sobe e vira potência
+4:55 Hora de testar
+5:10 Resolvendo log₂(x − 1) < 3
+5:39 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é logaritmo: [LINK MAT-EXP-008]

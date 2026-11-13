@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-010 · Praticando: vetores e movimentos
 
-**Arquivo:** `final/estudativo_FIS-CIN-010_praticando_vetores_e_movimentos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-010_praticando_vetores_e_movimentos.mp4` · 4:24 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Numa prova de Física, o difícil quase nunca é a conta: é escolher a fórmula
 ✅ Questão 5: o carro de ré (acelerado ou retardado)
 
 ⏱️ Capítulos
-[TEMPO] O difícil é escolher a fórmula
-[TEMPO] O que você vai usar
-[TEMPO] O método: a grandeza que falta
-[TEMPO] Questão 1: o avião e o vento
-[TEMPO] Questão 2: dois carros se cruzam
-[TEMPO] Questão 3: a bicicleta
-[TEMPO] Questão 4: a pista do avião
-[TEMPO] Questão 5: o carro de ré
-[TEMPO] Resumo e próxima aula
+0:00 O difícil é escolher a fórmula
+0:16 O que você vai usar
+0:28 O método: a grandeza que falta
+1:12 Questão 1: o avião e o vento
+1:44 Questão 2: dois carros se cruzam
+2:19 Questão 3: a bicicleta
+2:51 Questão 4: a pista do avião
+3:25 Questão 5: o carro de ré
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Vetores: somar e subtrair: [LINK FIS-CIN-002]

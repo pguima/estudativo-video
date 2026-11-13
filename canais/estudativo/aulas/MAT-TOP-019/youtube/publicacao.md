@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-019 · Combinação com repetição
 
-**Arquivo:** `final/estudativo_MAT-TOP-019_combinacao_com_repeticao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-019_combinacao_com_repeticao.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma doceria tem quatro sabores, e você vai levar três doces, podendo repetir o
 ✅ O atalho: pelo menos um para cada? Dê um antes de contar
 
 ⏱️ Capítulos
-[TEMPO] Três doces, quatro sabores
-[TEMPO] O que você precisa saber
-[TEMPO] Por que não é 4
-[TEMPO] Bolinhas e barras
-[TEMPO] A regra e a equação x + y + z = 10
-[TEMPO] O erro do 4 · 4 · 4
-[TEMPO] O atalho: dê um para cada antes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas partes
-[TEMPO] Resumo e próxima aula
+0:00 Três doces, quatro sabores
+0:24 O que você precisa saber
+0:40 Por que não é 4
+0:54 Bolinhas e barras
+1:40 A regra e a equação x + y + z = 10
+2:21 O erro do 4 · 4 · 4
+2:41 O atalho: dê um para cada antes
+3:15 Hora de testar
+3:35 Resolvendo as duas partes
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Combinações em problemas de escolha: [LINK MAT-CNT-009]

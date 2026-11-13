@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-019 · Praticando: probabilidade
 
-**Arquivo:** `final/estudativo_MAT-CNT-019_praticando_probabilidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-019_praticando_probabilidade.mp4` · 5:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Quatro situações de probabilidade, criadas para esta aula, em que o mais difí
 ✅ Genética: mãe Aa e pai aa, um filho com a característica = 1/2; dois filhos = 1/4
 
 ⏱️ Capítulos
-[TEMPO] 4 situações: qual ferramenta?
-[TEMPO] O guia: a palavra da pergunta
-[TEMPO] Situação 1: a comissão
-[TEMPO] Resolução 1: contando
-[TEMPO] O atalho: sorteio sem reposição
-[TEMPO] Situação 2: o chute
-[TEMPO] Resolução 2: o complementar
-[TEMPO] Situação 3: múltiplo de 4 ou de 6
-[TEMPO] Resolução 3: some e tire o comum
-[TEMPO] Situação 4: genética
-[TEMPO] Resolução 4: pela árvore
-[TEMPO] Resumo e próxima trilha
+0:00 4 situações: qual ferramenta?
+0:12 O guia: a palavra da pergunta
+0:37 Situação 1: a comissão
+0:51 Resolução 1: contando
+1:14 O atalho: sorteio sem reposição
+1:43 Situação 2: o chute
+1:57 Resolução 2: o complementar
+2:27 Situação 3: múltiplo de 4 ou de 6
+2:58 Resolução 3: some e tire o comum
+3:39 Situação 4: genética
+4:06 Resolução 4: pela árvore
+4:37 Resumo e próxima trilha
 
 📚 Antes desta aula
 Probabilidade: favoráveis sobre possíveis: [LINK MAT-CNT-011]

@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-002 · Potência e rendimento
 
-**Arquivo:** `final/estudativo_FIS-ENE-002_potencia_e_rendimento.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-002_potencia_e_rendimento.mp4` · 4:44 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Duas pessoas levam caixas iguais ao mesmo andar, uma em 1 minuto e a outra em 4:
 ✅ O atalho P = F · v e quando ele vale
 
 ⏱️ Capítulos
-[TEMPO] Mesmo trabalho, tempos diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] Potência e o watt
-[TEMPO] Quilowatt, cavalo-vapor e hp
-[TEMPO] Rendimento e potência dissipada
-[TEMPO] O erro de dividir ao contrário
-[TEMPO] O atalho: P = F · v
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o motor
-[TEMPO] Resumo e próxima aula
+0:00 Mesmo trabalho, tempos diferentes
+0:22 O que você precisa saber
+0:36 Potência e o watt
+1:20 Quilowatt, cavalo-vapor e hp
+2:00 Rendimento e potência dissipada
+2:45 O erro de dividir ao contrário
+3:02 O atalho: P = F · v
+3:38 Hora de testar
+3:54 Resolvendo: o motor
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de uma força: [LINK FIS-ENE-001]

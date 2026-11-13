@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-017 · Potência elétrica e efeito Joule
 
-**Arquivo:** `final/estudativo_FIS-ELE-017_potencia_eletrica_e_efeito_joule.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-017_potencia_eletrica_e_efeito_joule.mp4` · 4:47 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Na etiqueta de um chuveiro está escrito 220 V e 4.400 W. Só com esses dois nú
 ✅ O macete: metade da tensão, um quarto da potência
 
 ⏱️ Capítulos
-[TEMPO] A etiqueta do chuveiro
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem P = U·i
-[TEMPO] O efeito Joule e as três fórmulas
-[TEMPO] Qual fórmula usar
-[TEMPO] O erro: mais resistência esquenta mais?
-[TEMPO] O atalho: o mesmo aparelho em outra tensão
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ferro de passar
-[TEMPO] Resumo e próxima aula
+0:00 A etiqueta do chuveiro
+0:21 O que você precisa saber
+0:40 De onde vem P = U·i
+1:19 O efeito Joule e as três fórmulas
+2:12 Qual fórmula usar
+2:34 O erro: mais resistência esquenta mais?
+3:01 O atalho: o mesmo aparelho em outra tensão
+3:34 Hora de testar
+3:51 Resolvendo: o ferro de passar
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistência e primeira lei de Ohm: [LINK FIS-ELE-009]

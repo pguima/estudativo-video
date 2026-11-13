@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-011 · Probabilidade: favoráveis sobre possíveis
 
-**Arquivo:** `final/estudativo_MAT-CNT-011_probabilidade.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-011_probabilidade.mp4` · 4:28 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Você joga um dado. Qual a chance de sair número par? Dá para responder de tr�
 ✅ O atalho: 3/10 = 30/100 = 30% e 7/20 = 35/100 = 35%
 
 ⏱️ Capítulos
-[TEMPO] Chance de sair par: três respostas certas
-[TEMPO] O que você precisa saber
-[TEMPO] Espaço amostral e evento
-[TEMPO] Favoráveis sobre possíveis
-[TEMPO] A chance vai de 0 a 1
-[TEMPO] O saco de bolas
-[TEMPO] O erro de trocar o de baixo
-[TEMPO] O atalho: leve o de baixo até 100
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o dado e os bombons
-[TEMPO] Resumo e próxima aula
+0:00 Chance de sair par: três respostas certas
+0:19 O que você precisa saber
+0:31 Espaço amostral e evento
+0:56 Favoráveis sobre possíveis
+1:36 A chance vai de 0 a 1
+1:58 O saco de bolas
+2:20 O erro de trocar o de baixo
+2:38 O atalho: leve o de baixo até 100
+3:10 Hora de testar
+3:29 Resolvendo o dado e os bombons
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Conjuntos: pertence, está contido e vazio: [LINK MAT-CON-001]

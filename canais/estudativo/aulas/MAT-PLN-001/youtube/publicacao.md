@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-001 · O que é polinômio: grau, valor e operações
 
-**Arquivo:** `final/estudativo_MAT-PLN-001_o_que_e_polinomio.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-001_o_que_e_polinomio.mp4` · 6:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,19 @@ Qual é o grau de 5x² + x³? Se você respondeu 2 ou 5, esta aula é para você
 ✅ O atalho: P(1) = soma dos coeficientes
 
 ⏱️ Capítulos
-[TEMPO] Qual é o grau de 5x² + x³?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é polinômio
-[TEMPO] O grau
-[TEMPO] P(x) e o valor numérico
-[TEMPO] Somar polinômios
-[TEMPO] Multiplicar polinômios
-[TEMPO] Polinômios idênticos
-[TEMPO] O erro de somar os expoentes
-[TEMPO] O atalho: P(1) é a soma dos coeficientes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: P(−1) e a soma dos coeficientes
-[TEMPO] Resumo e próxima aula
+0:00 Qual é o grau de 5x² + x³?
+0:21 O que você precisa saber
+0:37 O que é polinômio
+1:09 O grau
+1:27 P(x) e o valor numérico
+1:57 Somar polinômios
+2:24 Multiplicar polinômios
+3:01 Polinômios idênticos
+3:42 O erro de somar os expoentes
+4:07 O atalho: P(1) é a soma dos coeficientes
+4:49 Hora de testar
+5:03 Resolvendo: P(−1) e a soma dos coeficientes
+5:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico de uma expressão: [LINK MAT-EQU-002]

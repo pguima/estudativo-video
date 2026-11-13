@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-005 · Movimento uniforme: a função horária
 
-**Arquivo:** `final/estudativo_FIS-CIN-005_movimento_uniforme_funcao_horaria.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-005_movimento_uniforme_funcao_horaria.mp4` · 5:17 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Um carro passa pelo km 20 a 80 km/h, sempre na mesma velocidade. Três horas dep
 ✅ O atalho: ler as respostas direto da fórmula
 
 ⏱️ Capítulos
-[TEMPO] Km 240 ou km 260?
-[TEMPO] O que você precisa saber
-[TEMPO] Movimento uniforme
-[TEMPO] A função horária s = s₀ + v·t
-[TEMPO] Achar o tempo e o movimento retrógrado
-[TEMPO] O erro de misturar unidades
-[TEMPO] O atalho: leia a fórmula
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ciclista
-[TEMPO] Resumo e próxima aula
+0:00 Km 240 ou km 260?
+0:21 O que você precisa saber
+0:39 Movimento uniforme
+1:10 A função horária s = s₀ + v·t
+2:03 Achar o tempo e o movimento retrógrado
+2:53 O erro de misturar unidades
+3:24 O atalho: leia a fórmula
+4:08 Hora de testar
+4:29 Resolvendo: o ciclista
+4:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Referencial, posição e deslocamento: [LINK FIS-CIN-004]

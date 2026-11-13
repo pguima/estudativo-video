@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-014 · Praticando: equação do 2º grau
 
-**Arquivo:** `final/estudativo_MAT-FAT-014_praticando_equacao_2grau.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-014_praticando_equacao_2grau.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões inéditas de equação do 2º grau. Todas saem pela fórmula de 
 ✅ O cercado: x(13 − x) = 40, medidas 5 m e 8 m
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões, o caminho mais curto
-[TEMPO] O mapa da escolha
-[TEMPO] Questão 1: (x − 3)² = 16
-[TEMPO] Resposta 1: 7 e −1
-[TEMPO] Questão 2: x² − 9x + 20 = 0
-[TEMPO] Resposta 2: 4 e 5
-[TEMPO] Questão 3: 2x² + 4x − 4 = 0
-[TEMPO] Resposta 3: −1 ± √3
-[TEMPO] O atalho: divida pelo fator comum antes de tudo
-[TEMPO] Questão 4: k para a raiz dupla
-[TEMPO] Resposta 4: k = 25, raiz 5
-[TEMPO] Questão 5: o cercado
-[TEMPO] Resposta 5: 5 m por 8 m
-[TEMPO] Resumo e próxima trilha
+0:00 Cinco questões, o caminho mais curto
+0:13 O mapa da escolha
+0:31 Questão 1: (x − 3)² = 16
+0:43 Resposta 1: 7 e −1
+1:12 Questão 2: x² − 9x + 20 = 0
+1:22 Resposta 2: 4 e 5
+1:44 Questão 3: 2x² + 4x − 4 = 0
+1:54 Resposta 3: −1 ± √3
+2:33 O atalho: divida pelo fator comum antes de tudo
+2:52 Questão 4: k para a raiz dupla
+3:07 Resposta 4: k = 25, raiz 5
+3:27 Questão 5: o cercado
+3:42 Resposta 5: 5 m por 8 m
+4:31 Resumo e próxima trilha
 
 📚 Antes desta aula
 Equação do 2º grau incompleta: [LINK MAT-FAT-007]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-008 · O que é logaritmo
 
-**Arquivo:** `final/estudativo_MAT-EXP-008_o_que_e_logaritmo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-008_o_que_e_logaritmo.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Dois elevado a quê dá oito? Três. Você acabou de calcular um logaritmo, mesm
 ✅ O atalho: conte os zeros, log 1.000.000 = 6 e log 0,001 = −3
 
 ⏱️ Capítulos
-[TEMPO] Dois elevado a quê dá oito?
-[TEMPO] O que você precisa saber
-[TEMPO] O logaritmo é o expoente que falta
-[TEMPO] A base escondida: log 1.000
-[TEMPO] Quando não sai de cabeça: log₉ 27
-[TEMPO] O logaritmo de 1 e da própria base
-[TEMPO] Condição de existência
-[TEMPO] O erro de dividir
-[TEMPO] O atalho: conte os zeros
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo log₄ 8, log 0,01 e log₃(−9)
-[TEMPO] Resumo e próxima aula
+0:00 Dois elevado a quê dá oito?
+0:19 O que você precisa saber
+0:33 O logaritmo é o expoente que falta
+1:13 A base escondida: log 1.000
+1:23 Quando não sai de cabeça: log₉ 27
+1:54 O logaritmo de 1 e da própria base
+2:11 Condição de existência
+2:52 O erro de dividir
+3:10 O atalho: conte os zeros
+3:46 Hora de testar
+4:02 Resolvendo log₄ 8, log 0,01 e log₃(−9)
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação exponencial: igualar as bases: [LINK MAT-EXP-004]

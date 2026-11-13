@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-011 · Carro na curva
 
-**Arquivo:** `final/estudativo_FIS-DIN-011_carro_na_curva.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-011_carro_na_curva.mp4` · 4:01 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ A mesma curva que você faz a 72 km/h no seco pode jogar o carro para fora na ch
 ✅ O atalho: a massa nunca entra
 
 ⏱️ Capítulos
-[TEMPO] Seco, chuva e pista de corrida
-[TEMPO] O que você precisa saber
-[TEMPO] A curva plana
-[TEMPO] A curva inclinada
-[TEMPO] O erro: esquecer a raiz
-[TEMPO] O atalho da curva
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a velocidade máxima
-[TEMPO] Resumo e próxima aula
+0:00 Seco, chuva e pista de corrida
+0:20 O que você precisa saber
+0:35 A curva plana
+1:33 A curva inclinada
+2:23 O erro: esquecer a raiz
+2:39 O atalho da curva
+3:07 Hora de testar
+3:21 Resolvendo: a velocidade máxima
+3:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Força centrípeta: [LINK FIS-DIN-010]

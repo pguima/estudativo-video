@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-006 · Capacitores
 
-**Arquivo:** `final/estudativo_FIS-ELE-006_capacitores.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-006_capacitores.mp4` · 4:26 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ O flash de uma câmera acende por menos de um milésimo de segundo. Quem solta e
 ✅ O erro de esquecer o dividido por 2
 
 ⏱️ Capítulos
-[TEMPO] O flash da câmera
-[TEMPO] O que você precisa saber
-[TEMPO] O capacitor e C = Q/U
-[TEMPO] A energia guardada e o flash
-[TEMPO] O erro: esquecer o ÷ 2
-[TEMPO] O atalho: três formas da energia
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: carga e energia
-[TEMPO] Resumo e próxima aula
+0:00 O flash da câmera
+0:22 O que você precisa saber
+0:37 O capacitor e C = Q/U
+1:40 A energia guardada e o flash
+2:38 O erro: esquecer o ÷ 2
+2:53 O atalho: três formas da energia
+3:21 Hora de testar
+3:34 Resolvendo: carga e energia
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Potencial elétrico e energia: [LINK FIS-ELE-004]

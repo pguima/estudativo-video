@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-012 · Resistores em paralelo
 
-**Arquivo:** `final/estudativo_FIS-ELE-012_resistores_em_paralelo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-012_resistores_em_paralelo.mp4` · 4:23 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Ligue mais um resistor e a resistência total diminui. Parece errado, mas é o q
 ✅ Os atalhos: produto pela soma e R/n
 
 ⏱️ Capítulos
-[TEMPO] Mais um resistor, menos resistência
-[TEMPO] O que você precisa saber
-[TEMPO] O que é ligar em paralelo
-[TEMPO] A conta da equivalente
-[TEMPO] O erro do meio ohm
-[TEMPO] Os atalhos: produto pela soma e R/n
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 4 e 12 ohms
-[TEMPO] Resumo e próxima aula
+0:00 Mais um resistor, menos resistência
+0:17 O que você precisa saber
+0:31 O que é ligar em paralelo
+1:10 A conta da equivalente
+2:13 O erro do meio ohm
+2:33 Os atalhos: produto pela soma e R/n
+3:14 Hora de testar
+3:29 Resolvendo: 4 e 12 ohms
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistores em série: [LINK FIS-ELE-011]

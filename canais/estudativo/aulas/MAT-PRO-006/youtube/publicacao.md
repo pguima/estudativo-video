@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-006 · Soma dos termos de uma PA
 
-**Arquivo:** `final/estudativo_MAT-PRO-006_soma_dos_termos_de_uma_pa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-006_soma_dos_termos_de_uma_pa.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Conta a história que um menino chamado Gauss somou de 1 a 100 em poucos minutos
 ✅ O atalho: média vezes quantidade, 34 · 30 = 1.020
 
 ⏱️ Capítulos
-[TEMPO] De 1 a 100 em poucos minutos
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia de Gauss: juntar as pontas
-[TEMPO] E se for ímpar? A soma em dobro
-[TEMPO] A fórmula da soma da PA
-[TEMPO] Quanto se junta em 30 dias
-[TEMPO] O erro de usar a posição no lugar do valor
-[TEMPO] O atalho: média vezes quantidade
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as cadeiras do auditório
-[TEMPO] Resumo e próxima aula
+0:00 De 1 a 100 em poucos minutos
+0:26 O que você precisa saber
+0:37 A ideia de Gauss: juntar as pontas
+1:00 E se for ímpar? A soma em dobro
+1:18 A fórmula da soma da PA
+1:54 Quanto se junta em 30 dias
+2:30 O erro de usar a posição no lugar do valor
+2:53 O atalho: média vezes quantidade
+3:29 Hora de testar
+3:44 Resolvendo: as cadeiras do auditório
+4:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão aritmética, razão e termo geral: [LINK MAT-PRO-004]

@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-005 · Reflexão total, dispersão e cor
 
-**Arquivo:** `final/estudativo_FIS-OPT-005_reflexao_total_dispersao_cor.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-005_reflexao_total_dispersao_cor.mp4` · 5:08 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ A internet viaja presa dentro de um fio de vidro fino como um cabelo, e a luz n�
 ✅ O erro de virar a fração do ângulo limite
 
 ⏱️ Capítulos
-[TEMPO] A luz presa no vidro
-[TEMPO] O que você precisa saber
-[TEMPO] Ângulo limite e reflexão total
-[TEMPO] Fibra óptica e miragem
-[TEMPO] Dispersão e arco-íris
-[TEMPO] A cor dos objetos
-[TEMPO] O erro da fração invertida
-[TEMPO] Os atalhos de prova
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 A luz presa no vidro
+0:24 O que você precisa saber
+0:39 Ângulo limite e reflexão total
+1:44 Fibra óptica e miragem
+2:12 Dispersão e arco-íris
+2:46 A cor dos objetos
+3:11 O erro da fração invertida
+3:26 Os atalhos de prova
+3:59 Hora de testar
+4:15 Resolvendo
+4:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Índice de refração e lei de Snell: [LINK FIS-OPT-004]

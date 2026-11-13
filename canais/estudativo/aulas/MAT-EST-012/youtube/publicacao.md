@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-012 · Média, mediana e moda numa tabela
 
-**Arquivo:** `final/estudativo_MAT-EST-012_media_mediana_e_moda_numa_tabela.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-012_media_mediana_e_moda_numa_tabela.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Vinte alunos, cinco notas diferentes, tudo numa tabela. Muita gente escreve a li
 ✅ O atalho: escolha uma base (7), some o que cada nota passa ou falta vezes os alunos (2) e divida pelo total (7 + 2 ÷ 20 = 7,1)
 
 ⏱️ Capítulos
-[TEMPO] Não escreva a lista inteira
-[TEMPO] O que você precisa saber
-[TEMPO] A média: o número de alunos é o peso
-[TEMPO] A mediana pela frequência acumulada
-[TEMPO] A moda e o erro de responder a frequência
-[TEMPO] O atalho da base
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os filhos das 20 famílias
-[TEMPO] Resumo e próxima aula
+0:00 Não escreva a lista inteira
+0:22 O que você precisa saber
+0:34 A média: o número de alunos é o peso
+1:22 A mediana pela frequência acumulada
+2:02 A moda e o erro de responder a frequência
+2:27 O atalho da base
+3:06 Hora de testar
+3:21 Resolvendo os filhos das 20 famílias
+3:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Média ponderada: [LINK MAT-EST-009]

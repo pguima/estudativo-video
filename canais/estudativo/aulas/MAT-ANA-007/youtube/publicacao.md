@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-007 · Praticando: pontos e retas
 
-**Arquivo:** `final/estudativo_MAT-ANA-007_praticando_pontos_e_retas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-007_praticando_pontos_e_retas.mp4` · 5:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações com pontos e retas, criadas para esta aula. Em cada uma, voc�
 ✅ O ponto de encontro com um sistema: (2, 4)
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: distância no mapa
-[TEMPO] Resolvendo: 10 km em linha reta
-[TEMPO] Situação 2: a equação da reta
-[TEMPO] Resolvendo: y = 3x − 2
-[TEMPO] Situação 3: as retas se cruzam?
-[TEMPO] Resolvendo: são paralelas
-[TEMPO] O atalho: o m da equação geral
-[TEMPO] Situação 4: perpendicular e encontro
-[TEMPO] Resolvendo: as retas se cruzam em (2, 4)
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:14 As quatro ferramentas
+0:33 Situação 1: distância no mapa
+0:51 Resolvendo: 10 km em linha reta
+1:26 Situação 2: a equação da reta
+1:41 Resolvendo: y = 3x − 2
+2:19 Situação 3: as retas se cruzam?
+2:34 Resolvendo: são paralelas
+3:09 O atalho: o m da equação geral
+3:56 Situação 4: perpendicular e encontro
+4:14 Resolvendo: as retas se cruzam em (2, 4)
+5:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Distância entre dois pontos: [LINK MAT-ANA-001]

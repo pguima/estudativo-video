@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-004 · Princípio da casa dos pombos
 
-**Arquivo:** `final/estudativo_MAT-TOP-004_principio_da_casa_dos_pombos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-004_principio_da_casa_dos_pombos.mp4` · 4:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Numa sala com 13 pessoas, dá para garantir, sem perguntar nada a ninguém, que 
 ✅ O atalho: pior caso mais um, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] 13 pessoas e uma certeza
-[TEMPO] O que você precisa saber
-[TEMPO] Pombos e casinhas
-[TEMPO] Aniversários: o pior caso
-[TEMPO] Três no mesmo mês
-[TEMPO] Os dias do ano
-[TEMPO] A gaveta de meias
-[TEMPO] O erro de multiplicar direto
-[TEMPO] O atalho: pior caso mais um
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as meias no escuro
-[TEMPO] Resumo e próxima aula
+0:00 13 pessoas e uma certeza
+0:18 O que você precisa saber
+0:27 Pombos e casinhas
+0:50 Aniversários: o pior caso
+1:20 Três no mesmo mês
+1:43 Os dias do ano
+1:59 A gaveta de meias
+2:17 O erro de multiplicar direto
+2:36 O atalho: pior caso mais um
+3:05 Hora de testar
+3:22 Resolvendo: as meias no escuro
+3:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Princípio multiplicativo e árvore de possibilidades: [LINK MAT-CNT-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-011 · Achar o expoente: equação exponencial com log
 
-**Arquivo:** `final/estudativo_MAT-EXP-011_equacao_exponencial_com_log.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-011_equacao_exponencial_com_log.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Mil reais, a 10% ao ano, em juros compostos: em quantos anos viram dois mil? Com
 ✅ O atalho: para dobrar, t = log 2 / log do fator, com qualquer capital
 
 ⏱️ Capítulos
-[TEMPO] Em quantos anos o dinheiro dobra?
-[TEMPO] O que você precisa saber
-[TEMPO] Isolar a potência e tirar o log
-[TEMPO] A conta: t ≈ 7,3 anos
-[TEMPO] O método em três passos
-[TEMPO] Em meses: 2% ao mês
-[TEMPO] O erro: ler o expoente como multiplicação
-[TEMPO] O atalho: o capital não importa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 5.000 · 1,03ᵗ = 15.000
-[TEMPO] Resumo e próxima aula
+0:00 Em quantos anos o dinheiro dobra?
+0:29 O que você precisa saber
+0:45 Isolar a potência e tirar o log
+1:23 A conta: t ≈ 7,3 anos
+1:49 O método em três passos
+1:58 Em meses: 2% ao mês
+2:27 O erro: ler o expoente como multiplicação
+2:52 O atalho: o capital não importa
+3:21 Hora de testar
+3:43 Resolvendo 5.000 · 1,03ᵗ = 15.000
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Usar log 2, log 3 e mudança de base: [LINK MAT-EXP-010]

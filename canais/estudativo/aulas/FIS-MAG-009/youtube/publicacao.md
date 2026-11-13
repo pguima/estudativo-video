@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-009 · Como uma usina gera eletricidade
 
-**Arquivo:** `final/estudativo_FIS-MAG-009_como_uma_usina_gera_eletricidade.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-009_como_uma_usina_gera_eletricidade.mp4` · 5:00 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Hidrelétrica, termelétrica e usina nuclear parecem muito diferentes, mas as tr
 ✅ O atalho para a água: P = 10.000·Z·h
 
 ⏱️ Capítulos
-[TEMPO] Três usinas, a mesma máquina
-[TEMPO] O que você precisa saber
-[TEMPO] O gerador
-[TEMPO] A hidrelétrica
-[TEMPO] A termelétrica
-[TEMPO] A usina nuclear
-[TEMPO] A potência da queda d'água
-[TEMPO] O erro: eletricidade direto do átomo
-[TEMPO] O atalho: dez mil vezes vazão vezes altura
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a pequena hidrelétrica
-[TEMPO] Resumo e próxima aula
+0:00 Três usinas, a mesma máquina
+0:18 O que você precisa saber
+0:34 O gerador
+1:08 A hidrelétrica
+1:25 A termelétrica
+1:57 A usina nuclear
+2:12 A potência da queda d'água
+3:15 O erro: eletricidade direto do átomo
+3:35 O atalho: dez mil vezes vazão vezes altura
+4:06 Hora de testar
+4:22 Resolvendo: a pequena hidrelétrica
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Fluxo e lei de Faraday: [LINK FIS-MAG-005]

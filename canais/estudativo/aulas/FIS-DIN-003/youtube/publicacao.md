@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-003 · Terceira lei: ação e reação
 
-**Arquivo:** `final/estudativo_FIS-DIN-003_terceira_lei_acao_e_reacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-003_terceira_lei_acao_e_reacao.mp4` · 3:36 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Se a carroça puxa o cavalo de volta com a mesma força, como os dois saem do lu
 ✅ A batida entre caminhão e carro
 
 ⏱️ Capítulos
-[TEMPO] O cavalo e a carroça
-[TEMPO] O que você precisa saber
-[TEMPO] A terceira lei de Newton
-[TEMPO] Como achar o par
-[TEMPO] Por que não se anulam
-[TEMPO] O erro: o livro na mesa
-[TEMPO] O atalho: quem faz em quem
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: caminhão e carro
-[TEMPO] Resumo e próxima aula
+0:00 O cavalo e a carroça
+0:17 O que você precisa saber
+0:29 A terceira lei de Newton
+1:06 Como achar o par
+1:18 Por que não se anulam
+1:43 O erro: o livro na mesa
+2:14 O atalho: quem faz em quem
+2:37 Hora de testar
+2:51 Resolvendo: caminhão e carro
+3:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Força resultante e primeira lei: inércia: [LINK FIS-DIN-001]

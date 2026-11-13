@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-007 · Cordas, tubos e ressonância
 
-**Arquivo:** `final/estudativo_FIS-OND-007_cordas_tubos_e_ressonancia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-007_cordas_tubos_e_ressonancia.mp4` · 5:26 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ As cordas de um violão têm o mesmo comprimento, mas cada uma toca uma nota dif
 ✅ O atalho: ache o fundamental e multiplique
 
 ⏱️ Capítulos
-[TEMPO] Por que a nota sobe?
-[TEMPO] O que você precisa saber
-[TEMPO] A onda estacionária: nós e ventres
-[TEMPO] Harmônicos na corda e a fórmula
-[TEMPO] Tubo aberto e tubo fechado
-[TEMPO] Ressonância
-[TEMPO] O erro dos harmônicos pares
-[TEMPO] O atalho: fundamental vezes 1, 2, 3 ou 1, 3, 5
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o tubo de 17 cm
-[TEMPO] Resumo e próxima aula
+0:00 Por que a nota sobe?
+0:20 O que você precisa saber
+0:33 A onda estacionária: nós e ventres
+1:00 Harmônicos na corda e a fórmula
+2:13 Tubo aberto e tubo fechado
+3:07 Ressonância
+3:34 O erro dos harmônicos pares
+3:54 O atalho: fundamental vezes 1, 2, 3 ou 1, 3, 5
+4:17 Hora de testar
+4:34 Resolvendo: o tubo de 17 cm
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Som: altura, intensidade e timbre: [LINK FIS-OND-006]

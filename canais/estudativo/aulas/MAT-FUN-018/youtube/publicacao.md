@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-018 · Vértice da parábola
 
-**Arquivo:** `final/estudativo_MAT-FUN-018_vertice_da_parabola.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-018_vertice_da_parabola.mp4` · 5:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ A parábola de x² − 4x + 3 desce, faz a curva e sobe. Esse ponto da virada é
 ✅ O atalho: raízes de graça, como em (x − 1)(x − 5), use a média
 
 ⏱️ Capítulos
-[TEMPO] Onde a parábola faz a curva
-[TEMPO] O que você precisa saber
-[TEMPO] A simetria da parábola
-[TEMPO] O vértice pela média das raízes
-[TEMPO] A fórmula x = −b/2a
-[TEMPO] A imagem da função
-[TEMPO] O erro: x do vértice na imagem
-[TEMPO] O atalho: raízes de graça, use a média
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: vértice (3, 4) e imagem ]−∞, 4]
-[TEMPO] Resumo e próxima aula
+0:00 Onde a parábola faz a curva
+0:28 O que você precisa saber
+0:44 A simetria da parábola
+1:13 O vértice pela média das raízes
+1:43 A fórmula x = −b/2a
+2:37 A imagem da função
+3:04 O erro: x do vértice na imagem
+3:19 O atalho: raízes de graça, use a média
+3:49 Hora de testar
+4:05 Resolvendo: vértice (3, 4) e imagem ]−∞, 4]
+5:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Domínio, contradomínio e imagem: [LINK MAT-FUN-004]

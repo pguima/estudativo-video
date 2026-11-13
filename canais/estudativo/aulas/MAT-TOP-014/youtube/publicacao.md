@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-014 · Bases de contagem: binária e sexagesimal
 
-**Arquivo:** `final/estudativo_MAT-TOP-014_bases_binaria_e_sexagesimal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-014_bases_binaria_e_sexagesimal.mp4` · 5:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Para um computador, 1011 não é mil e onze: é onze. Nesta aula, você entende 
 ✅ O atalho: a maior casa que cabe
 
 ⏱️ Capítulos
-[TEMPO] 1011 não é mil e onze
-[TEMPO] O que você precisa saber
-[TEMPO] Por que contamos de dez em dez
-[TEMPO] A base 2: casas que dobram
-[TEMPO] Da base 10 para a base 2
-[TEMPO] A base 60 do relógio
-[TEMPO] O erro de ler os restos ao contrário
-[TEMPO] O atalho: a maior casa que cabe
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as três partes
-[TEMPO] Resumo e próxima aula
+0:00 1011 não é mil e onze
+0:22 O que você precisa saber
+0:42 Por que contamos de dez em dez
+1:06 A base 2: casas que dobram
+1:47 Da base 10 para a base 2
+2:23 A base 60 do relógio
+2:49 O erro de ler os restos ao contrário
+3:10 O atalho: a maior casa que cabe
+3:45 Hora de testar
+4:01 Resolvendo as três partes
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Converter tempo e hora decimal: [LINK MAT-MED-006]

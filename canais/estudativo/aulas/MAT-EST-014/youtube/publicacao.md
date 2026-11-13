@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-014 · Quartis e percentis
 
-**Arquivo:** `final/estudativo_MAT-EST-014_quartis_e_percentis.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-014_quartis_e_percentis.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma pessoa acertou 62 questões de 100 e ficou no percentil 90. Foi mal ou foi b
 ✅ O atalho: 100 menos o percentil (100 − 90 = 10%; 10% de 2.000 candidatos = 200)
 
 ⏱️ Capítulos
-[TEMPO] 62 acertos e percentil 90
-[TEMPO] O que você precisa saber
-[TEMPO] Os quartis: os dados em quatro partes
-[TEMPO] O percentil
-[TEMPO] O erro: percentil não é porcentagem de acerto
-[TEMPO] O atalho: 100 menos o percentil
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as notas dos 8 alunos
-[TEMPO] Resumo e próxima aula
+0:00 62 acertos e percentil 90
+0:18 O que você precisa saber
+0:29 Os quartis: os dados em quatro partes
+1:45 O percentil
+2:11 O erro: percentil não é porcentagem de acerto
+2:28 O atalho: 100 menos o percentil
+2:57 Hora de testar
+3:15 Resolvendo as notas dos 8 alunos
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Moda e mediana: [LINK MAT-EST-011]

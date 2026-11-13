@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-013 · Queda livre
 
-**Arquivo:** `final/estudativo_FIS-CIN-013_queda_livre.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-013_queda_livre.mp4` · 4:17 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Em 1971, na Lua, um astronauta soltou um martelo e uma pena ao mesmo tempo, e os
 ✅ A tabela da queda: 5, 20, 45, 80 e 125 metros
 
 ⏱️ Capítulos
-[TEMPO] O martelo e a pena na Lua
-[TEMPO] O que você precisa saber
-[TEMPO] O que é queda livre
-[TEMPO] A velocidade: v = 10·t
-[TEMPO] A altura: h = 5·t²
-[TEMPO] Exemplo: queda de 80 metros
-[TEMPO] O erro de esquecer a metade
-[TEMPO] O atalho: a tabela da queda
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o vaso do prédio
-[TEMPO] Resumo e próxima aula
+0:00 O martelo e a pena na Lua
+0:22 O que você precisa saber
+0:36 O que é queda livre
+0:58 A velocidade: v = 10·t
+1:22 A altura: h = 5·t²
+1:59 Exemplo: queda de 80 metros
+2:23 O erro de esquecer a metade
+2:42 O atalho: a tabela da queda
+3:17 Hora de testar
+3:33 Resolvendo: o vaso do prédio
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Torricelli e distância de frenagem: [LINK FIS-CIN-009]

@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-013 · Praticando: atrito, planos e curvas
 
-**Arquivo:** `final/estudativo_FIS-DIN-013_praticando_atrito_planos_e_curvas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-013_praticando_atrito_planos_e_curvas.mp4` · 4:26 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas para fechar a Dinâmica: uma caixa que pode ou não 
 ✅ O atalho: a favor menos contra, dividido pelas massas
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: a caixa se move?
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: a rampa com atrito
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: blocos e polia
-[TEMPO] Resposta 3
-[TEMPO] O atalho que une as três
-[TEMPO] Situação 4: a curva plana
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: o topo da lombada
-[TEMPO] Resposta 5
-[TEMPO] Resumo
+0:00 Cinco situações
+0:12 As quatro ferramentas
+0:25 Situação 1: a caixa se move?
+0:42 Resposta 1
+1:03 Situação 2: a rampa com atrito
+1:18 Resposta 2
+1:44 Situação 3: blocos e polia
+2:01 Resposta 3
+2:33 O atalho que une as três
+2:52 Situação 4: a curva plana
+3:06 Resposta 4
+3:25 Situação 5: o topo da lombada
+3:38 Resposta 5
+3:59 Resumo
 
 📚 Antes desta aula
 Força de atrito: estático e cinético: [LINK FIS-DIN-007]

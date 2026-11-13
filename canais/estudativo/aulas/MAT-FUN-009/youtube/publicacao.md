@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-009 · Função afim: lei e gráfico
 
-**Arquivo:** `final/estudativo_MAT-FUN-009_funcao_afim_lei_e_grafico.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-009_funcao_afim_lei_e_grafico.mp4` · 4:55 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Para desenhar o gráfico de uma função, você monta uma tabela com vários pon
 ✅ O atalho: com x = 0 sobra só o b
 
 ⏱️ Capítulos
-[TEMPO] Dois pontos bastam
-[TEMPO] O que você precisa saber
-[TEMPO] O táxi: tabela e lei
-[TEMPO] A forma f(x) = ax + b
-[TEMPO] O gráfico é uma reta
-[TEMPO] Traçando f(x) = 2x − 1
-[TEMPO] O erro: trocar os números de lugar
-[TEMPO] O atalho: o ponto do x = 0
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o encanador
-[TEMPO] Resumo e próxima aula
+0:00 Dois pontos bastam
+0:22 O que você precisa saber
+0:33 O táxi: tabela e lei
+1:25 A forma f(x) = ax + b
+1:58 O gráfico é uma reta
+2:18 Traçando f(x) = 2x − 1
+2:54 O erro: trocar os números de lugar
+3:13 O atalho: o ponto do x = 0
+3:43 Hora de testar
+4:00 Resolvendo: o encanador
+4:32 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráfico de uma função: [LINK MAT-FUN-006]

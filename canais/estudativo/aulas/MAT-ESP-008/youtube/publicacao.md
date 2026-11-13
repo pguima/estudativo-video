@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-008 · Cilindro: área e volume
 
-**Arquivo:** `final/estudativo_MAT-ESP-008_cilindro_area_e_volume.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-008_cilindro_area_e_volume.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Uma lata tem 5 cm de raio e 10 cm de altura. Dobrando a altura, cabe o dobro; do
 ✅ O atalho: área total = 2πr · (r + h)
 
 ⏱️ Capítulos
-[TEMPO] Dobrar o raio quadruplica
-[TEMPO] O que você precisa saber
-[TEMPO] O que é cilindro
-[TEMPO] Volume: πr² · h
-[TEMPO] O dobro e o quádruplo
-[TEMPO] Área: abrindo a lata
-[TEMPO] O erro do diâmetro
-[TEMPO] O atalho: 2πr · (r + h)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a lata de raio 4
-[TEMPO] Resumo e próxima aula
+0:00 Dobrar o raio quadruplica
+0:21 O que você precisa saber
+0:37 O que é cilindro
+0:55 Volume: πr² · h
+1:36 O dobro e o quádruplo
+1:54 Área: abrindo a lata
+2:42 O erro do diâmetro
+3:03 O atalho: 2πr · (r + h)
+3:31 Hora de testar
+3:47 Resolvendo a lata de raio 4
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Prisma: área e volume: [LINK MAT-ESP-007]

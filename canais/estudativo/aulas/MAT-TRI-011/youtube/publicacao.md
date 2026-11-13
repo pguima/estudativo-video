@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-011 · Gráficos de seno, cosseno e tangente
 
-**Arquivo:** `final/estudativo_MAT-TRI-011_graficos_de_seno_cosseno_e_tangente.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-011_graficos_de_seno_cosseno_e_tangente.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,24 +31,24 @@ Um ponto gira sem parar no ciclo trigonométrico. Acompanhe só a altura dele e 
 ✅ O atalho: em y = 5 cos x, a imagem vai de −5 a 5
 
 ⏱️ Capítulos
-[TEMPO] Um ponto girando vira uma onda
-[TEMPO] O que você precisa saber
-[TEMPO] O ângulo no eixo x, em radianos
-[TEMPO] Os pontos fáceis do seno
-[TEMPO] A onda do seno se repete
-[TEMPO] Período e imagem do seno
-[TEMPO] O gráfico do cosseno
-[TEMPO] Período e imagem do cosseno
-[TEMPO] A tangente e a divisão por zero
-[TEMPO] Galhos, imagem e período da tangente
-[TEMPO] y = 3 sen x: a onda estica
-[TEMPO] Imagem de −3 a 3, período 2π
-[TEMPO] O erro: achar que o período vira 6π
-[TEMPO] O atalho: a imagem direto
-[TEMPO] Por que o atalho funciona (e quando não vale)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo y = 2 cos x
-[TEMPO] Resumo e próxima aula
+0:00 Um ponto girando vira uma onda
+0:23 O que você precisa saber
+0:41 O ângulo no eixo x, em radianos
+0:53 Os pontos fáceis do seno
+1:08 A onda do seno se repete
+1:24 Período e imagem do seno
+1:37 O gráfico do cosseno
+1:49 Período e imagem do cosseno
+1:56 A tangente e a divisão por zero
+2:08 Galhos, imagem e período da tangente
+2:33 y = 3 sen x: a onda estica
+2:46 Imagem de −3 a 3, período 2π
+2:58 O erro: achar que o período vira 6π
+3:14 O atalho: a imagem direto
+3:29 Por que o atalho funciona (e quando não vale)
+3:46 Hora de testar
+4:01 Resolvendo y = 2 cos x
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler um gráfico: máximos, zeros e crescimento: [LINK MAT-FUN-007]

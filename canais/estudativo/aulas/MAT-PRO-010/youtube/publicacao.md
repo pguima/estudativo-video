@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-010 · Soma dos termos de uma PG
 
-**Arquivo:** `final/estudativo_MAT-PRO-010_soma_dos_termos_de_uma_pg.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-010_soma_dos_termos_de_uma_pg.mp4` · 5:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Um real hoje, dois amanhã, quatro no dia seguinte, sempre dobrando, por dez dia
 ✅ A corrente 3, 6, 12, … em 10 rodadas: 3.069 pessoas
 
 ⏱️ Capítulos
-[TEMPO] R$ 1 dobrando por 10 dias
-[TEMPO] O que você precisa saber
-[TEMPO] O truque: dobrar a soma
-[TEMPO] A fórmula da soma da PG
-[TEMPO] O erro de contar os termos
-[TEMPO] O atalho: próximo menos primeiro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a corrente
-[TEMPO] Resumo e próxima aula
+0:00 R$ 1 dobrando por 10 dias
+0:22 O que você precisa saber
+0:42 O truque: dobrar a soma
+1:23 A fórmula da soma da PG
+2:43 O erro de contar os termos
+3:12 O atalho: próximo menos primeiro
+3:45 Hora de testar
+4:07 Resolvendo a corrente
+4:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão geométrica: razão e termo geral: [LINK MAT-PRO-008]

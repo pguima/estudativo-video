@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-012 · Problemas de equação do 2º grau
 
-**Arquivo:** `final/estudativo_MAT-FAT-012_problemas_equacao_2grau.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-012_problemas_equacao_2grau.mp4` · 5:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Um livro aberto mostra duas páginas seguidas, e o produto dos números delas é
 ✅ O atalho dos números seguidos: perto da raiz do produto
 
 ⏱️ Capítulos
-[TEMPO] Duas páginas seguidas com produto 156
-[TEMPO] O que você precisa saber
-[TEMPO] As páginas: montar, resolver e responder
-[TEMPO] A bola chutada: quando volta ao chão
-[TEMPO] O erro de responder com a primeira raiz
-[TEMPO] O atalho dos números seguidos
-[TEMPO] Hora de testar: o terreno
-[TEMPO] Resposta: 10 m por 15 m
-[TEMPO] Resumo e próxima aula
+0:00 Duas páginas seguidas com produto 156
+0:19 O que você precisa saber
+0:33 As páginas: montar, resolver e responder
+1:46 A bola chutada: quando volta ao chão
+2:37 O erro de responder com a primeira raiz
+2:56 O atalho dos números seguidos
+3:30 Hora de testar: o terreno
+3:49 Resposta: 10 m por 15 m
+4:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-002 · Padrões em figuras
 
-**Arquivo:** `final/estudativo_MAT-PRO-002_padroes_em_figuras.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-002_padroes_em_figuras.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um quadradinho de palitos usa 4 palitos. Quantos palitos tem uma fileira de 50 q
 ✅ Quando não compensa: 1, 4, 9 (aumento que muda) tem lei n · n
 
 ⏱️ Capítulos
-[TEMPO] 50 quadradinhos: 200 ou 151 palitos?
-[TEMPO] O que você precisa saber
-[TEMPO] Contando as primeiras figuras
-[TEMPO] A lei: P = 3n + 1
-[TEMPO] O erro de multiplicar 4 por 50
-[TEMPO] O atalho: o aumento vira o número do n
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a fileira de hexágonos
-[TEMPO] Resumo e próxima aula
+0:00 50 quadradinhos: 200 ou 151 palitos?
+0:21 O que você precisa saber
+0:33 Contando as primeiras figuras
+1:07 A lei: P = 3n + 1
+2:02 O erro de multiplicar 4 por 50
+2:24 O atalho: o aumento vira o número do n
+3:05 Hora de testar
+3:32 Resolvendo a fileira de hexágonos
+4:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Sequências e lei de formação: [LINK MAT-PRO-001]

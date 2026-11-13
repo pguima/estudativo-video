@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-003 · Problemas com diagrama de Venn
 
-**Arquivo:** `final/estudativo_MAT-CON-003_problemas_diagrama_de_venn.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-003_problemas_diagrama_de_venn.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Numa turma de 40 alunos, 22 jogam futebol, 17 jogam vôlei e 7 jogam ambos. Quan
 ✅ Uma questão resolvida passo a passo: 35 + 30 − x = 50, x = 15
 
 ⏱️ Capítulos
-[TEMPO] 40 alunos: quantos não jogam nenhum?
-[TEMPO] O que você precisa saber
-[TEMPO] Dois conjuntos: de dentro para fora
-[TEMPO] A fórmula da união
-[TEMPO] Três conjuntos
-[TEMPO] O erro de tirar tudo do total
-[TEMPO] O atalho: a fórmula ao contrário
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo com a equação
-[TEMPO] Resumo e próxima aula
+0:00 40 alunos: quantos não jogam nenhum?
+0:21 O que você precisa saber
+0:32 Dois conjuntos: de dentro para fora
+1:08 A fórmula da união
+1:35 Três conjuntos
+2:46 O erro de tirar tudo do total
+3:01 O atalho: a fórmula ao contrário
+3:26 Hora de testar
+3:44 Resolvendo com a equação
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 União, interseção, diferença e complementar: [LINK MAT-CON-002]

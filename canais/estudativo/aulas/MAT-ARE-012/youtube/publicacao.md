@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-012 · Praticando: círculo, figuras compostas e razão entre áreas
 
-**Arquivo:** `final/estudativo_MAT-ARE-012_praticando_circulo_compostas_e_razao_entre_areas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-012_praticando_circulo_compostas_e_razao_entre_areas.mp4` · 5:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações criadas para esta aula, para fechar a trilha de áreas e per�
 ✅ O atalho: juntar pedaços de círculo em círculos inteiros
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: o azulejo
-[TEMPO] Resposta 1: 16 cm² e 24 cm
-[TEMPO] O atalho: junte os pedaços de círculo
-[TEMPO] Situação 2: o limpador de para-brisa
-[TEMPO] Resposta 2: 2.400 cm²
-[TEMPO] Situação 3: a pizza grande compensa?
-[TEMPO] Resposta 3: 2,25 vezes a área
-[TEMPO] Situação 4: dividir o lado pela área
-[TEMPO] Resposta 4: 6 cm e 9 cm
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações
+0:14 O que você vai usar
+0:34 Situação 1: o azulejo
+0:55 Resposta 1: 16 cm² e 24 cm
+1:30 O atalho: junte os pedaços de círculo
+1:50 Situação 2: o limpador de para-brisa
+2:09 Resposta 2: 2.400 cm²
+3:10 Situação 3: a pizza grande compensa?
+3:29 Resposta 3: 2,25 vezes a área
+3:57 Situação 4: dividir o lado pela área
+4:15 Resposta 4: 6 cm e 9 cm
+4:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do círculo, da coroa e do setor: [LINK MAT-ARE-008]

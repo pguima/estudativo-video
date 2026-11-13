@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-005 · Retas paralelas e perpendiculares
 
-**Arquivo:** `final/estudativo_MAT-ANA-005_retas_paralelas_e_perpendiculares.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-005_retas_paralelas_e_perpendiculares.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ y = 2x + 1 e y = −1/2 x + 4 se cruzam em ângulo reto, um canto perfeito de es
 ✅ O atalho: inverte e troca o sinal, e quando ele não vale (m = 0)
 
 ⏱️ Capítulos
-[TEMPO] Ângulo reto sem desenhar
-[TEMPO] O que você precisa saber
-[TEMPO] Retas paralelas: o mesmo m
-[TEMPO] Retas perpendiculares: o degrau que gira
-[TEMPO] O erro de trocar só o sinal
-[TEMPO] O atalho: inverte e troca o sinal
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a paralela e a perpendicular
-[TEMPO] Resumo e próxima aula
+0:00 Ângulo reto sem desenhar
+0:23 O que você precisa saber
+0:36 Retas paralelas: o mesmo m
+1:10 Retas perpendiculares: o degrau que gira
+2:14 O erro de trocar só o sinal
+2:34 O atalho: inverte e troca o sinal
+3:08 Hora de testar
+3:26 Resolvendo: a paralela e a perpendicular
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação da reta: reduzida, geral e segmentária: [LINK MAT-ANA-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-014 · Praticando: Tales e semelhança
 
-**Arquivo:** `final/estudativo_MAT-ANG-014_praticando_tales_e_semelhanca.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-014_praticando_tales_e_semelhanca.mp4` · 5:18 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões, criadas para esta aula, com tudo de Tales e semelhança. Em cad
 ✅ O atalho do fator: 20 é 10 vezes 2, então a torre tem 10 · 1,5 = 15 m
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões para você resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Questão 1: Tales com expressão
-[TEMPO] Resolvendo a questão 1
-[TEMPO] Questão 2: a bissetriz
-[TEMPO] Resolvendo a questão 2
-[TEMPO] Questão 3: triângulos encaixados
-[TEMPO] Resolvendo a questão 3
-[TEMPO] Questão 4: a gravata
-[TEMPO] Resolvendo a questão 4
-[TEMPO] Questão 5: a torre e a sombra
-[TEMPO] Resolvendo a questão 5
-[TEMPO] O atalho do fator
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões para você resolver
+0:12 As quatro ferramentas
+0:25 Questão 1: Tales com expressão
+0:39 Resolvendo a questão 1
+1:09 Questão 2: a bissetriz
+1:24 Resolvendo a questão 2
+1:54 Questão 3: triângulos encaixados
+2:13 Resolvendo a questão 3
+2:51 Questão 4: a gravata
+3:11 Resolvendo a questão 4
+3:55 Questão 5: a torre e a sombra
+4:12 Resolvendo a questão 5
+4:27 O atalho do fator
+4:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Teorema de Tales: feixe de paralelas: [LINK MAT-ANG-010]

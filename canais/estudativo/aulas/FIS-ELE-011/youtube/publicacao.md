@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-011 · Resistores em série
 
-**Arquivo:** `final/estudativo_FIS-ELE-011_resistores_em_serie.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-011_resistores_em_serie.mp4` · 4:00 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Nos pisca-piscas antigos, bastava uma lâmpada queimar para a fileira inteira ap
 ✅ O atalho: a tensão na proporção das resistências
 
 ⏱️ Capítulos
-[TEMPO] O pisca-pisca que apagava inteiro
-[TEMPO] O que você precisa saber
-[TEMPO] Ligar em série: as duas regras
-[TEMPO] A resistência equivalente
-[TEMPO] Um exemplo: corrente e tensões
-[TEMPO] O erro: a corrente se gasta?
-[TEMPO] O atalho: tensão na proporção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 3, 5 e 12 ohms
-[TEMPO] Resumo e próxima aula
+0:00 O pisca-pisca que apagava inteiro
+0:17 O que você precisa saber
+0:33 Ligar em série: as duas regras
+1:03 A resistência equivalente
+1:31 Um exemplo: corrente e tensões
+2:01 O erro: a corrente se gasta?
+2:27 O atalho: tensão na proporção
+2:58 Hora de testar
+3:14 Resolvendo: 3, 5 e 12 ohms
+3:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistência e primeira lei de Ohm: [LINK FIS-ELE-009]

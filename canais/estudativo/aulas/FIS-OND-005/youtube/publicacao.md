@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-005 · Praticando: ondas e seus fenômenos
 
-**Arquivo:** `final/estudativo_FIS-OND-005_praticando_ondas_e_fenomenos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-005_praticando_ondas_e_fenomenos.mp4` · 4:01 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Questão de ondas quase sempre pede uma conta com v = λ·f ou o nome do fenôme
 ✅ Interferência: diferença de caminho e meio λ
 
 ⏱️ Capítulos
-[TEMPO] Conta ou fenômeno?
-[TEMPO] O que você precisa saber
-[TEMPO] O método: o que a onda fez
-[TEMPO] Questão 1: o relógio de pêndulo
-[TEMPO] Questão 2: a onda no mar
-[TEMPO] Questão 3: da corda grossa para a fina
-[TEMPO] Questão 4: qual é o fenômeno
-[TEMPO] Questão 5: duas fontes num tanque
-[TEMPO] Resumo e próxima aula
+0:00 Conta ou fenômeno?
+0:14 O que você precisa saber
+0:26 O método: o que a onda fez
+0:47 Questão 1: o relógio de pêndulo
+1:19 Questão 2: a onda no mar
+1:51 Questão 3: da corda grossa para a fina
+2:27 Questão 4: qual é o fenômeno
+3:05 Questão 5: duas fontes num tanque
+3:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Oscilações: pêndulo e mola: [LINK FIS-OND-001]

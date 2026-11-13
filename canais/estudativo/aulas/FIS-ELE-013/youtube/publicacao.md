@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-013 · Associação mista de resistores
 
-**Arquivo:** `final/estudativo_FIS-ELE-013_associacao_mista_de_resistores.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-013_associacao_mista_de_resistores.mp4` · 4:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um circuito cheio de resistores parece um labirinto, mas ele se desfaz com duas 
 ✅ O macete: uma letra em cada nó
 
 ⏱️ Capítulos
-[TEMPO] O circuito labirinto
-[TEMPO] O que você precisa saber
-[TEMPO] Reconhecer série e paralelo
-[TEMPO] Reduzir passo a passo
-[TEMPO] O caminho de volta
-[TEMPO] O erro: a tensão da pilha no paralelo
-[TEMPO] O atalho: letras nos nós
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 4 ohms e dois de 12
-[TEMPO] Resumo e próxima aula
+0:00 O circuito labirinto
+0:18 O que você precisa saber
+0:35 Reconhecer série e paralelo
+0:51 Reduzir passo a passo
+1:24 O caminho de volta
+1:58 O erro: a tensão da pilha no paralelo
+2:20 O atalho: letras nos nós
+2:57 Hora de testar
+3:13 Resolvendo: 4 ohms e dois de 12
+3:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistores em paralelo: [LINK FIS-ELE-012]

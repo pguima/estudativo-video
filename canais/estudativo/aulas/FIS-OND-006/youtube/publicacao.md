@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-006 · Som: altura, intensidade e timbre
 
-**Arquivo:** `final/estudativo_FIS-OND-006_som_altura_intensidade_timbre.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-006_som_altura_intensidade_timbre.mp4` · 4:58 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Você abaixa o volume e diz que o som ficou mais baixo. Para a Física, ele fico
 ✅ O atalho: conte as dezenas de decibéis
 
 ⏱️ Capítulos
-[TEMPO] Som alto ou som forte?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é o som e o que o ouvido escuta
-[TEMPO] Altura: grave e agudo
-[TEMPO] Intensidade e decibéis
-[TEMPO] Timbre: o formato da onda
-[TEMPO] O erro de somar decibéis
-[TEMPO] O atalho: conte as dezenas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o show e a cantora
-[TEMPO] Resumo e próxima aula
+0:00 Som alto ou som forte?
+0:24 O que você precisa saber
+0:38 O que é o som e o que o ouvido escuta
+1:02 Altura: grave e agudo
+1:33 Intensidade e decibéis
+2:30 Timbre: o formato da onda
+3:03 O erro de somar decibéis
+3:25 O atalho: conte as dezenas
+3:50 Hora de testar
+4:11 Resolvendo: o show e a cantora
+4:30 Resumo e próxima aula
 
 📚 Antes desta aula
 Ondas: tipos e a equação v = λ·f: [LINK FIS-OND-002]

@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-009 · Big Bang e expansão do Universo
 
-**Arquivo:** `final/estudativo_FIS-MOD-009_big_bang_expansao_do_universo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-009_big_bang_expansao_do_universo.mp4` · 5:18 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,19 @@ Um pedacinho do chuvisco de uma TV fora de sintonia era luz do começo do Univer
 ✅ O erro de imaginar o Big Bang como uma bomba
 
 ⏱️ Capítulos
-[TEMPO] A luz do Big Bang no chuvisco da TV
-[TEMPO] O que você precisa saber
-[TEMPO] O Doppler da luz
-[TEMPO] Hubble: mais longe, mais depressa
-[TEMPO] A expansão do espaço
-[TEMPO] O Big Bang
-[TEMPO] A radiação cósmica de fundo
-[TEMPO] O modelo padrão: quarks e léptons
-[TEMPO] O erro da bomba
-[TEMPO] O atalho: Vermelho, Vai embora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a galáxia e o nêutron
-[TEMPO] Resumo e próxima aula
+0:00 A luz do Big Bang no chuvisco da TV
+0:23 O que você precisa saber
+0:37 O Doppler da luz
+1:09 Hubble: mais longe, mais depressa
+1:39 A expansão do espaço
+1:54 O Big Bang
+2:11 A radiação cósmica de fundo
+2:51 O modelo padrão: quarks e léptons
+3:29 O erro da bomba
+3:45 O atalho: Vermelho, Vai embora
+4:05 Hora de testar
+4:25 Resolvendo: a galáxia e o nêutron
+4:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Vida das estrelas e buracos negros: [LINK FIS-MOD-008]

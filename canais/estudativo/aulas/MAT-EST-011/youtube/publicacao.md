@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-011 · Moda e mediana
 
-**Arquivo:** `final/estudativo_MAT-EST-011_moda_e_mediana.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-011_moda_e_mediana.mp4` · 3:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Cinco notas na tela: qual é a do meio? Se você apontou a que está no meio da 
 ✅ O atalho: a posição do meio é (n + 1) ÷ 2 (11 dados → 6º valor; 10 dados → média do 5º e do 6º)
 
 ⏱️ Capítulos
-[TEMPO] A nota do meio não é o 9
-[TEMPO] O que você precisa saber
-[TEMPO] Mediana: o valor do meio
-[TEMPO] Mediana com quantidade par
-[TEMPO] Moda: o valor que mais aparece
-[TEMPO] O erro de olhar só as pontas
-[TEMPO] O atalho: a posição do meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as notas dos 8 alunos
-[TEMPO] Resumo e próxima aula
+0:00 A nota do meio não é o 9
+0:20 O que você precisa saber
+0:32 Mediana: o valor do meio
+0:59 Mediana com quantidade par
+1:19 Moda: o valor que mais aparece
+2:08 O erro de olhar só as pontas
+2:26 O atalho: a posição do meio
+2:54 Hora de testar
+3:05 Resolvendo as notas dos 8 alunos
+3:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Tabela de frequência e classes: [LINK MAT-EST-002]

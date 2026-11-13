@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-008 · Altura, mediana, bissetriz e mediatriz
 
-**Arquivo:** `final/estudativo_MAT-ANG-008_altura_mediana_bissetriz_mediatriz.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-008_altura_mediana_bissetriz_mediatriz.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Altura, mediana, bissetriz e mediatriz: quatro nomes parecidos, e trocar um pelo
 ✅ O atalho: no isósceles, a linha do topo é altura, mediana e bissetriz (topo de 40°: 20° e 20°; base 10: 5 e 5)
 
 ⏱️ Capítulos
-[TEMPO] Quatro linhas, quatro nomes parecidos
-[TEMPO] O que você precisa saber
-[TEMPO] Mediana: o lado ao meio
-[TEMPO] Bissetriz: o ângulo ao meio
-[TEMPO] Altura: em ângulo reto
-[TEMPO] A altura que cai fora do triângulo
-[TEMPO] Mediatriz: o lado ao meio, em pé
-[TEMPO] O erro da bissetriz no meio do lado
-[TEMPO] O atalho do isósceles
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 12° e 12°, altura fora
-[TEMPO] Resumo e próxima aula
+0:00 Quatro linhas, quatro nomes parecidos
+0:20 O que você precisa saber
+0:34 Mediana: o lado ao meio
+0:59 Bissetriz: o ângulo ao meio
+1:15 Altura: em ângulo reto
+1:30 A altura que cai fora do triângulo
+2:00 Mediatriz: o lado ao meio, em pé
+2:35 O erro da bissetriz no meio do lado
+2:50 O atalho do isósceles
+3:36 Hora de testar
+3:57 Resolvendo: 12° e 12°, altura fora
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Congruência de triângulos: [LINK MAT-ANG-007]

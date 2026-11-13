@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-004 · Altura, rampa e distância inacessível
 
-**Arquivo:** `final/estudativo_MAT-TRI-004_altura_rampa_e_distancia_inacessivel.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-004_altura_rampa_e_distancia_inacessivel.mp4` · 5:40 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Você está a 30 metros de uma torre e vê o topo sob um ângulo de 60 graus. Qu
 ✅ A largura de um rio sem atravessar: 10√3 ≈ 17 m
 
 ⏱️ Capítulos
-[TEMPO] A torre vista a 60 graus
-[TEMPO] O que você precisa saber
-[TEMPO] Ângulo de elevação e as três perguntas
-[TEMPO] A altura da torre com a tangente
-[TEMPO] Quanto dá 30√3
-[TEMPO] E a altura da pessoa?
-[TEMPO] A inclinação da rampa com o seno
-[TEMPO] O erro de chamar o chão de hipotenusa
-[TEMPO] O atalho do 30° e 60°
-[TEMPO] Hora de testar: a largura do rio
-[TEMPO] Resolvendo a largura do rio
-[TEMPO] Resumo e próxima aula
+0:00 A torre vista a 60 graus
+0:23 O que você precisa saber
+0:40 Ângulo de elevação e as três perguntas
+1:10 A altura da torre com a tangente
+1:24 Quanto dá 30√3
+1:44 E a altura da pessoa?
+1:51 A inclinação da rampa com o seno
+2:34 O erro de chamar o chão de hipotenusa
+3:01 O atalho do 30° e 60°
+3:53 Hora de testar: a largura do rio
+4:17 Resolvendo a largura do rio
+5:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Achar um lado com seno, cosseno ou tangente: [LINK MAT-TRI-002]

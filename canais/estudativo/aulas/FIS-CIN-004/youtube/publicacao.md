@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-004 · Referencial, posição e deslocamento
 
-**Arquivo:** `final/estudativo_FIS-CIN-004_referencial_posicao_deslocamento.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-004_referencial_posicao_deslocamento.mp4` · 4:32 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Sentado num ônibus, você está parado ou em movimento? As duas respostas estã
 ✅ O atalho: deslocamento ignora o caminho
 
 ⏱️ Capítulos
-[TEMPO] Parado ou em movimento?
-[TEMPO] O que você precisa saber
-[TEMPO] Referencial, movimento e repouso
-[TEMPO] Posição numa reta
-[TEMPO] Deslocamento e o sinal
-[TEMPO] Distância percorrida
-[TEMPO] O erro: posição não é o quanto andou
-[TEMPO] O atalho: ignore o caminho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o corredor na pista
-[TEMPO] Resumo e próxima aula
+0:00 Parado ou em movimento?
+0:19 O que você precisa saber
+0:32 Referencial, movimento e repouso
+1:02 Posição numa reta
+1:23 Deslocamento e o sinal
+1:57 Distância percorrida
+2:37 O erro: posição não é o quanto andou
+2:54 O atalho: ignore o caminho
+3:21 Hora de testar
+3:38 Resolvendo: o corredor na pista
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Grandezas físicas e Sistema Internacional: [LINK FIS-CIN-001]

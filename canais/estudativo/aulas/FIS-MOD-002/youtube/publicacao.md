@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-002 · Efeito fotoelétrico
 
-**Arquivo:** `final/estudativo_FIS-MOD-002_efeito_fotoeletrico.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-002_efeito_fotoeletrico.mp4` · 4:53 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Uma luz vermelha fortíssima não arranca nenhum elétron de uma placa de zinco,
 ✅ O atalho do gráfico: retas paralelas, inclinação h
 
 ⏱️ Capítulos
-[TEMPO] Luz fraca vence luz forte
-[TEMPO] O que você precisa saber
-[TEMPO] O efeito fotoelétrico
-[TEMPO] Função trabalho
-[TEMPO] Ec = h·f − W
-[TEMPO] Frequência de corte
-[TEMPO] E a intensidade?
-[TEMPO] O erro de misturar unidades
-[TEMPO] O atalho do gráfico
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a placa de zinco
-[TEMPO] Resumo e próxima aula
+0:00 Luz fraca vence luz forte
+0:25 O que você precisa saber
+0:38 O efeito fotoelétrico
+1:05 Função trabalho
+1:37 Ec = h·f − W
+2:05 Frequência de corte
+2:21 E a intensidade?
+2:42 O erro de misturar unidades
+3:10 O atalho do gráfico
+3:44 Hora de testar
+4:03 Resolvendo: a placa de zinco
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Fóton: a energia em pacotes: [LINK FIS-MOD-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-002 · Reflexão e espelho plano
 
-**Arquivo:** `final/estudativo_FIS-OPT-002_reflexao_espelho_plano.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-002_reflexao_espelho_plano.mp4` · 4:48 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Para se ver de corpo inteiro, você não precisa de um espelho do seu tamanho: b
 ✅ O atalho: altura ÷ 2, e por que a distância não importa
 
 ⏱️ Capítulos
-[TEMPO] Metade da sua altura
-[TEMPO] O que você precisa saber
-[TEMPO] Reflexão regular e difusa
-[TEMPO] A lei da reflexão
-[TEMPO] A imagem no espelho plano
-[TEMPO] A altura mínima do espelho
-[TEMPO] O atalho e o motivo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 Metade da sua altura
+0:19 O que você precisa saber
+0:32 Reflexão regular e difusa
+0:53 A lei da reflexão
+1:35 A imagem no espelho plano
+2:35 A altura mínima do espelho
+3:07 O atalho e o motivo
+3:42 Hora de testar
+3:58 Resolvendo
+4:18 Resumo e próxima aula
 
 📚 Antes desta aula
 Luz em linha reta: sombra e câmara escura: [LINK FIS-OPT-001]

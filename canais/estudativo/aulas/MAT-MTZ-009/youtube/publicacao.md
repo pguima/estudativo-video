@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-009 · Praticando: sistemas lineares
 
-**Arquivo:** `final/estudativo_MAT-MTZ-009_praticando_sistemas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-009_praticando_sistemas.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões inéditas para fechar a trilha de matrizes e sistemas: um sistem
 ✅ Três planos e uma reta: infinitas soluções
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões para treinar
-[TEMPO] As ferramentas
-[TEMPO] Questão 1: sistema 3x3
-[TEMPO] Resolvendo a questão 1
-[TEMPO] O atalho: equações quase iguais
-[TEMPO] Questão 2: os preços da lanchonete
-[TEMPO] Resolvendo a questão 2
-[TEMPO] Questão 3: o valor de k
-[TEMPO] Resolvendo a questão 3
-[TEMPO] Questão 4: Cramer para o y
-[TEMPO] Resolvendo a questão 4
-[TEMPO] Questão 5: três planos e uma reta
-[TEMPO] Resolvendo a questão 5
-[TEMPO] Resumo e fim da trilha
+0:00 Cinco questões para treinar
+0:11 As ferramentas
+0:28 Questão 1: sistema 3x3
+0:41 Resolvendo a questão 1
+1:08 O atalho: equações quase iguais
+1:27 Questão 2: os preços da lanchonete
+1:44 Resolvendo a questão 2
+2:28 Questão 3: o valor de k
+2:47 Resolvendo a questão 3
+3:11 Questão 4: Cramer para o y
+3:24 Resolvendo a questão 4
+3:48 Questão 5: três planos e uma reta
+4:00 Resolvendo a questão 5
+4:10 Resumo e fim da trilha
 
 📚 Antes desta aula
 Sistema 3x3 por escalonamento: [LINK MAT-MTZ-006]

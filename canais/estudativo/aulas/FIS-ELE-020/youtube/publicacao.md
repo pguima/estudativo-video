@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-020 · Gerador real: força eletromotriz
 
-**Arquivo:** `final/estudativo_FIS-ELE-020_gerador_real_forca_eletromotriz.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-020_gerador_real_forca_eletromotriz.mp4` · 4:58 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Ligue um brinquedo que puxa muita corrente e a tensão nos polos da pilha cai: p
 ✅ Os atalhos: rendimento = U/ε e r = ε dividido pela corrente de curto
 
 ⏱️ Capítulos
-[TEMPO] A pilha que perde tensão por dentro
-[TEMPO] O que você precisa saber
-[TEMPO] Gerador e força eletromotriz
-[TEMPO] A resistência interna: U = ε − r·i
-[TEMPO] O gráfico U × i
-[TEMPO] Potências e rendimento
-[TEMPO] O erro: ε não é a tensão nos polos
-[TEMPO] Os atalhos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o gerador de 10 V
-[TEMPO] Resumo e próxima aula
+0:00 A pilha que perde tensão por dentro
+0:21 O que você precisa saber
+0:36 Gerador e força eletromotriz
+1:03 A resistência interna: U = ε − r·i
+1:59 O gráfico U × i
+2:34 Potências e rendimento
+3:02 O erro: ε não é a tensão nos polos
+3:22 Os atalhos
+3:53 Hora de testar
+4:10 Resolvendo: o gerador de 10 V
+4:29 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistência e primeira lei de Ohm: [LINK FIS-ELE-009]

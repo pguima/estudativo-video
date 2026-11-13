@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-001 · Função exponencial: lei e gráfico
 
-**Arquivo:** `final/estudativo_MAT-EXP-001_funcao_exponencial_lei_e_grafico.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-001_funcao_exponencial_lei_e_grafico.mp4` · 5:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,19 +33,19 @@ Dobre uma folha de papel ao meio dez vezes e ela fica 1.024 vezes mais grossa. E
 ✅ O atalho do espelho: (1/2)ˣ = 2⁻ˣ, só para bases inversas
 
 ⏱️ Capítulos
-[TEMPO] A folha que dobra
-[TEMPO] O que você precisa saber
-[TEMPO] A lei: o x no expoente
-[TEMPO] A tabela de 2ˣ
-[TEMPO] O gráfico crescente
-[TEMPO] A tabela de (1/2)ˣ
-[TEMPO] O gráfico decrescente
-[TEMPO] Por que a base é positiva e diferente de 1
-[TEMPO] O erro do expoente negativo
-[TEMPO] O atalho do espelho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 3ˣ e (1/3)ˣ
-[TEMPO] Resumo e próxima aula
+0:00 A folha que dobra
+0:23 O que você precisa saber
+0:37 A lei: o x no expoente
+0:57 A tabela de 2ˣ
+1:19 O gráfico crescente
+1:56 A tabela de (1/2)ˣ
+2:27 O gráfico decrescente
+2:50 Por que a base é positiva e diferente de 1
+3:29 O erro do expoente negativo
+3:50 O atalho do espelho
+4:28 Hora de testar
+4:45 Resolvendo 3ˣ e (1/3)ˣ
+5:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráfico de uma função: [LINK MAT-FUN-006]

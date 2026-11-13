@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-002 · Multiplicar matrizes: linha por coluna
 
-**Arquivo:** `final/estudativo_MAT-MTZ-002_multiplicar_matrizes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-002_multiplicar_matrizes.mp4` · 4:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Para multiplicar duas matrizes, muita gente multiplica elemento com elemento, co
 ✅ O atalho do tamanho: os do meio iguais, os de fora dão o resultado
 
 ⏱️ Capítulos
-[TEMPO] Multiplicar matrizes não é casa com casa
-[TEMPO] O que você precisa saber
-[TEMPO] Linha por coluna na lanchonete
-[TEMPO] Multiplicando duas matrizes 2x2
-[TEMPO] Trocando a ordem: AB e BA
-[TEMPO] Quando o produto existe
-[TEMPO] O erro de multiplicar casa com casa
-[TEMPO] O atalho do tamanho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o produto
-[TEMPO] Resumo e próxima aula
+0:00 Multiplicar matrizes não é casa com casa
+0:21 O que você precisa saber
+0:33 Linha por coluna na lanchonete
+1:03 Multiplicando duas matrizes 2x2
+1:50 Trocando a ordem: AB e BA
+2:16 Quando o produto existe
+2:34 O erro de multiplicar casa com casa
+2:49 O atalho do tamanho
+3:15 Hora de testar
+3:29 Resolvendo o produto
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é matriz: soma e multiplicação por número: [LINK MAT-MTZ-001]

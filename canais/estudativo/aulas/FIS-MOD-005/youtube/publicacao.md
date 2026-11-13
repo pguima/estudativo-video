@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-005 · Relatividade restrita
 
-**Arquivo:** `final/estudativo_FIS-MOD-005_relatividade_restrita.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-005_relatividade_restrita.mp4` · 5:16 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Uma astronauta viaja numa nave muito rápida e volta 8 anos mais velha; o gêmeo
 ✅ O macete: 0,6c e 0,8c pelo triângulo 3, 4, 5
 
 ⏱️ Capítulos
-[TEMPO] 8 anos para ela, 10 para o gêmeo
-[TEMPO] O que você precisa saber
-[TEMPO] As duas ideias de Einstein
-[TEMPO] O relógio de luz
-[TEMPO] Dilatação do tempo e fator de Lorentz
-[TEMPO] Calculando o γ dos gêmeos
-[TEMPO] Contração do comprimento
-[TEMPO] O erro de dividir o tempo
-[TEMPO] O atalho do 3, 4, 5
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a nave a 0,8c
-[TEMPO] Resumo e próxima aula
+0:00 8 anos para ela, 10 para o gêmeo
+0:22 O que você precisa saber
+0:36 As duas ideias de Einstein
+1:11 O relógio de luz
+1:30 Dilatação do tempo e fator de Lorentz
+1:51 Calculando o γ dos gêmeos
+2:27 Contração do comprimento
+3:01 O erro de dividir o tempo
+3:22 O atalho do 3, 4, 5
+3:58 Hora de testar
+4:16 Resolvendo: a nave a 0,8c
+4:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Espectro eletromagnético em ordem: [LINK FIS-OND-010]

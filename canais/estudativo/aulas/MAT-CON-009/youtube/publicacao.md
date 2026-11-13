@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-009 · Praticando: conjuntos e números reais
 
-**Arquivo:** `final/estudativo_MAT-CON-009_praticando_conjuntos_e_reais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-009_praticando_conjuntos_e_reais.mp4` · 5:14 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas com tudo da trilha de conjuntos e números reais. Em
 ✅ O atalho: testar um número em cada resposta
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: diagrama de Venn
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: classificar números
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: fração geratriz
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: inequação e intervalo
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: interseção e união
-[TEMPO] Resposta 5
-[TEMPO] O atalho: teste um número
-[TEMPO] Resumo e próxima trilha
+0:00 Cinco situações para resolver
+0:14 As quatro ferramentas
+0:27 Situação 1: diagrama de Venn
+0:45 Resposta 1
+1:17 Situação 2: classificar números
+1:37 Resposta 2
+2:03 Situação 3: fração geratriz
+2:16 Resposta 3
+2:58 Situação 4: inequação e intervalo
+3:09 Resposta 4
+3:37 Situação 5: interseção e união
+3:51 Resposta 5
+4:21 O atalho: teste um número
+4:41 Resumo e próxima trilha
 
 📚 Antes desta aula
 Conjuntos: pertence, está contido e vazio: [LINK MAT-CON-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-007 · Radianos e o ciclo trigonométrico
 
-**Arquivo:** `final/estudativo_MAT-TRI-007_radianos_e_ciclo_trigonometrico.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-007_radianos_e_ciclo_trigonometrico.mp4` · 5:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,23 +31,23 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: troque π por 180° (3π/4 = 135°)
 
 ⏱️ Capítulos
-[TEMPO] 390° cai no mesmo ponto que 30°
-[TEMPO] O que você precisa saber
-[TEMPO] O que é um radiano
-[TEMPO] Quantos radianos cabem numa volta
-[TEMPO] π radianos é 180 graus
-[TEMPO] Convertendo 60° em radianos
-[TEMPO] O ciclo trigonométrico
-[TEMPO] Partida e sentido do ciclo
-[TEMPO] Marcando 60°, 90°, 180° e 270°
-[TEMPO] Mais de uma volta: 390° e 750°
-[TEMPO] O erro de girar no sentido do relógio
-[TEMPO] O atalho: troque π por 180°
-[TEMPO] De grau para radiano sem conta
-[TEMPO] Por que o atalho funciona
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 120° e 480°
-[TEMPO] Resumo e próxima aula
+0:00 390° cai no mesmo ponto que 30°
+0:23 O que você precisa saber
+0:38 O que é um radiano
+0:51 Quantos radianos cabem numa volta
+1:05 π radianos é 180 graus
+1:21 Convertendo 60° em radianos
+1:44 O ciclo trigonométrico
+1:54 Partida e sentido do ciclo
+2:06 Marcando 60°, 90°, 180° e 270°
+2:23 Mais de uma volta: 390° e 750°
+2:56 O erro de girar no sentido do relógio
+3:16 O atalho: troque π por 180°
+3:36 De grau para radiano sem conta
+3:53 Por que o atalho funciona
+4:08 Hora de testar
+4:21 Resolvendo 120° e 480°
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

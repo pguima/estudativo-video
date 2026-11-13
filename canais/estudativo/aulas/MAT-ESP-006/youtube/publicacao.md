@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-006 · Cubo e bloco: área e diagonal
 
-**Arquivo:** `final/estudativo_MAT-ESP-006_cubo_e_bloco_area_e_diagonal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-006_cubo_e_bloco_area_e_diagonal.mp4` · 5:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Uma caixa de 3 m por 2 m, com 1 m de altura, vai ser pintada por fora. Muita gen
 ✅ O atalho: quadrado √2, cubo √3; a diagonal do cubo é a√3
 
 ⏱️ Capítulos
-[TEMPO] Pintar a caixa: área ou volume?
-[TEMPO] O que você precisa saber
-[TEMPO] Área total: as faces em pares
-[TEMPO] A diagonal do cubo com Pitágoras
-[TEMPO] O erro de somar só três faces
-[TEMPO] O atalho: cubo, raiz de três
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o papel e a vareta
-[TEMPO] Resumo e próxima aula
+0:00 Pintar a caixa: área ou volume?
+0:28 O que você precisa saber
+0:44 Área total: as faces em pares
+1:54 A diagonal do cubo com Pitágoras
+3:05 O erro de somar só três faces
+3:26 O atalho: cubo, raiz de três
+3:53 Hora de testar
+4:15 Resolvendo o papel e a vareta
+4:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Diagonal do quadrado e altura do triângulo equilátero: [LINK MAT-ANG-017]

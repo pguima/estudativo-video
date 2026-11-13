@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-002 · Campo criado por corrente
 
-**Arquivo:** `final/estudativo_FIS-MAG-002_campo_criado_por_corrente.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-002_campo_criado_por_corrente.mp4` · 5:11 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Em 1820, Oersted viu a agulha de uma bússola girar perto de um fio com corrente
 ✅ O atalho: μ₀/2π = 2·10⁻⁷
 
 ⏱️ Capítulos
-[TEMPO] A agulha que girou sem ímã
-[TEMPO] O que você precisa saber
-[TEMPO] As linhas de campo de um fio
-[TEMPO] A regra da mão direita
-[TEMPO] Campo saindo e entrando na folha
-[TEMPO] Quanto vale o campo do fio
-[TEMPO] Espira e solenoide
-[TEMPO] O erro da distância ao quadrado
-[TEMPO] O atalho: sem pi na conta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: proporção e sentido
-[TEMPO] Resumo e próxima aula
+0:00 A agulha que girou sem ímã
+0:24 O que você precisa saber
+0:38 As linhas de campo de um fio
+0:49 A regra da mão direita
+1:01 Campo saindo e entrando na folha
+1:31 Quanto vale o campo do fio
+2:25 Espira e solenoide
+3:14 O erro da distância ao quadrado
+3:29 O atalho: sem pi na conta
+3:59 Hora de testar
+4:23 Resolvendo: proporção e sentido
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Ímãs e campo magnético: [LINK FIS-MAG-001]

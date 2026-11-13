@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-005 · Multiplicidade, gráfico e sinal de um polinômio
 
-**Arquivo:** `final/estudativo_MAT-PLN-005_multiplicidade_grafico_sinal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-005_multiplicidade_grafico_sinal.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Em y = (x − 1)²(x + 2), o gráfico atravessa o eixo x em −2 e só encosta e
 ✅ O atalho do sinal, sem quadro
 
 ⏱️ Capítulos
-[TEMPO] Corta ou só encosta?
-[TEMPO] O que você precisa saber
-[TEMPO] Multiplicidade de uma raiz
-[TEMPO] O sinal do polinômio
-[TEMPO] O gráfico: corta ou toca
-[TEMPO] A inequação (x − 1)²(x + 2) > 0
-[TEMPO] O erro de trocar o sinal em toda raiz
-[TEMPO] O atalho do sinal
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: (x + 1)(x − 3)² ≤ 0
-[TEMPO] Resumo e próxima aula
+0:00 Corta ou só encosta?
+0:22 O que você precisa saber
+0:36 Multiplicidade de uma raiz
+0:58 O sinal do polinômio
+1:26 O gráfico: corta ou toca
+1:55 A inequação (x − 1)²(x + 2) > 0
+2:12 O erro de trocar o sinal em toda raiz
+2:30 O atalho do sinal
+3:08 Hora de testar
+3:21 Resolvendo: (x + 1)(x − 3)² ≤ 0
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler um gráfico: máximos, zeros e crescimento: [LINK MAT-FUN-007]

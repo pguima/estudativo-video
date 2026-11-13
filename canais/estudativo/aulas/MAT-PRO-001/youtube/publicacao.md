@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-001 · Sequências e lei de formação
 
-**Arquivo:** `final/estudativo_MAT-PRO-001_sequencias_e_lei_de_formacao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-001_sequencias_e_lei_de_formacao.mp4` · 5:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho do caminho de volta: o 100 está (33º lugar), o 50 não está
 
 ⏱️ Capítulos
-[TEMPO] 4, 7, 10, 13… e o 100º?
-[TEMPO] O que você precisa saber
-[TEMPO] Sequência, termo e posição
-[TEMPO] Lei de formação: aₙ = 3n + 1
-[TEMPO] A regra do anterior
-[TEMPO] O erro de trocar posição por valor
-[TEMPO] O atalho: o caminho de volta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a₂₀, o 73 e a₄
-[TEMPO] Resumo e próxima aula
+0:00 4, 7, 10, 13… e o 100º?
+0:24 O que você precisa saber
+0:35 Sequência, termo e posição
+1:04 Lei de formação: aₙ = 3n + 1
+1:51 A regra do anterior
+2:33 O erro de trocar posição por valor
+3:02 O atalho: o caminho de volta
+3:41 Hora de testar
+4:03 Resolvendo: a₂₀, o 73 e a₄
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Notação f(x): calcular e fazer o caminho de volta: [LINK MAT-FUN-003]

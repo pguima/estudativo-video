@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-011 · Soma infinita de uma PG
 
-**Arquivo:** `final/estudativo_MAT-PRO-011_soma_infinita_de_uma_pg.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-011_soma_infinita_de_uma_pg.mp4` · 5:14 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Você está a 2 metros de uma parede e anda 1 metro, depois meio, depois um quar
 ✅ O atalho da bola: altura · (1 + fração)/(1 − fração)
 
 ⏱️ Capítulos
-[TEMPO] Infinitos passos até a parede
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a soma não estoura
-[TEMPO] A fórmula da soma infinita
-[TEMPO] A bola que quica
-[TEMPO] O erro de contar cada altura uma vez
-[TEMPO] A dízima 0,444… pela soma infinita
-[TEMPO] O atalho da bola
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Infinitos passos até a parede
+0:23 O que você precisa saber
+0:45 Por que a soma não estoura
+1:13 A fórmula da soma infinita
+2:04 A bola que quica
+2:46 O erro de contar cada altura uma vez
+3:00 A dízima 0,444… pela soma infinita
+3:31 O atalho da bola
+4:09 Hora de testar
+4:22 Resolvendo a questão
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma dos termos de uma PG: [LINK MAT-PRO-010]

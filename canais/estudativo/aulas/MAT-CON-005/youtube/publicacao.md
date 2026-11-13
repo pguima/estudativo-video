@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-005 · Fração geratriz de uma dízima
 
-**Arquivo:** `final/estudativo_MAT-CON-005_fracao_geratriz.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-005_fracao_geratriz.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O macete com algarismo antes: (23 − 2)/90, e por que 23/99 daria outro número
 
 ⏱️ Capítulos
-[TEMPO] 0,444… é que fração?
-[TEMPO] O que você precisa saber
-[TEMPO] A equação: caudas iguais somem
-[TEMPO] Período com dois algarismos
-[TEMPO] Algarismo antes do período
-[TEMPO] O erro de multiplicar por 10
-[TEMPO] O macete dos noves
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 0,777… e 0,1666…
-[TEMPO] Resumo e próxima aula
+0:00 0,444… é que fração?
+0:20 O que você precisa saber
+0:35 A equação: caudas iguais somem
+1:21 Período com dois algarismos
+1:44 Algarismo antes do período
+2:26 O erro de multiplicar por 10
+2:44 O macete dos noves
+3:36 Hora de testar
+3:50 Resolvendo 0,777… e 0,1666…
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Naturais, inteiros e racionais: [LINK MAT-CON-004]

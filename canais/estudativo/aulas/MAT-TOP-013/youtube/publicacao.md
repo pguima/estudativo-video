@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-013 · Praticando: distâncias, circunferências e cônicas
 
-**Arquivo:** `final/estudativo_MAT-TOP-013_praticando_distancias_e_conicas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-013_praticando_distancias_e_conicas.mp4` · 5:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas para praticar o fim da geometria analítica: a dist�
 ✅ Foco e diretriz da parábola, e os focos da hipérbole em pé
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] As ferramentas do módulo
-[TEMPO] Situação 1: a torre e a estrada
-[TEMPO] Resolvendo: distância de ponto a reta
-[TEMPO] Situação 2: os pontos estão alinhados?
-[TEMPO] Resolvendo: o determinante
-[TEMPO] O atalho: compare as inclinações
-[TEMPO] Situação 3: duas circunferências
-[TEMPO] Resolvendo: tangentes externas
-[TEMPO] Situação 4: os focos da elipse
-[TEMPO] Resolvendo: a soma das distâncias
-[TEMPO] Situação 5: parábola e hipérbole
-[TEMPO] Resolvendo: que cônica é cada uma
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:16 As ferramentas do módulo
+0:33 Situação 1: a torre e a estrada
+0:52 Resolvendo: distância de ponto a reta
+1:18 Situação 2: os pontos estão alinhados?
+1:31 Resolvendo: o determinante
+1:57 O atalho: compare as inclinações
+2:29 Situação 3: duas circunferências
+2:50 Resolvendo: tangentes externas
+3:21 Situação 4: os focos da elipse
+3:40 Resolvendo: a soma das distâncias
+4:05 Situação 5: parábola e hipérbole
+4:23 Resolvendo: que cônica é cada uma
+4:57 Resumo e próxima aula
 
 📚 Antes desta aula
 Distância de ponto a reta: [LINK MAT-TOP-007]

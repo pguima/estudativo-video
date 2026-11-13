@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-004 · Função composta
 
-**Arquivo:** `final/estudativo_MAT-FAV-004_funcao_composta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-004_funcao_composta.mp4` · 4:47 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Com f(x) = 2x + 1 e g(x) = x², começando no 3, uma ordem dá 19 e a outra dá 
 ✅ O atalho: para achar f(5), faça o de dentro valer 5
 
 ⏱️ Capítulos
-[TEMPO] Uma ordem dá 19, a outra dá 49
-[TEMPO] O que você precisa saber
-[TEMPO] Funções como máquinas em fila
-[TEMPO] A lei da composta
-[TEMPO] O caminho de volta: f(2x + 1) = 4x + 3
-[TEMPO] O erro de multiplicar
-[TEMPO] O atalho: o de dentro vale 5
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f(g(2)) e g(f(2))
-[TEMPO] Resumo e próxima aula
+0:00 Uma ordem dá 19, a outra dá 49
+0:25 O que você precisa saber
+0:38 Funções como máquinas em fila
+1:38 A lei da composta
+2:14 O caminho de volta: f(2x + 1) = 4x + 3
+3:00 O erro de multiplicar
+3:19 O atalho: o de dentro vale 5
+3:48 Hora de testar
+4:02 Resolvendo: f(g(2)) e g(f(2))
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Isolar uma letra numa fórmula: [LINK MAT-EQU-011]

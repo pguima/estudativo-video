@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-002 · Contar com restrições: comece pelo mais difícil
 
-**Arquivo:** `final/estudativo_MAT-CNT-002_contar_com_restricoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-002_contar_com_restricoes.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Quantos números de três algarismos têm todos os algarismos diferentes? Muita 
 ✅ O atalho: conte tudo e tire o proibido, 720 − 72 = 648
 
 ⏱️ Capítulos
-[TEMPO] Por que não são 720?
-[TEMPO] O que você precisa saber
-[TEMPO] As regras: sem repetir e sem zero na frente
-[TEMPO] Comece pela casinha mais difícil
-[TEMPO] Separar em casos e somar
-[TEMPO] O erro do zero na frente
-[TEMPO] O atalho: conte tudo e tire o proibido
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: números pares de dois algarismos
-[TEMPO] Resumo e próxima aula
+0:00 Por que não são 720?
+0:21 O que você precisa saber
+0:31 As regras: sem repetir e sem zero na frente
+0:47 Comece pela casinha mais difícil
+1:35 Separar em casos e somar
+2:39 O erro do zero na frente
+2:51 O atalho: conte tudo e tire o proibido
+3:22 Hora de testar
+3:38 Resolvendo: números pares de dois algarismos
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Princípio multiplicativo e árvore de possibilidades: [LINK MAT-CNT-001]

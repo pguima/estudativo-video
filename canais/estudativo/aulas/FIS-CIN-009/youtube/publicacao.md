@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-009 · Torricelli e distância de frenagem
 
-**Arquivo:** `final/estudativo_FIS-CIN-009_torricelli_e_distancia_de_frenagem.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-009_torricelli_e_distancia_de_frenagem.mp4` · 4:27 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um carro a 10 m/s para em 10 m. Com o dobro da velocidade e a mesma freada, ele 
 ✅ O atalho: frenagem multiplicada pelo quadrado
 
 ⏱️ Capítulos
-[TEMPO] O dobro da velocidade, 4 vezes a frenagem
-[TEMPO] O que você precisa saber
-[TEMPO] A equação de Torricelli
-[TEMPO] A distância de frenagem
-[TEMPO] Tempo de reação e distância de parada
-[TEMPO] O erro de esquecer a reação
-[TEMPO] O atalho: o quadrado da velocidade
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a 15 e a 30 m/s
-[TEMPO] Resumo e próxima aula
+0:00 O dobro da velocidade, 4 vezes a frenagem
+0:25 O que você precisa saber
+0:40 A equação de Torricelli
+1:35 A distância de frenagem
+2:18 Tempo de reação e distância de parada
+2:49 O erro de esquecer a reação
+2:59 O atalho: o quadrado da velocidade
+3:27 Hora de testar
+3:44 Resolvendo: a 15 e a 30 m/s
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Posição no MUV: a função do 2º grau: [LINK FIS-CIN-008]

@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-006 · Princípio de Pascal: prensa hidráulica
 
-**Arquivo:** `final/estudativo_FIS-EGF-006_principio_de_pascal_prensa_hidraulica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-006_principio_de_pascal_prensa_hidraulica.mp4` · 4:15 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ No elevador de uma oficina, a força no pistão pequeno pode ser cem vezes menor
 ✅ Com diâmetros, eleve a razão ao quadrado
 
 ⏱️ Capítulos
-[TEMPO] Um carro e cem vezes menos força
-[TEMPO] O que você precisa saber
-[TEMPO] O princípio de Pascal
-[TEMPO] A prensa hidráulica
-[TEMPO] O preço: a força ganha cobra em distância
-[TEMPO] O erro da pressão no pistão largo
-[TEMPO] O atalho: a razão das áreas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o elevador da oficina
-[TEMPO] Resumo e próxima aula
+0:00 Um carro e cem vezes menos força
+0:21 O que você precisa saber
+0:35 O princípio de Pascal
+0:51 A prensa hidráulica
+1:59 O preço: a força ganha cobra em distância
+2:30 O erro da pressão no pistão largo
+2:46 O atalho: a razão das áreas
+3:15 Hora de testar
+3:34 Resolvendo: o elevador da oficina
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Lei de Stevin: [LINK FIS-EGF-005]

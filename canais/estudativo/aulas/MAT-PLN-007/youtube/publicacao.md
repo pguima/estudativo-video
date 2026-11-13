@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-007 · Praticando: polinômios e raízes
 
-**Arquivo:** `final/estudativo_MAT-PLN-007_praticando_polinomios.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-007_praticando_polinomios.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões inéditas, uma para cada ferramenta da trilha de polinômios. Em
 ✅ O atalho: P(1) é a soma dos coeficientes
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: identidade
-[TEMPO] Resolução 1
-[TEMPO] Questão 2: teorema do resto
-[TEMPO] Resolução 2
-[TEMPO] Questão 3: raiz dada
-[TEMPO] Resolução 3
-[TEMPO] Questão 4: sinal
-[TEMPO] Resolução 4
-[TEMPO] Questão 5: Girard
-[TEMPO] Resolução 5
-[TEMPO] O atalho: teste o 1
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões
+0:13 O que você vai usar
+0:25 Questão 1: identidade
+0:42 Resolução 1
+1:12 Questão 2: teorema do resto
+1:24 Resolução 2
+1:43 Questão 3: raiz dada
+1:57 Resolução 3
+2:35 Questão 4: sinal
+2:46 Resolução 4
+3:14 Questão 5: Girard
+3:28 Resolução 5
+3:44 O atalho: teste o 1
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é polinômio: grau, valor e operações: [LINK MAT-PLN-001]

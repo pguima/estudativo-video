@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-009 · Lupa, microscópio e telescópio
 
-**Arquivo:** `final/estudativo_FIS-OPT-009_lupa_camera_microscopio_luneta.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-009_lupa_camera_microscopio_luneta.mp4` · 4:38 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ O microscópio e a luneta são feitos do mesmo jeito: duas lentes convergentes. 
 ✅ O macete: cada imagem real inverte
 
 ⏱️ Capítulos
-[TEMPO] Microscópio e luneta
-[TEMPO] O que você precisa saber
-[TEMPO] Lupa e câmera
-[TEMPO] Duas lentes
-[TEMPO] O microscópio
-[TEMPO] A luneta
-[TEMPO] O erro mais comum
-[TEMPO] O macete das imagens reais
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 Microscópio e luneta
+0:21 O que você precisa saber
+0:41 Lupa e câmera
+1:11 Duas lentes
+1:28 O microscópio
+2:06 A luneta
+2:53 O erro mais comum
+3:09 O macete das imagens reais
+3:41 Hora de testar
+3:58 Resolvendo
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação das lentes e dioptria: [LINK FIS-OPT-007]

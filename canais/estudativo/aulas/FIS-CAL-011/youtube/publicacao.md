@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-011 · Trabalho de um gás
 
-**Arquivo:** `final/estudativo_FIS-CAL-011_trabalho_de_um_gas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-011_trabalho_de_um_gas.mp4` · 5:08 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Dentro do motor, quem empurra o pistão é um gás, e um gás que empurra faz tr
 ✅ O atalho: quilopascal vezes litro dá joule
 
 ⏱️ Capítulos
-[TEMPO] Quem empurra o pistão do motor
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem τ = p · ΔV
-[TEMPO] Exemplo e o sinal do trabalho
-[TEMPO] O trabalho no gráfico p × V
-[TEMPO] O trabalho de um ciclo
-[TEMPO] O erro de pascal vezes litro
-[TEMPO] O atalho: kPa × L = J
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a compressão
-[TEMPO] Resumo e próxima aula
+0:00 Quem empurra o pistão do motor
+0:18 O que você precisa saber
+0:34 De onde vem τ = p · ΔV
+1:26 Exemplo e o sinal do trabalho
+2:02 O trabalho no gráfico p × V
+2:55 O trabalho de um ciclo
+3:33 O erro de pascal vezes litro
+3:47 O atalho: kPa × L = J
+4:12 Hora de testar
+4:27 Resolvendo: a compressão
+4:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de uma força: [LINK FIS-ENE-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-003 · Reflexão, refração e difração de ondas
 
-**Arquivo:** `final/estudativo_FIS-OND-003_reflexao_refracao_difracao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-003_reflexao_refracao_difracao.mp4` · 4:27 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Você ouve uma pessoa do outro lado do muro, mas não consegue vê-la. Nesta aul
 ✅ O atalho: v e λ andam juntos, na mesma proporção
 
 ⏱️ Capítulos
-[TEMPO] Você ouve, mas não vê
-[TEMPO] O que você precisa saber
-[TEMPO] Reflexão e eco
-[TEMPO] Refração: a frequência não muda
-[TEMPO] Difração: contornar obstáculos
-[TEMPO] O erro da frequência na refração
-[TEMPO] O atalho: v e λ andam juntos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o som que entra na água
-[TEMPO] Resumo e próxima aula
+0:00 Você ouve, mas não vê
+0:20 O que você precisa saber
+0:35 Reflexão e eco
+1:08 Refração: a frequência não muda
+2:16 Difração: contornar obstáculos
+2:47 O erro da frequência na refração
+3:02 O atalho: v e λ andam juntos
+3:28 Hora de testar
+3:46 Resolvendo: o som que entra na água
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Ondas: tipos e a equação v = λ·f: [LINK FIS-OND-002]

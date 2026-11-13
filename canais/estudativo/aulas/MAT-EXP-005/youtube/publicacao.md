@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-005 · Inequação exponencial
 
-**Arquivo:** `final/estudativo_MAT-EXP-005_inequacao_exponencial.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-005_inequacao_exponencial.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Muita gente resolve (1/2)ˣ > 8 igualando as bases e escreve x > −3. Mas teste
 ✅ O atalho: troque 1/2 por 2⁻¹ e deixe o menos do expoente virar o sinal
 
 ⏱️ Capítulos
-[TEMPO] (1/2)ˣ > 8: o erro de x > −3
-[TEMPO] O que você precisa saber
-[TEMPO] Base maior que 1: o sinal fica
-[TEMPO] Base entre 0 e 1: o sinal vira
-[TEMPO] O erro de virar sem precisar
-[TEMPO] O atalho: fuja da base fração
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 3^(x+1) ≥ 27 e (1/5)ˣ ≥ 25
-[TEMPO] Resumo e próxima aula
+0:00 (1/2)ˣ > 8: o erro de x > −3
+0:28 O que você precisa saber
+0:42 Base maior que 1: o sinal fica
+1:15 Base entre 0 e 1: o sinal vira
+2:06 O erro de virar sem precisar
+2:38 O atalho: fuja da base fração
+3:16 Hora de testar
+3:35 Resolvendo 3^(x+1) ≥ 27 e (1/5)ˣ ≥ 25
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação exponencial: igualar as bases: [LINK MAT-EXP-004]

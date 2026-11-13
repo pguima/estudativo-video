@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-018 · Período, frequência e rpm
 
-**Arquivo:** `final/estudativo_FIS-CIN-018_periodo_frequencia_rpm.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-018_periodo_frequencia_rpm.mp4` · 4:20 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Um ventilador gira a 1.200 rotações por minuto. Quantas voltas ele dá em um s
 ✅ O atalho: T = 60 ÷ rpm
 
 ⏱️ Capítulos
-[TEMPO] Quantas voltas por segundo dá o ventilador?
-[TEMPO] O que você precisa saber
-[TEMPO] Período: o tempo de uma volta
-[TEMPO] Frequência e o hertz
-[TEMPO] T = 1/f: período e frequência são inversos
-[TEMPO] De rpm para hertz
-[TEMPO] O erro de multiplicar por 60
-[TEMPO] O atalho: T = 60 ÷ rpm
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a furadeira
-[TEMPO] Resumo e próxima aula
+0:00 Quantas voltas por segundo dá o ventilador?
+0:21 O que você precisa saber
+0:32 Período: o tempo de uma volta
+0:59 Frequência e o hertz
+1:26 T = 1/f: período e frequência são inversos
+2:03 De rpm para hertz
+2:39 O erro de multiplicar por 60
+2:55 O atalho: T = 60 ÷ rpm
+3:22 Hora de testar
+3:34 Resolvendo: a furadeira
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Grandezas físicas e Sistema Internacional: [LINK FIS-CIN-001]

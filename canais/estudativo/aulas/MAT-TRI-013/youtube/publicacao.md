@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-013 · Praticando: ciclo e funções trigonométricas
 
-**Arquivo:** `final/estudativo_MAT-TRI-013_praticando_ciclo_e_funcoes_trigonometricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-013_praticando_ciclo_e_funcoes_trigonometricas.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Quatro questões criadas para esta aula, do ciclo trigonométrico até uma onda 
 ✅ Achar a hora do máximo e do mínimo resolvendo o de dentro do parêntese
 
 ⏱️ Capítulos
-[TEMPO] Quatro questões: pause e resolva
-[TEMPO] As cinco ferramentas
-[TEMPO] Questão 1: o arco de 495°
-[TEMPO] Resolvendo: 2º quadrante e 3π/4
-[TEMPO] Questão 2: seno e cosseno de 495°
-[TEMPO] Resolvendo: redução e sinais
-[TEMPO] Questão 3: seno −5/13 no 3º quadrante
-[TEMPO] Resolvendo: o cosseno pelo triângulo
-[TEMPO] A tangente e a pegadinha do sinal
-[TEMPO] Questão 4: a estufa
-[TEMPO] Máxima, mínima e período
-[TEMPO] A hora mais quente e a mais fria
-[TEMPO] Resumo e próxima aula
+0:00 Quatro questões: pause e resolva
+0:15 As cinco ferramentas
+0:32 Questão 1: o arco de 495°
+0:47 Resolvendo: 2º quadrante e 3π/4
+1:20 Questão 2: seno e cosseno de 495°
+1:31 Resolvendo: redução e sinais
+1:55 Questão 3: seno −5/13 no 3º quadrante
+2:09 Resolvendo: o cosseno pelo triângulo
+2:31 A tangente e a pegadinha do sinal
+2:57 Questão 4: a estufa
+3:23 Máxima, mínima e período
+3:43 A hora mais quente e a mais fria
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Radianos e o ciclo trigonométrico: [LINK MAT-TRI-007]

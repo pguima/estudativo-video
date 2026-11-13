@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-001 · Ângulos: medir em graus e classificar
 
-**Arquivo:** `final/estudativo_MAT-ANG-001_angulos_medir_e_classificar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-001_angulos_medir_e_classificar.mp4` · 5:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: cada hora do relógio vale 30° (só em hora cheia)
 
 ⏱️ Capítulos
-[TEMPO] Quanto mede o canto das 3 horas?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é um ângulo
-[TEMPO] Medir em graus: uma volta tem 360°
-[TEMPO] O relógio às 3 horas: 90°
-[TEMPO] Agudo, reto, obtuso e raso
-[TEMPO] O erro do lado maior
-[TEMPO] O atalho: cada hora vale 30°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ângulo das 5 horas
-[TEMPO] Resumo e próxima aula
+0:00 Quanto mede o canto das 3 horas?
+0:22 O que você precisa saber
+0:34 O que é um ângulo
+0:52 Medir em graus: uma volta tem 360°
+1:23 O relógio às 3 horas: 90°
+1:51 Agudo, reto, obtuso e raso
+2:52 O erro do lado maior
+3:15 O atalho: cada hora vale 30°
+3:57 Hora de testar
+4:10 Resolvendo: o ângulo das 5 horas
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Fração de uma quantidade: [LINK MAT-FRA-002]

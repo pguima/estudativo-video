@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-002 · Ponto médio e baricentro
 
-**Arquivo:** `final/estudativo_MAT-ANA-002_ponto_medio_e_baricentro.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-002_ponto_medio_e_baricentro.mp4` · 4:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Duas amigas moram em (2, 4) e (6, 10) e querem se encontrar exatamente no meio d
 ✅ O atalho: dobre o ponto médio e tire a ponta que você tem
 
 ⏱️ Capítulos
-[TEMPO] O ponto de encontro das amigas
-[TEMPO] O que você precisa saber
-[TEMPO] O meio de dois números: a média
-[TEMPO] O ponto médio no plano
-[TEMPO] O baricentro: a média de três pontos
-[TEMPO] O erro de subtrair em vez de somar
-[TEMPO] O atalho: achar a outra ponta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: ponto médio e baricentro
-[TEMPO] Resumo e próxima aula
+0:00 O ponto de encontro das amigas
+0:21 O que você precisa saber
+0:34 O meio de dois números: a média
+0:54 O ponto médio no plano
+1:43 O baricentro: a média de três pontos
+2:16 O erro de subtrair em vez de somar
+2:46 O atalho: achar a outra ponta
+3:20 Hora de testar
+3:40 Resolvendo: ponto médio e baricentro
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

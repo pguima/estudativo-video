@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-008 · Praticando: magnetismo e indução
 
-**Arquivo:** `final/estudativo_FIS-MAG-008_praticando_magnetismo_e_inducao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-008_praticando_magnetismo_e_inducao.mp4` · 4:44 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ No magnetismo, as fórmulas são parecidas e o difícil é saber qual usar. Nest
 ✅ Espiras e corrente num transformador
 
 ⏱️ Capítulos
-[TEMPO] Qual fórmula usar?
-[TEMPO] O que você precisa saber
-[TEMPO] O método: três perguntas
-[TEMPO] Questão 1: o campo do fio
-[TEMPO] Questão 2: a força na carga
-[TEMPO] Questão 3: a força no fio do motor
-[TEMPO] Questão 4: Faraday e Lenz
-[TEMPO] Questão 5: o transformador
-[TEMPO] Resumo e próxima aula
+0:00 Qual fórmula usar?
+0:16 O que você precisa saber
+0:28 O método: três perguntas
+0:54 Questão 1: o campo do fio
+1:32 Questão 2: a força na carga
+2:27 Questão 3: a força no fio do motor
+3:04 Questão 4: Faraday e Lenz
+3:47 Questão 5: o transformador
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Ímãs e campo magnético: [LINK FIS-MAG-001]

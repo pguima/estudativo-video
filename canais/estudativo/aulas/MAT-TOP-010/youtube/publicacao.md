@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-010 · Parábola: foco e diretriz
 
-**Arquivo:** `final/estudativo_MAT-TOP-010_parabola_foco_e_diretriz.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-010_parabola_foco_e_diretriz.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ A antena parabólica manda todos os sinais para um ponto só: o foco. Na parábo
 ✅ O atalho: na altura do foco, a largura é 4p
 
 ⏱️ Capítulos
-[TEMPO] A antena parabólica e o foco
-[TEMPO] O que você precisa saber
-[TEMPO] Foco e diretriz: a mesma distância
-[TEMPO] De onde vem x² = 4py
-[TEMPO] O erro de ler o número direto
-[TEMPO] O atalho: largura 4p
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x² = 12y
-[TEMPO] Resumo e próxima aula
+0:00 A antena parabólica e o foco
+0:26 O que você precisa saber
+0:37 Foco e diretriz: a mesma distância
+1:36 De onde vem x² = 4py
+2:26 O erro de ler o número direto
+2:48 O atalho: largura 4p
+3:19 Hora de testar
+3:33 Resolvendo: x² = 12y
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Distância entre dois pontos: [LINK MAT-ANA-001]

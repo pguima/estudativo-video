@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-008 · Sistema como matriz e regra de Cramer
 
-**Arquivo:** `final/estudativo_MAT-MTZ-008_regra_de_cramer.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-008_regra_de_cramer.mp4` · 4:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Dá para resolver o sistema 2x + y = 5 e x + y = 3 só com determinantes, sem so
 ✅ O erro de trocar a coluna errada e o atalho de uma letra só
 
 ⏱️ Capítulos
-[TEMPO] Um sistema resolvido só com determinantes
-[TEMPO] O que você precisa saber
-[TEMPO] O sistema como A · X = B
-[TEMPO] A regra de Cramer: D, Dx e Dy
-[TEMPO] O caminho da inversa e o D igual a zero
-[TEMPO] O erro de trocar a coluna errada
-[TEMPO] O atalho: só uma letra
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo com negativos
-[TEMPO] Resumo e próxima aula
+0:00 Um sistema resolvido só com determinantes
+0:22 O que você precisa saber
+0:33 O sistema como A · X = B
+1:03 A regra de Cramer: D, Dx e Dy
+1:47 O caminho da inversa e o D igual a zero
+2:16 O erro de trocar a coluna errada
+2:36 O atalho: só uma letra
+2:53 Hora de testar
+3:08 Resolvendo com negativos
+3:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Matriz inversa: [LINK MAT-MTZ-004]

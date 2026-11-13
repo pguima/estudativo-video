@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-003 · Espelhos esféricos
 
-**Arquivo:** `final/estudativo_FIS-OPT-003_espelhos_esfericos_concavo_convexo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-003_espelhos_esfericos_concavo_convexo.mp4` · 5:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ O espelho de maquiagem aumenta o rosto; o da saída da garagem mostra a rua inte
 ✅ O macete: o foco decide a natureza, o centro decide o tamanho
 
 ⏱️ Capítulos
-[TEMPO] Qual espelho aumenta?
-[TEMPO] O que você precisa saber
-[TEMPO] Côncavo e convexo
-[TEMPO] Os raios notáveis
-[TEMPO] O côncavo, caso a caso
-[TEMPO] O convexo
-[TEMPO] O erro da colher
-[TEMPO] O macete do foco
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 Qual espelho aumenta?
+0:20 O que você precisa saber
+0:36 Côncavo e convexo
+1:13 Os raios notáveis
+1:58 O côncavo, caso a caso
+2:45 O convexo
+3:15 O erro da colher
+3:34 O macete do foco
+4:13 Hora de testar
+4:27 Resolvendo
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Reflexão e espelho plano: [LINK FIS-OPT-002]

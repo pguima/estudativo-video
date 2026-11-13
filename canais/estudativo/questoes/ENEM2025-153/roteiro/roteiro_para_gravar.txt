@@ -1,0 +1,25 @@
+Questão cento e cinquenta e três do ENEM dois mil e vinte e cinco. Uma empresa identifica cada visitante com um código de sete dígitos. O código tem quatro pedaços: andar, setor, funcionário e turno. O visitante chegou às dez da manhã, vai falar com o funcionário cento e nove, do setor zero oito, no segundo andar. Qual é o código dele? Nessa resolução, você vai usar duas ideias: a posição de cada dígito e o zero à esquerda.
+
+Ideia um: a posição manda. Num código, cada casa tem uma função fixa. Se você trocar a ordem dos pedaços, sai outro código, mesmo usando os mesmos números. Por isso a questão avisa: da esquerda para a direita.
+
+Ideia dois: o zero à esquerda. O setor sempre ocupa duas casas, por isso vai de zero um a vinte. O setor oito vira zero oito. E o funcionário ocupa três casas: o funcionário sete, por exemplo, seria zero zero sete. O zero à esquerda não muda o número. Ele só preenche a casa.
+
+Agora, a resolução. Passo um: o andar. Segundo andar: a primeira casa é dois.
+
+Passo dois: o setor. Setor zero oito: as casas dois e três ficam zero e oito.
+
+Passo três: o funcionário. Funcionário cento e nove: um, zero, nove, nas casas quatro, cinco e seis.
+
+Passo quatro: o turno. Ele chegou às dez da manhã. Atenção: o dez é o horário, e não entra no código. Manhã é o dígito zero.
+
+Juntando tudo: dois, zero, oito, um, zero, nove, zero. Sete dígitos, cada um na sua casa. Alternativa D.
+
+E as outras? Todas usam os números certos, mas no lugar errado. A A inverteu a ordem: começou pelo turno e terminou no andar. A B colocou o zero no andar, e não no setor. A C usou o dez do horário e ainda inverteu a ordem. E a E esqueceu o zero do setor e trocou o turno pelo dez.
+
+Agora, o atalho de prova. Você nem precisa montar o código inteiro. O primeiro dígito é o andar, dois: corta a A, a B e a C. O segundo dígito é o começo do setor, zero: corta a E. Sobrou a D, em dois olhares.
+
+Agora é com você. Um visitante chegou às três da tarde para falar com o funcionário quarenta e dois, do setor quinze, no quarto andar. Qual é o código dele? Deixe sua resposta nos comentários.
+
+Vamos recapitular. Separe o código em pedaços. Complete cada pedaço com zeros à esquerda. E não confunda o horário com o turno.
+
+As ideias dessa questão têm aula completa aqui no Estudativo: algarismos e valor posicional e achar a pergunta e os dados úteis. Se quiser aprender desde o começo, procure essas aulas aqui no canal. E se essa questão te ajudou, inscreva-se no Estudativo para não perder a próxima questão.

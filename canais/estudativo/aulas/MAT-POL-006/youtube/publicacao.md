@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-006 · Ângulo central e ângulo inscrito
 
-**Arquivo:** `final/estudativo_MAT-POL-006_angulo_central_e_inscrito.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-006_angulo_central_e_inscrito.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Corte uma pizza ao meio, escolha qualquer ponto da borda curva e ligue às ponta
 ✅ Questão resolvida: 90°, 65° e o central de 50°
 
 ⏱️ Capítulos
-[TEMPO] A meia pizza e o ângulo de 90°
-[TEMPO] O que você precisa saber
-[TEMPO] O ângulo central e o arco em graus
-[TEMPO] O ângulo inscrito vale a metade
-[TEMPO] Por que a metade
-[TEMPO] Na semicircunferência, o inscrito é reto
-[TEMPO] O erro de dividir no lugar de multiplicar
-[TEMPO] O atalho: lado no diâmetro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os ângulos do triângulo
-[TEMPO] Resumo e próxima aula
+0:00 A meia pizza e o ângulo de 90°
+0:24 O que você precisa saber
+0:43 O ângulo central e o arco em graus
+0:53 O ângulo inscrito vale a metade
+1:20 Por que a metade
+2:12 Na semicircunferência, o inscrito é reto
+2:36 O erro de dividir no lugar de multiplicar
+2:56 O atalho: lado no diâmetro
+3:23 Hora de testar
+3:45 Resolvendo: os ângulos do triângulo
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma dos ângulos do triângulo e ângulo externo: [LINK MAT-ANG-004]

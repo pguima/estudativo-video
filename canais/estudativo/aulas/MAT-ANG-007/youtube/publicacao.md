@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-007 · Congruência de triângulos: LLL, LAL, ALA e LAAo
 
-**Arquivo:** `final/estudativo_MAT-ANG-007_congruencia_de_triangulos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-007_congruencia_de_triangulos.mp4` · 5:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Dois triângulos com ângulos de 50°, 60° e 70° são iguais? Não: um pode se
 ✅ O atalho: 50° e 60° dados, o terceiro é 70°, e você cai em ALA
 
 ⏱️ Capítulos
-[TEMPO] Mesmos ângulos: são iguais?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é congruente
-[TEMPO] LLL: lado, lado, lado
-[TEMPO] LAL: lado, ângulo, lado
-[TEMPO] ALA: ângulo, lado, ângulo
-[TEMPO] LAAo: lado, ângulo e ângulo oposto
-[TEMPO] Descobrir uma medida sem medir
-[TEMPO] O erro do ângulo fora do lugar
-[TEMPO] O atalho: dois ângulos valem por três
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: ALA, QR = 7 cm e R = 100°
-[TEMPO] Resumo e próxima aula
+0:00 Mesmos ângulos: são iguais?
+0:24 O que você precisa saber
+0:37 O que é congruente
+1:06 LLL: lado, lado, lado
+1:30 LAL: lado, ângulo, lado
+1:48 ALA: ângulo, lado, ângulo
+2:02 LAAo: lado, ângulo e ângulo oposto
+2:33 Descobrir uma medida sem medir
+3:14 O erro do ângulo fora do lugar
+3:39 O atalho: dois ângulos valem por três
+4:19 Hora de testar
+4:52 Resolvendo: ALA, QR = 7 cm e R = 100°
+5:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Classificar triângulos por lados e ângulos: [LINK MAT-ANG-005]

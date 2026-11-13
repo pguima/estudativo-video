@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-007 · Praticando: leis, identidades e equações
 
-**Arquivo:** `final/estudativo_MAT-TRA-007_praticando_leis_identidades_e_equacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-007_praticando_leis_identidades_e_equacoes.mp4` · 3:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,19 +29,19 @@ Cinco questões criadas para o curso, uma para cada ferramenta da trilha de trig
 ✅ Equação no ciclo com seno negativo: 4π/3 e 5π/3
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões: pause e resolva
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: o terreno
-[TEMPO] Resposta 1: lei dos cossenos
-[TEMPO] Questão 2: dois ângulos e um lado
-[TEMPO] Resposta 2: lei dos senos
-[TEMPO] Questão 3: identidade
-[TEMPO] Resposta 3: tudo em seno e cosseno
-[TEMPO] Questão 4: seno de 15°
-[TEMPO] Resposta 4: seno da diferença
-[TEMPO] Questão 5: equação no ciclo
-[TEMPO] Resposta 5: seno negativo
-[TEMPO] Resumo e próximo assunto
+0:00 Cinco questões: pause e resolva
+0:12 O que você vai usar
+0:22 Questão 1: o terreno
+0:35 Resposta 1: lei dos cossenos
+0:57 Questão 2: dois ângulos e um lado
+1:11 Resposta 2: lei dos senos
+1:43 Questão 3: identidade
+1:54 Resposta 3: tudo em seno e cosseno
+2:13 Questão 4: seno de 15°
+2:22 Resposta 4: seno da diferença
+2:50 Questão 5: equação no ciclo
+3:01 Resposta 5: seno negativo
+3:30 Resumo e próximo assunto
 
 📚 Antes desta aula
 Lei dos senos: [LINK MAT-TRA-001]

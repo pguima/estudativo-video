@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-001 · Temperatura e escalas termométricas
 
-**Arquivo:** `final/estudativo_FIS-CAL-001_temperatura_escalas_termometricas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-001_temperatura_escalas_termometricas.mp4` · 5:56 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Um painel de rua marca 104 graus e ninguém ferve: é Fahrenheit. Nesta aula, vo
 ✅ O atalho: cada 5 °C valem 9 °F
 
 ⏱️ Capítulos
-[TEMPO] 104 graus e ninguém ferve
-[TEMPO] O que você precisa saber
-[TEMPO] Temperatura não é calor
-[TEMPO] As escalas Celsius, Fahrenheit e Kelvin
-[TEMPO] A fórmula de conversão
-[TEMPO] Convertendo: 104 °F e 25 °C
-[TEMPO] Variação de temperatura
-[TEMPO] O erro da variação
-[TEMPO] O atalho: conte de 5 em 5
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o termômetro da rua
-[TEMPO] Resumo e próxima aula
+0:00 104 graus e ninguém ferve
+0:22 O que você precisa saber
+0:33 Temperatura não é calor
+1:21 As escalas Celsius, Fahrenheit e Kelvin
+1:58 A fórmula de conversão
+2:49 Convertendo: 104 °F e 25 °C
+3:21 Variação de temperatura
+3:54 O erro da variação
+4:18 O atalho: conte de 5 em 5
+4:49 Hora de testar
+5:07 Resolvendo: o termômetro da rua
+5:29 Resumo e próxima aula
 
 📚 Antes desta aula
 Pressão, volume e temperatura: a escala Kelvin: [LINK QUI-CAL-010]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-021 · Praticando: sólidos compostos e razão entre volumes
 
-**Arquivo:** `final/estudativo_MAT-ESP-021_praticando_solidos_compostos_e_razao_entre_volumes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-021_praticando_solidos_compostos_e_razao_entre_volumes.mp4` · 5:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações, criadas para esta aula, para fechar a geometria espacial: um
 ✅ Embalagem com cada medida 10% maior: volume × 1,1³ = 1,331, ou seja, 33,1% a mais
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para fechar
-[TEMPO] As ferramentas que você vai usar
-[TEMPO] Situação 1: o silo
-[TEMPO] Resolvendo o silo
-[TEMPO] Situação 2: a pedra no aquário
-[TEMPO] Resolvendo o aquário
-[TEMPO] Situação 3: as bolas na lata
-[TEMPO] Resolvendo as bolas na lata
-[TEMPO] O atalho: bola em lata justa
-[TEMPO] Situação 4: a embalagem ampliada
-[TEMPO] Resolvendo a embalagem
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para fechar
+0:14 As ferramentas que você vai usar
+0:29 Situação 1: o silo
+0:48 Resolvendo o silo
+1:17 Situação 2: a pedra no aquário
+1:39 Resolvendo o aquário
+1:59 Situação 3: as bolas na lata
+2:17 Resolvendo as bolas na lata
+2:57 O atalho: bola em lata justa
+3:42 Situação 4: a embalagem ampliada
+3:59 Resolvendo a embalagem
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Sólidos compostos: somar e subtrair volumes: [LINK MAT-ESP-017]

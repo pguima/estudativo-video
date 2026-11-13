@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-018 · Árvore de probabilidades
 
-**Arquivo:** `final/estudativo_MAT-CNT-018_arvore_probabilidades.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-018_arvore_probabilidades.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ O pai e a mãe não têm certa característica, mas cada um carrega, escondida, 
 ✅ O atalho: corte os galhos que não chegam ao que a questão pede
 
 ⏱️ Capítulos
-[TEMPO] Os pais não têm: o filho pode ter?
-[TEMPO] O que você precisa saber
-[TEMPO] A árvore da chuva e do atraso
-[TEMPO] A regra: ao longo ×, entre caminhos +
-[TEMPO] Genética: dominante e recessiva
-[TEMPO] O erro de ver um caminho só
-[TEMPO] O atalho: corte os galhos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as peças com defeito
-[TEMPO] Resumo e próxima aula
+0:00 Os pais não têm: o filho pode ter?
+0:26 O que você precisa saber
+0:38 A árvore da chuva e do atraso
+1:39 A regra: ao longo ×, entre caminhos +
+1:55 Genética: dominante e recessiva
+3:04 O erro de ver um caminho só
+3:20 O atalho: corte os galhos
+3:47 Hora de testar
+4:08 Resolvendo: as peças com defeito
+4:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Sorteios sucessivos com e sem reposição: [LINK MAT-CNT-017]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-013 · Semelhança em problemas: sombras e triângulos encaixados
 
-**Arquivo:** `final/estudativo_MAT-ANG-013_sombras_e_triangulos_encaixados.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-013_sombras_e_triangulos_encaixados.mp4` · 4:52 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um poste de 2 metros faz uma sombra de 3 metros. Na mesma hora, um prédio faz s
 ✅ Questão resolvida: a lâmpada do poste a 4 m de altura
 
 ⏱️ Capítulos
-[TEMPO] A altura do prédio pela sombra
-[TEMPO] O que você precisa saber
-[TEMPO] Os triângulos da sombra
-[TEMPO] Triângulos encaixados
-[TEMPO] O erro do pedaço no lugar do lado
-[TEMPO] O atalho: a razão da hora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a lâmpada a 4 m
-[TEMPO] Resumo e próxima aula
+0:00 A altura do prédio pela sombra
+0:21 O que você precisa saber
+0:34 Os triângulos da sombra
+1:15 Triângulos encaixados
+2:13 O erro do pedaço no lugar do lado
+2:34 O atalho: a razão da hora
+3:19 Hora de testar
+3:38 Resolvendo: a lâmpada a 4 m
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Triângulos semelhantes: critérios e razão de semelhança: [LINK MAT-ANG-012]

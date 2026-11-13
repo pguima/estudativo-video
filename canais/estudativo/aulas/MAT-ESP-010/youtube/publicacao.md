@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-010 · Praticando: sólidos, prismas e cilindros
 
-**Arquivo:** `final/estudativo_MAT-ESP-010_praticando_solidos_prismas_e_cilindros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-010_praticando_solidos_prismas_e_cilindros.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,17 +29,17 @@ Quatro situações inéditas com latas, caixas e reservatórios, para você paus
 ✅ As armadilhas: 24 não é o raio, diâmetro não é raio, o atalho deixa as bases de fora e o tempo anda de 60 em 60
 
 ⏱️ Capítulos
-[TEMPO] 4 situações para resolver
-[TEMPO] As 4 ferramentas
-[TEMPO] Situação 1: o molde da lata
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: o molde do prisma
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: as vistas da caixa-d'água
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: o reservatório e a bomba
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Resumo e próxima aula
+0:00 4 situações para resolver
+0:12 As 4 ferramentas
+0:30 Situação 1: o molde da lata
+0:50 Resolvendo a situação 1
+1:26 Situação 2: o molde do prisma
+1:47 Resolvendo a situação 2
+2:36 Situação 3: as vistas da caixa-d'água
+2:55 Resolvendo a situação 3
+3:23 Situação 4: o reservatório e a bomba
+3:39 Resolvendo a situação 4
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Planificações: montar e desmontar sólidos: [LINK MAT-ESP-002]

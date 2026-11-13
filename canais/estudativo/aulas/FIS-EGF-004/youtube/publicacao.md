@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-004 · Pressão: força por área
 
-**Arquivo:** `final/estudativo_FIS-EGF-004_pressao_forca_por_area.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-004_pressao_forca_por_area.mp4` · 4:27 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma faca cega amassa o tomate; uma afiada corta de primeira, com a mesma força.
 ✅ O atalho: conta em N/cm² e × 10.000 no final
 
 ⏱️ Capítulos
-[TEMPO] A faca cega e a faca afiada
-[TEMPO] O que você precisa saber
-[TEMPO] Pressão: força por área
-[TEMPO] A pressão do ar
-[TEMPO] O erro da área em centímetro quadrado
-[TEMPO] O atalho: N/cm² vezes dez mil
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a pressão nos pés
-[TEMPO] Resumo e próxima aula
+0:00 A faca cega e a faca afiada
+0:21 O que você precisa saber
+0:34 Pressão: força por área
+1:52 A pressão do ar
+2:34 O erro da área em centímetro quadrado
+2:57 O atalho: N/cm² vezes dez mil
+3:25 Hora de testar
+3:41 Resolvendo: a pressão nos pés
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Peso e força normal: [LINK FIS-DIN-004]

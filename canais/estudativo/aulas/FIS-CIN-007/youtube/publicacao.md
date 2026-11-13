@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-007 · Aceleração e velocidade no MUV
 
-**Arquivo:** `final/estudativo_FIS-CIN-007_aceleracao_e_velocidade_no_muv.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-007_aceleracao_e_velocidade_no_muv.mp4` · 4:31 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Metro por segundo ao quadrado: nenhum relógio marca segundo ao quadrado, e mesm
 ✅ O atalho: os sinais de v e a
 
 ⏱️ Capítulos
-[TEMPO] O que é segundo ao quadrado?
-[TEMPO] O que você precisa saber
-[TEMPO] Aceleração e a unidade m/s²
-[TEMPO] O MUV e a função v = v₀ + a·t
-[TEMPO] Freada, acelerado e retardado
-[TEMPO] O erro da aceleração negativa
-[TEMPO] O atalho: olhe os sinais
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a moto
-[TEMPO] Resumo e próxima aula
+0:00 O que é segundo ao quadrado?
+0:22 O que você precisa saber
+0:33 Aceleração e a unidade m/s²
+1:22 O MUV e a função v = v₀ + a·t
+2:05 Freada, acelerado e retardado
+2:37 O erro da aceleração negativa
+3:01 O atalho: olhe os sinais
+3:30 Hora de testar
+3:51 Resolvendo: a moto
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Movimento uniforme: a função horária: [LINK FIS-CIN-005]

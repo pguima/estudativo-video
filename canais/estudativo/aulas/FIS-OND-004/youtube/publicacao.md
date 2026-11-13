@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-004 · Interferência e polarização
 
-**Arquivo:** `final/estudativo_FIS-OND-004_interferencia_e_polarizacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-004_interferencia_e_polarizacao.mp4` · 4:33 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Um fone de ouvido apaga o barulho do avião jogando mais som no seu ouvido. Nest
 ✅ O atalho: diferença ÷ meio λ, par reforça e ímpar cancela
 
 ⏱️ Capítulos
-[TEMPO] Som + som = silêncio?
-[TEMPO] O que você precisa saber
-[TEMPO] Interferência: construtiva e destrutiva
-[TEMPO] O fone que cancela ruído
-[TEMPO] Prever pela diferença de caminho
-[TEMPO] Polarização
-[TEMPO] O erro de olhar as distâncias
-[TEMPO] O atalho: par reforça, ímpar cancela
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as duas caixas de som
-[TEMPO] Resumo e próxima aula
+0:00 Som + som = silêncio?
+0:19 O que você precisa saber
+0:32 Interferência: construtiva e destrutiva
+1:06 O fone que cancela ruído
+1:17 Prever pela diferença de caminho
+1:58 Polarização
+2:36 O erro de olhar as distâncias
+2:56 O atalho: par reforça, ímpar cancela
+3:25 Hora de testar
+3:46 Resolvendo: as duas caixas de som
+4:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Reflexão, refração e difração de ondas: [LINK FIS-OND-003]

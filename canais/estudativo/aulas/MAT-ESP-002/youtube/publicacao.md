@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-002 · Planificações: montar e desmontar sólidos
 
-**Arquivo:** `final/estudativo_MAT-ESP-002_planificacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-002_planificacoes.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Desmonte uma caixa e abra no chão: sai uma figura plana, a planificação. Nest
 ✅ O atalho "pula uma" e quando ele não serve
 
 ⏱️ Capítulos
-[TEMPO] Desmontando uma caixa
-[TEMPO] O que você precisa saber
-[TEMPO] Planificação: prisma e pirâmide
-[TEMPO] O molde em cruz do cubo
-[TEMPO] Cilindro, cone e esfera
-[TEMPO] O erro do rótulo estreito
-[TEMPO] O atalho: pula uma
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o molde e a lata
-[TEMPO] Resumo e próxima aula
+0:00 Desmontando uma caixa
+0:22 O que você precisa saber
+0:38 Planificação: prisma e pirâmide
+1:11 O molde em cruz do cubo
+1:40 Cilindro, cone e esfera
+2:33 O erro do rótulo estreito
+2:52 O atalho: pula uma
+3:25 Hora de testar
+3:52 Resolvendo o molde e a lata
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Sólidos, poliedros e relação de Euler: [LINK MAT-ESP-001]

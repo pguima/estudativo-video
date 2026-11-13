@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-009 · Equação geral da circunferência: completar quadrados
 
-**Arquivo:** `final/estudativo_MAT-ANA-009_equacao_geral_completar_quadrados.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-009_equacao_geral_completar_quadrados.mp4` · 5:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ x² + y² − 4x + 2y − 4 = 0 é uma circunferência, mas o centro não aparec
 ✅ O atalho: centro pela metade com o sinal trocado, e r² = 4 + 1 − (−4) = 9
 
 ⏱️ Capítulos
-[TEMPO] Onde está o centro?
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem a equação geral
-[TEMPO] Completar quadrados em três passos
-[TEMPO] O erro de completar só de um lado
-[TEMPO] O atalho: centro e raio direto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: centro (−4, 3), raio 5
-[TEMPO] Resumo e próxima aula
+0:00 Onde está o centro?
+0:21 O que você precisa saber
+0:45 De onde vem a equação geral
+1:13 Completar quadrados em três passos
+2:37 O erro de completar só de um lado
+2:56 O atalho: centro e raio direto
+3:49 Hora de testar
+4:03 Resolvendo: centro (−4, 3), raio 5
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação reduzida da circunferência: [LINK MAT-ANA-008]

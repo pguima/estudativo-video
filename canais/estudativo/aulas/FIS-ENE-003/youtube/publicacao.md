@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-003 · Energia cinética e teorema do trabalho
 
-**Arquivo:** `final/estudativo_FIS-ENE-003_energia_cinetica_e_teorema_do_trabalho.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-003_energia_cinetica_e_teorema_do_trabalho.mp4` · 5:17 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um carro a 80 km/h tem quatro vezes a energia do mesmo carro a 40 km/h. Nesta au
 ✅ O atalho da distância de frenagem
 
 ⏱️ Capítulos
-[TEMPO] O dobro da velocidade, quatro vezes a energia
-[TEMPO] O que você precisa saber
-[TEMPO] Energia cinética
-[TEMPO] O quadrado da velocidade
-[TEMPO] O teorema do trabalho
-[TEMPO] A força do freio
-[TEMPO] O erro de subtrair antes do quadrado
-[TEMPO] O atalho da frenagem
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o carrinho
-[TEMPO] Resumo e próxima aula
+0:00 O dobro da velocidade, quatro vezes a energia
+0:24 O que você precisa saber
+0:41 Energia cinética
+1:23 O quadrado da velocidade
+1:55 O teorema do trabalho
+2:24 A força do freio
+2:54 O erro de subtrair antes do quadrado
+3:29 O atalho da frenagem
+4:04 Hora de testar
+4:23 Resolvendo: o carrinho
+4:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de uma força: [LINK FIS-ENE-001]

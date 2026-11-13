@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-003 · Coeficiente angular e alinhamento de três pontos
 
-**Arquivo:** `final/estudativo_MAT-ANA-003_coeficiente_angular_e_alinhamento.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-003_coeficiente_angular_e_alinhamento.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Três postes num mapa quadriculado, em (1, 1), (3, 5) e (5, 10). No desenho, par
 ✅ O atalho: comparar as inclinações em cruz, sem dividir
 
 ⏱️ Capítulos
-[TEMPO] Três postes na mesma reta?
-[TEMPO] O que você precisa saber
-[TEMPO] O coeficiente angular m
-[TEMPO] De onde vem o nome angular: m = tg θ
-[TEMPO] O teste de alinhamento
-[TEMPO] O erro de dividir ao contrário
-[TEMPO] O atalho: multiplicar em cruz
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: m de A até B e alinhamento
-[TEMPO] Resumo e próxima aula
+0:00 Três postes na mesma reta?
+0:24 O que você precisa saber
+0:41 O coeficiente angular m
+1:10 De onde vem o nome angular: m = tg θ
+2:02 O teste de alinhamento
+2:38 O erro de dividir ao contrário
+3:03 O atalho: multiplicar em cruz
+3:39 Hora de testar
+4:01 Resolvendo: m de A até B e alinhamento
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Coeficientes da função afim e taxa de variação: [LINK MAT-FUN-010]

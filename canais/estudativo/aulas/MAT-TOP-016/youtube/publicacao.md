@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-016 · Troncos de pirâmide e de cone
 
-**Arquivo:** `final/estudativo_MAT-TOP-016_troncos_de_piramide_e_cone.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-016_troncos_de_piramide_e_cone.mp4` · 4:59 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um cone de volume 81 é cortado a um terço da altura, contando da ponta. A pont
 ✅ O atalho: V = h/3 · (B + √(B·b) + b)
 
 ⏱️ Capítulos
-[TEMPO] O cone de 81 e a ponta que tem só 3
-[TEMPO] O que você precisa saber
-[TEMPO] O que é um tronco
-[TEMPO] O método: inteiro menos a ponta
-[TEMPO] Tronco de pirâmide, passo a passo
-[TEMPO] O erro de 1/3 da altura
-[TEMPO] O atalho: a fórmula do tronco
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas partes
-[TEMPO] Resumo e próxima aula
+0:00 O cone de 81 e a ponta que tem só 3
+0:23 O que você precisa saber
+0:41 O que é um tronco
+1:04 O método: inteiro menos a ponta
+1:31 Tronco de pirâmide, passo a passo
+2:15 O erro de 1/3 da altura
+2:45 O atalho: a fórmula do tronco
+3:42 Hora de testar
+4:04 Resolvendo as duas partes
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Razão entre volumes de sólidos semelhantes: [LINK MAT-ESP-020]

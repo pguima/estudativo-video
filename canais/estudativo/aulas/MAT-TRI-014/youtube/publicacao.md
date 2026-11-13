@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-014 · Mexer na onda: y = a + b · cos(cx)
 
-**Arquivo:** `final/estudativo_MAT-TRI-014_mexer_na_onda.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-014_mexer_na_onda.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,21 +31,21 @@ y = 1 + 2 · cos(2x) parece assustador, mas cada número ali tem uma tarefa só.
 ✅ O atalho das três contas, com b ou c negativos
 
 ⏱️ Capítulos
-[TEMPO] Cada número tem uma tarefa só
-[TEMPO] O que você precisa saber
-[TEMPO] A forma geral: y = a + b · cos(cx)
-[TEMPO] O b estica a altura: amplitude
-[TEMPO] O a sobe ou desce a onda
-[TEMPO] O c aperta a onda
-[TEMPO] Período = 2π ÷ c
-[TEMPO] Juntando: y = 1 + 2 cos(2x)
-[TEMPO] O erro: multiplicar o período pelo c
-[TEMPO] Por que o período é dividido
-[TEMPO] O atalho: três contas
-[TEMPO] Por que funciona, e b ou c negativos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo y = 2 + 3 sen(4x)
-[TEMPO] Resumo e próxima aula
+0:00 Cada número tem uma tarefa só
+0:23 O que você precisa saber
+0:37 A forma geral: y = a + b · cos(cx)
+0:50 O b estica a altura: amplitude
+1:07 O a sobe ou desce a onda
+1:29 O c aperta a onda
+1:43 Período = 2π ÷ c
+2:03 Juntando: y = 1 + 2 cos(2x)
+2:18 O erro: multiplicar o período pelo c
+2:27 Por que o período é dividido
+2:39 O atalho: três contas
+2:49 Por que funciona, e b ou c negativos
+3:20 Hora de testar
+3:33 Resolvendo y = 2 + 3 sen(4x)
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráficos de seno, cosseno e tangente: [LINK MAT-TRI-011]

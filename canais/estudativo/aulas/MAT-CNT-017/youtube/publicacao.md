@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-017 · Sorteios sucessivos com e sem reposição
 
-**Arquivo:** `final/estudativo_MAT-CNT-017_com_sem_reposicao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-017_com_sem_reposicao.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Uma urna tem 3 bolas azuis e 2 vermelhas, e você tira duas. A chance de ambas s
 ✅ Quando a cor muda, só o total desce (azul e depois vermelha: 3/5 × 2/4)
 
 ⏱️ Capítulos
-[TEMPO] Duas azuis: devolvendo ou não?
-[TEMPO] O que você precisa saber
-[TEMPO] Com reposição
-[TEMPO] Sem reposição
-[TEMPO] A regra: o que muda é a urna
-[TEMPO] O erro de tirar só do total
-[TEMPO] O atalho: desce 1 em cima e 1 embaixo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as lâmpadas queimadas
-[TEMPO] Resumo e próxima aula
+0:00 Duas azuis: devolvendo ou não?
+0:26 O que você precisa saber
+0:38 Com reposição
+1:06 Sem reposição
+2:01 A regra: o que muda é a urna
+2:22 O erro de tirar só do total
+2:39 O atalho: desce 1 em cima e 1 embaixo
+3:16 Hora de testar
+3:33 Resolvendo: as lâmpadas queimadas
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Eventos independentes: multiplicar as chances: [LINK MAT-CNT-016]

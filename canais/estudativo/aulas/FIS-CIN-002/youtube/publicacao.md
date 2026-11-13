@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-002 · Vetores: somar e subtrair
 
-**Arquivo:** `final/estudativo_FIS-CIN-002_vetores_somar_e_subtrair.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-002_vetores_somar_e_subtrair.mp4` · 4:46 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Um barco a 4 m/s atravessa um rio com a correnteza a 3 m/s. Ele não anda a 7 m/
 ✅ O atalho: os ternos pitagóricos
 
 ⏱️ Capítulos
-[TEMPO] O barco que não anda a 7 m/s
-[TEMPO] O que você precisa saber
-[TEMPO] O vetor resultante
-[TEMPO] Mesmo sentido e sentidos opostos
-[TEMPO] Ângulo reto: Pitágoras
-[TEMPO] Subtrair um vetor
-[TEMPO] O erro de somar os módulos
-[TEMPO] O atalho: ternos pitagóricos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o drone e o vento
-[TEMPO] Resumo e próxima aula
+0:00 O barco que não anda a 7 m/s
+0:24 O que você precisa saber
+0:38 O vetor resultante
+0:56 Mesmo sentido e sentidos opostos
+1:40 Ângulo reto: Pitágoras
+2:18 Subtrair um vetor
+2:47 O erro de somar os módulos
+3:08 O atalho: ternos pitagóricos
+3:40 Hora de testar
+3:56 Resolvendo: o drone e o vento
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Grandezas físicas e Sistema Internacional: [LINK FIS-CIN-001]

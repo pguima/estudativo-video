@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-016 · Praticando: resistores e circuitos
 
-**Arquivo:** `final/estudativo_FIS-ELE-016_praticando_resistores_e_circuitos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-016_praticando_resistores_e_circuitos.mp4` · 4:29 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões inéditas, criadas para esta aula, com tudo o que você viu sobr
 ✅ Aparelhos em paralelo e o disjuntor
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões
-[TEMPO] As ferramentas
-[TEMPO] Questão 1: o fio cortado
-[TEMPO] Resolvendo a questão 1
-[TEMPO] Questão 2: misto com medidores
-[TEMPO] Resolvendo a questão 2
-[TEMPO] Questão 3: o curto
-[TEMPO] Resolvendo a questão 3
-[TEMPO] O atalho: estime
-[TEMPO] Questão 4: a ponte
-[TEMPO] Resolvendo a questão 4
-[TEMPO] Questão 5: o disjuntor
-[TEMPO] Resolvendo a questão 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões
+0:12 As ferramentas
+0:31 Questão 1: o fio cortado
+0:45 Resolvendo a questão 1
+1:01 Questão 2: misto com medidores
+1:22 Resolvendo a questão 2
+1:54 Questão 3: o curto
+2:08 Resolvendo a questão 3
+2:29 O atalho: estime
+2:47 Questão 4: a ponte
+3:08 Resolvendo a questão 4
+3:28 Questão 5: o disjuntor
+3:46 Resolvendo a questão 5
+4:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Ohm: [LINK FIS-ELE-010]

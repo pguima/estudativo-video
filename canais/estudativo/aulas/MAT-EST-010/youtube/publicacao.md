@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-010 · Média geométrica e harmônica
 
-**Arquivo:** `final/estudativo_MAT-EST-010_media_geometrica_e_harmonica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-010_media_geometrica_e_harmonica.mp4` · 5:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,17 +33,17 @@ De 4 e 9, a média que você conhece dá 6,5. Mas existe outra média dos mesmos
 ✅ A conferência: harmônica < geométrica < aritmética
 
 ⏱️ Capítulos
-[TEMPO] 4 e 9: três médias diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] O que toda média faz
-[TEMPO] A média geométrica
-[TEMPO] Onde ela aparece: o crescimento
-[TEMPO] A média harmônica e as velocidades
-[TEMPO] O erro de usar a aritmética para tudo
-[TEMPO] O atalho: o dobro do produto pela soma
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a média geométrica e a ladeira
-[TEMPO] Resumo e próxima aula
+0:00 4 e 9: três médias diferentes
+0:22 O que você precisa saber
+0:36 O que toda média faz
+0:52 A média geométrica
+1:28 Onde ela aparece: o crescimento
+2:01 A média harmônica e as velocidades
+3:12 O erro de usar a aritmética para tudo
+3:24 O atalho: o dobro do produto pela soma
+3:59 Hora de testar
+4:17 Resolvendo a média geométrica e a ladeira
+4:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Média aritmética: [LINK MAT-EST-008]

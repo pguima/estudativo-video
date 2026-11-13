@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-020 · Montar a função para otimizar
 
-**Arquivo:** `final/estudativo_MAT-FUN-020_montar_a_funcao_para_otimizar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-020_montar_a_funcao_para_otimizar.mp4` · 4:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um show cobra R$ 40 o ingresso e vende 300 ingressos. Cada real de desconto vend
 ✅ O atalho: as raízes saem de cada parêntese, e o vértice fica no meio delas
 
 ⏱️ Capítulos
-[TEMPO] Baixar o preço enche o caixa?
-[TEMPO] O que você precisa saber
-[TEMPO] Os 4 passos: da história à função
-[TEMPO] A resposta do show: preço e receita
-[TEMPO] O erro: responder o desconto
-[TEMPO] O atalho: não abra os parênteses
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o canteiro encostado no muro
-[TEMPO] Resumo e próxima aula
+0:00 Baixar o preço enche o caixa?
+0:21 O que você precisa saber
+0:36 Os 4 passos: da história à função
+1:38 A resposta do show: preço e receita
+1:55 O erro: responder o desconto
+2:11 O atalho: não abra os parênteses
+2:56 Hora de testar
+3:18 Resolvendo: o canteiro encostado no muro
+3:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

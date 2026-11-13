@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-010 · Praticando: astronomia e cosmologia
 
-**Arquivo:** `final/estudativo_FIS-MOD-010_praticando_astronomia_cosmologia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-010_praticando_astronomia_cosmologia.mp4` · 4:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Questão de astronomia quase não tem conta: ela cobra a ideia certa no lugar ce
 ✅ Por que a radiação de fundo chega como micro-ondas
 
 ⏱️ Capítulos
-[TEMPO] Astronomia em cinco questões
-[TEMPO] O que você vai usar
-[TEMPO] O método: a palavra-chave
-[TEMPO] As duas pegadinhas
-[TEMPO] Questão 1: o fim das estrelas
-[TEMPO] Questão 2: o Sol vira buraco negro
-[TEMPO] Questão 3: Andrômeda
-[TEMPO] Questão 4: a lei de Hubble
-[TEMPO] Questão 5: a radiação de fundo
-[TEMPO] Resumo e encerramento da Física Moderna
+0:00 Astronomia em cinco questões
+0:14 O que você vai usar
+0:23 O método: a palavra-chave
+0:41 As duas pegadinhas
+0:56 Questão 1: o fim das estrelas
+1:31 Questão 2: o Sol vira buraco negro
+2:15 Questão 3: Andrômeda
+2:46 Questão 4: a lei de Hubble
+3:13 Questão 5: a radiação de fundo
+3:48 Resumo e encerramento da Física Moderna
 
 📚 Antes desta aula
 Vida das estrelas e buracos negros: [LINK FIS-MOD-008]

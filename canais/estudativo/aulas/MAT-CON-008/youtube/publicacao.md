@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-008 · União e interseção de intervalos
 
-**Arquivo:** `final/estudativo_MAT-CON-008_uniao_intersecao_intervalos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-008_uniao_intersecao_intervalos.mp4` · 4:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ O intervalo fechado de 1 a 5, interseção com o intervalo aberto de 3 a 7. Muit
 ✅ Uma questão resolvida: [−2, 4[ ∩ [0, 6] = [0, 4[ e [−2, 4[ ∪ [0, 6] = [−2, 6]
 
 ⏱️ Capítulos
-[TEMPO] O 3 entra na interseção?
-[TEMPO] O que você precisa saber
-[TEMPO] Empilhando as retas
-[TEMPO] Interseção de intervalos
-[TEMPO] União de intervalos
-[TEMPO] O erro de fechar a ponta
-[TEMPO] O atalho: maior começo, menor fim
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 O 3 entra na interseção?
+0:19 O que você precisa saber
+0:36 Empilhando as retas
+0:51 Interseção de intervalos
+1:34 União de intervalos
+1:51 O erro de fechar a ponta
+2:07 O atalho: maior começo, menor fim
+2:53 Hora de testar
+3:11 Resolvendo a questão
+3:45 Resumo e próxima aula
 
 📚 Antes desta aula
 União, interseção, diferença e complementar: [LINK MAT-CON-002]

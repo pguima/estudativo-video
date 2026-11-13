@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-006 · Praticando: binômio, binomial e contagem
 
-**Arquivo:** `final/estudativo_MAT-TOP-006_praticando_binomio_e_contagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-006_praticando_binomio_e_contagem.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,19 +29,19 @@ Cinco situações inéditas para praticar o módulo de binômio, distribuição 
 ✅ Combinação com repetição: casquinhas de 2 bolas com 5 sabores (15)
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações de contagem
-[TEMPO] As ferramentas
-[TEMPO] Situação 1: binômio de Newton
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: duas meninas em quatro filhos
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: os signos
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: nem 2 nem 3
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Situação 5: as casquinhas
-[TEMPO] Resolvendo a situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações de contagem
+0:14 As ferramentas
+0:32 Situação 1: binômio de Newton
+0:43 Resolvendo a situação 1
+1:03 Situação 2: duas meninas em quatro filhos
+1:17 Resolvendo a situação 2
+1:51 Situação 3: os signos
+2:03 Resolvendo a situação 3
+2:25 Situação 4: nem 2 nem 3
+2:37 Resolvendo a situação 4
+3:15 Situação 5: as casquinhas
+3:33 Resolvendo a situação 5
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Números binomiais e triângulo de Pascal: [LINK MAT-TOP-001]

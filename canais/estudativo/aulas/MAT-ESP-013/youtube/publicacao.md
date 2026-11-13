@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-013 · Cone: geratriz, área e volume
 
-**Arquivo:** `final/estudativo_MAT-ESP-013_cone_geratriz_area_e_volume.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-013_cone_geratriz_area_e_volume.mp4` · 6:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um copo em forma de cone e um copo em forma de cilindro, com a mesma boca e a me
 ✅ O atalho: com π = 3, o volume do cone é r² · h
 
 ⏱️ Capítulos
-[TEMPO] Três cones enchem um cilindro
-[TEMPO] O que você precisa saber
-[TEMPO] O que é cone: altura e geratriz
-[TEMPO] A geratriz pelo Pitágoras
-[TEMPO] Volume: um terço do cilindro
-[TEMPO] Área lateral: o cone aberto em leque
-[TEMPO] O erro da altura no lugar da geratriz
-[TEMPO] O atalho: π = 3
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o chapéu de festa
-[TEMPO] Resumo e próxima aula
+0:00 Três cones enchem um cilindro
+0:21 O que você precisa saber
+0:38 O que é cone: altura e geratriz
+1:03 A geratriz pelo Pitágoras
+3:00 Volume: um terço do cilindro
+3:34 Área lateral: o cone aberto em leque
+4:28 O erro da altura no lugar da geratriz
+4:51 O atalho: π = 3
+5:20 Hora de testar
+5:37 Resolvendo o chapéu de festa
+6:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do círculo, da coroa e do setor: [LINK MAT-ARE-008]

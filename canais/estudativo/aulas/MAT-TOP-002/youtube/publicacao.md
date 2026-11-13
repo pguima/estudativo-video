@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-002 · Binômio de Newton
 
-**Arquivo:** `final/estudativo_MAT-TOP-002_binomio_de_newton.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-002_binomio_de_newton.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Abrir (x + 2)⁴ pelo chuveirinho são quatro parênteses multiplicados e muita 
 ✅ O atalho: troque x por 1 para conferir a soma dos coeficientes
 
 ⏱️ Capítulos
-[TEMPO] Abrir (x + 2)⁴ sem multiplicar
-[TEMPO] O que você precisa saber
-[TEMPO] Por que o triângulo de Pascal aparece
-[TEMPO] Expandindo (x + 2)⁴
-[TEMPO] O termo geral
-[TEMPO] O erro de copiar só o número do triângulo
-[TEMPO] O atalho: troque x por 1
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: (x + 3)⁵
-[TEMPO] Resumo e próxima aula
+0:00 Abrir (x + 2)⁴ sem multiplicar
+0:27 O que você precisa saber
+0:43 Por que o triângulo de Pascal aparece
+1:37 Expandindo (x + 2)⁴
+2:17 O termo geral
+2:53 O erro de copiar só o número do triângulo
+3:11 O atalho: troque x por 1
+3:45 Hora de testar
+3:59 Resolvendo: (x + 3)⁵
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma vezes diferença e cubo da soma: [LINK MAT-FAT-015]

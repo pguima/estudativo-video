@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-019 · Gráficos que enganam
 
-**Arquivo:** `final/estudativo_MAT-EST-019_graficos_que_enganam.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-019_graficos_que_enganam.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Num anúncio, a coluna da marca B tem o dobro da altura da coluna da marca A, ma
 ✅ O atalho: eixo no zero, passo igual e figura crescendo num sentido só
 
 ⏱️ Capítulos
-[TEMPO] Parece o dobro, mas é 10%
-[TEMPO] O que você precisa saber
-[TEMPO] 1º truque: o eixo que não começa no zero
-[TEMPO] 2º truque: a escala irregular
-[TEMPO] 3º truque: a figura fora de proporção
-[TEMPO] O erro de medir pelo desenho
-[TEMPO] O atalho: 3 olhares antes de acreditar
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as matrículas e o caixote
-[TEMPO] Resumo e próxima aula
+0:00 Parece o dobro, mas é 10%
+0:21 O que você precisa saber
+0:32 1º truque: o eixo que não começa no zero
+1:21 2º truque: a escala irregular
+1:58 3º truque: a figura fora de proporção
+2:33 O erro de medir pelo desenho
+2:58 O atalho: 3 olhares antes de acreditar
+3:30 Hora de testar
+4:05 Resolvendo as matrículas e o caixote
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráficos de barras e de linhas: [LINK MAT-EST-003]

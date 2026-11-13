@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-020 · Números que enganam
 
-**Arquivo:** `final/estudativo_MAT-EST-020_numeros_que_enganam.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-020_numeros_que_enganam.mp4` · 5:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Manchete: casos de uma doença rara sobem 100% na cidade. O número que faltou: 
 ✅ O atalho: quem foi ouvido? por cento de quanto? o que mais mudou junto?
 
 ⏱️ Capítulos
-[TEMPO] Casos sobem 100%: de 1 para 2
-[TEMPO] O que você precisa saber
-[TEMPO] 1º: a amostra ruim
-[TEMPO] 2º: a porcentagem sobre base pequena
-[TEMPO] 3º: correlação não é causa
-[TEMPO] O erro da amostra grande
-[TEMPO] O atalho: 3 perguntas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os três casos
-[TEMPO] Resumo e próxima aula
+0:00 Casos sobem 100%: de 1 para 2
+0:20 O que você precisa saber
+0:34 1º: a amostra ruim
+1:16 2º: a porcentagem sobre base pequena
+2:01 3º: correlação não é causa
+2:47 O erro da amostra grande
+3:07 O atalho: 3 perguntas
+3:35 Hora de testar
+4:06 Resolvendo os três casos
+5:00 Resumo e próxima aula
 
 📚 Antes desta aula
 População, amostra e tipos de variáveis: [LINK MAT-EST-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-003 · Espectros e níveis de energia
 
-**Arquivo:** `final/estudativo_FIS-MOD-003_espectros_niveis_de_energia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-003_espectros_niveis_de_energia.mp4` · 5:02 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ O hélio foi descoberto no Sol em 1868, quase 30 anos antes de ser achado na Ter
 ✅ O atalho para contar as linhas: n·(n − 1)/2
 
 ⏱️ Capítulos
-[TEMPO] Do que o Sol é feito?
-[TEMPO] O que você precisa saber
-[TEMPO] Os níveis de energia
-[TEMPO] O salto e o fóton
-[TEMPO] Salto e cor
-[TEMPO] Espectro de emissão
-[TEMPO] Espectro de absorção e o hélio
-[TEMPO] O erro do valor do nível
-[TEMPO] O atalho: quantas linhas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o salto do 4 para o 2
-[TEMPO] Resumo e próxima aula
+0:00 Do que o Sol é feito?
+0:24 O que você precisa saber
+0:40 Os níveis de energia
+1:07 O salto e o fóton
+1:40 Salto e cor
+1:53 Espectro de emissão
+2:07 Espectro de absorção e o hélio
+2:48 O erro do valor do nível
+3:12 O atalho: quantas linhas
+3:44 Hora de testar
+4:08 Resolvendo: o salto do 4 para o 2
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Fóton: a energia em pacotes: [LINK FIS-MOD-001]

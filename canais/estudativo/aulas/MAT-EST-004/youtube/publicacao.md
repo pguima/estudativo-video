@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-004 · Gráfico de setores
 
-**Arquivo:** `final/estudativo_MAT-EST-004_grafico_de_setores.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-004_grafico_de_setores.mp4` · 5:13 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Num gráfico de pizza, uma fatia vale 25%. Quantos graus ela tem? Quem responde 
 ✅ O atalho: 10% = 36°, e quantos 36 cabem no ângulo
 
 ⏱️ Capítulos
-[TEMPO] Uma fatia de 25% tem quantos graus?
-[TEMPO] O que você precisa saber
-[TEMPO] O gráfico de setores
-[TEMPO] Da porcentagem para o ângulo
-[TEMPO] A regra de três do ângulo
-[TEMPO] Do ângulo para a porcentagem
-[TEMPO] O erro de usar pessoas como porcentagem
-[TEMPO] O atalho: 10% = 36°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a pesquisa das frutas
-[TEMPO] Resumo e próxima aula
+0:00 Uma fatia de 25% tem quantos graus?
+0:23 O que você precisa saber
+0:38 O gráfico de setores
+1:03 Da porcentagem para o ângulo
+1:28 A regra de três do ângulo
+2:02 Do ângulo para a porcentagem
+2:39 O erro de usar pessoas como porcentagem
+3:11 O atalho: 10% = 36°
+3:50 Hora de testar
+4:11 Resolvendo a pesquisa das frutas
+4:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Ângulos: medir em graus e classificar: [LINK MAT-ANG-001]

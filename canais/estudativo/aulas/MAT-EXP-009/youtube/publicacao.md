@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-009 · Propriedades dos logaritmos
 
-**Arquivo:** `final/estudativo_MAT-EXP-009_propriedades_dos_logaritmos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-009_propriedades_dos_logaritmos.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ O logaritmo de 8 na base 2 dá 3, o de 4 dá 2, e o de 32, que é 8 vezes 4, dá
 ✅ O atalho: log 3.000 = log 3 + 3
 
 ⏱️ Capítulos
-[TEMPO] Os números se multiplicam, os logaritmos se somam
-[TEMPO] O que você precisa saber
-[TEMPO] Por que somou: a propriedade do produto
-[TEMPO] Divisão vira subtração
-[TEMPO] O expoente sai multiplicando
-[TEMPO] Desmontando log 12
-[TEMPO] O erro: logaritmo de uma soma
-[TEMPO] O atalho: os zeros saem somando
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo log 18 e log 3/4
-[TEMPO] Resumo e próxima aula
+0:00 Os números se multiplicam, os logaritmos se somam
+0:27 O que você precisa saber
+0:39 Por que somou: a propriedade do produto
+1:12 Divisão vira subtração
+1:28 O expoente sai multiplicando
+1:55 Desmontando log 12
+2:30 O erro: logaritmo de uma soma
+2:58 O atalho: os zeros saem somando
+3:23 Hora de testar
+3:37 Resolvendo log 18 e log 3/4
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é logaritmo: [LINK MAT-EXP-008]

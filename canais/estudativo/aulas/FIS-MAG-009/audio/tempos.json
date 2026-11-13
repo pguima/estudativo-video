@@ -1,0 +1,4714 @@
+{
+ "total": 299.87,
+ "scenes": [
+  {
+   "id": "s01",
+   "block": "gancho",
+   "start": 0.6,
+   "dur": 10.87,
+   "tokens": [
+    {
+     "disp": "Hidrelétrica,",
+     "bold": false,
+     "t0": 0.0,
+     "t1": 1.14
+    },
+    {
+     "disp": "termelétrica",
+     "bold": false,
+     "t0": 1.44,
+     "t1": 2.22
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 2.22,
+     "t1": 2.5
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 2.5,
+     "t1": 2.84
+    },
+    {
+     "disp": "nuclear",
+     "bold": false,
+     "t0": 2.84,
+     "t1": 3.26
+    },
+    {
+     "disp": "parecem",
+     "bold": false,
+     "t0": 3.26,
+     "t1": 3.88
+    },
+    {
+     "disp": "muito",
+     "bold": false,
+     "t0": 3.88,
+     "t1": 4.24
+    },
+    {
+     "disp": "diferentes.",
+     "bold": false,
+     "t0": 4.24,
+     "t1": 4.64
+    },
+    {
+     "disp": "Mas,",
+     "bold": false,
+     "t0": 5.22,
+     "t1": 5.5
+    },
+    {
+     "disp": "lá",
+     "bold": false,
+     "t0": 5.86,
+     "t1": 6.06
+    },
+    {
+     "disp": "dentro,",
+     "bold": false,
+     "t0": 6.06,
+     "t1": 6.38
+    },
+    {
+     "disp": "as",
+     "bold": false,
+     "t0": 6.66,
+     "t1": 6.84
+    },
+    {
+     "disp": "três",
+     "bold": false,
+     "t0": 6.84,
+     "t1": 7.08
+    },
+    {
+     "disp": "terminam",
+     "bold": false,
+     "t0": 7.08,
+     "t1": 7.54
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 7.54,
+     "t1": 7.7
+    },
+    {
+     "disp": "mesma",
+     "bold": false,
+     "t0": 7.7,
+     "t1": 8.1
+    },
+    {
+     "disp": "máquina:",
+     "bold": false,
+     "t0": 8.1,
+     "t1": 8.54
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 8.88,
+     "t1": 9.04
+    },
+    {
+     "disp": "eixo",
+     "bold": false,
+     "t0": 9.04,
+     "t1": 9.3
+    },
+    {
+     "disp": "girando",
+     "bold": false,
+     "t0": 9.3,
+     "t1": 9.76
+    },
+    {
+     "disp": "num",
+     "bold": false,
+     "t0": 9.76,
+     "t1": 9.96
+    },
+    {
+     "disp": "gerador.",
+     "bold": false,
+     "t0": 9.96,
+     "t1": 10.42
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 1.44,
+    "c": 2.22,
+    "d": 6.66,
+    "e": 8.88
+   }
+  },
+  {
+   "id": "s02",
+   "block": "gancho",
+   "start": 11.47,
+   "dur": 6.96,
+   "tokens": [
+    {
+     "disp": "Até",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.69
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.69,
+     "t1": 0.79
+    },
+    {
+     "disp": "fim",
+     "bold": false,
+     "t0": 0.79,
+     "t1": 1.01
+    },
+    {
+     "disp": "desta",
+     "bold": false,
+     "t0": 1.01,
+     "t1": 1.23
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.53
+    },
+    {
+     "disp": "você",
+     "bold": false,
+     "t0": 1.71,
+     "t1": 1.89
+    },
+    {
+     "disp": "vai",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.01
+    },
+    {
+     "disp": "seguir",
+     "bold": false,
+     "t0": 2.01,
+     "t1": 2.33
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.33,
+     "t1": 2.51
+    },
+    {
+     "disp": "caminho",
+     "bold": false,
+     "t0": 2.51,
+     "t1": 2.71
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 2.71,
+     "t1": 2.95
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 2.95,
+     "t1": 3.31
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 3.31,
+     "t1": 3.51
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 3.51,
+     "t1": 3.77
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.21
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.21,
+     "t1": 4.55
+    },
+    {
+     "disp": "calcular",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 5.09
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.09,
+     "t1": 5.29
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 5.29,
+     "t1": 5.69
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.69,
+     "t1": 5.87
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.01
+    },
+    {
+     "disp": "queda",
+     "bold": false,
+     "t0": 6.01,
+     "t1": 6.21
+    },
+    {
+     "disp": "d'água.",
+     "bold": false,
+     "t0": 6.21,
+     "t1": 6.41
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 4.55
+   }
+  },
+  {
+   "id": "s03",
+   "block": "lembrete",
+   "start": 18.43,
+   "dur": 16.0,
+   "tokens": [
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.59
+    },
+    {
+     "disp": "acompanhar,",
+     "bold": false,
+     "t0": 0.59,
+     "t1": 1.01
+    },
+    {
+     "disp": "lembre",
+     "bold": false,
+     "t0": 1.21,
+     "t1": 1.53
+    },
+    {
+     "disp": "duas",
+     "bold": false,
+     "t0": 1.53,
+     "t1": 1.85
+    },
+    {
+     "disp": "coisas.",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 2.19
+    },
+    {
+     "disp": "Fluxo",
+     "bold": false,
+     "t0": 2.61,
+     "t1": 3.17
+    },
+    {
+     "disp": "mudando",
+     "bold": false,
+     "t0": 3.17,
+     "t1": 3.57
+    },
+    {
+     "disp": "numa",
+     "bold": false,
+     "t0": 3.57,
+     "t1": 3.85
+    },
+    {
+     "disp": "bobina",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.33
+    },
+    {
+     "disp": "cria",
+     "bold": false,
+     "t0": 4.33,
+     "t1": 4.63
+    },
+    {
+     "disp": "corrente,",
+     "bold": false,
+     "t0": 4.63,
+     "t1": 5.15
+    },
+    {
+     "disp": "pela",
+     "bold": false,
+     "t0": 5.15,
+     "t1": 5.51
+    },
+    {
+     "disp": "lei",
+     "bold": false,
+     "t0": 5.51,
+     "t1": 5.73
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 5.87
+    },
+    {
+     "disp": "Faraday.",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.29
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 6.77,
+     "t1": 7.03
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 7.03,
+     "t1": 7.65
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 7.65,
+     "t1": 7.89
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.27
+    },
+    {
+     "disp": "dividida",
+     "bold": false,
+     "t0": 8.27,
+     "t1": 8.83
+    },
+    {
+     "disp": "pelo",
+     "bold": false,
+     "t0": 8.83,
+     "t1": 9.03
+    },
+    {
+     "disp": "tempo,",
+     "bold": false,
+     "t0": 9.03,
+     "t1": 9.39
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.71
+    },
+    {
+     "disp": "watt,",
+     "bold": false,
+     "t0": 9.71,
+     "t1": 9.97
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 9.97,
+     "t1": 10.47
+    },
+    {
+     "disp": "rendimento",
+     "bold": false,
+     "t0": 10.47,
+     "t1": 10.97
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 10.97,
+     "t1": 11.31
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 11.31,
+     "t1": 11.39
+    },
+    {
+     "disp": "parte",
+     "bold": false,
+     "t0": 11.39,
+     "t1": 11.61
+    },
+    {
+     "disp": "útil",
+     "bold": false,
+     "t0": 11.61,
+     "t1": 12.05
+    },
+    {
+     "disp": "dividida",
+     "bold": false,
+     "t0": 12.05,
+     "t1": 12.67
+    },
+    {
+     "disp": "pelo",
+     "bold": false,
+     "t0": 12.67,
+     "t1": 12.93
+    },
+    {
+     "disp": "total.",
+     "bold": false,
+     "t0": 12.93,
+     "t1": 13.23
+    },
+    {
+     "disp": "Se",
+     "bold": false,
+     "t0": 13.71,
+     "t1": 13.91
+    },
+    {
+     "disp": "faltar",
+     "bold": false,
+     "t0": 13.91,
+     "t1": 14.19
+    },
+    {
+     "disp": "alguma,",
+     "bold": false,
+     "t0": 14.19,
+     "t1": 14.51
+    },
+    {
+     "disp": "procure",
+     "bold": false,
+     "t0": 14.89,
+     "t1": 15.11
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 15.11,
+     "t1": 15.25
+    },
+    {
+     "disp": "canal.",
+     "bold": false,
+     "t0": 15.25,
+     "t1": 15.45
+    }
+   ],
+   "cues": {
+    "a": 1.53,
+    "b": 2.61,
+    "c": 7.03
+   }
+  },
+  {
+   "id": "s04",
+   "block": "gerador",
+   "start": 34.43,
+   "dur": 18.06,
+   "tokens": [
+    {
+     "disp": "Comece",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.89
+    },
+    {
+     "disp": "pelo",
+     "bold": false,
+     "t0": 0.89,
+     "t1": 1.13
+    },
+    {
+     "disp": "gerador.",
+     "bold": false,
+     "t0": 1.13,
+     "t1": 1.53
+    },
+    {
+     "disp": "É",
+     "bold": false,
+     "t0": 2.13,
+     "t1": 2.21
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 2.21,
+     "t1": 2.37
+    },
+    {
+     "disp": "ímã",
+     "bold": false,
+     "t0": 2.37,
+     "t1": 2.59
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.73
+    },
+    {
+     "disp": "gira",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 3.13
+    },
+    {
+     "disp": "dentro",
+     "bold": false,
+     "t0": 3.13,
+     "t1": 3.55
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.81
+    },
+    {
+     "disp": "bobinas,",
+     "bold": false,
+     "t0": 3.81,
+     "t1": 4.25
+    },
+    {
+     "disp": "preso",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.75
+    },
+    {
+     "disp": "num",
+     "bold": false,
+     "t0": 4.75,
+     "t1": 4.87
+    },
+    {
+     "disp": "eixo.",
+     "bold": false,
+     "t0": 4.87,
+     "t1": 5.19
+    },
+    {
+     "disp": "Girando,",
+     "bold": false,
+     "t0": 5.53,
+     "t1": 5.99
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.49
+    },
+    {
+     "disp": "ímã",
+     "bold": false,
+     "t0": 6.49,
+     "t1": 6.69
+    },
+    {
+     "disp": "muda",
+     "bold": false,
+     "t0": 6.69,
+     "t1": 7.07
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.17
+    },
+    {
+     "disp": "fluxo",
+     "bold": false,
+     "t0": 7.17,
+     "t1": 7.55
+    },
+    {
+     "disp": "nas",
+     "bold": false,
+     "t0": 7.55,
+     "t1": 7.69
+    },
+    {
+     "disp": "bobinas",
+     "bold": false,
+     "t0": 7.69,
+     "t1": 8.13
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 8.13,
+     "t1": 8.31
+    },
+    {
+     "disp": "tempo",
+     "bold": false,
+     "t0": 8.31,
+     "t1": 8.53
+    },
+    {
+     "disp": "todo,",
+     "bold": false,
+     "t0": 8.53,
+     "t1": 8.81
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.81,
+     "t1": 9.23
+    },
+    {
+     "disp": "aparece",
+     "bold": false,
+     "t0": 9.23,
+     "t1": 9.51
+    },
+    {
+     "disp": "corrente,",
+     "bold": false,
+     "t0": 9.51,
+     "t1": 10.03
+    },
+    {
+     "disp": "pela",
+     "bold": false,
+     "t0": 10.03,
+     "t1": 10.41
+    },
+    {
+     "disp": "lei",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.65
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 10.65,
+     "t1": 10.77
+    },
+    {
+     "disp": "Faraday.",
+     "bold": false,
+     "t0": 10.77,
+     "t1": 11.15
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 11.73,
+     "t1": 11.99
+    },
+    {
+     "disp": "norte",
+     "bold": false,
+     "t0": 11.99,
+     "t1": 12.27
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 12.27,
+     "t1": 12.43
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 12.43,
+     "t1": 12.53
+    },
+    {
+     "disp": "sul",
+     "bold": false,
+     "t0": 12.53,
+     "t1": 12.69
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 12.69,
+     "t1": 12.89
+    },
+    {
+     "disp": "ímã",
+     "bold": false,
+     "t0": 12.89,
+     "t1": 13.17
+    },
+    {
+     "disp": "passam,",
+     "bold": false,
+     "t0": 13.17,
+     "t1": 13.81
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 13.81,
+     "t1": 14.05
+    },
+    {
+     "disp": "depois",
+     "bold": false,
+     "t0": 14.05,
+     "t1": 14.23
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 14.23,
+     "t1": 14.45
+    },
+    {
+     "disp": "outro,",
+     "bold": false,
+     "t0": 14.45,
+     "t1": 14.71
+    },
+    {
+     "disp": "pela",
+     "bold": false,
+     "t0": 14.71,
+     "t1": 14.95
+    },
+    {
+     "disp": "bobina,",
+     "bold": false,
+     "t0": 14.95,
+     "t1": 15.41
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.69,
+     "t1": 15.85
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 15.85,
+     "t1": 15.91
+    },
+    {
+     "disp": "corrente",
+     "bold": false,
+     "t0": 15.91,
+     "t1": 16.19
+    },
+    {
+     "disp": "vai",
+     "bold": false,
+     "t0": 16.19,
+     "t1": 16.53
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 16.53,
+     "t1": 16.73
+    },
+    {
+     "disp": "volta:",
+     "bold": false,
+     "t0": 16.73,
+     "t1": 16.97
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 17.19,
+     "t1": 17.29
+    },
+    {
+     "disp": "alternada.",
+     "bold": false,
+     "t0": 17.29,
+     "t1": 17.85
+    }
+   ],
+   "cues": {
+    "a": 2.13,
+    "b": 5.53,
+    "c": 9.23,
+    "d": 11.73
+   }
+  },
+  {
+   "id": "s05",
+   "block": "gerador",
+   "start": 52.49,
+   "dur": 15.18,
+   "tokens": [
+    {
+     "disp": "É",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.65
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.65,
+     "t1": 0.79
+    },
+    {
+     "disp": "motor",
+     "bold": false,
+     "t0": 0.79,
+     "t1": 1.05
+    },
+    {
+     "disp": "elétrico",
+     "bold": false,
+     "t0": 1.05,
+     "t1": 1.65
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 1.73,
+     "t1": 1.79
+    },
+    {
+     "disp": "contrário.",
+     "bold": false,
+     "t0": 1.79,
+     "t1": 2.25
+    },
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 2.73
+    },
+    {
+     "disp": "motor,",
+     "bold": false,
+     "t0": 2.73,
+     "t1": 3.03
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.39
+    },
+    {
+     "disp": "corrente",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.65
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 3.65,
+     "t1": 3.85
+    },
+    {
+     "disp": "girar.",
+     "bold": false,
+     "t0": 3.85,
+     "t1": 4.15
+    },
+    {
+     "disp": "No",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.59
+    },
+    {
+     "disp": "gerador,",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.99
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.35,
+     "t1": 5.51
+    },
+    {
+     "disp": "giro",
+     "bold": false,
+     "t0": 5.51,
+     "t1": 5.89
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 5.89,
+     "t1": 6.11
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.11,
+     "t1": 6.29
+    },
+    {
+     "disp": "corrente.",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.63
+    },
+    {
+     "disp": "Então,",
+     "bold": false,
+     "t0": 7.21,
+     "t1": 7.53
+    },
+    {
+     "disp": "toda",
+     "bold": false,
+     "t0": 7.75,
+     "t1": 8.01
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 8.01,
+     "t1": 8.45
+    },
+    {
+     "disp": "dessas",
+     "bold": false,
+     "t0": 8.45,
+     "t1": 8.79
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 8.79,
+     "t1": 9.15
+    },
+    {
+     "disp": "precisa",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.45
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.45,
+     "t1": 9.67
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 9.67,
+     "t1": 9.79
+    },
+    {
+     "disp": "coisa:",
+     "bold": false,
+     "t0": 9.79,
+     "t1": 10.09
+    },
+    {
+     "disp": "algo",
+     "bold": false,
+     "t0": 10.45,
+     "t1": 10.79
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 10.79,
+     "t1": 10.97
+    },
+    {
+     "disp": "empurre",
+     "bold": false,
+     "t0": 10.97,
+     "t1": 11.41
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 11.41,
+     "t1": 11.59
+    },
+    {
+     "disp": "turbina,",
+     "bold": false,
+     "t0": 11.59,
+     "t1": 12.31
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 12.69,
+     "t1": 12.85
+    },
+    {
+     "disp": "roda",
+     "bold": false,
+     "t0": 12.85,
+     "t1": 13.23
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 13.23,
+     "t1": 13.39
+    },
+    {
+     "disp": "pás,",
+     "bold": false,
+     "t0": 13.39,
+     "t1": 13.71
+    },
+    {
+     "disp": "ligada",
+     "bold": false,
+     "t0": 13.71,
+     "t1": 14.23
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 14.23,
+     "t1": 14.41
+    },
+    {
+     "disp": "eixo.",
+     "bold": false,
+     "t0": 14.41,
+     "t1": 14.63
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.67,
+    "c": 4.15,
+    "d": 7.21,
+    "e": 10.45
+   }
+  },
+  {
+   "id": "s06",
+   "block": "hidro",
+   "start": 67.67,
+   "dur": 17.34,
+   "tokens": [
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.55
+    },
+    {
+     "disp": "hidrelétrica,",
+     "bold": false,
+     "t0": 0.55,
+     "t1": 1.19
+    },
+    {
+     "disp": "quem",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.57
+    },
+    {
+     "disp": "empurra",
+     "bold": false,
+     "t0": 1.57,
+     "t1": 1.99
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.21
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.21,
+     "t1": 2.29
+    },
+    {
+     "disp": "água.",
+     "bold": false,
+     "t0": 2.29,
+     "t1": 2.51
+    },
+    {
+     "disp": "Parada",
+     "bold": false,
+     "t0": 2.85,
+     "t1": 3.23
+    },
+    {
+     "disp": "lá",
+     "bold": false,
+     "t0": 3.23,
+     "t1": 3.47
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.61
+    },
+    {
+     "disp": "alto",
+     "bold": false,
+     "t0": 3.61,
+     "t1": 3.81
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 3.81,
+     "t1": 3.97
+    },
+    {
+     "disp": "represa,",
+     "bold": false,
+     "t0": 3.97,
+     "t1": 4.41
+    },
+    {
+     "disp": "ela",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 4.71
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 4.91
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 4.91,
+     "t1": 5.31
+    },
+    {
+     "disp": "potencial",
+     "bold": false,
+     "t0": 5.31,
+     "t1": 5.89
+    },
+    {
+     "disp": "gravitacional.",
+     "bold": false,
+     "t0": 5.89,
+     "t1": 6.57
+    },
+    {
+     "disp": "Descendo",
+     "bold": false,
+     "t0": 7.15,
+     "t1": 7.61
+    },
+    {
+     "disp": "pelo",
+     "bold": false,
+     "t0": 7.61,
+     "t1": 7.79
+    },
+    {
+     "disp": "tubo,",
+     "bold": false,
+     "t0": 7.79,
+     "t1": 8.19
+    },
+    {
+     "disp": "ela",
+     "bold": false,
+     "t0": 8.37,
+     "t1": 8.49
+    },
+    {
+     "disp": "ganha",
+     "bold": false,
+     "t0": 8.49,
+     "t1": 8.71
+    },
+    {
+     "disp": "velocidade:",
+     "bold": false,
+     "t0": 8.71,
+     "t1": 9.25
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 9.61,
+     "t1": 10.03
+    },
+    {
+     "disp": "cinética.",
+     "bold": false,
+     "t0": 10.03,
+     "t1": 10.59
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 11.25,
+     "t1": 11.45
+    },
+    {
+     "disp": "água",
+     "bold": false,
+     "t0": 11.45,
+     "t1": 11.61
+    },
+    {
+     "disp": "bate",
+     "bold": false,
+     "t0": 11.61,
+     "t1": 11.91
+    },
+    {
+     "disp": "nas",
+     "bold": false,
+     "t0": 11.91,
+     "t1": 12.09
+    },
+    {
+     "disp": "pás",
+     "bold": false,
+     "t0": 12.09,
+     "t1": 12.33
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 12.33,
+     "t1": 12.65
+    },
+    {
+     "disp": "gira",
+     "bold": false,
+     "t0": 12.65,
+     "t1": 12.95
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 12.95,
+     "t1": 13.05
+    },
+    {
+     "disp": "turbina,",
+     "bold": false,
+     "t0": 13.05,
+     "t1": 13.47
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.79,
+     "t1": 13.95
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 13.95,
+     "t1": 14.01
+    },
+    {
+     "disp": "gerador",
+     "bold": false,
+     "t0": 14.01,
+     "t1": 14.41
+    },
+    {
+     "disp": "transforma",
+     "bold": false,
+     "t0": 14.41,
+     "t1": 15.19
+    },
+    {
+     "disp": "esse",
+     "bold": false,
+     "t0": 15.19,
+     "t1": 15.35
+    },
+    {
+     "disp": "giro",
+     "bold": false,
+     "t0": 15.35,
+     "t1": 15.69
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 15.69,
+     "t1": 15.93
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 15.93,
+     "t1": 16.31
+    },
+    {
+     "disp": "elétrica.",
+     "bold": false,
+     "t0": 16.31,
+     "t1": 16.79
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.85,
+    "c": 7.15,
+    "d": 11.25,
+    "e": 13.95
+   }
+  },
+  {
+   "id": "s07",
+   "block": "termo",
+   "start": 85.01,
+   "dur": 17.6,
+   "tokens": [
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "termelétrica,",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 1.37
+    },
+    {
+     "disp": "quem",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.71
+    },
+    {
+     "disp": "empurra",
+     "bold": false,
+     "t0": 1.71,
+     "t1": 2.11
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.11,
+     "t1": 2.35
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.35,
+     "t1": 2.47
+    },
+    {
+     "disp": "vapor.",
+     "bold": false,
+     "t0": 2.47,
+     "t1": 2.69
+    },
+    {
+     "disp": "Queima-se",
+     "bold": false,
+     "t0": 3.37,
+     "t1": 3.63
+    },
+    {
+     "disp": "carvão,",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.35
+    },
+    {
+     "disp": "gás",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.87
+    },
+    {
+     "disp": "ou",
+     "bold": false,
+     "t0": 4.87,
+     "t1": 5.21
+    },
+    {
+     "disp": "bagaço",
+     "bold": false,
+     "t0": 5.21,
+     "t1": 5.59
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.59,
+     "t1": 5.73
+    },
+    {
+     "disp": "cana:",
+     "bold": false,
+     "t0": 5.73,
+     "t1": 6.05
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 6.55,
+     "t1": 6.67
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 6.67,
+     "t1": 6.87
+    },
+    {
+     "disp": "química",
+     "bold": false,
+     "t0": 6.87,
+     "t1": 7.47
+    },
+    {
+     "disp": "vira",
+     "bold": false,
+     "t0": 7.47,
+     "t1": 7.79
+    },
+    {
+     "disp": "calor.",
+     "bold": false,
+     "t0": 7.79,
+     "t1": 8.11
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 8.73,
+     "t1": 8.77
+    },
+    {
+     "disp": "calor",
+     "bold": false,
+     "t0": 8.77,
+     "t1": 8.99
+    },
+    {
+     "disp": "ferve",
+     "bold": false,
+     "t0": 8.99,
+     "t1": 9.39
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.61
+    },
+    {
+     "disp": "água,",
+     "bold": false,
+     "t0": 9.61,
+     "t1": 9.81
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 9.81,
+     "t1": 10.13
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 10.13,
+     "t1": 10.23
+    },
+    {
+     "disp": "vapor",
+     "bold": false,
+     "t0": 10.23,
+     "t1": 10.41
+    },
+    {
+     "disp": "sai",
+     "bold": false,
+     "t0": 10.41,
+     "t1": 10.69
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 10.69,
+     "t1": 10.85
+    },
+    {
+     "disp": "força",
+     "bold": false,
+     "t0": 10.85,
+     "t1": 11.23
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 11.23,
+     "t1": 11.55
+    },
+    {
+     "disp": "gira",
+     "bold": false,
+     "t0": 11.55,
+     "t1": 11.79
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 11.79,
+     "t1": 11.89
+    },
+    {
+     "disp": "turbina.",
+     "bold": false,
+     "t0": 11.89,
+     "t1": 12.25
+    },
+    {
+     "disp": "Depois,",
+     "bold": false,
+     "t0": 12.85,
+     "t1": 13.17
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 13.49,
+     "t1": 13.49
+    },
+    {
+     "disp": "vapor",
+     "bold": false,
+     "t0": 13.49,
+     "t1": 13.67
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 13.67,
+     "t1": 13.85
+    },
+    {
+     "disp": "resfriado,",
+     "bold": false,
+     "t0": 13.85,
+     "t1": 14.41
+    },
+    {
+     "disp": "vira",
+     "bold": false,
+     "t0": 14.73,
+     "t1": 14.95
+    },
+    {
+     "disp": "água",
+     "bold": false,
+     "t0": 15.05,
+     "t1": 15.23
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.23,
+     "t1": 15.59
+    },
+    {
+     "disp": "volta",
+     "bold": false,
+     "t0": 15.59,
+     "t1": 15.87
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 15.87,
+     "t1": 16.11
+    },
+    {
+     "disp": "ferver",
+     "bold": false,
+     "t0": 16.11,
+     "t1": 16.47
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 16.47,
+     "t1": 16.61
+    },
+    {
+     "disp": "novo.",
+     "bold": false,
+     "t0": 16.61,
+     "t1": 16.83
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.37,
+    "c": 8.73,
+    "d": 10.13,
+    "e": 12.85
+   }
+  },
+  {
+   "id": "s08",
+   "block": "termo",
+   "start": 102.61,
+   "dur": 13.96,
+   "tokens": [
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.59
+    },
+    {
+     "disp": "termelétrica",
+     "bold": false,
+     "t0": 0.59,
+     "t1": 1.15
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 1.15,
+     "t1": 1.37
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.55
+    },
+    {
+     "disp": "máquina",
+     "bold": false,
+     "t0": 1.55,
+     "t1": 1.91
+    },
+    {
+     "disp": "térmica.",
+     "bold": false,
+     "t0": 1.91,
+     "t1": 2.43
+    },
+    {
+     "disp": "Pela",
+     "bold": false,
+     "t0": 2.95,
+     "t1": 3.07
+    },
+    {
+     "disp": "segunda",
+     "bold": false,
+     "t0": 3.07,
+     "t1": 3.31
+    },
+    {
+     "disp": "lei,",
+     "bold": false,
+     "t0": 3.31,
+     "t1": 3.59
+    },
+    {
+     "disp": "nenhuma",
+     "bold": false,
+     "t0": 3.99,
+     "t1": 4.07
+    },
+    {
+     "disp": "máquina",
+     "bold": false,
+     "t0": 4.07,
+     "t1": 4.49
+    },
+    {
+     "disp": "transforma",
+     "bold": false,
+     "t0": 4.49,
+     "t1": 5.13
+    },
+    {
+     "disp": "todo",
+     "bold": false,
+     "t0": 5.13,
+     "t1": 5.43
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 5.43,
+     "t1": 5.57
+    },
+    {
+     "disp": "calor",
+     "bold": false,
+     "t0": 5.57,
+     "t1": 5.79
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 5.79,
+     "t1": 5.97
+    },
+    {
+     "disp": "trabalho:",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.43
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 6.77,
+     "t1": 6.91
+    },
+    {
+     "disp": "boa",
+     "bold": false,
+     "t0": 6.91,
+     "t1": 7.17
+    },
+    {
+     "disp": "parte",
+     "bold": false,
+     "t0": 7.17,
+     "t1": 7.53
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 7.53,
+     "t1": 7.91
+    },
+    {
+     "disp": "sai",
+     "bold": false,
+     "t0": 7.91,
+     "t1": 8.19
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.31
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 8.31,
+     "t1": 8.35
+    },
+    {
+     "disp": "ambiente,",
+     "bold": false,
+     "t0": 8.35,
+     "t1": 8.61
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 9.03
+    },
+    {
+     "disp": "água",
+     "bold": false,
+     "t0": 9.03,
+     "t1": 9.23
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.23,
+     "t1": 9.39
+    },
+    {
+     "disp": "resfriamento.",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.97
+    },
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 10.39,
+     "t1": 10.65
+    },
+    {
+     "disp": "isso,",
+     "bold": false,
+     "t0": 10.65,
+     "t1": 10.91
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 11.03,
+     "t1": 11.11
+    },
+    {
+     "disp": "rendimento",
+     "bold": false,
+     "t0": 11.11,
+     "t1": 11.45
+    },
+    {
+     "disp": "fica",
+     "bold": false,
+     "t0": 11.45,
+     "t1": 11.69
+    },
+    {
+     "disp": "bem",
+     "bold": false,
+     "t0": 11.69,
+     "t1": 11.97
+    },
+    {
+     "disp": "abaixo",
+     "bold": false,
+     "t0": 11.97,
+     "t1": 12.41
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 12.41,
+     "t1": 12.57
+    },
+    {
+     "disp": "cem",
+     "bold": false,
+     "t0": 12.57,
+     "t1": 12.85
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 12.85,
+     "t1": 13.13
+    },
+    {
+     "disp": "cento.",
+     "bold": false,
+     "t0": 13.13,
+     "t1": 13.41
+    }
+   ],
+   "cues": {
+    "a": 1.37,
+    "b": 3.99,
+    "c": 6.77,
+    "d": 10.39
+   }
+  },
+  {
+   "id": "s09",
+   "block": "nuclear",
+   "start": 116.57,
+   "dur": 15.36,
+   "tokens": [
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.61
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 0.61,
+     "t1": 0.67
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 0.67,
+     "t1": 0.97
+    },
+    {
+     "disp": "nuclear?",
+     "bold": false,
+     "t0": 0.97,
+     "t1": 1.31
+    },
+    {
+     "disp": "Ela",
+     "bold": false,
+     "t0": 1.83,
+     "t1": 2.05
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.11
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 2.11,
+     "t1": 2.23
+    },
+    {
+     "disp": "termelétrica.",
+     "bold": false,
+     "t0": 2.23,
+     "t1": 2.89
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.37
+    },
+    {
+     "disp": "reator",
+     "bold": false,
+     "t0": 3.37,
+     "t1": 3.63
+    },
+    {
+     "disp": "faz",
+     "bold": false,
+     "t0": 3.63,
+     "t1": 3.91
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 3.91,
+     "t1": 4.03
+    },
+    {
+     "disp": "papel",
+     "bold": false,
+     "t0": 4.03,
+     "t1": 4.21
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 4.21,
+     "t1": 4.41
+    },
+    {
+     "disp": "fogo:",
+     "bold": false,
+     "t0": 4.41,
+     "t1": 4.75
+    },
+    {
+     "disp": "ele",
+     "bold": false,
+     "t0": 5.01,
+     "t1": 5.11
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 5.11,
+     "t1": 5.27
+    },
+    {
+     "disp": "aquece",
+     "bold": false,
+     "t0": 5.27,
+     "t1": 5.59
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.59,
+     "t1": 5.71
+    },
+    {
+     "disp": "água.",
+     "bold": false,
+     "t0": 5.71,
+     "t1": 5.91
+    },
+    {
+     "disp": "Daí",
+     "bold": false,
+     "t0": 6.41,
+     "t1": 6.67
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 6.67,
+     "t1": 6.71
+    },
+    {
+     "disp": "diante,",
+     "bold": false,
+     "t0": 6.71,
+     "t1": 6.97
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 7.09,
+     "t1": 7.15
+    },
+    {
+     "disp": "igual:",
+     "bold": false,
+     "t0": 7.15,
+     "t1": 7.37
+    },
+    {
+     "disp": "vapor,",
+     "bold": false,
+     "t0": 7.71,
+     "t1": 8.07
+    },
+    {
+     "disp": "turbina",
+     "bold": false,
+     "t0": 8.33,
+     "t1": 8.81
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.81,
+     "t1": 9.09
+    },
+    {
+     "disp": "gerador.",
+     "bold": false,
+     "t0": 9.09,
+     "t1": 9.47
+    },
+    {
+     "disp": "Como",
+     "bold": false,
+     "t0": 9.97,
+     "t1": 10.31
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 10.31,
+     "t1": 10.51
+    },
+    {
+     "disp": "reator",
+     "bold": false,
+     "t0": 10.51,
+     "t1": 10.87
+    },
+    {
+     "disp": "produz",
+     "bold": false,
+     "t0": 10.87,
+     "t1": 11.43
+    },
+    {
+     "disp": "esse",
+     "bold": false,
+     "t0": 11.43,
+     "t1": 11.75
+    },
+    {
+     "disp": "calor",
+     "bold": false,
+     "t0": 11.75,
+     "t1": 12.03
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 12.17,
+     "t1": 12.27
+    },
+    {
+     "disp": "assunto",
+     "bold": false,
+     "t0": 12.27,
+     "t1": 12.53
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 12.53,
+     "t1": 12.75
+    },
+    {
+     "disp": "outra",
+     "bold": false,
+     "t0": 12.75,
+     "t1": 12.97
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 12.97,
+     "t1": 13.27
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 13.69,
+     "t1": 13.77
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 13.77,
+     "t1": 13.85
+    },
+    {
+     "disp": "fissão",
+     "bold": false,
+     "t0": 13.85,
+     "t1": 14.23
+    },
+    {
+     "disp": "nuclear.",
+     "bold": false,
+     "t0": 14.23,
+     "t1": 14.55
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 1.83,
+    "c": 3.29,
+    "d": 5.01,
+    "e": 6.41,
+    "f": 9.97
+   }
+  },
+  {
+   "id": "s10",
+   "block": "queda",
+   "start": 131.93,
+   "dur": 19.96,
+   "tokens": [
+    {
+     "disp": "Agora,",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.87
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.59
+    },
+    {
+     "disp": "conta",
+     "bold": false,
+     "t0": 1.59,
+     "t1": 1.89
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 1.89,
+     "t1": 2.09
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 2.09,
+     "t1": 2.35
+    },
+    {
+     "disp": "cai:",
+     "bold": false,
+     "t0": 2.35,
+     "t1": 2.61
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.25,
+     "t1": 3.37
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 3.37,
+     "t1": 4.01
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.01,
+     "t1": 4.17
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.29
+    },
+    {
+     "disp": "queda",
+     "bold": false,
+     "t0": 4.29,
+     "t1": 4.55
+    },
+    {
+     "disp": "d'água.",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 4.81
+    },
+    {
+     "disp": "Uma",
+     "bold": false,
+     "t0": 6.01,
+     "t1": 6.31
+    },
+    {
+     "disp": "massa",
+     "bold": false,
+     "t0": 6.31,
+     "t1": 6.57
+    },
+    {
+     "disp": "eme",
+     "bold": false,
+     "t0": 6.57,
+     "t1": 7.03
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 7.49,
+     "t1": 7.65
+    },
+    {
+     "disp": "desce",
+     "bold": false,
+     "t0": 7.65,
+     "t1": 7.97
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 8.07,
+     "t1": 8.09
+    },
+    {
+     "disp": "altura",
+     "bold": false,
+     "t0": 8.09,
+     "t1": 8.31
+    },
+    {
+     "disp": "agá",
+     "bold": false,
+     "t0": 8.31,
+     "t1": 8.83
+    },
+    {
+     "disp": "libera",
+     "bold": false,
+     "t0": 9.41,
+     "t1": 9.79
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 9.79,
+     "t1": 9.99
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 9.79,
+     "t1": 10.15
+    },
+    {
+     "disp": "potencial:",
+     "bold": false,
+     "t0": 10.15,
+     "t1": 10.67
+    },
+    {
+     "disp": "eme",
+     "bold": false,
+     "t0": 11.51,
+     "t1": 12.15
+    },
+    {
+     "disp": "gê",
+     "bold": false,
+     "t0": 11.51,
+     "t1": 12.15
+    },
+    {
+     "disp": "agá.",
+     "bold": false,
+     "t0": 11.51,
+     "t1": 12.15
+    },
+    {
+     "disp": "Em",
+     "bold": false,
+     "t0": 13.17,
+     "t1": 13.61
+    },
+    {
+     "disp": "cada",
+     "bold": false,
+     "t0": 13.61,
+     "t1": 13.83
+    },
+    {
+     "disp": "segundo,",
+     "bold": false,
+     "t0": 13.83,
+     "t1": 14.23
+    },
+    {
+     "disp": "desce",
+     "bold": false,
+     "t0": 14.63,
+     "t1": 14.81
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 14.81,
+     "t1": 14.97
+    },
+    {
+     "disp": "massa",
+     "bold": false,
+     "t0": 14.97,
+     "t1": 15.29
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 15.29,
+     "t1": 15.49
+    },
+    {
+     "disp": "água",
+     "bold": false,
+     "t0": 15.49,
+     "t1": 15.73
+    },
+    {
+     "disp": "igual",
+     "bold": false,
+     "t0": 15.73,
+     "t1": 15.97
+    },
+    {
+     "disp": "à",
+     "bold": false,
+     "t0": 15.97,
+     "t1": 16.21
+    },
+    {
+     "disp": "densidade",
+     "bold": false,
+     "t0": 16.21,
+     "t1": 16.79
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 16.79,
+     "t1": 17.21
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 17.21,
+     "t1": 17.47
+    },
+    {
+     "disp": "vazão,",
+     "bold": false,
+     "t0": 17.47,
+     "t1": 17.89
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 18.19,
+     "t1": 18.43
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 18.43,
+     "t1": 18.49
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 18.49,
+     "t1": 18.59
+    },
+    {
+     "disp": "volume",
+     "bold": false,
+     "t0": 18.59,
+     "t1": 18.95
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 18.95,
+     "t1": 19.17
+    },
+    {
+     "disp": "segundo.",
+     "bold": false,
+     "t0": 19.17,
+     "t1": 19.49
+    }
+   ],
+   "cues": {
+    "a": 3.25,
+    "b": 6.01,
+    "c": 13.17
+   }
+  },
+  {
+   "id": "s11",
+   "block": "queda",
+   "start": 151.89,
+   "dur": 23.5,
+   "tokens": [
+    {
+     "disp": "Junte",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.81
+    },
+    {
+     "disp": "tudo:",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 1.07
+    },
+    {
+     "disp": "pê",
+     "bold": false,
+     "t0": 1.85,
+     "t1": 1.99
+    },
+    {
+     "disp": "igual",
+     "bold": false,
+     "t0": 2.49,
+     "t1": 2.55
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 2.55,
+     "t1": 2.83
+    },
+    {
+     "disp": "dê,",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 2.97
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 2.97,
+     "t1": 3.51
+    },
+    {
+     "disp": "zê,",
+     "bold": false,
+     "t0": 3.51,
+     "t1": 3.93
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 3.93,
+     "t1": 4.59
+    },
+    {
+     "disp": "gê,",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 5.05
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.05,
+     "t1": 5.63
+    },
+    {
+     "disp": "agá.",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 5.99
+    },
+    {
+     "disp": "Dê",
+     "bold": false,
+     "t0": 6.95,
+     "t1": 7.29
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 7.29,
+     "t1": 7.61
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 7.61,
+     "t1": 7.71
+    },
+    {
+     "disp": "densidade",
+     "bold": false,
+     "t0": 7.71,
+     "t1": 8.09
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 8.09,
+     "t1": 8.29
+    },
+    {
+     "disp": "água,",
+     "bold": false,
+     "t0": 8.29,
+     "t1": 8.53
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 8.91
+    },
+    {
+     "disp": "quilogramas",
+     "bold": false,
+     "t0": 8.91,
+     "t1": 9.09
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 9.25,
+     "t1": 9.77
+    },
+    {
+     "disp": "metro",
+     "bold": false,
+     "t0": 9.77,
+     "t1": 9.97
+    },
+    {
+     "disp": "cúbico.",
+     "bold": false,
+     "t0": 9.97,
+     "t1": 10.39
+    },
+    {
+     "disp": "Zê",
+     "bold": false,
+     "t0": 10.85,
+     "t1": 11.19
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 11.19,
+     "t1": 11.59
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 11.59,
+     "t1": 11.69
+    },
+    {
+     "disp": "vazão,",
+     "bold": false,
+     "t0": 11.69,
+     "t1": 12.07
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 12.37,
+     "t1": 12.57
+    },
+    {
+     "disp": "metro",
+     "bold": false,
+     "t0": 12.57,
+     "t1": 12.85
+    },
+    {
+     "disp": "cúbico",
+     "bold": false,
+     "t0": 12.85,
+     "t1": 13.29
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 13.29,
+     "t1": 13.53
+    },
+    {
+     "disp": "segundo.",
+     "bold": false,
+     "t0": 13.53,
+     "t1": 13.87
+    },
+    {
+     "disp": "Gê",
+     "bold": false,
+     "t0": 14.51,
+     "t1": 14.77
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 14.77,
+     "t1": 15.15
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 15.15,
+     "t1": 15.23
+    },
+    {
+     "disp": "gravidade,",
+     "bold": false,
+     "t0": 15.23,
+     "t1": 15.69
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 16.09,
+     "t1": 16.29
+    },
+    {
+     "disp": "metros",
+     "bold": false,
+     "t0": 16.29,
+     "t1": 16.49
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 16.49,
+     "t1": 16.81
+    },
+    {
+     "disp": "segundo",
+     "bold": false,
+     "t0": 16.81,
+     "t1": 17.09
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 17.09,
+     "t1": 17.23
+    },
+    {
+     "disp": "quadrado.",
+     "bold": false,
+     "t0": 17.23,
+     "t1": 17.63
+    },
+    {
+     "disp": "E",
+     "bold": false,
+     "t0": 17.63,
+     "t1": 18.03
+    },
+    {
+     "disp": "agá",
+     "bold": false,
+     "t0": 17.63,
+     "t1": 18.03
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 18.03,
+     "t1": 18.91
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 18.91,
+     "t1": 18.99
+    },
+    {
+     "disp": "altura",
+     "bold": false,
+     "t0": 18.99,
+     "t1": 19.19
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 19.19,
+     "t1": 19.43
+    },
+    {
+     "disp": "queda,",
+     "bold": false,
+     "t0": 19.43,
+     "t1": 19.65
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 20.19,
+     "t1": 20.31
+    },
+    {
+     "disp": "metro.",
+     "bold": false,
+     "t0": 20.31,
+     "t1": 20.57
+    },
+    {
+     "disp": "A",
+     "bold": false,
+     "t0": 21.29,
+     "t1": 21.57
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 21.57,
+     "t1": 21.99
+    },
+    {
+     "disp": "sai",
+     "bold": false,
+     "t0": 21.99,
+     "t1": 22.25
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 22.25,
+     "t1": 22.41
+    },
+    {
+     "disp": "watt.",
+     "bold": false,
+     "t0": 22.41,
+     "t1": 22.81
+    }
+   ],
+   "cues": {
+    "a": 1.85,
+    "b": 6.95,
+    "c": 10.85,
+    "d": 14.51,
+    "e": 17.63,
+    "f": 21.29
+   }
+  },
+  {
+   "id": "s12",
+   "block": "queda",
+   "start": 175.39,
+   "dur": 19.24,
+   "tokens": [
+    {
+     "disp": "Um",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.73
+    },
+    {
+     "disp": "exemplo.",
+     "bold": false,
+     "t0": 0.73,
+     "t1": 0.89
+    },
+    {
+     "disp": "Vazão",
+     "bold": false,
+     "t0": 1.79,
+     "t1": 2.21
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 2.21,
+     "t1": 2.33
+    },
+    {
+     "disp": "cem",
+     "bold": false,
+     "t0": 2.33,
+     "t1": 2.59
+    },
+    {
+     "disp": "metros",
+     "bold": false,
+     "t0": 2.59,
+     "t1": 2.81
+    },
+    {
+     "disp": "cúbicos",
+     "bold": false,
+     "t0": 2.81,
+     "t1": 3.33
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.55
+    },
+    {
+     "disp": "segundo,",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.87
+    },
+    {
+     "disp": "queda",
+     "bold": false,
+     "t0": 4.19,
+     "t1": 4.53
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.53,
+     "t1": 4.71
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 5.11
+    },
+    {
+     "disp": "metros.",
+     "bold": false,
+     "t0": 5.11,
+     "t1": 5.37
+    },
+    {
+     "disp": "Mil",
+     "bold": false,
+     "t0": 6.35,
+     "t1": 6.67
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 7.07,
+     "t1": 7.21
+    },
+    {
+     "disp": "cem",
+     "bold": false,
+     "t0": 7.21,
+     "t1": 7.61
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 7.89,
+     "t1": 8.19
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.61
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 8.89,
+     "t1": 9.15
+    },
+    {
+     "disp": "cinquenta:",
+     "bold": false,
+     "t0": 9.15,
+     "t1": 9.53
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 10.19,
+     "t1": 10.81
+    },
+    {
+     "disp": "milhões",
+     "bold": false,
+     "t0": 10.81,
+     "t1": 11.19
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 11.19,
+     "t1": 11.37
+    },
+    {
+     "disp": "watts,",
+     "bold": false,
+     "t0": 11.37,
+     "t1": 11.61
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 12.13,
+     "t1": 12.59
+    },
+    {
+     "disp": "megawatts.",
+     "bold": false,
+     "t0": 12.59,
+     "t1": 13.39
+    },
+    {
+     "disp": "Com",
+     "bold": false,
+     "t0": 13.95,
+     "t1": 14.17
+    },
+    {
+     "disp": "rendimento",
+     "bold": false,
+     "t0": 14.27,
+     "t1": 14.53
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 14.53,
+     "t1": 14.71
+    },
+    {
+     "disp": "noventa",
+     "bold": false,
+     "t0": 14.71,
+     "t1": 14.97
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 14.97,
+     "t1": 15.23
+    },
+    {
+     "disp": "cento,",
+     "bold": false,
+     "t0": 15.23,
+     "t1": 15.49
+    },
+    {
+     "disp": "saem",
+     "bold": false,
+     "t0": 15.49,
+     "t1": 15.99
+    },
+    {
+     "disp": "quarenta",
+     "bold": false,
+     "t0": 15.99,
+     "t1": 16.197
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 16.197,
+     "t1": 16.403
+    },
+    {
+     "disp": "cinco",
+     "bold": false,
+     "t0": 16.403,
+     "t1": 16.61
+    },
+    {
+     "disp": "megawatts",
+     "bold": false,
+     "t0": 16.61,
+     "t1": 17.55
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 17.55,
+     "t1": 17.65
+    },
+    {
+     "disp": "energia",
+     "bold": false,
+     "t0": 17.65,
+     "t1": 17.85
+    },
+    {
+     "disp": "elétrica.",
+     "bold": false,
+     "t0": 17.85,
+     "t1": 18.31
+    }
+   ],
+   "cues": {
+    "a": 1.79,
+    "b": 6.35,
+    "c": 10.19,
+    "d": 13.95,
+    "e": 15.49
+   }
+  },
+  {
+   "id": "s13",
+   "block": "erro",
+   "start": 194.63,
+   "dur": 20.54,
+   "tokens": [
+    {
+     "disp": "Cuidado",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.99
+    },
+    {
+     "disp": "com",
+     "bold": false,
+     "t0": 0.99,
+     "t1": 1.23
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.23,
+     "t1": 1.37
+    },
+    {
+     "disp": "erro",
+     "bold": false,
+     "t0": 1.37,
+     "t1": 1.47
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 1.47,
+     "t1": 1.81
+    },
+    {
+     "disp": "comum:",
+     "bold": false,
+     "t0": 1.81,
+     "t1": 2.09
+    },
+    {
+     "disp": "achar",
+     "bold": false,
+     "t0": 2.65,
+     "t1": 3.17
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 3.17,
+     "t1": 3.29
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.33
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 3.33,
+     "t1": 3.59
+    },
+    {
+     "disp": "nuclear",
+     "bold": false,
+     "t0": 3.59,
+     "t1": 3.97
+    },
+    {
+     "disp": "tira",
+     "bold": false,
+     "t0": 3.97,
+     "t1": 4.43
+    },
+    {
+     "disp": "eletricidade",
+     "bold": false,
+     "t0": 4.55,
+     "t1": 5.13
+    },
+    {
+     "disp": "direto",
+     "bold": false,
+     "t0": 5.13,
+     "t1": 5.69
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 5.69,
+     "t1": 5.85
+    },
+    {
+     "disp": "átomo.",
+     "bold": false,
+     "t0": 5.85,
+     "t1": 6.15
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 6.65,
+     "t1": 7.01
+    },
+    {
+     "disp": "núcleo",
+     "bold": false,
+     "t0": 7.01,
+     "t1": 7.43
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 7.43,
+     "t1": 7.53
+    },
+    {
+     "disp": "átomo",
+     "bold": false,
+     "t0": 7.53,
+     "t1": 7.87
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 7.87,
+     "t1": 8.09
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 8.09,
+     "t1": 8.25
+    },
+    {
+     "disp": "calor.",
+     "bold": false,
+     "t0": 8.25,
+     "t1": 8.63
+    },
+    {
+     "disp": "Quem",
+     "bold": false,
+     "t0": 9.35,
+     "t1": 9.47
+    },
+    {
+     "disp": "gera",
+     "bold": false,
+     "t0": 9.47,
+     "t1": 9.87
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 9.87,
+     "t1": 10.01
+    },
+    {
+     "disp": "eletricidade",
+     "bold": false,
+     "t0": 10.01,
+     "t1": 10.57
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 10.57,
+     "t1": 10.75
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 10.75,
+     "t1": 10.85
+    },
+    {
+     "disp": "mesmo",
+     "bold": false,
+     "t0": 10.85,
+     "t1": 11.11
+    },
+    {
+     "disp": "conjunto",
+     "bold": false,
+     "t0": 11.11,
+     "t1": 11.57
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 11.57,
+     "t1": 11.77
+    },
+    {
+     "disp": "sempre:",
+     "bold": false,
+     "t0": 11.77,
+     "t1": 12.01
+    },
+    {
+     "disp": "vapor,",
+     "bold": false,
+     "t0": 12.51,
+     "t1": 12.85
+    },
+    {
+     "disp": "turbina",
+     "bold": false,
+     "t0": 13.15,
+     "t1": 13.69
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 13.69,
+     "t1": 14.11
+    },
+    {
+     "disp": "gerador.",
+     "bold": false,
+     "t0": 14.11,
+     "t1": 14.43
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 15.41,
+     "t1": 15.65
+    },
+    {
+     "disp": "prova,",
+     "bold": false,
+     "t0": 15.65,
+     "t1": 15.89
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 16.47,
+     "t1": 16.51
+    },
+    {
+     "disp": "cadeia",
+     "bold": false,
+     "t0": 16.51,
+     "t1": 16.89
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 16.89,
+     "t1": 16.99
+    },
+    {
+     "disp": "nuclear",
+     "bold": false,
+     "t0": 16.99,
+     "t1": 17.31
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 17.31,
+     "t1": 17.59
+    },
+    {
+     "disp": "quase",
+     "bold": false,
+     "t0": 17.59,
+     "t1": 18.07
+    },
+    {
+     "disp": "igual",
+     "bold": false,
+     "t0": 18.07,
+     "t1": 18.39
+    },
+    {
+     "disp": "à",
+     "bold": false,
+     "t0": 18.39,
+     "t1": 18.61
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 18.61,
+     "t1": 18.67
+    },
+    {
+     "disp": "termelétrica",
+     "bold": false,
+     "t0": 18.67,
+     "t1": 19.37
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 19.37,
+     "t1": 19.51
+    },
+    {
+     "disp": "carvão.",
+     "bold": false,
+     "t0": 19.51,
+     "t1": 19.85
+    }
+   ],
+   "cues": {
+    "a": 2.65,
+    "b": 6.65,
+    "c": 9.35,
+    "d": 12.51,
+    "e": 15.41
+   }
+  },
+  {
+   "id": "s14",
+   "block": "atalho",
+   "start": 215.17,
+   "dur": 21.68,
+   "tokens": [
+    {
+     "disp": "Agora,",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.43,
+     "t1": 1.51
+    },
+    {
+     "disp": "atalho",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.99
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.11
+    },
+    {
+     "disp": "prova.",
+     "bold": false,
+     "t0": 2.11,
+     "t1": 2.41
+    },
+    {
+     "disp": "Para",
+     "bold": false,
+     "t0": 3.07,
+     "t1": 3.39
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.39,
+     "t1": 3.47
+    },
+    {
+     "disp": "água,",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.69
+    },
+    {
+     "disp": "densidade",
+     "bold": false,
+     "t0": 4.07,
+     "t1": 4.47
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 4.47,
+     "t1": 4.69
+    },
+    {
+     "disp": "gravidade",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 5.29
+    },
+    {
+     "disp": "dá",
+     "bold": false,
+     "t0": 5.29,
+     "t1": 5.53
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 5.53,
+     "t1": 5.71
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 5.97
+    },
+    {
+     "disp": "dez:",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.31
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 6.71,
+     "t1": 7.11
+    },
+    {
+     "disp": "mil.",
+     "bold": false,
+     "t0": 7.11,
+     "t1": 7.35
+    },
+    {
+     "disp": "Então,",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.23
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.61,
+     "t1": 8.75
+    },
+    {
+     "disp": "potência,",
+     "bold": false,
+     "t0": 8.75,
+     "t1": 9.23
+    },
+    {
+     "disp": "em",
+     "bold": false,
+     "t0": 9.23,
+     "t1": 9.43
+    },
+    {
+     "disp": "watt,",
+     "bold": false,
+     "t0": 9.43,
+     "t1": 9.69
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 9.69,
+     "t1": 10.13
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 10.13,
+     "t1": 10.43
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 10.43,
+     "t1": 10.87
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 10.87,
+     "t1": 11.13
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 11.13,
+     "t1": 11.39
+    },
+    {
+     "disp": "vazão",
+     "bold": false,
+     "t0": 11.39,
+     "t1": 11.71
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 11.97,
+     "t1": 12.31
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 12.31,
+     "t1": 12.51
+    },
+    {
+     "disp": "altura.",
+     "bold": false,
+     "t0": 12.51,
+     "t1": 12.71
+    },
+    {
+     "disp": "Cem",
+     "bold": false,
+     "t0": 13.77,
+     "t1": 13.97
+    },
+    {
+     "disp": "metros",
+     "bold": false,
+     "t0": 13.97,
+     "t1": 14.15
+    },
+    {
+     "disp": "cúbicos",
+     "bold": false,
+     "t0": 14.15,
+     "t1": 14.67
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 14.67,
+     "t1": 14.85
+    },
+    {
+     "disp": "segundo",
+     "bold": false,
+     "t0": 14.85,
+     "t1": 15.23
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.23,
+     "t1": 15.57
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 15.57,
+     "t1": 15.87
+    },
+    {
+     "disp": "metros:",
+     "bold": false,
+     "t0": 15.87,
+     "t1": 16.11
+    },
+    {
+     "disp": "dez",
+     "bold": false,
+     "t0": 16.93,
+     "t1": 17.21
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 17.21,
+     "t1": 17.63
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 17.63,
+     "t1": 17.89
+    },
+    {
+     "disp": "cinco",
+     "bold": false,
+     "t0": 17.89,
+     "t1": 18.25
+    },
+    {
+     "disp": "mil,",
+     "bold": false,
+     "t0": 18.25,
+     "t1": 18.71
+    },
+    {
+     "disp": "cinquenta",
+     "bold": false,
+     "t0": 18.93,
+     "t1": 19.29
+    },
+    {
+     "disp": "milhões",
+     "bold": false,
+     "t0": 19.29,
+     "t1": 19.69
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 19.69,
+     "t1": 19.89
+    },
+    {
+     "disp": "watts,",
+     "bold": false,
+     "t0": 19.89,
+     "t1": 20.11
+    },
+    {
+     "disp": "na",
+     "bold": false,
+     "t0": 20.59,
+     "t1": 20.77
+    },
+    {
+     "disp": "hora.",
+     "bold": false,
+     "t0": 20.77,
+     "t1": 21.01
+    }
+   ],
+   "cues": {
+    "a": 4.07,
+    "b": 6.71,
+    "c": 8.61,
+    "d": 13.77,
+    "e": 16.93
+   }
+  },
+  {
+   "id": "s15",
+   "block": "atalho",
+   "start": 236.85,
+   "dur": 8.84,
+   "tokens": [
+    {
+     "disp": "Funciona",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.93
+    },
+    {
+     "disp": "porque",
+     "bold": false,
+     "t0": 0.93,
+     "t1": 1.17
+    },
+    {
+     "disp": "dê",
+     "bold": false,
+     "t0": 1.17,
+     "t1": 1.51
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 1.51,
+     "t1": 1.71
+    },
+    {
+     "disp": "gê",
+     "bold": false,
+     "t0": 1.71,
+     "t1": 2.05
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.37
+    },
+    {
+     "disp": "sempre",
+     "bold": false,
+     "t0": 2.37,
+     "t1": 2.67
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 2.79
+    },
+    {
+     "disp": "mesmo",
+     "bold": false,
+     "t0": 2.79,
+     "t1": 2.93
+    },
+    {
+     "disp": "número",
+     "bold": false,
+     "t0": 2.93,
+     "t1": 3.27
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 3.27,
+     "t1": 3.47
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.47,
+     "t1": 3.53
+    },
+    {
+     "disp": "água.",
+     "bold": false,
+     "t0": 3.53,
+     "t1": 3.71
+    },
+    {
+     "disp": "Não",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.49
+    },
+    {
+     "disp": "serve",
+     "bold": false,
+     "t0": 4.49,
+     "t1": 4.73
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 4.73,
+     "t1": 4.93
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.93,
+     "t1": 4.99
+    },
+    {
+     "disp": "questão",
+     "bold": false,
+     "t0": 4.99,
+     "t1": 5.17
+    },
+    {
+     "disp": "usar",
+     "bold": false,
+     "t0": 5.17,
+     "t1": 5.37
+    },
+    {
+     "disp": "gravidade",
+     "bold": false,
+     "t0": 5.55,
+     "t1": 5.87
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 5.87,
+     "t1": 6.07
+    },
+    {
+     "disp": "nove",
+     "bold": false,
+     "t0": 6.07,
+     "t1": 6.27
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 6.27,
+     "t1": 6.47
+    },
+    {
+     "disp": "oito,",
+     "bold": false,
+     "t0": 6.27,
+     "t1": 6.91
+    },
+    {
+     "disp": "ou",
+     "bold": false,
+     "t0": 6.91,
+     "t1": 7.51
+    },
+    {
+     "disp": "outro",
+     "bold": false,
+     "t0": 7.51,
+     "t1": 7.79
+    },
+    {
+     "disp": "líquido.",
+     "bold": false,
+     "t0": 7.79,
+     "t1": 8.19
+    }
+   ],
+   "cues": {
+    "a": 1.17,
+    "b": 4.27,
+    "c": 7.51
+   }
+  },
+  {
+   "id": "s16",
+   "block": "questao",
+   "start": 245.69,
+   "dur": 12.08,
+   "tokens": [
+    {
+     "disp": "Hora",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.95
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 0.95,
+     "t1": 1.09
+    },
+    {
+     "disp": "testar.",
+     "bold": false,
+     "t0": 1.09,
+     "t1": 1.45
+    },
+    {
+     "disp": "Uma",
+     "bold": false,
+     "t0": 2.27,
+     "t1": 2.67
+    },
+    {
+     "disp": "pequena",
+     "bold": false,
+     "t0": 2.67,
+     "t1": 3.05
+    },
+    {
+     "disp": "hidrelétrica",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.79
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 3.79,
+     "t1": 3.97
+    },
+    {
+     "disp": "vazão",
+     "bold": false,
+     "t0": 3.97,
+     "t1": 4.27
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.27,
+     "t1": 4.41
+    },
+    {
+     "disp": "vinte",
+     "bold": false,
+     "t0": 4.41,
+     "t1": 4.71
+    },
+    {
+     "disp": "metros",
+     "bold": false,
+     "t0": 4.71,
+     "t1": 4.91
+    },
+    {
+     "disp": "cúbicos",
+     "bold": false,
+     "t0": 4.91,
+     "t1": 5.43
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 5.43,
+     "t1": 5.63
+    },
+    {
+     "disp": "segundo",
+     "bold": false,
+     "t0": 5.63,
+     "t1": 6.01
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 6.01,
+     "t1": 6.39
+    },
+    {
+     "disp": "queda",
+     "bold": false,
+     "t0": 6.39,
+     "t1": 6.57
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.57,
+     "t1": 6.81
+    },
+    {
+     "disp": "trinta",
+     "bold": false,
+     "t0": 6.81,
+     "t1": 7.09
+    },
+    {
+     "disp": "metros.",
+     "bold": false,
+     "t0": 7.09,
+     "t1": 7.27
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 8.01,
+     "t1": 8.27
+    },
+    {
+     "disp": "rendimento",
+     "bold": false,
+     "t0": 8.27,
+     "t1": 8.63
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 8.63,
+     "t1": 8.79
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 8.79,
+     "t1": 8.83
+    },
+    {
+     "disp": "noventa",
+     "bold": false,
+     "t0": 8.83,
+     "t1": 9.157
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 9.157,
+     "t1": 9.483
+    },
+    {
+     "disp": "cento.",
+     "bold": false,
+     "t0": 9.483,
+     "t1": 9.81
+    },
+    {
+     "disp": "Qual",
+     "bold": false,
+     "t0": 9.81,
+     "t1": 10.51
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 10.51,
+     "t1": 10.65
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 10.65,
+     "t1": 10.71
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 10.71,
+     "t1": 11.05
+    },
+    {
+     "disp": "elétrica?",
+     "bold": false,
+     "t0": 11.05,
+     "t1": 11.55
+    }
+   ],
+   "cues": {
+    "a": 2.27,
+    "b": 8.01,
+    "c": 9.81
+   }
+  },
+  {
+   "id": "s17",
+   "block": "questao",
+   "start": 257.77,
+   "dur": 4.22,
+   "tokens": [
+    {
+     "disp": "Pause",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.71
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 0.71,
+     "t1": 0.89
+    },
+    {
+     "disp": "vídeo",
+     "bold": false,
+     "t0": 0.89,
+     "t1": 1.13
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 1.13,
+     "t1": 1.39
+    },
+    {
+     "disp": "tente.",
+     "bold": false,
+     "t0": 1.39,
+     "t1": 1.57
+    }
+   ],
+   "cues": {
+    "a": 0.35
+   }
+  },
+  {
+   "id": "s18",
+   "block": "resposta",
+   "start": 261.99,
+   "dur": 13.14,
+   "tokens": [
+    {
+     "disp": "Vamos",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.51
+    },
+    {
+     "disp": "lá.",
+     "bold": false,
+     "t0": 0.51,
+     "t1": 0.67
+    },
+    {
+     "disp": "Vinte",
+     "bold": false,
+     "t0": 1.59,
+     "t1": 1.77
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 1.77,
+     "t1": 1.93
+    },
+    {
+     "disp": "trinta,",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.31
+    },
+    {
+     "disp": "seiscentos.",
+     "bold": false,
+     "t0": 2.75,
+     "t1": 3.01
+    },
+    {
+     "disp": "Dez",
+     "bold": false,
+     "t0": 3.77,
+     "t1": 4.15
+    },
+    {
+     "disp": "mil",
+     "bold": false,
+     "t0": 4.15,
+     "t1": 4.43
+    },
+    {
+     "disp": "vezes",
+     "bold": false,
+     "t0": 4.43,
+     "t1": 4.59
+    },
+    {
+     "disp": "seiscentos:",
+     "bold": false,
+     "t0": 4.59,
+     "t1": 4.97
+    },
+    {
+     "disp": "seis",
+     "bold": false,
+     "t0": 5.53,
+     "t1": 5.89
+    },
+    {
+     "disp": "milhões",
+     "bold": false,
+     "t0": 5.89,
+     "t1": 6.29
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.47
+    },
+    {
+     "disp": "watts,",
+     "bold": false,
+     "t0": 6.47,
+     "t1": 6.71
+    },
+    {
+     "disp": "seis",
+     "bold": false,
+     "t0": 7.33,
+     "t1": 7.67
+    },
+    {
+     "disp": "megawatts.",
+     "bold": false,
+     "t0": 7.67,
+     "t1": 8.27
+    },
+    {
+     "disp": "Noventa",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 9.25
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 9.337,
+     "t1": 9.537
+    },
+    {
+     "disp": "cento",
+     "bold": false,
+     "t0": 9.423,
+     "t1": 9.623
+    },
+    {
+     "disp": "disso:",
+     "bold": false,
+     "t0": 9.51,
+     "t1": 9.79
+    },
+    {
+     "disp": "cinco",
+     "bold": false,
+     "t0": 10.39,
+     "t1": 10.69
+    },
+    {
+     "disp": "vírgula",
+     "bold": false,
+     "t0": 10.69,
+     "t1": 10.89
+    },
+    {
+     "disp": "quatro",
+     "bold": false,
+     "t0": 10.69,
+     "t1": 11.31
+    },
+    {
+     "disp": "megawatts.",
+     "bold": false,
+     "t0": 11.31,
+     "t1": 11.89
+    }
+   ],
+   "cues": {
+    "a": 1.59,
+    "b": 3.77,
+    "c": 5.53,
+    "d": 8.85,
+    "e": 10.39
+   }
+  },
+  {
+   "id": "s19",
+   "block": "fim",
+   "start": 275.13,
+   "dur": 18.02,
+   "tokens": [
+    {
+     "disp": "Resumindo:",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 1.07
+    },
+    {
+     "disp": "toda",
+     "bold": false,
+     "t0": 1.63,
+     "t1": 1.93
+    },
+    {
+     "disp": "usina",
+     "bold": false,
+     "t0": 1.93,
+     "t1": 2.57
+    },
+    {
+     "disp": "dessas",
+     "bold": false,
+     "t0": 2.57,
+     "t1": 2.97
+    },
+    {
+     "disp": "gira",
+     "bold": false,
+     "t0": 2.97,
+     "t1": 3.49
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 3.49,
+     "t1": 3.67
+    },
+    {
+     "disp": "turbina",
+     "bold": false,
+     "t0": 3.67,
+     "t1": 4.17
+    },
+    {
+     "disp": "presa",
+     "bold": false,
+     "t0": 4.17,
+     "t1": 4.69
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 4.69,
+     "t1": 4.77
+    },
+    {
+     "disp": "um",
+     "bold": false,
+     "t0": 4.77,
+     "t1": 4.83
+    },
+    {
+     "disp": "gerador,",
+     "bold": false,
+     "t0": 4.83,
+     "t1": 5.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 5.83,
+     "t1": 5.97
+    },
+    {
+     "disp": "nuclear",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.29
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 6.29,
+     "t1": 6.69
+    },
+    {
+     "disp": "uma",
+     "bold": false,
+     "t0": 6.69,
+     "t1": 6.83
+    },
+    {
+     "disp": "termelétrica,",
+     "bold": false,
+     "t0": 6.83,
+     "t1": 7.63
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 7.63,
+     "t1": 8.19
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 8.19,
+     "t1": 8.29
+    },
+    {
+     "disp": "potência",
+     "bold": false,
+     "t0": 8.29,
+     "t1": 8.83
+    },
+    {
+     "disp": "da",
+     "bold": false,
+     "t0": 8.83,
+     "t1": 8.97
+    },
+    {
+     "disp": "queda",
+     "bold": false,
+     "t0": 8.97,
+     "t1": 9.29
+    },
+    {
+     "disp": "é",
+     "bold": false,
+     "t0": 9.29,
+     "t1": 9.73
+    },
+    {
+     "disp": "dê",
+     "bold": false,
+     "t0": 9.73,
+     "t1": 10.05
+    },
+    {
+     "disp": "zê",
+     "bold": false,
+     "t0": 10.05,
+     "t1": 10.61
+    },
+    {
+     "disp": "gê",
+     "bold": false,
+     "t0": 10.61,
+     "t1": 11.25
+    },
+    {
+     "disp": "agá.",
+     "bold": false,
+     "t0": 11.25,
+     "t1": 11.93
+    },
+    {
+     "disp": "Na",
+     "bold": false,
+     "t0": 12.95,
+     "t1": 13.13
+    },
+    {
+     "disp": "próxima",
+     "bold": false,
+     "t0": 13.13,
+     "t1": 13.39
+    },
+    {
+     "disp": "aula,",
+     "bold": false,
+     "t0": 13.39,
+     "t1": 13.73
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 14.15,
+     "t1": 14.21
+    },
+    {
+     "disp": "vento",
+     "bold": false,
+     "t0": 14.21,
+     "t1": 14.75
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 14.75,
+     "t1": 14.89
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 14.89,
+     "t1": 15.01
+    },
+    {
+     "disp": "sol,",
+     "bold": false,
+     "t0": 15.01,
+     "t1": 15.23
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 15.71,
+     "t1": 15.77
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 15.77,
+     "t1": 16.01
+    },
+    {
+     "disp": "que",
+     "bold": false,
+     "t0": 16.01,
+     "t1": 16.31
+    },
+    {
+     "disp": "eles",
+     "bold": false,
+     "t0": 16.31,
+     "t1": 16.53
+    },
+    {
+     "disp": "não",
+     "bold": false,
+     "t0": 16.53,
+     "t1": 16.67
+    },
+    {
+     "disp": "geram",
+     "bold": false,
+     "t0": 16.67,
+     "t1": 17.11
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 17.11,
+     "t1": 17.17
+    },
+    {
+     "disp": "tempo",
+     "bold": false,
+     "t0": 17.17,
+     "t1": 17.37
+    },
+    {
+     "disp": "todo.",
+     "bold": false,
+     "t0": 17.37,
+     "t1": 17.67
+    }
+   ],
+   "cues": {
+    "a": 1.63,
+    "b": 5.83,
+    "c": 8.19,
+    "d": 14.15
+   }
+  },
+  {
+   "id": "s20",
+   "block": "fim",
+   "start": 293.15,
+   "dur": 6.72,
+   "tokens": [
+    {
+     "disp": "Inscreva-se",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.91
+    },
+    {
+     "disp": "para",
+     "bold": false,
+     "t0": 1.03,
+     "t1": 1.19
+    },
+    {
+     "disp": "seguir",
+     "bold": false,
+     "t0": 1.19,
+     "t1": 1.45
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 1.45,
+     "t1": 1.61
+    },
+    {
+     "disp": "curso",
+     "bold": false,
+     "t0": 1.61,
+     "t1": 1.87
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 1.87,
+     "t1": 2.05
+    },
+    {
+     "disp": "começo",
+     "bold": false,
+     "t0": 2.05,
+     "t1": 2.33
+    },
+    {
+     "disp": "ao",
+     "bold": false,
+     "t0": 2.33,
+     "t1": 2.61
+    },
+    {
+     "disp": "fim.",
+     "bold": false,
+     "t0": 2.61,
+     "t1": 2.75
+    },
+    {
+     "disp": "Bons",
+     "bold": false,
+     "t0": 3.35,
+     "t1": 3.55
+    },
+    {
+     "disp": "estudos!",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.95
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.35
+   }
+  }
+ ]
+}

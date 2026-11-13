@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-008 · Progressão geométrica: razão e termo geral
 
-**Arquivo:** `final/estudativo_MAT-PRO-008_progressao_geometrica_razao_e_termo_geral.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-008_progressao_geometrica_razao_e_termo_geral.mp4` · 5:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Em 3, 6, 12, 24, cada termo é o dobro do anterior: é uma progressão geométri
 ✅ O atalho: de a₄ = 24, quatro saltos: 24 · 16 = 384
 
 ⏱️ Capítulos
-[TEMPO] 3, 6, 12, 24: qual é o 8º termo?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é PG e como achar a razão
-[TEMPO] Sete saltos, cada um vezes dois
-[TEMPO] A fórmula do termo geral da PG
-[TEMPO] A PG nos juros compostos
-[TEMPO] O erro de usar a fórmula da PA
-[TEMPO] O atalho: pule do termo mais perto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a PG 2, 6, 18 e o carro
-[TEMPO] Resumo e próxima aula
+0:00 3, 6, 12, 24: qual é o 8º termo?
+0:28 O que você precisa saber
+0:43 O que é PG e como achar a razão
+1:24 Sete saltos, cada um vezes dois
+1:37 A fórmula do termo geral da PG
+2:10 A PG nos juros compostos
+2:59 O erro de usar a fórmula da PA
+3:19 O atalho: pule do termo mais perto
+3:52 Hora de testar
+4:14 Resolvendo: a PG 2, 6, 18 e o carro
+4:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão aritmética, razão e termo geral: [LINK MAT-PRO-004]

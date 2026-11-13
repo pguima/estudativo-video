@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-014 · Lançamento vertical para cima
 
-**Arquivo:** `final/estudativo_FIS-CIN-014_lancamento_vertical.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-014_lancamento_vertical.mp4` · 4:09 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Você joga uma bola para cima a 20 m/s. Quanto tempo ela fica no ar? Quatro segu
 ✅ O atalho: a subida é a queda livre ao contrário (e quando não vale)
 
 ⏱️ Capítulos
-[TEMPO] Quanto tempo a bola fica no ar?
-[TEMPO] O que você precisa saber
-[TEMPO] A subida e o tempo de subida
-[TEMPO] A altura máxima
-[TEMPO] A simetria da subida e da descida
-[TEMPO] O erro: no alto, a aceleração é zero?
-[TEMPO] O atalho: a queda ao contrário
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a pedra a 30 m/s
-[TEMPO] Resumo e próxima aula
+0:00 Quanto tempo a bola fica no ar?
+0:22 O que você precisa saber
+0:36 A subida e o tempo de subida
+1:16 A altura máxima
+1:46 A simetria da subida e da descida
+2:21 O erro: no alto, a aceleração é zero?
+2:38 O atalho: a queda ao contrário
+3:11 Hora de testar
+3:25 Resolvendo: a pedra a 30 m/s
+3:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Queda livre: [LINK FIS-CIN-013]

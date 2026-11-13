@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-004 · Calor latente e curva de aquecimento
 
-**Arquivo:** `final/estudativo_FIS-CAL-004_calor_latente_curva_aquecimento.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-004_calor_latente_curva_aquecimento.mp4` · 4:31 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Com a água fervendo, aumentar o fogo não faz a temperatura passar de 100 °C a
 ✅ O atalho: rampa é m·c·ΔT, patamar é m·L
 
 ⏱️ Capítulos
-[TEMPO] Mais fogo e a água não esquenta
-[TEMPO] O que você precisa saber
-[TEMPO] Os patamares da curva
-[TEMPO] Calor latente: Q = m·L
-[TEMPO] Por que o suor resfria
-[TEMPO] A curva completa, etapa por etapa
-[TEMPO] O erro de pular o patamar
-[TEMPO] O atalho da curva
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o gelo que vira água
-[TEMPO] Resumo e próxima aula
+0:00 Mais fogo e a água não esquenta
+0:20 O que você precisa saber
+0:34 Os patamares da curva
+1:01 Calor latente: Q = m·L
+1:38 Por que o suor resfria
+1:49 A curva completa, etapa por etapa
+2:59 O erro de pular o patamar
+3:14 O atalho da curva
+3:37 Hora de testar
+3:50 Resolvendo: o gelo que vira água
+4:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Calor sensível: Q = m·c·ΔT: [LINK FIS-CAL-003]

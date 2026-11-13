@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-012 · Pirâmide: altura, apótema e área
 
-**Arquivo:** `final/estudativo_MAT-ESP-012_piramide_altura_apotema_e_area.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-012_piramide_altura_apotema_e_area.mp4` · 3:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma pirâmide de base quadrada tem lado 6 e altura 4. Cada face lateral é um tr
 ✅ O atalho: área lateral = perímetro da base × apótema ÷ 2
 
 ⏱️ Capítulos
-[TEMPO] A altura da face não é 4
-[TEMPO] O que você precisa saber
-[TEMPO] A apótema da pirâmide
-[TEMPO] O triângulo retângulo dentro da pirâmide
-[TEMPO] Área total: abrindo a pirâmide
-[TEMPO] O erro de usar a altura na face
-[TEMPO] O atalho: perímetro × apótema ÷ 2
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o enfeite de vidro
-[TEMPO] Resumo e próxima aula
+0:00 A altura da face não é 4
+0:23 O que você precisa saber
+0:38 A apótema da pirâmide
+1:02 O triângulo retângulo dentro da pirâmide
+1:32 Área total: abrindo a pirâmide
+1:59 O erro de usar a altura na face
+2:15 O atalho: perímetro × apótema ÷ 2
+2:47 Hora de testar
+3:01 Resolvendo o enfeite de vidro
+3:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Pirâmide: volume: [LINK MAT-ESP-011]

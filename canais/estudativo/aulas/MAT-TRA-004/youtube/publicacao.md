@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-004 · Secante, cossecante e identidades
 
-**Arquivo:** `final/estudativo_MAT-TRA-004_secante_cossecante_e_identidades.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-004_secante_cossecante_e_identidades.mp4` · 4:55 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um menos cosseno ao quadrado, dividido por seno: parece conta de três linhas, m
 ✅ O atalho: travou, escreva tudo em seno e cosseno
 
 ⏱️ Capítulos
-[TEMPO] Uma expressão que é só sen x
-[TEMPO] O que você precisa saber
-[TEMPO] Secante, cossecante e cotangente
-[TEMPO] De onde vem 1 + tg² x = sec² x
-[TEMPO] Usando a identidade
-[TEMPO] Simplificando a expressão do começo
-[TEMPO] O erro de cortar parcela
-[TEMPO] O atalho: tudo em seno e cosseno
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: tg x = 5/12
-[TEMPO] Resumo e próxima aula
+0:00 Uma expressão que é só sen x
+0:22 O que você precisa saber
+0:40 Secante, cossecante e cotangente
+1:27 De onde vem 1 + tg² x = sec² x
+2:08 Usando a identidade
+2:36 Simplificando a expressão do começo
+3:00 O erro de cortar parcela
+3:20 O atalho: tudo em seno e cosseno
+3:48 Hora de testar
+4:00 Resolvendo: tg x = 5/12
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Simplificar frações algébricas: [LINK MAT-FAT-004]

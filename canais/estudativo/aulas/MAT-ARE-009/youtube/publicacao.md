@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-009 · Figuras compostas: somar e subtrair áreas
 
-**Arquivo:** `final/estudativo_MAT-ARE-009_figuras_compostas_somar_e_subtrair_areas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-009_figuras_compostas_somar_e_subtrair_areas.mp4` · 4:35 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Um portão retangular de 4 m por 3 m com meio círculo em cima: qual é a área 
 ✅ Duas metades iguais formam um círculo inteiro: piscina de 87 m² e 38 m de borda
 
 ⏱️ Capítulos
-[TEMPO] O contorno do portão
-[TEMPO] O que você precisa saber
-[TEMPO] Os dois caminhos
-[TEMPO] A área do portão
-[TEMPO] O contorno do portão
-[TEMPO] Área na malha: completar e tirar
-[TEMPO] O erro da linha de dentro
-[TEMPO] O atalho: retângulo menos os cantos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a piscina
-[TEMPO] Resumo e próxima aula
+0:00 O contorno do portão
+0:25 O que você precisa saber
+0:41 Os dois caminhos
+0:51 A área do portão
+1:18 O contorno do portão
+1:47 Área na malha: completar e tirar
+2:32 O erro da linha de dentro
+2:51 O atalho: retângulo menos os cantos
+3:10 Hora de testar
+3:31 Resolvendo a piscina
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Perímetro: o contorno de uma figura: [LINK MAT-ARE-001]

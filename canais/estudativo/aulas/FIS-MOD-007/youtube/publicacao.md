@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-007 · Praticando: física moderna
 
-**Arquivo:** `final/estudativo_FIS-MOD-007_praticando_fisica_moderna.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-007_praticando_fisica_moderna.mp4` · 4:39 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Física Moderna assusta pelo nome, mas a prova cobra poucas fórmulas, sempre as
 ✅ A pegadinha de de Broglie: mesma quantidade de movimento, mesmo λ
 
 ⏱️ Capítulos
-[TEMPO] Física Moderna em cinco questões
-[TEMPO] As constantes
-[TEMPO] O método: a palavra escolhe a fórmula
-[TEMPO] Questão 1: o fóton de luz laranja
-[TEMPO] Questão 2: o efeito fotoelétrico no sódio
-[TEMPO] Questão 3: o hidrogênio absorve?
-[TEMPO] Questão 4: a partícula no acelerador
-[TEMPO] Questão 5: elétron ou próton?
-[TEMPO] Resumo e próxima aula
+0:00 Física Moderna em cinco questões
+0:16 As constantes
+0:37 O método: a palavra escolhe a fórmula
+1:13 Questão 1: o fóton de luz laranja
+1:49 Questão 2: o efeito fotoelétrico no sódio
+2:26 Questão 3: o hidrogênio absorve?
+3:05 Questão 4: a partícula no acelerador
+3:49 Questão 5: elétron ou próton?
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Fóton: a energia em pacotes: [LINK FIS-MOD-001]

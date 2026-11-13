@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-014 · Curto-circuito, fusível e choque
 
-**Arquivo:** `final/estudativo_FIS-ELE-014_curto_circuito_fusivel_e_choque.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-014_curto_circuito_fusivel_e_choque.mp4` · 5:12 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um passarinho pousa num fio desencapado e não sente nada; uma pessoa encosta nu
 ✅ O macete para achar o curto
 
 ⏱️ Capítulos
-[TEMPO] O passarinho e o choque
-[TEMPO] O que você precisa saber
-[TEMPO] O que é curto-circuito
-[TEMPO] Fusível, disjuntor e a casa em paralelo
-[TEMPO] O choque: a corrente pelo corpo
-[TEMPO] O erro do fusível mais forte
-[TEMPO] O atalho para achar o curto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a lâmpada em curto
-[TEMPO] Resumo e próxima aula
+0:00 O passarinho e o choque
+0:18 O que você precisa saber
+0:33 O que é curto-circuito
+1:37 Fusível, disjuntor e a casa em paralelo
+2:22 O choque: a corrente pelo corpo
+3:23 O erro do fusível mais forte
+3:38 O atalho para achar o curto
+3:59 Hora de testar
+4:18 Resolvendo: a lâmpada em curto
+4:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Associação mista de resistores: [LINK FIS-ELE-013]

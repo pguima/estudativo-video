@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-010 · Praticando: raízes complexas
 
-**Arquivo:** `final/estudativo_MAT-PLN-010_praticando_raizes_complexas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-010_praticando_raizes_complexas.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,18 +29,18 @@ Quatro questões inéditas misturando raízes reais e complexas. Em cada uma, pa
 ✅ O atalho: o grau diz quantas raízes há, e as com i vêm em pares
 
 ⏱️ Capítulos
-[TEMPO] Quatro questões
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: delta negativo
-[TEMPO] Resolução 1
-[TEMPO] Questão 2: grau três
-[TEMPO] Resolução 2
-[TEMPO] Questão 3: raiz complexa dada
-[TEMPO] Resolução 3
-[TEMPO] Questão 4: grau quatro
-[TEMPO] Resolução 4
-[TEMPO] O atalho: conte as raízes
-[TEMPO] Resumo
+0:00 Quatro questões
+0:10 O que você vai usar
+0:24 Questão 1: delta negativo
+0:35 Resolução 1
+1:03 Questão 2: grau três
+1:14 Resolução 2
+1:55 Questão 3: raiz complexa dada
+2:10 Resolução 3
+2:51 Questão 4: grau quatro
+3:02 Resolução 4
+3:35 O atalho: conte as raízes
+3:57 Resumo
 
 📚 Antes desta aula
 Delta negativo: o número i: [LINK MAT-PLN-008]

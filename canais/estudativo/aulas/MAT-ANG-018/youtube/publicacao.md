@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-018 · Relações métricas no triângulo retângulo
 
-**Arquivo:** `final/estudativo_MAT-ANG-018_relacoes_metricas_no_triangulo_retangulo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-018_relacoes_metricas_no_triangulo_retangulo.mp4` · 5:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ No triângulo retângulo de catetos 3 e 4 e hipotenusa 5, desça uma altura do �
 ✅ Questões resolvidas: catetos 9 e 12 (h = 7,2) e pedaços 2 e 8 (h = 4)
 
 ⏱️ Capítulos
-[TEMPO] Triângulo 3, 4, 5: a altura é 2,5?
-[TEMPO] O que você precisa saber
-[TEMPO] Os nomes: a, b, c, h, m e n
-[TEMPO] Três triângulos semelhantes
-[TEMPO] Primeira relação: a · h = b · c
-[TEMPO] Segunda relação: h² = m · n
-[TEMPO] O erro da altura no meio
-[TEMPO] O atalho: guarde o 2,4
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 7,2 e 4
-[TEMPO] Resumo e próxima aula
+0:00 Triângulo 3, 4, 5: a altura é 2,5?
+0:21 O que você precisa saber
+0:35 Os nomes: a, b, c, h, m e n
+0:57 Três triângulos semelhantes
+1:08 Primeira relação: a · h = b · c
+1:57 Segunda relação: h² = m · n
+2:53 O erro da altura no meio
+3:13 O atalho: guarde o 2,4
+3:43 Hora de testar
+4:02 Resolvendo: 7,2 e 4
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Triângulos semelhantes: critérios e razão de semelhança: [LINK MAT-ANG-012]

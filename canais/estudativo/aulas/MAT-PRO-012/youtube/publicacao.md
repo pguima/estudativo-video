@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-012 · Praticando: progressão geométrica
 
-**Arquivo:** `final/estudativo_MAT-PRO-012_praticando_progressao_geometrica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-012_praticando_progressao_geometrica.mp4` · 4:44 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco problemas inéditos de progressão geométrica, cada um com pausa para voc
 ✅ Qual ferramenta usar: posição, vizinhos, total ou soma infinita
 
 ⏱️ Capítulos
-[TEMPO] Cinco problemas de PG
-[TEMPO] As quatro ferramentas
-[TEMPO] Problema 1: juros compostos
-[TEMPO] Resposta 1
-[TEMPO] Problema 2: meia-vida de um remédio
-[TEMPO] Resposta 2
-[TEMPO] Problema 3: bactérias e o termo do meio
-[TEMPO] Resposta 3
-[TEMPO] Problema 4: a campanha que dobra
-[TEMPO] Resposta 4
-[TEMPO] Problema 5: a bola que quica
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco problemas de PG
+0:13 As quatro ferramentas
+0:26 Problema 1: juros compostos
+0:41 Resposta 1
+1:18 Problema 2: meia-vida de um remédio
+1:36 Resposta 2
+2:01 Problema 3: bactérias e o termo do meio
+2:17 Resposta 3
+2:54 Problema 4: a campanha que dobra
+3:09 Resposta 4
+3:40 Problema 5: a bola que quica
+3:53 Resposta 5
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão geométrica: razão e termo geral: [LINK MAT-PRO-008]

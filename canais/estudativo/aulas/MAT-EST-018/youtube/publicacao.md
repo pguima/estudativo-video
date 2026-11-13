@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-018 · Praticando: médias, mediana, moda e dispersão
 
-**Arquivo:** `final/estudativo_MAT-EST-018_praticando_medias_mediana_moda_e_dispersao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-018_praticando_medias_mediana_moda_e_dispersao.mp4` · 5:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Cinco situações inéditas, uma para cada ferramenta do módulo: tempos até o 
 ✅ Médias diferentes: coeficiente de variação (30 ÷ 200 = 15%; 10 ÷ 50 = 20%)
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] O que você precisa saber
-[TEMPO] Situação 1: média, mediana e moda
-[TEMPO] Resposta 1: qual representa o tempo típico
-[TEMPO] Situação 2: a nota que falta
-[TEMPO] Resposta 2: pelo total e pelas sobras e faltas
-[TEMPO] Situação 3: o boxplot da bateria
-[TEMPO] Resposta 3: amplitude, caixa e 75%
-[TEMPO] Situação 4: Carla e Dora
-[TEMPO] Resposta 4: variância e desvio padrão
-[TEMPO] Situação 5: duas lojas
-[TEMPO] Resposta 5: coeficiente de variação
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:15 O que você precisa saber
+0:30 Situação 1: média, mediana e moda
+0:49 Resposta 1: qual representa o tempo típico
+1:26 Situação 2: a nota que falta
+1:47 Resposta 2: pelo total e pelas sobras e faltas
+2:29 Situação 3: o boxplot da bateria
+2:54 Resposta 3: amplitude, caixa e 75%
+3:17 Situação 4: Carla e Dora
+3:33 Resposta 4: variância e desvio padrão
+4:26 Situação 5: duas lojas
+4:44 Resposta 5: coeficiente de variação
+5:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Média aritmética: [LINK MAT-EST-008]

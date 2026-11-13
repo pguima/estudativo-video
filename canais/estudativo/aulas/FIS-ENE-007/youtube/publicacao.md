@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-007 · Quantidade de movimento e impulso
 
-**Arquivo:** `final/estudativo_FIS-ENE-007_quantidade_de_movimento_e_impulso.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-007_quantidade_de_movimento_e_impulso.mp4` · 5:41 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ O motorista vai parar de qualquer jeito: então como o airbag salva? Nesta aula,
 ✅ O atalho: bater e voltar dá o dobro do impulso
 
 ⏱️ Capítulos
-[TEMPO] Como o airbag salva?
-[TEMPO] O que você precisa saber
-[TEMPO] Quantidade de movimento
-[TEMPO] Impulso e I = ΔQ
-[TEMPO] A conta do airbag
-[TEMPO] O erro de esquecer o sentido
-[TEMPO] O atalho: bater e voltar
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bola na parede
-[TEMPO] Resumo e próxima aula
+0:00 Como o airbag salva?
+0:23 O que você precisa saber
+0:39 Quantidade de movimento
+1:27 Impulso e I = ΔQ
+2:38 A conta do airbag
+3:16 O erro de esquecer o sentido
+3:48 O atalho: bater e voltar
+4:18 Hora de testar
+4:37 Resolvendo: a bola na parede
+5:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Newton: F = m·a: [LINK FIS-DIN-002]

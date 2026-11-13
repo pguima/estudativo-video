@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-004 · Área do trapézio e do losango
 
-**Arquivo:** `final/estudativo_MAT-ARE-004_area_trapezio_losango.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-004_area_trapezio_losango.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um trapézio com base maior 10, base menor 6 e altura 4: qual das duas bases ent
 ✅ Um terreno em trapézio e uma pipa em losango resolvidos passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Duas bases: qual entra na conta?
-[TEMPO] O que você precisa saber
-[TEMPO] Trapézio: duas cópias viram paralelogramo
-[TEMPO] Losango: metade do retângulo
-[TEMPO] O erro de esquecer o dividido por 2
-[TEMPO] O atalho: a base do meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o terreno e a pipa
-[TEMPO] Resumo e próxima aula
+0:00 Duas bases: qual entra na conta?
+0:24 O que você precisa saber
+0:41 Trapézio: duas cópias viram paralelogramo
+1:47 Losango: metade do retângulo
+2:28 O erro de esquecer o dividido por 2
+2:44 O atalho: a base do meio
+3:24 Hora de testar
+3:46 Resolvendo: o terreno e a pipa
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do paralelogramo e do triângulo: [LINK MAT-ARE-003]

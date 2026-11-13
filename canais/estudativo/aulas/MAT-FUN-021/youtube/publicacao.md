@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-021 · Achar a lei da parábola
 
-**Arquivo:** `final/estudativo_MAT-FUN-021_achar_a_lei_da_parabola.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-021_achar_a_lei_da_parabola.mp4` · 5:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma parábola corta o eixo x no 1 e no 5 e corta o eixo y no 10. Com esses três
 ✅ O atalho: a = c dividido pelo produto das raízes
 
 ⏱️ Capítulos
-[TEMPO] Três números e a lei da parábola
-[TEMPO] O que você precisa saber
-[TEMPO] A forma fatorada: um parêntese por raiz
-[TEMPO] Abrindo os parênteses: a, b e c
-[TEMPO] A forma do vértice
-[TEMPO] O erro: copiar o sinal do parêntese
-[TEMPO] O atalho: o a sem equação
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: raízes −2 e 4
-[TEMPO] Resumo e próxima aula
+0:00 Três números e a lei da parábola
+0:24 O que você precisa saber
+0:42 A forma fatorada: um parêntese por raiz
+1:53 Abrindo os parênteses: a, b e c
+2:12 A forma do vértice
+3:18 O erro: copiar o sinal do parêntese
+3:38 O atalho: o a sem equação
+4:07 Hora de testar
+4:30 Resolvendo: raízes −2 e 4
+5:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma e produto: raízes de cabeça: [LINK MAT-FAT-011]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-011 · Triângulos de mesma altura: a razão das bases
 
-**Arquivo:** `final/estudativo_MAT-ARE-011_triangulos_de_mesma_altura.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-011_triangulos_de_mesma_altura.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Uma linha corta um triângulo em dois pedaços muito diferentes, mas com exatame
 ✅ O atalho: compare só as bases, e o vértice na paralela não muda a área
 
 ⏱️ Capítulos
-[TEMPO] Pedaços diferentes, a mesma área
-[TEMPO] O que você precisa saber
-[TEMPO] A mesma altura para os dois
-[TEMPO] O exemplo: bases 4 e 6
-[TEMPO] A mediana corta a área ao meio
-[TEMPO] Repartir pela razão
-[TEMPO] O erro de achar que qualquer linha divide ao meio
-[TEMPO] O atalho: compare só as bases
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o terreno
-[TEMPO] Resumo e próxima aula
+0:00 Pedaços diferentes, a mesma área
+0:21 O que você precisa saber
+0:35 A mesma altura para os dois
+1:03 O exemplo: bases 4 e 6
+1:49 A mediana corta a área ao meio
+2:06 Repartir pela razão
+2:20 O erro de achar que qualquer linha divide ao meio
+2:44 O atalho: compare só as bases
+3:16 Hora de testar
+3:39 Resolvendo o terreno
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do paralelogramo e do triângulo: [LINK MAT-ARE-003]

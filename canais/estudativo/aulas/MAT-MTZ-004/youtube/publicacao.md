@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-004 · Matriz inversa
 
-**Arquivo:** `final/estudativo_MAT-MTZ-004_matriz_inversa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-004_matriz_inversa.mp4` · 3:59 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Qual é a inversa da matriz 2, 1, 1, 1? Se você inverteu cada número, errou. N
 ✅ O atalho: det = 0, pare; det = 1, de cabeça
 
 ⏱️ Capítulos
-[TEMPO] A inversa não é inverter cada número
-[TEMPO] O que você precisa saber
-[TEMPO] A matriz identidade
-[TEMPO] A receita da inversa em três passos
-[TEMPO] Conferindo a inversa
-[TEMPO] Quando a inversa não existe
-[TEMPO] O erro de inverter cada número
-[TEMPO] O atalho do determinante
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: inversa com determinante −1
-[TEMPO] Resumo e próxima aula
+0:00 A inversa não é inverter cada número
+0:23 O que você precisa saber
+0:35 A matriz identidade
+1:07 A receita da inversa em três passos
+1:40 Conferindo a inversa
+2:00 Quando a inversa não existe
+2:26 O erro de inverter cada número
+2:42 O atalho do determinante
+3:04 Hora de testar
+3:14 Resolvendo: inversa com determinante −1
+3:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar matrizes: linha por coluna: [LINK MAT-MTZ-002]

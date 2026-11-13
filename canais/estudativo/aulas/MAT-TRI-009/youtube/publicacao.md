@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-009 · Redução ao primeiro quadrante
 
-**Arquivo:** `final/estudativo_MAT-TRI-009_reducao_ao_primeiro_quadrante.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-009_reducao_ao_primeiro_quadrante.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,21 +31,21 @@ Seno de 150 graus não está na tabela, mas a resposta é 1/2, o mesmo que seno 
 ✅ O atalho: a distância até 180° ou 360°
 
 ⏱️ Capítulos
-[TEMPO] Seno de 150° fora da tabela
-[TEMPO] O que você precisa saber
-[TEMPO] 2º quadrante: o par espelhado
-[TEMPO] Seno e cosseno de 150°
-[TEMPO] A regra do 2º quadrante
-[TEMPO] 3º quadrante: cosseno de 240°
-[TEMPO] O sinal no 3º quadrante
-[TEMPO] 4º quadrante: seno de 330°
-[TEMPO] O método em dois passos
-[TEMPO] O erro de copiar o sinal do parceiro
-[TEMPO] O atalho: a distância até o eixo horizontal
-[TEMPO] Por que o atalho funciona
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo sen 225° e cos 300°
-[TEMPO] Resumo e próxima aula
+0:00 Seno de 150° fora da tabela
+0:22 O que você precisa saber
+0:38 2º quadrante: o par espelhado
+0:53 Seno e cosseno de 150°
+1:07 A regra do 2º quadrante
+1:13 3º quadrante: cosseno de 240°
+1:29 O sinal no 3º quadrante
+1:38 4º quadrante: seno de 330°
+1:57 O método em dois passos
+2:07 O erro de copiar o sinal do parceiro
+2:27 O atalho: a distância até o eixo horizontal
+2:47 Por que o atalho funciona
+3:06 Hora de testar
+3:16 Resolvendo sen 225° e cos 300°
+3:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Seno, cosseno e tangente no ciclo: [LINK MAT-TRI-008]

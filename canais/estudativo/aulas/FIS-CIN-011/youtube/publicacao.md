@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-011 · Gráfico posição por tempo
 
-**Arquivo:** `final/estudativo_FIS-CIN-011_grafico_posicao_por_tempo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-011_grafico_posicao_por_tempo.mp4` · 4:46 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Duas retas num gráfico da posição pelo tempo: a mais inclinada é a do carro 
 ✅ O atalho: comparar inclinações sem conta
 
 ⏱️ Capítulos
-[TEMPO] A reta mais inclinada
-[TEMPO] O que você precisa saber
-[TEMPO] Ler o gráfico e tirar a velocidade
-[TEMPO] Ida, repouso e volta
-[TEMPO] O encontro no gráfico
-[TEMPO] A parábola do MUV
-[TEMPO] O erro: gráfico não é o caminho
-[TEMPO] O atalho: compare as inclinações
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os carros A e B
-[TEMPO] Resumo e próxima aula
+0:00 A reta mais inclinada
+0:21 O que você precisa saber
+0:38 Ler o gráfico e tirar a velocidade
+1:17 Ida, repouso e volta
+1:48 O encontro no gráfico
+2:03 A parábola do MUV
+2:41 O erro: gráfico não é o caminho
+2:56 O atalho: compare as inclinações
+3:29 Hora de testar
+3:46 Resolvendo: os carros A e B
+4:18 Resumo e próxima aula
 
 📚 Antes desta aula
 Posição no MUV: a função do 2º grau: [LINK FIS-CIN-008]

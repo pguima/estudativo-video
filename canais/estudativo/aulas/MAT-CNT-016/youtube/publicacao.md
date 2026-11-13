@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-016 · Eventos independentes: multiplicar as chances
 
-**Arquivo:** `final/estudativo_MAT-CNT-016_eventos_independentes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-016_eventos_independentes.mp4` · 4:21 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ Uma moeda deu cara cinco vezes seguidas. Na sexta jogada, coroa ficou mais prov�
 ✅ O atalho: a mesma chance repetida vira potência, (1/2)³ = 1/8 e (1/2)⁶ = 1/64
 
 ⏱️ Capítulos
-[TEMPO] Cinco caras: a coroa está devendo?
-[TEMPO] O que você precisa saber
-[TEMPO] A grade da moeda e do dado
-[TEMPO] A regra: multiplique as chances
-[TEMPO] Eventos dependentes: a pista muda a chance
-[TEMPO] O erro da coroa devendo
-[TEMPO] O atalho: chance repetida vira potência
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os dois semáforos
-[TEMPO] Resumo e próxima aula
+0:00 Cinco caras: a coroa está devendo?
+0:24 O que você precisa saber
+0:38 A grade da moeda e do dado
+1:22 A regra: multiplique as chances
+1:54 Eventos dependentes: a pista muda a chance
+2:39 O erro da coroa devendo
+2:46 O atalho: chance repetida vira potência
+3:24 Hora de testar
+3:42 Resolvendo: os dois semáforos
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Probabilidade condicional: [LINK MAT-CNT-015]

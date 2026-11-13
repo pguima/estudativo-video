@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-026 · Praticando: leis de Kirchhoff
 
-**Arquivo:** `final/estudativo_FIS-ELE-026_praticando_leis_de_kirchhoff.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-026_praticando_leis_de_kirchhoff.mp4` · 4:04 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,13 +30,13 @@ Na prova, Kirchhoff aparece de três jeitos: um nó, uma malha ou duas malhas. N
 ✅ Reconhecer uma bateria sendo carregada
 
 ⏱️ Capítulos
-[TEMPO] Os três jeitos de Kirchhoff cair na prova
-[TEMPO] O método
-[TEMPO] Questão 1: um nó
-[TEMPO] Questão 2: uma malha com três geradores
-[TEMPO] Questão 3: duas malhas
-[TEMPO] Questão 4: a surpresa no sinal
-[TEMPO] Resumo e fim da trilha
+0:00 Os três jeitos de Kirchhoff cair na prova
+0:12 O método
+0:32 Questão 1: um nó
+0:55 Questão 2: uma malha com três geradores
+1:28 Questão 3: duas malhas
+2:33 Questão 4: a surpresa no sinal
+3:46 Resumo e fim da trilha
 
 📚 Antes desta aula
 Leis de Kirchhoff: nós e malhas: [LINK FIS-ELE-024]

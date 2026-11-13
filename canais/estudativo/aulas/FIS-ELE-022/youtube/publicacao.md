@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-022 · Receptores e associação de pilhas
 
-**Arquivo:** `final/estudativo_FIS-ELE-022_receptores_associacao_de_pilhas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-022_receptores_associacao_de_pilhas.mp4` · 5:02 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Quando a hélice de um ventilador ligado trava, o motor esquenta muito mais e po
 ✅ O atalho: i = (ε − ε′) ÷ soma das resistências
 
 ⏱️ Capítulos
-[TEMPO] O ventilador travado
-[TEMPO] O que você precisa saber
-[TEMPO] O receptor e a força contraeletromotriz
-[TEMPO] O motor: tensão, rendimento e travamento
-[TEMPO] Pilhas em série
-[TEMPO] Pilhas em paralelo
-[TEMPO] O erro: somar a fem em paralelo
-[TEMPO] O atalho: gerador e motor juntos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as quatro pilhas
-[TEMPO] Resumo e próxima aula
+0:00 O ventilador travado
+0:20 O que você precisa saber
+0:36 O receptor e a força contraeletromotriz
+1:20 O motor: tensão, rendimento e travamento
+2:09 Pilhas em série
+2:38 Pilhas em paralelo
+2:59 O erro: somar a fem em paralelo
+3:12 O atalho: gerador e motor juntos
+3:49 Hora de testar
+4:13 Resolvendo: as quatro pilhas
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Circuito simples: lei de Pouillet: [LINK FIS-ELE-021]

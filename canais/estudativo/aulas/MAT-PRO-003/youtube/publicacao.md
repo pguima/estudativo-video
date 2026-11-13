@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-003 · Padrões que se repetem: o resto manda
 
-**Arquivo:** `final/estudativo_MAT-PRO-003_padroes_que_se_repetem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-003_padroes_que_se_repetem.mp4` · 4:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ A, B, C, D, A, B, C, D, e assim por diante. Qual letra está na posição 2.026?
 ✅ O atalho: no bloco de 4, olhe só os dois últimos algarismos (26 ÷ 4, resto 2)
 
 ⏱️ Capítulos
-[TEMPO] A letra da posição 2.026
-[TEMPO] O que você precisa saber
-[TEMPO] Blocos, voltas e o resto
-[TEMPO] O dia da semana daqui a 100 dias
-[TEMPO] Dois ciclos que voltam a coincidir
-[TEMPO] O erro do resto zero
-[TEMPO] O atalho: os dois últimos algarismos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a luz 100 e o sábado + 45 dias
-[TEMPO] Resumo e próxima aula
+0:00 A letra da posição 2.026
+0:25 O que você precisa saber
+0:38 Blocos, voltas e o resto
+1:32 O dia da semana daqui a 100 dias
+2:12 Dois ciclos que voltam a coincidir
+2:46 O erro do resto zero
+3:07 O atalho: os dois últimos algarismos
+3:36 Hora de testar
+3:55 Resolvendo: a luz 100 e o sábado + 45 dias
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Problemas de MMC: encontros que se repetem: [LINK MAT-DIV-007]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-004 · Equação exponencial: igualar as bases
 
-**Arquivo:** `final/estudativo_MAT-EXP-004_equacao_exponencial_igualar_as_bases.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-004_equacao_exponencial_igualar_as_bases.mp4` · 5:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Nove elevado a x dá 27? Testando, 9¹ dá 9 e 9² já passa para 81: nenhum nú
 ✅ O atalho: fatore até o primo para achar a base
 
 ⏱️ Capítulos
-[TEMPO] 9ˣ = 27: nenhum inteiro serve
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia: mesma base, mesmo expoente
-[TEMPO] O método em três passos
-[TEMPO] Resolvendo 9ˣ = 27
-[TEMPO] Quando o outro lado é fração
-[TEMPO] O erro de dividir os números
-[TEMPO] O atalho: desça até o primo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 4^(x−1) = 64 e 27ˣ = 9
-[TEMPO] Resumo e próxima aula
+0:00 9ˣ = 27: nenhum inteiro serve
+0:23 O que você precisa saber
+0:40 A ideia: mesma base, mesmo expoente
+1:13 O método em três passos
+1:46 Resolvendo 9ˣ = 27
+2:33 Quando o outro lado é fração
+2:45 O erro de dividir os números
+3:03 O atalho: desça até o primo
+3:42 Hora de testar
+3:58 Resolvendo 4^(x−1) = 64 e 27ˣ = 9
+4:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Função exponencial: lei e gráfico: [LINK MAT-EXP-001]

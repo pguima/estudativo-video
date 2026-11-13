@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-005 · Domínio pela fórmula
 
-**Arquivo:** `final/estudativo_MAT-FUN-005_dominio_pela_formula.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-005_dominio_pela_formula.mp4` · 4:57 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Na função f(x) = 1/(x − 2), coloque x = 2: fica 1/0, e a calculadora mostra 
 ✅ O atalho: procure os vilões; sem vilão, todos os reais. Raiz cúbica não barra: ∛−8 = −2
 
 ⏱️ Capítulos
-[TEMPO] Quando a calculadora dá erro
-[TEMPO] O que você precisa saber
-[TEMPO] Só duas coisas barram a entrada
-[TEMPO] Por que não se divide por zero
-[TEMPO] Divisão: o de baixo diferente de zero
-[TEMPO] Raiz: o de dentro maior ou igual a zero
-[TEMPO] O erro de tratar a raiz como a divisão
-[TEMPO] O atalho: procure os vilões
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo g(x) e h(x)
-[TEMPO] Resumo e próxima aula
+0:00 Quando a calculadora dá erro
+0:24 O que você precisa saber
+0:40 Só duas coisas barram a entrada
+0:55 Por que não se divide por zero
+1:11 Divisão: o de baixo diferente de zero
+1:42 Raiz: o de dentro maior ou igual a zero
+2:18 O erro de tratar a raiz como a divisão
+2:40 O atalho: procure os vilões
+3:21 Hora de testar
+3:42 Resolvendo g(x) e h(x)
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Domínio, contradomínio e imagem: [LINK MAT-FUN-004]

@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-001 · Trabalho de uma força
 
-**Arquivo:** `final/estudativo_FIS-ENE-001_trabalho_de_uma_forca.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-001_trabalho_de_uma_forca.mp4` · 5:37 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Você segura uma mochila parada por dez minutos, cansa, e para a Física o traba
 ✅ O atalho: compare a força com o caminho antes da conta
 
 ⏱️ Capítulos
-[TEMPO] Segurar parado dá trabalho zero?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é trabalho e o joule
-[TEMPO] Força inclinada: o cosseno
-[TEMPO] Trabalho zero e negativo
-[TEMPO] A área do gráfico F × d
-[TEMPO] O erro de esquecer o cosseno
-[TEMPO] O atalho: força × caminho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o caixote
-[TEMPO] Resumo e próxima aula
+0:00 Segurar parado dá trabalho zero?
+0:21 O que você precisa saber
+0:40 O que é trabalho e o joule
+1:24 Força inclinada: o cosseno
+2:06 Trabalho zero e negativo
+2:54 A área do gráfico F × d
+3:30 O erro de esquecer o cosseno
+3:55 O atalho: força × caminho
+4:27 Hora de testar
+4:48 Resolvendo: o caixote
+5:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Newton: F = m·a: [LINK FIS-DIN-002]

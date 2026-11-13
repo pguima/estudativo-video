@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-001 · Quadriláteros: paralelogramo, retângulo, losango e trapézio
 
-**Arquivo:** `final/estudativo_MAT-POL-001_quadrilateros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-001_quadrilateros.mp4` · 5:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,18 +33,18 @@ Um quadrado é um retângulo? Muita gente diz que não, mas é, e também é um 
 ✅ O atalho: o paralelogramo só tem duas medidas de ângulo, α e 180° − α
 
 ⏱️ Capítulos
-[TEMPO] Um quadrado é um retângulo?
-[TEMPO] O que você precisa saber
-[TEMPO] Quadrilátero, vértices e diagonais
-[TEMPO] Por que valem as regras do paralelogramo
-[TEMPO] Exemplo: paralelogramo com 70°
-[TEMPO] Retângulo, losango e quadrado
-[TEMPO] Trapézio isósceles e retângulo
-[TEMPO] O erro das diagonais do losango
-[TEMPO] O atalho: só duas medidas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 3x − 10 e x + 50
-[TEMPO] Resumo e próxima aula
+0:00 Um quadrado é um retângulo?
+0:23 O que você precisa saber
+0:43 Quadrilátero, vértices e diagonais
+1:15 Por que valem as regras do paralelogramo
+1:52 Exemplo: paralelogramo com 70°
+2:13 Retângulo, losango e quadrado
+2:51 Trapézio isósceles e retângulo
+3:08 O erro das diagonais do losango
+3:21 O atalho: só duas medidas
+3:47 Hora de testar
+4:01 Resolvendo: 3x − 10 e x + 50
+4:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas paralelas cortadas por uma transversal: [LINK MAT-ANG-003]

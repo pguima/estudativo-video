@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-001 · Distância entre dois pontos
 
-**Arquivo:** `final/estudativo_MAT-ANA-001_distancia_entre_dois_pontos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-001_distancia_entre_dois_pontos.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Sua casa fica em (1, 2) e o mercado em (4, 6). Qual é a distância em linha ret
 ✅ O atalho: cada diferença é só quantos passos separam os pontos
 
 ⏱️ Capítulos
-[TEMPO] A distância entre a casa e o mercado
-[TEMPO] O que você precisa saber
-[TEMPO] O triângulo escondido entre dois pontos
-[TEMPO] A regra para quaisquer dois pontos
-[TEMPO] Com números negativos
-[TEMPO] O erro de somar os catetos
-[TEMPO] O atalho: conte os passos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: escola e hospital
-[TEMPO] Resumo e próxima aula
+0:00 A distância entre a casa e o mercado
+0:22 O que você precisa saber
+0:40 O triângulo escondido entre dois pontos
+1:31 A regra para quaisquer dois pontos
+1:50 Com números negativos
+2:25 O erro de somar os catetos
+2:51 O atalho: conte os passos
+3:24 Hora de testar
+3:39 Resolvendo: escola e hospital
+4:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

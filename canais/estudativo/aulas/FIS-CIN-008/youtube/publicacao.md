@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-008 · Posição no MUV: a função do 2º grau
 
-**Arquivo:** `final/estudativo_FIS-CIN-008_posicao_no_muv_funcao_do_2_grau.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-008_posicao_no_muv_funcao_do_2_grau.mp4` · 5:09 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um carro parte do repouso com 2 m/s² e, a cada segundo, está a 1, 4, 9 e 16 me
 ✅ O atalho: deslocamento pela média das velocidades
 
 ⏱️ Capítulos
-[TEMPO] 1, 4, 9, 16: os quadrados perfeitos
-[TEMPO] O que você precisa saber
-[TEMPO] A velocidade média no MUV
-[TEMPO] A função da posição: o sorvetão
-[TEMPO] Achar o tempo com Bhaskara
-[TEMPO] O erro de esquecer o ÷2
-[TEMPO] O atalho: a média das velocidades
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o carro que acelera
-[TEMPO] Resumo e próxima aula
+0:00 1, 4, 9, 16: os quadrados perfeitos
+0:25 O que você precisa saber
+0:39 A velocidade média no MUV
+1:17 A função da posição: o sorvetão
+2:23 Achar o tempo com Bhaskara
+3:04 O erro de esquecer o ÷2
+3:22 O atalho: a média das velocidades
+3:56 Hora de testar
+4:10 Resolvendo: o carro que acelera
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Aceleração e velocidade no MUV: [LINK FIS-CIN-007]

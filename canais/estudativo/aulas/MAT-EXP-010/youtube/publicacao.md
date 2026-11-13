@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-010 · Usar log 2, log 3 e mudança de base
 
-**Arquivo:** `final/estudativo_MAT-EXP-010_log_2_log_3_e_mudanca_de_base.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-010_log_2_log_3_e_mudanca_de_base.mp4` · 4:53 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Quanto é o logaritmo de 72, sem calculadora? Com os dois valores que a prova co
 ✅ O atalho: log 2 + log 5 = 1, e log 50 = 1,70
 
 ⏱️ Capítulos
-[TEMPO] Log 72 sem calculadora
-[TEMPO] O que você precisa saber
-[TEMPO] Os valores de log 2 e log 3
-[TEMPO] Calculando log 72
-[TEMPO] Log 5: dez dividido por dois
-[TEMPO] Mudança de base
-[TEMPO] O erro: trocar a divisão por subtração
-[TEMPO] O atalho: 2 e 5 fecham 10
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo log 15 e log₂ 3
-[TEMPO] Resumo e próxima aula
+0:00 Log 72 sem calculadora
+0:22 O que você precisa saber
+0:39 Os valores de log 2 e log 3
+0:57 Calculando log 72
+1:29 Log 5: dez dividido por dois
+1:50 Mudança de base
+2:49 O erro: trocar a divisão por subtração
+3:12 O atalho: 2 e 5 fecham 10
+3:39 Hora de testar
+3:54 Resolvendo log 15 e log₂ 3
+4:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Propriedades dos logaritmos: [LINK MAT-EXP-009]

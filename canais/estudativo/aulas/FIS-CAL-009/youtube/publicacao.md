@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-009 · Condução de calor
 
-**Arquivo:** `final/estudativo_FIS-CAL-009_conducao_de_calor.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-009_conducao_de_calor.mp4` · 4:08 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ De manhã, a maçaneta de metal parece bem mais fria que a porta de madeira, mas
 ✅ O atalho: calcule o fator, não o fluxo
 
 ⏱️ Capítulos
-[TEMPO] A maçaneta que parece mais fria
-[TEMPO] O que você precisa saber
-[TEMPO] Condução: a agitação passa adiante
-[TEMPO] Fluxo de calor e lei de Fourier
-[TEMPO] Por que o metal engana
-[TEMPO] O erro do cobertor
-[TEMPO] O atalho: calcule o fator
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a caixa de isopor
-[TEMPO] Resumo e próxima aula
+0:00 A maçaneta que parece mais fria
+0:21 O que você precisa saber
+0:39 Condução: a agitação passa adiante
+1:13 Fluxo de calor e lei de Fourier
+2:10 Por que o metal engana
+2:34 O erro do cobertor
+2:49 O atalho: calcule o fator
+3:11 Hora de testar
+3:27 Resolvendo: a caixa de isopor
+3:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Calor sensível: Q = m·c·ΔT: [LINK FIS-CAL-003]

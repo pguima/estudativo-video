@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-017 · Diagonal do quadrado e altura do triângulo equilátero
 
-**Arquivo:** `final/estudativo_MAT-ANG-017_diagonal_do_quadrado_e_altura_do_equilatero.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-017_diagonal_do_quadrado_e_altura_do_equilatero.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Um quadrado de lado 5 tem diagonal de 10? Não: mede 5√2, um pouco mais que 7.
 ✅ Questão resolvida: diagonal 4√2 cm, então lado 4 cm e altura 2√3 cm
 
 ⏱️ Capítulos
-[TEMPO] Quadrado de lado 5: a diagonal é 10?
-[TEMPO] O que você precisa saber
-[TEMPO] A diagonal do quadrado: d = ℓ√2
-[TEMPO] A altura do equilátero: h = ℓ√3/2
-[TEMPO] O erro de esquecer o dividido por 2
-[TEMPO] O atalho para não trocar as fórmulas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: altura de 2√3 cm
-[TEMPO] Resumo e próxima aula
+0:00 Quadrado de lado 5: a diagonal é 10?
+0:22 O que você precisa saber
+0:39 A diagonal do quadrado: d = ℓ√2
+1:48 A altura do equilátero: h = ℓ√3/2
+3:05 O erro de esquecer o dividido por 2
+3:22 O atalho para não trocar as fórmulas
+3:53 Hora de testar
+4:08 Resolvendo: altura de 2√3 cm
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Altura, mediana, bissetriz e mediatriz: [LINK MAT-ANG-008]

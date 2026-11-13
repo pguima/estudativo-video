@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-013 · Satélites e marés
 
-**Arquivo:** `final/estudativo_FIS-EGF-013_satelites_e_mares.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-013_satelites_e_mares.mp4` · 5:05 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ A quatrocentos quilômetros de altura, a gravidade ainda vale quase 9 m/s². Ent
 ✅ O erro do astronauta "sem gravidade"
 
 ⏱️ Capítulos
-[TEMPO] A Estação Espacial cai o tempo todo
-[TEMPO] O que você precisa saber
-[TEMPO] O canhão de Newton
-[TEMPO] A velocidade de um satélite
-[TEMPO] As marés
-[TEMPO] O erro do astronauta sem gravidade
-[TEMPO] O atalho: v² vezes R constante
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o satélite rente ao planeta
-[TEMPO] Resumo e próxima aula
+0:00 A Estação Espacial cai o tempo todo
+0:22 O que você precisa saber
+0:37 O canhão de Newton
+0:53 A velocidade de um satélite
+2:22 As marés
+3:11 O erro do astronauta sem gravidade
+3:28 O atalho: v² vezes R constante
+3:56 Hora de testar
+4:17 Resolvendo: o satélite rente ao planeta
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Gravitação universal: [LINK FIS-EGF-003]

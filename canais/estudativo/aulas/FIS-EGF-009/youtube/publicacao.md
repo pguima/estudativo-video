@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-009 · Praticando: hidrostática
 
-**Arquivo:** `final/estudativo_FIS-EGF-009_praticando_hidrostatica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-009_praticando_hidrostatica.mp4` · 4:39 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações criadas para esta aula: a pressão de um salto fino, um tubo e
 ✅ Flutuar ou afundar: o gelo na água e no óleo
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: o salto fino
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: o tubo em U
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: a prensa
-[TEMPO] Resposta da situação 3
-[TEMPO] Situação 4: a balança de gancho
-[TEMPO] Resposta da situação 4
-[TEMPO] O atalho: a densidade pela balança
-[TEMPO] Situação 5: o gelo
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações
+0:12 As quatro ferramentas
+0:29 Situação 1: o salto fino
+0:48 Resposta da situação 1
+1:13 Situação 2: o tubo em U
+1:31 Resposta da situação 2
+1:54 Situação 3: a prensa
+2:09 Resposta da situação 3
+2:35 Situação 4: a balança de gancho
+2:51 Resposta da situação 4
+3:14 O atalho: a densidade pela balança
+3:37 Situação 5: o gelo
+3:52 Resposta da situação 5
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Pressão: força por área: [LINK FIS-EGF-004]

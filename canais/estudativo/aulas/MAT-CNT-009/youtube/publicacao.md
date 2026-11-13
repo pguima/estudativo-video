@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-009 · Combinações em problemas de escolha
 
-**Arquivo:** `final/estudativo_MAT-CNT-009_combinacoes_problemas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-009_combinacoes_problemas.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma comissão com 2 homens, escolhidos entre 5, e 2 mulheres, escolhidas entre 4
 ✅ Quando não compensa: "exatamente uma mulher" se conta direto (40)
 
 ⏱️ Capítulos
-[TEMPO] 2 homens e 2 mulheres: 16 comissões?
-[TEMPO] O que você precisa saber
-[TEMPO] A comissão em etapas
-[TEMPO] O pelo menos um, caso a caso
-[TEMPO] O erro de garantir uma mulher
-[TEMPO] O atalho: tudo menos o nenhum
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo professores e alunos
-[TEMPO] Resumo e próxima aula
+0:00 2 homens e 2 mulheres: 16 comissões?
+0:19 O que você precisa saber
+0:35 A comissão em etapas
+1:10 O pelo menos um, caso a caso
+1:59 O erro de garantir uma mulher
+2:21 O atalho: tudo menos o nenhum
+2:59 Hora de testar
+3:16 Resolvendo professores e alunos
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Combinação: quando a ordem não importa: [LINK MAT-CNT-008]

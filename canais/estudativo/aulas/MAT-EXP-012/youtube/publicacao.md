@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-012 · Equações logarítmicas
 
-**Arquivo:** `final/estudativo_MAT-EXP-012_equacoes_logaritmicas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-012_equacoes_logaritmicas.mp4` · 5:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ log x + log(x − 3) = 1 tem duas respostas na conta, 5 e −2, mas uma delas é
 ✅ O atalho: filtre as alternativas pela condição
 
 ⏱️ Capítulos
-[TEMPO] Uma das raízes é falsa
-[TEMPO] O que você precisa saber
-[TEMPO] log₂(x − 1) = 3: condição primeiro
-[TEMPO] log x + log(x − 3) = 1
-[TEMPO] O filtro da condição de existência
-[TEMPO] O método em quatro passos
-[TEMPO] O erro: juntar somando dentro
-[TEMPO] O atalho: filtre as alternativas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo log₃(x + 1) + log₃(x − 1) = 1
-[TEMPO] Resumo e próxima aula
+0:00 Uma das raízes é falsa
+0:27 O que você precisa saber
+0:44 log₂(x − 1) = 3: condição primeiro
+1:17 log x + log(x − 3) = 1
+2:14 O filtro da condição de existência
+2:50 O método em quatro passos
+3:02 O erro: juntar somando dentro
+3:30 O atalho: filtre as alternativas
+3:53 Hora de testar
+4:11 Resolvendo log₃(x + 1) + log₃(x − 1) = 1
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Propriedades dos logaritmos: [LINK MAT-EXP-009]

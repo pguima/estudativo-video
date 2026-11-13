@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-021 · Praticando: análise crítica de dados
 
-**Arquivo:** `final/estudativo_MAT-EST-021_praticando_analise_critica_de_dados.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-021_praticando_analise_critica_de_dados.mp4` · 7:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco conclusões inéditas e uma pergunta só: ela se sustenta nos dados? Um gr
 ✅ Correlação e causa: o tamanho do incêndio explica os bombeiros e o prejuízo
 
 ⏱️ Capítulos
-[TEMPO] Cinco conclusões para testar
-[TEMPO] O que você precisa saber
-[TEMPO] Situação 1: o aluguel nos dois bairros
-[TEMPO] Resposta 1: o eixo começa em R$ 980
-[TEMPO] Situação 2: a pizza dos aplicativos
-[TEMPO] Resposta 2: as fatias somam 135%
-[TEMPO] O atalho: some as fatias
-[TEMPO] Situação 3: o reforço aos sábados
-[TEMPO] Resposta 3: essa conclusão se sustenta
-[TEMPO] Situação 4: desemprego sobe 2%?
-[TEMPO] Resposta 4: pontos percentuais e variação
-[TEMPO] Situação 5: bombeiros e prejuízo
-[TEMPO] Resposta 5: o terceiro fator
-[TEMPO] Resumo e próxima aula
+0:00 Cinco conclusões para testar
+0:15 O que você precisa saber
+0:33 Situação 1: o aluguel nos dois bairros
+0:54 Resposta 1: o eixo começa em R$ 980
+1:21 Situação 2: a pizza dos aplicativos
+1:40 Resposta 2: as fatias somam 135%
+1:59 O atalho: some as fatias
+4:40 Situação 3: o reforço aos sábados
+4:59 Resposta 3: essa conclusão se sustenta
+5:22 Situação 4: desemprego sobe 2%?
+5:35 Resposta 4: pontos percentuais e variação
+5:56 Situação 5: bombeiros e prejuízo
+6:11 Resposta 5: o terceiro fator
+6:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráficos que enganam: [LINK MAT-EST-019]

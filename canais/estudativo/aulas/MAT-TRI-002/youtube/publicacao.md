@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-002 · Achar um lado com seno, cosseno ou tangente
 
-**Arquivo:** `final/estudativo_MAT-TRI-002_achar_um_lado_com_seno_cosseno_ou_tangente.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-002_achar_um_lado_com_seno_cosseno_ou_tangente.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma escada de 10 metros apoiada numa parede faz 37° com o chão. A que altura e
 ✅ A pipa a 12 m: 0,6 = 12/x, linha de 20 m
 
 ⏱️ Capítulos
-[TEMPO] A escada de 10 metros a 37°
-[TEMPO] O que você precisa saber
-[TEMPO] As três perguntas e a escada
-[TEMPO] A tangente: o telhado
-[TEMPO] O erro de escolher pela posição
-[TEMPO] O atalho: hipotenusa vezes seno
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a pipa
-[TEMPO] Resumo e próxima aula
+0:00 A escada de 10 metros a 37°
+0:20 O que você precisa saber
+0:36 As três perguntas e a escada
+1:54 A tangente: o telhado
+2:20 O erro de escolher pela posição
+2:49 O atalho: hipotenusa vezes seno
+3:18 Hora de testar
+3:38 Resolvendo a pipa
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Seno, cosseno e tangente no triângulo retângulo: [LINK MAT-TRI-001]

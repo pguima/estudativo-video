@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-001 · Lei dos senos
 
-**Arquivo:** `final/estudativo_MAT-TRA-001_lei_dos_senos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-001_lei_dos_senos.mp4` · 4:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um triângulo com ângulos de 30° e 45° e o lado de frente para os 30° medind
 ✅ Questão com ângulo de 120°, usando sen 120° = sen 60°
 
 ⏱️ Capítulos
-[TEMPO] Um triângulo sem ângulo reto
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem a lei dos senos
-[TEMPO] A regra com letras
-[TEMPO] A conta: x = 10√2
-[TEMPO] O erro do par errado
-[TEMPO] O atalho do número fixo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ângulo de 120°
-[TEMPO] Resumo e próxima aula
+0:00 Um triângulo sem ângulo reto
+0:23 O que você precisa saber
+0:40 De onde vem a lei dos senos
+1:22 A regra com letras
+1:39 A conta: x = 10√2
+2:19 O erro do par errado
+2:44 O atalho do número fixo
+3:18 Hora de testar
+3:35 Resolvendo: o ângulo de 120°
+4:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Achar um lado com seno, cosseno ou tangente: [LINK MAT-TRI-002]

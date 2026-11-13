@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-001 · Luz em linha reta: sombra e câmara escura
 
-**Arquivo:** `final/estudativo_FIS-OPT-001_luz_em_linha_reta_sombra_camara_escura.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-001_luz_em_linha_reta_sombra_camara_escura.mp4` · 5:08 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Uma caixa de sapato com um furinho mostra uma árvore inteira, de cabeça para b
 ✅ O atalho: distância ÷ profundidade
 
 ⏱️ Capítulos
-[TEMPO] A árvore de cabeça para baixo
-[TEMPO] O que você precisa saber
-[TEMPO] A luz anda em linha reta
-[TEMPO] Sombra e penumbra
-[TEMPO] Eclipses
-[TEMPO] A câmara escura
-[TEMPO] O erro das unidades
-[TEMPO] O atalho da câmara escura
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o poste
-[TEMPO] Resumo e próxima aula
+0:00 A árvore de cabeça para baixo
+0:22 O que você precisa saber
+0:40 A luz anda em linha reta
+1:06 Sombra e penumbra
+1:37 Eclipses
+2:04 A câmara escura
+3:07 O erro das unidades
+3:25 O atalho da câmara escura
+3:53 Hora de testar
+4:10 Resolvendo: o poste
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Semelhança em problemas: sombras e triângulos encaixados: [LINK MAT-ANG-013]

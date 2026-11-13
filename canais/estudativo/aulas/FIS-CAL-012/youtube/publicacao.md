@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-012 · Primeira lei da termodinâmica
 
-**Arquivo:** `final/estudativo_FIS-CAL-012_primeira_lei_termodinamica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-012_primeira_lei_termodinamica.mp4` · 4:24 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Um gás recebe 500 J de calor, empurra um êmbolo e ainda esquenta. Para onde fo
 ✅ O atalho: desenhe o gás como uma caixa
 
 ⏱️ Capítulos
-[TEMPO] Para onde foi cada joule?
-[TEMPO] O que você precisa saber
-[TEMPO] Energia interna
-[TEMPO] A primeira lei: Q = τ + ΔU
-[TEMPO] A regra de sinais
-[TEMPO] Exemplo: o gás que esquenta e empurra
-[TEMPO] Exemplo: a bomba de encher pneu
-[TEMPO] O erro do sinal na compressão
-[TEMPO] O atalho: a caixa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o gás que cede calor
-[TEMPO] Resumo e próxima aula
+0:00 Para onde foi cada joule?
+0:14 O que você precisa saber
+0:30 Energia interna
+0:48 A primeira lei: Q = τ + ΔU
+1:24 A regra de sinais
+1:42 Exemplo: o gás que esquenta e empurra
+1:59 Exemplo: a bomba de encher pneu
+2:30 O erro do sinal na compressão
+2:46 O atalho: a caixa
+3:19 Hora de testar
+3:34 Resolvendo: o gás que cede calor
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de um gás: [LINK FIS-CAL-011]

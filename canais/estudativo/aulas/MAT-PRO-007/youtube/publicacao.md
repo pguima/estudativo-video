@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-007 · Praticando: sequências e PA
 
-**Arquivo:** `final/estudativo_MAT-PRO-007_praticando_sequencias_e_pa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-007_praticando_sequencias_e_pa.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações do dia a dia, criadas para esta aula, para você pausar, reso
 ✅ Contar termos: (39 − 3) ÷ 4 + 1 = 10 postos, o sexto no km 23
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para pausar e resolver
-[TEMPO] As ferramentas que você vai usar
-[TEMPO] Situação 1: triângulos de palitos
-[TEMPO] Resposta 1: a lei e a soma das figuras
-[TEMPO] Situação 2: o dia 200 do curso
-[TEMPO] Resposta 2: o resto manda
-[TEMPO] Situação 3: as 12 parcelas
-[TEMPO] Resposta 3: a última parcela e o total
-[TEMPO] O atalho da média
-[TEMPO] Situação 4: os postos de água
-[TEMPO] Resposta 4: saltos mais um
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para pausar e resolver
+0:13 As ferramentas que você vai usar
+0:28 Situação 1: triângulos de palitos
+0:54 Resposta 1: a lei e a soma das figuras
+1:37 Situação 2: o dia 200 do curso
+1:51 Resposta 2: o resto manda
+2:33 Situação 3: as 12 parcelas
+2:54 Resposta 3: a última parcela e o total
+3:18 O atalho da média
+3:40 Situação 4: os postos de água
+3:59 Resposta 4: saltos mais um
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Sequências e lei de formação: [LINK MAT-PRO-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-003 · Força magnética sobre uma carga
 
-**Arquivo:** `final/estudativo_FIS-MAG-003_forca_magnetica_sobre_uma_carga.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-003_forca_magnetica_sobre_uma_carga.mp4` · 4:48 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ As partículas com carga que vêm do Sol são desviadas pelo campo magnético da
 ✅ O erro de achar que a força magnética acelera a carga
 
 ⏱️ Capítulos
-[TEMPO] A aurora e a chuva de partículas
-[TEMPO] O que você precisa saber
-[TEMPO] Quando existe força magnética
-[TEMPO] A fórmula e um exemplo
-[TEMPO] O sentido: a mão do tapa
-[TEMPO] A curva da carga e o raio
-[TEMPO] O erro: a força magnética não acelera
-[TEMPO] O atalho: iguale e corte um v
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o elétron no campo
-[TEMPO] Resumo e próxima aula
+0:00 A aurora e a chuva de partículas
+0:21 O que você precisa saber
+0:36 Quando existe força magnética
+0:52 A fórmula e um exemplo
+1:33 O sentido: a mão do tapa
+2:05 A curva da carga e o raio
+2:59 O erro: a força magnética não acelera
+3:14 O atalho: iguale e corte um v
+3:44 Hora de testar
+4:02 Resolvendo: o elétron no campo
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Ímãs e campo magnético: [LINK FIS-MAG-001]

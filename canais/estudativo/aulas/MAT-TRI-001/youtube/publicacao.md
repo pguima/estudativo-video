@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-001 · Seno, cosseno e tangente no triângulo retângulo
 
-**Arquivo:** `final/estudativo_MAT-TRI-001_seno_cosseno_e_tangente.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-001_seno_cosseno_e_tangente.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Num triângulo retângulo de lados 3, 4 e 5, divida o menor lado pelo maior: dá
 ✅ Catetos 5 e 12: hipotenusa 13, sen = 12/13, cos = 5/13 e tg = 2,4
 
 ⏱️ Capítulos
-[TEMPO] Por que 3/5 e 6/10 dão o mesmo 0,6
-[TEMPO] O que você precisa saber
-[TEMPO] Cateto oposto, adjacente e hipotenusa
-[TEMPO] Seno, cosseno e tangente
-[TEMPO] O erro de decorar o lado
-[TEMPO] O atalho: tangente = seno ÷ cosseno
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Por que 3/5 e 6/10 dão o mesmo 0,6
+0:31 O que você precisa saber
+0:48 Cateto oposto, adjacente e hipotenusa
+1:17 Seno, cosseno e tangente
+2:00 O erro de decorar o lado
+2:26 O atalho: tangente = seno ÷ cosseno
+3:13 Hora de testar
+3:27 Resolvendo a questão
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Teorema de Pitágoras: [LINK MAT-ANG-015]

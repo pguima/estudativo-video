@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-004 · Peso e força normal
 
-**Arquivo:** `final/estudativo_FIS-DIN-004_peso_e_forca_normal.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-004_peso_e_forca_normal.mp4` · 4:14 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Numa balança dentro do elevador que arranca para cima, você "engorda" sem a ma
 ✅ O atalho: N = m(g + a) e N = m(g − a)
 
 ⏱️ Capítulos
-[TEMPO] A balança no elevador
-[TEMPO] O que você precisa saber
-[TEMPO] Peso: P = m·g
-[TEMPO] A força normal
-[TEMPO] A normal no elevador
-[TEMPO] O erro: subir não aumenta a normal
-[TEMPO] O atalho: N = m(g ± a)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o elevador que desce freando
-[TEMPO] Resumo e próxima aula
+0:00 A balança no elevador
+0:19 O que você precisa saber
+0:34 Peso: P = m·g
+1:19 A força normal
+1:46 A normal no elevador
+2:28 O erro: subir não aumenta a normal
+2:44 O atalho: N = m(g ± a)
+3:16 Hora de testar
+3:31 Resolvendo: o elevador que desce freando
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Newton: F = m·a: [LINK FIS-DIN-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-003 · Dispositivo de Briot-Ruffini
 
-**Arquivo:** `final/estudativo_MAT-PLN-003_briot_ruffini.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-003_briot_ruffini.mp4` · 4:28 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Dividir x³ − 2x² − 5x + 6 por x − 1 pela chave dá três rodadas de cont
 ✅ O atalho: a tabela calcula P(3) só com vezes e mais
 
 ⏱️ Capítulos
-[TEMPO] Dividir em vinte segundos
-[TEMPO] O que você precisa saber
-[TEMPO] Montando a tabela
-[TEMPO] A regra: baixe, multiplique e some
-[TEMPO] Lendo o quociente e o resto
-[TEMPO] Quando falta um termo
-[TEMPO] O erro de pular o zero
-[TEMPO] O atalho: a tabela calcula P(3)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 2x³ − 3x + 1 por x − 1
-[TEMPO] Resumo e próxima aula
+0:00 Dividir em vinte segundos
+0:25 O que você precisa saber
+0:38 Montando a tabela
+0:51 A regra: baixe, multiplique e some
+1:12 Lendo o quociente e o resto
+1:34 Quando falta um termo
+2:13 O erro de pular o zero
+2:31 O atalho: a tabela calcula P(3)
+3:12 Hora de testar
+3:24 Resolvendo: 2x³ − 3x + 1 por x − 1
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Divisão de polinômios e teorema do resto: [LINK MAT-PLN-002]

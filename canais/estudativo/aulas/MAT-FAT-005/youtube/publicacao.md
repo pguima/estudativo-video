@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-005 · Racionalizar denominadores: pela raiz e pelo conjugado
 
-**Arquivo:** `final/estudativo_MAT-FAT-005_racionalizar_denominadores.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-005_racionalizar_denominadores.mp4` · 4:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: o de baixo final antes da conta
 
 ⏱️ Capítulos
-[TEMPO] 1/√2 = √2/2
-[TEMPO] O que você precisa saber
-[TEMPO] O que é racionalizar
-[TEMPO] Raiz sozinha embaixo
-[TEMPO] Soma ou subtração embaixo: o conjugado
-[TEMPO] O erro de multiplicar só embaixo
-[TEMPO] O atalho: o de baixo final antes da conta
-[TEMPO] Hora de testar
-[TEMPO] Resposta: √5 − 1
-[TEMPO] Resumo e próxima aula
+0:00 1/√2 = √2/2
+0:22 O que você precisa saber
+0:36 O que é racionalizar
+0:50 Raiz sozinha embaixo
+1:25 Soma ou subtração embaixo: o conjugado
+2:18 O erro de multiplicar só embaixo
+2:35 O atalho: o de baixo final antes da conta
+3:11 Hora de testar
+3:23 Resposta: √5 − 1
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações equivalentes e simplificação: [LINK MAT-FRA-003]

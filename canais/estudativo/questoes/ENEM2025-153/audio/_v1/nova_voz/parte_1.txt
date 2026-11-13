@@ -1,0 +1,17 @@
+Questão cento e cinquenta e três do ENEM dois mil e vinte e cinco. É uma questão de leitura, sem conta difícil. E no final tem um atalho que acha a resposta em dois olhares.
+
+Uma empresa identifica cada visitante com um código de sete dígitos. Lido da esquerda para a direita, ele tem quatro pedaços.
+
+O primeiro dígito é o andar, de um a quatro. Os dois seguintes são o setor, de zero um a vinte. Os três seguintes são o funcionário, de zero zero um a cento e trinta e cinco. E o último é o turno: zero de manhã, um à tarde.
+
+Agora, o visitante. Ele chegou às dez da manhã, vai falar com o funcionário cento e nove, do setor oito, no segundo andar.
+
+Vamos encaixar pedaço por pedaço. Andar: dois. Setor oito, mas o setor ocupa duas casas, então fica zero oito. Funcionário: um, zero, nove. Manhã: zero.
+
+O código é dois, zero, oito, um, zero, nove, zero. Alternativa D.
+
+O erro mais comum é esquecer o zero do setor e escrever só oito. Mas o setor sempre ocupa duas casas. É por isso que a regra diz zero um a vinte, e não um a vinte.
+
+Agora, o atalho. Você nem precisa montar o código inteiro. O primeiro dígito é o andar, dois: corta a A, a B e a C. O segundo dígito é o começo do setor, zero: corta a E. Sobrou a D, em dois olhares.
+
+Em questão de código, lembre: cada pedaço tem um número fixo de casas. Se essa resolução te ajudou, inscreva-se, que tem mais questão do ENEM resolvida aqui.

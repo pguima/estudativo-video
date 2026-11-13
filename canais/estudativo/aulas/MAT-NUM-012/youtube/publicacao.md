@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-012 · Praticando: números e as quatro operações
 
-**Arquivo:** `final/estudativo_MAT-NUM-012_praticando_quatro_operacoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-012_praticando_quatro_operacoes.mp4` · 4:55 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,19 +29,19 @@ Cinco questões criadas para o curso, com as quatro contas e os atalhos do módu
 ✅ Escolher a conta e decidir o que fazer com o resto
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões: pause e resolva
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: qual prêmio é maior?
-[TEMPO] Resposta 1: grupo por grupo
-[TEMPO] Questão 2: o boleto
-[TEMPO] Resposta 2: subtrair sem empréstimo
-[TEMPO] Questão 3: os ingressos
-[TEMPO] Resposta 3: vezes 5 e vezes 99 de cabeça
-[TEMPO] Questão 4: o prêmio repartido
-[TEMPO] Resposta 4: dividir por 23
-[TEMPO] Questão 5: os ônibus
-[TEMPO] Resposta 5: o resto não some
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões: pause e resolva
+0:14 O que você vai usar
+0:30 Questão 1: qual prêmio é maior?
+0:42 Resposta 1: grupo por grupo
+1:14 Questão 2: o boleto
+1:27 Resposta 2: subtrair sem empréstimo
+2:02 Questão 3: os ingressos
+2:16 Resposta 3: vezes 5 e vezes 99 de cabeça
+2:45 Questão 4: o prêmio repartido
+2:58 Resposta 4: dividir por 23
+3:45 Questão 5: os ônibus
+3:57 Resposta 5: o resto não some
+4:30 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler e comparar números grandes: [LINK MAT-NUM-002]

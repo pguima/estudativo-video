@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-009 · Encher um recipiente: nível, vazão e tempo
 
-**Arquivo:** `final/estudativo_MAT-ESP-009_encher_um_recipiente.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-009_encher_um_recipiente.mp4` · 4:53 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um aquário tem fundo de 60 cm por 30 cm. Você despeja um balde de 9 litros: qu
 ✅ O atalho: com paredes retas e vazão constante, 1/4 do tempo é 1/4 da altura
 
 ⏱️ Capítulos
-[TEMPO] Quanto o nível sobe com 9 litros?
-[TEMPO] O que você precisa saber
-[TEMPO] A camada de água: nível = volume ÷ área do fundo
-[TEMPO] Resolvendo o aquário
-[TEMPO] Em quanto tempo a caixa-d'água enche
-[TEMPO] O nível depois de meia hora
-[TEMPO] O erro de dividir litros por m²
-[TEMPO] O atalho: a mesma fração do tempo e da altura
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a caixa cilíndrica
-[TEMPO] Resumo e próxima aula
+0:00 Quanto o nível sobe com 9 litros?
+0:23 O que você precisa saber
+0:42 A camada de água: nível = volume ÷ área do fundo
+1:11 Resolvendo o aquário
+1:40 Em quanto tempo a caixa-d'água enche
+2:12 O nível depois de meia hora
+2:29 O erro de dividir litros por m²
+2:47 O atalho: a mesma fração do tempo e da altura
+3:18 Hora de testar
+3:39 Resolvendo a caixa cilíndrica
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Cilindro: área e volume: [LINK MAT-ESP-008]

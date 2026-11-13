@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-009 · Atalhos da PG: termo do meio e três termos
 
-**Arquivo:** `final/estudativo_MAT-PRO-009_atalhos_da_pg_termo_do_meio_e_tres_termos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-009_atalhos_da_pg_termo_do_meio_e_tres_termos.mp4` · 5:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Em 4, x, 9, uma PG de termos positivos, quem tira a média responde 6,5 e erra. 
 ✅ O atalho: 12, x, 75 fatorados em duplas, x = 2 · 3 · 5 = 30
 
 ⏱️ Capítulos
-[TEMPO] 4, x, 9: por que não é 6,5?
-[TEMPO] O que você precisa saber
-[TEMPO] O termo do meio da PG
-[TEMPO] Três termos: x/q, x, x · q
-[TEMPO] O erro de tirar a média
-[TEMPO] O atalho: fatore os vizinhos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 2, x, 50 e a caixa
-[TEMPO] Resumo e próxima aula
+0:00 4, x, 9: por que não é 6,5?
+0:22 O que você precisa saber
+0:35 O termo do meio da PG
+1:47 Três termos: x/q, x, x · q
+3:13 O erro de tirar a média
+3:42 O atalho: fatore os vizinhos
+4:24 Hora de testar
+4:50 Resolvendo: 2, x, 50 e a caixa
+5:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão geométrica, razão e termo geral: [LINK MAT-PRO-008]

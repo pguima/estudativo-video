@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-007 · Arranjo: quando a ordem importa
 
-**Arquivo:** `final/estudativo_MAT-CNT-007_arranjo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-007_arranjo.mp4` · 4:25 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Oito corredores na final, ouro, prata e bronze: quantos pódios diferentes podem
 ✅ O atalho: multiplique descendo do total, um número por lugar (10 × 9 = 90)
 
 ⏱️ Capítulos
-[TEMPO] 8 corredores: quantos pódios?
-[TEMPO] O que você precisa saber
-[TEMPO] Uma casinha para cada lugar do pódio
-[TEMPO] O teste da troca
-[TEMPO] Arranjo e a fórmula A(n, p)
-[TEMPO] O erro de usar o fatorial do total
-[TEMPO] O atalho: multiplique descendo do total
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as chapas do clube
-[TEMPO] Resumo e próxima aula
+0:00 8 corredores: quantos pódios?
+0:22 O que você precisa saber
+0:38 Uma casinha para cada lugar do pódio
+1:08 O teste da troca
+1:49 Arranjo e a fórmula A(n, p)
+2:37 O erro de usar o fatorial do total
+2:52 O atalho: multiplique descendo do total
+3:23 Hora de testar
+3:39 Resolvendo as chapas do clube
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Permutação simples: filas e anagramas: [LINK MAT-CNT-005]

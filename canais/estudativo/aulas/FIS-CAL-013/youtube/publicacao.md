@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-013 · A primeira lei em cada transformação
 
-**Arquivo:** `final/estudativo_FIS-CAL-013_primeira_lei_em_cada_transformacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-013_primeira_lei_em_cada_transformacao.mp4` · 4:28 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Abra um refrigerante e às vezes aparece uma fumacinha no gargalo: o gás esfrio
 ✅ O atalho: o que não muda zera um termo
 
 ⏱️ Capítulos
-[TEMPO] A fumacinha do refrigerante
-[TEMPO] O que você precisa saber
-[TEMPO] Isotérmica
-[TEMPO] Isovolumétrica
-[TEMPO] Adiabática
-[TEMPO] Ciclo e isobárica
-[TEMPO] O erro: isotérmica troca calor, sim
-[TEMPO] O atalho: o que não muda zera um termo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a expansão adiabática
-[TEMPO] Resumo e próxima aula
+0:00 A fumacinha do refrigerante
+0:22 O que você precisa saber
+0:39 Isotérmica
+1:05 Isovolumétrica
+1:34 Adiabática
+2:23 Ciclo e isobárica
+2:50 O erro: isotérmica troca calor, sim
+3:07 O atalho: o que não muda zera um termo
+3:35 Hora de testar
+3:49 Resolvendo: a expansão adiabática
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Primeira lei da termodinâmica: [LINK FIS-CAL-012]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-019 · Praticando: Pitágoras e relações métricas
 
-**Arquivo:** `final/estudativo_MAT-ANG-019_praticando_pitagoras_e_relacoes_metricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-019_praticando_pitagoras_e_relacoes_metricas.mp4` · 5:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações criadas para esta aula: pause, escolha a ferramenta, resolva e
 ✅ Relações métricas: pedaços 9 e 16 dão altura 12 e catetos 15 e 20
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] As ferramentas
-[TEMPO] Situação 1: a cerca do terreno
-[TEMPO] Resposta 1: 29 m
-[TEMPO] Situação 2: o cabo da antena
-[TEMPO] Resposta 2: 15 m
-[TEMPO] Situação 3: a régua na mesa
-[TEMPO] Resposta 3: não cabe
-[TEMPO] O atalho: compare os quadrados
-[TEMPO] Situação 4: a placa equilátera
-[TEMPO] Resposta 4: perto de 26 cm
-[TEMPO] Situação 5: altura e catetos pelos pedaços
-[TEMPO] Resposta 5: 12, 15 e 20
-[TEMPO] Resumo e próxima trilha
+0:00 Cinco situações para resolver
+0:11 As ferramentas
+0:29 Situação 1: a cerca do terreno
+0:44 Resposta 1: 29 m
+1:23 Situação 2: o cabo da antena
+1:38 Resposta 2: 15 m
+1:59 Situação 3: a régua na mesa
+2:15 Resposta 3: não cabe
+2:39 O atalho: compare os quadrados
+3:04 Situação 4: a placa equilátera
+3:16 Resposta 4: perto de 26 cm
+3:43 Situação 5: altura e catetos pelos pedaços
+3:58 Resposta 5: 12, 15 e 20
+4:36 Resumo e próxima trilha
 
 📚 Antes desta aula
 Teorema de Pitágoras: achar hipotenusa ou cateto: [LINK MAT-ANG-015]

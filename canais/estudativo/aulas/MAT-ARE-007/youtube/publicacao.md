@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-007 · Praticando: perímetros e áreas
 
-**Arquivo:** `final/estudativo_MAT-ARE-007_praticando_perimetros_e_areas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-007_praticando_perimetros_e_areas.mp4` · 5:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações de obra e reforma, criadas para esta aula: pause, escolha a f�
 ✅ Maior área com 60 m de tela: A(x) = x(30 − x), vértice em 15, 225 m²
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações de obra
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a cerca do terreno
-[TEMPO] Resposta 1: R$ 1.950
-[TEMPO] O atalho: vezes 15 é vezes 10 mais a metade
-[TEMPO] Situação 2: grama e borda do canteiro
-[TEMPO] Resposta 2: R$ 480 e 34 m
-[TEMPO] Situação 3: o piso da varanda
-[TEMPO] Resposta 3: R$ 750
-[TEMPO] Situação 4: tinta no quiosque
-[TEMPO] Resposta 4: 3 galões
-[TEMPO] Situação 5: o galinheiro de maior área
-[TEMPO] Resposta 5: 15 m por 15 m, 225 m²
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações de obra
+0:16 O que você vai usar
+0:32 Situação 1: a cerca do terreno
+0:47 Resposta 1: R$ 1.950
+1:14 O atalho: vezes 15 é vezes 10 mais a metade
+1:46 Situação 2: grama e borda do canteiro
+2:06 Resposta 2: R$ 480 e 34 m
+2:42 Situação 3: o piso da varanda
+3:00 Resposta 3: R$ 750
+3:25 Situação 4: tinta no quiosque
+3:44 Resposta 4: 3 galões
+4:20 Situação 5: o galinheiro de maior área
+4:35 Resposta 5: 15 m por 15 m, 225 m²
+5:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Perímetro: o contorno de uma figura: [LINK MAT-ARE-001]

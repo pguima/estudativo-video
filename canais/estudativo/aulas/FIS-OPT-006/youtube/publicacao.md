@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-006 · Lentes: formar imagens
 
-**Arquivo:** `final/estudativo_FIS-OPT-006_lentes_convergente_divergente.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-006_lentes_convergente_divergente.mp4` · 5:02 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Com a lupa perto do livro, a letra cresce e fica de pé; de braço esticado, a p
 ✅ O macete da última palavra do nome
 
 ⏱️ Capítulos
-[TEMPO] A lupa que aumenta e inverte
-[TEMPO] O que você precisa saber
-[TEMPO] Convergente e divergente
-[TEMPO] Os raios notáveis
-[TEMPO] A convergente, caso a caso
-[TEMPO] A divergente
-[TEMPO] O erro mais comum
-[TEMPO] O macete do nome
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o projetor
-[TEMPO] Resumo e próxima aula
+0:00 A lupa que aumenta e inverte
+0:24 O que você precisa saber
+0:42 Convergente e divergente
+1:33 Os raios notáveis
+2:00 A convergente, caso a caso
+2:41 A divergente
+2:58 O erro mais comum
+3:16 O macete do nome
+4:02 Hora de testar
+4:19 Resolvendo: o projetor
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Índice de refração e lei de Snell: [LINK FIS-OPT-004]

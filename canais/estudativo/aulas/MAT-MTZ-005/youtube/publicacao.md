@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-005 · Praticando: matrizes e determinantes
 
-**Arquivo:** `final/estudativo_MAT-MTZ-005_praticando_matrizes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-005_praticando_matrizes.mp4` · 5:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,20 +31,20 @@ Cinco questões inéditas para treinar tudo de matrizes e determinantes: montar 
 ✅ Quando o produto existe e qual o tamanho
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões para treinar
-[TEMPO] As ferramentas
-[TEMPO] Questão 1: transposta e soma
-[TEMPO] Resolvendo a questão 1
-[TEMPO] Questão 2: produto de matrizes
-[TEMPO] Resolvendo a questão 2
-[TEMPO] O atalho: calcule um elemento só
-[TEMPO] Questão 3: determinante 3x3
-[TEMPO] Resolvendo a questão 3
-[TEMPO] Questão 4: a inversa
-[TEMPO] Resolvendo a questão 4
-[TEMPO] Questão 5: o produto existe?
-[TEMPO] Resolvendo a questão 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões para treinar
+0:13 As ferramentas
+0:29 Questão 1: transposta e soma
+0:48 Resolvendo a questão 1
+1:22 Questão 2: produto de matrizes
+1:37 Resolvendo a questão 2
+2:07 O atalho: calcule um elemento só
+2:28 Questão 3: determinante 3x3
+2:42 Resolvendo a questão 3
+3:14 Questão 4: a inversa
+3:26 Resolvendo a questão 4
+3:58 Questão 5: o produto existe?
+4:14 Resolvendo a questão 5
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é matriz: soma e multiplicação por número: [LINK MAT-MTZ-001]

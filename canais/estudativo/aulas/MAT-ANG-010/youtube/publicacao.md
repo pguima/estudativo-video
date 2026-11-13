@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-010 · Teorema de Tales: feixe de paralelas
 
-**Arquivo:** `final/estudativo_MAT-ANG-010_teorema_de_tales_feixe_de_paralelas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-010_teorema_de_tales_feixe_de_paralelas.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Num mapa, três ruas paralelas cortam duas avenidas. Numa avenida, os quarteirõ
 ✅ Questão resolvida: quarteirões de 80 m e 120 m
 
 ⏱️ Capítulos
-[TEMPO] Quanto mede o quarteirão, sem régua?
-[TEMPO] O que você precisa saber
-[TEMPO] Feixe de paralelas e transversal
-[TEMPO] Por que os pedaços combinam: o caderno
-[TEMPO] O Teorema de Tales e a cruz
-[TEMPO] Outras montagens e o trecho inteiro
-[TEMPO] O erro de trocar a ordem
-[TEMPO] O atalho: procure o fator
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 80 m e 120 m
-[TEMPO] Resumo e próxima aula
+0:00 Quanto mede o quarteirão, sem régua?
+0:24 O que você precisa saber
+0:36 Feixe de paralelas e transversal
+0:49 Por que os pedaços combinam: o caderno
+1:15 O Teorema de Tales e a cruz
+1:54 Outras montagens e o trecho inteiro
+2:14 O erro de trocar a ordem
+2:41 O atalho: procure o fator
+3:12 Hora de testar
+3:32 Resolvendo: 80 m e 120 m
+4:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas paralelas cortadas por uma transversal: [LINK MAT-ANG-003]

@@ -217,13 +217,51 @@ def orbita(c, cx, cy, r, cor=None, a=1.0, giro=0.0, sombra=True):
     aneis(True)
 
 
+def hexagono(c, cx, cy, r, cor=None, a=1.0, giro=0.0, sombra=True):
+    """o símbolo da Química: anel hexagonal com volume, como o benzeno, com o círculo das ligações no meio. r = raio do anel"""
+    cor = cor or COR
+    if a <= 0 or r <= 0:
+        return
+    lw = r * 0.26
+
+    def hexa(R):
+        p = skia.Path()
+        for k in range(6):
+            g = math.radians(90 + 60 * k)
+            (p.moveTo if k == 0 else p.lineTo)(R * math.cos(g), -R * math.sin(g))
+        p.close()
+        return p
+    anel = hexa(r)
+    c.save(); c.translate(cx, cy); c.rotate(giro)
+    if sombra:
+        s = skia.Paint(AntiAlias=True, Color=hexc("#000000", 0.22 * a), Style=skia.Paint.kStroke_Style, StrokeWidth=lw)
+        s.setStrokeJoin(skia.Paint.kRound_Join)
+        s.setMaskFilter(skia.MaskFilter.MakeBlur(skia.kNormal_BlurStyle, r * 0.07))
+        c.save(); c.translate(r * 0.07, r * 0.11); c.drawPath(anel, s); c.restore()
+    p = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=lw)
+    p.setStrokeJoin(skia.Paint.kRound_Join)
+    p.setShader(skia.GradientShader.MakeLinear(
+        [skia.Point(-r, -r), skia.Point(r, r)], [hexc(mix(cor, "#FFFFFF", 0.25), a), hexc(cor, a), hexc(mix(cor, "#000000", 0.3), a)], [0.0, 0.5, 1.0]))
+    c.drawPath(anel, p)
+    brilho = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=lw * 0.16, Color=hexc("#FFFFFF", 0.35 * a))
+    brilho.setStrokeJoin(skia.Paint.kRound_Join)
+    c.drawPath(hexa(r + lw * 0.22), brilho)
+    q = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=lw * 0.42)
+    q.setShader(skia.GradientShader.MakeLinear(
+        [skia.Point(-r * 0.5, -r * 0.5), skia.Point(r * 0.5, r * 0.5)], [hexc(mix(cor, "#FFFFFF", 0.15), a), hexc(mix(cor, "#000000", 0.3), a)]))
+    c.drawCircle(0, 0, r * 0.47, q)
+    c.restore()
+
+
 def simbolo(c, cx, cy, r, a=1.0, giro=0.0, cor=None, forma=None):
-    """forma-símbolo da matéria atual (desenhadas: o + da Matemática e a órbita da Física; as outras saem como esfera)"""
+    """forma-símbolo da matéria atual (desenhadas: o + da Matemática, a órbita da Física e o hexágono da Química; as outras saem como esfera)"""
     forma = forma or FORMA
     if forma == "mais":
         mais(c, cx, cy, r, cor, a=a, giro=giro)
     elif forma == "orbita":
         orbita(c, cx, cy, r, cor, a=a, giro=giro)
+    elif forma == "hexagono":
+        hexagono(c, cx, cy, r * 0.92, cor, a=a, giro=giro)
     else:
         bola(c, cx, cy, r, cor, a=a)
 
@@ -1329,8 +1367,8 @@ def capa_modelo(c, materia, l1, l2, it):
     escreve(c, l2, 76, 660, 210, "g", tom)
     escreve(c, it, 84, 860, 170, "i", tom)
     forma = MATERIAS[materia]["forma"]
-    r = 260 if forma == "orbita" else 210  # a órbita é vazada: precisa de mais largura para pesar como o + e a esfera
-    simbolo(c, 1640 if forma != "orbita" else 1590, 760, r, cor=mix(cor, "#FFFFFF", 0.82), forma=forma)
+    r = 260 if forma == "orbita" else 250 if forma == "hexagono" else 210  # órbita e hexágono são vazados: precisam de mais largura
+    simbolo(c, 1640 if forma not in ("orbita", "hexagono") else 1590, 760, r, cor=mix(cor, "#FFFFFF", 0.82), forma=forma)
 
 
 # =====================================================================================================================

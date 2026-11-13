@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-013 · Qual medida usar: média, mediana ou moda
 
-**Arquivo:** `final/estudativo_MAT-EST-013_qual_medida_usar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-013_qual_medida_usar.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Numa empresa, o salário médio é de R$ 4.250. Parece bom, mas 9 dos 10 funcion
 ✅ O atalho: compare a média com a mediana, e as pistas do enunciado
 
 ⏱️ Capítulos
-[TEMPO] O salário médio que engana
-[TEMPO] O que você precisa saber
-[TEMPO] Os salários: média, mediana e moda
-[TEMPO] Quando usar cada uma
-[TEMPO] O erro de jogar fora o dado
-[TEMPO] O atalho: compare a média com a mediana
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os três casos
-[TEMPO] Resumo e próxima aula
+0:00 O salário médio que engana
+0:23 O que você precisa saber
+0:39 Os salários: média, mediana e moda
+1:35 Quando usar cada uma
+2:18 O erro de jogar fora o dado
+2:31 O atalho: compare a média com a mediana
+3:15 Hora de testar
+3:42 Resolvendo os três casos
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Moda e mediana: [LINK MAT-EST-011]

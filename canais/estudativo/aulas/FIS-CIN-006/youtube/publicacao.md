@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-006 · Encontro e ultrapassagem
 
-**Arquivo:** `final/estudativo_FIS-CIN-006_encontro_e_ultrapassagem.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-006_encontro_e_ultrapassagem.mp4` · 4:37 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Duas cidades a 300 km, dois carros saindo ao mesmo tempo, de frente, a 60 e a 90
 ✅ O atalho da velocidade relativa
 
 ⏱️ Capítulos
-[TEMPO] Dois carros de frente: 2 horas de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] Encontro: iguale as funções
-[TEMPO] No mesmo sentido: alcançar o caminhão
-[TEMPO] Trem e túnel
-[TEMPO] O erro de esquecer o trem
-[TEMPO] O atalho: velocidade relativa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as duas ciclistas
-[TEMPO] Resumo e próxima aula
+0:00 Dois carros de frente: 2 horas de cabeça
+0:26 O que você precisa saber
+0:38 Encontro: iguale as funções
+1:27 No mesmo sentido: alcançar o caminhão
+2:01 Trem e túnel
+2:24 O erro de esquecer o trem
+2:37 O atalho: velocidade relativa
+3:24 Hora de testar
+3:44 Resolvendo: as duas ciclistas
+4:11 Resumo e próxima aula
 
 📚 Antes desta aula
 Movimento uniforme: a função horária: [LINK FIS-CIN-005]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-007 · Ler um gráfico: máximos, zeros e crescimento
 
-**Arquivo:** `final/estudativo_MAT-FUN-007_ler_um_grafico.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-007_ler_um_grafico.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ O gráfico mostra a temperatura de um dia de inverno numa cidade da serra. Qual 
 ✅ O atalho: a sombra no eixo x é o domínio e a sombra no eixo y é a imagem
 
 ⏱️ Capítulos
-[TEMPO] A máxima foi 15?
-[TEMPO] O que você precisa saber
-[TEMPO] Ler um ponto do gráfico
-[TEMPO] Máximo e mínimo
-[TEMPO] Os zeros da função
-[TEMPO] Crescente e decrescente
-[TEMPO] Domínio e imagem no gráfico
-[TEMPO] O erro: abaixo do eixo não é descendo
-[TEMPO] O atalho: a sombra do gráfico
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o saldo da lojinha
-[TEMPO] Resumo e próxima aula
+0:00 A máxima foi 15?
+0:22 O que você precisa saber
+0:34 Ler um ponto do gráfico
+1:00 Máximo e mínimo
+1:25 Os zeros da função
+1:49 Crescente e decrescente
+2:20 Domínio e imagem no gráfico
+2:40 O erro: abaixo do eixo não é descendo
+2:57 O atalho: a sombra do gráfico
+3:22 Hora de testar
+3:42 Resolvendo: o saldo da lojinha
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Domínio, contradomínio e imagem: [LINK MAT-FUN-004]

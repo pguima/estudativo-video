@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-012 · Gráfico velocidade por tempo: inclinação e área
 
-**Arquivo:** `final/estudativo_FIS-CIN-012_grafico_velocidade_tempo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-012_grafico_velocidade_tempo.mp4` · 5:09 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um carro parte do repouso e chega a 20 m/s em 10 s. Quantos metros ele andou? D�
 ✅ O atalho: a escada dos gráficos e o porquê pelas unidades
 
 ⏱️ Capítulos
-[TEMPO] Quantos metros o carro andou?
-[TEMPO] O que você precisa saber
-[TEMPO] Como ler o gráfico v × t
-[TEMPO] Inclinação = aceleração
-[TEMPO] Área = deslocamento
-[TEMPO] O gráfico a × t
-[TEMPO] O erro de ler velocidade como posição
-[TEMPO] O atalho: a escada dos gráficos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ônibus
-[TEMPO] Resumo e próxima aula
+0:00 Quantos metros o carro andou?
+0:25 O que você precisa saber
+0:39 Como ler o gráfico v × t
+1:00 Inclinação = aceleração
+1:23 Área = deslocamento
+2:26 O gráfico a × t
+2:43 O erro de ler velocidade como posição
+3:04 O atalho: a escada dos gráficos
+3:48 Hora de testar
+4:08 Resolvendo: o ônibus
+4:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráfico posição por tempo: [LINK FIS-CIN-011]

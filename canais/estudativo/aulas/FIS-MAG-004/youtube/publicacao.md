@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-004 · Força sobre um fio e motor elétrico
 
-**Arquivo:** `final/estudativo_FIS-MAG-004_forca_sobre_um_fio_e_motor_eletrico.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-004_forca_sobre_um_fio_e_motor_eletrico.mp4` · 4:21 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ O ventilador, o liquidificador e o carro elétrico giram pelo mesmo motivo: um f
 ✅ O atalho: q·v = i·L
 
 ⏱️ Capítulos
-[TEMPO] O que o ventilador e o carro elétrico têm em comum
-[TEMPO] O que você precisa saber
-[TEMPO] A força num fio com corrente
-[TEMPO] Exemplo: 0,4 N e o fio inclinado
-[TEMPO] Como o motor gira
-[TEMPO] O erro do fio inteiro
-[TEMPO] O atalho: troque q·v por i·L
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: valor e sentido da força
-[TEMPO] Resumo e próxima aula
+0:00 O que o ventilador e o carro elétrico têm em comum
+0:17 O que você precisa saber
+0:33 A força num fio com corrente
+1:13 Exemplo: 0,4 N e o fio inclinado
+1:43 Como o motor gira
+2:30 O erro do fio inteiro
+2:45 O atalho: troque q·v por i·L
+3:17 Hora de testar
+3:35 Resolvendo: valor e sentido da força
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Campo criado por corrente: [LINK FIS-MAG-002]

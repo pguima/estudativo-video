@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-001 · Carga elétrica e eletrização
 
-**Arquivo:** `final/estudativo_FIS-ELE-001_carga_eletrica_eletrizacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-001_carga_eletrica_eletrizacao.mp4` · 6:10 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,18 +33,18 @@ Por que o pente passado no cabelo puxa pedacinhos de papel? Nesta primeira aula 
 ✅ O erro de achar que o corpo positivo ganhou prótons
 
 ⏱️ Capítulos
-[TEMPO] O pente que puxa o papel
-[TEMPO] O que você precisa saber
-[TEMPO] Carga elétrica: prótons e elétrons
-[TEMPO] O coulomb e Q = n·e
-[TEMPO] Eletrização por atrito
-[TEMPO] Condutores, isolantes e contato
-[TEMPO] Eletrização por indução
-[TEMPO] O erro: positivo não é ganhar prótons
-[TEMPO] O atalho: o sinal de cada jeito
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: quantos elétrons?
-[TEMPO] Resumo e próxima aula
+0:00 O pente que puxa o papel
+0:21 O que você precisa saber
+0:35 Carga elétrica: prótons e elétrons
+1:10 O coulomb e Q = n·e
+1:52 Eletrização por atrito
+2:12 Condutores, isolantes e contato
+3:08 Eletrização por indução
+3:57 O erro: positivo não é ganhar prótons
+4:15 O atalho: o sinal de cada jeito
+4:45 Hora de testar
+5:08 Resolvendo: quantos elétrons?
+5:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Prótons, nêutrons e elétrons: Z, A, íons e isótopos: [LINK QUI-ATO-004]

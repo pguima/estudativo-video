@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-003 · Vistas e projeções
 
-**Arquivo:** `final/estudativo_MAT-ESP-003_vistas_e_projecoes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-003_vistas_e_projecoes.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Ao meio-dia, uma lata deitada no chão faz sombra de que forma? Muita gente resp
 ✅ Quando não compensa: luz inclinada estica a sombra
 
 ⏱️ Capítulos
-[TEMPO] A sombra da lata deitada
-[TEMPO] O que você precisa saber
-[TEMPO] O que é vista: a lata e o cone
-[TEMPO] As vistas de uma pilha de cubinhos
-[TEMPO] Sombra e projeção
-[TEMPO] O erro da forma famosa
-[TEMPO] O atalho: cada vista apaga uma direção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a pirâmide
-[TEMPO] Resumo e próxima aula
+0:00 A sombra da lata deitada
+0:20 O que você precisa saber
+0:31 O que é vista: a lata e o cone
+1:05 As vistas de uma pilha de cubinhos
+1:40 Sombra e projeção
+2:05 O erro da forma famosa
+2:24 O atalho: cada vista apaga uma direção
+3:07 Hora de testar
+3:25 Resolvendo a pirâmide
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Sólidos, poliedros e relação de Euler: [LINK MAT-ESP-001]

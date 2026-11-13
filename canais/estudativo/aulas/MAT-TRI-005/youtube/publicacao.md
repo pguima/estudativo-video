@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-005 · Dois ângulos de visão
 
-**Arquivo:** `final/estudativo_MAT-TRI-005_dois_angulos_de_visao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-005_dois_angulos_de_visao.mp4` · 5:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Você não consegue medir a distância até o ponto bem embaixo do topo de um mo
 ✅ O atalho: o ângulo de 60° é externo, o triângulo é isósceles e h = 100 · sen 60°
 
 ⏱️ Capítulos
-[TEMPO] A altura de um morro de dois pontos
-[TEMPO] O que você precisa saber
-[TEMPO] Desenhando os dois triângulos
-[TEMPO] Duas letras, duas equações
-[TEMPO] A equação de cada ponto
-[TEMPO] Resolvendo o sistema por substituição
-[TEMPO] A altura do morro
-[TEMPO] O erro de usar os 100 m como distância até o morro
-[TEMPO] O atalho do isósceles
-[TEMPO] Hora de testar: a altura do prédio
-[TEMPO] Resolvendo o prédio
-[TEMPO] Resumo e próxima aula
+0:00 A altura de um morro de dois pontos
+0:25 O que você precisa saber
+0:45 Desenhando os dois triângulos
+1:00 Duas letras, duas equações
+1:13 A equação de cada ponto
+1:49 Resolvendo o sistema por substituição
+2:17 A altura do morro
+2:28 O erro de usar os 100 m como distância até o morro
+2:51 O atalho do isósceles
+3:45 Hora de testar: a altura do prédio
+4:06 Resolvendo o prédio
+4:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Altura, rampa e distância inacessível: [LINK MAT-TRI-004]

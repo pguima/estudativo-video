@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-001 · Oscilações: pêndulo e mola
 
-**Arquivo:** `final/estudativo_FIS-OND-001_oscilacoes_pendulo_e_mola.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-001_oscilacoes_pendulo_e_mola.mp4` · 6:13 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Duas bolas, uma de 1 kg e outra de 10 kg, presas em fios iguais: qual vai e volt
 ✅ O atalho: o período anda com a raiz (×4 dá ×2) e T ≈ 2·√L na Terra
 
 ⏱️ Capítulos
-[TEMPO] Bola leve ou pesada: qual é mais rápida?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é oscilar: equilíbrio, amplitude e período
-[TEMPO] O pêndulo e a fórmula do período
-[TEMPO] A mola e a fórmula do período
-[TEMPO] O erro de dobrar o fio
-[TEMPO] O atalho: o período anda com a raiz
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o bloco na mola
-[TEMPO] Resumo e próxima aula
+0:00 Bola leve ou pesada: qual é mais rápida?
+0:21 O que você precisa saber
+0:34 O que é oscilar: equilíbrio, amplitude e período
+1:09 O pêndulo e a fórmula do período
+2:50 A mola e a fórmula do período
+3:45 O erro de dobrar o fio
+4:13 O atalho: o período anda com a raiz
+4:57 Hora de testar
+5:14 Resolvendo: o bloco na mola
+5:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Período, frequência e rpm: [LINK FIS-CIN-018]

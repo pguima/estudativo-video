@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-015 · Medidores e ponte de Wheatstone
 
-**Arquivo:** `final/estudativo_FIS-ELE-015_medidores_e_ponte_de_wheatstone.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-015_medidores_e_ponte_de_wheatstone.mp4` · 4:48 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Ligue um amperímetro do jeito errado e ele pode queimar; ligue um voltímetro d
 ✅ O atalho: ponte em equilíbrio, apague o meio
 
 ⏱️ Capítulos
-[TEMPO] Ligou errado: queimou ou parou
-[TEMPO] O que você precisa saber
-[TEMPO] Amperímetro e voltímetro
-[TEMPO] O erro: trocar as ligações
-[TEMPO] A ponte de Wheatstone
-[TEMPO] O atalho: apague o meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o resistor desconhecido
-[TEMPO] Resumo e próxima aula
+0:00 Ligou errado: queimou ou parou
+0:16 O que você precisa saber
+0:33 Amperímetro e voltímetro
+1:25 O erro: trocar as ligações
+1:45 A ponte de Wheatstone
+3:06 O atalho: apague o meio
+3:39 Hora de testar
+3:55 Resolvendo: o resistor desconhecido
+4:18 Resumo e próxima aula
 
 📚 Antes desta aula
 Associação mista de resistores: [LINK FIS-ELE-013]

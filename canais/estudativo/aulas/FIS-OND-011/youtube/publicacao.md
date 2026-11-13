@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-011 · Rádio, micro-ondas, raios X e outros usos
 
-**Arquivo:** `final/estudativo_FIS-OND-011_radio_micro_ondas_raios_x_e_outros_usos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-011_radio_micro_ondas_raios_x_e_outros_usos.mp4` · 4:33 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ O celular e o raio X do dentista usam ondas da mesma família, mas só um deles 
 ✅ O atalho: a luz visível no meio separa quem aquece de quem ioniza
 
 ⏱️ Capítulos
-[TEMPO] Raio X com chumbo, celular sem nada: por quê?
-[TEMPO] O que você precisa saber
-[TEMPO] Ondas de rádio
-[TEMPO] Micro-ondas: celular, wi-fi e forno
-[TEMPO] Infravermelho e controle remoto
-[TEMPO] Luz visível e ultravioleta
-[TEMPO] Raios X e raios gama
-[TEMPO] O erro: toda radiação é igual?
-[TEMPO] O atalho: a luz visível no meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: que radiação é cada uma
-[TEMPO] Resumo e próxima aula
+0:00 Raio X com chumbo, celular sem nada: por quê?
+0:18 O que você precisa saber
+0:34 Ondas de rádio
+0:43 Micro-ondas: celular, wi-fi e forno
+1:17 Infravermelho e controle remoto
+1:34 Luz visível e ultravioleta
+2:05 Raios X e raios gama
+2:44 O erro: toda radiação é igual?
+3:01 O atalho: a luz visível no meio
+3:27 Hora de testar
+3:49 Resolvendo: que radiação é cada uma
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Espectro eletromagnético em ordem: [LINK FIS-OND-010]

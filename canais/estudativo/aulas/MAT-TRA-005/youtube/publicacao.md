@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-005 · Adição de arcos e arco duplo
 
-**Arquivo:** `final/estudativo_MAT-TRA-005_adicao_de_arcos_e_arco_duplo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-005_adicao_de_arcos_e_arco_duplo.mp4` · 4:53 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Seno de 75° não está na tabela, e a tentação é somar sen 45° com sen 30°
 ✅ O macete da música
 
 ⏱️ Capítulos
-[TEMPO] Seno de 75° não está na tabela
-[TEMPO] O que você precisa saber
-[TEMPO] Seno e cosseno da soma
-[TEMPO] Calculando sen 75°
-[TEMPO] O arco duplo
-[TEMPO] O erro de abrir o seno
-[TEMPO] O macete da música
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: sen x = 5/13
-[TEMPO] Resumo e próxima aula
+0:00 Seno de 75° não está na tabela
+0:23 O que você precisa saber
+0:42 Seno e cosseno da soma
+1:10 Calculando sen 75°
+2:07 O arco duplo
+2:53 O erro de abrir o seno
+3:13 O macete da música
+3:40 Hora de testar
+3:52 Resolvendo: sen x = 5/13
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Secante, cossecante e identidades: [LINK MAT-TRA-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-007 · Praticando: função exponencial
 
-**Arquivo:** `final/estudativo_MAT-EXP-007_praticando_funcao_exponencial.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-007_praticando_funcao_exponencial.mp4` · 4:59 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Quatro situações criadas para esta aula juntam tudo da função exponencial: c
 ✅ Troca de variável: 9ˣ − 4 · 3ˣ + 3 = 0 dá x = 0 ou x = 1
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para praticar
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: a máquina que perde 20% ao ano
-[TEMPO] Resposta 1: a lei, o gráfico e os R$ 51.200
-[TEMPO] Situação 2: o remédio com meia-vida de 4 horas
-[TEMPO] Resposta 2: 25 mg e a inequação t < 12
-[TEMPO] Situação 3: a colônia que dobra a cada 3 horas
-[TEMPO] Resposta 3: t = 15 horas
-[TEMPO] O atalho: conte as dobras
-[TEMPO] Situação 4: 9ˣ − 4 · 3ˣ + 3 = 0
-[TEMPO] Resposta 4: x = 0 ou x = 1
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para praticar
+0:14 As quatro ferramentas
+0:30 Situação 1: a máquina que perde 20% ao ano
+0:47 Resposta 1: a lei, o gráfico e os R$ 51.200
+1:30 Situação 2: o remédio com meia-vida de 4 horas
+1:46 Resposta 2: 25 mg e a inequação t < 12
+2:34 Situação 3: a colônia que dobra a cada 3 horas
+2:47 Resposta 3: t = 15 horas
+3:10 O atalho: conte as dobras
+3:34 Situação 4: 9ˣ − 4 · 3ˣ + 3 = 0
+3:47 Resposta 4: x = 0 ou x = 1
+4:29 Resumo e próxima aula
 
 📚 Antes desta aula
 Função exponencial: lei e gráfico: [LINK MAT-EXP-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-003 · Gravitação universal
 
-**Arquivo:** `final/estudativo_FIS-EGF-003_gravitacao_universal.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-003_gravitacao_universal.mp4` · 4:56 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ A força que derruba uma maçã é a mesma que segura a Lua em volta da Terra. N
 ✅ Peso e massa em Marte
 
 ⏱️ Capítulos
-[TEMPO] A maçã e a Lua
-[TEMPO] O que você precisa saber
-[TEMPO] A lei da gravitação universal
-[TEMPO] A fórmula como proporção
-[TEMPO] A gravidade de um planeta
-[TEMPO] O erro da distância dobrada
-[TEMPO] O atalho: monte o fator
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a gravidade em Marte
-[TEMPO] Resumo e próxima aula
+0:00 A maçã e a Lua
+0:20 O que você precisa saber
+0:35 A lei da gravitação universal
+1:27 A fórmula como proporção
+1:55 A gravidade de um planeta
+2:46 O erro da distância dobrada
+3:09 O atalho: monte o fator
+3:37 Hora de testar
+3:52 Resolvendo: a gravidade em Marte
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Leis de Kepler: [LINK FIS-EGF-002]

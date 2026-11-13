@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-025 · Função y = k/x: a hipérbole
 
-**Arquivo:** `final/estudativo_MAT-FUN-025_funcao_k_sobre_x_hiperbole.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-025_funcao_k_sobre_x_hiperbole.mp4` · 4:41 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Mais torneiras, menos tempo para encher a caixa: no plano, isso não vira uma re
 ✅ O atalho: um ponto dá a lei, k = x · y
 
 ⏱️ Capítulos
-[TEMPO] Mais torneiras, menos tempo
-[TEMPO] O que você precisa saber
-[TEMPO] A lei: y = 12/x
-[TEMPO] A tabela e os pontos
-[TEMPO] A curva: a hipérbole
-[TEMPO] Como reconhecer pelo produto
-[TEMPO] O erro: nem todo gráfico que desce é inverso
-[TEMPO] O atalho: um ponto basta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: y = 20/x
-[TEMPO] Resumo e próxima aula
+0:00 Mais torneiras, menos tempo
+0:20 O que você precisa saber
+0:34 A lei: y = 12/x
+1:02 A tabela e os pontos
+1:31 A curva: a hipérbole
+2:18 Como reconhecer pelo produto
+2:41 O erro: nem todo gráfico que desce é inverso
+3:08 O atalho: um ponto basta
+3:37 Hora de testar
+3:56 Resolvendo: y = 20/x
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráfico de uma função: [LINK MAT-FUN-006]

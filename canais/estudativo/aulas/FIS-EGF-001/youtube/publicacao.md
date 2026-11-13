@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-001 · Torque e alavancas
 
-**Arquivo:** `final/estudativo_FIS-EGF-001_torque_e_alavancas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-001_torque_e_alavancas.mp4` · 5:18 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Por que é tão difícil abrir uma porta empurrando perto da dobradiça? Nesta a
 ✅ O atalho: na gangorra, o 10 do peso corta
 
 ⏱️ Capítulos
-[TEMPO] Por que a porta gira mais fácil na maçaneta
-[TEMPO] O que você precisa saber
-[TEMPO] Torque: força vezes braço
-[TEMPO] Gangorra: horário e anti-horário
-[TEMPO] As duas condições de equilíbrio e as alavancas
-[TEMPO] O erro de medir da ponta da barra
-[TEMPO] O atalho: nem calcule o peso
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a barra e a caixa
-[TEMPO] Resumo e próxima aula
+0:00 Por que a porta gira mais fácil na maçaneta
+0:22 O que você precisa saber
+0:38 Torque: força vezes braço
+1:46 Gangorra: horário e anti-horário
+2:33 As duas condições de equilíbrio e as alavancas
+3:13 O erro de medir da ponta da barra
+3:30 O atalho: nem calcule o peso
+4:01 Hora de testar
+4:22 Resolvendo: a barra e a caixa
+4:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Força resultante e primeira lei: inércia: [LINK FIS-DIN-001]

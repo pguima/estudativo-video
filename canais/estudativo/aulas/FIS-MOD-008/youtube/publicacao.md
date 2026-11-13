@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-008 · Vida das estrelas e buracos negros
 
-**Arquivo:** `final/estudativo_FIS-MOD-008_vida_das_estrelas_buracos_negros.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-008_vida_das_estrelas_buracos_negros.mp4` · 5:08 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ O ferro do seu sangue foi fabricado dentro de uma estrela, e algumas estrelas te
 ✅ O atalho: a massa decide o fim, e a gravidade pela proporção
 
 ⏱️ Capítulos
-[TEMPO] O ferro do seu sangue
-[TEMPO] O que você precisa saber
-[TEMPO] O nascimento de uma estrela
-[TEMPO] O cabo de guerra: gravidade e fusão
-[TEMPO] Gigante vermelha e anã branca
-[TEMPO] Supernova e estrela de nêutrons
-[TEMPO] O buraco negro e a relatividade geral
-[TEMPO] O erro do aspirador
-[TEMPO] O atalho: a massa decide
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o fim do Sol
-[TEMPO] Resumo e próxima aula
+0:00 O ferro do seu sangue
+0:20 O que você precisa saber
+0:35 O nascimento de uma estrela
+0:52 O cabo de guerra: gravidade e fusão
+1:19 Gigante vermelha e anã branca
+1:30 Supernova e estrela de nêutrons
+2:05 O buraco negro e a relatividade geral
+2:56 O erro do aspirador
+3:22 O atalho: a massa decide
+3:59 Hora de testar
+4:17 Resolvendo: o fim do Sol
+4:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Gravitação universal: [LINK FIS-EGF-003]

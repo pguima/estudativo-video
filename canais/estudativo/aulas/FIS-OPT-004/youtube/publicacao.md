@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-004 · Índice de refração e lei de Snell
 
-**Arquivo:** `final/estudativo_FIS-OPT-004_indice_de_refracao_lei_de_snell.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-004_indice_de_refracao_lei_de_snell.mp4` · 4:50 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um lápis dentro de um copo d'água parece quebrado, mas quem mudou de caminho f
 ✅ Os atalhos: maior índice, menor ângulo; índice e velocidade ao contrário
 
 ⏱️ Capítulos
-[TEMPO] O lápis que parece quebrado
-[TEMPO] O que você precisa saber
-[TEMPO] Refração
-[TEMPO] O índice de refração
-[TEMPO] A lei de Snell
-[TEMPO] O erro da fração invertida
-[TEMPO] Os atalhos de prova
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 O lápis que parece quebrado
+0:16 O que você precisa saber
+0:29 Refração
+0:58 O índice de refração
+1:45 A lei de Snell
+2:51 O erro da fração invertida
+3:07 Os atalhos de prova
+3:41 Hora de testar
+3:59 Resolvendo
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 Reflexão e espelho plano: [LINK FIS-OPT-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-026 · Custo médio e outras funções racionais
 
-**Arquivo:** `final/estudativo_MAT-FUN-026_custo_medio_e_funcoes_racionais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-026_custo_medio_e_funcoes_racionais.mp4` · 5:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Uma fábrica tem custo C(x) = 2.000 + 30x. Fazendo uma peça só, essa peça cus
 ✅ O atalho do alvo: fixo ÷ (alvo − custo por peça)
 
 ⏱️ Capítulos
-[TEMPO] Uma peça a R$ 2.030, mil peças a R$ 32
-[TEMPO] O que você precisa saber
-[TEMPO] O que é custo médio
-[TEMPO] Dividindo a soma parcela por parcela
-[TEMPO] O custo médio de cabeça
-[TEMPO] O limite e a assíntota
-[TEMPO] O domínio das funções racionais
-[TEMPO] O erro: cortar o x só de um lado
-[TEMPO] O atalho do alvo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a gráfica e o domínio
-[TEMPO] Resumo e próxima aula
+0:00 Uma peça a R$ 2.030, mil peças a R$ 32
+0:27 O que você precisa saber
+0:43 O que é custo médio
+1:11 Dividindo a soma parcela por parcela
+1:40 O custo médio de cabeça
+1:59 O limite e a assíntota
+2:34 O domínio das funções racionais
+3:15 O erro: cortar o x só de um lado
+3:34 O atalho do alvo
+4:08 Hora de testar
+4:33 Resolvendo: a gráfica e o domínio
+5:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Domínio pela fórmula: [LINK MAT-FUN-005]

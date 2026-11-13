@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-007 · Tangente, corda e posições relativas
 
-**Arquivo:** `final/estudativo_MAT-POL-007_tangente_corda_posicoes_relativas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-007_tangente_corda_posicoes_relativas.mp4` · 6:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma circunferência tem raio de 13 cm, e uma corda passa a 5 cm do centro. Quant
 ✅ O atalho: 13² − 5² = (13 + 5) · (13 − 5) = 18 × 8 = 144
 
 ⏱️ Capítulos
-[TEMPO] A corda que não mede 12
-[TEMPO] O que você precisa saber
-[TEMPO] Externa, tangente ou secante
-[TEMPO] A tangente faz 90° com o raio
-[TEMPO] A corda e Pitágoras
-[TEMPO] O erro de parar na metade
-[TEMPO] O atalho: soma vezes diferença
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 A corda que não mede 12
+1:14 O que você precisa saber
+1:29 Externa, tangente ou secante
+2:12 A tangente faz 90° com o raio
+3:07 A corda e Pitágoras
+4:09 O erro de parar na metade
+4:19 O atalho: soma vezes diferença
+4:48 Hora de testar
+5:07 Resolvendo a questão
+5:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Altura, mediana, bissetriz e mediatriz: [LINK MAT-ANG-008]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-009 · Média ponderada
 
-**Arquivo:** `final/estudativo_MAT-EST-009_media_ponderada.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-009_media_ponderada.mp4` · 4:40 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Seis numa prova com peso dois e oito na outra com peso três. A média não é s
 ✅ O atalho para dois valores: ande na fração do peso (6 + 3/5 de 2 = 7,2)
 
 ⏱️ Capítulos
-[TEMPO] 6 com peso 2 e 8 com peso 3
-[TEMPO] O que você precisa saber
-[TEMPO] O que é peso
-[TEMPO] A regra da média ponderada
-[TEMPO] O peso como quantidade: o preço médio
-[TEMPO] O erro de esquecer os pesos
-[TEMPO] O atalho: ande na fração do peso
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a nota final
-[TEMPO] Resumo e próxima aula
+0:00 6 com peso 2 e 8 com peso 3
+0:17 O que você precisa saber
+0:26 O que é peso
+0:55 A regra da média ponderada
+1:44 O peso como quantidade: o preço médio
+2:12 O erro de esquecer os pesos
+2:30 O atalho: ande na fração do peso
+3:18 Hora de testar
+3:42 Resolvendo a nota final
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Média aritmética: [LINK MAT-EST-008]

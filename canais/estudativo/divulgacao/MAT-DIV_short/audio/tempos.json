@@ -1,0 +1,645 @@
+{
+ "total": 39.39,
+ "scenes": [
+  {
+   "id": "s01",
+   "block": "desafio",
+   "start": 0.0,
+   "dur": 4.61,
+   "tokens": [
+    {
+     "disp": "Quatro",
+     "bold": true,
+     "t0": 0.0,
+     "t1": 0.36
+    },
+    {
+     "disp": "mil",
+     "bold": true,
+     "t0": 0.36,
+     "t1": 0.56
+    },
+    {
+     "disp": "quinhentos",
+     "bold": true,
+     "t0": 0.36,
+     "t1": 0.556
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 0.556,
+     "t1": 0.752
+    },
+    {
+     "disp": "setenta",
+     "bold": true,
+     "t0": 0.752,
+     "t1": 0.948
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 0.948,
+     "t1": 1.144
+    },
+    {
+     "disp": "dois",
+     "bold": true,
+     "t0": 1.144,
+     "t1": 1.34
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 1.48,
+     "t1": 1.64
+    },
+    {
+     "disp": "divide",
+     "bold": false,
+     "t0": 1.64,
+     "t1": 1.86
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 1.86,
+     "t1": 2.04
+    },
+    {
+     "disp": "nove?",
+     "bold": true,
+     "t0": 2.04,
+     "t1": 2.26
+    },
+    {
+     "disp": "Você",
+     "bold": false,
+     "t0": 2.52,
+     "t1": 2.72
+    },
+    {
+     "disp": "tem",
+     "bold": false,
+     "t0": 2.72,
+     "t1": 2.84
+    },
+    {
+     "disp": "três",
+     "bold": true,
+     "t0": 2.84,
+     "t1": 3.08
+    },
+    {
+     "disp": "segundos.",
+     "bold": true,
+     "t0": 3.08,
+     "t1": 3.36
+    }
+   ],
+   "cues": {
+    "a": 0.0,
+    "b": 2.52
+   }
+  },
+  {
+   "id": "s02",
+   "block": "macete",
+   "start": 4.61,
+   "dur": 9.84,
+   "tokens": [
+    {
+     "disp": "Sim!",
+     "bold": true,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "O",
+     "bold": false,
+     "t0": 1.27,
+     "t1": 1.41
+    },
+    {
+     "disp": "macete:",
+     "bold": false,
+     "t0": 1.41,
+     "t1": 1.81
+    },
+    {
+     "disp": "some",
+     "bold": true,
+     "t0": 2.09,
+     "t1": 2.25
+    },
+    {
+     "disp": "os",
+     "bold": true,
+     "t0": 2.25,
+     "t1": 2.41
+    },
+    {
+     "disp": "algarismos.",
+     "bold": true,
+     "t0": 2.41,
+     "t1": 2.93
+    },
+    {
+     "disp": "Quatro",
+     "bold": false,
+     "t0": 3.19,
+     "t1": 3.43
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 3.43,
+     "t1": 3.59
+    },
+    {
+     "disp": "cinco,",
+     "bold": false,
+     "t0": 3.59,
+     "t1": 3.83
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 3.93,
+     "t1": 4.07
+    },
+    {
+     "disp": "sete,",
+     "bold": false,
+     "t0": 4.07,
+     "t1": 4.33
+    },
+    {
+     "disp": "mais",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 4.53
+    },
+    {
+     "disp": "dois:",
+     "bold": false,
+     "t0": 4.53,
+     "t1": 4.71
+    },
+    {
+     "disp": "dezoito.",
+     "bold": true,
+     "t0": 5.03,
+     "t1": 5.41
+    },
+    {
+     "disp": "Dezoito",
+     "bold": false,
+     "t0": 5.67,
+     "t1": 6.15
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 6.25,
+     "t1": 6.33
+    },
+    {
+     "disp": "divide",
+     "bold": false,
+     "t0": 6.33,
+     "t1": 6.55
+    },
+    {
+     "disp": "por",
+     "bold": false,
+     "t0": 6.55,
+     "t1": 6.75
+    },
+    {
+     "disp": "nove,",
+     "bold": true,
+     "t0": 6.75,
+     "t1": 6.97
+    },
+    {
+     "disp": "então",
+     "bold": false,
+     "t0": 7.17,
+     "t1": 7.45
+    },
+    {
+     "disp": "o",
+     "bold": false,
+     "t0": 7.55,
+     "t1": 7.59
+    },
+    {
+     "disp": "número",
+     "bold": false,
+     "t0": 7.59,
+     "t1": 7.75
+    },
+    {
+     "disp": "também",
+     "bold": false,
+     "t0": 7.75,
+     "t1": 8.17
+    },
+    {
+     "disp": "se",
+     "bold": false,
+     "t0": 8.17,
+     "t1": 8.33
+    },
+    {
+     "disp": "divide.",
+     "bold": false,
+     "t0": 8.33,
+     "t1": 8.57
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 1.27,
+    "c": 3.19,
+    "d": 5.03,
+    "e": 5.67,
+    "f": 7.17
+   }
+  },
+  {
+   "id": "s03",
+   "block": "virada",
+   "start": 14.45,
+   "dur": 5.34,
+   "tokens": [
+    {
+     "disp": "MMC",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.83
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 0.83,
+     "t1": 0.97
+    },
+    {
+     "disp": "MDC",
+     "bold": false,
+     "t0": 0.97,
+     "t1": 1.43
+    },
+    {
+     "disp": "parecem",
+     "bold": false,
+     "t0": 1.43,
+     "t1": 2.11
+    },
+    {
+     "disp": "decoreba.",
+     "bold": true,
+     "t0": 2.11,
+     "t1": 2.13
+    },
+    {
+     "disp": "Mas",
+     "bold": false,
+     "t0": 2.83,
+     "t1": 3.01
+    },
+    {
+     "disp": "a",
+     "bold": false,
+     "t0": 3.01,
+     "t1": 3.15
+    },
+    {
+     "disp": "prova",
+     "bold": false,
+     "t0": 3.15,
+     "t1": 3.29
+    },
+    {
+     "disp": "só",
+     "bold": false,
+     "t0": 3.29,
+     "t1": 3.55
+    },
+    {
+     "disp": "quer",
+     "bold": false,
+     "t0": 3.55,
+     "t1": 3.69
+    },
+    {
+     "disp": "saber",
+     "bold": false,
+     "t0": 3.69,
+     "t1": 3.95
+    },
+    {
+     "disp": "qual",
+     "bold": true,
+     "t0": 3.95,
+     "t1": 4.33
+    },
+    {
+     "disp": "usar,",
+     "bold": true,
+     "t0": 4.33,
+     "t1": 4.67
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 4.67,
+     "t1": 4.89
+    },
+    {
+     "disp": "quando.",
+     "bold": true,
+     "t0": 4.89,
+     "t1": 5.15
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 2.83,
+    "c": 3.95
+   }
+  },
+  {
+   "id": "s04",
+   "block": "trilha",
+   "start": 19.79,
+   "dur": 9.89,
+   "tokens": [
+    {
+     "disp": "Por",
+     "bold": false,
+     "t0": 0.35,
+     "t1": 0.55
+    },
+    {
+     "disp": "isso",
+     "bold": false,
+     "t0": 0.55,
+     "t1": 0.69
+    },
+    {
+     "disp": "eu",
+     "bold": false,
+     "t0": 0.75,
+     "t1": 0.81
+    },
+    {
+     "disp": "montei",
+     "bold": false,
+     "t0": 0.81,
+     "t1": 1.05
+    },
+    {
+     "disp": "oito",
+     "bold": true,
+     "t0": 1.05,
+     "t1": 1.47
+    },
+    {
+     "disp": "aulas,",
+     "bold": true,
+     "t0": 1.47,
+     "t1": 1.83
+    },
+    {
+     "disp": "do",
+     "bold": false,
+     "t0": 1.99,
+     "t1": 2.23
+    },
+    {
+     "disp": "zero:",
+     "bold": true,
+     "t0": 2.23,
+     "t1": 2.57
+    },
+    {
+     "disp": "múltiplos",
+     "bold": false,
+     "t0": 3.05,
+     "t1": 3.53
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 3.53,
+     "t1": 3.73
+    },
+    {
+     "disp": "divisores,",
+     "bold": false,
+     "t0": 3.53,
+     "t1": 4.07
+    },
+    {
+     "disp": "regras",
+     "bold": false,
+     "t0": 4.45,
+     "t1": 4.83
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 4.83,
+     "t1": 4.95
+    },
+    {
+     "disp": "divisibilidade,",
+     "bold": false,
+     "t0": 4.95,
+     "t1": 5.71
+    },
+    {
+     "disp": "números",
+     "bold": false,
+     "t0": 5.97,
+     "t1": 6.15
+    },
+    {
+     "disp": "primos,",
+     "bold": false,
+     "t0": 6.15,
+     "t1": 6.73
+    },
+    {
+     "disp": "MMC",
+     "bold": false,
+     "t0": 7.09,
+     "t1": 7.71
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 7.71,
+     "t1": 7.93
+    },
+    {
+     "disp": "MDC",
+     "bold": false,
+     "t0": 7.93,
+     "t1": 8.49
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 8.71,
+     "t1": 8.85
+    },
+    {
+     "disp": "os",
+     "bold": false,
+     "t0": 8.85,
+     "t1": 9.01
+    },
+    {
+     "disp": "problemas",
+     "bold": false,
+     "t0": 9.01,
+     "t1": 9.39
+    },
+    {
+     "disp": "de",
+     "bold": false,
+     "t0": 9.39,
+     "t1": 9.57
+    },
+    {
+     "disp": "prova.",
+     "bold": false,
+     "t0": 9.57,
+     "t1": 9.79
+    }
+   ],
+   "cues": {
+    "a": 0.35,
+    "b": 3.05,
+    "c": 4.45,
+    "d": 5.97,
+    "e": 7.09,
+    "f": 8.71
+   }
+  },
+  {
+   "id": "s05",
+   "block": "cta",
+   "start": 29.68,
+   "dur": 9.71,
+   "tokens": [
+    {
+     "disp": "Procure",
+     "bold": false,
+     "t0": -0.1,
+     "t1": 0.96
+    },
+    {
+     "disp": "Estudativo",
+     "bold": true,
+     "t0": 0.96,
+     "t1": 1.74
+    },
+    {
+     "disp": "no",
+     "bold": false,
+     "t0": 1.74,
+     "t1": 1.92
+    },
+    {
+     "disp": "YouTube",
+     "bold": false,
+     "t0": 1.92,
+     "t1": 2.26
+    },
+    {
+     "disp": "e",
+     "bold": false,
+     "t0": 2.26,
+     "t1": 2.66
+    },
+    {
+     "disp": "assista",
+     "bold": false,
+     "t0": 2.66,
+     "t1": 3.0
+    },
+    {
+     "disp": "à",
+     "bold": false,
+     "t0": 3.0,
+     "t1": 3.02
+    },
+    {
+     "disp": "playlist",
+     "bold": false,
+     "t0": 3.02,
+     "t1": 3.36
+    },
+    {
+     "disp": "Divisibilidade,",
+     "bold": true,
+     "t0": 3.36,
+     "t1": 3.78
+    },
+    {
+     "disp": "MMC",
+     "bold": true,
+     "t0": 4.74,
+     "t1": 5.44
+    },
+    {
+     "disp": "e",
+     "bold": true,
+     "t0": 5.44,
+     "t1": 5.7
+    },
+    {
+     "disp": "MDC",
+     "bold": true,
+     "t0": 5.7,
+     "t1": 6.18
+    },
+    {
+     "disp": "do",
+     "bold": true,
+     "t0": 6.18,
+     "t1": 6.46
+    },
+    {
+     "disp": "Zero.",
+     "bold": true,
+     "t0": 6.46,
+     "t1": 6.8
+    },
+    {
+     "disp": "Bons",
+     "bold": false,
+     "t0": 7.3,
+     "t1": 7.42
+    },
+    {
+     "disp": "estudos!",
+     "bold": false,
+     "t0": 7.42,
+     "t1": 7.76
+    }
+   ],
+   "cues": {
+    "a": -0.1,
+    "b": 2.26,
+    "c": 7.3
+   }
+  }
+ ]
+}

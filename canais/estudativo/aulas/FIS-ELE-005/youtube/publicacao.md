@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-005 · Condutores: pontas e gaiola de Faraday
 
-**Arquivo:** `final/estudativo_FIS-ELE-005_condutores_pontas_gaiola_de_faraday.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-005_condutores_pontas_gaiola_de_faraday.mp4` · 4:05 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um raio cai num carro e quem está dentro sai sem um arranhão. E não é por ca
 ✅ O erro de achar que os pneus protegem do raio
 
 ⏱️ Capítulos
-[TEMPO] O raio que cai no carro
-[TEMPO] O que você precisa saber
-[TEMPO] Onde a carga fica num condutor
-[TEMPO] Poder das pontas e para-raios
-[TEMPO] Gaiola de Faraday
-[TEMPO] O erro: os pneus não protegem
-[TEMPO] O atalho: três respostas prontas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 O raio que cai no carro
+0:17 O que você precisa saber
+0:33 Onde a carga fica num condutor
+1:18 Poder das pontas e para-raios
+1:59 Gaiola de Faraday
+2:28 O erro: os pneus não protegem
+2:42 O atalho: três respostas prontas
+3:10 Hora de testar
+3:28 Resolvendo
+3:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Potencial elétrico e energia: [LINK FIS-ELE-004]

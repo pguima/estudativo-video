@@ -1,1 +1,0 @@
-tempos.json: na cena 03, os tempos das palavras da lista '320, 340, ... 400' foram corrigidos com os tempos do Whisper (analise/voz.json); o alinhamento automático tinha comprimido esse trecho. Se rodar voz_externa.py de novo, refazer essa correção.

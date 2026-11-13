@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-007 · Praticando: dados, tabelas e gráficos
 
-**Arquivo:** `final/estudativo_MAT-EST-007_praticando_dados_tabelas_e_graficos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-007_praticando_dados_tabelas_e_graficos.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações com tabelas e gráficos, criadas para esta aula, para você pa
 ✅ O atalho de fazer o total virar 100
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: gráfico de barras
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: gráfico de linhas
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: gráfico de setores
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: histograma
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: tabela de dupla entrada
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:13 O que você vai usar
+0:28 Situação 1: gráfico de barras
+0:45 Resposta 1
+1:04 Situação 2: gráfico de linhas
+1:27 Resposta 2
+2:01 Situação 3: gráfico de setores
+2:17 Resposta 3
+2:41 Situação 4: histograma
+3:05 Resposta 4
+3:23 Situação 5: tabela de dupla entrada
+3:44 Resposta 5
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 População, amostra e tipos de variáveis: [LINK MAT-EST-001]

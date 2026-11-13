@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-004 · Dualidade onda-partícula
 
-**Arquivo:** `final/estudativo_FIS-MOD-004_dualidade_onda_particula.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-004_dualidade_onda_particula.mp4` · 5:22 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,19 @@ Elétrons atirados um a um contra duas fendas fazem faixas claras e escuras, a m
 ✅ O atalho: λ inversamente proporcional à quantidade de movimento
 
 ⏱️ Capítulos
-[TEMPO] Elétrons que fazem faixas
-[TEMPO] O que você precisa saber
-[TEMPO] A luz como onda: a fenda dupla
-[TEMPO] A luz como partícula e a dualidade
-[TEMPO] A regra para a prova
-[TEMPO] De Broglie: λ = h/(m·v)
-[TEMPO] O comprimento de onda do elétron
-[TEMPO] E a bola de tênis?
-[TEMPO] O erro da massa em grama
-[TEMPO] O atalho: compare m·v
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o elétron e o próton
-[TEMPO] Resumo e próxima aula
+0:00 Elétrons que fazem faixas
+0:24 O que você precisa saber
+0:38 A luz como onda: a fenda dupla
+0:55 A luz como partícula e a dualidade
+1:11 A regra para a prova
+1:27 De Broglie: λ = h/(m·v)
+1:58 O comprimento de onda do elétron
+2:41 E a bola de tênis?
+3:07 O erro da massa em grama
+3:26 O atalho: compare m·v
+4:02 Hora de testar
+4:24 Resolvendo: o elétron e o próton
+4:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Efeito fotoelétrico: [LINK FIS-MOD-002]

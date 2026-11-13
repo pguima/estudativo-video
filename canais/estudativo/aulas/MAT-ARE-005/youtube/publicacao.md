@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-005 · Área do triângulo equilátero e do hexágono regular
 
-**Arquivo:** `final/estudativo_MAT-ARE-005_area_equilatero_hexagono.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-005_area_equilatero_hexagono.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um hexágono regular de lado 2: qual é a área? Parece que precisa de uma fórm
 ✅ Um ladrilho hexagonal de 10 cm de lado resolvido passo a passo
 
 ⏱️ Capítulos
-[TEMPO] A área do hexágono sem fórmula nova
-[TEMPO] O que você precisa saber
-[TEMPO] A área do triângulo equilátero
-[TEMPO] O hexágono: seis triângulos equiláteros
-[TEMPO] O erro de dividir por 2
-[TEMPO] O atalho: a metade do lado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ladrilho hexagonal
-[TEMPO] Resumo e próxima aula
+0:00 A área do hexágono sem fórmula nova
+0:20 O que você precisa saber
+0:39 A área do triângulo equilátero
+1:24 O hexágono: seis triângulos equiláteros
+2:14 O erro de dividir por 2
+2:33 O atalho: a metade do lado
+3:10 Hora de testar
+3:26 Resolvendo: o ladrilho hexagonal
+3:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do paralelogramo e do triângulo: [LINK MAT-ARE-003]

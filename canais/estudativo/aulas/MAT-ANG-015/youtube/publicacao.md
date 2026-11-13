@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-015 · Teorema de Pitágoras: achar hipotenusa ou cateto
 
-**Arquivo:** `final/estudativo_MAT-ANG-015_teorema_de_pitagoras.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-015_teorema_de_pitagoras.mp4` · 4:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Você anda 6 metros, vira em ângulo reto e anda mais 8. A distância até o pon
 ✅ Questão resolvida: poste com cabo de 17 m preso a 8 m do pé (15 m)
 
 ⏱️ Capítulos
-[TEMPO] Andou 6 e 8: a distância é 14?
-[TEMPO] O que você precisa saber
-[TEMPO] Catetos e hipotenusa
-[TEMPO] As lajotas: 9 + 16 = 25
-[TEMPO] O Teorema de Pitágoras e quando ele vale
-[TEMPO] Achando a hipotenusa: 6 e 8
-[TEMPO] Achando um cateto: 13 e 5
-[TEMPO] O erro de somar
-[TEMPO] O atalho: soma vezes diferença
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o poste de 15 m
-[TEMPO] Resumo e próxima aula
+0:00 Andou 6 e 8: a distância é 14?
+0:18 O que você precisa saber
+0:35 Catetos e hipotenusa
+0:46 As lajotas: 9 + 16 = 25
+1:07 O Teorema de Pitágoras e quando ele vale
+1:39 Achando a hipotenusa: 6 e 8
+2:00 Achando um cateto: 13 e 5
+2:37 O erro de somar
+3:03 O atalho: soma vezes diferença
+3:37 Hora de testar
+3:54 Resolvendo: o poste de 15 m
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Classificar triângulos por lados e ângulos: [LINK MAT-ANG-005]

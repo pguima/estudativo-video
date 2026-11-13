@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-001 · O que é matriz: soma e multiplicação por número
 
-**Arquivo:** `final/estudativo_MAT-MTZ-001_o_que_e_matriz.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-001_o_que_e_matriz.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Quanto vale o elemento a₂₁ de uma matriz? Se você foi primeiro na coluna, e
 ✅ O atalho: quando a transposta é a própria matriz
 
 ⏱️ Capítulos
-[TEMPO] Quanto vale a₂₁?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é matriz: o boletim
-[TEMPO] O endereço de cada elemento
-[TEMPO] Montar a matriz pela regra
-[TEMPO] A transposta
-[TEMPO] Somar matrizes
-[TEMPO] Número vezes matriz
-[TEMPO] O erro de ler o endereço ao contrário
-[TEMPO] O atalho da transposta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: A + Aᵗ
-[TEMPO] Resumo e próxima aula
+0:00 Quanto vale a₂₁?
+0:21 O que você precisa saber
+0:35 O que é matriz: o boletim
+1:05 O endereço de cada elemento
+1:30 Montar a matriz pela regra
+1:59 A transposta
+2:16 Somar matrizes
+2:39 Número vezes matriz
+2:50 O erro de ler o endereço ao contrário
+3:04 O atalho da transposta
+3:32 Hora de testar
+3:45 Resolvendo: A + Aᵗ
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico de uma expressão: [LINK MAT-EQU-002]

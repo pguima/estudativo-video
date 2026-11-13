@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-004 · Domínio, contradomínio e imagem
 
-**Arquivo:** `final/estudativo_MAT-FUN-004_dominio_contradominio_imagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-004_dominio_contradominio_imagem.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um churrasco custa R$ 20 por pessoa. A conta para 2,5 pessoas dá R$ 50, mas mei
 ✅ O atalho: domínio é de onde sai flecha, imagem é onde chega
 
 ⏱️ Capítulos
-[TEMPO] Meia pessoa não existe
-[TEMPO] O que você precisa saber
-[TEMPO] f(x) = 2x em diagrama de flechas
-[TEMPO] Domínio, contradomínio e imagem
-[TEMPO] Domínio e imagem numa tabela
-[TEMPO] O domínio que vem da vida real
-[TEMPO] O erro de trocar contradomínio por imagem
-[TEMPO] O atalho: de onde sai, onde chega
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f(x) = x² e as camisetas
-[TEMPO] Resumo e próxima aula
+0:00 Meia pessoa não existe
+0:23 O que você precisa saber
+0:35 f(x) = 2x em diagrama de flechas
+1:00 Domínio, contradomínio e imagem
+1:28 Domínio e imagem numa tabela
+1:52 O domínio que vem da vida real
+2:35 O erro de trocar contradomínio por imagem
+2:50 O atalho: de onde sai, onde chega
+3:14 Hora de testar
+3:41 Resolvendo: f(x) = x² e as camisetas
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Notação f(x): calcular e fazer o caminho de volta: [LINK MAT-FUN-003]

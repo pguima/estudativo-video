@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-017 · Raízes: onde a parábola corta o eixo x
 
-**Arquivo:** `final/estudativo_MAT-FUN-017_raizes_onde_a_parabola_corta_o_eixo_x.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-017_raizes_onde_a_parabola_corta_o_eixo_x.mp4` · 5:07 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma parábola corta o eixo x em dois pontos, outra só encosta nele e a terceira
 ✅ O atalho: a e c com sinais contrários, corta em dois pontos sem conta
 
 ⏱️ Capítulos
-[TEMPO] Três parábolas: corta, encosta ou nem toca
-[TEMPO] O que você precisa saber
-[TEMPO] Raiz é onde y vale zero
-[TEMPO] Achando as raízes de x² − 4x + 3
-[TEMPO] Os três casos do delta
-[TEMPO] O erro: delta negativo não apaga a parábola
-[TEMPO] O atalho: a e c com sinais contrários
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f e g
-[TEMPO] Resumo e próxima aula
+0:00 Três parábolas: corta, encosta ou nem toca
+0:21 O que você precisa saber
+0:35 Raiz é onde y vale zero
+0:51 Achando as raízes de x² − 4x + 3
+1:47 Os três casos do delta
+2:43 O erro: delta negativo não apaga a parábola
+3:01 O atalho: a e c com sinais contrários
+3:36 Hora de testar
+3:57 Resolvendo: f e g
+4:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Discriminante: quantas raízes a equação tem: [LINK MAT-FAT-009]

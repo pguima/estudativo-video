@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-018 · Consumo em kWh e conta de luz
 
-**Arquivo:** `final/estudativo_FIS-ELE-018_consumo_em_kwh_e_conta_de_luz.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-018_consumo_em_kwh_e_conta_de_luz.mp4` · 4:33 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um chuveiro de 4.000 W ligado meia hora por dia ou uma TV de 100 W ligada cinco 
 ✅ O atalho: o que pesa é potência vezes tempo
 
 ⏱️ Capítulos
-[TEMPO] O banho e a TV: qual pesa mais?
-[TEMPO] O que você precisa saber
-[TEMPO] Energia e o quilowatt-hora
-[TEMPO] A conta do chuveiro
-[TEMPO] A casa toda e o medidor
-[TEMPO] O erro: watt no lugar de quilowatt
-[TEMPO] O atalho: potência vezes tempo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o aquecedor
-[TEMPO] Resumo e próxima aula
+0:00 O banho e a TV: qual pesa mais?
+0:24 O que você precisa saber
+0:42 Energia e o quilowatt-hora
+1:27 A conta do chuveiro
+1:58 A casa toda e o medidor
+2:41 O erro: watt no lugar de quilowatt
+3:01 O atalho: potência vezes tempo
+3:37 Hora de testar
+3:52 Resolvendo: o aquecedor
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência elétrica e efeito Joule: [LINK FIS-ELE-017]

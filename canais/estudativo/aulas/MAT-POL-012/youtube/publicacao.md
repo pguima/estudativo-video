@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-012 · Praticando: simetrias
 
-**Arquivo:** `final/estudativo_MAT-POL-012_praticando_simetrias.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-012_praticando_simetrias.mp4` · 5:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,19 +29,19 @@ Cinco situações de simetria, criadas para esta aula: pause, resolva e confira.
 ✅ Dobradura em quatro com corte no canto: quadrado de 4 cm de ponta a ponta e 4 eixos
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: que movimento foi?
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: o triângulo no espelho
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: meia volta
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: o relógio no espelho
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: a dobradura em quatro
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:12 O que você vai usar
+0:23 Situação 1: que movimento foi?
+0:37 Resposta 1
+0:58 Situação 2: o triângulo no espelho
+1:17 Resposta 2
+1:36 Situação 3: meia volta
+1:51 Resposta 3
+2:18 Situação 4: o relógio no espelho
+2:31 Resposta 4
+3:11 Situação 5: a dobradura em quatro
+3:35 Resposta 5
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Eixos de simetria e dobraduras: [LINK MAT-POL-010]

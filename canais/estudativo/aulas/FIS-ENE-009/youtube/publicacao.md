@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-009 · Colisões e coeficiente de restituição
 
-**Arquivo:** `final/estudativo_FIS-ENE-009_colisoes_e_coeficiente_de_restituicao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-009_colisoes_e_coeficiente_de_restituicao.mp4` · 5:51 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Na sinuca, a branca bate de frente na outra bola, para, e a outra sai com a velo
 ✅ O atalho: massas iguais trocam de velocidade
 
 ⏱️ Capítulos
-[TEMPO] A sinuca e o engavetamento
-[TEMPO] O que você precisa saber
-[TEMPO] O que se conserva numa colisão
-[TEMPO] Os três tipos de colisão
-[TEMPO] Colisão inelástica
-[TEMPO] Colisão elástica: a sinuca
-[TEMPO] Colisão parcialmente elástica
-[TEMPO] O erro de conservar a energia
-[TEMPO] O atalho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os carrinhos grudados
-[TEMPO] Resumo e próxima aula
+0:00 A sinuca e o engavetamento
+0:26 O que você precisa saber
+0:44 O que se conserva numa colisão
+1:32 Os três tipos de colisão
+1:58 Colisão inelástica
+2:30 Colisão elástica: a sinuca
+3:00 Colisão parcialmente elástica
+3:38 O erro de conservar a energia
+4:00 O atalho
+4:33 Hora de testar
+4:54 Resolvendo: os carrinhos grudados
+5:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Conservação da quantidade de movimento: [LINK FIS-ENE-008]

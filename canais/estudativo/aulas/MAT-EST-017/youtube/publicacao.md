@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-017 · Interpretar a dispersão
 
-**Arquivo:** `final/estudativo_MAT-EST-017_interpretar_a_dispersao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-017_interpretar_a_dispersao.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ O desvio padrão dos tempos de um corredor de 100 m é de 0,6 segundo; o de um c
 ✅ O atalho: com a mesma média, compare as variâncias sem tirar a raiz (0,04 contra 0,25)
 
 ⏱️ Capítulos
-[TEMPO] Quem é mais regular?
-[TEMPO] O que você precisa saber
-[TEMPO] O que o desvio padrão diz
-[TEMPO] Ana e Bia: mesma média
-[TEMPO] Médias diferentes: o coeficiente de variação
-[TEMPO] O erro de comparar desvios com médias diferentes
-[TEMPO] O atalho: compare as variâncias
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os arremessadores e os ciclistas
-[TEMPO] Resumo e próxima aula
+0:00 Quem é mais regular?
+0:24 O que você precisa saber
+0:38 O que o desvio padrão diz
+0:55 Ana e Bia: mesma média
+1:26 Médias diferentes: o coeficiente de variação
+2:29 O erro de comparar desvios com médias diferentes
+2:50 O atalho: compare as variâncias
+3:15 Hora de testar
+3:47 Resolvendo os arremessadores e os ciclistas
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Desvio médio, variância e desvio padrão: [LINK MAT-EST-016]

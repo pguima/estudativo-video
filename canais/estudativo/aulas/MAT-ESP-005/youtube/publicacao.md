@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-005 · Volume do cubo e do bloco
 
-**Arquivo:** `final/estudativo_MAT-ESP-005_volume_do_cubo_e_do_bloco.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-005_volume_do_cubo_e_do_bloco.mp4` · 4:39 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma caixa-d'água de 2 m por 1,5 m, com 1 m de altura: quantos litros cabem? Som
 ✅ O atalho: meça em decímetros e o volume sai direto em litros
 
 ⏱️ Capítulos
-[TEMPO] Quantos litros cabem na caixa-d'água?
-[TEMPO] O que você precisa saber
-[TEMPO] Volume em camadas de cubinhos
-[TEMPO] A fórmula do bloco e do cubo
-[TEMPO] Resolvendo a caixa-d'água
-[TEMPO] O erro das unidades misturadas
-[TEMPO] O atalho: tudo em decímetros
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o aquário e a caixa cúbica
-[TEMPO] Resumo e próxima aula
+0:00 Quantos litros cabem na caixa-d'água?
+0:24 O que você precisa saber
+0:39 Volume em camadas de cubinhos
+1:23 A fórmula do bloco e do cubo
+1:54 Resolvendo a caixa-d'água
+2:10 O erro das unidades misturadas
+2:44 O atalho: tudo em decímetros
+3:17 Hora de testar
+3:36 Resolvendo o aquário e a caixa cúbica
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do quadrado e do retângulo: [LINK MAT-ARE-002]

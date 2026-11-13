@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-004 · Potencial elétrico e energia
 
-**Arquivo:** `final/estudativo_FIS-ELE-004_potencial_eletrico_energia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-004_potencial_eletrico_energia.mp4` · 4:52 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Pilha de 1,5 V, tomada de 127 V: afinal, volt mede o quê? Nesta aula, você apr
 ✅ O atalho: potencial é escalar, some com o sinal
 
 ⏱️ Capítulos
-[TEMPO] Volt mede o quê?
-[TEMPO] O que você precisa saber
-[TEMPO] Energia e potencial elétrico
-[TEMPO] Tensão e campo uniforme: U = E·d
-[TEMPO] O trabalho: τ = q·U
-[TEMPO] O erro: d² no potencial
-[TEMPO] O atalho: some os potenciais
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: tensão e trabalho
-[TEMPO] Resumo e próxima aula
+0:00 Volt mede o quê?
+0:22 O que você precisa saber
+0:37 Energia e potencial elétrico
+1:43 Tensão e campo uniforme: U = E·d
+2:22 O trabalho: τ = q·U
+2:57 O erro: d² no potencial
+3:13 O atalho: some os potenciais
+3:36 Hora de testar
+3:58 Resolvendo: tensão e trabalho
+4:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Campo elétrico e linhas de força: [LINK FIS-ELE-003]

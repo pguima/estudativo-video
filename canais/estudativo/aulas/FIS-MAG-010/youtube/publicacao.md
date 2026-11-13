@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-010 · Vento e sol: rendimento e intermitência
 
-**Arquivo:** `final/estudativo_FIS-MAG-010_vento_e_sol_rendimento_e_intermitencia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-010_vento_e_sol_rendimento_e_intermitencia.mp4` · 4:18 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Ao meio-dia, um painel solar gera bem; à meia-noite, gera zero. Uma represa ger
 ✅ O atalho: duas perguntas para cada fonte
 
 ⏱️ Capítulos
-[TEMPO] Meio-dia, meia-noite e a represa
-[TEMPO] O que você precisa saber
-[TEMPO] A usina eólica
-[TEMPO] O painel solar
-[TEMPO] Comparando o rendimento
-[TEMPO] Intermitência
-[TEMPO] O erro: renovável é constante?
-[TEMPO] O atalho: duas perguntas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os painéis da casa
-[TEMPO] Resumo e próxima aula
+0:00 Meio-dia, meia-noite e a represa
+0:19 O que você precisa saber
+0:32 A usina eólica
+0:56 O painel solar
+1:20 Comparando o rendimento
+1:46 Intermitência
+2:19 O erro: renovável é constante?
+2:40 O atalho: duas perguntas
+3:14 Hora de testar
+3:39 Resolvendo: os painéis da casa
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Como uma usina gera eletricidade: [LINK FIS-MAG-009]

@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-005 · Permutação simples: filas e anagramas
 
-**Arquivo:** `final/estudativo_MAT-CNT-005_permutacao_simples.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-005_permutacao_simples.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Amor, roma, ramo, mora: as mesmas letras em outra ordem. Quantas palavras dá pa
 ✅ O atalho: separadas = todas − juntas = 120 − 48 = 72
 
 ⏱️ Capítulos
-[TEMPO] Amor, roma, ramo, mora: quantas?
-[TEMPO] O que você precisa saber
-[TEMPO] Anagramas de AMOR
-[TEMPO] Permutação: o fatorial da quantidade
-[TEMPO] Ana e Bia sempre juntas: o bloco
-[TEMPO] O erro de esquecer a troca dentro do bloco
-[TEMPO] O atalho: conte todas e tire as juntas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: anagramas de BRASIL
-[TEMPO] Resumo e próxima aula
+0:00 Amor, roma, ramo, mora: quantas?
+0:26 O que você precisa saber
+0:36 Anagramas de AMOR
+1:23 Permutação: o fatorial da quantidade
+1:46 Ana e Bia sempre juntas: o bloco
+2:21 O erro de esquecer a troca dentro do bloco
+2:35 O atalho: conte todas e tire as juntas
+3:12 Hora de testar
+3:24 Resolvendo: anagramas de BRASIL
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Contar com restrições: comece pelo mais difícil: [LINK MAT-CNT-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-014 · Escalas logarítmicas: pH, Richter e decibéis
 
-**Arquivo:** `final/estudativo_MAT-EXP-014_escalas_logaritmicas_ph_richter_decibeis.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-014_escalas_logaritmicas_ph_richter_decibeis.mp4` · 5:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um líquido tem pH 3; outro, pH 5. A diferença parece pequena, só dois pontos,
 ✅ O atalho: a diferença vira expoente do 10 (em dB, divida por 10 antes)
 
 ⏱️ Capítulos
-[TEMPO] pH 3 e pH 5: só dois pontos, 100 vezes mais ácido
-[TEMPO] O que você precisa saber
-[TEMPO] O logaritmo conta os zeros
-[TEMPO] pH: a escala da acidez
-[TEMPO] Richter: a escala dos terremotos
-[TEMPO] Decibéis: a escala do som
-[TEMPO] O erro de ler como régua comum
-[TEMPO] O atalho: a diferença vira expoente do 10
-[TEMPO] Hora de testar
-[TEMPO] Liquidificador contra conversa: 1.000 vezes
-[TEMPO] Resumo e próxima aula
+0:00 pH 3 e pH 5: só dois pontos, 100 vezes mais ácido
+0:24 O que você precisa saber
+0:38 O logaritmo conta os zeros
+0:56 pH: a escala da acidez
+1:44 Richter: a escala dos terremotos
+2:32 Decibéis: a escala do som
+3:16 O erro de ler como régua comum
+3:36 O atalho: a diferença vira expoente do 10
+4:18 Hora de testar
+4:41 Liquidificador contra conversa: 1.000 vezes
+5:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Propriedades dos logaritmos: [LINK MAT-EXP-009]

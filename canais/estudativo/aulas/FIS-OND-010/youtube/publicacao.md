@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-010 · Espectro eletromagnético em ordem
 
-**Arquivo:** `final/estudativo_FIS-OND-010_espectro_eletromagnetico_em_ordem.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-010_espectro_eletromagnetico_em_ordem.mp4` · 4:54 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ O rádio do carro, o forno de micro-ondas, a luz da lâmpada e o raio X do hospi
 ✅ O atalho: a frase que guarda a ordem do espectro
 
 ⏱️ Capítulos
-[TEMPO] Rádio, forno, lâmpada e raio X: o mesmo tipo de onda
-[TEMPO] O que você precisa saber
-[TEMPO] A velocidade da luz e c = λ·f
-[TEMPO] O espectro em ordem
-[TEMPO] A luz visível, o infravermelho e o ultravioleta
-[TEMPO] O comprimento de onda de uma rádio FM
-[TEMPO] Radiação ionizante
-[TEMPO] O erro: raio X mais rápido?
-[TEMPO] O atalho: a ordem numa frase
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: rádio AM e raio X
-[TEMPO] Resumo e próxima aula
+0:00 Rádio, forno, lâmpada e raio X: o mesmo tipo de onda
+0:21 O que você precisa saber
+0:35 A velocidade da luz e c = λ·f
+1:15 O espectro em ordem
+1:32 A luz visível, o infravermelho e o ultravioleta
+1:49 O comprimento de onda de uma rádio FM
+2:06 Radiação ionizante
+2:43 O erro: raio X mais rápido?
+2:59 O atalho: a ordem numa frase
+3:32 Hora de testar
+3:52 Resolvendo: rádio AM e raio X
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Ondas: tipos e a equação v = λ·f: [LINK FIS-OND-002]

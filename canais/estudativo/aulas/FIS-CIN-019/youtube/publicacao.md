@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-019 · Velocidade angular e velocidade linear
 
-**Arquivo:** `final/estudativo_FIS-CIN-019_velocidade_angular_e_linear.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-019_velocidade_angular_e_linear.mp4` · 4:30 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Num carrossel, uma criança vai na borda e outra perto do centro. As duas dão u
 ✅ O atalho: no mesmo corpo, v é proporcional a R
 
 ⏱️ Capítulos
-[TEMPO] O mistério do carrossel
-[TEMPO] O que você precisa saber
-[TEMPO] Velocidade linear
-[TEMPO] Velocidade angular
-[TEMPO] v = ω · R e a tangente
-[TEMPO] O erro: quem gira mais rápido?
-[TEMPO] O atalho: v proporcional ao raio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a roda da bicicleta
-[TEMPO] Resumo e próxima aula
+0:00 O mistério do carrossel
+0:19 O que você precisa saber
+0:35 Velocidade linear
+1:19 Velocidade angular
+1:49 v = ω · R e a tangente
+2:41 O erro: quem gira mais rápido?
+2:56 O atalho: v proporcional ao raio
+3:23 Hora de testar
+3:40 Resolvendo: a roda da bicicleta
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Período, frequência e rpm: [LINK FIS-CIN-018]

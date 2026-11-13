@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-006 · Praticando: leis de Newton
 
-**Arquivo:** `final/estudativo_FIS-DIN-006_praticando_leis_de_newton.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-006_praticando_leis_de_newton.mp4` · 4:20 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas do trânsito e do dia a dia para treinar as três le
 ✅ O atalho: para onde aponta a aceleração
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] Antes de qualquer conta
-[TEMPO] Situação 1: a garrafa no carro
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: a frenagem
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: o barco a remo
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: o elevador
-[TEMPO] Resposta 4
-[TEMPO] O atalho: para onde aponta a aceleração
-[TEMPO] Situação 5: a mala no dinamômetro
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações
+0:12 Antes de qualquer conta
+0:30 Situação 1: a garrafa no carro
+0:44 Resposta 1
+1:04 Situação 2: a frenagem
+1:19 Resposta 2
+1:55 Situação 3: o barco a remo
+2:07 Resposta 3
+2:28 Situação 4: o elevador
+2:44 Resposta 4
+3:07 O atalho: para onde aponta a aceleração
+3:24 Situação 5: a mala no dinamômetro
+3:39 Resposta 5
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Força resultante e primeira lei: inércia: [LINK FIS-DIN-001]

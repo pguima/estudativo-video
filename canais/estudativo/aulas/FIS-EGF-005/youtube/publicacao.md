@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-005 · Lei de Stevin
 
-**Arquivo:** `final/estudativo_FIS-EGF-005_lei_de_stevin.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-005_lei_de_stevin.mp4` · 4:54 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ A dez metros de profundidade, a pressão sobre um mergulhador já dobrou. Nesta 
 ✅ O atalho: cada 10 m de água, +1 atm (e por que não vale para o mercúrio)
 
 ⏱️ Capítulos
-[TEMPO] A 10 metros, a pressão dobra
-[TEMPO] O que você precisa saber
-[TEMPO] A coluna de água e a lei de Stevin
-[TEMPO] Vasos comunicantes e o tubo em U
-[TEMPO] O erro de esquecer o ar
-[TEMPO] O atalho: 1 atm a cada 10 m
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o mergulhador a 15 m
-[TEMPO] Resumo e próxima aula
+0:00 A 10 metros, a pressão dobra
+0:22 O que você precisa saber
+0:39 A coluna de água e a lei de Stevin
+1:53 Vasos comunicantes e o tubo em U
+2:53 O erro de esquecer o ar
+3:11 O atalho: 1 atm a cada 10 m
+3:42 Hora de testar
+4:02 Resolvendo: o mergulhador a 15 m
+4:23 Resumo e próxima aula
 
 📚 Antes desta aula
 Pressão: força por área: [LINK FIS-EGF-004]

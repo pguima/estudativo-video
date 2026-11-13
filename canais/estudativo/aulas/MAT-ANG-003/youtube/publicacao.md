@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-003 · Retas paralelas cortadas por uma transversal
 
-**Arquivo:** `final/estudativo_MAT-ANG-003_paralelas_e_transversal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-003_paralelas_e_transversal.mp4` · 4:48 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Duas retas paralelas cortadas por uma terceira reta formam oito ângulos, mas s�
 ✅ O atalho: agudo com agudo iguala; agudo com obtuso soma 180°
 
 ⏱️ Capítulos
-[TEMPO] 8 ângulos, só 2 medidas
-[TEMPO] O que você precisa saber
-[TEMPO] Concorrentes, perpendiculares e paralelas
-[TEMPO] A transversal: um cruzamento é cópia do outro
-[TEMPO] Correspondentes e alternos internos
-[TEMPO] Exemplo: 2x + 10 = 70
-[TEMPO] O erro de igualar agudo com obtuso
-[TEMPO] O atalho: esqueça os nomes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 3x − 20 e x + 40
-[TEMPO] Resumo e próxima aula
+0:00 8 ângulos, só 2 medidas
+0:22 O que você precisa saber
+0:35 Concorrentes, perpendiculares e paralelas
+1:03 A transversal: um cruzamento é cópia do outro
+1:28 Correspondentes e alternos internos
+1:58 Exemplo: 2x + 10 = 70
+2:25 O erro de igualar agudo com obtuso
+3:02 O atalho: esqueça os nomes
+3:29 Hora de testar
+3:47 Resolvendo: 3x − 20 e x + 40
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Ângulos complementares, suplementares e opostos pelo vértice: [LINK MAT-ANG-002]

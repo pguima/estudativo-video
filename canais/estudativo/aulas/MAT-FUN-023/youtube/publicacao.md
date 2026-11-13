@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-023 · Inequações produto e quociente
 
-**Arquivo:** `final/estudativo_MAT-FUN-023_inequacoes_produto_e_quociente.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-023_inequacoes_produto_e_quociente.mp4` · 4:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: depois da maior raiz tudo é +, e o sinal troca a cada raiz
 
 ⏱️ Capítulos
-[TEMPO] Passar multiplicando? Cuidado
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia: só importa o sinal de cada fator
-[TEMPO] O quadro de sinais em quatro passos
-[TEMPO] O erro: passar o x − 3 multiplicando
-[TEMPO] O atalho: troca a cada raiz
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo (x + 3)(x − 2)/(x − 5) ≤ 0
-[TEMPO] Resumo e próxima aula
+0:00 Passar multiplicando? Cuidado
+0:22 O que você precisa saber
+0:39 A ideia: só importa o sinal de cada fator
+0:54 O quadro de sinais em quatro passos
+2:09 O erro: passar o x − 3 multiplicando
+2:40 O atalho: troca a cada raiz
+3:13 Hora de testar
+3:24 Resolvendo (x + 3)(x − 2)/(x − 5) ≤ 0
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Zero da função e estudo do sinal: [LINK MAT-FUN-011]

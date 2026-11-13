@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-010 · Praticando: contagem
 
-**Arquivo:** `final/estudativo_MAT-CNT-010_praticando_contagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-010_praticando_contagem.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações de contagem, criadas para esta aula, em que a decisão vem ant
 ✅ Regra de "tem que entrar": coloque dentro primeiro e escolha só o resto, 336 ÷ 3! = 56
 
 ⏱️ Capítulos
-[TEMPO] 5 situações: a decisão vem antes da conta
-[TEMPO] O teste antes de cada conta
-[TEMPO] Situação 1: números ímpares de 4 algarismos
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: anagramas de PRATO
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: campeão e vice
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: saladas de frutas
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Situação 5: questões obrigatórias
-[TEMPO] Resolvendo a situação 5
-[TEMPO] Resumo e próxima aula
+0:00 5 situações: a decisão vem antes da conta
+0:13 O teste antes de cada conta
+0:35 Situação 1: números ímpares de 4 algarismos
+0:44 Resolvendo a situação 1
+1:24 Situação 2: anagramas de PRATO
+1:33 Resolvendo a situação 2
+2:02 Situação 3: campeão e vice
+2:13 Resolvendo a situação 3
+2:42 Situação 4: saladas de frutas
+2:55 Resolvendo a situação 4
+3:24 Situação 5: questões obrigatórias
+3:43 Resolvendo a situação 5
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Contar com restrições: comece pelo mais difícil: [LINK MAT-CNT-002]

@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-005 · Atalhos da PA: termo do meio e contar termos
 
-**Arquivo:** `final/estudativo_MAT-PRO-005_atalhos_da_pa_termo_do_meio_e_contar_termos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-005_atalhos_da_pa_termo_do_meio_e_contar_termos.mp4` · 5:30 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Três atalhos que resolvem questões de PA sem listar nada. Em 2, x, 10, o termo
 ✅ O atalho para múltiplos: 142 − 14 = 128
 
 ⏱️ Capítulos
-[TEMPO] Quantos múltiplos de 7 têm três algarismos?
-[TEMPO] O que você precisa saber
-[TEMPO] O termo do meio: a média dos vizinhos
-[TEMPO] Três termos: x − r, x, x + r
-[TEMPO] Contar os termos de uma PA
-[TEMPO] O erro de esquecer o mais um
-[TEMPO] O atalho para contar múltiplos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as três questões
-[TEMPO] Resumo e próxima aula
+0:00 Quantos múltiplos de 7 têm três algarismos?
+0:24 O que você precisa saber
+0:37 O termo do meio: a média dos vizinhos
+1:13 Três termos: x − r, x, x + r
+1:52 Contar os termos de uma PA
+3:01 O erro de esquecer o mais um
+3:18 O atalho para contar múltiplos
+3:55 Hora de testar
+4:20 Resolvendo as três questões
+5:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Progressão aritmética, razão e termo geral: [LINK MAT-PRO-004]

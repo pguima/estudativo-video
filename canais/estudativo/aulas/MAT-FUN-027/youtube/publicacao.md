@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-027 · Praticando: função racional simples
 
-**Arquivo:** `final/estudativo_MAT-FUN-027_praticando_funcao_racional_simples.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-027_praticando_funcao_racional_simples.mp4` · 6:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Quatro situações para fechar a trilha de funções, criadas para esta aula. Em
 ✅ Calcular o custo médio e usar o atalho do alvo
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a conta do churrasco
-[TEMPO] Resolvendo: y = 360/x
-[TEMPO] Situação 2: qual tabela é do tipo k/x?
-[TEMPO] Resolvendo: a última linha denuncia
-[TEMPO] Situação 3: a hipérbole no gráfico
-[TEMPO] Resolvendo: y = 18/x e o x que cresce
-[TEMPO] O atalho: a hipérbole nunca toca os eixos
-[TEMPO] Situação 4: o curso online
-[TEMPO] Resolvendo: custo médio e o alvo de R$ 15
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:14 O que você vai usar
+0:32 Situação 1: a conta do churrasco
+0:54 Resolvendo: y = 360/x
+1:23 Situação 2: qual tabela é do tipo k/x?
+1:57 Resolvendo: a última linha denuncia
+3:34 Situação 3: a hipérbole no gráfico
+3:58 Resolvendo: y = 18/x e o x que cresce
+4:30 O atalho: a hipérbole nunca toca os eixos
+4:52 Situação 4: o curso online
+5:12 Resolvendo: custo médio e o alvo de R$ 15
+5:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Função y = k/x: a hipérbole: [LINK MAT-FUN-025]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-004 · Simplificar frações algébricas
 
-**Arquivo:** `final/estudativo_MAT-FAT-004_simplificar_fracoes_algebricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-004_simplificar_fracoes_algebricas.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: trocar o x por um número e comparar com as alternativas
 
 ⏱️ Capítulos
-[TEMPO] x + 3 disfarçado
-[TEMPO] O que você precisa saber
-[TEMPO] Com números: 18/24
-[TEMPO] Fração algébrica: fatorar e cortar
-[TEMPO] O valor proibido
-[TEMPO] Mais um exemplo, dois valores proibidos
-[TEMPO] O erro de cortar parcela
-[TEMPO] O atalho das alternativas
-[TEMPO] Hora de testar
-[TEMPO] Resposta: (x − 5)/2, para x ≠ −5
-[TEMPO] Resumo e próxima aula
+0:00 x + 3 disfarçado
+0:19 O que você precisa saber
+0:35 Com números: 18/24
+1:01 Fração algébrica: fatorar e cortar
+1:32 O valor proibido
+1:46 Mais um exemplo, dois valores proibidos
+2:29 O erro de cortar parcela
+2:50 O atalho das alternativas
+3:16 Hora de testar
+3:29 Resposta: (x − 5)/2, para x ≠ −5
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Frações equivalentes e simplificação: [LINK MAT-FRA-003]

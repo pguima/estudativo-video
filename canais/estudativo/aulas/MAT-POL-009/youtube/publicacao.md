@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-009 · Praticando: polígonos e circunferência
 
-**Arquivo:** `final/estudativo_MAT-POL-009_praticando_poligonos_e_circunferencia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-009_praticando_poligonos_e_circunferencia.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações com polígonos e circunferência, criadas para esta aula: paus
 ✅ Água no cano: 9 · 25 = 15 · 15, largura de 30 cm, e 8² + 15² = 17²
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: o terreno em paralelogramo
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: a mesa de dez lados
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: as voltas da roda
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: o arco do ângulo inscrito
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: a água no cano
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para resolver
+0:14 O que você vai usar
+0:26 Situação 1: o terreno em paralelogramo
+0:39 Resposta 1
+0:59 Situação 2: a mesa de dez lados
+1:16 Resposta 2
+1:51 Situação 3: as voltas da roda
+2:06 Resposta 3
+2:42 Situação 4: o arco do ângulo inscrito
+2:59 Resposta 4
+3:27 Situação 5: a água no cano
+3:44 Resposta 5
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Quadriláteros: [LINK MAT-POL-001]

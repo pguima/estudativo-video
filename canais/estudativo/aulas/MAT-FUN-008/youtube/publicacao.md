@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-008 · Praticando: o que é função
 
-**Arquivo:** `final/estudativo_MAT-FUN-008_praticando_o_que_e_funcao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-008_praticando_o_que_e_funcao.mp4` · 5:09 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Quatro situações criadas para esta aula, para praticar tudo da trilha de funç
 ✅ Ler máximo, um valor de y que aparece duas vezes e a imagem num gráfico
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações
-[TEMPO] A pergunta antes de cada conta: x ou y?
-[TEMPO] Situação 1: a gráfica
-[TEMPO] Resolvendo: 100 cópias e o caminho de volta
-[TEMPO] Situação 2: é função?
-[TEMPO] Resolvendo: tabelas e o V
-[TEMPO] Situação 3: domínio
-[TEMPO] Resolvendo: raiz e divisão por zero
-[TEMPO] Situação 4: o reservatório
-[TEMPO] Resolvendo: máximo, 6 mil litros e imagem
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações
+0:13 A pergunta antes de cada conta: x ou y?
+0:26 Situação 1: a gráfica
+0:49 Resolvendo: 100 cópias e o caminho de volta
+1:43 Situação 2: é função?
+2:12 Resolvendo: tabelas e o V
+2:46 Situação 3: domínio
+3:09 Resolvendo: raiz e divisão por zero
+3:45 Situação 4: o reservatório
+4:04 Resolvendo: máximo, 6 mil litros e imagem
+4:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

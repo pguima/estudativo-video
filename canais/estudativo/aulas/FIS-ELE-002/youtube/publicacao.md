@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-002 · Lei de Coulomb
 
-**Arquivo:** `final/estudativo_FIS-ELE-002_lei_de_coulomb.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-002_lei_de_coulomb.mp4` · 4:14 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Duas cargas se atraem com 36 N. Se a distância dobra, a força vira quanto? Nes
 ✅ O atalho: multiplique pelo que mudou nas cargas e divida pelo quadrado do que mudou na distância
 
 ⏱️ Capítulos
-[TEMPO] Dobrou a distância: e a força?
-[TEMPO] O que você precisa saber
-[TEMPO] A força elétrica
-[TEMPO] A fórmula de Coulomb
-[TEMPO] A proporção
-[TEMPO] O erro: esquecer o quadrado
-[TEMPO] O atalho: não refaça a conta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 Dobrou a distância: e a força?
+0:21 O que você precisa saber
+0:35 A força elétrica
+0:59 A fórmula de Coulomb
+1:57 A proporção
+2:29 O erro: esquecer o quadrado
+2:46 O atalho: não refaça a conta
+3:13 Hora de testar
+3:27 Resolvendo
+3:46 Resumo e próxima aula
 
 📚 Antes desta aula
 Carga elétrica e eletrização: [LINK FIS-ELE-001]

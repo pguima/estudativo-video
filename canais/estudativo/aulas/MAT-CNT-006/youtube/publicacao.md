@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-006 · Permutação com repetição e em círculo
 
-**Arquivo:** `final/estudativo_MAT-CNT-006_permutacao_repeticao_circular.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-006_permutacao_repeticao_circular.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Quantos anagramas tem a palavra arara? Cinco letras, então 5! = 120? Não: são
 ✅ Quando não vale: cadeiras numeradas voltam à conta de fila
 
 ⏱️ Capítulos
-[TEMPO] ARARA: 120 anagramas?
-[TEMPO] O que você precisa saber
-[TEMPO] Começando pequeno: a palavra ANA
-[TEMPO] A regra das letras repetidas
-[TEMPO] Os anagramas de ARARA
-[TEMPO] O erro de dividir só por uma repetição
-[TEMPO] A mesa redonda e os giros
-[TEMPO] O atalho: fixe uma pessoa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo BANANA e a mesa de seis
-[TEMPO] Resumo e próxima aula
+0:00 ARARA: 120 anagramas?
+0:17 O que você precisa saber
+0:27 Começando pequeno: a palavra ANA
+0:58 A regra das letras repetidas
+1:18 Os anagramas de ARARA
+1:36 O erro de dividir só por uma repetição
+1:55 A mesa redonda e os giros
+2:41 O atalho: fixe uma pessoa
+3:11 Hora de testar
+3:24 Resolvendo BANANA e a mesa de seis
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Permutação simples: filas e anagramas: [LINK MAT-CNT-005]

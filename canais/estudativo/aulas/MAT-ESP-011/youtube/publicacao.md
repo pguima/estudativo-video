@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-011 · Pirâmide: volume
 
-**Arquivo:** `final/estudativo_MAT-ESP-011_piramide_volume.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-011_piramide_volume.mp4` · 4:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Uma caixa e uma pirâmide têm a mesma base e a mesma altura. Encha a pirâmide 
 ✅ O atalho: divida por 3 primeiro, no número que é múltiplo de 3
 
 ⏱️ Capítulos
-[TEMPO] A pirâmide cabe 3 vezes na caixa
-[TEMPO] O que você precisa saber
-[TEMPO] O que é pirâmide e qual é a altura
-[TEMPO] Por que um terço: o cubo em 3 pirâmides
-[TEMPO] Pirâmide de base quadrada
-[TEMPO] Pirâmide de base triangular: duas alturas
-[TEMPO] O erro de esquecer o ÷ 3
-[TEMPO] O atalho: divida por 3 primeiro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a vela derretida
-[TEMPO] Resumo e próxima aula
+0:00 A pirâmide cabe 3 vezes na caixa
+0:17 O que você precisa saber
+0:27 O que é pirâmide e qual é a altura
+0:49 Por que um terço: o cubo em 3 pirâmides
+1:31 Pirâmide de base quadrada
+1:44 Pirâmide de base triangular: duas alturas
+2:07 O erro de esquecer o ÷ 3
+2:22 O atalho: divida por 3 primeiro
+2:53 Hora de testar
+3:13 Resolvendo a vela derretida
+3:42 Resumo e próxima aula
 
 📚 Antes desta aula
 Prisma: área e volume: [LINK MAT-ESP-007]

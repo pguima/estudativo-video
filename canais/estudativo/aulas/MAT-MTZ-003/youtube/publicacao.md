@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-003 · Determinante de 2ª e 3ª ordem
 
-**Arquivo:** `final/estudativo_MAT-MTZ-003_determinante.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-003_determinante.mp4` · 4:12 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ O determinante da matriz 1, 2, 3, 4 é 2 ou −2? Quem faz a conta na ordem erra
 ✅ O atalho da diagonal e a linha de zeros
 
 ⏱️ Capítulos
-[TEMPO] 2 ou −2?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é determinante
-[TEMPO] Determinante 2x2
-[TEMPO] Com número negativo
-[TEMPO] Regra de Sarrus
-[TEMPO] O erro de trocar a ordem
-[TEMPO] O atalho da diagonal
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo pelo Sarrus
-[TEMPO] Resumo e próxima aula
+0:00 2 ou −2?
+0:20 O que você precisa saber
+0:31 O que é determinante
+0:58 Determinante 2x2
+1:18 Com número negativo
+1:38 Regra de Sarrus
+2:20 O erro de trocar a ordem
+2:35 O atalho da diagonal
+3:12 Hora de testar
+3:24 Resolvendo pelo Sarrus
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é matriz: soma e multiplicação por número: [LINK MAT-MTZ-001]

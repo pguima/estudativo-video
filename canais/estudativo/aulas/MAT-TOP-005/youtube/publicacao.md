@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-005 · Princípio da inclusão-exclusão
 
-**Arquivo:** `final/estudativo_MAT-TOP-005_principio_da_inclusao_exclusao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-005_principio_da_inclusao_exclusao.mp4` · 4:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ De 1 a 100, quantos números são múltiplos de 2 ou de 3? Somar 50 com 33 dá 8
 ✅ O atalho: o desenho dos múltiplos se repete a cada MMC
 
 ⏱️ Capítulos
-[TEMPO] Múltiplos de 2 ou de 3: não são 83
-[TEMPO] O que você precisa saber
-[TEMPO] Contar múltiplos sem listar
-[TEMPO] O princípio da inclusão-exclusão
-[TEMPO] Com três conjuntos
-[TEMPO] O erro de multiplicar em vez de usar o MMC
-[TEMPO] O atalho: repete a cada MMC
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: múltiplos de 3 ou de 5
-[TEMPO] Resumo e próxima aula
+0:00 Múltiplos de 2 ou de 3: não são 83
+0:25 O que você precisa saber
+0:40 Contar múltiplos sem listar
+1:32 O princípio da inclusão-exclusão
+1:44 Com três conjuntos
+2:36 O erro de multiplicar em vez de usar o MMC
+3:01 O atalho: repete a cada MMC
+3:37 Hora de testar
+3:47 Resolvendo: múltiplos de 3 ou de 5
+4:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Problemas com diagrama de Venn: [LINK MAT-CON-003]

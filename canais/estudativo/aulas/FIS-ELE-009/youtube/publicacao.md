@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-009 · Resistência e primeira lei de Ohm
 
-**Arquivo:** `final/estudativo_FIS-ELE-009_resistencia_primeira_lei_de_ohm.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-009_resistencia_primeira_lei_de_ohm.mp4` · 4:05 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ O chuveiro elétrico tem uma peça chamada resistência. Mas o que é resistênc
 ✅ O atalho: o triângulo U R i
 
 ⏱️ Capítulos
-[TEMPO] A resistência do chuveiro
-[TEMPO] O que você precisa saber
-[TEMPO] Tensão e resistência
-[TEMPO] A primeira lei de Ohm: U = R·i
-[TEMPO] O gráfico: ôhmico e não ôhmico
-[TEMPO] O erro: R não cresce com U
-[TEMPO] O atalho: o triângulo U R i
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo
-[TEMPO] Resumo e próxima aula
+0:00 A resistência do chuveiro
+0:17 O que você precisa saber
+0:30 Tensão e resistência
+0:59 A primeira lei de Ohm: U = R·i
+1:40 O gráfico: ôhmico e não ôhmico
+2:17 O erro: R não cresce com U
+2:37 O atalho: o triângulo U R i
+3:03 Hora de testar
+3:19 Resolvendo
+3:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Corrente elétrica: [LINK FIS-ELE-008]

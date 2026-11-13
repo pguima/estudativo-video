@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-010 · Convecção e irradiação
 
-**Arquivo:** `final/estudativo_FIS-CAL-010_conveccao_irradiacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-010_conveccao_irradiacao.mp4` · 5:30 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -34,18 +34,18 @@ Por que o ar-condicionado fica no alto da parede? E como o calor do Sol chega at
 ✅ O atalho: duas perguntas para achar o processo
 
 ⏱️ Capítulos
-[TEMPO] Ar-condicionado no alto e o calor do Sol
-[TEMPO] O que você precisa saber
-[TEMPO] Convecção: o ar quente sobe
-[TEMPO] As brisas do litoral
-[TEMPO] Irradiação: o calor que atravessa o vácuo
-[TEMPO] A garrafa térmica
-[TEMPO] O efeito estufa
-[TEMPO] O erro: "o calor sobe"
-[TEMPO] O atalho: duas perguntas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a lareira
-[TEMPO] Resumo e próxima aula
+0:00 Ar-condicionado no alto e o calor do Sol
+0:16 O que você precisa saber
+0:31 Convecção: o ar quente sobe
+1:24 As brisas do litoral
+1:51 Irradiação: o calor que atravessa o vácuo
+2:25 A garrafa térmica
+2:51 O efeito estufa
+3:26 O erro: "o calor sobe"
+3:42 O atalho: duas perguntas
+4:19 Hora de testar
+4:37 Resolvendo: a lareira
+5:03 Resumo e próxima aula
 
 📚 Antes desta aula
 Condução de calor: [LINK FIS-CAL-009]

@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-001 · Princípio multiplicativo e árvore de possibilidades
 
-**Arquivo:** `final/estudativo_MAT-CNT-001_principio_multiplicativo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-001_principio_multiplicativo.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Três camisas e quatro calças dão quantas roupas diferentes? Se você responde
 ✅ O atalho: casinhas iguais viram potência (10⁶ = 1.000.000)
 
 ⏱️ Capítulos
-[TEMPO] Três camisas e quatro calças
-[TEMPO] O que você precisa saber
-[TEMPO] A árvore de possibilidades
-[TEMPO] O princípio multiplicativo
-[TEMPO] As casinhas
-[TEMPO] Senha de quatro dígitos
-[TEMPO] O erro de somar
-[TEMPO] O atalho: casinhas iguais viram potência
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o combo e o cadeado
-[TEMPO] Resumo e próxima aula
+0:00 Três camisas e quatro calças
+0:19 O que você precisa saber
+0:28 A árvore de possibilidades
+1:19 O princípio multiplicativo
+1:50 As casinhas
+2:07 Senha de quatro dígitos
+2:35 O erro de somar
+2:54 O atalho: casinhas iguais viram potência
+3:25 Hora de testar
+3:49 Resolvendo o combo e o cadeado
+4:14 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é potência: [LINK MAT-POT-001]

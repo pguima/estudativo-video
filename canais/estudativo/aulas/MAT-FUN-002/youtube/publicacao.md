@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-002 · O que é função: cada entrada, uma saída
 
-**Arquivo:** `final/estudativo_MAT-FUN-002_o_que_e_funcao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-002_o_que_e_funcao.mp4` · 5:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um táxi cobra R$ 5 para começar e R$ 2,50 por quilômetro: para cada distânci
 ✅ O atalho: olhe só o lado das entradas
 
 ⏱️ Capítulos
-[TEMPO] O preço do táxi
-[TEMPO] O que você precisa saber
-[TEMPO] A fórmula P = 5 + 2,5d
-[TEMPO] Entrada, saída e a máquina
-[TEMPO] Função numa tabela
-[TEMPO] Diagrama de flechas
-[TEMPO] O erro das flechas que chegam
-[TEMPO] O atalho: olhe só as entradas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: academia e tabela
-[TEMPO] Resumo e próxima aula
+0:00 O preço do táxi
+0:30 O que você precisa saber
+0:43 A fórmula P = 5 + 2,5d
+1:21 Entrada, saída e a máquina
+2:09 Função numa tabela
+2:30 Diagrama de flechas
+3:14 O erro das flechas que chegam
+3:34 O atalho: olhe só as entradas
+4:06 Hora de testar
+4:28 Resolvendo: academia e tabela
+5:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico de uma expressão: [LINK MAT-EQU-002]

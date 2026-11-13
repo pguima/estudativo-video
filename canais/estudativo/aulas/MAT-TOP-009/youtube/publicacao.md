@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-009 · Posição entre duas circunferências
 
-**Arquivo:** `final/estudativo_MAT-TOP-009_posicao_entre_duas_circunferencias.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-009_posicao_entre_duas_circunferencias.mp4` · 4:21 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma circunferência de raio 3, outra de raio 2, com os centros a 5 de distância
 ✅ O atalho: a régua de duas marcas
 
 ⏱️ Capítulos
-[TEMPO] Raios 3 e 2, centros a 5
-[TEMPO] O que você precisa saber
-[TEMPO] Os casos, da mais longe à concêntrica
-[TEMPO] Exemplo com as equações
-[TEMPO] O erro de comparar só com a soma
-[TEMPO] O atalho: a régua de duas marcas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: tangentes internas
-[TEMPO] Resumo e próxima aula
+0:00 Raios 3 e 2, centros a 5
+0:22 O que você precisa saber
+0:35 Os casos, da mais longe à concêntrica
+1:45 Exemplo com as equações
+2:21 O erro de comparar só com a soma
+2:38 O atalho: a régua de duas marcas
+3:13 Hora de testar
+3:29 Resolvendo: tangentes internas
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Posições relativas: ponto, reta e circunferência: [LINK MAT-ANA-010]

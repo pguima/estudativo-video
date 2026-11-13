@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-013 · Equações que viram do 2º grau
 
-**Arquivo:** `final/estudativo_MAT-FAT-013_equacoes_que_viram_2grau.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-013_equacoes_que_viram_2grau.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ x⁴ − 13x² + 36 = 0 parece outro assunto, mas com uma troca de letra vira um
 ✅ O atalho: ache as positivas e espelhe (só com expoente par)
 
 ⏱️ Capítulos
-[TEMPO] Expoente 4: uma troca de letra
-[TEMPO] O que você precisa saber
-[TEMPO] A troca: x² vira y
-[TEMPO] A volta para o x: quatro raízes
-[TEMPO] x embaixo da fração: 6/x = x − 1
-[TEMPO] O erro de parar no y
-[TEMPO] O atalho: ache as positivas e espelhe
-[TEMPO] Hora de testar
-[TEMPO] Respostas
-[TEMPO] Resumo e próxima aula
+0:00 Expoente 4: uma troca de letra
+0:25 O que você precisa saber
+0:42 A troca: x² vira y
+1:13 A volta para o x: quatro raízes
+1:52 x embaixo da fração: 6/x = x − 1
+2:43 O erro de parar no y
+3:01 O atalho: ache as positivas e espelhe
+3:29 Hora de testar
+3:47 Respostas
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Simplificar frações algébricas (valor proibido): [LINK MAT-FAT-004]

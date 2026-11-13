@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-004 · Retas e planos no espaço
 
-**Arquivo:** `final/estudativo_MAT-ESP-004_retas_e_planos_no_espaco.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-004_retas_e_planos_no_espaco.mp4` · 4:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Duas retas que nunca se encontram são paralelas? No papel, sim. Numa caixa, nem
 ✅ O atalho: duas perguntas e a conta 3 paralelas, 4 concorrentes e 4 reversas
 
 ⏱️ Capítulos
-[TEMPO] Paralelas no papel, e numa caixa?
-[TEMPO] O que você precisa saber
-[TEMPO] O plano
-[TEMPO] Paralelas, concorrentes e reversas
-[TEMPO] Reta perpendicular a um plano
-[TEMPO] O erro: não se encontram não é paralelas
-[TEMPO] O atalho: duas perguntas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a caixa
-[TEMPO] Resumo e próxima aula
+0:00 Paralelas no papel, e numa caixa?
+0:19 O que você precisa saber
+0:33 O plano
+0:47 Paralelas, concorrentes e reversas
+1:41 Reta perpendicular a um plano
+2:19 O erro: não se encontram não é paralelas
+2:34 O atalho: duas perguntas
+3:12 Hora de testar
+3:35 Resolvendo a caixa
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas paralelas cortadas por uma transversal: [LINK MAT-ANG-003]

@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-008 · Efeito Doppler
 
-**Arquivo:** `final/estudativo_FIS-OND-008_efeito_doppler.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-008_efeito_doppler.mp4` · 4:50 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ A ambulância vem chegando e a sirene soa aguda; ela passa e o som fica grave. M
 ✅ O atalho: aproximou, maior; afastou, menor
 
 ⏱️ Capítulos
-[TEMPO] A sirene que muda de tom
-[TEMPO] O que você precisa saber
-[TEMPO] Por que o som muda: as frentes de onda
-[TEMPO] A fórmula e os sinais
-[TEMPO] Exemplo: a ambulância chegando e saindo
-[TEMPO] O erro de trocar os sinais
-[TEMPO] O atalho: decida antes da conta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a velocidade da sirene
-[TEMPO] Resumo e próxima aula
+0:00 A sirene que muda de tom
+0:17 O que você precisa saber
+0:29 Por que o som muda: as frentes de onda
+1:10 A fórmula e os sinais
+1:58 Exemplo: a ambulância chegando e saindo
+2:39 O erro de trocar os sinais
+2:58 O atalho: decida antes da conta
+3:22 Hora de testar
+3:44 Resolvendo: a velocidade da sirene
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Som: altura, intensidade e timbre: [LINK FIS-OND-006]

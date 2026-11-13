@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-006 · Lei de Lenz
 
-**Arquivo:** `final/estudativo_FIS-MAG-006_lei_de_lenz.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-006_lei_de_lenz.mp4` · 4:12 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Solte um ímã num cano de cobre e ele desce devagar, mesmo sem grudar no cobre.
 ✅ O erro de achar que a espira sempre empurra
 
 ⏱️ Capítulos
-[TEMPO] O ímã no cano de cobre
-[TEMPO] O que você precisa saber
-[TEMPO] A lei de Lenz
-[TEMPO] O ímã chegando
-[TEMPO] O ímã saindo
-[TEMPO] Por que é sempre contra
-[TEMPO] O freio magnético
-[TEMPO] O erro: a espira sempre empurra?
-[TEMPO] O atalho: chegou, repele; saiu, atrai
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o sul se afastando
-[TEMPO] Resumo e próxima aula
+0:00 O ímã no cano de cobre
+0:21 O que você precisa saber
+0:36 A lei de Lenz
+0:49 O ímã chegando
+1:15 O ímã saindo
+1:38 Por que é sempre contra
+2:01 O freio magnético
+2:29 O erro: a espira sempre empurra?
+2:45 O atalho: chegou, repele; saiu, atrai
+3:21 Hora de testar
+3:37 Resolvendo: o sul se afastando
+3:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Fluxo e lei de Faraday: [LINK FIS-MAG-005]

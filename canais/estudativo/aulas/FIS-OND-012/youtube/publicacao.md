@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-012 · Praticando: espectro eletromagnético
 
-**Arquivo:** `final/estudativo_FIS-OND-012_praticando_espectro_eletromagnetico.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-012_praticando_espectro_eletromagnetico.mp4` · 4:01 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Questão de espectro eletromagnético pede uma de duas coisas: o nome da radiaç
 ✅ Do resultado em metros para nanômetros (laser de 400 nm)
 
 ⏱️ Capítulos
-[TEMPO] Os dois tipos de questão de espectro
-[TEMPO] O que você vai usar
-[TEMPO] O método: procure a pista
-[TEMPO] Questão 1: o lambda do wi-fi
-[TEMPO] Questão 2: a frequência da luz verde
-[TEMPO] Questão 3: qual radiação?
-[TEMPO] Questão 4: micro-ondas ou raios X
-[TEMPO] Questão 5: o laser em nanômetros
-[TEMPO] Resumo e fim da trilha
+0:00 Os dois tipos de questão de espectro
+0:14 O que você vai usar
+0:27 O método: procure a pista
+0:53 Questão 1: o lambda do wi-fi
+1:27 Questão 2: a frequência da luz verde
+2:04 Questão 3: qual radiação?
+2:38 Questão 4: micro-ondas ou raios X
+3:06 Questão 5: o laser em nanômetros
+3:41 Resumo e fim da trilha
 
 📚 Antes desta aula
 Espectro eletromagnético em ordem: [LINK FIS-OND-010]

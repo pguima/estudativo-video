@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-007 · Diagrama de fases
 
-**Arquivo:** `final/estudativo_FIS-CAL-007_diagrama_de_fases.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-007_diagrama_de_fases.mp4` · 4:15 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ No topo do Everest, a água ferve a uns 70 °C; na panela de pressão, a uns 120
 ✅ O atalho: ande pela linha da pressão
 
 ⏱️ Capítulos
-[TEMPO] A mesma água, 70 °C ou 120 °C
-[TEMPO] O que você precisa saber
-[TEMPO] Regiões, curvas e ponto triplo
-[TEMPO] O diagrama da água a 1 atm
-[TEMPO] A panela de pressão e a montanha
-[TEMPO] A curva de fusão e o gelo-seco
-[TEMPO] O erro da panela de pressão
-[TEMPO] O atalho: ande pela linha da pressão
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: acima e abaixo do ponto triplo
-[TEMPO] Resumo e próxima aula
+0:00 A mesma água, 70 °C ou 120 °C
+0:17 O que você precisa saber
+0:31 Regiões, curvas e ponto triplo
+1:27 O diagrama da água a 1 atm
+1:43 A panela de pressão e a montanha
+2:05 A curva de fusão e o gelo-seco
+2:36 O erro da panela de pressão
+2:50 O atalho: ande pela linha da pressão
+3:09 Hora de testar
+3:26 Resolvendo: acima e abaixo do ponto triplo
+3:48 Resumo e próxima aula
 
 📚 Antes desta aula
 Calor latente e curva de aquecimento: [LINK FIS-CAL-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-007 · Distância de ponto a reta
 
-**Arquivo:** `final/estudativo_MAT-TOP-007_distancia_de_ponto_a_reta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-007_distancia_de_ponto_a_reta.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma casa fica em (1, 2) e uma estrada passa pela reta 3x + 4y − 1 = 0. Descend
 ✅ O atalho: distância entre retas paralelas
 
 ⏱️ Capítulos
-[TEMPO] O caminho mais curto até a estrada
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a distância é perpendicular
-[TEMPO] A fórmula da distância
-[TEMPO] Por que a fórmula faz sentido
-[TEMPO] O erro de usar a reta fora da equação geral
-[TEMPO] O atalho: retas paralelas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: distância 1
-[TEMPO] Resumo e próxima aula
+0:00 O caminho mais curto até a estrada
+0:26 O que você precisa saber
+0:42 Por que a distância é perpendicular
+0:58 A fórmula da distância
+1:42 Por que a fórmula faz sentido
+2:25 O erro de usar a reta fora da equação geral
+2:58 O atalho: retas paralelas
+3:40 Hora de testar
+3:53 Resolvendo: distância 1
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Distância entre dois pontos: [LINK MAT-ANA-001]

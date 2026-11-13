@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-019 · Sólidos inscritos e circunscritos
 
-**Arquivo:** `final/estudativo_MAT-ESP-019_solidos_inscritos_e_circunscritos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-019_solidos_inscritos_e_circunscritos.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Uma bola encaixada numa caixa cúbica de 6 cm, encostando em todas as paredes: q
 ✅ O atalho: cone no cilindro sobra 2/3; bola no cubo, com π = 3, sobra metade
 
 ⏱️ Capítulos
-[TEMPO] Uma bola dentro de uma caixa
-[TEMPO] O que você precisa saber
-[TEMPO] Inscrito e circunscrito
-[TEMPO] A bola dentro do cubo
-[TEMPO] A bola por fora do cubo
-[TEMPO] O cone dentro do cilindro
-[TEMPO] O erro de usar a aresta como raio
-[TEMPO] O atalho da fração que sobra
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a peça de madeira
-[TEMPO] Resumo e próxima aula
+0:00 Uma bola dentro de uma caixa
+0:19 O que você precisa saber
+0:46 Inscrito e circunscrito
+1:05 A bola dentro do cubo
+1:55 A bola por fora do cubo
+2:07 O cone dentro do cilindro
+2:47 O erro de usar a aresta como raio
+3:07 O atalho da fração que sobra
+3:43 Hora de testar
+4:03 Resolvendo a peça de madeira
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Cubo e bloco: área e diagonal: [LINK MAT-ESP-006]

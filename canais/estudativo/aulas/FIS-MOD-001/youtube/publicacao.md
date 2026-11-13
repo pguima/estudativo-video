@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-001 · Fóton: a energia em pacotes
 
-**Arquivo:** `final/estudativo_FIS-MOD-001_foton_energia_em_pacotes.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-001_foton_energia_em_pacotes.mp4` · 6:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Uma lâmpada vermelha fortíssima não dá queimadura de sol, mas poucos minutos
 ✅ O atalho: energia proporcional à frequência
 
 ⏱️ Capítulos
-[TEMPO] Por que o sol queima e a lâmpada vermelha não
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia de Planck: energia em pacotes
-[TEMPO] E = h·f e a constante de Planck
-[TEMPO] Calculando a energia de um fóton
-[TEMPO] O elétron-volt
-[TEMPO] Brilho não é energia do fóton
-[TEMPO] O erro de multiplicar na conversão
-[TEMPO] O atalho: dobrou a frequência, dobrou a energia
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a lâmpada ultravioleta
-[TEMPO] Resumo e próxima aula
+0:00 Por que o sol queima e a lâmpada vermelha não
+0:25 O que você precisa saber
+0:41 A ideia de Planck: energia em pacotes
+1:22 E = h·f e a constante de Planck
+2:00 Calculando a energia de um fóton
+2:28 O elétron-volt
+3:16 Brilho não é energia do fóton
+3:35 O erro de multiplicar na conversão
+3:58 O atalho: dobrou a frequência, dobrou a energia
+4:34 Hora de testar
+4:57 Resolvendo: a lâmpada ultravioleta
+5:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Espectro eletromagnético em ordem: [LINK FIS-OND-010]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-015 · Soma vezes diferença e cubo da soma: (a + b)(a − b) e (a + b)³
 
-**Arquivo:** `final/estudativo_MAT-FAT-015_soma_vezes_diferenca_e_cubo_da_soma.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-015_soma_vezes_diferenca_e_cubo_da_soma.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: 52 × 48 = 50² − 2² = 2.496, e quando ele não compensa
 
 ⏱️ Capítulos
-[TEMPO] 101 × 99 de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] Soma vezes diferença: o meio se anula
-[TEMPO] A regra e o 101 × 99
-[TEMPO] O cubo da soma
-[TEMPO] O erro de elevar cada termo ao cubo
-[TEMPO] O atalho: 52 × 48
-[TEMPO] Hora de testar
-[TEMPO] Resposta: x² − 16 e 884
-[TEMPO] Resumo e próxima aula
+0:00 101 × 99 de cabeça
+0:20 O que você precisa saber
+0:36 Soma vezes diferença: o meio se anula
+1:21 A regra e o 101 × 99
+1:48 O cubo da soma
+3:15 O erro de elevar cada termo ao cubo
+3:28 O atalho: 52 × 48
+3:59 Hora de testar
+4:19 Resposta: x² − 16 e 884
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Quadrado da soma e da diferença: [LINK MAT-FAT-001]

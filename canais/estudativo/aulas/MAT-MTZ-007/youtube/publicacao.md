@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-007 · Discutir um sistema: uma, infinitas ou nenhuma solução
 
-**Arquivo:** `final/estudativo_MAT-MTZ-007_discutir_sistema.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-007_discutir_sistema.mp4` · 4:47 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Você escalona um sistema e no fim aparece 0 = 2. Não é erro de conta: esse si
 ✅ O atalho: as letras dobraram e o número não? Impossível
 
 ⏱️ Capítulos
-[TEMPO] Deu 0 = 2: e agora?
-[TEMPO] O que você precisa saber
-[TEMPO] Os três casos na última linha
-[TEMPO] Um exemplo: impossível e indeterminado
-[TEMPO] O valor de k que deixa sem solução
-[TEMPO] Cada equação é um plano
-[TEMPO] O erro de ler 0 = 0
-[TEMPO] O atalho das letras dobradas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: infinitas soluções
-[TEMPO] Resumo e próxima aula
+0:00 Deu 0 = 2: e agora?
+0:22 O que você precisa saber
+0:36 Os três casos na última linha
+1:11 Um exemplo: impossível e indeterminado
+1:55 O valor de k que deixa sem solução
+2:27 Cada equação é um plano
+2:56 O erro de ler 0 = 0
+3:07 O atalho das letras dobradas
+3:38 Hora de testar
+3:54 Resolvendo: infinitas soluções
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 Retas e planos no espaço: [LINK MAT-ESP-004]

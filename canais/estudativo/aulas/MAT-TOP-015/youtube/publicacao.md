@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-015 · Algarismos significativos e arredondamento
 
-**Arquivo:** `final/estudativo_MAT-TOP-015_algarismos_significativos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-015_algarismos_significativos.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um fio de 2,5 m, com 3,14 g por metro. A calculadora diz 7,85 g, mas o último 5
 ✅ O atalho: passe para notação científica
 
 ⏱️ Capítulos
-[TEMPO] O 5 inventado da calculadora
-[TEMPO] O que você precisa saber
-[TEMPO] Algarismo certo e algarismo estimado
-[TEMPO] As três regras para contar
-[TEMPO] Multiplicar e arredondar medidas
-[TEMPO] O erro de contar os zeros da esquerda
-[TEMPO] O atalho: notação científica
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas partes
-[TEMPO] Resumo e próxima aula
+0:00 O 5 inventado da calculadora
+0:29 O que você precisa saber
+0:49 Algarismo certo e algarismo estimado
+1:20 As três regras para contar
+1:56 Multiplicar e arredondar medidas
+2:33 O erro de contar os zeros da esquerda
+2:49 O atalho: notação científica
+3:29 Hora de testar
+3:45 Resolvendo as duas partes
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Estimar contas e quantidades: [LINK MAT-LEI-004]

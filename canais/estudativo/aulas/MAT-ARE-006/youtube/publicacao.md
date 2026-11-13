@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-006 · Maior área com perímetro fixo
 
-**Arquivo:** `final/estudativo_MAT-ARE-006_maior_area_perimetro_fixo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-006_maior_area_perimetro_fixo.mp4` · 4:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Quarenta metros de cerca para fechar um cercado retangular. Dezenove por um dá 
 ✅ O cercado encostado no muro: 10 m por 20 m, 200 m²
 
 ⏱️ Capítulos
-[TEMPO] Mesma cerca, áreas diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] Montando a função da área
-[TEMPO] A parábola e o vértice
-[TEMPO] O erro da volta inteira
-[TEMPO] O atalho: é o quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o cercado encostado no muro
-[TEMPO] Resumo e próxima aula
+0:00 Mesma cerca, áreas diferentes
+0:25 O que você precisa saber
+0:40 Montando a função da área
+1:06 A parábola e o vértice
+2:03 O erro da volta inteira
+2:22 O atalho: é o quadrado
+2:48 Hora de testar
+3:05 Resolvendo: o cercado encostado no muro
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do quadrado e do retângulo: [LINK MAT-ARE-002]

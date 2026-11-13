@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-020 · Razão entre volumes de sólidos semelhantes
 
-**Arquivo:** `final/estudativo_MAT-ESP-020_razao_entre_volumes_de_solidos_semelhantes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-020_razao_entre_volumes_de_solidos_semelhantes.mp4` · 5:10 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Uma taça em forma de cone, de ponta para baixo, com suco até a metade da altur
 ✅ O atalho: decore os cubos 1, 8, 27, 64, 125 para voltar do volume para as medidas
 
 ⏱️ Capítulos
-[TEMPO] A taça pela metade
-[TEMPO] O que você precisa saber
-[TEMPO] Dobrar o cubo
-[TEMPO] Vale para qualquer sólido
-[TEMPO] A regra: volume vezes k³
-[TEMPO] O cone dobrado
-[TEMPO] Cortando o cone na metade da altura
-[TEMPO] A taça do começo
-[TEMPO] O erro da metade da altura
-[TEMPO] O atalho: decore os cubos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o pote e a taça
-[TEMPO] Resumo e próxima aula
+0:00 A taça pela metade
+0:20 O que você precisa saber
+0:39 Dobrar o cubo
+1:07 Vale para qualquer sólido
+1:25 A regra: volume vezes k³
+1:46 O cone dobrado
+2:05 Cortando o cone na metade da altura
+2:41 A taça do começo
+2:56 O erro da metade da altura
+3:11 O atalho: decore os cubos
+3:54 Hora de testar
+4:18 Resolvendo o pote e a taça
+4:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Razão entre áreas de figuras semelhantes: [LINK MAT-ARE-010]

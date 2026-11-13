@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-011 · E = m·c²
 
-**Arquivo:** `final/estudativo_FIS-MOD-011_e_igual_mc2.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-011_e_igual_mc2.mp4` · 4:49 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ A cada segundo, o Sol fica 4 milhões de toneladas mais leve, e essa massa vira 
 ✅ O atalho: multiplique por 9 e some 16 ao expoente
 
 ⏱️ Capítulos
-[TEMPO] O Sol fica mais leve
-[TEMPO] O que você precisa saber
-[TEMPO] O joule
-[TEMPO] E = m·c²
-[TEMPO] O segredo do c²
-[TEMPO] De onde sai a massa: o defeito de massa
-[TEMPO] A energia da fusão
-[TEMPO] O erro de esquecer o quadrado
-[TEMPO] O atalho do 9 e do 16
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a fissão do urânio
-[TEMPO] Resumo e próxima aula
+0:00 O Sol fica mais leve
+0:24 O que você precisa saber
+0:39 O joule
+0:54 E = m·c²
+1:12 O segredo do c²
+1:44 De onde sai a massa: o defeito de massa
+1:59 A energia da fusão
+2:35 O erro de esquecer o quadrado
+3:00 O atalho do 9 e do 16
+3:29 Hora de testar
+3:47 Resolvendo: a fissão do urânio
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Relatividade restrita: [LINK FIS-MOD-005]

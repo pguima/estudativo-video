@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-011 · Praticando: usinas e matriz elétrica
 
-**Arquivo:** `final/estudativo_FIS-MAG-011_praticando_usinas_e_matriz_eletrica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-011_praticando_usinas_e_matriz_eletrica.mp4` · 4:27 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Questão de usina quase nunca pede conta difícil: ela pede o caminho da energia
 ✅ Como escolher a fonte pela intermitência e pela queima
 
 ⏱️ Capítulos
-[TEMPO] Questão de usina: o que ela pede
-[TEMPO] O que você precisa saber
-[TEMPO] O método
-[TEMPO] Questão 1: hidrelétrica e nuclear
-[TEMPO] Questão 2: a potência da hidrelétrica
-[TEMPO] Questão 3: o rendimento da termelétrica
-[TEMPO] Questão 4: os painéis solares
-[TEMPO] Questão 5: a fonte para a noite
-[TEMPO] Resumo
+0:00 Questão de usina: o que ela pede
+0:14 O que você precisa saber
+0:26 O método
+0:44 Questão 1: hidrelétrica e nuclear
+1:38 Questão 2: a potência da hidrelétrica
+2:12 Questão 3: o rendimento da termelétrica
+2:55 Questão 4: os painéis solares
+3:31 Questão 5: a fonte para a noite
+4:05 Resumo
 
 📚 Antes desta aula
 Como uma usina gera eletricidade: [LINK FIS-MAG-009]

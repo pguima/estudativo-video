@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-016 · Desvio médio, variância e desvio padrão
 
-**Arquivo:** `final/estudativo_MAT-EST-016_desvio_medio_variancia_e_desvio_padrao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-016_desvio_medio_variancia_e_desvio_padrao.mp4` · 5:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Duas turmas têm a mesma média, 4: numa, as notas estão coladas no 4 (3, 4, 4 
 ✅ O atalho: +1 em todos não muda o desvio padrão; ×2 em todos dobra o desvio padrão e quadruplica a variância
 
 ⏱️ Capítulos
-[TEMPO] Mesma média, turmas diferentes
-[TEMPO] O que você precisa saber
-[TEMPO] O desvio e por que a soma dá zero
-[TEMPO] Desvio médio
-[TEMPO] Variância
-[TEMPO] Desvio padrão
-[TEMPO] O erro de (−2)² = −4
-[TEMPO] O atalho: somar e dobrar todas as notas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os tempos de espera
-[TEMPO] Resumo e próxima aula
+0:00 Mesma média, turmas diferentes
+0:22 O que você precisa saber
+0:34 O desvio e por que a soma dá zero
+1:18 Desvio médio
+1:42 Variância
+2:23 Desvio padrão
+3:11 O erro de (−2)² = −4
+3:31 O atalho: somar e dobrar todas as notas
+4:10 Hora de testar
+4:25 Resolvendo os tempos de espera
+5:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Média aritmética: [LINK MAT-EST-008]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-002 · Área do quadrado e do retângulo
 
-**Arquivo:** `final/estudativo_MAT-ARE-002_area_quadrado_retangulo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-002_area_quadrado_retangulo.mp4` · 4:19 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um quarto de 4 m por 3 m, pisos quadrados de meio metro de lado. Quantos pisos? 
 ✅ O atalho: conte quantos pisos cabem em cada lado e multiplique
 
 ⏱️ Capítulos
-[TEMPO] Quantos pisos cobrem o quarto?
-[TEMPO] O que você precisa saber
-[TEMPO] Contar quadradinhos: base vezes altura
-[TEMPO] O quadrado e lados em unidades diferentes
-[TEMPO] Os pisos do quarto: 48
-[TEMPO] O erro: lado do piso não é área
-[TEMPO] O atalho: conte pelos lados
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: lajotas e rodapé
-[TEMPO] Resumo e próxima aula
+0:00 Quantos pisos cobrem o quarto?
+0:31 O que você precisa saber
+0:46 Contar quadradinhos: base vezes altura
+1:29 O quadrado e lados em unidades diferentes
+2:00 Os pisos do quarto: 48
+2:25 O erro: lado do piso não é área
+2:44 O atalho: conte pelos lados
+3:13 Hora de testar
+3:29 Resolvendo: lajotas e rodapé
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Perímetro: o contorno de uma figura: [LINK MAT-ARE-001]

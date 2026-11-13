@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-003 · Calor sensível: Q = m·c·ΔT
 
-**Arquivo:** `final/estudativo_FIS-CAL-003_calor_sensivel.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-003_calor_sensivel.mp4` · 4:46 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Ao meio-dia, a areia da praia queima o pé e a água do mar continua fresca, com
 ✅ O atalho: ler a fórmula como proporção
 
 ⏱️ Capítulos
-[TEMPO] A areia queima, o mar não
-[TEMPO] O que você precisa saber
-[TEMPO] A caloria
-[TEMPO] A fórmula Q = m·c·ΔT
-[TEMPO] Exemplo: meio litro de água
-[TEMPO] A praia em números e o clima do litoral
-[TEMPO] O erro das unidades
-[TEMPO] O atalho: proporção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a panela
-[TEMPO] Resumo e próxima aula
+0:00 A areia queima, o mar não
+0:20 O que você precisa saber
+0:35 A caloria
+0:59 A fórmula Q = m·c·ΔT
+1:53 Exemplo: meio litro de água
+2:22 A praia em números e o clima do litoral
+3:07 O erro das unidades
+3:21 O atalho: proporção
+3:43 Hora de testar
+3:58 Resolvendo: a panela
+4:18 Resumo e próxima aula
 
 📚 Antes desta aula
 Temperatura e escalas termométricas: [LINK FIS-CAL-001]

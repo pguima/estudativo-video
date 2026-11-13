@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-002 · Divisão de polinômios e teorema do resto
 
-**Arquivo:** `final/estudativo_MAT-PLN-002_divisao_de_polinomios.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-002_divisao_de_polinomios.mp4` · 4:48 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ x² + 3x + 5 dividido por x − 1 dá quociente x + 4 e resto 9. Mas esse 9 sai 
 ✅ O atalho: divisível quer dizer P(a) = 0
 
 ⏱️ Capítulos
-[TEMPO] O resto sem dividir
-[TEMPO] O que você precisa saber
-[TEMPO] Dividendo, divisor, quociente e resto
-[TEMPO] O método da chave
-[TEMPO] O erro de não trocar os sinais
-[TEMPO] O teorema do resto
-[TEMPO] O atalho: divisível é P(a) = 0
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o resto por x + 2
-[TEMPO] Resumo e próxima aula
+0:00 O resto sem dividir
+0:20 O que você precisa saber
+0:33 Dividendo, divisor, quociente e resto
+1:00 O método da chave
+2:03 O erro de não trocar os sinais
+2:23 O teorema do resto
+3:04 O atalho: divisível é P(a) = 0
+3:39 Hora de testar
+3:50 Resolvendo: o resto por x + 2
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é polinômio: grau, valor e operações: [LINK MAT-PLN-001]

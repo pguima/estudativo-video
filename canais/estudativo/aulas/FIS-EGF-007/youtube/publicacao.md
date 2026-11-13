@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-007 · Empuxo: princípio de Arquimedes
 
-**Arquivo:** `final/estudativo_FIS-EGF-007_empuxo_principio_de_arquimedes.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-007_empuxo_principio_de_arquimedes.mp4` · 4:35 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Uma bola de ferro e uma de isopor, do mesmo tamanho, presas debaixo d'água: qua
 ✅ O atalho: na água, cada litro deslocado dá 10 N
 
 ⏱️ Capítulos
-[TEMPO] Ferro e isopor debaixo d'água
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem o empuxo
-[TEMPO] A fórmula do empuxo
-[TEMPO] O erro da densidade do corpo
-[TEMPO] O atalho: 10 N por litro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o objeto no óleo
-[TEMPO] Resumo e próxima aula
+0:00 Ferro e isopor debaixo d'água
+0:20 O que você precisa saber
+0:35 De onde vem o empuxo
+1:05 A fórmula do empuxo
+2:34 O erro da densidade do corpo
+2:58 O atalho: 10 N por litro
+3:30 Hora de testar
+3:47 Resolvendo: o objeto no óleo
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 Lei de Stevin: [LINK FIS-EGF-005]

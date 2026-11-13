@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-008 · Praticando: temperatura, dilatação e calorimetria
 
-**Arquivo:** `final/estudativo_FIS-CAL-008_praticando_temperatura_dilatacao_calorimetria.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-008_praticando_temperatura_dilatacao_calorimetria.mp4` · 4:55 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,14 +29,14 @@ Cinco situações inéditas para treinar tudo o que você viu sobre temperatura 
 ✅ Ponto de ebulição e altitude no diagrama de fases
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a escala X
-[TEMPO] Situação 2: o volume do bloco
-[TEMPO] Situação 3: metal na água
-[TEMPO] Situação 4: gelo abaixo de zero
-[TEMPO] Situação 5: a água de La Paz
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações
+0:17 O que você vai usar
+0:35 Situação 1: a escala X
+1:20 Situação 2: o volume do bloco
+2:11 Situação 3: metal na água
+3:04 Situação 4: gelo abaixo de zero
+3:54 Situação 5: a água de La Paz
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Temperatura e escalas termométricas: [LINK FIS-CAL-001]

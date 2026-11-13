@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-003 · Contar os divisores de um número
 
-**Arquivo:** `final/estudativo_MAT-CNT-003_contar_divisores.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-003_contar_divisores.mp4` · 4:34 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ De quantos jeitos dá para arrumar 72 cadeiras em fileiras iguais? Cada jeito é
 ✅ O atalho: divisores ímpares ignoram o fator 2 (72 tem 3 ímpares e 9 pares)
 
 ⏱️ Capítulos
-[TEMPO] 72 cadeiras em fileiras iguais
-[TEMPO] O que você precisa saber
-[TEMPO] Fatorando o 72
-[TEMPO] O que é um divisor: escolher os fatores
-[TEMPO] A tabela dos 12 divisores
-[TEMPO] A regra: some 1 em cada expoente
-[TEMPO] O erro de esquecer o +1
-[TEMPO] O atalho: divisores ímpares e pares
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: os divisores de 360
-[TEMPO] Resumo e próxima aula
+0:00 72 cadeiras em fileiras iguais
+0:27 O que você precisa saber
+0:41 Fatorando o 72
+1:06 O que é um divisor: escolher os fatores
+2:08 A tabela dos 12 divisores
+2:30 A regra: some 1 em cada expoente
+2:52 O erro de esquecer o +1
+3:08 O atalho: divisores ímpares e pares
+3:37 Hora de testar
+3:51 Resolvendo: os divisores de 360
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Princípio multiplicativo e árvore de possibilidades: [LINK MAT-CNT-001]

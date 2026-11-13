@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-007 · Prisma: área e volume
 
-**Arquivo:** `final/estudativo_MAT-ESP-007_prisma_area_e_volume.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-007_prisma_area_e_volume.mp4` · 5:33 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Uma embalagem em forma de prisma deitado tem a ponta triangular de base 6 cm e a
 ✅ O atalho: área lateral = perímetro da base × altura
 
 ⏱️ Capítulos
-[TEMPO] Multiplicar tudo dá o dobro
-[TEMPO] O que você precisa saber
-[TEMPO] O que é prisma
-[TEMPO] Volume: área da base × altura
-[TEMPO] O volume da embalagem triangular
-[TEMPO] O prisma hexagonal
-[TEMPO] Área total: abrindo a embalagem
-[TEMPO] O erro de esquecer as bases
-[TEMPO] O atalho: perímetro × altura
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a peça de madeira
-[TEMPO] Resumo e próxima aula
+0:00 Multiplicar tudo dá o dobro
+0:26 O que você precisa saber
+0:43 O que é prisma
+1:11 Volume: área da base × altura
+1:36 O volume da embalagem triangular
+2:04 O prisma hexagonal
+2:44 Área total: abrindo a embalagem
+3:31 O erro de esquecer as bases
+3:45 O atalho: perímetro × altura
+4:20 Hora de testar
+4:38 Resolvendo a peça de madeira
+5:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Volume do cubo e do bloco: [LINK MAT-ESP-005]

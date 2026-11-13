@@ -1,6 +1,6 @@
 # Publicação — FIS-MOD-006 · Semicondutores e transistores
 
-**Arquivo:** `final/estudativo_FIS-MOD-006_semicondutores_e_transistores.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MOD-006_semicondutores_e_transistores.mp4` · 4:53 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ O processador do seu celular tem mais de dez bilhões de chaves minúsculas, tod
 ✅ O atalho: compare com os 4 elétrons do silício
 
 ⏱️ Capítulos
-[TEMPO] 10 bilhões de chaves no seu celular
-[TEMPO] O que você precisa saber
-[TEMPO] Condutor, isolante e semicondutor
-[TEMPO] Dopagem: tipo n
-[TEMPO] Dopagem: tipo p e a lacuna
-[TEMPO] O diodo
-[TEMPO] O transistor
-[TEMPO] O erro da carga positiva
-[TEMPO] O atalho do 4
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o arsênio e o diodo
-[TEMPO] Resumo e próxima aula
+0:00 10 bilhões de chaves no seu celular
+0:22 O que você precisa saber
+0:35 Condutor, isolante e semicondutor
+1:05 Dopagem: tipo n
+1:22 Dopagem: tipo p e a lacuna
+1:39 O diodo
+2:06 O transistor
+2:48 O erro da carga positiva
+3:10 O atalho do 4
+3:47 Hora de testar
+4:08 Resolvendo: o arsênio e o diodo
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Ohm: [LINK FIS-ELE-010]

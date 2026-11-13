@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-008 · Seno, cosseno e tangente no ciclo
 
-**Arquivo:** `final/estudativo_MAT-TRI-008_seno_cosseno_e_tangente_no_ciclo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-008_seno_cosseno_e_tangente_no_ciclo.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,22 +31,22 @@ Nenhum triângulo retângulo tem um ângulo de 180 graus. Mesmo assim, o cosseno
 ✅ O macete dos sinais: to, se, ta, co
 
 ⏱️ Capítulos
-[TEMPO] Cosseno de 180° sem triângulo
-[TEMPO] O que você precisa saber
-[TEMPO] O triângulo dentro do ciclo
-[TEMPO] Seno é a altura, cosseno é a horizontal
-[TEMPO] Lendo sen 30° no eixo vertical
-[TEMPO] Seno e cosseno de 90°
-[TEMPO] Seno e cosseno de 180°
-[TEMPO] O sinal do seno
-[TEMPO] O sinal do cosseno
-[TEMPO] O sinal da tangente
-[TEMPO] O erro de trocar os eixos
-[TEMPO] O macete: to, se, ta, co
-[TEMPO] Por que o macete funciona
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 200° e 270°
-[TEMPO] Resumo e próxima aula
+0:00 Cosseno de 180° sem triângulo
+0:21 O que você precisa saber
+0:37 O triângulo dentro do ciclo
+0:48 Seno é a altura, cosseno é a horizontal
+0:56 Lendo sen 30° no eixo vertical
+1:11 Seno e cosseno de 90°
+1:24 Seno e cosseno de 180°
+1:40 O sinal do seno
+1:50 O sinal do cosseno
+1:58 O sinal da tangente
+2:19 O erro de trocar os eixos
+2:40 O macete: to, se, ta, co
+2:55 Por que o macete funciona
+3:13 Hora de testar
+3:28 Resolvendo 200° e 270°
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Radianos e o ciclo trigonométrico: [LINK MAT-TRI-007]

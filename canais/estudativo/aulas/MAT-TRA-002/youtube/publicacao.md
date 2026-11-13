@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-002 · Lei dos cossenos
 
-**Arquivo:** `final/estudativo_MAT-TRA-002_lei_dos_cossenos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-002_lei_dos_cossenos.mp4` · 4:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Dois lados de um triângulo medem 3 e 5, e o ângulo entre eles é de 120°. Qua
 ✅ O atalho: 60° vira − bc e 120° vira + bc
 
 ⏱️ Capítulos
-[TEMPO] Lados 3 e 5, ângulo de 120°
-[TEMPO] O que você precisa saber
-[TEMPO] A regra: Pitágoras com um ajuste
-[TEMPO] Por que um ajuste: a dobradiça
-[TEMPO] A conta: o lado mede 7
-[TEMPO] O erro do sinal do cosseno
-[TEMPO] O atalho de 60° e 120°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: lados 5 e 8
-[TEMPO] Resumo e próxima aula
+0:00 Lados 3 e 5, ângulo de 120°
+0:21 O que você precisa saber
+0:39 A regra: Pitágoras com um ajuste
+1:06 Por que um ajuste: a dobradiça
+1:25 A conta: o lado mede 7
+2:12 O erro do sinal do cosseno
+2:29 O atalho de 60° e 120°
+3:02 Hora de testar
+3:14 Resolvendo: lados 5 e 8
+3:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Teorema de Pitágoras: [LINK MAT-ANG-015]

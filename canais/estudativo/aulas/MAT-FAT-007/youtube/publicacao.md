@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-007 · Equação do 2º grau incompleta
 
-**Arquivo:** `final/estudativo_MAT-FAT-007_equacao_2grau_incompleta.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-007_equacao_2grau_incompleta.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ x² = 49 tem duas respostas: 7 e −7, porque (−7)² também dá 49. Nesta aul
 ✅ O atalho: sem c, as raízes são 0 e −b/a
 
 ⏱️ Capítulos
-[TEMPO] x² = 49: a metade da resposta
-[TEMPO] O que você precisa saber
-[TEMPO] A equação do 2º grau e os coeficientes a, b e c
-[TEMPO] Sem b: x² − 49 = 0
-[TEMPO] Sem c: x² − 5x = 0
-[TEMPO] O erro de dividir por x
-[TEMPO] O atalho: uma raiz é zero, a outra é −b/a
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas
-[TEMPO] Resumo e próxima aula
+0:00 x² = 49: a metade da resposta
+0:21 O que você precisa saber
+0:35 A equação do 2º grau e os coeficientes a, b e c
+1:33 Sem b: x² − 49 = 0
+2:29 Sem c: x² − 5x = 0
+3:01 O erro de dividir por x
+3:21 O atalho: uma raiz é zero, a outra é −b/a
+3:52 Hora de testar
+4:06 Resolvendo as duas
+4:39 Resumo e próxima aula
 
 📚 Antes desta aula
 A balança: o mesmo nos dois lados: [LINK MAT-EQU-008]

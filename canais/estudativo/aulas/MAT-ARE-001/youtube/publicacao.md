@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-001 · Perímetro: o contorno de uma figura
 
-**Arquivo:** `final/estudativo_MAT-ARE-001_perimetro_contorno.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-001_perimetro_contorno.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um terreno de 20 m por 35 m: quantos metros de cerca para fechar tudo? Se você 
 ✅ Uma horta com portão resolvida passo a passo
 
 ⏱️ Capítulos
-[TEMPO] Quantos metros de cerca?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é perímetro
-[TEMPO] Retângulo, quadrado e equilátero
-[TEMPO] Medidas em unidades diferentes
-[TEMPO] O erro da cerca pela metade
-[TEMPO] O atalho: some e dobre
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a horta com portão
-[TEMPO] Resumo e próxima aula
+0:00 Quantos metros de cerca?
+0:21 O que você precisa saber
+0:34 O que é perímetro
+1:10 Retângulo, quadrado e equilátero
+1:48 Medidas em unidades diferentes
+2:25 O erro da cerca pela metade
+2:44 O atalho: some e dobre
+3:10 Hora de testar
+3:28 Resolvendo: a horta com portão
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 A escada do metro: [LINK MAT-MED-001]

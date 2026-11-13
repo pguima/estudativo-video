@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-005 · Classificar triângulos por lados e ângulos
 
-**Arquivo:** `final/estudativo_MAT-ANG-005_classificar_triangulos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-005_classificar_triangulos.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um triângulo tem dois lados iguais e um ângulo da base mede 40°. Muita gente 
 ✅ O atalho: para classificar pelos ângulos, olhe só o maior
 
 ⏱️ Capítulos
-[TEMPO] 40° na base: 70 e 70?
-[TEMPO] O que você precisa saber
-[TEMPO] Pelos lados: equilátero, isósceles, escaleno
-[TEMPO] O isósceles: base, topo e ângulos iguais
-[TEMPO] Pelos ângulos: acutângulo, retângulo, obtusângulo
-[TEMPO] O erro de confundir topo e base
-[TEMPO] O atalho: olhe só o maior ângulo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: isósceles com topo de 36°
-[TEMPO] Resumo e próxima aula
+0:00 40° na base: 70 e 70?
+0:24 O que você precisa saber
+0:37 Pelos lados: equilátero, isósceles, escaleno
+1:04 O isósceles: base, topo e ângulos iguais
+1:35 Pelos ângulos: acutângulo, retângulo, obtusângulo
+2:14 O erro de confundir topo e base
+2:47 O atalho: olhe só o maior ângulo
+3:09 Hora de testar
+3:26 Resolvendo: isósceles com topo de 36°
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma dos ângulos do triângulo e ângulo externo: [LINK MAT-ANG-004]

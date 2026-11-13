@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-017 · Sólidos compostos: somar e subtrair volumes
 
-**Arquivo:** `final/estudativo_MAT-ESP-017_solidos_compostos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-017_solidos_compostos.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Um silo de fazenda é um cilindro com um telhado em forma de cone. Não existe f
 ✅ O tubo de concreto em decímetros: 750 − 480 = 270 litros, conferido pela coroa
 
 ⏱️ Capítulos
-[TEMPO] Não existe fórmula de silo
-[TEMPO] O que você precisa saber
-[TEMPO] O método em 3 passos
-[TEMPO] O silo: somar
-[TEMPO] A peça com furo: subtrair
-[TEMPO] O erro da altura total
-[TEMPO] O atalho: junte as alturas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o tubo de concreto
-[TEMPO] Resumo e próxima aula
+0:00 Não existe fórmula de silo
+0:19 O que você precisa saber
+0:34 O método em 3 passos
+0:49 O silo: somar
+1:23 A peça com furo: subtrair
+1:55 O erro da altura total
+2:14 O atalho: junte as alturas
+2:44 Hora de testar
+3:06 Resolvendo o tubo de concreto
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Cone: geratriz, área e volume: [LINK MAT-ESP-013]

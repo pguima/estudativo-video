@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-006 · Ponto de encontro de duas retas
 
-**Arquivo:** `final/estudativo_MAT-ANA-006_ponto_de_encontro_de_duas_retas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-006_ponto_de_encontro_de_duas_retas.mp4` · 5:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ y = 2x + 1 e y = −x + 4: em que ponto exato essas retas se cruzam? O desenho d
 ✅ O atalho: compare os m antes de fazer conta
 
 ⏱️ Capítulos
-[TEMPO] Em que ponto as retas se cruzam?
-[TEMPO] O que você precisa saber
-[TEMPO] A ideia: um ponto nas duas retas
-[TEMPO] Resolvendo: iguale as expressões
-[TEMPO] Retas na forma geral
-[TEMPO] Nem sempre existe: paralelas e os três casos
-[TEMPO] O erro de juntar os x
-[TEMPO] O atalho: compare os m
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: as duas locadoras
-[TEMPO] Resumo e próxima aula
+0:00 Em que ponto as retas se cruzam?
+0:20 O que você precisa saber
+0:34 A ideia: um ponto nas duas retas
+0:45 Resolvendo: iguale as expressões
+1:23 Retas na forma geral
+2:00 Nem sempre existe: paralelas e os três casos
+2:42 O erro de juntar os x
+3:13 O atalho: compare os m
+3:41 Hora de testar
+4:00 Resolvendo: as duas locadoras
+4:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação da reta: reduzida, geral e segmentária: [LINK MAT-ANA-004]

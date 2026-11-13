@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-005 · Fluxo e lei de Faraday
 
-**Arquivo:** `final/estudativo_FIS-MAG-005_fluxo_e_lei_de_faraday.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-005_fluxo_e_lei_de_faraday.mp4` · 4:53 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Em 1831, Michael Faraday enfiou um ímã numa bobina e apareceu corrente, sem pi
 ✅ O atalho: o fluxo está mudando?
 
 ⏱️ Capítulos
-[TEMPO] Corrente sem pilha
-[TEMPO] O que você precisa saber
-[TEMPO] O que é fluxo magnético
-[TEMPO] O que muda o fluxo
-[TEMPO] A lei de Faraday
-[TEMPO] A barra nos trilhos
-[TEMPO] O erro do ímã parado
-[TEMPO] O atalho: o fluxo está mudando?
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bobina de dez espiras
-[TEMPO] Resumo e próxima aula
+0:00 Corrente sem pilha
+0:24 O que você precisa saber
+0:37 O que é fluxo magnético
+1:20 O que muda o fluxo
+1:32 A lei de Faraday
+2:31 A barra nos trilhos
+3:05 O erro do ímã parado
+3:20 O atalho: o fluxo está mudando?
+3:50 Hora de testar
+4:10 Resolvendo: a bobina de dez espiras
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Força sobre um fio e motor elétrico: [LINK FIS-MAG-004]

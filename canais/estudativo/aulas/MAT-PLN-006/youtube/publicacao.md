@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-006 · Relações de Girard
 
-**Arquivo:** `final/estudativo_MAT-PLN-006_relacoes_de_girard.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-006_relacoes_de_girard.mp4` · 4:36 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Em x³ − 6x² + 11x − 6 = 0, as raízes somam 6 e o produto delas é 6. E d�
 ✅ O atalho: uma raiz conhecida + Girard dá as outras duas
 
 ⏱️ Capítulos
-[TEMPO] Soma e produto sem resolver
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem
-[TEMPO] As relações de Girard no grau 3
-[TEMPO] Quando o a não vale 1
-[TEMPO] O erro no sinal do produto
-[TEMPO] O atalho: uma raiz + Girard
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x³ − 4x² + x + 6 = 0
-[TEMPO] Resumo e próxima aula
+0:00 Soma e produto sem resolver
+0:22 O que você precisa saber
+0:39 De onde vem
+1:18 As relações de Girard no grau 3
+1:50 Quando o a não vale 1
+2:26 O erro no sinal do produto
+2:45 O atalho: uma raiz + Girard
+3:26 Hora de testar
+3:41 Resolvendo: x³ − 4x² + x + 6 = 0
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma e produto: raízes de cabeça: [LINK MAT-FAT-011]

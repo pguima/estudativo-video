@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-019 · Máximo e mínimo em problemas
 
-**Arquivo:** `final/estudativo_MAT-FUN-019_maximo_e_minimo_em_problemas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-019_maximo_e_minimo_em_problemas.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma bola é chutada para cima e a altura dela é h(t) = −5t² + 20t. Qual é a
 ✅ O atalho: sem c, o topo fica no meio das raízes 0 e −b/a
 
 ⏱️ Capítulos
-[TEMPO] Altura máxima: 2 ou 20?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que o vértice dá o máximo ou o mínimo
-[TEMPO] A bola: quando e a que altura
-[TEMPO] O lucro máximo da loja
-[TEMPO] O erro: parar no x do vértice
-[TEMPO] O atalho: o topo no meio do voo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a câmara fria
-[TEMPO] Resumo e próxima aula
+0:00 Altura máxima: 2 ou 20?
+0:25 O que você precisa saber
+0:37 Por que o vértice dá o máximo ou o mínimo
+0:59 A bola: quando e a que altura
+1:47 O lucro máximo da loja
+2:31 O erro: parar no x do vértice
+2:48 O atalho: o topo no meio do voo
+3:18 Hora de testar
+3:36 Resolvendo: a câmara fria
+4:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Vértice da parábola: [LINK MAT-FUN-018]

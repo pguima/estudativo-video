@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-014 · Segunda lei e máquinas térmicas
 
-**Arquivo:** `final/estudativo_FIS-CAL-014_segunda_lei_maquinas_termicas.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-014_segunda_lei_maquinas_termicas.mp4` · 4:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Num carro, só cerca de um quarto do calor da gasolina vira movimento. Defeito d
 ✅ O atalho: η = 1 − Qf/Qq
 
 ⏱️ Capítulos
-[TEMPO] Só um quarto vira movimento
-[TEMPO] O que você precisa saber
-[TEMPO] A máquina térmica e suas três partes
-[TEMPO] O rendimento: η = τ/Qq
-[TEMPO] A segunda lei da termodinâmica
-[TEMPO] O erro de dividir pelo calor errado
-[TEMPO] O atalho: η = 1 − Qf/Qq
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a máquina de 800 J
-[TEMPO] Resumo e próxima aula
+0:00 Só um quarto vira movimento
+0:25 O que você precisa saber
+0:41 A máquina térmica e suas três partes
+1:20 O rendimento: η = τ/Qq
+1:49 A segunda lei da termodinâmica
+2:25 O erro de dividir pelo calor errado
+2:38 O atalho: η = 1 − Qf/Qq
+3:10 Hora de testar
+3:23 Resolvendo: a máquina de 800 J
+3:44 Resumo e próxima aula
 
 📚 Antes desta aula
 A primeira lei em cada transformação: [LINK FIS-CAL-013]

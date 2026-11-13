@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-010 · Força centrípeta
 
-**Arquivo:** `final/estudativo_FIS-DIN-010_forca_centripeta.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-010_forca_centripeta.mp4` · 4:12 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Numa curva, você sente ser jogado para fora, mas não existe força para fora: 
 ✅ O atalho: velocidade dobrada, força quatro vezes maior
 
 ⏱️ Capítulos
-[TEMPO] Jogado para fora na curva?
-[TEMPO] O que você precisa saber
-[TEMPO] A aceleração na curva
-[TEMPO] A fórmula: v²/R
-[TEMPO] Quem faz o papel de centrípeta
-[TEMPO] O erro da força centrífuga
-[TEMPO] O atalho do quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a pedra no fio
-[TEMPO] Resumo e próxima aula
+0:00 Jogado para fora na curva?
+0:17 O que você precisa saber
+0:29 A aceleração na curva
+0:51 A fórmula: v²/R
+1:46 Quem faz o papel de centrípeta
+2:23 O erro da força centrífuga
+2:38 O atalho do quadrado
+3:03 Hora de testar
+3:18 Resolvendo: a pedra no fio
+3:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Segunda lei de Newton: F = m·a: [LINK FIS-DIN-002]

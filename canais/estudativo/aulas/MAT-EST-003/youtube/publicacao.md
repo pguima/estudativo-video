@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-003 · Gráficos de barras e de linhas
 
-**Arquivo:** `final/estudativo_MAT-EST-003_graficos_de_barras_e_de_linhas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-003_graficos_de_barras_e_de_linhas.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ As vendas de uma loja, mês a mês, num gráfico de linhas: em que período elas
 ✅ O atalho: procure o trecho mais em pé
 
 ⏱️ Capítulos
-[TEMPO] A maior alta não é o ponto mais alto
-[TEMPO] O que você precisa saber
-[TEMPO] Lendo o gráfico de barras
-[TEMPO] O gráfico de linhas
-[TEMPO] Achando a maior alta
-[TEMPO] A variação em porcentagem
-[TEMPO] O erro de contar as linhas da grade
-[TEMPO] O atalho: o trecho mais em pé
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os visitantes do museu
-[TEMPO] Resumo e próxima aula
+0:00 A maior alta não é o ponto mais alto
+0:24 O que você precisa saber
+0:35 Lendo o gráfico de barras
+1:08 O gráfico de linhas
+1:29 Achando a maior alta
+1:51 A variação em porcentagem
+2:12 O erro de contar as linhas da grade
+2:27 O atalho: o trecho mais em pé
+2:56 Hora de testar
+3:19 Resolvendo os visitantes do museu
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Tabela de frequência e classes: [LINK MAT-EST-002]

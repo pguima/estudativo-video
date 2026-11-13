@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-017 · Praticando: gráficos, queda e lançamentos
 
-**Arquivo:** `final/estudativo_FIS-CIN-017_praticando_graficos_queda_lancamentos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-017_praticando_graficos_queda_lancamentos.mp4` · 4:24 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas, criadas para esta aula, para praticar gráficos do 
 ✅ Lançamento oblíquo: ângulos complementares e os 45°
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para você resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: o carro que freia (gráfico)
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: a pedra que cai 125 m
-[TEMPO] Resposta 2
-[TEMPO] O atalho: a tabela da queda
-[TEMPO] Situação 3: a bola que volta em 8 s
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: a bola do telhado
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: chutes a 30° e a 60°
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações para você resolver
+0:16 O que você vai usar
+0:38 Situação 1: o carro que freia (gráfico)
+0:56 Resposta 1
+1:28 Situação 2: a pedra que cai 125 m
+1:43 Resposta 2
+1:57 O atalho: a tabela da queda
+2:17 Situação 3: a bola que volta em 8 s
+2:31 Resposta 3
+2:52 Situação 4: a bola do telhado
+3:08 Resposta 4
+3:23 Situação 5: chutes a 30° e a 60°
+3:41 Resposta 5
+4:00 Resumo e próxima aula
 
 📚 Antes desta aula
 Gráfico posição por tempo: [LINK FIS-CIN-011]

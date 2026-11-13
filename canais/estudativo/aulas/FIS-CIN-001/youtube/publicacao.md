@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-001 · Grandezas físicas e Sistema Internacional
 
-**Arquivo:** `final/estudativo_FIS-CIN-001_grandezas_fisicas_sistema_internacional.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-001_grandezas_fisicas_sistema_internacional.mp4` · 7:03 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Em 1999, uma sonda da NASA se perdeu em Marte por causa de uma unidade. Nesta pr
 ✅ O atalho: tirar a unidade da fórmula e eliminar alternativas
 
 ⏱️ Capítulos
-[TEMPO] Uma sonda perdida por causa de uma unidade
-[TEMPO] O que você precisa saber
-[TEMPO] O que é grandeza física
-[TEMPO] O Sistema Internacional
-[TEMPO] Converter km/h em m/s
-[TEMPO] Grandeza escalar e vetorial
-[TEMPO] Conferir uma fórmula pelas unidades
-[TEMPO] O erro de misturar unidades
-[TEMPO] O atalho: tire a unidade da fórmula
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ciclista
-[TEMPO] Resumo e próxima aula
+0:00 Uma sonda perdida por causa de uma unidade
+0:25 O que você precisa saber
+0:39 O que é grandeza física
+1:08 O Sistema Internacional
+1:51 Converter km/h em m/s
+2:31 Grandeza escalar e vetorial
+3:30 Conferir uma fórmula pelas unidades
+4:22 O erro de misturar unidades
+4:52 O atalho: tire a unidade da fórmula
+5:40 Hora de testar
+5:57 Resolvendo: o ciclista
+6:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Prefixos e unidades fora do sistema métrico: [LINK MAT-MED-003]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-009 · Discriminante: quantas raízes a equação tem
 
-**Arquivo:** `final/estudativo_MAT-FAT-009_discriminante_quantas_raizes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-009_discriminante_quantas_raizes.mp4` · 4:36 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ x² + 2x + 5 = 0 não tem nenhuma raiz real, e você descobre isso sem resolver:
 ✅ O atalho: a e c com sinais contrários dão Δ > 0
 
 ⏱️ Capítulos
-[TEMPO] Uma conta de 5 segundos
-[TEMPO] O que você precisa saber
-[TEMPO] Tudo depende da raiz do delta
-[TEMPO] Delta positivo: duas raízes
-[TEMPO] Delta zero: a raiz dupla
-[TEMPO] Delta negativo: nenhuma raiz real
-[TEMPO] O quadro dos três casos
-[TEMPO] O valor de k para uma raiz só
-[TEMPO] O erro: delta zero não é nenhuma raiz
-[TEMPO] O atalho dos sinais de a e c
-[TEMPO] Hora de testar
-[TEMPO] Respostas
-[TEMPO] Resumo e próxima aula
+0:00 Uma conta de 5 segundos
+0:22 O que você precisa saber
+0:36 Tudo depende da raiz do delta
+0:51 Delta positivo: duas raízes
+1:07 Delta zero: a raiz dupla
+1:38 Delta negativo: nenhuma raiz real
+1:55 O quadro dos três casos
+2:05 O valor de k para uma raiz só
+2:43 O erro: delta zero não é nenhuma raiz
+3:03 O atalho dos sinais de a e c
+3:31 Hora de testar
+3:54 Respostas
+4:16 Resumo e próxima aula
 
 📚 Antes desta aula
 Fórmula de Bhaskara: [LINK MAT-FAT-008]

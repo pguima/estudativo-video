@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-007 · Praticando: eletrostática
 
-**Arquivo:** `final/estudativo_FIS-ELE-007_praticando_eletrostatica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-007_praticando_eletrostatica.mp4` · 4:28 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,14 +29,14 @@ Eletrostática tem muitas fórmulas parecidas, e a prova adora misturar. Nesta a
 ✅ Energia do capacitor e o efeito de mudar a tensão
 
 ⏱️ Capítulos
-[TEMPO] Muitas fórmulas parecidas
-[TEMPO] O método e a caixa de ferramentas
-[TEMPO] Questão 1: contato e elétrons
-[TEMPO] Questão 2: Coulomb por proporção
-[TEMPO] Questão 3: força num elétron
-[TEMPO] Questão 4: tensão e trabalho
-[TEMPO] Questão 5: energia do capacitor
-[TEMPO] Resumo e próxima aula
+0:00 Muitas fórmulas parecidas
+0:14 O método e a caixa de ferramentas
+0:48 Questão 1: contato e elétrons
+1:41 Questão 2: Coulomb por proporção
+2:13 Questão 3: força num elétron
+2:57 Questão 4: tensão e trabalho
+3:37 Questão 5: energia do capacitor
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Carga elétrica e eletrização: [LINK FIS-ELE-001]

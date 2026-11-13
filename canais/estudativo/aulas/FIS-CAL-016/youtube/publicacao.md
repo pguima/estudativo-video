@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-016 · Praticando: propagação e termodinâmica
 
-**Arquivo:** `final/estudativo_FIS-CAL-016_praticando_propagacao_termodinamica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-016_praticando_propagacao_termodinamica.mp4` · 5:18 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,19 +31,19 @@ Cinco situações inéditas para praticar tudo da trilha de calor e termodinâmi
 ✅ A geladeira: o lado quente é a soma
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a panela no fogo
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: o ciclo
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: o gás a pressão constante
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: o motor
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Situação 5: a geladeira
-[TEMPO] Resolvendo a situação 5
-[TEMPO] Resumo
+0:00 Cinco situações
+0:14 O que você vai usar
+0:29 Situação 1: a panela no fogo
+0:49 Resolvendo a situação 1
+1:18 Situação 2: o ciclo
+1:36 Resolvendo a situação 2
+2:09 Situação 3: o gás a pressão constante
+2:51 Resolvendo a situação 3
+3:16 Situação 4: o motor
+3:36 Resolvendo a situação 4
+4:18 Situação 5: a geladeira
+4:35 Resolvendo a situação 5
+4:51 Resumo
 
 📚 Antes desta aula
 Condução de calor: [LINK FIS-CAL-009]

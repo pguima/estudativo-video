@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-008 · Combinação: quando a ordem não importa
 
-**Arquivo:** `final/estudativo_MAT-CNT-008_combinacao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-008_combinacao.mp4` · 4:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Oito pessoas, uma comissão de três. Quem usa a conta do pódio responde 336, m
 ✅ O atalho: comissão de 8 entre 10 é escolher os 2 de fora, 90 ÷ 2! = 45
 
 ⏱️ Capítulos
-[TEMPO] Comissão de 3 entre 8: 336?
-[TEMPO] O que você precisa saber
-[TEMPO] O teste da troca
-[TEMPO] As 6 ordens que viram uma comissão
-[TEMPO] Combinação e a fórmula C(n, p)
-[TEMPO] A pizza meio a meio
-[TEMPO] O erro de dividir por 3 em vez de 3!
-[TEMPO] O atalho: escolha quem fica de fora
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duplas e os livros
-[TEMPO] Resumo e próxima aula
+0:00 Comissão de 3 entre 8: 336?
+0:22 O que você precisa saber
+0:35 O teste da troca
+0:50 As 6 ordens que viram uma comissão
+1:27 Combinação e a fórmula C(n, p)
+2:12 A pizza meio a meio
+2:30 O erro de dividir por 3 em vez de 3!
+2:47 O atalho: escolha quem fica de fora
+3:25 Hora de testar
+3:43 Resolvendo as duplas e os livros
+4:04 Resumo e próxima aula
 
 📚 Antes desta aula
 Arranjo: quando a ordem importa: [LINK MAT-CNT-007]

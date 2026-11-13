@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-004 · Circunferência: raio, diâmetro e comprimento
 
-**Arquivo:** `final/estudativo_MAT-POL-004_circunferencia_raio_diametro_comprimento.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-004_circunferencia_raio_diametro_comprimento.mp4` · 4:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Uma roda de bicicleta dá cem voltas. Quanto a bicicleta andou? Sabendo só o ta
 ✅ Pista de 600 m de volta: raio de 100 m
 
 ⏱️ Capítulos
-[TEMPO] Quanto a bicicleta andou?
-[TEMPO] O que você precisa saber
-[TEMPO] Circunferência e círculo
-[TEMPO] Raio e diâmetro
-[TEMPO] O número π
-[TEMPO] A fórmula C = 2πr
-[TEMPO] A roda de bicicleta em 100 voltas
-[TEMPO] O erro de usar o diâmetro no lugar do raio
-[TEMPO] O atalho: o triplo do diâmetro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o raio da pista
-[TEMPO] Resumo e próxima aula
+0:00 Quanto a bicicleta andou?
+0:19 O que você precisa saber
+0:34 Circunferência e círculo
+0:55 Raio e diâmetro
+1:09 O número π
+1:40 A fórmula C = 2πr
+2:11 A roda de bicicleta em 100 voltas
+2:40 O erro de usar o diâmetro no lugar do raio
+3:00 O atalho: o triplo do diâmetro
+3:25 Hora de testar
+3:38 Resolvendo: o raio da pista
+4:05 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é razão: [LINK MAT-RAZ-001]

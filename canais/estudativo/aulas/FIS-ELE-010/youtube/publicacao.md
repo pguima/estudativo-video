@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-010 · Segunda lei de Ohm
 
-**Arquivo:** `final/estudativo_FIS-ELE-010_segunda_lei_de_ohm.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-010_segunda_lei_de_ohm.mp4` · 4:12 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Estique um fio até o dobro do comprimento e a resistência não dobra: fica qua
 ✅ O macete do fio esticado: esticou n vezes, R × n²
 
 ⏱️ Capítulos
-[TEMPO] Esticou o fio: a resistência dobra?
-[TEMPO] O que você precisa saber
-[TEMPO] Do que depende a resistência
-[TEMPO] A segunda lei de Ohm
-[TEMPO] Uma mudança de cada vez
-[TEMPO] O erro do diâmetro
-[TEMPO] O atalho do fio esticado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o fio novo
-[TEMPO] Resumo e próxima aula
+0:00 Esticou o fio: a resistência dobra?
+0:18 O que você precisa saber
+0:34 Do que depende a resistência
+0:48 A segunda lei de Ohm
+1:28 Uma mudança de cada vez
+2:06 O erro do diâmetro
+2:34 O atalho do fio esticado
+3:11 Hora de testar
+3:25 Resolvendo: o fio novo
+3:44 Resumo e próxima aula
 
 📚 Antes desta aula
 Resistência e primeira lei de Ohm: [LINK FIS-ELE-009]

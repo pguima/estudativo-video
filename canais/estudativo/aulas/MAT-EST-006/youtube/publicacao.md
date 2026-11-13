@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-006 · Tabelas de dupla entrada, mapas e infográficos
 
-**Arquivo:** `final/estudativo_MAT-EST-006_tabelas_mapas_e_infograficos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-006_tabelas_mapas_e_infograficos.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Dos alunos da noite, quantos por cento estudam a distância? Muita gente respond
 ✅ O atalho: a tabela se confere sozinha (350 − 140 = 210)
 
 ⏱️ Capítulos
-[TEMPO] 30% ou 60%?
-[TEMPO] O que você precisa saber
-[TEMPO] Tabela de dupla entrada: cruzar linha e coluna
-[TEMPO] O mapa e a legenda
-[TEMPO] O infográfico e a unidade
-[TEMPO] O erro de dividir pelo total errado
-[TEMPO] O atalho: a tabela se confere sozinha
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a leitura por gosto
-[TEMPO] Resumo e próxima aula
+0:00 30% ou 60%?
+0:19 O que você precisa saber
+0:31 Tabela de dupla entrada: cruzar linha e coluna
+1:17 O mapa e a legenda
+1:59 O infográfico e a unidade
+2:37 O erro de dividir pelo total errado
+3:05 O atalho: a tabela se confere sozinha
+3:31 Hora de testar
+3:58 Resolvendo a leitura por gosto
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Tabela de frequência e classes: [LINK MAT-EST-002]

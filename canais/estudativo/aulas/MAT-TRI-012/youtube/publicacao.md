@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-012 · Fenômenos periódicos: marés e ondas
 
-**Arquivo:** `final/estudativo_MAT-TRI-012_fenomenos_periodicos_mares_e_ondas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-012_fenomenos_periodicos_mares_e_ondas.mp4` · 3:51 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,20 +31,20 @@ A maré sobe e desce todos os dias, sempre no mesmo ritmo, e uma fórmula com co
 ✅ A roda-gigante: altura máxima, mínima e o tempo de uma volta
 
 ⏱️ Capítulos
-[TEMPO] A maré sobe e desce: quando fica alta?
-[TEMPO] O que você precisa saber
-[TEMPO] A fórmula da maré: t e h(t)
-[TEMPO] Maré alta, maré baixa e nível médio
-[TEMPO] O período: 12 horas
-[TEMPO] A que horas a maré é alta
-[TEMPO] Maré baixa às 6 e o gráfico
-[TEMPO] O erro: achar que o período é 6
-[TEMPO] O atalho do período
-[TEMPO] Por que funciona, e quando não vale
-[TEMPO] Hora de testar: a roda-gigante
-[TEMPO] Resolvendo a roda-gigante
-[TEMPO] Conferindo o sentido
-[TEMPO] Resumo e próxima aula
+0:00 A maré sobe e desce: quando fica alta?
+0:21 O que você precisa saber
+0:33 A fórmula da maré: t e h(t)
+0:49 Maré alta, maré baixa e nível médio
+1:01 O período: 12 horas
+1:20 A que horas a maré é alta
+1:30 Maré baixa às 6 e o gráfico
+1:45 O erro: achar que o período é 6
+2:00 O atalho do período
+2:13 Por que funciona, e quando não vale
+2:31 Hora de testar: a roda-gigante
+2:54 Resolvendo a roda-gigante
+3:11 Conferindo o sentido
+3:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Mexer na onda: y = a + b · cos(cx): [LINK MAT-TRI-014]

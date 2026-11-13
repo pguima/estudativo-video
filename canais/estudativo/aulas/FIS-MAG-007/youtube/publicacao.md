@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-007 · Transformadores e transmissão
 
-**Arquivo:** `final/estudativo_FIS-MAG-007_transformadores_e_transmissao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-007_transformadores_e_transmissao.mp4` · 4:37 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ A energia sai da usina com centenas de milhares de volts e chega na tomada com 1
 ✅ O atalho: tensão × k, perda ÷ k²
 
 ⏱️ Capítulos
-[TEMPO] Por que subir e baixar a tensão
-[TEMPO] O que você precisa saber
-[TEMPO] Como o transformador funciona
-[TEMPO] Exemplo: de 220 V para 12 V
-[TEMPO] E com uma pilha?
-[TEMPO] A potência que entra é a que sai
-[TEMPO] A perda na linha de transmissão
-[TEMPO] O erro: o transformador cria potência?
-[TEMPO] O atalho: tensão × k, perda ÷ k²
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o transformador da usina
-[TEMPO] Resumo e próxima aula
+0:00 Por que subir e baixar a tensão
+0:23 O que você precisa saber
+0:39 Como o transformador funciona
+1:24 Exemplo: de 220 V para 12 V
+1:44 E com uma pilha?
+1:54 A potência que entra é a que sai
+2:11 A perda na linha de transmissão
+2:55 O erro: o transformador cria potência?
+3:10 O atalho: tensão × k, perda ÷ k²
+3:37 Hora de testar
+3:58 Resolvendo: o transformador da usina
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 Lei de Lenz: [LINK FIS-MAG-006]

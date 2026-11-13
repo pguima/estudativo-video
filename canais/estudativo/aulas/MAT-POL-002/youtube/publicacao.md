@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-002 · Soma dos ângulos e diagonais de um polígono
 
-**Arquivo:** `final/estudativo_MAT-POL-002_soma_dos_angulos_e_diagonais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-002_soma_dos_angulos_e_diagonais.mp4` · 5:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Um hexágono tem seis lados. Quantas diagonais ele tem? Muita gente responde 18,
 ✅ Octógono: 1080° e 20 diagonais
 
 ⏱️ Capítulos
-[TEMPO] O hexágono tem 18 diagonais?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é polígono e o nome de cada um
-[TEMPO] Cortando o hexágono em triângulos
-[TEMPO] A fórmula da soma: (n − 2) × 180°
-[TEMPO] Contando as diagonais
-[TEMPO] O erro de não dividir por 2
-[TEMPO] O atalho: cada lado a mais soma 180°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o octógono
-[TEMPO] Resumo e próxima aula
+0:00 O hexágono tem 18 diagonais?
+0:23 O que você precisa saber
+0:36 O que é polígono e o nome de cada um
+1:03 Cortando o hexágono em triângulos
+1:38 A fórmula da soma: (n − 2) × 180°
+2:06 Contando as diagonais
+2:56 O erro de não dividir por 2
+3:18 O atalho: cada lado a mais soma 180°
+3:50 Hora de testar
+4:03 Resolvendo: o octógono
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Quadriláteros: paralelogramo, retângulo, losango e trapézio: [LINK MAT-POL-001]

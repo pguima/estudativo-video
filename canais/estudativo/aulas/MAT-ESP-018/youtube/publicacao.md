@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-018 · Volume pelo nível da água
 
-**Arquivo:** `final/estudativo_MAT-ESP-018_volume_pelo_nivel_da_agua.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-018_volume_pelo_nivel_da_agua.mp4` · 4:36 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma pedra toda torta não é cubo, nem cilindro, nem esfera: nenhuma fórmula se
 ✅ O atalho: espaço vazio de 48 × 3 = 144 cm³; 108 cabe, 216 transborda
 
 ⏱️ Capítulos
-[TEMPO] A pedra torta e a água que sobe
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a água sobe
-[TEMPO] O volume da pedra no aquário
-[TEMPO] Vai transbordar? O copo e a bolinha
-[TEMPO] O erro da altura final
-[TEMPO] O atalho: o espaço vazio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as pedras do aquário
-[TEMPO] Resumo e próxima aula
+0:00 A pedra torta e a água que sobe
+0:23 O que você precisa saber
+0:40 Por que a água sobe
+1:10 O volume da pedra no aquário
+1:28 Vai transbordar? O copo e a bolinha
+2:14 O erro da altura final
+2:33 O atalho: o espaço vazio
+3:08 Hora de testar
+3:30 Resolvendo as pedras do aquário
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Encher um recipiente: nível, vazão e tempo: [LINK MAT-ESP-009]

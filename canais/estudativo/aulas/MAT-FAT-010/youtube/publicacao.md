@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-010 · Bhaskara com raiz não exata
 
-**Arquivo:** `final/estudativo_MAT-FAT-010_bhaskara_raiz_nao_exata.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-010_bhaskara_raiz_nao_exata.mp4` · 4:40 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ x(x − 2) = 1 não tem raiz inteira: a resposta é x = 1 + √2 ou x = 1 − �
 ✅ O atalho: separe a fração em duas
 
 ⏱️ Capítulos
-[TEMPO] x(x − 2) = 1: a resposta com raiz
-[TEMPO] O que você precisa saber
-[TEMPO] Arrumar a equação
-[TEMPO] O delta e a raiz não exata
-[TEMPO] Na fórmula: 1 ± √2
-[TEMPO] Faz sentido? Conferindo com 1,4
-[TEMPO] O erro de dividir só um termo
-[TEMPO] O atalho: separe a fração em duas
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 2 ± √5
-[TEMPO] Resumo e próxima aula
+0:00 x(x − 2) = 1: a resposta com raiz
+0:21 O que você precisa saber
+0:29 Arrumar a equação
+0:52 O delta e a raiz não exata
+1:20 Na fórmula: 1 ± √2
+1:47 Faz sentido? Conferindo com 1,4
+2:11 O erro de dividir só um termo
+2:37 O atalho: separe a fração em duas
+3:22 Hora de testar
+3:34 Resposta: 2 ± √5
+4:17 Resumo e próxima aula
 
 📚 Antes desta aula
 Fórmula de Bhaskara: [LINK MAT-FAT-008]

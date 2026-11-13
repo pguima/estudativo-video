@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-013 · Evento complementar: o que não pode acontecer
 
-**Arquivo:** `final/estudativo_MAT-CNT-013_evento_complementar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-013_evento_complementar.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ Você lança 3 moedas: qual a chance de sair pelo menos uma cara? Listar todos o
 ✅ Quando o atalho não compensa: três caras é uma ponta só, 1/8 direto
 
 ⏱️ Capítulos
-[TEMPO] Pelo menos uma cara em 3 moedas
-[TEMPO] O que você precisa saber
-[TEMPO] As 8 pontas da árvore
-[TEMPO] Evento complementar: P(A) = 1 − P(Ā)
-[TEMPO] O chute em duas questões
-[TEMPO] O erro de ler "exatamente uma"
-[TEMPO] O atalho: 1 − P(nenhum)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: pelo menos um 6 em dois dados
-[TEMPO] Resumo e próxima aula
+0:00 Pelo menos uma cara em 3 moedas
+0:22 O que você precisa saber
+0:34 As 8 pontas da árvore
+1:08 Evento complementar: P(A) = 1 − P(Ā)
+1:58 O chute em duas questões
+2:35 O erro de ler "exatamente uma"
+2:55 O atalho: 1 − P(nenhum)
+3:18 Hora de testar
+3:29 Resolvendo: pelo menos um 6 em dois dados
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Probabilidade com contagem: [LINK MAT-CNT-012]

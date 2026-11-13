@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-017 · Homotetia: ampliar a partir de um centro
 
-**Arquivo:** `final/estudativo_MAT-TOP-017_homotetia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-017_homotetia.mp4` · 4:13 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ A sombra da mão na parede é a mesma mão, maior: é uma homotetia, com o centr
 ✅ O atalho: ligue cada ponto à imagem para achar o centro
 
 ⏱️ Capítulos
-[TEMPO] A sombra na parede
-[TEMPO] O que você precisa saber
-[TEMPO] O que é homotetia
-[TEMPO] Homotetia no plano cartesiano
-[TEMPO] Comprimentos, ângulos e área
-[TEMPO] Centro fora da origem e k menor que 1
-[TEMPO] O erro de achar que a área dobra
-[TEMPO] O atalho: ache o centro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 A sombra na parede
+0:23 O que você precisa saber
+0:40 O que é homotetia
+1:02 Homotetia no plano cartesiano
+1:27 Comprimentos, ângulos e área
+1:53 Centro fora da origem e k menor que 1
+2:28 O erro de achar que a área dobra
+2:43 O atalho: ache o centro
+3:07 Hora de testar
+3:27 Resolvendo a questão
+3:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Razão entre áreas de figuras semelhantes: [LINK MAT-ARE-010]

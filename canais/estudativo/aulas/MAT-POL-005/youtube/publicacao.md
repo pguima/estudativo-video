@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-005 · Comprimento de um arco
 
-**Arquivo:** `final/estudativo_MAT-POL-005_comprimento_de_arco.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-005_comprimento_de_arco.mp4` · 4:16 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Uma minipizza de 6 cm de raio é cortada em seis fatias iguais. Quanto mede a bo
 ✅ O ponteiro de 10 cm em 20 minutos percorre 20 cm
 
 ⏱️ Capítulos
-[TEMPO] A borda de uma fatia de pizza
-[TEMPO] O que você precisa saber
-[TEMPO] Arco e ângulo central
-[TEMPO] Calculando o arco de 60° em três passos
-[TEMPO] O erro de pôr o raio na tabela
-[TEMPO] O atalho: a fração da volta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o ponteiro do relógio
-[TEMPO] Resumo e próxima aula
+0:00 A borda de uma fatia de pizza
+0:18 O que você precisa saber
+0:33 Arco e ângulo central
+1:13 Calculando o arco de 60° em três passos
+2:05 O erro de pôr o raio na tabela
+2:24 O atalho: a fração da volta
+3:02 Hora de testar
+3:17 Resolvendo: o ponteiro do relógio
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Ângulos: medir em graus e classificar: [LINK MAT-ANG-001]

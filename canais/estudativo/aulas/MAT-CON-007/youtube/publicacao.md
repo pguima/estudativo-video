@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-007 · Intervalos: colchetes e reta
 
-**Arquivo:** `final/estudativo_MAT-CON-007_intervalos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-007_intervalos.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Quantos números reais existem entre 2 e 5? Não são só o 3 e o 4: tem o 2,5, 
 ✅ O atalho: o tracinho do ≤ e do ≥ fecha o colchete; sem tracinho, abre
 
 ⏱️ Capítulos
-[TEMPO] Quantos números existem entre 2 e 5?
-[TEMPO] O que você precisa saber
-[TEMPO] Intervalo, colchete aberto e fechado
-[TEMPO] Pedaços sem fim: o infinito
-[TEMPO] O erro de usar chaves
-[TEMPO] O atalho: olhe o tracinho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Quantos números existem entre 2 e 5?
+0:24 O que você precisa saber
+0:39 Intervalo, colchete aberto e fechado
+1:50 Pedaços sem fim: o infinito
+2:40 O erro de usar chaves
+3:04 O atalho: olhe o tracinho
+3:32 Hora de testar
+3:51 Resolvendo a questão
+4:25 Resumo e próxima aula
 
 📚 Antes desta aula
 Irracionais e números reais: [LINK MAT-CON-006]

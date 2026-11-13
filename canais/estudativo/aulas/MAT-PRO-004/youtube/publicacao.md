@@ -1,6 +1,6 @@
 # Publicação — MAT-PRO-004 · Progressão aritmética: razão e termo geral
 
-**Arquivo:** `final/estudativo_MAT-PRO-004_progressao_aritmetica_razao_e_termo_geral.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PRO-004_progressao_aritmetica_razao_e_termo_geral.mp4` · 5:23 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Para achar o 20º termo de 5, 9, 13, 17, você não precisa escrever a lista int
 ✅ O atalho: de a₃ = 13 ao a₂₀ são 17 saltos, 13 + 68 = 81
 
 ⏱️ Capítulos
-[TEMPO] Qual é o 20º termo?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é PA e como achar a razão
-[TEMPO] Quantos saltos até a posição n
-[TEMPO] A fórmula do termo geral
-[TEMPO] A PA é uma função afim
-[TEMPO] O erro de usar n no lugar de n − 1
-[TEMPO] O atalho: pule de qualquer termo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: R$ 7, R$ 12, R$ 17…
-[TEMPO] Resumo e próxima aula
+0:00 Qual é o 20º termo?
+0:25 O que você precisa saber
+0:39 O que é PA e como achar a razão
+1:17 Quantos saltos até a posição n
+1:34 A fórmula do termo geral
+2:18 A PA é uma função afim
+3:03 O erro de usar n no lugar de n − 1
+3:25 O atalho: pule de qualquer termo
+4:00 Hora de testar
+4:20 Resolvendo: R$ 7, R$ 12, R$ 17…
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Sequências e lei de formação: [LINK MAT-PRO-001]

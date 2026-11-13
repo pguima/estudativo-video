@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-012 · Probabilidade com contagem
 
-**Arquivo:** `final/estudativo_MAT-CNT-012_probabilidade_contagem.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-012_probabilidade_contagem.mp4` · 4:35 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ Dois dados: qual a chance de a soma dar 7? Muita gente pensa que as somas vão d
 ✅ Quando o atalho não serve: duas pessoas juntas, como Ana e Bia (1/15)
 
 ⏱️ Capítulos
-[TEMPO] Soma 7 em dois dados: 1/11?
-[TEMPO] O que você precisa saber
-[TEMPO] Os 36 resultados e a tabela 6 × 6
-[TEMPO] O sorteio da comissão
-[TEMPO] O erro de tratar os dados como iguais
-[TEMPO] O atalho: vagas sobre pessoas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a soma 8 e os ingressos
-[TEMPO] Resumo e próxima aula
+0:00 Soma 7 em dois dados: 1/11?
+0:20 O que você precisa saber
+0:33 Os 36 resultados e a tabela 6 × 6
+1:36 O sorteio da comissão
+2:25 O erro de tratar os dados como iguais
+2:47 O atalho: vagas sobre pessoas
+3:14 Hora de testar
+3:30 Resolvendo a soma 8 e os ingressos
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Probabilidade: favoráveis sobre possíveis: [LINK MAT-CNT-011]

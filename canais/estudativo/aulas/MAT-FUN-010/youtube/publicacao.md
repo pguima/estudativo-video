@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-010 · Coeficientes: taxa de variação e valor inicial
 
-**Arquivo:** `final/estudativo_MAT-FUN-010_coeficientes_taxa_de_variacao_e_valor_inicial.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-010_coeficientes_taxa_de_variacao_e_valor_inicial.mp4` · 5:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Uma locadora cobra o aluguel pela fórmula f(x) = 40 + 0,5x. Sem fazer conta nen
 ✅ O atalho: quanto sobe dividido por quanto anda, lendo os valores nos eixos
 
 ⏱️ Capítulos
-[TEMPO] O que a fórmula da locadora conta
-[TEMPO] O que você precisa saber
-[TEMPO] Valor inicial: o b
-[TEMPO] Taxa de variação: o a
-[TEMPO] Δy dividido por Δx
-[TEMPO] Sobe, desce ou constante
-[TEMPO] O erro: o a não é o primeiro número
-[TEMPO] O atalho: quanto sobe ÷ quanto anda
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a vela
-[TEMPO] Resumo e próxima aula
+0:00 O que a fórmula da locadora conta
+0:26 O que você precisa saber
+0:41 Valor inicial: o b
+1:08 Taxa de variação: o a
+1:37 Δy dividido por Δx
+2:15 Sobe, desce ou constante
+2:48 O erro: o a não é o primeiro número
+3:10 O atalho: quanto sobe ÷ quanto anda
+3:47 Hora de testar
+4:10 Resolvendo: a vela
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Função afim: lei e gráfico: [LINK MAT-FUN-009]

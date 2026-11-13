@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-003 · Distribuição binomial
 
-**Arquivo:** `final/estudativo_MAT-TOP-003_distribuicao_binomial.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-003_distribuicao_binomial.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Você joga uma moeda cinco vezes. Qual a chance de sair exatamente duas caras? N
 ✅ O atalho da moeda: linha do triângulo dividida por 2ⁿ
 
 ⏱️ Capítulos
-[TEMPO] Duas caras em cinco moedas
-[TEMPO] O que você precisa saber
-[TEMPO] A chance de uma ordem
-[TEMPO] Quantas ordens existem
-[TEMPO] A distribuição binomial
-[TEMPO] Com chances diferentes: o dado
-[TEMPO] O erro de esquecer o binomial
-[TEMPO] O atalho da moeda
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o chute na prova
-[TEMPO] Resumo e próxima aula
+0:00 Duas caras em cinco moedas
+0:20 O que você precisa saber
+0:32 A chance de uma ordem
+0:45 Quantas ordens existem
+1:11 A distribuição binomial
+1:50 Com chances diferentes: o dado
+2:45 O erro de esquecer o binomial
+3:02 O atalho da moeda
+3:38 Hora de testar
+3:52 Resolvendo: o chute na prova
+4:14 Resumo e próxima aula
 
 📚 Antes desta aula
 Sorteios sucessivos com e sem reposição: [LINK MAT-CNT-017]

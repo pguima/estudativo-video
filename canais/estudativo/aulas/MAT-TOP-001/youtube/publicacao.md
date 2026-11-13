@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-001 · Números binomiais e triângulo de Pascal
 
-**Arquivo:** `final/estudativo_MAT-TOP-001_numeros_binomiais_triangulo_de_pascal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-001_numeros_binomiais_triangulo_de_pascal.mp4` · 4:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Cinco em cima, dois embaixo, entre parênteses: não é fração, é um número 
 ✅ O atalho: a soma da linha n é 2 elevado a n
 
 ⏱️ Capítulos
-[TEMPO] Isso não é fração
-[TEMPO] O que você precisa saber
-[TEMPO] O número binomial
-[TEMPO] Montando o triângulo de Pascal
-[TEMPO] O erro de contar as linhas a partir do um
-[TEMPO] O atalho: some a linha
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a linha 6
-[TEMPO] Resumo e próxima aula
+0:00 Isso não é fração
+0:25 O que você precisa saber
+0:37 O número binomial
+1:21 Montando o triângulo de Pascal
+2:36 O erro de contar as linhas a partir do um
+2:57 O atalho: some a linha
+3:38 Hora de testar
+3:57 Resolvendo: a linha 6
+4:31 Resumo e próxima aula
 
 📚 Antes desta aula
 Combinação: quando a ordem não importa: [LINK MAT-CNT-008]

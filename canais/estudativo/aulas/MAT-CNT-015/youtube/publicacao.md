@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-015 · Probabilidade condicional
 
-**Arquivo:** `final/estudativo_MAT-CNT-015_probabilidade_condicional.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-015_probabilidade_condicional.mp4` · 4:24 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -33,16 +33,16 @@ Uma pessoa é sorteada numa turma e alguém dá uma pista: ela usa óculos. Essa
 ✅ O atalho: ache a pista ("sabendo que", "dado que", "entre os que") e cubra o resto da tabela
 
 ⏱️ Capítulos
-[TEMPO] A pista dos óculos
-[TEMPO] O que você precisa saber
-[TEMPO] O dado e a pista "saiu par"
-[TEMPO] A regra: a pista vira o novo total
-[TEMPO] A tabela da turma
-[TEMPO] O erro de dividir pela turma inteira
-[TEMPO] O atalho: ache a pista e cubra o resto
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o funcionário que vai de ônibus
-[TEMPO] Resumo e próxima aula
+0:00 A pista dos óculos
+0:24 O que você precisa saber
+0:36 O dado e a pista "saiu par"
+1:01 A regra: a pista vira o novo total
+1:29 A tabela da turma
+2:11 O erro de dividir pela turma inteira
+2:44 O atalho: ache a pista e cubra o resto
+3:14 Hora de testar
+3:36 Resolvendo: o funcionário que vai de ônibus
+3:56 Resumo e próxima aula
 
 📚 Antes desta aula
 Probabilidade da união: [LINK MAT-CNT-014]

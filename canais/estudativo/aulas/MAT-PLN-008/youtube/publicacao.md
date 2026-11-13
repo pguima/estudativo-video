@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-008 · Delta negativo: o número i
 
-**Arquivo:** `final/estudativo_MAT-PLN-008_delta_negativo_numero_i.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-008_delta_negativo_numero_i.mp4` · 4:44 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Em x² − 4x + 13 = 0, o delta dá −36, e nenhum número da reta resolve. Mes
 ✅ O atalho: complexo × conjugado = a² + b²
 
 ⏱️ Capítulos
-[TEMPO] Delta negativo tem resposta?
-[TEMPO] O que você precisa saber
-[TEMPO] O número i
-[TEMPO] Resolvendo x² − 4x + 13 = 0
-[TEMPO] Multiplicando complexos: o conjugado
-[TEMPO] O erro: √−36 não é −6
-[TEMPO] O atalho do conjugado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x² + 2x + 5 = 0
-[TEMPO] Resumo e próxima aula
+0:00 Delta negativo tem resposta?
+0:24 O que você precisa saber
+0:43 O número i
+1:27 Resolvendo x² − 4x + 13 = 0
+2:20 Multiplicando complexos: o conjugado
+2:58 O erro: √−36 não é −6
+3:17 O atalho do conjugado
+3:46 Hora de testar
+3:56 Resolvendo: x² + 2x + 5 = 0
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Irracionais e números reais: [LINK MAT-CON-006]

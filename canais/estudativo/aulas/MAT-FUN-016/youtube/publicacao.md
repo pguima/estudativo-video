@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-016 · Função quadrática: a parábola
 
-**Arquivo:** `final/estudativo_MAT-FUN-016_funcao_quadratica_a_parabola.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-016_funcao_quadratica_a_parabola.mp4` · 5:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Olhando só para f(x) = x² − 4x + 3, dá para saber se o gráfico é um sorri
 ✅ O atalho: sinal do a e o c, e quando calcular f(0) direto
 
 ⏱️ Capítulos
-[TEMPO] Sorriso ou cara triste?
-[TEMPO] O que você precisa saber
-[TEMPO] A lei da função quadrática: a, b e c
-[TEMPO] Da tabela à parábola
-[TEMPO] A concavidade: o sinal do a
-[TEMPO] Onde a parábola corta o eixo y
-[TEMPO] O erro de olhar o primeiro número
-[TEMPO] O atalho: a parábola em dois segundos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f e g
-[TEMPO] Resumo e próxima aula
+0:00 Sorriso ou cara triste?
+0:24 O que você precisa saber
+0:40 A lei da função quadrática: a, b e c
+1:17 Da tabela à parábola
+1:45 A concavidade: o sinal do a
+2:37 Onde a parábola corta o eixo y
+3:02 O erro de olhar o primeiro número
+3:22 O atalho: a parábola em dois segundos
+3:55 Hora de testar
+4:14 Resolvendo: f e g
+4:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação do 2º grau incompleta: [LINK MAT-FAT-007]

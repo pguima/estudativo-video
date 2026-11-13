@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-006 · Praticando: trabalho e energia
 
-**Arquivo:** `final/estudativo_FIS-ENE-006_praticando_trabalho_e_energia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-006_praticando_trabalho_e_energia.mp4` · 5:15 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações criadas para esta aula: pause, resolva e confira. Você calcul
 ✅ Usina hidrelétrica: potencial, cinética e elétrica
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: o gráfico
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: o guindaste
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: a freada
-[TEMPO] Resposta 3
-[TEMPO] O atalho: razão sem converter
-[TEMPO] Situação 4: a mola
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: a usina
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações
+0:16 O que você vai usar
+0:36 Situação 1: o gráfico
+0:58 Resposta 1
+1:15 Situação 2: o guindaste
+1:33 Resposta 2
+2:02 Situação 3: a freada
+2:18 Resposta 3
+2:38 O atalho: razão sem converter
+3:03 Situação 4: a mola
+3:20 Resposta 4
+3:55 Situação 5: a usina
+4:15 Resposta 5
+4:45 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de uma força: [LINK FIS-ENE-001]

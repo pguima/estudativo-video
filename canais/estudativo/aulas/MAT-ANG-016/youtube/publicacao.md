@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-016 · Ternos pitagóricos e Pitágoras em problemas
 
-**Arquivo:** `final/estudativo_MAT-ANG-016_ternos_pitagoricos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-016_ternos_pitagoricos.mp4` · 5:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Catetos de 30 e 40 metros: a hipotenusa mede 50, e dá para saber sem nenhuma co
 ✅ Questão resolvida: terreno com diagonal de 26 m e frente de 10 m (lado de 24 m)
 
 ⏱️ Capítulos
-[TEMPO] Catetos 30 e 40: a hipotenusa sem conta
-[TEMPO] O que você precisa saber
-[TEMPO] Ternos pitagóricos: 3, 4, 5 e 5, 12, 13
-[TEMPO] Os múltiplos e por que eles valem
-[TEMPO] A escada encostada na parede
-[TEMPO] O erro de completar sempre com 4
-[TEMPO] O atalho para medidas com vírgula
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o terreno de 24 m
-[TEMPO] Resumo e próxima aula
+0:00 Catetos 30 e 40: a hipotenusa sem conta
+0:22 O que você precisa saber
+0:37 Ternos pitagóricos: 3, 4, 5 e 5, 12, 13
+1:05 Os múltiplos e por que eles valem
+1:59 A escada encostada na parede
+2:44 O erro de completar sempre com 4
+3:08 O atalho para medidas com vírgula
+3:42 Hora de testar
+4:01 Resolvendo: o terreno de 24 m
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Teorema de Pitágoras: achar hipotenusa ou cateto: [LINK MAT-ANG-015]

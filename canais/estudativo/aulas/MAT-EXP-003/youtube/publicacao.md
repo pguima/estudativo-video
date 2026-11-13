@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-003 · Tempo de duplicação e meia-vida
 
-**Arquivo:** `final/estudativo_MAT-EXP-003_tempo_de_duplicacao_e_meia_vida.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-003_tempo_de_duplicacao_e_meia_vida.mp4` · 4:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma dose de 80 mg de remédio perde metade a cada 6 horas. Muita gente acha que 
 ✅ O atalho: 2¹⁰ = 1.024, quase mil
 
 ⏱️ Capítulos
-[TEMPO] O remédio que acaba em 12 horas?
-[TEMPO] O que você precisa saber
-[TEMPO] Meia-vida: cair pela metade
-[TEMPO] Tempo de duplicação
-[TEMPO] A fórmula Q = Q₀ · 2^(t/T)
-[TEMPO] O erro de misturar unidades
-[TEMPO] O atalho: 10 dobras ≈ ×1.000
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a meia-vida de 5 anos
-[TEMPO] Resumo e próxima aula
+0:00 O remédio que acaba em 12 horas?
+0:23 O que você precisa saber
+0:32 Meia-vida: cair pela metade
+1:10 Tempo de duplicação
+1:30 A fórmula Q = Q₀ · 2^(t/T)
+2:16 O erro de misturar unidades
+2:41 O atalho: 10 dobras ≈ ×1.000
+3:10 Hora de testar
+3:27 Resolvendo a meia-vida de 5 anos
+3:51 Resumo e próxima aula
 
 📚 Antes desta aula
 Crescimento e decaimento: somar ou multiplicar: [LINK MAT-EXP-002]

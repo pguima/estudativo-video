@@ -1,7 +1,0 @@
-Narração do vídeo 02 (18 cenas), voz Zephyr (gemini-3.8-flash-tts, pt-BR), gerada em 01/11/2026.
-- Usada: final/ = parte 1 do takeB (cenas 01–09) + parte 2 do takeB até "tomar de volta" (cena 16) emendada com o takeA
-  a partir de "Então, vamos à etiqueta" (cenas 17–18), num ponto de silêncio.
-  Motivo: no takeB a frase final saiu "aprenderam lá por um fim", corrida e sem pausa; no takeA ela está certa.
-- takeA ficou de reserva nas outras cenas: "a voz de quem lhes amavam" (cena 16) e "continua usando menos" (cena 14).
-- Conferido com Whisper small (conferir.py) + medium nos trechos duvidosos.
-- gerar_voz.py <take> gera; conferir.py <take> transcreve; montar.py final gera narracao.wav, tempos.json e saida/legenda_pt.srt.

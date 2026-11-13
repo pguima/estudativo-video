@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-006 · Quando três medidas formam um triângulo
 
-**Arquivo:** `final/estudativo_MAT-ANG-006_quando_tres_medidas_formam_triangulo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-006_quando_tres_medidas_formam_triangulo.mp4` · 4:21 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Três palitos, de 2, 3 e 6 centímetros: tente montar um triângulo e ele não f
 ✅ O atalho: teste só o maior lado; com dois lados, diferença < x < soma
 
 ⏱️ Capítulos
-[TEMPO] Três palitos que não fecham
-[TEMPO] O que você precisa saber
-[TEMPO] Por que não fecha
-[TEMPO] Soma igual: o triângulo achatado
-[TEMPO] Quanto pode medir o terceiro lado
-[TEMPO] O erro de deixar as pontas entrarem
-[TEMPO] O atalho: teste o maior; diferença < x < soma
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: lados de 4 e 9
-[TEMPO] Resumo e próxima aula
+0:00 Três palitos que não fecham
+0:22 O que você precisa saber
+0:35 Por que não fecha
+1:13 Soma igual: o triângulo achatado
+1:32 Quanto pode medir o terceiro lado
+2:16 O erro de deixar as pontas entrarem
+2:36 O atalho: teste o maior; diferença < x < soma
+3:13 Hora de testar
+3:28 Resolvendo: lados de 4 e 9
+3:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Classificar triângulos por lados e ângulos: [LINK MAT-ANG-005]

@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-002 · Ângulos complementares, suplementares e opostos pelo vértice
 
-**Arquivo:** `final/estudativo_MAT-ANG-002_complementares_suplementares_opostos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-002_complementares_suplementares_opostos.mp4` · 4:55 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Qual é o complemento de 35°? Se você respondeu 145°, trocou complemento e su
 ✅ O atalho: para ângulo agudo, suplemento = complemento + 90°
 
 ⏱️ Capítulos
-[TEMPO] Complemento de 35° é 145°?
-[TEMPO] O que você precisa saber
-[TEMPO] Ângulos complementares
-[TEMPO] Ângulos suplementares
-[TEMPO] Opostos pelo vértice: a regra da tesoura
-[TEMPO] Com equação: 3x − 10 = x + 30
-[TEMPO] O erro de trocar complemento e suplemento
-[TEMPO] O atalho: complemento + 90°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x + 40 e 2x + 20
-[TEMPO] Resumo e próxima aula
+0:00 Complemento de 35° é 145°?
+0:21 O que você precisa saber
+0:35 Ângulos complementares
+1:05 Ângulos suplementares
+1:26 Opostos pelo vértice: a regra da tesoura
+2:10 Com equação: 3x − 10 = x + 30
+2:47 O erro de trocar complemento e suplemento
+3:10 O atalho: complemento + 90°
+3:36 Hora de testar
+3:50 Resolvendo: x + 40 e 2x + 20
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Ângulos: medir em graus e classificar: [LINK MAT-ANG-001]

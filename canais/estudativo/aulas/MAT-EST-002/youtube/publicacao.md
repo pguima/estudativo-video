@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-002 · Tabela de frequência e classes
 
-**Arquivo:** `final/estudativo_MAT-EST-002_tabela_de_frequencia_e_classes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-002_tabela_de_frequencia_e_classes.mp4` · 4:35 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Vinte pessoas responderam como vão ao trabalho. Numa lista solta, ninguém ente
 ✅ O atalho: faça o total virar 100 (7 de 20 = 35 de 100 = 35%)
 
 ⏱️ Capítulos
-[TEMPO] Da lista solta à tabela
-[TEMPO] O que você precisa saber
-[TEMPO] Frequência absoluta
-[TEMPO] Frequência relativa
-[TEMPO] Agrupando em classes
-[TEMPO] Frequência acumulada
-[TEMPO] O erro da borda da classe
-[TEMPO] O atalho: faça o total virar 100
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as idades do curso
-[TEMPO] Resumo e próxima aula
+0:00 Da lista solta à tabela
+0:16 O que você precisa saber
+0:27 Frequência absoluta
+0:46 Frequência relativa
+1:13 Agrupando em classes
+1:54 Frequência acumulada
+2:23 O erro da borda da classe
+2:43 O atalho: faça o total virar 100
+3:13 Hora de testar
+3:31 Resolvendo as idades do curso
+4:08 Resumo e próxima aula
 
 📚 Antes desta aula
 População, amostra e tipos de variáveis: [LINK MAT-EST-001]

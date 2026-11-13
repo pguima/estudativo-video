@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-007 · Função par e função ímpar
 
-**Arquivo:** `final/estudativo_MAT-FAV-007_funcao_par_e_impar.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-007_funcao_par_e_impar.mp4` · 4:11 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Menos dois ao quadrado dá o mesmo que dois ao quadrado. Menos dois ao cubo dá 
 ✅ O atalho: só expoentes pares, par; só ímpares sem número sozinho, ímpar
 
 ⏱️ Capítulos
-[TEMPO] Igual ou oposto?
-[TEMPO] O que você precisa saber
-[TEMPO] O teste do f(−x)
-[TEMPO] Função par e o eixo y
-[TEMPO] Função ímpar e a meia volta
-[TEMPO] Nem par, nem ímpar
-[TEMPO] O erro de olhar só o expoente
-[TEMPO] O atalho dos expoentes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as três funções
-[TEMPO] Resumo e próxima aula
+0:00 Igual ou oposto?
+0:26 O que você precisa saber
+0:43 O teste do f(−x)
+0:50 Função par e o eixo y
+1:18 Função ímpar e a meia volta
+1:51 Nem par, nem ímpar
+2:06 O erro de olhar só o expoente
+2:29 O atalho dos expoentes
+2:59 Hora de testar
+3:16 Resolvendo as três funções
+3:47 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler um gráfico: máximos, zeros e crescimento: [LINK MAT-FUN-007]

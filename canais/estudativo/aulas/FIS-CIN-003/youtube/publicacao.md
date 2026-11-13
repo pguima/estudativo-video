@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-003 · Decompor um vetor nos eixos
 
-**Arquivo:** `final/estudativo_FIS-CIN-003_decompor_vetor_nos_eixos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-003_decompor_vetor_nos_eixos.mp4` · 4:47 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma bola chutada a 20 m/s, inclinada, avança só 16 m/s e sobe a 12 m/s, e 16 +
 ✅ O atalho do 37° e 53° com o triângulo 3-4-5
 
 ⏱️ Capítulos
-[TEMPO] 20 m/s que vira 16 e 12
-[TEMPO] O que você precisa saber
-[TEMPO] Decompor: as componentes
-[TEMPO] A bola chutada e o ângulo de 60°
-[TEMPO] O método dos eixos
-[TEMPO] O erro do ângulo com a vertical
-[TEMPO] O atalho do 3-4-5
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o chute a 25 m/s
-[TEMPO] Resumo e próxima aula
+0:00 20 m/s que vira 16 e 12
+0:26 O que você precisa saber
+0:47 Decompor: as componentes
+1:37 A bola chutada e o ângulo de 60°
+2:19 O método dos eixos
+2:56 O erro do ângulo com a vertical
+3:13 O atalho do 3-4-5
+3:42 Hora de testar
+3:57 Resolvendo: o chute a 25 m/s
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Vetores: somar e subtrair: [LINK FIS-CIN-002]

@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-010 · Praticando: impulso e colisões
 
-**Arquivo:** `final/estudativo_FIS-ENE-010_praticando_impulso_e_colisoes.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-010_praticando_impulso_e_colisoes.mp4` · 5:13 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,19 +29,19 @@ Cinco situações criadas para esta aula: pause, resolva e confira. Você calcul
 ✅ Colisão elástica com massas diferentes: o sistema e a conferência da energia
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: o chute
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: o arremesso no gelo
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: a bala no bloco
-[TEMPO] Resposta 3
-[TEMPO] Situação 4: a batida
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: a batida elástica
-[TEMPO] Resposta 5
-[TEMPO] Resumo e próximos passos
+0:00 Cinco situações
+0:13 O que você vai usar
+0:32 Situação 1: o chute
+0:49 Resposta 1
+1:15 Situação 2: o arremesso no gelo
+1:30 Resposta 2
+1:49 Situação 3: a bala no bloco
+2:09 Resposta 3
+2:43 Situação 4: a batida
+3:03 Resposta 4
+3:37 Situação 5: a batida elástica
+3:53 Resposta 5
+4:36 Resumo e próximos passos
 
 📚 Antes desta aula
 Quantidade de movimento e impulso: [LINK FIS-ENE-007]

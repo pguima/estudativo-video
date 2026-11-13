@@ -1,6 +1,6 @@
 # Publicação — MAT-NUM-019 · Praticando: expressões e números inteiros
 
-**Arquivo:** `final/estudativo_MAT-NUM-019_praticando_expressoes_e_inteiros.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-NUM-019_praticando_expressoes_e_inteiros.mp4` · 4:46 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -29,17 +29,17 @@ Quatro questões criadas para o curso, com sinais, parênteses, colchetes e um s
 ✅ Colchetes de dentro para fora e o menos antes de parêntese
 
 ⏱️ Capítulos
-[TEMPO] Quatro questões: pause e resolva
-[TEMPO] O que você vai usar
-[TEMPO] Questão 1: a temperatura
-[TEMPO] Resposta 1: na reta numérica
-[TEMPO] Questão 2: o saldo
-[TEMPO] Resposta 2: o saldo entra no vermelho
-[TEMPO] Questão 3: sinais e parênteses
-[TEMPO] Resposta 3: em blocos
-[TEMPO] Questão 4: colchetes
-[TEMPO] Resposta 4: a pegadinha do sinal
-[TEMPO] Resumo e próximo assunto
+0:00 Quatro questões: pause e resolva
+0:15 O que você vai usar
+0:28 Questão 1: a temperatura
+0:44 Resposta 1: na reta numérica
+1:13 Questão 2: o saldo
+1:30 Resposta 2: o saldo entra no vermelho
+2:20 Questão 3: sinais e parênteses
+2:35 Resposta 3: em blocos
+3:21 Questão 4: colchetes
+3:38 Resposta 4: a pegadinha do sinal
+4:20 Resumo e próximo assunto
 
 📚 Antes desta aula
 Ordem das operações e parênteses: [LINK MAT-NUM-013]

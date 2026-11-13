@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-011 · Princípio de Bernoulli
 
-**Arquivo:** `final/estudativo_FIS-EGF-011_principio_de_bernoulli.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-011_principio_de_bernoulli.mp4` · 4:42 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Num vendaval, o telhado é arrancado para cima, mas o vento sopra de lado. Quem 
 ✅ O atalho: tanque furado sem montar Bernoulli
 
 ⏱️ Capítulos
-[TEMPO] O telhado que voa
-[TEMPO] O que você precisa saber
-[TEMPO] Velocidade e pressão: a equação de Bernoulli
-[TEMPO] A asa do avião e o telhado
-[TEMPO] O furo no tanque: Torricelli
-[TEMPO] O erro das folhas de papel
-[TEMPO] O atalho: v = √(2·g·h)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a caixa d'água furada
-[TEMPO] Resumo e próxima aula
+0:00 O telhado que voa
+0:22 O que você precisa saber
+0:40 Velocidade e pressão: a equação de Bernoulli
+1:47 A asa do avião e o telhado
+2:12 O furo no tanque: Torricelli
+2:54 O erro das folhas de papel
+3:12 O atalho: v = √(2·g·h)
+3:42 Hora de testar
+4:00 Resolvendo: a caixa d'água furada
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 Vazão e equação da continuidade: [LINK FIS-EGF-010]

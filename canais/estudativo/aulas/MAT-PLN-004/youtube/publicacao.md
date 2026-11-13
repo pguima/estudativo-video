@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-004 · Raízes e forma fatorada
 
-**Arquivo:** `final/estudativo_MAT-PLN-004_raizes_forma_fatorada.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-004_raizes_forma_fatorada.mp4` · 5:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ A fórmula de Bhaskara não serve para x³ − 2x² − 5x + 6 = 0. Mas, se algu
 ✅ O atalho: raízes inteiras dividem o termo independente
 
 ⏱️ Capítulos
-[TEMPO] Com uma raiz, todas as raízes
-[TEMPO] O que você precisa saber
-[TEMPO] Raiz e divisão exata
-[TEMPO] Baixando o grau
-[TEMPO] A forma fatorada
-[TEMPO] Teorema fundamental da álgebra
-[TEMPO] O erro de esquecer a raiz dada
-[TEMPO] O atalho dos divisores
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x³ − 7x + 6
-[TEMPO] Resumo e próxima aula
+0:00 Com uma raiz, todas as raízes
+0:25 O que você precisa saber
+0:36 Raiz e divisão exata
+1:08 Baixando o grau
+1:46 A forma fatorada
+2:34 Teorema fundamental da álgebra
+3:01 O erro de esquecer a raiz dada
+3:16 O atalho dos divisores
+4:02 Hora de testar
+4:13 Resolvendo: x³ − 7x + 6
+5:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Fórmula de Bhaskara: [LINK MAT-FAT-008]

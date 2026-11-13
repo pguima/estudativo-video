@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-008 · Conservação da quantidade de movimento
 
-**Arquivo:** `final/estudativo_FIS-ENE-008_conservacao_da_quantidade_de_movimento.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-008_conservacao_da_quantidade_de_movimento.mp4` · 4:54 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Ao disparar, a espingarda dá um coice para trás, e nada de fora a empurra. Nes
 ✅ O atalho: razão inversa das massas
 
 ⏱️ Capítulos
-[TEMPO] De onde vem o coice?
-[TEMPO] O que você precisa saber
-[TEMPO] Por que a quantidade de movimento se conserva
-[TEMPO] O empurrão no gelo
-[TEMPO] O recuo da espingarda
-[TEMPO] A explosão em movimento
-[TEMPO] O erro de começar do zero
-[TEMPO] O atalho: razão inversa das massas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o astronauta
-[TEMPO] Resumo e próxima aula
+0:00 De onde vem o coice?
+0:22 O que você precisa saber
+0:35 Por que a quantidade de movimento se conserva
+1:22 O empurrão no gelo
+1:49 O recuo da espingarda
+2:20 A explosão em movimento
+2:52 O erro de começar do zero
+3:12 O atalho: razão inversa das massas
+3:43 Hora de testar
+4:00 Resolvendo: o astronauta
+4:27 Resumo e próxima aula
 
 📚 Antes desta aula
 Quantidade de movimento e impulso: [LINK FIS-ENE-007]

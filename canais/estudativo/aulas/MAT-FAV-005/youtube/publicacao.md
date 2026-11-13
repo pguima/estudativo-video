@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-005 · Quando existe a inversa: função bijetora
 
-**Arquivo:** `final/estudativo_MAT-FAV-005_funcao_bijetora.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-005_funcao_bijetora.mp4` · 3:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Pensei num número, elevei ao quadrado e deu 4. Em que número eu pensei? Não d
 ✅ O atalho: gráfico que só sobe ou só desce é injetora
 
 ⏱️ Capítulos
-[TEMPO] Foi 2 ou −2?
-[TEMPO] O que você precisa saber
-[TEMPO] A inversa desfaz a função
-[TEMPO] Injetora e a reta horizontal
-[TEMPO] Sobrejetora: imagem e contradomínio
-[TEMPO] Bijetora e o conserto do x²
-[TEMPO] O erro da reta vertical
-[TEMPO] O atalho: só sobe ou só desce
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: x² com domínio [0, +∞[
-[TEMPO] Resumo e próxima aula
+0:00 Foi 2 ou −2?
+0:22 O que você precisa saber
+0:37 A inversa desfaz a função
+0:50 Injetora e a reta horizontal
+1:14 Sobrejetora: imagem e contradomínio
+1:35 Bijetora e o conserto do x²
+2:06 O erro da reta vertical
+2:22 O atalho: só sobe ou só desce
+2:46 Hora de testar
+3:03 Resolvendo: x² com domínio [0, +∞[
+3:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Ler um gráfico: máximos, zeros e crescimento: [LINK MAT-FUN-007]

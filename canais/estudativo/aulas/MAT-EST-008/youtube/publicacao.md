@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-008 · Média aritmética
 
-**Arquivo:** `final/estudativo_MAT-EST-008_media_aritmetica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-008_media_aritmetica.mp4` · 4:37 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Você tirou 6, 8 e 5 e precisa fechar média 7 em quatro provas. Muita gente ach
 ✅ O atalho das sobras e faltas: −1 + 1 − 2 = −2, então 7 + 2 = 9
 
 ⏱️ Capítulos
-[TEMPO] Um 8 fecha a média 7?
-[TEMPO] O que você precisa saber
-[TEMPO] O que é a média
-[TEMPO] A regra: soma dividida pela quantidade
-[TEMPO] Total = média × quantidade: o valor que falta
-[TEMPO] O erro de chutar a nota
-[TEMPO] O atalho: sobras e faltas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as vendas da semana
-[TEMPO] Resumo e próxima aula
+0:00 Um 8 fecha a média 7?
+0:23 O que você precisa saber
+0:36 O que é a média
+0:56 A regra: soma dividida pela quantidade
+1:29 Total = média × quantidade: o valor que falta
+2:26 O erro de chutar a nota
+2:46 O atalho: sobras e faltas
+3:23 Hora de testar
+3:39 Resolvendo as vendas da semana
+4:12 Resumo e próxima aula
 
 📚 Antes desta aula
 Montar uma equação a partir do problema: [LINK MAT-EQU-013]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-022 · Estudo do sinal e inequação do 2º grau
 
-**Arquivo:** `final/estudativo_MAT-FUN-022_estudo_do_sinal_e_inequacao_do_2o_grau.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-022_estudo_do_sinal_e_inequacao_do_2o_grau.mp4` · 4:54 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ x² − 5x + 6 menor que zero. Muita gente resolve como equação, acha 2 e 3 e 
 ✅ O atalho: fora das raízes, o sinal do a; entre elas, o contrário
 
 ⏱️ Capítulos
-[TEMPO] x² − 5x + 6 < 0: a resposta não é "2 e 3"
-[TEMPO] O que você precisa saber
-[TEMPO] Estudar o sinal no gráfico
-[TEMPO] Os 3 passos: raízes, boca e desenho
-[TEMPO] Com a negativo e sem raízes
-[TEMPO] O erro: copiar o sinal
-[TEMPO] O atalho: fora e entre as raízes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo as duas inequações
-[TEMPO] Resumo e próxima aula
+0:00 x² − 5x + 6 < 0: a resposta não é "2 e 3"
+0:21 O que você precisa saber
+0:35 Estudar o sinal no gráfico
+0:49 Os 3 passos: raízes, boca e desenho
+2:06 Com a negativo e sem raízes
+2:44 O erro: copiar o sinal
+3:09 O atalho: fora e entre as raízes
+3:42 Hora de testar
+3:57 Resolvendo as duas inequações
+4:29 Resumo e próxima aula
 
 📚 Antes desta aula
 Intervalos: colchetes e reta: [LINK MAT-CON-007]

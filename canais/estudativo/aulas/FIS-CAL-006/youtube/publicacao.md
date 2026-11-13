@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-006 · Trocas de calor com gelo
 
-**Arquivo:** `final/estudativo_FIS-CAL-006_trocas_de_calor_com_gelo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-006_trocas_de_calor_com_gelo.mp4` · 4:19 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Jogue 200 g de gelo a 0 °C em 100 g de água a 40 °C e coloque tudo na soma do
 ✅ O macete do 80
 
 ⏱️ Capítulos
-[TEMPO] Água líquida a −40 °C?
-[TEMPO] O que você precisa saber
-[TEMPO] Disponível e necessário
-[TEMPO] Caso 1: o gelo derrete todo
-[TEMPO] Caso 2: a mistura para em 0 °C
-[TEMPO] O erro de pular a comparação
-[TEMPO] O macete do 80
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: gelo na água a 32 °C
-[TEMPO] Resumo e próxima aula
+0:00 Água líquida a −40 °C?
+0:22 O que você precisa saber
+0:35 Disponível e necessário
+0:59 Caso 1: o gelo derrete todo
+1:40 Caso 2: a mistura para em 0 °C
+2:27 O erro de pular a comparação
+2:40 O macete do 80
+3:12 Hora de testar
+3:26 Resolvendo: gelo na água a 32 °C
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Calor latente e curva de aquecimento: [LINK FIS-CAL-004]

@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-014 · Custo, receita e lucro: o ponto de equilíbrio
 
-**Arquivo:** `final/estudativo_MAT-FUN-014_custo_receita_lucro_ponto_de_equilibrio.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-014_custo_receita_lucro_ponto_de_equilibrio.mp4` · 4:54 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,19 +32,19 @@ Uma fábrica vende cada peça por R$ 50 e gasta R$ 30 para fazer cada uma. Vende
 ✅ O atalho: custo fixo dividido pelo que sobra em cada peça
 
 ⏱️ Capítulos
-[TEMPO] Sobram R$ 20 por peça e dá prejuízo?
-[TEMPO] O que você precisa saber
-[TEMPO] Custo fixo e custo por peça
-[TEMPO] A receita
-[TEMPO] O lucro: receita menos custo
-[TEMPO] O ponto de equilíbrio: 100 peças
-[TEMPO] Lendo no gráfico: prejuízo e lucro
-[TEMPO] Qual de dois planos compensa
-[TEMPO] O erro: confundir receita com lucro
-[TEMPO] O atalho: custo fixo dividido pela sobra
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a doceira, 150 e 250 bolos
-[TEMPO] Resumo e próxima aula
+0:00 Sobram R$ 20 por peça e dá prejuízo?
+0:24 O que você precisa saber
+0:37 Custo fixo e custo por peça
+1:04 A receita
+1:15 O lucro: receita menos custo
+1:45 O ponto de equilíbrio: 100 peças
+2:14 Lendo no gráfico: prejuízo e lucro
+2:37 Qual de dois planos compensa
+2:56 O erro: confundir receita com lucro
+3:13 O atalho: custo fixo dividido pela sobra
+3:39 Hora de testar
+3:59 Resolvendo: a doceira, 150 e 250 bolos
+4:32 Resumo e próxima aula
 
 📚 Antes desta aula
 Comparar dois planos: [LINK MAT-EQU-014]

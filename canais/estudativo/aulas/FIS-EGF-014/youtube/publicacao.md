@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-014 · Praticando: torque e gravitação
 
-**Arquivo:** `final/estudativo_FIS-EGF-014_praticando_torque_e_gravitacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-014_praticando_torque_e_gravitacao.mp4` · 4:36 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,20 +31,20 @@ Cinco situações criadas para esta aula: o carrinho de mão, uma gangorra com t
 ✅ A velocidade de dois satélites com v² · R constante
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: o carrinho de mão
-[TEMPO] Resposta da situação 1
-[TEMPO] Situação 2: a gangorra de três
-[TEMPO] Resposta da situação 2
-[TEMPO] Situação 3: duas luas
-[TEMPO] Resposta da situação 3
-[TEMPO] O atalho: procure o fator
-[TEMPO] Situação 4: o astronauta
-[TEMPO] Resposta da situação 4
-[TEMPO] Situação 5: dois satélites
-[TEMPO] Resposta da situação 5
-[TEMPO] Resumo e próxima aula
+0:00 Cinco situações
+0:11 As quatro ferramentas
+0:33 Situação 1: o carrinho de mão
+0:51 Resposta da situação 1
+1:12 Situação 2: a gangorra de três
+1:34 Resposta da situação 2
+2:08 Situação 3: duas luas
+2:26 Resposta da situação 3
+2:41 O atalho: procure o fator
+3:03 Situação 4: o astronauta
+3:19 Resposta da situação 4
+3:39 Situação 5: dois satélites
+3:54 Resposta da situação 5
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 Torque e alavancas: [LINK FIS-EGF-001]

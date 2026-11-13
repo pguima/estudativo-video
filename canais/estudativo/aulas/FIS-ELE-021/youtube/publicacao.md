@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-021 · Circuito simples: lei de Pouillet
 
-**Arquivo:** `final/estudativo_FIS-ELE-021_circuito_simples_lei_de_pouillet.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-021_circuito_simples_lei_de_pouillet.mp4` · 6:30 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Uma bateria de 12 V ligada a um resistor de 5 Ω não dá 2,4 A: falta a resist�
 ✅ O atalho: P máx = ε²/4r, com rendimento de 50%
 
 ⏱️ Capítulos
-[TEMPO] 12 V em 5 Ω não dá 2,4 A
-[TEMPO] O que você precisa saber
-[TEMPO] A lei de Pouillet
-[TEMPO] Exemplos: um resistor e dois em paralelo
-[TEMPO] Qual resistor recebe mais potência?
-[TEMPO] A parábola da potência
-[TEMPO] O erro: resistor menor nem sempre ganha
-[TEMPO] O atalho da potência máxima
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 24 V com 12 Ω e 6 Ω
-[TEMPO] Resumo e próxima aula
+0:00 12 V em 5 Ω não dá 2,4 A
+0:23 O que você precisa saber
+0:38 A lei de Pouillet
+2:35 Exemplos: um resistor e dois em paralelo
+3:00 Qual resistor recebe mais potência?
+3:42 A parábola da potência
+4:13 O erro: resistor menor nem sempre ganha
+4:29 O atalho da potência máxima
+5:05 Hora de testar
+5:25 Resolvendo: 24 V com 12 Ω e 6 Ω
+5:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Gerador real: força eletromotriz: [LINK FIS-ELE-020]

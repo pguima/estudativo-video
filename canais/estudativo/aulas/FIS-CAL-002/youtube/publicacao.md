@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-002 · Dilatação térmica
 
-**Arquivo:** `final/estudativo_FIS-CAL-002_dilatacao_termica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-002_dilatacao_termica.mp4` · 5:02 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Pontes, trilhos e calçadas têm frestas de propósito: sem elas, o calor do ver
 ✅ O erro do furo: ao esquentar, ele aumenta
 
 ⏱️ Capítulos
-[TEMPO] Por que a ponte tem frestas
-[TEMPO] O que você precisa saber
-[TEMPO] Por que os materiais crescem
-[TEMPO] A fórmula da dilatação linear
-[TEMPO] Exemplo: o trilho de aço
-[TEMPO] O atalho: β = 2α e γ = 3α
-[TEMPO] Lâmina bimetálica e anomalia da água
-[TEMPO] O erro do furo na chapa
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a barra de alumínio
-[TEMPO] Resumo e próxima aula
+0:00 Por que a ponte tem frestas
+0:22 O que você precisa saber
+0:37 Por que os materiais crescem
+0:53 A fórmula da dilatação linear
+1:37 Exemplo: o trilho de aço
+2:21 O atalho: β = 2α e γ = 3α
+2:51 Lâmina bimetálica e anomalia da água
+3:28 O erro do furo na chapa
+3:46 Hora de testar
+4:04 Resolvendo: a barra de alumínio
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Temperatura e escalas termométricas: [LINK FIS-CAL-001]

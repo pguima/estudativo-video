@@ -1,6 +1,6 @@
 # Publicação — FIS-CAL-017 · Geladeira e entropia
 
-**Arquivo:** `final/estudativo_FIS-CAL-017_geladeira_entropia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CAL-017_geladeira_entropia.mp4` · 4:56 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Num dia de calor, deixar a porta da geladeira aberta refresca a cozinha? Não: a
 ✅ O atalho: as três setas
 
 ⏱️ Capítulos
-[TEMPO] A porta aberta refresca a cozinha?
-[TEMPO] O que você precisa saber
-[TEMPO] A máquina térmica ao contrário
-[TEMPO] O ciclo do gás dentro da geladeira
-[TEMPO] Por que a porta aberta esquenta a cozinha
-[TEMPO] O que a entropia mede
-[TEMPO] O erro: a geladeira não produz frio
-[TEMPO] O atalho: as três setas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a geladeira de 600 J
-[TEMPO] Resumo e próxima aula
+0:00 A porta aberta refresca a cozinha?
+0:18 O que você precisa saber
+0:37 A máquina térmica ao contrário
+1:11 O ciclo do gás dentro da geladeira
+1:40 Por que a porta aberta esquenta a cozinha
+2:08 O que a entropia mede
+3:05 O erro: a geladeira não produz frio
+3:20 O atalho: as três setas
+3:54 Hora de testar
+4:14 Resolvendo: a geladeira de 600 J
+4:30 Resumo e próxima aula
 
 📚 Antes desta aula
 Carnot: o rendimento máximo: [LINK FIS-CAL-015]

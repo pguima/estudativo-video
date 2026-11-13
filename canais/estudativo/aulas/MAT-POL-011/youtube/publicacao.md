@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-011 · Reflexão, rotação e translação
 
-**Arquivo:** `final/estudativo_MAT-POL-011_reflexao_rotacao_translacao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-011_reflexao_rotacao_translacao.mp4` · 5:00 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ O ponto (2, 3), refletido no eixo y, vai para onde? Muita gente responde (2, −
 ✅ O atalho: troque os números de lugar e mude o sinal do que ficou na frente
 
 ⏱️ Capítulos
-[TEMPO] O erro do espelho no eixo y
-[TEMPO] O que você precisa saber
-[TEMPO] Os três movimentos
-[TEMPO] Translação: deslizar
-[TEMPO] Reflexão: o espelho
-[TEMPO] Rotação: girar em volta da origem
-[TEMPO] Reflexão ou rotação?
-[TEMPO] O erro de trocar o sinal errado
-[TEMPO] O atalho do giro de 90°
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 O erro do espelho no eixo y
+0:23 O que você precisa saber
+0:37 Os três movimentos
+0:50 Translação: deslizar
+1:14 Reflexão: o espelho
+1:51 Rotação: girar em volta da origem
+2:31 Reflexão ou rotação?
+2:45 O erro de trocar o sinal errado
+3:04 O atalho do giro de 90°
+3:52 Hora de testar
+4:10 Resolvendo a questão
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-012 · Lombada, globo da morte e pêndulo
 
-**Arquivo:** `final/estudativo_FIS-DIN-012_lombada_globo_da_morte_e_pendulo.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-012_lombada_globo_da_morte_e_pendulo.mp4` · 4:46 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ No topo de uma lombada, o carro parece mais leve; no globo da morte, a moto pass
 ✅ O atalho: m(g − v²/R) e m(g + v²/R)
 
 ⏱️ Capítulos
-[TEMPO] Lombada e globo da morte
-[TEMPO] O que você precisa saber
-[TEMPO] O método do centro
-[TEMPO] Lombada e baixada
-[TEMPO] O globo da morte
-[TEMPO] O pêndulo
-[TEMPO] O erro: normal igual ao peso
-[TEMPO] O atalho
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o looping da montanha-russa
-[TEMPO] Resumo e próxima aula
+0:00 Lombada e globo da morte
+0:19 O que você precisa saber
+0:33 O método do centro
+0:46 Lombada e baixada
+1:33 O globo da morte
+2:15 O pêndulo
+2:50 O erro: normal igual ao peso
+3:06 O atalho
+3:42 Hora de testar
+3:59 Resolvendo: o looping da montanha-russa
+4:19 Resumo e próxima aula
 
 📚 Antes desta aula
 Força centrípeta: [LINK FIS-DIN-010]

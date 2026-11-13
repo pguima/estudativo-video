@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-021 · Praticando: movimento circular
 
-**Arquivo:** `final/estudativo_FIS-CIN-021_praticando_movimento_circular.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-021_praticando_movimento_circular.mp4` · 4:46 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco situações inéditas, criadas para esta aula, para fechar a Cinemática p
 ✅ O atalho: correia (v igual) ou eixo (ω igual)?
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações para você resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a máquina de lavar
-[TEMPO] Resposta 1
-[TEMPO] Situação 2: a roda-gigante
-[TEMPO] Resposta 2
-[TEMPO] Situação 3: as polias do liquidificador
-[TEMPO] Resposta 3
-[TEMPO] O atalho: como estão ligadas?
-[TEMPO] Situação 4: a bicicleta
-[TEMPO] Resposta 4
-[TEMPO] Situação 5: a Terra
-[TEMPO] Resposta 5
-[TEMPO] Resumo e fim da Cinemática
+0:00 Cinco situações para você resolver
+0:17 O que você vai usar
+0:39 Situação 1: a máquina de lavar
+0:54 Resposta 1
+1:08 Situação 2: a roda-gigante
+1:25 Resposta 2
+1:55 Situação 3: as polias do liquidificador
+2:15 Resposta 3
+2:33 O atalho: como estão ligadas?
+2:52 Situação 4: a bicicleta
+3:12 Resposta 4
+3:42 Situação 5: a Terra
+4:00 Resposta 5
+4:17 Resumo e fim da Cinemática
 
 📚 Antes desta aula
 Período, frequência e rpm: [LINK FIS-CIN-018]

@@ -1,6 +1,6 @@
 # Publicação — MAT-TRA-006 · Equações e inequações trigonométricas
 
-**Arquivo:** `final/estudativo_MAT-TRA-006_equacoes_e_inequacoes_trigonometricas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRA-006_equacoes_e_inequacoes_trigonometricas.mp4` · 3:59 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Seno de x igual a 1/2: quase todo mundo responde 30° e para por aí. Mas na vol
 ✅ O atalho do parceiro, e quando ele não vale
 
 ⏱️ Capítulos
-[TEMPO] sen x = 1/2 tem duas respostas
-[TEMPO] O que você precisa saber
-[TEMPO] A equação: a linha no ciclo
-[TEMPO] A inequação: o arco acima da linha
-[TEMPO] Segundo grau disfarçado
-[TEMPO] O erro de parar no primeiro ângulo
-[TEMPO] O atalho do parceiro
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 2 cos x − 1 = 0
-[TEMPO] Resumo e próxima aula
+0:00 sen x = 1/2 tem duas respostas
+0:22 O que você precisa saber
+0:37 A equação: a linha no ciclo
+1:22 A inequação: o arco acima da linha
+1:47 Segundo grau disfarçado
+2:24 O erro de parar no primeiro ângulo
+2:36 O atalho do parceiro
+3:00 Hora de testar
+3:11 Resolvendo: 2 cos x − 1 = 0
+3:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Intervalos: colchetes e reta: [LINK MAT-CON-007]

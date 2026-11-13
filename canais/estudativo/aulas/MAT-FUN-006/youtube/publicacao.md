@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-006 · Gráfico de uma função
 
-**Arquivo:** `final/estudativo_MAT-FUN-006_grafico_de_uma_funcao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-006_grafico_de_uma_funcao.mp4` · 5:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Um desenho no plano é o gráfico de uma função? Existe um teste que responde 
 ✅ O atalho: em x² − 1, entradas opostas dão a mesma saída (não vale em x² + x)
 
 ⏱️ Capítulos
-[TEMPO] O teste da régua em pé
-[TEMPO] O que você precisa saber
-[TEMPO] Cada entrada e saída vira um ponto
-[TEMPO] A tabela de f(x) = x² − 1
-[TEMPO] Marcando os pontos e ligando a curva
-[TEMPO] O teste da reta vertical
-[TEMPO] O erro da régua deitada
-[TEMPO] O atalho: entradas opostas, mesma saída
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f(x) = 3 − x² e os três desenhos
-[TEMPO] Resumo e próxima aula
+0:00 O teste da régua em pé
+0:20 O que você precisa saber
+0:34 Cada entrada e saída vira um ponto
+0:48 A tabela de f(x) = x² − 1
+1:23 Marcando os pontos e ligando a curva
+2:09 O teste da reta vertical
+2:49 O erro da régua deitada
+3:07 O atalho: entradas opostas, mesma saída
+3:38 Hora de testar
+4:01 Resolvendo: f(x) = 3 − x² e os três desenhos
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Plano cartesiano: marcar e ler pontos: [LINK MAT-FUN-001]

@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-018 · Praticando: bases, medidas, troncos e homotetia
 
-**Arquivo:** `final/estudativo_MAT-TOP-018_praticando_bases_troncos_homotetia.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-018_praticando_bases_troncos_homotetia.mp4` · 4:20 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações inéditas para fechar a trilha de Tópicos Avançados: um nú
 ✅ Homotetia: comprimento × k, área × k²
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] As ferramentas do bloco
-[TEMPO] Situação 1: base 2 e base 60
-[TEMPO] Resolvendo: 26 e 3 h 20 min
-[TEMPO] Situação 2: algarismos significativos
-[TEMPO] Resolvendo: 3 significativos e 4,1
-[TEMPO] Situação 3: o tronco da pirâmide
-[TEMPO] Resolvendo: 250 − 16 = 234
-[TEMPO] O atalho: 1 − k³
-[TEMPO] Situação 4: a sombra da lanterna
-[TEMPO] Resolvendo: 20 cm e 192 cm²
-[TEMPO] Resumo e fim da trilha
+0:00 Quatro situações para resolver
+0:16 As ferramentas do bloco
+0:43 Situação 1: base 2 e base 60
+0:59 Resolvendo: 26 e 3 h 20 min
+1:21 Situação 2: algarismos significativos
+1:39 Resolvendo: 3 significativos e 4,1
+2:03 Situação 3: o tronco da pirâmide
+2:18 Resolvendo: 250 − 16 = 234
+2:43 O atalho: 1 − k³
+3:12 Situação 4: a sombra da lanterna
+3:32 Resolvendo: 20 cm e 192 cm²
+3:55 Resumo e fim da trilha
 
 📚 Antes desta aula
 Bases de contagem: binária e sexagesimal: [LINK MAT-TOP-014]

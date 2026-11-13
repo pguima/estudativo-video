@@ -1,6 +1,6 @@
 # Publicação — FIS-MAG-001 · Ímãs e campo magnético
 
-**Arquivo:** `final/estudativo_FIS-MAG-001_imas_e_campo_magnetico.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-MAG-001_imas_e_campo_magnetico.mp4` · 5:15 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Quebre um ímã ao meio e você não fica com um norte e um sul separados: ganha
 ✅ O atalho: a linha sai do norte, e a agulha segue a seta
 
 ⏱️ Capítulos
-[TEMPO] O ímã partido ao meio
-[TEMPO] O que você precisa saber
-[TEMPO] Os polos de um ímã
-[TEMPO] O campo magnético
-[TEMPO] Linhas de campo
-[TEMPO] A bússola e a Terra
-[TEMPO] Por que o ímã partido vira dois
-[TEMPO] O erro do norte da bússola
-[TEMPO] O atalho: sai do norte, entra no sul
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bússola e o ímã partido
-[TEMPO] Resumo e próxima aula
+0:00 O ímã partido ao meio
+0:23 O que você precisa saber
+0:38 Os polos de um ímã
+1:03 O campo magnético
+1:20 Linhas de campo
+1:58 A bússola e a Terra
+2:37 Por que o ímã partido vira dois
+3:10 O erro do norte da bússola
+3:25 O atalho: sai do norte, entra no sul
+4:02 Hora de testar
+4:25 Resolvendo: a bússola e o ímã partido
+4:49 Resumo e próxima aula
 
 📚 Antes desta aula
 Campo elétrico e linhas de força: [LINK FIS-ELE-003]

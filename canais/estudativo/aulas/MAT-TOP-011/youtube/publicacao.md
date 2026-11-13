@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-011 · Elipse: equação reduzida
 
-**Arquivo:** `final/estudativo_MAT-TOP-011_elipse_equacao_reduzida.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-011_elipse_equacao_reduzida.mp4` · 5:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Dois pregos, um barbante e um lápis desenham uma elipse. Nesta aula, você ente
 ✅ O atalho: c² = maior − menor
 
 ⏱️ Capítulos
-[TEMPO] Uma equação que desenha uma elipse
-[TEMPO] O que você precisa saber
-[TEMPO] Dois pregos e um barbante
-[TEMPO] A equação reduzida e os semieixos
-[TEMPO] Achando os focos com Pitágoras
-[TEMPO] A elipse em pé
-[TEMPO] O erro de tratar o á como cateto
-[TEMPO] O atalho: o maior número manda
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 Uma equação que desenha uma elipse
+0:22 O que você precisa saber
+0:39 Dois pregos e um barbante
+1:21 A equação reduzida e os semieixos
+2:06 Achando os focos com Pitágoras
+2:49 A elipse em pé
+3:13 O erro de tratar o á como cateto
+3:38 O atalho: o maior número manda
+4:15 Hora de testar
+4:33 Resolvendo a questão
+5:02 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação reduzida da circunferência: [LINK MAT-ANA-008]

@@ -1,6 +1,6 @@
 # Publicação — MAT-MTZ-006 · Sistema 3x3 por escalonamento
 
-**Arquivo:** `final/estudativo_MAT-MTZ-006_sistema_3x3_escalonamento.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-MTZ-006_sistema_3x3_escalonamento.mp4` · 4:14 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Três equações e três letras parecem muita coisa, mas o segredo é eliminar u
 ✅ O atalho: com alternativas, teste os trios
 
 ⏱️ Capítulos
-[TEMPO] Três equações, três letras
-[TEMPO] O que você precisa saber
-[TEMPO] O sistema e a escada
-[TEMPO] Eliminando uma letra por vez
-[TEMPO] Subindo a escada
-[TEMPO] O erro de subtrair só um lado
-[TEMPO] O atalho: teste os trios
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: multiplicar antes de subtrair
-[TEMPO] Resumo e próxima aula
+0:00 Três equações, três letras
+0:21 O que você precisa saber
+0:36 O sistema e a escada
+1:05 Eliminando uma letra por vez
+1:43 Subindo a escada
+2:06 O erro de subtrair só um lado
+2:23 O atalho: teste os trios
+2:48 Hora de testar
+3:07 Resolvendo: multiplicar antes de subtrair
+3:52 Resumo e próxima aula
 
 📚 Antes desta aula
 Sistema de equações: método da adição: [LINK MAT-EQU-019]

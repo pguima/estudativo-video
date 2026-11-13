@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-002 · Fator comum e agrupamento
 
-**Arquivo:** `final/estudativo_MAT-FAT-002_fator_comum_e_agrupamento.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-002_fator_comum_e_agrupamento.mp4` · 5:32 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Até agora você abria parênteses. Nesta aula, faz o caminho de volta: transfor
 ✅ O atalho do menos: x² + 5x − 2x − 10 = (x + 5)(x − 2)
 
 ⏱️ Capítulos
-[TEMPO] O caminho de volta: 6x² + 9x
-[TEMPO] O que você precisa saber
-[TEMPO] O que é fatorar
-[TEMPO] Colocar em evidência, passo a passo
-[TEMPO] O erro do 1 que some
-[TEMPO] Agrupamento em pares
-[TEMPO] O atalho do sinal de menos
-[TEMPO] Hora de testar
-[TEMPO] Resposta: (x + 4)(x + 3)
-[TEMPO] Resumo e próxima aula
+0:00 O caminho de volta: 6x² + 9x
+0:20 O que você precisa saber
+0:34 O que é fatorar
+1:04 Colocar em evidência, passo a passo
+1:59 O erro do 1 que some
+2:25 Agrupamento em pares
+3:31 O atalho do sinal de menos
+4:22 Hora de testar
+4:34 Resposta: (x + 4)(x + 3)
+5:07 Resumo e próxima aula
 
 📚 Antes desta aula
 Calcular o MDC: [LINK MAT-DIV-004]

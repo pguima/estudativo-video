@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-012 · Achar a lei por dois pontos
 
-**Arquivo:** `final/estudativo_MAT-FUN-012_achar_a_lei_por_dois_pontos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-012_achar_a_lei_por_dois_pontos.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma função afim passa por (1, 5) e (3, 9). Só com isso, dá para descobrir a 
 ✅ O atalho: ande para trás até o x = 0 para achar o b
 
 ⏱️ Capítulos
-[TEMPO] Dois pontos e a fórmula inteira
-[TEMPO] O que você precisa saber
-[TEMPO] O método em dois passos: o a e o b
-[TEMPO] Conferir e prever
-[TEMPO] A lei lida no gráfico
-[TEMPO] O erro: trocar a ordem dos pontos
-[TEMPO] O atalho: andar para trás até o x = 0
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o técnico
-[TEMPO] Resumo e próxima aula
+0:00 Dois pontos e a fórmula inteira
+0:21 O que você precisa saber
+0:39 O método em dois passos: o a e o b
+1:23 Conferir e prever
+1:39 A lei lida no gráfico
+2:11 O erro: trocar a ordem dos pontos
+2:50 O atalho: andar para trás até o x = 0
+3:31 Hora de testar
+3:51 Resolvendo: o técnico
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Coeficientes: taxa de variação e valor inicial: [LINK MAT-FUN-010]

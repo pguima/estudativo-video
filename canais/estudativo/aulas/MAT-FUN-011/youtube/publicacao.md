@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-011 · Zero da função e estudo do sinal
 
-**Arquivo:** `final/estudativo_MAT-FUN-011_zero_da_funcao_e_estudo_do_sinal.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-011_zero_da_funcao_e_estudo_do_sinal.mp4` · 5:05 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma pessoa gastou R$ 6 de material e ganha R$ 2 por brigadeiro vendido. Com quan
 ✅ O atalho: à direita da raiz, o sinal do a; à esquerda, o contrário (não vale com a = 0)
 
 ⏱️ Capítulos
-[TEMPO] O brigadeiro: empatar e lucrar
-[TEMPO] O que você precisa saber
-[TEMPO] O zero da função
-[TEMPO] Positiva e negativa
-[TEMPO] Quando a reta desce
-[TEMPO] O erro: positiva sempre à direita?
-[TEMPO] O atalho: depois da raiz, o sinal do a
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: h(x) = −4x + 10
-[TEMPO] Resumo e próxima aula
+0:00 O brigadeiro: empatar e lucrar
+0:24 O que você precisa saber
+0:37 O zero da função
+1:18 Positiva e negativa
+2:13 Quando a reta desce
+2:53 O erro: positiva sempre à direita?
+3:13 O atalho: depois da raiz, o sinal do a
+3:52 Hora de testar
+4:07 Resolvendo: h(x) = −4x + 10
+4:41 Resumo e próxima aula
 
 📚 Antes desta aula
 Resolver inequação do 1º grau: [LINK MAT-EQU-015]

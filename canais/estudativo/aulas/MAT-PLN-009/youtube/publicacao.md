@@ -1,6 +1,6 @@
 # Publicação — MAT-PLN-009 · Raízes complexas vêm em pares
 
-**Arquivo:** `final/estudativo_MAT-PLN-009_raizes_complexas_em_pares.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-PLN-009_raizes_complexas_em_pares.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Se 1 + 2i é raiz de x³ − 3x² + 7x − 5, então 1 − 2i também é, sem fa
 ✅ O atalho: o par já sai pronto, e o teste do 1 antes de dividir
 
 ⏱️ Capítulos
-[TEMPO] Uma raiz complexa traz outra
-[TEMPO] O que você precisa saber
-[TEMPO] Por que vêm em pares
-[TEMPO] A terceira raiz
-[TEMPO] O erro no conjugado
-[TEMPO] O atalho do par
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 2i é raiz de x³ − x² + 4x − 4
-[TEMPO] Resumo e próxima aula
+0:00 Uma raiz complexa traz outra
+0:23 O que você precisa saber
+0:38 Por que vêm em pares
+1:27 A terceira raiz
+2:54 O erro no conjugado
+3:08 O atalho do par
+3:51 Hora de testar
+4:04 Resolvendo: 2i é raiz de x³ − x² + 4x − 4
+4:43 Resumo e próxima aula
 
 📚 Antes desta aula
 Raízes e forma fatorada: [LINK MAT-PLN-004]

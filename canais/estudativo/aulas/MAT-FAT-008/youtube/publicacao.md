@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-008 · Fórmula de Bhaskara
 
-**Arquivo:** `final/estudativo_MAT-FAT-008_formula_de_bhaskara.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-008_formula_de_bhaskara.mp4` · 5:13 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ x² − 5x + 6 = 0 não deixa isolar o x² e não tem fator comum. Para essa, ex
 ✅ O atalho: multiplique por −1 para deixar o a positivo
 
 ⏱️ Capítulos
-[TEMPO] x² − 5x + 6 = 0: não isola, não fatora
-[TEMPO] O que você precisa saber
-[TEMPO] A fórmula em duas etapas: delta e Bhaskara
-[TEMPO] Exemplo: x² − 5x + 6 = 0
-[TEMPO] Exemplo com a negativo: −x² + 2x + 3 = 0
-[TEMPO] O erro de usar o a sem o sinal
-[TEMPO] O atalho: deixe o a positivo
-[TEMPO] Hora de testar
-[TEMPO] Resposta: Δ = 25, raízes 2 e −1/2
-[TEMPO] Resumo e próxima aula
+0:00 x² − 5x + 6 = 0: não isola, não fatora
+0:20 O que você precisa saber
+0:31 A fórmula em duas etapas: delta e Bhaskara
+1:08 Exemplo: x² − 5x + 6 = 0
+1:54 Exemplo com a negativo: −x² + 2x + 3 = 0
+2:50 O erro de usar o a sem o sinal
+3:12 O atalho: deixe o a positivo
+3:55 Hora de testar
+4:06 Resposta: Δ = 25, raízes 2 e −1/2
+4:50 Resumo e próxima aula
 
 📚 Antes desta aula
 Valor numérico com parênteses: [LINK MAT-EQU-002]

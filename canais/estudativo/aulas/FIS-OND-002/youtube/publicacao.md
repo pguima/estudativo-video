@@ -1,6 +1,6 @@
 # Publicação — FIS-OND-002 · Ondas: tipos e a equação v = λ·f
 
-**Arquivo:** `final/estudativo_FIS-OND-002_ondas_tipos_e_equacao.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OND-002_ondas_tipos_e_equacao.mp4` · 4:52 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ Na ola do estádio, a onda dá a volta inteira e ninguém sai do lugar. Nesta au
 ✅ O atalho: a frequência é da fonte, a velocidade é do meio
 
 ⏱️ Capítulos
-[TEMPO] A ola do estádio
-[TEMPO] O que você precisa saber
-[TEMPO] O que é uma onda
-[TEMPO] Tipos de onda: natureza e direção da vibração
-[TEMPO] Crista, vale, amplitude e λ
-[TEMPO] A equação v = λ·f
-[TEMPO] Ondas dos terremotos
-[TEMPO] O erro de medir de crista a vale
-[TEMPO] O atalho: f da fonte, v do meio
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a onda na corda
-[TEMPO] Resumo e próxima aula
+0:00 A ola do estádio
+0:22 O que você precisa saber
+0:35 O que é uma onda
+0:56 Tipos de onda: natureza e direção da vibração
+1:39 Crista, vale, amplitude e λ
+2:08 A equação v = λ·f
+2:39 Ondas dos terremotos
+3:07 O erro de medir de crista a vale
+3:23 O atalho: f da fonte, v do meio
+3:45 Hora de testar
+4:06 Resolvendo: a onda na corda
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Oscilações: pêndulo e mola: [LINK FIS-OND-001]

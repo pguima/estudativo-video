@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-015 · Partes da esfera: hemisfério, fuso e seção
 
-**Arquivo:** `final/estudativo_MAT-ESP-015_partes_da_esfera.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-015_partes_da_esfera.mp4` · 4:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma laranja de 5 cm de raio, cortada reto a 3 cm do centro: o círculo do corte 
 ✅ O atalho: conte círculos (4, 2 e 3)
 
 ⏱️ Capítulos
-[TEMPO] O corte da laranja
-[TEMPO] O que você precisa saber
-[TEMPO] Hemisfério: volume e área
-[TEMPO] Fuso: a fração do ângulo
-[TEMPO] O corte: Pitágoras na esfera
-[TEMPO] O erro de somar os quadrados
-[TEMPO] O atalho: conte círculos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a bola de 6 gomos
-[TEMPO] Resumo e próxima aula
+0:00 O corte da laranja
+0:20 O que você precisa saber
+0:31 Hemisfério: volume e área
+1:01 Fuso: a fração do ângulo
+2:00 O corte: Pitágoras na esfera
+2:47 O erro de somar os quadrados
+3:04 O atalho: conte círculos
+3:33 Hora de testar
+3:54 Resolvendo a bola de 6 gomos
+4:29 Resumo e próxima aula
 
 📚 Antes desta aula
 Esfera: área e volume: [LINK MAT-ESP-014]

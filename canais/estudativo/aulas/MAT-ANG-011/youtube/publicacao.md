@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-011 · Tales no triângulo e teorema da bissetriz interna
 
-**Arquivo:** `final/estudativo_MAT-ANG-011_tales_no_triangulo_e_bissetriz_interna.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-011_tales_no_triangulo_e_bissetriz_interna.mp4` · 5:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Num triângulo, dois lados medem 6 e 9 e o lado da frente mede 10. A bissetriz d
 ✅ Questão resolvida: lados 8 e 12, oposto 15 (pedaços 6 e 9)
 
 ⏱️ Capítulos
-[TEMPO] 5 e 5? A bissetriz não corta no meio
-[TEMPO] O que você precisa saber
-[TEMPO] Tales dentro do triângulo
-[TEMPO] O teorema da bissetriz interna
-[TEMPO] Por que a regra faz sentido
-[TEMPO] O erro de trocar os lados
-[TEMPO] O atalho: divida em partes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: 6 cm e 9 cm
-[TEMPO] Resumo e próxima aula
+0:00 5 e 5? A bissetriz não corta no meio
+0:23 O que você precisa saber
+0:37 Tales dentro do triângulo
+1:35 O teorema da bissetriz interna
+2:39 Por que a regra faz sentido
+2:58 O erro de trocar os lados
+3:22 O atalho: divida em partes
+4:02 Hora de testar
+4:22 Resolvendo: 6 cm e 9 cm
+4:53 Resumo e próxima aula
 
 📚 Antes desta aula
 Teorema de Tales: feixe de paralelas: [LINK MAT-ANG-010]

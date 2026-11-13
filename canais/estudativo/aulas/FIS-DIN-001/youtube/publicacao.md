@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-001 · Força resultante e primeira lei: inércia
 
-**Arquivo:** `final/estudativo_FIS-DIN-001_forca_resultante_primeira_lei_inercia.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-001_forca_resultante_primeira_lei_inercia.mp4` · 4:44 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Quando o ônibus freia, ninguém empurra você para a frente: é inércia. Nesta
 ✅ O atalho: velocidade constante é resultante zero
 
 ⏱️ Capítulos
-[TEMPO] O ônibus freia e você vai para a frente
-[TEMPO] O que você precisa saber
-[TEMPO] O que é força
-[TEMPO] Força resultante
-[TEMPO] Primeira lei de Newton: inércia
-[TEMPO] O erro: movimento sem força para a frente
-[TEMPO] O atalho: resultante zero
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o cabo de guerra
-[TEMPO] Resumo e próxima aula
+0:00 O ônibus freia e você vai para a frente
+0:19 O que você precisa saber
+0:33 O que é força
+0:57 Força resultante
+1:37 Primeira lei de Newton: inércia
+2:33 O erro: movimento sem força para a frente
+3:02 O atalho: resultante zero
+3:27 Hora de testar
+3:49 Resolvendo: o cabo de guerra
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 Vetores: somar e subtrair: [LINK FIS-CIN-002]

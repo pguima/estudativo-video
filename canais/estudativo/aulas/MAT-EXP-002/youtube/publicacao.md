@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-002 · Crescimento e decaimento: somar ou multiplicar
 
-**Arquivo:** `final/estudativo_MAT-EXP-002_crescimento_e_decaimento.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-002_crescimento_e_decaimento.mp4` · 5:08 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Duas cidades começam com 10 mil habitantes. Uma ganha 300 pessoas por ano, a ou
 ✅ O atalho: olhe os saltos antes de fazer conta
 
 ⏱️ Capítulos
-[TEMPO] +300 por ano ou +3% ao ano?
-[TEMPO] O que você precisa saber
-[TEMPO] Somar: a função afim
-[TEMPO] Multiplicar: a função exponencial
-[TEMPO] Decaimento: o carro que perde 10% ao ano
-[TEMPO] O teste da tabela: subtrair ou dividir
-[TEMPO] O erro dos 100% em 10 anos
-[TEMPO] O atalho: olhe os saltos
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo os dois perfis
-[TEMPO] Resumo e próxima aula
+0:00 +300 por ano ou +3% ao ano?
+0:24 O que você precisa saber
+0:37 Somar: a função afim
+0:50 Multiplicar: a função exponencial
+1:36 Decaimento: o carro que perde 10% ao ano
+2:11 O teste da tabela: subtrair ou dividir
+2:39 O erro dos 100% em 10 anos
+3:06 O atalho: olhe os saltos
+3:34 Hora de testar
+4:00 Resolvendo os dois perfis
+4:36 Resumo e próxima aula
 
 📚 Antes desta aula
 Função exponencial: lei e gráfico: [LINK MAT-EXP-001]

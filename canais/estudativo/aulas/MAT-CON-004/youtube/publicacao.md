@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-004 · Naturais, inteiros e racionais
 
-**Arquivo:** `final/estudativo_MAT-CON-004_naturais_inteiros_racionais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-004_naturais_inteiros_racionais.mp4` · 4:52 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: subir a escada e parar no primeiro sim, simplificando antes (12/4 = 3)
 
 ⏱️ Capítulos
-[TEMPO] −3 é natural? 0,4545… é fração?
-[TEMPO] O que você precisa saber
-[TEMPO] Os naturais
-[TEMPO] Os inteiros
-[TEMPO] Os racionais
-[TEMPO] Racionais na reta
-[TEMPO] A escada ℕ ⊂ ℤ ⊂ ℚ
-[TEMPO] O erro: dízima também é fração
-[TEMPO] O atalho: suba a escada
-[TEMPO] Hora de testar
-[TEMPO] Classificando os quatro números
-[TEMPO] Resumo e próxima aula
+0:00 −3 é natural? 0,4545… é fração?
+0:20 O que você precisa saber
+0:34 Os naturais
+0:49 Os inteiros
+1:15 Os racionais
+2:23 Racionais na reta
+2:47 A escada ℕ ⊂ ℤ ⊂ ℚ
+3:01 O erro: dízima também é fração
+3:19 O atalho: suba a escada
+3:47 Hora de testar
+4:03 Classificando os quatro números
+4:30 Resumo e próxima aula
 
 📚 Antes desta aula
 Conjuntos: pertence, está contido e vazio: [LINK MAT-CON-001]

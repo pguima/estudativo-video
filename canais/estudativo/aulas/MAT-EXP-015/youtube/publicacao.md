@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-015 · Praticando: logaritmos
 
-**Arquivo:** `final/estudativo_MAT-EXP-015_praticando_logaritmos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-015_praticando_logaritmos.mp4` · 6:26 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações de ciências, criadas para esta aula, para você treinar loga
 ✅ O atalho: na base 10, +0,30 é dobrar e +0,48 é triplicar; em decibéis, dobrar a intensidade é +3 dB
 
 ⏱️ Capítulos
-[TEMPO] 4 situações para resolver
-[TEMPO] As ferramentas que você vai usar
-[TEMPO] Situação 1: o pH do suco
-[TEMPO] Resposta 1: pH 3,7
-[TEMPO] Situação 2: as bactérias que dobram
-[TEMPO] Resposta 2: cerca de 3 h 45 min
-[TEMPO] Situação 3: equação com armadilha
-[TEMPO] Resposta 3: só x = 5
-[TEMPO] Situação 4: dois terremotos
-[TEMPO] Resposta 4: cerca de duas vezes
-[TEMPO] O atalho: +0,30 é dobrar
-[TEMPO] Resumo e próxima aula
+0:00 4 situações para resolver
+0:12 As ferramentas que você vai usar
+0:36 Situação 1: o pH do suco
+0:56 Resposta 1: pH 3,7
+1:27 Situação 2: as bactérias que dobram
+1:51 Resposta 2: cerca de 3 h 45 min
+3:32 Situação 3: equação com armadilha
+3:54 Resposta 3: só x = 5
+4:47 Situação 4: dois terremotos
+5:08 Resposta 4: cerca de duas vezes
+5:26 O atalho: +0,30 é dobrar
+5:56 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é logaritmo: [LINK MAT-EXP-008]

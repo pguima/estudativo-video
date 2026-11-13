@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-001 · Quadrado da soma e da diferença: (a ± b)²
 
-**Arquivo:** `final/estudativo_MAT-FAT-001_quadrado_da_soma_e_da_diferenca.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-001_quadrado_da_soma_e_da_diferenca.mp4` · 4:45 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: 101² = 10.201 e 99² = 9.801 de cabeça
 
 ⏱️ Capítulos
-[TEMPO] (x + 3)² dá x² + 9?
-[TEMPO] O que você precisa saber
-[TEMPO] Abrindo pelo chuveirinho
-[TEMPO] O piso quadrado
-[TEMPO] A regra do quadrado da soma
-[TEMPO] Quadrado da diferença
-[TEMPO] Com número na frente do x
-[TEMPO] O erro de elevar cada termo
-[TEMPO] O atalho: 101² de cabeça
-[TEMPO] Hora de testar
-[TEMPO] Resposta: x² − 10x + 25 e 95² = 9.025
-[TEMPO] Resumo e próxima aula
+0:00 (x + 3)² dá x² + 9?
+0:24 O que você precisa saber
+0:38 Abrindo pelo chuveirinho
+1:06 O piso quadrado
+1:20 A regra do quadrado da soma
+1:39 Quadrado da diferença
+2:16 Com número na frente do x
+2:40 O erro de elevar cada termo
+3:01 O atalho: 101² de cabeça
+3:41 Hora de testar
+3:57 Resposta: x² − 10x + 25 e 95² = 9.025
+4:21 Resumo e próxima aula
 
 📚 Antes desta aula
 Multiplicar termos com letra e duas expressões: [LINK MAT-EQU-005]

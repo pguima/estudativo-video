@@ -1,6 +1,6 @@
 # Publicação — MAT-EXP-006 · Equação exponencial com troca de variável
 
-**Arquivo:** `final/estudativo_MAT-EXP-006_equacao_exponencial_troca_de_variavel.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EXP-006_equacao_exponencial_troca_de_variavel.mp4` · 5:29 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,18 +32,18 @@ A equação 4ˣ − 6 · 2ˣ + 8 = 0 tem três termos, e igualar as bases não r
 ✅ O atalho: 2^(x+1) = 2 · 2ˣ, e 2^(x+1) + 2ˣ = 24 dá x = 3
 
 ⏱️ Capítulos
-[TEMPO] Três termos: igualar as bases não resolve
-[TEMPO] O que você precisa saber
-[TEMPO] O quadrado escondido: 4ˣ = (2ˣ)²
-[TEMPO] O apelido: 2ˣ = y
-[TEMPO] A volta para o x
-[TEMPO] O método em quatro passos
-[TEMPO] A raiz que não volta
-[TEMPO] O erro de parar no y
-[TEMPO] O atalho: separe a soma do expoente
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 4ˣ − 3 · 2ˣ − 4 = 0
-[TEMPO] Resumo e próxima aula
+0:00 Três termos: igualar as bases não resolve
+0:24 O que você precisa saber
+0:37 O quadrado escondido: 4ˣ = (2ˣ)²
+1:16 O apelido: 2ˣ = y
+1:45 A volta para o x
+2:16 O método em quatro passos
+2:27 A raiz que não volta
+3:06 O erro de parar no y
+3:36 O atalho: separe a soma do expoente
+4:28 Hora de testar
+4:40 Resolvendo 4ˣ − 3 · 2ˣ − 4 = 0
+5:04 Resumo e próxima aula
 
 📚 Antes desta aula
 Equação exponencial: igualar as bases: [LINK MAT-EXP-004]

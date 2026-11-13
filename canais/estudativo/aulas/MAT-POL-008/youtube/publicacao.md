@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-008 · Cordas que se cruzam e secantes
 
-**Arquivo:** `final/estudativo_MAT-POL-008_cordas_que_se_cruzam_e_secantes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-008_cordas_que_se_cruzam_e_secantes.mp4` · 5:03 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Duas cordas se cruzam dentro de uma circunferência. Uma fica cortada em pedaço
 ✅ O atalho: tangente² = o de fora vezes a inteira (2 · 18 = 36, tangente 6)
 
 ⏱️ Capítulos
-[TEMPO] O pedaço que ninguém mediu
-[TEMPO] O que você precisa saber
-[TEMPO] A regra das cordas: pedaço vezes pedaço
-[TEMPO] Por que funciona: triângulos semelhantes
-[TEMPO] Secantes: o de fora vezes a inteira
-[TEMPO] O erro de usar o pedaço de dentro
-[TEMPO] O atalho da tangente
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 O pedaço que ninguém mediu
+0:21 O que você precisa saber
+0:36 A regra das cordas: pedaço vezes pedaço
+1:02 Por que funciona: triângulos semelhantes
+1:30 Secantes: o de fora vezes a inteira
+2:40 O erro de usar o pedaço de dentro
+3:07 O atalho da tangente
+3:50 Hora de testar
+4:10 Resolvendo a questão
+4:38 Resumo e próxima aula
 
 📚 Antes desta aula
 Triângulos semelhantes: [LINK MAT-ANG-012]

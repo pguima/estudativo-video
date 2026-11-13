@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-011 · Praticando: circunferência no plano
 
-**Arquivo:** `final/estudativo_MAT-ANA-011_praticando_circunferencia_no_plano.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-011_praticando_circunferencia_no_plano.mp4` · 5:17 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Quatro situações com a circunferência no plano, criadas para esta aula. Em ca
 ✅ Reta tangente e reta externa, pela distância e pelo delta (Δ = −24)
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] As quatro ferramentas
-[TEMPO] Situação 1: centro, raio e a origem
-[TEMPO] Resolvendo: a origem está dentro
-[TEMPO] Situação 2: a equação por um ponto
-[TEMPO] Resolvendo: (x − 2)² + (y − 1)² = 25
-[TEMPO] O atalho: pare antes da raiz
-[TEMPO] Situação 3: completar quadrados e a reta y = 1
-[TEMPO] Resolvendo: tangente em (1, 1)
-[TEMPO] Situação 4: reta inclinada
-[TEMPO] Resolvendo: delta negativo, externa
-[TEMPO] Resumo e fim da Matemática do curso
+0:00 Quatro situações para resolver
+0:14 As quatro ferramentas
+0:31 Situação 1: centro, raio e a origem
+0:50 Resolvendo: a origem está dentro
+1:22 Situação 2: a equação por um ponto
+1:37 Resolvendo: (x − 2)² + (y − 1)² = 25
+2:06 O atalho: pare antes da raiz
+2:24 Situação 3: completar quadrados e a reta y = 1
+2:46 Resolvendo: tangente em (1, 1)
+3:53 Situação 4: reta inclinada
+4:09 Resolvendo: delta negativo, externa
+4:48 Resumo e fim da Matemática do curso
 
 📚 Antes desta aula
 Equação reduzida da circunferência: [LINK MAT-ANA-008]

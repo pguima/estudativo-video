@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-008 · Corrente elétrica
 
-**Arquivo:** `final/estudativo_FIS-ELE-008_corrente_eletrica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-008_corrente_eletrica.mp4` · 4:17 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ A bateria do seu celular tem 4.000 mAh. Isso não é corrente nem energia: é ca
 ✅ O erro de achar que mAh é corrente
 
 ⏱️ Capítulos
-[TEMPO] mAh não é corrente
-[TEMPO] O que você precisa saber
-[TEMPO] O que é corrente elétrica: i = Q/Δt
-[TEMPO] O gráfico da corrente pelo tempo
-[TEMPO] A bateria em mAh
-[TEMPO] Corrente contínua e alternada
-[TEMPO] O erro: mAh não é corrente
-[TEMPO] O atalho: quanto dura a bateria
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bateria portátil
-[TEMPO] Resumo e próxima aula
+0:00 mAh não é corrente
+0:20 O que você precisa saber
+0:34 O que é corrente elétrica: i = Q/Δt
+1:32 O gráfico da corrente pelo tempo
+1:59 A bateria em mAh
+2:26 Corrente contínua e alternada
+2:45 O erro: mAh não é corrente
+3:00 O atalho: quanto dura a bateria
+3:27 Hora de testar
+3:42 Resolvendo: a bateria portátil
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Carga elétrica e eletrização: [LINK FIS-ELE-001]

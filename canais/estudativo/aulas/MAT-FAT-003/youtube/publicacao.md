@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-003 · Fatorar com produtos notáveis
 
-**Arquivo:** `final/estudativo_MAT-FAT-003_fatorar_com_produtos_notaveis.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-003_fatorar_com_produtos_notaveis.mp4` · 4:36 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Use "Testar e comparar" no Studio com as três.
 ✅ O atalho: 1.001² − 999² = 2.000 × 2 = 4.000
 
 ⏱️ Capítulos
-[TEMPO] 1.001² − 999² de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] Diferença de dois quadrados
-[TEMPO] Trinômio quadrado perfeito
-[TEMPO] Antes de tudo, o fator comum
-[TEMPO] O erro: diferença de quadrados não é quadrado da diferença
-[TEMPO] O atalho: 1.001² − 999²
-[TEMPO] Hora de testar
-[TEMPO] Resposta: 3(x + 2)(x − 2)
-[TEMPO] Resumo e próxima aula
+0:00 1.001² − 999² de cabeça
+0:18 O que você precisa saber
+0:28 Diferença de dois quadrados
+1:15 Trinômio quadrado perfeito
+2:01 Antes de tudo, o fator comum
+2:26 O erro: diferença de quadrados não é quadrado da diferença
+2:48 O atalho: 1.001² − 999²
+3:28 Hora de testar
+3:38 Resposta: 3(x + 2)(x − 2)
+4:10 Resumo e próxima aula
 
 📚 Antes desta aula
 Quadrado da soma e da diferença: [LINK MAT-FAT-001]

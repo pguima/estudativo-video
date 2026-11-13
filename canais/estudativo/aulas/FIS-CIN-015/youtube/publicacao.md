@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-015 · Lançamento horizontal
 
-**Arquivo:** `final/estudativo_FIS-CIN-015_lancamento_horizontal.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-015_lancamento_horizontal.mp4` · 4:01 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Na beira de uma mesa, uma bola é empurrada para a frente e outra cai solta no m
 ✅ O atalho: dobrar a velocidade dobra o alcance, e o tempo não muda
 
 ⏱️ Capítulos
-[TEMPO] Empurrada ou solta: qual chega primeiro?
-[TEMPO] O que você precisa saber
-[TEMPO] Dois movimentos ao mesmo tempo
-[TEMPO] O método: tempo e alcance
-[TEMPO] O erro do avião
-[TEMPO] O atalho: a altura manda no tempo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bola que sai da mesa
-[TEMPO] Resumo e próxima aula
+0:00 Empurrada ou solta: qual chega primeiro?
+0:18 O que você precisa saber
+0:31 Dois movimentos ao mesmo tempo
+1:17 O método: tempo e alcance
+1:53 O erro do avião
+2:23 O atalho: a altura manda no tempo
+2:55 Hora de testar
+3:11 Resolvendo: a bola que sai da mesa
+3:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Queda livre: [LINK FIS-CIN-013]

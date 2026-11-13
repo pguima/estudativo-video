@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-008 · Área do círculo, da coroa e do setor
 
-**Arquivo:** `final/estudativo_MAT-ARE-008_area_do_circulo_coroa_e_setor.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-008_area_do_circulo_coroa_e_setor.mp4` · 4:49 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Uma pizza de 20 cm de raio tem o dobro de pizza de duas de 10 cm juntas: 400π c
 ✅ O atalho: o setor é a mesma fração do círculo que o ângulo é da volta
 
 ⏱️ Capítulos
-[TEMPO] Uma pizza grande ou duas pequenas?
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem A = πr²
-[TEMPO] A área da coroa
-[TEMPO] A área do setor
-[TEMPO] O erro de subtrair os raios
-[TEMPO] O atalho: fração da volta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o irrigador
-[TEMPO] Resumo e próxima aula
+0:00 Uma pizza grande ou duas pequenas?
+0:21 O que você precisa saber
+0:36 De onde vem A = πr²
+1:36 A área da coroa
+2:02 A área do setor
+2:39 O erro de subtrair os raios
+3:00 O atalho: fração da volta
+3:25 Hora de testar
+3:40 Resolvendo o irrigador
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do quadrado e do retângulo: [LINK MAT-ARE-002]

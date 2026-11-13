@@ -1,6 +1,6 @@
 # Publicação — FIS-CIN-020 · Correias, engrenagens e eixos
 
-**Arquivo:** `final/estudativo_FIS-CIN-020_correias_engrenagens_eixos.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-CIN-020_correias_engrenagens_eixos.mp4` · 4:49 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Numa bicicleta de marchas, uma única pedalada pode fazer a roda dar três volta
 ✅ O atalho em duas linhas e o bônus de usar rpm e cm sem converter
 
 ⏱️ Capítulos
-[TEMPO] Uma pedalada, três voltas
-[TEMPO] O que você precisa saber
-[TEMPO] Polias com correia
-[TEMPO] Engrenagens
-[TEMPO] Rodas no mesmo eixo
-[TEMPO] A bicicleta e as marchas
-[TEMPO] O erro: correia com a mesma frequência?
-[TEMPO] O atalho em duas linhas
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a velocidade da bicicleta
-[TEMPO] Resumo e próxima aula
+0:00 Uma pedalada, três voltas
+0:20 O que você precisa saber
+0:31 Polias com correia
+1:18 Engrenagens
+1:34 Rodas no mesmo eixo
+1:52 A bicicleta e as marchas
+2:40 O erro: correia com a mesma frequência?
+2:58 O atalho em duas linhas
+3:42 Hora de testar
+4:01 Resolvendo: a velocidade da bicicleta
+4:26 Resumo e próxima aula
 
 📚 Antes desta aula
 Velocidade angular e velocidade linear: [LINK FIS-CIN-019]

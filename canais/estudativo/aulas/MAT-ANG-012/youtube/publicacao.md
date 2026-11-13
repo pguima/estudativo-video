@@ -1,6 +1,6 @@
 # Publicação — MAT-ANG-012 · Triângulos semelhantes: critérios e razão de semelhança
 
-**Arquivo:** `final/estudativo_MAT-ANG-012_triangulos_semelhantes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANG-012_triangulos_semelhantes.mp4` · 4:59 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Quando você amplia uma foto, tudo fica maior, mas nada entorta. Com triângulos
 ✅ Questão resolvida: triângulos 30°, 60° e 90°, PQ = 12 cm
 
 ⏱️ Capítulos
-[TEMPO] Ampliar sem entortar
-[TEMPO] O que você precisa saber
-[TEMPO] Semelhança e razão de semelhança
-[TEMPO] Os critérios: dois ângulos bastam
-[TEMPO] A ordem: o lado de frente para o mesmo ângulo
-[TEMPO] O erro de ligar pela posição
-[TEMPO] O atalho: maior com maior
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: PQ = 12 cm
-[TEMPO] Resumo e próxima aula
+0:00 Ampliar sem entortar
+0:19 O que você precisa saber
+0:31 Semelhança e razão de semelhança
+0:54 Os critérios: dois ângulos bastam
+1:22 A ordem: o lado de frente para o mesmo ângulo
+2:04 O erro de ligar pela posição
+2:28 O atalho: maior com maior
+3:13 Hora de testar
+3:41 Resolvendo: PQ = 12 cm
+4:35 Resumo e próxima aula
 
 📚 Antes desta aula
 Congruência de triângulos: LLL, LAL, ALA e LAAo: [LINK MAT-ANG-007]

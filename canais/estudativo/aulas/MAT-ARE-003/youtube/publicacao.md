@@ -1,6 +1,6 @@
 # Publicação — MAT-ARE-003 · Área do paralelogramo e do triângulo
 
-**Arquivo:** `final/estudativo_MAT-ARE-003_area_paralelogramo_triangulo.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ARE-003_area_paralelogramo_triangulo.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,15 +30,15 @@ Um triângulo de base 10 e altura 6: a área é 10 × 6 = 60? Não: 60 é o ret�
 ✅ Uma bandeirinha de festa resolvida, com conversão de cm² para m²
 
 ⏱️ Capítulos
-[TEMPO] A área é 60?
-[TEMPO] O que você precisa saber
-[TEMPO] Paralelogramo: recorta e vira retângulo
-[TEMPO] Triângulo: metade do paralelogramo
-[TEMPO] O erro do lado inclinado
-[TEMPO] O atalho: divida por 2 antes
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a bandeirinha de festa
-[TEMPO] Resumo e próxima aula
+0:00 A área é 60?
+0:27 O que você precisa saber
+0:42 Paralelogramo: recorta e vira retângulo
+1:24 Triângulo: metade do paralelogramo
+2:15 O erro do lado inclinado
+2:35 O atalho: divida por 2 antes
+3:05 Hora de testar
+3:23 Resolvendo: a bandeirinha de festa
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Área do quadrado e do retângulo: [LINK MAT-ARE-002]

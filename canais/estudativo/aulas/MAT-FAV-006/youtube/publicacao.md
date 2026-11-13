@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-006 · Calcular a inversa e ver seu gráfico
 
-**Arquivo:** `final/estudativo_MAT-FAV-006_calcular_a_inversa.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-006_calcular_a_inversa.mp4` · 3:56 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,15 +32,15 @@ f(x) = 2x + 3 e f(5) = 13. Agora o contrário: saiu 13, qual foi a entrada? A m�
 ✅ O atalho: desfaça de trás para frente, como sapato e meia
 
 ⏱️ Capítulos
-[TEMPO] Saiu 13: qual foi a entrada?
-[TEMPO] O que você precisa saber
-[TEMPO] A inversa em três passos
-[TEMPO] O gráfico: espelho na diagonal
-[TEMPO] O erro do −1 como expoente
-[TEMPO] O atalho: de trás para frente
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: f(x) = 4x − 1
-[TEMPO] Resumo e próxima aula
+0:00 Saiu 13: qual foi a entrada?
+0:20 O que você precisa saber
+0:34 A inversa em três passos
+1:26 O gráfico: espelho na diagonal
+2:01 O erro do −1 como expoente
+2:17 O atalho: de trás para frente
+2:46 Hora de testar
+2:58 Resolvendo: f(x) = 4x − 1
+3:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Isolar uma letra numa fórmula: [LINK MAT-EQU-011]

@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-004 · Energia potencial: gravitacional e elástica
 
-**Arquivo:** `final/estudativo_FIS-ENE-004_energia_potencial_gravitacional_e_elastica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-004_energia_potencial_gravitacional_e_elastica.mp4` · 4:51 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Um vaso parado na janela não se move, mas guarda energia. Nesta aula, você apr
 ✅ O atalho: Ep = F · x / 2 quando a questão dá a força
 
 ⏱️ Capítulos
-[TEMPO] A energia guardada no vaso
-[TEMPO] O que você precisa saber
-[TEMPO] Energia potencial gravitacional
-[TEMPO] Energia potencial elástica
-[TEMPO] O erro do centímetro
-[TEMPO] O atalho: a área do triângulo
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o livro e a mola
-[TEMPO] Resumo e próxima aula
+0:00 A energia guardada no vaso
+0:21 O que você precisa saber
+0:40 Energia potencial gravitacional
+1:48 Energia potencial elástica
+2:48 O erro do centímetro
+3:09 O atalho: a área do triângulo
+3:41 Hora de testar
+4:00 Resolvendo: o livro e a mola
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Trabalho de uma força: [LINK FIS-ENE-001]

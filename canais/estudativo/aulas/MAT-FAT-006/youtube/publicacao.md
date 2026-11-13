@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-006 · Praticando: produtos notáveis e fatoração
 
-**Arquivo:** `final/estudativo_MAT-FAT-006_praticando_produtos_notaveis_fatoracao.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-006_praticando_produtos_notaveis_fatoracao.mp4` · 4:50 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,20 +30,20 @@ Cinco questões inéditas, uma para cada ferramenta desta parte do curso: abrir 
 ✅ 1.002 · 998 = 1.000² − 2² = 999.996
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões para praticar
-[TEMPO] As ferramentas
-[TEMPO] Questão 1: abrir (2x − 3)²
-[TEMPO] Resposta 1: 4x² − 12x + 9
-[TEMPO] Questão 2: fatorar x³ − 4x
-[TEMPO] Resposta 2: x(x + 2)(x − 2)
-[TEMPO] Questão 3: calcular para x = 95
-[TEMPO] Resposta 3: simplificar antes
-[TEMPO] O atalho: simplifique antes de trocar o x
-[TEMPO] Questão 4: racionalizar 6/(√5 − √2)
-[TEMPO] Resposta 4: 2(√5 + √2)
-[TEMPO] Questão 5: 1.002 · 998 de cabeça
-[TEMPO] Resposta 5: 999.996
-[TEMPO] Resumo e próxima aula
+0:00 Cinco questões para praticar
+0:13 As ferramentas
+0:27 Questão 1: abrir (2x − 3)²
+0:40 Resposta 1: 4x² − 12x + 9
+1:21 Questão 2: fatorar x³ − 4x
+1:31 Resposta 2: x(x + 2)(x − 2)
+2:06 Questão 3: calcular para x = 95
+2:19 Resposta 3: simplificar antes
+2:52 O atalho: simplifique antes de trocar o x
+3:08 Questão 4: racionalizar 6/(√5 − √2)
+3:22 Resposta 4: 2(√5 + √2)
+3:57 Questão 5: 1.002 · 998 de cabeça
+4:07 Resposta 5: 999.996
+4:24 Resumo e próxima aula
 
 📚 Antes desta aula
 Quadrado da soma e da diferença: [LINK MAT-FAT-001]

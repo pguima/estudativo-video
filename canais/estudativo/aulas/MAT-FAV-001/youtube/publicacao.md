@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-001 · Função definida por partes
 
-**Arquivo:** `final/estudativo_MAT-FAV-001_funcao_definida_por_partes.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-001_funcao_definida_por_partes.mp4` · 4:13 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Uma transportadora cobra R$ 2 por quilo até 3 kg e R$ 9 fixos acima disso. Quan
 ✅ O atalho: na fronteira, calcule as duas leis
 
 ⏱️ Capítulos
-[TEMPO] O frete de 5 kg
-[TEMPO] O que você precisa saber
-[TEMPO] A função definida por partes e a chave
-[TEMPO] Calcular: ache a faixa, use a lei
-[TEMPO] O gráfico em pedaços
-[TEMPO] O erro da fronteira
-[TEMPO] O atalho: as duas leis na fronteira
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: valores e salto
-[TEMPO] Resumo e próxima aula
+0:00 O frete de 5 kg
+0:27 O que você precisa saber
+0:40 A função definida por partes e a chave
+1:07 Calcular: ache a faixa, use a lei
+1:29 O gráfico em pedaços
+2:09 O erro da fronteira
+2:34 O atalho: as duas leis na fronteira
+3:01 Hora de testar
+3:21 Resolvendo: valores e salto
+3:52 Resumo e próxima aula
 
 📚 Antes desta aula
 Intervalos: colchetes e reta: [LINK MAT-CON-007]

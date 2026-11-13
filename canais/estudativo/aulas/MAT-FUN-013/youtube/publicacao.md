@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-013 · Função linear e grandezas proporcionais
 
-**Arquivo:** `final/estudativo_MAT-FUN-013_funcao_linear_e_grandezas_proporcionais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-013_funcao_linear_e_grandezas_proporcionais.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ O preço do feijão e o preço do táxi sobem em linha reta, mas só um deles é
 ✅ O atalho: reta pela origem, k = y ÷ x com um ponto só
 
 ⏱️ Capítulos
-[TEMPO] Duas retas, só uma proporcional
-[TEMPO] O que você precisa saber
-[TEMPO] O preço do feijão: y = 8x
-[TEMPO] Função linear e a constante k
-[TEMPO] O gráfico passa pela origem
-[TEMPO] O táxi e a bandeirada
-[TEMPO] O erro: toda reta que sobe é proporcional?
-[TEMPO] O atalho: um ponto dá o k
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: reta A, y = 12x, e a armadilha da reta B
-[TEMPO] Resumo e próxima aula
+0:00 Duas retas, só uma proporcional
+0:21 O que você precisa saber
+0:35 O preço do feijão: y = 8x
+0:55 Função linear e a constante k
+1:27 O gráfico passa pela origem
+1:49 O táxi e a bandeirada
+2:19 O erro: toda reta que sobe é proporcional?
+2:38 O atalho: um ponto dá o k
+3:12 Hora de testar
+3:34 Resolvendo: reta A, y = 12x, e a armadilha da reta B
+4:06 Resumo e próxima aula
 
 📚 Antes desta aula
 Função afim: lei e gráfico: [LINK MAT-FUN-009]

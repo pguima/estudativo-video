@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-010 · Praticando: espelhos, lentes e olho
 
-**Arquivo:** `final/estudativo_FIS-OPT-010_praticando_espelhos_lentes_olho.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-010_praticando_espelhos_lentes_olho.mp4` · 4:42 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,18 +30,18 @@ Cinco questões inéditas para treinar a óptica geométrica, do espelho plano a
 ✅ Os atalhos que resolvem tudo
 
 ⏱️ Capítulos
-[TEMPO] Cinco questões e três lembretes
-[TEMPO] Questão 1: o espelho da loja
-[TEMPO] Resolvendo a 1
-[TEMPO] Questão 2: o retrovisor
-[TEMPO] Resolvendo a 2
-[TEMPO] Questão 3: sai ou reflete?
-[TEMPO] Resolvendo a 3
-[TEMPO] Questão 4: a lupa
-[TEMPO] Resolvendo a 4
-[TEMPO] Questão 5: a receita
-[TEMPO] Resolvendo a 5
-[TEMPO] Os atalhos
+0:00 Cinco questões e três lembretes
+0:26 Questão 1: o espelho da loja
+0:46 Resolvendo a 1
+1:04 Questão 2: o retrovisor
+1:18 Resolvendo a 2
+1:55 Questão 3: sai ou reflete?
+2:07 Resolvendo a 3
+2:53 Questão 4: a lupa
+3:10 Resolvendo a 4
+3:40 Questão 5: a receita
+3:54 Resolvendo a 5
+4:14 Os atalhos
 
 📚 Antes desta aula
 Reflexão e espelho plano: [LINK FIS-OPT-002]

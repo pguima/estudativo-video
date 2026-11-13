@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-015 · Praticando: função afim
 
-**Arquivo:** `final/estudativo_MAT-FUN-015_praticando_funcao_afim.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-015_praticando_funcao_afim.mp4` · 5:02 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Quatro situações com tudo da função afim, criadas para esta aula. Em cada um
 ✅ O atalho: ache o b andando para trás até o x = 0
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: a caixa d'água
-[TEMPO] Resolvendo: lei, taxa e zero da função
-[TEMPO] Situação 2: a reta por dois pontos
-[TEMPO] Resolvendo: f(x) = 3x + 1
-[TEMPO] O atalho: ande para trás até o x = 0
-[TEMPO] Situação 3: duas locadoras de carro
-[TEMPO] Resolvendo: o cruzamento em 80 km
-[TEMPO] Situação 4: o carrinho de pipoca
-[TEMPO] Resolvendo: equilíbrio em 200 saquinhos
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:13 O que você vai usar
+0:34 Situação 1: a caixa d'água
+0:52 Resolvendo: lei, taxa e zero da função
+1:25 Situação 2: a reta por dois pontos
+1:42 Resolvendo: f(x) = 3x + 1
+2:19 O atalho: ande para trás até o x = 0
+2:46 Situação 3: duas locadoras de carro
+3:07 Resolvendo: o cruzamento em 80 km
+3:47 Situação 4: o carrinho de pipoca
+4:07 Resolvendo: equilíbrio em 200 saquinhos
+4:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Função afim: lei e gráfico: [LINK MAT-FUN-009]

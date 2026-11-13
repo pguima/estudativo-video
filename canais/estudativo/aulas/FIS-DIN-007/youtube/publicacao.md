@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-007 · Força de atrito: estático e cinético
 
-**Arquivo:** `final/estudativo_FIS-DIN-007_forca_de_atrito_estatico_e_cinetico.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-007_forca_de_atrito_estatico_e_cinetico.mp4` · 4:48 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Por que é mais difícil começar a empurrar um armário do que mantê-lo desliz
 ✅ O atalho: a = μ·g, sem a massa
 
 ⏱️ Capítulos
-[TEMPO] O armário e o freio ABS
-[TEMPO] O que você precisa saber
-[TEMPO] O que é atrito: F_at = μ·N
-[TEMPO] Atrito estático
-[TEMPO] Atrito cinético
-[TEMPO] O freio ABS
-[TEMPO] O erro: μ·N é só o limite
-[TEMPO] O atalho: a = μ·g
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a caixa se move?
-[TEMPO] Resumo e próxima aula
+0:00 O armário e o freio ABS
+0:16 O que você precisa saber
+0:29 O que é atrito: F_at = μ·N
+0:57 Atrito estático
+1:26 Atrito cinético
+1:55 O freio ABS
+2:55 O erro: μ·N é só o limite
+3:13 O atalho: a = μ·g
+3:39 Hora de testar
+3:59 Resolvendo: a caixa se move?
+4:20 Resumo e próxima aula
 
 📚 Antes desta aula
 Peso e força normal: [LINK FIS-DIN-004]

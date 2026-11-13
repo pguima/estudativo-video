@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-024 · Praticando: função quadrática
 
-**Arquivo:** `final/estudativo_MAT-FUN-024_praticando_funcao_quadratica.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-024_praticando_funcao_quadratica.mp4` · 5:27 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Quatro situações com o principal da parábola, criadas para esta aula. Em cada
 ✅ Reler a pergunta: o x diz quando, o y diz quanto
 
 ⏱️ Capítulos
-[TEMPO] Quatro situações para resolver
-[TEMPO] O que você vai usar
-[TEMPO] Situação 1: raízes, vértice e imagem
-[TEMPO] Resolvendo: f(x) = x² − 8x + 12
-[TEMPO] Situação 2: a bola lançada para cima
-[TEMPO] Resolvendo: 45 metros e 6 segundos no ar
-[TEMPO] Situação 3: o preço da marmita
-[TEMPO] Resolvendo: R$ 30 e receita de R$ 4.500
-[TEMPO] Situação 4: lucro de uma fábrica
-[TEMPO] Resolvendo: lucro entre 2 e 10 toneladas
-[TEMPO] Resumo e próxima aula
+0:00 Quatro situações para resolver
+0:14 O que você vai usar
+0:31 Situação 1: raízes, vértice e imagem
+0:47 Resolvendo: f(x) = x² − 8x + 12
+1:32 Situação 2: a bola lançada para cima
+1:51 Resolvendo: 45 metros e 6 segundos no ar
+2:25 Situação 3: o preço da marmita
+2:44 Resolvendo: R$ 30 e receita de R$ 4.500
+3:38 Situação 4: lucro de uma fábrica
+4:00 Resolvendo: lucro entre 2 e 10 toneladas
+4:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Raízes: onde a parábola corta o eixo x: [LINK MAT-FUN-017]

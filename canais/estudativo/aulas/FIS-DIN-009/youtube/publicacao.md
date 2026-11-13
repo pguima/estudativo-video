@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-009 · Blocos ligados e polias
 
-**Arquivo:** `final/estudativo_FIS-DIN-009_blocos_ligados_e_polias.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-009_blocos_ligados_e_polias.mp4` · 4:17 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um bloco na mesa, um fio, uma roldana e outro bloco pendurado parecem pedir vár
 ✅ Dois blocos pendurados na mesma polia
 
 ⏱️ Capítulos
-[TEMPO] Um bloco, um fio e uma roldana
-[TEMPO] O que você precisa saber
-[TEMPO] Um corpo só
-[TEMPO] Com polia
-[TEMPO] Com atrito na mesa
-[TEMPO] O erro: tração igual ao peso
-[TEMPO] O atalho numa linha
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: dois blocos pendurados
-[TEMPO] Resumo e próxima aula
+0:00 Um bloco, um fio e uma roldana
+0:21 O que você precisa saber
+0:36 Um corpo só
+1:25 Com polia
+1:57 Com atrito na mesa
+2:29 O erro: tração igual ao peso
+2:44 O atalho numa linha
+3:09 Hora de testar
+3:24 Resolvendo: dois blocos pendurados
+3:54 Resumo e próxima aula
 
 📚 Antes desta aula
 Força de atrito: estático e cinético: [LINK FIS-DIN-007]

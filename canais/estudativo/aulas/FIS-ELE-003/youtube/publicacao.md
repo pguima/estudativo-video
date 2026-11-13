@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-003 · Campo elétrico e linhas de força
 
-**Arquivo:** `final/estudativo_FIS-ELE-003_campo_eletrico_linhas_de_forca.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-003_campo_eletrico_linhas_de_forca.mp4` · 5:30 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Como uma carga sente a força de outra sem encostar nela? Nesta aula, você apre
 ✅ O erro de achar que o campo depende da carga de teste
 
 ⏱️ Capítulos
-[TEMPO] Como uma carga sente a outra?
-[TEMPO] O que você precisa saber
-[TEMPO] O campo elétrico: E = F/q
-[TEMPO] O campo de uma carga: E = kQ/d²
-[TEMPO] Linhas de força e campo uniforme
-[TEMPO] O erro: o campo não depende do q
-[TEMPO] O atalho: a proporção de Coulomb
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: campo e força
-[TEMPO] Resumo e próxima aula
+0:00 Como uma carga sente a outra?
+0:16 O que você precisa saber
+0:29 O campo elétrico: E = F/q
+1:15 O campo de uma carga: E = kQ/d²
+2:02 Linhas de força e campo uniforme
+3:08 O erro: o campo não depende do q
+3:27 O atalho: a proporção de Coulomb
+3:58 Hora de testar
+4:18 Resolvendo: campo e força
+5:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Lei de Coulomb: [LINK FIS-ELE-002]

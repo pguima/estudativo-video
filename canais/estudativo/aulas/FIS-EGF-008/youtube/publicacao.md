@@ -1,6 +1,6 @@
 # Publicação — FIS-EGF-008 · Flutuar ou afundar
 
-**Arquivo:** `final/estudativo_FIS-EGF-008_flutuar_ou_afundar.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-EGF-008_flutuar_ou_afundar.mp4` · 4:24 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ Um navio de aço de milhares de toneladas boia, e um prego de aço afunda na hor
 ✅ O atalho: na água, a densidade em g/cm³ já é a fração submersa
 
 ⏱️ Capítulos
-[TEMPO] O navio boia, o prego afunda
-[TEMPO] O que você precisa saber
-[TEMPO] Peso contra empuxo
-[TEMPO] A fração submersa e o iceberg
-[TEMPO] O peso aparente
-[TEMPO] O erro do pesado e do leve
-[TEMPO] O atalho: a densidade é a fração
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o bloco de madeira
-[TEMPO] Resumo e próxima aula
+0:00 O navio boia, o prego afunda
+0:21 O que você precisa saber
+0:35 Peso contra empuxo
+1:26 A fração submersa e o iceberg
+1:59 O peso aparente
+2:30 O erro do pesado e do leve
+2:47 O atalho: a densidade é a fração
+3:11 Hora de testar
+3:28 Resolvendo: o bloco de madeira
+3:58 Resumo e próxima aula
 
 📚 Antes desta aula
 Empuxo: princípio de Arquimedes: [LINK FIS-EGF-007]

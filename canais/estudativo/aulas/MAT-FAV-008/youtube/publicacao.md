@@ -1,6 +1,6 @@
 # Publicação — MAT-FAV-008 · Praticando: funções modular, composta e inversa
 
-**Arquivo:** `final/estudativo_MAT-FAV-008_praticando_funcoes_avancadas.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAV-008_praticando_funcoes_avancadas.mp4` · 3:58 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações, criadas para esta aula, com tudo da trilha de funções modul
 ✅ Os erros comuns: contar as pontas e trocar o x pelo valor de dentro
 
 ⏱️ Capítulos
-[TEMPO] Cinco situações
-[TEMPO] As cinco ferramentas
-[TEMPO] Situação 1: a conta de água
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: quantos inteiros?
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: a função escondida
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: a inversa
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Situação 5: qual gráfico é ímpar?
-[TEMPO] Resolvendo a situação 5
-[TEMPO] Resumo e fim da trilha
+0:00 Cinco situações
+0:13 As cinco ferramentas
+0:30 Situação 1: a conta de água
+0:50 Resolvendo a situação 1
+1:07 Situação 2: quantos inteiros?
+1:18 Resolvendo a situação 2
+1:45 Situação 3: a função escondida
+1:57 Resolvendo a situação 3
+2:19 Situação 4: a inversa
+2:32 Resolvendo a situação 4
+2:54 Situação 5: qual gráfico é ímpar?
+3:15 Resolvendo a situação 5
+3:34 Resumo e fim da trilha
 
 📚 Antes desta aula
 Função definida por partes: [LINK MAT-FAV-001]

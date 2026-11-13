@@ -1,6 +1,6 @@
 # Publicação — FIS-ELE-023 · Praticando: potência, geradores e receptores
 
-**Arquivo:** `final/estudativo_FIS-ELE-023_praticando_potencia_geradores_receptores.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ELE-023_praticando_potencia_geradores_receptores.mp4` · 4:45 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,15 +31,15 @@ Conta de luz, chuveiro, bateria e motor costumam aparecer misturados na prova. N
 ✅ O método: o que cada peça faz com a energia
 
 ⏱️ Capítulos
-[TEMPO] Seis questões misturadas
-[TEMPO] O método
-[TEMPO] Questão 1: o chuveiro na conta de luz
-[TEMPO] Questão 2: a resistência no inverno
-[TEMPO] Questão 3: lâmpadas em série e em paralelo
-[TEMPO] Questão 4: a bateria e o rendimento
-[TEMPO] Questão 5: bateria e motor
-[TEMPO] Questão 6: a potência máxima
-[TEMPO] Resumo e próxima aula
+0:00 Seis questões misturadas
+0:14 O método
+0:41 Questão 1: o chuveiro na conta de luz
+1:16 Questão 2: a resistência no inverno
+1:53 Questão 3: lâmpadas em série e em paralelo
+2:25 Questão 4: a bateria e o rendimento
+3:18 Questão 5: bateria e motor
+3:52 Questão 6: a potência máxima
+4:27 Resumo e próxima aula
 
 📚 Antes desta aula
 Potência elétrica e efeito Joule: [LINK FIS-ELE-017]

@@ -1,6 +1,6 @@
 # Publicação — MAT-TOP-008 · Alinhamento de três pontos pelo determinante
 
-**Arquivo:** `final/estudativo_MAT-TOP-008_alinhamento_pelo_determinante.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TOP-008_alinhamento_pelo_determinante.mp4` · 4:15 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Os pontos (1, 1), (2, 3) e (3, 5) estão na mesma reta? Coloque as coordenadas n
 ✅ O atalho: leve o primeiro ponto à origem
 
 ⏱️ Capítulos
-[TEMPO] Três pontos alinhados numa conta só
-[TEMPO] O que você precisa saber
-[TEMPO] Montando a matriz e aplicando Sarrus
-[TEMPO] Por que funciona
-[TEMPO] Achando o número que falta
-[TEMPO] O erro de somar as duas partes
-[TEMPO] O atalho: o 3 × 3 vira 2 × 2
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: k = 4
-[TEMPO] Resumo e próxima aula
+0:00 Três pontos alinhados numa conta só
+0:23 O que você precisa saber
+0:36 Montando a matriz e aplicando Sarrus
+1:16 Por que funciona
+1:57 Achando o número que falta
+2:40 O erro de somar as duas partes
+2:55 O atalho: o 3 × 3 vira 2 × 2
+3:28 Hora de testar
+3:42 Resolvendo: k = 4
+3:55 Resumo e próxima aula
 
 📚 Antes desta aula
 Coeficiente angular e alinhamento: [LINK MAT-ANA-003]

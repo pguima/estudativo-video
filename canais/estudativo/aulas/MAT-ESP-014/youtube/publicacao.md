@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-014 · Esfera: área e volume
 
-**Arquivo:** `final/estudativo_MAT-ESP-014_esfera_area_e_volume.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-014_esfera_area_e_volume.mp4` · 4:01 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Corte uma laranja ao meio, risque o contorno do corte quatro vezes num papel e c
 ✅ O atalho com π = 3: V = 4r³ e A = 12r²
 
 ⏱️ Capítulos
-[TEMPO] A casca da laranja cobre 4 círculos
-[TEMPO] O que você precisa saber
-[TEMPO] O que é esfera
-[TEMPO] Área: 4πr²
-[TEMPO] Volume: dois terços da lata
-[TEMPO] O erro do diâmetro
-[TEMPO] O atalho: π = 3
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a luminária
-[TEMPO] Resumo e próxima aula
+0:00 A casca da laranja cobre 4 círculos
+0:18 O que você precisa saber
+0:32 O que é esfera
+0:43 Área: 4πr²
+1:04 Volume: dois terços da lata
+1:58 O erro do diâmetro
+2:21 O atalho: π = 3
+2:52 Hora de testar
+3:07 Resolvendo a luminária
+3:33 Resumo e próxima aula
 
 📚 Antes desta aula
 Cilindro: área e volume: [LINK MAT-ESP-008]

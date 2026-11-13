@@ -1,6 +1,6 @@
 # Publicação — MAT-FAT-011 · Soma e produto: raízes de cabeça
 
-**Arquivo:** `final/estudativo_MAT-FAT-011_soma_e_produto.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FAT-011_soma_e_produto.mp4` · 4:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,18 +31,18 @@ Em x² − 7x + 12 = 0, pense em dois números que somados dão 7 e multiplicado
 ✅ O atalho: liste os pares do produto
 
 ⏱️ Capítulos
-[TEMPO] x² − 7x + 12 = 0 de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] De onde vem a soma e o produto
-[TEMPO] A regra com a = 1
-[TEMPO] Os sinais: comece pelo produto
-[TEMPO] Fatorando o trinômio
-[TEMPO] Montando a equação a partir das raízes
-[TEMPO] O erro de não trocar o sinal da soma
-[TEMPO] O atalho: liste os pares do produto
-[TEMPO] Hora de testar
-[TEMPO] Respostas: 3 e −5; x² − 3x − 4 = 0
-[TEMPO] Resumo e próxima aula
+0:00 x² − 7x + 12 = 0 de cabeça
+0:21 O que você precisa saber
+0:31 De onde vem a soma e o produto
+0:57 A regra com a = 1
+1:09 Os sinais: comece pelo produto
+1:37 Fatorando o trinômio
+2:02 Montando a equação a partir das raízes
+2:21 O erro de não trocar o sinal da soma
+2:42 O atalho: liste os pares do produto
+3:12 Hora de testar
+3:27 Respostas: 3 e −5; x² − 3x − 4 = 0
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Fórmula de Bhaskara: [LINK MAT-FAT-008]

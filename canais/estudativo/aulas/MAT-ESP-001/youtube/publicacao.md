@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-001 · Sólidos, poliedros e relação de Euler
 
-**Arquivo:** `final/estudativo_MAT-ESP-001_solidos_poliedros_e_euler.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-001_solidos_poliedros_e_euler.mp4` · 5:28 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um dado tem 6 faces e 8 pontas. Quantas arestas ele tem? Nesta aula, você separ
 ✅ O atalho: some os lados de todas as faces e divida por 2 (20 triângulos dão 30 arestas)
 
 ⏱️ Capítulos
-[TEMPO] Quantas dobras tem um dado?
-[TEMPO] O que você precisa saber
-[TEMPO] Poliedros e corpos redondos
-[TEMPO] Prisma e pirâmide
-[TEMPO] Face, aresta e vértice
-[TEMPO] A relação de Euler
-[TEMPO] O erro de contar 24 arestas no cubo
-[TEMPO] O atalho: lados ÷ 2
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o prisma hexagonal
-[TEMPO] Resumo e próxima aula
+0:00 Quantas dobras tem um dado?
+0:22 O que você precisa saber
+0:39 Poliedros e corpos redondos
+1:17 Prisma e pirâmide
+1:46 Face, aresta e vértice
+2:22 A relação de Euler
+3:16 O erro de contar 24 arestas no cubo
+3:34 O atalho: lados ÷ 2
+4:10 Hora de testar
+4:27 Resolvendo o prisma hexagonal
+5:01 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma dos ângulos e diagonais de um polígono: [LINK MAT-POL-002]

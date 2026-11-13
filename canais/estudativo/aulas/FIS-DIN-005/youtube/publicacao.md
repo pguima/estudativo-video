@@ -1,6 +1,6 @@
 # Publicação — FIS-DIN-005 · Tração e força elástica
 
-**Arquivo:** `final/estudativo_FIS-DIN-005_tracao_e_forca_elastica.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-DIN-005_tracao_e_forca_elastica.mp4` · 4:16 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ A balança de gancho da feira não tem nada além de uma mola. Nesta aula, você
 ✅ O atalho: força e deformação são proporcionais
 
 ⏱️ Capítulos
-[TEMPO] A balança de gancho da feira
-[TEMPO] O que você precisa saber
-[TEMPO] Tração: a força do fio
-[TEMPO] Diagrama de corpo livre
-[TEMPO] Força elástica e lei de Hooke
-[TEMPO] O dinamômetro
-[TEMPO] O erro: tamanho não é deformação
-[TEMPO] O atalho da proporção
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: a constante da mola
-[TEMPO] Resumo e próxima aula
+0:00 A balança de gancho da feira
+0:15 O que você precisa saber
+0:27 Tração: a força do fio
+0:51 Diagrama de corpo livre
+1:35 Força elástica e lei de Hooke
+2:16 O dinamômetro
+2:38 O erro: tamanho não é deformação
+2:54 O atalho da proporção
+3:18 Hora de testar
+3:33 Resolvendo: a constante da mola
+3:52 Resumo e próxima aula
 
 📚 Antes desta aula
 Peso e força normal: [LINK FIS-DIN-004]

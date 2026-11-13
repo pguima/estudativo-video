@@ -1,6 +1,6 @@
 # Publicação — MAT-POL-003 · Polígonos regulares: ângulo interno, externo e ladrilhos
 
-**Arquivo:** `final/estudativo_MAT-POL-003_poligonos_regulares_e_pisos.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-POL-003_poligonos_regulares_e_pisos.mp4` · 5:05 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,16 +32,16 @@ O favo de mel é feito de hexágonos encaixados sem nenhum buraco. Por que não 
 ✅ Pisos: 3 hexágonos fecham 360°, pentágonos deixam buraco de 36°; só triângulo equilátero, quadrado e hexágono cobrem sozinhos
 
 ⏱️ Capítulos
-[TEMPO] Por que hexágonos no favo de mel?
-[TEMPO] O que você precisa saber
-[TEMPO] Polígono regular e o ângulo interno
-[TEMPO] O ângulo externo e a volta de 360°
-[TEMPO] O erro de trocar externo por interno
-[TEMPO] O atalho: comece pelo externo
-[TEMPO] Pisos: quais polígonos fecham a volta
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o polígono de 12 lados
-[TEMPO] Resumo e próxima aula
+0:00 Por que hexágonos no favo de mel?
+0:21 O que você precisa saber
+0:35 Polígono regular e o ângulo interno
+1:26 O ângulo externo e a volta de 360°
+1:59 O erro de trocar externo por interno
+2:18 O atalho: comece pelo externo
+2:50 Pisos: quais polígonos fecham a volta
+3:47 Hora de testar
+4:03 Resolvendo: o polígono de 12 lados
+4:34 Resumo e próxima aula
 
 📚 Antes desta aula
 Soma dos ângulos e diagonais de um polígono: [LINK MAT-POL-002]

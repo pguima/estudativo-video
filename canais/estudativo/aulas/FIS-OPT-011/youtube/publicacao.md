@@ -1,6 +1,6 @@
 # Publicação — FIS-OPT-011 · Equação dos espelhos e aumento
 
-**Arquivo:** `final/estudativo_FIS-OPT-011_equacao_dos_espelhos_aumento.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-OPT-011_equacao_dos_espelhos_aumento.mp4` · 4:55 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,17 +31,17 @@ Um espelho côncavo de foco 20 cm e um objeto a 30 cm: os raios dizem imagem rea
 ✅ O atalho p' = f·p ÷ (p − f) e f = R ÷ 2
 
 ⏱️ Capítulos
-[TEMPO] Onde fica a imagem?
-[TEMPO] O que você precisa saber
-[TEMPO] A equação dos espelhos
-[TEMPO] Resolvendo o gancho
-[TEMPO] O aumento
-[TEMPO] O espelho convexo
-[TEMPO] O erro do sinal
-[TEMPO] O atalho sem MMC
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o espelho de maquiagem
-[TEMPO] Resumo e próxima aula
+0:00 Onde fica a imagem?
+0:23 O que você precisa saber
+0:36 A equação dos espelhos
+1:14 Resolvendo o gancho
+1:40 O aumento
+2:06 O espelho convexo
+2:42 O erro do sinal
+2:58 O atalho sem MMC
+3:38 Hora de testar
+3:53 Resolvendo: o espelho de maquiagem
+4:22 Resumo e próxima aula
 
 📚 Antes desta aula
 Espelhos esféricos: [LINK FIS-OPT-003]

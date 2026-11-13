@@ -1,6 +1,6 @@
 # Publicação — FIS-ENE-005 · Conservação da energia e energia dissipada
 
-**Arquivo:** `final/estudativo_FIS-ENE-005_conservacao_da_energia_e_energia_dissipada.mp4` · [DURAÇÃO] · 1920x1080 · Física
+**Arquivo:** `final/estudativo_FIS-ENE-005_conservacao_da_energia_e_energia_dissipada.mp4` · 6:07 · 1920x1080 · Física
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Um carrinho de montanha-russa parte do repouso a 20 m de altura. Sem atrito, ele
 ✅ O erro de achar que o mais pesado chega mais rápido
 
 ⏱️ Capítulos
-[TEMPO] A montanha-russa de 20 m
-[TEMPO] O que você precisa saber
-[TEMPO] Energia mecânica que se conserva
-[TEMPO] A conta: a massa corta
-[TEMPO] O atalho: v = √(2gh)
-[TEMPO] Energia dissipada no atrito
-[TEMPO] O erro do mais pesado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o skatista
-[TEMPO] Resumo e próxima aula
+0:00 A montanha-russa de 20 m
+0:22 O que você precisa saber
+0:37 Energia mecânica que se conserva
+1:02 A conta: a massa corta
+1:41 O atalho: v = √(2gh)
+2:19 Energia dissipada no atrito
+3:03 O erro do mais pesado
+3:28 Hora de testar
+3:49 Resolvendo: o skatista
+5:39 Resumo e próxima aula
 
 📚 Antes desta aula
 Energia cinética e teorema do trabalho: [LINK FIS-ENE-003]

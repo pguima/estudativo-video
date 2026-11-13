@@ -1,6 +1,6 @@
 # Publicação — MAT-FUN-003 · Notação f(x): calcular e fazer o caminho de volta
 
-**Arquivo:** `final/estudativo_MAT-FUN-003_notacao_f_de_x.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-FUN-003_notacao_f_de_x.mp4` · 4:38 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ Em f(x) = 2x + 3, "quanto vale f(5)?" e "qual x faz f(x) dar 30?" parecem a mesm
 ✅ O atalho: desfaça as contas de trás para a frente (30 − 3 = 27; 27 ÷ 2 = 13,5)
 
 ⏱️ Capítulos
-[TEMPO] Duas perguntas que parecem iguais
-[TEMPO] O que você precisa saber
-[TEMPO] Como ler f(x)
-[TEMPO] Calculando f(5) e f(−2)
-[TEMPO] O caminho de volta: f(x) = 30
-[TEMPO] O erro de trocar o x por 30
-[TEMPO] O atalho: desfaça de trás para a frente
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o táxi
-[TEMPO] Resumo e próxima aula
+0:00 Duas perguntas que parecem iguais
+0:24 O que você precisa saber
+0:37 Como ler f(x)
+1:05 Calculando f(5) e f(−2)
+1:40 O caminho de volta: f(x) = 30
+2:26 O erro de trocar o x por 30
+2:49 O atalho: desfaça de trás para a frente
+3:18 Hora de testar
+3:38 Resolvendo: o táxi
+4:13 Resumo e próxima aula
 
 📚 Antes desta aula
 O que é função: cada entrada, uma saída: [LINK MAT-FUN-002]

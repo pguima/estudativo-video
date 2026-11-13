@@ -1,6 +1,6 @@
 # Publicação — MAT-CNT-004 · Fatorial
 
-**Arquivo:** `final/estudativo_MAT-CNT-004_fatorial.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CNT-004_fatorial.mp4` · 4:42 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,16 +31,16 @@ Oito fatorial dividido por seis fatorial parece conta de calculadora, mas sai de
 ✅ O atalho: a diferença diz quantos números sobram (10!/7! = 10 × 9 × 8 = 720)
 
 ⏱️ Capítulos
-[TEMPO] 8! dividido por 6! de cabeça
-[TEMPO] O que você precisa saber
-[TEMPO] Cinco livros na prateleira
-[TEMPO] O que é fatorial e por que 0! = 1
-[TEMPO] Cortando 8!/6!
-[TEMPO] O erro de subtrair os números
-[TEMPO] O atalho: a diferença diz quantos sobram
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo 4! + 3! e 12!/10!
-[TEMPO] Resumo e próxima aula
+0:00 8! dividido por 6! de cabeça
+0:19 O que você precisa saber
+0:31 Cinco livros na prateleira
+0:58 O que é fatorial e por que 0! = 1
+2:02 Cortando 8!/6!
+2:32 O erro de subtrair os números
+2:51 O atalho: a diferença diz quantos sobram
+3:35 Hora de testar
+3:46 Resolvendo 4! + 3! e 12!/10!
+4:15 Resumo e próxima aula
 
 📚 Antes desta aula
 Princípio multiplicativo e árvore de possibilidades: [LINK MAT-CNT-001]

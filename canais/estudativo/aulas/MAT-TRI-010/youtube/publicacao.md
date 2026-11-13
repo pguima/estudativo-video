@@ -1,6 +1,6 @@
 # Publicação — MAT-TRI-010 · Relação fundamental da trigonometria
 
-**Arquivo:** `final/estudativo_MAT-TRI-010_relacao_fundamental_da_trigonometria.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-TRI-010_relacao_fundamental_da_trigonometria.mp4` · 4:52 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -31,24 +31,24 @@ O seno de um ângulo do primeiro quadrante vale 3/5. Quanto vale o cosseno? Muit
 ✅ O atalho do triângulo 3-4-5, e por que o sinal vem do quadrante
 
 ⏱️ Capítulos
-[TEMPO] Seno 3/5: quanto vale o cosseno?
-[TEMPO] O que você precisa saber
-[TEMPO] O triângulo dentro do ciclo
-[TEMPO] Hipotenusa 1, cosseno deitado e seno em pé
-[TEMPO] Pitágoras: sen²x + cos²x = 1
-[TEMPO] Como ler sen²x
-[TEMPO] Vale em qualquer quadrante: teste com 30°
-[TEMPO] Exemplo: sen x = 3/5
-[TEMPO] O cosseno ao quadrado: 16/25
-[TEMPO] 4/5 ou −4/5? O quadrante decide
-[TEMPO] A tangente: 3/4
-[TEMPO] O erro de esquecer os quadrados
-[TEMPO] O atalho: o triângulo 3-4-5
-[TEMPO] Por que o atalho funciona (e quando não basta)
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: o cateto 15
-[TEMPO] O sinal no 4º quadrante
-[TEMPO] Resumo e próxima aula
+0:00 Seno 3/5: quanto vale o cosseno?
+0:22 O que você precisa saber
+0:40 O triângulo dentro do ciclo
+0:50 Hipotenusa 1, cosseno deitado e seno em pé
+1:01 Pitágoras: sen²x + cos²x = 1
+1:15 Como ler sen²x
+1:30 Vale em qualquer quadrante: teste com 30°
+1:54 Exemplo: sen x = 3/5
+2:07 O cosseno ao quadrado: 16/25
+2:23 4/5 ou −4/5? O quadrante decide
+2:37 A tangente: 3/4
+2:50 O erro de esquecer os quadrados
+3:08 O atalho: o triângulo 3-4-5
+3:25 Por que o atalho funciona (e quando não basta)
+3:39 Hora de testar
+3:52 Resolvendo: o cateto 15
+4:07 O sinal no 4º quadrante
+4:28 Resumo e próxima aula
 
 📚 Antes desta aula
 Seno, cosseno e tangente no ciclo: [LINK MAT-TRI-008]

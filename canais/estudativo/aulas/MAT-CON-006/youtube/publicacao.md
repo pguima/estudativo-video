@@ -1,6 +1,6 @@
 # Publicação — MAT-CON-006 · Irracionais e números reais
 
-**Arquivo:** `final/estudativo_MAT-CON-006_irracionais_e_reais.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-CON-006_irracionais_e_reais.mp4` · 4:31 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,17 +30,17 @@ Raiz de 16 e raiz de 7 parecem da mesma família, mas √16 = 4 é natural e √
 ✅ O atalho: elevar ao quadrado para comparar (1,4² = 1,96 < 2 < 2,25 = 1,5²), e por que não vale com negativos
 
 ⏱️ Capítulos
-[TEMPO] √16 e √7: mesma família?
-[TEMPO] O que você precisa saber
-[TEMPO] √16 é exata, √7 não
-[TEMPO] O que é um número irracional
-[TEMPO] Os números reais
-[TEMPO] Pondo raízes em ordem na reta
-[TEMPO] O erro: dízima não é irracional
-[TEMPO] O atalho: eleve ao quadrado
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo a questão
-[TEMPO] Resumo e próxima aula
+0:00 √16 e √7: mesma família?
+0:19 O que você precisa saber
+0:32 √16 é exata, √7 não
+1:16 O que é um número irracional
+1:48 Os números reais
+2:11 Pondo raízes em ordem na reta
+2:41 O erro: dízima não é irracional
+2:56 O atalho: eleve ao quadrado
+3:20 Hora de testar
+3:39 Resolvendo a questão
+4:09 Resumo e próxima aula
 
 📚 Antes desta aula
 Fração geratriz de uma dízima: [LINK MAT-CON-005]

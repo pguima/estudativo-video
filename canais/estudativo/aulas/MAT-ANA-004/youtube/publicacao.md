@@ -1,6 +1,6 @@
 # Publicação — MAT-ANA-004 · Equação da reta: reduzida, geral e segmentária
 
-**Arquivo:** `final/estudativo_MAT-ANA-004_equacao_da_reta_reduzida_geral_segmentaria.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ANA-004_equacao_da_reta_reduzida_geral_segmentaria.mp4` · 5:06 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,16 +30,16 @@ y = 2x + 1 e 2x − y + 1 = 0 parecem retas diferentes, mas são a mesma reta, e
 ✅ O atalho: y − y₀ = m(x − x₀)
 
 ⏱️ Capítulos
-[TEMPO] Duas equações, a mesma reta
-[TEMPO] O que você precisa saber
-[TEMPO] A equação reduzida
-[TEMPO] A equação geral
-[TEMPO] A equação segmentária
-[TEMPO] O erro de ler o m direto na geral
-[TEMPO] O atalho: ponto e inclinação
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo: reduzida, geral e cortes nos eixos
-[TEMPO] Resumo e próxima aula
+0:00 Duas equações, a mesma reta
+0:19 O que você precisa saber
+0:35 A equação reduzida
+1:15 A equação geral
+1:44 A equação segmentária
+2:13 O erro de ler o m direto na geral
+2:55 O atalho: ponto e inclinação
+3:47 Hora de testar
+4:08 Resolvendo: reduzida, geral e cortes nos eixos
+4:40 Resumo e próxima aula
 
 📚 Antes desta aula
 Coeficiente angular e alinhamento: [LINK MAT-ANA-003]

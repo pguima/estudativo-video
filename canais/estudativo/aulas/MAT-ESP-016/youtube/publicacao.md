@@ -1,6 +1,6 @@
 # Publicação — MAT-ESP-016 · Praticando: pirâmides, cones e esfera
 
-**Arquivo:** `final/estudativo_MAT-ESP-016_praticando_piramides_cones_e_esfera.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-ESP-016_praticando_piramides_cones_e_esfera.mp4` · 7:04 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -30,19 +30,19 @@ Cinco situações do dia a dia, criadas para esta aula: uma tenda, uma casquinha
 ✅ As três perguntas antes de calcular: que sólido é, dentro ou casca, qual altura
 
 ⏱️ Capítulos
-[TEMPO] 5 situações para resolver
-[TEMPO] As 3 famílias de fórmulas
-[TEMPO] Situação 1: a lona da tenda
-[TEMPO] Resolvendo a situação 1
-[TEMPO] Situação 2: a casquinha
-[TEMPO] Resolvendo a situação 2
-[TEMPO] Situação 3: os pacotes de pipoca
-[TEMPO] Resolvendo a situação 3
-[TEMPO] Situação 4: as bolinhas
-[TEMPO] Resolvendo a situação 4
-[TEMPO] Situação 5: o reservatório
-[TEMPO] Resolvendo a situação 5
-[TEMPO] Resumo e próxima aula
+0:00 5 situações para resolver
+0:19 As 3 famílias de fórmulas
+2:46 Situação 1: a lona da tenda
+3:04 Resolvendo a situação 1
+3:35 Situação 2: a casquinha
+3:53 Resolvendo a situação 2
+4:15 Situação 3: os pacotes de pipoca
+4:37 Resolvendo a situação 3
+5:11 Situação 4: as bolinhas
+5:26 Resolvendo a situação 4
+5:50 Situação 5: o reservatório
+6:08 Resolvendo a situação 5
+6:37 Resumo e próxima aula
 
 📚 Antes desta aula
 Pirâmide: volume: [LINK MAT-ESP-011]

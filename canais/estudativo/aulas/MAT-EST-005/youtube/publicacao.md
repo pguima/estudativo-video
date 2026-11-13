@@ -1,6 +1,6 @@
 # Publicação — MAT-EST-005 · Histograma
 
-**Arquivo:** `final/estudativo_MAT-EST-005_histograma.mp4` · [DURAÇÃO] · 1920x1080 · Matemática
+**Arquivo:** `final/estudativo_MAT-EST-005_histograma.mp4` · 4:22 · 1920x1080 · Matemática
 **Canal:** Estudativo · **Narração:** voz sintética (Gemini, Neno)
 
 ## Capas
@@ -32,17 +32,17 @@ Este gráfico parece um gráfico de barras, mas as colunas estão coladas e emba
 ✅ O atalho: conte o lado menor e tire do total (20 − 9 = 11)
 
 ⏱️ Capítulos
-[TEMPO] Parece barras, mas é histograma
-[TEMPO] O que você precisa saber
-[TEMPO] A tabela das idades
-[TEMPO] Como o histograma desenha a tabela
-[TEMPO] Quantas pessoas numa faixa
-[TEMPO] Histograma x gráfico de barras
-[TEMPO] O erro de ler a coluna como uma idade só
-[TEMPO] O atalho: conte o lado menor
-[TEMPO] Hora de testar
-[TEMPO] Resolvendo o tempo até o trabalho
-[TEMPO] Resumo e próxima aula
+0:00 Parece barras, mas é histograma
+0:19 O que você precisa saber
+0:33 A tabela das idades
+0:51 Como o histograma desenha a tabela
+1:16 Quantas pessoas numa faixa
+1:39 Histograma x gráfico de barras
+2:06 O erro de ler a coluna como uma idade só
+2:32 O atalho: conte o lado menor
+3:00 Hora de testar
+3:31 Resolvendo o tempo até o trabalho
+3:59 Resumo e próxima aula
 
 📚 Antes desta aula
 Tabela de frequência e classes: [LINK MAT-EST-002]
